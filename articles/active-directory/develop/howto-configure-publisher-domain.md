@@ -14,10 +14,10 @@ ms.author: ryanwi
 ms.reviewer: lenalepa, sureshja, zachowd
 ms.custom: aaddev
 ms.openlocfilehash: 9b3840ffb39a204cfa24dcb0430f20ac16587582
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100104184"
 ---
 # <a name="how-to-configure-an-applications-publisher-domain"></a>Как настроить домен издателя приложения
@@ -49,7 +49,7 @@ ms.locfileid: "100104184"
 Чтобы задать домен издателя приложения, выполните следующие действия.
 
 1. Войдите на <a href="https://portal.azure.com/" target="_blank">портал Azure</a>.
-1. Если у вас есть доступ к нескольким клиентам, используйте фильтр **каталог и подписка** :::image type="icon" source="./media/common/portal-directory-subscription-filter.png" border="false"::: в верхнем меню, чтобы выбрать Клиент, на котором зарегистрировано приложение.
+1. Если у вас есть доступ к нескольким арендаторам, в верхнем меню используйте фильтр **Каталог и подписка** :::image type="icon" source="./media/common/portal-directory-subscription-filter.png" border="false":::, чтобы выбрать арендатор, в котором зарегистрировано приложение.
 1. Перейдите к [Azure Active Directory > регистрация приложений](https://go.microsoft.com/fwlink/?linkid=2083908) , чтобы найти и выбрать приложение, которое требуется настроить.
 
    Выбрав приложение, вы увидите страницу **обзора** приложения.

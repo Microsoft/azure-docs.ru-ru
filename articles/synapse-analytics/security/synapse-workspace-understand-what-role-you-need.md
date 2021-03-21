@@ -9,10 +9,10 @@ ms.date: 12/1/2020
 ms.author: ronytho
 ms.reviewer: jrasnick
 ms.openlocfilehash: 950a786b29a8144c4bb192fa6078e8c88d67481d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100384458"
 ---
 # <a name="understand-the-roles-required-to-perform-common-tasks-in-synapse"></a>Общие сведения о ролях, необходимых для выполнения стандартных задач в синапсе
@@ -118,7 +118,7 @@ ms.locfileid: "100384458"
 >[!Note]
 >Гостевые пользователи из другого клиента не могут просматривать, добавлять или изменять назначения ролей независимо от назначенной им роли. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте [, как просматривать назначения РОЛЕЙ RBAC синапсе](./how-to-review-synapse-rbac-role-assignments.md) .
 

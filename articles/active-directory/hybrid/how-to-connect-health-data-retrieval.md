@@ -15,10 +15,10 @@ ms.date: 09/02/2020
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8d147d2c094923e971e52e1dbfe3f7a19776d38c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89463657"
 ---
 # <a name="azure-ad-connect-health-instructions-for-data-retrieval"></a>Azure AD Connect Health инструкции по извлечению данных
@@ -53,9 +53,9 @@ ms.locfileid: "89463657"
 2.  В колонке **ошибки синхронизации** щелкните **Экспорт**. Будет экспортирован список записанных ошибок синхронизации.
  ![Экспорт](./media/how-to-connect-health-data-retrieval/retrieve7.png)
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 * [Azure AD Connect Health](./whatis-azure-ad-connect.md)
 * [Установка агента Azure AD Connect Health](how-to-connect-health-agent-install.md)
 * [Операции Azure AD Connect Health](how-to-connect-health-operations.md)
 * [Часто задаваемые вопросы об Azure AD Connect Health](reference-connect-health-faq.md)
-* [Журнал версий Azure AD Connect Health](reference-connect-health-version-history.md)
+* [Azure AD Connect Health: история версий](reference-connect-health-version-history.md)

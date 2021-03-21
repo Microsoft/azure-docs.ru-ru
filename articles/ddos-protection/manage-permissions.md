@@ -12,17 +12,17 @@ ms.workload: infrastructure-services
 ms.date: 09/08/2020
 ms.author: yitoh
 ms.openlocfilehash: df53062c7c897493a47d88ea2873f9710b9825bf
-ms.sourcegitcommit: 8245325f9170371e08bbc66da7a6c292bbbd94cc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99806262"
 ---
 # <a name="manage-ddos-protection-plans-permissions-and-restrictions"></a>Управление планами защиты от атак DDoS: разрешения и ограничения
 
 План защиты от атак DDoS работает в разных регионах и подписках. Один и тот же план можно связать с виртуальными сетями из других подписок в разных регионах по всему клиенту. Для подписки, с которой связан план, выставляется ежемесячный счет за его использование, а также за избыточное использование в случае, если количество защищенных общедоступных IP-адресов превышает 100. Дополнительные сведения о ценах на защиту от атак DDoS приведены [здесь](https://azure.microsoft.com/pricing/details/ddos-protection/).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Прежде чем выполнять действия, описанные в этом руководстве, необходимо создать [план защиты Azure от атак DDoS Standard](manage-ddos-protection.md).
 

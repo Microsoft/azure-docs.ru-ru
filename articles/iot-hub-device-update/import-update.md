@@ -7,16 +7,16 @@ ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
 ms.openlocfilehash: b9d40848abdd85beeca592001b697e3c50b7cd59
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103008568"
 ---
 # <a name="import-new-update"></a>Импорт нового обновления
 Узнайте, как импортировать новое обновление в центр обновления для центра Интернета вещей. Если вы еще не сделали этого, обязательно ознакомьтесь с основными [понятиями импорта](import-concepts.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Доступ к центру Интернета вещей с включенным обновлением устройства для центра Интернета вещей](create-device-update-account.md). Для центра Интернета вещей рекомендуется использовать уровень S1 (стандартный) или выше. 
 * Устройство IoT (или симулятор), подготовленное для обновления устройства в центре Интернета вещей.
@@ -24,7 +24,7 @@ ms.locfileid: "103008568"
 * [PowerShell 5](https://docs.microsoft.com/powershell/scripting/install/installing-powershell) или более поздней версии.
 * Поддерживаемые браузеры:
   * [Microsoft Edge](https://www.microsoft.com/edge)
-  * Google Chrome;
+  * Google Chrome
 
 > [!NOTE]
 > Некоторые данные, отправленные в эту службу, могут обрабатываться в регионе за пределами региона, в котором был создан этот экземпляр.
@@ -121,7 +121,7 @@ ms.locfileid: "103008568"
 
    :::image type="content" source="media/import-update/import-updates-3.png" alt-text="Импорт обновлений" lightbox="media/import-update/import-updates-3.png":::
 
-3. В верхней части экрана вы увидите несколько вкладок. Откройте вкладку "Обновления".
+3. В верхней части экрана вы увидите несколько вкладок. Откройте вкладку “Обновления”.
 
    :::image type="content" source="media/import-update/updates-tab.png" alt-text="Обновления" lightbox="media/import-update/updates-tab.png":::
 
@@ -153,7 +153,7 @@ ms.locfileid: "103008568"
 
    :::image type="content" source="media/import-update/update-ready.png" alt-text="Состояние задания" lightbox="media/import-update/update-ready.png":::
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Создание групп](create-update-group.md)
 

@@ -10,10 +10,10 @@ ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
 ms.openlocfilehash: b2471ccd2a412c7cbae9d4e59412ac055697e3d7
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102180366"
 ---
 # <a name="azure-storage-encryption-for-data-at-rest"></a>Шифрование службы хранилища Azure для неактивных данных
@@ -48,8 +48,8 @@ ms.locfileid: "102180366"
 | Операции шифрования и расшифровки | Azure | Azure | Azure |
 | Поддерживаемые службы хранилища Azure | Все | Хранилище BLOB-объектов, файлы Azure<sup>1, 2</sup> | Хранилище BLOB-объектов |
 | Хранилище ключей | Хранилище ключей (Майкрософт) | Azure Key Vault или Key Vault HSM | Собственное хранилище ключей клиента |
-| Ответственность за смену ключей | Microsoft | Customer | Customer |
-| Управление ключами | пиринг Майкрософт. | Customer | Customer |
+| Ответственность за смену ключей | Microsoft | Клиент | Клиент |
+| Управление ключами | Microsoft | Клиент | Клиент |
 
 <sup>1</sup> сведения о создании учетной записи, поддерживающей использование управляемых клиентом ключей с хранилищем очередей, см. в разделе [Создание учетной записи, которая поддерживает управляемые клиентом ключи для очередей](account-encryption-key-create.md?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).<br />
 <sup>2</sup> дополнительные сведения о создании учетной записи, поддерживающей использование управляемых клиентом ключей с хранилищем таблиц, см. в разделе [Создание учетной записи, которая поддерживает управляемые клиентом ключи для таблиц](account-encryption-key-create.md?toc=%2fazure%2fstorage%2ftables%2ftoc.json).

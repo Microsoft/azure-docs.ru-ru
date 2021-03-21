@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.date: 11/16/2020
 ms.author: victorh
 ms.openlocfilehash: 694868f2a75cc66bf9e3ede9d12e30a2cc3d7af9
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98185943"
 ---
-# <a name="tls-termination-with-key-vault-certificates"></a>Завершение TLS с сертификатами Key Vault
+# <a name="tls-termination-with-key-vault-certificates"></a>Завершение TLS-запросов с помощью сертификатов из Key Vault
 
 Управляемое платформой хранилище секретов [Azure Key Vault](../key-vault/general/overview.md) можно применять для защиты секретов, ключей и сертификатов TLS/SSL. Шлюз приложений Azure теперь поддерживает интеграцию с Key Vault для сертификатов сервера, подключенных к прослушивателям с поддержкой HTTPS. Эта поддержка ограничена номером SKU шлюза приложений версии 2.
 

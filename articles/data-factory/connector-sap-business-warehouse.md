@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 09/04/2019
 ms.openlocfilehash: 4a5eb7c8d729fc0c3b95a61a4b8dbc8266d1eec3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100386668"
 ---
 # <a name="copy-data-from-sap-business-warehouse-using-azure-data-factory"></a>Копирование данных из SAP Business Warehouse с помощью фабрики данных Azure
@@ -40,7 +40,7 @@ ms.locfileid: "100386668"
 - Копирование данных из **InfoCubes и QueryCubes** (включая запросы BEx) с помощью запросов многомерных выражений.
 - Копирование данных с помощью базовой проверки подлинности.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать этот соединитель SAP Business Warehouse, сделайте следующее:
 
@@ -62,7 +62,7 @@ ms.locfileid: "100386668"
 
 Для связанной службы SAP Business Warehouse (BW) поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **SapBw** | Да |
 | server | Имя сервера, на котором размещен экземпляр SAP Business Warehouse. | Да |
@@ -130,7 +130,7 @@ ms.locfileid: "100386668"
 
 Чтобы скопировать данные из SAP BW, в разделе **источник** действия копирования поддерживаются следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type источника действия копирования должно иметь значение **сапбвсаурце** . | Да |
 | query | Указывает запрос многомерных выражений для чтения данных из экземпляра SAP Business Warehouse. | Да |

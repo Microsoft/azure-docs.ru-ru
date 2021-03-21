@@ -1,5 +1,5 @@
 ---
-title: Аутентификация агентов безопасности
+title: Аутентификация агентов безопасности (предварительная версия)
 titleSuffix: Azure Defender for IoT
 description: Выполните проверку подлинности Micro Agent с двумя возможными методами.
 author: shhazam-ms
@@ -8,20 +8,20 @@ ms.author: shhazam
 ms.date: 1/20/2021
 ms.topic: conceptual
 ms.service: azure
-ms.openlocfilehash: b0304bd191626adb71041fb0561862b988ee25cd
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 018da32b90c7730f82eaa5aa2cd2b5c7a64719a6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102124590"
 ---
-# <a name="micro-agent-authentication-methods"></a>Способы проверки подлинности микроагента 
+# <a name="micro-agent-authentication-methods-preview"></a>Методы проверки подлинности Micro Agent (Предварительная версия)
 
 Существует два варианта проверки подлинности с помощью защитника для Micro Agent для IoT. 
 
-- строку подключения. 
+- Строка подключения 
 
-- Сертификат 
+- Certificate 
 
 ## <a name="authentication-using-a-connection-string"></a>Проверка подлинности с помощью строки подключения 
 
@@ -60,7 +60,7 @@ sudo systemctl restart defender-iot-micro-agent.service
 
 ## <a name="ensure-the-micro-agent-is-running-correctly"></a>Убедитесь, что Micro Agent работает правильно. 
 
-1. Выполните следующую команду: 
+1. Выполните следующую команду. 
     ```azurecli
     systemctl status defender-iot-micro-agent.service 
     ```

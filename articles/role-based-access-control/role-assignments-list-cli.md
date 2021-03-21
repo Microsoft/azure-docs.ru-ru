@@ -15,10 +15,10 @@ ms.date: 10/30/2020
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.openlocfilehash: cc64e314a8acb035736df0521987cb78a7297326
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100556928"
 ---
 # <a name="list-azure-role-assignments-using-azure-cli"></a>Вывод списка назначений ролей Azure с помощью Azure CLI
@@ -28,7 +28,7 @@ ms.locfileid: "100556928"
 > [!NOTE]
 > Если в вашей организации есть функции управления с использованием внешнего источника для поставщика услуг, использующего [Управление делегированными ресурсами Azure](../lighthouse/concepts/azure-delegated-resource-management.md), назначения ролей, предоставленные этим поставщиком услуг, не будут показаны здесь.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Bash в Azure Cloud Shell](../cloud-shell/overview.md) или [Azure CLI](/cli/azure)
 

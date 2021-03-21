@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 10/26/2020
 ms.openlocfilehash: 88a1524875f168b49f50f1684c650d5bc178bf38
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94542666"
 ---
 # <a name="restart-azure-database-for-mysql-flexible-server-using-azure-portal"></a>Перезапуск базы данных Azure для гибкого сервера MySQL с помощью портал Azure
@@ -20,7 +20,7 @@ ms.locfileid: "94542666"
 
 Время, необходимое для завершения перезапуска, зависит от процесса восстановления MySQL. Чтобы уменьшить время перезапуска, рекомендуем свести к минимуму объем действий, выполняемых на сервере перед перезапуском.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 - [Гибкий сервер базы данных Azure для MySQL](quickstart-create-server-portal.md)
 
@@ -34,7 +34,7 @@ ms.locfileid: "94542666"
 
    :::image type="content" source="./media/how-to-restart-server-portal/2-server.png" alt-text="База данных Azure для MySQL: кнопка &quot;Перезапуск&quot; на странице &quot;Обзор&quot;":::
 
-3. Нажмите кнопку **Да** , чтобы подтвердить перезапуск сервера.
+3. Нажмите кнопку **Да**, чтобы подтвердить перезапуск сервера.
 
    :::image type="content" source="./media/how-to-restart-server-portal/3-restart-confirm.png" alt-text="База данных Azure для MySQL — подтверждение перезапуска":::
 

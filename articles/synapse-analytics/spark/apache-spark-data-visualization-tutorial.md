@@ -9,10 +9,10 @@ ms.subservice: machine-learning
 ms.date: 10/20/2020
 ms.author: midesa
 ms.openlocfilehash: 56af49b6fa862c93822293056752182b534ac442
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98942277"
 ---
 # <a name="analyze-data-with-apache-spark"></a>Анализ данных с помощью Apache Spark
@@ -38,7 +38,7 @@ ms.locfileid: "98942277"
    import pandas as pd
    ```
 
-3. Поскольку необработанные данные имеют формат Parquet, можно использовать контекст Spark, чтобы извлечь файл в память в виде таблицы данных напрямую. Создайте таблицу данных Spark, извлекая данные через API Open DataSets. Здесь мы используем схему "кадры данных Spark" *для чтения* свойств, чтобы определить типы данных и схему.
+3. Так как необработанные данные имеют формат Parquet, вы можете использовать контекст Spark, чтобы извлечь файл в память напрямую в виде кадра данных. Создайте DataFrame в Spark, получив данные с помощью API Открытых наборов данных. Здесь мы используем схему "кадры данных Spark" *для чтения* свойств, чтобы определить типы данных и схему.
 
    ```python
    from azureml.opendatasets import NycTlcYellow

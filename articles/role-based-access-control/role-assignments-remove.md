@@ -10,17 +10,17 @@ ms.workload: identity
 ms.date: 02/15/2021
 ms.author: rolyon
 ms.openlocfilehash: 7a3e4853d6dffa7eb2c5cf80846f6f1bd6beba03
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100561510"
 ---
 # <a name="remove-azure-role-assignments"></a>Удаление назначений ролей Azure
 
 [Управление доступом на основе ролей Azure (Azure RBAC)](../../articles/role-based-access-control/overview.md) — это система авторизации, используемая для управления доступом к ресурсам в Azure. Чтобы удалить доступ из ресурса Azure, необходимо удалить назначение роли. В этой статье описывается удаление назначений ролей с помощью портал Azure, Azure PowerShell, Azure CLI и REST API.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы удалить назначения ролей, необходимо иметь следующее:
 
@@ -104,7 +104,7 @@ az role assignment delete --assignee "alain@example.com" \
 --scope "/providers/Microsoft.Management/managementGroups/marketing-group"
 ```
 
-## <a name="rest-api"></a>API-интерфейсы REST
+## <a name="rest-api"></a>REST API
 
 В REST API вы удаляете назначение ролей с помощью [назначений ролей — Delete](/rest/api/authorization/roleassignments/delete).
 
@@ -119,7 +119,7 @@ az role assignment delete --assignee "alain@example.com" \
 1. Внутри URI замените *{scope}* областью для удаления назначения роли.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `providers/Microsoft.Management/managementGroups/{groupId1}` | группа управления; |
     > | `subscriptions/{subscriptionId1}` | Подписка |

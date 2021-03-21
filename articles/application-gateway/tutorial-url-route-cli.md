@@ -9,10 +9,10 @@ ms.date: 08/01/2019
 ms.author: victorh
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 8e8fed99fe0b1de52d2e2d0018dfd8867b54b63b
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94566526"
 ---
 # <a name="route-web-traffic-based-on-the-url-using-the-azure-cli"></a>Маршрутизация веб-трафика на основе URL-адресов с помощью Azure CLI
@@ -36,7 +36,7 @@ ms.locfileid: "94566526"
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
- - Для работы с этим руководством требуется версия 2.0.4 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+ - Для работы с этим учебником требуется Azure CLI версии 2.0.4 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
@@ -50,7 +50,7 @@ az group create --name myResourceGroupAG --location eastus
 
 ## <a name="create-network-resources"></a>Создание сетевых ресурсов
 
-Создайте виртуальную сеть с именем *myVNet* и подсеть *myAGSubnet* с помощью команды `az network vnet create`. Затем добавьте подсеть с именем *myBackendSubnet* , необходимую для внутренних серверов, используя команду `az network vnet subnet create`. Создайте общедоступный IP-адрес *myAGPublicIPAddress* , используя команду `az network public-ip create`.
+Создайте виртуальную сеть с именем *myVNet* и подсеть *myAGSubnet* с помощью команды `az network vnet create`. Затем добавьте подсеть с именем *myBackendSubnet*, необходимую для внутренних серверов, используя команду `az network vnet subnet create`. Создайте общедоступный IP-адрес *myAGPublicIPAddress*, используя команду `az network public-ip create`.
 
 ```azurecli-interactive
 az network vnet create \
@@ -97,7 +97,7 @@ az network application-gateway create \
  Создание шлюза приложений может занять несколько минут. Когда шлюз приложений будет создан, вы увидите такие новые функции:
 
 
-|Функция  |Описание  |
+|Компонент  |Описание  |
 |---------|---------|
 |appGatewayBackendPool     |Для шлюза приложений необходимо наличие по крайней мере одного внутреннего пула адресов.|
 |appGatewayBackendHttpSettings     |Указывает, что для обмена данными используются порт 80 и протокол HTTP.|
@@ -129,7 +129,7 @@ az network application-gateway frontend-port create \
 
 ### <a name="add-a-backend-listener"></a>Добавление серверного прослушивателя
 
-Добавьте серверный прослушиватель с именем *backendListener* , необходимый для маршрутизации трафика, используя команду `az network application-gateway http-listener create`.
+Добавьте серверный прослушиватель с именем *backendListener*, необходимый для маршрутизации трафика, используя команду `az network application-gateway http-listener create`.
 
 
 ```azurecli-interactive
@@ -143,7 +143,7 @@ az network application-gateway http-listener create \
 
 ### <a name="add-a-url-path-map"></a>Добавление сопоставления URL-путей
 
-Сопоставления URL-путей гарантируют, что трафик с определенных URL-адресов маршрутизируется в определенные внутренние пулы. Создайте сопоставление URL-путей с именем *imagePathRule* и *videoPathRule* , используя команды `az network application-gateway url-path-map create` и `az network application-gateway url-path-map rule create`.
+Сопоставления URL-путей гарантируют, что трафик с определенных URL-адресов маршрутизируется в определенные внутренние пулы. Создайте сопоставление URL-путей с именем *imagePathRule* и *videoPathRule*, используя команды `az network application-gateway url-path-map create` и `az network application-gateway url-path-map rule create`.
 
 ```azurecli-interactive
 az network application-gateway url-path-map create \
@@ -168,7 +168,7 @@ az network application-gateway url-path-map rule create \
 
 ### <a name="add-a-routing-rule"></a>Добавление правила маршрутизации
 
-Правило маршрутизации связывает сопоставления URL-адресов с созданным прослушивателем. Добавьте правило с именем *rule2* , используя команду `az network application-gateway rule create`.
+Правило маршрутизации связывает сопоставления URL-адресов с созданным прослушивателем. Добавьте правило с именем *rule2*, используя команду `az network application-gateway rule create`.
 
 ```azurecli-interactive
 az network application-gateway rule create \
@@ -183,7 +183,7 @@ az network application-gateway rule create \
 
 ## <a name="create-virtual-machine-scale-sets"></a>Создание масштабируемых наборов виртуальных машин
 
-В рамках этой статьи вы создадите три масштабируемых набора виртуальных машин, которые поддерживают три созданных внутренних пула. Вы создадите масштабируемые наборы с именами *myvmss1* , *myvmss2* и *myvmss3*. Каждый масштабируемый набор содержит два экземпляра виртуальной машины, на которых устанавливаются службы NGINX.
+В рамках этой статьи вы создадите три масштабируемых набора виртуальных машин, которые поддерживают три созданных внутренних пула. Вы создадите масштабируемые наборы с именами *myvmss1*, *myvmss2* и *myvmss3*. Каждый масштабируемый набор содержит два экземпляра виртуальной машины, на которых устанавливаются службы NGINX.
 
 ```azurecli-interactive
 for i in `seq 1 3`; do

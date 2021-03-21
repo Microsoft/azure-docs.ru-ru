@@ -12,10 +12,10 @@ ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: c5c8e21f2ce3f6907547bf1b2fe4681eb937864b
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102119881"
 ---
 # <a name="json-claims-transformations"></a>Преобразования утверждений JSON
@@ -58,11 +58,11 @@ ms.locfileid: "102119881"
 В следующем преобразовании утверждений выводится строковый запрос JSON, который будет являться телом запроса, отправленного в SendGrid (поставщик электронной почты стороннего поставщика). Структура объекта JSON определяется идентификаторами в точечной нотации InputParameters и Трансформатионклаимтипес Inputclaim. Числа в точечной нотации подразумевают массивы. Значения берутся из значений Inputclaim и свойств InputParameters "" value ".
 
 - Входные утверждения:
-  - **адрес электронной почты**, персонализации для типа утверждения  **. 0. в. 0. Электронная почта**: " someone@example.com "
+  - **адрес электронной почты**, утверждение преобразования типа  **personalizations.0.to.0.email**: " someone@example.com "
   - **OTP**, тип утверждения преобразования **personalizations.0.dynamic_template_data. OTP** "346349"
 - Входной параметр:
   - **template_id**: "d-4c56ffb40fa648b1aa6822283df94f60"
-  - **из. адрес электронной почты**: " service@contoso.com "
+  - **from.email**: " service@contoso.com "
   - **Личные настройки. 0. Тема** "код проверки электронной почты учетной записи Contoso"
 - Исходящее утверждение:
   - **requestBody**: значение JSON
@@ -115,7 +115,7 @@ ms.locfileid: "102119881"
 В следующем преобразовании утверждений выводится строковый запрос JSON, который будет основным текстом запроса, отправленного в REST API. Структура объекта JSON определяется идентификаторами в точечной нотации InputParameters и Трансформатионклаимтипес Inputclaim. Значения берутся из значений Inputclaim и свойств InputParameters "" value ".
 
 - Входные утверждения:
-  - **адрес электронной почты**, утверждение преобразования типа  **customerEntity. email**: " john.s@contoso.com "
+  - **адрес электронной почты**, утверждение преобразования типа  **customerEntity.email**: " john.s@contoso.com "
   - **ObjectID**, тип утверждения преобразования **customerEntity. значение userobjectid** "01234567-89ab-cdef-0123-456789abcdef"
   - **givenName**, утверждение преобразования тип **customerEntity. FirstName** "Джон"
   - **Фамилия**, утверждение преобразования тип **customerEntity. LastName** "Смит"

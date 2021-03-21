@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 01/29/2021
 ms.author: alkohli
 ms.openlocfilehash: 510f2677673363791ab5eb0f2c4dbcd25b697934
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99072730"
 ---
 # <a name="azure-data-box-gateway-2101-release-notes"></a>Заметки о выпуске Шлюз Azure Data Box 2101
@@ -28,7 +28,7 @@ ms.locfileid: "99072730"
 > [!NOTE]
 > Обновление 2101 можно применить только ко всем устройствам, на которых выполняются общедоступные версии программного обеспечения или более поздней версии.
 
-## <a name="whats-new"></a>Новые возможности
+## <a name="whats-new"></a>Новое
 
 Этот выпуск содержит исправление следующей ошибки.
 

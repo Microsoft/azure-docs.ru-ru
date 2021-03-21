@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 01/29/2021
 ms.author: mbaldwin
 ms.openlocfilehash: e81cbd7e6584f4a280ab9507a989b52d3b188f2d
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99072713"
 ---
 # <a name="best-practices-to-use-key-vault"></a>Рекомендации по использованию Key Vault
@@ -39,13 +39,13 @@ Azure Key Vault — это облачная служба, которая обе
 ### <a name="azure-powershell-backup-commands"></a>Azure PowerShell команды резервного копирования
 
 * [Сертификат резервной копии](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultCertificate)
-* [Резервная копия ключа](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey)
+* [Создание резервной копии ключа](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey)
 * [Секрет резервного копирования](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultSecret)
 
 ### <a name="azure-cli-backup-commands"></a>Azure CLI команды резервного копирования
 
 * [Сертификат резервной копии](/cli/azure/keyvault/certificate#az-keyvault-certificate-backup)
-* [Резервная копия ключа](/cli/azure/keyvault/key#az-keyvault-key-backup)
+* [Создание резервной копии ключа](/cli/azure/keyvault/key#az-keyvault-key-backup)
 * [Секрет резервного копирования](/cli/azure/keyvault/secret#az-keyvault-secret-backup)
 
 

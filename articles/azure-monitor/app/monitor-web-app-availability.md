@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.reviewer: sdash
 ms.openlocfilehash: d7c610e374dcb7b97850d815ba8bb927cdebacfc
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103012570"
 ---
 # <a name="monitor-the-availability-of-any-website"></a>Мониторинг доступности любого веб-сайта
@@ -93,13 +93,13 @@ ms.locfileid: "103012570"
 | Отображаемое имя                           | Имя заполнения   |
 |----------------------------------------|-------------------|
 | Восточная Австралия                         | EMEA-Au-SYD-ребро  |
-| Южная Бразилия                           | Латам-BR-ГРУ-ребро |
+| Brazil South                           | Латам-BR-ГРУ-ребро |
 | Центральная часть США                             | US-FL-Миа-ребро    |
 | Восточная Азия                              | Азиатско--HK-хкн-AZR   |
 | Восточная часть США                                | US-ва-Ash-AZR     |
 | Южная Франция (прежнее название — Франция) | EMEA-CH-зрх-ребро  |
 | Центральная Франция                         | EMEA-fr-одного-ребро  |
-| Восточная Япония                             | Азиатско--JP-Кав-ребро  |
+| Japan East                             | Азиатско--JP-Кав-ребро  |
 | Северная Европа                           | EMEA-GB-db3-AZR   |
 | Центрально-северная часть США                       | US-Il-CH1-AZR     |
 | Центрально-южная часть США                       | US-TX-SN1-AZR     |
@@ -155,7 +155,7 @@ ms.locfileid: "103012570"
 1. Доступность. Количество успешно выполненных тестов (в процентах).
 2. Продолжительность теста. Средняя длительность всех тестов.
 
-## <a name="automation"></a>Служба автоматизации
+## <a name="automation"></a>Автоматизация
 
 * [Используйте сценарии PowerShell, чтобы настройка теста доступности](./powershell.md#add-an-availability-test) выполнялась автоматически.
 * Настройте вызов [webhook](../alerts/alerts-webhooks.md), активируемый оповещением.

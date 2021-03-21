@@ -14,10 +14,10 @@ ms.author: datrigan
 ms.reviewer: vanto
 ms.date: 05/26/2020
 ms.openlocfilehash: ae0d9696d869b2a260de643482a9f86c34bcc824
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575465"
 ---
 # <a name="get-started-with-azure-sql-managed-instance-auditing"></a>Приступая к работе с аудитом Управляемый экземпляр Azure SQL
@@ -244,7 +244,7 @@ ms.locfileid: "100575465"
 - Параметр завершения работы **не поддерживается**.
 - Значение 0 для `queue_delay`**не поддерживается**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Полный список методов использования журнала аудита см. в статье Приступая к [работе с аудитом базы данных SQL Azure](../../azure-sql/database/auditing-overview.md).
 - Дополнительные сведения о программах Azure, поддерживающих соответствие стандартам, см. в [центр управления безопасностью Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942), где можно найти самый актуальный список сертификатов соответствия.
