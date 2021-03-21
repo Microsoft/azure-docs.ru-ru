@@ -9,17 +9,17 @@ ms.date: 11/18/2019
 ms.author: normesta
 ms.reviewer: stewu
 ms.openlocfilehash: 4db85357ee970d13d6b4fcce195cae66932bed18
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95912796"
 ---
 # <a name="tune-performance-storm-hdinsight--azure-data-lake-storage-gen2"></a>Настройка производительности: & Azure Data Lake Storage 2-го поколения HDInsight
 
 Изучите факторы, которые важны для настройки производительности в топологии Azure Storm. Например, нужно понимать характеристики работы, выполняемой элементами spout и bolt (в случае, когда работа связана с интенсивными рабочими нагрузками ввода-вывода или активным использованием памяти). В этой статье рассматривается ряд рекомендаций по улучшению производительности, в том числе по устранению типичных неполадок.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
 * **Учетная запись Azure Data Lake Storage 2-го поколения**. Инструкции по ее созданию см. в разделе [Краткое руководство. Создание учетной записи хранения для аналитики](../common/storage-account-create.md).
@@ -110,7 +110,7 @@ ms.locfileid: "95912796"
 
 Чтобы проверить, применяется ли для вас регулирование, включите ведение журнала отладки на стороне клиента.
 
-1. В **Ambari**  >  **Storm**  >  **файле config** Ambari  >  **с расширенным набором данных-Worker-log4j** измените значение **&lt; корневого &gt; уровня = "info"** на **&lt; root &gt; Level = "Отладка"**. Перезапустите все узлы и службы, чтобы изменения конфигурации вступили в силу.
+1. В   >    >  **файле config** Ambari  >  **с расширенным набором данных-Worker-log4j** измените значение **&lt; корневого &gt; уровня = "info"** на **&lt; root &gt; Level = "Отладка"**. Перезапустите все узлы и службы, чтобы изменения конфигурации вступили в силу.
 2. Отслеживайте журналы топологии на рабочих узлах Storm (в разделе /var/log/storm/worker-artifacts/&lt;TopologyName&gt;/&lt;port&gt;/worker.log) на предмет наличия исключений регулирования Data Lake Storage 2-го поколения.
 
 ## <a name="next-steps"></a>Дальнейшие действия

@@ -9,10 +9,10 @@ ms.date: 11/20/2020
 ms.topic: how-to
 ms.service: azure-spatial-anchors
 ms.openlocfilehash: 69134ef87d90fe69de2d9e4e9222e90f65edc785
-ms.sourcegitcommit: b8eba4e733ace4eb6d33cc2c59456f550218b234
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95506999"
 ---
 # <a name="configuring-azure-spatial-anchors-in-a-cwinrt-hololens-project"></a>Настройка пространственных привязок Azure в проекте C++/WinRT HoloLens
@@ -27,7 +27,7 @@ ms.locfileid: "95506999"
 
 Следуйте приведенным [здесь](/nuget/consume-packages/install-use-packages-visual-studio) инструкциям, чтобы использовать диспетчер пакетов NuGet Visual Studio для установки пакета NuGet [Microsoft. Azure. спатиаланчорс. WinRT](https://www.nuget.org/packages/Microsoft.Azure.SpatialAnchors.WinRT/) в проект.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Как создавать и размещать привязки в C++/WinRT](./create-locate-anchors-cpp-winrt.md)

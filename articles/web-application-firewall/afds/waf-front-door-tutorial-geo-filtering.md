@@ -9,10 +9,10 @@ ms.date: 03/10/2020
 ms.author: victorh
 ms.reviewer: tyao
 ms.openlocfilehash: 479b1d8ed1f4238486bb78e33a6139463578dbba
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94563313"
 ---
 # <a name="set-up-a-geo-filtering-waf-policy-for-your-front-door"></a>Настройка политики геофильтрации для брандмауэра веб-приложения (WAF), связанного с Azure Front Door Service
@@ -79,7 +79,7 @@ $nonUSBlockRule = New-AzFrontDoorWafCustomRuleObject `
 
 С помощью команды `Get-AzResourceGroup` найдите имя группы ресурсов, содержащей профиль Front Door. Затем создайте объект политики `geoPolicy`, содержащий `nonUSBlockRule`, используя команду [New-AzFrontDoorWafPolicy](/powershell/module/az.frontdoor/new-azfrontdoorwafpolicy) в указанной группе ресурсов, содержащей профиль Front Door. Укажите уникальное имя для политики геофильтрации. 
 
-В следующем примере используется имя группы ресурсов *myResourceGroupFD1* , а также предполагается, что профиль Front Door создан с помощью инструкций, приведенных в статье [Краткое руководство. Создание профиля Front Door для высокодоступного глобального веб-приложения](../../frontdoor/quickstart-create-front-door.md). В следующем примере замените имя политики *geoPolicyAllowUSOnly* уникальным именем политики.
+В следующем примере используется имя группы ресурсов *myResourceGroupFD1*, а также предполагается, что профиль Front Door создан с помощью инструкций, приведенных в статье [Краткое руководство. Создание профиля Front Door для высокодоступного глобального веб-приложения](../../frontdoor/quickstart-create-front-door.md). В следующем примере замените имя политики *geoPolicyAllowUSOnly* уникальным именем политики.
 
 ```
 $geoPolicy = New-AzFrontDoorWafPolicy `

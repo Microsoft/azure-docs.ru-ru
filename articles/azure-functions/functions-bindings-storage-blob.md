@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 02/13/2020
 ms.author: cshoe
 ms.openlocfilehash: 4ec21086ee94610be1d9cf5da7b64c837b5311a9
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100381534"
 ---
 # <a name="azure-blob-storage-bindings-for-azure-functions-overview"></a>Общие сведения о привязках хранилища BLOB-объектов Azure для функций Azure
@@ -75,7 +75,7 @@ ms.locfileid: "100381534"
 |---------|---------|---------|
 |maxDegreeOfParallelism|8 * (число доступных ядер)|Целое число одновременных вызовов, разрешенное для каждой функции, активируемой с помощью большого двоичного объекта. Минимальное допустимое значение — 1.|
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Выполнение функции при изменении данных хранилища BLOB-объектов](./functions-bindings-storage-blob-trigger.md)
 - [Чтение данных хранилища BLOB-объектов при выполнении функции](./functions-bindings-storage-blob-input.md)

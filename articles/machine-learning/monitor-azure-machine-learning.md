@@ -11,10 +11,10 @@ author: aashishb
 ms.custom: subject-monitoring
 ms.date: 10/01/2020
 ms.openlocfilehash: a18ee02b5e91b628a25655949a652270bd7436c4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575137"
 ---
 # <a name="monitor-azure-machine-learning"></a>Мониторинг Машинного обучения Azure
@@ -171,7 +171,7 @@ ms.locfileid: "100575137"
 | Процент использования квоты | Тип агрегирования: Average, оператор: больше, пороговое значение: 90| Когда процент использования квоты превышает 90% |
 | Недоступные для использования узлы | Тип агрегирования: Total, оператор: больше, пороговое значение: 0 | При наличии одного или нескольких неиспользуемых узлов |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Справочные сведения о журналах и метриках см. в разделе [мониторинг машинное обучение Azure справочника по данным](monitor-resource-reference.md).
 - Сведения о работе с квотами, связанными с Машинное обучение Azure, см. в статье [Управление квотами и их запрос для ресурсов Azure](how-to-manage-quotas.md).

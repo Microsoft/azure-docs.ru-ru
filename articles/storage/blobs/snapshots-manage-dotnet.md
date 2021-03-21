@@ -11,10 +11,10 @@ ms.author: tamram
 ms.subservice: blobs
 ms.custom: devx-track-csharp
 ms.openlocfilehash: ae1d72c30fb7c45c92f24ec5132859a45c6ae953
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95543380"
 ---
 # <a name="create-and-manage-a-blob-snapshot-in-net"></a>Создание моментальных снимков больших двоичных объектов и управление ими в .NET
@@ -25,7 +25,7 @@ ms.locfileid: "95543380"
 
 ## <a name="create-a-snapshot"></a>Создание моментального снимка
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы создать моментальный снимок блочного BLOB-объекта с помощью версии 12. x клиентской библиотеки службы хранилища Azure для .NET, используйте один из следующих методов.
 
@@ -78,7 +78,7 @@ private static async Task CreateBlockBlobSnapshot(string accountName, string con
 }
 ```
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Чтобы создать моментальный снимок блочного BLOB-объекта с помощью версии 11. x клиентской библиотеки службы хранилища Azure для .NET, используйте один из следующих методов.
 
@@ -127,11 +127,11 @@ private static async Task CreateBlockBlobSnapshot(CloudBlobContainer container)
 
 Чтобы удалить большой двоичный объект, необходимо сначала удалить все моментальные снимки этого большого двоичного объекта. Можно удалить моментальный снимок отдельно или указать, чтобы при удалении исходного большого двоичного объекта были удалены и все его моментальные снимки. Попытка удалить большой двоичный объект, у которого еще есть моментальные снимки, завершится ошибкой.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы удалить большой двоичный объект и его моментальные снимки с помощью версии 12. x клиентской библиотеки службы хранилища Azure для .NET, используйте один из следующих методов и включите перечисление [делетеснапшотсоптион](/dotnet/api/azure.storage.blobs.models.deletesnapshotsoption) :
 
-- [Удаление](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.delete)
+- [Удалить](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.delete)
 - [DeleteAsync](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.deleteasync)
 - [DeleteIfExists](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.deleteifexists)
 - [DeleteIfExistsAsync](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.deleteifexistsasync)
@@ -142,11 +142,11 @@ private static async Task CreateBlockBlobSnapshot(CloudBlobContainer container)
 await blobClient.DeleteIfExistsAsync(DeleteSnapshotsOption.IncludeSnapshots, null, default);
 ```
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Чтобы удалить большой двоичный объект и его моментальные снимки с помощью версии 11. x клиентской библиотеки службы хранилища Azure для .NET, используйте один из следующих методов удаления больших двоичных объектов и включите перечисление [делетеснапшотсоптион](/dotnet/api/microsoft.azure.storage.blob.deletesnapshotsoption) :
 
-- [Удаление](/dotnet/api/microsoft.azure.storage.blob.cloudblob.delete)
+- [Удалить](/dotnet/api/microsoft.azure.storage.blob.cloudblob.delete)
 - [DeleteAsync](/dotnet/api/microsoft.azure.storage.blob.cloudblob.deleteasync)
 - [DeleteIfExists](/dotnet/api/microsoft.azure.storage.blob.cloudblob.deleteifexists)
 - [DeleteIfExistsAsync](/dotnet/api/microsoft.azure.storage.blob.cloudblob.deleteifexistsasync)
@@ -159,7 +159,7 @@ await blockBlob.DeleteIfExistsAsync(DeleteSnapshotsOption.IncludeSnapshots, null
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Моментальные снимки BLOB-объектов](snapshots-overview.md)
 - [Версии BLOB-объектов](versioning-overview.md)

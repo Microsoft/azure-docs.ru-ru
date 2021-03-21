@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 10/31/2019
 ms.openlocfilehash: d7e1133b8f3880c4c1616ef5ca955ed014348935
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100383965"
 ---
 # <a name="use-azure-key-vault-secrets-in-pipeline-activities"></a>Использование секретов Azure Key Vault в действиях конвейера
@@ -19,7 +19,7 @@ ms.locfileid: "100383965"
 
 Можно сохранить учетные данные или секретные значения в Azure Key Vault и использовать их во время выполнения конвейера для передачи в действия.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Эта функция основана на управляемом удостоверении фабрики данных.  Узнайте, как это работает из [управляемого удостоверения для фабрики данных](./data-factory-service-identity.md) и убедитесь, что фабрика данных имеет одну связь.
 
@@ -45,9 +45,9 @@ ms.locfileid: "100383965"
 
 4. В конвейере фабрики данных добавьте новое веб-действие и настройте его следующим образом.  
 
-    |Свойство  |Значение  |
+    |Свойство.  |Значение  |
     |---------|---------|
-    |Безопасный вывод     |True         |
+    |Безопасный вывод     |Верно         |
     |URL-адрес     |[Значение URI секрета]? API-Version = 7.0         |
     |Метод     |GET         |
     |Аутентификация     |MSI         |
@@ -65,6 +65,6 @@ ms.locfileid: "100383965"
 
     ![Выражение кода](media/how-to-use-azure-key-vault-secrets-pipeline-activities/usewebactivity.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения об использовании Azure Key Vault для хранения учетных данных для хранилищ данных и вычислений см. [в разделе Хранение учетных данных в Azure Key Vault](./store-credentials-in-key-vault.md)

@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 05/14/2018
 ms.openlocfilehash: 73d291fd76d9adbe2a095406b56bd879d497d3b5
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98942659"
 ---
 # <a name="publish-an-hdinsight-application-in-the-azure-marketplace"></a>Публикация приложения HDInsight в Azure Marketplace
@@ -22,7 +22,7 @@ ms.locfileid: "98942659"
 * [Установка приложений HDInsight](hdinsight-apps-install-applications.md). Узнайте, как установить приложение HDInsight в кластерах.
 * [Установите пользовательские приложения HDInsight](hdinsight-apps-install-custom-applications.md). Узнайте, как устанавливать и тестировать пользовательские приложения HDInsight.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Чтобы отправить пользовательское приложение в Marketplace, необходимо сначала [создать и протестировать его](hdinsight-apps-install-custom-applications.md).
 
 Также вы должны зарегистрировать учетную запись разработчика. Дополнительные сведения см. в статье [Публикация предложения и управление им в Azure Marketplace](../marketplace/overview.md) и [Создание учетной записи разработчика Майкрософт](../marketplace/overview.md).

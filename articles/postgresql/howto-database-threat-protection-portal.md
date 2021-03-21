@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 5/6/2019
 ms.openlocfilehash: 5583e8423f0909936d9e55c6d87593835eded8f7
-ms.sourcegitcommit: 3bcce2e26935f523226ea269f034e0d75aa6693a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92489903"
 ---
 # <a name="advanced-threat-protection-for-azure-database-for-postgresql---single-server"></a>Расширенная защита от угроз для базы данных Azure для PostgreSQL — один сервер
@@ -42,15 +42,15 @@ ms.locfileid: "92489903"
     
 1. Щелкните ссылку **View recent alerts** (Просмотреть последние оповещения) в электронном сообщении, чтобы запустить портал Azure и открыть страницу оповещений центра безопасности Azure. На этой странице содержится обзор активных угроз, обнаруженных в базе данных SQL.
     
-    :::image type="content" source="./media/howto-database-threat-protection-portal/anomalous-activity-report.png" alt-text="Настройка обнаружения угроз":::
+    :::image type="content" source="./media/howto-database-threat-protection-portal/anomalous-activity-report.png" alt-text="Отчеты об аномальных действиях":::
 
     Просмотрите активные угрозы:
 
-    :::image type="content" source="./media/howto-database-threat-protection-portal/active-threats.png" alt-text="Настройка обнаружения угроз":::
+    :::image type="content" source="./media/howto-database-threat-protection-portal/active-threats.png" alt-text="Активные угрозы":::
 
 2. Щелкните определенное оповещение, чтобы отобразить дополнительные сведения и действия для изучения этой угрозы и устранения будущих угроз.
     
-    :::image type="content" source="./media/howto-database-threat-protection-portal/specific-alert.png" alt-text="Настройка обнаружения угроз":::
+    :::image type="content" source="./media/howto-database-threat-protection-portal/specific-alert.png" alt-text="Определенное оповещение":::
 
 ## <a name="explore-threat-detection-alerts"></a>Анализ оповещений об обнаружении угроз
 
@@ -58,7 +58,7 @@ ms.locfileid: "92489903"
 
 Щелкните **Оповещения безопасности** в разделе **Защита от угроз**, чтобы запустить страницу оповещений центра безопасности Azure и получить обзор активных угроз SQL, обнаруженных в базе данных.
 
-  :::image type="content" source="./media/howto-database-threat-protection-portal/threat-detection-alert-asc.png" alt-text="Настройка обнаружения угроз":::
+  :::image type="content" source="./media/howto-database-threat-protection-portal/threat-detection-alert-asc.png" alt-text="Повышение защиты от угроз":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

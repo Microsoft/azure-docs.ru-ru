@@ -9,10 +9,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.openlocfilehash: 9c8e971b4fda313ffede58455dd6d057d6848ce4
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98678135"
 ---
 # <a name="azure-maps-weather-services-preview-frequently-asked-questions-faq"></a>Часто задаваемые вопросы о службах погоды Azure Maps (Предварительная версия)
@@ -105,7 +105,7 @@ Azure Maps пакеты SDK для Android поддерживают слои м�
 
 Да. Значки и соответствующие им коды можно найти [здесь](./weather-services-concepts.md#weather-icons). Обратите внимание, что только некоторые API-интерфейсы службы погоды (Предварительная версия), такие как  [Получение текущих условий API](/rest/api/maps/weather/getcurrentconditionspreview), возвращают *иконкоде* в ответе. Дополнительные сведения см. в текущем [образце кода](https://azuremapscodesamples.azurewebsites.net/index.html?sample=Get%20current%20weather%20at%20a%20location)веасеркондитионс Open-Source.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если эта часто задаваемые вопросы не отвечают на ваш вопрос, вы можете связаться с нами по следующим каналам (в порядке эскалации):
 

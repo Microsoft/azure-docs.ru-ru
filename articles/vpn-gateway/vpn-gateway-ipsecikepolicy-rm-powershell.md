@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 09/02/2020
 ms.author: yushwang
 ms.openlocfilehash: 96931d2dd94a8a31021ebe62caaefc54f643b007
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94649268"
 ---
 # <a name="configure-ipsecike-policy-for-s2s-vpn-or-vnet-to-vnet-connections"></a>Настройка политики IPsec/IKE для VPN-подключений типа "сеть — сеть" или "виртуальная сеть — виртуальная сеть"
@@ -34,8 +34,9 @@ ms.locfileid: "94649268"
 
 > [!IMPORTANT]
 > 1. Обратите внимание, что политика IPsec/IKE будет актуальна только для следующих номеров SKU шлюзов:
->    * ***VpnGw1, VpnGw2, VpnGw3** _ (на основе маршрута) _ ***Standard** _ and _*_HighPerformance_*_ (на основе маршрута)
-> 2. Для данного соединения можно указать только _*_одну_*_ комбинацию политики.
+>    * ***VpnGw1, VpnGw2, VpnGw3*** (на основе маршрутов);
+>    * ***Стандартные** _ и _ *_HighPerformance_** (на основе маршрутов)
+> 2. Можно указать только ***одну*** комбинацию политик для каждого подключения.
 > 3. Вам следует указать все алгоритмы и параметры для IKE (основной режим) и IPsec (быстрый режим). Указать частичную политику нельзя.
 > 4. Ознакомьтесь со спецификациями поставщиков VPN-устройств, чтобы убедиться, что политика поддерживается на локальных VPN-устройствах. Если политики несовместимы, невозможно будет установить VPN-подключения типа "сеть — сеть" или "виртуальная сеть — виртуальная сеть".
 
@@ -55,7 +56,7 @@ ms.locfileid: "94649268"
 
 В таблице ниже перечислены поддерживаемые алгоритмы шифрования и уровни стойкости ключей, которые могут настроить клиенты.
 
-| _ *IPSec/IKEv2**  | **Параметры**    |
+| **IPsec/IKEv2**  | **Параметры**    |
 | ---  | --- 
 | Шифрование IKEv2 | AES256, AES192, AES128, DES3, DES  
 | Проверка целостности IKEv2  | SHA384, SHA256, SHA1, MD5  |
@@ -114,7 +115,7 @@ ms.locfileid: "94649268"
 
 Пошаговые инструкции по созданию VPN-подключения типа "сеть — сеть" см. в статье [Создание виртуальной сети с VPN-подключением типа "сеть — сеть" с помощью PowerShell](vpn-gateway-create-site-to-site-rm-powershell.md).
 
-### <a name="before-you-begin"></a><a name="before"></a>Перед началом
+### <a name="before-you-begin"></a><a name="before"></a>Подготовка к работе
 
 * Убедитесь в том, что у вас уже есть подписка Azure. Если у вас нет подписки Azure, вы можете [активировать преимущества для подписчиков MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) или [зарегистрировать бесплатную учетную запись](https://azure.microsoft.com/pricing/free-trial/).
 * Установите командлеты PowerShell для Azure Resource Manager. Дополнительные сведения об установке командлетов PowerShell см. в разделе [Общие сведения об Azure PowerShell](/powershell/azure/).

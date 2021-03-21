@@ -6,16 +6,16 @@ ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 12/05/2016
 ms.openlocfilehash: d2764e5e3994eb7b80a8e7cf62fb7f437323c97e
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96015304"
 ---
 # <a name="analyze-website-logs-using-azure-data-lake-analytics"></a>Анализ журналов веб-сайта с помощью Azure Data Lake Analytics
 Сведения об анализе журналов веб-сайтов с помощью службы аналитики озера, а также информация об источниках ссылок, которые столкнулись с ошибками во время попытки посетить веб-сайт.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * **Visual Studio 2015 или Visual Studio 2013**.
 * **[Средства Data Lake для Visual Studio](https://aka.ms/adltoolsvs)**.
 
@@ -56,7 +56,7 @@ ms.locfileid: "96015304"
 
    ![Новый проект U-SQL в Visual Studio](./media/data-lake-analytics-data-lake-tools-get-started/data-lake-analytics-data-lake-tools-new-project.png)
 
-3. Нажмите кнопку **ОК**. Visual Studio создает решение с помощью файла Script.usql.
+3. Нажмите кнопку **OK**. Visual Studio создает решение с помощью файла Script.usql.
 
 4. Скопируйте следующий сценарий в файл Script.usql.
 
@@ -178,7 +178,7 @@ ms.locfileid: "96015304"
 3. Дважды щелкните файл **UnsuccessfulResponses.log**.
 4. Кроме того, вы можете дважды щелкнуть выходной файл в графическом представлении задания для перехода непосредственно к выходным данным.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Для начала работы с аналитикой озера данных с использованием различных средств см. следующие статьи.
 
 * [Начало работы с аналитикой озера данных с помощью портала Azure](data-lake-analytics-get-started-portal.md)

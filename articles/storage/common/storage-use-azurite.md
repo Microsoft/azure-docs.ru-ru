@@ -9,10 +9,10 @@ ms.subservice: common
 ms.topic: how-to
 ms.custom: devx-track-csharp
 ms.openlocfilehash: b5051a5e29f9e34c43963a9a264ee47e2ad7b04a
-ms.sourcegitcommit: 3bcce2e26935f523226ea269f034e0d75aa6693a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92490787"
 ---
 # <a name="use-the-azurite-emulator-for-local-azure-storage-development"></a>Использование эмулятора Азурите для разработки локальных хранилищ Azure
@@ -148,7 +148,7 @@ azurite --silent --location c:\azurite --debug c:\azurite\debug.log
 
 В этом разделе описываются параметры командной строки, доступные при запуске Азурите.
 
-### <a name="help"></a>Справка
+### <a name="help"></a>Help
 
 **Необязательно** — получение справки по командной строке с помощью `-h` `--help` параметра или.
 
@@ -480,7 +480,7 @@ var client = new QueueClient(
 
 #### <a name="connect-to-azurite-using-https"></a>Подключение к Азурите с помощью HTTPS
 
-По умолчанию Обозреватель службы хранилища не открывает конечную точку HTTPS, использующую самозаверяющий сертификат. Если вы используете Азурите с протоколом HTTPS, скорее всего, вы используете самозаверяющий сертификат. В обозреватель службы хранилища импортируйте SSL-сертификаты с **Edit**помощью  ->  **SSL Certificates**  ->  **Import Certificates** диалогового окна Изменение сертификатов SSL.
+По умолчанию Обозреватель службы хранилища не открывает конечную точку HTTPS, использующую самозаверяющий сертификат. Если вы используете Азурите с протоколом HTTPS, скорее всего, вы используете самозаверяющий сертификат. В обозреватель службы хранилища импортируйте SSL-сертификаты с помощью  ->    ->   диалогового окна Изменение сертификатов SSL.
 
 ##### <a name="import-certificate-to-storage-explorer"></a>Импорт сертификата в Обозреватель службы хранилища
 

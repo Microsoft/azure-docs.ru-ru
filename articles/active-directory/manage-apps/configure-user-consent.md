@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.reviewer: arvindh, luleon, phsignor
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: 68bb846ebb0199691161bc501441df908eb8ad87
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101643615"
 ---
 # <a name="configure-how-end-users-consent-to-applications"></a>Настройка согласия конечных пользователей для приложений
@@ -145,7 +145,7 @@ Set-AzureADMSAuthorizationPolicy `
 
 1. Сведения о значении параметров:
 
-    | Параметр       | Тип         | Описание  |
+    | Параметр       | Type         | Описание  |
     | ------------- | ------------ | ------------ |
     | _BlockUserConsentForRiskyApps_   | Логическое |  Флаг, указывающий, будет ли согласие пользователя блокироваться при обнаружении рискованного запроса. |
 

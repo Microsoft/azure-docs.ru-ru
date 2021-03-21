@@ -8,10 +8,10 @@ author: bmitchell287
 ms.date: 10/18/2019
 ms.custom: devx-track-java
 ms.openlocfilehash: 3033be3a793c318135f8150b86114b6fee55fac7
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94655226"
 ---
 # <a name="set-up-a-spring-cloud-config-server-instance-for-your-service"></a>настройке экземпляра сервера конфигурации Spring Cloud для службы
@@ -141,17 +141,17 @@ spring.jmx.enabled
 
 5. Нажмите кнопку **Проверить**.
 
-    ![Перейдите к серверу конфигурации](media/spring-cloud-quickstart-launch-app-portal/portal-config.png)
+    ![Переход к серверу конфигурации](media/spring-cloud-quickstart-launch-app-portal/portal-config.png)
 
-6. После завершения проверки нажмите кнопку **Применить** , чтобы сохранить изменения.
+6. После завершения проверки щелкните **Применить**, чтобы сохранить изменения.
 
     ![Проверка сервера конфигурации](media/spring-cloud-quickstart-launch-app-portal/validate-complete.png)
 
-7. Обновление конфигурации может занять несколько минут.
+7. На обновление конфигурации может потребоваться несколько минут.
  
     ![Обновление сервера конфигурации](media/spring-cloud-quickstart-launch-app-portal/updating-config.png) 
 
-8. По завершении настройки необходимо получить уведомление.
+8. После завершения настройки вы получите уведомление.
 
 ### <a name="enter-repository-information-directly-to-the-azure-portal"></a>Введение данных репозитория непосредственно на портал Azure
 
@@ -201,7 +201,7 @@ spring:
 
 ## <a name="using-azure-repos-for-azure-spring-cloud-configuration"></a>Использование Azure Repos для настройки облачного облака Azure
 
-Azure Веснного облака может получить доступ к репозиториям Git, открытым, защищенным SSH, или защищенным с помощью обычной проверки подлинности HTTP. Мы будем использовать последний вариант, так как проще создавать Azure Repos и управлять ими.
+Azure Spring Cloud может получить доступ к общедоступным репозиториям Git, защищенным с помощью SSH или обычной проверки подлинности HTTP. Мы будем использовать последний вариант, так как проще создавать Azure Repos и управлять ими.
 
 ### <a name="get-repo-url-and-credentials"></a>Получение URL-адреса и учетных данных репозитория
 1. На портале Azure Repos проекта нажмите кнопку "клонировать":

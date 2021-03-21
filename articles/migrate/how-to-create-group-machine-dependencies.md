@@ -7,24 +7,24 @@ ms.manager: abhemraj
 ms.topic: how-to
 ms.date: 11/25/2020
 ms.openlocfilehash: 772602a11878276da3b81b84e7f4016997375077
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102183069"
 ---
 # <a name="set-up-dependency-visualization"></a>Настройка визуализации зависимостей
 
 В этой статье описывается, как настроить анализ зависимостей на основе агента в службе "миграция Azure": Оценка сервера. [Анализ зависимостей](concepts-dependency-visualization.md) помогает определить и понять зависимости между компьютерами, которые вы хотите оценить и перенести в Azure.
 
-## <a name="before-you-start"></a>Прежде чем начать
+## <a name="before-you-start"></a>Перед началом работы
 
-- Ознакомьтесь с требованиями к поддержке и развертыванию для анализа зависимостей на основе агентов:
+- Ознакомьтесь с требованиями к поддержке и развертыванию для анализа зависимостей на основе агента:
     - [Виртуальные машины VMware](migrate-support-matrix-vmware.md#dependency-analysis-requirements-agent-based)
     - [физические серверы;](migrate-support-matrix-physical.md#agent-based-dependency-analysis-requirements)
     - [Виртуальные машины Hyper-V](migrate-support-matrix-hyper-v.md#agent-based-dependency-analysis-requirements)
 - Не забудьте выполнить следующие действия.
-    - У вас есть проект службы "миграция Azure". Если это не так, [Создайте](./create-manage-projects.md) его сейчас.
+    - У вас должен быть проект службы "Миграция Azure". Если его нет, [создайте](./create-manage-projects.md) его сейчас.
     - Убедитесь, что в проект [добавлен](how-to-assess.md) инструмент Azure Migrate: Server для оценки.
     - Настройте [устройство миграции Azure](migrate-appliance.md) для обнаружения локальных компьютеров. Устройство обнаруживает локальные компьютеры и отправляет метаданные и данные производительности в службу "миграция Azure": Оценка сервера. Настройте устройство для:
         - [VMware](how-to-set-up-appliance-vmware.md) Машины

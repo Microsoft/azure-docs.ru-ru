@@ -4,10 +4,10 @@ description: Узнайте, как использовать функции бе
 ms.topic: conceptual
 ms.date: 04/30/2020
 ms.openlocfilehash: da473b1d886ec2fe95a7baae76b09aff38fb3cd7
-ms.sourcegitcommit: 30906a33111621bc7b9b245a9a2ab2e33310f33f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95254055"
 ---
 # <a name="soft-delete-for-azure-backup"></a>Обратимое удаление для Azure Backup
@@ -69,7 +69,7 @@ SoftDeleteFeatureState : Disabled
 
 ### <a name="using-azure-portal"></a>Использование портала Azure
 
-Выполните следующие действия:
+Выполните следующие действия.
 
 1. Выполните действия по [отключению обратимого удаления](#enabling-and-disabling-soft-delete).
 
@@ -140,7 +140,7 @@ AppVM1           DeleteBackupData     Completed            12/5/2019 12:44:15 PM
 2. Затем отключите функцию обратимого удаления с помощью REST API, выполнив описанные [здесь](use-restapi-update-vault-properties.md#update-soft-delete-state-using-rest-api)действия.
 3. Затем удалите резервные копии с помощью REST API, как описано [здесь](backup-azure-arm-userestapi-backupazurevms.md#stop-protection-and-delete-data).
 
-## <a name="frequently-asked-questions"></a>Вопросы и ответы
+## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
 ### <a name="do-i-need-to-enable-the-soft-delete-feature-on-every-vault"></a>Нужно ли включать функцию обратимого удаления в каждом хранилище?
 

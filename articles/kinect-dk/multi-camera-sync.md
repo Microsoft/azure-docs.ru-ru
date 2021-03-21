@@ -8,10 +8,10 @@ ms.date: 02/20/2020
 ms.topic: article
 keywords: Azure, Kinect, спецификации, оборудование, DK, возможности, глубина, цвет, RGB, иму, массив, глубина, несколько, синхронизация
 ms.openlocfilehash: eabf77896777f39efcfd61adb3040bca8642716e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102039960"
 ---
 # <a name="synchronize-multiple-azure-kinect-dk-devices"></a>Синхронизация нескольких устройств Azure Kinect DK
@@ -200,7 +200,7 @@ ms.locfileid: "102039960"
 > [!div class="nextstepaction"]
 > [API-интерфейс для записи и воспроизведения пакета SDK для датчика Kinect Azure](record-playback-api.md)
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>Связанные темы
 
 - [Сведения о пакете SDK для датчика Kinect для Azure](about-sensor-sdk.md)
 - [Спецификации оборудования для Azure Kinect DK](hardware-specification.md) 

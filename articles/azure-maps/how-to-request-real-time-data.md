@@ -10,10 +10,10 @@ services: azure-maps
 manager: philmea
 ms.custom: mvc
 ms.openlocfilehash: d3e3dc4b0e3bc64a38856da8344583b744ea62b6
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96906052"
 ---
 # <a name="request-real-time-public-transit-data-using-the-azure-maps-mobility-services-preview"></a>Запрос общедоступных транзитных данных в реальном времени с помощью Azure Maps служб Mobility Services (Предварительная версия) 

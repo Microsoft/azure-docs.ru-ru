@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 02/11/2021
 ms.author: alkohli
 ms.openlocfilehash: fa7616a740e8246fa08e950494428095f41ee404
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100382860"
 ---
 # <a name="storsimple-8000-series-software-high-availability-and-networking-requirements"></a>Программное обеспечение StorSimple серии 8000, высокий уровень доступности и требования к сети
@@ -244,7 +244,7 @@ ms.locfileid: "100382860"
 * Настройте StorSimple с помощью [конфигураций кластера двухузлового файлового сервера][1]. При удалении одиночных точек сбоя и создании избыточности на стороне узла все решение становится высокодоступным.
 * Используйте постоянно доступные общие папки в Windows Server 2012 (SMB 3.0) для обеспечения высокой доступности во время отработки отказа контроллеров хранилища. Дополнительные сведения о настройке кластеров для файловых серверов и постоянно доступных общих папок в Windows Server 2012 см. в этом [видео](https://channel9.msdn.com/Events/IT-Camps/IT-Camps-On-Demand-Windows-Server-2012/DEMO-Continuously-Available-File-Shares).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Узнайте о системных ограничениях StorSimple](storsimple-8000-limits.md).
 * [Узнайте о развертывании решения StorSimple](storsimple-8000-deployment-walkthrough-u2.md).

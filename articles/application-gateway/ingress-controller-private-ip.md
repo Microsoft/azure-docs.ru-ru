@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 11/4/2019
 ms.author: caya
 ms.openlocfilehash: 8be37ed1da0da4da3db43ef4c1cd01ed962f24ed
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93397314"
 ---
 # <a name="use-private-ip-for-internal-routing-for-an-ingress-endpoint"></a>Использовать частный IP-адрес для внутренней маршрутизации для конечной точки входящего трафика 
 
 Эта функция позволяет предоставлять конечную точку входящих данных в `Virtual Network` с помощью частного IP-адреса.
 
-## <a name="pre-requisites"></a>Предварительные условия  
+## <a name="pre-requisites"></a>Предварительные требования  
 Шлюз приложений с [частной IP-конфигурацией](./configure-application-gateway-with-private-frontend-ip.md)
 
 Существует два способа настройки контроллера для использования частного IP-адреса для входящего трафика,

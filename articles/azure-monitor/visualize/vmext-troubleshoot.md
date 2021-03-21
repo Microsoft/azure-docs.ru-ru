@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 06/06/2019
 ms.openlocfilehash: 33bdff8d516929e7f615f3a7f8bd77463eea0c64
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102040147"
 ---
 # <a name="troubleshooting-the-log-analytics-vm-extension-in-azure-monitor"></a>Troubleshooting the Log Analytics VM extension in Azure Monitor (Устранение неполадок с расширением Log Analytics для виртуальной машины в Azure Monitor)

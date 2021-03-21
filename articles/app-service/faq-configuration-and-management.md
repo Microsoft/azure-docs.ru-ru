@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 10/30/2018
 ms.author: genli
 ms.openlocfilehash: 843e11e7f2df404a6bf1866da7b383ee9d1097de
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100574786"
 ---
 # <a name="configuration-and-management-faqs-for-web-apps-in-azure"></a>Часто задаваемые вопросы о настройке и управлении для функции "Веб-приложения" в Azure
@@ -63,7 +63,7 @@ ms.locfileid: "100574786"
 2. В разделе **Параметры приложения** добавьте параметр:
     * Ключ = WEBSITE_TIME_ZONE
     * Значение = *требуемый часовой пояс*
-3. Нажмите кнопку **Сохранить**.
+3. Щелкните **Сохранить**.
 
 Для служб приложений, работающих в Windows, см. выходные данные `tzutil /L` команды Windows. Используйте значение из второй строки каждой записи. Например: "Тонга (стандартное время)". Некоторые из этих значений также перечислены в столбце **TimeZone** в [часовых поясах по умолчанию](/windows-hardware/manufacture/desktop/default-time-zones).
 

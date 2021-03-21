@@ -11,10 +11,10 @@ ms.reviewer: sstein
 ms.date: 03/12/2019
 ms.custom: seoapril2019 sqldbrb=1, devx-track-azurecli
 ms.openlocfilehash: 9c9af6e3bc3dfd798f4b3f0cad9319aa573c425d
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96455996"
 ---
 # <a name="manage-elastic-pools-in-azure-sql-database"></a>Управление эластичными пулами в базе данных SQL Azure

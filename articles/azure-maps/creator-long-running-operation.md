@@ -10,16 +10,16 @@ services: azure-maps
 manager: philmea
 ms.custom: mvc
 ms.openlocfilehash: f5fb7c8059c8b98e8ec514a4159e96f48db7b1ad
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96906205"
 ---
 # <a name="creator-preview-long-running-operation-api"></a>API Long-Running операции создателя (Предварительная версия)
 
 > [!IMPORTANT]
-> Службы Creator Azure Maps в настоящее время доступны в общедоступной предварительной версии.
+> Службы Создателя Azure Maps в настоящее время предоставляются в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Некоторые API в Azure Maps используют [шаблон асинхронного Request-Reply](/azure/architecture/patterns/async-request-reply). Этот шаблон позволяет Azure Maps предоставлять высокодоступные и быстро реагирующие службы. В этой статье описывается характерная для Azure Maps реализация длительной асинхронной фоновой обработки.

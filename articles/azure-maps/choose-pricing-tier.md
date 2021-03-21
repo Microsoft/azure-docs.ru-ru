@@ -9,10 +9,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.openlocfilehash: cb57e424642141e73588a61d026d1ff2f1a8b096
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96905304"
 ---
 # <a name="choose-the-right-pricing-tier-in-azure-maps"></a>Выбор подходящей ценовой категории в Azure Maps
@@ -48,7 +48,7 @@ Azure Maps предлагает две ценовые категории: S0 и 
 | Мобильность (Предварительная версия)                       |                     | ✓        |
 | Погода (Предварительная версия)                        |✓                    |✓        |
 |  Создатель (Предварительная версия)                         |                   |✓        |
-|  Повышение прав (Предварительная версия)                        |                   |✓        |
+|  Высота (предварительная версия)                        |                   |✓        |
 
 Рассмотрим следующие дополнительные моменты:
 

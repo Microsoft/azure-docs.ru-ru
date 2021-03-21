@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 01/29/2021
 ms.openlocfilehash: 79d5583f8c9e562a0d21a91c210aa6259472661d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100383540"
 ---
 # <a name="change-and-deletion-detection-in-blob-indexing-azure-cognitive-search"></a>Обнаружение изменений и удалений в индексировании BLOB-объектов (Azure Когнитивный поиск)
@@ -33,7 +33,7 @@ ms.locfileid: "100383540"
 > [!IMPORTANT]
 > Поддержка обратимого удаления больших двоичных объектов доступна в предварительной версии. Для предварительной версии функции соглашение об уровне обслуживания не предусмотрено. Мы не рекомендуем использовать ее в рабочей среде. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). Эта функция доступна в [REST API версии 2020-06-30-Preview](./search-api-preview.md) . В настоящее время нет поддержки портала или пакета SDK для .NET.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 + [Включить обратимое удаление для больших двоичных объектов](../storage/blobs/soft-delete-blob-enable.md).
 + Большие двоичные объекты должны находиться в контейнере хранилища BLOB-объектов Azure. Политика обратимого удаления больших двоичных объектов Когнитивный поиск не поддерживается для больших двоичных объектов из Azure Data Lake Storage 2-го поколения.
@@ -105,7 +105,7 @@ ms.locfileid: "100383540"
 
 Если вы хотите переиндексировать этот документ, измените `"softDeleteMarkerValue" : "false"` для этого большого двоичного объекта и повторно запустите индексатор.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 + [Indexers in Azure Cognitive Search](search-indexer-overview.md) (Индексаторы в службе "Когнитивный поиск Azure")
 + [Настройка индексатора больших двоичных объектов](search-howto-indexing-azure-blob-storage.md)

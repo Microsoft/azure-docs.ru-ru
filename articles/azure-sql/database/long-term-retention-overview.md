@@ -13,10 +13,10 @@ ms.author: shkale
 ms.reviewer: mathoma, sstein
 ms.date: 02/25/2021
 ms.openlocfilehash: b1ba3f98f39511bcebf94502ed749d7cba1fc71b
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102184055"
 ---
 # <a name="long-term-retention---azure-sql-database-and-azure-sql-managed-instance"></a>Долгосрочное хранение — база данных SQL Azure и Azure SQL Управляемый экземпляр

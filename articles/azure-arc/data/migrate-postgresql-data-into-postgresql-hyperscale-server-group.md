@@ -11,10 +11,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: d9cbfc30b10373ad2a4f4304987dac426b5dcabe
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101643581"
 ---
 # <a name="migrate-postgresql-database-to-azure-arc-enabled-postgresql-hyperscale-server-group"></a>Миграция базы данных PostgreSQL в службу Arc Azure с включенной PostgreSQLной группой серверов
@@ -36,7 +36,7 @@ ms.locfileid: "101643581"
 - Сброс параметров сервера
 - Сброс контекстов безопасности: повторное создание пользователей, ролей и сброс разрешений...
 
-Для выполнения этой операции резервного копирования и восстановления можно использовать любое средство, способное выполнять резервное копирование и восстановление для postgres. Пример.
+Для выполнения этой операции резервного копирования и восстановления можно использовать любое средство, способное выполнять резервное копирование и восстановление для postgres. Пример:
 - Azure Data Studio и его расширение postgres
 - `pgcli`
 - `pgAdmin`

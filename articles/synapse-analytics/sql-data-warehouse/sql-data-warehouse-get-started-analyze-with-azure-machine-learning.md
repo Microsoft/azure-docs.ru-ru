@@ -13,10 +13,10 @@ ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 tag: azure-Synapse
 ms.openlocfilehash: 76a154d3a137017f374247308a3980d598698246
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98678665"
 ---
 # <a name="analyze-data-with-azure-machine-learning"></a>Анализ данных с помощью машинного обучения Azure
@@ -157,7 +157,7 @@ FROM [dbo].[vTargetMail]
 
 Сравните столбец BikeBuyer (фактический) с оцененными метками (прогноз), чтобы увидеть, насколько хорошо была выполнена модель. Затем эту модель можно использовать для прогнозирования новых клиентов. Вы можете [опубликовать эту модель как веб-службу](../../machine-learning/tutorial-designer-automobile-price-deploy.md) или записать результаты обратно в Azure синапсе.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о Машинное обучение Azure см. в статье [Введение в машинное обучение в Azure](../../machine-learning/overview-what-is-azure-ml.md).
 

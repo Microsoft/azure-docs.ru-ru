@@ -11,10 +11,10 @@ ms.author: tamram
 ms.reviewer: dineshm
 ms.subservice: blobs
 ms.openlocfilehash: 13491735f73cb1696f3c36f3434cc781a1e2b739
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99526811"
 ---
 # <a name="create-a-user-delegation-sas-for-a-container-directory-or-blob-with-net"></a>Создание SAS для делегирования пользователя для контейнера, каталога или большого двоичного объекта с помощью .NET
@@ -109,7 +109,7 @@ Console.WriteLine("Key signed version: {0}", key.SignedVersion);
 
 [!INCLUDE [storage-blob-dotnet-resources-include](../../../includes/storage-blob-dotnet-resources-include.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Предоставление ограниченного доступа к ресурсам службы хранилища Azure с помощью подписанных URL-адресов (SAS)](../common/storage-sas-overview.md)
 - [Операция получения ключа делегирования пользователя](/rest/api/storageservices/get-user-delegation-key)

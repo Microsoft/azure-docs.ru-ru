@@ -7,10 +7,10 @@ ms.date: 7/01/2019
 ms.author: msangapu
 zone_pivot_groups: app-service-containers-windows-linux
 ms.openlocfilehash: c3e5ca30b7f0f00b6d647f5fdaeb772900996adc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101720245"
 ---
 # <a name="access-azure-storage-preview-as-a-network-share-from-a-container-in-app-service"></a>Доступ к хранилищу Azure (Предварительная версия) в качестве сетевой папки из контейнера в службе приложений
@@ -33,7 +33,7 @@ ms.locfileid: "101720245"
 
 ::: zone-end
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 ::: zone pivot="container-windows"
 
