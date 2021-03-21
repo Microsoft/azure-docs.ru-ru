@@ -10,10 +10,10 @@ ms.devlang: azurecli
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.openlocfilehash: ee6b0e1b745e86c72843af88c0f6d17f91512e15
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102176762"
 ---
 # <a name="manage-your-azure-cognitive-search-service-with-the-azure-cli"></a>Управление службой Когнитивный поиск Azure с помощью Azure CLI

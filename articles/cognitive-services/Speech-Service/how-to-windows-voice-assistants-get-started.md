@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: travisw
 ms.openlocfilehash: b50b98095cdfe0e6ec19c89b57887ebc4a0f6317
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101713054"
 ---
 # <a name="getting-started-with-voice-assistants-on-windows"></a>Начало работы с голосовыми помощниками в Windows

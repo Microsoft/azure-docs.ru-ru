@@ -7,10 +7,10 @@ ms.tgt_pltfrm: ibiza
 ms.topic: conceptual
 ms.date: 07/23/2020
 ms.openlocfilehash: e401eb4a5608db6e5767298f53046099a42679b4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100621498"
 ---
 # <a name="azure-monitor-workbooks"></a>Azure Monitor книги
@@ -127,7 +127,7 @@ ms.locfileid: "100621498"
 
 Создав собственные шаблоны книг, вы можете поделиться им с более широким сообществом. Чтобы узнать больше, а также просмотреть другие шаблоны, которые не входят в представление коллекции по умолчанию Azure Monitor, посетите наш [репозиторий GitHub](https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/README.md). Чтобы просмотреть существующие книги, посетите [библиотеку книг](https://github.com/microsoft/Application-Insights-Workbooks/tree/master/Workbooks) на сайте GitHub.
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий шаг
 
 * [Узнайте](#visualizations) больше о книгах с множеством разнообразных вариантов визуализации.
 * [Управление](../visualize/workbooks-access-control.md) доступом к ресурсам книги и предоставление общего доступа к ним.

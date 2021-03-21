@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 12/07/2020
 ms.custom: devx-track-csharp, seodec18
 ms.openlocfilehash: a865c1070150b31399b5b738a0a469a07e0b13de
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102122363"
 ---
 # <a name="configure-an-app-service-app-in-the-azure-portal"></a>Настройка приложения службы приложений в портал Azure
@@ -283,10 +283,10 @@ ms.locfileid: "102122363"
 
 См. статью [Настройка пользовательского контейнера Linux для службы приложений Azure](configure-custom-container.md) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Настройка личного доменного имени в службе приложений Azure]
-- [Настройка промежуточных сред в Службе приложений Azure]
+- [Настройка промежуточных сред в службе приложений Azure]
 - [Защита пользовательского доменного имени с помощью привязки TLS/SSL в Службе приложений Azure](configure-ssl-bindings.md)
 - [Включение журналов диагностики](troubleshoot-diagnostic-logs.md)
 - [Масштабирование приложения в службе приложений Azure]
@@ -298,7 +298,7 @@ ms.locfileid: "102122363"
 [ASP.NET SignalR]: https://www.asp.net/signalr
 [Портал Azure]: https://portal.azure.com/
 [Настройка личного доменного имени в службе приложений Azure]: ./app-service-web-tutorial-custom-domain.md
-[Настройка промежуточных сред в Службе приложений Azure]: ./deploy-staging-slots.md
+[Настройка промежуточных сред в службе приложений Azure]: ./deploy-staging-slots.md
 [How to: Monitor web endpoint status]: ./web-sites-monitor.md
 [Основы мониторинга в службе приложений Azure]: ./web-sites-monitor.md
 [режим конвейера]: https://www.iis.net/learn/get-started/introduction-to-iis/introduction-to-iis-architecture#Application

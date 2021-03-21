@@ -17,17 +17,17 @@ ms.reviewer: japere
 ms.custom: it-pro, has-adal-ref
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e9f0959ff51714e8a7e69f58a3e3abeab71e8359
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99259378"
 ---
 # <a name="enable-remote-access-to-power-bi-mobile-with-azure-ad-application-proxy"></a>Обеспечение удаленного доступа к Power BI Mobile с помощью Azure Active Directory Application Proxy
 
 В этой статье описывается, как использовать AD Application Proxy Azure, чтобы разрешить Power BI мобильного приложения подключаться к Сервер отчетов Power BI (PBIRS) и SQL Server Reporting Services (SSRS) 2016 и более поздних версий. Благодаря этой интеграции пользователи, которые находятся вне корпоративной сети, могут получать доступ к отчетам Power BI из мобильного приложения Power BI и защищать их с помощью проверки подлинности Azure AD. Эта защита включает в себя такие [преимущества безопасности](application-proxy-security.md#security-benefits) , как условный доступ и многофакторная идентификация.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается, что вы уже развернули службы Reporting Services и [включили прокси приложения](application-proxy-add-on-premises-application.md).
 
@@ -133,7 +133,7 @@ ms.locfileid: "99259378"
 
    ![Power BI мобильное приложение с внешним URL-адресом](media/application-proxy-integrate-with-power-bi/app-proxy-power-bi-mobile-app.png)
 
-2. Щелкните **Подключить**. Вы будете перенаправлены на страницу входа Azure Active Directory.
+2. Выберите **Подключиться**. Вы будете перенаправлены на страницу входа Azure Active Directory.
 
 3. Введите действительные учетные данные для пользователя и выберите **Войти**. Вы увидите элементы с сервера Reporting Services.
 
@@ -150,7 +150,7 @@ Microsoft Intune можно использовать для управления
 7. Щелкните **предоставить согласие администратора** , чтобы предоставить разрешение на доступ к приложению.
 8. Настройте нужную политику Intune, обратившись к [созданию и назначению политик защиты приложений](/intune/app-protection-policies).
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Если приложение возвращает страницу ошибки после попытки загрузить отчет более чем через несколько минут, может потребоваться изменить параметр времени ожидания. По умолчанию прокси приложения поддерживает приложения, которые отреагируют на запрос до 85 секунд. Чтобы увеличить значение этого параметра на 180 секунд, выберите время ожидания серверной части **на странице** параметры прокси приложения для приложения. Советы по созданию быстрых и надежных отчетов см. в разделе [Power BI отчеты рекомендации](/power-bi/power-bi-reports-performance).
 

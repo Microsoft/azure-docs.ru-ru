@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 12/30/2019
 ms.author: yelevin
 ms.openlocfilehash: 368bae515697599dba35a913ebdb9f2b4065c152
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711915"
 ---
 # <a name="step-2-configure-your-security-solution-to-send-cef-messages"></a>Шаг 2. Настройка решения безопасности для отправки сообщений CEF
@@ -31,7 +31,7 @@ ms.locfileid: "101711915"
 
 - [Vectra AI Detect](connect-ai-vectra-detect.md)
 - [Akamai Security Events](connect-akamai-security-events.md)
-- [Aruba Клеарпасс](connect-aruba-clearpass.md)
+- [Aruba ClearPass](connect-aruba-clearpass.md)
 - [Broadcom Symantec DLP](connect-broadcom-symantec-dlp.md)
 - [Check Point](connect-checkpoint.md)
 - [Cisco ASA](connect-cisco.md)

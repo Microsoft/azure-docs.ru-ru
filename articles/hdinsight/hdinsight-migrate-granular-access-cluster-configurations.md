@@ -7,10 +7,10 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 04/20/2020
 ms.openlocfilehash: a30768f4904c9e5be2edc020f12260cf3a54c889
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102425895"
 ---
 # <a name="migrate-to-granular-role-based-access-for-cluster-configurations"></a>Переход на детализированный доступ на основе ролей для конфигураций кластера
@@ -184,7 +184,7 @@ az role assignment create --role "HDInsight Cluster Operator" --assignee user@do
 
 Можно также использовать портал Azure для добавления назначения роли оператора кластера HDInsight пользователю. См. документацию по [назначению ролей Azure с помощью портал Azure](../role-based-access-control/role-assignments-portal.md).
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 ### <a name="why-am-i-seeing-a-403-forbidden-response-after-updating-my-api-requests-andor-tool"></a>Почему после обновления запросов API и (или) средства отображается ответ 403 Forbidden (запрещено)?
 

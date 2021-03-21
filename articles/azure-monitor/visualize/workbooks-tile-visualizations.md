@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/04/2020
 ms.author: lagayhar
 ms.openlocfilehash: 07de9fcd01559e59a1bcd5d8928075aebcf79cc7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100622818"
 ---
 # <a name="tile-visualizations"></a>Визуализация плиток
@@ -122,7 +122,7 @@ ms.locfileid: "100622818"
 
      ![Снимок экрана: отображение плиток с шириной полного размера](./media/workbooks-tile-visualizations/tiles-full.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Плитки также поддерживают рендеринг составных линейчатых элементов. Дополнительные сведения см. в [документации по составной панели](workbooks-composite-bar.md).
 * Чтобы получить дополнительные сведения о параметрах времени, например `TimeRange` , см. [документацию по параметрам времени книги](workbooks-time.md).

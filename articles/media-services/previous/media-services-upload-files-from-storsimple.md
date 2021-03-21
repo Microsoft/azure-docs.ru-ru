@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 0521904f0ed46b4c5309e5f9df980b1cd7d7d858
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103009034"
 ---
 # <a name="upload-files-into-an-azure-media-services-account-from-azure-storsimple"></a>Отправка файлов в учетную запись служб мультимедиа Azure из Azure StorSimple 
@@ -57,6 +57,6 @@ ms.locfileid: "103009034"
 ## <a name="provide-feedback"></a>Отзывы
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь можно закодировать отправленные ресурсы. Дополнительную информацию см. в статье, посвященной [кодированию ресурсов](media-services-portal-encode.md).

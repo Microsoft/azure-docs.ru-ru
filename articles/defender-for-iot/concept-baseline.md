@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 10/07/2019
 ms.author: mlottner
 ms.openlocfilehash: bced45474a3a851bc5785f662c0b2e50ae3a380c
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491084"
 ---
 # <a name="azure-defender-for-iot-baseline-and-custom-checks"></a>Azure Defender для базового плана IoT и пользовательские проверки
@@ -74,7 +74,7 @@ ms.locfileid: "103491084"
 
 Дополнительные примеры базовых показателей см. в разделе [Пользовательский базовый пример 1](https://ascforiot.blob.core.windows.net/public/custom_baseline_example_hyperv_ubuntu1804.xml) и [Пользовательский базовый пример — 2](https://ascforiot.blob.core.windows.net/public/oms_audits.xml).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Доступ к [необработанным данным безопасности](how-to-security-data-access.md)
 - [Исследование устройства](how-to-investigate-device.md)

@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 6dd2f8a228c582e99f7d7281bd2d31faff8cadda
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103010802"
 ---
 # <a name="perform-live-streaming-with-on-premises-encoders-using-azure-portal"></a>Проведите динамическую потоковую передачу с помощью локальных кодировщиков, используя портал Azure
@@ -155,7 +155,7 @@ ms.locfileid: "103010802"
 
 ![Активы](./media/media-services-portal-passthrough-get-started/media-services-assets.png)
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий шаг
 Просмотрите схемы обучения работе со службами мультимедиа.
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]

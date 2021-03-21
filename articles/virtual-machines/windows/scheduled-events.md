@@ -12,10 +12,10 @@ ms.author: ericrad
 ms.reviwer: mimckitt
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 3a388ade2b44260bfa21e22866d85a46e482bc97
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499957"
 ---
 # <a name="azure-metadata-service-scheduled-events-for-windows-vms"></a>Служба метаданных Azure: подслужба "Запланированные события" для виртуальных машин Windows
@@ -132,7 +132,7 @@ curl -H Metadata:true http://169.254.169.254/metadata/scheduledevents?api-versio
 ```
 
 ### <a name="event-properties"></a>Свойства события
-|Свойство  |  Описание |
+|Свойство.  |  Описание |
 | - | - |
 | EventId | Глобальный уникальный идентификатор этого события. <br><br> Пример <br><ul><li>602d9444-d2cd-49c7-8624-8643e7171297  |
 | EventType | Влияние, которое оказывает это событие. <br><br> Значения: <br><ul><li> `Freeze`: виртуальная машина будет приостановлена на несколько секунд. Работа ЦП и сетевого подключения будет приостановлена, но это действие не повлияет на память и открытые файлы.<li>`Reboot`: планирование перезагрузки виртуальной машины (временная память будет потеряна). <li>`Redeploy`: виртуальная машина будет перемещена на другой узел с потерей данных на временных дисках. <li>`Preempt`: выполняется удаление точечной виртуальной машины (временные диски теряются). <li> `Terminate`: виртуальная машина запланирована к удалению. |

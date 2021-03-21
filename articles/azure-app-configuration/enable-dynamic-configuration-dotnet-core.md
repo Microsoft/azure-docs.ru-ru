@@ -16,10 +16,10 @@ ms.topic: tutorial
 ms.date: 07/01/2019
 ms.author: abarora
 ms.openlocfilehash: 95c48bded224a40879328dba5861b3564f0ebcf8
-ms.sourcegitcommit: 706e7d3eaa27f242312d3d8e3ff072d2ae685956
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99979867"
 ---
 # <a name="tutorial-use-dynamic-configuration-in-a-net-core-app"></a>Руководство по Использование динамической конфигурации в приложении .NET Core

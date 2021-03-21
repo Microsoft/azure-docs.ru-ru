@@ -12,10 +12,10 @@ ms.reviewer: nibaccam
 ms.date: 11/03/2020
 ms.custom: how-to, contperf-fy21q1, devx-track-python, data4ml
 ms.openlocfilehash: 78b7bab204a08b474ea3c5cf5c2f7735c019a9c3
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102519934"
 ---
 # <a name="connect-to-storage-services-on-azure"></a>Подключение к службам хранилища в Azure

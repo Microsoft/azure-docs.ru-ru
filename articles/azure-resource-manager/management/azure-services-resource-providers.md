@@ -2,17 +2,17 @@
 title: Поставщики ресурсов по службам Azure
 description: Выводит список всех пространств имен поставщиков ресурсов для Azure Resource Manager и отображает службу Azure для этого пространства имен.
 ms.topic: conceptual
-ms.date: 12/01/2020
-ms.openlocfilehash: 65fa6a690f05a61e54bae2d22f4889c3193bcb1a
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.date: 03/16/2021
+ms.openlocfilehash: ee8cb054f3f10c3b33d5235b2b03cdfeac266139
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103008711"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592167"
 ---
 # <a name="resource-providers-for-azure-services"></a>Поставщики ресурсов для служб Azure
 
-В этой статье показано, как пространства имен поставщиков ресурсов сопоставляются со службами Azure.
+В этой статье показано, как пространства имен поставщиков ресурсов сопоставляются со службами Azure. Если вы не знакомы с поставщиком ресурсов, см. раздел [Поиск поставщика ресурсов](#find-resource-provider).
 
 ## <a name="match-resource-provider-to-service"></a>Сопоставление поставщика ресурсов со службой
 
@@ -192,6 +192,42 @@ ms.locfileid: "103008711"
 
 > [!IMPORTANT]
 > Зарегистрируйте поставщик ресурсов только тогда, когда будете готовы использовать его. Этап регистрации позволяет поддерживать минимальные привилегии в рамках подписки. Пользователь-злоумышленник не может использовать незарегистрированные поставщики ресурсов.
+
+## <a name="find-resource-provider"></a>Поиск поставщика ресурсов
+
+Если у вас есть инфраструктура в Azure, но не знаете, какой поставщик ресурсов используется, можно использовать Azure CLI или PowerShell для поиска поставщика ресурсов. Укажите имя группы ресурсов, содержащей ресурсы для поиска.
+
+В следующем примере используется Azure CLI:
+
+```azurecli-interactive
+az resource list -g examplegroup
+```
+
+В результаты входит тип ресурса. Пространство имен поставщика ресурсов является первой частью типа ресурса. В следующем примере показан поставщик ресурсов **Microsoft. KeyVault** .
+
+```json
+[
+  {
+    ...
+    "type": "Microsoft.KeyVault/vaults"
+  }
+]
+```
+
+В следующем примере используется PowerShell:
+
+```azurepowershell-interactive
+Get-AzResource -ResourceGroupName examplegroup
+```
+
+В результаты входит тип ресурса. Пространство имен поставщика ресурсов является первой частью типа ресурса. В следующем примере показан поставщик ресурсов **Microsoft. KeyVault** .
+
+```azurepowershell
+Name              : examplekey
+ResourceGroupName : examplegroup
+ResourceType      : Microsoft.KeyVault/vaults
+...
+```
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

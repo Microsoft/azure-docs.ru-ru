@@ -11,10 +11,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 01/02/2021
 ms.openlocfilehash: 6003ca9156d8553604d7ebbf94c5c3373d077f0f
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102500705"
 ---
 # <a name="execute-python-script-module"></a>Выполнить модуль скрипта Python

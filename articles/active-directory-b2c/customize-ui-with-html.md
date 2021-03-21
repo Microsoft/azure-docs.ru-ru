@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 03/16/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 78ad2540029d78084485ae2004194f9f7c2d6052
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.openlocfilehash: e694a5f6144cee65be074d05ce0015d31bfdf65e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99050555"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104675831"
 ---
 # <a name="customize-the-user-interface-with-html-templates-in-azure-active-directory-b2c"></a>Настройка пользовательского интерфейса с помощью HTML-шаблонов в Azure Active Directory B2C
 
@@ -220,7 +220,7 @@ https://contoso.blob.core.windows.net/fr/myHTML/unified.html
 1. В поле **Допустимые заголовки** введите звездочку (*).
 1. В поле **Доступные заголовки** введите звездочку (*).
 1. В поле **Максимальный возраст** введите 200.
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 #### <a name="31-test-cors"></a>3,1. Тестирование CORS
 
@@ -363,26 +363,31 @@ https://contoso.blob.core.windows.net/fr/myHTML/unified.html
 Здесь можно найти примеры шаблонов для настройки пользовательского интерфейса:
 
 ```bash
-git clone https://github.com/Azure-Samples/Azure-AD-B2C-page-templates
+git clone https://github.com/azure-ad-b2c/html-templates
 ```
 
 Этот проект содержит следующие шаблоны:
-- [Синий морской](https://github.com/Azure-Samples/Azure-AD-B2C-page-templates/tree/master/ocean_blue)
-- [Серый планшет](https://github.com/Azure-Samples/Azure-AD-B2C-page-templates/tree/master/slate_gray)
+- [Синий морской](https://github.com/azure-ad-b2c/html-templates/tree/main/templates/AzureBlue)
+- [Серый планшет](https://github.com/azure-ad-b2c/html-templates/tree/main/templates/MSA)
+- [Классический](https://github.com/azure-ad-b2c/html-templates/tree/main/templates/classic)
+- [Ресурсы шаблона](https://github.com/azure-ad-b2c/html-templates/tree/main/templates/src)
 
 Чтобы использовать пример, выполните следующие действия.
 
-1. Клонировать репозиторий на локальном компьютере. Выберите папку шаблона `/ocean_blue` или `/slate_gray` .
-1. Отправьте все файлы в папке шаблона и `/assets` папке в хранилище BLOB-объектов, как описано в предыдущих разделах.
-1. Затем откройте каждый `\*.html` файл в корневой папке `/ocean_blue` или `/slate_gray` , замените все экземпляры относительных URL-адресов файлами CSS, изображениями и шрифтами, отправленными на шаге 2. Например:
+1. Клонировать репозиторий на локальном компьютере. Выберите папку шаблона `/AzureBlue` , `/MSA` или `/classic` .
+1. Отправьте все файлы в папке шаблона и `/src` папке в хранилище BLOB-объектов, как описано в предыдущих разделах.
+1. Затем откройте каждый `\*.html` файл в папке шаблона. Затем замените все экземпляры `https://login.microsoftonline.com` URL-адреса URL, отправленные на шаге 2. Пример:
+    
+    От:
     ```html
-    <link href="./css/assets.css" rel="stylesheet" type="text/css" />
+    https://login.microsoftonline.com/templates/src/fonts/segoeui.WOFF
     ```
 
-    Кому
+    В:
     ```html
-    <link href="https://your-storage-account.blob.core.windows.net/your-container/css/assets.css" rel="stylesheet" type="text/css" />
+    https://your-storage-account.blob.core.windows.net/your-container/templates/src/fonts/segoeui.WOFF
     ```
+    
 1. Сохраните `\*.html` файлы и отправьте их в хранилище BLOB-объектов.
 1. Теперь измените политику, указав HTML-файл, как упоминалось ранее.
 1. Если вы видите отсутствующие шрифты, изображения или CSS, проверьте ссылки в политике расширения и \* HTML-файлах.
@@ -396,6 +401,6 @@ git clone https://github.com/Azure-Samples/Azure-AD-B2C-page-templates
 <img data-tenant-branding-logo="true" alt="Company Logo" />
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как включить [код JavaScript на стороне клиента](javascript-and-page-layout.md).

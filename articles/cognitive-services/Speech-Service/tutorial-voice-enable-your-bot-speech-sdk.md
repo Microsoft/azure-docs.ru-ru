@@ -12,10 +12,10 @@ ms.date: 02/25/2020
 ms.author: trbye
 ms.custom: devx-track-csharp
 ms.openlocfilehash: d91bfee228b946ff564f6d080976f9ce5c12caa4
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102426269"
 ---
 # <a name="tutorial-voice-enable-your-bot-using-the-speech-sdk"></a>Учебник. Включение программы-робота с помощью речевого пакета SDK
@@ -107,9 +107,9 @@ ms.locfileid: "102426269"
 
 На этом этапе убедитесь, что в группе ресурсов (**спичечоботтуториал-ResourceGroup**) есть ресурс речи:
 
-| Имя | Type  | Расположение |
+| Имя | Тип  | Расположение |
 |------|-------|----------|
-| SpeechEchoBotTutorial-Speech | Cognitive Services | Западная часть США |
+| SpeechEchoBotTutorial-Speech | Службы Cognitive Services | Западная часть США |
 
 ### <a name="create-an-azure-app-service-plan"></a>Создание плана службы приложений Azure
 
@@ -128,10 +128,10 @@ ms.locfileid: "102426269"
 
 На этом этапе убедитесь, что ваша группа ресурсов (**спичечоботтуториал-ResourceGroup**) имеет два ресурса:
 
-| Имя | Type  | Расположение |
+| Имя | Тип  | Расположение |
 |------|-------|----------|
 | SpeechEchoBotTutorial-AppServicePlan | План службы приложений | Западная часть США |
-| SpeechEchoBotTutorial-Speech | Cognitive Services | Западная часть США |
+| SpeechEchoBotTutorial-Speech | Службы Cognitive Services | Западная часть США |
 
 ## <a name="build-an-echo-bot"></a>Создание эхо-робота
 
@@ -213,11 +213,11 @@ ms.locfileid: "102426269"
 1. Браузер по умолчанию должен открыть и отобразить страницу, которая читает: "ваш робот готов!".
 1. На этом этапе проверьте группу ресурсов **спичечоботтуториал-ResourceGroup** в портал Azure и убедитесь, что эти три ресурса:
 
-| Имя | Type  | Расположение |
+| Имя | Тип  | Расположение |
 |------|-------|----------|
 | EchoBot20190805125647 | Служба приложений | Западная часть США |
 | SpeechEchoBotTutorial-AppServicePlan | План службы приложений | Западная часть США |
-| SpeechEchoBotTutorial-Speech | Cognitive Services | Западная часть США |
+| SpeechEchoBotTutorial-Speech | Службы Cognitive Services | Западная часть США |
 
 ## <a name="enable-web-sockets"></a>Включение протокола WebSocket
 
@@ -250,12 +250,12 @@ ms.locfileid: "102426269"
 
 На этом этапе проверьте группу ресурсов **спичечоботтуториал-ResourceGroup** в портал Azure. Теперь он должен отображать по крайней мере четыре ресурса:
 
-| Имя | Type  | Расположение |
+| Имя | Тип  | Расположение |
 |------|-------|----------|
 | EchoBot20190805125647 | Служба приложений | Западная часть США |
 | SpeechEchoBotTutorial-AppServicePlan | План службы приложений | Западная часть США |
-| Спичечоботтуториал-Ботрегистратион-8726 | Регистрация каналов Bot | Global |
-| SpeechEchoBotTutorial-Speech | Cognitive Services | Западная часть США |
+| Спичечоботтуториал-Ботрегистратион-8726 | Регистрация каналов Bot | Глобальный |
+| SpeechEchoBotTutorial-Speech | Службы Cognitive Services | Западная часть США |
 
 > [!IMPORTANT]
 > В ресурсе регистрации каналов Bot будет показан глобальный регион, даже если вы выбрали "Западная часть США". Это ожидаемое поведение.
@@ -465,9 +465,9 @@ ms.locfileid: "102426269"
 
 1. В [портал Azure](https://portal.azure.com)щелкните **группы ресурсов** в области навигации **служб Azure** .
 2. Найдите группу ресурсов с именем: **спичечоботтуториал-ResourceGroup**. Щелкните три точки (...).
-3. Выберите **Удалить группу ресурсов**.
+3. Выберите команду **Удалить группу ресурсов**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Создание собственного клиентского приложения с помощью пакета SDK для распознавания речи](./quickstarts/voice-assistants.md?pivots=programming-language-csharp)

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: 951111b217b7ace3f12676edf6febfa7266094df
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103489954"
 ---
 # <a name="properties-of-the-iot-edge-agent-and-iot-edge-hub-module-twins"></a>Свойства двойников модулей агента IoT Edge и центра IoT Edge
@@ -33,7 +33,7 @@ ms.locfileid: "103489954"
 
 Двойник модуля для агента IoT Edge называется `$edgeAgent`. Он координирует взаимодействие между агентом IoT Edge, выполняющимся на устройстве, и Центром Интернета вещей. Требуемые свойства задаются при применении манифеста развертывания на конкретном устройстве в ходе развертывания на одно устройство или несколько.
 
-| Свойство. | Описание | Обязательный |
+| Свойство. | Описание | Обязательно |
 | -------- | ----------- | -------- |
 | schemaVersion | Значение "1,0" или "1,1". Версия 1,1 была введена в IoT Edge версии 1.0.10, и рекомендуется. | Да |
 | runtime.type | Должно быть "docker". | Да |
@@ -126,6 +126,6 @@ ms.locfileid: "103489954"
 | clients.{идентификатор устройства или модуля}.lastConnectTime | Время последнего подключения устройства или модуля. |
 | clients.{идентификатор устройства или модуля}.lastDisconnectTime | Время последнего отключения устройства или модуля. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о том, как использовать эти свойства для создания манифестов развертывания, см. в статье [Сведения об использовании, настройке и повторном использовании модулей Azure IoT Edge (предварительная версия)](module-composition.md).

@@ -17,10 +17,10 @@ ms.author: ajburnle
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3df08272b352ee789c9879b1118105c435cffbd
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103011091"
 ---
 # <a name="create-a-new-access-package-in-azure-ad-entitlement-management"></a>Создание нового пакета Access в управлении назначением Azure AD
@@ -67,7 +67,7 @@ ms.locfileid: "103011091"
    
     ![Управление правами на портале Azure](./media/entitlement-management-shared/access-packages-list.png)
 
-## <a name="basics"></a>Основные сведения
+## <a name="basics"></a>Основы
 
 На вкладке " **основы** " Присвойте пакету доступа имя и укажите каталог для создания пакета доступа в.
 
@@ -122,7 +122,7 @@ ms.locfileid: "103011091"
 
 [!INCLUDE [Entitlement management lifecycle policy](../../../includes/active-directory-entitlement-management-lifecycle-policy.md)]
 
-## <a name="review--create"></a>Отзыв и создание
+## <a name="review--create"></a>Просмотр и создание
 
 На вкладке " **Проверка и создание** " можно просмотреть параметры и проверить наличие ошибок проверки.
 
@@ -144,7 +144,7 @@ ms.locfileid: "103011091"
 1. [Создайте акцесспаккажеассигнментполици](/graph/api/accesspackageassignmentpolicy-post?tabs=http&view=graph-rest-beta).
 1. [Создайте акцесспаккажересаурцеролескопе](/graph/api/accesspackage-post-accesspackageresourcerolescopes?tabs=http&view=graph-rest-beta) для каждой роли ресурса, необходимой для пакета доступа.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Ссылка на общий доступ для запроса пакета Access](entitlement-management-access-package-settings.md)
 - [Изменение ролей ресурсов для пакета Access](entitlement-management-access-package-resources.md)

@@ -7,10 +7,10 @@ ms.date: 02/18/2021
 author: tfitzmac
 ms.author: tomfitz
 ms.openlocfilehash: b1e4b06fcbecf11d7d5f58a583fe3bd6643d99ec
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101709404"
 ---
 # <a name="troubleshooting-apache-kafka-for-confluent-cloud-solutions"></a>Устранение неполадок Apache Kafka, связанных с неfluent облачными решениями

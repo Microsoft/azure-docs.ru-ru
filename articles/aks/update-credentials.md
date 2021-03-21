@@ -6,10 +6,10 @@ services: container-service
 ms.topic: article
 ms.date: 03/11/2019
 ms.openlocfilehash: 84cadc54a11c2e57d73fd1f06e98deb3d599d648
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102501181"
 ---
 # <a name="update-or-rotate-the-credentials-for-azure-kubernetes-service-aks"></a>Обновление или смена учетных данных для службы Azure Kubernetes (AKS)
@@ -20,7 +20,7 @@ ms.locfileid: "102501181"
 
 Кроме того, для разрешений можно использовать управляемое удостоверение вместо субъекта-службы. Управляемые удостоверения проще в управлении, чем субъекты-службы, и не нуждаются в обновлениях или сменах. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Требуется Azure CLI версии 2.0.65 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0][install-azure-cli].
 
@@ -127,7 +127,7 @@ az aks update-credentials \
 ```
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье субъект-служба для самого кластера AKS и приложений интеграции AAD обновлен. Дополнительные сведения о том, как управлять удостоверениями для рабочих нагрузок в кластере, см. в статье [Рекомендации по аутентификации и авторизации в службе Azure Kubernetes (AKS)][best-practices-identity].
 

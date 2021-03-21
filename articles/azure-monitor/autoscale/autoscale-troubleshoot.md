@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 11/4/2019
 ms.subservice: autoscale
 ms.openlocfilehash: a0fed6c2d06edcb2c9eb8d715feb0ef6c6ade46f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711405"
 ---
 # <a name="troubleshooting-azure-autoscale"></a>Устранение неполадок автоматического масштабирования Azure

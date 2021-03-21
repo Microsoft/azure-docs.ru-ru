@@ -10,10 +10,10 @@ ms.date: 03/02/2021
 ms.author: alkohli
 ms.custom: references_regions
 ms.openlocfilehash: 88aedb7daa375ae6b4a9107dceed1d25ed72ed92
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102039110"
 ---
 # <a name="azure-data-box-disk-frequently-asked-questions"></a>Диск Azure Data Box Часто задаваемые вопросы

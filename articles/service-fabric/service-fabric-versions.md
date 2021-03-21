@@ -4,10 +4,10 @@ description: Узнайте о версиях кластера в Azure Service 
 ms.topic: troubleshooting
 ms.date: 06/15/2020
 ms.openlocfilehash: 3e859a04ffb0b885aab0f31e83afad8380cbcc95
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103010207"
 ---
 # <a name="upgrade-your-azure-service-fabric-cluster-version"></a>Обновление версии кластера Azure Service Fabric
@@ -42,7 +42,7 @@ ms.locfileid: "103010207"
 > [!Note]
 > **Все выпущенные версии 7,2 включают необходимые изменения**.
   
-  | ОС | Текущая среда выполнения Service Fabric в кластере | CU/Patch, выпуск |
+  | OS | Текущая среда выполнения Service Fabric в кластере | CU/Patch, выпуск |
   | --- | --- |--- |
   | Windows | 7,0. * | 7.0.478.9590 |
   | Windows | 7,1. * | 7.1.503.9590 |
@@ -83,7 +83,7 @@ ms.locfileid: "103010207"
 > [!Note]
 > **Все выпущенные версии 7,2 включают необходимые изменения**.
 
- | ОС | Текущая среда выполнения Service Fabric в кластере | CU/Patch, выпуск |
+ | OS | Текущая среда выполнения Service Fabric в кластере | CU/Patch, выпуск |
   | --- | --- |--- |
   | Windows | 7,0. * | 7.0.478.9590 |
   | Windows | 7,1. * | 7.1.503.9590 |
@@ -102,7 +102,7 @@ ms.locfileid: "103010207"
 | --- | --- |--- | --- |
 | Все версии кластера до 5.3.121 | 5.1.158.* |Не выше версии 2.3 |20 января 2017 г. |
 | 5.3.* | 5.1.158.* |Не выше версии 2.3 |24 февраля 2017 г. |
-| 5.4.* | 5.1.158.* |Не выше версии 2.4 |10 мая 2017 г.       |
+| 5.4.* | 5.1.158.* |Не выше версии 2.4 |10 мая 2017 г.       |
 | 5.5.* | 5.4.164.* |Не выше версии 2.5 |10 августа 2017 г.    |
 | 5.6.* | 5.4.164.* |Не выше версии 2.6 |13 октября 2017 г.   |
 | 5.7.* | 5.4.164.* |Не выше версии 2.7 |15 декабря 2017 г.  |
@@ -139,13 +139,13 @@ ms.locfileid: "103010207"
 
 | Операционная система | Самая ранняя поддерживаемая версия Service Fabric |
 | --- | --- |
-| Windows Server 2012 R2 | Все версии |
+| Windows Server 2012 R2 | Все версии |
 | Windows Server 2016 | Все версии |
-| Windows Server 1709 | 6,0 |
+| Windows Server 1709 | 6.0 |
 | Windows Server 1803 | 6.4 |
 | Windows Server 1809 | 6.4.654.9590 |
 | Windows Server 2019 | 6.4.654.9590 |
-| Linux Ubuntu 16.04 | 6,0 |
+| Linux Ubuntu 16.04 | 6.0 |
 | Linux Ubuntu 18,04 | 7.1 |
 
 ## <a name="supported-version-names"></a>Поддерживаемые имена версий

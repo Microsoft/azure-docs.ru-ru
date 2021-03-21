@@ -10,10 +10,10 @@ ms.custom:
 - fasttrack-edit
 - devx-track-azurecli
 ms.openlocfilehash: 3061329ad9dcb368dab586acc2146e6fb4e23028
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101708719"
 ---
 # <a name="azure-functions-premium-plan"></a>План функций Azure Premium
@@ -187,7 +187,7 @@ az functionapp plan update -g <resource_group> -n <premium_plan_name> --min-inst
 |Восточная Норвегия;| 100 | 20 |
 |Центрально-южная часть США| 100 | 20 |
 |Южная Индия | 100 | Недоступно |
-|Юго-Восточная Азия| 100 | 20 |
+|Southeast Asia| 100 | 20 |
 |Северная Швейцария| 100 | Недоступно |
 |Западная Швейцария| 100 | Недоступно |
 |южная часть Соединенного Королевства| 100 | 20 |
@@ -200,7 +200,7 @@ az functionapp plan update -g <resource_group> -n <premium_plan_name> --min-inst
 |Западная Индия| 100 | 20 |
 |центрально-западная часть США| 100 | 20 |
 |Западная часть США| 100 | 20 |
-|Западная часть США 2| 100 | 20 |
+|Западная часть США 2| 100 | 20 |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

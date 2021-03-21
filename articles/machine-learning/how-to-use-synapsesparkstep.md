@@ -10,16 +10,18 @@ author: lobrien
 ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, synapse-azureml
-ms.openlocfilehash: 1dc4e0b70b0d39d01bada26992eb2213c1e855c5
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 2a9f0a8c943f539166f18a1e41a36136fbb63a6f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102455065"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584301"
 ---
 # <a name="how-to-use-apache-spark-powered-by-azure-synapse-analytics-in-your-machine-learning-pipeline-preview"></a>Использование Apache Spark (на платформе Azure синапсе Analytics) в конвейере машинного обучения (Предварительная версия)
 
 В этой статье вы узнаете, как использовать пулы Apache Spark, включенные в Azure синапсе Analytics, в качестве целевого объекта вычислений для этапа подготовки данных в конвейере Машинное обучение Azure. Вы узнаете, как один конвейер может использовать ресурсы вычислений, подходящие для конкретного этапа, например для подготовки данных или обучения. Вы увидите, как подготовлены данные для шага Spark и как они передаются следующему шагу. 
+
+[!INCLUDE [preview disclaimer](../../includes/machine-learning-preview-generic-disclaimer.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 

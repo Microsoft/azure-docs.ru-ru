@@ -4,10 +4,10 @@ description: Узнайте о ключевых аспектах и вариан
 ms.topic: conceptual
 ms.date: 03/11/2021
 ms.openlocfilehash: 4c964151c49e2fea56031dd24bacf4655753a18d
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491815"
 ---
 # <a name="azure-vmware-solution-networking-and-interconnectivity-concepts"></a>Сети решения Azure VMware и основные понятия взаимодействия
@@ -63,7 +63,7 @@ ms.locfileid: "103491815"
 ## <a name="limitations"></a>Ограничения
 [!INCLUDE [azure-vmware-solutions-limits](includes/azure-vmware-solutions-limits.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия 
+## <a name="next-steps"></a>Следующие шаги 
 
 Теперь, когда вы узнали о сети решения Azure VMware и концепции взаимодействия, вы можете узнать о следующих возможностях:
 

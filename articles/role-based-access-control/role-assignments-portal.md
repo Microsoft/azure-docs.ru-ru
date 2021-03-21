@@ -11,19 +11,19 @@ ms.date: 02/15/2021
 ms.author: rolyon
 ms.custom: contperf-fy21q3-portal
 ms.openlocfilehash: e25bbe4e1a96e4efaaa13732aea571d26d4b006e
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100555292"
 ---
-# <a name="assign-azure-roles-using-the-azure-portal"></a>Назначение ролей Azure с помощью портал Azure
+# <a name="assign-azure-roles-using-the-azure-portal"></a>Назначение ролей Azure с помощью портала Azure
 
 [!INCLUDE [Azure RBAC definition grant access](../../includes/role-based-access-control/definition-grant.md)] В этой статье описывается назначение ролей с помощью портал Azure.
 
 Если необходимо назначить роли администратора в Azure Active Directory, см. раздел [Просмотр и назначение ролей администратора в Azure Active Directory](../active-directory/roles/manage-roles-portal.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [Azure role assignment prerequisites](../../includes/role-based-access-control/prerequisites-role-assignments.md)]
 
@@ -82,7 +82,7 @@ ms.locfileid: "100555292"
 
 1. В списке **назначить доступ к** выберите тип субъекта безопасности, которому нужно назначить доступ.
 
-    | Тип | Описание |
+    | Type | Описание |
     | --- | --- |
     | **Пользователь, группа или субъект-служба** | Если вы хотите назначить роль пользователю, группе или субъекту-службе (приложению), выберите этот тип. |
     | **Управляемое удостоверение, назначенное пользователем** | Если вы хотите назначить роль [управляемому удостоверению, назначенному пользователем](../active-directory/managed-identities-azure-resources/overview.md), выберите этот тип. |

@@ -10,10 +10,10 @@ ms.author: tamram
 ms.reviewer: hux
 ms.subservice: blobs
 ms.openlocfilehash: 8d04d1bd758480ec33a7480e4045d28ed750f22e
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102430944"
 ---
 # <a name="store-business-critical-blob-data-with-immutable-storage"></a>Хранение критически важных для бизнеса данных большого двоичного объекта с помощью неизменяемого хранилища
@@ -126,7 +126,7 @@ ms.locfileid: "102430944"
 
 За использование этой функции не взимается дополнительная плата. Цены на неизменяемые данные изменяются так же, как и изменяемые данные. Сведения о ценах на хранилище BLOB-объектов Azure см. на [странице цен на службу хранилища Azure](https://azure.microsoft.com/pricing/details/storage/blobs/).
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Можно ли предоставить документацию по соответствию червя?**
 

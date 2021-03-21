@@ -13,10 +13,10 @@ ms.date: 02/11/2020
 ms.author: nacanuma
 ms.custom: aaddev
 ms.openlocfilehash: fe73832ec5eaee62a2dc2d397c12f82334e2efd8
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103010714"
 ---
 # <a name="single-page-application-code-configuration"></a>Одностраничное приложение: конфигурация кода
@@ -70,6 +70,6 @@ export class AppModule { }
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Перейдите к следующей статье в этом сценарии: [Вход и](scenario-spa-sign-in.md)выход.
