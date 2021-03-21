@@ -1,22 +1,22 @@
 ---
 title: Требования к системе пакета SDK для датчика Kinect для Azure
 description: Ознакомьтесь с требованиями к системе для пакета SDK для датчика Kinect для Azure в Windows и Linux.
-author: tesych
-ms.author: tesych
+author: qm13
+ms.author: quentinm
 ms.custom:
 - CI 115266
 - CSSTroubleshooting
 manager: dcscontentpm
 ms.prod: kinect-dk
-ms.date: 03/12/2020
+ms.date: 03/05/2021
 ms.topic: article
 keywords: Azure, Kinect, требования к системе, ЦП, GPU, USB, Настройка, Настройка, минимальные требования
-ms.openlocfilehash: 5cf313114b62532ee3f2b3d7a5142f79218954c9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 558c1b9ca264874fa808aeba5f1e8a809a8f722d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "85277077"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104656980"
 ---
 # <a name="azure-kinect-sensor-sdk-system-requirements"></a>Требования к системе пакета SDK для датчика Kinect для Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "85277077"
 
 - Седьмой &reg; процессор Intel коретм i5 (четыре ядра с частотой 2,4 ГГц или выше)
 - 4 ГБ памяти
-- NVIDIA GEFORCE ГТКС 1070 или выше
+- NVIDIA GEFORCE ГТКС 1050 или аналог
 - Выделенный порт USB3
 
 Рекомендуемая минимальная конфигурация предполагает K4A_DEPTH_MODE_NFOV_UNBINNED режим глубины в 30fps отслеживания 5 пользователей. Более низкие или более старые процессоры и видеопроцессоры NVIDIA могут также работать в зависимости от вашего варианта использования.

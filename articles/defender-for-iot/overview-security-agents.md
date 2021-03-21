@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 1/24/2021
 ms.author: shhazam
 ms.openlocfilehash: 3b98013eab1ae8d21b9da7c1a4460551dc363c80
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103487774"
 ---
 # <a name="get-started-with-azure-defender-for-iot-device-micro-agents"></a>Приступая к работе с защитником Azure для устройств IoT Micro Agent
@@ -42,9 +42,9 @@ ms.locfileid: "103487774"
 
 1. Проверьте наличие рекомендаций в защитнике для Интернета вещей в ответ на сбой проверки базового плана ОС на предыдущем шаге. Начните проверку через 30 минут после выполнения сценария.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Настройка [решения](quickstart-configure-your-solution.md)
-- [Создание защитника — IoT-Micro-Agents](quickstart-create-security-twin.md)
+- [Создание микроагентов Defender для Интернета вещей](quickstart-create-security-twin.md)
 - Настройка [пользовательских оповещений](quickstart-create-custom-alerts.md)
 - [Развертывание агента безопасности](how-to-deploy-agent.md)

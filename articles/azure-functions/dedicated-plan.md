@@ -4,10 +4,10 @@ description: Узнайте о преимуществах выполнения �
 ms.topic: conceptual
 ms.date: 10/29/2020
 ms.openlocfilehash: a9f976eda4a551c302ba7df92fbdbbf7a4fce1d7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101704571"
 ---
 # <a name="dedicated-hosting-plans-for-azure-functions"></a>Планы выделенного размещения для функций Azure

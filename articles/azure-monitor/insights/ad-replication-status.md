@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 01/24/2018
 ms.openlocfilehash: c99ad16e119c4262aa6d9d645b2457cdd46061b2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101700683"
 ---
 # <a name="monitor-active-directory-replication-status-with-azure-monitor"></a>Мониторинг состояния репликации Active Directory с помощью Azure Monitor
@@ -25,7 +25,7 @@ Active Directory является ключевым компонентом в к�
 ## <a name="installing-and-configuring-the-solution"></a>Установка и настройка решения
 Для установки и настройки решений используйте указанные ниже данные.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * Для решения Состояние репликации AD требуется поддерживаемая версия платформа .NET Framework 4.6.2 или более поздней версии на каждом компьютере, где установлен агент Log Analytics для Windows (также называемый Microsoft Monitoring Agent (MMA)).  Этот агент используется решением System Center 2016 Operations Manager и Operations Manager 2012 R2, а также Azure Monitor.
 * Решение поддерживает контроллеры домена под управлением Windows Server 2008 и 2008 R2, Windows Server 2012 и 2012 R2, а также Windows Server 2016.

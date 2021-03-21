@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 2/26/2021
 ms.openlocfilehash: 098f62365971fd634001706ab99fd414a6b25056
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102123570"
 ---
 # <a name="register-and-scan-azure-multiple-sources"></a>Регистрация и проверка нескольких источников Azure
@@ -22,7 +22,7 @@ ms.locfileid: "102123570"
 
 Azure Multiple Source поддерживает проверки для записи метаданных и схемы в большинстве типов ресурсов Azure, поддерживаемых зрения. Он также классифицирует данные автоматически на основе системных и пользовательских правил классификации.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Перед регистрацией источников данных создайте учетную запись Azure зрения. Дополнительные сведения о создании учетной записи зрения см. в разделе [Краткое руководство. Создание учетной записи Azure зрения](create-catalog-portal.md).
 - Необходимо быть администратором источника данных Azure зрения.

@@ -7,10 +7,10 @@ ms.subservice: process-automation
 ms.date: 02/26/2021
 ms.topic: conceptual
 ms.openlocfilehash: c559a81b17b92f48b2d51b7c2d26325d6a1b1cca
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101708906"
 ---
 # <a name="automation-account-authentication-overview"></a>Общие сведения о проверке подлинности учетной записи службы автоматизации

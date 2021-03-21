@@ -10,10 +10,10 @@ ms.date: 10/14/2020
 ms.author: akjosh
 ms.reviewer: cynthn
 ms.openlocfilehash: 32b4cf1555a2d0e074ae1551a5c0085f2758fa2b
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102609147"
 ---
 # <a name="shared-image-galleries-overview"></a>Обзор коллекций общих образов
@@ -322,6 +322,6 @@ ms.locfileid: "102609147"
 
 Кроме того, вы можете разместить свой вопрос и пометить его в `azure-virtual-machines-images` [Q&A](/answers/topics/azure-virtual-machines-images.html).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как развертывать общие образы с помощью [Azure CLI](shared-images-cli.md) или [PowerShell](shared-images-powershell.md).

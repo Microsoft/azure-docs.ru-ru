@@ -6,10 +6,10 @@ ms.date: 02/14/2021
 ms.author: yalavi
 author: yalavi
 ms.openlocfilehash: 88b75c46898e1a74b33051d8996af96201f639c7
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102037716"
 ---
 # <a name="understand-migration-options-to-newer-alerts"></a>Общие сведения о вариантах миграции для новых оповещений
@@ -132,7 +132,7 @@ ms.locfileid: "102037716"
 | SASSuccess | Метрика транзакций с измерениями "ResponseType" = "Success" и "Authentication" = "SAS" | |
 | ServerOtherError | Метрика транзакций с измерениями "ResponseType" = "Серверосереррор" | |
 | ServerTimeOutError | Метрика транзакций с измерениями "ResponseType" = "ServerTimeOutError"  | |
-| Успешное завершение | Метрика транзакций с измерениями "ResponseType" = "Success" | |
+| Успешно | Метрика транзакций с измерениями "ResponseType" = "Success" | |
 | TotalBillableRequests| Transactions | |
 | TotalEgress | Исходящие | |
 | TotalIngress | Входящий трафик | |

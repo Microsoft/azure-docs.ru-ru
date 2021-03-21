@@ -4,13 +4,13 @@ description: Вычислите и сообщайте об уровне обсл
 ms.topic: conceptual
 ms.date: 02/8/2021
 ms.openlocfilehash: d225627a27bffd9088956e5aee37ca543e528d4a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101714057"
 ---
-# <a name="downtime-sla-and-outages-workbook"></a>Книга простоев, соглашения об уровне обслуживания и простои
+# <a name="downtime-sla-and-outages-workbook"></a>Книга по простоям, сбоям и Соглашению об уровне обслуживания
 
 Представляем простой способ вычислить и сообщить о соглашении об уровне обслуживания для веб-тестов через единую панель прозрачности по ресурсам Application Insights и подпискам Azure. Отчет о простоях и сбоях предоставляет мощные готовые запросы и визуализации данных для улучшения понимания возможностей подключения клиента, типичного времени ответа приложения и длительного времени.
 

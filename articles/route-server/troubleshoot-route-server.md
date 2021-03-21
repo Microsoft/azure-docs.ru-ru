@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.author: duau
 ms.openlocfilehash: 83f1e83653c5674988cadcb5b54d3c675ae0b8b8
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103489446"
 ---
 # <a name="troubleshooting-azure-route-server-issues"></a>Устранение неполадок сервера маршрутизации Azure
@@ -66,6 +66,6 @@ ms.locfileid: "103489446"
 
 * Если виртуальная машина находится в виртуальной сети, отличной от той, на которой размещен ваш NVA и сервер маршрутизации Azure. Проверьте, включен ли пиринг виртуальных сетей между двумя виртуальных сетей *, и* если в виртуальной сети виртуальной машины включен параметр использовать удаленный маршрутный сервер,
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [настроить сервер маршрутизации Azure](quickstart-configure-route-server-powershell.md) .

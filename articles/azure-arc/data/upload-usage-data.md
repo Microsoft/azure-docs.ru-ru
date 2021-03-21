@@ -10,16 +10,16 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 zone_pivot_groups: client-operating-system-macos-and-linux-windows-powershell
-ms.openlocfilehash: 578f0d1ca742fe4445b8aeed6876d1a73fd3f79e
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.openlocfilehash: 0c72eda59f375c70274b17796ca53614ef95505b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92378124"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104669514"
 ---
 # <a name="upload-usage-data-to-azure-monitor"></a>Отправка данных об использовании в Azure Monitor
 
-Периодически можно экспортировать сведения об использовании. При экспорте и отправке этих сведений создаются и обновляются контроллеры данных, управляемый экземпляр SQL Server и PostgreSQL в Azure ресурсы группы серверов масштабирования.
+Периодически можно экспортировать сведения об использовании. Экспорт и передача этих данных создает и обновляет контроллеры данных, управляемый экземпляр SQL и PostgreSQL масштабируемые ресурсы группы серверов в Azure.
 
 > [!NOTE] 
 > В течение периода действия предварительной версии не взимается плата за использование служб данных, включенных в службу Arc Azure.
@@ -64,7 +64,7 @@ ms.locfileid: "92378124"
 
 Если вы хотите отправлять метрики и журналы по расписанию, можно создать сценарий и запустить его через таймер каждые несколько минут. Ниже приведен пример автоматизации отправки с помощью сценария оболочки Linux.
 
-В любом редакторе текста или кода добавьте следующий скрипт в файл и сохраните его как исполняемый файл сценария, например. sh (Linux/Mac) или. cmd,. bat,. ps1.
+В любом редакторе текста или кода добавьте следующий скрипт в файл и сохраните его как исполняемый файл скрипта, например `.sh` (Linux/Mac) или `.cmd` , `.bat` или `.ps1` .
 
 ```console
 azdata arc dc export --type metrics --path metrics.json --force
@@ -85,7 +85,7 @@ watch -n 1200 ./myuploadscript.sh
 
 Можно также использовать планировщик заданий, например cron или Windows планировщик задач или Orchestrator, например Ansible, Puppet или Chef.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Передача метрик и журналов в Azure Monitor](upload-metrics.md)
 

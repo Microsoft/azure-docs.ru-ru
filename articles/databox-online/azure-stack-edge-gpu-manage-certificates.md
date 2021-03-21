@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 03/08/2021
 ms.author: alkohli
 ms.openlocfilehash: 534870e6bd67b7aa5273289f3154a794a2b9bd22
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102519016"
 ---
 # <a name="use-certificates-with-azure-stack-edge-pro-gpu-device"></a>Использование сертификатов с устройством GPU Azure Stack.
@@ -415,6 +415,6 @@ Rotation of certificates is not implemented in this release. You are also not no
 
 View the certificate expiration date on the **Certificates** page in the local web UI of your device. Once the certificate expiration is approaching, create and upload new certificates as per the detailed instructions in [Create and upload certificates]().-->
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Развертывание устройства Azure Stack пограничной Pro](azure-stack-edge-gpu-deploy-prep.md)

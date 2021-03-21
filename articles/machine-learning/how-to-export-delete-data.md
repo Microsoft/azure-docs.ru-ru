@@ -11,10 +11,10 @@ ms.date: 04/24/2020
 ms.topic: conceptual
 ms.custom: how-to
 ms.openlocfilehash: 030e09f0bb1514e8d3828da52604d751a2a8a11a
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520090"
 ---
 # <a name="export-or-delete-your-machine-learning-service-workspace-data"></a>Экспорт или удаление данных рабочей области Службы машинного обучения
@@ -79,7 +79,7 @@ model_output_port.download('.', show_progress=True)
 
 С помощью пакета SDK для Python можно удалить следующие ресурсы машинного обучения: 
 
-| Тип | Вызов функции | Примечания | 
+| Type | Вызов функции | Примечания | 
 | --- | --- | --- |
 | `Workspace` | [`delete`](/python/api/azureml-core/azureml.core.workspace.workspace#delete-delete-dependent-resources-false--no-wait-false-) | Используйте `delete-dependent-resources` для каскадного удаления |
 | `Model` | [`delete`](/python/api/azureml-core/azureml.core.model%28class%29#delete--) | | 

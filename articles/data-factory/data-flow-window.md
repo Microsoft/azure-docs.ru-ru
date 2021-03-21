@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 11/16/2020
 ms.openlocfilehash: 56024fd0aac2f9fbefb7fe919eef2481550e573f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100367832"
 ---
 # <a name="window-transformation-in-mapping-data-flow"></a>Преобразование окна в потоке данных сопоставления
@@ -48,6 +48,6 @@ ms.locfileid: "100367832"
 
 Полный список объединений и аналитических функций, которые доступны вам для использования в языке выражений Потока данных ADF через построитель выражений, приведены здесь: https://aka.ms/dataflowexpressions.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы ищете простое агрегирование по группам, используйте [Преобразование «Статистическая обработка](data-flow-aggregate.md) »

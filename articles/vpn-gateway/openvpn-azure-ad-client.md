@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/15/2020
 ms.author: alzam
 ms.openlocfilehash: 02ce8e1809c5dd404e7afa25178acf37e7346cab
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102548416"
 ---
 # <a name="azure-active-directory-authentication-configure-a-vpn-client-for-p2s-openvpn-protocol-connections"></a>Azure Active Directory проверка подлинности: Настройка VPN-клиента для подключений по протоколу P2S Опенвпн
@@ -132,7 +132,7 @@ ms.locfileid: "102548416"
 
 4. Выберите **Подключиться** , чтобы инициировать VPN-подключение.
 
-    ![авто](./media/openvpn-azure-ad-client/auto/auto4.jpg)
+    ![auto](./media/openvpn-azure-ad-client/auto/auto4.jpg)
 
 ## <a name="diagnose-connection-issues"></a><a name="diagnose"></a>Diagnose connection issues (Диагностика проблем с подключением)
 
@@ -152,7 +152,7 @@ ms.locfileid: "102548416"
 
     ![diagnose](./media/openvpn-azure-ad-client/diagnose/diagnose4.jpg)
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 ### <a name="is-the-azure-vpn-client-supported-with-windows-fips-mode"></a>Поддерживается ли VPN-клиент Azure в режиме Windows FIPS?
 

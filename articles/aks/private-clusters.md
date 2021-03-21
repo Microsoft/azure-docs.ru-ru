@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 3/5/2021
 ms.openlocfilehash: 190658e23ee02651e64c3718824315c0265c0f04
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102556542"
 ---
 # <a name="create-a-private-azure-kubernetes-service-cluster"></a>Создание частного кластера Службы Azure Kubernetes
@@ -75,7 +75,7 @@ az aks create \
 - Для "CUSTOM_PRIVATE_DNS_ZONE_RESOURCE_ID" требуется создать зону Частная зона DNS в этом формате для глобального облака Azure: `privatelink.<region>.azmk8s.io` . Вам потребуется идентификатор ресурса, который будет Частная зона DNS зоны.  Кроме того, вам потребуется назначенное пользователем удостоверение или субъект-служба по крайней мере с `private dns zone contributor` ролью.
 - "FQDN-поддомен" можно использовать с "CUSTOM_PRIVATE_DNS_ZONE_RESOURCE_ID" только для предоставления возможностей поддомену для `privatelink.<region>.azmk8s.io`
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 * Предварительная версия AKS версии 0.5.3 или более поздней
 * API версии 2020-11-01 или более поздней

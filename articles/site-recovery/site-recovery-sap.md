@@ -6,10 +6,10 @@ manager: rochakm
 ms.topic: how-to
 ms.date: 11/27/2018
 ms.openlocfilehash: e639762cd1adb7bbbc3fb2ec31f4ce52710e46f9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711949"
 ---
 # <a name="set-up-disaster-recovery-for-a-multi-tier-sap-netweaver-app-deployment"></a>Настройка аварийного восстановления для многоуровневого развертывания приложения SAP NetWeaver
@@ -24,7 +24,7 @@ ms.locfileid: "101711949"
 
 Для защиты развертывания приложений SAP NetWeaver можно использовать [Azure Site Recovery](site-recovery-overview.md). В этой статье рассматриваются рекомендации по защите трехуровневого развертывания SAP NetWeaver в Azure при репликации в другой центр обработки данных Azure с помощью Site Recovery. В этой статье описываются поддерживаемые сценарии и конфигурации, а также способы тестирования отработки отказа (детализации аварийного восстановления) и фактические отработки отказа.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, необходимо знать, как выполнять следующие задачи:
 

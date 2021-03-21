@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: trbye
 ms.openlocfilehash: 6eb689c2e93b5a9cac932e428245410ba35e77d6
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102611799"
 ---
 # <a name="what-is-direct-line-speech"></a>Что такое Direct Line Speech?
@@ -41,7 +41,7 @@ ms.locfileid: "102611799"
 | Java | Windows, macOS, Linux | [Обзор](/java/api/com.microsoft.cognitiveservices.speech) |
 | Java | Android | [Обзор](/java/api/com.microsoft.cognitiveservices.speech) |
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Пример кода для создания речевого помощника доступен на сайте GitHub. Эти примеры охватывают клиентское приложение для подключения к помощнику на нескольких популярных языках программирования.
 

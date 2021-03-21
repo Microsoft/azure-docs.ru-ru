@@ -12,10 +12,10 @@ ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 86f40944af9fb49b0402a33e5009b99d60be61f0
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103489191"
 ---
 # <a name="custom-email-verification-with-sendgrid"></a>Пользовательская проверка электронной почты с помощью SendGrid
@@ -550,7 +550,7 @@ ms.locfileid: "103489191"
 
 После добавления локализованных строк удалите метаданные сообщений об ошибках проверки OTP из технических профилей Локалаккаунтсигнупвислогонемаил и Локалаккаунтдисковерюсинжемаиладдресс.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Пример пользовательской политики проверки электронной почты можно найти на сайте GitHub:
 

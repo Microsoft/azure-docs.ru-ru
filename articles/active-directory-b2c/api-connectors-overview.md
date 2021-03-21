@@ -11,10 +11,10 @@ author: msmimart
 manager: celestedg
 ms.custom: it-pro
 ms.openlocfilehash: d7a3301cb6ec10e75979d0e1fdfad52c7103a2aa
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102611527"
 ---
 # <a name="use-api-connectors-to-customize-and-extend-sign-up-user-flows"></a>Использование соединителей API для настройки и расширения потоков пользователей при регистрации
@@ -60,7 +60,7 @@ ms.locfileid: "102611527"
 - Запросите внешние системы для существующих данных о пользователе, чтобы вернуть их в маркер приложения или сохранить в Azure AD.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Узнайте, как [Добавить соединитель API в поток пользователя](add-api-connector.md)
 - Начните работу с нашими [примерами](code-samples.md#api-connectors).
 <!-- - Learn how to [add a custom approval system to self-service sign-up](add-approvals.md) -->

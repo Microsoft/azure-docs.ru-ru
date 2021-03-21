@@ -7,10 +7,10 @@ ms.service: azure-redhat-openshift
 ms.topic: conceptual
 ms.date: 10/15/2020
 ms.openlocfilehash: dda050b8d824f0ff0ac1c84d2f008387de55aedf
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100636389"
 ---
 # <a name="configure-built-in-container-registry-for-azure-red-hat-openshift-4"></a>Настройка встроенного реестра контейнеров для Azure Red Hat OpenShift 4
@@ -24,7 +24,7 @@ Azure Red Hat OpenShift предоставляет интегрированны�
 > * Настройка подключения OpenID Connect
 > * Доступ к встроенному реестру образов контейнеров
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В этой статье предполагается, что у вас уже есть кластер АТО. Если вам нужен кластер АТО, см. Руководство по АТО, в котором описывается [Создание кластера Azure Red Hat OpenShift 4](./tutorial-create-cluster.md). Не забудьте создать кластер с `--pull-secret` аргументом для `az aro create` .  Это необходимо для настройки проверки подлинности Azure Active Directory и встроенного реестра контейнеров.
 

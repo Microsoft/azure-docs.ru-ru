@@ -6,14 +6,16 @@ ms.author: jasonh
 ms.service: data-catalog
 ms.topic: how-to
 ms.date: 08/01/2019
-ms.openlocfilehash: 6a429c09b6f8082c95e29bcea62d27ec4fb46fd3
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 537254d7fb153e182be8ece13675a357a9a3e24e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96017310"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674824"
 ---
 # <a name="how-to-secure-access-to-data-catalog-and-data-assets"></a>Как обеспечить безопасный доступ к каталогу данных и ресурсам данных
+
+[!INCLUDE [Azure Purview redirect](../../includes/data-catalog-use-purview.md)]
 
 > [!IMPORTANT]
 > Эта функция доступна только в стандартном выпуске каталога данных Azure.
@@ -62,6 +64,6 @@ ms.locfileid: "96017310"
 - Разрешения, назначенные группам безопасности, являются аддитивными. Предположим, что пользователь входит в две группы. Одна группа имеет разрешение на добавление заметок, а другая группа — нет. Тогда у пользователя будет разрешение на добавление заметок. 
 - Разрешения, назначенные пользователю явно, переопределяют разрешения, назначенные группам, к которым принадлежит пользователь. В предыдущем примере, предположим, вы явно добавили пользователя к пользователям каталога и не присвоили разрешения на добавление заметок. Пользователь не может добавлять заметки к ресурсам данных, несмотря на то, что он является участником группы с таким разрешением.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Начало работы с Каталогом данных Azure](data-catalog-get-started.md)

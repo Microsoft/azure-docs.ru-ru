@@ -7,10 +7,10 @@ ms.date: 01/23/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 90459c3eb171e03b1c28c91e766d3a6b765565b8
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491475"
 ---
 # <a name="linux-support"></a>Поддержка Linux
@@ -29,7 +29,7 @@ ms.locfileid: "103491475"
 |стратодеск |[Документация по клиенту стратодеск](https://www.stratodesk.com/kb/Microsoft_Windows_Virtual_Desktop_(WVD))|[Поддержка стратодеск](https://www.stratodesk.com/support/)|
 |HP |[Документация по HP Client](https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c07051097)|[Поддержка HP](https://support.hp.com/us-en/products/workstations-thin-clients)|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Ознакомьтесь с документацией по следующим клиентам:
 

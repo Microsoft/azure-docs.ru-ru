@@ -10,18 +10,18 @@ ms.subservice: sql
 ms.date: 04/15/2020
 ms.author: fipopovi
 ms.reviewer: jrasnick
-ms.openlocfilehash: 83c5595dc64b46e1c30f3c36866e0efbbd8d3c7f
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 27cc53c3eef1bb2a9962d2c21ae80db3c8b0383d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101674125"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104585440"
 ---
 # <a name="design-tables-using-synapse-sql-in-azure-synapse-analytics"></a>Разработка таблиц с помощью синапсе SQL в Azure синапсе Analytics
 
 Этот документ содержит основные понятия для проектирования таблиц с выделенным пулом SQL и бессерверным пулом SQL Server.  
 
-[Бессерверный пул SQL](on-demand-workspace-overview.md) — это служба запросов к данным в Data Lake. Он не имеет локального хранилища для приема данных. [Выделенный пул SQL](best-practices-sql-pool.md) представляет коллекцию аналитических ресурсов, которые подготавливаются при использовании синапсе SQL. Размер выделенного пула SQL определяется единицами использования хранилища данных (DWU).
+[Бессерверный пул SQL](on-demand-workspace-overview.md) — это служба запросов к данным в Data Lake. Он не имеет локального хранилища для приема данных. [Выделенный пул SQL](best-practices-dedicated-sql-pool.md) представляет коллекцию аналитических ресурсов, которые подготавливаются при использовании синапсе SQL. Размер выделенного пула SQL определяется единицами использования хранилища данных (DWU).
 
 В следующей таблице перечислены разделы, относящиеся к выделенному пулу SQL и бессерверному пулу SQL:
 
@@ -75,8 +75,8 @@ CREATE SCHEMA wwi;
 
 | Таблица WideWorldImportersDW  | Тип таблицы | выделенный пул SQL |
 |:-----|:-----|:------|:-----|
-| Город | Измерение | wwi.DimCity |
-| Заказ | Факты | wwi.FactOrder |
+| City | Измерение | wwi.DimCity |
+| Номер | Факты | wwi.FactOrder |
 
 ## <a name="table-persistence"></a>Сохраняемость таблицы
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019; seo-dt-2019
 ms.date: 08/12/2019
 ms.openlocfilehash: e13a1a5a939d314bdf4500c0827fa13201505016
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100368852"
 ---
 # <a name="copy-data-from-mongodb-using-azure-data-factory-legacy"></a>Копирование данных из MongoDB с помощью фабрики данных Azure (прежние версии)
@@ -35,7 +35,7 @@ ms.locfileid: "100368852"
 - MongoDB **версий 2.4, 2.6, 3.0, 3.2, 3.4 и 3.6**.
 - Копирование данных с использованием **базовой** или **анонимной** проверки подлинности.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [data-factory-v2-integration-runtime-requirements](../../includes/data-factory-v2-integration-runtime-requirements.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "100368852"
 
 Для связанной службы MongoDB поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type |Для свойства type необходимо задать значение **MongoDB** |Да |
 | server |IP-адрес или имя узла сервера MongoDB |Да |
@@ -94,7 +94,7 @@ ms.locfileid: "100368852"
 
 Полный список разделов и свойств, используемых для определения наборов данных, приведен в статье [Наборы данных и связанные службы в фабрике данных Azure](concepts-datasets-linked-services.md). Набор данных MongoDB поддерживает следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство type должно иметь значение **MongoDbCollection**. | Да |
 | collectionName |Имя коллекции в базе данных MongoDB |Да |
