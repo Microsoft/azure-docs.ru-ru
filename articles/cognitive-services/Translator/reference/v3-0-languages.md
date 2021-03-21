@@ -11,10 +11,10 @@ ms.topic: reference
 ms.date: 02/01/2019
 ms.author: lajanuar
 ms.openlocfilehash: 8471983d24cfed39e6521e19366f6023e519adaf
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98895481"
 ---
 # <a name="translator-30-languages"></a>Переводчик 3,0: языки
@@ -40,7 +40,7 @@ https://api.cognitive.microsofttranslator.com/languages?api-version=3.0
     <td><em>Обязательный параметр</em>.<br/>Версия API, запрошенная клиентом. Необходимое значение: `3.0`.</td>
   </tr>
   <tr>
-    <td>scope</td>
+    <td>область</td>
     <td>*Необязательный параметр*.<br/>Список имен, разделенных запятыми, определяющий возвращаемую группу языков. Допустимые имена групп: `translation`, `transliteration` и `dictionary`. Если область не задана, то возвращаются все группы, которые эквивалентны передаче `scope=translation,transliteration,dictionary`. Чтобы решить, какой набор поддерживаемых языков подходит для сценария, см. описание [объекта ответа](#response-body).</td>
   </tr>
 </table> 

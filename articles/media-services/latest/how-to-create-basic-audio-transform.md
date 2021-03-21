@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 11/18/2020
 ms.author: inhenkel
 ms.openlocfilehash: 80edac3106a79a706ee1ef18c48d41d1ad6c3eaf
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101724597"
 ---
 # <a name="create-a-basic-audio-transform"></a>Создание базового преобразования звука

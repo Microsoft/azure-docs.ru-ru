@@ -7,10 +7,10 @@ ms.topic: reference
 ms.date: 01/12/2021
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 08a1965aadf8f50625e54d7c5e3b3f6a44c0bbd4
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98946181"
 ---
 # <a name="sdk-rest-and-cli-developer-resources-for-language-understanding-luis"></a>Ресурсы для разработчиков SDK, RESTFUL и CLI для Распознавание речи (LUIS)
@@ -47,7 +47,7 @@ ms.locfileid: "98946181"
 
 Интерфейсы API для конечных точек создания и прогнозирования доступны в API-интерфейсах:
 
-|Тип|Версия|
+|Type|Версия|
 |--|--|
 |Разработка|[Шаблон](https://go.microsoft.com/fwlink/?linkid=2092087)<br>[Предварительный просмотр v3](https://westeurope.dev.cognitive.microsoft.com/docs/services/luis-programmatic-apis-v3-0-preview)|
 |Прогнозирование|[Шаблон](https://go.microsoft.com/fwlink/?linkid=2092356)<br>[Том](https://westcentralus.dev.cognitive.microsoft.com/docs/services/luis-endpoint-api-v3-0/)|
@@ -69,7 +69,7 @@ ms.locfileid: "98946181"
 
 В следующей таблице описаны параметры, обозначенные фигурными скобками `{}` в предыдущей таблице.
 
-|Параметр|Цель|
+|Параметр|Назначение|
 |--|--|
 |`your-resource-name`|Имя ресурса Azure|
 |`q` или `query`|Текст фразы, отправляемый из клиентского приложения, такого как чат-бот|
@@ -88,11 +88,11 @@ ms.locfileid: "98946181"
 
 |Язык |Справочная документация|Пакет|Краткие руководства|
 |--|--|--|--|
-|C#|[Работы](/dotnet/api/microsoft.azure.cognitiveservices.language.luis.authoring)</br>[Прогнозирование](/dotnet/api/microsoft.azure.cognitiveservices.language.luis.runtime)|[Создание NuGet](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring/)<br>[Прогнозирование NuGet](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/)|[Работы](./client-libraries-rest-api.md?pivots=rest-api)<br>[Прогнозирование запросов](./client-libraries-rest-api.md?pivots=rest-api)|
+|C#|[Разработка](/dotnet/api/microsoft.azure.cognitiveservices.language.luis.authoring)</br>[Прогнозирование](/dotnet/api/microsoft.azure.cognitiveservices.language.luis.runtime)|[Создание NuGet](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring/)<br>[Прогнозирование NuGet](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/)|[Разработка](./client-libraries-rest-api.md?pivots=rest-api)<br>[Прогнозирование запросов](./client-libraries-rest-api.md?pivots=rest-api)|
 |Go|[Создание и прогнозирование](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.0/luis)|[Пакет SDK](https://github.com/Azure/azure-sdk-for-go/tree/master/services/cognitiveservices/v2.0/luis)||
 |Java|[Создание и прогнозирование](/java/api/overview/azure/cognitiveservices/client/languageunderstanding)|[Создание Maven](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-luis-authoring)<br>[Прогноз Maven](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-luis-runtime)|
-|JavaScript|[Работы](/javascript/api/@azure/cognitiveservices-luis-authoring/)<br>[Прогнозирование](/javascript/api/@azure/cognitiveservices-luis-runtime/)|[Создание NPM](https://www.npmjs.com/package/@azure/cognitiveservices-luis-authoring)<br>[Прогноз NPM](https://www.npmjs.com/package/@azure/cognitiveservices-luis-runtime)|[Работы](./client-libraries-rest-api.md?pivots=rest-api)<br>[Прогнозирование](./client-libraries-rest-api.md?pivots=rest-api)|
-|Python|[Создание и прогнозирование](./client-libraries-rest-api.md?pivots=rest-api)|[PIP](https://pypi.org/project/azure-cognitiveservices-language-luis/)|[Работы](./client-libraries-rest-api.md?pivots=rest-api)<br>[Прогнозирование](./client-libraries-rest-api.md?pivots=rest-api)|
+|JavaScript|[Разработка](/javascript/api/@azure/cognitiveservices-luis-authoring/)<br>[Прогнозирование](/javascript/api/@azure/cognitiveservices-luis-runtime/)|[Создание NPM](https://www.npmjs.com/package/@azure/cognitiveservices-luis-authoring)<br>[Прогноз NPM](https://www.npmjs.com/package/@azure/cognitiveservices-luis-runtime)|[Разработка](./client-libraries-rest-api.md?pivots=rest-api)<br>[Прогнозирование](./client-libraries-rest-api.md?pivots=rest-api)|
+|Python|[Создание и прогнозирование](./client-libraries-rest-api.md?pivots=rest-api)|[PIP](https://pypi.org/project/azure-cognitiveservices-language-luis/)|[Разработка](./client-libraries-rest-api.md?pivots=rest-api)<br>[Прогнозирование](./client-libraries-rest-api.md?pivots=rest-api)|
 
 
 ### <a name="containers"></a>Контейнеры

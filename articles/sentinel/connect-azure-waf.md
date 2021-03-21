@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: yelevin
 ms.openlocfilehash: c554f3582e67622a5a1739c9e410328c902d491b
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94655907"
 ---
 # <a name="connect-data-from-azure-web-application-firewall-waf"></a>Подключение данных из брандмауэра веб-приложения Azure (WAF)
@@ -21,7 +21,7 @@ ms.locfileid: "94655907"
 Веб-приложения все чаще подвергаются вредоносным атакам, использующим общеизвестные уязвимости. Брандмауэр веб-приложения Azure (WAF) обеспечивает централизованную защиту веб-приложений от распространенных эксплойтов и угроз, таких как внедрение кода и межузловые сценарии. Azure WAF можно развернуть в службе [шлюза приложений Azure](../web-application-firewall/ag/ag-overview.md) , службе " [Передняя дверца Azure](../web-application-firewall/afds/afds-overview.md) " и с помощью политики WAF [сети доставки содержимого (CDN)](../web-application-firewall/cdn/cdn-overview.md) Azure (последняя версия в общедоступной предварительной версии).
 Вы можете подключить журналы WAF для Azure к Azure Sentinel, что позволит просматривать данные журналов в книгах, использовать их для создания пользовательских оповещений и внедрять их для улучшения расследования.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должны быть разрешения на чтение и запись в рабочей области Sentinel Azure.
 
@@ -52,7 +52,7 @@ ms.locfileid: "94655907"
         | Политика WAF CDN      | вебаппликатионфиревалллогс |
         |
 
-    1. Нажмите кнопку **Сохранить**.
+    1. Щелкните **Сохранить**.
 
 ### <a name="next-steps-tab"></a>Вкладка "дальнейшие действия"
 

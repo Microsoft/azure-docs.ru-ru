@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 11/02/2019
 ms.author: azfuncdf
 ms.openlocfilehash: 63db8375379144b2ede78d9e7010a350b3f69b12
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101726416"
 ---
 # <a name="orchestrator-function-code-constraints"></a>Ограничения кода функции Orchestrator
@@ -65,7 +65,7 @@ ms.locfileid: "101726416"
 
 Описание поведения во время выполнения этого раздела должно помочь понять, почему функция Orchestrator не может использовать `await` или `yield` в неустойчивой задаче. Существует две причины: поток Dispatcher не может дождаться завершения задачи, а любой обратный вызов этой задачи может повредить состояние отслеживания функции Orchestrator. Для обнаружения этих нарушений используются некоторые проверки среды выполнения.
 
-Чтобы узнать больше о том, как платформа устойчивых задач выполняет функции Orchestrator, просмотрите [Исходный код устойчивой задачи на сайте GitHub](https://github.com/Azure/durabletask). В частности, см. раздел [TaskOrchestrationExecutor.CS](https://github.com/Azure/durabletask/blob/master/src/DurableTask.Core/TaskOrchestrationExecutor.cs) and [TaskOrchestrationContext.CS](https://github.com/Azure/durabletask/blob/master/src/DurableTask.Core/TaskOrchestrationContext.cs).
+Чтобы узнать больше о том, как платформа устойчивых задач выполняет функции Orchestrator, просмотрите [Исходный код устойчивой задачи на сайте GitHub](https://github.com/Azure/durabletask). В частности, см. [таскорчестратионексекутор. CS](https://github.com/Azure/durabletask/blob/master/src/DurableTask.Core/TaskOrchestrationExecutor.cs) и [таскорчестратионконтекст. CS](https://github.com/Azure/durabletask/blob/master/src/DurableTask.Core/TaskOrchestrationContext.cs).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

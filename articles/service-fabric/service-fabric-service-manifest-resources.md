@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/16/2020
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: 0ed5a4aa8993f52d42b97288cd143e6114ff36ff
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97033312"
 ---
 # <a name="specify-resources-in-a-service-manifest"></a>Указание ресурсов в манифесте службы
@@ -199,7 +199,7 @@ Service Fabric будет автоматически указывать коне
   </Parameters>
 ```
 
-При развертывании приложения можно передать эти значения как ApplicationParameters.  Пример.
+При развертывании приложения можно передать эти значения как ApplicationParameters.  Пример:
 
 ```powershell
 PS C:\> New-ServiceFabricApplication -ApplicationName fabric:/myapp -ApplicationTypeName "AppType" -ApplicationTypeVersion "1.0.0" -ApplicationParameter @{Port='1001'; Protocol='https'; Type='Input'; Port1='2001'; Protocol='http'}
@@ -207,7 +207,7 @@ PS C:\> New-ServiceFabricApplication -ApplicationName fabric:/myapp -Application
 
 Примечание. Если значение, указанное для данного Аппликатионпараметер, является пустым, мы вернемся к значению по умолчанию, указанному в ServiceManifest для соответствующего элемента EndPointName.
 
-Пример.
+Пример:
 
 Допустим, в ServiceManifest заданы следующие значения:
 
@@ -223,7 +223,7 @@ PS C:\> New-ServiceFabricApplication -ApplicationName fabric:/myapp -Application
 
 Предположим, что вы задали неверное значение. Скажем, для Port вы указали строковое значение "foo" вместо int.  New-ServiceFabricApplication команда завершится ошибкой: `The override parameter with name 'ServiceEndpoint1' attribute 'Port1' in section 'ResourceOverrides' is invalid. The value specified is 'Foo' and required is 'int'.`
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье объясняется, как определить конечные точки в манифесте службы Service Fabric. Более подробные примеры см. в следующих статьях:
 

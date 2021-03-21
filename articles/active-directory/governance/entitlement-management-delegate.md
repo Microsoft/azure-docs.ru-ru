@@ -17,10 +17,10 @@ ms.author: ajburnle
 ms.reviewer: mwahl
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 204d83b96e3cbe26759d678126d8826d0b2e492e
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100577846"
 ---
 # <a name="delegation-and-roles-in-azure-ad-entitlement-management"></a>Делегирование и роли в управлении назначениями Azure AD
@@ -63,12 +63,12 @@ ms.locfileid: "100577846"
 
 После делегирования отдел маркетинга может иметь роли, аналогичные приведенным в следующей таблице.
 
-| User (Пользователь) | Роль задания | Роль Azure AD | Роль управления назначениями |
+| Пользователь | Роль задания | Роль Azure AD | Роль управления назначениями |
 | --- | --- | --- | --- |
 | Hana | ИТ – администратор | глобальный администратор или администратор пользователей. |  |
-| мамта | Менеджер по маркетингу | User (Пользователь) | Создатель каталога и владелец каталога |
-| Владимир | Ведущий маркетинг | User (Пользователь) | Владелец каталога |
-| Джессика | Менеджер по маркетингу проекта | User (Пользователь) | Доступ к диспетчеру пакетов |
+| мамта | Менеджер по маркетингу | Пользователь | Создатель каталога и владелец каталога |
+| Владимир | Ведущий маркетинг | Пользователь | Владелец каталога |
+| Джессика | Менеджер по маркетингу проекта | Пользователь | Доступ к диспетчеру пакетов |
 
 ## <a name="entitlement-management-roles"></a>Роли управления назначениями
 
@@ -97,7 +97,7 @@ ms.locfileid: "100577846"
 | [Создать новый каталог](entitlement-management-catalog-create.md) | :heavy_check_mark: | :heavy_check_mark: |  |  |  |
 | [Добавление ресурса в каталог](entitlement-management-catalog-create.md#add-resources-to-a-catalog) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
 | [Добавление владельца каталога](entitlement-management-catalog-create.md#add-additional-catalog-owners) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
-| [Изменение каталога](entitlement-management-catalog-create.md#edit-a-catalog) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
+| [Редактирование каталога](entitlement-management-catalog-create.md#edit-a-catalog) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
 | [Удаление каталога](entitlement-management-catalog-create.md#delete-a-catalog) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
 | [Делегирование в Диспетчер пакетов Access](entitlement-management-delegate-managers.md) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
 | [Удаление диспетчера пакетов Access](entitlement-management-delegate-managers.md#remove-an-access-package-manager) | :heavy_check_mark: |  | :heavy_check_mark: |  |  |
@@ -130,11 +130,11 @@ ms.locfileid: "100577846"
 | [Администратор SharePoint](../roles/permissions-reference.md) | Владелец каталога |  | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Администратор приложения](../roles/permissions-reference.md) | Владелец каталога |  |  | :heavy_check_mark: |  |
 | [Администратор облачных приложений](../roles/permissions-reference.md) | Владелец каталога |  |  | :heavy_check_mark: |  |
-| User (Пользователь) | Владелец каталога | Только если владелец группы | Только если владелец группы | Только если владелец приложения |  |
+| Пользователь | Владелец каталога | Только если владелец группы | Только если владелец группы | Только если владелец приложения |  |
 
 Чтобы определить минимально привилегированную роль для задачи, можно также ссылаться на [роли администратора по задаче администрирования в Azure Active Directory](../roles/delegate-by-task.md#entitlement-management).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Делегирование управления доступом к авторам каталогов](entitlement-management-delegate-catalog.md)
 - [Создание каталога ресурсов и управление им](entitlement-management-catalog-create.md)

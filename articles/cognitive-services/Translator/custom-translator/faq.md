@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: lajanuar
 ms.topic: reference
 ms.openlocfilehash: 001314817b0c18a8023258d01bcfb02eaaffe79b
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98895838"
 ---
 # <a name="custom-translator-frequently-asked-questions"></a>Часто задаваемые вопросы о настраиваемом трансляторе

@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 06/08/2020
 ms.openlocfilehash: cc55cd17a547b9c63f2c26479d5797fae016d8d7
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102044074"
 ---
 # <a name="deploy-azure-monitor-at-scale-using-azure-policy"></a>Развертывание Azure Monitor в масштабе с помощью политики Azure
@@ -120,7 +120,7 @@ ms.locfileid: "102044074"
 ![Исправление инициатив](media/deploy-scale/initiative-remediation.png)
 
 
-## <a name="vm-insights"></a>Аналитика ВМ
+## <a name="vm-insights"></a>Аналитика виртуальных машин
 [VM Insights](vm/vminsights-overview.md) — это основное средство в Azure Monitor для наблюдения за виртуальными машинами. При включении функции "аналитика VM" устанавливаются агент Log Analytics и агент зависимостей. Вместо выполнения этих задач вручную используйте политику Azure, чтобы обеспечить настройку каждой виртуальной машины при ее создании.
 
 > [!NOTE]
@@ -131,7 +131,7 @@ ms.locfileid: "102044074"
 
 |Имя |Описание |
 |:---|:---|
-|Включение аналитики виртуальной машины | Устанавливает агент Log Analytics и агент зависимостей на виртуальные машины Azure и гибридные виртуальные машины, подключенные к службе "Дуга Azure". |
+|Включение аналитики виртуальных машин | Устанавливает агент Log Analytics и агент зависимостей на виртуальные машины Azure и гибридные виртуальные машины, подключенные к службе "Дуга Azure". |
 |Включение Azure Monitor для масштабируемых наборов виртуальных машин | Устанавливает агент Log Analytics и агент зависимостей в масштабируемом наборе виртуальных машин Azure. |
 
 

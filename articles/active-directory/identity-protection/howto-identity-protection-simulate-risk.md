@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sahandle
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7eafeaf59757fcda978fa89b4bc2f9882b769e48
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94835906"
 ---
 # <a name="simulating-risk-detections-in-identity-protection"></a>Имитация обнаружения рисков в защите идентификации
@@ -93,7 +93,7 @@ ms.locfileid: "94835906"
 Чтобы проверить политику безопасности в отношении риска для пользователя, выполните следующие действия :
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
-1. Перейдите к **Azure Active Directory**  >  **Security**  >  **Обзор** безопасности.
+1. Перейдите к **Azure Active Directory**  >    >  **Обзор** безопасности.
 1. Выберите **Настройка политики риска для пользователей**.
    1. В разделе " **назначения** "
       1. **Пользователи** . Выберите **все пользователи** или **выберите отдельных пользователей и группы,** если хотите ограничить развертывание.
@@ -113,7 +113,7 @@ ms.locfileid: "94835906"
 Чтобы проверить политику в отношении риска входа, выполните следующее:
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
-1. Перейдите к **Azure Active Directory**  >  **Security**  >  **Обзор** безопасности.
+1. Перейдите к **Azure Active Directory**  >    >  **Обзор** безопасности.
 1. Выберите **Настройка политики риска входа в систему**.
    1. В разделе " **назначения** "
       1. **Пользователи** . Выберите **все пользователи** или **выберите отдельных пользователей и группы,** если хотите ограничить развертывание.

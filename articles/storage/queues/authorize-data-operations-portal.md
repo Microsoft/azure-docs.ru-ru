@@ -12,10 +12,10 @@ ms.service: storage
 ms.subservice: queues
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: fbb96fc1d2cb12e1aede07295357abfaa6d6b67f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100385019"
 ---
 # <a name="choose-how-to-authorize-access-to-queue-data-in-the-azure-portal"></a>Выберите способ авторизации доступа к данным очереди в портал Azure
@@ -95,7 +95,7 @@ ms.locfileid: "100385019"
 
 Если у вас нет доступа к ключам учетной записи, очереди не отображаются на портале. Щелкните ссылку **Переключение на учетную запись пользователя Azure AD** , чтобы снова использовать учетную запись Azure AD для проверки подлинности.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Проверка подлинности доступа к BLOB-объектам и очередям Azure с помощью Azure Active Directory](../common/storage-auth-aad.md)
 - [Назначение роли Azure для доступа к большим двоичным объектам и данным очереди с помощью портала Azure](../common/storage-auth-aad-rbac-portal.md)

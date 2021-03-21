@@ -10,10 +10,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: timlt
 ms.openlocfilehash: 3833cbfd0802f334e482203d269984eb0e299797
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92895636"
 ---
 # <a name="secure-an-input-constrained-device-with-azure-ad-and-azure-maps-rest-apis"></a>Защита входного устройства с помощью Azure AD и Azure Maps API-интерфейсов RESTFUL
@@ -30,27 +30,27 @@ ms.locfileid: "92895636"
 
 Создайте приложение на основе устройства в Azure AD, чтобы включить вход в Azure AD. Этому приложению будет предоставлен доступ к Azure Maps интерфейсам API.
 
-1. В портал Azure в списке служб Azure выберите **Azure Active Directory**  >  **Регистрация приложений**  >  **Новая регистрация** .  
+1. В портал Azure в списке служб Azure выберите **Azure Active Directory**  >  **Регистрация приложений**  >  **Новая регистрация**.  
 
     > [!div class="mx-imgBorder"]
     > ![Интеграция приложений с Azure Active Directory](./media/how-to-manage-authentication/app-registration.png)
 
-2. Введите **имя** , выберите **учетные записи в этом каталоге организации только** в качестве **поддерживаемого типа учетной записи** . В списке **URI перенаправления** укажите **общедоступный клиент/машинный код (мобильный & Desktop)** и добавьте `https://login.microsoftonline.com/common/oauth2/nativeclient` к значению. Дополнительные сведения см. в разделе [классическое приложение Azure AD, которое вызывает веб-API: регистрация приложения](../active-directory/develop/scenario-desktop-app-registration.md). Затем **зарегистрируйте** приложение.
+2. Введите **имя**, выберите **учетные записи в этом каталоге организации только** в качестве **поддерживаемого типа учетной записи**. В списке **URI перенаправления** укажите **общедоступный клиент/машинный код (мобильный & Desktop)** и добавьте `https://login.microsoftonline.com/common/oauth2/nativeclient` к значению. Дополнительные сведения см. в разделе [классическое приложение Azure AD, которое вызывает веб-API: регистрация приложения](../active-directory/develop/scenario-desktop-app-registration.md). Затем **зарегистрируйте** приложение.
 
     > [!div class="mx-imgBorder"]
     > ![Добавление сведений о регистрации приложения для имени и URI перенаправления](./media/azure-maps-authentication/devicecode-app-registration.png)
 
-3. Перейдите к разделу **Проверка подлинности** и включите параметр **рассматривать приложение как общедоступный клиент** . Это позволит включить проверку подлинности кода устройства в Azure AD.
+3. Перейдите к разделу **Проверка подлинности** и включите параметр **рассматривать приложение как общедоступный клиент**. Это позволит включить проверку подлинности кода устройства в Azure AD.
     
     > [!div class="mx-imgBorder"]
     > ![Включение регистрации приложения в качестве общедоступного клиента](./media/azure-maps-authentication/devicecode-public-client.png)
 
-4.  Чтобы назначить разрешения делегированного API для Azure Maps, перейдите в приложение. Затем выберите **разрешения API**  >  **Добавить разрешение** . В разделе API, которые **использует Моя организация** , найдите и выберите **Azure Maps** .
+4.  Чтобы назначить разрешения делегированного API для Azure Maps, перейдите в приложение. Затем выберите **разрешения API**  >  **Добавить разрешение**. В разделе API, которые **использует Моя организация**, найдите и выберите **Azure Maps**.
 
     > [!div class="mx-imgBorder"]
     > ![Добавить разрешения API приложения](./media/how-to-manage-authentication/app-permissions.png)
 
-5. Установите флажок для **доступа к Azure Maps** , а затем выберите **Добавить разрешения** .
+5. Установите флажок для **доступа к Azure Maps**, а затем выберите **Добавить разрешения**.
 
     > [!div class="mx-imgBorder"]
     > ![Выбор разрешений API приложения](./media/how-to-manage-authentication/select-app-permissions.png)

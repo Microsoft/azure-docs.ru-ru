@@ -4,10 +4,10 @@ description: В этой статье содержатся сведения об
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 6a2a9bef9e54ef7deda123aad34cf0c576fd158f
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98892343"
 ---
 # <a name="track-costs-associated-with-a-lab-in-azure-devtest-labs"></a>Отслеживание затрат, связанных с лабораторией, в Azure DevTest Labs

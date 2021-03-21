@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/04/2020
 ms.author: erhopf
 ms.openlocfilehash: 4746aad2d7cd62cb309a1823f8c50487e6f7e87c
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97032972"
 ---
 # <a name="custom-subdomain-names-for-cognitive-services"></a>Имена пользовательских поддоменов для Cognitive Services
@@ -96,7 +96,7 @@ Cognitive Services ресурсов, созданных до 1 июля, 2019 б
 | Китай | Восточный Китай 2 | `https://chinaeast2.api.cognitive.azure.cn` |
 | | Северный Китай | `https://chinanorth.api.cognitive.azure.cn` |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Что такое Cognitive Services?](./what-are-cognitive-services.md)
 * [Аутентификация](authentication.md)

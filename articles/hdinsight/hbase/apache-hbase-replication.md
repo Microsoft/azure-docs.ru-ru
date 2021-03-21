@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 12/06/2019
 ms.openlocfilehash: cfcb3a5a601afadb9f3fcd71c24e18a9d7f27b9e
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98946413"
 ---
 # <a name="set-up-apache-hbase-cluster-replication-in-azure-virtual-networks"></a>Настройка репликации кластера Apache HBase в виртуальных сетях Azure
@@ -35,7 +35,7 @@ ms.locfileid: "98946413"
 
 Кластеры можно реплицировать с помощью скриптов [действий сценария](../hdinsight-hadoop-customize-cluster-linux.md), которые можно найти на [GitHub](https://github.com/Azure/hbase-utils/tree/master/replication).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Прежде чем приступать к этой статье, необходимо иметь подписку Azure. См. страницу о [получении бесплатной пробной версии Azure](https://azure.microsoft.com/documentation/videos/get-azure-free-trial-for-testing-hadoop-in-hdinsight/).
 
 ## <a name="set-up-the-environments"></a>Настройка сред
@@ -63,7 +63,7 @@ ms.locfileid: "98946413"
 
 **VNet 1**
 
-| Свойство | Значение |
+| Свойство. | Значение |
 |----------|-------|
 | Расположение | западная часть США |
 | Имя виртуальной сети | &lt;префикс_имени_кластера>-vnet1 |
@@ -75,12 +75,12 @@ ms.locfileid: "98946413"
 | Имя шлюза. | vnet1gw |
 | Тип шлюза | Vpn |
 | Тип VPN шлюза. | RouteBased |
-| Gateway SKU | Основные |
+| Gateway SKU | Basic |
 | Gateway IP | vnet1gwip |
 
 **VNet 2**
 
-| Свойство | Значение |
+| Свойство. | Значение |
 |----------|-------|
 | Расположение | Восточная часть США |
 | Имя виртуальной сети | &lt;префикс_имени_кластера>-vnet2 |
@@ -92,7 +92,7 @@ ms.locfileid: "98946413"
 | Имя шлюза. | vnet2gw |
 | Тип шлюза | Vpn |
 | Тип VPN шлюза. | RouteBased |
-| Gateway SKU | Основные |
+| Gateway SKU | Basic |
 | Gateway IP | vnet1gwip |
 
 ## <a name="setup-dns"></a>Настройка службы доменных имен (DNS)
@@ -120,7 +120,7 @@ ms.locfileid: "98946413"
     > [!NOTE]  
     > Есть несколько способов получить служебную программу `ssh`. В Linux, Unix и macOS она предоставляется как часть операционной системы. Если вы используете Windows, рассмотрите один из следующих вариантов:
     >
-    > * [Azure Cloud Shell](../../cloud-shell/quickstart.md)
+    > * [Azure Cloud Shell](../../cloud-shell/quickstart.md);
     > * [Bash на платформе Ubuntu в Windows 10](/windows/wsl/about);
     > * [Git (https://git-scm.com/)](https://git-scm.com/);
     > * [OpenSSH (https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH)](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH).
@@ -302,11 +302,11 @@ sudo service bind9 status
       >
       > В этом пошаговом руководстве предполагается, что HN1 является активным головного узла. Проверьте кластер, чтобы определить активный головной узел.
 
-6. Нажмите кнопку **Создать**. Выполнение скрипта может занять некоторое время, особенно при использовании аргумента **-copydata**.
+6. Нажмите кнопку **создания**. Выполнение скрипта может занять некоторое время, особенно при использовании аргумента **-copydata**.
 
 Ниже приведены обязательные аргументы.
 
-|Название|Описание|
+|Имя|Описание|
 |----|-----------|
 |-s, --src-cluster | Указывает DNS-имя исходного кластера HBase. например -s hbsrccluster, --src-cluster=hbsrccluster. |
 |-d, --dst-cluster | Указывает DNS-имя кластера назначения (реплики) HBase. например -s dsthbcluster, --src-cluster=dsthbcluster. |
@@ -315,7 +315,7 @@ sudo service bind9 status
 
 Необязательные аргументы для этой команды.
 
-|Название|Описание|
+|Имя|Описание|
 |----|-----------|
 |-su, --src-ambari-user | Указывает имя пользователя-администратора для Ambari в исходном кластере HBase. Значение по умолчанию — **admin**. |
 |-du, --dst-ambari-user | Указывает имя пользователя-администратора для Ambari в целевом кластере HBase. Значение по умолчанию — **admin**. |
@@ -391,7 +391,7 @@ sudo service bind9 status
 
   `-m hn1 -s <source hbase cluster name> -sp Mypassword\!789 -all`
 
-  или
+  или диспетчер конфигурации служб
 
   `--src-cluster=<source hbase cluster name> --dst-cluster=<destination hbase cluster name> --src-ambari-user=<source cluster Ambari user name> --src-ambari-password=<source cluster Ambari password>`
 

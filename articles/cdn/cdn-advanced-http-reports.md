@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 01/23/2017
 ms.author: mazha
 ms.openlocfilehash: e2ef1367cbbb1fb71159c4520c3d1481904c1769
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92779328"
 ---
 # <a name="analyze-usage-statistics-with-azure-cdn-advanced-http-reports"></a>Анализ статистики использования с помощью расширенных отчетов HTTP Azure CDN
@@ -33,7 +33,7 @@ ms.locfileid: "92779328"
     ![Кнопка управления в колонке профиля CDN](./media/cdn-advanced-http-reports/cdn-manage-btn.png)
    
     Откроется портал управления CDN.
-2. Наведите указатель на вкладку **Аналитика** , а затем выберите всплывающий элемент **Расширенные отчеты HTTP** .  Выберите **Большая HTTP-платформа** .
+2. Наведите указатель на вкладку **Аналитика**, а затем выберите всплывающий элемент **Расширенные отчеты HTTP**.  Выберите **Большая HTTP-платформа**.
    
     ![Портал управления CDN — меню дополнительных отчетов](./media/cdn-advanced-http-reports/cdn-advanced-reports.png)
    
@@ -199,7 +199,7 @@ ms.locfileid: "92779328"
 
 Непосредственно под диаграммой приводятся следующие сведения для 250 основных ресурсов: относительный путь (включая имя файла), количество запросов, завершившихся ошибкой «404 не найдено», количество запросов ресурса и процент запросов, завершившихся ошибкой «404 не найдено».
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 * [Обзор Azure CDN](cdn-overview.md)
 * [Статистика сети CDN Microsoft Azure в режиме реального времени](cdn-real-time-stats.md)
 * [Переопределение стандартного поведения через HTTP с помощью обработчика правил](./cdn-verizon-premium-rules-engine.md)

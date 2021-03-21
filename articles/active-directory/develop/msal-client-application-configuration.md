@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: aaddev
 ms.openlocfilehash: 00768f363d08bc476350e57a8eac69eafd9c3589
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99580944"
 ---
 # <a name="application-configuration-options"></a>Параметры конфигурации приложения
@@ -120,7 +120,7 @@ URI перенаправления — это универсальный код 
   |--|--|
   | Классическое приложение (FW .NET) | `https://login.microsoftonline.com/common/oauth2/nativeclient` |
   | UWP | значение `WebAuthenticationBroker.GetCurrentApplicationCallbackUri()` . Это позволяет осуществлять единый вход с браузером, присвоив значение результату Вебаусентикатионброкер. Жеткуррентаппликатионкаллбаккури (), который необходимо зарегистрировать. |
-  | .NET Core | `https://localhost`. Это позволяет пользователю использовать системный браузер для интерактивной проверки подлинности, так как .NET Core в данный момент не имеет пользовательского интерфейса для встроенного веб-представления. |
+  | .NET Core | `https://localhost`. Это позволяет пользователю использовать системный браузер для интерактивной проверки подлинности, так как .NET Core в данный момент не имеет пользовательского интерфейса для встроенного веб-представления. |
 
 - Если вы создаете приложение Xamarin Android и iOS, которое не поддерживает URI перенаправления брокера, вам не нужно добавлять URI перенаправления. Для `msal{ClientId}://auth` Xamarin Android и iOS автоматически устанавливается значение.
 
@@ -162,6 +162,6 @@ URI перенаправления можно переопределить с п
     :::column-end:::
 :::row-end:::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о [создании экземпляров клиентских приложений](msal-net-initializing-client-applications.md) с помощью MSAL.NET и [создании экземпляров клиентских приложений с помощью MSAL.js](msal-js-initializing-client-applications.md).

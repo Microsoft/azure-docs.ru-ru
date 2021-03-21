@@ -12,10 +12,10 @@ ms.date: 05/05/2020
 ms.author: mbaldwin
 Customer intent: As a key vault administrator, I want to move my vault to another subscription.
 ms.openlocfilehash: a84627b2b426385d21ad72b85780db86e7dd5ee3
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101096076"
 ---
 # <a name="moving-an-azure-key-vault-to-another-subscription"></a>Перемещение Azure Key Vault в другую подписку
@@ -47,7 +47,7 @@ ms.locfileid: "101096076"
 
 Некоторые субъекты-службы (пользователи и приложения) привязаны к конкретному клиенту. Если вы перемещаете хранилище ключей в подписку другого клиента, то есть вероятность, что вы не сможете восстановить доступ к определенному субъекту-службе. Убедитесь, что все основные субъекты-службы существуют в клиенте, где вы перемещаете хранилище ключей.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Уровень [участника](../../role-based-access-control/built-in-roles.md#contributor) доступа или выше текущей подписки, в которой существует хранилище ключей. Роль можно назначить с помощью [портал Azure](../../role-based-access-control/role-assignments-portal.md), [Azure CLI](../../role-based-access-control/role-assignments-cli.md)или [PowerShell](../../role-based-access-control/role-assignments-powershell.md).
 * Доступ на уровне [участника](../../role-based-access-control/built-in-roles.md#contributor) или более высокий уровень к подписке, в которую необходимо переместить хранилище ключей. Роль можно назначить с помощью [портал Azure](../../role-based-access-control/role-assignments-portal.md), [Azure CLI](../../role-based-access-control/role-assignments-cli.md)или [PowerShell](../../role-based-access-control/role-assignments-powershell.md).
@@ -106,7 +106,7 @@ az keyvault update -n myvault --set Properties.tenantId=$tenantId          # Upd
 - [Назначение политики доступа с помощью PowerShell](assign-access-policy-powershell.md)
 
 Сведения о добавлении назначений ролей см. в следующих статьях:
-- [Назначение ролей Azure с помощью портал Azure](../../role-based-access-control/role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md)
 - [Назначение ролей Azure с помощью Azure CLI](../../role-based-access-control/role-assignments-cli.md)
 - [Назначение ролей Azure с помощью PowerShell](../../role-based-access-control/role-assignments-powershell.md)
 

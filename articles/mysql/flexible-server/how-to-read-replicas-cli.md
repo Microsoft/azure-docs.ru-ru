@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 10/23/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: a7d63fd76a88430495c9f55200308f63b11c89d4
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96494313"
 ---
 # <a name="how-to-create-and-manage-read-replicas-in-azure-database-for-mysql-flexible-server-using-the-azure-cli"></a>Как создавать реплики чтения и управлять ими в базе данных Azure для гибкого сервера MySQL с помощью Azure CLI
@@ -27,7 +27,7 @@ ms.locfileid: "96494313"
 ## <a name="azure-cli"></a>Azure CLI
 Вы можете создавать реплики чтения и управлять ими с помощью Azure CLI.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 - [Установите Azure CLI 2.0](/cli/azure/install-azure-cli).
 - [Гибкий сервер базы данных Azure для MySQL](quickstart-create-server-cli.md) , который будет использоваться в качестве исходного сервера.

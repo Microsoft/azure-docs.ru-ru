@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 09/06/2020
 ms.author: yelevin
 ms.openlocfilehash: d5140bcd85606213f00185d4ba1f50dbe70dba63
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94655500"
 ---
 # <a name="connect-alerts-from-microsoft-defender-for-office-365"></a>Подключение оповещений от защитника Майкрософт для Office 365 
@@ -49,7 +49,7 @@ ms.locfileid: "94655500"
 
 Эти оповещения могут просматриваться клиентами Office в **центре безопасности и соответствия требованиям Office**.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - При включении соединителя необходимо иметь разрешения на чтение и запись в рабочей области "Sentinel" Azure.
 

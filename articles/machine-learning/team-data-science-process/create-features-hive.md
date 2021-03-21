@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: 30c0a02c2cbc11002f8e0bf0295dab91de5d0365
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96020591"
 ---
 # <a name="create-features-for-data-in-a-hadoop-cluster-using-hive-queries"></a>Создание признаков для данных в кластере Hadoop с помощью запросов Hive
@@ -31,7 +31,7 @@ ms.locfileid: "96020591"
 В этой статье предполагается, что вы:
 
 * Создали учетную запись хранения Azure. Инструкции см. в разделе [Создание учетной записи хранения](../../storage/common/storage-account-create.md).
-* Подготовили настраиваемый кластер Hadoop с помощью службы HDInsight.  Инструкции см. в разделе [Настройка кластеров Azure HDInsight Hadoop для расширенной аналитики](../../hdinsight/spark/apache-spark-jupyter-spark-sql.md).
+* Подготовили настраиваемый кластер Hadoop с помощью службы HDInsight.  Инструкции см. в статье [Настройка кластеров Azure HDInsight Hadoop для процесса обработки и анализа данных группы](../../hdinsight/spark/apache-spark-jupyter-spark-sql.md).
 * Отправили данные в таблицы Hive, которые находятся в кластерах Azure HDInsight Hadoop. Если данные не переданы, необходимо предварительно передать их в таблицы Hive, воспользовавшись инструкциями из раздела [Создание таблиц Hive и загрузка данных из хранилища BLOB-объектов Azure](move-hive-tables.md).
 * Включили удаленный доступ к кластеру. Инструкции можно найти в разделе [Доступ к головному узлу в кластере Hadoop](../../hdinsight/spark/apache-spark-jupyter-spark-sql.md).
 
@@ -153,7 +153,7 @@ limit 10;
 ## <a name="advanced-topics-tune-hive-parameters-to-improve-query-speed"></a><a name="tuning"></a> Дополнительные разделы: настройка параметров Hive для ускорения обработки запросов
 Настройки по умолчанию кластера Hive могут не подойти для запросов Hive и данных, обрабатываемых этими запросами. В этом разделе речь идет о некоторых параметрах, которые вы можете настроить, чтобы повысить производительность запросов Hive. Сначала необходимо добавлять запросы настройки параметров, а затем запросы обработки данных.
 
-1. **Куча Java**: при работе с запросами на объединение крупных наборов данных или обработку длинных записей часто возникает ошибка, указывающая на то, что **в куче не хватает памяти**. Чтобы избежать этой ошибки, задайте нужные значения для параметров *mapreduce.map.java.opts* и *mapreduce.task.io.sort.mb*. Например:
+1. **Куча Java**: при работе с запросами на объединение крупных наборов данных или обработку длинных записей часто возникает ошибка, указывающая на то, что **в куче не хватает памяти**. Чтобы избежать этой ошибки, задайте нужные значения для параметров *mapreduce.map.java.opts* и *mapreduce.task.io.sort.mb*. Пример:
    
     ```hiveql
     set mapreduce.map.java.opts=-Xmx4096m;

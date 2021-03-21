@@ -17,10 +17,10 @@ ms.author: ajburnle
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 65f69cf492ec3e28d7f4aa86971dc6c91b34bdf5
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644186"
 ---
 # <a name="change-resource-roles-for-an-access-package-in-azure-ad-entitlement-management"></a>Изменение ролей ресурсов для пакета Access в управлении назначениями Azure AD
@@ -93,7 +93,7 @@ ms.locfileid: "101644186"
     | Подтип | Описание |
     | --- | --- |
     | Безопасность | Используется для предоставления доступа к ресурсам. |
-    | Дистрибутив | Используется для отправки уведомлений группе людей. |
+    | Distribution | Используется для отправки уведомлений группе людей. |
     | Microsoft 365 | Группа Microsoft 365, не поддерживающая команды. Используется для совместной работы пользователей как внутри организации, так и за ее пределами. |
     | Группа | Группа Microsoft 365, поддерживающая команды. Используется для совместной работы пользователей как внутри организации, так и за ее пределами. |
 

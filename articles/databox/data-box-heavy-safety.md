@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 07/08/2019
 ms.author: alkohli
 ms.openlocfilehash: d2c7f729f4accf7c9ca212c6e4b4b5d565c3114c
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96021543"
 ---
 # <a name="safely-install-and-operate-your-azure-data-box-heavy"></a>Безопасная установка и эксплуатация Azure Data Box Heavy
@@ -38,7 +38,7 @@ ms.locfileid: "96021543"
 | ![Нет значка для обслуживаемых частей без ](./media/data-box-heavy-safety/no-user-serviceable-parts-icon.png) **обслуживаемых пользователем** частей |Не проводите техническое обслуживание устройства без должной подготовки. |
 | ![Значок "чтение уведомления о безопасности" ](./media/data-box-heavy-safety/read-safety-and-health-information-icon.png) **сначала прочитайте все инструкции** | |
 | ![Значок опасности TIP Icon ](./media/data-box-heavy-safety/tip-hazard-icon.png) **шанс** | |
-| ![Значок опасности перегрузки ](./media/data-box-heavy-safety/overload-tip-hazard-icon.png) **Overload tip hazard** Icon опасность | |
+| ![Значок опасности перегрузки ](./media/data-box-heavy-safety/overload-tip-hazard-icon.png)  Icon опасность | |
 | ![Несколько источников питания значок с ](./media/data-box-heavy-safety/multiple-power-sources-icon.png) **несколькими источниками питания** | |
 
 ## <a name="handling-precautions"></a>Меры предосторожности при перемещении
@@ -145,7 +145,7 @@ ms.locfileid: "96021543"
 
 Изменения и модификации, не одобренные Майкрософт явным образом, могут лишить пользователя права на эксплуатацию устройства.
 
-**Канада и USA:**
+**Канада и США:**
 
 ![Значок уведомления ](./media/data-box-heavy-safety/notice-icon.png) **Обратите внимание:** 
 
@@ -191,7 +191,7 @@ Microsoft Ирландия Сандифорд, средство EST Дублин
 
 Ознакомившись с этими рекомендациями по безопасности, установите устройство и подключите все необходимые кабели.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Кабель и подключение к Data Box Heavy](data-box-heavy-deploy-set-up.md)
 
