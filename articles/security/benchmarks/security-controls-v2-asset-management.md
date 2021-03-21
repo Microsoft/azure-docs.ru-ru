@@ -8,10 +8,10 @@ ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
 ms.openlocfilehash: fbeb88b6aa542666481458fde97d7c63f467fa30
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102051537"
 ---
 # <a name="security-control-v2-asset-management"></a>Управление безопасностью версии 2: Управление активами

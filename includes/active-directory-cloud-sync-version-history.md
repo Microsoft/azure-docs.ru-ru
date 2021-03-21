@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 69f0da2f1528ad1f45762a8f754cc2020b4cb880
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98901151"
 ---
 В этой статье перечислены версии и возможности выпущенного агента подготовки Azure Active Directory Connect. Команда Azure AD регулярно обновляет агент подготовки с помощью новых функций и функций. Агент подготовки обновляется автоматически при выпуске новой версии. 

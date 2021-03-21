@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 99bab73cabfb0cbe59461c424b5857ace07212dd
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103013097"
 ---
 # <a name="set-up-your-media-services-development-environment"></a>Настройка среды разработки для служб мультимедиа 
@@ -47,7 +47,7 @@ ms.locfileid: "103013097"
 
 Дополнительные сведения о подключении к API служб мультимедиа Azure см. в статье [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md) (Получение доступа к API служб мультимедиа Azure с помощью проверки подлинности Azure AD).  
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Найдите несколько примеров кода в коллекции **образцов кода Azure**: [Примеры кода Azure](https://azure.microsoft.com/resources/samples/?service=media-services&sort=0).
 

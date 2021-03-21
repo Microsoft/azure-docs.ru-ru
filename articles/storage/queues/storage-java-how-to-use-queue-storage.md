@@ -10,10 +10,10 @@ ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-java
 ms.openlocfilehash: 997a37ac4252813abf1b35877cd34e192ec3e2ae
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97585723"
 ---
 # <a name="how-to-use-queue-storage-from-java"></a>Использование хранилища очередей из Java
@@ -36,7 +36,7 @@ ms.locfileid: "97585723"
 
 Чтобы создать приложение Java с именем `queues-how-to-v12` :
 
-1. В окне консоли (например, в cmd, PowerShell или bash) используйте Maven, чтобы создать новое консольное приложение с именем `queues-how-to-v12` . Введите следующую `mvn` команду, чтобы создать проект Java "Hello World".
+1. В окне консоли (командная строка, PowerShell или Bash) с помощью Maven создайте консольное приложение с именем `queues-how-to-v12`. Введите следующую команду `mvn`, чтобы создать проект Java hello world.
 
    ```bash
     mvn archetype:generate \
@@ -101,7 +101,7 @@ ms.locfileid: "97585723"
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Откройте `pom.xml` файл в текстовом редакторе. Добавьте приведенный ниже элемент зависимости в группу зависимостей.
+Откройте файл `pom.xml` в текстовом редакторе. Добавьте приведенный ниже элемент зависимости в группу зависимостей.
 
 ```xml
 <dependency>

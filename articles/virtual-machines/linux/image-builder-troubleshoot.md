@@ -9,10 +9,10 @@ ms.service: virtual-machines
 ms.subservice: image-builder
 ms.collection: linux
 ms.openlocfilehash: f76c3e6c739ae4dd13355d350a01b878e4d4f360
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101666215"
 ---
 # <a name="troubleshoot-azure-image-builder-service"></a>Устранение неполадок службы Azure Image Builder
@@ -210,7 +210,7 @@ Get-AzImageBuilderTemplate -ImageTemplateName  <imageTemplateName> -ResourceGrou
     ```
 5. Стадия отмены подготовки. В построителе образов Azure добавлен скрытый элемент настройки. Этот этап отмены подготовки отвечает за подготовку виртуальной машины для отмены подготовки. Он запускает Windows Sysprep (с помощью c:\DeprovisioningScript.ps1) или в Linux waagent unготовить (с помощью/ТМП/депровисионингскрипт.ш). 
 
-    Пример.
+    Пример:
     ```text
     PACKER ERR 2020/03/04 23:05:04 [INFO] (telemetry) Starting provisioner powershell
     PACKER ERR 2020/03/04 23:05:04 packer: 2020/03/04 23:05:04 Found command: if( TEST-PATH c:\DeprovisioningScript.ps1 ){cat c:\DeprovisioningScript.ps1} else {echo "Deprovisioning script [c:\DeprovisioningScript.ps1] could not be found. Image build may fail or the VM created from the Image may not boot. Please make sure the deprovisioning script is not accidentally deleted by a Customizer in the Template."}
@@ -248,7 +248,7 @@ Get-AzImageBuilderTemplate -ImageTemplateName  <imageTemplateName> -ResourceGrou
 
 Проверьте журнал на обнаружение сбоев настраиваемых типов. Выполните поиск по запросу *(телеметрии)*. 
 
-Пример.
+Пример:
 ```text
 (telemetry) Starting provisioner windows-update
 (telemetry) ending windows-update

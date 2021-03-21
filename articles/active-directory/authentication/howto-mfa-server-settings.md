@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb28f415b7d08b4c4430ed90a7ccbfe3a333416d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101689051"
 ---
 # <a name="configure-mfa-server-settings"></a>Настройка параметров сервера MFA
@@ -27,7 +27,7 @@ ms.locfileid: "101689051"
 
 Доступны следующие параметры сервера MFA:
 
-| Функция | Описание |
+| Компонент | Описание |
 | ------- | ----------- |
 | Параметры сервера | Скачивание сервера MFA и создание учетных данных активации для инициализации среды |
 | [Разовый обход](#one-time-bypass) | Разрешает пользователю проходить проверку подлинности без выполнения многофакторной проверки подлинности в течение ограниченного времени. |

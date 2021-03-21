@@ -4,10 +4,10 @@ description: Просмотрите уведомления о работоспо
 ms.topic: conceptual
 ms.date: 6/27/2019
 ms.openlocfilehash: 9f9f3e7b10d9aa0014e4e00e7bfa72c9dc66e142
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100588003"
 ---
 # <a name="view-service-health-notifications-by-using-the-azure-portal"></a>Просмотр уведомлений о работоспособности служб на портале Azure
@@ -32,6 +32,6 @@ ms.locfileid: "100588003"
 
 1. Выберите **+Добавить оповещение журнала действий** и настройте оповещение, чтобы в дальнейшем получать оповещения об уведомлениях службы. Дополнительные сведения см. в статье [Создание оповещений журнала действий для уведомлений службы](./alerts-activity-log-service-notifications-portal.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше об [оповещениях журнала действий](../azure-monitor/alerts/activity-log-alerts.md).

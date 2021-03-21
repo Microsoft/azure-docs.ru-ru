@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 04/01/2020
 ms.author: kumud
 ms.openlocfilehash: e0b17c7b707a7718428f63c334210a91759f00e3
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98223658"
 ---
 # <a name="deploy-an-ipv6-dual-stack-application-in-azure---powershell"></a>Развертывание приложения с двумя стеками для IPv6 в Azure с помощью PowerShell
@@ -99,7 +99,7 @@ $frontendIPv6 = New-AzLoadBalancerFrontendIpConfig `
 
 ### <a name="configure-back-end-address-pool"></a>Настройка серверного пула адресов
 
-Создайте пул внутренних адресов с помощью [New-азлоадбаланцербаккендаддресспулконфиг](/powershell/module/az.network/new-azloadbalancerbackendaddresspoolconfig). Виртуальные машины присоединяются в этот серверный пул на следующих этапах. В следующем примере создаются пулы внутренних адресов с именами *dsLbBackEndPool_v4* и *DsLbBackEndPool_v6* для включения виртуальных машин с конфигурациями IPv4 и IPv6.
+Создайте серверный пул адресов с помощью командлета [New-AzLoadBalancerBackendAddressPoolConfig](/powershell/module/az.network/new-azloadbalancerbackendaddresspoolconfig). Виртуальные машины присоединяются в этот серверный пул на следующих этапах. В следующем примере создаются пулы внутренних адресов с именами *dsLbBackEndPool_v4* и *DsLbBackEndPool_v6* для включения виртуальных машин с конфигурациями IPv4 и IPv6.
 
 ```azurepowershell-interactive
 $backendPoolv4 = New-AzLoadBalancerBackendAddressPoolConfig `

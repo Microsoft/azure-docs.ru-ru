@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: b344e2a845a9da8333860599bd4ff9041108202f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100588259"
 ---
 # <a name="audit-logging-in-azure-database-for-postgresql---flexible-server"></a>Ведение журнала аудита в базе данных Azure для PostgreSQL — гибкого сервера
@@ -45,7 +45,7 @@ CREATE EXTENSION pgaudit;
 
 > [!NOTE]
 > Если задано значение `pgaudit.log_client` On, журналы перенаправляются в клиентский процесс (например, psql), а не записываются в файл. Этот параметр обычно следует отключать. <br> <br>
-> `pgaudit.log_level` включается, только если `pgaudit.log_client` включен.
+> Параметр `pgaudit.log_level` будет включен, только если включен `pgaudit.log_client`.
 
 > [!NOTE]
 > В базе данных Azure для PostgreSQL-гибкого сервера `pgaudit.log` не может быть задано с помощью `-` сочетания знака (минус), как описано в документации пгаудит. Все обязательные классы инструкций (чтение, запись и т. д.) должны указываться отдельно.
@@ -71,6 +71,6 @@ AzureDiagnostics
 | where Message contains "AUDIT:"
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Сведения о ведении журнала в базе данных Azure для PostgreSQL — гибком сервере](concepts-logging.md)
 - [Узнайте, как настроить ведение журнала в базе данных Azure для PostgreSQL-гибкого сервера и получить доступ к журналам.](howto-configure-and-access-logs.md)

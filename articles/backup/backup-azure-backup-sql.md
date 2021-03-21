@@ -4,10 +4,10 @@ description: Общие сведения о резервном копирова�
 ms.topic: conceptual
 ms.date: 01/30/2019
 ms.openlocfilehash: 592a51051a0d02a6c1d491db0fe559e2e62babb2
-ms.sourcegitcommit: 4295037553d1e407edeb719a3699f0567ebf4293
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96327055"
 ---
 # <a name="back-up-sql-server-to-azure-as-a-dpm-workload"></a>Архивация SQL Server в Azure с помощью рабочей нагрузки DPM

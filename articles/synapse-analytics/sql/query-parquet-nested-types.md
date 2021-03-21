@@ -10,10 +10,10 @@ ms.date: 05/20/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.openlocfilehash: 2ef547bea9ba84665ec7187a5adf2f7a7d87e0a4
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101666323"
 ---
 # <a name="query-nested-types-in-parquet-and-json-files-by-using-serverless-sql-pool-in-azure-synapse-analytics"></a>Запрос вложенных типов в файлах Parquet и JSON с помощью бессерверного пула SQL в Azure синапсе Analytics
@@ -47,7 +47,7 @@ FROM
 > [!IMPORTANT]
 > В этом примере используется файл из набора данных КОВИД-19 Open Research. [Ознакомьтесь с лицензиями и структурой данных здесь](https://azure.microsoft.com/services/open-datasets/catalog/covid-19-open-research/).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Первым шагом является создание базы данных, в которой будет создан источник данных. Затем вы инициализируйте объекты, запустив [сценарий установки](https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) в базе данных. Сценарий установки создаст источники данных, учетные данные области базы данных и форматы внешних файлов, используемые в примерах.
 

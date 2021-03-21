@@ -9,10 +9,10 @@ ms.date: 04/26/2019
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 624fbd135818a4961f6170a3f63748f73a5bf2dd
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98901168"
 ---
 | **Модель и метод развертывания** | **Портал Azure** | **PowerShell** | **Azure CLI** |

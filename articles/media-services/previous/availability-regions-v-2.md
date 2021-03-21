@@ -15,10 +15,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: references_regions
 ms.openlocfilehash: 125f2be205760618ab6ffa3175f719f5e91e8c05
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103012264"
 ---
 # <a name="media-services-regional-availability"></a>Доступность служб мультимедиа — язык
@@ -44,7 +44,7 @@ AMS работает в нескольких регионах по всему м
 
 |Имя|Состояние|Регион
 |---|---|---|
-|Standard|GA|Все|
+|Стандартный|GA|Все|
 |Premium|GA|Все|
 
 ## <a name="live-encoding"></a>Кодирование в реальном времени
@@ -80,9 +80,9 @@ AMS предлагает два кодировщика по требованию
 
 Службы мультимедиа Microsoft Azure позволяют защитить данные мультимедиа, покидающие ваш компьютер, на этапах их хранения, обработки и доставки. Дополнительные сведения см. в статье [Общие сведения о защите содержимого](media-services-content-protection-overview.md).
 
-|Шифрование|Состояние|Регионы|
+|Encryption|Состояние|Регионы|
 |---|---|---| 
-|Память|GA|Все|
+|Служба хранилища|GA|Все|
 |Ключи AES-128|GA|Все|
 |FairPlay|GA|Все|
 |PlayReady|GA|Все|
@@ -107,7 +107,7 @@ AMS предлагает два кодировщика по требованию
 |S2|GA|Все регионы, кроме "Южная Бразилия" и "Западная Индия"|
 |S3|GA|Все регионы, кроме "Западная Индия"|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Миграция в Службы мультимедиа версии 3](../latest/media-services-overview.md)
 

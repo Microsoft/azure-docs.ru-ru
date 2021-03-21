@@ -15,10 +15,10 @@ ms.workload: NA
 ms.date: 06/26/2017
 ms.author: manuaery
 ms.openlocfilehash: 483fa81b409e1bd740af85b431a86b6c814831e6
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002720"
 ---
 # <a name="storsimple-locally-pinned-volumes-frequently-asked-questions-faq"></a>Локально закрепленные тома StorSimple: часто задаваемые вопросы
@@ -48,7 +48,7 @@ ms.locfileid: "96002720"
 
 | Емкость для подготовки локально закрепленных томов | Доступная емкость для подготовки многоуровневых томов на устройствах 8100 | Доступная емкость для подготовки многоуровневых томов на устройствах 8600 |
 | --- | --- | --- |
-| 0 |200 ТБ |500 TБ |
+| 0 |200 ТБ |500 TБ |
 | 1 TБ |176,5 TБ |477,8 TБ |
 | 4 TБ |105,9 TБ |411,1 ТБ |
 | 8,5 TБ |0 TБ |311,1 ТБ |

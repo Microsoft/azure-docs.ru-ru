@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/16/2021
 ms.author: allensu
 ms.openlocfilehash: 8901dffb752409acd7fb08a2025bed9a4cc70132
-ms.sourcegitcommit: fc23b4c625f0b26d14a5a6433e8b7b6fb42d868b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98539522"
 ---
 # <a name="restrict-azure-cdn-content-by-countryregion"></a>Ограничение Azure CDN содержимого по странам или регионам

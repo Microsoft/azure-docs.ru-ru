@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 02/03/2021
 ms.author: memildin
 ms.openlocfilehash: b19a7c156abf32e2a0f6d70717145a6ed5ab42ce
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102099681"
 ---
 # <a name="secure-score-in-azure-security-center"></a>Оценка безопасности в Центре безопасности Azure
@@ -131,4 +131,4 @@ ms.locfileid: "102099681"
 
 
 > [!div class="nextstepaction"]
-> [Доступ и контроль оценки безопасности](secure-score-access-and-track.md)
+> [Доступ к оценке безопасности и ее отслеживание](secure-score-access-and-track.md)

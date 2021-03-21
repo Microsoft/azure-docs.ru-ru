@@ -14,10 +14,10 @@ ms.author: sashan
 ms.reviewer: mathoma, sstein
 ms.date: 06/25/2019
 ms.openlocfilehash: 7bd991bd709bb4be69325afe967d7e5600a9e1a4
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98222570"
 ---
 # <a name="overview-of-business-continuity-with-azure-sql-database"></a>Обзор обеспечения непрерывности бизнес-процессов с помощью Базы данных SQL Azure

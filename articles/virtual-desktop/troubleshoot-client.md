@@ -7,10 +7,10 @@ ms.date: 08/11/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 097c97d16cf62793d03ac42662267e0553383bc1
-ms.sourcegitcommit: fc23b4c625f0b26d14a5a6433e8b7b6fb42d868b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98539624"
 ---
 # <a name="troubleshoot-the-remote-desktop-client"></a>Устранение неполадок клиента удаленный рабочий стол

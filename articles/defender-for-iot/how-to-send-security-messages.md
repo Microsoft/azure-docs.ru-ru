@@ -15,10 +15,10 @@ ms.date: 2/8/2021
 ms.author: shhazam
 ms.custom: devx-track-js
 ms.openlocfilehash: d59121f2dbae208ba045a9c2e6d66245296537a0
-ms.sourcegitcommit: 2501fe97400e16f4008449abd1dd6e000973a174
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99820693"
 ---
 # <a name="send-security-messages-sdk"></a>Пакет SDK для отправки сообщений системы безопасности
@@ -226,7 +226,7 @@ public void SendSecurityMessage(string message)
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей"
 - Дополнительные сведения о защитнике для [архитектуры](architecture.md) IOT

@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 10/21/2019
 ms.author: sideeksh
 ms.openlocfilehash: f63021275574e294fa372357d6e62724f5efe0f7
-ms.sourcegitcommit: 949c0a2b832d55491e03531f4ced15405a7e92e3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98541196"
 ---
 # <a name="customize-networking-configurations-of-the-target-azure-vm"></a>Настройка сетевых конфигураций целевой виртуальной машины Azure
@@ -31,7 +31,7 @@ ms.locfileid: "98541196"
 - [Общедоступный IP-адрес](../virtual-network/public-ip-addresses.md)
 - [Группа безопасности сети](../virtual-network/manage-network-security-group.md) как для подсети, так и для сетевой карты
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Убедитесь, что конфигурация на стороне восстановления планируется заранее.
 - Создайте сетевые ресурсы заранее. Укажите его в качестве входных данных, чтобы служба Azure Site Recovery могла принять эти параметры и убедиться, что виртуальная машина отработки отказа соответствует этим параметрам.
@@ -49,7 +49,7 @@ ms.locfileid: "98541196"
 
     ![Изменение конфигурации сетевого адаптера](media/azure-to-azure-customize-networking/nic-drilldown.png) 
 
-6. Нажмите кнопку **ОК**.
+6. Щелкните **ОК**.
 
 Site Recovery теперь соберет эти параметры и убедитесь, что виртуальная машина при отработке отказа подключена к выбранному ресурсу через соответствующий сетевой адаптер.
 

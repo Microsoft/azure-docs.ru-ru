@@ -7,10 +7,10 @@ ms.date: 02/22/2021
 author: swinarko
 ms.author: sawinark
 ms.openlocfilehash: 4b26abe1d1340e4e8c5f034fad72f612f0b246a2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101739421"
 ---
 # <a name="create-an-azure-ssis-integration-runtime-in-azure-data-factory"></a>Создание среды выполнения интеграции Azure SSIS в фабрике данных Azure
@@ -74,7 +74,7 @@ ms.locfileid: "101739421"
 
 В следующей таблице сравниваются некоторые возможности сервера базы данных SQL Azure и Управляемый экземпляр SQL, так как они связаны с Azure-ССИР IR.
 
-| Функция | База данных SQL| Управляемый экземпляр SQL |
+| Компонент | База данных SQL| Управляемый экземпляр SQL |
 |---------|--------------|------------------|
 | **Планирование** | Агент SQL Server недоступна.<br/><br/>См. раздел [Планирование выполнения пакета в конвейере фабрики данных](/sql/integration-services/lift-shift/ssis-azure-schedule-packages#activity).| Доступен агент Управляемый экземпляр. |
 | **Аутентификация** | Экземпляр SSISDB можно создать с пользователем автономной базы данных, который представляет любую группу Azure AD с управляемым удостоверением фабрики данных в качестве члена роли **db_owner** .<br/><br/>См. раздел [Включение аутентификации Azure AD для создания SSISDB на сервере базы данных SQL Azure](enable-aad-authentication-azure-ssis-ir.md#enable-azure-ad-on-azure-sql-database). | Экземпляр SSISDB можно создать с пользователь автономной базы данных, который представляет управляемое удостоверение фабрики данных. <br/><br/>См. раздел [Включение аутентификации Azure AD для создания SSISDB в Azure SQL управляемый экземпляр](enable-aad-authentication-azure-ssis-ir.md#enable-azure-ad-on-sql-managed-instance). |

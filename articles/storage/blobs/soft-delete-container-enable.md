@@ -10,10 +10,10 @@ ms.date: 03/05/2021
 ms.author: tamram
 ms.subservice: blobs
 ms.openlocfilehash: 2097c1743e07b5563bc75d3d1cce48aa11b98e5f
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102216349"
 ---
 # <a name="enable-and-manage-soft-delete-for-containers-preview"></a>Включение и управление обратимым удалением для контейнеров (Предварительная версия)

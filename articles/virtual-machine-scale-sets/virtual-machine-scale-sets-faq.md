@@ -10,10 +10,10 @@ ms.date: 06/30/2020
 ms.reviewer: jushiman
 ms.custom: mimckitt
 ms.openlocfilehash: 3bc259f9ee6cb1e6fd927af82a1740403d3ae7d8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100587946"
 ---
 # <a name="azure-virtual-machine-scale-sets-faqs"></a>Часто задаваемые вопросы о масштабируемых наборах виртуальных машин Azure
@@ -64,7 +64,7 @@ ms.locfileid: "100587946"
 
 ### <a name="do-scale-sets-work-with-azure-availability-zones"></a>Работают ли масштабируемые наборы с зонами доступности Azure?
 
-Да! Дополнительные сведения см. в [документации по зонам масштабируемых наборов](./virtual-machine-scale-sets-use-availability-zones.md).
+Да. Дополнительные сведения см. в [документации по зонам масштабируемых наборов](./virtual-machine-scale-sets-use-availability-zones.md).
 
 
 ## <a name="autoscale"></a>Автомасштабирование
@@ -346,7 +346,7 @@ Update-AzVmss -VirtualMachineScaleSet $vmss -ResourceGroup $rg -Name $vmssName
 
 В Azure CLI есть возможность только удалить отдельный экземпляр. При попытке удалить один экземпляр с блокировкой, блокировка учитывается, и вы не сможете удалить этот экземпляр.
 
-## <a name="extensions"></a>Модули
+## <a name="extensions"></a>Расширения
 
 ### <a name="how-do-i-delete-a-virtual-machine-scale-set-extension"></a>Как удалить расширение масштабируемого набора виртуальных машин?
 
@@ -523,7 +523,7 @@ IP-адреса выбираются из указанной подсети.
 
 ### <a name="can-i-use-scale-sets-with-accelerated-networking"></a>Можно ли использовать масштабируемые наборы с ускоренной сетью?
 
-Да. Чтобы использовать ускоренную сеть, в настройках networkInterfaceConfigurations масштабируемого набора задайте для параметра enableAcceleratedNetworking значение true. Например.
+Да. Чтобы использовать ускоренную сеть, в настройках networkInterfaceConfigurations масштабируемого набора задайте для параметра enableAcceleratedNetworking значение true. Например:
 
 ```json
 "networkProfile": {
@@ -671,7 +671,7 @@ az vmss extension set --name MicrosoftMonitoringAgent --publisher Microsoft.Ente
 }
 ```
 
-После создания виртуальной машины в свойстве InstanceView отобразятся сведения для снимка экрана и т. д. Ниже приведен пример:
+После создания виртуальной машины в свойстве InstanceView отобразятся сведения для снимка экрана и т. д. Приведем пример:
 
 ```json
 "bootDiagnostics": {

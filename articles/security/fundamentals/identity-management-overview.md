@@ -16,10 +16,10 @@ ms.date: 02/05/2021
 ms.author: terrylan
 Customer intent: As an IT Pro or decision maker I am trying to learn about identity management capabilities in Azure
 ms.openlocfilehash: d931d3923ff49dde2bea234278c995e79670429f
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99627639"
 ---
 # <a name="azure-identity-management-security-overview"></a>Общие сведения о безопасности при управлении удостоверениями в Azure
@@ -39,7 +39,7 @@ ms.locfileid: "99627639"
 
 * Единый вход
 * Обратный прокси-сервер.
-* Многофакторная идентификация
+* Многофакторная проверка подлинности
 * Управление доступом Azure на основе ролей (Azure RBAC)
 * Наблюдение за безопасностью, оповещения и отчеты на основе машинного обучения.
 * Управление удостоверениями и доступом клиентов.
@@ -76,7 +76,7 @@ Azure AD расширяет локальные среды Active Directory в о
 * [Единый вход с помощью прокси приложения](../../active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd.md)
 * [Работа с условным доступом](../../active-directory/manage-apps/application-proxy-integrate-with-sharepoint-server.md)
 
-## <a name="multi-factor-authentication"></a>Многофакторная идентификация
+## <a name="multi-factor-authentication"></a>Многофакторная проверка подлинности
 
 Многофакторная идентификация Azure AD — это метод проверки подлинности, который требует использования нескольких методов проверки и добавляет критически важный второй уровень безопасности для входа и транзакций пользователей. Многофакторная идентификация помогает защитить доступ к данным и приложениям, при этом не усложняя процесс входа пользователя в систему. Она обеспечивает строгую проверку подлинности разными способами: с помощью телефонных звонков, текстовых сообщений, уведомлений в мобильном приложении, кодов подтверждения или маркеров OAuth сторонних поставщиков.
 

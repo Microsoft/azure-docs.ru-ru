@@ -4,10 +4,10 @@ description: В этой статье представлен подробный 
 ms.date: 03/15/2021
 ms.topic: conceptual
 ms.openlocfilehash: 1fd863ccacc7768401e35254a98c7bb494b3d358
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103470495"
 ---
 # <a name="overview-of-azure-arc-enabled-servers-agent"></a>Обзор агента серверов с поддержкой ARC в Azure
@@ -138,7 +138,7 @@ URL-адреса:
 |`dc.services.visualstudio.com`|Application Insights|
 |`*.guestconfiguration.azure.com` |Гостевая конфигурация|
 |`*.his.arc.azure.com`|Служба гибридной идентификации|
-|`www.office.com`|Office 365|
+|`www.office.com`|Office 365|
 
 Для предварительных версий агентов (версии 0,11 и ниже) также требуется доступ к следующим URL-адресам:
 
@@ -299,7 +299,7 @@ az provider register --namespace 'Microsoft.GuestConfiguration'
     * /var/opt/azcmagent
     * /opt/logs
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Чтобы начать оценку серверов с поддержкой Arc Azure, следуйте указаниям в статье [подключение гибридных компьютеров к Azure из портал Azure](onboard-portal.md).
 

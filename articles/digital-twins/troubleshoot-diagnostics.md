@@ -8,10 +8,10 @@ ms.date: 11/9/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: c600ced8896a3847b80d854c9e230310cca4c98d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100588597"
 ---
 # <a name="troubleshooting-azure-digital-twins-diagnostics-logging"></a>Устранение неполадок в Azure Digital двойников: ведение журнала диагностики
@@ -77,7 +77,7 @@ Azure Digital двойников может получать журналы дл
 | запись | РАЗМЕЩЕНИЕ и исправление |
 | Чтение | GET |
 | Удалить | DELETE |
-| Действие | ПОМЕСТИТЬ |
+| Действие | POST |
 
 Ниже приведен полный список операций и соответствующих [вызовов Azure Digital двойников REST API](/rest/api/azure-digitaltwins/) , зарегистрированных в каждой категории. 
 
@@ -257,7 +257,7 @@ Azure Digital двойников может получать журналы дл
 
 Дополнительные сведения о запросах журналов и их написании см. [*в разделе Обзор запросов журналов в Azure Monitor*](../azure-monitor/logs/log-query-overview.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о настройке диагностики см. в статье [*Получение и использование данных журнала из ресурсов Azure*](../azure-monitor/essentials/platform-logs-overview.md).
 * Сведения о метриках цифровых двойников Azure см. в разделе [*Устранение неполадок: Просмотр метрик с помощью Azure Monitor*](troubleshoot-metrics.md).

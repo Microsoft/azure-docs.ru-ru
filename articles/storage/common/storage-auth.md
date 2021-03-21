@@ -11,10 +11,10 @@ ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
 ms.openlocfilehash: a8733723fdc59634609a4a79c3b12f12208ab63b
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103470291"
 ---
 # <a name="authorizing-access-to-data-in-azure-storage"></a>Авторизация доступа к данным в службе хранилища Azure
@@ -45,7 +45,7 @@ ms.locfileid: "103470291"
 
 По умолчанию все ресурсы в службе хранилища Azure защищены и доступны только владельцу учетной записи. Хотя вы можете использовать любую из описанных выше стратегий авторизации, чтобы предоставить клиентам доступ к ресурсам в вашей учетной записи хранения, корпорация Майкрософт рекомендует использовать Azure AD, когда это возможно, в виду максимальной безопасности и простоты использования.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Авторизация доступа к BLOB-объектам и очередям Azure с помощью Azure Active Directory](storage-auth-aad.md)
 - [Авторизация с помощью общего ключа](/rest/api/storageservices/authorize-with-shared-key/)

@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 11/04/2020
 ms.author: memildin
 ms.openlocfilehash: 432729417a65376533d9ecc201f2f6f52376cc58
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102099409"
 ---
 # <a name="sql-information-protection-policy-in-azure-security-center"></a>Политика SQL Information Protection в центре безопасности Azure

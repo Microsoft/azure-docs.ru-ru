@@ -12,10 +12,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9c506c87ad5901754175f18e6b50bc6ed46a3c19
-ms.sourcegitcommit: 08458f722d77b273fbb6b24a0a7476a5ac8b22e0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98246916"
 ---
 # <a name="azure-ad-connect-group-writeback"></a>Обратная запись группы Azure AD Connect
@@ -34,7 +34,7 @@ ms.locfileid: "98246916"
 
 1. Откройте мастер Azure AD Connect, выберите **Настройка** , а затем нажмите кнопку **Далее**.
 2. Выберите **настроить параметры синхронизации** , а затем нажмите кнопку **Далее**.
-3. На странице **Подключение к Azure AD** введите свои учетные данные. Нажмите кнопку **Далее**.
+3. На странице **Подключение к Azure AD** введите свои учетные данные. Щелкните **Далее**.
 4. На странице **Дополнительные компоненты** убедитесь, что настроенные ранее параметры по-прежнему выбраны.
 5. Выберите элемент **обратная запись группы** , а затем нажмите кнопку **Далее**.
 6. На **странице Обратная запись** выберите Active Directory подразделения (OU) для хранения объектов, которые синхронизируются из Microsoft 365 с локальной организацией, а затем нажмите кнопку **Далее**.
@@ -67,7 +67,7 @@ Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnect
 
    ![Флажок снят](media/how-to-connect-group-writeback/group2.png)
   
-3. Нажмите кнопку **Далее**.
+3. Щелкните **Далее**.
 4. Нажмите **Настроить**.
 
  >[!NOTE]
