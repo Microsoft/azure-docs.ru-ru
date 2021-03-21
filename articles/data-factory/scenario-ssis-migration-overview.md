@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 9/3/2019
 ms.openlocfilehash: 78c488302a874319f79a143e4657d161fe849855
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100373612"
 ---
 # <a name="migrate-on-premises-ssis-workloads-to-ssis-in-adf"></a>Миграция локальных рабочих нагрузок служб SSIS в службы SSIS в ADF
@@ -92,7 +92,7 @@ Azure-SSIS Integration Runtime (IR) в фабрике данных Azure (ADF) �
 - [Настройка среды выполнения интеграции Azure-SSIS для высокой производительности](configure-azure-ssis-integration-runtime-performance.md);
 - [Запуск и остановка Azure-SSIS Integration Runtime по расписанию](how-to-schedule-azure-ssis-integration-runtime.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Проверка пакетов SSIS, развертываемых в Azure](/sql/integration-services/lift-shift/ssis-azure-validate-packages)
 - [Запуск пакетов служб SSIS, развернутых в Azure](/sql/integration-services/lift-shift/ssis-azure-run-packages)

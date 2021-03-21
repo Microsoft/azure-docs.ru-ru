@@ -5,10 +5,10 @@ ms.date: 8/31/2020
 ms.topic: how-to
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: 5007009d9aabf9a1c1c6e1d5c2f286c0ba25b340
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99493759"
 ---
 # <a name="how-to-configure-monitoring-for-azure-functions"></a>Настройка мониторинга для функций Azure
@@ -28,7 +28,7 @@ ms.locfileid: "99493759"
 
 # <a name="v2x"></a>[v2. x +](#tab/v2)
 
-| Категория | Таблица | Описание |
+| Category | Таблица | Описание |
 | ----- | ----- | ----- |
 | **`Function.<YOUR_FUNCTION_NAME>`** | **сборки**| Данные зависимостей автоматически собираются для некоторых служб. Для успешного выполнения эти журналы находятся на `Information` уровне. Дополнительные сведения см. в разделе [зависимости](functions-monitoring.md#dependencies). Исключения записываются на `Error` уровне. Среда выполнения также создает `Warning` журналы уровней, например, когда сообщения очереди отправляются в [очередь подозрительных](functions-bindings-storage-queue-trigger.md#poison-messages)сообщений. | 
 | **`Function.<YOUR_FUNCTION_NAME>`** | **customMetrics**<br/>**customEvents** | Пакеты SDK для C# и JavaScript позволяют собираются пользовательские метрики и заносят в журнал пользовательские события. Дополнительные сведения см. в разделе [пользовательские данные телеметрии](functions-monitoring.md#custom-telemetry-data).|
@@ -44,7 +44,7 @@ ms.locfileid: "99493759"
 
 # <a name="v1x"></a>[Версия 1.x](#tab/v1)
 
-| Категория | Таблица | Описание |
+| Category | Таблица | Описание |
 | ----- | ----- | ----- |
 | **`Function`** | **traces**| Созданные пользователем журналы, которые могут иметь любой уровень ведения журнала. Дополнительные сведения о записи в журналы из функций см. в разделе [запись в журналы](functions-monitoring.md#writing-to-logs). | 
 | **`Host.Aggregator`** | **customMetrics** | Эти журналы, созданные во время выполнения, предоставляют счетчики и средние значения вызовов функций за [Настраиваемый](#configure-the-aggregator) период времени. По умолчанию используется период 30 секунд или 1000 результатов в зависимости от того, что из этого наступит раньше. Например, здесь вы найдете число запусков, долю успешных попыток и длительность выполнения. Все эти журналы записываются на уровне `Information`. При фильтрации на уровне `Warning` или выше эти данные отображаться не будут. |

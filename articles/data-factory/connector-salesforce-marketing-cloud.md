@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 07/17/2020
 ms.openlocfilehash: 161b81b196a1e178c7244845b25594440e6d6e1e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100369753"
 ---
 # <a name="copy-data-from-salesforce-marketing-cloud-using-azure-data-factory"></a>Копирование данных из Salesforce Marketing Cloud с помощью Фабрики данных Azure
@@ -44,7 +44,7 @@ ms.locfileid: "100369753"
 
 Для связанной службы Salesforce Marketing Cloud поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type нужно задать значение **Salesforce Marketing Cloud**. | Да |
 | connectionProperties | Группа свойств, определяющих способ подключения к облаку Salesforce Marketing. | Да |

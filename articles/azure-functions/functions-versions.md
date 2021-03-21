@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.date: 12/09/2019
 ms.openlocfilehash: b37cf33a96452f9f3e86f853d3d87fd3b4b3879c
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102431864"
 ---
 # <a name="azure-functions-runtime-versions-overview"></a>Обзор версий среды выполнения для решения "Функции Azure"
@@ -61,7 +61,7 @@ ms.locfileid: "102431864"
 
 Приложения-функции .NET, выполняющиеся в версии 2. x ( `~2` ), автоматически обновляются для работы в .NET core 3,1, которая является долгосрочной версией .NET Core 3. Выполнение функций .NET в .NET Core 3,1 позволяет воспользоваться новейшими обновлениями для системы безопасности и улучшениями продукта. 
 
-Любое приложение функции закрепляется для `~2.0` работы в .NET Core 2,2, которое больше не получает безопасность и другие обновления. Дополнительные сведения см. в статье [рекомендации по функциям версии 2. x](functions-dotnet-class-library.md#functions-v2x-considerations).   
+Любое приложение функции закрепляется для `~2.0` работы в .NET Core 2,2, которое больше не получает безопасность и другие обновления. Чтобы узнать больше, ознакомьтесь с [рекомендациями по Функциям версии 2.x](functions-dotnet-class-library.md#functions-v2x-considerations).   
 
 ## <a name="migrating-from-2x-to-3x"></a>Миграция с 2. x на 3. x
 
@@ -83,7 +83,7 @@ ms.locfileid: "102431864"
 
 * Node.js 8 больше не поддерживается и не будет выполняться в функциях 3. x.
 
-#### <a name="net-core"></a>.NET Core
+#### <a name="net-core"></a>.NET Core
 
 Основные различия между версиями при запуске функций библиотеки классов .NET — это среда выполнения .NET Core. Функции версии 2. x предназначены для работы в .NET Core 2,2, а версия 3. x предназначена для работы в .NET Core 3,1.  
 
@@ -217,7 +217,7 @@ ms.locfileid: "102431864"
 
 [!INCLUDE [Timeout Duration section](../../includes/functions-timeout-duration.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения см. в следующих ресурсах:
 

@@ -1,5 +1,5 @@
 ---
-title: Удаление API отчета
+title: API удаления отчета
 description: Используйте этот API, чтобы удалить все записи отчета и выполнения отчетов для коммерческих отчетов Аналитики Marketplace.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
@@ -8,13 +8,13 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: 7c39f8bc0db44f1d8aa885969ca09d90b0dcd332
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102584115"
 ---
-# <a name="delete-report-api"></a>Удаление API отчета
+# <a name="delete-report-api"></a>API удаления отчета
 
 При выполнении этот API удаляет все записи отчетов и выполнения отчетов.
 
@@ -27,7 +27,7 @@ ms.locfileid: "102584115"
 
 **Заголовок запроса**
 
-| Заголовок | Type | Описание |
+| Header | Type | Описание |
 | ------------ | ------------- | ------------- |
 | Авторизация | строка | Обязательный. Маркер доступа Azure AD в виде `Bearer <token>` |
 | Тип содержимого | строка | `Application/JSON` |

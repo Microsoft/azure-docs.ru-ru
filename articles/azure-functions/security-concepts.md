@@ -4,10 +4,10 @@ description: Узнайте, как улучшить защиту кода фу�
 ms.date: 4/13/2020
 ms.topic: conceptual
 ms.openlocfilehash: 351bdca7ff94b6c058b5ab62fd9c16d707e7dc78
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100368495"
 ---
 # <a name="securing-azure-functions"></a>Защита Функций Azure

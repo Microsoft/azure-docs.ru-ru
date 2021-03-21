@@ -11,10 +11,10 @@ ms.date: 11/25/2020
 ms.topic: troubleshooting
 ms.custom: contperf-fy20q4, devx-track-python, deploy, contperf-fy21q2
 ms.openlocfilehash: 8bec083e62bec6a0311487c1e64e780ad14f451b
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102518269"
 ---
 # <a name="troubleshooting-remote-model-deployment"></a>Устранение неполадок при удаленном развертывании моделей 

@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 02/26/2021
-ms.openlocfilehash: a3baa83e2ae306f1e43aee52e29a151bad6f85d9
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 0eaa73fa7e0a9896a875af7e3a3aab22db2a37d0
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036607"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104657065"
 ---
 # <a name="collect-windows-event-log-data-sources-with-log-analytics-agent"></a>Получение источников данных журнала событий Windows с помощью агента Log Analytics
 Журналы событий Windows — это один из наиболее распространенных [источников данных](../agents/agent-data-sources.md) для агентов log Analytics на виртуальных машинах Windows, так как многие приложения записывают в журнал событий Windows.  События можно собирать из стандартных журналов, таких как журналы системы и приложений, а также указывать пользовательские журналы приложений, которые необходимо отслеживать.
@@ -29,10 +29,14 @@ Azure Monitor собирает события только из журналов
 
 [![Настройка событий Windows](media/data-sources-windows-events/configure.png)](media/data-sources-windows-events/configure.png#lightbox)
 
+> [!IMPORTANT]
+> Вы не можете настроить сбор событий безопасности из рабочей области. Для получения событий безопасности необходимо использовать [Центр безопасности Azure](../../security-center/security-center-enable-data-collection.md) или [метку Azure](../../sentinel/connect-windows-security-events.md) .
+
+
 > [!NOTE]
 > Критические события из журнала событий Windows будут иметь серьезность "ошибка" в журналах Azure Monitor.
 
-## <a name="data-collection"></a>Сбор данных
+## <a name="data-collection"></a>сбор данных
 По мере создания событий служба Azure Monitor собирает из отслеживаемого журнала событий все события, соответствующие заданной степени серьезности.  Агент фиксирует место сбора в каждом журнале событий, который используется для сбора данных.  Если агент на некоторое время переходит в автономный режим, Azure Monitor собирает события, начиная с места остановки, даже если эти события были созданы, пока агент был отключен.  Существует вероятность, что эти события не будут собраны, если оболочки журнала событий с несобранными событиями будут перезаписаны, пока агент находится вне сети.
 
 >[!NOTE]
@@ -57,7 +61,7 @@ Azure Monitor собирает события только из журналов
 | Источник |Источник события. |
 | SourceSystem |Тип агента, из которого было получено событие. <br> OpsManager — агент Windows, подключенный напрямую или управляемый с помощью Operations Manager. <br> Linux — все агенты Linux  <br>  AzureStorage – диагностика Azure |
 | TimeGenerated |Дата и время создания события в Windows. |
-| UserName |Имя пользователя учетной записи, который зафиксировал событие. |
+| Имя пользователя |Имя пользователя учетной записи, который зафиксировал событие. |
 
 ## <a name="log-queries-with-windows-events"></a>Запросы журнала для получения событий Windows
 Ниже приведены различные примеры запросов журнала, которые извлекают записи о событиях Windows.

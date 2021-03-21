@@ -15,12 +15,12 @@ ms.custom:
 - contperf-fy21q1
 - fasttrack-edit
 - iot
-ms.openlocfilehash: cbc4bbf73c65d4d7eddad556f3776bc0bbd653ba
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 9cedf861594903cd160c24ea35545d388bf1f6ce
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102431267"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582720"
 ---
 # <a name="communicate-with-your-iot-hub-using-the-mqtt-protocol"></a>Взаимодействие с Центром Интернета вещей с помощью протокола MQTT
 
@@ -151,6 +151,8 @@ device_client = IoTHubDeviceClient.create_from_connection_string(deviceConnectio
 
     `contoso.azure-devices.net/MyDevice01/?api-version=2018-06-30`
 
+    Настоятельно рекомендуется включить версию API в поле. В противном случае это может привести к непредвиденным последствиям. 
+    
 * В поле **Пароль** укажите маркер SAS. Формат маркера SAS аналогичен описанному для протоколов HTTPS и AMQP:
 
   `SharedAccessSignature sig={signature-string}&se={expiry}&sr={URL-encoded-resourceURI}`

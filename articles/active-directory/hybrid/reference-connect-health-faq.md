@@ -17,10 +17,10 @@ ms.date: 07/18/2017
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6185c5408f74b914ce5ad47634999786ba1d7ab6
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100368002"
 ---
 # <a name="azure-ad-connect-health-frequently-asked-questions"></a>Часто задаваемые вопросы об Azure AD Connect Health
@@ -37,9 +37,9 @@ ms.locfileid: "100368002"
 
 |Роль| Версия операционной системы|
 |--|--|
-|Службы федерации Active Directory (AD FS)| <ul><li> Windows Server 2012  </li> <li>Windows Server 2012 R2 </li> <li> Windows Server 2016  </li> <li> Windows Server 2019  </li> </ul>|
+|Службы федерации Active Directory (AD FS)| <ul><li> Windows Server 2012  </li> <li>Windows Server 2012 R2 </li> <li> Windows Server 2016  </li> <li> Windows Server 2019  </li> </ul>|
 |Azure AD Connect | Версия 1.0.9125 или более поздняя|
-|Доменные службы Active Directory (AD DS)| <ul><li> Windows Server 2012  </li> <li>Windows Server 2012 R2 </li> <li> Windows Server 2016  </li> <li> Windows Server 2019  </li> </ul>|
+|Доменные службы Active Directory (AD DS)| <ul><li> Windows Server 2012  </li> <li>Windows Server 2012 R2 </li> <li> Windows Server 2016  </li> <li> Windows Server 2019  </li> </ul>|
 
 Установки Windows Server Core не поддерживаются.
 
@@ -54,7 +54,7 @@ ms.locfileid: "100368002"
 
 Сведения о лицензировании также приведены на [странице Azure AD](https://aka.ms/aadpricing).
 
-Пример:
+Пример
 
 | Зарегистрированные агенты | Необходимые лицензии | Пример конфигурации мониторинга |
 | ------ | --------------- | --- |
@@ -212,4 +212,4 @@ CheckForMS17-010
 * [Использование Azure AD Connect Health с AD FS](how-to-connect-health-adfs.md)
 * [Использование Azure AD Connect Health для синхронизации](how-to-connect-health-sync.md)
 * [Использование Azure AD Connect Health с AD DS](how-to-connect-health-adds.md)
-* [Журнал версий Azure AD Connect Health](reference-connect-health-version-history.md)
+* [Журнал версий Azure AD Connect Health](reference-connect-health-version-history.md)

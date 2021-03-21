@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.date: 04/03/2019
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 9df4c62a65fd133c6ea8dc84e33d7c7b02d94cbf
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99494045"
 ---
 # <a name="automate-resource-deployment-for-your-function-app-in-azure-functions"></a>Автоматизация развертывания ресурсов приложения-функции для службы "Функции Azure"
 
 Для развертывания приложения-функции можно использовать шаблон Azure Resource Manager. В этой статье рассматриваются необходимые для этого ресурсы и параметры. В зависимости от [триггеров и привязок](functions-triggers-bindings.md) в приложении-функции может потребоваться развернуть дополнительные ресурсы.
 
-Дополнительные сведения о создании шаблонов см. в разделе [authoring Azure Resource Manager Templates](../azure-resource-manager/templates/template-syntax.md).
+Дополнительные сведения о создании шаблонов см. в статье [Создание шаблонов Azure Resource Manager](../azure-resource-manager/templates/template-syntax.md).
 
 Примеры шаблонов см. в следующих статьях:
 - [Function app on Consumption plan] (Приложение-функция в плане потребления)
@@ -30,7 +30,7 @@ ms.locfileid: "99494045"
 |------------------------------------------------------------------------------------|-------------|-----------------------------------------------------------------------------------------|
 | Приложение-функция.                                                                     | Обязательно    | [Microsoft. Web/Sites](/azure/templates/microsoft.web/sites)                             |
 | Учетная запись [хранения Azure](../storage/index.yml) ;                                   | Обязательно    | [Microsoft.Storage/storageAccounts](/azure/templates/microsoft.storage/storageaccounts) |
-| Компонент [Application Insights](../azure-monitor/app/app-insights-overview.md) | Необязательный    | [Microsoft. Insights/компоненты](/azure/templates/microsoft.insights/components)         |
+| Компонент [Application Insights](../azure-monitor/app/app-insights-overview.md) | Необязательно    | [Microsoft. Insights/компоненты](/azure/templates/microsoft.insights/components)         |
 | [План размещения](./functions-scale.md)                                             | Необязательно<sup>1</sup>    | [Microsoft. Web/serverfarms](/azure/templates/microsoft.web/serverfarms)                 |
 
 <sup>1</sup> План размещения требуется только в том случае, если вы решили запустить приложение-функцию в [плане Premium](./functions-premium-plan.md) или в [плане службы приложений](../app-service/overview-hosting-plans.md).

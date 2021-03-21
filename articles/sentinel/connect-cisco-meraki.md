@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 02/28/2021
 ms.author: yelevin
 ms.openlocfilehash: dc2d2a0724f18a02a5b667eb1004963a326ec360
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101747086"
 ---
 # <a name="connect-your-cisco-meraki-to-azure-sentinel"></a>Подключение Meraki Cisco к Azure Sentinel
@@ -31,7 +31,7 @@ ms.locfileid: "101747086"
 > [!NOTE]
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должно быть разрешение на чтение и запись в рабочей области "Sentinel" Azure.
 

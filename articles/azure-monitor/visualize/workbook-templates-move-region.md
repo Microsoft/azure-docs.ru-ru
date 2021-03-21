@@ -11,10 +11,10 @@ ms.custom: subject-moving-resources
 ms.date: 08/12/2020
 ms.author: jgardner
 ms.openlocfilehash: 9787118b1912a5697c02e116be99b1f396748937
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100621537"
 ---
 # <a name="move-an-azure-workbook-template-to-another-region"></a>Перемещение шаблона книги Azure в другой регион
@@ -23,7 +23,7 @@ ms.locfileid: "100621537"
 
 В настоящее время нет пользовательского интерфейса портала для создания ресурсов шаблона книги, единственным текущим способом их создания является [развертывание с помощью Azure Resource Manager шаблона (шаблона ARM)](../visualize/workbooks-automate.md). Таким образом, самый простой способ переместить шаблон — повторно использовать предыдущий шаблон ARM и обновить его для развертывания в новом регионе.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Убедитесь, что шаблоны книг поддерживаются в целевом регионе.
 
@@ -53,7 +53,7 @@ ms.locfileid: "100621537"
 
 Если вы переименовали шаблон книги, чтобы импортировать его в новый регион, можно переименовать шаблон книги на предыдущее имя после удаления исходного элемента с помощью команды "Переименовать" в представлении ресурса шаблона книги Azure.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Необходимо переместить книгу, а не шаблон? См. статью [Перемещение книги Azure в другой регион](./workbooks-move-region.md).
 

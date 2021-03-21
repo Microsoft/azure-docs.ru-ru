@@ -10,10 +10,10 @@ ms.topic: include
 ms.date: 01/15/2021
 ms.author: aahi
 ms.openlocfilehash: c1ff099dd6dffe06e9707ff23fffd57ae753ab64
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99500383"
 ---
 Функция NER для Анализ текста возвращает следующие общие (не идентифицирующие) категории сущностей. Например, при отправке запросов в `/entities/recognition/general` конечную точку.
@@ -29,7 +29,7 @@ ms.locfileid: "99500383"
 | [Продукт](#category-product) | Физические объекты различных категорий. |
 | [Навык](#category-skill) | Возможность, навык или опыт.  |
 | [Адрес](#category-address) | Полные адреса электронной почты.  |
-| [номер телефона.](#category-phonenumber) | Номера телефонов. |
+| [Номер телефона](#category-phonenumber) | Номера телефонов. |
 | [Электронная почта](#category-email) | Адреса электронной почты. |
 | [URL-адрес](#category-url) | URL-адреса веб-сайтов. |
 | [СМ](#category-ip) | Сетевые IP-адреса. |
@@ -45,7 +45,7 @@ ms.locfileid: "99500383"
     :::column span="":::
         **Сущность**
 
-        Модель Person
+        Человек
 
     :::column-end:::
     :::column span="2":::
@@ -180,7 +180,7 @@ ms.locfileid: "99500383"
     :::column span="":::
         **Сущность**
 
-        План
+        Организация
 
     :::column-end:::
     :::column span="2":::
@@ -548,7 +548,7 @@ ms.locfileid: "99500383"
     :::column span="":::
         **Сущность**
 
-        Дата и время
+        Дата/время
 
     :::column-end:::
     :::column span="2":::
@@ -594,7 +594,7 @@ ms.locfileid: "99500383"
 :::row:::
     :::column span="":::
 
-        Время
+        время;
 
     :::column-end:::
     :::column span="2":::
@@ -645,7 +645,7 @@ ms.locfileid: "99500383"
 :::row:::
     :::column span="":::
 
-        Длительность
+        Duration
 
     :::column-end:::
     :::column span="2":::
@@ -710,7 +710,7 @@ ms.locfileid: "99500383"
     :::column span="":::
         **Подкатегория сущности**
 
-        Number
+        Число
 
     :::column-end:::
     :::column span="2":::

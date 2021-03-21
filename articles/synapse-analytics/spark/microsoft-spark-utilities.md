@@ -11,10 +11,10 @@ ms.author: ruxu
 ms.reviewer: ''
 zone_pivot_groups: programming-languages-spark-all-minus-sql
 ms.openlocfilehash: 58672bd68d9a2ea85f58b3761f3b89098b9f5afc
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100368665"
 ---
 # <a name="introduction-to-microsoft-spark-utilities"></a>Введение в служебные программы Microsoft Spark
@@ -48,7 +48,7 @@ Microsoft Spark Utilities (Мсспаркутилс) — это встроенн
 1. Откройте [Azure синапсе Studio](https://web.azuresynapse.net/).
 2. Выберите **Управление** на левой панели и выберите **связанные службы** в списке **внешние подключения**.
 3. Найдите **хранилище BLOB-объектов Azure** на **новой панели связанная служба** справа.
-4. Щелкните **Продолжить**.
+4. Выберите **Continue** (Продолжить).
 5. Выберите учетную запись хранилища BLOB-объектов Azure для доступа и настройте имя связанной службы. Рекомендуется использовать **ключ учетной записи** для **метода проверки подлинности**.
 6. Выберите **проверить подключение** , чтобы проверить правильность параметров.
 7. Сначала выберите **создать** , а затем щелкните **опубликовать все** , чтобы сохранить изменения. 
@@ -902,7 +902,7 @@ Env.GetClusterId()
 
 ::: zone-end
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Ознакомьтесь с примерами записных книжек синапсе](https://github.com/Azure-Samples/Synapse/tree/master/Notebooks)
 - [Краткое руководство. Создание пула Apache Spark в Azure Synapse Analytics с помощью веб-инструментов](../quickstart-apache-spark-notebook.md)

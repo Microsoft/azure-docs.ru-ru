@@ -2,19 +2,19 @@
 title: Краткое руководство. Создание пула SQL Synapse с помощью Azure CLI
 description: Сведения о том, как быстро создать пул SQL Synapse с правилом брандмауэра на уровне сервера с помощью Azure CLI.
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 ms.service: synapse-analytics
 ms.topic: quickstart
 ms.subservice: sql-dw
 ms.date: 11/20/2020
-ms.author: Kevin
+ms.author: gaursa
 ms.custom: azure-synapse
-ms.openlocfilehash: 2920c96d6a2e505347edb51780101327cb884e08
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.openlocfilehash: c17bfc06e76bad7730707530001ebeccea539c37
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98120178"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104602270"
 ---
 # <a name="quickstart-create-a-synapse-sql-pool-with-azure-cli"></a>Краткое руководство. Создание пула SQL Synapse с помощью Azure CLI
 

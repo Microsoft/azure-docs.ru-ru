@@ -7,10 +7,10 @@ ms.service: mariadb
 ms.topic: conceptual
 ms.date: 2/11/2021
 ms.openlocfilehash: 50aaae9e71ac9de366ee4db1981e633491094946
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199971"
 ---
 # <a name="connectivity-architecture-in-azure-database-for-mariadb"></a>Архитектура подключения в базе данных Azure для MariaDB
@@ -130,7 +130,7 @@ ms.locfileid: "103199971"
 Нет, это оборудование шлюза списано и не имеет связи с частными или частными IP-адресами, оно будет влиять только на общедоступные IP-адреса, упомянутые по IP-адресам списания.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Создание правил брандмауэра MariaDB в Базе данных Azure для MariaDB и управление ими на портале Azure](./howto-manage-firewall-portal.md)
 * [Создание правил брандмауэра Базы данных Azure для MariaDB и управление ими с помощью Azure CLI](./howto-manage-firewall-cli.md)

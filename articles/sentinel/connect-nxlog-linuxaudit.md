@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 03/02/2021
 ms.author: yelevin
 ms.openlocfilehash: 2010b21a3cdb81f2b2aa4180f87857862cd02bf5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101700939"
 ---
 # <a name="connect-your-nxlog-linuxaudit-to-azure-sentinel"></a>Подключение Нкслог Линуксаудит к Azure Sentinel

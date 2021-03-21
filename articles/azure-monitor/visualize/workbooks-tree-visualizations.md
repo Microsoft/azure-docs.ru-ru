@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/04/2020
 ms.author: lagayhar
 ms.openlocfilehash: a815f4dcf7c76d4c11b4f2e227802b15f9c92a54
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100625233"
 ---
 # <a name="tree-visualizations"></a>Визуализации дерева
@@ -92,7 +92,7 @@ ms.locfileid: "100625233"
 
 [![Снимок экрана, показывающий создание представления в виде дерева в книгах](./media/workbooks-tree-visualizations/tree-group-create.png)](./media/workbooks-tree-visualizations/tree-group-create.png#lightbox)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как создать [график в книгах](workbooks-graph-visualizations.md).
 * Узнайте, как создать [плитку в книгах](workbooks-tile-visualizations.md).

@@ -7,10 +7,10 @@ ms.date: 06/09/2020
 author: nabhishek
 ms.author: abnarain
 ms.openlocfilehash: ecf2a74a16234084fbac4d1c26157d1703b56a13
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100373068"
 ---
 # <a name="how-to-create-and-configure-azure-integration-runtime"></a>Создание и настройка среды выполнения интеграции Azure
@@ -83,7 +83,7 @@ Set-AzDataFactoryV2IntegrationRuntime -DataFactoryName "SampleV2DataFactory1" -N
 
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о создании других типов среды выполнения интеграции см. в следующих статьях:
 
 - [Создание и настройка локальной среды выполнения интеграции](create-self-hosted-integration-runtime.md)

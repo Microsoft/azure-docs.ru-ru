@@ -10,17 +10,17 @@ ms.topic: article
 ms.date: 06/14/2019
 ms.author: erhopf
 ms.openlocfilehash: a2005ca7b32136ff0032d27e04035c46b2e4e904
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100595365"
 ---
 # <a name="enable-diagnostic-logging-for-azure-cognitive-services"></a>Включение ведения журнала диагностики для Azure Cognitive Services
 
 Это краткое описание содержит пошаговые инструкции по включению ведения журнала диагностики для службы "Поиск в Azure". Эти журналы предоставляют широкие, часто встречающиеся данные о работе ресурса, которые используются для идентификации и отладки проблем. Прежде чем продолжить, необходимо иметь учетную запись Azure с подпиской хотя бы для одной службы, например [Поиск в Интернете Bing](./bing-web-search/overview.md), [Speech Services](./speech-service/overview.md)или [Luis](./luis/what-is-luis.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы включить ведение журнала диагностики, необходимо хранить данные журнала в любом месте. В этом руководстве используется служба хранилища Azure и Log Analytics.
 
@@ -111,7 +111,7 @@ by bin(TimeGenerated, 10s), OperationName
 | render areachart kind=unstacked
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Чтобы понять, как включить ведение журнала, а также метрики и категории журналов, которые поддерживаются различными службами Azure, прочитайте [Обзор метрик](../azure-monitor/data-platform.md) в Microsoft Azure и обзор статей о [журналах диагностики Azure](../azure-monitor/essentials/platform-logs-overview.md) .
 * Прочтите эти статьи, чтобы узнать о концентраторах событий:

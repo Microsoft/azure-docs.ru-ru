@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.openlocfilehash: 621d5a6a91a8c22c52e6febc7c2638571f5bf113
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100595809"
 ---
 # <a name="logs-in-azure-database-for-postgresql---single-server"></a>Журналы в базе данных Azure для PostgreSQL — один сервер
@@ -110,7 +110,7 @@ AzureDiagnostics
 | ResourceType | `Servers` |
 | ResourceId | Универсальный код ресурса (URI) |
 | Ресурс | Имя сервера |
-| Категория | `PostgreSQLLogs` |
+| Category | `PostgreSQLLogs` |
 | OperationName | `LogEvent` |
 | errorLevel | Уровень ведения журнала, например: LOG, ERROR, NOTICE |
 | Сообщение | Первичное сообщение журнала | 
@@ -124,7 +124,7 @@ AzureDiagnostics
 | Prefix | Префикс строки журнала |
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о доступе к журналам см. в статье [Настройка журналов сервера и получение к ним доступа с помощью портала Azure](howto-configure-server-logs-in-portal.md) или [Настройка журналов сервера и получение к ним доступа с помощью Azure CLI](howto-configure-server-logs-using-cli.md).
 - Дополнительные сведения о [ценах на Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/).
 - Дополнительные сведения о [журналах аудита](concepts-audit.md)

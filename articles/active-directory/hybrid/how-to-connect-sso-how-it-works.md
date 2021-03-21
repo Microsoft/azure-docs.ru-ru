@@ -16,11 +16,11 @@ ms.date: 04/16/2019
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: addb90ed3929847612fd423e3af01c1b3982c2d6
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: bde937adba8d2469390a6cf404f6cce8c5008e87
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100369651"
 ---
 # <a name="azure-active-directory-seamless-single-sign-on-technical-deep-dive"></a>Подробное техническое руководство по простому единому входу Azure Active Directory
@@ -67,10 +67,6 @@ ms.locfileid: "100369651"
 6. Active Directory находит учетную запись компьютера и возвращает браузеру билет Kerberos, зашифрованный с использованием секрета этой учетной записи компьютера.
 7. Браузер пересылает билет Kerberos, полученный от Active Directory, в Azure AD.
 8. Azure AD расшифровывает билет Kerberos, который содержит удостоверение пользователя, выполнившего вход в корпоративное устройство, с помощью полученного ранее общего ключа.
-
-   >[!NOTE]
-   >Azure AD попытается сопоставить имя участника-пользователя (UPN) из билета Kerberos с объектом пользователя Azure AD, имеющим соответствующее значение в атрибуте userPrincipalName. Если это не удалось, Azure AD вернется к соответствующему samAccountName из билета Kerberos в объект пользователя Azure AD, имеющий соответствующее значение в атрибуте onPremisesSamAccountName.
-   
 9. После анализа Azure AD либо возвращает маркер приложению, либо предлагает пользователю выполнить дополнительную проверку, например многофакторную проверку подлинности.
 10. При успешном входе в систему пользователь может получить доступ к приложению.
 

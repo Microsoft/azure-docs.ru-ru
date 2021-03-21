@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019; seo-dt-2019
 ms.date: 09/28/2020
 ms.openlocfilehash: b2f77e4bd8df66084937da3dd203ebb71d9a3511
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100368801"
 ---
 # <a name="copy-data-from-mongodb-atlas-using-azure-data-factory"></a>Копирование данных из MongoDB Atlas с помощью фабрики данных Azure
@@ -26,7 +26,7 @@ ms.locfileid: "100368801"
 
 В частности, этот соединитель MongoDB Atlas поддерживает **версии до 4,2**.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Если для копирования используется Azure Integration Runtime, убедитесь, что вы добавили Azure Integration Runtime IP- [адресов](azure-integration-runtime-ip-addresses.md) действующего региона в список доступа к MongoDB Atlas.
 
@@ -40,7 +40,7 @@ ms.locfileid: "100368801"
 
 Для связанной службы MongoDB Atlas поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type |Для свойства Type необходимо задать значение **монгодбатлас** . |Да |
 | connectionString |Укажите строку подключения MongoDB Atlas, например `mongodb+srv://<username>:<password>@<clustername>.<randomString>.<hostName>/<dbname>?<otherProperties>` . <br/><br /> Строку подключения также можно разместить в Azure Key Vault. Дополнительные сведения см. в разделе [хранение учетных данных в Azure Key Vault](store-credentials-in-key-vault.md) . |Да |
@@ -70,7 +70,7 @@ ms.locfileid: "100368801"
 
 Полный список разделов и свойств, используемых для определения наборов данных, приведен в статье [Наборы данных и связанные службы в фабрике данных Azure](concepts-datasets-linked-services.md). Для набора данных MongoDB Atlas поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type набора данных должно иметь значение **монгодбатласколлектион** . | Да |
 | collectionName |Имя коллекции в базе данных MongoDB Atlas. |Да |
