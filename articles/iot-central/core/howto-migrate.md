@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: iot-central
 services: iot-central
 ms.openlocfilehash: 735ad7ad9ded6baded59ab3f08e239d1c8376b74
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101702731"
 ---
 # <a name="migrate-your-v2-iot-central-application-to-v3"></a>Перенос приложения IoT Central v2 в версии 3

@@ -13,10 +13,10 @@ ms.author: ryanwi
 ms.reviewer: tomfitz
 ms.custom: aaddev, seoapril2019, identityplatformtop40
 ms.openlocfilehash: 6adc3a8af90f6f05f640de97b8fa74c8d40e0329
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102175554"
 ---
 # <a name="how-to-use-the-portal-to-create-an-azure-ad-application-and-service-principal-that-can-access-resources"></a>Практическое руководство. Создание приложения Azure Active Directory и субъекта-службы с доступом к ресурсам с помощью портала
@@ -163,7 +163,7 @@ $cert=New-SelfSignedCertificate -Subject "CN=DaemonConsoleCert" -CertStoreLocati
 
     ![Выберите отправить сертификат и выберите тот, который вы хотите добавить.](./media/howto-create-service-principal-portal/upload-cert.png)
 
-1. Нажмите **Добавить**.
+1. Выберите **Добавить**.
 
 После регистрации сертификата в приложении на портале регистрации приложений включите код клиентского приложения для использования сертификата.
 

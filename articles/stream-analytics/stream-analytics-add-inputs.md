@@ -7,10 +7,10 @@ ms.author: ebnkruma
 ms.topic: conceptual
 ms.date: 10/29/2020
 ms.openlocfilehash: 1e5bf3e884e5f2c1a57cee08cbf3c22379dab080
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102436045"
 ---
 # <a name="understand-inputs-for-azure-stream-analytics"></a>Общие сведения о входных данных Azure Stream Analytics

@@ -14,10 +14,10 @@ author: jaredmoo
 ms.reviewer: sstein
 ms.date: 02/01/2021
 ms.openlocfilehash: 11b94ba5bcedf56f0115b8730dc58f808aff5c58
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100371606"
 ---
 # <a name="use-transact-sql-t-sql-to-create-and-manage-elastic-database-jobs-preview"></a>Использование Transact-SQL (T-SQL) для создания заданий обработки эластичных баз данных и управления ими (Предварительная версия)
@@ -1350,7 +1350,7 @@ GO
 
 - ![Значок ссылки на раздел](/sql/database-engine/configure-windows/media/topic-link.gif "Значок ссылки на раздел") [Синтаксические обозначения в Transact-SQL](/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql)  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание заданий обработки эластичных баз данных и управление ими с помощью PowerShell](elastic-jobs-powershell-create.md)
 - [Авторизация и разрешения](/dotnet/framework/data/adonet/sql/authorization-and-permissions-in-sql-server)

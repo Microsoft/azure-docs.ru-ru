@@ -4,10 +4,10 @@ description: Удаление Application Insights пакета SDK для ASP.N
 ms.topic: conceptual
 ms.date: 04/06/2020
 ms.openlocfilehash: 1d70413fa6a47e2d41693db6eb705f31b2a2b1b2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101704316"
 ---
 # <a name="how-to-remove-application-insights-in-visual-studio"></a>Удаление Application Insights в Visual Studio
@@ -72,7 +72,7 @@ ms.locfileid: "101704316"
     
     ![На снимке экрана показано диалоговое окно с удаляемыми зависимостями.](./media/remove-application-insights/preview-uninstall-framework.png)
     
-1.  После удаления все по-прежнему могут отображаться "ApplicationInsights.config" и "AiHandleErrorAttribute.cs" в *Обозреватель решений*. Эти два файла можно удалить вручную.
+1.  После удаления все еще можно увидеть "ApplicationInsights.config" и "Аихандлиррораттрибуте. cs" в *Обозреватель решений*. Эти два файла можно удалить вручную.
 
 # <a name="net-core"></a>[.NET Core](#tab/netcore)
 
@@ -97,7 +97,7 @@ ms.locfileid: "101704316"
 При добавлении телеметрия Application Insights в проект Visual Studio ASP.NET добавляются следующие файлы:
 
 - ApplicationInsights.config
-- AiHandleErrorAttribute.cs
+- Аихандлиррораттрибуте. CS
 
 Добавляются следующие фрагменты кода:
 

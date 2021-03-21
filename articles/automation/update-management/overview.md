@@ -3,14 +3,14 @@ title: Обзор функции "Управление обновлениями"
 description: В этой статье представлен обзор функции "Управление обновлениями", которая реализует обновления для компьютеров на платформе Windows и Linux.
 services: automation
 ms.subservice: update-management
-ms.date: 03/08/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
-ms.openlocfilehash: 0a79be9d879e9ccb7ae4583d0674cf2bb23aafa4
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: e24a90f05ef52c5164ce966e905e9c27055d1bf4
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102485679"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670619"
 ---
 # <a name="update-management-overview"></a>Общие сведения о службе "Управление обновлениями"
 
@@ -76,8 +76,8 @@ ms.locfileid: "102485679"
 |---------|---------|
 |Windows Server 2019 (Datacenter/Standard, включая Server Core)<br><br>Windows Server 2016 (Datacenter/Standard, исключая Server Core)<br><br>Windows Server 2012 R2 (Datacenter или Standard)<br><br>Windows Server 2012 | |
 |Windows Server 2008 R2 (RTM и Standard с пакетом обновления 1, SP1)| Управление обновлениями поддерживает оценки и исправления для этой операционной системы. [Гибридная Рабочая роль Runbook](../automation-windows-hrw-install.md) поддерживается для Windows Server 2008 R2. |
-|CentOS 6 и 7 (x64)      | Агентам Linux требуется доступ к репозиторию обновлений. Для исправления на основе классификации требуется, чтобы программа `yum` вернула данные безопасности, которых нет в выпусках RTM CentOS. Дополнительные сведения об исправлениях на основе классификации в CentOS см. в разделе о [классификации обновлений в Linux](view-update-assessments.md#linux).          |
-|Red Hat Enterprise 6 и 7 (x64)     | Агентам Linux требуется доступ к репозиторию обновлений.        |
+|CentOS 6, 7 и 8 (x64)      | Агентам Linux требуется доступ к репозиторию обновлений. Для исправления на основе классификации требуется, чтобы программа `yum` вернула данные безопасности, которых нет в выпусках RTM CentOS. Дополнительные сведения об исправлениях на основе классификации в CentOS см. в разделе о [классификации обновлений в Linux](view-update-assessments.md#linux).          |
+|Red Hat Enterprise 6, 7 и 8 (x64)     | Агентам Linux требуется доступ к репозиторию обновлений.        |
 |SUSE Linux Enterprise Server 12, 15 и 15,1 (x64)     | Агентам Linux требуется доступ к репозиторию обновлений. Для SUSE 15. x на компьютере требуется Python 3.      |
 |Ubuntu 14,04 LTS, 16,04 LTS и 18,04 LTS (x64)      |Агентам Linux требуется доступ к репозиторию обновлений.         |
 

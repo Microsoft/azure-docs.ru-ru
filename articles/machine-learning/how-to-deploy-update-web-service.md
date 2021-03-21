@@ -11,10 +11,10 @@ author: gvashishtha
 ms.date: 07/31/2020
 ms.custom: deploy
 ms.openlocfilehash: da018f212844e1587ad0e434902e49765f72e521
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520103"
 ---
 # <a name="update-a-deployed-web-service"></a>Обновление развернутой веб-службы

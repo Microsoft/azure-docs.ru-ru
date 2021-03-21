@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 02/03/2021
 ms.openlocfilehash: cbf070dce056795ad8e4a5f3e4d609e7d36d631e
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200817"
 ---
 # <a name="understanding-resource-sets"></a>Сведения о наборах ресурсов
@@ -110,6 +110,6 @@ Azure зрения поддерживает следующие шаблоны н
 - Помещение ресурса в недопустимый набор ресурсов
 - Неправильно помечает ресурс как не являющийся набором ресурсов
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы приступить к работе с Azure зрения, см. раздел [Краткое руководство. Создание учетной записи Azure зрения](create-catalog-portal.md).

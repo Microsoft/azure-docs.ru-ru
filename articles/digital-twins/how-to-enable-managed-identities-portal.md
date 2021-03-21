@@ -8,10 +8,10 @@ ms.date: 1/21/2021
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 1211cd306f10fb349bd42568697443ff103a171c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101703099"
 ---
 # <a name="enable-a-managed-identity-for-routing-azure-digital-twins-events-preview-azure-portal"></a>Включение управляемого удостоверения для маршрутизации событий цифровых двойников Azure (Предварительная версия): портал Azure
@@ -82,7 +82,7 @@ ms.locfileid: "101703099"
 | Назначение | Роль Azure |
 | --- | --- |
 | Центры событий Azure | Отправитель данных Центров событий Azure |
-| Служебная шина Azure | Отправитель данных Служебной шины Azure |
+| Azure Service Bus | Отправитель данных Служебной шины Azure |
 | Контейнер хранилища Azure | Участник данных BLOB-объектов хранилища |
 
 Дополнительные сведения о конечных точках, маршрутах и типах назначений, поддерживаемых для маршрутизации в Azure Digital двойников, см. в разделе [*Основные понятия: маршруты событий*](concepts-route-events.md).

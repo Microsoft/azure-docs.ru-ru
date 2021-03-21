@@ -11,10 +11,10 @@ ms.date: 01/14/2020
 ms.author: metang
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: e79ae3914e32038e2823fb37e3eee658c95e0003
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608773"
 ---
 # <a name="how-to-cache-the-authentication-token"></a>Кэширование маркера проверки подлинности

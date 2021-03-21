@@ -10,10 +10,10 @@ ms.author: normesta
 ms.reviewer: yzheng
 ms.custom: references_regions
 ms.openlocfilehash: b00956a6fb5a79b09602ca1752cc547595f32db6
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103224600"
 ---
 # <a name="network-file-system-nfs-30-protocol-support-in-azure-blob-storage-preview"></a>Поддержка протокола NFS 3,0 в хранилище BLOB-объектов Azure (Предварительная версия)
@@ -140,7 +140,7 @@ ms.locfileid: "103224600"
 
 Во время предварительной версии транзакция не будет оплачена. Цены на транзакции могут быть изменены и будут определены, когда она будет общедоступна.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Чтобы приступить к работе, см. раздел [Подключение хранилища BLOB-объектов с помощью протокола nfs 3,0 (Предварительная версия)](network-file-system-protocol-support-how-to.md).
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/03/2021
 ms.author: tisande
 ms.custom: query-reference
-ms.openlocfilehash: b48237b5a7eb836c495612758eeb9eaa45029b26
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.openlocfilehash: 12ce8beab082674cd7672713325d4b3f4322aeae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99526591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587310"
 ---
 # <a name="getcurrentdatetime-azure-cosmos-db"></a>Жеткуррентдатетиме (Azure Cosmos DB)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -28,23 +28,23 @@ GetCurrentDateTime ()
 
 ## <a name="return-types"></a>Типы возвращаемых данных
   
-  Возвращает строковое значение даты и времени в формате UTC 8601 в формате, `YYYY-MM-DDThh:mm:ss.fffffffZ` где:
+Возвращает строковое значение даты и времени в формате UTC 8601 в формате, `YYYY-MM-DDThh:mm:ss.fffffffZ` где:
   
-  |Формат|Описание|
-  |-|-|
-  |YYYY|год из четырех цифр|
-  |ММ|месяц (2 цифры) (01 = Январь и т. д.)|
-  |DD|четырехзначный день месяца (от 01 до 31)|
-  |T|обозначает начало элементов времени|
-  |hh|час с двумя цифрами (от 00 до 23)|
-  |ММ|двузначное число минут (от 00 до 59)|
-  |сс|двузначное число секунд (от 00 до 59)|
-  |. fffffff|семь цифр в долях секунды|
-  |Z|Обозначение времени в формате UTC (Универсальное координированное время)||
+|Формат|Описание|
+|-|-|
+|YYYY|год из четырех цифр|
+|ММ|месяц (2 цифры) (01 = Январь и т. д.)|
+|DD|четырехзначный день месяца (от 01 до 31)|
+|T|обозначает начало элементов времени|
+|hh|час с двумя цифрами (от 00 до 23)|
+|ММ|двузначное число минут (от 00 до 59)|
+|сс|двузначное число секунд (от 00 до 59)|
+|. fffffff|семь цифр в долях секунды|
+|Z|Обозначение времени в формате UTC (Универсальное координированное время)|
   
   Дополнительные сведения о формате ISO 8601 см. в разделе [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601)
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Жеткуррентдатетиме () является недетерминированной функцией. Возвращаемый результат — UTC. Точность составляет 7 цифр с точностью 100 наносекунд.
 
@@ -67,7 +67,7 @@ SELECT GetCurrentDateTime() AS currentUtcDateTime
 }]  
 ```  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Функции даты и времени Azure Cosmos DB](sql-query-date-time-functions.md)
 - [Системные функции Azure Cosmos DB](sql-query-system-functions.md)

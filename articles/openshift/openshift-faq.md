@@ -7,10 +7,10 @@ ms.service: azure-redhat-openshift
 ms.topic: conceptual
 ms.date: 07/31/2020
 ms.openlocfilehash: a3721083e48774963cd761178abdb552c93b15c7
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100634351"
 ---
 # <a name="azure-red-hat-openshift-faq"></a>Вопросы и ответы об Azure Red Hat OpenShift
@@ -202,7 +202,7 @@ oc adm policy \
 
 Для кластеров 3,11 можно использовать интеграцию Azure AD. 
 
-## <a name="storage"></a>Память
+## <a name="storage"></a>Служба хранилища
 
 ### <a name="is-data-on-my-cluster-encrypted"></a>Зашифрованы ли данные в кластере?
 

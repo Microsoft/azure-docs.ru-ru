@@ -8,10 +8,10 @@ ms.author: abnarain
 ms.custom: seo-lt-2019
 ms.date: 07/31/2018
 ms.openlocfilehash: 0a1eb593e9f9f15f88aefb2fe06706153a4b74a4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100361406"
 ---
 # <a name="transform-data-in-azure-data-factory"></a>Преобразование данных в фабрике данных Azure
@@ -105,5 +105,5 @@ Power Query в фабрике данных Azure обеспечивает обл
 
 В статье [Связанные службы вычислений](compute-linked-services.md) описывается, какие службы вычислений поддерживает фабрика данных. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Пример использования действия преобразования см. в руководстве [Преобразование данных в облаке с помощью действия Spark в фабрике данных Azure](tutorial-transform-data-spark-powershell.md).

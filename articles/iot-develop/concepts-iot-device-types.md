@@ -7,10 +7,10 @@ ms.service: iot-develop
 ms.topic: conceptual
 ms.date: 01/11/2021
 ms.openlocfilehash: aa99594fe3de98635e37d15beebf015f15dc4f64
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100654566"
 ---
 # <a name="overview-of-azure-iot-device-types"></a>Обзор типов устройств Azure IoT

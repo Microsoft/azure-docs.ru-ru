@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.reviewer: japere
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: a54c7d6cc4ccf1d9f42702be030598ad1edfab24
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225155"
 ---
 # <a name="troubleshoot-problems-signing-in-to-an-application-from-azure-ad-my-apps"></a>Устранение неполадок при входе в приложение из моих приложений Azure AD
@@ -147,7 +147,7 @@ ms.locfileid: "103225155"
 
 Чтобы проверить, имеет ли пользователь более 999 ролей приложений, выполните следующие действия.
 1. Установите модуль [**Microsoft. Graph**](https://github.com/microsoftgraph/msgraph-sdk-powershell) PowerShell.
-2. Выполните команду `Connect-MgGraph -Scopes "User.ReadBasic.All Application.Read.All"`.
+2. Выполните `Connect-MgGraph -Scopes "User.ReadBasic.All Application.Read.All"`.
 3. Выполните команду `(Get-MgUserAppRoleAssignment -UserId "<user-id>" -PageSize 999).Count` , чтобы определить количество назначений ролей приложения, предоставленных пользователем в данный момент.
 4. Если результат равен 999, то пользователь скорее всего будет иметь более 999 назначений ролей приложений.
 

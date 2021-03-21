@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 05b9a3788e4d8e3edc090f8b51299b708b9f3235
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: edcd4627cd57ac4b37adbbb13300fe46a35abce9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102617982"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594144"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
@@ -19,7 +19,7 @@ ms.locfileid: "102617982"
 |[Для серверов SQL должен быть подготовлен администратор Azure Active Directory](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1f314764-cb73-4fc9-b863-8eca98ac36e9) |Аудит подготовки администратора AAD для включения в SQL Server поддержки проверки подлинности AAD. Эта проверка подлинности упрощает контроль разрешений и обеспечивает централизованное управление удостоверениями пользователей баз данных и других служб Майкрософт. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SQL_DB_AuditServerADAdmins_Audit.json) |
 |[Необходимо включить аудит на сервере SQL](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9) |Для отслеживания действий во всех базах данных на сервере и сохранения их в журнал аудита должен быть включен аудит вашего SQL Server. |AuditIfNotExists, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditing_Audit.json) |
 |[База данных SQL Azure должна использовать версию не ниже TLS 1.2](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F32e6bbec-16b6-44c2-be37-c5b672d103cf) |Задав в качестве минимальной версию TLS 1.2, вы усилите защиту, сделав Базу данных SQL Azure доступной только с клиентов, использующих TLS 1.2. Применение версий, предшествующих TLS 1.2, не рекомендуется, так как у них есть хорошо задокументированные уязвимости. |Audit, Disabled |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_MiniumTLSVersion_Audit.json) |
-|[Настройка SQL Server Azure для отключения доступа к общедоступной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F28b0b1e5-17ba-4963-a7a4-5a1ab4400a0b) |Отключение свойства доступа к общедоступной сети закрывает общедоступное подключение, так что доступ к SQL Server Azure можно получить только из частной конечной точки. Эта конфигурация отключает доступ к общедоступной сети для всех баз данных в SQL Server Azure. |Изменение, отключено |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_PublicNetworkAccess_Modify.json) |
+|[Настройка SQL Server Azure для отключения доступа к общедоступной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F28b0b1e5-17ba-4963-a7a4-5a1ab4400a0b) |Отключение свойства доступа к общедоступной сети закрывает общедоступное подключение, так что доступ к SQL Server Azure можно получить только из частной конечной точки. Эта конфигурация отключает доступ к общедоступной сети для всех баз данных в SQL Server Azure. |Modify, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_PublicNetworkAccess_Modify.json) |
 |[Настройка SQL Server Azure для включения подключений к частным конечным точкам](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F8e8ca470-d980-4831-99e6-dc70d9f6af87) |Подключение к частной конечной точке обеспечивает частное подключение к базе данных SQL Azure через частный IP-адрес в виртуальной сети. Эта конфигурация повышает уровень безопасности и поддерживает средства и сценарии работы с сетью Azure. |DeployIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_PrivateEndpoint_DeployIfNotExists.json) |
 |[Настройка серверов SQL Server для включения аудита](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ff4c68484-132f-41f9-9b6d-3e4b1cb55036) |Чтобы обеспечить сбор операций, выполняемых с ресурсами SQL, на серверах SQL Server должен быть включен аудит. Иногда это требуется для соответствия нормативным стандартам. |DeployIfNotExists, Disabled |[1.1.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditing_Deploy.json) |
 |[Развертывание. Настройка параметров диагностики для сервера Базы данных SQL Azure в Log Analytics рабочей области](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F7ea8a143-05e3-4553-abfe-f56bef8b0b70) |Развертывает параметры диагностики для сервера Базы данных SQL Azure для потоковой передачи журналов ресурсов в рабочую область Log Analytics при создании или изменении любого SQL Server, где эти параметры диагностики отсутствуют. |DeployIfNotExists, Disabled |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/DataConnectosSqServerLogs_PolicyAssignment.json) |

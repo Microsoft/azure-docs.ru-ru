@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.reviewer: larryfr
 ms.custom: how-to, tracking-python, deploy
 ms.openlocfilehash: 9de971639e22f9656ea75dc64993ac5881efbffb
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102609419"
 ---
 # <a name="continuously-deploy-models"></a>Непрерывное развертывание моделей
@@ -52,7 +52,7 @@ ms.locfileid: "102609419"
 
     [![Включение триггера модели](media/how-to-deploy-and-where/set-modeltrigger.png)](media/how-to-deploy-and-where/set-modeltrigger-expanded.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные примеры непрерывного развертывания для моделей машинного обучения см. в приведенных ниже проектах на сайте GitHub.
 

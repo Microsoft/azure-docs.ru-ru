@@ -5,17 +5,17 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 11/27/2019
 ms.openlocfilehash: fbe4361033321f2ba81478c41a138937f70b5498
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101705710"
 ---
 # <a name="configure-apache-hive-policies-in-hdinsight-with-enterprise-security-package"></a>Настройка политик Apache Hive в HDInsight с Корпоративным пакетом безопасности
 
 Узнайте, как настроить политики Apache Ranger для Apache Hive. В этой статье вы создадите две политики Ranger, чтобы ограничить доступ к таблице hivesampletable. Таблица hivesampletable поставляется с кластерами HDInsight. После настройки политик вы используете Excel и драйвер ODBC для подключения к таблицам Hive в HDInsight.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Кластер HDInsight с Корпоративным пакетом безопасности. Ознакомьтесь со статьей [Настройка кластера HDInsight с корпоративным пакетом безопасности с помощью доменных служб Azure Active Directory](./apache-domain-joined-configure-using-azure-adds.md).
 * Рабочая станция с Microsoft 365ными приложениями для предприятий, Office 2016, Office 2013 профессиональный плюс, Excel 2013 standalone или Office 2010 профессиональный плюс.
@@ -48,7 +48,7 @@ ms.locfileid: "101705710"
 2. Выберите **CLUSTERNAME_Hive** в разделе **Hive**. Отобразятся две предварительно настроенные политики.
 3. Выберите **Добавить новую политику**, а затем введите следующие значения:
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |---|---|
     |Имя политики|Read-hivesampletable — все|
     |База данных Hive|default|
@@ -66,7 +66,7 @@ ms.locfileid: "101705710"
 
 5. Повторите последние два шага, чтобы создать еще одну политику со следующими свойствами.
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |---|---|
     |Имя политики|Read-hivesampletable-devicemake|
     |База данных Hive|default|
@@ -79,7 +79,7 @@ ms.locfileid: "101705710"
 
 Инструкции см. в разделе [Создание источника данных Hive ODBC](../hadoop/apache-hadoop-connect-excel-hive-odbc-driver.md).  
 
- | Свойство  |Описание |
+ | Свойство.  |Описание |
  | --- | --- |
  | Имя базы данных-источника | Присвойте имя источнику данных |
  | Узел | Введите CLUSTERNAME.azurehdinsight.net. Например, myHDICluster.azurehdinsight.net |

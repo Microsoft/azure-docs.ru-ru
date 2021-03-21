@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.custom: references_regions
 ms.openlocfilehash: 3bba1155ec57db67968aec95d1d3386fc6cda006
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100634453"
 ---
 # <a name="create-and-configure-an-azure-kubernetes-services-aks-cluster-to-use-virtual-nodes"></a>Создание и настройка кластера Azure Kubernetes Services (AKS) для использования виртуальных узлов
@@ -21,7 +21,7 @@ ms.locfileid: "100634453"
 
 В этой статье приводятся общие сведения о доступности регионов и требованиях к сети для использования виртуальных узлов, а также об известных ограничениях.
 
-## <a name="regional-availability"></a>Доступность по регионам
+## <a name="regional-availability"></a>Доступность в регионах
 
 Все регионы, где ACI поддерживает номера SKU виртуальной сети, поддерживаются для развертываний виртуальных узлов.
 

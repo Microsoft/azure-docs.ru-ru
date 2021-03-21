@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/25/2020
 ms.author: lagayhar
 ms.openlocfilehash: dd9bafab982923785898b7f135e5c0408aa19a14
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100622848"
 ---
 # <a name="map-visualization"></a>Визуализация карты
@@ -137,7 +137,7 @@ ms.locfileid: "100622848"
 
 ### <a name="color-settings"></a>Параметры цвета
 
-| Тип цвета | Объяснение |
+| Тип цвета | Пояснение |
 |:------------- |:-------------|
 | `None` | Все узлы имеют одинаковый цвет. |
 | `Thresholds` | В этом типе цвета ячеек задаются правилами порога (например, _цп > 90% => Red, 60% > цп > 90% => желтый, цп < 60% => Green_). <ul><li> **Color by**: значение этого столбца будет использоваться пороговое значение или логику тепловой карты.</li> <li>**Статистическая обработка для цвета**. в этом поле указывается, как объединять **Цвет по** столбцам, имеющим то же расположение Azure, ресурс или страну-регион. </li> <ul> |
@@ -152,6 +152,6 @@ ms.locfileid: "100622848"
 | `Aggregate 'Others' metrics by` | В этом поле указывается Статистическая обработка, используемая для группы "другие", если она отображается. |
 | `Custom formatting` | Используйте это поле, чтобы задать единицы измерения, стили и параметры форматирования для числовых значений. Это аналогично [пользовательскому форматированию сетки](../visualize/workbooks-grid-visualizations.md#custom-formatting).|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как создать [honeytoken объединение визуализаций в книгах](../visualize/workbooks-honey-comb.md).

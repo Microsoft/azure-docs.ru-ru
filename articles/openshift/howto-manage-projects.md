@@ -9,10 +9,10 @@ ms.date: 07/19/2019
 ms.topic: conceptual
 ms.service: azure-redhat-openshift
 ms.openlocfilehash: bf2cf5a0d41af15821035c615fe071c8580e125f
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100633110"
 ---
 # <a name="manage-projects-templates-image-streams-in-an-azure-red-hat-openshift-cluster"></a>Управление проектами, шаблонами, потоками изображений в кластере Azure Red Hat OpenShift

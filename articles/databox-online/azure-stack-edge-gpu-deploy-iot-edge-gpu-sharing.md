@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/12/2021
 ms.author: alkohli
 ms.openlocfilehash: b52d1e834772a2a6e0e000b3df15d8aa0fa866a9
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565404"
 ---
 # <a name="deploy-an-iot-edge-workload-using-gpu-sharing-on-your-azure-stack-edge-pro"></a>Развертывание IoT Edge рабочей нагрузки с помощью совместного использования GPU на Azure Stack крае Pro
@@ -120,7 +120,7 @@ ms.locfileid: "103565404"
 
 1. [Подключитесь к интерфейсу PowerShell устройства](azure-stack-edge-gpu-connect-powershell-interface.md#connect-to-the-powershell-interface).
 
-1. Выполните следующую команду:
+1. Выполните следующую команду.
 
     `Get-HcsGpuNvidiaSmi`
 
@@ -173,7 +173,7 @@ ms.locfileid: "103565404"
 
 1. [Подключитесь к интерфейсу PowerShell устройства](azure-stack-edge-gpu-connect-powershell-interface.md#connect-to-the-powershell-interface).
 
-1. Создайте нового пользователя в `iotedge` пространстве имен. Выполните следующую команду:
+1. Создайте нового пользователя в `iotedge` пространстве имен. Выполните следующую команду.
 
     `New-HcsKubernetesUser -UserName <user name>`
 
@@ -208,7 +208,7 @@ ms.locfileid: "103565404"
 
 1. Скопируйте выходные данные в виде обычного текста. Сохраните выходные данные в виде файла *конфигурации* (без расширения) в `.kube` папке вашего профиля пользователя на локальном компьютере, например `C:\Users\<username>\.kube` . 
 
-1. Предоставьте созданному пользователю доступ к `iotedge` пространству имен. Выполните следующую команду:
+1. Предоставьте созданному пользователю доступ к `iotedge` пространству имен. Выполните следующую команду.
 
     `Grant-HcsKubernetesNamespaceAccess -Namespace iotedge -UserName <user name>`    
 
@@ -272,7 +272,7 @@ ms.locfileid: "103565404"
 
     ![Параметры создания контейнера.](media/azure-stack-edge-gpu-deploy-iot-edge-gpu-sharing/gpu-sharing-deploy-8.png)
 
-    Щелкните **Добавить**.
+    Выберите **Добавить**.
 
 1. Добавленный модуль должен отображаться как **выполняемый**. 
 
@@ -304,7 +304,7 @@ ms.locfileid: "103565404"
 
 1. Запустите новый сеанс PowerShell.
 
-1. Выведите список модулей Pod, выполняющихся в `iotedge` пространстве имен. Выполните следующую команду:
+1. Выведите список модулей Pod, выполняющихся в `iotedge` пространстве имен. Выполните следующую команду.
 
     `kubectl get pods -n iotedge`   
 
@@ -585,6 +585,6 @@ ms.locfileid: "103565404"
     [10.100.10.10]: PS>Get-HcsGpuNvidiaSmi
     ```
     
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Развертывание общей рабочей нагрузки KUBERNETES GPU на Azure Stack крае Pro](azure-stack-edge-gpu-deploy-kubernetes-gpu-sharing.md).

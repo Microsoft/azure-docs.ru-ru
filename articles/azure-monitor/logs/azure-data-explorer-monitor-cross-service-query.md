@@ -7,10 +7,10 @@ ms.reviewer: bwren
 ms.topic: conceptual
 ms.date: 06/12/2020
 ms.openlocfilehash: 7a259af17943643e722633592e53f219726c4437
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031214"
 ---
 # <a name="cross-service-query---azure-monitor-and-azure-data-explorer-preview"></a>Кросс-Сервисный запрос — Azure Monitor и Azure обозреватель данных (Предварительная версия)

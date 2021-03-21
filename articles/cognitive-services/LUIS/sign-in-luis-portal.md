@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.author: nitinme
 author: nitinme
 ms.openlocfilehash: aeb84fca47dbf2922f17a3e8931e3158f9ee2cca
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101706781"
 ---
 # <a name="sign-in-to-luis-portal"></a>Вход на портал LUIS

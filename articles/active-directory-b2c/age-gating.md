@@ -12,10 +12,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 71a3b38da6a63824a42f64052bf16a5fe0e25483
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102522465"
 ---
 # <a name="enable-age-gating-in-azure-active-directory-b2c"></a>Включение фильтрации по возрасту в Azure Active Directory B2C
@@ -35,7 +35,7 @@ ms.locfileid: "102522465"
 Azure AD B2C использует введенные сведения, чтобы определить, является ли пользователь несовершеннолетним. Затем в учетной записи обновляется поле **ageGroup**. Возможны следующие значения: `null`, `Undefined`, `Minor`, `Adult` или `NotAdult`.  На основе значений **ageGroup** и **consentProvidedForMinor** вычисляется значение для поля **legalAgeGroupClassification**.
 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 
@@ -88,7 +88,7 @@ Azure AD B2C использует введенные сведения, чтоб�
 
 ::: zone-end
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте, как [управлять доступом пользователей в Azure AD B2C](manage-user-access.md).
 

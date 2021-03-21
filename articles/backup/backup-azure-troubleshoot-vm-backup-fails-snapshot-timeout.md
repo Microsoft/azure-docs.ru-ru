@@ -5,10 +5,10 @@ ms.topic: troubleshooting
 ms.date: 07/05/2019
 ms.service: backup
 ms.openlocfilehash: 0313394ad149460f82c98c63cab95b922b4a3da2
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102519611"
 ---
 # <a name="troubleshoot-azure-backup-failure-issues-with-the-agent-or-extension"></a>Устранение неполадок службы Azure Backup. Проблемы с агентом или расширением
@@ -57,7 +57,7 @@ Azure Backup использует расширение моментальных 
   - `C:\Packages\Plugins\Microsoft.Azure.RecoveryServices.VMSnapshot`
   - `C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.RecoveryServices.VMSnapshot`
 
-- **Проверьте, требуется ли доступ к сети**: пакеты расширений загружаются из репозитория расширений службы хранилища Azure, а передачи состояния расширения публикуются в службе хранилища Azure. [Подробнее.](../virtual-machines/extensions/features-windows.md#network-access)
+- **Проверьте, требуется ли доступ к сети**: пакеты расширений загружаются из репозитория расширений службы хранилища Azure, а передачи состояния расширения публикуются в службе хранилища Azure. [Подробнее](../virtual-machines/extensions/features-windows.md#network-access).
   - Если вы используете неподдерживаемую версию агента, необходимо разрешить исходящий доступ к службе хранилища Azure в этом регионе с виртуальной машины.
   - Если вы заблокировали доступ к `168.63.129.16` с помощью гостевого брандмауэра или прокси-сервера, расширения будут завершаться сбоем независимо от указанного выше. Требуются порты 80, 443 и 32526, [Дополнительные сведения](../virtual-machines/extensions/features-windows.md#network-access).
 

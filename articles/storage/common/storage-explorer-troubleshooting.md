@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 07/28/2020
 ms.author: delhan
 ms.openlocfilehash: 15df9b38abe35fe3eefad2fa160e1c1f16fe7aa7
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102439465"
 ---
 # <a name="azure-storage-explorer-troubleshooting-guide"></a>Руководство по устранению неполадок в обозревателе хранилищ Azure
@@ -369,7 +369,7 @@ snap connect storage-explorer:password-manager-service :password-manager-service
      sudo apt-get install -y dotnet-runtime-2.1
    ```
 
-# <a name="ubuntu-1804"></a>[Ubuntu 18.04](#tab/1804)
+# <a name="ubuntu-1804"></a>[Ubuntu 18.04](#tab/1804)
 
 1. Скачайте файл Обозреватель службы хранилища. tar. gz.
 2. Установите [среду выполнения .NET Core](/dotnet/core/install/linux):

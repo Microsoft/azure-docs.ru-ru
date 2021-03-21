@@ -12,10 +12,10 @@ ms.author: sashan
 ms.reviewer: mathoma, sstein
 ms.date: 08/27/2020
 ms.openlocfilehash: 3a678f6280b5f2d0fd372e75bfbeb6eb2e9b1577
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100634300"
 ---
 # <a name="creating-and-using-active-geo-replication---azure-sql-database"></a>Создание и использование активной георепликации в базе данных SQL Azure
@@ -254,7 +254,7 @@ ms.locfileid: "100634300"
 > [!IMPORTANT]
 > Приведенные ниже команды Transact-SQL применяются только к активной георепликации — они неприменимы к группам отработки отказа. Таким образом, они также не применяются к экземплярам SQL Управляемый экземпляр, так как они поддерживают только группы отработки отказа.
 
-| Get-Help | Описание |
+| Команда | Описание |
 | --- | --- |
 | [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql?preserve-view=true&view=azuresqldb-current) |Используйте аргумент ADD SECONDARY ON SERVER, чтобы создать базу данных-получатель для существующей базы данных и начать репликацию данных. |
 | [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql?preserve-view=true&view=azuresqldb-current) |Используйте аргумент FAILOVER или FORCE_FAILOVER_ALLOW_DATA_LOSS, чтобы задать базу данных-получатель в качестве базы данных-источника для запуска отработки отказа. |

@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 12/09/2020
 ms.topic: how-to
 ms.openlocfilehash: f2d44cc769e9673eeb75828126f806d2b2308a17
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573886"
 ---
 # <a name="create-data-controller-in-azure-data-studio"></a>Создание контроллера данных в Azure Data Studio

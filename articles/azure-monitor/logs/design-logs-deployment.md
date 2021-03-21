@@ -7,10 +7,10 @@ author: bwren
 ms.author: bwren
 ms.date: 09/20/2019
 ms.openlocfilehash: a889275782388781eadffb7cf0a24771bf6e9e4f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102030840"
 ---
 # <a name="designing-your-azure-monitor-logs-deployment"></a>Проектирование развертывания журналов Azure Monitor

@@ -6,10 +6,10 @@ ms.date: 03/27/2020
 ms.author: trbye
 ms.custom: devx-track-js
 ms.openlocfilehash: 99be483f67bf5e3f9b27c63a2318df8761c16eff
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102434533"
 ---
 :::row:::

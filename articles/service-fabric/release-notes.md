@@ -6,10 +6,10 @@ ms.topic: conceptual
 hide_comments: true
 hideEdit: true
 ms.openlocfilehash: 38ec7949b5fc04852568e9e69f35f212b1edee5d
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201033"
 ---
 # <a name="service-fabric-releases"></a>Service Fabric выпуски
@@ -49,7 +49,7 @@ ms.locfileid: "103201033"
 | 2 декабря 2020 г. | [Обновление четвертого выпуска Azure Service Fabric 7,2](https://techcommunity.microsoft.com/t5/azure-service-fabric/azure-service-fabric-7-2-fourth-refresh-release/ba-p/1950584) | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service-Fabric-72CU4.md)
 | 25 января 2021 г. | [Azure Service Fabric 7,2 пятое обновление](https://techcommunity.microsoft.com/t5/azure-service-fabric/azure-service-fabric-7-2-fifth-refresh-release/ba-p/2096575) | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service-Fabric-72CU5-ReleaseNotes.md)
 | 17 февраля 2021 г. | [Обновление шестого обновления Azure Service Fabric 7,2](https://techcommunity.microsoft.com/t5/azure-service-fabric/azure-service-fabric-sixth-refresh-release/ba-p/2144685) | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service-Fabric-72CU6-ReleaseNotes.md)
-| 10 марта 2021 г. | [Версия обновления 7,2 для Azure Service Fabric седьмая](https://techcommunity.microsoft.com/t5/azure-service-fabric/azure-service-fabric-seventh-refresh-release/ba-p/2201100) | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service-Fabric-72CU7-releasenotes.md)
+| 10 марта 2021 г. | [Версия обновления 7,2 для Azure Service Fabric седьмая](https://techcommunity.microsoft.com/t5/azure-service-fabric/azure-service-fabric-seventh-refresh-release/ba-p/2201100) | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service-Fabric-72CU7-releasenotes.md)
 
 ## <a name="previous-versions"></a>предыдущих версий
 
@@ -179,7 +179,7 @@ Azure Service Fabric 7,0 теперь доступна! Вы сможете вы
 | Дата выпуска | Release | Дополнительные сведения |
 |---|---|---|
 | 11 июня 2019 г. | [Azure Service Fabric 6,5](https://techcommunity.microsoft.com/t5/azure-service-fabric/bg-p/Service-Fabric)  | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service_Fabric_ReleaseNotes_65.pdf)|
-| 2 июля 2019 г. | [Обновление выпуска Azure Service Fabric 6,5](https://techcommunity.microsoft.com/t5/azure-service-fabric/bg-p/Service-Fabric)  | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service_Fabric_ReleaseNotes_65CU1.pdf)  |
+| 2 июля 2019 г. | [Обновление выпуска Azure Service Fabric 6,5](https://techcommunity.microsoft.com/t5/azure-service-fabric/bg-p/Service-Fabric)  | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service_Fabric_ReleaseNotes_65CU1.pdf)  |
 | 29 июля 2019 г. | [Обновление выпуска Azure Service Fabric 6,5](https://techcommunity.microsoft.com/t5/Azure-Service-Fabric/Azure-Service-Fabric-6-5-Second-Refresh-Release/ba-p/800523)  | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service_Fabric_ReleaseNotes_65CU2.pdf)  |
 | Авг 23, 2019 | [Обновление выпуска Azure Service Fabric 6,5](https://techcommunity.microsoft.com/t5/Azure-Service-Fabric/Azure-Service-Fabric-6-5-Third-Refresh-Release/ba-p/818599)  | [Заметки о выпуске](https://github.com/microsoft/service-fabric/blob/master/release_notes/Service_Fabric_ReleaseNotes_65CU3.pdf)  |
 | 14 октября 2019 г. | [Обновление выпуска Azure Service Fabric 6,5](https://techcommunity.microsoft.com/t5/Azure-Service-Fabric/Azure-Service-Fabric-6-5-Fifth-Refresh-Release/ba-p/913296)  | [Заметки о выпуске] (https://github.com/microsoft/service-fabric/blob/master/release_notes/Service_Fabric_ReleaseNotes_65CU5.md  |

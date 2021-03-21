@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 01/09/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 55f375c83affea8585ec7ebf881a80315ff7a38c
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100361328"
 ---
 # <a name="create-and-manage-private-link-for-azure-database-for-mariadb-using-cli"></a>Создание и управление частной ссылкой для базы данных Azure для MariaDB с помощью интерфейса командной строки
@@ -23,7 +23,7 @@ ms.locfileid: "100361328"
 
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Необходим [сервер базы данных Azure для MariaDB](quickstart-create-mariadb-server-database-using-azure-cli.md). 
 

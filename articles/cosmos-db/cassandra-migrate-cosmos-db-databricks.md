@@ -9,10 +9,10 @@ ms.date: 03/10/2021
 ms.author: thvankra
 ms.reviewer: thvankra
 ms.openlocfilehash: caf9cbb0ca017ee00c5061d94e0d37703194943d
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573386"
 ---
 # <a name="migrate-data-from-cassandra-to-azure-cosmos-db-cassandra-api-account-using-azure-databricks"></a>Перенос данных из Cassandra в учетную запись API Cassandra Azure Cosmos DB с помощью Azure Databricks
@@ -44,7 +44,7 @@ API Cassandra в Azure Cosmos DB стали отличным выбором дл
 
 Вы можете выполнить инструкции по [подготовке кластера Azure Databricks](/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal). Рекомендуется выбрать среду выполнения для модуля, версия 7,5, которая поддерживает Spark 3,0:
 
-:::image type="content" source="./media/cassandra-migrate-cosmos-db-databricks/databricks-runtime.png" alt-text="Среда выполнения модулями":::
+:::image type="content" source="./media/cassandra-migrate-cosmos-db-databricks/databricks-runtime.png" alt-text="Среда выполнения Databricks Runtime":::
 
 
 ## <a name="add-dependencies"></a>Добавление зависимостей
@@ -124,7 +124,7 @@ DFfromNativeCassandra
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Обеспечение необходимой пропускной способности для контейнеров и баз данных](set-throughput.md) 
 * [Рекомендации по использованию ключа секции](partitioning-overview.md#choose-partitionkey)

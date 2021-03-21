@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 02/24/2021
 ms.author: chuye
 ms.openlocfilehash: 0d588d85852f798542c5d52658e8dae3b9e57949
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746407"
 ---
 # <a name="azure-storage-explorer-command-line-options"></a>Параметры командной строки Обозреватель службы хранилища Azure

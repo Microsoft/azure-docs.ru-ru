@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
 ms.openlocfilehash: 4d75986880075f6eb07aa31b9322bdae15535802
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102437610"
 ---
 # <a name="enable-azure-arc-on-kubernetes-cluster-on-your-azure-stack-edge-pro-gpu-device"></a>Включение службы "Дуга Azure" в кластере Kubernetes на устройстве с Azure Stack ребра Pro GPU
@@ -24,7 +24,7 @@ ms.locfileid: "102437610"
 Эта процедура предназначена для тех, кто ознакомился с [Kubernetes рабочими нагрузками на устройстве на Azure Stack пограничной Pro](azure-stack-edge-gpu-kubernetes-workload-management.md) и знаком с концепциями того, [что такое служба "Дуга Azure Kubernetes (Предварительная версия)"](../azure-arc/kubernetes/overview.md).
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем включать службу "Дуга Azure" в кластере Kubernetes, убедитесь, что выполнены следующие предварительные требования на устройстве Azure Stack пограничной Pro и на клиенте, который будет использоваться для доступа к устройству:
 

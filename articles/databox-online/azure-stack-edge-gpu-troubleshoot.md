@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: 696faaecd2227c9b9ef74f20763e36661991ff67
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102438989"
 ---
 # <a name="troubleshoot-issues-on-your-azure-stack-edge-pro-gpu-device"></a>Устранение неполадок на устройстве GPU Azure Stack с пограничными устройствами 

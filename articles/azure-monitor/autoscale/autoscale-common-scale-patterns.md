@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 05/07/2017
 ms.subservice: autoscale
 ms.openlocfilehash: adbfecd05bfd4330e7c7c972cfdb9fe7021eec31
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100623892"
 ---
 # <a name="overview-of-common-autoscale-patterns"></a>Обзор общих шаблонов автомасштабирования

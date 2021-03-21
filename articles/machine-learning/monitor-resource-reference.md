@@ -11,10 +11,10 @@ author: aashishb
 ms.custom: subject-monitoring
 ms.date: 10/02/2020
 ms.openlocfilehash: f130fc0c65c49c33c838812fc2758619e0d1bca0
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102521345"
 ---
 # <a name="monitoring-azure-machine-learning-data-reference"></a>Справочник по мониторингу данных машинного обучения Azure
@@ -119,7 +119,7 @@ ms.locfileid: "102521345"
 
 Поставщик ресурсов и тип: [Microsoft. мачинелеарнингсервицес/Workspace](../azure-monitor/essentials/resource-logs-categories.md#microsoftmachinelearningservicesworkspaces).
 
-| Категория | Отображаемое имя |
+| Category | Отображаемое имя |
 | ----- | ----- |
 | амлкомпутеклустеревент | амлкомпутеклустеревент |
 | амлкомпутеклустернодивент | амлкомпутеклустернодивент |
@@ -133,11 +133,11 @@ ms.locfileid: "102521345"
 
 ### <a name="amlcomputejobevents-table"></a>Таблица Амлкомпутежобевентс
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:---|
 | TimeGenerated | Время создания записи журнала |
 | OperationName | Имя операции, связанной с событием журнала |
-| Категория | Имя события журнала Амлкомпутеклустернодивент |
+| Category | Имя события журнала Амлкомпутеклустернодивент |
 | JobId | Идентификатор отправленного задания |
 | експериментид | ИДЕНТИФИКАТОР эксперимента |
 | експериментнаме | Имя эксперимента |
@@ -162,11 +162,11 @@ ms.locfileid: "102521345"
 
 ### <a name="amlcomputeclusterevents-table"></a>Таблица Амлкомпутеклустеревентс
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | TimeGenerated | Время создания записи журнала |
 | OperationName | Имя операции, связанной с событием журнала |
-| Категория | Имя события журнала Амлкомпутеклустернодивент |
+| Category | Имя события журнала Амлкомпутеклустернодивент |
 | ProvisioningState | Состояние подготовки кластера |
 | ClusterName | Имя кластера |
 | ClusterType | Тип кластера |
@@ -205,11 +205,11 @@ ms.locfileid: "102521345"
 
 ### <a name="amlcomputeclusternodeevents-table"></a>Таблица Амлкомпутеклустернодивентс
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | TimeGenerated | Время создания записи журнала |
 | OperationName | Имя операции, связанной с событием журнала |
-| Категория | Имя события журнала Амлкомпутеклустернодивент |
+| Category | Имя события журнала Амлкомпутеклустернодивент |
 | ClusterName | Имя кластера |
 | NodeId | Идентификатор созданного узла кластера |
 | VmSize | Размер виртуальной машины узла |
@@ -229,7 +229,7 @@ ms.locfileid: "102521345"
 | TotalE2ETimeInSeconds | Общее время активности узла |
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Описание Машинное обучение Azure мониторинга см. в разделе [monitoring машинное обучение Azure](monitor-azure-machine-learning.md) .
 - Подробные сведения о мониторинге ресурсов Azure см. в статье [Мониторинг ресурсов Azure с помощью Azure Monitor](../azure-monitor/essentials/monitor-azure-resource.md).

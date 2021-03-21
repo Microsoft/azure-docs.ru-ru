@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 01/29/2021
 ms.author: apimpm
 ms.openlocfilehash: f6474dbd02c501612b951ddae490385a5d843fbf
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99500634"
 ---
 # <a name="set-up-a-service-fabric-backend-in-api-management-using-the-azure-portal"></a>Настройка Service Fabric серверной части в службе управления API с помощью портал Azure
@@ -22,7 +22,7 @@ ms.locfileid: "99500634"
 
 Дополнительные сведения см. в разделе задние [концы в управлении API](backends.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Предварительные требования для настройки примера службы в кластере Service Fabric под Windows в качестве пользовательского серверного сервера:
 
@@ -59,7 +59,7 @@ ms.locfileid: "99500634"
 1. В разделе **интерфейсы API** выберите **элементы "конец**" + "  >  **Добавить**".
 1. Введите имя серверной части и необязательное описание
 1. В списке **тип** выберите **Service Fabric**.
-1. В поле **URL-адрес среды выполнения** введите имя серверной службы Service Fabric, на которую служба управления API будет пересылать запросы. Пример: `fabric:/myApplication/myService`. 
+1. В поле **URL-адрес среды выполнения** введите имя серверной службы Service Fabric, на которую служба управления API будет пересылать запросы. Например, `fabric:/myApplication/myService`. 
 1. В **разделе Максимальное число повторных попыток разрешения секций** введите число от 0 до 10.
 1. Введите конечную точку управления кластера Service Fabric. Эта конечная точка является URL-адресом кластера в порте `19080` , например `https://mysfcluster.eastus.cloudapp.azure.com:19080` .
 1. В поле **сертификат клиента** выберите сертификат кластера Service Fabric, добавленный в экземпляр управления API в предыдущем разделе.

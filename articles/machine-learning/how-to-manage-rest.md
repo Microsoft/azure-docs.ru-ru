@@ -11,10 +11,10 @@ ms.date: 01/31/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
 ms.openlocfilehash: b61050db29ff960b7923f2211b2f09649608b37e
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520325"
 ---
 # <a name="create-run-and-delete-azure-ml-resources-using-rest"></a>Создание, запуск и удаление ресурсов машинного обучения Azure с помощью функции "ОСТАВШАЯся"
@@ -212,7 +212,7 @@ providers/Microsoft.MachineLearningServices/workspaces/{your-workspace-name}/mod
 
 Вы можете исследовать REST API, используя общий шаблон:
 
-|Компонент URL-адреса|Например, .|
+|Компонент URL-адреса|Пример|
 |-|-|
 | https://| |
 | региональные API — сервер/ | centralus.api.azureml.ms/ |

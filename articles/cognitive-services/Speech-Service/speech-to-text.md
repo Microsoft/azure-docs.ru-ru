@@ -13,10 +13,10 @@ ms.author: trbye
 ms.custom: cog-serv-seo-aug-2020
 keywords: преобразование речи в текст, программа для преобразования речи в текст
 ms.openlocfilehash: 5e593202a8cd68dfc4a92f991d573b4b06051b36
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102434329"
 ---
 # <a name="what-is-speech-to-text"></a>Что такое преобразование речи в текст?
@@ -38,7 +38,7 @@ ms.locfileid: "102434329"
 
 Ознакомьтесь с [кратким](get-started-speech-to-text.md) руководством, чтобы приступить к работе с речью-текстом. Эта служба доступна через [речевой пакет SDK](speech-sdk.md), [REST API](rest-speech-to-text.md#pronunciation-assessment-parameters)и [речевой интерфейс командной строки](spx-overview.md).
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Пример кода для пакета SDK для распознавания речи доступен на сайте GitHub. В этих примерах рассматриваются сценарии общего характера, такие как чтение аудио из файла или потока, непрерывное и одиночное распознавание, а также работа с пользовательскими моделями.
 

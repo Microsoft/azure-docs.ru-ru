@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: storage
 ms.subservice: partner
 ms.openlocfilehash: 82ba49beb74fbc7b6f9d976d123fd9465d585d88
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103561623"
 ---
 # <a name="azure-storage-data-governance-management-and-migration-partners"></a>Партнеры по управлению данными и миграции данных в службе хранилища Azure

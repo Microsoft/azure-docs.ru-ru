@@ -12,10 +12,10 @@ ms.date: 11/16/2020
 ms.topic: conceptual
 ms.custom: how-to
 ms.openlocfilehash: b6e6288f125da2a29a8eff56b64f327914f90cb4
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520478"
 ---
 # <a name="use-azure-ad-identity-with-your-machine-learning-web-service-in-azure-kubernetes-service"></a>Использование удостоверения Azure AD с веб-службой машинного обучения в Службе Azure Kubernetes

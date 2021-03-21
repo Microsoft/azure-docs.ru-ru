@@ -5,10 +5,10 @@ ms.date: 11/20/2019
 ms.topic: how-to
 ms.reviewer: janders
 ms.openlocfilehash: 0b659fa9f15cd41e9e55de526747d470046cafa4
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101091269"
 ---
 # <a name="configure-azure-blockchain-service-transaction-nodes"></a>Настройка узлов транзакций службы Azure Блокчейн
@@ -121,7 +121,7 @@ ms.locfileid: "101091269"
 
 ![Строки подключения](./media/configure-transaction-nodes/connection-strings.png)
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Пример кода предоставляется для быстрого включения подключения к узлу транзакции через Web3, Несереум, Web3js и Труффле.
 

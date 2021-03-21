@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: edca7e4e8f6a9ea8dd9efdaafab8c906efd671b6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101708277"
 ---
 # <a name="how-to-update-container-insights-to-enable-metrics"></a>Обновление контейнера Insights для включения метрик
@@ -35,7 +35,7 @@ ms.locfileid: "101708277"
 > [!IMPORTANT]
 > Обновление не требуется для кластеров Kubernetes с поддержкой службы "Дуга Azure", так как они уже имеют минимальную требуемую версию агента.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед обновлением кластера подтвердите следующее.
 

@@ -8,10 +8,10 @@ ms.date: 12/2/2020
 ms.topic: how-to
 ms.service: azure
 ms.openlocfilehash: 175f006adbc18d21e0f0c5d859737aedb00bc457
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103574668"
 ---
 # <a name="defender-for-iot-installation"></a>Установка защитника для IoT
@@ -245,7 +245,7 @@ ms.locfileid: "103574668"
 
    :::image type="content" source="media/tutorial-install-components/configuration-screen.png" alt-text="Снимок экрана, на котором показана конфигурация профиля сервера.":::
 
-   | Параметр | Параметр Configuration |
+   | Параметр | Конфигурация |
    |--|--|
    | Тип расположения | Выберите **локальный**. |
    | Путь к файлу | Выберите **выбрать файл** и добавить XML-файл конфигурации. |
@@ -338,7 +338,7 @@ ms.locfileid: "103574668"
 
    :::image type="content" source="media/tutorial-install-components/appliance-profile-screen-v2.png" alt-text="Снимок экрана, на котором показан профиль устройства.":::   
 
-   | Параметр | Параметр Configuration |
+   | Параметр | Конфигурация |
    |--|--|
    | **Профиль оборудования** | **компании** |
    | **Интерфейс управления** | **eno1** |
@@ -478,7 +478,7 @@ ms.locfileid: "103574668"
 
     :::image type="content" source="media/tutorial-install-components/installation-wizard-screen-v2.png" alt-text="Снимок экрана, на котором показан мастер установки.":::
 
-    | Параметр | Параметр Configuration |
+    | Параметр | Конфигурация |
     | ----------| ------------- |
     | **Профиль оборудования** | Выберите **Enterprise** или **Office** для развертываний SMB. |
     | **Интерфейс управления** | **eno2** |
@@ -562,7 +562,7 @@ ms.locfileid: "103574668"
 
     :::image type="content" source="media/tutorial-install-components/installation-wizard-screen-v2.png" alt-text="Снимок экрана, на котором показан мастер установки.":::
 
-    | Параметр | Параметр Configuration |
+    | Параметр | Конфигурация |
     | ----------| ------------- |
     | **Профиль оборудования** | Выберите **Корпоративный**. |
     | **Интерфейс управления** | **eno2** |
@@ -686,7 +686,7 @@ ms.locfileid: "103574668"
 
 1. Определите профиль устройства и свойства сети:
 
-    | Параметр | Параметр Configuration |
+    | Параметр | Конфигурация |
     | ----------| ------------- |
     | **Профиль оборудования** | &lt;Требуемая архитектура&gt; |
     | **Интерфейс управления** | **ens192** |
@@ -1084,6 +1084,6 @@ ms.locfileid: "103574668"
 
 1. Введите `--port 10000`.
 
-### <a name="next-steps"></a>Дальнейшие действия
+### <a name="next-steps"></a>Следующие шаги
 
 [Настройка сети](how-to-set-up-your-network.md)

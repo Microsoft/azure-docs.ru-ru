@@ -7,12 +7,12 @@ ms.author: chez
 ms.reviewer: ''
 ms.topic: conceptual
 ms.date: 03/02/2021
-ms.openlocfilehash: 57024d6cb23ab273aa69bf59f4ec436a6f873a05
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 50a9f9cd59ebeecae89580c878442eb20788f462
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102193553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104593651"
 ---
 # <a name="reference-trigger-metadata-in-pipeline-runs"></a>Ссылки на метаданные триггера при выполнении конвейера
 
@@ -22,7 +22,7 @@ ms.locfileid: "102193553"
 
 Иногда конвейеру необходимо понимать и считывать метаданные из триггера, который вызывает его. Например, при запуске триггера окна "переворачивающегося" на основе времени начала и окончания работы окна конвейер будет обрабатывать различные срезы данных или папки. В фабрике данных Azure мы используем параметризации и [системную переменную](control-flow-system-variables.md) для передачи метаданных из триггера в конвейер.
 
-Этот шаблон особенно полезен для [триггера окна "переворачивающегося"](how-to-create-tumbling-window-trigger.md), где триггер предоставляет время начала и окончания работы окна.
+Этот шаблон особенно полезен для [триггера окна "переворачивающегося"](how-to-create-tumbling-window-trigger.md), где триггер предоставляет время начала и окончания работы окна, а также [пользовательский триггер события](how-to-create-custom-event-trigger.md), где триггеры анализируют и обрабатывают значения в [настраиваемом поле _данных_](../event-grid/event-schema.md).
 
 > [!NOTE]
 > Другой тип триггера предоставляет различные сведения о метаданных. Дополнительные сведения см. в разделе [системная переменная](control-flow-system-variables.md) .

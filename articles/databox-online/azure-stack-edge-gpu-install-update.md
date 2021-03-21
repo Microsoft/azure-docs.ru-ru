@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/21/2021
 ms.author: alkohli
 ms.openlocfilehash: 4590949f2feb86dc344dce87f3ff447e0e05e8ee
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102438120"
 ---
 # <a name="update-your-azure-stack-edge-pro-gpu"></a>Обновление графического процессора Azure Stack ребра Pro 
@@ -91,7 +91,7 @@ ms.locfileid: "102438120"
 
     ![Версия программного обеспечения после обновления 7](./media/azure-stack-edge-gpu-install-update/portal-update-6.png)
 
-    Если выбрана загрузка только обновлений, выберите уведомление, чтобы открыть колонку **обновления устройства** . Выберите пункт **Установить**.
+    Если выбрана загрузка только обновлений, выберите уведомление, чтобы открыть колонку **обновления устройства** . Нажмите кнопку **Установить**.
   
     ![Версия программного обеспечения после обновления 8](./media/azure-stack-edge-gpu-install-update/portal-update-7.png)
 
@@ -172,7 +172,7 @@ ms.locfileid: "102438120"
    
     <!--![Search catalog 2](./media/azure-stack-edge-gpu-install-update/download-update-2-b.png)-->
 
-4. Выберите **Скачать**. Существует два файла для загрузки с *SoftwareUpdatePackage.exe* и *Kubernetes_Package.exe* суффиксы, соответствующие обновлениям программного обеспечения устройства и обновлениям Kubernetes соответственно. Скачайте файлы в папку в локальной системе. Эту папку также можно скопировать в сетевую папку, доступную с вашего устройства.
+4. Выберите **Загрузить**. Существует два файла для загрузки с *SoftwareUpdatePackage.exe* и *Kubernetes_Package.exe* суффиксы, соответствующие обновлениям программного обеспечения устройства и обновлениям Kubernetes соответственно. Скачайте файлы в папку в локальной системе. Эту папку также можно скопировать в сетевую папку, доступную с вашего устройства.
 
 ### <a name="install-the-update-or-the-hotfix"></a>Установка обновления или исправления
 

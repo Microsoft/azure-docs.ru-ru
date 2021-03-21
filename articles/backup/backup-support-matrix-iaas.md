@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/13/2019
 ms.custom: references_regions
 ms.openlocfilehash: 82de73944bd833ec5f921e07a29960ac6d175f8d
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102609793"
 ---
 # <a name="support-matrix-for-azure-vm-backup"></a>Матрица поддержки для резервного копирования виртуальных машин Azure

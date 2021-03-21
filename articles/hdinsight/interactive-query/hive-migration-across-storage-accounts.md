@@ -8,10 +8,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 12/11/2020
 ms.openlocfilehash: 0d62bebddb7751c168ba2e487b2391a40bbc6e67
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101747226"
 ---
 # <a name="hive-workload-migration-to-new-account-in-azure-storage"></a>Миграция рабочей нагрузки Hive в новую учетную запись в службе хранилища Azure
@@ -20,7 +20,7 @@ ms.locfileid: "101747226"
 
 Чтобы вручную скопировать отдельную таблицу Hive в HDInsight 4,0, см. раздел [Экспорт и импорт Hive](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+ImportExport).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Новый кластер HDInsight со следующими конфигурациями:
   * Его файловая система по умолчанию находится в целевой учетной записи хранения. См. статью [Использование службы хранилища Azure с кластерами Azure HDInsight](../hdinsight-hadoop-use-blob-storage.md).
@@ -33,7 +33,7 @@ ms.locfileid: "101747226"
   * Добавьте исходную учетную запись хранения в новый кластер.
   * Добавьте промежуточную учетную запись хранения в исходные и новые кластеры.
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 
 Мы выполним действие сценария для экспорта таблиц Hive из исходного кластера в указанный каталог HDFS. См. раздел [действие сценария в работающем кластере](../hdinsight-hadoop-customize-cluster-linux.md#script-action-to-a-running-cluster).
 
@@ -61,7 +61,7 @@ ms.locfileid: "101747226"
 
     При необходимости используйте, `--run-script=false` чтобы настроить их перед выполнением вручную.
 
-    |Свойство | Значение |
+    |Свойство. | Значение |
     |---|---|
     |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/linuxhivemigrationv01/export-hive-data-v01.sh`|
     |Типы узлов|Head|
@@ -84,7 +84,7 @@ ms.locfileid: "101747226"
 
 2. После успешного завершения экспорта примените действие скрипта импорта в новом кластере со следующими полями.
 
-    |Свойство | Значение |
+    |Свойство. | Значение |
     |---|---|
     |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/linuxhivemigrationv01/import-hive-data-v01.sh`|
     |Типы узлов|Head|

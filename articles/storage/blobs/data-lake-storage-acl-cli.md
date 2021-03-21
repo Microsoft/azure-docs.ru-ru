@@ -11,10 +11,10 @@ ms.author: normesta
 ms.reviewer: prishet
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 5ec7d2b243a5eadab2d22dea14ebeac8eabb1722
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563170"
 ---
 # <a name="use-azure-cli-to-manage-acls-in-azure-data-lake-storage-gen2"></a>Использование Azure CLI для управления списками ACL в Azure Data Lake Storage 2-го поколения

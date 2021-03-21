@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 681d92ed162feff0510067556d7eeaa47b12d988
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520036"
 ---
 # <a name="hybrid-identity-required-ports-and-protocols"></a>Порты и протоколы, необходимые для гибридной идентификации
@@ -105,7 +105,7 @@ ms.locfileid: "102520036"
 | Протокол | порты; | Описание |
 | --- | --- | --- |
 | HTTPS |443 (TCP) |Исходящий трафик |
-| Служебная шина Azure |5671 (TCP) |Исходящий трафик |
+| Azure Service Bus |5671 (TCP) |Исходящий трафик |
 
 Порт 5671 служебной шины Azure больше не требуется для последней версии агента. Последняя версия агента Azure AD Connect Health только требуемый порт 443.
 

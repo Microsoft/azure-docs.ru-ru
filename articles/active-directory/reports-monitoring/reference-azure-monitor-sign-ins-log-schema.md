@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: besiler
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bad8ae86827144269e816a6c2e01d6af3f4d88ac
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225424"
 ---
 # <a name="interpret-the-azure-ad-sign-in-logs-schema-in-azure-monitor"></a>Анализ схемы журналов входа в Azure AD в Azure Monitor
@@ -149,7 +149,7 @@ ms.locfileid: "103225424"
 | ResourceId | - | Это значение не сопоставлено, и его можно игнорировать.  |
 | OperationName | - | Для операций входа это поле всегда имеет значение *Sign-in activity*. |
 | OperationVersion | - | Запрошенная клиентом версия REST API. |
-| Категория | - | Для операций входа это поле всегда имеет значение *SignIn*. | 
+| Category | - | Для операций входа это поле всегда имеет значение *SignIn*. | 
 | TenantId | - | Связанный с журналами уникальный идентификатор (GUID) клиента. |
 | ResultType | - | Результатом операции входа может быть *Success* или *Failure*. | 
 | ResultSignature | - | Содержит код ошибки, которая возникла во время входа. |
@@ -165,11 +165,11 @@ ms.locfileid: "103225424"
 | CallerIpAddress | - | IP-адрес отправившего запрос клиента. | 
 | CorrelationId | - | Необязательный код GUID, который передал клиент. Это значение может помочь найти связь между операциями на стороне клиента и операциями на стороне сервера. Кроме того, оно может пригодиться при отслеживании журналов, в которые записываются данные о многих службах. |
 | Идентификация | - | Удостоверение из маркера, предоставленное при выполнении запроса. Это может быть учетная запись пользователя, системная учетная запись или субъект-служба. |
-| Уровень | - | Предоставляет тип сообщения. Для операций аудита это поле всегда имеет значение *Informational*. |
+| Level | - | Предоставляет тип сообщения. Для операций аудита это поле всегда имеет значение *Informational*. |
 | Расположение | - | Содержит сведения о местонахождении, в котором выполнялась операция входа. |
 | Свойства | - | Содержит все свойства, связанные с операциями входа.|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Interpret the Azure AD audit logs schema in Azure Monitor (preview)](reference-azure-monitor-audit-log-schema.md) (Интерпретация схемы журналов аудита Azure Active Directory в Azure Monitor (предварительная версия))
 * [Подробнее о журналах платформы Azure](../../azure-monitor/essentials/platform-logs-overview.md)
