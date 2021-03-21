@@ -4,10 +4,10 @@ description: Основные понятия и аспекты Azure Service Fab
 ms.topic: conceptual
 ms.date: 12/08/2017
 ms.openlocfilehash: c709abe1087a9cc69c9e6e23cd1ff344a3dbebd2
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100589039"
 ---
 # <a name="so-you-want-to-learn-about-service-fabric"></a>Что бы вы хотели узнать о Service Fabric?
@@ -182,7 +182,7 @@ Service Fabric предоставляет несколько способов [�
 
 Доступны разные продукты с поддержкой этих трех областей, и вы можете использовать разные инструменты для реализации каждого из этапов. См. дополнительные сведения о [мониторинге и диагностике в Azure Service Fabric](service-fabric-diagnostics-overview.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как создать [кластер в Azure](service-fabric-cluster-creation-via-portal.md) или [автономный кластер в Windows](service-fabric-cluster-creation-for-windows-server.md).
 * Попробуйте создать службу с помощью модели программирования [Reliable Services](service-fabric-reliable-services-quick-start.md) или [Reliable Actors](service-fabric-reliable-actors-get-started.md).
 * Узнайте, [как выполнять миграцию из облачных служб](service-fabric-cloud-services-migration-differences.md).

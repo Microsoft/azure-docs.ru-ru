@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.service: security-center
 manager: rkarlin
 ms.openlocfilehash: ee4992e41e792b570d8937edfe31efb4c651d742
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102100735"
 ---
 # <a name="use-azure-defender-for-container-registries-to-scan-your-images-for-vulnerabilities"></a>Использование Azure Defender для реестров контейнеров с целью проверки образов на наличие уязвимостей
@@ -122,10 +122,10 @@ ms.locfileid: "102100735"
 Можно использовать любой из следующих критериев: 
 
 - Поиск идентификатора 
-- Категория
+- Category
 - Проверка безопасности 
 - Оценки CVSS v3
-- Severity 
+- Уровень серьезности 
 - Состояние исправления 
 
 Чтобы создать правило, выполните следующие действия.

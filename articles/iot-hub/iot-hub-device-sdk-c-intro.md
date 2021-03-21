@@ -14,10 +14,10 @@ ms.custom:
 - 'Role: Cloud Development'
 - 'Role: IoT Device'
 ms.openlocfilehash: 17b31e365e311b97e322828927827f40733313a6
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97588834"
 ---
 # <a name="azure-iot-device-sdk-for-c"></a>Пакет SDK для устройств Azure IoT для C
@@ -582,7 +582,7 @@ serializer_deinit();
 
 Каждая из этих трех функций соответствуют трем функциям инициализации, описанным ранее. Вызов этих API позволит освободить выделенные ранее ресурсы.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье были рассмотрены основы использования библиотек в **пакете SDK для устройств Azure IOT для C**. Он предоставил достаточно информации, чтобы понять, что входит в пакет SDK, его архитектуру и как приступить к работе с примерами Windows. В следующей статье также рассказывается о пакете SDK и приводятся [дополнительные сведения о библиотеке IoTHubClient](iot-hub-device-sdk-c-iothubclient.md).
 

@@ -8,10 +8,10 @@ ms.date: 1/28/2021
 ms.topic: conceptual
 ms.service: digital-twins
 ms.openlocfilehash: 8010581667354f2e8484bc7341227ec41713d10f
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99072725"
 ---
 # <a name="what-is-the-new-azure-digital-twins-how-is-it-different-from-the-original-version-2018"></a>Новые возможности в Azure Digital Twins. Чем она отличается от исходной версии (2018)?
@@ -38,7 +38,7 @@ ms.locfileid: "99072725"
 
 ## <a name="service-limits"></a>Ограничения службы
 
-Список ограничений Azure Digital двойников см. в статье [*ограничения службы цифровых двойников Azure*](reference-service-limits.md).
+Список ограничений см. в статье [*Ограничения службы Azure Digital Twins*](reference-service-limits.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

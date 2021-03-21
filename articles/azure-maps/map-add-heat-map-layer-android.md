@@ -10,10 +10,10 @@ services: azure-maps
 manager: cpendle
 zone_pivot_groups: azure-maps-android
 ms.openlocfilehash: fce2c2d007f92c43e763826f9345f773324e885e
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102100191"
 ---
 # <a name="add-a-heat-map-layer-android-sdk"></a>Добавление слоя тепловой карт (пакет SDK для Android)
@@ -291,7 +291,7 @@ val layer = HeatMapLayer(source,
 
 ![Анимация, показывающая изменение размера карт с помощью слоя тепловой карт с одинаковым геопространственном размером](media/map-add-heat-map-layer-android/android-consistent-zoomable-heat-map-layer.gif)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные примеры кода для добавления в карты см. в следующих статьях:
 

@@ -8,10 +8,10 @@ ms.date: 02/01/2021
 ms.author: govindk
 ms.reviewer: sngun
 ms.openlocfilehash: 1cf94964f420f7a7d4fc0f6ba0b77813b3e75787
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100393230"
 ---
 # <a name="frequently-asked-questions-on-the-azure-cosmos-db-point-in-time-restore-feature-preview"></a>Часто задаваемые вопросы о функции восстановления Azure Cosmos DB на момент времени (Предварительная версия)
@@ -79,7 +79,7 @@ ProvisioningState отображается, *Если* учетная запис
 
 ID или `instanceId` является свойством экземпляра учетной записи и используется для устранения неоднозначности в нескольких учетных записях (активных и удаленных), если они имеют одно и то же имя для восстановления. Идентификатор экземпляра можно получить, выполнив `Get-AzCosmosDBRestorableDatabaseAccount`  `az cosmosdb restorable-database-account` команды или. Значение атрибута Name обозначает "InstanceID".
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Что такое режим [непрерывного резервного копирования](continuous-backup-restore-introduction.md) ?
 * Настройка непрерывного резервного копирования и управление им с помощью [портал Azure](continuous-backup-restore-portal.md), [PowerShell](continuous-backup-restore-powershell.md), [интерфейса командной строки](continuous-backup-restore-command-line.md)или [Azure Resource Manager](continuous-backup-restore-template.md).

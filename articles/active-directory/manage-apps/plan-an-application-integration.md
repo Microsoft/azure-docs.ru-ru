@@ -12,10 +12,10 @@ ms.date: 07/16/2018
 ms.author: kenwith
 ms.reviewer: asteen
 ms.openlocfilehash: 8b321acb00e6e9b4b6cca117afba8bf0c9432719
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99258472"
 ---
 # <a name="integrating-azure-active-directory-with-applications-getting-started-guide"></a>Руководство по интеграции Azure Active Directory с приложениями
@@ -41,7 +41,7 @@ ms.locfileid: "99258472"
   * Azure AD
   * в отдельной базе данных приложений, владельцем которой вы являетесь;
   * в несанкционированных приложениях;
-  * Все вышеперечисленное
+  * Все вышеперечисленное.
 * Какие разрешения и роли в настоящее время назначены пользователям? Необходимо ли пересмотреть права доступа, или вы уверены, что право доступа и роли назначены пользователям правильно?
 * В вашем локальном каталоге Active Directory уже созданы группы?
   * Как эти группы упорядочены?

@@ -10,10 +10,10 @@ ms.date: 03/09/2021
 ms.author: tamram
 ms.subservice: common
 ms.openlocfilehash: 24d955b0d1c53f57f5927f9e893b6ecd75fb3ca8
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102561897"
 ---
 # <a name="storage-account-overview"></a>Общие сведения об учетной записи хранения
@@ -175,7 +175,7 @@ ms.locfileid: "102561897"
 > [!IMPORTANT]
 > Изменение уровня доступа для имеющейся учетной записи хранения или большого двоичного объекта может привести к дополнительным затратам. Дополнительные сведения см. в разделе [выставление счетов в учетной записи хранения](#storage-account-billing).
 
-## <a name="encryption"></a>Шифрование
+## <a name="encryption"></a>Encryption
 
 Все данные в вашей учетной записи хранения шифруются на стороне службы. Дополнительные сведения о шифровании см. в статье [Шифрование службы хранилища Azure для неактивных данных](storage-service-encryption.md).
 

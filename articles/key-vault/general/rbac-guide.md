@@ -10,13 +10,13 @@ ms.topic: how-to
 ms.date: 8/30/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 886b87adeabdc0aadde04c189b78739435aabede
-ms.sourcegitcommit: e3151d9b352d4b69c4438c12b3b55413b4565e2f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100527070"
 ---
-# <a name="provide-access-to-key-vault-keys-certificates-and-secrets-with-an-azure-role-based-access-control"></a>Предоставление доступа к ключам, сертификатам и секретам Key Vault с помощью управления доступом на основе ролей в Azure
+# <a name="provide-access-to-key-vault-keys-certificates-and-secrets-with-an-azure-role-based-access-control"></a>Предоставление доступа к ключам, сертификатам и секретам Key Vault с помощью управления доступом на основе ролей Azure
 
 > [!NOTE]
 > Поставщик ресурсов Key Vault поддерживает два типа ресурсов: **хранилища** и **управляемый HSM**. Управление доступом, описанное в этой статье, применимо только к **хранилищам**. Дополнительные сведения об управлении доступом для управляемого модуля HSM см. в разделе [управляемый контроль доступа HSM](../managed-hsm/access-control.md).
@@ -227,7 +227,7 @@ az role definition create --role-definition '{ \
 
 -   Задержка назначений ролей: в текущей ожидаемой производительности это займет до 10 минут (600 с) после изменения назначения ролей для применения роли.
 
-## <a name="learn-more"></a>Подробнее
+## <a name="learn-more"></a>Дополнительные сведения
 
 - [Обзор Azure RBAC](../../role-based-access-control/overview.md)
 - [Учебник по настраиваемым ролям](../../role-based-access-control/tutorial-custom-role-cli.md)

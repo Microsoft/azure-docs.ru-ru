@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 02/22/2021
 ms.author: mnayak
 ms.openlocfilehash: f445eab65e8d2448e57bad19c52a4b72732016bb
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101672928"
 ---
 # <a name="configure-routing-preference-for-a-public-ip-address-using-the-azure-portal"></a>Настройка предпочтительного варианта маршрутизации для общедоступного IP-адреса с помощью портала Azure

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 3/8/2021
 ms.openlocfilehash: e874a76cc447158127da8482f23bf03d56961818
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102504615"
 ---
 # <a name="regions-for-virtual-machines-in-azure"></a>Регионы размещения виртуальных машин в Azure

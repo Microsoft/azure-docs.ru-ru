@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/22/2020
 ms.author: victorh
 ms.openlocfilehash: e63336b0e84d303b51eda56f90ca6fb453d8ae0d
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99831847"
 ---
 # <a name="monitor-logs-using-azure-firewall-workbook"></a>Мониторинг журналов с помощью книги брандмауэра Azure
@@ -20,11 +20,11 @@ ms.locfileid: "99831847"
 
 Вы можете получить представление о событиях брандмауэра Azure, узнать о правилах приложения и сети, а также просмотреть статистику действий брандмауэра по URL-адресам, портам и адресам. Книга брандмауэров Azure позволяет фильтровать брандмауэры и группы ресурсов, а также динамически фильтровать по категориям с помощью простых для чтения наборов данных при исследовании проблем в журналах. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом необходимо [включить ведение журнала диагностики](firewall-diagnostics.md#enable-diagnostic-logging-through-the-azure-portal) с помощью портал Azure. Кроме того, ознакомьтесь с [журналами и метриками брандмауэра Azure](logs-and-metrics.md) , чтобы получить общие сведения о журналах диагностики и метриках, доступных для брандмауэра Azure.
 
-## <a name="get-started"></a>Приступая к работе
+## <a name="get-started"></a>Начало работы
 
 Чтобы развернуть книгу, перейдите в раздел [Azure Monitor книга для брандмауэра Azure](https://github.com/Azure/Azure-Network-Security/tree/master/Azure%20Firewall/Workbook%20-%20Azure%20Firewall%20Monitor%20Workbook) и следуйте инструкциям на странице. Книга брандмауэра Azure предназначена для работы с несколькими клиентами, несколькими подписками и поддерживает фильтрацию по нескольким брандмауэрам.
 

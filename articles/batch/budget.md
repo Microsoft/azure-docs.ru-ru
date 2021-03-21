@@ -4,10 +4,10 @@ description: Узнайте, как получить анализ затрат, 
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.openlocfilehash: d1fc2d15a7037e56a8056efa67d2017badb77ffd
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99091333"
 ---
 # <a name="get-cost-analysis-and-set-budgets-for-azure-batch"></a>Получение анализа затрат и задание бюджетов для пакетной службы Azure
@@ -24,7 +24,7 @@ ms.locfileid: "99091333"
 
 Каждая виртуальная машина в пуле, созданная с помощью [конфигурации виртуальной машины](nodes-and-pools.md#virtual-machine-configuration) , имеет связанный диск ОС, использующий управляемые Azure диски. Диски, управляемые Azure, также оплачиваются, и каждому уровню производительности диска соответствует свой ценовой уровень.
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 
 При развертывании приложений на узлах пакетной службы (ВМ) с помощью [пакетов приложений](batch-application-packages.md) также взимается плата за ресурсы службы хранилища Azure, используемые пакетами приложений. Кроме того, взимается плата за хранение любых входных или выходных файлов, таких как файлы ресурсов и другие данные журнала.
 

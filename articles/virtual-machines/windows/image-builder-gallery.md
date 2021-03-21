@@ -9,10 +9,10 @@ ms.service: virtual-machines
 ms.subervice: image-builder
 ms.colletion: windows
 ms.openlocfilehash: e8caf9f742217161c60ce90351989999f18adabb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101694093"
 ---
 # <a name="preview-create-a-windows-image-and-distribute-it-to-a-shared-image-gallery"></a>Предварительный просмотр: Создание образа Windows и его распространение в Общей коллекции образов 

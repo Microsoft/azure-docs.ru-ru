@@ -5,10 +5,10 @@ ms.date: 03/05/2020
 ms.topic: how-to
 ms.reviewer: brendal
 ms.openlocfilehash: 696f1f2f96034f7a044f6a39182774c02804518f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96004846"
 ---
 # <a name="using-the-azure-blockchain-workbench-preview-rest-api"></a>Использование предварительной версии Azure Блокчейн Workbench REST API
@@ -475,6 +475,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Справочные сведения об API-интерфейсах Блокчейн Workbench см. в [справочнике по Azure Блокчейн workbench REST API](/rest/api/azure-blockchain-workbench).

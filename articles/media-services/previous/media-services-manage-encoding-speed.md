@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: f01235e5b02bf2a61a359fa5571c6e6d575c1232
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103014814"
 ---
 #  <a name="manage-speed-and-concurrency-of-your-encoding"></a>Управление скоростью и параллелизмом кодирования
@@ -35,7 +35,7 @@ ms.locfileid: "103014814"
 
 Дополнительные сведения и примеры масштабирования единиц кодирования см. в [этом](media-services-scale-media-processing-overview.md) разделе.
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий шаг
 
 [Масштабирование единиц кодирования](media-services-scale-media-processing-overview.md)
 

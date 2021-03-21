@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 11/02/2020
 ms.author: allensu
 ms.openlocfilehash: afd1f8b6c80cfd7aa8d5142841458d76511a9e96
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102562917"
 ---
 # <a name="quickstart-create-an-azure-private-endpoint-using-azure-powershell"></a>Краткое руководство. Создание частной конечной точки Azure с помощью Azure PowerShell

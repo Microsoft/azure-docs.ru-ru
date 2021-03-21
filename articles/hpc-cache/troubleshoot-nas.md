@@ -7,10 +7,10 @@ ms.topic: troubleshooting
 ms.date: 03/18/2020
 ms.author: v-erkel
 ms.openlocfilehash: d2a5ffa337f789c4edc3a34b3be81285337473e2
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103471720"
 ---
 # <a name="troubleshoot-nas-configuration-and-nfs-storage-target-issues"></a>Устранение неполадок конфигурации NAS и целевого объекта хранилища NFS
@@ -145,6 +145,6 @@ rpcinfo -p <storage_IP> |egrep "100000\s+4\s+tcp|100005\s+3\s+tcp|100003\s+3\s+t
 
 Для систем, использующих списки управления доступом, кэш Azure HPC должен отслеживаниь дополнительных значений, относящихся к пользователю, для управления доступом к файлам. Для этого необходимо включить кэш доступа. У пользователя нет элемента управления для включения кэша доступа, но вы можете открыть запрос в службу поддержки, чтобы запросить включение для затронутых целевых объектов хранилища в системе кэша.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Если у вас возникла проблема, которая не была устранена в этой статье, отправьте запрос в [службу поддержки](hpc-cache-support-ticket.md) , чтобы получить помощь экспертов.

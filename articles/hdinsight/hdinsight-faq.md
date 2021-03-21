@@ -9,10 +9,10 @@ ms.custom: hdinsightactive,seoapr2020
 ms.topic: conceptual
 ms.date: 11/20/2019
 ms.openlocfilehash: 84124f33f6aa02f63c0c47a24bd7d2a71ced2d11
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101699306"
 ---
 # <a name="azure-hdinsight-frequently-asked-questions"></a>Azure HDInsight. Часто задаваемые вопросы
@@ -212,7 +212,7 @@ LLAP включен по соображениям безопасности (Apac
 Эта цель достигается двумя способами: 1 — можно повторно создать кластер и добавить дополнительную группу во время создания кластера. Если вы используете синхронизацию с заданной областью в AAD-DS, убедитесь, что Группа B включена в синхронизацию с заданной областью.
 2. Добавьте группу в качестве вложенной подгруппы предыдущей группы, которая использовалась для создания кластера ESP. Например, если вы создали кластер ESP с группой `A` , позднее можно добавить группу в `B` качестве вложенной подгруппы, `A` а через примерно один час она будет синхронизирована и доступна в кластере автоматически. 
 
-## <a name="storage"></a>Память
+## <a name="storage"></a>Служба хранилища
 
 ### <a name="can-i-add-an-azure-data-lake-storage-gen2-to-an-existing-hdinsight-cluster-as-an-additional-storage-account"></a>Можно ли добавить Azure Data Lake Storage 2-го поколения в существующий кластер HDInsight в качестве дополнительной учетной записи хранения?
 

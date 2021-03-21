@@ -7,10 +7,10 @@ ms.service: data-share
 ms.topic: how-to
 ms.date: 02/24/2021
 ms.openlocfilehash: f87ad76e9bb1db4d71716bf860d5fee2d413e8e9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101740381"
 ---
 # <a name="share-and-receive-data-from-azure-sql-database-and-azure-synapse-analytics"></a>Отправка и получение данных для Базы данных SQL Azure и Azure Synapse Analytics
@@ -315,7 +315,7 @@ Azure Data Share создан, и получатель Data Share готов п�
 | smallint |Int16 |
 | smallmoney |Decimal |
 | sql_variant |Объект |
-| text |String, Char[] |
+| текст |String, Char[] |
 | time |TimeSpan |
 | TIMESTAMP |Byte[] |
 | tinyint |Int16 |

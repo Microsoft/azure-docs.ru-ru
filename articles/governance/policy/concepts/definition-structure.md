@@ -4,10 +4,10 @@ description: Описывает, как определения политик и
 ms.date: 02/17/2021
 ms.topic: conceptual
 ms.openlocfilehash: cebba214671cfab75a3f44720578b51febacdfcd
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102215074"
 ---
 # <a name="azure-policy-definition-structure"></a>Структура определения службы "Политика Azure"
@@ -501,10 +501,10 @@ ms.locfileid: "102215074"
 
 **Использование количества значений**
 
-- `current(<index name defined in count.name>)`. Например: `current('arrayMember')`.
+- `current(<index name defined in count.name>)`. Например, `current('arrayMember')`.
 - `current()`. Допускается только в том случае, если выражение **счетчика значений** не является дочерним по отношению к другому выражению **Count** . Возвращает то же значение, что и выше.
 
-Если значение, возвращаемое вызовом, является объектом, то поддерживаются методы доступа к свойствам. Например: `current('objectArrayMember').property`.
+Если значение, возвращаемое вызовом, является объектом, то поддерживаются методы доступа к свойствам. Например, `current('objectArrayMember').property`.
 
 **Использование счетчика полей**
 

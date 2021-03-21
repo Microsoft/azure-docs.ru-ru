@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 10/13/2020
 ms.custom: github-actions-azure, devx-track-azurecli
 ms.openlocfilehash: 564a21d565fb80eba605eece95562a809a93246f
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103471920"
 ---
 # <a name="deploy-arm-templates-by-using-github-actions"></a>Развертывание шаблонов ARM с помощью действий GitHub
@@ -154,7 +154,7 @@ https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-st
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 Если группа ресурсов и репозиторий больше не требуются, очистите развернутые ресурсы, удалив группу ресурсов и репозиторий GitHub.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Создание первого шаблона ARM](./template-tutorial-create-first-template.md)

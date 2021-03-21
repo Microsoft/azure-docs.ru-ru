@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 06/08/2020
 ms.custom: mvc, devx-track-azurepowershell
 ms.openlocfilehash: cf84a8abcc0f1c890a51bf07056ac31d37107e53
-ms.sourcegitcommit: 003ac3b45abcdb05dc4406661aca067ece84389f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96749119"
 ---
 # <a name="tutorial-design-an-azure-database-for-postgresql---single-server-using-powershell"></a>Руководство по Разработка экземпляра Базы данных Azure для PostgreSQL — Отдельный сервер с помощью Azure PowerShell
@@ -38,7 +38,7 @@ ms.locfileid: "96749119"
 > Так как модуль Az.PostgreSql PowerShell предоставляется в режиме предварительной версии, его нужно установить отдельно от модуля Az с помощью команды `Install-Module -Name Az.PostgreSql -AllowPrerelease`.
 > Как только модуль Az.PostgreSql PowerShell станет общедоступным, он будет включен в один из будущих выпусков Az PowerShell и встроен в Azure Cloud Shell.
 
-Если вы впервые используете Базу данных Azure для PostgreSQL, зарегистрируйте поставщик ресурсов **Microsoft.DBforPostgreSQL**.
+Если вы впервые используете службу "База данных Azure для PostgreSQL", зарегистрируйте поставщик ресурсов **Microsoft.DBforPostgreSQL**.
 
 ```azurepowershell-interactive
 Register-AzResourceProvider -ProviderNamespace Microsoft.DBforPostgreSQL

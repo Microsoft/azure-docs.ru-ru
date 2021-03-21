@@ -8,10 +8,10 @@ ms.date: 06/07/2019
 ms.reviewer: sergkanz
 ms.custom: devx-track-python, devx-track-csharp
 ms.openlocfilehash: beaeb0131a2c9b326d663f6fcbb8273a9b52b412
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102100973"
 ---
 # <a name="telemetry-correlation-in-application-insights"></a>Корреляция данных телеметрии в Application Insights
@@ -34,7 +34,7 @@ Application Insights определяет [модель данных](../../azur
 
 ## <a name="example"></a>Пример
 
-Рассмотрим пример. Приложение под названием «цены на акции» показывает текущую стоимость рынка акций с помощью внешнего API, который называется «склад». В приложении "цены на акции" есть страница "акции", которая открывается веб-браузером клиента с помощью `GET /Home/Stock` . Приложение запрашивает стандартный API-интерфейс с помощью вызова HTTP `GET /api/stock/value` .
+Давайте рассмотрим пример. Приложение под названием «цены на акции» показывает текущую стоимость рынка акций с помощью внешнего API, который называется «склад». В приложении "цены на акции" есть страница "акции", которая открывается веб-браузером клиента с помощью `GET /Home/Stock` . Приложение запрашивает стандартный API-интерфейс с помощью вызова HTTP `GET /api/stock/value` .
 
 Вы можете проанализировать итоговые данные телеметрии, выполнив запрос:
 

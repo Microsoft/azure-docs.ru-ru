@@ -12,10 +12,10 @@ ms.date: 06/24/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: cb8fb0e194b4c43b5e247f2ea5d1e38d924591db
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99257969"
 ---
 # <a name="troubleshoot-application-proxy-problems-and-error-messages"></a>Устранение неполадок и сообщения об ошибках прокси приложения
@@ -85,7 +85,7 @@ Get-EventLog application –source "Microsoft AAD Application Proxy Connector" �
 
 Если вы столкнулись с ошибкой и проблемой в работе прокси приложения Azure AD, не указанной в этом руководстве по устранению неполадок, нам бы хотелось услышать об этом. Отправьте нашей [команде по отзывам и предложениям](mailto:aadapfeedback@microsoft.com) электронное сообщение с описанием обнаруженной ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 * [Включение прокси приложения Azure AD](application-proxy-add-on-premises-application.md)
 * [Опубликуйте приложения с помощью прокси-сервера приложений.](application-proxy-add-on-premises-application.md)
 * [Доступ с единым входом](application-proxy-configure-single-sign-on-with-kcd.md)

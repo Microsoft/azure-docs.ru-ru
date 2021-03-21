@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.reviewer: klaasl
 ms.custom: devx-track-csharp
 ms.openlocfilehash: a820f7efc39af8c6ab66c883d285b507c7bc7368
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102563274"
 ---
 # <a name="use-blob-index-tags-preview-to-manage-and-find-data-on-azure-blob-storage"></a>Использование тегов индекса больших двоичных объектов (Предварительная версия) для управления и поиска данных в хранилище BLOB-объектов Azure

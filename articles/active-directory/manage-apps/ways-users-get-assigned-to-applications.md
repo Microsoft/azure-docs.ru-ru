@@ -11,10 +11,10 @@ ms.topic: reference
 ms.date: 01/07/2021
 ms.author: kenwith
 ms.openlocfilehash: 161df0446c9478ca0f2b135c1e426f3786b164fc
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99257446"
 ---
 # <a name="understand-how-users-are-assigned-to-apps-in-azure-active-directory"></a>Узнайте, как пользователи назначаются приложениям в Azure Active Directory
@@ -42,4 +42,4 @@ ms.locfileid: "99257446"
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Серия кратких руководств по управлению приложениями](view-applications-portal.md)
 * [Что такое управление приложениями?](what-is-application-management.md)
-* [Что такое единый вход?](what-is-single-sign-on.md)
+* [Сведения о едином входе](what-is-single-sign-on.md)
