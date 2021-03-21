@@ -4,10 +4,10 @@ description: В этой статье представлен обзор сущн
 ms.topic: conceptual
 ms.date: 02/16/2021
 ms.openlocfilehash: b8fb68509ad920fc6911290377f49b89ec610b58
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101096330"
 ---
 # <a name="service-bus-queues-topics-and-subscriptions"></a>Очереди, разделы и подписки служебной шины
@@ -55,7 +55,7 @@ ms.locfileid: "101096330"
 
 Дополнительные сведения о возможных значениях фильтров см. в документации по классам [SqlFilter](/dotnet/api/microsoft.azure.servicebus.sqlfilter) и [SqlRuleAction](/dotnet/api/microsoft.azure.servicebus.sqlruleaction).
 
-## <a name="java-message-service-jms-20-entities"></a>Сущности 2,0 службы сообщений Java (JMS)
+## <a name="java-message-service-jms-20-entities"></a>Сущности в службе сообщений Java (JMS) версии 2.0
 Следующие сущности доступны через API-интерфейс службы сообщений Java (JMS) 2,0.
 
   * Временные очереди
@@ -67,7 +67,7 @@ ms.locfileid: "101096330"
 
 Узнайте больше о [сущностях JMS 2,0](java-message-service-20-entities.md) и о том, как [их использовать](how-to-use-java-message-service-20.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения и примеры использования обмена сообщениями в служебной шине Microsoft Azure см. в следующих дополнительных статьях:
 

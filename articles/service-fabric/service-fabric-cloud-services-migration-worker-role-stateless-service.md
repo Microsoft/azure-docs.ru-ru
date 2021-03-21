@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 11/02/2017
 ms.custom: devx-track-csharp
 ms.openlocfilehash: cf593f793aabf2a0650684ed8d02fe02d756ec2b
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96575743"
 ---
 # <a name="guide-to-converting-web-and-worker-roles-to-service-fabric-stateless-services"></a>Руководство по преобразованию рабочих ролей и веб-ролей в службы без отслеживания состояния Service Fabric
@@ -29,7 +29,7 @@ ms.locfileid: "96575743"
 ## <a name="web-role-to-stateless-service"></a>Преобразование веб-роли в службу без отслеживания состояния
 Как и рабочая роль, веб-роль тоже является рабочей нагрузкой без отслеживания состояния. Поэтому и ее можно сопоставить со службой без отслеживания состояния Service Fabric. В отличие от веб-ролей, платформа Service Fabric не поддерживает IIS. Чтобы перенести веб-приложение из веб-роли в службу без отслеживания состояния, сначала следует переместить автономно размещаемую веб-платформу, которая не зависит от IIS или System.Web (например, ASP.NET Core 1).
 
-| **Приложения** | **Поддерживается** | **Путь перехода** |
+| **Приложение** | **Поддерживается** | **Путь перехода** |
 | --- | --- | --- |
 | Веб-формы ASP.NET |Нет |Преобразование в ASP.NET Core 1 MVC |
 | ASP.NET MVC 3 |С переносом |Обновление до ASP.NET Core 1 MVC |
@@ -42,9 +42,9 @@ ms.locfileid: "96575743"
 | **Точка входа** | **Рабочая роль** | **Служба Service Fabric** |
 | --- | --- | --- |
 | Обработка |`Run()` |`RunAsync()` |
-| Запуск виртуальной машины |`OnStart()` |Недоступно |
-| Остановка виртуальной машины |`OnStop()` |Недоступно |
-| Открытие прослушивателя для запросов клиентов |Недоступно |<ul><li> `CreateServiceInstanceListener()` для служб без отслеживания состояния</li><li>`CreateServiceReplicaListener()` для служб с отслеживанием состояния</li></ul> |
+| Запуск виртуальной машины |`OnStart()` |Н/Д |
+| Остановка виртуальной машины |`OnStop()` |Н/Д |
+| Открытие прослушивателя для запросов клиентов |Н/Д |<ul><li> `CreateServiceInstanceListener()` для служб без отслеживания состояния</li><li>`CreateServiceReplicaListener()` для служб с отслеживанием состояния</li></ul> |
 
 ### <a name="worker-role"></a>Рабочая роль
 ```csharp
@@ -113,8 +113,8 @@ namespace Stateless1
 | Параметры конфигурации и изменение уведомления |`RoleEnvironment` |`CodePackageActivationContext` |
 | Локальное хранилище |`RoleEnvironment` |`CodePackageActivationContext` |
 | Сведения о конечной точке |`RoleInstance` <ul><li>Текущий экземпляр: `RoleEnvironment.CurrentRoleInstance`</li><li>Другие роли и экземпляр: `RoleEnvironment.Roles`</li> |<ul><li>`NodeContext` для адреса текущего узла</li><li>`FabricClient` и `ServicePartitionResolver` для обнаружения конечной точки службы</li> |
-| Эмуляция среды |`RoleEnvironment.IsEmulated` |Недоступно |
-| Событие одновременного изменения |`RoleEnvironment` |Недоступно |
+| Эмуляция среды |`RoleEnvironment.IsEmulated` |Н/Д |
+| Событие одновременного изменения |`RoleEnvironment` |Н/Д |
 
 ## <a name="configuration-settings"></a>Параметры конфигурации
 Параметры конфигурации в облачных службах задаются для роли виртуальной машины и применяются ко всем экземплярам этой роли. Эти параметры представляют собой пары "ключ — значение", заданные в файлах ServiceConfiguration.*.cscfg. Получить к ним прямой доступ можно через RoleEnvironment. На платформе Service Fabric параметры применяются отдельно к каждой службе и каждому приложению, а не к каждой виртуальной машине. Это обусловлено тем, что на виртуальной машине может быть размещено несколько служб и приложений. Служба состоит из трех пакетов:

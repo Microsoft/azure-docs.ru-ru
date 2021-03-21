@@ -15,10 +15,10 @@ ms.date: 06/17/2020
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.openlocfilehash: 3c9018322c9e5075ff59024f9d791e7431035e3d
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100555946"
 ---
 # <a name="list-azure-role-definitions"></a>Вывод списка определений ролей Azure
@@ -37,7 +37,7 @@ ms.locfileid: "100555946"
 
 1. Щелкните конкретный ресурс.
 
-1. Выберите **Управление доступом (IAM)**.
+1. Щелкните **Управление доступом (IAM)** .
 
 1. Чтобы просмотреть список всех встроенных и пользовательских ролей, щелкните вкладку **Роли**.
 
@@ -329,7 +329,7 @@ az role definition list --name "Virtual Machine Contributor" --output json --que
 ]
 ```
 
-## <a name="rest-api"></a>API-интерфейсы REST
+## <a name="rest-api"></a>REST API
 
 ### <a name="list-role-definitions"></a>Вывод списка определений роли
 
@@ -344,7 +344,7 @@ az role definition list --name "Virtual Machine Contributor" --output json --que
 1. В URI замените *{Scope}* областью, для которой необходимо получить список определений ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `providers/Microsoft.Management/managementGroups/{groupId1}` | группа управления; |
     > | `subscriptions/{subscriptionId1}` | Подписка |
@@ -429,7 +429,7 @@ GET https://management.azure.com/subscriptions/{subscriptionId1}/providers/Micro
 1. В URI замените *{Scope}* областью, для которой требуется перечислить определение роли.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `providers/Microsoft.Management/managementGroups/{groupId1}` | группа управления; |
     > | `subscriptions/{subscriptionId1}` | Подписка |
@@ -479,4 +479,4 @@ GET https://management.azure.com/providers/Microsoft.Authorization/roleDefinitio
 - [Встроенные роли Azure](built-in-roles.md)
 - [Настраиваемые роли Azure](custom-roles.md)
 - [Вывод списка назначений ролей Azure с помощью портала Azure](role-assignments-list-portal.md).
-- [Назначение ролей Azure с помощью портал Azure](role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](role-assignments-portal.md)

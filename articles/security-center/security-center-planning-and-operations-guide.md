@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 09/10/2019
 ms.author: memildin
 ms.openlocfilehash: a8b285ca0b8d0dae88bfe8dd19ac7e1bc8372e32
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102099205"
 ---
 # <a name="planning-and-operations-guide"></a>Руководство по планированию и эксплуатации
@@ -228,7 +228,7 @@ ms.locfileid: "102099205"
 >
 >
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 В этом документе описывается, как спланировать переход к использованию центра безопасности. Дополнительные сведения о Центре безопасности см. в следующих статьях:
 
 * [Управление оповещениями безопасности в Центре безопасности Azure и реагирование на них](security-center-managing-and-responding-alerts.md)

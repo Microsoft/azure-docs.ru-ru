@@ -13,10 +13,10 @@ ms.custom: seo-lt-2019
 ms.topic: how-to
 ms.date: 02/20/2020
 ms.openlocfilehash: e3e2aa055baf3dfb4bee0629040fc7c140844637
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101094025"
 ---
 # <a name="migrate-sql-server-integration-services-packages-to-an-azure-sql-managed-instance"></a>Перенос пакетов SQL Server Integration Services в Управляемый экземпляр SQL Azure
@@ -33,7 +33,7 @@ ms.locfileid: "101094025"
 > * Оценка проектов и пакетов исходной SSIS.
 > * Перенос проектов и пакетов SSIS в Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения этих действий вам потребуется следующее:
 
@@ -134,7 +134,7 @@ ms.locfileid: "101094025"
 
      ![Сведения о целевом объекте](media/how-to-migrate-ssis-packages-mi/dms-target-details2.png)
 
-2. Нажмите кнопку **Сохранить**.
+2. Щелкните **Сохранить**.
 
 ## <a name="review-the-migration-summary"></a>Просмотр сводки по миграции
 
@@ -150,6 +150,6 @@ ms.locfileid: "101094025"
 
 * Выберите **Запустить миграцию**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Просмотрите [руководство по миграции базы данных Майкрософт](https://datamigration.microsoft.com/).

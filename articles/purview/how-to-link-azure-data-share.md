@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 11/25/2020
 ms.openlocfilehash: edea881d67d5a677339c6ff357c1ac45f5dfd420
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96555361"
 ---
 # <a name="how-to-connect-azure-data-share-and-azure-purview"></a>Как подключить общую папку данных Azure и Azure зрения
@@ -68,7 +68,7 @@ ms.locfileid: "96555361"
 
     :::image type="content" source="media/how-to-link-azure-data-share/azure-data-share-lineage.png" alt-text="Журнал обращений и преобразований для наборов данных, совместно используемых с помощью общего ресурса Azure":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Пользовательская структура журнала преобразований каталога](catalog-lineage-user-guide.md)
 - [Ссылка на фабрику данных Azure для журнала обращений и преобразований](how-to-link-azure-data-factory.md)

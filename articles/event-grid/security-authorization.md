@@ -3,12 +3,12 @@ title: 'Сетка событий Azure: безопасность и прове�
 description: В статье описываются служба "Сетка событий Azure" и ее основные понятия.
 ms.topic: conceptual
 ms.date: 02/12/2021
-ms.openlocfilehash: 326fa00645302eb4b9c9bc59f17c1ca153bdb0b7
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: e9bcf00e832e4deaaf9c5f81ba5af51609a1c412
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100371726"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104601046"
 ---
 # <a name="authorizing-access-to-event-grid-resources"></a>Авторизация доступа к ресурсам сетки событий
 Служба "Сетка событий Azure" позволяет управлять уровнем доступа, предоставляемого разным пользователям, для выполнения различных **операций управления** , таких как список подписок на события, создание новых и создание ключей. Сетка событий использует управление доступом на основе ролей Azure (Azure RBAC).
@@ -31,80 +31,23 @@ az provider operation show --namespace Microsoft.EventGrid
 
 
 ## <a name="built-in-roles"></a>Встроенные роли
+Сетка событий предоставляет следующие три встроенные роли. 
 
-"Сетка событий" предоставляет две встроенные роли для управления подписками на события. Они важны при реализации [доменов событий](event-domains.md) , поскольку они предоставляют пользователям разрешения, необходимые для подписки на разделы в домене событий. Эти роли предназначены для подписки на события и не предоставляют доступа к действиям, например для создания тем.
+Роли участник подписки на сетку событий и подписка на сетку событий предназначены для управления подписками на события. Они важны при реализации [доменов событий](event-domains.md) , поскольку они предоставляют пользователям разрешения, необходимые для подписки на разделы в домене событий. Эти роли предназначены для подписки на события и не предоставляют доступа к действиям, например для создания тем.
 
-Вы можете [назначить эти роли для пользователя или группы](../role-based-access-control/quickstart-assign-role-user-portal.md).
+Роль участника "Сетка событий" позволяет создавать ресурсы сетки событий и управлять ими. 
 
-**Участник EventGrid подписки**: управление операциями подписки в сетке событий
 
-```json
-[
-  {
-    "Description": "Lets you manage EventGrid event subscription operations.",
-    "IsBuiltIn": true,
-    "Id": "428e0ff05e574d9ca2212c70d0e0a443",
-    "Name": "EventGrid EventSubscription Contributor",
-    "IsServiceRole": false,
-    "Permissions": [
-      {
-        "Actions": [
-          "Microsoft.Authorization/*/read",
-          "Microsoft.EventGrid/eventSubscriptions/*",
-          "Microsoft.EventGrid/systemtopics/eventsubscriptions/*",
-          "Microsoft.EventGrid/partnertopics/eventsubscriptions/*",
-          "Microsoft.EventGrid/topicTypes/eventSubscriptions/read",
-          "Microsoft.EventGrid/locations/eventSubscriptions/read",
-          "Microsoft.EventGrid/locations/topicTypes/eventSubscriptions/read",
-          "Microsoft.Insights/alertRules/*",
-          "Microsoft.Resources/deployments/*",
-          "Microsoft.Resources/subscriptions/resourceGroups/read",
-          "Microsoft.Support/*"
-        ],
-        "NotActions": [],
-        "DataActions": [],
-        "NotDataActions": [],
-        "Condition": null
-      }
-    ],
-    "Scopes": [
-      "/"
-    ]
-  }
-]
-```
+| Роль | Описание |
+| ---- | ----------- | 
+| [Читатель подписки в сетке событий](../role-based-access-control/built-in-roles.md#eventgrid-eventsubscription-reader) | Позволяет управлять операциями подписки на события сетки событий. |
+| [Участник подписки на сетку событий](../role-based-access-control/built-in-roles.md#eventgrid-eventsubscription-contributor) | Позволяет читать подписки на события сетки событий. |
+| [Участник сетки событий](../role-based-access-control/built-in-roles.md#eventgrid-contributor) | Позволяет создавать ресурсы сетки событий и управлять ими. |
 
-**Читатель EventGrid подписки**: чтение подписок на сетку событий
 
-```json
-[
-  {
-    "Description": "Lets you read EventGrid event subscriptions.",
-    "IsBuiltIn": true,
-    "Id": "2414bbcf64974faf8c65045460748405",
-    "Name": "EventGrid EventSubscription Reader",
-    "IsServiceRole": false,
-    "Permissions": [
-      {
-        "Actions": [
-          "Microsoft.Authorization/*/read",
-          "Microsoft.EventGrid/eventSubscriptions/read",
-          "Microsoft.EventGrid/topicTypes/eventSubscriptions/read",
-          "Microsoft.EventGrid/locations/eventSubscriptions/read",
-          "Microsoft.EventGrid/locations/topicTypes/eventSubscriptions/read",
-          "Microsoft.Resources/subscriptions/resourceGroups/read"
-        ],
-        "NotActions": [],
-        "DataActions": [],
-        "NotDataActions": []
-       }
-    ],
-    "Scopes": [
-      "/"
-    ]
-  }
-]
-```
+> [!NOTE]
+> Выберите ссылки в первом столбце для перехода к статье с дополнительными сведениями о роли. Инструкции по назначению пользователей или групп ролям RBAC см. в [этой статье](../role-based-access-control/quickstart-assign-role-user-portal.md).
+
 
 ## <a name="custom-roles"></a>Пользовательские роли
 

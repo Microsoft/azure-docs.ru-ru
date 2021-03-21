@@ -6,10 +6,10 @@ ms.topic: conceptual
 description: Описание процесса миграции с Azure Dev Spaces на мост в Kubernetes
 keywords: Azure Dev Spaces, пространства разработки, Docker, Kubernetes, Azure, AKS, служба Kubernetes Azure, контейнеры, мост — Kubernetes
 ms.openlocfilehash: d48814df30c17f9b51d8642efa0960a26bbd24f4
-ms.sourcegitcommit: 230d5656b525a2c6a6717525b68a10135c568d67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94888527"
 ---
 # <a name="migrating-to-bridge-to-kubernetes"></a>Миграция к Bridge to Kubernetes
@@ -41,12 +41,12 @@ Azure Dev Spaces помогли разработчикам Kubernetes работ
 
 Azure Dev Spaces и Bridge в Kubernetes имеют аналогичные функции, они также отличаются в нескольких областях:
 
-| Требование  | Azure Dev Spaces  | Мост с Kubernetes  |
+| Требование  | Azure Dev Spaces  | Bridge to Kubernetes  |
 |---------------|-------------------|--------------------------------|
 | Служба Azure Kubernetes | В 15 регионах Azure | Любой регион службы AKS    |
 | **Безопасность** |
 | Требуется доступ к системе безопасности в кластере  | Участник кластера AKS  | Kubernetes RBAC — обновление развертывания   |
-| Требуется безопасность на компьютере разработчика  | Недоступно  | Локальный администратор/sudo   |
+| Требуется безопасность на компьютере разработчика  | Н/Д  | Локальный администратор/sudo   |
 | **Удобство использования** |
 | Независимо от артефактов Kubernetes и DOCKER  | Нет  | Да   |
 | Автоматический откат изменений, после отладки  | Нет  | Да   |

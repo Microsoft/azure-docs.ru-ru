@@ -8,10 +8,10 @@ author: vikrambmsft
 ms.author: vikramb
 ms.date: 02/22/2021
 ms.openlocfilehash: 7c02c41379cfb886fd7e6f84486d815d3cdbfb5b
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102097182"
 ---
 # <a name="private-offers-in-the-microsoft-commercial-marketplace"></a>Частные предложения в коммерческом магазине Майкрософт

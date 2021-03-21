@@ -4,10 +4,10 @@ description: Узнайте, как шифровать диски операци
 ms.topic: article
 ms.date: 09/01/2020
 ms.openlocfilehash: 26ef4ff1529483da9956c6dcc43807af0ffd6463
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96341218"
 ---
 # <a name="encrypt-operating-system-os-disks-using-customer-managed-keys-in-azure-devtest-labs"></a>Шифрование дисков операционной системы (ОС) с помощью управляемых клиентом ключей в Azure DevTest Labs
@@ -22,7 +22,7 @@ ms.locfileid: "96341218"
 
 В следующем разделе показано, как владелец лаборатории может настроить шифрование с помощью управляемого клиентом ключа.
 
-## <a name="pre-requisites"></a>Предварительные условия
+## <a name="pre-requisites"></a>Предварительные требования
 
 1. Если у вас нет набора шифрования дисков, следуйте указаниям в этой статье, чтобы [настроить Key Vault и набор шифрования дисков](../virtual-machines/disks-enable-customer-managed-keys-portal.md). Обратите внимание на следующие требования к набору шифрования дисков: 
 
@@ -47,7 +47,7 @@ ms.locfileid: "96341218"
     1. На панели инструментов щелкните **Сохранить**. 
 
         :::image type="content" source="./media/encrypt-disks-customer-managed-keys/save-role-assignment.png" alt-text="Сохранить назначение ролей":::
-3. Добавьте в роль **участника виртуальной машины** **удостоверение, назначенное системой** лаборатории, с помощью страницы **Subscription**  ->  **управления доступом к подпискам (IAM)** . Шаги аналогичны описанным в предыдущих шагах. 
+3. Добавьте в роль **участника виртуальной машины** **удостоверение, назначенное системой** лаборатории, с помощью страницы   ->  **управления доступом к подпискам (IAM)** . Шаги аналогичны описанным в предыдущих шагах. 
 
     
     1. Перейдите на страницу **подписки** в портал Azure. 

@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/15/2021
 ms.custom: template-how-to
 ms.openlocfilehash: 5e41dea3b47c608b9e82ac57fa1cfe5247ea6cc2
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102099018"
 ---
 # <a name="managing-your-voice-assistant"></a>Управление голосовым помощником
@@ -28,7 +28,7 @@ ms.locfileid: "102099018"
 
 1. На демонстрационной странице нажмите кнопку **изменить** рядом с полем **настраиваемое ключевое слово** .
 
-    :::image type="content" source="./media/manage-voice-assistant/hospitality-demo.png" alt-text="Снимок экрана демонстрационного окна гостиничного обслуживания.":::
+    :::image type="content" source="./media/manage-voice-assistant/hospitality-demo.png" alt-text="Снимок экрана: окно демоверсии для гостиничного бизнеса.":::
 
     Если демонстрационная страница не открыта, перейдите на страницу устройства (см. ниже) и щелкните **проверить свой помощник** в разделе **действия** , чтобы получить доступ к демонстрации.
 

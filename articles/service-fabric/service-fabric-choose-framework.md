@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 01/07/2020
 ms.custom: sfrev
 ms.openlocfilehash: 523c9e0064d8b78698f1a0dd3544bda58436800c
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96575726"
 ---
 # <a name="service-fabric-programming-model-overview"></a>Общие сведения о модели программирования Service Fabric
@@ -37,7 +37,7 @@ Service Fabric предлагает несколько способов запи
 
 [Узнайте больше о надежных службах](service-fabric-reliable-services-introduction.md) или начните с [написания первой надежной службы](service-fabric-reliable-services-quick-start.md).
 
-## <a name="aspnet-core"></a>ASP.NET Core
+## <a name="aspnet-core"></a>ASP.NET Core
 
 ASP.NET Core — это межплатформенная платформа с открытым исходным кодом для создания современных облачных приложений, подключенных к Интернету, таких как веб-приложения, приложения IoT и серверные технологии мобильных устройств. Service Fabric интегрируется с ASP.NET Core, поэтому вы можете писать как приложения без отслеживания состояния, так и приложения с отслеживанием состояния ASP.NET Core, которые используют передовые возможности оркестрации надежных коллекций и Service Fabric.
 

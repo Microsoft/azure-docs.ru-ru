@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 5/23/2018
 ms.custom: devx-track-csharp
 ms.openlocfilehash: e0c5f3ecf0334ad2190d8542e54388a2a25d30fb
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95999813"
 ---
 # <a name="containerize-your-service-fabric-reliable-services-and-reliable-actors-on-windows"></a>Контейнеризация служб Service Fabric Reliable Services и Reliable Actors в Windows
@@ -56,7 +56,7 @@ Service Fabric поддерживает контейнеризацию микр�
         $applicationExeName = 'Name of the Code package executable.'
         CreateDockerPackage.ps1 -CodePackageDirectoryPath $codePackagePath -DockerPackageOutputDirectoryPath $dockerPackageOutputDirectoryPath -ApplicationExeName $applicationExeName
       ```
-    .NET Core
+    .NET Core
       ```powershell
         $codePackagePath = 'Path to the code package to containerize.'
         $dockerPackageOutputDirectoryPath = 'Output path for the generated docker folder.'
@@ -137,6 +137,6 @@ Service Fabric поддерживает контейнеризацию микр�
 
 Теперь в вашем кластере работает контейнерное приложение Service Fabric.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Дополнительные сведения о запуске [контейнеров в Service Fabric](service-fabric-get-started-containers.md).
 * Дополнительные сведения о [жизненном цикле приложения](service-fabric-application-lifecycle.md) Service Fabric.

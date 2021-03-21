@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/08/2021
 ms.reviewer: cynthn
 ms.openlocfilehash: 1ea87d40430dbf3edabd557b80ab1456b49f4605
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102507880"
 ---
 # <a name="availability-options-for-azure-virtual-machines"></a>Варианты доступности для виртуальных машин Azure

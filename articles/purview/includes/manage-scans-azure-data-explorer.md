@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 1/20/2021
 ms.author: amberz
 ms.openlocfilehash: bf872feae9c3a7ca94e5252872adee2b653f5524
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98896121"
 ---
 ## <a name="creating-and-running-a-scan"></a>Создание и выполнение проверки

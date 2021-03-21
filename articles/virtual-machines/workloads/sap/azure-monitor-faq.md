@@ -7,13 +7,13 @@ ms.topic: article
 ms.date: 06/30/2020
 ms.author: radeltch
 ms.openlocfilehash: 3732189c1d2e09b648a2fba0a39e7e4113a76d48
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101675953"
 ---
-# <a name="azure-monitor-for-sap-solutions-faq-preview"></a>Вопросы и ответы по Azure Monitor для решений SAP (Предварительная версия)
+# <a name="azure-monitor-for-sap-solutions-faq-preview"></a>Вопросы и ответы об Azure Monitor для решений SAP (предварительная версия)
 ## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
 В этой статье содержатся ответы на часто задаваемые вопросы о Azure Monitor решениях SAP.  

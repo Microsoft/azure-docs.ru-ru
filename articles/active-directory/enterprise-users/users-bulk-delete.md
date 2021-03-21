@@ -14,10 +14,10 @@ ms.custom: it-pro
 ms.reviewer: jeffsta
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b57d675003c1ebeb29927b86338f95cf7dd68090
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96574469"
 ---
 # <a name="bulk-delete-users-in-azure-active-directory"></a>Групповое удаление пользователей в Azure Active Directory
@@ -26,7 +26,7 @@ ms.locfileid: "96574469"
 
 ## <a name="understand-the-csv-template"></a>Сведения о шаблоне CSV
 
-Скачайте и заполните шаблон CSV-файла, который поможет успешно удалить пользователей Azure AD в пакетном режиме. Скачиваемый шаблон CSV может выглядеть так же, как в следующем примере:
+Скачайте и заполните шаблон CSV-файла, который поможет успешно удалить пользователей Azure AD в пакетном режиме. Загружаемый шаблон CSV будет похож на этот пример:
 
 ![Электронная таблица для отправки со сносками, которые поясняют смысл каждой строки и столбца и значений в них](./media/users-bulk-delete/understand-template.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "96574469"
 
 ### <a name="verify-deleted-users-with-powershell"></a>Проверка удаленных пользователей с помощью PowerShell
 
-Выполните следующую команду:
+Выполните следующую команду.
 
 ``` PowerShell
 Get-AzureADUser -Filter "UserType eq 'Member'"

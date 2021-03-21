@@ -12,10 +12,10 @@ ms.subservice: fundamentals
 ms.date: 10/31/2019
 ms.author: martinco
 ms.openlocfilehash: d5a8fe4192c3778e259ed18239a4198398d8807b
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94836841"
 ---
 # <a name="azure-active-directory-general-operations-guide-reference"></a>Справочник по общим операциям Azure Active Directory
@@ -52,7 +52,7 @@ ms.locfileid: "94836841"
 - [Назначение ролей администратора в Azure Active Directory](../roles/permissions-reference.md)
 - [Система управления в Azure](../../governance/index.yml)
 
-## <a name="hybrid-management"></a>Гибридное управление
+## <a name="hybrid-management"></a>Управление гибридными средами
 
 ### <a name="recent-versions-of-on-premises-components"></a>Последние версии локальных компонентов
 
@@ -172,7 +172,7 @@ Azure AD использует два адреса "от": <o365mc@email2.microso
 
 Блокировка доступа к локальным компонентам удостоверений, таким как Azure AD Connect, AD FS и службы SQL, так же, как и для контроллеров домена.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Существует семь аспектов безопасной инфраструктуры идентификации. Этот список поможет найти действия, которые необходимо предпринять, чтобы оптимизировать операции для Azure Active Directory (Azure AD).
 

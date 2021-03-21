@@ -12,10 +12,10 @@ ms.author: nichola
 manager: martinco
 ms.date: 11/23/2020
 ms.openlocfilehash: a7b8f893026bb96c8d768d2e6d07d0240ecb81fa
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724847"
 ---
 # <a name="increase-the-resilience-of-authentication-and-authorization-in-daemon-applications-you-develop"></a>Повышение устойчивости проверки подлинности и авторизации в разрабатываемых управляющих приложениях
@@ -54,7 +54,7 @@ ms.locfileid: "98724847"
 
 Если время ожидания запроса истекло, повторная попытка выполнения приложения невозможна. Реализовать экспоненциальную повторную попытку с первой повторной попыткой по крайней мере через 5 секунд после ответа.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание устойчивости для приложений, которые входят в систему пользователей](resilience-client-app.md)
 - [Отказоустойчивость сборок в инфраструктуре управления удостоверениями и доступом](resilience-in-infrastructure.md)

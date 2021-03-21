@@ -10,10 +10,10 @@ ms.custom:
 - references_regions
 ms.date: 12/3/2020
 ms.openlocfilehash: 44f093f96d0f4653a6fcca94aaa97264c93e3c7d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101727946"
 ---
 # <a name="connect-data-factory-to-azure-purview-preview"></a>Подключение фабрики данных к Azure зрения (Предварительная версия)
