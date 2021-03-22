@@ -14,8 +14,6 @@
           href: Quickstarts/create-publish-knowledge-base.md
         - name: "Клиентские библиотеки или REST\_API"
           href: Quickstarts/quickstart-sdk.md
-    - name: Выполнение запроса к базе знаний с помощью REST API
-      href: Quickstarts/get-answer-from-knowledge-base-using-url-tool.md
 - name: Учебники
   items:
     - name: Интеграция с Power Virtual Agents
@@ -84,6 +82,8 @@
           href: How-To/change-default-answer.md
     - name: Обращение к базе знаний
       items:
+        - name: Создание запросов с помощью REST API
+          href: Quickstarts/get-answer-from-knowledge-base-using-url-tool.md
         - name: Использование API GenerateAnswer
           href: How-To/metadata-generateanswer-usage.md
           displayName: 'isTest, test, route, request, http, post, body, header, json, metadata, top, strictFilters, GenerateAnswer, API, answer, RankerType, id, text, question, context, 200, 2xx, 400, 401, 403, 404'

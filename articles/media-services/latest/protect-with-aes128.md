@@ -2,7 +2,7 @@
 заголовок: Шифрование видео с помощью AES-128 : Службы мультимедиа Azure description: Узнайте, как зашифровать видео с помощью 128-разрядного шифрования AES, а также как использовать службу доставки ключей в Службах мультимедиа Azure.
 services: media-services documentationcenter: '' author: IngridAtMicrosoft manager: femila editor: ''
 
-ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na ms.topic: tutorial ms.date: 08/31/2020 ms.author: inhenkel
+ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na ms.topic: tutorial ms.date: 03/17/2021 ms.author: inhenkel
 
 ---
 # <a name="tutorial-encrypt-video-with-aes-128-and-use-the-key-delivery-service"></a>Руководство по шифрованию видео с помощью AES-128 и использованию службы доставки ключей
@@ -89,7 +89,7 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 
 ## <a name="wait-for-the-job-to-complete"></a>Ожидание завершения задания
 
-Запуск задания занимает некоторое время. Поэтому вам пригодится уведомление. В примере кода ниже показано, как опрашивать службу о состоянии [задания](/rest/api/media/jobs). Опрос не рекомендуется для приложений рабочей среды из-за потенциальной задержки. Его можно регулировать при чрезмерном использовании в учетной записи. Вместо этого разработчики должны использовать службу "Сетка событий". Дополнительные сведения см. в статье [Create and monitor Media Services events with Event Grid using the Azure CLI](job-state-events-cli-how-to.md) (Создание и мониторинг событий Служб мультимедиа с помощью Сетки событий и Azure CLI).
+Запуск задания занимает некоторое время. Поэтому вам пригодится уведомление. В примере кода ниже показано, как опрашивать службу о состоянии [задания](/rest/api/media/jobs). Опрос не рекомендуется для приложений рабочей среды из-за потенциальной задержки. Его можно регулировать при чрезмерном использовании в учетной записи. Вместо этого разработчики должны использовать службу "Сетка событий". Дополнительные сведения см. в статье [Create and monitor Media Services events with Event Grid using the Azure CLI](monitoring/job-state-events-cli-how-to.md) (Создание и мониторинг событий Служб мультимедиа с помощью Сетки событий и Azure CLI).
 
 Для **задания** обычно последовательно устанавливаются следующие состояния: **Запланировано**, **В очереди**, **Идет обработка**, **Завершено** (конечное состояние). Если в задании обнаружена ошибка, вы получите состояние **Ошибка**. Если задание находится в процессе отмены, вы получите состояние **Выполнение отмены** и **Отменено** по завершении.
 

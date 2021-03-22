@@ -111,6 +111,8 @@
           href: speech-synthesis-markup.md
         - name: Синтезирование речи с помощью API длинных аудиоматериалов
           href: long-audio-api.md
+        - name: Получение событий расположения лица для синхронизации губ
+          href: how-to-speech-synthesis-viseme.md
     - name: Настройка
       items:
         - name: Портал Пользовательского голоса
@@ -500,7 +502,7 @@
           href: 'https://speech.microsoft.com'
         - name: Создание приложения пользовательских команд с помощью Speech Studio
           href: ./quickstart-custom-commands-application.md
-- name: Развертывание
+- name: Развернуть
   items:
     - name: Включение ведения журналов
       href: how-to-use-logging.md

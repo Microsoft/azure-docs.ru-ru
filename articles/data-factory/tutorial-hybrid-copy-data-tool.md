@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-lt-2019
 ms.date: 02/18/2021
-ms.openlocfilehash: aa6c7dd786a90abadb43a13eaa73a78a2a61bd0a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 43097b520297ff17350620faff3da884dcbd2073
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719293"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606724"
 ---
 # <a name="copy-data-from-a-sql-server-database-to-azure-blob-storage-by-using-the-copy-data-tool"></a>Скопируйте данные из базы данных SQL Server в хранилище BLOB-объектов Azure с помощью средства копирования данных
 > [!div class="op_single_selector" title1="Выберите используемую версию службы "Фабрика данных":"]
@@ -113,7 +113,7 @@ ms.locfileid: "101719293"
 
    Имя фабрики данных должно быть *глобально уникальным*. Если вы увидите следующее сообщение об ошибке для поля имени, введите другое имя фабрики данных (например, ваше_имя_ADFTutorialBulkCopyDF). Дополнительные сведения о правилах именования артефактов фабрики данных см. в статье [Фабрика данных Azure — правила именования](naming-rules.md).
 
-   ![Имя новой фабрики данных](./media/doc-common-process/name-not-available-error.png)
+    :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных со сведениями о том, что имя дублируется.":::
 1. Выберите **подписку** Azure, в рамках которой вы хотите создать фабрику данных.
 1. Для **группы ресурсов** выполните одно из следующих действий:
 
@@ -128,7 +128,7 @@ ms.locfileid: "101719293"
 
 1. Когда завершится создание, откроется страница **Фабрика данных**, как показано на рисунке ниже.
 
-     ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница Фабрики данных Azure с элементом &quot;Создание и мониторинг&quot;.":::
 1. Чтобы открыть на отдельной вкладке пользовательский интерфейс фабрики данных, выберите **Создание и мониторинг**.
 
 ## <a name="use-the-copy-data-tool-to-create-a-pipeline"></a>Создание конвейера с помощью средства копирования данных

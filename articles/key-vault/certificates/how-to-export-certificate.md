@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.custom: mvc
 ms.date: 08/11/2020
 ms.author: sebansal
-ms.openlocfilehash: e10812290fa06e94419a1b4f27845f9b04ebb049
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: ad3e5bcda0fb03af0637a309b4dbfd248b54f1a0
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102508849"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587208"
 ---
 # <a name="export-certificates-from-azure-key-vault"></a>Экспорт сертификатов из Azure Key Vault
 
@@ -101,8 +101,8 @@ $pfxFileByte = $x509Cert.Export($type, $password)
 [System.IO.File]::WriteAllBytes("KeyVault.pfx", $pfxFileByte)
 ```
 
-Эта команда экспортирует всю цепочку сертификатов с закрытым ключом. Сертификат защищен паролем.
-Дополнительные сведения о команде **Get-AzKeyVaultCertificate** и ее параметрах см. в статье [Get-AzKeyVaultCertificate — пример 2](/powershell/module/az.keyvault/Get-AzKeyVaultCertificate).
+Эта команда позволяет экспортировать всю цепочку сертификатов с использованием закрытого ключа (так же, как и при импорте). Сертификат защищен паролем.
+Дополнительные сведения о команде **Get-AzKeyVaultCertificate** и ее параметрах см. в статье [Get-AzKeyVaultCertificate — пример 2](/powershell/module/az.keyvault/Get-AzKeyVaultCertificate?view=azps-4.4.0).
 
 # <a name="portal"></a>[Портал](#tab/azure-portal)
 

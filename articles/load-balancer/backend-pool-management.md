@@ -8,12 +8,12 @@ ms.service: load-balancer
 ms.topic: how-to
 ms.date: 01/28/2021
 ms.author: allensu
-ms.openlocfilehash: ac21e1f00dc2a5580b90a1a5eb43da05288e800a
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: c49a721a4db758965c9cf8d71f5d73b5754b6088
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103489429"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654481"
 ---
 # <a name="backend-pool-management"></a>Управление внутренним пулом
 Внутренний пул является важнейшим компонентом подсистемы балансировки нагрузки. Внутренний пул определяет группу ресурсов, которая будет обрабатывать трафик по определенному правилу балансировки нагрузки.
@@ -156,99 +156,6 @@ az vm create \
 --generate-ssh-keys
 ```
 
-### <a name="rest-api"></a>REST API
-Создайте внутренний пул:
-
-```
-PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/loadBalancers/{load-balancer-name}/backendAddressPools/{backend-pool-name}?api-version=2020-05-01
-```
-
-Создайте сетевой интерфейс и добавьте его в созданный внутренний пул с помощью свойства IP-конфигурации для сетевого интерфейса:
-
-```
-PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/networkInterfaces/{nic-name}?api-version=2020-05-01
-```
-
-Текст запроса в формате JSON:
-```json
-{
-  "properties": {
-    "enableAcceleratedNetworking": true,
-    "ipConfigurations": [
-      {
-        "name": "ipconfig1",
-        "properties": {
-          "subnet": {
-            "id": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}/subnets/{subnet-name}"
-          },
-          "loadBalancerBackendAddressPools": [
-            {
-              "id": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/loadBalancers/{load-balancer-name}/backendAddressPools/{backend-pool-name}"
-            }
-          ]
-        }
-      }
-    ]
-  },
-  "location": "eastus"
-}
-```
-
-Получите сведения о внутреннем пуле для подсистемы балансировки нагрузки и убедитесь, что этот сетевой интерфейс добавлен во внутренний пул:
-
-```
-GET https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name/providers/Microsoft.Network/loadBalancers/{load-balancer-name/backendAddressPools/{backend-pool-name}?api-version=2020-05-01
-```
-
-Создайте виртуальную машину и подключите сетевую карту, которая ссылается на серверный пул:
-
-```
-PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Compute/virtualMachines/{vm-name}?api-version=2019-12-01
-```
-
-Текст запроса в формате JSON:
-```JSON
-{
-  "location": "easttus",
-  "properties": {
-    "hardwareProfile": {
-      "vmSize": "Standard_D1_v2"
-    },
-    "storageProfile": {
-      "imageReference": {
-        "sku": "2016-Datacenter",
-        "publisher": "MicrosoftWindowsServer",
-        "version": "latest",
-        "offer": "WindowsServer"
-      },
-      "osDisk": {
-        "caching": "ReadWrite",
-        "managedDisk": {
-          "storageAccountType": "Standard_LRS"
-        },
-        "name": "myVMosdisk",
-        "createOption": "FromImage"
-      }
-    },
-    "networkProfile": {
-      "networkInterfaces": [
-        {
-          "id": "/subscriptions/{subscription-id}/resourceGroups/myResourceGroup/providers/Microsoft.Network/networkInterfaces/{nic-name}",
-          "properties": {
-            "primary": true
-          }
-        }
-      ]
-    },
-    "osProfile": {
-      "adminUsername": "{your-username}",
-      "computerName": "myVM",
-      "adminPassword": "{your-password}"
-    }
-  }
-}
-```
-
 ### <a name="resource-manager-template"></a>Шаблон Resource Manager
 
 Выполните инструкции из этого [краткого руководства по применению шаблона Resource Manager](https://github.com/Azure/azure-quickstart-templates/tree/master/101-load-balancer-standard-create/), чтобы развернуть подсистему балансировки нагрузки и виртуальные машины, а затем добавить эти виртуальные машины во внутренний пул с помощью сетевого интерфейса.
@@ -260,17 +167,6 @@ PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/
 В сценариях с использованием предварительно заполненных внутренних пулов следует применять сочетание IP-адресов и виртуальной сети.
 
 Все управление внутренним пулом выполняется непосредственно на объекте внутреннего пула, как видно из приведенных ниже примеров.
-
-### <a name="limitations"></a>Ограничения
-Внутренний пул, настроенный с использованием IP-адреса, имеет следующие ограничения:
-  * Может использоваться только для Load Balancer цен. категории "Стандартный".
-  * внутренний пул поддерживает до 100 IP-адресов;
-  * ресурсы внутреннего пула должны находиться в той же виртуальной сети, что и подсистема балансировки нагрузки;
-  * Load Balancer с внутренним пулом на основе IP-адресов не может функционировать как служба Приватного канала.
-  * пока эта возможность не поддерживается на портале Azure;
-  * контейнеры ACI в настоящее время этой функцией не поддерживаются;
-  * подсистемы балансировки нагрузки или службы, обслуживаемые ими, не могут быть помещены в внутренний пул подсистемы балансировки нагрузки.
-  * Правила NAT для входящего трафика не могут определяться IP-адресом.
 
 ### <a name="powershell"></a>PowerShell
 Создайте внутренний пул:
@@ -411,128 +307,21 @@ az vm create \
   --admin-username azureuser \
   --generate-ssh-keys
 ```
+ 
+### <a name="limitations"></a>Ограничения
+Внутренний пул, настроенный с использованием IP-адреса, имеет следующие ограничения:
+  * Может использоваться только для Load Balancer цен. категории "Стандартный".
+  * внутренний пул поддерживает до 100 IP-адресов;
+  * ресурсы внутреннего пула должны находиться в той же виртуальной сети, что и подсистема балансировки нагрузки;
+  * Load Balancer с внутренним пулом на основе IP-адресов не может функционировать как служба Приватного канала.
+  * пока эта возможность не поддерживается на портале Azure;
+  * контейнеры ACI в настоящее время этой функцией не поддерживаются;
+  * подсистемы балансировки нагрузки или службы, такие как Шлюз приложений, нельзя помещать во внутренний пул подсистемы балансировки нагрузки;
+  * Правила NAT для входящего трафика не могут определяться IP-адресом.
 
-### <a name="rest-api"></a>REST API
-
-Создайте внутренний пул и определите внутренние адреса с помощью запроса PUT для внутреннего пула. Настройте внутренние адреса в JSON-коде в тексте запроса PUT, как показано ниже:
-
-* Имя адреса
-* IP-адрес
-* Идентификатор виртуальной сети 
-
-```
-PUT https://management.azure.com/subscriptions/subid/resourceGroups/testrg/providers/Microsoft.Network/loadBalancers/lb/backendAddressPools/backend?api-version=2020-05-01
-```
-
-Текст запроса в формате JSON:
-```JSON
-{
-  "properties": {
-    "loadBalancerBackendAddresses": [
-      {
-        "name": "address1",
-        "properties": {
-          "virtualNetwork": {
-            "id": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}"
-          },
-          "ipAddress": "10.0.0.4"
-        }
-      },
-      {
-        "name": "address2",
-        "properties": {
-          "virtualNetwork": {
-            "id": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}"
-          },
-          "ipAddress": "10.0.0.5"
-        }
-      }
-    ]
-  }
-}
-```
-
-Получите сведения о внутреннем пуле для подсистемы балансировки нагрузки и убедитесь, что внутренние адреса добавлены во внутренний пул:
-```
-GET https://management.azure.com/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/loadBalancers/{load-balancer-name}/backendAddressPools/{backend-pool-name}?api-version=2020-05-01
-```
-
-Создайте сетевой интерфейс и добавьте его во внутренний пул. Присвойте IP-адрес одному из внутренних адресов:
-```
-PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/networkInterfaces/{nic-name}?api-version=2020-05-01
-```
-
-Текст запроса в формате JSON:
-```JSON
-{
-  "properties": {
-    "enableAcceleratedNetworking": true,
-    "ipConfigurations": [
-      {
-        "name": "ipconfig1",
-        "properties": {
-          "privateIPAddress": "10.0.0.4",
-          "subnet": {
-            "id": "/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}/subnets/{subnet-name}"
-          }
-        }
-      }
-    ]
-  },
-  "location": "eastus"
-}
-```
-
-Создайте виртуальную машину и подключите к ней сетевую карту с IP-адресом из внутреннего пула:
-
-```
-PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Compute/virtualMachines/{vm-name}?api-version=2019-12-01
-```
-
-Текст запроса в формате JSON:
-```JSON
-{
-  "location": "eastus",
-  "properties": {
-    "hardwareProfile": {
-      "vmSize": "Standard_D1_v2"
-    },
-    "storageProfile": {
-      "imageReference": {
-        "sku": "2016-Datacenter",
-        "publisher": "MicrosoftWindowsServer",
-        "version": "latest",
-        "offer": "WindowsServer"
-      },
-      "osDisk": {
-        "caching": "ReadWrite",
-        "managedDisk": {
-          "storageAccountType": "Standard_LRS"
-        },
-        "name": "myVMosdisk",
-        "createOption": "FromImage"
-      }
-    },
-    "networkProfile": {
-      "networkInterfaces": [
-        {
-          "id": "/subscriptions/{subscription-id}/resourceGroups/myResourceGroup/providers/Microsoft.Network/networkInterfaces/{nic-name}",
-          "properties": {
-            "primary": true
-          }
-        }
-      ]
-    },
-    "osProfile": {
-      "adminUsername": "{your-username}",
-      "computerName": "myVM",
-      "adminPassword": "{your-password}"
-    }
-  }
-}
-```
-  
 ## <a name="next-steps"></a>Дальнейшие действия
 Из этой статьи вы узнали об управлении внутренним пулом Azure Load Balancer и о настройке внутреннего пула с использованием IP-адреса и виртуальной сети.
 
 [Дополнительные сведения об Azure Load Balancer](load-balancer-overview.md).
+
+Проверьте [REST API](https://docs.microsoft.com/rest/api/load-balancer/loadbalancerbackendaddresspools/createorupdate) для управления серверным пулом на основе IP-адресов.

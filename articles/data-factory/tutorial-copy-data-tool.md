@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-lt-2019
 ms.date: 02/18/2021
-ms.openlocfilehash: 13aa907a8c5b394fbda8d8998928016c09b5524f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 1540e088565f69ca6d923202ad9b32b8d4ccf0ee
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101740007"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584447"
 ---
 # <a name="copy-data-from-azure-blob-storage-to-a-sql-database-by-using-the-copy-data-tool"></a>Копирование данных из хранилища BLOB-объектов Azure в базу данных SQL Azure с помощью средства копирования данных
 
@@ -82,7 +82,7 @@ ms.locfileid: "101740007"
 
     Имя фабрики данных должно быть _глобально уникальным_. Вы можете получить следующее сообщение об ошибке.
 
-    ![Сообщение об ошибке фабрики данных](./media/doc-common-process/name-not-available-error.png)
+   :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных со сведениями о том, что имя дублируется.":::
 
     Если вы увидите следующую ошибку касательно значения имени, введите другое имя фабрики данных. Например,**_ваше_имя_** **ADFTutorialDataFactory**. Правила именования артефактов службы "Фабрика данных" см. в [этой](naming-rules.md) статье.
 1. Выберите **подписку** Azure, в которой нужно создать фабрику данных.
@@ -100,7 +100,7 @@ ms.locfileid: "101740007"
 
 1. Когда создание завершится, откроется домашняя страница **Фабрика данных**.
 
-    ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница Фабрики данных Azure с элементом &quot;Создание и мониторинг&quot;.":::
 1. Щелкните плитку **Author & Monitor** (Создание и мониторинг), чтобы запустить на отдельной вкладке пользовательский интерфейс фабрики данных Azure.
 
 ## <a name="use-the-copy-data-tool-to-create-a-pipeline"></a>Создание конвейера с помощью средства копирования данных
