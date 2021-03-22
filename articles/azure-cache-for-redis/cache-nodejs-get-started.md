@@ -8,16 +8,20 @@ ms.topic: quickstart
 ms.date: 05/21/2018
 ms.author: yegu
 ms.custom: mvc, seo-javascript-september2019, seo-javascript-october2019, devx-track-js
-ms.openlocfilehash: aa22cffc1fc38e055c6c2bb504c311c012f31ac2
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: e4c58d67668a67eee38a73d46a2a40ca29c1dfd8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96012907"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102121258"
 ---
 # <a name="quickstart-use-azure-cache-for-redis-in-nodejs"></a>Краткое руководство. Использование Кэша Azure для Redis в Node.js
 
 Из этого краткого руководства вы узнаете, как реализовать кэш Azure для Redis в приложении Node.js для обеспечения доступа к защищенному выделенному кэшу, к которому может обращаться любое приложение в Azure.
+
+## <a name="skip-to-the-code-on-github"></a>Переход к коду на GitHub
+
+Если вы хотите сразу перейти к коду, см. [краткое руководство по Node.js](https://github.com/Azure-Samples/azure-cache-redis-samples/tree/main/quickstart/nodejs) на сайте GitHub.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

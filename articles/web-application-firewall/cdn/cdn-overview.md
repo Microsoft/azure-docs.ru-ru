@@ -7,14 +7,14 @@ ms.service: web-application-firewall
 ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: victorh
-ms.openlocfilehash: 6949c1e8f83ebf47878a3d449796ccc03920756a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: cd1f21f150094094a6bf856b04a64a02963f35a8
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89225158"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102521719"
 ---
-# <a name="azure-web-application-firewall-on-azure-content-delivery-network"></a>Брандмауэр веб-приложения Azure в сети доставки содержимого Azure
+# <a name="azure-web-application-firewall-on-azure-content-delivery-network-from-microsoft"></a>Брандмауэр веб-приложений Azure в сети доставки содержимого Azure от Майкрософт
 
 Брандмауэр веб-приложения Azure (WAF) в сети доставки содержимого Azure (CDN) от Майкрософт обеспечивает централизованную защиту веб-содержимого. WAF защищает веб-службы от распространенных эксплойтов и уязвимостей. Он обеспечивает высокую доступность службы для пользователей и помогает отвечать требованиям соответствия.
 

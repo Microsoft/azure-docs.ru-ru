@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 02/12/2021
+ms.date: 03/04/2021
 ms.author: jeedes
-ms.openlocfilehash: 9a7e02955d7784feb57d7e9ccc7e337b6a939380
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8409a4d897ea9b20528a5b30273819e6962774cb
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101651558"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102184497"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-kendis---azure-ad-integration"></a>Руководство по интеграции единого входа Azure Active Directory с Kendis — Azure AD Integration
 
@@ -123,13 +123,21 @@ ms.locfileid: "101651558"
 
 ## <a name="configure-kendis-azure-ad-integration-sso"></a>Настройка единого входа в Kendis — Azure AD Integration
 
-1. В другом окне веб-браузера войдите на корпоративный сайт Kendis — Azure AD Integration с учетными данными администратора.
+1. Чтобы автоматизировать настройку в Kendis — Azure AD Integration, необходимо установить **расширение браузера "Безопасный вход в мои приложения"** , щелкнув **Установить расширение**.
 
-1. Откройте раздел **Settings > SAML Configurations** (Параметры — Конфигурация SAML).
+    ![Расширение "Мои приложения"](common/install-myappssecure-extension.png)
+
+2. После добавления расширения в браузер щелкните **Настроить Kendis — Azure AD Integration**, чтобы перейти к приложению Kendis — Azure AD Integration. В нем введите учетные данные администратора, чтобы войти в Kendis — Azure AD Integration. Расширение браузера автоматически настроит приложение и автоматизирует шаги 3–5.
+
+    ![Настройка конфигурации](common/setup-sso.png)
+
+3. Если вы хотите настроить Kendis — Azure AD Integration вручную, в другом окне браузера войдите на корпоративный сайт Kendis — Azure AD Integration с правами администратора.
+
+4. Откройте раздел **Settings > SAML Configurations** (Параметры — Конфигурация SAML).
 
     ![Settings > SAML Configurations (Параметры > Конфигурация SAML)](./media/kendis-scaling-agile-platform-tutorial/settings.png)
 
-1. Щелкните **Edit** (Изменить) в нижней части страницы и выполните указанные ниже действия.
+5. Щелкните **Edit** (Изменить) в нижней части страницы и выполните указанные ниже действия.
 
     ![Конфигурации SAML](./media/kendis-scaling-agile-platform-tutorial/saml-configuration-settings.png)
 

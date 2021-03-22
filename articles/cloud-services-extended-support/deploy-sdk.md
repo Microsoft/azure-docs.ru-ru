@@ -1,6 +1,6 @@
 ---
-title: Развертывание облачной службы (расширенная поддержка) — пакет SDK
-description: Развертывание облачной службы (расширенная поддержка) с использованием пакета SDK Azure
+title: Развертывание Облачных служб (расширенная поддержка) с помощью пакета SDK
+description: Развертывание Облачных служб (расширенная поддержка) с использованием пакета SDK Azure
 ms.topic: tutorial
 ms.service: cloud-services-extended-support
 author: gachandw
@@ -8,25 +8,25 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: cf8d2696732c2947ce86b9509720898fd63c1e16
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: b63f42ccc0a9d8d138e38a262db528fd36ea701a
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98886971"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123043"
 ---
-# <a name="deploy-a-cloud-services-extended-support-using-sdk"></a>Развертывание облачной службы (расширенная поддержка) с использованием пакета SDK
+# <a name="deploy-cloud-services-extended-support-by-using-the-azure-sdk"></a>Развертывание Облачных служб (расширенная поддержка) с использованием пакета SDK Azure
 
-В этой статье показано, как с помощью [пакета SDK Azure](https://azure.microsoft.com/downloads/) развертывать облачные службы (расширенная поддержка) с несколькими ролями (веб-роль и рабочая роль) и расширением удаленного рабочего стола. 
+В этой статье показано, как с помощью [пакета SDK Azure](https://azure.microsoft.com/downloads/) развернуть экземпляр облачных служб (расширенная поддержка) с несколькими ролями (веб-роль и рабочая роль) и расширением удаленного рабочего стола. Облачные службы (расширенная поддержка) — это модель развертывания Облачных служб Azure, основанная на Azure Resource Manager.
 
 > [!IMPORTANT]
-> Облачные службы (расширенная поддержка) сейчас предоставляются в общедоступной предварительной версии. Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Облачные службы (расширенная поддержка) сейчас предоставляются в общедоступной предварительной версии. Эта предварительная версия предоставляется без соглашения об уровне обслуживания. Ее не следует использовать для производственных рабочих нагрузок. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 
 Ознакомьтесь с [предварительными требованиями развертывания](deploy-prerequisite.md) для Облачных служб (расширенная поддержка) и создайте связанные ресурсы.
 
-## <a name="deploy-a-cloud-services-extended-support"></a>Развертывание облачных служб (расширенная поддержка)
+## <a name="deploy-cloud-services-extended-support"></a>Развертывание Облачных служб (расширенная поддержка)
 1. Установите [пакет SDK NuGet для вычислений Azure](https://www.nuget.org/packages/Microsoft.Azure.Management.Compute/43.0.0-preview) и инициализируйте клиент, используя стандартный механизм проверки подлинности.
 
     ```csharp
@@ -73,7 +73,7 @@ ms.locfileid: "98886971"
     resourceGroup = await resourceGroups.CreateOrUpdateAsync(resourceGroupName, resourceGroup);
     ```
 
-3. Создайте учетную запись хранения и контейнер, которые будут использоваться для хранения CSCFG-файлов пакета облачной службы и CSDEF-файлов конфигурации службы. Установите [пакет NuGet для службы хранилища Azure](https://www.nuget.org/packages/Azure.Storage.Common/). Этот шаг можно пропустить, если используется существующая учетная запись хранения. Имя этой учетной записи хранения должно быть уникальным.
+3. Создайте учетную запись хранения и контейнер, которые будут использоваться для хранения CSCFG-файлов пакета службы и CSDEF-файлов конфигурации службы. Установите [пакет NuGet для службы хранилища Azure](https://www.nuget.org/packages/Azure.Storage.Common/). Этот шаг можно пропустить, если вы используете существующую учетную запись хранения. Имя этой учетной записи хранения должно быть уникальным.
 
     ```csharp
     string storageAccountName = “ContosoSAS”
@@ -109,7 +109,7 @@ ms.locfileid: "98886971"
     sasConstraints.Permissions = SharedAccessBlobPermissions.Read | SharedAccessBlobPermissions.Write;
     ```
 
-4. Отправьте пакет облачной службы (CSPKG-файл) в учетную запись хранения. В качестве URL-адреса пакета можно указать подписанный URL-адрес ресурса, размещенного в любой учетной записи хранения.
+4. Отправьте пакет службы (CSPKG-файл) в учетную запись хранения. В качестве URL-адреса пакета можно указать подписанный URL-адрес ресурса, размещенного в любой учетной записи хранения.
 
     ```csharp
     CloudBlockBlob cspkgblockBlob = container.GetBlockBlobReference(“ContosoApp.cspkg”);
@@ -122,7 +122,7 @@ ms.locfileid: "98886971"
     string cspkgSASUrl = cspkgblockBlob.Uri + cspkgsasContainerToken;
     ```
 
-5. Отправьте конфигурацию облачной службы (CSCFG-файл) в учетную запись хранения. Конфигурацию службы можно указать в формате XML-строки или URL-адреса.
+5. Отправьте конфигурацию службы (CSCFG-файл) в учетную запись хранения. Укажите конфигурацию службы в формате XML-строки или URL-адреса.
 
     ```csharp
     CloudBlockBlob cscfgblockBlob = container.GetBlockBlobReference(“ContosoApp.cscfg”);
@@ -171,7 +171,7 @@ ms.locfileid: "98886971"
     PublicIPAddress publicIpAddress = m_NrpClient.PublicIPAddresses.CreateOrUpdate(resourceGroupName, publicIPAddressName, publicIPAddressParams);
     ```
 
-8. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки, созданным платформой.
+8. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки, созданной платформой.
 
     ```csharp
     LoadBalancerFrontendIPConfiguration feipConfiguration = new LoadBalancerFrontendIPConfiguration() 
@@ -206,7 +206,7 @@ ms.locfileid: "98886971"
     
     ```
 
-9. создание Key Vault; Это хранилище ключей будет использоваться для хранения сертификатов, связанных с ролями облачной службы (расширенная поддержка). Это хранилище ключей должно находиться в том же регионе и подписке, что и облачная служба, и иметь уникальное имя. Дополнительные сведения см. в статье [ Использование сертификатов с Облачными службами Azure (расширенная поддержка) ](certificates-and-key-vault.md).
+9. Создать хранилище ключей. Это хранилище ключей будет использоваться для хранения сертификатов, связанных с ролями Облачных служб (расширенная поддержка). Это хранилище ключей должно находиться в том же регионе и той же подписке, что и экземпляр Облачной службы (расширенная поддержка), и иметь уникальное имя. Дополнительные сведения см. в статье [ Использование сертификатов с Облачными службами Azure (расширенная поддержка) ](certificates-and-key-vault.md).
 
     ```powershell
     New-AzKeyVault -Name "ContosKeyVault” -ResourceGroupName “ContosoOrg” -Location “East US”
@@ -218,20 +218,20 @@ ms.locfileid: "98886971"
     Set-AzKeyVaultAccessPolicy -VaultName 'ContosKeyVault' -ResourceGroupName 'ContosoOrg'      -UserPrincipalName 'user@domain.com' -PermissionsToCertificates create,get,list,delete
     ```
 
-    Кроме того, можно задать политику доступа через ObjectId (его можно получить, запустив командлет Get-AzADUser).
+    Кроме того, можно задать политику доступа с помощью идентификатора объекта. Чтобы получить этот идентификатор, выполните команду `Get-AzADUser`.
 
     ```powershell
     Set-AzKeyVaultAccessPolicy -VaultName 'ContosKeyVault' -ResourceGroupName 'ContosOrg' -     ObjectId 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' -PermissionsToCertificates          create,get,list,delete
     ```
 
-11. В этом примере мы добавим в хранилище ключей самозаверяющий сертификат. Отпечаток этого сертификата необходимо добавить в CSCFG-файл конфигурации облачной службы для развертывания в ролях облачной службы.
+11. В этом примере мы добавим в хранилище ключей самозаверяющий сертификат. Отпечаток этого сертификата необходимо добавить в CSCFG-файл конфигурации службы для развертывания в ролях Облачных служб (расширенная поддержка).
 
     ```powershell
     $Policy = New-AzKeyVaultCertificatePolicy -SecretContentType "application/x-pkcs12" -       SubjectName "CN=contoso.com" -IssuerName "Self" -ValidityInMonths 6 -ReuseKeyOnRenewal 
     Add-AzKeyVaultCertificate -VaultName "ContosKeyVault" -Name "ContosCert" -      CertificatePolicy $Policy
     ```
 
-12. Создайте объект профиля ОС. Профиль ОС определяет сертификаты, связанные с ролями облачной службы. Это будет тот же сертификат, который был создан на предыдущем шаге.
+12. Создайте объект профиля ОС. Профиль ОС определяет сертификаты, связанные с ролями Облачных служб (расширенная поддержка). Это будет тот же сертификат, который был создан на предыдущем шаге.
 
     ```csharp
     CloudServiceOsProfile cloudServiceOsProfile = 
@@ -247,7 +247,9 @@ ms.locfileid: "98886971"
            };
     ```
 
-13. Создайте объект профиля роли. Профиль роли определяет свойства конкретной ценовой категории роли, такие как имя, емкость и уровень. В этом примере определены две роли: frontendRole и backendRole. Сведения о профиле роли должны соответствовать конфигурации роли, определенной в CSCFG-файле конфигурации и CSDEF-файле определения службы.
+13. Создайте объект профиля роли. Профиль роли определяет зависящие от роли свойства для ценовой категории, такие как имя, емкость и уровень. 
+
+    В этом примере определены две роли: ContosoFrontend и ContosoBackend. Сведения о профиле роли должны соответствовать конфигурации роли, определенной в CSCFG-файле конфигурации службы и CSDEF-файле определения службы.
 
     ```csharp
     CloudServiceRoleProfile cloudServiceRoleProfile = new CloudServiceRoleProfile()
@@ -281,7 +283,7 @@ ms.locfileid: "98886971"
                     }
     ```
 
-14. (Необязательно) Создайте объект профиля расширения, который требуется добавить в облачную службу. В этом примере мы добавим расширение RDP.
+14. (Необязательно) Создайте объект профиля расширения, который требуется добавить в экземпляр Облачной службы (расширенная поддержка). В этом примере мы добавим расширение RDP.
 
     ```csharp
     string rdpExtensionPublicConfig = "<PublicConfig>" +
@@ -313,7 +315,7 @@ ms.locfileid: "98886971"
         };
     ```
 
-15. Создайте развертывание облачной службы.
+15. Создайте развертывание экземпляра Облачной службы (расширенная поддержка).
 
     ```csharp
     CloudService cloudService = new CloudService
@@ -322,7 +324,7 @@ ms.locfileid: "98886971"
                 {
                     RoleProfile = cloudServiceRoleProfile
                     Configuration = < Add Cscfg xml content here>,
-                    // ConfigurationUrl = <Add you configuration URL here>,
+                    // ConfigurationUrl = <Add your configuration URL here>,
                     PackageUrl = <Add cspkg SAS url here>,
                     ExtensionProfile = cloudServiceExtensionProfile,
                     OsProfile= cloudServiceOsProfile,
@@ -336,6 +338,6 @@ ms.locfileid: "98886971"
     ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Просмотрите [часто задаваемые вопросы](faq.md) об Облачных службах (расширенная поддержка)
+- Ознакомьтесь с [часто задаваемыми вопросами об Облачных службах (расширенная поддержка)](faq.md).
 - Разверните облачную службу (расширенная поддержка) с помощью [портала Azure](deploy-portal.md), [PowerShell](deploy-powershell.md), [шаблона](deploy-template.md) или [Visual Studio](deploy-visual-studio.md).
-- Перейдите в [репозиторий примеров для Облачных служб (расширенная поддержка) ](https://github.com/Azure-Samples/cloud-services-extended-support)
+- Перейдите в [репозиторий примеров для Облачных служб (расширенная поддержка)](https://github.com/Azure-Samples/cloud-services-extended-support)

@@ -3,17 +3,17 @@ title: Анализ затрат на Azure с помощью приложени
 description: В этой статье объясняется, как установить и использовать приложение Power BI Azure Cost Management.
 author: bandersmsft
 ms.author: banders
-ms.date: 1/29/2021
+ms.date: 02/19/2021
 ms.topic: how-to
 ms.service: cost-management-billing
 ms.subservice: cost-management
 ms.reviewer: benshy
-ms.openlocfilehash: d3439f5a86c445898d95191a32496b5f0c86be0b
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.openlocfilehash: b08ff57f964ef7bc3712c930c222a10ed0f89ef4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99070163"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045104"
 ---
 # <a name="analyze-cost-with-the-azure-cost-management-power-bi-app-for-enterprise-agreements-ea"></a>Анализ затрат с помощью приложения Power BI Azure Cost Management для Соглашений Enterprise (EA)
 
@@ -36,24 +36,23 @@ ms.locfileid: "99070163"
 Чтобы установить приложение, сделайте следующее.
 
 1. Откройте [приложение Power BI Azure Cost Management](https://aka.ms/costmgmt/ACMApp).
-2. На странице приложения Power BI выберите **Получить**.
-3. Выберите **Продолжить**, чтобы принять условия использования и политику конфиденциальности.
-4. В окне **Установить это приложение Power BI** выберите **Установить**.
-5. При необходимости создайте рабочую область и выберите **Продолжить**.
-6. После завершения установки появится уведомление о том, что новое приложение готово.
-7. Выберите **Перейти к приложению**.
-8. В окне **Начало работы с новым приложением** в разделе **Подключите свои данные** выберите **Подключить**.  
-  ![Начало работы с новым приложением: подключение](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/connect-data2.png)
-9. В появившемся диалоговом окне введите номер регистрации EA в поле **BillingProfileIdOrEnrollmentNumber**. Укажите число месяцев для получения данных. Оставьте значение по умолчанию **Номер регистрации** в поле **Область**, а затем выберите **Далее**.  
-  ![Ввод сведений о регистрации EA](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-number.png)  
-10. Следующее диалоговое окно подключается к Azure и получает данные, необходимые для получения рекомендаций по зарезервированным экземплярам. *Оставьте значения по умолчанию* и выберите **Войти**.  
-  ![Снимок экрана: диалоговое окно подключения к приложению "Управление затратами Azure" со значениями по умолчанию.](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/autofit.png)  
-11. На завершающем шаге установщик подключается к системе регистрации EA и требует учетную запись [администратора Enterprise](../manage/understand-ea-roles.md). Выберите **Войти**, чтобы пройти аутентификацию с помощью регистрации EA. На этом шаге также запускается действие обновления данных в Power BI.  
-  ![Подключение к системе регистрации EA](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-auth.png)  
+1. На странице приложения Power BI выберите **Получить**.
+1. Выберите **Продолжить**, чтобы принять условия использования и политику конфиденциальности.
+1. В окне **Установить это приложение Power BI** выберите **Установить**.
+1. При необходимости создайте рабочую область и выберите **Продолжить**.
+1. После завершения установки появится уведомление о том, что новое приложение готово.
+1. Выберите установленное приложение.
+1. На странице "Приступая к работе" выберите **Подключите свои данные**.
+    :::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/connect-your-data.png" alt-text="Снимок экрана с выделенной ссылкой &quot;Подключите свои данные&quot;." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/connect-your-data.png" :::
+1. В появившемся диалоговом окне введите номер регистрации EA в поле **BillingProfileIdOrEnrollmentNumber**. Укажите число месяцев для получения данных. Оставьте значение по умолчанию **Номер регистрации** в поле **Область**, а затем выберите **Далее**.  
+    :::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-number.png" alt-text="Снимок экрана: область для ввода сведений о регистрации EA." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-number.png" :::
+1. С помощью указанного ниже диалогового окна можно подключиться к Azure и получить данные. *Оставьте значения по умолчанию* и выберите **Sign in and continue** (Войти и продолжить).  
+    :::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/autofit.png" alt-text="Снимок экрана: диалоговое окно подключения к приложению &quot;Управление затратами Azure&quot; со значениями по умолчанию." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/autofit.png" :::
+1. На завершающем шаге установщик подключается к системе регистрации EA и требует учетную запись [администратора Enterprise](../manage/understand-ea-roles.md). Оставьте все значения по умолчанию. Нажмите кнопку **Sign in and connect** (Войти и подключить).  
+    :::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-auth.png" alt-text="Снимок экрана: диалоговое окно подключения к приложению &quot;Управление затратами Azure&quot; со значениями по умолчанию для подключения." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-auth.png" :::
+1. Вам будет предложено пройти проверку подлинности с помощью регистрации EA. Проверка подлинности с помощью Power BI После того как вы пройдете проверку подлинности, начнется обновление данных Power BI.
     > [!NOTE]
     > Процесс обновления данных может занять некоторое время. Его продолжительность зависит от указанного числа месяцев и объема данных, которые необходимо синхронизировать.
-12. Чтобы проверить состояние обновления данных, выберите вкладку **Наборы данных** в рабочей области. Найдите метку времени "Обновлено". Если обновление еще не завершено, вы увидите индикатор, означающий, что обновление выполняется.  
-  ![Обновление данных](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/data-refresh2.png)
 
 После завершения обновления данных выберите приложение Azure Cost Management, чтобы просмотреть предварительно созданные отчеты.
 
@@ -78,11 +77,11 @@ ms.locfileid: "99070163"
 
 **Отчет об использовании Windows Server и Преимущества гибридного использования** отображает число виртуальных машин с включенным Преимуществом гибридного использования Azure. Он также содержит число ядер или виртуальных ЦП, используемых виртуальными машинами.
 
-![Полный отчет о Преимуществе гибридного использования Azure](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ahb-report-full.png)
+:::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ahb-report-full.png" alt-text="Снимок экрана с полным отчетом о Преимуществе гибридного использования Azure." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ahb-report-full.png" :::
 
 В этом отчете также представлены виртуальные машины Windows с **включенным** Преимуществом гибридного использования, имеющие _менее_ 8 виртуальных ЦП. В нем также показаны виртуальные машины с 8 _или более_ виртуальными ЦП, на которых Преимущество гибридного использования **не включено**. Эти сведения помогут вам полностью использовать Преимущество гибридного использования. Используйте его для самых дорогих виртуальных машин, чтобы обеспечить максимальную экономию.
 
-![Виртуальные машины с менее 8 виртуальных ЦП и с включенным Преимуществом гибридного использования Azure; виртуальные машины с более 8 виртуальных ЦП и не включенным Преимуществом гибридного использования](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ahb-report.png)
+:::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ahb-report.png" alt-text="Снимок экрана с отчетом о виртуальных машинах с менее 8 виртуальными ЦП и не включенным Преимуществом гибридного использования." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ahb-report.png" :::
 
 **Отчет о выгоде резервирования экземпляров** поможет понять, где и в какой степени применяется преимущество зарезервированного экземпляра (RI) для каждого региона, подписки, группы ресурсов или ресурса. В этом отчете для отображения представления используются данные по погашению.
 
@@ -105,7 +104,7 @@ ms.locfileid: "99070163"
 
 Чтобы использовать отчет, выберите фильтр детализации.
 
-![Отчет о доле зарезервированных виртуальных машин: выбор параметра детализации](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ri-drill-down2.png)
+:::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ri-drill-down2.png" alt-text="Снимок экрана с выбранным параметром детализации в отчете о доле зарезервированных виртуальных машин." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ri-drill-down2.png" :::
 
 Выберите регион для анализа. Затем выберите группу гибкости размера экземпляра и т. д.
 
@@ -118,7 +117,7 @@ ms.locfileid: "99070163"
 
 Значения _Normalized Size_ (Нормализованный размер) и _Recommended Quantity Normalized_ (Рекомендуемое количество нормализованных) позволяют привести покупку в соответствие с наименьшим размером для группы гибкости размера экземпляра. Эта информация полезна, если планируется приобрести только одно резервирование для всех размеров в группе гибкости размера экземпляра.
 
-![Рекомендации по резервированию экземпляров](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ri-recomendations.png)
+:::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ri-recommendations.png" alt-text="Снимок экрана с отчетом о рекомендациях по резервированию экземпляров." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ri-recommendations.png" :::
 
 **Отчет о доле зарезервированных виртуальных машин (общая рекомендация)** разбит на данные об использовании виртуальных машин по запросу и зарезервированных виртуальных машин за выбранный период времени. Он содержит рекомендации по покупке зарезервированных виртуальных машин на уровне подписки.
 
@@ -151,7 +150,7 @@ Data source error: {"error":{"code":"ModelRefresh_ShortMessage_ProcessingError",
 
 Повторно подключитесь к Управлению затратами и задайте для **области** значение `Enrollment Number`. Не указывайте номер регистрации своей организации. Вместо него введите `Enrollment Number` точно так же, как показано на следующем изображении:
 
-![Ввод сведений о регистрации EA](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-number.png)  
+:::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-number-troubleshoot.png" alt-text="Снимок экрана, на котором показано, что не следует изменять текст по умолчанию для номера регистрации." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/ea-number-troubleshoot.png" :::
 
 ### <a name="budgetamount-error"></a>Ошибка BudgetAmount
 
@@ -166,12 +165,11 @@ Data source error: The 'budgetAmount' column does not exist in the rowset. Table
 
 #### <a name="cause"></a>Причина
 
-Эта ошибка происходит из-за проблем с базовыми метаданными. Она связана с отсутствием бюджета в разделе **Управление затратами > Бюджет** на портале Azure. На данный момент ее исправления развертывается в Power BI Desktop и службе Power BI. 
+Эта ошибка происходит из-за проблем с базовыми метаданными. Она связана с отсутствием бюджета в разделе **Управление затратами > Бюджет** на портале Azure. На данный момент ее исправления развертывается в Power BI Desktop и службе Power BI.
 
 #### <a name="solution"></a>Решение
 
 - Пока эта ошибка не будет исправлена, проблему можно обойти, добавив тестовый бюджет на портале Azure на уровне учетной записи выставления счетов или соглашения о регистрации EA. Тестовый бюджет разблокирует подключение к Power BI. Дополнительные сведения о создании бюджета см. в [руководстве по созданию бюджетов Azure и управление ими](tutorial-acm-create-budgets.md).
-
 
 ### <a name="invalid-credentials-for-azureblob-error"></a>Недопустимые учетные данные для ошибки AzureBlob
 
@@ -183,15 +181,14 @@ Failed to update data source credentials: The credentials provided for the Azure
 
 #### <a name="cause"></a>Причина
 
-Эта ошибка происходит при изменении метода проверки подлинности для подключения к большому двоичному объекту AutoFitComboMeter.
+Эта ошибка происходит при изменении метода проверки подлинности для подключения к источнику данных.
 
 #### <a name="solution"></a>Решение
 
 1. Подключитесь к данным.
 1. Введите соглашение о регистрации EA и количество месяцев, оставьте значение по умолчанию **Анонимный** для метода проверки подлинности и **Нет** для параметра "Уровень конфиденциальности".  
-  ![Снимок экрана: диалоговое окно подключения к приложению "Управление затратами Azure" с введенными значениями "Анонимный" и "Нет".](./media/analyze-cost-data-azure-cost-management-power-bi-template-app/autofit-troubleshoot.png)  
+  :::image type="content" source="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/autofit-troubleshoot.png" alt-text="Снимок экрана: диалоговое окно подключения к приложению &quot;Управление затратами Azure&quot; с введенными значениями &quot;Анонимный&quot; и &quot;Нет&quot;." lightbox="./media/analyze-cost-data-azure-cost-management-power-bi-template-app/autofit-troubleshoot.png" :::
 1. На следующей странице задайте **OAuth2** для метода проверки подлинности и **Нет** для параметра "Уровень конфиденциальности". Затем войдите в систему, чтобы пройти проверку подлинности путем регистрации. На этом шаге также запускается обновление данных Power BI.
-
 
 ## <a name="data-reference"></a>Описание данных
 

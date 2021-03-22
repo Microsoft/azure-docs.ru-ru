@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 01/18/2021
+ms.date: 02/15/2021
 ms.author: jeedes
-ms.openlocfilehash: 745a82300cbbc87070a117cd8dd094236821aee7
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: 390ccfa828ebaa0d3dec15990ffeb60cbb24360e
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98625403"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101648600"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-overdrive"></a>Руководство по интеграции Azure Active Directory с Overdrive
 
@@ -37,7 +37,7 @@ ms.locfileid: "98625403"
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* Overdrive поддерживает единый вход, инициированный **поставщиком услуг**.
+* Overdrive поддерживает единый вход, инициированный **поставщиком службы**.
 
 * Overdrive поддерживает **JIT**-подготовку пользователей.
 
@@ -65,7 +65,7 @@ ms.locfileid: "98625403"
     1. **[Создание тестового пользователя Overdrive](#create-overdrive-test-user)** требуется для того, чтобы в Overdrive существовал пользователь B. Simon, связанный с одноименным пользователем в Azure AD.
 1. **[Проверка единого входа](#test-sso)** позволяет убедиться в правильности конфигурации.
 
-### <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
+## <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
 
 Выполните следующие действия, чтобы включить единый вход Azure AD на портале Azure.
 
@@ -121,7 +121,7 @@ ms.locfileid: "98625403"
 
 7. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
-### <a name="configure-overdrive-sso"></a>Настройка единого входа в Overdrive
+## <a name="configure-overdrive-sso"></a>Настройка единого входа в Overdrive
 
 Чтобы настроить единый вход на стороне **Overdrive**, нужно отправить скачанный файл **XML метаданных федерации** и соответствующие URL-адреса, скопированные на портале Azure, в [службу поддержки Overdrive](https://help.overdrive.com/). Специалисты службы поддержки настроят подключение единого входа SAML на обеих сторонах.
 
@@ -133,7 +133,7 @@ ms.locfileid: "98625403"
 >Вы можете использовать любые другие инструменты создания учетных записей пользователя OverDrive или API, предоставляемые OverDrive, для подготовки учетных записей пользователя AAD.
 >
 
-### <a name="test-sso"></a>Проверка единого входа
+## <a name="test-sso"></a>Проверка единого входа
 
 В этом разделе описано, как проверить конфигурацию единого входа Azure AD с помощью указанных ниже способов. 
 
@@ -141,8 +141,8 @@ ms.locfileid: "98625403"
 
 * Перейдите по URL-адресу для входа в Overdrive и инициируйте поток входа.
 
-* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Overdrive на портале "Мои приложения", вы перейдете по URL-адресу для входа в Overdrive. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
+* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Overdrive на портале "Мои приложения", вы перейдете по URL-адресу для входа в Overdrive. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Overdrive вы можете применить функцию управления сеансом, которая защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа в реальном времени. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
+После настройки Overdrive вы можете применить функцию управления сеансом, которая защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа в реальном времени. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

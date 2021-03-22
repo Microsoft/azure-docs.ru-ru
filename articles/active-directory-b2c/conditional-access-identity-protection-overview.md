@@ -5,17 +5,17 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: conditional-access
 ms.topic: overview
-ms.date: 09/01/2020
+ms.date: 03/03/2021
 ms.author: mimart
 author: msmimart
 manager: celested
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17706f908613336714bb7daf08fdf3bfd5eaf64
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.openlocfilehash: e2ec8af824d573493d1da743923956e587ded62e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96928398"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033832"
 ---
 # <a name="identity-protection-and-conditional-access-for-azure-ad-b2c"></a>Защита идентификации и условный доступ для Azure AD B2C
 
@@ -49,21 +49,21 @@ ms.locfileid: "96928398"
 
 - В клиентах Azure AD B2C обнаружение риска защиты идентификации предоставляется только для локальных учетных записей B2C, но не для учетных записей Google, Facebook и других социальных сетей.
 
-- В клиентах Azure AD B2C предоставляется подмножество обнаружений риска, существующих в защите идентификации. Дополнительные сведения см. в разделе [Настройка защиты идентификации](conditional-access-identity-protection-setup.md#set-up-identity-protection).
+- В клиентах Azure AD B2C предоставляется подмножество обнаружений риска, существующих в защите идентификации. См. статьи [Исследование рисков с помощью защиты идентификации в Azure AD B2C](identity-protection-investigate-risk.md) и [Добавление условного доступа к потокам пользователей в Azure Active Directory B2C](conditional-access-user-flow.md).
 
 - Возможность условного доступа по соответствию устройств не предоставляется в клиентах Azure AD B2C.
 
 
 ## <a name="integrate-conditional-access-with-user-flows-and-custom-policies"></a>Интеграция условного доступа с пользовательскими потоками и настраиваемыми политиками
 
-В Azure AD B2C вы можете активировать условия условного доступа из встроенных пользовательских потоков. Также вы можете встраивать условный доступ в настраиваемые политики. Как и с другими аспектами пользовательских потоков B2C, есть возможность настраивать сообщения для взаимодействия с пользователями, дополняя их корпоративными голосами, фирменной символикой и методами устранения рисков. См. статью [Определение технического профиля условного доступа](conditional-access-technical-profile.md).
+В Azure AD B2C вы можете активировать условия условного доступа из встроенных пользовательских потоков. Также вы можете встраивать условный доступ в настраиваемые политики. Как и с другими аспектами пользовательских потоков B2C, есть возможность настраивать сообщения для взаимодействия с пользователями, дополняя их корпоративными голосами, фирменной символикой и методами устранения рисков. См. статью [Добавление условного доступа к потокам пользователей в Azure Active Directory B2C](conditional-access-user-flow.md).
 
 ## <a name="microsoft-graph-api"></a>API Microsoft Graph
 
-Также вы можете управлять политиками условного доступа в Azure AD B2C с помощью API Microsoft Graph. Дополнительные сведения см. в [документации по условному доступу](../active-directory/conditional-access/overview.md) и [справочнике по Microsoft Graph](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
+Также вы можете управлять политиками условного доступа в Azure AD B2C с помощью API Microsoft Graph. Дополнительные сведения см. в [документации по условному доступу](../active-directory/conditional-access/overview.md) и [справочнике по операциям Microsoft Graph](microsoft-graph-operations.md#conditional-access).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Настройка защиты идентификации и условного доступа для Azure AD B2C](conditional-access-identity-protection-setup.md)
+- [Добавление условного доступа к потокам пользователей в Azure Active Directory B2C](conditional-access-user-flow.md)
 - [Общие сведения о защите идентификации в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 - [Что собой представляет условный доступ](../active-directory/conditional-access/overview.md)

@@ -5,12 +5,12 @@ ms.service: digital-twins
 ms.topic: include
 ms.date: 5/25/2020
 ms.author: baanders
-ms.openlocfilehash: f5b332415f1abf7d4c1002bdd4f3bfcef12f1267
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: ff9d1f0ff75a6df6c115ecfe2b8c5f71b12049e4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96023276"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036183"
 ---
 ## <a name="configure-the-sample-project"></a>Настройка примера проекта
 
@@ -22,7 +22,7 @@ ms.locfileid: "96023276"
 
 В Visual Studio выберите файл _SampleClientApp > **appsettings.json**_, чтобы открыть его в окне редактирования. Это будет предварительно заданный файл JSON с необходимыми переменными конфигурации для запуска проекта.
 
-В файле измените `instanceUrl` на URL-адрес *hostName* экземпляра Azure Digital Twins (используя *https://* в начале, как показано ниже).
+В файле измените `instanceUrl` на *URL-адрес hostName* экземпляра Azure Digital Twins (добавив **_https://_** перед *hostName*, как показано ниже).
 
 ```json
 {
@@ -32,7 +32,7 @@ ms.locfileid: "96023276"
 
 Сохраните файл и закройте его. 
 
-Затем настройте файл *appsettings.json*, который будет скопирован в выходной каталог при создании *SampleClientApp*. Для этого щелкните правой кнопкой мыши файл *appsettings.json* и выберите пункт *Свойства*. В инспекторе *Свойства* измените значение свойства *Копировать во внешний каталог* на *Копировать, если новее*.
+Затем настройте файл *appsettings.json*, который будет скопирован в выходной каталог при создании *SampleClientApp*. Для этого щелкните правой кнопкой мыши файл *appsettings.json* и выберите **Свойства**. В окне инспектора **Свойства** найдите свойство *Копировать в выходной каталог*. При необходимости измените значение на **Копировать, если новее**.
 
 :::image type="content" source="../articles/digital-twins/media/includes/copy-config.png" alt-text="Фрагмент окна Visual Studio: область Обозревателя решений с выделенным файлом appsettings.json и панель свойств со свойством &quot;Копировать во внешний каталог&quot;, для которого задано значение &quot;Копировать, если новее&quot;" border="false" lightbox="../articles/digital-twins/media/includes/copy-config.png":::
 

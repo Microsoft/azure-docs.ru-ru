@@ -10,12 +10,12 @@ ms.custom: mvc
 ms.topic: sample
 ms.service: active-directory
 ms.subservice: B2C
-ms.openlocfilehash: 8642f4284770df54704a4e7066054d3bb4640486
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.openlocfilehash: a75896dde7a23ea346e0af73ed145094e78812ca
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96545878"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101654499"
 ---
 # <a name="azure-active-directory-b2c-code-samples"></a>Примеры кода Azure Active Directory B2C
 
@@ -48,7 +48,15 @@ ms.locfileid: "96545878"
 | Образец | Описание |
 |--------| ----------- |
 | [ms-identity-b2c-javascript-spa](https://github.com/Azure-Samples/ms-identity-b2c-javascript-spa) | Одностраничное приложение (SPA) для вызова веб-API. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется поток кода авторизации с PKCE. |
-| [javascript-msal-singlepageapp](https://github.com/Azure-Samples/active-directory-b2c-javascript-msal-singlepageapp) | Одностраничное приложение (SPA) для вызова веб-API. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этих примерах используется неявный поток.|
+| [javascript-nodejs-management](https://github.com/Azure-Samples/ms-identity-b2c-javascript-nodejs-management/tree/main/Chapter1) | Одностраничное приложение (SPA), вызывающее Microsoft Graph для управления пользователями в каталоге B2C. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется поток кода авторизации с PKCE.|
+| [javascript-msal-singlepageapp](https://github.com/Azure-Samples/active-directory-b2c-javascript-msal-singlepageapp) | Одностраничное приложение (SPA) для вызова веб-API. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется неявный поток.|
+
+## <a name="consoledaemon-apps"></a>Консольные и управляющие программы
+
+| Образец | Описание |
+|--------| ----------- |
+| [javascript-nodejs-management](https://github.com/Azure-Samples/ms-identity-b2c-javascript-nodejs-management/tree/main/Chapter2) | Приложение Node.js и консольная управляющая программа Express, вызывающая Microsoft Graph с помощью собственного удостоверения для управления пользователями в каталоге B2C. Аутентификация осуществляется с помощью Azure AD B2C и MSAL Node. В этом примере используется поток кода авторизации.|
+| [dotnetcore-b2c-account-management](https://github.com/Azure-Samples/ms-identity-dotnetcore-b2c-account-management) | Консольное приложение .NET Core, вызывающее Microsoft Graph с помощью собственного удостоверения для управления пользователями в каталоге B2C. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.NET. В этом примере используется поток кода авторизации.|
 
 ## <a name="saml-test-application"></a>Тестовое приложение SAML
 
@@ -72,8 +80,8 @@ ms.locfileid: "96545878"
 ### <a name="automated-fraud-protection-services--captcha"></a>Автоматизированные службы защиты от мошенничества и CAPTCHA
 | Образец                                                                                                            | Описание                                                                                                                          |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [Arkose Labs: защита от мошенничества и нарушений](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-arkose) | В этом примере показано, как обеспечить безопасность регистрации пользователей с помощью службы Arkose Labs для защиты от мошенничества и нарушений. |
-| [reCAPTCHA](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-captcha) | В этом примере показано, как обеспечить безопасность регистрации пользователей с помощью задачи reCAPTCHA, предотвращающей автоматизированные нарушения. |
+| [Arkose Labs: защита от мошенничества и нарушений](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-arkose) | В этом примере показано, как обеспечить безопасность регистрации пользователей с помощью службы Arkose Labs для защиты от мошенничества и злоупотреблений. |
+| [reCAPTCHA](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-captcha) | В этом примере показано, как обеспечить безопасность регистрации пользователей с помощью задачи reCAPTCHA, предотвращающей злоупотребления с использованием автоматизированных средств. |
 
 
 ### <a name="identity-verification"></a>Проверка личности

@@ -1,23 +1,18 @@
 ---
 title: Важные предстоящие изменения в Центре безопасности Azure
 description: Предстоящие изменения в Центре безопасности Azure, о которых, возможно, вам следует знать и которые, может быть, нужно будет запланировать
-services: security-center
-documentationcenter: na
 author: memildin
 manager: rkarlin
 ms.service: security-center
-ms.devlang: na
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/25/2021
+ms.date: 03/10/2021
 ms.author: memildin
-ms.openlocfilehash: a2c29049decc056f0d3c8083d21574456610c124
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.openlocfilehash: 49141f7f11c0e8ead090459238e15b56f57b990b
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99555133"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633722"
 ---
 # <a name="important-upcoming-changes-to-azure-security-center"></a>Важные предстоящие изменения в Центре безопасности Azure
 
@@ -31,13 +26,31 @@ ms.locfileid: "99555133"
 
 ## <a name="planned-changes"></a>Запланированные изменения
 
+- [Будет выпущена общедоступная версия рекомендаций AWS](#recommendations-from-aws-will-be-released-for-general-availability-ga)
 - [Две рекомендации из элемента управления безопасностью "Apply system updates" (Применить обновления системы) объявлены нерекомендуемыми](#two-recommendations-from-apply-system-updates-security-control-being-deprecated)
 - [Расширения для рекомендации по классификации данных SQL](#enhancements-to-sql-data-classification-recommendation)
 - [Прекращение поддержки для 11 оповещений Azure Defender](#deprecation-of-11-azure-defender-alerts)
 
+
+### <a name="recommendations-from-aws-will-be-released-for-general-availability-ga"></a>Будет выпущена общедоступная версия рекомендаций AWS
+
+**Предполагаемая дата изменения:** апрель 2021 г.
+
+Центр безопасности Azure может обеспечить защиту рабочих нагрузок, развернутых в Azure, Amazon Web Services (AWS) и Google Cloud Platform (GCP).
+
+Рекомендации центра безопасности AWS находились в режиме предварительной версии с момента появления облачных соединителей. Рекомендации с отметкой **Предварительная версия** не включаются в вычисления вашей оценки безопасности. При этом их по возможности все равно нужно разрешить, так как по окончанию периода предварительной версии они повлияют на оценку.
+
+Благодаря этому изменению два набора рекомендаций AWS будут переведены в состояние общедоступной версии:
+
+- [Элементы управления PCI DSS центра безопасности](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-pci-controls.html)
+- [Элементы управления теста производительности CIS AWS центра безопасности](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cis-controls.html)
+
+Если они находятся в общедоступной версии и оценки выполняются в ресурсах AWS, результаты будут влиять на совокупную оценку безопасности всех ваших множественных и гибридных облачных ресурсов. 
+
+
 ### <a name="two-recommendations-from-apply-system-updates-security-control-being-deprecated"></a>Две рекомендации из элемента управления безопасностью "Apply system updates" (Применить обновления системы) объявлены нерекомендуемыми 
 
-**Предполагаемая дата изменения:** Февраль 2021 года
+**Предполагаемая дата изменения:** март 2021 г.
 
 Следующие две рекомендации будут объявлены нерекомендуемыми в феврале 2021 года:
 

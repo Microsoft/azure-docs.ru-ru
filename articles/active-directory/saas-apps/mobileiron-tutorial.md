@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 01/12/2021
+ms.date: 02/15/2021
 ms.author: jeedes
-ms.openlocfilehash: 5561a4cdeef725eba7e48d7767aa0ee5d3c6d9cf
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: c47092b1488a79805db69308bcb9a8efde1c0d58
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98625453"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101653072"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-mobileiron"></a>Руководство по интеграции Azure Active Directory с MobileIron
 
@@ -28,16 +28,16 @@ ms.locfileid: "98625453"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Чтобы настроить интеграцию Azure AD с MobileIron, вам потребуется следующее:
+Чтобы приступить к работе, потребуется следующее.
 
-* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
-* Подписка MobileIron с поддержкой единого входа
+* Подписка Azure AD. Если у вас нет подписки, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/).
+* Подписка MobileIron с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* MobileIron поддерживает единый вход инициированного **пакета обновления и выдающей точки распространения**.
+* MobileIron поддерживает единый вход, инициированный **поставщиком службы и поставщиком удостоверений**.
 
 ## <a name="add-mobileiron-from-the-gallery"></a>Добавление MobileIron из коллекции
 
@@ -131,7 +131,7 @@ ms.locfileid: "98625453"
     ![Настройка единого входа для администратора — кнопка метаданных](./media/MobileIron-tutorial/tutorial_MobileIron_adminmetadata.png)
 
 
-##  <a name="create-mobileiron-test-user"></a>Создание тестового пользователя MobileIron
+### <a name="create-mobileiron-test-user"></a>Создание тестового пользователя MobileIron
 
 Чтобы пользователи Azure AD могли выполнять вход в MobileIron, они должны быть подготовлены для MobileIron.  
 Для MobileIron подготовка выполняется вручную.
@@ -157,15 +157,16 @@ ms.locfileid: "98625453"
     d. Нажмите кнопку **Done**(Готово).
 
 ## <a name="test-sso"></a>Проверка единого входа
+
 В этом разделе описано, как проверить конфигурацию единого входа Azure AD с помощью указанных ниже способов. 
 
-## <a name="sp-initiated"></a>Инициация поставщиком услуг:
+### <a name="sp-initiated"></a>Инициация поставщиком услуг:
 
 * Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены по URL-адресу для входа в MobileIron, где можно инициировать поток входа.  
 
 * Перейдите по URL-адресу для входа в MobileIron и инициируйте поток входа.
 
-##  <a name="idp-initiated"></a>Вход, инициированный поставщиком удостоверений
+### <a name="idp-initiated"></a>Вход, инициированный поставщиком удостоверений
 
 * На портале Azure выберите **Тестировать приложение**, и вы автоматически войдете в приложение MobileIron, для которого настроили единый вход.
 

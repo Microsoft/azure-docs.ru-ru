@@ -6,23 +6,23 @@ services: storage
 author: tamram
 ms.service: storage
 ms.topic: tutorial
-ms.date: 12/04/2019
+ms.date: 02/18/2021
 ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: blobs
 ms.custom: devx-track-csharp
-ms.openlocfilehash: ddc9dbf77c04ea95e5b873c45de4c0df109514c7
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: c2daed4a8df89ed176749900dc75eb231c00af87
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95544451"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049276"
 ---
 # <a name="tutorial---encrypt-and-decrypt-blobs-using-azure-key-vault"></a>Руководство. Шифрование и расшифровка больших двоичных объектов с помощью Azure Key Vault
 
 В этом учебнике описывается, как использовать хранилище ключей Azure для шифрования хранилища на стороне клиента. Учебник включает пошаговое руководство по шифрованию и расшифровке большого двоичного объекта в консольном приложении с помощью этих технологий.
 
-**Предполагаемое время выполнения**: 20 минут
+**Предполагаемое время выполнения:** 20 минут
 
 Общие сведения о хранилище ключей Azure см. в статье [Что такое хранилище ключей Azure?](../../key-vault/general/overview.md)
 
@@ -49,7 +49,7 @@ ms.locfileid: "95544451"
 
 ## <a name="set-up-your-azure-key-vault"></a>Настройка хранилища ключей Azure
 
-Для продолжения работы с этим руководством необходимо выполнить действия, описанные в руководстве по [ настройке и получению секрета из Azure Key Vault с помощью веб-приложения .NET](../../key-vault/secrets/quick-create-net.md).
+Чтобы продолжить работу с этим руководством, необходимо выполнить действия, описанные в статье [Краткое руководство. Использование клиентской библиотеки секретов Azure Key Vault для .NET (пакет SDK версии 4)](../../key-vault/secrets/quick-create-net.md):
 
 * Создать хранилище ключей.
 * Добавить ключ или секрет в хранилище ключей.
@@ -58,7 +58,7 @@ ms.locfileid: "95544451"
 
 Запишите ClientID и ClientSecret, сформированные при регистрации приложения в Azure Active Directory.
 
-Создайте оба ключа в хранилище ключей. Мы предполагаем, что в этом руководстве вы используете следующие имена: ContosoKeyVault и TestRSAKey1.
+Создайте оба ключа в хранилище ключей. В этом учебнике подразумевается, что вы использовали следующие имена: ContosoKeyVault и TestRSAKey1.
 
 ## <a name="create-a-console-application-with-packages-and-appsettings"></a>Создание консольного приложения с пакетами и AppSettings
 
@@ -90,6 +90,12 @@ Install-Package Microsoft.Azure.KeyVault.Extensions
 
 Добавьте следующие директивы `using` и обязательно добавьте в проект ссылку на System.Configuration.
 
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
+
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System.Configuration;
@@ -101,10 +107,17 @@ using Microsoft.Azure.KeyVault;
 using System.Threading;
 using System.IO;
 ```
+---
 
 ## <a name="add-a-method-to-get-a-token-to-your-console-application"></a>Добавление метода получения токена в консольное приложение
 
 Следующий метод используется классами хранилища ключей, когда необходимо пройти проверку подлинности для доступа к вашему хранилищу ключей.
+
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 private async static Task<string> GetToken(string authority, string resource, string scope)
@@ -121,10 +134,17 @@ private async static Task<string> GetToken(string authority, string resource, st
     return result.AccessToken;
 }
 ```
+---
 
 ## <a name="access-azure-storage-and-key-vault-in-your-program"></a>Получение доступа к хранилищу данных Azure и Key Vault в программе
 
 В методе main() добавьте следующий код.
+
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 // This is standard code to interact with Blob storage.
@@ -141,6 +161,7 @@ contain.CreateIfNotExists();
 // This is where the GetToken method from above is used.
 KeyVaultKeyResolver cloudResolver = new KeyVaultKeyResolver(GetToken);
 ```
+---
 
 > [!NOTE]
 > Объектные модели хранилища ключей
@@ -149,13 +170,19 @@ KeyVaultKeyResolver cloudResolver = new KeyVaultKeyResolver(GetToken);
 > 
 > Клиент хранилища ключей взаимодействует с REST API и понимает веб-ключи и секреты JSON для двух видов элементов, содержащихся в хранилище ключей.
 > 
-> Расширения хранилища ключей — это классы, которые специально созданы для шифрования на стороне клиента в хранилище Azure. Они содержат интерфейс для ключей (IKey) и классов, основанный на концепции сопоставителя ключей. Существуют две реализации IKey, которые необходимо знать: RSAKey и SymmetricKey. Они совпадают с элементами, которые находятся в хранилище ключей, но на данный момент остаются независимыми классами (таким образом, ключ и секретный код, получаемые клиентом хранилища ключей, не реализуют IKey).
+> Расширения хранилища ключей — это классы, которые специально созданы для шифрования на стороне клиента в хранилище Azure. Они содержат интерфейс для ключей (IKey) и классов, основанный на концепции сопоставителя ключей. Существуют две реализации IKey, которые необходимо знать, — RSAKey и SymmetricKey. Они совпадают с элементами, которые находятся в хранилище ключей, но на данный момент остаются независимыми классами (таким образом, ключ и секретный код, получаемые клиентом хранилища ключей, не реализуют IKey).
 > 
 > 
 
 ## <a name="encrypt-blob-and-upload"></a>Шифрование и передача BLOB-объекта
 
 Добавьте следующий код, чтобы зашифровать BLOB-объект и передать его в свою учетную запись хранения Azure. Затем используется метод **ResolveKeyAsync**, который возвращает IKey.
+
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 // Retrieve the key that you created previously.
@@ -175,9 +202,11 @@ CloudBlockBlob blob = contain.GetBlockBlobReference("MyFile.txt");
 using (var stream = System.IO.File.OpenRead(@"C:\Temp\MyFile.txt"))
     blob.UploadFromStream(stream, stream.Length, null, options, null);
 ```
+---
 
 > [!NOTE]
 > Если вы рассмотрите конструктор BlobEncryptionPolicy, вы увидите, что он может принимать ключ и (или) сопоставитель. Необходимо помнить, что сейчас сопоставитель нельзя использовать для шифрования, так как он не поддерживает ключ по умолчанию.
+
 
 ## <a name="decrypt-blob-and-download"></a>Расшифруйте BLOB-объект и загрузите его
 
@@ -186,6 +215,12 @@ using (var stream = System.IO.File.OpenRead(@"C:\Temp\MyFile.txt"))
 Закрытый ключ RSA Key остается в хранилище ключей, поэтому для расшифровки зашифрованный ключ из метаданных BLOB-объекта, содержащего CEК, отправляется в хранилище ключей.
 
 Добавьте следующий код для расшифровки отправленного большого двоичного объекта.
+
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 // In this case, we will not pass a key and only pass the resolver because
@@ -196,15 +231,16 @@ BlobRequestOptions options = new BlobRequestOptions() { EncryptionPolicy = polic
 using (var np = File.Open(@"C:\data\MyFileDecrypted.txt", FileMode.Create))
     blob.DownloadToStream(np, null, options, null);
 ```
+---
 
 > [!NOTE]
-> Существует несколько других видов сопоставителей, которые облегчают управление ключами, например: AggregateKeyResolver и CachingKeyResolver.
+> Существует несколько других видов сопоставителей, которые облегчают управление ключами, например AggregateKeyResolver и CachingKeyResolver.
 
 ## <a name="use-key-vault-secrets"></a>Использование секретов хранилища ключей
 
 Секрет можно использовать для шифрования на стороне клиента с помощью класса SymmetricKey, так как он фактически является симметричным ключом. Но, как указано выше, секрет в хранилище ключей не сопоставляется точно с SymmetricKey. Необходимо понять несколько вещей.
 
-* Ключ в SymmetricKey должен быть фиксированной длины: 128, 192, 256, 384 или 512 бит.
+* Ключ в SymmetricKey должен быть фиксированной длины: 128, 192, 256, 384 или 512 бит.
 * Ключ в SymmetricKey должен быть в кодировке Base64.
 * Секрет хранилища ключей, который будет использоваться в качестве SymmetricKey, должен иметь тип содержимого application/octet-stream в хранилище ключей.
 
@@ -226,13 +262,18 @@ $secret = Set-AzureKeyVaultSecret -VaultName 'ContosoKeyVault' -Name 'TestSecret
 
 Для получения этого секрета как SymmetricKey в консольном приложении можно использовать тот же вызов, что и ранее.
 
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
+
 ```csharp
 SymmetricKey sec = (SymmetricKey) cloudResolver.ResolveKeyAsync(
     "https://contosokeyvault.vault.azure.net/secrets/TestSecret2/",
     CancellationToken.None).GetAwaiter().GetResult();
 ```
-
-Вот и все. Вот и все!
+---
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

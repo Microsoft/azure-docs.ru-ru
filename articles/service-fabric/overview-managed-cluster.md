@@ -2,13 +2,13 @@
 title: Управляемые кластеры Service Fabric (предварительная версия)
 description: Управляемые кластеры Service Fabric — это доработанная модель кластерного ресурса Azure Service Fabric, которая упрощает развертывание кластеров и управление ими.
 ms.topic: overview
-ms.date: 09/28/2020
-ms.openlocfilehash: 3d26a92126491662d5c51b3c4e8900ffa547f830
-ms.sourcegitcommit: b48e8a62a63a6ea99812e0a2279b83102e082b61
+ms.date: 02/15/2021
+ms.openlocfilehash: 271852214097ee96ba6b10de7a94904981cd8ef8
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91410401"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041235"
 ---
 # <a name="service-fabric-managed-clusters-preview"></a>Управляемые кластеры Service Fabric (предварительная версия)
 
@@ -62,21 +62,26 @@ ms.locfileid: "91410401"
 | Добавление или удаление типов узлов | Нет | Да |
 | Избыточность в пределах зоны | Нет | Да |
 
-## <a name="service-fabric-managed-cluster-feature-roadmap"></a>Стратегия развития функции "Управляемый кластер Service Fabric"
-Поскольку эта версия управляемых кластеров Service Fabric является предварительной, необходимо учитывать некоторые ограничения. Эти функции станут доступны в будущих выпусках. 
+## <a name="whats-new-for-service-fabric-managed-clusters"></a>Новые возможности управляемых кластеров Service Fabric
 
-* Публикация приложений в кластерах непосредственно из Visual Studio
-* управляемые удостоверения. 
-* Развертывания приложений ARM 
-* Зоны доступности 
-* Обратный прокси-сервер 
-* Автомасштабирование 
-* Обновление правил группы безопасности сети 
-* Автоматическое обновление ОС
+Новейшие возможности управляемых кластеров Service Fabric (предварительная версия) позволяют:
+
+* [развертывать приложения с помощью шаблонов ARM](how-to-managed-cluster-app-deployment-template.md);
+* [Автоматические обновления ОС](how-to-managed-cluster-configuration.md#enable-automatic-os-image-upgrades)
+* [Шифрование дисков](how-to-enable-managed-cluster-disk-encryption.md)
+* [применять правила NSG](how-to-managed-cluster-networking.md).
+
+Компоненты, которые будут добавлены в будущие выпуски:
+
+* Развертывание приложений с помощью Visual Studio
+* Поддержка управляемых удостоверений
+* Зоны доступности
+* Обратный прокси-сервер
+* Автомасштабирование
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Чтобы приступить к работе с управляемыми кластерами Service Fabric, выполните действия, приведенные в кратком руководстве:
+Чтобы начать работу с управляемыми кластерами Service Fabric, см. краткое руководство:
 
 > [!div class="nextstepaction"]
 > [Создание управляемого кластера Service Fabric (предварительная версия)](quickstart-managed-cluster-template.md)

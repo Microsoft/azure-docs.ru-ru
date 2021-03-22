@@ -8,16 +8,20 @@ ms.topic: quickstart
 ms.date: 05/22/2020
 ms.author: yegu
 ms.custom: mvc, seo-java-august2019, seo-java-september2019, devx-track-java
-ms.openlocfilehash: edb80ab3107cbd0a5ddd802d56a60ce77affb2f2
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 856f33875316eca8b3c16f28c6c222f42e0a0be5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96012924"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102121275"
 ---
 # <a name="quickstart-use-azure-cache-for-redis-in-java"></a>Краткое руководство. Использование Кэша Azure для Redis с приложениями Java
 
 Из этого краткого руководства вы узнаете, как реализовать кэш Azure для Redis в приложении Java с помощью клиента Redis [Jedis](https://github.com/xetorthio/jedis) для обеспечения доступа к защищенному выделенному кэшу, к которому может обращаться любое приложение в Azure.
+
+## <a name="skip-to-the-code-on-github"></a>Переход к коду на GitHub
+
+Если вы хотите сразу перейти к коду, см. [краткое руководство по Java](https://github.com/Azure-Samples/azure-cache-redis-samples/tree/main/quickstart/java) на сайте GitHub.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

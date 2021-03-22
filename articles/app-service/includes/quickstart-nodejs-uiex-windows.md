@@ -6,12 +6,12 @@ ms.topic: quickstart
 ms.date: 08/01/2020
 ms.custom: mvc, devcenter, seodec18
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 302e0dc79d13eedebf810df042dc31f78b173fb6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 324919c1d085302e675e0bc9a370ce35f52a0f1d
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747788"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102109421"
 ---
 <!-- advanced for windows -->
 
@@ -70,10 +70,14 @@ ms.locfileid: "101747788"
 
 1. По завершении развертывания щелкните **Обзор веб-сайта** в диалоговом окне с предложением просмотреть только что развернутое веб-приложение.
 
-<br>
+<br/>
 <details>
-<summary>Устранение неполадок</summary>
+<summary><strong>Устранение неполадок</strong></summary>
+
+Если эти действия не удалось выполнить, проверьте следующее:
+
 * Убедитесь, что приложение прослушивает порт, указанный в переменной среды PORT: `process.env.PORT`.
+
 * Если отображается сообщение об ошибке **Вы не имеете разрешения на просмотр этого каталога пли страницы.** , значит приложение не может нормально запуститься. Просмотрите выходные данные, чтобы найти и исправить ошибку. 
 
 </details>
@@ -83,5 +87,5 @@ ms.locfileid: "101747788"
 [Сообщите о проблеме](https://www.research.net/r/PWZWZ52?tutorial=node-deployment-azure-app-service&prepare-your-environment)
 
 
-<br>
+<br/>
 <hr/>

@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.date: 02/05/2021
 ms.author: banders
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 2fb1a8c3e583a4bdc88f2b61844e9bcb16dc7cdf
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: c3142fd41830487453a3cc980a87cdca72cf7213
+ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100367203"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101094137"
 ---
 # <a name="transfer-billing-ownership-of-an-azure-subscription-to-another-account"></a>Передача прав владения на выставление счетов для подписки Azure другой учетной записи
 
@@ -66,7 +66,7 @@ ms.locfileid: "100367203"
 
 Если вы приняли права на выставление счетов для подписки Azure, мы рекомендуем ознакомиться со следующими шагами:
 
-1. Проверьте и обновите роли администратора службы, cоадминистраторов и назначения ролей Azure. Дополнительные сведения см. в статьях [Добавление или изменение администраторов подписки Azure](add-change-subscription-administrator.md) и [Добавление или удаление назначений ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
+1. Проверьте и обновите роли администратора службы, cоадминистраторов и назначения ролей Azure. Дополнительные сведения см. в статьях [Добавление или изменение администраторов подписки Azure](add-change-subscription-administrator.md) и [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 1. Обновите учетные данные, связанные со службами этой подписки, включая следующие:
    1. Сертификаты управления, которые предоставляют пользователю доступ к ресурсам подписки с правами администратора. Дополнительные сведения см. в статье [Создание и передача сертификата управления для Azure](../../cloud-services/cloud-services-certs-create.md).
    1. Ключи доступа для служб, таких как служба хранилища. Дополнительные сведения см. в статье [Об учетных записях хранения Azure](../../storage/common/storage-account-create.md).
@@ -126,4 +126,4 @@ ms.locfileid: "100367203"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Проверьте и обновите роли администратора службы, cоадминистраторов и назначения ролей Azure. Дополнительные сведения см. в статьях [Добавление или изменение администраторов подписки Azure](add-change-subscription-administrator.md) и [Добавление или удаление назначений ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
+- Проверьте и обновите роли администратора службы, cоадминистраторов и назначения ролей Azure. Дополнительные сведения см. в статьях [Добавление или изменение администраторов подписки Azure](add-change-subscription-administrator.md) и [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).

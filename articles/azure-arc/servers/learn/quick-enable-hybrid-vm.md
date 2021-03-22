@@ -3,14 +3,14 @@ title: Подключение гибридной виртуальной маши
 description: Узнайте, как подключить и зарегистрировать гибридную виртуальную машину на серверах с поддержкой Azure Arc.
 ms.topic: quickstart
 ms.date: 12/15/2020
-ms.openlocfilehash: 68869854cbfcf6d7297137e6239b2229a20c04a1
-ms.sourcegitcommit: 66479d7e55449b78ee587df14babb6321f7d1757
+ms.openlocfilehash: c52b8d1f7098a7a2a88a9770a3b768b7fea31775
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97516782"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101646832"
 ---
-# <a name="quickstart-connect-hybrid-machine-with-azure-arc-enabled-servers"></a>Краткое руководство. Подключение гибридной виртуальной машины к серверам с поддержкой Azure Arc
+# <a name="quickstart-connect-hybrid-machines-with-azure-arc-enabled-servers"></a>Краткое руководство. Подключение гибридных виртуальных машин к серверам с поддержкой Azure Arc
 
 [Серверы с поддержкой Azure Arc](../overview.md) позволяют управлять компьютерами Windows и Linux, размещенными в локальной, периферийной и многооблачной средах. В рамках этого краткого руководства вы развернете и настроите агент Connected Machine на своем компьютере под управлением Windows или Linux, размещенном за пределами Azure, для управления серверами с поддержкой Arc.
 

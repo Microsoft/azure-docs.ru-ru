@@ -12,12 +12,12 @@ ms.custom:
 - mvc
 - mqtt
 - devx-track-java
-ms.openlocfilehash: 51b7f6e814a9fad286a934466daeb1ffced225c1
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: cbe4942b63389faab00861438a0149b68c0e89c0
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94968066"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177314"
 ---
 # <a name="tutorial-develop-a-java-iot-edge-module-for-linux-devices"></a>Руководство по Разработка модуля IoT Edge на языке Java для устройств Linux
 
@@ -56,7 +56,7 @@ ms.locfileid: "94968066"
 Для разработки модуля IoT Edge на языке Java установите на компьютере разработки следующие дополнительные компоненты. 
 
 * [Пакет расширения Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) для Visual Studio Code.
-* [Пакет SDK для Java SE 10](/azure/developer/java/fundamentals/java-jdk-long-term-support) и [переменная среды `JAVA_HOME`,](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) которая указывает на эту установку JDK.
+* [Пакет SDK для Java SE 11](/azure/developer/java/fundamentals/java-jdk-long-term-support) и [переменная среды `JAVA_HOME`](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/), которая указывает на эту установку JDK.
 * [Maven](https://maven.apache.org/)
 
    >[!TIP]

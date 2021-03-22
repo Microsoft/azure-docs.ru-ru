@@ -11,12 +11,12 @@ author: jaszymas
 ms.author: jaszymas
 ms.reviwer: vanto
 ms.date: 01/15/2021
-ms.openlocfilehash: d9c2bec575f2c7a948f3eb6e65be6a735a3c03e8
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 809ac72977b670faff984ad39effb1c70767e141
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98733821"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102120952"
 ---
 # <a name="tutorial-getting-started-with-always-encrypted-with-secure-enclaves-in-azure-sql-database"></a>Руководство. Начало работы с Always Encrypted и безопасными анклавами в Базе данных SQL Azure
 
@@ -71,40 +71,45 @@ Get-InstalledModule
 Требуемая минимальная версия SSMS — 18.8.
 
 
-## <a name="step-1-create-a-server-and-a-dc-series-database"></a>Шаг 1. Создание сервера и базы данных серии DC
+## <a name="step-1-create-and-configure-a-server-and-a-dc-series-database"></a>Шаг 1. Создание и настройка сервера и базы данных серии DC
 
- На этом шаге вы создадите логический сервер Базы данных SQL Azure и новую базу данных, используя аппаратную конфигурацию серии DC. Always Encrypted с безопасными анклавами в Базе данных SQL Azure использует анклавы Intel SGX, которые поддерживаются в аппаратной конфигурации серии DC. Подробные сведения см. в разделе о [серии DC](service-tiers-vcore.md#dc-series).
+На этом шаге вы создадите логический сервер Базы данных SQL Azure и новую базу данных, используя поколение оборудования серии DC, необходимое для функции Always Encrypted с безопасными анклавами. Подробные сведения см. в разделе о [серии DC](service-tiers-vcore.md#dc-series).
 
-1. Откройте консоль PowerShell и войдите в Azure. При необходимости [перейдите в подписку](/powershell/azure/manage-subscriptions-azureps), используемую для работы с этим руководством.
+1. Откройте консоль PowerShell и импортируйте требуемую версию AZ.
+
+  ```PowerShell
+  Import-Module "Az" -MinimumVersion "4.5.0"
+  ```
+  
+2. Войдите в Azure. При необходимости [перейдите в подписку](/powershell/azure/manage-subscriptions-azureps), используемую для работы с этим руководством.
 
   ```PowerShell
   Connect-AzAccount
-  $subscriptionId = <your subscription ID>
-  Set-AzContext -Subscription $serverSubscriptionId
+  $subscriptionId = "<your subscription ID>"
+  Set-AzContext -Subscription $subscriptionId
   ```
 
-2. Создайте группу ресурсов для сервера базы данных. 
-
-  ```powershell
-  $serverResourceGroupName = "<server resource group name>"
-  $serverLocation = "<Azure region that supports DC-series in SQL Database>"
-  New-AzResourceGroup -Name $serverResourceGroupName -Location $serverLocation 
-  ```
+3. Создание группы ресурсов 
 
   > [!IMPORTANT]
-  > Вам потребуется создать группу ресурсов в регионе, который поддерживает аппаратную конфигурацию серии DC. Список поддерживаемых в настоящее время регионов см. в разделе со сведениями о [доступности серии DC](service-tiers-vcore.md#dc-series-1).
-
-3. Создайте сервер базы данных. При появлении запроса введите имя администратора сервера и пароль.
+  > Необходимо создать группу ресурсов в регионе (расположении), который поддерживает и поколение оборудования серии DC и Аттестацию Microsoft Azure. Список регионов, поддерживающих серию DC, см. в разделе со сведениями о [доступности серии DC](service-tiers-vcore.md#dc-series-1). [Здесь](https://azure.microsoft.com/global-infrastructure/services/?products=azure-attestation) представлены сведения о доступности Аттестации Microsoft Azure по регионам.
 
   ```powershell
-  $serverName = "<server name>" 
-  New-AzSqlServer -ServerName $serverName -ResourceGroupName $serverResourceGroupName -Location $serverLocation
+  $resourceGroupName = "<your new resource group name>"
+  $location = "<Azure region supporting DC-series and Microsoft Azure Attestation>"
+  New-AzResourceGroup -Name $resourceGroupName -Location $location
   ```
 
-4. Создайте правило брандмауэра сервера, разрешающее доступ из указанного диапазона IP-адресов.
+4. Создайте логический сервер SQL Azure. При появлении запроса введите имя администратора сервера и пароль. Обязательно заполните имя и пароль администратора. Они понадобятся вам позже для подключения к серверу.
+
+  ```powershell
+  $serverName = "<your server name>" 
+  New-AzSqlServer -ServerName $serverName -ResourceGroupName $resourceGroupName -Location $location 
+  ```
+
+5. Создайте правило брандмауэра сервера, разрешающее доступ из указанного диапазона IP-адресов.
   
   ```powershell
-  # The ip address range that you want to allow to access your server
   $startIp = "<start of IP range>"
   $endIp = "<end of IP range>"
   $serverFirewallRule = New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroupName `
@@ -112,21 +117,11 @@ Get-InstalledModule
     -FirewallRuleName "AllowedIPs" -StartIpAddress $startIp -EndIpAddress $endIp
   ```
 
-5. Назначьте серверу удостоверение управляемой системы. Оно потребуется позже, чтобы предоставить серверу доступ к Аттестации Microsoft Azure.
-
-  ```powershell
-  Set-AzSqlServer -ServerName $serverName -ResourceGroupName $serverResourceGroupName -AssignIdentity 
-  ```
-
-6. Получите идентификатор объекта удостоверения, назначенного серверу. Сохраните итоговый идентификатор объекта. Идентификатор потребуется при работе со следующим разделом.
-
-  > [!NOTE]
-  > Для появления только что назначенного удостоверения управляемой системы в Azure Active Directory может потребоваться несколько секунд. Если приведенный ниже скрипт возвращает пустой результат, выполните его повторно.
+6. Назначьте серверу удостоверение управляемой системы. 
 
   ```PowerShell
-  $server = Get-AzSqlServer -ServerName $serverName -ResourceGroupName $serverResourceGroupName 
+  $server = Set-AzSqlServer -ServerName $serverName -ResourceGroupName $resourceGroupName -AssignIdentity
   $serverObjectId = $server.Identity.PrincipalId
-  $serverObjectId
   ```
 
 7. Создайте базу данных серии DC.
@@ -136,12 +131,26 @@ Get-InstalledModule
   $edition = "GeneralPurpose"
   $vCore = 2
   $generation = "DC"
-  New-AzSqlDatabase -ResourceGroupName $serverResourceGroupName -ServerName $serverName -DatabaseName $databaseName -Edition $edition -Vcore $vCore -ComputeGeneration $generation
+  New-AzSqlDatabase -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName `
+    -DatabaseName $databaseName `
+    -Edition $edition `
+    -Vcore $vCore `
+    -ComputeGeneration $generation
   ```
 
-## <a name="step-2-configure-an-attestation-provider"></a>Шаг 2. Настройка поставщика аттестации
+8. Получите и сохраните сведения о сервере и базе данных. Эти сведения, а также имя и пароль администратора из шага 4 этого раздела понадобятся вам в дальнейшем.
 
-На этом шаге вы создадите и настроите поставщик аттестации в Аттестации Microsoft Azure. Это необходимо для аттестации безопасного анклава на сервере базы данных.
+  ```powershell
+  Write-Host 
+  Write-Host "Fully qualified server name: $($server.FullyQualifiedDomainName)" 
+  Write-Host "Server Object Id: $serverObjectId"
+  Write-Host "Database name: $databaseName"
+  ```
+  
+## <a name="step-2-configure-an-attestation-provider"></a>Шаг 2. Настройка поставщика аттестации 
+
+На этом шаге вы создадите и настроите поставщик аттестации в Аттестации Microsoft Azure. Это необходимо для аттестации безопасного анклава, который использует база данных.
 
 1. Скопируйте приведенную ниже политику аттестации и сохраните ее в текстовом файле (TXT). Дополнительные сведения о приведенной ниже политике см. в разделе [Создание и настройка поставщика аттестации](always-encrypted-enclaves-configure-attestation.md#create-and-configure-an-attestation-provider).
 
@@ -157,60 +166,60 @@ Get-InstalledModule
   };
   ```
 
-2. Импортируйте нужные версии `Az.Accounts` и `Az.Attestation`.  
+2. Импортируйте нужную версию `Az.Attestation`.  
 
   ```powershell
-  Import-Module "Az.Accounts" -MinimumVersion "1.9.2"
   Import-Module "Az.Attestation" -MinimumVersion "0.1.8"
   ```
-
-3. Создайте группу ресурсов для поставщика аттестации.
-
-  ```powershell
-  $attestationLocation = $serverLocation
-  $attestationResourceGroupName = "<attestation provider resource group name>"
-  New-AzResourceGroup -Name $attestationResourceGroupName -Location $location  
-  ```
-
-4. Создайте поставщика аттестации. 
+  
+3. Создайте поставщика аттестации. 
 
   ```powershell
-  $attestationProviderName = "<attestation provider name>" 
-  New-AzAttestation -Name $attestationProviderName -ResourceGroupName $attestationResourceGroupName -Location $attestationLocation
+  $attestationProviderName = "<your attestation provider name>" 
+  New-AzAttestation -Name $attestationProviderName -ResourceGroupName $resourceGroupName -Location $location
   ```
 
-5. Настройте политику аттестации.
+4. Настройте политику аттестации.
   
   ```powershell
-  $policyFile = "<the pathname of the file from step 1 in this section"
+  $policyFile = "<the pathname of the file from step 1 in this section>"
   $teeType = "SgxEnclave"
   $policyFormat = "Text"
   $policy=Get-Content -path $policyFile -Raw
-  Set-AzAttestationPolicy -Name $attestationProviderName -ResourceGroupName $attestationResourceGroupName -Tee $teeType -Policy $policy -PolicyFormat  $policyFormat
+  Set-AzAttestationPolicy -Name $attestationProviderName `
+    -ResourceGroupName $resourceGroupName `
+    -Tee $teeType `
+    -Policy $policy `
+    -PolicyFormat  $policyFormat
   ```
 
-6. Предоставьте логическому серверу Azure SQL доступ к своему поставщику аттестации. На этом шаге мы используем идентификатор объекта удостоверения управляемой службы, назначенного серверу ранее.
+5. Предоставьте логическому серверу Azure SQL доступ к своему поставщику аттестации. На этом шаге мы используем идентификатор объекта удостоверения управляемой службы, назначенный серверу ранее.
 
   ```powershell
-  New-AzRoleAssignment -ObjectId $serverObjectId -RoleDefinitionName "Attestation Reader" -ResourceGroupName $attestationResourceGroupName  
+  New-AzRoleAssignment -ObjectId $serverObjectId `
+    -RoleDefinitionName "Attestation Reader" `
+    -ResourceName $attestationProviderName `
+    -ResourceType "Microsoft.Attestation/attestationProviders" `
+    -ResourceGroupName $resourceGroupName  
   ```
 
-7. Получите URL-адрес аттестации.
+6. Получите URL-адрес аттестации, указывающий на политику аттестации, которая была настроена для анклава SGX. Сохраните URL-адрес. Он понадобится вам в дальнейшем.
 
   ```powershell
-  $attestationProvider = Get-AzAttestation -Name $attestationProviderName -ResourceGroupName $attestationResourceGroupName 
+  $attestationProvider = Get-AzAttestation -Name $attestationProviderName -ResourceGroupName $resourceGroupName 
   $attestationUrl = $attestationProvider.AttestUri + “/attest/SgxEnclave”
-  Write-Host "Your attestation URL is: " $attestationUrl 
+  Write-Host
+  Write-Host "Your attestation URL is: $attestationUrl"
   ```
-
-8.  Сохраните полученный URL-адрес аттестации, указывающий на политику аттестации, которая была настроена для анклава SGX. Он понадобится вам позднее. URL-адрес аттестации всегда должен выглядеть так: `https://contososqlattestation.uks.attest.azure.net/attest/SgxEnclave`.
+  
+  URL-адрес аттестации всегда должен выглядеть так: `https://contososqlattestation.uks.attest.azure.net/attest/SgxEnclave`.
 
 ## <a name="step-3-populate-your-database"></a>Шаг 3. Заполнение базы данных
 
 На этом шаге вы создадите таблицу и заполните ее данными, которые позже будут зашифрованы и запрошены.
 
 1. Откройте среду SSMS и подключитесь к базе данных **ContosoHR** на логическом сервере Azure SQL, созданном **без** включения Always Encrypted для подключения к базе данных.
-    1. В диалоговом окне **Подключение к серверу** укажите имя сервера (например, *myserver123.database.windows.net*) и введите имя пользователя и пароль, настроенные ранее.
+    1. В диалоговом окне **Подключение к серверу** укажите полное имя сервера (например, *myserver123.database.windows.net*) и введите имя и пароль администратора, указанные при создании сервера.
     2. Щелкните **Параметры >>** и откройте вкладку **Свойства подключения**. Обязательно выберите базу данных **ContosoHR** (а не базу данных master по умолчанию). 
     3. Выберите вкладку **Always Encrypted**.
     4. Убедитесь, что флажок **Включить Always Encrypted (шифрование столбцов)** **не** установлен.
@@ -292,7 +301,7 @@ Get-InstalledModule
 
 1. Откройте новый экземпляр SSMS и подключитесь к базе данных **без** включенной функции Always Encrypted для подключения к базе данных.
     1. Создайте новый экземпляр SSMS.
-    2. В диалоговом окне **Соединение с сервером** укажите имя сервера, выберите метод аутентификации и введите учетные данные.
+    2. В диалоговом окне **Подключение к серверу** укажите полное имя сервера (например, *myserver123.database.windows.net*) и введите имя и пароль администратора, указанные при создании сервера.
     3. Щелкните **Параметры >>** и откройте вкладку **Свойства подключения**. Обязательно выберите базу данных **ContosoHR** (а не базу данных master по умолчанию). 
     4. Выберите вкладку **Always Encrypted**.
     5. Убедитесь, что флажок **Включить Always Encrypted (шифрование столбцов)** установлен.

@@ -7,12 +7,12 @@ ms.date: 02/07/2021
 ms.topic: overview
 ms.service: security-center
 manager: rkarlin
-ms.openlocfilehash: 0878686e203960a0b7f33c19cc64e82319997684
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 83d0215ebca9d60d61937cb20bb82c7ccb30aac1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100590446"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102100633"
 ---
 # <a name="introduction-to-azure-defender-for-kubernetes"></a>Общие сведения об Azure Defender для Kubernetes
 
@@ -29,7 +29,7 @@ ms.locfileid: "100590446"
 |Аспект|Сведения|
 |----|:----|
 |Состояние выпуска:|Общедоступная версия|
-|Цены|Плата за использование **Azure Defender для Kubernetes** начисляется по тарифам, приведенным на [странице с ценами](security-center-pricing.md).|
+|Цены|Плата за использование **Azure Defender для Kubernetes** начисляется по тарифам, приведенным на странице [Цены на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).|
 |Требуемые роли и разрешения|**Администратор безопасности** может отклонять предупреждения.<br>**Читатель сведений о безопасности** может просматривать результаты.|
 |Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да](./media/icons/yes-icon.png) Национальные и независимые (US Gov, China Gov, другие правительственные облака)|
 |||
@@ -79,7 +79,7 @@ AKS — это управляемая служба, а так как агент
 Из этой статьи вы узнали о защите Kubernetes в Центре безопасности, в том числе об Azure Defender для Kubernetes. 
 
 > [!div class="nextstepaction"]
-> [Включение Azure Defender](security-center-pricing.md#enable-azure-defender)
+> [Включение Azure Defender](enable-azure-defender.md)
 
 Связанные материалы см. в следующих статьях: 
 

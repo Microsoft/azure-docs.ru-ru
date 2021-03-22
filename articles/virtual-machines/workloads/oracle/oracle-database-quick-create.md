@@ -2,18 +2,18 @@
 title: Создание базы данных Oracle на виртуальной машине Azure | Документация Майкрософт
 description: Быстрое создание и запуск базы данных Oracle 12c в среде Azure.
 author: dbakevlar
-ms.service: virtual-machines-linux
-ms.subservice: workloads
+ms.service: virtual-machines
+ms.subservice: oracle
+ms.collection: linux
 ms.topic: quickstart
 ms.date: 10/05/2020
 ms.author: kegorman
-ms.reviewer: cynthn
-ms.openlocfilehash: a202c8d176d6b9a8893a7bc5aaad6771942dda04
-ms.sourcegitcommit: 1a98b3f91663484920a747d75500f6d70a6cb2ba
+ms.openlocfilehash: 8964248bb23b2b615c7e73e26d730fbd79b4e9e7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99063068"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102184463"
 ---
 # <a name="create-an-oracle-database-in-an-azure-vm"></a>Создание базы данных Oracle на виртуальной машине Azure
 
@@ -188,16 +188,16 @@ az vm disk attach --name oradata01 --new --resource-group rg-oracle --size-gb 12
    echo "/dev/sdc1               /u02                    ext4    defaults        0 0" >> /etc/fstab
    ```
    
-10. Измените файл * **/etc/hosts** _, указав общедоступный IP-адрес и имя узла.
+10. Измените файл ***/etc/hosts***, указав общедоступный IP-адрес и имя узла.
 
-    Измените _*_общедоступный IP-адрес и имя виртуальной машины_*_ в соответствии с фактическими значениями:
+    Измените ***общедоступный IP-адрес и имя виртуальной машины*** в соответствии с фактическими значениями:
   
     ```bash
     echo "<Public IP> <VMname>.eastus.cloudapp.azure.com <VMname>" >> /etc/hosts
     ```
 11. Обновите файл имени узла.
     
-    С помощью приведенной ниже команды добавьте доменное имя виртуальной машины в файл _ */etc/hostname**. Предполагается, что вы создали группу ресурсов и виртуальную машину в регионе **eastus**:
+    С помощью приведенной ниже команды добавьте доменное имя виртуальной машины в файл **/etc/hostname**. Предполагается, что вы создали группу ресурсов и виртуальную машину в регионе **eastus**:
     
     ```bash
     sed -i 's/$/\.eastus\.cloudapp\.azure\.com &/' /etc/hostname
@@ -221,12 +221,12 @@ az vm disk attach --name oradata01 --new --resource-group rg-oracle --size-gb 12
 1.  Переключитесь на роль пользователя **oracle**:
 
     ```bash
-    $ sudo su - oracle
+    sudo su - oracle
     ```
 2. Запуск прослушивателя базы данных
 
    ```bash
-   $ lsnrctl start
+   lsnrctl start
    ```
    Выход аналогичен приведенному ниже:
   

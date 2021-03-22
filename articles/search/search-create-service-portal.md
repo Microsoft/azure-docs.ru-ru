@@ -8,18 +8,18 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: quickstart
 ms.date: 02/15/2021
-ms.openlocfilehash: 8a61ad1599a2d4d1aeaf8b36d2f92d95ec1896a0
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: e183d81355d4db81e677f34b02330ddb9b631957
+ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100573057"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100651992"
 ---
 # <a name="quickstart-create-an-azure-cognitive-search-service-in-the-portal"></a>Краткое руководство. Создание службы "Когнитивный поиск Azure" на портале
 
 [Когнитивный поиск Azure](search-what-is-azure-search.md) — это ресурс Azure, используемый для добавления возможностей полнотекстового поиска в пользовательские приложения. Вы можете с легкостью интегрировать его со многими другими службами Azure, которые предоставляют данные или дополнительные средства обработки, с приложениями на серверах сети или с программным обеспечением, работающим на других облачных платформах.
 
-Службу поиска можно создать с помощью [портала Azure](https://portal.azure.com/), как описано в этой статье. Можно также использовать [Azure PowerShell](search-manage-powershell.md), [Azure CLI](/cli/azure/search) или [шаблон службы Azure Resource Manager](https://azure.microsoft.com/resources/templates/101-azure-search-create/).
+Службу поиска можно создать с помощью [портала Azure](https://portal.azure.com/), как описано в этой статье. Можно также использовать [Azure PowerShell](search-manage-powershell.md), [Azure CLI](/cli/azure/search), [REST API управления](/rest/api/searchmanagement/) или [шаблон службы Azure Resource Manager](https://azure.microsoft.com/resources/templates/101-azure-search-create/).
 
 [![Анимированный GIF-файл](./media/search-create-service-portal/AnimatedGif-AzureSearch-small.gif)](./media/search-create-service-portal/AnimatedGif-AzureSearch.gif#lightbox)
 
@@ -85,7 +85,7 @@ ms.locfileid: "100573057"
 
 Когнитивный поиск Azure доступен в большинстве регионов, как описано на странице [Доступность продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=search). В целом, если вы используете несколько служб Azure, выберите регион, в котором также размещена ваша служба данных или служба приложения. Это приводит к снижению или отсутствию расходов на пропускную способность для исходящих данных (за исходящие данные не взимается плата, если службы находятся в одном регионе).
 
-+ Для [обогащения с помощью ИИ](cognitive-search-concept-intro.md) требуется, чтобы службы Cognitive Services находились в том же физическом регионе, что и Когнитивный Поиск Azure. Использование нескольких регионов не позволяет пользоваться этими преимуществами. На странице [Доступность продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=search) показаны две строки с флажками. Для недоступного сочетания флажки отсутствуют.
++ Для [обогащения с помощью ИИ](cognitive-search-concept-intro.md) требуется, чтобы службы Cognitive Services находились в том же физическом регионе, что и Когнитивный Поиск Azure. Существует всего несколько регионов, которые не предоставляют оба решения. На странице [Доступность продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=search) показаны две строки с флажками. Для недоступного сочетания флажки отсутствуют.
 
   :::image type="content" source="media/search-create-service-portal/region-availability.png" alt-text="Доступность по регионам" border="true":::
 

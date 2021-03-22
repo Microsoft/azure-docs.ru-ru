@@ -7,12 +7,12 @@ ms.service: web-application-firewall
 ms.topic: conceptual
 ms.date: 05/22/2020
 ms.author: victorh
-ms.openlocfilehash: e3b3b7a058fbd1235619c01e0dca24a3de9036db
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 66ca039a449e355e47563b689f5f44cced164fea
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89231441"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "101724155"
 ---
 # <a name="azure-web-application-firewall-on-azure-front-door"></a>Брандмауэр веб-приложения Azure в Azure Front Door
 
@@ -23,6 +23,8 @@ WAF в Azure Front Door — это глобальное и централизо
 WAF предотвращает вредоносные атаки вблизи их источников, до того как они попадут в вашу виртуальную сеть. Вы получаете глобальную защиту в большом масштабе, не жертвуя производительностью. Политика WAF легко связывается с любым профилем Front Door в вашей подписке. Новые правила можно развернуть в течение нескольких минут, что позволяет быстро реагировать на изменения моделей угроз.
 
 ![Брандмауэр веб-приложения Azure](../media/overview/wafoverview.png)
+
+В Azure Front Door доступны [две новых ценовых категории SKU в предварительной версии](https://docs.microsoft.com/azure/frontdoor/standard-premium/overview): SKU Front Door "Стандартный" и "Премиум". В WAF изначально реализована интеграция с SKU Front Door Premium со всеми возможностями. Для SKU Front Door "Стандартный" поддерживаются только [настраиваемые правила](https://docs.microsoft.com/azure/web-application-firewall/afds/afds-overview#custom-authored-rules).
 
 ## <a name="waf-policy-and-rules"></a>Политика и правила WAF
 

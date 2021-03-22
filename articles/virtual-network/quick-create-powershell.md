@@ -2,38 +2,32 @@
 title: Краткое руководство. Создание виртуальной сети с помощью Azure PowerShell
 titlesuffix: Azure Virtual Network
 description: Из этого краткого руководства вы узнаете, как создать виртуальную сеть с помощью портала Azure. Виртуальная сеть позволяет ресурсам Azure взаимодействовать между собой и с Интернетом.
-services: virtual-network
-documentationcenter: virtual-network
 author: KumudD
-tags: azure-resource-manager
 Customer intent: I want to create a virtual network so that virtual machines can communicate with privately with each other and with the internet.
 ms.service: virtual-network
-ms.devlang: ''
 ms.topic: quickstart
-ms.tgt_pltfrm: virtual-network
-ms.workload: infrastructure
-ms.date: 12/04/2018
+ms.date: 03/06/2021
 ms.author: kumud
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 93e459df96d444e71f4b6a15668f80e9d77db5fd
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: b27f050d3d37daab05e8c5125d6b75a6bb4dea50
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "89077897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199039"
 ---
 # <a name="quickstart-create-a-virtual-network-using-powershell"></a>Краткое руководство. Создание виртуальной сети с помощью PowerShell
 
-Виртуальная сеть позволяет ресурсам Azure, таким как виртуальные машины, обмениваться данными в частном порядке и взаимодействовать через Интернет. Из этого краткого руководства вы узнаете, как создать виртуальную сеть. Создав виртуальную сеть, разверните в ней две виртуальные машины. Затем вы подключитесь к виртуальным машинам из Интернета и установите частную связь через виртуальную сеть.
+Виртуальная сеть позволяет ресурсам Azure, таким как виртуальные машины, обмениваться данными в частном порядке и взаимодействовать через Интернет. 
+
+Из этого краткого руководства вы узнаете, как создать виртуальную сеть. Создав виртуальную сеть, разверните в ней две виртуальные машины. Затем вы подключитесь к виртуальным машинам из Интернета и установите частную связь через виртуальную сеть.
 
 ## <a name="prerequisites"></a>Предварительные требования
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-[!INCLUDE [cloud-shell-try-it.md](../../includes/cloud-shell-try-it.md)]
+- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
+- Локальная установка Azure PowerShell или Azure Cloud Shell
 
-Чтобы установить и использовать PowerShell локально, для работы с этим быстрым началом вам понадобится модуль Azure PowerShell 1.0.0 или более поздней версии. Выполните командлет `Get-Module -ListAvailable Az`, чтобы узнать установленную версию. Сведения об установке или обновлении см. в [этой статье](/powershell/azure/install-az-ps).
-
-Наконец, если модуль PowerShell запущен локально, необходимо также выполнить `Connect-AzAccount`. Эта команда создает подключение к Azure.
+Чтобы установить и использовать PowerShell локально, для работы с этой статьей вам понадобится модуль Azure PowerShell 5.4.1 или более поздней версии. Выполните командлет `Get-Module -ListAvailable Az`, чтобы узнать установленную версию. Если вам необходимо выполнить обновление, ознакомьтесь со статьей, посвященной [установке модуля Azure PowerShell](/powershell/azure/install-Az-ps). При использовании PowerShell на локальном компьютере также нужно запустить `Connect-AzAccount`, чтобы создать подключение к Azure.
 
 ## <a name="create-a-resource-group-and-a-virtual-network"></a>Создание группы ресурсов и виртуальной сети
 
@@ -41,33 +35,41 @@ ms.locfileid: "89077897"
 
 ### <a name="create-the-resource-group"></a>Создание группы ресурсов
 
-Перед созданием виртуальной сети необходимо создать группу ресурсов, которая будет содержать эту виртуальную сеть. Создайте группу ресурсов с помощью командлета [New-AzResourceGroup](/powershell/module/az.Resources/New-azResourceGroup). В этом примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus*:
+Перед созданием виртуальной сети необходимо создать группу ресурсов, которая будет содержать эту виртуальную сеть. Создайте группу ресурсов с помощью командлета [New-AzResourceGroup](/powershell/module/az.Resources/New-azResourceGroup). В этом примере создается группа ресурсов с именем **CreateVNetQS-rg** в расположении **EastUS**:
 
 ```azurepowershell-interactive
-New-AzResourceGroup -Name myResourceGroup -Location EastUS
+$rg = @{
+    Name = 'CreateVNetQS-rg'
+    Location = 'EastUS'
+}
+New-AzResourceGroup @rg
 ```
 
 ### <a name="create-the-virtual-network"></a>Создание виртуальной сети
 
-Создайте виртуальную сеть с помощью командлета [New-AzVirtualNetwork](/powershell/module/az.network/new-azvirtualnetwork). В следующем примере создается виртуальная сеть по умолчанию *myVirtualNetwork* в расположении *EastUS*:
+Создайте виртуальную сеть с помощью командлета [New-AzVirtualNetwork](/powershell/module/az.network/new-azvirtualnetwork). В этом примере создается виртуальная сеть по умолчанию **myVNet** в расположении **EastUS**:
 
 ```azurepowershell-interactive
-$virtualNetwork = New-AzVirtualNetwork `
-  -ResourceGroupName myResourceGroup `
-  -Location EastUS `
-  -Name myVirtualNetwork `
-  -AddressPrefix 10.0.0.0/16
+$vnet = @{
+    Name = 'myVNet'
+    ResourceGroupName = 'CreateVNetQS-rg'
+    Location = 'EastUS'
+    AddressPrefix = '10.0.0.0/16'    
+}
+$virtualNetwork = New-AzVirtualNetwork @vnet
 ```
 
 ### <a name="add-a-subnet"></a>Добавление подсети
 
-Azure развертывает ресурсы в подсети виртуальной сети, поэтому необходимо создать подсеть. Создайте конфигурации подсети с именем *default* с помощью командлета [Add-AzVirtualNetworkSubnetConfig](/powershell/module/az.network/add-azvirtualnetworksubnetconfig):
+Azure развертывает ресурсы в подсети виртуальной сети, поэтому необходимо создать подсеть. Создайте конфигурации подсети с именем **default** с помощью командлета [Add-AzVirtualNetworkSubnetConfig](/powershell/module/az.network/add-azvirtualnetworksubnetconfig):
 
 ```azurepowershell-interactive
-$subnetConfig = Add-AzVirtualNetworkSubnetConfig `
-  -Name default `
-  -AddressPrefix 10.0.0.0/24 `
-  -VirtualNetwork $virtualNetwork
+$subnet = @{
+    Name = 'default'
+    VirtualNetwork = $virtualNetwork
+    AddressPrefix = '10.0.0.0/24'
+}
+$subnetConfig = Add-AzVirtualNetworkSubnetConfig @subnet
 ```
 
 ### <a name="associate-the-subnet-to-the-virtual-network"></a>Связка подсети с виртуальной сетью
@@ -87,13 +89,14 @@ $virtualNetwork | Set-AzVirtualNetwork
 Создайте первую виртуальную машину с помощью командлета [New-AzVM](/powershell/module/az.compute/new-azvm). При запуске приведенной ниже команды запрашиваются учетные данные. Введите имя пользователя и пароль виртуальной машины:
 
 ```azurepowershell-interactive
-New-AzVm `
-    -ResourceGroupName "myResourceGroup" `
-    -Location "East US" `
-    -VirtualNetworkName "myVirtualNetwork" `
-    -SubnetName "default" `
-    -Name "myVm1" `
-    -AsJob
+$vm1 = @{
+    ResourceGroupName = 'CreateVNetQS-rg'
+    Location = 'EastUS'
+    Name = 'myVM1'
+    VirtualNetworkName = 'myVNet'
+    SubnetName = 'default'
+}
+New-AzVM @vm1 -AsJob
 ```
 
 Параметр `-AsJob` создает виртуальную машину в фоновом режиме. Перейдите к следующему шагу.
@@ -111,11 +114,14 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 Создайте вторую виртуальную машину с помощью следующей команды:
 
 ```azurepowershell-interactive
-New-AzVm `
-  -ResourceGroupName "myResourceGroup" `
-  -VirtualNetworkName "myVirtualNetwork" `
-  -SubnetName "default" `
-  -Name "myVm2"
+$vm2 = @{
+    ResourceGroupName = 'CreateVNetQS-rg'
+    Location = 'EastUS'
+    Name = 'myVM2'
+    VirtualNetworkName = 'myVNet'
+    SubnetName = 'default'
+}
+New-AzVM @vm2
 ```
 
 Вам нужно будет создать другого пользователя и пароль. Создание виртуальной машины в Azure занимает несколько минут.
@@ -125,13 +131,16 @@ New-AzVm `
 
 ## <a name="connect-to-a-vm-from-the-internet"></a>Подключение к виртуальной машине из Интернета
 
-Чтобы получить общедоступный IP-адрес виртуальной машины, выполните командлет [Get-AzPublicIpAddress](/powershell/module/az.network/get-azpublicipaddress). Приведенный ниже пример возвращает общедоступный IP-адрес виртуальной машины *myVm1*:
+Чтобы получить его, выполните командлет [Get-AzPublicIpAddress](/powershell/module/az.network/get-azpublicipaddress).
+
+Приведенный ниже пример возвращает общедоступный IP-адрес виртуальной машины **myVm1**:
 
 ```azurepowershell-interactive
-Get-AzPublicIpAddress `
-  -Name myVm1 `
-  -ResourceGroupName myResourceGroup `
-  | Select IpAddress
+$ip = @{
+    Name = 'myVM1'
+    ResourceGroupName = 'CreateVNetQS-rg'
+}
+Get-AzPublicIpAddress @ip | select IpAddress
 ```
 
 Откройте командную строку на локальном компьютере. Выполните команду `mstsc`. Замените `<publicIpAddress>` общедоступным IP-адресом, полученным на последнем шаге:
@@ -155,7 +164,7 @@ mstsc /v:<publicIpAddress>
 
 ## <a name="communicate-between-vms"></a>Взаимодействие между виртуальными машинами
 
-1. На удаленном рабочем столе *myVm1* откройте PowerShell.
+1. На удаленном рабочем столе **myVm1** откройте PowerShell.
 
 1. Введите `ping myVm2`.
 
@@ -176,7 +185,7 @@ mstsc /v:<publicIpAddress>
 
     Проверка связи завершилась ошибкой, так как в ней используется протокол ICMP. По умолчанию ICMP запрещен брандмауэром Windows.
 
-1. Чтобы разрешить виртуальной машине *myVm2* проверять связь с *myVm1* на дальнейшем этапе, введите следующую команду:
+1. Чтобы разрешить виртуальной машине **myVm2** проверять связь с **myVm1** на дальнейшем этапе, введите следующую команду:
 
     ```powershell
     New-NetFirewallRule –DisplayName "Allow ICMPv4-In" –Protocol ICMPv4
@@ -184,11 +193,11 @@ mstsc /v:<publicIpAddress>
 
     Эта команда разрешает входящий трафик ICMP через брандмауэр Windows.
 
-1. Закройте подключение к удаленному рабочему столу *myVm1*.
+1. Закройте подключение к удаленному рабочему столу **myVm1**.
 
-1. Повторите шаги, приведенные в разделе [Подключение к виртуальной машине из Интернета](#connect-to-a-vm-from-the-internet). На этот раз подключитесь к *myVm2*.
+1. Повторите шаги, приведенные в разделе [Подключение к виртуальной машине из Интернета](#connect-to-a-vm-from-the-internet). На этот раз подключитесь к **myVm2**.
 
-1. В командной строке на виртуальной машине *myVm2* введите `ping myvm1`.
+1. В командной строке на виртуальной машине **myVm2** введите `ping myvm1`.
 
     Вы получите сообщение, аналогичное следующему:
 
@@ -207,21 +216,27 @@ mstsc /v:<publicIpAddress>
         Minimum = 0ms, Maximum = 2ms, Average = 0ms
     ```
 
-    Вы получите ответы от *myVm1*, так как на предыдущем шаге разрешили использовать ICMP через брандмауэр Windows на виртуальной машине *myVm1*.
+    Вы получите ответы от **myVm1**, так как на предыдущем шаге разрешили использовать ICMP через брандмауэр Windows на виртуальной машине **myVm1**.
 
-1. Закройте подключение к удаленному рабочему столу *myVm2*.
+1. Закройте подключение к удаленному рабочему столу **myVm2**.
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
 После завершения работы с виртуальной сетью и виртуальными машинами удалите группу ресурсов и все содержащиеся в ней ресурсы с помощью командлета [Remove-AzResourceGroup](/powershell/module/az.resources/remove-azresourcegroup):
 
 ```azurepowershell-interactive
-Remove-AzResourceGroup -Name myResourceGroup -Force
+Remove-AzResourceGroup -Name 'CreateVNetQS-rg' -Force
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Следуя инструкциям в этом кратком руководстве, вы создали виртуальную сеть по умолчанию и две виртуальные машины. Затем вы подключились к одной виртуальной машине из Интернета и установили частную связь между двумя виртуальными машинами.
-Azure не накладывает ограничения на частную связь между виртуальными машинами. По умолчанию она разрешает только входящие подключения к удаленному рабочему столу виртуальных машин Windows из Интернета. Перейдите к следующей статье, чтобы узнать больше о настройке различных типов сетевого взаимодействия с виртуальными машинами:
+В этом кратком руководстве: 
+
+* Вы создали виртуальную сеть по умолчанию и две виртуальные машины. 
+* Затем вы подключились к одной виртуальной машине из Интернета и установили частную связь между двумя виртуальными машинами.
+
+Частный обмен данными между виртуальными машинами не ограничен в виртуальной сети. 
+
+Перейдите к следующей статье, чтобы узнать больше о настройке различных типов сетевого взаимодействия с виртуальными машинами:
 > [!div class="nextstepaction"]
 > [Фильтрация сетевого трафика](tutorial-filter-network-traffic.md)

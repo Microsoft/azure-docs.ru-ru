@@ -10,12 +10,12 @@ services: iot-central
 ms.custom:
 - mvc
 - device-developer
-ms.openlocfilehash: 326fed659be43be3115cae1d7c2b14d0708f4a96
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: f69bbecfc2acc24cd63b87212197342b28723a9f
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100377811"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043105"
 ---
 # <a name="iot-central-device-development-guide"></a>Руководство по разработке для устройств для IoT Central
 
@@ -68,7 +68,7 @@ DPS позволяет следующее:
 - Использовать собственные идентификаторы устройств для регистрации устройств в IoT Central. Использование собственных идентификаторов устройств упрощает интеграцию с существующими системами операционных отделов организации.
 - Использование единой процедуры подключения устройств к IoT Central.
 
-Дополнительные сведения см. в статье [Get connected to Azure IoT Central](./concepts-get-connected.md) (Подключение к Azure IoT Central).
+Дополнительные сведения см. в статьях [Подключение к Azure IoT Central](./concepts-get-connected.md) и [Рекомендации по разработке устройств](concepts-best-practices.md).
 
 ### <a name="security"></a>Безопасность
 

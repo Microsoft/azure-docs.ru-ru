@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 01/14/2021
 ms.author: jamesmantu
 ms.custom: aaddev, scenarios:getting-started, languages:JavaScript, devx-track-js
-ms.openlocfilehash: 27064ecfce0114f7d80e464e2a51928a24919856
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: fb7479f7e3b9ac631c164bbddf65ed8be3bab438
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101653411"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122652"
 ---
 # <a name="quickstart-sign-in-and-get-an-access-token-in-an-angular-spa-using-the-auth-code-flow"></a>Краткое руководство. Вход и получение маркера доступа в одностраничное приложение Angular с помощью потока кода авторизации
 
@@ -26,6 +26,9 @@ ms.locfileid: "101653411"
 Иллюстрацию см. в разделе [Как работает этот пример](#how-the-sample-works).
 
 В этом кратком руководстве используется MSAL Angular версии 2 с потоком кода авторизации. Есть аналогичное руководство для MSAL Angular версии 1.x с неявным потоком: [Краткое руководство. Вход пользователей в одностраничных приложениях JavaScript](./quickstart-v2-angular.md).
+
+> [!IMPORTANT]
+> MSAL Angular версии 2 [!INCLUDE [PREVIEW BOILERPLATE](../../../includes/active-directory-develop-preview.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 

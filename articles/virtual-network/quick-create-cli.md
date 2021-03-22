@@ -2,49 +2,48 @@
 title: Краткое руководство. Создание виртуальной сети с помощью Azure CLI
 titlesuffix: Azure Virtual Network
 description: Из этого краткого руководства вы узнаете, как создать виртуальную сеть с помощью Azure CLI. Виртуальная сеть позволяет ресурсам Azure взаимодействовать между собой и с Интернетом.
-services: virtual-network
-documentationcenter: virtual-network
 author: KumudD
 Customer intent: I want to create a virtual network so that virtual machines can communicate with privately with each other and with the internet.
 ms.service: virtual-network
-ms.devlang: azurecli
 ms.topic: quickstart
-ms.tgt_pltfrm: virtual-network
-ms.workload: infrastructure
-ms.date: 01/22/2019
+ms.date: 03/06/2021
 ms.author: kumud
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 1feae201738a560c4cdb56f703c4af9a38af86d1
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 3f4cd0a09c64c8c89116bf3a7dec40bae9f05f71
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "88056794"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199073"
 ---
 # <a name="quickstart-create-a-virtual-network-using-the-azure-cli"></a>Краткое руководство. Создание виртуальной сети с помощью интерфейса командной строки Azure
 
-Виртуальная сеть позволяет ресурсам Azure, таким как виртуальные машины, обмениваться данными в частном порядке и взаимодействовать через Интернет. Из этого краткого руководства вы узнаете, как создать виртуальную сеть. Создав виртуальную сеть, разверните в ней две виртуальные машины. Затем вы подключитесь к виртуальным машинам из Интернета и установите частную связь через новую виртуальную сеть.
-## <a name="prerequisites"></a>Предварительные требования
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+Виртуальная сеть позволяет ресурсам Azure, таким как виртуальные машины, обмениваться данными в частном порядке и взаимодействовать через Интернет. 
 
-[!INCLUDE [cloud-shell-try-it.md](../../includes/cloud-shell-try-it.md)]
+Из этого краткого руководства вы узнаете, как создать виртуальную сеть. Создав виртуальную сеть, разверните в ней две виртуальные машины. Затем вы подключитесь к виртуальным машинам из Интернета и установите частную связь через новую виртуальную сеть.
 
-Если вы решили установить и использовать Azure CLI локально, для выполнения инструкций из этого руководства вам потребуется использовать Azure CLI 2.0.28 или более поздней версии. Выполните команду `az --version`, чтобы узнать установленную версию. Сведения об установке или обновлении Azure CLI см. в [этой статье](/cli/azure/install-azure-cli).
+[!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
+
+[!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
+
+- Для работы с этим кратким руководством требуется Azure CLI версии 2.0.28 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="create-a-resource-group-and-a-virtual-network"></a>Создание группы ресурсов и виртуальной сети
 
-Перед созданием виртуальной сети необходимо создать группу ресурсов, которая будет содержать эту виртуальную сеть. Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group). В этом примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus*:
+Перед созданием виртуальной сети необходимо создать группу ресурсов, которая будет содержать эту виртуальную сеть. Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create). В этом примере создается группа ресурсов с именем **CreateVNetQS-rg** в расположении **EastUS**:
 
 ```azurecli-interactive
-az group create --name myResourceGroup --location eastus
+az group create \
+    --name CreateVNetQS-rg \
+    --location eastus
 ```
 
-Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet). В этом примере создается виртуальная сеть по умолчанию *myVirtualNetwork* с подсетью *default*:
+Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az_network_vnet_create). В этом примере создается виртуальная сеть по умолчанию с именем **myVNet** и одной подсетью с именем **default**:
 
 ```azurecli-interactive
 az network vnet create \
-  --name myVirtualNetwork \
-  --resource-group myResourceGroup \
+  --name myVNet \
+  --resource-group CreateVNetQS-rg \
   --subnet-name default
 ```
 
@@ -54,26 +53,34 @@ az network vnet create \
 
 ### <a name="create-the-first-vm"></a>Создание первой виртуальной машины
 
-Создайте виртуальную машину с помощью команды [az vm create](/cli/azure/vm). Команда также создает ключи SSH, если они не существуют в расположении ключей по умолчанию. Чтобы использовать определенный набор ключей, используйте параметр `--ssh-key-value`. Параметр `--no-wait` позволяет создать виртуальную машину в фоновом режиме, чтобы можно было перейти к следующему шагу. В этом примере создается виртуальная машина с именем *myVm1*:
+Создайте виртуальную машину с помощью команды [az vm create](/cli/azure/vm#az_vm_create). 
+
+Команда также создает ключи SSH, если они не существуют в расположении ключей по умолчанию. Чтобы использовать определенный набор ключей, используйте параметр `--ssh-key-value`. 
+
+Параметр `--no-wait` создает виртуальную машину в фоновом режиме. Перейдите к следующему шагу. 
+
+В этом примере создается виртуальная машина с именем **myVM1**:
 
 ```azurecli-interactive
 az vm create \
-  --resource-group myResourceGroup \
-  --name myVm1 \
+  --resource-group CreateVNetQS-rg \
+  --name myVM1 \
   --image UbuntuLTS \
   --generate-ssh-keys \
+  --public-ip-address myPublicIP-myVM1 \
   --no-wait
 ```
 
 ### <a name="create-the-second-vm"></a>Создание второй виртуальной машины
 
-Так как вы использовали параметр `--no-wait` на предыдущем шаге, можно создать вторую виртуальную машину с именем *myVm2*.
+Вы использовали параметр `--no-wait` на предыдущем шаге. Вы можете создать вторую виртуальную машину с именем **myVM2**.
 
 ```azurecli-interactive
 az vm create \
-  --resource-group myResourceGroup \
-  --name myVm2 \
+  --resource-group CreateVNetQS-rg \
+  --name myVM2 \
   --image UbuntuLTS \
+  --public-ip-address myPublicIP-myVM2 \
   --generate-ssh-keys
 ```
 
@@ -84,22 +91,32 @@ az vm create \
 ```output
 {
   "fqdns": "",
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVm2",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/CreateVNetQS-rg/providers/Microsoft.Compute/virtualMachines/myVM2",
   "location": "eastus",
   "macAddress": "00-0D-3A-23-9A-49",
   "powerState": "VM running",
   "privateIpAddress": "10.0.0.5",
   "publicIpAddress": "40.68.254.142",
-  "resourceGroup": "myResourceGroup"
+  "resourceGroup": "CreateVNetQS-rg"
   "zones": ""
 }
 ```
 
-Запишите значение **publicIpAddress**. Этот адрес используется на следующем шаге, чтобы подключиться к виртуальной машине из Интернета.
+## <a name="vm-public-ip"></a>Общедоступный IP-адрес виртуальной машины
+
+Чтобы получить общедоступный IP-адрес виртуальной машины **myVM2**, выполните команду [az network public-ip show](/cli/azure/network/public-ip#az-network-public-ip-show):
+
+```azurecli-interactive
+az network public-ip show \
+  --resource-group CreateVNetQS-rg  \
+  --name myPublicIP-myVM2 \
+  --query ipAddress \
+  --output tsv
+```
 
 ## <a name="connect-to-a-vm-from-the-internet"></a>Подключение к виртуальной машине из Интернета
 
-В этой команде замените `<publicIpAddress>` общедоступным IP-адресом виртуальной машины *myVm2*:
+В этой команде замените `<publicIpAddress>` общедоступным IP-адресом виртуальной машины **myVM2**:
 
 ```bash
 ssh <publicIpAddress>
@@ -107,27 +124,35 @@ ssh <publicIpAddress>
 
 ## <a name="communicate-between-vms"></a>Взаимодействие между виртуальными машинами
 
-Чтобы проверить частную связь между виртуальными машинами *myVm2* и *myVm1*, введите команду:
+Чтобы проверить частный обмен данными между виртуальными машинами **myVM2** и **myVM1**, введите команду:
 
 ```bash
-ping myVm1 -c 4
+ping myVM1 -c 4
 ```
 
 Вы получите четыре ответа с адреса *10.0.0.4*.
 
-Завершите сеанс SSH с виртуальной машиной *myVm2*.
+Завершите сеанс SSH с виртуальной машиной **myVM2**.
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Чтобы удалить ненужную группу ресурсов и все содержащиеся в ней ресурсы, выполните команду [az group delete](/cli/azure/group):
+Чтобы удалить ненужную группу ресурсов и все содержащиеся в ней ресурсы, выполните команду [az group delete](/cli/azure/group#az_group_delete):
 
 ```azurecli-interactive
-az group delete --name myResourceGroup --yes
+az group delete \
+    --name CreateVNetQS-rg \
+    --yes
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Следуя инструкциям в этом кратком руководстве, вы создали виртуальную сеть по умолчанию и две виртуальные машины. Затем вы подключились к одной виртуальной машине из Интернета и установили частную связь между двумя виртуальными машинами.
-Azure не накладывает ограничения на частную связь между виртуальными машинами. По умолчанию она разрешает только входящие подключения к удаленному рабочему столу виртуальных машин Windows из Интернета. Перейдите к следующей статье, чтобы узнать больше о настройке различных типов сетевого взаимодействия с виртуальными машинами:
+В этом кратком руководстве: 
+
+* Вы создали виртуальную сеть по умолчанию и две виртуальные машины. 
+* Затем вы подключились к одной виртуальной машине из Интернета и установили частную связь между двумя виртуальными машинами.
+
+Частный обмен данными между виртуальными машинами не ограничен в виртуальной сети. 
+
+Перейдите к следующей статье, чтобы узнать больше о настройке различных типов сетевого взаимодействия с виртуальными машинами:
 > [!div class="nextstepaction"]
 > [Фильтрация сетевого трафика](tutorial-filter-network-traffic.md)

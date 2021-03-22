@@ -11,12 +11,12 @@ ms.custom:
 - mvc
 - device-developer
 - iot-edge
-ms.openlocfilehash: 9b4bb462c94ab5a59dbd9d8fdd4cf619e311df56
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 373d144b4df818a075f0088e9cbf31cb5027e747
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90987023"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101724886"
 ---
 # <a name="tutorial-add-an-azure-iot-edge-device-to-your-azure-iot-central-application"></a>Руководство по добавлению устройства Azure IoT Edge в приложение Azure IoT Central
 
@@ -61,6 +61,9 @@ ms.locfileid: "90987023"
 
 :::image type="content" source="media/tutorial-add-edge-as-leaf-device/imported-manifest.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
 
+> [!TIP]
+> Этот манифест развертывания извлекает образы модулей из репозитория Реестра контейнеров Azure, которым не требуются учетные данные для подключения. Если вы хотите использовать образы модулей из частного репозитория, задайте учетные данные реестра контейнеров в манифесте.
+
 ### <a name="add-telemetry-to-manifest"></a>Добавление телеметрии в манифест
 
 Манифест IoT Edge не определяет телеметрию, которую отправляет модуль. Необходимо добавить определения телеметрии в шаблон устройства в IoT Central. Модуль **SimulatedTemperatureSensor** отправляет сообщения телеметрии, которые выглядят как следующий код JSON:
@@ -99,7 +102,7 @@ ms.locfileid: "90987023"
 
 Интерфейс **Управление** теперь содержит типы телеметрии **machine**, **ambient** и **timeCreated**.
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/manage-interface.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/manage-interface.png" alt-text="Интерфейс с типами телеметрии компьютера и окружающей среды":::
 
 ### <a name="add-views-to-template"></a>Добавление представлений в шаблон
 
@@ -115,7 +118,7 @@ ms.locfileid: "90987023"
 
 1. Щелкните **Сохранить**, чтобы сохранить представление **Просмотр телеметрии устройства IoT Edge**.
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/template-telemetry-view.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/template-telemetry-view.png" alt-text="Шаблон устройства с представлением телеметрии":::
 
 ### <a name="publish-the-template"></a>Публикация шаблона
 
@@ -123,7 +126,7 @@ ms.locfileid: "90987023"
 
 Перейдите к шаблону **Устройство Edge с датчиком окружающей среды** и нажмите значок **Опубликовать**. На панели **Опубликовать этот шаблон устройства в приложении** щелкните **Опубликовать**, чтобы опубликовать шаблон:
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/publish-template.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/publish-template.png" alt-text="Публикация шаблона устройства":::
 
 ## <a name="add-iot-edge-device"></a>Добавление устройства IoT Edge
 
@@ -135,7 +138,7 @@ ms.locfileid: "90987023"
 
 Теперь у вас есть новое устройство с состоянием **Зарегистрировано**:
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/new-device.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/new-device.png" alt-text="Новое зарегистрированное устройство":::
 
 ### <a name="get-the-device-credentials"></a>Получение учетных данных устройства
 
@@ -181,7 +184,7 @@ ms.locfileid: "90987023"
 
 1. Просмотрите выбранные параметры и нажмите **Создать**:
 
-    :::image type="content" source="media/tutorial-add-edge-as-leaf-device/vm-deployment.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+    :::image type="content" source="media/tutorial-add-edge-as-leaf-device/vm-deployment.png" alt-text="Создание виртуальной машины IoT Edge":::
 
 Для завершения развертывания требуется несколько минут. После завершения развертывания перейдите к группе ресурсов **central-edge-rg** на портале Azure.
 
@@ -269,15 +272,15 @@ ms.locfileid: "90987023"
 
 Имитированное устройство IoT Edge теперь работает в виртуальной машине. В приложении IoT Central на странице **Устройства** теперь отображается состояние устройства **Подготовлено**:
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/provisioned-device.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/provisioned-device.png" alt-text="Подготовленное устройство IoT Edge":::
 
 Данные телеметрии с устройства можно просмотреть на странице **Просмотр телеметрии устройства IoT Edge**:
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/device-telemetry-view.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/device-telemetry-view.png" alt-text="Телеметрия устройства":::
 
 На странице **Модули** отображается состояние модулей IoT Edge на устройстве:
 
-:::image type="content" source="media/tutorial-add-edge-as-leaf-device/edge-module-status.png" alt-text="Шаблон устройства, созданный на основе манифеста IoT Edge":::
+:::image type="content" source="media/tutorial-add-edge-as-leaf-device/edge-module-status.png" alt-text="Состояние модулей устройства":::
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

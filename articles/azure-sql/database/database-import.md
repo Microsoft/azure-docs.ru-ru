@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 10/29/2020
-ms.openlocfilehash: 30a511caec82ead406f0a80f107e4261a707bfdb
-ms.sourcegitcommit: 4f4a2b16ff3a76e5d39e3fcf295bca19cff43540
+ms.openlocfilehash: 8d246f06db9fc9f4e6916ea69ec49ddaf8cf0667
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93040177"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519781"
 ---
 # <a name="quickstart-import-a-bacpac-file-to-a-database-in-azure-sql-database-or-azure-sql-managed-instance"></a>Краткое руководство. Импорт BACPAC-файла в базу данных в службе "База данных SQL Azure" или "Управляемый экземпляр SQL Azure"
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -52,13 +52,13 @@ ms.locfileid: "93040177"
 
    ![База данных import2](./media/database-import/sql-server-import-database-settings.png)
 
-1. Нажмите кнопку **ОК** .
+1. Нажмите кнопку **ОК**.
 
-1. Чтобы отслеживать ход выполнения импорта, откройте страницу сервера базы данных. В разделе **Параметры** выберите **Журнал импорта и экспорта** . При успешном выполнении импорта отображается состояние **Завершено** .
+1. Чтобы отслеживать ход выполнения импорта, откройте страницу сервера базы данных. В разделе **Параметры** выберите **Журнал импорта и экспорта**. При успешном выполнении импорта отображается состояние **Завершено**.
 
    ![Состояние импорта базы данных](./media/database-import/sql-server-import-database-history.png)
 
-1. Выберите **Базы данных SQL** , чтобы проверить активность базы данных на сервере, и убедитесь, что для новой базы данных задано состояние **В сети** .
+1. Выберите **Базы данных SQL**, чтобы проверить активность базы данных на сервере, и убедитесь, что для новой базы данных задано состояние **В сети**.
 
 ## <a name="using-sqlpackage"></a>Использование SqlPackage
 
@@ -68,7 +68,7 @@ ms.locfileid: "93040177"
 
 Модель подготовки на основе DTU поддерживает выбор значений максимального размера базы данных для каждого уровня. При импорте базы данных [используйте одно из этих поддерживаемых значений](/sql/t-sql/statements/create-database-transact-sql). 
 
-Приведенная ниже команда SqlPackage импортирует базу данных **AdventureWorks2008R2** из локального хранилища на логический сервер SQL с именем **mynewserver20170403** . Эта команда создает базу данных **myMigratedDatabase** с уровнем служб **Премиум** и целевым уровнем служб **P6** . Подставьте соответствующие значения для своей среды.
+Приведенная ниже команда SqlPackage импортирует базу данных **AdventureWorks2008R2** из локального хранилища на логический сервер SQL с именем **mynewserver20170403**. Эта команда создает базу данных **myMigratedDatabase** с уровнем служб **Премиум** и целевым уровнем служб **P6**. Подставьте соответствующие значения для своей среды.
 
 ```cmd
 sqlpackage.exe /a:import /tcs:"Data Source=<serverName>.database.windows.net;Initial Catalog=<migratedDatabase>;User Id=<userId>;Password=<password>" /sf:AdventureWorks2008R2.bacpac /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P6
@@ -144,6 +144,15 @@ az sql db import --resource-group "<resourceGroup>" --server "<server>" --name "
 
 > [!TIP]
 > Еще один пример сценария приведен в разделе [Импорт базы данных из BACPAC-файла](scripts/import-from-bacpac-powershell.md).
+
+## <a name="cancel-the-import-request"></a>Отмена запроса на импорт
+
+Используйте API из раздела [Операции с базой данных — отмена](https://docs.microsoft.com/rest/api/sql/databaseoperations/cancel) или команду [Stop-AzSqlDatabaseActivity](https://docs.microsoft.com/powershell/module/az.sql/Stop-AzSqlDatabaseActivity?view=azps-5.5.0) в PowerShell. Ниже приведен пример команды PowerShell.
+
+```cmd
+Stop-AzSqlDatabaseActivity -ResourceGroupName $ResourceGroupName -ServerName $ServerName -DatabaseName $DatabaseName -OperationId $Operation.OperationId
+```
+
 
 ## <a name="limitations"></a>Ограничения
 

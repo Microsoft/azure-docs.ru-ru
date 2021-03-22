@@ -8,18 +8,22 @@ ms.subservice: billing
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: banders
-ms.openlocfilehash: 6424fc0ff49566fad949b3fba4718acb2bad4cd3
-ms.sourcegitcommit: d95cab0514dd0956c13b9d64d98fdae2bc3569a0
+ms.openlocfilehash: c3ee643d525cb5394369aba3b0e803bd1a94c852
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91362783"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036243"
 ---
 # <a name="organize-costs-by-customizing-your-billing-account"></a>Упорядочивание расходов с помощью учетной записи выставления счетов
 
 Учетная запись выставления счетов для Клиентского соглашения Майкрософт предоставляет широкие возможности для организации затрат в зависимости от потребностей отдела, проекта или среды разработки.
 
 В этой статье содержатся сведения об использовании портала Azure для организации затрат. В этой статье рассматривается учетная запись выставления счетов для Клиентского соглашения Майкрософт. [Проверьте наличие доступа к Клиентскому соглашению Майкрософт](#check-access-to-a-microsoft-customer-agreement).
+
+Чтобы узнать, как упорядочить расходы для учетной записи выставления счетов, см. видео [Упорядочение расходов посредством настройки учетной записи выставления счетов с Клиентским соглашением Майкрософт](https://www.youtube.com/watch?v=7RxTfShGHwU).
+
+>[!VIDEO https://www.youtube.com/embed/7RxTfShGHwU]
 
 ## <a name="structure-your-account-with-billing-profiles-and-invoice-sections"></a>Структурирование учетной записи с помощью профилей выставления счетов и разделов счетов
 

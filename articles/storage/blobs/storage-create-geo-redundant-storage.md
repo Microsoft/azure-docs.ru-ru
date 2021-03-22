@@ -6,17 +6,17 @@ services: storage
 author: tamram
 ms.service: storage
 ms.topic: tutorial
-ms.date: 04/16/2020
+ms.date: 02/18/2021
 ms.author: tamram
 ms.reviewer: artek
 ms.custom: mvc, devx-track-python, devx-track-js, devx-track-csharp
 ms.subservice: blobs
-ms.openlocfilehash: dfb7e7c7c93a8af2b59f6d3d7049e2c14b8f382a
-ms.sourcegitcommit: 8a74ab1beba4522367aef8cb39c92c1147d5ec13
+ms.openlocfilehash: 0d597f0742cfc43f1c7fb38568b2a2bbda352beb
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98611055"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049344"
 ---
 # <a name="tutorial-build-a-highly-available-application-with-blob-storage"></a>Руководство по Создание высокодоступного приложения с помощью хранилища BLOB-объектов
 
@@ -39,18 +39,30 @@ ms.locfileid: "98611055"
 
 Для работы с этим руководством сделайте следующее:
 
-# <a name="net"></a>[.NET](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 * Установите [Visual Studio 2019](https://www.visualstudio.com/downloads/) с рабочей нагрузкой **разработки в Azure**.
 
   ![Разработка Azure (в разделе Web & Cloud (Сеть и облако))](media/storage-create-geo-redundant-storage/workloads.png)
 
-# <a name="python"></a>[Python](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="python-v21"></a>[Python v2.1](#tab/python2)
 
 * установите [Python](https://www.python.org/downloads/);
 * Загрузите и установите [пакет SDK службы хранилища Azure для Python](https://github.com/Azure/azure-storage-python).
 
-# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+# <a name="nodejs-v12"></a>[Node.js v12](#tab/nodejs)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="nodejs-v11"></a>[Node.js v11](#tab/nodejs11)
 
 * Установите [Node.js](https://nodejs.org).
 
@@ -85,7 +97,11 @@ ms.locfileid: "98611055"
 
 ## <a name="download-the-sample"></a>Скачивание примера приложения
 
-# <a name="net"></a>[.NET](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 [Загрузите пример проекта](https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-pattern-ha-apps-using-ra-grs/archive/master.zip) и извлеките (распакуйте) файл storage-dotnet-circuit-breaker-pattern-ha-apps-using-ra-grs.zip. Вы также можете использовать команду [git](https://git-scm.com/), чтобы загрузить копию приложения в среду разработки. Пример проекта содержит консольное приложение.
 
@@ -93,7 +109,11 @@ ms.locfileid: "98611055"
 git clone https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-pattern-ha-apps-using-ra-grs.git
 ```
 
-# <a name="python"></a>[Python](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="python-v21"></a>[Python v2.1](#tab/python2)
 
 [Загрузите пример проекта](https://github.com/Azure-Samples/storage-python-circuit-breaker-pattern-ha-apps-using-ra-grs/archive/master.zip) и извлеките (распакуйте) файл storage-python-circuit-breaker-pattern-ha-apps-using-ra-grs.zip. Вы также можете использовать команду [git](https://git-scm.com/), чтобы загрузить копию приложения в среду разработки. Пример проекта содержит основное приложение Python.
 
@@ -101,7 +121,11 @@ git clone https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-patter
 git clone https://github.com/Azure-Samples/storage-python-circuit-breaker-pattern-ha-apps-using-ra-grs.git
 ```
 
-# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+# <a name="nodejs-v12"></a>[Node.js v12](#tab/nodejs)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="nodejs-v11"></a>[Node.js v11](#tab/nodejs11)
 
 [Скачайте пример проекта](https://github.com/Azure-Samples/storage-node-v10-ha-ra-grs) и распакуйте файл. Вы также можете использовать команду [git](https://git-scm.com/), чтобы загрузить копию приложения в среду разработки. Пример проекта содержит простое приложение Node.js.
 
@@ -113,7 +137,11 @@ git clone https://github.com/Azure-Samples/storage-node-v10-ha-ra-grs
 
 ## <a name="configure-the-sample"></a>Настройка примера
 
-# <a name="net"></a>[.NET](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 В приложении необходимо указать строку подключения для учетной записи хранения. Вы можете хранить эту строку подключения в переменной среде на локальном компьютере, где выполняется приложение. Чтобы создать переменную среды, выполните один из приведенных ниже примеров в зависимости от операционной системы.
 
@@ -131,7 +159,11 @@ export storageconnectionstring=<yourconnectionstring>
 setx storageconnectionstring "<yourconnectionstring>"
 ```
 
-# <a name="python"></a>[Python](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="python-v21"></a>[Python v2.1](#tab/python2)
 
 В приложении необходимо указать учетные данные учетной записи хранения. Вы можете хранить эту информацию в переменных среды на локальном компьютере, где выполняется приложение. Чтобы создать переменные среды, выполните один из приведенных ниже примеров в зависимости от операционной системы.
 
@@ -151,7 +183,11 @@ setx accountname "<youraccountname>"
 setx accountkey "<youraccountkey>"
 ```
 
-# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+# <a name="nodejs-v12"></a>[Node.js v12](#tab/nodejs)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="nodejs-v11"></a>[Node.js v11](#tab/nodejs11)
 
 Чтобы запустить этот пример, необходимо добавить учетные данные учетной записи хранения в файл `.env.example`, а затем переименовать его на `.env`.
 
@@ -168,7 +204,11 @@ AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<replace with your storage account access key>
 
 ## <a name="run-the-console-application"></a>Запуск консольного приложения
 
-# <a name="net"></a>[.NET](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 В Visual Studio нажмите клавишу **F5** или щелкните **Запустить**, чтобы начать отладку приложения. Visual Studio автоматически восстанавливает отсутствующие пакеты NuGet, если это настроено. Дополнительные сведения см. в разделе [Обзор восстановления пакетов](/nuget/consume-packages/package-restore#package-restore-overview).
 
@@ -178,7 +218,11 @@ AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<replace with your storage account access key>
 
 В примере кода задача `RunCircuitBreakerAsync` в файле `Program.cs` используется для скачивания изображения из учетной записи хранения с помощью метода [DownloadToFileAsync](/dotnet/api/microsoft.azure.storage.blob.cloudblob.downloadtofileasync). Перед скачиванием определяется [OperationContext](/dotnet/api/microsoft.azure.cosmos.table.operationcontext). Контекст операции определяет обработчики событий, которые срабатывают при успешном завершении скачивания или при сбое и повторной попытке.
 
-# <a name="python"></a>[Python](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="python-v21"></a>[Python v2.1](#tab/python2)
 
 Чтобы запустить приложение в терминале или в командной строке, перейдите к каталогу **circuitbreaker.py**, а затем введите `python circuitbreaker.py`. Приложение передает изображение **HelloWorld.png** из решения в учетную запись хранения. Приложение проверяет, было ли изображение реплицировано во вторичную конечную точку RA-GZRS. Затем оно начинает скачивать изображение (до 999 раз). Каждая операция чтения помечается буквой **P** или **S**. **P** представляет основную конечную точку, а **S** — вторичную конечную точку.
 
@@ -190,7 +234,11 @@ AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<replace with your storage account access key>
 
 Перед скачиванием определяется функция [retry_callback](/python/api/azure-storage-common/azure.storage.common.storageclient.storageclient) и [response_callback](/python/api/azure-storage-common/azure.storage.common.storageclient.storageclient) для объекта службы. Эти функции определяют обработчики событий, которые срабатывают при успешном завершении скачивания или при сбое и повторной попытке.
 
-# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+# <a name="nodejs-v12"></a>[Node.js v12](#tab/nodejs)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="nodejs-v11"></a>[Node.js v11](#tab/nodejs11)
 
 Чтобы выполнить пример, откройте командную строку, перейдите к папке с примерами и введите `node index.js`.
 
@@ -221,7 +269,11 @@ Deleted container newcontainer1550799840726
 
 ## <a name="understand-the-sample-code"></a>Разбор примера кода
 
-### <a name="net"></a>[.NET](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ### <a name="retry-event-handler"></a>Обработчик события при повторном запуске
 
@@ -272,7 +324,11 @@ private static void OperationContextRequestCompleted(object sender, RequestEvent
 }
 ```
 
-### <a name="python"></a>[Python](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="python-v21"></a>[Python v2.1](#tab/python2)
 
 ### <a name="retry-event-handler"></a>Обработчик события при повторном запуске
 
@@ -315,7 +371,11 @@ def response_callback(response):
             secondary_read_count = 0
 ```
 
-### <a name="nodejs"></a>[Node.js](#tab/nodejs)
+# <a name="nodejs-v12"></a>[Node.js v12](#tab/nodejs)
+
+Сейчас мы работаем над созданием фрагментов кода для версии 12.x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. в [объявлении о клиентских библиотеках службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="nodejs-v11"></a>[Node.js v11](#tab/nodejs11)
 
 При использовании пакета SDK для Node.js версии 10 обработчики обратных вызовов не нужны. Вместо этого в примере создается конвейер, настроенный с использованием параметров повторных попыток и вторичной конечной точки. Это позволяет приложению автоматически переключаться на дополнительный конвейер, если ему не удается получить доступ к данным через основной.
 

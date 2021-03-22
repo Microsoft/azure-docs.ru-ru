@@ -7,14 +7,14 @@ ms.date: 08/11/2020
 ms.topic: quickstart
 ms.service: iot-pnp
 services: iot-pnp
-ms.openlocfilehash: b2b17cffb8abd748315c437f46000995c4cb598a
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: 5446f8481439dabffe67f9b00b5f65b1da495746
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99831915"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "101742659"
 ---
-# <a name="quickstart---set-up-your-environment-for-the-iot-plug-and-play-quickstarts-and-tutorials"></a>Краткое руководство. Настройка среды для кратких руководств и учебников по IoT Plug and Play
+# <a name="quickstart-set-up-your-environment-for-the-iot-plug-and-play-quickstarts-and-tutorials"></a>Краткое руководство. Настройка среды для работы с краткими руководствами и учебниками по IoT Plug and Play
 
 Перед началом работы с краткими руководствами и учебниками по IoT Plug and Play необходимо настроить центр Интернета вещей и Службу подготовки устройств (DPS) в подписке Azure. Кроме того, вам понадобятся локальные копии файлов модели, используемых в примерах приложений, и обозреватель Интернета вещей Azure.
 

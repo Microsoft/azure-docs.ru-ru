@@ -10,14 +10,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
-ms.date: 09/14/2020
+ms.date: 03/01/2020
 ms.author: duau
-ms.openlocfilehash: 0e874ae3d29f4143a4f8a9275d5ffcde48d08e6d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: a352624fc802e4224aa1b60768c064c0054cdfd6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91569767"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102035880"
 ---
 # <a name="azure-front-door-rules-engine-match-conditions"></a>Условия соответствия для обработчика правил Azure Front Door
 
@@ -142,7 +142,7 @@ Equals, Not equals | HTTP, HTTPS
 
 #### <a name="key-information"></a>Основные сведения
 
-- При использовании этого условия правила не забудьте включить сведения о протоколе. Пример: *https://www.\<yourdomain\>.com*.
+- При использовании этого условия правила не забудьте включить сведения о протоколе. Например, `https://www.<yourdomain\>.com`.
 
 ## <a name="request-file-extension"></a>Расширение файла запроса
 
@@ -181,6 +181,10 @@ Equals, Not equals | HTTP, HTTPS
 Оператор | Значение | Преобразование регистра
 ---------|-------|---------------
 [Список стандартных операторов](#standard-operator-list) | String, Int | Строчные, прописные буквы, обрезка данных, удаление пробелов, кодирование URL-адреса, декодирование URL-адреса
+
+#### <a name="key-information"></a>Основные сведения
+
+- Используя условие этого правила помните, что поиск соответствий начинается после первого символа `/` в пути. Пример: в `https://www.<yourdomain>.com/folder/page` поиск соответствий будет выполняться для `folder/page`.
 
 ## <a name="standard-operator-list"></a>Список стандартных операторов
 

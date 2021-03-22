@@ -4,12 +4,12 @@ description: Обзор службы Azure Backup и ее роль в страт
 ms.topic: overview
 ms.date: 04/24/2019
 ms.custom: mvc
-ms.openlocfilehash: 6a30e31dd1462e427faf64966a38c94f9fa56df6
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: 2879d104d534733651ba76ab5521541adad0a51c
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98624478"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101725362"
 ---
 # <a name="what-is-the-azure-backup-service"></a>Часто задаваемые вопросы о службе Azure Backup
 
@@ -26,6 +26,7 @@ ms.locfileid: "98624478"
 - **SQL Server в виртуальной машине Azure** -  [Резервное копирование баз данных SQL Server, работающих в виртуальных машинах Azure](backup-azure-sql-database.md).
 - **Базы данных SAP HANA на виртуальных машинах Azure** - [Резервное копирование баз данных SAP HANA, выполняемых на виртуальных машинах Azure](backup-azure-sap-hana-database.md)
 - **Серверы Базы данных Azure для PostgreSQL (предварительная версия)**  -  [Резервное копирование баз данных Azure PostgreSQL и хранение резервных копий до 10 лет](backup-azure-database-postgresql.md)
+- **BLOB-объекты Azure (предварительная версия)**  - [Операционное резервное копирование для BLOB-объектов Azure (предварительная версия)](blob-backup-overview.md)
 
 ![Обзор службы Azure Backup](./media/backup-overview/azure-backup-overview.png)
 

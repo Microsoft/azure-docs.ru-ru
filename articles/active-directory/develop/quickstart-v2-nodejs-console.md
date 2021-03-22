@@ -1,21 +1,21 @@
 ---
 title: Краткое руководство. Вызов Microsoft Graph из консольного приложения Node.js | Azure
 titleSuffix: Microsoft identity platform
-description: В этом кратком руководстве описано, как консольное приложение Node.js может получить маркер доступа и вызвать API, защищенный конечной точкой платформы удостоверений Майкрософт, с помощью собственного удостоверения приложения.
+description: В этом кратком руководстве описано, как скачать и выполнить пример кода. Вы узнаете, как консольное приложение Node.js может получить маркер доступа и вызвать API, защищенный конечной точкой платформы удостоверений Майкрософт, с помощью собственного удостоверения приложения.
 services: active-directory
 author: derisen
 manager: CelesteDG
 ms.service: active-directory
 ms.subservice: develop
 ms.topic: quickstart
-ms.date: 02/11/2021
+ms.date: 02/17/2021
 ms.author: v-doeris
-ms.openlocfilehash: c550cc8009f0138b9f1803399fbc592b34efbfab
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: 4360810d460c5fc8598ce302ad8b82f65d2d819e
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100562036"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101653751"
 ---
 # <a name="quickstart-acquire-a-token-and-call-microsoft-graph-api-from-a-nodejs-console-app-using-apps-identity"></a>Краткое руководство. Получение маркера и вызов API Microsoft Graph из консольного приложения Node.js с помощью удостоверения приложения
 
@@ -29,12 +29,12 @@ ms.locfileid: "100562036"
 * [Visual Studio Code](https://code.visualstudio.com/download) или любой другой редактор кода.
 
 > [!div renderon="docs"]
-> ## <a name="register-and-download-your-quickstart-application"></a>Регистрация и скачивание приложения, используемого в этом кратком руководстве
+> ## <a name="register-and-download-the-sample-application"></a>Регистрация и скачивание примера приложения
 >
 > Выполните шаги ниже, чтобы начать.
 >
 > [!div renderon="docs"]
-> #### <a name="step-1-register-your-application"></a>Шаг 1. Регистрация приложения
+> #### <a name="step-1-register-the-application"></a>Шаг 1. Регистрация приложения
 > Чтобы зарегистрировать приложение и добавить сведения о его регистрации в решение вручную, сделайте следующее:
 >
 > 1. Войдите на <a href="https://portal.azure.com/" target="_blank">портал Azure</a>.
@@ -50,9 +50,9 @@ ms.locfileid: "100562036"
 > 1. В узле **Пользователь** выберите **User.Read.All**, а затем щелкните **Добавить разрешения**.
 
 > [!div class="sxs-lookup" renderon="portal"]
-> ### <a name="download-and-configure-your-quickstart-app"></a>Скачивание и настройка приложения, используемого в этом кратком руководстве
+> ### <a name="download-and-configure-the-sample-app"></a>Скачивание и настройка примера приложения
 >
-> #### <a name="step-1-configure-your-application-in-azure-portal"></a>Шаг 1. Настройка приложения на портале Azure
+> #### <a name="step-1-configure-the-application-in-azure-portal"></a>Шаг 1. Настройка приложения на портале Azure
 > Для работы примера кода в этом кратком руководстве необходимо создать секрет клиента и добавить разрешение приложения API Graph **User.Read.All**.
 > > [!div renderon="portal" id="makechanges" class="nextstepaction"]
 > > [Внести эти изменения для меня]()
@@ -60,7 +60,7 @@ ms.locfileid: "100562036"
 > > [!div id="appconfigured" class="alert alert-info"]
 > > ![Уже настроено](media/quickstart-v2-netcore-daemon/green-check.png). Ваше приложение настроено с помощью этих атрибутов.
 
-#### <a name="step-2-download-your-nodejs-project"></a>Шаг 2. Скачивание проекта Node.js
+#### <a name="step-2-download-the-nodejs-sample-project"></a>Шаг 2. Скачивание примера проекта Node.js
 
 > [!div renderon="docs"]
 > [Скачивание примера кода](https://github.com/azure-samples/ms-identity-javascript-nodejs-console/archive/main.zip)
@@ -73,7 +73,7 @@ ms.locfileid: "100562036"
 > > `Enter_the_Supported_Account_Info_Here`
 
 > [!div renderon="docs"]
-> #### <a name="step-3-configure-your-nodejs-project"></a>Шаг 3. Настройка проекта Node.js
+> #### <a name="step-3-configure-the-nodejs-sample-project"></a>Шаг 3. Настройка примера проекта Node.js
 >
 > 1. Распакуйте ZIP-файл в локальную папку, расположенную как можно ближе к корню диска (например, *C:\Azure-Samples*).
 > 1. Измените файл *.env*, заменив значения полей `TENANT_ID`, `CLIENT_ID` и `CLIENT_SECRET` следующим фрагментом кода:
@@ -89,7 +89,7 @@ ms.locfileid: "100562036"
 >    - `Enter_the_Client_Secret_Here` — замените это значение созданным ранее секретом клиента. Чтобы создать новый ключ, выберите **Сертификаты и секреты** в параметрах регистрации приложения на портале Azure.
 >
 > > [!WARNING]
-> > Любой секрет в формате открытого текста в исходном коде представляет собой повышенную угрозу безопасности. В этой статье открытый текст для секрета клиента используется только для простоты. Используйте [учетные данные сертификата](active-directory-certificate-credentials.md), а не секреты клиента, в конфиденциальных клиентских приложениях, особенно если вы планируете развертывать такие приложения в рабочей среде.
+> > Использовать секреты в формате открытого текста в исходном коде небезопасно. В этой статье такой секрет клиента применяется только для простоты. Используйте [учетные данные сертификата](active-directory-certificate-credentials.md), а не секреты клиента, в конфиденциальных клиентских приложениях, особенно если вы планируете развертывать такие приложения в рабочей среде.
 
 > [!div class="sxs-lookup" renderon="portal"]
 > #### <a name="step-3-admin-consent"></a>Шаг 3. Согласие администратора
@@ -172,7 +172,7 @@ const msalConfig = {
         clientId: "Enter_the_Application_Id_Here",
         authority: "https://login.microsoftonline.com/Enter_the_Tenant_Id_Here",
         clientSecret: "Enter_the_Client_Secret_Here",
-   } 
+   }
 };
 const cca = new msal.ConfidentialClientApplication(msalConfig);
 ```

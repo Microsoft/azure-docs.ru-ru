@@ -11,16 +11,20 @@ ms.custom:
 - seo-python-october2019
 - devx-track-python
 ms.date: 11/05/2019
-ms.openlocfilehash: 79add54478e9cd52ffd3041d5f85bf588929b44f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 048c31bedb56bdb66dc3b80d12c3014652e34625
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96008877"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102121156"
 ---
 # <a name="quickstart-use-azure-cache-for-redis-in-python"></a>Краткое руководство. Использование Кэша Azure для Redis с приложениями Python
 
 Из этой статьи вы узнаете, как реализовать кэш Azure для Redis в приложении Python для обеспечения доступа к защищенному выделенному кэшу, к которому может обращаться любое приложение в Azure.
+
+## <a name="skip-to-the-code-on-github"></a>Переход к коду на GitHub
+
+Если вы хотите сразу перейти к коду, см. [краткое руководство по Python](https://github.com/Azure-Samples/azure-cache-redis-samples/tree/main/quickstart/python) на сайте GitHub.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

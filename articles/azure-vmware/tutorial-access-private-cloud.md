@@ -2,13 +2,13 @@
 title: Учебник. Получение доступа к частному облаку
 description: Узнайте, как получить доступ к частному облаку Решения Azure VMware
 ms.topic: tutorial
-ms.date: 09/21/2020
-ms.openlocfilehash: b7f21dbba5256712607241bb1258962fc22418fb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 02/22/2021
+ms.openlocfilehash: 456767a9edd78a70a0aba45c7b44a2150a2217a1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91578430"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045009"
 ---
 # <a name="tutorial-access-an-azure-vmware-solution-private-cloud"></a>Руководство по получению доступа к частному облаку Решения Azure VMware
 
@@ -30,11 +30,14 @@ ms.locfileid: "91578430"
 
 1. На инсталляционном сервере войдите в клиент vSphere с помощью единого входа VMware vCenter. Используйте для этого имя пользователя облачного администратора и убедитесь, что отобразился пользовательский интерфейс.
 
-1. На портале Azure выберите частное облако, а затем в представлении **Обзор** щелкните **Удостоверение > По умолчанию**. 
+1. На портале Azure выберите частное облако и щелкните **Управление** > **Удостоверение**. 
 
    Отобразятся URL-адреса и учетные данные пользователя в vCenter и NSX-T Manager частного облака.
 
-   :::image type="content" source="media/tutorial-access-private-cloud/ss4-display-identity.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true":::
+   >[!TIP]
+   >Выберите **Создать новый пароль**, чтобы создать новые пароли для vCenter и NSX-T.
+
+   :::image type="content" source="media/tutorial-access-private-cloud/ss4-display-identity.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true" lightbox="media/tutorial-access-private-cloud/ss4-display-identity.png":::
 
 1. Перейдите к виртуальной машине, созданной на предыдущем этапе, и подключитесь к ней. 
 
@@ -44,13 +47,13 @@ ms.locfileid: "91578430"
 
 1. На вкладке vCenter введите учетные данные пользователя `cloudadmin@vmcp.local`, полученные на предыдущем этапе.
 
-   :::image type="content" source="media/tutorial-access-private-cloud/ss5-vcenter-login.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true":::
+   :::image type="content" source="media/tutorial-access-private-cloud/ss5-vcenter-login.png" alt-text="Войдите в экземпляр vCenter частного облака." border="true":::
 
-   :::image type="content" source="media/tutorial-access-private-cloud/ss6-vsphere-client-home.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true":::
+   :::image type="content" source="media/tutorial-access-private-cloud/ss6-vsphere-client-home.png" alt-text="Портал vCenter." border="true":::
 
 1. На второй вкладке браузера войдите в NSX-T Manager.
 
-   :::image type="content" source="media/tutorial-access-private-cloud/ss10-nsx-manager-home.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true":::
+   :::image type="content" source="media/tutorial-access-private-cloud/ss10-nsx-manager-home.png" alt-text="На второй вкладке браузера войдите в NSX-T Manager." border="true":::
 
 
 

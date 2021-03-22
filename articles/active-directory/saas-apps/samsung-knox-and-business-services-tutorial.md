@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 01/27/2021
 ms.author: jeedes
-ms.openlocfilehash: e1cf12d676de84bc18a123fbdf05b1170725eda8
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.openlocfilehash: 3c1ec38e792987f4bd7208c3bf57a882a05f4f46
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99072463"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101648056"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-samsung-knox-and-business-services"></a>Руководство по интеграции единого входа Azure Active Directory с Samsung Knox and Business Services
 
@@ -31,7 +31,7 @@ ms.locfileid: "99072463"
 Чтобы приступить к работе, потребуется следующее.
 
 * Подписка Azure AD. Если у вас нет подписки, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/).
-* Подписка Samsung Knox and Business Services с поддержкой единого входа.
+* Учетная запись Samsung Knox.
 
 ## <a name="scenario-description"></a>Описание сценария
 
@@ -55,7 +55,7 @@ ms.locfileid: "99072463"
 
 ## <a name="configure-and-test-azure-ad-sso-for-samsung-knox-and-business-services"></a>Настройка и проверка единого входа Azure AD для Samsung Knox and Business Services
 
-Настройте и проверьте единый вход Azure AD в Samsung Knox and Business Services с помощью тестового пользователя **B.Simon**. Для обеспечения единого входа необходимо установить связь между пользователем Azure AD и соответствующим пользователем в Samsung Knox and Business Services.
+Настройте и проверьте единый вход Azure AD в Samsung Knox and Business Services с помощью тестового пользователя **B.Simon**. Для обеспечения работы единого входа необходимо установить связь между пользователем Azure AD и соответствующим пользователем на сайте [SamsungKnox.com](https://samsungknox.com/).
 
 Чтобы настроить и проверить единый вход Azure AD в Samsung Knox and Business Services, выполните следующие действия:
 
@@ -78,7 +78,10 @@ ms.locfileid: "99072463"
 
 1. На странице **Базовая конфигурация SAML** введите значения следующих полей.
 
-    В текстовом поле **URL-адрес для входа** введите URL-адрес: `https://www.samsungknox.com`.
+    * В текстовом поле **URL-адрес для входа** введите URL-адрес: `https://www.samsungknox.com`
+    * В текстовое поле **URL-адрес ответа (URL-адрес службы обработчика утверждений)** введите URL-адрес в формате `https://central.samsungknox.com/ams/ad/saml/acs`.
+    
+    ![Значения базовой конфигурации SAML](https://docs.samsungknox.com/assets/merge/ad-sso/basic-saml-configuration.png)
 
 1. На странице **Настройка единого входа с помощью SAML** в разделе **Сертификат подписи SAML** нажмите кнопку "Копировать", чтобы скопировать **URL-адрес метаданных федерации приложений** и сохранить его на компьютере.
 
@@ -110,7 +113,7 @@ ms.locfileid: "99072463"
 
 ## <a name="configure-samsung-knox-and-business-services-sso"></a>Настройка единого входа для Samsung Knox and Business Services
 
-1. В другом окне браузера войдите на сайт Samsung Knox and Business Services своей компании в качестве администратора.
+1. В другом окне браузера войдите на сайт [SamsungKnox.com](https://samsungknox.com/) с правами администратора.
 
 1. Щелкните **аватар** в верхнем углу справа.
 
@@ -118,7 +121,7 @@ ms.locfileid: "99072463"
 
 1. На боковой панели слева щелкните элемент **ACTIVE DIRECTORY SETTINGS** (Параметры Active Directory) и выполните следующие действия:
 
-    ![Окно параметров Active Directory](./media/samsung-knox-and-business-services-tutorial/sso-settings.png)
+    ![Окно параметров Active Directory](https://docs.samsungknox.com/assets/merge/ad-sso/ad-5.png)
 
     а. В поле **Identifier(entity ID)** (Идентификатор (ИД сущности)) введите **идентификатор**, указанный на портале Azure.
 
@@ -128,21 +131,18 @@ ms.locfileid: "99072463"
 
 ### <a name="create-samsung-knox-and-business-services-test-user"></a>Создание тестового пользователя Samsung Knox and Business Services
 
-В этом разделе объясняется, как создать пользователя Britta Simon в приложении Samsung Knox and Business Services. Для добавления пользователей на платформу Samsung Knox and Business Services обратитесь в [службу поддержки Samsung Knox and Business Services](mailto:noreplyk.sec@samsung.com). Перед использованием единого входа необходимо создать и активировать пользователей.
+В этом разделе объясняется, как создать пользователя Britta Simon в приложении Samsung Knox and Business Services. Инструкции по отправке приглашения субадминистратору (тестовому пользователю) в свою организацию Samsung Knox см. в руководствах по [настройке Knox](https://docs.samsungknox.com/admin/knox-configure/Administrators.htm) или [регистрации в Knox Mobile](https://docs.samsungknox.com/admin/knox-mobile-enrollment/kme-add-an-admin.htm) для администраторов. Перед использованием единого входа необходимо создать и активировать пользователей.
 
 ## <a name="test-sso"></a>Проверка единого входа 
 
 В этом разделе описано, как проверить конфигурацию единого входа Azure AD с помощью указанных ниже способов. 
 
-* Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены по URL-адресу для входа в Samsung Knox and Business Services, где можно инициировать поток входа. 
+* Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены на сайт [SamsungKnox.com](https://samsungknox.com/), где можно инициировать поток входа. 
 
-* Перейдите по URL-адресу для входа в Samsung Knox and Business Services и инициируйте поток входа.
+* Перейдите на сайт [SamsungKnox.com](https://samsungknox.com/) и инициируйте поток входа.
 
-* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкните плитку Samsung Knox and Business Services на портале "Мои приложения". Вы перейдете по URL-адресу для входа в Samsung Knox and Business Services. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
-
+* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Samsung Knox and Business Services на портале "Мои приложения", вы перейдете на сайт [SamsungKnox.com](https://samsungknox.com/). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Samsung Knox and Business Services вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от кражи и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
-
-
+После настройки Samsung Knox and Business Services вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от кражи и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

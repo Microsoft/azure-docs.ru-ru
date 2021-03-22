@@ -4,12 +4,12 @@ description: В этом учебнике вы будете использова
 ms.topic: tutorial
 ms.date: 09/08/2020
 titleSuffix: Azure
-ms.openlocfilehash: db018c5c8d8f3990fd465f4d586ef4dc70980542
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.openlocfilehash: 68b5b7561cc31e156a745bcfb07e3203de10d425
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98955721"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101702221"
 ---
 # <a name="tutorial-analyze-live-video-by-using-openvino-model-server--ai-extension-from-intel"></a>Руководство по Анализ видеотрансляций с помощью OpenVINO™ Model Server (расширение ИИ от Intel) 
 
@@ -88,11 +88,11 @@ ms.locfileid: "98955721"
 
 1. Теперь перейдите в папку *src/cloud-to-device-console-app*. Здесь вы увидите файл *appSettings.json* и несколько других файлов:
 
-    * ***c2d-console-app.csproj** _ — файл проекта Visual Studio Code.
-    _ ***operations.json** _ — список операций, которые должна запускать программа.
-    _ ***Program.cs** _ — пример кода программы. Этот код выполняет следующие действия:
+    * ***c2d-console-app.csproj*** — файл проекта Visual Studio Code.
+    * ***operations.json*** — список операций, которые должна запускать программа.
+    * ***Program.cs*** — пример кода программы. Этот код выполняет следующие действия:
 
-        _ загружает параметры приложения;
+        * загружает параметры приложения;
         * вызывает прямые методы, которые представляются модулем Аналитики видеотрансляций в IoT Edge (с помощью модуля можно анализировать потоки видеотрансляции, вызывая его [прямые методы](direct-methods.md));
         * приостанавливает выполнение, позволяя проанализировать выходные данные программы в окне **ТЕРМИНАЛ** и проверить сгенерированные модулем события в окне **ВЫХОДНЫЕ ДАННЫЕ**;
         * вызывает прямые методы для очистки ресурсов.
@@ -117,7 +117,7 @@ ms.locfileid: "98955721"
 
     ![Создание файла манифеста развертывания IoT Edge](./media/use-intel-openvino-tutorial/generate-deployment-manifest.png)  
 
-    Файл манифеста *deployment.yolov3.amd64.json* создается в папке *src/edge/config*.
+    Файл манифеста *deployment.openvino.amd64.json* создается в папке *src/edge/config*.
 
 1. Если вы прошли краткое руководство [Создание событий при обнаружении движения](detect-motion-emit-events-quickstart.md), пропустите этот шаг. 
 

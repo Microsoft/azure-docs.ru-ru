@@ -6,12 +6,12 @@ ms.topic: quickstart
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 04/14/2020
 ms.author: tomfitz
-ms.openlocfilehash: 342fa722d704933f22cec00a46d11ccc38fc6e4d
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: b255cafb9040f87c902fe6c094c3e0db3d461e4b
+ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91650652"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101093649"
 ---
 # <a name="quickstart-create-and-publish-a-managed-application-definition"></a>Краткое руководство. Создание и публикация определения управляемого приложения
 
@@ -401,7 +401,7 @@ az managedapp definition create \
 
 ## <a name="make-sure-users-can-see-your-definition"></a>Убедитесь, что пользователи могут видеть ваше определение.
 
-У вас есть доступ к определению управляемого приложения, но вы хотите, чтобы другие пользователи в вашей организации могли получить к нему доступ. Предоставьте им роль читателя в определении. Они могут унаследовать этот уровень доступа из группы подписки или ресурса. Сведения о том, как проверить, кто имеет доступ к определению, и добавить пользователей или группы, см. в статье [Добавление или удаление назначений ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
+У вас есть доступ к определению управляемого приложения, но вы хотите, чтобы другие пользователи в вашей организации могли получить к нему доступ. Предоставьте им роль читателя в определении. Они могут унаследовать этот уровень доступа из группы подписки или ресурса. Сведения о том, как проверить, кто имеет доступ к определению, и добавить пользователей или группы, см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

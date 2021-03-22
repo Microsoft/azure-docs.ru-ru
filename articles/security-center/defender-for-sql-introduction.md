@@ -8,12 +8,12 @@ ms.topic: overview
 ms.service: security-center
 ms.custom: references_regions
 manager: rkarlin
-ms.openlocfilehash: 21f07ed76ef0b900a723677acc2bf576649fe861
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 532c46c50d0b422946af649801e43904b4b6ed7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101702017"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102096876"
 ---
 # <a name="introduction-to-azure-defender-for-sql"></a>Общие сведения об Azure Defender для SQL
 
@@ -26,7 +26,7 @@ Azure Defender для SQL содержит два плана Azure Defender, к�
 |Аспект|Сведения|
 |----|:----|
 |Состояние выпуска:|**Azure Defender для серверов баз данных SQL Azure** — общедоступная версия<br>**Azure Defender для серверов SQL на компьютерах**. Общедоступная версия (GA) |
-|Цены|Для двух планов, которые входят в предложение **Azure Defender для SQL**, плата взимается по тарифам, приведенным на [странице с ценами](security-center-pricing.md).|
+|Цены|Для двух планов, которые входят в предложение **Azure Defender для SQL**, плата взимается по тарифам, приведенным на странице [Цены на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).|
 |Защищаемые версии SQL|[SQL на виртуальных машинах Azure](../azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview.md)<br>[Серверы SQL с поддержкой Azure Arc](/sql/sql-server/azure-arc/overview)<br>Локальные серверы SQL на компьютерах Windows без поддержки Azure Arc<br>[Отдельные базы данных](../azure-sql/database/single-database-overview.md) и [эластичные пулы](../azure-sql/database/elastic-pool-overview.md) Azure SQL<br>[Управляемый экземпляр SQL Azure](../azure-sql/managed-instance/sql-managed-instance-paas-overview.md)<br>[Выделенный пул SQL в Azure Synapse Analytics (ранее — Хранилище данных SQL)](../synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is.md)|
 |Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да](./media/icons/yes-icon.png) US Gov<br>![Yes](./media/icons/yes-icon.png) China Gov (**частично**: набор оповещений и оценка уязвимости для серверов SQL Server; защита от угроз поведения недоступна)|
 |||

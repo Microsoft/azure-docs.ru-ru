@@ -9,12 +9,12 @@ ms.subservice: sql
 ms.date: 05/07/2020
 ms.author: jrasnick
 ms.reviewer: jrasnick
-ms.openlocfilehash: 0fbf5c07b2d8fd5d754a46484d6b072cc9b682d6
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.openlocfilehash: 78e4b35feb4e830a9f4335614a55d49ca90cd791
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98599843"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101667638"
 ---
 # <a name="use-external-tables-with-synapse-sql"></a>Использование внешних таблиц в Synapse SQL
 
@@ -29,7 +29,7 @@ ms.locfileid: "98599843"
 - Запрос по данным в хранилище BLOB-объектов Azure и Azure Data Lake Storage 2-го поколения с использованием инструкций Transact-SQL.
 - Импорт данных из Хранилища BLOB-объектов Azure и Azure Data Lake Storage с сохранением в выделенный пул SQL.
 
-При использовании в сочетании с инструкцией [CREATE TABLE AS SELECT](../sql-data-warehouse/sql-data-warehouse-develop-ctas.md?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json) выбранные из внешней таблицы данные импортируются в таблицу в пуле SQL. В дополнение к [инструкции COPY](/sql/t-sql/statements/copy-into-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) внешние таблицы можно использовать для загрузки данных. 
+При использовании в сочетании с инструкцией [CREATE TABLE AS SELECT](../sql-data-warehouse/sql-data-warehouse-develop-ctas.md?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json) выбранные из внешней таблицы данные импортируются в таблицу в пуле SQL. В дополнение к [инструкции COPY](/sql/t-sql/statements/copy-into-transact-sql?view=azure-sqldw-latest&preserve-view=true) внешние таблицы можно использовать для загрузки данных. 
 
 Учебник по загрузке данных см. в статье [Загрузка данных из хранилища BLOB-объектов Azure в хранилище данных SQL Azure с помощью PolyBase](../sql-data-warehouse/load-data-from-azure-blob-storage-using-copy.md?bc=%2fazure%2fsynapse-analytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fsynapse-analytics%2ftoc.json).
 
@@ -60,7 +60,7 @@ ms.locfileid: "98599843"
 
 ## <a name="create-external-data-source"></a>CREATE EXTERNAL DATA SOURCE
 
-Внешние источники данных используются для подключения к учетным записям хранения. Полная документация приводится [здесь](/sql/t-sql/statements/create-external-data-source-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).
+Внешние источники данных используются для подключения к учетным записям хранения. Полная документация приводится [здесь](/sql/t-sql/statements/create-external-data-source-transact-sql?view=azure-sqldw-latest&preserve-view=true).
 
 ### <a name="syntax-for-create-external-data-source"></a>Синтаксис инструкции CREATE EXTERNAL DATA SOURCE
 
@@ -159,7 +159,7 @@ WITH ( LOCATION = 'https://azureopendatastorage.blob.core.windows.net/nyctlc/yel
 
 ## <a name="create-external-file-format"></a>CREATE EXTERNAL FILE FORMAT
 
-Создает объект формата внешнего файла, в котором определяются внешние данные, сохраненные в хранилище BLOB-объектов Azure или Azure Data Lake Storage. Создание формата внешнего файла — обязательное условие для создания внешней таблицы. Полная документация приводится [здесь](/sql/t-sql/statements/create-external-file-format-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).
+Создает объект формата внешнего файла, в котором определяются внешние данные, сохраненные в хранилище BLOB-объектов Azure или Azure Data Lake Storage. Создание формата внешнего файла — обязательное условие для создания внешней таблицы. Полная документация приводится [здесь](/sql/t-sql/statements/create-external-file-format-transact-sql?view=azure-sqldw-latest&preserve-view=true).
 
 Создавая формат внешнего файла, вы указываете фактическую структуру данных, на которые ссылается внешняя таблица.
 
@@ -325,7 +325,7 @@ column_name <data_type>
 
 <column_definition>, ...*n* ]
 
-CREATE EXTERNAL TABLE поддерживает возможность настроить имя столбца, тип данных, допустимость значений NULL и параметры сортировки. Параметр DEFAULT CONSTRAINT нельзя использовать с внешними таблицами.
+CREATE EXTERNAL TABLE поддерживает возможность настроить имя столбца, тип данных и параметры сортировки. Параметр DEFAULT CONSTRAINT нельзя использовать с внешними таблицами.
 
 >[!IMPORTANT]
 >Определения столбцов, включая типы данных и количество столбцов, должны соответствовать данным во внешних файлах. В случае несоответствия при запросе данных строки файла будут отклонены.
@@ -387,7 +387,7 @@ SELECT TOP 1 * FROM census_external_table
 
 - В системе доступа ARM у вас должен быть доступ к рабочей области по меньшей мере с ролью участника данных BLOB-объектов хранилища для учетной записи ADLS 2-го поколения.
 
-- Вам нужны по меньшей мере [права на создание](/sql/t-sql/statements/create-external-table-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest#permissions-2&preserve-view=true) внешних таблиц и на выполнение запросов в пуле SQL или SQL по запросу.
+- Вам нужны по меньшей мере [права на создание](/sql/t-sql/statements/create-external-table-transact-sql?view=azure-sqldw-latest#permissions-2&preserve-view=true) внешних таблиц и на выполнение запросов в пуле SQL или SQL по запросу.
 
 На панели "Данные" выберите файл, из которого нужно создать внешнюю таблицу.
 > [!div class="mx-imgBorder"]

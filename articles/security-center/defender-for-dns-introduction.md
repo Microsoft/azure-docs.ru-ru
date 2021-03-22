@@ -7,12 +7,12 @@ ms.date: 12/07/2020
 ms.topic: overview
 ms.service: security-center
 manager: rkarlin
-ms.openlocfilehash: 957e39f7629337182c3e19a1a514c42883666301
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.openlocfilehash: dffb505719e6778adfdd8e99f62790df9ebd615a
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98797001"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100701"
 ---
 # <a name="introduction-to-azure-defender-for-dns"></a>Общие сведения об Azure Defender для DNS
 
@@ -28,7 +28,7 @@ Azure Defender для DNS обеспечивает дополнительный 
 |Аспект|Сведения|
 |----|:----|
 |Состояние выпуска:|Предварительный просмотр<br>[!INCLUDE [Legalese](../../includes/security-center-preview-legal-text.md)] |
-|Цены|Плата за использование **Azure Defender для DNS** начисляется по тарифам, приведенным на [странице с ценами](security-center-pricing.md).|
+|Цены:|Плата за использование **Azure Defender для DNS** начисляется по тарифам, приведенным на странице [Цены на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).|
 |Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Нет](./media/icons/no-icon.png) Национальные и независимые (US Gov, China Gov, другие правительственные облака)|
 |||
 
@@ -47,14 +47,14 @@ Azure Defender для DNS защищает от проблем, в том чис
 
 В Azure Defender для DNS не используются агенты. 
 
-Чтобы защитить свой уровень DNS, включите Azure Defender для DNS для каждой из подписок, как описано в разделе о [включении Azure Defender](security-center-pricing.md#enable-azure-defender).
+Чтобы защитить свой уровень DNS, включите Azure Defender для DNS для каждой из подписок, как описано в разделе о [включении Azure Defender](enable-azure-defender.md).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Из этой статьи вы узнали об Azure Defender для DNS. Связанные материалы см. в следующих статьях. 
 
-- Оповещения системы безопасности могут создаваться самим Центром безопасности или приниматься центром безопасности от различных продуктов по обеспечению безопасности. Чтобы экспортировать все эти оповещения в Azure Sentinel, любое стороннее средство SIEM или другие внешние инструменты, следуйте инструкциям в статье [Экспорт оповещений о безопасности и рекомендаций](continuous-export.md).
+- Оповещения системы безопасности могут создаваться самим центром безопасности или приниматься центром безопасности от различных продуктов по обеспечению безопасности. Чтобы экспортировать все эти оповещения в Azure Sentinel, любое стороннее средство SIEM или другие внешние инструменты, следуйте инструкциям в статье [Экспорт оповещений о безопасности и рекомендаций](continuous-export.md).
 
 - > [!div class="nextstepaction"]
-    > [Включение Azure Defender](security-center-pricing.md#enable-azure-defender)
+    > [Включение Azure Defender](enable-azure-defender.md)

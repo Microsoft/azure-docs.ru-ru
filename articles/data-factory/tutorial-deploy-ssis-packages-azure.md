@@ -4,15 +4,15 @@ description: Узнайте, как подготовить среду выпол
 ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-lt-2019
-ms.date: 10/13/2020
+ms.date: 02/22/2021
 author: swinarko
 ms.author: sawinark
-ms.openlocfilehash: e0b84bb65e71b023121a5deae8295ddaf8879311
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 7c439d71806d2deba508ce35131f21ebfbd7a3ec
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100391360"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101740415"
 ---
 # <a name="provision-the-azure-ssis-integration-runtime-in-azure-data-factory"></a>Подготовка среды выполнения интеграции Azure–SSIS в Фабрике данных Azure
 
@@ -149,6 +149,12 @@ ms.locfileid: "100391360"
    1. В поле **Имя администратора** введите имя входа SQL для проверки подлинности базы данных сервера узла SSISDB. 
 
    1. В поле **Пароль администратора** введите пароль проверки подлинности SQL для входа сервера базы данных на узел SSISDB. 
+
+   1. Установите флажок **Использовать двойную резервную пару Azure-SSIS Integration Runtime с отработкой отказа SSISDB**, чтобы настроить двойную резервную пару Azure-SSIS Integration Runtime, которая работает синхронно с группой отработки отказа Базы данных SQL Azure или Управляемого экземпляра для обеспечения непрерывности бизнес-процессов и аварийного восстановления.
+   
+      Если вы установили этот флажок, введите имя для идентификации своей пары основной и дополнительной сред Azure-SSIS IR в текстовом поле **Имя двойной резервной пары**. При создании основной и дополнительной сред Azure-SSIS IR вам нужно ввести одно и то же имя пары.
+
+      Дополнительные сведения см. в статье [Настройка среды Azure-SSIS IR для обеспечения непрерывности бизнес-процессов и аварийного восстановления](./configure-bcdr-azure-ssis-integration-runtime.md).
 
    1. В поле **Каталог уровней служб базы данных** выберите уровень служб для сервера базы данных, на котором будет размещаться SSISDB. Это может быть уровень "Базовый", "Стандартный", "Премиум" или имя эластичного пула.
 

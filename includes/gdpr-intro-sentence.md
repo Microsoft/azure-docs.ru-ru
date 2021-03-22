@@ -1,6 +1,6 @@
 ---
 title: включить файл
-description: Включить файл
+description: включить файл
 services: active-directory
 author: eross-msft
 ms.service: active-directory
@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 04/24/2018
 ms.author: lizross
 ms.custom: include file
-ms.openlocfilehash: b049b3651f12b1a73a3511d030bbdbbfaceb2480
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 1f451db9ab06ff376e1a6ca4d503d21b48d19789
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95972579"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102109432"
 ---
->[!Note] 
-> В этой статье описываются действия по удалению персональных данных с устройства или службы и их использование для поддержки обязательств в GDPR. Если вы ищете общие сведения о GDPR, ознакомьтесь с [разделом о GDPR на портале Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> [!NOTE]
+> В этой статье приведены пошаговые инструкции по удалению персональных данных с устройства или из службы. Эти сведения можно использовать для соблюдения обязательств согласно Общему регламенту по защите данных (GDPR). Общие сведения о GDPR см. в разделе, посвященном GDPR, в [Центре управления безопасностью Майкрософт](https://www.microsoft.com/trust-center/privacy/gdpr-overview) и на [портале Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).

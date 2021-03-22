@@ -7,12 +7,12 @@ ms.date: 12/07/2020
 ms.topic: overview
 ms.service: security-center
 manager: rkarlin
-ms.openlocfilehash: 922189909da21aac65d1e2e898df58598868b929
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 903853f9f37921a68c918d09a94087548b5c562c
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100590467"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100667"
 ---
 # <a name="introduction-to-azure-defender-for-resource-manager"></a>Общие сведения об Azure Defender для Resource Manager
 
@@ -20,14 +20,14 @@ ms.locfileid: "100590467"
 
 Уровень управления облаком — это важная служба, подключенная ко всем облачным ресурсам. По этой причине он также является потенциальной целью для злоумышленников. Следовательно, мы рекомендуем группам по обеспечению безопасности внимательно отслеживать уровень управления ресурсами. 
 
-Azure Defender для Resource Manager автоматически отслеживает операции управления ресурсами в вашей организации, независимо от того, выполняются ли они с помощью портала Azure, Azure REST API, Azure CLI или других программных клиентов Azure. Azure Defender запускает расширенную аналитику безопасности для обнаружения угроз и оповещения о подозрительных действиях.
+Azure Defender для Resource Manager автоматически отслеживает операции управления ресурсами в вашей организации, независимо от того, выполняются ли они с помощью портала Azure, Azure REST API, Azure CLI или других программных клиентов Azure. Azure Defender запускает расширенную аналитику безопасности для обнаружения угроз и предупреждает о подозрительных действиях.
 
 ## <a name="availability"></a>Доступность
 
 |Аспект|Сведения|
 |----|:----|
 |Состояние выпуска:|Предварительный просмотр<br>[!INCLUDE [Legalese](../../includes/security-center-preview-legal-text.md)] |
-|Цены|**В Azure Defender для Resource Manager** взимается плата, как показано на [странице цен](security-center-pricing.md)|
+|Цены:|Плата за использование **Azure Defender для Resource Manager** начисляется по тарифам, приведенным на странице [Цены на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).|
 |Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Нет](./media/icons/no-icon.png) Национальные и независимые (US Gov, China Gov, другие правительственные облака)|
 |||
 
@@ -75,4 +75,4 @@ Azure Defender для Resource Manager защищает от проблем, в 
 - Оповещения системы безопасности могут создаваться самим центром безопасности или приниматься центром безопасности от различных продуктов по обеспечению безопасности. Чтобы экспортировать все эти оповещения в Azure Sentinel, любое стороннее средство SIEM или другие внешние инструменты, следуйте инструкциям в статье [Экспорт оповещений о безопасности и рекомендаций](continuous-export.md).
 
 - > [!div class="nextstepaction"]
-    > [Включение Azure Defender](security-center-pricing.md#enable-azure-defender)
+    > [Включение Azure Defender](enable-azure-defender.md)

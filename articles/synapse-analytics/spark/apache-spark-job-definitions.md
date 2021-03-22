@@ -8,12 +8,12 @@ ms.service: synapse-analytics
 ms.topic: tutorial
 ms.subservice: spark
 ms.date: 10/16/2020
-ms.openlocfilehash: 3f1e3fd360197310a89a67d43053649d904aeb18
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: d125bca5ed67476897eec7cd32a586776d8b1ea8
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101677613"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176626"
 ---
 # <a name="tutorial-create-apache-spark-job-definition-in-synapse-studio"></a>Руководство по Создание определения задания Apache Spark в Synapse Studio
 
@@ -34,7 +34,7 @@ ms.locfileid: "101677613"
 
 * Рабочая область Azure Synapse Analytics. См. руководство по [созданию рабочей области Azure Synapse Analytics](../../machine-learning/how-to-manage-workspace.md).
 * Бессерверный пул Apache Spark.
-* Учетная запись хранения ADLS 2-го поколения. Вам потребуется **роль владельца данных BLOB-объектов службы хранилища** для файловой системы ADLS 2-го поколения, с которой вы хотите работать. Если у вас нет этой роли, добавьте разрешение вручную.
+* Учетная запись хранения ADLS 2-го поколения. Вам потребуется роль **Участник для данных BLOB-объектов хранилища** для файловой системы ADLS 2-го поколения, с которой вы хотите работать. Если у вас нет этой роли, добавьте разрешение вручную.
 * Если вы не хотите использовать хранилище рабочей области по умолчанию, свяжите необходимую учетную запись хранения ADLS 2-го поколения с Synapse Studio. 
 
 ## <a name="create-an-apache-spark-job-definition-for-pyspark-python"></a>Создание определения задания Apache Spark для PySpark (Python)
@@ -162,7 +162,7 @@ ms.locfileid: "101677613"
 
 ## <a name="submit-an-apache-spark-job-definition-as-a-batch-job"></a>Отправка определения задания Apache Spark в виде пакетного задания
 
-Созданное определение задания Apache Spark можно отправить в пул Apache Spark. Убедитесь, что вы являетесь **владельцем данных BLOB-объектов службы хранилища** для файловой системы ADLS 2-го поколения, с которой вы хотите работать. Если у вас нет этой роли, добавьте разрешение вручную.
+Созданное определение задания Apache Spark можно отправить в пул Apache Spark. Убедитесь, что у вас есть роль **Участник для данных BLOB-объектов хранилища** для файловой системы ADLS 2-го поколения, с которой вы хотите работать. Если у вас нет этой роли, добавьте разрешение вручную.
 
 ### <a name="scenario-1-submit-apache-spark-job-definition"></a>Сценарий 1. Отправка определения заданий Apache Spark
  1. Откройте окно определения задания Apache Spark, выбрав его.

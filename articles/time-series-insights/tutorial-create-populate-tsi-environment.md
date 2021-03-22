@@ -9,12 +9,12 @@ ms.service: time-series-insights
 ms.topic: tutorial
 ms.date: 10/01/2020
 ms.custom: seodec18
-ms.openlocfilehash: 982ca04237d16979d65260a040f5aed783822ac7
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.openlocfilehash: ea57a623546df99408d488da4522411f55ab0dd9
+ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95023230"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101094355"
 ---
 # <a name="tutorial-create-an-azure-time-series-insights-gen1-environment"></a>Руководство по созданию среды 1-го поколения службы "Аналитика временных рядов Azure"
 
@@ -36,7 +36,7 @@ ms.locfileid: "95023230"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Ваша учетная запись Azure должна быть участником роли **Владелец** для подписки. Дополнительные сведения см. в статье [Добавление и удаление назначений ролей Azure с помощью портала Azure](../role-based-access-control/role-assignments-portal.md).
+* Ваша учетная запись Azure должна быть участником роли **Владелец** для подписки. Дополнительные сведения см. в статье [Назначение ролей Azure с помощью портала Azure](../role-based-access-control/role-assignments-portal.md).
 
 ## <a name="review-video"></a>Просмотр видео
 

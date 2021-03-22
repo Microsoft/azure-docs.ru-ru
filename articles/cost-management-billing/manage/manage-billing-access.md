@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/26/2021
 ms.author: banders
 ms.custom: seodec18
-ms.openlocfilehash: 23e3adad12a726b03f6efe309dde0ec4a93bcd5b
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.openlocfilehash: 1574149e0587701323cb9ae5ae0c5cfeaccf47c7
+ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98897431"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101096420"
 ---
 # <a name="manage-access-to-billing-information-for-azure"></a>Управление доступом к данным для выставления счетов в Azure
 
@@ -40,7 +40,7 @@ ms.locfileid: "98897431"
 
 Эти роли имеют доступ к данным для выставления счетов на [портале Azure](https://portal.azure.com/). Также сотрудники с такими ролями могут использовать [API выставления счетов](consumption-api-overview.md#usage-details-api) для получения счетов и сведений о потреблении программным способом.
 
-Сведения о назначении ролей см. в статье [Добавление и удаление назначений ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
+Сведения о назначении ролей см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 
 ** Если вы являетесь клиентом Соглашения EA, Владелец учетной записи может назначить указанную выше роль другим пользователям их команды. Но чтобы эти пользователи могли просматривать данные для выставления счетов, Администратор предприятия должен включить просмотр расходов "Владелец учетной записи" на корпоративном портале.
 
@@ -105,7 +105,7 @@ ms.locfileid: "98897431"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Пользователи с другими ролями, такими как владелец или участник, получают доступ не только к счетам, но и к службам Azure. Сведения об управлении этими ролями см. в статье [Добавление и удаление назначений ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
+- Пользователи с другими ролями, такими как владелец или участник, получают доступ не только к счетам, но и к службам Azure. Сведения об управлении этими ролями см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 - Дополнительные сведения о ролях см. в статье [Встроенные роли Azure](../../role-based-access-control/built-in-roles.md).
 
 ## <a name="need-help-contact-us"></a>Требуется помощь? Свяжитесь с нами.

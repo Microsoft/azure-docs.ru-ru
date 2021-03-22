@@ -2,13 +2,13 @@
 title: Руководство. Настройка сети для частного облака VMware в Azure
 description: Сведения о том, как создать и настроить сеть для развертывания частного облака в Azure.
 ms.topic: tutorial
-ms.date: 09/21/2020
-ms.openlocfilehash: 6aff39284f3ea786080055552ac001ac5dd7b394
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/13/2021
+ms.openlocfilehash: c609d191191cd9de111e83fe62761b149405cccc
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91578362"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494376"
 ---
 # <a name="tutorial-configure-networking-for-your-vmware-private-cloud-in-azure"></a>Руководство по настройке сети для частного облака VMware в Azure
 
@@ -76,7 +76,7 @@ ms.locfileid: "91578362"
    | **Диапазон адресов подсети шлюза** | Это значение подставляется, когда вы выбираете виртуальную сеть. Не изменяйте значение по умолчанию. |
    | **Общедоступный IP-адрес** | Выберите **Создать**. |
 
-   :::image type="content" source="./media/tutorial-configure-networking/create-virtual-network-gateway.png" alt-text="Выберите &quot;Просмотр и создание&quot;." border="true":::
+   :::image type="content" source="./media/tutorial-configure-networking/create-virtual-network-gateway.png" alt-text="Укажите значения для полей, а затем выберите элемент &quot;Просмотр и создание&quot;." border="true":::
 
 1. Проверьте правильность введенных данных и нажмите кнопку **Создать**, чтобы запустить развертывание шлюза виртуальной сети. 
 1. Когда развертывание завершится, перейдите к следующему разделу, чтобы подключить канал ExpressRoute к шлюзу виртуальной сети, содержащей частное облако Решения Azure VMware.
@@ -90,15 +90,15 @@ ms.locfileid: "91578362"
 
 ## <a name="locate-the-urls-for-vcenter-and-nsx-manager"></a>Поиск URL-адресов для vCenter и диспетчера NSX.
 
-Чтобы входить в vCenter и диспетчер NSX, вам нужны URL-адреса веб-клиента vCenter и веб-сайта диспетчера NSX-T. 
+Для входа в vCenter и диспетчер NSX вам нужны URL-адреса веб-клиента vCenter и веб-сайта диспетчера NSX-T. 
 
 Перейдите к частному облаку Решения Azure VMware и в разделе **Управление** выберите **Идентификатор**. Здесь вы найдете нужную информацию.
 
-:::image type="content" source="./media/tutorial-configure-networking/locate-urls.png" alt-text="Выберите &quot;Просмотр и создание&quot;." border="true":::
+:::image type="content" source="./media/tutorial-access-private-cloud/ss4-display-identity.png" alt-text="Снимок экрана: учетные данные vCenter и NSX-T, а также URL-адреса клиентов." border="true" lightbox="media/tutorial-access-private-cloud/ss4-display-identity.png":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этого руководства вы узнали, как выполнять такие задачи:
+В этом руководстве вы узнали, как:
 
 > [!div class="checklist"]
 > * Создание виртуальной сети

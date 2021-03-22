@@ -7,16 +7,20 @@ ms.service: cache
 ms.devlang: rust
 ms.topic: quickstart
 ms.date: 01/08/2021
-ms.openlocfilehash: b55a706aa25b21620226690c172c996fe10a84fa
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: 17f38d79b75179d7a54ca5ed1d20dff18d0a0363
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98203499"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121105"
 ---
 # <a name="quickstart-use-azure-cache-for-redis-with-rust"></a>Краткое руководство. Использование Кэша Azure для Redis с приложениями Rust
 
 В этой статье показано, как использовать [язык программирования Rust](https://www.rust-lang.org/) для взаимодействия с [Кэшем Azure для Redis](./cache-overview.md). Здесь также демонстрируются примеры использования [String](https://redis.io/topics/data-types-intro#redis-strings), [Hash](https://redis.io/topics/data-types-intro#redis-hashes), [List](https://redis.io/topics/data-types-intro#redis-lists) и других популярных структур данных Redis с помощью библиотеки [redis-rs](https://github.com/mitsuhiko/redis-rs) для Redis. Этот клиент предоставляет высоко- и низкоуровневые API. Способ их использования показан на примерах кода в этой статье.
+
+## <a name="skip-to-the-code-on-github"></a>Переход к коду на GitHub
+
+Если вы хотите сразу перейти к коду, см. [краткое руководство по Rust](https://github.com/Azure-Samples/azure-redis-cache-rust-quickstart/) на сайте GitHub.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 07/29/2020
+ms.date: 02/12/2021
 ms.author: jeedes
-ms.openlocfilehash: d88cbb79b42637721412dd0a35c231782a896721
-ms.sourcegitcommit: 2e9643d74eb9e1357bc7c6b2bca14dbdd9faa436
+ms.openlocfilehash: 7360ad5abc7342043152c2da11038b624b0bfadc
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96029886"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101649998"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-github-enterprise-cloud---enterprise-account"></a>Руководство по интеграции единого входа Azure Active Directory с GitHub Enterprise Cloud — учетная запись Enterprise
 
@@ -24,29 +24,27 @@ ms.locfileid: "96029886"
 
 * Управление доступом к учетной записи GitHub Enterprise в Azure AD, а также любыми организациями в учетной записи Enterprise.
 
-Чтобы узнать больше об интеграции приложений SaaS с Azure AD, прочитайте статью [Что такое доступ к приложениям и единый вход с помощью Azure Active Directory?](../manage-apps/what-is-single-sign-on.md)
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы приступить к работе, потребуется следующее.
 
 * Подписка Azure AD. Если у вас нет подписки, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/).
-* [Учетная запись GitHub Enterprise.](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-enterprise/about-enterprise-accounts)
+* Учетная запись [GitHub Enterprise](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-enterprise/about-enterprise-accounts).
 * Учетная запись пользователя GitHub с правами владельца учетной записи Enterprise. 
 
 ## <a name="scenario-description"></a>Описание сценария
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* GitHub Enterprise Cloud — учетная запись Enterprise поддерживает единый вход, инициированный **поставщиком служб** или **поставщиком удостоверений**.
-* GitHub Enterprise Cloud — учетная запись Enterprise поддерживает **JIT**-подготовку пользователей.
-* После настройки GitHub Enterprise Cloud — учетная запись Enterprise вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).
+* GitHub Enterprise Cloud - Enterprise Account поддерживает единый вход, инициированный **поставщиком служб** или **поставщиком удостоверений**.
+* GitHub Enterprise Cloud - Enterprise Account поддерживает **JIT**-подготовку пользователей.
 
 ## <a name="adding-github-enterprise-cloud---enterprise-account-from-the-gallery"></a>Добавление учетной записи GitHub Enterprise Cloud — учетная запись Enterprise из коллекции
 
 Чтобы настроить интеграцию GitHub Enterprise Cloud — учетная запись Enterprise с Azure AD, необходимо добавить GitHub Enterprise Cloud — учетная запись Enterprise из коллекции в список управляемых приложений SaaS.
 
-1. Войдите на [портал Azure](https://portal.azure.com) с помощью личной учетной записи Майкрософт либо рабочей или учебной учетной записи.
+1. Войдите на портал Azure с помощью личной учетной записи Майкрософт либо рабочей или учебной учетной записи.
 1. В области навигации слева выберите службу **Azure Active Directory**.
 1. Перейдите в колонку **Корпоративные приложения** и выберите **Все приложения**.
 1. Чтобы добавить новое приложение, выберите **Новое приложение**.
@@ -58,21 +56,21 @@ ms.locfileid: "96029886"
 
 Настройте и проверьте единый вход Azure AD в GitHub Enterprise Cloud — учетная запись Enterprise, используя тестового пользователя с именем **B. Simon**. Чтобы обеспечить работу единого входа, необходимо создать связь между пользователем в Azure AD и соответствующим пользователем в GitHub Enterprise Cloud — учетная запись Enterprise.
 
-Чтобы настроить и проверить единый вход Azure AD в GitHub Enterprise Cloud — учетная запись Enterprise, выполните действия в следующих стандартных блоках:
+Чтобы настроить и проверить единый вход Azure AD в GitHub Enterprise Cloud - Enterprise Account, выполните действия в следующих стандартных блоках:
 
 1. **[Настройка единого входа Azure AD](#configure-azure-ad-sso)** необходима, чтобы пользователи могли использовать эту функцию.
     1. **[Создание тестового пользователя Azure AD](#create-an-azure-ad-test-user)** требуется для проверки работы единого входа Azure AD с помощью пользователя B.Simon.
-    1. **[Назначение пользователя Azure AD и учетной записи тестового пользователя приложению GitHub](#assign-the-azure-ad-test-user)** позволяет разрешить единый вход Azure AD для вашей учетной записи пользователя и тестового пользователя `B.Simon`.
+    1. **[Назначение пользователя Azure AD и учетной записи тестового пользователя приложению GitHub](#assign-your-azure-ad-user-and-the-test-user-account-to-the-github-app)** позволяет разрешить единый вход Azure AD для вашей учетной записи пользователя и тестового пользователя `B.Simon`.
 1. **[Включение и тестирование SAML для учетной записи Enterprise и связанных с ней организаций](#enable-and-test-saml-for-the-enterprise-account-and-its-organizations)** позволяет настроить параметры единого входа на стороне приложения.
-    1. **[Тестирование единого входа от имени другого владельца учетной записи Enterprise или с помощью учетной записи члена организации](#test-sso)** позволяет убедиться в правильности настройки.
+    1. **[Тестирование единого входа от имени другого владельца учетной записи Enterprise или с помощью учетной записи члена организации](#test-sso-with-another-enterprise-account-owner-or-organization-member-account)** позволяет убедиться в правильности настройки.
 
 ## <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
 
 Выполните следующие действия, чтобы включить единый вход Azure AD на портале Azure.
 
-1. На [портале Azure](https://portal.azure.com/) на странице интеграции с приложением **GitHub Enterprise Cloud — учетная запись Enterprise** найдите раздел **Управление** и выберите **Единый вход**.
+1. На портале Azure на странице интеграции с приложением **GitHub Enterprise Cloud - Enterprise Account** найдите раздел **Управление** и выберите **Единый вход**.
 1. На странице **Выбрать метод единого входа** выберите **SAML**.
-1. На странице **Настройка единого входа с помощью SAML** щелкните значок "Изменить" (значок пера), чтобы открыть диалоговое окно **Базовая конфигурация SAML** и изменить параметры.
+1. На странице **Настройка единого входа с помощью SAML** щелкните значок карандаша, чтобы открыть диалоговое окно **Базовая конфигурация SAML** для изменения параметров.
 
    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
@@ -118,15 +116,9 @@ ms.locfileid: "96029886"
 1. На портале Azure выберите **Корпоративные приложения**, а затем — **Все приложения**.
 1. В списке приложений выберите **GitHub Enterprise Cloud — учетная запись Enterprise**.
 1. На странице "Обзор" приложения найдите раздел **Управление** и выберите **Пользователи и группы**.
-
-   ![Ссылка "Пользователи и группы"](common/users-groups-blade.png)
-
 1. Выберите **Добавить пользователя**, а в диалоговом окне **Добавление назначения** выберите **Пользователи и группы**.
-
-    ![Ссылка "Добавить пользователя"](common/add-assign-user.png)
-
 1. В диалоговом окне **Пользователи и группы** выберите **B.Simon** и свою учетную запись пользователя в списке пользователей, а затем в нижней части экрана нажмите кнопку **Выбрать**.
-1. Если ожидается, что в утверждении SAML будет получено какое-либо значение роли, то в диалоговом окне **Выбор роли** нужно выбрать соответствующую роль для пользователя из списка и затем нажать кнопку **Выбрать**, расположенную в нижней части экрана.
+1. Если пользователям необходимо назначить роль, вы можете выбрать ее из раскрывающегося списка **Выберите роль**. Если для этого приложения не настроена ни одна роль, будет выбрана роль "Доступ по умолчанию".
 1. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
 ## <a name="enable-and-test-saml-for-the-enterprise-account-and-its-organizations"></a>Включение и проверка SAML для учетной записи Enterprise и связанных с ней организаций
@@ -156,16 +148,6 @@ ms.locfileid: "96029886"
 1. Войдите в Azure AD с учетной записью пользователя `B.Simon`.
 1. Перейдите к организации GitHub. Пользователю должен отобразиться запрос на аутентификацию через SAML. После успешной аутентификации через SAML пользователь `B.Simon` сможет получить доступ к ресурсам организации. 
 
-## <a name="additional-resources"></a>Дополнительные ресурсы
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Список учебников по интеграции приложений SaaS с Azure Active Directory](./tutorial-list.md)
-
-- [Что такое доступ к приложениям и единый вход с помощью Azure Active Directory?](../manage-apps/what-is-single-sign-on.md)
-
-- [Что представляет собой условный доступ в Azure Active Directory?](../conditional-access/overview.md)
-
-- [Попробуйте работу GitHub Enterprise Cloud — учетная запись Enterprise с Azure Active Directory](https://aad.portal.azure.com/)
-
-- [Что такое управление сеансами в Microsoft Cloud App Security?](/cloud-app-security/proxy-intro-aad)
-
-- [Защита приложений с помощью функции управления настройками условного доступа для приложений в Microsoft Cloud App Security](/cloud-app-security/proxy-intro-aad)
+После настройки GitHub Enterprise Cloud — учетная запись Enterprise вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).
