@@ -9,12 +9,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 03/04/2021
 ms.author: justinha
-ms.openlocfilehash: fd93635e7087d6f4a3590ec7bcb25482dc8382da
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: fec2695c9e196a652a4166161bf012b22b0d00e6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174735"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579558"
 ---
 # <a name="tutorial-configure-secure-ldap-for-an-azure-active-directory-domain-services-managed-domain"></a>Руководство по настройке защищенного протокола LDAP для управляемого домена доменных служб Azure AD
 
@@ -152,7 +152,7 @@ Thumbprint                                Subject
 
     На странице **Безопасность** выберите вариант **Пароль** для защиты *PFX-файла* сертификата. Для шифрования необходимо использовать алгоритм *TripleDES-SHA1*. Введите и подтвердите пароль, а затем щелкните **Далее**. Этот пароль вы примените при работе со следующим разделом, чтобы включить защищенный протокол LDAP для управляемого домена.
 
-    При экспорте с помощью командлета PowerShell [Export-PfxCertificate](https://docs.microsoft.com/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps) необходимо передать флаг *-CryptoAlgorithmOption* с TripleDES_SHA1.
+    При экспорте с помощью командлета PowerShell [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) необходимо передать флаг *-CryptoAlgorithmOption* с TripleDES_SHA1.
 
     ![Снимок экрана: шифрование пароля](./media/tutorial-configure-ldaps/encrypt.png)
 

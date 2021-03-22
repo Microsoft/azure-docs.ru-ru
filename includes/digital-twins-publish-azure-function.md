@@ -5,12 +5,12 @@ ms.service: digital-twins
 ms.topic: include
 ms.date: 1/21/2021
 ms.author: baanders
-ms.openlocfilehash: 59506b1d1d3fbbc5a532c597d46dc92ee3c2e98e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9f8ca9ab6dc184abb8d9dcd25ebe87cbd7761722
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750614"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102630279"
 ---
 Чтобы опубликовать проект в приложении-функции в Azure, щелкните правой кнопкой мыши проект в *Обозревателе решений* и выберите элемент **Опубликовать**.
 
@@ -57,6 +57,4 @@ ms.locfileid: "101750614"
 >
 > Следуйте инструкциям на экране, чтобы выполнить обновление до последней версии среды выполнения Функций Azure. Эта проблема может возникать, если вы используете более раннюю версию Visual Studio.
 
-Ваше приложение-функция теперь опубликовано в Azure. 
-
-Чтобы ваше приложение-функция могло получить доступ к Azure Digital Twins, оно должно иметь управляемое системой удостоверение и разрешения на доступ к вашему экземпляру Azure Digital Twins. Вы настроите их далее.
+Ваше приложение-функция теперь опубликовано в Azure.

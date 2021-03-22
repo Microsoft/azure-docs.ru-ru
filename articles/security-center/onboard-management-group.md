@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/10/2020
 ms.author: memildin
-ms.openlocfilehash: 31472b0a0eedee03d5cfcb6ff47a97033a8c78e0
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.openlocfilehash: 9db276425d510316c41126f8e942a1e2a362ea35
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98796071"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102101296"
 ---
 # <a name="enable-security-center-on-all-subscriptions-in-a-management-group"></a>Включение всех подписок в группе управления в Центр безопасности
 
@@ -60,7 +60,7 @@ ms.locfileid: "98796071"
     Поставленное определение определяет *несколько* из приведенных ниже параметров ценообразования как соответствующие. Это означает, что подписка, для которой задано значение "стандартный" или "бесплатный", будет соответствовать требованиям.
 
     > [!TIP]
-    > Если включен план Azure Defender, тогда в настройках обозначается категория "Стандартный". Если план выключен — "Бесплатный". [Узнайте больше про планы Azure Defender](security-center-pricing.md).
+    > Если включен план Azure Defender, в определении политики указан параметр "Стандартный". Если план выключен — "Бесплатный". Дополнительные сведения о различиях между этими планами см. в статье [Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender](security-center-pricing.md). 
 
     ```
     "existenceCondition": {
@@ -98,4 +98,4 @@ ms.locfileid: "98796071"
 Теперь, когда вы подключили целую группу управления, включите расширенную защиту Azure Defender. 
 
 > [!div class="nextstepaction"]
-> [Включение Azure Defender](security-center-pricing.md#enable-azure-defender)
+> [Включение Azure Defender](enable-azure-defender.md)

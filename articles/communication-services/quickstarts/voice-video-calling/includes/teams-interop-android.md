@@ -3,15 +3,15 @@ title: Краткое руководство. Присоединение к ко
 description: В этом учебнике описывается, как присоединиться к конференции Teams с помощью клиентской библиотеки для вызовов Служб коммуникации Azure для Android.
 author: chpalm
 ms.author: mikben
-ms.date: 02/18/2021
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: be68b8336861891c6704702379892460fd3b7400
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 82e64af5cec8641abacf5afa323fc38382a124c4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101660079"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "103488019"
 ---
 В этом кратком руководстве описывается, как присоединиться к конференции Teams с помощью клиентской библиотеки для вызовов Служб коммуникации Azure для Android.
 
