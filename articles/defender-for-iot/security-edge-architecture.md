@@ -1,24 +1,14 @@
 ---
 title: Защитник для защитника IoT — IoT-Micro-Agent для IoT Edge
 description: Узнайте об архитектуре и возможностях защитника Azure для защитника IoT — IoT-Micro-Agent для IoT Edge.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: mlottner
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 09/09/2020
-ms.author: mlottner
-ms.openlocfilehash: 4b7377f74e24660945555c112fed4d77d2c5ddcc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 81eb8816e1bcf74a9e27e34d14465102599c7d5d
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103495952"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104782662"
 ---
 # <a name="azure-defender-for-iot-edge-defender-iot-micro-agent"></a>Защитник Azure для IoT Edge защитника — IoT-Micro-Agent
 

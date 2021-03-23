@@ -7,12 +7,12 @@ ms.author: sujie
 ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 09/10/2020
-ms.openlocfilehash: f62b4c354ffa90bf1a03651fccf8780074344e46
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: dbd6a1a0c8643adc4918cc15e214e903dfb1ccb6
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103466428"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775941"
 ---
 # <a name="use-azure-devops-to-create-a-cicd-pipeline-for-a-stream-analytics-job"></a>Создание конвейера CI/CD для Stream Analytics задания с помощью Azure DevOps
 
@@ -20,13 +20,13 @@ ms.locfileid: "103466428"
 
 ## <a name="commit-your-stream-analytics-project"></a>Фиксация проекта Stream Analytics
 
-Прежде чем начать, Зафиксируйте все Stream Analytics проекты как исходные файлы в репозитории [Azure DevOps](/azure/devops/user-guide/source-control) . Вы можете ссылаться на этот [Пример репозитория](https://dev.azure.com/wenyzou/azure-streamanalytics-cicd-demo) и [Stream Analytics исходный код проекта](https://dev.azure.com/wenyzou/_git/azure-streamanalytics-cicd-demo?path=%2FmyASAProject) в Azure pipelines.
+Прежде чем начать, Зафиксируйте все Stream Analytics проекты как исходные файлы в репозитории [Azure DevOps](/azure/devops/user-guide/source-control) . Вы можете ссылаться на этот [Пример репозитория](https://dev.azure.com/ASA-CICD-sample/azure-streamanalytics-cicd-demo) и [Stream Analytics исходный код проекта](https://dev.azure.com/ASA-CICD-sample/_git/azure-streamanalytics-cicd-demo) в Azure pipelines.
 
 В действиях, описанных в этой статье, используется проект Stream Analytics Visual Studio Code. Если вы используете проект Visual Studio, выполните действия, описанные в разделе [Автоматизация сборок, тестов и развертываний задания Azure Stream Analytics с помощью средств CI/CD](cicd-tools.md).
 
 ## <a name="create-a-build-pipeline"></a>Создание конвейера сборки
 
-В этом разделе вы узнаете, как создать конвейер сборки. Вы можете ссылаться на этот пример [автоматического создания и тестирования конвейера](https://dev.azure.com/wenyzou/_git/azure-streamanalytics-cicd-demo?path=%2FmyASAProject) в Azure DevOps.
+В этом разделе вы узнаете, как создать конвейер сборки. Вы можете ссылаться на этот пример [автоматического создания и тестирования конвейера](https://dev.azure.com/ASA-CICD-sample/azure-streamanalytics-cicd-demo/_build) в Azure DevOps.
 
 1. Откройте веб-браузер и перейдите к своему проекту в Azure DevOps.  
 
@@ -100,7 +100,7 @@ ms.locfileid: "103466428"
 
    |Имя переменной|Значение|
    |-|-|
-   |тестпас|Проверить|
+   |тестпас|Тест|
 
    :::image type="content" source="media/set-up-cicd-pipeline/pipeline-variables-test.png" alt-text="Добавить переменные конвейера":::
 
@@ -155,7 +155,7 @@ ms.locfileid: "103466428"
 
 ## <a name="release-with-azure-pipelines"></a>Выпуск с Azure Pipelines
 
-В этом разделе вы узнаете, как создать конвейер выпуска. Вы можете ссылаться на этот пример [конвейера выпуска](https://dev.azure.com/wenyzou/azure-streamanalytics-cicd-demo/_release?_a=releases&view=mine&definitionId=2&preserve-view=true) в Azure DevOps.
+В этом разделе вы узнаете, как создать конвейер выпуска. Вы можете ссылаться на этот пример [конвейера выпуска](https://dev.azure.com/ASA-CICD-sample/azure-streamanalytics-cicd-demo/_release?_a=releases&view=mine&definitionId=2) в Azure DevOps.
 
 Откройте веб-браузер и перейдите к Azure Stream Analytics Visual Studio Code проекта.
 
@@ -213,7 +213,7 @@ ms.locfileid: "103466428"
 
 :::image type="content" source="media/set-up-cicd-pipeline/create-release.png" alt-text="Создание выпуска с помощью Azure Pipelines":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Непрерывная интеграция и непрерывное развертывание для Azure Stream Analytics](cicd-overview.md)
 * [Автоматизация сборки, тестирования и развертывания задания Azure Stream Analytics с помощью средств CI/CD](cicd-tools.md)

@@ -4,7 +4,7 @@ description: Узнайте, как подключить и установить
 author: sukhans
 manager: sukhans
 ms.author: terrylan
-ms.date: 04/24/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.service: security
 services: azure
@@ -12,14 +12,17 @@ ms.assetid: 521180dc-2cc9-43f1-ae87-2701de7ca6b8
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.openlocfilehash: 30d6061e15b8eb17c1450500d9e8c141a83a3e08
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: c827dc81c1ef1ab03dd6c9178a609b512e59ef15
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102553924"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801220"
 ---
 # <a name="onboarding-and-installing"></a>Подключение и установка
+
+> [!Note]
+> Начиная с 1 марта 2022, расширение Microsoft Security Code Analysis (МСКА) будет снято с учета. Существующие клиенты МСКА будут хранить доступ к МСКА до 1 марта 2022. Дополнительные параметры в Azure DevOps см. в разделе [средства анализа исходного кода OWASP](https://owasp.org/www-community/Source_Code_Analysis_Tools) . Для заказчиков, планирующих переход на GitHub, вы можете узнать о [повышенной безопасности GitHub](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security).
 
 Предварительные требования для начала работы с анализом кода безопасности Майкрософт:
 
@@ -63,7 +66,7 @@ ms.locfileid: "102553924"
 1. Выберите **Общий**.
 1. Выберите расширение "анализ кода безопасности Microsoft" и нажмите кнопку **установить**.
 1. В раскрывающемся списке выберите организацию Azure DevOps для установки расширения.
-1. Нажмите кнопку **Установить**. После завершения установки можно приступить к использованию расширения.
+1. Выберите пункт **Установить**. После завершения установки можно приступить к использованию расширения.
 
 >[!NOTE]
 > Даже если у вас нет доступа для установки расширения, продолжайте процедуру установки. Вы можете запросить доступ у администратора организации Azure DevOps в процессе установки.
@@ -92,7 +95,7 @@ ms.locfileid: "102553924"
 > - Некоторые задачи сборки Azure DevOps не поддерживаются при выполнении через конвейер выпуска. В частности, Azure DevOps не поддерживает задачи, которые публикуют артефакты из конвейера выпуска.
 > - Список стандартных переменных в Azure DevOps Team Build, которые можно указать в качестве параметров, см. в статье [переменные сборки DevOps Azure](/azure/devops/pipelines/build/variables?tabs=batch).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о настройке задач сборки см. в нашем [руководству по настройке](security-code-analysis-customize.md) или [YAML](yaml-configuration.md).
 

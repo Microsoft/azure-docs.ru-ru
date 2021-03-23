@@ -4,7 +4,7 @@ description: Узнайте о расширении анализа кода бе
 author: sukhans
 manager: sukhans
 ms.author: terrylan
-ms.date: 07/31/2019
+ms.date: 03/22/2021
 ms.topic: article
 ms.service: security
 services: azure
@@ -12,14 +12,18 @@ ms.assetid: 521180dc-2cc9-43f1-ae87-2701de7ca6b8
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.openlocfilehash: b851e52141cf93aba4aab9b2768658f0aac4660f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3bff42b9b82104909c79b75c7b1de51c9ddb6e0d
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98879921"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801321"
 ---
 # <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
+
+> [!Note]
+> Начиная с 1 марта 2022, расширение Microsoft Security Code Analysis (МСКА) будет снято с учета. Существующие клиенты МСКА будут хранить доступ к МСКА до 1 марта 2022. Дополнительные параметры в Azure DevOps см. в разделе [средства анализа исходного кода OWASP](https://owasp.org/www-community/Source_Code_Analysis_Tools) . Для заказчиков, планирующих переход на GitHub, вы можете узнать о [повышенной безопасности GitHub](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security).
+
 Есть вопросы? Дополнительные сведения см. в следующих часто задаваемых вопросах.
 
 ## <a name="general-faq"></a>Общие вопросы и ответы
@@ -158,7 +162,7 @@ ms.locfileid: "98879921"
 
 Следующие ресурсы помогут безопасно управлять секретами и получать доступ к конфиденциальным сведениям из приложений.
 
- - [Azure Key Vault](../../key-vault/index.yml);
+ - [Azure Key Vault](../../key-vault/index.yml)
  - [Azure Active Directory (Azure AD)](../../azure-sql/database/authentication-aad-overview.md)
  - [Управляемое удостоверение службы Azure AD (MSI)](https://azure.microsoft.com/blog/keep-credentials-out-of-code-introducing-azure-ad-managed-service-identity/)
  - [Управляемые удостоверения для ресурсов Azure](../../active-directory/managed-identities-azure-resources/overview.md)
@@ -222,7 +226,7 @@ ms.locfileid: "98879921"
 
 Задаче сборки Roslyn Analyzers необходимо запросить Azure DevOps для журнала MSBuild из задачи сборки MSBuild. Если задача анализатора запускается сразу после задачи MSBuild, журнал еще не будет доступен. Поместите другие задачи между задачей MSBuild и задачей Roslyn Analyzers. К примерам других задач относятся Бинским и сканер защиты от вредоносных программ.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Если вам нужна дополнительная помощь, поддержка анализа кода безопасности Майкрософт доступна с понедельника по пятницу с 9:00 до 5:00 по тихоокеанскому времени.
 

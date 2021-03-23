@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/09/2021
 ms.author: tamram
 ms.subservice: common
-ms.openlocfilehash: 9d80c0b8d4d913322c47d1ad278d6dbc033d2409
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 79b88ad58a2eb95a48a140b3b98d606af495cb94
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102620153"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799791"
 ---
 # <a name="apply-an-azure-resource-manager-lock-to-a-storage-account"></a>Применение блокировки Azure Resource Manager к учетной записи хранения
 
@@ -25,8 +25,8 @@ ms.locfileid: "102620153"
 
 Дополнительные сведения о блокировках Azure Resource Manager см. [в разделе Блокировка ресурсов для предотвращения изменений](../../azure-resource-manager/management/lock-resources.md).
 
-> [!IMPORTANT]
-> При блокировке учетной записи хранения данные в этой учетной записи не защищаются от обновления или удаления.
+> [!CAUTION]
+> Блокировка учетной записи хранения не защищает контейнеры или большие двоичные объекты в этой учетной записи от удаления или перезаписи. Дополнительные сведения о защите данных больших двоичных объектов см. в разделе [Общие сведения о защите данных](../blobs/data-protection-overview.md).
 
 ## <a name="configure-an-azure-resource-manager-lock"></a>Настройка блокировки Azure Resource Manager
 
@@ -81,6 +81,7 @@ az lock create \
 
 Данные в службе "файлы Azure" или "Служба таблиц" могут стать недоступными для клиентов, которые ранее обращались к ней с ключами учетной записи. Рекомендуется применять блокировку **только для чтения** к учетной записи хранения, а затем перемещать рабочие нагрузки службы файлов и таблиц Azure в учетную запись хранения, которая не заблокирована с блокировкой **ReadOnly** .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-[Блокировка ресурсов для предотвращения изменений](../../azure-resource-manager/management/lock-resources.md)
+- [Общие сведения о защите данных](../blobs/data-protection-overview.md)
+- [Блокировка ресурсов для предотвращения изменений](../../azure-resource-manager/management/lock-resources.md)

@@ -9,12 +9,12 @@ ms.service: cognitive-services
 ms.subservice: language-understanding
 ms.topic: reference
 ms.date: 07/20/2020
-ms.openlocfilehash: 7a4654b8f389ad18010bb4ad211103f2816a18ee
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: cb3c74a2176ee7fcac53afb5185e8c62e66f4dfb
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91542008"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798805"
 ---
 # <a name="entities-per-culture-in-your-luis-model"></a>Сущности для языков и региональных параметров в модели LUIS
 
@@ -40,7 +40,7 @@ ms.locfileid: "91542008"
 |Корейский|[ko-KR](#korean-entity-support)||
 |Португальский|[pt-BR (Бразилия)](#portuguese-brazil-entity-support)||
 |Испанский|[es-ES (Испания)](#spanish-spain-entity-support), [es-MX (Мексика)](#spanish-mexico-entity-support)||
-|Турецкий|[турецкий](#turkish-entity-support)|Нет готовых сущностей, поддерживаемых в турецком языке|
+|Турецкий|[турецкий](#turkish-entity-support)||
 
 ## <a name="prediction-endpoint-runtime"></a>Среда выполнения прогнозирующих точек
 
@@ -268,6 +268,8 @@ ms.locfileid: "91542008"
 [Температура](luis-reference-prebuilt-temperature.md):<br>Фаренгейта<br>Кельвина<br>Ранкина<br>Делиля<br>Цельсия   |    V2, V3   |
 [URL-адрес](luis-reference-prebuilt-url.md)   |    V2, V3   |
 
+KeyPhrase недоступна во всех подкатегориях португальского языка и региональных параметров (Бразилия) — ```pt-BR```.
+
 ## <a name="spanish-spain-entity-support"></a>Поддержка сущностей для испанского языка (Испания)
 
 Поддерживаются следующие сущности:
@@ -314,34 +316,25 @@ ms.locfileid: "91542008"
 
 См. примечания об [устаревших предварительно созданных сущностях](luis-reference-prebuilt-deprecated.md).
 
-KeyPhrase недоступна во всех подкатегориях португальского языка и региональных параметров (Бразилия) — ```pt-BR```.
-
 ## <a name="turkish-entity-support"></a>Поддержка сущностей для турецкого языка
 
-**В турецком языке не поддерживаются предварительно созданные сущности.**
-
-<!--
-
-| Prebuilt entity | tr-tr |
+| Предварительно созданная сущность | tr-tr |
 | --------------- | :---: |
-[Age](luis-reference-prebuilt-age.md):<br>year<br>month<br>week<br>day   |    -   |
-[Currency (money)](luis-reference-prebuilt-currency.md):<br>dollar<br>fractional unit (ex: penny)  |    -   |
-[DatetimeV2](luis-reference-prebuilt-datetimev2.md):<br>date<br>daterange<br>time<br>timerange   |    -   |
-[Dimension](luis-reference-prebuilt-dimension.md):<br>volume<br>area<br>weight<br>information (ex: bit/byte)<br>length (ex: meter)<br>speed (ex: mile per hour)  |    -   |
-[Email](luis-reference-prebuilt-email.md)   |    -   |
-[GeographyV2](luis-reference-prebuilt-geographyV2.md)   |    -   |
-[KeyPhrase](luis-reference-prebuilt-keyphrase.md)   |    -   |
-[Number](luis-reference-prebuilt-number.md)   |    -   |
-[Ordinal](luis-reference-prebuilt-ordinal.md)   |    -   |
+[Возраст](luis-reference-prebuilt-age.md):<br>year<br>month<br>week<br>day   |    -   |
+[Currency (денежная единица)](luis-reference-prebuilt-currency.md):<br>доллар<br>дробная единица (например, пенни)  |    -   |
+[DatetimeV2](luis-reference-prebuilt-datetimev2.md):<br>Дата<br>daterange<br>time<br>timerange   |    -   |
+[Измерение](luis-reference-prebuilt-dimension.md):<br>том<br>площадь<br>вес<br>информация (например, бит/байт)<br>длина (например, метр)<br>скорость (например, миль в час)  |    -   |
+[Электронная почта](luis-reference-prebuilt-email.md)   |    -   |
+[кэйфрасе](luis-reference-prebuilt-keyphrase.md)   |    -   |
+[Число](luis-reference-prebuilt-number.md)   |    -   |
+[Порядковый номер](luis-reference-prebuilt-ordinal.md)   |    -   |
 [Percentage](luis-reference-prebuilt-percentage.md)   |    -   |
-[PersonName](luis-reference-prebuilt-person.md)   |    -   |
-[Phonenumber](luis-reference-prebuilt-phonenumber.md)   |    -   |
-[Temperature](luis-reference-prebuilt-temperature.md):<br>fahrenheit<br>kelvin<br>rankine<br>delisle<br>celsius   |    -   |
-[URL](luis-reference-prebuilt-url.md)   |    -   |
+[PhoneNumber](luis-reference-prebuilt-phonenumber.md)   |    -   |
+[Температура](luis-reference-prebuilt-temperature.md):<br>Фаренгейта<br>Кельвина<br>Ранкина<br>Делиля<br>Цельсия   |    -   |
+[URL-адрес](luis-reference-prebuilt-url.md)   |    -   |
 
+<!---
 See notes on [Deprecated prebuilt entities](luis-reference-prebuilt-deprecated.md)
-
-
 KeyPhrase is not available.
 -->
 
@@ -350,6 +343,6 @@ KeyPhrase is not available.
 
 GeographyV2 и PersonName не включаются в проект Recognizers-Text. Чтобы устранить проблемы с этими предварительно созданными сущностями, отправьте [запрос в службу поддержки](../../azure-portal/supportability/how-to-create-azure-support-request.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о сущностях [number](luis-reference-prebuilt-number.md), [datetimeV2](luis-reference-prebuilt-datetimev2.md) и [currency](luis-reference-prebuilt-currency.md).

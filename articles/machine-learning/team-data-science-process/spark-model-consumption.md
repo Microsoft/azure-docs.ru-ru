@@ -11,12 +11,12 @@ ms.topic: article
 ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
-ms.openlocfilehash: bb38a76de41885b6f39a1c6dce7c44bcb52a4d60
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 659f61734001163ada6fd26caabe2fb007892f61
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "86027449"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104774496"
 ---
 # <a name="operationalize-spark-built-machine-learning-models"></a>Ввод моделей машинного обучения, созданных с помощью Spark, в эксплуатацию
 
@@ -266,7 +266,8 @@ print "Time taken to execute above cell: " + str(timedelta) + " seconds";
 ### <a name="create-rdd-objects-with-feature-arrays-for-input-into-models"></a>Создание объектов устойчивого распределенного набора данных с массивами признаков для получения входных данных для моделей
 С помощью кода в этом разделе можно индексировать категориальные текстовые данные в объекты устойчивого распределенного набора данных, а затем выполнить их прямое кодирование. После этого данные можно использовать для обучения и проверки модели логистической регрессии MLlib и моделей с применением дерева. Проиндексированные данные хранятся в объектах [устойчивого распределенного набора данных](https://spark.apache.org/docs/latest/api/java/org/apache/spark/rdd/RDD.html). RDD являются базовой абстракцией в Spark. Объект устойчивого распределенного набора данных — это неизменяемая, секционированная коллекция элементов, которыми можно одновременно управлять с помощью Spark.
 
-Здесь также содержится код, в котором показано, как масштабировать данные с помощью функции MLlib `StandardScalar` для использования в моделях линейной регрессии с применением метода стохастического градиента. Этот алгоритм широко используется для обучения других моделей машинного обучения. [StandardScaler](https://spark.apache.org/docs/latest/api/python/pyspark.mllib.html#pyspark.mllib.feature.StandardScaler) используется для масштабирования признаков до единичной дисперсии. Масштабирование признаков (или нормализация данных) гарантирует, что для признаков с широко распределенными значениями не задано высокое значение веса в целевой функции. 
+Здесь также содержится код, в котором показано, как масштабировать данные с помощью функции MLlib `StandardScalar` для использования в моделях линейной регрессии с применением метода стохастического градиента. Этот алгоритм широко используется для обучения других моделей машинного обучения. [StandardScaler](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.tree.RandomForest.html#pyspark.mllib.tree.RandomForest
+) используется для масштабирования признаков до единичной дисперсии. Масштабирование признаков (или нормализация данных) гарантирует, что для признаков с широко распределенными значениями не задано высокое значение веса в целевой функции. 
 
 ```python
 # CREATE RDD OBJECTS WITH FEATURE ARRAYS FOR INPUT INTO MODELS

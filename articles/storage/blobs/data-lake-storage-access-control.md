@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: normesta
 ms.reviewer: jamesbak
-ms.openlocfilehash: 4d75e60d0e497dcdd2aa121f8da73f11a7e2af5b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 50c6b4f309eb78acee0cfa59d1b540adba65cab2
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103015222"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104774819"
 ---
 # <a name="access-control-lists-acls-in-azure-data-lake-storage-gen2"></a>Списки управления доступом (ACL) в Azure Data Lake Storage 2-го поколения
 
@@ -40,6 +40,7 @@ Azure Data Lake Storage 2-го поколения реализует модел�
 |.NET |[Использование .NET для установки списков управления доступом в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-dotnet.md)|
 |Java|[Использование Java для задания списков управления доступом в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-java.md)|
 |Python|[Использование Python для установки списков управления доступом в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-python.md)|
+|JavaScript (Node.js)|[Используйте пакет SDK для JavaScript в Node.js для задания списков управления доступом в Azure Data Lake Storage 2-го поколения](data-lake-storage-directory-file-acl-javascript.md)|
 |PowerShell|[Использование PowerShell для задания списков управления доступом в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-powershell.md)|
 |Azure CLI|[Использование Azure CLI для задания списков управления доступом в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-cli.md)|
 |REST API |[Путь — обновление](/rest/api/storageservices/datalakestoragegen2/path/update)|
@@ -206,7 +207,7 @@ def access_check( user, desired_perms, path ) :
 |--|--|--|
 |владельца|`rwx`|`r-w`|
 |группы владельцев|`r-x`|`r--`|
-|Другое|`---`|`---`|
+|Другие|`---`|`---`|
 
 Файлы не получают бит X, так как он не имеет значения для файлов в системе, предусматривающей только хранение. 
 
@@ -257,7 +258,7 @@ def set_default_acls_for_new_child(parent, child):
         child_acls.add( new_entry )
 ```
 
-## <a name="faq"></a>Вопросы и ответы
+## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
 
 ### <a name="do-i-have-to-enable-support-for-acls"></a>Нужно ли мне активировать поддержку ACL?
 

@@ -6,15 +6,15 @@ ms.service: virtual-machines
 ms.subservice: spot
 ms.workload: infrastructure-services
 ms.topic: how-to
-ms.date: 06/26/2020
+ms.date: 03/22/2021
 ms.author: cynthn
 ms.reviewer: jagaveer
-ms.openlocfilehash: 0a7be682f921efdfae486e8f6545758964a941ae
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 90ad35757834c14abdffb017ff31b3296074ca24
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102098865"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802443"
 ---
 # <a name="deploy-azure-spot-virtual-machines-using-the-azure-cli"></a>Развертывание виртуальных машин с использованием точки Azure с помощью Azure CLI
 
@@ -33,7 +33,7 @@ ms.locfileid: "102098865"
 
 Затем войдите в Azure с помощью команды [az login](/cli/azure/reference-index#az-login).
 
-```azurecli
+```azurecli-interactive
 az login
 ```
 
@@ -41,7 +41,7 @@ az login
 
 В этом примере показано, как развернуть виртуальную машину Linux в Azure, которая не будет исключена на основе цены. Политика вытеснения устанавливается таким образом, чтобы освободить виртуальную машину, чтобы ее можно было перезапустить позднее. Если вы хотите удалить виртуальную машину и базовый диск при удалении виртуальной машины, задайте для параметра значение `--eviction-policy` `Delete` .
 
-```azurecli
+```azurecli-interactive
 az group create -n mySpotGroup -l eastus
 az vm create \
     --resource-group mySpotGroup \
@@ -58,7 +58,7 @@ az vm create \
 
 После создания виртуальной машины можно выполнить запрос, чтобы увидеть максимальную стоимость выставления счетов для всех виртуальных машин в группе ресурсов.
 
-```azurecli
+```azurecli-interactive
 az vm list \
    -g mySpotGroup \
    --query '[].{Name:name, MaxPrice:billingProfile.maxPrice}' \
@@ -67,21 +67,55 @@ az vm list \
 
 ## <a name="simulate-an-eviction"></a>Имитация вытеснения
 
-Вы можете [имитировать вытеснение](/rest/api/compute/virtualmachines/simulateeviction) виртуальной машины в машинном коде Azure, чтобы проверить, насколько хорошо ваше приложение будет ответил внезапного вытеснения. 
+Вы можете имитировать вытеснение виртуальной машины в машинном коде Azure с помощью функции RESTFUL, PowerShell или интерфейса командной строки, чтобы проверить, насколько хорошо ваше приложение будет реагировать на внезапное вытеснение.
 
-Замените следующие сведения: 
+В большинстве случаев необходимо использовать REST API [виртуальные машины — имитировать вытеснение](/rest/api/compute/virtualmachines/simulateeviction) , чтобы помочь в автоматическом тестировании приложений. Для остальных компонентов `Response Code: 204` означает, что имитация вытеснения прошла успешно. Имитацию вытеснений можно объединить с [запланированной службой событий](scheduled-events.md), чтобы автоматизировать реакцию приложения на то, что виртуальная машина будет удалена.
 
-- `subscriptionId`
-- `resourceGroupName`
-- `vmName`
+Чтобы просмотреть запланированные события в действии, просмотрите [пятницу Azure с помощью запланированные события Azure, чтобы подготовиться к обслуживанию виртуальных машин](https://channel9.msdn.com/Shows/Azure-Friday/Using-Azure-Scheduled-Events-to-Prepare-for-VM-Maintenance).
 
 
-```rest
-POST https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}/simulateEviction?api-version=2020-06-01
+### <a name="quick-test"></a>Быстрый тест
+
+Для быстрой проверки того, как будет работать имитация вытеснения, давайте рассмотрим запрос запланированной службы событий, чтобы увидеть, как она выглядит при имитации вытеснения с помощью Azure CLI.
+
+Служба запланированных событий включена для службы при первом выполнении запроса событий. 
+
+Выполните удаленную работу в виртуальной машине, а затем откройте командную строку. 
+
+В командной строке на виртуальной машине введите:
+
 ```
-`Response Code: 204` означает, что имитация вытеснения прошла успешно. 
+curl -H Metadata:true http://169.254.169.254/metadata/scheduledevents?api-version=2019-08-01
+```
 
-**Дальнейшие действия**
+Первый ответ может занять до 2 минут. Теперь они должны отображать выходные данные практически сразу же.
+
+На компьютере с установленным Azure CLI (например, на локальном компьютере) имитируйте вытеснение с помощью команды [AZ VM имитиру-вытеснение](https://docs.microsoft.com/cli/azure/vm#az_vm_simulate_eviction). Замените имя группы ресурсов и имя виртуальной машины собственными. 
+
+```azurecli-interactive
+az vm simulate-eviction --resource-group mySpotRG --name mySpot
+```
+
+Выходные данные ответа будут иметься, `Status: Succeeded` Если запрос был успешно выполнен.
+
+Быстро вернитесь к удаленному подключению к своей виртуальной машине и повторите запрос к конечной точке Запланированные события. Повторите следующую команду, пока не получите выходные данные, содержащие дополнительные сведения:
+
+```
+curl -H Metadata:true http://169.254.169.254/metadata/scheduledevents?api-version=2019-08-01
+```
+
+Когда служба запланированных событий получает уведомление о вытеснении, вы получите ответ, похожий на следующий:
+
+```output
+{"DocumentIncarnation":1,"Events":[{"EventId":"A123BC45-1234-5678-AB90-ABCDEF123456","EventStatus":"Scheduled","EventType":"Preempt","ResourceType":"VirtualMachine","Resources":["myspotvm"],"NotBefore":"Tue, 16 Mar 2021 00:58:46 GMT","Description":"","EventSource":"Platform"}]}
+```
+
+Видно, что `"EventType":"Preempt"` ресурс является ресурсом виртуальной машины `"Resources":["myspotvm"]` . 
+
+Вы также можете увидеть, когда виртуальная машина будет удалена, установив флажок `"NotBefore"` — Виртуальная машина не будет удалена до истечения заданного времени, чтобы ваше окно приложения было корректно закрыто.
+
+
+## <a name="next-steps"></a>Следующие шаги
 
 Вы также можете создать виртуальную машину Azure с помощью [Azure PowerShell](../windows/spot-powershell.md), [портала](../spot-portal.md)или [шаблона](spot-template.md).
 

@@ -2,14 +2,14 @@
 title: Выбор размеров и образов виртуальных машин для пулов
 description: Выбор из доступных размеров виртуальных машин и версий ОС для вычисленийных узлов в пулах пакетной службы Azure
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 11/24/2020
 ms.custom: seodec18
-ms.openlocfilehash: 42b8743fac6a6c64e98271490f0bfc4671fa7698
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f108e1347ef6c3c7df45c4b3d807a754f4867097
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102455201"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104800488"
 ---
 # <a name="choose-a-vm-size-and-image-for-compute-nodes-in-an-azure-batch-pool"></a>Выбор размера и образа виртуальной машины для расчетных узлов в пуле пакетной службы Azure
 
@@ -35,11 +35,13 @@ ms.locfileid: "102455201"
 | DC | Не поддерживается |
 | Dv2, DSv2 | Все размеры |
 | Dv3, Dsv3 | Все размеры |
-| Dav4, Dasv4 | Все размеры |
+| Dav4 | Все размеры |
+| Dasv4 | Все размеры |
 | Ddv4, Ddsv4 |  Все размеры |
 | Dv4, Dsv4 | Не поддерживается |
 | Ev3, Esv3 | Все размеры, кроме E64is_v3 |
-| Eav4, Easv4 | Все размеры |
+| Eav4 | Все размеры |
+| Easv4 | Все размеры |
 | Edv4, Edsv4 |  Все размеры |
 | Ev4, Esv4 | Не поддерживается |
 | F, Fs | Все размеры |
@@ -56,7 +58,7 @@ ms.locfileid: "102455201"
 | NC | Все размеры |
 | NCv2 | Все размеры |
 | NCv3 | Все размеры |
-| NCasT4_v3 | Все размеры |
+| NCasT4_v3 | Нет. Пока недоступно |
 | ND | Все размеры |
 | NDv2 | Нет. Пока недоступно |
 | NV | Все размеры |
@@ -100,6 +102,8 @@ ms.locfileid: "102455201"
 - Пакетная служба REST API: [Вывод списка поддерживаемых образов](/rest/api/batchservice/account/listsupportedimages)
 - PowerShell: [Get-азбатчсуппортедимаже](/powershell/module/az.batch/get-azbatchsupportedimage)
 - Azure CLI: [AZ Batch Pool Supported-Images](/cli/azure/batch/pool/supported-images)
+
+Настоятельно рекомендуется избегать образов с ожидающими окончаниями срока службы поддержки пакетов (конца строки). Эти даты можно обнаружить с помощью [ `ListSupportedImages` API](https://docs.microsoft.com/rest/api/batchservice/account/listsupportedimages), [PowerShell](https://docs.microsoft.com/powershell/module/az.batch/get-azbatchsupportedimage)или [Azure CLI](https://docs.microsoft.com/cli/azure/batch/pool/supported-images). Дополнительные сведения о выборе образа виртуальной машины пула пакетной службы см. в разделе рекомендации по [пакетной](best-practices.md) службе
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

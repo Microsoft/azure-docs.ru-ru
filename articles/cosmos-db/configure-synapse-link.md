@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 11/30/2020
 ms.author: rosouz
 ms.custom: references_regions
-ms.openlocfilehash: 64b9b6690eafe8f28fdf9711cd0534f4d7d96908
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7accf705ee64be5ba416be9df2f92693b07e8a8c
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104584590"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799655"
 ---
 # <a name="configure-and-use-azure-synapse-link-for-azure-cosmos-db"></a>Настройка и использование Azure Synapse Link для Azure Cosmos DB
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "104584590"
 > [!NOTE]
 > В настоящее время аналитическое хранилище можно включить для **новых** контейнеров (как в новых, так и в существующих учетных записях). Данные из контейнеров существующего можно перенести в новые контейнеры с помощью [Azure Cosmos DB средств миграции.](cosmosdb-migrationchoices.md)
 
-### <a name="azure-portal"></a>Портал Azure
+### <a name="azure-portal"></a>портал Azure;
 
 1. Войдите в [портал Azure](https://portal.azure.com/) или [Обозреватель Azure Cosmos DB](https://cosmos.azure.com/).
 
@@ -276,7 +276,7 @@ container.replace(containerProperties).block();
 
 [Шаблон Azure Resource Manager](./manage-with-templates.md#azure-cosmos-account-with-analytical-store) создает Azure Cosmos DB учетную запись с поддержкой синапсе Link для API SQL. Этот шаблон позволяет создать учетную запись API (SQL) Core в одном регионе с настроенным контейнером, для которого включена поддержка аналитического срока жизни и возможность выбрать для пропускной способности настройку вручную или с помощью автомасштабирования. Чтобы развернуть этот шаблон, щелкните **Развертывание в Azure** на странице файла сведений.
 
-## <a name="getting-started-with-azure-synpase-link---samples"></a><a id="cosmosdb-synapse-link-samples"></a> Начало работы с Azure Synpase Link — примеры
+## <a name="getting-started-with-azure-synapse-link---samples"></a><a id="cosmosdb-synapse-link-samples"></a> Приступая к работе с Azure синапсе Link-Samples
 
 Примеры для начала работы с ссылкой на Azure синапсе можно найти на сайте [GitHub](https://aka.ms/cosmosdb-synapselink-samples). Эти презентации представляют комплексные решения с помощью Интернета вещей и сценариев розничной торговли. Вы также можете найти образцы, соответствующие Azure Cosmos DB API для MongoDB в том же репозитории в папке [MongoDB](https://github.com/Azure-Samples/Synapse/tree/main/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples) . 
 

@@ -1,18 +1,14 @@
 ---
 title: Работа с Azure Defender для Интернета вещей с помощью API
 description: Используйте внешний REST API для доступа к данным, обнаруженным датчиками и консолями управления, и выполнения действий с этими данными.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/14/2020
 ms.topic: reference
-ms.service: azure
-ms.openlocfilehash: 73c5d1f31d9e0651ee710593aa4e1b68fe972560
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d509f2674a61af1d0ab03892186526b1cb109eee
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100523249"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104778837"
 ---
 # <a name="defender-for-iot-sensor-and-management-console-apis"></a>API-интерфейсы для датчиков IoT и консоли управления
 
@@ -108,7 +104,7 @@ ms.locfileid: "100523249"
 
 #### <a name="device-fields"></a>Поля устройства
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **id** | Числовой | Нет | - |
 | **ipAddresses** | Массив JSON | Да | IP-адреса (могут быть более одного адреса в случае адресов Интернета или устройства с двумя сетевыми картами) |
@@ -125,14 +121,14 @@ ms.locfileid: "100523249"
 
 #### <a name="protocol-fields"></a>Поля протокола
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **имя**; | Строка | Нет |  |
 | **Адреса** | Массив JSON | Да | Основные или числовые значения |
 
 #### <a name="firmware-fields"></a>Поля встроенного по
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **подключение** | Строка | Нет | Н/д или фактическое значение |
 | **model** | Строка | Нет | Н/д или фактическое значение |
@@ -279,7 +275,7 @@ ms.locfileid: "100523249"
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Devices | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https: <span> //127 <span> . 0.0.1/API/V1/Devices? authorizationed = true |
 
@@ -333,7 +329,7 @@ ms.locfileid: "100523249"
 
 #### <a name="fields"></a>Поля
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **фирстдевицеид** | Числовой | Нет | - |
 | **секонддевицеид** | Числовой | Нет | - |
@@ -344,7 +340,7 @@ ms.locfileid: "100523249"
 
 #### <a name="protocol-field"></a>Поле протокола
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **name** | Строка | Нет | - |
 | **меню** | Массив строк | Нет | - |
@@ -452,7 +448,7 @@ ms.locfileid: "100523249"
 #### <a name="curl-command"></a>Команда cURL
 
 > [!div class="mx-tdBreakAll"]
-> | Type | Программные интерфейсы | Пример |
+> | Тип | Программные интерфейсы | Пример |
 > |--|--|--|
 > | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Devices/Connections | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/V1/Devices/Connections |
 > | GET | фигурная-k-H "Авторизация: <AUTH_TOKEN>" "https://<IP_ADDRESS>/API/V1/Devices/ <deviceId> /коннектионс? ластактивеинминутес =&дисковередбефоре =&дисковередафтер =" | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" "https:/ <span> /127.0.0.1/API/V1/Devices/2/Connections? ластактивеинминутес = 20&дисковередбефоре = 1594550986000&дисковередафтер = 1594550986000" |
@@ -497,7 +493,7 @@ ms.locfileid: "100523249"
 
 #### <a name="fields"></a>Поля
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **квеид** | Строка | Нет | - |
 | **IP** | Строка | Нет | IP-адрес |
@@ -567,7 +563,7 @@ ms.locfileid: "100523249"
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Devices/cves | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/V1/Devices/cves |
 | GET | фигурная-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Devices/ <deviceIpAddress> /квес? Top = | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/V1/Devices/10.10.10.15/cves? Top = 50 |
@@ -616,7 +612,7 @@ ms.locfileid: "100523249"
 
 #### <a name="alert-fields"></a>Поля предупреждений
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **Идентификатор** | Числовой | Нет | - |
 | **time** | Числовой | Нет | Эпоха (UTC) |
@@ -630,7 +626,7 @@ ms.locfileid: "100523249"
 
 #### <a name="additional-information-fields"></a>Поля дополнительных сведений
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **description** | Строка | Нет | - |
 | **об** | Массив JSON | нет | Строка |
@@ -701,7 +697,7 @@ ms.locfileid: "100523249"
 #### <a name="curl-command"></a>Команда cURL
 
 > [!div class="mx-tdBreakAll"]
-> | Type | Программные интерфейсы | Пример |
+> | Тип | Программные интерфейсы | Пример |
 > |--|--|--|
 > | GET | фигурная-k-H "Авторизация: <AUTH_TOKEN>" "https://<IP_ADDRESS>/API/V1/Alerts? State =&Фромтиме =&Тотиме =&Type =" | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" "https:/ <span> /127.0.0.1/API/V1/Alerts? State = необработанные&фромтиме = 1594550986000&тотиме = 1594550986001&Type = отсоединений" |
 
@@ -739,7 +735,7 @@ ms.locfileid: "100523249"
 
 #### <a name="event-fields"></a>Поля событий
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|--|
 | **timestamp** | Числовой | Нет | Эпоха (UTC) |
 | **title** | Строка | Нет | - |
@@ -822,7 +818,7 @@ ms.locfileid: "100523249"
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурная-k-H "Авторизация: <AUTH_TOKEN>" "https://<IP_ADDRESS>/API/V1/Events? Минутестимефраме =&Type =" | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" "https:/ <span> /127.0.0.1/API/V1/Events? минутестимефраме = 20&Type = DEVICE_CONNECTION_CREATED" |
 
@@ -852,7 +848,7 @@ ms.locfileid: "100523249"
 
 #### <a name="device-fields"></a>Поля устройства
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **name** | Строка | Нет | - |
 | **ipAddresses** | Массив JSON | Нет | - |
@@ -866,7 +862,7 @@ ms.locfileid: "100523249"
 
 #### <a name="operating-system-fields"></a>Поля операционной системы
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **имя**; | Строка | Да | - |
 | **Тип** | Строка | Да | - |
@@ -875,7 +871,7 @@ ms.locfileid: "100523249"
 
 #### <a name="vulnerabilities-fields"></a>Поля уязвимостей
  
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **антивирусные программы** | Массив JSON | Да | Имена антивирусных программ |
 | **плаинтекстпассвордс** | Массив JSON | Да | Объекты пароля |
@@ -891,7 +887,7 @@ ms.locfileid: "100523249"
 
 #### <a name="password-fields"></a>Поля пароля
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **password** | Строка | Нет | - |
 | **protocol** | Строка | Нет | - |
@@ -899,7 +895,7 @@ ms.locfileid: "100523249"
 
 #### <a name="remote-access-fields"></a>Поля удаленного доступа
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **port** | Числовой | Нет | - |
 | **перемещения** | Строка | Нет | TCP или UDP |
@@ -908,7 +904,7 @@ ms.locfileid: "100523249"
 
 #### <a name="open-port-fields"></a>Открыть поля порта
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **port** | Числовой | Нет | - |
 | **перемещения** | Строка | Нет | TCP или UDP |
@@ -917,7 +913,7 @@ ms.locfileid: "100523249"
 
 #### <a name="cve-fields"></a>CVE Fields
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **Идентификатор** | Строка | Нет | - |
 | **понять** | Числовой | Нет | Double |
@@ -1076,7 +1072,7 @@ ms.locfileid: "100523249"
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Reports/Vulnerabilities/Devices | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/V1/Reports/Vulnerabilities/Devices |
 
@@ -1323,7 +1319,7 @@ ms.locfileid: "100523249"
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Reports/Vulnerabilities/Security | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/V1/Reports/Vulnerabilities/Security |
 
@@ -1520,7 +1516,7 @@ ms.locfileid: "100523249"
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/API/V1/Reports/Vulnerabilities/Operational | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/V1/Reports/Vulnerabilities/Operational |
 
@@ -1587,7 +1583,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурный-k-H "Авторизация: <AUTH_TOKEN>" https://<IP_ADDRESS>/АПИ/екстернал/аусентикатион/валидатион | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/API/External/Authentication/Validation |
 
@@ -1661,7 +1657,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | POST | фигурная-k-d "{" имя_пользователя ":" <USER_NAME> "," пароль ":" <CURRENT_PASSWORD> "," new_password ":" <NEW_PASSWORD> "}"-H "Content-Type: Application/JSON" https://<IP_ADDRESS>/АПИ/екстернал/аусентикатион/set_password | фигурная-k-d "{" имя_пользователя ":" myUser "," Password ":" 1234@abcd "," new_password ":" abcd@1234 "}"-H "тип содержимого: Application/JSON" https:/ <span> /127.0.0.1/API/External/Authentication/set_password |
 
@@ -1742,7 +1738,7 @@ response:
 #### <a name="curl-command"></a>Команда cURL
 
 > [!div class="mx-tdBreakAll"]
-> | Type | Программные интерфейсы | Пример |
+> | Тип | Программные интерфейсы | Пример |
 > |--|--|--|
 > | POST | фигурная скобка-d "{" admin_username ":" <ADMIN_USERNAME> "," admin_password ":" <ADMIN_PASSWORD> "," Username ":" <user_name> "," new_password ":" <NEW_PASSWORD> "}"-H "тип содержимого: Application/JSON" https://<IP_ADDRESS>/АПИ/екстернал/аусентикатион/set_password_by_admin | фигурная-k-d "{" admin_user ":" adminUser "," admin_password ":" 1234@abcd "," Username ":" myuser "," new_password ":" abcd@1234 "}"-H "тип содержимого: Application/JSON" https:/ <span> /127.0.0.1/API/External/Authentication/set_password_by_admin |
 
@@ -1825,7 +1821,7 @@ response:
 
 #### <a name="device-fields"></a>Поля устройства
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **sensorId** | Числовой | Нет | - |
 | **КодЗоны** | Числовой | Да | - |
@@ -1844,14 +1840,14 @@ response:
 
 #### <a name="protocol-fields"></a>Поля протокола
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | name | Строка | Нет | - |
 | Адреса | Массив JSON | Да | Основные или числовые значения |
 
 #### <a name="firmware-fields"></a>Поля встроенного по
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **подключение** | Строка | Нет | Н/д или фактическое значение |
 | **model** | Строка | Нет | Н/д или фактическое значение |
@@ -2004,7 +2000,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | GET | фигурная-k-H "Авторизация: <AUTH_TOKEN>" "https://<>IP_ADDRESS>/External/v1/Devices? идентификатор сайта =&КодЗоны =&Сенсорид =&авторизованный =" | фигурная-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" "https:/ <span> /127.0.0.1/External/v1/Devices? код сайта = 1&КодЗоны = 2&сенсорид = 5&авторизованный = true" |
 
@@ -2046,7 +2042,7 @@ response:
 
 #### <a name="alert-fields"></a>Поля предупреждений
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **Идентификатор** | Числовой | Нет | - |
 | **time** | Числовой | Нет | Эпоха (UTC) |
@@ -2060,7 +2056,7 @@ response:
 
 #### <a name="additional-information-fields"></a>Поля дополнительных сведений
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **description** | Строка | Нет | - |
 | **об** | Массив JSON | нет | Строка |
@@ -2166,7 +2162,7 @@ response:
 #### <a name="curl-command"></a>Команда cURL
 
 > [!div class="mx-tdBreakAll"]
-> | Type | Программные интерфейсы | Пример |
+> | Тип | Программные интерфейсы | Пример |
 > |--|--|--|
 > | GET | Парный-k-H "Авторизация: <AUTH_TOKEN>" "https://<>IP_ADDRESS>/External/v1/Alerts? State =&КодЗоны =&Фромтиме =&Тотиме =&идентификатор сайта =&датчика =" | изогнутый-k-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" "https:/ <span> /127.0.0.1/External/v1/Alerts? State = необработанные&КодЗоны = 1&фромтиме = 0&тотиме = 1594551777000&ИД сайта = 1&датчика = 1" |
 
@@ -2208,7 +2204,7 @@ response:
 
 #### <a name="action-fields"></a>Поля действий
 
-| Имя | Type | Допускает значения NULL | Список значений |
+| Имя | Тип | Допускает значения NULL | Список значений |
 |--|--|--|--|
 | **action** | Строка | Нет | Handle или Хандлеандлеарн |
 
@@ -2232,7 +2228,7 @@ response:
 #### <a name="response-fields"></a>Поля ответа
 
 
-| Имя | Type | Допускает значения NULL | Описание |
+| Имя | Тип | Допускает значения NULL | Описание |
 |--|--|--|--|
 | **содержимое/ошибка** | Строка | Нет | Если запрос выполнен успешно, отображается свойство Content. В противном случае отображается свойство Error. |
 
@@ -2269,7 +2265,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | PUT | фигурная-k-X размещение-d "{" Action ":" <ACTION> "} '-H" Авторизация: <AUTH_TOKEN> "https://<IP_ADDRESS>/External/v1/Alerts/<UUID> | фигурная-k-X размещение-d "{" Action ":" Handle "} '-H" Авторизация: 1234b734a9244d54ab8d40aedddcabcd "https:/ <span> /127.0.0.1/External/v1/Alerts/1-1594550943000 |
 
@@ -2414,7 +2410,7 @@ response:
 
 #### <a name="response-structure"></a>Структура ответа
 
-| Имя | Type | Комментировать | Допускает значения NULL |
+| Имя | Тип | Комментарий | Допускает значения NULL |
 |--|--|--|--|
 | **dateTime** | Строка | Пример: "2012-04-23T18:25:43.511 Z" | Нет |
 | **тиккетид** | Строка | Пример: "9a5fe99c-D914-4bda-9332-307384fe40bf" | Нет |
@@ -2427,7 +2423,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | POST | фигурная-k-X после-d "{" Тиккетид ":" <TICKET_ID> ", TTL": <TIME_TO_LIVE>, "Engines": [<ENGINE1, ENGINE2... Енгинен>], "Сенсоридс": [<SENSOR_ID1, SENSOR_ID2... SENSOR_IDn>], "подсети": [<SUBNET1, подсети 2... Субнетн>]} '-H ' авторизация: <AUTH_TOKEN> "https:/ <span> /127.0.0.1/External/v1/maintenanceWindow | фигурная-k-X после-d "{" Тиккетид ":" a5fe99c-D914-4bda-9332-307384fe40bf "," TTL ":" 20 "," Engines ": [" АНОМАЛИя "]," Сенсоридс ": [" 5 "," 3 "]," подсети ": [" 10.0.0.3 "]}"-H "Авторизация: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/External/v1/maintenanceWindow |
 | PUT | фигурная-k-X размещение-d "{" Тиккетид ":" <TICKET_ID> ", TTL": "<TIME_TO_LIVE>"} "-H" Authorization: <AUTH_TOKEN> "https:/ <span> /127.0.0.1/External/v1/maintenanceWindow | -k-X размещение-d "{" Тиккетид ":" a5fe99c-D914-4bda-9332-307384fe40bf "," TTL ":" 20 "}"-H "Authorization: 1234b734a9244d54ab8d40aedddcabcd" https:/ <span> /127.0.0.1/External/v1/maintenanceWindow |
@@ -2493,7 +2489,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | POST | фигурная-k-d "{" имя_пользователя ":" <USER_NAME> "," Password ":" пароль "}" ' https://<IP_ADDRESS>/екстернал/аусентикатион/валидатион " | фигурная-k-d "{" имя_пользователя ":" myUser "," Password ":" 1234@abcd "}" "https:/ <span> /127.0.0.1/External/Authentication/Validation" |
 
@@ -2567,7 +2563,7 @@ response:
 
 #### <a name="curl-command"></a>Команда cURL
 
-| Type | Программные интерфейсы | Пример |
+| Тип | Программные интерфейсы | Пример |
 |--|--|--|
 | POST | фигурная-k-d "{" имя_пользователя ":" <USER_NAME> "," пароль ":" <CURRENT_PASSWORD> "," new_password ":" <NEW_PASSWORD> "}"-H "Content-Type: Application/JSON" https://<IP_ADDRESS>/екстернал/аусентикатион/set_password | фигурная-k-d "{" имя_пользователя ":" myUser "," Password ":" 1234@abcd "," new_password ":" abcd@1234 "}"-H "тип содержимого: Application/JSON" https:/ <span> /127.0.0.1/External/Authentication/set_password |
 
@@ -2648,11 +2644,11 @@ response:
 #### <a name="curl-command"></a>Команда cURL
 
 > [!div class="mx-tdBreakAll"]
-> | Type | Программные интерфейсы | Пример |
+> | Тип | Программные интерфейсы | Пример |
 > |--|--|--|
 > | POST | фигурная скобка-d "{" admin_username ":" <ADMIN_USERNAME> "," admin_password ":" <ADMIN_PASSWORD> "," Username ":" <user_name> "," new_password ":" <NEW_PASSWORD> "}"-H "тип содержимого: Application/JSON" https://<IP_ADDRESS>/екстернал/аусентикатион/set_password_by_admin | фигурная-k-d "{" admin_user ":" adminUser "," admin_password ":" 1234@abcd "," Username ":" myuser "," new_password ":" abcd@1234 "}"-H "тип содержимого: Application/JSON" https:/ <span> /127.0.0.1/External/Authentication/set_password_by_admin |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Изучение обнаруженных датчиков в данных инвентаризации устройств](how-to-investigate-sensor-detections-in-a-device-inventory.md)
 

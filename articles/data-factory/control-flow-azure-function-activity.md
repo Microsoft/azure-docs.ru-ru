@@ -3,16 +3,16 @@ title: Действие функции Azure в фабрике данных Azur
 description: Узнайте, как с помощью действия функции Azure запускать функцию Azure в конвейере Фабрики данных
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/09/2019
-ms.openlocfilehash: 615fb1b9f5a9d87a8d69778930b7359823e1ec39
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 13f00907737a99bc5dcd8c21d660ce83aa681908
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101738027"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104783801"
 ---
 # <a name="azure-function-activity-in-azure-data-factory"></a>Действие функции Azure в Фабрике данных Azure
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "101738027"
 | **Свойство**  | **Описание** | **Допустимые значения** | **Обязательно** |
 | --- | --- | --- | --- |
 | name  | Имя действия в конвейере.  | Строка | да |
-| тип  | Тип действия – "AzureFunctionActivity" | Строка | да |
+| type  | Тип действия – "AzureFunctionActivity" | Строка | да |
 | linked service | Связанная служба функции Azure для соответствующего приложения-функции Azure  | Ссылка на связанную службу | да |
 | имя функции  | Имя функции, которую вызывает это действие в приложении-функции Azure | Строка | да |
 | method  | Метод REST API для вызова функции | Поддерживаемые строковые типы: "GET", "POST", "постановка"   | да |
@@ -65,6 +65,6 @@ ms.locfileid: "101738027"
 
 Образец фабрики данных, который использует функцию Azure для извлечения содержимого tar-файла, можно найти [здесь](https://github.com/Azure/Azure-DataFactory/tree/master/SamplesV2/UntarAzureFilesWithAzureFunction).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о действиях в Фабрике данных см. в статье [Конвейеры и действия в фабрике данных Azure](concepts-pipelines-activities.md).

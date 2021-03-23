@@ -1,25 +1,15 @@
 ---
 title: Локальная конфигурация агента безопасности IoT для защитника (C#)
 description: Узнайте больше о защитнике для службы безопасности IoT, локальном файле конфигурации агента безопасности для C#.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: elazark
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.custom: devx-track-csharp
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 10/08/2020
-ms.author: v-ekrieg
-ms.openlocfilehash: 14237894a38725ee07deca3b5f46cbe0ecfce4cd
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 42cf7f129005f057a9d51ce2e09db735e825f476
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493226"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784787"
 ---
 # <a name="understanding-the-local-configuration-file-c-agent"></a>Основные сведения о локальном файле конфигурации (агент C#)
 
@@ -89,7 +79,7 @@ ms.locfileid: "103493226"
 | счедулеринтервал | Строка TimeSpan | Внутренний интервал планировщика. |
 | гатевайхостнаме | строка | Имя узла центра Интернета вещей Azure. Обычно <My-Hub>. azure-devices.net |
 | filePath | String — путь к файлу | Путь к файлу, содержащему секрет проверки подлинности.|
-| тип | "SymmetricKey", "SelfSignedCertificate" | Секрет пользователя для проверки подлинности. Выберите *SymmetricKey* , если секрет пользователя является симметричным ключом, выберите *самозаверяющий сертификат* , если секрет является самозаверяющим сертификатом. |
+| type | "SymmetricKey", "SelfSignedCertificate" | Секрет пользователя для проверки подлинности. Выберите *SymmetricKey* , если секрет пользователя является симметричным ключом, выберите *самозаверяющий сертификат* , если секрет является самозаверяющим сертификатом. |
 | удостоверение | "DPS", "Module", "Device" | Удостоверение проверки подлинности — DP, если проверка подлинности выполняется с помощью DPS, модуля, если проверка подлинности выполняется с помощью учетных данных модуля, или устройства, если проверка подлинности выполняется
 | цертификателокатионкинд |  "Локальный_файл", "Store" | Локальный_файл если сертификат хранится в файле, сохраните его, если сертификат находится в хранилище сертификатов. |
 | idScope | строка | Область ИДЕНТИФИКАТОРов DPS |

@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/15/2021
-ms.openlocfilehash: d01f80a803c5b0f9da067dd23ab8cdb4cc591a79
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b9c5db14bec87b30e51d39b1430ecc1f3cbef855
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104610121"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798295"
 ---
 # <a name="monitor-your-sql-deployments-with-sql-insights-preview"></a>Мониторинг развертываний SQL с помощью SQL Insights (Предварительная версия)
 SQL Insights отслеживает производительность и работоспособность развертываний SQL.  Это помогает обеспечить предсказуемую производительность и доступность важных рабочих нагрузок, построенных на базе серверной части SQL, выявляя узкие места и проблемы производительности. SQL Insights хранит свои данные в [журналах Azure Monitor](../logs/data-platform-logs.md), что позволяет ему обеспечивать эффективную агрегирование и фильтрацию, а также анализировать тенденции данных с течением времени. Эти данные можно просмотреть Azure Monitor в представлениях, поставляемых в рамках этого предложения, и вы можете углубиться непосредственно в данные журнала для выполнения запросов и анализа тенденций.
@@ -35,7 +35,7 @@ SQL Insights поддерживает следующие версии SQL Server
 SQL Insights поддерживает SQL Server, выполняющихся в следующих средах:
 
 - База данных SQL Azure
-- Управляемый экземпляр SQL Azure
+- Управляемый экземпляр SQL Azure
 - Виртуальные машины SQL Azure
 - Виртуальные машины Azure
 
@@ -59,7 +59,7 @@ SQL Insights не поддерживает или не ограничивает 
 
 
 ## <a name="data-collected-by-sql-insights"></a>Данные, собираемые SQL Insights
-В общедоступной предварительной версии SQL Insights поддерживает только удаленный метод мониторинга. Агент Telegraf не установлен на SQL Server. Он использует подключаемый модуль ввода SQL Server для Telegraf и использует три группы запросов для различных типов мониторов SQL: база данных SQL Azure, Управляемый экземпляр SQL Azure, SQL Server, работающий на виртуальной машине Azure. 
+В общедоступной предварительной версии SQL Insights поддерживает только удаленный метод мониторинга. [Агент Telegraf](https://www.influxdata.com/time-series-platform/telegraf/) не установлен на SQL Server. Он использует [подключаемый модуль ввода SQL Server для Telegraf](https://www.influxdata.com/integration/microsoft-sql-server/) и использует три группы запросов для различных типов мониторов SQL: база данных SQL azure, управляемый экземпляр SQL Azure, SQL Server, работающий на виртуальной машине Azure. 
 
 В следующих таблицах представлены следующие сводные данные.
 
@@ -119,7 +119,7 @@ SQL Insights не поддерживает или не ограничивает 
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Подробные инструкции по включению SQL Insights см. в разделе [Включение SQL Insights](sql-insights-enable.md) .
 Ответы [на часто задаваемые вопросы](../faq.md#sql-insights-preview) о SQL Insights см. здесь.

@@ -8,20 +8,30 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 12/17/2020
+ms.date: 03/22/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: a42cb97d123d0943dab02bf1f70fcf306d6bcd96
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 21da8f79772d9648836bedec89cb5d7014486dc6
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97629138"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798365"
 ---
 # <a name="configure-password-change-using-custom-policies-in-azure-active-directory-b2c"></a>Настройка смены пароля в настраиваемых политиках в Azure Active Directory B2C
 
 [!INCLUDE [active-directory-b2c-choose-user-flow-or-custom-policy](../../includes/active-directory-b2c-choose-user-flow-or-custom-policy.md)]
+
+В Azure Active Directory B2C (Azure AD B2C) можно разрешить пользователям, вошедшим в локальную учетную запись, изменить пароль, не подтверждая их подлинность при проверке по электронной почте. Поток смены пароля включает следующие шаги.
+
+1. Пользователь входит в локальную учетную запись. Если сеанс все еще активен, Azure AD B2C выполняет авторизацию пользователя и переходит к следующему шагу.
+1. Пользователь проверяет **старый пароль**, а затем создает и подтверждает **новый пароль**.
+
+![Поток смены пароля](./media/add-password-change-policy/password-change-flow.png)  
+
+> [!TIP]
+> Поток смены пароля позволяет пользователям изменять свой пароль только в том случае, если пользователь знает пароль и хочет изменить его. Рекомендуется также включить [самостоятельный сброс пароля](add-password-reset-policy.md) для поддержки случаев, когда пользователь забыл свой пароль.
 
 ::: zone pivot="b2c-user-flow"
 
@@ -31,16 +41,7 @@ ms.locfileid: "97629138"
 
 ::: zone pivot="b2c-custom-policy"
 
-[!INCLUDE [active-directory-b2c-advanced-audience-warning](../../includes/active-directory-b2c-advanced-audience-warning.md)]
-
-В Azure Active Directory B2C (Azure AD B2C) можно разрешить пользователям, вошедшим в локальную учетную запись, изменить пароль, не подтверждая их подлинность по проверке по электронной почте. Поток смены пароля включает следующие шаги.
-
-1. Войдите с помощью локальной учетной записи. Если сеанс все еще активен, Azure AD B2C авторизует пользователя и переходит к следующему шагу.
-1. Пользователи должны проверить **старый пароль**, создать и подтвердить **новый пароль**.
-
-![Поток смены пароля](./media/add-password-change-policy/password-change-flow.png)
-
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Выполните шаги, описанные в статье [Начало работы с настраиваемыми политиками в Azure Active Directory B2C](custom-policy-get-started.md).
 * Если вы еще не сделали этого, [зарегистрируйте веб-приложение в Azure Active Directory B2C](tutorial-register-applications.md).
@@ -161,7 +162,7 @@ ms.locfileid: "97629138"
 2. В разделе **Приложение** выберите зарегистрированное ранее приложение. Чтобы маркер отображался, **URL-адрес ответа** должен быть следующим: `https://jwt.ms`.
 3. Щелкните **Запустить сейчас**. Войдите, используя созданную ранее учетную запись. Теперь вы сможете изменять пароль.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Найдите пример политики на сайте [GitHub](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/tree/master/scenarios/password-change).
 - Узнайте, как можно [настроить сложность пароля в Azure AD B2C](password-complexity.md).

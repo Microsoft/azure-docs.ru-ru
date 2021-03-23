@@ -4,12 +4,12 @@ description: Использование реестра контейнеров Az
 ms.topic: article
 ms.date: 02/07/2021
 ms.custom: ''
-ms.openlocfilehash: f8467cd3108ae4faea9ecb4c9d9ae339f476c311
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 520518a275e0a9d191ae770e560a0e6e8278eae2
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100012339"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802460"
 ---
 # <a name="multi-architecture-images-in-your-azure-container-registry"></a>Образы с несколькими архитектурами в реестре контейнеров Azure
 
@@ -163,9 +163,9 @@ steps:
 - cmd: docker manifest inspect {{.Run.Registry}}/multi-arch-samples/myimage:latest
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-* Используйте [Azure pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines.md) для создания образов контейнеров для различных архитектур.
+* Используйте [Azure pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) для создания образов контейнеров для различных архитектур.
 * Дополнительные сведения о создании образов с несколькими платформами с помощью экспериментального подключаемого модуля DOCKER [буилдкс](https://docs.docker.com/buildx/working-with-buildx/) .
 
 <!-- LINKS - external -->

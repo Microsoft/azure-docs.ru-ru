@@ -3,16 +3,16 @@ title: 'Преобразование данных: обработка & прео
 description: Узнайте, как преобразовать данные или обработать данные в фабрике данных Azure с помощью Hadoop, Машинное обучение Azure Studio (классическая модель) или Azure Data Lake Analytics.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: c9818bfd2a9519cd14d34ecc810179d66aa57e52
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 422acbaab097182b800e3bad35b0121284db9cd8
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100363990"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104782934"
 ---
 # <a name="transform-data-in-azure-data-factory-version-1"></a>Преобразование данных в фабрике данных Azure версии 1
 > [!div class="op_single_selector"]
@@ -79,7 +79,7 @@ ms.locfileid: "100363990"
 
 В статье [Связанные службы вычислений](data-factory-compute-linked-services.md) описывается, какие службы вычислений поддерживает фабрика данных. 
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 Фабрика данных Azure поддерживает приведенные ниже действия преобразования данных и вычислительных сред для них. Действия преобразования можно добавлять в конвейеры как по отдельности, так и в цепочке с другим действием.
 
 | Действия по преобразованию данных | Вычислительная среда |

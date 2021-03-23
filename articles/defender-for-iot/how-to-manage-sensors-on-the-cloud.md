@@ -1,18 +1,14 @@
 ---
 title: Подключение и управление датчиками и подписками в защитнике для портала IoT
 description: Узнайте, как подключать и просматривать датчики, а также управлять ими в защитнике для портала IoT.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 2/18/2021
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: 63b3b450e289b40aa9acbfb0d5170e8eb57f9e58
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5c529a5679e8b3d4879b003fa3d168e911f9b518
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101733267"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781829"
 ---
 # <a name="onboard-and-manage-sensors-and-subscriptions-in-the-defender-for-iot-portal"></a>Подключение и управление датчиками и подписками в защитнике для портала IoT
 

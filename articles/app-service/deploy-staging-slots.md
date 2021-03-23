@@ -5,12 +5,12 @@ ms.assetid: e224fc4f-800d-469a-8d6a-72bcde612450
 ms.topic: article
 ms.date: 04/30/2020
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 1c4cff264b63506432daf350be3557bae7234584
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c779e95b790d91b801d5d35b4702191f5e7986d5
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "100594248"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802970"
 ---
 # <a name="set-up-staging-environments-in-azure-app-service"></a>Настройка промежуточных сред в службе приложений Azure
 <a name="Overview"></a>
@@ -214,6 +214,7 @@ ms.locfileid: "100594248"
 
 - `WEBSITE_SWAP_WARMUP_PING_PATH`— Путь для подготовки сайта к проверке связи. Добавьте этот параметр приложения, указав настраиваемый путь, который начинается с косой черты в качестве значения. Например, `/statuscheck`. Значение по умолчанию — `/`. 
 - `WEBSITE_SWAP_WARMUP_PING_STATUSES`: Допустимые коды HTTP-ответов для операции прогрева. Добавьте этот параметр приложения со списком кодов HTTP, разделенным запятыми. Пример: `200,202` . Если возвращенный код состояния отсутствует в списке, операции прогрева и замены останавливаются. По умолчанию все коды ответов являются допустимыми.
+- `WEBSITE_WARMUP_PATH`— Относительный путь на сайте, который должен проверяться с помощью команды ping при перезапуске сайта (не только во время переключения слотов). Примеры значений: `/statuscheck` или корневой путь, `/` .
 
 > [!NOTE]
 > `<applicationInitialization>`Элемент конфигурации является частью каждого запуска приложения, в то время как два параметра, применяемые для прогрева, применяются только к переключениям слотов.
@@ -426,5 +427,5 @@ Remove-AzResource -ResourceGroupName [resource group name] -ResourceType Microso
 
 - После переключения слотов приложение может столкнуться с неожиданным перезапуском. Это обусловлено тем, что после переключения конфигурация привязки имени узла не синхронизирована, что сама по себе не приводит к перезапуску. Однако некоторые базовые события хранилища (такие как отказоустойчивость тома хранилища) могут обнаружить эти расхождения и принудительно перезапустить все рабочие процессы. Чтобы избежать перезагрузки этих типов, задайте [ `WEBSITE_ADD_SITENAME_BINDINGS_IN_APPHOST_CONFIG=1` параметр приложения](https://github.com/projectkudu/kudu/wiki/Configurable-settings#disable-the-generation-of-bindings-in-applicationhostconfig) во *всех слотах*. Однако этот параметр приложения *не* работает с приложениями Windows Communication Foundation (WCF).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 [Ограничения статических IP-адресов в службе приложений Azure](app-service-ip-restrictions.md)

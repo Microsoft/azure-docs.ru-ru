@@ -1,20 +1,19 @@
 ---
-title: Просмотр оповещений
+title: Фильтрация оповещений и управление ими на странице "оповещения"
 description: Просмотр предупреждений в соответствии с различными категориями и использование функций поиска для поиска интересующих вас оповещений.
 author: shhazam-ms
 manager: rkarlin
 ms.author: shhazam
-ms.date: 12/02/2020
+ms.date: 3/22/2021
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: 6dc2a9683a48f20816adc8ce0ee0c1e8dc57b287
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 391d1872124c7332bdaa6008a244490b47df4bf7
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100523674"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781591"
 ---
-# <a name="view-alerts"></a>Просмотр оповещений
+# <a name="filter-and-manage-alerts-from-the-alerts-page"></a>Фильтрация оповещений и управление ими на странице "оповещения" 
 
 В этой статье описывается, как просматривать предупреждения, активируемые датчиком, и управлять ими с помощью средств оповещения.
 
@@ -120,7 +119,7 @@ ms.locfileid: "100523674"
 
 - Выберите устройство для отображения на карте устройств.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Управление событиями оповещений](how-to-manage-the-alert-event.md)
 

@@ -1,19 +1,14 @@
 ---
 title: Сведения об интеграции Пксгрид Cisco ISE
-titleSuffix: Azure Defender for IoT
 description: Подмостить возможности защитника для Интернета вещей с Cisco ISE Пксгрид предоставляет группам безопасности беспрецедентную видимость устройств для экосистемы предприятия.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/28/2020
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: 3f1fb099aa18ebec5a7e2063740556cf806302e7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 00151f2e407c65d024f3bd59bdaa85a08ae677f4
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98558701"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784090"
 ---
 # <a name="about-the-cisco-ise-pxgrid-integration"></a>Сведения об интеграции Пксгрид Cisco ISE
 
@@ -222,6 +217,6 @@ ms.locfileid: "98558701"
 
 - `/var/cyberx/logs/core.log`
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [пересылать сведения о предупреждениях](how-to-forward-alert-information-to-partners.md).

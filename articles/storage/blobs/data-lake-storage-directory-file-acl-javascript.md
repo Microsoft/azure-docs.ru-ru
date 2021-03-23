@@ -1,26 +1,26 @@
 ---
-title: Использование JavaScript для управления данными в Azure Data Lake Storage 2-го поколения
+title: Использование JavaScript (Node.js) для управления данными в Azure Data Lake Storage 2-го поколения
 description: Используйте клиентскую библиотеку службы хранилища Azure Data Lake для JavaScript, чтобы управлять каталогами и файлами в учетных записях хранения с включенным иерархическим пространством имен.
 author: normesta
 ms.service: storage
-ms.date: 02/17/2021
+ms.date: 03/19/2021
 ms.author: normesta
 ms.topic: how-to
 ms.subservice: data-lake-storage-gen2
 ms.reviewer: prishet
 ms.custom: devx-track-js
-ms.openlocfilehash: 8ce5df805ddce6cdb52e4225bb77e2d8dfa9b9b0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 678af3e2fb4111593ece0cc2cdf3811cf0e793a8
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100650173"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104774768"
 ---
-# <a name="use-javascript-to-manage-directories-and-files-in-azure-data-lake-storage-gen2"></a>Использование JavaScript для управления каталогами и файлами в Azure Data Lake Storage 2-го поколения
+# <a name="use-javascript-sdk-in-nodejs-to-manage-directories-and-files-in-azure-data-lake-storage-gen2"></a>Используйте пакет SDK для JavaScript в Node.js для управления каталогами и файлами в Azure Data Lake Storage 2-го поколения
 
-В этой статье показано, как использовать JavaScript для создания каталогов и файлов в учетных записях хранения с иерархическим пространством имен и управления ими.
+В этой статье показано, как использовать Node.js для создания каталогов и файлов в учетных записях хранения с иерархическим пространством имен и управления ими.
 
-Сведения о том, как получить, задать и обновить списки управления доступом (ACL) для каталогов и файлов, см. в разделе [использование JavaScript для управления списками ACL в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-javascript.md).
+Дополнительные сведения о получении, установке и обновлении списков управления доступом (ACL) для каталогов и файлов см. в статье [Использование пакета SDK JavaScript в Node.js для управления списками ACL в Azure Data Lake Storage 2-го поколения](data-lake-storage-acl-javascript.md).
 
 [Пакет (диспетчер пакетов node)](https://www.npmjs.com/package/@azure/storage-file-datalake)  |  [Примеры](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/storage/storage-file-datalake/samples)  |  [Отправить отзыв](https://github.com/Azure/azure-sdk-for-java/issues)
 
@@ -43,7 +43,11 @@ npm install @azure/storage-file-datalake
 Импортируйте `storage-file-datalake` пакет, поместив этот оператор в начало файла кода. 
 
 ```javascript
-const AzureStorageDataLake = require("@azure/storage-file-datalake");
+const {
+AzureStorageDataLake,
+DataLakeServiceClient,
+StorageSharedKeyCredential
+} = require("@azure/storage-file-datalake");
 ```
 
 ## <a name="connect-to-the-account"></a>Подключение к учетной записи 

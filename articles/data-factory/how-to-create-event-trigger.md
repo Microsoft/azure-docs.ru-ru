@@ -4,15 +4,15 @@ description: Узнайте, как создать в Фабрике данны�
 ms.service: data-factory
 author: chez-charlie
 ms.author: chez
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.topic: conceptual
 ms.date: 03/11/2021
-ms.openlocfilehash: b559ce31aff7040a61f6a2f788652ffd192420c4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: deaa414a17240e8cdbdad7f4ba9b3e596b4f191f
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104593804"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104780333"
 ---
 # <a name="create-a-trigger-that-runs-a-pipeline-in-response-to-a-storage-event"></a>Создание триггера, запускающего конвейер в ответ на событие хранилища
 

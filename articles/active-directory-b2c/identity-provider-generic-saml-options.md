@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/15/2021
+ms.date: 03/22/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 43c57950d317de42df666ddd25cbcb2e9a4c9611
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 32f9df410dabf1902e9a7d9aadbf47288bfa90f5
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103488879"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798244"
 ---
 # <a name="configure-saml-identity-provider-options-with-azure-active-directory-b2c"></a>Настройка параметров поставщика удостоверений SAML с помощью Azure Active Directory B2C
 
@@ -85,9 +85,11 @@ Azure Active Directory B2C (Azure AD B2C) поддерживает федера�
 </IDPSSODescriptor>
 ```
 
-Ответы SAML передаются в Azure AD B2C через привязку HTTP POST. Azure AD B2C метаданных политики задает `AssertionConsumerService` привязку к `urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST` .
+### <a name="assertion-consumer-service"></a>Служба-потребитель утверждений
 
-Ниже приведен пример элемента службы утверждения метаданных политики Azure AD B2C.
+Служба-потребитель утверждений (или ACS) — это место, в которое могут отправляться и получаться Azure AD B2C ответы поставщика удостоверений SAML. Ответы SAML передаются в Azure AD B2C через привязку HTTP POST. Расположение ACS указывает на базовую политику проверяющей стороны. Например, если политика *поB2C_1A_signup_signinа*, то ACS является базовой политикой *B2C_1A_signup_signin*, например *B2C_1A_TrustFrameworkBase*.
+
+Ниже приведен пример элемента службы утверждения метаданных политики Azure AD B2C. 
 
 ```xml
 <SPSSODescriptor AuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">

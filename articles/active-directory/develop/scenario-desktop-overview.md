@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 05/18/2020
 ms.author: jmprieur
 ms.custom: aaddev, identityplatformtop40
-ms.openlocfilehash: feedc0065419162237c4f4826fe275a6fd947e53
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ea6ecf456bbcea01bf4c1eef5377d918bf0918fd
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98753733"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798958"
 ---
 # <a name="scenario-desktop-app-that-calls-web-apis"></a>Сценарий: Классическое приложение, которое вызывает веб-API
 
@@ -30,6 +30,7 @@ ms.locfileid: "98753733"
 - [Краткое руководство. Получение маркера безопасности и вызов API Microsoft Graph из классического приложения Windows](./quickstart-v2-windows-desktop.md)
 - [Краткое руководство. Получение маркера и вызов API Microsoft Graph из приложения UWP](./quickstart-v2-uwp.md)
 - [Краткое руководство. Получение маркера и вызов API Microsoft Graph из собственного приложения macOS](./quickstart-v2-ios.md)
+- [Краткое руководство. получение маркера и вызов Microsoft Graph API из Node.js приложения электронного &](./quickstart-v2-nodejs-desktop.md)
 
 ## <a name="overview"></a>Обзор
 
@@ -39,6 +40,7 @@ ms.locfileid: "98753733"
 
   - Если классическое приложение поддерживает графические элементы управления, например если это приложение Windows.Form, приложение WPF или собственное приложение macOS.
   - Если это приложение .NET Core и вы принимаете проверку подлинности с помощью Azure Active Directory (Azure AD) в системном браузере.
+  - Или, если это приложение Node.js электронном приложении, которое выполняется в экземпляре Chromium.
 
 - При размещении в Windows приложения на компьютерах, присоединенных к домену Windows или к Azure AD, могут получать маркер автоматически, используя встроенную проверку подлинности Windows.
 - Наконец, хотя это и не рекомендуется, вы можете использовать имя пользователя и пароль в общедоступных клиентских приложениях. Это пока еще необходимо для некоторых сценариев, например при использовании DevOps. Использование этого потока накладывает ограничения на приложения. Например, оно не сможет обработать вход пользователя, для которого требуется [многофакторная проверка подлинности](../authentication/concept-mfa-howitworks.md) (условный доступ). Кроме того, приложение не сможет использовать механизм единого входа.
@@ -59,6 +61,6 @@ ms.locfileid: "98753733"
 
 [!INCLUDE [recommended-topics](../../../includes/active-directory-develop-scenarios-prerequisites.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Перейдите к следующей статье в этом сценарии — [Регистрация приложения](scenario-desktop-app-registration.md).

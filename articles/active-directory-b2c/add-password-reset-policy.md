@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/22/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 8b3224333a3915b7827242004d1dec0f4695f479
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: f451d08dfbde643d91705f54296e9757a51c9d88
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104581921"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798399"
 ---
 # <a name="set-up-a-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока сброса пароля в Azure Active Directory B2C
 
@@ -35,6 +35,9 @@ ms.locfileid: "104581921"
 ![Поток сброса пароля](./media/add-password-reset-policy/password-reset-flow.png)
 
 Поток сброса пароля применяется к локальным учетным записям в Azure AD B2C, которые используют [адрес электронной почты](identity-provider-local.md#email-sign-in) или [имя пользователя](identity-provider-local.md#username-sign-in) с паролем для входа.
+
+> [!TIP]
+> Процедура самостоятельного сброса пароля позволяет пользователям изменять свой пароль, когда пользователь забыл свой пароль и хочет сбросить его. Рассмотрите возможность настройки [потока смены пароля](add-password-change-policy.md) для поддержки случаев, когда пользователь знает пароль и хочет изменить его.
 
 Распространенная практика после миграции пользователей на Azure AD B2C с случайными паролями заключается в том, чтобы пользователи проверяли свои адреса электронной почты и сбрасывать пароли при первом входе в систему. Также распространена возможность принудительного сброса пароля пользователем после смены пароля администратором. чтобы включить эту функцию, см. раздел [принудительный сброс пароля](force-password-reset.md) .
 
@@ -317,6 +320,6 @@ ms.locfileid: "104581921"
 
 ::: zone-end
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Настройка [принудительного сброса пароля](force-password-reset.md).

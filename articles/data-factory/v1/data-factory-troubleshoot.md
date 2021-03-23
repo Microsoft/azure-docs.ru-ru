@@ -6,14 +6,14 @@ ms.topic: conceptual
 ms.date: 01/10/2018
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 robots: noindex
-ms.openlocfilehash: ed831e5f07eb29110b858dfb16b73f276926424f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 70c1aecd358b52a7b5b62ba7cb8f3badffef2998
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100388249"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779925"
 ---
 # <a name="troubleshoot-data-factory-issues"></a>Устранение неполадок Фабрики данных
 > [!NOTE]
