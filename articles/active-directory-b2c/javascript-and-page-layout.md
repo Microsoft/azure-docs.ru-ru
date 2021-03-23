@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 03/22/2021
 ms.custom: project-no-code, devx-track-js
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 6bb478038d398226db38dc20e49ed7a14e5d5d0a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d234e57f7c11b0d9f2cd212bde93a8b8e478ef41
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99592812"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781370"
 ---
 # <a name="javascript-and-page-layout-versions-in-azure-active-directory-b2c"></a>Версии JavaScript и макета страницы в Azure Active Directory B2C
 
@@ -48,7 +48,7 @@ Azure AD B2C предоставляет набор упакованного со
 
 ::: zone-end
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 
@@ -155,7 +155,7 @@ Azure AD B2C предоставляет набор упакованного со
     - Не используйте JavaScript непосредственно для вызова конечных точек Azure AD B2C.
 - Вы можете внедрить JavaScript или привязать внешние файлы JavaScript. Если вы привязываете внешний файл JavaScript, обязательно используйте абсолютный URL-адрес, а не относительный URL-адрес.
 - Платформы JavaScript:
-    - Azure AD B2C использует конкретную версию jQuery. Не включайте другие версии jQuery. Использование более одной версии на одной и той же странице вызывает проблемы.
+    - Azure AD B2C использует [определенную версию jQuery](page-layout.md#jquery-version). Не включайте другие версии jQuery. Использование более одной версии на одной и той же странице вызывает проблемы.
     - RequireJS не поддерживается.
     - Azure AD B2C не поддерживает большинство платформ JavaScript.
 - Параметры Azure AD B2C можно считывать с помощью вызова объектов `window.SETTINGS`, `window.CONTENT`, таких как текущий язык пользовательского интерфейса. Не изменяйте значения этих объектов.
@@ -239,6 +239,6 @@ function addTermsOfUseLink() {
 
 Замените `termsOfUseUrl` ссылкой на ваше соглашение об условиях использования. Для каталога создайте новый атрибут пользователя с именем **термсофусе** , а затем включите **термсофусе** в качестве атрибута пользователя.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о настройке пользовательского интерфейса приложения в [Azure Active Directory B2C](customize-ui-with-html.md)см. в этой статье.

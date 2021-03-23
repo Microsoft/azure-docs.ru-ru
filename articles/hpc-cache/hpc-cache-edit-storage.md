@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 03/10/2021
 ms.author: v-erkel
-ms.openlocfilehash: 78010ef2d93b23a12fc7f3e988a536b4993b4dd4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 0c505937d4adbe2596e91ed7269676e60ada8253
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103471875"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104772601"
 ---
 # <a name="edit-storage-targets"></a>Изменение целевых расположений хранилищ
 
@@ -76,7 +76,7 @@ $ az hpc-cache storage-target remove --resource-group cache-rg --cache-name doc-
 
 Щелкните имя пути, который необходимо изменить, и создайте новый путь в появившемся окне редактирования.
 
-![Снимок экрана страницы пространства имен после щелчка по пути к пространству имен BLOB-объектов. поля "Изменить" отображаются на панели справа](media/edit-namespace-blob.png)
+![Снимок экрана страницы пространства имен после щелчка по пути к пространству имен BLOB-объектов. поля "Изменить" отображаются на панели справа](media/update-namespace-blob.png)
 
 После внесения изменений нажмите кнопку **ОК** , чтобы обновить целевой объект хранилища, или нажмите кнопку **Отмена** , чтобы отменить изменения.
 
@@ -133,7 +133,7 @@ $ az hpc-cache storage-target remove --resource-group cache-rg --cache-name doc-
 * ``nfs-export`` — Экспорт системы хранения, связываемый с путем, ориентированным на клиента
 * ``target-path`` (необязательно) — подкаталог экспорта (при необходимости).
 
-Например, ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``.
+Пример: ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``
 
 Необходимо указать все три значения для каждого пути в ``--junction`` операторе. Используйте существующие значения для любых значений, которые не нужно изменять.
 
@@ -171,7 +171,7 @@ az hpc-cache nfs-storage-target update --cache-name mycache \
 
 Команда Update почти идентична команде, используемой для добавления целевого объекта хранилища NFS. Дополнительные сведения и примеры см. в статье [Создание целевого объекта хранилища NFS](hpc-cache-add-storage.md#create-an-nfs-storage-target) .
 
-Чтобы изменить модель использования, обновите ``--nfs3-usage-model`` параметр. Например, ``--nfs3-usage-model WRITE_WORKLOAD_15``.
+Чтобы изменить модель использования, обновите ``--nfs3-usage-model`` параметр. Пример: ``--nfs3-usage-model WRITE_WORKLOAD_15``
 
 Также требуются значения имени кэша, имени целевого объекта хранилища и группы ресурсов.
 
@@ -212,7 +212,7 @@ az hpc-cache nfs-storage-target update --cache-name mycache \
 Конфигурация для моделей использования ADLS-NFS идентична выбору модели использования NFS. Ознакомьтесь с инструкциями на портале в разделе [изменение модели использования](#change-the-usage-model) в NFS выше. Дополнительные инструменты для обновления целевых объектов хранилища ADLS-NFS находятся в разработке.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения об этих параметрах см. в статье [Добавление целевых объектов хранилища](hpc-cache-add-storage.md) .
 * Дополнительные советы по использованию виртуальных путей см. [в статье Планирование обобщенного пространства имен](hpc-cache-namespace.md) .

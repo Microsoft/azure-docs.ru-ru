@@ -15,17 +15,17 @@ ms.workload: infrastructure
 ms.date: 12/31/2020
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: d32adab35852cd19933fe3877c2742a21ddc5f1e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 07094e399f153f56746a931a4a100b3c0d38f92f
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101676986"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104772082"
 ---
 # <a name="azure-hana-large-instances-control-through-azure-portal"></a>Управление крупными экземплярами HANA в Azure с помощью портала Azure
 
 >[!NOTE]
->Для версии 4,2 Следуйте инструкциям в разделе [Управление экземплярами BareMetal с помощью портал Azure](../../../baremetal-infrastructure/workloads/sap/baremetal-infrastructure-portal.md) .
+>Для версии 4,2 Следуйте инструкциям в разделе [Управление экземплярами BareMetal с помощью портал Azure](../../../baremetal-infrastructure/connect-baremetal-infrastructure.md) .
 
 В этом документе рассматривается способ представления [крупных экземпляров Hana](./hana-overview-architecture.md) в [портал Azure](https://portal.azure.com) и действия, выполняемые с помощью портал Azure с развернутыми единицами крупных экземпляров Hana. Видимость крупных экземпляров HANA в портал Azure предоставляется через поставщик ресурсов Azure для крупных экземпляров HANA, которые в настоящее время доступны в общедоступной предварительной версии.
 

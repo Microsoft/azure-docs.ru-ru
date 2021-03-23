@@ -3,16 +3,16 @@ title: Действие веб-перехватчика в фабрике дан
 description: Действие веб-перехватчика не позволяет продолжить выполнение конвейера до тех пор, пока не будет выполнена проверка присоединенного набора данных с определенными критериями, указанными пользователем.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: 59aa395db27c26a7c94eebdc0e3b34d7776ee75f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4c3ff5d7139f4167769f78aa858c7d7a693539a3
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104592002"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785943"
 ---
 # <a name="webhook-activity-in-azure-data-factory"></a>Действие веб-перехватчика в фабрике данных Azure
 
@@ -111,7 +111,7 @@ ms.locfileid: "104592002"
 > [!NOTE]
 > Если ваша фабрика данных настроена с репозиторием Git, необходимо сохранить учетные данные в Azure Key Vault, чтобы использовать проверку подлинности "базовый" или "клиент-сертификат". В службе "Фабрика данных Azure" не хранятся пароли в Git.
 
-## <a name="additional-notes"></a>Дополнительные сведения
+## <a name="additional-notes"></a>Дополнительные замечания
 
 Фабрика данных передает дополнительное свойство **каллбаккури** в тексте, отправляемом конечной точке URL-адреса. Фабрика данных ждет, что этот URI будет вызываться до указанного значения времени ожидания. Если URI не вызывается, действие завершается с состоянием «TimedOut».
 
@@ -140,7 +140,7 @@ ms.locfileid: "104592002"
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 См. следующие действия потока управления, поддерживаемые фабрикой данных.
 

@@ -1,29 +1,29 @@
 ---
 title: Двойное шифрование инфраструктуры — портал Azure — база данных Azure для PostgreSQL
 description: Узнайте, как настроить и управлять двойным шифрованием инфраструктуры для базы данных Azure для PostgreSQL.
-author: mksuni
-ms.author: sumuth
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
-ms.date: 06/30/2020
-ms.openlocfilehash: ea486b534ac3e703849ddb3922d7c3a428dd076b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/14/2021
+ms.openlocfilehash: 0b1079a084072556ae79a18a12f6b35f74c92775
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93242234"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771657"
 ---
 # <a name="infrastructure-double-encryption-for-azure-database-for-postgresql"></a>Двойное шифрование инфраструктуры для базы данных Azure для PostgreSQL
 
 Узнайте, как использовать двойное шифрование инфраструктуры для базы данных Azure для PostgreSQL и управлять им.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Подписка Azure и права администратора для нее.
 
 ## <a name="create-an-azure-database-for-postgresql-server-with-infrastructure-double-encryption---portal"></a>Создание базы данных Azure для сервера PostgreSQL с помощью двойного шифрования инфраструктуры — портал
 
-Выполните следующие действия, чтобы создать сервер базы данных Azure для MySQL с двойным шифрованием инфраструктуры из портал Azure.
+Выполните следующие действия, чтобы создать сервер базы данных Azure для PostgreSQL с двойным шифрованием инфраструктуры из портал Azure.
 
 1. Выберите **Создать ресурс** (+) в левом верхнем углу страницы портала.
 
@@ -45,7 +45,7 @@ ms.locfileid: "93242234"
 
 ## <a name="create-an-azure-database-for-postgresql-server-with-infrastructure-double-encryption---cli"></a>Создание базы данных Azure для сервера PostgreSQL с помощью двойного шифрования инфраструктуры — CLI
 
-Выполните следующие действия, чтобы создать сервер базы данных Azure для MySQL с двойным шифрованием инфраструктуры из CLI:
+Выполните следующие действия, чтобы создать сервер базы данных Azure для PostgreSQL с двойным шифрованием инфраструктуры из интерфейса командной строки:
 
 В этом примере создается группа ресурсов с именем `myresourcegroup` в `westus` расположении.
 
