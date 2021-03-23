@@ -6,18 +6,18 @@ ms.service: hdinsight
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.topic: how-to
 ms.date: 05/29/2019
-ms.openlocfilehash: eb286adfd7267a78fcf80bcf5ad34f8f1cc9f493
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 60f4e4998e1077ca373f47a0cdf35c9d7a064605
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946613"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866681"
 ---
 # <a name="get-started-with-an-apache-hadoop-sandbox-an-emulator-on-a-virtual-machine"></a>Начало работы с Apache Hadoop песочницой, эмулятором на виртуальной машине
 
 Узнайте, как настроить на виртуальной машине песочницу Apache Hadoop от Hortonworks, чтобы ознакомиться с экосистемой Hadoop. Песочница представляет собой локальную среду разработки для ознакомления с Hadoop, распределенной файловой системой Hadoop (HDFS) и отправкой заданий. Если вы знакомы с Hadoop, вы можете начать использовать Hadoop в Azure, создав кластер HDInsight. Дополнительные сведения см. в статье [Руководство по Hadoop. Начало работы с Hadoop в HDInsight на платформе Linux](apache-hadoop-linux-tutorial-get-started.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * [VirtualBox Oracle](https://www.virtualbox.org/). Скачайте и установите приложение [отсюда](https://www.virtualbox.org/wiki/Downloads).
 
@@ -39,7 +39,7 @@ ms.locfileid: "98946613"
 1. В меню **Файл** щелкните **Import Appliance** (Импорт устройства), а затем укажите образ песочницы Hortonworks.
 1. Выберете песочницу Hortonworks, щелкните **Start** (Запустить) > **Normal Start** (Обычный запуск). После завершения процесса загрузки в виртуальной машине отобразятся инструкции для входа.
 
-    ![нормальное начало диспетчера VirtualBox](./media/apache-hadoop-emulator-get-started/virtualbox-normal-start.png)
+    :::image type="content" source="./media/apache-hadoop-emulator-get-started/virtualbox-normal-start.png" alt-text="нормальное начало диспетчера VirtualBox" border="true":::
 
 1. Откройте веб-браузер и перейдите по отображаемому URL-адресу (обычно `http://127.0.0.1:8888` ).
 

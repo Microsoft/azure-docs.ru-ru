@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/23/2020
-ms.openlocfilehash: ba58c007dc0bc3776f429366651cb79404b137b3
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 969dda4b57deb35d745cf7c7d263b78e6fe577d2
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98928475"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867548"
 ---
 # <a name="use-apache-zeppelin-notebooks-with-apache-spark-cluster-on-azure-hdinsight"></a>Использование записных книжек Apache Zeppelin с кластером Apache Spark в Azure HDInsight
 
@@ -32,13 +32,13 @@ ms.locfileid: "98928475"
 
 2. Создайте новую записную книжку. На панели заголовка перейдите к **записной книжке**  >  **создать новое примечание**.
 
-    ![Создание новой записной книжки Zeppelin](./media/apache-spark-zeppelin-notebook/hdinsight-create-zeppelin-notebook.png "Создание новой записной книжки Zeppelin")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/hdinsight-create-zeppelin-notebook.png " alt-text="Создание новой записной книжки Zeppelin" border="true":::
 
     Введите имя записной книжки, а затем выберите **создать заметку**.
 
 3. Убедитесь, что в заголовке записной книжки отображается состояние подключено. Он обозначается зеленой точкой в правом верхнем углу.
 
-    ![Состояния записной книжки Zeppelin](./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-connected.png "Состояния записной книжки Zeppelin")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-connected.png " alt-text="Состояния записной книжки Zeppelin" border="true":::
 
 4. Загрузите демонстрационные данные во временную таблицу. При создании кластера Spark в HDInsight файл образца данных `hvac.csv` копируется в связанную учетную запись хранения в разделе `\HdiSamples\SensorSampleData\hvac` .
 
@@ -70,7 +70,7 @@ ms.locfileid: "98928475"
 
     Нажмите клавиши **SHIFT + ВВОД** или нажмите кнопку **воспроизвести** для абзаца, чтобы выполнить фрагмент кода. Состояние, которое отображается в правом верхнем углу абзаца, должно изменяться в следующей последовательности: READY (ГОТОВО), PENDING (ОЖИДАЕТ), RUNNING (ВЫПОЛНЯЕТСЯ) и FINISHED (ЗАВЕРШЕНО). Выходные данные отображаются в нижней части того же абзаца. Снимок экрана выглядит как на следующем рисунке:
 
-    ![Создание временной таблицы из необработанных данных](./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-load-data.png "Создание временной таблицы из необработанных данных")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-load-data.png " alt-text="Создание временной таблицы из необработанных данных" border="true":::
 
     Можно указать заголовок для каждого абзаца. В правом углу абзаца выберите значок **параметров** (спроккет), а затем щелкните **отобразить заголовок**.  
 
@@ -88,7 +88,7 @@ ms.locfileid: "98928475"
 
 6. Щелкните значок **линейчатой диаграммы** , чтобы изменить отображение.  **Параметры**, отображаемые после выбора **линейчатой диаграммы**, позволяют выбрать **ключи** и **значения**.  Выходные данные показаны на снимке экрана ниже.
 
-    ![Выполнение инструкции Spark SQL с помощью notebook1](./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-spark-query-1.png "Выполнение инструкции Spark SQL с помощью notebook1")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-spark-query-1.png " alt-text="Выполнение инструкции Spark SQL с помощью notebook1" border="true":::
 
 7. Можно также запустить инструкции Spark SQL с помощью переменных в запросе. В следующем фрагменте кода показано, как определить переменную `Temp` в запросе с возможными значениями, с которыми необходимо выполнить запрос. При первом выполнении запроса раскрывающийся список автоматически заполняется значениями, указанными для переменной.
 
@@ -106,7 +106,7 @@ ms.locfileid: "98928475"
 
      Выходные данные показаны на снимке экрана ниже.
 
-     ![Выполнение инструкции Spark SQL с помощью notebook2](./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-spark-query-2.png "Выполнение инструкции Spark SQL с помощью notebook2")
+     :::image type="content" source="./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-spark-query-2.png " alt-text="Выполнение инструкции Spark SQL с помощью notebook2" border="true":::
 
 ## <a name="how-do-i-use-external-packages-with-the-notebook"></a>Использование внешних пакетов с записной книжкой
 
@@ -116,15 +116,15 @@ ms.locfileid: "98928475"
 
 1. Откройте параметры интерпретатора. В правом верхнем углу выберите имя пользователя, выполнившего вход, а затем выберите **интерпретатор**.
 
-    ![Запуск интерпретатора](./media/apache-spark-zeppelin-notebook/zeppelin-launch-interpreter.png "Выходные данные Hive")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/zeppelin-launch-interpreter.png " alt-text="Запуск интерпретатора" border="true":::
 
 2. Прокрутите до **livy2**, а затем выберите **изменить**.
 
-    ![Изменение интерпретатора запуска1](./media/apache-spark-zeppelin-notebook/zeppelin-use-external-package-1.png "Изменение интерпретатора запуска1")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/zeppelin-use-external-package-1.png " alt-text="Изменение интерпретатора запуска1" border="true":::
 
 3. Перейдите к разделу key `livy.spark.jars.packages` и задайте его значение в формате `group:id:version` . Если вы хотите использовать пакет [spark-csv](https://search.maven.org/#artifactdetails%7Ccom.databricks%7Cspark-csv_2.10%7C1.4.0%7Cjar), для ключа необходимо задать значение `com.databricks:spark-csv_2.10:1.4.0`.
 
-    ![Изменение интерпретатора Settings2](./media/apache-spark-zeppelin-notebook/zeppelin-use-external-package-2.png "Изменение интерпретатора Settings2")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/zeppelin-use-external-package-2.png " alt-text="Изменение интерпретатора Settings2" border="true":::
 
     Выберите **сохранить** , а затем нажмите **кнопку ОК** , чтобы перезапустить интерпретатор Livy.
 
@@ -134,7 +134,7 @@ ms.locfileid: "98928475"
 
     b. В репозитории найдите значения для параметров **GroupId**, **ArtifactId** и **Version**.
 
-    ![Использование внешних пакетов с Jupyter Notebook](./media/apache-spark-zeppelin-notebook/use-external-packages-with-jupyter.png "Использование внешних пакетов с Jupyter Notebook")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/use-external-packages-with-jupyter.png " alt-text="Использование внешних пакетов с Jupyter Notebook" border="true":::
 
     c. Объедините три значения, разделив их двоеточием (**:**).
 
@@ -146,7 +146,7 @@ ms.locfileid: "98928475"
 
 Записные книжки Zeppelin сохраняются на головных узлах кластера. Поэтому при удалении кластера записные книжки также будут удалены. Если вы хотите сохранить записные книжки для последующего использования в других кластерах, необходимо экспортировать их после выполнения заданий. Чтобы экспортировать записную книжку, выберите значок **экспорта** , как показано на рисунке ниже.
 
-![Скачивание записной книжки](./media/apache-spark-zeppelin-notebook/zeppelin-download-notebook.png "Скачать записную книжку")
+:::image type="content" source="./media/apache-spark-zeppelin-notebook/zeppelin-download-notebook.png " alt-text="Скачивание записной книжки" border="true":::
 
 Это действие сохраняет записную книжку в виде JSON-файла в расположении загрузки.
 
@@ -178,11 +178,11 @@ ms.locfileid: "98928475"
 
 1. Перезапустите интерпретатор Livy из записной книжки Zeppelin. Для этого откройте параметры интерпретатора, выбрав имя вошедшего в систему пользователя в правом верхнем углу, а затем выберите **интерпретатор**.
 
-    ![Запуск интерпретатора](./media/apache-spark-zeppelin-notebook/zeppelin-launch-interpreter.png "Выходные данные Hive")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/zeppelin-launch-interpreter.png " alt-text="Запуск интерпретатора" border="true":::
 
 2. Прокрутите до **livy2**, а затем выберите **перезапустить**.
 
-    ![Перезапуск интерпретатора Livy](./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-restart-interpreter.png "Перезапуск интерпретатора Zeppelin")
+    :::image type="content" source="./media/apache-spark-zeppelin-notebook/hdinsight-zeppelin-restart-interpreter.png " alt-text="Перезапуск интерпретатора Livy" border="true":::
 
 3. Запустите ячейку кода из имеющейся записной книжки Zeppelin. Этот код создает новый сеанс Livy в кластере HDInsight.
 
@@ -194,7 +194,7 @@ ms.locfileid: "98928475"
 
 Чтобы проверить службу из командной строки, подключитесь к головному узлу по протоколу SSH. Переключите пользователя в Zeppelin с помощью команды `sudo su zeppelin` . Команды состояния:
 
-|Команда |Описание |
+|Get-Help |Описание |
 |---|---|
 |`/usr/hdp/current/zeppelin-server/bin/zeppelin-daemon.sh status`|Состояние службы.|
 |`/usr/hdp/current/zeppelin-server/bin/zeppelin-daemon.sh --version`|Версия службы.|
@@ -202,7 +202,7 @@ ms.locfileid: "98928475"
 
 ### <a name="log-locations"></a>Расположения журналов
 
-|Служба |Путь |
+|Служба |путь |
 |---|---|
 |Zeppelin — сервер|/уср/хдп/куррент/зеппелин-сервер/|
 |Журналы сервера|/вар/лог/зеппелин|

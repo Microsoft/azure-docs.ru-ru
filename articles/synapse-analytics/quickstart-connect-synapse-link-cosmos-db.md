@@ -9,12 +9,13 @@ ms.topic: quickstart
 ms.date: 04/21/2020
 ms.author: acomet
 ms.reviewer: jrasnick
-ms.openlocfilehash: 7462c78ecad718c30980a98ff7659a2a4d2ea020
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.custom: cosmos-db
+ms.openlocfilehash: ddeac8477246ae2b5d2f07e495d4721f9508afed
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98222162"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864930"
 ---
 # <a name="quickstart-connect-to-azure-synapse-link-for-azure-cosmos-db"></a>Краткое руководство. Подключение к Azure Synapse Link для Azure Cosmos DB
 

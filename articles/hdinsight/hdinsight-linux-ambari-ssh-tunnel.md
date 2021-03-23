@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 04/14/2020
-ms.openlocfilehash: 5bbc770fa6ae5ac69b2aa939f9d2c70bb01f5403
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ef7e0450725b456a7fb2b1ab61c50d7edece52ce
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945291"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867565"
 ---
 # <a name="use-ssh-tunneling-to-access-apache-ambari-web-ui-jobhistory-namenode-apache-oozie-and-other-uis"></a>Использование туннелирования SSH для доступа к веб-интерфейсу Apache Ambari, JobHistory, NameNode, Apache Oozie и другим пользовательским интерфейсам
 
@@ -69,7 +69,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 |q|Тихий режим.|
 |T|Отключите выделение псевдо-TTY, так как вы просто пересылаете порт.|
 |n|Запрет на чтение STDIN, так как выполняется только пересылка порта.|
-|N|Не выполняйте удаленную команду, так как выполняется только пересылка порта.|
+|Нет|Не выполняйте удаленную команду, так как выполняется только пересылка порта.|
 |f|Запустите в фоновом режиме.|
 
 После завершения команды трафик, отправленный на порт 9876 локального компьютера, будет направляться на головной узел кластера.
@@ -84,7 +84,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 1. Если же у вас еще нет сохраненного сеанса, введите информацию о подключении.
 
-    |Свойство. |Значение |
+    |Свойство |Значение |
     |---|---|
     |Имя узла (или IP-адрес)|SSH-адрес для кластера HDInsight. Например, **mycluster-SSH.azurehdinsight.NET**.|
     |Порт|22|
@@ -92,19 +92,19 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 1. Нажмите кнопку **Сохранить**.
 
-    ![Создание выводимого сеанса HDInsight](./media/hdinsight-linux-ambari-ssh-tunnel/hdinsight-create-putty-session.png)
+    :::image type="content" source="./media/hdinsight-linux-ambari-ssh-tunnel/hdinsight-create-putty-session.png" alt-text="Создание выводимого сеанса HDInsight":::
 
 1. В разделе **Категории** в левой части диалогового окна последовательно разверните **Подключение**, **SSH** и выберите **Туннели**.
 
 1. Укажите следующие сведения в форме **Параметры, управляющие перенаправлением портов SSH** .
 
-    |Свойство. |Значение |
+    |Свойство |Значение |
     |---|---|
     |Исходный порт|Порт на клиенте, который вы хотите перенаправить. Например, **9876**.|
     |Назначение|SSH-адрес для кластера HDInsight. Например, **mycluster-SSH.azurehdinsight.NET**.|
     |Динамический|Включает динамическую маршрутизацию прокси-сервера SOCKS.|
 
-    ![Выводимые параметры туннелирования конфигурации](./media/hdinsight-linux-ambari-ssh-tunnel/hdinsight-putty-tunnel.png)
+    :::image type="content" source="./media/hdinsight-linux-ambari-ssh-tunnel/hdinsight-putty-tunnel.png" alt-text="Выводимые параметры туннелирования конфигурации":::
 
 1. Выберите **Добавить** , чтобы добавить параметры, а затем нажмите кнопку **Открыть** , чтобы открыть SSH-подключение.
 
@@ -117,7 +117,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 1. Настроить браузер для использования **localhost** и порта, использованного при создании туннеля, в качестве прокси-сервера **SOCKS 5**. Вот как выглядят параметры Firefox. Если используется порт, отличный от 9876, измените номер порта соответствующим образом.
 
-    ![параметры прокси-сервера браузера Firefox](./media/hdinsight-linux-ambari-ssh-tunnel/firefox-proxy-settings.png)
+    :::image type="content" source="./media/hdinsight-linux-ambari-ssh-tunnel/firefox-proxy-settings.png" alt-text="параметры прокси-сервера браузера Firefox":::
 
    > [!NOTE]  
    > Если выбрать параметр **Remote DNS** (Удаленная служба DNS), то запросы службы доменных имен (DNS) будут разрешаться с помощью кластера HDInsight. Этот параметр разрешает запросы DNS с помощью головного узла кластера.
@@ -135,11 +135,11 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 2. В веб-интерфейсе Ambari выберите HDFS в списке в левой части страницы.
 
-    ![Выбрана служба Apache Ambari HDFS](./media/hdinsight-linux-ambari-ssh-tunnel/hdfs-service-selected.png)
+    :::image type="content" source="./media/hdinsight-linux-ambari-ssh-tunnel/hdfs-service-selected.png" alt-text="Выбрана служба Apache Ambari HDFS":::
 
 3. После появления информации о службе HDFS выберите **Быстрые ссылки**. Появится список головных узлов кластера. Выберите один из головных узлов, а затем выберите **NameNode UI**(Пользовательский интерфейс NameNode).
 
-    ![Изображение с развернутым меню "Быстрые ссылки"](./media/hdinsight-linux-ambari-ssh-tunnel/namenode-drop-down-menu.png)
+    :::image type="content" source="./media/hdinsight-linux-ambari-ssh-tunnel/namenode-drop-down-menu.png" alt-text="Изображение с развернутым меню &quot;Быстрые ссылки&quot;":::
 
     > [!NOTE]  
     > При выборе меню __Быстрые ссылки__ может появиться индикатор ожидания. Это может произойти, если подключение к Интернету медленное. Подождите одну-две минуты для получения данных с сервера, а затем повторите попытку.
@@ -148,7 +148,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 4. Откроется страница, аналогичная следующей:
 
-    ![Изображение пользовательского интерфейса Hadoop NameNode](./media/hdinsight-linux-ambari-ssh-tunnel/hdinsight-namenode-ui.png)
+    :::image type="content" source="./media/hdinsight-linux-ambari-ssh-tunnel/hdinsight-namenode-ui.png" alt-text="Изображение пользовательского интерфейса Hadoop NameNode":::
 
     > [!NOTE]  
     > URL-адрес для этой страницы должен быть в таком формате: `http://hn1-CLUSTERNAME.randomcharacters.cx.internal.cloudapp.net:8088/cluster`. Этот URI использует полное внутреннее доменное имя узла (FQDN), и он доступен только при использовании туннеля SSH.

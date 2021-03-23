@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 02/05/2020
-ms.openlocfilehash: 0a6e837284917129bb56c6230e68927b79e95dac
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 20a7a7392070a6f888add630398516b2f872cd7d
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945274"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865491"
 ---
 # <a name="manage-logs-for-an-hdinsight-cluster"></a>Управление журналами для кластера HDInsight
 
@@ -76,11 +76,11 @@ Apache Ambari упрощает конфигурацию кластера HDInsig
 
 Чтобы открыть список просмотров службы, на странице портала Azure для HDInsight выберите область **Просмотры Ambari**.  Этот список меняется в зависимости от установленных библиотек.  Например, в нем могут быть диспетчер очередей YARN, представления Hive и Tez.  Выберите ссылку на службу для просмотра сведений о конфигурации и службе.  На странице **стека и версии** пользовательского интерфейса Ambari содержатся сведения о конфигурации служб в кластере и история версий служб. Чтобы перейти к этому разделу, в пользовательском интерфейсе Ambari выберите меню **Администратор**, а затем — **Stacks and Versions** (Стеки и версии).  Выберите вкладку **версий**, чтобы просмотреть сведения о версии службы:
 
-![Стек и версии администратора Apache Ambari](./media/hdinsight-log-management/ambari-stack-versions.png)
+:::image type="content" source="./media/hdinsight-log-management/ambari-stack-versions.png" alt-text="Стек и версии администратора Apache Ambari":::
 
 С помощью пользовательского интерфейса Ambari вы можете загрузить конфигурацию для любых служб, запущенных на конкретном узле в кластере.  Выберите меню **Узлы**, а затем перейдите по ссылке на нужный узел. На странице этого узла выберите **Host Actions** (Действия на узле), а затем **Download Client Configs** (Скачать конфигурацию клиента).
 
-![Настройки клиента узла для загрузки Apache Ambari](./media/hdinsight-log-management/download-client-configs.png)
+:::image type="content" source="./media/hdinsight-log-management/download-client-configs.png" alt-text="Настройки клиента узла для загрузки Apache Ambari":::
 
 ### <a name="view-the-script-action-logs"></a>Просмотр журналов действий сценария
 
@@ -102,7 +102,7 @@ log4j.logger.alerts=DEBUG,alerts
 
 Следующий шаг заключается в анализе файлов журнала выполнения заданий для различных служб,  таких как Apache HBase, Apache Spark и т. д. Кластер Hadoop создает большое количество подробных журналов, поэтому определение того, какие журналы являются полезными (а какие нет), может занять много времени.  Важно понимать систему ведения журналов для целевого управления файлами журналов.  На следующем рисунке показан пример файла журнала.
 
-![Пример выходных данных файла журнала HDInsight](./media/hdinsight-log-management/hdi-log-file-example.png)
+:::image type="content" source="./media/hdinsight-log-management/hdi-log-file-example.png" alt-text="Пример выходных данных файла журнала HDInsight":::
 
 ### <a name="access-the-hadoop-log-files"></a>Доступ к файлам журналов Hadoop
 
@@ -157,7 +157,7 @@ yarn logs -applicationId <applicationId> -appOwner <user-who-started-the-applica
 
 Для некоторых файлов журнала можно использовать более экономный подход архивирования файлов журналов. Для Azure Resource Manager журналов действий этот подход можно исследовать с помощью портал Azure.  Настройте архивацию журналов диспетчер ресурсов, щелкнув ссылку **Журнал действий** в портал Azure для своего экземпляра HDInsight.  В верхней части страницы поиска журналов действий выберите пункт меню **Экспорт**, чтобы открыть область **Экспорт журнала действий**.  Укажите подписку, регион, необходимость экспорта в учетную запись хранения и количество дней хранения журналов. В этой же области можно также указать, следует ли экспортировать журналы в концентратор событий.
 
-![Предварительный просмотр журнала действий портал Azure экспорта](./media/hdinsight-log-management/hdi-export-log-files.png)
+:::image type="content" source="./media/hdinsight-log-management/hdi-export-log-files.png" alt-text="Предварительный просмотр журнала действий портал Azure экспорта":::
 
 Кроме того, можно создать сценарий архивации журнала с помощью PowerShell.  Пример сценария PowerShell см. в разделе [Archive Azure Automation logs to Azure Blob Storage](https://gallery.technet.microsoft.com/scriptcenter/Archive-Azure-Automation-898a1aa8) (Архивация журналов службы автоматизации Azure для хранилища BLOB-объектов).
 

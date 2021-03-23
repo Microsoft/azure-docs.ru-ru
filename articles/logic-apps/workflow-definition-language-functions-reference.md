@@ -6,12 +6,12 @@ ms.suite: integration
 ms.reviewer: estfan, logicappspm, azla
 ms.topic: reference
 ms.date: 03/12/2021
-ms.openlocfilehash: 8093b61213c3e26b93df2a3f495e7efe0a61d523
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 1414a7b0f17918caa16ccf854d70ea199fb42a47
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103420040"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870200"
 ---
 # <a name="reference-guide-to-using-functions-in-expressions-for-azure-logic-apps-and-power-automate"></a>Справочное руководство по использованию функций в выражениях для Azure Logic Apps и Power Automate
 
@@ -690,10 +690,10 @@ addProperty(<object>, '<property>', <value>)
 | <*обновленный_объект*> | Объект | Обновленный объект JSON с указанным свойством |
 ||||
 
-Чтобы добавить дочернее свойство к существующему свойству, используйте следующий синтаксис:
+Чтобы добавить родительское свойство к существующему свойству, используйте `setProperty()` функцию, а не `addProperty()` функцию. В противном случае функция возвращает только дочерний объект в качестве выходных данных.
 
 ```
-addProperty(<object>['<parent-property>'], '<child-property>', <value>)
+setProperty(<object>['<parent-property>'], '<parent-property>', addProperty(<object>['<parent-property>'], '<child-property>', <value>)
 ```
 
 | Параметр | Обязательно | Тип | Описание |
@@ -741,7 +741,7 @@ addProperty(json('{ "firstName": "Sophia", "lastName": "Owen" }'), 'middleName',
 В этом примере дочернее свойство `middleName` добавляется к существующему свойству `customerName` в объекте JSON, который преобразуется из строки в JSON с помощью функции [JSON()](#json). Функция присваивает указанное значение новому свойству и возвращает обновленный объект:
 
 ```
-addProperty(json('{ "customerName": { "firstName": "Sophia", "surName": "Owen" } }')['customerName'], 'middleName', 'Anne')
+setProperty(json('{ "customerName": { "firstName": "Sophia", "surName": "Owen" } }'), 'customerName', addProperty(json('{ "customerName": { "firstName": "Sophia", "surName": "Owen" } }')['customerName'], 'middleName', 'Anne'))
 ```
 
 Вот текущий объект JSON:

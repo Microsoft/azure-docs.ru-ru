@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 11/21/2019
-ms.openlocfilehash: d14b96843b489b28fc7d83348e39638272c06da5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6ef11e9c7907f57b3b8de0a042e1035bce638cf4
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942755"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863281"
 ---
 # <a name="apache-spark-streaming-dstream-example-with-apache-kafka-on-hdinsight"></a>Пример потоковой передачи Apache Spark (DStream) с использованием Apache Kafka в HDInsight
 
@@ -28,7 +28,7 @@ ms.locfileid: "98942755"
 
 Apache Kafka в HDInsight не предоставляет доступ к брокерам Kafka через общедоступный сегмент Интернета. Все объекты, обращающиеся к Kafka, должны находиться в той же виртуальной сети Azure, что и узлы в кластере Kafka. В этом примере кластеры Kafka и Spark расположены в виртуальной сети Azure. На следующей схеме показано, как взаимодействуют кластеры.
 
-![Схема кластеров Spark и Kafka в виртуальной сети Azure](./media/hdinsight-apache-spark-with-kafka/apache-spark-kafka-vnet.png)
+:::image type="content" source="./media/hdinsight-apache-spark-with-kafka/apache-spark-kafka-vnet.png" alt-text="Схема кластеров Spark и Kafka в виртуальной сети Azure" border="false":::
 
 > [!NOTE]  
 > Хотя само решение Kafka ограничено связью в пределах виртуальной сети, другие службы в кластере, например SSH и Ambari, доступны через Интернет. Дополнительные сведения об общих портах, доступных в HDInsight, см. в статье [Порты и универсальные коды ресурсов (URI), используемые кластерами HDInsight](hdinsight-hadoop-port-settings-for-services.md).
@@ -37,28 +37,28 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
 
 1. Нажмите эту кнопку, чтобы войти в Azure и открыть шаблон на портале Azure.
 
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fhditutorialdata.blob.core.windows.net%2Farmtemplates%2Fcreate-linux-based-kafka-spark-cluster-in-vnet-v4.1.json" target="_blank"><img src="./media/hdinsight-apache-spark-with-kafka/hdi-deploy-to-azure1.png" alt="Deploy to Azure button for new cluster"></a>
+   <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fhditutorialdata.blob.core.windows.net%2Farmtemplates%2Fcreate-linux-based-kafka-spark-cluster-in-vnet-v4.1.json" target="_blank"><img src="./media/hdinsight-apache-spark-with-kafka/hdi-deploy-to-azure1.png" alt="Deploy to Azure button for new cluster"></a>
 
-    Шаблон Azure Resource Manager доступен по адресу **https://hditutorialdata.blob.core.windows.net/armtemplates/create-linux-based-kafka-spark-cluster-in-vnet-v4.1.json** .
+   Шаблон Azure Resource Manager доступен по адресу **https://hditutorialdata.blob.core.windows.net/armtemplates/create-linux-based-kafka-spark-cluster-in-vnet-v4.1.json** .
 
-    > [!WARNING]  
-    > Чтобы обеспечить доступность Kafka в HDInsight, кластер должен содержать не менее трех рабочих узлов. Этот шаблон создает кластер Kafka, содержащий три рабочих узла.
+   > [!WARNING]
+   > Чтобы обеспечить доступность Kafka в HDInsight, кластер должен содержать не менее трех рабочих узлов. Этот шаблон создает кластер Kafka, содержащий три рабочих узла.
 
-    Этот шаблон создает кластер HDInsight 3.6 для Kafka и Spark.
+   Этот шаблон создает кластер HDInsight 3.6 для Kafka и Spark.
 
 1. Используйте следующие сведения, чтобы заполнить раздел **Настраиваемое развертывание**:
 
-    |Свойство. |Значение |
-    |---|---|
-    |Группа ресурсов|Создайте новую группу или выберите существующую.|
-    |Расположение|Выберите близкое к вам географическое расположение.|
-    |Имя базового кластера|Это значение будет использоваться в качестве базового имени для кластеров Spark и Kafka. Например, если ввести **hdistreaming**, будет создан кластер Spark с именем __spark-hdistreaming__ и кластер Kafka с именем **kafka-hdistreaming**.|
-    |Имя пользователя для входа в кластер|Имя администратора для кластеров Spark и Kafka.|
-    |Пароль для входа в кластер|Пароль администратора для кластеров Spark и Kafka.|
-    |Имя пользователя SSH|Создаваемый пользователь SSH для кластеров Spark и Kafka.|
-    |Пароль SSH|Пароль пользователя SSH для кластеров Spark и Kafka.|
+   |Свойство |Значение |
+   |---|---|
+   |Группа ресурсов|Создайте новую группу или выберите существующую.|
+   |Расположение|Выберите близкое к вам географическое расположение.|
+   |Имя базового кластера|Это значение будет использоваться в качестве базового имени для кластеров Spark и Kafka. Например, если ввести **hdistreaming**, будет создан кластер Spark с именем __spark-hdistreaming__ и кластер Kafka с именем **kafka-hdistreaming**.|
+   |Имя пользователя для входа в кластер|Имя администратора для кластеров Spark и Kafka.|
+   |Пароль для входа в кластер|Пароль администратора для кластеров Spark и Kafka.|
+   |Имя пользователя SSH|Создаваемый пользователь SSH для кластеров Spark и Kafka.|
+   |Пароль SSH|Пароль пользователя SSH для кластеров Spark и Kafka.|
 
-    ![Параметры настраиваемого развертывания HDInsight](./media/hdinsight-apache-spark-with-kafka/hdinsight-parameters.png)
+   :::image type="content" source="./media/hdinsight-apache-spark-with-kafka/hdinsight-parameters.png" alt-text="Параметры настраиваемого развертывания HDInsight":::
 
 1. Прочтите **условия использования** и установите флажок **Я принимаю указанные выше условия**.
 
@@ -66,7 +66,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
 
 Когда ресурсы будут созданы, отобразится страница со сводными сведениями.
 
-![Сводные сведения о группе ресурсов для виртуальной сети и кластеров](./media/hdinsight-apache-spark-with-kafka/hdinsight-group-blade.png)
+:::image type="content" source="./media/hdinsight-apache-spark-with-kafka/hdinsight-group-blade.png" alt-text="Сводные сведения о группе ресурсов для виртуальной сети и кластеров":::
 
 > [!IMPORTANT]  
 > Обратите внимание, что кластерам HDInsight присвоены имена **spark-BASENAME** и **kafka-BASENAME**, где BASENAME — имя, указанное в шаблоне. Эти имена будут использоваться позже при подключении к кластерам.

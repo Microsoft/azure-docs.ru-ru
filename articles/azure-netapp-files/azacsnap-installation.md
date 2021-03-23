@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: how-to
 ms.date: 12/14/2020
 ms.author: phjensen
-ms.openlocfilehash: 00aaa5bdc0d48adb735679fc4a71b3431970ef09
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 458f4d3f29cb08a94095167ed45133f5cd70f5f4
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98737173"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869197"
 ---
 # <a name="install-azure-application-consistent-snapshot-tool-preview"></a>Установить средство создания моментальных снимков для приложений Azure (Предварительная версия)
 
@@ -239,71 +239,6 @@ ms.locfileid: "98737173"
     ENV : <IP_address_of_host>:
     USER: AZACSNAP
     ```
-
-### <a name="additional-instructions-for-using-the-log-trimmer-sap-hana-20-and-later"></a>Дополнительные инструкции по использованию средства усечения журнала (SAP HANA 2,0 и более поздних версий)
-
-При использовании средства усечения журнала, приведенный ниже пример команды настроили пользователя (АЗАКСНАП) в базах данных клиента в системе базы данных SAP HANA 2,0. Не забудьте изменить IP-адрес, имена пользователей и пароли соответствующим образом:
-
-1. Подключитесь к базе данных клиента, чтобы создать пользователя, сведения о конкретном клиенте: `<IP_address_of_host>` и `<SYSTEM_USER_PASSWORD>` .  Кроме того, обратите внимание на порт ( `30015` ), необходимый для взаимодействия с базой данных клиента.
-
-    ```bash
-    hdbsql -n <IP_address_of_host>:30015 - i 00 -u SYSTEM -p <SYSTEM_USER_PASSWORD>
-    ```
-
-    ```output  
-    Welcome to the SAP HANA Database interactive terminal.
-
-    Type: \h for help with commands
-    \q to quit
-
-    hdbsql TENANTDB=>
-    ```
-
-1. Создание пользователя
-
-    В этом примере создается пользователь АЗАКСНАП в СИСТЕМДБ.
-
-    ```sql
-    hdbsql TENANTDB=> CREATE USER AZACSNAP PASSWORD <AZACSNAP_PASSWORD_CHANGE_ME> NO FORCE_FIRST_PASSWORD_CHANGE;
-    ```
-
-1. Предоставление разрешений пользователю
-
-    В этом примере задается разрешение для пользователя АЗАКСНАП, разрешающее выполнение моментального снимка хранилища, целостного в базе данных.
-
-    ```sql
-    hdbsql TENANTDB=> GRANT BACKUP ADMIN, CATALOG READ, MONITORING TO AZACSNAP;
-    ```
-
-1. *Необязательно* — запретить истечение срока действия пароля пользователя
-
-    > [!NOTE]
-    > Перед внесением этого изменения проверьте корпоративную политику.
-
-   В этом примере отключается истечение срока действия пароля для пользователя АЗАКСНАП без этого изменения срок действия пароля пользователя истечет, что приведет к правильному выполнению моментальных снимков.  
-
-   ```sql
-   hdbsql TENANTDB=> ALTER USER AZACSNAP DISABLE PASSWORD LIFETIME;
-   ```
-
-> [!NOTE]  
-> Повторите эти действия для всех баз данных клиента. Сведения о подключении для всех клиентов можно получить с помощью следующего SQL запроса к СИСТЕМДБ.
-
-```sql
-SELECT HOST, SQL_PORT, DATABASE_NAME FROM SYS_DATABASES.M_SERVICES WHERE SQL_PORT LIKE '3%'
-```
-
-См. Следующий пример запроса и выходных данных.
-
-```bash
-hdbsql -jaxC -n 10.90.0.31:30013 -i 00 -u SYSTEM -p <SYSTEM_USER_PASSWORD> " SELECT HOST,SQL_PORT, DATABASE_NAME FROM SYS_DATABASES.M_SERVICES WHERE SQL_PORT LIKE '3%' "
-```
-
-```output
-sapprdhdb80,30013,SYSTEMDB
-sapprdhdb80,30015,H81
-sapprdhdb80,30041,H82
-```
 
 ### <a name="using-ssl-for-communication-with-sap-hana"></a>Использование SSL для связи с SAP HANA
 

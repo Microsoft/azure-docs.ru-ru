@@ -11,12 +11,12 @@ ms.workload: ''
 ms.topic: article
 ms.date: 08/31/2020
 ms.author: inhenkel
-ms.openlocfilehash: a9394a5e117a577c903eccdf91cf22d0c359df2b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d1c2fd2ac7f809b4a70a0edffbddfb6e733fed57
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104581122"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871407"
 ---
 # <a name="media-services-v3-frequently-asked-questions"></a>Часто задаваемые вопросы о службах мультимедиа v3
 
@@ -24,7 +24,7 @@ ms.locfileid: "104581122"
 
 В этой статье приводятся ответы на часто задаваемые вопросы о службах мультимедиа Azure v3.
 
-## <a name="general"></a>Общие сведения
+## <a name="general"></a>Общее
 
 ### <a name="does-media-services-store-any-customer-data-outside-of-the-service-region"></a>Хранятся ли в службах мультимедиа все данные клиентов за пределами региона службы?
 
@@ -47,12 +47,6 @@ ms.locfileid: "104581122"
 ### <a name="how-do-i-stream-to-apple-ios-devices"></a>Разделы справки поток на устройства Apple iOS?
 
 Убедитесь, что у вас есть **(Format = m3u8-AAPL)** в конце пути (после **/manifest** части URL-адреса), чтобы сообщить серверу-источнику потоковой передачи о необходимости вернуть содержимое HTTP Live Streaming (HLS) для использования на устройствах Apple iOS Native. Дополнительные сведения см. в разделе [Доставка содержимого](dynamic-packaging-overview.md).
-
-### <a name="how-do-i-configure-media-reserved-units"></a>Как настроить зарезервированные единицы мультимедиа?
-
-Для заданий анализа аудио и анализа видео, активируемых индексатором служб мультимедиа V3 или Video, рекомендуется подготавливать учетную запись с 10 зарезервированными единицами мультимедиа S3 (Мрус). Если вам требуется более 10 S3 Мрус, откройте запрос в службу поддержки с помощью [портал Azure](https://portal.azure.com/).
-
-Дополнительные сведения см. в разделе [масштабирование обработки мультимедиа](media-reserved-units-cli-how-to.md).
 
 ### <a name="what-is-the-recommended-method-to-process-videos"></a>Что такое рекомендуемый метод для обработки видео?
 

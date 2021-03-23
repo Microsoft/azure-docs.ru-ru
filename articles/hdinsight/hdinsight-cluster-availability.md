@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 05/01/2020
-ms.openlocfilehash: 34f752d4c3d50d5f680e317b2724b1e631537f32
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: dcbe44defeb89ad2f67833b263e5f4983070a46c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98933196"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863536"
 ---
 # <a name="how-to-monitor-cluster-availability-with-apache-ambari-in-azure-hdinsight"></a>Как отслеживать доступность кластера с помощью Apache Ambari в Azure HDInsight
 
@@ -22,33 +22,33 @@ ms.locfileid: "98933196"
 
 Доступ к панели мониторинга Ambari можно получить, перейдя по ссылке **Ambari** в разделе **панели мониторинга кластера** в обзоре HDInsight в портал Azure, как показано ниже. Кроме того, доступ к нему можно получить, перейдя `https://CLUSTERNAME.azurehdinsight.net` в браузер, где имя_кластера — это имя кластера.
 
-![Представление портала ресурсов HDInsight](media/hdinsight-cluster-availability/azure-portal-dashboard-ambari.png)
+:::image type="content" source="media/hdinsight-cluster-availability/azure-portal-dashboard-ambari.png" alt-text="Представление портала ресурсов HDInsight":::
 
 Затем вам будет предложено ввести имя пользователя и пароль для входа в кластер. Введите учетные данные, выбранные при создании кластера.
 
 Затем вы перейдете на панель мониторинга Ambari, которая содержит мини-приложения, отображающие несколько метрик, чтобы получить краткий обзор работоспособности кластера HDInsight. Эти мини-приложения показывают метрики, такие как количество динамических узлов данных (рабочих узлов) и Жаурналнодес (узел Zookeeper), время бесперебойной работы Наменодес (головные узлы), а также метрики, относящиеся к определенным типам кластеров, такие как YARN время работы ResourceManager для кластеров Spark и Hadoop.
 
-![Отображение панели мониторинга с помощью Apache Ambari](media/hdinsight-cluster-availability/apache-ambari-dashboard.png)
+:::image type="content" source="media/hdinsight-cluster-availability/apache-ambari-dashboard.png" alt-text="Отображение панели мониторинга с помощью Apache Ambari":::
 
 ## <a name="hosts--view-individual-node-status"></a>Узлы — Просмотр состояния отдельного узла
 
 Также можно просмотреть сведения о состоянии отдельных узлов. Перейдите на вкладку **узлы** , чтобы просмотреть список всех узлов в кластере, и ознакомьтесь с основными сведениями о каждом узле. Зеленая галочка слева от имени каждого узла указывает на то, что все компоненты находятся на узле. Если компонент не работает на узле, вместо зеленой проверки отображается красный предупреждающий треугольник.
 
-![Представление узлов HDInsight Apache Ambari](media/hdinsight-cluster-availability/apache-ambari-hosts1.png)
+:::image type="content" source="media/hdinsight-cluster-availability/apache-ambari-hosts1.png" alt-text="Представление узлов HDInsight Apache Ambari":::
 
 Затем можно выбрать **имя** узла, чтобы просмотреть более подробные метрики узла для этого конкретного узла. В этом представлении отображается состояние и доступность каждого отдельного компонента.
 
-![Apache Ambari размещает представление одного узла](media/hdinsight-cluster-availability/apache-ambari-hosts-node.png)
+:::image type="content" source="media/hdinsight-cluster-availability/apache-ambari-hosts-node.png" alt-text="Apache Ambari размещает представление одного узла":::
 
 ## <a name="ambari-alerts"></a>Ambari оповещения
 
 Ambari также предлагает несколько настраиваемых оповещений, которые могут предоставлять уведомления о определенных событиях. Когда оповещения запускаются, они отображаются в левом верхнем углу Ambari в красном значке, содержащем количество оповещений. При выборе этого значка отображается список текущих оповещений.
 
-![Число текущих предупреждений Apache Ambari](media/hdinsight-cluster-availability/apache-ambari-alerts.png)
+:::image type="content" source="media/hdinsight-cluster-availability/apache-ambari-alerts.png" alt-text="Число текущих предупреждений Apache Ambari":::
 
 Чтобы просмотреть список определений предупреждений и их состояний, перейдите на вкладку **оповещения** , как показано ниже.
 
-![Представление определений предупреждений Ambari](media/hdinsight-cluster-availability/ambari-alerts-definitions.png)
+:::image type="content" source="media/hdinsight-cluster-availability/ambari-alerts-definitions.png" alt-text="Представление определений предупреждений Ambari":::
 
 Ambari предлагает множество стандартных предупреждений, относящихся к доступности, в том числе:
 
@@ -62,11 +62,11 @@ Ambari предлагает множество стандартных преду
 
 Чтобы просмотреть сведения о предупреждении или изменить критерии, выберите **имя** оповещения. В качестве примера следует использовать **сводку по работоспособности узлов** . Вы можете просмотреть описание предупреждения, а также конкретные критерии, которые активируют предупреждение или критическое оповещение и интервал проверки для критерия. Чтобы изменить конфигурацию, нажмите кнопку **изменить** в правом верхнем углу окна конфигурации.
 
-![Настройка оповещений Apache Ambari](media/hdinsight-cluster-availability/ambari-alert-configuration.png)
+:::image type="content" source="media/hdinsight-cluster-availability/ambari-alert-configuration.png" alt-text="Настройка оповещений Apache Ambari":::
 
 Здесь можно изменить описание и, что более важно, интервал проверки и пороговые значения для предупреждений или критических оповещений.
 
-![Представление для изменения конфигураций оповещений Ambari](media/hdinsight-cluster-availability/ambari-alert-configuration-edit.png)
+:::image type="content" source="media/hdinsight-cluster-availability/ambari-alert-configuration-edit.png" alt-text="Представление для изменения конфигураций оповещений Ambari":::
 
 В этом примере можно создать два неработоспособных узла, которые активируют критическое оповещение, и 1 неработоспособный узел только запустит предупреждение. По завершении редактирования нажмите кнопку **сохранить** .
 
@@ -74,7 +74,7 @@ Ambari предлагает множество стандартных преду
 
 При необходимости можно также настроить уведомления по электронной почте для оповещений Ambari. Для этого на вкладке **оповещения** нажмите кнопку **действия** в левом верхнем углу, а затем **Управление уведомлениями.**
 
-![Действие "Управление уведомлениями" Ambari](media/hdinsight-cluster-availability/ambari-manage-notifications.png)
+:::image type="content" source="media/hdinsight-cluster-availability/ambari-manage-notifications.png" alt-text="Действие &quot;Управление уведомлениями&quot; Ambari":::
 
 Откроется диалоговое окно для управления уведомлениями об оповещениях. Выберите в **+** нижней части диалогового окна и заполните обязательные поля, чтобы указать Ambari с данными о почтовом сервере, с которых следует отправлять сообщения электронной почты.
 

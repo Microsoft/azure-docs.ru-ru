@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 11/29/2019
-ms.openlocfilehash: c2fce6d4ee95a56cc087d50184fcd69ac113620f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 633f01d813fe4e6c56d88052cbc7440c43f350dc
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940843"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870506"
 ---
 # <a name="use-mirrormaker-to-replicate-apache-kafka-topics-with-kafka-on-hdinsight"></a>Репликация разделов Apache Kafka с помощью Kafka в HDInsight и MirrorMaker
 
@@ -34,7 +34,7 @@ ms.locfileid: "98940843"
 
 На следующей схеме показан процесс зеркального отображения и обмен данными между кластерами.
 
-![Схема процесса зеркального отображения](./media/apache-kafka-mirroring/kafka-mirroring-vnets2.png)
+:::image type="content" source="./media/apache-kafka-mirroring/kafka-mirroring-vnets2.png" alt-text="Схема процесса зеркального отображения" border="false":::
 
 Основной и дополнительный кластеры могут отличаться в количестве узлов и секций, а смещения в разделах также отличаются. Зеркальное отображение сохраняет значение ключа, который используется для секционирования, поэтому порядок записей сохраняется вместе с этими значениями.
 
@@ -84,14 +84,14 @@ ms.locfileid: "98940843"
     1. Выберите **Добавить**.
     1. На экране **Добавить пиринг** введите сведения, как показано на снимке экрана ниже.
 
-        ![Добавление пиринга виртуальной сети HDInsight Kafka](./media/apache-kafka-mirroring/hdi-add-vnet-peering.png)
+        :::image type="content" source="./media/apache-kafka-mirroring/hdi-add-vnet-peering.png" alt-text="Добавление пиринга виртуальной сети HDInsight Kafka" border="true":::
 
 ### <a name="configure-ip-advertising"></a>Настройка объявления IP-адресов
 
 Настройте объявления IP-адресов, чтобы разрешить клиенту подключаться по IP-адресам компонента Service Broker вместо доменных имен.
 
 1. Перейдите на панель мониторинга Ambari для основного кластера: `https://PRIMARYCLUSTERNAME.azurehdinsight.net` .
-1. Выберите **службы**  >  **Kafka**. Клиселекткк на вкладке **конфигурации** .
+1. Выберите **службы**  >  **Kafka**. Перейдите на вкладку **configs (конфигурации** ).
 1. Добавьте следующие строки конфигурации в нижнюю часть **шаблона Kafka-env** . Щелкните **Сохранить**.
 
     ```
@@ -107,7 +107,7 @@ ms.locfileid: "98940843"
 1. Нажмите кнопку **ОК** в области **сохранить изменения конфигурации**.
 1. Выберите **перезапустить**  >  **все, затронутое** в уведомлении **требуется перезагрузка** . Выберите пункт **подтвердить перезагрузку все**.
 
-    ![Apache Ambari перезапускает все затронутые](./media/apache-kafka-mirroring/ambari-restart-notification.png)
+    :::image type="content" source="./media/apache-kafka-mirroring/ambari-restart-notification.png" alt-text="Apache Ambari перезапускает все затронутые" border="true":::
 
 ### <a name="configure-kafka-to-listen-on-all-network-interfaces"></a>Настройте Kafka для прослушивания всех сетевых интерфейсов.
     
@@ -120,7 +120,7 @@ ms.locfileid: "98940843"
 1. Выберите **узлы** на панели мониторинга Ambari.
 1. Запишите IP-адреса для брокеров и Zookeeper. Узлы брокера **WN** первыми двумя буквами имени узла, а узлы Zookeeper имеют **ZK** в качестве первых двух букв имени узла.
 
-    ![IP-адреса узла представления Apache Ambari](./media/apache-kafka-mirroring/view-node-ip-addresses2.png)
+    :::image type="content" source="./media/apache-kafka-mirroring/view-node-ip-addresses2.png" alt-text="IP-адреса узла представления Apache Ambari" border="true":::
 
 1. Повторите предыдущие три шага для второго кластера **Kafka-вторичного кластера**: Настройте объявления IP-адресов, настройте прослушиватели и запишите IP-адреса брокера и Zookeeper.
 
@@ -256,7 +256,7 @@ ms.locfileid: "98940843"
         1. Измените значение параметра `auto.create.topics.enable` на true и выберите __Сохранить__. Добавьте заметку, а затем нажмите кнопку __сохранить__ еще раз.
         1. Выберите службу __Kafka__ , нажмите кнопку __перезапустить__, а затем выберите __перезапустить все затронутые__. При появлении запроса выберите __Подтверждение перезапустить все__.
 
-        ![разделы включения автоматического создания Kafka](./media/apache-kafka-mirroring/kafka-enable-auto-create-topics.png)
+        :::image type="content" source="./media/apache-kafka-mirroring/kafka-enable-auto-create-topics.png" alt-text="разделы включения автоматического создания Kafka" border="true":::
 
 ## <a name="start-mirrormaker"></a>Запуск MirrorMaker
 

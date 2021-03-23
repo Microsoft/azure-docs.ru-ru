@@ -5,14 +5,14 @@ services: vpn-gateway
 author: chadmath
 ms.service: vpn-gateway
 ms.topic: troubleshooting
-ms.date: 09/16/2019
+ms.date: 03/22/2021
 ms.author: genli
-ms.openlocfilehash: 4454afbe543f374ebd745af7cd59be1ab745036f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cebb05b35379573fc9797e89dee3c0c2bf3de6e2
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104670893"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867293"
 ---
 # <a name="troubleshooting-an-azure-site-to-site-vpn-connection-cannot-connect-and-stops-working"></a>Устранение проблемы подключения VPN типа "сеть — сеть" Azure
 
@@ -81,9 +81,7 @@ Get-AzureVNetGatewayKey -VNetName -LocalNetworkSiteName
 
 ### <a name="step-5-check-the-on-premises-vpn-device-external-interface-address"></a>Шаг 5. Проверка внешнего адреса интерфейса для локального VPN-устройства
 
-- Если IP-адрес для Интернета VPN-устройства включен в определение **локальной сети** в Azure, вы можете столкнуться с нерегулярными отключениями.
-- К внешнему интерфейсу устройства должен быть прямой доступ через Интернет. Между Интернетом и устройством не должно использоваться преобразование адресов сети или брандмауэр.
-- Чтобы настроить виртуальный IP-адрес для кластеризации брандмауэра, вы должны отключить кластер и предоставить устройство VPN непосредственно общедоступному интерфейсу, с которым может взаимодействовать шлюз.
+Если IP-адрес для Интернета VPN-устройства включен в определение **локальной сети** в Azure, вы можете столкнуться с нерегулярными отключениями.
 
 ### <a name="step-6-verify-that-the-subnets-match-exactly-azure-policy-based-gateways"></a>Шаг 6. Проверка полного соответствия подсетей (шлюзов на основе политик Azure)
 

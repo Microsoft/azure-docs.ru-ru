@@ -4,12 +4,12 @@ description: Узнайте о службе IO Cache для Azure HDInsight и �
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 12/23/2019
-ms.openlocfilehash: 32f0756e59f81ad2c5d155581feed8c4fef09808
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 9df585c102e2c7307e949e38b6b69147372c38dd
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940132"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866307"
 ---
 # <a name="improve-performance-of-apache-spark-workloads-using-azure-hdinsight-io-cache"></a>Повышение производительности Apache Spark рабочих нагрузок с помощью кэша ввода-вывода Azure HDInsight
 
@@ -37,7 +37,7 @@ IO Cache для Azure HDInsight по умолчанию отключен в пр
 
 1. Выберите **действия** (**действия службы** в HDi 3,6) и **активируйте**.
 
-    ![Включение службы кэша ввода-вывода в Ambari](./media/apache-spark-improve-performance-iocache/ambariui-enable-iocache.png "Включение службы кэша ввода-вывода в Ambari")
+    :::image type="content" source="./media/apache-spark-improve-performance-iocache/ambariui-enable-iocache.png " alt-text="Включение службы кэша ввода-вывода в Ambari" border="true":::
 
 1. Подтвердите перезапуск всех затрагиваемых служб в кластере.
 
@@ -52,7 +52,7 @@ IO Cache для Azure HDInsight по умолчанию отключен в пр
 
 1. Выберите вкладки **Configs** (Конфигурации) и **Advanced** (Дополнительно).
 
-    ![Изменить расширенную конфигурацию HDFS](./media/apache-spark-improve-performance-iocache/ambariui-hdfs-service-configs-advanced.png "Изменить расширенную конфигурацию HDFS")
+    :::image type="content" source="./media/apache-spark-improve-performance-iocache/ambariui-hdfs-service-configs-advanced.png " alt-text="Изменить расширенную конфигурацию HDFS" border="true":::
 
 1. Прокрутите вниз и разверните область **Custom core-site** (Пользовательский основной сайт).
 
@@ -60,18 +60,18 @@ IO Cache для Azure HDInsight по умолчанию отключен в пр
 
 1. Измените значение в этом поле.
 
-    ![Изменение полных значений в кэше ввода-вывода](./media/apache-spark-improve-performance-iocache/ambariui-cache-data-fullness-percentage-property.png "Изменение полных значений в кэше ввода-вывода")
+    :::image type="content" source="./media/apache-spark-improve-performance-iocache/ambariui-cache-data-fullness-percentage-property.png " alt-text="Изменение полных значений в кэше ввода-вывода" border="true":::
 
 1. Выберите **Сохранить** в правом верхнем углу.
 
 1. Выберите **перезапустить**  >  **все затронутые**.
 
-    ![Apache Ambari перезапускает все затронутые](./media/apache-spark-improve-performance-iocache/ambariui-restart-all-affected.png "Перезапустить все затронутые")
+    :::image type="content" source="./media/apache-spark-improve-performance-iocache/ambariui-restart-all-affected.png " alt-text="Apache Ambari перезапускает все затронутые" border="true":::
 
 1. Выберите пункт **подтвердить перезагрузку все**.
 
 Если это не сработает, отключите кэш ввода-вывода.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 Дополнительная информация об IO Cache, в том числе о сравнительных тестах производительности, приведена в [этой записи блога](https://azure.microsoft.com/blog/apache-spark-speedup-with-hdinsight-io-cache/)

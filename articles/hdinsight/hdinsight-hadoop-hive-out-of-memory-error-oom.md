@@ -6,12 +6,12 @@ ms.service: hdinsight
 ms.topic: troubleshooting
 ms.custom: hdinsightactive
 ms.date: 11/28/2019
-ms.openlocfilehash: c0810d33f3ac939b9382bf321448ed72b6d87474
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d1e8f596ee022a59baa89e7f78648c98420eb44b
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945723"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868874"
 ---
 # <a name="fix-an-apache-hive-out-of-memory-error-in-azure-hdinsight"></a>Устранение ошибки нехватки памяти Apache Hive в Azure HDInsight
 
@@ -104,7 +104,7 @@ where (T1.KEY1 = T2.KEY1….
 
 Скорее всего, соединение с картой не является причиной ошибки нехватки памяти в куче. Как описано в записи блога [Hadoop Yarn memory settings in HDInsight](/archive/blogs/shanyu/hadoop-yarn-memory-settings-in-hdinsight) (Параметры памяти Hadoop Yarn в HDInsight), при использовании модуля Tez используемое пространство кучи на самом деле принадлежит контейнеру Tez. Описание памяти контейнера Tez см. на рисунке ниже.
 
-![Схема памяти контейнера Tez: ошибка нехватки памяти Hive](./media/hdinsight-hadoop-hive-out-of-memory-error-oom/hive-out-of-memory-error-oom-tez-container-memory.png)
+:::image type="content" source="./media/hdinsight-hadoop-hive-out-of-memory-error-oom/hive-out-of-memory-error-oom-tez-container-memory.png" alt-text="Схема памяти контейнера Tez: ошибка нехватки памяти Hive" border="false":::
 
 Как следует из записи блога, два следующих параметра памяти определяют контейнер памяти для кучи: **hive.tez.container.size** и **hive.tez.java.opts**. Из нашего опыта исключение нехватки памяти не означает, что размер контейнера слишком мал. Оно означает, что размер кучи Java (hive.tez.java.opts) слишком мал. Поэтому каждый раз, когда вы видите ошибку нехватки памяти, можно попытаться увеличить **hive.tez.java.opts**. При необходимости может потребоваться увеличение параметра **hive.tez.container.size**. Параметр **Java.opts** должен составлять около 80 % от **container.size**.
 

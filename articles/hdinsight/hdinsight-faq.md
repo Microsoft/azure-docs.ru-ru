@@ -8,12 +8,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive,seoapr2020
 ms.topic: conceptual
 ms.date: 11/20/2019
-ms.openlocfilehash: 84124f33f6aa02f63c0c47a24bd7d2a71ced2d11
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 47f0ea34fa650371d39252ce6b0ee6a15f3124d6
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101699306"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871186"
 ---
 # <a name="azure-hdinsight-frequently-asked-questions"></a>Azure HDInsight. Часто задаваемые вопросы
 
@@ -78,11 +78,11 @@ ms.locfileid: "101699306"
 1. Откройте веб-интерфейс Ambari в `https://CLUSTERNAME.azurehdinsight.net` , где имя_кластера — это имя кластера.
 2. В правом верхнем углу выберите Admin | Параметры. 
 
-   ![Параметры Ambari](media/hdinsight-faq/ambari-settings.png)
+   :::image type="content" source="media/hdinsight-faq/ambari-settings.png" alt-text="Параметры Ambari":::
 
 3. В окне Параметры пользователя выберите новый часовой пояс в раскрывающемся списке Timezone (часовой пояс) и нажмите кнопку Сохранить.
 
-   ![Параметры пользователя Ambari](media/hdinsight-faq/ambari-user-settings.png)
+   :::image type="content" source="media/hdinsight-faq/ambari-user-settings.png" alt-text="Параметры пользователя Ambari":::
 
 ## <a name="metastore"></a>Хранилище мета-данных
 
@@ -212,7 +212,7 @@ LLAP включен по соображениям безопасности (Apac
 Эта цель достигается двумя способами: 1 — можно повторно создать кластер и добавить дополнительную группу во время создания кластера. Если вы используете синхронизацию с заданной областью в AAD-DS, убедитесь, что Группа B включена в синхронизацию с заданной областью.
 2. Добавьте группу в качестве вложенной подгруппы предыдущей группы, которая использовалась для создания кластера ESP. Например, если вы создали кластер ESP с группой `A` , позднее можно добавить группу в `B` качестве вложенной подгруппы, `A` а через примерно один час она будет синхронизирована и доступна в кластере автоматически. 
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 ### <a name="can-i-add-an-azure-data-lake-storage-gen2-to-an-existing-hdinsight-cluster-as-an-additional-storage-account"></a>Можно ли добавить Azure Data Lake Storage 2-го поколения в существующий кластер HDInsight в качестве дополнительной учетной записи хранения?
 

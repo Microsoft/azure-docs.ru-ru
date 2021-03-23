@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 04/24/2020
-ms.openlocfilehash: e21361b6d491f53f41754831d2bdf896ef2719db
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 33171527f03b0cc386f683f55f6cf9a70913abdb
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101091435"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871220"
 ---
 # <a name="manage-apache-hadoop-clusters-in-hdinsight-by-using-the-azure-portal"></a>Управление кластерами Apache Hadoop в HDInsight с помощью портала Azure
 
@@ -18,7 +18,7 @@ ms.locfileid: "101091435"
 
 С помощью [портал Azure](https://portal.azure.com)вы можете управлять кластерами [Apache Hadoop](https://hadoop.apache.org/) в Azure HDInsight. Используйте другие вкладки выше, чтобы перейти к статьям об управлении кластерами Hadoop в HDInsight с помощью других инструментов.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Существующий кластер Apache Hadoop в HDInsight.  См. статью [Создание кластеров под управлением Linux в HDInsight с помощью портала Azure](hdinsight-hadoop-create-linux-clusters-portal.md).
 
@@ -36,7 +36,7 @@ ms.locfileid: "101091435"
 
 Выберите имя кластера на странице [**кластеры HDInsight**](#showClusters) .  Откроется представление **Обзор**, которое будет выглядеть следующим образом.
 
-![Основная информация о кластере HDInsight на портале Azure](./media/hdinsight-administer-use-portal-linux/hdinsight-essentials2.png)
+:::image type="content" source="./media/hdinsight-administer-use-portal-linux/hdinsight-essentials2.png" alt-text="Основная информация о кластере HDInsight на портале Azure":::
 
 **Строка меню сверху**  
 
@@ -173,7 +173,7 @@ Ambari предоставляет интуитивно понятный и пр�
 
 1. Выберите **Панели мониторинга кластера**.
 
-    ![Меню кластера HDInsight Apache Hadoop](./media/hdinsight-administer-use-portal-linux/hdinsight-azure-portal-cluster-menu2.png)
+    :::image type="content" source="./media/hdinsight-administer-use-portal-linux/hdinsight-azure-portal-cluster-menu2.png" alt-text="Меню кластера HDInsight Apache Hadoop":::
 
 1. Выберите **домашнюю страницу Ambari** на новой странице.
 1. Введите имя пользователя для входа в кластер и пароль.  Имя пользователя кластера по умолчанию — _admin_.

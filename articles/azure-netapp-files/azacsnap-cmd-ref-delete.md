@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: reference
 ms.date: 12/14/2020
 ms.author: phjensen
-ms.openlocfilehash: 0e2e4beebedb93524da43c5a3fad750b0295f5cd
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 1f2c767d45bb08e25a057c7db1f380ceb250f607
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97632912"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864913"
 ---
 # <a name="delete-using-azure-application-consistent-snapshot-tool-preview"></a>Удаление с помощью средства создания моментальных снимков с единообразием приложений Azure (Предварительная версия)
 
@@ -36,11 +36,11 @@ ms.locfileid: "97632912"
 
 `-c delete`Команда имеет следующие параметры.
 
-- `--delete hana` При использовании с параметрами `--hanasid <SID>` и `--hanabackupid <HANA backup id>` удалит записи из каталога резервного копирования SAP Hana, соответствующего критериям.
+- `--delete hana` При использовании с параметрами `--dbsid <SID>` и `--hanabackupid <HANA backup id>` удалит записи из каталога резервного копирования SAP Hana, соответствующего критериям.
 
 - `--delete storage` При использовании с параметром `--snapshot <snapshot name>` будет удален моментальный снимок из серверной системы хранения.
 
-- `--delete sync` При использовании с параметрами `--hanasid <SID>` и `--hanabackupid <HANA backup id>` получает имя моментального снимка хранилища из каталога резервного копирования для `<HANA backup id>` , а затем удаляет запись из каталога резервного копирования _и_ моментальный снимок с любого тома, содержащего именованный моментальный снимок.
+- `--delete sync` При использовании с параметрами `--dbsid <SID>` и `--hanabackupid <HANA backup id>` получает имя моментального снимка хранилища из каталога резервного копирования для `<HANA backup id>` , а затем удаляет запись из каталога резервного копирования _и_ моментальный снимок с любого тома, содержащего именованный моментальный снимок.
 
 - `--delete sync` При использовании с `--snapshot <snapshot name>` будет проверять наличие записей в каталоге резервного копирования для `<snapshot name>` , получает SAP HANA идентификатор резервного копирования и удаляет запись из каталога резервных копий _и_ моментальный снимок из любого тома, содержащего именованный моментальный снимок.
 
@@ -51,7 +51,7 @@ ms.locfileid: "97632912"
 ### <a name="delete-a-snapshot-using-sync-option"></a>Удаление моментального снимка с помощью `sync` параметра
 
 ```bash
-azacsnap -c delete --delete sync --hanasid H80 --hanabackupid 157979797979
+azacsnap -c delete --delete sync --dbsid H80 --hanabackupid 157979797979
 ```
 
 > [!NOTE]
@@ -67,7 +67,7 @@ azacsnap -c delete --delete sync --snapshot hana_hourly.2020-01-22_2358
 ### <a name="delete-a-snapshot-using-hana-option"></a>Удаление моментального снимка с помощью `hana` параметра
 
 ```bash
-azacsnap -c delete --delete hana --hanasid H80 --hanabackupid 157979797979
+azacsnap -c delete --delete hana --dbsid H80 --hanabackupid 157979797979
 ```
 
 > [!NOTE]

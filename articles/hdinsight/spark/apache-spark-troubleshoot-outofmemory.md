@@ -4,12 +4,12 @@ description: Различные исключения OutOfMemoryError для к�
 ms.service: hdinsight
 ms.topic: troubleshooting
 ms.date: 08/15/2019
-ms.openlocfilehash: a15d79f2ae9c3d20a73ec557c57a5c189b18111b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: dd33972810ab3b0d51bbd82282d0e6cf6cd9d96c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946345"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868670"
 ---
 # <a name="outofmemoryerror-exceptions-for-apache-spark-in-azure-hdinsight"></a>Исключения OutOfMemoryError для Apache Spark в Azure HDInsight
 
@@ -59,7 +59,7 @@ java.lang.OutOfMemoryError
 
 1. Убедитесь, что в кластере HDInsight, который должен использоваться, достаточно ресурсов, таких как память и количество ядер, для работы приложения Spark. Это можно определить, просмотрев раздел метрики кластера в пользовательском интерфейсе YARN в кластере на предмет значений **используемой памяти** и **общего объема памяти** , а также **виртуальных ядер, используемых** в сравнении с **виртуальных ядер**.
 
-    ![представление памяти Yarn Core](./media/apache-spark-ts-outofmemory/yarn-core-memory-view.png)
+    :::image type="content" source="./media/apache-spark-ts-outofmemory/yarn-core-memory-view.png" alt-text="представление памяти Yarn Core" border="true":::
 
 1. Задайте для следующих конфигураций Spark соответствующие значения. Балансировка требований приложения с помощью доступных ресурсов в кластере. Эти значения не должны превышать 90% доступной памяти и ядер, отображаемых YARN, а также должны соответствовать минимальным требованиям к памяти для приложения Spark:
 
@@ -117,11 +117,11 @@ hadoop fs -du -s -h wasb:///hdp/spark2-events/application_1503957839788_0264_1/
 
 Это можно сделать в пользовательском интерфейсе браузера Ambari, выбрав раздел Spark2/config/Advanced Spark2-env.
 
-![Расширенный раздел spark2-env](./media/apache-spark-ts-outofmemory-heap-space/apache-spark-image01.png)
+:::image type="content" source="./media/apache-spark-ts-outofmemory-heap-space/apache-spark-image01.png" alt-text="Расширенный раздел spark2-env" border="true":::
 
 Добавьте следующее свойство, чтобы изменить объем памяти сервера журнала Spark с 1 ГБ на 4G: `SPARK_DAEMON_MEMORY=4g` .
 
-![Spark, свойство](./media/apache-spark-ts-outofmemory-heap-space/apache-spark-image02.png)
+:::image type="content" source="./media/apache-spark-ts-outofmemory-heap-space/apache-spark-image02.png" alt-text="Spark, свойство" border="true":::
 
 Не забудьте перезапустить все затронутые службы из Ambari.
 

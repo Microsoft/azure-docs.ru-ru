@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 02/08/2021
+ms.date: 03/19/2021
 ms.author: b-juche
-ms.openlocfilehash: 7bbedae3d2dd080819b295d815bec68309916a6e
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: 46fe7570b7b9ea9446918d407dbe87596b8d0496
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "104803765"
+ms.locfileid: "104863910"
 ---
 #  <a name="benefits-of-using-azure-netapp-files-for-sql-server-deployment"></a>Преимущества использования Azure NetApp Files для развертывания SQL Server
 

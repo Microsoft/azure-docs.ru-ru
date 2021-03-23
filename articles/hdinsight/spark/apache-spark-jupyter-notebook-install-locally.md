@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020, devx-track-python
 ms.date: 04/23/2020
-ms.openlocfilehash: d5915316ee9d393b2481eeca6a5da7923b271d9f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6dc91dc07d11f195092343e657911a884d8bf475
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98930407"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866001"
 ---
 # <a name="install-jupyter-notebook-on-your-computer-and-connect-to-apache-spark-on-hdinsight"></a>Установка Jupyter Notebook на компьютере и подключение к Apache Spark в HDInsight
 
@@ -59,7 +59,7 @@ ms.locfileid: "98930407"
 
 1. В новом рабочем каталоге введите одну или несколько приведенных ниже команд, чтобы установить требуемые ядра.
 
-    |Ядро | Команда |
+    |Ядро | Get-Help |
     |---|---|
     |Spark|`jupyter-kernelspec install sparkmagic/kernels/sparkkernel`|
     |SparkR|`jupyter-kernelspec install sparkmagic/kernels/sparkrkernel`|
@@ -142,7 +142,7 @@ ms.locfileid: "98930407"
 
     а. Создайте новую записную книжку. В правом углу выберите **создать**. Вы должны увидеть ядро по умолчанию **Python 2** или **Python 3** и установленные ядра. Фактические значения могут различаться в зависимости от выбранных вариантов установки.  Выберите **PySpark**.
 
-    ![Доступные ядра в Jupyter Notebook](./media/apache-spark-jupyter-notebook-install-locally/jupyter-kernels-notebook.png "Ядра в Jupyter Notebook")
+    :::image type="content" source="./media/apache-spark-jupyter-notebook-install-locally/jupyter-kernels-notebook.png " alt-text="Доступные ядра в Jupyter Notebook" border="true":::
 
     > [!IMPORTANT]  
     > После выбора **нового** проверьте оболочку на наличие ошибок.  Если отображается сообщение об ошибке, `TypeError: __init__() got an unexpected keyword argument 'io_loop'` возможно, возникла известная проблема с определенными версиями Торнадо.  Если это так, завершите работу ядра, а затем понизить установку торнадо, выполнив следующую команду: `pip install tornado==4.5.3` .

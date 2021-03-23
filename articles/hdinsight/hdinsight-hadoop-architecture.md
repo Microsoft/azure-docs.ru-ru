@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 02/07/2020
-ms.openlocfilehash: 6f291e5aa440a3e6e45a1dcdb872e18c8d4557ce
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f69917b574c0be8fdacf05934b05544a4f491a9c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945904"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864199"
 ---
 # <a name="apache-hadoop-architecture-in-hdinsight"></a>Архитектура Apache Hadoop в HDInsight
 
@@ -42,7 +42,7 @@ NodeManager запускает задачи, составляющие прило
 
 YARN развертывается во всех типах кластера HDInsight. Для обеспечения высокого уровня доступности ResourceManager развертывается в двух экземплярах (первичный и вторичный), выполняющимися на первом и втором головных узлах в кластере соответственно. Одновременно может быть активным только один экземпляр ResourceManager. Экземпляры NodeManager выполняются на рабочих узлах, доступных в кластере.
 
-![Apache YARN в Azure HDInsight](./media/hdinsight-hadoop-architecture/apache-yarn-on-hdinsight.png)
+:::image type="content" source="./media/hdinsight-hadoop-architecture/apache-yarn-on-hdinsight.png" alt-text="Apache YARN в Azure HDInsight" border="false":::
 
 ## <a name="soft-delete"></a>Обратимое удаление
 

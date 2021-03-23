@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 01/12/2021
-ms.openlocfilehash: ff7cfe8ad09201df20db89e14f8c175e678e5107
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7027e4af9c11db628990d42430c6877340de3534
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929805"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868449"
 ---
 # <a name="manage-resources-for-apache-spark-cluster-on-azure-hdinsight"></a>Управление ресурсами для кластера Apache Spark в Azure HDInsight
 
@@ -28,7 +28,7 @@ ms.locfileid: "98929805"
 
 2. На **панели мониторинга кластера** выберите **Yarn**. При появлении запроса введите учетные данные администратора для кластера Spark.
 
-    ![Запуск пользовательского интерфейса YARN](./media/apache-spark-resource-manager/azure-portal-dashboard-yarn.png)
+    :::image type="content" source="./media/apache-spark-resource-manager/azure-portal-dashboard-yarn.png" alt-text="Запуск пользовательского интерфейса YARN" border="true":::
 
    > [!TIP]  
    > Также пользовательский интерфейс YARN можно открыть из пользовательского интерфейса Ambari. В пользовательском интерфейсе Ambari перейдите к **YARN**  >  **быстрые ссылки**  >  **Active**  >  **Диспетчер ресурсов Пользовательский интерфейс**.
@@ -43,15 +43,15 @@ ms.locfileid: "98929805"
 
 1. В пользовательском интерфейсе Ambari перейдите к **Spark2**  >  **configs**  >  **Custom Spark2 (значения по умолчанию)**.
 
-    ![Задание параметров с помощью Ambari Custom](./media/apache-spark-resource-manager/ambari-ui-spark2-configs.png "Задание параметров с помощью Ambari Custom")
+    :::image type="content" source="./media/apache-spark-resource-manager/ambari-ui-spark2-configs.png " alt-text="Задание параметров с помощью Ambari Custom" border="true":::
 
 1. Значения по умолчанию позволяют запустить в кластере одновременно четыре приложения Spark. Вы можете изменять эти значения из пользовательского интерфейса, как показано на следующем снимке экрана:
 
-    ![Изменение параметров с помощью Ambari](./media/apache-spark-resource-manager/ambari-ui-spark2-defaults.png "Изменение параметров с помощью Ambari")
+    :::image type="content" source="./media/apache-spark-resource-manager/ambari-ui-spark2-defaults.png " alt-text="Изменение параметров с помощью Ambari" border="true":::
 
 1. Нажмите кнопку **сохранить** , чтобы сохранить изменения конфигурации. В верхней части страницы будет предложено перезапустить все затронутые службы. Нажмите кнопку **Перезапустить**.
 
-    ![Перезапуск служб](./media/apache-spark-resource-manager/apache-ambari-restart-services.png)
+    :::image type="content" source="./media/apache-spark-resource-manager/apache-ambari-restart-services.png" alt-text="Перезапуск служб" border="true":::
 
 ### <a name="change-the-parameters-for-an-application-running-in-jupyter-notebook"></a>Изменение параметров для приложения, выполняемого в Jupyter Notebook
 
@@ -93,11 +93,11 @@ curl -k -v -H 'Content-Type: application/json' -X POST -d '{"file":"<location of
 
 * Разверните категорию **Advanced spark2-Thrift-sparkconf** , чтобы обновить параметры `spark.dynamicAllocation.maxExecutors` , и `spark.dynamicAllocation.minExecutors` .
 
-    ![Настройка сервера Thrift Spark](./media/apache-spark-resource-manager/ambari-ui-advanced-thrift-sparkconf.png "Настройка сервера Thrift Spark")
+    :::image type="content" source="./media/apache-spark-resource-manager/ambari-ui-advanced-thrift-sparkconf.png " alt-text="Настройка сервера Thrift Spark" border="true":::
 
 * Разверните **пользовательскую категорию spark2-Thrift-sparkconf** , чтобы обновить параметры `spark.executor.cores` , и `spark.executor.memory` .
 
-    ![Настройка параметра сервера Spark Thrift](./media/apache-spark-resource-manager/ambari-ui-custom-thrift-sparkconf.png "Настройка параметра сервера Spark Thrift")
+    :::image type="content" source="./media/apache-spark-resource-manager/ambari-ui-custom-thrift-sparkconf.png " alt-text="Настройка параметра сервера Spark Thrift" border="true":::
 
 ### <a name="change-the-driver-memory-of-the-spark-thrift-server"></a>Изменение памяти драйверов для сервера Thrift Spark
 
@@ -113,38 +113,38 @@ curl -k -v -H 'Content-Type: application/json' -X POST -d '{"file":"<location of
 
 2. На следующей странице выберите **Spark2 Thrift серверы**.
 
-    ![Перезапуск Thrift Server1](./media/apache-spark-resource-manager/ambari-ui-spark2-thrift-servers.png "Перезапуск Thrift Server1")
+    :::image type="content" source="./media/apache-spark-resource-manager/ambari-ui-spark2-thrift-servers.png " alt-text="Перезапуск Thrift Server1" border="true":::
 
 3. Вы должны увидеть два головных узлах, на которых работает сервер Spark2 Thrift. Выберите один из головных узлах.
 
-    ![Перезапуск Thrift Server2](./media/apache-spark-resource-manager/restart-thrift-server-2.png "Перезапуск Thrift Server2")
+    :::image type="content" source="./media/apache-spark-resource-manager/restart-thrift-server-2.png " alt-text="Перезапуск Thrift Server2" border="true":::
 
 4. На следующей странице перечислены все службы, запущенные на выбранном головном узле. В списке нажмите кнопку раскрывающегося списка рядом с пунктом Spark2 Thrift Server, а затем выберите пункт **остановки**.
 
-    ![Перезапустить Thrift Server3](./media/apache-spark-resource-manager/ambari-ui-spark2-thriftserver-restart.png "Перезапустить Thrift Server3")
+    :::image type="content" source="./media/apache-spark-resource-manager/ambari-ui-spark2-thriftserver-restart.png " alt-text="Перезапустить Thrift Server3" border="true":::
 5. Повторите эти действия на другом головном узле.
 
 ## <a name="restart-the-jupyter-service"></a>Перезапуск службы Jupyter
 
 Откройте пользовательский веб-интерфейс Ambari, как показано в начале статьи. В левой области навигации выберите **Jupyter**, выберите **действия службы**, а затем выберите **перезапустить все**. Служба Jupyter запустится на всех головных узлах.
 
-![Перезапуск Jupyter](./media/apache-spark-resource-manager/apache-ambari-restart-jupyter.png "Перезапуск Jupyter")
+:::image type="content" source="./media/apache-spark-resource-manager/apache-ambari-restart-jupyter.png " alt-text="Перезапуск Jupyter" border="true":::
 
 ## <a name="monitor-resources"></a>Мониторинг ресурсов
 
 Откройте пользовательский интерфейс Yarn, как показано в начале статьи. В таблице метрик кластера в верхней части экрана проверьте значения столбцов **Memory Used** (Используемая память) и **Memory Total** (Всего памяти). Если эти два значения близки, то для запуска следующего приложения может не хватить ресурсов. То же самое относится к столбцам **VCores Used** (Используемые ядра VCore) и **VCores Total** (Всего ядер VCore). Кроме того, в основном представлении, если приложение неизменности в **принятом** состоянии и не переходит в состояние **выполнения** или **сбоя** , это также может означать, что недостаточно ресурсов для запуска.
 
-![Ограничение ресурсов](./media/apache-spark-resource-manager/apache-ambari-resource-limit.png "Ограничение ресурсов")
+:::image type="content" source="./media/apache-spark-resource-manager/apache-ambari-resource-limit.png " alt-text="Ограничение ресурсов" border="true":::
 
 ## <a name="kill-running-applications"></a>Завершение работы запущенных приложений
 
 1. В пользовательском интерфейсе Yarn на панели слева выберите пункт **выполняется**. В списке выполняющихся приложений определите приложение, которое должно быть завершено, и выберите **идентификатор**.
 
-    ![Уничтожить App1](./media/apache-spark-resource-manager/apache-ambari-kill-app1.png "Уничтожить App1")
+    :::image type="content" source="./media/apache-spark-resource-manager/apache-ambari-kill-app1.png " alt-text="Уничтожить App1" border="true":::
 
 2. Выберите **Закрыть приложение** в правом верхнем углу, а затем нажмите кнопку **ОК**.
 
-    ![Завершить работу](./media/apache-spark-resource-manager/apache-ambari-kill-app2.png "Завершить работу")
+    :::image type="content" source="./media/apache-spark-resource-manager/apache-ambari-kill-app2.png " alt-text="Завершить работу" border="true":::
 
 ## <a name="see-also"></a>См. также раздел
 

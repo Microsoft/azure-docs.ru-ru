@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020
 ms.date: 04/20/2020
-ms.openlocfilehash: 5bc9acea219e5d111700840149a26c127b47514d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d3c5077450dd4ec59f5ea7bc8f37879f9aa775bf
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98943071"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868942"
 ---
 # <a name="process-and-analyze-json-documents-by-using-apache-hive-in-azure-hdinsight"></a>Обработка и анализ документов JSON с использованием Apache Hive в Azure HDInsight
 
@@ -93,7 +93,7 @@ SELECT * FROM StudentsOneLine
 
 Вот результат выполнения инструкции **SELECT**:
 
-![Обработка документа JSON с помощью HDInsight](./media/using-json-in-hive/hdinsight-flatten-json.png)
+:::image type="content" source="./media/using-json-in-hive/hdinsight-flatten-json.png" alt-text="Обработка документа JSON с помощью HDInsight" border="true":::
 
 ## <a name="analyze-json-documents-in-hive"></a>Анализ документов JSON в Hive
 
@@ -119,7 +119,7 @@ FROM StudentsOneLine;
 
 Вот какие результаты дает выполнение этого запроса в окне консоли:
 
-![Apache Hive получает объект UDF объекта JSON](./media/using-json-in-hive/hdinsight-get-json-object.png)
+:::image type="content" source="./media/using-json-in-hive/hdinsight-get-json-object.png" alt-text="Apache Hive получает объект UDF объекта JSON" border="true":::
 
 У определяемой пользователем функции GET_JSON_OBJECT есть некоторые ограничения.
 
@@ -141,7 +141,7 @@ LATERAL VIEW JSON_TUPLE(jt.json_body, 'StudentId', 'Grade') q1
 
 Выходные данные этого сценария в консоли Hive:
 
-![Apache Hive результатов запроса JSON](./media/using-json-in-hive/hdinsight-json-tuple.png)
+:::image type="content" source="./media/using-json-in-hive/hdinsight-json-tuple.png" alt-text="Apache Hive результатов запроса JSON" border="true":::
 
 `json_tuple`UDF использует синтаксис [представления бокового смещения](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+LateralView) в Hive, который позволяет \_ кортежу JSON создать виртуальную таблицу, применяя функцию определяемого пользователем типа к каждой строке исходной таблицы. Из-за многократного использования **LATERAL VIEW** синтаксис сложных документов JSON становится слишком громоздким. Кроме того, **JSON_TUPLE** не может управлять вложенными JSON.
 
@@ -149,7 +149,7 @@ LATERAL VIEW JSON_TUPLE(jt.json_body, 'StudentId', 'Grade') q1
 
 SerDe отлично подходит для синтаксического анализа вложенных документов JSON. Он позволяет определить схему JSON, а затем использовать ее для синтаксического анализа документов. См. инструкции по [использованию пользовательского формата SerDe JSON с Microsoft Azure HDInsight](https://web.archive.org/web/20190217104719/https://blogs.msdn.microsoft.com/bigdatasupport/2014/06/18/how-to-use-a-custom-json-serde-with-microsoft-azure-hdinsight/).
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 Тип оператора JSON в выбранном Hive зависит от сценария. Используя простой документ JSON и одно поле для поиска, выберите параметр UDF **Get_json_object** Hive. При наличии нескольких ключей для поиска можно использовать **json_tuple**. Для вложенных документов используйте **JSON SerDe**.
 

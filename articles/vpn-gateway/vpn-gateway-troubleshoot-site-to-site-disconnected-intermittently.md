@@ -6,14 +6,14 @@ titleSuffix: Azure VPN Gateway
 author: chadmath
 ms.service: vpn-gateway
 ms.topic: troubleshooting
-ms.date: 02/10/2021
+ms.date: 03/22/2021
 ms.author: genli
-ms.openlocfilehash: 582077c46f5fc7176b457cf0d392af48fbe7d40b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 38846bbe717912092ccfe2b236b717770b79302f
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100369345"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867259"
 ---
 # <a name="troubleshooting-azure-site-to-site-vpn-disconnects-intermittently"></a>Устранение проблемы периодических разрывов подключений VPN типа "сеть — сеть" Azure
 
@@ -27,7 +27,7 @@ ms.locfileid: "100369345"
 
 Проверьте тип шлюза виртуальной сети Azure.
 
-1. Перейдите в [портал Azure](https://portal.azure.com).
+1. Перейдите на [портал Azure](https://portal.azure.com).
 2. Ознакомьтесь со страницей **обзора** шлюза виртуальной сети, чтобы получить сведения о типе шлюза.
     
     ![Обзор шлюза](media/vpn-gateway-troubleshoot-site-to-site-disconnected-intermittently/gatewayoverview.png)
@@ -56,9 +56,7 @@ ms.locfileid: "100369345"
 
 ### <a name="step-6-check-on-premises-vpn-device-external-interface-address"></a>Шаг 6. Проверьте внешний адрес интерфейса для локального VPN-устройства
 
-- Если IP-адрес для Интернета VPN-устройства включен в определение **шлюза локальной сети** в Azure, вы можете столкнуться с нерегулярными отключениями.
-- К внешнему интерфейсу устройства должен быть прямой доступ через Интернет. Между Интернетом и устройством не должно использоваться преобразование сетевых адресов (NAT) или брандмауэр.
--  Если вы настраивайте виртуальный IP-адрес для кластеризации брандмауэра, вы должны отключить кластер и предоставить устройство VPN непосредственно общедоступному интерфейсу, с которым может взаимодействовать шлюз.
+Если IP-адрес для Интернета VPN-устройства включен в определение **шлюза локальной сети** в Azure, вы можете столкнуться с нерегулярными отключениями.
 
 ### <a name="step-7-check-whether-the-on-premises-vpn-device-has-perfect-forward-secrecy-enabled"></a>Шаг 7. Проверьте, включена ли для локального VPN-устройства функция полной безопасности пересылки
 

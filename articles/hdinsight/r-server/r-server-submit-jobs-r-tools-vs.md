@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: conceptual
 ms.date: 06/19/2019
-ms.openlocfilehash: c5a0b2d21f7d42b8ce96f72d58e5d0a8ab0c572c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ee984de22052076618728fbacfc31b73c18c073a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98943948"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864692"
 ---
 # <a name="submit-jobs-from-r-tools-for-visual-studio"></a>Отправка заданий из расширения "Инструменты R для Visual Studio"
 
@@ -22,7 +22,7 @@ ms.locfileid: "98943948"
 
 1. Установите [Инструменты R для Visual Studio](/visualstudio/rtvs/installing-r-tools-for-visual-studio).
 
-    ![Установка RTVS в Visual Studio 2017](./media/r-server-submit-jobs-r-tools-vs/install-r-tools-for-vs.png)
+    :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/install-r-tools-for-vs.png" alt-text="Установка RTVS в Visual Studio 2017" border="true":::
 
 2. Выберите рабочую нагрузку *Приложения для обработки и анализа данных и аналитические приложения*, а затем выберите пункты **Поддержка языка R**, **Поддержка среды выполнения для разработки R** и **Microsoft R Client**.
 
@@ -38,7 +38,7 @@ ms.locfileid: "98943948"
 
    2. Перейдите в пункт меню **Инструменты R**, а затем выберите **Параметры обработки и анализа данных...**
 
-       ![Visual Studio Параметры обработки и анализа данных](./media/r-server-submit-jobs-r-tools-vs/data-science-settings.png)
+       :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/data-science-settings.png" alt-text="Visual Studio Параметры обработки и анализа данных" border="true":::
 
       > [!NOTE]  
       > С помощью подхода из шага 1 вы также можете сохранить и восстановить персонализированный макет обработки и анализа данных вместо того, чтобы повторять команду **Параметры обработки и анализа данных**.
@@ -53,11 +53,11 @@ ms.locfileid: "98943948"
 6. Начиная сверху файла, нажимайте клавиши CTRL+ENTER, чтобы по очереди отправлять каждую строку в интерактивное окно R. Для некоторых строк это может занять определенное время, так как код в них устанавливает новые пакеты.
     * Кроме того, вы можете выбрать все строки в файле R (CTRL+A) и выполнить их все (CTRL+ENTER) либо на панели инструментов выбрать значок выполнения в интерактивном режиме.
 
-        ![Интерактивное выполнение Visual Studio](./media/r-server-submit-jobs-r-tools-vs/execute-interactive1.png)
+        :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/execute-interactive1.png" alt-text="Интерактивное выполнение Visual Studio" border="true":::
 
 7. Когда все строки в сценарии будут выполнены, у вас должен быть следующий результат:
 
-    ![Инструменты R рабочей области Visual Studio](./media/r-server-submit-jobs-r-tools-vs/visual-studio-workspace.png)
+    :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/visual-studio-workspace.png" alt-text="Инструменты R рабочей области Visual Studio" border="true":::
 
 ## <a name="submit-jobs-to-an-hdinsight-ml-services-cluster"></a>Отправка заданий в кластер HDInsight R для Служб машинного обучения
 
@@ -93,7 +93,7 @@ ms.locfileid: "98943948"
     rxSetComputeContext(mySparkCluster)
     ```
 
-   ![Установка контекста Apache Spark](./media/r-server-submit-jobs-r-tools-vs/apache-spark-context.png)
+   :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/apache-spark-context.png" alt-text="Установка контекста Apache Spark" border="true":::
 
 1. В интерактивном окне R выполните следующие команды:
 
@@ -105,22 +105,23 @@ ms.locfileid: "98943948"
 
     Должен отобразиться результат, аналогичный приведенному ниже:
 
-    ![Успешное ](./media/r-server-submit-jobs-r-tools-vs/successful-rx-commands.png) выполнение команды RX
+    :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/successful-rx-commands.png" alt-text="Успешное выполнение команды rx" border="true":::
+а
 1. Убедитесь, что команда `rxHadoopCopy` успешно скопировала файл `people.json` из папки данных для примера в недавно созданную папку `/user/RevoShare/newUser`:
 
     1. На панели кластера HDInsight для Служб машинного обучения в Azure в меню слева выберите **Учетные записи хранения**.
 
-        ![Учетные записи хранения Azure HDInsight](./media/r-server-submit-jobs-r-tools-vs/hdinsight-storage-accounts.png)
+        :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/hdinsight-storage-accounts.png" alt-text="Учетные записи хранения Azure HDInsight" border="true":::
 
     2. Выберите учетную запись хранения по умолчанию для своего кластера, записав имя контейнера и каталога.
 
     3. На панели учетных записей хранения в меню слева выберите **Контейнеры**.
 
-        ![Контейнеры хранилища Azure HDInsight](./media/r-server-submit-jobs-r-tools-vs/hdi-storage-containers.png)
+        :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/hdi-storage-containers.png" alt-text="Контейнеры хранилища Azure HDInsight" border="true":::
 
     4. Выберите имя контейнера вашего кластера, перейдите в папку **пользователя** (возможно, внизу списка нужно будет нажать *Загрузить еще*), выберите *RevoShare*, а затем — **newUser**. Файл `people.json` должен появиться в папке `newUser`.
 
-        ![Расположение папки "скопированные файлы HDInsight"](./media/r-server-submit-jobs-r-tools-vs/hdinsight-copied-file.png)
+        :::image type="content" source="./media/r-server-submit-jobs-r-tools-vs/hdinsight-copied-file.png" alt-text="Расположение папки &quot;скопированные файлы HDInsight&quot;" border="true":::
 
 1. После этого остановите выполнение текущего контекста Apache Spark. Одновременное выполнение нескольких контекстов не поддерживается.
 

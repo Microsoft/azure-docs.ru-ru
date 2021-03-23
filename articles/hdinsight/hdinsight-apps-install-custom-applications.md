@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 11/29/2019
-ms.openlocfilehash: 9591551b7d5657803e770bd71b47acb141b40fb6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 19dd5bf94b524ff3eb6eb601c77b503a0040bd75
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942697"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867650"
 ---
 # <a name="install-custom-apache-hadoop-applications-on-azure-hdinsight"></a>Установка пользовательских приложений Apache Hadoop в Azure HDInsight
 
@@ -106,13 +106,13 @@ ms.locfileid: "98942697"
 
     Откройте кластер на портале и выберите приложения из параметров:
 
-    ![приложения hdinsight приложение ошибка установки](./media/hdinsight-apps-install-custom-applications/hdinsight-apps-error.png)
+    :::image type="content" source="./media/hdinsight-apps-install-custom-applications/hdinsight-apps-error.png" alt-text="приложения hdinsight приложение ошибка установки":::
 
 * Действие сценария HDInsight: если сообщение об ошибке приложений HDInsight указывает на сбой действия сценария, дополнительные сведения о сбое сценария отобразятся на панели действий сценария.
 
     Выберите действие скрипта в параметрах. Журнал действий сценария отображает сообщения об ошибках.
 
-    ![приложения hdinsight ошибка действия сценария](./media/hdinsight-apps-install-custom-applications/hdinsight-apps-script-action-error.png)
+    :::image type="content" source="./media/hdinsight-apps-install-custom-applications/hdinsight-apps-script-action-error.png" alt-text="приложения hdinsight ошибка действия сценария":::
 
 * Веб-интерфейс Apache Ambari. Если сценарий установки был причиной сбоя, используйте пользовательский веб-интерфейс Ambari для проверки полных журналов сценариев установки.
 
