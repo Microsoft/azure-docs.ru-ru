@@ -8,19 +8,29 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 03/09/2021
+ms.date: 03/22/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: b15c63545c71d4513abe9102b4de165e2ab5857a
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: dc52414fa0d2eeffe0381a68bd66eadafe4862ea
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102499855"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781285"
 ---
 # <a name="page-layout-versions"></a>Версии макета страницы
 
 Пакеты макета страницы периодически обновляются для включения исправлений и улучшений в элементы страницы. В следующем журнале изменений указаны изменения, появившиеся в каждой версии.
+
+## <a name="jquery-version"></a>версия jQuery
+
+Azure AD B2C макете страницы используется следующая версия [библиотеки jQuery](https://jquery.com/):
+
+|Из версии макета страницы  |версия jQuery  |
+|---------|---------|
+|2.1.4 | 3.5.1 |
+|1.2.0 | 3.4.1 |
+|1.1.0 | 1.10.2 |
 
 ## <a name="self-asserted-page-selfasserted"></a>Страница с автоматическим подтверждением (selfasserted)
 
@@ -186,6 +196,6 @@ ms.locfileid: "102499855"
 
 - Начальный выпуск
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о настройке пользовательского интерфейса в пользовательских политиках см. в статье [Настройка пользовательского интерфейса приложения с помощью настраиваемой политики](customize-ui-with-html.md).

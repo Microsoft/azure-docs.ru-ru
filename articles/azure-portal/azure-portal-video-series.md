@@ -2,14 +2,14 @@
 title: Серия видеоинструкций по работе с порталом Azure
 description: Ознакомьтесь с видеороликами о работе со службами Azure на портале. Просматривайте и применяйте ссылки непосредственно на последние видеоролики.
 keywords: ''
-ms.date: 10/05/2020
+ms.date: 03/16/2021
 ms.topic: conceptual
-ms.openlocfilehash: d0b356729f2fab418b2322aeb20a44fc74cb199c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: aeb80f0ac9b160747d75a50acc7c21b211c9fe28
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99550447"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771521"
 ---
 # <a name="azure-portal-how-to-video-series"></a>Серия видеоинструкций по работе с порталом Azure
 
@@ -17,17 +17,17 @@ ms.locfileid: "99550447"
 
 ## <a name="featured-video"></a>Рекомендованное видео
 
-В этом видеоролике мы покажем, как использовать представления службы "Управление затратами Azure".
+В этом видеоролике мы покажем, как создавать вкладки и оповещения в книгах Azure.
 
-> [!VIDEO https://www.youtube.com/embed/VRJA5bn2VH0]
+> [!VIDEO https://www.youtube.com/embed/3XY3lYgrRvA]
 
-[Использование представлений службы "Управление затратами Azure"](https://www.youtube.com/watch?v=VRJA5bn2VH0)
+[Создание вкладок и предупреждений в книгах Azure](https://www.youtube.com/watch?v=3XY3lYgrRvA)
 
 Проявляйте последние видеоматериалы, которые могли быть пропущены:
 
-| [Использование пилюли для фильтрации в портал Azure](https://www.youtube.com/watch?v=XyKh_3NxUlM)  | [Как получить представление о ресурсах с помощью визуализации](https://www.youtube.com/watch?v=wudqkkJd5E4)  | [Как закрепить содержимое на панели мониторинга портал Azure](https://www.youtube.com/watch?v=eyOJkhYItSg) |
+| [Как легко управлять виртуальной машиной](https://www.youtube.com/watch?v=vQClJHt2ulQ) | [Использование пилюли для фильтрации в портал Azure](https://www.youtube.com/watch?v=XyKh_3NxUlM)  | [Как получить представление о ресурсах с помощью визуализации](https://www.youtube.com/watch?v=wudqkkJd5E4) |
 | ------| ------ | ------ |
-| [![Изображение видео YouTube о том, как использовать пилюли для фильтрации в портал Azure](https://i.ytimg.com/vi/XyKh_3NxUlM/hqdefault.jpg)](https://www.youtube.com/watch?XyKh_3NxUlM) | [![Изображение видео YouTube о том, как получить представление о ресурсах с помощью визуализации](https://i.ytimg.com/vi/wudqkkJd5E4/hqdefault.jpg)](http://www.youtube.com/watch?v=wudqkkJd5E4) | [![Изображение видео YouTube о том, как закрепить содержимое на панели мониторинга портал Azure](https://i.ytimg.com/vi/eyOJkhYItSg/hqdefault.jpg)](http://www.youtube.com/watch?v=eyOJkhYItSg) |
+| [![Изображение YouTube видео о том, как легко управлять виртуальной машиной](https://i.ytimg.com/vi/vQClJHt2ulQ/hqdefault.jpg)](http://www.youtube.com/watch?v=vQClJHt2ulQ) | [![Изображение видео YouTube о том, как использовать пилюли для фильтрации в портал Azure](https://i.ytimg.com/vi/XyKh_3NxUlM/hqdefault.jpg)](https://www.youtube.com/watch?v=XyKh_3NxUlM) | [![Изображение видео YouTube о том, как получить представление о ресурсах с помощью визуализации](https://i.ytimg.com/vi/wudqkkJd5E4/hqdefault.jpg)](http://www.youtube.com/watch?v=wudqkkJd5E4) |
 
 ## <a name="video-playlist"></a>Список воспроизведения видео
 

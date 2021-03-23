@@ -1,18 +1,14 @@
 ---
 title: Настройка высокого уровня доступности
 description: Увеличьте устойчивость защитника для развертывания IoT, установив локальное устройство консоли управления с высоким уровнем доступности. Развертывания с высоким уровнем доступности гарантируют непрерывный отчет управляемых датчиков в активную локальную консоль управления.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/07/2020
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: eb5f2c6293042f44de5e3c061c6d379bee6e5b06
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d0e09cd37fbae91d1903ca8f175c0592b567da6e
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100523895"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781659"
 ---
 # <a name="about-high-availability"></a>О высокой доступности
 

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.date: 04/16/2020
-ms.openlocfilehash: 4061df2dfcfb4cf993e2312fb3438de66863a476
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 717c3c8052c89825b161f77614d7411c5912d1cd
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942681"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799910"
 ---
 # <a name="use-empty-edge-nodes-on-apache-hadoop-clusters-in-hdinsight"></a>Использование пустых граничных узлов в кластерах Apache Hadoop в HDInsight
 
@@ -58,7 +58,7 @@ ms.locfileid: "98942681"
 > [!WARNING]
 > Пользовательские компоненты, установленные на граничном узле, получают коммерчески оправданную поддержку от компании Майкрософт. В результате могут быть устранены возникающие проблемы. Или вы можете обратиться к ресурсам сообщества для получения дополнительной помощи. Ниже приведены некоторые из наиболее активных сайтов для получения помощи от сообщества.
 >
-> * [Microsoft Q&страница вопросов для HDInsight] (/АНСВЕРС/топикс/azure-hdinsight.html
+> * [Страница вопросов и ответов по Microsoft Q&для HDInsight](/answers/topics/azure-hdinsight.html)
 > * [https://stackoverflow.com](https://stackoverflow.com).
 >
 > При использовании технологии Apache можно получить помощь на соответствующих сайтах для проектов Apache, например [Apache Hadoop](https://hadoop.apache.org/) на сайте [https://apache.org](https://apache.org).

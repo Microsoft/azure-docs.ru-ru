@@ -8,12 +8,12 @@ ms.subservice: files
 ms.topic: conceptual
 ms.date: 3/19/2021
 ms.author: jeffpatt
-ms.openlocfilehash: 8ebd667b9f3f4ec1a6db4481e42282b3d8bae97d
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: 9c6e57d45cb5647053283da687659cc5ff0217e9
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776348"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802188"
 ---
 # <a name="azure-files-and-azure-netapp-files-comparison"></a>Сравнение файлов и Azure NetApp Files Azure
 

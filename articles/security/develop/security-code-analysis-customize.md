@@ -5,7 +5,7 @@ description: В этой статье описывается настройка 
 author: sukhans
 manager: sukhans
 ms.author: terrylan
-ms.date: 07/31/2019
+ms.date: 03/22/2021
 ms.topic: article
 ms.service: security
 services: azure
@@ -13,14 +13,17 @@ ms.assetid: 521180dc-2cc9-43f1-ae87-2701de7ca6b8
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.openlocfilehash: 4016e1dd055b45f9cd59a172d0e71ef95fec1c40
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ad395e1b782edb28845bb7db0607d2bab5b5697c
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96008690"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802018"
 ---
 # <a name="configure-and-customize-the-build-tasks"></a>Настройка и настройка задач сборки
+
+> [!Note]
+> Начиная с 1 марта 2022, расширение Microsoft Security Code Analysis (МСКА) будет снято с учета. Существующие клиенты МСКА будут хранить доступ к МСКА до 1 марта 2022. Дополнительные параметры в Azure DevOps см. в разделе [средства анализа исходного кода OWASP](https://owasp.org/www-community/Source_Code_Analysis_Tools) . Для заказчиков, планирующих переход на GitHub, вы можете узнать о [повышенной безопасности GitHub](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security).
 
 В этой статье подробно описаны параметры конфигурации, доступные в каждой из задач сборки. Статья начинается с задач для средств анализа кода безопасности. Он завершается задачами, выполняемыми после обработки.
 
@@ -195,7 +198,7 @@ ms.locfileid: "96008690"
 
 Дополнительные сведения о настройке YAML для этой задачи см. в статье [параметры после анализа YAML](yaml-configuration.md#post-analysis-task) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о конфигурации на основе YAML см. в нашем [руководстве по настройке YAML](yaml-configuration.md).
 

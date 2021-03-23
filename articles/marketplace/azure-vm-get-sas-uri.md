@@ -7,12 +7,12 @@ ms.topic: how-to
 author: iqshahmicrosoft
 ms.author: krsh
 ms.date: 03/10/2021
-ms.openlocfilehash: 976d1dd4044649c9ef5307431c744ff3c2068bca
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b8f5fbc076859be9f5ff5a215f92811d543ed7e4
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103233571"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104800114"
 ---
 # <a name="how-to-generate-a-sas-uri-for-a-vm-image"></a>Создание URI SAS для образа виртуальной машины
 
@@ -62,7 +62,7 @@ $snapshotName=mySnapshot
 #Know more about SAS here: https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-shared-access-signature-part-1
 $sasExpiryDuration=3600
 
-#Provide storage account name where you want to copy the underlying VHD file. 
+#Provide storage account name where you want to copy the underlying VHD file. Currently, only general purpose v1 storage is supported.
 $storageAccountName=mystorageaccountname
 
 #Name of the storage container where the downloaded VHD will be stored.
@@ -76,7 +76,7 @@ $destinationVHDFileName=myvhdfilename.vhd
 
 az account set --subscription $subscriptionId
 
-sas=$(az snapshot grant-access --resource-group $resourceGroupName --name $snapshotName --duration-in-seconds $sasExpiryDuration --query [accessSas] -o tsv)
+$sas=$(az snapshot grant-access --resource-group $resourceGroupName --name $snapshotName --duration-in-seconds $sasExpiryDuration --query [accessSas] -o tsv)
 
 az storage blob copy start --destination-blob $destinationVHDFileName --destination-container $storageContainerName --account-name $storageAccountName --account-key $storageAccountKey --source-uri $sas
 ```

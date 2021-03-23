@@ -5,22 +5,18 @@ services: active-directory
 documentationcenter: ''
 author: rolyon
 manager: mtillman
-ms.assetid: ''
 ms.service: role-based-access-control
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 01/18/2021
+ms.date: 03/22/2021
 ms.author: rolyon
-ms.reviewer: bagovind
 ms.custom: ''
-ms.openlocfilehash: f6ae9ff27e773c36626812387b1284d660cbf39d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5b2ec3289d187997763ee0d9280a777d4fa1f396
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98602464"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801763"
 ---
 # <a name="understand-azure-role-definitions"></a>Общие сведения о определениях ролей Azure
 
@@ -60,10 +56,10 @@ assignableScopes []
 
 В следующей таблице описано, что означают свойства роли.
 
-| Свойство. | Описание |
+| Свойство | Описание |
 | --- | --- |
 | `Name`</br>`roleName` | Отображаемое имя роли. |
-| `Id`</br>`name` | Уникальный идентификатор роли. |
+| `Id`</br>`name` | Уникальный идентификатор роли. Встроенные роли имеют одинаковый идентификатор роли в облаках. |
 | `IsCustom`</br>`roleType` | Указывает, является ли эта роль настраиваемой. Задайте для параметра значение `true` или `CustomRole` для пользовательских ролей. Задайте значение `false` или `BuiltInRole` для встроенных ролей. |
 | `Description`</br>`description` | Описание роли. |
 | `Actions`</br>`actions` | Массив строк, описывающий операции управления, которые роль разрешает выполнять. |
@@ -276,7 +272,7 @@ assignableScopes []
 
 - 2018-07-01
 
-## <a name="actions"></a>Действия
+## <a name="actions"></a>Actions
 
 В разрешении `Actions` описаны операции управления, которые разрешает выполнять роль. Это коллекция строк операций, которые определяют защищенные действия поставщиков ресурсов Azure. Ниже приведены некоторые примеры операций управления, которые можно использовать в `Actions`.
 
@@ -361,7 +357,7 @@ assignableScopes []
 
 Дополнительные сведения о `AssignableScopes` пользовательских ролях см. в статье [пользовательские роли Azure](custom-roles.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Встроенные роли Azure](built-in-roles.md)
 * [Настраиваемые роли Azure](custom-roles.md)

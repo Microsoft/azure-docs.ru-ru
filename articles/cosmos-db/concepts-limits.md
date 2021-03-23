@@ -5,13 +5,13 @@ author: abhijitpai
 ms.author: abpai
 ms.service: cosmos-db
 ms.topic: conceptual
-ms.date: 01/19/2021
-ms.openlocfilehash: 007bf845bab6f493fae91debefde27a4929d9f95
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/22/2021
+ms.openlocfilehash: f33490e273104105502ecc8f4f255c354a2d2f3b
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98611038"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104800029"
 ---
 # <a name="azure-cosmos-db-service-quotas"></a>Квоты для службы Azure Cosmos DB
 
@@ -137,7 +137,7 @@ Cosmos DB поддерживает программное масштабиров
 | --- | --- |
 | Максимальная длина имени базы данных или контейнера | 255 |
 | Максимальное число хранимых процедур на контейнер | 100 <sup>*</sup>|
-| Максимальное число определяемых пользователем функций на контейнер | 25 <sup>*</sup>|
+| Максимальное число определяемых пользователем функций на контейнер | 50 <sup>*</sup>|
 | Максимальное число путей в политике индексирования| 100 <sup>*</sup>|
 | Максимальное число уникальных ключей на контейнер|10 <sup>*</sup>|
 | Максимальное число путей на ограничение уникального ключа|16 <sup>*</sup>|

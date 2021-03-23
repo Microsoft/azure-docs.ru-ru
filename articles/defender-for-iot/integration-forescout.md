@@ -1,19 +1,14 @@
 ---
 title: Об интеграции Форескаут
-titleSuffix: Azure Defender for IoT
 description: Защитник Azure для интеграции с IoT с платформой Форескаут предоставляет новый уровень централизованной видимости, мониторинга и контроля для Интернета вещей и альбомной ориентации.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 1/17/2021
 ms.topic: article
-ms.service: azure
-ms.openlocfilehash: faa53c770d0d6caac471e770c80b4dfd5c5ff603
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 07e5187970d193502b95b49c5517a8e3824767be
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98558621"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784073"
 ---
 # <a name="about-the-forescout-integration"></a>Об интеграции Форескаут
 
@@ -146,7 +141,7 @@ ms.locfileid: "98558621"
    | Firmware (Встроенное ПО) | Сведения о встроенном по устройства. Например, модель и сведения о версии. |
    | Имя | Название устройства. |
    | Операционная система | Операционная система устройства. |
-   | Type | Тип устройства. Например, historian или Инженерная станция. |
+   | Тип | Тип устройства. Например, historian или Инженерная станция. |
    | Vendor | Поставщик устройства. Например, Rockwell Automation. |
    | Уровень риска | Уровень риска, рассчитанный защитником для IoT. |
    | Протоколы | Протоколы, обнаруженные в трафике, созданном устройством. |
@@ -181,6 +176,6 @@ ms.locfileid: "98558621"
 
 :::image type="content" source="media/integration-forescout/forescout-property-tree.png" alt-text="Свойства":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [пересылать сведения о предупреждениях](how-to-forward-alert-information-to-partners.md).

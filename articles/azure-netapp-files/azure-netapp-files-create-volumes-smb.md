@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 02/16/2021
+ms.date: 03/01/2021
 ms.author: b-juche
-ms.openlocfilehash: 91f4f90658281282cdcb01b091bd9c9647d8d702
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6a8de9b373a14eab45df28b28bb3f94314c1d89a
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100635495"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801093"
 ---
 # <a name="create-an-smb-volume-for-azure-netapp-files"></a>Создание тома SMB для Azure NetApp Files
 
@@ -89,8 +89,32 @@ Azure NetApp Files поддерживает создание томов с по�
     * Выберите **SMB** в качестве типа протокола тома. 
     * В раскрывающемся списке выберите подключение **Active Directory**.
     * Укажите имя общего тома в поле **Имя общего ресурса**.
+    * Если вы хотите включить постоянную доступность для тома SMB, установите флажок **Включить постоянную доступность**.    
 
-    ![Выбор протокола SMB](../media/azure-netapp-files/azure-netapp-files-protocol-smb.png)
+        > [!IMPORTANT]   
+        > Функция непрерывной доступности SMB в настоящее время доступна в общедоступной предварительной версии. Чтобы получить доступ к этой функции, необходимо отправить запрос ваитлист на **[странице отправки общедоступной предварительной версии ваитлист общего доступа к Azure NETAPP Files SMB](https://aka.ms/anfsmbcasharespreviewsignup)**. Перед использованием функции непрерывной доступности дождитесь официального сообщения электронной почты от команды Azure NetApp Files.   
+        > 
+        > Постоянная доступность должна быть включена только для рабочих нагрузок SQL. Использование общих ресурсов постоянной доступности SMB для рабочих нагрузок, кроме SQL Server, *не* поддерживается. В настоящее время эта функция поддерживается в SQL Server Windows. SQL Server Linux в настоящее время не поддерживается. Если для установки SQL Server используется учетная запись без прав администратора (домена), убедитесь, что учетной записи назначена необходимая привилегия безопасности. Если учетная запись домена не имеет необходимых прав доступа ( `SeSecurityPrivilege` ), и права доступа не могут быть заданы на уровне домена, вы можете предоставить привилегию учетной записи с помощью поля " **Пользователи привилегий безопасности** " Active Directory подключений. См. раздел [Создание подключения Active Directory](create-active-directory-connections.md#create-an-active-directory-connection).
+
+    <!-- [1/13/21] Commenting out command-based steps below, because the plan is to use form-based (URL) registration, similar to CRR feature registration -->
+    <!-- 
+        ```azurepowershell-interactive
+        Register-AzProviderFeature -ProviderNamespace Microsoft.NetApp -FeatureName ANFSMBCAShare
+        ```
+
+        Check the status of the feature registration: 
+
+        > [!NOTE]
+        > The **RegistrationState** may be in the `Registering` state for up to 60 minutes before changing to`Registered`. Wait until the status is `Registered` before continuing.
+
+        ```azurepowershell-interactive
+        Get-AzProviderFeature -ProviderNamespace Microsoft.NetApp -FeatureName ANFSMBCAShare
+        ```
+        
+        You can also use [Azure CLI commands](/cli/azure/feature?preserve-view=true&view=azure-cli-latest) `az feature register` and `az feature show` to register the feature and display the registration status. 
+    --> 
+
+    ![Снимок экрана, описывающий вкладку протокола создания тома SMB.](../media/azure-netapp-files/azure-netapp-files-protocol-smb.png)
 
 5. Нажмите **Проверка и создание**, чтобы ознакомиться с сведениями о томе.  Затем нажмите кнопку **Создать**, чтобы создать том SMB.
 

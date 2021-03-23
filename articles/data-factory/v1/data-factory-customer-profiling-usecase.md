@@ -3,16 +3,16 @@ title: 'Вариант использования: профилирование 
 description: Узнайте, как с помощью фабрики данных Azure создать управляемый данными рабочий процесс (конвейер) для профилирования игроков.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: bb7f0fb6184a813dd9fd3c193bc5e3bda5628f2d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b8193039edd21db5a52eabca37c1e61880e49cfe
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100376723"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779755"
 ---
 # <a name="use-case---customer-profiling"></a>Вариант использования: профилирование клиентов
 Фабрика данных Azure — одна из многочисленных служб, используемых для внедрения набора аналитических инструментов Cortana Intelligence Suite для ускорителей решений.  Дополнительные сведения см. на сайте [Cortana Intelligence Suite](https://www.microsoft.com/cortanaanalytics). В этом документе описан простой вариант использования, позволяющий понять, как фабрика данных Azure помогает решать типичные проблемы аналитики.

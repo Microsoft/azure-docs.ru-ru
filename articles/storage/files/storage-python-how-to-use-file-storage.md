@@ -8,12 +8,12 @@ ms.date: 10/08/2020
 ms.author: rogarana
 ms.subservice: files
 ms.custom: devx-track-python
-ms.openlocfilehash: 8bef69037fad8bf8ee9537e90f26ca967560b9d2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d45ce3a782d7ee145f769283b82e34647c78f26e
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91876103"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799876"
 ---
 # <a name="develop-for-azure-files-with-python"></a>Разработка для файлов Azure с помощью Python
 
@@ -35,13 +35,13 @@ ms.locfileid: "91876103"
 > [!NOTE]
 > Если вы обновляете пакет SDK службы хранилища Azure для Python версии 0.36 или более ранней, удалите старый пакет SDK с помощью `pip uninstall azure-storage`, прежде чем устанавливать последнюю версию пакета.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
-[Клиентская библиотека хранилища файлов Azure версии 12. x для Python](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-file-share) требует Python 2,7 или 3,5.
+[Клиентская библиотека хранилища файлов Azure версии 12. x для Python](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-file-share) требует Python 2,7 или 3.6 +.
 
 # <a name="python-v2"></a>[Python v2](#tab/python2)
 
-[Пакет SDK службы хранилища Azure для Python](https://github.com/azure/azure-storage-python) требует Python 2.7, 3.3, 3.4, 3.5 или 3.6.
+[Для пакета SDK службы хранилища Azure для Python](https://github.com/azure/azure-storage-python) требуется Python 2,7 или 3.6 +.
 
 ---
 
@@ -49,7 +49,7 @@ ms.locfileid: "91876103"
 
 Для установки с помощью индекса пакетов Python (PyPI) введите:
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 ```console
 pip install azure-storage-file-share
@@ -73,7 +73,7 @@ pip install azure-storage-file
 
 Добавьте следующий код в начало исходного файла Python, чтобы использовать фрагменты кода из этой статьи.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 :::code language="python" source="~/azure-storage-snippets/files/howto/python/python-v12/file_share_ops.py" id="Snippet_Imports":::
 
@@ -87,7 +87,7 @@ from azure.storage.file import FileService
 
 ## <a name="set-up-a-connection-to-azure-files"></a>Настройка подключения к файлам Azure
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 [Шаресервицеклиент](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.shareserviceclient) позволяет работать с общими папками, каталогами и файлами. Следующий код создает объект, `ShareServiceClient` используя строку подключения учетной записи хранения.
 
@@ -105,7 +105,7 @@ file_service = FileService(account_name='myaccount', account_key='mykey')
 
 ## <a name="create-an-azure-file-share"></a>Создание файлового ресурса Azure
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 В следующем примере кода используется объект [шареклиент](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.shareclient) для создания общего ресурса, если он не существует.
 
@@ -125,7 +125,7 @@ file_service.create_share('myshare')
 
 Вы можете упорядочить файлы в хранилище, разместив их в подкаталогах, чтобы не захламлять корневой каталог.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 Следующий метод создает каталог в корне указанного файлового ресурса с помощью объекта [шаредиректориклиент](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.sharedirectoryclient) .
 
@@ -145,7 +145,7 @@ file_service.create_directory('myshare', 'sampledir')
 
 В этом разделе вы узнаете, как передать файл из локального хранилища в хранилище файлов Azure.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 Следующий метод передает содержимое указанного файла в указанный каталог в указанной общей папке Azure.
 
@@ -173,7 +173,7 @@ file_service.create_file_from_path(
 
 ## <a name="enumerate-files-and-directories-in-an-azure-file-share"></a>Перечисление файлов и каталогов в общей папке Azure
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 Чтобы получить список файлов и каталогов в подкаталоге, используйте метод [list_directories_and_files](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.shareclient#list-directories-and-files-directory-name-none--name-starts-with-none--marker-none----kwargs-) . Этот метод возвращает Iterable автоматического разбиения на страницы. Следующий код выводит **имя** каждого файла и подкаталог в указанном каталоге в консоль.
 
@@ -193,7 +193,7 @@ for file_or_dir in generator:
 
 ## <a name="download-a-file"></a>Загрузка файла
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 Чтобы загрузить данные из файла, используйте [download_file](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.sharefileclient#download-file-offset-none--length-none----kwargs-).
 
@@ -217,7 +217,7 @@ file_service.get_file_to_path('myshare', None, 'myfile', 'out-sunset.png')
 
 Вы можете создать копию на момент времени всего общего файлового ресурса.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 :::code language="python" source="~/azure-storage-snippets/files/howto/python/python-v12/file_share_ops.py" id="Snippet_CreateSnapshot":::
 
@@ -241,7 +241,7 @@ snapshot = file_service.snapshot_share(share_name, metadata=metadata)
 
 Вы можете вывести список всех моментальных снимков для определенного общего ресурса.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 :::code language="python" source="~/azure-storage-snippets/files/howto/python/python-v12/file_share_ops.py" id="Snippet_ListSharesAndSnapshots":::
 
@@ -257,7 +257,7 @@ shares = list(file_service.list_shares(include_snapshots=True))
 
 Можно просмотреть каждый моментальный снимок общей папки, чтобы получить файлы и каталоги с этого момента времени.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 :::code language="python" source="~/azure-storage-snippets/files/howto/python/python-v12/file_share_ops.py" id="Snippet_BrowseSnapshotDir":::
 
@@ -274,7 +274,7 @@ directories_and_files = list(
 
 Файл можно скачать из моментального снимка общего ресурса. Это позволяет восстановить предыдущую версию файла.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 :::code language="python" source="~/azure-storage-snippets/files/howto/python/python-v12/file_share_ops.py" id="Snippet_DownloadSnapshotFile":::
 
@@ -291,7 +291,7 @@ with open(FILE_PATH, 'wb') as stream:
 ## <a name="delete-a-single-share-snapshot"></a>Удаление одного моментального снимка общих ресурсов
 Вы можете удалить один моментальный снимок общих ресурсов.
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 :::code language="python" source="~/azure-storage-snippets/files/howto/python/python-v12/file_share_ops.py" id="Snippet_DeleteSnapshot":::
 
@@ -305,7 +305,7 @@ file_service.delete_share(share_name, snapshot=snapshot_id)
 
 ## <a name="delete-a-file"></a>Удаление файла
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 Чтобы удалить файл, вызовите [delete_file](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.sharefileclient#delete-file---kwargs-).
 
@@ -323,7 +323,7 @@ file_service.delete_file('myshare', None, 'myfile')
 
 ## <a name="delete-share-when-share-snapshots-exist"></a>Удаление общего ресурса с имеющимся моментальным снимком общих ресурсов
 
-# <a name="python-v12"></a>[Python версии 12](#tab/python)
+# <a name="python-v12"></a>[Python v12](#tab/python)
 
 Чтобы удалить общую папку, содержащую моментальные снимки, вызовите [delete_share](/azure/developer/python/sdk/storage/azure-storage-file-share/azure.storage.fileshare.shareclient#delete-share-delete-snapshots-false----kwargs-) с помощью `delete_snapshots=True` .
 
@@ -339,7 +339,7 @@ file_service.delete_share(share_name, delete_snapshots=DeleteSnapshot.Include)
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь, когда вы узнали, как работать с файлами Azure с помощью Python, воспользуйтесь следующими ссылками для получения дополнительных сведений.
 

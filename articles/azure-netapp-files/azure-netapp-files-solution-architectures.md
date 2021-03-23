@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 03/08/2021
 ms.author: b-juche
-ms.openlocfilehash: 3db4999f1cb6185f02a40395842c30b9d77072b3
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cccfd6b74acf26aeed3ad06ac6dcdb39c2ae6bef
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102489027"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802239"
 ---
 # <a name="solution-architectures-using-azure-netapp-files"></a>Архитектура решений, использующих Azure NetApp Files
 В этой статье содержатся ссылки на рекомендации, которые помогут вам понять архитектуру решения для использования Azure NetApp Files.  
@@ -55,8 +55,9 @@ ms.locfileid: "102489027"
 ### <a name="sql-server"></a>SQL Server
 
 * [Развертывание SQL Server через SMB с Azure NetApp Files](https://www.youtube.com/watch?v=x7udfcYbibs)
-<!-- * [Deploy SQL Server Always-On Failover Cluster over SMB with Azure NetApp Files](https://www.youtube.com/watch?v=zuNJ5E07e8Q) --> 
-<!-- * [Deploy Always-On Availability Groups with Azure NetApp Files](https://www.youtube.com/watch?v=y3VQmzzeyvc) --> 
+* [Развертывание SQL Server Always-On отказоустойчивого кластера по протоколу SMB с Azure NetApp Files](https://www.youtube.com/watch?v=zuNJ5E07e8Q) 
+* [Развертывание Always-On групп доступности с помощью Azure NetApp Files](https://www.youtube.com/watch?v=y3VQmzzeyvc) 
+* [Преимущества использования Azure NetApp Files для развертывания SQL Server](solutions-benefits-azure-netapp-files-sql-server.md)
 
 ## <a name="sap-on-azure-solutions"></a>Решения SAP в Azure
 
@@ -138,7 +139,7 @@ ms.locfileid: "102489027"
 * [Azure Циклеклауд: EDA HPC Lab с Azure NetApp Files](https://github.com/Azure/cyclecloud-hands-on-labs/blob/master/EDA/README.md)
 * [Azure для полупроводниковой индустрии](https://azurecomcdn.azureedge.net/cvt-f40f39cd9de2d875ab0c198a8d7b186350cf0bca161e80d7896941389685d012/mediahandler/files/resourcefiles/azure-for-the-semiconductor-industry/Azure_for_the_Semiconductor_Industry.pdf)
 
-### <a name="analytics"></a>Аналитика
+### <a name="analytics"></a>Analytics
 
 * [Azure NetApp Files: Общая файловая система, используемая в сетке SAS на Microsoft Azure](https://communities.sas.com/t5/Administration-and-Deployment/Azure-NetApp-Files-A-shared-file-system-to-use-with-SAS-Grid-on/m-p/705192)
 * [Azure NetApp Files: Общая файловая система для использования с сеткой SAS в MS Azure — RHEL 8.3/нконнект UPDATE](https://communities.sas.com/t5/Administration-and-Deployment/Azure-NetApp-Files-A-shared-file-system-to-use-with-SAS-Grid-on/m-p/722261#M21648)

@@ -15,12 +15,12 @@ ms.devlang: na
 ms.topic: article
 ms.date: 03/05/2021
 ms.author: Zhchia
-ms.openlocfilehash: ee19c69b47e68328a89a0e3ca6ee3f86a5c13c7d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: cbae87a005240c15a2c3c28dcb8ab126d9957ba6
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104583740"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801236"
 ---
 # <a name="tutorial-configure-github-enterprise-managed-user-for-automatic-user-provisioning"></a>Руководство. Настройка управляемого пользователя GitHub Enterprise для автоматической подготовки пользователей
 
@@ -34,6 +34,10 @@ ms.locfileid: "104583740"
 > * Синхронизация пользовательских атрибутов между Azure AD и управляемым пользователем GitHub Enterprise
 > * Предоставление групп и членств в группах в управляемом пользователе GitHub Enterprise
 > * Единый вход для управляемого пользователя GitHub Enterprise (рекомендуется)
+
+> [!NOTE]
+> Этот соединитель подготовки включен только для участников бета-версии управляемых пользователей предприятия.
+
 
 ## <a name="prerequisites"></a>Предварительные требования
 

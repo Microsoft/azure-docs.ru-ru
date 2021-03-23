@@ -3,16 +3,16 @@ title: Системные переменные в фабрике данных Az
 description: В этой статье описаны системные переменные, поддерживаемые фабрикой данных Azure. Вы можете использовать эти переменные в выражениях при определении сущностей фабрики данных.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 06/12/2018
-ms.openlocfilehash: a5d2043c29db87876cc0d5ddb5b3708abad033c5
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b85efa7ac4481ab9eb2b2637aee7d9e5e76e8f3f
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104591985"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786062"
 ---
 # <a name="system-variables-supported-by-azure-data-factory"></a>Системные переменные, поддерживаемые в фабрике данных Azure
 
@@ -81,7 +81,7 @@ ms.locfileid: "104591985"
 | @triggerBody(). Event. Data. _keyName_ | Поле данных в пользовательском событии доступно бесплатно из большого двоичного объекта JSON, который клиент может использовать для отправки сообщений и данных. Используйте данные. _keyName_ для ссылки на каждое поле. Например, @triggerBody (). Event. Data. callback возвращает значение для поля _обратного вызова_ , хранящегося в разделе _данные_. |
 | @trigger().startTime | Время срабатывания триггера для вызова выполнения конвейера. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Сведения о том, как эти переменные используются в выражениях, см. в статье [Выражения и функции в фабрике данных Azure](control-flow-expression-language-functions.md).
 * Сведения об использовании системных переменных области триггера в конвейере см. в разделе [метаданные триггера ссылки в конвейере](how-to-use-trigger-parameterization.md) .

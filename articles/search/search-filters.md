@@ -9,12 +9,12 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/02/2021
 ms.custom: devx-track-csharp
-ms.openlocfilehash: a5c8f835d44896a452a945614332dcbc25ca8bb8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ba538f4753c2365406bd88286b6d54cff1a9e9ea
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101694433"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104800828"
 ---
 # <a name="filters-in-azure-cognitive-search"></a>Фильтры в Когнитивный поиск Azure 
 
@@ -130,7 +130,6 @@ POST https://[service name].search.windows.net/indexes/hotels/docs/search?api-ve
 Follow up with these articles for comprehensive guidance on specific use cases:
 
 + [Facet filters](search-filters-facets.md)
-+ [Language filters](search-filters-language.md)
 + [Security trimming](search-security-trimming-for-azure-search.md) 
 
 ## Field requirements for filtering
@@ -170,7 +169,7 @@ public double? BaseRate { get; set; }
 
 Документы, содержащие числовые поля (цена, размер, SKU, идентификатор), предоставляют эти значения в результатах поиска, если поле отмечено `retrievable`. Суть в том, что полнотекстовый поиск не применим к числовым типам полей.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сначала попробуйте использовать **обозреватель поиска** на портале, чтобы отправить запросы с параметрами **$filter**. [Пример индекса выборки недвижимости](search-get-started-portal.md) предоставляет полезные результаты для следующих отфильтрованных запросов при их вставке в строку поиска:
 

@@ -9,13 +9,13 @@ ms.custom: ''
 ms.technology: integration-services
 author: swinarko
 ms.author: sawinark
-ms.reviewer: maghan
-ms.openlocfilehash: 77283596e4b0d7e25d757c9de76c284ca4f5d4f2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.reviewer: jburchel
+ms.openlocfilehash: 8cb92407954ab5376850e57b0ee91d934480b025
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98556405"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786895"
 ---
 # <a name="access-data-stores-and-file-shares-with-windows-authentication-from-ssis-packages-in-azure"></a>Доступ к хранилищам данных и общим папкам из пакетов служб Integration Services в Azure с использованием проверки подлинности Windows
 
@@ -99,7 +99,7 @@ ms.locfileid: "98556405"
 
 3. В среде SSMS проверьте возможность подключения к требуемому серверу SQL Server в локальной среде.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 Для доступа к SQL Server в локальной среде из пакетов, выполняющихся в Azure, сделайте следующее:
 
@@ -126,7 +126,7 @@ ms.locfileid: "98556405"
 
 3. Проверьте, возвращен ли список каталогов из общей папки в локальной среде.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 Для доступа к общей папке в локальной среде из пакетов, выполняющихся в Azure, сделайте следующее:
 
@@ -166,7 +166,7 @@ ms.locfileid: "98556405"
    catalog.set_execution_credential @domain = N'Azure', @user = N'<storage-account-name>', @password = N'<storage-account-key>'
    ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Развертывание пакетов. Дополнительные сведения см. в статье [Развертывание проекта служб SSIS с помощью SQL Server Management Studio (SSMS)](/sql/integration-services/ssis-quickstart-deploy-ssms).
 - Запуск пакетов. Дополнительные сведения см. в статье [Выполнение пакета служб SSIS с помощью SQL Server Management Studio (SSMS)](/sql/integration-services/ssis-quickstart-run-ssms).

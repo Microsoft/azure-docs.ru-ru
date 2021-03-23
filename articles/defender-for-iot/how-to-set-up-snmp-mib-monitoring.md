@@ -1,18 +1,14 @@
 ---
 title: Настройка мониторинга SNMP MIB
 description: Мониторинг работоспособности датчика можно выполнить с помощью SNMP. Датчик реагирует на SNMP-запросы, отправленные с полномочного сервера мониторинга.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/14/2020
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: e0ae029323d5b64288c5e61ea28a494c1106a53f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 1ba52236f65c6c5daba68c67677cdc6adfb699b4
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100523827"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781676"
 ---
 # <a name="set-up-snmp-mib-monitoring"></a>Настройка мониторинга SNMP MIB
 

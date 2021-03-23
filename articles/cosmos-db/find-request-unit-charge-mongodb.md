@@ -5,15 +5,15 @@ author: ThomasWeiss
 ms.service: cosmos-db
 ms.subservice: cosmosdb-mongo
 ms.topic: how-to
-ms.date: 10/14/2020
+ms.date: 03/19/2021
 ms.author: thweiss
 ms.custom: devx-track-js
-ms.openlocfilehash: e488d1acfe116409caf571e7878e454628a9dea9
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 6b2944c1d29849ea44b5afd878d5b0e030358cc5
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103201331"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801831"
 ---
 # <a name="find-the-request-unit-charge-for-operations-executed-in-azure-cosmos-db-api-for-mongodb"></a>Поиск затрат единиц запросов для операций, выполненных в Azure Cosmos DB API для MongoDB
 [!INCLUDE[appliesto-mongodb-api](includes/appliesto-mongodb-api.md)]
@@ -34,13 +34,17 @@ Azure Cosmos DB поддерживает многие интерфейсы API, 
 
 1. Перейдите на панель **обозревателя данных** и выберите контейнер, с которым собираетесь работать.
 
-1. Выберите **Создать запрос**.
+1. Нажмите кнопку **...** рядом с именем контейнера и выберите **создать запрос**.
 
 1. Введите допустимый запрос и щелкните **Выполнить запрос**.
 
-1. Выберите **Статистика запросов**, чтобы отобразилось количество ЕЗ, фактически затраченных на выполненный запрос.
+1. Выберите **Статистика запросов**, чтобы отобразилось количество ЕЗ, фактически затраченных на выполненный запрос. Этот редактор запросов позволяет выполнять и просматривать плату за единицу запросов только для предикатов запроса. Этот редактор нельзя использовать для команд обработки данных, таких как инструкции INSERT.
 
-:::image type="content" source="./media/find-request-unit-charge/portal-mongodb-query.png" alt-text="Снимок экрана со сведениями о расходах в ЕЗ для MongoDB на портале Azure":::
+   :::image type="content" source="./media/find-request-unit-charge/portal-mongodb-query.png" alt-text="Снимок экрана со сведениями о расходах в ЕЗ для MongoDB на портале Azure":::
+
+1. Чтобы получить плату за запросы для команд обработки данных, выполните `getLastRequestStatistics` команду из пользовательского интерфейса на основе оболочки, например Mongo Shell, [Совместная работа 3T](mongodb-robomongo.md), [MongoDB компаса](mongodb-compass.md)или расширения VS Code с помощью сценариев оболочки.
+
+   `db.runCommand({getLastRequestStatistics: 1})`
 
 ## <a name="use-the-mongodb-net-driver"></a>Использование драйвера .NET для MongoDB
 
