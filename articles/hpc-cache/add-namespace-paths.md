@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 03/11/2021
 ms.author: v-erkel
-ms.openlocfilehash: f45d5710f6feb8af2347ca298e07e8a4870d3d4f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5427389f007b7598274d35425a9b3e8e10a63e49
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103470474"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798533"
 ---
 # <a name="set-up-the-aggregated-namespace"></a>Настройка агрегированного пространства имен
 
@@ -30,6 +30,8 @@ ms.locfileid: "103470474"
 ## <a name="add-or-edit-namespace-paths"></a>Добавление или изменение путей к пространству имен
 
 Чтобы клиенты могли получить доступ к целевому хранилищу, необходимо создать по крайней мере один путь к пространству имен. (Для получения дополнительных сведений о клиентском доступе см. [в статье подключение кэша HPC для Azure](hpc-cache-mount.md) .)
+
+Если вы недавно добавили целевой объект хранилища или настроили политику доступа, это может занять одну или две минуты, прежде чем можно будет создать путь к пространству имен.
 
 ### <a name="blob-namespace-paths"></a>Пути к пространству имен BLOB-объектов
 

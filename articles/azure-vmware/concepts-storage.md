@@ -3,12 +3,12 @@ title: Основные понятия — хранилище
 description: Сведения о возможностях хранилища ключей в частных облаках решений VMware для Azure.
 ms.topic: conceptual
 ms.date: 03/13/2021
-ms.openlocfilehash: 2551b11ada8b6118fb7524d9fe36f8b4b568aca1
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 83a4a52f8414e656b5bc688796db6e93a53d4d76
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103462479"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801627"
 ---
 #  <a name="azure-vmware-solution-storage-concepts"></a>Основные понятия хранилища решений VMware для Azure
 
@@ -44,7 +44,7 @@ ms.locfileid: "103462479"
 Теперь, когда вы узнали основные понятия хранилища решений VMware для Azure, вы можете узнать о следующих возможностях:
 
 - [Концепции удостоверений частного облака](concepts-identity.md).
-- [vSphere управление доступом на основе ролей для решения VMware для Azure](concepts-role-based-access-control.md).
+- [vSphere управление доступом на основе ролей для решения VMware для Azure](concepts-identity.md).
 - [Как включить ресурс решения Azure VMware](enable-azure-vmware-solution.md).
 - [Azure NetApp Files с помощью решения VMware для Azure](netapp-files-with-azure-vmware-solution.md)
 

@@ -3,16 +3,16 @@ title: Создание наборов данных в фабрике Azure Data
 description: Узнайте, как создавать наборы данных в фабрике данных Azure, на основе примеров с использованием свойств offset и anchorDateTime.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: 4b222b387dad1c078cfe2a063ed310ef463b192e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 355d36d58935372e9d8a92599e8f810fec9ebf19
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100376842"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785348"
 ---
 # <a name="datasets-in-azure-data-factory-version-1"></a>DataSets в фабрике данных Azure (версия 1)
 > [!div class="op_single_selector" title1="Выберите используемую версию службы "Фабрика данных":"]
@@ -227,7 +227,7 @@ structure:
 
 Ниже перечислены свойства, которые можно использовать в разделе availability.
 
-| Свойство. | Описание | Обязательно | По умолчанию |
+| Свойство | Описание | Обязательно | По умолчанию |
 | --- | --- | --- | --- |
 | frequency |Указывает единицу времени, которая определяет частоту создания среза данных.<br/><br/><b>Поддерживаемые значения</b>: Minute, Hour, Day, Week, Month. |Да |Н/Д |
 | interval |Задает множитель для частоты.<br/><br/>"Интервал х частоты" определяет частоту создания срезов. Если нужно, чтобы срез в наборе данных создавался каждый час, задайте для параметра <b>frequency</b> значение <b>Hour</b>, а для параметра <b>interval</b> — значение <b>1</b>.<br/><br/>Примечание. Если вы выбрали значение **Minute** для параметра **frequency**, значение интервала должно составлять не менее 15 минут. |Да |Н/Д |
@@ -437,6 +437,6 @@ structure:
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения о конвейерах см. в статье [Конвейеры и действия в фабрике данных Azure](data-factory-create-pipelines.md).
 - Дополнительные сведения о планировании и выполнении конвейеров см. в статье [Планирование и исполнение с использованием фабрики данных](data-factory-scheduling-and-execution.md).

@@ -1,14 +1,14 @@
 ---
 title: Управление расширениями виртуальных машин с помощью серверов с поддержкой дуги Azure
 description: Серверы с поддержкой Arc Azure могут управлять развертыванием расширений виртуальных машин, которые обеспечивают настройку и задачи автоматизации после развертывания с помощью виртуальных машин, не относящихся к Azure.
-ms.date: 03/01/2021
+ms.date: 03/22/2021
 ms.topic: conceptual
-ms.openlocfilehash: 039c52ccbee03636da0f5acc0fc5844be9b646f5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 9af2700f036352188e646188485285482ee70c69
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101687912"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799587"
 ---
 # <a name="virtual-machine-extension-management-with-azure-arc-enabled-servers"></a>Управление расширениями виртуальных машин с помощью серверов с поддержкой Azure Arc
 
@@ -43,9 +43,12 @@ ms.locfileid: "101687912"
 
 Сведения о пакете агента подключенного компьютера Azure и сведения о компоненте агента расширения см. в разделе [Обзор агентов](agent-overview.md#agent-component-details).
 
+> [!NOTE]
+> Последняя поддержка расширения виртуальной машины DSC была удалена для серверов с поддержкой ARC. Кроме того, рекомендуется использовать расширение пользовательских сценариев для управления конфигурацией, выполняемой после развертывания сервера или компьютера.
+
 ### <a name="windows-extensions"></a>Расширения Windows
 
-|Расширение |Издатель |Type |Дополнительные сведения |
+|Расширение |Издатель |Тип |Дополнительные сведения |
 |----------|----------|-----|-----------------------|
 |Средство проверки уязвимостей, интегрированное с защитником Azure |Qualys |Виндовсажент. Азуресекуритицентер |[Решение для оценки уязвимости в интегрированной службе "защитник Azure" для Azure и гибридных компьютеров](../../security-center/deploy-vulnerability-assessment-vm.md)|
 |Расширение пользовательских сценариев |Microsoft.Compute; | CustomScriptExtension |[Расширение пользовательских сценариев Windows](../../virtual-machines/extensions/custom-script-windows.md)|
@@ -56,7 +59,7 @@ ms.locfileid: "101687912"
 
 ### <a name="linux-extensions"></a>Расширения Linux
 
-|Расширение |Издатель |Type |Дополнительные сведения |
+|Расширение |Издатель |Тип |Дополнительные сведения |
 |----------|----------|-----|-----------------------|
 |Средство проверки уязвимостей, интегрированное с защитником Azure |Qualys |Линуксажент. Азуресекуритицентер |[Решение для оценки уязвимости в интегрированной службе "защитник Azure" для Azure и гибридных компьютеров](../../security-center/deploy-vulnerability-assessment-vm.md)|
 |Расширение пользовательских сценариев |Microsoft. Azure. Extensions |CustomScript |[Расширение пользовательских сценариев Linux версии 2](../../virtual-machines/extensions/custom-script-linux.md) |
@@ -65,7 +68,7 @@ ms.locfileid: "101687912"
 |Azure Key Vault синхронизации сертификатов | Microsoft. Azure. key. Vault |KeyVaultForLinux | [Расширение виртуальной машины Key Vault для Linux](../../virtual-machines/extensions/key-vault-linux.md) |
 |Агент Azure Monitor |Microsoft. Azure. Monitor |азуремониторлинуксажент |[Установка агента Azure Monitor (Предварительная версия)](../../azure-monitor/agents/azure-monitor-agent-install.md) |
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Эта функция зависит от следующих поставщиков ресурсов Azure в вашей подписке:
 
@@ -108,6 +111,6 @@ ms.locfileid: "101687912"
 
 Сведения об обновлении компьютера до версии, необходимой для агента, см. в разделе [Upgrade Agent](manage-agent.md#upgrading-agent).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Расширения виртуальных машин можно развертывать, администрировать и удалять с помощью [Azure CLI](manage-vm-extensions-cli.md), [Azure PowerShell](manage-vm-extensions-powershell.md), из [портал Azure](manage-vm-extensions-portal.md)или [шаблонов Azure Resource Manager](manage-vm-extensions-template.md).

@@ -1,24 +1,14 @@
 ---
 title: Краткое руководство. Обзор агентов безопасности
 description: Это краткое руководство научит вас разбираться в архитектуре агентов безопасности, которые используются в службе "Azure Defender для Интернета вещей".
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/24/2021
-ms.author: shhazam
-ms.openlocfilehash: de8c52372b2ef92dcf2abe357a40ef8947439a8a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2e7d7d1e6770667b1ce966724611cc003116409d
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493973"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104778514"
 ---
 # <a name="quickstart-security-agent-reference-architecture"></a>Краткое руководство. Эталонная архитектура агентов безопасности
 

@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: article
 ms.date: 04/26/2019
 ms.author: damaerte
-ms.openlocfilehash: a052364b06ac1b9b30cef76db10a79e8ed85b9a3
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: c707a6522d037ba3926b55579e501eadd2764416
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89470159"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798278"
 ---
 # <a name="features--tools-for-azure-cloud-shell"></a>Функции и средства для Azure Cloud Shell
 
@@ -69,7 +69,7 @@ PowerShell в Cloud Shell содержит частную сборку моду�
 
 ## <a name="tools"></a>Инструменты
 
-|Category   |Имя   |
+|Категория   |Имя   |
 |---|---|
 |Средства Linux            |bash<br> zsh<br> sh<br> tmux<br> dig<br>               |
 |Инструменты Azure            |[Azure CLI](https://github.com/Azure/azure-cli) и [классический интерфейс командной строки Azure](https://github.com/Azure/azure-xplat-cli)<br> [AzCopy](../storage/common/storage-use-azcopy-v10.md)<br> [CLI службы "Функции Azure"](https://github.com/Azure/azure-functions-core-tools)<br> [Интерфейс командной строки Service Fabric](../service-fabric/service-fabric-cli.md)<br> [Batch Shipyard](https://github.com/Azure/batch-shipyard)<br> [blobxfer](https://github.com/Azure/blobxfer)|
@@ -84,14 +84,14 @@ PowerShell в Cloud Shell содержит частную сборку моду�
 
 |Язык   |Версия   |
 |---|---|
-|.NET Core  |[3.1.302](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.6/3.1.302-download.md)       |
+|.NET Core  |[3.1.302](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.6/3.1.302-download.md)       |
 |Go         |1,9        |
 |Java       |1.8        |
 |Node.js    |8.16.0      |
 |PowerShell |[7.0.0](https://github.com/PowerShell/powershell/releases)       |
-|Python     |2.7 и 3.5 (по умолчанию)|
+|Python     |2,7 и 3,7 (по умолчанию)|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 [Быстрый запуск Bash в Cloud Shell](quickstart.md) <br>
 [Быстрый запуск PowerShell в Cloud Shell](quickstart-powershell.md) <br>
 [Справочник команд Azure CLI](/cli/azure/) <br>

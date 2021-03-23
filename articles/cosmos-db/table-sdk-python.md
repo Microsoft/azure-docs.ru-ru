@@ -8,12 +8,12 @@ ms.topic: reference
 ms.date: 11/20/2018
 author: sakash279
 ms.author: akshanka
-ms.openlocfilehash: f9487ac1b5d550380d7cff6196d3f5b99e6b61d4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 1b33892c0d37cc173fb88fc7e304ef6e48c0af57
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104595572"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802953"
 ---
 # <a name="azure-cosmos-db-table-api-sdk-for-python-release-notes-and-resources"></a>Пакет SDK для API таблиц Azure Cosmos DB на Python: заметки о выпуске и ресурсы
 [!INCLUDE[appliesto-table-api](includes/appliesto-table-api.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "104595572"
 |**Документация по API**|[Справочная документация по API Python](/python/api/overview/azure/cosmosdb)|
 |**Инструкции по установке пакета SDK**|[Инструкции по установке пакета SDK для Python](https://github.com/Azure/azure-cosmosdb-python/tree/master/azure-cosmosdb-table)|
 |**Участие в разработке пакета SDK**|[GitHub](https://github.com/Azure/azure-cosmosdb-python/tree/master/azure-cosmosdb-table)|
-|**Текущая поддерживаемая платформа**|[Python 2.7](https://www.python.org/downloads/) либо [Python 3.3, 3.4, 3.5 или 3.6](https://www.python.org/downloads/)|
+|**Текущая поддерживаемая платформа**|[Python 2,7](https://www.python.org/downloads/) или [Python 3.6 +](https://www.python.org/downloads/)|
 
 > [!IMPORTANT]
 > Если вы создали учетную запись API таблиц на этапе работы с предварительной версией, для работы с общедоступными пакетами SDK для API таблиц создайте [новую учетную запись](create-table-dotnet.md#create-a-database-account).

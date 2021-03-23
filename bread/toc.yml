@@ -174,9 +174,6 @@
     - name: Удаленная отрисовка Azure
       tocHref: /azure/remote-rendering/
       topicHref: /azure/remote-rendering/
-    - name: Распознавание объектов Azure
-      tocHref: /azure/object-understanding/
-      topicHref: /azure/object-understanding/
     - name: Реестр контейнеров
       tocHref: /azure/container-registry/
       topicHref: /azure/container-registry/

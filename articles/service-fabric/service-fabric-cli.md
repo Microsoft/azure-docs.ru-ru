@@ -5,12 +5,12 @@ author: jeffj6123
 ms.topic: conceptual
 ms.date: 5/19/2020
 ms.author: jejarry
-ms.openlocfilehash: b3714f8401def9bed68e4b0845d025734a480cb3
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a1b0598f34fe894e078dc647149cff4ac74e1fea
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "83681801"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802154"
 ---
 # <a name="azure-service-fabric-cli"></a>Интерфейс командной строки Azure Service Fabric
 
@@ -22,7 +22,7 @@ ms.locfileid: "83681801"
 
 Прежде чем начать установку, убедитесь, что в вашей среде установлены Python и pip. Дополнительные сведения см. в [кратком руководстве по началу работы с pip](https://pip.pypa.io/en/latest/quickstart/) и официальной [документации по установке Python](https://wiki.python.org/moin/BeginnersGuide/Download).
 
-Интерфейс командной строки поддерживает Python версий 2.7, 3.5, 3.6 и 3.7. Python 3 является рекомендуемой версией, так как поддержка Python 2.7 скоро будет прекращена.
+CLI поддерживает Python версии 2,7 и 3.6 + с рекомендуемым языком Python 3. x.
 
 ### <a name="service-fabric-target-runtime"></a>Целевая среда выполнения Service Fabric
 

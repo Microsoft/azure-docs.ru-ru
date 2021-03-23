@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 02/16/2021
+ms.date: 03/01/2021
 ms.author: b-juche
-ms.openlocfilehash: 44959b2f60f9aafd7d9430c9c19baea72344293f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ccc88cabfa81e2d911546fae776f581885ed8fa6
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102183885"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801263"
 ---
 # <a name="create-and-manage-active-directory-connections-for-azure-netapp-files"></a>Создание Active Directory подключений и управление ими для Azure NetApp Files
 
@@ -207,6 +207,18 @@ ms.locfileid: "102183885"
         
         Вы также можете использовать [Azure CLI команды](/cli/azure/feature) `az feature register` , `az feature show` чтобы зарегистрировать эту функцию и отобразить состояние регистрации. 
 
+     * **Пользователи с правами доступа**   <!-- SMB CA share feature -->   
+        Вы можете предоставить привилегии безопасности ( `SeSecurityPrivilege` ) пользователям, которым требуются повышенные привилегии для доступа к Azure NetApp Filesным томам. Указанные учетные записи пользователей могут выполнять определенные действия на Azure NetApp Files общих ресурсах SMB, которым по умолчанию требуются права безопасности, не назначенные пользователям домена.   
+
+        Например, учетные записи пользователей, используемые для установки SQL Server в определенных сценариях, должны обладать повышенными привилегиями безопасности. Если для установки SQL Server используется учетная запись без прав администратора (домена), а учетная запись не имеет назначенного права доступа, следует добавить права доступа к учетной записи.  
+
+        > [!IMPORTANT]
+        > Учетная запись домена, используемая для установки SQL Server, должна уже существовать, прежде чем ее можно будет добавить в поле " **Пользователи привилегий безопасности** ". При добавлении учетной записи установщика SQL Server к **пользователям с привилегиями безопасности** служба Azure NetApp Files может проверить учетную запись, обратившись к контроллеру домена. Команда может завершиться ошибкой, если не сможет связаться с контроллером домена.  
+
+        Дополнительные сведения о `SeSecurityPrivilege` и SQL Server см. [в статье сбой установки SQL Server, если учетная запись установки не имеет определенных прав пользователя](/troubleshoot/sql/install/installation-fails-if-remove-user-right).
+
+        ![Снимок экрана, показывающий поле "Пользователи привилегий безопасности" в окне Active Directory "подключения".](../media/azure-netapp-files/security-privilege-users.png) 
+
      * **Пользователи политики резервного копирования**  
         Можно включить дополнительные учетные записи, требующие повышенных прав доступа к учетной записи компьютера, созданной для использования с Azure NetApp Files. Указанным учетным записям можно будет изменять разрешения NTFS на уровне файлов и папок. Например, можно указать непривилегированную учетную запись службы, используемую для переноса данных в общую папку SMB в Azure NetApp Files.  
 
@@ -239,7 +251,7 @@ ms.locfileid: "102183885"
 
     ![Создано Active Directory подключений](../media/azure-netapp-files/azure-netapp-files-active-directory-connections-created.png)
 
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
 
 * [Создание тома SMB](azure-netapp-files-create-volumes-smb.md)
 * [Создание тома с двумя протоколами](create-volumes-dual-protocol.md)

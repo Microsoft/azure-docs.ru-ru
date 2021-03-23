@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 09/08/2020
 ms.author: vlvinogr
 ms.openlocfilehash: 9f430e38fa25f2a8fab972f106333973a41dac4e
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96183832"
 ---
 ## <a name="go-to-your-api-management-instance"></a>Перейдите к экземпляру службы управления API.

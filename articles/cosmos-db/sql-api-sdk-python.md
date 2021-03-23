@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 08/12/2020
 ms.author: rosouz
 ms.custom: devx-track-python
-ms.openlocfilehash: 8487743efd4f18806ae03ed7529927736314988b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 470ae497acab4c75e83a13e485d1bcb118485ab9
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104595698"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799519"
 ---
 # <a name="azure-cosmos-db-python-sdk-for-sql-api-release-notes-and-resources"></a>Пакет SDK для Azure Cosmos DB на Python для API SQL. Заметки о выпуске и материалы
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "104595698"
 |**Документация по API**|[Справочная документация по API Python](https://docs.microsoft.com/python/api/azure-cosmos/azure.cosmos?view=azure-python&preserve-view=true)|
 |**Инструкции по установке пакета SDK**|[Инструкции по установке пакета SDK для Python](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/cosmos/azure-cosmos)|
 |**Начало работы**|[Приступая к работе с пакетом SDK для Python](create-sql-api-python.md)|
-|**Текущая поддерживаемая платформа**|[Python 2.7](https://www.python.org/downloads/) и [Python 3.5.3+](https://www.python.org/downloads/)|
+|**Текущая поддерживаемая платформа**|[Python 2,7](https://www.python.org/downloads/) и [Python 3.6 +](https://www.python.org/downloads/)|
 
 ## <a name="release-history"></a>История выпусков
 

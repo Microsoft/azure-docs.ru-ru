@@ -4,7 +4,7 @@ description: В этой статье описываются будущие вы
 author: sukhans
 manager: sukhans
 ms.author: terrylan
-ms.date: 04/24/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.service: security
 services: azure
@@ -12,14 +12,17 @@ ms.assetid: 521180dc-2cc9-43f1-ae87-2701de7ca6b8
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.openlocfilehash: 33ce2a496caa52609d8bdf8c92e29064ca4ae349
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7596df66dbcbe1b7cdefab4811da7174bc83ac65
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "85362046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801185"
 ---
 # <a name="microsoft-security-code-analysis-releases-and-roadmap"></a>Выпуски и планы анализа кода безопасности Microsoft
+
+> [!Note]
+> Начиная с 1 марта 2022, расширение Microsoft Security Code Analysis (МСКА) будет снято с учета. Существующие клиенты МСКА будут хранить доступ к МСКА до 1 марта 2022. Дополнительные параметры в Azure DevOps см. в разделе [средства анализа исходного кода OWASP](https://owasp.org/www-community/Source_Code_Analysis_Tools) . Для заказчиков, планирующих переход на GitHub, вы можете узнать о [повышенной безопасности GitHub](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security).
 
 Группа анализа кода безопасности корпорации Майкрософт в партнерстве с поддержка Developerами рады сообщить о последних и будущих улучшениях нашего расширения МСКА.
 
@@ -73,7 +76,7 @@ ms.locfileid: "85362046"
 
 Устаревшая служба нечеткого тестирования МСРД будет заменена собственной платформой нечеткого размещения разработчиков с открытым исходным кодом для Azure. В настоящее время эта платформа разрабатывается и тестируется в связи с множеством основных групп разработчиков корпорации Майкрософт. Эта платформа нечетко интегрирует средства очистки и обеспечивает адаптивность, изучение тестов Монте-Карло, встроенных в конвейеры CI/CD, которые растут со временем по проектам программного обеспечения. Выпуск с открытым исходным кодом для этой платформы запланирован на последнюю половину 2020.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Инструкции по подключению и установке анализа кода безопасности Майкрософт см. в [руководстве по адаптации и установке](security-code-analysis-onboard.md).
 

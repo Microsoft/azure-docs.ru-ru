@@ -8,12 +8,12 @@ ms.topic: article
 ms.date: 08/19/2020
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: cfaab3f095dbf2f1657f5ebb587a3de958d11cda
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 2f5dddd3d59ebe778d577176e439528a86bb42a7
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104721190"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802604"
 ---
 # <a name="hb-series-virtual-machines-overview"></a>Обзор виртуальных машин серии ХБ
 
@@ -31,7 +31,7 @@ ms.locfileid: "104721190"
 
 На следующей схеме показана разделение ядер, зарезервированное для низкоуровневой оболочки Azure и виртуальной машины серии ХБ.
 
-![Разделение ядер, зарезервированное для Azure гипервизора и виртуальной машины серии ХБ](./media/hb-series-overview/segregation-cores.png)
+![Разделение ядер, зарезервированное для Azure гипервизора и виртуальной машины серии ХБ](./media/architecture/hb-segregation-cores.png)
 
 ## <a name="hardware-specifications"></a>Характеристики оборудования
 

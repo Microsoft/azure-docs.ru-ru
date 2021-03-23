@@ -147,7 +147,7 @@
     - name: Справочник
       items:
         - name: REST API для перевода документов
-          href: /rest/api/cognitiveservices/translator/translation
+          href: /rest/api/cognitiveservices/translator/documenttranslation
 - name: Ресурсы по переводу
   items:
     - name: Возможности получения поддержки и справки
