@@ -13,12 +13,12 @@ ms.workload: infrastructure
 ms.date: 05/25/2019
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 218862b2df959fc0a39baa3c2934fc05f252af32
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 540247752be27af268a0485ea9eb68d121a25240
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101672977"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775311"
 ---
 # <a name="connect-a-virtual-network-to-hana-large-instances"></a>Подключение виртуальной сети к крупным экземплярам HANA
 
@@ -47,7 +47,7 @@ $myVNetName = "VNet01"
 $myGWName = "VNet01GW"
 $myGWConfig = "VNet01GWConfig"
 $myGWPIPName = "VNet01GWPIP"
-$myGWSku = "HighPerformance" # Supported values for HANA large instances are: HighPerformance or UltraPerformance
+$myGWSku = "UltraPerformance" # Supported values for HANA large instances are: UltraPerformance
 
 # These Commands create the Public IP and ExpressRoute Gateway
 $vnet = Get-AzVirtualNetwork -Name $myVNetName -ResourceGroupName $myGroupName
@@ -63,10 +63,7 @@ New-AzVirtualNetworkGateway -Name $myGWName -ResourceGroupName $myGroupName -Loc
 -GatewaySku $myGWSku -VpnType PolicyBased -EnableBgp $true
 ```
 
-В этом примере использовался номер SKU шлюза HighPerformance. Существуют следующие варианты: HighPerformance или UltraPerformance. Это единственные номера SKU шлюза, которые поддерживает SAP HANA в Azure (крупные экземпляры).
-
-> [!IMPORTANT]
-> Для крупных экземпляров HANA с номерами SKU класса 2 вы должны использовать SKU "UltraPerformance Gateway".
+Единственным поддерживаемым SKU шлюза для SAP HANA в Azure (крупные экземпляры) является **UltraPerformance**.
 
 ## <a name="link-virtual-networks"></a>Связывание виртуальных сетей
 

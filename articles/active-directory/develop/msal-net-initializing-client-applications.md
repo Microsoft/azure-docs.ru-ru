@@ -13,19 +13,21 @@ ms.date: 09/18/2019
 ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
-ms.openlocfilehash: 6616b0573019703f287d3be521569f5953aeb032
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7ff61811e8b736f8f6d104a253cfe5dc5e76c428
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98600291"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771368"
 ---
 # <a name="initialize-client-applications-using-msalnet"></a>Инициализация клиентских приложений с помощью MSAL.NET
-В этой статье описывается инициализация общедоступного клиента и конфиденциальных клиентских приложений с помощью библиотеки проверки подлинности Майкрософт для .NET (MSAL.NET).  Дополнительные сведения о типах клиентских приложений и параметрах конфигурации приложений см. в [обзоре](msal-client-applications.md).
+В этой статье описывается инициализация общедоступного клиента и конфиденциальных клиентских приложений с помощью библиотеки проверки подлинности Майкрософт для .NET (MSAL.NET).  Дополнительные сведения о типах клиентских приложений см. в разделе [общедоступные клиентские и конфиденциальные клиентские приложения](msal-client-applications.md).
 
 При использовании MSAL.NET 3. x рекомендуемым способом создания экземпляра приложения является использование построителей приложений: `PublicClientApplicationBuilder` и `ConfidentialClientApplicationBuilder` . Они предлагают мощный механизм настройки приложения либо из кода, либо из файла конфигурации, либо путем смешивания обоих подходов.
 
-## <a name="prerequisites"></a>Предварительные условия
+[Справочная документация по API](/dotnet/api/microsoft.identity.client)  |  [Пакет в NuGet](https://www.nuget.org/packages/Microsoft.Identity.Client/)  |  [Исходный код библиотеки](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet)  |  [Примеры кода](sample-v2-code.md)
+
+## <a name="prerequisites"></a>Предварительные требования
 Перед инициализацией приложения необходимо сначала [зарегистрировать его](quickstart-register-app.md) , чтобы приложение можно было интегрировать с платформой Microsoft Identity.  После регистрации может потребоваться следующая информация (которую можно найти в портал Azure):
 
 - Идентификатор клиента (строка, представляющая GUID)

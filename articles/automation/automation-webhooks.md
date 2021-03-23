@@ -3,14 +3,14 @@ title: Запуск runbook службы автоматизации Azure с п�
 description: В этой статье описывается, как применить веб-перехватчик для запуска runbook в службе автоматизации Azure с использованием HTTP-запросов.
 services: automation
 ms.subservice: process-automation
-ms.date: 06/24/2020
+ms.date: 03/18/2021
 ms.topic: conceptual
-ms.openlocfilehash: df19f32be41b17e13a9da575e828830e29da4e55
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c46a8753c87e981d9e3d6ecdd698bbbe6cba9894
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98894768"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775788"
 ---
 # <a name="start-a-runbook-from-a-webhook"></a>Запуск модуля runbook с помощью веб-перехватчика
 
@@ -101,8 +101,8 @@ ms.locfileid: "98894768"
 4. Заполните для веб-перехватчика поля **Имя** и **Срок действия** и укажите, следует ли его сразу включить. Дополнительные сведения о свойствах см. в разделе [Свойства веб-перехватчика](#webhook-properties).
 5. Щелкните значок копирования и нажмите Ctrl+C, чтобы скопировать URL-адрес объекта Webhook. Сохраните URL-адрес в безопасном месте. 
 
-    > [!NOTE]
-    > После создания веб-перехватчика URL-адрес нельзя получить повторно.
+    > [!IMPORTANT]
+    > После создания веб-перехватчика URL-адрес нельзя получить повторно. Убедитесь, что вы скопировали и записываете его, как показано выше.
 
    ![URL-адрес Webhook](media/automation-webhooks/copy-webhook-url.png)
 
@@ -134,6 +134,111 @@ http://<Webhook Server>/token?=<Token Value>
 ```
 
 Клиент не может определить момент завершения задания Runbook и состояние его завершения из веб-перехватчика. Он может находить эти сведения на основе идентификатора задания, используя другой механизм, например [Windows PowerShell](/powershell/module/servicemanagement/azure.service/get-azureautomationjob) или [API службы автоматизации Azure](/rest/api/automation/job).
+
+### <a name="use-a-webhook-from-an-arm-template"></a>Использование веб-перехватчика из шаблона ARM
+
+Веб-перехватчики службы автоматизации также можно вызывать с помощью [шаблонов Azure Resource Manager (ARM)](/azure/azure-resource-manager/templates/overview). Шаблон ARM выдает `POST` запрос и получает код возврата, как и любой другой клиент. См. раздел [Использование веб-перехватчика](#use-a-webhook).
+
+   > [!NOTE]
+   > По соображениям безопасности URI возвращается только при первом развертывании шаблона.
+
+Этот пример шаблона создает тестовую среду и возвращает универсальный код ресурса (URI) для создаваемого веб-перехватчика.
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "automationAccountName": {
+            "type": "String",
+            "metadata": {
+                "description": "Automation account name"
+            }
+        },
+        "webhookName": {
+            "type": "String",
+            "metadata": {
+                "description": "Webhook Name"
+            }
+        },
+        "runbookName": {
+            "type": "String",
+            "metadata": {
+                "description": "Runbook Name for which webhook will be created"
+            }
+        },
+        "WebhookExpiryTime": {
+            "type": "String",
+            "metadata": {
+                "description": "Webhook Expiry time"
+            }
+        },
+        "_artifactsLocation": {
+            "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-automation/",
+            "type": "String",
+            "metadata": {
+                "description": "URI to artifacts location"
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Automation/automationAccounts",
+            "apiVersion": "2020-01-13-preview",
+            "name": "[parameters('automationAccountName')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "sku": {
+                    "name": "Free"
+                }
+            },
+            "resources": [
+                {
+                    "type": "runbooks",
+                    "apiVersion": "2018-06-30",
+                    "name": "[parameters('runbookName')]",
+                    "location": "[resourceGroup().location]",
+                    "dependsOn": [
+                        "[parameters('automationAccountName')]"
+                    ],
+                    "properties": {
+                        "runbookType": "Python2",
+                        "logProgress": "false",
+                        "logVerbose": "false",
+                        "description": "Sample Runbook",
+                        "publishContentLink": {
+                            "uri": "[uri(parameters('_artifactsLocation'), 'scripts/AzureAutomationTutorialPython2.py')]",
+                            "version": "1.0.0.0"
+                        }
+                    }
+                },
+                {
+                    "type": "webhooks",
+                    "apiVersion": "2018-06-30",
+                    "name": "[parameters('webhookName')]",
+                    "dependsOn": [
+                        "[parameters('automationAccountName')]",
+                        "[parameters('runbookName')]"
+                    ],
+                    "properties": {
+                        "isEnabled": true,
+                        "expiryTime": "[parameters('WebhookExpiryTime')]",
+                        "runbook": {
+                            "name": "[parameters('runbookName')]"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "outputs": {
+        "webhookUri": {
+            "type": "String",
+            "value": "[reference(parameters('webhookName')).uri]"
+        }
+    }
+}
+```
 
 ## <a name="renew-a-webhook"></a>Обновление веб-перехватчика
 

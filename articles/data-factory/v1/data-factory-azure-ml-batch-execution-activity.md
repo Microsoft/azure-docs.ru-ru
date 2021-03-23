@@ -3,16 +3,16 @@ title: Создание конвейеров прогнозных данных �
 description: Описывает создание прогнозных конвейеров с помощью фабрики данных Azure и Машинное обучение Azure Studio (классическая модель).
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/22/2018
-ms.openlocfilehash: a7042a67081475311341ad6d56e35b2a71b8b12c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 2773ab2a7caa1eb4d198495a3ebe4ef0c14a5a32
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100379341"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785518"
 ---
 # <a name="create-predictive-pipelines-using-azure-machine-learning-studio-classic-and-azure-data-factory"></a>Создание прогнозирующих конвейеров с помощью Машинное обучение Azure Studio (классическая модель) и фабрики данных Azure
 

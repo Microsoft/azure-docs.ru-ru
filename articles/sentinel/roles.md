@@ -15,12 +15,12 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 06/28/2020
 ms.author: yelevin
-ms.openlocfilehash: 5a3b7d4f60877d1301f03aa4f015695a6a4639be
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 77a8e208e463b8ab20d563421d447813b1ce84ee
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104580714"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104772558"
 ---
 # <a name="permissions-in-azure-sentinel"></a>Разрешения в Azure Sentinel
 
@@ -56,7 +56,7 @@ Azure Sentinel использует [Управление доступом на 
 
 - Работа с модули PlayBook для автоматизации реагирования на угрозы
 
-    Для автоматического реагирования на угрозу Azure Sentinel использует **модули PlayBook** . Модули PlayBook построены на **Azure Logic Apps** и являются отдельным ресурсом Azure. Вам может потребоваться назначить определенные члены группы операций безопасности возможность использовать Logic Apps для операций оркестрации, автоматизации и реагирования (ВЗЛЕТЕЛ). Вы можете использовать роль [участника приложения логики](../role-based-access-control/built-in-roles.md#logic-app-contributor) или роль [оператора приложения логики](../role-based-access-control/built-in-roles.md#logic-app-operator) , чтобы назначить явное разрешение для использования модули PlayBook.
+    Для автоматического реагирования на угрозу Azure Sentinel использует **модули PlayBook** . Модули PlayBook построены на **Azure Logic Apps** и являются отдельным ресурсом Azure. Вам может потребоваться назначить определенные члены группы операций безопасности возможность использовать Logic Apps для операций оркестрации, автоматизации и реагирования (ВЗЛЕТЕЛ). Вы можете использовать роль [участника приложения логики](../role-based-access-control/built-in-roles.md#logic-app-contributor) , чтобы назначить явное разрешение для использования модули PlayBook.
 
 - Подключение источников данных к Sentinel Azure
 

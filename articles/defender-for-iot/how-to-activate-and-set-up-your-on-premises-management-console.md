@@ -1,18 +1,14 @@
 ---
 title: Активация и настройка локальной консоли управления
 description: Активация консоли управления гарантирует, что датчики регистрируются в Azure и отправляют сведения в локальную консоль управления, а локальная консоль управления выполняет задачи управления на подключенных датчиках.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 3/18/2021
 ms.topic: how-to
-ms.service: defender-for-iot
-ms.openlocfilehash: f659b25abbbad5f2150ed44766d30dc1f64dd3bb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 89ce6da3521248ff7373e23ae8831106cbee74de
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104602762"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784634"
 ---
 # <a name="activate-and-set-up-your-on-premises-management-console"></a>Активация и настройка локальной консоли управления 
 
@@ -116,7 +112,7 @@ ms.locfileid: "104602762"
 
 3. В текстовом поле **адрес** введите IP-адрес локальной консоли управления, к которой необходимо подключиться.
 
-4. Выберите **Подключиться**. Состояние изменится:
+4. Щелкните **Подключить**. Состояние изменится:
 
    :::image type="content" source="media/how-to-activate-and-set-up-your-on-premises-management-console/connection-status-window-connected.png" alt-text="Снимок экрана: окно состояния локальной консоли управления, в котором отображается соединение.":::
 

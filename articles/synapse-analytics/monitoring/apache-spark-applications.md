@@ -9,12 +9,12 @@ ms.subservice: monitoring
 ms.date: 04/15/2020
 ms.author: mahi
 ms.reviewer: mahi
-ms.openlocfilehash: 00407b4a55b3c074fa77d4c3664f6e218c23fe21
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ea08c82ed5772be7e3a6094f5477c4450975c1fa
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99584534"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775899"
 ---
 # <a name="use-synapse-studio-to-monitor-your-apache-spark-applications"></a>Использование синапсе Studio для мониторинга приложений Apache Spark
 
@@ -157,9 +157,16 @@ ms.locfileid: "99584534"
    ![сведения о невыполненном задании](./media/how-to-monitor-spark-applications/failed-job-info.png)
 
 ## <a name="compare-apache-spark-applications"></a>Сравнение Apache Spark приложений
-Нажмите кнопку **сравнить приложения** и выберите приложение для сравнения производительности, пользователи смогут интуитивно видеть разницу между двумя приложениями.
+
+Существует два способа сравнения приложений. Для сравнения можно выбрать **приложение сравнения** или нажать кнопку **сравнить в записной книжке** , чтобы просмотреть его в записной книжке.
+
+### <a name="compare-by-choose-an-application"></a>Сравнение по выбору приложения
+
+Нажмите кнопку **сравнить приложения** и выберите приложение, чтобы сравнить производительность, можно интуитивно увидеть разницу между двумя приложениями.
 
 ![Сравнение приложений](./media/how-to-monitor-spark-applications/compare-applications.png)
+
+![сведения о сравнении приложений](./media/how-to-monitor-spark-applications/details-compare-applications.png)
 
 1. Используйте мышь для наведения указателя мыши на приложение, после чего отображается значок **сравнить приложения** .
 
@@ -167,7 +174,7 @@ ms.locfileid: "99584534"
 
 3. Нажмите кнопку **выбрать приложение** , чтобы открыть страницу **Выбор приложения сравнения** .
 
-4. При выборе приложения сравнения пользователям необходимо либо ввести URL-адрес приложения, либо выбрать его в списке повторяющихся. Затем нажмите кнопку " **ОК** ". 
+4. При выборе приложения сравнения необходимо либо ввести URL-адрес приложения, либо выбрать его из повторяющегося списка. Затем нажмите кнопку " **ОК** ". 
 
    ![Выбор приложения сравнения](./media/how-to-monitor-spark-applications/choose-comparison-application.png)
 
@@ -175,6 +182,15 @@ ms.locfileid: "99584534"
 
    ![результат сравнения](./media/how-to-monitor-spark-applications/comparison-result.png)
 
+### <a name="compare-by-compare-in-notebook"></a>Сравнить по сравнению в записной книжке
+
+Нажмите кнопку **сравнить в записной книжке** на странице **Сравнение приложений** , чтобы открыть записную книжку. Имя ipynb-файла по умолчанию — это **перетекущая версия аналитики приложений**.
+
+![сравнить в записной книжке](./media/how-to-monitor-spark-applications/compare-in-notebook.png)
+
+В файле записной книжки: перетекущий файл аналитики приложений можно запустить его непосредственно после настройки пула и языка Spark.
+
+![перетекущая Аналитика приложений](./media/how-to-monitor-spark-applications/recurrent-application-analytics.png)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

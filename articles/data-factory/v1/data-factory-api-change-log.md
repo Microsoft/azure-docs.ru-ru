@@ -3,17 +3,17 @@ title: Фабрика данных — журнал изменений API .NET
 description: Описание критических изменений, дополнений к компонентам, исправлений ошибок и т. д. в конкретной версии API .NET для фабрики данных Azure.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jonburchel
 ms.service: data-factory
 ms.topic: conceptual
 robots: noindex
 ms.date: 01/22/2018
-ms.openlocfilehash: 3f7c80f5818c1353f438a164bf52c777056ad6d4
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 2d292bbc820574d4360be51e93588f8f908f468d
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100377488"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785603"
 ---
 # <a name="azure-data-factory---net-api-change-log"></a>Фабрика данных Azure — журнал изменений в .NET API
 > [!NOTE]

@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: troubleshooting
 ms.date: 03/18/2020
 ms.author: v-erkel
-ms.openlocfilehash: d2a5ffa337f789c4edc3a34b3be81285337473e2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: bb17918774d23dbeb2747fa55eefc4956812e254
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103471720"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775703"
 ---
 # <a name="troubleshoot-nas-configuration-and-nfs-storage-target-issues"></a>Устранение неполадок конфигурации NAS и целевого объекта хранилища NFS
 
@@ -91,16 +91,15 @@ rpcinfo -p <storage_IP> |egrep "100000\s+4\s+tcp|100005\s+3\s+tcp|100003\s+3\s+t
 
 Чтобы избежать такого возможного конфликта файлов в нескольких экспортах, кэш Azure HPC автоматически подключает неглубокий доступный экспорт в пути ( ``/ifs`` в примере) и использует файловый обработчик, заданный для этого экспорта. Если несколько экспортов используют один и тот же базовый путь, то кэш Azure HPC должен иметь корневой доступ к этому пути.
 
-## <a name="enable-export-listing"></a>Включить листинг экспорта
-<!-- link in prereqs article -->
+<!-- ## Enable export listing
 
-Если кэш Azure HPC запрашивает его, NAS должен вывести список экспортируемых компонентов.
+The NAS must list its exports when the Azure HPC Cache queries it.
 
-В большинстве систем хранения NFS это можно проверить, отправив следующий запрос из клиента Linux: ``showmount -e <storage IP address>``
+On most NFS storage systems, you can test this by sending the following query from a Linux client: ``showmount -e <storage IP address>``
 
-Используйте клиент Linux из той же виртуальной сети, что и ваш кэш, если это возможно.
+Use a Linux client from the same virtual network as your cache, if possible.
 
-Если эта команда не выводит список экспортируемых компонентов, кэш будет иметь проблемы с подключением к системе хранения. Обратитесь к поставщику NAS, чтобы включить вывод списка экспорта.
+If that command doesn't list the exports, the cache will have trouble connecting to your storage system. Work with your NAS vendor to enable export listing.  -->
 
 ## <a name="adjust-vpn-packet-size-restrictions"></a>Настройка ограничений по размеру пакетов VPN
 <!-- link in prereqs article and configuration article -->
@@ -145,6 +144,6 @@ rpcinfo -p <storage_IP> |egrep "100000\s+4\s+tcp|100005\s+3\s+tcp|100003\s+3\s+t
 
 Для систем, использующих списки управления доступом, кэш Azure HPC должен отслеживаниь дополнительных значений, относящихся к пользователю, для управления доступом к файлам. Для этого необходимо включить кэш доступа. У пользователя нет элемента управления для включения кэша доступа, но вы можете открыть запрос в службу поддержки, чтобы запросить включение для затронутых целевых объектов хранилища в системе кэша.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если у вас возникла проблема, которая не была устранена в этой статье, отправьте запрос в [службу поддержки](hpc-cache-support-ticket.md) , чтобы получить помощь экспертов.

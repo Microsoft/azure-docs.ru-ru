@@ -3,16 +3,16 @@ title: Вызов программы MapReduce из фабрики данных 
 description: Узнайте, как обрабатывать данные путем выполнения программ MapReduce в кластере Azure HDInsight из фабрики данных Azure.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: f5ad917609d6f9ea401abc898f80631474a44475
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: f1f54e972d59d3de3b0f93b3150ee1150eb6f612
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100371079"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786402"
 ---
 # <a name="invoke-mapreduce-programs-from-data-factory"></a>Вызов программы MapReduce из фабрики данных
 > [!div class="op_single_selector" title1="Действия преобразования"]
@@ -176,9 +176,9 @@ ms.locfileid: "100371079"
 ### <a name="pipeline"></a>Конвейер
 Конвейер в этом примере имеет только одно действие с типом HDInsightMapReduce. Ниже приведены некоторые важные свойства в JSON. 
 
-| Свойство. | Примечания |
+| Свойство | Примечания |
 |:--- |:--- |
-| тип |Должен быть задан тип **HDInsightMapReduce**. |
+| type |Должен быть задан тип **HDInsightMapReduce**. |
 | className |Имя класса: **wordcount** |
 | jarFilePath |Путь к JAR-файлу, содержащему этот класс. Если вы копируете и вставляете приведенный код, не забудьте изменить имя кластера. |
 | jarLinkedService |Служба, связанная со службой хранилища Azure, содержащая JAR-файл. Эта связанная служба ссылается на хранилище, связанное с кластером HDInsight. |

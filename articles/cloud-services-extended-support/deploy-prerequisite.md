@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 79d6fecddf060909a74664ff29e08301f45d7042
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d85aad16049dee6496cb1eaf9def5451625ab876
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103472303"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773476"
 ---
 # <a name="prerequisites-for-deploying-azure-cloud-services-extended-support"></a>Необходимые условия для развертывания облачных служб Azure (Расширенная поддержка)
 
@@ -86,6 +86,9 @@ CloudServices           Microsoft.Compute    Registered
 
 ## <a name="required-service-definition-file-csdef-updates"></a>Обновления требуемого файла определения службы (CSDEF)
 
+> [!NOTE]
+> Изменения в файле определения службы (. CSDEF) требуют повторного создания файла пакета (. cspkg). Выполните сборку и повторно упакуйте. cspkg POST, внеся в файл. csdef следующие изменения, чтобы получить последние параметры для облачной службы.
+
 ### <a name="1-virtual-machine-sizes"></a>1) размеры виртуальных машин
 Следующие размеры не рекомендуются в Azure Resource Manager. Однако если вы хотите продолжить их использование, обновите `vmsize` имя с помощью связанного Azure Resource Manager соглашения об именовании.  
 
@@ -130,9 +133,9 @@ CloudServices           Microsoft.Compute    Registered
 
 ## <a name="key-vault-creation"></a>Создание Key Vault 
 
-Хранилище ключей используется для хранения сертификатов, связанных с Облачными службами (расширенная поддержка). Добавьте сертификаты в Key Vault, а затем сослаться на отпечатки сертификата в файле конфигурации службы. Также для хранилища ключей необходимо включить соответствующие разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить из хранилища ключей сертификат, хранимый в виде секрета. Хранилище ключей можно создать в [портал Azure](../key-vault/general/quick-create-portal.md) или с помощью [PowerShell](../key-vault/general/quick-create-powershell.md). Хранилище ключей должно быть создано в том же регионе и подписке, что и облачная служба. Дополнительные сведения см. в статье [ Использование сертификатов с Облачными службами Azure (расширенная поддержка) ](certificates-and-key-vault.md).
+Хранилище ключей используется для хранения сертификатов, связанных с Облачными службами (расширенная поддержка). Добавьте сертификаты в Key Vault, а затем сослаться на отпечатки сертификата в файле конфигурации службы. Кроме того, необходимо включить Key Vault "политики доступа" (на портале) для доступа к "виртуальные машины Azure для развертывания" и "Azure Resource Manager для развертывания шаблона", чтобы ресурс облачных служб (Расширенная поддержка) мог получить сертификат, хранящийся как секреты из Key Vault. Хранилище ключей можно создать в [портал Azure](../key-vault/general/quick-create-portal.md) или с помощью [PowerShell](../key-vault/general/quick-create-powershell.md). Хранилище ключей должно быть создано в том же регионе и подписке, что и облачная служба. Дополнительные сведения см. в статье [ Использование сертификатов с Облачными службами Azure (расширенная поддержка) ](certificates-and-key-vault.md).
 
-## <a name="next-steps"></a>Следующие шаги 
+## <a name="next-steps"></a>Дальнейшие действия 
 - Ознакомьтесь с [предварительными требованиями для развертывания](deploy-prerequisite.md) облачных служб (Расширенная поддержка).
 - Разверните Облачную службу (расширенная поддержка) с помощью [портала Azure](deploy-portal.md), [PowerShell](deploy-powershell.md), [шаблона](deploy-template.md) или [Visual Studio](deploy-visual-studio.md).
 - Ознакомьтесь с [часто задаваемыми вопросами об Облачных службах (расширенная поддержка)](faq.md).

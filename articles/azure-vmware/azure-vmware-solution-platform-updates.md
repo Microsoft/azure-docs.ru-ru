@@ -3,12 +3,12 @@ title: Обновления платформы для решения VMware дл
 description: Сведения об обновлениях платформы в решении VMware для Azure.
 ms.topic: reference
 ms.date: 03/16/2021
-ms.openlocfilehash: 73bd1d088f9055ebd80a28c6247ea9dfa6229093
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ce25df2cb221c032f6dd430f292522fe86e69ceb
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104586239"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771776"
 ---
 # <a name="platform-updates-for-azure-vmware-solution"></a>Обновления платформы для решения VMware для Azure
 
@@ -16,7 +16,7 @@ ms.locfileid: "104586239"
 
 ## <a name="march-15-2021"></a>15 марта 2021 г. 
 
-- Служба решения Azure VMware будет выполнять обслуживание до 19 марта 20201, чтобы обновить сервер vCenter в частном облаке до vCenter Server 6,7 обновление 3l версии.
+- Служба решения Azure VMware будет выполнять обслуживание до 19 марта 2021, чтобы обновить сервер vCenter в частном облаке до vCenter Server 6,7 обновление 3l версии.
 
 - В течение этого времени VMware vCenter будет недоступен, и вы не сможете управлять виртуальными машинами ("отключить", "запустить", "создать", "Удалить"). Масштабирование частного облака (Добавление и удаление серверов и кластеров) также будет недоступно. Высокая доступность VMware (HA) будет продолжать работать для обеспечения защиты существующих виртуальных машин. 
  

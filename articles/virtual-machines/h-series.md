@@ -1,19 +1,19 @@
 ---
 title: Виртуальные машины Azure серии H
 description: Спецификации для виртуальных машин серии H.
-author: ju-shim
+author: vermagit
 ms.service: virtual-machines
 ms.subservice: vm-sizes-hpc
 ms.topic: conceptual
 ms.date: 10/09/2020
 ms.author: amverma
 ms.reviewer: jushiman
-ms.openlocfilehash: 7a5ff47bb5de6d54564a86c0700ad69aa450887d
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: b3e3beb51256bbf22d29d74b51c52ca3a6bee0c4
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102566147"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104774785"
 ---
 # <a name="h-series"></a>Серия H
 
@@ -40,10 +40,21 @@ ms.locfileid: "102566147"
 
 <sup>1</sup> для приложений MPI сеть с выделенной внутренней сетью RDMA включена в сети FDR InfiniBand.
 
-[!INCLUDE [virtual-machines-common-sizes-table-defs](../../includes/virtual-machines-common-sizes-table-defs.md)]
-
 > [!NOTE]
-> Среди [виртуальных машин, поддерживающих RDMA](sizes-hpc.md#rdma-capable-instances), Серия H не поддерживает SR-IOV. Поэтому поддерживаемые [образы виртуальных машин](./workloads/hpc/configure.md#vm-images), требования к [драйверу InfiniBand](./workloads/hpc/enable-infiniband.md) и поддерживаемые [библиотеки MPI](./workloads/hpc/setup-mpi.md) ОТЛИЧАЮТСЯ от ВИРТУАЛЬНЫХ машин с поддержкой SR-IOV.
+> Среди [виртуальных машин с поддержкой RDMA](sizes-hpc.md#rdma-capable-instances)для серии H не включена поддержка SR-IOV. Поэтому поддерживаемые [образы виртуальных машин](./workloads/hpc/configure.md#vm-images), требования к [драйверу InfiniBand](./workloads/hpc/enable-infiniband.md) и поддерживаемые [библиотеки MPI](./workloads/hpc/setup-mpi.md) ОТЛИЧАЮТСЯ от ВИРТУАЛЬНЫХ машин с поддержкой SR-IOV.
+
+## <a name="software-specifications"></a>Спецификации программного обеспечения
+
+| Спецификации программного обеспечения     |Виртуальная машина серии HC           |
+|-----------------------------|-----------------------|
+| Максимальный размер задания MPI            | 4800 ядер (300 ВМ в одном масштабируемом наборе виртуальных машин с singlePlacementGroup = true)  |
+| Поддержка MPI                 | Intel MPI 5. x, MS-MPI  |
+| Поддержка операционных систем для SRIOV RDMA   | CentOS/RHEL 6,5-7,4, SLES 12 SP4 +, WinServer 2012 — 2016  |
+| Поддержка Orchestrator        | Циклеклауд, Batch, AKS  |
+
+[!INCLUDE [hpc-include](./workloads/hpc/includes/hpc-include.md)]
+
+[!INCLUDE [virtual-machines-common-sizes-table-defs](../../includes/virtual-machines-common-sizes-table-defs.md)]
 
 ## <a name="other-sizes"></a>Остальные размеры
 
@@ -56,7 +67,6 @@ ms.locfileid: "102566147"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте больше о [настройке виртуальных машин](./workloads/hpc/configure.md), [включении INFINIBAND](./workloads/hpc/enable-infiniband.md), [настройке MPI](./workloads/hpc/setup-mpi.md) и оптимизации приложений HPC для [рабочих нагрузок](./workloads/hpc/overview.md)Azure в HPC.
-- Ознакомьтесь с последними объявлениями и некоторыми примерами HPC, а также результатами в [блогах технического сообщества службы вычислений](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Сведения о более высоком уровне архитектурного представления выполнения рабочих нагрузок HPC см. в статье [Высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).
 - Узнайте больше о том, как с помощью [единиц вычислений Azure (ACU)](acu.md) сравнить производительность вычислений для различных номеров SKU Azure.

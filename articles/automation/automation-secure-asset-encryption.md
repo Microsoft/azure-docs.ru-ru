@@ -9,12 +9,12 @@ ms.author: snmuvva
 ms.date: 01/11/2020
 ms.topic: conceptual
 manager: kmadnani
-ms.openlocfilehash: 7d59ca60c7f90c227885927086511bd1f8ac7ca1
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b46cf3a742158a3347b43a1e9bc6d62d0b2160d4
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "86185846"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773697"
 ---
 # <a name="encryption-of-secure-assets-in-azure-automation"></a>Шифрование защищенных ресурсов в Службе автоматизации Azure
 
@@ -141,18 +141,21 @@ PATCH https://management.azure.com/subscriptions/00000000-0000-0000-0000-0000000
 Тело запроса:
 
 ```json
- {
+{
+    "identity": {
+    "type": "SystemAssigned"
+    },
     "properties": {
-      "encryption": {
-        "keySource": "Microsoft.Keyvault",
-        "keyvaultProperties": {
-          "keyName": "sample-vault-key",
-          "keyvaultUri": "https://sample-vault-key12.vault.azure.net",
-          "keyVersion": "7c73556c521340209371eaf623cc099d"
+        "encryption": {
+            "keySource": "Microsoft.Keyvault",
+            "keyvaultProperties": {
+                "keyName": "sample-vault-key",
+                "keyvaultUri": "https://sample-vault-key12.vault.azure.net",
+                "keyVersion": "7c73556c521340209371eaf623cc099d"
+            }
         }
-      }
     }
-  }
+}
 ```
 
 Пример ответа

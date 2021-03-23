@@ -4,12 +4,12 @@ description: Узнайте, как создать частный кластер
 services: container-service
 ms.topic: article
 ms.date: 3/5/2021
-ms.openlocfilehash: 190658e23ee02651e64c3718824315c0265c0f04
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 21d839df04c868d2c21932f96a6b72a32b0404e5
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102556542"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771861"
 ---
 # <a name="create-a-private-azure-kubernetes-service-cluster"></a>Создание частного кластера Службы Azure Kubernetes
 
@@ -72,7 +72,7 @@ az aks create \
 
 - Значение System является значением по умолчанию. Если аргумент--частный-DNS-Zone не указан, AKS создаст зону Частная зона DNS в группе ресурсов Node.
 - "Нет" означает, что AKS не создаст зону Частная зона DNS.  Для этого необходимо подключить собственный DNS-сервер и настроить разрешение DNS для частного полного доменного имени.  Если не настроить разрешение DNS, DNS разрешается только в пределах узлов агентов и после развертывания приведет к проблемам с кластером. 
-- Для "CUSTOM_PRIVATE_DNS_ZONE_RESOURCE_ID" требуется создать зону Частная зона DNS в этом формате для глобального облака Azure: `privatelink.<region>.azmk8s.io` . Вам потребуется идентификатор ресурса, который будет Частная зона DNS зоны.  Кроме того, вам потребуется назначенное пользователем удостоверение или субъект-служба по крайней мере с `private dns zone contributor` ролью.
+- Для "CUSTOM_PRIVATE_DNS_ZONE_RESOURCE_ID" требуется создать зону Частная зона DNS в этом формате для глобального облака Azure: `privatelink.<region>.azmk8s.io` . Вам потребуется идентификатор ресурса, который будет Частная зона DNS зоны.  Кроме того, вам потребуется назначенное пользователем удостоверение или субъект-служба по крайней мере с `private dns zone contributor` `vnet contributor` ролями и.
 - "FQDN-поддомен" можно использовать с "CUSTOM_PRIVATE_DNS_ZONE_RESOURCE_ID" только для предоставления возможностей поддомену для `privatelink.<region>.azmk8s.io`
 
 ### <a name="prerequisites"></a>Предварительные требования

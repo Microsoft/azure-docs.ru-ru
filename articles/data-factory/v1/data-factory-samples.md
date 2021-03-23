@@ -3,16 +3,16 @@ title: Фабрика данных Azure — примеры
 description: Подробное описание примеров, поставляемых со службой фабрики данных Azure.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: 82c871e8914d70dde7f2586b7dbf6556ebd2621f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 0d78cc9d99bd7ace2d214c2a2a1d7f75a74df098
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100387042"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785059"
 ---
 # <a name="azure-data-factory---samples"></a>Фабрика данных Azure — примеры
 > [!NOTE]
@@ -71,7 +71,7 @@ ms.locfileid: "100387042"
     ![Колонка "Фабрика данных"](./media/data-factory-samples/DataFactoryBladeAfter.png)
 
 ## <a name="samples-in-visual-studio"></a>Примеры в Visual Studio
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 На вашем компьютере должны быть установлены следующие компоненты:
 
 * Visual Studio 2013 или Visual Studio 2015.
@@ -86,7 +86,7 @@ ms.locfileid: "100387042"
    2. В правой области выберите **Шаблоны фабрики данных** .
    3. Введите **имя** проекта.
    4. Выберите **расположение** для проекта.
-   5. Нажмите кнопку **OK**.
+   5. Нажмите кнопку **ОК**.
 
       ![Диалоговое окно "Новый проект"](./media/data-factory-samples/vs-new-project-adf-templates.png)
 3. В диалоговом окне **Шаблоны фабрики данных** выберите пример шаблона в разделе **Use-Case Templates** (Примеры использования шаблонов) и нажмите кнопку **Далее**. Далее приводится описание процедуры использования шаблона **Профилирование клиентов** . Действия аналогичны действиям в других примерах.

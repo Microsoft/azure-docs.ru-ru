@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/08/2021
 ms.author: amverma
 ms.reviewer: jushiman
-ms.openlocfilehash: 1abc05cf1486651b87094f40777f3679d234a34b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: db42e59011a68c78d30fed6b66e5c76e0a28f472
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103009343"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104774751"
 ---
 # <a name="hbv2-series"></a>Серия HBv2
 
@@ -34,9 +34,9 @@ ms.locfileid: "103009343"
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Standard_HB120rs_v2 | 120 | AMD ЕПИК 7V12 | 456 | 350 | 2.45 | 3.1 | 3.3 | 200 | Все | 480 + 960 | 8 | 8 |
 
-Дополнительные сведения
-- Базовая [архитектура и топология виртуальной машины](./workloads/hpc/hbv2-series-overview.md)
-- [Поддерживаемый стек программного обеспечения](./workloads/hpc/hbv2-series-overview.md#software-specifications) , включая ПОДДЕРЖИВАЕМую ОС
+Дополнительные сведения о:
+- [архитектура и топология виртуальных машин](./workloads/hpc/hbv2-series-overview.md)
+- поддерживаемый [Стек программного обеспечения](./workloads/hpc/hbv2-series-overview.md#software-specifications) , включая поддерживаемую ОС, и
 - Ожидаемая [производительность](./workloads/hpc/hbv2-performance.md) виртуальной машины серии HBv2.
 
 [!INCLUDE [hpc-include](./workloads/hpc/includes/hpc-include.md)]

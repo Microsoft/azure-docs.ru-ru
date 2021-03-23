@@ -1,24 +1,14 @@
 ---
 title: Защитник-IoT-Micro-Agent классический агрегат событий
 description: Узнайте о защитнике для агрегирования событий IoT.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 1/20/2021
-ms.author: shhazam
-ms.openlocfilehash: 01333da3041cc93154c46fb45a39bb209fd30f91
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 3/23/2021
+ms.openlocfilehash: e6c0f0e6e1f4027716ff8e3ca99f1c8803f33260
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493084"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779143"
 ---
 # <a name="defender-iot-micro-agent-classic-event-aggregation"></a>Защитник-IoT-Micro-Agent классический агрегат событий
 

@@ -1,18 +1,14 @@
 ---
 title: Выбор трафика для мониторинга
 description: Датчики автоматически выполняют глубокое обнаружение пакетов и исдают трафик и разрешают сведения о сетевых устройствах, таких как атрибуты устройств и поведение сети. Для управления типом трафика, который обнаруживает каждый датчик, доступны несколько средств.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/07/2020
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: bfe3e00c4930ba57c930eb1bc2f2dd4ed11886e0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b80ef4a4a1fca7383da80fda6fdf42831913f2bd
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100522399"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784447"
 ---
 # <a name="control-what-traffic-is-monitored"></a>Выбор трафика для мониторинга
 

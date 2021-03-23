@@ -9,12 +9,12 @@ ms.date: 01/02/2019
 ms.service: key-vault
 ms.subservice: general
 ms.topic: conceptual
-ms.openlocfilehash: 36a94f780fa5c196e28730c051e161633ed3ee3d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 148f67fb87072a8ffd25f0fe1dfdb444be052173
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102431063"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771623"
 ---
 # <a name="virtual-network-service-endpoints-for-azure-key-vault"></a>Конечные точки служб для виртуальной сети для Azure Key Vault
 
@@ -59,6 +59,7 @@ ms.locfileid: "102431063"
 |Azure Service Bus|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../service-bus-messaging/configure-customer-managed-key.md)|
 |Импорт и экспорт Microsoft Azure| [Использование управляемых клиентом ключей в Azure Key Vault для службы импорта и экспорта](../../import-export/storage-import-export-encryption-key-portal.md)
 |Реестр контейнеров Azure|[Шифрование реестра с помощью управляемых клиентом ключей](../../container-registry/container-registry-customer-managed-keys.md)
+|Шлюз приложений Azure |[Использование сертификатов Key Vault для прослушивателей с поддержкой HTTPS](../../application-gateway/key-vault-certs.md)
 
 > [!NOTE]
 > Настройте политики доступа в Key Vault так, чтобы разрешить доступ к Key Vault соответствующим службам.

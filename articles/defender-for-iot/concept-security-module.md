@@ -1,24 +1,14 @@
 ---
 title: Защитник-IoT-Micro-Agent и устройство двойников
 description: Узнайте о концепции защитника, IoT-Micro-Agent двойников и о том, как они используются в защитнике для Интернета вещей.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: mlottner
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 07/24/2019
-ms.author: mlottner
-ms.openlocfilehash: 552da329b90b102a13ef53158ec81be87684c1fc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 1ed6faf03d168ed7a2a2f07733cb7e238d234915
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493192"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779177"
 ---
 # <a name="defender-iot-micro-agent"></a>Защитник-IoT-Micro-Agent
 

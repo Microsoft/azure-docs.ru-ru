@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 09/30/2020
 ms.author: v-erkel
-ms.openlocfilehash: 50fdab1fa8def1b4e3b9a9d59d3b2593e5526c65
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 63a179f7123f088c9c60fbfb8996a5b21d1c704d
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103472043"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773272"
 ---
 # <a name="create-an-azure-hpc-cache"></a>Создание Azure HPC Cache
 
@@ -282,7 +282,7 @@ upgradeStatus     : @{currentFirmwareVersion=5.3.42; firmwareUpdateDeadline=1/1/
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После того как кэш появится в списке **ресурсов** , можно перейти к следующему шагу.
 

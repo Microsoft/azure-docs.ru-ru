@@ -3,16 +3,16 @@ title: Выполнение конвейера и триггеры в фабри
 description: В этой статье объясняется, как выполнить конвейер в фабрике данных Azure по запросу или путем создания триггера.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 07/05/2018
-ms.openlocfilehash: 2dba9e4f727b56e5093171c2ea59382075563f31
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 271dbd87950018cebbd23841d32324afa42511e7
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104592070"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785807"
 ---
 # <a name="pipeline-execution-and-triggers-in-azure-data-factory"></a>Выполнение конвейера и триггеры в фабрике данных Azure
 
@@ -281,7 +281,7 @@ client.Pipelines.CreateRunWithHttpMessagesAsync(resourceGroup, dataFactoryName, 
 | --- | --- | --- | --- | --- | --- |
 | **startTime** | строка | Да | Нет | Дата и время по спецификации ISO 8601 | `"startTime" : "2013-01-09T09:30:00-08:00"` |
 | **шаблон** | object | Да | Нет | Объект recurrence | `"recurrence" : { "frequency" : "monthly", "interval" : 1 }` |
-| **пределах** | Число | Нет | 1 | От 1 до 1000 | `"interval":10` |
+| **пределах** | number | Нет | 1 | От 1 до 1000 | `"interval":10` |
 | **Завершения** | строка | Да | Нет | Значение даты и времени, представляющее время в будущем. | `"endTime" : "2013-02-09T09:30:00-08:00"` |
 | **Расписание** | object | Нет | None | Объект schedule | `"schedule" : { "minute" : [30], "hour" : [8,17] }` |
 
@@ -312,7 +312,7 @@ client.Pipelines.CreateRunWithHttpMessagesAsync(resourceGroup, dataFactoryName, 
 
 | Элемент JSON | Описание | Допустимые значения |
 | --- | --- | --- |
-| **тезис** | Минуты часа, в которые будет выполняться триггер. |Целое число<br />Массив целых чисел |
+| **minutes** | Минуты часа, в которые будет выполняться триггер. |Целое число<br />Массив целых чисел |
 | **суток** | Часы дня, в которые будет выполняться триггер. |Целое число<br />Массив целых чисел |
 | **Рабочие дни** | Дни недели, в которые будет выполняться триггер. Значение можно указать только с еженедельной частотой.|<br />monday<br />tuesday<br />wednesday<br />thursday<br />friday<br />saturday<br />sunday<br />Массив значений дня (максимальный размер массива — 7)<br /><br />Значения дня не учитывают регистр |
 | **monthlyOccurrences** | Дни месяца, по которым выполняется триггер. Значение можно указать только с ежемесячной частотой. |Массив объектов **monthlyOccurrence**: `{ "day": day, "occurrence": occurrence }`<br />Атрибут **day** является днем недели, в который выполняется триггер. Например, свойство **monthlyOccurrences** со значением **day** равным `{Sunday}` означает каждое воскресенье месяца. Атрибут **day** является обязательным.<br />Атрибут **occurrence** является частотой появления определенного **дня** на протяжении месяца. Например, свойство **monthlyOccurrences** со значением **day** и **occurrence** со значением `{Sunday, -1}` означает последнее воскресенье месяца. Атрибут **occurrence** не является обязательным. |
@@ -385,7 +385,7 @@ client.Pipelines.CreateRunWithHttpMessagesAsync(resourceGroup, dataFactoryName, 
 
 Дополнительные сведения о триггерах на основе событий см. в разделе [триггер событий хранилища](how-to-create-event-trigger.md) и [триггер пользовательских событий](how-to-create-custom-event-trigger.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Ознакомьтесь со следующими руководствами:
 

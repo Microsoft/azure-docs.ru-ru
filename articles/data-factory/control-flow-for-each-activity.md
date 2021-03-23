@@ -3,16 +3,16 @@ title: Действие ForEach в фабрике данных Azure
 description: Действие ForEach определяет повторяющийся поток управления в конвейере. Оно используется для выполнения итерации коллекции и выполнения заданных действий.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/23/2019
-ms.openlocfilehash: aeabd74117f99c7cac9bde0eda02b9627caf0804
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a0c3a3cbaa71d627f54550cf92c067afbb1eb3f0
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102177796"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786215"
 ---
 # <a name="foreach-activity-in-azure-data-factory"></a>Действие ForEach в фабрике данных Azure
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]

@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 7/22/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: e61d2ff3807b65022d72414615af9fa729359358
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: df826a682eec15d09b60857e63c363b0f9941c01
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101715723"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779942"
 ---
 # <a name="manage-endpoints-and-routes-in-azure-digital-twins-portal"></a>Управление конечными точками и маршрутами в Azure Digital двойников (портал)
 
@@ -24,7 +24,7 @@ ms.locfileid: "101715723"
 
 Кроме того, можно также управлять конечными точками и маршрутами с помощью [API маршрутов событий](/rest/api/digital-twins/dataplane/eventroutes), [пакетов SDK](how-to-use-apis-sdks.md#overview-data-plane-apis)или [интерфейса командной строки Azure Digital двойников](how-to-use-cli.md). Версию этой статьи, которая использует эти механизмы вместо портала, см. [*в разделе Практические руководства. Управление конечными точками и маршрутами (API и интерфейс командной строки)*](how-to-manage-routes-apis-cli.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Вам потребуется **учетная запись Azure** (вы можете настроить ее [здесь](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)бесплатно).
 * Вам потребуется **экземпляр Azure Digital двойников** в подписке Azure. Если у вас еще нет экземпляра, его можно создать, выполнив действия, описанные в разделе [*инструкции. Настройка экземпляра и проверки подлинности*](how-to-set-up-instance-portal.md). Используйте следующие значения из программы установки, которые можно использовать далее в этой статье:
@@ -152,6 +152,9 @@ ms.locfileid: "101715723"
 
 Можно выбрать один из основных общих параметров фильтра или использовать дополнительные параметры фильтра для создания собственных настраиваемых фильтров.
 
+>[!NOTE]
+> В фильтрах **учитывается регистр** и требуется совпадение с вариантом полезной нагрузки (который может не совпадать с вариантом модели).
+
 #### <a name="use-the-basic-filters"></a>Использование основных фильтров
 
 Чтобы использовать основные фильтры, разверните параметр _типы событий_ и установите флажки, соответствующие событиям, которые вы хотите отправить в конечную точку. 
@@ -194,7 +197,7 @@ ms.locfileid: "101715723"
 
 [!INCLUDE [digital-twins-route-metrics](../../includes/digital-twins-route-metrics.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о различных типах сообщений о событиях, которые можно получить:
 * [*Пошаговое руководство. анализ данных события*](how-to-interpret-event-data.md)
