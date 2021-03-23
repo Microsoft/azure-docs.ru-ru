@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/05/2021
 ms.author: yelevin
-ms.openlocfilehash: a4303f43dffa98f842bd3daf9e3a0cd5214932b1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ee28837d3e687d78b645a1ab18a9add1f8e57fcc
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100585364"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771266"
 ---
 # <a name="step-1-deploy-the-log-forwarder"></a>Шаг 1. Развертывание сервера пересылки журналов
 
@@ -34,7 +34,7 @@ ms.locfileid: "100585364"
     - Прослушивание сообщений системного журнала в решениях безопасности через TCP-порт 514
     - Пересылка только тех сообщений, которые он идентифицирует как CEF агенту Log Analytics на localhost с помощью TCP-порта 25226
  
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Необходимо иметь повышенные разрешения (sudo) на назначенном компьютере Linux.
 
@@ -229,5 +229,7 @@ ms.locfileid: "100585364"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как развернуть агент Log Analytics, чтобы подключить устройства CEF к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
+
+- Сведения о [сопоставлении полей CEF и CommonSecurityLog](cef-name-mapping.md).
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).
 - Узнайте, как приступить к [обнаружению угроз с помощью Azure Sentinel](./tutorial-detect-threats-built-in.md).

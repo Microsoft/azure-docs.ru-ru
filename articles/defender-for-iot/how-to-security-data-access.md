@@ -1,24 +1,14 @@
 ---
 title: Данные & рекомендации по безопасности доступа
 description: Узнайте, как получить доступ к данным оповещений системы безопасности и рекомендациям при использовании защитника для Интернета вещей.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: mlottner
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 09/04/2020
-ms.author: mlottner
-ms.openlocfilehash: d054b005b6b11e718662619b5525de3fc1ae5f4c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 160f7c014c890f5d8c4dd6366d3acca70f21ad11
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100592637"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781693"
 ---
 # <a name="access-your-security-data"></a>Доступ к данным безопасности
 
@@ -171,7 +161,7 @@ SecurityRecommendation
 | /Subscriptions/<subscription_id>/resourceGroups/<resource_group>/Провидерс/Микрософт.девицес/иосубс/<iot_hub> | <device_name> | Высокий          | 1  |
 | /Subscriptions/<subscription_id>/resourceGroups/<resource_group>/Провидерс/Микрософт.девицес/иосубс/<iot_hub> | <device_name> | Средний        | 4   |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Ознакомьтесь с [обзором](overview.md) защитника для IOT
 - Сведения о защитнике для [архитектуры](architecture.md) IOT

@@ -4,15 +4,15 @@ description: Узнайте, как создать настраиваемый т
 ms.service: data-factory
 author: chez-charlie
 ms.author: chez
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.topic: conceptual
 ms.date: 03/11/2021
-ms.openlocfilehash: e372808250b1d5b21cd5f6c5226922d5d6ad0f77
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2d2f26b24e7fa10d9244de8f99d78c64a44b3d61
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104609695"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785654"
 ---
 # <a name="create-a-trigger-that-runs-a-pipeline-in-response-to-a-custom-event-preview"></a>Создание триггера, запускающего конвейер в ответ на пользовательское событие (Предварительная версия)
 

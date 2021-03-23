@@ -1,25 +1,14 @@
 ---
 title: Установка агента C# на устройстве Windows
 description: Узнайте, как установить защитник для агента IoT на 32-разрядных или 64-разрядных устройствах Windows.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: mlottner
-manager: rkarlin
-editor: ''
-ms.devlang: na
-ms.custom: devx-track-csharp
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 09/09/2020
-ms.author: mlottner
-ms.openlocfilehash: e7c7fdd5874dbde5ca304309d0840724cb3872df
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b5efc9ce675fa068f378cdc2bdd5a077d3437a93
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103494535"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104778769"
 ---
 # <a name="deploy-a-defender-for-iot-c-based-security-agent-for-windows"></a>Развертывание агента безопасности на основе C# для Windows IoT
 
@@ -124,7 +113,7 @@ Get-Help пример:    ```Get-Help .\InstallSecurityAgent.ps1```
      Restart-Service "ASC IoT Agent"
      ```
 
-   или диспетчер конфигурации служб
+   или
 
     **CMD**
 

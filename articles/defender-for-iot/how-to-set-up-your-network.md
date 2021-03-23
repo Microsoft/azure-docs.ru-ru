@@ -1,18 +1,14 @@
 ---
 title: Настройка сети
 description: Узнайте о архитектуре решения, подготовке сети, предварительных требованиях и других данных, необходимых для успешной настройки сети для работы с защитником Azure для устройств IoT.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 02/18/2021
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: 0f85eebbfa8fcdfd9ad6e31a564f27b5d9bfbdfc
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ed75995b7cbc3b051d77942698a5d0d948e6eef0
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101733250"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781812"
 ---
 # <a name="about-azure-defender-for-iot-network-setup"></a>Настройка сети с Azure Defender для Интернета вещей
 
@@ -106,7 +102,7 @@ ms.locfileid: "101733250"
 | DNS |  | В/С | 53 | DNS | Порт DNS-сервера | Локальная консоль управления и датчик | Сервер DNS |
 | LDAP | TCP | В/С | 389 | Active Directory | Подключение между платформой Циберкс и платформой управления к Active Directory | Локальная консоль управления и датчик | Сервер LDAP |
 | LDAPS | TCP | В/С | 636 | Active Directory | Подключение между платформой Циберкс и платформой управления к Active Directory | Локальная консоль управления и датчик | Сервер LDAPs |
-| SNMP | UDP | OUT | 161 | Мониторинг | Удаленные собирающие SNMP. | Локальная консоль управления и датчик | Сервер SNMP |
+| SNMP | UDP | OUT | 161 | Наблюдение | Удаленные собирающие SNMP. | Локальная консоль управления и датчик | Сервер SNMP |
 | WMI | UDP | OUT | 135 | мониторинг | Мониторинг конечных точек Windows | Sensor | Соответствующий элемент сети |
 | Туннелирование | TCP | IN | 9000 <br /><br />— поверх порта 443 <br /><br />От конечного пользователя до локальной консоли управления. <br /><br />-Порт 22 из датчика в локальную консоль управления  | мониторинг | Туннелирование | Sensor | Локальная консоль управления |
 
@@ -668,7 +664,7 @@ RSPAN: на основе Cisco Catalyst 2960 (24 порта).
 | Имя пользователя | |
 | Пароль | |
 | Authentication type (Тип проверки подлинности) | MD5 или SHA |
-| Encryption | DES или AES |
+| Шифрование | DES или AES |
 | Секретный ключ | |
 | Строка сообщества SNMP v2 |
 

@@ -3,16 +3,16 @@ title: Действие проверки в фабрике данных Azure
 description: Действие проверки не будет продолжать выполнение конвейера до тех пор, пока не будет выполнена проверка присоединенного набора данных с определенным критерием, указанным пользователем.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: e00090fc31c129f35632d30b9a5ed6c39c13a414
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 2c5208f754e66f92cf5019fdad3026decac88284
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100385257"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785960"
 ---
 # <a name="validation-activity-in-azure-data-factory"></a>Действие проверки в фабрике данных Azure
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]

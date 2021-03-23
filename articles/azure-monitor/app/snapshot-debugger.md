@@ -7,12 +7,12 @@ ms.date: 10/23/2019
 author: cweining
 ms.author: cweining
 ms.reviewer: cweining
-ms.openlocfilehash: bd196e60fed8a18064bfa59e343e51a878a11237
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b0c26aa95d8c3aba5df164fb0707b4833accd052
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102217403"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786487"
 ---
 # <a name="debug-snapshots-on-exceptions-in-net-apps"></a>Отладочные моментальные снимки для исключений в приложениях .NET
 При возникновении исключения, можно автоматически собирать отладочный моментальный снимок из работающего веб-приложения. Моментальный снимок отображает состояние исходного кода и переменных в момент порождения этого исключения. Snapshot Debugger в [Azure Application Insights](./app-insights-overview.md) отслеживает данные телеметрии исключений из веб-приложения. Он собирает моментальные снимки для наиболее частых исключений, чтобы предоставить вам необходимые сведения для диагностики проблем в рабочей среде. Включите в приложение [пакет NuGet сборщика моментальных снимков](https://www.nuget.org/packages/Microsoft.ApplicationInsights.SnapshotCollector) и при необходимости настройте параметры коллекции в [ApplicationInsights.config](./configuration-with-applicationinsights-config.md). Моментальные снимки отображаются на [исключениях](./asp-net-exceptions.md) на портале Application Insights.
@@ -24,7 +24,10 @@ ms.locfileid: "102217403"
 ## <a name="enable-application-insights-snapshot-debugger-for-your-application"></a>Включение Snapshot Debugger Application Insights для приложения
 Коллекция моментальных снимков доступна для:
 * .NET Framework и приложений ASP.NET выполняющихся с помощью .NET Framework 4.5 или более поздней версии.
-* .NET Core 2.0 и приложений ASP.NET Core 2.0 под управлением Windows.
+* .NET Core и ASP.NET Core приложений, использующих .NET Core 2,1 (LTS) или 3,1 (LTS) в Windows.
+* Приложения .NET 5,0 в Windows.
+
+Не рекомендуется использовать .NET Core 2,0, 2,2 или 3,0, так как они не поддерживаются.
 
 Поддерживаются следующие среды:
 
@@ -131,7 +134,7 @@ ms.locfileid: "102217403"
 > [!TIP]
 > Установите расширение сайта Application Insights в службе приложений для получения поддержки деоптимизации.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Включите Snapshot Debugger Application Insights для приложения:
 
 * [Служба приложений Azure](snapshot-debugger-appservice.md?toc=/azure/azure-monitor/toc.json)

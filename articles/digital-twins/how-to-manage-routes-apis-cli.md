@@ -7,12 +7,12 @@ ms.author: alkarche
 ms.date: 11/18/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: b0e440f9fe0b7ce1591318362ac0419b9aa01baf
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 97fad1b984ad34722a952a31d8245eb68417a2ab
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102433307"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779976"
 ---
 # <a name="manage-endpoints-and-routes-in-azure-digital-twins-apis-and-cli"></a>Управление конечными точками и маршрутами в Azure Digital двойников (API и CLI)
 
@@ -24,7 +24,7 @@ ms.locfileid: "102433307"
 
 Кроме того, можно также управлять конечными точками и маршрутами с помощью [портал Azure](https://portal.azure.com). Версию этой статьи, которая использует портал, см. [*в разделе руководство. Управление конечными точками и маршрутами (портал)*](how-to-manage-routes-portal.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Вам потребуется **учетная запись Azure** (вы можете настроить ее [здесь](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)бесплатно).
 - Вам потребуется **экземпляр Azure Digital двойников** в подписке Azure. Если у вас еще нет экземпляра, его можно создать, выполнив действия, описанные в разделе [*инструкции. Настройка экземпляра и проверки подлинности*](how-to-set-up-instance-cli.md). Используйте следующие значения из программы установки, которые можно использовать далее в этой статье:
@@ -238,6 +238,9 @@ az resource create --id <Azure-Digital-Twins-instance-Azure-resource-ID>/endpoin
 
 Вы можете ограничить отправляемые события, добавив **Фильтр** для конечной точки в маршруте события.
 
+>[!NOTE]
+> В фильтрах **учитывается регистр** и требуется совпадение с вариантом полезной нагрузки (который может не совпадать с вариантом модели).
+
 Чтобы добавить фильтр, можно использовать запрос на размещение *https://{The-Azure-Digital-двойников-имя_узла}/евентраутес/{Event-Route-Name}? API-Version = 2020-10-31* со следующим текстом:
 
 :::code language="json" source="~/digital-twins-docs-samples/api-requests/filter.json":::
@@ -248,7 +251,7 @@ az resource create --id <Azure-Digital-Twins-instance-Azure-resource-ID>/endpoin
 
 [!INCLUDE [digital-twins-route-metrics](../../includes/digital-twins-route-metrics.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о различных типах сообщений о событиях, которые можно получить:
 * [*Пошаговое руководство. анализ данных события*](how-to-interpret-event-data.md)

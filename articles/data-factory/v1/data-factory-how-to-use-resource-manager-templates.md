@@ -3,16 +3,16 @@ title: Использование шаблонов диспетчер ресур
 description: Узнайте, как создать шаблоны Azure Resource Manager и использовать их для создания сущностей фабрики данных.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: c17ef939b8d27035e5b28f4a651b9be2db8f2279
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 8ade57fc4cf96e3638fffc918899385d8935c95f
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100382945"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104782900"
 ---
 # <a name="use-templates-to-create-azure-data-factory-entities"></a>Создание сущностей фабрики данных Azure с помощью шаблонов
 > [!NOTE]

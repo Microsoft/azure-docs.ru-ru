@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 07/20/2020
 ms.author: v-erkel
-ms.openlocfilehash: e8f1b3fffefcdf1d2ec8bd3e9b1aaea93697ca8a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: f587de4ee2ce051cb771db90d7f9ce00ce66b07f
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103471974"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104772711"
 ---
 # <a name="use-customer-managed-encryption-keys-for-azure-hpc-cache"></a>Использование управляемых клиентом ключей шифрования для кэша HPC Azure
 
@@ -21,8 +21,6 @@ ms.locfileid: "103471974"
 > Все данные, хранящиеся в Azure, в том числе на дисках кэша, шифруются по умолчанию с помощью ключей, управляемых корпорацией Майкрософт. Чтобы управлять ключами, используемыми для шифрования данных, необходимо выполнить действия, описанные в этой статье.
 
 Кэш HPC Azure также защищен [шифрованием узлов виртуальных машин](../virtual-machines/disk-encryption.md#encryption-at-host---end-to-end-encryption-for-your-vm-data) на управляемых дисках, содержащих кэшированные данные, даже если вы добавили ключ клиента для дисков кэша. Добавление ключа, управляемого клиентом, для двойного шифрования обеспечивает дополнительный уровень безопасности для клиентов с высокими требованиями к безопасности. Дополнительные сведения см. в статье о [шифровании хранилища дисков Azure на стороне сервера](../virtual-machines/disk-encryption.md) .
-
-<!-- This feature is available only in some of the Azure regions where Azure HPC Cache is available. Refer to the [Region availability](hpc-cache-overview.md#region-availability) list for details. -->
 
 Существует три шага по включению шифрования ключей, управляемых клиентом, для кэша HPC Azure.
 
@@ -69,14 +67,14 @@ ms.locfileid: "103471974"
 Дополнительные сведения см. в [документации по Azure Key Vault](../key-vault/general/overview.md) .
 
 > [!NOTE]
-> Azure Key Vault должны использовать одну и ту же подписку и находиться в том же регионе, что и кэш HPC Azure. Убедитесь, что выбранный регион [поддерживает функцию управляемых клиентом ключей](hpc-cache-overview.md#region-availability).
+> Azure Key Vault должны использовать одну и ту же подписку и находиться в том же регионе, что и кэш HPC Azure. Убедитесь, что выбранный регион [поддерживает оба продукта](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=hpc-cache,key-vault).
 
 ## <a name="2-create-the-cache-with-customer-managed-keys-enabled"></a>2. Создайте кэш с включенными управляемыми клиентом ключами.
 
 При создании кэша HPC Azure необходимо указать источник ключа шифрования. Следуйте инструкциям в разделе [создание кэша HPC Azure](hpc-cache-create.md)и укажите хранилище ключей и ключ на странице **ключи шифрования диска** . Вы можете создать новое хранилище ключей и ключ во время создания кэша.
 
 > [!TIP]
-> Если страница **ключи шифрования диска** не отображается, убедитесь, что кэш находится в одном из поддерживаемых регионов.
+> Если страница **ключи шифрования диска** не отображается, убедитесь, что кэш находится в одном из [поддерживаемых регионов](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=hpc-cache,key-vault).
 
 Пользователь, создающий кэш, должен иметь привилегии, равные [роли участника Key Vault](../role-based-access-control/built-in-roles.md#key-vault-contributor) или выше.
 
@@ -146,7 +144,7 @@ ms.locfileid: "103471974"
 * [Общие сведения о шифровании службы хранилища Azure](../storage/common/storage-service-encryption.md)
 * [Шифрование дисков с помощью управляемых клиентом ключей](../virtual-machines/disk-encryption.md#customer-managed-keys) . документация по использованию Azure Key Vault с управляемыми дисками, которые аналогичны сценариям для кэша HPC Azure.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После создания кэша Azure HPC и полномочного шифрования на основе Key Vault Продолжайте настраивать кэш, предоставляя ему доступ к источникам данных.
 

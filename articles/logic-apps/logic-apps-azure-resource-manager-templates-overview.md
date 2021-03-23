@@ -6,12 +6,12 @@ ms.suite: integration
 ms.reviewer: logicappspm
 ms.topic: article
 ms.date: 11/06/2020
-ms.openlocfilehash: 2e1536d4f2ea7d71691c611e9127109c154f3266
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ec72431d927fd59677075e7adfdf7df171574882
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99807349"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104772949"
 ---
 # <a name="overview-automate-deployment-for-azure-logic-apps-by-using-azure-resource-manager-templates"></a>Обзор: Автоматизация развертывания для Azure Logic Apps с помощью шаблонов Azure Resource Manager
 
@@ -63,7 +63,7 @@ ms.locfileid: "99807349"
 
 Для шаблона приложения логики вы в основном работаете с этими объектами шаблона:
 
-| Атрибут | Описание |
+| attribute | Описание |
 |-----------|-------------|
 | `parameters` | Объявляет [Параметры шаблона](../azure-resource-manager/templates/template-syntax.md#parameters) для приема значений, используемых при создании и настройке ресурсов для развертывания в Azure. Например, эти параметры принимают значения для имени и расположения приложения логики, а также подключения и другие ресурсы, необходимые для развертывания. Эти значения параметров можно сохранить в [файле параметров](#template-parameter-files), который описывается далее в этом разделе. Общие сведения см. в разделе [Parameters-диспетчер ресурсов структура шаблона и синтаксис](../azure-resource-manager/templates/template-syntax.md#parameters). |
 | `resources` | Определяет [ресурсы](../azure-resource-manager/templates/template-syntax.md#resources) для создания или обновления и развертывания в группе ресурсов Azure, такие как приложение логики, подключения, учетные записи хранения Azure и т. д. Общие сведения см. в разделе [ресурсы-Диспетчер ресурсов структура шаблона и синтаксис](../azure-resource-manager/templates/template-syntax.md#resources). |
@@ -207,7 +207,7 @@ ms.locfileid: "99807349"
       "<secured-parameter-name>": {
          "reference": {
             "keyVault": {
-               "id": "/subscriptions/<Azure-subscription-ID>/resourceGroups/<Azure-resource-group-name>/Microsoft.KeyVault/vaults/<key-vault-name>",
+               "id": "/subscriptions/<Azure-subscription-ID>/resourceGroups/<Azure-resource-group-name>/Microsoft.KeyVault/vaults/<key-vault-name>"
             },
             "secretName: "<secret-name>"
          }
@@ -328,7 +328,7 @@ ms.locfileid: "99807349"
 
 Ниже приведены атрибуты, относящиеся к определению ресурса приложения логики.
 
-| Атрибут | Обязательно | Тип | Описание |
+| attribute | Обязательно | Тип | Описание |
 |-----------|----------|------|-------------|
 | `state` | Да | Строка | Состояние приложения логики при развертывании `Enabled` . Это означает, что приложение логики работает в реальном времени и `Disabled` означает, что приложение логики неактивно. Например, если вы не готовы к работе с приложением логики, но хотите развернуть черновую версию, можно использовать `Disabled` параметр. |
 | `integrationAccount` | Нет | Объект | Если приложение логики использует учетную запись интеграции, которая хранит артефакты для сценариев "бизнес — бизнес" (B2B), этот объект включает `id` атрибут, указывающий идентификатор для учетной записи интеграции. |
@@ -972,7 +972,7 @@ ms.locfileid: "99807349"
 }
 ```
 
-| Атрибут | Описание |
+| attribute | Описание |
 |-----------|-------------|
 | `token:clientId` | Идентификатор приложения или клиента, связанный с субъектом-службой. |
 | `token:clientSecret` | Значение ключа, связанное с субъектом-службой |

@@ -12,12 +12,12 @@ ms.date: 07/23/2020
 ms.author: kenwith
 ms.reviewer: japere
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: edd2ec633bd78ce1a596782deab57105e9d7f1c3
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: b76934d3f16ec5f87ed1380135d22bc5d943652c
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102487752"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104779773"
 ---
 # <a name="active-directory-azure-ad-application-proxy-frequently-asked-questions"></a>Часто задаваемые вопросы о прокси приложения Active Directory (Azure AD)
 
@@ -45,7 +45,7 @@ ms.locfileid: "102487752"
 Служба обновления находится в работоспособном состоянии, если она запущена и в журнале событий не записаны ошибки (журналы приложений и служб — > Microsoft-> AadApplicationProxy-> обновления > администратора). 
 
 > [!IMPORTANT]
-> Для автоматического обновления выпущены только основные версии. Рекомендуем обновить соединитель вручную по регулярному расписанию. Дополнительные сведения о новых выпусках, типе выпуска (Загрузка, автоматическое обновление), исправлении ошибок и новых возможностях см. в статье [Журнал выпусков версий Azure AD application proxy: версия](application-proxy-release-version-history.md).
+> Для автоматического обновления выпущены только основные версии. Рекомендуется обновлять соединитель вручную, только если это необходимо. Например, вы не можете ожидать основной выпуск, так как необходимо устранить известную проблему или использовать новую функцию. Дополнительные сведения о новых выпусках, типе выпуска (Загрузка, автоматическое обновление), исправлении ошибок и новых возможностях см. в статье [Журнал выпусков версий Azure AD application proxy: версия](application-proxy-release-version-history.md).
 
 Чтобы вручную обновить соединитель, выполните следующие действия.
 
@@ -225,7 +225,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 
 Для лучшей производительности рекомендуется использовать идентичные внутренние и внешние URL-адреса, настроив [Личные домены](./application-proxy-configure-custom-domain.md). Если использование пользовательских доменов невозможно, можно улучшить производительность преобразования ссылок с помощью расширения для безопасного входа в мои приложения или браузера Microsoft ребра на мобильных устройствах. См. раздел [Перенаправление жестко закодированных ссылок для приложений, опубликованных с помощью Azure AD application proxy](application-proxy-configure-hard-coded-link-translation.md).
 
-## <a name="wildcards"></a>подстановочные знаки;
+## <a name="wildcards"></a>Подстановочные знаки
 
 ### <a name="how-do-i-use-wildcards-to-publish-two-applications-with-the-same-custom-domain-name-but-with-different-protocols-one-for-http-and-one-for-https"></a>Разделы справки использовать подстановочные знаки для публикации двух приложений с одним и тем же именем личного домена, но с разными протоколами, одним для HTTP и одним для HTTPS?
 

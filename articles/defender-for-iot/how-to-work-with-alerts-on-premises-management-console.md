@@ -1,18 +1,14 @@
 ---
 title: Работа с оповещениями на локальной консоли управления
 description: Используйте локальную консоль управления, чтобы получить представление о последних угрозах в сети предприятия и лучше понять, как пользователи датчика обрабатывают их.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/06/2020
-ms.service: azure
 ms.topic: how-to
-ms.openlocfilehash: 878b1b2d5ba13b68b5122e4b9cffc3c408e211e2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a99c489c54b2671a463c0c3dad1909c74b4fa203
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100526329"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781472"
 ---
 # <a name="work-with-alerts-on-the-on-premises-management-console"></a>Работа с оповещениями на локальной консоли управления 
 

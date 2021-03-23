@@ -3,13 +3,13 @@ title: Использование пулов нескольких узлов в 
 description: Узнайте, как создать несколько пулов узлов для кластера в службе Kubernetes Azure (AKS) и управлять ими.
 services: container-service
 ms.topic: article
-ms.date: 04/08/2020
-ms.openlocfilehash: 3e029695e9dce79473ada0bae3e7f0bbfd30db89
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 02/11/2021
+ms.openlocfilehash: 8f18e19eca8895549f17c9f0f6822ecb4da2914b
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102218491"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773510"
 ---
 # <a name="create-and-manage-multiple-node-pools-for-a-cluster-in-azure-kubernetes-service-aks"></a>Создание нескольких пулов узлов для кластера в службе Kubernetes Azure (AKS) и управление такими пулами узлов
 
@@ -134,7 +134,7 @@ az aks nodepool list --resource-group myResourceGroup --cluster-name myAKSCluste
 * Если вы развернете виртуальную сеть после создания кластера, необходимо обновить кластер (выполнить любую управляемую операцию клстер, но не подсчитать операции пула узлов) перед добавлением подсети за пределами исходной CIDR. AKS получит ошибку в пуле агентов добавить, но изначально это было разрешено. Если вы не уверены, как согласовать свой файл кластера с запросом в службу поддержки. 
 * Политика сети Калико не поддерживается. 
 * Политика сети Azure не поддерживается.
-* KUBE-proxy ожидает одну смежную CIDR и использует ее для трех оптмизатионс. См. Этот [к.е.п.](https://github.com/kubernetes/enhancements/blob/master/keps/sig-network/20191104-iptables-no-cluster-cidr.md ) и--Cluster-CIDR [здесь](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) для получения дополнительных сведений. В Azure CNI подсеть пула первого узла будет передана KUBE-proxy. 
+* KUBE-proxy ожидает одну смежную CIDR и использует ее для трех оптмизатионс. См. Этот [к.е.п.](https://github.com/kubernetes/enhancements/tree/master/keps/sig-network/2450-Remove-knowledge-of-pod-cluster-CIDR-from-iptables-rules) и--Cluster-CIDR [здесь](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) для получения дополнительных сведений. В Azure CNI подсеть пула первого узла будет передана KUBE-proxy. 
 
 Чтобы создать пул узлов с выделенной подсетью, передайте идентификатор ресурса подсети в качестве дополнительного параметра при создании пула узлов.
 
@@ -716,33 +716,11 @@ az deployment group create \
 
 Обновление кластера AKS может занять несколько минут в зависимости от параметров пула узлов и операций, определенных в шаблоне диспетчер ресурсов.
 
-## <a name="assign-a-public-ip-per-node-for-your-node-pools-preview"></a>Назначение общедоступного IP-адреса каждому узлу для пулов узлов (Предварительная версия)
+## <a name="assign-a-public-ip-per-node-for-your-node-pools"></a>Назначение общедоступного IP-адреса на узел для пулов узлов
 
-> [!WARNING]
-> Необходимо установить расширение CLI Preview 0.4.43 или более поздней версии для использования функции общедоступного IP-адреса на узел.
+Узлы AKS не нуждаются в собственных общедоступных IP-адресах для обмена данными. Однако сценарии могут потребовать, чтобы узлы в пуле узлов получали собственные выделенные общедоступные IP-адреса. Типичный сценарий — для игровых рабочих нагрузок, в которых консоль должна установить прямое подключение к облачной виртуальной машине для снижения числа прыжков. Этот сценарий можно достичь на AKS с помощью общедоступного IP-адреса узла.
 
-Узлы AKS не нуждаются в собственных общедоступных IP-адресах для обмена данными. Однако сценарии могут потребовать, чтобы узлы в пуле узлов получали собственные выделенные общедоступные IP-адреса. Типичный сценарий — для игровых рабочих нагрузок, в которых консоль должна установить прямое подключение к облачной виртуальной машине для снижения числа прыжков. Этот сценарий можно получить на AKS, зарегистрировав его в предварительной версии, общедоступный IP-адрес узла (Предварительная версия).
-
-Чтобы установить и обновить последнюю версию расширения AKS-Preview, используйте следующие Azure CLI команды:
-
-```azurecli
-az extension add --name aks-preview
-az extension update --name aks-preview
-az extension list
-```
-
-Зарегистрируйтесь для компонента общедоступного IP-адреса узла с помощью следующей команды Azure CLI:
-
-```azurecli-interactive
-az feature register --name NodePublicIPPreview --namespace Microsoft.ContainerService
-```
-Регистрация функции может занять несколько минут.  Состояние можно проверить с помощью следующей команды:
-
-```azurecli-interactive
- az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/NodePublicIPPreview')].{Name:name,State:properties.state}"
-```
-
-После успешной регистрации создайте новую группу ресурсов.
+В первую очередь создается новая группа ресурсов.
 
 ```azurecli-interactive
 az group create --name myResourceGroup2 --location eastus
@@ -760,12 +738,9 @@ az aks create -g MyResourceGroup2 -n MyManagedCluster -l eastus  --enable-node-p
 az aks nodepool add -g MyResourceGroup2 --cluster-name MyManagedCluster -n nodepool2 --enable-node-public-ip
 ```
 
-> [!Important]
-> На этапе предварительной версии служба метаданных экземпляров Azure сейчас не поддерживает получение общедоступных IP-адресов для номера SKU виртуальной машины уровня "Стандартный". Из-за этого ограничения нельзя использовать команды kubectl для показа общедоступных IP-адресов, назначенных узлам. Однако IP-адреса назначаются и функционируют как задуманные. Общедоступные IP-адреса для узлов присоединяются к экземплярам в масштабируемом наборе виртуальных машин.
-
 Общедоступные IP-адреса для узлов можно узнать различными способами.
 
-* Используйте команду Azure CLI [AZ vmss List-instance-public-IP][az-list-ips]
+* Используйте команду Azure CLI [AZ vmss List-instance-Public-IPS][az-list-ips].
 * Используйте [команды PowerShell или bash][vmss-commands]. 
 * Общедоступные IP-адреса можно также просмотреть в портал Azure, просмотрев экземпляры в масштабируемом наборе виртуальных машин.
 
@@ -818,20 +793,20 @@ az group delete --name myResourceGroup2 --yes --no-wait
 
 <!-- INTERNAL LINKS -->
 [aks-windows]: windows-container-cli.md
-[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
-[az-aks-create]: /cli/azure/aks#az-aks-create
-[az-aks-get-upgrades]: /cli/azure/aks#az-aks-get-upgrades
-[az-aks-nodepool-add]: /cli/azure/aks/nodepool#az-aks-nodepool-add
-[az-aks-nodepool-list]: /cli/azure/aks/nodepool#az-aks-nodepool-list
-[az-aks-nodepool-update]: /cli/azure/aks/nodepool#az-aks-nodepool-update
-[az-aks-nodepool-upgrade]: /cli/azure/aks/nodepool#az-aks-nodepool-upgrade
-[az-aks-nodepool-scale]: /cli/azure/aks/nodepool#az-aks-nodepool-scale
-[az-aks-nodepool-delete]: /cli/azure/aks/nodepool#az-aks-nodepool-delete
-[az-extension-add]: /cli/azure/extension#az-extension-add
-[az-extension-update]: /cli/azure/extension#az-extension-update
-[az-group-create]: /cli/azure/group#az-group-create
-[az-group-delete]: /cli/azure/group#az-group-delete
-[az-deployment-group-create]: /cli/azure/deployment/group#az_deployment_group_create
+[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az_aks_get_credentials
+[az-aks-create]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az_aks_create
+[az-aks-get-upgrades]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az_aks_get_upgrades
+[az-aks-nodepool-add]: /cli/azure/aks/nodepool?view=azure-cli-latest&preserve-view=true#az_aks_nodepool_add
+[az-aks-nodepool-list]: /cli/azure/aks/nodepool?view=azure-cli-latest&preserve-view=true#az_aks_nodepool_list
+[az-aks-nodepool-update]: /cli/azure/aks/nodepool?view=azure-cli-latest&preserve-view=true#az_aks_nodepool_update
+[az-aks-nodepool-upgrade]: /cli/azure/aks/nodepool?view=azure-cli-latest&preserve-view=true#az_aks_nodepool_upgrade
+[az-aks-nodepool-scale]: /cli/azure/aks/nodepool?view=azure-cli-latest&preserve-view=true#az_aks_nodepool_scale
+[az-aks-nodepool-delete]: /cli/azure/aks/nodepool?view=azure-cli-latest&preserve-view=true#az_aks_nodepool_delete
+[az-extension-add]: /cli/azure/extension?view=azure-cli-latest&preserve-view=true#az_extension_add
+[az-extension-update]: /cli/azure/extension?view=azure-cli-latest&preserve-view=true#az_extension_update
+[az-group-create]: /cli/azure/group?view=azure-cli-latest&preserve-view=true#az_group_create
+[az-group-delete]: /cli/azure/group?view=azure-cli-latest&preserve-view=true#az_group_delete
+[az-deployment-group-create]: /cli/azure/deployment/group?view=azure-cli-latest&preserve-view=true#az_deployment_group_create
 [gpu-cluster]: gpu-cluster.md
 [install-azure-cli]: /cli/azure/install-azure-cli
 [operator-best-practices-advanced-scheduler]: operator-best-practices-advanced-scheduler.md
@@ -844,5 +819,5 @@ az group delete --name myResourceGroup2 --yes --no-wait
 [ip-limitations]: ../virtual-network/virtual-network-ip-addresses-overview-arm#standard
 [node-resource-group]: faq.md#why-are-two-resource-groups-created-with-aks
 [vmss-commands]: ../virtual-machine-scale-sets/virtual-machine-scale-sets-networking.md#public-ipv4-per-virtual-machine
-[az-list-ips]: /cli/azure/vmss.md#az-vmss-list-instance-public-ips
+[az-list-ips]: /cli/azure/vmss?view=azure-cli-latest&preserve-view=true#az_vmss_list_instance_public_ips
 [reduce-latency-ppg]: reduce-latency-ppg.md

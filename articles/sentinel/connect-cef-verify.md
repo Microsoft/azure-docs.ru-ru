@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/05/2021
 ms.author: yelevin
-ms.openlocfilehash: f9fb1c917a0719cb9d250b997329d3415b5872eb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3ce83de7f876bbd67120bf511d29860b71cd2227
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98747480"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771283"
 ---
 # <a name="step-3-validate-connectivity"></a>Шаг 3. Проверка подключения
 
 После развертывания сервера пересылки журналов (на шаге 1) и настройки решения безопасности для отправки сообщений CEF (на шаге 2) выполните следующие инструкции, чтобы проверить подключение между решением безопасности и Sentinel. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Необходимо иметь повышенные разрешения (sudo) на компьютере сервера пересылки журналов.
 
@@ -246,6 +246,8 @@ ms.locfileid: "98747480"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как подключить устройства CEF к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
+
+- Сведения о [сопоставлении полей CEF и CommonSecurityLog](cef-name-mapping.md).
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).
 - Узнайте, как приступить к [обнаружению угроз с помощью Azure Sentinel](./tutorial-detect-threats-built-in.md).
 - [Используйте книги](tutorial-monitor-your-data.md) для мониторинга данных.

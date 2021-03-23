@@ -1,22 +1,22 @@
 ---
-title: Приступая к интеграции Azure AD с приложениями
+title: Приступая к интеграции Azure Active Directory с приложениями
 description: Эта статья представляет собой вводное руководство по интеграции Azure Active Directory (AD) с локальными приложениями и облачными приложениями.
 services: active-directory
 author: kenwith
 manager: daveba
 ms.service: active-directory
+ms.subservice: app-mgmt
 ms.topic: conceptual
-ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 07/16/2018
+ms.date: 03/19/2021
 ms.author: kenwith
 ms.reviewer: asteen
-ms.openlocfilehash: 8b321acb00e6e9b4b6cca117afba8bf0c9432719
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: de06bb4f97568eaa40b0b09e9bc2b50608424aa8
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99258472"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775601"
 ---
 # <a name="integrating-azure-active-directory-with-applications-getting-started-guide"></a>Руководство по интеграции Azure Active Directory с приложениями
 
@@ -47,7 +47,7 @@ ms.locfileid: "99258472"
   * Как эти группы упорядочены?
   * Кто входит в эти группы?
   * Какие разрешения и роли назначены группам в настоящее время?
-* Необходима ли очистка баз данных пользователей или групп перед интеграцией?  (Это чрезвычайно важный вопрос, ведь результат напрямую зависит от исходного состояния.)
+* Необходима ли очистка баз данных пользователей или групп перед интеграцией?  (Это важный вопрос. ведь результат напрямую зависит от исходного состояния.)
 
 ### <a name="access-management-inventory"></a>Инвентаризация управления доступом
 * Как вы в настоящее время управляете доступом пользователей к приложениям? Требуются ли изменения?  Вы рассматривали другие способы управления доступом, например с помощью [Azure RBAC](../../role-based-access-control/role-assignments-portal.md) ?
@@ -66,8 +66,19 @@ ms.locfileid: "99258472"
 * [Что такое доступ к приложениям и единый вход с помощью Azure Active Directory?](what-is-single-sign-on.md)
 * [Список учебников по интеграции приложений SaaS с Azure Active Directory.](../saas-apps/tutorial-list.md)
 
+## <a name="capabilities-for-apps-not-listed-in-the-azure-ad-gallery"></a>Возможности для приложений, не перечисленных в коллекции Azure AD
+
+Вы можете добавить любое приложение, которое уже есть в вашей организации, или любое приложение стороннего поставщика, которое не входит в коллекцию приложений Azure AD. В зависимости от [лицензионного соглашения](https://azure.microsoft.com/pricing/details/active-directory/) доступны следующие возможности:
+
+- самостоятельная интеграция любого приложения, которое совместимо с поставщиками удостоверений [SAML (язык разметки заявлений системы безопасности) 2.0](https://wikipedia.org/wiki/SAML_2.0) (инициированная поставщиком услуг или поставщиком удостоверений);
+- самостоятельная интеграция любого веб-приложения, где есть HTML-страница входа, с использованием функции [единого входа на основе пароля](sso-options.md#password-based-sso)
+- самостоятельное подключение приложений, которые используют протокол [SCIM (System for Cross-domain Identity Management) для подготовки пользователей](../app-provisioning/use-scim-to-provision-users-and-groups.md);
+- Возможность добавления ссылок в любое приложение в средстве [запуска приложений Office 365](https://www.microsoft.com/microsoft-365/blog/2014/10/16/organize-office-365-new-app-launcher-2/) или " [Мои приложения](sso-options.md#linked-sign-on) "
+
+Если вы ищете руководство для разработчиков о том, как интегрировать пользовательские приложения с Azure AD, см. статью [сценарии проверки подлинности в Azure AD](../develop/authentication-vs-authorization.md). При разработке приложения, использующего современный протокол, например [OpenId Connect/OAuth](../develop/active-directory-v2-protocols.md), для аутентификации пользователей, вы можете зарегистрировать его на платформе удостоверений Майкрософт, используя функцию [Регистрация приложений](../develop/quickstart-register-app.md) на портале Azure.
+
 ### <a name="authentication-types"></a>Типы проверки подлинности
-Каждое приложение может иметь разные требования к проверке подлинности. С помощью Azure AD сертификаты подписи можно использовать с приложениями, использующими SAML 2.0, WS-Federation или протоколы подключения OpenID, а также единый вход с паролем. Дополнительные сведения о типах аутентификации в приложениях для использования с Azure AD см. в статье [Управление сертификатами для федеративного единого входа в Azure Active Directory](manage-certificates-for-federated-single-sign-on.md) и разделе [Единый вход на основе пароля](what-is-single-sign-on.md).
+Каждое приложение может иметь разные требования к проверке подлинности. С помощью Azure AD можно использовать сертификаты подписи для приложений, использующих протоколы SAML 2,0, WS-Federation или OpenID Connect Connect, а также единый вход по паролю. Дополнительные сведения о типах проверки подлинности приложений см. [в разделе Управление сертификатами для федеративного единого Sign-On в Azure Active Directory](manage-certificates-for-federated-single-sign-on.md) и [единый вход на основе пароля](what-is-single-sign-on.md).
 
 ### <a name="enabling-sso-with-azure-ad-app-proxy"></a>Включение единого входа с помощью прокси приложений Azure AD
 С помощью прокси приложений Microsoft Azure AD вы можете предоставлять безопасный доступ к приложениям, расположенным в частной сети, из любого места и с любого устройства. После установки в своей среде соединителя прокси-сервера приложения его можно легко настроить с Azure AD.
@@ -85,11 +96,9 @@ ms.locfileid: "99258472"
 * [Совместное использование учетных записей.](../enterprise-users/users-sharing-accounts.md)
 
 ## <a name="next-steps"></a>Дальнейшие действия
-Для получения подробных сведений можно скачать планы развертывания Azure Active Directory с сайта [GitHub](../fundamentals/active-directory-deployment-plans.md). Для приложений из коллекции можно загрузить планы развертывания для единого входа, условного доступа и подготовки пользователей с помощью [портал Azure](https://portal.azure.com). 
+Для получения подробных сведений можно скачать планы развертывания Azure Active Directory с сайта [GitHub](../fundamentals/active-directory-deployment-plans.md). Для приложений из коллекции можно загрузить планы развертывания для единого входа, условного доступа и подготовки пользователей с помощью [портал Azure](https://portal.azure.com).
 
 Чтобы скачать план развертывания на портале Azure, сделайте следующее.
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 2. Выберите **корпоративные приложения** выбор  |    |  **плана развертывания** приложения.
-
-Оставьте отзыв о планах развертывания, приняв участие в этом [опросе](https://aka.ms/DeploymentPlanFeedback).

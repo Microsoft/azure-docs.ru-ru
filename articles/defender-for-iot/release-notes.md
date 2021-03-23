@@ -1,24 +1,14 @@
 ---
 title: Новые возможности защитника Azure для IoT
 description: Эта статья поможет вам узнать, что нового в последнем выпуске защитника для IoT.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/14/2021
-ms.author: shhazam
-ms.openlocfilehash: ef72be60b6294ad4e1fca2ce9c0e3c66b64ac687
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 970d46a76f125dcaf82491fdea877e6874e2384f
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493968"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104778701"
 ---
 # <a name="whats-new-in-azure-defender-for-iot"></a>Новые возможности защитника Azure для IoT
 
