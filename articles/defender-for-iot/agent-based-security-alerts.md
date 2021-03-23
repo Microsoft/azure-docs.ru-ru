@@ -1,25 +1,14 @@
 ---
 title: Оповещения системы безопасности на основе агента
-titleSuffix: Azure Defender for IoT
 description: Сведения об оповещениях системы безопасности и рекомендуемом исправлении с помощью защитника для функций и служб на устройстве IoT.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 2/16/2021
-ms.author: shhazam
-ms.openlocfilehash: 9e4a65e67200a682313dae8e326128edce3367d1
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b586eb4bebfc584e6cec4c27df859dbebb817e2d
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103495765"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784940"
 ---
 # <a name="defender-for-iot-devices-security-alerts"></a>Оповещения системы безопасности защитника для устройств IoT
 
@@ -33,7 +22,7 @@ ms.locfileid: "103495765"
 
 ## <a name="agent-based-security-alerts"></a>Оповещения системы безопасности на основе агента
 
-| Имя | Уровень серьезности | Источник данных | Описание | Предлагаемые действия по исправлению |
+| Имя | Severity | Источник данных | Описание | Предлагаемые действия по исправлению |
 |--|--|--|--|--|
 | **Высокий** уровень серьезности |  |  |  |
 | Двоичная Командная строка | Высокий | Классический защитник — IoT-Micro-Agent | Обнаружен исполняемый файл LA Linux, вызываемый или выполняемый из командной строки. Этот процесс может быть законным действием или свидетельствовать о компрометации устройства. | Просмотрите команду с учетной записью пользователя, который ее запустили, и убедитесь, что на устройстве ожидалось выполнение этого действия. Если нет, эскалировать оповещение группе информационной безопасности. |

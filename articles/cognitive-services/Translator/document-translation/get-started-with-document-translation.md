@@ -6,21 +6,24 @@ manager: nitinme
 ms.author: lajanuar
 author: laujan
 ms.date: 03/05/2021
-ms.openlocfilehash: cb6b3af8d8fb6c2d3fe63964e59f8e3e32f0f0fd
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 21df853d9b1c7250e9a6eea37a68835a180f610d
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102486664"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773051"
 ---
 # <a name="get-started-with-document-translation-preview"></a>Начало работы с переводом документа (Предварительная версия)
 
  В этой статье вы узнаете, как использовать преобразование документов с помощью методов HTTP REST API. Преобразование документов — это облачная функция службы [Azure Translator](../translator-info-overview.md) .  API перевода документов позволяет переводить целые документы, сохраняя структуру исходного документа и форматирование текста.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 > [!NOTE]
-> Как правило, при создании ресурса "неработающий службы" в портал Azure можно создать ключ подписки с несколькими службами или ключ подписки с одной службой. Однако преобразование документов в настоящее время поддерживается только в ресурсе Translator (только одна служба) и **не** включено в ресурс Cognitive Services (несколько служб).
+>
+> 1. Как правило, при создании ресурса "неработающий службы" в портал Azure можно создать ключ подписки с несколькими службами или ключ подписки с одной службой. Однако преобразование документов в настоящее время поддерживается только в ресурсе Translator (только одна служба) и **не** включено в ресурс Cognitive Services (несколько служб).
+> 2. В настоящее время преобразование документов доступно в **стандартном плане обслуживания S1**. _См. раздел_ [цены на Cognitive Services — переводчик](https://azure.microsoft.com/pricing/details/cognitive-services/translator/).
+>
 
 Чтобы приступить к работе, вам потребуется:
 
@@ -29,8 +32,6 @@ ms.locfileid: "102486664"
 * Ресурс службы [**переводчика**](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation) (**не** ресурс Cognitive Services).
 
 * [**Учетная запись хранилища BLOB-объектов Azure**](https://ms.portal.azure.com/#create/Microsoft.StorageAccount-ARM). Вы создадите контейнеры для хранения и организации данных больших двоичных объектов в вашей учетной записи хранения.
-
-* Заполненная [**Форма перевода документа (Предварительная версия)**](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-riVR3Xj0tOnIRdZOALbM9UOEE4UVdFQVBRQVBWWDBRQUM3WjYxUEpUTC4u) , позволяющая подписке Azure использовать новую функцию перевода документов.
 
 ## <a name="get-your-custom-domain-name-and-subscription-key"></a>Получение имени пользовательского домена и ключа подписки
 
@@ -1248,7 +1249,7 @@ func main() {
 
 В таблице ниже перечислены ограничения для данных, отправляемых в перевод документа.
 
-|Атрибут | Ограничение|
+|attribute | Ограничение|
 |---|---|
 |Размер документа| ≤ 40 МБ |
 |Общее число файлов.|≤ 1000 |
@@ -1259,7 +1260,7 @@ func main() {
 > [!NOTE]
 > Приведенные выше ограничения содержимого могут быть изменены до выхода общедоступной версии.
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Материалы для дальнейшего изучения
 
 * [Справочник по API Переводчика версии 3](../reference/v3-0-reference.md)
 * [Поддержка языков](../language-support.md)

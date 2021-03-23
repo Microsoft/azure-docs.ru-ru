@@ -1,18 +1,14 @@
 ---
 title: Управление датчиками c локальной консоли управления
 description: Узнайте, как управлять датчиками с консоли управления, включая обновление версий датчиков, отправку системных настроек датчикам, а также включать и отключать модули на датчиках.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 12/07/2020
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: 73eb693ab9f06535fd523eb386969e2cce961eef
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 4706fbcf58b8e5f5eed6532f9a08f65c7716e07e
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100523963"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781931"
 ---
 # <a name="manage-sensors-from-the-management-console"></a>Управление датчиками из консоли управления
 
@@ -38,7 +34,7 @@ ms.locfileid: "100523963"
 
 - Параметры DNS
 
-- Подсети
+- подсети;
 
 - Псевдонимы портов
 

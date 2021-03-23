@@ -1,19 +1,14 @@
 ---
 title: Об интеграции Fortinet
-titleSuffix: Azure Defender for IoT
 description: Защитник для IoT и Fortinet установил партнерскую связь, чтобы обнаруживать и прекращать атаки в сетях IoT и ICS.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 1/17/2021
 ms.topic: article
-ms.service: azure
-ms.openlocfilehash: 313db90d4c9be30ef588b00caf1d6e4ce32b113b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e2119a9e01a4e58cd9d2ca1b9b3384ec9629784c
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98558551"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784022"
 ---
 # <a name="defender-for-iot-and-fortinet-iiot-and-ics-threat-detection--prevention"></a>Защитник для Интернета вещей и Fortinet промышленному и обнаружение угроз в ICS с & предотвращения
 
@@ -242,6 +237,6 @@ ms.locfileid: "98558551"
 
 1. В диалоговом окне **Подтверждение** нажмите кнопку **ОК**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [пересылать сведения о предупреждениях](how-to-forward-alert-information-to-partners.md).

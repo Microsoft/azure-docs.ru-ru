@@ -3,12 +3,12 @@ title: Знание условий инфраструктуры Azure BareMetal
 description: Узнайте об условиях инфраструктуры Azure BareMetal.
 ms.topic: conceptual
 ms.date: 1/4/2021
-ms.openlocfilehash: fd7a39854c86f728ef152f8e7d858157e1ad26f4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b22a6cecb2647df3878cb8fd4ade93d9a7d963fd
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97861925"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104770892"
 ---
 # <a name="know-the-terms-for-baremetal-infrastructure"></a>Знание терминов для инфраструктуры BareMetal
 
@@ -23,4 +23,4 @@ ms.locfileid: "97861925"
 - **Клиент: клиент**, развернутый в отметке экземпляра BareMetal, становится изолированным в *клиенте.* Клиент изолируется от других клиентов на уровне сети, хранилища и вычислений. Хранилище и единицы вычислений, назначенные разным клиентам, не могут видеть друг друга или взаимодействовать друг с другом на уровне отметки экземпляра BareMetal. Пользователь может выполнить развертывание в разные клиенты. Даже в этом случае обмен данными между клиентами на уровне отметки экземпляра BareMetal отсутствует.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-Узнайте больше о [инфраструктуре BareMetal](workloads/sap/baremetal-overview-architecture.md) , а также об [определении и взаимодействии с единицами экземпляра BareMetal](workloads/sap/baremetal-infrastructure-portal.md). 
+Узнайте больше о [инфраструктуре BareMetal](concepts-baremetal-infrastructure-overview.md) , а также об [определении и взаимодействии с единицами экземпляра BareMetal](connect-baremetal-infrastructure.md). 

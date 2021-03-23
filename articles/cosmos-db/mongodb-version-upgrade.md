@@ -5,14 +5,14 @@ author: christopheranderson
 ms.service: cosmos-db
 ms.subservice: cosmosdb-mongo
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 03/19/2021
 ms.author: chrande
-ms.openlocfilehash: 1818838a68c2712336a3515b2a82b5fdd518d237
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8865a16c2840b65f432de679c6dd63b285b1f760
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101661177"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771833"
 ---
 # <a name="upgrade-the-api-version-of-your-azure-cosmos-db-api-for-mongodb-account"></a>Обновление версии API Azure Cosmos DB API для учетной записи MongoDB
 [!INCLUDE[appliesto-mongodb-api](includes/appliesto-mongodb-api.md)]
@@ -67,42 +67,35 @@ ms.locfileid: "101661177"
 
 ## <a name="how-to-upgrade"></a>Обновление
 
-1. Перейдите в портал Azure и перейдите к колонке API Azure Cosmos DB для учетной записи MongoDB. Проверьте текущую версию сервера.
+1. Войдите в [портал Azure.](https://portal.azure.com/)
 
-    :::image type="content" source="./media/mongodb-version-upgrade/1.png" alt-text="Общие сведения о портал Azure с учетной записью MongoDB" border="false":::
+1. Перейдите к Azure Cosmos DB API для учетной записи MongoDB. Откройте панель " **Обзор** " и убедитесь, что текущая **версия сервера** — 3,2 или 3,6.
 
-2. В параметрах слева выберите `Features` колонку. Будут отображены функции уровня учетной записи, доступные для вашей учетной записи базы данных.
+    :::image type="content" source="./media/mongodb-version-upgrade/check-current-version.png" alt-text="Проверьте текущую версию учетной записи MongoDB из портал Azure." border="true":::
 
-    :::image type="content" source="./media/mongodb-version-upgrade/2.png" alt-text="Обзор портал Azure с MongoDB учетной записью с выделенным колонкой &quot;функции&quot;" border="false":::
+1. В меню слева откройте `Features` панель. В этой области отображаются функции уровня учетной записи, доступные для вашей учетной записи базы данных.
 
-3. Щелкните `Upgrade Mongo server version` строку. Если этот параметр не отображается, для вашей учетной записи может быть недоступно это обновление. Если это так, отправьте запрос [в службу поддержки](https://portal.azure.com/?#blade/Microsoft_Azure_Support/HelpAndSupportBlade) .
+1. Выберите строку `Upgrade MongoDB server version`. Если этот параметр не отображается, для вашей учетной записи может быть недоступно это обновление. Если это так, отправьте запрос [в службу поддержки](https://portal.azure.com/?#blade/Microsoft_Azure_Support/HelpAndSupportBlade) .
 
-    :::image type="content" source="./media/mongodb-version-upgrade/3.png" alt-text="Колонка &quot;функции&quot; с параметрами." border="false":::
+    :::image type="content" source="./media/mongodb-version-upgrade/upgrade-server-version.png" alt-text="Откройте колонку функции и обновите учетную запись." border="true":::
 
-4. Ознакомьтесь со сведениями об обновлении. Щелкните `Enable` , как только вы будете готовы начать процесс.
+1. Ознакомьтесь со сведениями об обновлении. Выберите `Set server version to 4.0` (или 3,6 в зависимости от текущей версии).
 
-    :::image type="content" source="./media/mongodb-version-upgrade/4.png" alt-text="Расширенное руководство по обновлению." border="false":::
+    :::image type="content" source="./media/mongodb-version-upgrade/select-upgrade.png" alt-text="Ознакомьтесь с руководством по обновлению и выберите Обновить." border="true":::
 
-5. После запуска процесса в меню отобразится `Features` состояние обновления. Состояние изменится с `Pending`на `In Progress`, а затем — `Upgraded`. Этот процесс не влияет на существующие функции или операции учетной записи базы данных.
+1. После начала обновления меню **функции** становится неактивным и состояние имеет значение *Ожидание*. Выполнение обновления занимает около 15 минут. Этот процесс не влияет на существующие функции или операции учетной записи базы данных. После завершения **обновления состояние версии сервера MongoDB** отобразит обновленную версию. Если при обработке запроса возникла ошибка, [обратитесь в службу поддержки](https://azure.microsoft.com/en-us/support/create-ticket/) .
 
-    :::image type="content" source="./media/mongodb-version-upgrade/5.png" alt-text="Состояние обновления после инициации." border="false":::
+1. Ниже приведены некоторые рекомендации после обновления учетной записи.
 
-6. После завершения обновления состояние будет отображаться как `Upgraded` . Щелкните его, чтобы узнать больше о дальнейших действиях и действиях, которые необходимо выполнить для завершения процесса. Если при обработке запроса возникла ошибка, [обратитесь в службу поддержки](https://azure.microsoft.com/en-us/support/create-ticket/) .
+    1. Если вы обновили с версии 3,2, вернитесь на панель " **Обзор** " и скопируйте новую строку подключения для использования в приложении. Работа старой строки подключения версии 3.2 не будет прервана. Для обеспечения оптимизированной среды все приложения должны использовать новую конечную точку.
 
-    :::image type="content" source="./media/mongodb-version-upgrade/6.png" alt-text="Состояние обновленной учетной записи." border="false":::
-
-7. 
-    1. Если вы обновили с версии 3,2, вернитесь в `Overview` колонку и скопируйте новую строку подключения для использования в приложении. Работа старой строки подключения версии 3.2 не будет прервана. Для обеспечения оптимизированной среды все приложения должны использовать новую конечную точку.
-    2. Если вы выполнили обновление с версии 3.6, существующая строка подключения будет обновлена до указанного уровня и ее можно продолжать использовать.
-
-    :::image type="content" source="./media/mongodb-version-upgrade/7.png" alt-text="Новая колонка обзора." border="false":::
-
+    1. Если вы выполнили обновление с версии 3.6, существующая строка подключения будет обновлена до указанного уровня и ее можно продолжать использовать.
 
 ## <a name="how-to-downgrade"></a>Как перейти на использование более ранней версии
-Вы также можете понизить уровень учетной записи с 4,0 до 3,6, выполнив те же действия, что и в разделе "обновление". 
+
+Вы также можете понизить уровень учетной записи с 4,0 до 3,6, выполнив те же действия, что и в разделе "обновление".
 
 Если вы обновили с 3,2 на (4,0 или 3,6) и хотите перейти на более раннюю версию до 3,2, можно просто вернуться к использованию предыдущей строки подключения (3,2) с узлом, `accountname.documents.azure.com` который остается активным после обновления, работающего под управлением версии 3,2.
-
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -9,12 +9,12 @@ ms.workload: identity
 ms.author: kenwith
 author: kenwith
 manager: daveba
-ms.openlocfilehash: cd46bb1c6905747ffb98c7e950f66e648c541534
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5b645efe2bbaadeca31b4a0a3b957ff53f5ed3aa
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103601769"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775516"
 ---
 # <a name="azure-active-directory-application-management-whats-new"></a>Azure Active Directory Управление приложениями: новые возможности
 
@@ -141,7 +141,6 @@ ms.locfileid: "103601769"
 
 ### <a name="new-articles"></a>Новые статьи
 - [Настройка единого входа на основе SAML](configure-saml-single-sign-on.md)
-- [Использование Azure AD для приложений, не перечисленных в коллекции приложений](non-gallery-apps.md)
 - [Добавление приложения из Azure Marketplace с помощью кнопки "Получить"](get-it-now-azure-marketplace.md)
 - [Краткое руководство. Настройка свойств приложения в арендаторе Azure Active Directory (Azure AD)](add-application-portal-configure.md)
 - [Краткое руководство. Настройка единого входа для приложения в арендаторе Azure Active Directory (Azure AD)](add-application-portal-setup-sso.md)

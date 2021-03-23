@@ -3,12 +3,12 @@ title: Основные понятия — частные облака и кла
 description: Узнайте о ключевых возможностях решений Azure VMware, определяемых программными центрами обработки данных и кластерами vSphere.
 ms.topic: conceptual
 ms.date: 03/13/2021
-ms.openlocfilehash: d1837ae7cf01fcb9642e0cafe4e0430e403b9899
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: aff66e01ae4b056eb082d2000611718b1a5cf66a
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103462527"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773932"
 ---
 #  <a name="azure-vmware-solution-private-cloud-and-cluster-concepts"></a>Концепции частного облака и кластера решения VMware для Azure
 
@@ -48,6 +48,9 @@ ms.locfileid: "103462527"
 
 [!INCLUDE [vmware-software-versions](includes/vmware-software-versions.md)]
 
+## <a name="update-frequency"></a>Частота обновления
+
+[!INCLUDE [vmware-software-update-frequency](includes/vmware-software-update-frequency.md)]
 
 ## <a name="host-maintenance-and-lifecycle-management"></a>Обслуживание узла и управление жизненным циклом
 
@@ -59,7 +62,7 @@ ms.locfileid: "103462527"
 
 Настройки частного облака vCenter и НСКС-T имеют расписание почасового резервного копирования.  Резервные копии хранятся в течение трех дней. Если необходимо выполнить восстановление из резервной копии, откройте [запрос в службу поддержки](https://rc.portal.azure.com/#create/Microsoft.Support) в портал Azure, чтобы запросить восстановление.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы построили концепции частного облака в решении Azure VMware, вы можете узнать о следующих возможностях: 
 

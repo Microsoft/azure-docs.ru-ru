@@ -1,19 +1,14 @@
 ---
 title: Изучение рекомендаций на основе теста производительности CIS
-titleSuffix: Azure Defender for IoT
 description: Выполняйте базовое и расширенное расследование на основе рекомендаций базовых показателей ОС.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 1/21/2021
 ms.topic: how-to
-ms.service: azure
-ms.openlocfilehash: 2f68ebedb229f7295bc9c5dcc3b3349808970e8c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 01ca6e1fecddff9800872a3e5495a5cac578a74f
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99809948"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104782033"
 ---
 # <a name="investigate-os-baseline-based-on-cis-benchmark-recommendation"></a>Рекомендации по базовым показателям ОС (на основе тестирования производительности CI) 
 
@@ -143,7 +138,7 @@ ms.locfileid: "99809948"
     project DeviceId; 
     ```
  
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Изучите рекомендации по безопасности](quickstart-investigate-security-recommendations.md).
  

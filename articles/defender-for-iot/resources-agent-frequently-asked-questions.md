@@ -1,24 +1,14 @@
 ---
 title: Часто задаваемые вопросы о службе "защитник Azure для IoT"
 description: Найдите ответы на наиболее часто задаваемые вопросы о защитнике Azure для агента IoT.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: rkarlin
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 10/07/2020
-ms.author: rkarlin
-ms.openlocfilehash: f584f11603e41b63f3c96749ed6c720eb5ce07a8
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4bd7d3c9b76dfb37e53cc51e5e16b660545cb7f0
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97835063"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104778667"
 ---
 # <a name="azure-defender-for-iot-agent-frequently-asked-questions"></a>Часто задаваемые вопросы о службе "защитник Azure для IoT"
 
@@ -85,7 +75,7 @@ ms.locfileid: "97835063"
 
 Если агент перестает отвечать или не может отправлять сообщения о безопасности, создается предупреждение **Устройство не передает данные**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о том, как приступить к работе с защитником для Интернета вещей, см. в следующих статьях:
 

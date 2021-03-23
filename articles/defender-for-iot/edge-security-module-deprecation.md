@@ -1,19 +1,14 @@
 ---
 title: Поддержка и прекращение использования функций
-titleSuffix: Azure Defender for IoT
 description: Защитник для IoT продолжит поддерживать C, C# и ребра до 1 марта 2022 г.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 1/21/2021
-ms.service: azure
 ms.topic: how-to
-ms.openlocfilehash: a33e7ff230292d4ceb14610e3cf00935dc1a67a0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 782e2e8ab0c54e21da643ca73f647a7ea21e4223
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493175"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104784532"
 ---
 # <a name="feature-support-and-retirement"></a>Поддержка и прекращение использования функций
 

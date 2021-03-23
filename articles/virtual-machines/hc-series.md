@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/05/2021
 ms.author: amverma
 ms.reviewer: jushiman
-ms.openlocfilehash: 6ec629629fc774ddb5423db91fe0d71a49305ca1
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 43f8b6efd7c4cc510dac8fcbe84ab38f59008ed9
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102566045"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773540"
 ---
 # <a name="hc-series"></a>Серия HC
 
@@ -29,14 +29,16 @@ ms.locfileid: "102566045"
 [Поддержка создания виртуальных машин](generation-2.md): поколение 1 и 2<br>
 [Ускоренная сеть](../virtual-network/create-vm-accelerated-networking-cli.md): поддерживается (дополнительные[сведения](https://techcommunity.microsoft.com/t5/azure-compute/accelerated-networking-on-hb-hc-hbv2-and-ndv2/ba-p/2067965) о производительности и потенциальных проблемах).<br>
 [Временные диски ОС](ephemeral-os-disks.md): поддерживаются <br>
-
 <br>
 
 | Размер | vCPU | Процессор | Память, ГиБ | Пропускная способность памяти ГБ/с | Базовая частота ЦП (ГГц) | Частота ядер (ГГц, пик) | Частота с одним ядром (ГГц, пик) | Производительность RDMA (ГБ/с) | Поддержка MPI | Временное хранилище, Гиб | Максимальное число дисков данных | Макс. vNIC Ethernet |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Standard_HC44rs | 44 | Intel Xeon Platinum 8168 | 352 | 191 | 2.7 | 3.4 | 3,7 | 100 | Все | 700 | 4 | 8 |
 
-Узнайте больше о базовой [архитектуре, топологии виртуальной машины](./workloads/hpc/hc-series-overview.md) и ожидаемой [производительности](./workloads/hpc/hc-series-performance.md) виртуальной машины серии HC.
+Дополнительные сведения о:
+- [архитектура и топология виртуальных машин](./workloads/hpc/hc-series-overview.md)
+- поддерживаемый [Стек программного обеспечения](./workloads/hpc/hc-series-overview.md#software-specifications) , включая поддерживаемую ОС, и
+- Ожидаемая [производительность](./workloads/hpc/hc-series-performance.md) виртуальной машины серии HC.
 
 [!INCLUDE [hpc-include](./workloads/hpc/includes/hpc-include.md)]
 

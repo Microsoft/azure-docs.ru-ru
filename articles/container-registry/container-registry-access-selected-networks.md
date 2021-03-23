@@ -2,13 +2,13 @@
 title: Настройка общего доступа к реестру
 description: Настройте правила IP-адресов, чтобы разрешить доступ к реестру контейнеров Azure из выбранных общедоступных IP-адресов или диапазонов адресов.
 ms.topic: article
-ms.date: 08/17/2020
-ms.openlocfilehash: 4e4ee817e2534bcca09cba89daafd379ff3f03f0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 03/08/2021
+ms.openlocfilehash: 727aa1dc028b5f52a022e54c2cd252ae372e78fe
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89488768"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104773068"
 ---
 # <a name="configure-public-ip-network-rules"></a>Настройка сетевых правил для общедоступных IP-адресов
 
@@ -17,6 +17,8 @@ ms.locfileid: "89488768"
 Правила IP-сети настраиваются на общедоступной конечной точке реестра. Правила IP-сети не применяются к частным конечным точкам, настроенным для [Приватного канала](container-registry-private-link.md).
 
 Настройка правил доступа с IP-адресов доступна на уровне службы **Премиум** реестра контейнеров. Сведения об уровнях служб реестра и ограничениях см. в статье [Уровни служб Реестра контейнеров Azure](container-registry-skus.md).
+
+Каждый реестр поддерживает не более 100 правил сетевого доступа.
 
 [!INCLUDE [container-registry-scanning-limitation](../../includes/container-registry-scanning-limitation.md)]
 

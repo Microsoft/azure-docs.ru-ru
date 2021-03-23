@@ -1,23 +1,14 @@
 ---
 title: Настройка Sentinel Azure для защитника для Интернета вещей
 description: В этой статье объясняется, как настроить метку Azure для получения данных из вашего защитника для решения IoT.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 12/28/2020
-ms.author: shhazam
-ms.openlocfilehash: 2d82aaadf158e45cb8faaeee0b9b4e0fc80a3420
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b481dd31b73e741d265a569076f1ddc076ad4a45
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98247341"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104778956"
 ---
 # <a name="connect-your-data-from-defender-for-iot-to-azure-sentinel"></a>Подключение данных из защитника к Azure для Интернета вещей с помощью Sentinel 
 
@@ -25,7 +16,7 @@ ms.locfileid: "98247341"
 
 Такая интеграция позволяет организациям быстро обнаруживать многоступенчатыхные атаки, которые часто пересекаются с границами. Кроме того, защитник для интеграции IoT с возможностями оркестрации в отношении безопасности, автоматизации и реагирования Azure Sentinel (ВЗЛЕТЕЛ) обеспечивает автоматический отклик и предотвращение с помощью встроенных оптимизированных модули PlayBook. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Разрешения на **Чтение** и **запись** в рабочей области, на которой развернута Sentinel Azure
 - **Защитник для Интернета вещей** должен быть **включен** в соответствующих центрах Интернета вещей
@@ -61,7 +52,7 @@ SecurityAlert | where ProductName == "Azure Security Center for IoT"
 
 После подключения **подписки** данные концентратора доступны в Azure Sentinel примерно через 15 минут позже.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этом документе вы узнали, как подключить защитник для Интернета вещей к Azure Sentinel. Дополнительные сведения об обнаружении угроз и доступе к данным безопасности см. в следующих статьях:
 

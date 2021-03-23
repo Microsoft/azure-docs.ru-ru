@@ -3,16 +3,16 @@ title: Функции и системные переменные фабрики 
 description: Содержит список функций и системных переменных фабрики данных Azure.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
-ms.openlocfilehash: d47a26b46fad1ab8238f9fa7a1183aad20530ef5
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 498f40a1783903b5dca0a2fe3204cc6aa25a2fec
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100363939"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786436"
 ---
 # <a name="azure-data-factory---functions-and-system-variables"></a>Фабрика данных Azure — функции и системные переменные
 > [!NOTE]
@@ -72,14 +72,14 @@ ms.locfileid: "100363939"
 ### <a name="functions"></a>Функции
 В приведенных ниже таблицах перечислены все функции фабрики данных Azure.
 
-| Category | Компонент | Параметры | Описание |
+| Категория | Компонент | Параметры | Описание |
 | --- | --- | --- | --- |
-| Time |AddHours(X,Y) |X: DateTime  <br/><br/>Y: int |Добавляет Y часов к заданному времени X. <br/><br/>Например, `9/5/2013 12:00:00 PM + 2 hours = 9/5/2013 2:00:00 PM`. |
-| время; |AddMinutes(X,Y) |X: DateTime  <br/><br/>Y: int |Добавляет Y минут к Х.<br/><br/>Например, `9/15/2013 12: 00:00 PM + 15 minutes = 9/15/2013 12: 15:00 PM`. |
-| время; |StartOfHour(X) |X: DateTime  |Получает то время, когда начинался час, отображаемый компонентом часа в параметре X. <br/><br/>Например, `StartOfHour of 9/15/2013 05: 10:23 PM is 9/15/2013 05: 00:00 PM`. |
+| Time |AddHours(X,Y) |X: DateTime  <br/><br/>Y: int |Добавляет Y часов к заданному времени X. <br/><br/>Пример: `9/5/2013 12:00:00 PM + 2 hours = 9/5/2013 2:00:00 PM` |
+| время; |AddMinutes(X,Y) |X: DateTime  <br/><br/>Y: int |Добавляет Y минут к Х.<br/><br/>Пример: `9/15/2013 12: 00:00 PM + 15 minutes = 9/15/2013 12: 15:00 PM` |
+| время; |StartOfHour(X) |X: DateTime  |Получает то время, когда начинался час, отображаемый компонентом часа в параметре X. <br/><br/>Пример: `StartOfHour of 9/15/2013 05: 10:23 PM is 9/15/2013 05: 00:00 PM` |
 | Дата |AddDays(X,Y) |X: DateTime <br/><br/>Y: int |Добавляет Y дней к Х. <br/><br/>Пример: 15.09.2013 12:00:00 + 2 дня = 17.09.2013 12:00:00.<br/><br/>Можно также вычитать дни, указав в качестве Y отрицательное число.<br/><br/>Например, `9/15/2013 12:00:00 PM - 2 days = 9/13/2013 12:00:00 PM`. |
 | Дата |AddMonths(X,Y) |X: DateTime <br/><br/>Y: int |Добавляет Y месяцев к Х.<br/><br/>`Example: 9/15/2013 12:00:00 PM + 1 month = 10/15/2013 12:00:00 PM`.<br/><br/>Можно также вычитать месяцы, указав в качестве Y отрицательное число.<br/><br/>Например, `9/15/2013 12:00:00 PM - 1 month = 8/15/2013 12:00:00 PM`.|
-| Дата |AddQuarters(X,Y) |X: DateTime  <br/><br/>Y: int |Добавляет Y * 3 месяцев к Х.<br/><br/>Например, `9/15/2013 12:00:00 PM + 1 quarter = 12/15/2013 12:00:00 PM`. |
+| Дата |AddQuarters(X,Y) |X: DateTime  <br/><br/>Y: int |Добавляет Y * 3 месяцев к Х.<br/><br/>Пример: `9/15/2013 12:00:00 PM + 1 quarter = 12/15/2013 12:00:00 PM` |
 | Дата |AddWeeks(X,Y) |X: DateTime <br/><br/>Y: int |Добавляет Y (одна единица которого равна 7 дням) к X<br/><br/>Пример: 15.09.2013 12:00:00 + 1 неделя = 22.09.2013 12:00:00.<br/><br/>Можно также вычитать недели, указав в качестве Y отрицательное число.<br/><br/>Например, `9/15/2013 12:00:00 PM - 1 week = 9/7/2013 12:00:00 PM`. |
 | Дата |AddYears(X,Y) |X: DateTime <br/><br/>Y: int |Добавляет Y лет к Х.<br/><br/>`Example: 9/15/2013 12:00:00 PM + 1 year = 9/15/2014 12:00:00 PM`<br/><br/>Можно также вычитать года, указав в качестве Y отрицательное число.<br/><br/>Например, `9/15/2013 12:00:00 PM - 1 year = 9/15/2012 12:00:00 PM`. |
 | Дата |Day(X) |X: DateTime  |Возвращает значение дня для X.<br/><br/>Например, `Day of 9/15/2013 12:00:00 PM is 9`. |

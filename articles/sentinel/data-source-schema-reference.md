@@ -10,12 +10,12 @@ ms.subservice: azure-sentinel
 ms.topic: reference
 ms.custom: ''
 ms.date: 01/14/2021
-ms.openlocfilehash: 0cc1a083e1400b5a3167376e374af6c7bf7ab7c7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 84d5f1e4035fb730d33b7bc8dd375273610f0bfb
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101698354"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771946"
 ---
 # <a name="data-source-schema-reference"></a>Справочник по схеме источника данных
 
@@ -23,13 +23,13 @@ ms.locfileid: "101698354"
 
 ## <a name="azure-data-sources"></a>Источники данных Azure
 
-| Type                             | Источник данных             | Log Analytics TableName | Справочник по схеме |
+| Тип                             | Источник данных             | Log Analytics TableName | Справочник по схеме |
 | -------------------------------- | ---------------------- | ---------------------- | ---------------- |
 | **Azure**                            | Azure Active Directory | сигниневентс           | [Свойства входа в отчеты о действиях Azure AD](/graph/api/resources/signin#properties) |
 | **Azure**                            | Azure Active Directory | AuditLogs              | [Справочник по Azure Monitor AuditLogs](/azure/azure-monitor/reference/tables/auditlogs) |
 | **Azure**                            | Azure Active Directory | AzureActivity          | [Справочник по Azure Monitor AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) |
 | **Azure**                            | Office                 | OfficeActivity         | Схемы API действий управления Office 365: <br>- [Общая схема ](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)   <br>- [Схема администрирования Exchange ](/office/office-365-management-api/office-365-management-activity-api-schema#exchange-admin-schema) <br>- [Схема почтовых ящиков Exchange](/office/office-365-management-api/office-365-management-activity-api-schema#exchange-mailbox-schema)  <br>- [Базовая схема SharePoint](/office/office-365-management-api/office-365-management-activity-api-schema#sharepoint-base-schema)   <br>- [Операции с файлами SharePoint](/office/office-365-management-api/office-365-management-activity-api-schema#sharepoint-file-operations) |
-| **Azure**                            | Azure Key Vault         | AzureDiagnostics       | [Справочник по Azure Monitor AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics) |
+| **Azure**                            | Хранилище ключей Azure;         | AzureDiagnostics       | [Справочник по Azure Monitor AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics) |
 | **Узел**                             | Linux                  | Системный журнал                 | [Справочник по Azure Monitor syslog](/azure/azure-monitor/reference/tables/syslog) |
 | **Network**                          | Журналы IIS               | W3CIISLog              | [Справочник по Azure Monitor W3CIISLog](/azure/azure-monitor/reference/tables/w3ciislog) |
 | **Network**                          | вминсигхтс             | VMConnection           | [Справочник по Azure Monitor Вмконнектион](/azure/azure-monitor/reference/tables/vmconnection) |
@@ -44,7 +44,7 @@ ms.locfileid: "101698354"
 
 В следующей таблице перечислены поддерживаемые сторонние поставщики и их syslog-журналы или CEF. документация по сопоставлению для различных поддерживаемых типов журналов, которые содержат сопоставления полей CEF и примеры журналов для каждого типа категории.
 
-| Type |    Vendor |    Продукт | Log Analytics TableName | Справочник по сопоставлению полей CEF  |
+| Тип |    Vendor |    Продукт | Log Analytics TableName | Справочник по сопоставлению полей CEF  |
 | ----- | ----- | ----- | ----- |----- |
 | **Network** | Пало-Альто   | ПАНОРАМИРОВАНИЕ ОС    | CommonSecurityLog |   [Pan-OS 9,0. рекомендации по интеграции формата распространенных событий](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/cef/pan-os-90-cef-configuration-guide.pdf) (поиск *форматов журнала в стиле CEF*) |
 | **Network** | Check Point  |ALL   | CommonSecurityLog | [Описание полей журнала](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk109795)       |
@@ -62,6 +62,9 @@ ms.locfileid: "101698354"
 |**Узел** |Trend Micro |Все |CommonSecurityLog | [Сопоставление содержимого syslog-CEF](https://docs.trendmicro.com/en-us/enterprise/control-manager-70/appendices/syslog-mapping-cef.aspx) |
 | | | | | |
 
+> [!NOTE]
+> Дополнительные сведения см. в разделе [сопоставление полей CEF и CommonSecurityLog](cef-name-mapping.md).
+> 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о поддерживаемых соединителях Sentinel Azure, таких как CEF, syslog, Direct, Agent и Custom Connectors:

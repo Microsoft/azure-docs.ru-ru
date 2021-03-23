@@ -10,12 +10,12 @@ ms.author: mimart
 author: msmimart
 manager: celestedg
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dea13444a6bd18bd67f05d93a38af70b3b7a2368
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 2998c3ea0d65bd3c96bd1ac5bdfa8ff148c6c4cc
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102556321"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104780435"
 ---
 # <a name="reset-redemption-status-for-a-guest-user"></a>Сброс состояния активации для гостевого пользователя
 
@@ -28,9 +28,20 @@ ms.locfileid: "102556321"
 
 Чтобы управлять этими сценариями ранее, необходимо вручную удалить учетную запись гостевого пользователя из каталога и повторно пригласить пользователя. Теперь вы можете использовать PowerShell или API приглашения Microsoft Graph, чтобы сбросить состояние активации пользователя и повторно пригласить пользователя, сохраняя при этом идентификатор объекта пользователя, членство в группах и назначения приложений. Когда пользователь активирует новое приглашение, UPN пользователя не изменяется, но имя входа пользователя меняется на новое сообщение. Затем пользователь может войти в систему с помощью нового электронного письма или электронного письма, добавленного в `otherMails` свойство объекта пользователя.
 
+## <a name="reset-the-email-address-used-for-sign-in"></a>Сброс адреса электронной почты, используемого для входа
+
+Если пользователь хочет выполнить вход, используя другой адрес электронной почты:
+
+1. Убедитесь, что новый адрес электронной почты добавлен в `mail` свойство или `otherMails` объекта пользователя. 
+2.  Замените адрес электронной почты в `InvitedUserEmailAddress` свойстве на новый адрес электронной почты.
+3. Используйте один из следующих методов, чтобы сбросить состояние активации пользователя.
+
+> [!NOTE]
+>Во время общедоступной предварительной версии при сбросе адреса электронной почты пользователя рекомендуется присвоить `mail` свойству новый адрес электронной почты. Таким образом пользователь может активировать приглашение, войдя в каталог в дополнение к использованию ссылки активации в приглашении.
+>
 ## <a name="use-powershell-to-reset-redemption-status"></a>Сброс состояния активации с помощью PowerShell
 
-Установите последнюю версию модуля PowerShell AzureADPreview и создайте новое приглашение, указав `InvitedUserEMailAddress` Новый адрес электронной почты, и `ResetRedemption` Задайте для него значение `true` .
+Установите последнюю версию модуля PowerShell AzureADPreview и создайте новое приглашение, указав `InvitedUserEmailAddress` Новый адрес электронной почты, и `ResetRedemption` Задайте для него значение `true` .
 
 ```powershell  
 Uninstall-Module AzureADPreview 
@@ -43,7 +54,7 @@ New-AzureADMSInvitation -InvitedUserEmailAddress <<external email>> -SendInvitat
 
 ## <a name="use-microsoft-graph-api-to-reset-redemption-status"></a>Использование API Microsoft Graph для сброса состояния активации
 
-Используя [API приглашения Microsoft Graph](/graph/api/resources/invitation), задайте `resetRedemption` для свойства значение `true` и укажите новый адрес электронной почты в `invitedUserEmailAddress` свойстве.
+Используя [API приглашения Microsoft Graph](/graph/api/resources/invitation?view=graph-rest-1.0), задайте `resetRedemption` для свойства значение `true` и укажите новый адрес электронной почты в `invitedUserEmailAddress` свойстве.
 
 ```json
 POST https://graph.microsoft.com/beta/invitations  
@@ -72,7 +83,7 @@ ContentType: application/json
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Добавление пользователей службы совместной работы Azure Active Directory B2B с помощью PowerShell](customize-invitation-api.md#powershell)
 - [Свойства гостевого пользователя Azure AD B2B](user-properties.md)

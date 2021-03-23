@@ -4,12 +4,12 @@ description: Заявление о политике хранении и конф
 ms.topic: conceptual
 ms.date: 06/30/2020
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: 54d3e53b71b5f63da84e41a752bbbb6fce65c045
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 6a7545d4d927418e6153ce3bf439fc8c3e2dc702
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100579576"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104774921"
 ---
 # <a name="data-collection-retention-and-storage-in-application-insights"></a>Сбор и хранение данных в Application Insights
 
@@ -220,7 +220,7 @@ AzureLogHandler(
 | Windows Server 2012–2016 | Поддерживается и включена по умолчанию. | Проверка того, что все еще используются [параметры по умолчанию](/windows-server/security/tls/tls-registry-settings) |
 | Windows 7 с пакетом обновления 1 и Windows Server 2008 R2 с пакетом обновления 1 | Поддерживается, но не включена по умолчанию. | Информацию о том, как ее включить, см. на странице [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings) (Параметры реестра TLS).  |
 | Windows Server 2008 с пакетом обновления 2 (SP2) | Для поддержки протокола TLS 1.2 требуется обновление. | См. статью об [обновлении для добавления поддержки TLS 1.2 в Windows Server 2008 с пакетом обновления 2](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s). |
-|Windows Vista | Не поддерживается. | Н/Д
+|Windows Vista | Не поддерживается. | Недоступно
 
 ### <a name="check-what-version-of-openssl-your-linux-distribution-is-running"></a>Проверка версии OpenSSL, используемой дистрибутивом Linux
 
@@ -295,7 +295,11 @@ openssl s_client -connect bing.com:443 -tls1_2
 > [!NOTE]
 > IP-адрес клиента используется для определения географического расположения, но сейчас данные об IP-адресах больше не сохраняются по умолчанию, а в соответствующее поле записываются нули. Дополнительные сведения об обработке персональных данных см. в этой [статье](../logs/personal-data-mgmt.md#application-data). Если необходимо сохранить данные IP-адреса, в [статье о коллекции IP-адресов](./ip-collection.md) мы пошаговым руководство по Вашим параметрам.
 
-## <a name="credits"></a>Деньги на счете
+## <a name="can-i-modify-or-update-data-after-it-has-been-collected"></a>Можно ли изменить или обновить данные после сбора?
+
+Нет, данные доступны только для чтения и могут быть удалены только с помощью функции очистки. Дополнительные сведения см. [в руководстве по личным данным, хранящимся в log Analytics и Application Insights](../logs/personal-data-mgmt.md#delete).
+
+## <a name="credits"></a>Благодарности
 Этот продукт включает в себя GeoLite2 данные, созданные Максминд, доступные в [https://www.maxmind.com](https://www.maxmind.com) .
 
 
