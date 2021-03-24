@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/25/2019
-ms.openlocfilehash: a306890560497b0c7196f1286de3f73039821ea2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c81eb092fa59cb890093e1e9acd0511e39b5047b
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98939531"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864216"
 ---
 # <a name="operationalize-a-data-analytics-pipeline"></a>Ввод в эксплуатацию конвейера аналитики данных
 
@@ -30,7 +30,7 @@ ms.locfileid: "98939531"
 
 Этот пример конвейера представлен на схеме ниже.
 
-![Обзор конвейера данных примера HDI](./media/hdinsight-operationalize-data-pipeline/flight-pipeline-overview.png)
+:::image type="content" source="./media/hdinsight-operationalize-data-pipeline/flight-pipeline-overview.png" alt-text="Обзор конвейера данных примера HDI" border="false":::
 
 ## <a name="apache-oozie-solution-overview"></a>Обзор решения Apache Oozie
 
@@ -40,7 +40,7 @@ Oozie представляет свои конвейеры с точки зре�
 
 На схеме ниже показана высокоуровневая архитектура этого примера конвейера Oozie.
 
-![Конвейер Oozie данных примера полета](./media/hdinsight-operationalize-data-pipeline/pipeline-overview-oozie.png)
+:::image type="content" source="./media/hdinsight-operationalize-data-pipeline/pipeline-overview-oozie.png" alt-text="Конвейер Oozie данных примера полета" border="false":::
 
 ## <a name="provision-azure-resources"></a>Подготовка ресурсов Azure
 
@@ -131,11 +131,11 @@ Oozie представляет свои конвейеры с точки зре�
 
 2. В списке служб выберите **Hive**.
 
-    ![Выбор Hive в списке служб Apache Ambari Services](./media/hdinsight-operationalize-data-pipeline/hdi-ambari-services-hive.png)
+    :::image type="content" source="./media/hdinsight-operationalize-data-pipeline/hdi-ambari-services-hive.png" alt-text="Выбор Hive в списке служб Apache Ambari Services":::
 
 3. Выберите параметр **Перейти к представлению** рядом с меткой Hive View 2.0.
 
-    ![Сводный список Apache Hive Ambari](./media/hdinsight-operationalize-data-pipeline/hdi-ambari-services-hive-summary.png)
+    :::image type="content" source="./media/hdinsight-operationalize-data-pipeline/hdi-ambari-services-hive-summary.png" alt-text="Сводный список Apache Hive Ambari":::
 
 4. В текстовом поле запроса вставьте следующие инструкции для создания таблицы `rawFlights`. Эта таблица `rawFlights` предоставит схему при считывании CSV-файлов в папке `/example/data/flights` в службе хранилища Azure.
 
@@ -164,7 +164,7 @@ Oozie представляет свои конвейеры с точки зре�
 
 5. Нажмите кнопку **Выполнить**, чтобы создать таблицу.
 
-    ![запрос Hive HDi ambari Services](./media/hdinsight-operationalize-data-pipeline/hdi-ambari-services-hive-query.png)
+    :::image type="content" source="./media/hdinsight-operationalize-data-pipeline/hdi-ambari-services-hive-query.png" alt-text="запрос Hive HDi ambari Services":::
 
 6. Чтобы создать таблицу `flights`, замените текст в текстовом поле запроса инструкциями ниже. `flights`Таблица является таблицей, управляемой Hive, которая разделяет данные, загруженные в него, по годам, месяцам и дням месяца. Эта таблица будет содержать данные всех рейсов с наименьшей степенью детализации в исходных данных одной записи за вылет.
 
@@ -227,7 +227,7 @@ Oozie представляет свои конвейеры с точки зре�
     day=03
     ```
 
-    | Свойство. | Источник значения |
+    | Свойство | Источник значения |
     | --- | --- |
     | nameNode | Полный путь к контейнеру службы хранилища Azure, присоединенному к кластеру HDInsight. |
     | jobTracker | Внутреннее имя узла в активном головном узле YARN в кластере. На домашней странице Ambari выберите YARN из списка служб, а затем выберите активный диспетчер ресурсов. В верхней области страницы появится универсальный код ресурса (URI) имени узла. Добавьте порт 8050. |
@@ -253,18 +253,18 @@ Oozie представляет свои конвейеры с точки зре�
     INSERT OVERWRITE TABLE flights
     PARTITION (YEAR, MONTH, DAY_OF_MONTH)
     SELECT 
-        FL_DATE,
-        CARRIER,
-        FL_NUM,
-        ORIGIN,
-        DEST,
-        DEP_DELAY,
-        ARR_DELAY,
-        ACTUAL_ELAPSED_TIME,
-        DISTANCE,
+          FL_DATE,
+          CARRIER,
+          FL_NUM,
+          ORIGIN,
+          DEST,
+          DEP_DELAY,
+          ARR_DELAY,
+          ACTUAL_ELAPSED_TIME,
+          DISTANCE,
         YEAR,
-        MONTH,
-        DAY_OF_MONTH
+          MONTH,
+          DAY_OF_MONTH
     FROM rawflights
     WHERE year = ${year} AND month = ${month} AND day_of_month = ${day};
     ```
@@ -278,17 +278,17 @@ Oozie представляет свои конвейеры с точки зре�
     CREATE EXTERNAL TABLE ${hiveTableName}
     (
         YEAR INT,
-        MONTH INT,
-        DAY_OF_MONTH INT,
-        CARRIER STRING,
-        AVG_DEP_DELAY FLOAT,
-        AVG_ARR_DELAY FLOAT,
-        TOTAL_DISTANCE FLOAT
+          MONTH INT,
+          DAY_OF_MONTH INT,
+          CARRIER STRING,
+          AVG_DEP_DELAY FLOAT,
+          AVG_ARR_DELAY FLOAT,
+          TOTAL_DISTANCE FLOAT
     )
     ROW FORMAT DELIMITED
     FIELDS TERMINATED BY '\t' STORED AS TEXTFILE LOCATION '${hiveDataFolder}';
     INSERT OVERWRITE TABLE ${hiveTableName}
-    SELECT  year, month, day_of_month, carrier, avg(dep_delay) avg_dep_delay, 
+    SELECT     year, month, day_of_month, carrier, avg(dep_delay) avg_dep_delay, 
             avg(arr_delay) avg_arr_delay, sum(distance) total_distance 
     FROM flights
     GROUP BY year, month, day_of_month, carrier 
@@ -415,7 +415,7 @@ Oozie представляет свои конвейеры с точки зре�
 
 1. Проследите его состояние с помощью веб-консоли Oozie. В Ambari выберите **Oozie**, **Быстрые ссылки**, **Oozie Web Console** (Веб-консоль Oozie). На вкладке **заданий рабочего процесса** выберите **Все задания**.
 
-    ![рабочие процессы веб-консоли HDi Oozie](./media/hdinsight-operationalize-data-pipeline/hdi-oozie-web-console-workflows.png)
+    :::image type="content" source="./media/hdinsight-operationalize-data-pipeline/hdi-oozie-web-console-workflows.png" alt-text="рабочие процессы веб-консоли HDi Oozie":::
 
 1. Когда состояние — "успех", запросите таблицу базы данных SQL, чтобы просмотреть вставленные строки. С помощью портала Azure перейдите в область базы данных SQL, нажмите кнопку **Инструменты** и откройте **редактор запросов**.
 
@@ -557,7 +557,7 @@ sqlDatabaseTableName=dailyflights
 
 Единственные новые свойства, представленные в этом файле `job.properties`:
 
-| Свойство. | Источник значения |
+| Свойство | Источник значения |
 | --- | --- |
 | oozie.coord.application.path | Указывает расположение файла `coordinator.xml`, содержащего координатор для запуска Oozie. |
 | hiveDailyTableNamePrefix | Префикс, используемый при динамическом создании имени таблицы в промежуточной таблице. |
@@ -593,11 +593,11 @@ sqlDatabaseTableName=dailyflights
 
 5. С помощью веб-консоли Oozie проверьте его состояние. Выберите вкладку **заданий координатора**, а затем щелкните **Все задания**.
 
-    ![Задания координатора в веб-консоли Oozie](./media/hdinsight-operationalize-data-pipeline/hdi-oozie-web-console-coordinator-jobs.png)
+    :::image type="content" source="./media/hdinsight-operationalize-data-pipeline/hdi-oozie-web-console-coordinator-jobs.png" alt-text="Задания координатора в веб-консоли Oozie":::
 
 6. Выберите экземпляр координатора для отображения списка запланированных действий. В этом случае вы увидите четыре действия с номинальным временем в диапазоне от 1 до 4 января 2017 года.
 
-    ![Задание координатора в веб-консоли Oozie](./media/hdinsight-operationalize-data-pipeline/hdi-oozie-web-console-coordinator-instance.png)
+    :::image type="content" source="./media/hdinsight-operationalize-data-pipeline/hdi-oozie-web-console-coordinator-instance.png" alt-text="Задание координатора в веб-консоли Oozie":::
 
     Каждое действие в этом списке соответствует экземпляру рабочего процесса, который обрабатывает данные за один день, и где начало дня обозначается номинальным временем.
 

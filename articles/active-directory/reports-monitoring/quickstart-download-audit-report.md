@@ -18,17 +18,17 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a6cbea49fe39c92c8a2fc50e501cb4ef5cff74b1
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "68989678"
 ---
 # <a name="quickstart-download-an-audit-report-using-the-azure-portal"></a>Быстрое начало. Загрузка отчета по аудиту с помощью портала Azure
 
 Из этого краткого руководства вы узнаете, как загрузить CSV-файл журналов аудита для своего клиента за последние 24 часа. С портала Azure можно скачать до 250 000 записей. Записи отсортированы по убыванию даты и времени по умолчанию, и вы получите 250 000 последних записей. 
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Вам необходимы:
 

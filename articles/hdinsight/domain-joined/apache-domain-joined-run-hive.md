@@ -4,18 +4,18 @@ description: Сведения о настройке политик Apache Ranger
 ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 11/27/2019
-ms.openlocfilehash: fbe4361033321f2ba81478c41a138937f70b5498
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 15c406576b373577a2a3a50108acad7ccbf36699
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101705710"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863264"
 ---
 # <a name="configure-apache-hive-policies-in-hdinsight-with-enterprise-security-package"></a>Настройка политик Apache Hive в HDInsight с Корпоративным пакетом безопасности
 
 Узнайте, как настроить политики Apache Ranger для Apache Hive. В этой статье вы создадите две политики Ranger, чтобы ограничить доступ к таблице hivesampletable. Таблица hivesampletable поставляется с кластерами HDInsight. После настройки политик вы используете Excel и драйвер ODBC для подключения к таблицам Hive в HDInsight.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Кластер HDInsight с Корпоративным пакетом безопасности. Ознакомьтесь со статьей [Настройка кластера HDInsight с корпоративным пакетом безопасности с помощью доменных служб Azure Active Directory](./apache-domain-joined-configure-using-azure-adds.md).
 * Рабочая станция с Microsoft 365ными приложениями для предприятий, Office 2016, Office 2013 профессиональный плюс, Excel 2013 standalone или Office 2010 профессиональный плюс.
@@ -30,7 +30,7 @@ ms.locfileid: "101705710"
 
 2. Войдите, используя имя пользователя и пароль домена администратора кластера.
 
-    ![Домашняя страница HDInsight ESP Ranger](./media/apache-domain-joined-run-hive/hdinsight-domain-joined-ranger-home-page.png)
+    :::image type="content" source="./media/apache-domain-joined-run-hive/hdinsight-domain-joined-ranger-home-page.png" alt-text="Домашняя страница HDInsight ESP Ranger" border="true":::
 
     В настоящее время Ranger работает только с Yarn и Hive.
 
@@ -48,7 +48,7 @@ ms.locfileid: "101705710"
 2. Выберите **CLUSTERNAME_Hive** в разделе **Hive**. Отобразятся две предварительно настроенные политики.
 3. Выберите **Добавить новую политику**, а затем введите следующие значения:
 
-    |Свойство. |Значение |
+    |Свойство |Значение |
     |---|---|
     |Имя политики|Read-hivesampletable — все|
     |База данных Hive|default|
@@ -57,7 +57,7 @@ ms.locfileid: "101705710"
     |Выберите пользователя|hiveuser1|
     |Разрешения|select|
 
-    ![Настройка политик Hive для Ranger в HDInsight ESP](./media/apache-domain-joined-run-hive/hdinsight-domain-joined-configure-ranger-policy.png).
+    :::image type="content" source="./media/apache-domain-joined-run-hive/hdinsight-domain-joined-configure-ranger-policy.png" alt-text="Настройка политик Hive для Ranger в HDINSIGHT ESP" border="true":::.
 
     > [!NOTE]  
     > Если пользователь домена не указан в поле "Выберите пользователя", подождите несколько минут для синхронизации Ranger с AAD.
@@ -66,7 +66,7 @@ ms.locfileid: "101705710"
 
 5. Повторите последние два шага, чтобы создать еще одну политику со следующими свойствами.
 
-    |Свойство. |Значение |
+    |Свойство |Значение |
     |---|---|
     |Имя политики|Read-hivesampletable-devicemake|
     |База данных Hive|default|
@@ -79,7 +79,7 @@ ms.locfileid: "101705710"
 
 Инструкции см. в разделе [Создание источника данных Hive ODBC](../hadoop/apache-hadoop-connect-excel-hive-odbc-driver.md).  
 
- | Свойство.  |Описание |
+ | Свойство  |Описание |
  | --- | --- |
  | Имя базы данных-источника | Присвойте имя источнику данных |
  | Узел | Введите CLUSTERNAME.azurehdinsight.net. Например, myHDICluster.azurehdinsight.net |
@@ -101,7 +101,7 @@ ms.locfileid: "101705710"
 
 1. На вкладке **Данные** перейдите к разделу **Получить данные** > **Из других источников** > **Из ODBC**, чтобы открыть окно **Из ODBC**.
 
-    ![Мастер подключения к данным](./media/apache-domain-joined-run-hive/simbahiveodbc-excel-dataconnection1.png)
+    :::image type="content" source="./media/apache-domain-joined-run-hive/simbahiveodbc-excel-dataconnection1.png" alt-text="Мастер подключения к данным" border="true":::
 
 1. В раскрывающемся списке выберите имя источника данных, созданное в последнем разделе, и нажмите кнопку **ОК**.
 

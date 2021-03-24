@@ -6,16 +6,16 @@ ms.author: rajosh
 ms.manager: abhemraj
 ms.topic: troubleshooting
 ms.date: 01/02/2020
-ms.openlocfilehash: 09fbc97b84365cc1d6d40b8e1147e1b8e951cc1f
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 78e54543c94cd6e8434023b61516242c2491f353
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104780707"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863604"
 ---
 # <a name="troubleshoot-assessmentdependency-visualization"></a>Устранение неполадок с визуализацией оценок и зависимостей
 
-Эта статья поможет вам устранить проблемы с оценкой и визуализацией зависимостей с помощью службы ["миграция Azure": обнаружение и оценка](migrate-services-overview.md#azure-migrate-server-assessment-tool).
+Эта статья поможет вам устранить проблемы с оценкой и визуализацией зависимостей с помощью службы ["миграция Azure": обнаружение и оценка](migrate-services-overview.md#azure-migrate-discovery-and-assessment-tool).
 
 
 ## <a name="assessment-readiness-issues"></a>Проблемы готовности к оценке
@@ -222,7 +222,7 @@ ms.locfileid: "104780707"
 В режиме безагентного анализа зависимостей имена процессов записываются на основе наилучшего решения. В некоторых сценариях, несмотря на то, что имена исходного и целевого серверов и порт назначения фиксируются, невозможно определить имена процессов на обоих концах зависимости. В таких случаях процесс помечается как "Неизвестный процесс".
 
 ## <a name="my-log-analytics-workspace-is-not-listed-when-trying-to-configure-the-workspace-in-azure-migrate"></a>Рабочая область "Моя Log Analytics" не отображается при попытке настроить рабочую область в службе "миграция Azure"
-Сейчас Миграция Azure поддерживает создание рабочей области OMS в регионах "Восточная часть США", "Юго-Восточная Азия" и "Западная Европа". Если Рабочая область создана за пределами службы "миграция Azure" в любом другом регионе, она сейчас не может быть связана с проектом "миграция Azure".
+Сейчас Миграция Azure поддерживает создание рабочей области OMS в регионах "Восточная часть США", "Юго-Восточная Азия" и "Западная Европа". Если Рабочая область создана за пределами службы "миграция Azure" в любом другом регионе, она в настоящее время не может быть связана с проектом.
 
 
 ## <a name="capture-network-traffic"></a>Запись сетевого трафика
@@ -252,6 +252,6 @@ ms.locfileid: "104780707"
 - Для виртуальных машин Hyper-V данные операционной системы собираются с узла Hyper-V.
 - Для физических серверов он извлекается с сервера.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Создание](how-to-create-assessment.md) или [Настройка](how-to-modify-assessment.md) оценки.
