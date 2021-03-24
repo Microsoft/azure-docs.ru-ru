@@ -4,12 +4,12 @@ description: 'Учебник: сведения о настройке полит�
 ms.service: hdinsight
 ms.topic: tutorial
 ms.date: 09/04/2019
-ms.openlocfilehash: deefda126602e9b276b74752330a14cc3eb2aa95
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: a18e0b252facb4f00d9ba5c9b6bfe9fe6aefe1ef
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98933725"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867004"
 ---
 # <a name="tutorial-configure-apache-hbase-policies-in-hdinsight-with-enterprise-security-package"></a>Руководство по настройке политик Apache HBase в HDInsight с Корпоративным пакетом безопасности
 
@@ -86,7 +86,7 @@ ms.locfileid: "98933725"
     scan 'Customers'
     ```
 
-    ![Выходные данные оболочки HDInsight Hadoop HBase](./media/apache-domain-joined-run-hbase/hbase-shell-scan-table.png)
+    :::image type="content" source="./media/apache-domain-joined-run-hbase/hbase-shell-scan-table.png" alt-text="Выходные данные оболочки HDInsight Hadoop HBase" border="true":::
 
 ## <a name="create-ranger-policies"></a>Создание политик Ranger
 
@@ -94,11 +94,11 @@ ms.locfileid: "98933725"
 
 1. Откройте **пользовательский интерфейс администратора Ranger**. В разделе **HBase** выберите **\<ClusterName>_hbase**.
 
-   ![Пользовательский интерфейс администратора Apache Ranger для HDInsight](./media/apache-domain-joined-run-hbase/apache-ranger-admin-login.png)
+   :::image type="content" source="./media/apache-domain-joined-run-hbase/apache-ranger-admin-login.png" alt-text="Пользовательский интерфейс администратора Apache Ranger для HDInsight" border="true":::
 
 2. На экране **List of Policies** (Список политик) отобразятся все политики Ranger, созданные для этого кластера. Может быть указана одна предварительно настроенная политика. Щелкните **Add New Policy** (Добавить новую политику).
 
-    ![Список политик Apache Ranger HBase](./media/apache-domain-joined-run-hbase/apache-ranger-hbase-policies-list.png)
+    :::image type="content" source="./media/apache-domain-joined-run-hbase/apache-ranger-hbase-policies-list.png" alt-text="Список политик Apache Ranger HBase" border="true":::
 
 3. На экране **Create Policy** (Создание политики) введите следующие значения.
 
@@ -117,7 +117,7 @@ ms.locfileid: "98933725"
    * `*` обозначает ноль или более вхождений символов.
    * `?` означает один символ.
 
-   ![Создание политики Ranger для пользователей sales](./media/apache-domain-joined-run-hbase/apache-ranger-hbase-policy-create-sales.png)
+   :::image type="content" source="./media/apache-domain-joined-run-hbase/apache-ranger-hbase-policy-create-sales.png" alt-text="Создание политики Ranger для пользователей sales" border="true":::
 
    >[!NOTE]
    >Подождите несколько минут, пока Ranger синхронизируется с Azure AD, если в поле **Выберите пользователя** автоматически не подставится пользователь домена.
@@ -136,7 +136,7 @@ ms.locfileid: "98933725"
    |Выберите пользователя  | marketing_user1 |
    |Разрешения  | Чтение |
 
-   ![Создание политики Ranger для пользователей marketing](./media/apache-domain-joined-run-hbase/apache-ranger-hbase-policy-create-marketing.png)  
+   :::image type="content" source="./media/apache-domain-joined-run-hbase/apache-ranger-hbase-policy-create-marketing.png" alt-text="Создание политики Ranger для пользователей marketing" border="true":::  
 
 6. Щелкните **Добавить**, чтобы сохранить политику.
 
@@ -226,7 +226,7 @@ ms.locfileid: "98933725"
 
 1. Просмотрите события доступа к ресурсам аудита из интерфейса Ranger.
 
-   ![Аудит политики пользовательского интерфейса Ranger для HDInsight](./media/apache-domain-joined-run-hbase/apache-ranger-admin-audit.png)
+   :::image type="content" source="./media/apache-domain-joined-run-hbase/apache-ranger-admin-audit.png" alt-text="Аудит политики пользовательского интерфейса Ranger для HDInsight" border="true":::
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

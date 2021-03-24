@@ -11,12 +11,12 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 03/02/2021
 ms.custom: how-to, devx-track-python, data4ml, synapse-azureml
-ms.openlocfilehash: d7cc948d3631e69882eb252672e5a3eb5d5f9751
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 9ced4da7f71a0499e538e499644d89240611f1ea
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104867446"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104956219"
 ---
 # <a name="attach-apache-spark-pools-powered-by-azure-synapse-analytics-for-data-wrangling-preview"></a>Присоединение пулов Apache Spark (на платформе Azure синапсе Analytics) для структурирование данных (Предварительная версия)
 
@@ -31,7 +31,7 @@ ms.locfileid: "104867446"
 
 Интеграция Azure синапсе Analytics с Машинное обучение Azure (Предварительная версия) позволяет подключать пул Apache Spark, поддерживаемый Azure синапсе для интерактивного исследования и подготовки данных. Благодаря этой интеграции вы можете использовать выделенные ресурсы для структурирование данных в том же блокноте Python, который используется для обучения моделей машинного обучения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Создайте рабочую область Машинного обучения Azure](how-to-manage-workspace.md?tabs=python).
 
@@ -75,7 +75,7 @@ linked_service = LinkedService.get(ws, 'synapselink1')
 * Пакет SDK для Python 
 
 ### <a name="attach-a-pool-via-the-studio"></a>Подключение пула с помощью студии
-Выполните следующие действия. 
+Выполните указанные ниже действия. 
 
 1. Войдите в [машинное обучение Azure Studio](https://ml.azure.com/).
 1. Выберите **связанные службы** в разделе **Управление** левой панели.
@@ -127,6 +127,21 @@ ws.compute_targets['Synapse Spark pool alias']
 
 ## <a name="launch-synapse-spark-pool-for-data-preparation-tasks"></a>Запуск пула Spark синапсе для задач подготовки данных
 
+Чтобы начать подготовку данных с помощью пула Apache Spark, укажите имя пула Apache Spark.
+
+> [!IMPORTANT]
+> Чтобы продолжить использование пула Apache Spark, необходимо указать, какой ресурс вычислений использовать в задачах структурирование данных, с помощью `%synapse` одной строки кода и `%%synapse` нескольких строк. 
+
+```python
+%synapse start -c SynapseSparkPoolAlias
+```
+
+После запуска сеанса можно проверить метаданные сеанса.
+
+```python
+%synapse meta
+```
+
 Вы можете указать [машинное обучение Azure среду](concept-environments.md) , которая будет использоваться во время сеанса Apache Spark. Вступят в силу будут только зависимости Conda, указанные в среде. Образ DOCKER не поддерживается.
 
 >[!WARNING]
@@ -146,21 +161,11 @@ env.python.conda_dependencies.add_conda_package("numpy==1.17.0")
 env.register(workspace=ws)
 ```
 
-Чтобы начать подготовку данных с помощью пула Apache Spark, укажите имя пула Apache Spark и укажите идентификатор подписки, группу ресурсов рабочей области машинного обучения, имя рабочей области машинного обучения и среду, которая будет использоваться во время сеанса Apache Spark. 
-
-> [!IMPORTANT]
-> Чтобы продолжить использование пула Apache Spark, необходимо указать, какой ресурс вычислений использовать в задачах структурирование данных, с помощью `%synapse` одной строки кода и `%%synapse` нескольких строк. 
+Чтобы начать подготовку данных с помощью пула Apache Spark и настраиваемой среды, укажите имя пула Apache Spark и среду, которая будет использоваться во время сеанса Apache Spark. Кроме того, можно указать идентификатор подписки, группу ресурсов рабочей области машинного обучения и имя рабочей области машинного обучения.
 
 ```python
-%synapse start -c SynapseSparkPoolAlias -s AzureMLworkspaceSubscriptionID -r AzureMLworkspaceResourceGroupName -w AzureMLworkspaceName -e myenv
+%synapse start -c SynapseSparkPoolAlias -e myenv -s AzureMLworkspaceSubscriptionID -r AzureMLworkspaceResourceGroupName -w AzureMLworkspaceName
 ```
-
-После запуска сеанса можно проверить метаданные сеанса.
-
-```python
-%synapse meta
-```
-
 ## <a name="load-data-from-storage"></a>Загрузка данных из хранилища
 
 После запуска сеанса Apache Spark прочтите данные, которые вы хотите подготовить. Загрузка данных поддерживается для хранилища BLOB-объектов Azure и Azure Data Lake Storage поколений 1 и 2.
@@ -226,14 +231,22 @@ df = spark.read.csv("abfss://<container name>@<storage account>.dfs.core.windows
 
 ### <a name="read-in-data-from-registered-datasets"></a>Считывает данные из зарегистрированных наборов данных
 
-Вы также можете получить имеющийся зарегистрированный набор данных в рабочей области и выполнить для него подготовку данных, преобразовав ее в таблицу данных Spark.  
+Вы также можете получить имеющийся зарегистрированный набор данных в рабочей области и выполнить для него подготовку данных, преобразовав ее в таблицу данных Spark.
 
-В следующем примере возвращается зарегистрированный Табулардатасет, `blob_dset` , который ссылается на файлы в хранилище BLOB-объектов, и преобразуется в таблицу данных Spark. При преобразовании наборов данных в таблицу данных Spark можно использовать `pyspark` библиотеки для изучения и подготовки.  
+В следующем примере выполняется проверка подлинности в рабочей области, получение зарегистрированного Табулардатасет, `blob_dset` который ссылается на файлы в хранилище BLOB-объектов, и преобразует его в кадр данных Spark. При преобразовании наборов данных в таблицу данных Spark можно использовать `pyspark` библиотеки для изучения и подготовки.  
 
 ``` python
 
 %%synapse
 from azureml.core import Workspace, Dataset
+
+subscription_id = "<enter your subscription ID>"
+resource_group = "<enter your resource group>"
+workspace_name = "<enter your workspace name>"
+
+ws = Workspace(workspace_name = workspace_name,
+               subscription_id = subscription_id,
+               resource_group = resource_group)
 
 dset = Dataset.get_by_name(ws, "blob_dset")
 spark_df = dset.to_spark_dataframe()

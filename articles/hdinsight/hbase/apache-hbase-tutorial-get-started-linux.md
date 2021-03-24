@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.date: 01/22/2021
-ms.openlocfilehash: 5de98f5bf57626a408dd5bec8575856074f434c7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 50216b83475e92cbabb5ed78c3836264ceff4600
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101705676"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866613"
 ---
 # <a name="tutorial-use-apache-hbase-in-azure-hdinsight"></a>Руководство по использованию Apache HBase в Azure HDInsight
 
@@ -64,11 +64,11 @@ ms.locfileid: "101705676"
 
 Для большинства пользователей данные отображаются в табличном формате:
 
-![Табличные данные HDInsight Apache HBase](./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-contacts-tabular.png)
+:::image type="content" source="./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-contacts-tabular.png" alt-text="Табличные данные HDInsight Apache HBase" border="false":::
 
 В HBase (реализация [Cloud BigTable](https://cloud.google.com/bigtable/)) те же данные выглядят следующим образом:
 
-![Данные BigTable в HDInsight Apache HBase](./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-contacts-bigtable.png)
+:::image type="content" source="./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-contacts-bigtable.png" alt-text="Данные BigTable в HDInsight Apache HBase" border="false":::
 
 **Использование оболочки HBase**
 
@@ -111,7 +111,7 @@ ms.locfileid: "101705676"
     scan 'Contacts'
     ```
 
-    ![Оболочка HDInsight Apache Hadoop HBase](./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-shell.png)
+    :::image type="content" source="./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-shell.png" alt-text="Оболочка HDInsight Apache Hadoop HBase" border="false":::
 
 1. С помощью команды `get` получите содержимое строки. Введите следующую команду:
 
@@ -331,7 +331,7 @@ HBase на HDInsight поставляется с веб-интерфейсом �
 
 1. В верхней части страницы выберите **Быстрые ссылки**, выберите ссылку на активный узел Zookeeper, а затем щелкните **HBase Master UI** (Основной интерфейс HBase).  Интерфейс откроется в новой вкладке браузера.
 
-   ![Пользовательский интерфейс HDInsight Apache HBase HMaster](./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-hmaster-ui.png)
+   :::image type="content" source="./media/apache-hbase-tutorial-get-started-linux/hdinsight-hbase-hmaster-ui.png" alt-text="Пользовательский интерфейс HDInsight Apache HBase HMaster" border="false":::
 
    Основной интерфейс HBase состоит из таких разделов:
 

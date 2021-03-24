@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020
 ms.date: 04/17/2020
-ms.openlocfilehash: 4761c1fb6d245071a02fc69677fc9cd50a972fdd
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 297c1d4afca5a1d605a046d69b086a05a9322bc7
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100574596"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872087"
 ---
 # <a name="configure-outbound-network-traffic-for-azure-hdinsight-clusters-using-firewall"></a>Настройка исходящего сетевого трафика для кластеров Azure HDInsight с помощью брандмауэра
 
@@ -52,7 +52,7 @@ ms.locfileid: "100574596"
 
 1. Перейдите в раздел **Параметры** > **Правила** > **Коллекция правил приложений** >  **+ Добавить коллекцию правил приложений**.
 
-    ![Заголовок. Добавление коллекции правил приложений](./media/hdinsight-restrict-outbound-traffic/hdinsight-restrict-outbound-traffic-add-app-rule-collection.png)
+    :::image type="content" source="./media/hdinsight-restrict-outbound-traffic/hdinsight-restrict-outbound-traffic-add-app-rule-collection.png" alt-text="Заголовок. Добавление коллекции правил приложений":::
 
 1. На экране **Добавить коллекцию правил приложений** укажите следующие сведения.
 
@@ -78,7 +78,7 @@ ms.locfileid: "100574596"
     | Rule_3 | * | https:443 | login.microsoftonline.com | Разрешает действие входа Windows |
     | Rule_4 | * | https:443,http:80 | storage_account_name.blob.core.windows.net | Замените `storage_account_name` на имя вашей учетной записи хранения. Чтобы использовать ТОЛЬКО HTTPS-подключения, убедитесь, что в учетной записи хранения включен параметр ["требуется безопасная передача"](../storage/common/storage-require-secure-transfer.md). Если для доступа к учетным записям хранения используется частная конечная точка, этот шаг не требуется, и трафик хранилища не пересылается в брандмауэр.|
 
-   ![Заголовок. Укажите сведения о коллекции правил приложения](./media/hdinsight-restrict-outbound-traffic/hdinsight-restrict-outbound-traffic-add-app-rule-collection-details.png)
+   :::image type="content" source="./media/hdinsight-restrict-outbound-traffic/hdinsight-restrict-outbound-traffic-add-app-rule-collection-details.png" alt-text="Заголовок. Укажите сведения о коллекции правил приложения":::
 
 1. Выберите **Добавить**.
 
@@ -105,7 +105,7 @@ ms.locfileid: "100574596"
     | Rule_5 | TCP | * | SQL | 1433 | Если вы используете серверы SQL Server по умолчанию, предоставляемые HDInsight, настройте правило сети в разделе "Теги служб" для SQL, который позволит регистрировать и проверять трафик SQL. если вы не настроили конечные точки службы для SQL Server в подсети HDInsight, что приведет к обходу брандмауэра. Если вы используете настраиваемый SQL Server для Ambari, Oozie, Ranger и Hive метахранилища, то достаточно разрешить трафик только на собственные серверы SQL Server.|
     | Rule_6 | TCP | * | Azure Monitor | * | (Необязательно.) Пользователи, которые планируют использовать функцию автоматического масштабирования, должны добавить это правило. |
     
-   ![Заголовок. Ввод коллекции правил приложений](./media/hdinsight-restrict-outbound-traffic/hdinsight-restrict-outbound-traffic-add-network-rule-collection.png)
+   :::image type="content" source="./media/hdinsight-restrict-outbound-traffic/hdinsight-restrict-outbound-traffic-add-network-rule-collection.png" alt-text="Заголовок. Ввод коллекции правил приложений":::
 
 1. Выберите **Добавить**.
 

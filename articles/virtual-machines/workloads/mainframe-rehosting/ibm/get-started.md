@@ -3,7 +3,7 @@ title: Рабочие нагрузки IBM в Azure | Документация �
 description: Используйте эмулятор мэйнфрейма и другие службы от партнеров Майкрософт для переразмещения рабочих нагрузок IBM z/OS с помощью Microsoft Azure.
 services: virtual-machines
 ms.service: virtual-machines
-ms.subservice: workloads
+ms.subservice: mainframe-rehosting
 documentationcenter: ''
 author: njray
 ms.author: edprice
@@ -13,12 +13,12 @@ ms.topic: conceptual
 ms.date: 02/22/2019
 tags: ''
 keywords: ''
-ms.openlocfilehash: 1bc8dcbf05847c4d1ce6dd6a39af7bd3674a0669
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d834b1fccf2951fffa8d00f4deb21434b9fea4ac
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102561608"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104955220"
 ---
 # <a name="ibm-workloads-on-azure"></a>Рабочие нагрузки IBM в Azure
 

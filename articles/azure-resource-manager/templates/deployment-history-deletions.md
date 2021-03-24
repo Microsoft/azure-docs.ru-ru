@@ -2,13 +2,13 @@
 title: Удаление журнала развертывания
 description: Описывает, как Azure Resource Manager автоматически удаляет развертывания из журнала развертывания. Развертывания удаляются, если размер журнала близок к превышению лимита в 800.
 ms.topic: conceptual
-ms.date: 10/01/2020
-ms.openlocfilehash: 13c65f3311e308708034bb5befb7e3c3ee158d38
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 03/23/2021
+ms.openlocfilehash: fc4f7f33cdd7ccce3158aa95bd002f12c8c44c00
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91652488"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951969"
 ---
 # <a name="automatic-deletions-from-deployment-history"></a>Автоматическое удаление из журнала развертывания
 
@@ -53,6 +53,12 @@ Remove-AzResourceLock -LockId $lockId
 lockid=$(az lock show --resource-group lockedRG --name deleteLock --output tsv --query id)
 az lock delete --ids $lockid
 ```
+
+## <a name="required-permissions"></a>Необходимые разрешения
+
+Удаление запрашивается по идентификатору пользователя, который развернул шаблон. Чтобы удалить развертывания, пользователь должен иметь доступ к действию **Microsoft. Resources/deployments/Delete** . Если у пользователя нет необходимых разрешений, развертывания не удаляются из журнала.
+
+Если у текущего пользователя нет необходимых разрешений, то при следующем развертывании будет предпринята попытка автоматического удаления.
 
 ## <a name="opt-out-of-automatic-deletions"></a>Отказаться от автоматических удалений
 

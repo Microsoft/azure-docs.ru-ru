@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 08a8dde815a6dea5d69e5e2a385cbaa03fba681a
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: 0c1b67e42e7988a836ec58ac022b11d736210bca
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99832700"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865627"
 ---
 # <a name="deploy-a-cloud-service-extended-support-using-azure-powershell"></a>Развертывание Облачной службы (расширенная поддержка) с помощью PowerShell
 
@@ -88,7 +88,7 @@ ms.locfileid: "99832700"
     $networkProfile = @{loadBalancerConfiguration = $loadBalancerConfig} 
     ```
  
-9. создание Key Vault; Этот Key Vault будет использоваться для хранения сертификатов, связанных с ролями Облачной службы (расширенная поддержка). Обязательно включите "Политики доступа" (на портале) и разрешите соответствующий доступ, выбрав элементы "Виртуальные машины Azure для развертывания" и "Azure Resource Manager для развертывания шаблонов". Key Vault должен находиться в тех же регионе и подписке, что и облачная служба, и иметь уникальное имя. Дополнительные сведения см. в статье [Использование сертификатов с Облачными службами Azure (расширенная поддержка)](certificates-and-key-vault.md).
+9. создание Key Vault; Этот Key Vault будет использоваться для хранения сертификатов, связанных с ролями Облачной службы (расширенная поддержка). Key Vault должен находиться в тех же регионе и подписке, что и облачная служба, и иметь уникальное имя. Дополнительные сведения см. в статье [Использование сертификатов с Облачными службами Azure (расширенная поддержка)](certificates-and-key-vault.md).
 
     ```powershell
     New-AzKeyVault -Name "ContosKeyVault” -ResourceGroupName “ContosOrg” -Location “East US” 
@@ -97,6 +97,7 @@ ms.locfileid: "99832700"
 10. Обновите политику доступа Key Vault и предоставьте учетной записи пользователя разрешения на доступ к сертификату. 
 
     ```powershell
+    Set-AzKeyVaultAccessPolicy -VaultName 'ContosKeyVault' -ResourceGroupName 'ContosOrg' -EnabledForDeployment
     Set-AzKeyVaultAccessPolicy -VaultName 'ContosKeyVault' -ResourceGroupName 'ContosOrg' -UserPrincipalName 'user@domain.com' -PermissionsToCertificates create,get,list,delete 
     ```
 

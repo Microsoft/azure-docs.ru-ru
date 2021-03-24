@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/02/2019
-ms.openlocfilehash: 360a9730025dc24eda93868903fcd356c37d06ef
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 3cf97039983ecec44a7c3a32e178fdcf9f9c45ff
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100576337"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872189"
 ---
 # <a name="query-azure-monitor-logs-to-monitor-hdinsight-clusters"></a>Мониторинг кластеров HDInsight с помощью запросов к журналам Azure Monitor
 
@@ -21,7 +21,7 @@ ms.locfileid: "100576337"
 
 [!INCLUDE [azure-monitor-log-analytics-rebrand](../../includes/azure-monitor-log-analytics-rebrand.md)]
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Вы должны настроить кластер HDInsight для использования журналов Azure Monitor и добавить в нее решения для мониторинга Azure Monitor журналов, относящиеся к кластеру HDInsight. Инструкции см. в статье [Использование журналов Azure Monitor с кластерами HDInsight](hdinsight-hadoop-oms-log-analytics-tutorial.md).
 
@@ -37,13 +37,13 @@ ms.locfileid: "100576337"
     search *
     ```
 
-    ![Apache Ambari Analytics Поиск всех метрик](./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-search-all-metrics.png "Поиск по всем метрикам")
+    :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-search-all-metrics.png" alt-text="Apache Ambari Analytics Поиск всех метрик":::
 
 1. В меню слева выберите вкладку **Фильтр** .
 
 1. В разделе **тип** выберите **пульс**. Затем выберите **применить & выполнить**.
 
-    ![Поиск конкретных метрик в log Analytics](./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-search-specific-metrics.png "Поиск конкретных метрик")
+    :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-search-specific-metrics.png" alt-text="Поиск конкретных метрик в log Analytics":::
 
 1. Обратите внимание, что запрос в текстовом поле изменяется на:
 
@@ -52,15 +52,15 @@ ms.locfileid: "100576337"
     | where Type == "Heartbeat"
     ```
 
-1. Более глубокие знания можно получить с помощью параметров, доступных в меню слева. Пример:
+1. Более глубокие знания можно получить с помощью параметров, доступных в меню слева. Например:
 
-    - Чтобы просмотреть журналы из определенного узла, выполните следующие действия.
+   - Чтобы просмотреть журналы из определенного узла, выполните следующие действия.
 
-        ![Поиск конкретных ошибок output1](./media/hdinsight-hadoop-oms-log-analytics-use-queries/log-analytics-specific-node.png "Поиск конкретных ошибок output1")
+     :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-use-queries/log-analytics-specific-node.png" alt-text="Поиск конкретных ошибок output1":::
 
-    - Чтобы просмотреть журналы в определенное время:
+   - Чтобы просмотреть журналы в определенное время:
 
-        ![Поиск конкретных ошибок Output2](./media/hdinsight-hadoop-oms-log-analytics-use-queries/log-analytics-specific-time.png "Поиск конкретных ошибок Output2")
+     :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-use-queries/log-analytics-specific-time.png" alt-text="Поиск конкретных ошибок Output2":::
 
 1. Выберите **применить & выполнить** и проверьте результаты. Также обратите внимание, что запрос был обновлен до:
 
@@ -102,11 +102,11 @@ search in (metrics_resourcemanager_queue_root_default_CL) *
 
 1. Выберите **новое правило генерации оповещений** в верхней части страницы.
 
-    ![Введите запрос для создания alert1](./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-create-alert-query.png "Введите запрос для создания alert1")
+    :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-create-alert-query.png" alt-text="Новое правило генерации оповещений":::
 
 1. В окне **Создать правило** введите запрос и другие сведения, чтобы создать оповещение, а затем щелкните **Создать правило генерации оповещений**.
 
-    ![Введите запрос для создания alert2](./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-create-alert.png "Введите запрос для создания alert2")
+    :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-create-alert.png" alt-text="Определите условие оповещения.":::
 
 ### <a name="edit-or-delete-an-existing-alert"></a>Изменить или удалить существующее оповещение
 
@@ -120,7 +120,7 @@ search in (metrics_resourcemanager_queue_root_default_CL) *
 
 1. Доступны следующие варианты: **Сохранить**, **Отменить**, **Отключить** и **Удалить**.
 
-    ![Предупреждение об удалении журнала Azure Monitor HDInsight](media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-edit-alert.png)
+    :::image type="content" source="media/hdinsight-hadoop-oms-log-analytics-use-queries/hdinsight-log-analytics-edit-alert.png" alt-text="Предупреждение об удалении журнала Azure Monitor HDInsight":::
 
 Дополнительные сведения см. в статье [Создание и просмотр оповещений метрик, а также управление ими с помощью Azure Monitor](../azure-monitor/alerts/alerts-metric.md).
 

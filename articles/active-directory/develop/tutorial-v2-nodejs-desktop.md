@@ -11,10 +11,10 @@ ms.topic: tutorial
 ms.date: 02/17/2021
 ms.author: v-doeris
 ms.openlocfilehash: e9e36a3ed2cab05eb63168452bc8472656ab5efb
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644295"
 ---
 # <a name="tutorial-sign-in-users-and-call-the-microsoft-graph-api-in-an-electron-desktop-app"></a>Руководство по реализации входа пользователей и вызова API Microsoft Graph в классическом приложении Electron

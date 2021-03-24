@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 01/18/2021
 ms.author: jeedes
-ms.openlocfilehash: 1d66396b2d97a7f33158f91025f5735c7714cd65
-ms.sourcegitcommit: 54e1d4cdff28c2fd88eca949c2190da1b09dca91
+ms.openlocfilehash: 537378ef11333bd8942a61ab2bbb4e8a251c2b59
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2021
-ms.locfileid: "99221059"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103196860"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-github-ae"></a>Руководство по интеграции единого входа Azure Active Directory с GitHub AE
 
@@ -101,9 +101,9 @@ ms.locfileid: "99221059"
 
 1. Нажмите кнопку **Выбор групп** и найдите **группу** для включения этого утверждения, согласно которому все члены этой группы должны быть администраторами GHAE.
 
-1. В поле **Источник** выберите элемент **Атрибут** и в поле **Значение** введите **true**. 
+1. В поле **Источник** выберите элемент **Атрибут** и в поле **Значение** введите **true** (без кавычек). 
 
-10. Выберите команду **Сохранить**.
+1. Выберите команду **Сохранить**.
 
     ![Управление утверждением](./media/github-ae-tutorial/administrator.png)
 
@@ -112,7 +112,7 @@ ms.locfileid: "99221059"
 
 1. На странице **Настройка единого входа с помощью SAML** в разделе **Сертификат подписи SAML** найдите пункт **Сертификат (Base64)** и щелкните **Скачать**, чтобы скачать сертификат. Сохраните этот сертификат на компьютере.
 
-    ![Ссылка для скачивания сертификата](common/certificateBase64.png)
+    ![Ссылка для скачивания сертификата](common/certificatebase64.png)
 
 1. Требуемые URL-адреса вы можете скопировать из раздела **Настройка GitHub AE**.
 

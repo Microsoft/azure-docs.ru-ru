@@ -3,17 +3,17 @@ title: Создание первой фабрики данных (Visual Studio)
 description: В этом руководстве вы создадите образец конвейера фабрики данных Azure с помощью Visual Studio.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: tutorial
 ms.custom: vs-azure
 ms.date: 01/22/2018
-ms.openlocfilehash: 2ae8e24b10a6661f5a18f3d04e243232436b2911
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 7431dcbdcd94b74482786625a052bc5abc31c164
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100377454"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104783172"
 ---
 # <a name="tutorial-create-a-data-factory-by-using-visual-studio"></a>Руководство: создание фабрики данных с помощью Visual Studio
 > [!div class="op_single_selector" title="Tools/SDKs"]
@@ -61,7 +61,7 @@ ms.locfileid: "100377454"
 3. На вашем компьютере должны быть установлены следующие компоненты:
    * Visual Studio 2013 или Visual Studio 2015.
    * Загрузите пакет SDK Azure для Visual Studio 2013 или Visual Studio 2015. Перейдите на [cтраницу загрузки Azure](https://azure.microsoft.com/downloads/) и щелкните **VS 2013** или **VS2015** в разделе **.NET**.
-   * Скачайте последнюю версию подключаемого модуля фабрики данных Azure для Visual Studio: [VS 2013](https://visualstudiogallery.msdn.microsoft.com/754d998c-8f92-4aa7-835b-e89c8c954aa5) или [VS 2015](https://visualstudiogallery.msdn.microsoft.com/371a4cf9-0093-40fa-b7dd-be3c74f49005). Вы также можете обновить подключаемый модуль, выполнив следующие действия. В меню выберите **Сервис** -> **Расширения и обновления** -> **В сети** -> **Галерея Visual Studio** -> **Microsoft Azure Data Factory Tools for Visual Studio**(Средства фабрики данных Microsoft Azure для Visual Studio) -> **Обновить**.
+   * Скачайте последнюю версию подключаемого модуля Фабрики данных Azure для Visual Studio: [VS 2013](https://visualstudiogallery.msdn.microsoft.com/754d998c-8f92-4aa7-835b-e89c8c954aa5) или [VS 2015](https://visualstudiogallery.msdn.microsoft.com/371a4cf9-0093-40fa-b7dd-be3c74f49005). Вы также можете обновить подключаемый модуль, выполнив следующие действия. В меню выберите **Сервис** -> **Расширения и обновления** -> **В сети** -> **Галерея Visual Studio** -> **Microsoft Azure Data Factory Tools for Visual Studio**(Средства фабрики данных Microsoft Azure для Visual Studio) -> **Обновить**.
 
 Теперь давайте создадим фабрику данных Azure с помощью Visual Studio.
 
@@ -164,7 +164,7 @@ ms.locfileid: "100377454"
 
     В следующей таблице приведены описания свойств JSON, используемых в этом фрагменте кода.
 
-    Свойство | Description |
+    Свойство | Описание |
     -------- | ----------- |
     type |Так как данные размещаются в хранилище BLOB-объектов Azure, для свойства типа задается значение **AzureBlob**.
     linkedServiceName | Указывает созданную ранее службу AzureStorageLinkedService1.
@@ -559,7 +559,7 @@ ms.locfileid: "100377454"
 
 ## <a name="see-also"></a>См. также:
 
-| Раздел | Description |
+| Раздел | Описание |
 |:--- |:--- |
 | [Конвейеры](data-factory-create-pipelines.md) |В этой статье описываются сведения о конвейерах и действиях в фабрике данных Azure, а также использование этих сущностей для создания комплексных рабочих процессов, управляемых данными, для конкретных бизнес-сценариев. |
 | [Наборы данных](data-factory-create-datasets.md) |Эта статья поможет вам понять, что такое наборы данных в фабрике данных Azure. |

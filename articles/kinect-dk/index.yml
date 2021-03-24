@@ -9,12 +9,12 @@ metadata:
   author: qm13
   ms.author: quentinm
   ms.date: 03/18/2021
-  ms.openlocfilehash: bf23c59fb200135f6ac962fbb463295823225641
-  ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+  ms.openlocfilehash: 74f320461327d4835e07a12d122f131977edc91a
+  ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/19/2021
-  ms.locfileid: "104654753"
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "104954910"
 landingContent:
 - title: Об Azure Kinect DK
   linkLists:
@@ -75,7 +75,7 @@ landingContent:
     - text: API пакета SDK для датчика
       url: https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/index.html
     - text: API пакета SDK для отслеживания текста
-      url: https://microsoft.github.io/Azure-Kinect-Body-Tracking/release/1.1.0/index.html
+      url: https://microsoft.github.io/Azure-Kinect-Body-Tracking/release/1.1.x/index.html
     - text: Службы зрения
       url: https://azure.microsoft.com/services/cognitive-services/directory/vision/
     - text: Службы "Речь"

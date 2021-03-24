@@ -2,14 +2,13 @@
 title: Подключение единиц экземпляра BareMetal в Azure
 description: Узнайте, как обнаруживать и взаимодействовать с единицами экземпляра BareMetal портал Azure или Azure CLI.
 ms.topic: how-to
-ms.subservice: workloads
 ms.date: 03/19/2021
-ms.openlocfilehash: 60a36deb00ab6c2399d25a880bce8fe624d9609f
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: 42de1618813ba33934e3f8eeeee8dc7ac27d9824
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776252"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951680"
 ---
 # <a name="connect-baremetal-instance-units-in-azure"></a>Подключение единиц экземпляра BareMetal в Azure
  

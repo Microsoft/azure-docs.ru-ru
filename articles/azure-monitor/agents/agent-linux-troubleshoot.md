@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 11/21/2019
-ms.openlocfilehash: f8558644fc24f3190247e57b4de7228af161a2a8
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 6c262e75bfc3fe9c7fb5ce3e00b42b0ff6cbe3bb
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102631172"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952955"
 ---
 # <a name="how-to-troubleshoot-issues-with-the-log-analytics-agent-for-linux"></a>Устранение неполадок с агентом Log Analytics для Linux 
 
@@ -19,7 +19,7 @@ ms.locfileid: "102631172"
 Если ни одна из рекомендаций не поможет устранить проблему, вы можете использовать следующие каналы поддержки:
 
 * Клиенты с поддержкой Premier могут открыть запрос на поддержку на странице [Premier](https://premier.microsoft.com/).
-* Клиенты с соглашением на поддержку Azure могут открыть запрос на поддержку на [портале Azure](https://manage.windowsazure.com/?getsupport=true).
+* Клиенты с соглашением на поддержку Azure могут открыть запрос на поддержку на [портале Azure](https://azure.microsoft.com/support/options/).
 * Для диагностики проблем с OMI можно применить инструкции в [руководстве по устранению неполадок OMI](https://github.com/Microsoft/omi/blob/master/Unix/doc/diagnose-omi-problems.md).
 * Задается [Ошибка GitHub](https://github.com/Microsoft/OMS-Agent-for-Linux/issues).
 * Посетите страницу Log Analytics отзывы, чтобы просмотреть отправленные идеи и ошибки [https://aka.ms/opinsightsfeedback](https://aka.ms/opinsightsfeedback) или создать новый файл. 
@@ -74,7 +74,7 @@ ms.locfileid: "102631172"
 
 ## <a name="important-configuration-files"></a>Важные файлы конфигурации
 
- Category | Расположение файла
+ Категория | Расположение файла
  ----- | -----
  Системный журнал | `/etc/syslog-ng/syslog-ng.conf`, `/etc/rsyslog.conf` или `/etc/rsyslog.d/95-omsagent.conf`
  Производительность, Nagios, Zabbix, выходные данные Log Analytics и общие настройки агента | `/etc/opt/microsoft/omsagent/<workspace id>/conf/omsagent.conf`

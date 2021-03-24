@@ -9,10 +9,10 @@ ms.date: 05/08/2020
 ms.author: aapowell
 ms.custom: devx-track-js
 ms.openlocfilehash: 4430ed34858077b13b4fec69756c1c7e9f3ef7ac
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100652385"
 ---
 # <a name="tutorial-publish-a-gatsby-site-to-azure-static-web-apps-preview"></a>Руководство по Публикация сайта Gatsby в предварительной версии службы "Статические веб-приложения Azure"
@@ -86,11 +86,11 @@ ms.locfileid: "100652385"
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
 1. Щелкните **Создать ресурс**.
-1. Выполните поиск по запросу **Статические веб-приложения**.
+1. Найдите **Статические веб-приложения**.
 1. Выберите **Статические веб-приложения (предварительная версия)** .
 1. Нажмите кнопку **Создать**.
 
-   :::image type="content" source="./media/publish-gatsby/create-in-portal.png" alt-text="Создание ресурса &quot;Статические веб-приложения (предварительная версия)&quot; на портале":::
+   :::image type="content" source="./media/publish-gatsby/create-in-portal.png" alt-text="Создание ресурса Статические веб-приложения (предварительная версия) на портале":::
 
 1. Для параметра _Подписка_ подтвердите предложенный вариант или выберите другой из раскрывающегося списка.
 

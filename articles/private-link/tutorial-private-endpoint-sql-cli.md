@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 11/03/2020
 ms.author: allensu
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 998b52a23894dcb7fa08b2c0fd42e4ef8e3678ae
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: a5562c5f40a321f5737fea73f6d7964b402953cb
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102554995"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889218"
 ---
 # <a name="tutorial-connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-cli"></a>Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure (Azure CLI)
 
@@ -218,9 +218,9 @@ az network private-endpoint create \
 
 ## <a name="configure-the-private-dns-zone"></a>Настройка частной зоны DNS
 
-Используя сведения из этого раздела, вы создадите и настроите частную зону DNS с помощью [az network private-dns zone create](/cli/azure/ext/privatedns/network/private-dns/zone#ext_privatedns_az_network_private_dns_zone_create).  
+Используя сведения из этого раздела, вы создадите и настроите частную зону DNS с помощью [az network private-dns zone create](/cli/azure/network/private-dns/zone#ext_privatedns_az_network_private_dns_zone_create).  
 
-Воспользуйтесь командой [az network private-dns link vnet create](/cli/azure/ext/privatedns/network/private-dns/link/vnet#ext_privatedns_az_network_private_dns_link_vnet_create), чтобы создать в виртуальной сети ссылку на зону DNS.
+Воспользуйтесь командой [az network private-dns link vnet create](/cli/azure/network/private-dns/link/vnet#ext_privatedns_az_network_private_dns_link_vnet_create), чтобы создать в виртуальной сети ссылку на зону DNS.
 
 Вы создадите группу зоны DNS с помощью команды [az network private-endpoint dns-zone-group create](/cli/azure/network/private-endpoint/dns-zone-group#az_network_private_endpoint_dns_zone_group_create):
 

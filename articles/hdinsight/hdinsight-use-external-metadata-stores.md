@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 08/06/2020
-ms.openlocfilehash: d36c8f1f592bbe714a9e31cad8131523049f29ad
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: a3bfcfbe59ccc15278b30470c6a060a9c1dd609c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98931352"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871750"
 ---
 # <a name="use-external-metadata-stores-in-azure-hdinsight"></a>Использование внешних хранилищ метаданных в Azure HDInsight
 
@@ -18,7 +18,7 @@ HDInsight позволяет управлять данными и метадан
 
 Хранилище метаданных Apache Hive в HDInsight является важной частью архитектуры Apache Hadoop. Хранилище метаданных — это центральное хранилище схем. Хранилище метаданных используется другими инструментами для доступа к данным больших данных, такими как Apache Spark, интерактивный запрос (LLAP), Presto или Apache Pig. HDInsight использует базу данных SQL Azure в качестве хранилища метаданных Hive.
 
-![Архитектура хранилища метаданных Hive HDInsight](./media/hdinsight-use-external-metadata-stores/metadata-store-architecture.png)
+:::image type="content" source="./media/hdinsight-use-external-metadata-stores/metadata-store-architecture.png" alt-text="Архитектура хранилища метаданных Hive HDInsight" border="false":::
 
 Есть два способа настроить хранилище метаданных для кластеров HDInsight:
 
@@ -56,7 +56,7 @@ HDInsight также поддерживает пользовательские �
 
 * Кластер и внешний хранилище метаданных должны размещаться в одном регионе.
 
-![Вариант использования хранилища метаданных Hive HDInsight](./media/hdinsight-use-external-metadata-stores/metadata-store-use-case.png)
+:::image type="content" source="./media/hdinsight-use-external-metadata-stores/metadata-store-use-case.png" alt-text="Вариант использования хранилища метаданных Hive HDInsight" border="false":::
 
 ### <a name="create-and-config-azure-sql-database-for-the-custom-metastore"></a>Создание и Настройка базы данных SQL Azure для настраиваемого хранилище метаданных
 
@@ -66,15 +66,15 @@ HDInsight также поддерживает пользовательские �
 
 Частные конечные точки для хранилищ SQL поддерживаются только в кластерах, созданных с помощью `outbound` ресаурцепровидерконнектион. Дополнительные сведения см. в этой [документации](./hdinsight-private-link.md).
 
-![Кнопка установки брандмауэра сервера](./media/hdinsight-use-external-metadata-stores/configure-azure-sql-database-firewall1.png)
+:::image type="content" source="./media/hdinsight-use-external-metadata-stores/configure-azure-sql-database-firewall1.png" alt-text="Кнопка установки брандмауэра сервера":::
 
-![разрешить доступ к службам Azure](./media/hdinsight-use-external-metadata-stores/configure-azure-sql-database-firewall2.png)
+:::image type="content" source="./media/hdinsight-use-external-metadata-stores/configure-azure-sql-database-firewall2.png" alt-text="разрешить доступ к службам Azure":::
 
 ### <a name="select-a-custom-metastore-during-cluster-creation"></a>Выбор пользовательского хранилища метаданных во время создания кластера
 
 Вы можете указать кластеру ранее созданную базу данных SQL Azure в любое время. Для создания кластера на портале этот параметр указывается в параметрах **Storage > хранилище метаданных**.
 
-![Хранилище метаданных Hive HDInsight на портале Azure](./media/hdinsight-use-external-metadata-stores/azure-portal-cluster-storage-metastore.png)
+:::image type="content" source="./media/hdinsight-use-external-metadata-stores/azure-portal-cluster-storage-metastore.png" alt-text="Хранилище метаданных Hive HDInsight на портале Azure":::
 
 ## <a name="hive-metastore-guidelines"></a>Рекомендации по хранилище метаданных Hive
 
