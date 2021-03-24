@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: troubleshooting
 ms.custom: seoapr2020
 ms.date: 04/21/2020
-ms.openlocfilehash: 7158e9f82ee01b320d448baeab51fcfd122be00d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 73b958964db2d0b308dd6dfc34024d61ce5ad8af
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944678"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871441"
 ---
 # <a name="troubleshoot-script-actions-in-azure-hdinsight"></a>Устранение неполадок в действиях скриптов в Azure HDInsight
 
@@ -26,11 +26,11 @@ ms.locfileid: "98944678"
 
 1. В панели вверху страницы выберите запись **ops**. Появится список текущих и предыдущих операций, выполняемых в кластере с помощью Ambari.
 
-    ![Веб-панель Ambari с выбранной записью ops](./media/troubleshoot-script-action/hdi-apache-ambari-nav.png)
+    :::image type="content" source="./media/troubleshoot-script-action/hdi-apache-ambari-nav.png" alt-text="Веб-панель Ambari с выбранной записью ops" border="true":::
 
 1. Найдите записи, для которых в столбце **Операции** указано **run\_customscriptaction**. Такие записи создаются при выполнении действий сценариев.
 
-    ![Операции с действиями сценария Apache Ambari](./media/troubleshoot-script-action/ambari-script-action.png)
+    :::image type="content" source="./media/troubleshoot-script-action/ambari-script-action.png" alt-text="Операции с действиями сценария Apache Ambari" border="true":::
 
     Для просмотра выходных данных **STDOUT** и **STDERR** выберите запись **run\customscriptaction** и перейдите по ссылкам. Эти выходные данные формируются при запуске сценария и могут содержать полезные сведения.
 
@@ -40,7 +40,7 @@ ms.locfileid: "98944678"
 
 * Журналы хранилища находятся в `\STORAGE_ACCOUNT_NAME\DEFAULT_CONTAINER_NAME\custom-scriptaction-logs\CLUSTER_NAME\DATE`.
 
-    ![Журналы действий скриптов](./media/troubleshoot-script-action/script-action-logs-in-storage.png)
+    :::image type="content" source="./media/troubleshoot-script-action/script-action-logs-in-storage.png" alt-text="Журналы действий скриптов" border="true":::
 
     В этом каталоге журналы упорядочены по **головному узлу**, **рабочему узлу** и **узлу zookeeper**. См. следующие примеры.
 

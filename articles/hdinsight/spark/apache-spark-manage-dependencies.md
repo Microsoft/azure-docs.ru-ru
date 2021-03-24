@@ -7,12 +7,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.openlocfilehash: f0673523c74a0ea298e7d2d520952c3e98877e91
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c950903522d42b3c279cb89f3a6031043fd49bf3
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98930044"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868806"
 ---
 # <a name="manage-spark-application-dependencies"></a>Управление зависимостями приложений Spark
 
@@ -43,7 +43,7 @@ ms.locfileid: "98930044"
 
 После обнаружения пакета из репозитория Maven Соберите значения для **groupId**, **ArtifactId** и **Version**. Объедините три значения, разделив их двоеточием (**:**).
 
-   ![Объединение схемы пакета](./media/apache-spark-manage-dependencies/spark-package-schema.png "Объединение схемы пакета")
+   :::image type="content" source="./media/apache-spark-manage-dependencies/spark-package-schema.png " alt-text="Объединение схемы пакета" border="true":::ЕТА Schema "border =" true ":::
 
 Убедитесь, что собираемые значения соответствуют кластеру. В этом случае мы используем пакет Cosmos DB для соединителя Spark для Scala 2,11 и Spark 2,3 для кластера Spark HDInsight 3,6. Если вы не уверены, запустите `scala.util.Properties.versionString` в ячейке кода в ядре Spark, чтобы получить версию кластера Scala. Выполните команду `sc.version` , чтобы получить версию кластера Spark.
 
@@ -70,7 +70,7 @@ import com.microsoft.azure.cosmosdb.spark._
 ### <a name="use-azure-toolkit-for-intellij"></a>Использование Azure Toolkit for IntelliJ
 [Подключаемый модуль Azure Toolkit for IntelliJ](./apache-spark-intellij-tool-plugin.md) предоставляет возможности пользовательского интерфейса для отправки приложения Spark Scala в кластер HDInsight. Он предоставляет `Referenced Jars` `Referenced Files` Свойства и для настройки путей к библиотекам JAR при отправке приложения Spark. См. Дополнительные сведения об [использовании подключаемого модуля Azure Toolkit for IntelliJ для HDInsight](./apache-spark-intellij-tool-plugin.md#run-a-spark-scala-application-on-an-hdinsight-spark-cluster).
 
-![Диалоговое окно Spark Submission (Отправка в Spark)](./media/apache-spark-intellij-tool-plugin/hdi-submit-spark-app-02.png)
+:::image type="content" source="./media/apache-spark-intellij-tool-plugin/hdi-submit-spark-app-02.png" alt-text="Диалоговое окно Spark Submission (Отправка в Spark)" border="true":::
 
 ## <a name="jar-libs-for-cluster"></a>Библиотеки JAR для кластера
 В некоторых случаях может потребоваться настроить зависимости JAR на уровне кластера, чтобы каждое приложение могло быть настроено с одинаковыми зависимостями по умолчанию. Подход заключается в добавлении путей JAR в путь к классу для драйвера и исполнителя Spark.
@@ -89,11 +89,11 @@ import com.microsoft.azure.cosmosdb.spark._
     spark.executor.extraClassPath=/usr/libs/sparklibs/*
     ```
 
-   ![Изменение конфигурации Spark по умолчанию](./media/apache-spark-manage-dependencies/change-spark-default-config.png "Изменение конфигурации Spark по умолчанию")
+   :::image type="content" source="./media/apache-spark-manage-dependencies/change-spark-default-config.png " alt-text="Изменение конфигурации Spark по умолчанию" border="true":::метры config "border =" true ":::
 
 3. Сохраните измененные конфигурации и перезапустите затронутые службы.
 
-   ![Перезапуск затронутых служб](./media/apache-spark-manage-dependencies/restart-impacted-services.png "Перезапуск затронутых служб")
+   :::image type="content" source="./media/apache-spark-manage-dependencies/restart-impacted-services.png " alt-text="Перезапускать затронутые службы" border="true":::\ "border =" true ":::
 
 Вы можете автоматизировать шаги с помощью [действий сценария](../hdinsight-hadoop-customize-cluster-linux.md). Действие сценария для [добавления пользовательских библиотек Hive](https://hdiconfigactions.blob.core.windows.net/linuxsetupcustomhivelibsv01/setup-customhivelibs-v01.sh) является хорошим справочником. При изменении настроек службы Spark убедитесь, что вы используете API Ambari, а не изменяете файлы конфигурации напрямую. 
 

@@ -2,29 +2,27 @@
 title: Масштабирование зарезервированных единиц мультимедиа (Мрус) CLI
 description: В этом разделе показано, как использовать CLI для масштабирования обработки мультимедиа с использованием служб мультимедиа Azure.
 services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
 manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 03/22/2021
 ms.author: inhenkel
-ms.openlocfilehash: a07c4a20b854e09daf3b320b8c99757ca99b2578
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 06c0c6333b84697415ef598d4c5e853d5c006f08
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102213816"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870166"
 ---
 # <a name="how-to-scale-media-reserved-units"></a>Как масштабировать зарезервированные единицы мультимедиа
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 В этой статье показано, как масштабировать зарезервированные единицы мультимедиа (Мрсс) для ускорения кодирования.
+
+> [!WARNING]
+> Эта команда больше не будет работать для учетных записей служб мультимедиа, созданных с помощью версии API 2020-05-01 или более поздней. Для этих учетных записей зарезервированные единицы мультимедиа больше не нужны, так как система будет автоматически масштабироваться в соответствии с нагрузкой. Если вы не видите параметр для управления Мрус в портал Azure, вы используете учетную запись, созданную с помощью API 2020-05-01 или более поздней версии.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

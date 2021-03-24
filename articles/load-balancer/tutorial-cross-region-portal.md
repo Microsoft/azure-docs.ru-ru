@@ -7,12 +7,12 @@ ms.author: allensu
 ms.service: load-balancer
 ms.topic: tutorial
 ms.date: 02/24/2021
-ms.openlocfilehash: 7fc964abf7e6832341ad8b1ad55711b3a9993506
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c16123fae63b89eff57b5c91864d9a947e01b386
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101712521"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104576923"
 ---
 # <a name="tutorial-create-a-cross-region-azure-load-balancer-using-the-azure-portal"></a>Руководство. Создание Azure Load Balancer в нескольких регионах с помощью портала Azure
 
@@ -41,7 +41,7 @@ ms.locfileid: "101712521"
 
 ## <a name="sign-in-to-azure-portal"></a>Вход на портал Azure
 
-[Войдите](https://preview.portal.azure.com) на портал предварительной версии Azure.
+[Войдите](https://portal.azure.com) на портал Azure.
 
 ## <a name="create-cross-region-load-balancer"></a>Создание подсистемы балансировки нагрузки в нескольких регионах
 
@@ -200,9 +200,6 @@ ms.locfileid: "101712521"
 * создали правило балансировки нагрузки;
 * тестировать подсистему балансировки нагрузки.
 
-Дополнительные сведения о подсистеме балансировки нагрузки в нескольких регионах см. в [этой статье](cross-region-overview.md).
-
-
-Следующая статья:
+Дополнительные сведения см. в следующей статье:
 > [!div class="nextstepaction"]
-> [Распределение нагрузки виртуальных машин в пределах зон доступности](tutorial-load-balancer-standard-public-zone-redundant-portal.md)
+> [Подсистема балансировки нагрузки между регионами (предварительная версия)](cross-region-overview.md)

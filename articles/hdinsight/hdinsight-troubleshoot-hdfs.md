@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: troubleshooting
 ms.date: 04/27/2020
 ms.custom: seodec18
-ms.openlocfilehash: 0be7805493e5acc41254c57ca912b5a2ecf02dae
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c725e7b4e7af33181cb616d2bce2ae19521a5e7d
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98931464"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871883"
 ---
 # <a name="troubleshoot-apache-hadoop-hdfs-by-using-azure-hdinsight"></a>Устранение неполадок рабочих нагрузок Apache Hadoop HDFS с помощью Azure HDInsight
 
@@ -116,7 +116,7 @@ hadoop -fs -D fs.azure.write.request.size=4194304 -copyFromLocal test_large_file
 3. В поле **фильтр...** введите `fs.azure.write.request.size` .
 4. Измените значение с 262 144 (256 КБ) на новое. Например, 4 194 304 (4 MB).
 
-    ![Изображение смены значения через веб-интерфейс Ambari](./media/hdinsight-troubleshoot-hdfs/hbase-change-block-write-size.png)
+    :::image type="content" source="./media/hdinsight-troubleshoot-hdfs/hbase-change-block-write-size.png" alt-text="Изображение смены значения через веб-интерфейс Ambari" border="false":::
 
 Подробные сведения об использовании Ambari см. в статье [Управление кластерами HDInsight с помощью веб-интерфейса Ambari](hdinsight-hadoop-manage-ambari.md).
 

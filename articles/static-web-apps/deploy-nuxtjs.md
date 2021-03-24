@@ -9,10 +9,10 @@ ms.date: 05/08/2020
 ms.author: chnwamba
 ms.custom: devx-track-js
 ms.openlocfilehash: 8f21f5fa8ee9035fe594cecff37a63b1ef2115cc
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97563472"
 ---
 # <a name="deploy-server-rendered-nuxtjs-websites-on-azure-static-web-apps-preview"></a>Развертывание веб-сайтов Nuxt.js с рендерингом на стороне сервера в Статических веб-приложениях Azure (предварительная версия)
@@ -120,7 +120,7 @@ ms.locfileid: "97563472"
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
 1. Щелкните **Создать ресурс**.
-1. Выполните поиск по запросу **Статические веб-приложения**.
+1. Найдите **Статические веб-приложения**.
 1. Выберите **Статические веб-приложения (предварительная версия)** .
 1. Нажмите кнопку **Создать**.
 

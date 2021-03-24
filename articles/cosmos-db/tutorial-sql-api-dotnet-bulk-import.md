@@ -6,15 +6,15 @@ ms.author: maquaran
 ms.service: cosmos-db
 ms.subservice: cosmosdb-sql
 ms.topic: tutorial
-ms.date: 09/21/2020
+ms.date: 03/15/2021
 ms.reviewer: sngun
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 6cf0e77657175449b126eeca02a12c164478e568
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.openlocfilehash: 1c178f57a31e02b3dac712a5425db226720200c5
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96548075"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563629"
 ---
 # <a name="bulk-import-data-to-azure-cosmos-db-sql-api-account-by-using-the-net-sdk"></a>Массовый импорт данных в учетную запись API SQL Azure Cosmos DB с помощью пакета SDK для .NET
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "96548075"
 
 [Создайте учетную запись API SQL Azure Cosmos DB](create-cosmosdb-resources-portal.md) на портале Azure или с помощью [эмулятора Azure Cosmos DB](local-emulator.md).
 
-## <a name="step-2-set-up-your-net-project"></a>Шаг 2. Настройка проекта .NET
+## <a name="step-2-set-up-your-net-project"></a>Шаг 2. Настройка проекта .NET
 
 Откройте командную строку Windows или окно терминала с локального компьютера. Все команды в следующих разделах вы будете запускать из командной строки или терминала. Выполните следующую команду dotnet new, чтобы создать приложение с именем *bulk-import-demo*. Параметр `--langVersion` задает свойство *LangVersion* в созданном файле проекта.
 
@@ -72,7 +72,7 @@ ms.locfileid: "96548075"
    Time Elapsed 00:00:34.17
    ```
 
-## <a name="step-3-add-the-azure-cosmos-db-package"></a>Шаг 3. Добавление пакета Azure Cosmos DB
+## <a name="step-3-add-the-azure-cosmos-db-package"></a>Шаг 3. Добавление пакета Azure Cosmos DB
 
 Оставаясь в каталоге приложения, установите клиентскую библиотеку Azure Cosmos DB для .NET Core с помощью команды.
 
@@ -80,7 +80,7 @@ ms.locfileid: "96548075"
    dotnet add package Microsoft.Azure.Cosmos
    ```
 
-## <a name="step-4-get-your-azure-cosmos-account-credentials"></a>Шаг 4. Получение данных учетной записи Azure Cosmos
+## <a name="step-4-get-your-azure-cosmos-account-credentials"></a>Шаг 4. Получение данных учетной записи Azure Cosmos
 
 Чтобы использовать пример приложения, нужно выполнить проверку подлинности доступа к вашей учетной записи хранения Azure Cosmos. Для проверки подлинности необходимо передать учетную запись Azure Cosmos в приложение. Чтобы просмотреть учетные данные учетной записи Azure Cosmos, сделайте следующее:
 
@@ -90,7 +90,7 @@ ms.locfileid: "96548075"
 
 Если вы используете эмулятор Azure Cosmos DB, получите [учетные данные эмулятора из этой статьи](local-emulator.md#authenticate-requests).
 
-## <a name="step-5-initialize-the-cosmosclient-object-with-bulk-execution-support"></a>Шаг 5. Инициализация объекта CosmosClient с поддержкой массового выполнения
+## <a name="step-5-initialize-the-cosmosclient-object-with-bulk-execution-support"></a>Шаг 5. Инициализация объекта CosmosClient с поддержкой массового выполнения
 
 Откройте созданный файл `Program.cs` в редакторе кода. Вы создадите новый экземпляр CosmosClient с включенным массовым выполнением и используете его для выполнения операций с Azure Cosmos DB. 
 
@@ -112,7 +112,7 @@ ms.locfileid: "96548075"
         private const string AuthorizationKey = "<your-account-key>";
         private const string DatabaseName = "bulk-tutorial";
         private const string ContainerName = "items";
-        private const int ItemsToInsert = 300000;
+        private const int AmountToInsert = 300000;
 
         static async Task Main(string[] args)
         {
@@ -150,20 +150,17 @@ ms.locfileid: "96548075"
 
 [!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=Bogus)]
 
-Считайте элементы и выполните их сериализацию в экземпляры потока с помощью класса `System.Text.Json`. Ввиду характера автоматически созданных данных они сериализуются в потоки. Кроме того, обращаясь к экземплярам элементов напрямую, но преобразовывая их в потоки, можно воспользоваться производительностью потоковых интерфейсов API в CosmosClient. Обычно к данным можно обращаться напрямую, если известен ключ секции. 
-
-
-Чтобы преобразовать данные в экземпляры потока, в метод `Main` добавьте следующий код сразу после создания контейнера.
+Используйте вспомогательную функцию для инициализации списка документов для работы:
 
 [!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=Operations)]
 
-Далее используйте потоки данных для создания параллельных задач и заполните список задач для добавления элементов в контейнер. Чтобы выполнить эту операцию, добавьте следующий код в класс `Program`.
+Далее используйте список документов для создания параллельных задач и заполните список задач для добавления элементов в контейнер. Чтобы выполнить эту операцию, добавьте следующий код в класс `Program`.
 
 [!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=ConcurrentTasks)]
 
 Все эти параллельные операции с точками будут выполняться одновременно (то есть массово), как описано во вводном разделе.
 
-## <a name="step-7-run-the-sample"></a>Шаг 7. Запуск примера
+## <a name="step-7-run-the-sample"></a>Шаг 7. Выполнение примера
 
 Чтобы запустить пример, можно просто выполнить команду `dotnet`.
 

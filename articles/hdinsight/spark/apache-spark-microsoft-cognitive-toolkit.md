@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 01/14/2020
-ms.openlocfilehash: cddbc4b6a5c7a2c787c8305fdf703e34543746f8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6be70f448cec7cf6db2b8152565ad8102d3a3294
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929965"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868755"
 ---
 # <a name="use-microsoft-cognitive-toolkit-deep-learning-model-with-azure-hdinsight-spark-cluster"></a>Использование модели глубокого обучения Microsoft Cognitive Toolkit в кластере Azure HDInsight Spark
 
@@ -55,7 +55,7 @@ Microsoft Cognitive Toolkit в кластере Spark можно установ�
 
 Инструкции по использованию портал Azure для выполнения действия сценария см. в разделе [Настройка кластеров HDInsight с помощью действия сценария](../hdinsight-hadoop-customize-cluster-linux.md#script-action-during-cluster-creation). Обязательно укажите приведенные ниже данные для установки Microsoft Cognitive Toolkit. Используйте следующие значения для действия скрипта:
 
-|Свойство. |Значение |
+|Свойство |Значение |
 |---|---|
 |Тип скрипта|- Custom|
 |Имя| Установка MCT|
@@ -73,7 +73,7 @@ Microsoft Cognitive Toolkit в кластере Spark можно установ�
 
 1. В Jupyter Notebook выберите **Отправить** в правом верхнем углу, а затем перейдите к файлу Download (скачать) и выберите File (файл) `CNTK_model_scoring_on_Spark_walkthrough.ipynb` .
 
-    ![Отправка Jupyter Notebook в кластер Azure HDInsight Spark](./media/apache-spark-microsoft-cognitive-toolkit/hdinsight-microsoft-cognitive-toolkit-load-jupyter-notebook.png "Отправка Jupyter Notebook в кластер Azure HDInsight Spark")
+    :::image type="content" source="./media/apache-spark-microsoft-cognitive-toolkit/hdinsight-microsoft-cognitive-toolkit-load-jupyter-notebook.png " alt-text="Отправка Jupyter Notebook в кластер Azure HDInsight Spark" border="true":::
 
 1. Выберите **Отправить** еще раз.
 

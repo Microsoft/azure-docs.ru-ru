@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/07/2019
 ms.author: jeedes
 ms.openlocfilehash: 469cfcd39ff606c6ed828d490f26e6e3e027993e
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95993191"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-sciforma"></a>Руководство. Интеграция Azure Active Directory с Sciforma
@@ -30,11 +30,11 @@ ms.locfileid: "95993191"
 Дополнительные сведения об интеграции приложений SaaS с Azure AD см. в статье [Единый вход в приложениях в Azure Active Directory](../manage-apps/what-is-single-sign-on.md).
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы настроить интеграцию Azure AD с Sciforma, вам потребуется:
 
-* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
+* Подписка Azure AD. (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
 * подписка Sciforma с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -48,7 +48,7 @@ ms.locfileid: "95993191"
 
 Чтобы настроить интеграцию HPE Sciforma с Azure AD, необходимо добавить Sciforma из коллекции в список управляемых приложений SaaS.
 
-**Чтобы добавить Sciforma из коллекции, выполните следующие действия.**
+**Чтобы добавить Sciforma из коллекции, сделайте следующее:**
 
 1. На **[портале Azure](https://portal.azure.com)** в области навигации слева щелкните значок **Azure Active Directory**.
 
@@ -96,7 +96,7 @@ ms.locfileid: "95993191"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. В разделе **Базовая конфигурация SAML** выполните приведенные ниже действия.
 

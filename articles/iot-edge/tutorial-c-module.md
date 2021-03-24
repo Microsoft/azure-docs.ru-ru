@@ -9,16 +9,18 @@ ms.date: 07/30/2020
 ms.topic: tutorial
 ms.service: iot-edge
 ms.custom: mvc
-ms.openlocfilehash: 470f82026cc27431555336570ef6f41063442c1e
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: acedf0c5437ce0b4f1106cac4d1878c7a49e8a36
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94964547"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463329"
 ---
-# <a name="tutorial-develop-a-c-iot-edge-module-for-linux-devices"></a>Руководство по Разработка модулей IoT Edge на C для устройств Linux
+# <a name="tutorial-develop-a-c-iot-edge-module-using-linux-containers"></a>Руководство. Разработка модуля IoT Edge на C с использованием контейнеров Linux
 
-использованию Visual Studio Code для разработки и развертывания кода C на устройствах Linux с Azure IoT Edge.
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
+
+Разработайте и разверните код C на устройствах с Azure IoT Edge с помощью Visual Studio Code.
 
 Вы можете использовать модули IoT Edge для развертывания кода, который реализует вашу бизнес-логику непосредственно на устройствах IoT Edge. В этом руководстве рассматриваются создание и развертывание модуля IoT Edge, который фильтрует данные датчика. В этом руководстве описано следующее:
 
@@ -35,19 +37,19 @@ ms.locfileid: "94964547"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-В этом руководстве описана разработка модуля на **C** с помощью **Visual Studio Code** и его развертывание на **устройстве Linux**. Если вы разрабатываете модули IoT Edge на C для устройств Windows, перейдите к [этому руководству](tutorial-c-module-windows.md).
+В этом руководстве показано, как разработать модуль на **C** с помощью **Visual Studio Code** и развернуть его на устройстве IoT Edge. Если вы разрабатываете модули с использованием контейнеров Windows, см. статью [Разработка модулей IoT Edge на C с использованием контейнеров Windows](tutorial-c-module-windows.md).
 
-В приведенной ниже таблице перечислены возможные варианты для разработки и развертывания модулей C для Linux.
+В приведенной ниже таблице приведены возможные варианты для разработки и развертывания модулей C с использованием контейнеров Linux:
 
 | C | Visual Studio Code | Visual Studio |
 | - | ------------------ | ------------- |
 | **Linux AMD64** | ![Использование VS Code для модулей C в Linux AMD64](./media/tutorial-c-module/green-check.png) | ![Использование VS для модулей C в Linux AMD64](./media/tutorial-c-module/green-check.png) |
 | **Linux ARM32** | ![Использование VS Code для модулей C в Linux ARM32](./media/tutorial-c-module/green-check.png) | ![Использование VS для модулей C в Linux ARM32](./media/tutorial-c-module/green-check.png) |
 
-Предполагается, что перед началом работы с этим руководством вы прошли предыдущее, в рамках которого настроили окружение для разработки контейнеров Linux: [Tutorial: Develop IoT Edge modules for Linux devices](tutorial-develop-for-linux.md) (Руководство. Разработка модулей IoT Edge для устройств с Linux). После работы с ним у вас должны быть готовы все необходимые компоненты:
+Прежде, чем начинать работу с этим руководством, вам нужно пройти предыдущее руководство, где описано, как настроить среду для разработки контейнеров Linux: [Краткое руководство. Разработка модулей IoT Edge с использованием контейнеров Linux](tutorial-develop-for-linux.md). После работы с ним у вас должны быть готовы все необходимые компоненты:
 
 * [Центр Интернета вещей](../iot-hub/iot-hub-create-through-portal.md) ценовой категории "Бесплатный" или "Стандартный" в Azure.
-* [устройство Linux, на котором выполняется Azure IoT Edge](quickstart-linux.md);
+* Устройство с Azure IoT Edge. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
 * реестр контейнеров, например [Реестр контейнеров Azure](../container-registry/index.yml);
 * средство [Visual Studio Code](https://code.visualstudio.com/), настроенное с помощью [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools);
 * выпуск [Docker CE](https://docs.docker.com/install/), настроенный для выполнения контейнеров Linux.

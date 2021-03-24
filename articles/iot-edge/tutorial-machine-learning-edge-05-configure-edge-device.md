@@ -9,16 +9,21 @@ ms.topic: tutorial
 ms.service: iot-edge
 services: iot-edge
 ms.custom: amqp, devx-track-azurecli
-ms.openlocfilehash: 0ed085a161ced22efb1e5022e34b6f9b0344f942
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b59f8343c9dff07a32accd471f70ddf9f5309b8d
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101721435"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463091"
 ---
 # <a name="tutorial-configure-an-azure-iot-edge-device"></a>Руководство по настройке устройства Azure IoT Edge
 
+[!INCLUDE [iot-edge-version-201806](../../includes/iot-edge-version-201806.md)]
+
 В этой статье описано, как настроить виртуальную машину Azure под управлением Linux как устройство Azure IoT Edge, которое выполняет функцию прозрачного шлюза. Так устройства смогут подключаться к Центру Интернета вещей через прозрачный шлюз, ничего не зная о нем. Точно так же и пользователь, взаимодействующий с устройствами в Центре Интернета вещей, не будет знать о промежуточном устройстве шлюза. В итоге мы добавим в систему компонент для передачи аналитических сведений о пограничных устройствах, добавив к прозрачному шлюзу модули IoT Edge.
+
+>[!NOTE]
+>Понятия, описанные в этом учебнике, применяются ко всем версиям IoT Edge, но на примере устройства, созданного для пробного использования сценария, выполняется IoT Edge версии 1.1.
 
 Описанные в этой статье действия обычно выполняются разработчиком облачной системы.
 

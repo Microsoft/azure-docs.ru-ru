@@ -12,12 +12,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 07/27/2020
-ms.openlocfilehash: 7f267b4909817e89444883403bef6662771332ad
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.openlocfilehash: ea097119111d5dbd5eba3c11aba549d201186e3f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99550884"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592189"
 ---
 # <a name="what-is-azure-sql"></a>Что такое SQL Azure? 
 [!INCLUDE[appliesto-asf](includes/appliesto-asf.md)]
@@ -32,11 +32,11 @@ SQL Azure — это семейство управляемых, безопас�
 
 Узнайте, как все эти продукты соотносятся с платформой данных SQL Azure, чтобы выбрать оптимальный вариант для удовлетворения ваших бизнес-требований. Независимо от того, хотите ли вы сократить расходы или упростить администрирование, эта статья поможет выбрать оптимальный подход в соответствии с важнейшими требованиям вашей компании.
 
-
 Если вы еще не работали с Azure SQL, ознакомьтесь с *видеообзором SQL Azure* в [серии видео, посвященных SQL Azure](https://channel9.msdn.com/Series/Azure-SQL-for-Beginners?WT.mc_id=azuresql4beg_azuresql-ch9-niner):
 > [!VIDEO https://channel9.msdn.com/Series/Azure-SQL-for-Beginners/What-is-Azure-SQL-3-of-61/player]
 
-
+> [!TIP]
+> Помогите нам улучшить Azure SQL. [Примите участие в опросе.](https://microsoft.qualtrics.com/jfe/form/SV_ePOznHhP4gDKfGu?channel=456)
 
 ## <a name="overview"></a>Обзор
 

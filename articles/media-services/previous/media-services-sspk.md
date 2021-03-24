@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: article
 ms.date: 3/10/2021
 ms.author: xpouyat
-ms.openlocfilehash: 36e5b020241f7be33aa4cfa473222ad301d18fbe
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: f2c66b08d399ddf53686074079665e36be9aace7
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104581105"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870476"
 ---
 # <a name="licensing-microsoftreg-smooth-streaming-client-porting-kit"></a>Лицензирование &reg; пакета Microsoft Smooth Streaming Client Licensing Kit
 
@@ -135,7 +135,6 @@ ms.locfileid: "104581105"
 * Мегасимволов славы электроника
 * Ограниченная электроника МИРК
 * МОКА, ОГРАНИЧЕННЫЙ МЕЖДУНАРОДНЫЙ
-* Nintendo Co., Ltd.
 * ОНЕПЛУС ЭЛЕКТРОНИКА (ШЕНЗЕН) CO., LTD.
 * Корпорация Майкрософт, Panasonic
 * Кингдао Хаиер Оптроникс Co., Ltd.

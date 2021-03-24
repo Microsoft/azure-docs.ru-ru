@@ -7,10 +7,10 @@ ms.date: 10/25/2017
 ms.author: tomfitz
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: e4145484029539b3f800b2f431edefe56b908bca
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87498639"
 ---
 # <a name="azure-cli-samples-for-azure-managed-applications"></a>Примеры Azure CLI для службы "Управляемые приложения Azure"

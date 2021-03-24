@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/20/2021
 ms.author: jeedes
 ms.openlocfilehash: 4955062e6f0d0c231d09964c985df12284e3733c
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101653343"
 ---
 # <a name="tutorial-integrate-airwatch-with-azure-active-directory"></a>Руководство по Интеграция AirWatch с Azure Active Directory

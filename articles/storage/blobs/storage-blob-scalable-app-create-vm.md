@@ -9,10 +9,10 @@ ms.author: rogarana
 ms.subservice: blobs
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 4b8c52b03cb6dec6096565e9eac26b7b2c4a30e4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89073273"
 ---
 # <a name="create-a-virtual-machine-and-storage-account-for-a-scalable-application"></a>Создание виртуальной машины и учетной записи хранения для масштабируемого приложения
@@ -26,7 +26,7 @@ ms.locfileid: "89073273"
 > * Создание виртуальной машины
 > * Настройка расширения пользовательских скриптов
 
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
+Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 
