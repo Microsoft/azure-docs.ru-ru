@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 02/17/2021
 ms.author: jeedes
-ms.openlocfilehash: ddfffb77ca889aea9ff32c7be1ce2e4cb7fc04a7
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: d9db86e400d862dd67582ede0bf44b9e9fd1c893
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102037613"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954808"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-launchdarkly"></a>Руководство. Интеграция Azure Active Directory с LaunchDarkly
 
@@ -159,8 +159,8 @@ ms.locfileid: "102037613"
 
 * На портале Azure выберите "Тестировать приложение", после чего вы автоматически войдете в приложение LaunchDarkly, для которого настроен единый вход.
 
-* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку LaunchDarkly в окне "Мои приложения" доступа, вы автоматически войдете в приложение LaunchDarkly, для которого настроили единый вход. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
+* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку LaunchDarkly в окне "Мои приложения" доступа, вы автоматически войдете в приложение LaunchDarkly, для которого настроили единый вход. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки LaunchDarkly вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
+После настройки LaunchDarkly вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

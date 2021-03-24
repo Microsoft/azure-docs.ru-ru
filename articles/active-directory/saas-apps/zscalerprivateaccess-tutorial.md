@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 03/03/2021
 ms.author: jeedes
-ms.openlocfilehash: 347fc931dcc7f794fe7376daaac21ce7ed9198df
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 58e2a19f2d57eafc7d2967141d584dc7a22fe76c
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102184749"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104955675"
 ---
 # <a name="tutorial-integrate-zscaler-private-access-zpa-with-azure-active-directory"></a>Руководство по Интеграция Zscaler Private Access (ZPA) с Azure Active Directory
 
@@ -163,8 +163,8 @@ ms.locfileid: "102184749"
 
 * Перейдите по URL-адресу для входа в Zscaler Private Access (ZPA) и инициируйте поток входа.
 
-* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Zscaler Private Access (ZPA) на портале "Мои приложения", вы перейдете по URL-адресу для входа в Zscaler Private Access (ZPA). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
+* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Zscaler Private Access (ZPA) на портале "Мои приложения", вы перейдете по URL-адресу для входа в Zscaler Private Access (ZPA). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Zscaler Private Access (ZPA) вы можете применить функцию управления сеансом, чтобы в реальном времени защищать конфиденциальные данные своей организации от кражи и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
+После настройки Zscaler Private Access (ZPA) вы можете применить функцию управления сеансом, чтобы в реальном времени защищать конфиденциальные данные своей организации от кражи и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

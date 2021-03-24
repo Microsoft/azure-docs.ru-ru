@@ -16,17 +16,17 @@ ms.date: 01/14/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: de1cc69b3cfdac307edf6dfe999a5d538c2cb811
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89263184"
 ---
 # <a name="tutorial-use-a-windows-vm-system-assigned-managed-identity-to-access-azure-storage"></a>Руководство. Использование управляемого удостоверения, назначаемого системой, на виртуальной машине Windows для доступа к службе хранилища Azure
 
 [!INCLUDE [preview-notice](../../../includes/active-directory-msi-preview-notice.md)]
 
-В этом руководстве описывается, как получить доступ к службе хранилища Azure, используя управляемое удостоверение, назначаемое системой, на виртуальной машине Windows. Вы узнаете, как выполнять следующие задачи:
+В этом руководстве описывается, как получить доступ к службе хранилища Azure, используя управляемое удостоверение, назначаемое системой, на виртуальной машине Windows. Вы научитесь:
 
 > [!div class="checklist"]
 > * создать контейнер больших двоичных объектов в учетной записи хранения;
@@ -36,7 +36,7 @@ ms.locfileid: "89263184"
 > [!NOTE]
 > Аутентификация Azure Active Directory для службы хранилища Azure находится на этапе общедоступной предварительной версии.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [msi-tut-prereqs](../../../includes/active-directory-msi-tut-prereqs.md)]
 
@@ -94,7 +94,7 @@ ms.locfileid: "89263184"
 
     ![Назначение разрешений](./media/tutorial-linux-vm-access-storage/access-storage-perms.png)
 
-## <a name="access-data"></a>Доступ к данным 
+## <a name="access-data"></a>Доступ к данным 
 
 В службе хранилища Azure изначально реализована поддержка аутентификации Azure AD, поэтому она может напрямую принимать маркеры доступа, полученные с помощью управляемого удостоверения. Эта реализация является частью интеграции службы хранилища Azure с Azure AD и отличается от указания учетных данных в строке подключения.
 

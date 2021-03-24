@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 01/31/2019
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 999682c9bf4a4d70d886f0e85cede99f215aa046
-ms.sourcegitcommit: b6267bc931ef1a4bd33d67ba76895e14b9d0c661
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97694724"
 ---
 # <a name="restore-a-vm-with-azure-cli"></a>Восстановление виртуальной машины с помощью Azure CLI
@@ -72,7 +72,7 @@ az backup recoverypoint list \
         --sku Standard_LRS
     ```
 
-2. Восстановите диск из точки восстановления с помощью команды [az backup restore restore-disks](/cli/azure/backup/restore#az-backup-restore-restore-disks). Замените *mystorageaccount* именем учетной записи хранения, созданной с помощью предыдущей команды. Замените *myRecoveryPointName* именем точки восстановления, полученной в выходных данных предыдущей команды [az backup recoverypoint list](/cli/azure/backup/recoverypoint#az-backup-recoverypoint-list). ***Также предоставьте целевую группу ресурсов, в которую будут восстановлены управляемые диски** _.
+2. Восстановите диск из точки восстановления с помощью команды [az backup restore restore-disks](/cli/azure/backup/restore#az-backup-restore-restore-disks). Замените *mystorageaccount* именем учетной записи хранения, созданной с помощью предыдущей команды. Замените *myRecoveryPointName* именем точки восстановления, полученной в выходных данных предыдущей команды [az backup recoverypoint list](/cli/azure/backup/recoverypoint#az-backup-recoverypoint-list). ***Также предоставьте целевую группу ресурсов, в которую будут восстановлены управляемые диски***.
 
     ```azurecli-interactive
     az backup restore restore-disks \
@@ -86,7 +86,7 @@ az backup recoverypoint list \
     ```
 
     > [!WARNING]
-    > Если параметр _ *target-resource-group** не указан, управляемые диски будут восстановлены в предоставленную учетную запись в виде неуправляемых дисков. Это существенно повлияет на время восстановления, поскольку время на восстановление дисков полностью зависит от используемой учетной записи хранения. Вы можете использовать мгновенное восстановление, только если указан параметр target-resource-group. Если вы хотите восстановить управляемые диски как неуправляемые, не указывайте параметр **target-resource-group**. Вместо этого укажите параметр **restore-as-unmanaged-disk**, как показано ниже. Этот параметр доступен, начиная с версии 3.4.0 az.
+    > Если параметр **target-resource-group** не указан, управляемые диски будут восстановлены в предоставленную учетную запись в виде неуправляемых дисков. Это существенно повлияет на время восстановления, поскольку время на восстановление дисков полностью зависит от используемой учетной записи хранения. Вы можете использовать мгновенное восстановление, только если указан параметр target-resource-group. Если вы хотите восстановить управляемые диски как неуправляемые, не указывайте параметр **target-resource-group**. Вместо этого укажите параметр **restore-as-unmanaged-disk**, как показано ниже. Этот параметр доступен, начиная с версии 3.4.0 az.
 
     ```azurecli-interactive
     az backup restore restore-disks \

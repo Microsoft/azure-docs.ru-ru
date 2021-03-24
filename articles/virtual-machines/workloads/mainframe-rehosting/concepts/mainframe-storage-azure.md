@@ -5,13 +5,14 @@ author: njray
 ms.author: larryme
 ms.date: 04/02/2019
 ms.topic: article
-ms.service: storage
-ms.openlocfilehash: 8f57210ff6b65ee3a893fb344a48629466e90004
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.service: virtual-machines
+ms.subservice: mainframe-rehosting
+ms.openlocfilehash: 27f625e7fced5ff710a6fa0e8b2045a8c5434258
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97095361"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954366"
 ---
 # <a name="move-mainframe-storage-to-azure"></a>Перемещение хранилища мэйнфреймов в Azure
 
@@ -51,7 +52,7 @@ Azure предоставляет функции и емкость хранили
 
 <table>
 <thead>
-    <tr><th>Type</th><th>Описание</th><th>Используйте, если хотите:</th></tr>
+    <tr><th>Тип</th><th>Описание</th><th>Используйте, если хотите:</th></tr>
 </thead>
 <tbody>
 <tr><td>Файлы Azure

@@ -14,12 +14,12 @@ ms.date: 02/05/2021
 ms.author: kenwith
 ms.reviewer: baselden
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 629f71c429d6af8583cb15b9ebc96efe6867f78b
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: 1e05a7af3f0b95470432b4fb9602e1b41da9f72f
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104888895"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952972"
 ---
 # <a name="migrate-application-authentication-to-azure-active-directory"></a>Перенос проверки подлинности приложения в Azure Active Directory
 
@@ -573,7 +573,7 @@ Azure AD может предоставить преимущества этим �
 
 Пользователи могут загрузить **браузер, управляемый Intune**:
 
-- **Для устройств Android** из [магазина Google Play](/azure/active-directory/authentication/howto-mfa-userstates)
+- **Для устройств Android** из [магазина Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune)
 
 - **Для устройств Apple** из [Apple App Store](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) можно скачать [мобильное приложение "Мои приложения" для iOS](https://apps.apple.com/us/app/my-apps-azure-active-directory/id824048653) .
 

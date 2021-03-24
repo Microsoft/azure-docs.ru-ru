@@ -7,10 +7,10 @@ ms.topic: tutorial
 ms.author: jgao
 ms.custom: ''
 ms.openlocfilehash: 46ed1fc55a108bf80089d249abc58bc5d1a6479a
-ms.sourcegitcommit: 6172a6ae13d7062a0a5e00ff411fd363b5c38597
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97106960"
 ---
 # <a name="tutorial-add-variables-to-your-arm-template"></a>Руководство по добавлению переменных в шаблон ARM

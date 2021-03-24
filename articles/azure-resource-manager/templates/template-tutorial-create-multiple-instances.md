@@ -7,10 +7,10 @@ ms.topic: tutorial
 ms.author: jgao
 ms.custom: ''
 ms.openlocfilehash: e669e27547633639a88674ffee499fb1d84facdf
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97673959"
 ---
 # <a name="tutorial-create-multiple-resource-instances-with-arm-templates"></a>Руководство по Создание нескольких экземпляров ресурса с помощью шаблонов ARM
@@ -122,7 +122,7 @@ ms.locfileid: "97673959"
 
     ![Файл отправки Cloud Shell на портале Azure](./media/template-tutorial-use-template-reference/azure-portal-cloud-shell-upload-file.png)
 
-1. Выберите **Отправка и скачивание файлов**, а затем **Отправить**. См. предыдущий снимок экрана. Выберите файл, сохраненный ранее. После отправки файла вы можете использовать команды `ls` и `cat`, чтобы проверить, успешно ли отправлен файл.
+1. Выберите **Отправка и скачивание файлов**, а затем **Отправить**. См. предыдущий снимок экрана. Выберите файл, сохраненный ранее. После отправки вы можете использовать команды `ls` и `cat`, чтобы проверить отправку файла.
 
 1. Выполните следующие команды в Cloud Shell. Выберите вкладку, чтобы отобразить код PowerShell или код CLI.
 

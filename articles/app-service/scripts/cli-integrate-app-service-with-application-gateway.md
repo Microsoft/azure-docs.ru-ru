@@ -17,10 +17,10 @@ ms.date: 12/09/2019
 ms.author: madsd
 ms.custom: seodec18, devx-track-azurecli
 ms.openlocfilehash: 3820e7bf00f99a846dd2be0edeaf4248e0dfd8ad
-ms.sourcegitcommit: 273c04022b0145aeab68eb6695b99944ac923465
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97006093"
 ---
 # <a name="integrate-app-service-with-application-gateway-using-cli"></a>Интеграция Службы приложений со Шлюзом приложений с использованием CLI

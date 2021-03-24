@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 02/23/2021
 ms.author: jeedes
-ms.openlocfilehash: 450db7c01de4ea7db0133ceca962941ae1a927e5
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 827a05a8dfbf05b0dacb0bd812fb964567f39b3f
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173274"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954213"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-saml-sso-for-jira-by-resolution-gmbh"></a>Руководство по интеграции Azure Active Directory с SAML SSO for Jira от resolution GmbH
 
@@ -243,7 +243,7 @@ ms.locfileid: "102173274"
 
 * На портале Azure выберите **Тестировать приложение**, и вы автоматически войдете в приложение SAML SSO for Jira от resolution GmbH, для которого настроен единый вход. 
 
-Вы можете также использовать портал "Мои приложения" корпорации Майкрософт для тестирования приложения в любом режиме. Щелкните плитку SAML SSO for Jira от resolution GmbH на портале "Мои приложения", и вы будете перенаправлены на страницу входа приложения для инициации потока входа (при настройке в режиме поставщика услуг) или автоматически войдете в приложение SAML SSO for Jira от resolution GmbH, для которого настроен единый вход (при настройке в режиме поставщика удостоверений). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
+Вы можете также использовать портал "Мои приложения" корпорации Майкрософт для тестирования приложения в любом режиме. Щелкните плитку SAML SSO for Jira от resolution GmbH на портале "Мои приложения", и вы будете перенаправлены на страницу входа приложения для инициации потока входа (при настройке в режиме поставщика услуг) или автоматически войдете в приложение SAML SSO for Jira от resolution GmbH, для которого настроен единый вход (при настройке в режиме поставщика удостоверений). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 ## <a name="enable-sso-redirection-for-jira"></a>Активация перенаправления единого входа для Jira
 
@@ -268,4 +268,4 @@ ms.locfileid: "102173274"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки SAML SSO for Jira от resolution GmbH можно применить управление сеансами, которое в реальном времени защищает конфиденциальные данные организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
+После настройки SAML SSO for Jira от resolution GmbH можно применить управление сеансами, которое в реальном времени защищает конфиденциальные данные организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

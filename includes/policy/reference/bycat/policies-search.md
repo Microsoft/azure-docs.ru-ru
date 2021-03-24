@@ -2,16 +2,20 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/05/2021
+ms.date: 03/17/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 4139992c2bd07c87000076ec68e56549a01f3528
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: c068b9fcccff680e9e13e29f3f5e47df3498e0d4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102429656"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104605585"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
+|[Служба "Когнитивный поиск Azure" должна использовать SKU, поддерживающий приватный канал](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa049bf77-880b-470f-ba6d-9f21c530cf83) |С использованием поддерживаемых SKU Когнитивного поиска Azure Приватный канал Azure позволяет подключить виртуальную сеть к службам Azure без общедоступного IP-адреса в исходном или целевом расположении. Платформа Приватного канала поддерживает подключение между потребителем и службами через магистральную сеть Azure. Сопоставляя частные конечные точки со своей службой поиска, вы можете снизить риски утечки данных. См. дополнительные сведения: [https://aka.ms/azure-cognitive-search/inbound-private-endpoints](https://aka.ms/azure-cognitive-search/inbound-private-endpoints). |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Search/Search_RequirePrivateLinkSupportedResource_Deny.json) |
+|[Службы Когнитивного поиска Azure должны отключить доступ к общедоступной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fee980b6d-0eca-4501-8d54-f6290fd512c3) |При отключении доступа к общедоступной сети повышается уровень безопасность, так как это гарантирует, что служба "Когнитивный поиск Azure" не будет доступна в общедоступном Интернете. Создав частные конечные точки, можно ограничить раскрытие данных службы поиска. См. дополнительные сведения: [https://aka.ms/azure-cognitive-search/inbound-private-endpoints](https://aka.ms/azure-cognitive-search/inbound-private-endpoints). |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Search/Search_RequirePublicNetworkAccessDisabled_Deny.json) |
+|[Настройка служб Когнитивного поиска Azure для отключения доступа к общедоступной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F9cee519f-d9c1-4fd9-9f79-24ec3449ed30) |Отключите доступ к общедоступной сети для своей службы "Когнитивный поиск Azure", чтобы она была недоступна через общедоступный Интернет. Это позволяет снизить риски утечки данных. См. дополнительные сведения: [https://aka.ms/azure-cognitive-search/inbound-private-endpoints](https://aka.ms/azure-cognitive-search/inbound-private-endpoints). |Modify, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Search/Search_PublicNetworkAccessDisabled_Modify.json) |
+|[Настройка служб Когнитивного поиска Azure для использования частных зон DNS](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ffbc14a67-53e4-4932-abcc-2049c6706009) |Использование частных зон DNS для переопределения разрешения DNS для частной конечной точки. Частная зона DNS связывается с виртуальной сетью для разрешения в службу "Когнитивный поиск Azure". См. дополнительные сведения: [https://aka.ms/azure-cognitive-search/inbound-private-endpoints](https://aka.ms/azure-cognitive-search/inbound-private-endpoints). |DeployIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Search/Search_PrivateDNSZone_DeployIfNotExists.json) |
 |[В службах "Поиск" должны быть включены журналы ресурсов](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fb4330a05-a843-4bc8-bf9a-cacce50c67f4) |Выполняйте аудит для включения журналов ресурсов. Это позволит воссоздать действия для расследования в случае инцидентов безопасности или компрометации сети. |AuditIfNotExists, Disabled |[4.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Search/Search_AuditDiagnosticLog_Audit.json) |

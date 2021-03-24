@@ -5,12 +5,12 @@ author: florianborn71
 ms.author: flborn
 ms.date: 02/11/2020
 ms.topic: article
-ms.openlocfilehash: 414dc161d7cba2e89d15c47b8da5abdfb7cb3338
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4323884b2dee3eeccfe71ec7817d92467450e88e
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101712170"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950031"
 ---
 # <a name="use-the-session-management-rest-api"></a>Использование REST API управления сеансами
 
@@ -20,13 +20,13 @@ ms.locfileid: "101712170"
 
 Ссылку на REST API можно найти [здесь](/rest/api/mixedreality/2021-01-01preview/remoterendering) и [в определениях](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mixedreality/data-plane/Microsoft.MixedReality)Swagger.
 Мы предоставляем скрипт PowerShell в [репозитории образцов arr](https://github.com/Azure/azure-remote-rendering) в папке *Scripts* с именем *RenderingSession.ps1*, который демонстрирует использование нашей службы. Скрипт и его конфигурация описаны здесь: [примеры сценариев PowerShell](../samples/powershell-example-scripts.md).
-Мы также предоставляем пакеты SDK для [.NET](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/mixedreality/Azure.MixedReality.RemoteRendering), Java и Python.
+Мы также предоставляем пакеты SDK для [.NET](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/remoterendering/Azure.MixedReality.RemoteRendering/README.md) и [Java](https://github.com/Azure/azure-sdk-for-java/blob/master/sdk/remoterendering/azure-mixedreality-remoterendering/README.md).
 
 > [!IMPORTANT]
 > Задержка является важным фактором при использовании удаленной отрисовки. Для лучшего удобства создайте сеансы в ближайшем для вас регионе. [Тест задержки Azure](https://www.azurespeed.com/Azure/Latency) можно использовать, чтобы определить, какой регион является ближайшим к вам.
 
 > [!IMPORTANT]
-> Для подключения клиентского устройства к сеансу отрисовки требуется пакет SDK среды выполнения ARR. Эти пакеты SDK доступны в [.NET](/dotnet/api/microsoft.azure.remoterendering?view=remoterendering) и [C++](/cpp/api/remote-rendering/). Кроме подключения к службе, эти пакеты SDK можно использовать для запуска и завершения сеансов.
+> Для подключения клиентского устройства к сеансу отрисовки требуется пакет SDK среды выполнения ARR. Эти пакеты SDK доступны в [.NET](/dotnet/api/microsoft.azure.remoterendering) и [C++](/cpp/api/remote-rendering/). Кроме подключения к службе, эти пакеты SDK можно использовать для запуска и завершения сеансов.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

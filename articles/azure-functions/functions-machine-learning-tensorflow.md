@@ -7,10 +7,10 @@ ms.date: 01/15/2020
 ms.author: antchu
 ms.custom: mvc, devx-track-python, devx-track-azurepowershell
 ms.openlocfilehash: ca9ce27583168dfee1a597fce559afad38a3a8c7
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95994610"
 ---
 # <a name="tutorial-apply-machine-learning-models-in-azure-functions-with-python-and-tensorflow"></a>Руководство по Применение моделей машинного обучения в Функциях Azure с использованием Python и TensorFlow

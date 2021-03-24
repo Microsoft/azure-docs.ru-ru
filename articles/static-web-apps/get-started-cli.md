@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: quickstart
 ms.date: 08/13/2020
 ms.author: cshoe
-ms.openlocfilehash: 0de65c4546f5e87377b119370ee629f5a365b24e
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: 98b40218d168133193410174bcc158ab8698c381
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100650549"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225393"
 ---
 # <a name="quickstart-building-your-first-static-site-using-the-azure-cli"></a>Краткое руководство. Создание первого статического сайта с помощью Azure CLI
 
@@ -104,8 +104,13 @@ cd my-first-static-web-app
     ```
 
     ---
+    
+    > [!IMPORTANT]
+    > URL-адрес, переданный в параметр `s`, не должен включать суффикс `.git`.
 
-    - `<RESOURCE_GROUP_NAME>`: Замените это значение именем имеющейся группы ресурсов Azure.
+    - `<RESOURCE_GROUP_NAME>`: замените это значение именем существующей [группы ресурсов Azure](../azure-resource-manager/management/manage-resources-cli.md).
+
+      - Дополнительные сведения о получении списка групп ресурсов см. в документации по [az group](https://docs.microsoft.com/cli/azure/group?view=azure-cli-latest#az_group_list).
 
     - `<YOUR_GITHUB_ACCOUNT_NAME>`: Замените это значение именем пользователя GitHub.
 

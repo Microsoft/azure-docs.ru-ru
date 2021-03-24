@@ -9,10 +9,10 @@ ms.date: 12/12/2017
 ms.author: msangapu
 ms.custom: mvc, seodec18, devx-track-azurecli
 ms.openlocfilehash: 50a7d5e4a33762b5ae0725165e6062a83fec9110
-ms.sourcegitcommit: 273c04022b0145aeab68eb6695b99944ac923465
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97006290"
 ---
 # <a name="create-an-app-service-app-and-deploy-files-with-ftp-using-azure-cli"></a>Создание приложения Службы приложений и развертывание файлов с помощью протокола FTP в интерфейсе командной строки Azure

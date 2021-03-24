@@ -7,10 +7,10 @@ ms.service: vpn-gateway
 ms.topic: tutorial
 ms.date: 12/01/2020
 ms.openlocfilehash: 820482a268af038737557c517ccda086cd65d943
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98880564"
 ---
 # <a name="tutorial-create-and-manage-a-vpn-gateway-using-azure-portal"></a>Руководство по созданию VPN-шлюза и управление им с помощью портала Azure

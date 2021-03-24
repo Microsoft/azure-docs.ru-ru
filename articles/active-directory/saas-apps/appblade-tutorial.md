@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с AppBlade | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с AppBlade | Документация Майкрософт
 description: Узнайте, как настроить единый вход Azure Active Directory в приложении AppBlade.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 01/17/2019
 ms.author: jeedes
 ms.openlocfilehash: 49fa266319423b4c1a0bc56ad2a32b49c18f168e
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97672633"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-appblade"></a>Руководство по Интеграция Azure Active Directory с AppBlade
+# <a name="tutorial-azure-active-directory-integration-with-appblade"></a>Руководство. Интеграция Azure Active Directory с AppBlade
 
 В этом руководстве описано, как интегрировать AppBlade с Azure Active Directory (Azure AD).
 Интеграция AppBlade с Azure AD обеспечивает следующие преимущества.

@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 11/24/2020
 ms.custom: seodec18, mvc, devx-track-js, devx-track-azurecli
 ms.openlocfilehash: 8ec3dbb5019e6bb3947c6d3aec50fd308d99e0fb
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98919516"
 ---
 # <a name="tutorial-automate-container-image-builds-when-a-base-image-is-updated-in-an-azure-container-registry"></a>Руководство по автоматизации сборок образов контейнера при обновлении базового образа в службе "Реестр контейнеров Azure" 

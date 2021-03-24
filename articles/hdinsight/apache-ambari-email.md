@@ -4,12 +4,12 @@ description: В этой статье описывается, как испол�
 ms.service: hdinsight
 ms.topic: tutorial
 ms.date: 03/10/2020
-ms.openlocfilehash: 63d0f87925f14fddf3dbd722fa72326ee8b04f31
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 5b344c0c4b1db9159d0223c861e5d371cb225f5a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98946975"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867208"
 ---
 # <a name="tutorial-configure-apache-ambari-email-notifications-in-azure-hdinsight"></a>Руководство по настройке уведомлений по электронной почте Apache Ambari в Azure HDInsight
 
@@ -33,15 +33,15 @@ ms.locfileid: "98946975"
 
 1. На странице "Обзор" выберите **Управление**, чтобы открыть веб-страницу SendGrid для своей учетной записи.
 
-    ![Общие сведения о SendGrid на портале Azure](./media/apache-ambari-email/azure-portal-sendgrid-manage.png)
+    :::image type="content" source="./media/apache-ambari-email/azure-portal-sendgrid-manage.png" alt-text="Общие сведения о SendGrid на портале Azure":::
 
 1. В меню слева перейдите к имени учетной записи, а затем выберите **Сведения об учетной записи**.
 
-    ![Навигация по панели мониторинга SendGrid](./media/apache-ambari-email/sendgrid-dashboard-navigation.png)
+    :::image type="content" source="./media/apache-ambari-email/sendgrid-dashboard-navigation.png" alt-text="Навигация по панели мониторинга SendGrid":::
 
 1. На странице **Сведения об учетной записи** запишите **Имя пользователя**.
 
-    ![Сведения об учетной записи SendGrid](./media/apache-ambari-email/sendgrid-account-details.png)
+    :::image type="content" source="./media/apache-ambari-email/sendgrid-account-details.png" alt-text="Сведения об учетной записи SendGrid":::
 
 ## <a name="configure-ambari-e-mail-notification"></a>Настройка уведомлений Ambari по электронной почте
 
@@ -51,7 +51,7 @@ ms.locfileid: "98946975"
 
 1. В окне **Manage Alert Notifications** (Управление уведомлениями об оповещениях) выберите значок **+** .
 
-    ![Снимок экрана: диалоговое окно Manage Alert Notifications (Управление уведомлениями об оповещениях)](./media/apache-ambari-email/azure-portal-create-notification.png)
+    :::image type="content" source="./media/apache-ambari-email/azure-portal-create-notification.png" alt-text="Снимок экрана: диалоговое окно Manage Alert Notifications (Управление уведомлениями об оповещениях)":::
 
 1. В диалоговом окне **Create Alert Notification** (Создание уведомления об оповещениях) укажите следующие сведения:
 
@@ -72,7 +72,7 @@ ms.locfileid: "98946975"
     |Подтверждение паролем|Введите пароль еще раз.|
     |Запустите TLS|Установите этот флажок|
 
-    ![Снимок экрана: диалоговое окно Create Alert Notification (Создание уведомления об оповещениях)](./media/apache-ambari-email/ambari-create-alert-notification.png)
+    :::image type="content" source="./media/apache-ambari-email/ambari-create-alert-notification.png" alt-text="Снимок экрана: диалоговое окно Create Alert Notification (Создание уведомления об оповещениях)":::
 
     Щелкните **Сохранить**. Вы вернетесь в окно **Manage Alert Notifications** (Управление уведомлениями об оповещениях).
 
