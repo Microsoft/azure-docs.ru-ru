@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/13/2019
-ms.openlocfilehash: f3acfe6f8e0a72b402d7a3401675c8aa3c94fc98
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e4f19afc0edf0f43b64548ae1c93ed5ff8dfa8a1
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940597"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866579"
 ---
 # <a name="use-azure-toolkit-for-eclipse-to-create-apache-spark-applications-for-an-hdinsight-cluster"></a>Создание приложений Apache Spark для кластера HDInsight с помощью Azure Toolkit for Eclipse
 
@@ -20,7 +20,7 @@ ms.locfileid: "98940597"
 * Для доступа к ресурсам кластера Azure HDInsight Spark.
 * Для разработки и локального запуска приложений Scala Spark.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Кластер Apache Spark в HDInsight. Инструкции см. в статье [Начало работы. Создание кластера Apache Spark в HDInsight на платформе Linux и выполнение интерактивных запросов с помощью SQL Spark](apache-spark-jupyter-spark-sql.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "98940597"
 
 При открытии Eclipse средства HDInsight автоматически определяют, установлен ли подключаемый модуль Scala. Щелкните **ОК**, чтобы продолжить, и следуйте инструкциям по установке подключаемого модуля из Eclipse Marketplace. После завершения установки перезапустите интегрированную среду разработки.
 
-![Автоматическая установка подключаемого модуля Scala](./media/apache-spark-eclipse-tool-plugin/auto-installation-scala1.png)
+:::image type="content" source="./media/apache-spark-eclipse-tool-plugin/auto-installation-scala1.png" alt-text="Автоматическая установка подключаемого модуля Scala" border="true":::
 
 ### <a name="confirm-plug-ins"></a>Подтвердить подключаемые модули
 
@@ -58,25 +58,25 @@ ms.locfileid: "98940597"
 
 1. В диалоговом окне **Показать представление** перейдите в **Azure**  >  **Azure Explorer** и нажмите кнопку **Открыть**.
 
-   ![Apache Spark Показать представление Eclipse](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer1.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer1.png" alt-text="Apache Spark Показать представление Eclipse" border="true":::
 
 1. В **Azure Explorer** щелкните правой кнопкой мыши узел **Azure** и выберите **Вход**.
 
 1. В диалоговом окне **Вход в Azure** выберите метод проверки подлинности, нажмите кнопку **войти** и завершите процесс входа.
 
-   ![Apache Sparkная Eclipse подписывание Azure](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer2.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer2.png" alt-text="Apache Sparkная Eclipse подписывание Azure" border="true":::
 
 1. После входа в диалоговом окне " **подписки" будут** перечислены все подписки Azure, связанные с этими учетными данными. Нажмите кнопку " **выбрать** ", чтобы закрыть диалоговое окно.
 
-   ![Диалоговое окно выбора подписок](./media/apache-spark-eclipse-tool-plugin/Select-Subscriptions.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/Select-Subscriptions.png" alt-text="Диалоговое окно выбора подписок" border="true":::
 
 1. В **Azure Explorer** перейдите в **Azure**  >   **hdinsight** , чтобы просмотреть кластеры hdinsight Spark в вашей подписке.
 
-   ![Кластеры HDInsight Spark в Azure Explorer3](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer3.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer3.png" alt-text="Кластеры HDInsight Spark в Azure Explorer3" border="true":::
 
 1. Далее можно развернуть узел имени кластера, чтобы увидеть ресурсы (например, учетные записи хранения), связанные с ним.
 
-   ![Развертывание имени кластера для просмотра ресурсов](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer4.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer4.png" alt-text="Развертывание имени кластера для просмотра ресурсов" border="true":::
 
 ## <a name="link-a-cluster"></a>Связывание кластера
 
@@ -84,25 +84,25 @@ ms.locfileid: "98940597"
 
 1. В **Azure Explorer** щелкните правой кнопкой мыши **HDInsight** и выберите **связать кластер**.
 
-   ![Меню кластера ссылок Azure Explorer](./media/apache-spark-eclipse-tool-plugin/link-a-cluster-context-menu.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/link-a-cluster-context-menu.png" alt-text="Меню кластера ссылок Azure Explorer" border="true":::
 
 1. Введите **имя кластера**, **имя пользователя** и **пароль**, а затем нажмите кнопку **ОК**. При необходимости введите учетную запись хранения, ключ к хранилищу данных, а затем выберите в представлении в виде дерева контейнер хранилища для обозревателя хранилищ.
 
-   ![Диалоговое окно "связать новый кластер HDInsight"](./media/apache-spark-eclipse-tool-plugin/link-cluster-dialog1.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/link-cluster-dialog1.png" alt-text="Диалоговое окно &quot;связать новый кластер HDInsight&quot;" border="true":::
 
    > [!NOTE]  
    > Если кластер зарегистрирован в подписке Azure и связан, используется ключ к хранилищу данных, имя пользователя и пароль для связывания.
-   > ![Учетные записи хранения Azure Explorer](./media/apache-spark-eclipse-tool-plugin/storage-explorer-in-Eclipse.png)
+   > :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/storage-explorer-in-Eclipse.png" alt-text="Учетные записи хранения Azure Explorer" border="true":::
    >
    > Для пользователя с клавиатурой, когда текущий фокус находится на **ключе хранилища**, необходимо использовать **сочетание клавиш CTRL + TAB** , чтобы сосредоточиться на следующем поле в диалоговом окне.
 
 1. Связанный кластер можно увидеть в **HDInsight**. Теперь в этот связанный кластер можно отправить приложение.
 
-   ![Связанный кластер HDi в Azure Explorer](./media/apache-spark-eclipse-tool-plugin/hdinsight-linked-cluster.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/hdinsight-linked-cluster.png" alt-text="Связанный кластер HDi в Azure Explorer" border="true":::
 
 1. В **обозревателе Azure** также можно удалить связь кластера.
 
-   ![Несвязанный кластер Azure Explorer](./media/apache-spark-eclipse-tool-plugin/hdi-unlinked-cluster.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/hdi-unlinked-cluster.png" alt-text="Несвязанный кластер Azure Explorer" border="true":::
 
 ## <a name="set-up-a-spark-scala-project-for-an-hdinsight-spark-cluster"></a>Настройка проекта Spark Scala для кластера HDInsight Spark
 
@@ -110,14 +110,14 @@ ms.locfileid: "98940597"
 
 1. В мастере **создания проектов** выберите **hdinsight Project**  >  **Spark в hdinsight (Scala)**. Выберите **Далее**.
 
-   ![Выбор проекта Spark в HDInsight (Scala)](./media/apache-spark-eclipse-tool-plugin/create-hdi-scala-app-2.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/create-hdi-scala-app-2.png" alt-text="Выбор проекта Spark в HDInsight (Scala)" border="true":::
 
 1. В диалоговом окне **New HDInsight Scala Project** (Новый проект Scala HDInsight) введите следующие значения, после чего нажмите кнопку **Next** (Далее).
    * Введите имя проекта.
    * Убедитесь, что в поле **JRE** параметр **Use an execution environment JRE** (Использовать среду выполнения JRE) имеет значение **JavaSE-1.7** или более позднюю версию.
    * В области **библиотеки Spark** вы можете выбрать вариант **Use Maven to configure Spark SDK** (Использовать Maven для настройки пакета SDK для Spark).  Наше средство интегрирует правильную версию пакета SDK для Spark и пакета SDK для Scala. Можно также выбрать параметр **Добавить пакет SDK для Spark вручную** , скачать и добавить пакет SDK для Spark вручную.
 
-   ![Диалоговое окно нового проекта Scala HDInsight](./media/apache-spark-eclipse-tool-plugin/create-hdi-scala-app-3.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/create-hdi-scala-app-3.png" alt-text="Диалоговое окно нового проекта Scala HDInsight" border="true":::
 
 1. В следующем диалоговом окне просмотрите сведения и нажмите кнопку **Готово**.
 
@@ -127,11 +127,11 @@ ms.locfileid: "98940597"
 
 1. В диалоговом окне **Выбор мастера** выберите **Scala мастера**  >  **Scala объект**. Выберите **Далее**.
 
-   ![Выбор мастера Создание объекта Scala](./media/apache-spark-eclipse-tool-plugin/create-scala-project1.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/create-scala-project1.png" alt-text="Выбор мастера Создание объекта Scala" border="true":::
 
 1. В диалоговом окне **Create New File** (Создание файла) введите имя объекта и нажмите кнопку **Finish** (Готово). Откроется текстовый редактор.
 
-   ![Мастер создания файлов — создать новый файл](./media/apache-spark-eclipse-tool-plugin/create-scala-project2.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/create-scala-project2.png" alt-text="Мастер создания файлов — создать новый файл" border="true":::
 
 1. В текстовом редакторе Замените текущее содержимое следующим кодом:
 
@@ -165,11 +165,11 @@ ms.locfileid: "98940597"
    * В раскрывающемся списке **Main class name** (Имя класса main) в мастере отправки отображаются имена всех объектов из вашего проекта. Выберите или введите имя любого из объектов, который требуется запустить. Если вы выбрали артефакт с жесткого диска, необходимо ввести имя класса main вручную. 
    * Так как код приложения в этом примере не требует аргументов командной строки, ссылок на JAR или файлов, оставшиеся текстовые поля можно оставить пустыми.
 
-     ![Диалоговое окно "Отправка Apache Spark"](./media/apache-spark-eclipse-tool-plugin/create-scala-project3.png)
+     :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/create-scala-project3.png" alt-text="Диалоговое окно &quot;Отправка Apache Spark&quot;" border="true":::
 
 1. На вкладке **Spark Submission** (Отправка в Spark) начнет отображаться ход выполнения. Приложение можно остановить, нажав красную кнопку в окне **Spark Submission** (Отправка в Spark). Можно также просмотреть журналы для данного запуска приложения, щелкнув значок глобуса (обозначен на рисунке синей рамкой).
 
-   ![Окно отправки Apache Spark](./media/apache-spark-eclipse-tool-plugin/create-scala-project4.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/create-scala-project4.png" alt-text="Окно отправки Apache Spark" border="true":::
 
 ## <a name="access-and-manage-hdinsight-spark-clusters-by-using-hdinsight-tools-in-azure-toolkit-for-eclipse"></a>Доступ к кластерам HDInsight Spark и управление ими с помощью средств HDInsight в наборе средств Azure для Eclipse
 
@@ -179,25 +179,25 @@ ms.locfileid: "98940597"
 
 1. В **Azure Explorer** разверните **HDInsight**, затем имя кластера Spark, а затем выберите **задания**.
 
-   ![Узел представления заданий Eclipse в Azure Explorer](./media/apache-spark-eclipse-tool-plugin/eclipse-job-view-node.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-job-view-node.png" alt-text="Узел представления заданий Eclipse в Azure Explorer" border="true":::
 
 1. Перейдите на вкладку **Задания**. Если версия Java ниже, чем **1.8**, средства HDInsight автоматически отправят напоминание об установке подключаемого модуля **E(fx)clipse**. Щелкните **ОК**, чтобы продолжить, и следуйте инструкциям мастера для установки подключаемого модуля из Eclipse Marketplace. По завершении перезапустите Eclipse.
 
-   ![Установка отсутствующего Clip подключаемого модуля E (FX)](./media/apache-spark-eclipse-tool-plugin/auto-install-efxclipse.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/auto-install-efxclipse.png" alt-text="Установка отсутствующего Clip подключаемого модуля E (FX)" border="true":::
 
 1. Откройте представление задания из узла **Задания**. В области справа на вкладке **Spark Job View** (Просмотр заданий Spark) отображаются все приложения, запускаемые в кластере. Выберите имя приложения, дополнительные сведения о котором вы хотите просмотреть.
 
-   ![Сведения о журналах заданий представления Apache Eclipse](./media/apache-spark-eclipse-tool-plugin/eclipse-view-job-logs.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-job-logs.png" alt-text="Сведения о журналах заданий представления Apache Eclipse" border="true":::
 
    Затем можно использовать любое из следующих действий:
 
    * Наведите указатель мыши на граф задания. На нем отображаются основные сведения о выполняемом задании. Щелкните граф задания, и вы увидите его этапы и сведения, создаваемые каждым заданием.
 
-     ![Сведения о стадии графа задания Apache Spark](./media/apache-spark-eclipse-tool-plugin/Job-graph-stage-info.png)
+     :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/Job-graph-stage-info.png" alt-text="Сведения о стадии графа задания Apache Spark" border="true":::
 
    * Выберите вкладку **Журнал**, чтобы просмотреть часто используемые журналы, включая **Driver Stderr**, **Driver Stdout** и **Directory Info**.
 
-     ![Сведения о журнале заданий Apache Spark Eclipse](./media/apache-spark-eclipse-tool-plugin/eclipse-job-log-info.png)
+     :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-job-log-info.png" alt-text="Сведения о журнале заданий Apache Spark Eclipse" border="true":::
 
    * Откройте пользовательский интерфейс журнала Spark и пользовательский интерфейс Apache Hadoop YARN (на уровне приложения), щелкнув ссылки в верхней части окна.
 
@@ -207,7 +207,7 @@ ms.locfileid: "98940597"
 
 1. Разверните имя кластера, чтобы увидеть учетную запись хранилища и контейнер хранилища по умолчанию для кластера.
 
-   ![Учетная запись хранения и контейнер по умолчанию](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer5.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer5.png" alt-text="Учетная запись хранения и контейнер по умолчанию" border="true":::
 
 1. Выберите имя связанного с кластером контейнера хранилища. В области справа дважды щелкните папку **HVACOut**. Откройте один из файлов **part-** для просмотра выходных данных приложения.
 
@@ -247,17 +247,17 @@ ms.locfileid: "98940597"
 
 1. В мастере **создания проектов** выберите **hdinsight проект**  >  **Spark в hdinsight локальный запуск пример (Scala)**. Выберите **Далее**.
 
-   ![Создать проект выбор диалогового окна мастера](./media/apache-spark-eclipse-tool-plugin/hdi-spark-app-local-run.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/hdi-spark-app-local-run.png" alt-text="Создать проект выбор диалогового окна мастера" border="true":::
 
 1. Чтобы предоставить сведения о проекте, выполните шаги 3–6, как описано в разделе [Настройка проекта Spark Scala для кластера HDInsight Spark](#set-up-a-spark-scala-project-for-an-hdinsight-spark-cluster).
 
 1. Шаблон добавляет пример кода (**LogQuery**) в папку **src**, который можно запустить локально на компьютере.
 
-   ![Расположение локального приложения Scala LogQuery](./media/apache-spark-eclipse-tool-plugin/local-scala-application.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/local-scala-application.png" alt-text="Расположение локального приложения Scala LogQuery" border="true":::
 
 1. Щелкните правой кнопкой мыши **LogQuery. Scala** и выберите **Запуск от имени**  >  **1 приложения Scala**. На вкладке **Console** (Консоль) отобразятся выходные данные следующего вида.
 
-   ![Результат локального запуска приложения Spark](./media/apache-spark-eclipse-tool-plugin/hdi-spark-app-local-run-result.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/hdi-spark-app-local-run-result.png" alt-text="Результат локального запуска приложения Spark" border="true":::
 
 ## <a name="reader-only-role"></a>Роль только для чтения
 
@@ -269,16 +269,16 @@ ms.locfileid: "98940597"
 
 2. В **Azure Explorer** разверните **HDInsight**, чтобы просмотреть кластеры HDInsight в своей подписке. Кластеры с пометкой **Role:Reader**, имеют только разрешение роли только для чтения.
 
-    ![Кластеры HDInsight Spark в Azure Explorer роль читатель](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer6.png)
+    :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer6.png" alt-text="Кластеры HDInsight Spark в Azure Explorer роль читатель" border="true":::
 
 3. Щелкните правой кнопкой мыши кластер с разрешением роли только для чтения. Выберите **Link this cluster** (Связать этот кластер) из контекстного меню, чтобы связать кластер. Введите имя пользователя и пароль Ambari.
 
-    ![Ссылки на кластеры HDInsight Spark в Azure Explorer](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer7.png)
+    :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer7.png" alt-text="Ссылки на кластеры HDInsight Spark в Azure Explorer" border="true":::
 
 4. Если кластер связан успешно, HDInsight будет обновлен.
    Этап кластера станет связанным.
   
-    ![Связывание кластеров HDInsight Spark в Azure Explorer](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer8.png)
+    :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer8.png" alt-text="Связывание кластеров HDInsight Spark в Azure Explorer" border="true":::
 
 ### <a name="link-cluster-by-expanding-jobs-node"></a>Связывание кластера путем развертывания узла "Задания"
 
@@ -286,7 +286,7 @@ ms.locfileid: "98940597"
 
 2. Щелкните **Link this cluster** (Связать этот кластер), чтобы связать кластер.
 
-    ![Кластеры HDInsight Spark в Azure Explorer9](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer9.png)
+    :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer9.png" alt-text="Кластеры HDInsight Spark в Azure Explorer9" border="true":::
 
 ### <a name="link-cluster-from-spark-submission-window"></a>Связывание кластера с окном отправки Spark
 
@@ -294,35 +294,35 @@ ms.locfileid: "98940597"
 
 2. Щелкните пакет правой кнопкой мыши. Затем выберите **отправить приложение Spark в HDInsight**.
 
-   ![Отправка кластеров HDInsight Spark в Azure Explorer](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer11.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer11.png" alt-text="Отправка кластеров HDInsight Spark в Azure Explorer" border="true":::
 
 3. Выберите кластер с разрешениями роли только для чтения для **имени кластера**. Отображается предупреждающее сообщение. Можно щелкнуть **связать этот кластер** с кластером.
 
-   ![Создание кластеров HDInsight Spark в Azure Explorer ссылка](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer15.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer15.png" alt-text="Создание кластеров HDInsight Spark в Azure Explorer ссылка" border="true":::
 
 ### <a name="view-storage-accounts"></a>Просмотр учетных записей хранения
 
 * Для кластеров с разрешением роли только для чтения щелкните узел **Учетные записи хранения** и появится всплывающее окно **Storage Access Denied** (Доступ к хранилищу запрещен).
 
-   ![Кластеры HDInsight Spark в хранилище Azure Explorer](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer13.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer13.png" alt-text="Кластеры HDInsight Spark в хранилище Azure Explorer" border="true":::
 
-   ![Кластеры HDInsight Spark в Azure Explorer запрещены](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer12.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer12.png" alt-text="Кластеры HDInsight Spark в Azure Explorer запрещены" border="true":::
 
 * Для связанных кластеров щелкните узел **Учетные записи хранения** и появится всплывающее окно **Storage Access Denied** (Доступ к хранилищу запрещен).
 
-   ![Кластеры HDInsight Spark в Azure Explorer denied2](./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer14.png)
+   :::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-view-explorer14.png" alt-text="Кластеры HDInsight Spark в Azure Explorer denied2" border="true":::
 
 ## <a name="known-problems"></a>Известные проблемы
 
 При использовании **связывания кластера** рекомендуется предоставить учетные данные хранилища.
 
-![Связывание кластера с Eclipse учетных данных хранилища](./media/apache-spark-eclipse-tool-plugin/link-cluster-with-storage-credential-eclipse.png)
+:::image type="content" source="./media/apache-spark-eclipse-tool-plugin/link-cluster-with-storage-credential-eclipse.png" alt-text="Связывание кластера с Eclipse учетных данных хранилища" border="true":::
 
 Существует два режима отправки заданий. Если учетные данные хранилища указаны, для отправки задания будет использоваться пакетный режим. В противном случае будет использоваться интерактивный режим. Если кластер занят, может появиться приведенная ниже ошибка.
 
-![Eclipse получает сообщение об ошибке, если кластер занят](./media/apache-spark-eclipse-tool-plugin/eclipse-interactive-cluster-busy-upload.png "Eclipse получает сообщение об ошибке, если кластер занят")
+:::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-interactive-cluster-busy-upload.png " alt-text="Eclipse получает сообщение об ошибке, если кластер занят" border="true":::
 
-![Ошибка получения Eclipse при занятости кластера Yarn](./media/apache-spark-eclipse-tool-plugin/eclipse-interactive-cluster-busy-submit.png "Ошибка получения Eclipse при занятости кластера Yarn")
+:::image type="content" source="./media/apache-spark-eclipse-tool-plugin/eclipse-interactive-cluster-busy-submit.png " alt-text="Ошибка получения Eclipse при занятости кластера Yarn" border="true":::
 
 ## <a name="see-also"></a>См. также раздел
 

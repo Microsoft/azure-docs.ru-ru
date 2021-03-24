@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 06/10/2019
-ms.openlocfilehash: 73598c7f5733dd65222770b80e79e2cf6ec27fbf
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: a3589aff65b24563cf21f175ccfc3a706891d699
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102032013"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954009"
 ---
 # <a name="azure-monitor-service-limits"></a>Ограничения службы Azure Monitor
 
@@ -44,8 +44,8 @@ ms.locfileid: "102032013"
 
 [!INCLUDE [monitoring-limits](../../includes/azure-monitor-limits-app-insights.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 - [Цены на Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/)
-- [Использование мониторинга и ожидаемые затраты в Azure Monitor](/usage-estimated-costs.md)
+- [Использование мониторинга и ожидаемые затраты в Azure Monitor](/azure/azure-monitor/usage-estimated-costs)
 - [Управление использованием и затратами для Application Insights](app/pricing.md)

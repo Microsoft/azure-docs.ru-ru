@@ -1,7 +1,8 @@
 ---
 title: Повторное размещение мэйнфреймов на виртуальных машинах Azure
 description: Перемещайте рабочие нагрузки мэйнфреймов, такие как системы на основе IBM Z, с помощью виртуальных машин на Microsoft Azure.
-services: virtual-machines
+ms.service: virtual-machines
+ms.subservice: mainframe-rehosting
 documentationcenter: ''
 author: njray
 manager: edprice
@@ -9,13 +10,12 @@ editor: edprice
 ms.author: larryme
 ms.date: 04/02/2019
 ms.topic: article
-ms.service: multiple
-ms.openlocfilehash: 7ae20b484b4c22c19b856c237d85efe31dc01407
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7e4b41497a0ed49ab0b39ab2c93c0142fce6416e
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102553550"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951323"
 ---
 # <a name="mainframe-rehosting-on-azure-virtual-machines"></a>Повторное размещение мэйнфреймов на виртуальных машинах Azure
 
@@ -76,7 +76,7 @@ Micro Focus Enterprise Server — одна из самых крупных дос
 
 При переносе рабочих нагрузок мэйнфреймов в инфраструктуру Azure как услуга (IaaS) вы можете выбрать один из нескольких типов масштабируемых вычислительных ресурсов по запросу, включая виртуальные машины Azure. Azure предлагает ряд виртуальных машин [Linux](../../linux/overview.md) и [Windows](../../windows/overview.md) .
 
-### <a name="compute"></a>Вычисления
+### <a name="compute"></a>Службы вычислений
 
 Сравнение энергопотребления Azure является предпочтительным для емкости мэйнфрейма. Если вы планируете переместить рабочую нагрузку мэйнфрейма в Azure, Сравните метрику мэйнфрейма 1 000 000 инструкций в секунду (MIPS) с виртуальными процессорами. 
 
@@ -92,7 +92,7 @@ Azure предлагает соглашения об уровне обслужи
 
 Большие ЭВМ обычно масштабируются, а облачные среды масштабируются. Azure предлагает разнообразные размеры [Linux](../../sizes.md) и [Windows](../../sizes.md) в соответствии с вашими потребностями. Облако также масштабируется и уменьшается в соответствии с требованиями пользователей. Расчет энергопотребления, хранилища [и служб по запросу с использованием](/azure/architecture/best-practices/auto-scaling) модели выставления счетов на основе использования.
 
-### <a name="storage"></a>Служба хранилища
+### <a name="storage"></a>Память
 
 В облаке у вас есть ряд гибких и масштабируемых вариантов хранения, и вы платите только за то, что вам нужно. В [службе хранилища Azure](../../../storage/common/storage-introduction.md) предоставляется хранилище с высокой масштабируемостью для объектов данных, служба файловой системы для облака, надежное хранилище сообщений, а также хранилище NoSQL. Для виртуальных машин управляемые и неуправляемые диски предоставляют постоянное и безопасное дисковое хранилище.
 

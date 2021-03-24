@@ -3,12 +3,12 @@ title: Язык бицеп для шаблонов Azure Resource Manager
 description: Описание языка Бицеп для развертывания инфраструктуры в Azure с помощью шаблонов Azure Resource Manager.
 ms.topic: conceptual
 ms.date: 03/23/2021
-ms.openlocfilehash: 0edd0063ea08978b89c3ad3067f41ae743451df7
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: 74028c682b48a492c2e8f13bef538d1694370cbd
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889694"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104955913"
 ---
 # <a name="what-is-bicep-preview"></a>Что такое Бицеп (Предварительная версия)?
 
@@ -16,11 +16,15 @@ ms.locfileid: "104889694"
 
 Синтаксис JSON для создания шаблона может быть подробным и требовать сложного выражения. Бицеп улучшает этот интерфейс без потери возможностей шаблона JSON. Это прозрачная абстракция по сравнению с JSON для шаблонов ARM. Каждый файл Бицеп компилируется в стандартный шаблон ARM. Типы ресурсов, версии API и свойства, допустимые в шаблоне ARM, допустимы в файле Бицеп. В текущем выпуске есть несколько [известных ограничений](#known-limitations) .
 
+Бицеп сейчас находится на этапе предварительной версии. Чтобы отвести состояние работы, см. [репозиторий проекта бицеп](https://github.com/Azure/bicep).
+
 Дополнительные сведения о Бицеп см. в следующем видео.
+
+> [!VIDEO https://www.youtube.com/embed/sc1kJfcRQgY]
 
 ## <a name="get-started"></a>Начало работы
 
-Чтобы начать с Бицеп, [установите средства](https://github.com/Azure/bicep/blob/main/docs/installing.md).
+Чтобы начать с Бицеп, [установите средства](bicep-install.md).
 
 После установки средств воспользуйтесь [руководством бицеп](./bicep-tutorial-create-first-bicep.md). В серии руководств описывается структура и возможности Бицеп. Вы развертываете файлы Бицеп и преобразуете шаблон ARM в эквивалентный файл Бицеп.
 

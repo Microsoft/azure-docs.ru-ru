@@ -7,10 +7,10 @@ ms.topic: tutorial
 ms.date: 07/27/2020
 ms.author: raynew
 ms.openlocfilehash: e0e60ee346d20113b2ec7970390d9874522cc770
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87847318"
 ---
 # <a name="migrate-on-premises-machines-to-azure"></a>Миграция локальных компьютеров в Azure
@@ -19,7 +19,7 @@ ms.locfileid: "87847318"
 
 ## <a name="migrate-with-azure-migrate"></a>Миграция с помощью средства "Миграция Azure"
 
-Мы рекомендуем перенести компьютеры в Azure с помощью средства [Миграция Azure](../migrate/migrate-services-overview.md). Миграция Azure специально предназначена для переноса серверов. Миграция Azure — это центр управления для обнаружения, оценки и переноса локальных компьютеров в Azure.
+Мы рекомендуем перенести компьютеры в Azure с помощью службы [Миграция Azure](../migrate/migrate-services-overview.md). Миграция Azure специально предназначена для переноса серверов. Миграция Azure — это центр управления для обнаружения, оценки и переноса локальных компьютеров в Azure.
 
 Сведения о выполнении миграции с помощью средства "Миграция Azure" приведены по следующим ссылкам:
 

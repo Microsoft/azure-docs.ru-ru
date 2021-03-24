@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: hdinsightactive,mvc
 ms.date: 02/12/2020
-ms.openlocfilehash: d3c8a08a14b23492c4bf032dd2b722c59bdf80ff
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: de17bf02392f0bb05820fabba3f9057e067391cf
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98930085"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865916"
 ---
 # <a name="tutorial-load-data-and-run-queries-on-an-apache-spark-cluster-in-azure-hdinsight"></a>Руководство по Загрузка данных и выполнение запросов в кластере Apache Spark в Azure HDInsight
 
@@ -33,7 +33,7 @@ Jupyter Notebook — это интерактивная среда Notebook, ко
 
 2. На веб-странице Jupyter выберите **New** (Создать)  > **PySpark**, чтобы создать записную книжку.
 
-   ![Создание Jupyter Notebook для выполнения интерактивного SQL-запроса Spark](./media/apache-spark-load-data-run-query/hdinsight-spark-create-jupyter-interactive-spark-sql-query.png "Создание Jupyter Notebook для выполнения интерактивного SQL-запроса Spark")
+   :::image type="content" source="./media/apache-spark-load-data-run-query/hdinsight-spark-create-jupyter-interactive-spark-sql-query.png " alt-text="Создание Jupyter Notebook для выполнения интерактивного SQL-запроса Spark" border="true":::
 
    Будет создана и открыта записная книжка с именем Untitled(`Untitled.ipynb`).
 
@@ -44,7 +44,7 @@ Jupyter Notebook — это интерактивная среда Notebook, ко
 
 Приложения могут создавать кадры данных непосредственно из файлов и папок в удаленном хранилище (например, Служба хранилища Azure или Azure Data Lake Storage), из таблиц Hive, а также из других источников данных, поддерживаемых Spark (например, Cosmos DB, База данных SQL Azure, Хранилище данных и т. д.). На снимке экрана показан моментальный снимок файла hvac.csv, используемого в этом руководстве. CSV-файл содержит все кластеры HDInsight Spark. Эти данные демонстрируют колебания температуры в некоторых зданиях.
 
-![Моментальный снимок данных для интерактивного SQL-запроса Spark](./media/apache-spark-load-data-run-query/hdinsight-spark-sample-data-interactive-spark-sql-query.png "Моментальный снимок данных для интерактивного SQL-запроса Spark")
+:::image type="content" source="./media/apache-spark-load-data-run-query/hdinsight-spark-sample-data-interactive-spark-sql-query.png " alt-text="Моментальный снимок данных для интерактивного SQL-запроса Spark" border="true":::
 
 1. Вставьте следующий код в пустую ячейку записной книжки Jupyter Notebook и нажмите **SHIFT+ВВОД** для выполнения кода. Код импортирует типы, необходимые для этого сценария:
 
@@ -55,7 +55,7 @@ Jupyter Notebook — это интерактивная среда Notebook, ко
 
     При запуске интерактивного запроса в Jupyter в заголовке окна веб-браузера или вкладки будет отображаться состояние **(Busy)** (Занято), а также название приложения. Кроме того, рядом с надписью **PySpark** в верхнем правом углу окна будет показан закрашенный кружок. После завершения задания он изменится на кружок без заливки.
 
-    ![Состояние интерактивного SQL-запроса Spark](./media/apache-spark-load-data-run-query/hdinsight-spark-interactive-spark-query-status.png "Состояние интерактивного SQL-запроса Spark")
+    :::image type="content" source="./media/apache-spark-load-data-run-query/hdinsight-spark-interactive-spark-query-status.png " alt-text="Состояние интерактивного SQL-запроса Spark" border="true":::
 
 1. Запишите возвращенный идентификатор сеанса. На рисунке выше идентификатор сеанса равен 0. При необходимости можно получить сведения о сеансе, перейдя по ссылке `https://CLUSTERNAME.azurehdinsight.net/livy/sessions/ID/statements`, где CLUSTERNAME — это имя кластера Spark, а ID — идентификатор сеанса.
 
@@ -80,11 +80,11 @@ Jupyter Notebook — это интерактивная среда Notebook, ко
 
    Отобразятся следующие табличные данные.
 
-     ![Табличный вывод результатов интерактивного запроса Spark](./media/apache-spark-load-data-run-query/hdinsight-interactive-spark-query-result.png "Табличный вывод результатов интерактивного запроса Spark")
+     :::image type="content" source="./media/apache-spark-load-data-run-query/hdinsight-interactive-spark-query-result.png " alt-text="Табличный вывод результатов интерактивного запроса Spark" border="true":::
 
 2. Результаты также можно просмотреть и в других визуализациях. Чтобы увидеть результат в виде диаграммы с областями, выберите **Область** и укажите другие значения, как показано ниже.
 
-    ![Диаграмма областей для результатов интерактивного запроса Spark](./media/apache-spark-load-data-run-query/hdinsight-interactive-spark-query-result-area-chart.png "Диаграмма областей для результатов интерактивного запроса Spark")
+    :::image type="content" source="./media/apache-spark-load-data-run-query/hdinsight-interactive-spark-query-result-area-chart.png " alt-text="Диаграмма областей для результатов интерактивного запроса Spark" border="true":::
 
 3. В строке меню записной книжки выберите **File** (Файл)  > **Save and Checkpoint** (Сохранить и создать контрольную точку).
 
@@ -96,7 +96,7 @@ Jupyter Notebook — это интерактивная среда Notebook, ко
 
 Откройте кластер на портале Azure и выберите **Удалить**.
 
-![Удаление кластера HDInsight](./media/apache-spark-load-data-run-query/hdinsight-azure-portal-delete-cluster.png "Удаление кластера HDInsight")
+:::image type="content" source="./media/apache-spark-load-data-run-query/hdinsight-azure-portal-delete-cluster.png " alt-text="Удаление кластера HDInsight" border="true":::
 
 Кроме того, можно выбрать имя группы ресурсов, чтобы открыть страницу группы ресурсов, а затем щелкнуть **Удалить группу ресурсов**. Вместе с группой ресурсов вы также удалите кластер Spark в HDInsight и учетную запись хранения по умолчанию.
 

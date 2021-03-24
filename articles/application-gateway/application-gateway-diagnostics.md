@@ -8,12 +8,12 @@ ms.service: application-gateway
 ms.topic: article
 ms.date: 11/22/2019
 ms.author: victorh
-ms.openlocfilehash: e18267d5a810826e41e05eb3dde3cd82a8eb9197
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 32d96ce79844cd89e06035036bfa68703a738ed1
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98065326"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950490"
 ---
 # <a name="back-end-health-and-diagnostic-logs-for-application-gateway"></a>Журналы работоспособности и диагностики серверной части для шлюза приложений
 
@@ -306,7 +306,7 @@ az network application-gateway show-backend-health --resource-group AdatumAppGat
 |ruleSetVersion     | Используемая версия набора правил. Возможные значения: 2.2.9 и 3.0.     |
 |ruleId     | Идентификатор правила события-триггера.        |
 |message     | Понятное сообщение для события-триггера. Дополнительные сведения приведены в разделе details.        |
-|action     |  Действие, выполняемое с запросом. Доступные значения сопоставлены и блокируются.      |
+|action     |  Действие, выполняемое с запросом. Доступные значения заблокированы и разрешены (для настраиваемых правил), совпадают (если правило соответствует части запроса) и обнаружено и заблокировано (для обязательных правил, в зависимости от того, находится ли WAF в режиме обнаружения или предотвращения).      |
 |site     | Сайт, для которого создан журнал. В нашем случае возможно только значение Global, так как применяются глобальные правила.|
 |подробности     | Сведения о событии-триггере.        |
 |details.message     | Описание правила.        |

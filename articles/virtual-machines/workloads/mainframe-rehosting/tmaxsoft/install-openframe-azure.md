@@ -8,13 +8,13 @@ ms.author: larryme
 ms.date: 04/02/2019
 ms.topic: article
 ms.service: virtual-machines
-ms.subservice: workloads
-ms.openlocfilehash: 01a053745ad0b2b280e214af8284113a02458a27
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.subservice: mainframe-rehosting
+ms.openlocfilehash: 2ca5f0311102c27c1233098a18ff16701b99ea2a
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102549181"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950796"
 ---
 # <a name="install-tmaxsoft-openframe-on-azure"></a>Установка Тмакссофт Опенфраме в Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "102549181"
 - ПРОТРИЕВЕ — решение, которое выполняет Еаситриеве на языке мэйнфреймов.
 - Офминер — решение, которое анализирует ресурсы мэйнфреймов и затем переносит их в Azure.
 
-## <a name="architecture"></a>Архитектура
+## <a name="architecture"></a>Architecture
 
 На следующем рисунке представлен обзор архитектурных компонентов Опенфраме 7,0, установленных в этом руководстве.
 
