@@ -4,12 +4,12 @@ description: Получите ответы на распространенные
 ms.service: hdinsight
 ms.topic: troubleshooting
 ms.date: 08/15/2019
-ms.openlocfilehash: b5b8ccbfd3e39415416cfc8fabcf9614f5934042
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0cd2571276992812327e286ba9b935fcbf6fbbaf
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98931416"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871815"
 ---
 # <a name="troubleshoot-apache-hadoop-yarn-by-using-azure-hdinsight"></a>Устранение неполадок рабочих нагрузок Apache Hadoop YARN с помощью Azure HDInsight
 
@@ -31,27 +31,27 @@ ms.locfileid: "98931416"
 
 1. Выберите значок **просмотров Ambari**, а затем выберите шаблон сетки. После этого выберите **диспетчер очереди YARN**.
 
-    ![Диспетчер очереди YARN панели мониторинга Apache Ambari](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-1.png)
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-1.png" alt-text="Диспетчер очереди YARN панели мониторинга Apache Ambari" border="false":::
 2. Выберите очередь **по умолчанию**.
 
-    ![Apache Ambari YARN выбор очереди по умолчанию](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-2.png)
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-2.png" alt-text="Apache Ambari YARN выбор очереди по умолчанию" border="false":::
 3. Для очереди **default** измените **емкость** с 50 % на 25 %. Для очереди **thriftsvr** измените **емкость** на 25 %.
 
-    ![Изменение емкости до 25 % для очередей default и thriftsvr](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-3.png)
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-3.png" alt-text="Изменение емкости до 25 % для очередей default и thriftsvr" border="false":::
 4. Нажмите кнопку **Add Queue** (Добавить очередь), чтобы создать очередь.
 
-    ![Очередь добавления панели мониторинга YARN Apache Ambari](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-4.png)
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-4.png" alt-text="Очередь добавления панели мониторинга YARN Apache Ambari" border="false":::
 
 5. Присвойте имя новой очереди.
 
-    ![Очередь имен панели мониторинга Apache Ambari YARN](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-5.png)  
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-5.png" alt-text="Очередь имен панели мониторинга Apache Ambari YARN" border="false":::  
 
 6. Оставьте значение **емкости** 50 %, а затем выберите кнопку **Действия**.
 
-    ![Выбор действия Apache Ambari YARN](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-6.png)  
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-6.png" alt-text="Выбор действия Apache Ambari YARN" border="false":::  
 7. Выберите команду **Save and Refresh Queues** (Сохранить и обновить очереди).
 
-    ![Выбор Save and Refresh Queues (Сохранить и обновить очереди)](media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-7.png)  
+    :::image type="content" source="media/hdinsight-troubleshoot-yarn/apache-yarn-create-queue-7.png" alt-text="Выбор сохранения и обновления очередей" border="false":::  
 
 После применения эти изменения сразу же появятся на пользовательском интерфейсе планировщика YARN.
 

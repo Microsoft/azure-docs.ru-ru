@@ -5,18 +5,18 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/20/2020
-ms.openlocfilehash: 4d42cedbc5dc20c929703be106e732b4806f3902
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0c9c3b2d915e54cf954703c56c2087637cc80aa0
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940599"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864624"
 ---
 # <a name="use-hdinsight-spark-cluster-to-read-and-write-data-to-azure-sql-database"></a>Использование кластера HDInsight Spark для чтения и записи данных в базе данных SQL Azure
 
 Узнайте, как подключить кластер Apache Spark в Azure HDInsight к базе данных SQL Azure. Затем чтение, запись и потоковая передача данных в базу данных SQL. В инструкциях, приведенных в этой статье, используется Jupyter Notebook для выполнения фрагментов кода Scala. Однако можно создать автономное приложение в Scala или Python и выполнить те же задачи.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Кластер Azure HDInsight Spark.  Инструкции см. в статье [Создание кластера Apache Spark в Azure HDInsight](apache-spark-jupyter-spark-sql.md).
 
@@ -35,7 +35,7 @@ ms.locfileid: "98940599"
 1. Откройте кластер на [портале Azure](https://portal.azure.com/).
 1. В правой части выберите **Jupyter Notebook** **панели мониторинга кластера** .  Если **панели мониторинга кластера** не отображаются, выберите **Обзор** в меню слева. При появлении запроса введите учетные данные администратора для кластера.
 
-    ![Jupyter Notebook на Apache Spark](./media/apache-spark-connect-to-sql-database/hdinsight-spark-cluster-dashboard-jupyter-notebook.png "Jupyter Notebook в Spark")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/hdinsight-spark-cluster-dashboard-jupyter-notebook.png " alt-text="Jupyter Notebook на Apache Spark" border="true":::
 
    > [!NOTE]  
    > Вы также можете получить доступ к Jupyter Notebook в кластере Spark, открыв следующий URL-адрес в браузере. Замените **CLUSTERNAME** именем кластера:
@@ -44,7 +44,7 @@ ms.locfileid: "98940599"
 
 1. В Jupyter Notebook в правом верхнем углу щелкните **создать**, а затем нажмите **Spark** , чтобы создать записную книжку Scala. Записные книжки Jupyter в кластере HDInsight Spark также предоставляют ядро **PySpark** для приложений python2 и ядро **PySpark3** для приложений Python3. В этой статье мы создаем записную книжку Scala.
 
-    ![Ядра для Jupyter Notebook в Spark](./media/apache-spark-connect-to-sql-database/kernel-jupyter-notebook-on-spark.png "Ядра для Jupyter Notebook в Spark")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/kernel-jupyter-notebook-on-spark.png " alt-text="Ядра для Jupyter Notebook в Spark" border="true":::
 
     Дополнительные сведения о ядрах см. в статье [использование Jupyter Notebook ядер с Apache Spark кластерами в HDInsight](apache-spark-jupyter-notebook-kernels.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "98940599"
 
 1. Откроется новая Записная книжка с именем по умолчанию без **названия**. Щелкните это имя и введите имя по своему усмотрению.
 
-    ![Указание имени для записной книжки](./media/apache-spark-connect-to-sql-database/hdinsight-spark-jupyter-notebook-name.png "Указание имени для записной книжки")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/hdinsight-spark-jupyter-notebook-name.png " alt-text="Указание имени для записной книжки" border="true":::
 
 Теперь можно приступить к созданию приложения.
 
@@ -100,7 +100,7 @@ ms.locfileid: "98940599"
 
     Вы увидите результат, аналогичный следующему изображению:
 
-    ![выходные данные схемы](./media/apache-spark-connect-to-sql-database/read-from-sql-schema-output.png "выходные данные схемы")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/read-from-sql-schema-output.png " alt-text="выходные данные схемы" border="true":::
 
 1. Вы также можете выполнять такие операции, как получение первых 10 строк.
 
@@ -167,11 +167,11 @@ ms.locfileid: "98940599"
 
     а. Запустите SSMS и подключитесь к базе данных SQL Azure, предоставив сведения о подключении, как показано на снимке экрана ниже.
 
-    ![Подключение к базе данных SQL с помощью SSMS1](./media/apache-spark-connect-to-sql-database/connect-to-sql-db-ssms.png "Подключение к базе данных SQL с помощью SSMS1")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/connect-to-sql-db-ssms.png " alt-text="Подключение к базе данных SQL с помощью SSMS1" border="true":::
 
     b. В **обозревателе объектов** разверните базу данных и узел таблицы, чтобы увидеть созданную таблицу **dbo. таблицу hvactable** .
 
-    ![Подключение к базе данных SQL с помощью SSMS2](./media/apache-spark-connect-to-sql-database/connect-to-sql-db-ssms-locate-table.png "Подключение к базе данных SQL с помощью SSMS2")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/connect-to-sql-db-ssms-locate-table.png " alt-text="Подключение к базе данных SQL с помощью SSMS2" border="true":::
 
 1. Выполните запрос в SSMS для просмотра всех столбцов в таблице.
 
@@ -209,7 +209,7 @@ ms.locfileid: "98940599"
 
 1. Выходные данные будут содержать схему файла **HVAC.csv**. Также `hvactable` имеет ту же схему. В выходных данных перечислены столбцы в таблице.
 
-    !["Таблица схемы hdinsight Apache Spark"](./media/apache-spark-connect-to-sql-database/hdinsight-schema-table.png "Схема таблицы")
+    :::image type="content" source="./media/apache-spark-connect-to-sql-database/hdinsight-schema-table.png " alt-text="&quot;Таблица схемы hdinsight Apache Spark&quot;" border="true":::
 
 1. Наконец, используйте следующий фрагмент кода для чтения данных из HVAC.csv и потоковой передачи в в `hvactable` базе данных. Вставьте фрагмент в ячейку кода, замените значения заполнителей значениями для базы данных, а затем нажмите клавиши **SHIFT + ВВОД** для запуска.
 

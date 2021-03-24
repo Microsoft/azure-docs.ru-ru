@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: contperf-fy21q1, contperf-fy21q2
 ms.date: 12/14/2020
-ms.openlocfilehash: 130a5a58fc7dab6f94c011cf9764743f9114e48a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5dabae76308f32da7968d8cfa89b95f1eb19c142
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942636"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863774"
 ---
 # <a name="automatically-scale-azure-hdinsight-clusters"></a>Автоматическое масштабирование кластеров Azure HDInsight
 
@@ -91,7 +91,7 @@ ms.locfileid: "98942636"
     * **Минимальное** число рабочих узлов.
     * **Максимальное** число рабочих узлов.
 
-    ![Включить автомасштабирование на основе загрузки рабочих узлов](./media/hdinsight-autoscale-clusters/azure-portal-cluster-configuration-pricing-autoscale.png)
+    :::image type="content" source="./media/hdinsight-autoscale-clusters/azure-portal-cluster-configuration-pricing-autoscale.png" alt-text="Включить автомасштабирование на основе загрузки рабочих узлов":::
 
 Начальное количество рабочих узлов должно быть в диапазоне между максимальным и минимальным количеством. Это значение определяет начальный размер кластера при его создании. Минимальное число рабочих узлов должно быть равно трем или более. Масштабирование кластера до трех узлов может привести к зависанию в защищенном режиме из-за недостаточной репликации файлов.  Дополнительные сведения см. [в разделе зависнуть в защищенном режиме](./hdinsight-scaling-best-practices.md#getting-stuck-in-safe-mode).
 
@@ -108,7 +108,7 @@ ms.locfileid: "98942636"
 1. Измените время, когда условие должно вступить в силу, и число узлов, до которого будет масштабироваться кластер.
 1. При необходимости добавьте дополнительные условия.
 
-    ![Включить создание на основе расписания рабочих узлов](./media/hdinsight-autoscale-clusters/hdinsight-autoscale-clusters-schedule-creation.png)
+    :::image type="content" source="./media/hdinsight-autoscale-clusters/hdinsight-autoscale-clusters-schedule-creation.png" alt-text="Включить создание на основе расписания рабочих узлов":::
 
 Число узлов должно быть в диапазоне от 3 до максимального количества рабочих узлов, введенных перед добавлением условий.
 
@@ -116,7 +116,7 @@ ms.locfileid: "98942636"
 
 Выберите тип виртуальной машины для рабочих узлов, выбрав виртуальную машину из раскрывающегося списка в разделе **размер узла**. После выбора типа виртуальной машины для каждого типа узла можно просмотреть диапазон оценочных затрат для всего кластера. Настройте типы виртуальных машин в соответствии с бюджетом.
 
-![Включить размер узла автомасштабирования на основе расписания рабочего узла](./media/hdinsight-autoscale-clusters/azure-portal-cluster-configuration-pricing-vmsize.png)
+:::image type="content" source="./media/hdinsight-autoscale-clusters/azure-portal-cluster-configuration-pricing-vmsize.png" alt-text="Включить размер узла автомасштабирования на основе расписания рабочего узла":::
 
 Ваша подписка имеет квоту емкости для каждого региона. Общее число ядер головных узлов и максимальное количество рабочих узлов не может превышать квоту емкости. Тем не менее эта квота — нестрогое ограничение. Вы всегда можете создать запрос в службу поддержки, чтобы легко ее повысить.
 
@@ -193,7 +193,7 @@ ms.locfileid: "98942636"
 
 Чтобы включить Автомасштабирование в работающем кластере, выберите **Размер кластера** в разделе " **Параметры**". Затем выберите **включить Автомасштабирование**. Выберите нужный тип автомасштабирования и введите параметры масштабирования на основе нагрузки или по расписанию. Наконец, щелкните **Сохранить**.
 
-![Включение автомасштабирования на основе расписания рабочих узлов в кластере](./media/hdinsight-autoscale-clusters/azure-portal-settings-autoscale.png)
+:::image type="content" source="./media/hdinsight-autoscale-clusters/azure-portal-settings-autoscale.png" alt-text="Включение автомасштабирования на основе расписания рабочих узлов в кластере":::
 
 #### <a name="using-the-rest-api"></a>Использование REST API
 
@@ -217,7 +217,7 @@ https://management.azure.com/subscriptions/{subscription Id}/resourceGroups/{res
 
 Состояние кластера, указанное в портал Azure, может помочь в мониторинге действий автомасштабирования.
 
-![Включить состояние кластера автомасштабирования на основе рабочей нагрузки для рабочих узлов](./media/hdinsight-autoscale-clusters/hdinsight-autoscale-clusters-cluster-status.png)
+:::image type="content" source="./media/hdinsight-autoscale-clusters/hdinsight-autoscale-clusters-cluster-status.png" alt-text="Включить состояние кластера автомасштабирования на основе рабочей нагрузки для рабочих узлов":::
 
 Все сообщения о состоянии кластера, которые вы можете увидеть, описаны в списке ниже.
 
@@ -237,7 +237,7 @@ https://management.azure.com/subscriptions/{subscription Id}/resourceGroups/{res
 
 Выберите **метрики** в разделе **мониторинг**. Затем в раскрывающемся списке **Метрика** выберите **Добавить метрику** и **число активных рабочих ролей** . Нажмите кнопку в правом верхнем углу, чтобы изменить диапазон времени.
 
-![Включить метрику автомасштабирования на основе расписания рабочих узлов](./media/hdinsight-autoscale-clusters/hdinsight-autoscale-clusters-chart-metric.png)
+:::image type="content" source="./media/hdinsight-autoscale-clusters/hdinsight-autoscale-clusters-chart-metric.png" alt-text="Включить метрику автомасштабирования на основе расписания рабочих узлов":::
 
 ## <a name="best-practices"></a>Рекомендации
 

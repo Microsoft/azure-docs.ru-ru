@@ -9,15 +9,15 @@ ms.service: active-directory
 ms.subservice: domain-services
 ms.workload: identity
 ms.topic: sample
-ms.date: 02/04/2021
+ms.date: 03/10/2021
 ms.author: justinha
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: e79bbb2ac6febb39fec27aa6ac3c82ff58f81122
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: 8056e95b731b1818e10d7415cb813d6aba0ec7fa
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99575827"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103149107"
 ---
 # <a name="enable-azure-active-directory-domain-services-using-powershell"></a>Включение доменных служб Azure Active Directory с помощью PowerShell
 
@@ -39,6 +39,13 @@ ms.locfileid: "99575827"
     * Войдите в клиент Azure AD с помощью командлета [Connect-AzureAD][Connect-AzureAD].
 * Привилегии *глобального администратора* для клиента Azure AD, чтобы включить доменные службы Azure AD.
 * Для создания нужных ресурсов Azure AD DS требуются привилегии *участника* в подписке Azure.
+
+  > [!IMPORTANT]
+  > Так как модуль PowerShell **Az.ADDomainServices** предоставляется в предварительной версии, его нужно установить отдельно с помощью командлета `Install-Module`.
+
+  ```azurepowershell-interactive
+  Install-Module -Name Az.ADDomainServices
+  ```
 
 ## <a name="create-required-azure-ad-resources"></a>Создание необходимых ресурсов Azure AD
 
@@ -93,13 +100,13 @@ Add-AzureADGroupMember -ObjectId $GroupObjectId.ObjectId -RefObjectId $UserObjec
 
 Сначала зарегистрируйте поставщика ресурсов доменных служб Azure AD с помощью командлета [Register-AzResourceProvider][Register-AzResourceProvider]:
 
-```powershell
+```azurepowershell-interactive
 Register-AzResourceProvider -ProviderNamespace Microsoft.AAD
 ```
 
 Затем создайте группу ресурсов с помощью командлета [New-AzResourceGroup][New-AzResourceGroup]. В следующем примере создается группа ресурсов с именем *myResourceGroup* в регионе *westus*. Используйте желаемое имя и регион:
 
-```powershell
+```azurepowershell-interactive
 $ResourceGroupName = "myResourceGroup"
 $AzureLocation = "westus"
 
@@ -113,7 +120,7 @@ New-AzResourceGroup `
 
 Создайте подсети с помощью командлета [New-AzVirtualNetworkSubnetConfig][New-AzVirtualNetworkSubnetConfig], а затем создайте виртуальную сеть с помощью командлета [New-AzVirtualNetwork][New-AzVirtualNetwork].
 
-```powershell
+```azurepowershell-interactive
 $VnetName = "myVnet"
 
 # Create the dedicated subnet for Azure AD Domain Services.
@@ -142,7 +149,7 @@ Azure AD DS требуется группа безопасности сети, 
 
 Указанные ниже командлеты PowerShell используют [New-AzNetworkSecurityRuleConfig][New-AzNetworkSecurityRuleConfig] для создания правил, а затем [New-AzNetworkSecurityGroup][New-AzNetworkSecurityGroup] для создания группы безопасности сети. Затем группа безопасности сети и правила связываются с подсетью виртуальной сети с помощью командлета [Set-AzVirtualNetworkSubnetConfig][Set-AzVirtualNetworkSubnetConfig].
 
-```powershell
+```azurepowershell-interactive
 $NSGName = "aaddsNSG"
 
 # Create a rule to allow inbound TCP port 3389 traffic from Microsoft secure access workstations for troubleshooting
@@ -196,17 +203,24 @@ $vnet | Set-AzVirtualNetwork
 
 Вы не можете настроить распределение Azure AD DS между зонами. Платформа Azure автоматически обрабатывает распределение ресурсов зоны. См. [дополнительные сведения о зонах доступности и регионах][availability-zones].
 
-```powershell
+```azurepowershell-interactive
 $AzureSubscriptionId = "YOUR_AZURE_SUBSCRIPTION_ID"
 $ManagedDomainName = "aaddscontoso.com"
 
 # Enable Azure AD Domain Services for the directory.
-New-AzResource -ResourceId "/subscriptions/$AzureSubscriptionId/resourceGroups/$ResourceGroupName/providers/Microsoft.AAD/DomainServices/$ManagedDomainName" `
-  -ApiVersion "2017-06-01" `
-  -Location $AzureLocation `
-  -Properties @{"DomainName"=$ManagedDomainName; `
-    "SubnetId"="/subscriptions/$AzureSubscriptionId/resourceGroups/$ResourceGroupName/providers/Microsoft.Network/virtualNetworks/$VnetName/subnets/DomainServices"} `
-  -Force -Verbose
+$replicaSetParams = @{
+  Location = $AzureLocation
+  SubnetId = "/subscriptions/$AzureSubscriptionId/resourceGroups/$ResourceGroupName/providers/Microsoft.Network/virtualNetworks/$VnetName/subnets/DomainServices"
+}
+$replicaSet = New-AzADDomainServiceReplicaSetObject @replicaSetParams
+
+$domainServiceParams = @{
+  Name = $ManagedDomainName
+  ResourceGroupName = $ResourceGroupName
+  DomainName = $ManagedDomainName
+  ReplicaSet = $replicaSet
+}
+New-AzADDomainService @domainServiceParams
 ```
 
 Создание ресурса и возврат управления в командную строку PowerShell занимает несколько минут. Подготовка к работе управляемого домена продолжается в фоновом режиме. На завершение развертывания может понадобиться до часа. На портале Azure на странице **Обзор** для управляемого домена на этом этапе развертывания отображаются сведения о текущем состоянии.
@@ -224,7 +238,7 @@ New-AzResource -ResourceId "/subscriptions/$AzureSubscriptionId/resourceGroups/$
 > [!NOTE]
 > Чтобы включить Azure AD DS, нужно быть глобальным администратором для клиента Azure AD. Кроме того, понадобятся разрешения не ниже уровня *Участник* в подписке Azure.
 
-```powershell
+```azurepowershell-interactive
 # Change the following values to match your deployment.
 $AaddsAdminUserUpn = "admin@contoso.onmicrosoft.com"
 $ResourceGroupName = "myResourceGroup"
@@ -292,7 +306,7 @@ $Vnet=New-AzVirtualNetwork `
   -Name $VnetName `
   -AddressPrefix 10.0.0.0/16 `
   -Subnet $AaddsSubnet,$WorkloadSubnet
-  
+
 $NSGName = "aaddsNSG"
 
 # Create a rule to allow inbound TCP port 3389 traffic from Microsoft secure access workstations for troubleshooting
@@ -336,12 +350,19 @@ Set-AzVirtualNetworkSubnetConfig -Name $SubnetName `
 $vnet | Set-AzVirtualNetwork
 
 # Enable Azure AD Domain Services for the directory.
-New-AzResource -ResourceId "/subscriptions/$AzureSubscriptionId/resourceGroups/$ResourceGroupName/providers/Microsoft.AAD/DomainServices/$ManagedDomainName" `
-  -ApiVersion "2017-06-01" `
-  -Location $AzureLocation `
-  -Properties @{"DomainName"=$ManagedDomainName; `
-    "SubnetId"="/subscriptions/$AzureSubscriptionId/resourceGroups/$ResourceGroupName/providers/Microsoft.Network/virtualNetworks/$VnetName/subnets/DomainServices"} `
-  -Force -Verbose
+$replicaSetParams = @{
+  Location = $AzureLocation
+  SubnetId = "/subscriptions/$AzureSubscriptionId/resourceGroups/$ResourceGroupName/providers/Microsoft.Network/virtualNetworks/$VnetName/subnets/DomainServices"
+}
+$replicaSet = New-AzADDomainServiceReplicaSetObject @replicaSetParams
+
+$domainServiceParams = @{
+  Name = $ManagedDomainName
+  ResourceGroupName = $ResourceGroupName
+  DomainName = $ManagedDomainName
+  ReplicaSet = $replicaSet
+}
+New-AzADDomainService @domainServiceParams
 ```
 
 Создание ресурса и возврат управления в командную строку PowerShell занимает несколько минут. Подготовка к работе управляемого домена продолжается в фоновом режиме. На завершение развертывания может понадобиться до часа. На портале Azure на странице **Обзор** для управляемого домена на этом этапе развертывания отображаются сведения о текущем состоянии.

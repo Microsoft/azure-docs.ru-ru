@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 05/01/2019
-ms.openlocfilehash: 6c020153d5c5cb5aad593c5b15e60e67951b89d4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d061832022b983e4d5fd55e72c1d4789b82f6633
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945195"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863230"
 ---
 # <a name="set-up-tls-encryption-and-authentication-for-apache-kafka-in-azure-hdinsight"></a>Настройка шифрования и проверки подлинности TLS для Apache Kafka в Azure HDInsight
 
@@ -128,11 +128,11 @@ ms.locfileid: "98945195"
 1. В разделе **Kafka Broker** (Брокер Kafka) задайте для свойства **listeners** значение `PLAINTEXT://localhost:9092,SSL://localhost:9093`.
 1. В разделе **Advanced kafka-broker** (Расширенный брокер Kafka) задайте для свойства **security.inter.broker.protocol** значение `SSL`.
 
-    ![Изменение свойств конфигурации SSL для Kafka в Ambari](./media/apache-kafka-ssl-encryption-authentication/editing-configuration-ambari.png)
+    :::image type="content" source="./media/apache-kafka-ssl-encryption-authentication/editing-configuration-ambari.png" alt-text="Изменение свойств конфигурации Kafka SSL в Ambari" border="true":::
 
 1. В разделе **Custom kafka-broker** (Пользовательский брокер Kafka) задайте для свойства **ssl.client.auth** значение `required`. Этот шаг необходим только при настройке проверки подлинности и шифрования.
 
-    ![Изменение свойств конфигурации SSL для Kafka в Ambari](./media/apache-kafka-ssl-encryption-authentication/editing-configuration-ambari2.png)
+    :::image type="content" source="./media/apache-kafka-ssl-encryption-authentication/editing-configuration-ambari2.png" alt-text="Изменение свойств конфигурации SSL для Kafka в Ambari" border="true":::
 
 1. Для HDI версии 3,6 Перейдите в пользовательский интерфейс Ambari и добавьте следующие конфигурации в разделе **Advanced Kafka-env** и свойство **шаблона Kafka-env** .
 
@@ -153,11 +153,11 @@ ms.locfileid: "98945195"
 
     Для HDI версии 3,6:
 
-    ![Изменение свойства шаблона Kafka-env в Ambari](./media/apache-kafka-ssl-encryption-authentication/editing-configuration-kafka-env.png)
+    :::image type="content" source="./media/apache-kafka-ssl-encryption-authentication/editing-configuration-kafka-env.png" alt-text="Изменение свойства шаблона Kafka-env в Ambari" border="true":::
 
     Для HDI версии 4,0:
 
-     ![Изменение свойства шаблона Kafka-env в Ambari 4](./media/apache-kafka-ssl-encryption-authentication/editing-configuration-kafka-env-four.png)
+     :::image type="content" source="./media/apache-kafka-ssl-encryption-authentication/editing-configuration-kafka-env-four.png" alt-text="Изменение свойства шаблона Kafka-env в Ambari 4" border="true":::
 
 1. Перезапустите все брокеры Kafka.
 

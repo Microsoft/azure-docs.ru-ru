@@ -6,12 +6,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 12/31/2019
 ms.custom: devx-track-csharp
-ms.openlocfilehash: a81f2b21545a5362168482f3f0a65fbbbf381c10
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5360057ec2dfbd2b40c6f086f5e910103c544b62
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929155"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865457"
 ---
 # <a name="develop-c-topologies-for-apache-storm-by-using-the-data-lake-tools-for-visual-studio"></a>Разработка топологий для Apache Storm на C# с помощью средств Data Lake для Visual Studio
 
@@ -128,7 +128,7 @@ namespace ConsoleApplication2
 
 1. В окне **Настройка нового проекта** введите **имя проекта** *WordCount*, перейдите на страницу или создайте путь к каталогу **расположения** для проекта, а затем нажмите кнопку **создать**.
 
-    ![Приложение для работы с проектами, диалоговое окно "Настройка нового проекта", Visual Studio](./media/apache-storm-develop-csharp-visual-studio-topology/apache-storm-new-project.png)
+    :::image type="content" source="./media/apache-storm-develop-csharp-visual-studio-topology/apache-storm-new-project.png" alt-text="Приложение для работы с проектами, диалоговое окно &quot;Настройка нового проекта&quot;, Visual Studio" border="true":::
 
 После создания проекта у вас должны быть следующие файлы:
 
@@ -333,7 +333,7 @@ namespace ConsoleApplication2
 
 Потоки данных между компонентами могут быть представлены в виде диаграммы воронок и сит. Граф для этой топологии выглядит следующим образом.
 
-![Схема размещения компонентов spout и молнии, топология с графикой](./media/apache-storm-develop-csharp-visual-studio-topology/word-count-topology1.png)
+:::image type="content" source="./media/apache-storm-develop-csharp-visual-studio-topology/word-count-topology1.png" alt-text="Схема размещения компонентов spout и молнии, топология с графикой" border="false":::
 
 Spout выдает предложения, которые распространяются на экземпляры разделителя. Сито Splitter разбивает предложения на слова, которые распределяются среди экземпляров сита Counter.
 
@@ -413,7 +413,7 @@ return topologyBuilder;
 
     После успешной отправки топологии появится окно **представления топологии** для кластера. Выберите топологию **WordCount** из списка, чтобы просмотреть сведения о работающей топологии.
 
-    ![Окно представления топологии "дерево", кластер HDInsight, Visual Studio](./media/apache-storm-develop-csharp-visual-studio-topology/storm-topology-view.png)
+    :::image type="content" source="./media/apache-storm-develop-csharp-visual-studio-topology/storm-topology-view.png" alt-text="Окно представления топологии &quot;дерево&quot;, кластер HDInsight, Visual Studio" border="true":::
 
     > [!NOTE]  
     > **Топологии Storm** можно также просмотреть в **обозревателе сервера**. Разверните **Azure**  >  **hdinsight**, щелкните правой кнопкой мыши множество в кластере HDInsight, а затем выберите пункт **Просмотр топологий**.
@@ -567,7 +567,7 @@ public static MyComponent Get(Context ctx, Dictionary<string, Object> parms)
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши проект и выберите **Свойства**. В свойствах проекта. Затем измените **тип выходных данных** на **консольное приложение**.
 
-   ![Приложение для HDInsight, свойства проекта, тип вывода](./media/apache-storm-develop-csharp-visual-studio-topology/hdi-output-type-window.png)
+   :::image type="content" source="./media/apache-storm-develop-csharp-visual-studio-topology/hdi-output-type-window.png" alt-text="Приложение для HDInsight, свойства проекта, тип вывода" border="true":::
 
    > [!NOTE]
    > Перед развертыванием топологии в кластере не забудьте вернуть для параметра **Тип выходных данных** значение **Библиотеки классов**.

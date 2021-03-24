@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive,hdiseo17may2017,seodec18
 ms.date: 08/06/2020
-ms.openlocfilehash: a04d976ed3d9be253425b4c8a5a5c0effb6f80b8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 04da79509ac40ba870014995d8318a49c98e1ce5
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101741843"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863417"
 ---
 # <a name="set-up-clusters-in-hdinsight-with-apache-hadoop-apache-spark-apache-kafka-and-more"></a>Установка кластеров в HDInsight с использованием Apache Hadoop, Apache Spark, Apache Kafka и других технологий
 
@@ -42,7 +42,7 @@ ms.locfileid: "101741843"
 
 ## <a name="basics"></a>Основы
 
-![быстрое создание параметров hdinsight — настраиваемая Быстрая](./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-basics-blank-fs.png)
+:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-basics-blank-fs.png" alt-text="быстрое создание параметров hdinsight — настраиваемая Быстрая":::
 
 ### <a name="project-details"></a>сведения о проекте;
 
@@ -105,9 +105,9 @@ ms.locfileid: "101741843"
 * Максимальная длина: 64
 * Зарезервированные имена: Hadoop, Users, Oozie, Hive, mapred, ambari-QA, Zookeeper, TEZ, HDFS, sqoop, Yarn, хкат, AMS, HBase, множество, администратор, администратор, пользователь, Пользователь1, тест, Пользователь2, test1, user3, admin1, 1, 123, a, актусер, ADM, Admin2, ASPNET, резервное копирование, консоль, Дэвид, гость, Джон, владелец, корень, сервер, SQL, поддержка, support_388945a0, sys, test2, test3, user4, User5, Spark
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
-![Параметры хранилища кластера: конечные точки, совместимые с HDFS](./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-storage.png)
+:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-storage.png" alt-text="Параметры хранилища кластера: конечные точки, совместимые с HDFS":::
 
 Хотя при локальной установке кластера Hadoop для хранилища используется распределенная файловая система Hadoop (HDFS), в облаке применяются конечные точки хранилища, подключенные к кластеру. Использование облачного хранилища позволяет безопасно удалять кластеры HDInsight, используемые для вычислений, сохраняя при этом данные.
 
@@ -165,7 +165,7 @@ Ambari используется для мониторинга кластеров
 
 ## <a name="security--networking"></a>Безопасность и работа в сети
 
-![hdinsight create options choose enterprise security package](./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-security-networking.png)
+:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-security-networking.png" alt-text="hdinsight create options choose enterprise security package":::
 
 ### <a name="enterprise-security-package"></a>Пакет безопасности корпоративного уровня
 
@@ -201,7 +201,7 @@ Ambari используется для мониторинга кластеров
 
 ## <a name="configuration--pricing"></a>Настройка и цены
 
-![HDInsight выберите размер узла](./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-configuration.png)
+:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/azure-portal-cluster-configuration.png" alt-text="HDInsight выберите размер узла":::
 
 За использование узла взимается плата, если кластер существует. Начисление оплаты начинается после создания кластера и прекращается только после его удаления. Кластер не может быть освобожден или помещен в удержание.
 
@@ -209,12 +209,12 @@ Ambari используется для мониторинга кластеров
 
 Для каждого типа кластера используется своя терминология. Кроме того, типы отличаются количеством узлов и стандартными размерами виртуальных машин. В следующей таблице число узлов каждого типа указано в скобках.
 
-| Type | Узлы | Схема |
+| Тип | Узлы | Схема |
 | --- | --- | --- |
-| Hadoop |Головной узел (2), Рабочий узел (1 +) |![Узлы кластера HDInsight Hadoop](./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-hadoop-cluster-type-nodes.png) |
-| HBase |Головной сервер (2), региональный сервер (от 1), основной узел или узел Zookeeper (3) |![Установка типа кластера HDInsight HBase](./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-hbase-cluster-type-setup.png) |
-| Буря |Узел Nimbus (2), сервер супервизора (от 1), узел Zookeeper (3) |![Установка типа кластера HDInsight](./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-storm-cluster-type-setup.png) |
-| Spark |Головной узел (2), Рабочий узел (1 +), узел ZooKeeper (3) (бесплатно для размера виртуальной машины a1 ZooKeeper) |![Установка типа кластера HDInsight Spark](./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-spark-cluster-type-setup.png) |
+| Hadoop |Головной узел (2), Рабочий узел (1 +) |:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-hadoop-cluster-type-nodes.png" alt-text="Узлы кластера HDInsight Hadoop" border="false"::: |
+| HBase |Головной сервер (2), региональный сервер (от 1), основной узел или узел Zookeeper (3) |:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-hbase-cluster-type-setup.png" alt-text="Установка типа кластера HDInsight HBase" border="false"::: |
+| Буря |Узел Nimbus (2), сервер супервизора (от 1), узел Zookeeper (3) |:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-storm-cluster-type-setup.png" alt-text="Установка типа кластера HDInsight" border="false"::: |
+| Spark |Головной узел (2), Рабочий узел (1 +), узел ZooKeeper (3) (бесплатно для размера виртуальной машины a1 ZooKeeper) |:::image type="content" source="./media/hdinsight-hadoop-provision-linux-clusters/hdinsight-spark-cluster-type-setup.png" alt-text="Установка типа кластера HDInsight Spark" border="false"::: |
 
 Дополнительные сведения см. в разделе [Конфигурация узлов и размеры виртуальных машин по умолчанию для кластеров](hdinsight-supported-node-configuration.md) статьи "Что представляют собой компоненты и версии Hadoop, доступные в HDInsight?"
 
@@ -222,7 +222,7 @@ Ambari используется для мониторинга кластеров
 
 Кластеры разных типов отличаются типами, количеством и размерами узлов.
 * Тип кластера Hadoop по умолчанию:
-    * два *головных узла*;  
+    * два *головных узла*;
     * Четыре *рабочих узла*
 * Тип кластера Storm по умолчанию:
     * два *узла Nimbus*;

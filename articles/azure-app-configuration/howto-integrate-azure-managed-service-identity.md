@@ -8,12 +8,12 @@ ms.service: azure-app-configuration
 ms.custom: devx-track-csharp, fasttrack-edit
 ms.topic: conceptual
 ms.date: 2/25/2020
-ms.openlocfilehash: 2f446df95c795eaac378340ed0d5de7b31dfcfee
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 386a0e27c0f73f5bcd42397ed515f7561d5097fd
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102219049"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104955063"
 ---
 # <a name="use-managed-identities-to-access-app-configuration"></a>Использование управляемых удостоверений для получения доступа к службе "Конфигурация приложений"
 
@@ -140,12 +140,12 @@ Azure Active Directory [управляемые удостоверения](../ac
     ---
 
     > [!NOTE]
-    > Если вы хотите использовать **управляемое пользователем удостоверение**, обязательно укажите ClientID при создании [манажедидентитикредентиал](https://docs.microsoft.com/dotnet/api/azure.identity.managedidentitycredential).
+    > Если вы хотите использовать **управляемое пользователем удостоверение**, обязательно укажите ClientID при создании [манажедидентитикредентиал](/dotnet/api/azure.identity.managedidentitycredential).
     >```
     >config.AddAzureAppConfiguration(options =>
     >   options.Connect(new Uri(settings["AppConfig:Endpoint"]), new ManagedIdentityCredential(<your_clientId>)));
     >```
-    >Как описано в разделах [управляемые удостоверения для ресурсов Azure: вопросы и ответы](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/known-issues#what-identity-will-imds-default-to-if-dont-specify-the-identity-in-the-request), можно определить, какое управляемое удостоверение используется по умолчанию. В этом случае библиотека удостоверений Azure позволяет указать необходимое удостоверение, чтобы избежать проблем среды выполнения превысил допустимое в будущем (например, если Добавлено новое управляемое удостоверение, назначенное пользователем, или если включено управляемое системой удостоверение). Поэтому необходимо указать clientId, даже если определено только одно назначенное пользователем управляемое удостоверение, а управляемое удостоверение не назначено системой.
+    >Как описано в разделах [управляемые удостоверения для ресурсов Azure: вопросы и ответы](../active-directory/managed-identities-azure-resources/known-issues.md#what-identity-will-imds-default-to-if-dont-specify-the-identity-in-the-request), можно определить, какое управляемое удостоверение используется по умолчанию. В этом случае библиотека удостоверений Azure позволяет указать необходимое удостоверение, чтобы избежать проблем среды выполнения превысил допустимое в будущем (например, если Добавлено новое управляемое удостоверение, назначенное пользователем, или если включено управляемое системой удостоверение). Поэтому необходимо указать clientId, даже если определено только одно назначенное пользователем управляемое удостоверение, а управляемое удостоверение не назначено системой.
 
 
 1. Чтобы использовать значения конфигурации приложения и ссылки Key Vault, обновите *программу. CS* , как показано ниже. Этот код вызывает `SetCredential` как часть `ConfigureKeyVault` , чтобы сообщить поставщику конфигурации, какие учетные данные следует использовать при проверке подлинности в Key Vault.
@@ -203,7 +203,7 @@ Azure Active Directory [управляемые удостоверения](../ac
     > [!NOTE]
     > `ManagedIdentityCredential`Работает только в средах Azure служб, поддерживающих аутентификацию управляемого удостоверения. Он не работает в локальной среде. Используйте [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) , чтобы код работал как в локальных средах, так и в среде Azure, так как он будет возвращаться к некоторым вариантам проверки подлинности, включая управляемое удостоверение.
     > 
-    > Если вы хотите использовать **управляемое удостоверение пользователя асигнед** с `DefaultAzureCredential` при развертывании в Azure, [Укажите ClientID](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme#specifying-a-user-assigned-managed-identity-with-the-defaultazurecredential).
+    > Если вы хотите использовать **управляемое удостоверение пользователя асигнед** с `DefaultAzureCredential` при развертывании в Azure, [Укажите ClientID](/dotnet/api/overview/azure/identity-readme#specifying-a-user-assigned-managed-identity-with-the-defaultazurecredential).
 
 [!INCLUDE [Prepare repository](../../includes/app-service-deploy-prepare-repo.md)]
 

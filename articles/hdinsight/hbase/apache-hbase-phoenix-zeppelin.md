@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 10/14/2019
-ms.openlocfilehash: 50a72d0400b23162e05b17b37bdad48783261072
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ff963e661a2b258c1eb452ed63f41f4e7d84c6a0
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944764"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867786"
 ---
 # <a name="use-apache-zeppelin-to-run-apache-phoenix-queries-over-apache-hbase-in-azure-hdinsight"></a>Использование Apache Zeppelin для запуска запросов Apache Phoenix через Apache HBase в Azure HDInsight
 
@@ -20,7 +20,7 @@ Apache Zeppelin — это веб-Записная книжка с открыт�
 
 Пользователи HDInsight могут использовать Apache Zeppelin для запроса таблиц Phoenix. Apache Zeppelin интегрирован с кластером HDInsight и не содержит дополнительных действий по его использованию. Просто создайте записную книжку Zeppelin с интерпретатором JDBC и начните писать запросы SQL в Phoenix.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Кластер Apache HBase в HDInsight. См. статью [Начало работы с Apache HBase](./apache-hbase-tutorial-get-started-linux.md).
 
@@ -30,68 +30,68 @@ Apache Zeppelin — это веб-Записная книжка с открыт�
 
 1. На странице Zeppelin выберите **создать новую заметку**.
 
-    ![Заметка Zeppelin для кластера Interactive Query HDInsight](./media/apache-hbase-phoenix-zeppelin/hbase-zeppelin-create-note.png)
+   :::image type="content" source="./media/apache-hbase-phoenix-zeppelin/hbase-zeppelin-create-note.png" alt-text="Заметка Zeppelin для кластера Interactive Query HDInsight" border="true":::
 
 1. В диалоговом окне **создания заметки** введите или выберите следующие значения:
 
-    - Имя примечания. Введите имя для примечания.
-    - Интерпретатор по умолчанию: выберите **JDBC** из раскрывающегося списка.
+   - Имя примечания. Введите имя для примечания.
+   - Интерпретатор по умолчанию: выберите **JDBC** из раскрывающегося списка.
 
-    Затем выберите **создать заметку**.
+   Затем выберите **создать заметку**.
 
 1. Убедитесь, что в заголовке записной книжки отображается состояние подключено. Он обозначается зеленой точкой в правом верхнем углу.
 
-    ![Состояния записной книжки Zeppelin](./media/apache-hbase-phoenix-zeppelin/hbase-zeppelin-connected.png "Состояния записной книжки Zeppelin")
+   :::image type="content" source="./media/apache-hbase-phoenix-zeppelin/hbase-zeppelin-connected.png" alt-text="Состояния записной книжки Zeppelin" border="true":::
 
 1. Создайте таблицу HBase. Введите следующую команду и нажмите клавиши **SHIFT + ВВОД**:
 
-    ```sql
-    %jdbc(phoenix)
-    CREATE TABLE Company (
-        company_id INTEGER PRIMARY KEY,
-        name VARCHAR(225)
-    );
-    ```
+   ```sql
+   %jdbc(phoenix)
+   CREATE TABLE Company (
+       company_id INTEGER PRIMARY KEY,
+       name VARCHAR(225)
+   );
+   ```
 
-    Инструкция **% JDBC (Phoenix)** в первой строке указывает записной книжке использовать интерпретатор JDBC в Phoenix.
+   Инструкция **% JDBC (Phoenix)** в первой строке указывает записной книжке использовать интерпретатор JDBC в Phoenix.
 
 1. Просмотр созданных таблиц.
 
-    ```sql
-    %jdbc(phoenix)
-    SELECT DISTINCT table_name
-    FROM SYSTEM.CATALOG
-    WHERE table_schem is null or table_schem <> 'SYSTEM';
-    ```
+   ```sql
+   %jdbc(phoenix)
+   SELECT DISTINCT table_name
+   FROM SYSTEM.CATALOG
+   WHERE table_schem is null or table_schem <> 'SYSTEM';
+   ```
 
 1. Вставьте значения в таблицу.
 
-    ```sql
-    %jdbc(phoenix)
-    UPSERT INTO dbo.Company VALUES(1, 'Microsoft');
-    UPSERT INTO dbo.Company (name, company_id) VALUES('Apache', 2);
-    ```
+   ```sql
+   %jdbc(phoenix)
+   UPSERT INTO dbo.Company VALUES(1, 'Microsoft');
+   UPSERT INTO dbo.Company (name, company_id) VALUES('Apache', 2);
+   ```
 
 1. Отправьте запрос к таблице.
 
-    ```sql
-    %jdbc(phoenix)
-    SELECT * FROM dbo.Company;
-    ```
+   ```sql
+   %jdbc(phoenix)
+   SELECT * FROM dbo.Company;
+   ```
 
 1. Удалите запись.
 
-    ```sql
-    %jdbc(phoenix)
-    DELETE FROM dbo.Company WHERE COMPANY_ID=1;
-    ```
+   ```sql
+   %jdbc(phoenix)
+   DELETE FROM dbo.Company WHERE COMPANY_ID=1;
+   ```
 
 1. Удалите таблицу.
 
-    ```sql
-    %jdbc(phoenix)
-    DROP TABLE dbo.Company;
-    ```
+   ```sql
+   %jdbc(phoenix)
+   DROP TABLE dbo.Company;
+   ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

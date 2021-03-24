@@ -11,12 +11,12 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 03/02/2021
 ms.custom: how-to, devx-track-python, data4ml, synapse-azureml
-ms.openlocfilehash: acd8df620e23ee4ebc103d8910c6443f47ffa141
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: d7cc948d3631e69882eb252672e5a3eb5d5f9751
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102503833"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867446"
 ---
 # <a name="attach-apache-spark-pools-powered-by-azure-synapse-analytics-for-data-wrangling-preview"></a>Присоединение пулов Apache Spark (на платформе Azure синапсе Analytics) для структурирование данных (Предварительная версия)
 
@@ -31,7 +31,7 @@ ms.locfileid: "102503833"
 
 Интеграция Azure синапсе Analytics с Машинное обучение Azure (Предварительная версия) позволяет подключать пул Apache Spark, поддерживаемый Azure синапсе для интерактивного исследования и подготовки данных. Благодаря этой интеграции вы можете использовать выделенные ресурсы для структурирование данных в том же блокноте Python, который используется для обучения моделей машинного обучения.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * [Создайте рабочую область Машинного обучения Azure](how-to-manage-workspace.md?tabs=python).
 
@@ -294,6 +294,10 @@ train_ds = Dataset.File.from_files(path=datastore_paths, validate=True)
 input1 = train_ds.as_mount()
 
 ```
+
+## <a name="example-notebook"></a>Пример записной книжки
+
+Подробный пример того, как выполнить подготовку данных и обучение модели из одной записной книжки с помощью Azure синапсе Analytics и Машинное обучение Azure, см. в этой [сквозной записной книжке](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/azure-synapse/spark_job_on_synapse_spark_pool.ipynb) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

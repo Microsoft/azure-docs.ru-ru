@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/05/2021
+ms.date: 03/17/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 200cfbcaf8da3a2129daa59299f098ce94f5fab2
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 1f2b7f575e21f9d691f611c3c7402501818d873a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102429512"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104605491"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
@@ -21,3 +21,4 @@ ms.locfileid: "102429512"
 |[Предварительная версия.\[\] Связанные службы Фабрики данных Azure должны выполнять аутентификацию управляемого удостоверения, назначаемого системой, если такая возможность поддерживается](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ff78ccdb4-7bf4-4106-8647-270491d2978a) |Использование управляемого удостоверения, назначаемого системой, при взаимодействии с хранилищами данных через связанные службы позволяет избежать использования менее защищенных учетных данных, таких как пароли или строки подключения. |Audit, Deny, Disabled |[1.0.0 (предварительная версия)](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Data%20Factory/LinkedService_All_Auth_Audit_except_MSI.json) |
 |[Предварительная версия.\[\] Фабрика данных Azure должна использовать репозиторий Git для управления исходным кодом](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F77d40665-3120-4348-b539-3192ec808307) |Включите функцию управления исходным кодом в фабриках данных, чтобы получить такие возможности, как отслеживание изменений, совместная работа, непрерывная интеграция и развертывание. |Audit, Deny, Disabled |[1.0.0 (предварительная версия)](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Data%20Factory/Factory_None_GIT_Audit.json) |
 |[Доступ к Фабрике данных Azure через общедоступную сеть должен быть отключен](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1cf164be-6819-4a50-b8fa-4bcaa4f98fb6) |Отключение доступа к Фабрике данных Azure через общедоступную сеть повышает безопасность, гарантируя, что доступ к Фабрике данных Azure будет возможен только из частной конечной точки. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Data%20Factory/DataFactory_PublicNetworkAccess_Audit.json) |
+|[Среды выполнения интеграции SQL Server Integration Services в Фабрике данных Azure должны быть присоединены к виртуальной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0088bc63-6dee-4a9c-9d29-91cfdc848952) |Развертывание виртуальной сети Azure обеспечивает более высокий уровень безопасности и изоляции для сред выполнения интеграции SQL Server Integration Services в Фабрике данных Azure, а также поддержку подсетей, политик управления доступом и других функций для его контроля. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Data%20Factory/SSISIR_JoinVirtualNetwork_Audit.json) |

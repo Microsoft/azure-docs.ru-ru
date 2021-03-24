@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: overview
 ms.date: 2/25/2021
-ms.openlocfilehash: 3ae81a9c05f0c88a52db6409bf870ee0427f09db
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 37f6a779e7dd83a6aa61de9850ad3b49b57393f9
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101696073"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103010480"
 ---
 # <a name="register-and-scan-oracle-source-preview"></a>Регистрация и сканирование источника Oracle (предварительная версия)
 
@@ -31,7 +31,7 @@ ms.locfileid: "101696073"
 
 3.  Убедитесь, что на компьютере с локальной средой выполнения интеграции установлен \"Распространяемый компонент Visual C++ 2012 с обновлением 4\". Если этот компонент \'не установлен, скачайте его [здесь](https://www.microsoft.com/download/details.aspx?id=30679).
 
-4.  Необходимо вручную скачать драйвер JDBC для Oracle с именем "oracle.jdbc.driver.OracleDriver"\' на виртуальную машину, где установлена локальная среда выполнения интеграции.
+4.  Необходимо вручную скачать драйвер Oracle JDBC [здесь](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html) на виртуальную машину, где запущена локальная среда выполнения интеграции.
 
     > [!Note] 
     > Этот драйвер должен быть доступен для всех учетных записей на виртуальной машине. Не устанавливайте его в учетной записи пользователя.

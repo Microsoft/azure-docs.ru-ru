@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/17/2019
-ms.openlocfilehash: bcca511bcb61ceab8395ee56b377efa99f095586
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 13862e642c6a91fe6f3c635df2efde91672ecbad
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946695"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866817"
 ---
 # <a name="connect-excel-to-apache-hadoop-by-using-power-query"></a>Подключение Excel к Apache Hadoop с помощью Power Query
 
@@ -42,13 +42,13 @@ Power Query может импортировать данные, которые �
 
      * Выберите > **данные**  >  **Получение данных**  >  **из Azure**  >  **HDInsight (HDFS)**.
 
-       ![HDi. PowerQuery. Селексдисаурце. 2016](./media/apache-hadoop-connect-excel-power-query/powerquery-selecthdisource-excel2016.png)
+       :::image type="content" source="./media/apache-hadoop-connect-excel-power-query/powerquery-selecthdisource-excel2016.png" alt-text="HDi. PowerQuery. Селексдисаурце. 2016" border="true":::
 
    * Excel 2013 или 2010
 
      * Выберите **Power Query**  >  **из Azure**  >  **Microsoft Azure HDInsight**.
 
-       ![HDI.PowerQuery.SelectHdiSource](./media/apache-hadoop-connect-excel-power-query/powerquery-selecthdisource.png)
+       :::image type="content" source="./media/apache-hadoop-connect-excel-power-query/powerquery-selecthdisource.png" alt-text="HDI.PowerQuery.SelectHdiSource" border="true":::
 
        **Примечание.** Если меню **Power Query** не отображается, последовательно выберите пункты **файл**  >  **Параметры** надстройки  >  и **надстройки COM** в раскрывающемся списке **управления** в нижней части страницы. Нажмите кнопку **Перейти...** и убедитесь, что установлен флажок «Power Query для Excel».
 
@@ -62,11 +62,11 @@ Power Query может импортировать данные, которые �
 
 1. Расположение **HiveSampleData.txt** в столбце **имени** (путь к папке — **.. /Хиве/варехаусе/хивесамплетабле/**), а затем выберите **двоичный файл** слева от HiveSampleData.txt. HiveSampleData.txt поставляется вместе с кластером. При необходимости можно использовать собственный файл.
 
-    ![Импорт данных Power Query HDI в Excel](./media/apache-hadoop-connect-excel-power-query/powerquery-importdata.png)
+    :::image type="content" source="./media/apache-hadoop-connect-excel-power-query/powerquery-importdata.png" alt-text="Импорт данных Power Query HDI в Excel" border="true":::
 
 1. Если необходимо, можно переименовать имена столбцов. Когда будете готовы, нажмите кнопку **закрыть & загрузить**.  Данные загружены в книгу.
 
-    ![HDI Excel Power Query Imported Table](./media/apache-hadoop-connect-excel-power-query/powerquery-importedtable.png)
+    :::image type="content" source="./media/apache-hadoop-connect-excel-power-query/powerquery-importedtable.png" alt-text="HDI Excel Power Query Imported Table" border="true":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

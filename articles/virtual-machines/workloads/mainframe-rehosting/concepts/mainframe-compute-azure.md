@@ -6,12 +6,13 @@ ms.author: larryme
 ms.date: 04/02/2019
 ms.topic: article
 ms.service: virtual-machines
-ms.openlocfilehash: 32f259f20e0e24b4d5346c598e23fdc2df48dee6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.subservice: mainframe-rehosting
+ms.openlocfilehash: 84682514d83de9d6a613581d68301efe33cd44ee
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102556440"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954400"
 ---
 # <a name="move-mainframe-compute-to-azure"></a>Перемещение вычислений мэйнфреймов в Azure
 

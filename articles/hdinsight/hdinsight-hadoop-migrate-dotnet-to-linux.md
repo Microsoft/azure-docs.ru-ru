@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 02/27/2018
-ms.openlocfilehash: 1ceb5d323ecfed54b4e01d13d66c640769a224ee
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 9e626d08e7fd315ca70765477c5dae56030521c6
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945594"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866409"
 ---
 # <a name="migrate-net-solutions-for-windows-based-hdinsight-to-linux-based-hdinsight"></a>Перенос решений .NET из HDInsight под управлением Windows в HDInsight под управлением Linux
 
@@ -33,7 +33,7 @@ Mono версии 4.2.1 входит в состав HDInsight версии 3.6.
 
 2. В Visual Studio 2015 выберите __анализ__  >  __параметров анализатора переносимости__ и убедитесь, что в разделе __Mono__ установлен флажок __4,5__ .
 
-    ![Установленный флажок "4.5" для Mono в разделе параметров анализатора](./media/hdinsight-hadoop-migrate-dotnet-to-linux/portability-analyzer-settings.png)
+    :::image type="content" source="./media/hdinsight-hadoop-migrate-dotnet-to-linux/portability-analyzer-settings.png" alt-text="Установленный флажок &quot;4.5&quot; для Mono в разделе параметров анализатора":::
 
     Нажмите кнопку __ОК__ , чтобы сохранить настройки.
 
@@ -41,7 +41,7 @@ Mono версии 4.2.1 входит в состав HDInsight версии 3.6.
 
 4. После завершения анализа выберите __анализ__  >  __Просмотр аналитических отчетов__. В разделе __Portability Analysis Results__ (Результаты анализа переносимости) щелкните __Открыть отчет__, чтобы открыть отчет.
 
-    ![Диалоговое окно результатов анализатора переносимости](./media/hdinsight-hadoop-migrate-dotnet-to-linux/portability-analyzer-results.png)
+    :::image type="content" source="./media/hdinsight-hadoop-migrate-dotnet-to-linux/portability-analyzer-results.png" alt-text="Диалоговое окно результатов анализатора переносимости":::
 
 > [!IMPORTANT]  
 > Анализатор не может выявить все проблемы с решением. Например, путь к файлу `c:\temp\file.txt` считается нормальным, если Mono работает под управлением Windows. Тот же путь не является допустимым для платформы Linux.

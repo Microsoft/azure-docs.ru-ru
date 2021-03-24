@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017,seoapr2020
 ms.date: 04/24/2020
-ms.openlocfilehash: a16ec623d7475a80e546df43495db1a357a5fa66
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ef2bc5e00779200e5447c8829a437824657a2227
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98930392"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865984"
 ---
 # <a name="kernels-for-jupyter-notebook-on-apache-spark-clusters-in-azure-hdinsight"></a>Ядра для Jupyter Notebook в кластерах Apache Spark в Azure HDInsight
 
@@ -22,7 +22,7 @@ ms.locfileid: "98930392"
 
 В этой статье вы узнаете, как использовать эти ядра, а также преимущества их использования.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Кластер Apache Spark в HDInsight. Инструкции см. в статье [Начало работы. Создание кластера Apache Spark в HDInsight на платформе Linux и выполнение интерактивных запросов с помощью SQL Spark](apache-spark-jupyter-spark-sql.md).
 
@@ -32,7 +32,7 @@ ms.locfileid: "98930392"
 
 2. В представлении " **Обзор** " в поле **панели мониторинга кластера** выберите **Jupyter Notebook**. При появлении запроса введите учетные данные администратора для кластера.
 
-    ![Jupyter Notebook на Apache Spark](./media/apache-spark-jupyter-notebook-kernels/hdinsight-spark-open-jupyter-interactive-spark-sql-query.png "Jupyter Notebook в Spark")
+    :::image type="content" source="./media/apache-spark-jupyter-notebook-kernels/hdinsight-spark-open-jupyter-interactive-spark-sql-query.png " alt-text="Jupyter Notebook на Apache Spark" border="true":::
   
    > [!NOTE]  
    > Вы также можете подключиться к Jupyter Notebook в кластере Spark, открыв следующий URL-адрес в браузере. Замените **CLUSTERNAME** именем кластера:
@@ -41,7 +41,7 @@ ms.locfileid: "98930392"
 
 3. Выберите **создать**, а затем выберите **Pyspark**, **PySpark3** или **Spark** , чтобы создать записную книжку. Для приложений Scala используйте ядро Spark, для приложений Python2 — ядро PySpark, а для приложений Python3 — ядро PySpark3.
 
-    ![Ядра для Jupyter Notebook в Spark](./media/apache-spark-jupyter-notebook-kernels/kernel-jupyter-notebook-on-spark.png "Ядра для Jupyter Notebook в Spark")
+    :::image type="content" source="./media/apache-spark-jupyter-notebook-kernels/kernel-jupyter-notebook-on-spark.png " alt-text="Ядра для Jupyter Notebook в Spark" border="true":::
 
 4. Объект Notebook должен открыться с помощью выбранного ядра.
 
@@ -122,7 +122,7 @@ SELECT * FROM hivesampletable
 
 Записные книжки сохраняются в учетной записи хранения, совместимой с [Apache Hadoop HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html). Если вы подключитесь к кластеру по протоколу SSH, вы можете использовать команды управления файлами:
 
-| Команда | Описание |
+| Get-Help | Описание |
 |---------|-------------|
 | `hdfs dfs -ls /HdiNotebooks` | # Выводить все в корневом каталоге — все, что находится в этом каталоге, является видимым для Jupyter с домашней страницы. |
 | `hdfs dfs –copyToLocal /HdiNotebooks` | # Скачивание содержимого папки Хдинотебукс|

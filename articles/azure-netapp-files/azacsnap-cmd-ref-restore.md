@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: reference
 ms.date: 12/14/2020
 ms.author: phjensen
-ms.openlocfilehash: 1c6b7ec6c4ef24ec00fbfc55a65a968e00561c2e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 793b4da8fcf46ba4d5618f8ada86f9c3c8026ffd
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97632900"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865270"
 ---
 # <a name="restore-using-azure-application-consistent-snapshot-tool-preview"></a>Восстановление с помощью инструмента моментального снимка совместимости приложений Azure (Предварительная версия)
 
@@ -41,7 +41,7 @@ ms.locfileid: "97632900"
 - `--restore revertvolume` Возврат целевого тома к предыдущему состоянию на основе последнего моментального снимка.  Использование этой команды в рамках отработки отказа аварийного восстановления в парный регион аварийного восстановления. Эта команда **останавливает** репликацию хранилища с первичного сайта на вторичный сайт и отменяет их до последнего доступного моментального снимка на томах аварийного восстановления вместе с рекомендуемой файловой системой точки подключения для восстановленных томов аварийного восстановления. Эта команда должна выполняться в системе крупных экземпляров Azure **в регионе аварийного восстановления** (то есть в целевой системе с отработкой отказа).
     > [!NOTE]
     > Подкоманда ( `--restore revertvolume` ) доступна только для крупных экземпляров Azure и недоступна для Azure NetApp Files.
-- `--hanasid <SAP HANA SID>` — Это SAP HANA SID, выбираемый из файла конфигурации для применения команд восстановления тома.
+- `--dbsid <SAP HANA SID>` — Это SAP HANA SID, выбираемый из файла конфигурации для применения команд восстановления тома.
 
 - `[--configfile <config filename>]` — Необязательный параметр, который позволяет использовать пользовательские имена файлов конфигурации.
 
@@ -64,7 +64,7 @@ ms.locfileid: "97632900"
 ### <a name="output-of-the-azacsnap--c-restore---restore-snaptovol-command-for-single-node-scenario"></a>Выходные данные `azacsnap -c restore --restore snaptovol` команды (для сценария Single-Node)
 
 ```output
-> azacsnap --configfile DR.json -c restore --restore snaptovol --hanasid H80
+> azacsnap --configfile DR.json -c restore --restore snaptovol --dbsid H80
 * This program is designed for those customers who have previously installed the
   Production HANA instance in the Disaster Recovery Location either as a
   stand-alone instance or as part of a multi-purpose environment.
