@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 09/22/2020
 ms.openlocfilehash: 31a454c93ad5192f387306a8ec557c4e4d3ae991
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93395297"
 ---
 # <a name="deploy-an-azure-sql-edge-container-in-kubernetes"></a>Развертывание контейнера SQL Azure для пограничных вычислений в Kubernetes
@@ -108,7 +108,7 @@ SQL Azure для пограничных вычислений можно разв
          storage: 8Gi
    ```
 
-   Сохраните файл (например, **pvc.yaml** ).
+   Сохраните файл (например, **pvc.yaml**).
 
 2. Создайте утверждение постоянного тома в Kubernetes.
 
@@ -241,7 +241,7 @@ spec:
    >[!NOTE]
    >Используя тип службы `LoadBalancer`, экземпляр SQL Azure для пограничных вычислений будет доступен удаленно (через Интернет) через порт 1433.
 
-   Сохраните файл (например, **sqledgedeploy.yaml** ).
+   Сохраните файл (например, **sqledgedeploy.yaml**).
 
 2. Создайте развертывание.
 

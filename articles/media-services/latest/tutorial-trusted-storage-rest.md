@@ -7,10 +7,10 @@ ms.service: media-services
 ms.topic: tutorial
 ms.date: 2/8/2021
 ms.openlocfilehash: 18cb4e3ada94822c2f4cb1ca7675310a37e44e84
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100590650"
 ---
 # <a name="tutorial-media-services-trusted-storage"></a>Руководство. Доверенное хранилище Служб мультимедиа

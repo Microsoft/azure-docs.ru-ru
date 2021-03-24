@@ -10,10 +10,10 @@ ms.date: 04/05/2018
 ms.reviewer: jushiman
 ms.custom: mimckitt, devx-track-azurepowershell
 ms.openlocfilehash: dc76798ff97aa49d358b639557255b41872bab4f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89070927"
 ---
 # <a name="create-a-single-zone-virtual-machine-scale-set-with-powershell"></a>Создает однозонный масштабируемый набор виртуальных машин с помощью PowerShell

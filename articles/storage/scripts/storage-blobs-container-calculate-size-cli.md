@@ -11,10 +11,10 @@ ms.date: 06/28/2017
 ms.author: tamram
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 45712632ebfb2da4b713038503965ce908c1dfc6
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87498894"
 ---
 # <a name="calculate-the-size-of-a-blob-storage-container"></a>Вычисление размера контейнера в хранилище BLOB-объектов
@@ -47,8 +47,8 @@ az group delete --name myResourceGroup
 | Get-Help | Примечания |
 |---|---|
 | [az group create](/cli/azure/group) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az storage blob upload](/cli/azure/storage/account) | Отправляет локальные файлы в контейнер хранилища BLOB-объектов Azure. |
-| [az storage blob list](/cli/azure/storage/account/keys) | Возвращает список больших двоичных объектов в контейнере хранилища BLOB-объектов Azure. |
+| [отправка хранилища blob-объектов az](/cli/azure/storage/account) | Отправляет локальные файлы в контейнер хранилища BLOB-объектов Azure. |
+| [список хранилищ blob-объектов az](/cli/azure/storage/account/keys) | Возвращает список больших двоичных объектов в контейнере хранилища BLOB-объектов Azure. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

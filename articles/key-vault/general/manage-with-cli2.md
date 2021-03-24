@@ -11,10 +11,10 @@ ms.date: 08/12/2019
 ms.author: mbaldwin
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: cb7e047d998342125a52af5ea3ae1e88fe88d313
-ms.sourcegitcommit: 7863fcea618b0342b7c91ae345aa099114205b03
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93289899"
 ---
 # <a name="manage-key-vault-using-the-azure-cli"></a>Управление Key Vault с помощью интерфейса командной строки Azure 
@@ -120,7 +120,7 @@ az provider register -n Microsoft.KeyVault
 
 Для создания хранилища ключей используйте команду `az keyvault create` . Этот сценарий предусматривает три обязательных параметра: имя группы ресурсов, имя хранилища ключей и географическое расположение.
 
-Чтобы создать новое хранилище с именем **ContosoKeyVault** , в группе ресурсов **ContosoResourceGroup** , находящейся в местоположении **Восточная Азия** , введите: 
+Чтобы создать новое хранилище с именем **ContosoKeyVault**, в группе ресурсов **ContosoResourceGroup**, находящейся в местоположении **Восточная Азия**, введите: 
 
 ```azurecli
 az keyvault create --name "ContosoKeyVault" --resource-group "ContosoResourceGroup" --location "East Asia"

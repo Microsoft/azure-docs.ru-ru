@@ -7,10 +7,10 @@ author: lgayhardt
 ms.author: lagayhar
 ms.date: 08/06/2020
 ms.openlocfilehash: 85829052f2e9179b0a721efce720763f82d6402c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100598271"
 ---
 # <a name="resource-manager-template-sample-for-creating-azure-function-apps-with-application-insights-monitoring"></a>Примеры шаблонов Resource Manager для создания приложений-функций Azure с мониторингом Application Insights

@@ -11,10 +11,10 @@ ms.author: jopapa
 ms.custom: seodec18
 ms.reviewer: sngun
 ms.openlocfilehash: e3af713d6e120e66a0cde5116f4556bb8caedf55
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93097861"
 ---
 # <a name="create-an-angular-app-with-azure-cosmos-dbs-api-for-mongodb---create-a-nodejs-express-app"></a>Создание приложения Angular с помощью API Azure Cosmos DB для MongoDB. Создание приложения Express Node.js
@@ -82,9 +82,9 @@ ms.locfileid: "93097861"
 
 ## <a name="build-the-app-using-the-express-framework"></a>Создание приложения с помощью платформы Express
 
-1. В Visual Studio Code в области **Обозреватель** щелкните правой кнопкой мыши папку **src** , выберите пункт **Создать папку** и присвойте новой папке имя *server*.
+1. В Visual Studio Code в области **Обозреватель** щелкните правой кнопкой мыши папку **src**, выберите пункт **Создать папку** и присвойте новой папке имя *server*.
 
-2. В области **Обозреватель** щелкните правой кнопкой мыши папку **server** , выберите **Создать файл** и присвойте новому файлу имя *index.js*.
+2. В области **Обозреватель** щелкните правой кнопкой мыши папку **server**, выберите **Создать файл** и присвойте новому файлу имя *index.js*.
 
 3. Вернитесь в командную строку и введите указанную ниже команду, чтобы установить средство синтаксического анализа текста. Это поможет нашему приложению проанализировать данные JSON, передаваемые через API-интерфейсы.
 

@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 10/20/2019
 ms.author: alkohli
 ms.openlocfilehash: 1394cf6511a65a0e406e51229953e8666d4d4d8d
-ms.sourcegitcommit: 2a8a53e5438596f99537f7279619258e9ecb357a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94337684"
 ---
 # <a name="tutorial-use-data-box-to-import-data-as-managed-disks-in-azure"></a>Руководство по Использование Data Box для импорта данных в качестве управляемых дисков в Azure.

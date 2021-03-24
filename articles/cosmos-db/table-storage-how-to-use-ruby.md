@@ -10,10 +10,10 @@ author: sakash279
 ms.author: akshanka
 ms.reviewer: sngun
 ms.openlocfilehash: 2d0c8433fff58854cb77a4e806058eae1937e71b
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93101125"
 ---
 # <a name="how-to-use-azure-table-storage-and-the-azure-cosmos-db-table-api-with-ruby"></a>Как использовать Хранилище таблиц Azure и API таблиц Azure Cosmos DB с Ruby
@@ -59,7 +59,7 @@ require "azure/storage/table"
 
 ### <a name="add-an-azure-storage-connection"></a>Добавление подключения к службе хранилища Azure
 
-Модуль службы хранилища Azure считывает переменные среды **AZURE_STORAGE_ACCOUNT** и **AZURE_STORAGE_ACCESS_KEY** , чтобы получить информацию, необходимую для подключения к учетной записи хранения Azure. Если эти переменные среды не заданы, необходимо указать сведения об учетной записи перед использованием **Azure::Storage::Table::TableService** с помощью приведенного ниже кода.
+Модуль службы хранилища Azure считывает переменные среды **AZURE_STORAGE_ACCOUNT** и **AZURE_STORAGE_ACCESS_KEY**, чтобы получить информацию, необходимую для подключения к учетной записи хранения Azure. Если эти переменные среды не заданы, необходимо указать сведения об учетной записи перед использованием **Azure::Storage::Table::TableService** с помощью приведенного ниже кода.
 
 ```ruby
 Azure.config.storage_account_name = "<your Azure Storage account>"
@@ -127,7 +127,7 @@ azure_table_service.update_entity("testtable", entity)
 
 ## <a name="work-with-groups-of-entities"></a>Работа с группами сущностей
 
-Иногда имеет смысл отправлять совместно несколько операций в пакете для атомарной обработки сервером. Для этого сначала требуется создать объект **Batch** , а затем использовать метод **execute_batch()** для **TableService**. В следующем примере показана отправка двух сущностей с RowKey 2 и 3 в пакете. Обратите внимание, что пример работает только для сущностей с одинаковым значением PartitionKey.
+Иногда имеет смысл отправлять совместно несколько операций в пакете для атомарной обработки сервером. Для этого сначала требуется создать объект **Batch**, а затем использовать метод **execute_batch()** для **TableService**. В следующем примере показана отправка двух сущностей с RowKey 2 и 3 в пакете. Обратите внимание, что пример работает только для сущностей с одинаковым значением PartitionKey.
 
 ```ruby
 azure_table_service = Azure::TableService.new
@@ -150,7 +150,7 @@ result = azure_table_service.get_entity("testtable", "test-partition-key",
 
 ## <a name="query-a-set-of-entities"></a>Запрос набора сущностей
 
-Чтобы отправить запрос к набору сущностей в таблице, создайте хэш-объект запроса и используйте метод **query_entities()** . В следующем примере показано, как получить все сущности с одним значением **PartitionKey** :
+Чтобы отправить запрос к набору сущностей в таблице, создайте хэш-объект запроса и используйте метод **query_entities()** . В следующем примере показано, как получить все сущности с одним значением **PartitionKey**:
 
 ```ruby
 query = { :filter => "PartitionKey eq 'test-partition-key'" }

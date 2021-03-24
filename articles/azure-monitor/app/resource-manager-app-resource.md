@@ -7,10 +7,10 @@ author: lgayhardt
 ms.author: lagayhar
 ms.date: 07/08/2020
 ms.openlocfilehash: 6c23e59a8845ee4bc77d0fe05df8b97e656a102a
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100598274"
 ---
 # <a name="resource-manager-template-samples-for-creating-application-insights-resources"></a>Примеры шаблонов Resource Manager для создания ресурсов Application Insights

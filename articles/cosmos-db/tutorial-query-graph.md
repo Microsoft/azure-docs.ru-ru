@@ -10,13 +10,13 @@ ms.date: 12/03/2018
 ms.reviewer: sngun
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 545ffd303d2039a3c54088220c1fa74e742c750f
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93360774"
 ---
-# <a name="tutorial-query-azure-cosmos-db-gremlin-api-by-using-gremlin"></a>Руководство. Выполнение запросов к API Gremlin в Azure Cosmos DB с использованием Gremlin{1}
+# <a name="tutorial-query-azure-cosmos-db-gremlin-api-by-using-gremlin"></a>Руководство. Выполнение запросов к API Gremlin в Azure Cosmos DB с использованием Gremlin
 [!INCLUDE[appliesto-gremlin-api](includes/appliesto-gremlin-api.md)]
 
 [API Gremlin](graph-introduction.md) базы данных Azure Cosmos DB позволяет выполнять запросы [Gremlin](https://github.com/tinkerpop/gremlin/wiki). В этой статье приведены примеры документов и запросов, которые помогут вам начать работу. Подробная справка по Gremlin содержится в [этой статье](gremlin-support.md).
@@ -26,7 +26,7 @@ ms.locfileid: "93360774"
 > [!div class="checklist"]
 > * Выполнение запросов к данным с помощью Gremlin.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы такие запросы работали, у вас должна быть учетная запись базы данных Azure Cosmos DB и данные графа в контейнере. У вас их нет? Завершите [краткое руководство](create-graph-dotnet.md) или [руководство разработчика](tutorial-query-graph.md), чтобы создать учетную запись и заполнить базу данных. Вы можете выполнять следующие запросы с помощью [консоли Gremlin](https://tinkerpop.apache.org/docs/current/reference/#gremlin-console) или предпочитаемого драйвера Gremlin.
 
@@ -38,7 +38,7 @@ ms.locfileid: "93360774"
 g.V().count()
 ```
 
-## <a name="filters"></a>Фильтры
+## <a name="filters"></a>фильтры;
 
 Вы можете выполнять фильтрацию с помощью шагов Gremlin `has` и `hasLabel`, а также объединять их с помощью операторов `and`, `or` и `not` для создания более сложных фильтров. База данных Azure Cosmos DB предоставляет схемонезависимое индексирование всех свойств в ваших вершинах и степенях для быстрого выполнения запросов:
 
@@ -46,7 +46,7 @@ g.V().count()
 g.V().hasLabel('person').has('age', gt(40))
 ```
 
-## <a name="projection"></a>Проекция
+## <a name="projection"></a>Прогнозирование
 
 Вы можете проецировать некоторые свойства в результатах запроса с помощью шага `values`:
 

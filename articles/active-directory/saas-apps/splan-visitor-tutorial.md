@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/14/2020
 ms.author: jeedes
 ms.openlocfilehash: 20f49c174dde90bc7f1a9b34f3dea3132e9b177e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644703"
 ---
 # <a name="tutorial-integrate-azure-active-directory-single-sign-on-sso-with-splan-visitor"></a>Руководство по интеграции единого входа Azure Active Directory со Splan Visitor
