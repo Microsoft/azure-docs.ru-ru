@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 826759907bfe5ec3359bf5c9125909466372c68f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 313ea98da0426af945dfdea00d33440ab2955cc7
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104608152"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105023084"
 ---
 # <a name="azure-percept-dk-dev-kit-troubleshooting"></a>Устранение неполадок в Azure Перцепт DK (комплект разработчика)
 
@@ -45,14 +45,14 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 
 ```[local host file path]``` относится к расположению на главном компьютере, куда нужно скопировать txt файл. ```[remote username]``` — Это имя пользователя SSH, выбранное во время [установки](./quickstart-percept-dk-set-up.md). Если вы не настроили вход SSH во время OOBE, имя удаленного пользователя — ```root``` .
 
-Дополнительные сведения о Azure IoT Edge командах см. в [документации по устранению неполадок устройств Azure IOT Edge](https://docs.microsoft.com/azure/iot-edge/troubleshoot).
+Дополнительные сведения о Azure IoT Edge командах см. в [документации по устранению неполадок устройств Azure IOT Edge](../iot-edge/troubleshoot.md).
 
 |Категория:         |Команда:                    |Функция:                  |
 |------------------|----------------------------|---------------------------|
-|Операционная система                |```cat /etc/os-release```         |Проверка версии образа Маринер |
-|Операционная система                |```cat /etc/os-subrelease```      |проверить версию производного образа |
-|Операционная система                |```cat /etc/adu-version```        |Проверка версии аду |
-|Температура       |```cat /sys/class/thermal/thermal_zone0/temp``` |Проверка температуры DevKit |
+|ОС                |```cat /etc/os-release```         |Проверка версии образа Маринер |
+|ОС                |```cat /etc/os-subrelease```      |проверить версию производного образа |
+|ОС                |```cat /etc/adu-version```        |Проверка версии аду |
+|температура;       |```cat /sys/class/thermal/thermal_zone0/temp``` |Проверка температуры DevKit |
 |Wi-Fi             |```sudo journalctl -u hostapd.service``` |Проверка журналов Софтап|
 |Wi-Fi             |```sudo journalctl -u wpa_supplicant.service``` |Проверка журналов Wi-Fi Services |
 |Wi-Fi             |```sudo journalctl -u ztpd.service```  |Проверка Wi-Fi журналов службы подготовки для нулевого сенсорного ввода |
@@ -66,9 +66,9 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 |Azure IoT Edge          |```sudo journalctl -u iotedge -f``` |Просмотр журналов Azure IoT Edge диспетчера безопасности |
 |Azure IoT Edge          |```sudo systemctl restart iotedge``` |перезапуск управляющей программы Azure IoT Edge Security |
 |Azure IoT Edge          |```sudo iotedge list```           |Вывод списка развернутых модулей Azure IoT Edge |
-|Другое             |```df [option] [file]```          |Отображение сведений о доступном или общем пространстве в указанных файловых системах |
-|Другое             |`ip route get 1.1.1.1`        |Отображение сведений об IP-адресе устройства и интерфейсе |
-|Другое             |<code>ip route get 1.1.1.1 &#124; awk '{print $7}'</code> <br> `ifconfig [interface]` |отображать только IP-адрес устройства |
+|Другие             |```df [option] [file]```          |Отображение сведений о доступном или общем пространстве в указанных файловых системах |
+|Другие             |`ip route get 1.1.1.1`        |Отображение сведений об IP-адресе устройства и интерфейсе |
+|Другие             |<code>ip route get 1.1.1.1 &#124; awk '{print $7}'</code> <br> `ifconfig [interface]` |отображать только IP-адрес устройства |
 
 
 ```journalctl```Wi-Fi команды могут быть объединены в следующую одну команду:
@@ -105,5 +105,3 @@ sudo journalctl -u hostapd.service -u wpa_supplicant.service -u ztpd.service -u 
 |Индикатор 2 (Wi-Fi)   |Быстрая мигающий |Проверка подлинности прошла успешно, выполняется сопоставление устройства. |
 |Индикатор 2 (Wi-Fi)   |Вкл. (сплошной) |Проверка подлинности и сопоставление успешно выполнены; устройство подключено к сети Wi-Fi. |
 |СВЕТОИНДИКАТОР 3           |Н/Д         |СВЕТОИНДИКАТОР не используется. |
-
-

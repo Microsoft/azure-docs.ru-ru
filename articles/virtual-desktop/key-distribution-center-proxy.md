@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.date: 03/20/2021
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: bcf28fbc0d2f4ec9eeac5bcb8f0b2c9b65a62b6b
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: 876564934b1ccbffa19c318a2d2c8393e5dca54e
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104775049"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105023985"
 ---
 # <a name="configure-a-kerberos-key-distribution-center-proxy-preview"></a>Настройка прокси-сервера Kerberos центр распространения ключей (Предварительная версия)
 
@@ -64,12 +64,12 @@ ms.locfileid: "104775049"
     > [!div class="mx-imgBorder"]
     > ![Снимок экрана с выбранной вкладкой "Дополнительно" со значением, указанным в шаге 4.](media/advanced-tab-selected.png)
 
-5. Щелкните **Сохранить**.
+5. Нажмите кнопку **Сохранить**.
 
 6. Теперь выбранный пул узлов начнет выдавать файлы подключения RDP, содержащие значение кдкпроксинаме, введенное на шаге 4.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-Сведения об управлении службы удаленных рабочих столов стороне прокси-сервера KDC и назначении роли шлюза удаленных рабочих столов см. в статье [развертывание роли шлюза удаленных рабочих](/windows-server/remote/rd-gateway-role)столов.
+Сведения об управлении службы удаленных рабочих столов стороне прокси-сервера KDC и назначении роли шлюза удаленных рабочих столов см. в статье [развертывание роли шлюза удаленных рабочих](rd-gateway-role.md)столов.
 
 Если вы заинтересованы в масштабировании прокси-серверов KDC, Узнайте, как настроить высокий уровень доступности для прокси-сервера KDC при [добавлении высокого уровня доступности веб-интерфейса удаленных рабочих столов и шлюза](/windows-server/remote/remote-desktop-services/rds-rdweb-gateway-ha).

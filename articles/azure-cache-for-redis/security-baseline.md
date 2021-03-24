@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 516a66ef64512cbe4fa4c3589e651c14ddf18550
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 38b6251c4b464214d66f7240dab9d5d23812f946
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101647631"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105023220"
 ---
 # <a name="azure-security-baseline-for-azure-cache-for-redis"></a>Базовый план безопасности Azure для кэша Azure для Redis
 
@@ -34,7 +34,7 @@ ms.locfileid: "101647631"
 
 - [Настройка поддержки виртуальной сети для кэша Azure уровня "Премиум" для Redis](cache-how-to-premium-vnet.md)
 
-- [Настройка правил брандмауэра для кэша Azure для Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-configure#firewall)
+- [Настройка правил брандмауэра для кэша Azure для Redis](./cache-configure.md#firewall)
 
 **Ответственность**: Customer
 
@@ -68,7 +68,7 @@ ms.locfileid: "101647631"
 
 - [Настройка поддержки виртуальной сети для кэша Azure уровня "Премиум" для Redis](cache-how-to-premium-vnet.md)
 
-- [Управление защитой от атак DDoS Azure уровня "Стандартный" с помощью портала Azure](/azure/virtual-network/manage-ddos-protection)
+- [Управление защитой от атак DDoS Azure уровня "Стандартный" с помощью портала Azure](../ddos-protection/manage-ddos-protection.md)
 
 **Ответственность**: Customer
 
@@ -118,7 +118,7 @@ ms.locfileid: "101647631"
 
 - [Теги службы виртуальной сети](../virtual-network/service-tags-overview.md)
 
-- [Группы безопасности приложений](/azure/virtual-network/security-overview#application-security-groups)
+- [Группы безопасности приложений](../virtual-network/network-security-groups-overview.md#application-security-groups)
 
 **Ответственность**: Customer
 
@@ -145,7 +145,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Используйте теги для сетевых ресурсов, связанных с кэшем Azure для развертывания Redis, чтобы логически упорядочить их в таксономии.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -155,9 +155,9 @@ ms.locfileid: "101647631"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений сетевых ресурсов, связанных с кэшем Azure для экземпляров Redis. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log-view)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -171,7 +171,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Включите параметры диагностики журнала действий Azure и отправьте журналы в рабочую область Log Analytics, концентратор событий Azure или учетную запись хранения Azure для архивации. Журналы действий позволяют получить представление об операциях, которые выполнялись в кэше Azure для экземпляров Redis на уровне плоскости управления. С помощью данных журнала действий Azure можно определить "что, кто и когда" для любых операций записи (размещение, публикация, удаление), выполненных на уровне плоскости управления для кэша Azure для экземпляров Redis.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings-legacy)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -183,7 +183,7 @@ ms.locfileid: "101647631"
 
 Хотя метрики доступны, включая параметры диагностики, ведение журнала аудита в плоскости данных пока недоступно для кэша Azure для Redis.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings-legacy)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -195,7 +195,7 @@ ms.locfileid: "101647631"
 
 Обратите внимание, что ведение журнала аудита в плоскости данных пока недоступно для кэша Azure для Redis.
 
-- [Настройка параметров хранения журнала](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Настройка параметров хранения журнала](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -207,9 +207,9 @@ ms.locfileid: "101647631"
 
 Обратите внимание, что ведение журнала аудита в плоскости данных пока недоступно для кэша Azure для Redis.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings-legacy)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
-- [Получение и анализ журналов действий Azure в Log Analytics рабочей области в Azure Monitor](/azure/azure-monitor/platform/activity-log-collect)
+- [Получение и анализ журналов действий Azure в Log Analytics рабочей области в Azure Monitor](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -221,7 +221,7 @@ ms.locfileid: "101647631"
 
 Хотя метрики доступны, включая параметры диагностики, ведение журнала аудита в плоскости данных пока недоступно для кэша Azure для Redis.
 
-- [Настройка оповещений для кэша Azure для Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-how-to-monitor#alerts)
+- [Настройка оповещений для кэша Azure для Redis](./cache-how-to-monitor.md#alerts)
 
 **Ответственность**: Customer
 
@@ -235,9 +235,9 @@ ms.locfileid: "101647631"
 
 **Руководство**. Azure Active Directory (Azure AD) содержит встроенные роли, которые должны быть явно назначены и доступны для запросов. Используйте модуль Azure AD PowerShell для выполнения нерегламентированных запросов для обнаружения учетных записей, входящих в группы администраторов.
 
-- [Как получить роль каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrole?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить роль каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole?preserve-view=true&view=azureadps-2.0)
 
-- [Как получить членов роли каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember?preserve-view=true&view=azureadps-2.0)
 
 **Ответственность**: Customer
 
@@ -251,7 +251,7 @@ ms.locfileid: "101647631"
 
 Не рекомендуется создавать пароли по умолчанию в приложении. Вместо этого можно хранить пароли в Azure Key Vault а затем использовать Azure AD для их извлечения.
 
-- [Повторное создание кэша Azure для ключей доступа Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-configure#settings)
+- [Повторное создание кэша Azure для ключей доступа Redis](./cache-configure.md#settings)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -323,7 +323,7 @@ ms.locfileid: "101647631"
 
 - [Развертывание Privileged Identity Management (PIM)](../active-directory/privileged-identity-management/pim-deployment-plan.md)
 
-- [Общие сведения об обнаружении рисков в Azure AD](/azure/active-directory/reports-monitoring/concept-risk-events)
+- [Общие сведения об обнаружении рисков в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 **Ответственность**: Customer
 
@@ -353,7 +353,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для упрощения обнаружения устаревших учетных записей. Кроме того, используйте проверку доступа удостоверений Azure, чтобы эффективно управлять членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверять на регулярной основе, чтобы только у авторизованных пользователей был постоянный доступ.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -367,7 +367,7 @@ ms.locfileid: "101647631"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить нужные оповещения журнала в Log Analytics.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -379,7 +379,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. при отклонении режима входа учетной записи на плоскости управления используйте функции защиты идентификации и средства обнаружения рисков Azure Active Directory (Azure AD) для настройки автоматических ответов на обнаруженные подозрительные действия, связанные с удостоверениями пользователей. Вы также можете включить данные в Azure Sentinel для дальнейшего изучения.
 
-- [Просмотр рискованных входов в Azure AD](/azure/active-directory/reports-monitoring/concept-risky-sign-ins)
+- [Просмотр рискованных входов в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 - [Как настроить и включить политики рисков с помощью защиты идентификации](../active-directory/identity-protection/howto-identity-protection-configure-risk-policies.md)
 
@@ -397,7 +397,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Используйте теги для пометки ресурсов Azure, в которых хранятся или обрабатываются конфиденциальные данные.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -407,15 +407,15 @@ ms.locfileid: "101647631"
 
 **Руководство**. Реализуйте отдельные подписки и группы управления для разработки, тестирования и производства. Кэш Azure для экземпляров Redis должен быть отделен виртуальной сетью или подсетью и соответствующим образом помечен. При необходимости используйте кэш Azure для Redis брандмауэра, чтобы определить правила, чтобы только клиентские подключения из указанных диапазонов IP-адресов могли подключаться к кэшу.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
 - [Развертывание кэша Azure для Redis в виртуальной сети](cache-how-to-premium-vnet.md)
 
-- [Настройка правил брандмауэра для кэша Azure для Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-configure#firewall)
+- [Настройка правил брандмауэра для кэша Azure для Redis](./cache-configure.md#firewall)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -439,7 +439,7 @@ ms.locfileid: "101647631"
 
 - [Общие сведения о шифровании при передаче для кэша Azure для Redis](cache-best-practices.md)
 
-- [Общие сведения о необходимых портах, используемых в сценариях кэша виртуальной сети](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-how-to-premium-vnet#outbound-port-requirements)
+- [Общие сведения о необходимых портах, используемых в сценариях кэша виртуальной сети](./cache-how-to-premium-vnet.md#outbound-port-requirements)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -465,7 +465,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления доступом к кэшу Azure для плоскости управления Redis (т. е. портал Azure).
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 **Ответственность**: Customer
 
@@ -493,7 +493,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в рабочих экземплярах кэша Azure для Redis и других критических или связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -527,7 +527,7 @@ ms.locfileid: "101647631"
 
 - [Как создавать запросы с помощью Azure Resource Graph](../governance/resource-graph/first-query-portal.md)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
@@ -539,7 +539,7 @@ ms.locfileid: "101647631"
 
 **Руководство**. Применяйте к ресурсам Azure теги, чтобы логически классифицировать их на основе метаданных.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -557,11 +557,11 @@ ms.locfileid: "101647631"
 
 Дополнительные сведения см. в следующих ресурсах.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Создание и использование тегов ресурсов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов ресурсов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -596,7 +596,7 @@ ms.locfileid: "101647631"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -624,7 +624,7 @@ ms.locfileid: "101647631"
 
 Дополнительные сведения см. в следующих ресурсах.
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?preserve-view=true&view=azps-4.8.0)
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
@@ -648,9 +648,9 @@ ms.locfileid: "101647631"
 
 **Руководство**. Если вы используете пользовательские определения политик Azure или шаблоны Azure Resource Manager для кэша Azure для экземпляров Redis и связанных ресурсов, используйте Azure Repos для безопасного хранения кода и управления им.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?preserve-view=true&view=azure-devops)
 
-- [Документация по Azure Repos](https://docs.microsoft.com/azure/devops/repos/?view=azure-devops&amp;preserve-view=true)
+- [Документация по Azure Repos](/azure/devops/repos/?preserve-view=true&view=azure-devops)
 
 **Ответственность**: Customer
 
@@ -684,7 +684,7 @@ ms.locfileid: "101647631"
 
 - [Создание Key Vault](../key-vault/general/quick-create-portal.md)
 
-- [Проверка подлинности в Key Vault](/azure/key-vault/managed-identity)
+- [Проверка подлинности в Key Vault](../key-vault/general/assign-access-policy-portal.md)
 
 **Ответственность**: Customer
 
@@ -772,7 +772,7 @@ ms.locfileid: "101647631"
 
 - [Как использовать кэш Azure для импорта Redis](cache-how-to-import-export-data.md)
 
-- [Восстановление секретов Key Vault](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultsecret?view=azps-4.8.0&amp;preserve-view=true)
+- [Восстановление секретов Key Vault](/powershell/module/az.keyvault/restore-azkeyvaultsecret?preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -868,5 +868,5 @@ ms.locfileid: "101647631"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).
