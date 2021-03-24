@@ -9,10 +9,10 @@ ms.date: 10/07/2019
 author: sakash279
 ms.author: akshanka
 ms.openlocfilehash: 79b58b76954cf15289e85dbf763b7a399897635d
-ms.sourcegitcommit: b4880683d23f5c91e9901eac22ea31f50a0f116f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94489885"
 ---
 # <a name="how-to-use-azure-table-storage-and-azure-cosmos-db-table-api-with-c"></a>Как использовать хранилище таблиц Azure и API таблиц Azure Cosmos DB в C++
@@ -500,10 +500,10 @@ else
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-Для выпуска Visual Studio Community: если сборка проекта завершается ошибкой из-за включаемых файлов *storage_account.h* и *table.h* , удалите параметр компилятора **/permissive-** :
+Для выпуска Visual Studio Community: если сборка проекта завершается ошибкой из-за включаемых файлов *storage_account.h* и *table.h*, удалите параметр компилятора **/permissive-** :
 
 1. В **обозревателе решений** щелкните проект правой кнопкой мыши и выберите **Свойства**.
-1. В диалоговом окне **Страницы свойств** разверните узел **Свойства конфигурации** , затем разверните **C/C++** и выберите **Язык**.
+1. В диалоговом окне **Страницы свойств** разверните узел **Свойства конфигурации**, затем разверните **C/C++** и выберите **Язык**.
 1. Для параметра **Режим совместимости** установите значение **Нет**.
 
 ## <a name="next-steps"></a>Дальнейшие действия

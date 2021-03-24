@@ -5,10 +5,10 @@ ms.topic: sample
 ms.date: 07/07/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 0cddb8b9ba6a4a06667696fdf5eda8e1896f20de
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87498780"
 ---
 # <a name="azure-cli-samples-for-event-grid"></a>Примеры Azure CLI для службы "Сетка событий"

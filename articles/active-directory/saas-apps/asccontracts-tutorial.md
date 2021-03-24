@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с ASC Contracts | Документация Майкрософт
+title: Руководство по интеграции Azure Active Directory с ASC Contracts | Документация Майкрософт
 description: Узнайте, как настроить единый вход Azure Active Directory в приложении ASC Contracts.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 01/17/2019
 ms.author: jeedes
 ms.openlocfilehash: d1f45244d09ce55b61b04d88ce2eb4a16289b1ab
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97673007"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-asc-contracts"></a>Руководство по Интеграция Azure Active Directory с ASC Contracts
+# <a name="tutorial-azure-active-directory-integration-with-asc-contracts"></a>Руководство по интеграции Azure Active Directory с ASC Contracts
 
 В этом руководстве описано, как интегрировать ASC Contracts с Azure Active Directory (Azure AD).
 Интеграция Azure AD с приложением ASC Contracts обеспечивает следующие преимущества.

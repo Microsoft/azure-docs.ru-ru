@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.date: 09/30/2020
 ms.author: apimpm
 ms.openlocfilehash: 9ff64f57e61002101b4e2c560bdcd91863cc461e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91626981"
 ---
 # <a name="tutorial-import-and-publish-your-first-api"></a>Руководство по Импорт и публикация первого API
@@ -48,7 +48,7 @@ ms.locfileid: "91626981"
 
    Можно задать значения API во время создания или позже, перейдя на вкладку **Параметры**.
 
-   :::image type="content" source="media/import-and-publish/create-api.png" alt-text="Новый API в Управлении API":::
+   :::image type="content" source="media/import-and-publish/create-api.png" alt-text="Создание API":::
 
 
    |Параметр|Значение|Описание|
@@ -79,7 +79,7 @@ ms.locfileid: "91626981"
 1. Выберите вкладку **Тест**, а затем — **GetSpeakers**. На странице будут показаны **параметры запроса** и **заголовки**, если они есть. Параметр **Ocp-Apim-Subscription-Key** заполняется автоматически ключом подписки, связанным с этим API.
 1. Нажмите кнопку **Отправить**.
 
-   :::image type="content" source="media/import-and-publish/01-import-first-api-01.png" alt-text="Новый API в Управлении API":::
+   :::image type="content" source="media/import-and-publish/01-import-first-api-01.png" alt-text="Тестирование API на портале Azure":::
 
    Служба серверной части вернет ответ **200 — ОК** и другие данные.
 
