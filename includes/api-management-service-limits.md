@@ -6,15 +6,15 @@ author: vladvino
 ms.assetid: 1b813833-39c8-46be-8666-fd0960cfbf04
 ms.service: api-management
 ms.topic: include
-ms.date: 01/11/2021
+ms.date: 02/19/2021
 ms.author: vlvinogr
 ms.custom: include file
-ms.openlocfilehash: 78890c0596642b629482a6d24d17d83fb8ebc9a0
-ms.sourcegitcommit: 02b1179dff399c1aa3210b5b73bf805791d45ca2
+ms.openlocfilehash: ebaca1f39b16e4a06b5dcaa4e5f1de07122c6c89
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147426"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "103622037"
 ---
 | Ресурс | Ограничение |
 | ---------------------------------------------------------------------- | -------------------------- |
@@ -34,6 +34,8 @@ ms.locfileid: "98147426"
 | Максимальный размер полезных данных в буфере<sup>8</sup> | 2 МиБ |
 | Максимальный размер URL-адреса запроса<sup>9</sup> | 4096 байт |
 | Максимальная длина сегмента пути в URL-адресе<sup>10</sup> | 260 символов |
+| Максимальный размер схемы API, используемой [политикой проверки](../articles/api-management/validation-policies.md)<sup>10</sup> | 4 МБ |
+| Максимальный размер текста запроса или ответа в [политике проверки содержимого](../articles/api-management/validation-policies.md#validate-content) | 100 КБ |
 | Максимальное количество размещенных на собственном сервере шлюзов<sup>11</sup> | 25 |
 
 <sup>1</sup> Ограничения масштабирования зависят от выбранной ценовой категории. Сведения о ценовых категориях и ограничениях масштабирования для них см. на странице [цен на Управление API](https://azure.microsoft.com/pricing/details/api-management/).<br/>

@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 12/02/2020
 ms.author: pafarley
 ms.custom: seodec18
-ms.openlocfilehash: c8221a15ddd92276c105f1e441c8da722655d576
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 914fe0bbf04fa8835cbe96e5bbb83604f0d07bc2
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102444240"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103621950"
 ---
 С помощью REST API службы "Компьютерное зрение "вы можете выполнять такие задачи:
 
@@ -40,17 +40,21 @@ ms.locfileid: "102444240"
 Чтобы проанализировать изображение на наличие различных визуальных признаков, выполните следующие действия:
 
 1. Скопируйте приведенную ниже команду в текстовый редактор.
+1. Перейдите на портал Azure. Если ресурс Компьютерного зрения, созданный с учетом **предварительных требований**, успешно развернут, нажмите кнопку **Перейти к ресурсу** в разделе **Дальнейшие действия**. Ключ подписки и конечную точку можно найти на странице **Ключи и конечная точка** ресурса в разделе **Управление ресурсами**.
 1. При необходимости внесите следующие изменения в команду.
-    1. Замените значение `<subscriptionKey>` своим ключом подписки.
-    1. Замените первую часть URL-адреса запроса (`westcentralus`) текстом из URL-адреса своей конечной точки.
+    1. Замените значение `PASTE_YOUR_COMPUTER_VISION_SUBSCRIPTION_KEY_HERE` своим ключом подписки.
+    1. Замените первую часть URL-адреса запроса (`PASTE_YOUR_COMPUTER_VISION_ENDPOINT_HERE`) конечной точкой Компьютерного зрения. Конечная точка Компьютерного зрения имеет такой формат: `https://<your_computer_vision_resource_name>.cognitiveservices.azure.com/`.
         [!INCLUDE [Custom subdomains notice](../../../../includes/cognitive-services-custom-subdomains-note.md)]
     1. При необходимости замените URL-адрес изображения в тексте запроса (`http://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg\`) URL-адресом другого изображения для анализа.
 1. Откройте окно командной строки.
 1. Вставьте команду из текстового редактора в окно командной строки и выполните команду.
 
 ```bash
-curl -H "Ocp-Apim-Subscription-Key: <subscriptionKey>" -H "Content-Type: application/json" "https://westcentralus.api.cognitive.microsoft.com/vision/v3.1/analyze?visualFeatures=Categories,Description&details=Landmarks" -d "{\"url\":\"http://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg\"}"
+curl -H "Ocp-Apim-Subscription-Key: PASTE_YOUR_COMPUTER_VISION_SUBSCRIPTION_KEY_HERE" -H "Content-Type: application/json" "PASTE_YOUR_COMPUTER_VISION_ENDPOINT_HERE/vision/v3.1/analyze?visualFeatures=Categories,Description&details=Landmarks" -d "{\"url\":\"http://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg\"}"
 ```
+
+> [!IMPORTANT]
+> Не забудьте удалить ключ подписки из кода, когда закончите, и никогда не публикуйте его в открытом доступе. Для рабочей среды рекомендуется использовать безопасный способ хранения и доступа к учетным данным. Например, [хранилище ключей Azure](../../../key-vault/general/overview.md).
 
 ### <a name="examine-the-response"></a>Изучите ответ.
 

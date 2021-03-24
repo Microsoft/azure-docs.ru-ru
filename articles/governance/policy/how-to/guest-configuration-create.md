@@ -3,12 +3,12 @@ title: Создание политик гостевой конфигурации
 description: Узнайте, как создать политику гостевой конфигурации в службе "Политика Azure" для Windows.
 ms.date: 08/17/2020
 ms.topic: how-to
-ms.openlocfilehash: ae9af51ad3b2eb237f8655c996a1345140a8a635
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 72772743eba23ea7c2a93f5037ac84b671256a66
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99070650"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104887705"
 ---
 # <a name="how-to-create-guest-configuration-policies-for-windows"></a>Создание политик гостевой конфигурации для Windows
 
@@ -214,10 +214,11 @@ Configuration AuditBitLocker
 }
 
 # Compile the configuration to create the MOF files
-AuditBitLocker ./Config
+AuditBitLocker
 ```
 
-Сохраните этот файл с именем `config.ps1` в папке проекта. Запустите его в PowerShell, выполнив команду `./config.ps1` в терминале. Создастся MOF-файл.
+Запустите этот скрипт в терминале PowerShell или сохраните этот файл с именем `config.ps1` в папке проекта.
+Запустите его в PowerShell, выполнив команду `./config.ps1` в терминале. Создастся MOF-файл.
 
 Команда `Node AuditBitlocker` не является технически необходимой, но она создает файл с именем `AuditBitlocker.mof`, а не с именем по умолчанию `localhost.mof`. Если имя MOF-файла соответствует конфигурации, вам будет проще упорядочивать множество файлов при работе в большом масштабе.
 
@@ -234,7 +235,7 @@ AuditBitLocker ./Config
 ```azurepowershell-interactive
 New-GuestConfigurationPackage `
   -Name 'AuditBitlocker' `
-  -Configuration './Config/AuditBitlocker.mof'
+  -Configuration './AuditBitlocker/AuditBitlocker.mof'
 ```
 
 После создания пакета конфигурации, но перед его публикацией в Azure можно протестировать пакет с рабочей станции или среды непрерывной интеграции и непрерывного развертывания (CI/CD). Командлет гостевой конфигурации `Test-GuestConfigurationPackage` включает в среду разработки тот же агент, который используется на компьютерах Azure. С помощью этого решения можно выполнить локальное тестирование интеграции перед выпуском в платных облачных средах.
@@ -257,10 +258,16 @@ Test-GuestConfigurationPackage `
 Этот командлет также поддерживает ввод данных из конвейера PowerShell. Передайте выходные данные командлета `New-GuestConfigurationPackage` в командлет `Test-GuestConfigurationPackage`.
 
 ```azurepowershell-interactive
-New-GuestConfigurationPackage -Name AuditBitlocker -Configuration ./Config/AuditBitlocker.mof | Test-GuestConfigurationPackage
+New-GuestConfigurationPackage -Name AuditBitlocker -Configuration ./AuditBitlocker/AuditBitlocker.mof | Test-GuestConfigurationPackage
 ```
 
-Следующим шагом является публикация файла в хранилище BLOB-объектов Azure. Для команды `Publish-GuestConfigurationPackage` требуется `Az.Storage` модуль.
+Следующим шагом является публикация файла в хранилище BLOB-объектов Azure. Никаких особых требований к учетной записи хранения не существует, но рекомендуется размещать файл в регионе рядом с вашими компьютерами. Если у вас нет учетной записи хранения, используйте следующий пример. Для приведенных ниже команд, включая `Publish-GuestConfigurationPackage` , требуется `Az.Storage` модуль.
+
+```azurepowershell-interactive
+# Creates a new resource group, storage account, and container
+New-AzResourceGroup -name myResourceGroupName -Location WestUS
+New-AzStorageAccount -ResourceGroupName myResourceGroupName -Name myStorageAccountName -SkuName 'Standard_LRS' -Location 'WestUs' | New-AzStorageContainer -Name guestconfiguration -Permission Blob
+```
 
 Командлет `Publish-GuestConfigurationPackage` принимает следующие параметры:
 
@@ -416,111 +423,6 @@ New-GuestConfigurationPolicy
 > Расширяемость гостевой конфигурации поддерживается в режиме "использование собственной лицензии". Перед ее использованием убедитесь, что вы соблюдаете все условия, применимые к средствам сторонних разработчиков.
 
 После установки ресурса DSC в среде разработки примените параметр **FilesToInclude** для командлета `New-GuestConfigurationPackage`, чтобы включить содержимое платформы стороннего разработчика в артефакт содержимого.
-
-### <a name="step-by-step-creating-a-content-artifact-that-uses-third-party-tools"></a>Пошаговый процесс создания артефакта содержимого, использующего средства сторонних разработчиков
-
-По сравнению с пошаговым руководством для артефактов содержимого DSC изменить нужно только командлет `New-GuestConfigurationPackage`. В этом примере используйте модуль `gcInSpec`, чтобы расширить гостевую конфигурацию для аудита компьютеров Windows, заменив встроенный модуль для ОС Linux на платформу InSpec. Модуль сообщества поддерживается в виде [проекта с открытым кодом в GitHub](https://github.com/microsoft/gcinspec).
-
-Установите обязательные модули в среде разработки.
-
-```azurepowershell-interactive
-# Update PowerShellGet if needed to allow installing PreRelease versions of modules
-Install-Module PowerShellGet -Force
-
-# Install GuestConfiguration module prerelease version
-Install-Module GuestConfiguration -allowprerelease
-
-# Install commmunity supported gcInSpec module
-Install-Module gcInSpec
-```
-
-Для начала создайте файл YaML, используемый InSpec. Этот файл содержит основные сведения о среде. Ниже вы видите пример.
-
-```YaML
-name: wmi_service
-title: Verify WMI service is running
-maintainer: Microsoft Corporation
-summary: Validates that the Windows Service 'winmgmt' is running
-copyright: Microsoft Corporation
-license: MIT
-version: 1.0.0
-supports:
-  - os-family: windows
-```
-
-Сохраните этот файл с именем `wmi_service.yml` в папке `wmi_service` в каталоге проекта.
-
-Затем создайте файл Ruby с абстракцией языка InSpec, используемой для аудита компьютера.
-
-```Ruby
-control 'wmi_service' do
-  impact 1.0
-  title 'Verify windows service: winmgmt'
-  desc 'Validates that the service, is installed, enabled, and running'
-
-  describe service('winmgmt') do
-    it { should be_installed }
-    it { should be_enabled }
-    it { should be_running }
-  end
-end
-
-```
-
-Сохраните этот файл `wmi_service.rb` в новой папке с именем в `controls` `wmi_service` каталоге.
-
-Наконец, создайте конфигурацию, импортируйте модуль ресурсов **GuestConfiguration** и используйте ресурс `gcInSpec`, чтобы настроить имя профиля InSpec.
-
-```powershell
-# Define the configuration and import GuestConfiguration
-Configuration wmi_service
-{
-    Import-DSCResource -Module @{ModuleName = 'gcInSpec'; ModuleVersion = '2.1.0'}
-    node 'wmi_service'
-    {
-        gcInSpec wmi_service
-        {
-            InSpecProfileName       = 'wmi_service'
-            InSpecVersion           = '3.9.3'
-            WindowsServerVersion    = '2016'
-        }
-    }
-}
-
-# Compile the configuration to create the MOF files
-wmi_service -out ./Config
-```
-
-Теперь у вас должна быть структура проекта, аналогичная показанной ниже.
-
-```file
-/ wmi_service
-    / Config
-        wmi_service.mof
-    / wmi_service
-        wmi_service.yml
-        / controls
-            wmi_service.rb 
-```
-
-Вспомогательные файлы должны быть упакованы вместе. Готовый пакет используется гостевой конфигурацией для создания определений в службе "Политика Azure".
-
-Командлет `New-GuestConfigurationPackage` создает пакет. Для содержимого от сторонних разработчиков укажите параметр **FilesToInclude**, чтобы добавить содержимое InSpec в пакет. Не нужно указывать **чефпрофилепас** как для пакетов Linux.
-
-- **Name** (Имя). Имя пакета гостевой конфигурации.
-- **Конфигурация.** Полный путь к скомпилированному документу конфигурации.
-- **Путь**. Путь к выходной папке. Это необязательный параметр. Если этот параметр не указан, пакет создается в текущем каталоге.
-- **FilesoInclude**. Полный путь к профилю InSpec.
-
-Выполните следующую команду, чтобы создать пакет с использованием конфигурации, заданной на предыдущем шаге.
-
-```azurepowershell-interactive
-New-GuestConfigurationPackage `
-  -Name 'wmi_service' `
-  -Configuration './Config/wmi_service.mof' `
-  -FilesToInclude './wmi_service'  `
-  -Path './package' 
-```
 
 ## <a name="policy-lifecycle"></a>Жизненный цикл политики
 

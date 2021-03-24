@@ -16,12 +16,12 @@ ms.author: kenwith
 ms.reviewer: japere
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cadf5b7d92e26e561e570f824295e69ca421e16
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 34aaafcd03e737b1e59529f8001e0c008bd39b70
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101644526"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104888878"
 ---
 # <a name="integrate-with-sharepoint-saml"></a>Интеграция с SharePoint (SAML)
 
@@ -68,8 +68,8 @@ ms.locfileid: "101644526"
 
  1. Создайте новое приложение AD Application Proxy Azure с пользовательским доменом. Пошаговые инструкции см. [в разделе Личные домены в Azure AD application proxy](./application-proxy-configure-custom-domain.md).
 
-    - Внутренний URL-адрес: https://portal.contoso.com/
-    - Внешний URL-адрес: https://portal.contoso.com/
+    - Внутренний URL-адрес: " https://portal.contoso.com/ "
+    - Внешний URL-адрес: " https://portal.contoso.com/ "
     - Предварительная проверка подлинности: Azure Active Directory
     - Перевод URL-адресов в заголовки: нет
     - Перевод URL-адресов в тексте приложения: нет
@@ -84,4 +84,4 @@ ms.locfileid: "101644526"
  
 ## <a name="step-3-test-your-application"></a>Шаг 3. Тестирование приложения
 
-Используя браузер из компьютера во внешней сети, перейдите по URL-адресу https://portal.contoso.com/) , настроенному на этапе публикации. Убедитесь, что вы можете войти в систему с помощью настроенной тестовой учетной записи.
+Используя браузер из компьютера во внешней сети, перейдите по ссылке, настроенной на этапе публикации. Убедитесь, что вы можете войти в систему с помощью настроенной тестовой учетной записи.

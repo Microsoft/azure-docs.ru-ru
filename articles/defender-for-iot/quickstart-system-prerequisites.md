@@ -7,12 +7,12 @@ ms.author: shhazam
 ms.date: 11/30/2020
 ms.topic: quickstart
 ms.service: azure
-ms.openlocfilehash: 7b609fec2a47dc0685b30dac12f43263127f70ef
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.openlocfilehash: 4b5db049e6d1cfe76bdd0d5cd6d7360e0b98bad0
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100523216"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489817"
 ---
 # <a name="system-prerequisites"></a>Требования к системе
 В этой статье перечислены требования к системе, необходимые для использования Azure Defender для Интернета вещей.
@@ -23,7 +23,7 @@ ms.locfileid: "100523216"
 - Аппаратные устройства для датчиков NTA.
 - Роль участника подписки Azure. Она необходима только при подключении для определения устройств и соединения с Azure Sentinel.
 - Роль **участника** Центра Интернета вещей Azure (уровень "Стандартный" или "Бесплатный") для управления в облаке. Убедитесь, что включена функция **Azure Defender для Интернета вещей**.
-- Defender для Интернета вещей поддерживает разные устройства и платформы (их список постоянно пополняется) для модуля безопасности на уровне устройства. Ознакомьтесь со списком [поддерживаемых платформ](how-to-deploy-agent.md).
+- Для микроагента Defender для Интернета вещей на уровне устройств поддерживаются разные устройства и платформы (их список постоянно пополняется). Ознакомьтесь со списком [поддерживаемых платформ](how-to-deploy-agent.md).
 
 ## <a name="supported-service-regions"></a>Поддерживаемые регионы для службы
 
@@ -31,7 +31,7 @@ Defender для Интернета вещей направляет весь тр
 
 См. дополнительные сведения о [поддерживаемых в Центре Интернета вещей регионах](https://azure.microsoft.com/global-infrastructure/services/?products=iot-hub).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="see-also"></a>См. также раздел
 
-[Определение требуемых устройств](how-to-identify-required-appliances.md)
-[Сведения о настройке сети Azure Defender для Интернета вещей](how-to-set-up-your-network.md)
+- [Определение необходимых устройств](how-to-identify-required-appliances.md)
+- [Настройка сети с Azure Defender для Интернета вещей](how-to-set-up-your-network.md)

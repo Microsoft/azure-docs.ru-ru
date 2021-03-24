@@ -2,13 +2,13 @@
 title: Подключение Решения Azure VMware к локальной среде
 description: Узнайте, как подключить Решение Azure VMware к локальной среде.
 ms.topic: tutorial
-ms.date: 12/28/2020
-ms.openlocfilehash: 753835b0206d8bbabe42b057fa40a2d6c4c8c414
-ms.sourcegitcommit: 31d242b611a2887e0af1fc501a7d808c933a6bf6
+ms.date: 03/13/2021
+ms.openlocfilehash: 0b26dc4756cb37544c2b2f8c5a75df0ac1a9d629
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97809689"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103491798"
 ---
 # <a name="connect-azure-vmware-solution-to-your-on-premises-environment"></a>Подключение Решения Azure VMware к локальной среде
 
@@ -17,7 +17,7 @@ ms.locfileid: "97809689"
 Прежде чем приступать к подключению Решения Azure VMware к локальной среде, необходимо иметь следующее:
 
 - цепь ExpressRoute из локальной среды в Azure;
-- блок неперекрывающихся сетевых адресов /29 для пиринга ExpressRoute Global Reach, который вы определили как часть [этапа планирования](production-ready-deployment-steps.md).
+- блок неперекрывающихся сетевых адресов CIDR /29 для пиринга ExpressRoute Global Reach, который вы определили как часть [этапа планирования](production-ready-deployment-steps.md).
 
 >[!NOTE]
 > Вы можете подключиться через VPN, но этот метод не рассматривается в этом кратком руководстве.
@@ -25,6 +25,10 @@ ms.locfileid: "97809689"
 ## <a name="establish-an-expressroute-global-reach-connection"></a>Установка подключения ExpressRoute Global Reach
 
 Чтобы установить локальное подключение к частному облаку Решения Azure VMware с помощью ExpressRoute Global Reach, следуйте указаниям в [этом учебнике](tutorial-expressroute-global-reach-private-cloud.md).
+
+На схеме ниже показано, как установить подключение.
+
+:::image type="content" source="media/pre-deployment/azure-vmware-solution-on-premises-diagram.png" alt-text="Схема локального сетевого подключения ExpressRoute Global Reach." lightbox="media/pre-deployment/azure-vmware-solution-on-premises-diagram.png" border="false":::
 
 ## <a name="verify-on-premises-network-connectivity"></a>Проверка локального сетевого подключения
 

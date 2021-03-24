@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020, devx-track-azurecli, devx-track-azurepowershell
 ms.date: 05/13/2020
-ms.openlocfilehash: b81a2021cabefd9587d448aa236e7e87bc254741
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0dfa89f50dedad41394cb77f1cca9b2dd3a65308
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100590824"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865542"
 ---
 # <a name="use-azure-monitor-logs-to-monitor-hdinsight-clusters"></a>Мониторинг кластеров HDInsight с помощью журналов Azure Monitor
 
@@ -58,7 +58,7 @@ ms.locfileid: "100590824"
 
 1. Щелкните **Сохранить**.  Параметр сохраняется в течение нескольких секунд.
 
-    ![Включение мониторинга кластеров HDInsight](./media/hdinsight-hadoop-oms-log-analytics-tutorial/azure-portal-monitoring.png "Включение мониторинга кластеров HDInsight")
+    :::image type="content" source="./media/hdinsight-hadoop-oms-log-analytics-tutorial/azure-portal-monitoring.png" alt-text="Включение мониторинга кластеров HDInsight":::
 
 ## <a name="enable-azure-monitor-using-azure-powershell"></a>Включение Azure Monitor с помощью Azure PowerShell
 
@@ -138,7 +138,7 @@ HDInsight предоставляет решения по управлению к
 
 Инструкции для решений по управлению см. в разделе [Решения по управлению в Azure](../azure-monitor/insights/solutions.md#install-a-monitoring-solution). Чтобы поэкспериментировать, установите решение для мониторинга Hadoop в HDInsight. После установки вы увидите элемент **HDInsightHadoop** в разделе **Сводка**. Выберите элемент **HDInsightHadoop**. Решение HDInsightHadoop будет выглядеть примерно следующим образом:
 
-![Решение HDInsight для мониторинга](media/hdinsight-hadoop-oms-log-analytics-tutorial/hdinsight-oms-hdinsight-hadoop-monitoring-solution.png)
+:::image type="content" source="media/hdinsight-hadoop-oms-log-analytics-tutorial/hdinsight-oms-hdinsight-hadoop-monitoring-solution.png" alt-text="Решение HDInsight для мониторинга":::
 
 Так как это новый кластер, в отчете не будут отображаться никакие действия.
 

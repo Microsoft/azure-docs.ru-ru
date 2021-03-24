@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 12/02/2020
-ms.openlocfilehash: 7466e143f345ea305c7e9ef118d09fb6f685ac16
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6f7f481ae0e0c75b14d894080f791161346cd93f
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101694503"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952411"
 ---
 # <a name="how-to-create-import-and-export-glossary-terms"></a>Создание, импорт и экспорт терминов глоссария
 
@@ -80,6 +80,9 @@ ms.locfileid: "101694503"
 4. Завершив заполнение CSV-файла, выберите импортируемый файл и нажмите кнопку **ОК**.
 
 5. Система отправит файл и добавит все условия в каталог.
+ 
+   > [!Important]
+   > Адрес электронной почты для Администраторы и экспертов должен быть основным адресом пользователя из группы AAD. Альтернативный адрес электронной почты, имя участника-пользователя и электронная почта без AAD пока не поддерживаются. 
 
 ## <a name="export-terms-from-glossary-with-custom-attributes"></a>Экспорт терминов из глоссария с пользовательскими атрибутами
 

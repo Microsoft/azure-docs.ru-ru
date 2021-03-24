@@ -1,6 +1,6 @@
 ---
-title: Пример PowerShell. Экспорт регистраций, секретов и сертификатов приложений в клиенте Azure Active Directory
-description: Пример скрипта PowerShell, который позволяет экспортировать все регистрации, секреты и сертификаты приложений для указанных приложений в клиенте Azure Active Directory.
+title: Пример PowerShell. Экспорт секретов и сертификатов для регистраций приложений в арендаторе Azure Active Directory.
+description: Пример скрипта PowerShell, который позволяет экспортировать все секреты и сертификаты для указанных регистраций приложений в арендаторе Azure Active Directory.
 services: active-directory
 author: kenwith
 manager: daveba
@@ -8,19 +8,19 @@ ms.service: active-directory
 ms.subservice: app-mgmt
 ms.workload: identity
 ms.topic: sample
-ms.date: 02/18/2021
+ms.date: 03/09/2021
 ms.author: kenwith
 ms.reviewer: mifarca
-ms.openlocfilehash: 768f2f3241144085acb7a218b60034cdfa9e45b9
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: d0de96d0d8a5edc6fbacc25dcbcb868073e57183
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102193275"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556559"
 ---
-# <a name="export-app-registrations-secrets-and-certificates"></a>Экспорт регистраций, секретов и сертификатов приложений
+# <a name="export-secrets-and-certificates-for-app-registrations"></a>Экспорт секретов и сертификатов для регистраций приложений
 
-Этот пример скрипта PowerShell экспортирует все регистрации, секреты и сертификаты для указанных приложений в каталоге.
+Этот пример скрипта PowerShell экспортирует все секреты и сертификаты для указанных регистраций приложений из вашего каталога в CSV-файл.
 
 [!INCLUDE [quickstarts-free-trial-note](../../../../includes/quickstarts-free-trial-note.md)]
 
@@ -28,13 +28,17 @@ ms.locfileid: "102193275"
 
 ## <a name="sample-script"></a>Пример скрипта
 
-[!code-azurepowershell[main](~/powershell_scripts/application-management/export-all-app-registrations-secrets-and-certs.ps1 "Exports all app registrations, secrets, and certificates for the specified apps in your directory.")]
+[!code-azurepowershell[main](~/powershell_scripts/application-management/export-all-app-registrations-secrets-and-certs.ps1 "Exports all secrets and certificates for the specified app registrations in your directory.")]
 
 ## <a name="script-explanation"></a>Описание скрипта
 
+С помощью команды Add-Member создаются столбцы в CSV-файле.
+Вы можете изменить переменную $Path непосредственно в PowerShell, указав путь к CSV-файлу (если вы предпочитаете неинтерактивный экспорт).
+
 | Get-Help | Примечания |
 |---|---|
-| [Get-AzureADApplication](/powershell/module/azuread/get-azureadapplication?view=azureadps-2.0&preserve-view=true) | Экспортирует все регистрации, секреты и сертификаты приложений для указанных приложений в каталоге. |
+| [Get-AzureADApplication](/powershell/module/azuread/get-azureadapplication) | Извлекает приложение из каталога. |
+| [Get-AzureADApplicationOwner](/powershell/module/azuread/Get-AzureADApplicationOwner) | Извлекает владельцев приложения из каталога. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

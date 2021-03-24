@@ -7,12 +7,12 @@ author: aniket-ms
 ms.author: aadnaik
 ms.reviewer: HDI HiveLLAP Team
 ms.date: 05/05/2020
-ms.openlocfilehash: 7df75077785c66215008e045ef0b1e451ba29f57
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ca3ba61de13e0e451b43dc9c8ea40db33fed859a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98931110"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869673"
 ---
 # <a name="azure-hdinsight-interactive-query-cluster-hive-llap-sizing-guide"></a>Руководство по настройке размера кластера Azure HDInsight Interactive Query (Hive LLAP)
 
@@ -47,7 +47,7 @@ ms.locfileid: "98931110"
 
 ### <a name="llap-architecturecomponents"></a>**Архитектура и компоненты LLAP:**  
 
-!["LLAP Architecture/Components"](./media/hive-llap-sizing-guide/LLAP_architecture_sizing_guide.png "Архитектура и компоненты LLAP")
+:::image type="content" source="./media/hive-llap-sizing-guide/LLAP_architecture_sizing_guide.png " alt-text="&quot;LLAP Architecture/Components&quot;" border="true":::
 
 ### <a name="llap-daemon-size-estimations"></a>**Оценка размеров управляющей программы LLAP** 
 
@@ -81,7 +81,7 @@ ms.locfileid: "98931110"
 
 **Ползунок пользовательского интерфейса Ambari для переменной конфигурации Hive `hive.server2.tez.sessions.per.default.queue` :**
 
-![' LLAP максимальное число одновременных запросов '](./media/hive-llap-sizing-guide/LLAP_sizing_guide_max_concurrent_queries.png "LLAP максимальное число одновременных запросов")
+:::image type="content" source="./media/hive-llap-sizing-guide/LLAP_sizing_guide_max_concurrent_queries.png " alt-text="' LLAP максимальное число одновременных запросов '" border="true":::
 
 #### <a name="5-tez-container-and-tez-application-master-size"></a>**5. Размер контейнера Tez и мастер-приложения Tez**    
 Конфигурация: ***tez.am.resource.memory.mb, hive.tez.container.size***  
@@ -165,7 +165,7 @@ Tez память на узел = **(** ceil **(** число Tez AMs **/** ко�
 
 `Ambari environment variable for LLAP heap size:`
 
-!["Размер кучи LLAP"](./media/hive-llap-sizing-guide/LLAP_sizing_guide_llap_heap_size.png "Размер кучи LLAP")
+:::image type="content" source="./media/hive-llap-sizing-guide/LLAP_sizing_guide_llap_heap_size.png " alt-text="&quot;Размер кучи LLAP&quot;" border="true":::
 
 Если кэш SSD отключен, кэш в памяти будет иметь объем памяти, оставшийся после извлечения размера контейнера управляющей программы LLAP и размера кучи.
 
@@ -197,11 +197,11 @@ Tez память на узел = **(** ceil **(** число Tez AMs **/** ко�
 
 **num_llap_nodes** — указывает количество узлов, используемых службой Hive llap, включая узлы под управлением управляющей программы Llap, главного сервера Llap и главного приложения Tez (Tez AM).  
 
-![' Число узлов для службы LLAP '](./media/hive-llap-sizing-guide/LLAP_sizing_guide_num_llap_nodes.png "Число узлов для службы LLAP")  
+:::image type="content" source="./media/hive-llap-sizing-guide/LLAP_sizing_guide_num_llap_nodes.png " alt-text="' Число узлов для службы LLAP '" border="true":::  
 
 **num_llap_nodes_for_llap_daemons** указанное количество узлов, используемое только для управляющих программ llap. Размеры контейнера управляющей программы LLAP задаются равными максимальному размеру узла, поэтому в каждом узле будет одна управляющая программа LLAP.
 
-![' Число узлов для управляющих LLAP '](./media/hive-llap-sizing-guide/LLAP_sizing_guide_num_llap_nodes_for_llap_daemons.png "Число узлов для управляющих программ LLAP")
+:::image type="content" source="./media/hive-llap-sizing-guide/LLAP_sizing_guide_num_llap_nodes_for_llap_daemons.png " alt-text="' Число узлов для управляющих LLAP '" border="true":::
 
 Рекомендуется, чтобы оба значения совпадали с количеством рабочих узлов в кластере интерактивных запросов.
 

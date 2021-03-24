@@ -3,7 +3,7 @@ title: Настройка управляемого распределения д
 description: Запустите среду разработки и тестирования IBM Z (ЗД&T) на виртуальных машинах Azure.
 services: virtual-machines
 ms.service: virtual-machines
-ms.subservice: workloads
+ms.subservice: mainframe-rehosting
 documentationcenter: ''
 author: njray
 manager: edprice
@@ -13,12 +13,12 @@ ms.topic: conceptual
 ms.date: 02/22/2019
 tags: ''
 keywords: ''
-ms.openlocfilehash: d390cca483444dadd278d783c5f93e09a1bf1ff8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: fda59cc041cc540b95ababa6d56df6e69b0a8970
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102549453"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104956168"
 ---
 # <a name="set-up-an-application-developers-controlled-distribution-adcd-in-ibm-zdt-v1"></a>Настройка управляемого распределения для разработчиков приложений (АДКД) в IBM зд&T v1
 

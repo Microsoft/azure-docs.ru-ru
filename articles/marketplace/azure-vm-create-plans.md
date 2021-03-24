@@ -7,12 +7,12 @@ ms.topic: how-to
 author: mingshen-ms
 ms.author: mingshen
 ms.date: 10/19/2020
-ms.openlocfilehash: e5fb425afdd4b212a0b28ce91418eb0ee9e3632f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c700cce5f50fda7f7a5773e07549e93da1c9f7a2
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97964439"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104956260"
 ---
 # <a name="how-to-create-plans-for-a-virtual-machine-offer"></a>Создание планов для предложения виртуальной машины
 
@@ -221,6 +221,8 @@ ms.locfileid: "97964439"
 Вне зависимости от используемой операционной системы добавляйте минимальное количество дисков данных, необходимое для решения. В процессе развертывания клиенты не смогут удалить диски, которые являются частью образа, но смогут добавить другие диски во время или после развертывания.
 
 Выберите **Сохранить черновик**, а затем выберите **← Plan (обзор плана** ) вверху слева, чтобы просмотреть только что созданный план.
+
+После публикации образа виртуальной машины можно удалить образ из хранилища Azure.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

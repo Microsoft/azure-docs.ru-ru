@@ -6,12 +6,12 @@ ms.author: nisgoel
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 05/28/2020
-ms.openlocfilehash: 6611f5ca7ddae243c4bc314be73a9030311cec89
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 57a3d76f24c33984a883e926a8d4c68736e9f121
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99594440"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869894"
 ---
 # <a name="integrate-apache-spark-and-apache-hive-with-hive-warehouse-connector-in-azure-hdinsight"></a>Интеграция Apache Spark и Apache Hive с помощью Hive Warehouse Connector в Azure HDInsight
 
@@ -23,7 +23,7 @@ Apache Hive предлагает поддержку для транзакций 
 
 Apache Spark имеет API структурированной потоковой передачи, который предоставляет возможности потоковой передачи, недоступные в Apache Hive. Начиная с HDInsight 4.0, Apache Spark 2.3.1 и Apache Hive 3.1.0 имеют отдельные хранилища метаданных. Отдельные хранилища метаданных могут усложнить взаимодействие. Hive Warehouse Connector упрощает совместное использование Spark и Hive. Библиотека HWC загружает данные из управляющих программ LLAP в исполнители Spark параллельно. Этот процесс повышает эффективность и адаптацию по сравнению со стандартным соединением JDBC для Spark к Hive.
 
-![Архитектура Hive Warehouse Connector](./media/apache-hive-warehouse-connector/hive-warehouse-connector-architecture.png)
+:::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-architecture.png" alt-text="Архитектура Hive Warehouse Connector" border="true":::
 
 Операции, поддерживаемые Hive Warehouse Connector:
 
@@ -72,9 +72,9 @@ Apache Spark имеет API структурированной потоково�
 
 1. Разверните **Custom spark2-defaults**.
 
-    ![Настройка Apache Ambari Spark2](./media/apache-hive-warehouse-connector/hive-warehouse-connector-spark2-ambari.png)
+    :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-spark2-ambari.png" alt-text="Настройка Apache Ambari Spark2" border="true":::
 
-1. Щелкните **Добавить свойство...** , чтобы добавить следующие конфигурации:
+1. Щелкните **Add Property...** (Добавить свойство...), чтобы добавить следующие конфигурации:
 
     | Конфигурация | Значение |
     |----|----|
@@ -103,11 +103,11 @@ Apache Spark имеет API структурированной потоково�
     
     * В веб-браузере перейдите в `https://CLUSTERNAME.azurehdinsight.net/#/main/services/HIVE/summary` папку, где имя_кластера — имя кластера интерактивных запросов. Щелкните **HiveServer2 Interactive (интерактивный**). Вы увидите полное доменное имя (FQDN) головного узла, на котором работает LLAP, как показано на снимке экрана. Замените `<llap-headnode>` на это значение.
 
-        ![Головной узел соединителя хранилища Hive](./media/apache-hive-warehouse-connector/head-node-hive-server-interactive.png)
+        :::image type="content" source="./media/apache-hive-warehouse-connector/head-node-hive-server-interactive.png" alt-text="Головной узел соединителя хранилища Hive" border="true":::
 
     * Используйте [команду SSH](../hdinsight-hadoop-linux-use-ssh-unix.md) для подключения к кластеру интерактивных запросов. Найдите `default_realm` параметр в `/etc/krb5.conf` файле. Замените `<AAD-DOMAIN>` на это значение строкой в верхнем регистре, в противном случае не будут найдены учетные данные.
 
-        ![соединитель хранилища Hive домен AAD](./media/apache-hive-warehouse-connector/aad-domain.png)
+        :::image type="content" source="./media/apache-hive-warehouse-connector/aad-domain.png" alt-text="соединитель хранилища Hive домен AAD" border="true":::
 
     * Например, `hive/hn0-ng36ll.mjry42ikpruuxgs2qy2kpg4q5e.cx.internal.cloudapp.net@PKRSRVUQVMAE6J85.D2.INTERNAL.CLOUDAPP.NET` .
     
@@ -211,21 +211,21 @@ kinit USERNAME
     hive.executeQuery("SELECT * FROM demo").show()
     ```
 
-    ![Демонстрационная таблица перед применением политики Ranger](./media/apache-hive-warehouse-connector/hive-warehouse-connector-table-before-ranger-policy.png)
+    :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-table-before-ranger-policy.png" alt-text="Демонстрационная таблица перед применением политики Ranger" border="true":::
 
 1. Примените политику маскирования столбцов, которая будет показывать только последние четыре символа столбца.  
     1. Перейдите в пользовательский интерфейс администратора Ranger по адресу `https://LLAPCLUSTERNAME.azurehdinsight.net/ranger/`.
     1. Щелкните службу Hive для кластера в разделе **Hive**.
-        ![Диспетчер служб Ranger](./media/apache-hive-warehouse-connector/hive-warehouse-connector-ranger-service-manager.png)
+        :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-ranger-service-manager.png" alt-text="Диспетчер служб Ranger" border="true":::
     1. Щелкните вкладку **Маскирование** и нажмите **Добавить новую политику**
 
-        ![список политик hive ranger для hive warehouse connector](./media/apache-hive-warehouse-connector/hive-warehouse-connector-ranger-hive-policy-list.png)
+        :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-ranger-hive-policy-list.png" alt-text="список политик hive ranger для hive warehouse connector" border="true":::
 
     1. Укажите имя нужной политики. Выберите базу данных: **По умолчанию**, таблица Hive: **демонстрация**, столбец Hive: **имя**, пользователь: **rsadmin2**, типы доступа: **выбранные** и **частичная маска: показывать последние 4** в меню **Выбор параметров маскирования**. Нажмите кнопку **Добавить**.
-                ![Создание политики](./media/apache-hive-warehouse-connector/hive-warehouse-connector-ranger-create-policy.png)
+                :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-ranger-create-policy.png" alt-text="Создание политики" border="true":::
 1. Снова просмотрите содержимое таблицы. После применения политики Ranger вы увидите только последние четыре символа столбца.
 
-    ![Демонстрационная таблица после применения политики Ranger](./media/apache-hive-warehouse-connector/hive-warehouse-connector-table-after-ranger-policy.png)
+    :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-table-after-ranger-policy.png" alt-text="Демонстрационная таблица после применения политики Ranger" border="true":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

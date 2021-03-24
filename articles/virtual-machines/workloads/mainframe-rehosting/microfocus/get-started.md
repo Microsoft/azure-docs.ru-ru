@@ -5,13 +5,14 @@ author: njray
 ms.author: sread
 ms.date: 03/30/2020
 ms.topic: article
-ms.service: multiple
-ms.openlocfilehash: 62d3f7cc75a887605cdd3c19ac2e45990e541d5e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.service: virtual-machines
+ms.subservice: mainframe-rehosting
+ms.openlocfilehash: d1c5f09bd7ce418ca2cb338215cd3093372884cf
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "80410983"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104953538"
 ---
 # <a name="micro-focus-devtest-environments-on-azure"></a>Среда разработки и тестирования Micro Focus в Azure
 

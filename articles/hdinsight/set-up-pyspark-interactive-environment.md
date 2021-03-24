@@ -6,12 +6,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020, devx-track-python
 ms.date: 04/23/2020
-ms.openlocfilehash: 337a9f3f2ea25e5a4d4fa4204a0f3fa4dcc9369b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: a6247116cdf579691e48883231f57712da36c4ad
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940647"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864573"
 ---
 # <a name="set-up-the-pyspark-interactive-environment-for-visual-studio-code"></a>Настройка интерактивной среды PySpark для Visual Studio Code
 
@@ -38,7 +38,7 @@ ms.locfileid: "98940647"
 
 В Linux, если вы используете приведенное ниже сообщение об ошибке, установите необходимые пакеты, выполнив следующие две команды.
 
-   ![Установка пакета libkrb5 для Python](./media/set-up-pyspark-interactive-environment/install-libkrb5-package.png)
+   :::image type="content" source="./media/set-up-pyspark-interactive-environment/install-libkrb5-package.png" alt-text="Установка пакета libkrb5 для Python" border="true":::
 
 ```bash
 sudo apt-get install libkrb5-dev

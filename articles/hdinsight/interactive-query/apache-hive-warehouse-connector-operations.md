@@ -6,12 +6,12 @@ ms.author: nisgoel
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 05/22/2020
-ms.openlocfilehash: 20567a1e38686b5d452a5353bc459e7e1125f499
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1799aff8bff96d404ddcbefbf58a5f5014cdba6a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98941303"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871594"
 ---
 # <a name="apache-spark-operations-supported-by-hive-warehouse-connector-in-azure-hdinsight"></a>Операции Apache Spark, поддерживаемые Hive Warehouse Connector в Azure HDInsight
 
@@ -86,7 +86,7 @@ Spark изначально не поддерживает запись в упр�
     hive.table("sampletable_colorado").show()
     ```
     
-    ![Отображение таблицы Hive с помощью Hive Warehouse Connector](./media/apache-hive-warehouse-connector/hive-warehouse-connector-show-hive-table.png)
+    :::image type="content" source="./media/apache-hive-warehouse-connector/hive-warehouse-connector-show-hive-table.png" alt-text="Отображение таблицы Hive с помощью Hive Warehouse Connector" border="true":::
 
 
 ## <a name="structured-streaming-writes"></a>Операции записи посредством структурированной потоковой передачи

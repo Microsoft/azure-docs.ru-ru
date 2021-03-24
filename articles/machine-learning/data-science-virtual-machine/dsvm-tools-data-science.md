@@ -9,12 +9,12 @@ author: lobrien
 ms.author: laobri
 ms.topic: conceptual
 ms.date: 12/12/2019
-ms.openlocfilehash: ac71d8d7830f1d740d0156886a364b1d53ab247f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d78b106464bfbd3c86b9899a5c3543eed5dc0924
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100519564"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104888963"
 ---
 # <a name="machine-learning-and-data-science-tools-on-azure-data-science-virtual-machines"></a>Машинное обучение и средства обработки и анализа данных на виртуальных машинах Azure для обработки и анализа данных
 Виртуальные машины Azure для обработки и анализа данных (Dsvm) имеют широкий набор средств и библиотек для машинного обучения, доступных на популярных языках, таких как Python, R и Julia.
@@ -99,7 +99,7 @@ ms.locfileid: "100519564"
 | Поддерживаемые выпуски     | Windows, Linux     |
 | Распространенные способы применения      | Общая библиотека машинного обучения      |
 | Настройка и установка      |  Установлена с поддержкой GPU.   |
-| Запуск и использование      | Как библиотека Python (2,7 и 3,5), пакет R и программа командной строки по пути ( `C:\dsvm\tools\xgboost\bin\xgboost.exe` для Windows и `/dsvm/tools/xgboost/xgboost` Linux).    |
+| Запуск и использование      | В качестве библиотеки Python (2,7 и 3.6 +), пакета R и программы командной строки по пути ( `C:\dsvm\tools\xgboost\bin\xgboost.exe` для Windows и `/dsvm/tools/xgboost/xgboost` Linux).    |
 | Ссылки на примеры      | Примеры включены на виртуальной машине (`/dsvm/tools/xgboost/demo` в Linux и `C:\dsvm\tools\xgboost\demo` в Windows).   |
 | Связанные инструменты      | LightGBM, MXNet   |
 

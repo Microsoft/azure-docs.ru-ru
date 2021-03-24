@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 08/06/2020
-ms.openlocfilehash: c68d342cf21d69fa97ba3d5171ba596662fd845f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 98d18044693bc6f4d23e04e9403e71686df39451
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945811"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872206"
 ---
 # <a name="create-linux-based-clusters-in-hdinsight-by-using-the-azure-portal"></a>Создание кластеров под управлением Linux в HDInsight с помощью портала Azure
 
@@ -32,13 +32,13 @@ ms.locfileid: "98945811"
 
 1. В меню сверху выберите **+ Create a resource** (+ Создать ресурс).
 
-    ![Создание нового кластера в портал Azure](./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-create-resource.png "Создание кластера на портале Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-create-resource.png" alt-text="Создание нового кластера в портал Azure":::
 
 1. Выберите элементы **Analytics** > **Azure HDInsight**, чтобы перейти на страницу **Создание кластера HDInsight**.
 
 ## <a name="basics"></a>Основы
 
-![Основы создания кластера HDInsight](./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-basics.png "Создание кластера на портале Azure")
+:::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-basics.png" alt-text="Основы создания кластера HDInsight":::
 
 На вкладке **Основные сведения** укажите следующую информацию:
 
@@ -58,12 +58,12 @@ ms.locfileid: "98945811"
 
 Нажмите кнопку **Далее: >>хранилища** , чтобы перейти на следующую вкладку.
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 > [!WARNING] 
 > Начиная с 15 июня клиенты 2020 не смогут создать новый субъект-службу с помощью HDInsight. См. раздел [Создание субъекта-службы и сертификатов](../active-directory/develop/howto-create-service-principal-portal.md) с помощью Azure Active Directory.
 
-![Хранилище для создания кластера HDInsight](./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-storage.png "Создание нового кластера в хранилище портал Azure")
+:::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-storage.png" alt-text="Хранилище для создания кластера HDInsight":::
 
 ### <a name="primary-storage"></a>Основное хранилище
 
@@ -90,11 +90,11 @@ ms.locfileid: "98945811"
 
 ## <a name="security--networking"></a>Безопасность и работа в сети
 
-![Создание сетей безопасности кластера HDInsight](./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-security-networking.png "Создание сетей безопасности кластера HDInsight")
+:::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-security-networking.png" alt-text="Создание сетей безопасности кластера HDInsight":::
 
 На вкладке **безопасность и сеть** укажите следующие сведения.
 
-|Свойство. |Описание |
+|Свойство |Описание |
 |---|---|
 |Пакет безопасности корпоративного уровня|Необязательно: установите флажок, чтобы использовать **Корпоративный пакет безопасности**. Дополнительные сведения см. в статье [Настройка кластера HDInsight с корпоративный пакет безопасности с помощью доменных служб Azure Active Directory](./domain-joined/apache-domain-joined-configure-using-azure-adds.md).|
 |TLS|Необязательно. Выберите версию TLS из раскрывающегося списка. Дополнительные сведения см. в статье [о протоколе TLS](./transport-layer-security.md).|
@@ -107,11 +107,11 @@ ms.locfileid: "98945811"
 
 ## <a name="configuration--pricing"></a>Настройка и цены
 
-![Создание конфигурации кластера HDInsight](./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-configuration.png "Вкладка "Конфигурация и цены"")
+:::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-configuration.png" alt-text="Создание конфигурации кластера HDInsight":::
 
 На вкладке **Настройка и цены** укажите следующие сведения.
 
-|Свойство. |Описание |
+|Свойство |Описание |
 |---|---|
 |+ Добавить приложение|Необязательно. Выберите любые нужные приложения. Эти приложения могут разрабатывать корпорация Майкрософт, независимые поставщики программного обеспечения (ISV) или вы сами. Дополнительные сведения см. в разделе [Установка приложения во время создания кластера](hdinsight-apps-install-applications.md#install-applications-during-cluster-creation).|
 |Размер узла|Необязательно. Выберите узел другого размера.|
@@ -123,7 +123,7 @@ ms.locfileid: "98945811"
 
 ## <a name="review--create"></a>Просмотр и создание
 
-![Сводка по созданию кластера HDInsight](./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-review-create-hadoop.png "Укажите число узлов кластера")
+:::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/azure-portal-cluster-review-create-hadoop.png" alt-text="Сводка по созданию кластера HDInsight":::
 
 Проверьте параметры. Выберите **Создать**, чтобы создать кластер.
 
@@ -133,11 +133,11 @@ ms.locfileid: "98945811"
 
 Когда кластер будет создан, нажмите кнопку **Перейти к ресурсу** в уведомлении **Развертывание прошло успешно**. В окне кластера содержатся следующие сведения.
 
-![Общие сведения о кластере HDI портал Azure](./media/hdinsight-hadoop-create-linux-clusters-portal/hdinsight-create-cluster-completed.png "Свойства кластера")
+:::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-portal/hdinsight-create-cluster-completed.png" alt-text="Общие сведения о кластере HDI портал Azure":::
 
 Некоторые значки в окне описаны ниже.
 
-|Свойство. | Описание |
+|Свойство | Описание |
 |---|---|
 |Обзор|Предоставляет все ценные сведения о кластере. Например, имя, группа ресурсов, к которой она принадлежит, расположение, операционная система и URL-адрес панели мониторинга кластера.|
 |Панели мониторинга кластера|Направляет вас на портал Ambari, связанный с кластером.|
@@ -148,7 +148,7 @@ ms.locfileid: "98945811"
 
 См. раздел [Удаление кластера HDInsight с помощью браузера, PowerShell или Azure CLI](./hdinsight-delete-cluster.md).
 
-## <a name="troubleshoot"></a>Диагностика
+## <a name="troubleshoot"></a>Устранение неполадок
 
 Если при создании кластеров HDInsight возникли проблемы, см. раздел [Создание кластеров](./hdinsight-hadoop-customize-cluster-linux.md#access-control).
 

@@ -7,12 +7,12 @@ ms.topic: article
 ms.date: 12/17/2020
 ms.author: ccompy
 ms.custom: seodec18
-ms.openlocfilehash: fea189952b1452c680255ceb99e38609775a8bd6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4b85397eeda651678fe66c6e78199dd25630dcc4
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102502694"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889902"
 ---
 # <a name="set-up-azure-app-service-access-restrictions"></a>Настройка ограничений доступа для службы приложений Azure
 
@@ -97,26 +97,25 @@ ms.locfileid: "102502694"
 > [!NOTE]
 > - Конечные точки службы сейчас не поддерживаются для веб-приложений, использующих виртуальный IP-адрес IP-SSL (SSL).
 >
-#### <a name="set-a-service-tag-based-rule-preview"></a>Задание правила на основе тегов службы (Предварительная версия)
+#### <a name="set-a-service-tag-based-rule"></a>Задание правила на основе тегов службы
 
-* Для шага 4 в раскрывающемся списке **тип** выберите **тег службы (Предварительная версия)**.
+* Для шага 4 в раскрывающемся списке **тип** выберите **тег службы**.
 
-   :::image type="content" source="media/app-service-ip-restrictions/access-restrictions-service-tag-add.png" alt-text="Снимок экрана: панель &quot;Добавление ограничения&quot; с выбранным типом тега службы.":::
+   :::image type="content" source="media/app-service-ip-restrictions/access-restrictions-service-tag-add.png?v2" alt-text="Снимок экрана: панель &quot;Добавление ограничения&quot; с выбранным типом тега службы.":::
 
 Каждый тег службы представляет список диапазонов IP-адресов из служб Azure. Список этих служб и ссылки на определенные диапазоны можно найти в [документации по тегам службы][servicetags].
 
-Следующий список тегов служб поддерживается в правилах ограничений доступа на этапе предварительной версии:
+Все доступные теги службы поддерживаются в правилах ограничения доступа. Для простоты в портал Azure доступны только список наиболее распространенных тегов. Используйте шаблоны Azure Resource Manager или сценарии для настройки более сложных правил, таких как региональные правила. Это теги, доступные через портал Azure:
+
 * ActionGroup
+* ApplicationInsightsAvailability
 * AzureCloud;
 * AzureCognitiveSearch
-* AzureConnectors
 * азуривентгрид
 * AzureFrontDoor.Backend
 * AzureMachineLearning
-* AzureSignalR
 * AzureTrafficManager.
 * LogicApps
-* Service Fabric
 
 ### <a name="edit-a-rule"></a>Изменение правила
 
@@ -137,6 +136,31 @@ ms.locfileid: "102502694"
 
 ## <a name="access-restriction-advanced-scenarios"></a>Расширенные сценарии ограничений доступа
 В следующих разделах описаны некоторые сложные сценарии, в которых используются ограничения доступа.
+
+### <a name="filter-by-http-header"></a>Фильтр по заголовку HTTP
+
+В рамках любого правила можно добавить дополнительные фильтры HTTP-заголовков. Поддерживаются следующие имена заголовков HTTP:
+* X-Forwarded-For
+* X-Forwarded-Host
+* X-Azure-ФДИД
+* X-демон-HealthProbe
+
+Для каждого имени заголовка можно добавить до 8 значений, разделенных запятыми. Фильтры HTTP-заголовков оцениваются после самого правила, и оба условия должны быть истинными для применения правила.
+
+### <a name="multi-source-rules"></a>Правила с несколькими источниками
+
+Правила с несколькими источниками позволяют объединить до восьми диапазонов IP-адресов или 8 тегов служб в одном правиле. Вы можете использовать его, если у вас более 512 диапазонов IP-адресов или вы хотите создать логические правила, в которых несколько диапазонов IP-адресов объединены с одним фильтром заголовка HTTP.
+
+Правила с несколькими источниками определяются так же, как правила с одним исходным кодом, но с каждым диапазоном, разделенным запятыми.
+
+Пример PowerShell:
+
+  ```azurepowershell-interactive
+  Add-AzWebAppAccessRestrictionRule -ResourceGroupName "ResourceGroup" -WebAppName "AppName" `
+    -Name "Multi-source rule" -IpAddress "192.168.1.0/24,192.168.10.0/24,192.168.100.0/24" `
+    -Priority 100 -Action Allow
+  ```
+
 ### <a name="block-a-single-ip-address"></a>Блокировать один IP-адрес
 
 При добавлении первого правила ограничения доступа служба добавляет явное *запрещающее* правило с приоритетом 2147483647. На практике явное правило *Deny All* является конечным правилом, которое должно быть выполнено, и блокирует доступ к любому IP-адресу, который явно не разрешен правилом *allow* .
@@ -151,17 +175,20 @@ ms.locfileid: "102502694"
 
 :::image type="content" source="media/app-service-ip-restrictions/access-restrictions-scm-browse.png" alt-text="Снимок экрана со страницей &quot;ограничения доступа&quot; в портал Azure, показывающий, что для сайта SCM или приложения не заданы ограничения доступа.":::
 
-### <a name="restrict-access-to-a-specific-azure-front-door-instance-preview"></a>Ограничение доступа к определенному экземпляру передней дверцы Azure (Предварительная версия)
-Трафик из передней дверцы Azure к вашему приложению создается из хорошо известного набора диапазонов IP-адресов, определенных в теге службы Азурефронтдур. внутренний. С помощью правила ограничения для тега службы можно ограничить трафик, исходящий только из передней дверцы Azure. Чтобы обеспечить исходящий трафик только из конкретного экземпляра, необходимо дополнительно отфильтровать входящие запросы на основе уникального заголовка HTTP, отправляемого интерфейсом передней дверцы Azure. Во время предварительной версии можно добиться этого с помощью PowerShell или RESTFUL/ARM. 
+### <a name="restrict-access-to-a-specific-azure-front-door-instance"></a>Ограничение доступа к конкретному экземпляру передней дверцы Azure
+Трафик из передней дверцы Azure к вашему приложению создается из хорошо известного набора диапазонов IP-адресов, определенных в теге службы Азурефронтдур. внутренний. С помощью правила ограничения для тега службы можно ограничить трафик, исходящий только из передней дверцы Azure. Чтобы обеспечить исходящий трафик только из конкретного экземпляра, необходимо дополнительно отфильтровать входящие запросы на основе уникального заголовка HTTP, отправляемого интерфейсом передней дверцы Azure.
 
-* Пример PowerShell (идентификатор передней дверцы можно найти в портал Azure):
+:::image type="content" source="media/app-service-ip-restrictions/access-restrictions-frontdoor.png" alt-text="Снимок экрана со страницей &quot;ограничения доступа&quot; в портал Azure, показывающий, как добавить ограничение для передней дверцы Azure.":::
 
-   ```azurepowershell-interactive
-    $frontdoorId = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    Add-AzWebAppAccessRestrictionRule -ResourceGroupName "ResourceGroup" -WebAppName "AppName" `
-      -Name "Front Door example rule" -Priority 100 -Action Allow -ServiceTag AzureFrontDoor.Backend `
-      -HttpHeader @{'x-azure-fdid' = $frontdoorId}
-    ```
+Пример PowerShell:
+
+  ```azurepowershell-interactive
+  $afd = Get-AzFrontDoor -Name "MyFrontDoorInstanceName"
+  Add-AzWebAppAccessRestrictionRule -ResourceGroupName "ResourceGroup" -WebAppName "AppName" `
+    -Name "Front Door example rule" -Priority 100 -Action Allow -ServiceTag AzureFrontDoor.Backend `
+    -HttpHeader @{'x-azure-fdid' = $afd.FrontDoorId}
+  ```
+
 ## <a name="manage-access-restriction-rules-programmatically"></a>Управление правилами ограничения доступа программным способом
 
 Ограничения доступа можно добавить программным способом, выполнив одно из следующих действий. 
@@ -181,7 +208,7 @@ ms.locfileid: "102502694"
       -Name "Ip example rule" -Priority 100 -Action Allow -IpAddress 122.133.144.0/24
   ```
    > [!NOTE]
-   > Для работы с тегами служб, заголовками HTTP или правилами с несколькими источниками требуется по меньшей мере версия 5.1.0. Версию установленного модуля можно проверить с помощью команды: **Get-InstalledModule-Name AZ** .
+   > Для работы с тегами служб, заголовками HTTP или правилами с несколькими источниками требуется по меньшей мере версия 5.7.0. Версию установленного модуля можно проверить с помощью команды: **Get-InstalledModule-Name AZ** .
 
 Значения можно также задать вручную, выполнив одно из следующих действий.
 

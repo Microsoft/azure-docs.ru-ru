@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/08/2021
 ms.author: trbye
 ms.custom: references_regions
-ms.openlocfilehash: 9a5f50588c357b56865bc2a8500dcc250e89d930
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 9da83746cdaf693922b88841cd9c0fac432611c9
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103470638"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870846"
 ---
 # <a name="text-to-speech-rest-api"></a>REST API преобразования текста в речь.
 
@@ -83,7 +83,7 @@ REST API преобразования текста в речь поддержи�
 
 
 
-### <a name="request-body"></a>Текст запроса
+### <a name="request-body"></a>Тело запроса
 
 Для `GET` запросов к этой конечной точке тело не требуется.
 
@@ -107,7 +107,7 @@ Ocp-Apim-Subscription-Key: YOUR_SUBSCRIPTION_KEY
 
 ```json
 [
-     
+
     {
     "Name": "Microsoft Server Speech Text to Speech Voice (en-US, AriaNeural)",
     "DisplayName": "Aria",
@@ -127,9 +127,9 @@ Ocp-Apim-Subscription-Key: YOUR_SUBSCRIPTION_KEY
     "VoiceType": "Neural",
     "Status": "GA"
   },
-  
+
   ...
-    
+
      {
     "Name": "Microsoft Server Speech Text to Speech Voice (ga-IE, OrlaNeural)",
     "DisplayName": "Orla",
@@ -141,9 +141,9 @@ Ocp-Apim-Subscription-Key: YOUR_SUBSCRIPTION_KEY
     "VoiceType": "Neural",
     "Status": "Preview"
   },
-  
+
   ...
-    
+
    {
     "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",
     "DisplayName": "Yunxi",
@@ -168,7 +168,7 @@ Ocp-Apim-Subscription-Key: YOUR_SUBSCRIPTION_KEY
   },
 
     ...
-      
+
    {
     "Name": "Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)",
     "DisplayName": "Hoda",
@@ -234,12 +234,14 @@ audio-24khz-160kbitrate-mono-mp3    audio-24khz-96kbitrate-mono-mp3
 audio-24khz-48kbitrate-mono-mp3     ogg-24khz-16bit-mono-opus
 raw-48khz-16bit-mono-pcm            riff-48khz-16bit-mono-pcm
 audio-48khz-96kbitrate-mono-mp3     audio-48khz-192kbitrate-mono-mp3
+webm-16khz-16bit-mono-opus          webm-24khz-16bit-mono-opus
 ```
 
 > [!NOTE]
-> Если у выбранного голоса и формата вывода будет разная скорость передачи звука, то при необходимости звук будет обработан повторно. OGG-24khz-16-разрядный-Mono-опус можно декодировать с помощью [кодека опус](https://opus-codec.org/downloads/)
+> Если у выбранного голоса и формата вывода будет разная скорость передачи звука, то при необходимости звук будет обработан повторно.
+> OGG-24khz-16-разрядный-Mono-опус можно декодировать с помощью [кодека опус](https://opus-codec.org/downloads/)
 
-### <a name="request-body"></a>Текст запроса
+### <a name="request-body"></a>Тело запроса
 
 Текст каждого запроса `POST` отправляется с соблюдением синтаксиса [языка SSML](speech-synthesis-markup.md). SSML позволяет выбрать голос и язык для синтезированной речи, возвращаемой службой преобразования текста в речь. Полный список поддерживаемых голосовых моделей см. в разделе о [поддерживаемых языках](language-support.md#text-to-speech).
 
@@ -280,7 +282,7 @@ Authorization: Bearer [Base64 access_token]
 
 Если состояние HTTP — `200 OK`, текст ответа содержит звуковой файл в затребованном формате. Этот файл можно воспроизводить при передаче, сохранении в буфер или сохранении в файл.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание бесплатной учетной записи Azure.](https://azure.microsoft.com/free/cognitive-services/)
 - [Асинхронное синтез для больших аудио-форм](./long-audio-api.md)

@@ -5,12 +5,12 @@ services: container-service
 ms.topic: conceptual
 ms.date: 01/08/2021
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: fae95e6f3a73d7539f81e1486c4ad021f181aa11
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 69a4955f28bbd42cd7bf5651bd057412e15303de
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102176337"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952921"
 ---
 # <a name="azure-kubernetes-service-aks-uptime-sla"></a>Соглашение об уровне обслуживания с гарантией времени доступности для Службы Azure Kubernetes (AKS)
 
@@ -37,9 +37,6 @@ ms.locfileid: "102176337"
 * Установка [Azure CLI](/cli/azure/install-azure-cli) версии 2.8.0 или более поздней
 
 ## <a name="creating-a-new-cluster-with-uptime-sla"></a>Создание нового кластера с соглашением об уровне обслуживания для времени работы
-
-> [!NOTE]
-> В настоящее время, если вы включили соглашение об уровне обслуживания "время работы", удалить его из кластера невозможно.
 
 Чтобы создать новый кластер, защищенный Соглашением об уровне обслуживания с гарантией времени доступности, используйте Azure CLI.
 
@@ -106,6 +103,15 @@ az aks create --resource-group myResourceGroup --name myAKSCluster--node-count 1
     "tier": "Paid"
   },
   ```
+
+## <a name="opt-out-of-uptime-sla"></a>Отказаться от соглашения об уровне обслуживания
+
+Вы можете обновить кластер, чтобы перейти на бесплатный уровень и отказаться от соглашения об уровне обслуживания.
+
+```azurecli-interactive
+# Update an existing cluster to opt out of Uptime SLA
+ az aks update --resource-group myResourceGroup --name myAKSCluster --no-uptime-sla
+ ```
 
 ## <a name="clean-up"></a>Очистка
 

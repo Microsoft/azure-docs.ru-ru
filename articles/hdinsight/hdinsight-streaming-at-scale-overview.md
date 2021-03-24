@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 12/17/2019
-ms.openlocfilehash: 2b2dfe9da55548f2648f847a9d7c2cb3478e6bad
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3bf036ff413f720f54deef1a62b502668d1d8ac6
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98931714"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872002"
 ---
 # <a name="streaming-at-scale-in-hdinsight"></a>Потоковая передача в нужном масштабе в HDInsight
 
@@ -18,7 +18,7 @@ ms.locfileid: "98931714"
 
 В приложении потоковой передачи один или несколько источников данных создают события (иногда миллионы в секунду), которые нужно быстро принять без потери полезной информации. Входящие события обрабатываются с помощью *потоковой буферизации*, называемой также *очередью событий*, такими службами как [Apache Kafka](kafka/apache-kafka-introduction.md) или [Центры событий](https://azure.microsoft.com/services/event-hubs/). После сбора событий можно проанализировать данные в пределах уровня *обработки потока* с помощью системы аналитики в реальном времени, такой как [Apache Storm](storm/apache-storm-overview.md) или [потоковая передача Apache Spark](spark/apache-spark-streaming-overview.md). Обработанные данные могут храниться в долгосрочном хранилище данных, таком как [Azure Data Lake Storage](https://azure.microsoft.com/services/storage/data-lake-storage/), и отображаться в режиме реального времени на панели мониторинга бизнес-аналитики, такой как [Power BI](https://powerbi.microsoft.com), Tableau, или на настраиваемой веб-странице.
 
-![Шаблоны потоковой передачи Azure HDInsight](./media/hdinsight-streaming-at-scale-overview/HDInsight-streaming-patterns.png)
+:::image type="content" source="./media/hdinsight-streaming-at-scale-overview/HDInsight-streaming-patterns.png" alt-text="Шаблоны потоковой передачи Azure HDInsight":::
 
 ## <a name="apache-kafka"></a>Apache Kafka
 

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 01/14/2020
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 4393c6797f5a164a063b55f8994d7d37d278f3c4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ee483872535c58bde521cf0a751058fdc2fecd40
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929188"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871458"
 ---
 # <a name="process-events-from-azure-event-hubs-with-apache-storm-on-hdinsight-c"></a>Обработка событий из Центров событий Azure с помощью Apache Storm в HDInsight (C#)
 
@@ -94,7 +94,7 @@ topologyBuilder.SetJavaBolt(
 
 Вы можете скачать полную версию проекта, созданного в этой статье, из [GitHub](https://github.com/Azure-Samples/hdinsight-dotnet-java-storm-eventhub). Однако вам по-прежнему необходимо предоставить параметры конфигурации, выполнив действия, описанные в этой статье.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 * Кластер Apache Storm в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Storm** для параметра **Тип кластера**.
 
@@ -126,7 +126,7 @@ topologyBuilder.SetJavaBolt(
    | writer |Отправить |
    | reader |Прослушивание |
 
-    ![Снимок экрана окна политик общего доступа](./media/apache-storm-develop-csharp-event-hub-topology/share-access-policies.png)
+    :::image type="content" source="./media/apache-storm-develop-csharp-event-hub-topology/share-access-policies.png" alt-text="Снимок экрана окна политик общего доступа" border="true":::
 
 2. Выберите политики **reader** и **writer**. Скопируйте и сохраните значение первичного ключа для обеих политик, так как они будут использоваться позже.
 
@@ -168,15 +168,15 @@ topologyBuilder.SetJavaBolt(
 
 1. В **Обозреватель решений** щелкните правой кнопкой мыши проект **EventHubReader** и выберите пункт **отправить в кластер HDInsight**.
 
-    ![Снимок экрана с обозревателем решений с выделенной функцией "Отправить в Storm в HDInsight"](./media/apache-storm-develop-csharp-event-hub-topology/submit-to-apache-storm.png)
+    :::image type="content" source="./media/apache-storm-develop-csharp-event-hub-topology/submit-to-apache-storm.png" alt-text="Снимок экрана с обозревателем решений с выделенной функцией &quot;Отправить в Storm в HDInsight&quot;" border="true":::
 
 2. В диалоговом окне **Submit Topology** (Отправка топологии) выберите **кластер Storm**. Разверните узел **Дополнительные конфигурации**, выберите **Java File Paths** (Пути к файлам Java), щелкните **...** и укажите каталог, содержащий скачанный ранее JAR-файл. Теперь нажмите кнопку **Отправить**.
 
-    ![Снимок экрана с диалоговым окном Submit Topology (Отправка топологии)](./media/apache-storm-develop-csharp-event-hub-topology/submit-storm-topology.png)
+    :::image type="content" source="./media/apache-storm-develop-csharp-event-hub-topology/submit-storm-topology.png" alt-text="Снимок экрана с диалоговым окном Submit Topology (Отправка топологии)" border="true":::
 
 3. После отправки топологии отобразится **средство просмотра топологий Storm**. Чтобы просмотреть статистику для топологии, выберите топологию **EventHubReader** в левой панели.
 
-    ![Снимок экрана средства просмотра топологий Storm](./media/apache-storm-develop-csharp-event-hub-topology/storm-topology-viewer.png)
+    :::image type="content" source="./media/apache-storm-develop-csharp-event-hub-topology/storm-topology-viewer.png" alt-text="Снимок экрана средства просмотра топологий Storm" border="true":::
 
 4. В **Обозреватель решений** щелкните правой кнопкой мыши проект **EventHubWriter** и выберите пункт **отправить в кластер HDInsight**.
 
@@ -200,7 +200,7 @@ topologyBuilder.SetJavaBolt(
 
 Чтобы остановить топологии, выберите каждую из них в **средстве просмотра топологий Storm**, а затем выберите элемент **Прервать**.
 
-![Снимок экрана средства просмотра топологии Storm с выделенной кнопкой "Прервать"](./media/apache-storm-develop-csharp-event-hub-topology/kill-storm-topology1.png)
+:::image type="content" source="./media/apache-storm-develop-csharp-event-hub-topology/kill-storm-topology1.png" alt-text="Снимок экрана средства просмотра топологии Storm с выделенной кнопкой &quot;Прервать&quot;" border="true":::
 
 ## <a name="delete-your-cluster"></a>Удаление кластера
 

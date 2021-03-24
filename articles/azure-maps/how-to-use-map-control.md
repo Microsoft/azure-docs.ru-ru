@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.custom: devx-track-js
-ms.openlocfilehash: 27d9d5d30dc4c96516d23acba6a11b411827071e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b283cacf94ff3567428787e50a3d7db9ba91fd9c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100378712"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864046"
 ---
 # <a name="use-the-azure-maps-map-control"></a>Использование элемента управления картой в Azure Maps
 
@@ -258,10 +258,10 @@ var searchURL = new atlas.service.SearchURL(pipeline, 'atlas.azure.us');
 
 Для разработки с использованием платформы JavaScript может оказаться полезным один из следующих проектов с открытым исходным кодом:
 
-- [ng-azure-maps](https://github.com/arnaudleclerc/ng-azure-maps) — это программа-оболочка Angular 10 для Azure Maps.
-- [AzureMapsControl.Components](https://github.com/arnaudleclerc/AzureMapsControl.Components) — компонент Azure Maps Blazor.
-- [Компонент React Azure Maps](https://github.com/WiredSolutions/react-azure-maps) — программа-оболочка React для управления Azure Maps.
-- [Vue Azure Maps](https://github.com/rickyruiz/vue-azure-maps) — компонент Azure Maps для приложения Vue.
+* [ng-azure-maps](https://github.com/arnaudleclerc/ng-azure-maps) — это программа-оболочка Angular 10 для Azure Maps.
+* [AzureMapsControl.Components](https://github.com/arnaudleclerc/AzureMapsControl.Components) — компонент Azure Maps Blazor.
+* [Компонент React Azure Maps](https://github.com/WiredSolutions/react-azure-maps) — программа-оболочка React для управления Azure Maps.
+* [Vue Azure Maps](https://github.com/rickyruiz/vue-azure-maps) — компонент Azure Maps для приложения Vue.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
@@ -275,10 +275,10 @@ var searchURL = new atlas.service.SearchURL(pipeline, 'atlas.azure.us');
 > [!div class="nextstepaction"]
 > [Выбор стиля карты](choose-map-style.md)
 
-Чтобы добавить дополнительные данные на карту, выполните следующие действия.
+Ознакомьтесь с рекомендациями и примерами:
 
 > [!div class="nextstepaction"]
-> [Создание карты](map-create.md)
+> [Рекомендации](web-sdk-best-practices.md)
 
 > [!div class="nextstepaction"]
 > [Примеры кода](/samples/browse/?products=azure-maps)

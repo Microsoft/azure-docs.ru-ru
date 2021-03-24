@@ -10,12 +10,12 @@ ms.custom: mvc
 ms.topic: sample
 ms.service: active-directory
 ms.subservice: B2C
-ms.openlocfilehash: a75896dde7a23ea346e0af73ed145094e78812ca
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: b09587d90024a8c376be8b0d93f7ef7b6cc51a1e
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101654499"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008490"
 ---
 # <a name="azure-active-directory-b2c-code-samples"></a>Примеры кода Azure Active Directory B2C
 
@@ -47,9 +47,10 @@ ms.locfileid: "101654499"
 
 | Образец | Описание |
 |--------| ----------- |
+| [ms-identity-javascript-react-tutorial](https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/tree/main/3-Authorization-II/2-call-api-b2c) | Одностраничное приложение (SPA) для вызова веб-API. Аутентификация осуществляется с помощью Azure AD B2C и MSAL React. В этом примере используется поток кода авторизации с PKCE. |
 | [ms-identity-b2c-javascript-spa](https://github.com/Azure-Samples/ms-identity-b2c-javascript-spa) | Одностраничное приложение (SPA) для вызова веб-API. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется поток кода авторизации с PKCE. |
-| [javascript-nodejs-management](https://github.com/Azure-Samples/ms-identity-b2c-javascript-nodejs-management/tree/main/Chapter1) | Одностраничное приложение (SPA), вызывающее Microsoft Graph для управления пользователями в каталоге B2C. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется поток кода авторизации с PKCE.|
 | [javascript-msal-singlepageapp](https://github.com/Azure-Samples/active-directory-b2c-javascript-msal-singlepageapp) | Одностраничное приложение (SPA) для вызова веб-API. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется неявный поток.|
+| [javascript-nodejs-management](https://github.com/Azure-Samples/ms-identity-b2c-javascript-nodejs-management/tree/main/Chapter1) | Одностраничное приложение (SPA), вызывающее Microsoft Graph для управления пользователями в каталоге B2C. Аутентификация осуществляется с помощью Azure AD B2C и MSAL.js. В этом примере используется поток кода авторизации с PKCE.|
 
 ## <a name="consoledaemon-apps"></a>Консольные и управляющие программы
 

@@ -1,6 +1,6 @@
 ---
-title: Краткое руководство. Настройка и включение модуля безопасности для ОСРВ Azure
-description: В этом кратком руководстве показано, как подключить и включить модуль безопасности для службы ОСРВ Azure в Центре Интернета вещей Azure.
+title: Краткое руководство. Настройка и включение микроагента Defender для Интернета вещей для ОСРВ Azure
+description: Сведения о том, как подключить и включить микроагент Defender для Интернета вещей для службы ОСРВ Azure в Центре Интернета вещей Azure.
 services: defender-for-iot
 ms.service: defender-for-iot
 documentationcenter: na
@@ -13,16 +13,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/24/2021
 ms.author: shhazam
-ms.openlocfilehash: 19a439ec48d4a8705ffb46db7ca037b51449083d
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 3c1af1128b99cbd3263ddffc834eb27ab9dec564
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102447305"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489851"
 ---
-# <a name="quickstart-security-module-for-azure-rtos"></a>Краткое руководство. Модуль безопасности для ОСРВ Azure 
+# <a name="quickstart-defender-iot-micro-agent-for-azure-rtos-preview"></a>Краткое руководство. Микроагент Defender для Интернета вещей для ОСРВ Azure (предварительная версия)
 
-В этой статье описаны предварительные требования для начала работы и объясняется, как включить модуль безопасности для службы ОСРВ Azure в Центре Интернета вещей. Если у вас сейчас нет Центра Интернета вещей, ознакомьтесь со статьей [Создание Центра Интернета вещей с помощью портала Azure](../iot-hub/iot-hub-create-through-portal.md), чтобы приступить к работе.
+В этой статье описаны предварительные требования для начала работы и объясняется, как включить микроагент Defender для Интернета вещей для службы ОСРВ Azure в Центре Интернета вещей. Если у вас сейчас нет Центра Интернета вещей, ознакомьтесь со статьей [Создание Центра Интернета вещей с помощью портала Azure](../iot-hub/iot-hub-create-through-portal.md), чтобы приступить к работе.
 
 ## <a name="prerequisites"></a>Предварительные требования 
 
@@ -32,7 +32,7 @@ ms.locfileid: "102447305"
 - NXP i.MX RT1060 EVK;
 - микросхема SAM E54 Xplained Pro EVK.
 
-Скачайте, скомпилируйте и запустите один из ZIP-файлов для конкретной доски и средства (IAR, частичная IDE или ПК) по своему усмотрению из [ресурса GitHub для модуля безопасности ОСРВ Azure](https://github.com/azure-rtos/azure-iot-preview/releases).
+Скачайте, скомпилируйте и запустите один из ZIP-файлов для конкретной платы и средства (IAR, IDE или ПК для микросхем) по своему усмотрению из [ресурса GitHub для микроагента Defender для Интернета вещей для ОСРВ Azure](https://github.com/azure-rtos/azure-iot-preview/releases).
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
@@ -52,11 +52,11 @@ ms.locfileid: "102447305"
 
 Учетные данные подключений можно взять из конфигурации пользовательского приложения **HOST_NAME**, **DEVICE_ID** и **DEVICE_SYMMETRIC_KEY**.
 
-Модуль безопасности для ОСРВ Azure использует подключения ПО промежуточного слоя Интернета вещей на основе протокола **MQTT**.
+Микроагент Defender для Интернета вещей для ОСРВ Azure использует подключения ПО промежуточного слоя Интернета вещей Azure на основе протокола **MQTT**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы завершить конфигурацию и настройку вашего решения, перейдите к следующей статье.
 
 > [!div class="nextstepaction"]
-> [Настройка модуля безопасности для ОСРВ Azure](how-to-azure-rtos-security-module.md)
+> [Настройка микроагента Defender для Интернета вещей для ОСРВ Azure (предварительная версия)](how-to-azure-rtos-security-module.md)

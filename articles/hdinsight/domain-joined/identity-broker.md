@@ -4,12 +4,12 @@ description: Сведения об Azure HDInsight ID Broker для упроще
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 11/03/2020
-ms.openlocfilehash: 47ba11260c3b58566963e5a3ffac80ca461a8a23
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c5bc5bc702dbd54bbad43aa4e1c6c8650c18e088
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946819"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863196"
 ---
 # <a name="azure-hdinsight-id-broker-hib"></a>Брокер ИДЕНТИФИКАТОРов Azure HDInsight (ХИБ)
 
@@ -34,7 +34,7 @@ ms.locfileid: "98946819"
 
 На следующей схеме показана современная последовательность проверки подлинности на основе OAuth для всех пользователей, включая федеративных пользователей, после включения брокера ИДЕНТИФИКАТОРов HDInsight:
 
-:::image type="content" source="media/identity-broker/identity-broker-architecture.png" alt-text="Схема, показывающая поток проверки подлинности с помощью брокера ИДЕНТИФИКАТОРов HDInsight.":::
+:::image type="content" source="media/identity-broker/identity-broker-architecture.png" alt-text="Схема, показывающая поток проверки подлинности с помощью брокера ИДЕНТИФИКАТОРов HDInsight." border="false":::
 
 На этой схеме клиент (то есть браузер или приложение) должен сначала получить маркер OAuth. Затем он представляет маркер шлюзу в HTTP-запросе. Если вы уже вошли в другие службы Azure, такие как портал Azure, вы можете войти в кластер HDInsight с помощью единого входа.
 
@@ -42,8 +42,7 @@ ms.locfileid: "98946819"
 
 На следующей схеме показана обычная последовательность проверки подлинности для федеративных пользователей. Сначала шлюз пытается выполнить проверку подлинности с помощью [ропк Flow](../../active-directory/develop/v2-oauth-ropc.md). Если в Azure AD не синхронизированы хэши паролей, то возвращается обнаружение конечной точки AD FS и завершает проверку подлинности путем доступа к конечной точке AD FS.
 
-:::image type="content" source="media/identity-broker/basic-authentication.png" alt-text="Схема, на которой показана архитектура с обычной проверкой подлинности.":::
-
+:::image type="content" source="media/identity-broker/basic-authentication.png" alt-text="Схема, на которой показана архитектура с обычной проверкой подлинности." border="false":::
 
 ## <a name="enable-hdinsight-id-broker"></a>Включение брокера ИДЕНТИФИКАТОРов HDInsight
 
@@ -55,7 +54,7 @@ ms.locfileid: "98946819"
 
 Функция брокера ИДЕНТИФИКАТОРов HDInsight добавляет в кластер одну лишнюю виртуальную машину. Эта виртуальная машина — это узел брокера ИДЕНТИФИКАТОРов HDInsight, который включает серверные компоненты для поддержки проверки подлинности. Узел брокера ИДЕНТИФИКАТОРов HDInsight — это домен, присоединенный к домену Azure AD DS.
 
-![Схема, на которой показан параметр включения брокера ИДЕНТИФИКАТОРов HDInsight.](./media/identity-broker/identity-broker-enable.png)
+:::image type="content" source="./media/identity-broker/identity-broker-enable.png" alt-text="Схема, на которой показан параметр включения брокера ИДЕНТИФИКАТОРов HDInsight." border="true":::
 
 ### <a name="use-azure-resource-manager-templates"></a>Использование шаблонов Azure Resource Manager
 
@@ -135,7 +134,7 @@ curl -k -v -H "Authorization: Bearer Access_TOKEN" -H "Content-Type: application
 
 Для использования Beeline и Livy можно также воспользоваться приведенными [здесь](https://github.com/Azure-Samples/hdinsight-enterprise-security/tree/main/HIB/HIBSamples) кодами примеров, чтобы настроить клиент для использования OAuth и подключения к кластеру.
 
-## <a name="faq"></a>Вопросы и ответы
+## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
 ### <a name="what-app-is-created-by-hdinsight-in-aad"></a>Какое приложение создано в HDInsight в AAD?
 Для каждого кластера стороннее приложение будет зарегистрировано в AAD с универсальным кодом ресурса (URI) кластера в качестве identifierUri (например, `https://clustername.azurehdinsight.net` ).
 

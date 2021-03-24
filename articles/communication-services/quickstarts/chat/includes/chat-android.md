@@ -6,16 +6,16 @@ author: mikben
 manager: mikben
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 2/16/2020
+ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 021abce5c6cd83257ad65f529833848d8f14f534
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 02b47d7797eaebf6049099729ea51554a61a765e
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750747"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103495444"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
@@ -39,11 +39,11 @@ ms.locfileid: "101750747"
 Мы будем использовать Gradle для установки необходимых зависимостей Служб коммуникации. В командной строке перейдите в корневой каталог проекта `ChatQuickstart`. Откройте файл build.gradle приложения и добавьте в целевой объект `ChatQuickstart` следующие зависимости:
 
 ```
-implementation 'com.azure.android:azure-communication-common:1.0.0-beta.6'
-implementation 'com.azure.android:azure-communication-chat:1.0.0-beta.6'
+implementation 'com.azure.android:azure-communication-common:1.0.0-beta.7'
+implementation 'com.azure.android:azure-communication-chat:1.0.0-beta.7'
 ```
 
-#### <a name="exclude-meta-files-in-packaging-options"></a>Исключение метафайлов в параметрах упаковки
+#### <a name="exclude-meta-files-in-packaging-options-in-root-buildgradle"></a>Исключение файлов метаданных в параметрах упаковки в файле build.gradle из корневой папки
 ```
 android {
    ...
@@ -61,6 +61,17 @@ android {
 }
 ```
 
+#### <a name="add-a-maven-resource-in-root-buildgradle"></a>Добавление ресурса Maven в файл build.gradle из корневой папки
+```
+allprojects {
+    repositories {
+        ...
+        maven {
+            url 'https://trouterpublicpackages.z13.web.core.windows.net'
+        }
+    }
+```
+
 В Android Studio щелкните "sync now" (Синхронизировать сейчас).
 
 #### <a name="alternative-to-install-libraries-through-maven"></a>(Альтернативный вариант) Установка библиотек с помощью Maven
@@ -70,7 +81,7 @@ android {
 <dependency>
   <groupId>com.azure.android</groupId>
   <artifactId>azure-communication-chat</artifactId>
-  <version>1.0.0-beta.6</version>
+  <version>1.0.0-beta.7</version>
 </dependency>
 ```
 
@@ -90,7 +101,7 @@ import com.azure.android.communication.common.*;
     private String second_user_id = "<second_user_id>";
     private String threadId = "<thread_id>";
     private String chatMessageId = "<chat_message_id>";
-    private final String sdkVersion = "1.0.0-beta.6";
+    private final String sdkVersion = "1.0.0-beta.7";
     private static final String SDK_NAME = "azure-communication-com.azure.android.communication.chat";
     private static final String TAG = "--------------Chat Quickstart App-------------";
 
@@ -177,7 +188,7 @@ String id = "<user_id>";
 // The display name for the thread participant.
 String displayName = "initial participant";
 participants.add(new ChatParticipant()
-        .setId(id)
+        .setCommunicationIdentifier(new CommunicationIdentifierModel().setCommunicationUser(new CommunicationUserIdentifierModel().setId(id)))
         .setDisplayName(displayName)
 );
 
@@ -268,7 +279,10 @@ threadClient.sendChatMessage(threadId, message, new Callback<String>() {
 participants = new ArrayList<>();
 // The display name for the thread participant.
 displayName = "a new participant";
-participants.add(new ChatParticipant().setId(second_user_id).setDisplayName(secondUserDisplayName));
+participants.add(new ChatParticipant().setCommunicationIdentifier(
+          new CommunicationIdentifierModel().setCommunicationUser(
+              new CommunicationUserIdentifierModel().setId(second_user_id)
+          )).setDisplayName(secondUserDisplayName));
 // The model to pass to the add method.
 AddChatParticipantsRequest addParticipantsRequest = new AddChatParticipantsRequest()
   .setParticipants(participants);
@@ -376,7 +390,8 @@ void listChatParticipantsNext(String nextLink, AsyncPagedDataCollection<ChatPart
 Замените комментарий `<REMOVE A USER>` следующим кодом:
 
 ```java
-threadClient.removeChatParticipant(threadId, second_user_id, new Callback<Void>() {
+CommunicationIdentifierModel communicationIdentifierModel = new CommunicationIdentifierModel().setCommunicationUser(new CommunicationUserIdentifierModel().setId(second_user_id));
+threadClient.removeChatParticipant(threadId, communicationIdentifierModel, new Callback<Void>() {
     @Override
     public void onSuccess(Void result, okhttp3.Response response) {
         // Take further action.
