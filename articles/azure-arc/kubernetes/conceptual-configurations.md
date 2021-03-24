@@ -8,12 +8,12 @@ author: shashankbarsin
 ms.author: shasb
 description: В этой статье приводятся общие сведения о Гитопс и функциях настройки для Kubernetes с поддержкой ARC в Azure.
 keywords: Kubernetes, дуга, Azure, контейнеры, конфигурация, Гитопс
-ms.openlocfilehash: 88a30876b25730e4cb0b4b1e19fac94b9e556adc
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a4193783a976f205b46cb8c5df29d4cef9da1d2c
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102121802"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105022880"
 ---
 # <a name="configurations-and-gitops-with-azure-arc-enabled-kubernetes"></a>Конфигурации и Гитопс с включенной службой Arc Azure Kubernetes
 
@@ -48,8 +48,8 @@ ms.locfileid: "102121802"
 
 Такое применение при масштабировании гарантирует, что общая базовая конфигурация (содержащая конфигурации, такие как Клустерролебиндингс, Ролебиндингс и Нетворкполици) может быть применена ко всему парку или инвентаризации в кластере с поддержкой ARC в Azure.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-* Пошаговое руководство по [подключению кластера Kubernetes к службе "Дуга Azure](./connect-cluster.md)".
-* У вас уже есть кластер Kubernetes, подключенный к службе "Дуга Azure"? [Создайте конфигурации в кластере Kubernetes с включенной Arc](./use-gitops-connected-cluster.md).
+* Пошаговое руководство по [подключению кластера Kubernetes к службе "Дуга Azure](./quickstart-connect-cluster.md)".
+* У вас уже есть кластер Kubernetes, подключенный к службе "Дуга Azure"? [Создайте конфигурации в кластере Kubernetes с включенной Arc](./tutorial-use-gitops-connected-cluster.md).
 * Узнайте, как [использовать политику Azure для применения конфигураций в масштабе](./use-azure-policy.md).

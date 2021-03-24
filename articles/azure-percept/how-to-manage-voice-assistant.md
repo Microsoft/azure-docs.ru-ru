@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/15/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 5e41dea3b47c608b9e82ac57fa1cfe5247ea6cc2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 8f22379049b74428787b738af832802081be7bf8
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102099018"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105022897"
 ---
 # <a name="managing-your-voice-assistant"></a>Управление голосовым помощником
 
@@ -60,7 +60,7 @@ ms.locfileid: "102099018"
 
 С помощью [Speech Studio](https://speech.microsoft.com/)можно создать пользовательское ключевое слово для голосового помощника. Обучение базовой модели пользовательских ключевых слов занимает до 30 минут.
 
-Инструкции по созданию настраиваемого ключевого слова см. в [документации по Speech Studio](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-devices-sdk-create-kws) . После настройки новое ключевое слово будет доступно на портале Project Санта Круз для использования с приложением для работы с голосовым помощником.
+Инструкции по созданию настраиваемого ключевого слова см. в [документации по Speech Studio](../cognitive-services/speech-service/custom-keyword-basics.md) . После настройки новое ключевое слово будет доступно на портале Project Санта Круз для использования с приложением для работы с голосовым помощником.
 
 ## <a name="commands-configuration"></a>Настройка команд
 
@@ -88,8 +88,8 @@ ms.locfileid: "102099018"
 
 С помощью [Speech Studio](https://speech.microsoft.com/)можно создавать пользовательские команды для выполнения голосового помощника.
 
-Руководство по созданию пользовательских команд приведено в [документации по Speech Studio](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-custom-commands-application) . После настройки новые команды будут доступны в Azure Перцепт Studio для использования с приложением для работы с голосовым помощником.
+Руководство по созданию пользовательских команд приведено в [документации по Speech Studio](../cognitive-services/speech-service/quickstart-custom-commands-application.md) . После настройки новые команды будут доступны в Azure Перцепт Studio для использования с приложением для работы с голосовым помощником.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 После создания приложения для работы с голосовым помощником попытайтесь разработать [решение без концепции кода](./tutorial-nocode-vision.md) с помощью Azure перцепт DK.

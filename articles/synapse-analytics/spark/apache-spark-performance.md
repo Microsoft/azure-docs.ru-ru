@@ -10,10 +10,10 @@ ms.date: 04/15/2020
 ms.author: euang
 ms.reviewer: euang
 ms.openlocfilehash: b94ece73d5f9dc9b8343e45fb1f616599b9a1c1f
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96450925"
 ---
 # <a name="optimize-apache-spark-jobs-in-azure-synapse-analytics"></a>Оптимизация заданий Apache Spark в Azure Synapse Analytics

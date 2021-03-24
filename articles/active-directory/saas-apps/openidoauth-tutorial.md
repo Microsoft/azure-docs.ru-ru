@@ -13,10 +13,10 @@ ms.date: 05/30/2019
 ms.author: jeedes
 ms.custom: has-adal-ref
 ms.openlocfilehash: 32f79f24df6fe705146b39750c710450ef8f1f7b
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98735947"
 ---
 # <a name="configure-an-openidoauth-application-from-the-azure-ad-app-gallery"></a>Настройка приложения OpenID или OAuth из коллекции приложений Azure AD

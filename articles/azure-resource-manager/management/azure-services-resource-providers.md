@@ -3,12 +3,12 @@ title: Поставщики ресурсов по службам Azure
 description: Выводит список всех пространств имен поставщиков ресурсов для Azure Resource Manager и отображает службу Azure для этого пространства имен.
 ms.topic: conceptual
 ms.date: 03/16/2021
-ms.openlocfilehash: ee8cb054f3f10c3b33d5235b2b03cdfeac266139
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d8239a9305560eb77ac2c714b993373f0d5b16fb
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104592167"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105023016"
 ---
 # <a name="resource-providers-for-azure-services"></a>Поставщики ресурсов для служб Azure
 
@@ -25,10 +25,10 @@ ms.locfileid: "104592167"
 | Microsoft. Адхибридхеалссервице — [зарегистрировано](#registration) | [Azure Active Directory](../../active-directory/index.yml) |
 | Microsoft.Advisor | [Помощник по Azure](../../advisor/index.yml) |
 | Microsoft.AlertsManagement | [Azure Monitor](../../azure-monitor/index.yml) |
-| Microsoft.AnalysisServices | [Службы Azure Analysis Services](../../analysis-services/index.yml) |
+| Microsoft.AnalysisServices | [Azure Analysis Services](../../analysis-services/index.yml) |
 | Microsoft.ApiManagement | [Управление API](../../api-management/index.yml) |
 | Microsoft.AppConfiguration | [Конфигурация приложений Azure](../../azure-app-configuration/index.yml) |
-| Microsoft.AppPlatform | [Azure Spring Cloud](../../spring-cloud/spring-cloud-overview.md) |
+| Microsoft.AppPlatform | [Azure Spring Cloud](../../spring-cloud/overview.md) |
 | Microsoft.Attestation | Служба аттестации Azure |
 | Microsoft. Authorization- [Registered](#registration) | [Azure Resource Manager](../index.yml) |
 | Microsoft.Automation | [Служба автоматизации](../../automation/index.yml) |
@@ -125,7 +125,7 @@ ms.locfileid: "104592167"
 | Microsoft.MarketplaceApps | core |
 | Microsoft. Маркетплацеордеринг — [зарегистрировано](#registration) | core |
 | Microsoft.Media | [Службы мультимедиа](../../media-services/index.yml) |
-| Microsoft.Microservices4Spring | [Azure Spring Cloud](../../spring-cloud/spring-cloud-overview.md) |
+| Microsoft.Microservices4Spring | [Azure Spring Cloud](../../spring-cloud/overview.md) |
 | Microsoft.Migrate | [Миграция Azure](../../migrate/migrate-services-overview.md) |
 | Microsoft.MixedReality | [Пространственные привязки Azure.](../../spatial-anchors/index.yml) |
 | Microsoft.NetApp | [Azure NetApp Files](../../azure-netapp-files/index.yml) |
@@ -155,12 +155,12 @@ ms.locfileid: "104592167"
 | Microsoft.Search | [Когнитивный поиск Azure](../../search/index.yml) |
 | Microsoft.Security | [Центр безопасности](../../security-center/index.yml) |
 | Microsoft.SecurityInsights | [Azure Sentinel](../../sentinel/index.yml) |
-| Microsoft. Сериалконсоле — [зарегистрировано](#registration) | [Серийная консоль Azure для Windows](../../virtual-machines/troubleshooting/serial-console-windows.md) |
+| Microsoft. Сериалконсоле — [зарегистрировано](#registration) | [Серийная консоль Azure для Windows](/troubleshoot/azure/virtual-machines/serial-console-windows) |
 | Microsoft.ServiceBus | [Служебная шина](/azure/service-bus/) |
 | Microsoft.ServiceFabric | [Service Fabric](../../service-fabric/index.yml) |
 | Microsoft.ServiceFabricMesh | [Служба Microsoft Azure Service Fabric](../../service-fabric-mesh/index.yml) |
 | Microsoft.Services | core |
-| Microsoft.SignalRService | [Служба SignalR Azure](../../azure-signalr/index.yml) |
+| Microsoft.SignalRService | [Служба Azure SignalR](../../azure-signalr/index.yml) |
 | Microsoft.SoftwarePlan | Лицензия |
 | Microsoft.Solutions | [Управляемые приложения Azure](../managed-applications/index.yml) |
 | Microsoft.Sql | [База данных SQL Azure](../../azure-sql/database/index.yml)<br /> [Управляемый экземпляр SQL Azure](../../azure-sql/managed-instance/index.yml) <br />[Azure Synapse Analytics](/azure/sql-data-warehouse/) |
@@ -175,7 +175,7 @@ ms.locfileid: "104592167"
 | Microsoft.Synapse | [Azure Synapse Analytics](/azure/sql-data-warehouse/) |
 | Microsoft.TimeSeriesInsights | [Аналитика временных рядов Azure](../../time-series-insights/index.yml) |
 | Microsoft.Token | Токен |
-| Microsoft.VirtualMachineImages | [Средство создания образов Azure](../../virtual-machines/image-builder-overview.md) |
+| Microsoft.VirtualMachineImages | [Построитель образов Azure](../../virtual-machines/image-builder-overview.md) |
 | microsoft.visualstudio | [Azure DevOps](/azure/devops/) |
 | Microsoft.VMware | [Решение Azure VMware](../../azure-vmware/index.yml) |
 | Microsoft.VMwareCloudSimple | [Решение VMware в Azure от CloudSimple](../../vmware-cloudsimple/index.md) |
@@ -229,6 +229,6 @@ ResourceType      : Microsoft.KeyVault/vaults
 ...
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о поставщиках ресурсов, включая регистрацию поставщика ресурсов, см. в статье [поставщики и типы ресурсов Azure](resource-providers-and-types.md).

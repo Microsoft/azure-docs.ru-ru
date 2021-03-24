@@ -6,10 +6,10 @@ ms.topic: overview
 ms.date: 09/16/2020
 ms.author: enewman
 ms.openlocfilehash: 71d59e8bcf7b4078255d6b119e9d62f366e46033
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96437326"
 ---
 # <a name="architecture-fundamentals-in-azure-lab-services"></a>Общие понятия об архитектуре в Службе лабораторий Azure
