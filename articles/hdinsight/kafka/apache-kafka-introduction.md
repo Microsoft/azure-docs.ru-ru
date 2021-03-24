@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: overview
 ms.custom: hdinsightactive
 ms.date: 02/25/2020
-ms.openlocfilehash: fbe4041b74f90b2ef8a9ef4384e83c7aa2d56461
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: baf41b9e66b14e4b255b6e13b22691357f9e7309
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98939271"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870812"
 ---
 # <a name="what-is-apache-kafka-in-azure-hdinsight"></a>Общие сведения об Apache Kafka в Azure HDInsight
 
@@ -44,7 +44,7 @@ ms.locfileid: "98939271"
 
 На приведенной ниже схеме показана стандартная конфигурация Kafka, в которой предусмотрены группы потребителей, секционирование и репликация, чтобы обеспечить параллельное считывание событий и отказоустойчивость.
 
-![Схема конфигурации кластера Kafka](./media/apache-kafka-introduction/kafka-cluster-diagram.png)
+:::image type="content" source="./media/apache-kafka-introduction/kafka-cluster-diagram.png" alt-text="Схема конфигурации кластера Kafka" border="false":::
 
 Apache ZooKeeper управляет состоянием кластера Kafka. Служба Zookeeper предназначена для параллельных надежных транзакций с низкой задержкой.
 

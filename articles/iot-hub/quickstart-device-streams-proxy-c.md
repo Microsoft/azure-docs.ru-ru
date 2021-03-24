@@ -10,10 +10,10 @@ ms.custom: references_regions
 ms.date: 03/14/2019
 ms.author: robinsh
 ms.openlocfilehash: a6e3407d9ddb799ab0ee5846acc149048f593563
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102202014"
 ---
 # <a name="quickstart-enable-ssh-and-rdp-over-an-iot-hub-device-stream-by-using-a-c-proxy-application-preview"></a>Краткое руководство. Подключение по протоколу SSH и RDP через поток устройств центра Интернета вещей с помощью прокси-приложения C (предварительная версия)

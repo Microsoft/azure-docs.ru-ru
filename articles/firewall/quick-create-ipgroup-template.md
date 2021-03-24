@@ -9,10 +9,10 @@ ms.custom: subject-armqs
 ms.date: 08/28/2020
 ms.author: victorh
 ms.openlocfilehash: 7966cbe44fc8984cf3c3d9e2d08a11bf599ff158
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89079138"
 ---
 # <a name="quickstart-create-an-azure-firewall-and-ip-groups---arm-template"></a>Краткое руководство. Создание Брандмауэра Azure и групп IP-адресов с помощью шаблона ARM
@@ -42,7 +42,7 @@ ms.locfileid: "89079138"
 - [**Microsoft.Network/ipGroups**](/azure/templates/microsoft.network/ipGroups)
 - [**Microsoft.Storage/storageAccounts**](/azure/templates/microsoft.storage/storageAccounts)
 - [**Microsoft.Network/routeTables**](/azure/templates/microsoft.network/routeTables)
-- [**Microsoft.Network/networkSecurityGroups;** ](/azure/templates/microsoft.network/networksecuritygroups)
+- [**Microsoft.Network/networkSecurityGroups;**](/azure/templates/microsoft.network/networksecuritygroups)
 - [**Microsoft.Network/virtualNetworks**](/azure/templates/microsoft.network/virtualnetworks);
 - [**Microsoft.Network/publicIPAddresses**](/azure/templates/microsoft.network/publicipaddresses)
 - [**Microsoft.Network/networkInterfaces**](/azure/templates/microsoft.network/networkinterfaces)
@@ -76,7 +76,7 @@ ms.locfileid: "89079138"
 
 :::image type="content" source="media/quick-create-ipgroup-template/ipgroups.png" alt-text="Группы IP-адресов.":::
 
-:::image type="content" source="media/quick-create-ipgroup-template/network-rule.png" alt-text="Группы IP-адресов.":::
+:::image type="content" source="media/quick-create-ipgroup-template/network-rule.png" alt-text="Правила сети.":::
 
 Дополнительные сведения о синтаксисе JSON и свойствах для брандмауэра в шаблоне см. в статье [Справочник по шаблонам Microsoft.Network azureFirewalls](/azure/templates/Microsoft.Network/2019-11-01/azureFirewalls).
 

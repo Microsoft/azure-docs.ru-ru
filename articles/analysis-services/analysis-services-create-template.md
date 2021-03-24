@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 08/31/2020
 ms.custom: subject-armqs, references_regions
 ms.openlocfilehash: 3e776bf41420d38a1b208ce11a6a34e97fa92a15
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89230795"
 ---
 # <a name="quickstart-create-a-server---arm-template"></a>Краткое руководство. Создание сервера — шаблон ARM
@@ -27,8 +27,8 @@ ms.locfileid: "89230795"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* **Подписка Azure**: Откройте ссылку на [бесплатную пробную версию Azure](https://azure.microsoft.com/offers/ms-azr-0044p/), чтобы создать учетную запись.
-* **Azure Active Directory**. Ваша подписка должна быть связана с клиентом Azure Active Directory. И необходимо войти в Azure с учетной записью в этом Azure Active Directory. Дополнительные сведения см. в руководстве по [аутентификации и настройке пользовательских разрешений](analysis-services-manage-users.md).
+* **Подписка Azure**: откройте ссылку на [бесплатную пробную версию Azure](https://azure.microsoft.com/offers/ms-azr-0044p/), чтобы создать учетную запись.
+* **Azure Active Directory**: ваша подписка должна быть связана с клиентом Azure Active Directory. И необходимо войти в Azure с учетной записью в этом Azure Active Directory. Дополнительные сведения см. в руководстве по [аутентификации и настройке пользовательских разрешений](analysis-services-manage-users.md).
 
 ## <a name="review-the-template"></a>Изучение шаблона
 

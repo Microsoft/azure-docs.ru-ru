@@ -6,11 +6,11 @@ ms.author: inhenkel
 ms.service: media-services
 ms.topic: overview
 ms.date: 09/23/2020
-ms.openlocfilehash: 9d126f591da1bffebbfd29119c56927cfbb21dcd
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.openlocfilehash: c63a8efc4bbcf6e5a124d439e6f9f91397e2fa53
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92370582"
 ---
 # <a name="changelog"></a>Журнал изменений
@@ -198,7 +198,7 @@ ms.locfileid: "92370582"
 
 ### <a name="changes"></a>Изменения ###
 
-- [Изменено][Заголовки трансляций] Изменено название API для заголовков CEA с 608 по 708. Дополнительные сведения см. в разделе [Параметры заголовков CEA708](/javascript/api/azuremediaplayer/cea708captionssettings)-->
+- [Изменено][Заголовки трансляций] Изменено название API для заголовков CEA с 608 по 708. Дополнительные сведения см. в разделе [Параметры заголовков CEA708](/javascript/api/azuremediaplayer/amp.player.cea708captionssettings)-->
 
 ## <a name="220-official-release"></a>2.2.0 (официальный выпуск) ##
 

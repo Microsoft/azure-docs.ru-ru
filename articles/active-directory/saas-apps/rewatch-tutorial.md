@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/10/2021
 ms.author: jeedes
 ms.openlocfilehash: 032957b49c7ef9170a7e1aaa63eaa66a3c3e8401
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101648549"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-rewatch"></a>Руководство по интеграции единого входа Azure Active Directory с Rewatch

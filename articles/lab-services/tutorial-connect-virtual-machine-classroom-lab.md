@@ -4,10 +4,10 @@ description: Из этого руководства вы узнаете, как 
 ms.topic: tutorial
 ms.date: 06/26/2020
 ms.openlocfilehash: dacfa34c0d3ab637ef513342bc5ce5fe81038e11
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85443474"
 ---
 # <a name="tutorial-access-a-classroom-lab-in-azure-lab-services"></a>Руководство по Вход в лабораторию для аудитории в Службах лабораторий Azure

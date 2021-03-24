@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 1/11/2019
 ms.author: jeedes
 ms.openlocfilehash: 78324cfa58a8ac015b085052bdec7e3793befc1b
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96348455"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-signagelive"></a>Руководство по Интеграция Azure Active Directory с Signagelive

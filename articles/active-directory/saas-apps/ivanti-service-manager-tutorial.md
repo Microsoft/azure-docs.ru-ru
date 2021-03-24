@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/05/2021
 ms.author: jeedes
 ms.openlocfilehash: 16aceeddcba574953ac03ccf04d099762b0000c3
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101648890"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-ivanti-service-manager-ism"></a>Руководство по интеграции Azure Active Directory с Ivanti Service Manager (ISM)

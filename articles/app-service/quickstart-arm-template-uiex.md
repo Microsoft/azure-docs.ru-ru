@@ -10,10 +10,10 @@ ms.custom: subject-armqs, devx-track-azurecli
 zone_pivot_groups: app-service-platform-windows-linux
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 7437a5208f94b435576b8a38dc65a6e798303a72
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102179091"
 ---
 # <a name="quickstart-create-app-service-app-using-an-arm-template"></a>Краткое руководство. Создание приложения Службы приложений с помощью шаблона Resource Manager

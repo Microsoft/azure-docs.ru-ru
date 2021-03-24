@@ -5,13 +5,13 @@ ms.topic: tutorial
 ms.date: 03/21/2018
 ms.custom: seodec18, mvc, devx-track-js
 ms.openlocfilehash: 1eca34fb5da50b15f15322a3b534556bcd3bda09
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91303120"
 ---
-# <a name="tutorial-create-a-container-image-for-deployment-to-azure-container-instances"></a>Руководство по Создание образа контейнера для развертывания в службе "Экземпляры контейнеров Azure"
+# <a name="tutorial-create-a-container-image-for-deployment-to-azure-container-instances"></a>Руководство. Создание образа контейнера для развертывания в службе "Экземпляры контейнеров Azure"
 
 Служба "Экземпляры контейнеров Azure" позволяет развертывать контейнеры Docker в инфраструктуре Azure без подготовки виртуальных машин или применения службы более высокого уровня. С помощью этого руководства мы создадим пакет небольшого веб-приложения Node.js в образе контейнера, который можно запустить в службе "Экземпляры контейнеров Azure".
 
@@ -128,7 +128,7 @@ a2e3e4435db58ab0c664ce521854c2e1a1bda88c9cf2fcff46aedf48df86cccf
 Переходите к следующему руководству, чтобы узнать о хранении образов контейнеров в Реестре контейнеров Azure.
 
 > [!div class="nextstepaction"]
-> [Передача образа в Реестр контейнеров Azure](container-instances-tutorial-prepare-acr.md)
+> [Передача образа в реестр контейнеров Azure](container-instances-tutorial-prepare-acr.md)
 
 <!--- IMAGES --->
 [aci-tutorial-app]:./media/container-instances-quickstart/aci-app-browser.png

@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 06/03/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath, contperf-fy20q4
-ms.openlocfilehash: 1ef6c678110037a4aed24ef40631b73a04ca6a9d
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: 531e5cf274d40eae19075514d50aec5a6524aeec
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97028093"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104775346"
 ---
 # <a name="data-exploration-and-modeling-with-spark"></a>Исследование и моделирование данных с помощью Spark
 
@@ -495,7 +495,8 @@ print "Time taken to execute above cell: " + str(timedelta) + " seconds";
 
 ### <a name="feature-scaling"></a>масштабирование признаков;
 
-Масштабирование признаков (или нормализация данных) гарантирует, что для признаков с широко распределенными значениями не задано высокое значение веса в целевой функции. В коде для масштабирования признаков используется функция [StandardScaler](https://spark.apache.org/docs/latest/api/python/pyspark.mllib.html#pyspark.mllib.feature.StandardScaler), которая позволяет масштабировать признаки в зависимости от изменений единицы. MLlib предоставляет функцию StandardScaler для выполнения линейной регрессии с применением метода стохастического градиента. Этот алгоритм широко используется для обучения других моделей машинного обучения (например, регуляризованной регрессии или метода опорных векторов).
+Масштабирование признаков (или нормализация данных) гарантирует, что для признаков с широко распределенными значениями не задано высокое значение веса в целевой функции. В коде для масштабирования признаков используется функция [StandardScaler](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.classification.LogisticRegressionWithLBFGS.html#pyspark.mllib.classification.LogisticRegressionWithLBFGS
+), которая позволяет масштабировать признаки в зависимости от изменений единицы. MLlib предоставляет функцию StandardScaler для выполнения линейной регрессии с применением метода стохастического градиента. Этот алгоритм широко используется для обучения других моделей машинного обучения (например, регуляризованной регрессии или метода опорных векторов).
 
 > [!NOTE]
 > Алгоритм LinearRegressionWithSGD чувствителен к масштабированию признаков.

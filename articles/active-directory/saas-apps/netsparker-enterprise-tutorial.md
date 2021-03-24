@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 11/13/2020
 ms.author: jeedes
 ms.openlocfilehash: ccf96ddc2d223b4643c280acaa1fd7b6e734ad85
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96181940"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-netsparker-enterprise"></a>Руководство по интеграции единого входа Azure Active Directory с Netsparker Enterprise

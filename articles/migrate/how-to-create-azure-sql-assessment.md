@@ -5,12 +5,12 @@ author: rashi-ms
 ms.author: rajosh
 ms.topic: tutorial
 ms.date: 02/07/2021
-ms.openlocfilehash: 14197516c0669055f756614b9559f1423703c6a8
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 21553adf81d5b34813785db7cd6bbe3caf71c210
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102053575"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104780499"
 ---
 # <a name="create-an-azure-sql-assessment"></a>Создание оценки для Azure SQL
 
@@ -18,7 +18,7 @@ ms.locfileid: "102053575"
 В этой статье содержатся сведения о том, как оценивать обнаруженные экземпляры SQL при подготовке к миграции в Azure SQL с помощью инструмента обнаружения и оценки службы "Миграция Azure".
 
 > [!Note]
-> Возможности обнаружения и оценки экземпляров и баз данных SQL Server, работающих в среде VMware, сейчас предоставляются в предварительной версии. Чтобы опробовать эту функцию, воспользуйтесь [**этой ссылкой**](https://aka.ms/AzureMigrate/SQL) для создания проекта в регионе **Восточная Австралия**. Если у вас уже есть проект в регионе "Восточная Австралия" и вы хотите опробовать эту функцию, убедитесь, что вы выполнили [**эти предварительные требования**](how-to-discover-sql-existing-project.md) на портале.
+> Возможности обнаружения и оценки экземпляров и баз данных SQL Server, работающих в среде VMware, сейчас предоставляются в предварительной версии. 
 
 ## <a name="before-you-start"></a>Прежде чем начать
 
