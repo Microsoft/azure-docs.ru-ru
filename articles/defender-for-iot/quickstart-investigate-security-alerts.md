@@ -1,24 +1,14 @@
 ---
 title: Краткое руководство. Анализ оповещений системы безопасности
 description: Изучайте, детализируйте и анализируйте оповещения системы безопасности Defender для Интернета вещей на устройствах Интернета вещей.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: mlottner
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 07/30/2020
-ms.author: mlottner
-ms.openlocfilehash: 172ae82288c2cb948839b69955b9491715eb4690
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 2eb4a10372680348536231aa0333c43199b8d883
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "90945172"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104780996"
 ---
 # <a name="quickstart-investigate-security-alerts"></a>Краткое руководство. Анализ оповещений системы безопасности
 
@@ -44,12 +34,12 @@ ms.locfileid: "90945172"
 
 1. Откройте любое оповещение системы безопасности в списке, выбрав **Центр Интернета вещей** > **Безопасность** > **Оповещения**. 
 1. Изучите **описание** оповещения, **серьезность**, **источник обнаружения**, **сведения об устройстве** по всем устройствам, выдавшим это оповещение в период агрегирования.
-:::image type="content" source="media/quickstart/drill-down-iot-alert-details.png" alt-text="Исследование новых оповещений системы безопасности Интернета вещей с помощью флага нового оповещения"::: 
+:::image type="content" source="media/quickstart/drill-down-iot-alert-details.png" alt-text="Детализация и анализ сведений о каждом устройстве в агрегированном оповещении"::: 
 1. После просмотра сведений об оповещениях воспользуйтесь инструкциями по **ручному исправлению**, которые помогут устранить проблему, вызвавшую это оповещение. 
-:::image type="content" source="media/quickstart/iot-alert-manual-remediation-steps.png" alt-text="Исследование новых оповещений системы безопасности Интернета вещей с помощью флага нового оповещения":::
+:::image type="content" source="media/quickstart/iot-alert-manual-remediation-steps.png" alt-text="Выполнение действий по ручному устранению проблем, связанных с оповещениями системы безопасности устройства":::
 
 1. Если требуется дальнейшее исследование, **проанализируйте оповещения в Log Analytics**, используя приведенную ниже ссылку. 
-:::image type="content" source="media/quickstart/investigate-iot-alert-log-analytics.png" alt-text="Исследование новых оповещений системы безопасности Интернета вещей с помощью флага нового оповещения":::
+:::image type="content" source="media/quickstart/investigate-iot-alert-log-analytics.png" alt-text="Использование ссылки, отображаемой на экране, для выполнения анализа с помощью Log Analytics с целью дальнейшего изучения оповещения":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

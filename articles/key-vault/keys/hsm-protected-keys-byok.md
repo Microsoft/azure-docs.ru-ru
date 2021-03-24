@@ -11,10 +11,10 @@ ms.topic: tutorial
 ms.date: 02/04/2021
 ms.author: ambapat
 ms.openlocfilehash: 4a3eaddd160acb8d4d2ae9f0da43ce6cb0236055
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/23/2021
 ms.locfileid: "102198155"
 ---
 # <a name="import-hsm-protected-keys-to-key-vault-byok"></a>Импорт защищенных модулем HSM ключей в Key Vault (BYOK)

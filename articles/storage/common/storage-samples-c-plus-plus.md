@@ -8,10 +8,10 @@ ms.service: storage
 ms.subservice: common
 ms.topic: sample
 ms.openlocfilehash: 158f908dfd52a3365d19f65eb00faf1787893af5
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92372905"
 ---
 # <a name="azure-storage-samples-using-v12-c-client-libraries"></a>Примеры использования службы хранилища Azure с помощью клиентских библиотек для C++ версии 12
@@ -149,7 +149,7 @@ ms.locfileid: "92372905"
 Дополнительные сведения о примерах для других языков см. здесь:
 
 * .NET: [Примеры для службы хранилища Azure с использованием .NET](storage-samples-dotnet.md)
-* Java: [Azure Storage samples using Java](storage-samples-java.md) (Примеры для службы хранилища Azure с использованием Java)
+* Java: [Примеры для службы хранилища Azure с использованием Java](storage-samples-java.md)
 * Python: [Примеры для работы со службой хранилища Azure с помощью Python](storage-samples-python.md)
 * JavaScript/Node.js: [Примеры для службы хранилища Azure с использованием JavaScript](storage-samples-javascript.md)
 * Остальные языки: [Примеры для службы хранилища Azure](storage-samples.md)

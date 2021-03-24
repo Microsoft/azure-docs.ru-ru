@@ -8,10 +8,10 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.date: 08/31/2020
 ms.openlocfilehash: 76bbb980b6430f7cffc23ec078e2c932128dc637
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89265275"
 ---
 # <a name="create-an-azure-media-services-live-stream"></a>Создание прямой трансляции в Службах мультимедиа Azure

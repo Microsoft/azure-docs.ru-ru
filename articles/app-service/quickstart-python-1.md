@@ -7,10 +7,10 @@ ms.custom: seo-python-october2019, cli-validate, devx-track-python, devx-track-a
 zone_pivot_groups: python-frameworks-01
 robots: noindex
 ms.openlocfilehash: ef32b8ff9282e92511047840576ddfe6751b24e0
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102184514"
 ---
 # <a name="quickstart-create-a-python-app-in-azure-app-service-on-linux"></a>Краткое руководство. Создание приложения Python в Службе приложений Azure в Linux

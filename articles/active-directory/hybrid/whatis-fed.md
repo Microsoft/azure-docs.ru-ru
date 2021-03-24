@@ -14,10 +14,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: eb1c3bc9f89db3f4b694803a63293a5537d4b98b
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89278758"
 ---
 # <a name="what-is-federation-with-azure-ad"></a>Использование федерации с Azure Active Directory
@@ -37,7 +37,7 @@ ms.locfileid: "89278758"
 
 - [Что собой представляет гибридная идентификация](./whatis-hybrid-identity.md)
 - [Использование Azure AD Connect с расширением Azure AD Connect Health](whatis-azure-ad-connect.md)
-- [Использование синхронизации хэша паролей](whatis-phs.md)
+- [Что такое синхронизация хэша паролей](whatis-phs.md)
 - [Использование федерации](whatis-fed.md)
 - [Использование единого входа](how-to-connect-sso.md)
 - [Принцип работы федерации](how-to-connect-fed-whatis.md)

@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 10/20/2020
 ms.author: rohink
 ms.openlocfilehash: ee6dde6b34cccd415f9bf2052f65dcbe940715c1
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92424390"
 ---
 # <a name="quickstart-create-an-azure-private-dns-zone-using-azure-powershell"></a>Краткое руководство. Создание частной зоны Azure DNS с помощью Azure PowerShell
@@ -42,7 +42,7 @@ New-AzResourceGroup -name MyAzureResourceGroup -location "eastus"
 
 Зона DNS создается с помощью командлета `New-AzPrivateDnsZone`.
 
-В следующем примере создается виртуальная сеть с именем **myAzureVNet**. Затем создается зона DNS с именем **private.contoso.com** в группе ресурсов **MyAzureResourceGroup** , которая связывает зону DNS с виртуальной сетью **MyAzureVnet** и включает автоматическую регистрацию.
+В следующем примере создается виртуальная сеть с именем **myAzureVNet**. Затем создается зона DNS с именем **private.contoso.com** в группе ресурсов **MyAzureResourceGroup**, которая связывает зону DNS с виртуальной сетью **MyAzureVnet** и включает автоматическую регистрацию.
 
 ```azurepowershell
 Install-Module -Name Az.PrivateDns -force
@@ -167,7 +167,7 @@ Get-AzPrivateDnsRecordSet -ZoneName private.contoso.com -ResourceGroupName MyAzu
    PS C:\>
    ```
 
-2. Теперь проверьте связь с именем **db** , созданным ранее.
+2. Теперь проверьте связь с именем **db**, созданным ранее.
 
    ```
    ping db.private.contoso.com
@@ -193,7 +193,7 @@ Get-AzPrivateDnsRecordSet -ZoneName private.contoso.com -ResourceGroupName MyAzu
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Удалите группу ресурсов **MyAzureResourceGroup** , если ресурсы, созданные в этой статье, больше не нужны.
+Удалите группу ресурсов **MyAzureResourceGroup**, если ресурсы, созданные в этой статье, больше не нужны.
 
 ```azurepowershell
 Remove-AzResourceGroup -Name MyAzureResourceGroup

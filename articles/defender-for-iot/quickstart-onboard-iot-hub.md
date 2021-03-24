@@ -1,24 +1,14 @@
 ---
 title: Краткое руководство. Подключение Defender для Интернета вещей к решению на основе агента
 description: Из этого краткого руководства вы узнаете, как подключить и включить службу безопасности Defender для Интернета вещей в Центре Интернета вещей Azure.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 1/20/2021
-ms.author: shhazam
-ms.openlocfilehash: d30a03aa7b7715a8792e7b70a0571270c6ad7b37
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: b795773ae0eb667cf7f53f4209b6476ba937b17f
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449685"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104780962"
 ---
 # <a name="quickstart-onboard-defender-for-iot-to-an-agent-based-solution"></a>Краткое руководство. Подключение Defender для Интернета вещей к решению на основе агента
 

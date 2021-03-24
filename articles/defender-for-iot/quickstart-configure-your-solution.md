@@ -1,24 +1,14 @@
 ---
 title: Краткое руководство. Добавление ресурсов Azure в решение Интернета вещей
 description: В этом кратком руководстве показано, как настроить комплексное решение Интернета вещей с помощью Azure Defender для Интернета вещей.
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: Shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/25/2021
-ms.author: shhazam
-ms.openlocfilehash: e6d83dafbe4b7f7013ab32039acaff7d8faa4a91
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 1bde15919f9fa69bb9f9de7459895a70e9b74f71
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103487757"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104781030"
 ---
 # <a name="quickstart-configure-your-azure-defender-for-iot-solution"></a>Краткое руководство. Настройка решения Azure Defender для Интернета вещей
 

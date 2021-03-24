@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 3/12/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 86efd7781c7353b4846c77eba01ed34fb63067ff
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 75911e91bb61b84d2e9315421f794739f2b5088b
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102433256"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104953703"
 ---
 # <a name="manage-azure-digital-twins-models"></a>Управление моделями цифровых двойников Azure
 
@@ -179,7 +179,7 @@ ms.locfileid: "102433256"
 * Читать свойства
 * Чтение исходящих отношений
 * Добавлять и удалять входящие связи (как и другие двойников могут соформовать связи *с* этим двойника)
-  - `target`В определении связи может по-прежнему отражать дтми удаленной модели. Здесь также может работать связь без определенного целевого объекта.
+  - `target`В определении связи может по-прежнему отражать дтми удаленной модели. Здесь также может работать связь без определенного целевого объекта.      
 * Удаление связей
 * Удаление двойника
 

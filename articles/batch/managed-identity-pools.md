@@ -2,14 +2,14 @@
 title: Настройка управляемых удостоверений в пулах пакетной службы
 description: Узнайте, как включить управляемые пользователем удостоверения в пулах пакетной службы и как использовать управляемые удостоверения в узлах.
 ms.topic: conceptual
-ms.date: 02/10/2021
+ms.date: 03/23/2021
 ms.custom: references_regions
-ms.openlocfilehash: 4a59383d119f88bb3ee180f629ba0a6ea6ac2f44
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 7fab213ac1545c0bff9b74bc46504717b6038e8e
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100418066"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950167"
 ---
 # <a name="configure-managed-identities-in-batch-pools"></a>Настройка управляемых удостоверений в пулах пакетной службы
 
@@ -100,3 +100,4 @@ curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-
 
 - Дополнительные сведения об [управляемых удостоверениях для ресурсов Azure](../active-directory/managed-identities-azure-resources/overview.md).
 - Узнайте, как использовать [управляемые клиентом ключи с удостоверениями, управляемыми пользователем](batch-customer-managed-key.md).
+- Узнайте, как [включить автоматическое вращение сертификатов в пуле пакетной службы](automatic-certificate-rotation.md).

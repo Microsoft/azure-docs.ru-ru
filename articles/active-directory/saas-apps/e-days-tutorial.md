@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/14/2020
 ms.author: jeedes
 ms.openlocfilehash: 3116b9f4f8311ff4904795b1b9c27d5fe81dcb2f
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98736612"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-e-days"></a>Руководство по интеграции единого входа Azure Active Directory с E-days

@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.date: 04/30/2020
 ms.author: allensu
 ms.custom: mvc
-ms.openlocfilehash: 7cd1c6b0b11ba291a36f49a2a9990a2755cdd74b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 444639d9e36b67f25ed9b82bd68102273c66ae00
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102561931"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951238"
 ---
 # <a name="quickstart-integrate-an-azure-storage-account-with-azure-cdn"></a>Краткое руководство. Интеграция учетной записи хранения Azure с Azure CDN
 
@@ -118,4 +118,4 @@ http://<*имя_конечной_точки*\>.azureedge.net/<*общедост�
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Руководство. по добавлению сети доставки содержимого Azure в веб-приложение службы приложений Azure](cdn-add-to-web-app.md)
+> [Руководство. Использование CDN для обслуживания статического содержимого из веб-приложения](cdn-add-to-web-app.md)
