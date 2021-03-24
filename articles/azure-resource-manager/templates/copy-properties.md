@@ -3,12 +3,12 @@ title: Определение нескольких экземпляров сво
 description: Используйте операцию копирования в шаблоне Azure Resource Manager (шаблон ARM) для многократного прохода при создании свойства ресурса.
 ms.topic: conceptual
 ms.date: 09/15/2020
-ms.openlocfilehash: 958deba6152ffa3bcb1d2d79cd026c0cb2eebcbe
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 1bee4fb672fc0794d5372a4af60b1270105f1755
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521667"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889014"
 ---
 # <a name="property-iteration-in-arm-templates"></a>Итерация свойства в шаблонах ARM
 
@@ -25,7 +25,7 @@ ms.locfileid: "102521667"
 ```json
 "copy": [
   {
-    "name": "<name-of-loop>",
+    "name": "<name-of-property>",
     "count": <number-of-iterations>,
     "input": <values-for-the-property>
   }

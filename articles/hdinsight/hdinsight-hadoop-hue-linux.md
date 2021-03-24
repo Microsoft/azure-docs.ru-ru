@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.date: 03/31/2020
-ms.openlocfilehash: 8d4663aac6af4abb8d9855d2f972965e997d9c92
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 97a8dd2476642e693b589b4046f612c5569b9c0b
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945677"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865134"
 ---
 # <a name="install-and-use-hue-on-hdinsight-hadoop-clusters"></a>Установка и использование Hue на кластерах HDInsight Hadoop
 
@@ -80,17 +80,17 @@ Hue — это набор веб-приложений, используемых
    > [!NOTE]  
    > При первом входе в систему вам будет предложено создать учетную запись для входа на портал Hue. Эти учетные данные будут связаны только с порталом и не будут иметь отношения к учетным данным администратора или SSH, указанным при подготовке кластера.
 
-    ![Окно входа на портал Hue для HDInsight](./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-login.png "Ввод учетных данных для портала Hue")
+    :::image type="content" source="./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-login.png" alt-text="Окно входа на портал Hue для HDInsight":::
 
 ### <a name="run-a-hive-query"></a>Выполнение запроса Hive
 
 1. На портале Hue щелкните **Query Editors** (Редакторы запросов), а затем выберите **Hive**, чтобы открыть редактор Hive.
 
-    ![Редактор Hive на портале Hue для HDInsight](./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-use-hive.png "Использование Hive")
+    :::image type="content" source="./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-use-hive.png" alt-text="Редактор Hive на портале Hue для HDInsight":::
 
 2. На вкладке **Assist** (Помощь) в разделе **Database** (База данных) отобразится элемент **hivesampletable**. Это пример таблицы, входящей в состав всех кластеров Hadoop в HDInsight. В правой области введите запрос и просмотрите выходные данные на нижней вкладке **Results** (Результаты), как показано на приведенном снимке экрана.
 
-    ![Запрос Hive на портале Hue для HDInsight](./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-hive-query.png "Выполнение запросов Hive")
+    :::image type="content" source="./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-hive-query.png" alt-text="Запрос Hive на портале Hue для HDInsight":::
 
     Для визуального представления результатов вы можете использовать вкладку **Chart** (Диаграмма).
 
@@ -99,7 +99,7 @@ Hue — это набор веб-приложений, используемых
 1. На портале Hue в правом верхнем углу панели меню выберите **File Browser** (Обозреватель файлов).
 2. По умолчанию обозреватель открывается в каталоге **/user/myuser** . Щелкните косую черту в пути непосредственно перед каталогом пользователя, чтобы перейти в корневую папку контейнера хранилища Azure, связанного с кластером.
 
-    ![Обозреватель файлов на портале Hue для HDInsight](./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-file-browser.png "Использование обозревателя файлов")
+    :::image type="content" source="./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-file-browser.png" alt-text="Обозреватель файлов на портале Hue для HDInsight":::
 
 3. Щелкните правой кнопкой мыши файл или папку, чтобы отобразились доступные операции. Отправить файлы в текущую папку можно с помощью кнопки **Upload** (Отправить) в правом углу. Для создания новых файлов и папок используйте кнопку **New** (Создать).
 
@@ -118,7 +118,7 @@ Hue — это набор веб-приложений, используемых
 
 1. Кластеры под управлением Linux можно настроить так, чтобы службы выполнялись на основном головном узле, а Resource Manager — на дополнительном. При таком сценарии попытка использования Hue для просмотра сведений о ЗАПУЩЕННЫХ заданиях на кластере может привести к ошибкам (показаны ниже). Тем не менее после завершения заданий вы можете просматривать сведения о них.
 
-   ![Пример сообщения об ошибке на портале Hue](./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-error.png "Ошибка портала Hue")
+   :::image type="content" source="./media/hdinsight-hadoop-hue-linux/hdinsight-hue-portal-error.png" alt-text="Пример сообщения об ошибке на портале Hue":::
 
    Это известная проблема. В качестве обходного решения можно изменить Ambari, чтобы активный Resource Manager также запускался на основном головном узле.
 

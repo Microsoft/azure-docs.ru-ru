@@ -6,12 +6,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seodec18,seoapr2020, contperf-fy21q2
 ms.date: 10/30/2020
-ms.openlocfilehash: 15869a547ec5debee939c956d7495bfa58357555
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6f478b97464cd47e9d0e04bfe83bd48a2b3bfe7c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946921"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867106"
 ---
 # <a name="configure-hdinsight-clusters-for-azure-active-directory-integration-with-enterprise-security-package"></a>Настройка кластеров HDInsight для интеграции Azure Active Directory с Корпоративный пакет безопасности
 
@@ -19,14 +19,14 @@ ms.locfileid: "98946921"
 
 Подробное пошаговое руководство по настройке и настройке домена в Azure и созданию кластера с поддержкой ESP с последующей синхронизацией локальных пользователей см. [в статье Создание и настройка кластеров корпоративный пакет безопасности в Azure HDInsight](apache-domain-joined-create-configure-enterprise-security-cluster.md).
 
-## <a name="background"></a>Историческая справка
+## <a name="background"></a>Фон
 
 Корпоративный пакет безопасности (ESP) обеспечивает интеграцию Active Directory для Azure HDInsight. Такая интеграция позволяет пользователям домена использовать учетные данные домена для аутентификации в кластерах HDInsight и выполнения заданий обработки больших данных.
 
 > [!NOTE]  
 > Протокол ESP общедоступен в HDInsight 3,6 и 4,0 для следующих типов кластера: Apache Spark, Interactive, Hadoop и HBase. ESP для типа кластера Apache Kafka находится в режиме предварительной версии с поддержкой наилучшей поддержки. Кластеры ESP, созданные до даты протокола ESP (1 октября 2018), не поддерживаются.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем можно будет создать кластер HDInsight с поддержкой ESP, необходимо выполнить несколько предварительных требований:
 
@@ -70,7 +70,7 @@ New-SelfSignedCertificate -Subject contoso100.onmicrosoft.com `
 
 Просмотрите состояние работоспособности Azure Active Directory доменных служб, выбрав **работоспособность** в категории **Управление** . Убедитесь, что AD DS Azure имеет значение зеленый (работает) и синхронизация завершена.
 
-![Работоспособность AD DS Azure](./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-health.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-health.png" alt-text="Работоспособность AD DS Azure" border="true":::
 
 ### <a name="create-and-authorize-a-managed-identity"></a>Создание и авторизация управляемого удостоверения
 
@@ -82,7 +82,7 @@ New-SelfSignedCertificate -Subject contoso100.onmicrosoft.com `
 
 Затем назначьте роль **участника доменных служб HDInsight** управляемому удостоверению в службе **контроля доступа** для Azure AD DS. Чтобы назначить эту роль, необходимы права администратора AD DS Azure.
 
-![Служба контроля доступа доменных служб Azure Active Directory](./media/apache-domain-joined-configure-using-azure-adds/hdinsight-configure-managed-identity.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/hdinsight-configure-managed-identity.png" alt-text="Служба контроля доступа доменных служб Azure Active Directory" border="true":::
 
 Назначение роли **участника доменных служб HDInsight** гарантирует, что это удостоверение имеет надлежащий ( `on behalf of` ) доступ для выполнения операций доменных служб в домене Azure AD DS. Эти операции включают создание и удаление подразделений.
 
@@ -90,7 +90,7 @@ New-SelfSignedCertificate -Subject contoso100.onmicrosoft.com `
 
 Например, администратор AD DS Azure может назначить эту роль группе **маркетингтеам** для управляемого удостоверения **сжмси** . Пример показан на следующем рисунке. Это назначение гарантирует, что сотрудники Организации смогут использовать управляемое удостоверение для создания кластеров ESP.
 
-![Назначение роли оператора управляемого удостоверения HDInsight](./media/apache-domain-joined-configure-using-azure-adds/hdinsight-managed-identity-operator-role-assignment.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/hdinsight-managed-identity-operator-role-assignment.png" alt-text="Назначение роли оператора управляемого удостоверения HDInsight" border="true":::
 
 ### <a name="network-configuration"></a>Сетевая конфигурация
 
@@ -99,17 +99,17 @@ New-SelfSignedCertificate -Subject contoso100.onmicrosoft.com `
 
 Включите доменные службы Azure AD. Затем локальный сервер службы доменных имен (DNS) выполняется на виртуальных машинах Active Directory. Настройте виртуальную сеть Azure AD DS для использования этих пользовательских DNS-серверов. Чтобы найти нужные IP-адреса, выберите **Свойства** в категории **Управление** и просмотрите раздел **IP-адрес в виртуальной сети**.
 
-![Поиск IP-адресов для локальных DNS-серверов](./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-dns1.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-dns1.png" alt-text="Поиск IP-адресов для локальных DNS-серверов" border="true":::
 
 Измените конфигурацию DNS-серверов в виртуальной сети Azure AD DS. Чтобы использовать эти настраиваемые IP-адреса, в категории " **Параметры** " выберите **серверы DNS** . Затем выберите параметр **Custom (пользовательский** ), введите первый IP-адрес в текстовом поле и нажмите кнопку **сохранить**. Добавьте дополнительные IP-адреса, выполнив те же действия.
 
-![Обновление конфигурации DNS виртуальной сети](./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-vnet-configuration.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-vnet-configuration.png" alt-text="Обновление конфигурации DNS виртуальной сети" border="true":::
 
 Проще разместить экземпляр Azure AD DS и кластер HDInsight в одной и той же виртуальной сети Azure. Если вы планируете использовать разные виртуальные сети, необходимо выполнить одноранговую связь между виртуальными сетями, чтобы контроллер домена был виден виртуальным машинам HDInsight. Дополнительные сведения см. в статье [Пиринг между виртуальными сетями](../../virtual-network/virtual-network-peering-overview.md).
 
 После пиринга виртуальных сетей настройте виртуальную сеть HDInsight для использования настраиваемого DNS-сервера. И введите частные IP-адреса AD DS Azure в качестве адресов серверов DNS. Если обе виртуальные сети используют одни и те же DNS-серверы, имя личного домена будет разрешаться в правильный IP-адрес и будет доступен из HDInsight. Например, если доменное имя — `contoso.com` , то после выполнения этого шага `ping contoso.com` следует разрешить доступ к правильному IP-адресу Azure AD DS.
 
-![Настройка пользовательских DNS-серверов для одноранговой виртуальной сети](./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-peered-vnet-configuration.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/hdinsight-aadds-peered-vnet-configuration.png" alt-text="Настройка пользовательских DNS-серверов для одноранговой виртуальной сети" border="true":::
 
 Если вы используете правила группы безопасности сети (NSG) в подсети HDInsight, необходимо разрешить [необходимые IP-адреса](../hdinsight-management-ip-addresses.md) для входящего и исходящего трафика.
 
@@ -126,11 +126,11 @@ New-SelfSignedCertificate -Subject contoso100.onmicrosoft.com `
 > [!NOTE]  
 > Первые шесть символов имени кластера ESP должно быть уникальными в вашей среде. Например, если в разных виртуальных сетях имеется несколько кластеров ESP, выберите соглашение об именовании, которое гарантирует уникальность первых шести символов в именах кластеров.
 
-![Проверка домена для Корпоративный пакет безопасности Azure HDInsight](./media/apache-domain-joined-configure-using-azure-adds/azure-portal-cluster-security-networking-esp.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/azure-portal-cluster-security-networking-esp.png" alt-text="Проверка домена для Корпоративный пакет безопасности Azure HDInsight" border="true":::
 
 После включения ESP стандартные неправильности конфигурации, связанные с Azure AD DS, автоматически обнаруживаются и проверяются. После устранения этих ошибок можно перейти к следующему шагу.
 
-![Сбой проверки домена Корпоративный пакет безопасности Azure HDInsight](./media/apache-domain-joined-configure-using-azure-adds/azure-portal-cluster-security-networking-esp-error.png)
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/azure-portal-cluster-security-networking-esp-error.png" alt-text="Сбой проверки домена Корпоративный пакет безопасности Azure HDInsight" border="true":::
 
 При создании кластера HDInsight с помощью ESP необходимо указать следующие параметры:
 
@@ -142,7 +142,7 @@ New-SelfSignedCertificate -Subject contoso100.onmicrosoft.com `
 
 Созданное управляемое удостоверение можно выбрать из раскрывающегося списка **управляемое удостоверение, назначаемое пользователем** при создании нового кластера.
 
-![Управляемое удостоверение Azure HDInsight ESP домен Active Directory Services](./media/apache-domain-joined-configure-using-azure-adds/azure-portal-cluster-security-networking-identity.png).
+:::image type="content" source="./media/apache-domain-joined-configure-using-azure-adds/azure-portal-cluster-security-networking-identity.png" alt-text="Управляемое удостоверение Azure HDINSIGHT ESP домен Active Directory Services" border="true":::.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

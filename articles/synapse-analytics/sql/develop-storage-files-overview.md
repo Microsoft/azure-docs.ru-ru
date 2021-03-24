@@ -9,16 +9,16 @@ ms.subservice: sql
 ms.date: 04/19/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
-ms.openlocfilehash: 855765648d68756598f2942e0c994fa939bcbda0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 679df881e928825496a03b2fef7c9374d61593f7
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101695674"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199989"
 ---
 # <a name="access-external-storage-using-serverless-sql-pool-in-azure-synapse-analytics"></a>Доступ к внешнему хранилищу с помощью бессерверного пула SQL в Azure Synapse Analytics
 
-В этом документе описывается, как пользователи могут считывать данные из файлов, хранящихся в службе хранилища Azure в бессерверном пуле SQL. Пользователи могут обращаться к хранилищу с помощью следующих средств:
+В этой статье описывается, как пользователи могут считывать данные из файлов, хранящихся в службе хранилища Azure в бессерверном пуле SQL. Пользователи могут обращаться к хранилищу с помощью следующих средств:
 
 - [OPENROWSET](develop-openrowset.md) — функция, которая позволяет выполнять специальные запросы к файлам в службе хранилища Azure.
 - [Внешняя таблица](develop-tables-external-tables.md) — предопределенная структура данных, созданная на основе набора внешних файлов.

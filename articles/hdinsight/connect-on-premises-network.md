@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 03/04/2020
-ms.openlocfilehash: cd787e1c846bfe4728577cbbce069385ce064a10
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f26813176d4286a052772d2096427231759aacc2
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98943409"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863383"
 ---
 # <a name="connect-hdinsight-to-your-on-premises-network"></a>Подключение HDInsight к локальной сети
 
@@ -37,7 +37,7 @@ ms.locfileid: "98943409"
 
 На следующей схеме зеленые линии — это запросы ресурсов, которые заканчиваются на DNS-суффикс виртуальной сети. Синие линии — это запросы ресурсов в локальной сети или в общедоступном Интернете.
 
-![Схема разрешения DNS-запросов в конфигурации](./media/connect-on-premises-network/on-premises-to-cloud-dns.png)
+:::image type="content" source="./media/connect-on-premises-network/on-premises-to-cloud-dns.png" alt-text="Схема разрешения DNS-запросов в конфигурации" border="false":::
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -64,7 +64,7 @@ ms.locfileid: "98943409"
   
 1. В меню сверху выберите **+ Create a resource** (+ Создать ресурс).
 
-    ![Создание виртуальной машины Ubuntu](./media/connect-on-premises-network/azure-portal-create-resource.png)
+    :::image type="content" source="./media/connect-on-premises-network/azure-portal-create-resource.png" alt-text="Создание виртуальной машины Ubuntu":::
 
 1. Выберите среда **вычислений**  >  **Виртуальная машина** , чтобы открыть страницу **Создание виртуальной машины** .
 
@@ -83,7 +83,7 @@ ms.locfileid: "98943409"
     |Пароль или открытый ключ SSH | Соответствующее поле определяется выбранным **типом проверки подлинности**.  Введите соответствующее значение.|
     |Общедоступные входящие порты|Выберите **Разрешить выбранные порты**. Затем выберите **SSH (22)** в раскрывающемся списке **выберите входящие порты** .|
 
-    ![Базовая конфигурация виртуальной машины](./media/connect-on-premises-network/virtual-machine-basics.png)
+    :::image type="content" source="./media/connect-on-premises-network/virtual-machine-basics.png" alt-text="Базовая конфигурация виртуальной машины":::
 
     Оставьте значения других параметров по умолчанию и откройте вкладку **Сеть**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "98943409"
     |Подсеть | Выберите подсеть по умолчанию для созданной ранее виртуальной сети. __Не выбирайте__ подсеть, используемую VPN-шлюзом.|
     |Общедоступный IP-адрес | Используйте значение, предоставленное автоматически.  |
 
-    ![Параметры виртуальной сети HDInsight](./media/connect-on-premises-network/virtual-network-settings.png)
+    :::image type="content" source="./media/connect-on-premises-network/virtual-network-settings.png" alt-text="Параметры виртуальной сети HDInsight":::
 
     Оставьте значения других параметров по умолчанию и откройте вкладку **Проверить и создать**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "98943409"
 
 2. Запишите значения **ОБЩЕДОСТУПНЫЙ IP-АДРЕС/ИМЯ DNS** и **ЧАСТНЫЙ IP-АДРЕС**. Они вам еще пригодятся.
 
-   ![Общедоступные и частные IP-адреса](./media/connect-on-premises-network/virtual-machine-ip-addresses.png)
+   :::image type="content" source="./media/connect-on-premises-network/virtual-machine-ip-addresses.png" alt-text="Общедоступные и частные IP-адреса":::
 
 ### <a name="install-and-configure-bind-dns-software"></a>Установка и настройка Bind (программное обеспечение DNS)
 
@@ -245,7 +245,7 @@ ms.locfileid: "98943409"
 
 5. Щелкните __Сохранить__.  <br />  
 
-    ![Задание пользовательского DNS-сервера для сети](./media/connect-on-premises-network/configure-custom-dns.png)
+    :::image type="content" source="./media/connect-on-premises-network/configure-custom-dns.png" alt-text="Задание пользовательского DNS-сервера для сети":::
 
 ## <a name="configure-on-premises-dns-server"></a>Настройка локального DNS-сервера
 

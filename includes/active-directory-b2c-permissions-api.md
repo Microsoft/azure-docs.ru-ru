@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 04/04/2020
 ms.author: mimart
 ms.openlocfilehash: c1628894205754c1b8f1fc954796009afbdc8ed4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/23/2021
 ms.locfileid: "95994331"
 ---
 #### <a name="app-registrations"></a>[Регистрация приложений](#tab/app-reg-ga/) 

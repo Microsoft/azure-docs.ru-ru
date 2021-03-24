@@ -7,12 +7,12 @@ ms.author: crtreasu
 ms.date: 02/22/2021
 ms.topic: quickstart
 ms.service: azure-object-anchors
-ms.openlocfilehash: 93443a321f22d232f8b2bfa6a0fe5a05a5e18175
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 69d23b9d02eb176a2e42985ef5c3673e83d9bb7e
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747954"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607906"
 ---
 # <a name="quickstart-create-an-object-anchors-model-from-a-3d-model"></a>Краткое руководство. Создание модели Объектных привязок из трехмерной модели
 
@@ -102,7 +102,7 @@ ms.locfileid: "101747954"
 
     | Поле                    | Описание                       |
     | ---                      | ---                               |
-    | InputAssetPath           | Абсолютный путь к трехмерной модели на локальном компьютере (вы можете использовать образец модели в папке `assets/models`). Поддерживаемые форматы файлов: `fbx`, `ply`, `obj`, `glb` и `gltf`. |
+    | InputAssetPath           | Абсолютный путь к трехмерной модели на локальном компьютере. Поддерживаемые форматы файлов: `fbx`, `ply`, `obj`, `glb` и `gltf`. |
     | AssetDimensionUnit       | Единица измерения для трехмерной модели. Доступ ко всем поддерживаемым единицам измерения можно получить с помощью перечисления `Azure.MixedReality.ObjectAnchors.Conversion.AssetLengthUnit`. |
     | Сила тяготения                  | Направление вектора силы тяжести трехмерной модели. Этот трехмерный вектор задает направление вниз в системе координат модели. Например, если отрицательный `y` соответствует направлению вниз в трехмерном пространстве модели, это значение будет равно `Vector3(0.0f, -1.0f, 0.0f)`. |
 

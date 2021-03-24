@@ -11,18 +11,20 @@ author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: nigu
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3ac799203cade3a907acbe28dee3a8023891db2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 119540738ac2703afd79891d9bf8a4a9ff0c7472
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93077648"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952768"
 ---
 # <a name="troubleshoot-using-the-what-if-tool-in-conditional-access"></a>Устранение неполадок с условным доступом с помощью средства What If
 
 [Условный доступ](./overview.md) — это возможность Azure Active Directory (Azure AD), которая позволяет управлять доступом полномочных пользователей к облачным приложениям. Как узнать, что следует рассчитывать на основе политик условного доступа в вашей среде? Чтобы ответить на этот вопрос, можно использовать **средство What If условного доступа**.
 
 В этой статье объясняется, как можно использовать это средство для проверки политик условного доступа.
+
+> [!VIDEO https://www.youtube.com/embed/M_iQVM-3C3E]
 
 ## <a name="what-it-is"></a>Назначение элемента
 
@@ -52,7 +54,7 @@ ms.locfileid: "93077648"
 
 Прежде чем можно будет выполнить оценку, необходимо настроить параметры.
 
-## <a name="settings"></a>Параметры
+## <a name="settings"></a>Настройки
 
 В этом разделе приводятся сведения о параметрах имитации.
 

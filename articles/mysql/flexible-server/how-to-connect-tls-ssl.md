@@ -6,14 +6,14 @@ ms.author: ambhatna
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 09/21/2020
-ms.openlocfilehash: 24a8dd4d21cb6ab6edeb985db4e6e6a1349a758d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2e66b27f7f0c731e17bb9811e2376bbe09c1bc12
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "90940487"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950150"
 ---
-# <a name="encrypted-connectivity-using-transport-layer-security-tls-12-in-azure-database-for-mysql---flexible-server"></a>Зашифрованное подключение с использованием протокола TLS 1,2 в базе данных Azure для MySQL — гибкий сервер
+# <a name="connect-to-azure-database-for-mysql---flexible-server-over-tls12ssl"></a>Подключение к базе данных Azure для MySQL — гибкому серверу через TLS 1.2/SSL
 
 > [!IMPORTANT]
 > Сейчас предоставляется общедоступная предварительная версия Гибкого сервера Базы данных Azure для MySQL.
@@ -22,8 +22,10 @@ ms.locfileid: "90940487"
 
 Сервер базы данных Azure для MySQL поддерживает только зашифрованные подключения с использованием протокола TLS 1,2, а все входящие подключения с TLS 1,0 и TLS 1,1 будут отклонены. Для всех гибких серверов принудительное применение TLS-подключений включено, и вы не можете отключить TLS/SSL для подключения к гибкому серверу.
 
-## <a name="applications-that-require-certificate-verification-for-tlsssl-connectivity"></a>Приложения, для которых требуется проверка сертификата для подключения TLS/SSL
-В некоторых случаях для безопасного подключения приложениям требуется локальный файл сертификата, созданный из файла сертификата доверенного центра сертификации (ЦС). В базе данных Azure для гибкого сервера MySQL используется *глобальный корневой ЦС DigiCert*. Скачайте этот сертификат, необходимый для взаимодействия по протоколу SSL от [глобального корневого центра сертификации DigiCert](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) и сохранения файла сертификата в предпочтительном расположении. Например, в этом учебнике используется `c:\ssl`.
+## <a name="download-the-public-ssl-certificate"></a>Скачивание общедоступного SSL-сертификата
+Чтобы использовать апплиатионс, скачайте [общедоступный SSL-сертификат](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem).
+
+Сохраните файл сертификата в предпочтительном расположении. Например, в этом руководстве используется `c:\ssl` или `\var\www\html\bin` в локальной среде или клиентской среде, в которой размещается приложение. Это позволит приложениям безопасно подключаться к базе данных по протоколу SSL. 
 
 ### <a name="connect-using-mysql-command-line-client-with-tlsssl"></a>Подключение с помощью клиента командной строки MySQL с TLS/SSL
 
@@ -58,6 +60,16 @@ mysql> status
 Строки подключения, предварительно определенные на странице "строки подключения", доступной для сервера в портал Azure включают необходимые параметры для общих языков для подключения к серверу базы данных с помощью TLS/SSL. Параметр TLS/SSL зависит от соединителя. Например, "useSSL = true", "sslmode = Required" или "ssl_verify_cert = true" и другие варианты.
 
 Чтобы установить зашифрованное подключение к гибкому серверу через TLS/SSL из приложения, ознакомьтесь со следующими примерами кода:
+
+### <a name="wordpress"></a>WordPress
+Скачайте [общедоступный сертификат SSL](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) и добавьте следующие строки в файл WP-config. php после строки ```// ** MySQL settings - You can get this info from your web host ** //``` .
+
+```php
+//** Connect with SSL** //
+define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+//** SSL CERT **//
+define('MYSQL_SSL_CERT','/FULLPATH/on-client/to/DigiCertGlobalRootCA.crt.pem');
+```
 
 ### <a name="php"></a>PHP
 

@@ -2,16 +2,16 @@
 title: Учебник. Добавление тегов к ресурсам в Bicep-файле Azure Resource Manager
 description: Сведения о том, как добавить теги к ресурсам в Bicep-файле. Теги позволяют логически упорядочивать ресурсы.
 author: mumian
-ms.date: 03/01/2021
+ms.date: 03/10/2021
 ms.topic: tutorial
 ms.author: jgao
 ms.custom: ''
-ms.openlocfilehash: 05bb68609705ac4c13ad77d2c74db7c105ba23fb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ea5e078eb692d002b3f86cd43663dd042d692611
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742927"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102632619"
 ---
 # <a name="tutorial-add-tags-in-azure-resource-manager-bicep-files"></a>Учебник. Добавление тегов в Bicep-файлы Azure Resource Manager
 

@@ -14,16 +14,25 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 12/14/2020
 ms.author: phjensen
-ms.openlocfilehash: b168167ce4f44d87c396746cca3f271f95f83163
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 4ba679459686340396e0e4d65344295c0fa9c4be
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97632826"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869962"
 ---
 # <a name="what-is-azure-application-consistent-snapshot-tool-preview"></a>Что такое средство создания моментальных снимков с единообразием приложений Azure (Предварительная версия)
 
-Средство создания моментальных снимков с единообразием приложений Azure (Азакснап) — это программа командной строки, которая позволяет упростить защиту данных для сторонних баз данных (SAP HANA) в средах Linux (например, SUSE и RHEL).  
+Средство создания моментальных снимков с согласованием приложений Azure (Азакснап) — это программа командной строки, которая обеспечивает защиту данных от сторонних баз данных за счет обработки всего оркестрации, необходимого для перевода их в согласованное состояние приложения перед созданием моментального снимка хранилища, после чего он возвращает их в операционное состояние.
+
+## <a name="supported-platforms-and-os"></a>Поддерживаемые платформы и ОС
+
+- **Базы данных**
+  - SAP HANA (Дополнительные сведения см. в [матрице поддержки](azacsnap-get-started.md#snapshot-support-matrix-from-sap) )
+
+- **Операционные системы**
+  - SUSE Linux Enterprise Server 12 +
+  - Red Hat Enterprise Linux 7+
 
 ## <a name="benefits-of-using-azacsnap"></a>Преимущества использования Азакснап
 

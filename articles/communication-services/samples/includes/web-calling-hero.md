@@ -6,16 +6,16 @@ author: mikben
 manager: mikben
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 9/1/2020
+ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: d3586e03a3c6214390f4a8b72b1db5871d2d1900
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: f3da6fd75ac485a3e22a428934928795f1feae28
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102511045"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "103487951"
 ---
 [!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
 
@@ -101,7 +101,7 @@ ms.locfileid: "102511045"
 
 ### <a name="additional-reading"></a>Дополнительные материалы
 
-- [Службы коммуникации Azure (GitHub)](https://github.com/Azure/communication) — дополнительные примеры и сведения на официальной странице GitHub
+- [Примеры](./../overview.md): дополнительные примеры см. на нашей странице обзора примеров.
 - [Redux](https://redux.js.org/) — управление состоянием на стороне клиента
 - [FluentUI](https://aka.ms/fluent-ui) — библиотека пользовательского интерфейса, поддерживаемая корпорацией Майкрософт
 - [React](https://reactjs.org/) — библиотека для создания пользовательских интерфейсов

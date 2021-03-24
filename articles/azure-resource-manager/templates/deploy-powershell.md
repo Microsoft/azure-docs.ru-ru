@@ -3,12 +3,12 @@ title: Развертывание ресурсов с помощью PowerShell 
 description: Используйте Azure Resource Manager и Azure PowerShell для развертывания ресурсов в Azure. Ресурсы определяются в шаблоне диспетчер ресурсов или в файле Бицеп.
 ms.topic: conceptual
 ms.date: 03/04/2021
-ms.openlocfilehash: 784f17566ce4fb19a7ec5e3fd4a504d7c25f90fe
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: e1d2197064b94d428855bbb36aadbb5eb88d4032
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521634"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950864"
 ---
 # <a name="deploy-resources-with-arm-templates-and-azure-powershell"></a>Развертывание ресурсов с помощью шаблонов ARM и Azure PowerShell
 
@@ -115,7 +115,7 @@ New-AzResourceGroupDeployment `
 ## <a name="deploy-remote-template"></a>Развертывание удаленного шаблона
 
 > [!NOTE]
-> В настоящее время Azure PowerShell не поддерживает развертывание удаленных файлов Бицеп. Чтобы развернуть удаленный файл Бицеп, используйте интерфейс командной строки Бицеп, чтобы сначала скомпилировать файл Бицеп в шаблон JSON.
+> В настоящее время Azure PowerShell не поддерживает развертывание удаленных файлов Бицеп. Используйте [БИЦЕП CLI](./bicep-install.md#development-environment) для компиляции файла бицеп в шаблон JSON, а затем загрузите JSON-файл в удаленное расположение.
 
 Вместо того чтобы хранить шаблоны ARM на локальном компьютере, вы можете хранить их во внешнем расположении. Вы можете хранить шаблоны в репозитории системы управления версиями (например, GitHub). А также их можно хранить в учетной записи хранения Azure для общего доступа в организации.
 

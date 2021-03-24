@@ -14,12 +14,12 @@ ms.topic: article
 ms.date: 02/18/2021
 ms.author: wieastbu
 ms.custom: fasttrack-new, fasttrack-update, devx-track-js
-ms.openlocfilehash: 812b54d10ea3cc3c405f534e36ac66abf3466808
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: baa6a0a6995e206924d14de25b98700e450f3a0c
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102449294"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954927"
 ---
 # <a name="protect-spa-backend-with-oauth-20-azure-active-directory-b2c-and-azure-api-management"></a>Защита серверной части SPA с помощью OAuth 2,0, Azure Active Directory B2C и Azure API Management
 
@@ -193,7 +193,7 @@ ms.locfileid: "102449294"
 1. Вставьте известную конечную точку конфигурации Open-ID из политики регистрации и входа в поле URL-адрес издателя (ранее мы записали эту конфигурацию).
 1. Щелкните "отобразить секрет" и вставьте секрет клиента внутреннего приложения в соответствующее поле.
 1. Нажмите кнопку ОК, чтобы вернуться к колонке или экрану выбора поставщика удостоверений.
-1. В разделе Дополнительные параметры оставьте [хранилище токенов](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization#token-store) включено (по умолчанию).
+1. В разделе Дополнительные параметры оставьте [хранилище токенов](../app-service/overview-authentication-authorization.md#token-store) включено (по умолчанию).
 1. Нажмите кнопку Save (сохранить) (в верхней левой части колонки).
 
    > [!IMPORTANT]

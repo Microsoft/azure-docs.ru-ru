@@ -10,12 +10,12 @@ services: iot-central
 ms.custom:
 - mvc
 - device-developer
-ms.openlocfilehash: f69bbecfc2acc24cd63b87212197342b28723a9f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 4423eea6c35ad44d55ad17f5703a95c6273422b8
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102043105"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104585865"
 ---
 # <a name="iot-central-device-development-guide"></a>Руководство по разработке для устройств для IoT Central
 
@@ -105,7 +105,7 @@ DPS позволяет следующее:
 - Безкомпонентная модель Это простая модель, в которой не используются внедренные или каскадные компоненты. Все данные телеметрии, свойства и команды определяются по одному _компоненту по умолчанию_. Пример см. в модели [термостата](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/samples/Thermostat.json).
 - Многокомпонентная модель. Более сложная модель, содержащая два или более компонентов. Среди этих компонентов — один компонент по умолчанию и один или несколько дополнительных вложенных компонентов. Пример см. в модели [контроллера температуры](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/samples/TemperatureController.json).
 
-Дополнительные сведения см. в разделе [Компоненты IoT Plug and Play в моделях](../../iot-pnp/concepts-components.md).
+Дополнительные сведения см. в статье [Руководство по созданию моделей IoT Plug and Play](../../iot-pnp/concepts-modeling-guide.md).
 
 ### <a name="conventions"></a>Соглашения
 

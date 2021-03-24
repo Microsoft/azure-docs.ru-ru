@@ -2,20 +2,20 @@
 title: включить файл
 description: включить файл
 services: azure-communication-services
-author: danieldoolabh
-manager: nimag
+author: lakshmans
+manager: ankita
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 09/03/2020
+ms.date: 03/11/2021
 ms.topic: include
 ms.custom: include file
-ms.author: dadoolab
-ms.openlocfilehash: a24d9531b7b2d2d2f31eec275da7db7e48b9c74a
-ms.sourcegitcommit: 4c89d9ea4b834d1963c4818a965eaaaa288194eb
+ms.author: lakshmans
+ms.openlocfilehash: e8424f6b5b7617b00de6dedbece3325f3c5513c8
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615865"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103622087"
 ---
 Начало работы со Службами коммуникации Azure с помощью клиентской библиотеки SMS Служб коммуникации Azure для Python для отправки SMS-сообщений.
 
@@ -51,8 +51,6 @@ mkdir sms-quickstart && cd sms-quickstart
 
 ```python
 import os
-from azure.communication.sms import PhoneNumber
-from azure.communication.sms import SendSmsOptions
 from azure.communication.sms import SmsClient
 
 try:
@@ -76,8 +74,8 @@ pip install azure-communication-sms --pre
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
-| SmsClient | Этот класс требуется для реализации всех функций обмена текстовыми сообщениями. Его экземпляр можно создать на основе сведений о подписке и использовать для отправки SMS. |
-| SendSmsOptions | Этот класс предоставляет параметры для настройки отчетов о доставке. Если enable_delivery_report имеет значение True, при успешной доставке будет создано событие. |
+| SmsClient | Этот класс требуется для реализации всех функций обмена текстовыми сообщениями. Его экземпляр можно создать на основе сведений о подписке и использовать для отправки SMS.                                                                                                                 |
+| SmsSendResult               | Этот класс содержит результат, полученный от службы SMS.                                          |
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
 
@@ -92,24 +90,47 @@ connection_string = os.getenv('COMMUNICATION_SERVICES_CONNECTION_STRING')
 sms_client = SmsClient.from_connection_string(connection_string)
 ```
 
-## <a name="send-an-sms-message"></a>Отправка SMS-сообщения
+## <a name="send-a-11-sms-message"></a>Отправка личного текстового сообщения
 
-Отправьте SMS-сообщение, вызвав метод Send. Добавьте следующий код в конец блока `try` в **send-sms.py**:
+Чтобы отправить текстовое сообщение одному получателю, вызовите метод ```send``` из **SmsClient** с номером телефона этого получателя. Кроме того, вы можете передать необязательные параметры для указания того, должен ли быть включен отчет о доставке, а также задать пользовательские теги. Добавьте следующий код в конец блока `try` в **send-sms.py**:
 
 ```python
 
 # calling send() with sms values
-sms_response = sms_client.send(
-        from_phone_number=PhoneNumber("<leased-phone-number>"),
-        to_phone_numbers=[PhoneNumber("<to-phone-number>")],
-        message="Hello World via SMS",
-        send_sms_options=SendSmsOptions(enable_delivery_report=True)) # optional property
+sms_responses = sms_client.send(
+    from_="<from-phone-number>",
+    to="<to-phone-number>,
+    message="Hello World via SMS",
+    enable_delivery_report=True, # optional property
+    tag="custom-tag") # optional property
 
 ```
 
-Необходимо изменить `<leased-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, и `<to-phone-number>` на номер телефона, на который вы хотите отправить сообщение. 
+Необходимо изменить `<from-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, и `<to-phone-number>` на номер телефона, на который вы хотите отправить сообщение. 
 
-Параметр `send_sms_options` является необязательным. Его можно использовать для настройки отчетов о доставке. Это полезно, если вы хотите, чтобы при доставке SMS-сообщений создавались события. Сведения о настройке отчетов о доставке SMS-сообщений см. в кратком руководстве [Обработка событий SMS-сообщений](../handle-sms-events.md).
+## <a name="send-a-1n-sms-message"></a>Отправка группового текстового сообщения
+
+Чтобы отправить текстовое сообщение списку получателей, вызовите метод ```send``` из **SmsClient** со списком номеров телефонов получателей. Кроме того, вы можете передать необязательные параметры для указания того, должен ли быть включен отчет о доставке, а также задать пользовательские теги. Добавьте следующий код в конец блока `try` в **send-sms.py**:
+
+```python
+
+# calling send() with sms values
+sms_responses = sms_client.send(
+    from_="<from-phone-number>",
+    to=["<to-phone-number-1>", "<to-phone-number-2>"],
+    message="Hello World via SMS",
+    enable_delivery_report=True, # optional property
+    tag="custom-tag") # optional property
+
+```
+
+Необходимо изменить `<from-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, а также `<to-phone-number-1>` и `<to-phone-number-2>` на номера телефона, на которые вы хотите отправить сообщение. 
+
+## <a name="optional-parameters"></a>Необязательные параметры
+
+Параметр `enable_delivery_report` является необязательным. Его можно использовать для настройки отчетов о доставке. Это полезно, если вы хотите, чтобы при доставке SMS-сообщений создавались события. Сведения о настройке отчетов о доставке SMS-сообщений см. в кратком руководстве [Обработка событий SMS-сообщений](../handle-sms-events.md).
+
+Параметр `tag` является необязательным. Его можно использовать для настройки пользовательских тегов.
 
 ## <a name="run-the-code"></a>Выполнение кода
 

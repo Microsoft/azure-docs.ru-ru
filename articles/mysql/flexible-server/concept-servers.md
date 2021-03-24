@@ -6,12 +6,12 @@ ms.author: sumuth
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 09/21/2020
-ms.openlocfilehash: b664dd406a1ab90b4ea5e85005a69935f345c609
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a7978410dbe28a5da5dae81cb380d118fe13a159
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102034665"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869384"
 ---
 # <a name="server-concepts-in-azure-database-for-mysql-flexible-server-preview"></a>Основные понятия сервера в базе данных Azure для гибкого сервера MySQL (Предварительная версия)
 
@@ -55,7 +55,14 @@ ms.locfileid: "102034665"
 
 ## <a name="how-do-i-manage-a-server"></a>Как управлять сервером?
 
-Вы можете управлять базой данных Azure для гибкого сервера MySQL с помощью [портал Azure](./quickstart-create-server-portal.md) или [Azure CLI](./quickstart-create-server-cli.md).
+Вы можете управлять созданием, удалением, конфигурацией параметров сервера (My. cnf), масштабированием, сетью, безопасностью, высокой доступностью, резервным копированием & восстановлением, мониторингом базы данных Azure для гибкого сервера MySQL с помощью [портал Azure](./quickstart-create-server-portal.md) или [Azure CLI](./quickstart-create-server-cli.md). Кроме того, в службе "база данных Azure для MySQL" доступны следующие хранимые процедуры для выполнения определенных задач администрирования базы данных, которые требуются в том случае, если на сервере не поддерживается привилегия СУПЕРПОЛЬЗОВАТЕЛЯ.
+
+|**Имя хранимой процедуры**|**Входные параметры**|**Выходные параметры**|**Примечание об использовании**|
+|-----|-----|-----|-----|
+|*mysql.az_kill*|processlist_id|Недоступно|Эквивалентно [`KILL CONNECTION`](https://dev.mysql.com/doc/refman/8.0/en/kill.html) команде. Будет завершать подключение, связанное с указанным processlist_id после завершения любой инструкции, когда соединение выполняется.|
+|*mysql.az_kill_query*|processlist_id|Недоступно|Эквивалентно [`KILL QUERY`](https://dev.mysql.com/doc/refman/8.0/en/kill.html) команде. Прекратит выполнение инструкции, в которой выполняется подключение. Оставляет подключение активным.|
+|*mysql.az_load_timezone*|Недоступно|Недоступно|Загружает [таблицы часовых поясов](../howto-server-parameters.md#working-with-the-time-zone-parameter) , чтобы разрешить `time_zone` Присвоение параметру именованных значений (например, "США/тихоокеанское").|
+
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

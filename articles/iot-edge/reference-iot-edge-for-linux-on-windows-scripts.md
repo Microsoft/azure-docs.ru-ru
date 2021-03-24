@@ -9,12 +9,12 @@ ms.topic: reference
 ms.service: iot-edge
 services: iot-edge
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: fe04615e234eaf5b006a80e6f584905626c637ba
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 0b49cf4fe28e2a9b4d15f889d227b443777b1efa
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103489491"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889252"
 ---
 # <a name="powershell-scripts-for-iot-edge-for-linux-on-windows"></a>Сценарии PowerShell для IoT Edge для Linux в Windows
 
@@ -140,13 +140,13 @@ ms.locfileid: "103489491"
 
 ## <a name="ssh-eflowvm"></a>Ssh-EflowVm
 
-Команда **SSH-ефловвм** используется для подключения к виртуальной машине по протоколу SSH. Для получения дополнительных сведений используйте команду `Get-Help Ssh-EflowVm -full` .
+Команда **SSH-ефловвм** используется для подключения к виртуальной машине по протоколу SSH. Единственной учетной записью, разрешенной для подключения по протоколу SSH к виртуальной машине, является пользователь, создавший ее. Для получения дополнительных сведений используйте команду `Get-Help Ssh-EflowVm -full` .
 
 | Параметр | Допустимые значения | Комментарии |
 | --------- | --------------- | -------- |
 | вмусер | Не более 30 символов | Имя пользователя для входа на виртуальную машину. |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения об использовании этих команд см. в следующей статье:
 

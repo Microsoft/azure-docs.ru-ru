@@ -5,15 +5,15 @@ author: chpalm
 manager: anvalent
 services: azure-communication-services
 ms.author: chpalm
-ms.date: 10/03/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 6fbc20ec7145a474d9f3aada153f2d012aba34f8
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 933b5605cf38be90d419673a94e23e4c36f0ef36
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102561353"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103495714"
 ---
 # <a name="region-availability-and-data-residency"></a>Доступность в регионах и место расположения данных
 
@@ -51,12 +51,14 @@ ms.locfileid: "102561353"
 
 ### <a name="telephone-number-management"></a>Управление телефонными номерами
 
-Службы коммуникации Azure поддерживают каталог номеров телефонов, связанных с ресурсом Служб коммуникации. Используйте эти API, чтобы получать и удалять телефонные номера:
+Службы коммуникации Azure поддерживают каталог номеров телефонов, связанных с ресурсом Служб коммуникации. Используйте [интерфейсы API администрирования номеров телефонов](/rest/api/communication/phonenumberadministration), чтобы получать и удалять эти номера:
+
+- `Get All Phone Numbers`
 - `Release Phone Number`
 
 ### <a name="chat"></a>Чат
 
-Потоки чата и сообщений сохраняются, пока их не удалят явным образом. Полностью бездействующий поток будет автоматически удален через 30 дней. Используйте [API чата](/rest/api/communication/chat/deletechatmessage/deletechatmessage), чтобы получать, перечислять, обновлять и удалять сообщения.
+Потоки чата и сообщений сохраняются, пока их не удалят явным образом. Полностью бездействующий поток будет автоматически удален через 30 дней. Используйте [API чата](/rest/api/communication/chat/chatthread), чтобы получать, перечислять, обновлять и удалять сообщения.
 
 - `Get Thread`
 - `Get Message`

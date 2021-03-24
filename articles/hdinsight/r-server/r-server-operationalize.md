@@ -5,18 +5,18 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 06/27/2018
-ms.openlocfilehash: c90642e58c026c78ce854e7fe74dd36963d48b67
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7d597c4dbb81562050e9523c61d47d0020fc9059
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944003"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869483"
 ---
 # <a name="operationalize-ml-services-cluster-on-azure-hdinsight"></a>Ввод в эксплуатацию кластера служб машинного обучения в Azure HDInsight
 
 После того как вы выполните моделирование данных на кластере служб машинного обучения в HDInsight, полученную модель можно ввести в эксплуатацию для предоставления прогнозов. В этой статье описано выполнение этой задачи.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Кластер служб машинного обучения в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Службы машинного обучения ML Services** для параметра **Тип кластера**.
 
@@ -53,31 +53,31 @@ ms.locfileid: "98944003"
 
 1. У вас есть несколько вариантов на выбор. Выберите первый вариант, как показано на следующем снимке экрана, чтобы **настроить ML Server для ввода в эксплуатацию**.
 
-    ![Программа администрирования R Server, выбор](./media/r-server-operationalize/admin-util-one-box-1.png)
+    :::image type="content" source="./media/r-server-operationalize/admin-util-one-box-1.png" alt-text="Программа администрирования R Server, выбор" border="true":::
 
 1. Теперь вам предлагаются доступные методы для ввода в эксплуатацию ML Server. Выберите первый из представленных вариантов, введя символ **A**.
 
-    ![Эксплуатацию служебной программы администрирования R Server](./media/r-server-operationalize/admin-util-one-box-2.png)
+    :::image type="content" source="./media/r-server-operationalize/admin-util-one-box-2.png" alt-text="Эксплуатацию служебной программы администрирования R Server" border="true":::
 
 1. В ответ на соответствующий запрос дважды введите пароль пользователя с правами локального администратора.
 
 1. Выходные данные сообщат, что операция выполнена успешно. Также вам будет предложено еще одно меню для выбора параметров. Выберите E, чтобы вернуться к главному меню.
 
-    ![Программа администрирования R Server успешно выполнена](./media/r-server-operationalize/admin-util-one-box-3.png)
+    :::image type="content" source="./media/r-server-operationalize/admin-util-one-box-3.png" alt-text="Программа администрирования R Server успешно выполнена" border="true":::
 
 1. По желанию вы можете запустить диагностический тест, как показано ниже.
 
     а. В главном меню выберите **6**, чтобы выполнить диагностические тесты.
 
-    ![Диагностическое средство для программы администрирования R Server](./media/r-server-operationalize/hdinsight-diagnostic1.png)
+    :::image type="content" source="./media/r-server-operationalize/hdinsight-diagnostic1.png" alt-text="Диагностическое средство для программы администрирования R Server" border="true":::
 
     b. В меню "диагностические тесты" **выберите.** При появлении запроса введите пароль, указанный для локального пользователя администратора.
 
-    ![Тестирование программы администрирования сервера R Server](./media/r-server-operationalize/hdinsight-diagnostic2.png)
+    :::image type="content" source="./media/r-server-operationalize/hdinsight-diagnostic2.png" alt-text="Тестирование программы администрирования сервера R Server" border="true":::
 
     c. Убедитесь, что выходные данные подтверждают работоспособность системы.
 
-    ![Проход служебной программы администрирования R Server](./media/r-server-operationalize/hdinsight-diagnostic3.png)
+    :::image type="content" source="./media/r-server-operationalize/hdinsight-diagnostic3.png" alt-text="Проход служебной программы администрирования R Server" border="true":::
 
     d. Из предложенного меню выберите вариант **E**, чтобы вернуться к главному меню, а затем введите **8** для выхода из служебной программы администрирования.
 
@@ -154,7 +154,7 @@ remoteLogin(
 
 1. Щелкните **действия**  >  **Выбранные узлы**  >  **узлы**  >  **включить режим обслуживания**. Например, на следующем рисунке для вывода из эксплуатации выбраны узлы wn3 и wn4.  
 
-   ![Включение режима обслуживания Apache Ambari](./media/r-server-operationalize/get-started-operationalization.png)  
+   :::image type="content" source="./media/r-server-operationalize/get-started-operationalization.png" alt-text="Включение режима обслуживания Apache Ambari" border="true":::  
 
 * Выберите   >  **Выбранные** действия размещение  >  **узлов** > щелкните **списание**.
 * Выберите **действия**  >  **Выбранные узлы**  >  **NodeManagers** > щелкните **списать**.

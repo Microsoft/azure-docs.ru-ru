@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство. Начало работы с Visual Studio Code
+title: Краткое руководство. Начало работы с Когнитивным поиском Azure с помощью Visual Studio Code
 titleSuffix: Azure Cognitive Search
 description: Сведения о том, как установить и использовать расширение Visual Studio Code для Когнитивного поиска Azure.
 author: dereklegenzoff
@@ -7,21 +7,19 @@ manager: luisca
 ms.author: delegenz
 ms.service: cognitive-search
 ms.topic: quickstart
-ms.date: 01/12/2021
-ms.openlocfilehash: 7a613dd6cba55831b02a60f833088b6c34bfc4a7
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.date: 03/10/2021
+ms.openlocfilehash: 3237a32a90e3964644ff84958a065656cdf7f3ab
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98122697"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015851"
 ---
-# <a name="get-started-with-visual-studio-code-and-azure-cognitive-search"></a>Начало работы с Visual Studio Code и Когнитивным поиском Azure
+# <a name="get-started-with-azure-cognitive-search-using-visual-studio-code"></a>Начало работы с Когнитивным поиском Azure с помощью Visual Studio Code
 
-В этой статье объясняется, как формулировать запросы REST API в интерактивном режиме, используя [интерфейсы REST API Когнитивного поиска Azure](/rest/api/searchservice) и клиент API для отправки и получения запросов. Используя клиент и API и следуя этим инструкциям, вы сможете отправлять запросы и просматривать ответы без написания кода.
+В этой статье объясняется, как формулировать запросы REST API в интерактивном режиме, используя [REST API Когнитивного поиска Azure](/rest/api/searchservice) и [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecognitivesearch). С помощью [расширения Visual Studio Code для Когнитивного Поиска Azure (предварительная версия)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecognitivesearch) и этих инструкций можно отправлять запросы и просматривать ответы перед написанием кода.
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
-
-В этой статье расширение Visual Studio Code (предварительная версия) применяется для работы с REST API Когнитивного поиска Azure.
 
 > [!IMPORTANT] 
 > Эта функция сейчас доступна в виде общедоступной предварительной версии. Для предварительной версии функции соглашение об уровне обслуживания не предусмотрено. Мы не рекомендуем использовать ее в рабочей среде. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). 
@@ -35,18 +33,6 @@ ms.locfileid: "98122697"
 + [Когнитивный поиск Azure для Visual Studio Code (предварительная версия)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecognitivesearch)
 
 + [Создайте службу "Когнитивный поиск Azure"](search-create-service-portal.md) или [найдите имеющуюся службу](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Search%2FsearchServices) в рамках текущей подписки. Вы можете использовать бесплатную службу для выполнения инструкций, описанных в этом кратком руководстве. 
-
-## <a name="copy-a-key-and-url"></a>Копирование ключа и URL-адреса
-
-Вызовам REST требуется URL-адрес службы и ключ доступа при каждом запросе. Служба поиска создана с обоими элементами, поэтому если вы добавили службу "Когнитивный поиск Azure" в подписку, выполните следующие действия для получения необходимых сведений:
-
-1. [Войдите на портал Azure](https://portal.azure.com/) и на странице **обзора** службы поиска получите URL-адрес. Пример конечной точки может выглядеть так: `https://mydemo.search.windows.net`.
-
-1. В разделе **Параметры** > **Ключи** получите ключ администратора, чтобы обрести полные права на службу. Существуют два взаимозаменяемых ключа администратора, предназначенных для обеспечения непрерывности бизнес-процессов на случай, если вам потребуется сменить один из них. Вы можете использовать первичный или вторичный ключ для выполнения запросов на добавление, изменение и удаление объектов.
-
-![Получение конечной точки HTTP и ключа доступа](media/search-get-started-rest/get-url-key.png "Получение конечной точки HTTP и ключа доступа")
-
-Для выполнения любого запроса к службе требуется использование ключа API. Если есть действительный ключ, для каждого запроса устанавливаются отношения доверия между приложением, которое отправляет запрос, и службой, которая его обрабатывает.
 
 ## <a name="install-the-extension"></a>Установка расширения
 

@@ -12,16 +12,18 @@ ms.custom:
 - mvc
 - mqtt
 - devx-track-java
-ms.openlocfilehash: cbe4942b63389faab00861438a0149b68c0e89c0
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 3f24f38db7704557894d866b789890763f9e1316
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177314"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463261"
 ---
-# <a name="tutorial-develop-a-java-iot-edge-module-for-linux-devices"></a>Руководство по Разработка модуля IoT Edge на языке Java для устройств Linux
+# <a name="tutorial-develop-a-java-iot-edge-module-using-linux-containers"></a>Учебник. Разработка модуля IoT Edge на Java с использованием контейнеров Linux
 
-Вы можете использовать модули Azure IoT Edge для развертывания кода, который реализует бизнес-логику непосредственно на устройствах IoT Edge. В этом руководстве рассматриваются создание и развертывание модуля IoT Edge, который фильтрует данные датчика. Вы будете использовать имитированное устройство IoT Edge, созданное с помощью процедуры развертывания Azure IoT Edge на имитированном устройстве, описанной в кратком руководстве для [Linux](quickstart-linux.md). В этом руководстве описано следующее:
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
+
+Вы можете использовать модули Azure IoT Edge для развертывания кода, который реализует бизнес-логику непосредственно на устройствах IoT Edge. В этом руководстве рассматриваются создание и развертывание модуля IoT Edge, который фильтрует данные датчика. Вы будете использовать имитированное устройство IoT Edge, созданное с помощью процедур развертывания Azure IoT Edge на имитированном устройстве, описанных в кратких руководствах. В этом руководстве описано следующее:
 
 > [!div class="checklist"]
 >
@@ -36,7 +38,7 @@ ms.locfileid: "102177314"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-В этом руководстве показана разработка модуля на языке **Java** с помощью **Visual Studio Code** и его развертывание на **устройстве Linux**. IoT Edge не поддерживает модули Java для устройств Windows.
+В этом учебнике показано, как разработать модуль на **Java** с помощью **Visual Studio Code** и развернуть его на устройстве IoT Edge. IoT Edge не поддерживает модули Java, собранные в виде контейнеров Windows.
 
 В следующей таблице перечислены возможные варианты для разработки и развертывания модулей Java.
 
@@ -48,12 +50,12 @@ ms.locfileid: "102177314"
 Предполагается, что перед началом работы с этим руководством вы прошли предыдущее, в рамках которого настроили окружение для разработки контейнеров Linux: [Tutorial: Develop IoT Edge modules for Linux devices](tutorial-develop-for-linux.md) (Руководство. Разработка модулей IoT Edge для устройств с Linux). После работы с любым из учебников у вас должны быть готовы все необходимые компоненты:
 
 * [Центр Интернета вещей](../iot-hub/iot-hub-create-through-portal.md) ценовой категории "Бесплатный" или "Стандартный" в Azure.
-* [устройство Linux, на котором выполняется Azure IoT Edge](quickstart-linux.md);
+* Устройство с Azure IoT Edge. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
 * реестр контейнеров, например [Реестр контейнеров Azure](../container-registry/index.yml);
 * средство [Visual Studio Code](https://code.visualstudio.com/), настроенное с помощью [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools);
 * выпуск [Docker CE](https://docs.docker.com/install/), настроенный для выполнения контейнеров Linux.
 
-Для разработки модуля IoT Edge на языке Java установите на компьютере разработки следующие дополнительные компоненты. 
+Для разработки модуля IoT Edge на языке Java установите на компьютере разработки следующие дополнительные компоненты.
 
 * [Пакет расширения Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) для Visual Studio Code.
 * [Пакет SDK для Java SE 11](/azure/developer/java/fundamentals/java-jdk-long-term-support) и [переменная среды `JAVA_HOME`](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/), которая указывает на эту установку JDK.

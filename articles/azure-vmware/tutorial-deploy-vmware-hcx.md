@@ -2,13 +2,13 @@
 title: Учебник по развертыванию и настройке VMware HCX
 description: Узнайте, как развернуть и настроить решение VMware HCX для частного облака Решения Azure VMware.
 ms.topic: tutorial
-ms.date: 11/25/2020
-ms.openlocfilehash: a8b089ce834d5b49e4ad32081a58e371835e8602
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.date: 03/13/2021
+ms.openlocfilehash: d1b0792ab9b9975edf45ab8addb81410e1da4107
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102488311"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462344"
 ---
 # <a name="deploy-and-configure-vmware-hcx"></a>Развертывание и настройка VMware HCX
 
@@ -183,7 +183,7 @@ ms.locfileid: "102488311"
 
 1. В разделе **Infrastructure** (Инфраструктура) выберите **Site Pairing** (Связывание сайтов), а затем в середине экрана щелкните **Connect To Remote Site** (Подключиться к удаленному сайту). 
 
-1. Введите URL-адрес или IP-адрес (`https://x.x.x.9`) диспетчера облака HCX Решения Azure VMware, который вы сохранили ранее, имя пользователя (cloudadmin@vsphere.local) и пароль для Решения Azure VMware. В этом случае выберите **Подключиться**.
+1. Введите URL-адрес или IP-адрес (`https://x.x.x.9`) диспетчера облака HCX Решения Azure VMware, который вы сохранили ранее, имя пользователя (cloudadmin\@vsphere.local) и пароль для Решения Azure VMware. В этом случае выберите **Подключиться**.
 
    > [!NOTE]
    > Условия для успешного связывания сайтов:

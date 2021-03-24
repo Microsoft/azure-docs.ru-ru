@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 10/22/2020
 ms.author: marsma
 ms.custom: aaddev, scenarios:getting-started, languages:js, devx-track-js
-ms.openlocfilehash: 5ca8c41dc1e6a05975227555abd91f5d6725285a
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: d6be9753cbcb2a6be9836b27f82f1b60068570b8
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101092174"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103224985"
 ---
 # <a name="quickstart-sign-in-users-and-get-an-access-token-in-a-node-web-app-using-the-auth-code-flow"></a>Краткое руководство. Вход пользователей и получение маркера доступа в веб-приложении Node с помощью потока кода авторизации
 
@@ -48,6 +48,15 @@ ms.locfileid: "101092174"
 > 1. На странице приложения **Обзор** запишите **идентификатор приложения (клиента)** для использования в будущем.
 > 1. В разделе **Управление** выберите **Сертификаты и секреты** > **Создать секрет клиента**.  Оставьте поле для описания пустым, а параметр срока действия — по умолчанию. Затем выберите **Добавить**.
 > 1. Запишите **значение** параметра **Секрет клиента** для последующего использования.
+
+> [!div class="sxs-lookup" renderon="portal"]
+> #### <a name="step-1-configure-the-application-in-azure-portal"></a>Шаг 1. Настройка приложения на портале Azure
+> Чтобы пример кода из этого краткого руководства заработал, создайте секрет клиента и добавьте URL-адрес ответа как **http://localhost:3000/redirect** .
+> > [!div renderon="portal" id="makechanges" class="nextstepaction"]
+> > [Внести это изменение для меня]()
+>
+> > [!div id="appconfigured" class="alert alert-info"]
+> > ![Уже настроено](media/quickstart-v2-windows-desktop/green-check.png). Ваше приложение настроено с помощью этих атрибутов.
 
 #### <a name="step-2-download-the-project"></a>Шаг 2. Скачивание проекта
 
@@ -91,16 +100,17 @@ ms.locfileid: "101092174"
 > Измените значения в разделе `config`, как описано далее.
 >
 > - `Enter_the_Application_Id_Here` содержит **идентификатор приложения (клиента)** для зарегистрированного приложения.
+>
+>    Чтобы найти значение параметра **Идентификатор приложения (клиента)** , на портале Azure перейдите на страницу **Обзор** регистрации приложения.
 > - `Enter_the_Client_Secret_Here` — это **значение** параметра **Секрет клиента** для зарегистрированного приложения.
+>
+>    Чтобы получить или создать новый **секрет клиента**, в разделе **Управление** выберите **Сертификаты и секреты**.
 >
 > Значение `authority` по умолчанию представляет основное (глобальное) облако Azure:
 >
 > ```javascript
 > authority: "https://login.microsoftonline.com/common",
 > ```
->
-> > [!TIP]
-> > Чтобы найти значение параметра **Идентификатор приложения (клиента)** , на портале Azure перейдите на страницу **Обзор** регистрации приложения. Перейдите в раздел **Сертификаты и секреты**, чтобы получить или создать новый **секрет клиента**.
 >
 > [!div class="sxs-lookup" renderon="portal"]
 > #### <a name="step-3-your-app-is-configured-and-ready-to-run"></a>Шаг 3. Приложение настроено и готово к запуску

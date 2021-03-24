@@ -11,12 +11,12 @@ ms.topic: include
 ms.date: 09/14/2020
 ms.author: dylankil
 ms.custom: devx-track-js
-ms.openlocfilehash: e29aff97d510dfed178e32aa319e5cb51ae9786c
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: fa28d5779c05af615479e3143713badb7842f6c6
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91376811"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102619264"
 ---
 [Иммерсивное средство чтения](https://www.onenote.com/learningtools) — это инклюзивное решение, в котором реализованы проверенные методы, улучшающие понимание текста при чтении у людей, которые учатся читать или изучают язык, а также у людей, которые испытывают определенные трудности при обучении, например, из-за дислексии. Вы можете использовать иммерсивное средство чтения в своих приложениях, чтобы изолировать текст для фокусировки, отображать рисунки, связанные с часто используемыми словами, выделять части речи, читать вслух выделенный текст, переводить слова и фразы в реальном времени и многое другое.
 
@@ -613,4 +613,5 @@ Licensed under the MIT License. -->
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Изучите статью [о пакете SDK для иммерсивного средства чтения](https://github.com/microsoft/immersive-reader-sdk) и [документацию по этому пакету](../../reference.md).
+> [!div class="nextstepaction"]
+> [Создание ресурса и настройка AAD](../../how-to-create-immersive-reader.md)

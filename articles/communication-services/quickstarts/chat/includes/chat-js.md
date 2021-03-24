@@ -6,16 +6,16 @@ author: mikben
 manager: mikben
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 9/1/2020
+ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 18282bbe902599c471775a853704e459ea44bac1
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 9f62f262e1baa70982e667379a9bf4357197ecb4
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661676"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103495476"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
@@ -140,22 +140,22 @@ Azure Communication Chat client created!
 - Используйте `topic` для указания темы этого чата. Тему можно обновить после создания беседы чата с помощью функции `UpdateThread`.
 - Используйте `participants`, чтобы получить список участников, добавляемых в поток чата.
 
-При разрешении метода `createChatThread` возвращается `CreateChatThreadResponse`. Эта модель содержит свойство `chatThread`, в котором можно получить доступ к `id` только что созданного потока. Затем вы можете использовать `id`, чтобы получить экземпляр `ChatThreadClient`. Затем можно использовать `ChatThreadClient` для выполнения операции в потоке, например при отправке сообщений или выводе списка участников.
+При разрешении метода `createChatThread` возвращается `CreateChatThreadResult`. Эта модель содержит свойство `chatThread`, в котором можно получить доступ к `id` только что созданного потока. Затем вы можете использовать `id`, чтобы получить экземпляр `ChatThreadClient`. Затем можно использовать `ChatThreadClient` для выполнения операции в потоке, например при отправке сообщений или выводе списка участников.
 
 ```JavaScript
 async function createChatThread() {
     let createThreadRequest = {
         topic: 'Preparation for London conference',
         participants: [{
-                    user: { communicationUserId: '<USER_ID_FOR_JACK>' },
+                    id: { communicationUserId: '<USER_ID_FOR_JACK>' },
                     displayName: 'Jack'
                 }, {
-                    user: { communicationUserId: '<USER_ID_FOR_GEETA>' },
+                    id: { communicationUserId: '<USER_ID_FOR_GEETA>' },
                     displayName: 'Geeta'
                 }]
     };
-    let createThreadResponse = await chatClient.createChatThread(createThreadRequest);
-    let threadId = createThreadResponse.chatThread.id;
+    let createChatThreadResult = await chatClient.createChatThread(createThreadRequest);
+    let threadId = createChatThreadResult.chatThread.id;
     return threadId;
     }
 
@@ -184,7 +184,7 @@ Thread created: <thread_id>
 Метод `getChatThreadClient` возвращает `chatThreadClient` для потока, который уже существует. Его можно использовать для выполнения операций в созданном потоке: добавления участников, отправки сообщения и т. д. Идентификатор thread_id — это уникальный идентификатор имеющегося потока чата.
 
 ```JavaScript
-let chatThreadClient = await chatClient.getChatThreadClient(threadId);
+let chatThreadClient = chatClient.getChatThreadClient(threadId);
 console.log(`Chat Thread client for threadId:${threadId}`);
 
 ```
@@ -195,35 +195,33 @@ Chat Thread client for threadId: <threadId>
 
 ## <a name="send-a-message-to-a-chat-thread"></a>Отправка сообщения в поток чата
 
-Используйте метод `sendMessage` для отправки сообщения чата в созданный вами поток, идентифицируемый с помощью threadId.
+Используйте метод `sendMessage` для отправки сообщения в поток, определяемый с помощью threadId.
 
-`sendMessageRequest` описывает обязательные поля запроса сообщения чата.
+`sendMessageRequest` используется для описания запроса сообщения:
 
 - Используйте `content`, чтобы указать содержимое сообщения в чате.
 
-`sendMessageOptions` описывает необязательные поля запроса сообщения чата.
+`sendMessageOptions` используется для описания необязательных параметров операции:
 
-- Используйте `priority`, чтобы указать уровень приоритета сообщения чата, например "обычный" или "высокий". Это свойство можно использовать для отображения в приложении индикатора пользовательского интерфейса, чтобы привлечь внимание к сообщению или выполнить пользовательскую бизнес-логику.
 - Используйте `senderDisplayName`, чтобы указать отображаемое имя отправителя.
+- Используйте `type` для определения типа сообщения, например text или html.
 
-Ответ `sendChatMessageResult` содержит уникальный идентификатор сообщения.
+`SendChatMessageResult` — ответ, возвращаемый при отправке сообщения. Содержит идентификатор, который является уникальным идентификатором сообщения.
 
 ```JavaScript
-
 let sendMessageRequest =
 {
     content: 'Hello Geeta! Can you share the deck for the conference?'
 };
 let sendMessageOptions =
 {
-    priority: 'Normal',
-    senderDisplayName : 'Jack'
+    senderDisplayName : 'Jack',
+    type: 'text'
 };
 let sendChatMessageResult = await chatThreadClient.sendMessage(sendMessageRequest, sendMessageOptions);
 let messageId = sendChatMessageResult.id;
-console.log(`Message sent!, message id:${messageId}`);
-
 ```
+
 Добавьте этот код вместо комментария `<SEND MESSAGE TO A CHAT THREAD>` в файл **client.js**, обновите вкладку браузера и проверьте консоль.
 ```console
 Message sent!, message id:<number>
@@ -286,7 +284,7 @@ let nextMessage = await pagedAsyncIterableIterator.next();
 Перед вызовом метода `addParticipants` убедитесь, что вы получили новый маркер доступа и удостоверение для этого пользователя. Пользователю потребуется маркер доступа для инициализации своего клиента чата.
 
 `addParticipantsRequest` описывает объект запроса, а в `participants` приведены участники, добавляемые в поток чата.
-- Свойство `user` (обязательное) — это пользователь, который должен быть добавлен в поток чата.
+- `id` (требуется) — это идентификатор обмена данными, который должен быть добавлен в поток чата.
 - `displayName` (необязательно) — это отображаемое имя для участника потока.
 - `shareHistoryTime` (необязательно) — это время, в течение которого участнику предоставляется доступ к журналу чата. Чтобы предоставить общий доступ к журналу с момента запуска потока чата, установите для этого свойства любую дату, равную или меньше времени создания потока. Чтобы в журнале отображались только записи с момента добавления участника, задайте для свойства текущую дату. Чтобы предоставить общий доступ к части журнала, задайте для него дату по своему усмотрению.
 
@@ -296,7 +294,7 @@ let addParticipantsRequest =
 {
     participants: [
         {
-            user: { communicationUserId: '<NEW_PARTICIPANT_USER_ID>' },
+            id: { communicationUserId: '<NEW_PARTICIPANT_USER_ID>' },
             displayName: 'Jane'
         }
     ]

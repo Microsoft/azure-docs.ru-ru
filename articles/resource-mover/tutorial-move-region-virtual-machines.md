@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 02/04/2021
 ms.author: raynew
 ms.custom: mvc
-ms.openlocfilehash: d1ac17c93bdf95e36f68af678d2ee38b896ef1e7
-ms.sourcegitcommit: 706e7d3eaa27f242312d3d8e3ff072d2ae685956
+ms.openlocfilehash: 5712448c8c5248d3c84ce43f8a41c669355f1d43
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99979748"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565739"
 ---
 # <a name="tutorial-move-azure-vms-across-regions"></a>Руководство по перемещению виртуальных машин Azure между регионами
 
@@ -40,6 +40,7 @@ ms.locfileid: "99979748"
 ## <a name="prerequisites"></a>Предварительные требования
 **Требование** | **Описание**
 --- | ---
+**Поддержка Resource Mover** | [Ознакомьтесь](common-questions.md) с поддерживаемыми регионами и другими распространенными вопросами.
 **Права доступа к подпискам** | Убедитесь, что у вас есть доступ *владельца* в подписке, содержащей ресурсы, которые вы хотите переместить<br/><br/> **Зачем мне нужен доступ владельца?** При первом добавлении ресурса для определенной пары источника и назначения в подписке Azure Resource Mover создает [управляемое удостоверение, назначаемое системой](../active-directory/managed-identities-azure-resources/overview.md#managed-identity-types) (ранее известное как управляемая службой идентификация (MSI)), которая является доверенной для подписки. Чтобы создать удостоверение и назначить ему требуемую роль (участника или администратора доступа пользователя в исходной подписке), учетной записи, используемой для добавления ресурсов, требуются разрешения *владельца* в подписке. [Дополнительные сведения](../role-based-access-control/rbac-and-directory-admin-roles.md#azure-roles) о ролях Azure.
 **Поддержка виртуальных машин** |  Убедитесь, что виртуальные машины, которые требуется переместить, поддерживаются.<br/><br/> - [Убедитесь](support-matrix-move-region-azure-vm.md#windows-vm-support) в наличии поддерживаемых виртуальных машин Windows.<br/><br/> - [Убедитесь](support-matrix-move-region-azure-vm.md#linux-vm-support) в наличии поддерживаемых виртуальных машин Linux и версий ядра.<br/><br/> - Убедитесь, что параметры [вычислений](support-matrix-move-region-azure-vm.md#supported-vm-compute-settings), [хранилища](support-matrix-move-region-azure-vm.md#supported-vm-storage-settings) и [сети](support-matrix-move-region-azure-vm.md#supported-vm-networking-settings) являются поддерживаемыми.
 **Целевая подписка** | Для подписки в целевом регионе требуется достаточный объем квот, чтобы создать ресурсы, перемещаемые в целевой регион. Если квота отсутствует, [запросите дополнительные ресурсы](../azure-resource-manager/management/azure-subscription-service-limits.md).

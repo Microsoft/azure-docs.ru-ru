@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive, devx-track-azurecli
 ms.date: 11/18/2019
-ms.openlocfilehash: e14784459a3c7733af274197507b76341d68477e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d78b629e90903c58b98de86f425f0c1225d90997
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946896"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867055"
 ---
 # <a name="use-apache-spark-structured-streaming-with-apache-kafka-and-azure-cosmos-db"></a>Использование структурированной потоковой передачи Apache Spark с Apache Kafka в Azure Cosmos DB
 
@@ -31,7 +31,7 @@ ms.locfileid: "98946896"
 
 Apache Kafka в HDInsight не предоставляет доступ к брокерам Kafka через общедоступный сегмент Интернета. Все объекты, обращающиеся к Kafka, должны находиться в той же виртуальной сети Azure, что и узлы в кластере Kafka. В этом примере кластеры Kafka и Spark расположены в виртуальной сети Azure. На следующей схеме показано, как взаимодействуют кластеры.
 
-![Схема кластеров Spark и Kafka в виртуальной сети Azure](./media/apache-kafka-spark-structured-streaming-cosmosdb/apache-spark-kafka-vnet.png)
+:::image type="content" source="./media/apache-kafka-spark-structured-streaming-cosmosdb/apache-spark-kafka-vnet.png" alt-text="Схема кластеров Spark и Kafka в виртуальной сети Azure" border="false":::
 
 > [!NOTE]  
 > Служба Kafka ограничена обменом данными в пределах виртуальной сети. Другие службы в кластере, например SSH и Ambari, могут быть доступны через Интернет. Дополнительные сведения об общих портах, доступных в HDInsight, см. в статье [Порты и универсальные коды ресурсов (URI), используемые кластерами HDInsight](hdinsight-hadoop-port-settings-for-services.md).
@@ -61,7 +61,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
 
 1. Используйте следующие сведения, чтобы заполнить раздел **Настраиваемое развертывание**:
 
-    |Свойство. |Значение |
+    |Свойство |Значение |
     |---|---|
     |Подписка|Выберите подписку Azure.|
     |Группа ресурсов|Создайте новую группу или выберите существующую. Эта группа содержит кластер HDInsight.|
@@ -73,7 +73,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
     |Имя пользователя SSH|Создаваемый пользователь SSH для кластеров Spark и Kafka.|
     |Пароль SSH|Пароль пользователя SSH для кластеров Spark и Kafka.|
 
-    ![Значения настраиваемого развертывания HDInsight](./media/apache-kafka-spark-structured-streaming-cosmosdb/hdi-custom-parameters.png)
+    :::image type="content" source="./media/apache-kafka-spark-structured-streaming-cosmosdb/hdi-custom-parameters.png" alt-text="Значения настраиваемого развертывания HDInsight":::
 
 1. Прочтите **условия использования** и установите флажок **Я принимаю указанные выше условия**.
 

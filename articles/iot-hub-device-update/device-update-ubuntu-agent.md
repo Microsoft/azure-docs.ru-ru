@@ -6,12 +6,12 @@ ms.author: vimeht
 ms.date: 2/16/2021
 ms.topic: tutorial
 ms.service: iot-hub-device-update
-ms.openlocfilehash: ea9d893f825822638803394e678e6e68f57a32d9
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: f7e12567269304b33a98ff1eb9727cfdf0afbdc4
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102507302"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103418646"
 ---
 # <a name="device-update-for-azure-iot-hub-tutorial-using-the-package-agent-on-ubuntu-server-1804-x64"></a>Руководство по Обновлению устройств для Центра Интернета вещей Azure: использование агента пакетов Ubuntu Server 18.04 x64
 
@@ -106,7 +106,7 @@ ms.locfileid: "102507302"
 
 На программные пакеты Обновления устройств для Центра Интернета вещей Azure распространяются условия следующих лицензий:
   * [Лицензия на Обновление устройств для Центра Интернета вещей](https://github.com/Azure/iot-hub-device-update/blob/main/LICENSE.md)
-  * [Клиентская лицензия на оптимизацию доставки](https://github.com/microsoft/do-client/blob/main/LICENSE.md)
+  * [Клиентская лицензия на оптимизацию доставки](https://github.com/microsoft/do-client/blob/main/LICENSE)
 
 Прежде чем использовать пакет, ознакомьтесь с условиями лицензии. Установка и использование пакета означают, что вы принимаете эти условия. Если вы с ними не согласны, не используйте пакет.
 
@@ -128,9 +128,11 @@ ms.locfileid: "102507302"
 
 ## <a name="import-update"></a>Импорт обновлений
 
-1. Скачайте следующий [файл манифеста APT](https://github.com/Azure/iot-hub-device-update/tree/main/docs/sample-artifacts/libcurl4-doc-apt-manifest.json) и [импортируйте его](https://github.com/Azure/iot-hub-device-update/tree/main/docs/sample-artifacts/sample-package-update-1.0.1-importManifest.json). Этот манифест APT установит последнюю доступную версию `libcurl4-doc package` на ваше устройство.
+1. Перейдите на страницу [выпусков Обновления устройств](https://github.com/Azure/iot-hub-device-update/releases) на GitHub и щелкните раскрывающийся список Assets (Ресурсы).
 
-   Либо скачайте этот [файл манифеста APT](https://github.com/Azure/iot-hub-device-update/tree/main/docs/sample-artifacts/libcurl4-doc-7.58-apt-manifest.json) и [импортируйте его](https://github.com/Azure/iot-hub-device-update/tree/main/docs/sample-artifacts/sample-package-update-2-2.0.1-importManifest.json). В этом случае на устройстве будет установлен пакет `libcurl4-doc package` особой версии 7.58.0.
+3. Скачайте файл `apt-update-import-samples.zip`, щелкнув его.
+
+5. Извлеките содержимое папки, чтобы найти различные примеры обновлений и соответствующие им манифесты импорта. 
 
 2. На портале Azure в Центре Интернета вещей выберите вариант “Обновления устройств” в разделе “Автоматическое управление устройствами” на панели навигации слева.
 
@@ -138,7 +140,10 @@ ms.locfileid: "102507302"
 
 4. Выберите "+ Импортировать новое обновление".
 
-5. Щелкните значок папки или текстовое поле в разделе "Выберите файл манифеста импорта". На экране появится диалоговое окно выбора файлов. Выберите ранее скачанный манифест импорта. Затем щелкните значок папки или текстовое поле в разделе "Выберите один или несколько файлов обновлений". На экране появится диалоговое окно выбора файлов. Выберите ранее скачанный файл обновления манифеста APT.
+5. Щелкните значок папки или текстовое поле в разделе "Выберите файл манифеста импорта". На экране появится диалоговое окно выбора файлов. Выберите манифест импорта `sample-package-update-1.0.1-importManifest.json` из скачанной ранее папки. Затем щелкните значок папки или текстовое поле в разделе "Выберите один или несколько файлов обновлений". На экране появится диалоговое окно выбора файлов. Выберите файл обновления манифеста APT `sample-1.0.1-libcurl4-doc-apt-manifest.json` из скачанной ранее папки.
+Это обновление установит последнюю доступную версию `libcurl4-doc package` на ваше устройство.
+
+   Вы также можете выбрать файл манифеста импорта `sample-package-update-2-2.0.1-importManifest.json` и файл обновления манифеста APT `sample-2.0.1-libcurl4-doc-7.58-apt-manifest.json` из скачанной ранее папки. В этом случае на устройстве будет установлен пакет `libcurl4-doc package` особой версии 7.58.0.
 
    :::image type="content" source="media/import-update/select-update-files.png" alt-text="Снимок экрана, на котором показан выбор файла обновления." lightbox="media/import-update/select-update-files.png":::
 
@@ -213,9 +218,9 @@ ms.locfileid: "102507302"
 
 ## <a name="bonus-steps"></a>Дополнительные шаги
 
-1. Скачайте следующий [файл манифеста APT](https://github.com/Azure/iot-hub-device-update/tree/main/docs/sample-artifacts/libcurl4-doc-remove-apt-manifest.json) и [импортируйте его](https://github.com/Azure/iot-hub-device-update/tree/main/docs/sample-artifacts/sample-package-update-1.0.2-importManifest.json). Этот манифест APT удалит установленный пакет `libcurl4-doc package` с устройства.
-
 1. Повторите разделы "Импорт обновлений" и "Развертывание обновления"
+
+3. На шаге "Обновление импорта" выберите файл манифеста импорта `sample-package-update-1.0.2-importManifest.json` и файл обновления манифеста APT `sample-1.0.2-libcurl4-doc-remove-apt-manifest.json` из скачанной ранее папки. Это обновление удалит установленный пакет `libcurl4-doc package` с устройства.
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

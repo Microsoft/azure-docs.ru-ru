@@ -7,12 +7,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 09/17/2020
-ms.openlocfilehash: d54c005ffb17571be172b5716723febb742253a3
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5eb6cfc7f0dbc0bc886550e1d601dc52dff66267
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945395"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866375"
 ---
 # <a name="create-a-cluster-with-data-lake-storage-gen2-using-the-azure-portal"></a>Создание кластера с Data Lake Storage 2-го поколения помощью портал Azure
 
@@ -37,7 +37,7 @@ ms.locfileid: "98945395"
 
 Дополнительные сведения о работе управляемых удостоверений в Azure HDInsight см. [в статье управляемые удостоверения в Azure hdinsight](hdinsight-managed-identities.md).
 
-![Создание управляемого удостоверения, назначаемого пользователем](./media/hdinsight-hadoop-use-data-lake-storage-gen2/create-user-assigned-managed-identity-portal.png)
+:::image type="content" source="./media/hdinsight-hadoop-use-data-lake-storage-gen2/create-user-assigned-managed-identity-portal.png" alt-text="Создание управляемого удостоверения, назначаемого пользователем":::
 
 ## <a name="create-a-storage-account-to-use-with-data-lake-storage-gen2"></a>Создание учетной записи хранения для использования с Data Lake Storage 2-го поколения
 
@@ -57,7 +57,7 @@ ms.locfileid: "98945395"
 
 Дополнительные сведения о других параметрах во время создания учетной записи хранения см. в разделе [Краткое руководство. Создание учетной записи хранения для Azure Data Lake Storage 2-го поколения](../storage/blobs/create-data-lake-storage-account.md).
 
-![Снимок экрана, на котором показано создание учетной записи хранения на портале Azure](./media/hdinsight-hadoop-use-data-lake-storage-gen2/azure-data-lake-storage-account-create-advanced.png)
+:::image type="content" source="./media/hdinsight-hadoop-use-data-lake-storage-gen2/azure-data-lake-storage-account-create-advanced.png" alt-text="Снимок экрана, на котором показано создание учетной записи хранения на портале Azure":::
 
 ## <a name="set-up-permissions-for-the-managed-identity-on-the-data-lake-storage-gen2"></a>Настройка разрешений для управляемого удостоверения на Data Lake Storage 2-го поколения
 
@@ -66,12 +66,12 @@ ms.locfileid: "98945395"
 1. Войдите в свою учетную запись хранения на [портале Azure](https://portal.azure.com).
 1. Выберите учетную запись хранения, а затем щелкните **Управление доступом (IAM)** , чтобы отобразить параметры управления доступом для учетной записи. Выберите вкладку **Назначения ролей**, чтобы просмотреть список назначений ролей.
 
-    ![Снимок экрана с параметрами управления доступом к хранилищу](./media/hdinsight-hadoop-use-data-lake-storage-gen2/portal-access-control.png)
+    :::image type="content" source="./media/hdinsight-hadoop-use-data-lake-storage-gen2/portal-access-control.png" alt-text="Снимок экрана с параметрами управления доступом к хранилищу":::
 
 1. Нажмите кнопку **+ добавить назначение роли** , чтобы добавить новую роль.
 1. В окне **Добавление назначения ролей** выберите роль **владельца данных BLOB-объекта хранилища** . Затем выберите подписку с управляемым удостоверением и учетной записью хранения. Затем найдите управляемое удостоверение, назначаемое пользователем, которое было создано ранее. Наконец, выберите управляемое удостоверение, которое будет отображаться в разделе **Выбранные элементы**.
 
-    ![Снимок экрана, показывающий, как назначить роль Azure](./media/hdinsight-hadoop-use-data-lake-storage-gen2/add-rbac-role3-window.png)
+    :::image type="content" source="./media/hdinsight-hadoop-use-data-lake-storage-gen2/add-rbac-role3-window.png" alt-text="Снимок экрана, показывающий, как назначить роль Azure":::
 
 1. Щелкните **Сохранить**. Выбранное пользователем удостоверение теперь отображается под выбранной ролью.
 1. После завершения первоначальной настройки вы можете создать кластер на портале. Кластер должен быть расположен в том же регионе Azure, что и учетная запись хранения. На вкладке **хранилище** в меню Создание кластера выберите следующие параметры.
@@ -81,7 +81,7 @@ ms.locfileid: "98945395"
 
     * В разделе **удостоверение** выберите только что созданное назначенное пользователем управляемое удостоверение.
 
-        ![Параметры хранилища для Azure Data Lake Storage 2-го поколения с Azure HDInsight](./media/hdinsight-hadoop-use-data-lake-storage-gen2/azure-portal-cluster-storage-gentwo.png)
+        :::image type="content" source="./media/hdinsight-hadoop-use-data-lake-storage-gen2/azure-portal-cluster-storage-gentwo.png" alt-text="Параметры хранилища для Azure Data Lake Storage 2-го поколения с Azure HDInsight":::
 
     > [!NOTE]
     > * Чтобы добавить вторичную учетную запись хранения с Data Lake Storage 2-го поколения, на уровне учетной записи хранения просто назначьте созданное ранее управляемое удостоверение новому Data Lake Storage 2-го поколения, который вы хотите добавить. Рекомендуем добавить дополнительную учетную запись хранения с Data Lake Storage 2-го поколения через колонку "дополнительные учетные записи хранения" в HDInsight не поддерживается.

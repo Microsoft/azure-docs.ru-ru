@@ -12,12 +12,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 09/21/2020
-ms.openlocfilehash: 0bd6300f4b9dbcf76b5447a0fb58502b7aebf311
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: 65710ae40a971d214068f0e2686f78fb994a967e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96451429"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104601437"
 ---
 # <a name="what-is-azure-sql-database"></a>Что такое база данных SQL Azure?
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -32,6 +32,9 @@ ms.locfileid: "96451429"
 
 Если вы не работали с Базой данных Azure SQL, просмотрите это *обзорное видео* из [серии видео, посвященных SQL Azure](https://channel9.msdn.com/Series/Azure-SQL-for-Beginners?WT.mc_id=azuresql4beg_azuresql-ch9-niner):
 > [!VIDEO https://channel9.msdn.com/Series/Azure-SQL-for-Beginners/Azure-SQL-Database-Overview-7-of-61/player]
+
+> [!TIP]
+> Помогите нам улучшить Azure SQL. [Примите участие в опросе.](https://microsoft.qualtrics.com/jfe/form/SV_ePOznHhP4gDKfGu?channel=456)
 
 ## <a name="deployment-models"></a>Модели развертывания
 
@@ -114,7 +117,7 @@ Azure предоставляет [встроенные средства мони
 
 Фактически Соглашение об уровне обслуживания [(SLA)](https://azure.microsoft.com/support/legal/sla/) в Azure предусматривает использование глобальной сети центров обработки данных под управлением корпорации Майкрософт для обеспечения непрерывной работы приложения — 24 часа в сутки и 7 дней в неделю. Платформа Azure полностью управляет каждой базой данных и гарантирует высокий процент доступности данных без их потери. Azure автоматически обрабатывает исправления, резервное копирование, репликацию, выявление сбоев, потенциальные сбои основного оборудования, программного обеспечения или сети, исправления ошибок при развертывании, отработку отказа, обновления баз данных и другие задачи обслуживания. На уровне "Стандартный" доступность достигается за счет разделения уровня вычислений и уровня хранения. На уровне "Премиум" доступность достигается за счет интеграции вычислительных систем и хранилища на одном узле для повышения производительности, а также за счет реализации технологии, схожей с группами доступности Always On. Полное описание возможностей для обеспечения высокого уровня доступности, предоставляемых в Базе данных SQL Azure, см. в статье [Высокая доступность и база данных SQL Azure](high-availability-sla.md). 
 
-Кроме того, База данных SQL обеспечивает встроенные функции [непрерывности бизнес-процессов и глобальной масштабируемости](business-continuity-high-availability-disaster-recover-hadr-overview.md). Они перечислены ниже.
+Кроме того, База данных SQL обеспечивает встроенные функции [непрерывности бизнес-процессов и глобальной масштабируемости](business-continuity-high-availability-disaster-recover-hadr-overview.md). К ним относятся следующие объекты.
 
 - [Автоматическое резервное копирование](automated-backups-overview.md)
 

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/23/2020
-ms.openlocfilehash: 1f2dbef014f1b48b554e6bc30af83b936fe532a7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 87a4d3960937450713747fa16bd473b4c34eff0e
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944866"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867871"
 ---
 # <a name="use-apache-ambari-hive-view-with-apache-hadoop-in-hdinsight"></a>Использование представления Hive Apache Ambari с Apache Hadoop в HDInsight
 
@@ -18,7 +18,7 @@ ms.locfileid: "98944866"
 
 Узнайте, как выполнять запросы Hive с использованием представления Hive Apache Ambari. Представление Hive позволяет создавать, оптимизировать и выполнять запросы Hive из веб-браузера.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Кластер Hadoop в HDInsight. Ознакомьтесь со статьей [Краткое руководство. Использование Apache Hadoop и Apache Hive в Azure HDInsight с шаблоном Resource Manager](./apache-hadoop-linux-tutorial-get-started.md).
 
@@ -30,11 +30,11 @@ ms.locfileid: "98944866"
 
 1. В списке представлений выберите __Представление Hive__.
 
-    ![Выберите Apache Hive представление Apache Ambari](./media/apache-hadoop-use-hive-ambari-view/select-apache-hive-view.png)
+    :::image type="content" source="./media/apache-hadoop-use-hive-ambari-view/select-apache-hive-view.png" alt-text="Выберите Apache Hive представление Apache Ambari" border="true":::
 
     Страница представления Hive выглядит следующим образом:
 
-    ![Изображение листа запроса для представления Hive](./media/apache-hadoop-use-hive-ambari-view/ambari-worksheet-view.png)
+    :::image type="content" source="./media/apache-hadoop-use-hive-ambari-view/ambari-worksheet-view.png" alt-text="Изображение листа запроса для представления Hive" border="true":::
 
 1. На вкладке __Запрос__ вставьте в лист следующие инструкции HiveQL:
 
@@ -99,19 +99,19 @@ ms.locfileid: "98944866"
 
 На вкладке __Задания__ отображается журнал запросов Hive.
 
-![Журнал вкладок Apache Hive просмотра заданий](./media/apache-hadoop-use-hive-ambari-view/apache-hive-job-history.png)
+:::image type="content" source="./media/apache-hadoop-use-hive-ambari-view/apache-hive-job-history.png" alt-text="Журнал вкладок Apache Hive просмотра заданий" border="true":::
 
 ## <a name="database-tables"></a>Таблицы базы данных
 
 Вкладку __Таблицы__ можно использовать для работы с таблицами в базе данных Hive.
 
-![Изображение вкладки «Apache Hive таблицы»](./media/apache-hadoop-use-hive-ambari-view/hdinsight-tables-tab.png)
+:::image type="content" source="./media/apache-hadoop-use-hive-ambari-view/hdinsight-tables-tab.png" alt-text="Изображение вкладки «Apache Hive таблицы»" border="true":::
 
 ## <a name="saved-queries"></a>Сохраненные запросы
 
 На вкладке **запрос** можно при необходимости сохранить запросы. После сохранения запроса можно повторно использовать его из вкладки __Saved Queries__ (Сохраненные запросы).
 
-![Вкладка «Apache Hive представлений сохраненных запросов»](./media/apache-hadoop-use-hive-ambari-view/ambari-saved-queries.png)
+:::image type="content" source="./media/apache-hadoop-use-hive-ambari-view/ambari-saved-queries.png" alt-text="Вкладка «Apache Hive представлений сохраненных запросов»" border="true":::
 
 > [!TIP]  
 > Запросы сохраняются в системе хранения данных кластера по умолчанию. Сохраненные запросы можно найти в следующем расположении: `/user/<username>/hive/scripts`. Они хранятся в виде обычных текстовых файлов `.hql`.
@@ -124,7 +124,7 @@ ms.locfileid: "98944866"
 
 Объявлять и сохранять наборы определяемых пользователем функций можно с помощью вкладки **UDF** вверху представления Hive. Эти функции могут использоваться в **редакторе запросов**.
 
-![Apache Hive просмотре вкладки пользовательских функций](./media/apache-hadoop-use-hive-ambari-view/user-defined-functions.png)
+:::image type="content" source="./media/apache-hadoop-use-hive-ambari-view/user-defined-functions.png" alt-text="Apache Hive просмотре вкладки пользовательских функций" border="true":::
 
 В нижней части **редактора запросов** появится кнопка **Вставить UDF** . Эта запись отображает раскрывающийся список пользовательских функций, определенных в представлении Hive. Выбирая определяемую пользователем функцию, вы добавляете в запрос соответствующие инструкции HiveQL.
 

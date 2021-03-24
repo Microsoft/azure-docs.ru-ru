@@ -11,12 +11,12 @@ ms.author: nilsp
 author: NilsPohlmann
 ms.date: 07/31/2020
 ms.custom: devx-track-python
-ms.openlocfilehash: e2b5a3322f633ca8301357c2186d78d3ac437ae2
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 2a92fa8fd242482585ab3785e99f8239548ce369
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521974"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868347"
 ---
 # <a name="define-machine-learning-pipelines-in-yaml"></a>Определение конвейеров машинного обучения в YAML
 
@@ -120,7 +120,7 @@ pipeline:
 | Ключ YAML | Описание |
 | ----- | ----- |
 | `script_name` | Имя скрипта U-SQL (относительно `source_directory` ). |
-| `compute_target` | Целевой объект Azure Data Lake вычислений, используемый для этого шага. |
+| `compute` | Целевой объект Azure Data Lake вычислений, используемый для этого шага. |
 | `parameters` | [Параметры](#parameters) для конвейера. |
 | `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
 | `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
@@ -170,7 +170,7 @@ pipeline:
 
 | Ключ YAML | Описание |
 | ----- | ----- |
-| `compute_target` | Целевой объект вычислений пакетной службы Azure, который будет использоваться для этого шага. |
+| `compute` | Целевой объект вычислений пакетной службы Azure, который будет использоваться для этого шага. |
 | `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
 | `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `source_directory` | Каталог, содержащий двоичные файлы модуля, исполняемый файл, сборки и т. д. |
@@ -224,7 +224,7 @@ pipeline:
 
 | Ключ YAML | Описание |
 | ----- | ----- |
-| `compute_target` | Целевой объект Azure Databricks вычислений, используемый для этого шага. |
+| `compute` | Целевой объект Azure Databricks вычислений, используемый для этого шага. |
 | `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
 | `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `run_name` | Имя в модулях для этого запуска. |
@@ -278,7 +278,7 @@ pipeline:
 
 | Ключ YAML | Описание |
 | ----- | ----- |
-| `compute_target` | Целевой объект вычислений фабрики данных Azure, который будет использоваться для этого шага. |
+| `compute` | Целевой объект вычислений фабрики данных Azure, который будет использоваться для этого шага. |
 | `source_data_reference` | Входное соединение, служащее источником операций по переносу данных. Поддерживаемые значения: [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
 | `destination_data_reference` | Входное соединение, которое служит в качестве назначения для операций обмена данными. Поддерживаемые значения: [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) и [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `allow_reuse` | Определяет, должен ли шаг повторно использовать предыдущие результаты при повторном выполнении с теми же параметрами. |
@@ -550,6 +550,6 @@ Schedule:
     path_on_datastore: ~ 
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как [использовать расширение CLI для машинное обучение Azure](reference-azure-machine-learning-cli.md).

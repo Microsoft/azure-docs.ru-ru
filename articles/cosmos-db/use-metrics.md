@@ -7,14 +7,14 @@ ms.reviewer: sngun
 ms.service: cosmos-db
 ms.subservice: cosmosdb-sql
 ms.topic: how-to
-ms.date: 07/22/2020
+ms.date: 03/22/2021
 ms.custom: devx-track-csharp
-ms.openlocfilehash: b0760b86012504ea86e4a0cde36ae878e8ff3b26
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0711d764514e45d3c28e26cf99b45dc711ef201c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98685743"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868262"
 ---
 # <a name="monitor-and-debug-with-metrics-in-azure-cosmos-db"></a>Мониторинг и отладка с помощью метрик в Azure Cosmos DB
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]

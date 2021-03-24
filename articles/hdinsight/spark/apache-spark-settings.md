@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/24/2020
-ms.openlocfilehash: 148ba2ce256b11b623bf28cf7723dbb0cce60830
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 25ff8611cc988c9777b52a313cfd74d4ee0a638c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929749"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870302"
 ---
 # <a name="configure-apache-spark-settings"></a>Настройка параметров Apache Spark
 
@@ -18,7 +18,7 @@ ms.locfileid: "98929749"
 
 По умолчанию кластер HDInsight Apache Spark содержит следующие узлы: три узла Apache ZooKeeper, два головных узла и один или несколько рабочих узлов:
 
-![Архитектура Spark HDInsight](./media/apache-spark-settings/spark-hdinsight-arch.png)
+:::image type="content" source="./media/apache-spark-settings/spark-hdinsight-arch.png" alt-text="Архитектура Spark HDInsight" border="false":::
 
 Количество виртуальных машин и размеры виртуальных машин для узлов в кластере HDInsight могут повлиять на конфигурацию Spark. Нестандартные значения конфигурации HDInsight часто требуют нестандартных значений конфигурации Spark. При создании кластера HDInsight Spark вы можете отобразить Предлагаемые размеры виртуальных машин для каждого из компонентов. Сейчас [размерами виртуальных машин Azure с Linux, оптимизированными для памяти,](../../virtual-machines/sizes-memory.md) являются экземпляры D12 версии 2 или выше.
 
@@ -59,7 +59,7 @@ spark.sql.files.openCostInBytes 1099511627776
 
 Чтобы просмотреть значения конфигурации для Apache Spark, выберите **Config History** (История конфигураций), а затем — **Spark2**.  Перейдите на вкладку **Configs** (Конфигурации), а затем в списке служб щелкните ссылку `Spark` (или `Spark2` в зависимости от вашей версии).  Отобразится список значений конфигурации для вашего кластера:
 
-![Конфигурации Spark](./media/apache-spark-settings/spark-configurations.png)
+:::image type="content" source="./media/apache-spark-settings/spark-configurations.png" alt-text="Конфигурации Spark" border="true":::
 
 Чтобы просмотреть и изменить отдельные значения конфигурации Spark, выберите любую ссылку с "Spark" в заголовке.  Конфигурации для Spark содержат как пользовательские, так и расширенные значения конфигурации в следующих категориях:
 
@@ -78,7 +78,7 @@ spark.sql.files.openCostInBytes 1099511627776
 
 На следующей схеме показаны ключевые объекты Spark. К ним относятся программа драйвера и связанный с ней контекст Spark, а также диспетчер кластера и его рабочие узлы *n*.  Каждый рабочий узел включает в себя исполнитель, кэш и экземпляры задач *n*.
 
-![Объекты кластера](./media/apache-spark-settings/hdi-spark-architecture.png)
+:::image type="content" source="./media/apache-spark-settings/hdi-spark-architecture.png" alt-text="Объекты кластера" border="false":::
 
 Задания Spark используют рабочие ресурсы, в частности память, поэтому для исполнителей рабочего узла необходимо настроить значения конфигурации Spark.
 
@@ -89,7 +89,7 @@ spark.sql.files.openCostInBytes 1099511627776
 
 Другим источником сведений о ресурсах, используемых исполнителями Spark, является Пользовательский интерфейс приложения Spark.  В пользовательском интерфейсе  **исполнители** отображают сводные и подробные представления конфигурации и потребляемые ресурсы.  Определение необходимости изменения значений исполнителей для всего кластера или определенного набора выполнений заданий.
 
-![Исполнители Spark](./media/apache-spark-settings/apache-spark-executors.png)
+:::image type="content" source="./media/apache-spark-settings/apache-spark-executors.png" alt-text="Исполнители Spark" border="true":::
 
 Также можно использовать REST API Ambari для программной проверки параметров конфигурации кластера HDInsight и Spark.  Дополнительные сведения см. в [справочнике по API Apache Ambari на сайте GitHub](https://github.com/apache/ambari/blob/trunk/ambari-server/docs/api/v1/index.md).
 
@@ -103,7 +103,7 @@ spark.sql.files.openCostInBytes 1099511627776
 
 Ниже приведен пример двух рабочих узлов с разными значениями конфигурации.
 
-![Конфигурации двух узлов](./media/apache-spark-settings/executor-configuration.png)
+:::image type="content" source="./media/apache-spark-settings/executor-configuration.png" alt-text="Конфигурации двух узлов" border="false":::
 
 Ниже приведен список ключевых параметров памяти исполнителя Spark.
 
@@ -116,7 +116,7 @@ spark.sql.files.openCostInBytes 1099511627776
 
 YARN управляет максимальным объемом памяти, используемой контейнерами на всех узлах Spark. На следующей схеме показаны отношения между объектами конфигурации YARN и Spark для каждого узла.
 
-![Управление памятью Spark в YARN](./media/apache-spark-settings/hdi-yarn-spark-memory.png)
+:::image type="content" source="./media/apache-spark-settings/hdi-yarn-spark-memory.png" alt-text="Управление памятью Spark в YARN" border="false":::
 
 ## <a name="change-parameters-for-an-application-running-in-jupyter-notebook"></a>Изменение параметров для приложения, выполняемого в Jupyter Notebook
 

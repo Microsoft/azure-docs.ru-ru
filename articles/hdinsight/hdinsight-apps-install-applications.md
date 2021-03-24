@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 06/17/2019
-ms.openlocfilehash: cfbbc1f11a24379561df26e2fb8d9da20b249317
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 46a22b78ade3d137f25b14e5cbdaff3264208228
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942734"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868398"
 ---
 # <a name="install-third-party-apache-hadoop-applications-on-azure-hdinsight"></a>Установка сторонних приложений Apache Hadoop в Azure HDInsight
 
@@ -53,10 +53,10 @@ ms.locfileid: "98942734"
 3. Выберите из списка кластер HDInsight.  Если у вас нет кластера, сначала его необходимо создать.  См. [этот раздел](hadoop/apache-hadoop-linux-tutorial-get-started.md).
 4. В категории **Параметры** выберите **Приложения**. В основном окне отобразится список установленных приложений. 
    
-    ![Меню портала для приложений HDInsight](./media/hdinsight-apps-install-applications/hdinsight-apps-portal-menu.png)
+    :::image type="content" source="./media/hdinsight-apps-install-applications/hdinsight-apps-portal-menu.png" alt-text="Меню портала для приложений HDInsight":::
 5. В меню выберите **+Добавить**. Отобразится список доступных приложений.  Если параметр **+Добавить** недоступен для выбора, это означает, что приложения для этой версии кластера HDInsight отсутствуют.
    
-    ![Доступные приложения HDInsight](./media/hdinsight-apps-install-applications/hdinsight-apps-list1.png)
+    :::image type="content" source="./media/hdinsight-apps-install-applications/hdinsight-apps-list1.png" alt-text="Доступные приложения HDInsight":::
 6. Выберите одно из доступных приложений и следуйте инструкциям, чтобы принять условия лицензионного соглашения.
 
 Состояние установки приложения можно отслеживать в уведомлениях портала (щелкните значок колокольчика в верхней части портала). После установки приложение отобразится в списке "Установленные приложения".
@@ -65,7 +65,7 @@ ms.locfileid: "98942734"
 
 Вы также можете установить приложения HDInsight во время создания кластера. Их установка осуществляется после создания и запуска кластера. Чтобы установить приложения во время создания кластера с помощью портала Azure, на вкладке **Конфигурация и цены** выберите **+ Добавить приложение**.
 
-![Приложения для конфигурации кластера на портале Azure](./media/hdinsight-apps-install-applications/azure-portal-cluster-configuration-applications.png)
+:::image type="content" source="./media/hdinsight-apps-install-applications/azure-portal-cluster-configuration-applications.png" alt-text="Приложения для конфигурации кластера на портале Azure":::
 
 ## <a name="list-installed-hdinsight-apps-and-properties"></a>Отображение списка установленных приложений HDInsight и их свойств
 На портале содержится список установленных приложений HDInsight для кластера и их свойств.
@@ -77,7 +77,7 @@ ms.locfileid: "98942734"
 3. Выберите из списка кластер HDInsight.
 4. В категории **Параметры** выберите **Приложения**. В основном окне отобразится список установленных приложений. 
    
-    ![Установленные приложения HDInsight](./media/hdinsight-apps-install-applications/hdinsight-apps-installed-apps-with-apps.png)
+    :::image type="content" source="./media/hdinsight-apps-install-applications/hdinsight-apps-installed-apps-with-apps.png" alt-text="Установленные приложения HDInsight":::
 5. Чтобы открыть свойства установленного приложения, щелкните его. В свойствах указано следующее:
 
     |Свойство | Описание |

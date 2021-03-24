@@ -12,12 +12,12 @@ ms.date: 03/16/2021
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71eaccd615f5c3460e7b48b2e92d5f874c8de12e
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: 7269a2435715834a2c1e6723de3fdc6e72eaad5f
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104772116"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104955454"
 ---
 # <a name="azure-ad-connect-version-release-history"></a>Azure AD Connect выполняет следующие функции: Журнал выпуска версий
 Команда Azure Active Directory (Azure AD) регулярно обновляет службу Azure AD Connect, добавляя новые функции и возможности. Не все эти дополнения применимы для всех пользователей.
@@ -82,6 +82,7 @@ ms.locfileid: "104772116"
      - Если клонированное пользовательское правило синхронизации не переполняет некоторые атрибуты почты и обмена, новое правило синхронизации Exchange добавит эти атрибуты.
  - Добавлена поддержка [выборочной синхронизации хэша паролей](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-selective-password-hash-synchronization) .
  - Добавлен новый [командлет синхронизации одного объекта](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-single-object-sync). Используйте этот командлет для устранения неполадок с конфигурацией синхронизации Azure AD Connect. 
+ -  Azure AD Connect теперь поддерживает роль администратора гибридной идентификации для настройки службы.
  - Агент Аадконнексеалс обновлен до 3.1.83.0
  - Новая версия [модуля PowerShell адсинктулс](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-adsynctools), которая содержит несколько новых или усовершенствованных командлетов. 
  

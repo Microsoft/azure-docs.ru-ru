@@ -4,12 +4,12 @@ description: Узнайте, как управлять кластерами Azur
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 12/04/2019
-ms.openlocfilehash: b0f8ba4adfa4b08c23d3f69fa4e2b01f4580bb19
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: bc31c3d71590a6b8c0b324ffcb8c10129a9f8699
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101742217"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863247"
 ---
 # <a name="manage-hdinsight-clusters-with-enterprise-security-package"></a>Управление кластерами HDInsight с помощью корпоративного пакета безопасности
 
@@ -116,7 +116,7 @@ Connection string: -u 'jdbc:hive2://<headnode-FQDN>:10001/;transportMode=http'
 2. В меню слева выберите **роли**.
 3. Выберите синий вопросительный знак, чтобы просмотреть разрешения:
 
-    ![Разрешения роли HDInsight с корпоративным пакетом безопасности](./media/apache-domain-joined-manage/hdinsight-domain-joined-roles-permissions.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-roles-permissions.png" alt-text="Разрешения роли HDInsight с корпоративным пакетом безопасности" border="true":::
 
 ## <a name="open-the-ambari-management-ui"></a>Вход в пользовательский интерфейс управления Ambari
 
@@ -124,25 +124,25 @@ Connection string: -u 'jdbc:hive2://<headnode-FQDN>:10001/;transportMode=http'
 1. Войдите в Ambari с помощью имени пользователя домена администратора кластера и пароля.
 1. Выберите раскрывающееся меню **администратора** в правом верхнем углу и выберите **Управление Ambari**.
 
-    ![ESP HDInsight управление Ambari Apache](./media/apache-domain-joined-manage/hdinsight-domain-joined-manage-ambari.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-manage-ambari.png" alt-text="ESP HDInsight управление Ambari Apache" border="true":::
 
     Пользовательский интерфейс выглядит примерно так:
 
-    ![Пользовательский интерфейс управления ESP HDInsight Apache Ambari](./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui.png" alt-text="Пользовательский интерфейс управления ESP HDInsight Apache Ambari" border="true":::
 
 ## <a name="list-the-domain-users-synchronized-from-your-active-directory"></a>Список пользователей домена, синхронизированных из Active Directory
 
 1. Откройте пользовательский интерфейс управления Ambari.  См. раздел [Вход в пользовательский интерфейс управления Ambari](#open-the-ambari-management-ui).
 2. В меню слева выберите **Пользователи**. Вы увидите всех пользователей, синхронизированных в кластер HDInsight из Active Directory.
 
-    ![Список пользователей интерфейса управления Ambari для HDInsight с корпоративным пакетом безопасности](./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-users.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-users.png" alt-text="Список пользователей интерфейса управления Ambari для HDInsight с корпоративным пакетом безопасности" border="true":::
 
 ## <a name="list-the-domain-groups-synchronized-from-your-active-directory"></a>Список групп домена, синхронизированных из Active Directory
 
 1. Откройте пользовательский интерфейс управления Ambari.  См. раздел [Вход в пользовательский интерфейс управления Ambari](#open-the-ambari-management-ui).
 2. В меню слева выберите **группы**. Вы увидите все группы, синхронизированные в кластер HDInsight из Active Directory.
 
-    ![Список групп интерфейса управления Ambari для HDInsight с корпоративным пакетом безопасности](./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-groups.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-groups.png" alt-text="Список групп интерфейса управления Ambari для HDInsight с корпоративным пакетом безопасности" border="true":::
 
 ## <a name="configure-hive-views-permissions"></a>Настройка разрешений для представлений Hive
 
@@ -150,12 +150,12 @@ Connection string: -u 'jdbc:hive2://<headnode-FQDN>:10001/;transportMode=http'
 2. В меню слева выберите **представления**.
 3. Выберите **Hive** , чтобы просмотреть сведения.
 
-    ![Представления Hive в интерфейсе управления Ambari для HDInsight с корпоративным пакетом безопасности](./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-hive-views.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-hive-views.png" alt-text="Представления Hive в интерфейсе управления Ambari для HDInsight с корпоративным пакетом безопасности" border="true":::
 
 4. Щелкните ссылку **представление Hive** , чтобы настроить представления Hive.
 5. Выполните прокрутку вниз до раздела **Разрешения**.
 
-    ![Настройка разрешений для представлений Hive в интерфейсе управления Ambari для HDInsight с ESP](./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-hive-views-permissions.png)
+    :::image type="content" source="./media/apache-domain-joined-manage/hdinsight-domain-joined-ambari-management-ui-hive-views-permissions.png" alt-text="Настройка разрешений для представлений Hive в интерфейсе управления Ambari для HDInsight с ESP" border="true":::
 
 6. Выберите **Добавить пользователя** или **Добавить группу**, а затем укажите пользователей или группы, которые могут использовать представления Hive.
 

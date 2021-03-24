@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 10/28/2020
-ms.openlocfilehash: a15c3e0fb3550c6e50b3fba2279611fdba25bc84
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 551d985ea78e83397e507676c5fd7ecfce12ff7b
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945564"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864250"
 ---
 # <a name="optimize-apache-hive-queries-in-azure-hdinsight"></a>Оптимизация запросов Apache в Hive в Azure HDInsight
 
@@ -34,11 +34,11 @@ ms.locfileid: "98945564"
 
 * При создании кластера можно указать количество рабочих узлов, используя портал Azure, Azure PowerShell или интерфейс командной строки.  Дополнительные сведения см. в статье о [создании кластеров HDInsight](hdinsight-hadoop-provision-linux-clusters.md). На следующем снимке экрана показана рабочая конфигурация узла на портале Azure:
   
-    ![Узлы размера кластера портал Azure](./media/hdinsight-hadoop-optimize-hive-query/azure-portal-cluster-configuration.png "scaleout_1")
+    :::image type="content" source="./media/hdinsight-hadoop-optimize-hive-query/azure-portal-cluster-configuration.png" alt-text="Узлы размера кластера портал Azure":::
 
 * После создания кластера можно также изменить количество рабочих узлов, чтобы масштабировать кластер без необходимости его повторного создания.
 
-    ![Размер кластера портал Azure Scale](./media/hdinsight-hadoop-optimize-hive-query/azure-portal-settings-nodes.png "scaleout_2")
+    :::image type="content" source="./media/hdinsight-hadoop-optimize-hive-query/azure-portal-settings-nodes.png " alt-text="Размер кластера портал Azure Scale":::
 
 Дополнительные сведения о масштабировании HDInsight см. в статье [Масштабирование кластеров HDInsight](hdinsight-scaling-best-practices.md).
 
@@ -46,7 +46,7 @@ ms.locfileid: "98945564"
 
 [Apache Tez](https://tez.apache.org/) — это альтернативный механизм выполнения для механизма MapReduce. При подготовке кластеров HDInsight под управлением Linux платформа Tez включена по умолчанию.
 
-![Обзорная схема Apache Tez HDInsight](./media/hdinsight-hadoop-optimize-hive-query/hdinsight-tez-engine.png)
+:::image type="content" source="./media/hdinsight-hadoop-optimize-hive-query/hdinsight-tez-engine.png" alt-text="Обзорная схема Apache Tez HDInsight":::
 
 Tez работает быстрее, так как:
 
@@ -70,7 +70,7 @@ set hive.execution.engine=tez;
 
 Секционирование данных в Hive реализуется путем реорганизации необработанных данных в новые каталоги. Каждой секции присвоен собственный каталог файлов. Секционирование определяется пользователем. Следующая схема иллюстрирует секционирование таблицы Hive по столбцу *Год*. Для каждого года создается новый каталог.
 
-![Секционирование Apache Hive HDInsight](./media/hdinsight-hadoop-optimize-hive-query/hdinsight-partitioning.png)
+:::image type="content" source="./media/hdinsight-hadoop-optimize-hive-query/hdinsight-partitioning.png" alt-text="Секционирование Apache Hive HDInsight":::
 
 Некоторые рекомендации для выполнения секционирования:
 
@@ -127,7 +127,7 @@ STORED AS TEXTFILE;
 
 ## <a name="use-the-orcfile-format"></a>Использование формата ORC-файлов
 
-Hive поддерживает различные форматы. Пример:
+Hive поддерживает различные форматы. Например:
 
 * **Текст**: формат файла по умолчанию работает с большинством сценариев.
 * **Avro**: хорошо подходит для сценариев взаимодействия.
@@ -153,7 +153,7 @@ PARTITIONED BY(L_SHIPDATE STRING)
 STORED AS ORC;
 ```
 
-Далее необходимо выполнить вставку данных в таблицу ORC из промежуточной таблицы. Пример:
+Далее необходимо выполнить вставку данных в таблицу ORC из промежуточной таблицы. Например:
 
 ```sql
 INSERT INTO TABLE lineitem_orc
