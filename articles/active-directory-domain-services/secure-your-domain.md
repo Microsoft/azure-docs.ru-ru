@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: domain-services
 ms.workload: identity
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 03/08/2021
 ms.author: justinha
-ms.openlocfilehash: a89c898e150facc9860d86e18a7acc42f5e0f441
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5fa19e23767af0e121d07872970199a2a1705ea8
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96618864"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951946"
 ---
 # <a name="disable-weak-ciphers-and-password-hash-synchronization-to-secure-an-azure-active-directory-domain-services-managed-domain"></a>Отключение слабых шифров и синхронизации хэшей паролей для обеспечения безопасности управляемого домена доменных служб Azure Active Directory
 
@@ -34,14 +34,25 @@ ms.locfileid: "96618864"
     * Если потребуется, [создайте клиент Azure Active Directory][create-azure-ad-tenant] или [свяжите подписку Azure со своей учетной записью][associate-azure-ad-tenant].
 * Управляемый домен доменных служб Azure Active Directory, включенный и настроенный в клиенте Azure AD.
     * При необходимости [создайте и настройте управляемый домен доменных служб Azure Active Directory][create-azure-ad-ds-instance].
-* Установите и настройте Azure PowerShell.
-    * При необходимости выполните инструкции по [установке модуля Azure PowerShell и его подключению к подписке Azure](/powershell/azure/install-az-ps).
-    * Войдите в подписку Azure с помощью командлета [Connect-AzAccount][Connect-AzAccount].
-* Установите и настройте Azure AD PowerShell.
-    * При необходимости выполните инструкции по [установке модуля Azure AD PowerShell и подключению к Azure AD](/powershell/azure/active-directory/install-adv2).
-    * Войдите в клиент Azure AD с помощью командлета [Connect-AzureAD][Connect-AzureAD].
 
-## <a name="disable-weak-ciphers-and-ntlm-password-hash-sync"></a>Отключение слабых шифров и синхронизация хэша паролей NTLM
+## <a name="use-security-settings-to-disable-weak-ciphers-and-ntlm-password-hash-sync"></a>Использование параметров безопасности для отключения слабых шифров и синхронизации хэша паролей NTLM
+
+1. Войдите на [портал Azure](https://portal.azure.com).
+1. Найдите и выберите **доменные службы Azure AD**.
+1. Выберите нужный управляемый домен, например *aaddscontoso.com*
+1. На левой стороне выберите **Параметры безопасности**.
+1. Щелкните **Отключить** для следующих параметров:
+   - **Режим "только TLS 1,2"**
+   - **Проверка подлинности NTLM**
+   - **Синхронизация паролей NTLM из локальной среды**
+
+   ![Снимок экрана параметров безопасности для отключения слабых шифров и синхронизации хэша паролей NTLM](media/secure-your-domain/security-settings.png)
+
+## <a name="use-powershell-to-disable-weak-ciphers-and-ntlm-password-hash-sync"></a>Отключение слабых шифров и синхронизации хэша паролей NTLM с помощью PowerShell
+
+При необходимости [установите и настройте Azure PowerShell](/powershell/azure/install-az-ps). Войдите в подписку Azure с помощью командлета [Connect-AzAccount][Connect-AzAccount]. 
+
+Кроме того, при необходимости [установите и настройте Azure AD PowerShell](/powershell/azure/active-directory/install-adv2). Войдите в клиент Azure AD с помощью командлета [Connect-AzureAD][Connect-AzureAD].
 
 Чтобы отключить слабые комплекты шифров и синхронизацию хэша учетных данных NTLM, войдите в свою учетную запись Azure, а затем получите ресурс Azure AD DS с помощью командлета [Get-азресаурце][Get-AzResource] :
 

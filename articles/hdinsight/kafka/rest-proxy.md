@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: has-adal-ref, devx-track-python
 ms.date: 04/03/2020
-ms.openlocfilehash: a9a007d33226c508e193368b08b189001bf53401
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: bc3cbe5d0d7cf5e5a78112ae5df63ebb88a97f5a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944080"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864845"
 ---
 # <a name="interact-with-apache-kafka-clusters-in-azure-hdinsight-using-a-rest-proxy"></a>Взаимодействие с кластерами Apache Kafka в Azure HDInsight через прокси-сервер REST
 
@@ -22,7 +22,7 @@ ms.locfileid: "98944080"
 
 ## <a name="background"></a>Историческая справка
 
-![Архитектура прокси-сервера REST для Kafka](./media/rest-proxy/rest-proxy-architecture.png)
+:::image type="content" source="./media/rest-proxy/rest-proxy-architecture.png" alt-text="Архитектура прокси-сервера REST для Kafka" border="false":::
 
 Полную спецификацию операций, поддерживаемых API прокси-сервера REST для Apache Kafka, см. [здесь](/rest/api/hdinsight-kafka-rest-proxy).
 
@@ -49,10 +49,10 @@ ms.locfileid: "98944080"
 1. Создайте группу безопасности Azure AD. Добавьте приложение, которое вы зарегистрировали в Azure AD, в группу безопасности в качестве **члена** группы. Эта группа безопасности будет использоваться для управления тем, какие приложения могут взаимодействовать с прокси-сервером REST. Ознакомьтесь со статьей [Создание простой группы и добавление в нее участников с помощью Azure Active Directory](../../active-directory/fundamentals/active-directory-groups-create-azure-portal.md), чтобы получить сведения о создании групп AAD.
 
     Убедитесь, что для этой группы установлен тип **Безопасность**.
-    ![Группа безопасности](./media/rest-proxy/rest-proxy-group.png)
+    :::image type="content" source="./media/rest-proxy/rest-proxy-group.png" alt-text="Группа безопасности" border="true":::
 
     Убедитесь, что приложение является членом группы.
-    ![Проверка членства](./media/rest-proxy/rest-proxy-membergroup.png)
+    :::image type="content" source="./media/rest-proxy/rest-proxy-membergroup.png" alt-text="Проверка членства" border="true":::
 
 ## <a name="create-a-kafka-cluster-with-rest-proxy-enabled"></a>Создание кластера Kafka с включенным прокси-сервером REST
 
@@ -60,17 +60,17 @@ ms.locfileid: "98944080"
 
 1. В процессе создания кластера Kafka установите на вкладке **Безопасность и сеть** флажок **Включить прокси-сервер REST для Kafka**.
 
-     ![На снимке экрана показана страница Создание кластера H D Insights с выбранной безопасностью и сетью.](./media/rest-proxy/azure-portal-cluster-security-networking-kafka-rest.png)
+     :::image type="content" source="./media/rest-proxy/azure-portal-cluster-security-networking-kafka-rest.png" alt-text="На снимке экрана показана страница Создание кластера H D Insights с выбранной безопасностью и сетью." border="true":::
 
 1. Щелкните **Выбор группы безопасности**. Из предложенного списка выберите ту группу безопасности, которая должна иметь доступ к прокси-серверу REST. Чтобы найти нужную группу безопасности, можно воспользоваться полем поиска. В нижней части страницы нажмите кнопку **Выбрать**.
 
-     ![На снимке экрана показана страница Создание кластера H D Insights с возможностью выбора группы безопасности.](./media/rest-proxy/azure-portal-cluster-security-networking-kafka-rest2.png)
+     :::image type="content" source="./media/rest-proxy/azure-portal-cluster-security-networking-kafka-rest2.png" alt-text="На снимке экрана показана страница Создание кластера H D Insights с возможностью выбора группы безопасности." border="true":::
 
 1. Выполните остальные действия для создания кластера, как описано в статье [Создание кластера Apache Kafka в Azure HDInsight с помощью портала Azure](./apache-kafka-get-started.md).
 
 1. После создания кластера перейдите к свойствам кластера, чтобы записать URL-адрес прокси-сервера REST для Kafka.
 
-     ![Просмотр URL-адреса прокси-сервера REST](./media/rest-proxy/apache-kafka-rest-proxy-view-proxy-url.png)
+     :::image type="content" source="./media/rest-proxy/apache-kafka-rest-proxy-view-proxy-url.png" alt-text="Просмотр URL-адреса прокси-сервера REST" border="true":::
 
 ## <a name="client-application-sample"></a>Пример клиентского приложения
 

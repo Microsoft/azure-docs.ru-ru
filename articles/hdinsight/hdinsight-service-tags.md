@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 08/11/2020
-ms.openlocfilehash: d17d067b88add3006bc5c7fb10caa6b80a80a827
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 99a61d3e445bf6887db0c97e365e6e4489eb79e1
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98931768"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872019"
 ---
 # <a name="nsg-service-tags-for-azure-hdinsight"></a>Теги службы NSG для Azure HDInsight
 
@@ -40,7 +40,7 @@ ms.locfileid: "98931768"
 
 1. В раскрывающемся списке **тег службы источника** выберите **HDInsight**.
 
-    ![Добавление тега службы из портал Azure](./media/hdinsight-service-tags/azure-portal-add-service-tag.png)
+    :::image type="content" source="./media/hdinsight-service-tags/azure-portal-add-service-tag.png" alt-text="Добавление тега службы из портал Azure":::
 
 Этот тег содержит IP-адреса служб работоспособности и управления для всех регионов, в которых доступна служба HDInsight. Тег обеспечит взаимодействие кластера с необходимыми службами работоспособности и управления независимо от того, где она создана.
 

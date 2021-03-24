@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/05/2021
+ms.date: 03/17/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 6adedaacb0cc9d96de8bee77d536e9c12d105b89
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 73bef40c911fa0bd696bfcee4b1a0268cb09669c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102429584"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104605552"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
@@ -23,6 +23,7 @@ ms.locfileid: "102429584"
 |[\[Предварительная версия\]. Сертификаты должны использовать разрешенные типы ключей](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1151cede-290b-4ba0-8b38-0ad145ac888f) |Вы можете управлять требованиями к обеспечению соответствия для своей организации, ограничивая разрешенные для сертификатов типы ключей. |Audit, Deny, Disabled |[2.0.0-preview](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/Certificates_AllowedKeyTypes.json) |
 |[\[Предварительная версия\]. У сертификатов, использующих шифрование на основе эллиптических кривых, должны быть разрешенные имена кривых](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fbd78111f-4953-4367-9fd5-7e08808b54bf) |Вы можете управлять разрешенными именами эллиптических кривых для сертификатов ECC, хранящихся в хранилище ключей. Дополнительные сведения см. по адресу [https://aka.ms/akvpolicy](https://aka.ms/akvpolicy). |Audit, Deny, Disabled |[2.0.0-preview](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/Certificates_EC_AllowedCurveNames.json) |
 |[\[Предварительная версия\]. Для сертификатов, использующих шифрование RSA, должен быть указан минимальный размер ключа](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcee51871-e572-4576-855c-047c820360f0) |Вы можете управлять требованиями к обеспечению соответствия для своей организации, указав минимальный размер ключа для сертификатов RSA, хранящихся в хранилище ключей. |Audit, Deny, Disabled |[2.0.0-preview](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/Certificates_RSA_MinimumKeySize.json) |
+|[Развертывание: настройка параметров диагностики для связи Azure Key Vault с рабочей областью Log Analytics](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F951af2fa-529b-416e-ab6e-066fd85ac459) |Развертывает для Azure Key Vault параметры диагностики, настроенные для потоковой передачи журналов ресурсов в рабочую область Log Analytics, при создании или изменении Key Vault, где эти параметры отсутствуют. |DeployIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/DataConnectorsAzureKeyVault_PolicyAssignment.json) |
 |[Развертывание — настройте в концентраторе событий параметры диагностики, которые должны быть включены на управляемом модуле HSM для Azure Key Vault](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa6d2c800-5230-4a40-bff3-8268b4987d42) |Развертывает параметры диагностики управляемого модуля HSM для Azure Key Vault для потоковой передачи в региональный концентратор событий при создании или изменении управляемого модуля HSM для Azure Key Vault, где эти параметры диагностики отсутствуют. |DeployIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/ManagedHsm_DiagnosticLog_Deploy.json) |
 |[Развернуть параметры диагностики для Key Vault в концентраторе событий](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fed7c8c13-51e7-49d1-8a43-8490431a0da2) |Развертывает параметры диагностики для Key Vault для потоковой передачи в региональный концентратор событий при создании или изменении любого ресурса Key Vault, где эти параметры диагностики отсутствуют. |deployIfNotExists |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/KeyVault_DiagnosticLog_Deploy.json) |
 |[\[Предварительная версия\]. Для Key Vault необходимо включить брандмауэр](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F55615ac9-af46-4a59-874e-391cc3dfb490) |Брандмауэр хранилища ключей блокирует доступ к хранилищу ключей для несанкционированного трафика и предоставляет дополнительный уровень защиты секретов. Включите брандмауэр, чтобы убедиться, что только трафик из разрешенных сетей может получить доступ к хранилищу ключей. |Audit, Disabled |[1.0.2-preview](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/AzureKeyVaultFirewallEnabled_Audit.json) |

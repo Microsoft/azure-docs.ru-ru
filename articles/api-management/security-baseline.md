@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 7c5fbbd8cdfd75819bffcfb93fc81900feb4a612
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d965ec2f846f09dd61342b3961e7ea8106f6a19f
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101652374"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954893"
 ---
 # <a name="azure-security-baseline-for-api-management"></a>Базовый план безопасности Azure для Управления API
 
@@ -52,7 +52,7 @@ ms.locfileid: "101652374"
 
 Внимание! При настройке группы безопасности сети в подсети Управления API необходимо открыть ряд портов. Если какой-либо из этих портов недоступен, служба управления API может не работать должным образом и даже стать недоступной.
 
-- [Общие сведения о конфигурациях групп безопасности сети для Управления API Azure](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet#-common-network-configuration-issues)
+- [Общие сведения о конфигурациях групп безопасности сети для Управления API Azure](./api-management-using-with-vnet.md#-common-network-configuration-issues)
 
 - [Как включить журналы потоков NSG](../network-watcher/network-watcher-nsg-flow-logging-portal.md)
 
@@ -75,7 +75,7 @@ ms.locfileid: "101652374"
 
 - [Интеграция службы Управления API во внутреннюю виртуальную сеть со Шлюзом приложений](api-management-howto-integrate-internal-vnet-appgateway.md)
 
-- [Общие сведения о Шлюзе приложений Azure](/azure/application-gateway/)
+- [Общие сведения о Шлюзе приложений Azure](../application-gateway/index.yml)
 
 **Ответственность**: Customer
 
@@ -96,7 +96,7 @@ ms.locfileid: "101652374"
 
 - [Интеграция службы Управления API во внутреннюю виртуальную сеть со Шлюзом приложений](api-management-howto-integrate-internal-vnet-appgateway.md)
 
-- [Общие сведения о Шлюзе приложений Azure](/azure/application-gateway/)
+- [Общие сведения о Шлюзе приложений Azure](../application-gateway/index.yml)
 
 - [Общие сведения об интегрированной аналитике угроз в Центре безопасности Azure](../security-center/azure-defender.md)
 
@@ -110,7 +110,7 @@ ms.locfileid: "101652374"
 
 Внимание! При настройке группы безопасности сети в подсети Управления API необходимо открыть ряд портов. Если какой-либо из этих портов недоступен, служба управления API может не работать должным образом и даже стать недоступной.
 
-- [Общие сведения о конфигурациях групп безопасности сети для Управления API Azure](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet#-common-network-configuration-issues)
+- [Общие сведения о конфигурациях групп безопасности сети для Управления API Azure](./api-management-using-with-vnet.md#-common-network-configuration-issues)
 
 - [Как включить журналы потоков NSG](../network-watcher/network-watcher-nsg-flow-logging-portal.md)
 
@@ -160,7 +160,7 @@ ms.locfileid: "101652374"
 
 - [Подробные сведения о брандмауэре веб-приложения Azure в Шлюзе приложений Azure](../web-application-firewall/ag/ag-overview.md)
 
-- [Общие сведения о Шлюзе приложений Azure](/azure/application-gateway/overview)
+- [Общие сведения о Шлюзе приложений Azure](../application-gateway/overview.md)
 
 **Ответственность**: Customer
 
@@ -174,7 +174,7 @@ ms.locfileid: "101652374"
 
 - [Основные сведения о тегах служб и их использование](../virtual-network/service-tags-overview.md)
 
-- [Порты, необходимые для Управления API](https://docs.microsoft.com/azure/api-management/api-management-using-with-vnet#-common-network-configuration-issues)
+- [Порты, необходимые для Управления API](./api-management-using-with-vnet.md#-common-network-configuration-issues)
 
 **Ответственность**: Customer
 
@@ -198,7 +198,7 @@ ms.locfileid: "101652374"
 
 **Руководство**. Используйте теги для групп безопасности сети и других ресурсов, связанных с сетевой безопасностью и потоком трафика. Для отдельных правил группы безопасности сети можно использовать поле "Описание", чтобы указать бизнес-потребности и длительность (и т. д.) любых правил, которые разрешают трафик в сеть и из нее.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 - [Создание виртуальной сети](../virtual-network/quick-create-portal.md)
 
@@ -212,9 +212,9 @@ ms.locfileid: "101652374"
 
 **Руководство**. Используйте журнал действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений в сетевых ресурсах, связанных с развертываниями Управления API Azure. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log-view)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -232,7 +232,7 @@ ms.locfileid: "101652374"
 
 Кроме того, можно включить и подключить данные к Azure Sentinel или сторонним системам управления информационной безопасностью и событиями безопасности (SIEM).
 
-- [Как настроить параметры диагностики](/azure/azure-monitor/platform/diagnostic-settings#create-in-azure-portal)
+- [Как настроить параметры диагностики](../azure-monitor/essentials/diagnostic-settings.md#create-in-azure-portal)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -252,9 +252,9 @@ ms.locfileid: "101652374"
 
 Для ведения журнала аудита на уровне управления журналы диагностики предоставляют подробные сведения об операциях и ошибках, которые важны для аудита, а также для устранения неполадок. Журналы диагностики отличаются от журналов действий. Журналы действий позволяют подробно проанализировать операции, выполненные с ресурсами Azure. Журналы диагностики дают представление об операциях, выполняемых ресурсом.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
-- [Как включить параметры диагностики для Управления API Azure](/Azure/api-management/api-management-howto-use-azure-monitor#resource-logs)
+- [Как включить параметры диагностики для Управления API Azure](./api-management-howto-use-azure-monitor.md#resource-logs)
 
 **Ответственность**: Customer
 
@@ -264,9 +264,9 @@ ms.locfileid: "101652374"
 
 **Руководство**. В Azure Monitor задайте период хранения для рабочей области Log Analytics согласно нормативным требованиям вашей организации. Используйте учетные записи хранения Azure для долгосрочного и архивного хранения.
 
-- [Задание параметров хранения журналов для рабочих областей Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Задание параметров хранения журналов для рабочих областей Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
-- [Архивация журналов в учетной записи хранения Azure](/azure/azure-monitor/platform/resource-logs#send-to-azure-storage)
+- [Архивация журналов в учетной записи хранения Azure](../azure-monitor/essentials/resource-logs.md#send-to-azure-storage)
 
 **Ответственность**: Customer
 
@@ -278,11 +278,11 @@ ms.locfileid: "101652374"
 
 При необходимости интегрируйте Управление API с Azure Application Insights и используйте его в качестве основного или дополнительного средства мониторинга, трассировки, создания отчетов и оповещений.
 
-- [Мониторинг и проверка журналов для службы Управления API Azure](/Azure/api-management/api-management-howto-use-azure-monitor)
+- [Мониторинг и проверка журналов для службы Управления API Azure](./api-management-howto-use-azure-monitor.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
-- [Общие сведения о рабочей области Log Analytics](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Общие сведения о рабочей области Log Analytics](../azure-monitor/logs/log-analytics-tutorial.md)
 
 - [Интеграция с Azure Application Insights](api-management-howto-app-insights.md)
 
@@ -300,11 +300,11 @@ ms.locfileid: "101652374"
 
 Кроме того, вы можете включить и подключить данные к Azure Sentinel или сторонним SIEM.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
-- [Как включить параметры диагностики для Управления API Azure](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor#resource-logs)
+- [Как включить параметры диагностики для Управления API Azure](./api-management-howto-use-azure-monitor.md#resource-logs)
 
-- [Настройка правила генерации оповещений для службы управления API Azure](/Azure/api-management/api-management-howto-use-azure-monitor#set-up-an-alert-rule-for-unauthorized-request)
+- [Настройка правила генерации оповещений для службы управления API Azure](./api-management-howto-use-azure-monitor.md#set-up-an-alert-rule)
 
 - [Просмотр метрик емкости для экземпляра службы Управления API Azure](api-management-capacity.md)
 
@@ -338,7 +338,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Получение определения роли каталога в Azure AD с помощью PowerShell](/powershell/module/az.resources/get-azroledefinition)
 
-- [Рекомендации по идентификации и доступу из Центра безопасности Azure](https://docs.microsoft.com/azure/security-center/recommendations-reference#identityandaccess-recommendations)
+- [Рекомендации по идентификации и доступу из Центра безопасности Azure](../security-center/recommendations-reference.md#identityandaccess-recommendations)
 
 **Ответственность**: Customer
 
@@ -419,7 +419,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Развертывание Privileged Identity Management (PIM)](../active-directory/privileged-identity-management/pim-deployment-plan.md)
 
-- [Общие сведения об обнаружении рисков в Azure AD](/azure/active-directory/reports-monitoring/concept-risk-events)
+- [Общие сведения об обнаружении рисков в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 **Ответственность**: Customer
 
@@ -505,7 +505,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. при отклонениях поведения учетной записи для входа в плоскость управления (портал Azure) Azure Active Directory используйте функции защиты идентификации (Azure AD) и средства обнаружения рисков, чтобы настроить автоматические ответы на обнаруженные подозрительные действия, связанные с удостоверениями пользователей. Вы также можете включить данные в Azure Sentinel для дальнейшего изучения.
 
-- [Просмотр рискованных входов в Azure AD](/azure/active-directory/reports-monitoring/concept-risky-sign-ins)
+- [Просмотр рискованных входов в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 - [Как настроить и включить политики рисков с помощью защиты идентификации](../active-directory/identity-protection/howto-identity-protection-configure-risk-policies.md)
 
@@ -519,7 +519,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. В настоящее время недоступно; защищенное хранилище в настоящее время не поддерживается для Управления API Azure.
 
-- [Список поддерживаемых служб защищенного хранилища](https://docs.microsoft.com/azure/security/fundamentals/customer-lockbox-overview#supported-services-and-scenarios-in-general-availability)
+- [Список поддерживаемых служб защищенного хранилища](../security/fundamentals/customer-lockbox-overview.md#supported-services-and-scenarios-in-general-availability)
 
 **Ответственность**: Customer
 
@@ -533,7 +533,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Используйте теги для пометки ресурсов Azure, в которых хранятся или обрабатываются конфиденциальные данные.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -543,11 +543,11 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Реализуйте отдельные подписки и группы управления для разработки, тестирования и производства. Экземпляры службы Управления API Azure должны быть разделены по виртуальным сетям и подсетям и помечены соответствующим образом.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
 - [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 - [Как использовать управление API Azure с виртуальными сетями](api-management-using-with-vnet.md)
 
@@ -571,7 +571,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Вызовы плоскости управления выполняются через Azure Resource Manager по протоколу TLS. Требуется допустимый веб-маркер JSON (JWT). Вызовы плоскости данных можно защищать с помощью TLS и одного из поддерживаемых механизмов проверки подлинности (например, сертификата клиента или JWT).
 
-- [Общие сведения о защите данных в службе Управления API Azure](/azure/api-management/api-management-security-controls#data-protection)
+- [Общие сведения о защите данных в службе Управления API Azure](#data-protection)
 
 - [Управление параметрами TLS в службе Управления API Azure](api-management-howto-manage-protocols-ciphers.md)
 
@@ -621,7 +621,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Используйте Azure Monitor с журналом действий Azure для создания оповещений об изменениях в приложениях Функций Azure и других важных и связанных с ними ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 - [Использование Azure Monitor и журнала действий Azure в службе Управления API Azure](api-management-howto-use-azure-monitor.md)
 
@@ -639,7 +639,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 Проверка базовой платформы и внесение исправлений в нее осуществляется корпорацией Майкрософт. Проверяйте доступные элементы управления безопасностью для сокращения количества уязвимостей, связанных с конфигурацией службы.
 
-- [Общие сведения об элементах управления безопасностью, доступных для Управления API Azure](/azure/api-management/api-management-security-controls)
+- [Общие сведения об элементах управления безопасностью, доступных для Управления API Azure]()
 
 **Ответственность**: Customer
 
@@ -675,7 +675,6 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 Проверка базовой платформы и внесение исправлений в нее осуществляется корпорацией Майкрософт. Клиенту следует проверять доступные элементы управления безопасностью для сокращения количества уязвимостей, связанных с конфигурацией службы.
 
-- [Общие сведения об элементах управления безопасностью, доступных для Управления API Azure](/azure/api-management/api-management-security-controls)
 
 **Ответственность**: Customer
 
@@ -693,7 +692,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Как создавать запросы с помощью Azure Resource Graph](../governance/resource-graph/first-query-portal.md)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
@@ -705,7 +704,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Применяйте к ресурсам Azure теги, чтобы логически классифицировать их на основе метаданных.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -719,11 +718,11 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 - Недопустимые типы ресурсов
 - Допустимые типы ресурсов
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
 - [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -785,7 +784,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -835,7 +834,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Определите и реализуйте стандартные конфигурации безопасности для службы Управления API Azure с помощью Политики Azure. Используйте псевдонимы Политик Azure в пространстве имен Microsoft.ApiManagement для создания настраиваемых политик, предназначенных для аудита или принудительного применения конфигурации для служб Управления API Azure.
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?preserve-view=true&view=azps-4.8.0)
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
@@ -939,7 +938,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Создание управляемого удостоверения для экземпляра Управления API](api-management-howto-use-managed-service-identity.md)
 
-- [Политика для проверки подлинности с помощью управляемого удостоверения](https://docs.microsoft.com/azure/api-management/api-management-authentication-policies#ManagedIdentity)
+- [Политика для проверки подлинности с помощью управляемого удостоверения](./api-management-authentication-policies.md#ManagedIdentity)
 
 **Ответственность**: Customer
 
@@ -1001,7 +1000,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Развертывание плоскости данных Управления API в нескольких регионах](api-management-howto-deploy-multi-region.md)
 
-- [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-disaster-recovery-backup-restore#calling-the-backup-and-restore-operations)
+- [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](./api-management-howto-disaster-recovery-backup-restore.md#calling-the-backup-and-restore-operations)
 
 - [Вызов операции резервного копирования Управления API](/rest/api/apimanagement/2019-01-01/apimanagementservice/backup)
 
@@ -1017,9 +1016,9 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 Управляемые удостоверения можно использовать для получения сертификатов из Azure Key Vault для имен личных доменов Управления API. Создайте резервную копию всех сертификатов, хранящихся в Azure Key Vault.
 
-- [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-disaster-recovery-backup-restore#calling-the-backup-and-restore-operations)
+- [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](./api-management-howto-disaster-recovery-backup-restore.md#calling-the-backup-and-restore-operations)
 
-- [Резервное копирование сертификатов Azure Key Vault](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultcertificate?view=azps-4.8.0&amp;preserve-view=true)
+- [Резервное копирование сертификатов Azure Key Vault](/powershell/module/az.keyvault/backup-azkeyvaultcertificate?preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -1041,7 +1040,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 **Руководство**. Служба Управления API Azure записывает резервные копии в учетные записи хранения Azure, принадлежащие клиенту. Чтобы защитить резервную копию, следуйте рекомендациям по безопасности службы хранилища Azure.
 
-- [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-disaster-recovery-backup-restore#calling-the-backup-and-restore-operations)
+- [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](./api-management-howto-disaster-recovery-backup-restore.md#calling-the-backup-and-restore-operations)
 
 - [Рекомендация по обеспечению безопасности для хранилища BLOB-объектов](../storage/blobs/security-recommendations.md)
 
@@ -1079,7 +1078,7 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Оповещения безопасности в Центре безопасности Azure](../security-center/security-center-alerts-overview.md)
 
-- [использование тегов для упорядочения ресурсов в Azure](/azure/azure-resource-manager/resource-group-using-tags)
+- [использование тегов для упорядочения ресурсов в Azure](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -1143,5 +1142,5 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

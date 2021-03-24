@@ -6,12 +6,12 @@ ms.reviewer: jasonh
 ms.topic: troubleshooting
 ms.date: 08/22/2019
 ms.custom: seodec18
-ms.openlocfilehash: af488cd253e8a8ebedd838aa5286185ea556f69d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b54b9d932505ada890ac21c1b8de3178ad2f0042
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942511"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867514"
 ---
 # <a name="troubleshoot-apache-spark-by-using-azure-hdinsight"></a>Устранение неполадок в Apache Spark с помощью Azure HDInsight
 
@@ -25,49 +25,49 @@ ms.locfileid: "98942511"
 
 1. Перейдите к **Spark2**  >  **configs**.
 
-    ![Выбор вкладки "Конфигурации"](./media/apache-troubleshoot-spark/apache-spark-ambari-config2.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config2.png" alt-text="Выбор вкладки &quot;Конфигурации&quot;" border="true":::
 
 1. В списке конфигураций выберите и разверните пользовательский параметр **-spark2 — значения по умолчанию**.
 
 1. Найдите параметр значения, который необходимо настроить, например **spark.executor.memory**. В этом случае значение **9728m** слишком велико.
 
-    ![Выбор конфигурации custom-spark-defaults](./media/apache-troubleshoot-spark/apache-spark-ambari-config4.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config4.png" alt-text="Выбор конфигурации custom-spark-defaults" border="true":::
 
 1. Задайте для этого параметра рекомендуемое значение. Рекомендуется использовать значение **2048m**.
 
 1. Сохраните это значение, а затем сохраните конфигурацию. Щелкните **Сохранить**.
 
-    ![Изменение значения на 2048m](./media/apache-troubleshoot-spark/apache-spark-ambari-config6a.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config6a.png" alt-text="Изменение значения на 2048m" border="true":::
 
     Запишите примечание об изменениях конфигурации, а затем нажмите кнопку **Сохранить**.
 
-    ![Примечание об изменениях](./media/apache-troubleshoot-spark/apache-spark-ambari-config6c.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config6c.png" alt-text="Примечание об изменениях" border="true":::
 
     Если нужно будет пересмотреть какую-либо конфигурацию, вы получите оповещение. Проверьте элементы, а затем нажмите кнопку **Proceed Anyway** (Продолжить).
 
-    ![Нажатие кнопки "Proceed Anyway" (Продолжить)](./media/apache-troubleshoot-spark/apache-spark-ambari-config6b.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config6b.png" alt-text="Нажатие кнопки &quot;Proceed Anyway&quot; (Продолжить)" border="true":::
 
 1. При каждом сохранении конфигурации вам будет предложено перезапустить службу. Нажмите кнопку **Перезапустить**.
 
-    ![Нажатие кнопки "Перезапустить"](./media/apache-troubleshoot-spark/apache-spark-ambari-config7a.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config7a.png" alt-text="Выберите перезапустить" border="true":::
 
     Подтвердите перезапуск.
 
-    ![Нажатие кнопки "Confirm Restart All" (Подтвердить перезапуск всех)](./media/apache-troubleshoot-spark/apache-spark-ambari-config7b.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config7b.png" alt-text="Нажатие кнопки &quot;Confirm Restart All&quot; (Подтвердить перезапуск всех)" border="true":::
 
     Вы можете просмотреть запущенные процессы.
 
-    ![Просмотр запущенных процессов](./media/apache-troubleshoot-spark/apache-spark-ambari-config7c.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config7c.png" alt-text="Просмотр запущенных процессов" border="true":::
 
 1. Вы можете добавить конфигурации. В списке конфигураций выберите **Custom-spark2-defaults**, а затем щелкните **Добавить свойство**.
 
-    ![Выбор "Добавить свойство"](./media/apache-troubleshoot-spark/apache-spark-ambari-config8.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config8.png" alt-text="Выбор &quot;Добавить свойство&quot;" border="true":::
 
 1. Определите новое свойство. Вы можете определить отдельное свойство с помощью диалогового окна для определенных параметров, например тип данных. Или вы можете определить несколько свойств с одним определением на строку.
 
     В этом примере свойство **spark.driver.memory** определяется со значением **4 ГБ**.
 
-    ![Определение нового свойства](./media/apache-troubleshoot-spark/apache-spark-ambari-config9.png)
+    :::image type="content" source="./media/apache-troubleshoot-spark/apache-spark-ambari-config9.png" alt-text="Определение нового свойства" border="true":::
 
 1. Сохраните конфигурацию и перезапустите службу, как описано на шагах 6 и 7.
 
@@ -77,7 +77,7 @@ ms.locfileid: "98942511"
 
 В первой ячейке Jupyter Notebook после директивы **%% Configure** Укажите конфигурации Spark в допустимом формате JSON. При необходимости измените фактические значения:
 
-![Добавление конфигурации](./media/apache-troubleshoot-spark/add-configuration-cell.png)
+:::image type="content" source="./media/apache-troubleshoot-spark/add-configuration-cell.png" alt-text="Добавление конфигурации" border="true":::
 
 ## <a name="how-do-i-configure-an-apache-spark-application-by-using-apache-livy-on-clusters"></a>Как настроить приложение Apache Spark с помощью Apache Livy в кластерах?
 

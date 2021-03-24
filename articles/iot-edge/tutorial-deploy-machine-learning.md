@@ -9,14 +9,16 @@ ms.topic: tutorial
 ms.service: iot-edge
 services: iot-edge
 ms.custom: mvc
-ms.openlocfilehash: fd297ec5cfb7831a438fc51e72e3c2fc163eff49
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 292c82624103fc2eae46d8aecb5e85b2181e7938
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88271283"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463057"
 ---
 # <a name="tutorial-deploy-azure-machine-learning-as-an-iot-edge-module-preview"></a>Руководство по Развертывание службы "Машинное обучение Azure" в качестве модуля IoT Edge (предварительная версия)
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 С помощью службы "Записные книжки Azure" вы можете разработать модуль машинного обучения и развернуть его на устройстве Linux под управлением Azure IoT Edge.
 Вы можете использовать модули IoT Edge для развертывания кода, который реализует вашу бизнес-логику непосредственно на устройствах IoT Edge. В этом руководстве рассматривается развертывание модуля машинного обучения Azure, который прогнозирует, когда устройство выходит из строя на основе данных моделируемой машинной температуры. Дополнительные сведения о службе "Машинное обучение Azure" в IoT Edge см. в [документации по этой службе](../machine-learning/how-to-deploy-and-where.md).
@@ -41,7 +43,7 @@ ms.locfileid: "88271283"
 
 Устройство Azure IoT Edge.
 
-* В качестве устройства IoT Edge можно использовать виртуальную машину Azure. Для этого выполните действия, описанные в кратком руководстве для устройства [Linux](quickstart-linux.md).
+* Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
 * Модуль Машинного обучения Azure не поддерживает контейнеры Windows.
 * Модуль Машинного обучения Azure также не поддерживает процессоры ARM.
 

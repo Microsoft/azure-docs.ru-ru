@@ -8,12 +8,12 @@ author: shashankbarsin
 ms.author: shasb
 description: В этой статье представлен обзор архитектуры Kubernetes агентов Azure с поддержкой ARC.
 keywords: Kubernetes, Arc, Azure, контейнеры
-ms.openlocfilehash: 5e53e99c492f08deab8dea89ec95190782661012
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ec95efdfef871777e7f53617b057529e301739dd
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102121904"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104953074"
 ---
 # <a name="azure-arc-enabled-kubernetes-agent-architecture"></a>Архитектура агента Kubernetes с включенной службой Arc Azure
 
@@ -93,5 +93,5 @@ ms.locfileid: "102121904"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Пошаговое руководство по [подключению кластера Kubernetes к службе "Дуга Azure](./connect-cluster.md)".
+* Пошаговое руководство по [подключению кластера Kubernetes к службе "Дуга Azure](./quickstart-connect-cluster.md)".
 * Узнайте больше о создании подключений между кластером и репозиторием Git в качестве [ресурса конфигурации с помощью Kubernetes Azure с включенной службой Arc](./conceptual-configurations.md).

@@ -16,12 +16,12 @@ ms.workload: infrastructure-services
 ms.date: 11/22/2020
 ms.author: allensu
 ms:custom: seodec18
-ms.openlocfilehash: 27a2b764ebf420c91c57c6f5f762f656b1040a91
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: 2052669d3d1ae2bdb7aa1687c4dc348c9420d126
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99594558"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615369"
 ---
 # <a name="quickstart-create-a-public-load-balancer-to-load-balance-vms-using-azure-powershell"></a>Краткое руководство. Создание общедоступной подсистемы балансировки нагрузки с помощью Azure PowerShell для распределения нагрузки между виртуальными машинами
 
@@ -368,7 +368,7 @@ New-AzPublicIpAddress @publicipout
 
 * Создайте новую интерфейсную IP-конфигурацию с помощью командлета [Add-AzLoadBalancerFrontendIpConfig](/powershell/module/az.network/add-azloadbalancerfrontendipconfig):
 
-* Создайте новый исходящий пул с помощью командлета [Add-AzLoadBalancerBackendAddressPoolConfig](/powershell/module/az.network/add-azloadbalancerbackendaddresspoolconfig). 
+* Создайте внутренний пул адресов для исходящего трафика с помощью командлета [Add-AzLoadBalancerBackendAddressPoolConfig](/powershell/module/az.network/add-azloadbalancerbackendaddresspoolconfig). 
 
 * Примените пул и интерфейсный IP-адрес к подсистеме балансировки нагрузки с помощью командлета [Set-AzLoadBalancer](/powershell/module/az.network/set-azloadbalancer).
 *  Создайте правило для исходящего трафика для исходящего внутреннего пула с помощью командлета [Add-AzLoadBalancerOutboundRuleConfig](/powershell/module/az.network/new-azloadbalanceroutboundruleconfig). 

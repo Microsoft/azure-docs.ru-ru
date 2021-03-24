@@ -6,12 +6,12 @@ ms.author: sumuth
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 03/10/2020
-ms.openlocfilehash: e0d1789d61bbe57c735f4dd2a70a1c2a8f183d90
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e4b6a6090bf0e5e332a960cba8ec565df9dd55c2
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98881067"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872274"
 ---
 # <a name="private-link-for-azure-database-for-postgresql-single-server"></a>Частная ссылка на сервер базы данных Azure для PostgreSQL-Single
 
@@ -84,7 +84,8 @@ Data ex-фильтрация в базе данных Azure для PostgreSQL Si
 
 ## <a name="use-cases-of-private-link-for-azure-database-for-postgresql"></a>Варианты использования частной ссылки для базы данных Azure для PostgreSQL
 
-Клиенты могут подключаться к частной конечной точке из той же виртуальной сети, одноранговой виртуальной сети в том же регионе или через подключение между виртуальными сетями в разных регионах. Кроме того, клиенты могут подключаться из локальной среды с помощью ExpressRoute, частного пиринга или VPN-туннелирования. Ниже приведена упрощенная схема, на которой показаны распространенные варианты использования.
+
+Клиенты могут подключаться к частной конечной точке из той же виртуальной сети, [одноранговой виртуальной сети](../virtual-network/virtual-network-peering-overview.md) в одном регионе или в разных регионах или через [подключение между виртуальными](../vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal.md) сетями в разных регионах. Кроме того, клиенты могут подключаться из локальной среды с помощью ExpressRoute, частного пиринга или VPN-туннелирования. Ниже приведена упрощенная схема, на которой показаны распространенные варианты использования.
 
 :::image type="content" source="media/concepts-data-access-and-security-private-link/show-private-link-overview.png" alt-text="Выберите Общие сведения о конечной точке частного назначения":::
 

@@ -1,19 +1,19 @@
 ---
 title: Использование образов клиентов Windows в Azure
 description: Узнайте, как использовать преимущества подписки Visual Studio для развертывания Windows 7, Windows 8 или Windows 10 в Azure в сценариях разработки и тестирования.
-author: cynthn
+author: mimckitt
 ms.subservice: imaging
 ms.service: virtual-machines
 ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 12/15/2017
-ms.author: cynthn
-ms.openlocfilehash: 21038a8d1eabfcca21329c093b866607f0343070
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.author: mimckitt
+ms.openlocfilehash: 7879e355573d2b9952728828bd3780094a919fe3
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103200000"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869061"
 ---
 # <a name="use-windows-client-in-azure-for-devtest-scenarios"></a>Использование клиента Windows в Azure для сценариев разработки и тестирования
 В сценариях разработки и тестирования Azure можно использовать Windows 7, Windows 8 или Windows 10 Корпоративная (x64) при условии, что у вас есть соответствующая подписка Visual Studio (прежнее название — MSDN). 
@@ -28,6 +28,9 @@ ms.locfileid: "103200000"
 
 ## <a name="eligible-offers-and-client-images"></a>Подходящие предложения и образы клиентов
 В следующей таблице приведены идентификаторы предложений, которые можно использовать для развертывания образов клиентов Windows с помощью Azure Marketplace. Образы клиента Windows доступны только для следующих предложений. 
+
+> [!NOTE]
+> Предложения образов находятся в разделе **клиент Windows** в Azure Marketplace. Используйте **клиент Windows** при поиске клиентских образов, доступных подписчикам Visual Studio. 
 
 | Название предложения | Номер предложения | Доступные образы клиента | 
 |:--- |:---:|:---:|
@@ -46,5 +49,5 @@ ms.locfileid: "103200000"
 - Или щелкните **Выставление счетов** и выберите свой идентификатор подписки. Идентификатор предложения отобразится в окне *Выставление счетов*. 
 - Идентификатор предложения можно также просмотреть на [вкладке "подписки](https://account.windowsazure.com/Subscriptions) " портала учетных записей Azure: ![ сведения об идентификаторе предложения на портале учетных записей Azure.](./media/client-images/offer-id-azure-account-portal.png) 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Теперь вы можете развернуть виртуальные машины с помощью [PowerShell](quick-create-powershell.md), [шаблонов Resource Manager](ps-template.md) или [Visual Studio](../../azure-resource-manager/templates/create-visual-studio-deployment-project.md).

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 75d219a207fef4f1f122799af5f4f4ef2765bca4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4fc26d8e154dc0a58bb3436a8161d2e21efa2b86
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101723866"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952020"
 ---
 # <a name="azure-security-baseline-for-application-gateway"></a>Базовый план безопасности Azure для шлюза приложений
 
@@ -60,7 +60,7 @@ ms.locfileid: "101723866"
 
 - [Общие сведения о безопасности сети, предоставляемой центром безопасности Azure](../security-center/security-center-network-recommendations.md)
 
-- [Вопросы и ответы по диагностике и ведению журнала для шлюза приложений Azure](/azure/application-gateway/application-gateway-faq#what-types-of-logs-does-application-gateway-provide)
+- [Вопросы и ответы по диагностике и ведению журнала для шлюза приложений Azure](./application-gateway-faq.yml#what-types-of-logs-does-application-gateway-provide)
 
 **Ответственность**: Customer
 
@@ -118,7 +118,7 @@ ms.locfileid: "101723866"
 
 - [Общие сведения о безопасности сети, предоставляемой центром безопасности Azure](../security-center/security-center-network-recommendations.md)
 
-- [Вопросы и ответы по диагностике и ведению журнала для шлюза приложений Azure](/azure/application-gateway/application-gateway-faq#what-types-of-logs-does-application-gateway-provide)
+- [Вопросы и ответы по диагностике и ведению журнала для шлюза приложений Azure](./application-gateway-faq.yml#what-types-of-logs-does-application-gateway-provide)
 
 **Ответственность**: Customer
 
@@ -140,7 +140,7 @@ ms.locfileid: "101723866"
 
 - [Развертывание WAF Azure](../web-application-firewall/ag/create-waf-policy-ag.md)
 
-- [Общие сведения о облачной службе Barracuda WAF](https://docs.microsoft.com/azure/app-service/environment/app-service-app-service-environment-web-application-firewall#configuring-your-barracuda-waf-cloud-service)
+- [Общие сведения о облачной службе Barracuda WAF](../app-service/environment/app-service-app-service-environment-web-application-firewall.md#configuring-your-barracuda-waf-cloud-service)
 
 **Ответственность**: Customer
 
@@ -210,9 +210,9 @@ ms.locfileid: "101723866"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений сетевых параметров и ресурсов, связанных с развертываниями шлюза приложений Azure. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых параметров или ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -230,7 +230,7 @@ ms.locfileid: "101723866"
 
 Шлюз приложений Azure также предлагает встроенную интеграцию с Azure Application Insights. Application Insights собирает данные журнала, производительности и ошибок. Application Insights автоматически обнаруживает аномалии производительности и включает мощные средства анализа, помогающие диагностировать проблемы и понять, как используются веб-приложения. Вы можете включить непрерывный экспорт для экспорта данных телеметрии из Application Insights в централизованное расположение, чтобы хранить данные дольше стандартного срока хранения.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 - [Включение параметров диагностики для шлюза приложений Azure](application-gateway-diagnostics.md)
 
@@ -250,7 +250,7 @@ ms.locfileid: "101723866"
 
 Шлюз приложений Azure также предлагает встроенную интеграцию с Azure Application Insights. Application Insights собирает данные журнала, производительности и ошибок. Application Insights автоматически обнаруживает аномалии производительности и включает мощные средства анализа, помогающие диагностировать проблемы и понять, как используются веб-приложения. Вы можете включить непрерывный экспорт для экспорта данных телеметрии из Application Insights в централизованное расположение, чтобы хранить данные дольше стандартного срока хранения.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings-legacy)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 - [Включение параметров диагностики для шлюза приложений Azure](application-gateway-diagnostics.md)
 
@@ -266,7 +266,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. В Azure Monitor задайте период хранения для рабочей области Log Analytics согласно нормативным требованиям вашей организации. Используйте учетные записи хранения Azure для долгосрочного и архивного хранения.
 
-- [Задание параметров хранения журналов для рабочих областей Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Задание параметров хранения журналов для рабочих областей Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -280,7 +280,7 @@ ms.locfileid: "101723866"
 
 Кроме того, вы можете включить и подключить данные к Azure Sentinel или сторонним SIEM. 
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 - [Включение параметров диагностики для шлюза приложений Azure](application-gateway-diagnostics.md)
 
@@ -300,13 +300,13 @@ ms.locfileid: "101723866"
 
 - [Развертывание WAF Azure](../web-application-firewall/ag/create-waf-policy-ag.md)
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 - [Включение параметров диагностики для шлюза приложений Azure](application-gateway-diagnostics.md)
 
 - [Использование Azure Monitor для сетей](../azure-monitor/insights/network-insights-overview.md)
 
-- [Создание оповещений в Azure](/azure/azure-monitor/learn/tutorial-response)
+- [Создание оповещений в Azure](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -334,9 +334,9 @@ ms.locfileid: "101723866"
 
 **Руководство**. Azure Active Directory (Azure AD) содержит встроенные роли, которые должны быть явно назначены и доступны для запросов. Используйте модуль Azure AD PowerShell для выполнения нерегламентированных запросов для обнаружения учетных записей, входящих в группы администраторов.
 
-- [Как получить роль каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrole?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить роль каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole?preserve-view=true&view=azureadps-2.0)
 
-- [Как получить членов роли каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember?preserve-view=true&view=azureadps-2.0)
 
 **Ответственность**: Customer
 
@@ -444,7 +444,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверку доступа удостоверений Azure, чтобы эффективно управлять членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверять на регулярной основе, чтобы только у авторизованных пользователей был постоянный доступ.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -458,7 +458,7 @@ ms.locfileid: "101723866"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить необходимые оповещения в рабочей области Log Analytics.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -486,7 +486,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. Использование тегов для отслеживания ресурсов Azure, в которых хранятся или обрабатываются конфиденциальные данные. 
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -536,7 +536,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления доступом к плоскости управления шлюза приложений azure (портал Azure).
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 **Ответственность**: Customer
 
@@ -546,7 +546,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в рабочих экземплярах шлюза приложений Azure, а также в других критически важных или связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -604,7 +604,7 @@ ms.locfileid: "101723866"
 
 - [Как создавать запросы с помощью Azure Resource Graph](../governance/resource-graph/first-query-portal.md)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
@@ -667,7 +667,7 @@ ms.locfileid: "101723866"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -709,7 +709,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. Определение и реализация стандартных конфигураций безопасности для сетевых параметров, связанных с развертываниями шлюза приложений Azure. Используйте псевдонимы политик Azure в пространстве имен Microsoft. Network, чтобы создать настраиваемые политики для аудита или обеспечения конфигурации сети шлюзов приложений Azure, виртуальных сетей Azure и групп безопасности сети. Вы также можете использовать встроенное определение политики.
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?preserve-view=true&view=azps-4.8.0)
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
@@ -733,9 +733,9 @@ ms.locfileid: "101723866"
 
 **Руководство**. Если вы используете пользовательские определения политики Azure, используйте Azure DevOps или Azure Repos для безопасного хранения кода и управления им.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?preserve-view=true&view=azure-devops)
 
-- [Документация по Azure Repos](https://docs.microsoft.com/azure/devops/repos/?view=azure-devops&amp;preserve-view=true)
+- [Документация по Azure Repos](/azure/devops/repos/?preserve-view=true&view=azure-devops)
 
 **Ответственность**: Customer
 
@@ -817,7 +817,7 @@ ms.locfileid: "101723866"
 
 **Руководство**. при использовании брандмауэра веб-приложения Azure (WAF) можно настроить политики WAF. Политика WAF состоит из двух типов правил безопасности: настраиваемых правил, созданных клиентом, и управляемых наборов правил, которые являются коллекцией предварительно настроенных наборов правил, управляемых Azure. Наборы правил, управляемые Azure, позволяют легко развернуть защиту от типичного набора угроз безопасности. Этими наборами правил управляет Azure, а значит они быстро обновляются по мере необходимости для защиты от новых сигнатур атак.
 
-- [Общие сведения о наборах правил WAF, управляемых Azure](https://docs.microsoft.com/azure/web-application-firewall/ag/ag-overview#waf-policy-and-rules)
+- [Общие сведения о наборах правил WAF, управляемых Azure](../web-application-firewall/ag/ag-overview.md#waf-policy-and-rules)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -833,11 +833,11 @@ ms.locfileid: "101723866"
 
 В Azure DevOps Services используются многие функции службы хранилища Azure для обеспечения доступности данных в случае сбоя оборудования, нарушения работы службы или сбоя в регионе. Кроме того, команда Azure DevOps следует процедурам защиты данных от случайного или злонамеренного удаления.
 
-- [Сведения о доступности данных в Azure DevOps](https://docs.microsoft.com/azure/devops/organizations/security/data-protection?view=azure-devops#data-availability&amp;preserve-view=true)
+- [Сведения о доступности данных в Azure DevOps](/azure/devops/organizations/security/data-protection?preserve-view=true&view=azure-devops#data-availability)
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?preserve-view=true&view=azure-devops)
 
-- [Документация по Azure Repos](https://docs.microsoft.com/azure/devops/repos/?view=azure-devops&amp;preserve-view=true)
+- [Документация по Azure Repos](/azure/devops/repos/?preserve-view=true&view=azure-devops)
 
 **Ответственность**: Customer
 
@@ -963,5 +963,5 @@ ms.locfileid: "101723866"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

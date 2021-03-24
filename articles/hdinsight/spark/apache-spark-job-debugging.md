@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/23/2020
-ms.openlocfilehash: f332416a10aa86cb7e0bc7ba560537955d9f2faa
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0dd250f0a8f67d7e370b8ff453e9cff4d88b7896
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98930562"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866103"
 ---
 # <a name="debug-apache-spark-jobs-running-on-azure-hdinsight"></a>Отладка заданий Apache Spark в Azure HDInsight
 
@@ -28,20 +28,20 @@ ms.locfileid: "98930562"
 
 1. Запустите пользовательский интерфейс YARN. Выберите **Yarn** в разделе **панели мониторинга кластера**.
 
-    ![портал Azure запуска пользовательского интерфейса YARN](./media/apache-spark-job-debugging/launch-apache-yarn-ui.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/launch-apache-yarn-ui.png" alt-text="портал Azure запуска пользовательского интерфейса YARN" border="true":::
 
    > [!TIP]  
    > Также пользовательский интерфейс YARN можно открыть из пользовательского интерфейса Ambari. Чтобы запустить пользовательский интерфейс Ambari, выберите **Ambari Home** в разделе **панели мониторинга кластера**. В пользовательском интерфейсе Ambari перейдите по   >  **ссылке YARN Quick Links** > The Active диспетчер ресурсов > **Диспетчер ресурсов UI**.
 
 2. Так как задание Spark запущено с помощью записных книжек Jupyter, оно имеет имя **ремотеспаркмагикс** (имя для всех приложений, запускаемых из записных книжек). Чтобы получить дополнительные сведения о задании, выберите идентификатор приложения в имени приложения. Это действие запускает представление приложения.
 
-    ![Сервер журнала Spark Поиск идентификатора приложения Spark](./media/apache-spark-job-debugging/find-application-id1.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/find-application-id1.png" alt-text="Сервер журнала Spark Поиск идентификатора приложения Spark" border="true":::
 
     Для таких приложений, запускаемых из записных книжек Jupyter, состояние всегда **выполняется** до тех пор, пока вы не закроете записную книжку.
 
 3. Из представления приложения вы можете ознакомиться с подробными сведениями о контейнерах, связанных с приложением, а также изучить журналы (stdout и stderr). Пользовательский интерфейс Spark можно запустить, щелкнув ссылку в графе **URL-адрес отслеживания**, как показано ниже.
 
-    ![Журнал событий загрузки сервера журнала Spark](./media/apache-spark-job-debugging/download-container-logs.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/download-container-logs.png" alt-text="Журнал событий загрузки сервера журнала Spark" border="true":::
 
 ## <a name="track-an-application-in-the-spark-ui"></a>Отслеживание приложения в пользовательском интерфейсе Spark
 
@@ -49,29 +49,29 @@ ms.locfileid: "98930562"
 
 1. Чтобы запустить пользовательский интерфейс Spark, в представлении приложения выберите ссылку на **URL-адрес отслеживания**, как показано на снимке экрана выше. Вы увидите все задания Spark, которые запускаются приложением, запущенным в Jupyter Notebook.
 
-    ![Вкладка "задания сервера журнала Spark"](./media/apache-spark-job-debugging/view-apache-spark-jobs.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/view-apache-spark-jobs.png" alt-text="Вкладка &quot;задания сервера журнала Spark&quot;" border="true":::
 
 2. Перейдите на вкладку **исполнители** , чтобы просмотреть сведения об обработке и хранении для каждого исполнителя. Кроме того, стек вызовов можно получить, выбрав ссылку **дампа потока** .
 
-    ![Вкладка "исполнители сервера журнала Spark"](./media/apache-spark-job-debugging/view-spark-executors.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/view-spark-executors.png" alt-text="Вкладка &quot;исполнители сервера журнала Spark&quot;" border="true":::
 
 3. Перейдите на вкладку **этапы** , чтобы просмотреть этапы, связанные с приложением.
 
-    ![Вкладка "этапы сервера журнала Spark"](./media/apache-spark-job-debugging/view-apache-spark-stages.png "Просмотр этапов Spark")
+    :::image type="content" source="./media/apache-spark-job-debugging/view-apache-spark-stages.png " alt-text="Вкладка &quot;этапы сервера журнала Spark&quot;" border="true":::
 
     Каждый этап может включать несколько задач. Вы можете просмотреть для них статистику выполнения, как показано ниже.
 
-    ![Сведения об вкладке "этапы сервера журнала Spark"](./media/apache-spark-job-debugging/view-spark-stages-details.png "Просмотр сведений о стадиях Spark")
+    :::image type="content" source="./media/apache-spark-job-debugging/view-spark-stages-details.png " alt-text="Сведения об вкладке &quot;этапы сервера журнала Spark&quot;" border="true":::
 
 4. На странице сведений об этапе вы можете открыть визуализацию DAG. Для этого разверните ссылку **Визуализация DAG** в верхней части страницы, как показано ниже.
 
-    ![Просмотр этапов Spark в формате визуализации DAG](./media/apache-spark-job-debugging/view-spark-stages-dag-visualization.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/view-spark-stages-dag-visualization.png" alt-text="Просмотр этапов Spark в формате визуализации DAG" border="true":::
 
     Направленный ациклический граф (DAG) представляет различные этапы в приложении. Каждый синий блок графа соответствует определенной операции Spark, вызываемой из приложения.
 
 5. На странице сведений об этапах можно также запустить представление временной шкалы для приложения. Для этого разверните ссылку **Представление временной шкалы** в верхней части страницы, как показано ниже.
 
-    ![Представление временной шкалы для этапов Spark](./media/apache-spark-job-debugging/view-spark-stages-event-timeline.png)
+    :::image type="content" source="./media/apache-spark-job-debugging/view-spark-stages-event-timeline.png" alt-text="Представление временной шкалы для этапов Spark" border="true":::
 
     На этом рисунке события Spark отображаются в виде временной шкалы. Это представление доступно на трех уровнях: для заданий, в пределах одного задания и в пределах этапа. На рисунке выше представлен пример представления временной шкалы для одного этапа.
 
@@ -92,14 +92,14 @@ ms.locfileid: "98930562"
 
 1. Чтобы запустить сервер журнала Spark, на странице **Обзор** выберите **сервер журнала Spark** в разделе **панели мониторинга кластера**.
 
-    ![портал Azure запустить сервер журнала Spark](./media/apache-spark-job-debugging/launch-spark-history-server.png "Запуск Сервер1 журнала Spark")
+    :::image type="content" source="./media/apache-spark-job-debugging/launch-spark-history-server.png " alt-text="портал Azure запустить сервер журнала Spark" border="true":::
 
    > [!TIP]  
    > Также пользовательский интерфейс сервера журнала Spark можно открыть из пользовательского интерфейса Ambari. Чтобы запустить пользовательский интерфейс Ambari, в колонке Обзор выберите **Ambari домой** в разделе **панели мониторинга кластера**. В пользовательском интерфейсе Ambari перейдите к разделу **Spark2**  >  **быстрые ссылки**  >  **Spark2 History Server UI**.
 
 2. Отобразится список всех завершенных приложений. Выберите идентификатор приложения для детализации приложения для получения дополнительных сведений.
 
-    ![Завершенные приложения сервера журнала Spark](./media/apache-spark-job-debugging/view-completed-applications.png "Запуск журнала Spark Server2")
+    :::image type="content" source="./media/apache-spark-job-debugging/view-completed-applications.png " alt-text="Завершенные приложения сервера журнала Spark" border="true":::
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -3,12 +3,12 @@ title: Модули бицеп
 description: Описывает определение и использование модуля, а затем способы использования областей модуля.
 ms.topic: conceptual
 ms.date: 03/17/2021
-ms.openlocfilehash: 6abe73b51c7762b01c0bf345c68a7110c063603a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2edeb5c96f771867f964963b2d27768291ae2d4a
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104609714"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889711"
 ---
 # <a name="use-bicep-modules"></a>Использование модулей Бицеп
 
@@ -78,9 +78,9 @@ module stgModule './storageAccount.bicep' = {
 output storageEndpoint object = stgModule.outputs.storageEndpoint
 ```
 
-- **module**: ключевое слово.
+- **module**. Ключевое слово.
 - **символьное имя** (стгмодуле): идентификатор модуля.
-- **файл модуля**: путь к модулю в этом примере указывается с помощью относительного пути (./сторажеаккаунт.бицеп). Все пути в Бицеп должны быть указаны с помощью разделителя каталогов косой черты (/), чтобы обеспечить последовательную компиляцию на разных платформах. Символ обратной косой черты Windows ( \\ ) не поддерживается.
+- **файл модуля**: путь к модулю в этом примере указывается с помощью относительного пути (./сторажеаккаунт.бицеп). Все пути в Bicep должны быть указаны с помощью разделителя каталогов косой черты (/), чтобы обеспечить последовательную компиляцию на разных платформах. Символ обратной косой черты Windows ( \\ ) не поддерживается.
 - Свойство **_Name_** (сторажедеплой) является обязательным при использовании модуля. Когда Бицеп создает шаблон IL, это поле используется как имя вложенного ресурса развертывания, созданного для модуля:
 
     ```json
@@ -89,7 +89,7 @@ output storageEndpoint object = stgModule.outputs.storageEndpoint
     "resources": [
       {
         "type": "Microsoft.Resources/deployments",
-        "apiVersion": "2019-10-01",
+        "apiVersion": "2020-10-01",
         "name": "storageDeploy",
         "properties": {
           ...

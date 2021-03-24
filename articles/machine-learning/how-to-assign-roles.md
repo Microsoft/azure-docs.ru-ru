@@ -11,12 +11,12 @@ ms.author: nigup
 author: nishankgu
 ms.date: 01/20/2020
 ms.custom: how-to, seodec18, devx-track-azurecli, contperf-fy21q2
-ms.openlocfilehash: 8420aecbc160fa6df2640d2ba0ae8a8b77702b67
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: bdd59c80408910bf8ca51bf787c8ff15dc2a4893
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98624546"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889762"
 ---
 # <a name="manage-access-to-an-azure-machine-learning-workspace"></a>Управление доступом к рабочей области Машинного обучения Azure
 
@@ -464,7 +464,7 @@ az role definition update --role-definition update_def.json --subscription <sub-
 - При наличии двух назначений ролей для одного и того же Azure Active Directory пользователя с конфликтующими разделами действий и отсутствия операции, перечисленные в неизменности одной роли, могут не действовать, если они также перечислены как действия в другой роли. Дополнительные сведения о том, как Azure анализирует назначения ролей, см. в статье [Определение того, как Azure RBAC определяет, имеет ли пользователь доступ к ресурсу](../role-based-access-control/overview.md#how-azure-rbac-determines-if-a-user-has-access-to-a-resource) .
 
 - Чтобы развернуть ресурсы для вычислений в виртуальной сети, необходимо явно иметь разрешения для следующих действий.
-    - `Microsoft.Network/virtualNetworks/join/action` в ресурсе виртуальной сети.
+    - `Microsoft.Network/virtualNetworks/*/read` в ресурсах виртуальной сети.
     - `Microsoft.Network/virtualNetworks/subnet/join/action` в ресурсе подсети.
     
     Дополнительные сведения об Azure RBAC с сетью см. в разделе [встроенные сетевые роли](../role-based-access-control/built-in-roles.md#networking).

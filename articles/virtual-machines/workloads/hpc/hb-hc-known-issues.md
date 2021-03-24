@@ -8,19 +8,21 @@ ms.topic: article
 ms.date: 03/18/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: e8d191dfed5b33116dadaf34b17d5f6525060e13
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 297bc24c570298dddf10a101a0c0c528bddecc10
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104721201"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889830"
 ---
 # <a name="known-issues-with-h-series-and-n-series-vms"></a>Известные проблемы с виртуальными машинами серий H и N
 
 В этой статье вы попытаетесь перечислить последние распространенные проблемы и их решения при использовании виртуальных машин HPC и GPU серии [H](../../sizes-hpc.md) и [N](../../sizes-gpu.md) .
 
 ## <a name="mofed-installation-on-ubuntu"></a>Установка МОФЕД в Ubuntu
-В Ubuntu-18,04 версия ядра 5.4.0-1041-Azure несовместима с МОФЕД версиями 5.2-2 и 5.2-1.0.4.0. Рекомендуется выполнить откат к ядру версии 5.4.0-1040-Azure или использовать образ Marketplace с более старым ядром и не обновлять ядро. Эта проблема должна быть решена с помощью более новой МОФЕД (подлежит уточнению).
+В Ubuntu-18,04, Mellanox ОФЕД показал несовместимость с версиями ядра `5.4.0-1039-azure #42` и более поздних версий, что приводит к увеличению времени загрузки виртуальной машины до 30 минут. Это было сообщено как для Mellanox ОФЕД Versions 5.2-1.0.4.0, так и 5.2-2.2.0.0.
+Временное решение — использование **канонического образа: UbuntuServer: 18_04-LTS-Gen2:18.04.202101290** Marketplace или более ранней версии, а не для обновления ядра.
+Эта проблема должна быть решена с помощью более новой МОФЕД (подлежит уточнению).
 
 ## <a name="known-issues-on-hbv3"></a>Известные проблемы в HBv3
 - В настоящее время InfiniBand поддерживается только на виртуальной машине 120 Core (Standard_HB120rs_v3).
@@ -117,7 +119,7 @@ echo 3 > /proc/sys/vm/drop_caches [cleans page-cache and slab objects]
 ```
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения об оптимальной настройке рабочих нагрузок для производительности и масштабируемости см. в статье с обзором виртуальных машин серии [HB](hb-series-overview.md) и [HC](hc-series-overview.md).
 - Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).

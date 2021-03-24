@@ -12,14 +12,17 @@ ms.date: 03/03/2021
 ms.author: yulili
 ms.custom: references_regions
 zone_pivot_groups: programming-languages-speech-services-nomore-variant
-ms.openlocfilehash: 8c50bb2c6b4e702a76b22302e7d16247f8bf5b40
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 15fa1dd230b7f07846653278533805fa66ed2195
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104654328"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870401"
 ---
 # <a name="get-facial-pose-events"></a>Получение событий лица, налагаемых лиц
+
+> [!NOTE]
+> Висеме работает только для `en-US-AriaNeural` голоса в регионе "Западная часть США ( `westus` )" сейчас и будет доступен для всех `en-US` голосов в конце апреля, 2021.
 
 Висеме — это визуальное описание phoneme в речевом языке.
 Он определяет расположение лица и рот при произнесении слова.

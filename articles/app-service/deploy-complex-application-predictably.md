@@ -5,12 +5,12 @@ ms.assetid: bb51e565-e462-4c60-929a-2ff90121f41d
 ms.topic: article
 ms.date: 01/06/2016
 ms.custom: seodec18
-ms.openlocfilehash: 8742b590af89954cb8480e5282827bcd5228673b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: aec23c28e075dd38fa65f1315f9abd9e21cdc9cb
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101095829"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951476"
 ---
 # <a name="provision-and-deploy-microservices-predictably-in-azure"></a>Предсказуемые подготовка и развертывание микрослужб в Azure
 В этом руководстве описано, как предсказуемо с помощью шаблонов групп ресурсов JSON и скриптов PowerShell подготовить и развернуть приложение, состоящее из [микрослужб](https://en.wikipedia.org/wiki/Microservices), в [службу приложений Azure](https://azure.microsoft.com/services/app-service/) как единое целое. 
@@ -45,7 +45,7 @@ ms.locfileid: "101095829"
 Этот [инструмент предварительного просмотра](https://resources.azure.com) позволяет изучать определения JSON всех групп ресурсов в подписке и отдельных ресурсов. Этот инструмент предназначен для изменения определений JSON ресурса, удаления всей иерархии ресурсов и создания новых ресурсов.  Сведения, доступные в этом средстве, очень полезны для создания шаблонов, так как они показывают, какие свойства необходимо задать для конкретного типа ресурса, правильные значения и т. д. Вы даже можете создать группу ресурсов на [портале Azure](https://portal.azure.com/), а затем проверить определения JSON в средстве обозревателя, чтобы помочь вам темплатизе группу ресурсов.
 
 ### <a name="deploy-to-azure-button"></a>Кнопка "Развертывание в Azure"
-При использовании GitHub для управления версиями можно поместить кнопку [Deploy to Azure](https://docs.microsoft.com/azure/azure-resource-manager/templates/deploy-to-azure-button) (Развернуть в Azure) в свой файл README.MD, которая обеспечивает готовый пользовательский интерфейс развертывания в Azure. Хотя это можно сделать для любого простого приложения, этот параметр можно расширить, чтобы организовать развертывание группы ресурсов как единого целого, помещая файл azuredeploy.json в корневой репозиторий. Этот файл JSON, который содержит шаблон группы ресурсов, используется кнопкой "Развертывание в Azure" для создания группы ресурсов. Например, см. образец [ToDoApp](https://github.com/azure-appservice-samples/ToDoApp), который будет использоваться в этом руководстве.
+При использовании GitHub для управления версиями можно поместить кнопку [Deploy to Azure](../azure-resource-manager/templates/deploy-to-azure-button.md) (Развернуть в Azure) в свой файл README.MD, которая обеспечивает готовый пользовательский интерфейс развертывания в Azure. Хотя это можно сделать для любого простого приложения, этот параметр можно расширить, чтобы организовать развертывание группы ресурсов как единого целого, помещая файл azuredeploy.json в корневой репозиторий. Этот файл JSON, который содержит шаблон группы ресурсов, используется кнопкой "Развертывание в Azure" для создания группы ресурсов. Например, см. образец [ToDoApp](https://github.com/azure-appservice-samples/ToDoApp), который будет использоваться в этом руководстве.
 
 ## <a name="get-the-sample-resource-group-template"></a>Получение образца шаблона группы ресурсов
 Теперь давайте сразу к делу.
@@ -105,7 +105,7 @@ ms.locfileid: "101095829"
 > 
 > 
 
-#### <a name="sql-server"></a>SQL Server
+#### <a name="sql-server"></a>SQL Server
 Затем щелкните ресурс SQL Server с именем **SQLServer** в структуре JSON.
 
 ![Показывает SQL Server ресурс с именем SQLServer в структуре JSON.](./media/app-service-deploy-complex-application-predictably/examinejson-4-sqlserver.png)

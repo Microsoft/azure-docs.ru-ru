@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 01/27/2021
-ms.openlocfilehash: f83767813ea3923d85db2ca3f0164776c610525e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 85a4d6390087100d8d9521f6ac20dbace3a711eb
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98955026"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104955947"
 ---
 # <a name="javascript-code-samples-for-azure-cognitive-search"></a>Примеры кода JavaScript для Azure Когнитивный поиск
 
@@ -39,7 +39,6 @@ ms.locfileid: "98955026"
 | [индексаторов](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/search/search-documents/samples/javascript/src/indexers) |  Демонстрирует создание, обновление, получение, перечисление, сброс и удаление [индексаторов](search-indexer-overview.md).|
 | [Набор навыков](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/search/search-documents/samples/javascript/src/skillSets) |   Демонстрирует создание, обновление, получение, перечисление и удаление [навыков](cognitive-search-working-with-skillsets.md) , присоединенных индексаторов, и выполнение обогащения на основе искусственного интеллекта во время индексирования. |
 | [synonymMaps](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/search/search-documents/samples/javascript/src/synonymMaps) | Демонстрирует создание, обновление, получение, перечисление и удаление [сопоставлений синонимов](search-synonyms.md).  |
-| [Запросы](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/search/search-documents/samples/javascript/src/readonlyQuery.js) | Демонстрирует выполнение запроса к открытому индексу только для чтения, размещенному корпорацией Майкрософт.  |
 
 ### <a name="typescript-samples"></a>Примеры TypeScript
 
@@ -50,7 +49,6 @@ ms.locfileid: "98955026"
 | [индексаторов](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/search/search-documents/samples/typescript/src/indexers) |  Демонстрирует создание, обновление, получение, перечисление, сброс и удаление [индексаторов](search-indexer-overview.md).|
 | [Набор навыков](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/search/search-documents/samples/typescript/src/skillSets) |   Демонстрирует создание, обновление, получение, перечисление и удаление [навыков](cognitive-search-working-with-skillsets.md) , присоединенных индексаторов, и выполнение обогащения на основе искусственного интеллекта во время индексирования. |
 | [synonymMaps](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/search/search-documents/samples/typescript/src/synonymMaps) | Демонстрирует создание, обновление, получение, перечисление и удаление [сопоставлений синонимов](search-synonyms.md).  |
-| [Запросы](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/search/search-documents/samples/typescript/src/readonlyQuery.ts) | Демонстрирует выполнение запроса к открытому индексу только для чтения, размещенному корпорацией Майкрософт.  |
 
 ## <a name="doc-samples"></a>Примеры документов
 

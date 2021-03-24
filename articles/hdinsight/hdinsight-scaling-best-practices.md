@@ -6,12 +6,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020
 ms.date: 04/29/2020
-ms.openlocfilehash: 3524b5d2274c52aa94fa1c3420fb0d3245d9b730
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6e6c692e8fc13d1703df44c99e9969ba4db5f119
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98932059"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872104"
 ---
 # <a name="scale-azure-hdinsight-clusters"></a>Масштабирование кластеров Azure HDInsight
 
@@ -36,7 +36,7 @@ HDInsight обеспечивает эластичность с помощью п
 |[Классический Azure CLI](hdinsight-administer-use-command-line.md)|`azure hdinsight cluster resize CLUSTERNAME NEWSIZE` |
 |[Портал Azure](https://portal.azure.com)|Откройте панель кластера HDInsight, выберите **Размер кластера** в меню слева, затем на панели размер кластера введите число рабочих узлов и нажмите кнопку Сохранить.|  
 
-![Параметр масштабирования кластера портал Azure](./media/hdinsight-scaling-best-practices/azure-portal-settings-nodes.png)
+:::image type="content" source="./media/hdinsight-scaling-best-practices/azure-portal-settings-nodes.png" alt-text="Параметр масштабирования кластера портал Azure":::
 
 С помощью любого из этих методов можно увеличивать или уменьшать масштаб кластера HDInsight за считанные минуты.
 
@@ -82,7 +82,7 @@ HDInsight обеспечивает эластичность с помощью п
 
     1. Выберите топологию, для которой нужно выполнить повторную балансировку, и нажмите кнопку **Перераспределить**. Введите задержку до завершения операции перераспределения.
 
-        ![HDInsight, Storm, масштабирование, перераспределение](./media/hdinsight-scaling-best-practices/hdinsight-portal-scale-cluster-storm-rebalance.png)
+        :::image type="content" source="./media/hdinsight-scaling-best-practices/hdinsight-portal-scale-cluster-storm-rebalance.png" alt-text="Повторное распределение масштабирования в HDInsight":::
 
   * с помощью программы командной строки.
 
@@ -130,13 +130,13 @@ HDInsight обеспечивает эластичность с помощью п
 3. В пользовательском интерфейсе Ambari выберите **YARN** в списке служб в меню слева.  
 4. На странице YARN выберите **быстрые ссылки** и наведите указатель мыши на активный головной узел, а затем выберите **Диспетчер ресурсов Пользовательский интерфейс**.
 
-    ![Быстрые ссылки Apache Ambari диспетчер ресурсов UI](./media/hdinsight-scaling-best-practices/resource-manager-ui1.png)
+    :::image type="content" source="./media/hdinsight-scaling-best-practices/resource-manager-ui1.png" alt-text="Быстрые ссылки Apache Ambari диспетчер ресурсов UI":::
 
 Вы можете получить прямой доступ к диспетчер ресурсов пользовательскому интерфейсу с помощью `https://<HDInsightClusterName>.azurehdinsight.net/yarnui/hn/cluster` .
 
 Вы увидите список заданий и их текущее состояние. На снимке экрана в настоящее время выполняется одно задание:
 
-![диспетчер ресурсов приложений пользовательского интерфейса](./media/hdinsight-scaling-best-practices/resourcemanager-ui-applications.png)
+:::image type="content" source="./media/hdinsight-scaling-best-practices/resourcemanager-ui-applications.png" alt-text="диспетчер ресурсов приложений пользовательского интерфейса":::
 
 Чтобы вручную завершить работу запущенного приложения, из оболочки SSH выполните команду ниже:
 
@@ -144,7 +144,7 @@ HDInsight обеспечивает эластичность с помощью п
 yarn application -kill <application_id>
 ```
 
-Пример:
+Например:
 
 ```bash
 yarn application -kill "application_1499348398273_0003"

@@ -1,37 +1,37 @@
 ---
 title: Подписывание HTTP-запроса с помощью C#
-description: Далее описана версия подписания HTTP-запроса на языке C# с подписью HMAC для Служб коммуникации Azure.
+description: В этом учебнике описана версия подписания HTTP-запроса на языке C# с подписью HMAC для Служб коммуникации Azure.
 author: alexandra142
 manager: soricos
 services: azure-communication-services
 ms.author: apistrak
-ms.date: 01/15/2021
+ms.date: 03/10/2021
 ms.topic: include
 ms.service: azure-communication-services
-ms.openlocfilehash: 3c1b56f81e5164bbdfa94fdaeca5f5f1f55b3b51
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 34c7df2b0e61536c0b5f0bc1e4a97d58d0d9c6a4
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100552042"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490520"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 Перед началом работы нужно сделать следующее:
-- Создайте учетную запись Azure с активной подпиской. Дополнительные сведения см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). 
-- установить [Visual Studio](https://visualstudio.microsoft.com/downloads/); 
-- Создайте ресурс Служб коммуникации Azure. Дополнительные сведения см. в разделе [Создание ресурса Служб коммуникации Azure](../../quickstarts/create-communication-resource.md). Для работы с данным руководством необходимо записать **resourceEndpoint** и **resourceAccessKey**.
 
-
+- Создайте учетную запись Azure с активной подпиской. Дополнительные сведения см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- Установить [Visual Studio](https://visualstudio.microsoft.com/downloads/).
+- Создайте ресурс Служб коммуникации Azure. Дополнительные сведения см. в [кратком руководстве по созданию ресурсов Служб коммуникации и управлению ими](../../quickstarts/create-communication-resource.md). Для работы с данным учебником необходимо записать **resourceEndpoint** и **resourceAccessKey**.
 
 ## <a name="sign-an-http-request-with-c"></a>Подписывание HTTP-запроса с помощью C#
+
 Проверка подлинности на основе ключа доступа использует для создания подписей HMAC для всех HTTP-запросов общий секретный ключ. Эта сигнатура создается с использованием алгоритма SHA256 и отправляется в заголовок `Authorization` с помощью схемы `HMAC-SHA256`. Например:
 
 ```
 Authorization: "HMAC-SHA256 SignedHeaders=date;host;x-ms-content-sha256&Signature=<hmac-sha256-signature>"
 ```
 
-В состав `hmac-sha256-signature` входит следующее: 
+В состав `hmac-sha256-signature` входит следующее:
 
 - HTTP-команда (например, `GET` или `PUT`)
 - Путь HTTP-запроса
@@ -39,8 +39,9 @@ Authorization: "HMAC-SHA256 SignedHeaders=date;host;x-ms-content-sha256&Signatur
 - Узел
 - x-ms-content-sha256
 
-## <a name="setting-up"></a>Настройка
-Ниже описано, как создать заголовок авторизации:
+## <a name="setup"></a>Настройка
+
+Ниже описано, как создать заголовок авторизации.
 
 ### <a name="create-a-new-c-application"></a>Создание нового приложения C#
 
@@ -50,7 +51,7 @@ Authorization: "HMAC-SHA256 SignedHeaders=date;host;x-ms-content-sha256&Signatur
 dotnet new console -o SignHmacTutorial
 ```
 
-Измените каталог на только что созданную папку приложения и выполните команду `dotnet build`, чтобы скомпилировать приложение.
+Измените каталог на созданную папку приложения. Используйте команду`dotnet build` для компиляции приложения.
 
 ```console
 cd SignHmacTutorial
@@ -59,13 +60,13 @@ dotnet build
 
 ## <a name="install-the-package"></a>Установка пакета
 
-Установите пакет `Newtonsoft.Json`, который используется для сериализации текстовой части:
+Установите пакет `Newtonsoft.Json`, который используется для сериализации текстовой части.
 
 ```console
 dotnet add package Newtonsoft.Json
 ```
 
-Обновите объявление метода `Main`, чтобы он поддерживал асинхронный код. Используйте следующий код:
+Обновите объявление метода `Main`, чтобы он поддерживал асинхронный код. Используйте следующий код.
 
 ```csharp
 using System;
@@ -82,21 +83,22 @@ namespace SignHmacTutorial
         static async Task Main(string[] args)
         {
             Console.WriteLine("Azure Communication Services - Sign an HTTP request Tutorial");
-            // Tutorial code goes here
+            // Tutorial code goes here.
         }
     }
 }
 
 ```
+
 ## <a name="create-a-request-message"></a>Создание сообщения запроса
 
-В этом примере мы подпишем запрос на создание нового удостоверения с помощью API проверки подлинности Служб коммуникации Azure (версии `2021-03-07`)
+В этом примере мы подпишем запрос на создание нового удостоверения с помощью API проверки подлинности Служб коммуникации Azure (версии `2021-03-07`).
 
-Добавьте в метод `Main` следующий код:
+Добавьте в метод `Main` следующий код.
 
 ```csharp
 string resourceEndpoint = "resourceEndpoint";
-//Create an uri you are going to call
+//Create a uri you are going to call.
 var requestUri = new Uri($"{resourceEndpoint}/identities?api-version=2021-03-07");
 //Endpoint identities?api-version=2021-03-07 accepts list of scopes as a body
 var body = new[] { "chat" }; 
@@ -109,7 +111,7 @@ var requestMessage = new HttpRequestMessage(HttpMethod.Post, requestUri)
 
 Замените `resourceEndpoint` фактическим значением конечной точки ресурса.
 
-## <a name="create-content-hash"></a>Создание хэша содержимого
+## <a name="create-a-content-hash"></a>Создание хэша содержимого
 
 Хэш содержимого является частью сигнатуры HMAC. Используйте следующий код, чтобы вычислить хэш содержимого. Этот метод можно добавить в `Progam.cs`, используя метод `Main`.
 
@@ -125,6 +127,7 @@ static string ComputeContentHash(string content)
 ```
 
 ## <a name="compute-a-signature"></a>Вычисление сигнатуры
+
 Используйте следующий код, чтобы создать метод для вычисления сигнатуры HMAC.
 
 ```csharp
@@ -140,47 +143,48 @@ static string ComputeContentHash(string content)
 }
 ```
 
-Замените `resourceAccessKey` ключом доступа к реальному ресурсу Служб коммуникации Azure.
+Замените `resourceAccessKey` ключом доступа к реальному ресурсу Служб коммуникации.
 
 ## <a name="create-an-authorization-header-string"></a>Создание строки заголовка авторизации
 
-Далее мы создадим строку, которая будет добавлена в заголовок авторизации:
+Далее мы создадим строку, которая будет добавлена в заголовок авторизации.
 
-1. Вычислите хэш содержимого
-2. Укажите метку времени в формате UTC
-3. Подготовьте строку к подписыванию
-4. Вычислите сигнатуру
-5. Объедините строку, которая будет использована в заголовке авторизации
+1. Вычислите хэш содержимого.
+1. Укажите метку времени в формате UTC.
+1. Подготовьте строку к подписыванию.
+1. Вычислите сигнатуру.
+1. Объедините строку, которая будет использована в заголовке авторизации.
  
-Добавьте в метод `Main` следующий код:
+Добавьте в метод `Main` следующий код.
 
 ```csharp
-// Compute a content hash
+// Compute a content hash.
 var contentHash = ComputeContentHash(serializedBody);
-//Specify the Coordinated Universal Time (UTC) timestamp
+//Specify the Coordinated Universal Time (UTC) timestamp.
 var date = DateTimeOffset.UtcNow.ToString("r", CultureInfo.InvariantCulture);
-//Prepare a string to sign
+//Prepare a string to sign.
 var stringToSign = $"POST\n{requestUri.PathAndQuery}\n{date};{requestUri.Authority};{contentHash}";
-//Compute the signature
+//Compute the signature.
 var signature = ComputeSignature(stringToSign);
-//Concatenate the string, which will be used in authorization header
+//Concatenate the string, which will be used in the authorization header.
 var authorizationHeader = $"HMAC-SHA256 SignedHeaders=date;host;x-ms-content-sha256&Signature={signature}";
 ```
 
 ## <a name="add-headers-to-requestmessage"></a>Добавление заголовков в requestMessage
 
-Используйте следующий код, чтобы добавить необходимые заголовки в `requestMessage`:
+Используйте следующий код, чтобы добавить необходимые заголовки в `requestMessage`.
 
 ```csharp
-//Add content hash header
+//Add a content hash header.
 requestMessage.Headers.Add("x-ms-content-sha256", contentHash);
-//add date header
+//Add a date header.
 requestMessage.Headers.Add("Date", date);
-//add Authorization header
+//Add an authorization header.
 requestMessage.Headers.Add("Authorization", authorizationHeader);
 ```
 
 ## <a name="test-the-client"></a>Тестирование клиента
+
 Вызовите конечную точку с помощью `HttpClient` и проверьте ответ.
 
 ```csharp

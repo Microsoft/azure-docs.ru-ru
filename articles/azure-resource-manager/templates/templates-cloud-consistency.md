@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.date: 12/09/2018
 ms.author: mavane
 ms.custom: seodec18, devx-track-azurecli
-ms.openlocfilehash: 806556a8da97ec84fe8141b95198b4a7da95c062
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 120e98ebebec1436c9171f6076baccd35be9b843
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96928364"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104888827"
 ---
 # <a name="develop-arm-templates-for-cloud-consistency"></a>Разработка шаблонов ARM для согласованности в облаке
 
@@ -83,7 +83,7 @@ ms.locfileid: "96928364"
 "resources": [
   {
      "type": "Microsoft.Resources/deployments",
-     "apiVersion": "2017-05-10",
+     "apiVersion": "2020-10-01",
      "name": "linkedTemplate",
      "properties": {
        "mode": "incremental",
@@ -133,7 +133,7 @@ Azure Resource Manager оценивает основной шаблон во в�
 "resources": [
   {
     "type": "Microsoft.Resources/deployments",
-    "apiVersion": "2019-10-01",
+    "apiVersion": "2020-10-01",
     "name": "shared",
     "properties": {
       "mode": "Incremental",

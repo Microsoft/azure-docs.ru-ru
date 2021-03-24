@@ -10,12 +10,12 @@ author: saachigopal
 ms.date: 10/20/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 03400173dd35660d6e7a98500b831a7c6aa4ebd7
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: ea282cb0fcf25f7ac5f17bb9e2f693d189320078
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521176"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889167"
 ---
 # <a name="train-a-model-by-using-a-custom-docker-image"></a>Обучение модели с помощью пользовательского образа DOCKER
 
@@ -106,7 +106,7 @@ fastai_env.docker.base_dockerfile = "./Dockerfile"
 > Машинное обучение Azure поддерживает только образы DOCKER, которые предоставляют следующее программное обеспечение:
 > * Ubuntu 16,04 или более поздней версии.
 > * Conda 4.5. # или более поздней версии.
-> * Python 3.5 +.
+> * Python 3.6 +.
 
 Дополнительные сведения о создании и управлении средой Машинное обучение Azure см. в разделе [Создание и использование программных сред](how-to-use-environments.md). 
 

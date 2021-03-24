@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: de32de5fc78919154bade3895cab6da82b175a93
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8fd058c88e11764a538f67fe49aba267e706bf11
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101740637"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951842"
 ---
 # <a name="azure-security-baseline-for-azure-kubernetes-service"></a>Базовый план безопасности Azure для службы Kubernetes Azure
 
@@ -114,7 +114,7 @@ ms.locfileid: "101740637"
 
 Если обнаружение и/или предотвращение вторжения на основе анализа полезной нагрузки или аналитики поведения не является обязательным, шлюз приложений Azure с WAF можно использовать и настроить в "режиме обнаружения" для ведения журнала предупреждений и угроз, или "режим предотвращения" для активной блокировки обнаруженных вторжений и атак.
 
-- [Ознакомьтесь с рекомендациями по защите кластера AKS с помощью WAF](https://docs.microsoft.com/azure/aks/operator-best-practices-network#secure-traffic-with-a-web-application-firewall-waf)
+- [Ознакомьтесь с рекомендациями по защите кластера AKS с помощью WAF](./operator-best-practices-network.md#secure-traffic-with-a-web-application-firewall-waf)
 
 - [Развертывание шлюза приложений Azure (Azure WAF)](../web-application-firewall/ag/application-gateway-web-application-firewall-portal.md)
 
@@ -158,7 +158,7 @@ ms.locfileid: "101740637"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Примеры политик Azure для работы в сети](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#network)
+- [Примеры политик Azure для работы в сети](../governance/policy/samples/built-in-policies.md#network)
 
 **Ответственность**: Customer
 
@@ -190,11 +190,11 @@ ms.locfileid: "101740637"
 
 Используйте журналы Azure Monitor, чтобы включить и запросить журналы из AKS основных компонентов, KUBE-аписервер и KUBE-Controller-Manager. Создание и администрирование узлов, на которых выполняется kubelet с помощью среды выполнения контейнеров, и развертывание приложений с помощью управляемого сервера API Kubernetes. 
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
-- [Enable and review Kubernetes master node logs in Azure Kubernetes Service (AKS)](/azure/aks/view-master-logs) (Включение и просмотр журналов главного узла Kubernetes в Службе Azure Kubernetes (AKS))
+- [Enable and review Kubernetes master node logs in Azure Kubernetes Service (AKS)](./view-control-plane-logs.md) (Включение и просмотр журналов главного узла Kubernetes в Службе Azure Kubernetes (AKS))
 
 **Ответственность**: Customer
 
@@ -232,13 +232,13 @@ ms.locfileid: "101740637"
 
 Разрешите и включите эти данные в Azure Sentinel или сторонние SIEM в соответствии с бизнес-требованиями Организации.
 
-- [Ознакомьтесь со схемой журнала, включая роли журнала.](/azure/aks/view-master-logs)
+- [Ознакомьтесь со схемой журнала, включая роли журнала.](./view-control-plane-logs.md)
 
-- [Общие сведения о Azure Monitor контейнерах](/azure/azure-monitor/insights/container-insights-overview)
+- [Общие сведения о Azure Monitor контейнерах](../azure-monitor/containers/container-insights-overview.md)
 
-- [Включение Azure Monitor для контейнеров](/azure/azure-monitor/insights/container-insights-onboard)
+- [Включение Azure Monitor для контейнеров](../azure-monitor/containers/container-insights-onboard.md)
 
-- [Enable and review Kubernetes master node logs in Azure Kubernetes Service (AKS)](/azure/aks/view-master-logs) (Включение и просмотр журналов главного узла Kubernetes в Службе Azure Kubernetes (AKS))
+- [Enable and review Kubernetes master node logs in Azure Kubernetes Service (AKS)](./view-control-plane-logs.md) (Включение и просмотр журналов главного узла Kubernetes в Службе Azure Kubernetes (AKS))
 
 **Ответственность**: Customer
 
@@ -265,7 +265,7 @@ ms.locfileid: "101740637"
 
 Включите также другие журналы аудита, например KUBE-Audit. 
 
-- [Как включить и проверить журналы главного узла Kubernetes в AKS](/azure/aks/view-master-logs)
+- [Как включить и проверить журналы главного узла Kubernetes в AKS](./view-control-plane-logs.md)
 
 **Ответственность**: Customer
 
@@ -287,7 +287,7 @@ ms.locfileid: "101740637"
 
 **Руководство**. Подключение экземпляров службы Azure Kubernetes Service (AKS) к Azure Monitor и настройка соответствующего срока хранения для рабочей области Azure log Analytics в соответствии с требованиями вашей организации к соответствию. 
 
-- [Задание параметров хранения журналов для рабочих областей Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Задание параметров хранения журналов для рабочих областей Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -301,11 +301,11 @@ ms.locfileid: "101740637"
 
 Просмотрите журналы, созданные AKS Master Components (KUBE-аписервер и KUBE-контроллерманажер) для устранения неполадок в приложении и службах. Включение и встроенные данные в Azure Sentinel или сторонние SIEM для централизованного управления журналами и мониторинга.
 
-- [Как включить и проверить журналы главного узла Kubernetes в AKS](/azure/aks/view-master-logs)
+- [Как включить и проверить журналы главного узла Kubernetes в AKS](./view-control-plane-logs.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
 **Ответственность**: Customer
 
@@ -333,7 +333,7 @@ ms.locfileid: "101740637"
 
 - [Справочное руководство по оповещениям системы безопасности](../security-center/alerts-reference.md)
 
-- [Оповещения для контейнеров — кластеры службы Kubernetes Azure](https://docs.microsoft.com/azure/security-center/alerts-reference#alerts-akscluster)
+- [Оповещения для контейнеров — кластеры службы Kubernetes Azure](../security-center/alerts-reference.md#alerts-akscluster)
 
 **Ответственность**: Customer
 
@@ -417,7 +417,7 @@ ms.locfileid: "101740637"
 
 **Руководство**. Использование единого входа для службы Azure Kubernetes Service (AKS) с интегрированной проверкой подлинности Azure Active Directory (Azure AD) для кластера AKS.
 
-- [Просмотр журналов Kubernetes, событий и метрик Pod в режиме реального времени](/azure/azure-monitor/insights/container-insights-livedata-overview)
+- [Просмотр журналов Kubernetes, событий и метрик Pod в режиме реального времени](../azure-monitor/containers/container-insights-livedata-overview.md)
 
 **Ответственность**: Customer
 
@@ -514,7 +514,7 @@ ms.locfileid: "101740637"
 **Руководство**. Интеграция проверки подлинности пользователей для службы Azure KUBERNETES (AKS) с Azure Active Directory (Azure AD). Создайте параметры диагностики для Azure AD, отправив журналы аудита и входа в рабочую область Azure Log Analytics. Настройте нужные оповещения (например, когда деактивированная учетная запись пытается войти в систему) в рабочей области Azure Log Analytics.
 - [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
-- [Создание, просмотр и Управление оповещениями журнала с помощью Azure Monitor](/azure/azure-monitor/platform/alerts-log)
+- [Создание, просмотр и Управление оповещениями журнала с помощью Azure Monitor](../azure-monitor/alerts/alerts-log.md)
 
 **Ответственность**: Customer
 
@@ -664,11 +664,11 @@ ms.locfileid: "101740637"
 
 Используйте журнал действий Azure для мониторинга кластеров AKS и связанных ресурсов на высоком уровне. Интегрируйтесь с Prometheus для просмотра метрик приложений и рабочих нагрузок, собираемых из узлов, и Kubernetes с помощью запросов для создания настраиваемых оповещений, панелей мониторинга и подробного анализа.
 
-- [Общие сведения о Azure Monitor контейнерах](/azure/azure-monitor/insights/container-insights-overview)
+- [Общие сведения о Azure Monitor контейнерах](../azure-monitor/containers/container-insights-overview.md)
 
-- [Включение Azure Monitor для контейнеров](/azure/azure-monitor/insights/container-insights-onboard)
+- [Включение Azure Monitor для контейнеров](../azure-monitor/containers/container-insights-onboard.md)
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
 **Ответственность**: Customer
 
@@ -704,7 +704,7 @@ ms.locfileid: "101740637"
 
 - [Узнайте, как обновления применяются к узлам кластера AKS под управлением Linux.](node-updates-kured.md)
 
-- [Обновление пула узлов AKS для кластеров AKS, использующих узлы Windows Server](https://docs.microsoft.com/azure/aks/use-multiple-node-pools#upgrade-a-node-pool)
+- [Обновление пула узлов AKS для кластеров AKS, использующих узлы Windows Server](./use-multiple-node-pools.md#upgrade-a-node-pool)
 
 - [Обновление образа узла службы Azure Kubernetes Service (AKS)](node-image-upgrade.md)
 
@@ -792,7 +792,7 @@ ms.locfileid: "101740637"
 
 - [Управляемые кластеры — обновление тегов](/rest/api/aks/managedclusters/updatetags)
 
-- [Укажите таинт, метку или тег для пула узлов](https://docs.microsoft.com/azure/aks/use-multiple-node-pools#specify-a-taint-label-or-tag-for-a-node-pool)
+- [Укажите таинт, метку или тег для пула узлов](./use-multiple-node-pools.md#specify-a-taint-label-or-tag-for-a-node-pool)
 
 **Ответственность**: Customer
 
@@ -887,7 +887,7 @@ ms.locfileid: "101740637"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -1030,7 +1030,7 @@ Azure применяет ежедневные исправления (включ
 
 - [Усиление безопасности для операционной системы узла агента AKS](security-hardened-vm-host-image.md)
 
-- [Изучение конфигурации состояния кластеров AKS](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#control-plane)
+- [Изучение конфигурации состояния кластеров AKS](./concepts-clusters-workloads.md#control-plane)
 
 - [Общие сведения о усилении безопасности в узлах виртуальных машин AKS](security-hardened-vm-host-image.md)
 
@@ -1070,7 +1070,7 @@ Azure применяет ежедневные исправления (включ
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Использование псевдонимов](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Использование псевдонимов](../governance/policy/concepts/definition-structure.md#aliases)
 
 **Ответственность**: Customer
 
@@ -1086,7 +1086,7 @@ Azure применяет ежедневные исправления (включ
 
 - [Общие сведения о усилении безопасности в узлах виртуальных машин AKS](security-hardened-vm-host-image.md)
 
-- [Изучение конфигурации состояния кластеров AKS](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#control-plane)
+- [Изучение конфигурации состояния кластеров AKS](./concepts-clusters-workloads.md#control-plane)
 
 **Ответственность**: Customer
 
@@ -1124,7 +1124,7 @@ Azure применяет ежедневные исправления (включ
 
 - [Основные понятия безопасности для приложений и кластеров в Службе Azure Kubernetes (AKS)](concepts-security.md)
 
-- [Использование Key Vault с кластером AKS](https://docs.microsoft.com/azure/aks/developer-best-practices-pod-security#limit-credential-exposure)
+- [Использование Key Vault с кластером AKS](./developer-best-practices-pod-security.md#limit-credential-exposure)
 
 **Ответственность**: Customer
 
@@ -1138,7 +1138,7 @@ Azure применяет ежедневные исправления (включ
 
 Субъекты-службы также можно использовать в кластерах AKS. Однако в конечном итоге кластеры, использующие субъекты-службы, могут достичь состояния, в котором необходимо обновить субъект-службу, чтобы обеспечить работу кластера. Управление субъектами-службами повышает сложность, поэтому вместо этого проще использовать управляемые удостоверения. Те же требования к разрешениям применяются и к субъектам-службам, и к управляемым удостоверениям.
 
-- [Общие сведения об управляемых удостоверениях и Key Vault с помощью службы Kubernetes Azure (AKS)](https://docs.microsoft.com/azure/aks/developer-best-practices-pod-security#limit-credential-exposure)
+- [Общие сведения об управляемых удостоверениях и Key Vault с помощью службы Kubernetes Azure (AKS)](./developer-best-practices-pod-security.md#limit-credential-exposure)
 
 - [Удостоверение Pod Azure AD](https://github.com/Azure/aad-pod-identity)
 
@@ -1170,9 +1170,9 @@ Azure применяет ежедневные исправления (включ
 
 - [Справочное руководство по оповещениям системы безопасности](../security-center/alerts-reference.md)
 
-- [Оповещения для контейнеров — кластеры службы Kubernetes Azure](https://docs.microsoft.com/azure/security-center/alerts-reference#alerts-akscluster)
+- [Оповещения для контейнеров — кластеры службы Kubernetes Azure](../security-center/alerts-reference.md#alerts-akscluster)
 
-- [AKS общей ответственности и наборов управляющих программ](https://docs.microsoft.com/azure/aks/support-policies#shared-responsibility)
+- [AKS общей ответственности и наборов управляющих программ](./support-policies.md#shared-responsibility)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -1194,9 +1194,9 @@ Azure применяет ежедневные исправления (включ
 
 - [Справочное руководство по оповещениям системы безопасности](../security-center/alerts-reference.md)
 
-- [Оповещения для контейнеров — кластеры службы Kubernetes Azure](https://docs.microsoft.com/azure/security-center/alerts-reference#alerts-akscluster)
+- [Оповещения для контейнеров — кластеры службы Kubernetes Azure](../security-center/alerts-reference.md#alerts-akscluster)
 
-- [AKS общей ответственности и наборов управляющих программ](https://docs.microsoft.com/azure/aks/support-policies#shared-responsibility)
+- [AKS общей ответственности и наборов управляющих программ](./support-policies.md#shared-responsibility)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -1238,7 +1238,7 @@ Azure применяет ежедневные исправления (включ
 
 - [Резервное копирование Key Vault секретов](/powershell/module/azurerm.keyvault/backup-azurekeyvaultsecret)
 
-- [Включение Azure Backup](/azure/backup/)
+- [Включение Azure Backup](../backup/index.yml)
 
 **Ответственность**: Customer
 
@@ -1250,15 +1250,15 @@ Azure применяет ежедневные исправления (включ
 
 Периодически выполняйте восстановление данных Key Vault сертификатов, ключей, управляемых учетных записей хранения и секретов с помощью команд PowerShell.
 
-- [Восстановление сертификатов Key Vault](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultcertificate?view=azps-4.8.0&amp;preserve-view=true)
+- [Восстановление сертификатов Key Vault](/powershell/module/az.keyvault/restore-azkeyvaultcertificate?amp;preserve-view=true&view=azps-4.8.0)
 
-- [Восстановление ключей Key Vault](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Восстановление ключей Key Vault](/powershell/module/az.keyvault/restore-azkeyvaultkey?amp;preserve-view=true&view=azps-4.8.0)
 
 - [Восстановление Key Vault управляемых учетных записей хранения](/powershell/module/az.keyvault/backup-azkeyvaultmanagedstorageaccount)
 
-- [Восстановление секретов Key Vault](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultsecret?view=azps-4.8.0&amp;preserve-view=true)
+- [Восстановление секретов Key Vault](/powershell/module/az.keyvault/restore-azkeyvaultsecret?amp;preserve-view=true&view=azps-4.8.0)
 
-- [Как восстановить файлы из резервной копии виртуальной машины Azure](/azure/backup/backup-azure-restore-files-from-vm)
+- [Как восстановить файлы из резервной копии виртуальной машины Azure](../backup/backup-azure-restore-files-from-vm.md)
 
 **Ответственность**: Customer
 
@@ -1272,7 +1272,7 @@ Azure применяет ежедневные исправления (включ
 
 - [Общие сведения об Azure Шифрование службы хранилища](../storage/common/storage-service-encryption.md)
 
-- [Как включить обратимое удаление в Key Vault](https://docs.microsoft.com/azure/storage/blobs/soft-delete-blob-overview?tabs=azure-portal)
+- [Как включить обратимое удаление в Key Vault](../storage/blobs/soft-delete-blob-overview.md?tabs=azure-portal)
 
 **Ответственность**: Customer
 
@@ -1371,5 +1371,5 @@ Azure применяет ежедневные исправления (включ
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

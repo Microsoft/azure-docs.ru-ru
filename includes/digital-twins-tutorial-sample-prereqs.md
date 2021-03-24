@@ -5,12 +5,12 @@ ms.service: digital-twins
 ms.topic: include
 ms.date: 1/20/2021
 ms.author: baanders
-ms.openlocfilehash: 56cda6158b7eeabaf0ce9e71decd0a9aa9f0419c
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: 43cc3dfc5b425df6d9dd5e2c2f35a792907ccdea
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103463913"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "103621965"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -21,6 +21,9 @@ ms.locfileid: "103463913"
 ### <a name="get-required-resources"></a>Необходимые ресурсы
 
 Для этого учебника необходимо **установить на компьютере разработки [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) как минимум версии 16.5**. Если у вас установлена более старая версия, можно открыть на компьютере приложение *Visual Studio Installer* и выполнить инструкции по обновлению установки.
+
+>[!NOTE]
+> Убедитесь, что ваша установка Visual Studio 2019 включает **[рабочую нагрузку разработки Azure](/dotnet/azure/configure-visual-studio)** . Эта рабочая нагрузка позволяет приложению публиковать функции Azure и выполнять другие задачи разработки Azure.
 
 Этот учебник создан на основе примера проекта, написанного на C#. Пример находится здесь: [Комплексные примеры для Azure Digital Twins](/samples/azure-samples/digital-twins-samples/digital-twins-samples) **Получите пример проекта** на компьютер. Для этого перейдите по соответствующей ссылке и нажмите кнопку *Browse code* (Просмотреть код) под заголовком. Вы перейдете в репозиторий GitHub для примеров, которые можно скачать как *ZIP*-файлы. Для этого нажмите кнопку *Код* и выберите элемент *Скачать ZIP-файл*.
 

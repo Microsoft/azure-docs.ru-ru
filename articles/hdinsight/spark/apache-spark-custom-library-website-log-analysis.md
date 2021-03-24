@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 12/27/2019
-ms.openlocfilehash: 591804a31c100e5c8211ec6d73fc483c9ac85c72
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d99bf914d3ef746fe328d2447426565fc15e52b4
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940307"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866324"
 ---
 # <a name="analyze-website-logs-using-a-custom-python-library-with-apache-spark-cluster-on-hdinsight"></a>Анализ журналов веб-сайтов с помощью пользовательской библиотеки Python и кластера Apache Spark в HDInsight
 
@@ -30,11 +30,11 @@ ms.locfileid: "98940307"
 
 1. Создайте новую записную книжку. Выберите **создать**, а затем **PySpark**.
 
-    ![Создание нового Jupyter Notebook Apache](./media/apache-spark-custom-library-website-log-analysis/hdinsight-create-jupyter-notebook.png "Создание нового Jupyter Notebook")
+    :::image type="content" source="./media/apache-spark-custom-library-website-log-analysis/hdinsight-create-jupyter-notebook.png " alt-text="Создание нового Jupyter Notebook Apache" border="true"::: Записная книжка "border =" true ":::
 
 1. Будет создана и открыта записная книжка с именем Untitled.pynb. Выберите имя записной книжки вверху и введите понятное имя.
 
-    ![Указание имени для записной книжки](./media/apache-spark-custom-library-website-log-analysis/hdinsight-name-jupyter-notebook.png "Указание имени для записной книжки")
+    :::image type="content" source="./media/apache-spark-custom-library-website-log-analysis/hdinsight-name-jupyter-notebook.png " alt-text="Укажите имя записной книжки" border="true":::тебук "border =" true ":::
 
 1. Так как вы создали записную книжку с помощью ядра PySpark, вам не нужно явно создавать контексты. Контексты Spark и Hive будут созданы автоматически при выполнении первой ячейки кода. Можно начать с импорта различных типов, необходимых для этого сценария. Вставьте следующий фрагмент кода в пустую ячейку и нажмите клавиши **SHIFT + ВВОД**.
 
@@ -173,7 +173,7 @@ ms.locfileid: "98940307"
 
    Вы должны увидеть выходные данные, как на следующем рисунке:
 
-   ![выходные данные запроса SQL hdinsight jupyter](./media/apache-spark-custom-library-website-log-analysis/hdinsight-jupyter-sql-qyery-output.png "Результат SQL-запроса")
+   выходные данные запроса SQL :::image type="content" source="./media/apache-spark-custom-library-website-log-analysis/hdinsight-jupyter-sql-qyery-output.png " alt-text="hdinsight jupyter" border="true":::ИТЕР SQL "border =" true ":::
 
    Дополнительные сведения о магической команде `%%sql` см. в разделе [Параметры, поддерживаемые волшебной командой %%sql](apache-spark-jupyter-notebook-kernels.md#parameters-supported-with-the-sql-magic).
 
@@ -191,7 +191,7 @@ ms.locfileid: "98940307"
 
    Вы должны увидеть выходные данные, как на следующем рисунке:
 
-   ![Диаграмма анализа веб-журнала Apache Spark](./media/apache-spark-custom-library-website-log-analysis/hdinsight-apache-spark-web-log-analysis-plot.png "Выходные данные Matplotlib")
+   :::image type="content" source="./media/apache-spark-custom-library-website-log-analysis/hdinsight-apache-spark-web-log-analysis-plot.png " alt-text="Анализ журнала веб-журнала Apache Spark" border="true":::с отчетом EB диаграмма анализа журналов "border =" true ":::
 
 1. Завершив работу с приложением, следует закрыть записную книжку, чтобы освободить ресурсы. Для этого в меню **File** (Файл) записной книжки выберите пункт **Close and Halt** (Закрыть и остановить). Это действие приведет к завершению работы и закрытию записной книжки.
 

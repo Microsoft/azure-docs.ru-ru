@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 10/19/2019
 ms.author: rogarana
 ms.subservice: files
-ms.openlocfilehash: 5161d8e169a7eb9e757dfbfa71fa697880e1806e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4ace5620bf98b06956c294a12b6b08881422e718
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98673693"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952343"
 ---
 # <a name="use-azure-files-with-linux"></a>Использование Файлов Azure в Linux
 [Файлы Azure](storage-files-introduction.md) — это простая в использовании облачная файловая система от Майкрософт. Файловые ресурсы Azure можно подключить в дистрибутивах Linux с помощью [SMB-клиента в ядре](https://wiki.samba.org/index.php/LinuxCIFS). В этой статье описаны два способа подключения файлового ресурса Azure: по запросу с помощью команды `mount` и при загрузке путем создания записи в `/etc/fstab`.
@@ -94,7 +94,7 @@ uname -r
     Если вы не можете открыть порт 445 в корпоративной сети или заблокировать его через поставщика услуг Интернета, вы можете использовать VPN-подключение или ExpressRoute для обхода порта 445. Дополнительные сведения см. в статье [рекомендации по сетям для прямого доступа к общей папке Azure](storage-files-networking-overview.md).
 
 ## <a name="mounting-azure-file-share"></a>Подключение файлового ресурса Azure
-Чтобы использовать общую папку Azure с дистрибутивом Linux, необходимо создать каталог, который будет использоваться в качестве точки подключения для файлового ресурса Azure. Точку подключения можно создать в любом месте в системе Linux, но это распространенное соглашение о создании этой точки в разделе/mnt. После точки подключения используйте `mount` команду для доступа к файловому ресурсу Azure.
+Чтобы использовать общую папку Azure с дистрибутивом Linux, необходимо создать каталог, который будет использоваться в качестве точки подключения для файлового ресурса Azure. Точку подключения можно создать в любом месте в системе Linux, но это распространенное соглашение о создании этой точки в разделе/Маунт. После точки подключения используйте `mount` команду для доступа к файловому ресурсу Azure.
 
 При необходимости можно подключить одну общую папку Azure к нескольким точкам подключения.
 
@@ -106,7 +106,7 @@ uname -r
     storageAccountName="<your-storage-account>"
     fileShareName="<your-file-share>"
 
-    mntPath="/mnt/$storageAccountName/$fileShareName"
+    mntPath="/mount/$storageAccountName/$fileShareName"
 
     sudo mkdir -p $mntPath
     ```
@@ -135,14 +135,14 @@ uname -r
 Завершив работу с файловым ресурсом Azure, вы можете отключить его, выполнив команду `sudo umount $mntPath`.
 
 ### <a name="create-a-persistent-mount-point-for-the-azure-file-share-with-etcfstab"></a>Создание постоянной точки подключения для файлового ресурса Azure с помощью `/etc/fstab`
-1. **Создать папку для точки подключения**. папка для точки подключения может быть создана в любом месте файловой системы, но ее можно создать в разделе/mnt. Например, следующая команда создает новый каталог, заменяет `<your-resource-group>` , `<your-storage-account>` и `<your-file-share>` с соответствующей информацией для вашей среды:
+1. **Создать папку для точки подключения**. папка для точки подключения может быть создана в любом месте файловой системы, но ее можно создать в разделе/Маунт. Например, следующая команда создает новый каталог, заменяет `<your-resource-group>` , `<your-storage-account>` и `<your-file-share>` с соответствующей информацией для вашей среды:
 
     ```bash
     resourceGroupName="<your-resource-group>"
     storageAccountName="<your-storage-account>"
     fileShareName="<your-file-share>"
 
-    mntPath="/mnt/$storageAccountName/$fileShareName"
+    mntPath="/mount/$storageAccountName/$fileShareName"
 
     sudo mkdir -p $mntPath
     ```

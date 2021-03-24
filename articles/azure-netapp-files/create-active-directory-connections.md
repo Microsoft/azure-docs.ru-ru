@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 03/01/2021
+ms.date: 03/19/2021
 ms.author: b-juche
-ms.openlocfilehash: ccc88cabfa81e2d911546fae776f581885ed8fa6
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: add907923cc2284939acd972237fd4ec74ee2d12
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "104801263"
+ms.locfileid: "104864012"
 ---
 # <a name="create-and-manage-active-directory-connections-for-azure-netapp-files"></a>Создание Active Directory подключений и управление ими для Azure NetApp Files
 
@@ -251,7 +251,7 @@ ms.locfileid: "104801263"
 
     ![Создано Active Directory подключений](../media/azure-netapp-files/azure-netapp-files-active-directory-connections-created.png)
 
-## <a name="next-steps"></a>Следующие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
 
 * [Создание тома SMB](azure-netapp-files-create-volumes-smb.md)
 * [Создание тома с двумя протоколами](create-volumes-dual-protocol.md)
