@@ -12,16 +12,16 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/12/2019
 ms.openlocfilehash: 7d346d1ff30c138667749822b258bab4c6a621f4
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92792724"
 ---
 # <a name="use-powershell-to-update-the-sync-schema-in-an-existing-sync-group"></a>Использование PowerShell для обновления схемы синхронизации в существующей группе синхронизации
 [!INCLUDE[appliesto-sqldb](../../includes/appliesto-sqldb.md)]
 
-Этот пример скрипта Azure PowerShell обновляет схему синхронизации в существующей группе синхронизации компонента "Синхронизация данных SQL". Если вы синхронизируете несколько таблиц, этот скрипт поможет вам эффективно обновить схему синхронизации. В этом примере показано использование скрипта **UpdateSyncSchema** , который можно найти в репозитории GitHub (файл [UpdateSyncSchema.ps1](https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/sql-data-sync/UpdateSyncSchema.ps1)).
+Этот пример скрипта Azure PowerShell обновляет схему синхронизации в существующей группе синхронизации компонента "Синхронизация данных SQL". Если вы синхронизируете несколько таблиц, этот скрипт поможет вам эффективно обновить схему синхронизации. В этом примере показано использование скрипта **UpdateSyncSchema**, который можно найти в репозитории GitHub (файл [UpdateSyncSchema.ps1](https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/sql-data-sync/UpdateSyncSchema.ps1)).
 
 [!INCLUDE [quickstarts-free-trial-note](../../../../includes/quickstarts-free-trial-note.md)]
 [!INCLUDE [updated-for-az](../../../../includes/updated-for-az.md)]
@@ -99,9 +99,9 @@ UpdateSyncSchema.ps1 -SubscriptionId <subscriptionId> -ResourceGroupName <resour
         -  [Использование PowerShell для синхронизации данных между несколькими базами данных в службе "База данных SQL Azure"](sql-data-sync-sync-data-between-sql-databases.md).
         -  [Использование PowerShell для синхронизации данных между Базой данных SQL Azure и SQL Server](sql-data-sync-sync-data-between-azure-onprem.md).
 - Data Sync Agent: [Data Sync Agent для службы "Синхронизация данных SQL" в Azure](../sql-data-sync-agent-overview.md).
-- Рекомендации: [Рекомендации по службе "Синхронизация данных SQL" в Azure](../sql-data-sync-best-practices.md).
+- Рекомендации: [Рекомендации по синхронизации данных SQL в Azure](../sql-data-sync-best-practices.md)
 - Мониторинг: [Мониторинг синхронизации данных SQL с помощью журналов Azure Monitor](../monitor-tune-overview.md)
-- Устранение неполадок: [Устранение неполадок службы "Синхронизация данных SQL" в Azure](../sql-data-sync-troubleshoot.md).
+- Устранение неполадок: [Устранение неполадок с синхронизацией данных SQL в Azure](../sql-data-sync-troubleshoot.md)
 - Обновление схемы синхронизации
     - Использование Transact-SQL: [Автоматическая репликация изменений схемы в службе "Синхронизация данных SQL" в Azure](../sql-data-sync-update-sync-schema.md).
 

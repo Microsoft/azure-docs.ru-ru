@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/10/2021
 ms.author: jeedes
 ms.openlocfilehash: 83b3f3fc81c9fcd2f56eaa80edf3c7772a70d331
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101653530"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-akashi"></a>Руководство по интеграции единого входа Azure Active Directory с AKASHI

@@ -8,10 +8,10 @@ ms.date: 01/29/2021
 ms.author: ccompy
 ms.custom: mvc, seodec18
 ms.openlocfilehash: 5c1e81d02aa35a40a296f04e456be09eeed10331
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99226394"
 ---
 # <a name="custom-configuration-settings-for-app-service-environments"></a>Настраиваемые параметры конфигурации для сред службы приложений

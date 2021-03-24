@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 10/28/2020
 ms.custom: ''
 ms.openlocfilehash: a71ff438feaef555a85c33d818c287c64621d40d
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92913846"
 ---
 # <a name="tutorial-deploy-a-multi-container-group-using-docker-compose"></a>Руководство по развертыванию многоконтейнерной группы с помощью Docker Compose 
@@ -35,9 +35,9 @@ ms.locfileid: "92913846"
 
 ## <a name="prerequisites"></a>Prerequisites
 
-* **Azure CLI** . На локальном компьютере должен быть установлен Azure CLI. Рекомендуется использовать версию 2.10.1 или более позднюю. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli).
+* **Azure CLI**. На локальном компьютере должен быть установлен Azure CLI. Рекомендуется использовать версию 2.10.1 или более позднюю. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli).
 
-* **Docker Desktop** . Необходимо использовать Docker Desktop 2.3.0.5 или более поздней версии, доступный для [Windows](https://desktop.docker.com/win/edge/Docker%20Desktop%20Installer.exe) или [macOS](https://desktop.docker.com/mac/edge/Docker.dmg). Или установите [интерфейс командной строки интеграции Docker ACI для Linux](https://docs.docker.com/engine/context/aci-integration/#install-the-docker-aci-integration-cli-on-linux).
+* **Docker Desktop**. Необходимо использовать Docker Desktop 2.3.0.5 или более поздней версии, доступный для [Windows](https://desktop.docker.com/win/edge/Docker%20Desktop%20Installer.exe) или [macOS](https://desktop.docker.com/mac/edge/Docker.dmg). Или установите [интерфейс командной строки интеграции Docker ACI для Linux](https://docs.docker.com/engine/context/aci-integration/#install-the-docker-aci-integration-cli-on-linux).
 
 [!INCLUDE [container-instances-create-registry](../../includes/container-instances-create-registry.md)]
 
@@ -86,7 +86,7 @@ services:
 
 В конфигурации `azure-vote-front` выполните указанные ниже два изменения.
 
-1. Обновите свойство `image` в службе `azure-vote-front`. Добавьте к имени образа имя сервера для входа в реестр контейнеров Azure (\<acrName\>.azurecr.io) в виде префикса. Например, если реестр имеет имя *myregistry* , именем сервера для входа является *myregistry.azurecr.io* (нижний регистр), а свойством образа — `myregistry.azurecr.io/azure-vote-front`.
+1. Обновите свойство `image` в службе `azure-vote-front`. Добавьте к имени образа имя сервера для входа в реестр контейнеров Azure (\<acrName\>.azurecr.io) в виде префикса. Например, если реестр имеет имя *myregistry*, именем сервера для входа является *myregistry.azurecr.io* (нижний регистр), а свойством образа — `myregistry.azurecr.io/azure-vote-front`.
 1. Измените сопоставление `ports` на `80:80`. Сохраните файл.
 
 Обновленный файл должен выглядеть следующим образом:
@@ -216,7 +216,7 @@ azurevotingappredis_azure-vote-front   myregistry.azurecr.io/azure-vote-front   
 
 Чтобы просмотреть запущенное приложение в облаке, введите отображаемый IP-адрес в локальном веб-браузере. Для данного примера введите `52.179.23.131`. Нагрузки примера приложения, как показано в следующем примере:
 
-:::image type="content" source="media/tutorial-docker-compose/azure-vote-aci.png" alt-text="Образ приложения для голосования":::
+:::image type="content" source="media/tutorial-docker-compose/azure-vote-aci.png" alt-text="Образ приложения для голосования в ACI":::
 
 Чтобы просмотреть журналы внешнего контейнера, выполните команду [docker logs](https://docs.docker.com/engine/reference/commandline/logs). Пример:
 

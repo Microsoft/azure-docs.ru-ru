@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: tutorial
 ms.date: 06/25/2019
-ms.openlocfilehash: 304ba791d107ca497e65905657e87e84cdb9567d
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 2078ba177d68cfaa0a91b79611d92e5c68e4e245
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98942727"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868425"
 ---
 # <a name="tutorial-use-apache-storm-with-apache-kafka-on-hdinsight"></a>Руководство по Использование Apache Storm с Apache Kafka в HDInsight
 
@@ -377,7 +377,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
 
 На следующей схеме показано, как происходит обмен данными между Storm и Kafka:
 
-![Схема кластеров Storm и Kafka в виртуальной сети Azure](./media/hdinsight-apache-storm-with-kafka/apache-storm-kafka-vnet.png)
+:::image type="content" source="./media/hdinsight-apache-storm-with-kafka/apache-storm-kafka-vnet.png" alt-text="Схема кластеров Storm и Kafka в виртуальной сети Azure":::
 
 > [!NOTE]  
 > Другие службы в кластере, например SSH и [Apache Ambari](https://ambari.apache.org/), могут быть доступны через Интернет. Дополнительные сведения об общих портах, доступных в HDInsight, см. в статье [Порты и универсальные коды ресурсов (URI), используемые кластерами HDInsight](hdinsight-hadoop-port-settings-for-services.md).
@@ -415,7 +415,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
       | Имя пользователя SSH | Пользователь SSH, который создается для кластеров. |
       | Пароль SSH | Пароль пользователя SSH. |
    
-      ![Рисунок с параметрами шаблона](./media/hdinsight-apache-storm-with-kafka/storm-kafka-template.png)
+      :::image type="content" source="./media/hdinsight-apache-storm-with-kafka/storm-kafka-template.png" alt-text="Рисунок с параметрами шаблона":::
 
 3. Прочтите **условия использования** и установите флажок **Я принимаю указанные выше условия**.
 

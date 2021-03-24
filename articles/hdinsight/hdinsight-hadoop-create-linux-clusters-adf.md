@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: seoapr2020
 ms.date: 04/24/2020
-ms.openlocfilehash: 762938ebb4785a54224771e96c5bca274721dc30
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: c61ad4d26c4a03889d9ac80332335543ec4140b7
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98945971"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868987"
 ---
 # <a name="tutorial-create-on-demand-apache-hadoop-clusters-in-hdinsight-using-azure-data-factory"></a>Руководство по Создание кластеров Apache Hadoop в HDInsight по запросу с помощью Фабрики данных Azure
 
@@ -185,7 +185,7 @@ Write-host "`nScript completed" -ForegroundColor Green
 
 2. В меню слева последовательно выберите **`+ Create a resource`**  > **Аналитика** > **Фабрика данных**.
 
-    ![Фабрика данных Azure на портале](./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-azure-portal.png "Фабрика данных Azure на портале")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-azure-portal.png" alt-text="Фабрика данных Azure на портале":::
 
 3. Введите или выберите следующие значения для плитки **Новая фабрика данных**.
 
@@ -198,7 +198,7 @@ Write-host "`nScript completed" -ForegroundColor Green
     |Расположение | Автоматически задается то расположение, которое было указано при предыдущем создании группы ресурсов. В этом руководстве расположение установлено как **восточная часть США**. |
     |Включение доступа к GIT|Снимите этот флажок.|
 
-    ![Создание Фабрики данных Azure с помощью портала Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/azure-portal-create-data-factory.png "Создание Фабрики данных Azure с помощью портала Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/azure-portal-create-data-factory.png" alt-text="Создание Фабрики данных Azure с помощью портала Azure":::
 
 4. Нажмите кнопку **создания**. Создание фабрики данных может занять от 2 до 4 минут.
 
@@ -206,7 +206,7 @@ Write-host "`nScript completed" -ForegroundColor Green
 
 6. Выберите **Создание и мониторинг** для запуска портала создания и наблюдения фабрики данных Azure.
 
-    ![Общие сведения о портале Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-portal-overview.png "Общие сведения о Фабрике данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-portal-overview.png" alt-text="Общие сведения о портале Фабрики данных Azure":::
 
 ## <a name="create-linked-services"></a>Создание связанных служб
 
@@ -219,15 +219,15 @@ Write-host "`nScript completed" -ForegroundColor Green
 
 1. В левой области страницы **Начать работу** выберите значок **Создание**.
 
-    ![Создание связанной службы Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-edit-tab.png "Создание связанной службы Фабрики данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-edit-tab.png" alt-text="Создание связанной службы Фабрики данных Azure":::
 
 2. Выберите в нижнем левом углу окна кнопку **Подключения**, а затем выберите **+Создать**.
 
-    ![Создание подключений в Фабрике данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-create-new-connection.png "Создание подключений в Фабрике данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/data-factory-create-new-connection.png" alt-text="Создание подключений в Фабрике данных Azure":::
 
 3. В диалоговом окне **New Linked Service** (Новая связанная служба) выберите **Хранилище BLOB-объектов Azure** и щелкните **Продолжить**.
 
-    ![Создание связанной службы хранилища Azure для Фабрики данных](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-storage-linked-service.png "Создание связанной службы хранилища Azure для Фабрики данных")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-storage-linked-service.png" alt-text="Создание связанной службы хранилища Azure для Фабрики данных":::
 
 4. Введите следующие значения для связанной службы хранилища.
 
@@ -239,7 +239,7 @@ Write-host "`nScript completed" -ForegroundColor Green
 
     Нажмите копку **Проверить подключение**, и если проверка прошла успешно, щелкните **Создать**.
 
-    ![Указание имени для связанной службы хранилища Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-storage-linked-service-details.png "Указание имени для связанной службы хранилища Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-storage-linked-service-details.png" alt-text="Указание имени для связанной службы хранилища Azure":::
 
 ### <a name="create-an-on-demand-hdinsight-linked-service"></a>Создание связанной службы HDInsight по запросу
 
@@ -249,7 +249,7 @@ Write-host "`nScript completed" -ForegroundColor Green
 
 3. Выберите **Azure HDInsight**, а затем **Продолжить**.
 
-    ![Создание связанной службы HDInsight для Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-linked-service.png "Создание связанной службы HDInsight для Фабрики данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-linked-service.png" alt-text="Создание связанной службы HDInsight для Фабрики данных Azure":::
 
 4. В окне **New Linked Service** (Новая связанная служба) введите следующие значения и оставьте остальные по умолчанию.
 
@@ -272,21 +272,21 @@ Write-host "`nScript completed" -ForegroundColor Green
 
     Щелкните **Создать**.
 
-    ![Указание значений для связанной службы HDInsight](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-linked-service-details.png "Указание значений для связанной службы HDInsight")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-linked-service-details.png" alt-text="Указание значений для связанной службы HDInsight":::
 
 ## <a name="create-a-pipeline"></a>Создание конвейера
 
 1. Нажмите кнопку **+** (плюс) и выберите **Pipeline** (Конвейер).
 
-    ![Создание конвейера в Фабрике данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-create-pipeline.png "Создание конвейера в Фабрике данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-create-pipeline.png" alt-text="Создание конвейера в Фабрике данных Azure":::
 
 1. В панели инструментов **Действия** разверните **HDInsight** и перетащите действие **Hive** в область конструктора конвейера. Во вкладке **Общие** укажите имя для действия.
 
-    ![Добавление действий в конвейер Фабрики данных](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-add-hive-pipeline.png "Добавление действий в конвейер Фабрики данных")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-add-hive-pipeline.png" alt-text="Добавление действий в конвейер Фабрики данных":::
 
 1. Убедитесь, что выбрано действие Hive, выберите вкладку **Кластер HDI** и в раскрывающемся списке **HDInsight Linked Service** (Связанная служба HDInsight) выберите связанную службу **HDInsightLinkedService**, созданную ранее для HDInsight.
 
-    ![Указание сведений о кластере HDInsight для конвейера](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-hive-activity-select-hdinsight-linked-service.png "Указание сведений о кластере HDInsight для конвейера")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-hive-activity-select-hdinsight-linked-service.png" alt-text="Указание сведений о кластере HDInsight для конвейера":::
 
 1. Выберите вкладку **Скрипт** и затем сделайте следующее:
 
@@ -294,27 +294,27 @@ Write-host "`nScript completed" -ForegroundColor Green
 
     1. Для **Путь к файлу** выберите **Поиск в хранилище** и перейдите в расположение, где находится образец скрипта Hive. Если ранее выполнялся скрипт PowerShell, это расположение должно быть `adfgetstarted/hivescripts/partitionweblogs.hql`.
 
-        ![Указание сведения о скрипте Hive для конвейера](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-provide-script-path.png "Указание сведения о скрипте Hive для конвейера")
+        :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-provide-script-path.png" alt-text="Указание сведения о скрипте Hive для конвейера":::
 
     1. В разделе **Дополнительно** > **Параметры** выберите **`Auto-fill from script`** . Этот параметр ищет любые параметры в сценарии Hive, которым требуются значения во время выполнения.
 
     1. В текстовое поле **значение** добавьте имеющуюся папку в формате `wasbs://adfgetstarted@<StorageAccount>.blob.core.windows.net/outputfolder/`. Путь учитывает регистр. Это путь, где будут храниться выходные данные сценария. Схема `wasbs` необходима, так как у учетных записей хранения теперь по умолчанию включено требование безопасной передачи.
 
-        ![Указание параметров для скрипта Hive](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-provide-script-parameters.png "Указание параметров для скрипта Hive")
+        :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-provide-script-parameters.png" alt-text="Указание параметров для скрипта Hive":::
 
 1. Чтобы проверить конвейер, выберите **Проверить**. Чтобы закрыть окно проверки, нажмите кнопку **>>** Стрелка вправо.
 
-    ![Проверка конвейера Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-validate-all.png "Проверка конвейера Фабрики данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-validate-all.png" alt-text="Проверка конвейера Фабрики данных Azure":::
 
 1. Наконец, выберите **Опубликовать все** для публикации артефактов фабрики данных Azure.
 
-    ![Публикация конвейера Фабрики данных](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-publish-pipeline.png "Публикация конвейера Фабрики данных")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-publish-pipeline.png" alt-text="Публикация конвейера Фабрики данных":::
 
 ## <a name="trigger-a-pipeline"></a>Активация конвейера
 
 1. Из панели инструментов на поверхности конструктора выберите **Добавить триггер** > **Trigger Now** (Активировать сейчас).
 
-    ![Активация конвейера Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-trigger-pipeline.png "Активация конвейера Фабрики данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-trigger-pipeline.png" alt-text="Активация конвейера Фабрики данных Azure":::
 
 2. Нажмите кнопку **OK** на всплывающей боковой панели.
 
@@ -322,13 +322,13 @@ Write-host "`nScript completed" -ForegroundColor Green
 
 1. Перейдите на вкладку **Мониторинг** слева. Вы увидите, что запуск конвейера появится в списке **Pipeline Runs** (Запуски конвейера). Обратите внимание на состояние выполнения в столбце **Состояние**.
 
-    ![Мониторинг конвейера Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-monitor-pipeline.png "Мониторинг конвейера Фабрики данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-monitor-pipeline.png" alt-text="Мониторинг конвейера Фабрики данных Azure":::
 
 1. Щелкните **Обновить**, чтобы обновить состояние.
 
 1. Можно также выбрать значок **Представление выполнения действия** для просмотра выполнения действия связанного с конвейером. На снимке экрана ниже видно только одно выполнение действия, так как в созданном конвейере есть только одно действие. Чтобы вернуться к предыдущему представлению, выберите **Конвейеры** в верхней части страницы.
 
-    ![Мониторинг действий конвейера Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-monitor-pipeline-activity.png "Мониторинг действий конвейера Фабрики данных Azure")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-monitor-pipeline-activity.png" alt-text="Мониторинг действий конвейера Фабрики данных Azure":::
 
 ## <a name="verify-the-output"></a>Проверка выходных данных
 
@@ -340,7 +340,7 @@ Write-host "`nScript completed" -ForegroundColor Green
 
     * Контейнер **adfjobs**, содержащий журналы заданий фабрики данных Azure.  
 
-        ![Проверка выходных данных конвейера Фабрики данных Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-verify-output.png "Проверка выходных данных конвейера Фабрики данных Azure")
+        :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/hdinsight-data-factory-verify-output.png" alt-text="Проверка выходных данных конвейера Фабрики данных Azure":::
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
@@ -356,7 +356,7 @@ Write-host "`nScript completed" -ForegroundColor Green
 1. В элементе **Ресурсы** должны отображаться учетная запись хранения по умолчанию и фабрика данных, если только группа ресурсов не является общей для других проектов.
 1. Выберите **Удалить группу ресурсов**. При этом также будет удалена учетная запись хранения и данные, хранящиеся в ней.
 
-    ![Удаление группы ресурсов на портале Azure](./media/hdinsight-hadoop-create-linux-clusters-adf/delete-resource-group.png "Удалить группу ресурсов")
+    :::image type="content" source="./media/hdinsight-hadoop-create-linux-clusters-adf/delete-resource-group.png" alt-text="Удаление группы ресурсов на портале Azure":::
 
 1. Введите имя группы ресурсов, чтобы подтвердить удаление, и нажмите **Удалить**.
 

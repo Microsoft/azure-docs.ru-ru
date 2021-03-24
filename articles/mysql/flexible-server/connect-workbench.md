@@ -8,10 +8,10 @@ ms.custom: mvc
 ms.topic: quickstart
 ms.date: 9/21/2020
 ms.openlocfilehash: d604ca8c8979ec98b990f8002ce29d0df92ac2af
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90946233"
 ---
 # <a name="quickstart-use-mysql-workbench-to-connect-and-query-data-in-azure-database-for-mysql---flexible-server-preview"></a>Краткое руководство. Подключение к Базе данных Azure для MySQL (Гибкий сервер) и запрос данных с помощью MySQL Workbench (предварительная версия)
@@ -53,7 +53,7 @@ ms.locfileid: "90946233"
 
 2. В диалоговом окне **настройки нового подключения** на вкладке **Параметры** введите следующие сведения:
 
-    :::image type="content" source="./media/connect-workbench/2-setup-new-connection.png" alt-text="Azure Database for MySQL Flexible Server name":::
+    :::image type="content" source="./media/connect-workbench/2-setup-new-connection.png" alt-text="Настройка нового подключения":::
 
     | **Параметры** | **Рекомендуемое значение** | **Описание поля** |
     |---|---|---|
@@ -108,7 +108,7 @@ ms.locfileid: "90946233"
 
     На снимке экрана показан пример кода SQL в SQL Workbench и выходные данные после его выполнения.
 
-    :::image type="content" source="./media/connect-workbench/3-workbench-sql-tab.png" alt-text="Azure Database for MySQL Flexible Server name":::
+    :::image type="content" source="./media/connect-workbench/3-workbench-sql-tab.png" alt-text="MySQL Workbench: вкладка SQL для выполнения примера кода SQL":::
 
 2. Чтобы выполнить пример кода SQL, щелкните значок молнии на панели инструментов вкладки **SQL File** (Файл SQL).
 3. Обратите внимание на три вкладки с результатами, которые отображаются в разделе **Сетка результатов** посередине страницы.
