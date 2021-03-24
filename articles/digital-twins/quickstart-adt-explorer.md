@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 9/24/2020
 ms.topic: quickstart
 ms.service: digital-twins
-ms.openlocfilehash: f1b25b853977b3a1f4871e232a562d6a3cfd2fae
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: feeb3e63375e918498e704add6dac672d6a46de3
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102434208"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574583"
 ---
 # <a name="quickstart---explore-a-sample-azure-digital-twins-scenario-using-azure-digital-twins-explorer"></a>Краткое руководство. Изучение примера сценария Azure Digital Twins с помощью Azure Digital Twins Explorer
 
@@ -93,13 +93,15 @@ ms.locfileid: "102434208"
 
 1. Введите URL-адрес экземпляра Azure Digital Twins, который вы получили ранее при работе с разделом [Настройка экземпляра Azure Digital Twins](#set-up-an-azure-digital-twins-instance), в формате *https://{имя узла экземпляра}* .
 
->[!NOTE]
-> Вы можете в любое время повторно просмотреть или изменить эту информацию, выбрав тот же значок для вызова поля **Sign In** (Вход). Он сохранит переданные значения.
-
 > [!TIP]
 > Если при подключении появляется сообщение об ошибке `SignalRService.subscribe`, убедитесь, что URL-адрес Azure Digital Twins начинается с префикса *https://* .
+>
+> Если возникнет ошибка с аутентификацией, нужно проверить **переменные среды** и убедиться, что все учетные данные в этих переменных допустимы для Azure Digital Twins. `DefaultAzureCredential` попытается проверить подлинность учетных данных определенных типов в [заданном порядке](/dotnet/api/overview/azure/identity-readme#defaultazurecredential), при этом сначала проверяются переменные среды.
 
 Если вы видите всплывающее окно **Запрос разрешений** от корпорации Майкрософт, предоставьте согласие для этого приложения и нажмите кнопку "Принять", чтобы продолжить.
+
+>[!NOTE]
+> Вы можете в любое время повторно просмотреть или изменить эту информацию, выбрав тот же значок для вызова поля **Sign In** (Вход). Он сохранит переданные значения.
 
 ## <a name="add-the-sample-data"></a>Добавление образца данных
 

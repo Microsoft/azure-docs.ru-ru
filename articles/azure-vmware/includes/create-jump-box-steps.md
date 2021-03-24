@@ -2,13 +2,13 @@
 title: Создание инсталляционного сервера в Решении Azure VMware
 description: Инструкции по созданию инсталляционного сервера в Решении Azure VMware.
 ms.topic: include
-ms.date: 09/28/2020
-ms.openlocfilehash: 5d5a5d82cf6e70e7ad55bcfa10c7f85372131c87
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/13/2021
+ms.openlocfilehash: f746e11763e1df1686f3134960dea167bf1c9908
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91578429"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462269"
 ---
 <!-- Used in deploy-azure-vmware-solution.md and tutorial-access-private-cloud.md -->
 
@@ -33,9 +33,8 @@ ms.locfileid: "91578429"
    | **Имя пользователя** | Введите имя пользователя для входа в виртуальную машину. |
    | **Пароль** | Введите пароль для входа в виртуальную машину. |
    | **Подтверждение пароля** | Введите пароль для входа в виртуальную машину. |
-   | **Общедоступные входящие порты** | Выберите **Отсутствует**. Выбрав значение "Отсутствует", вы сможете использовать [JIT-доступ](../../security-center/security-center-just-in-time.md#jit-configure) для получения доступа к виртуальной машине только при необходимости.  |
+   | **Общедоступные входящие порты** | Выберите **Отсутствует**. Выбрав значение "Отсутствует", вы сможете использовать [JIT-доступ](../../security-center/security-center-just-in-time.md#jit-configure) для получения доступа к виртуальной машине только при необходимости. Кроме того, вы можете использовать [Бастион Azure](../../bastion/tutorial-create-host-portal.md), если вы хотите получить защищенный доступ к инсталляционному серверу из Интернета без предоставления сетевого порта.  |
 
 
 1. После завершения проверки щелкните **Создать**, чтобы создать виртуальную машину.
 
-   :::image type="content" source="../media/tutorial-access-private-cloud/ss11-review-create-wjb01.png" alt-text="Добавьте новую виртуальную машину Windows 10 для инсталляционного сервера." border="true":::

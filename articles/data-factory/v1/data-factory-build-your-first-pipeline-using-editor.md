@@ -3,16 +3,16 @@ title: Создание первой фабрики данных (портал A
 description: В этом руководстве вы создадите образец конвейера фабрики данных Azure с помощью редактора фабрик данных на портале Azure.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: tutorial
 ms.date: 01/22/2018
-ms.openlocfilehash: 449c8ec976a71d68e3ddddfea839ef06094c2176
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 9794aa0750a886803aac3fec7622f6b3770acf9d
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100392227"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785586"
 ---
 # <a name="tutorial-build-your-first-data-factory-by-using-the-azure-portal"></a>Руководство по Создание первой фабрики данных с помощью портала Azure
 > [!div class="op_single_selector"]

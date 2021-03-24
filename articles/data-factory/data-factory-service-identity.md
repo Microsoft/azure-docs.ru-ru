@@ -4,20 +4,20 @@ description: Сведения об управляемом удостоверен
 author: linda33wj
 ms.service: data-factory
 ms.topic: conceptual
-ms.date: 07/06/2020
+ms.date: 03/23/2021
 ms.author: jingwang
-ms.openlocfilehash: e0d3b551265a480a700f374ddfcf89dd4d93333f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 89da1a22bb3fd0eff22a7bed7ed70b72f220fbf9
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100389167"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104888997"
 ---
 # <a name="managed-identity-for-data-factory"></a>Управляемое удостоверение для Фабрики данных
 
 [!INCLUDE[appliesto-adf-xxx-md](includes/appliesto-adf-xxx-md.md)]
 
-Эта статья поможет вам понять, что такое управляемое удостоверение для фабрики данных (прежнее название — Управляемое удостоверение службы/MSI) и как это работает.
+Эта статья поможет вам понять, что такое управляемое удостоверение для фабрики данных (прежнее название — Управляемое удостоверение службы/MSI) и как она работает.
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 

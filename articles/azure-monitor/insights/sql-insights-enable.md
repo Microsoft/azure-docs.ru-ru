@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/15/2021
-ms.openlocfilehash: 5ab51fc4ea64dfd678f5c9acfc80b5e380782153
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ac37a6de4197d5e7cae20d2bde759b98fe474047
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104610144"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889626"
 ---
 # <a name="enable-sql-insights-preview"></a>Включить SQL Insights (Предварительная версия)
 В этой статье описывается, как включить [SQL Insights](sql-insights-overview.md) для мониторинга развертываний SQL. Мониторинг выполняется из виртуальной машины Azure, которая устанавливает подключение к развертываниям SQL и использует динамические административные представления (DMV) для сбора данных мониторинга. Вы можете управлять сбором наборов данных и частотой сбора с помощью профиля мониторинга.
@@ -39,7 +39,7 @@ GO
 
 :::image type="content" source="media/sql-insights-enable/telegraf-user-database-verify.png" alt-text="Проверьте пользовательский скрипт Telegraf." lightbox="media/sql-insights-enable/telegraf-user-database-verify.png":::
 
-### <a name="azure-sql-managed-instance"></a>Управляемый экземпляр SQL Azure
+### <a name="azure-sql-managed-instance"></a>Управляемый экземпляр SQL Azure
 Войдите в Azure SQL Управляемый экземпляр и с помощью [SSMS](../../azure-sql/database/connect-query-ssms.md) или аналогичного средства запустите следующий скрипт, чтобы создать пользователя мониторинга с необходимыми разрешениями. Замените *User* именем пользователя и *мистронгпассворд* паролем.
 
  
@@ -54,7 +54,7 @@ GRANT VIEW ANY DEFINITION TO [user];
 GO 
 ```
 
-### <a name="sql-server"></a>SQL Server
+### <a name="sql-server"></a>SQL Server
 Войдите на виртуальную машину Azure под управлением SQL Server и используйте [SQL Server Management Studio](../../azure-sql/database/connect-query-ssms.md) или аналогичное средство, чтобы выполнить следующий скрипт для создания пользователя мониторинга с необходимыми разрешениями. Замените *User* именем пользователя и *мистронгпассворд* паролем.
 
  
@@ -92,13 +92,16 @@ GO
 
 ### <a name="azure-sql-databases"></a>Базы данных SQL Azure  
 
-[Руководство. подключение к серверу SQL Azure с помощью частной конечной точки Azure. портал Azure](../../private-link/tutorial-private-endpoint-sql-portal.md) приведен пример того, как настроить закрытую конечную точку, которую можно использовать для доступа к базе данных.  При использовании этого метода необходимо убедиться, что виртуальные машины мониторинга находятся в той же ВИРТУАЛЬНОЙ сети и подсеть, которые будут использоваться для частной конечной точки.  Затем можно создать закрытую конечную точку в базе данных, если это еще не сделано. 
+SQL Insights поддерживает доступ к базе данных SQL Azure через общедоступную конечную точку и из виртуальной сети.
 
-Если для предоставления доступа к базе данных SQL используется [параметр брандмауэра](../../azure-sql/database/firewall-configure.md) , необходимо добавить правило брандмауэра, чтобы предоставить доступ с общедоступного IP-адреса виртуальной машины мониторинга. Доступ к параметрам брандмауэра можно получить на странице **обзора базы данных SQL Azure** на портале. 
+Для доступа через общедоступную конечную точку необходимо добавить правило на странице **Параметры брандмауэра** и [Параметры IP-брандмауэра](https://docs.microsoft.com/azure/azure-sql/database/network-access-controls-overview#ip-firewall-rules) .  Для указания доступа из виртуальной сети можно задать [правила брандмауэра виртуальной сети](https://docs.microsoft.com/azure/azure-sql/database/network-access-controls-overview#virtual-network-firewall-rules) и задать [теги службы, необходимые для агента Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview#networking).  В [этой статье](https://docs.microsoft.com/azure/azure-sql/database/network-access-controls-overview#ip-vs-virtual-network-firewall-rules) описываются различия между этими двумя типами правил брандмауэра.
 
 :::image type="content" source="media/sql-insights-enable/set-server-firewall.png" alt-text="Настройка брандмауэра для сервера" lightbox="media/sql-insights-enable/set-server-firewall.png":::
 
 :::image type="content" source="media/sql-insights-enable/firewall-settings.png" alt-text="Параметры брандмауэра." lightbox="media/sql-insights-enable/firewall-settings.png":::
+
+> [!NOTE]
+> SQL Insights сейчас не поддерживает частную конечную точку Azure для базы данных SQL Azure.  Мы рекомендуем использовать [теги службы](https://docs.microsoft.com/azure/virtual-network/service-tags-overview) в группе безопасности сети или параметрах брандмауэра виртуальной сети, которые [поддерживает агент Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview#networking).
 
 ### <a name="azure-sql-managed-instances"></a>Управляемые экземпляры SQL Azure 
 

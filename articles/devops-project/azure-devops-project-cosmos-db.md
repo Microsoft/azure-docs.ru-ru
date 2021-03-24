@@ -10,10 +10,10 @@ ms.date: 03/24/2020
 author: mlearned
 ms.custom: devx-track-js
 ms.openlocfilehash: d1bdae976d5e5b7d98311d33bb38b5035f2557ca
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102548705"
 ---
 # <a name="deploy-nodejs-apps-powered-by-azure-cosmos-db-with-devops-starter"></a>Развертывание приложений Node.js на платформе Azure Cosmos DB с помощью DevOps Starter

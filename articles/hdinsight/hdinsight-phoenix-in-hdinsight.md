@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/17/2019
-ms.openlocfilehash: 3af48c93633709c9b5814caa99c222e24e402a4a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cb5230ae42703d19726fb8ea0d6c88aa70e589a8
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98945231"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864148"
 ---
 # <a name="apache-phoenix-in-azure-hdinsight"></a>Apache Phoenix в Azure HDInsight
 
@@ -125,11 +125,11 @@ CREATE TABLE Saltedweblogs (
 
 2. Из списка служб в меню слева выберите **HBase**, а затем выберите вкладку **Конфигурация**.
 
-    ![Конфигурации Apache Ambari HBase](./media/hdinsight-phoenix-in-hdinsight/ambari-hbase-config1.png)
+    :::image type="content" source="./media/hdinsight-phoenix-in-hdinsight/ambari-hbase-config1.png" alt-text="Конфигурации Apache Ambari HBase":::
 
 3. Найдите раздел конфигурации **Phoenix SQL**, чтобы включить или отключить Phoenix и установить время ожидания запроса.
 
-    ![Раздел конфигурации Ambari Phoenix SQL](./media/hdinsight-phoenix-in-hdinsight/apache-ambari-phoenix.png)
+    :::image type="content" source="./media/hdinsight-phoenix-in-hdinsight/apache-ambari-phoenix.png" alt-text="Раздел конфигурации Ambari Phoenix SQL":::
 
 ## <a name="see-also"></a>См. также раздел
 

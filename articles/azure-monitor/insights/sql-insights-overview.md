@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/15/2021
-ms.openlocfilehash: b9c5db14bec87b30e51d39b1430ecc1f3cbef855
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: b5add466a60bc855e08917d02fecaf60a35deeb1
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "104798295"
+ms.locfileid: "104889575"
 ---
 # <a name="monitor-your-sql-deployments-with-sql-insights-preview"></a>Мониторинг развертываний SQL с помощью SQL Insights (Предварительная версия)
 SQL Insights отслеживает производительность и работоспособность развертываний SQL.  Это помогает обеспечить предсказуемую производительность и доступность важных рабочих нагрузок, построенных на базе серверной части SQL, выявляя узкие места и проблемы производительности. SQL Insights хранит свои данные в [журналах Azure Monitor](../logs/data-platform-logs.md), что позволяет ему обеспечивать эффективную агрегирование и фильтрацию, а также анализировать тенденции данных с течением времени. Эти данные можно просмотреть Azure Monitor в представлениях, поставляемых в рамках этого предложения, и вы можете углубиться непосредственно в данные журнала для выполнения запросов и анализа тенденций.
@@ -59,7 +59,12 @@ SQL Insights не поддерживает или не ограничивает 
 
 
 ## <a name="data-collected-by-sql-insights"></a>Данные, собираемые SQL Insights
-В общедоступной предварительной версии SQL Insights поддерживает только удаленный метод мониторинга. [Агент Telegraf](https://www.influxdata.com/time-series-platform/telegraf/) не установлен на SQL Server. Он использует [подключаемый модуль ввода SQL Server для Telegraf](https://www.influxdata.com/integration/microsoft-sql-server/) и использует три группы запросов для различных типов мониторов SQL: база данных SQL azure, управляемый экземпляр SQL Azure, SQL Server, работающий на виртуальной машине Azure. 
+
+SQL Insights поддерживает только удаленный метод мониторинга SQL. На виртуальных машинах, на которых работает SQL Server, не устанавливаются агенты. Требуется одна или несколько выделенных виртуальных машин мониторинга, которые используются для удаленного сбора данных из ресурсов SQL. 
+
+На каждой из этих виртуальных машин мониторинга будет установлен [агент Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview) , а также расширение рабочей нагрузки (вли). 
+
+Расширение вли включает в себя [Агент Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)с открытым исходным кодом.  Мы используем [правила сбора данных](https://docs.microsoft.com/azure/azure-monitor/agents/data-collection-rule-overview) , чтобы настроить [подключаемый модуль ввода SQLServer](https://www.influxdata.com/integration/microsoft-sql-server/) , чтобы указать данные для сбора из базы данных SQL Azure, Управляемый экземпляр Azure SQL и SQL Server, выполняющихся на виртуальной машине Azure. 
 
 В следующих таблицах представлены следующие сводные данные.
 
@@ -119,7 +124,7 @@ SQL Insights не поддерживает или не ограничивает 
 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Подробные инструкции по включению SQL Insights см. в разделе [Включение SQL Insights](sql-insights-enable.md) .
 Ответы [на часто задаваемые вопросы](../faq.md#sql-insights-preview) о SQL Insights см. здесь.

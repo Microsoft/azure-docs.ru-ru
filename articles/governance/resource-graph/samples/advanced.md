@@ -1,14 +1,14 @@
 ---
 title: Примеры расширенных запросов
 description: С помощью Azure Resource Graph можно выполнять расширенные запросы, такие как работа со столбцами, вывод списка используемых тегов и сопоставление ресурсов с регулярными выражениями.
-ms.date: 01/27/2021
+ms.date: 03/23/2021
 ms.topic: sample
-ms.openlocfilehash: 5a87d63e597622ae5c0d8c8f48bc37281d4fd530
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.openlocfilehash: c6a140b0392affea252e05d63055232532305c75
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99560356"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104949861"
 ---
 # <a name="advanced-resource-graph-query-samples"></a>Примеры расширенных запросов к Resource Graph
 
@@ -28,7 +28,6 @@ ms.locfileid: "99560356"
 - [Список всех расширений, установленных на виртуальной машине](#join-vmextension)
 - [Поиск учетных записей хранения с указанным тегом в группе ресурсов](#join-findstoragetag)
 - [Объединение результатов из двух запросов в один результат](#unionresults)
-- [Включение имен клиентов и подписок с DisplayNames](#displaynames)
 - [Суммирование виртуальных машин по расширенному свойству состояния питания](#vm-powerstate)
 - [Число несоответствующих назначений гостевой конфигурации](#count-gcnoncompliant)
 - [Сведения о запросах для отчетов о назначениях гостевой конфигурации](#query-gcreports)
@@ -559,26 +558,6 @@ Search-AzGraph -Query "Resources | where type == 'microsoft.compute/virtualmachi
 - Портал Azure: <a href="https://portal.azure.com/?feature.customportal=false#blade/HubsExtension/ArgQueryBlade/query/Resources%20%7C%20where%20type%20%3D%3D%20%27microsoft.compute%2Fvirtualmachines%27%20%7C%20summarize%20count%28%29%20by%20tostring%28properties.extended.instanceView.powerState.code%29" target="_blank">portal.azure.com</a>
 - Портал Azure для государственных организаций: <a href="https://portal.azure.us/?feature.customportal=false#blade/HubsExtension/ArgQueryBlade/query/Resources%20%7C%20where%20type%20%3D%3D%20%27microsoft.compute%2Fvirtualmachines%27%20%7C%20summarize%20count%28%29%20by%20tostring%28properties.extended.instanceView.powerState.code%29" target="_blank">portal.azure.us</a>
 - Портал Azure для Китая (21Vianet): <a href="https://portal.azure.cn/?feature.customportal=false#blade/HubsExtension/ArgQueryBlade/query/Resources%20%7C%20where%20type%20%3D%3D%20%27microsoft.compute%2Fvirtualmachines%27%20%7C%20summarize%20count%28%29%20by%20tostring%28properties.extended.instanceView.powerState.code%29" target="_blank">portal.azure.cn</a>
-
----
-
-## <a name="include-the-tenant-and-subscription-names-with-displaynames"></a><a name="displaynames"></a>Включение имен клиентов и подписок с DisplayNames
-
-В этом запросе используется параметр **Include** со значением _DisplayNames_ для включения **subscriptionDisplayName** и **tenantDisplayName** в результаты. Этот параметр доступен только в Azure CLI и Azure PowerShell.
-
-```azurecli-interactive
-az graph query -q "limit 1" --include displayNames
-```
-
-```azurepowershell-interactive
-Search-AzGraph -Query "limit 1" -Include DisplayNames
-```
-
-Альтернативой получению имени подписки является использование оператора `join` и подключение к таблице **ResourceContainers** и типу `Microsoft.Resources/subscriptions`. Оператор `join` работает в Azure CLI, Azure PowerShell, на портале и во всех поддерживаемых пакетах SDK. Пример см. в разделе [Хранилище ключей с именем подписки](#join).
-
-> [!NOTE]
-> Если в запросе не используется **project** для определения возвращаемых свойств, **subscriptionDisplayName** и **tenantDisplayName** автоматически включаются в результаты.
-> Если в запросе используется **project**, каждое из полей _DisplayName_ должно быть явно включено в **project**, иначе они не будут включены в результаты, даже при использовании параметра **Include**. Параметр **Include** не работает с [таблицами](../concepts/query-language.md#resource-graph-tables).
 
 ---
 

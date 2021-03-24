@@ -2,24 +2,23 @@
 title: Служба Azure Front Door | Документация Майкрософт
 description: В статье представлен обзор службы Azure Front Door.
 services: frontdoor
-documentationcenter: ''
 author: duongau
-editor: ''
 ms.service: frontdoor
-ms.devlang: na
 ms.topic: overview
-ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
-ms.date: 09/27/2020
+ms.date: 03/09/2021
 ms.author: duau
-ms.openlocfilehash: e9d719a29bc9a4b3e0428913e5bc1a91bec16623
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 2a5c298c201aa2a1f968c2a96dcfd6963a410cf7
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102183171"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103149228"
 ---
 # <a name="what-is-azure-front-door"></a>Что такое Azure Front Door?
+
+> [!IMPORTANT]
+> Эта документация предназначена для Azure Front Door. Ищете информацию об Azure Front Door цен. категории "Стандартный" или "Премиум" (предварительная версия)? см. [здесь](/standard-premium/overview.md).
 
 Azure Front Door — это глобальная масштабируемая точка входа, которая использует глобальную промежуточную подсеть Майкрософт для создания быстрых, безопасных и масштабируемых веб-приложений. С помощью службы Front Door вы можете преобразовать глобальные пользовательские и корпоративные приложения в современные, надежные, высокопроизводительные и персонализированные приложения с содержимым, которое охватывает глобальную аудиторию с помощью Azure.
 

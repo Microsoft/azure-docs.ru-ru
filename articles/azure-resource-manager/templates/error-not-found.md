@@ -2,13 +2,13 @@
 title: Ошибка "ресурс не найден"
 description: Описывает, как устранять ошибки, когда не удается найти ресурс. Эта ошибка может возникать при развертывании шаблона Azure Resource Manager или при выполнении действий управления.
 ms.topic: troubleshooting
-ms.date: 06/10/2020
-ms.openlocfilehash: 40f3c2ac61b6a6d5fdbcefdf62761668b013b1db
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 03/23/2021
+ms.openlocfilehash: b80c32683190167d5c0d6e0a7f75acce8bbdb833
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99526252"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950881"
 ---
 # <a name="resolve-resource-not-found-errors"></a>Ошибка при устранении ненайденных ресурсов
 
@@ -133,3 +133,9 @@ group {resource group name} was not found.
 ```json
 "[reference(resourceId('exampleResourceGroup', 'Microsoft.Storage/storageAccounts', 'myStorage'), '2017-06-01')]"
 ```
+
+## <a name="solution-6---after-deleting-resource"></a>Решение 6. Удаление ресурса
+
+При удалении ресурса может быть некоторое время, когда ресурс по-прежнему отображается на портале, но на самом деле он недоступен. Если выбрать ресурс, вы получите сообщение об ошибке, сообщающее, что ресурс не найден. Обновите портал, чтобы получить последнее представление.
+
+Если проблема повторится после короткого ожидания, [обратитесь в службу поддержки](https://azure.microsoft.com/support/options/).

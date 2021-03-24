@@ -16,10 +16,10 @@ ms.workload: infrastructure
 ms.date: 07/15/2019
 ms.author: kumud
 ms.openlocfilehash: b3107d521fb79e3ea6cfe190abd2ec3fb7859cb3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87288225"
 ---
 # <a name="azure-powershell-samples-for-virtual-network"></a>Примеры скриптов Azure PowerShell для виртуальной сети

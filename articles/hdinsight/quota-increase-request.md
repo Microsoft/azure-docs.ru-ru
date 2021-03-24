@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 05/07/2020
-ms.openlocfilehash: a539acc423feeab500830fb33262d1b824101072
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b62e41f280d02664b3df631c3413960f1265356f
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98935840"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863179"
 ---
 # <a name="requesting-quota-increases-for-azure-hdinsight"></a>Запрос на увеличение квоты для Azure HDInsight
 
@@ -34,7 +34,7 @@ ms.locfileid: "98935840"
 1. Войдите на [портал Azure](https://portal.azure.com/).
 1. Щелкните **Справка и поддержка** в левом нижнем углу страницы.
 
-    ![Кнопка "Справка и поддержка"](./media/quota-increase-request/help-support-button.png)
+    :::image type="content" source="./media/quota-increase-request/help-support-button.png" alt-text="Кнопка &quot;Справка и поддержка&quot;" border="true":::
 
 1. Выберите **Новый запрос в службу поддержки**.
 1. В разделе **Новый запрос на поддержку** во вкладке **Основы** выберите следующие параметры:
@@ -43,20 +43,20 @@ ms.locfileid: "98935840"
    - **Подписка**. Подписка, которую необходимо изменить.
    - **Тип квоты**. **HDInsight**
 
-     ![Создание запроса в службу поддержки для увеличения квоты на ядра HDInsight](./media/quota-increase-request/hdinsight-quota-support-request.png)
+     :::image type="content" source="./media/quota-increase-request/hdinsight-quota-support-request.png" alt-text="Создание запроса в службу поддержки для увеличения квоты на ядра HDInsight" border="true":::
 
 1. По завершении выберите **Next: Решения >>** .
 1. На странице **Сведения** введите описание проблемы, выберите степень серьезности проблемы, предпочтительный способ контакта и заполните другие обязательные поля. Чтобы убедиться в том, что вы предоставили все необходимые сведения, используйте приведенный ниже шаблон. Запросы на увеличение квоты оцениваются группой управления емкостью Azure, а не группой разработчиков HDInsight. Чем более полную информацию вы предоставите, тем больше вероятность того, что ваш запрос будет одобрен.
 
-    ```
-    I would like to request [SPECIFY DESIRED AMOUNT] on [DESIRED SKU] for [SUBSCRIPTION ID].
-    
-    My current quota on this subscription is [CURRENT QUOTA AMOUNT].
-    
-    I would like to use the extra cores for [DETAIL REASON].
-    ```
+   ```text
+   I would like to request [SPECIFY DESIRED AMOUNT] on [DESIRED SKU] for [SUBSCRIPTION ID].
+   
+   My current quota on this subscription is [CURRENT QUOTA AMOUNT].
+   
+   I would like to use the extra cores for [DETAIL REASON].
+   ```
 
-    ![сведения о проблеме](./media/quota-increase-request/problem-details.png)
+   :::image type="content" source="./media/quota-increase-request/problem-details.png" alt-text="сведения о проблеме" border="true":::
 
 1. По завершении выберите **Next: Просмотр и создание >>** .
 1. На вкладке **Проверить и создать** выберите **Создать**.

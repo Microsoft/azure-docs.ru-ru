@@ -5,18 +5,18 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: authentication
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 03/08/2021
 ms.author: justinha
 author: justinha
 manager: daveba
 ms.reviewer: rhicock
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f8f270f740951b95b0d4c00cbcf9b08e20a8e0c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5d332c831cc764c61a4672ea5ad1db231b68e106
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96743730"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952377"
 ---
 # <a name="licensing-requirements-for-azure-active-directory-self-service-password-reset"></a>Требования к лицензированию для самостоятельного сброса пароля Azure Active Directory
 
@@ -26,11 +26,11 @@ ms.locfileid: "96743730"
 
 ## <a name="compare-editions-and-features"></a>Сравнение выпусков и функций
 
-SSPR лицензируется для каждого пользователя. Чтобы обеспечить соответствие требованиям, организациям необходимо назначить соответствующую лицензию своим пользователям.
+Для SSPR требуется лицензия только для клиента. 
 
 В следующей таблице описаны различные сценарии SSPR для изменения, сброса или обратной записи паролей, а также номера SKU, которые предоставляют эту функцию.
 
-| Компонент | Azure AD уровня "Бесплатный" | Microsoft 365 бизнес стандартный; | Microsoft 365 бизнес премиум. | Azure AD Premium (P1 или P2) |
+| Функция | Azure AD уровня "Бесплатный" | Microsoft 365 бизнес стандартный; | Microsoft 365 бизнес премиум. | Azure AD Premium (P1 или P2) |
 | --- |:---:|:---:|:---:|:---:|
 | **Изменение пароля пользователя только в облаке**<br />Когда пользователь в Azure AD знает свой пароль и хочет изменить его на что-то новое. | ● | ● | ● | ● |
 | **Сброс пароля пользователя только в облаке**<br />Когда пользователь в Azure AD забыл свой пароль и его необходимо сбросить. | | ● | ● | ● |
@@ -46,12 +46,6 @@ SSPR лицензируется для каждого пользователя. 
 * [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 * [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
 * [Microsoft 365 для бизнеса](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
-
-## <a name="enable-group-or-user-based-licensing"></a>Включение группового и пользовательского лицензирования
-
-Azure AD поддерживает лицензирование на основе групп. Это позволяет администраторам назначать лицензии сразу группе пользователей, вместо назначения их по одной. Дополнительные сведения см. в разделе [Назначение лицензий группе пользователей в Azure Active Directory](../enterprise-users/licensing-groups-assign.md#step-1-assign-the-required-licenses).
-
-Некоторые службы Майкрософт доступны не во всех расположениях. Прежде чем можно будет назначить лицензию пользователю, администратор должен указать для пользователя свойство " **место использования** ". Назначение лицензий можно выполнить в разделе "   >    >  **Параметры** профиля пользователя" в портал Azure. *Если лицензии назначаются группам, все пользователи, для которых не указано расположение, наследуют расположение каталога.*
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

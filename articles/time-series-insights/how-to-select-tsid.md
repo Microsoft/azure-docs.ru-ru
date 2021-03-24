@@ -8,14 +8,14 @@ ms.workload: big-data
 ms.service: time-series-insights
 services: time-series-insights
 ms.topic: conceptual
-ms.date: 09/30/2020
+ms.date: 03/23/2021
 ms.custom: seodec18
-ms.openlocfilehash: c3f6f6a5ac1068f2eabca351e85376b8e16d1058
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 8aefa6efa5f10dae8a28e7126b91b7b5f6ac77a6
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "95016757"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950745"
 ---
 # <a name="best-practices-for-choosing-a-time-series-id"></a>Лучшие методики при выборе идентификатора временного ряда
 
@@ -24,6 +24,11 @@ ms.locfileid: "95016757"
 ## <a name="choose-a-time-series-id"></a>Выбор идентификатора временных рядов
 
 Выбор соответствующего идентификатора временного ряда является критическим. Выбор идентификатора временного ряда подобен выбору ключа раздела для базы данных. Это необходимо при создании среды Gen2 "аналитика временных рядов Azure".
+
+Просмотрите учебник по подготовке среды, чтобы получить подробное описание идентификатора временного ряда. Вы увидите два разных примера полезных данных телеметрии JSON и правильный выбор идентификатора временного ряда для каждого из них.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWzk3P]
+
 
 > [!IMPORTANT]
 > Идентификаторы временных рядов:
