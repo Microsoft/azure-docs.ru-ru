@@ -6,16 +6,16 @@ author: prakulka
 manager: nmurav
 services: azure-communication-services
 ms.author: prakulka
-ms.date: 10/05/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.custom: references_regions
 ms.service: azure-communication-services
-ms.openlocfilehash: 380792db21932ed2c6cffb4227df09b27f0cdf5e
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 6ec0b32e487739c33b1b2b49bd0645130fc88581
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102487499"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104729538"
 ---
 # <a name="phone-number-types-in-azure-communication-services"></a>Типы телефонных номеров в Службах коммуникации Azure
 

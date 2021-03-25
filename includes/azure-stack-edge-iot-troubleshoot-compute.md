@@ -3,13 +3,13 @@ author: v-dalc
 ms.service: databox
 ms.author: alkohli
 ms.topic: include
-ms.date: 03/02/2021
-ms.openlocfilehash: 57415ec76a3e8d9fc3c160b47668d3419ff6ea5c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 03/23/2021
+ms.openlocfilehash: 34d0d55ba6eb403055be96758b57b7bd0c2ab704
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103622261"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104988350"
 ---
 Используйте ответы времени выполнения агента IoT Edge, чтобы устранить ошибки, связанные с вычислением. Ниже перечислены возможные ответы:
 
@@ -66,3 +66,43 @@ ms.locfileid: "103622261"
 1. Нажмите кнопку **Применить**. Измененный диапазон IP-адресов должен вступить в силу немедленно.
 
 Дополнительные сведения см. в разделе [изменение IP-адресов внешней службы для контейнеров](../articles/databox-online/azure-stack-edge-j-series-manage-compute.md#change-external-service-ips-for-containers).
+
+### <a name="configure-static-ips-for-iot-edge-modules"></a>Настройка статических IP-адресов для модулей IoT Edge
+
+#### <a name="problem-description"></a>Описание проблемы
+
+Kubernetes назначает динамические IP-адреса каждому модулю IoT Edge на устройстве Azure Stack ребра Pro GPU. Метод необходим для настройки статических IP-адресов для модулей.
+
+#### <a name="suggested-solution"></a>Предлагаемое решение
+
+Вы можете указать фиксированные IP-адреса для модулей IoT Edge с помощью K8s-экспериментального раздела, как описано ниже. 
+
+```yaml
+{
+  "k8s-experimental": {
+    "serviceOptions" : {
+      "loadBalancerIP" : "100.23.201.78",
+      "type" : "LoadBalancer"
+    }
+  }
+}
+```
+### <a name="expose-kubernetes-service-as-cluster-ip-service-for-internal-communication"></a>Предоставление службы Kubernetes в качестве IP-службы кластера для внутренней связи
+
+#### <a name="problem-description"></a>Описание проблемы
+
+По умолчанию служба IoT имеет тип подсистемы балансировки нагрузки и назначила внешние IP-адреса. Возможно, вам не нужен внешний IP-адрес для вашего приложения. Возможно, потребуется предоставить доступ к модулям Pod в кластере KUbernetes для доступа в качестве других модулей, а не в качестве внешней службы балансировщика нагрузки. 
+
+#### <a name="suggested-solution"></a>Предлагаемое решение
+
+Параметры Create можно использовать в разделе K8s-экспериментальный. Следующий параметр службы должен работать с привязками портов.
+
+```yaml
+{
+"k8s-experimental": {
+  "serviceOptions" : {
+    "type" : "ClusterIP"
+    }
+  }
+}
+```

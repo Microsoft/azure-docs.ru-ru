@@ -10,10 +10,10 @@ ms.date: 06/05/2019
 ms.author: chrande
 ms.custom: devx-track-js
 ms.openlocfilehash: 0b88456bd245f79c38d7829dca76de702f768c06
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93360145"
 ---
 # <a name="quickstart-build-a-nodejs-application-by-using-azure-cosmos-db-gremlin-api-account"></a>Краткое руководство. Создание приложения Node.js с помощью учетной записи API Gremlin для Azure Cosmos DB
@@ -96,7 +96,7 @@ ms.locfileid: "93360145"
 
     ```
 
-  Все конфигурации находятся в файле *config.js* , который мы изменим в [следующем разделе](#update-your-connection-string).
+  Все конфигурации находятся в файле *config.js*, который мы изменим в [следующем разделе](#update-your-connection-string).
 
 * Для выполнения различных операций Gremlin определяется набор функций. Это один из них:
 
@@ -152,7 +152,7 @@ ms.locfileid: "93360145"
 
 1. Откройте файл *config.js*. 
 
-2. В файле *config.js* заполните ключ `config.endpoint` значением **конечной точки Gremlin** , полученным на странице **Обзор** учетной записи Cosmos DB на портале Azure. 
+2. В файле *config.js* заполните ключ `config.endpoint` значением **конечной точки Gremlin**, полученным на странице **Обзор** учетной записи Cosmos DB на портале Azure. 
 
     `config.endpoint = "https://<your_Gremlin_account_name>.gremlin.cosmosdb.azure.com:443/";`
 
@@ -166,7 +166,7 @@ ms.locfileid: "93360145"
 
 4. Введите имя базы данных и графа (контейнера) для значения config.database и config.collection. 
 
-Вот как должен выглядеть файл *config.js* :
+Вот как должен выглядеть файл *config.js*:
 
 ```javascript
 var config = {}
@@ -182,7 +182,7 @@ module.exports = config;
 
 ## <a name="run-the-console-app"></a>Запуск консольного приложения
 
-1. Откройте окно терминала. С помощью команды `cd` перейдите в каталог установки файла *package.json* , включенного в проект.
+1. Откройте окно терминала. С помощью команды `cd` перейдите в каталог установки файла *package.json*, включенного в проект.
 
 2. Запустите `npm install`, чтобы установить необходимые модули npm, включая `gremlin`.
 

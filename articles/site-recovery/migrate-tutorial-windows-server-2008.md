@@ -9,10 +9,10 @@ ms.date: 07/27/2020
 ms.author: raynew
 ms.custom: MVC
 ms.openlocfilehash: 6cc0855d3a4540de780a566a4613b4dbc647cfc5
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92369494"
 ---
 # <a name="migrate-servers-running-windows-server-2008-to-azure"></a>Перенос серверов под управлением Windows Server 2008 в Azure
@@ -25,7 +25,7 @@ ms.locfileid: "92369494"
 > * Подготовка локальной среды к миграции.
 > * Настройка целевой среды.
 > * Настройка политики репликации.
-> * Включение репликации.
+> * Включите репликацию.
 > * Выполнение тестовой миграции, позволяющей убедиться в правильной работе всех компонентов.
 > * Отработка отказа в Azure и завершение миграции.
 

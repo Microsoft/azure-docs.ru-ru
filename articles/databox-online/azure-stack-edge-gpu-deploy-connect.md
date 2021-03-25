@@ -10,10 +10,10 @@ ms.date: 08/29/2020
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to connect and activate Azure Stack Edge Pro so I can use it to transfer data to Azure.
 ms.openlocfilehash: f069f711ccf5672041ea6f3b15a52fa2b3ba2022
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90900028"
 ---
 # <a name="tutorial-connect-to-azure-stack-edge-pro-with-gpu"></a>Руководство по Подключение к Azure Stack Edge Pro с GPU
@@ -32,7 +32,7 @@ ms.locfileid: "90900028"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Перед установкой и настройкой устройства Azure Stack Edge Pro с GPU проверьте следующие условия.
+Перед установкой и настройкой устройства Azure Stack Edge Pro с GPU проверьте следующие условия:
 
 * Вы установили физическое устройство, как описано в статье [Установка Azure Stack Edge Pro](azure-stack-edge-gpu-deploy-install.md).
 
