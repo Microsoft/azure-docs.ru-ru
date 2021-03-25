@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.date: 01/11/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: a1ee632e3aaae7b858ab43b45f6e72aff8d1fb77
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 5e0125f14570e917b228c5f713e636335755581d
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100361774"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024274"
 ---
 # <a name="azure-active-directory-b2c-isv-partners"></a>Azure Active Directory B2C партнеров независимых поставщиков программного обеспечения
 
@@ -26,12 +26,6 @@ ms.locfileid: "100361774"
 >[Сайт Azure Active Directory B2C Community на сайте GitHub](https://azure-ad-b2c.github.io/azureadb2ccommunity.io/) также предоставляет примеры пользовательских политик из сообщества.
 
 ## <a name="identity-verification-and-proofing"></a>Проверка личности и подтверждение
-
-Благодаря Azure AD B2Cным партнерам клиенты могут включить проверку личности и доказательства их конечных пользователей, прежде чем разрешить регистрацию или доступ к учетной записи. Проверка личности и проверки подлинности могут проверять документы, сведения на основе знаний и актуальность.
-
-Схема на высоком уровне архитектуры описывает последовательность.
-
-![На схеме показан поток проверки личности](./media/partner-gallery/third-party-identity-proofing.png)
 
 Партнеры корпорации Майкрософт со следующими поставщиками программного обеспечения для проверки и проверки личности.
 
@@ -67,7 +61,7 @@ ms.locfileid: "100361774"
 | ![Снимок экрана с логотипом n8identity](./media/partner-gallery/n8identity-logo.png) | [N8Identity](./partner-n8identity.md) — это платформа управления удостоверениями как услуга, которая предоставляет решение для устранения проблем миграции учетных записей клиентов и администрирования запросов обслуживания клиентов (CSR) на Microsoft Azure. |
 | ![Снимок экрана с логотипом Савийнт](./media/partner-gallery/saviynt-logo.png) | [Савийнт](./partner-Saviynt.md) облачная платформа обеспечивает лучшую безопасность, соответствие требованиям и управляемость благодаря интеллектуальной аналитике и кросс-интеграции приложений для УПРОЩЕНия ИТ-модернизации. |
 
-## <a name="security"></a>Безопасность
+## <a name="security"></a>безопасность
 
 Партнеры корпорации Майкрософт со следующими поставщиками программного обеспечения для обеспечения безопасности.
 
@@ -85,6 +79,6 @@ ms.locfileid: "100361774"
 
 - [Приступая к работе с пользовательскими политиками в Azure AD B2C](./custom-policy-get-started.md?tabs=applications)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Выберите партнера в упомянутых таблицах, чтобы узнать, как интегрировать свое решение с Azure AD B2C.

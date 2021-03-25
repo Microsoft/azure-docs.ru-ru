@@ -6,10 +6,10 @@ ms.date: 04/21/2020
 ms.reviewer: sunayv
 ms.custom: devx-track-csharp, mvc, cc996988-fb4f-47, references_regions
 ms.openlocfilehash: 9083ff7d8f65c68ce8d173973a4eda650ac355aa
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88212908"
 ---
 # <a name="create-an-openapi-definition-for-a-serverless-api-using-azure-api-management"></a>Создание определения OpenAPI для бессерверного API с помощью Управления API
@@ -49,12 +49,12 @@ ms.locfileid: "88212908"
 
 1. Из раскрывающегося списка **[Уровень авторизации](functions-bindings-http-webhook-trigger.md#http-auth)** выберите **Функция**, а затем щелкните **Создать функцию**.
 
-    :::image type="content" source="media/functions-openapi-definition/select-http-trigger-openapi.png" alt-text="Создание функции HTTP для OpenAPI&quot;:::
+    :::image type="content" source="media/functions-openapi-definition/select-http-trigger-openapi.png" alt-text="Создание функции HTTP для OpenAPI":::
 
 1. Выберите **Code + Test** (Код и тест), а затем в раскрывающемся списке выберите **run.csx**. Замените содержимое файла сценария C# (run.csx) следующим кодом и выберите **Сохранить**.
 
     ```csharp
-    #r &quot;Newtonsoft.Json"
+    #r "Newtonsoft.Json"
     
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
@@ -115,12 +115,7 @@ ms.locfileid: "88212908"
     }
     ```
 
-    :::image type="content" source="media/functions-openapi-definition/test-function.png" alt-text="Создание функции HTTP для OpenAPI&quot;:::
-
-1. Выберите **Code + Test** (Код и тест), а затем в раскрывающемся списке выберите **run.csx**. Замените содержимое файла сценария C# (run.csx) следующим кодом и выберите **Сохранить**.
-
-    ```csharp
-    #r &quot;Newtonsoft.Json":::
+    :::image type="content" source="media/functions-openapi-definition/test-function.png" alt-text="Тестирование функции на портале Azure":::
 
     На вкладке **Выходные данные** возвращается результат следующего вида:
 
@@ -136,12 +131,10 @@ ms.locfileid: "88212908"
 
 1. Выберите приложение-функцию, затем щелкните **Управление API** в меню слева и выберите **Создать** в разделе **Управление API**.
 
-    :::image type="content" source="media/functions-openapi-definition/select-all-settings-openapi.png" alt-text="Создание функции HTTP для OpenAPI&quot;:::
+    :::image type="content" source="media/functions-openapi-definition/select-all-settings-openapi.png" alt-text="Выбор раздела &quot;Управление API&quot;":::
 
-1. Выберите **Code + Test** (Код и тест), а затем в раскрывающемся списке выберите **run.csx**. Замените содержимое файла сценария C# (run.csx) следующим кодом и выберите **Сохранить**.
 
-    ```csharp
-    #r &quot;Newtonsoft.Json" настройте параметры, как указано в следующей таблице:
+1. В разделе "Управление API" настройте параметры, как указано в следующей таблице:
 
     | Параметр      | Рекомендуемое значение  | Описание                                        |
     | ------------ |  ------- | -------------------------------------------------- |
@@ -165,12 +158,7 @@ ms.locfileid: "88212908"
 
 1. На странице **Создание из приложения-функции** подтвердите значения по умолчанию и щелкните **Создать**.
 
-    :::image type="content" source="media/functions-openapi-definition/create-function-openapi.png" alt-text="Создание функции HTTP для OpenAPI&quot;:::
-
-1. Выберите **Code + Test** (Код и тест), а затем в раскрывающемся списке выберите **run.csx**. Замените содержимое файла сценария C# (run.csx) следующим кодом и выберите **Сохранить**.
-
-    ```csharp
-    #r &quot;Newtonsoft.Json":::
+    :::image type="content" source="media/functions-openapi-definition/create-function-openapi.png" alt-text="Создание из приложения-функции":::
 
     Azure создаст API для выбранной функции.
 
@@ -191,12 +179,7 @@ ms.locfileid: "88212908"
 
 1. Щелкните **Отправить**, а затем просмотрите **HTTP-ответ**.
 
-    :::image type="content" source="media/functions-openapi-definition/test-function-api-openapi.png" alt-text="Создание функции HTTP для OpenAPI&quot;:::
-
-1. Выберите **Code + Test** (Код и тест), а затем в раскрывающемся списке выберите **run.csx**. Замените содержимое файла сценария C# (run.csx) следующим кодом и выберите **Сохранить**.
-
-    ```csharp
-    #r &quot;Newtonsoft.Json":::
+    :::image type="content" source="media/functions-openapi-definition/test-function-api-openapi.png" alt-text="Тестирование API функции":::
 
 ## <a name="download-the-openapi-definition"></a>Скачивание определения OpenAPI
 

@@ -8,10 +8,10 @@ ms.date: 08/12/2020
 ms.author: owend
 ms.reviewer: minewiskan
 ms.openlocfilehash: e4953137cf939c35c6ac73fe51ca43eca6e99edc
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88192434"
 ---
 # <a name="quickstart-configure-server-firewall---portal"></a>Краткое руководство. Настройка брандмауэра сервера с помощью портала

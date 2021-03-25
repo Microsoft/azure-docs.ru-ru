@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 11/20/2020
 ms.custom: devx-track-js, devx-track-azurecli
 ms.openlocfilehash: ce06e792fd5a4582e77d18313052ea91a38121a8
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98920212"
 ---
 # <a name="tutorial-automate-container-image-builds-when-a-base-image-is-updated-in-another-private-container-registry"></a>Руководство по Автоматизация сборки образов контейнера при обновлении базового образа в другом частном реестре контейнеров 

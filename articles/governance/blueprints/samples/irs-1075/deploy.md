@@ -4,10 +4,10 @@ description: Процедура развертывания для примера
 ms.date: 01/08/2021
 ms.topic: sample
 ms.openlocfilehash: 6df2781207c623e10daf0681865b9246be1b1f4c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100571912"
 ---
 # <a name="deploy-the-irs-1075-blueprint-sample"></a>Развертывание примера схемы IRS 1075

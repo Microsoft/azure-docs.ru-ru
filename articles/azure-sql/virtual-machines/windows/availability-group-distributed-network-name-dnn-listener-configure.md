@@ -15,12 +15,12 @@ ms.workload: iaas-sql-server
 ms.date: 10/07/2020
 ms.author: mathoma
 ms.reviewer: jroth
-ms.openlocfilehash: 7c3950b1aeae2b4e90b1ae4acfb9439c2cb159ca
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: bf5c4c39ea8f5705cc9788fdcf2cddd01dcb4087
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "105026008"
+ms.locfileid: "105034713"
 ---
 # <a name="configure-a-dnn-listener-for-an-availability-group"></a>Настройка прослушивателя DNN для группы доступности
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -145,7 +145,7 @@ SELECT * FROM SYS.AVAILABILITY_GROUP_LISTENERS
 
 ## <a name="update-connection-string"></a>Обновление строки подключения
 
-Обновите строки подключения для приложений, чтобы они подключались к прослушивателю DNN. Чтобы обеспечить быстрое подключение при отработке отказа, добавьте `MultiSubnetFailover=True` в строку подключения, если клиент SQL его поддерживает.
+Обновите строки подключения для приложений, чтобы они подключались к прослушивателю DNN. Строки подключения для прослушивателей DNN должны предоставлять номер порта DNN. Чтобы обеспечить быстрое подключение при отработке отказа, добавьте `MultiSubnetFailover=True` в строку подключения, если клиент SQL его поддерживает.
 
 ## <a name="test-failover"></a>Тестовая отработка отказа
 
@@ -180,6 +180,6 @@ SELECT * FROM SYS.AVAILABILITY_GROUP_LISTENERS
 
 Прослушиватели DNN предназначены для прослушивания всех IP-адресов, но на конкретном уникальном порте. Запись DNS для имени прослушивателя должна разрешаться в адреса всех реплик в группе доступности. Это выполняется автоматически с помощью сценария PowerShell, приведенного в разделе [Создание скрипта](#create-script) . Так как прослушиватели DNN принимают подключения на всех IP-адресах, очень важно, чтобы порт прослушивателя был уникальным и не используется другими репликами в группе доступности. Поскольку SQL Server всегда прослушивает порт 1433, напрямую или через службу обозреватель SQL, порт 1433 не может использоваться ни для одного прослушивателя DNN.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о SQL Serverии функций HADR в Azure см. в разделе [группы доступности](availability-group-overview.md) и [экземпляр отказоустойчивого кластера](failover-cluster-instance-overview.md). Вы также [можете ознакомиться с рекомендациями](hadr-cluster-best-practices.md) по настройке среды для обеспечения высокого уровня доступности и аварийного восстановления. 

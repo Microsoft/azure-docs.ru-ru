@@ -13,10 +13,10 @@ ms.custom:
 - amqp
 - mqtt
 ms.openlocfilehash: e2930a3ca2ecb9d8217fdfea1cbcb0e669f61775
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94960042"
 ---
 # <a name="quickstart-provision-a-simulated-tpm-device-using-the-azure-iot-c-sdk"></a>Краткое руководство по подготовке имитированного устройства доверенного платформенного модуля с помощью пакета SDK для устройства C Интернета вещей Azure

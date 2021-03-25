@@ -10,10 +10,10 @@ ms.date: 09/22/2020
 ms.author: anfeldma
 ms.custom: devx-track-js
 ms.openlocfilehash: b4ed27e1515e898a71fb503bb0f260c608ef9f6f
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93090211"
 ---
 # <a name="quickstart-use-nodejs-to-connect-and-query-data-from-azure-cosmos-db-sql-api-account"></a>Краткое руководство. Подключение и выполнение запроса к данным из учетной записи API SQL для Azure Cosmos DB с помощью Node.js
@@ -99,7 +99,7 @@ ms.locfileid: "93090211"
 
 Это необязательный шаг. Если вы хотите узнать, как создать в коде ресурсы базы данных Azure Cosmos, изучите приведенные ниже фрагменты кода. Если вас это не интересует, можете сразу переходить к разделу [Обновление строки подключения](#update-your-connection-string).
 
-Если вам знакома предыдущая версия пакета SDK для SQL на JavaScript, вы уже видели термины _коллекция_ и _документ_. Так как Azure Cosmos DB поддерживает [несколько моделей API](introduction.md), [пакет SDK для JavaScript версии 2.0+](https://www.npmjs.com/package/@azure/cosmos) использует общий термин _контейнер_ , который может быть коллекцией, графом или таблицей, и термин _элемент_ для описания содержимого контейнера.
+Если вам знакома предыдущая версия пакета SDK для SQL на JavaScript, вы уже видели термины _коллекция_ и _документ_. Так как Azure Cosmos DB поддерживает [несколько моделей API](introduction.md), [пакет SDK для JavaScript версии 2.0+](https://www.npmjs.com/package/@azure/cosmos) использует общий термин _контейнер_, который может быть коллекцией, графом или таблицей, и термин _элемент_ для описания содержимого контейнера.
 
 Пакет SDK Cosmos DB для JavaScript называется @azure/cosmos и может быть установлен из npm...
 

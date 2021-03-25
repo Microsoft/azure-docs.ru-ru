@@ -7,10 +7,10 @@ ms.service: marketplace
 ms.topic: overview
 ms.date: 10/15/2020
 ms.openlocfilehash: 099515eb1160b131f2d56fd02f300999d5ddfd16
-ms.sourcegitcommit: 8b4b4e060c109a97d58e8f8df6f5d759f1ef12cf
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96780320"
 ---
 # <a name="what-is-the-microsoft-commercial-marketplace"></a>Что такое коммерческая платформа Майкрософт?

@@ -10,10 +10,10 @@ ms.date: 01/19/2021
 ms.author: victorh
 ms.custom: mvc, devx-track-js, devx-track-azurecli
 ms.openlocfilehash: 1a691d8ab212dd436b0dc9f7aafbc19a406b12b7
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98601776"
 ---
 # <a name="quickstart-direct-web-traffic-with-azure-application-gateway---azure-cli"></a>Краткое руководство. Направление веб-трафика с помощью Шлюза приложений Azure и Azure CLI.

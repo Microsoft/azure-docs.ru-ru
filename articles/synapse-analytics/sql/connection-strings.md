@@ -11,10 +11,10 @@ ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 5ce411f3a2f3be162f9af16422d20b3e8b536fee
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98120926"
 ---
 # <a name="connection-strings-for-synapse-sql"></a>Строки подключения для Synapse SQL

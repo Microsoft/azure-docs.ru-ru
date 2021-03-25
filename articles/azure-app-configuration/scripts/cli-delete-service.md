@@ -11,10 +11,10 @@ ms.date: 02/19/2020
 ms.author: alkemper
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 49d6a85faa55de5dbf50377998dbe2fc829d9f6f
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96929792"
 ---
 # <a name="delete-an-azure-app-configuration-store"></a>Удаление хранилища конфигураций приложения Azure

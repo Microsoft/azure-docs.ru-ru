@@ -16,10 +16,10 @@ ms.reviewer: elkuzmen
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 95625886ed11256a40e5993540d7e545134d6dd6
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96860870"
 ---
 # <a name="what-is-self-service-sign-up-for-azure-active-directory"></a>Что такое самостоятельная регистрация для Azure Active Directory?
