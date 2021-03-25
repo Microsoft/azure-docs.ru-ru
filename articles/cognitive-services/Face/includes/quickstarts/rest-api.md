@@ -9,12 +9,12 @@ ms.subservice: face-api
 ms.topic: include
 ms.date: 12/06/2020
 ms.author: pafarley
-ms.openlocfilehash: 5523d89548ba08dfc5a43f5c21b5a12a5e5955c3
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 1a360a19da8006a8ab6d918560f1b1d566fdd66d
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102510884"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104265"
 ---
 Из этого руководства вы узнаете, как начать работу с REST API Распознавания лиц. В службе "Распознавание лиц" доступны передовые алгоритмы обнаружения и распознавания лиц на изображениях.
 
@@ -32,7 +32,7 @@ ms.locfileid: "102510884"
 * Получив подписку Azure, перейдите к <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesFace"  title="Создание ресурса Распознавания лиц"  target="_blank">созданию ресурса Распознавания лиц</a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
     * Для подключения приложения к API Распознавания лиц потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
-* [PowerShell версии 6.0 и выше](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
+* [PowerShell версии 6.0 и выше](/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
 
 
 ## <a name="detect-faces-in-an-image"></a>Определение лиц на изображении

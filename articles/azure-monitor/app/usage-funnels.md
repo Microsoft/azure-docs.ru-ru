@@ -6,12 +6,12 @@ author: NumberByColors
 ms.author: daviste
 ms.date: 07/17/2017
 ms.reviewer: mbullwin
-ms.openlocfilehash: d0e5cb5097a2f8833b10fec16a99b67c5c109fc8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c09667e0493fc39e8a2679a698f06301bab6ba45
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100583460"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024954"
 ---
 # <a name="discover-how-customers-are-using-your-application-with-application-insights-funnels"></a>Узнайте, как клиенты используют ваше приложение, с помощью воронок Application Insights.
 
@@ -47,6 +47,5 @@ ms.locfileid: "100583460"
   * [Анализ пользователей, сеансов и событий в Application Insights](usage-segmentation.md)
   * [Сохранение](usage-retention.md)
   * [книги](../visualize/workbooks-overview.md)
-  * [Добавление контекста пользователей](usage-send-user-context.md)
+  * [Добавление контекста пользователей](./usage-overview.md)
   * [Экспорт в Power BI](./export-power-bi.md)
-

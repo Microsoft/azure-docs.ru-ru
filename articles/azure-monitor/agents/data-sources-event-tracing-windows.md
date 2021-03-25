@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: jamesfit
 author: jimmyfit
 ms.date: 01/29/2021
-ms.openlocfilehash: 096d16bb2c7249ec99f37fbee9d8ffc8f0e45db2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 73135d95a56dc03790b3b7368a276ebfc99275fd
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102050772"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025073"
 ---
 # <a name="collecting-event-tracing-for-windows-etw-events-for-analysis-azure-monitor-logs"></a>Сбор событий трассировки событий Windows (ETW) для анализа Azure Monitor журналов
 
@@ -71,8 +71,8 @@ Get-NetEventProvider -ShowInstalled | Select-Object Name, Guid
 
 ### <a name="step-4-configure-log-analytics-storage-account-collection"></a>Шаг 4. Настройка сбора учетных записей хранения Log Analytics
 
-Выполните [эти инструкции](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostics-extension-logs#collect-logs-from-azure-storage) , чтобы получить журналы из службы хранилища Azure. После настройки данные событий ETW должны появиться в Log Analytics в таблице **етвевент** .
+Выполните [эти инструкции](./diagnostics-extension-logs.md#collect-logs-from-azure-storage) , чтобы получить журналы из службы хранилища Azure. После настройки данные событий ETW должны появиться в Log Analytics в таблице **етвевент** .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Использование [настраиваемых полей](../logs/custom-fields.md) для создания структуры в событиях ETW
 - Узнайте больше о [запросах журнала](../logs/log-query-overview.md), которые можно применять для анализа данных, собираемых из источников данных и решений.

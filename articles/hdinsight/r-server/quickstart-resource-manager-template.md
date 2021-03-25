@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 03/13/2020
-ms.openlocfilehash: c15e06d959510d74078a738db2606778d313ad65
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 4b4196a503bdc0fd455c5d731e11e5c099832c8e
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98943993"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869538"
 ---
 # <a name="quickstart-create-ml-services-cluster-in-azure-hdinsight-using-arm-template"></a>Краткое руководство. Создание кластера служб машинного обучения ML Services в Azure HDInsight с помощью шаблона ARM
 
@@ -20,7 +20,7 @@ ms.locfileid: "98943993"
 
 Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure**. Шаблон откроется на портале Azure.
 
-[![Развертывание в Azure](../../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-hdinsight-rserver%2Fazuredeploy.json)
+[:::image type="icon" source="../../media/template-deployments/deploy-to-azure.svg" alt-text="Развертывание в Azure":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-hdinsight-rserver%2Fazuredeploy.json)
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -41,7 +41,7 @@ ms.locfileid: "98943993"
 
 1. Нажмите кнопку **Развертывание в Azure** ниже, чтобы войти в Azure и открыть шаблон ARM.
 
-    [![Развертывание в Azure](../../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-hdinsight-rserver%2Fazuredeploy.json)
+    [:::image type="icon" source="../../media/template-deployments/deploy-to-azure.svg" alt-text="Развертывание в Azure":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-hdinsight-rserver%2Fazuredeploy.json)
 
 1. Введите или выберите следующие значения:
 
@@ -56,7 +56,7 @@ ms.locfileid: "98943993"
     |Имя пользователя SSH|Укажите имя пользователя, по умолчанию — sshuser.|
     |Пароль SSH|Укажите пароль.|
 
-    ![Развертывание шаблона Resource Manager HBase](./media/quickstart-resource-manager-template/resource-manager-template-rserver.png)
+    :::image type="content" source="./media/quickstart-resource-manager-template/resource-manager-template-rserver.png" alt-text="Развертывание шаблона Resource Manager HBase" border="true":::
 
 1. Ознакомьтесь с **УСЛОВИЯМИ ИСПОЛЬЗОВАНИЯ**. Затем установите флажок **Я принимаю указанные выше условия** и нажмите кнопку **Приобрести**. Вы получите уведомление о выполнении развертывания. Процесс создания кластера занимает около 20 минут.
 

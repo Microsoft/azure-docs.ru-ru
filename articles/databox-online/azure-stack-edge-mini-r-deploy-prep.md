@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 01/22/2021
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to prepare the portal to deploy Azure Stack Edge Mini R device so I can use it to transfer data to Azure.
-ms.openlocfilehash: b6745ed879f02a341027417b54eb459b5bfed705
-ms.sourcegitcommit: 3c3ec8cd21f2b0671bcd2230fc22e4b4adb11ce7
+ms.openlocfilehash: ed11b0bb00a571fb4cefc51a708432baef88184d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98762939"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104613079"
 ---
 # <a name="tutorial-prepare-to-deploy-azure-stack-edge-mini-r"></a>Руководство по подготовке к развертыванию Azure Stack Edge Mini R
 
@@ -84,6 +84,8 @@ ms.locfileid: "98762939"
 
 Если у вас есть ресурс Azure Stack Edge для управления физическими устройствами, пропустите этот шаг и перейдите к [получению ключа активации](#get-the-activation-key).
 
+### <a name="portal"></a>[Портал](#tab/azure-portal)
+
 Чтобы создать ресурс Azure Stack Edge, выполните указанные ниже действия на портале Azure.
 
 1. Используйте свои учетные данные Microsoft Azure для входа на портал Azure по этому URL-адресу: [https://portal.azure.com](https://portal.azure.com).
@@ -151,6 +153,51 @@ ms.locfileid: "98762939"
 > Чтобы создать несколько заказов за один раз или клонировать существующий заказ, используйте [скрипты из репозитория примеров для Azure](https://github.com/Azure-Samples/azure-stack-edge-order). Дополнительные сведения см. в файле сведений.
 
 Если во время процесса заказа возникли проблемы, ознакомьтесь со статьей [Устранение неполадок с заказами в Azure Stack Edge](azure-stack-edge-troubleshoot-ordering.md).
+
+### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
+
+При необходимости подготовьте среду для работы с Azure CLI.
+
+[!INCLUDE [azure-cli-prepare-your-environment-no-header.md](../../includes/azure-cli-prepare-your-environment-no-header.md)]
+
+Чтобы создать ресурс Azure Stack Edge, выполните указанные ниже команды в Azure CLI.
+
+1. Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create) или воспользуйтесь существующей группой ресурсов:
+
+   ```azurecli
+   az group create --name myasepgpu1 --location eastus
+   ```
+
+1. Чтобы создать устройство, воспользуйтесь командой [az databoxedge device create](/cli/azure/databoxedge/device#az_databoxedge_device_create):
+
+   ```azurecli
+   az databoxedge device create --resource-group myasepgpu1 \
+      --device-name myasegpu1 --location eastus --sku EdgeMR_Mini
+   ```
+
+   Выберите расположение, ближайшее к географическому региону, в котором вы хотите развернуть устройство. В регионе хранятся только метаданные для управления устройством. Фактические данные могут храниться в любой учетной записи хранения.
+
+   Список всех регионов, в которых доступны ресурсы Azure Stack Edge, приведен на странице [Доступность продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=databox&regions=all). При использовании Azure для государственных организаций доступны все регионы для государственных организаций, как показано на странице [Регионы Azure](https://azure.microsoft.com/global-infrastructure/regions/).
+
+1. Чтобы создать заказ, выполните команду [az databoxedge order create](/cli/azure/databoxedge/order#az_databoxedge_order_create):
+
+   ```azurecli
+   az databoxedge order create --resource-group myasepgpu1 \
+      --device-name myasegpu1 --company-name "Contoso" \
+      --address-line1 "1020 Enterprise Way" --city "Sunnyvale" \
+      --state "California" --country "United States" --postal-code 94089 \
+      --contact-person "Gus Poland" --email-list gus@contoso.com --phone 4085555555
+   ```
+
+Создание ресурса займет несколько минут. Чтобы просмотреть заказ, выполните команду [az databoxedge order show](/cli/azure/databoxedge/order#az_databoxedge_order_show):
+
+```azurecli
+az databoxedge order show --resource-group myasepgpu1 --device-name myasegpu1 
+```
+
+После размещения заказа корпорация Майкрософт проверит его и отправит вам данные о доставке по электронной почте.
+
+---
 
 ## <a name="get-the-activation-key"></a>Получение ключа активации.
 

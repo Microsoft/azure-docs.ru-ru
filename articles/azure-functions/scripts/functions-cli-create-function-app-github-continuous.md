@@ -5,10 +5,10 @@ ms.date: 07/03/2018
 ms.topic: sample
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 219e993ad7132c90de6db680facc9b8f815947cc
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97934396"
 ---
 # <a name="create-a-function-app-in-azure-that-is-deployed-from-github"></a>Создание в Azure приложения-функции, которое развертывается из GitHub

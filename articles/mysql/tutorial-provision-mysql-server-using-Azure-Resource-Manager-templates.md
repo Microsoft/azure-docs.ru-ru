@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 12/02/2019
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: fd5fa4e09dd3f73aa7a8f044ded04d504bd2f3dd
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97705478"
 ---
 # <a name="tutorial-provision-an-azure-database-for-mysql-server-using-azure-resource-manager-template"></a>Руководство по Подготовка сервера Базы данных Azure для MySQL с помощью шаблона Azure Resource Manager

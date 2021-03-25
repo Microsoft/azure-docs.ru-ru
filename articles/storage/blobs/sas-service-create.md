@@ -1,22 +1,22 @@
 ---
 title: Создание SAS службы для контейнера или большого двоичного объекта
 titleSuffix: Azure Storage
-description: Узнайте, как создать подписанный URL-адрес (SAS) для контейнера или большого двоичного объекта с помощью библиотеки службы хранилища Azure для хранилища BLOB-объектов.
+description: Узнайте, как создать подписанный URL-адрес службы (SAS) для контейнера или большого двоичного объекта с помощью клиентской библиотеки хранилища BLOB-объектов Azure.
 services: storage
 author: tamram
 ms.service: storage
 ms.topic: how-to
-ms.date: 11/20/2020
+ms.date: 03/23/2021
 ms.author: tamram
 ms.reviewer: dineshm
 ms.subservice: blobs
 ms.custom: devx-track-csharp
-ms.openlocfilehash: f55cfcf6d6ec369cdf871e8ba38bd81774dacd8e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 7bbe19de666fb167297de89e85bf302186a9145e
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97092318"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024886"
 ---
 # <a name="create-a-service-sas-for-a-container-or-blob"></a>Создание SAS службы для контейнера или большого двоичного объекта
 
@@ -85,28 +85,9 @@ private static string GetContainerSasUri(CloudBlobContainer container,
 
 # <a name="javascript-v12"></a>[JavaScript версии 12](#tab/javascript)
 
-Подписанный URL-адрес службы подписывается ключом доступа учетной записи. Используйте класс [сторажешаредкэйкредентиал](/javascript/api/@azure/storage-blob/storagesharedkeycredential) для создания учетных данных, которые используются для подписания SAS. Затем вызовите функцию [женератеблобсаскуерипараметерс](/javascript/api/@azure/storage-blob/#generateBlobSASQueryParameters_BlobSASSignatureValues__StorageSharedKeyCredential_) , указав необходимые параметры, чтобы получить строку токена SAS.
+Подписанный URL-адрес службы подписывается ключом доступа учетной записи. Используйте класс [сторажешаредкэйкредентиал](/javascript/api/@azure/storage-blob/storagesharedkeycredential) для создания учетных данных, которые используются для подписания SAS. Затем вызовите функцию [женератеблобсаскуерипараметерс](/javascript/api/@azure/storage-blob/#generateBlobSASQueryParameters_BlobSASSignatureValues__StorageSharedKeyCredential_) , предоставляющую необходимые параметры для получения строки токена SAS.
 
-```javascript
-function getContainerSasUri(containerClient, sharedKeyCredential, storedPolicyName) {
-    const sasOptions = {
-        containerName: containerClient.containerName,
-        permissions: ContainerSASPermissions.parse("c")
-    };
-
-    if (storedPolicyName == null) {
-        sasOptions.startsOn = new Date();
-        sasOptions.expiresOn = new Date(new Date().valueOf() + 3600 * 1000);
-    } else {
-        sasOptions.identifier = storedPolicyName;
-    }
-
-    const sasToken = generateBlobSASQueryParameters(sasOptions, sharedKeyCredential).toString();
-    console.log(`SAS token for blob container is: ${sasToken}`);
-
-    return `${containerClient.url}?${sasToken}`;
-}
-```
+:::code language="javascript" source="~/azure-storage-snippets/blobs/howto/JavaScript/NodeJS-v12/SAS.js" id="Snippet_ContainerSAS":::
 
 ---
 
@@ -178,29 +159,9 @@ private static string GetBlobSasUri(CloudBlobContainer container,
 
 Чтобы создать SAS службы для большого двоичного объекта, вызовите метод [CloudBlob. GetSharedAccessSignature](/dotnet/api/microsoft.azure.storage.blob.cloudblob.getsharedaccesssignature) .
 
-Чтобы создать SAS службы для большого двоичного объекта, вызовите вызов функции [женератеблобсаскуерипараметерс](/javascript/api/@azure/storage-blob/#generateBlobSASQueryParameters_BlobSASSignatureValues__StorageSharedKeyCredential_) , предоставляющей необходимые параметры.
+Чтобы создать SAS службы для большого двоичного объекта, вызовите функцию [женератеблобсаскуерипараметерс](/javascript/api/@azure/storage-blob/#generateBlobSASQueryParameters_BlobSASSignatureValues__StorageSharedKeyCredential_) , предоставляющую необходимые параметры.
 
-```javascript
-function getBlobSasUri(containerClient, blobName, sharedKeyCredential, storedPolicyName) {
-    const sasOptions = {
-        containerName: containerClient.containerName,
-        blobName: blobName
-    };
-
-    if (storedPolicyName == null) {
-        sasOptions.startsOn = new Date();
-        sasOptions.expiresOn = new Date(new Date().valueOf() + 3600 * 1000);
-        sasOptions.permissions = BlobSASPermissions.parse("r");
-    } else {
-        sasOptions.identifier = storedPolicyName;
-    }
-
-    const sasToken = generateBlobSASQueryParameters(sasOptions, sharedKeyCredential).toString();
-    console.log(`SAS token for blob is: ${sasToken}`);
-
-    return `${containerClient.getBlockBlobClient(blobName).url}?${sasToken}`;
-}
-```
+:::code language="javascript" source="~/azure-storage-snippets/blobs/howto/JavaScript/NodeJS-v12/SAS.js" id="Snippet_BlobSAS":::
 
 ---
 
@@ -216,7 +177,7 @@ function getBlobSasUri(containerClient, blobName, sharedKeyCredential, storedPol
 
 [!INCLUDE [storage-blob-javascript-resources-include](../../../includes/storage-blob-javascript-resources-include.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Предоставление ограниченного доступа к ресурсам службы хранилища Azure с помощью подписанных URL-адресов (SAS)](../common/storage-sas-overview.md)
 - [Create a service SAS (Создание SAS на уровне службы)](/rest/api/storageservices/create-service-sas)

@@ -9,10 +9,10 @@ ms.devlang: azurepowershell
 ms.date: 09/08/2020
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: b1cea4b72049386ad7a1cc3e67003861c694812c
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101671961"
 ---
 # <a name="quickstart-deploy-azure-monitor-for-sap-solutions-with-azure-powershell"></a>Краткое руководство. Развертывание Azure Monitor для решений SAP с помощью Azure PowerShell

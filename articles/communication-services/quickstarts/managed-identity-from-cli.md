@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/10/2021
 ms.author: jbeauregardb
 ms.reviewer: mikben
-ms.openlocfilehash: e708536395807fc74dc5bfd73836e050832cca39
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b49ee61f3ee4ea8e8a177bca6aa566a07b7ef113
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493345"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044742"
 ---
 # <a name="authorize-access-with-managed-identity-to-your-communication-resource-in-your-development-environment"></a>Авторизация доступа с помощью управляемого удостоверения к ресурсу связи в среде разработки
 
@@ -24,7 +24,7 @@ ms.locfileid: "103493345"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
- - Azure CLI. [Руководство по установке](https://docs.microsoft.com/cli/azure/install-azure-cli)
+ - Azure CLI. [Руководство по установке](/cli/azure/install-azure-cli)
  - Учетная запись Azure с активной подпиской. [Создать учетную запись бесплатно](https://azure.microsoft.com/free)
 
 ## <a name="setting-up"></a>Настройка
@@ -80,7 +80,7 @@ az ad sp create-for-rbac --name <application-name>
 > После задания переменных среды закройте и снова откройте окно консоли. Если вы используете Visual Studio или другую среду разработки, может потребоваться перезапустить ее, чтобы зарегистрировать новые переменные среды.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Сведения о проверке подлинности](../concepts/authentication.md)

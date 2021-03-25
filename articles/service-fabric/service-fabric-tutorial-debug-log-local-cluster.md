@@ -5,13 +5,13 @@ ms.topic: tutorial
 ms.date: 02/26/2018
 ms.custom: mvc, devx-track-java
 ms.openlocfilehash: 801702d43bae6d925fa4f7fbc37cf44bf585fa6d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91531996"
 ---
-# <a name="tutorial-debug-a-java-application-deployed-on-a-local-service-fabric-cluster"></a>Руководство по Отладка приложения Java, развернутого в локальном кластере Service Fabric
+# <a name="tutorial-debug-a-java-application-deployed-on-a-local-service-fabric-cluster"></a>Руководство по отладке приложения Java, развернутом в локальном кластере Service Fabric
 
 Это руководство представляет собой вторую часть цикла. Вы узнаете, как подключить удаленный отладчик с помощью Eclipse для приложения Service Fabric. Кроме того, вы узнаете, как перенаправлять журналы из запущенных приложений в расположение, удобное для разработчика.
 
@@ -54,7 +54,7 @@ git clone https://github.com/Azure-Samples/service-fabric-java-quickstart
 
 3. В окне импорта проектов выберите параметр **Select root directory** (Выбрать корневой каталог) и выберите каталог **Voting**. Если вы работали с руководством из первой части цикла, то каталог **Voting** находится в каталоге **Eclipse-workspace**.
 
-4. Обновите файл entryPoint.sh службы, которую необходимо отладить, так, чтобы он запускал процесс Java с параметрами удаленной отладки. В этом руководстве используется внешний интерфейс без отслеживания состояния. *Voting/VotingApplication/VotingWebPkg/Code/entryPoint.sh*. Для отладки в этом примере задается порт 8001.
+4. Обновите файл entryPoint.sh службы, которую необходимо отладить, так, чтобы он запускал процесс Java с параметрами удаленной отладки. В этом руководстве используется внешний интерфейс без отслеживания состояния: *Voting/VotingApplication/VotingWebPkg/Code/entryPoint.sh*. Для отладки в этом примере задается порт 8001.
 
     ```bash
     java -Xdebug -Xrunjdwp:transport=dt_socket,address=8001,server=y,suspend=n -Djava.library.path=$LD_LIBRARY_PATH -jar VotingWeb.jar
@@ -86,7 +86,7 @@ git clone https://github.com/Azure-Samples/service-fabric-java-quickstart
 
 ## <a name="redirect-application-logs-to-custom-location"></a>Перенаправление журналов приложения в пользовательское расположение
 
-Ниже приведены пошаговые инструкции по перенаправлению журналов из расположения по умолчанию ( */var/log/syslog*) в пользовательское расположение.
+Ниже приведены пошаговые инструкции по перенаправлению журналов из расположения по умолчанию (*/var/log/syslog*) в пользовательское расположение.
 
 1. Сейчас приложения, работающие в кластерах Service Fabric для Linux, поддерживают только принятие одного файла журнала. Чтобы настроить приложение, в котором журналы будут всегда записываться в */tmp/mysfapp0.0.log*, создайте файл с именем logging.properties в расположении *Voting/VotingApplication/VotingWebPkg/Code/logging.properties* и добавьте следующее содержимое.
 
