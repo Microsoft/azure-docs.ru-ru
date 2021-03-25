@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 01/20/2021
 ms.author: mjbrown
 ms.openlocfilehash: a72b329586d25b5eb7014e0fba65e7e6f8d37598
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102503340"
 ---
 # <a name="azure-powershell-samples-for-azure-cosmos-db-table-api"></a>Примеры Azure PowerShell для API таблиц службы Azure Cosmos DB

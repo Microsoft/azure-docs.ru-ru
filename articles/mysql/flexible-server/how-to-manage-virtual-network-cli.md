@@ -1,17 +1,17 @@
 ---
 title: Управление виртуальными сетями. Azure CLI — гибкий сервер в базе данных Azure для MySQL
 description: Создание виртуальных сетей и управление ими для базы данных Azure для MySQL — гибкого сервера с помощью Azure CLI
-author: ambhatna
-ms.author: ambhatna
+author: savjani
+ms.author: pariks
 ms.service: mysql
 ms.topic: how-to
 ms.date: 9/21/2020
-ms.openlocfilehash: a41cd2ce14ceb452d783b472955de347199d0870
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e60f9010b8fbfb3766aea6b5cffa1e7c001c6eca
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97109476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105106740"
 ---
 # <a name="create-and-manage-virtual-networks-for-azure-database-for-mysql---flexible-server-using-the-azure-cli"></a>Создание виртуальных сетей и управление ими для базы данных Azure для MySQL — гибкого сервера с помощью Azure CLI
 
@@ -81,7 +81,7 @@ az account set --subscription <subscription id>
 Полный список настраиваемых параметров интерфейса командной строки см. в [справочной документации](/cli/azure/mysql/flexible-server) по Azure CLI.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения о работе [в сети в базе данных Azure для гибкого сервера MySQL](./concepts-networking.md).
 - [Создание виртуальной сети для Гибкого сервера Базы данных Azure для MySQL и управление ею с помощью портала Azure](./how-to-manage-virtual-network-portal.md).
 - Узнайте больше о [базе данных Azure для гибкого сервера виртуальной сети MySQL](./concepts-networking.md#private-access-vnet-integration).

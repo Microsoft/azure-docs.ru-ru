@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/02/2020
 ms.author: jeedes
 ms.openlocfilehash: 0c15500bdd9f0795df9e4ce611d9386963169e23
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98727487"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-kfadvance"></a>Руководство по интеграции единого входа Azure Active Directory с KFAdvance

@@ -11,10 +11,10 @@ ms.topic: overview
 ms.date: 12/16/2020
 ms.custom: seodec18
 ms.openlocfilehash: ae5887657e7657e60348217c21aa0ed17f9f4b07
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97606306"
 ---
 # <a name="what-is-azure-time-series-insights-gen2"></a>Что собой представляет служба "Аналитика временных рядов Azure" 2-го поколения

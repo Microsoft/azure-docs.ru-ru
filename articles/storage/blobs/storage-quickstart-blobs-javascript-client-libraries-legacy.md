@@ -10,10 +10,10 @@ ms.date: 07/24/2020
 ms.topic: quickstart
 ms.subservice: blobs
 ms.openlocfilehash: d212029936bcd257ef5a78eeedc98c2d6e1df514
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96012788"
 ---
 <!-- Customer intent: As a web application developer I want to interface with Azure Blob storage entirely on the client so that I can build a SPA application that is able to upload and delete files on blob storage. -->
@@ -43,7 +43,7 @@ ms.locfileid: "96012788"
 
 В следующей таблице описывается каждый параметр CORS и объясняются значения, используемые для определения правила.
 
-|Параметр  |Значение  | Описание: |
+|Параметр  |Значение  | Описание |
 |---------|---------|---------|
 | Разрешенные источники | * | Принимает список доменов, разделенных запятыми, как допустимые источники. При установке значения `*` разрешает всем доменам получать доступ к учетной записи хранения. |
 | Допустимые методы     | DELETE, GET, HEAD, MERGE, POST, OPTIONS и PUT | Список HTTP-команд, которые можно выполнять в учетной записи хранения. В этом руководстве установите все доступные параметры. |

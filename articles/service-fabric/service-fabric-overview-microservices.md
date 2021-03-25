@@ -3,12 +3,12 @@ title: Введение в микрослужбы в Azure
 description: Общие сведения о том, почему создание облачных приложений с использованием микрослужб важно для разработки современных приложений и как платформа Azure Service Fabric позволяет достичь этой цели.
 ms.topic: conceptual
 ms.date: 01/07/2020
-ms.openlocfilehash: d20e04820c87a7390d9c20e511259ee9860c27f5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 46d4be7321057bd7a5ee19e0aca136c8c60d43bc
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96575658"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044436"
 ---
 # <a name="why-use-a-microservices-approach-to-building-applications"></a>Зачем использовать микрослужбы для создания приложений
 
@@ -194,7 +194,7 @@ Service Fabric позволяет повторно использовать су
 
 * [Микрослужбы: революция в области приложений на основе облака](https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/)
 * [Центр архитектуры Azure: создание микрослужб в Azure](/azure/architecture/microservices/)
-* [Рекомендации по приложению и кластеру Azure Service Fabric](service-fabric-best-practices-overview.md)
+* [Рекомендации по приложению и кластеру Azure Service Fabric](./service-fabric-best-practices-security.md)
 * [Общие сведения о терминологии Service Fabric](service-fabric-technical-overview.md)
 
 [Image1]: media/service-fabric-overview-microservices/monolithic-vs-micro.png

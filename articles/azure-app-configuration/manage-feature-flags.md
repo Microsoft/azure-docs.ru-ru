@@ -15,10 +15,10 @@ ms.date: 04/19/2019
 ms.author: alkemper
 ms.custom: devx-track-csharp, mvc
 ms.openlocfilehash: 0410a1cde12b9ef762d348a286d78b35f7b14bfd
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96932308"
 ---
 # <a name="tutorial-manage-feature-flags-in-azure-app-configuration"></a>Руководство по Управление флагами компонентов в конфигурации приложений Azure

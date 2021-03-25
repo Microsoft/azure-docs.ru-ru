@@ -3,12 +3,12 @@ title: Включить аналитику контейнера | Докумен
 description: В этой статье описывается, как включить и настроить аналитику контейнера, чтобы вы могли понять, как работает контейнер и какие проблемы с производительностью были обнаружены.
 ms.topic: conceptual
 ms.date: 06/30/2020
-ms.openlocfilehash: 58797221fa3380e4f7533a710e2f8dc658cb676c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 01246a728f204ed9cb43eee392c637b495208aaf
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101708362"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109358"
 ---
 # <a name="enable-container-insights"></a>Включить аналитику контейнера
 
@@ -32,7 +32,7 @@ ms.locfileid: "101708362"
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем начать, убедитесь, что выполнены следующие требования:
 
@@ -64,6 +64,7 @@ ms.locfileid: "101708362"
 - Для просмотра данных мониторинга необходимо иметь роль [*log Analytics читателя*](../logs/manage-access.md#manage-access-using-azure-permissions) в рабочей области log Analytics, настроенную с помощью аналитики контейнера.
 
 - Метрики Prometheus не собираются по умолчанию. Перед [настройкой агента](container-insights-prometheus-integration.md) для сбора метрик необходимо ознакомиться с [документацией по Prometheus](https://prometheus.io/) , чтобы понять, какие данные могут быть оббракованы и какие методы поддерживаются.
+- Кластер AKS можно подключить к рабочей области Log Analytics в другой подписке Azure в том же клиенте Azure AD. Сейчас это невозможно сделать с помощью портала Azure, но его можно выполнить с помощью Azure CLI или шаблона диспетчер ресурсов.
 
 ## <a name="supported-configurations"></a>Поддерживаемые конфигурации
 
@@ -134,6 +135,6 @@ ms.locfileid: "101708362"
 | | [Включение для кластера OpenShift с помощью шаблона Azure Resource Manager](container-insights-azure-redhat-setup.md#enable-using-an-azure-resource-manager-template) | Вы можете включить мониторинг для существующего кластера OpenShift с помощью предварительно настроенного шаблона Azure Resource Manager. |
 | | [Включить для кластера OpenShift из Azure Monitor](container-insights-azure-redhat-setup.md#from-the-azure-portal) | Вы можете включить мониторинг для одного или нескольких кластеров OpenShift, которые уже развернуты на многокластерной странице в Azure Monitor. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь, когда вы включили мониторинг, можно начать анализ производительности кластеров Kubernetes, размещенных в службе Kubernetes Azure (AKS), Azure Stack или другой среде. Чтобы узнать, как использовать аналитику контейнера, ознакомьтесь со статьей [Просмотр производительности кластера Kubernetes](container-insights-analyze.md).

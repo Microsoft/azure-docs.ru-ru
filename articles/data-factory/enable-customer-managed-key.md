@@ -8,10 +8,10 @@ ms.date: 05/08/2020
 ms.author: chez
 ms.reviewer: mariozi
 ms.openlocfilehash: c6c376e44c6135a800e6f7e281f8ea85b828329a
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102443894"
 ---
 # <a name="encrypt-azure-data-factory-with-customer-managed-keys"></a>Шифрование в Фабрике данных Azure с помощью управляемых клиентом ключей

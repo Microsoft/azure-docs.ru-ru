@@ -4,12 +4,12 @@ description: Узнайте о проекте приложения, которы
 ms.topic: conceptual
 ms.date: 12/21/2020
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: 59c8eb0737d2cef1c4b1df34d673b74944fef4e1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 4d162918644727d4c79ad606f1ed34816f543d81
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97760441"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044385"
 ---
 # <a name="your-service-fabric-application-and-next-steps"></a>Ваше приложение Service Fabric и дальнейшие действия
 Ваше приложение Azure Service Fabric создано. В этой статье содержится ряд ресурсов, дополнительные сведения, которые могут вас заинтересовать, и возможные [дальнейшие действия](#next-steps).
@@ -59,7 +59,7 @@ Service Fabric предлагает несколько способов запи
 Как и в случае с другими платформами, приложение в Service Fabric обычно проходит следующие фазы: проектирование, разработка, тестирование, развертывание, обновление, техническое обслуживание и удаление. В [этой статье](service-fabric-application-lifecycle.md) представлен обзор интерфейсов API и их использования различными ролями на всех этапах жизненного цикла приложения Service Fabric.
 
 ## <a name="learn-about-best-practices"></a>Дополнительные сведения о рекомендациях
-Service Fabric содержит ряд статей с описанием [рекомендаций.](./service-fabric-best-practices-overview.md) Воспользуйтесь этими сведениями, чтобы обеспечить максимально надежную работу кластера и приложения.
+Service Fabric содержит ряд статей с описанием [рекомендаций.](./service-fabric-best-practices-security.md) Воспользуйтесь этими сведениями, чтобы обеспечить максимально надежную работу кластера и приложения.
 В этом разделе рассматриваются следующие темы:
 * [Безопасность](./service-fabric-best-practices-security.md)
 * [Сеть](./service-fabric-best-practices-networking.md)
