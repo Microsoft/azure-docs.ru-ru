@@ -255,8 +255,8 @@
           href: 'https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/digital_twins_endpoint_servicebus'
     - name: Средства и примеры проектов
       items:
-        - name: Служба симуляторов устройств
-          href: 'https://github.com/Azure/device-simulation-dotnet/tree/master'
+        - name: Коллекция Postman Azure Digital Twins
+          href: 'https://github.com/microsoft/azure-digital-twins-postman-samples'
         - name: Комплексные примеры для Azure Digital Twins
           href: /samples/azure-samples/digital-twins-samples/digital-twins-samples/
         - name: Обозреватель Azure Digital Twins (примеры)
@@ -275,6 +275,8 @@
           href: /samples/azure-samples/digitaltwins-signalr-webapp-sample/digital-twins-samples/
         - name: Пользовательские объекты Swagger для соединителя Logic Apps
           href: /samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/
+        - name: Служба симуляторов устройств
+          href: 'https://github.com/Azure/device-simulation-dotnet/tree/master'
     - name: DTDL
       items:
         - name: Расширение DTDL для VS Code

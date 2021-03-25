@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 03/10/2021
 ms.author: jbeauregardb
 ms.reviewer: mikben
-ms.openlocfilehash: b49ee61f3ee4ea8e8a177bca6aa566a07b7ef113
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 2ef5a3b162d62fa79ed01a156345070ee12b4862
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105044742"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105110684"
 ---
 # <a name="authorize-access-with-managed-identity-to-your-communication-resource-in-your-development-environment"></a>Авторизация доступа с помощью управляемого удостоверения к ресурсу связи в среде разработки
 
-Клиентская библиотека удостоверений Azure предоставляет поддержку проверки подлинности маркеров Azure Active Directory (Azure AD) для пакета SDK Azure. Последние версии клиентских библиотек служб связи Azure для .NET, Java, Python и JavaScript интегрируются с библиотекой удостоверений Azure для предоставления простого и безопасного способа получения маркера OAuth 2,0 для авторизации запросов служб связи Azure.
+Пакет SDK для удостоверений Azure предоставляет поддержку проверки подлинности маркеров Azure Active Directory (Azure AD) для пакета SDK Azure. Последние версии пакетов SDK служб связи Azure для .NET, Java, Python и JavaScript интегрируются с библиотекой удостоверений Azure для предоставления простого и безопасного способа получения маркера OAuth 2,0 для авторизации запросов служб связи Azure.
 
-Преимущество клиентской библиотеки Azure Identity заключается в том, что она позволяет использовать один и тот же код для проверки подлинности в нескольких службах независимо от того, выполняется ли приложение в среде разработки или в Azure. Клиентская библиотека удостоверений Azure проверяет подлинность субъекта безопасности. Когда код выполняется в Azure, участник безопасности является управляемым удостоверением для ресурсов Azure. В среде разработки управляемое удостоверение не существует, поэтому клиентская библиотека проверяет подлинность пользователя или зарегистрированного приложения в целях тестирования.
+Преимуществом пакета SDK для Azure Identity является то, что он позволяет использовать один и тот же код для проверки подлинности в нескольких службах независимо от того, выполняется ли приложение в среде разработки или в Azure. Пакет SDK для удостоверений Azure проверяет подлинность субъекта безопасности. Когда код выполняется в Azure, участник безопасности является управляемым удостоверением для ресурсов Azure. В среде разработки управляемое удостоверение не существует, поэтому пакет SDK проверяет подлинность пользователя или зарегистрированного приложения в целях тестирования.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -35,7 +35,7 @@ ms.locfileid: "105044742"
 - [Azure PowerShell](../../active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm.md)
 - [Azure CLI](../../active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm.md)
 - [Шаблон Azure Resource Manager](../../active-directory/managed-identities-azure-resources/qs-configure-template-windows-vm.md)
-- [Клиентские библиотеки Azure Resource Manager](../../active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm.md)
+- [Пакеты SDK для Azure Resource Manager](../../active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm.md)
 - [Услуги для приложений](../../app-service/overview-managed-identity.md)
 
 ## <a name="authenticate-a-registered-application-in-the-development-environment"></a>Проверка подлинности зарегистрированного приложения в среде разработки
@@ -68,7 +68,7 @@ az ad sp create-for-rbac --name <application-name>
 
 #### <a name="set-environment-variables"></a>Настройка переменных среды
 
-Клиентская библиотека удостоверений Azure считывает значения из трех переменных среды во время выполнения для проверки подлинности приложения. В следующей таблице описывается значение, которое задается для каждой переменной среды.
+Пакет SDK для удостоверений Azure считывает значения из трех переменных среды во время выполнения для проверки подлинности приложения. В следующей таблице описывается значение, которое задается для каждой переменной среды.
 
 |Переменная среды|Значение
 |-|-
@@ -80,7 +80,7 @@ az ad sp create-for-rbac --name <application-name>
 > После задания переменных среды закройте и снова откройте окно консоли. Если вы используете Visual Studio или другую среду разработки, может потребоваться перезапустить ее, чтобы зарегистрировать новые переменные среды.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Сведения о проверке подлинности](../concepts/authentication.md)

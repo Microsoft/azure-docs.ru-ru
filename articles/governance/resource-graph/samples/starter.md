@@ -4,10 +4,10 @@ description: Составление простых запросов с помо�
 ms.date: 02/04/2021
 ms.topic: sample
 ms.openlocfilehash: f3ff78f52f84ad4fac74fa6e7b04de3e645a2fff
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99557966"
 ---
 # <a name="starter-resource-graph-query-samples"></a>Примеры запросов к Resource Graph для начинающих

@@ -7,10 +7,10 @@ ms.topic: overview
 ms.date: 2/12/2021
 ms.author: amgowda
 ms.openlocfilehash: 5d872032ea5b4e08c3f436dd3bfc202786d8514d
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102553261"
 ---
 # <a name="platform-software-management-with-sgx-quote-helper-daemon-set-preview"></a>Управление программными платформами с помощью набора управляющих программ вспомогательной функции цитирования SGX (предварительная версия)

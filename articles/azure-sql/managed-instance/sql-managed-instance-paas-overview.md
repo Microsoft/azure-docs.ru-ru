@@ -10,13 +10,13 @@ ms.topic: overview
 author: bonova
 ms.author: bonova
 ms.reviewer: sstein, vanto
-ms.date: 08/14/2020
-ms.openlocfilehash: 83f38797e406ff7e62503f59ef979b9ce4f07f97
-ms.sourcegitcommit: f6236e0fa28343cf0e478ab630d43e3fd78b9596
+ms.date: 01/14/2021
+ms.openlocfilehash: dca4d699ac1253753c82949cb480d95a1dde26e2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94917942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594110"
 ---
 # <a name="what-is-azure-sql-managed-instance"></a>Что такое Управляемый экземпляр SQL Azure?
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -35,6 +35,9 @@ ms.locfileid: "94917942"
 
 Управляемый экземпляр SQL Azure предназначен для клиентов, которые хотят с минимальными усилиями перенести большое количество приложений из локальной, самостоятельно созданной, предоставленной в формате IaaS или независимым поставщиком среды в полностью управляемую облачную среду PaaS. С помощью полностью автоматизированной службы [Azure Data Migration Service (DMS)](../../dms/tutorial-sql-server-to-managed-instance.md#create-an-azure-database-migration-service-instance) клиенты могут по методу lift-and-shift перенести существующий экземпляр SQL Server в Управляемый экземпляр SQL, который обеспечивает совместимость с SQL Server и полную изоляцию экземпляров клиента со встроенной поддержкой виртуальной сети. Дополнительные сведения о вариантах и инструментах миграции см. в статье [Общие сведения о миграции SQL Server в Управляемый экземпляр SQL Azure](../migration-guides/managed-instance/sql-server-to-managed-instance-overview.md).</br> Программа Software Assurance позволяет обменять имеющиеся лицензии на сниженные тарифы на Управляемый экземпляр SQL с помощью [Преимущества гибридного использования Azure для SQL Server](https://azure.microsoft.com/pricing/hybrid-benefit/). Управляемый экземпляр — лучший целевой объект для миграции в облако экземпляров SQL Server, требующих высокого уровня безопасности и расширенных возможностей программирования.
 
+> [!TIP]
+> Помогите нам улучшить Azure SQL. [Примите участие в опросе.](https://microsoft.qualtrics.com/jfe/form/SV_ePOznHhP4gDKfGu?channel=456)
+
 ## <a name="key-features-and-capabilities"></a>Основные функции и возможности
 
 Управляемый экземпляр SQL сочетает в себе лучшие функции, доступные в Базе данных SQL Azure и ядре СУБД SQL Server.
@@ -46,7 +49,7 @@ ms.locfileid: "94917942"
 | --- | --- |
 |Нет необходимости в приобретении оборудования и управления им <br>Отсутствие накладных расходов на управление базовой инфраструктурой <br>Быстрая подготовка и масштабирование службы <br>Автоматическое исправление и обновление версии <br>Интеграция с другими службами данных PaaS |Соглашение об уровне обслуживания с гарантией времени непрерывной работы 99,99 %.  <br>Встроенный [высокий уровень доступности](../database/high-availability-sla.md) <br>Данные защищены путем [автоматического создания резервных копий](../database/automated-backups-overview.md) <br>Период хранения резервных копий настраивается пользователем <br>Инициируемые пользователем [резервные копии](/sql/t-sql/statements/backup-transact-sql?preserve-view=true&view=azuresqldb-mi-current) <br>Возможность [восстановления базы данных до точки во времени](../database/recovery-using-backups.md#point-in-time-restore) |
 |**Безопасность и соответствие требованиям** | **Управление**|
-|Изолированная среда ([интеграция виртуальной сети](connectivity-architecture-overview.md), клиентская служба, выделенные ресурсы вычисления и хранилище) <br>[Прозрачное шифрование данных (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)<br>[Аутентификация Azure Active Directory](../database/authentication-aad-overview.md), поддержка единого входа <br> <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">Субъекты сервера (имена для входа) Azure AD</a>  <br>Соблюдение тех же стандартов соответствия, что и для Базы данных SQL Azure <br>[Аудит SQL](auditing-configure.md) <br>[Расширенная защита от угроз](threat-detection-configure.md) |Программный интерфейс Azure Resource Manager для автоматизации подготовки и масштабирования службы <br>Функциональные возможности портала Azure для подготовки и масштабирования службы вручную <br>Служба миграции данных
+|Изолированная среда ([интеграция виртуальной сети](connectivity-architecture-overview.md), клиентская служба, выделенные ресурсы вычисления и хранилище) <br>[Прозрачное шифрование данных (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)<br>[Аутентификация Azure Active Directory](../database/authentication-aad-overview.md), поддержка единого входа <br> <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true">Субъекты сервера (имена для входа) Azure AD</a>  <br>Соблюдение тех же стандартов соответствия, что и для Базы данных SQL Azure <br>[Аудит SQL](auditing-configure.md) <br>[Расширенная защита от угроз](threat-detection-configure.md) |Программный интерфейс Azure Resource Manager для автоматизации подготовки и масштабирования службы <br>Функциональные возможности портала Azure для подготовки и масштабирования службы вручную <br>Служба миграции данных
 
 > [!IMPORTANT]
 > Управляемый экземпляр SQL Azure сертифицирован по нескольким стандартам соответствия. Дополнительные сведения см. на [странице предложений по соответствию Microsoft Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=44bbae63-bf4d-4e3b-9d3d-c96fb25ec363&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FAQ_and_White_Papers), где в разделе **База данных SQL** представлен актуальный список сертификатов соответствия Управляемого экземпляра SQL.
@@ -76,8 +79,8 @@ ms.locfileid: "94917942"
 
 Модель на основе виртуальных ядер позволяет выбрать поколение оборудования.
 
-- Логические ЦП **4-го поколения** включают процессоры Intel E5-2673 версии 3 (Haswell) с частотой 2,4 ГГц, подключенные диски SSD, физические ядра, 7 ГБ ОЗУ на ядро и объем вычислительных ресурсов от 8 до 24 виртуальных ядер.
-- Логические ЦП **5-го поколения** включают процессоры Intel E5-2673 версии 4 (Broadwell) с частотой 2,3 ГГц, Intel SP-8160 (Skylake) и Intel 8272CL (Cascade Lake) с частотой 2,5 ГГц, быстрые диски NVMe SSD, логические ядра с поддержкой технологии Hyper-Threading и объем вычислительных ресурсов от 4 до 80 виртуальных ядер.
+- Логические ЦП **4-го поколения** включают процессоры Intel&reg; E5-2673 версии 3 (Haswell) с частотой 2,4 ГГц, подключенные диски SSD, физические ядра, 7 ГБ ОЗУ на ядро и объем вычислительных ресурсов от 8 до 24 виртуальных ядер.
+- Логические ЦП **5-го поколения** включают процессоры Intel&reg; E5-2673 версии 4 (Broadwell) с частотой 2,3 ГГц, Intel&reg; SP-8160 (Skylake) и Intel&reg; 8272CL (Cascade Lake) с частотой 2,5 ГГц, быстрые диски NVMe SSD, логические ядра с поддержкой технологии Hyper-Threading и объем вычислительных ресурсов от 4 до 80 виртуальных ядер.
 
 Дополнительные сведения о различиях между поколениями оборудования приведены в разделе [характеристик поколений оборудования](resource-limits.md#hardware-generation-characteristics).
 
@@ -158,13 +161,13 @@ ms.locfileid: "94917942"
 
 Управляемый экземпляр SQL поддерживает стандартные имена для входа СУБД SQL Server и имена для входа, интегрированные с Azure Active Directory. Субъекты сервера (имена для входа) Azure AD (**общедоступная предварительная версия**) представляют собой версию локальных имен для входа в базы данных, которые вы используете в локальной среде, для облака Azure. Субъекты сервера (имена для входа) Azure AD позволяют указать пользователей и группы из арендатора Azure Active Directory в качестве субъектов области экземпляров, которые могут выполнять любые операции на уровне экземпляра, включая запросы между базами данных в одном управляемом экземпляре.
 
-Появился новый синтаксис для создания субъектов сервера (имен для входа) Azure AD — **FROM EXTERNAL PROVIDER**. Дополнительные сведения о синтаксисе см. в статье <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">CREATE LOGIN (Transact-SQL)</a> и в разделе о [подготовке администратора Azure Active Directory для Управляемого экземпляра SQL](../database/authentication-aad-configure.md#provision-azure-ad-admin-sql-managed-instance).
+Появился новый синтаксис для создания субъектов сервера (имен для входа) Azure AD — **FROM EXTERNAL PROVIDER**. Дополнительные сведения о синтаксисе см. в статье <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true">CREATE LOGIN (Transact-SQL)</a> и в разделе о [подготовке администратора Azure Active Directory для Управляемого экземпляра SQL](../database/authentication-aad-configure.md#provision-azure-ad-admin-sql-managed-instance).
 
 ### <a name="azure-active-directory-integration-and-multi-factor-authentication"></a>Интеграция Azure Active Directory и Многофакторная идентификация
 
 Управляемый экземпляр SQL позволяет централизованно управлять удостоверениями пользователя базы данных и другими службами Майкрософт с помощью [интеграции Azure Active Directory](../database/authentication-aad-overview.md). Эта возможность упрощает управление разрешениями и повышает уровень безопасности. Azure Active Directory поддерживает [многофакторную проверку подлинности](../database/authentication-mfa-ssms-configure.md) для повышения безопасности данных и приложений, а также процесс единого входа.
 
-### <a name="authentication"></a>Проверка подлинности
+### <a name="authentication"></a>Аутентификация
 
 В ходе аутентификации в Управляемом экземпляре SQL пользователям предлагается подтвердить их личность при подключении к базе данных. Управляемый экземпляр SQL поддерживает два типа аутентификации:  
 
