@@ -18,10 +18,10 @@ ms.reviewer: mwahl
 ms.collection: M365-identity-device-management
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: 22bfef17f68b2e83e4f7462d8e9af6fb8aacc284
-ms.sourcegitcommit: 08458f722d77b273fbb6b24a0a7476a5ac8b22e0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98246746"
 ---
 # <a name="what-are-azure-ad-access-reviews"></a>Что собой представляют проверки доступа Azure AD?

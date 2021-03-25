@@ -8,10 +8,10 @@ ms.date: 06/30/2020
 ms.service: azure-education
 ms.subservice: education-hub
 ms.openlocfilehash: 87f44c1529055458f341fa6c4c5285560d878d2d
-ms.sourcegitcommit: 4cb89d880be26a2a4531fedcc59317471fe729cd
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92674971"
 ---
 # <a name="azure-for-students-starter"></a>Начальный набор Microsoft Azure для учащихся

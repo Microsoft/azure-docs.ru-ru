@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/15/2019
 ms.author: jeedes
 ms.openlocfilehash: 3225aa9eaff5c3cd0acca99261935feb9774810f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96010272"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-rolepoint"></a>Руководство по интеграции Azure Active Directory с RolePoint
@@ -152,7 +152,7 @@ ms.locfileid: "96010272"
 
     1. Установите флажок **Показать пароль** и запишите значение, которое отображается в поле **Пароль**.
 
-    1. Нажмите кнопку **Создать**.
+    1. Нажмите кнопку **создания**.
 
 ### <a name="assign-the-azure-ad-test-user"></a>Назначение тестового пользователя Azure AD
 

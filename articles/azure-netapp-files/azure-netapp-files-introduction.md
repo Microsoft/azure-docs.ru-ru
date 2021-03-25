@@ -15,10 +15,10 @@ ms.topic: overview
 ms.date: 03/28/2018
 ms.author: b-juche
 ms.openlocfilehash: 4ad556a6c720cb4eaac9a0c9cdf5c4346e2aa857
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87512947"
 ---
 # <a name="what-is-azure-netapp-files"></a>Общие сведения об Azure NetApp Files

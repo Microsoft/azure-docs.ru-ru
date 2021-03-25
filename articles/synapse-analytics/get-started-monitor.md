@@ -11,10 +11,10 @@ ms.subservice: monitoring
 ms.topic: tutorial
 ms.date: 12/31/2020
 ms.openlocfilehash: 7e8525dbebb42e1f387ee8f0c192efd5e64c9453
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102426046"
 ---
 # <a name="monitor-your-synapse-workspace"></a>Мониторинг рабочей области Synapse

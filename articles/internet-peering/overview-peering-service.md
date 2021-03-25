@@ -9,10 +9,10 @@ ms.topic: overview
 ms.date: 5/22/2020
 ms.author: derekol
 ms.openlocfilehash: 717a8c87c6a1c22d3f75cd4e3054bfdf0c4b5f9a
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95023451"
 ---
 # <a name="internet-peering-vs-peering-service"></a>Сравнение: интернет-пиринг и Служба пиринга

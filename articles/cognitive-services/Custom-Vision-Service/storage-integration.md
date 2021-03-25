@@ -9,12 +9,12 @@ ms.subservice: custom-vision
 ms.topic: how-to
 ms.date: 09/11/2020
 ms.author: pafarley
-ms.openlocfilehash: 2afac0e25c394c9bf265daf1fe3ded3d763a7c61
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: fd4ad1443f466a78abfc569d5f52f6bdeff2d5be
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102508509"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048890"
 ---
 # <a name="integrate-azure-storage-for-notifications-and-backup"></a>Интеграция службы хранилища Azure с уведомлениями и резервным копированием
 
@@ -25,11 +25,11 @@ ms.locfileid: "102508509"
 > [!NOTE]
 > Push-уведомления зависят от необязательного параметра _нотификатионкуеуеури_ в API **CreateProject** , и для резервных копий модели необходимо также использовать необязательный параметр _експортмоделконтаинерури_ . В этом руководством будут использоваться оба варианта для полного набора функций.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Ресурс Пользовательское визуальное распознавание в Azure. Если у вас ее нет, перейдите к портал Azure и [Создайте новый ресурс пользовательское визуальное распознавание](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision?azure-portal=true). В настоящее время эта функция не поддерживает ресурс службы "непонятный" (все в одном ключе).
 - Учетная запись хранения Azure с контейнером больших двоичных объектов. Выполните [упражнения 1 лаборатории службы хранилища Azure](https://github.com/Microsoft/computerscience/blob/master/Labs/Azure%20Services/Azure%20Storage/Azure%20Storage%20and%20Cognitive%20Services%20(MVC).md#Exercise1) , если вам нужна помощь с этим шагом.
-* [PowerShell версии 6.0 и выше](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
+* [PowerShell версии 6.0 и выше](/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
 
 ## <a name="set-up-azure-storage-integration"></a>Настройка интеграции службы хранилища Azure
 

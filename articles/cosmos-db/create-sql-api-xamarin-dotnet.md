@@ -10,10 +10,10 @@ ms.date: 10/09/2020
 ms.author: anfeldma
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 91e89eaf215468f171974e5f3fd383691fdd6ebe
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93096988"
 ---
 # <a name="quickstart-build-a-todo-app-with-xamarin-using-azure-cosmos-db-sql-api-account"></a>Краткое руководство. Создание приложения со списком дел с помощью Xamarin и API SQL для Azure Cosmos DB | Документация Майкрософт
@@ -90,7 +90,7 @@ Azure Cosmos DB — это глобально распределенная мн
 
 Вернитесь на портал Azure, чтобы найти сведения о ключе API. Скопируйте эти данные в приложение.
 
-1. На [портале Azure](https://portal.azure.com/) перейдите к учетной записи API SQL для Azure Cosmos DB и на левой панели навигации щелкните **Ключи** , а затем выберите **Ключи записи-чтения**. На следующем шаге используйте кнопки копирования в правой части экрана, чтобы скопировать универсальный код ресурса (URI) и первичный ключ в файл APIKeys.cs.
+1. На [портале Azure](https://portal.azure.com/) перейдите к учетной записи API SQL для Azure Cosmos DB и на левой панели навигации щелкните **Ключи**, а затем выберите **Ключи записи-чтения**. На следующем шаге используйте кнопки копирования в правой части экрана, чтобы скопировать универсальный код ресурса (URI) и первичный ключ в файл APIKeys.cs.
 
     :::image type="content" source="./media/create-sql-api-xamarin-dotnet/keys.png" alt-text="Просмотр и копирование ключа доступа на портале Azure, колонка &quot;Ключи&quot;":::
 
@@ -120,11 +120,11 @@ Azure Cosmos DB — это глобально распределенная мн
 
 Код в решении ToDoItems содержит:
 
-* **ToDoItems.Core** :
+* **ToDoItems.Core**:
    * проект .NET Standard, который содержит проект Xamarin.Forms и общий код логики приложения, используемый для элементов списка дел в Azure Cosmos DB.
-* **ToDoItems.Android** :
+* **ToDoItems.Android**:
   * проект, который содержит приложение Android.
-* **ToDoItems.iOS** :
+* **ToDoItems.iOS**:
   * проект, который содержит приложение iOS.
 
 Рассмотрим краткий обзор того, как приложение обменивается данными с Azure Cosmos DB.

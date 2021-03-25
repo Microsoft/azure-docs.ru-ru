@@ -11,20 +11,20 @@ ms.service: api-management
 ms.workload: mobile
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 11/04/2019
+ms.date: 03/22/2021
 ms.author: apimpm
-ms.openlocfilehash: 2d3f382635e9a8b8a562f7a7f60f256d68b90b8f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 743a7e7d34457405aa4be42b196dc994506c6587
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91363211"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105035814"
 ---
 # <a name="authorize-developer-accounts-by-using-azure-active-directory-in-azure-api-management"></a>Авторизация учетных записей разработчиков с помощью Azure Active Directory в управлении API Azure
 
 В этой статье показывается, как включить доступ к порталу разработчика для пользователей из каталога Active Directory Azure (Azure AD). В этом руководстве также показано, как управлять группами пользователей Azure AD путем добавления внешних групп, содержащих пользователей.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Выполните задачи в кратком руководстве по [созданию экземпляра службы управления API Azure](get-started-create-service-instance.md).
 - Импортируйте и опубликуйте экземпляр службы управления API Azure. Дополнительные сведения см. в разделе [Импорт и публикация](import-and-publish.md).
@@ -47,7 +47,15 @@ ms.locfileid: "91363211"
     В области отобразятся элементы управления, необходимые для ввода других требуемых сведений. Элементы управления включают **идентификатор клиента** и **секрет клиента**. (Эти элементы управления описаны далее в этой статье.)
 9. Запишите содержимое **URL-адреса перенаправления**.
     
-   ![Шаги для добавления поставщика удостоверений на портале Azure](./media/api-management-howto-aad/api-management-with-aad001.png)  
+
+    :::image type="content" source="media/api-management-howto-aad/api-management-with-aad001.png" alt-text="Добавление поставщика удостоверений в портал Azure":::
+    > [!NOTE]
+    > Существует два URL-адреса перенаправления:<br/>
+    > **URL-адрес перенаправления** — указывает на последнюю версию портала РАЗРАБОТЧИКА управления API.<br/>
+    > **URL-адрес перенаправления (нерекомендуемый портал)** — указывает на нерекомендуемый портал РАЗРАБОТЧИКА управления API.
+    >
+    > Рекомендуется использовать последний URL-адрес перенаправления портала разработчика.
+   
 10. В браузере откройте другую вкладку. 
 11. Перейдите к [портал Azure-регистрация приложений](https://go.microsoft.com/fwlink/?linkid=2083908) , чтобы зарегистрировать приложение в Active Directory.
 12. В разделе **Управление** выберите **Регистрация приложений**.

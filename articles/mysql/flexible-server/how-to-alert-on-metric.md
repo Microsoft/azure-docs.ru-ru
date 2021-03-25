@@ -1,17 +1,17 @@
 ---
 title: Настройка оповещений метрик — портал Azure — гибкий сервер в базе данных Azure для MySQL
 description: В этой статье описывается, как настроить оповещения метрик и получить доступ к ним для гибкого сервера базы данных Azure для MySQL из портал Azure.
-author: ambhatna
-ms.author: ambhatna
+author: savjani
+ms.author: pariks
 ms.service: mysql
 ms.topic: how-to
 ms.date: 9/21/2020
-ms.openlocfilehash: 632aae766e6fd1328dc6e0135a88a942d7ad0910
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: be52bbe58f6c2ff6ee21703860e8d8e00ec30072
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100595785"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105110157"
 ---
 # <a name="use-the-azure-portal-to-set-up-alerts-on-metrics-for-azure-database-for-mysql---flexible-server"></a>Используйте портал Azure, чтобы настроить оповещения о метриках для базы данных Azure для MySQL — гибкого сервера. 
 
@@ -71,7 +71,7 @@ ms.locfileid: "100595785"
 * **отключить** или **включить** его, если нужно временно остановить или возобновить получение уведомлений.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения о [настройке оповещений о метриках](../../azure-monitor/alerts/alerts-metric.md).
 - Узнайте больше о доступных [метриках в базе данных Azure для гибкого сервера MySQL](./concepts-monitoring.md).
 - [Сведения о работе оповещений о метриках в Azure Monitor](../../azure-monitor/alerts/alerts-metric-overview.md)

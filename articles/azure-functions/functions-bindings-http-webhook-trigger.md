@@ -6,12 +6,12 @@ ms.topic: reference
 ms.date: 02/21/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, devx-track-python
-ms.openlocfilehash: e8641cada03577cf22e6627bdf53b2a8a0e836ef
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 4550be7ae8c543eea1bdfa085db6f23fe668a121
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102216389"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025702"
 ---
 # <a name="azure-functions-http-trigger"></a>Триггер HTTP в Функциях Azure
 
@@ -596,7 +596,7 @@ http://<APP_NAME>.azurewebsites.net/api/<FUNCTION_NAME>
 http://<APP_NAME>.azurewebsites.net/api/products/electronics/357
 ```
 
-Эта конфигурация позволяет коду функции поддерживать два параметра в адресе, _категории_ и _идентификаторе_. Дополнительные сведения о том, как параметры маршрутов размечены в URL-адресе, см. в разделе [Маршрутизация в ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/routing#route-constraint-reference).
+Эта конфигурация позволяет коду функции поддерживать два параметра в адресе, _категории_ и _идентификаторе_. Дополнительные сведения о том, как параметры маршрутов размечены в URL-адресе, см. в разделе [Маршрутизация в ASP.NET Core](/aspnet/core/fundamentals/routing#route-constraint-reference).
 
 # <a name="c"></a>[C#](#tab/csharp)
 

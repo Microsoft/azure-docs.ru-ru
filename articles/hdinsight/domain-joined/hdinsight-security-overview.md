@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: overview
 ms.custom: seoapr2020
 ms.date: 08/24/2020
-ms.openlocfilehash: f4fa1e64e00f2ae027d80960072da7d73d3a89cb
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 713559a747b58e65d04c8310755baedc93db929e
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98946842"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863162"
 ---
 # <a name="overview-of-enterprise-security-in-azure-hdinsight"></a>Общие сведения о корпоративной безопасности в Azure HDInsight
 
@@ -66,7 +66,7 @@ HDInsight поддерживает шифрование неактивных д�
 
 На следующем рисунке представлены основные области безопасности системы и решения по обеспечению безопасности, доступные вам в каждой из них. На нем также выделены области безопасности, за которые отвечаете вы как клиент, и другие области, за которые отвечает HDInsight как поставщик служб.
 
-![Схема общих обязанностей HDInsight](./media/hdinsight-security-overview/hdinsight-shared-responsibility.png)
+:::image type="content" source="./media/hdinsight-security-overview/hdinsight-shared-responsibility.png" alt-text="Схема общих обязанностей HDInsight" border="false":::
 
 В следующей таблице приведены ссылки на ресурсы для каждого типа решения по обеспечению безопасности.
 

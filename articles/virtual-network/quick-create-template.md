@@ -10,10 +10,10 @@ ms.date: 06/23/2020
 ms.author: kumud
 ms.custom: ''
 ms.openlocfilehash: bc0ac1a6e882f4197828bf79c7989c16b2eb16f7
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98217674"
 ---
 # <a name="quickstart-create-a-virtual-network---resource-manager-template"></a>Краткое руководство. Создание виртуальной сети с использованием шаблона Resource Manager
