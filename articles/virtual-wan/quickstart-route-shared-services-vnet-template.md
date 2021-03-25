@@ -10,10 +10,10 @@ ms.date: 03/05/2021
 ms.author: cherylmc
 ms.custom: subject-armqs
 ms.openlocfilehash: f325dd445e778bf03049d2c9e2e00fed7a427ccf
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102444084"
 ---
 # <a name="quickstart-route-to-shared-services-vnets-using-an-arm-template"></a>Краткое руководство. Маршрутизация к виртуальным сетям общих служб с помощью шаблона ARM

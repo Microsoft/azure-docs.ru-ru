@@ -8,10 +8,10 @@ ms.subservice: cosmosdb-graph
 ms.topic: sample
 ms.date: 06/12/2020
 ms.openlocfilehash: bb09f196e8625a484694e78cd7d5332a52d1179c
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98675652"
 ---
 # <a name="create-a-resource-lock-for-azure-cosmos-gremlin-api-database-and-graph-using-azure-powershell"></a>Создание блокировки ресурсов для базы данных и графа API Gremlin в Azure Cosmos с помощью Azure PowerShell

@@ -3,12 +3,12 @@ title: Руководство по устранению неполадок в с
 description: Ознакомьтесь с советами и рекомендациями по устранению некоторых проблем, которые могут возникнуть при использовании служебной шины Azure.
 ms.topic: article
 ms.date: 03/03/2021
-ms.openlocfilehash: 7de39e5a3a7b6cbb8e5fa504f073023853e18366
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b44587747a59acb3c0124c0a76b63de68d6d8ae7
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102179703"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105031296"
 ---
 # <a name="troubleshooting-guide-for-azure-service-bus"></a>Руководство по устранению неполадок в служебной шине Azure
 В этой статье содержатся советы и рекомендации по устранению некоторых проблем, которые могут возникнуть при использовании служебной шины Azure. 
@@ -52,7 +52,7 @@ ms.locfileid: "102179703"
     ```
     Аналогичные команды можно использовать, если вы используете другие средства, такие как `tnc` , `ping` и т. д. 
 - Найдите трассировку сети, если предыдущие шаги не помогают и не анализируют их с помощью таких средств, как [Wireshark](https://www.wireshark.org/). При необходимости обратитесь в [Служба поддержки Майкрософт](https://support.microsoft.com/) . 
-- Чтобы найти IP-адреса, которые нужно добавить в список разрешений для подключений, см. раздел [какие IP-адреса нужно добавить в список разрешений](service-bus-faq.md#what-ip-addresses-do-i-need-to-add-to-allow-list). 
+- Чтобы найти IP-адреса, которые нужно добавить в разрешенных для подключений, см. в разделе [какие IP-адреса нужно добавить в разрешенных](service-bus-faq.md#what-ip-addresses-do-i-need-to-add-to-allow-list). 
 
 
 ## <a name="issues-that-may-occur-with-service-upgradesrestarts"></a>Проблемы, которые могут возникнуть при обновлении или перезапуске службы
@@ -98,6 +98,25 @@ Service Bus Error: Unauthorized access. 'Send' claim\(s\) are required to perfor
 
 ### <a name="resolution"></a>Решение
 Откройте новое подключение к пространству имен служебной шины, чтобы отправить дополнительные сообщения.
+
+## <a name="adding-virtual-network-rule-using-powershell-fails"></a>Не удается добавить правило виртуальной сети с помощью PowerShell
+
+### <a name="symptoms"></a>Симптомы
+Вы настроили две подсети из одной виртуальной сети в правиле виртуальной сети. При попытке удалить одну подсеть с помощью командлета [Remove-азсервицебусвиртуалнетворкруле](/powershell/module/az.servicebus/remove-azservicebusvirtualnetworkrule) она не удаляет подсеть из правила виртуальной сети. 
+
+```azurepowershell-interactive
+Remove-AzServiceBusVirtualNetworkRule -ResourceGroupName $resourceGroupName -Namespace $serviceBusName -SubnetId $subnetId
+```
+
+### <a name="cause"></a>Причина
+Идентификатор Azure Resource Manager, указанный для подсети, может быть недопустимым. Это может произойти, если виртуальная сеть находится в другой группе ресурсов, отличной от той, которая имеет пространство имен служебной шины. Если вы не указали группу ресурсов виртуальной сети явным образом, команда CLI конструирует идентификатор Azure Resource Manager с помощью группы ресурсов пространства имен служебной шины. Поэтому он не может удалить подсеть из правила сети. 
+
+### <a name="resolution"></a>Решение
+Укажите полный идентификатор Azure Resource Manager подсети, включающий имя группы ресурсов, в которой находится виртуальная сеть. Пример:
+
+```azurepowershell-interactive
+Remove-AzServiceBusVirtualNetworkRule -ResourceGroupName myRG -Namespace myNamespace -SubnetId "/subscriptions/SubscriptionId/resourcegroups/ResourceGroup/myOtherRG/providers/Microsoft.Network/virtualNetworks/myVNet/subnets/mySubnet"
+```
 
 ## <a name="next-steps"></a>Дальнейшие действия
 См. следующие статьи: 

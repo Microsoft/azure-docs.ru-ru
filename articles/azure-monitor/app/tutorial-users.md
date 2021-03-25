@@ -8,10 +8,10 @@ ms.author: lagayhar
 ms.date: 09/20/2017
 ms.custom: mvc
 ms.openlocfilehash: 4f6eeb5265d99a17ed18ace91fa5f2d2f744dbb2
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100598074"
 ---
 # <a name="use-azure-application-insights-to-understand-how-customers-are-using-your-application"></a>Использование Azure Application Insights для анализа информации о том, как пользователи используют приложение
@@ -30,7 +30,7 @@ ms.locfileid: "100598074"
 
 ## <a name="prerequisites"></a>предварительные требования
 
-Для работы с этим руководством:
+Для работы с этим руководством сделайте следующее:
 
 - Установите [Visual Studio 2019](https://www.visualstudio.com/downloads/) с указанными ниже рабочими нагрузками:
     - ASP.NET и веб-разработка.

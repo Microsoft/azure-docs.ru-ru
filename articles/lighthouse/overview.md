@@ -4,10 +4,10 @@ description: Azure Lighthouse позволяет поставщикам служ
 ms.date: 12/16/2020
 ms.topic: overview
 ms.openlocfilehash: b9215f42e3ad3b7517d14fdaee710a31680ce453
-ms.sourcegitcommit: 86acfdc2020e44d121d498f0b1013c4c3903d3f3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97617159"
 ---
 # <a name="what-is-azure-lighthouse"></a>Что собой представляет Azure Lighthouse?

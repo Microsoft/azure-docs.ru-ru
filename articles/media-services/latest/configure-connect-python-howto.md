@@ -14,12 +14,12 @@ ms.topic: how-to
 ms.date: 11/18/2020
 ms.author: inhenkel
 ms.custom: devx-track-python
-ms.openlocfilehash: 76df8baaf170b05762b93478a496eb1e9ed802d5
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: de78008a4645690cfc900f77670204bb892daf51
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94916752"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105042974"
 ---
 # <a name="connect-to-media-services-v3-api---python"></a>Подключение к API служб мультимедиа v3 — Python
 
@@ -27,12 +27,12 @@ ms.locfileid: "94916752"
 
 В этой статье показано, как подключиться к пакету SDK для служб мультимедиа Azure v3 для Python с помощью метода входа субъекта-службы.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Скачать Python из [Python.org](https://www.python.org/downloads/)
 - Обязательно задайте `PATH` переменную среды.
 - [Создание учетной записи Служб мультимедиа](./create-account-howto.md). Обязательно запомните имя группы ресурсов и имя учетной записи Служб мультимедиа.
-- Выполните действия, описанные в разделе [Доступ к API](./access-api-howto.md). Запишите идентификатор подписки, идентификатор приложения (идентификатор клиента), ключ проверки подлинности (секрет) и идентификатор клиента, необходимые на следующем шаге.
+- Выполните действия, описанные в разделе [API Access](./access-api-howto.md) , выбрав метод проверки подлинности субъекта-службы. Запишите идентификатор подписки ( `SubscriptionId` ), идентификатор клиента приложения ( `AadClientId` ), ключ проверки подлинности () `AadSecret` и идентификатор клиента ( `AadTenantId` ), который потребуется на последующих шагах.
 
 > [!IMPORTANT]
 > Проверьте [соглашения об именовании](media-services-apis-overview.md#naming-conventions).
@@ -59,38 +59,34 @@ pip3 install azure-mgmt-media==3.0.0
 1. Откройте файл в любимом редакторе.
 1. Добавьте следующий код в файл. Код импортирует необходимые модули и создает объект учетных данных Active Directory, необходимый для подключения к службам мультимедиа.
 
-      Задайте значения переменных, полученные из [API доступа](./access-api-howto.md) .
+      Задайте значения переменных, полученные из [API доступа](./access-api-howto.md). Замените `ACCOUNT_NAME` переменные и `RESOUCE_GROUP_NAME` именами учетной записи служб мультимедиа и имен групп ресурсов, используемых при создании этих ресурсов.
 
       ```
       import adal
+      from azure.mgmt.media import AzureMediaServices
       from msrestazure.azure_active_directory import AdalAuthentication
       from msrestazure.azure_cloud import AZURE_PUBLIC_CLOUD
-      from azure.mgmt.media import AzureMediaServices
-      from azure.mgmt.media.models import MediaService
 
-      RESOURCE = 'https://management.core.windows.net/'
-      # Tenant ID for your Azure Subscription
-      TENANT_ID = '00000000-0000-0000-000000000000'
-      # Your Service Principal App ID
-      CLIENT = '00000000-0000-0000-000000000000'
-      # Your Service Principal Password
-      KEY = '00000000-0000-0000-000000000000'
-      # Your Azure Subscription ID
-      SUBSCRIPTION_ID = '00000000-0000-0000-000000000000'
+      RESOURCE = "https://management.core.windows.net/"
+      # Tenant ID for your Azure Subscription (AadTenantId)
+      TENANT_ID = "00000000-0000-0000-000000000000"
+      # Your Service Principal App ID (AadClientId)
+      CLIENT = "00000000-0000-0000-000000000000"
+      # Your Service Principal Password (AadSecret)
+      KEY = "00000000-0000-0000-000000000000"
+      # Your Azure Subscription ID (SubscriptionId)
+      SUBSCRIPTION_ID = "00000000-0000-0000-000000000000"
       # Your Azure Media Service (AMS) Account Name
-      ACCOUNT_NAME = 'amsv3account'
+      ACCOUNT_NAME = "amsaccount"
       # Your Resource Group Name
-      RESOUCE_GROUP_NAME = 'AMSv3ResourceGroup'
+      RESOUCE_GROUP_NAME = "amsResourceGroup"
 
       LOGIN_ENDPOINT = AZURE_PUBLIC_CLOUD.endpoints.active_directory
       RESOURCE = AZURE_PUBLIC_CLOUD.endpoints.active_directory_resource_id
 
-      context = adal.AuthenticationContext(LOGIN_ENDPOINT + '/' + TENANT_ID)
+      context = adal.AuthenticationContext(LOGIN_ENDPOINT + "/" + TENANT_ID)
       credentials = AdalAuthentication(
-          context.acquire_token_with_client_credentials,
-          RESOURCE,
-          CLIENT,
-          KEY
+          context.acquire_token_with_client_credentials, RESOURCE, CLIENT, KEY
       )
 
       # The AMS Client
@@ -101,7 +97,7 @@ pip3 install azure-mgmt-media==3.0.0
 
       # Now that you are authenticated, you can manipulate the entities.
       # For example, list assets in your AMS account
-      print (client.assets.list(RESOUCE_GROUP_NAME, ACCOUNT_NAME).get(0))
+      print(client.assets.list(RESOUCE_GROUP_NAME, ACCOUNT_NAME).get(0))
       ```
 
 1. Запуск файла

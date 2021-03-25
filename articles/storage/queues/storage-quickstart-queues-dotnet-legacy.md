@@ -10,10 +10,10 @@ ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 23703dc507aa909aea4711289a4d7d5c5e6a170e
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97588205"
 ---
 # <a name="quickstart-use-the-azure-storage-sdk-v11-for-net-to-manage-a-queue"></a>Краткое руководство. Использование пакета SDK службы хранилища Azure версии 11 для .NET, чтобы управлять очередью
