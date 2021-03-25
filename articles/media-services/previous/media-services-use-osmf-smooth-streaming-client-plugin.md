@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: b0969ffae7963d6a5f9ac249e43750444ab11baa
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: e41e33b5f30cd861ae8715e0ad7f6694f8854198
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "105036056"
+ms.locfileid: "105046952"
 ---
 # <a name="how-to-use-the-microsoft-smooth-streaming-plugin-for-the-adobe-open-source-media-framework"></a>Использование подключаемого модуля Smooth Streaming Майкрософт для платформы Adobe Open Source Media Framework
 
@@ -34,7 +34,7 @@ SS для OSMF включает в себя две версии подключа
 * статический подключаемый модуль Smooth Streaming для OSMF (.swc);
 * динамический подключаемый модуль Smooth Streaming для OSMF (.swf).
 
-В этом документе предполагается, что читатель имеет общие знания о подключаемых модулях OSMF и OSMF. Дополнительные сведения о OSMF см. в документации на [официальном сайте OSMF](http://osmf.org/).
+В этом документе предполагается, что читатель имеет общие знания о подключаемых модулях OSMF и OSMF. Дополнительные сведения о OSMF см. в документации на официальном сайте OSMF.
 
 ### <a name="smooth-streaming-plugin-for-osmf-20"></a>Подключаемый модуль Smooth Streaming для OSMF 2.0
 Подключаемый модуль поддерживает загрузку и воспроизведение контента Smooth Streaming по запросу со следующими возможностями:
@@ -62,7 +62,7 @@ SS для OSMF включает в себя две версии подключа
 Дополнительные сведения о статической и динамической загрузке см. на официальной [странице подключаемого модуля OSMF](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.izua300/IZUHPINFO_PluginsPlanning.htm).
 
 ### <a name="ss-for-osmf-static-loading"></a>Динамическая загрузка SS для OSMF
-В следующем фрагменте кода показано, как загрузить подключаемый модуль SS для OSMF статически и воспроизвести простое видео с помощью класса MediaFactory OSMF. Перед добавлением кода SS для OSMF убедитесь, что ссылка на проект включает статический подключаемый модуль "MSAdaptiveStreamingPlugin-v1.0.3-osmf2.0.swc".
+В следующем фрагменте кода показано, как загрузить подключаемый модуль SS для OSMF статически и воспроизвести простое видео с помощью класса MediaFactory OSMF. Перед добавлением кода SS для OSMF убедитесь, что ссылка на проект включает статический подключаемый модуль "MSAdaptiveStreamingPlugin-v1.0.3-osmf2.0.swc". 
 
 ```csharp
 package 
@@ -337,7 +337,7 @@ package
 ## <a name="strobe-media--playback-with-the-ss-odmf-dynamic-plugin"></a>Воспроизведение Strobe Media с помощью динамического подключаемого модуля SS ODMF
 Динамический подключаемый модуль Smooth Streaming для OSMF совместим с проигрывателем [Strobe Media Playback (SMP)](https://sourceforge.net/adobe/smp/home/Strobe%20Media%20Playback/). Подключаемый модуль SS для OSMF можно использовать для поддержки воспроизведения контента в SMP. Для этого скопируйте "MSAdaptiveStreamingPlugin-v1.0.3-osmf2.0.swf" на веб-сервер, чтобы выполнять загрузку по протоколу HTTP, и выполните следующие действия:
 
-1. Откройте [страницу настройки Strobe Media Playback](http://osmf.org/dev/2.0gm/setup.html). 
+1. Откройте [страницу настройки Strobe Media Playback](http://www.koopman.me/bob3/setup.html). 
 2. Задайте для src источник Smooth Streaming (например, http: \/ /devplatem.VO.msecnd.NET/Sintel/Sintel_H264.ISM/manifest). 
 3. Внесите требуемые изменения и нажмите кнопку "Предварительный просмотр и обновление".
    
@@ -394,7 +394,7 @@ package
 2. Сохраните HTML-страницу и опубликуйте ее на веб-сервере. Перейдите к опубликованной веб-странице в предпочитаемом браузере с поддержкой проигрывателя Flash&reg; Player (Internet Explorer, Chrome, Firefox и т. п.).
 3. Наслаждайтесь просмотром содержимого Smooth Streaming в проигрывателе Adobe&reg; Flash&reg; Player.
 
-Дополнительные сведения об общей процедуре разработки для OSMF см. на официальной [странице разработки OSMF](http://osmf.org/resources.html).
+Дополнительные сведения об общей процедуре разработки для OSMF см. на официальной [странице разработки OSMF](https://www.adobe.com/devnet/video/articles1/osmf_overview.html).
 
 ## <a name="media-services-learning-paths"></a>Схемы обучения работе со службами мультимедиа
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]

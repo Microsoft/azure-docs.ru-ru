@@ -5,12 +5,12 @@ author: jeffj6123
 ms.topic: conceptual
 ms.date: 5/19/2020
 ms.author: jejarry
-ms.openlocfilehash: a1b0598f34fe894e078dc647149cff4ac74e1fea
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: ff322cb3633616e9004bc8fa25b048b6f1263008
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104802154"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105046340"
 ---
 # <a name="azure-service-fabric-cli"></a>Интерфейс командной строки Azure Service Fabric
 
@@ -58,11 +58,11 @@ pip install -I sfctl==1.1.0
 
 Для Windows 10, Windows Server 2016 и Windows Server 2012 R2 используйте стандартные официальные инструкции по установке. Установщик Python также по умолчанию устанавливает pip.
 
-1. Перейдите на официальную [страницу загрузок Python](https://www.python.org/downloads/) и скачайте последний выпуск Python 3.7.
+1. Перейдите на официальную [страницу загрузок Python](https://www.python.org/downloads/)и скачайте последнюю версию Python 3. x.
 
 2. Запустите установщик.
 
-3. В нижней части окна запроса выберите **Add Python 3.7 to PATH** (Добавить Python 3.7 в PATH).
+3. В нижней части запроса выберите **Добавить Python 3. x в путь**.
 
 4. Выберите **Install Now** (Установить сейчас) и завершите установку.
 
@@ -118,8 +118,8 @@ sudo pip3 install sfctl
 Чтобы установить интерфейс командной строки Service Fabric в Red Hat, выполните следующие команды:
 
 ```bash
-sudo yum install -y python34
-sudo yum install python34-setuptools
+sudo yum install -y python38
+sudo yum install python38-setuptools
 sudo easy_install-3.4 pip
 sudo pip3 install sfctl
 ```
@@ -135,7 +135,7 @@ sudo pip3 install sfctl
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Затем с помощью терминала установите Python 3.7, pip и интерфейс командной строки Service Fabric, выполнив следующие команды:
+Затем из терминала установите последнюю версию Python 3. x, PIP и Service Fabric CLI, выполнив следующие команды:
 
 ```bash
 brew install python3

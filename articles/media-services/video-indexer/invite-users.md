@@ -11,10 +11,10 @@ ms.topic: quickstart
 ms.date: 02/03/2021
 ms.author: juliako
 ms.openlocfilehash: 7d3415ffad4820d8651841398ec6d47352869ce2
-ms.sourcegitcommit: b513b0becf878eb9a1554c26da53aa48d580bb22
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100534785"
 ---
 # <a name="quickstart-invite-users-to-video-indexer"></a>Краткое руководство. Приглашение пользователей в Индексатор видео

@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для Базы данных Azure для PostgreSQL
 description: Содержит список элементов управления соответствием из службы "Политика Azure" для Базы данных Azure для PostgreSQL. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.topic: sample
 author: sunilagarwal
 ms.author: sunila
 ms.service: postgresql
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 96164c9adab42452355902a8ca6104269ac5c851
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 86117bd5528bcb0f50a9add19fda5136990a2c47
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104585746"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105033775"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-database-for-postgresql"></a>Элементы управления соответствием в службе "Политика Azure" для Базы данных Azure для PostgreSQL
 

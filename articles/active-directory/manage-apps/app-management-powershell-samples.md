@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 02/18/2021
 ms.author: kenwith
 ms.reviewer: mifarca
-ms.openlocfilehash: e63931f62398e1344d001bedb27cc8d0d776bef1
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: f5f7ec8245a43440a400b9ca6b55bf1093eb62cc
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102193307"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102636194"
 ---
 # <a name="azure-active-directory-powershell-examples-for-application-management"></a>Пример PowerShell для управления приложениями в Azure Active Directory
 
@@ -24,9 +24,12 @@ ms.locfileid: "102193307"
 - [модуль AzureAD PowerShell (версии 2) для Graph](/powershell/azure/active-directory/install-adv2); или
 - [предварительная версия модуля AzureAD PowerShell (версии 2) для Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true) (если не указано иное).
 
-Дополнительные сведения о командлетах, используемых в этих примера, см. в разделе [Приложения](/powershell/module/azuread/?view=azureadps-2.0#applications&preserve-view=true).
+Дополнительные сведения о командлетах, используемых в этих примера, см. в разделе [Приложения](/powershell/module/azuread/#applications).
 
 | Ссылка | Описание |
 |---|---|
 |**Скрипты для управления приложениями**||
-| [Экспорт всех регистраций, секретов и сертификатов приложений](scripts/powershell-export-all-app-registrations-secrets-and-certs.md) | Экспортирует все регистрации, секреты и сертификаты приложений для указанных приложений в каталоге. |
+| [Экспорт секретов и сертификатов (регистрация приложений)](scripts/powershell-export-all-app-registrations-secrets-and-certs.md) | Экспорт секретов и сертификатов для регистраций приложений в арендатор Azure Active Directory. |
+| [Экспорт секретов и сертификатов (корпоративные приложения)](scripts/powershell-export-all-enterprise-apps-secrets-and-certs.md) | Экспорт секретов и сертификатов для корпоративных приложений в арендаторе Azure Active Directory. |
+| [Экспорт секретов и сертификатов с истекающим сроком действия](scripts/powershell-export-apps-with-expriring-secrets.md) | Экспорт регистраций приложений с секретами и сертификатами, для которых истекает срок действия, а также их владельцев в арендаторе Azure Active Directory. |
+| [Экспорт секретов и сертификатов с истекшим сроком действия](scripts/powershell-export-apps-with-secrets-beyond-required.md) | Экспорт регистраций приложений с секретами и сертификатами, для которых истекает срок действия после требуемой даты, в арендаторе Azure Active Directory. В этом случае используется неинтерактивный поток OAuth Client_Credentials. |
