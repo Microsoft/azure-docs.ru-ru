@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 996159f7014e735c8a4b3e5975c2716ce1ab6910
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cca60ba9948299f4e9557f26097d4a23e4ebea12
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101728557"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025345"
 ---
 # <a name="azure-security-baseline-for-azure-resource-manager"></a>Базовый план безопасности Azure для Azure Resource Manager
 
@@ -32,9 +32,9 @@ ms.locfileid: "101728557"
 
 - [Подключение к Azure Sentinel](../../sentinel/quickstart-onboard.md) 
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../../azure-monitor/essentials/diagnostic-settings.md) 
 
-- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](/azure/azure-monitor/learn/quick-collect-azurevm) 
+- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](../../azure-monitor/vm/quick-collect-azurevm.md) 
 
 - [Начало работы с Azure Monitor и интеграция SIEM стороннего производителя](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools/)
 
@@ -50,9 +50,9 @@ ms.locfileid: "101728557"
 
 **Руководство**. Azure Resource Manager использует журналы действий, которые включаются автоматически, для включения источника событий, даты, пользователя, метки времени, исходных адресов, адресов назначения и других полезных элементов.
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../../azure-monitor/essentials/diagnostic-settings.md) 
 
-- [Общие сведения о ведении журналов и различных типах журналов в Azure](/azure/azure-monitor/platform/platform-logs-overview)
+- [Общие сведения о ведении журналов и различных типах журналов в Azure](../../azure-monitor/essentials/platform-logs-overview.md)
 
 **Ответственность**: Customer
 
@@ -66,9 +66,9 @@ ms.locfileid: "101728557"
 
 - [Подключение к Azure Sentinel](../../sentinel/quickstart-onboard.md) 
 
-- [Приступая к работе с Log Analytics запросами](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Приступая к работе с Log Analytics запросами](../../azure-monitor/logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../../azure-monitor/logs/get-started-queries.md)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -82,7 +82,7 @@ ms.locfileid: "101728557"
 
 - [Управление оповещениями в центре безопасности Azure](../../security-center/security-center-managing-and-responding-alerts.md) 
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](../../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -119,7 +119,7 @@ ms.locfileid: "101728557"
 
 Вы также можете включить JIT-доступ с помощью Azure Active Directory (Azure AD) управление привилегированными пользователями и Azure Resource Manager.
 
-- [Дополнительные сведения о управление привилегированными пользователями](/azure/active-directory/privileged-identity-management/)
+- [Дополнительные сведения о управление привилегированными пользователями](../../active-directory/privileged-identity-management/index.yml)
 
 - [Использование Политики Azure](../../governance/policy/tutorials/create-and-manage.md)
 
@@ -205,7 +205,7 @@ ms.locfileid: "101728557"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверки подлинности и доступа Azure AD для эффективного управления членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверить регулярно, чтобы убедиться, что доступ к ним имеют только нужные пользователи.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure AD](../../active-directory/governance/access-reviews-overview.md)
 
@@ -223,7 +223,7 @@ ms.locfileid: "101728557"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить нужные оповещения в Log Analytics рабочей области.
 
-- [Как интегрировать журналы действий Azure с Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure с Azure Monitor](../../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -261,7 +261,7 @@ ms.locfileid: "101728557"
 
 **Руководство**. Использование Azure Active Directory (Azure AD) RBAC для управления доступом к данным и ресурсам. в противном случае используйте зависящие от службы методы управления доступом.
 
-- [Настройка Azure RBAC](../../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../../role-based-access-control/role-assignments-portal.md)
 
 **Ответственность**: Customer
 
@@ -275,7 +275,7 @@ ms.locfileid: "101728557"
 
 **Рекомендации**. для шифрования неактивных на стороне сервера Azure Resource Manager поддерживает ключи, управляемые корпорацией Майкрософт.
 
-- [Общие сведения о защите данных в Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-resource-manager-security-controls#data-protection)
+- [Общие сведения о защите данных в Azure Resource Manager](#data-protection)
 
 **Ответственность**: Customer
 
@@ -285,7 +285,7 @@ ms.locfileid: "101728557"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений при внесении изменений в критические ресурсы Azure.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -319,7 +319,7 @@ ms.locfileid: "101728557"
 
 **Руководство**. Использование имени политики, описания и категории для логической организации активов в соответствии с классификацией.
 
-- [Дополнительные сведения о разметке ресурсов см. в разделе Определение решения для именования и добавления тегов.](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
+- [Дополнительные сведения о разметке ресурсов см. в разделе Определение решения для именования и добавления тегов.](/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2fazure%2fazure-resource-manager%2fmanagement%2ftoc.json)
 
 **Ответственность**: Customer
 
@@ -379,7 +379,7 @@ ms.locfileid: "101728557"
 
 - [Настройка Политики Azure и управление ею](../../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -463,7 +463,7 @@ Azure Resource Manager может экспортировать шаблон в �
 
 - [Настройка Политики Azure и управление ею](../../governance/policy/tutorials/create-and-manage.md)
 
-- [Использование псевдонимов](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Использование псевдонимов](../../governance/policy/concepts/definition-structure.md#aliases)
 
 **Ответственность**: Customer
 
@@ -587,5 +587,5 @@ Azure Resource Manager может экспортировать шаблон в �
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../../security/benchmarks/security-baselines-overview.md).

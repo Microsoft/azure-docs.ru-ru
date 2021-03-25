@@ -1,5 +1,5 @@
 ---
-title: 'SQL Server Управляемый экземпляр SQL: руководство по миграции'
+title: 'SQL Server Управляемый экземпляр SQL Azure: руководство по миграции'
 description: В этом руководстве рассказывается о переносе баз данных SQL Server в Azure SQL Управляемый экземпляр.
 ms.service: sql-managed-instance
 ms.subservice: migration-guide
@@ -10,14 +10,14 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 6dcbf4a570fb5cdb58c914ea5e4b1164ed6a76ca
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a1dcb72c30268dd82052e29232e79a485d86f72d
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103564496"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025311"
 ---
-# <a name="migration-guide-sql-server-to-sql-managed-instance"></a>Руководство по миграции: SQL Server в SQL Управляемый экземпляр
+# <a name="migration-guide-sql-server-to-azure-sql-managed-instance"></a>Руководство по миграции: SQL Server в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]
 
 Это руководством поможет перенести экземпляр SQL Server в Azure SQL Управляемый экземпляр. 
@@ -30,7 +30,7 @@ ms.locfileid: "103564496"
 - Подсистема вычислений (Google Cloud Platform-обеспечить)  
 - Облачный SQL для SQL Server (Google Cloud Platform – обеспечить) 
 
-Дополнительные сведения о миграции см. в разделе [Общие сведения о миграции](sql-server-to-managed-instance-overview.md). Другие сценарии см. в разделе [руководств по миграции баз данных](https://datamigration.microsoft.com/).
+Дополнительные сведения о миграции см. в разделе [Общие сведения о миграции](sql-server-to-managed-instance-overview.md). Другие руководства по миграции см. в разделе [Перенос базы данных](https://docs.microsoft.com/data-migration). 
 
 :::image type="content" source="media/sql-server-to-managed-instance-overview/migration-process-flow-small.png" alt-text="Поток процесса миграции":::
 
@@ -40,6 +40,8 @@ ms.locfileid: "103564496"
 
 - Выберите [метод миграции](sql-server-to-managed-instance-overview.md#compare-migration-options) и соответствующие средства, необходимые для выбранного метода.
 - Установите [Помощник по миграции данных (DMA)](https://www.microsoft.com/download/details.aspx?id=53595) на компьютере, который может подключиться к исходному SQL Server
+- Подключение и соответствующие разрешения для доступа к исходному и целевому объекту. 
+
 
 
 ## <a name="pre-migration"></a>Подготовка к миграции
@@ -183,7 +185,7 @@ ms.locfileid: "103564496"
 
 После успешного завершения этапа миграции пройдите ряд задач, выполняемых после миграции, чтобы обеспечить бесперебойную работу всех компонентов. 
 
-Этап, выполняемый после миграции, крайне важен для согласования любых проблем с точностью данных и проверки полноты, а также для устранения проблем с производительностью рабочей нагрузки. 
+Проверка после миграции — очень важный шаг, позволяющий добиться точности и полноты данных, а также выявить проблемы с производительностью рабочей нагрузки. 
 
 ### <a name="remediate-applications"></a>Исправление приложений 
 

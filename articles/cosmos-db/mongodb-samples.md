@@ -10,10 +10,10 @@ author: sivethe
 ms.author: sivethe
 ms.custom: devx-track-js
 ms.openlocfilehash: c2117c535cca679d3a7a3b75491bf60ab9567ceb
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93098218"
 ---
 # <a name="build-an-app-using-nodejs-and-azure-cosmos-dbs-api-for-mongodb"></a>Создание приложения с помощью Node.js и API Azure Cosmos DB для MongoDB 
@@ -34,9 +34,9 @@ ms.locfileid: "93098218"
 * [Создайте](create-mongodb-dotnet.md#create-account) учетную запись Cosmos и настройте ее на использование API Azure Cosmos DB для MongoDB.
 * Получите сведения о [строке подключения](connect-mongodb-account.md).
 
-## <a name="create-the-app"></a>Создайте приложение
+## <a name="create-the-app"></a>Создание приложения
 
-1. Создайте файл *app.js* , а затем скопируйте и вставьте в него приведенный ниже код.
+1. Создайте файл *app.js*, а затем скопируйте и вставьте в него приведенный ниже код.
 
     ```javascript
     var MongoClient = require('mongodb').MongoClient;
@@ -170,7 +170,7 @@ ms.locfileid: "93098218"
     var url = 'mongodb://<endpoint>:<password>@<endpoint>.documents.azure.com:10255/?ssl=true';
     ```
      
-3. Откройте удобный для вас терминал, выполните команду **npm install mongodb --save** , а затем запустите приложение с помощью **node app.js**.
+3. Откройте удобный для вас терминал, выполните команду **npm install mongodb --save**, а затем запустите приложение с помощью **node app.js**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

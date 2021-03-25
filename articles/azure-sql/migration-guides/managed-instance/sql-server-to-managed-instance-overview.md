@@ -1,5 +1,5 @@
 ---
-title: 'SQL Server Управляемый экземпляр SQL: Общие сведения о миграции'
+title: 'SQL Server Управляемый экземпляр SQL Azure: Общие сведения о миграции'
 description: Узнайте о различных средствах и параметрах, доступных для переноса баз данных SQL Server в Azure SQL Управляемый экземпляр.
 ms.service: sql-managed-instance
 ms.subservice: migration-guide
@@ -10,14 +10,14 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 02/18/2020
-ms.openlocfilehash: ac2b535b2e6b7a6b4169d08dd1768d69e685a216
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 1c187ae83ce87c9d4d8da4aa1a5dc38163261b52
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102562033"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024903"
 ---
-# <a name="migration-overview-sql-server-to-sql-managed-instance"></a>Общие сведения о миграции: SQL Server в SQL Управляемый экземпляр
+# <a name="migration-overview-sql-server-to-azure-sql-managed-instance"></a>Общие сведения о миграции: SQL Server в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlmi.md)]
 
 Узнайте о различных вариантах миграции и особенностях переноса SQL Server в Azure SQL Управляемый экземпляр. 
@@ -30,7 +30,7 @@ ms.locfileid: "102562033"
 - Подсистема вычислений (Google Cloud Platform-обеспечить)  
 - Облачный SQL для SQL Server (Google Cloud Platform – обеспечить) 
 
-Другие сценарии см. в разделе [руководств по миграции баз данных](https://datamigration.microsoft.com/). 
+Другие руководства по миграции см. в разделе [Перенос базы данных](https://docs.microsoft.com/data-migration). 
 
 ## <a name="overview"></a>Обзор
 
@@ -60,7 +60,7 @@ ms.locfileid: "102562033"
 - Используйте базовую задержку операций ввода-вывода в файловой системе, чтобы выбрать между общего назначения (задержка более 5 мс) и критически важный для бизнеса (задержка менее 3 мс). 
 - Используйте базовую пропускную способность для предварительного выделения размера файлов данных и журналов для достижения ожидаемой производительности ввода-вывода. 
 
-Вы можете выбрать ресурсы для вычислений и хранения во время развертывания, а затем изменить их после использования [портал Azure](../../database/scale-resources.md) без простоя приложения. 
+Вы можете выбрать ресурсы для вычислений и хранения во время развертывания, а затем [изменить их после использования портал Azure](../../database/scale-resources.md) без простоя приложения. 
 
 > [!IMPORTANT]
 > Любое расхождение в [требованиях к виртуальной сети для управляемого экземпляра](../../managed-instance/connectivity-architecture-overview.md#network-requirements) может препятствовать созданию новых экземпляров или использованию существующих. Узнайте больше о [создании новых](../../managed-instance/virtual-network-subnet-create-arm-template.md)   и [настройке существующих](../../managed-instance/vnet-existing-add-subnet.md)   сетей. 
@@ -100,9 +100,9 @@ ms.locfileid: "102562033"
 
 В следующей таблице перечислены альтернативные средства миграции. 
 
-|Технология |Описание  |
+|**Технология** |**Описание**  |
 |---------|---------|
-|[Репликация транзакций](../../managed-instance/replication-transactional-overview.md) | Репликация данных из таблиц базы данных-источника SQL Server в Управляемый экземпляр SQL, предоставляя тип подписчика издателя, при этом сохраняя согласованность транзакций. |  |
+|[Репликация транзакций](../../managed-instance/replication-transactional-overview.md) | Репликация данных из таблиц базы данных-источника SQL Server в Управляемый экземпляр SQL, предоставляя тип подписчика издателя, при этом сохраняя согласованность транзакций. | 
 |[Массовое копирование](/sql/relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server)| Программа [пакетного копирования (BCP)](/sql/tools/bcp-utility) копирует данные из экземпляра SQL Server в файл данных. Используйте программу BCP для экспорта данных из источника и импорта файла данных в Целевой Управляемый экземпляр SQL.</br></br> Для высокоскоростных операций копирования в базу данных SQL Azure можно использовать [интеллектуальное средство](/samples/azure-samples/smartbulkcopy/smart-bulk-copy/) для повышения скорости передачи данных, используя параллельные задачи копирования. | 
 |[Мастер импорта экспорта/BACPAC-файл](../../database/database-import.md?tabs=azure-powershell)| [BACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications#bacpac) — это файл Windows с `.bacpac` расширением, которое инкапсулирует схему и данные базы данных. BACPAC можно использовать как для экспорта данных из исходного SQL Server, так и для импорта файла обратно в Управляемый экземпляр SQL Azure.  |  
 |[Фабрика данных Azure (ADF)](../../../data-factory/connector-azure-sql-managed-instance.md)| [Действие копирования](../../../data-factory/copy-activity-overview.md) в фабрике данных Azure переносит данные из баз данных-источников SQL Server в SQL управляемый экземпляр с помощью встроенных соединителей и [Integration Runtime](../../../data-factory/concepts-integration-runtime.md).</br> </br> ADF поддерживает широкий спектр [соединителей](../../../data-factory/connector-overview.md) для перемещения данных из SQL Server источников в управляемый экземпляр SQL. |
@@ -241,7 +241,7 @@ SELECT * FROM sys.sql_modules WHERE uses_native_compilation=1
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Чтобы приступить к переносу SQL Server в Azure SQL Управляемый экземпляр, ознакомьтесь с [руководством по миграции SQL Server в sql управляемый экземпляр](sql-server-to-managed-instance-guide.md).
+Чтобы начать перенос SQL Server в Azure SQL Управляемый экземпляр, ознакомьтесь с [руководством по миграции SQL Server в Azure sql управляемый экземпляр](sql-server-to-managed-instance-guide.md).
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

@@ -7,10 +7,10 @@ description: Сведения о предоставлении в Azure Dev Space
 keywords: Docker, Kubernetes, Azure, AKS, Служба Azure Kubernetes, контейнеры, kubectl, k8s
 manager: gwallace
 ms.openlocfilehash: fd6f52c71c81f253f3f40f05408e45b6a6c0dbce
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102199481"
 ---
 # <a name="what-is-azure-dev-spaces"></a>Что такое Azure Dev Spaces?

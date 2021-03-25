@@ -8,12 +8,12 @@ ms.author: maheff
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/01/2021
-ms.openlocfilehash: 5a44c40838b7f7fa9ca499ade49317ff9ce828fe
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 5888a7cc8aa58d1c6edab191e1243ebc60000fd6
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102498903"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048873"
 ---
 # <a name="how-to-configure-sharepoint-online-indexing-in-cognitive-search-preview"></a>Настройка индексирования SharePoint Online в Когнитивный поиск (Предварительная версия)
 
@@ -147,7 +147,7 @@ api-key: [admin key]
 
 ```
 
-Дополнительные сведения см. в разделе [Создание индекса (REST API)](https://docs.microsoft.com/rest/api/searchservice/create-index).
+Дополнительные сведения см. в разделе [Создание индекса (REST API)](/rest/api/searchservice/create-index).
 
 ### <a name="step-5-create-an-indexer"></a>Шаг 5. Создание индексатора
 Индексатор соединяет источник данных с целевым индексом поиска и предоставляет расписание для автоматизации обновления данных. После создания индекса и источника данных можно приступать к созданию индексатора!
@@ -226,7 +226,7 @@ Content-Type: application/json
 api-key: [admin key]
 ```
 
-Дополнительные сведения о состоянии индексатора можно найти здесь: [Получение состояния индексатора](https://docs.microsoft.com/rest/api/searchservice/get-indexer-status).
+Дополнительные сведения о состоянии индексатора можно найти здесь: [Получение состояния индексатора](/rest/api/searchservice/get-indexer-status).
 
 ## <a name="updating-the-data-source"></a>Обновление источника данных
 Если объект источника данных не обновляется, индексатор может выполняться по расписанию без взаимодействия с пользователем. Тем не менее при каждом обновлении объекта источника данных Azure Когнитивный поиск потребуется выполнить вход, чтобы индексатор выполнялся. Например, при изменении запроса к источнику данных потребуется выполнить вход еще раз с помощью `https://microsoft.com/devicelogin` и нового кода.
@@ -241,7 +241,7 @@ api-key: [admin key]
     api-key: [admin key]
     ```
 
-    Дополнительные сведения о запросе на выполнение индексатора можно найти здесь: [Run индексатор](https://docs.microsoft.com/rest/api/searchservice/run-indexer).
+    Дополнительные сведения о запросе на выполнение индексатора можно найти здесь: [Run индексатор](/rest/api/searchservice/run-indexer).
 
 1.  Проверьте состояние индексатора. Если последний запуск индексатора содержит ошибку, сообщающую о переходе на `https://microsoft.com/devicelogin` эту страницу, и укажите новый код. 
 
@@ -251,9 +251,9 @@ api-key: [admin key]
     api-key: [admin key]
     ```
 
-    Дополнительные сведения о состоянии индексатора можно найти здесь: [Получение состояния индексатора](https://docs.microsoft.com/rest/api/searchservice/get-indexer-status).
+    Дополнительные сведения о состоянии индексатора можно найти здесь: [Получение состояния индексатора](/rest/api/searchservice/get-indexer-status).
 
-1.  Имя входа
+1.  Вход
 
 1.  Вручную запустите индексатор и проверьте состояние индексатора. На этот раз запуск индексатора должен успешно запуститься.
 
@@ -359,7 +359,7 @@ api-key: [admin key]
 "parameters" : { "configuration" : { "failOnUnprocessableDocument" : false } }
 ```
 
-Azure Когнитивный поиск ограничивает размер индексируемых документов. Эти ограничения описаны в статье [ограничения службы в Azure когнитивный Поиск](https://docs.microsoft.com/azure/search/search-limits-quotas-capacity). Документы с слишком размером по умолчанию обрабатываются как ошибки. Однако вы по-прежнему можете индексировать метаданные хранилища для документов с длинными размерами, если `indexStorageMetadataOnlyForOversizedDocuments` для параметра конфигурации задано значение true:
+Azure Когнитивный поиск ограничивает размер индексируемых документов. Эти ограничения описаны в статье [ограничения службы в Azure когнитивный Поиск](./search-limits-quotas-capacity.md). Документы с слишком размером по умолчанию обрабатываются как ошибки. Однако вы по-прежнему можете индексировать метаданные хранилища для документов с длинными размерами, если `indexStorageMetadataOnlyForOversizedDocuments` для параметра конфигурации задано значение true:
 
 ```http
 "parameters" : { "configuration" : { "indexStorageMetadataOnlyForOversizedDocuments" : true } }
@@ -374,6 +374,6 @@ Azure Когнитивный поиск ограничивает размер и
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 + [Indexers in Azure Cognitive Search](search-indexer-overview.md) (Индексаторы в службе "Когнитивный поиск Azure")
 + [Свойства метаданных содержимого, используемые в Когнитивный поиск Azure](search-blob-metadata-properties.md)

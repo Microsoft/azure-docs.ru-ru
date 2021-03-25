@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: conceptual
 ms.date: 02/10/2021
 ms.author: duau
-ms.openlocfilehash: 69c600384a7877f3534bae0b57f862187feb32ca
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a43f95ad65e95db2b69b32c3fe8d62db71a98a17
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104581513"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025209"
 ---
 # <a name="expressroute-partners-and-peering-locations"></a>Партнеры и одноранговые расположения ExpressRoute
 
@@ -42,8 +42,8 @@ ms.locfileid: "104581513"
 | **Геополитический регион** | **Регионы Azure** | **Расположения ExpressRoute** |
 | --- | --- | --- |
 | **Государственные организации Австралии** | Центральная Австралия, Центральная Австралия 2 |Канберра, Канберра 2 |
-| **Европа** | Центральная Франция, Южная Франция, Северная Германия, Центрально-Западная Германия, Северная Европа, Восточная Норвегия, Западная Норвегия, Северная Швейцария, Западная Швейцария, западная часть Соединенного Королевства, южная часть Соединенного Королевства, Западная Европа |Амстердам, Амстердам 2, Берлин, Копенгаген, Дублин, Франкфурт, Женева, Лондон, Лондон 2, Марсель, Милан, Мюнхен, Ньюпорт (Уэльс), Осло, Париж, Ставангер, Стокгольм, Цюрих |
-| **Северная Америка** | Восточная часть США, западная часть США, восточная часть США 2, западная часть США 2, центральная часть США, центрально-южная часть США, центрально-северная часть США, центрально-западная часть США, Центральная Канада, Восточная Канада |Атланта, Чикаго, Далласе, Денвер, Лас-Йорк, Лос-Анджелес, Лос-Angeles2, Майами, Миннеаполисе, Монреаль, Нью-Йорк, Phoenix, Квебек City, Куеретаро (Мексика), Куинци, San Сан Антонио, Сиэтл, Silicon впадин, Silicon Valley2, Торонто, Vancouver, Вашингтон (округ Колумбия), Вашингтон |
+| **Европа** | Центральная Франция, Южная Франция, Северная Германия, Центрально-Западная Германия, Северная Европа, Восточная Норвегия, Западная Норвегия, Северная Швейцария, Западная Швейцария, западная часть Соединенного Королевства, южная часть Соединенного Королевства, Западная Европа |Амстердам, Amsterdam2, Берлин, Копенгаген, Дублин, Франкфурт, Frankfurt2, Geneva, Лондон, London2, Мадрид, Марселе, Милан, Мюнхене, Ньюпорт (), Oslo, Париж, Ставанжер, Стокгольм, Цюрих |
+| **Северная Америка** | Восточная часть США, западная часть США, восточная часть США 2, западная часть США 2, центральная часть США, центрально-южная часть США, центрально-северная часть США, центрально-западная часть США, Центральная Канада, Восточная Канада |Атланта, Чикаго, Далласе, Денвер, Лас-Йорк, Лос-Анджелес, Лос Angeles2, Майами, Миннеаполисе, Монреаль, Нью-Йорк, Phoenix, Квебек City, Куеретаро (Мексика), Куинци, San Сан Антонио, Сиэтл, Silicon впадин, Silicon Valley2, Торонто, Toronto2, Vancouver, Вашингтон (округ Колумбия), Вашингтон |
 | **Азия** | Восточная Азия, Юго-Восточная Азия | Бангкок, Гонконг, Гонконг 2, Джакарта, Куала-Лумпур, Сингапур, Сингапур 2, Тайбэй |
 | **Индия** | Западная Индия, Центральная Индия, Южная Индия |Ченнаи, Ченнаи 2, Мумбаи, Мумбаи 2 |
 | **Япония** | Западная Япония, Восточная Япония |Осака, Токио, Токио 2 |
@@ -51,7 +51,7 @@ ms.locfileid: "104581513"
 | **Южная Корея** | Республика Корея, центральный регион, Республика Корея, южный регион |Пусан, Сеул|
 | **ОАЭ** | Центральная часть ОАЭ, Северная часть ОАЭ | Дубаи, Дубаи 2 |
 | **ЮАР** | Западная часть ЮАР, Северная часть ЮАР |Кейптаун, Йоханнесбург |
-| **Южная Америка** | Южная Бразилия |Богота, Сан-Паулу |
+| **Южная Америка** | Южная Бразилия |Богота, Рио de де Жанейро, Сан-Паулу |
 
 ## <a name="azure-regions-and-geopolitical-boundaries-for-national-clouds"></a>Регионы Azure и геополитические границы для национальных облаков
 В таблице ниже содержатся сведения о регионах и геополитических границах для национальных облаков.
@@ -167,7 +167,7 @@ ms.locfileid: "104581513"
 | **Даллас** | [Equinix DA3](https://www.equinix.com/locations/americas-colocation/united-states-colocation/dallas-data-centers/da3/) | Недоступно | 10G, 100G | Equinix, Megaport, Verizon |
 | **Нью-Йорк** | [Equinix NY5](https://www.equinix.com/locations/americas-colocation/united-states-colocation/new-york-data-centers/ny5/) | Недоступно | 10G, 100G | Equinix, CenturyLink Cloud Connect, Verizon |
 | **Phoenix** | [CyrusOne Chandler](https://cyrusone.com/locations/arizona/phoenix-arizona-chandler/) | US Gov (Аризона) | 10G, 100G | AT&T NetBond, CenturyLink Cloud Connect, Megaport |
-| **Сан-Антонио** | [CyrusOne SA2](https://cyrusone.com/locations/texas/san-antonio-texas-ii/) | US Gov (Техас) | Недоступно | CenturyLink Cloud Connect, Megaport |
+| **Сан-Антонио** | [CyrusOne SA2](https://cyrusone.com/locations/texas/san-antonio-texas-ii/) | US Gov (Техас) | 10G, 100G | CenturyLink Cloud Connect, Megaport |
 | **Кремниевая долина** | [Equinix SV4](https://www.equinix.com/locations/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv4/) | Недоступно | 10G, 100G | AT&T, Equinix, Level 3 Communications, Verizon |
 | **Сиэтл;** | [Equinix SE2](https://www.equinix.com/locations/americas-colocation/united-states-colocation/seattle-data-centers/se2/) | Недоступно | 10G, 100G | Equinix, Megaport |
 | **Вашингтон, округ Колумбия** | [Equinix DC2](https://www.equinix.com/locations/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2/) | Восточный регион US DoD, US Gov (Вирджиния) | 10G, 100G | AT&T NetBond, CenturyLink Cloud Connect, Equinix, Level 3 Communications, Megaport, Verizon |

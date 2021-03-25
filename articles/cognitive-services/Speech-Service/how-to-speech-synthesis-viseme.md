@@ -12,17 +12,17 @@ ms.date: 03/03/2021
 ms.author: yulili
 ms.custom: references_regions
 zone_pivot_groups: programming-languages-speech-services-nomore-variant
-ms.openlocfilehash: 15fa1dd230b7f07846653278533805fa66ed2195
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 7a196ff8c80a6f92e1205f5553a54913e281b52b
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104870401"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025889"
 ---
 # <a name="get-facial-pose-events"></a>Получение событий лица, налагаемых лиц
 
 > [!NOTE]
-> Висеме работает только для `en-US-AriaNeural` голоса в регионе "Западная часть США ( `westus` )" сейчас и будет доступен для всех `en-US` голосов в конце апреля, 2021.
+> Сейчас висеме работает только для `en-US-AriaNeural` голоса в регионе "Западная часть США 2 ( `westus2` )".
 
 Висеме — это визуальное описание phoneme в речевом языке.
 Он определяет расположение лица и рот при произнесении слова.
@@ -203,6 +203,6 @@ SPXSpeechSynthesizer *synthesizer =
 |ɹ  |   **r** ED **, b.**    |13|
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Справочная документация по пакету SDK для распознавания речи](speech-sdk.md)

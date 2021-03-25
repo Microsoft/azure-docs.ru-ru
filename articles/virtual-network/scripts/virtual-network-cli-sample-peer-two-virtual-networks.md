@@ -14,10 +14,10 @@ ms.date: 03/20/2018
 ms.author: kumud
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 902d6643420ff6bdafcf52278f3a1c0df28647ae
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98217544"
 ---
 # <a name="peer-two-virtual-networks-with-an-azure-cli-script-sample"></a>Пример сценария Azure CLI для создания пиринга между двумя виртуальными сетями
