@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 4db23982dfaed1447023edb417a3732dac94bdc4
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 9cac6cdd8e68af77b611c89e8b62e6f8d8845fd0
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105025243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107522"
 ---
 # <a name="frequently-asked-questions-for-azure-cloud-services-extended-support"></a>Часто задаваемые вопросы об Облачных службах Azure (расширенная поддержка)
 В этой статье рассматриваются часто задаваемые вопросы об облачных службах Azure (Расширенная поддержка).
@@ -93,7 +93,7 @@ Key Vault, виртуальная сеть, общедоступные IP-адр
 ### <a name="when-do-i-need-to-migrate"></a>Когда нужно выполнить миграцию? 
 Оценка необходимого времени и сложности миграции зависит от диапазона переменных. Планирование — это наиболее эффективный шаг для понимания области работы, блокирования и сложности миграции.
 
-## <a name="networking"></a>сеть;
+## <a name="networking"></a>Сеть 
 
 ### <a name="why-cant-i-create-a-deployment-without-virtual-network"></a>Почему не удается создать развертывание без виртуальной сети?
 Виртуальные сети являются обязательным ресурсом для любого развертывания на Azure Resource Manager. Развертывание облачных служб (Расширенная поддержка) должно находиться в виртуальной сети. 
@@ -113,6 +113,9 @@ Key Vault, виртуальная сеть, общедоступные IP-адр
 ### <a name="can-i-use-a-dns-name-with-cloud-services-extended-support"></a>Можно ли использовать DNS-имя с облачными службами (Расширенная поддержка)? 
 Да. Облачным службам (Расширенная поддержка) также можно присвоить DNS-имя. При использовании Azure Resource Manager метка DNS является дополнительным свойством общедоступного IP-адреса, назначенного облачной службе. Формат DNS-имени для развертываний на основе Azure Resource Manager: `<userlabel>.<region>.cloudapp.azure.com`
 
+### <a name="can-i-update-or-change-the-virtual-network-reference-for-an-existing-cloud-service-extended-support"></a>Можно ли обновить или изменить ссылку на виртуальную сеть для существующей облачной службы (Расширенная поддержка)? 
+Нет. Ссылка на виртуальную сеть является обязательной при создании облачной службы. Для существующей облачной службы ссылка на виртуальную сеть не может быть изменена. Адресное пространство виртуальной сети можно изменить с помощью API-интерфейсов VNet. 
+
 ## <a name="certificates--key-vault"></a>Сертификаты & Key Vault
 
 ### <a name="why-do-i-need-to-manage-my-certificates-on-cloud-services-extended-support"></a>Зачем нужно управлять сертификатами в облачных службах (Расширенная поддержка)?
@@ -121,5 +124,5 @@ Key Vault, виртуальная сеть, общедоступные IP-адр
 ### <a name="can-i-use-one-key-vault-for-all-my-deployments-in-all-regions"></a>Можно ли использовать один Key Vault для всех моих развертываний во всех регионах?
 Нет. Key Vault является региональным ресурсом, и клиентам требуется по одной Key Vault в каждом регионе. Однако один Key Vault можно использовать для всех развертываний в пределах заданного региона.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Чтобы приступить к использованию облачных служб (Расширенная поддержка), см. статью [Развертывание облачной службы (Расширенная поддержка) с помощью PowerShell](deploy-powershell.md) .

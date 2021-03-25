@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: virtual-machines-windows
 ms.collection: windows
 ms.subservice: imaging
-ms.openlocfilehash: 01b253747791fc29abf4434bebfd85865099f9ee
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 69718b219d239ac13e5d932b05a7dd29619adaa3
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103602024"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045592"
 ---
 # <a name="create-a-windows-virtual-desktop-image-using-azure-vm-image-builder-and-powershell"></a>Создание образа виртуального рабочего стола Windows с помощью построителя образов виртуальных машин Azure и PowerShell
 
@@ -22,11 +22,11 @@ ms.locfileid: "103602024"
 
 * Установка [фслогикс](https://github.com/DeanCefola/Azure-WVD/blob/master/PowerShell/FSLogixSetup.ps1).
 * Запуск [скрипта оптимизации виртуальных рабочих столов Windows](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool) из репозитория сообщества.
-* Установите [Microsoft Teams](https://docs.microsoft.com/azure/virtual-desktop/teams-on-wvd).
-* [Перезапуск](https://docs.microsoft.com/azure/virtual-machines/linux/image-builder-json?toc=%2Fazure%2Fvirtual-machines%2Fwindows%2Ftoc.json&bc=%2Fazure%2Fvirtual-machines%2Fwindows%2Fbreadcrumb%2Ftoc.json#windows-restart-customizer)
-* Запустить [Центр обновления Windows](https://docs.microsoft.com/azure/virtual-machines/linux/image-builder-json?toc=%2Fazure%2Fvirtual-machines%2Fwindows%2Ftoc.json&bc=%2Fazure%2Fvirtual-machines%2Fwindows%2Fbreadcrumb%2Ftoc.json#windows-update-customizer)
+* Установите [Microsoft Teams](../../virtual-desktop/teams-on-wvd.md).
+* [Перезапуск](../linux/image-builder-json.md?bc=%2fazure%2fvirtual-machines%2fwindows%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#windows-restart-customizer)
+* Запустить [Центр обновления Windows](../linux/image-builder-json.md?bc=%2fazure%2fvirtual-machines%2fwindows%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#windows-update-customizer)
 
-Мы покажем, как автоматизировать это с помощью построителя образов виртуальных машин Azure, и распространите образ в [общую коллекцию образов](https://docs.microsoft.com/azure/virtual-machines/windows/shared-image-galleries), где можно выполнять репликацию в другие регионы, управлять масштабом и совместно использовать образ внутри и за пределами Организации.
+Мы покажем, как автоматизировать это с помощью построителя образов виртуальных машин Azure, и распространите образ в [общую коллекцию образов](../shared-image-galleries.md), где можно выполнять репликацию в другие регионы, управлять масштабом и совместно использовать образ внутри и за пределами Организации.
 
 
 Для упрощения развертывания конфигурации построителя образов в этом примере используется шаблон Azure Resource Manager с шаблоном построителя изображений, вложенным в. Это дает некоторые другие преимущества, такие как переменные и входы параметров. Кроме того, можно передавать параметры из командной строки.
@@ -73,7 +73,7 @@ ms.locfileid: "103602024"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Необходимо установить последнюю версию командлетов Azure PowerShell. Дополнительные сведения об установке см. [здесь](https://docs.microsoft.com/powershell/azure/overview) .
+Необходимо установить последнюю версию командлетов Azure PowerShell. Дополнительные сведения об установке см. [здесь](/powershell/azure/overview) .
 
 ```PowerShell
 # Register for Azure Image Builder Feature
@@ -279,7 +279,7 @@ $getStatus.LastRunStatusMessage
 $getStatus.LastRunStatusRunSubState
 ```
 ## <a name="create-a-vm"></a>Создание виртуальной машины
-Теперь, когда сборка завершена, вы можете создать виртуальную машину из образа [, используя примеры отсюда.](https://docs.microsoft.com/powershell/module/az.compute/new-azvm#examples)
+Теперь, когда сборка завершена, вы можете создать виртуальную машину из образа [, используя примеры отсюда.](/powershell/module/az.compute/new-azvm#examples)
 
 ## <a name="clean-up"></a>Очистка
 

@@ -8,12 +8,12 @@ ms.author: tagore
 author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
-ms.openlocfilehash: 16aa6918c0f4b0df5ebf23f28268f8cbe5223fce
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 2822f719928515efc70eeed3d7c182e347627418
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98743293"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045524"
 ---
 # <a name="python-web-and-worker-roles-with-python-tools-for-visual-studio"></a>Использование веб-ролей и рабочих ролей Python с помощью средств Python для Visual Studio
 
@@ -22,13 +22,13 @@ ms.locfileid: "98743293"
 
 В этой статье представлен обзор способов использования веб-ролей и рабочих ролей Python с помощью [инструментов Python для Visual Studio][Python Tools for Visual Studio]. Узнайте, как с помощью Visual Studio создать и развернуть базовую облачную службу, которая использует Python.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 * [Visual Studio 2013, 2015 или 2017](https://www.visualstudio.com/)
 * [Инструменты Python для Visual Studio][Python Tools for Visual Studio] (PTVS)
 * [Инструменты пакета SDK для Azure для VS 2013][Azure SDK Tools for VS 2013] или  
 [Инструменты пакета SDK для Azure для VS 2015][Azure SDK Tools for VS 2015] или  
 [Инструменты пакета SDK для Azure для VS 2017][Azure SDK Tools for VS 2017]
-* [Python 2.7 (32-разрядный)][Python 2.7 32-bit] или [Python 3.5 (32-разрядный)][Python 3.5 32-bit].
+* [Python 2,7 32-bit][Python 2.7 32-bit] или [Python 3,8 32-bit][Python 3.8 32-bit]
 
 [!INCLUDE [create-account-and-websites-note](../../includes/create-account-and-websites-note.md)]
 
@@ -71,7 +71,7 @@ Azure предоставляет три вычислительные модел�
 
 Основная проблема скриптов установки заключается в том, что они не устанавливают Python. Сначала определите две [задачи запуска](cloud-services-startup-tasks.md) в файле [ServiceDefinition.csdef](cloud-services-model-and-package.md#servicedefinitioncsdef). Первая задача (**PrepPython.ps1**) скачивает и устанавливает среду выполнения Python. Вторая задача (**PipInstaller.ps1**) запускает PIP, чтобы установить зависимости.
 
-Приведенные ниже скрипты написаны для Python 3.5. Если нужно использовать Python версии 2.x, в файле переменной **PYTHON2** установите значение **on** для двух задач запуска и задачи выполнения: `<Variable name="PYTHON2" value="<mark>on</mark>" />`.
+Следующие скрипты написаны для Python 3,8. Если нужно использовать Python версии 2.x, в файле переменной **PYTHON2** установите значение **on** для двух задач запуска и задачи выполнения: `<Variable name="PYTHON2" value="<mark>on</mark>" />`.
 
 ```xml
 <Startup>
@@ -167,7 +167,7 @@ Azure предоставляет три вычислительные модел�
 Далее в папке **./bin** своей роли создайте файлы **PrepPython.ps1** и **PipInstaller.ps1**.
 
 #### <a name="preppythonps1"></a>Файл PrepPython.ps1
-Скрипт в этом файле устанавливает Python. Если для переменной среды **PYTHON2** задано значение **on**, будет установлена версия Python 2.7. В противном случае будет установлена версия Python 3.5.
+Скрипт в этом файле устанавливает Python. Если переменная среды **PYTHON2** имеет значение **On**, то устанавливается Python 2,7, в противном случае устанавливается Python 3,8.
 
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
@@ -186,12 +186,12 @@ if (-not $is_emulated){
 
     if (-not $?) {
 
-        $url = "https://www.python.org/ftp/python/3.5.2/python-3.5.2-amd64.exe"
-        $outFile = "${env:TEMP}\python-3.5.2-amd64.exe"
+        $url = "https://www.python.org/ftp/python/3.8.8/python-3.8.8-amd64.exe"
+        $outFile = "${env:TEMP}\python-3.8.8-amd64.exe"
 
         if ($is_python2) {
-            $url = "https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64.msi"
-            $outFile = "${env:TEMP}\python-2.7.12.amd64.msi"
+            $url = "https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi"
+            $outFile = "${env:TEMP}\python-2.7.18.amd64.msi"
         }
 
         Write-Output "Not found, downloading $url to $outFile$nl"
@@ -214,7 +214,7 @@ if (-not $is_emulated){
 ```
 
 #### <a name="pipinstallerps1"></a>Файл PipInstaller.ps1
-Этот скрипт вызывает PIP и устанавливает все зависимости в файле **requirements.txt**. Если для переменной среды **PYTHON2** задано значение **on**, будет использоваться Python 2.7. В противном случае будет использоваться Python 3.5.
+Этот скрипт вызывает PIP и устанавливает все зависимости в файле **requirements.txt**. Если переменная среды **PYTHON2** имеет значение **On**, то используется Python 2,7, в противном случае используется Python 3,8.
 
 ```powershell
 $is_emulated = $env:EMULATED -eq "true"
@@ -249,7 +249,7 @@ if (-not $is_emulated){
 
 Изначально файл **bin\LaunchWorker.ps1** создавался для выполнения множества подготовительных задач. Но в действительности он этого не делает. Замените содержимое этого файла на приведенный ниже скрипт.
 
-Этот скрипт вызывает файл **worker.py** из проекта Python. Если для переменной среды **PYTHON2** задано значение **on**, будет использоваться Python 2.7. В противном случае будет использоваться Python 3.5.
+Этот скрипт вызывает файл **worker.py** из проекта Python. Если переменная среды **PYTHON2** имеет значение **On**, то используется Python 2,7, в противном случае используется Python 3,8.
 
 ```powershell
 $is_emulated = $env:EMULATED -eq "true"
@@ -364,4 +364,4 @@ if not exist "%DiagnosticStore%\LogFiles" mkdir "%DiagnosticStore%\LogFiles"
 [Azure SDK Tools for VS 2015]: https://go.microsoft.com/fwlink/?LinkId=746481
 [Azure SDK Tools for VS 2017]: https://go.microsoft.com/fwlink/?LinkId=746483
 [Python 2.7 32-bit]: https://www.python.org/downloads/
-[Python 3.5 32-bit]: https://www.python.org/downloads/
+[Python 3.8 32-bit]: https://www.python.org/downloads/

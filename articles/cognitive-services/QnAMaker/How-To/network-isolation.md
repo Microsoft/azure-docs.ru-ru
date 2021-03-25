@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: afb396bc364a2fa2db923fbcbe6bfe1b7aedbc26
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: c2fad19bd84418d41aca1b2e0770eaa3cde488b0
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103467550"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043365"
 ---
 # <a name="recommended-settings-for-network-isolation"></a>Рекомендуемые параметры для сетевой изоляции
 
@@ -60,7 +60,7 @@ ms.locfileid: "103467550"
 
 Если служба QnA Maker приложений ограничена с помощью Среда службы приложений, используйте ту же виртуальную сеть для создания подключения к закрытой конечной точке для экземпляра Когнитивный поиск. Создайте новую запись DNS в виртуальной сети, чтобы связать конечную точку Когнитивный поиск с IP-адресом Когнитивный поиск частной конечной точки. 
 
-Если Среда службы приложений не используется для службы приложений QnAMaker, сначала создайте новый ресурс виртуальной сети, а затем создайте подключение к закрытой конечной точке для экземпляра Когнитивный поиск. В этом случае необходимо интегрировать службу приложений QnA Maker [с виртуальной](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet) сетью для подключения к экземпляру когнитивный Поиск. 
+Если Среда службы приложений не используется для службы приложений QnAMaker, сначала создайте новый ресурс виртуальной сети, а затем создайте подключение к закрытой конечной точке для экземпляра Когнитивный поиск. В этом случае необходимо интегрировать службу приложений QnA Maker [с виртуальной](../../../app-service/web-sites-integrate-with-vnet.md) сетью для подключения к экземпляру когнитивный Поиск. 
 
 #  <a name="qna-maker-managed-preview-release"></a>[Управляемая служба QnA Maker (предварительный выпуск)](#tab/v2)
 

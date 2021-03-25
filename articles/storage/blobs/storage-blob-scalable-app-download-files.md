@@ -9,10 +9,10 @@ ms.author: rogarana
 ms.subservice: blobs
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 0c029abd87e1b819cc4d96e906be8824c019f433
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99584979"
 ---
 # <a name="download-large-amounts-of-random-data-from-azure-storage"></a>Скачивание больших объемов случайных данных из службы хранилища Azure

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: v-tcassi
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: 94c3917b0912835799818597f94f3880ea3a7639
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: c291bb701aca385a11631504f1a312b25cced633
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889541"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045677"
 ---
 # <a name="install-and-provision-azure-iot-edge-for-linux-on-a-windows-device-preview"></a>Установка и инициализация Azure IoT Edge для Linux на устройстве Windows (предварительная версия)
 
@@ -32,7 +32,7 @@ Azure IoT Edge для Linux в Windows позволяет использоват
 >
 >Хотя IoT Edge для Linux в Windows — это рекомендуемый интерфейс для использования Azure IoT Edge в среде Windows, контейнеры Windows по-прежнему доступны. Если вы предпочитаете использовать контейнеры Windows, см. инструкции по [установке и управлению Azure IOT Edge для Windows](how-to-install-iot-edge-windows-on-windows.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Учетная запись Azure с действительной подпиской. Если у вас еще нет [подписки Azure](../guides/developer/azure-developer-guide.md#understanding-accounts-subscriptions-and-billing), создайте [бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начать работу.
 
@@ -95,7 +95,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
    ![Начальная панель мониторинга центра администрирования Windows с указанным целевым устройством](./media/how-to-install-iot-edge-on-windows/windows-admin-center-initial-dashboard.png)
 
-1. Выберите **Добавить**.
+1. Нажмите **Добавить**.
 
 1. На панели **Добавление или создание ресурсов** выберите плитку **Azure IOT Edge** . Выберите **создать** , чтобы установить новый экземпляр Azure IOT Edge для Linux в Windows на устройстве.
 
@@ -370,4 +370,6 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Продолжайте [развертывать модули IOT Edge](how-to-deploy-modules-portal.md) , чтобы узнать, как развернуть модули на устройстве.
+* Продолжайте [развертывать модули IOT Edge](how-to-deploy-modules-portal.md) , чтобы узнать, как развернуть модули на устройстве.
+* Узнайте, как [управлять сертификатами на IOT Edge для Linux на виртуальной машине Windows](how-to-manage-device-certificates.md) и передавать файлы из ОС узла на виртуальную машину Linux.
+* Узнайте, как [настроить устройства IOT Edge для взаимодействия через прокси-сервер](how-to-configure-proxy-support.md).

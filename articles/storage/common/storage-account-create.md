@@ -10,12 +10,12 @@ ms.date: 01/11/2021
 ms.author: tamram
 ms.subservice: common
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
-ms.openlocfilehash: b8f5932985f90ce042d7b0df0d01e7c685098670
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 73bef1648b08f5c1e0664ef1da15375bc44149cc
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104576600"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045354"
 ---
 # <a name="create-a-storage-account"></a>Создание учетной записи хранения
 
@@ -279,7 +279,7 @@ az storage account delete --name storageAccountName --resource-group resourceGro
 > [!WARNING]
 > Восстановить удаленную учетную запись хранения или ее содержимое невозможно. Создайте резервные копии нужных данных, прежде чем удалять учетную запись. Это касается также любых ресурсов в учетной записи. Восстановить удаленный BLOB-объект, таблицу, очередь или файл невозможно.
 >
-> Если вы попытаетесь удалить учетную запись хранения, связанную с виртуальной машиной Azure, может появиться сообщение об ошибке, уведомляющее, что учетная запись хранения используется. Сведения об устранении этой ошибки см. в разделе [Устранение ошибок при удалении учетных записей хранения](../../virtual-machines/troubleshooting/index.yml).
+> Если вы попытаетесь удалить учетную запись хранения, связанную с виртуальной машиной Azure, может появиться сообщение об ошибке, уведомляющее, что учетная запись хранения используется. Сведения об устранении этой ошибки см. в разделе [Устранение ошибок при удалении учетных записей хранения](/troubleshoot/azure/virtual-machines/welcome-virtual-machines).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

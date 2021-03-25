@@ -1,17 +1,17 @@
 ---
 title: Параметры сервера. база данных Azure для MySQL — гибкий сервер
 description: В этом разделе приводятся рекомендации по настройке параметров сервера в службе "база данных Azure для MySQL — гибкий сервер".
-author: ambhatna
-ms.author: ambhatna
+author: savjani
+ms.author: pariks
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 11/10/2020
-ms.openlocfilehash: 58978f120578afeca129b0d8928713835def8418
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: f83f743b692ae5a625a4c881b12cbad999f1f606
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94497008"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105106774"
 ---
 # <a name="server-parameters-in-azure-database-for-mysql---flexible-server"></a>Параметры сервера в базе данных Azure для MySQL — гибкий сервер
 

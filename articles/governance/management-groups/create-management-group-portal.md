@@ -4,10 +4,10 @@ description: В этом кратком руководстве показано,
 ms.date: 02/05/2021
 ms.topic: quickstart
 ms.openlocfilehash: 5a336fe4caf5d2f825a93b5c7b8f8d05f6255c39
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99592438"
 ---
 # <a name="quickstart-create-a-management-group"></a>Краткое руководство. Создание группы управления
@@ -61,4 +61,4 @@ ms.locfileid: "99592438"
 Чтобы узнать больше о группах управления и управлении иерархией ресурсов, см. следующее руководство:
 
 > [!div class="nextstepaction"]
-> Управление ресурсами с помощью групп управления
+> [Управление ресурсами с помощью групп управления](./manage.md)

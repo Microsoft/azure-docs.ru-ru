@@ -3,12 +3,12 @@ title: Обзор адаптации партнера (сетка событий
 description: В этой статье представлен обзор того, как можно подключить партнера по службе "Сетка событий".
 ms.topic: conceptual
 ms.date: 10/29/2020
-ms.openlocfilehash: 2a2e33395cabd368d5d5d870dd0461e4cbd37e0d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d16337eada829a817110abf7842f763972d0718f
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93081201"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109345"
 ---
 # <a name="partner-onboarding-overview-azure-event-grid"></a>Обзор адаптации партнера (сетка событий Azure)
 
@@ -152,7 +152,7 @@ ms.locfileid: "93081201"
   * [Swagger](https://github.com/ahamad-MS/azure-rest-api-specs/blob/master/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json)
   * [Шаблон ARM](/azure/templates/microsoft.eventgrid/allversions)
   * [Схема шаблона ARM](https://github.com/Azure/azure-resource-manager-schemas/blob/master/schemas/2020-04-01-preview/Microsoft.EventGrid.json)
-  * [REST API](/rest/api/eventgrid/version2020-04-01-preview/partnernamespaces);
+  * [REST API](/azure/templates/microsoft.eventgrid/2020-04-01-preview/partnernamespaces);
   * [Расширение CLI](/cli/azure/ext/eventgrid/)
 
 ### <a name="sdks"></a>Пакеты SDK

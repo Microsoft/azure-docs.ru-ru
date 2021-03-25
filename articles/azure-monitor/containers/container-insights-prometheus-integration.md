@@ -3,12 +3,12 @@ title: Настройка интеграции Prometheus контейнеров
 description: В этой статье описывается, как настроить агент контейнеров аналитики для сбора метрик из Prometheus в кластере Kubernetes.
 ms.topic: conceptual
 ms.date: 04/22/2020
-ms.openlocfilehash: 8affeb472b9452e4d234e99e5ea6bb4509770fac
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 149cdc8613d5034989c7660608a29309353cdabe
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101731737"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109647"
 ---
 # <a name="configure-scraping-of-prometheus-metrics-with-container-insights"></a>Настройка брака/отхода метрик Prometheus с помощью аналитики контейнеров
 
@@ -47,15 +47,15 @@ ms.locfileid: "101731737"
 |Область | Ключ | Тип данных | Значение | Описание |
 |------|-----|-----------|-------|-------------|
 | На уровне кластера | | | | Укажите один из следующих трех методов, чтобы отбракировать конечные точки для метрик. |
-| | `urls` | Строка | Массив с разделителями-запятыми | Конечная точка HTTP (указан IP-адрес или допустимый путь URL-адреса). Например, `urls=[$NODE_IP/metrics]`. ($NODE _IP — это конкретный параметр Container Insights. его можно использовать вместо IP-адреса узла. Необходимо использовать все прописные буквы.) |
-| | `kubernetes_services` | Строка | Массив с разделителями-запятыми | Массив Kubernetes служб для сбора метрик из KUBE-State-метрик. Например, `kubernetes_services = ["https://metrics-server.kube-system.svc.cluster.local/metrics",http://my-service-dns.my-namespace:9100/metrics]`.|
+| | `urls` | Строка | Массив с разделителями-запятыми | Конечная точка HTTP (указан IP-адрес или допустимый путь URL-адреса). Например: `urls=[$NODE_IP/metrics]`. ($NODE _IP — это конкретный параметр Container Insights. его можно использовать вместо IP-адреса узла. Необходимо использовать все прописные буквы.) |
+| | `kubernetes_services` | Строка | Массив с разделителями-запятыми | Массив Kubernetes служб для сбора метрик из KUBE-State-метрик. Здесь должны использоваться полные доменные имена. Например, `kubernetes_services = ["https://metrics-server.kube-system.svc.cluster.local/metrics",http://my-service-dns.my-namespace.svc.cluster.local:9100/metrics]`.|
 | | `monitor_kubernetes_pods` | Логическое | true или false | Если задано значение `true` в параметрах на уровне кластера, агент контейнера аналитики будет наделять модули Pod Kubernetes по всему кластеру на наличие следующих заметок Prometheus:<br> `prometheus.io/scrape:`<br> `prometheus.io/scheme:`<br> `prometheus.io/path:`<br> `prometheus.io/port:` |
 | | `prometheus.io/scrape` | Логическое | true или false | Включает брак/отход модуля Pod. Для параметра `monitor_kubernetes_pods` нужно задать значение `true`. |
 | | `prometheus.io/scheme` | Строка | HTTP или HTTPS | По умолчанию используется отработка отказа по протоколу HTTP. При необходимости задайте значение `https` . | 
 | | `prometheus.io/path` | Строка | Массив с разделителями-запятыми | Путь HTTP-ресурса, из которого извлекать метрики. Если путь метрик не равен `/metrics` , определите его с помощью этой заметки. |
 | | `prometheus.io/port` | Строка | 9102 | Укажите порт, из которого будет списано значение. Если параметр port не установлен, по умолчанию будет 9102. |
-| | `monitor_kubernetes_pods_namespaces` | Строка | Массив с разделителями-запятыми | Список разрешенных пространств имен для брака метрики из модулей Kubernetes.<br> Например: `monitor_kubernetes_pods_namespaces = ["default1", "default2", "default3"]` |
-| На уровне узла | `urls` | Строка | Массив с разделителями-запятыми | Конечная точка HTTP (указан IP-адрес или допустимый путь URL-адреса). Например, `urls=[$NODE_IP/metrics]`. ($NODE _IP — это конкретный параметр Container Insights. его можно использовать вместо IP-адреса узла. Необходимо использовать все прописные буквы.) |
+| | `monitor_kubernetes_pods_namespaces` | Строка | Массив с разделителями-запятыми | Список разрешенных пространств имен для брака метрики из модулей Kubernetes.<br> Например `monitor_kubernetes_pods_namespaces = ["default1", "default2", "default3"]`. |
+| На уровне узла | `urls` | Строка | Массив с разделителями-запятыми | Конечная точка HTTP (указан IP-адрес или допустимый путь URL-адреса). Например: `urls=[$NODE_IP/metrics]`. ($NODE _IP — это конкретный параметр Container Insights. его можно использовать вместо IP-адреса узла. Необходимо использовать все прописные буквы.) |
 | На уровне узла или на уровне кластера | `interval` | Строка | 60 | Интервал сбора по умолчанию равен одной минуте (60 секунд). Коллекцию можно изменить для *[prometheus_data_collection_settings. Node]* и (или) *[prometheus_data_collection_settings. Cluster]* на единицы времени, например s, m, h. |
 | На уровне узла или на уровне кластера | `fieldpass`<br> `fielddrop`| Строка | Массив с разделителями-запятыми | Можно указать метрики, которые должны быть собраны или не включены в конечную точку, задав `fieldpass` список разрешений () и запретить ( `fielddrop` ). Сначала необходимо задать список разрешений. |
 
@@ -147,7 +147,7 @@ ms.locfileid: "101731737"
            - prometheus.io/port:"8000" #If port is not 9102 use this annotation
            ```
     
-          Если вы хотите ограничить мониторинг определенными пространствами имен для модулей Pod с заметками, например, включайте только модули памяти, выделенные для рабочих нагрузок, установите для параметра значение `monitor_kubernetes_pod` `true` в ConfigMap и добавьте фильтр пространства имен, `monitor_kubernetes_pods_namespaces` указывающий пространства имен, из которых следует избавиться. Например: `monitor_kubernetes_pods_namespaces = ["default1", "default2", "default3"]`
+          Если вы хотите ограничить мониторинг определенными пространствами имен для модулей Pod с заметками, например, включайте только модули памяти, выделенные для рабочих нагрузок, установите для параметра значение `monitor_kubernetes_pod` `true` в ConfigMap и добавьте фильтр пространства имен, `monitor_kubernetes_pods_namespaces` указывающий пространства имен, из которых следует избавиться. Например `monitor_kubernetes_pods_namespaces = ["default1", "default2", "default3"]`.
 
 3. Выполните следующую команду kubectl: `kubectl apply -f <configmap_yaml_file.yaml>` .
     
@@ -162,7 +162,7 @@ ms.locfileid: "101731737"
 >[!NOTE]
 >Для Azure Red Hat OpenShift v3. x в пространстве имен *OpenShift-Azure-Logging* создается файл шаблона ConfigMap. Он не настроен на активное отслеживание метрик или сбор данных от агента.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем начать, подтвердите, что вы являетесь членом роли администратора кластера Azure Red Hat OpenShift, чтобы настроить контейнерные параметры агента и Prometheus. Чтобы убедиться, что вы являетесь членом группы *OSA-Customer-администраторы* , выполните следующую команду:
 
@@ -264,7 +264,7 @@ container-azm-ms-agentconfig   4         56m
            - prometheus.io/port:"8000" #If port is not 9102 use this annotation
            ```
     
-          Если вы хотите ограничить мониторинг определенными пространствами имен для модулей Pod с заметками, например, включайте только модули памяти, выделенные для рабочих нагрузок, установите для параметра значение `monitor_kubernetes_pod` `true` в ConfigMap и добавьте фильтр пространства имен, `monitor_kubernetes_pods_namespaces` указывающий пространства имен, из которых следует избавиться. Например: `monitor_kubernetes_pods_namespaces = ["default1", "default2", "default3"]`
+          Если вы хотите ограничить мониторинг определенными пространствами имен для модулей Pod с заметками, например, включайте только модули памяти, выделенные для рабочих нагрузок, установите для параметра значение `monitor_kubernetes_pod` `true` в ConfigMap и добавьте фильтр пространства имен, `monitor_kubernetes_pods_namespaces` указывающий пространства имен, из которых следует избавиться. Например `monitor_kubernetes_pods_namespaces = ["default1", "default2", "default3"]`.
 
 2. Сохраните изменения в редакторе.
 

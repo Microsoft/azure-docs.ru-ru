@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/30/2018
 ms.author: genli
-ms.openlocfilehash: 6ece3e639e0ef3516696e2a0bad7deeb833433a6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5e602f8bbdf6ad92acacac6688326a555a0420b6
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98219204"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105042872"
 ---
 # <a name="troubleshooting-connectivity-problems-between-azure-vms"></a>Устранение проблем с подключением между виртуальными машинами Azure
 
@@ -49,7 +49,7 @@ ms.locfileid: "98219204"
 
 ### <a name="step-1-check-whether-nic-is-misconfigured"></a>Шаг 1. Проверка настройки сетевого интерфейса
 
-Выполните действия, указанные в статье [Как сбросить сетевой интерфейс для виртуальной машины Azure под управлением Windows](../virtual-machines/troubleshooting/reset-network-interface.md). 
+Выполните действия, указанные в статье [Как сбросить сетевой интерфейс для виртуальной машины Azure под управлением Windows](/troubleshoot/azure/virtual-machines/reset-network-interface). 
 
 Если изменение конфигурации сетевого интерфейса не решило проблему, выполните указанные ниже действия.
 
@@ -62,8 +62,8 @@ ms.locfileid: "98219204"
 
 **Виртуальные машины с одним сетевым интерфейсом** 
 
-- [Повторное развертывание виртуальной машины Windows](../virtual-machines/troubleshooting/redeploy-to-new-node-windows.md)
-- [Повторное развертывание виртуальной машины Linux](../virtual-machines/troubleshooting/redeploy-to-new-node-linux.md)
+- [Повторное развертывание виртуальной машины Windows](/troubleshoot/azure/virtual-machines/redeploy-to-new-node-windows)
+- [Повторное развертывание виртуальной машины Linux](/troubleshoot/azure/virtual-machines/redeploy-to-new-node-linux)
 
 ### <a name="step-2-check-whether-network-traffic-is-blocked-by-nsg-or-udr"></a>Шаг 2. Проверка блокировки трафика группой безопасности сети или определяемым пользователем маршрутом
 
@@ -107,7 +107,7 @@ netstat -l
 
 ### <a name="step-8-try-to-connect-to-a-vm-network-share"></a>Шаг 8. Подключение к сетевой папке виртуальной машины
 
-Если вы не можете подключиться к сетевой папке виртуальной машины, проблема может быть вызвана недоступными сетевыми интерфейсами виртуальной машины. Сведения об удалении недоступных сетевых интерфейсов см. в [этом разделе](../virtual-machines/troubleshooting/reset-network-interface.md#delete-the-unavailable-nics).
+Если вы не можете подключиться к сетевой папке виртуальной машины, проблема может быть вызвана недоступными сетевыми интерфейсами виртуальной машины. Сведения об удалении недоступных сетевых интерфейсов см. в [этом разделе](/troubleshoot/azure/virtual-machines/reset-network-interface#delete-the-unavailable-nics).
 
 ### <a name="step-9-check-inter-vnet-connectivity"></a>Шаг 9. Проверка подключения Inter-Vnet
 

@@ -9,12 +9,12 @@ ms.subservice: custom-vision
 ms.topic: how-to
 ms.date: 09/08/2020
 ms.author: pafarley
-ms.openlocfilehash: 7d58a8239c728f70efe3584c2649e196dffd791f
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 1def60843df55a80e8b7d28d7eb61e262a560111
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102501096"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044163"
 ---
 # <a name="copy-and-move-your-custom-vision-projects"></a>Копирование и перемещение проектов Пользовательское визуальное распознавание
 
@@ -26,12 +26,12 @@ API-интерфейсы **[експортпрожект](https://southcentralus
 
 Если приложение или бизнес зависит от использования Пользовательское визуальное распознавание проекта, рекомендуется скопировать модель в другую учетную запись Пользовательское визуальное распознавание в другом регионе. Затем, если происходит региональный сбой, вы можете получить доступ к проекту в регионе, в котором он был скопирован.
 
-##  <a name="prerequisites"></a>Предварительные условия
+##  <a name="prerequisites"></a>Предварительные требования
 
 - Два Пользовательское визуальное распознавание ресурсов Azure. Если у вас их нет, перейдите к портал Azure и [Создайте новый ресурс пользовательское визуальное распознавание](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision?azure-portal=true).
 - Ключи обучения и URL-адреса конечных точек для ресурсов Пользовательское визуальное распознавание. Эти значения можно найти на вкладке **Обзор** ресурса на портал Azure.
 - Созданный проект Пользовательское визуальное распознавание. Инструкции о том, как это сделать, см. в разделе [Построение классификатора](./getting-started-build-a-classifier.md) .
-* [PowerShell версии 6.0](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows)или аналогичная программа командной строки.
+* [PowerShell версии 6.0](/powershell/scripting/install/installing-powershell-core-on-windows)или аналогичная программа командной строки.
 
 ## <a name="process-overview"></a>Общие сведения о процессе
 

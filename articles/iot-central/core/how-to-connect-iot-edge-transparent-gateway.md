@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: iot-central
 services: iot-central
 ms.custom: device-developer
-ms.openlocfilehash: bdfb5f65106f3f8843b4aa52b752f5e563ab03f0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4e88ad58c7baba1c66c30df3f4effdbf11371c18
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102620124"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045337"
 ---
 # <a name="how-to-connect-devices-through-an-iot-edge-transparent-gateway"></a>Подключение устройств с помощью IoT Edge прозрачного шлюза
 
@@ -23,7 +23,7 @@ IoT Edge поддерживает [шаблоны шлюзов *прозрачн
 
 В этой статье для размещения подчиненного устройства и шлюза используются виртуальные машины. В реальной ситуации подчиненное устройство и шлюз будут выполняться на физических устройствах в локальной сети.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Для работы с этим учебником требуется активная подписка Azure.
 
@@ -186,7 +186,7 @@ IoT Edge поддерживает [шаблоны шлюзов *прозрачн
 
 ## <a name="provision-a-downstream-device"></a>Подготавливает подчиненное устройство
 
-В настоящее время IoT Edge не может автоматически подготавливать подчиненное устройство к приложению IoT Central. Ниже описано, как подготавливать `thermostat1` устройство. Для выполнения этих действий требуется среда с установленным Python 3,5 (или более поздней версии) и подключением к Интернету. В [Azure Cloud Shell](https://shell.azure.com/) предварительно установлен Python 3,5:
+В настоящее время IoT Edge не может автоматически подготавливать подчиненное устройство к приложению IoT Central. Ниже описано, как подготавливать `thermostat1` устройство. Для выполнения этих действий требуется среда с установленным Python 3,6 (или более поздней версии) и подключением к Интернету. В [Azure Cloud Shell](https://shell.azure.com/) предварительно установлен Python 3,7:
 
 1. Выполните следующую команду, чтобы установить `azure.iot.device` модуль:
 

@@ -6,10 +6,10 @@ ms.date: 11/04/2020
 ms.custom: devx-track-python
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 42f07b76cefed38aad53caba9ba35c74238540fe
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031741"
 ---
 # <a name="quickstart-create-a-function-in-azure-with-python-using-visual-studio-code"></a>Краткое руководство. Создание функции Python в Azure с помощью Visual Studio Code
