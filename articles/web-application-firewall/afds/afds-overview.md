@@ -7,12 +7,12 @@ ms.service: web-application-firewall
 ms.topic: conceptual
 ms.date: 05/22/2020
 ms.author: victorh
-ms.openlocfilehash: 66ca039a449e355e47563b689f5f44cced164fea
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0e3073c491b251a1dbb505d4656de9c6a1e0ac7f
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101724155"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048499"
 ---
 # <a name="azure-web-application-firewall-on-azure-front-door"></a>Брандмауэр веб-приложения Azure в Azure Front Door
 
@@ -24,7 +24,7 @@ WAF предотвращает вредоносные атаки вблизи и
 
 ![Брандмауэр веб-приложения Azure](../media/overview/wafoverview.png)
 
-В Azure Front Door доступны [две новых ценовых категории SKU в предварительной версии](https://docs.microsoft.com/azure/frontdoor/standard-premium/overview): SKU Front Door "Стандартный" и "Премиум". В WAF изначально реализована интеграция с SKU Front Door Premium со всеми возможностями. Для SKU Front Door "Стандартный" поддерживаются только [настраиваемые правила](https://docs.microsoft.com/azure/web-application-firewall/afds/afds-overview#custom-authored-rules).
+В Azure Front Door доступны [две новых ценовых категории SKU в предварительной версии](../../frontdoor/standard-premium/overview.md): SKU Front Door "Стандартный" и "Премиум". В WAF изначально реализована интеграция с SKU Front Door Premium со всеми возможностями. Для SKU Front Door "Стандартный" поддерживаются только [настраиваемые правила](#custom-authored-rules).
 
 ## <a name="waf-policy-and-rules"></a>Политика и правила WAF
 

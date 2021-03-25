@@ -3,16 +3,16 @@ title: Создайте свою первую фабрику данных (REST)
 description: В этом руководстве вы создадите образец конвейера фабрики данных Azure с помощью REST API фабрики данных.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: tutorial
 ms.date: 11/01/2017
-ms.openlocfilehash: 9aa3e7f2b5f382e1212955479d8e35f91b458bf0
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: eb9ce65985521fb3f82032f04aec62538a157639
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100392023"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104785468"
 ---
 # <a name="tutorial-build-your-first-azure-data-factory-using-data-factory-rest-api"></a>Руководство. Создание первой фабрики данных Azure с помощью REST API фабрики данных
 > [!div class="op_single_selector"]
@@ -38,7 +38,7 @@ ms.locfileid: "100392023"
 > Конвейер может содержать сразу несколько действий. Два действия можно объединить в цепочку (выполнить одно действие вслед за другим), настроив выходной набор данных одного действия как входной набор данных другого действия. Дополнительные сведения см. в разделе [Несколько действий в конвейере](data-factory-scheduling-and-execution.md#multiple-activities-in-a-pipeline).
 
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 
@@ -116,7 +116,7 @@ ms.locfileid: "100392023"
 
 В следующей таблице приведены описания свойств JSON, используемых в этом фрагменте кода.
 
-| Свойство | Description |
+| Свойство | Описание |
 |:--- |:--- |
 | clusterSize |Размер кластера HDInsight. |
 | timeToLive |Указывает, сколько времени может простаивать кластер HDInsight, прежде чем он будет удален. |
@@ -162,7 +162,7 @@ ms.locfileid: "100392023"
 
 В следующей таблице приведены описания свойств JSON, используемых в этом фрагменте кода.
 
-| Свойство | Description |
+| Свойство | Описание |
 |:--- |:--- |
 | type |Для свойства типа задано значение AzureBlob, так как данные хранятся в хранилище BLOB-объектов Azure. |
 | linkedServiceName |Ссылается на созданную ранее службу StorageLinkedService. |
@@ -316,7 +316,7 @@ $accessToken = (ConvertFrom-Json $responseToken).access_token;
   3. Выполните следующие две команды, чтобы вызвать REST API для создания фабрики данных и вывода результатов операции.
 * Чтобы создать экземпляры фабрики данных, вы должны быть администратором или участником подписки Azure.
 * В будущем имя фабрики данных может быть зарегистрировано в качестве DNS-имени и, следовательно, стать отображаемым.
-* Если появится сообщение об ошибке **Подписка не зарегистрирована для использования пространства имен Microsoft.DataFactory**, выполните одно из следующих действий и повторите попытку публикации.
+* Если возникнет ошибка, сделайте следующее. **This subscription is not registered to use namespace Microsoft.DataFactory** (Подписка не зарегистрирована для использования пространства имен Microsoft.DataFactory), выполните одно из следующих действий и повторите попытку публикации:
 
   * Чтобы зарегистрировать поставщик фабрики данных Azure, выполните следующую команду в Azure PowerShell:
 

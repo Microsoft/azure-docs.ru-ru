@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: trbye
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: ffa8528da454fd29c937a2d49accdda617fe62dd
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: aa5e499df976c08fef8f0b81eff1e189eebb5503
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104869027"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026314"
 ---
 # <a name="improve-synthesis-with-speech-synthesis-markup-language-ssml"></a>Улучшение синтеза с помощью языка разметки речи (SSML)
 
@@ -117,7 +117,7 @@ ms.locfileid: "104869027"
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>.
 
 ```csharp
 speechConfig.SetProperty(
@@ -126,7 +126,7 @@ speechConfig.SetProperty(
 
 # <a name="c"></a>[C++](#tab/cpp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>.
 
 ```cpp
 speechConfig->SetProperty(
@@ -135,7 +135,7 @@ speechConfig->SetProperty(
 
 # <a name="java"></a>[Java](#tab/java)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>.
 
 ```java
 speechConfig.setProperty(
@@ -144,7 +144,7 @@ speechConfig.setProperty(
 
 # <a name="python"></a>[Python](#tab/python)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>.
 
 ```python
 speech_config.set_property_by_name(
@@ -162,7 +162,7 @@ speechConfig.setProperty(
 
 # <a name="objective-c"></a>[Objective-C](#tab/objectivec)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
 
 ```objectivec
 [speechConfig setPropertyTo:@"false" byName:@"SpeechServiceResponse_Synthesis_WordBoundaryEnabled"];
@@ -170,7 +170,7 @@ speechConfig.setProperty(
 
 # <a name="swift"></a>[Swift](#tab/swift)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
 
 ```swift
 speechConfig!.setPropertyTo(
@@ -576,7 +576,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 `lexicon`Элемент содержит по крайней мере один `lexeme` элемент. Каждый `lexeme` элемент содержит по крайней мере один `grapheme` элемент и один или несколько `grapheme` `alias` элементов, и `phoneme` . `grapheme`Элемент содержит текст, описывающий <a href="https://www.w3.org/TR/pronunciation-lexicon/#term-Orthography" target="_blank">орсографи </a>. `alias`Элементы используются для указания произношения акронима или сокращенного выражения. `phoneme`Элемент предоставляет текст, описывающий, как `lexeme` произносится.
 
-Важно отметить, что нельзя напрямую задавать произношение фразы с помощью пользовательского лексикона. Если необходимо задать произношение акронима или сокращенного выражения, сначала укажите `alias` , а затем свяжите `phoneme` с ним `alias` . Например:
+Важно отметить, что нельзя напрямую задавать произношение фразы с помощью пользовательского лексикона. Если необходимо задать произношение акронима или сокращенного выражения, сначала укажите `alias` , а затем свяжите `phoneme` с ним `alias` . Пример:
 
 ```xml
   <lexeme>
@@ -589,7 +589,7 @@ A good place to start is by trying out the slew of educational apps that are hel
   </lexeme>
 ```
 
-Вы также можете напрямую предоставить ожидаемое `alias` сокращение или сокращенный срок. Например:
+Вы также можете напрямую предоставить ожидаемое `alias` сокращение или сокращенный срок. Пример:
 ```xml
   <lexeme>
     <grapheme>Scotland MV</grapheme>
@@ -673,7 +673,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `pitch` | Указывает шаг по базовому плану для текста. Вы можете выразить тон следующим образом:<ul><li>Абсолютное значение, выраженное в виде числа, за которым следует "Гц" (герц). Например, `<prosody pitch="600Hz">some text</prosody>`.</li><li>Относительное значение, выраженное в виде числа, начинающегося с "+" или "-" и заканчивающееся на "Гц" или "St", которое указывает величину изменения высоты. Пример: `<prosody pitch="+80Hz">some text</prosody>` или `<prosody pitch="-2st">some text</prosody>`. "St" означает, что единица изменения — полтона, то есть половина тона (половина шага) на стандартной диатоник шкале.</li><li>Значение константы:<ul><li>x-низкий</li><li>low</li><li>средняя</li><li>high</li><li>x-высокий</li><li>default</li></ul></li></ul> | Необязательно |
-| `contour` |Профиль теперь поддерживает как нейронные, так и стандартные голоса. Контур представляет изменения по шагам. Эти изменения представлены в виде массива целевых объектов в определенные позиции времени в выходных данных речи. Каждый целевой объект определяется набором пар параметров. Например: <br/><br/>`<prosody contour="(0%,+20Hz) (10%,-2st) (40%,+10Hz)">`<br/><br/>Первое значение в каждом наборе параметров указывает расположение изменения высоты в процентах от длительности текста. Второе значение задает величину, которую нужно увеличить или уменьшить, используя относительное значение или значение перечисления для высоты (см `pitch` .). | Необязательно |
+| `contour` |Профиль теперь поддерживает как нейронные, так и стандартные голоса. Контур представляет изменения по шагам. Эти изменения представлены в виде массива целевых объектов в определенные позиции времени в выходных данных речи. Каждый целевой объект определяется набором пар параметров. Пример: <br/><br/>`<prosody contour="(0%,+20Hz) (10%,-2st) (40%,+10Hz)">`<br/><br/>Первое значение в каждом наборе параметров указывает расположение изменения высоты в процентах от длительности текста. Второе значение задает величину, которую нужно увеличить или уменьшить, используя относительное значение или значение перечисления для высоты (см `pitch` .). | Необязательно |
 | `range` | Значение, представляющее диапазон высоты для текста. `range`Для описания можно использовать те же абсолютные значения, относительные значения или значения перечисления `pitch` . | Необязательно |
 | `rate` | Указывает интенсивность речи текста. Вы можете выразить `rate` следующим образом:<ul><li>Относительное значение, выраженное в виде числа, которое выступает в качестве множителя по умолчанию. Например, значение *1* приводит к отсутствию изменений в скорости. Значение *0,5* приводит к половине скорости. Значение *3* приводит к утраиваетсяу скорости.</li><li>Значение константы:<ul><li>x-замедляют</li><li>медленный</li><li>средняя</li><li>быстрая</li><li>x-Fast</li><li>default</li></ul></li></ul> | Необязательно |
 | `duration` | Период времени, в течение которого служба синтеза речи (TTS) считывает текст в секундах или миллисекундах. Например, *2S* или *1800ms*. Длительность поддерживает только стандартные голоса.| Необязательно |
@@ -876,7 +876,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 Элемент Bookmark можно использовать для ссылки на определенное расположение в последовательности текста или тега.
 
 > [!NOTE]
-> `bookmark` Теперь элемент работает только для `en-US-AriaNeural` голоса в регионе "Западная часть США ( `westus` )".
+> `bookmark` Теперь элемент работает только для `en-US-AriaNeural` голоса в регионе "Западная часть США 2 ( `westus2` )".
 
 **Синтаксис**
 
@@ -916,7 +916,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesizer.bookmarkreached" target="_blank"> `BookmarkReached` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesizer.bookmarkreached" target="_blank"> `BookmarkReached` </a>.
 
 ```csharp
 synthesizer.BookmarkReached += (s, e) =>
@@ -935,7 +935,7 @@ Bookmark reached. Audio offset: 1462.5ms, bookmark text: flower_2.
 
 # <a name="c"></a>[C++](#tab/cpp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechsynthesizer#bookmarkreached" target="_blank"> `BookmarkReached` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechsynthesizer#bookmarkreached" target="_blank"> `BookmarkReached` </a>.
 
 ```cpp
 synthesizer->BookmarkReached += [](const SpeechSynthesisBookmarkEventArgs& e)
@@ -955,7 +955,7 @@ Bookmark reached. Audio offset: 1462.5ms, bookmark text: flower_2.
 
 # <a name="java"></a>[Java](#tab/java)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechsynthesizer.bookmarkReached#com_microsoft_cognitiveservices_speech_SpeechSynthesizer_BookmarkReached" target="_blank"> `BookmarkReached` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechsynthesizer.bookmarkReached#com_microsoft_cognitiveservices_speech_SpeechSynthesizer_BookmarkReached" target="_blank"> `BookmarkReached` </a>.
 
 ```java
 synthesizer.BookmarkReached.addEventListener((o, e) -> {
@@ -973,7 +973,7 @@ Bookmark reached. Audio offset: 1462.5ms, bookmark text: flower_2.
 
 # <a name="python"></a>[Python](#tab/python)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechsynthesizer#bookmark-reached" target="_blank"> `bookmark_reached` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechsynthesizer#bookmark-reached" target="_blank"> `bookmark_reached` </a>.
 
 ```python
 # The unit of evt.audio_offset is tick (1 tick = 100 nanoseconds), divide it by 10,000 to convert to milliseconds.
@@ -1005,7 +1005,7 @@ synthesizer.bookmarkReached = function (s, e) {
 
 # <a name="objective-c"></a>[Objective-C](#tab/objectivec)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechsynthesizer#addbookmarkreachedeventhandler" target="_blank"> `addBookmarkReachedEventHandler` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechsynthesizer#addbookmarkreachedeventhandler" target="_blank"> `addBookmarkReachedEventHandler` </a>.
 
 ```objectivec
 [synthesizer addBookmarkReachedEventHandler: ^ (SPXSpeechSynthesizer *synthesizer, SPXSpeechSynthesisBookmarkEventArgs *eventArgs) {
@@ -1026,6 +1026,6 @@ Bookmark reached. Audio offset: 1462.5ms, bookmark text: flower_2.
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Поддержка языков и регионов в API службы "Речь"](language-support.md)

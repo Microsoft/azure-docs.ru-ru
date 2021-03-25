@@ -4,12 +4,12 @@ ms.service: databox
 ms.topic: include
 ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: 5e2ab0b9d7f61539a16fc685134bef6c9047229d
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 0ad760caedffa97599548b8dd1b59a887b5690af
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "104987647"
+ms.locfileid: "105105144"
 ---
 В зависимости от операционной системы клиента процедуры удаленного подключения к устройству отличаются.
 
@@ -21,7 +21,7 @@ ms.locfileid: "104987647"
 Перед тем как начать, убедитесь в следующем.
 
 - Клиент Windows работает под управлением Windows PowerShell 5,0 или более поздней версии.
-- У клиента Windows есть цепочка подписывания (корневой сертификат), соответствующая сертификату узла, установленному на устройстве. Подробные инструкции см. [в статье Установка сертификата на клиенте Windows](../articles/databox-online/azure-stack-edge-j-series-manage-certificates.md#import-certificates-on-the-client-accessing-the-device).
+- У клиента Windows есть цепочка подписывания (корневой сертификат), соответствующая сертификату узла, установленному на устройстве. Подробные инструкции см. [в статье Установка сертификата на клиенте Windows](../articles/databox-online/azure-stack-edge-gpu-manage-certificates.md#import-certificates-on-the-client-accessing-the-device).
 - `hosts`Файл, расположенный в папке `C:\Windows\System32\drivers\etc` для клиента Windows, имеет запись, соответствующую сертификату узла в следующем формате:
 
     `<Device IP>    <Node serial number>.<DNS domain of the device>`

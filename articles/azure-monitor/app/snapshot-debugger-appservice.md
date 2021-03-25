@@ -6,12 +6,12 @@ author: cweining
 ms.author: cweining
 ms.date: 03/26/2019
 ms.reviewer: mbullwin
-ms.openlocfilehash: 5a637a6f355be32f82878a52a30c77d020190651
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 26538f48213d025c6fe71fb55abb17a025a23b45
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102211623"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025685"
 ---
 # <a name="enable-snapshot-debugger-for-net-apps-in-azure-app-service"></a>Включение Snapshot Debugger для приложений .NET в службе приложений Azure
 
@@ -56,13 +56,13 @@ Snapshot Debugger предварительно устанавливается в
 
 ## <a name="enable-snapshot-debugger-for-other-clouds"></a>Включение Snapshot Debugger для других облаков
 
-Сейчас единственными регионами, требующими внесения изменений в конечную точку, являются [Azure для государственных организаций](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#application-insights) и [Azure для Китая](https://docs.microsoft.com/azure/china/resources-developer-guide) через строку подключения Application Insights.
+Сейчас единственными регионами, требующими внесения изменений в конечную точку, являются [Azure для государственных организаций](../../azure-government/compare-azure-government-global-azure.md#application-insights) и [Azure для Китая](/azure/china/resources-developer-guide) через строку подключения Application Insights.
 
 |Свойство строки подключения    | Облако для государственных организаций США | Облако для Китая |   
 |---------------|---------------------|-------------|
 |снапшотендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
 
-Дополнительные сведения о других переопределениях соединений см. в [документации по Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string?tabs=net#connection-string-with-explicit-endpoint-overrides).
+Дополнительные сведения о других переопределениях соединений см. в [документации по Application Insights](./sdk-connection-string.md?tabs=net#connection-string-with-explicit-endpoint-overrides).
 
 ## <a name="disable-snapshot-debugger"></a>Отключить Snapshot Debugger
 
@@ -112,7 +112,7 @@ Snapshot Debugger предварительно устанавливается в
 },
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Создание трафика для приложения, которое может вызвать исключение. Затем подождите 10 – 15 минут, чтобы моментальные снимки отправлялись на экземпляр Application Insights.
 - См. раздел [моментальные снимки](snapshot-debugger.md?toc=/azure/azure-monitor/toc.json#view-snapshots-in-the-portal) в портал Azure.
@@ -120,4 +120,3 @@ Snapshot Debugger предварительно устанавливается в
 
 [Enablement UI]: ./media/snapshot-debugger/enablement-ui.png
 [snapshot-debugger-app-setting]:./media/snapshot-debugger/snapshot-debugger-app-setting.png
-

@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 7357703af41afc913ef63dff6ecae3d230c9eca0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4d771e77fcca05b090e5d47d70ae93ece8f79e3e
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104583298"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865709"
 ---
 # <a name="use-certificates-with-azure-cloud-services-extended-support"></a>Использование сертификатов с облачными службами Azure (Расширенная поддержка)
 
@@ -27,9 +27,8 @@ ms.locfileid: "104583298"
 
     :::image type="content" source="media/certs-and-key-vault-1.png" alt-text="На рисунке показано, как выбрать политики доступа в колонке хранилища ключей.":::
 
-3. Убедитесь, что политики доступа включают следующие свойства:
+3. Убедитесь, что политики доступа включают следующее свойство:
     - **Разрешение доступа к виртуальным машинам Azure для развертывания**
-    - **Разрешение доступа к Azure Resource Manager для развертывания шаблона** 
 
     :::image type="content" source="media/certs-and-key-vault-2.png" alt-text="Изображение отображает окно политики доступа в портал Azure.":::
  
@@ -50,6 +49,9 @@ ms.locfileid: "104583298"
     ```json
     <Certificate name="<your cert name>" thumbprint="<thumbprint in key vault" thumbprintAlgorithm="sha1" /> 
     ```
+6.  Для развертывания с помощью шаблона ARM certificateUrl можно найти, перейдя к сертификату в хранилище ключей, помеченному как идентификатор секрета.
+
+    :::image type="content" source="media/certs-and-key-vault-6.png" alt-text="На рисунке показано поле идентификатора секрета в хранилище ключей.":::
 
 ## <a name="next-steps"></a>Дальнейшие действия 
 - Ознакомьтесь с [предварительными требованиями для развертывания](deploy-prerequisite.md) облачных служб (Расширенная поддержка).
