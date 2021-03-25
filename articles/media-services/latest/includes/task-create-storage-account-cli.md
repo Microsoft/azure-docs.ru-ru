@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 08/17/2020
 ms.author: inhenkel
 ms.custom: CLI
-ms.openlocfilehash: a6349188a2c6b4da68009df93fbea5fa6eabacf1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: f0d0322f6f5f14b94a67285fe8688d72c941b3a4
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102244999"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104452"
 ---
 <!-- ### Create a storage account -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "102244999"
 
 В этом примере мы создадим учетную запись общего назначения версии 2 c LRS категории "Стандартный". Если вы хотите поэкспериментировать с учетными записями хранения, используйте `--sku Standard_LRS`. Тем не менее при выборе номера SKU для рабочей среды следует рассмотреть `--sku Standard_RAGRS`, который предоставляет географическую репликацию для обеспечения непрерывности бизнес-процессов. Дополнительные сведения см. в статье об [учетных записях хранения](/cli/azure/storage/account).
 
-Следующая команда создает учетную запись хранения, которая будет связана с учетной записью Служб мультимедиа. В приведенном ниже скрипте `storageaccountforams` можно заменить своим значением. `amsResourceGroup` должно совпадать со значением, которое вы присвоили группе ресурсов на предыдущем шаге. Длина имени учетной записи хранения должна быть меньше 24.
+Следующая команда создает учетную запись хранения, которая будет связана с учетной записью Служб мультимедиа. В приведенном ниже сценарии замените `storageaccountforams` уникальные контроллеров имя длиной менее 24 символов. `amsResourceGroup` должно совпадать со значением, которое вы присвоили группе ресурсов на предыдущем шаге.
 
 ```azurecli
 az storage account create --name storageaccountforams --kind StorageV2 --sku Standard_LRS -l westus2 -g amsResourceGroup

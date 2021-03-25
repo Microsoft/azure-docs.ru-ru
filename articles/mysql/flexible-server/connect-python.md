@@ -9,10 +9,10 @@ ms.devlang: python
 ms.topic: quickstart
 ms.date: 9/21/2020
 ms.openlocfilehash: ff14bb1daeef6fc54ee5d11632ad98a29db2a172
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90945249"
 ---
 # <a name="quickstart-use-python-to-connect-and-query-data-in-azure-database-for-mysql---flexible-server"></a>Краткое руководство. Подключение к Базе данных Azure для MySQL (Гибкий сервер) и запрашивание данных с помощью Python
@@ -233,7 +233,7 @@ else:
 
 ### <a name="delete-data"></a>Удаление данных
 
-Используйте указанный ниже код с инструкцией SQL**DELETE** для подключения и удаления данных. 
+Используйте указанный ниже код с инструкцией SQL **DELETE** для подключения и удаления данных. 
 
 Этот код позволяет импортировать библиотеку mysql.connector и применить функцию [connect()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysql-connector-connect.html) для подключения к гибкому серверу с помощью [аргументов](https://dev.mysql.com/doc/connector-python/en/connector-python-connectargs.html) в коллекции конфигураций. Код использует курсор при подключении, а метод [cursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html) выполняет SQL-запрос к базе данных MySQL. 
 
@@ -275,7 +275,7 @@ else:
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- [Зашифрованное подключение с использованием протокола TLS 1.2 к Базе данных Azure для MySQL (Гибкий сервер)](./how-to-connect-tls-ssl.md).
+- [Зашифрованное подключение с использованием протокола TLS 1.2 к Базе данных Azure для MySQL (Гибкий сервер)](./how-to-connect-tls-ssl.md).
 - Изучите дополнительные сведения о [сетевых подключениях к Гибкому серверу Базы данных Azure для MySQL](./concepts-networking.md).
 - [Создание правил брандмауэра для Гибкого сервера Базы данных Azure для MySQL и управление ими с помощью портала Azure](./how-to-manage-firewall-portal.md).
 - [Создание виртуальной сети для Гибкого сервера Базы данных Azure для MySQL и управление ею с помощью портала Azure](./how-to-manage-virtual-network-portal.md).

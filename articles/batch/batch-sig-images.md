@@ -4,12 +4,12 @@ description: Пользовательские пулы образов являю
 ms.topic: conceptual
 ms.date: 03/04/2021
 ms.custom: devx-track-python, devx-track-azurecli
-ms.openlocfilehash: 8623c47952540717ae50538fd7b0282c9c8629bb
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a9ff30f52ae19e3d6a7bc58ca81eabeb91d21146
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102124250"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024070"
 ---
 # <a name="use-the-shared-image-gallery-to-create-a-custom-image-pool"></a>Создание пользовательского пула образов с помощью коллекции общих образов
 
@@ -67,7 +67,7 @@ ms.locfileid: "102124250"
 Если для образа создается новая виртуальная машина, для управляемого образа в качестве базового можно использовать собственный образ из Azure Marketplace, поддерживаемый пакетной службой. В качестве базового образа можно использовать только собственные образы Azure Marketplace. Чтобы вывести полный список ссылок на образы из Azure Marketplace, поддерживаемые пакетной службой Azure, см. команду из раздела о [получении списка номеров SKU агента узла](/java/api/com.microsoft.azure.batch.protocol.accounts.listnodeagentskus).
 
 > [!NOTE]
-> В качестве базового образа нельзя использовать образы сторонних производителей, для которых предусматриваются дополнительные условия покупки и лицензия. Сведения об образах из Marketplace, см. в руководствах по виртуальным машинам [Linux](../virtual-machines/linux/cli-ps-findimage.md#deploy-an-image-with-marketplace-terms) или [Windows](../virtual-machines/windows/cli-ps-findimage.md#deploy-an-image-with-marketplace-terms).
+> В качестве базового образа нельзя использовать образы сторонних производителей, для которых предусматриваются дополнительные условия покупки и лицензия. Сведения об этих образах Marketplace см. в руководстве для виртуальных машин [Linux](../virtual-machines/linux/cli-ps-findimage.md#check-the-purchase-plan-information) или [Windows](../virtual-machines/windows/cli-ps-findimage.md#view-purchase-plan-properties).
 
 При создании виртуальных машин следуйте приведенным ниже рекомендациям.
 

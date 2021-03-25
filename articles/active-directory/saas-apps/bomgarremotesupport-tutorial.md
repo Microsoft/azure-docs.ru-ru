@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 11/12/2020
+ms.date: 03/03/2021
 ms.author: jeedes
-ms.openlocfilehash: f9e4af3330ecf5fbe161f7ba92ddf96eb04880a1
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 1996024d163a4bf7cfa741110038bb8db5b883e8
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98728046"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102632752"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-beyondtrust-remote-support"></a>Руководство по интеграции единого входа Azure Active Directory с BeyondTrust Remote Support
 
@@ -51,7 +51,7 @@ ms.locfileid: "98728046"
 1. В разделе **Добавление из коллекции** в поле поиска введите **BeyondTrust Remote Support**.
 1. Выберите **BeyondTrust Remote Support** на панели результатов, а затем добавьте приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
 
-## <a name="configure-and-test-azure-ad-single-sign-on-for-beyondtrust-remote-support"></a>Настройка и проверка единого входа Azure AD для BeyondTrust Remote Support
+## <a name="configure-and-test-azure-ad-sso-for-beyondtrust-remote-support"></a>Настройка и проверка единого входа Azure AD для BeyondTrust Remote Support
 
 Настройте и проверьте единый вход Azure AD в BeyondTrust Remote Support с помощью тестового пользователя **B. Simon**. Для обеспечения работы единого входа необходимо установить связь между пользователем Azure AD и соответствующим пользователем в BeyondTrust Remote Support.
 
@@ -76,14 +76,14 @@ ms.locfileid: "98728046"
 
 1. На странице **Базовая конфигурация SAML** введите значения следующих полей.
 
-    а. В текстовое поле **URL-адрес для входа** введите URL-адрес в следующем формате: `https://<HOSTNAME>.bomgar.com/saml`.
+    а. В поле **Идентификатор** введите URL-адрес в следующем формате: `https://<HOSTNAME>.bomgar.com`.
 
-    b. В поле **Идентификатор** введите URL-адрес в следующем формате: `https://<HOSTNAME>.bomgar.com`.
-
-    c. В текстовом поле **URL-адрес ответа** введите URL-адрес в формате `https://<HOSTNAME>.bomgar.com/saml/sso`.
+    b. В текстовом поле **URL-адрес ответа** введите URL-адрес в формате `https://<HOSTNAME>.bomgar.com/saml/sso`.
+    
+    c. В текстовое поле **URL-адрес для входа** введите URL-адрес в следующем формате: `https://<HOSTNAME>.bomgar.com/saml`.
 
     > [!NOTE]
-    > Эти значения приведены для примера. Укажите вместо них фактические значения URL-адреса для входа, идентификатора и URL-адреса ответа. Они объяснены далее в этом учебнике.
+    > Эти значения приведены для примера. Замените их на фактические значения идентификатора, URL-адреса ответа и URL-адреса входа. Они объяснены далее в этом учебнике.
 
 1. Для приложения BeyondTrust Remote Support проверочные утверждения SAML должны иметь определенный формат. Для этого необходимо добавить настраиваемые сопоставления атрибутов в вашу конфигурацию атрибутов маркера SAML. На следующем снимке экрана показан список атрибутов по умолчанию.
 
@@ -167,6 +167,10 @@ ms.locfileid: "98728046"
 
 ### <a name="create-beyondtrust-remote-support-test-user"></a>Создание тестового пользователя в BeyondTrust Remote Support
 
+В этом разделе показано, как создать в BeyondTrust пользователя с именем Britta Simon. Приложение BeyondTrust поддерживает JIT-подготовку. Эта функция включена по умолчанию. В этом разделе никакие действия с вашей стороны не требуются. Если пользователь еще не существует в BeyondTrust, он создается после проверки подлинности.
+
+Выполните процедуру ниже, которая является обязательной для настройки BeyondTrust.
+
 В этом разделе вы настроите параметры подготовки пользователей. Используемые здесь значения будут упомянуты в разделе **Утверждения и атрибуты пользователя** на портале Azure. Мы оставили значения по умолчанию, которые уже импортированы во время создания, однако при необходимости их можно настроить.
 
 ![Снимок экрана: раздел "Параметры подготовки пользователя", где можно настроить значения пользователя.](./media/bomgarremotesupport-tutorial/user-attribute.png)
@@ -174,7 +178,7 @@ ms.locfileid: "98728046"
 > [!NOTE]
 > Для этой реализации атрибуты "Группы" и "Электронная почта" не требуются. Если вы используете группы Azure AD и назначаете им групповые политики BeyondTrust Remote Support для предоставления разрешений, необходимо ссылаться на идентификатор объекта этой группы с помощью его свойств на портале Azure и поместить эту группу в раздел "Доступные группы". После завершения идентификатор объекта и группа AD будут доступны для назначения групповой политике, определяющей разрешения.
 
-![Снимок экрана: раздел "IT", где указаны тип членства, источник, тип и ИД объекта.](./media/bomgarremotesupport-tutorial/config-user2.png)
+![Снимок экрана: раздел "IT", где указаны тип членства, источник, тип и ИД объекта.](./media/bomgarremotesupport-tutorial/config-user-2.png)
 
 ![Снимок экрана: страница "Основные параметры" для групповой политики.](./media/bomgarremotesupport-tutorial/group-policy.png)
 

@@ -5,12 +5,12 @@ author: cgillum
 ms.topic: overview
 ms.date: 12/17/2019
 ms.author: azfuncdf
-ms.openlocfilehash: 8b1c4077c036cbb75738115437d29ffd14b160ff
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c898444659c2ce071163e9ab774a4534f8c51a9c
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723679"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102632056"
 ---
 # <a name="entity-functions"></a>Функции сущностей
 
@@ -18,7 +18,7 @@ ms.locfileid: "101723679"
 Сущности предоставляют средства для масштабирования приложений путем распределения задач между несколькими сущностями сравнительно небольших размеров.
 
 > [!NOTE]
-> Функции сущностей и связанные функции доступны только в Устойчивых функциях версии 2.0 и более поздних версиях. В настоящее время они поддерживаются в .NET и JavaScript.
+> Функции сущностей и связанные функции доступны только в расширении [Устойчивые функции 2.0](durable-functions-versions.md#migrate-from-1x-to-2x) и более поздних версий. В настоящее время они поддерживаются в .NET, JavaScript и Python.
 
 ## <a name="general-concepts"></a>Общие концепции
 
@@ -189,7 +189,6 @@ def entity_function(context: df.DurableEntityContext):
     elif operation == "get":
         context.set_result(current_value)
     context.set_state(current_value)
-
 
 
 main = df.Entity.create(entity_function)

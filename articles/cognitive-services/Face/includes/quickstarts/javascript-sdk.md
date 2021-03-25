@@ -9,12 +9,12 @@ ms.subservice: face-api
 ms.topic: include
 ms.date: 11/05/2020
 ms.author: v-jawe
-ms.openlocfilehash: b4a63f76cbcd9e98295f5edcf7ff2d06979e6556
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 590ad577f3648ea9214ec4dcb6b6cab59dd5a3f1
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102244607"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104691"
 ---
 ## <a name="quickstart-face-client-library-for-javascript"></a>Краткое руководство. Клиентская библиотека Распознавания лиц для JavaScript
 
@@ -79,7 +79,7 @@ const uuid = require("uuid/v4");
 > [!IMPORTANT]
 > Перейдите на портал Azure. Если ресурс "Распознавание лиц", созданный в соответствии с указаниями в разделе **Предварительные требования**, успешно развернут, нажмите кнопку **Перейти к ресурсу** в разделе **Дальнейшие действия**. Ключ и конечная точка располагаются на странице **ключа и конечной точки** ресурса в разделе **управления ресурсами**. 
 >
-> Не забудьте удалить ключ из кода, когда закончите, и никогда не публикуйте его в открытом доступе. Для рабочей среды рекомендуется использовать безопасный способ хранения и доступа к учетным данным. Дополнительные сведения см. в статье о [безопасности в Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-security).
+> Не забудьте удалить ключ из кода, когда закончите, и никогда не публикуйте его в открытом доступе. Для рабочей среды рекомендуется использовать безопасный способ хранения и доступа к учетным данным. Дополнительные сведения см. в статье о [безопасности в Cognitive Services](../../../cognitive-services-security.md).
 
 ```javascript
 key = "<paste-your-face-key-here>"
@@ -114,7 +114,7 @@ endpoint = "<paste-your-face-endpoint-here>"
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
 
-Создайте экземпляр клиента с конечной точкой и ключом. Создайте объект **[ApiKeyCredentials](https://docs.microsoft.com/javascript/api/@azure/ms-rest-js/apikeycredentials)** с помощью ключа и используйте его со своей конечной точкой, чтобы создать объект **[FaceClient](https://docs.microsoft.com/javascript/api/@azure/cognitiveservices-face/faceclient)** .
+Создайте экземпляр клиента с конечной точкой и ключом. Создайте объект **[ApiKeyCredentials](/javascript/api/@azure/ms-rest-js/apikeycredentials)** с помощью ключа и используйте его со своей конечной точкой, чтобы создать объект **[FaceClient](/javascript/api/@azure/cognitiveservices-face/faceclient)** .
 
 :::code language="js" source="~/cognitive-services-quickstart-code/javascript/Face/sdk_quickstart.js" id="credentials":::
 
@@ -216,7 +216,7 @@ node index.js
 Из этого краткого руководство вы узнали, как с помощью клиентской библиотеки Распознавания лиц для JavaScript выполнять базовые задачи по распознаванию лиц. Далее ознакомьтесь со справочной документацией, чтобы узнать больше о библиотеке.
 
 > [!div class="nextstepaction"]
-> [Справочник по API Распознавания лиц (JavaScript)](https://docs.microsoft.com/javascript/api/@azure/cognitiveservices-face/)
+> [Справочник по API Распознавания лиц (JavaScript)](/javascript/api/@azure/cognitiveservices-face/)
 
 * [Что представляет собой служба "Распознавание лиц"?](../../overview.md)
 * Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/javascript/Face/sdk_quickstart.js).

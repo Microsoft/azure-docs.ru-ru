@@ -9,14 +9,14 @@ author: deepakpalled
 ms.author: dpalled
 manager: cshankar
 ms.date: 10/02/2020
-ms.openlocfilehash: 0ce9575f078058c821ffffe1b9fe45eed5a4ad94
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 22411e5a80f555a3ead05d39466a7a175923d9bc
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101724183"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105191"
 ---
-* После выбора нужной платформы на шаге 4 [настройки параметров платформы](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#configure-platform-settings) настройте **URI перенаправления** и **маркеры доступа** на боковой панели справа от пользовательского интерфейса.
+* После выбора нужной платформы на шаге 4 [настройки параметров платформы](../articles/active-directory/develop/quickstart-register-app.md#configure-platform-settings) настройте **URI перенаправления** и **маркеры доступа** на боковой панели справа от пользовательского интерфейса.
 
     * **URI перенаправления** должны соответствовать адресу, указанному в запросе аутентификации.
 
@@ -41,4 +41,4 @@ ms.locfileid: "101724183"
 
     [![Выбор типа разрешения API, необходимого для приложения](media/time-series-insights-aad-registration/active-directory-app-permission-grant.png)](media/time-series-insights-aad-registration/active-directory-app-permission-grant.png#lightbox)
 
-* [Добавьте учетные данные](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-credentials) , если приложение будет вызывать интерфейсы API среды самостоятельно. Учетные данные позволяют приложению проходить самостоятельную проверку подлинности, не требуя взаимодействия с пользователем во время выполнения.
+* [Добавьте учетные данные](../articles/active-directory/develop/quickstart-register-app.md#add-credentials) , если приложение будет вызывать интерфейсы API среды самостоятельно. Учетные данные позволяют приложению проходить самостоятельную проверку подлинности, не требуя взаимодействия с пользователем во время выполнения.

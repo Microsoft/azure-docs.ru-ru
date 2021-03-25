@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 09/22/2020
 ms.openlocfilehash: fce098767fffd36376399bbd9396699e3d9fbfd3
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93392084"
 ---
 # <a name="deploy-azure-sql-edge-with-docker"></a>Развертывание SQL Azure для пограничных вычислений с помощью Docker
@@ -104,7 +104,7 @@ ms.locfileid: "93392084"
 
 1. Назначьте для пользователя SA надежный пароль.
 
-2. Используйте `docker exec` для запуска **sqlcmd** , чтобы изменить пароль с помощью Transact-SQL. В следующем примере замените старый пароль `<YourStrong!Passw0rd>` и новый пароль `<YourNewStrong!Passw0rd>`собственными паролями.
+2. Используйте `docker exec` для запуска **sqlcmd**, чтобы изменить пароль с помощью Transact-SQL. В следующем примере замените старый пароль `<YourStrong!Passw0rd>` и новый пароль `<YourNewStrong!Passw0rd>`собственными паролями.
 
    ```bash
    sudo docker exec -it azuresqledge /opt/mssql-tools/bin/sqlcmd \
@@ -134,7 +134,7 @@ ms.locfileid: "93392084"
    > [!TIP]
    > Вы можете опустить пароль в командной строке. В этом случае вы получите приглашение для его ввода.
 
-3. Если все сработает должным образом, вы перейдете к приглашению команды **sqlcmd** : `1>`.
+3. Если все сработает должным образом, вы перейдете к приглашению команды **sqlcmd**: `1>`.
 
 ## <a name="create-and-query-data"></a>Создание и запрос данных
 
@@ -204,7 +204,7 @@ ms.locfileid: "93392084"
 
 ### <a name="exit-the-sqlcmd-command-prompt"></a>Выход из приглашения команды sqlcmd
 
-1. Чтобы завершить сеанс **sqlcmd** , введите `QUIT`:
+1. Чтобы завершить сеанс **sqlcmd**, введите `QUIT`:
 
    ```sql
    QUIT

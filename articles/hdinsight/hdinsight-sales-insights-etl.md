@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: hdinsightactive, devx-track-azurecli
 ms.date: 04/15/2020
-ms.openlocfilehash: 7d026d93ebe6f6a0bd9afbd277294d58d7a2a69b
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 32c331b10fcc73b5449588595370f8f69ef9893c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98932046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104872053"
 ---
 # <a name="tutorial-create-an-end-to-end-data-pipeline-to-derive-sales-insights-in-azure-hdinsight"></a>Руководство по созданию сквозного конвейера данных для получения аналитических сведений о продажах в Azure HDInsight
 
@@ -18,7 +18,7 @@ ms.locfileid: "98932046"
 
 Этот конвейер данных объединяет данные из различных магазинов, удаляет ненужные данные, добавляет новые данные и загружает их все обратно в хранилище для визуализации бизнес-аналитики. Дополнительные сведения о конвейерах ETL см. в статье [Extract, transform, and load (ETL) at scale](./hadoop/apache-hadoop-etl-at-scale.md) (Извлечение, преобразование и загрузка (ETL) в масштабе).
 
-![Архитектура ETL](./media/hdinsight-sales-insights-etl/architecture.png)
+:::image type="content" source="./media/hdinsight-sales-insights-etl/architecture.png" alt-text="Архитектура ETL" border="false":::
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 

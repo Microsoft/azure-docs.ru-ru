@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 09/03/2020
 ms.author: cherylmc
 ms.openlocfilehash: fe2e1f970e64d80bfd8cb762cf74bb52d4fc9650
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89426179"
 ---
 # <a name="azure-powershell-samples-for-vpn-gateway"></a>Примеры Azure PowerShell для VPN-шлюза

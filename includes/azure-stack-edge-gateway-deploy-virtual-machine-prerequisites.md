@@ -4,14 +4,14 @@ ms.service: databox
 ms.topic: include
 ms.date: 01/15/2021
 ms.author: alkohli
-ms.openlocfilehash: 71d5a910e36762d096763c4f45a13cbdad47414d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e459ea1e9d8d7d51a62ba3ed1d2de8815a1b4222
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101730631"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105391"
 ---
-Перед развертыванием виртуальных машин на Azure Stack пограничном устройстве необходимо настроить клиент для подключения к устройству через Azure Resource Manager Azure PowerShell. Подробные инструкции см. в статье [Подключение к Azure Resource Manager на устройстве Azure Stackного периметра](../articles/databox-online/azure-stack-edge-j-series-connect-resource-manager.md).
+Перед развертыванием виртуальных машин на Azure Stack пограничном устройстве необходимо настроить клиент для подключения к устройству через Azure Resource Manager Azure PowerShell. Подробные инструкции см. в статье [Подключение к Azure Resource Manager на устройстве Azure Stackного периметра](../articles/databox-online/azure-stack-edge-gpu-connect-resource-manager.md).
 
 Чтобы получить доступ к устройству из клиента, необходимо выполнить следующие действия. Вы уже выполнили эту настройку при подключении к Azure Resource Manager, и теперь уверены, что конфигурация прошла успешно. 
 
@@ -29,7 +29,7 @@ ms.locfileid: "101730631"
 
 1. Если вы настроили вычисление для Kubernetes, этот шаг можно пропустить. В противном случае убедитесь, что вы включили сетевой интерфейс для вычислений, выполнив следующие действия. 
 
-   а. В локальном пользовательском интерфейсе выберите параметры **вычислений** .  
+   a. В локальном пользовательском интерфейсе выберите параметры **вычислений** .  
    b. Выберите сетевой интерфейс, который вы хотите использовать для создания виртуального коммутатора. Создаваемые виртуальные машины будут подключены к виртуальному коммутатору, подключенному к этому порту и связанной сети. Не забудьте выбрать сеть, соответствующую IP-адресу, который будет использоваться для виртуальной машины.  
 
     ![Снимок экрана: область параметров сети "вычисление конфигурации".](../articles/databox-online/media/azure-stack-edge-gpu-deploy-virtual-machine-templates/enable-compute-setting.png)
@@ -38,5 +38,3 @@ ms.locfileid: "101730631"
 
     > [!NOTE]
     > Если вы создаете виртуальные машины GPU, выберите сетевой интерфейс, подключенный к Интернету. Это позволит установить расширение GPU на устройстве.
-
-
