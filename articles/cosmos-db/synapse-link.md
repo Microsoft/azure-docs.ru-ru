@@ -7,12 +7,13 @@ ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 11/30/2020
 ms.reviewer: sngun
-ms.openlocfilehash: 1b8c0c5bf533765e589e022233af14855b26d29c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.custom: synapse-cosmos-db
+ms.openlocfilehash: c22a4030bb44c1499995071849ca8942ae2110c3
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101656947"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864352"
 ---
 # <a name="what-is-azure-synapse-link-for-azure-cosmos-db"></a>Что такое Azure Synapse Link для Azure Cosmos DB?
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]

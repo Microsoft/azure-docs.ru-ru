@@ -13,10 +13,10 @@ ms.reviewer: sahandle
 ms.custom: contperf-fy21q1
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6e274d35fde6a3d55c05bcb5a9f22e75a37aa3c6
-ms.sourcegitcommit: 19ffdad48bc4caca8f93c3b067d1cf29234fef47
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97955405"
 ---
 # <a name="what-is-identity-protection"></a>Общие сведения о защите идентификации

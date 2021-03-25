@@ -1,26 +1,24 @@
 ---
-title: Получение списка больших двоичных объектов с помощью .NET — служба хранилища Azure
-description: Узнайте, как получить список больших двоичных объектов в контейнере в учетной записи хранения Azure с помощью клиентской библиотеки .NET. В примерах кода показано, как получить неструктурированный список больших двоичных объектов или как создать структурированный список больших двоичных объектов, как если бы они были упорядочены по каталогам или папкам.
+title: Вывод списка больших двоичных объектов с помощью API службы хранилища Azure
+description: Узнайте, как получить список больших двоичных объектов в учетной записи хранения с помощью клиентских библиотек службы хранилища Azure. В примерах кода показано, как получить неструктурированный список больших двоичных объектов или как создать структурированный список больших двоичных объектов, как если бы они были упорядочены по каталогам или папкам.
 services: storage
 author: tamram
 ms.service: storage
 ms.topic: how-to
-ms.date: 11/16/2020
+ms.date: 03/24/2021
 ms.author: tamram
 ms.subservice: blobs
 ms.custom: devx-track-csharp
-ms.openlocfilehash: ddd19c90c8c47016497e2c3b00e04595a94e7715
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ff20b8bd0aab94cadadddbb7a4b7b32b1db1ee85
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "95543074"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105046948"
 ---
-# <a name="list-blobs-with-net"></a>Получение списка больших двоичных объектов с помощью .NET
+# <a name="list-blobs-with-azure-storage-client-libraries"></a>Вывод списка больших двоичных объектов с помощью клиентских библиотек службы хранилища Azure
 
 При перечислении больших двоичных объектов из кода можно указать ряд параметров для управления способом возврата результатов из службы хранилища Azure. Можно указать число возвращаемых результатов в каждом наборе результатов, а затем извлечь последующие наборы. Можно указать префикс для возврата больших двоичных объектов, имена которых начинаются с указанного символа или строки. Кроме того, можно создать неструктурированный или структурированный список больших двоичных объектов. В структурированном списке большие двоичные объекты представлены так, будто они организованы по папкам.
-
-В этой статье показано, как получить список больших двоичных объектов с помощью [клиентской библиотеки службы хранилища Azure для .NET](/dotnet/api/overview/azure/storage).  
 
 ## <a name="understand-blob-listing-options"></a>Общие сведения о параметрах получения списка больших двоичных объектов
 
@@ -45,7 +43,9 @@ ms.locfileid: "95543074"
 - [CloudBlobContainer.ListBlobsSegmented](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.listblobssegmented)
 - [CloudBlobContainer.ListBlobsSegmentedAsync](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.listblobssegmentedasync)
 
-Перегрузки для этих методов предоставляют дополнительные параметры для управления возвратом больших двоичных объектов операцией перечисления. Описание этих параметров приводится в следующих разделах.
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+- [ContainerClient.list_blobs](/azure/developer/python/sdk/storage/azure-storage-blob/azure.storage.blob.containerclient#list-blobs-name-starts-with-none--include-none----kwargs-)
 
 ---
 
@@ -61,13 +61,25 @@ ms.locfileid: "95543074"
 
 Метаданные большого двоичного объекта можно вернуть с результатами.
 
-- Если вы используете пакет SDK для .NET версии 12, укажите значение **метаданных** для перечисления [блобтраитс](/dotnet/api/azure.storage.blobs.models.blobtraits) .
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
-- Если вы используете пакет SDK для .NET версии 11, укажите значение **метаданных** для перечисления [блоблистингдетаилс](/dotnet/api/microsoft.azure.storage.blob.bloblistingdetails) . Служба хранилища Azure включает метаданные для каждого возвращенного большого двоичного объекта, поэтому вам не нужно вызывать один из методов **FetchAttributes** в этом контексте, чтобы получить метаданные большого двоичного объекта.
+Укажите значение **метаданных** для перечисления [блобтраитс](/dotnet/api/azure.storage.blobs.models.blobtraits) .
+
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
+
+Укажите значение **метаданных** для перечисления [блоблистингдетаилс](/dotnet/api/microsoft.azure.storage.blob.bloblistingdetails) . Служба хранилища Azure включает метаданные для каждого возвращенного большого двоичного объекта, поэтому вам не нужно вызывать один из методов **FetchAttributes** в этом контексте, чтобы получить метаданные большого двоичного объекта.
+
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Укажите `metadata` для `include=` параметра при вызове [list_blobs](/azure/developer/python/sdk/storage/azure-storage-blob/azure.storage.blob.containerclient#list-blobs-name-starts-with-none--include-none----kwargs-).
+
+---
 
 ### <a name="list-blob-versions-or-snapshots"></a>Вывод списка версий BLOB-объектов или моментальных снимков
 
-Чтобы получить список версий BLOB-объектов или моментальных снимков с клиентской библиотекой .NET 12, укажите параметр [блобстатес](/dotnet/api/azure.storage.blobs.models.blobstates) в поле **версия** или **моментальный снимок** . Версии и моментальные снимки перечислены от старых к новым. Дополнительные сведения о листинге версий см. в разделе [список версий BLOB-объектов](versioning-enable.md#list-blob-versions).
+- Чтобы получить список версий BLOB-объектов или моментальных снимков с клиентской библиотекой .NET 12, укажите параметр [блобстатес](/dotnet/api/azure.storage.blobs.models.blobstates) в поле **версия** или **моментальный снимок** . Версии и моментальные снимки перечислены от старых к новым. Дополнительные сведения о листинге версий см. в разделе [список версий BLOB-объектов](versioning-enable.md#list-blob-versions).
+
+- Чтобы вывести число моментальных снимков с клиентской библиотекой Python версии 12, укажите `num_snapshots` в `include=` параметре при вызове [list_blobs](/azure/developer/python/sdk/storage/azure-storage-blob/azure.storage.blob.containerclient#list-blobs-name-starts-with-none--include-none----kwargs-).
 
 ### <a name="flat-listing-versus-hierarchical-listing"></a>Неструктурированный список и структурированный список
 
@@ -135,11 +147,15 @@ private static async Task ListBlobsFlatListingAsync(CloudBlobContainer container
 }
 ```
 
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+:::code language="python" source="~/azure-storage-snippets/blobs/howto/python/python-v12/list_blobs.py" id="Snippet_ListBlobs":::
+
 ---
 
 Выходные данные аналогичны следующим:
 
-```
+```console
 Blob name: FolderA/blob1.txt
 Blob name: FolderA/blob2.txt
 Blob name: FolderA/blob3.txt
@@ -153,7 +169,7 @@ Blob name: FolderA/FolderB/FolderC/blob3.txt
 
 ## <a name="use-a-hierarchical-listing"></a>Использование иерархического списка
 
-При вызове операции иерархического перечисления служба хранилища Azure возвращает виртуальные каталоги и большие двоичные объекты на первом уровне иерархии. Для каждого виртуального каталога задается свойство [Prefix](/dotnet/api/microsoft.azure.storage.blob.cloudblobdirectory.prefix), чтобы можно было передать префикс в рекурсивном вызове для получения следующего каталога.
+При вызове операции иерархического перечисления служба хранилища Azure возвращает виртуальные каталоги и большие двоичные объекты на первом уровне иерархии.
 
 # <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
@@ -164,6 +180,8 @@ Blob name: FolderA/FolderB/FolderC/blob3.txt
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/CRUD.cs" id="Snippet_ListBlobsHierarchicalListing":::
 
 # <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
+
+Для каждого виртуального каталога задается свойство [Prefix](/dotnet/api/microsoft.azure.storage.blob.cloudblobdirectory.prefix), чтобы можно было передать префикс в рекурсивном вызове для получения следующего каталога.
 
 Чтобы получить иерархический список больших двоичных объектов, задайте для параметра `useFlatBlobListing` метода перечисления значение **false**.
 
@@ -222,11 +240,19 @@ private static async Task ListBlobsHierarchicalListingAsync(CloudBlobContainer c
 }
 ```
 
+# <a name="python-v12"></a>[Python v12](#tab/python)
+
+Для иерархического перечисления больших двоичных объектов вызовите метод [walk_blobs](/azure/developer/python/sdk/storage/azure-storage-blob/azure.storage.blob.containerclient#walk-blobs-name-starts-with-none--include-none--delimiter--------kwargs-) .
+
+В следующем примере перечисляются большие двоичные объекты в указанном контейнере с помощью иерархического перечисления с указанным необязательным размером сегмента и записывает имя большого двоичного объекта в окно консоли.
+
+:::code language="python" source="~/azure-storage-snippets/blobs/howto/python/python-v12/list_blobs.py" id="Snippet_WalkHierarchy":::
+
 ---
 
 Выходные данные аналогичны следующим:
 
-```
+```console
 Virtual directory prefix: FolderA/
 Blob name: FolderA/blob1.txt
 Blob name: FolderA/blob2.txt

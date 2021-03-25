@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 07/22/2019
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 31b5f870465bc1dff9d6ff7827a4efed084bcf62
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92739056"
 ---
 # <a name="tutorial-create-container-images-on-a-linux-service-fabric-cluster"></a>Руководство. Создание образов контейнеров в кластере Service Fabric в Linux
@@ -51,7 +51,7 @@ cd service-fabric-containers/Linux/container-tutorial/
 
 ## <a name="create-container-images"></a>Создание образов контейнеров
 
-Выполните указанную ниже команду в каталоге **azure-vote** , чтобы создать образ для веб-компонента интерфейсной части. Эта команда использует файл Dockerfile, расположенный в этом каталоге, для создания образа.
+Выполните указанную ниже команду в каталоге **azure-vote**, чтобы создать образ для веб-компонента интерфейсной части. Эта команда использует файл Dockerfile, расположенный в этом каталоге, для создания образа.
 
 ```bash
 docker build -t azure-vote-front .
@@ -76,13 +76,13 @@ tiangolo/uwsgi-nginx-flask   python3.6           590e17342131        5 days ago 
 
 ## <a name="deploy-azure-container-registry"></a>Развертывание реестра контейнеров Azure
 
-Сначала выполните команду **az login** , чтобы войти в учетную запись Azure.
+Сначала выполните команду **az login**, чтобы войти в учетную запись Azure.
 
 ```azurecli
 az login
 ```
 
-Затем введите команду **az account** , чтобы выбрать подписку для создания реестра контейнеров Azure. Вместо <subscription_id> нужно указать идентификатор подписки Azure.
+Затем введите команду **az account**, чтобы выбрать подписку для создания реестра контейнеров Azure. Вместо <subscription_id> нужно указать идентификатор подписки Azure.
 
 ```azurecli
 az account set --subscription <subscription_id>
@@ -90,13 +90,13 @@ az account set --subscription <subscription_id>
 
 При развертывании реестра контейнеров Azure сначала необходимо создать группу ресурсов. Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими.
 
-Создайте группу ресурсов с помощью команды **az group create** . В этом примере создается группа ресурсов *myResourceGroup* в регионе *westus* .
+Создайте группу ресурсов с помощью команды **az group create**. В этом примере создается группа ресурсов *myResourceGroup* в регионе *westus*.
 
 ```azurecli
 az group create --name <myResourceGroup> --location westus
 ```
 
-Создайте реестр контейнеров Azure с помощью команды **az acr create** . Замените \<acrName> именем реестра контейнеров, который нужно создать в подписке. Это имя может включать только буквы и цифры и должно быть уникальным.
+Создайте реестр контейнеров Azure с помощью команды **az acr create**. Замените \<acrName> именем реестра контейнеров, который нужно создать в подписке. Это имя может включать только буквы и цифры и должно быть уникальным.
 
 ```azurecli
 az acr create --resource-group <myResourceGroup> --name <acrName> --sku Basic --admin-enabled true
@@ -106,7 +106,7 @@ az acr create --resource-group <myResourceGroup> --name <acrName> --sku Basic --
 
 ## <a name="sign-in-to-your-container-registry"></a>Вход в реестр контейнеров
 
-Войдите в свой экземпляр реестра контейнеров Azure, прежде чем отправлять в него образы. Используйте команду **az acr login** , чтобы выполнить операцию. Укажите уникальное имя реестра контейнеров, заданное при его создании.
+Войдите в свой экземпляр реестра контейнеров Azure, прежде чем отправлять в него образы. Используйте команду **az acr login**, чтобы выполнить операцию. Укажите уникальное имя реестра контейнеров, заданное при его создании.
 
 ```azurecli
 az acr login --name <acrName>
@@ -138,7 +138,7 @@ tiangolo/uwsgi-nginx-flask   python3.6           590e17342131        5 days ago 
 az acr show --name <acrName> --query loginServer --output table
 ```
 
-Эта команда выводит таблицу с приведенными ниже результатами. Этот результат будет использоваться для добавления тега к образу **azure-vote-front** , прежде чем он будет отправлен в реестр контейнеров на следующем шаге.
+Эта команда выводит таблицу с приведенными ниже результатами. Этот результат будет использоваться для добавления тега к образу **azure-vote-front**, прежде чем он будет отправлен в реестр контейнеров на следующем шаге.
 
 ```output
 Result

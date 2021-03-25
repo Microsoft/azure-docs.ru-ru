@@ -4,12 +4,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 03/27/2020
 ms.author: trbye
-ms.openlocfilehash: 4a4705647b90d29f47e37b88531f3432c6a2f448
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b68fb8cf5458081f96febbac75fd393a80345f60
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102434556"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043245"
 ---
 При разработке для macOS доступно три пакета SDK для распознавания речи.
 
@@ -51,7 +51,7 @@ end
 
 :::row:::
     :::column span="3":::
-        Xamarin. Mac предоставляет полный пакет SDK для macOS для разработчиков .NET, позволяющий создавать собственные приложения Mac на C#. Дополнительные сведения см. в разделе <a href="https://docs.microsoft.com/xamarin/mac/" target="_blank">Xamarin. Mac </a>.
+        Xamarin. Mac предоставляет полный пакет SDK для macOS для разработчиков .NET, позволяющий создавать собственные приложения Mac на C#. Дополнительные сведения см. в разделе <a href="/xamarin/mac/" target="_blank">Xamarin. Mac </a>.
     :::column-end:::
     :::column:::
         <br>

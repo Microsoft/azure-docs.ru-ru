@@ -5,10 +5,10 @@ ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 06/26/2020
 ms.openlocfilehash: 2b825b4d4485f401199556b6faaef0017f583cc1
-ms.sourcegitcommit: a0c4499034c405ebc576e5e9ebd65084176e51e4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91461195"
 ---
 # <a name="quickstart-set-up-a-lab-by-using-azure-devtest-labs-arm-template"></a>Краткое руководство. Настройка лаборатории с помощью Azure DevTest Labs и шаблона ARM
@@ -65,16 +65,16 @@ ms.locfileid: "91461195"
 ## <a name="validate-the-deployment"></a>Проверка развертывания
 1. Выберите элемент **Уведомления** в верхней части экрана, чтобы просмотреть состояние развертывания, и щелкните ссылку **Развертывание выполняется**.
 
-    :::image type="content" source="./media/create-lab-windows-vm-template/deployment-notification.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/deployment-notification.png" alt-text="Развертывание уведомления":::
 2. На странице **Развертывание — обзор** дождитесь завершения развертывания. Выполнение этой операции (особенно при создании виртуальной машины) может потребовать времени. Затем выберите действие **Перейти к группе ресурсов** или щелкните **имя группы ресурсов**, как показано на следующем рисунке: 
 
-    :::image type="content" source="./media/create-lab-windows-vm-template/navigate-resource-group.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/navigate-resource-group.png" alt-text="Переход к группе ресурсов":::
 3. На странице **Группа ресурсов** отобразится список ресурсов в этой группе ресурсов. Убедитесь, что в числе ресурсов отображается лаборатория с типом `DevTest Lab`. Кроме того, вы увидите в группе ресурсов зависимые ресурсы, например виртуальную сеть и виртуальную машину. 
 
-    :::image type="content" source="./media/create-lab-windows-vm-template/resource-group-home-page.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/resource-group-home-page.png" alt-text="Домашняя страница группы ресурсов":::
 4. Выберите нужную лабораторию из списка ресурсов, чтобы открыть домашнюю страницу этой лаборатории. Убедитесь, что в списке **Мои виртуальные машины** отображается виртуальная машина Windows Server 2019 Datacenter. На приведенном ниже изображении раздел **Основное** свернут. 
 
-    :::image type="content" source="./media/create-lab-windows-vm-template/lab-home-page.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/lab-home-page.png" alt-text="Домашняя страница лаборатории":::
 
     > [!IMPORTANT] 
     > Не закрывайте эту страницу и выполните инструкции, приведенные в следующем разделе, чтобы удалить ненужные ресурсы и избежать затрат на работу лаборатории, а также виртуальной машины в Azure. Если вы хотите пройти следующее руководство, в рамках которого вы проверите доступ к виртуальной машине в лаборатории, очистку ресурсов лучше выполнить после этого. 
@@ -83,14 +83,14 @@ ms.locfileid: "91461195"
 
 1. Прежде всего удалите лабораторию, чтобы вы могли удалить группу ресурсов. Вы не сможете удалить группу ресурсов, если в ней содержится лаборатория. Чтобы удалить лабораторию, нажмите кнопку **Удалить** на панели инструментов. 
 
-    :::image type="content" source="./media/create-lab-windows-vm-template/delete-lab-button.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/delete-lab-button.png" alt-text="Кнопка удаления лаборатории":::
  2. На странице с запросом подтверждения введите **имя лаборатории** и нажмите кнопку **Удалить**. 
  3. Дождитесь удаления лаборатории. Выберите значок **звонка**, чтобы просмотреть уведомления по операции удаления. Этот процесс занимает некоторое время. Подтвердите удаление лаборатории, а затем выберите **группу ресурсов** в меню навигации. 
  
-    :::image type="content" source="./media/create-lab-windows-vm-template/confirm-lab-deletion.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/confirm-lab-deletion.png" alt-text="Подтверждение удаления виртуальной машины в уведомлениях":::
  1. На странице **Группа ресурсов** выберите элемент **Удалить группу ресурсов** на панели инструментов. На странице с запросом подтверждения введите **имя группы ресурсов** и нажмите кнопку **Удалить**. Проверьте уведомления и убедитесь, что группа ресурсов успешно удалена.
  
-    :::image type="content" source="./media/create-lab-windows-vm-template/delete-resource-group-button.png" alt-text="Страница развертывания шаблона":::
+    :::image type="content" source="./media/create-lab-windows-vm-template/delete-resource-group-button.png" alt-text="Кнопка удаления группы ресурсов":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Из этого краткого руководства вы узнали, как создать лабораторию с виртуальной машиной. Сведения о доступе к лаборатории см. в следующем руководстве:

@@ -3,12 +3,12 @@ title: Сценарии и проектирование приложений
 description: Общие сведения о категориях облачных приложений в Service Fabric. Рассматривается разработка приложений, использующих службы с отслеживанием состояния и без него.
 ms.topic: conceptual
 ms.date: 01/08/2020
-ms.openlocfilehash: 6c3cc931a85b91fc02b8086ca5c2481153691e54
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7d9459e6e0168657cf8e9062331fec0237f58c70
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96575675"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045762"
 ---
 # <a name="service-fabric-application-scenarios"></a>Сценарии приложений Service Fabric
 
@@ -68,7 +68,7 @@ Azure Service Fabric предлагает надежную и гибкую пл�
 
 * Приступите к созданию служб с отслеживанием состояния и без отслеживания состояния с помощью моделей программирования Service Fabric [Reliable Services](service-fabric-reliable-services-quick-start.md) и [Reliable Actors](service-fabric-reliable-actors-get-started.md) .
 * Посетите Центр архитектуры Azure, чтобы получить рекомендации по [созданию микрослужб в Azure](/azure/architecture/microservices/).
-* Рекомендации по проектированию приложений см. в статье [Azure Service Fabric приложения и кластеров](service-fabric-best-practices-overview.md) .
+* Рекомендации по проектированию приложений см. в статье [Azure Service Fabric приложения и кластеров](./service-fabric-best-practices-security.md) .
 
 * См. также
   * [Общие сведения о микрослужбах](service-fabric-overview-microservices.md)

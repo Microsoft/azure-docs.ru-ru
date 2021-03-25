@@ -9,10 +9,10 @@ ms.topic: sample
 ms.date: 11/19/2019
 ms.author: victorh
 ms.openlocfilehash: 4158bc07373a2d0aa6fb6ceaf2dce62b50bb6bd7
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94658372"
 ---
 # <a name="create-an-azure-firewall-test-environment"></a>Создание тестовой среды брандмауэра Azure
@@ -72,7 +72,7 @@ Remove-AzResourceGroup -Name AzfwSampleScriptEastUS -Force
 | [New-AzVMConfig](/powershell/module/az.compute/new-azvmconfig) | Создает конфигурацию виртуальной машины. Эта конфигурация включает в себя такие сведения, как имя виртуальной машины, операционную систему и учетные данные администратора. Данная конфигурации используется при создании виртуальной машины. |
 | [New-AzVM](/powershell/module/az.compute/new-azvm) | Создайте виртуальную машину. |
 |[Remove-AzResourceGroup](/powershell/module/az.resources/remove-azresourcegroup) | Удаляет группу ресурсов и все ресурсы, содержащиеся в ней. |
-|[New-AzFirewall](/powershell/module/az.network/new-azfirewall)| Создает экземпляр службы "Брандмауэр Azure".|
+|[New-AzFirewall.](/powershell/module/az.network/new-azfirewall)| Создает экземпляр службы "Брандмауэр Azure".|
 |[Get-AzFirewall](/powershell/module/az.network/get-azfirewall)|Получает объект "Брандмауэр Azure".|
 |[New-AzFirewallApplicationRule](/powershell/module/az.network/new-azfirewallapplicationrule)|Создает правило приложения службы "Брандмауэр Azure".|
 |[Set-AzFirewall](/powershell/module/az.network/set-azfirewall)|Фиксирует изменения в объекте "Брандмауэр Azure".|

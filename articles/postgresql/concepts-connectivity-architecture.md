@@ -6,12 +6,12 @@ ms.author: bahusse
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 2/11/2021
-ms.openlocfilehash: 104e6503ba47d17c17cfec2b4e62ec3f69f18330
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: f7463b6234c03a9ed79f1c4a9fb310db7067a428
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103200011"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043569"
 ---
 # <a name="connectivity-architecture-in-azure-database-for-postgresql"></a>Архитектура подключения в базе данных Azure для PostgreSQL
 В этой статье описывается архитектура подключения к базе данных Azure для PostgreSQL, а также сведения о том, как трафик направляется в базу данных Azure для экземпляра базы данных PostgreSQL из клиентов как внутри, так и за пределами Azure.
@@ -99,7 +99,7 @@ ms.locfileid: "103200011"
 ### <a name="how-can-you-validate-if-your-connections-are-going-to-old-gateway-nodes-or-new-gateway-nodes"></a>Как проверить, будут ли подключения переходить к старым узлам шлюза или новым узлам шлюза?
 Выполните проверку связи с полным доменным именем сервера, например  ``ping xxx.postgres.database.azure.com`` . Если возвращенный IP-адрес является одним из IP-адресов, указанных в разделе IP Address (списание) шлюза в приведенном выше документе, это означает, что подключение будет проходить по старому шлюзу. Контрарили. Если возвращенный IP-адрес является одним из IP-адресов, указанных в разделе шлюз, то это означает, что подключение будет проходить через новый шлюз.
 
-Вы также можете протестировать [PSPing](https://docs.microsoft.com/sysinternals/downloads/psping) или TCPPing сервер базы данных из клиентского приложения с помощью порта 3306 и убедиться, что возвращаемый IP-адрес не является одним из IP-адресов списания.
+Вы также можете протестировать [PSPing](/sysinternals/downloads/psping) или TCPPing сервер базы данных из клиентского приложения с помощью порта 3306 и убедиться, что возвращаемый IP-адрес не является одним из IP-адресов списания.
 
 ### <a name="how-do-i-know-when-the-maintenance-is-over-and-will-i-get-another-notification-when-old-ip-addresses-are-decommissioned"></a>Разделы справки узнать, когда обслуживание выполняется, и будет ли я получать другое уведомление при списании старых IP-адресов?
 Вы получите сообщение электронной почты, чтобы сообщить вам о начале работы по обслуживанию. Обслуживание может занять до одного месяца в зависимости от количества серверов, которые необходимо перенести в регионах Al. Подготовьте клиент для подключения к серверу базы данных с помощью полного доменного имени или используйте новый IP-адрес из приведенной выше таблицы. 
@@ -119,7 +119,7 @@ ms.locfileid: "103200011"
 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Создание правил брандмауэра базы данных Azure для PostgreSQL и управление ими с помощью портала Azure](./howto-manage-firewall-using-portal.md)
 * [Создание правил брандмауэра базы данных Azure для PostgreSQL и управление ими с помощью Azure CLI](./howto-manage-firewall-using-cli.md)

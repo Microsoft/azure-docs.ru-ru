@@ -4,10 +4,10 @@ description: 'Процедура развертывания для пример�
 ms.date: 02/05/2021
 ms.topic: sample
 ms.openlocfilehash: 2eb9ed2199b28ad7cb349e6088c3cc583d8f011d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100577321"
 ---
 # <a name="deploy-the-iso-27001-shared-services-blueprint-sample"></a>Развертывание примера схемы "ISO 27001: общие службы"

@@ -8,10 +8,10 @@ ms.service: azure-education
 ms.subservice: education-hub
 ms.date: 06/30/2020
 ms.openlocfilehash: 995956e23e211d2182159f6e61abbbf184983ab0
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87101273"
 ---
 # <a name="accessing-the-azure-education-hub"></a>Доступ к Центру образования Azure
@@ -32,7 +32,7 @@ ms.locfileid: "87101273"
    > [!IMPORTANT]
    > Подтвердите, что вы входите в систему с использованием рабочей учетной записи или учетной записи организации (например, @domain.edu). В этом случае сначала выберите параметр в левой части окна. Откроется другой экран входа.
 
-    :::image type="content" source="media/access-education-hub/sign-in.png" alt-text="Открытие окна браузера в конфиденциальном режиме." border="false":::
+    :::image type="content" source="media/access-education-hub/sign-in.png" alt-text="Диалоговое окно входа организации." border="false":::
 
 1. После входа вы будете направлены на портал Azure. Чтобы найти Центр образования, перейдите в меню **Все службы** и найдите вкладку **Образование**.
    При первом входе в систему отображается страница начала работы.

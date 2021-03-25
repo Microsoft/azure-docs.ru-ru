@@ -6,10 +6,10 @@ ms.date: 03/02/2021
 ms.topic: quickstart
 ms.author: jgao
 ms.openlocfilehash: a5b5533cd87c417d03db960c477392c24fa59f8a
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102504156"
 ---
 # <a name="quickstart-create-bicep-files-with-visual-studio-code"></a>Краткое руководство. Создание BICEP-файлов с помощью Visual Studio Code

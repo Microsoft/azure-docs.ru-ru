@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/17/2019
-ms.openlocfilehash: fbca4b23b6fc414727ea1b5a4012d2847d6b8d78
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 9ae06565039e53c0096ff0541f7b28a5b041d9e8
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940478"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864556"
 ---
 # <a name="analyze-application-insights-telemetry-logs-with-apache-spark-on-hdinsight"></a>Анализ журналов телеметрии Application Insights с помощью Apache Spark в HDInsight
 
@@ -18,7 +18,7 @@ ms.locfileid: "98940478"
 
 [Visual Studio Application Insights](../../azure-monitor/app/app-insights-overview.md) — это служба аналитики, которая отслеживает ваши веб-приложения. Данные телеметрии, созданные службой Application Insights, можно экспортировать в службу хранилища Azure. Затем вы можете использовать HDInsight, чтобы проанализировать их.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Приложение, настроенное для использования службы Application Insights.
 
@@ -36,7 +36,7 @@ ms.locfileid: "98940478"
 
 На следующей схеме показана архитектура служб данного примера:
 
-![Данные, передаваемые из Application Insights в хранилище BLOB-объектов, затем Spark](./media/apache-spark-analyze-application-insight-logs/application-insights.png)
+:::image type="content" source="./media/apache-spark-analyze-application-insight-logs/application-insights.png" alt-text="Данные, передаваемые из Application Insights в хранилище BLOB-объектов, затем Spark" border="false":::
 
 ### <a name="azure-storage"></a>Хранилище Azure
 

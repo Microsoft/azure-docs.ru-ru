@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 08/17/2020
 ms.author: tamram
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: fa502f5ca95b1726da7f00f987b35be362ae865a
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 04f793f78cef938c31e7a30aad5569a54eb461a1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96021764"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104613113"
 ---
 # <a name="quickstart-create-download-and-list-blobs-with-azure-cli"></a>Краткое руководство. Создание, скачивание и составление списка больших двоичных объектов с помощью Azure CLI
 
@@ -145,7 +145,7 @@ az storage blob download \
 
 ## <a name="data-transfer-with-azcopy"></a>Передача данных с помощью AzCopy
 
-Служебная программа командной строки AzCopy обеспечивает высокопроизводительную передачу данных с поддержкой сценариев для службы хранилища Azure. AzCopy можно использовать для передачи данных из хранилища BLOB-объектов, Файлов Azure и обратно. Дополнительные сведения об AzCopy версии 10, которая является последней, см. в статье [Get started with AzCopy](../common/storage-use-azcopy-v10.md) (Начало работы с AzCopy). Дополнительные сведения об использовании AzCopy версии 10 с хранилищем BLOB-объектов см. в статье [Transfer data with AzCopy and Blob storage](../common/storage-use-azcopy-blobs.md) (Передача данных с помощью AzCopy и хранилища BLOB-объектов).
+Служебная программа командной строки AzCopy обеспечивает высокопроизводительную передачу данных с поддержкой сценариев для службы хранилища Azure. AzCopy можно использовать для передачи данных из хранилища BLOB-объектов, Файлов Azure и обратно. Дополнительные сведения об AzCopy версии 10, которая является последней, см. в статье [Get started with AzCopy](../common/storage-use-azcopy-v10.md) (Начало работы с AzCopy). Дополнительные сведения об использовании AzCopy версии 10 с хранилищем BLOB-объектов см. в статье [Transfer data with AzCopy and Blob storage](../common/storage-use-azcopy-v10.md#transfer-data) (Передача данных с помощью AzCopy и хранилища BLOB-объектов).
 
 В следующем примере AzCopy используется для передачи локального файла в большой двоичный объект. Не забудьте заменить примеры значений собственными значениями:
 
