@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 55440c3bec940e0cd5fd4c4d644801e7012b5e95
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6ab310681ae7b63cb4e9f4e07984983727ae5ff2
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101701491"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104953924"
 ---
 # <a name="azure-security-baseline-for-automation"></a>Базовый уровень безопасности Azure для автоматизации
 
@@ -40,7 +40,7 @@ ms.locfileid: "101701491"
 
 - [Развертывание и настройка брандмауэра Azure](../firewall/tutorial-firewall-deploy-portal.md)
 
-- [Среда выполнения runbook](https://docs.microsoft.com/azure/automation/automation-runbook-execution#runbook-execution-environment)
+- [Среда выполнения runbook](./automation-runbook-execution.md#runbook-execution-environment)
 
 **Ответственность**: Customer
 
@@ -132,7 +132,7 @@ ms.locfileid: "101701491"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Примеры политик Azure для работы в сети](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#network)
+- [Примеры политик Azure для работы в сети](../governance/policy/samples/built-in-policies.md#network)
 
 - [Создание схемы Azure](../governance/blueprints/create-blueprint-portal.md)
 
@@ -162,9 +162,9 @@ ms.locfileid: "101701491"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций ресурсов и обнаружения изменений в сетевых ресурсах. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log-view)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
 **Ответственность**: Customer
 
@@ -182,7 +182,7 @@ ms.locfileid: "101701491"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings)
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md)
 
 - [Начало работы с Azure Monitor и интеграция SIEM стороннего производителя](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools/)
 
@@ -202,9 +202,9 @@ ms.locfileid: "101701491"
 
 **Руководство**. Включение Azure Monitor для доступа к журналам аудита и действий, включая источник событий, дату, пользователя, метку времени, исходные адреса, адреса назначения и другие полезные элементы. 
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md) 
 
-- [Просмотр и извлечение событий из журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Просмотр и извлечение событий из журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
 **Ответственность**: Customer
 
@@ -214,9 +214,9 @@ ms.locfileid: "101701491"
 
 **Рекомендации**. в пределах Azure Monitor задайте срок хранения log Analytics рабочей области в соответствии с нормативными требованиями Организации. Используйте учетные записи хранения Azure для долгосрочного и архивного хранения.
 
-- [Изменение срока хранения данных в Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Изменение срока хранения данных в Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
-- [Сведения о хранении данных для учетных записей службы автоматизации](https://docs.microsoft.com/azure/automation/automation-managing-data#data-retention)
+- [Сведения о хранении данных для учетных записей службы автоматизации](./automation-managing-data.md#data-retention)
 
 **Ответственность**: Customer
 
@@ -230,9 +230,9 @@ ms.locfileid: "101701491"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Общие сведения о запросах журналов в Azure Monitor](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Общие сведения о запросах журналов в Azure Monitor](../azure-monitor/logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
 **Ответственность**: Customer
 
@@ -248,7 +248,7 @@ ms.locfileid: "101701491"
 
 - [Управление оповещениями в центре безопасности Azure](../security-center/security-center-managing-and-responding-alerts.md)
 
-- [Как оповещать данные журнала Azure Monitor](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Azure Monitor](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -296,7 +296,7 @@ ms.locfileid: "101701491"
 
 Вы также можете включить JIT-доступ с помощью Azure Active Directory (Azure AD) управление привилегированными пользователями привилегированных ролей для служб Майкрософт и Azure Resource Manager.
 
-- [Дополнительные сведения о управление привилегированными пользователями](/azure/active-directory/privileged-identity-management/)
+- [Дополнительные сведения о управление привилегированными пользователями](../active-directory/privileged-identity-management/index.yml)
 
 - [Удаление учетной записи запуска от имени или классической учетной записи запуска от имени](delete-run-as-account.md)
 
@@ -352,7 +352,7 @@ ms.locfileid: "101701491"
 
 - [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
-- [Настройка групп действий для настраиваемых оповещений и уведомлений](/azure/azure-monitor/platform/action-groups)
+- [Настройка групп действий для настраиваемых оповещений и уведомлений](../azure-monitor/alerts/action-groups.md)
 
 **Ответственность**: Customer
 
@@ -374,7 +374,7 @@ ms.locfileid: "101701491"
 
 - [Создание и настройка экземпляра Azure AD](../active-directory-domain-services/tutorial-create-instance.md)
 
-- [Использование проверки подлинности Runbook с управляемыми удостоверениями](https://docs.microsoft.com/azure/automation/automation-hrw-run-runbooks#runbook-auth-managed-identities)
+- [Использование проверки подлинности Runbook с управляемыми удостоверениями](./automation-hrw-run-runbooks.md#runbook-auth-managed-identities)
 
 **Ответственность**: Customer
 
@@ -384,7 +384,7 @@ ms.locfileid: "101701491"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверку доступа удостоверений Azure для эффективного управления членством в группах, доступа к корпоративным приложениям и назначения ролей. Доступ пользователей можно проверить регулярно, чтобы убедиться, что доступ к ним имеют только нужные пользователи. При каждом использовании учетных записей запуска от имени учетной записи службы автоматизации для модулей Runbook эти субъекты-службы также отправляются в инвентаризацию, так как они часто имеют более высокий уровень разрешений. Удалите все неиспользуемые учетные записи запуска от имени, чтобы избежать уязвимой уязвимости.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -412,7 +412,7 @@ ms.locfileid: "101701491"
 
 **Руководство**. Использование Azure Active Directory (Azure AD) риска и средств защиты идентификации для настройки автоматических ответов на обнаруженные подозрительные действия, связанные с удостоверениями пользователей для вашего сетевого ресурса. Вы также можете включить данные в Azure Sentinel для дальнейшего изучения.
 
-- [Просмотр рискованных входов в Azure AD](/azure/active-directory/reports-monitoring/concept-risky-sign-ins)
+- [Просмотр рискованных входов в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 - [Как настроить и включить политики рисков с помощью защиты идентификации](../active-directory/identity-protection/howto-identity-protection-configure-risk-policies.md)
 
@@ -488,7 +488,7 @@ ms.locfileid: "101701491"
 
 Следуйте рекомендациям центра безопасности Azure для шифрования неактивных данных и шифрования при передаче, где это применимо.
 
-- [Общие сведения о шифровании при передаче с помощью Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit)
+- [Общие сведения о шифровании при передаче с помощью Azure](../security/fundamentals/encryption-overview.md#encryption-of-data-in-transit)
 
 - [Принудительное применение Azure Automation TLS 1,2](../active-directory/hybrid/reference-connect-tls-enforcement.md)
 
@@ -508,9 +508,9 @@ ms.locfileid: "101701491"
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления доступом к ресурсам службы автоматизации Azure с помощью встроенных определений ролей, назначение доступа пользователям, обращающимся к ресурсам службы автоматизации, по крайней мере привилегированной или достаточно высокой модели доступа. При использовании гибридных рабочих ролей Runbook используйте управляемые удостоверения для этих виртуальных машин, чтобы не использовать субъекты-службы. при использовании нескольких клиентов или гибридных рабочих ролей Runbook обязательно примените правильно ограниченные разрешения Azure RBAC для идентификации рабочих ролей Runbook.
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
-- [Разрешения runbook для гибридной рабочей роли Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker#runbook-permissions-for-a-hybrid-runbook-worker)
+- [Разрешения runbook для гибридной рабочей роли Runbook](./automation-hybrid-runbook-worker.md#runbook-permissions-for-a-hybrid-runbook-worker)
 
 - [Управление разрешениями ролей и безопасностью](automation-role-based-access-control.md)
 
@@ -538,7 +538,7 @@ ms.locfileid: "101701491"
 
 - [Шифрование дисков Azure для виртуальных машин Windows](../virtual-machines/windows/disk-encryption-overview.md)
 
-- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-secure-asset-encryption#use-of-customer-managed-keys-for-an-automation-account)
+- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](./automation-secure-asset-encryption.md#use-of-customer-managed-keys-for-an-automation-account)
 
 - [Управляемые переменные в службе автоматизации Azure](shared-resources/variables.md)
 
@@ -554,9 +554,9 @@ ms.locfileid: "101701491"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются с важными ресурсами Azure, такими как сетевые компоненты, учетные записи службы автоматизации Azure и модули Runbook. 
 
-- [Журнал ведения диагностики для группы безопасности сети](https://docs.microsoft.com/azure/private-link/private-link-overview#logging-and-monitoring)
+- [Журнал ведения диагностики для группы безопасности сети](../private-link/private-link-overview.md#logging-and-monitoring)
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -689,7 +689,7 @@ ms.locfileid: "101701491"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -771,7 +771,7 @@ ms.locfileid: "101701491"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Использование псевдонимов](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Использование псевдонимов](../governance/policy/concepts/definition-structure.md#aliases)
 
 - [Пример политики Azure, встроенный в службу автоматизации Azure](policy-reference.md)
 
@@ -831,7 +831,7 @@ ms.locfileid: "101701491"
 
 - [Как создать резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/backup-azkeyvaultkey)
 
-- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-secure-asset-encryption#use-of-customer-managed-keys-for-an-automation-account)
+- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](./automation-secure-asset-encryption.md#use-of-customer-managed-keys-for-an-automation-account)
 
 - [Использование интеграции системы управления версиями](source-control-integration.md)
 
@@ -857,9 +857,9 @@ ms.locfileid: "101701491"
 
 - [Как создать резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/backup-azkeyvaultkey)
 
-- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-secure-asset-encryption#use-of-customer-managed-keys-for-an-automation-account)
+- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](./automation-secure-asset-encryption.md#use-of-customer-managed-keys-for-an-automation-account)
 
-- [Резервное копирование данных Azure для учетных записей службы автоматизации](https://docs.microsoft.com/azure/automation/automation-managing-data#data-backup)
+- [Резервное копирование данных Azure для учетных записей службы автоматизации](./automation-managing-data.md#data-backup)
 
 **Ответственность**: Customer
 
@@ -873,7 +873,7 @@ ms.locfileid: "101701491"
 
 - [Как восстановить резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/restore-azkeyvaultkey)
 
-- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](https://docs.microsoft.com/azure/automation/automation-secure-asset-encryption#use-of-customer-managed-keys-for-an-automation-account)
+- [Использование управляемых клиентом ключей для учетной записи службы автоматизации Azure](./automation-secure-asset-encryption.md#use-of-customer-managed-keys-for-an-automation-account)
 
 **Ответственность**: Customer
 
@@ -987,5 +987,5 @@ ms.locfileid: "101701491"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

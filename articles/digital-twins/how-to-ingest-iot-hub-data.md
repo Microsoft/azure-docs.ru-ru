@@ -7,12 +7,12 @@ ms.author: alkarche
 ms.date: 9/15/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 2fd0d9d2b6e80d54bdd45b7a13fab7bfa33841c9
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: de16932f1f77e569302b222fe2948de3046fabd6
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889473"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950603"
 ---
 # <a name="ingest-iot-hub-telemetry-into-azure-digital-twins"></a>Прием данных телеметрии центра Интернета вещей в Azure Digital двойников
 
@@ -39,7 +39,7 @@ Azure Digital двойников управляет данными из устр
 
 Каждый раз, когда устройство термостата отправляет событие телеметрии температуры, функция обрабатывает данные телеметрии и свойство *температуры* цифрового двойника должно обновляться. Этот сценарий описан в схеме ниже:
 
-:::image type="content" source="media/how-to-ingest-iot-hub-data/events.png" alt-text="Схема, показывающая блок-диаграмму. На диаграмме устройство центра Интернета вещей отправляет данные телеметрии температуры через центр Интернета вещей в функцию в Azure, которая обновляет свойство температуры двойника в Azure Digital двойников." border="false":::
+:::image type="content" source="media/how-to-ingest-iot-hub-data/events.png" alt-text="Схема отправки телеметрии устройства центра Интернета вещей с помощью центра Интернета вещей в функцию в Azure, которая обновляет свойство температуры двойника в Azure Digital двойников." border="false":::
 
 ## <a name="add-a-model-and-twin"></a>Добавление модели и двойника
 
@@ -47,14 +47,7 @@ Azure Digital двойников управляет данными из устр
 
 Чтобы создать термостата-тип двойника, сначала необходимо передать в экземпляр [модель](concepts-models.md) термостата, которая описывает свойства термостата и будет использоваться позже для создания двойника. 
 
-Модель выглядит следующим образом:
-:::code language="json" source="~/digital-twins-docs-samples/models/Thermostat.json":::
-
-Чтобы **передать эту модель в экземпляр двойников**, выполните следующую команду Azure CLI, которая передает указанную выше модель в виде встроенного JSON. Можно выполнить команду в [Azure Cloud Shell](/cloud-shell/overview.md) в браузере или на компьютере, если интерфейс командной строки [установлен локально](/cli/azure/install-azure-cli).
-
-```azurecli-interactive
-az dt model create --models '{  "@id": "dtmi:contosocom:DigitalTwins:Thermostat;1",  "@type": "Interface",  "@context": "dtmi:dtdl:context;2",  "contents": [    {      "@type": "Property",      "name": "Temperature",      "schema": "double"    }  ]}' -n {digital_twins_instance_name}
-```
+[!INCLUDE [digital-twins-thermostat-model-upload.md](../../includes/digital-twins-thermostat-model-upload.md)]
 
 Затем необходимо **создать один двойника с помощью этой модели**. Используйте следующую команду, чтобы создать термостата двойника с именем **thermostat67** и задать 0,0 в качестве начального значения температуры.
 
@@ -62,13 +55,8 @@ az dt model create --models '{  "@id": "dtmi:contosocom:DigitalTwins:Thermostat;
 az dt twin create --dtmi "dtmi:contosocom:DigitalTwins:Thermostat;1" --twin-id thermostat67 --properties '{"Temperature": 0.0,}' --dt-name {digital_twins_instance_name}
 ```
 
->[!NOTE]
-> При использовании Cloud Shell в среде PowerShell может потребоваться escape-последовательность символов кавычек во встроенных полях JSON, чтобы их значения были проанализированы должным образом. Ниже приведены команды для отправки модели и создания двойника с этим изменением.
->
-> Модель передачи:
-> ```azurecli-interactive
-> az dt model create --models '{  \"@id\": \"dtmi:contosocom:DigitalTwins:Thermostat;1\",  \"@type\": \"Interface\",  \"@context\": \"dtmi:dtdl:context;2\",  \"contents\": [    {      \"@type\": \"Property\",      \"name\": \"Temperature\",      \"schema\": \"double\"    }  ]}' -n {digital_twins_instance_name}
-> ```
+> [!Note]
+> При использовании Cloud Shell в среде PowerShell может потребоваться escape-последовательность символов кавычек во встроенных полях JSON, чтобы их значения были проанализированы должным образом. Ниже приведена команда для создания двойника с таким изменением:
 >
 > Создайте двойника:
 > ```azurecli-interactive
@@ -117,7 +105,7 @@ az dt twin create --dtmi "dtmi:contosocom:DigitalTwins:Thermostat;1" --twin-id t
 
 #### <a name="step-3-publish-the-function-app-to-azure"></a>Шаг 3. Публикация приложения функции в Azure
 
-Опубликуйте проект в приложении-функции в Azure.
+Опубликуйте проект с помощью функции *иосубтотвинс. CS* в приложении-функции в Azure.
 
 Инструкции по выполнению этой задачи см. в разделе [**Публикация приложения-функции в Azure**](how-to-create-azure-function.md#publish-the-function-app-to-azure) статьи *как настроить функцию для обработки данных* .
 

@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: quickstart
 ms.date: 09/03/2020
 ms.author: cshoe
-ms.openlocfilehash: c54a56843be5121e16449d95fb18c24901a95a8d
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: b19c37a45131e3689fdc9726d186f220ab5ba9fe
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100650576"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103149534"
 ---
 # <a name="quickstart-building-your-first-static-site-in-the-azure-portal"></a>Краткое руководство. Создание первого статического сайта на портале Azure
 
@@ -117,7 +117,7 @@ ms.locfileid: "100650576"
 1. Выполните поиск **my-first-web-static-app** с помощью верхней строки поиска.
 1. Выберите имя приложения.
 1. Нажмите кнопку **Удалить**.
-1. Нажмите кнопку **Да**, чтобы подтвердить действие удаления.
+1. Нажмите кнопку **Да**, чтобы подтвердить действие удаления (это действие может занять несколько секунд).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

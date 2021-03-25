@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 03/01/2019
 ms.author: kenchen
-ms.openlocfilehash: b1cb48d1ae858dbcd0df80780b4c3cee3deac75b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 996fa53aa105c0bcc27db7134c25d6d00e542a78
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "90976494"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105110293"
 ---
 # <a name="resiliency-and-disaster-recovery-in-azure-signalr-service"></a>Устойчивость и аварийное восстановление Службы Azure SignalR
 
@@ -44,13 +44,16 @@ ms.locfileid: "90976494"
 
 ![На схеме показаны два региона, каждый из которых имеет сервер приложений и службу SignalR, где каждый сервер связан со службой SignalR в своем регионе как основной и со службой в другом регионе как вторичная.](media/signalr-concept-disaster-recovery/topology.png)
 
-## <a name="configure-app-servers-with-multiple-signalr-service-instances"></a>Настройка серверов приложений с несколькими экземплярами Службы SignalR
+## <a name="configure-multiple-signalr-service-instances"></a>Настройка нескольких экземпляров службы SignalR
 
-Если вы используете Службу Azure SignalR и серверы приложений, созданные в каждом регионе, серверы приложений можно настроить для подключения ко всем экземплярам Службы SignalR.
+На серверах приложений и в функциях Azure поддерживаются несколько экземпляров службы SignalR.
 
+После создания службы SignalR и серверов приложений/функций Azure в каждом регионе можно настроить серверы приложений или функции Azure для подключения ко всем экземплярам службы SignalR.
+
+### <a name="configure-on-app-servers"></a>Настройка на серверах приложений
 Это можно сделать двумя способами:
 
-### <a name="through-config"></a>С помощью файла конфигурации.
+#### <a name="through-config"></a>С помощью файла конфигурации.
 
 Вы уже должны уметь задавать строку подключения службы SignalR с помощью переменных среды/параметров приложения/Web. кофиг в записи конфигурации с именем `Azure:SignalR:ConnectionString` .
 Если у вас есть несколько конечных точек, их можно задать в нескольких записях в файле конфигурации в следующем формате:
@@ -62,7 +65,7 @@ Azure:SignalR:ConnectionString:<name>:<role>
 Здесь `<name>` — имя конечной точки, `<role>` — ее роль (первичная или вторичная).
 Имя — необязательный параметр, но его удобно использовать, если вы хотите настроить маршрутизацию между несколькими конечными точками.
 
-### <a name="through-code"></a>С помощью кода.
+#### <a name="through-code"></a>С помощью кода.
 
 Если вы предпочитаете хранить строки подключения в другом месте, их также можно прочитать в коде и использовать в качестве параметров при вызове `AddAzureSignalR()` (в ASP.NET Core) или `MapAzureSignalR()` (в ASP.NET).
 
@@ -93,6 +96,9 @@ app.MapAzureSignalR(GetType().FullName, hub,  options => options.Endpoints = new
 
 1. Если имеется хотя бы один основной экземпляр в сети, возвращайте случайный основной экземпляр в сети.
 2. Если все основные экземпляры не работают, возвращайте случайный вторичный экземпляр в сети.
+
+### <a name="configure-on-azure-functions"></a>Настройка в функциях Azure
+См. [эту статью](https://github.com/Azure/azure-functions-signalrservice-extension/blob/dev/docs/sharding.md#configuration-method).
 
 ## <a name="failover-sequence-and-best-practice"></a>Последовательность отработки отказа и рекомендации по ней
 
@@ -132,8 +138,10 @@ app.MapAzureSignalR(GetType().FullName, hub,  options => options.Endpoints = new
 Кроме того, из-за характера подключения Службы Azure SignalR (длинное подключение), когда происходит сбой и аварийное переключение, подключение клиентов будет обрываться.
 Такие случаи необходимо обрабатывать на стороне клиента, чтобы предоставить своим конечным клиентам всю необходимую информацию. Например, подключитесь повторно после закрытия подключения.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Из этой статьи вы узнали, как настроить приложение и обеспечить устойчивость Службы Azure SignalR. Дополнительные сведения о подключении "сервер — клиент" и маршрутизации подключений Службы Azure SignalR см. в [этой статье](signalr-concept-internals.md) с описанием внутренних компонентов Службы Azure SignalR.
 
 Для таких сценариев масштабирования, как сегментирование, которые используют несколько экземпляров вместе для работы с большим количеством соединений, читайте, [как масштабировать несколько экземпляров](signalr-howto-scale-multi-instances.md).
+
+Дополнительные сведения о настройке функций Azure с несколькими экземплярами службы SignalR см. в статье [Поддержка нескольких экземпляров службы Azure SignalR в службе "функции Azure](https://github.com/Azure/azure-functions-signalrservice-extension/blob/dev/docs/sharding.md)".

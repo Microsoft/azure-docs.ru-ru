@@ -6,10 +6,10 @@ ms.date: 07/10/2019
 ms.author: atsenthi
 ms.custom: mvc
 ms.openlocfilehash: 934b679813323fe144f935811eb613ab68b561db
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87089623"
 ---
 # <a name="quickstart-deploy-windows-containers-to-service-fabric"></a>Краткое руководство. Развертывание контейнеров Windows в Service Fabric
@@ -30,7 +30,7 @@ Azure Service Fabric — это платформа распределенных 
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 * Подписка Azure. Вы можете создать [бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * Компьютер для разработки, на котором установлено ПО, перечисленное ниже.
@@ -138,7 +138,7 @@ Thumbprint                                Subject
 
 ![Диалоговое окно "Публикация"](./media/service-fabric-quickstart-containers/publish-app.png)
 
-Щелкните **Опубликовать**.
+Нажмите кнопку **Опубликовать**.
 
 Имя каждого приложения в кластере должно быть уникальным. В случае конфликта имен переименуйте проект Visual Studio и повторите развертывание.
 
@@ -152,7 +152,7 @@ Thumbprint                                Subject
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этого руководства вы узнали, как выполнить следующие действия:
+В этом кратком руководстве рассматривались следующие темы:
 
 * упаковка контейнера образов Docker;
 * настройка обмена данными;

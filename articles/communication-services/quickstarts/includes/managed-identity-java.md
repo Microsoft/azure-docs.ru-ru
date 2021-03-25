@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: f2e4bf603fa4cfb93c7ca51f64029ccaedcff727
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ce575a67552c89b17ff4ed9b44ab43a4bd12d67f
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103020947"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105110771"
 ---
 ## <a name="add-managed-identity-to-your-communication-services-solution-java"></a>Добавление управляемого удостоверения в решение "службы связи" (Java)
 
-### <a name="install-the-client-library-packages"></a>Установка пакетов клиентской библиотеки
+### <a name="install-the-sdk-packages"></a>Установка пакетов SDK
 В файл pom.xml добавьте следующие элементы зависимости в группу зависимостей.
 
 ```xml
@@ -29,9 +29,9 @@ ms.locfileid: "103020947"
 </dependency>
 ```
 
-### <a name="use-the-client-library-packages"></a>Использование пакетов клиентских библиотек
+### <a name="use-the-sdk-packages"></a>Использование пакетов SDK
 
-Добавьте следующие `import` директивы в код для использования Azure Identity и клиентских библиотек Azure Communication.
+Добавьте в `import` код следующие директивы для использования удостоверений Azure и пакетов SDK для связи Azure.
 
 ```java
 import com.azure.communication.common.*;

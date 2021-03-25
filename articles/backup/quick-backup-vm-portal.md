@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.date: 05/12/2020
 ms.custom: mvc
 ms.openlocfilehash: cd0d4928d5cd0eb15f4f1372a0a3417fc85d13bb
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91328787"
 ---
 # <a name="back-up-a-virtual-machine-in-azure"></a>Резервное копирование виртуальной машины в Azure

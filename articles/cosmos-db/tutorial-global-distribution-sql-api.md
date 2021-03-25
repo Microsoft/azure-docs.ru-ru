@@ -10,10 +10,10 @@ ms.date: 11/05/2019
 ms.reviewer: sngun
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp
 ms.openlocfilehash: aacb8d4ffb98d553b17aa52e4c4b11a4837dc1c6
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93337903"
 ---
 # <a name="tutorial-set-up-azure-cosmos-db-global-distribution-using-the-sql-api"></a>Руководство по Настройка глобального распределения Azure Cosmos DB с помощью API SQL

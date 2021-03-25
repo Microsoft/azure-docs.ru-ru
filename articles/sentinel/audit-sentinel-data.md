@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/03/2021
 ms.author: bagol
-ms.openlocfilehash: a8ea32d84da521c8a1af926c6cb5e26bc2738de2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a02be0938b1ab925fb0343351ce1c414cc59c615
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102054983"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044844"
 ---
 # <a name="audit-azure-sentinel-queries-and-activities"></a>Аудит запросов и действий Azure Sentinel
 
@@ -132,7 +132,7 @@ AzureActivity
 |Параметры обновления    |Microsoft. Секуритинсигхтс/параметры|
 | | |
 
-Дополнительные сведения см. в статье [схема событий журнала действий Azure](/azure/azure-monitor/essentials/activity-log-schema).
+Дополнительные сведения см. в статье [схема событий журнала действий Azure](../azure-monitor/essentials/activity-log-schema.md).
 
 
 ## <a name="auditing-with-laquerylogs"></a>Аудит с помощью Лакуерилогс
@@ -157,7 +157,7 @@ AzureActivity
 
 1. Таблица **лакуерилогс** по умолчанию не включена в рабочей области log Analytics. Чтобы использовать данные **лакуерилогс** при аудите в Azure Sentinel, сначала включите **лакуерилогс** в области **параметров диагностики** рабочей области log Analytics.
 
-    Дополнительные сведения см. [в разделе Аудит запросов в журналах Azure Monitor](/azure/azure-monitor/logs/query-audit).
+    Дополнительные сведения см. [в разделе Аудит запросов в журналах Azure Monitor](../azure-monitor/logs/query-audit.md).
 
 
 1. Затем запросите данные с помощью ККЛ, как в любой другой таблице.
@@ -226,7 +226,7 @@ LAQueryLogs
 ```
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В Azure Sentinel используйте книгу **аудита рабочей области** для аудита действий в среде SoC.
 

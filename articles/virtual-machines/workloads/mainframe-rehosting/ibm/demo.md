@@ -13,12 +13,12 @@ ms.topic: conceptual
 ms.date: 02/22/2019
 tags: ''
 keywords: ''
-ms.openlocfilehash: fda59cc041cc540b95ababa6d56df6e69b0a8970
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: b1391f81c571879534258c289436d2d086b84bef
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "104956168"
+ms.locfileid: "105045949"
 ---
 # <a name="set-up-an-application-developers-controlled-distribution-adcd-in-ibm-zdt-v1"></a>Настройка управляемого распределения для разработчиков приложений (АДКД) в IBM зд&T v1
 
@@ -187,11 +187,11 @@ ms.locfileid: "104956168"
 
 Поздравляем! Теперь вы используете среду IBM мэйнфреймов в Azure.
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 - [Миграция мэйнфреймов: мифы и факты](/azure/architecture/cloud-adoption/infrastructure/mainframe-migration/myths-and-facts)
 - [IBM DB2 Пурескале в Azure](ibm-db2-purescale-azure.md)
-- [Устранение неполадок](../../../troubleshooting/index.yml)
+- [Устранение неполадок](/troubleshoot/azure/virtual-machines/welcome-virtual-machines)
 - [Декрытие мэйнфрейма с миграцией Azure](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration/)
 
 <!-- INTERNAL LINKS -->

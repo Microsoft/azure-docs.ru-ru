@@ -6,12 +6,12 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 02/08/2021
 ms.author: yegu
-ms.openlocfilehash: fe777c3aa7b314dc56a42cc64712d18281a6ea7d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 3fe3131263d3cf1984eae1692854d8d6bcd2746a
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102121173"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109494"
 ---
 # <a name="configure-active-geo-replication-for-enterprise-azure-cache-for-redis-instances-preview"></a>Настройка активной георепликации для кэша предприятия Azure для экземпляров Redis (Предварительная версия)
 
@@ -26,9 +26,11 @@ ms.locfileid: "102121173"
 >
 >
 
-1. В новом пользовательском интерфейсе создания **кэша Redis** щелкните **настроить** , чтобы настроить **активную георепликацию** на вкладке **Дополнительно** .
+1. На вкладке **Дополнительно** в новом пользовательском интерфейсе создания **кэша Redis** выберите **Корпоративный** для **политики кластеризации**.
 
     ![Настройка активной георепликации](./media/cache-how-to-active-geo-replication/cache-active-geo-replication-not-configured.png)
+
+1. Нажмите кнопку **настроить** , чтобы настроить **активную георепликацию**.
 
 1. Создайте новую группу репликации для первого экземпляра кэша или выберите имеющуюся в списке.
 
@@ -38,13 +40,13 @@ ms.locfileid: "102121173"
 
     ![Активная Георепликация настроена](./media/cache-how-to-active-geo-replication/cache-active-geo-replication-configured.png)
 
-1. Повторите описанные выше шаги для каждого дополнительного экземпляра кэша в группе георепликации.
+1. Дождитесь успешного создания первого кэша. Повторите описанные выше шаги для каждого дополнительного экземпляра кэша в группе георепликации.
 
 ## <a name="remove-from-an-active-geo-replication-group"></a>Удаление из активной группы георепликации
 
 Чтобы удалить экземпляр кэша из активной группы георепликации, просто удалите экземпляр. Остальные экземпляры будут автоматически перенастроены.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о кэше Azure для функций Redis.
 

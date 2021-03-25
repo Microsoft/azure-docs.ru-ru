@@ -10,10 +10,10 @@ author: sakash279
 ms.author: akshanka
 ms.custom: devx-track-js
 ms.openlocfilehash: 2d40b70d49b1934c9dd2d911369245b1b2e4f2ff
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93079714"
 ---
 # <a name="how-to-use-azure-table-storage-or-the-azure-cosmos-db-table-api-from-nodejs"></a>Как использовать в Node.js Хранилище таблиц Azure и API таблиц Azure Cosmos DB
@@ -116,7 +116,7 @@ tableSvc.createTableIfNotExists('mytable', function(error, result, response){
 function handle (requestOptions, next)
 ```
 
-Выполнив предварительную обработку параметров запроса, метод должен вызвать функцию **next** , передав ему обратный вызов со следующей сигнатурой.
+Выполнив предварительную обработку параметров запроса, метод должен вызвать функцию **next**, передав ему обратный вызов со следующей сигнатурой.
 
 ```javascript
 function (returnObject, finalCallback, next)
@@ -133,7 +133,7 @@ var tableSvc = azure.createTableService().withFilter(retryOperations);
 
 ## <a name="add-an-entity-to-a-table"></a>Добавление сущности в таблицу
 
-Чтобы добавить сущность, сначала создайте объект, который определяет свойства сущности. Все сущности должны содержать ключи **PartitionKey** и **RowKey** , которые выступают ее уникальными идентификаторами.
+Чтобы добавить сущность, сначала создайте объект, который определяет свойства сущности. Все сущности должны содержать ключи **PartitionKey** и **RowKey**, которые выступают ее уникальными идентификаторами.
 
 * **PartitionKey** — определяет секцию, в которой хранится сущность.
 * **RowKey** — уникально определяет сущность в секции.
@@ -269,7 +269,7 @@ tableSvc.executeBatch('mytable', batch, function (error, result, response) {
 
 ## <a name="retrieve-an-entity-by-key"></a>Получение сущности по ключу
 
-Чтобы возвратить определенную сущность на основе значений ключей **PartitionKey** и **RowKey** , используйте метод **retrieveEntity**.
+Чтобы возвратить определенную сущность на основе значений ключей **PartitionKey** и **RowKey**, используйте метод **retrieveEntity**.
 
 ```javascript
 tableSvc.retrieveEntity('mytable', 'hometasks', '1', function(error, result, response){
@@ -288,8 +288,8 @@ tableSvc.retrieveEntity('mytable', 'hometasks', '1', function(error, result, res
 * **select** — поля, возвращаемые из запроса.
 * **where** — предложение where.
 
-  * **and**  — условие `and` в предложении where.
-  * **or**  — условие `or` в предложении where.
+  * **and** — условие `and` в предложении where.
+  * **or** — условие `or` в предложении where.
 * **top** — количество извлекаемых элементов.
 
 Следующий пример собирает запрос, который возвращает первые пять элементов с использованием ключа PartitionKey со значением "hometasks".
@@ -364,7 +364,7 @@ tableSvc.deleteTable('mytable', function(error, response){
 
 При выполнении запросов к таблицам для получения больших объемов результатов следует искать маркеры продолжения. По вашему запросу может быть найден большой объем данных, который, возможно, не удастся реализовать, если не создать метод определения наличия маркера продолжения.
 
-При наличии такого маркера объект **results** , возвращаемый при запросе сущностей, задает свойство `continuationToken`. В последствии его можно использовать при выполнении запроса для продолжения и перемещения между разделами и сущностями таблицы.
+При наличии такого маркера объект **results**, возвращаемый при запросе сущностей, задает свойство `continuationToken`. В последствии его можно использовать при выполнении запроса для продолжения и перемещения между разделами и сущностями таблицы.
 
 При выполнении запросов для экземпляра объекта запроса и функции обратного вызова можно указать параметр `continuationToken`.
 
@@ -456,7 +456,7 @@ var sharedAccessPolicy = {
 };
 ```
 
-В этом примере код получает текущий список ACL для таблицы **hometasks** , а затем добавляет новые политики с помощью **setTableAcl**. Такой подход допускает выполнение:
+В этом примере код получает текущий список ACL для таблицы **hometasks**, а затем добавляет новые политики с помощью **setTableAcl**. Такой подход допускает выполнение:
 
 ```javascript
 var extend = require('extend');

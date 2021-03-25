@@ -3,19 +3,19 @@ title: Планирование развертывания кластера Azur
 description: Узнайте, как планировать и подготавливать рабочую Service Fabric развертывание кластера в Azure.
 ms.topic: conceptual
 ms.date: 03/20/2019
-ms.openlocfilehash: 9de59811397eb47809c6d71f608e43beae5bfadb
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 82521487b9a3e9438784e010a32cf6df8e7be2ef
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97109629"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105046323"
 ---
 # <a name="plan-and-prepare-for-a-cluster-deployment"></a>Планирование и подготовка к развертыванию кластера
 
 Планирование и подготовка к развертыванию производственного кластера очень важно.  Есть много факторов, которые следует учитывать.  В этой статье описано, как подготовить развертывание кластера.
 
 ## <a name="read-the-best-practices-information"></a>Прочтите сведения о рекомендациях
-Для успешного управления приложениями Azure Service Fabric и кластерами существуют операции, которые мы настоятельно рекомендуем выполнить для оптимизации надежности рабочей среды.  Дополнительные сведения см. в статье [Service Fabric рекомендации по приложениям и кластерам](service-fabric-best-practices-overview.md).
+Для успешного управления приложениями Azure Service Fabric и кластерами существуют операции, которые мы настоятельно рекомендуем выполнить для оптимизации надежности рабочей среды.  Дополнительные сведения см. в статье [Service Fabric рекомендации по приложениям и кластерам](./service-fabric-best-practices-security.md).
 
 ## <a name="select-the-os-for-the-cluster"></a>Выберите ОС для кластера
 Service Fabric позволяет создавать кластеры Service Fabric на любых виртуальных машинах или компьютерах под управлением Windows Server или Linux.  Перед развертыванием кластера необходимо выбрать ОС Windows или Linux.  Каждый узел (виртуальная машина) в кластере выполняет одну и ту же ОС. Вы не можете смешивать виртуальные машины Windows и Linux в одном кластере.
@@ -117,7 +117,7 @@ Service Fabric позволяет создавать кластеры Service Fa
 Готовы ли ваше приложение и кластер к приему рабочего трафика? Перед развертыванием кластера в рабочей среде выполните [Контрольный список готовности к производству](service-fabric-production-readiness-checklist.md). Используйте элементы этого контрольного списка, чтобы обеспечить бесперебойную работу приложения и кластера. Мы настоятельно рекомендуем отключать все эти элементы перед переходом в рабочую среду.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-* [Создание кластера Service Fabric под Windows](service-fabric-best-practices-overview.md)
+* [Создание кластера Service Fabric под Windows](./service-fabric-best-practices-security.md)
 * [Создание кластера Service Fabric под управлением Linux](service-fabric-tutorial-create-vnet-and-linux-cluster.md)
 
 [placementconstraints]: service-fabric-cluster-resource-manager-cluster-description.md#node-properties-and-placement-constraints

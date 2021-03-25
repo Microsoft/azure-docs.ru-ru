@@ -11,13 +11,14 @@ ms.topic: how-to
 ms.date: 12/16/2020
 ms.author: mimart
 ms.subservice: B2C
+ms.custom: b2c-support
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 29dd67e9e6e15aaafec0cc47d89da32cbf369938
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: fbcdef0002a227d5319fc01e625146480e4c99fc
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97618825"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043756"
 ---
 # <a name="set-up-a-sign-up-and-sign-in-flow-in-azure-active-directory-b2c"></a>Настройка потока регистрации и входа в Azure Active Directory B2C
 
@@ -34,7 +35,7 @@ ms.locfileid: "97618825"
 
 ![Поток редактирования профиля](./media/add-sign-up-and-sign-in-policy/add-sign-up-and-sign-in-flow.png)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Если вы еще не сделали этого, [зарегистрируйте веб-приложение в Azure Active Directory B2C](tutorial-register-applications.md).
 
@@ -66,6 +67,7 @@ ms.locfileid: "97618825"
     ![Страница выбора атрибутов и утверждений с тремя выбранными утверждениями](./media/add-sign-up-and-sign-in-policy/signup-signin-attributes.png)
 
 1. Для добавления потока пользователя щелкните **Создать**. Префикс *B2C_1* добавляется к имени автоматически.
+2. Выполните действия по [обработке последовательности "Забыли пароль?".](add-password-reset-policy.md?pivots=b2c-user-flow.md#self-service-password-reset-recommended) в политике регистрации или входа.
 
 ### <a name="test-the-user-flow"></a>Тестирование потока пользователя
 
@@ -73,7 +75,7 @@ ms.locfileid: "97618825"
 1. В разделе **Приложение** выберите зарегистрированное ранее веб-приложение с именем *webapp1*. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
 1. Щелкните **Выполнить поток пользователя**, а затем выберите **Зарегистрироваться сейчас**.
 
-    ![Страница выполнения потока пользователя на портале с выделенной кнопкой "Выполнить поток пользователя"](./media/add-sign-up-and-sign-in-policy/signup-signin-run-now.PNG)
+    ![Страница выполнения потока пользователя на портале с выделенной кнопкой "Выполнить поток пользователя"](./media/add-sign-up-and-sign-in-policy/signup-signin-run-now.png)
 
 1. Введите допустимый адрес электронной почты, щелкните **Отправить код проверки**, а затем введите полученный код проверки и щелкните **Проверить код**.
 1. Введите новый пароль и подтвердите его.
