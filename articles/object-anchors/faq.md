@@ -8,10 +8,10 @@ ms.date: 04/01/2020
 ms.topic: overview
 ms.service: azure-object-anchors
 ms.openlocfilehash: 6de027f317072512bd9893303d3a79d0f34f3e3e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101747978"
 ---
 # <a name="frequently-asked-questions-about-azure-object-anchors"></a>Часто задаваемые вопросы о службе "Объектные привязки Azure"

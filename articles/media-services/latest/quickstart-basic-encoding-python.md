@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 2/26/2021
 ms.author: inhenkel
 ms.openlocfilehash: ed6bad4e81a1af654357912f6fe0cd03a3fcd62e
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102500841"
 ---
 # <a name="media-services-basic-encoding-with-python"></a>Базовое кодирование Служб мультимедиа с помощью Python

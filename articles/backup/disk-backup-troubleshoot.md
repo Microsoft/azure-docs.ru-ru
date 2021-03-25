@@ -3,19 +3,14 @@ title: Устранение ошибок резервного копирован
 description: Сведения об устранении сбоев резервного копирования в службе архивации дисков Azure
 ms.topic: conceptual
 ms.date: 01/07/2021
-ms.openlocfilehash: 855c6c5b19b10bdb699a25f89ebc29001b7941ac
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f6e9bcbbd618cf820ce91f8a3092d5be4aa045cb
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98737733"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107250"
 ---
-# <a name="troubleshooting-backup-failures-in-azure-disk-backup-in-preview"></a>Устранение ошибок резервного копирования в службе архивации дисков Azure (Предварительная версия)
-
->[!IMPORTANT]
->Служба архивации дисков Azure доступна в предварительной версии без соглашения об уровне обслуживания и не рекомендуется для рабочих нагрузок в рабочей среде. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). Сведения о доступности регионов см. в разделе [Матрица поддержки](disk-backup-support-matrix.md).
->
->[Заполните эту форму](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR1vE8L51DIpDmziRt_893LVUNFlEWFJBN09PTDhEMjVHS05UWFkxUlUzUS4u) , чтобы зарегистрироваться для просмотра предварительной версии.
+# <a name="troubleshooting-backup-failures-in-azure-disk-backup"></a>Устранение ошибок резервного копирования в службе архивации дисков Azure
 
 В этой статье содержатся сведения об устранении неполадок при резервном копировании и восстановлении с помощью диска Azure. Дополнительные сведения о доступности региона [резервного копирования на диске Azure](disk-backup-overview.md) , поддерживаемых сценариях и ограничениях см. в [матрице поддержки](disk-backup-support-matrix.md).
 
@@ -157,7 +152,7 @@ ms.locfileid: "98737733"
 
 Сообщение об ошибке: резервная копия диска еще недоступна в регионе резервного хранилища, в котором выполняется настройка защиты.
 
-Рекомендуемое действие: хранилище службы архивации должно находиться в регионе, поддерживаемом в предварительной версии. Сведения о доступности регионов см. в [матрице поддержки](disk-backup-support-matrix.md).
+Рекомендуемое действие: хранилище службы архивации должно находиться в поддерживаемом регионе. Сведения о доступности регионов см. в [матрице поддержки](disk-backup-support-matrix.md).
 
 ### <a name="error-code-usererrordppdatasourcealreadyhasbackupinstance"></a>Код ошибки: Усереррордппдатасаурцеалреадихасбаккупинстанце
 

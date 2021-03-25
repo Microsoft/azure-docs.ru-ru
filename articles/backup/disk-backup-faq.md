@@ -3,19 +3,14 @@ title: Часто задаваемые вопросы о резервном ко
 description: Получите ответы на часто задаваемые вопросы о резервном копировании дисков Azure
 ms.topic: conceptual
 ms.date: 01/07/2021
-ms.openlocfilehash: 3ef18a7d178075194e24889477768583f05f0cdd
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7729bc1120fc0e2f4361739a8e05f3a82ccb4268
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98734568"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107318"
 ---
-# <a name="frequently-asked-questions-about-azure-disk-backup-in-preview"></a>Часто задаваемые вопросы о резервном копировании дисков Azure (Предварительная версия)
-
->[!IMPORTANT]
->Служба архивации дисков Azure доступна в предварительной версии без соглашения об уровне обслуживания и не рекомендуется для рабочих нагрузок в рабочей среде. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). Сведения о доступности регионов см. в разделе [Матрица поддержки](disk-backup-support-matrix.md).
->
->[Заполните эту форму](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR1vE8L51DIpDmziRt_893LVUNFlEWFJBN09PTDhEMjVHS05UWFkxUlUzUS4u) , чтобы зарегистрироваться для просмотра предварительной версии.
+# <a name="frequently-asked-questions-about-azure-disk-backup"></a>Часто задаваемые вопросы о резервном копировании дисков Azure
 
 В этой статье содержатся ответы на часто задаваемые вопросы о резервном копировании дисков Azure. Дополнительные сведения о доступности региона [резервного копирования на диске Azure](disk-backup-overview.md) , поддерживаемых сценариях и ограничениях см. в [матрице поддержки](disk-backup-support-matrix.md).
 
@@ -130,6 +125,6 @@ Microsoft. Storage, storageAccounts/Delete
 >[!NOTE]
 >Разрешения на эти роли могут измениться в будущем в зависимости от компонентов, добавляемых службой Azure Backup.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Таблица поддержки резервного копирования дисков Azure](disk-backup-support-matrix.md)

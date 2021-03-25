@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для Базы данных SQL Azure
 description: Содержит список элементов управления соответствием Политики Azure, доступных для Базы данных SQL Azure и Управляемого экземпляра SQL. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.topic: sample
 author: stevestein
 ms.author: sstein
 ms.service: sql-database
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 5fdaceb9bccfa6c3f649cc41f2ee6cafa150eb62
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: f4c3173d4cb9e4fa75ae4b4ded721c79d3f22885
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104583434"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105032125"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-sql-database--sql-managed-instance"></a>Элементы управления соответствием Политики Azure для Базы данных SQL Azure и Управляемого экземпляра SQL
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]

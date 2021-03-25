@@ -7,10 +7,10 @@ ms.service: managed-instance-apache-cassandra
 ms.topic: overview
 ms.date: 03/02/2021
 ms.openlocfilehash: d99c62e7d88510c351f87d85b4f8c5c271767cb3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101747837"
 ---
 # <a name="what-is-azure-managed-instance-for-apache-cassandra-preview"></a>Что такое управляемый экземпляр Azure для Apache Cassandra? (предварительная версия)
@@ -53,8 +53,8 @@ ms.locfileid: "101747837"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Начните работу с изучения одного из кратких руководств:
+Начните работу с одним из кратких руководств:
 
-* [Создание кластера с управляемым экземпляром на портале Microsoft Azure](create-cluster-portal.md)
+* [Создание кластера управляемых экземпляров на портале Azure](create-cluster-portal.md)
 * [Развертывание управляемого кластера Apache Spark с Azure Databricks](deploy-cluster-databricks.md)
-* [Администрирование управляемого экземпляра Azure для ресурсов Apache Cassandra с помощью Azure CLI](manage-resources-cli.md)
+* [Управление ресурсами службы "Управляемый экземпляр Azure для ресурсов Apache Cassandra" с помощью Azure CLI](manage-resources-cli.md)

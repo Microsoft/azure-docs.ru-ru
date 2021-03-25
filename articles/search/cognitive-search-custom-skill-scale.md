@@ -8,12 +8,12 @@ ms.author: vikurpad
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 01/28/2021
-ms.openlocfilehash: 22e48239631850d82cbb3e3208748416087da87c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ccee8537c2543b67c1bb60711737ec761ebc8cbf
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103422208"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043076"
 ---
 # <a name="efficiently-scale-out-a-custom-skill"></a>Эффективное масштабирование пользовательского навыка
 
@@ -42,7 +42,7 @@ ms.locfileid: "103422208"
 
 3. Задайте `timeout` значение, достаточное для ответа на допустимый ответ.
 
-4. В `indexer` определении задайте [`batchSize`](https://docs.microsoft.com/rest/api/searchservice/create-indexer#indexer-parameters) число документов, которые должны быть считаны из источника данных и расширяются одновременно.
+4. В `indexer` определении задайте [`batchSize`](/rest/api/searchservice/create-indexer#indexer-parameters) число документов, которые должны быть считаны из источника данных и расширяются одновременно.
 
 ### <a name="considerations"></a>Рекомендации
 
@@ -106,5 +106,5 @@ ms.locfileid: "103422208"
 
 + [Power Skills: репозиторий пользовательских навыков](https://github.com/Azure-Samples/azure-search-power-skills)
 + [Добавление пользовательского навыка в конвейер обогащения искусственного интеллекта](cognitive-search-custom-skill-interface.md)
-+ [Добавление Машинное обучение Azure навыка](https://docs.microsoft.com/azure/search/cognitive-search-aml-skill)
-+ [Использование сеансов отладки для тестирования изменений](https://docs.microsoft.com/azure/search/cognitive-search-debug-session)
++ [Добавление Машинное обучение Azure навыка](./cognitive-search-aml-skill.md)
++ [Использование сеансов отладки для тестирования изменений](./cognitive-search-debug-session.md)
