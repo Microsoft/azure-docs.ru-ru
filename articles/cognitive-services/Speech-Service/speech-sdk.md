@@ -10,12 +10,12 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 04/03/2020
 ms.author: trbye
-ms.openlocfilehash: 4c8ee3a65c26d1eb3acb7b9f4c18f11e870e4b82
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: afba973570d75eace8cae8d1ed6ed470db21ef0e
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102434520"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043263"
 ---
 # <a name="about-the-speech-sdk"></a>Сведения о пакете SDK службы "Речь"
 
@@ -114,7 +114,7 @@ ms.locfileid: "102434520"
 
 ### <a name="codec-compressed-audio-input"></a>Звуковые входные данные, сжатые кодеком
 
-Некоторые языки программирования речевого пакета SDK поддерживают звуковые потоки, сжатые с помощью кодеков. Дополнительные сведения см. в разделе <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-use-codec-compressed-audio-input-streams" target="_blank">Использование сжатых входных форматов звука </a>.
+Некоторые языки программирования речевого пакета SDK поддерживают звуковые потоки, сжатые с помощью кодеков. Дополнительные сведения см. в разделе <a href="/azure/cognitive-services/speech-service/how-to-use-codec-compressed-audio-input-streams" target="_blank">Использование сжатых входных форматов звука </a>.
 
 **Звуковые входные данные, сжатые кодеком** , доступны на следующих платформах:
 

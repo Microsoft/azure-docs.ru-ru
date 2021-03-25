@@ -10,12 +10,12 @@ ms.author: mimart
 author: msmimart
 manager: celestedg
 ms.custom: it-pro
-ms.openlocfilehash: 5d1b52ed0f862b544d4b90d466ddc1d2a231ca44
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 86e9b13ce56e1924b0e24a7f4971da18620617de
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "105023424"
+ms.locfileid: "105043637"
 ---
 # <a name="add-an-api-connector-to-a-sign-up-user-flow-preview"></a>Добавление соединителя API в пользовательский поток регистрации (Предварительная версия)
 
@@ -57,6 +57,8 @@ ms.locfileid: "105023424"
 - **Тема**: `CN=<yourapiname>.<tenantname>.onmicrosoft.com`
 - **Тип содержимого**: `PKCS #12`
 - **Тип состояние времени существования**: `Email all contacts at a given percentage lifetime` или `Email all contacts a given number of days before expiry`
+- **Тип ключа**: `RSA`
+- **Размер ключа**: `2048`
 - **Экспортируемый закрытый ключ**: `Yes` (чтобы иметь возможность экспортировать PFX-файл)
 
 Затем можно [экспортировать сертификат](../key-vault/certificates/how-to-export-certificate.md). Можно также использовать [командлет New-SelfSignedCertificate](../active-directory-b2c/secure-rest-api.md#prepare-a-self-signed-certificate-optional) PowerShell для создания самозаверяющего сертификата.
@@ -262,7 +264,7 @@ Content-type: application/json
 }
 ```
 
-| Параметр                                          | Тип              | Обязательно | Описание                                                                                                                                                                                                                                                                            |
+| Параметр                                          | Type              | Обязательно | Описание                                                                                                                                                                                                                                                                            |
 | -------------------------------------------------- | ----------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | action                                             | Строка            | Да      | Необходимое значение: `Continue`.                                                                                                                                                                                                                                                              |
 | \<builtInUserAttribute>                            | \<attribute-type> | Нет       | Возвращаемые значения могут перезаписывать значения, собранные от пользователя. Они также могут возвращаться в токене, если выбрано в качестве **утверждения приложения**.                                              |
@@ -282,7 +284,7 @@ Content-type: application/json
 
 ```
 
-| Параметр   | Тип   | Обязательно | Описание                                                                |
+| Параметр   | Type   | Обязательно | Описание                                                                |
 | ----------- | ------ | -------- | -------------------------------------------------------------------------- |
 | version     | Строка | Да      | Версия API.                                                    |
 | action      | Строка | Да      | Значение должно быть `ShowBlockPage`                                              |
@@ -306,7 +308,7 @@ Content-type: application/json
 }
 ```
 
-| Параметр   | Тип    | Обязательно | Описание                                                                |
+| Параметр   | Type    | Обязательно | Описание                                                                |
 | ----------- | ------- | -------- | -------------------------------------------------------------------------- |
 | version     | Строка  | Да      | Версия API.                                                    |
 | action      | Строка  | Да      | Необходимое значение: `ValidationError`.                                           |
@@ -342,5 +344,5 @@ Content-type: application/json
 * При необходимости используйте более агрессивные уровни ведения журнала (например, "Трассировка" или "Отладка") в разработке.
 * Отслеживайте долгое время ответа API.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Начните работу с нашими [примерами](code-samples.md#api-connectors).

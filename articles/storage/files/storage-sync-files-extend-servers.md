@@ -8,10 +8,10 @@ ms.date: 10/23/2018
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 1d2a0d79a5cdd53f8376c088fc986c20908575eb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91329468"
 ---
 # <a name="tutorial-extend-windows-file-servers-with-azure-file-sync"></a>Руководство по Расширение файловых серверов Windows с использованием службы "Синхронизация файлов Azure"
@@ -107,7 +107,7 @@ ms.locfileid: "91329468"
 
    Щелкните значок **Уведомления**, чтобы просмотреть **ход выполнения развертывания**. Создание виртуальной машины может занять несколько минут.
 
-1. После развертывания виртуальной машины выберите**Перейти к ресурсу**.
+1. После развертывания виртуальной машины выберите **Перейти к ресурсу**.
 
    ![Переход к ресурсу](./media/storage-sync-files-extend-servers/vm-gotoresource.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "91329468"
 
    ![Дополнительные варианты](./media/storage-sync-files-extend-servers/local-host2.png)
 
-1. При входе в систему может появиться предупреждение о сертификате. Выберите**Да** или **Продолжить**, чтобы создать подключение.
+1. При входе в систему может появиться предупреждение о сертификате. Выберите **Да** или **Продолжить**, чтобы создать подключение.
 
 ### <a name="prepare-the-windows-server"></a>Подготовка Windows Server
 

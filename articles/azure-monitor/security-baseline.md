@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 39dff9b48fb292d8a1c145ae3e592786ddb027a4
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 86d660ef6133231172684f18ad3250392df5f509
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102198835"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026127"
 ---
 # <a name="azure-security-baseline-for-azure-monitor"></a>Базовый план безопасности Azure для Azure Monitor
 
@@ -36,9 +36,9 @@ ms.locfileid: "102198835"
 
 Используйте шлюз Log Analytics для отправки данных в рабочую область Log Analytics в Azure Monitor от имени компьютеров, которые не могут напрямую подключаться к Интернету, предотвращая подключение компьютеров к Интернету. 
 
-- [Настройка частного канала для Azure Monitor](/azure/azure-monitor/platform/private-link-security)
+- [Настройка частного канала для Azure Monitor](./logs/private-link-security.md)
 
-- [Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor](/azure/azure-monitor/platform/gateway)
+- [Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor](./agents/gateway.md)
 
 **Ответственность**: Customer
 
@@ -50,9 +50,9 @@ ms.locfileid: "102198835"
 
 При использовании Azure Monitor с закрытой ссылкой вы получаете доступ к сетевому журналу, например "данные, обработанные закрытой конечной точкой (в/с)".
 
-- [Требования к сети для агентов Azure Monitor](/azure/azure-monitor/platform/log-analytics-agent#network-requirements)
+- [Требования к сети для агентов Azure Monitor](./agents/log-analytics-agent.md#network-requirements)
 
-- [Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor](/azure/azure-monitor/platform/gateway)
+- [Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor](./agents/gateway.md)
 
 - [Включение журналов потоков для групп безопасности сети](../network-watcher/network-watcher-nsg-flow-logging-portal.md)
 
@@ -78,11 +78,11 @@ ms.locfileid: "102198835"
 
 **Руководство**. Azure Monitor входит в состав служб ядра Azure и не может быть развернуто как услуга отдельно. Azure Monitor компоненты, включая агент Azure Monitor и пакет SDK для Application Insights, могут быть развернуты вместе с ресурсами, что может повлиять на безопасность этих ресурсов.
 
-- [Требования к сети для агентов Azure Monitor](/azure/azure-monitor/platform/log-analytics-agent#network-requirements)
+- [Требования к сети для агентов Azure Monitor](./agents/log-analytics-agent.md#network-requirements)
 
-- [Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor](/azure/azure-monitor/platform/gateway) 
+- [Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor](./agents/gateway.md) 
 
-- [См. раздел Приступая к работе с Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview#get-started)
+- [См. раздел Приступая к работе с Application Insights](./app/app-insights-overview.md#get-started)
 
 - [Настройка веб-тестов доступности](app/monitor-web-app-availability.md)
 
@@ -94,9 +94,9 @@ ms.locfileid: "102198835"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций ресурсов и обнаружения изменений в сетевых ресурсах, связанных с Azure Monitor. Создавайте оповещения в Azure Monitor, которые будут запускаться при внесении изменений в эти критические сетевые ресурсы.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](./essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](./alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -112,9 +112,9 @@ ms.locfileid: "102198835"
 
 Кроме того, вы можете включить и подключить данные к Azure Sentinel или сторонним SIEM.
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings)
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](./essentials/diagnostic-settings.md)
 
-- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](/azure/azure-monitor/learn/quick-collect-azurevm)
+- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](./vm/quick-collect-azurevm.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -132,9 +132,9 @@ ms.locfileid: "102198835"
 
 **Руководство**. Azure Monitor использует журналы действий, журнал действий автоматически включается и записывает в журнал операции, выполняемые с Azure Monitorными ресурсами, например: кто начал операцию, когда произошла операция, состояние операции и другие полезные сведения об аудите. 
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings)
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](./essentials/diagnostic-settings.md)
 
-- [Общие сведения о ведении журналов и различных типах журналов в Azure](/azure/azure-monitor/platform/platform-logs-overview)
+- [Общие сведения о ведении журналов и различных типах журналов в Azure](./essentials/platform-logs-overview.md)
 
 **Ответственность**: Customer
 
@@ -148,9 +148,9 @@ ms.locfileid: "102198835"
 
 **Рекомендации**. в Azure Monitor задайте срок хранения log Analytics рабочей области в соответствии с нормативными требованиями Организации. Используйте учетные записи хранения Azure для всех долгосрочных и архивных хранилищ журналов.
 
-- [Изменение срока хранения данных в Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Изменение срока хранения данных в Log Analytics](./logs/manage-cost-storage.md#change-the-data-retention-period)
 
-- [Настройка политики хранения для журналов учетных записей хранения Azure](/azure/storage/common/storage-monitor-storage-account#configure-logging)
+- [Настройка политики хранения для журналов учетных записей хранения Azure](../storage/common/manage-storage-analytics-logs.md#configure-logging)
 
 **Ответственность**: Customer
 
@@ -164,9 +164,9 @@ ms.locfileid: "102198835"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Приступая к работе с Log Analytics запросами](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Приступая к работе с Log Analytics запросами](./logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](./logs/get-started-queries.md)
 
 **Ответственность**: Customer
 
@@ -180,7 +180,7 @@ ms.locfileid: "102198835"
 
 - [Управление оповещениями в центре безопасности Azure](../security-center/security-center-managing-and-responding-alerts.md)
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](./alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -194,9 +194,9 @@ ms.locfileid: "102198835"
 
 **Руководство**. Управление доступом на основе ролей в Azure (Azure RBAC) позволяет управлять доступом к ресурсам Azure с помощью назначений ролей. Эти роли можно назначить пользователям, группам субъектов-служб и управляемым удостоверениям. Для некоторых ресурсов существуют предварительно определенные встроенные роли. Эти роли могут быть инвентаризированы или запрошены с помощью таких средств, как Azure CLI, Azure PowerShell или портал Azure.
 
-- [Как получить роль каталога в Azure Active Directory (Azure AD) с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrole?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить роль каталога в Azure Active Directory (Azure AD) с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole?amp;preserve-view=true&view=azureadps-2.0)
 
-- [Как получить членов роли каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember?amp;preserve-view=true&view=azureadps-2.0)
 
 **Ответственность**: Customer
 
@@ -284,7 +284,7 @@ ms.locfileid: "102198835"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверку доступа удостоверений Azure, чтобы эффективно управлять членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверять на регулярной основе, чтобы только у авторизованных пользователей был постоянный доступ.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -296,7 +296,7 @@ ms.locfileid: "102198835"
 
 **Руководство**. у вас есть доступ к источникам журнала событий входа Azure Active Directory (Azure AD), аудита и риску, которые позволяют интегрироваться с любым средством SIEM/Monitoring. Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить необходимые оповещения в рабочей области Log Analytics.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -326,7 +326,7 @@ ms.locfileid: "102198835"
 
 - [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
-- [Управление доступом к данным журнала и рабочим областям в Azure Monitor](/azure/azure-monitor/platform/manage-access)
+- [Управление доступом к данным журнала и рабочим областям в Azure Monitor](./logs/manage-access.md)
 
 **Ответственность**: Customer
 
@@ -352,7 +352,7 @@ ms.locfileid: "102198835"
 
 Application Insights и Log Analytics оба продолжают принимать данные TLS 1,1 и TLS 1,0 для приема данных. Данные могут быть ограничены TLS 1,2 путем настройки на стороне клиента.
 
-- [Как безопасно отправить данные с помощью TLS 1,2](/azure/azure-monitor/platform/data-security#sending-data-securely-using-tls-12)
+- [Как безопасно отправить данные с помощью TLS 1,2](./logs/data-security.md#sending-data-securely-using-tls-12)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -373,9 +373,9 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование управления доступом на основе РОЛЕЙ (RBAC) Azure для управления доступом к Azure Monitor.
 
-- [Роли, разрешения и безопасность в Azure Monitor](/azure/azure-monitor/platform/roles-permissions-security)
+- [Роли, разрешения и безопасность в Azure Monitor](./roles-permissions-security.md)
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 **Ответственность**: Customer
 
@@ -385,9 +385,9 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Рекомендации**. Azure Monitor гарантирует, что все данные и сохраненные запросы шифруются при хранении с помощью ключей, управляемых корпорацией Майкрософт (ММК). Azure Monitor также предоставляет возможность шифрования с помощью собственного ключа, хранящегося в Azure Key Vault и доступного для хранилища, с помощью управляемой системой идентификации с проверкой подлинности. Этим ключом, управляемым клиентом (CMK), может быть программное или аппаратное обеспечение с защитой HSM.
 
-- [Azure Monitor ключи, управляемые клиентом](/azure/azure-monitor/platform/customer-managed-keys)
+- [Azure Monitor ключи, управляемые клиентом](./logs/customer-managed-keys.md)
 
-- [Безопасность данных Log Analytics](/azure/azure-monitor/platform/data-security)
+- [Безопасность данных Log Analytics](./logs/data-security.md)
 
 - [Сбор и хранение данных в Application Insights](app/data-retention-privacy.md)
 
@@ -401,7 +401,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения происходят в Azure Monitor и связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](./alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -431,13 +431,13 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование Azure CLI для запроса и обнаружения Azure Monitorных ресурсов в подписках. Убедитесь в том, что в вашем клиенте есть соответствующие разрешения (на чтение) и вы можете перечислить все подписки Azure, а также ресурсы в ваших подписках.
 
-- [Azure Monitor CLI](https://docs.microsoft.com/cli/azure/monitor)
+- [Azure Monitor CLI](/cli/azure/monitor)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&preserve-view=true)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
-- [Роли, разрешения и безопасность в Azure Monitor](/azure/azure-monitor/platform/roles-permissions-security)
+- [Роли, разрешения и безопасность в Azure Monitor](./roles-permissions-security.md)
 
 **Ответственность**: Customer
 
@@ -493,7 +493,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Выверка запасов на регулярной основе и обеспечение своевременного удаления неавторизованных Azure Monitor связанных ресурсов.  
 
-- [Удаление рабочей области Azure Log Analytics](/azure/azure-monitor/platform/delete-workspace)
+- [Удаление рабочей области Azure Log Analytics](./logs/delete-workspace.md)
 
 **Ответственность**: Customer
 
@@ -505,7 +505,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -535,9 +535,9 @@ Application Insights и Log Analytics оба продолжают принима
 
 При использовании возможностей динамической потоковой передачи данных необходимо обеспечить безопасность канала с помощью секретного ключа API в дополнение к ключу инструментирования.
 
-- [Защита Live Metrics Stream APM](https://docs.microsoft.com/azure/azure-monitor/app/live-stream#secure-the-control-channel)
+- [Защита Live Metrics Stream APM](./app/live-stream.md#secure-the-control-channel)
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?amp;preserve-view=true&view=azps-4.8.0)
 
 - [Руководство по Создание политик и управление ими для обеспечения соответствия требованиям](../governance/policy/tutorials/create-and-manage.md)
 
@@ -567,7 +567,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование Azure DevOps для безопасного хранения и управления кодом, например пользовательскими политиками Azure и шаблонами Azure Resource Manager. Чтобы получить доступ к ресурсам, которыми вы управляете в Azure DevOps, вы можете предоставить или отклонить разрешения для определенных пользователей, встроенных групп безопасности или групп, определенных в Azure Active Directory (Azure AD), если они интегрированы с Azure DevOps, или Active Directory, если они интегрированы с TFS.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?amp;preserve-view=true&view=azure-devops)
 
 - [О разрешениях и группах в Azure DevOps](/azure/devops/organizations/security/about-permissions)
 
@@ -581,7 +581,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Псевдонимы политик Azure](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Псевдонимы политик Azure](../governance/policy/concepts/definition-structure.md#aliases)
 
 **Ответственность**: Customer
 
@@ -661,7 +661,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование Azure Resource Manager для экспорта Azure Monitor и связанных ресурсов в шаблон НОТАЦИЯ объектов JavaScript (JSON), который можно использовать в качестве резервного копирования для Azure Monitor и связанных конфигураций.  Используйте службу автоматизации Azure для автоматического запуска сценариев резервного копирования. 
 
-- [Управление рабочей областью Log Analytics с помощью шаблонов Azure Resource Manager](/azure/azure-monitor/samples/resource-manager-workspace)
+- [Управление рабочей областью Log Analytics с помощью шаблонов Azure Resource Manager](./logs/resource-manager-workspace.md)
 
 - [Экспорт одного и нескольких ресурсов в шаблон в портал Azure](../azure-resource-manager/templates/export-template-portal.md)
 
@@ -675,11 +675,11 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование Azure Resource Manager для экспорта Azure Monitor и связанных ресурсов в шаблон НОТАЦИЯ объектов JavaScript (JSON), который можно использовать в качестве резервного копирования для Azure Monitor и связанных конфигураций. Резервное копирование управляемых клиентом ключей в Azure Key Vault если Azure Monitor связанные ресурсы используют ключи, управляемые клиентом,
 
-- [Управление рабочей областью Log Analytics с помощью шаблонов Azure Resource Manager](/azure/azure-monitor/platform/template-workspace-configuration)
+- [Управление рабочей областью Log Analytics с помощью шаблонов Azure Resource Manager](./logs/resource-manager-workspace.md)
 
 - [Экспорт одного и нескольких ресурсов в шаблон в портал Azure](../azure-resource-manager/templates/export-template-portal.md)
 
-- [Как создать резервную копию ключей хранилища ключей в Azure](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Как создать резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/backup-azkeyvaultkey?amp;preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -689,9 +689,9 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. обеспечение возможности регулярного выполнения восстановления с помощью Azure Resource Manager файлов шаблонов. Проверка восстановления резервных копий ключей, управляемых клиентом.
 
-- [Управление рабочей областью Log Analytics с помощью шаблонов Azure Resource Manager](/azure/azure-monitor/samples/resource-manager-workspace)
+- [Управление рабочей областью Log Analytics с помощью шаблонов Azure Resource Manager](./logs/resource-manager-workspace.md)
 
-- [Как восстановить резервную копию ключей хранилища ключей в Azure](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Как восстановить резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/restore-azkeyvaultkey?amp;preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -703,7 +703,7 @@ Application Insights и Log Analytics оба продолжают принима
 
 Кроме того, включите Soft-Delete и очистите защиту в Key Vault, чтобы защитить ключи от случайного или вредоносного удаления. Если служба хранилища Azure используется для хранения резервных копий шаблонов Azure Resource Manager, включите обратимое удаление, чтобы сохранять и восстанавливать данные при удалении больших двоичных объектов или моментальных снимков больших двоичных объектов.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?amp;preserve-view=true&view=azure-devops)
 
 - [О разрешениях и группах в Azure DevOps](/azure/devops/organizations/security/about-permissions)
 
@@ -807,5 +807,5 @@ Application Insights и Log Analytics оба продолжают принима
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

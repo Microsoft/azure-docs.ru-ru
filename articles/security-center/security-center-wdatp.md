@@ -7,12 +7,12 @@ ms.service: security-center
 ms.topic: how-to
 ms.date: 03/08/2021
 ms.author: memildin
-ms.openlocfilehash: 17e54dfc5c369a8cbb35db50ff2cbab131d34c2d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 085f3a5295d60b83536683a57a34b51abccd3067
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102453773"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043025"
 ---
 # <a name="protect-your-endpoints-with-security-centers-integrated-edr-solution-microsoft-defender-for-endpoint"></a>Защитите свои конечные точки с помощью интегрированного решения ЕДР центра безопасности: защитник Майкрософт для конечной точки
 
@@ -74,7 +74,7 @@ Microsoft Defender для конечной точки — целостное о
 1. Убедитесь, что компьютер соответствует необходимым требованиям для защитника конечной точки:
 
     - Для **всех версий Windows**:
-        - Настройте параметры сети, описанные в разделе [Настройка прокси устройства и параметров подключения к Интернету](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet) .
+        - Настройте параметры сети, описанные в разделе [Настройка прокси устройства и параметров подключения к Интернету](/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet) .
         - Если вы развертываете защитник для конечной точки на локальных компьютерах, подключите его к службе "Дуга" Azure, как описано в разделах [подключение гибридных компьютеров к серверам с поддержкой Arc Azure](../azure-arc/servers/learn/quick-enable-hybrid-vm.md) .
     - Кроме того, для **компьютеров под Windows Server 2019** убедитесь, что они используют допустимый агент и имеют расширение расширение microsoftmonitoringagent.
 

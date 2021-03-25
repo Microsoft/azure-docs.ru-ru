@@ -6,12 +6,12 @@ ms.date: 10/29/2020
 author: kryalama
 ms.custom: devx-track-java
 ms.author: kryalama
-ms.openlocfilehash: 35e53454e5b2c6265082bbedb4a8b60e82df7191
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 991e52c13a5730b83552abb6b922d4d7a57c5429
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101734576"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024121"
 ---
 # <a name="telemetry-processors-preview---azure-monitor-application-insights-for-java"></a>Обработчики данных телеметрии (предварительная версия) — Application Insights для Java в службе Azure Monitor
 
@@ -21,10 +21,13 @@ ms.locfileid: "101734576"
 Агент Java 3,0 для Application Insights может обрабатывать данные телеметрии перед экспортом данных.
 
 Ниже приведены некоторые варианты использования обработчиков данных телеметрии.
- * Создание конфиденциальных данных.
+ * Маскирование конфиденциальных данных.
  * Условно добавлять пользовательские измерения.
  * Обновите имя диапазона, которое используется для агрегирования сходных данных телеметрии в портал Azure.
- * Перетащите атрибуты span, чтобы контролировать стоимость приема.
+ * Удалите определенные атрибуты диапазона, чтобы контролировать стоимость приема.
+
+> [!NOTE]
+> Если вы хотите удалить определенные (целые) диапазоны для управления стоимостью приема, см. раздел [переопределения выборки](./java-standalone-sampling-overrides.md).
 
 ## <a name="terminology"></a>Терминология
 
@@ -335,7 +338,7 @@ ms.locfileid: "101734576"
 |---|---|---|
 | `http.method` | строка | Метод HTTP-запроса.|
 | `http.url` | строка | Полный URL-адрес запроса HTTP в форме `scheme://host[:port]/path?query[#fragment]` . Этот фрагмент обычно не передается по протоколу HTTP. Но если фрагмент известен, он должен быть включен.|
-| `http.status_code` | Число | [Код состояния ответа HTTP](https://tools.ietf.org/html/rfc7231#section-6).|
+| `http.status_code` | number | [Код состояния ответа HTTP](https://tools.ietf.org/html/rfc7231#section-6).|
 | `http.flavor` | строка | Тип протокола HTTP. |
 | `http.user_agent` | строка | Значение заголовка [HTTP-агента пользователя](https://tools.ietf.org/html/rfc7231#section-5.5.3) , отправленное клиентом. |
 

@@ -1,5 +1,5 @@
 ---
-title: Правила оценки для миграции SQL Server в SQL Управляемый экземпляр
+title: Правила оценки для SQL Server миграции Управляемый экземпляр SQL Azure
 description: Правила оценки для обнаружения проблем с исходным экземпляром SQL Server, которые должны быть решены перед миграцией в Azure SQL Управляемый экземпляр.
 ms.service: sql-managed-instance
 ms.subservice: migration-guide
@@ -10,14 +10,14 @@ author: MashaMSFT
 ms.author: mathoma
 ms.reviewer: MashaMSFT
 ms.date: 12/15/2020
-ms.openlocfilehash: 760a6496ff297ae6328810589f780b430d55b18a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: fc8959d44fbacd90916a045d23db4bee872c4670
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102054965"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026042"
 ---
-# <a name="assessment-rules-for-sql-server-to-sql-managed-instance-migration"></a>Правила оценки для миграции SQL Server в SQL Управляемый экземпляр
+# <a name="assessment-rules-for-sql-server-to--azure-sql-managed-instance-migration"></a>Правила оценки для SQL Server миграции Управляемый экземпляр SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
 
 Средства миграции проверяют экземпляр SQL Server источника, выполняя ряд правил оценки для обнаружения проблем, которые необходимо устранить перед переносом базы данных SQL Server в Управляемый экземпляр Azure SQL. 
@@ -572,7 +572,7 @@ Xp_cmdshell, который порождает командную оболочк
 
 Дополнительные сведения: [различия хранимых процедур в Azure SQL управляемый экземпляр](../../managed-instance/transact-sql-tsql-differences-sql-server.md#stored-procedures-functions-and-triggers)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы приступить к переносу SQL Server в Azure SQL Управляемый экземпляр, ознакомьтесь с [руководством по миграции SQL Server в sql управляемый экземпляр](sql-server-to-managed-instance-guide.md).
 
