@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 01/23/2021
 ms.custom: devx-track-csharp
 ms.openlocfilehash: e2ca5f42120661b887d07e697596f41cb7a7fce4
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98745772"
 ---
 # <a name="tutorial-index-azure-sql-data-using-the-net-sdk"></a>Руководство по Индексирование данных SQL Azure с помощью пакета SDK для .NET
@@ -43,7 +43,7 @@ ms.locfileid: "98745772"
 
 Исходный код для этого руководства размещен в папке [DotNetHowToIndexer](https://github.com/Azure-Samples/search-dotnet-getting-started/tree/master/DotNetHowToIndexers) репозитория [Azure-Samples/search-dotnet-getting-started](https://github.com/Azure-Samples/search-dotnet-getting-started) на GitHub.
 
-## <a name="1---create-services"></a>1. Создание служб
+## <a name="1---create-services"></a>1\. Создание служб
 
 В этом руководстве используются Когнитивный поиск Azure для индексирования и отправки запросов, а также база данных SQL — в качестве внешнего источника данных. Желательно создать обе службы в одном регионе и группе ресурсов, чтобы упростить взаимодействие и управление. На практике база данных SQL Azure может находиться в любом регионе.
 
@@ -101,7 +101,7 @@ ms.locfileid: "98745772"
 
    :::image type="content" source="media/search-get-started-rest/get-url-key.png" alt-text="Получение конечной точки HTTP и ключа доступа" border="false":::
 
-## <a name="2---set-up-your-environment"></a>2. Настройка среды
+## <a name="2---set-up-your-environment"></a>2\. Настройка среды
 
 1. Запустите Visual Studio и откройте файл **DotNetHowToIndexers.sln**.
 
@@ -121,7 +121,7 @@ ms.locfileid: "98745772"
 
 1. В строке подключения убедитесь, что она содержит допустимый пароль. Имя базы данных и пользователя копируются автоматически, а пароль необходимо вводить вручную.
 
-## <a name="3---create-the-pipeline"></a>3. Создание конвейера
+## <a name="3---create-the-pipeline"></a>3\. Создание конвейера
 
 Для индексаторов требуется объект источника данных и индекс. Нужный нам код находится в двух файлах:
 

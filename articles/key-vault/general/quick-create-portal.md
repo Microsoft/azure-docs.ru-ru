@@ -12,10 +12,10 @@ ms.custom: mvc
 ms.date: 12/08/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 729b6ccf1092679a71aa35f49be7d3199d4f4918
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97936283"
 ---
 # <a name="quickstart-create-a-key-vault-using-the-azure-portal"></a>Краткое руководство. Создание хранилища ключей с помощью портала Azure

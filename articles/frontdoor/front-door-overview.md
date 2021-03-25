@@ -8,17 +8,17 @@ ms.topic: overview
 ms.workload: infrastructure-services
 ms.date: 03/09/2021
 ms.author: duau
-ms.openlocfilehash: 2a5c298c201aa2a1f968c2a96dcfd6963a410cf7
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.openlocfilehash: ef3d415f4f0ca82e79df84ef48acc0323a69099a
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103149228"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104952156"
 ---
 # <a name="what-is-azure-front-door"></a>Что такое Azure Front Door?
 
 > [!IMPORTANT]
-> Эта документация предназначена для Azure Front Door. Ищете информацию об Azure Front Door цен. категории "Стандартный" или "Премиум" (предварительная версия)? см. [здесь](/standard-premium/overview.md).
+> Эта документация предназначена для Azure Front Door. Ищете информацию об Azure Front Door цен. категории "Стандартный" или "Премиум" (предварительная версия)? см. [здесь](standard-premium/overview.md).
 
 Azure Front Door — это глобальная масштабируемая точка входа, которая использует глобальную промежуточную подсеть Майкрософт для создания быстрых, безопасных и масштабируемых веб-приложений. С помощью службы Front Door вы можете преобразовать глобальные пользовательские и корпоративные приложения в современные, надежные, высокопроизводительные и персонализированные приложения с содержимым, которое охватывает глобальную аудиторию с помощью Azure.
 

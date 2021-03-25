@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.service: stream-analytics
 ms.custom: mvc
 ms.openlocfilehash: c585cedce677599528e036525dead13a85c8b102
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98012382"
 ---
 # <a name="quickstart-create-a-stream-analytics-job-by-using-the-azure-portal"></a>Краткое руководство по созданию задания Stream Analytics с помощью портала Azure
@@ -36,7 +36,7 @@ ms.locfileid: "98012382"
    
    |**Параметр**  |**Рекомендуемое значение**  |**Описание**  |
    |---------|---------|---------|
-   |Subscription  | \<Your subscription\> |  Выберите подписку Azure, которую нужно использовать. |
+   |Подписка  | \<Your subscription\> |  Выберите подписку Azure, которую нужно использовать. |
    |Группа ресурсов   |   asaquickstart-resourcegroup  |   Выберите **Создать** и введите новое имя группы ресурсов для учетной записи. |
    |Регион  |  \<Select the region that is closest to your users\> | Выберите географическое расположение для Центра Интернета вещей. Используйте ближайшее к пользователям расположение. |
    |Имя Центра Интернета вещей  | MyASAIoTHub  |   Выберите имя для Центра Интернета вещей.   |

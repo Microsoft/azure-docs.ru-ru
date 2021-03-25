@@ -8,12 +8,12 @@ ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 ms.date: 09/02/2020
-ms.openlocfilehash: 238ef9ec80b01470e28535d0eb42dbb3a377b005
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: fb1514c146dcd352451597e6182c6d99ed8836d6
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96746443"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044725"
 ---
 # <a name="how-to-create-plans-for-your-saas-offer"></a>Создание планов для предложения SaaS
 
@@ -149,6 +149,10 @@ ms.locfileid: "96746443"
 
 - Если план имеет состояние **черновик**, ссылка в столбце Action ( **действие** ) будет иметь значение **Delete черновик**.
 - Если состояние плана — " **динамический**", ссылка в столбце " **действие** " будет либо **прерывать тарифный план** , либо **синхронизировать личную аудиторию**. Ссылка на **личную аудиторию синхронизации** будет публиковать только изменения в вашей частной аудитории без публикации других обновлений, которые могли быть внесены в предложение.
+
+## <a name="before-you-publish-your-offer"></a>Перед публикацией предложения
+
+Если вы еще не сделали этого, создайте предложение разработки и тестирования (DEV), чтобы протестировать предложение перед публикацией производственного предложения. Дополнительные сведения см. в разделе [Создание предложения по разработке и тестированию](create-saas-dev-test-offer.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

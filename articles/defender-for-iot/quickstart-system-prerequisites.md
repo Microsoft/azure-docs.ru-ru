@@ -1,18 +1,14 @@
 ---
 title: Требования к системе
 description: Ознакомьтесь с требованиями к системе, необходимыми для использования Azure Defender для Интернета вещей.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
 ms.date: 11/30/2020
 ms.topic: quickstart
-ms.service: azure
-ms.openlocfilehash: 4b5db049e6d1cfe76bdd0d5cd6d7360e0b98bad0
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 78d5948554ae531c4b2f77d67bb916d5290db943
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103489817"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104780945"
 ---
 # <a name="system-prerequisites"></a>Требования к системе
 В этой статье перечислены требования к системе, необходимые для использования Azure Defender для Интернета вещей.

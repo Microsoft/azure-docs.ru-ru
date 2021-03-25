@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: b243fa18b17fdd15f3c39545b7d81f5796bd8429
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 218810183f547d4e90043364a318615a204df9d8
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101699867"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044861"
 ---
 # <a name="azure-security-baseline-for-cognitive-services"></a>Базовый план безопасности Azure для Cognitive Services
 
@@ -32,7 +32,7 @@ ms.locfileid: "101699867"
 
 Виртуальная сеть и конечная точка службы поддерживают Cognitive Services ограничены конкретным набором регионов.
 
-- [Настройка виртуальных сетей Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-virtual-networks?tabs=portal)
+- [Настройка виртуальных сетей Azure Cognitive Services](./cognitive-services-virtual-networks.md?tabs=portal)
 
 - [Общие сведения о виртуальных сетях Azure](../virtual-network/virtual-networks-overview.md)
 
@@ -63,7 +63,7 @@ ms.locfileid: "101699867"
 
 Также обратите внимание, что необходимо отключить глубокую проверку пакетов для решения брандмауэра на защищенных каналах, которые контейнеры Cognitive Services создают на серверах Майкрософт. В противном случае контейнер будет некорректно работать.
 
-- [Общие сведения о безопасности контейнеров Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support#azure-cognitive-services-container-security)
+- [Общие сведения о безопасности контейнеров Azure Cognitive Services](./cognitive-services-container-support.md#azure-cognitive-services-container-security)
 
 **Ответственность**: Customer
 
@@ -83,7 +83,7 @@ ms.locfileid: "101699867"
 
 - [Создание схемы Azure](../governance/blueprints/create-blueprint-portal.md)
 
-- [Общие сведения о безопасности контейнеров Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support#azure-cognitive-services-container-security)
+- [Общие сведения о безопасности контейнеров Azure Cognitive Services](./cognitive-services-container-support.md#azure-cognitive-services-container-security)
 
 **Ответственность**: Customer
 
@@ -112,7 +112,7 @@ ms.locfileid: "101699867"
 
 Также обратите внимание, что необходимо отключить глубокую проверку пакетов для решения брандмауэра на защищенных каналах, которые контейнеры Cognitive Services создают на серверах Майкрософт. В противном случае контейнер будет некорректно работать.
 
-- [Общие сведения о безопасности контейнеров Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support#azure-cognitive-services-container-security)
+- [Общие сведения о безопасности контейнеров Azure Cognitive Services](./cognitive-services-container-support.md#azure-cognitive-services-container-security)
 
 - [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/?term=Firewall)
 
@@ -131,7 +131,7 @@ ms.locfileid: "101699867"
 
 Также обратите внимание, что необходимо отключить глубокую проверку пакетов для решения брандмауэра на защищенных каналах, которые контейнеры Cognitive Services создают на серверах Майкрософт. В противном случае контейнер будет некорректно работать.
 
-- [Общие сведения о безопасности контейнеров Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support#azure-cognitive-services-container-security)
+- [Общие сведения о безопасности контейнеров Azure Cognitive Services](./cognitive-services-container-support.md#azure-cognitive-services-container-security)
 
 **Ответственность**: Customer
 
@@ -145,7 +145,7 @@ ms.locfileid: "101699867"
 
 - [Теги службы виртуальной сети](../virtual-network/service-tags-overview.md)
 
-- [Группы безопасности приложений](https://docs.microsoft.com/azure/virtual-network/network-security-groups-overview#application-security-groups)
+- [Группы безопасности приложений](../virtual-network/network-security-groups-overview.md#application-security-groups)
 
 **Ответственность**: Customer
 
@@ -179,9 +179,9 @@ ms.locfileid: "101699867"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений сетевых ресурсов, связанных с контейнером Cognitive Services. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -195,7 +195,7 @@ ms.locfileid: "101699867"
 
 **Руководство**. Включите параметры диагностики журнала действий Azure и отправьте журналы в рабочую область Log Analytics, концентратор событий Azure или учетную запись хранения Azure для архивации. Журналы действий позволяют получить представление об операциях, выполненных в контейнере Cognitive Services на уровне плоскости управления. С помощью данных журнала действий Azure можно определить "что, кто и когда" для любых операций записи (размещение, публикация, удаление), выполненных на уровне плоскости управления для кэша Azure для экземпляров Redis.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -207,7 +207,7 @@ ms.locfileid: "101699867"
 
 Кроме того, Cognitive Services отправляет диагностические события, которые можно собирать и использовать в целях анализа, оповещения и создания отчетов. Параметры диагностики для контейнера Cognitive Services можно настроить с помощью портал Azure. Вы можете отправить одно или несколько событий диагностики в учетную запись хранения, концентратор событий или рабочую область Log Analytics.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings-legacy)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 - [Использование параметров диагностики для Azure Cognitive Services](diagnostic-logging.md)
 
@@ -219,7 +219,7 @@ ms.locfileid: "101699867"
 
 **Руководство**. В Azure Monitor задайте период хранения для рабочей области Log Analytics согласно нормативным требованиям вашей организации. Используйте учетные записи хранения Azure для долгосрочного и архивного хранения.
 
-- [Задание параметров хранения журналов для рабочих областей Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Задание параметров хранения журналов для рабочих областей Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -229,9 +229,9 @@ ms.locfileid: "101699867"
 
 **Руководство**. Включение параметров диагностики журнала действий Azure и отправка журналов в рабочую область log Analytics. Эти журналы предоставляют широкие, часто встречающиеся данные о работе ресурса, которые используются для идентификации и отладки проблем. Выполнение запросов в Log Analytics для поиска терминов, выявления тенденций, анализа закономерностей и предоставления многих других аналитических сведений на основе данных журнала действий, которые могли быть собраны для Azure Cognitive Services.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
-- [Получение и анализ журналов действий Azure в Log Analytics рабочей области в Azure Monitor](/azure/azure-monitor/platform/activity-log)
+- [Получение и анализ журналов действий Azure в Log Analytics рабочей области в Azure Monitor](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -245,7 +245,7 @@ ms.locfileid: "101699867"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Создание и просмотр оповещений журнала, а также управление ими с помощью Azure Monitor](/azure/azure-monitor/platform/alerts-log)
+- [Создание и просмотр оповещений журнала, а также управление ими с помощью Azure Monitor](../azure-monitor/alerts/alerts-log.md)
 
 **Ответственность**: Customer
 
@@ -259,9 +259,9 @@ ms.locfileid: "101699867"
 
 **Руководство**. Azure Active Directory (Azure AD) содержит встроенные роли, которые должны быть явно назначены и доступны для запросов. Используйте модуль Azure AD PowerShell для выполнения нерегламентированных запросов для обнаружения учетных записей, входящих в группы администраторов.
 
-- [Как получить роль каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrole?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить роль каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole?amp;preserve-view=true&view=azureadps-2.0)
 
-- [Как получить членов роли каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember?amp;preserve-view=true&view=azureadps-2.0)
 
 **Ответственность**: Customer
 
@@ -275,7 +275,7 @@ ms.locfileid: "101699867"
 
 Не рекомендуется создавать пароли по умолчанию в приложении. Вместо этого можно хранить пароли в Azure Key Vault а затем использовать Azure AD для их извлечения.
 
-- [Повторное создание кэша Azure для ключей доступа Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-configure#settings)
+- [Повторное создание кэша Azure для ключей доступа Redis](../azure-cache-for-redis/cache-configure.md#settings)
 
 **Ответственность**: Customer
 
@@ -365,7 +365,7 @@ ms.locfileid: "101699867"
 
 Сейчас только API компьютерного зрения, API распознавания лиц, API анализа текста, иммерсивное средство чтения, распознаватель форм, детектор аномалий и все службы Bing, кроме Пользовательский поиск Bing, поддерживают проверку подлинности с помощью Azure AD.
 
-- [Проверка подлинности запросов на Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/authentication#authenticate-with-azure-active-directory)
+- [Проверка подлинности запросов на Cognitive Services](./authentication.md#authenticate-with-azure-active-directory)
 
 **Ответственность**: Customer
 
@@ -379,7 +379,7 @@ ms.locfileid: "101699867"
 
 - [Управление учетными записями пользователей в службе управления API Azure](../api-management/api-management-howto-create-or-invite-developers.md)
 
-- [Получение списка пользователей Управления API](https://docs.microsoft.com/powershell/module/az.apimanagement/get-azapimanagementuser?view=azps-4.8.0&amp;preserve-view=true)
+- [Получение списка пользователей Управления API](/powershell/module/az.apimanagement/get-azapimanagementuser?amp;preserve-view=true&view=azps-4.8.0)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -419,7 +419,7 @@ ms.locfileid: "101699867"
 
 **Руководство**: недоступно для Cognitive Services. Защищенное хранилище еще не поддерживается для Cognitive Services.
 
-- [Список поддерживаемых служб защищенного хранилища](https://docs.microsoft.com/azure/security/fundamentals/customer-lockbox-overview#supported-services-and-scenarios-in-general-availability)
+- [Список поддерживаемых служб защищенного хранилища](../security/fundamentals/customer-lockbox-overview.md#supported-services-and-scenarios-in-general-availability)
 
 **Ответственность**: Customer
 
@@ -502,7 +502,7 @@ ms.locfileid: "101699867"
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления доступом к плоскости управления Cognitive Services (т. е. портал Azure). 
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 **Ответственность**: Customer
 
@@ -514,7 +514,7 @@ ms.locfileid: "101699867"
 
 Вы также можете использовать Azure Key Vault для хранения ключей, управляемых клиентом. Можно либо создать собственные ключи и хранить их в хранилище ключей, либо использовать API-интерфейсы Azure Key Vault для их генерации.
 
-- [Список служб, которые шифруют неактивных данных](/azure/cognitive-services/encryption/cognitive-services-encryption-keys-portal)
+- [Список служб, которые шифруют неактивных данных](./encryption/cognitive-services-encryption-keys-portal.md)
 
 **Ответственность**: Customer
 
@@ -524,7 +524,7 @@ ms.locfileid: "101699867"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в рабочих экземплярах Cognitive Services и других критических или связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -542,7 +542,7 @@ ms.locfileid: "101699867"
 
 - [Как создавать запросы с помощью Azure Resource Graph](../governance/resource-graph/first-query-portal.md)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?amp;preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
@@ -604,7 +604,7 @@ ms.locfileid: "101699867"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -628,7 +628,7 @@ ms.locfileid: "101699867"
 
 **Руководство**. Определение и реализация стандартных конфигураций безопасности для контейнера Cognitive Services с помощью политики Azure. Используйте псевдонимы политик Azure в пространстве имен Microsoft. CognitiveServices, чтобы создать настраиваемые политики для аудита или принудительно применить конфигурацию кэша Azure для экземпляров Redis.
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?amp;preserve-view=true&view=azps-4.8.0)
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
@@ -652,9 +652,9 @@ ms.locfileid: "101699867"
 
 **Рекомендации**. Если вы используете пользовательские определения политик Azure или шаблоны Azure Resource Manager для контейнеров Cognitive Services и связанных ресурсов, используйте Azure Repos для безопасного хранения кода и управления им.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?amp;preserve-view=true&view=azure-devops)
 
-- [Документация по Azure Repos](https://docs.microsoft.com/azure/devops/repos/?view=azure-devops&amp;preserve-view=true)
+- [Документация по Azure Repos](/azure/devops/repos/?amp;preserve-view=true&view=azure-devops)
 
 **Ответственность**: Customer
 
@@ -686,7 +686,7 @@ ms.locfileid: "101699867"
 
 - [Интеграция с управляемыми удостоверениями Azure](../azure-app-configuration/howto-integrate-azure-managed-service-identity.md)
 
-- [Создание Key Vault](/azure/key-vault/quick-create-portal)
+- [Создание Key Vault](../key-vault/secrets/quick-create-portal.md)
 
 - [Проверка подлинности в Key Vault](../key-vault/general/authentication.md)
 
@@ -760,7 +760,7 @@ ms.locfileid: "101699867"
 
 - [Общие сведения об Azure Resource Manager](../azure-resource-manager/management/overview.md)
 
-- [Создание Cognitive Services ресурса с помощью шаблона Azure Resource Manager](https://docs.microsoft.com/azure/cognitive-services/resource-manager-template?tabs=portal)
+- [Создание Cognitive Services ресурса с помощью шаблона Azure Resource Manager](./create-account-resource-manager-template.md?tabs=portal)
 
 - [Экспорт одного и нескольких ресурсов в шаблон в портал Azure](../azure-resource-manager/templates/export-template-portal.md)
 
@@ -768,7 +768,7 @@ ms.locfileid: "101699867"
 
 - [Введение в службу автоматизации Azure](../automation/automation-intro.md)
 
-- [Как создать резервную копию ключей хранилища ключей в Azure](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Как создать резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/backup-azkeyvaultkey?amp;preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -780,7 +780,7 @@ ms.locfileid: "101699867"
 
 - [Развертывание ресурсов с помощью шаблонов ARM и портал Azure](../azure-resource-manager/templates/deploy-portal.md)
 
-- [Как восстановить резервную копию ключей хранилища ключей в Azure](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Как восстановить резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/restore-azkeyvaultkey?amp;preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -792,7 +792,7 @@ ms.locfileid: "101699867"
 
 Используйте управление доступом на основе ролей Azure для защиты ключей, управляемых клиентом. Включите Soft-Delete и очистите защиту в Key Vault, чтобы защитить ключи от случайного или вредоносного удаления. 
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?amp;preserve-view=true&view=azure-devops)
 
 - [О разрешениях и группах в Azure DevOps](/azure/devops/organizations/security/about-permissions)
 
@@ -890,5 +890,5 @@ ms.locfileid: "101699867"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

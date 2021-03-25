@@ -1,24 +1,14 @@
 ---
 title: Краткое руководство. Создание двойника модуля безопасности
 description: В этом кратком руководстве объясняется, как создать двойник модуля для использования с решением "Defender для Интернета вещей".
-services: defender-for-iot
-ms.service: defender-for-iot
-documentationcenter: na
-author: shhazam-ms
-manager: rkarlin
-editor: ''
-ms.devlang: na
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 1/21/2021
-ms.author: shhazam
-ms.openlocfilehash: 832c8e426b57e6b447ef805f2868a6d42abe3d9d
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 2ee88bd23b7d125ef9244f8ff630ee5eb8cdd015
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449702"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104782679"
 ---
 # <a name="quickstart-create-an-azureiotsecurity-module-twin"></a>Краткое руководство. Создание двойника модуля azureiotsecurity
 
@@ -39,9 +29,9 @@ ms.locfileid: "102449702"
 
 Решение "Defender для Интернета вещей" использует механизм двойника модуля и хранит двойник модуля _azureiotsecurity_ для каждого устройства.
 
-Двойник модуля безопасности содержит все сведения о безопасности каждого устройства.
+Двойник Defender-IoT-micro-agent содержит все сведения о безопасности каждого устройства.
 
-Для полноценного использования решения "Defender для Интернета вещей" необходимо создать, настроить и запустить такие двойники модуля безопасности для каждого устройства в службе.
+Для полноценного использования возможностей Defender для Интернета вещей необходимо создать, настроить и запустить двойники Defender-IoT-micro-agent для каждого устройства в службе.
 
 ## <a name="create-azureiotsecurity-module-twin"></a>Создание двойника модуля azureiotsecurity
 
