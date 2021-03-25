@@ -4,10 +4,10 @@ description: Руководство по визуализации аномали
 ms.topic: tutorial
 ms.date: 06/23/2020
 ms.openlocfilehash: bd08d611761e125fdd03173ce6027c60e82baed6
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98623464"
 ---
 # <a name="tutorial-visualize-data-anomalies-in-real-time-events-sent-to-azure-event-hubs"></a>Руководство по визуализации аномальных данных в событиях реального времени, отправляемых в Центры событий Azure

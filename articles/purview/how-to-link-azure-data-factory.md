@@ -6,13 +6,13 @@ ms.author: csugunan
 ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
-ms.date: 03/08/2021
-ms.openlocfilehash: 8812806e535e8e34ca07fdb13e6223bfa0c91d6b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 03/24/2021
+ms.openlocfilehash: c9f2a21a1183637ec4648868cccd6f343b003f0c
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102449617"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026629"
 ---
 # <a name="how-to-connect-azure-data-factory-and-azure-purview"></a>Подключение фабрики данных Azure и Azure зрения
 
@@ -148,6 +148,11 @@ Azure зрения захватывает журналы выполнения и
 - Копирование данных в файловый приемник с установкой максимального числа строк на файл.
 - Добавление дополнительных столбцов во время копирования.
 
+В дополнительных случаях журнал ресурсов данных (на вкладке Asset-> Schema) сообщается о следующих соединителях:
+
+- Файлы CSV и Parquet в большом двоичном объекте Azure, хранилище файлов Azure, ADLS 1-го поколения, ADLS 2-го поколения и Amazon S3
+- Обозреватель данных Azure, база данных SQL Azure, Управляемый экземпляр SQL Azure, Azure синапсе Analytics, SQL Server, Teradata
+
 ### <a name="data-factory-data-flow-support"></a>Поддержка потока данных фабрики данных
 
 | Хранилище данных | Поддерживается |
@@ -238,7 +243,7 @@ Azure зрения захватывает журналы выполнения и
 
 :::image type="content" source="./media/how-to-link-azure-data-factory/adf-resource-set-lineage.png" alt-text="Снимок экрана, показывающий журнал обращений и преобразований для набора ресурсов." lightbox="./media/how-to-link-azure-data-factory/adf-resource-set-lineage.png":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Пользовательская структура журнала преобразований каталога](catalog-lineage-user-guide.md)
 - [Ссылка на общую папку данных Azure для журнала обращений и преобразований](how-to-link-azure-data-share.md)

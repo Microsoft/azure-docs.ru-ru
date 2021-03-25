@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 03/02/2021
 ms.author: duau
 ms.openlocfilehash: d868c064b96f58ab3febc1fd3b7f20b74d507cb0
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102437167"
 ---
 # <a name="what-is-azure-route-server-preview"></a>Что такое сервер маршрутизации Azure (предварительная версия)? 

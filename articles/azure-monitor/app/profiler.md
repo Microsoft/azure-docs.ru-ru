@@ -6,12 +6,12 @@ author: cweining
 ms.author: cweining
 ms.date: 08/06/2018
 ms.reviewer: mbullwin
-ms.openlocfilehash: 2a5ba6cb0778e0c013f150d787d694b23f0497bd
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a53db9deb07863010c792943c71eb0af5d845af8
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102218015"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026511"
 ---
 # <a name="profile-live-azure-app-service-apps-with-application-insights"></a>Профилирование динамических приложений службы приложений Azure с помощью Application Insights
 
@@ -58,7 +58,7 @@ Application Insights Profiler можно включить, создав пара
 
 ## <a name="enable-profiler-for-other-clouds"></a>Включение профилировщика для других облаков
 
-Сейчас только регионы, требующие внесения изменений в конечную точку, — это [Azure для государственных организаций](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#application-insights) и [Azure для Китая](https://docs.microsoft.com/azure/china/resources-developer-guide).
+Сейчас только регионы, требующие внесения изменений в конечную точку, — это [Azure для государственных организаций](../../azure-government/compare-azure-government-global-azure.md#application-insights) и [Azure для Китая](/azure/china/resources-developer-guide).
 
 |Параметр приложения    | Облако для государственных организаций США | Облако для Китая |   
 |---------------|---------------------|-------------|
@@ -83,4 +83,3 @@ Application Insights Profiler можно включить, создав пара
 [Enablement UI]: ./media/profiler/Enablement_UI.png
 [profiler-app-setting]:./media/profiler/profiler-app-setting.png
 [disable-profiler-webjob]: ./media/profiler/disable-profiler-webjob.png
-

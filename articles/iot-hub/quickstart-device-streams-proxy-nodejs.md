@@ -10,10 +10,10 @@ ms.custom: references_regions
 ms.date: 03/14/2019
 ms.author: robinsh
 ms.openlocfilehash: ef45a6277adeff09a34fe22b7abeb21d3e603167
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98624360"
 ---
 # <a name="quickstart-enable-ssh-and-rdp-over-an-iot-hub-device-stream-by-using-a-nodejs-proxy-application-preview"></a>Краткое руководство. Подключение по протоколу SSH и RDP через поток устройств Центра Интернета вещей с помощью приложения прокси Node.js (предварительная версия)
@@ -62,7 +62,7 @@ az extension add --name azure-iot
 
 ## <a name="create-an-iot-hub"></a>Создание Центра Интернета вещей
 
-Если вы закончили работу с предыдущим руководством по [ отправке данных телеметрии с устройства в Центр Интернета вещей](quickstart-send-telemetry-node.md), можете пропустить этот шаг.
+Если вы закончили работу с предыдущим [руководством по отправке данных телеметрии с устройства в Центр Интернета вещей](quickstart-send-telemetry-node.md), этот шаг можно пропустить.
 
 [!INCLUDE [iot-hub-include-create-hub](../../includes/iot-hub-include-create-hub.md)]
 

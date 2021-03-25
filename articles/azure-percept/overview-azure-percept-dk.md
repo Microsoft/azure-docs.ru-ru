@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 03/23/2021
 ms.custom: template-concept
-ms.openlocfilehash: 722beda6eddb64581be3b724a8de5235f953bc6e
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 4e3acc4d3c3b772cbc6edf47d7216566c58d3dd0
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "104953788"
+ms.locfileid: "105026893"
 ---
 # <a name="azure-percept-dk-overview"></a>Обзор Azure Percept DK
 
@@ -62,7 +62,7 @@ Azure Перцепт DK — это пограничная пакет средс�
     - [Создание решения компьютерного зрения в Azure Percept Studio без необходимости писать код](./tutorial-nocode-vision.md)
     - [Создание речевого решения без кода в Azure Перцепт Studio](./tutorial-no-code-speech.md) (требуется предварительная аудиоподсистема Azure перцепт)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Купить Azure Перцепт DK из Microsoft Online Store](https://go.microsoft.com/fwlink/p/?LinkId=2155270)

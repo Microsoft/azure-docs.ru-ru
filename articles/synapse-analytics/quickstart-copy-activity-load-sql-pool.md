@@ -11,10 +11,10 @@ ms.topic: quickstart
 ms.custom: seo-lt-2019
 ms.date: 11/02/2020
 ms.openlocfilehash: 568c738284a3d1b54ba907a973139fbced11f139
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98222702"
 ---
 # <a name="quickstart-load-data-into-dedicated-sql-pool-using-the-copy-activity"></a>Краткое руководство. Загрузка данных в выделенный пул SQL с помощью действия копирования

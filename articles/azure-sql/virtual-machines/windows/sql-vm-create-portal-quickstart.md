@@ -14,10 +14,10 @@ ms.date: 07/11/2019
 ms.author: mathoma
 ms.reviewer: jroth
 ms.openlocfilehash: 335a63faa440e057c282f992b67b301289a7a4bb
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97356979"
 ---
 # <a name="quickstart-create-sql-server-2017-on-a-windows-virtual-machine-in-the-azure-portal"></a>Краткое руководство. Создание виртуальной машины SQL Server 2017 на платформе Windows с помощью портала Azure

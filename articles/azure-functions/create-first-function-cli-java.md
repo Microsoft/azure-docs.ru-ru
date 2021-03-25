@@ -11,10 +11,10 @@ adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts
 adobe-target-experience: Experience B
 adobe-target-content: ./create-first-function-cli-java-uiex
 ms.openlocfilehash: 0ef52da8400cfadfaaa26664d984d8b898a3b9a3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101729306"
 ---
 # <a name="quickstart-create-a-java-function-in-azure-from-the-command-line"></a>Краткое руководство. Создание функции Java в Azure из командной строки

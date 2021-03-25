@@ -5,10 +5,10 @@ ms.topic: overview
 ms.date: 09/22/2020
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: b6a14ba3f905fbef3fc3796b616cd594941a3d60
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97028637"
 ---
 # <a name="overview-of-azure-service-fabric"></a>Общие сведения о Service Fabric

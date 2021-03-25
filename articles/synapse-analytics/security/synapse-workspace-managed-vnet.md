@@ -9,10 +9,10 @@ ms.date: 01/18/2021
 ms.author: ronytho
 ms.reviewer: jrasnick
 ms.openlocfilehash: f55251932c8aa8f632bd3b498943ac722f006dee
-ms.sourcegitcommit: 9d9221ba4bfdf8d8294cf56e12344ed05be82843
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98569927"
 ---
 # <a name="azure-synapse-analytics-managed-virtual-network"></a>Управляемая виртуальная сеть Azure Synapse Analytics
