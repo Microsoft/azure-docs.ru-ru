@@ -4,10 +4,10 @@ description: Сопоставление элементов управления 
 ms.date: 01/08/2021
 ms.topic: sample
 ms.openlocfilehash: e1356acfd7b6b9693322000077b221781b58681f
-ms.sourcegitcommit: c4c554db636f829d7abe70e2c433d27281b35183
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98035042"
 ---
 # <a name="control-mapping-of-the-media-blueprint-sample"></a>Сопоставление элементов управления на примере схемы Media

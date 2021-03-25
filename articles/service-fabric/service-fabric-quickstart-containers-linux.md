@@ -5,10 +5,10 @@ ms.topic: quickstart
 ms.date: 07/22/2019
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: f58b8feda0e88d8a5e7cddaabbc650b0f0ab3973
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98788168"
 ---
 # <a name="quickstart-deploy-linux-containers-to-service-fabric"></a>Краткое руководство. Развертывание контейнеров Linux в Service Fabric

@@ -8,10 +8,10 @@ ms.custom: mvc
 ms.topic: quickstart
 ms.date: 9/21/2020
 ms.openlocfilehash: dc6b069e3c7686ec6964dab890e503aa193cf6fe
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92545112"
 ---
 # <a name="quickstart-use-php-to-connect-and-query-data-in-azure-database-for-mysql---flexible-server"></a>Краткое руководство. Подключение к Базе данных Azure для MySQL (Гибкий сервер) и запрос данных из нее с помощью PHP
@@ -24,8 +24,8 @@ ms.locfileid: "92545112"
 ## <a name="prerequisites"></a>Предварительные требования
 В качестве отправной точки в этом кратком руководстве используются ресурсы, созданные в соответствии со следующими материалами:
 
-- [Создание сервера Базы данных Azure для MySQL (Гибкий сервер) с помощью портала Azure](./quickstart-create-server-portal.md)
-- [Создание сервера Базы данных Azure для MySQL (Гибкий сервер) с помощью Azure CLI](./quickstart-create-server-cli.md)
+- [Создание Базы данных Azure для MySQL (Гибкий сервер) с помощью портала Azure](./quickstart-create-server-portal.md)
+- [Создание Базы данных Azure для MySQL (Гибкий сервер) с помощью Azure CLI](./quickstart-create-server-cli.md)
 
 ## <a name="preparing-your-client-workstation"></a>Подготовка клиентской рабочей станции
 1. Если вы создали гибкий сервер в режиме *Закрытый доступ (интеграция с виртуальной сетью)* , к этому серверу придется подключаться с другого ресурса в той же виртуальной сети. Например, можно создать виртуальную машину и добавить ее в виртуальную сеть, созданную для гибкого сервера. Дополнительные сведения см. в статье [Создание виртуальной сети для Базы данных Azure для MySQL (Гибкий сервер) и управление ею с помощью Azure CLI](./how-to-manage-virtual-network-cli.md).
@@ -56,9 +56,9 @@ ms.locfileid: "92545112"
 Получите сведения о подключении, необходимые для подключения к Гибкому серверу Базы данных Azure для MySQL. Вам потребуется полное имя сервера и учетные данные для входа.
 
 1. Войдите на [портал Azure](https://portal.azure.com/).
-2. В меню слева на портале Azure выберите **Все ресурсы** и выполните поиск по имени созданного сервера (например, **mydemoserver** ).
+2. В меню слева на портале Azure выберите **Все ресурсы** и выполните поиск по имени созданного сервера (например, **mydemoserver**).
 3. Выберите имя сервера.
-4. Запишите **имя сервера** и **имя для входа администратора сервера** с панели сервера **Обзор** . Если вы забыли свой пароль, можно также сбросить пароль с помощью этой панели.
+4. Запишите **имя сервера** и **имя для входа администратора сервера** с панели сервера **Обзор**. Если вы забыли свой пароль, можно также сбросить пароль с помощью этой панели.
  <!---:::image type="content" source="./media/connect-php/1_server-overview-name-login.png" alt-text="Azure Database for MySQL Flexible Server name":::--->
 
 ## <a name="connecting-to-flexible-server-using-tlsssl-in-php"></a>Подключение к гибкому серверу с помощью TLS или SSL в PHP
@@ -258,7 +258,7 @@ mysqli_close($conn);
 ?>
 ```
 ## <a name="next-steps"></a>Дальнейшие действия
-- [Зашифрованное подключение с использованием протокола TLS 1.2 к Базе данных Azure для MySQL (Гибкий сервер)](./how-to-connect-tls-ssl.md).
+- [Зашифрованное подключение с использованием протокола TLS 1.2 к Базе данных Azure для MySQL (Гибкий сервер)](./how-to-connect-tls-ssl.md).
 - Изучите дополнительные сведения о [сетевых подключениях к Гибкому серверу Базы данных Azure для MySQL](./concepts-networking.md).
 - [Создание правил брандмауэра для Гибкого сервера Базы данных Azure для MySQL и управление ими с помощью портала Azure](./how-to-manage-firewall-portal.md).
 - [Создание виртуальной сети для Гибкого сервера Базы данных Azure для MySQL и управление ею с помощью портала Azure](./how-to-manage-virtual-network-portal.md).

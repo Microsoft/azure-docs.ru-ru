@@ -9,10 +9,10 @@ ms.date: 02/10/2021
 ms.author: raynew
 ms.custom: mvc
 ms.openlocfilehash: 014b4d09a991ae4d0bb31ec0b9adee0c9e3b3553
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100361015"
 ---
 # <a name="tutorial-move-encrypted-azure-vms-across-regions"></a>Руководство по перемещению зашифрованных виртуальных машин Azure между регионами

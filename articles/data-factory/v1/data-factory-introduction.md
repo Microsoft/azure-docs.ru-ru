@@ -3,16 +3,16 @@ title: Введение в Фабрику данных — службу инт�
 description: Сведения о Фабрике данных Azure. Это облачная служба интеграции данных, которая позволяет организовать и автоматизировать перемещение и преобразование данных.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: overview
 ms.date: 01/22/2018
-ms.openlocfilehash: 1cee5f92af4e23a6bc0d195bc13bc3f11f53443d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 220c1969055ffaa5d1bea41ab547efd4596f8a20
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100382979"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786470"
 ---
 # <a name="introduction-to-azure-data-factory"></a>Знакомство с Фабрикой данных Azure 
 > [!div class="op_single_selector" title1="Выберите используемую версию службы "Фабрика данных":"]

@@ -14,10 +14,10 @@ ms.reviewer: agirling, saeeda, benv, marsma
 ms.custom: aaddev
 ROBOTS: NOINDEX
 ms.openlocfilehash: ab0057f55ddb5bf76f6fa74b0211b5ea5af24288
-ms.sourcegitcommit: 4c89d9ea4b834d1963c4818a965eaaaa288194eb
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96608220"
 ---
 # <a name="evolution-of-microsoft-identity-platform"></a>Развитие платформы удостоверений Майкрософт

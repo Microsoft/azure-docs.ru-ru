@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 3338f7b6bd418cea2bfdbbcd40692b9342f48cfa
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4db23982dfaed1447023edb417a3732dac94bdc4
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98744815"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025243"
 ---
 # <a name="frequently-asked-questions-for-azure-cloud-services-extended-support"></a>Часто задаваемые вопросы об Облачных службах Azure (расширенная поддержка)
 В этой статье рассматриваются часто задаваемые вопросы об облачных службах Azure (Расширенная поддержка).
@@ -82,6 +82,8 @@ Key Vault, виртуальная сеть, общедоступные IP-адр
 ### <a name="how-does-my-application-code-change-on-cloud-services-extended-support"></a>Как изменяется код приложения в облачных службах (Расширенная поддержка)
 Для кода приложения, упакованного в cspkg, не требуется никаких изменений. Существующие приложения будут продолжать работать как и раньше. 
 
+### <a name="does-cloud-services-extended-support-allow-ctp-package-format"></a>Разрешает ли облачные службы (Расширенная поддержка) формат пакета CTP?
+Формат пакета CTP не поддерживается в облачных службах (Расширенная поддержка). Однако он допускает расширенный размер пакета 800 МБ.
 
 ## <a name="migration"></a>Миграция
 
@@ -91,7 +93,7 @@ Key Vault, виртуальная сеть, общедоступные IP-адр
 ### <a name="when-do-i-need-to-migrate"></a>Когда нужно выполнить миграцию? 
 Оценка необходимого времени и сложности миграции зависит от диапазона переменных. Планирование — это наиболее эффективный шаг для понимания области работы, блокирования и сложности миграции.
 
-## <a name="networking"></a>Сеть
+## <a name="networking"></a>сеть;
 
 ### <a name="why-cant-i-create-a-deployment-without-virtual-network"></a>Почему не удается создать развертывание без виртуальной сети?
 Виртуальные сети являются обязательным ресурсом для любого развертывания на Azure Resource Manager. Развертывание облачных служб (Расширенная поддержка) должно находиться в виртуальной сети. 
@@ -119,5 +121,5 @@ Key Vault, виртуальная сеть, общедоступные IP-адр
 ### <a name="can-i-use-one-key-vault-for-all-my-deployments-in-all-regions"></a>Можно ли использовать один Key Vault для всех моих развертываний во всех регионах?
 Нет. Key Vault является региональным ресурсом, и клиентам требуется по одной Key Vault в каждом регионе. Однако один Key Vault можно использовать для всех развертываний в пределах заданного региона.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Чтобы приступить к использованию облачных служб (Расширенная поддержка), см. статью [Развертывание облачной службы (Расширенная поддержка) с помощью PowerShell](deploy-powershell.md) .

@@ -8,12 +8,12 @@ author: mlearned
 ms.author: mlearned
 description: Устранение распространенных проблем с кластерами Kubernetes с поддержкой Arc.
 keywords: Kubernetes, Arc, Azure, контейнеры
-ms.openlocfilehash: e1f4e84f16c6b584f1ffbd918a86c251f47efcca
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 992ea75c48b2630032e1314610986fbc610eec7b
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101654006"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025787"
 ---
 # <a name="azure-arc-enabled-kubernetes-troubleshooting"></a>Устранение неполадок Kubernetes с поддержкой ARC в Azure
 
@@ -46,7 +46,7 @@ REVISION: 5
 TEST SUITE: None
 ```
 
-Если выпуск Helm не найден или отсутствует, попробуйте [подключить кластер к службе "Дуга" Azure](./connect-cluster.md) еще раз.
+Если выпуск Helm не найден или отсутствует, попробуйте [подключить кластер к службе "Дуга" Azure](./quickstart-connect-cluster.md) еще раз.
 
 Если выпуск Helm имеется в `STATUS: deployed` , проверьте состояние агентов с помощью `kubectl` :
 

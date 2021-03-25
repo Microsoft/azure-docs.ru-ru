@@ -9,10 +9,10 @@ ms.custom: subject-armqs
 ms.author: danlep
 ms.date: 10/06/2020
 ms.openlocfilehash: 97b556e0329644b973def8333ddb5e70e370b0bc
-ms.sourcegitcommit: d2222681e14700bdd65baef97de223fa91c22c55
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91826990"
 ---
 # <a name="quickstart-create-a-geo-replicated-container-registry-by-using-an-arm-template"></a>Краткое руководство. Создание геореплицированного реестра контейнеров с помощью шаблона ARM
@@ -65,7 +65,7 @@ ms.locfileid: "91826990"
 
 1. После успешного создания реестра вы получите уведомление:
 
-     :::image type="content" source="media/container-registry-get-started-geo-replication-template/deployment-notification.png" alt-text="Свойства шаблона":::
+     :::image type="content" source="media/container-registry-get-started-geo-replication-template/deployment-notification.png" alt-text="Уведомление на портале":::
 
  Для развертывания шаблона используется портал Azure. Кроме портала Azure, вы можете использовать Azure PowerShell, Azure CLI и REST API. Дополнительные сведения о других методах развертывания см. в статье о [развертывании с использованием шаблонов](../azure-resource-manager/templates/deploy-cli.md).
 
@@ -77,11 +77,11 @@ ms.locfileid: "91826990"
 
 1. Запишите значение **Сервер входа** реестра а странице **Обзор**. Используйте этот универсальный код ресурса (URI) в Docker, чтобы отмечать образы и отправлять их в реестр. Дополнительные сведения см. в статье [Отправка первого образа с помощью интерфейса командной строки Docker](container-registry-get-started-docker-cli.md).
 
-    :::image type="content" source="media/container-registry-get-started-geo-replication-template/registry-overview.png" alt-text="Свойства шаблона":::
+    :::image type="content" source="media/container-registry-get-started-geo-replication-template/registry-overview.png" alt-text="Общие сведения о реестре":::
 
 1. На странице **Репликации** проверьте местоположения основной реплики и реплики, добавленной с помощью шаблона. При необходимости добавьте дополнительные реплики на этой странице.
 
-    :::image type="content" source="media/container-registry-get-started-geo-replication-template/registry-replications.png" alt-text="Свойства шаблона":::
+    :::image type="content" source="media/container-registry-get-started-geo-replication-template/registry-replications.png" alt-text="Репликации реестра":::
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
