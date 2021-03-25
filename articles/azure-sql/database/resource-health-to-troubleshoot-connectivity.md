@@ -10,13 +10,13 @@ ms.topic: conceptual
 author: aamalvea
 ms.author: aamalvea
 ms.reviewer: wiassaf, sstein
-ms.date: 02/26/2019
-ms.openlocfilehash: 1a74a2f44ac9b03e39e9fea48a3428b82111a48c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 03/24/2021
+ms.openlocfilehash: 4434c796a41126444b8785440427123e88e0b528
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103471996"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107794"
 ---
 # <a name="use-resource-health-to-troubleshoot-connectivity-for-azure-sql-database-and-azure-sql-managed-instance"></a>Использование Работоспособность ресурсов для устранения неполадок подключения к базе данных SQL Azure и Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -71,10 +71,10 @@ ms.locfileid: "103471996"
 
 Перенастройки рассматриваются как временные условия, и их ожидаемое время. Эти события могут запускаться при балансировке нагрузки или сбоях оборудования и программного обеспечения. Любое клиентское рабочее приложение, которое подключается к облачной базе данных, должно реализовывать надежную [логику повторных подключений](troubleshoot-common-connectivity-issues.md#retry-logic-for-transient-errors). Это поможет устранить такие ситуации и сделает эти ошибки прозрачными для пользователя.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [логике повторных попыток для временных ошибок](troubleshoot-common-connectivity-issues.md#retry-logic-for-transient-errors).
 - [Устранение неполадок, диагностика и предотвращение ошибок подключения SQL](troubleshoot-common-connectivity-issues.md).
 - Дополнительные сведения о [настройке оповещений работоспособность ресурсов](../../service-health/resource-health-alert-arm-template-guide.md).
-- Ознакомьтесь с обзором [работоспособность ресурсов](../../application-gateway/resource-health-overview.md).
+- Ознакомьтесь с обзором [работоспособность ресурсов](../../service-health/resource-health-overview.md).
 - Ознакомьтесь [работоспособность ресурсов часто задаваемые вопросы](../../service-health/resource-health-faq.md).

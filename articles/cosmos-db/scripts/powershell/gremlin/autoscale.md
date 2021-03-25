@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 07/30/2020
 ms.author: mjbrown
 ms.openlocfilehash: 072c1e286e0345d9651636ff6a3ce337bb674446
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98679263"
 ---
 # <a name="create-a-database-and-graph-with-autoscale-for-azure-cosmos-db---gremlin-api"></a>Создание базы данных и графа с автомасштабированием в Azure Cosmos DB — API Gremlin

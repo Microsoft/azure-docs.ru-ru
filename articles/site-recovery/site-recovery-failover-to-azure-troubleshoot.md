@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: storage-backup-recovery
 ms.date: 01/08/2020
 ms.author: mayg
-ms.openlocfilehash: d2a0444483c382da7c54accf7dca49d097671771
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8fe21ce5b92d672a2e025e0b45b8cbaea5951a8b
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92371993"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043909"
 ---
 # <a name="troubleshoot-errors-when-failing-over-vmware-vm-or-physical-machine-to-azure"></a>Устранение ошибок при отработке отказа виртуальной машины VMware или физического компьютера в Azure
 
@@ -78,9 +78,9 @@ ms.locfileid: "92371993"
 
 ## <a name="unable-to-connectrdpssh-to-the-failed-over-virtual-machine-due-to-grayed-out-connect-button-on-the-virtual-machine"></a>Не удается подключиться по протоколу RDP или SSH к виртуальной машине, для которой выполнена отработка отказа, поскольку кнопка подключения неактивна на виртуальной машине
 
-Подробные инструкции по устранению неполадок в RDP см. в нашей [документации.](../virtual-machines/troubleshooting/troubleshoot-rdp-connection.md)
+Подробные инструкции по устранению неполадок в RDP см. в нашей [документации.](/troubleshoot/azure/virtual-machines/troubleshoot-rdp-connection)
 
-Подробные инструкции по устранению неполадок, связанных с SSH, см. в [нашей документации.](../virtual-machines/troubleshooting/troubleshoot-ssh-connection.md)
+Подробные инструкции по устранению неполадок, связанных с SSH, см. в [нашей документации.](/troubleshoot/azure/virtual-machines/troubleshoot-ssh-connection)
 
 Если кнопка **Подключиться** на виртуальной машине, для которой выполнена отработка отказа, неактивна и вы не подключены к Azure через Express Route или VPN-подключение типа "сеть — сеть".
 
@@ -94,7 +94,7 @@ ms.locfileid: "92371993"
 
 ## <a name="unable-to-connectrdpssh---vm-connect-button-available"></a>Невозможно подключиться по протоколу RDP или SSH. На виртуальной машине активна кнопка "Подключиться"
 
-Если кнопка **Подключиться** на виртуальной машине, для которой выполнена отработка отказа, активна, тогда проведите **диагностику загрузки** на виртуальной машине и проверьте ее на наличие ошибок, как указано в [этой статье](../virtual-machines/troubleshooting/boot-diagnostics.md).
+Если кнопка **Подключиться** на виртуальной машине, для которой выполнена отработка отказа, активна, тогда проведите **диагностику загрузки** на виртуальной машине и проверьте ее на наличие ошибок, как указано в [этой статье](/troubleshoot/azure/virtual-machines/boot-diagnostics).
 
 1. Если виртуальная машина не запустилась, попробуйте выполнить отработку отказа до предыдущей точки восстановления.
 2. Если работа приложения на виртуальной машине не восстановится, попробуйте выполнить отработку отказа до согласованной с приложениями точки восстановления.
@@ -182,7 +182,7 @@ RegisterHostStaticInfo encountered exception config/talwrapper.cpp(107)[post] Cu
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Устранение неполадок [с подключением к виртуальной машине Windows через удаленный рабочий стол](../virtual-machines/troubleshooting/troubleshoot-rdp-connection.md)
-- Устранение неполадок [с SSH-подключением к виртуальной машине Linux](../virtual-machines/troubleshooting/detailed-troubleshoot-ssh-connection.md)
+- Устранение неполадок [с подключением к виртуальной машине Windows через удаленный рабочий стол](/troubleshoot/azure/virtual-machines/troubleshoot-rdp-connection)
+- Устранение неполадок [с SSH-подключением к виртуальной машине Linux](/troubleshoot/azure/virtual-machines/detailed-troubleshoot-ssh-connection)
 
 Если вам нужна дополнительная помощь, разместите свой запрос на [странице с вопросами о Site Recovery (раздел вопросов и ответов на сайте Майкрософт)](/answers/topics/azure-site-recovery.html) или оставьте комментарий в конце этого документа. У нас есть активное сообщество, где вам смогут помочь.

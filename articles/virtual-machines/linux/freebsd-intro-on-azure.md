@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.workload: infrastructure-services
 ms.date: 09/13/2017
 ms.author: mimckitt
-ms.openlocfilehash: 0451047cd0fa31d27553a33b0c9318e03ffa222e
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: da51fabaaa3c02137770f0b2d9a851b1f6702980
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102558956"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044055"
 ---
 # <a name="introduction-to-freebsd-on-azure"></a>Введение в FreeBSD в Azure
 В этой статье представлен обзор запуска виртуальной машины FreeBSD в Azure.
@@ -47,10 +47,10 @@ sudo pkg install bash
 Если на компьютере FreeBSD не установлен python, выполните следующие команды перед установкой. 
 
 ```bash
-sudo pkg install python35
+sudo pkg install python38
 cd /usr/local/bin 
 sudo rm /usr/local/bin/python 
-sudo ln -s /usr/local/bin/python3.5 /usr/local/bin/python
+sudo ln -s /usr/local/bin/python3.8 /usr/local/bin/python
 ```
 
 Во время установки вам будет задан вопрос `Modify profile to update your $PATH and enable shell/tab completion now? (Y/n)`. Если вы ответили `y` и указали `/etc/rc.conf` в качестве `a path to an rc file to update`, может возникнуть следующая ошибка: `ERROR: [Errno 13] Permission denied`. Чтобы устранить эту проблему, нужно предоставить текущему пользователю права на запись для файла `etc/rc.conf`.

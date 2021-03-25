@@ -9,12 +9,13 @@ ms.subservice: synapse-link
 ms.date: 08/10/2020
 ms.author: acomet
 ms.reviewer: jrasnick
-ms.openlocfilehash: 13891f9614e658be39adbb69fed1503a0c66d5e4
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.custom: cosmos-db
+ms.openlocfilehash: 755782b117ef5a5619ddde3e1573fe1805117e77
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93309221"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868568"
 ---
 # <a name="copy-data-from-azure-cosmos-db-into-a-dedicated-sql-pool-using-apache-spark"></a>Копирование данных из Azure Cosmos DB в выделенный пул SQL с помощью Apache Spark
 
@@ -50,7 +51,7 @@ ms.locfileid: "93309221"
 * weekStarting: long (nullable = true)
 * _etag: string (nullable = true)
 
-Для отчетности мы будем агрегировать продажи ( *quantity* , *revenue* (price x quantity) по *productCode* и *weekStarting*. Наконец, мы экспортируем эти данные в таблицу выделенного пула SQL с именем **dbo.productsales**.
+Для отчетности мы будем агрегировать продажи (*quantity*, *revenue* (price x quantity) по *productCode* и *weekStarting*. Наконец, мы экспортируем эти данные в таблицу выделенного пула SQL с именем **dbo.productsales**.
 
 ## <a name="configure-a-spark-notebook"></a>Настройка записной книжки Spark
 Создайте записную книжку Spark, используя в качестве основного языка с Scala на Spark (Scala). Мы используем для сеанса заданный по умолчанию параметр записной книжки.

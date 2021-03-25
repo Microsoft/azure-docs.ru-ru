@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/03/2021
 ms.author: yelevin
-ms.openlocfilehash: 30cd0181ff2c5fbb8918921be3515818128a98d0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 270e7f748f0d7fda14d93ac753ba655117f7ad36
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102048239"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044158"
 ---
 # <a name="useful-resources-for-working-with-azure-sentinel"></a>Полезные ресурсы для работы с Azure Sentinel
 
@@ -28,7 +28,7 @@ ms.locfileid: "102048239"
 
 ## <a name="learn-more-about-creating-queries"></a>Дополнительные сведения о создании запросов
 
-Для создания запросов в Azure Sentinel используется Azure Monitor язык запросов Kusto Log Analytics (ККЛ). Дополнительные сведения см. в разделе:
+Для создания запросов в Azure Sentinel используется Azure Monitor язык запросов Kusto Log Analytics (ККЛ). Для получения дополнительной информации см.
 
 - [Основные понятия ККЛ](/azure/data-explorer/kusto/concepts/)
 - [Запросы ККЛ](/azure/data-explorer/kusto/query/)
@@ -39,7 +39,7 @@ ms.locfileid: "102048239"
 
 Создайте автоматизацию в Azure Sentinel с помощью Azure Logic Apps с растущей галереей встроенных модули PlayBook. 
 
-Дополнительные сведения см. в разделе [соединители Azure Logic Apps](https://docs.microsoft.com/connectors/).
+Дополнительные сведения см. в разделе [соединители Azure Logic Apps](/connectors/).
 
 ## <a name="comment-on-our-blogs-and-forums"></a>Комментарии к блогам и форумам
 
@@ -67,4 +67,3 @@ ms.locfileid: "102048239"
 
 > [!div class="nextstepaction"]
 > [Чтение истории вариантов использования клиента](https://customers.microsoft.com/en-us/search?sq=%22Azure%20Sentinel%20%22&ff=&p=0&so=story_publish_date%20desc)
-

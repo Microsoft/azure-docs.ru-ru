@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 09/24/2020
 ms.author: jeedes
 ms.openlocfilehash: 3cca568245dfce01fb96d7a46590cb72349213ac
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97591962"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-web-cargo-air"></a>Руководство по интеграции единого входа Azure Active Directory с Web Cargo Air

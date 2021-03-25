@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: dfb887004cd29b5bd9f1d9886b7dfa5f43c83dbe
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99530901"
 ---
 MP4-файлы записываются в каталог на пограничном устройстве, указанном в файле *.env* с помощью ключа VIDEO_OUTPUT_FOLDER_ON_DEVICE. Если использовано значение по умолчанию, результаты должны находиться в папке */var/media/* .

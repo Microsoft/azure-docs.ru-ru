@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 05/13/2020
 ms.author: mjbrown
 ms.openlocfilehash: b287bc851e560261d56ccda5d73d5319619146ab
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98684044"
 ---
 # <a name="create-a-container-with-indexing-turned-off-in-an-azure-cosmos-db-account-using-powershell"></a>Создание контейнера с отключенным индексированием в учетной записи Azure Cosmos DB с помощью PowerShell

@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 11/24/2020
 ms.author: jeedes
 ms.openlocfilehash: 53abb706bd741e4a7ce548a89dc324dc68376179
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98725430"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-rightcrowd-workforce-management"></a>Руководство по Интеграция единого входа Azure Active Directory с приложением RightCrowd Workforce Management

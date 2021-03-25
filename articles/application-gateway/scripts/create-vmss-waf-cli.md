@@ -13,10 +13,10 @@ ms.date: 01/29/2018
 ms.author: victorh
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: e9201f41c9552b6a60f9ccd8eacda60ac46f89eb
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99591640"
 ---
 # <a name="restrict-web-traffic-using-the-azure-cli"></a>Ограничение веб-трафика с помощью Azure CLI

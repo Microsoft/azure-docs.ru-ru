@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 70042a5c4c27ec5d163e5f05089ae50b92140c28
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b0969ffae7963d6a5f9ac249e43750444ab11baa
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103011261"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105036056"
 ---
 # <a name="how-to-use-the-microsoft-smooth-streaming-plugin-for-the-adobe-open-source-media-framework"></a>Использование подключаемого модуля Smooth Streaming Майкрософт для платформы Adobe Open Source Media Framework
 
@@ -59,7 +59,7 @@ SS для OSMF включает в себя две версии подключа
 * Статическая загрузка: для статической загрузки требуется файл статической библиотеки (SWC). Статические подключаемые модули добавляются как ссылки на проекты и объединяются с окончательным выходным файлом во время компиляции.
 * Динамическая загрузка: для динамической загрузки требуется предварительно скомпилированный файл (SWF). Динамические подключаемые модули загружаются во время выполнения и не включаются в выходные данные проекта. (Выходные данные компиляции) Динамические подключаемые модули можно загрузить с использованием протоколов HTTP и FILE.
 
-Дополнительные сведения о статической и динамической загрузке см. на официальной [странице подключаемого модуля OSMF](http://osmf.org/dev/osmf/OtherPDFs/osmf_plugin_dev_guide.pdf).
+Дополнительные сведения о статической и динамической загрузке см. на официальной [странице подключаемого модуля OSMF](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.izua300/IZUHPINFO_PluginsPlanning.htm).
 
 ### <a name="ss-for-osmf-static-loading"></a>Динамическая загрузка SS для OSMF
 В следующем фрагменте кода показано, как загрузить подключаемый модуль SS для OSMF статически и воспроизвести простое видео с помощью класса MediaFactory OSMF. Перед добавлением кода SS для OSMF убедитесь, что ссылка на проект включает статический подключаемый модуль "MSAdaptiveStreamingPlugin-v1.0.3-osmf2.0.swc".

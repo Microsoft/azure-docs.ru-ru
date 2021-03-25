@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 10/19/2020
 ms.author: duau
 ms.openlocfilehash: abcfce43b90c7371d5b38aa5b7a6d478e9d6a0dd
-ms.sourcegitcommit: 957c916118f87ea3d67a60e1d72a30f48bad0db6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92207845"
 ---
 # <a name="tutorial-configure-the-weighted-traffic-routing-method-in-traffic-manager"></a>Руководство по Настройка метода взвешенной маршрутизации трафика в диспетчере трафика
@@ -39,7 +39,7 @@ ms.locfileid: "92207845"
 
 1. В браузере войдите на [портал Azure](https://portal.azure.com).
 
-1. На панели поиска портала выполните поиск имени **профиля Диспетчера трафика** , созданного в предыдущем разделе, и выберите профиль диспетчера трафика в отображаемых результатах.
+1. На панели поиска портала выполните поиск имени **профиля Диспетчера трафика**, созданного в предыдущем разделе, и выберите профиль диспетчера трафика в отображаемых результатах.
 
     :::image type="content" source="./media/traffic-manager-weighted-routing-method/search-traffic-manager-weighted-profile.png" alt-text="Поиск профиля Диспетчера трафика":::
 
@@ -47,7 +47,7 @@ ms.locfileid: "92207845"
 
     | Параметр         | Значение                                              |
     | ---             | ---                                                |
-    | Метод маршрутизации            | Выберите **Взвешенная** . |    
+    | Метод маршрутизации            | Выберите **Взвешенная**. |    
     | Срок жизни (TTL) DNS | Это значение определяет, как часто локальный кэширующий сервер имен клиента будет запрашивать в системе Диспетчера трафика обновленные записи DNS. Любое изменение, возникающее в Диспетчере трафика, например изменение метода маршрутизации трафика или изменение доступности добавленных конечных точек, продлится это время, прежде чем обновление произойдет для всей глобальной системы DNS-серверов. |
     | Протокол    | Выберите протокол для мониторинга конечных точек. *Доступные варианты: HTTP, HTTPS и TCP* |
     | Порт | Укажите номер порта. |
@@ -58,25 +58,25 @@ ms.locfileid: "92207845"
     | Допустимое число сбоев | Настройте число неудачных попыток проверки работоспособности до активации конечной точки. Можно ввести число от 0 до 9. | 
     | Время ожидания пробы | Настройте время до истечения времени ожидания проверки работоспособности конечной точки. Это значение должно быть не менее 5 и меньше значения интервала проверки. |
 
-1. Чтобы завершить настройку, нажмите кнопку **Сохранить** .
+1. Чтобы завершить настройку, нажмите кнопку **Сохранить**.
 
-    :::image type="content" source="./media/traffic-manager-weighted-routing-method/traffic-manager-weighted-configuration.png" alt-text="Поиск профиля Диспетчера трафика"::: 
+    :::image type="content" source="./media/traffic-manager-weighted-routing-method/traffic-manager-weighted-configuration.png" alt-text="Взвешенная конфигурация диспетчера трафика"::: 
 
 1. Щелкните **Конечная точка** и настройте вес каждой конечной точки. Вес может находиться в диапазоне 1–1000. Чем выше вес, тем выше приоритет.  
 
-    :::image type="content" source="./media/traffic-manager-weighted-routing-method/traffic-manager-configure-endpoints-weighted.png" alt-text="Поиск профиля Диспетчера трафика"::: 
+    :::image type="content" source="./media/traffic-manager-weighted-routing-method/traffic-manager-configure-endpoints-weighted.png" alt-text="Конфигурация взвешенных конечных точек Диспетчера трафика"::: 
 
 ## <a name="use-the-traffic-manager-profile"></a>Использование профиля диспетчера трафика
 
 В **профиле диспетчера трафика** отображается DNS-имя только что созданного профиля диспетчера трафика. Имя могут использовать клиенты (например, перейдя к нему в веб-браузере) для направления к нужной конечной точке в соответствии с типом маршрутизации. В этом случае все запросы направляются к каждой конечной точке методом циклического перебора.
 
-:::image type="content" source="./media/traffic-manager-weighted-routing-method/traffic-manager-weighted-overview.png" alt-text="Поиск профиля Диспетчера трафика"::: 
+:::image type="content" source="./media/traffic-manager-weighted-routing-method/traffic-manager-weighted-overview.png" alt-text="Взвешенная конфигурация Диспетчера трафика"::: 
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если профиль Диспетчера трафика больше не нужен, перейдите к профилю и выберите **Удалить профиль** .
+Если профиль Диспетчера трафика больше не нужен, перейдите к профилю и выберите **Удалить профиль**.
 
-:::image type="content" source="./media/traffic-manager-weighted-routing-method/delete-traffic-manager-weighted-profile.png" alt-text="Поиск профиля Диспетчера трафика":::
+:::image type="content" source="./media/traffic-manager-weighted-routing-method/delete-traffic-manager-weighted-profile.png" alt-text="Удаление взвешенного профиля Диспетчера трафика":::
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 

@@ -9,12 +9,12 @@ ms.author: robreed
 ms.date: 05/02/2018
 ms.topic: how-to
 manager: carmonm
-ms.openlocfilehash: ab7d20a83c4cb8cb7a36c4603a5b0b2e69b0662f
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 24ff0d8089055f83c76156cf5fb163313faf9492
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102560673"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043484"
 ---
 # <a name="run-scripts-in-your-windows-vm"></a>Запуск сценариев в виртуальной машине Windows
 
@@ -58,7 +58,7 @@ ms.locfileid: "102560673"
 
 ## <a name="serial-console"></a>Последовательная консоль
 
-[Последовательная консоль](../troubleshooting/serial-console-windows.md)обеспечивает прямой доступ к виртуальной машине аналогично подключению клавиатуры к виртуальной машине.
+[Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-windows)обеспечивает прямой доступ к виртуальной машине аналогично подключению клавиатуры к виртуальной машине.
 
 * Выполнение команд в виртуальных машинах Azure
 * Можно выполнять с помощью текстовой консоли на компьютере, на портале Microsoft Azure.
@@ -72,4 +72,4 @@ ms.locfileid: "102560673"
 * [Расширение пользовательских сценариев](../extensions/custom-script-windows.md)
 * [Запуск команды](run-command.md)
 * [Гибридная рабочая роль Runbook](../../automation/automation-hybrid-runbook-worker.md)
-* [Последовательная консоль](../troubleshooting/serial-console-windows.md)
+* [Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-windows)

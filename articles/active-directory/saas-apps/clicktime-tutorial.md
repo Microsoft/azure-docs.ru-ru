@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/21/2019
 ms.author: jeedes
 ms.openlocfilehash: 3337d66934c1fe317296cffaa9a663e212cce12d
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97673184"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-clicktime"></a>Руководство. Интеграция Azure Active Directory с ClickTime
@@ -95,7 +95,7 @@ ms.locfileid: "97673184"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. На странице **Настройка единого входа с помощью SAML** выполните следующие действия.
 
@@ -205,7 +205,7 @@ ms.locfileid: "97673184"
 
 1. Войдите в клиент **ClickTime** .
 
-1. На панели инструментов в верхней части экрана щелкните **Company** (Компания), а затем — **People** (Пользователи).
+1. На панели инструментов в верхней части экрана щелкните **Company** (Организация), а затем — **People** (Пользователи).
 
     ![Снимок экрана, на котором показан арендатор ClickTime с последовательно выбранными элементами "Company" (Организация) и "People" (Пользователи)](./media/clicktime-tutorial/tic777282.png "Люди")
 
