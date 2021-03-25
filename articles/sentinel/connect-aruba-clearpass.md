@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/28/2021
 ms.author: yelevin
-ms.openlocfilehash: 1b03e2d8715b3d80425ef181dd908978d5df4cf2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8050b4f173476d7af66cb858ff5f785e5a12af43
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101746726"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105046578"
 ---
 # <a name="connect-your-aruba-clearpass-to-azure-sentinel"></a>Подключение Aruba Клеарпасс к Azure Sentinel
 
@@ -31,11 +31,11 @@ ms.locfileid: "101746726"
 > [!NOTE]
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - У вас должны быть разрешения на чтение и запись в рабочей области Sentinel Azure.
 
-- Необходимо иметь разрешения на чтение общих ключей для рабочей области. Дополнительные [сведения о ключах рабочих областей](../azure-monitor/platform/log-analytics-agent.md#workspace-id-and-key).
+- Необходимо иметь разрешения на чтение общих ключей для рабочей области. Дополнительные [сведения о ключах рабочих областей](../azure-monitor/agents/log-analytics-agent.md#workspace-id-and-key).
 
 ## <a name="send-aruba-clearpass-logs-to-azure-sentinel"></a>Отправка журналов Aruba Клеарпасс в Azure Sentinel
 

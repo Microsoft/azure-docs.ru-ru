@@ -6,12 +6,12 @@ ms.author: flborn
 ms.date: 02/03/2020
 ms.topic: article
 ms.custom: references_regions
-ms.openlocfilehash: dd91622344263dc366a76c913ce0be95718550cd
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 789233ce1ede751276f965143716694c6feca3ca
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101705166"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105032803"
 ---
 # <a name="system-requirements"></a>Требования к системе
 
@@ -67,7 +67,7 @@ ms.locfileid: "101705166"
 
 Виртуальные машины с удаленной визуализацией используют общие IP-адреса из следующих диапазонов IP-адресов:
 
-| Имя             | Регион         | Префикс IP-адреса         |
+| Имя             | Region         | Префикс IP-адреса         |
 |------------------|:---------------|:------------------|
 | Восточная Австралия   | australiaeast  | 20.53.44.240/28   |
 | Восточная часть США          | eastus         | 20.62.129.224/28  |
@@ -111,12 +111,10 @@ ms.locfileid: "101705166"
 
 ## <a name="unity"></a>Unity
 
-Для разработки с Unity установите
-
-* Unity 2019.3.1 [(скачать)](https://unity3d.com/get-unity/download).
-* Установите следующие модули в Unity:
-  * **UWP** — обеспечивает поддержку для создания приложений универсальной платформы Windows;
-  * **IL2CPP** — обеспечивает поддержку сборки для Windows (IL2CPP).
+Для разработки с помощью Unity установите текущую версию Unity 2019,3 или 2019,4 LTS [(download)](https://unity3d.com/get-unity/download). Для управления установками рекомендуется использовать центр Unity.
+Убедитесь, что в установку Unity включены следующие модули:
+* **UWP** — обеспечивает поддержку для создания приложений универсальной платформы Windows;
+* **IL2CPP** — обеспечивает поддержку сборки для Windows (IL2CPP).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

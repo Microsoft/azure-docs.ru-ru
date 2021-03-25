@@ -9,12 +9,12 @@ ms.service: iot-central
 services: iot-central
 ms.custom: mvc
 manager: philmea
-ms.openlocfilehash: 458c93fd3e13a958137c762a0979af918a70d930
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 3132ec8fb3cb123653887d92a2f33788f40564c0
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "105023054"
+ms.locfileid: "105033829"
 ---
 # <a name="extend-azure-iot-central-with-custom-analytics-using-azure-databricks"></a>Расширьте IoT Central Azure с помощью настраиваемой аналитики, используя Azure Databricks
 
@@ -31,7 +31,7 @@ ms.locfileid: "105023054"
 
 Чтобы выполнить действия, описанные в этом руководстве, вам потребуется активная подписка Azure.
 
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
+Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
 ### <a name="iot-central-application"></a>Приложение IoT Central
 
@@ -62,7 +62,7 @@ ms.locfileid: "105023054"
 | Параметр | Значение |
 | ------- | ----- |
 | Имя    | Выберите имя пространства имен |
-| Ценовая категория | Базовый |
+| Ценовая категория | Basic |
 | Подписка | Ваша подписка |
 | Группа ресурсов | иотцентраланалисис |
 | Расположение | Восточная часть США |
@@ -117,7 +117,7 @@ ms.locfileid: "105023054"
 
     **Концентратор событий** показывает как **централекспорт**.
 
-    :::image type="content" source="media/howto-create-custom-analytics/data-export-1.png" alt-text="Снимок экрана: назначение экспорта данных":::
+    :::image type="content" source="media/howto-create-custom-analytics/data-export-1.png" alt-text="Снимок экрана, на котором показано назначение экспорта данных.":::
 
 1. Нажмите кнопку **Сохранить**.
 
@@ -136,7 +136,7 @@ ms.locfileid: "105023054"
 
 1. Нажмите кнопку **Сохранить**.
 
-    :::image type="content" source="media/howto-create-custom-analytics/data-export-2.png" alt-text="Снимок экрана, показывающий определение экспорта данных":::
+    :::image type="content" source="media/howto-create-custom-analytics/data-export-2.png" alt-text="Снимок экрана, показывающий определение экспорта данных.":::
 
 Прежде чем продолжить, подождите, пока состояние экспорта будет **работоспособно** на странице **экспорта данных** .
 
@@ -244,7 +244,7 @@ ms.locfileid: "105023054"
 
 Вы можете удалить IoT Centralное приложение со страницы **Управление** в приложении.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом руководстве вы узнали следующее:
 

@@ -6,12 +6,12 @@ ms.author: bahusse
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 1/28/2021
-ms.openlocfilehash: 9b5a2c5d004e63c602a30f7808586e97a0e436e8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7165cdc072ffaa5b0d862e1fe17f94e35c35aeec
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101720942"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105034543"
 ---
 # <a name="compute-and-storage-options-in-azure-database-for-mysql---flexible-server-preview"></a>Варианты вычислений и хранения в базе данных Azure для MySQL — гибкий сервер (Предварительная версия)
 
@@ -46,35 +46,35 @@ ms.locfileid: "101720942"
 
 Ниже приведены подробные спецификации доступных типов серверов.
 
-| Объем вычислительных ресурсов         | Виртуальные ядра | Объем памяти (гиб) | 
-|----------------------|--------|-------------------|
+| Объем вычислительных ресурсов         | Виртуальные ядра | Объем памяти (гиб) | Максимальное число поддерживаемых операций ввода-вывода | Максимальная поддерживаемая пропускная способность ввода-вывода (Мбит/с)|
+|----------------------|--------|-------------------| ------------------ |-----------------------------------|
 | **Накапливаемыми ресурсами**        |        |                   | 
-| Standard_B1s         | 1      | 1                 |  
-| Standard_B1ms        | 1      | 2                 | 
-| Standard_B2s         | 2      | 4                 |  
-| **Общего назначения**  |        |                   | 
-| Standard_D2ds_v4     | 2      | 8                 |  
-| Standard_D4ds_v4     | 4      | 16                | 
-| Standard_D8ds_v4     | 8      | 32                | 
-| Standard_D16ds_v4    | 16     | 64                | 
-| Standard_D32ds_v4    | 32     | 128               |  
-| Standard_D48ds_v4    | 48     | 192               |  
-| Standard_D64ds_v4    | 64     | 256               | 
-| **С оптимизацией для операций в памяти** |        |                   |
-| Standard_E2ds_v4     | 2      | 16                |
-| Standard_E4ds_v4     | 4      | 32                |
-| Standard_E8ds_v4     | 8      | 64                |
-| Standard_E16ds_v4    | 16     | 128               |
-| Standard_E32ds_v4    | 32     | 256               |
-| Standard_E48ds_v4    | 48     | 384               |
-| Standard_E64ds_v4    | 64     | 504               |
+| Standard_B1s         | 1      | 1                 | 320                | 10                                | 
+| Standard_B1ms        | 1      | 2                 | 640                | 10                                |
+| Standard_B2s         | 2      | 4                 | 1280               | 15                                |
+| **Общего назначения**  |        |                   |                    |                                   |
+| Standard_D2ds_v4     | 2      | 8                 | 3200               | 48                                |
+| Standard_D4ds_v4     | 4      | 16                | 6400               | 96                                |
+| Standard_D8ds_v4     | 8      | 32                | 12800              | 192                               |
+| Standard_D16ds_v4    | 16     | 64                | 20 000              | 384                               |
+| Standard_D32ds_v4    | 32     | 128               | 20 000              | 768                               |
+| Standard_D48ds_v4    | 48     | 192               | 20 000              | 1152                              |
+| Standard_D64ds_v4    | 64     | 256               | 20 000              | 1200                              |
+| **С оптимизацией для операций в памяти** |        |                   |                    |                                   |
+| Standard_E2ds_v4     | 2      | 16                | 3200               | 48                                |
+| Standard_E4ds_v4     | 4      | 32                | 6400               | 96                                |
+| Standard_E8ds_v4     | 8      | 64                | 12800              | 192                               |
+| Standard_E16ds_v4    | 16     | 128               | 20 000              | 384                               |
+| Standard_E32ds_v4    | 32     | 256               | 20 000              | 768                               |
+| Standard_E48ds_v4    | 48     | 384               | 20 000              | 1152                              |
+| Standard_E64ds_v4    | 64     | 504               | 20 000              | 1200                              |
 
 Дополнительные сведения о доступных сериях вычислений см. в документации по виртуальной машине Azure для [пакетной службы (серии B)](../../virtual-machines/sizes-b-series-burstable.md), [общего назначения (серии Ddsv4)](../../virtual-machines/ddv4-ddsv4-series.md)и [оптимизированной для памяти (Edsv4 Series)](../../virtual-machines/edv4-edsv4-series.md).
 
 >[!NOTE]
 >Для [уровня нагрузки (серии B)](../../virtual-machines/sizes-b-series-burstable.md) при запуске или остановке или перезапуске виртуальной машины могут быть утрачены кредиты. Дополнительные сведения см. в статье [часто задаваемые вопросы о пакетной (серии B)](../../virtual-machines/sizes-b-series-burstable.md#q-why-is-my-remaining-credit-set-to-0-after-a-redeploy-or-a-stopstart).
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 Подготавливается хранилище — это объем хранилища, доступный для гибкого сервера. Хранилище используется для файлов базы данных, временных файлов, журналов транзакций и журналов сервера MySQL. На всех уровнях вычислений минимальный поддерживаемый объем хранилища составляет 5 гиб и максимум — 16 тиб. Масштаб хранилища увеличивается на 1 гиб, и его можно масштабировать после создания сервера.
 

@@ -9,10 +9,10 @@ ms.custom: subject-armqs
 ms.author: mbaldwin
 ms.date: 10/16/2020
 ms.openlocfilehash: 8c56a37ebcc799b0170785666212eb4e3b00a5f0
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92144976"
 ---
 # <a name="quickstart-create-an-azure-attestation-provider-with-an-arm-template"></a>Краткое руководство. Создание поставщика аттестации Azure с помощью шаблона ARM
@@ -21,7 +21,7 @@ ms.locfileid: "92144976"
 
 [!INCLUDE [About Azure Resource Manager](../../includes/resource-manager-quickstart-introduction.md)]
 
-Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure** . Шаблон откроется на портале Azure.
+Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure**. Шаблон откроется на портале Azure.
 
 [![Развернуть в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-attestation-provider-create%2Fazuredeploy.json)
 
@@ -50,10 +50,10 @@ ms.locfileid: "92144976"
     Если поставщик аттестации не указан, при создании используйте значение по умолчанию.
 
     - **Имя поставщика аттестации.** Выберите имя поставщика аттестации Azure.
-    - **Расположение.** Выберите расположение. Например, **центральная часть США** .
-    - **Теги** . Выберите расположение. Например, **центральная часть США** .
+    - **Расположение.** Выберите расположение. Например, **центральная часть США**.
+    - **Теги**. Выберите расположение. Например, **центральная часть США**.
 
-1. Щелкните **Приобрести** . После успешного развертывания ресурса аттестации вы получите уведомление.
+1. Щелкните **Приобрести**. После успешного развертывания ресурса аттестации вы получите уведомление.
 
 Для развертывания шаблона используется портал Azure. В дополнение к порталу Azure можно также использовать Azure PowerShell, Azure CLI и REST API. Дополнительные сведения о других методах развертывания см. в статье о [развертывании с использованием шаблонов](../azure-resource-manager/templates/deploy-powershell.md).
 

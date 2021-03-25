@@ -2,14 +2,14 @@
 title: Бессерверные контейнеры в Azure
 description: Служба "Экземпляры контейнеров Azure" предоставляет быстрый и простой способ запуска изолированных контейнеров в Azure без необходимости управления виртуальными машинами и применения оркестратора более высокого уровня.
 ms.topic: overview
-ms.date: 08/10/2020
+ms.date: 03/22/2021
 ms.custom: seodec18, mvc
-ms.openlocfilehash: 873f7cc51d1b369503a72501ae000000ff06f805
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.openlocfilehash: c445687db7a154b6fc86e962d2c2340ad6297431
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103573019"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799077"
 ---
 # <a name="what-is-azure-container-instances"></a>Об экземплярах контейнеров Azure
 
