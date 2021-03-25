@@ -4,10 +4,10 @@ description: С помощью действия изменения в служб
 ms.date: 10/05/2020
 ms.topic: tutorial
 ms.openlocfilehash: 9efeb27151cd3a32741f1bdb6d1d90d3304c5874
-ms.sourcegitcommit: fbb620e0c47f49a8cf0a568ba704edefd0e30f81
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91876283"
 ---
 # <a name="tutorial-manage-tag-governance-with-azure-policy"></a>Руководство по системе управления тегами с помощью Политики Azure

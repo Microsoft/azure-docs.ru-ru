@@ -5,12 +5,12 @@ author: florianborn71
 ms.author: flborn
 ms.date: 02/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 9454bef52798650fc431f8df994e1a964662b453
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: bfb383a7079e98db1db1f9b5077558c187bcea96
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101720834"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105047734"
 ---
 # <a name="install-the-remote-rendering-package-for-unity"></a>Установка пакета Удаленной отрисовки для Unity
 
@@ -22,11 +22,11 @@ ms.locfileid: "101720834"
 
 ## <a name="install-remote-rendering-package-using-the-mixed-reality-feature-tool"></a>Установка удаленного пакета подготовки к просмотру с помощью средства "функция смешанной реальности"
 
-[Средство для функций смешанной реальности](https://aka.ms/MRFeatureToolDocs) ([download](https://aka.ms/mrfeaturetool)) — это средство, используемое для интеграции пакетов функций смешанной реальности в проекты Unity. Пакет не является частью [репозитория примеров arr](https://github.com/Azure/azure-remote-rendering)и недоступен из внутреннего реестра пакетов Unity.
+[Средство для функций смешанной реальности](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) ([download](https://aka.ms/mrfeaturetool)) — это средство, используемое для интеграции пакетов функций смешанной реальности в проекты Unity. Пакет не является частью [репозитория примеров arr](https://github.com/Azure/azure-remote-rendering)и недоступен из внутреннего реестра пакетов Unity.
 
 Чтобы добавить пакет в проект, необходимо выполнить следующие действия.
 1. [Загрузка средства "функция смешанной реальности"](https://aka.ms/mrfeaturetool)
-1. Следуйте [полным инструкциям](https://aka.ms/MRFeatureToolDocs) по использованию этого средства.
+1. Следуйте [полным инструкциям](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) по использованию этого средства.
 1. На странице **Обнаружение компонентов** установите флажок для пакета **удаленного рендеринга Microsoft Azure** и выберите версию пакета, которую нужно добавить в проект.
 
 ![Mixed_Reality_feature_tool_package](media/mixed-reality-feature-tool-package.png)
