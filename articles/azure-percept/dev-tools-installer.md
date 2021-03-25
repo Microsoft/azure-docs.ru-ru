@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 66498fabadc0784a4a4ab1c3762daaaa9a5738c4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7639af0c6e616a6fd8683f2a529a570f7e856973
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102503221"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105047340"
 ---
 # <a name="dev-tools-pack-installer-overview"></a>Обзор установщика пакета средств разработки
 
@@ -21,11 +21,11 @@ ms.locfileid: "102503221"
 ## <a name="mandatory-tools-installed"></a>Установленные обязательные средства
 
 * [Visual Studio Code](https://code.visualstudio.com/)
-* [Python 3,6 (Windows) или 3,5 (Linux)](https://www.python.org/)
+* [Python 3,6 или более поздней версии](https://www.python.org/)
 * [DOCKER 19,03](https://www.docker.com/)
 * [PIP3](https://pip.pypa.io/en/stable/user_guide/)
 * [TensorFlow 1,13](https://www.tensorflow.org/)
-* [Пакет SDK для Машинное обучение Azure 1,1](https://docs.microsoft.com/python/api/overview/azure/ml/)
+* [Пакет SDK для Машинное обучение Azure 1,1](/python/api/overview/azure/ml/)
 
 ## <a name="optional-tools-available-for-installation"></a>Дополнительные средства, доступные для установки
 

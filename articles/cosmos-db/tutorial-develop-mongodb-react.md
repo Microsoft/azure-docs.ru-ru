@@ -11,10 +11,10 @@ ms.author: jopapa
 ms.reviewer: sngun
 ms.custom: devx-track-js
 ms.openlocfilehash: 1425b89e42450123c1696ddcee4458e1f69b8a6c
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96348574"
 ---
 # <a name="create-a-mongodb-app-with-react-and-azure-cosmos-db"></a>Создание приложения MongoDB с помощью React и Azure Cosmos DB  
@@ -36,7 +36,7 @@ ms.locfileid: "96348574"
 
 Хотите создать такое же приложение с помощью Angular? См. [серию видеоруководств по Angular](tutorial-develop-mongodb-nodejs.md).
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 * [Node.js](https://www.nodejs.org)
 
 ### <a name="finished-project"></a>Готовый проект
@@ -100,7 +100,7 @@ ms.locfileid: "96348574"
 
 > [!div class="checklist"]
 > * создание приложения с помощью React, Node, Express и Azure Cosmos DB; 
-> * создание учетной записи Azure Cosmos DB;
+> * Создание учетной записи Azure Cosmos DB
 > * подключение приложения к учетной записи Azure Cosmos DB;
 > * тестирование приложения с помощью Postman;
 > * запуск приложения и добавление элементов hero в базу данных.

@@ -12,10 +12,10 @@ ms.date: 12/04/2019
 ms.author: tamram
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 87ef18530c549396b7d8fe1ec4ff0e08cb8535e8
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98784280"
 ---
 # <a name="calculate-the-size-of-a-blob-container-with-powershell"></a>Вычисление размера контейнера больших двоичных объектов с помощью PowerShell

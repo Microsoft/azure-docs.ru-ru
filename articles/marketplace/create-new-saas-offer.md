@@ -7,21 +7,24 @@ ms.reviewer: dannyevers
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
-ms.date: 09/02/2020
-ms.openlocfilehash: f689993ce56a1125a1d1de8f65ce05d01f776ea9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/19/2021
+ms.openlocfilehash: f652858f22e26eb7167a0cc7a2cfb8ef4b600ace
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93130074"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105047306"
 ---
 # <a name="how-to-create-a-saas-offer-in-the-commercial-marketplace"></a>Создание предложения SaaS в коммерческом магазине
 
 Как издатель коммерческого магазина вы можете создать предложение Software as Service (SaaS), чтобы потенциальные клиенты могли купить техническое решение на основе SaaS. В этой статье описывается процесс создания предложения SaaS для коммерческого рынка Майкрософт.
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка
 
 Ознакомьтесь [с планированием предложения SaaS для коммерческого рынка](plan-saas-offer.md), если вы еще этого не сделали. В нем объясняются технические требования для приложения SaaS, а также информация и ресурсы, которые понадобятся при создании предложения. Если вы не планируете публиковать простой листинг (вариант со списком **контактов** ) в коммерческом магазине, приложение SaaS должно соответствовать техническим требованиям проверки подлинности.
+
+> [!IMPORTANT]
+> Рекомендуется создать отдельное предложение разработки и тестирования (DEV) и отдельное рабочее (производственное) предложение. В этой статье описывается создание ПРОИЗВОДСТВЕННОго предложения. Дополнительные сведения о создании предложения для разработчиков см. [в разделе Создание предложения по разработке и тестированию](create-saas-dev-test-offer.md).
 
 ## <a name="create-a-new-saas-offer"></a>Создание предложения SaaS
 

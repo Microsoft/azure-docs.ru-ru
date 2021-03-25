@@ -5,10 +5,10 @@ ms.topic: quickstart
 ms.date: 10/01/2020
 ms.custom: devx-track-csharp, mvc
 ms.openlocfilehash: 5bc3895cb219338acde492b871dce806db70622b
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91661165"
 ---
 # <a name="store-unstructured-data-using-azure-functions-and-azure-cosmos-db"></a>Хранение неструктурированных данных с помощью Azure Cosmos DB и службы "Функции Azure"
@@ -42,11 +42,11 @@ ms.locfileid: "91661165"
 
 1. Последовательно выберите **Интеграция** и **Добавить вывод**.
 
-     :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-add-output-binding.png" alt-text="Выберите нужную функцию на портале Azure." border="true":::
+     :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-add-output-binding.png" alt-text="Добавление выходной привязки к Azure Cosmos DB." border="true":::
 
 1. Укажите приведенные в таблице значение в области **Добавить вывод**.
 
-     :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-configure-cosmosdb-binding.png" alt-text="Выберите нужную функцию на портале Azure." border="true":::
+     :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-configure-cosmosdb-binding.png" alt-text="Настройка выходной привязки к Azure Cosmos B." border="true":::
 
     | Параметр      | Рекомендуемое значение  | Описание                                |
     | ------------ | ---------------- | ------------------------------------------ |
@@ -138,23 +138,23 @@ module.exports = async function (context, req) {
     + `task`
     + `duedate`
 
-    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-test-function.png" alt-text="Выберите нужную функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-test-function.png" alt-text="Тестирование функции." border="true":::
 
 
 1. Щелкните **Выполнить** и убедитесь, что возвращается состояние 200.
 
-    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-test-function-output.png" alt-text="Выберите нужную функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-test-function-output.png" alt-text="Снимок экрана: код HTTP-отклика с состоянием 200, выделенный после выбора пункта &quot;Выполнить&quot;." border="true":::
 
 
 1. На портале Azure найдите и выберите **Azure Cosmos DB**.
 
-    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-search-cosmos-db.png" alt-text="Выберите нужную функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-search-cosmos-db.png" alt-text="Поиск службы Cosmos DB." border="true":::
 
 1. Выберите нужную учетную запись Azure Cosmos DB, а затем щелкните **Обозреватель данных**.
 
 1. Разверните узлы **TaskCollection**, выберите новый документ и убедитесь, что этот документ содержит ваши значения для строки запроса, а также некоторые дополнительные метаданные.
 
-    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-data-explorer-check-document.png" alt-text="Выберите нужную функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/functions-integrate-store-unstructured-data-cosmosdb/functions-data-explorer-check-document.png" alt-text="Проверка строковых значений в документе." border="true":::
 
 Вы успешно добавили привязку к триггеру HTTP, которая сохраняет неструктурированные данные в Azure Cosmos DB.
 

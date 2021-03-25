@@ -6,10 +6,10 @@ ms.date: 06/18/2020
 ms.reviewer: astay; kraigb
 ms.custom: mvc, seodec18, devx-track-azurecli
 ms.openlocfilehash: 038d62573b491325adc60647debf17fa87e06cfe
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92743689"
 ---
 # <a name="configure-a-linux-ruby-app-for-azure-app-service"></a>Настройка приложения Ruby в Linux для Службы приложений Azure
@@ -65,7 +65,7 @@ ENV['WEBSITE_SITE_NAME']
 
 Если вы развертываете [репозиторий Git](deploy-local-git.md) или [ZIP-пакет](deploy-zip.md) с включенными процессами сборки, механизм развертывания (Kudu) по умолчанию автоматически выполняет следующие шаги после развертывания:
 
-1. Проверка наличия *Gemfile* .
+1. Проверка наличия *Gemfile*.
 1. Выполните `bundle clean`. 
 1. Выполните `bundle install --path "vendor/bundle"`.
 1. Выполнение `bundle package` для упаковки пакетов в папку vendor/cache.
@@ -96,8 +96,8 @@ az webapp config appsettings set --name <app-name> --resource-group <resource-gr
 
 1. Создание значения [secret_key_base](https://edgeguides.rubyonrails.org/security.html#environmental-security), если его еще нет. Это значение требуется для запуска приложения в рабочем режиме.
 1. Присвоение переменной среды `RAILS_ENV` значения `production`.
-1. Удаление всех файлов *.pid* в каталоге *tmp/pids* , которые остались от ранее запущенного сервера Rails.
-1. Проверка установки всех зависимостей. Если чего-то не хватает, следует установить пакеты из локального каталога *vendor/cache* .
+1. Удаление всех файлов *.pid* в каталоге *tmp/pids*, которые остались от ранее запущенного сервера Rails.
+1. Проверка установки всех зависимостей. Если чего-то не хватает, следует установить пакеты из локального каталога *vendor/cache*.
 1. Выполните `rails server -e $RAILS_ENV`.
 
 Процесс загрузки можно настроить следующими способами:
@@ -111,7 +111,7 @@ az webapp config appsettings set --name <app-name> --resource-group <resource-gr
 Сервер Rails в контейнере Ruby по умолчанию работает в режиме производственной среды и [ожидает, что все ресурсы заранее скомпилированы и предоставляются веб-сервером](https://guides.rubyonrails.org/asset_pipeline.html#in-production). Чтобы предоставлять статические ресурсы из сервера Rails, следует обеспечить следующее:
 
 - **Предварительная компиляция ресурсов** - [предварительно скомпилируйте статические ресурсы локально](https://guides.rubyonrails.org/asset_pipeline.html#local-precompilation) и вручную разверните их. Также вы можете поручить этот процесс механизму развертывания (подробнее см. статью [о предварительной компиляции ресурсов](#precompile-assets)).
-- **Настройка предоставления статических файлов**  — чтобы обслуживать статические ресурсы из контейнера Ruby, [присвойте параметру приложения `RAILS_SERVE_STATIC_FILES`](configure-common.md#configure-app-settings) значение `true`. Пример:
+- **Настройка предоставления статических файлов** — чтобы обслуживать статические ресурсы из контейнера Ruby, [присвойте параметру приложения `RAILS_SERVE_STATIC_FILES`](configure-common.md#configure-app-settings) значение `true`. Пример:
 
     ```azurecli-interactive
     az webapp config appsettings set --name <app-name> --resource-group <resource-group-name> --settings RAILS_SERVE_STATIC_FILES=true

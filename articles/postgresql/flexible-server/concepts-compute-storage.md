@@ -6,12 +6,12 @@ ms.author: lufittl
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 02/19/2021
-ms.openlocfilehash: b76b6ff788d3d7f44db33af96944d528282f0ac7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6bcfbc19cbaa078373d6857bdac74eaf86eca104
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101712221"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048057"
 ---
 # <a name="compute-and-storage-options-in-azure-database-for-postgresql---flexible-server"></a>Варианты вычислений и хранения в базе данных Azure для PostgreSQL-гибкого сервера
 
@@ -65,7 +65,7 @@ ms.locfileid: "101712221"
 | E48s_v3              | 48     | 384 гиб     | 18000              | 750 МиБ/с                 |
 | E64s_v3              | 64     | 432 ГиБ     | 18000              | 750 МиБ/с                 |
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 Хранилище, которое вы подготавливаете, определяет объем доступной емкости хранилища для сервера службы "База данных Azure для PostgreSQL". Хранилище используется для файлов базы данных, временных файлов, журналов транзакций и журналов сервера PostgreSQL. Общий объем хранилища, который вы подготовили, также определяет доступную производительность операций ввода-вывода для сервера.
 
@@ -121,7 +121,7 @@ ms.locfileid: "101712221"
 При пометке операции \* ввода-вывода в секунду ограничиваются выбранным типом виртуальной машины. В противном случае операции ввода-вывода ограничиваются выбранным размером хранилища.
 
 >[!NOTE]
-> В метриках можно увидеть более высокие числа операций ввода-вывода в связи с разбивкой на дисковый уровень. Дополнительные сведения см. в [документации](https://docs.microsoft.com/azure/virtual-machines/disk-bursting#disk-level-bursting) . 
+> В метриках можно увидеть более высокие числа операций ввода-вывода в связи с разбивкой на дисковый уровень. Дополнительные сведения см. в [документации](../../virtual-machines/disk-bursting.md#disk-level-bursting) . 
 
 ### <a name="maximum-io-bandwidth-mibsec-for-your-configuration"></a>Максимальная пропускная способность ввода-вывода (MiB/с) для конфигурации
 

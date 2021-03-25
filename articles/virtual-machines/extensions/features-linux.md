@@ -8,12 +8,12 @@ author: amjads1
 ms.author: amjads
 ms.collection: linux
 ms.date: 03/30/2018
-ms.openlocfilehash: b6a834ede381ee319d3ff7678f49febd11e34a5d
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 8ff7b2940ca9ce3e5dc5913c0e676a32857771e7
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102559778"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105046884"
 ---
 # <a name="virtual-machine-extensions-and-features-for-linux"></a>Обзор расширений и компонентов виртуальных машин под управлением Linux
 
@@ -31,7 +31,7 @@ ms.locfileid: "102559778"
 
 Помимо расширений, созданных для конкретных процессов, существует расширение пользовательских сценариев для виртуальных машин под управлением Windows и Linux. Расширение пользовательских сценариев для Linux позволяет запустить на виртуальной машине любой сценарий Bash. Пользовательские сценарии могут пригодиться при проектировании развертывания Azure, для которого требуется дополнительная настройка, ее невозможно выполнить собственными средствами Azure. Дополнительные сведения см. в статье [Использование расширения пользовательских сценариев Azure на виртуальных машинах Linux](custom-script-linux.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы расширения работали на виртуальной машине, на ней нужно установить агент Linux для Azure. Некоторые расширения имеют дополнительные требования, например доступ к определенным ресурсам или зависимости.
 
@@ -245,7 +245,7 @@ waagent --version
 
 ```bash
 WALinuxAgent-2.2.17 running on ubuntu 16.04
-Python: 3.5.2
+Python: 3.6.0
 Goal state agent: 2.2.18
 ```
 

@@ -5,10 +5,10 @@ ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 06/23/2020
 ms.openlocfilehash: e6da5fbe3c0e269f5ceb2c3627df27ccf0e3b30b
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88933857"
 ---
 # <a name="quickstart-create-an-event-hub-by-using-an-arm-template"></a>Краткое руководство. Создание концентратора событий с помощью шаблона ARM

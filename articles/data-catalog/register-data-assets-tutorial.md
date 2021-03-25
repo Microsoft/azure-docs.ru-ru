@@ -6,14 +6,16 @@ ms.author: jasonh
 ms.service: data-catalog
 ms.topic: tutorial
 ms.date: 08/01/2019
-ms.openlocfilehash: 66bacdf27b2ef9cf624b645cb6e4c123d9c3fa2a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: de85cad8232d76706358c36806ce19a7c1df893f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88135884"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104675011"
 ---
 # <a name="tutorial-register-data-assets-in-azure-data-catalog"></a>Руководство по Регистрация ресурсов данных в Каталоге данных Azure
+
+[!INCLUDE [Azure Purview redirect](../../includes/data-catalog-use-purview.md)]
 
 В этом учебнике рассказывается о том, как зарегистрировать ресурсы данных из примера базы данных в каталоге с помощью средства регистрации. Регистрация — это процесс извлечения ключевых метаданных структуры, таких как имена, типы и расположения, из источника данных и ресурсов, содержащихся в нем, и копирования этих метаданных в каталог. Источники и ресурсы данных остаются на своем месте, а каталог использует метаданные, чтобы упростить их обнаружение и понимание.
 

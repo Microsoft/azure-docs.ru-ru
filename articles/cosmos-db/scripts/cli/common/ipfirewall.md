@@ -7,10 +7,10 @@ ms.service: cosmos-db
 ms.topic: sample
 ms.date: 07/29/2020
 ms.openlocfilehash: da4018948a7e3860d5f6f7e7196b5a2efdf8b61f
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94566037"
 ---
 # <a name="create-an-azure-cosmos-account-with-ip-firewall-using-azure-cli"></a>Создание учетной записи Azure Cosmos с правилами брандмауэра для IP-адресов с помощью Azure CLI
