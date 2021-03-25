@@ -5,12 +5,12 @@ author: tfitzmac
 ms.date: 12/14/2020
 ms.topic: quickstart
 ms.author: tomfitz
-ms.openlocfilehash: 1d3e7c6ee6d19d4d2cd3828d5abf95ccb5457e76
-ms.sourcegitcommit: 63d0621404375d4ac64055f1df4177dfad3d6de6
+ms.openlocfilehash: 28987486726f5a88d20efe9fe8a766e536062c2c
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97511354"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889966"
 ---
 # <a name="quickstart-create-and-deploy-template-spec-preview"></a>Краткое руководство. Создание и развертывание спецификации шаблона (предварительная версия)
 
@@ -319,7 +319,7 @@ ms.locfileid: "97511354"
     - **Тип учетной записи хранения**. Выберите **Standard_GRS**.
 
 1. Выберите **Review + create** (Просмотреть и создать).
-1. Нажмите кнопку **Создать**.
+1. Нажмите кнопку **создания**.
 
 # <a name="arm-template"></a>[Шаблон ARM](#tab/azure-resource-manager)
 
@@ -335,7 +335,7 @@ ms.locfileid: "97511354"
       "resources": [
         {
           "type": "Microsoft.Resources/deployments",
-          "apiVersion": "2020-06-01",
+          "apiVersion": "2020-10-01",
           "name": "demo",
           "properties": {
             "templateLink": {
@@ -474,7 +474,7 @@ ms.locfileid: "97511354"
 
 1. Заполните поля, как и при развертывании предыдущей версии.
 1. Выберите **Review + create** (Просмотреть и создать).
-1. Нажмите кнопку **Создать**.
+1. Нажмите кнопку **создания**.
 
 # <a name="arm-template"></a>[Шаблон ARM](#tab/azure-resource-manager)
 
@@ -597,7 +597,7 @@ ms.locfileid: "97511354"
       "resources": [
         {
           "type": "Microsoft.Resources/deployments",
-          "apiVersion": "2020-06-01",
+          "apiVersion": "2020-10-01",
           "name": "demo",
           "properties": {
             "templateLink": {
