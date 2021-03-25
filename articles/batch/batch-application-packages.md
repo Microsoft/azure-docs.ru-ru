@@ -2,17 +2,17 @@
 title: Развертывание пакетов приложений на вычислительных узлах
 description: Пакеты приложений пакетной службы Azure позволяют легко управлять несколькими приложениями и их версиями для установки на вычислительные узлы пакетной службы.
 ms.topic: how-to
-ms.date: 09/24/2020
+ms.date: 03/24/2021
 ms.custom:
 - H1Hack27Feb2017
 - devx-track-csharp
 - contperf-fy21q1
-ms.openlocfilehash: b4c6ab99b0fa93e5fdea4256d6f232cc0fe4218e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d0ed5cc47694d6576e6aea46b62dfab8ecb73459
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97033737"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045796"
 ---
 # <a name="deploy-applications-to-compute-nodes-with-batch-application-packages"></a>Развертывание приложений на вычислительных узлах с помощью пакетов приложений пакетной службы
 
@@ -59,6 +59,9 @@ API-интерфейсы для создания пакетов приложен
 ## <a name="upload-and-manage-applications"></a>Передача приложений и управление ими
 
 Управление пакетами приложений в учетной записи пакетной службы осуществляется на [портале Azure](https://portal.azure.com) или с помощью API-интерфейсов для управления пакетной службой. В следующих разделах объясняется, как связать учетную запись хранения, а также как добавлять приложения и пакеты приложений и управлять ими в портал Azure.
+
+> [!NOTE]
+> Хотя вы можете определить значения приложения в ресурсе [Microsoft.BatCH/батчаккаунтс](/templates/microsoft.batch/batchaccounts) [шаблона ARM](quick-create-template.md), сейчас невозможно использовать шаблон ARM для отправки пакетов приложений для использования в учетной записи пакетной службы. Их необходимо передать в связанную учетную запись хранения, как описано [ниже](#add-a-new-application).
 
 ### <a name="link-a-storage-account"></a>Связывание учетной записи хранения
 

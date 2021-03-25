@@ -3,12 +3,12 @@ title: Работа с оповещениями на локальной конс
 description: Используйте локальную консоль управления, чтобы получить представление о последних угрозах в сети предприятия и лучше понять, как пользователи датчика обрабатывают их.
 ms.date: 12/06/2020
 ms.topic: how-to
-ms.openlocfilehash: a99c489c54b2671a463c0c3dad1909c74b4fa203
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 604650f0cb08eac4a3ab1cfd3fdcbf2e7ff0d19e
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104781472"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105032146"
 ---
 # <a name="work-with-alerts-on-the-on-premises-management-console"></a>Работа с оповещениями на локальной консоли управления 
 
@@ -141,7 +141,7 @@ ms.locfileid: "104781472"
 Для экспорта:
 
 1. Выберите оповещения в боковом меню.
-1. Выберите Экспорт.
+1. Щелкните Экспортировать.
 1. Выберите экспортировать расширенные предупреждения, чтобы экспортировать сведения о предупреждениях в отдельных строках для каждого предупреждения, охватывающего несколько устройств. Если выбран параметр Экспорт расширенных оповещений, CSV-файл создаст повторяющуюся строку предупреждения с уникальными элементами в каждой строке. Использование этого параметра упрощает анализ экспортированных событий предупреждений.  
 
 ## <a name="create-alert-exclusion-rules"></a>Создание правил исключения предупреждений
@@ -242,6 +242,7 @@ ms.locfileid: "104781472"
 
 :::image type="content" source="media/how-to-work-with-alerts-on-premises-management-console/edit-exclusion-rule-screen.png" alt-text="Снимок экрана представления &quot;изменение правила исключения&quot;.":::
 
-## <a name="see-also"></a>См. также раздел
+## <a name="next-steps"></a>Дальнейшие действия
 
-[Работа с оповещениями на датчике](how-to-work-with-alerts-on-your-sensor.md)
+[Работа с оповещениями на датчике](how-to-work-with-alerts-on-your-sensor.md).
+Ознакомьтесь с [оповещениями о защитнике для механизма IOT](alert-engine-messages.md).

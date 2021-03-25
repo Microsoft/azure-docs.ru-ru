@@ -7,12 +7,12 @@ services: iot-hub
 ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: robinsh
-ms.openlocfilehash: b8f8403617a5fc8b442e8a3f74ab9226fe1479fe
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: c47e67375e093ff6e9a5cf7193c76eeeb5228e29
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97588766"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045660"
 ---
 # <a name="azure-iot-device-sdks-platform-support"></a>Поддержка платформ SDK для устройств Azure IoT
 
@@ -44,7 +44,7 @@ ms.locfileid: "97588766"
 
 [Пакет SDK для устройства C центра Интернета вещей Azure](https://github.com/Azure/azure-iot-sdk-c) тестируется в и поддерживает следующие конфигурации.
 
-| OS                  | Библиотека TLS                  | Дополнительные требования                                                                     |
+| ОС                  | Библиотека TLS                  | Дополнительные требования                                                                     |
 |---------------------|------------------------------|---------------------------------------------------------------------------------------------|
 | Linux               | OpenSSL, Волфссл или Беарссл | Протоколы Berkeley</br></br>Интерфейс переносимой операционной системы (POSIX)                       |
 | iOS 12,2            | OpenSSL.                      | XCode, имитируемый в OSX 10.13.4                                                               |
@@ -57,11 +57,11 @@ ms.locfileid: "97588766"
 
 [Пакет SDK для устройств Python центра Интернета вещей Azure](https://github.com/Azure/azure-iot-sdk-python) тестируется в и поддерживает следующие конфигурации.
 
-| OS                  | Компилятор                          |
+| ОС                  | Компилятор                          |
 |---------------------|-----------------------------------|
-| Linux               | Python 2,7. *, 3,5 или более поздней версии |
-| macOS High Sierra;   | Python 2,7. *, 3,5 или более поздней версии |
-| Семейство Windows 10   | Python 2,7. *, 3,5 или более поздней версии |
+| Linux               | Python 2,7. *, 3,6 или более поздней версии |
+| macOS High Sierra;   | Python 2,7. *, 3,6 или более поздней версии |
+| Семейство Windows 10   | Python 2,7. *, 3,6 или более поздней версии |
 
 Только Python версии 3.5.3 или более поздней поддерживают асинхронные API-интерфейсы, рекомендуется использовать версию 3,7 или более позднюю.
 
@@ -69,7 +69,7 @@ ms.locfileid: "97588766"
 
 [Пакет SDK для устройств .NET для центра Интернета вещей (C#)](https://github.com/Azure/azure-iot-sdk-csharp) проверяется с поддержкой следующих конфигураций.
 
-| OS                                   | Стандартный                                                   |
+| ОС                                   | Standard                                                   |
 |--------------------------------------|------------------------------------------------------------|
 | Linux                                | .NET Core 2.1                                              |
 | SKU для настольных компьютеров и серверов Windows 10   | .NET Core 2,1, платформа .NET Framework 4.5.1 или платформа .NET Framework 4,7 |
@@ -80,7 +80,7 @@ ms.locfileid: "97588766"
 
 [Центр Интернета вещей Azure Node.js пакет SDK для устройств](https://github.com/Azure/azure-iot-sdk-node) и поддерживает следующие конфигурации.
 
-| OS                  | Версия узла    |
+| ОС                  | Версия узла    |
 |---------------------|-----------------|
 | Linux               | LTS и текущий |
 | Семейство Windows 10   | LTS и текущий |
@@ -89,7 +89,7 @@ ms.locfileid: "97588766"
 
 [Пакет SDK для устройства Java центра Интернета вещей Azure](https://github.com/Azure/azure-iot-sdk-java) тестируется в и поддерживает следующие конфигурации.
 
-| OS                     | Версия Java |
+| ОС                     | Версия Java |
 |------------------------|--------------|
 | API 28 для Android         | Java 8       |
 | Linux x64             | Java 8       |

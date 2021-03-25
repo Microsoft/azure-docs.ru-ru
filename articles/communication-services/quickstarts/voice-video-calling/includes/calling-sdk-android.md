@@ -4,12 +4,12 @@ ms.service: azure-communication-services
 ms.topic: include
 ms.date: 03/10/2021
 ms.author: mikben
-ms.openlocfilehash: 8d4e573cefd595669d9cb2cf9a7b83595eea7971
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 40d9f03526e5232c0a7b33f64ff35a8501702609
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103622130"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107764"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -23,9 +23,8 @@ ms.locfileid: "103622130"
 ### <a name="install-the-package"></a>Установка пакета
 
 > [!NOTE]
-> В этом документе используется клиентская библиотека вызовов версии 1.0.0-beta.8.
+> В этом документе используется версия 1.0.0-Beta. 8 вызывающего пакета SDK.
 
-<!-- TODO: update with instructions on how to download, install and add package to project -->
 Выберите build.gradle на уровне проекта и добавьте `mavenCentral()` в список репозиториев в разделах `buildscript` и `allprojects`.
 ```groovy
 buildscript {
@@ -59,11 +58,11 @@ dependencies {
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки Служб коммуникации Azure для вызовов:
+Следующие классы и интерфейсы обработают некоторые основные функции пакета SDK, вызывающего службы связи Azure:
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
-| CallClient| CallClient — это основная точка входа в клиентскую библиотеку для вызовов.|
+| CallClient| Каллклиент — это Главная точка входа для вызывающего пакета SDK.|
 | CallAgent | CallAgent используется для инициирования вызовов и управления ими. |
 | CommunicationTokenCredential | CommunicationTokenCredential используется в качестве учетных данных маркера для создания экземпляра CallAgent.|
 | CommunicationIdentifier | CommunicationIdentifier используется в качестве участника другого типа, который может быть частью вызова.|
@@ -224,10 +223,10 @@ public Call retrieveIncomingCall() {
 
 Чтобы зарегистрироваться для получения push-уведомлений, приложению необходимо вызвать `registerPushNotification()` для экземпляра *CallAgent* и передать маркер регистрации устройства.
 
-Чтобы получить этот маркер регистрации устройства, добавьте клиентскую библиотеку Firebase в файл модуля приложения *build.gradle*, добавив в раздел `dependencies` следующие строки, если их там еще нет:
+Чтобы получить маркер регистрации устройства, добавьте пакет SDK Firebase в файл *Build. gradle* модуля приложения, добавив следующие строки в `dependencies` раздел, если он еще не создан:
 
 ```
-    // Add the client library for Firebase Cloud Messaging
+    // Add the SDK for Firebase Cloud Messaging
     implementation 'com.google.firebase:firebase-core:16.0.8'
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
 ```
@@ -244,7 +243,7 @@ public Call retrieveIncomingCall() {
 apply plugin: 'com.google.gms.google-services'
 ```
 
-На панели инструментов щелкните *Синхронизировать сейчас*. Добавьте следующий фрагмент кода, чтобы получить маркер регистрации устройства, созданный клиентской библиотекой Firebase Cloud Messaging для экземпляра клиентского приложения. Обязательно добавьте приведенные ниже инструкции import в заголовок главного действия (Activity) для экземпляра. Они необходимы для того, чтобы фрагмент кода получил маркер:
+На панели инструментов щелкните *Синхронизировать сейчас*. Добавьте следующий фрагмент кода, чтобы получить маркер регистрации устройства, созданный пакетом SDK для Firebase Cloud Messaging для экземпляра клиентского приложения. Добавьте приведенные ниже импортируемые элементы в заголовок основного действия для экземпляра. Они необходимы для того, чтобы фрагмент кода получил маркер:
 
 ```
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -272,7 +271,7 @@ import com.google.firebase.iid.InstanceIdResult;
                     }
                 });
 ```
-Зарегистрируйте маркер регистрации устройства в клиентской библиотеке служб вызовов для получения push-уведомлений о входящих вызовах:
+Зарегистрируйте маркер регистрации устройства в вызываемом пакете SDK служб для входящих push-уведомлений.
 
 ```java
 String deviceRegistrationToken = "<Device Token from previous section>";
@@ -288,7 +287,7 @@ catch(Exception e) {
 
 Чтобы получать push-уведомления о входящих вызовах, вызовите *handlePushNotification()* для экземпляра *CallAgent*, передав полезные данные.
 
-Чтобы получить полезные данные из Firebase Cloud Messaging, для начала создайте новую службу (Файл > Создать > Служба > Служба), которая расширяет класс клиентской библиотеки Firebase *FirebaseMessagingService* и переопределите метод `onMessageReceived`. Этот метод является обработчиком событий и вызывается, когда Firebase Cloud Messaging доставляет в приложение push-уведомление.
+Чтобы получить полезные данные из Firebase Cloud Messaging, начните с создания новой службы (файл > новая служба > Service > Service), которая расширяет класс пакета SDK *фиребасемессагингсервице* Firebase и переопределяет `onMessageReceived` метод. Этот метод является обработчиком событий и вызывается, когда Firebase Cloud Messaging доставляет в приложение push-уведомление.
 
 ```java
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -318,7 +317,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         </service>
 ```
 
-- Полученные полезные данные можно передать в клиентскую библиотеку *Служб коммуникации*, где они будут преобразованы во внутренний объект *IncomingCallInformation*, для обработки которого вызывается метод *handlePushNotification* для экземпляра *CallAgent*. Экземпляр `CallAgent` создается путем вызова метода `createCallAgent(...)` для класса `CallClient`.
+- После получения полезных данных их можно передать в пакет SDK *служб связи* для анализа во внутренний объект *инкомингкаллинформатион* , который будет обработан путем вызова метода *хандлепушнотификатион* в экземпляре *каллажент* . Экземпляр `CallAgent` создается путем вызова метода `createCallAgent(...)` для класса `CallClient`.
 
 ```java
 try {

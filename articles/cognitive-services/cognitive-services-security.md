@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2020
 ms.author: erhopf
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp
-ms.openlocfilehash: 66de81387fe27bd2a81ebcfeab7d86aac7031ff1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 90fbc41edbfea0ea99d436906d3052e43bfb4fb8
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102425300"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043885"
 ---
 # <a name="azure-cognitive-services-security"></a>Безопасность Cognitive Services Azure
 
@@ -29,13 +29,13 @@ ms.locfileid: "102425300"
 * В языке (и платформе), используемом для вызова HTTP, необходимо указать TLS 1,2 в качестве части запроса.
   * В зависимости от языка и платформы, указание протокола TLS выполняется явно или неявно.
 
-Для пользователей .NET рассмотрите рекомендации по <a href="https://docs.microsoft.com/dotnet/framework/network-programming/tls" target="_blank">обеспечению безопасности транспортного уровня </a>.
+Для пользователей .NET рассмотрите рекомендации по <a href="/dotnet/framework/network-programming/tls" target="_blank">обеспечению безопасности транспортного уровня </a>.
 
 ## <a name="authentication"></a>Аутентификация
 
 При обсуждении проверки подлинности существует несколько распространенных заблуждений. Проверка подлинности и авторизация часто путают друг с другом. Удостоверение является также основным компонентом в системе безопасности. Удостоверение — это коллекция сведений об <a href="https://en.wikipedia.org/wiki/Principal_(computer_security)" target="_blank">участнике </a>. Поставщики удостоверений (IdP) предоставляют удостоверения для служб проверки подлинности. Проверка подлинности — это процедура проверки удостоверения пользователя. Авторизация — это спецификация прав доступа и привилегий на ресурсы для заданного удостоверения. Некоторые из Cognitive Services предложений включают управление доступом на основе ролей Azure (Azure RBAC). Azure RBAC можно использовать для упрощения некоторых формальностей, участвующих в управлении участниками вручную. Дополнительные сведения см. в статье [Управление доступом на основе ролей Azure для ресурсов Azure](../role-based-access-control/overview.md).
 
-Дополнительные сведения о проверке подлинности с помощью ключей подписки, маркеров доступа и Azure Active Directory (AAD) см. <a href="https://docs.microsoft.com/azure/cognitive-services/authentication" target="_blank">в статье Проверка подлинности запросов в Azure Cognitive Services</a>.
+Дополнительные сведения о проверке подлинности с помощью ключей подписки, маркеров доступа и Azure Active Directory (AAD) см. <a href="/azure/cognitive-services/authentication" target="_blank">в статье Проверка подлинности запросов в Azure Cognitive Services</a>.
 
 ## <a name="environment-variables-and-application-configuration"></a>Переменные среды и конфигурация приложения
 
@@ -113,7 +113,7 @@ echo "${ENVIRONMENT_VARIABLE_KEY}"
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/system.environment.getenvironmentvariable" target="_blank"> `Environment.GetEnvironmentVariable` </a>разделе.
+Дополнительные сведения см. в <a href="/dotnet/api/system.environment.getenvironmentvariable" target="_blank"> `Environment.GetEnvironmentVariable` </a>разделе.
 
 ```csharp
 using static System.Environment;
@@ -132,7 +132,7 @@ class Program
 
 # <a name="c"></a>[C++](#tab/cpp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/c-runtime-library/reference/getenv-wgetenv" target="_blank"> `getenv` </a>разделе.
+Дополнительные сведения см. в <a href="/cpp/c-runtime-library/reference/getenv-wgetenv" target="_blank"> `getenv` </a>разделе.
 
 ```cpp
 #include <stdlib.h>

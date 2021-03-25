@@ -9,12 +9,12 @@ ms.service: cognitive-search
 ms.devlang: azurecli
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.openlocfilehash: ee6b0e1b745e86c72843af88c0f6d17f91512e15
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 456aaf20c0b6d198ae353490d961a69a319b6601
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102176762"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105045116"
 ---
 # <a name="manage-your-azure-cognitive-search-service-with-the-azure-cli"></a>Управление службой Когнитивный поиск Azure с помощью Azure CLI
 > [!div class="op_single_selector"]
@@ -260,7 +260,7 @@ az network private-endpoint dns-zone-group create \
    --zone-name "searchServiceZone"
 ```
 
-Дополнительные сведения о создании частных конечных точек в PowerShell см. в этом [кратком руководстве по этой частной ссылке](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cli) .
+Дополнительные сведения о создании частных конечных точек в PowerShell см. в этом [кратком руководстве по этой частной ссылке](../private-link/create-private-endpoint-cli.md) .
 
 ### <a name="manage-private-endpoint-connections"></a>Управление подключениями к частным конечным точкам
 

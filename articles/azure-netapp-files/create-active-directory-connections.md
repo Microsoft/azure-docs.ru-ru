@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.author: b-juche
-ms.openlocfilehash: add907923cc2284939acd972237fd4ec74ee2d12
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: d238b566c1286b9b765fb574cd72ee68ccf4b4a7
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104864012"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048380"
 ---
 # <a name="create-and-manage-active-directory-connections-for-azure-netapp-files"></a>Создание Active Directory подключений и управление ими для Azure NetApp Files
 
@@ -86,6 +86,8 @@ ms.locfileid: "104864012"
 * Azure NetApp Files поддерживает [Подписывание LDAP](/troubleshoot/windows-server/identity/enable-ldap-signing-in-windows-server), что обеспечивает безопасную передачу трафика LDAP между службой Azure NetApp Files и целевыми [контроллерами домена Active Directory](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview). Если вы используете рекомендации Microsoft консультационных [ADV190023](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190023) для подписывания LDAP, то следует включить функцию подписывания ldap в Azure NetApp Files, установив флажок **Подписывание LDAP** в окне [присоединиться Active Directory](#create-an-active-directory-connection) . 
 
     Только конфигурация [привязки канала LDAP](https://support.microsoft.com/help/4034879/how-to-add-the-ldapenforcechannelbinding-registry-entry) не влияет на службу Azure NetApp Files. Однако если вы используете как привязку каналов LDAP, так и защищенный протокол LDAP (например, LDAPs или `start_tls` ), то создание тома SMB завершится ошибкой.
+
+* Для службы DNS, не являющейся интегрированной с AD, следует добавить запись DNS A/PTR, чтобы Azure NetApp Files можно было использовать "понятное имя". 
 
 ## <a name="decide-which-domain-services-to-use"></a>Выбор доменных служб для использования 
 

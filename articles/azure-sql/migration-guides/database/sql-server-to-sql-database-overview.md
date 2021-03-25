@@ -1,5 +1,5 @@
 ---
-title: 'SQL Server к базе данных SQL: Обзор миграции'
+title: 'SQL Server к базе данных SQL Azure: Общие сведения о миграции'
 description: Узнайте о различных средствах и параметрах, доступных для переноса баз данных SQL Server в базу данных SQL Azure.
 ms.service: sql-database
 ms.subservice: migration-guide
@@ -10,14 +10,14 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 733b2375a26b0157f88bc148b52932e2f3e3f2e2
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: ecb9d1e25647e197614817116921140f0d7fbdf4
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102488279"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024971"
 ---
-# <a name="migration-overview-sql-server-to-sql-database"></a>Общие сведения о миграции: SQL Server в базу данных SQL
+# <a name="migration-overview-sql-server-to-azure-sql-database"></a>Общие сведения о миграции: SQL Server в базу данных SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
 
 Узнайте о различных вариантах миграции и особенностях переноса SQL Server в базу данных SQL Azure. 
@@ -30,7 +30,7 @@ ms.locfileid: "102488279"
 - Подсистема вычислений (Google Cloud Platform-обеспечить)  
 - Облачный SQL для SQL Server (Google Cloud Platform – обеспечить) 
 
-Другие сценарии см. в разделе [руководств по миграции баз данных](https://datamigration.microsoft.com/). 
+Другие руководства по миграции см. в разделе [Перенос базы данных](https://docs.microsoft.com/data-migration). 
 
 ## <a name="overview"></a>Обзор
 
@@ -58,7 +58,7 @@ ms.locfileid: "102488279"
 
 ## <a name="choose-appropriate-target"></a>Выберите подходящий целевой объект
 
-Рассмотрите общие рекомендации, которые помогут вам выбрать правильную модель развертывания и уровень обслуживания базы данных SQL Azure. Вы можете выбрать ресурсы для вычислений и хранения во время развертывания, а затем изменить их позже, используя  [портал Azure](../../database/scale-resources.md)  без простоя приложения.
+Рассмотрите общие рекомендации, которые помогут вам выбрать правильную модель развертывания и уровень обслуживания базы данных SQL Azure. Вы можете выбрать ресурсы для вычислений и хранения во время развертывания, а затем [изменить их позже, используя портал Azure](../../database/scale-resources.md) без простоя приложения.
 
 
 **Модели развертывания**. Изучите рабочую нагрузку приложения и шаблон использования, чтобы выбрать одну базу данных или эластичный пул. 
@@ -212,7 +212,7 @@ ms.locfileid: "102488279"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Чтобы приступить к переносу SQL Server в базу данных SQL Azure, см. [инструкции по миграции SQL Server в базу данных SQL](sql-server-to-sql-database-guide.md).
+Чтобы приступить к переносу SQL Server в базу данных SQL, см. статью [SQL Server to Azure SQL Database Migration Guide](sql-server-to-sql-database-guide.md).
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

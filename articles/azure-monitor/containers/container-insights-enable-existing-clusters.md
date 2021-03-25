@@ -4,12 +4,12 @@ description: Узнайте, как включить мониторинг кла
 ms.topic: conceptual
 ms.date: 09/12/2019
 ms.custom: devx-track-terraform, devx-track-azurecli
-ms.openlocfilehash: e84e1c4ad3aa3950a433218255ccac3d91435231
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: fba12fb8dd5c6c91883a88d4acfdca6c6d332c24
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101717678"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109630"
 ---
 # <a name="enable-monitoring-of-azure-kubernetes-service-aks-cluster-already-deployed"></a>Включение мониторинга уже развернутого кластера Azure Kubernetes Service (AKS)
 
@@ -21,6 +21,8 @@ ms.locfileid: "101717678"
 * Terraform
 * [Из Azure Monitor](#enable-from-azure-monitor-in-the-portal) или [непосредственно из кластера AKS](#enable-directly-from-aks-cluster-in-the-portal) в портал Azure
 * С [предоставленным шаблоном Azure Resource Manager](#enable-using-an-azure-resource-manager-template) с помощью командлета Azure PowerShell `New-AzResourceGroupDeployment` или с помощью Azure CLI.
+
+Если вы подключаете существующий кластер AKS к рабочей области Azure Log Analytics в другой подписке, поставщик ресурсов Microsoft. ContainerService должен быть зарегистрирован в подписке, в которой была создана Log Analytics Рабочая область. Дополнительные сведения см. в статье [Регистрация поставщика ресурсов](../../azure-resource-manager/management/resource-providers-and-types.md#register-resource-provider).
 
 ## <a name="sign-in-to-the-azure-portal"></a>Вход на портал Azure
 
@@ -376,7 +378,7 @@ az aks show -g <resourceGroupofAKSCluster> -n <nameofAksCluster>
   }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Если при попытке подключить решение у вас возникли проблемы, ознакомьтесь с [руководством по устранению неполадок](container-insights-troubleshoot.md).
 

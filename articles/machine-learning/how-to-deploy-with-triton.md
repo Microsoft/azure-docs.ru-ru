@@ -11,12 +11,12 @@ ms.date: 02/16/2020
 ms.topic: conceptual
 ms.reviewer: larryfr
 ms.custom: deploy
-ms.openlocfilehash: 2966b685e1904102467bf16994ea781556544047
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 0bb17ded6822c477fe2107c66711af5e2dc384d3
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102519203"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107845"
 ---
 # <a name="high-performance-serving-with-triton-inference-server-preview"></a>Высокопроизводительный обслуживание с помощью сервера вывода Тритон (Предварительная версия) 
 
@@ -31,6 +31,9 @@ ms.locfileid: "102519203"
 
 > [!TIP]
 > Фрагменты кода в этом документе предназначены для наглядных целей и могут не показывать законченное решение. Рабочий пример кода см. в разделе [комплексные примеры Тритон в машинное обучение Azure](https://aka.ms/triton-aml-sample).
+
+> [!NOTE]
+> [Сервер вывода NVIDIA Тритон](https://aka.ms/nvidia-triton-docs) — это стороннее программное обеспечение с открытым кодом, интегрированное в машинное обучение Azure.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -97,7 +100,7 @@ models
         - model_1
             - model_version
                 - model_file
-                - config_file
+            - config_file
         - model_2
             ...
 ```
@@ -114,6 +117,11 @@ az ml model register -n my_triton_model -p models --model-framework=Multi
 ```
 
 Дополнительные сведения о `az ml model register` см. в [справочной документации](/cli/azure/ext/azure-cli-ml/ml/model).
+
+При регистрации модели в Машинное обучение Azure значение `--model-path  -p` параметра должно быть именем родительской папки Тритон.  
+В приведенном выше примере  `--model-path` — "Models".
+
+Значением `--name  -n` параметра "my_triton_model" в примере будет имя модели, известное Рабочая область машинного обучения Azure. 
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -364,13 +372,17 @@ local_service.delete()
 
 
 ---
+## <a name="troubleshoot"></a>Диагностика
 
-## <a name="next-steps"></a>Дальнейшие действия
+* [Устранение неполадок при неудачном развертывании](how-to-troubleshoot-deployment.md), сведения об устранении неполадок и решении, а также общие ошибки, которые могут возникнуть при развертывании модели.
+
+* Если в журналах развертывания указано, что **тритонсервер не удалось запустить**, обратитесь к [документации по с открытым кодом NVIDIA.](https://github.com/triton-inference-server/server)
+
+## <a name="next-steps"></a>Следующие шаги
 
 * [Ознакомьтесь с комплексными примерами Тритон в Машинное обучение Azure](https://aka.ms/aml-triton-sample)
 * [Примеры клиента Тритон](https://aka.ms/nvidia-client-examples)
 * Ознакомьтесь с [документацией по серверу вывода Тритон](https://aka.ms/nvidia-triton-docs)
-* [Устранение неполадок при развертывании](how-to-troubleshoot-deployment.md)
 * [развертывание в Службе Azure Kubernetes](how-to-deploy-azure-kubernetes-service.md).
 * [Обновление веб-службы](how-to-deploy-update-web-service.md)
 * [Сбор данных для моделей в рабочей среде](how-to-enable-data-collection.md)
