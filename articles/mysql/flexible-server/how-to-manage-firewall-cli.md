@@ -1,19 +1,19 @@
 ---
 title: Управление правилами брандмауэра. Azure CLI — гибкий сервер в базе данных Azure для MySQL
 description: Создайте и управляйте правилами брандмауэра для базы данных Azure для MySQL — гибкого сервера с помощью Azure CLI командной строки.
-author: ambhatna
-ms.author: ambhatna
+author: savjani
+ms.author: pariks
 ms.service: mysql
 ms.devlang: azurecli
 ms.topic: how-to
 ms.date: 9/21/2020
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 84fdd3045d5a1d44ff611134d88fc9793ee203de
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4c699b00ebbecdbee985babe47c036cce6e0cb4b
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92545078"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109970"
 ---
 # <a name="create-and-manage-azure-database-for-mysql---flexible-server-firewall-rules-using-the-azure-cli"></a>Создание и управление базой данных Azure для MySQL — гибкие правила брандмауэра сервера с помощью Azure CLI
 
@@ -154,7 +154,7 @@ az mysql flexible-server firewall-rule delete --name mydemoserver --rule-name Fi
 ```
 При успешном выполнении выходные данные отсутствуют. В случае сбоя отображается текст сообщения об ошибке.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения о работе [в сети в базе данных Azure для гибкого сервера MySQL](./concepts-networking.md)
 - Узнайте больше о [правилах брандмауэра для гибких серверов базы данных Azure для MySQL](./concepts-networking.md#public-access-allowed-ip-addresses)
 - [Создание правил брандмауэра для Гибкого сервера Базы данных Azure для MySQL и управление ими с помощью портала Azure](./how-to-manage-firewall-portal.md).

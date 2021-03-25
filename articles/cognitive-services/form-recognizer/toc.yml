@@ -7,40 +7,20 @@
       href: overview.md
     - name: Новые возможности
       href: whats-new.md
-- name: Начало работы с Распознавателем документов
-  expanded: true
+- name: Краткие руководства
   items:
-    - name: "Использование клиентской библиотеки или REST\_API"
+    - name: Начало работы с клиентской библиотекой или REST API
       href: quickstarts/client-library.md
     - name: Использование примера средства создания меток
       href: quickstarts/label-tool.md
-- name: Учебники
+- name: Примеры
   items:
-    - name: Использование Распознавателя документов со службой "Когнитивный поиск"
-      href: ../../search/cognitive-search-custom-skill-form.md
-    - name: "Использование Распознавателя документов с AI\_Builder"
-      href: tutorial-ai-builder.md
-    - name: Использование Распознавателя документов с Функциями Azure
-      href: tutorial-azure-function.md
-    - name: Массовое извлечение данных из форм
-      href: tutorial-bulk-processing.md
-- name: Основные понятия
-  items:
-    - name: API макета
-      expanded: true
-      items:
-        - name: Извлечение из данных
-          href: concept-layout.md
-    - name: Настраиваемые модели
-      href: concept-custom.md
-    - name: Receipts
-      href: concept-receipts.md
-    - name: Визитные карточки
-      href: concept-business-cards.md
-    - name: Счета
-      href: concept-invoices.md
-    - name: Карточки идентификации
-      href: concept-identification-cards.md
+    - name: Клиентская библиотека Распознавателя документов для C#/.NET
+      href: /samples/azure/azure-sdk-for-net/azure-form-recognizer-client-sdk-samples
+    - name: Клиентская библиотека Распознавателя документов для Java
+      href: /samples/azure/azure-sdk-for-java/formrecognizer-java-samples
+    - name: Клиентская библиотека Распознавателя документов для Python
+      href: /samples/azure/azure-sdk-for-python/formrecognizer-samples
 - name: Практические руководства
   items:
     - name: Создание набора данных для обучения
@@ -64,6 +44,33 @@
           href: ../containers/index.yml
     - name: Резервное копирование и восстановление моделей
       href: disaster-recovery.md
+- name: Основные понятия
+  items:
+    - name: API макета
+      expanded: true
+      items:
+        - name: Извлечение из данных
+          href: concept-layout.md
+    - name: Настраиваемые модели
+      href: concept-custom.md
+    - name: Receipts
+      href: concept-receipts.md
+    - name: Визитные карточки
+      href: concept-business-cards.md
+    - name: Счета
+      href: concept-invoices.md
+    - name: Карточки идентификации
+      href: concept-identification-cards.md
+- name: Учебники
+  items:
+    - name: Массовое извлечение данных из форм
+      href: tutorial-bulk-processing.md
+    - name: Использование Распознавателя документов со службой "Когнитивный поиск"
+      href: ../../search/cognitive-search-custom-skill-form.md
+    - name: "Использование Распознавателя документов с AI\_Builder"
+      href: tutorial-ai-builder.md
+    - name: Использование Распознавателя документов с Функциями Azure
+      href: tutorial-azure-function.md
 - name: Справочник
   items:
     - name: "API \"Распознаватель документов\" версии\_2.1 (предварительная версия\_3)"

@@ -2,18 +2,18 @@
 title: Краткое руководство. Добавление функции голосового вызова в приложение
 titleSuffix: An Azure Communication Services quickstart
 description: Из этого краткого руководства вы узнаете, как добавить возможности голосового вызова в приложение с помощью Служб коммуникации Azure.
-author: GrantMeStrength
-ms.author: jken
-ms.date: 07/24/2020
+author: mikben
+ms.author: mikben
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
 zone_pivot_groups: acs-plat-web-ios-android
-ms.openlocfilehash: 48745662b8fbed2d4b72187bcf5c055643e222e8
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 0886e3955ba58a5a8edbf3cd72b1065b1000b5b3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102489210"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104598832"
 ---
 # <a name="quickstart-add-voice-calling-to-your-app"></a>Краткое руководство. Добавление функции голосового вызова в приложение
 

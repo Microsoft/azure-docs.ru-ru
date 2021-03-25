@@ -10,10 +10,10 @@ services: iot-pnp
 ms.custom: mvc
 zone_pivot_groups: programming-languages-set-ten
 ms.openlocfilehash: f1c7cb4c760b5344a7c27fc0257fdea445280b7f
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99831905"
 ---
 # <a name="quickstart-interact-with-an-iot-plug-and-play-device-thats-connected-to-your-solution"></a>Краткое руководство. Взаимодействие с подключенным к решению устройством IoT Plug and Play

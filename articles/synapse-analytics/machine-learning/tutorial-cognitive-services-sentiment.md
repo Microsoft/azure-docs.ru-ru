@@ -10,10 +10,10 @@ ms.date: 11/20/2020
 author: nelgson
 ms.author: negust
 ms.openlocfilehash: 08d5e53facce172c2287c2e341895f0ee38571f0
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98943701"
 ---
 # <a name="tutorial-sentiment-analysis-with-cognitive-services-preview"></a>Руководство по анализу тональности с помощью Cognitive Services (предварительная версия)
@@ -32,7 +32,7 @@ ms.locfileid: "98943701"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Рабочая область Azure Synapse Analytics](../get-started-create-workspace.md) с учетной записью хранения Azure Data Lake Storage 2-го поколения, настроенной в качестве хранилища по умолчанию. При работе с файловой системой Data Lake Storage 2-го поколения требуются права *участника данных Хранилища BLOB-объектов*.
+- [Рабочая область Azure Synapse Analytics](../get-started-create-workspace.md) с учетной записью хранения Azure Data Lake Storage 2-го поколения, настроенной в качестве хранилища по умолчанию. При работе с файловой системой Data Lake Storage 2-го поколения вам нужно иметь права *участника для получения данных Хранилища BLOB-объектов*.
 - Пул Spark в рабочей области Azure Synapse Analytics. Дополнительные сведения см. в статье [Создание пула Spark в Azure Synapse](../quickstart-create-sql-pool-studio.md).
 - Предварительные действия описаны в руководстве по [настройке Cognitive Services в Azure Synapse](tutorial-configure-cognitive-services-synapse.md).
 
@@ -82,9 +82,9 @@ ms.locfileid: "98943701"
 Для аутентификации в Cognitive Services нужно предоставить ссылку на секрет для хранилища ключей. Указанные ниже входные данные зависят от [предварительных действий](tutorial-configure-cognitive-services-synapse.md), которые должны быть выполнены до этого этапа.
 
 - **Подписка Azure**: Выберите подписку Azure, к которой принадлежит ваше хранилище ключей.
-- **Учетная запись Cognitive Services.** Введите ресурс Анализа текста, к которому вы будете подключаться.
-- **Связанная служба Azure Key Vault.** Во время выполнения предварительных действий вы создали связанную службу для ресурса Анализа текста. Выберите ее.
-- **Имя секрета.** Введите имя секрета в хранилище ключей, содержащего ключ для аутентификации в ресурсе Cognitive Services.
+- **Учетная запись Cognitive Services.** Введите ресурс "Анализ текста", к которому вы будете подключаться.
+- **Связанная служба Azure Key Vault.** Во время выполнения предварительных действий вы создали связанную службу для ресурса "Анализ текста". Выберите ее.
+- **Имя секрета.** Введите имя секрета в хранилище ключей, содержащего ключ для проверки подлинности в ресурсе Cognitive Services.
 
 ![Снимок экрана: сведения об аутентификации для хранилища ключей.](media/tutorial-cognitive-services/tutorial-cognitive-services-sentiment-00f.png)
 
