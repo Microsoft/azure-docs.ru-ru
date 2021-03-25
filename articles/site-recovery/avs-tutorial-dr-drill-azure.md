@@ -9,10 +9,10 @@ ms.date: 09/30/2020
 ms.author: harshacs
 ms.custom: MVC
 ms.openlocfilehash: 46d5e1cf773a24b032874ee54021c780e1f361af
-ms.sourcegitcommit: 5abc3919a6b99547f8077ce86a168524b2aca350
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91814293"
 ---
 # <a name="run-a-disaster-recovery-drill-from-azure-vmware-solution-to-azure"></a>Выполнение аварийного восстановления из Решения Azure VMware в Azure

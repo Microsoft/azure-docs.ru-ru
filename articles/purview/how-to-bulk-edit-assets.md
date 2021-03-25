@@ -7,16 +7,16 @@ ms.service: data-catalog
 ms.subservice: data-catalog-gen2
 ms.topic: conceptual
 ms.date: 11/24/2020
-ms.openlocfilehash: 149a70ea9b3fad919e771e8eb279e01d1492b3b3
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 4dc1af590a1965c155a7af7b233b431f982a73d2
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "104952462"
+ms.locfileid: "105024240"
 ---
-# <a name="how-to-bulk-edit-assets-to-tag-glossary-terms"></a>Как выполнить групповое изменение ресурсов для обозначения терминов глоссария
+# <a name="how-to-bulk-edit-assets-to-annotate-classifications-glossary-terms-and-modify-contacts"></a>Как выполнить групповое изменение ресурсов, чтобы закомментировать классификации, термины глоссария и изменить контакты
 
-В этой статье описывается, как пометить несколько терминов глоссария списком выбранных ресурсов в одном действии.
+В этой статье описывается, как отметить несколько терминов глоссария, классификаций, владельцев и экспертов на список выбранных ресурсов в одном действии.
 
 ### <a name="add-assets-to-view-selected-list-using-search"></a>Добавление ресурсов для просмотра выбранного списка с помощью поиска
 

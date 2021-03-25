@@ -6,12 +6,12 @@ author: cweining
 ms.author: cweining
 ms.date: 03/07/2019
 ms.reviewer: mbullwin
-ms.openlocfilehash: a285f26a406caa88d91da5647b3b79cffc9b614f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: bd83367ae073e03f03188cdf62cb60faaad7ac97
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102217420"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026459"
 ---
 # <a name="troubleshoot-problems-enabling-application-insights-snapshot-debugger-or-viewing-snapshots"></a><a id="troubleshooting"></a> Устранение неполадок, связанных с включением Application Insights Snapshot Debugger или просмотром моментальных снимков
 Если вы включили Application Insights Snapshot Debugger для приложения, но не видите моментальные снимки для исключений, эти инструкции можно использовать для устранения неполадок.
@@ -20,7 +20,7 @@ ms.locfileid: "102217420"
 
 ## <a name="make-sure-youre-using-the-appropriate-snapshot-debugger-endpoint"></a>Убедитесь, что вы используете соответствующую конечную точку Snapshot Debugger
 
-Сейчас только регионы, требующие внесения изменений в конечную точку, — это [Azure для государственных организаций](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#application-insights) и [Azure для Китая](https://docs.microsoft.com/azure/china/resources-developer-guide).
+Сейчас только регионы, требующие внесения изменений в конечную точку, — это [Azure для государственных организаций](../../azure-government/compare-azure-government-global-azure.md#application-insights) и [Azure для Китая](/azure/china/resources-developer-guide).
 
 Для службы приложений и приложений, использующих пакет SDK для Application Insights, необходимо обновить строку подключения, используя поддерживаемые переопределения для Snapshot Debugger, как определено ниже.
 
@@ -28,11 +28,11 @@ ms.locfileid: "102217420"
 |---------------|---------------------|-------------|
 |снапшотендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
 
-Дополнительные сведения о других переопределениях соединений см. в [документации по Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string?tabs=net#connection-string-with-explicit-endpoint-overrides).
+Дополнительные сведения о других переопределениях соединений см. в [документации по Application Insights](./sdk-connection-string.md?tabs=net#connection-string-with-explicit-endpoint-overrides).
 
 Для приложение-функция необходимо обновить `host.json` с использованием поддерживаемых переопределений ниже:
 
-|Свойство.    | Облако для государственных организаций США | Облако для Китая |   
+|Свойство    | Облако для государственных организаций США | Облако для Китая |   
 |---------------|---------------------|-------------|
 |ажентендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
 

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: hdinsightactive,mvc, devx-track-python
 ms.date: 04/07/2020
-ms.openlocfilehash: 88a71eb5a8ca9a6f2bf1d17fc4eaf9780527d2cb
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 13e5609c965a28405804b8a993280b13755b2d3c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98930551"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866073"
 ---
 # <a name="tutorial-build-an-apache-spark-machine-learning-application-in-azure-hdinsight"></a>Руководство по Создание приложения машинного обучения Apache Spark в Azure HDInsight
 
@@ -32,7 +32,7 @@ ms.locfileid: "98930551"
 
 Приложение использует данные из примера файла **HVAC.csv**, который по умолчанию доступен на всех кластерах. Файл находится в папке `\HdiSamples\HdiSamples\SensorSampleData\hvac`. Это данные о целевой температуре и фактической температуре некоторых зданий, в которых установлена система кондиционирования воздуха. В столбце **System** указан идентификатор системы, а в столбце **SystemAge** — срок эксплуатации системы кондиционирования в годах. Вы можете спрогнозировать, будет ли температура здания выше или ниже относительно целевой температуры на основе идентификатора системы и срока ее эксплуатации.
 
-![Моментальный снимок данных, используемых для примера машинного обучения Spark](./media/apache-spark-ipython-notebook-machine-learning/spark-machine-learning-understand-data.png "Моментальный снимок данных, используемых для примера машинного обучения Spark")
+:::image type="content" source="./media/apache-spark-ipython-notebook-machine-learning/spark-machine-learning-understand-data.png " alt-text="Моментальный снимок данных, используемых для примера машинного обучения Spark" border="true":::
 
 ## <a name="develop-a-spark-machine-learning-application-using-spark-mllib"></a>Разработка приложения машинного обучения Spark с помощью Spark MLlib
 
@@ -138,7 +138,7 @@ ms.locfileid: "98930551"
 
     Сравнение выходных данных со сведениями в необработанном CSV-файле. Например, в первой строке CSV-файла содержатся следующие данные:
 
-    ![Моментальный снимок выходных данных из примера машинного обучения Spark](./media/apache-spark-ipython-notebook-machine-learning/spark-machine-learning-output-data.png "Моментальный снимок выходных данных из примера машинного обучения Spark")
+    :::image type="content" source="./media/apache-spark-ipython-notebook-machine-learning/spark-machine-learning-output-data.png " alt-text="Моментальный снимок выходных данных из примера машинного обучения Spark" border="true":::
 
     Обратите внимание на то, насколько фактическая температура меньше целевой, что свидетельствует о том, что здание холодное. Значение в первой строке столбца **label** составляет **0,0**. Это означает, что в здании не жарко.
 
@@ -199,7 +199,7 @@ ms.locfileid: "98930551"
 
 1. Выберите команду **Удалить**. Выберите **Да**.
 
-![Удаление кластера HDInsight на портале Azure](./media/apache-spark-ipython-notebook-machine-learning/hdinsight-azure-portal-delete-cluster.png "Удаление кластера HDInsight")
+:::image type="content" source="./media/apache-spark-ipython-notebook-machine-learning/hdinsight-azure-portal-delete-cluster.png " alt-text="Удаление кластера HDInsight на портале Azure" border="true":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

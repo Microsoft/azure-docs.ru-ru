@@ -10,10 +10,10 @@ services: iot-dps
 ms.devlang: java
 ms.custom: mvc, devx-track-java
 ms.openlocfilehash: 7a0e15ac3c08f55e817eb6a6300d58ab4af6029c
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94966664"
 ---
 # <a name="quickstart-create-and-provision-a-simulated-tpm-device-using-java-device-sdk-for-azure-iot-hub-device-provisioning-service"></a>Краткое руководство. Создание и подготовка имитированного устройства доверенного платформенного модуля с помощью пакета SDK Java для Службы подготовки устройств к добавлению в Центр Интернета вещей.
@@ -24,7 +24,7 @@ ms.locfileid: "94966664"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Ознакомьтесь с принципами [подготовки к работе](about-iot-dps.md#provisioning-process).
+- Ознакомьтесь с разделом [Роли и учетные записи Azure](about-iot-dps.md#provisioning-process).
 - Выполнение инструкций из краткого руководства по [настройке Службы подготовки устройств к добавлению в Центр Интернета вещей на портале Azure](./quick-setup-auto-provision.md).
 - Учетная запись Azure с активной подпиской. [Создайте бесплатно](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio).
 - [Пакет SDK для Java SE 8](/azure/developer/java/fundamentals/java-jdk-long-term-support).
@@ -98,8 +98,8 @@ ms.locfileid: "94966664"
 
 Служба подготовки устройств Интернета вещей Azure поддерживает два типа регистрации:
 
-- [группы регистрации](concepts-service.md#enrollment-group) — используются для регистрации нескольких связанных устройств;
-- [индивидуальная регистрация](concepts-service.md#individual-enrollment) — используется для регистрации одного устройства.
+- [Группы регистрации](concepts-service.md#enrollment-group). Используются для регистрации нескольких связанных устройств.
+- [Индивидуальные регистрации.](concepts-service.md#individual-enrollment) Предназначены для регистрации одного устройства.
 
 В этой статье описана индивидуальная регистрация.
 

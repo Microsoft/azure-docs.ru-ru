@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/14/2019
 ms.author: jeedes
 ms.openlocfilehash: f2baeaf72bb77dfe9247380b8b26f3860cbfd5b0
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95999167"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-iqualify-lms"></a>Руководство по интеграции Azure Active Directory с iQualify LMS
@@ -30,11 +30,11 @@ ms.locfileid: "95999167"
 Дополнительные сведения об интеграции приложений SaaS с Azure AD см. в статье [Единый вход в приложениях в Azure Active Directory](../manage-apps/what-is-single-sign-on.md).
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы настроить интеграцию Azure AD с iQualify LMS, вам потребуется:
 
-* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
+* Подписка Azure AD. (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
 * подписка iQualify LMS с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -96,7 +96,7 @@ ms.locfileid: "95999167"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. Если вы хотите настроить приложение в режиме, инициируемом **поставщиком удостоверений**, в разделе **Базовая конфигурация SAML** выполните следующие действия.
 
@@ -159,7 +159,7 @@ ms.locfileid: "95999167"
     ж. Выберите команду **Сохранить**.
 
     > [!Note]
-    > Атрибут **Person_id** **необязателен**.
+    > Атрибут **Person_id****необязателен**.
 
 8. На странице **Настройка единого входа с помощью SAML** в разделе **Сертификат подписи SAML** щелкните **Загрузить**, чтобы загрузить требуемый **сертификат (Base64)** из предложенных вариантов, и сохраните его на компьютере.
 
@@ -195,7 +195,7 @@ ms.locfileid: "95999167"
 
     ![Параметры проверки подлинности SAML](./media/iqualify-tutorial/setting4.png)
 
-    а. В текстовом поле **SAML SINGLE SIGN-ON SERVICE URL** (URL-адрес службы единого входа SAML) введите значение **URL-адреса входа** из окна настройки приложения Azure AD.
+    a. В текстовом поле **SAML SINGLE SIGN-ON SERVICE URL** (URL-адрес службы единого входа SAML) введите значение **URL-адреса входа** из окна настройки приложения Azure AD.
 
     b. В текстовом поле **SAML LOGOUT URL** (URL-адрес выхода SAML) введите значение **URL-адрес выхода** из окна настройки приложения Azure AD.
 

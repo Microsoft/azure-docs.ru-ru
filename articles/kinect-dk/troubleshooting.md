@@ -7,12 +7,12 @@ ms.prod: kinect-dk
 ms.date: 03/05/2021
 ms.topic: conceptual
 keywords: Устранение неполадок, обновление, ошибка, Kinect, обратная связь, восстановление, ведение журнала, советы
-ms.openlocfilehash: 32a86deb0b6ab70e42ae3d659504256baae76202
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 6b83e2952a9039a52aa3b905e376e5d3beccaf8c
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104654770"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105026595"
 ---
 # <a name="azure-kinect-known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок в Azure Kinect
 
@@ -189,11 +189,17 @@ ms.locfileid: "104654770"
 
 Пакет SDK для отслеживания текста поддерживает среды выполнения ЦП, CUDA, Директмл (только для Windows) и Тенсоррт для определения модели оценки. `K4ABT_TRACKER_PROCESSING_MODE_GPU`По умолчанию CUDA выполнение в Linux и директмл выполнение в Windows. Для выбора конкретных сред выполнения были добавлены три дополнительных режима: `K4ABT_TRACKER_PROCESSING_MODE_GPU_CUDA` , `K4ABT_TRACKER_PROCESSING_MODE_GPU_DIRECTML` и `K4ABT_TRACKER_PROCESSING_MODE_GPU_TENSORRT` .
 
+> [!NOTE]  
+> Среда выполнения ONNX отображает предупреждения для кодов операций, которые не ускорены. Эти данные можно спокойно игнорировать.
+
 Среда выполнения ONNX включает переменные среды для управления кэшированием моделей Тенсоррт. Рекомендуемые значения:
-- ORT_TENSORRT_ENGINE_CACHE_ENABLE = 1 
-- ORT_TENSORRT_ENGINE_CACHE_PATH = "PathName"
+- ORT_TENSORRT_CACHE_ENABLE = 1 
+- ORT_TENSORRT_CACHE_PATH = "PathName"
 
 Перед началом отслеживания текста необходимо создать папку.
+
+> [!IMPORTANT]  
+> Тенсоррт предварительно обрабатывает модель перед выводом, что приводит к увеличению времени запуска по сравнению с другими средами выполнения. Кэширование подсистемы ограничивает это до первого выполнения, но оно экспериментально и зависит от модели, версии среды выполнения ONNX, версии Тенсоррт и модели GPU.
 
 Среда выполнения Тенсоррт поддерживает как FP32 (по умолчанию), так и FP16. FP16ные руки ~ 2 увеличение производительности для минимального уменьшения точности. Чтобы указать FP16, сделайте следующее:
 - ORT_TENSORRT_FP16_ENABLE = 1
@@ -221,6 +227,6 @@ ms.locfileid: "104654770"
 |          | nvrtc64_111_0        |                      |                      |
 |          | нвртк — builtins64_111 |                      |                      |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Дополнительные сведения о поддержке](support.md)

@@ -4,10 +4,10 @@ description: В этом кратком руководстве с помощью
 ms.date: 10/27/2020
 ms.topic: quickstart
 ms.openlocfilehash: dc4dae2dc6e43e7532117bf64af3ce97ddc7c496
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93104925"
 ---
 # <a name="quickstart-create-a-policy-assignment-to-identify-non-compliant-resources-using-terraform"></a>Краткое руководство. Создание назначения политики для выявления ресурсов, не соответствующих требованиям, с использованием Terraform
@@ -115,7 +115,7 @@ terraform apply assignment.tfplan
 
 ## <a name="identify-non-compliant-resources"></a>Выявление несоответствующих ресурсов
 
-Чтобы просмотреть ресурсы, которые не соответствуют новому назначению, используйте значение _assignment\_id_ , возвращенное командой `terraform apply`. Теперь выполните следующую команду, чтобы вывести идентификаторы несоответствующих ресурсов в JSON-файле:
+Чтобы просмотреть ресурсы, которые не соответствуют новому назначению, используйте значение _assignment\_id_, возвращенное командой `terraform apply`. Теперь выполните следующую команду, чтобы вывести идентификаторы несоответствующих ресурсов в JSON-файле:
 
 ```console
 armclient post "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.PolicyInsights/policyStates/latest/queryResults?api-version=2019-10-01&$filter=IsCompliant eq false and PolicyAssignmentId eq '<policyAssignmentID>'&$apply=groupby((ResourceId))" > <json file to direct the output with the resource IDs into>

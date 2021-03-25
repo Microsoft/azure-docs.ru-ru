@@ -2,16 +2,16 @@
 title: Учебник. Добавление функций в Bicep-файлы Azure Resource Manager
 description: Сведения о добавлении функций в Bicep-файлы для создания значений.
 author: mumian
-ms.date: 03/02/2021
+ms.date: 03/10/2021
 ms.topic: tutorial
 ms.author: jgao
 ms.custom: references_regions
-ms.openlocfilehash: 9c66ab132d3343115b1a9bd852d3eb3d83ae4ca7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b909beb0cce9ad04ba00068ee25247520dcff47d
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742991"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633161"
 ---
 # <a name="tutorial-add-functions-to-azure-resource-manager-bicep-file"></a>Учебник. Добавление функций в Bicep-файлы Azure Resource Manager
 

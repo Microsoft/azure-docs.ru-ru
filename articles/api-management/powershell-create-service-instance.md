@@ -10,10 +10,10 @@ ms.custom: mvc
 ms.date: 09/14/2020
 ms.author: apimpm
 ms.openlocfilehash: eb2c42d26a85a07518a018ba5b8817f13d3cd17f
-ms.sourcegitcommit: 7374b41bb1469f2e3ef119ffaf735f03f5fad484
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90707069"
 ---
 # <a name="quickstart-create-a-new-azure-api-management-service-instance-by-using-powershell"></a>Краткое руководство. Создание экземпляра службы "Управление API Azure" с помощью PowerShell

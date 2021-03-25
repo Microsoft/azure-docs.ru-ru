@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: b8f9e6f4bc091abbd1bb08ecbd649c1411e5ab20
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 2e627e582b47c5174e70f5d21d758148cde8dbdd
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102095397"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105022862"
 ---
 # <a name="update-your-azure-percept-dk-over-the-air"></a>Обновление Azure Перцепт ТЕМНее по воздуху
 
@@ -66,7 +66,7 @@ ms.locfileid: "102095397"
 
 1. Добавьте тег на устройства.
     1. В области навигации слева **IOT Edge** найдите свой элемент Azure перцепт DK и перейдите к его **двойникау устройства**.
-    1. Добавьте новое **обновление устройства для** значения тега центра Интернета вещей, как показано ниже (измените ```<CustomTagValue>``` значение, например, AzurePerceptGroup1). Дополнительные сведения о [тегах документа JSON](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins#device-twins)двойникаов устройств.
+    1. Добавьте новое **обновление устройства для** значения тега центра Интернета вещей, как показано ниже (измените ```<CustomTagValue>``` значение, например, AzurePerceptGroup1). Дополнительные сведения о [тегах документа JSON](../iot-hub/iot-hub-devguide-device-twins.md#device-twins)двойникаов устройств.
 
     ```
     "tags": {
@@ -102,6 +102,6 @@ ms.locfileid: "102095397"
  
 1. Выберите развертывание, чтобы просмотреть сведения о развертывании. Может потребоваться нажать кнопку **Обновить** , пока **состояние** не изменится на **выполнено**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь ваш комплект разработки успешно обновлен. Вы можете продолжить разработку и работу с DevKit.

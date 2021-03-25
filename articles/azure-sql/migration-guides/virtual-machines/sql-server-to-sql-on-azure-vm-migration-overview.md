@@ -10,12 +10,12 @@ author: markjones-msft
 ms.author: markjon
 ms.reviewer: mathoma
 ms.date: 11/06/2020
-ms.openlocfilehash: 0eabb48aabcb50557b342385068807eb67a9b165
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e237cf09616cb645bfc4659af4439086979b2565
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98797850"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105023628"
 ---
 # <a name="migration-overview-sql-server-to-sql-server-on-azure-vms"></a>Обзор миграции: SQL Server для SQL Server на виртуальных машинах Azure
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlvm.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "98797850"
 - Служба реляционной базы данных Amazon (AWS RDS) 
 - Подсистема вычислений (Google Cloud Platform-обеспечить)
 
-Другие сценарии см. в разделе [руководств по миграции баз данных](https://datamigration.microsoft.com/). 
+Другие руководства по миграции см. в разделе [Перенос базы данных](https://docs.microsoft.com/data-migration). 
 
 ## <a name="overview"></a>Обзор
 

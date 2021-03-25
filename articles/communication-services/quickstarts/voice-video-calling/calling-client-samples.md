@@ -1,7 +1,7 @@
 ---
-title: Краткое руководство. Использование клиентской библиотеки вызова служб связи Azure
+title: Краткое руководство. Использование пакета SDK, вызывающего службы связи Azure
 titleSuffix: An Azure Communication Services quickstart
-description: Сведения о службах связи, вызывающих возможности клиентской библиотеки.
+description: Узнайте о возможностях служб связи, вызывающих пакеты SDK.
 author: mikben
 manager: jken
 services: azure-communication-services
@@ -10,19 +10,19 @@ ms.date: 03/10/2021
 ms.topic: conceptual
 ms.service: azure-communication-services
 zone_pivot_groups: acs-plat-web-ios-android
-ms.openlocfilehash: b4689f9777cee99b5bd85f733812ba986162360c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b5ade06e8338dd810651ccd606c7dc9a313b6fa9
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103488131"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105107763"
 ---
-# <a name="quickstart-use-the-communication-services-calling-client-library"></a>Краткое руководство. Использование клиентской библиотеки вызова служб связи
+# <a name="quickstart-use-the-communication-services-calling-sdk"></a>Краткое руководство. Использование пакета SDK, вызывающего коммуникационные службы
 
 [!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
 
 
-Начало работы со Службами коммуникации Azure с помощью клиентской библиотеки голосовых вызовов Служб коммуникации для добавления в приложение функции голосовых вызовов и видеовызовов.
+Приступая к работе со службами связи Azure с помощью пакета SDK, вызывающего коммуникационные службы, для добавления голоса и видео, обращающегося к вашему приложению.
 
 ::: zone pivot="platform-web"
 [!INCLUDE [Calling with JavaScript](./includes/calling-sdk-js.md)]

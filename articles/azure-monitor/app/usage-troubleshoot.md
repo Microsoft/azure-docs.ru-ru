@@ -6,12 +6,12 @@ author: NumberByColors
 ms.author: daviste
 ms.date: 07/11/2018
 ms.reviewer: mbullwin
-ms.openlocfilehash: 02d1bd9d204d88ba90218b1254c66ac0da80be85
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a1d77016fdf94de4fdd574b0d4cbd22d6b0b8490
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "87323508"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024750"
 ---
 # <a name="troubleshoot-user-behavior-analytics-tools-in-application-insights"></a>Устранение неполадок со средствами для анализа поведения пользователей в Application Insights
 Возникли вопросы о [средствах для анализа поведения пользователей в Application Insights](usage-overview.md), касающиеся [пользователей, сеансов, событий](usage-segmentation.md), [воронок](usage-funnels.md), [маршрутов пользователей](usage-flows.md), [периода удержания](usage-retention.md) или когорт? Ниже приведен ряд ответов.
@@ -23,7 +23,7 @@ ms.locfileid: "87323508"
 
 При мониторинге веб-приложения проще всего добавить [пакет SDK JavaScript Application Insights](./javascript.md) в приложение и убедиться, что фрагмент кода сценария загружен на каждую страницу, которую требуется отслеживать. Пакет SDK JavaScript автоматически создает идентификаторы для анонимного пользователя и сеанса, а затем заполняет события телеметрии этими идентификаторами, когда они отправляются из приложения.
 
-При мониторинге веб-службы (без интерфейса пользователя) [создайте инициализатор телеметрии, который заполняет свойства идентификатора анонимного пользователя и идентификатора сеанса](usage-send-user-context.md) согласно основным понятиям службы об уникальных пользователях и сеансах.
+При мониторинге веб-службы (без интерфейса пользователя) [создайте инициализатор телеметрии, который заполняет свойства идентификатора анонимного пользователя и идентификатора сеанса](./usage-overview.md) согласно основным понятиям службы об уникальных пользователях и сеансах.
 
 Если приложение отправляет [идентификаторы аутентифицированных пользователей](./api-custom-events-metrics.md#authenticated-users), подсчет можно выполнять в инструменте "Пользователи". В раскрывающемся списке "Показать" выберите Authenticated users (Аутентифицированные пользователи).
 
@@ -44,10 +44,9 @@ ms.locfileid: "87323508"
 
 Если приложение отправляет слишком много имен пользовательских событий, измените имя в коде на более общее. Опять же, избегайте добавления URL-адресов и другой постраничной и динамической информации в имена настраиваемых событий напрямую. Вместо этого переместите эти данные в пользовательские свойства настраиваемого события с помощью API `trackEvent`. Например, вместо `appInsights.trackEvent("Edit button clicked on http://www.contoso.com/index")` можно использовать `appInsights.trackEvent("Edit button clicked", { "Source URL": "http://www.contoso.com/index" })`.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Обзор использования средств для анализа поведения пользователей](usage-overview.md)
 
 ## <a name="get-help"></a>Получить помощь
 * [Stack Overflow](https://stackoverflow.com/questions/tagged/ms-application-insights)
-
