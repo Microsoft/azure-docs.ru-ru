@@ -9,10 +9,10 @@ ms.topic: overview
 ms.date: 12/15/2020
 ms.author: prmitiki
 ms.openlocfilehash: 8f960e58d47963cbb239d498af52e7adfc77caa9
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97586872"
 ---
 # <a name="internet-peering-overview"></a>Общие сведения о пиринге в Интернете

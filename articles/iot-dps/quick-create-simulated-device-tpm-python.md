@@ -10,10 +10,10 @@ services: iot-dps
 ms.devlang: python
 ms.custom: mvc, devx-track-python
 ms.openlocfilehash: 23a2ca3cae92f65786a3d2fb978b1727e18857e8
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94966642"
 ---
 # <a name="quickstart-create-and-provision-a-simulated-tpm-device-using-python-device-sdk-for-iot-hub-device-provisioning-service"></a>Краткое руководство. Создание и подготовка к работе имитированного устройства X.509 с помощью пакета SDK Python для устройств для Службы подготовки устройств к добавлению в Центр Интернета вещей.
@@ -24,7 +24,7 @@ ms.locfileid: "94966642"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Ознакомьтесь с принципами [подготовки к работе](about-iot-dps.md#provisioning-process).
+- Ознакомьтесь с разделом [Роли и учетные записи Azure](about-iot-dps.md#provisioning-process).
 - Выполнение инструкций из краткого руководства по [настройке Службы подготовки устройств к добавлению в Центр Интернета вещей на портале Azure](./quick-setup-auto-provision.md).
 - Учетная запись Azure с активной подпиской. [Создайте бесплатно](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio).
 - [Visual Studio 2015 или более поздней версии](https://visualstudio.microsoft.com/vs/) с разработкой классических приложений на C++.
@@ -77,8 +77,8 @@ ms.locfileid: "94966642"
 
 Служба подготовки устройств Интернета вещей Azure поддерживает два типа регистрации:
 
-- [группы регистрации](concepts-service.md#enrollment-group) — используются для регистрации нескольких связанных устройств;
-- [индивидуальная регистрация](concepts-service.md#individual-enrollment) — используется для регистрации одного устройства.
+- [Группы регистрации](concepts-service.md#enrollment-group). Используются для регистрации нескольких связанных устройств.
+- [Индивидуальные регистрации.](concepts-service.md#individual-enrollment) Предназначены для регистрации одного устройства.
 
 В этой статье описана индивидуальная регистрация.
 
