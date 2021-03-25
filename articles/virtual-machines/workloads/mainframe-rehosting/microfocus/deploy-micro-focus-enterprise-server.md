@@ -11,13 +11,14 @@ ms.topic: conceptual
 ms.date: 06/29/2020
 tags: ''
 keywords: ''
-ms.service: multiple
-ms.openlocfilehash: 9e5b3857c2252a939080206fb1f92cc422f326fc
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.service: virtual-machines
+ms.subservice: mainframe-rehosting
+ms.openlocfilehash: 58ba530e434a9dc141ba8cb98120f6325eb06f7e
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102564362"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950479"
 ---
 # <a name="deploy-micro-focus-enterprise-server-50-to-aks"></a>Развертывание Micro Focus Enterprise Server 5,0 в AKS
 

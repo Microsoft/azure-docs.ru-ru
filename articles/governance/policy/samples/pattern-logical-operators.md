@@ -4,15 +4,15 @@ description: Этот шаблон Политики Azure предоставля
 ms.date: 08/17/2020
 ms.topic: sample
 ms.openlocfilehash: 3f644cdbfc45b06d1ad5db8e7727c0fa69742f00
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88545596"
 ---
 # <a name="azure-policy-pattern-logical-operators"></a>Шаблон политики Azure: логические операторы
 
-Определение политики может содержать несколько условных операторов. Вам может понадобиться, чтобы каждое утверждение имело значение "true", или чтобы некоторые из них были "true". Для поддержки этих потребностей язык имеет [логические операторы](../concepts/definition-structure.md#logical-operators) для **not**, **allOf**и **anyOf**. Они необязательны и могут быть вложены для создания сложных сценариев.
+Определение политики может содержать несколько условных операторов. Вам может понадобиться, чтобы каждое утверждение имело значение "true", или чтобы некоторые из них были "true". Для поддержки этих потребностей язык имеет [логические операторы](../concepts/definition-structure.md#logical-operators) для **not**, **allOf** и **anyOf**. Они необязательны и могут быть вложены для создания сложных сценариев.
 
 ## <a name="sample-1-one-logical-operator"></a>Пример 1 Один логический оператор
 
