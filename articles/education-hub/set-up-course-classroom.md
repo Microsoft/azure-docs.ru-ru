@@ -8,10 +8,10 @@ ms.date: 06/30/2020
 ms.service: azure-education
 ms.subservice: education-hub
 ms.openlocfilehash: 0b797e2416b4d8849da19e4e75127f86a6f17322
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87101337"
 ---
 # <a name="quickstart-set-up-a-course-and-create-a-classroom"></a>Краткое руководство. Настройка курса и создание аудитории
@@ -45,17 +45,17 @@ ms.locfileid: "87101337"
 
 1. Щелкните значок **+ Добавить** в левом верхнем углу таблицы, чтобы запустить рабочий процесс создания.
 
-    :::image type="content" source="media/set-up-course-classroom/courses-add.png" alt-text="Страница курсов в Центре образования Azure" border="false":::
+    :::image type="content" source="media/set-up-course-classroom/courses-add.png" alt-text="Добавление курса в Центре образования Azure" border="false":::
 
 1. Список курса можно создать с помощью одного из двух методов: отправить список или применить код приглашения.
     - **Список.** Если у вас уже есть имена всех учащихся и соответствующие имена для входа, вы можете заполнить и отправить файл списка. Чтобы скачать пример CSV-файла для отправки списка, щелкните ссылку **Скачать пример файла** в правом верхнем углу.
     - **Код приглашения.** Если вы решили использовать код приглашения, определите допустимое количество активируемых кодов и срок их действия. Затем отправьте учащимся следующую ссылку для активации кода: https://aka.ms/joinedu.
 
-      :::image type="content" source="media/set-up-course-classroom/enter-invitation-code.png" alt-text="Страница курсов в Центре образования Azure" border="false":::
+      :::image type="content" source="media/set-up-course-classroom/enter-invitation-code.png" alt-text="Ввод кода приглашения в Центре образования Azure" border="false":::
 
 1. Выберите **Создать аудиторию** в правом нижнем углу. Выполнение этого действия может занять несколько секунд.
 
-   :::image type="content" source="media/set-up-course-classroom/create-classroom.png" alt-text="Страница курсов в Центре образования Azure" border="false":::
+   :::image type="content" source="media/set-up-course-classroom/create-classroom.png" alt-text="Создание аудитории в Центре образования Azure" border="false":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

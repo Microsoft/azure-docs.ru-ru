@@ -5,18 +5,18 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/18/2019
-ms.openlocfilehash: 417819cad3bc2ee258381426dfcee7c800b69d42
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: fb57992c8e26560061faf68443c4993801f9713d
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929181"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871577"
 ---
 # <a name="deploy-and-manage-apache-storm-topologies-on-azure-hdinsight"></a>Развертывание и администрирование топологий Apache Storm в Azure HDInsight
 
 С помощью этого документа вы ознакомитесь с основами управления и мониторинга топологий [Apache Storm](https://storm.apache.org/), работающих в Storm в кластерах HDInsight.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Кластер Apache Storm в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Storm** для параметра **Тип кластера**.
 
@@ -43,7 +43,7 @@ ms.locfileid: "98929181"
 
 1. В окне **Настройка нового проекта** введите **имя проекта**, перейдите в каталог или создайте **Расположение** для сохранения нового проекта в. Щелкните **Создать**.
 
-    ![Настройка нового окна проекта, Visual Studio](./media/apache-storm-deploy-monitor-topology-linux/apache-storm-sample1.png)
+    :::image type="content" source="./media/apache-storm-deploy-monitor-topology-linux/apache-storm-sample1.png" alt-text="Настройка нового окна проекта, Visual Studio" border="true":::
 
 1. В **Обозреватель сервера** щелкните правой кнопкой мыши **Azure** и выберите **подключиться к Microsoft Azure подписке...** и завершите процесс входа.
 
@@ -83,7 +83,7 @@ ms.locfileid: "98929181"
 
 При отправке топологии с помощью Visual Studio появляется окно **представление топология** . Выберите топологию в списке, чтобы просмотреть информацию о выполняемой топологии.
 
-![Топология монитора, окно представления топологий, Visual Studio](./media/apache-storm-deploy-monitor-topology-linux/visual-studio-monitor.png)
+:::image type="content" source="./media/apache-storm-deploy-monitor-topology-linux/visual-studio-monitor.png" alt-text="Топология монитора, окно представления топологий, Visual Studio" border="true":::
 
 > [!NOTE]  
 > **Топологии Storm** можно также просмотреть в **обозревателе сервера**. Разверните **Azure**  >  **hdinsight**, щелкните правой кнопкой мыши множество в кластере HDInsight, а затем выберите пункт **Просмотр топологий**.
@@ -179,7 +179,7 @@ storm rebalance TOPOLOGYNAME
 
 Основная страница пользовательского интерфейса с более близким интерфейсом выглядит так же, как на этой веб-странице:
 
-![Главная страница, Пользовательский интерфейс для расApache Storm топологий, Azure](./media/apache-storm-deploy-monitor-topology-linux/apache-storm-web-ui-main-page.png)
+:::image type="content" source="./media/apache-storm-deploy-monitor-topology-linux/apache-storm-web-ui-main-page.png" alt-text="Главная страница, Пользовательский интерфейс для расApache Storm топологий, Azure" border="true":::
 
 #### <a name="topology-summary"></a>Topology summary
 
@@ -198,7 +198,7 @@ storm rebalance TOPOLOGYNAME
 
 Страница сводных сведений о топологии области похожа на эту веб-страницу:
 
-![Страница "Сводка топологии", Пользовательский интерфейс для расApache Storm, Azure](./media/apache-storm-deploy-monitor-topology-linux/apache-storm-web-ui-topology-summary.png)
+:::image type="content" source="./media/apache-storm-deploy-monitor-topology-linux/apache-storm-web-ui-topology-summary.png" alt-text="Страница &quot;Сводка топологии&quot;, Пользовательский интерфейс для расApache Storm, Azure" border="true":::
 
 В разделе **действия топологии** можно выбрать следующие кнопки для действия:
 
@@ -229,7 +229,7 @@ storm rebalance TOPOLOGYNAME
 
 Страница «сводка» с молнией выглядит примерно так:
 
-![Страница сводки «молния», Пользовательский интерфейс Apache Storm, Azure](./media/apache-storm-deploy-monitor-topology-linux/apache-storm-web-ui-bolt-summary.png)
+:::image type="content" source="./media/apache-storm-deploy-monitor-topology-linux/apache-storm-web-ui-bolt-summary.png" alt-text="Страница сводки «молния», Пользовательский интерфейс Apache Storm, Azure" border="true":::
 
 ## <a name="monitor-and-manage-the-topology-using-the-rest-api"></a>Мониторинг топологии и управление ею с помощью REST API
 

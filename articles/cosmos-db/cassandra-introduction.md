@@ -9,10 +9,10 @@ ms.subservice: cosmosdb-cassandra
 ms.topic: overview
 ms.date: 11/25/2020
 ms.openlocfilehash: 2a778c2e9a44bda148fd40112776858943cffe4e
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96188621"
 ---
 # <a name="introduction-to-the-azure-cosmos-db-cassandra-api"></a>Знакомство с API Cassandra для Azure Cosmos DB

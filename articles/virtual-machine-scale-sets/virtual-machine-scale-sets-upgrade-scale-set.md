@@ -9,12 +9,12 @@ ms.subservice: management
 ms.date: 03/10/2020
 ms.reviewer: mimckitt
 ms.custom: mimckitt, devx-track-azurecli
-ms.openlocfilehash: bd16f0ef330d1d4a33dd796af0ec3e94dda5acfc
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 45c52e141ed2d93f89c9d7c1426a9d7cbbbd47f5
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98684599"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105023934"
 ---
 # <a name="modify-a-virtual-machine-scale-set"></a>Изменение масштабируемого набора виртуальных машин
 
@@ -340,7 +340,7 @@ $ az vmss get-instance-view --resource-group myResourceGroup --name myScaleSet -
 ### <a name="create-time-properties"></a>Свойства времени создания
 Некоторые свойства можно задать только при создании масштабируемого набора. Эти свойства включают в себя:
 
-- зоны доступности;
+- Зоны доступности
 - издатель ссылки на образ;
 - предложение ссылки на образ.
 - тип учетной записи хранения управляемого диска ОС.
@@ -350,7 +350,7 @@ $ az vmss get-instance-view --resource-group myResourceGroup --name myScaleSet -
 
 - **singlePlacementGroup**. Если это свойство имеет значение true, его можно изменить на false. Однако, если значением является false, его **не возможно** изменить на true.
 - **subnet**. Подсеть масштабируемого набора можно изменить, если исходная и новая подсети находятся в одной и той же виртуальной сети.
-- **имажереференцеску** -SKU Reference может быть обновлен для подтвержденных [дистрибутивов Linux](../virtual-machines/linux/endorsed-distros.md), образов Windows Server, клиентов и образов без [сведений о плане](../virtual-machines/linux/cli-ps-findimage.md#view-plan-properties). 
+- **имажереференцеску** -SKU Reference может быть обновлен для подтвержденных [дистрибутивов Linux](../virtual-machines/linux/endorsed-distros.md), образов Windows Server, клиентов и образов без [сведений о плане](../virtual-machines/linux/cli-ps-findimage.md#check-the-purchase-plan-information). 
 
 ### <a name="properties-that-require-deallocation-to-change"></a>Свойства, для изменения которых требуется освободить виртуальные машины
 Для некоторых свойств можно задать определенные значения, только если виртуальные машины в масштабируемом наборе освобождены. Эти свойства включают в себя:
@@ -417,7 +417,7 @@ $ az vmss get-instance-view --resource-group myResourceGroup --name myScaleSet -
 ### <a name="update-the-load-balancer-for-your-scale-set"></a>Обновление подсистемы балансировки нагрузки масштабируемого набора
 Предположим, у вас есть масштабируемый набор с Azure Load Balancer и вы хотите заменить Azure Load Balancer на шлюз приложений Azure. Свойства подсистемы балансировки нагрузки и шлюза приложений для масштабируемого набора являются частью списка, поэтому вы можете использовать команды для удаления и добавления элементов списка вместо прямого изменения свойств.
 
-- Azure Powershell:
+- Azure PowerShell:
 
     ```powershell
     # Get the current model of the scale set and store it in a local PowerShell object named $vmss
@@ -450,5 +450,5 @@ $ az vmss get-instance-view --resource-group myResourceGroup --name myScaleSet -
 > Эти команды предполагают наличие только одной конфигурации IP и балансировщика нагрузки в масштабируемом наборе. Если их несколько, может потребоваться использовать индекс списка, отличный от *0*.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Общие задачи управления масштабируемыми наборами можно также выполнять с помощью [Azure CLI](virtual-machine-scale-sets-manage-cli.md) или [Azure PowerShell](virtual-machine-scale-sets-manage-powershell.md).

@@ -7,12 +7,12 @@ ms.service: site-recovery
 ms.topic: conceptual
 ms.date: 10/13/2019
 ms.author: harshacs
-ms.openlocfilehash: 123a68885346062b9e8a53b8d5066204b6b20f5e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4b88ed44632aa255837d8fb499782e11c716d443
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89568784"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048193"
 ---
 # <a name="connect-to-azure-vms-after-failover-from-on-premises"></a>Подключение к виртуальным машинам Azure после отработки отказа из локальной среды 
 
@@ -62,7 +62,7 @@ ms.locfileid: "89568784"
 
 1. Чтобы подключиться к виртуальной машине через Интернет, назначьте ей общедоступный IP-адрес. Для виртуальной машины Azure нельзя указывать общедоступный IP-адрес, ранее используемый для локального компьютера. [Дополнительные сведения](../virtual-network/virtual-network-public-ip-address.md)
 2. Убедитесь, что правила группы безопасности сети (NSG) на виртуальной машине разрешают входящие подключения к порту RDP или SSH.
-3. Проверьте [диагностику загрузки](../virtual-machines/troubleshooting/boot-diagnostics.md#enable-boot-diagnostics-on-existing-virtual-machine) , чтобы просмотреть виртуальную машину.
+3. Проверьте [диагностику загрузки](/troubleshoot/azure/virtual-machines/boot-diagnostics#enable-boot-diagnostics-on-existing-virtual-machine) , чтобы просмотреть виртуальную машину.
 
 
 > [!NOTE]
