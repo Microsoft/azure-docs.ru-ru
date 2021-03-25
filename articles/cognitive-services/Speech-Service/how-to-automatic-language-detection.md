@@ -12,12 +12,12 @@ ms.date: 05/19/2020
 ms.author: trbye
 zone_pivot_groups: programming-languages-speech-services-nomore-variant
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: e62333f241cf24620773314fb7aa4846af651eaf
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b558d4b3be64f82775eb9caf2f3ea8c5a8f95c6d
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98185875"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025226"
 ---
 # <a name="automatic-language-detection-for-speech-to-text"></a>Автоматическое определение языка для речи в текст
 
@@ -30,7 +30,7 @@ ms.locfileid: "98185875"
 
 ## <a name="automatic-language-detection-with-the-speech-sdk"></a>Автоматическое определение языка с помощью пакета SDK для распознавания речи
 
-Автоматическое определение языка в настоящее время имеет ограничение на четыре языка на стороне служб для каждого обнаружения. При создании объекта учитывайте это ограничение `AudoDetectSourceLanguageConfig` . В примерах ниже мы создадим `AutoDetectSourceLanguageConfig` , а затем используем его для создания `SpeechRecognizer` .
+Автоматическое определение языка в настоящее время имеет ограничение на четыре языка на стороне служб для каждого обнаружения. При создании объекта учитывайте это ограничение `AutoDetectSourceLanguageConfig` . В примерах ниже мы создадим `AutoDetectSourceLanguageConfig` , а затем используем его для создания `SpeechRecognizer` .
 
 > [!TIP]
 > Можно также указать пользовательскую модель, которая будет использоваться при выполнении преобразования речи в текст. Дополнительные сведения см. [в разделе Использование настраиваемой модели для автоматического определения языка](#use-a-custom-model-for-automatic-language-detection).
@@ -239,7 +239,7 @@ var autoDetectConfig = SpeechSDK.AutoDetectSourceLanguageConfig.fromSourceLangua
 
 ::: zone-end
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 ::: zone pivot="programming-language-csharp"
 * См. [пример кода](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/samples/csharp/sharedcontent/console/speech_recognition_samples.cs#L741) в GitHub для автоматического определения языка

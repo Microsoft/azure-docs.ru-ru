@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 04/20/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: 24a38fde3d1b6bbe1efef9241458da846c186112
-ms.sourcegitcommit: 67b44a02af0c8d615b35ec5e57a29d21419d7668
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97916343"
 ---
 # <a name="playback-technology-tech"></a>Технология воспроизведения #

@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.date: 08/10/2020
 ms.reviewer: azfuncdf, antchu
 ms.openlocfilehash: edd02085abe63b124082255247362f096248ba82
-ms.sourcegitcommit: 32c521a2ef396d121e71ba682e098092ac673b30
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91317265"
 ---
 # <a name="create-your-first-durable-function-in-powershell"></a>Создание устойчивой функции в PowerShell
@@ -38,7 +38,7 @@ ms.locfileid: "91317265"
 
 В этом разделе вы используете Visual Studio Code. чтобы создать локальный проект Функций Azure. 
 
-1. В Visual Studio Code нажмите клавишу F1 (или CTRL/CMD+SHIFT+P), чтобы открыть палитру команд. В палитре команд найдите и щелкните `Azure Functions: Create New Project...`.
+1. В Visual Studio Code нажмите клавишу F1 (или Ctrl/Cmd+Shift+P), чтобы открыть палитру команд. В палитре команд найдите и щелкните `Azure Functions: Create New Project...`.
 
     ![Создание функции](media/quickstart-js-vscode/functions-create-project.png)
 

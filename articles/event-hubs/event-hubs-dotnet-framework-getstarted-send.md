@@ -5,10 +5,10 @@ ms.topic: quickstart
 ms.date: 06/23/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: ea3ad7e90a947269833a03a4cacf3d4fe76a6620
-ms.sourcegitcommit: 32c521a2ef396d121e71ba682e098092ac673b30
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91334282"
 ---
 # <a name="quickstart-send-events-to-or-receive-events-from-azure-event-hubs-using-net-framework"></a>Краткое руководство. Отправка и получение событий с помощью .NET Framework в Центрах событий Azure
@@ -34,7 +34,7 @@ ms.locfileid: "91334282"
 ### <a name="add-the-event-hubs-nuget-package"></a>Добавление пакета NuGet для Центров событий
 
 1. В обозревателе решений щелкните правой кнопкой мыши проект **Sender** и выберите пункт **Управление пакетами NuGet для решения**. 
-2. Щелкните вкладку **Обзор** и выполните поиск `WindowsAzure.ServiceBus`. Щелкните **Установить**и примите условия использования. 
+2. Щелкните вкладку **Обзор** и выполните поиск `WindowsAzure.ServiceBus`. Щелкните **Установить** и примите условия использования. 
    
     ![Установка пакета NuGet для Служебной шины](./media/event-hubs-dotnet-framework-getstarted-send/create-sender-csharp2.png)
    
@@ -105,7 +105,7 @@ ms.locfileid: "91334282"
 ### <a name="add-the-event-hubs-nuget-package"></a>Добавление пакета NuGet для Центров событий
 
 1. В обозревателе решений щелкните правой кнопкой мыши проект **Получатель** и выберите пункт **Управление пакетами NuGet для решения**.
-2. Щелкните вкладку **Обзор** и выполните поиск `Microsoft Azure Service Bus Event Hub - EventProcessorHost`. Щелкните **Установить**и примите условия использования.
+2. Щелкните вкладку **Обзор** и выполните поиск `Microsoft Azure Service Bus Event Hub - EventProcessorHost`. Щелкните **Установить** и примите условия использования.
    
     ![Поиск пакета NuGet для узла обработчика событий](./media/event-hubs-dotnet-framework-getstarted-receive-eph/create-eph-csharp1.png)
    

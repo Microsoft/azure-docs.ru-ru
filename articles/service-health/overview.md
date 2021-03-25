@@ -4,10 +4,10 @@ description: Персонализированные сведения о влия
 ms.topic: overview
 ms.date: 05/10/2019
 ms.openlocfilehash: cb1eb8eb75a18a73e8f024f02217df37f45981fe
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87499778"
 ---
 # <a name="what-is-azure-service-health"></a>Что такое Работоспособность служб Azure?

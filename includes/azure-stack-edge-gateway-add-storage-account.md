@@ -4,12 +4,12 @@ ms.service: databox
 ms.topic: include
 ms.date: 03/12/2021
 ms.author: alkohli
-ms.openlocfilehash: 0c7e011cf8445164e0931f71e390813c9134dd89
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: cf67ea58c4c13756fdc6e437883f12124ca47eb9
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103200936"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104272"
 ---
 1. На [портале Azure](https://portal.azure.com/) выберите ресурс Azure Stack Edge и перейдите в раздел **Обзор**. Устройство должно быть подключено к сети. Перейдите на страницу **Шлюз для облачного хранилища > Учетные записи хранения**.
 
@@ -35,4 +35,4 @@ ms.locfileid: "103200936"
 
     ![Добавление учетной записи хранения (2)](media/azure-stack-edge-gateway-add-storage-account/add-storage-account-4.png)
 
-    Чтобы получить ключи доступа, [подключитесь к локальным API устройства с помощью Azure Resource Manager](../articles/databox-online/azure-stack-edge-j-series-connect-resource-manager.md). 
+    Чтобы получить ключи доступа, [подключитесь к локальным API устройства с помощью Azure Resource Manager](../articles/databox-online/azure-stack-edge-gpu-connect-resource-manager.md).

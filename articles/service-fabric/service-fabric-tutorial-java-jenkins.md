@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 08/27/2018
 ms.custom: mvc, devx-track-java
 ms.openlocfilehash: 4e29104f0586a8e18afb7a640903c57ce988b692
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91531978"
 ---
 # <a name="tutorial-configure-a-jenkins-environment-to-enable-cicd-for-a-java-application-on-service-fabric"></a>Руководство по Настройка среды Jenkins для включения непрерывной интеграции и непрерывного развертывания для приложения Java в Service Fabric
@@ -158,7 +158,7 @@ Jenkins можно настроить внутри или за пределам�
     </ApplicationManifest>
     ```
 
-1. Обновите поле **Версия** в **ServiceManifest** и поле**Версия** в теге **CodePackage** в файле *Voting/VotingApplication/VotingWebPkg/ServiceManifest.xml* до версии **2.0.0**.
+1. Обновите поле **Версия** в **ServiceManifest** и поле **Версия** в теге **CodePackage** в файле *Voting/VotingApplication/VotingWebPkg/ServiceManifest.xml* до версии **2.0.0**.
 
     ```xml
     <CodePackage Name="Code" Version="2.0.0">

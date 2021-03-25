@@ -1,27 +1,22 @@
 ---
-title: Установка микроагента Defender для Интернета вещей
-titleSuffix: Azure Defender for IoT
+title: Установка микроагента Defender для Интернета вещей (предварительная версия)
 description: Сведения об установке и проверке подлинности микроагента Defender.
-author: shhazam-ms
-manager: rkarlin
-ms.author: shhazam
-ms.date: 3/3/2021
+ms.date: 3/9/2021
 ms.topic: quickstart
-ms.service: azure
-ms.openlocfilehash: ccf28c47e2e1438a141e2497da70d32c1832ddb9
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: ecde9f42acc5cf4a924a657f4f0cdc545c4a668e
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120442"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104782730"
 ---
-# <a name="install-defender-for-iot-micro-agent"></a>Установка микроагента Defender для Интернета вещей 
+# <a name="install-defender-for-iot-micro-agent-preview"></a>Установка микроагента Defender для Интернета вещей (предварительная версия)
 
 В этой статье объясняется, как установить микроагент Defender и реализовать для него проверку подлинности.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Прежде чем установить модуль Defender для Интернета вещей, создайте удостоверение модуля в Центре Интернета вещей. Дополнительные сведения о создании удостоверения модуля см. в статье [Создание двойника модуля микроагента Defender для Интернета вещей](quickstart-create-micro-agent-module-twin.md).
+Перед установкой модуля Defender для Интернета вещей создайте удостоверение модуля в Центре Интернета вещей. Дополнительные сведения о создании удостоверения модуля см. в статье [Создание двойника модуля микроагента Defender для Интернета вещей (предварительная версия)](quickstart-create-micro-agent-module-twin.md).
 
 ## <a name="install-the-package"></a>Установка пакета
 
@@ -49,13 +44,37 @@ sudo apt-get install defender-iot-micro-agent
 
 Существует два способа проверки подлинности микроагента Defender для Интернета вещей: 
 
-- Строка подключения. 
+- Строка подключения для удостоверения модуля. 
 
 - Сертификат.
 
-### <a name="authenticate-using-a-connection-string"></a>Проверка подлинности с помощью строки подключения
+### <a name="authenticate-using-a-module-identity-connection-string"></a>Аутентификация с помощью строки подключения для удостоверения модуля
 
-Чтобы реализовать проверку подлинности с помощью строки подключения, сделайте следующее:
+Обеспечьте соблюдение [требований](#prerequisites) для этой статьи и обязательно создайте удостоверение модуля до выполнения этих шагов. 
+
+#### <a name="get-the-module-identity-connection-string"></a>Получение строки подключения для удостоверения модуля
+
+Чтобы получить строку подключения для удостоверения модуля из Центра Интернета вещей, выполните следующие действия: 
+
+1. Перейдите в Центр Интернета вещей и выберите свой центр.
+
+1. В меню слева в разделе **Обозреватели** выберите **Устройства Интернета вещей**.
+
+   :::image type="content" source="media/quickstart-standalone-agent-binary-installation/iot-devices.png" alt-text="Выбор устройств Интернета вещей в меню слева.":::
+
+1. Выберите устройство в списке идентификаторов устройств, чтобы просмотреть страницу **Сведения об устройстве**.
+
+1. Перейдите на вкладку **Удостоверения модулей** и выберите модуль **DefenderIotMicroAgent** из списка удостоверений модулей, связанных с устройством.
+
+   :::image type="content" source="media/quickstart-standalone-agent-binary-installation/module-identities.png" alt-text="Выбор вкладки с удостоверениями модулей.":::
+
+1. На странице **Сведения об удостоверении модуля** скопируйте первичный ключ, нажав кнопку **Копировать**.
+
+   :::image type="content" source="media/quickstart-standalone-agent-binary-installation/copy-button.png" alt-text="Нажатие кнопки &quot;Копировать&quot; для копирования первичного ключа.":::
+
+#### <a name="configure-authentication-using-a-module-identity-connection-string"></a>Настройка аутентификации с помощью строки подключения для удостоверения модуля
+
+Чтобы настроить агент для аутентификации с помощью строки подключения для удостоверения модуля, выполните следующие действия:
 
 1. Добавьте файл с именем `connection_string.txt`, содержащий строку подключения в кодировке UTF-8, в путь каталога агента Defender `/var/defender_iot_micro_agent`, введя следующую команду:
 
