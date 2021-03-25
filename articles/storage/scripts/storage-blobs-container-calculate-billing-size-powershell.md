@@ -10,10 +10,10 @@ ms.topic: sample
 ms.date: 12/29/2020
 ms.author: fryu
 ms.openlocfilehash: dfc338844e310102447e2498ee9cce8f28a79b9f
-ms.sourcegitcommit: 31d242b611a2887e0af1fc501a7d808c933a6bf6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97809570"
 ---
 # <a name="calculate-the-total-billing-size-of-a-blob-container"></a>Вычисление общего указываемого в счете размера контейнера больших двоичных объектов

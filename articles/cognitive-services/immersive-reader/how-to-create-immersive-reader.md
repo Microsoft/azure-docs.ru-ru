@@ -10,12 +10,12 @@ ms.subservice: immersive-reader
 ms.topic: how-to
 ms.date: 07/22/2019
 ms.author: rwaller
-ms.openlocfilehash: d7a8a598ab2d0c873cf07510cf40a08c22c0f1d4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 369905ed5ee0ce9a93ec2be879b5e40114b0a380
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102608603"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048669"
 ---
 # <a name="create-an-immersive-reader-resource-and-configure-azure-active-directory-authentication"></a>Создание иммерсивного ресурса чтения и Настройка проверки подлинности Azure Active Directory
 
@@ -198,7 +198,7 @@ ms.locfileid: "102608603"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Ознакомьтесь с [кратким руководством для разработчиков Node.js](./quickstarts/client-libraries.md?pivots=programming-language-nodejs), чтобы узнать другие возможности пакета SDK иммерсивного средства чтения при использовании Node.js
-* Ознакомьтесь с [руководством для разработчиков Android](./tutorial-android.md), чтобы узнать о других возможностях пакета SDK иммерсивного средства чтения при использовании Java или Kotlin для Android.
-* Ознакомьтесь с [руководством для разработчиков iOS](./tutorial-ios.md), чтобы узнать о других возможностях пакета SDK иммерсивного средства чтения при использовании Swift для iOS.
-* Ознакомьтесь с [руководством для разработчиков Python](./tutorial-python.md), чтобы узнать другие возможности пакета SDK иммерсивного средства чтения при использовании Python.
+* Ознакомьтесь с [руководством для разработчиков Android](./how-to-launch-immersive-reader.md), чтобы узнать о других возможностях пакета SDK иммерсивного средства чтения при использовании Java или Kotlin для Android.
+* Ознакомьтесь с [руководством для разработчиков iOS](./how-to-launch-immersive-reader.md), чтобы узнать о других возможностях пакета SDK иммерсивного средства чтения при использовании Swift для iOS.
+* Ознакомьтесь с [руководством для разработчиков Python](./how-to-launch-immersive-reader.md), чтобы узнать другие возможности пакета SDK иммерсивного средства чтения при использовании Python.
 * Ознакомьтесь с разделом о [пакете SDK для иммерсивного средства чтения](https://github.com/microsoft/immersive-reader-sdk) и [справочнике по этому пакету](./reference.md).

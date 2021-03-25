@@ -10,10 +10,10 @@ ms.date: 04/15/2020
 ms.author: vvasic
 ms.reviewer: jrasnick
 ms.openlocfilehash: 12841c747116cc9e14f348dfcf81acaa5da5e8c9
-ms.sourcegitcommit: 16887168729120399e6ffb6f53a92fde17889451
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98165371"
 ---
 # <a name="store-query-results-to-storage-using-serverless-sql-pool-in-azure-synapse-analytics"></a>Сохранение результатов запросов в хранилище с помощью бессерверного пула SQL в Azure Synapse Analytics

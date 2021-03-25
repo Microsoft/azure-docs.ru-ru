@@ -6,10 +6,10 @@ ms.topic: overview
 ms.date: 07/12/2019
 ms.author: tomfitz
 ms.openlocfilehash: 65b8c21251f092311150a50480f5abecb1ad7c17
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96434572"
 ---
 # <a name="azure-managed-applications-overview"></a>Обзор управляемых приложений Azure

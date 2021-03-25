@@ -4,10 +4,10 @@ description: В рамках этого краткого руководства 
 ms.date: 01/27/2021
 ms.topic: quickstart
 ms.openlocfilehash: 75a4e9deca4859ac8b9f302fcb62ecc1d12dd8c9
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98918336"
 ---
 # <a name="quickstart-define-and-assign-a-blueprint-in-the-portal"></a>Определение и назначение схемы на портале

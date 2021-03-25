@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/18/2019
-ms.openlocfilehash: 56ef6563982c315d34cfeb87070b9ebfa3d27a30
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 49122421f04ee6eef8828ca305cfb235aceee3fb
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102500433"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105035699"
 ---
 # <a name="log-data-ingestion-time-in-azure-monitor"></a>Время приема данных журнала в Azure Monitor
 Azure Monitor — это высокомасштабируемая служба, которая обслуживает тысячи клиентов, ежемесячно отправляющих стремительными темпами терабайты данных. Часто возникают вопросы о времени, в течение которого собранные данные журнала становятся доступными. В этой статье объясняются факторы, влияющие на эту задержку.
@@ -81,8 +81,8 @@ Azure Monitor — это высокомасштабируемая служба,
 | Шаг | Свойство или функция | Комментарии |
 |:---|:---|:---|
 | Запись, созданная в источнике данных | [TimeGenerated](./log-standard-columns.md#timegenerated-and-timestamp) <br>Если источник данных не задает это значение, он будет установлен в то же время, что и _TimeReceived. |
-| Запись, полученная конечной точкой приема Azure Monitor | [_TimeReceived](./log-standard-columns.md#_timereceived) | |
-| Запись, сохраненная в рабочей области и доступная для запросов | [ingestion_time ()](/azure/kusto/query/ingestiontimefunction) | |
+| Запись, полученная конечной точкой приема Azure Monitor | [_TimeReceived](./log-standard-columns.md#_timereceived) | Это поле не оптимизировано для массовой обработки и не должно использоваться для фильтрации больших наборов данных. |
+| Запись, сохраненная в рабочей области и доступная для запросов | [ingestion_time ()](/azure/kusto/query/ingestiontimefunction) | Рекомендуется использовать ingestion_time (), если нужно отфильтровать только записи, которые были приняты в определенный промежуток времени. В таком случае рекомендуется добавить также фильтр TimeGenerated с большим диапазоном. |
 
 ### <a name="ingestion-latency-delays"></a>Задержки приема данных
 Можно измерять задержку конкретной записи, сравнивая результат функции [ingestion_time ()](/azure/kusto/query/ingestiontimefunction) со свойством _timegenerated_ . Эти данные можно использовать в различных агрегатах, чтобы определить поведение при задержке приема данных. Изучите некоторый процентиль времени приема для получения аналитических сведений по большому объему данных. 
@@ -144,5 +144,5 @@ Heartbeat
 | top 20 by NoHeartbeatPeriod desc 
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Ознакомьтесь со страницей [Соглашение об уровне обслуживания для Log Analytics](https://azure.microsoft.com/en-us/support/legal/sla/monitor/v1_3/).

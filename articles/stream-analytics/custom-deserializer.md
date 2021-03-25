@@ -7,10 +7,10 @@ ms.service: stream-analytics
 ms.topic: tutorial
 ms.date: 12/17/2020
 ms.openlocfilehash: 6db65d85b5d5d72e7b4764949abcffed004cae85
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98018213"
 ---
 # <a name="tutorial-custom-net-deserializers-for-azure-stream-analytics"></a>Руководство по Пользовательские десериализаторы .NET для Azure Stream Analytics

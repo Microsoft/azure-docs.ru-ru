@@ -5,10 +5,10 @@ ms.date: 07/07/2020
 ms.topic: quickstart
 ms.custom: subject-armqs
 ms.openlocfilehash: bfaee324f3e46f64fd4ad0d8b7e1240331b56c27
-ms.sourcegitcommit: 30505c01d43ef71dac08138a960903c2b53f2499
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92093656"
 ---
 # <a name="quickstart-route-blob-storage-events-to-web-endpoint-by-using-an-arm-template"></a>Краткое руководство. Маршрутизация событий хранилища больших двоичных объектов в конечную веб-точку с помощью шаблона ARM

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: quickstart
 ms.date: 06/12/2019
 ms.custom: mvc, devx-track-azurepowershell
-ms.openlocfilehash: 7a04d65d5032e37433fb61c73e5f64fe89bb2d2c
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 0d4a8df4cb6ba47b7772e2ab3b3247d36622dcb6
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98930492"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865967"
 ---
 # <a name="quickstart-create-apache-spark-cluster-in-azure-hdinsight-using-powershell"></a>Краткое руководство. Создание кластера Apache Spark в Azure HDInsight с помощью PowerShell
 
@@ -139,19 +139,19 @@ ms.locfileid: "98930492"
 
 1. Войдите на [портал Azure](https://portal.azure.com). Выполните поиск по запросу и выберите пункт **кластеры HDInsight**.
    
-   ![Снимок экрана: поиск по запросу "HDInsight" на портале Azure](./media/apache-spark-jupyter-spark-sql-use-powershell/azure-portal-search-hdinsight-cluster.png)
+   :::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/azure-portal-search-hdinsight-cluster.png" alt-text="Снимок экрана: поиск по запросу &quot;HDInsight&quot; на портале Azure" border="true":::
    
 1. В списке выберите созданный кластер.
    
-   ![Снимок экрана: кластеры HDInsight, включая созданный](./media/apache-spark-jupyter-spark-sql-use-powershell/azure-portal-open-hdinsight-cluster.png)
+   :::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/azure-portal-open-hdinsight-cluster.png" alt-text="Снимок экрана: кластеры HDInsight, включая созданный" border="true":::
    
 1. На странице **Обзор** щелкните **Панели мониторинга кластера**, а затем — **Jupyter Notebook**. При появлении запроса введите учетные данные для входа в кластер.
 
-   ![Открытие Jupyter Notebook для выполнения интерактивного SQL-запроса Spark](./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-open-jupyter-interactive-spark-sql-query.png "Открытие Jupyter Notebook для выполнения интерактивного SQL-запроса Spark")
+   :::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-open-jupyter-interactive-spark-sql-query.png " alt-text="Открытие Jupyter Notebook для выполнения интерактивного SQL-запроса Spark" border="true":::
 
 1. Щелкните **Создать** > **PySpark**, чтобы создать элемент Notebook.
 
-   ![Создание Jupyter Notebook для выполнения интерактивного SQL-запроса Spark](./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-create-jupyter-interactive-spark-sql-query.png "Создание Jupyter Notebook для выполнения интерактивного SQL-запроса Spark")
+   :::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-create-jupyter-interactive-spark-sql-query.png " alt-text="Создание Jupyter Notebook для выполнения интерактивного SQL-запроса Spark" border="true":::
 
    Будет создана и открыта записная книжка с именем Untitled (Untitled.pynb).
 
@@ -161,7 +161,7 @@ SQL — это наиболее распространенный и широк�
 
 1. Убедитесь, что ядро готово. Ядро будет готово, когда в записной книжке появится пустой круг рядом с именем ядра. Заполненный круг означает, что ядро занято.
 
-    ![состояние ядра](./media/apache-spark-jupyter-spark-sql/jupyter-spark-kernel-status.png "состояние ядра")
+    :::image type="content" source="./media/apache-spark-jupyter-spark-sql/jupyter-spark-kernel-status.png " alt-text="состояние ядра" border="true":::
 
     При первом запуске записной книжки некоторые задачи ядро выполняет в фоновом режиме. Дождитесь готовности ядра. 
 1. Вставьте указанный ниже код в пустую ячейку и нажмите сочетание клавиш **SHIFT + ВВОД**, чтобы выполнить код. Эта команда выводит список таблиц Hive в кластере:
@@ -173,7 +173,7 @@ SQL — это наиболее распространенный и широк�
 
     При использовании Jupyter Notebook с кластером Spark в HDInsight вы получаете предустановку `sqlContext`, которую можно применять для выполнения запросов Hive с помощью Spark SQL. `%%sql` указывает записной книжке Jupyter использовать предустановку `sqlContext` для выполнения запроса Hive. Запрос извлекает первые 10 строк из таблицы Hive (**hivesampletable**), которая по умолчанию входит в состав всех кластеров HDInsight. Для получения результатов может понадобиться около 30 секунд. Он возвращает примерно такие выходные данные:
 
-    ![Запрос Apache Hive в Spark в HDInsight](./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-get-started-hive-query.png "Запрос Hive в HDInsight Spark")
+    :::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-get-started-hive-query.png " alt-text="Запрос Apache Hive в Spark в HDInsight" border="true":::
 
     При каждом выполнении запроса в Jupyter в заголовке окна веб-браузера будет отображаться состояние **(Занято)** , а также название записной книжки. Кроме того, рядом с надписью **PySpark** в верхнем правом углу окна будет показан закрашенный кружок.
 
@@ -186,7 +186,7 @@ SQL — это наиболее распространенный и широк�
 
     Экран обновится, и отобразятся выходные данные запроса.
 
-    ![Результаты запроса Hive в HDInsight](./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-get-started-hive-query-output.png "Результаты запроса Hive в HDInsight")
+    :::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-spark-get-started-hive-query-output.png " alt-text="Результаты запроса Hive в HDInsight" border="true":::
 
 1. Для этого в меню **File** (Файл) элемента Notebook выберите **Close and Halt** (Закрыть и остановить). При завершении работы записной книжки освобождаются кластерные ресурсы.
 
@@ -196,7 +196,7 @@ HDInsight сохраняет ваши данные в службе хранил�
 
 Вернитесь на портал Azure и выберите **Удалить**.
 
-![Удаление кластера HDInsight на портале Azure](./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-azure-portal-delete-cluster.png "Удаление кластера HDInsight")
+:::image type="content" source="./media/apache-spark-jupyter-spark-sql-use-powershell/hdinsight-azure-portal-delete-cluster.png " alt-text="Удаление кластера HDInsight на портале Azure" border="true":::
 
 Кроме того, можно выбрать имя группы ресурсов, чтобы открыть страницу группы ресурсов, а затем щелкнуть **Удалить группу ресурсов**. Вместе с группой ресурсов вы также удалите кластер HDInsight и учетную запись хранения по умолчанию.
 

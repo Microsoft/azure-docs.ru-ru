@@ -8,10 +8,10 @@ ms.date: 04/19/2018
 ms.author: ccompy
 ms.custom: mvc, seodec18
 ms.openlocfilehash: 6fff19498e9ca70991d3190165df70a48136f502
-ms.sourcegitcommit: fb3c846de147cc2e3515cd8219d8c84790e3a442
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92631144"
 ---
 # <a name="introduction-to-the-app-service-environments"></a>Общие сведения о средах службы приложений #

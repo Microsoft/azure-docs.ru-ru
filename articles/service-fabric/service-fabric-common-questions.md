@@ -4,12 +4,12 @@ description: Часто задаваемые вопросы о Service Fabric, �
 ms.topic: troubleshooting
 ms.date: 08/18/2017
 ms.author: pepogors
-ms.openlocfilehash: 4e03ccf432852a5fc9ee700ba0e39dfe2e64fcc9
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 95463865c52ee501ceca22cae60d19a089236fd1
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102456102"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048703"
 ---
 # <a name="commonly-asked-service-fabric-questions"></a>Распространенные вопросы о Service Fabric
 
@@ -189,4 +189,4 @@ Reliable Services обычно состоит из нескольких разд
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ознакомьтесь с [основными понятиями Service Fabric](service-fabric-technical-overview.md) и [рекомендациями по использованию платформы](service-fabric-best-practices-overview.md).
+Ознакомьтесь с [основными понятиями Service Fabric](service-fabric-technical-overview.md) и [рекомендациями по использованию платформы](./service-fabric-best-practices-security.md).

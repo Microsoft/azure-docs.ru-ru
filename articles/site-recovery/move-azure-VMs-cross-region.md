@@ -9,10 +9,10 @@ ms.date: 01/28/2019
 ms.author: sideeksh
 ms.custom: MVC
 ms.openlocfilehash: 5ae930240872c00c8dbb45857e4e77d82766eadf
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93398068"
 ---
 # <a name="move-azure-vms-to-another-azure-region"></a>Перемещение виртуальных машин Azure в другой регион Azure
@@ -88,7 +88,7 @@ ms.locfileid: "93398068"
 7. В поле **Источник** выберите **Azure**.
 8. В поле **Исходное расположение** выберите исходный регион Azure, в котором сейчас запущены виртуальные машины.
 9. Выберите модель развертывания с помощью Azure Resource Manager. Затем выберите настройку **Исходная подписка** и **Исходная группа ресурсов**.
-10. Нажмите кнопку **ОК** , чтобы сохранить настройки.
+10. Нажмите кнопку **ОК**, чтобы сохранить настройки.
 
 ### <a name="enable-replication-for-azure-vms-and-start-copying-the-data"></a>Включение репликации для виртуальных машин Azure и начало копирования данных
 

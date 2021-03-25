@@ -10,10 +10,10 @@ ms.date: 01/17/2020
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to install Azure Stack Edge Pro in datacenter so I can use it to transfer data to Azure.
 ms.openlocfilehash: 9aa02521d91d41380b1bdac3efe50ab3d196a856
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90894206"
 ---
 # <a name="tutorial-install-azure-stack-edge-pro"></a>Руководство по Установка Azure Stack Edge Pro
@@ -29,7 +29,7 @@ ms.locfileid: "90894206"
 > * Установка устройства в стойку.
 > * Подключение кабелей к устройству
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Ниже приведены предварительные требования для установки физического устройства.
 
@@ -86,7 +86,7 @@ ms.locfileid: "90894206"
 > Для правильной работы устройства Azure Stack Edge Pro должны быть установлены в стойку.
 
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 - Перед началом работы ознакомьтесь с инструкциями по технике безопасности и соответствии природоохранным и нормативным требованиям, изложенными в информационном буклете. Этот буклет поставляется с устройством.
 - Установку направляющих начинайте с нижней части стойки.
@@ -213,7 +213,7 @@ ms.locfileid: "90894206"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этом руководстве были рассмотрены следующие темы относительно Azure Stack Edge Pro:
+В этом учебнике были рассмотрены следующие темы относительно Azure Stack Edge Pro:
 
 > [!div class="checklist"]
 > * распаковка устройства;

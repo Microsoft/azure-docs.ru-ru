@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: eaa44ae9d8bf4d723944da695d9a063937b7e020
-ms.sourcegitcommit: 31cfd3782a448068c0ff1105abe06035ee7b672a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98061044"
 ---
 При настройке ресурсов Azure на виртуальную машину Linux в Azure, используемую в качестве устройства IoT Edge, копируется короткое видео дорожного потока автомобилей. В этом кратком руководстве для имитации потока в реальном времени используется видеофайл.

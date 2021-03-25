@@ -5,10 +5,10 @@ ms.date: 09/12/2019
 ms.topic: quickstart
 ms.reviewer: janders
 ms.openlocfilehash: 4a45e02a861ff20a4dc774668a4e008f9b42aeea
-ms.sourcegitcommit: 03662d76a816e98cfc85462cbe9705f6890ed638
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90530443"
 ---
 # <a name="quickstart-use-metamask-to-connect-and-deploy-a-smart-contract"></a>Подключение и развертывание смарт-контрактов с использованием MetaMask

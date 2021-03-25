@@ -5,10 +5,10 @@ ms.date: 08/17/2020
 ms.topic: quickstart
 ms.custom: subject-armqs
 ms.openlocfilehash: c32f833520a811d47129196ae4d67c92bad7e21f
-ms.sourcegitcommit: 3be3537ead3388a6810410dfbfe19fc210f89fec
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89651427"
 ---
 # <a name="quickstart-create-a-policy-assignment-to-identify-non-compliant-resources-by-using-an-arm-template"></a>Создание назначения политики для идентификации несоответствующих требованиям ресурсов с помощью шаблона ARM
@@ -72,7 +72,7 @@ ms.locfileid: "89651427"
 
 Выберите **Соответствие** в левой части страницы и найдите ранее созданное назначение политики _Аудит виртуальных машин, которые не используют управляемые диски_.
 
-:::image type="content" source="./media/assign-policy-template/policy-compliance.png" alt-text="Кнопка для развертывания шаблона ARM для назначения политики Azure в Azure." border="false":::
+:::image type="content" source="./media/assign-policy-template/policy-compliance.png" alt-text="Снимок экрана: сведения о соответствии политике на странице &quot;Соответствие политике&quot;." border="false":::
 
 Существующие ресурсы, которые не соответствуют новому назначению, отображаются в разделе **Несоответствующие ресурсы**.
 
@@ -86,7 +86,7 @@ ms.locfileid: "89651427"
 
 1. Щелкните правой кнопкой мыши назначение политики _Аудит виртуальных машин, которые не используют управляемые диски_ и выберите **Удалить назначение**.
 
-   :::image type="content" source="./media/assign-policy-template/delete-assignment.png" alt-text="Кнопка для развертывания шаблона ARM для назначения политики Azure в Azure." border="false":::
+   :::image type="content" source="./media/assign-policy-template/delete-assignment.png" alt-text="Снимок экрана: использование контекстного меню для удаления назначения на странице &quot;Соответствие&quot;." border="false":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

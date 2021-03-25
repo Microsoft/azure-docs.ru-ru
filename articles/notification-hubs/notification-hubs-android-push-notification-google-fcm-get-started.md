@@ -17,10 +17,10 @@ ms.author: sethm
 ms.reviewer: thsomasu
 ms.lastreviewed: 09/11/2019
 ms.openlocfilehash: c5485dacc4d9e3210ad69819caf4e36f96c626da
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92428381"
 ---
 # <a name="tutorial-send-push-notifications-to-android-devices-using-firebase-sdk-version-06"></a>Руководство по отправке push-уведомлений на устройства Android с помощью Firebase SDK версии 0.6
@@ -75,7 +75,7 @@ ms.locfileid: "92428381"
 
 ### <a name="configure-firebase-cloud-messaging-settings-for-the-hub"></a>Настройка параметров Firebase Cloud Messaging для центра
 
-1. На панели слева в разделе **Параметры** , выберите **Google (GCM/FCM)** . 
+1. На панели слева в разделе **Параметры**, выберите **Google (GCM/FCM)** . 
 2. Введите **ключ сервера** для проекта FCM, сохраненного ранее. 
 3. На панели инструментов нажмите кнопку **Сохранить**. 
 
@@ -88,18 +88,18 @@ ms.locfileid: "92428381"
 
 ### <a name="add-google-play-services-to-the-project"></a>Добавление служб Google Play в проект
 
-1. В Android Studio в меню выберите **Средства** , а затем — **Диспетчер пакетов SDK**. 
+1. В Android Studio в меню выберите **Средства**, а затем — **Диспетчер пакетов SDK**. 
 2. Выберите целевую версию пакета SDK для Android, который используется в проекте. Затем выберите **Show Package Details** (Показать сведения о пакете). 
 
     ![Диспетчер пакетов SDK Android: выбор целевой версии](./media/notification-hubs-android-studio-add-google-play-services/notification-hubs-android-studio-sdk-manager.png)
 3. Выберите **Google APIs** (API-интерфейсы Google), если они еще не установлены.
 
     ![Диспетчер пакетов SDK для Android с выбранными API-интерфейсами Google](./media/notification-hubs-android-studio-add-google-play-services/googole-apis-selected.png)
-4. Переключитесь на вкладку **SDK Tools**. Если сервисы Google Play еще не установлены, щелкните **Сервисы Google Play** , как показано на рисунке ниже. Затем выберите **Применить** для установки. Запишите путь к пакету SDK. Он вам потребуется в дальнейшем.
+4. Переключитесь на вкладку **SDK Tools**. Если сервисы Google Play еще не установлены, щелкните **Сервисы Google Play**, как показано на рисунке ниже. Затем выберите **Применить** для установки. Запишите путь к пакету SDK. Он вам потребуется в дальнейшем.
 
     ![Диспетчер пакетов SDK для Android с выбранными Сервисами Google Play](./media/notification-hubs-android-studio-add-google-play-services/google-play-services-selected.png)
-3. Если вы видите диалоговое окно **Подтвердить изменение** , выберите **ОК**. Установщик компонентов устанавливает запрошенные компоненты. После установки компонентов выберите **Готово**.
-4. Выберите **ОК** , чтобы закрыть диалоговое окно **Settings for New Projects** (Параметры для новых проектов).  
+3. Если вы видите диалоговое окно **Подтвердить изменение**, выберите **ОК**. Установщик компонентов устанавливает запрошенные компоненты. После установки компонентов выберите **Готово**.
+4. Выберите **ОК**, чтобы закрыть диалоговое окно **Settings for New Projects** (Параметры для новых проектов).  
 1. Откройте файл AndroidManifest.xml, а затем добавьте следующий тег для тега *приложения*.
 
     ```xml
@@ -128,7 +128,7 @@ ms.locfileid: "92428381"
 
 ### <a name="add-google-firebase-support"></a>Добавление поддержки Google Firebase
 
-1. В файле Build.Gradle для приложения добавьте следующие строки в раздел **dependencies** , если они еще не существуют. 
+1. В файле Build.Gradle для приложения добавьте следующие строки в раздел **dependencies**, если они еще не существуют. 
 
     ```gradle
     implementation 'com.google.firebase:firebase-core:16.0.8'
@@ -171,12 +171,12 @@ ms.locfileid: "92428381"
 
 ### <a name="add-code"></a>Добавление кода
 
-1. В представлении проекта разверните узел **app** > **src** > **main** > **java**. Щелкните правой кнопкой мыши папку своего пакета в разделе **java** , выберите **New** (Создать), а затем выберите **класс Java**. Укажите **NotificationSettings** для имени, а затем нажмите кнопку **ОК**.
+1. В представлении проекта разверните узел **app** > **src** > **main** > **java**. Щелкните правой кнопкой мыши папку своего пакета в разделе **java**, выберите **New** (Создать), а затем выберите **класс Java**. Укажите **NotificationSettings** для имени, а затем нажмите кнопку **ОК**.
 
     Обязательно обновите эти три заполнителя в следующем коде для класса `NotificationSettings`:
 
-   * **HubListenConnectionString**  — укажите для центра строку подключения **DefaultListenAccessSignature**. Чтобы скопировать эту строку подключения, щелкните пункт **Политики доступа** в своем центре на [Портал Azure].
-   * **HubName** : Используйте имя своего концентратора, которое отображается на странице концентратора на [Портал Azure].
+   * **HubListenConnectionString** — укажите для центра строку подключения **DefaultListenAccessSignature**. Чтобы скопировать эту строку подключения, щелкните пункт **Политики доступа** в своем центре на [Портал Azure].
+   * **HubName**: Используйте имя своего концентратора, которое отображается на странице концентратора на [Портал Azure].
 
      `NotificationSettings` :
 
@@ -405,7 +405,7 @@ ms.locfileid: "92428381"
     }
     ```
 
-9. Метод `ToastNotify` использует элемент управления `TextView` *Hello World* , чтобы постоянно передавать в приложение сведения о состоянии и уведомления. В файле макета **res** > **layout** > **activity_main.xml** добавьте следующий идентификатор для этого элемента управления.
+9. Метод `ToastNotify` использует элемент управления `TextView` *Hello World*, чтобы постоянно передавать в приложение сведения о состоянии и уведомления. В файле макета **res** > **layout** > **activity_main.xml** добавьте следующий идентификатор для этого элемента управления.
 
     ```java
     android:id="@+id/text_hello"

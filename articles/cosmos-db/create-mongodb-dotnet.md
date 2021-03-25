@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 10/15/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 65ceca7ee0a6482e489ca768b9b33981d313c3db
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101658035"
 ---
 # <a name="quickstart-build-a-net-web-app-using-azure-cosmos-dbs-api-for-mongodb"></a>Краткое руководство. Создание веб-приложения .NET с использованием API Azure Cosmos DB для MongoDB 
