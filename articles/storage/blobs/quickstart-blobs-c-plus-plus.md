@@ -8,10 +8,10 @@ ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.openlocfilehash: 246d2677c784daee4cc6b083cff04b6993ab3818
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96006495"
 ---
 # <a name="quickstart-azure-blob-storage-client-library-v12-for-c"></a>Краткое руководство. Использование библиотеки Хранилища BLOB-объектов Azure версии 12 для C++

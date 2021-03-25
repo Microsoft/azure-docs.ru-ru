@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 02/17/2021
 ms.author: memildin
 ms.openlocfilehash: c4861192c7f2bbfb2a51e19b88daee45b501949b
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100634776"
 ---
 # <a name="what-is-azure-security-center"></a>Что такое Центр безопасности Azure?

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: tutorial
 ms.date: 02/02/2021
 ms.openlocfilehash: ed988baec46152d55cf63aec09fce7a298157212
-ms.sourcegitcommit: b85ce02785edc13d7fb8eba29ea8027e614c52a2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99509155"
 ---
 # <a name="tutorial-debug-a-skillset-using-debug-sessions"></a>Руководство. Отладка набора навыков с помощью сеансов отладки

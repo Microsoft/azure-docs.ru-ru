@@ -10,10 +10,10 @@ services: azure-maps
 manager: timlt
 ms.custom: mvc, devx-track-js
 ms.openlocfilehash: 31dd1c06b0f17b469454593131ccdc93b45b2446
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98624972"
 ---
 # <a name="tutorial-search-nearby-points-of-interest-using-azure-maps"></a>Руководство по Поиск ближайшей точки интереса с помощью службы "Карты Azure"

@@ -16,10 +16,10 @@ ms.custom:
 - devx-track-js
 - devx-track-azurecli
 ms.openlocfilehash: 3fc257ff192ccb1bb05b233c6ac802696ece0054
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99575726"
 ---
 # <a name="tutorial-implement-a-device-firmware-update-process"></a>Руководство по Реализация обновления встроенного ПО устройства

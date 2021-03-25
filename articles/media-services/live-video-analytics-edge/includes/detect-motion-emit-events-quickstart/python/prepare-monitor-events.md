@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 882ba60e16f770651a1d9fe3b02b61be2b4c34c8
-ms.sourcegitcommit: b85ce02785edc13d7fb8eba29ea8027e614c52a2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99531985"
 ---
 Для обнаружения движения во входящем потоке видеотрансляции и создания событий в Центре Интернета вещей будет использоваться модуль аналитики видеотрансляции в IoT Edge. Чтобы просмотреть эти события, выполните указанные ниже действия.

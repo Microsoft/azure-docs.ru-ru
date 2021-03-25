@@ -8,10 +8,10 @@ ms.custom: mvc, devcenter, seodec18
 zone_pivot_groups: app-service-platform-windows-linux
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 7cd9add699d9bd4a3eff9cdcf1e65af0d754b70a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101747792"
 ---
 # <a name="create-a-nodejs-web-app-in-azure"></a>Создание веб-приложений Node.js в Azure

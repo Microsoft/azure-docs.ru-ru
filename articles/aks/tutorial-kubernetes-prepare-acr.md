@@ -6,10 +6,10 @@ ms.topic: tutorial
 ms.date: 01/31/2021
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 9f6ec14cea20192aef7d3010201e6613c5d03a9e
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99430969"
 ---
 # <a name="tutorial-deploy-and-use-azure-container-registry"></a>Руководство. Развертывание Реестра контейнеров Azure и его использование

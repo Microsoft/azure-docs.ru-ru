@@ -1,5 +1,5 @@
 ---
-title: Правила оценки для SQL Server миграции базы данных SQL
+title: Правила оценки для SQL Server миграции базы данных SQL Azure
 description: Правила оценки для обнаружения проблем с исходным экземпляром SQL Server, которые необходимо устранить перед миграцией в базу данных SQL Azure.
 ms.service: sql-database
 ms.subservice: migration-guide
@@ -10,14 +10,14 @@ author: MashaMSFT
 ms.author: mathoma
 ms.reviewer: MashaMSFT
 ms.date: 12/15/2020
-ms.openlocfilehash: bf825572226bf5d7432fd3ad825f2f3a13355c53
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: c407b62b5f0308fbb6d9ff7223a3554ca09592db
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102054966"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105027216"
 ---
-# <a name="assessment-rules-for-sql-server-to-sql-database-migration"></a>Правила оценки для SQL Server миграции базы данных SQL
+# <a name="assessment-rules-for-sql-server-to-azure-sql-database-migration"></a>Правила оценки для SQL Server миграции базы данных SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
 
 Средства миграции проверяют экземпляр SQL Server источника, выполняя ряд правил оценки для обнаружения проблем, которые необходимо устранить перед переносом базы данных SQL Server в базу данных SQL Azure. 
@@ -350,7 +350,7 @@ OpenRowSet с поставщиком SQL или отличным от поста
 
 Дополнительные сведения см. в этой [области. Создание учетных данных для базы данных](/sql/t-sql/statements/create-database-scoped-credential-transact-sql)
 
-## <a name="service-broker"></a>Компонент Service Broker<a id="ServiceBroker"></a>
+## <a name="service-broker"></a>Service Broker<a id="ServiceBroker"></a>
 
 **Title: Service Broker функция не поддерживается в базе данных SQL Azure.**   
 **Категория**: вопрос   
@@ -478,7 +478,7 @@ xp_cmdshell, который порождает командную оболочк
 **Рекомендуемые**   
 Просмотрите раздел затронутые объекты в службе "миграция Azure", чтобы просмотреть все объекты, использующие xp_cmdshell, и оцените, можно ли удалить ссылку на xp_cmdshell или затронутый объект. Также рассмотрите возможность изучения службы автоматизации Azure, которая предоставляет облачную автоматизацию и службу настройки. Также можно перейти на SQL Server на виртуальной машине Azure. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы приступить к переносу SQL Server в базу данных SQL Azure, см. [инструкции по миграции SQL Server в базу данных SQL](sql-server-to-sql-database-guide.md).
 

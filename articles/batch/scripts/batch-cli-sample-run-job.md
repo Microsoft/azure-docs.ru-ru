@@ -5,10 +5,10 @@ ms.topic: sample
 ms.date: 12/12/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: b67925f48a9d2dbe0b4559d46d783b500e7a0773
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93100921"
 ---
 # <a name="cli-example-run-a-job-and-tasks-with-azure-batch"></a>Пример CLI. Выполнение задания и задач с использованием пакетной службы Azure
