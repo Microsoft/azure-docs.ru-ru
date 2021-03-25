@@ -11,10 +11,10 @@ ms.date: 12/09/2020
 ms.author: rolyon
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: 5e4f3314ba580dddbd995855bc0f0512b7597107
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98115750"
 ---
 # <a name="quickstart-check-access-for-a-user-to-azure-resources"></a>Краткое руководство. Проверка прав доступа пользователя к ресурсам Azure

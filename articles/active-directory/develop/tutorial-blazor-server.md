@@ -9,10 +9,10 @@ ms.subservice: develop
 ms.topic: tutorial
 ms.date: 09/15/2020
 ms.openlocfilehash: 5a631d9ae7a7d1792e3c4e4a2cbf8281e1168283
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99226022"
 ---
 # <a name="tutorial-create-a-blazor-server-app-that-uses-the-microsoft-identity-platform-for-authentication"></a>Руководство по Создание приложения Blazor Server, которое использует платформу удостоверений Майкрософт для аутентификации

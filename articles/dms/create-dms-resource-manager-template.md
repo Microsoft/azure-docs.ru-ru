@@ -8,10 +8,10 @@ ms.author: mathoma
 ms.date: 06/29/2020
 ms.service: dms
 ms.openlocfilehash: a9c68bca4d50af734a0a2cd8a91c7e46d9b56ff1
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94963221"
 ---
 # <a name="quickstart-create-instance-of-azure-database-migration-service-using-arm-template"></a>Краткое руководство. Создание экземпляра Azure Database Migration Service с помощью шаблона ARM

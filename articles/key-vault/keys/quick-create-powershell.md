@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 01/27/2021
 ms.author: mbaldwin
 ms.openlocfilehash: adbf3080367e54147c981c8ccf0bb6236111b8c7
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99071211"
 ---
 # <a name="quickstart-set-and-retrieve-a-key-from-azure-key-vault-using-azure-powershell"></a>Краткое руководство. Настройка и получение ключа из Azure Key Vault с помощью Azure PowerShell

@@ -13,12 +13,12 @@ ms.date: 08/28/2019
 ms.author: negoe
 ms.reviewer: marsma, negoe,celested
 ms.custom: aaddev,references_regions
-ms.openlocfilehash: 719d89fafe57e7f5132698404bcc0a41a9f9db37
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 41bb7287aaa045e191d61abb00f470018fda9cbe
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104780078"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105031602"
 ---
 # <a name="national-clouds"></a>Национальные облака
 
@@ -55,7 +55,7 @@ ms.locfileid: "104780078"
 |----------------|-------------------------|
 | Azure AD для US Gov организаций | `https://login.microsoftonline.us` |
 | Azure AD для Германии| `https://login.microsoftonline.de` |
-| Azure AD для Китая через 21Vianet | `https://login.partner.microsoftonline.cn/common` |
+| Azure AD для Китая через 21Vianet | `https://login.partner.microsoftonline.cn` |
 | Azure AD (глобальная служба)| `https://login.microsoftonline.com` |
 
 Запросы к конечным точкам Azure AD для авторизации или получения маркеров проверки подлинности можно составлять, используя базовый URL-адрес соответствующего региона. Например, для Azure для Германии:

@@ -3,15 +3,15 @@ title: Краткое руководство. Подключение к Базе
 description: В этом кратком руководстве описывается, как использовать MySQL Workbench для подключения к Базе данных Azure для MariaDB и запроса данных из нее.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.custom: mvc
 ms.topic: quickstart
 ms.date: 3/18/2020
-ms.openlocfilehash: f4426e1d1b22c521dc436dc7e304d57e57b1812c
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 209c793903f1f706fc27102a783aa76e65382fcd
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664390"
 ---
 # <a name="quickstart-azure-database-for-mariadb-use-mysql-workbench-to-connect-and-query-data"></a>Краткое руководство. База данных Azure для MariaDB: подключение и запрос данных с помощью MySQL Workbench

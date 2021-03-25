@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 06/10/2020
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: e7315796f2f7f89800b58f5fa607e69cd7ae3447
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98935407"
 ---
 # <a name="tutorial-use-an-http-triggered-azure-function-to-create-a-container-group"></a>Руководство по применению функции Azure, активируемой HTTP-запросами, для создания группы контейнеров

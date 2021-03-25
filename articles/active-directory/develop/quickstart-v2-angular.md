@@ -13,10 +13,10 @@ ms.workload: identity
 ms.date: 03/18/2020
 ms.author: janutter
 ms.openlocfilehash: 5ac6a19fc569d60f75f9da788629331a70b0a4c9
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225053"
 ---
 # <a name="quickstart-sign-in-users-and-get-an-access-token-in-an-angular-single-page-application"></a>Краткое руководство. Вход пользователей и получение маркера доступа в одностраничное приложение Angular

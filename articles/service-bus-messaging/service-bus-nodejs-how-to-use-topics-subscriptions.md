@@ -8,10 +8,10 @@ ms.date: 11/09/2020
 ms.author: spelluru
 ms.custom: devx-track-js
 ms.openlocfilehash: a1afe4207ce3833f3bcb55bc7bc2e8e27f393f63
-ms.sourcegitcommit: c136985b3733640892fee4d7c557d40665a660af
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98180002"
 ---
 # <a name="quickstart-service-bus-topics-and-subscriptions-with-nodejs-and-the-preview-azureservice-bus-package"></a>Краткое руководство. Использование для разделов и подписок служебной шины Node.js и предварительной версией пакета azure/service-bus

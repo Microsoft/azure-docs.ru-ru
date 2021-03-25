@@ -10,10 +10,10 @@ ms.custom: subject-armqs
 ms.date: 10/12/2020
 ms.author: duau
 ms.openlocfilehash: 7521344a2bb6aae67724c8bfbb9131e2ff1e6b94
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92789732"
 ---
 # <a name="quickstart-create-an-expressroute-circuit-with-private-peering-using-an-arm-template"></a>Краткое руководство. Создание канала ExpressRoute с частным пирингом с помощью шаблона ARM
@@ -22,7 +22,7 @@ ms.locfileid: "92789732"
 
 [!INCLUDE [About Azure Resource Manager](../../includes/resource-manager-quickstart-introduction.md)]
 
-Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure** . Шаблон откроется на портале Azure.
+Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure**. Шаблон откроется на портале Azure.
 
 [![Развертывание в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-expressroute-private-peering-vnet%2Fazuredeploy.json)
 
@@ -34,7 +34,7 @@ ms.locfileid: "92789732"
 
 Шаблон, используемый в этом кратком руководстве, взят из [шаблонов быстрого запуска Azure](https://azure.microsoft.com/resources/templates/101-expressroute-private-peering-vnet).
 
-В этом кратком руководстве описывается создание канала ExpressRoute с *Equinix* в качестве поставщика услуг. Канал будет использовать *SKU уровня "Премиум"* с пропускной способностью *50 Мбит/с* , а также расположением пиринга *Вашингтон, О.К.* . Частный пиринг будет включен с первичной и вторичной подсетью *192.168.10.16/30* и *192.168.10.20/30* соответственно. Вместе со шлюзом *HighPerformance ExpressRoute* также будет создана виртуальная сеть.
+В этом кратком руководстве описывается создание канала ExpressRoute с *Equinix* в качестве поставщика услуг. Канал будет использовать *SKU уровня "Премиум"* с пропускной способностью *50 Мбит/с*, а также расположением пиринга *Вашингтон, О.К.* . Частный пиринг будет включен с первичной и вторичной подсетью *192.168.10.16/30* и *192.168.10.20/30* соответственно. Вместе со шлюзом *HighPerformance ExpressRoute* также будет создана виртуальная сеть.
 
 :::code language="json" source="~/quickstart-templates/101-expressroute-private-peering-vnet/azuredeploy.json":::
 
@@ -70,11 +70,11 @@ ms.locfileid: "92789732"
 
 1. Выберите **Копировать** из предыдущего блока кода, чтобы скопировать сценарий PowerShell.
 
-1. Щелкните правой кнопкой в области консоли оболочки и выберите **Вставить** .
+1. Щелкните правой кнопкой в области консоли оболочки и выберите **Вставить**.
 
 1. Введите значения.
 
-    Имя группы ресурсов — это имя проекта с добавлением **rg** .
+    Имя группы ресурсов — это имя проекта с добавлением **rg**.
 
     Развертывание шаблона занимает около 20 минут. По завершении выходные данные должны быть следующего вида:
 
@@ -86,17 +86,17 @@ ms.locfileid: "92789732"
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 
-1. В области слева выберите **Группы ресурсов** .
+1. В области слева выберите **Группы ресурсов**.
 
-1. Выберите группу ресурсов, созданную при работе с предыдущим разделом. Имя группы ресурсов по умолчанию — это имя проекта с добавлением **rg** .
+1. Выберите группу ресурсов, созданную при работе с предыдущим разделом. Имя группы ресурсов по умолчанию — это имя проекта с добавлением **rg**.
 
 1. Группа ресурсов должна содержать следующие ресурсы:
 
-     :::image type="content" source="./media/quickstart-create-expressroute-vnet/expressroute-resource-group.png" alt-text="Результаты развертывания шаблона Resource Manager ExpressRoute в PowerShell":::
+     :::image type="content" source="./media/quickstart-create-expressroute-vnet/expressroute-resource-group.png" alt-text="Группа ресурсов развертывания ExpressRoute":::
 
-1. Выберите канал ExpressRoute **er-ck01** , чтобы убедиться, что канал имеет состояние **Включен** , поставщик — состояние **Не подготовлено** , а частный пиринг — состояние **Подготовлен** .
+1. Выберите канал ExpressRoute **er-ck01**, чтобы убедиться, что канал имеет состояние **Включен**, поставщик — состояние **Не подготовлено**, а частный пиринг — состояние **Подготовлен**.
 
-    :::image type="content" source="./media/quickstart-create-expressroute-vnet/expressroute-circuit.png" alt-text="Результаты развертывания шаблона Resource Manager ExpressRoute в PowerShell":::
+    :::image type="content" source="./media/quickstart-create-expressroute-vnet/expressroute-circuit.png" alt-text="Канал развертывания ExpressRoute":::
 
 > [!NOTE]
 > Прежде чем связать виртуальную сеть с каналом, необходимо будет вызвать поставщик для завершения процесса подготовки.
