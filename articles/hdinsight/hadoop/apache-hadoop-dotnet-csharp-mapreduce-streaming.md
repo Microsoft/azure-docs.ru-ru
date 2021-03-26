@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive, seoapr2020, devx-track-csharp
 ms.date: 04/28/2020
-ms.openlocfilehash: 6e2758fd650547978924c25f8f3faf1e3e7194f6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8093db9c53d9c34014d1b315d53539b3f2cffb30
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101699391"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866715"
 ---
 # <a name="use-c-with-mapreduce-streaming-on-apache-hadoop-in-hdinsight"></a>Использование C# для потоковой передачи MapReduce в Apache Hadoop в HDInsight
 
@@ -150,7 +150,7 @@ namespace reducer
 
 1. Разверните кластер HDInsight, в который нужно развернуть это приложение. Отобразится запись с текстом **(Учетная запись хранения по умолчанию)**.
 
-   ![Учетная запись хранения, кластер HDInsight, обозреватель сервера, Visual Studio](./media/apache-hadoop-dotnet-csharp-mapreduce-streaming/hdinsight-storage-account.png)
+   :::image type="content" source="./media/apache-hadoop-dotnet-csharp-mapreduce-streaming/hdinsight-storage-account.png" alt-text="Учетная запись хранения, кластер HDInsight, обозреватель сервера, Visual Studio" border="true":::
 
    * Если вы можете расширить запись **(учетную запись хранения по умолчанию)** , вы используете **учетную запись хранения Azure** в качестве хранилища по умолчанию для кластера. Чтобы просмотреть файлы в хранилище по умолчанию для кластера, разверните запись и дважды щелкните элемент **(контейнер по умолчанию)**.
 
@@ -160,7 +160,7 @@ namespace reducer
 
     * Если вы используете **учетную запись хранения Azure**, щелкните значок **Отправить BLOB-объект** .
 
-        ![Значок отправки HDInsight для модуля сопоставления, Visual Studio](./media/apache-hadoop-dotnet-csharp-mapreduce-streaming/hdinsight-upload-icon.png)
+        :::image type="content" source="./media/apache-hadoop-dotnet-csharp-mapreduce-streaming/hdinsight-upload-icon.png" alt-text="Значок отправки HDInsight для модуля сопоставления, Visual Studio" border="true":::
 
         В диалоговом окне **Отправка нового файла** в поле **имя файла** выберите **Обзор**. В диалоговом окне **Отправка большого двоичного объекта** перейдите в папку *bin\Debug* проекта модуля *сопоставления* , а затем выберите файл *mapper.exe* . Наконец, выберите **Открыть** , а затем нажмите **кнопку ОК** , чтобы завершить отправку.
 

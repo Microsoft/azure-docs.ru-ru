@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: hdinsightactive,seodec18,seoapr2020
 ms.date: 04/22/2020
-ms.openlocfilehash: d352fc86f4451f60951b84929ad5d9450c1003d6
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 72c82e8f425b05dde37352225dd7167b089ba48a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98942794"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868466"
 ---
 # <a name="tutorial-use-apache-spark-structured-streaming-with-apache-kafka-on-hdinsight"></a>Руководство по Использование структурированной потоковой передачи Apache Spark с Apache Kafka в HDInsight
 
@@ -113,7 +113,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
 
 На следующей схеме показано, как происходит обмен данными между Spark и Kafka:
 
-![Схема кластеров Spark и Kafka в виртуальной сети Azure](./media/hdinsight-apache-kafka-spark-structured-streaming/apache-spark-kafka-vnet.png)
+:::image type="content" source="./media/hdinsight-apache-kafka-spark-structured-streaming/apache-spark-kafka-vnet.png" alt-text="Схема кластеров Spark и Kafka в виртуальной сети Azure" border="false":::
 
 > [!NOTE]  
 > Служба Kafka ограничена обменом данными в пределах виртуальной сети. Другие службы в кластере, например SSH и Ambari, могут быть доступны через Интернет. Дополнительные сведения об общих портах, доступных в HDInsight, см. в статье [Порты и универсальные коды ресурсов (URI), используемые кластерами HDInsight](hdinsight-hadoop-port-settings-for-services.md).
@@ -149,7 +149,7 @@ Apache Kafka в HDInsight не предоставляет доступ к бро
     | Имя пользователя SSH | Пользователь SSH, который создается для кластеров. |
     | Пароль SSH | Пароль пользователя SSH. |
 
-    ![Снимок экрана с настроенным шаблоном](./media/hdinsight-apache-kafka-spark-structured-streaming/spark-kafka-template.png)
+    :::image type="content" source="./media/hdinsight-apache-kafka-spark-structured-streaming/spark-kafka-template.png" alt-text="Снимок экрана с настроенным шаблоном":::
 
 3. Прочтите **условия использования** и установите флажок **Я принимаю указанные выше условия**.
 

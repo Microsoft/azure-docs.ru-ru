@@ -10,12 +10,12 @@ ms.author: jeanyd
 ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
-ms.openlocfilehash: 6586375d7db71274f40eb62aeb24f9daad0d7c2e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e247e372237572586e5a4647d24d9ed6067ea823
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101688303"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104949793"
 ---
 # <a name="use-postgresql-extensions-in-your-azure-arc-enabled-postgresql-hyperscale-server-group"></a>Использование расширений PostgreSQL в службе "Дуга Azure", в которой включена PostgreSQLная группа серверов
 
@@ -55,7 +55,7 @@ PostgreSQL лучше использовать с расширениями. На
 ## <a name="add-extensions-to-the-shared_preload_libraries"></a>Добавление расширений в shared_preload_libraries
 Дополнительные сведения о [shared_preload_libraries см. в документации по](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SHARED-PRELOAD-LIBRARIES)PostgreSQL:
 - Этот шаг не требуется для расширений, входящих в состав `contrib`
-- Этот шаг не требуется для расширений, которые не требуются для предварительной загрузки с помощью shared_preload_libraries. Для этих расширений вы можете перейти к следующему абзацу [Создание расширений](https://docs.microsoft.com/azure/azure-arc/data/using-extensions-in-postgresql-hyperscale-server-group#create-extensions).
+- Этот шаг не требуется для расширений, которые не требуются для предварительной загрузки с помощью shared_preload_libraries. Для этих расширений вы можете перейти к следующему абзацу [Создание расширений](#create-extensions).
 
 ### <a name="add-an-extension-at-the-creation-time-of-a-server-group"></a>Добавление расширения во время создания группы серверов
 ```console

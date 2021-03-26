@@ -15,12 +15,12 @@ ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-azurecli, devx-track-csharp
-ms.openlocfilehash: 8cdfc9e1243de831364bc6a8a11fe25453cc4931
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: f928f0d2a00ec8d7a7d51440047132105e637ef2
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102213867"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105037178"
 ---
 # <a name="manage-streaming-endpoints-with--media-services-v3"></a>Управление конечными точками потоковой передачи с помощью служб мультимедиа v3
 
@@ -33,7 +33,7 @@ ms.locfileid: "102213867"
 > [!NOTE]
 > Плата взимается, только когда конечная точка потоковой передачи используется.
     
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Обзор. 
 
@@ -47,7 +47,7 @@ ms.locfileid: "102213867"
 POST https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mediaresources/providers/Microsoft.Media/mediaservices/slitestmedia10/streamingEndpoints/myStreamingEndpoint1/start?api-version=2018-07-01
 ```
 
-Дополнительные сведения см. в разделе: 
+Для получения дополнительной информации см. 
 
 * Справочная документация по [запуску StreamingEndpoint](/rest/api/media/streamingendpoints/start) .
 * Запуск конечной точки потоковой передачи является асинхронной операцией. 
@@ -102,7 +102,7 @@ if (streamingEndpoint != null)
     }
 ```
 
-См. полный [пример кода .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/master/DynamicPackagingVODContent/StreamHLSAndDASH/Program.cs#L112).
+См. полный [пример кода .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/Streaming/StreamHLSAndDASH/Program.cs#L112).
 
 ---
 

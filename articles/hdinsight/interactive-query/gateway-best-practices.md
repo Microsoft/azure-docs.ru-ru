@@ -4,12 +4,12 @@ description: Узнайте, как перейти к рекомендациям
 ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 04/01/2020
-ms.openlocfilehash: 63484d882d8ccd387257c6f246c2048a09c77bc8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 549eab1547b75eb9461b23df2c157290943b4ed9
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98933106"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869792"
 ---
 # <a name="gateway-deep-dive-and-best-practices-for-apache-hive-in-azure-hdinsight"></a>Подробный обзор шлюза и рекомендации по Apache Hive в Azure HDInsight
 
@@ -21,7 +21,7 @@ ms.locfileid: "98933106"
 
 На следующей диаграмме приведен пример того, как шлюз предоставляет абстракцию перед всеми различными возможностями разрешения узла в HDInsight.
 
-![Схема разрешения узла](./media/gateway-best-practices/host-resolution-diagram.png "Схема разрешения узла")
+:::image type="content" source="./media/gateway-best-practices/host-resolution-diagram.png " alt-text="Схема разрешения узла" border="true":::
 
 ## <a name="motivation"></a>Причины для использования
 
@@ -39,7 +39,7 @@ ms.locfileid: "98933106"
 
 На следующей схеме показаны шаги, связанные с запросом SELECT.
 
-![Схема результатов](./media/gateway-best-practices/result-retrieval-diagram.png "Схема результатов")
+:::image type="content" source="./media/gateway-best-practices/result-retrieval-diagram.png " alt-text="Схема результатов" border="true":::
 
 Apache Hive является реляционной абстракцией поверх HDFS-совместимой файловой системы. Эта абстракция означает, что инструкции **SELECT** в Hive соответствуют операциям **чтения** файловой системы. Операции **чтения** преобразуются в соответствующую схему перед тем, как сообщить пользователю о них. Задержка этого процесса повышается за счет размера данных и общего числа прыжков, необходимых для достижения конечного пользователя.
 

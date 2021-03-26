@@ -7,10 +7,10 @@ ms.date: 08/02/2018
 ms.topic: tutorial
 ROBOTS: NOINDEX
 ms.openlocfilehash: 11805d2a15e7f369ad38ab7e92409c1b357d2d8e
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103490846"
 ---
 # <a name="tutorial-render-a-blender-scene-using-batch-explorer"></a>Руководство. Преобразование для просмотра сцены Blender с помощью Batch Explorer

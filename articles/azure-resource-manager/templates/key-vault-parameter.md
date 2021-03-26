@@ -3,12 +3,12 @@ title: Key Vaultный секрет с помощью шаблона
 description: Демонстрирует передачу секретного кода из хранилища ключей в виде параметра при развертывании.
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 8983d51d90e07e21ac4c9489c7ed553530278d3c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 05749fe2e9179051c3183ea2e592cf7190ddb347
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97672711"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889864"
 ---
 # <a name="use-azure-key-vault-to-pass-secure-parameter-value-during-deployment"></a>Использование Azure Key Vault для передачи защищенного значения параметра во время развертывания
 
@@ -306,7 +306,7 @@ New-AzResourceGroupDeployment `
   "resources": [
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2018-05-01",
+      "apiVersion": "2020-10-01",
       "name": "dynamicSecret",
       "properties": {
         "mode": "Incremental",

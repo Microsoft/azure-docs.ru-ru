@@ -3,12 +3,12 @@ title: Функции шаблонов — Дата
 description: Описывает функции, используемые в шаблоне Azure Resource Manager (шаблон ARM) для работы с датами.
 ms.topic: conceptual
 ms.date: 11/18/2020
-ms.openlocfilehash: 58d865f109ecca2629b89eeb55e554743824c195
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: abff5b86ad1e10042596b11f613cdb594e307209
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96920491"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889932"
 ---
 # <a name="date-functions-for-arm-templates"></a>Функции даты для шаблонов ARM
 
@@ -94,11 +94,11 @@ output add1HourOutput string = add1Hour
 
 При развертывании предыдущего шаблона с базовым временем `2020-04-07 14:53:14Z` выводится следующее:
 
-| Имя | Type | Значение |
+| Имя | Тип | Значение |
 | ---- | ---- | ----- |
-| add3YearsOutput | Строка | 4/7/2023 2:53:14 РМ |
-| subtract9DaysOutput | Строка | 3/29/2020 2:53:14 РМ |
-| add1HourOutput | Строка | 4/7/2020 3:53:14 РМ |
+| add3YearsOutput | Строковый тип | 4/7/2023 2:53:14 РМ |
+| subtract9DaysOutput | Строковый тип | 3/29/2020 2:53:14 РМ |
+| add1HourOutput | Строковый тип | 4/7/2020 3:53:14 РМ |
 
 В следующем примере шаблона показано, как задать время начала для расписания автоматизации.
 
@@ -261,11 +261,11 @@ output utcCustomOutput string = utcCustomValue
 
 Выходные данные предыдущего примера зависят от каждого развертывания, но будут выглядеть примерно так:
 
-| Имя | Type | Значение |
+| Имя | Тип | Значение |
 | ---- | ---- | ----- |
-| уткаутпут | строка | 20190305T175318Z |
-| уткшортаутпут | строка | 05.03.2019 |
-| утккустомаутпут | строка | 3 5 |
+| уткаутпут | string | 20190305T175318Z |
+| уткшортаутпут | string | 05.03.2019 |
+| утккустомаутпут | string | 3 5 |
 
 В следующем примере показано, как использовать значение из функции при задании значения тега.
 
@@ -287,7 +287,7 @@ output utcCustomOutput string = utcCustomValue
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "apiVersion": "2018-05-01",
+      "apiVersion": "2020-10-01",
       "name": "[parameters('rgName')]",
       "location": "westeurope",
       "tags": {
@@ -311,7 +311,7 @@ output utcCustomOutput string = utcCustomValue
 param utcShort string = utcNow('d')
 param rgName string
 
-resource myRg 'Microsoft.Resources/resourceGroups@2018-05-01' = {
+resource myRg 'Microsoft.Resources/resourceGroups@2020-10-01' = {
   name: rgName
   location: 'westeurope'
   tags: {

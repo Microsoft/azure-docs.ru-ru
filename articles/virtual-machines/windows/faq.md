@@ -8,12 +8,12 @@ ms.workload: infrastructure-services
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: cynthn
-ms.openlocfilehash: 0de25b29dc1e930956c01f342ca2614d1a9082ca
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 2dc94ea904da128be01decf36e2d36dc9510c2a5
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102557511"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043891"
 ---
 # <a name="frequently-asked-question-about-windows-virtual-machines"></a>Часто задаваемые вопросы по виртуальным машинам Windows
 В этой статье содержатся ответы на некоторые распространенные вопросы о виртуальных машинах Windows, созданных в Azure с помощью модели развертывания Resource Manager. Версию этого раздела для Linux см. в разделе [часто задаваемые вопросы о виртуальные машины Linux](../linux/faq.md).
@@ -33,7 +33,7 @@ ms.locfileid: "102557511"
 ## <a name="how-can-i-access-my-virtual-machine"></a>Как получить доступ к своей виртуальной машине?
 Установите удаленное подключение с использованием протокола удаленного рабочего стола (RDP) к виртуальной машине Windows. Инструкции см. [в статье подключение и вход в виртуальную машину Azure под Windows](connect-logon.md). Если сервер не настроен как узел сеансов служб удаленных рабочих столов, то поддерживается не более двух параллельных подключений.  
 
-Если у вас возникли проблемы с удаленный рабочий стол, см. статью [Устранение неполадок удаленный рабочий стол подключений к виртуальной машине Azure под управлением Windows](../troubleshooting/troubleshoot-rdp-connection.md?toc=/azure/virtual-machines/windows/toc.json). 
+Если у вас возникли проблемы с удаленный рабочий стол, см. статью [Устранение неполадок удаленный рабочий стол подключений к виртуальной машине Azure под управлением Windows](/troubleshoot/azure/virtual-machines/troubleshoot-rdp-connection?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json). 
 
 Если вы знакомы с Hyper-V, вы можете найти средство, аналогичное VMConnect. Azure не предлагает аналогичного средства, так как доступ консоли к виртуальной машине не поддерживается.
 

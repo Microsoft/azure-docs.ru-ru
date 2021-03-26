@@ -21,7 +21,7 @@
 - name: Примеры
   items:
     - name: 'Примеры: браузер'
-      href: 'https://docs.microsoft.com/samples/browse/?terms=content%20moderator'
+      href: /samples/browse/?terms=content+moderator
     - name: Примеры пакета SDK для .NET
       href: samples-dotnet.md
     - name: Примеры пакета SDK для Python
@@ -119,11 +119,11 @@
     - name: Поддержка регионов
       href: 'https://azure.microsoft.com/global-infrastructure/services/'
     - name: Модули Microsoft Learn
-      href: 'https://docs.microsoft.com/learn/browse/?terms=content%20moderator'
+      href: /learn/browse/?terms=content+moderator
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/content-moderator/context/context
     - name: Azure для государственных организаций и глобальное облако Azure
-      href: 'https://docs.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure'
+      href: ../../azure-government/compare-azure-government-global-azure.md
     - name: Обновления Azure
       href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Соответствие нормативным требованиям

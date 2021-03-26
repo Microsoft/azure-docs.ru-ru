@@ -32,7 +32,7 @@
       items:
         - name: Контейнеры
           items:
-            - name: Поддержка контейнеров
+            - name: "Контейнеры Cognitive\_Services"
               href: cognitive-services-container-support.md
             - name: Теги образа контейнера и заметки о выпуске
               href: ./containers/container-image-tags.md

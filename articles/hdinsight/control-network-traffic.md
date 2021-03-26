@@ -4,12 +4,12 @@ description: Изучите методы управления входящим �
 ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 09/02/2020
-ms.openlocfilehash: 0cbda0b533a64e627bfeef9589ab95c4163ae73e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 66b078e8dfa1daa100978f04283e9bba7158bddf
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98943365"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867038"
 ---
 # <a name="control-network-traffic-in-azure-hdinsight"></a>Управление сетевым трафиком в Azure HDInsight
 
@@ -21,7 +21,7 @@ ms.locfileid: "98943365"
 
 Поскольку HDInsight является управляемой службой, ей требуется неограниченный доступ к службам работоспособности и управления HDinsight как для входящего, так и исходящего трафика виртуальной сети. При использовании групп безопасности сети необходимо убедиться, что эти службы могут взаимодействовать с кластером HDInsight.
 
-![Схема сущностей HDInsight, созданных в настраиваемой виртуальной сети Azure](./media/control-network-traffic/hdinsight-vnet-diagram.png)
+:::image type="content" source="./media/control-network-traffic/hdinsight-vnet-diagram.png" alt-text="Схема сущностей HDInsight, созданных в настраиваемой виртуальной сети Azure" border="false":::
 
 ## <a name="hdinsight-with-network-security-groups"></a>Azure HDInsight с группами безопасности сети
 

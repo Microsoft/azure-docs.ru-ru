@@ -5,18 +5,18 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 06/19/2019
-ms.openlocfilehash: e4c9124ebd0b61b8db1b1da964355a3c36b5bba5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: a5e623b0429194db6d03beb674679bd10e337844
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98930555"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869482"
 ---
 # <a name="manage-ml-services-cluster-on-azure-hdinsight"></a>Управление кластером служб машинного обучения в Azure HDInsight
 
 Из этой статьи вы узнаете, как управлять существующим кластером служб ML в Azure HDInsight для выполнения таких задач, как добавление нескольких параллельных пользователей, удаленное подключение к кластеру служб машинного обучения, изменение контекста вычислений и т. д.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Кластер служб машинного обучения в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Службы машинного обучения ML Services** для параметра **Тип кластера**.
 
@@ -26,7 +26,7 @@ ms.locfileid: "98930555"
 
 Вы можете включить несколько одновременно работающих пользователей в кластер служб машинного обучения в HDInsight, добавив дополнительных пользователей в граничном узле, на котором выполняется версия RStudio Community. При создании кластера HDInsight необходимо указать двух пользователей: для HTTP и SSH.
 
-![HDI портал Azure параметры входа](./media/r-server-hdinsight-manage/hdi-concurrent-users1.png)
+:::image type="content" source="./media/r-server-hdinsight-manage/hdi-concurrent-users1.png" alt-text="HDI портал Azure параметры входа" border="true":::
 
 - **Имя пользователя для входа в кластер** — пользователь HTTP для проверки подлинности с помощью шлюза HDInsight, который применяется для защиты созданных вами кластеров HDInsight. Эти учетные данные пользователя HTTP нужны для доступа к пользовательскому интерфейсу Apache Ambari, пользовательскому интерфейсу Apache Hadoop YARN, а также другим компонентам пользовательского интерфейса.
 - **Secure Shell (SSH) username**— пользователь SSH для доступа к кластеру через Secure Shell. Этот пользователь применяется в системе Linux для всех головных, рабочих и граничных узлов. Таким образом, с помощью безопасной оболочки вы можете получить доступ к любому узлу в удаленном кластере.
@@ -63,7 +63,7 @@ sudo passwd <yournewusername>
 
 Выходные данные показаны на снимке экрана ниже.
 
-![одновременные пользователи выводят на экран снимок экрана](./media/r-server-hdinsight-manage/hdi-concurrent-users2.png)
+:::image type="content" source="./media/r-server-hdinsight-manage/hdi-concurrent-users2.png" alt-text="одновременные пользователи выводят на экран снимок экрана" border="true":::
 
 При появлении запроса на ввод текущего пароля Kerberos нажмите клавишу **ВВОД**, чтобы игнорировать его. Параметр `-m` в команде `useradd` указывает, что система создаст домашнюю папку пользователя, которая обязательна для версии RStudio Community.
 
@@ -202,7 +202,7 @@ rxSparkDisconnect(myHadoopCluster)
 
    * Установите флажок только для параметра **Рабочая роль**.
 
-   * **Параметры**: устанавливаемые пакеты R. Например: `bitops stringr arules`
+   * **Параметры**: устанавливаемые пакеты R. Например `bitops stringr arules`.
 
    * Установите флажок **Persist this script action** (Сохранить это действие скрипта).  
 
@@ -211,7 +211,7 @@ rxSparkDisconnect(myHadoopCluster)
    > 2. Для некоторых пакетов R требуются дополнительные системные библиотеки Linux. Для удобства были предварительно установлены службы машинного обучения HDInsight с помощью зависимостей, необходимых для 100 наиболее популярных пакетов R. Однако если для устанавливаемых пакетов R требуются дополнительные библиотеки, то необходимо скачать основной скрипт, используемый в этой статье, и добавить шаги для установки системных библиотек. Затем необходимо передать измененный сценарий в общедоступный контейнер больших двоичных объектов в службе хранилище Azure и использовать этот измененный сценарий для установки пакетов.
    >    Дополнительные сведения о разработке действий скриптов см. в разделе [Разработка действий скриптов](../hdinsight-hadoop-script-actions-linux.md).
 
-   ![Действие "отправить скрипт" портал Azure](./media/r-server-hdinsight-manage/submit-script-action.png)
+   :::image type="content" source="./media/r-server-hdinsight-manage/submit-script-action.png" alt-text="Действие &quot;отправить скрипт&quot; портал Azure" border="true":::
 
 4. Нажмите кнопку **Создать**, чтобы выполнить скрипт. После завершения выполнения пакеты R будут доступны на всех рабочих узлах.
 

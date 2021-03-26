@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 01/02/2020
-ms.openlocfilehash: 24a0c09ba78c668dab017ec80adda19f59d89a4f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 43b46d19503856f5eae38272299f73d9c80055b8
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98942987"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868891"
 ---
 # <a name="migrate-an-apache-hbase-cluster-to-a-new-version"></a>Перенос данных кластера Apache HBase в новую версию
 
@@ -29,17 +29,17 @@ ms.locfileid: "98942987"
 
 | Тип совместимости | Основной номер версии| Дополнительный номер версии | Обновление |
 | --- | --- | --- | --- |
-| Совместимость клиента и сервера на уровне передачи данных | N | Да | Да |
-| Совместимость серверов | N | Да | Да |
-| Совместимость форматов файлов | N | Да | Да |
-| Совместимость API клиента | N | Да | Да |
-| Совместимость клиента на уровне двоичного кода | N | N | Да |
+| Совместимость клиента и сервера на уровне передачи данных | Нет | Да | Да |
+| Совместимость серверов | Нет | Да | Да |
+| Совместимость форматов файлов | Нет | Да | Да |
+| Совместимость API клиента | Нет | Да | Да |
+| Совместимость клиента на уровне двоичного кода | Нет | Нет | Да |
 | **Ограниченная совместимость API на стороне сервера** |  |  |  |
-| объем стабилен | N | Да | Да |
-| Развитие | N | N | Да |
-| Работает неустойчиво | N | N | N |
-| Совместимость зависимостей | N | Да | Да |
-| Совместимость операций | N | N | Да |
+| объем стабилен | Нет | Да | Да |
+| Развитие | Нет | Нет | Да |
+| Работает неустойчиво | Нет | Нет | Нет |
+| Совместимость зависимостей | Нет | Да | Да |
+| Совместимость операций | Нет | Нет | Да |
 
 ## <a name="upgrade-with-same-apache-hbase-major-version"></a>Обновление с тем же основным номером версии Apache HBase
 
@@ -49,7 +49,7 @@ ms.locfileid: "98942987"
 
 1. [Настройте новый кластер назначения HDInsight](../hdinsight-hadoop-provision-linux-clusters.md), используя ту же учетную запись хранения, но другое имя контейнера:
 
-   ![Используйте ту же учетную запись хранения, но создайте другой контейнер](./media/apache-hbase-migrate-new-version/same-storage-different-container.png)
+   :::image type="content" source="./media/apache-hbase-migrate-new-version/same-storage-different-container.png" alt-text="Используйте ту же учетную запись хранения, но создайте другой контейнер" border="true":::
 
 1. Очистите исходный кластер HBase, который представляет собой обновляемый кластер. HBase записывает входящие данные в хранилище в памяти, которое называется _memstore_. После того как memstore достигнет определенного размера, HBase записывает его на диск для долгосрочного хранения в учетной записи хранения кластера. При удалении старого кластера memstore очищается, что может привести к потере данных. Чтобы вручную перенести данные memstore для каждой таблицы на диск, выполните следующий скрипт. Последнюю версию этого скрипта можно найти на [GitHub](https://raw.githubusercontent.com/Azure/hbase-utils/master/scripts/flush_all_tables.sh) для Azure.
 
@@ -175,9 +175,9 @@ ms.locfileid: "98942987"
 
 1. Войдите в [Apache Ambari](https://ambari.apache.org/) в старом кластере ( `https://OLDCLUSTERNAME.azurehdidnsight.net` ) и завершите работу служб HBase. При появлении запроса подтвердить, что вы хотите отключить службы, установите флажок, чтобы включить режим обслуживания для HBase. Подробные сведения о подключении к платформе Ambari и ее использовании см. в статье [Управление кластерами HDInsight с помощью веб-интерфейса Ambari](../hdinsight-hadoop-manage-ambari.md).
 
-    ![В Ambari щелкните службы > > HBase в разделе действия службы.](./media/apache-hbase-migrate-new-version/stop-hbase-services1.png)
+    :::image type="content" source="./media/apache-hbase-migrate-new-version/stop-hbase-services1.png" alt-text="В Ambari щелкните службы > > HBase в разделе действия службы." border="true":::
 
-    ![Проверьте, установлен ли флажок Turn On Maintenance Mode for HBase (Включить режим обслуживания HBase), а затем подтвердите остановку.](./media/apache-hbase-migrate-new-version/turn-on-maintenance-mode.png)
+    :::image type="content" source="./media/apache-hbase-migrate-new-version/turn-on-maintenance-mode.png" alt-text="Проверьте, установлен ли флажок Turn On Maintenance Mode for HBase (Включить режим обслуживания HBase), а затем подтвердите остановку." border="true":::
 
 1. Если вы не используете кластеры HBase с функцией расширенной записи, пропустите этот шаг. Он нужен только для кластеров HBase с функцией расширенной записи.
 
@@ -190,15 +190,15 @@ ms.locfileid: "98942987"
     
 1. Войдите в Ambari в новом кластере HDInsight. Измените параметр HDFS `fs.defaultFS`, чтобы указать имя контейнера, используемого в исходном кластере. Этот параметр находится в разделе **HDFS > Configs (Конфигурации) > Advanced (Расширенные) > Advanced core-site (Расширенный основной сайт)**.
 
-   ![В Ambari щелкните службы > HDFS > configs > дополнительно.](./media/apache-hbase-migrate-new-version/hdfs-advanced-settings.png)
+   :::image type="content" source="./media/apache-hbase-migrate-new-version/hdfs-advanced-settings.png" alt-text="В Ambari щелкните службы > HDFS > configs > дополнительно." border="true":::
 
-   ![Изменение имени контейнера в Ambari](./media/apache-hbase-migrate-new-version/change-container-name.png)
+   :::image type="content" source="./media/apache-hbase-migrate-new-version/change-container-name.png" alt-text="Изменение имени контейнера в Ambari" border="true":::
 
 1. Если вы не используете кластеры HBase с функцией расширенной записи, пропустите этот шаг. Он нужен только для кластеров HBase с функцией расширенной записи.
 
    Измените `hbase.rootdir` путь, чтобы он указывал на контейнер исходного кластера.
 
-   ![В Ambari измените имя контейнера для рутдир HBase.](./media/apache-hbase-migrate-new-version/change-container-name-for-hbase-rootdir.png)
+   :::image type="content" source="./media/apache-hbase-migrate-new-version/change-container-name-for-hbase-rootdir.png" alt-text="В Ambari измените имя контейнера для рутдир HBase." border="true":::
     
 1. Если вы не используете кластеры HBase с функцией расширенной записи, пропустите этот шаг. Он нужен только для кластеров HBase с функцией расширенной записи и только в тех случаях, когда исходный кластер был кластером HBase с функцией расширенной записи.
 

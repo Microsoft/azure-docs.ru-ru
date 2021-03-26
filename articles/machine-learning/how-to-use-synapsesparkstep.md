@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, synapse-azureml
-ms.openlocfilehash: 2a9f0a8c943f539166f18a1e41a36136fbb63a6f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b03915608c6143a9e205ba1a1e08e411b8aa9093
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104584301"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868653"
 ---
 # <a name="how-to-use-apache-spark-powered-by-azure-synapse-analytics-in-your-machine-learning-pipeline-preview"></a>Использование Apache Spark (на платформе Azure синапсе Analytics) в конвейере машинного обучения (Предварительная версия)
 
@@ -92,6 +92,8 @@ synapse_compute.wait_for_completion()
 После создания конфигурации можно создать машинное обучение, `ComputeTarget` передав в него `Workspace` имя, и, `ComputeTargetAttachConfiguration` по которому вы хотите ссылаться на вычисление в рабочей области машинного обучения. Вызов `ComputeTarget.attach()` является асинхронным, поэтому образец блокируется до завершения вызова.
 
 ## <a name="create-a-synapsesparkstep-that-uses-the-linked-apache-spark-pool"></a>Создание `SynapseSparkStep` , использующее связанный пул Apache Spark
+
+Задание Spark в примере записной книжки [в пуле Apache Spark](https://github.com/azure/machinelearningnotebooks/blob/master/how-to-use-azureml/azure-synapse/spark_job_on_synapse_spark_pool.ipynb) определяет простой конвейер машинного обучения. Во-первых, записная книжка определяет шаг подготовки данных на основе, `synapse_compute` определенного на предыдущем шаге. Затем Записная книжка определяет шаг обучения на базе целевого объекта вычислений, который лучше подходит для обучения. В примере записной книжки для демонстрации ввода и вывода данных используется база данных с выживанием Титанике. на самом деле это не очищает данные или не делает прогнозную модель. Так как в этом примере нет практического обучения, на этапе обучения используется недорогой вычислительный ресурс на основе ЦП.
 
 Данные проходят в конвейер машинного обучения с помощью `DatasetConsumptionConfig` объектов, которые могут содержать табличные данные или наборы файлов. Данные часто поступают из файлов в хранилище BLOB-объектов в хранилище данных рабочей области. В следующем коде показан типичный код для создания входных данных для конвейера машинного обучения.
 

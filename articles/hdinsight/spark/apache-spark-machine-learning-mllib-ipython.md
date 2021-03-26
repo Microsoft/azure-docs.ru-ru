@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017,seoapr2020, devx-track-python
 ms.date: 04/27/2020
-ms.openlocfilehash: d2054058bb00b0801aa1c3694c73b6a2edb46c80
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 224ebae58a5688f81d1b64b4a9c81d5abd8a9690
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98930032"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868857"
 ---
 # <a name="use-apache-spark-mllib-to-build-a-machine-learning-application-and-analyze-a-dataset"></a>Использование Apache Spark MLlib для создания приложения машинного обучения и анализа набора данных
 
@@ -175,7 +175,7 @@ MLlib — это основная библиотека Spark, которая п�
 
     Результат.
 
-    ![Результат SQL-запроса](./media/apache-spark-machine-learning-mllib-ipython/spark-machine-learning-query-output.png "Результат SQL-запроса")
+    :::image type="content" source="./media/apache-spark-machine-learning-mllib-ipython/spark-machine-learning-query-output.png " alt-text="Результат SQL-запроса" border="true":::
 
 3. Также можно создать диаграмму с помощью Matplotlib, библиотеки, используемой для визуализации данных. Так как диаграмма должна создаваться из локально сохраненного кадра данных **countResultsdf**, фрагмент кода должен начинаться с волшебного слова `%%local`. Это действие гарантирует, что код будет выполняться локально на сервере Jupyter.
 
@@ -346,9 +346,9 @@ model = pipeline.fit(labeledData)
     plt.axis('equal')
     ```
 
-    Вы должны увидеть следующий результат.
+    Вы должны увидеть следующий результат:
 
-    ![Выходные данные приложения машинного обучения Spark — процентные доли непройденных проверок пищи.](./media/apache-spark-machine-learning-mllib-ipython/spark-machine-learning-result-output-2.png "Выходные данные результатов машинного обучения Spark")
+    :::image type="content" source="./media/apache-spark-machine-learning-mllib-ipython/spark-machine-learning-result-output-2.png " alt-text="Выходные данные приложения машинного обучения Spark — процентные доли непройденных проверок пищи." border="true":::
 
     На этой диаграмме «положительный» результат представляет собой непройденную проверку, а отрицательный — пройденную.
 

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020, devx-track-python
 ms.date: 04/29/2020
-ms.openlocfilehash: 8fbbe137ece7aac2dd2196c5ebec435e118297ad
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c3f912b4f4c2e78c44425f489927cee185b3d312
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98929826"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868721"
 ---
 # <a name="safely-manage-python-environment-on-azure-hdinsight-using-script-action"></a>Безопасное управление средой Python в Azure HDInsight с помощью действия скрипта
 
@@ -104,7 +104,7 @@ ms.locfileid: "98929826"
 
     1. Откройте пользовательский интерфейс Ambari, перейдите на страницу Spark2 и выберите вкладку Configs (Конфигурации).
 
-        ![Изменение конфигурации Spark и Livy с помощью Ambari](./media/apache-spark-python-package-installation/ambari-spark-and-livy-config.png)
+        :::image type="content" source="./media/apache-spark-python-package-installation/ambari-spark-and-livy-config.png" alt-text="Изменение конфигурации Spark и Livy с помощью Ambari" border="true":::
 
     2. Разверните Advanced livy2-env и добавьте приведенные ниже инструкции в конце. Если вы установили виртуальную среду с другим префиксом, измените путь соответствующим образом.
 
@@ -113,7 +113,7 @@ ms.locfileid: "98929826"
         export PYSPARK_DRIVER_PYTHON=/usr/bin/anaconda/envs/py35new/bin/python
         ```
 
-        ![Изменение конфигурации Livy с помощью Ambari](./media/apache-spark-python-package-installation/ambari-livy-config.png)
+        :::image type="content" source="./media/apache-spark-python-package-installation/ambari-livy-config.png" alt-text="Изменение конфигурации Livy с помощью Ambari" border="true":::
 
     3. Разверните Advanced spark2-env и замените существующую инструкцию экспорта PYSPARK_PYTHON в нижней части. Если вы установили виртуальную среду с другим префиксом, измените путь соответствующим образом.
 
@@ -121,11 +121,11 @@ ms.locfileid: "98929826"
         export PYSPARK_PYTHON=${PYSPARK_PYTHON:-/usr/bin/anaconda/envs/py35new/bin/python}
         ```
 
-        ![Изменение конфигурации Spark с помощью Ambari](./media/apache-spark-python-package-installation/ambari-spark-config.png)
+        :::image type="content" source="./media/apache-spark-python-package-installation/ambari-spark-config.png" alt-text="Изменение конфигурации Spark с помощью Ambari" border="true":::
 
     4. Сохраните изменения и перезапустите затронутые службы. Эти изменения требуют перезапуска службы Spark2. В пользовательском интерфейсе Ambari появится напоминание о необходимости перезапуска. Нажмите кнопку Restart (Перезапустить), чтобы перезапустить все затронутые службы.
 
-        ![Перезапуск служб](./media/apache-spark-python-package-installation/ambari-restart-services.png)
+        :::image type="content" source="./media/apache-spark-python-package-installation/ambari-restart-services.png" alt-text="Перезапуск служб" border="true":::
 
     5. Задайте для сеанса Spark два свойства, чтобы убедиться, что задание указывает на обновленную конфигурацию Spark: `spark.yarn.appMasterEnv.PYSPARK_PYTHON` и `spark.yarn.appMasterEnv.PYSPARK_DRIVER_PYTHON` . 
 
@@ -153,7 +153,7 @@ ms.locfileid: "98929826"
 
     Можно еще раз подтвердить среду Python в Jupyter Notebook, выполнив приведенный ниже код.
 
-    ![Проверка версии Python в Jupyter Notebook](./media/apache-spark-python-package-installation/check-python-version-in-jupyter.png)
+    :::image type="content" source="./media/apache-spark-python-package-installation/check-python-version-in-jupyter.png" alt-text="Проверка версии Python в Jupyter Notebook" border="true":::
 
 ## <a name="known-issue"></a>Известная проблема
 

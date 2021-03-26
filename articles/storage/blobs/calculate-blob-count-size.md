@@ -8,12 +8,12 @@ ms.date: 03/10/2021
 ms.service: storage
 ms.subservice: blobs
 ms.topic: how-to
-ms.openlocfilehash: 92e5b00cd655677cdc3096bc2142dfe1b704adf2
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: d1aa91ea0f698e609e786d87a0072e6a07c143a3
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102638678"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105047323"
 ---
 # <a name="calculate-blob-count-and-total-size-per-container-using-azure-storage-inventory"></a>Расчет числа BLOB-объектов и общего размера на контейнер с помощью инвентаризации хранилища Azure
 
@@ -43,7 +43,7 @@ ms.locfileid: "102638678"
 
 ## <a name="create-an-azure-synapse-workspace"></a>Создание рабочей области Azure Synapse
 
-Затем [Создайте рабочую область Azure синапсе](/azure/synapse-analytics/get-started-create-workspace) , в которой будет выполняться SQL-запрос для передачи результатов инвентаризации.
+Затем [Создайте рабочую область Azure синапсе](../../synapse-analytics/get-started-create-workspace.md) , в которой будет выполняться SQL-запрос для передачи результатов инвентаризации.
 
 ## <a name="create-the-sql-query"></a>Создание SQL запроса
 
@@ -58,7 +58,7 @@ ms.locfileid: "102638678"
 
 ## <a name="run-the-sql-query"></a>Выполнение SQL запроса
 
-1. Добавьте следующий SQL-запрос в рабочую область Azure синапсе для [чтения CSV-файла инвентаризации](/azure/synapse-analytics/sql/query-single-csv-file#read-a-csv-file).
+1. Добавьте следующий SQL-запрос в рабочую область Azure синапсе для [чтения CSV-файла инвентаризации](../../synapse-analytics/sql/query-single-csv-file.md#read-a-csv-file).
 
     В качестве `bulk` параметра используйте URL-адрес файла CSV отчета по инвентаризации, который требуется проанализировать.
 
@@ -81,7 +81,7 @@ ms.locfileid: "102638678"
 
     :::image type="content" source="media/calculate-blob-count-size/output.png" alt-text="Выходные данные выполнения скрипта для вычисления числа BLOB-объектов и общего размера.":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Использование инвентаризации BLOB-объектов службы хранилища Azure для управления данными больших двоичных объектов](blob-inventory.md)
 - [Вычисление общего указываемого в счете размера контейнера больших двоичных объектов](../scripts/storage-blobs-container-calculate-billing-size-powershell.md)

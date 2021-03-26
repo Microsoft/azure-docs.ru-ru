@@ -4,12 +4,12 @@ description: В этой статье представлен обзор функ
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 01/24/2020
-ms.openlocfilehash: 1f5a9f05b94f43db9e1d883ef5e86f8621f39251
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c42a9d47cabd803944b858fc470c1bedc39d2d77
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98943036"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868908"
 ---
 # <a name="azure-hdinsight-accelerated-writes-for-apache-hbase"></a>Azure HDInsight Accelerated Writes for Apache HBase (Ускорение операций записи Azure HDInsight для Apache HBase)
 
@@ -35,7 +35,7 @@ HBase сначала записывает обновления данных в �
 
 Чтобы создать кластер HBase с функцией ускорения записи, выполните действия, описанные в разделе [Настройка кластеров в HDInsight](../hdinsight-hadoop-provision-linux-clusters.md). На вкладке " **основы** " выберите тип кластера HBase, укажите версию компонента и установите флажок рядом с **параметром включить операции записи HBase с ускорением**. Затем продолжите выполнение оставшихся действий по созданию кластера.
 
-![Включить параметр ускоренной записи для HDInsight Apache HBase](./media/apache-hbase-accelerated-writes/azure-portal-create-hbase-wals.png)
+:::image type="content" source="./media/apache-hbase-accelerated-writes/azure-portal-create-hbase-wals.png" alt-text="Включить параметр ускоренной записи для HDInsight Apache HBase" border="true":::
 
 ## <a name="other-considerations"></a>Другие замечания
 
