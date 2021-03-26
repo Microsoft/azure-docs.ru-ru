@@ -3,12 +3,12 @@ title: Развертывание Аналитики видеотрансляц�
 description: В этой статье перечислены действия, которые помогут вам развернуть Live Video Analytics на Azure Stack пограничных устройствах.
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.openlocfilehash: d49167890009d58b21c3678cb89f608bad665abd
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b5be85e93b81f5cf50284533f21e688384558494
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101730275"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561157"
 ---
 # <a name="deploy-live-video-analytics-on-azure-stack-edge"></a>Развертывание Аналитики видеотрансляций в Azure Stack Edge
 
@@ -236,7 +236,7 @@ Azure Stack ребро — это решение "оборудование ка�
 
 * **Доступ к API Kubernetes (kubectl)**
 
-    * Следуйте инструкциям по настройке компьютера для доступа к [кластеру Kubernetes](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-gpu-create-kubernetes-cluster).
+    * Следуйте инструкциям по настройке компьютера для доступа к [кластеру Kubernetes](../../databox-online/azure-stack-edge-gpu-create-kubernetes-cluster.md).
     * Все развернутые модули IoT Edge используют `iotedge` пространство имен. Обязательно включите это при использовании kubectl.  
 
 * **Журналы модулей**
