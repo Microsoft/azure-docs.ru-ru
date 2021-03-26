@@ -2,19 +2,19 @@
 title: Учебник. Подключение и мониторинг метрик на уровне приложения Spark для Azure Synapse
 description: Учебник. Узнайте, как интегрировать имеющийся локальный сервер Prometheus с рабочей областью Azure Synapse, чтобы использовать метрики приложения Spark для Azure практически в реальном времени, с помощью соединителя Synapse для Prometheus.
 services: synapse-analytics
-author: hrasheed-msft
+author: julieMSFT
 ms.author: jejiang
 ms.reviewer: jrasnick
 ms.service: synapse-analytics
 ms.topic: tutorial
 ms.subservice: spark
 ms.date: 01/22/2021
-ms.openlocfilehash: cb27401b2925c800ebde3b554c076f0d8cb747ca
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 956d2f8f14b224609542783a8b18d3cdee43fff9
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104593022"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105035631"
 ---
 # <a name="tutorial-connect-and-monitor-azure-synapse-spark-application-level-metrics"></a>Учебник. Подключение и мониторинг метрик на уровне приложения Spark для Azure Synapse
 
@@ -152,7 +152,7 @@ python main.py
 | grant_type    | True     | Указывает запрашиваемый тип предоставления. В потоке предоставления учетных данных клиента этот параметр должен иметь значение client_credentials. |
 | client_id     | True     | Идентификатор приложения (субъекта-службы), зарегистрированного с помощью портала Azure или Azure CLI.        |
 | client_secret | True     | Секрет, созданный для приложения (субъекта-службы).                                                  |
-| ресурс      | True     | Универсальный код ресурса (URI) для ресурса Synapse, должен иметь значение https://dev.azuresynapse.net                                                  |
+| ресурс      | True     | Универсальный код ресурса (URI) Synapse должен иметь значение "https://dev.azuresynapse.net"                                                  |
 
 ```bash
 curl -X GET -H 'Content-Type: application/x-www-form-urlencoded' \

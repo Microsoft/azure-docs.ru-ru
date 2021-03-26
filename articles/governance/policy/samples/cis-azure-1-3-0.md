@@ -1,15 +1,15 @@
 ---
 title: Сведения о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure 1.3.0
 description: Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure 1.3.0. Каждый элемент управления сопоставляется с одним или несколькими определениями Политики Azure, которые помогают выполнять оценку.
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.topic: sample
 ms.custom: generated
-ms.openlocfilehash: 9c268e1146b61656ec3a98153c9bd9060075c93d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e359ae66e8dc34032e365af360020844ec8f66b8
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104604735"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105032486"
 ---
 # <a name="details-of-the-cis-microsoft-azure-foundations-benchmark-130-regulatory-compliance-built-in-initiative"></a>Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure 1.3.0.
 
@@ -217,7 +217,7 @@ ms.locfileid: "104604735"
 
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
-|[Серверы SQL должны хранить данные аудита не менее 90 дней](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F89099bee-89e0-4b26-a5f4-165451757743) |Для исследования инцидентов мы рекомендуем задать срок хранения данных аудита серверов как минимум 90 дней. Убедитесь, что выполняются необходимые правила хранения для регионов, в которых вы работаете. Иногда это необходимо для обеспечения соответствия нормативным стандартам. |AuditIfNotExists, Disabled |[2.1.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditingRetentionDays_Audit.json) |
+|[Для серверов SQL Server с аудитом в назначении учетной записи хранения следует настроить срок хранения длительностью 90 дней или более](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F89099bee-89e0-4b26-a5f4-165451757743) |Для исследования инцидентов мы рекомендуем задать срок хранения данных аудита SQL Server в назначении учетной записи хранения длительностью как минимум 90 дней. Убедитесь, что соблюдаются необходимые правила хранения для регионов, в которых вы работаете. Иногда это необходимо для обеспечения соответствия нормативным стандартам. |AuditIfNotExists, Disabled |[3.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditingRetentionDays_Audit.json) |
 
 ### <a name="ensure-that-advanced-threat-protection-atp-on-a-sql-server-is-set-to-enabled"></a>Обеспечение того, что для службы "Расширенная защита от угроз" на SQL сервере установлено значение "Включено"
 

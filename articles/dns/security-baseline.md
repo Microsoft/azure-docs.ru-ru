@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: b870a0325646b01ae3a72bdd28d3ae33cba45b09
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 64a93cfea9d470ba45e59a56d4855e374f7fb704
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101733131"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559933"
 ---
 # <a name="azure-security-baseline-for-azure-dns"></a>Базовый план безопасности Azure для Azure DNS
 
@@ -34,7 +34,7 @@ ms.locfileid: "101733131"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings)
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md)
 
 **Ответственность**: Customer
 
@@ -52,9 +52,9 @@ ms.locfileid: "101733131"
 
 **Рекомендации**. в Azure Monitor задайте срок хранения log Analytics рабочей области в соответствии с нормативными требованиями Организации. Используйте учетные записи хранения Azure для долгосрочного и архивного хранения.
 
-- [Изменение срока хранения данных в Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Изменение срока хранения данных в Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
-- [Настройка политики хранения для журналов учетных записей хранения Azure](/azure/storage/common/storage-monitor-storage-account#configure-logging)
+- [Настройка политики хранения для журналов учетных записей хранения Azure](../storage/common/manage-storage-analytics-logs.md#configure-logging)
 
 **Ответственность**: Customer
 
@@ -68,9 +68,9 @@ ms.locfileid: "101733131"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Приступая к работе с Log Analytics запросами](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Приступая к работе с Log Analytics запросами](../azure-monitor/logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
 **Ответственность**: Customer
 
@@ -86,7 +86,7 @@ ms.locfileid: "101733131"
 
 - [Управление оповещениями в центре безопасности Azure](../security-center/security-center-managing-and-responding-alerts.md)
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -102,11 +102,11 @@ ms.locfileid: "101733131"
 
 В Azure DNS существует роль участника зоны DNS, а также уровень зоны и уровень набора записей Azure RBAC. Кроме того, можно создать собственные пользовательские роли Azure, чтобы обеспечить более детальный контроль. Обратите внимание, что ресурсы зоны частных DNS используют другое имя роли, Частная зона DNS участника зоны.
 
-- [Как получить роль каталога в Azure Active Directory (Azure AD) с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrole?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить роль каталога в Azure Active Directory (Azure AD) с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole?preserve-view=true&view=azureadps-2.0)
 
-- [Как получить членов роли каталога в Azure AD с помощью PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0&amp;preserve-view=true)
+- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember?preserve-view=true&view=azureadps-2.0)
 
-- [Общие сведения об Azure RBAC в Azure DNS](https://docs.microsoft.com/azure/dns/dns-protect-zones-recordsets#azure-role-based-access-control)
+- [Общие сведения об Azure RBAC в Azure DNS](./dns-protect-zones-recordsets.md#azure-role-based-access-control)
 
 **Ответственность**: Customer
 
@@ -131,7 +131,7 @@ ms.locfileid: "101733131"
 
 Вы также можете включить JIT-доступ к учетным записям администратора с помощью Azure Active Directory (Azure AD) управление привилегированными пользователями и Azure Resource Manager.
 
-- [Дополнительные сведения о управление привилегированными пользователями](/azure/active-directory/privileged-identity-management/)
+- [Дополнительные сведения о управление привилегированными пользователями](../active-directory/privileged-identity-management/index.yml)
 
 - [Использование Политики Azure](../governance/policy/tutorials/create-and-manage.md)
 
@@ -213,7 +213,7 @@ ms.locfileid: "101733131"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверки подлинности и доступа Azure AD для эффективного управления членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверить регулярно, чтобы убедиться, что доступ к ним имеют только нужные пользователи.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure AD](../active-directory/governance/access-reviews-overview.md)
 
@@ -227,7 +227,7 @@ ms.locfileid: "101733131"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить нужные оповещения в Log Analytics рабочей области.
 
-- [Как интегрировать журналы действий Azure с Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure с Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -269,9 +269,9 @@ ms.locfileid: "101733131"
 
 Кроме того, можно создать собственные пользовательские роли Azure, чтобы обеспечить более детальный контроль. 
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md) 
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md) 
 
-- [Общие сведения об Azure RBAC в Azure DNS](https://docs.microsoft.com/azure/dns/dns-protect-zones-recordsets#azure-role-based-access-control)
+- [Общие сведения об Azure RBAC в Azure DNS](./dns-protect-zones-recordsets.md#azure-role-based-access-control)
 
 - [Общие сведения об Azure RBAC в Azure Частная зона DNS](dns-protect-private-zones-recordsets.md)
 
@@ -283,7 +283,7 @@ ms.locfileid: "101733131"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются для Azure DNS, а также для других важных или связанных ресурсов.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -301,7 +301,7 @@ ms.locfileid: "101733131"
 
 - [Как создавать запросы с помощью обозревателя Azure Resource Graph](../governance/resource-graph/first-query-portal.md)
 
-- [Просмотр подписок Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр подписок Azure](/powershell/module/az.accounts/get-azsubscription?preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
@@ -368,7 +368,7 @@ ms.locfileid: "101733131"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -392,7 +392,7 @@ ms.locfileid: "101733131"
 
 **Руководство**. Определение и реализация стандартных конфигураций безопасности для Azure DNS с помощью политики Azure. Используйте псевдонимы политик Azure в пространстве имен Microsoft. Network, чтобы создать настраиваемые политики для аудита или принудительного применения конфигурации хранилищ служб восстановления.
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?preserve-view=true&view=azps-4.8.0)
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
@@ -422,9 +422,9 @@ ms.locfileid: "101733131"
 
 **Рекомендации**. Если вы используете пользовательские определения политик Azure, используйте Azure DevOps или Azure Repos для безопасного хранения кода и управления им.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?preserve-view=true&view=azure-devops)
 
-- [Документация по Azure Repos](https://docs.microsoft.com/azure/devops/repos/?view=azure-devops&amp;preserve-view=true)
+- [Документация по Azure Repos](/azure/devops/repos/?preserve-view=true&view=azure-devops)
 
 **Ответственность**: Customer
 
@@ -520,7 +520,7 @@ ms.locfileid: "101733131"
 
 **Руководство**. Корпорация Майкрософт будет использовать информацию об инциденте безопасности для связи с вами, если центр Microsoft Security Response Center (MSRC) обнаружит, что к вашим данным был получен незаконный или несанкционированный доступ. Проверьте инциденты после факта обращения, чтобы убедиться в том, что проблемы устранены.
 
-- [Настройка контакта по безопасности в Центре безопасности Azure](../security-center/security-center-provide-security-contact-details.md)
+- [Как задать контакт безопасности Центра безопасности Azure](../security-center/security-center-provide-security-contact-details.md)
 
 **Ответственность**: Customer
 
@@ -566,5 +566,5 @@ ms.locfileid: "101733131"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

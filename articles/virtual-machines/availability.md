@@ -7,12 +7,12 @@ ms.service: virtual-machines
 ms.topic: conceptual
 ms.date: 03/08/2021
 ms.reviewer: cynthn
-ms.openlocfilehash: 1ea87d40430dbf3edabd557b80ab1456b49f4605
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 821c50b5cb48bddb586c3589326a7f31c7bafded
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102507880"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604538"
 ---
 # <a name="availability-options-for-azure-virtual-machines"></a>Варианты доступности для виртуальных машин Azure
 В этой статье представлен обзор вариантов доступности для виртуальных машин Azure.
@@ -54,9 +54,9 @@ ms.locfileid: "102507880"
 
 Site Recovery управляет репликацией для:
 - виртуальных машин Azure между регионами;
-- Локальные виртуальные машины, Azure Stack виртуальные машины и физические серверы.
+- Локальные виртуальные машины, виртуальные машины Azure Stack и физические серверы.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- [Создание виртуальной машины в зоне доступности](/linux/create-cli-availability-zone.md)
-- [Создание виртуальной машины в группе доступности](/linux/tutorial-availability.md)
+- [Создание виртуальной машины в зоне доступности](/azure/virtual-machines/linux/create-cli-availability-zone)
+- [Создание виртуальной машины в группе доступности](/azure/virtual-machines/linux/tutorial-availability-sets)
 - [Создание масштабируемого набора виртуальных машин](../virtual-machine-scale-sets/quick-create-portal.md)

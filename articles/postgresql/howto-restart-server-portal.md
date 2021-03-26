@@ -1,17 +1,17 @@
 ---
 title: Перезапуск сервера-портал Azure — база данных Azure для PostgreSQL — один сервер
 description: В этой статье описывается, как можно перезапустить базу данных Azure для PostgreSQL-Single Server с помощью портал Azure.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
 ms.date: 12/20/2020
-ms.openlocfilehash: faa61ff477f44347755890dc59ebf4b917afda6f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1a1afabd606df70ec60cf4fa7c8530ff95a0564f
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97882948"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604861"
 ---
 # <a name="restart-azure-database-for-postgresql---single-server-using-the-azure-portal"></a>Перезапустите базу данных Azure для PostgreSQL — один сервер с помощью портал Azure
 В этой статье объясняется, как перезапустить сервер в Базе данных Azure для PostgreSQL. Возможно, вам потребуется перезапустить сервер в целях обслуживания, что приводит к кратковременному отключению во время выполнения операции.
@@ -21,7 +21,7 @@ ms.locfileid: "97882948"
 > [!NOTE] 
 > Время, необходимое для завершения перезапуска, зависит от процесса восстановления PostgreSQL. Чтобы уменьшить время перезапуска, рекомендуем свести к минимуму объем действий, выполняемых на сервере перед перезапуском. Также может потребоваться увеличить частоту контрольных точек. Можно также настроить значения параметров, связанных с контрольной точкой `max_wal_size` , включая. Также рекомендуется выполнить `CHECKPOINT` команду перед перезапуском сервера.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 - [Сервер базы данных Azure для PostgreSQL](quickstart-create-server-database-portal.md)
 

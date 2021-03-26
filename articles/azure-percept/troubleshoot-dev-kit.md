@@ -5,25 +5,22 @@ author: mimcco
 ms.author: mimcco
 ms.service: azure-percept
 ms.topic: how-to
-ms.date: 02/18/2021
+ms.date: 03/25/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 313ea98da0426af945dfdea00d33440ab2955cc7
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: c9c62ec07873272b956877ec51d8765ae0bbd100
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105023084"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605643"
 ---
-# <a name="azure-percept-dk-dev-kit-troubleshooting"></a>Устранение неполадок в Azure Перцепт DK (комплект разработчика)
+# <a name="azure-percept-dk-troubleshooting"></a>Устранение неполадок Azure Перцепт DK
 
 Общие советы по устранению неполадок в Azure Перцепт DK см. в приведенных ниже руководствах.
 
 ## <a name="general-troubleshooting-commands"></a>Общие команды устранения неполадок
 
-Чтобы выполнить эти команды, 
-1. Подключение к [Wi-Fi AP пакета разработчика](./quickstart-percept-dk-set-up.md)
-1. [Подключение по протоколу SSH к комплекту разработки](./how-to-ssh-into-percept-dk.md)
-1. Введите команды в терминале SSH
+Чтобы выполнить эти команды, подключитесь к [пакету разработчика](./how-to-ssh-into-percept-dk.md) по протоколу SSH и введите команды в командной строке клиента SSH.
 
 Чтобы перенаправить выходные данные в txt-файл для дальнейшего анализа, используйте следующий синтаксис:
 
@@ -43,7 +40,7 @@ sudo chmod 666 [file name].txt
 scp [remote username]@[IP address]:[remote file path]/[file name].txt [local host file path]
 ```
 
-```[local host file path]``` относится к расположению на главном компьютере, куда нужно скопировать txt файл. ```[remote username]``` — Это имя пользователя SSH, выбранное во время [установки](./quickstart-percept-dk-set-up.md). Если вы не настроили вход SSH во время OOBE, имя удаленного пользователя — ```root``` .
+```[local host file path]``` относится к расположению на главном компьютере, куда нужно скопировать txt файл. ```[remote username]``` — Это имя пользователя SSH, выбранное во время [установки](./quickstart-percept-dk-set-up.md).
 
 Дополнительные сведения о Azure IoT Edge командах см. в [документации по устранению неполадок устройств Azure IOT Edge](../iot-edge/troubleshoot.md).
 
@@ -66,9 +63,9 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 |Azure IoT Edge          |```sudo journalctl -u iotedge -f``` |Просмотр журналов Azure IoT Edge диспетчера безопасности |
 |Azure IoT Edge          |```sudo systemctl restart iotedge``` |перезапуск управляющей программы Azure IoT Edge Security |
 |Azure IoT Edge          |```sudo iotedge list```           |Вывод списка развернутых модулей Azure IoT Edge |
-|Другие             |```df [option] [file]```          |Отображение сведений о доступном или общем пространстве в указанных файловых системах |
-|Другие             |`ip route get 1.1.1.1`        |Отображение сведений об IP-адресе устройства и интерфейсе |
-|Другие             |<code>ip route get 1.1.1.1 &#124; awk '{print $7}'</code> <br> `ifconfig [interface]` |отображать только IP-адрес устройства |
+|Другое             |```df [option] [file]```          |Отображение сведений о доступном или общем пространстве в указанных файловых системах |
+|Другое             |`ip route get 1.1.1.1`        |Отображение сведений об IP-адресе устройства и интерфейсе |
+|Другое             |<code>ip route get 1.1.1.1 &#124; awk '{print $7}'</code> <br> `ifconfig [interface]` |отображать только IP-адрес устройства |
 
 
 ```journalctl```Wi-Fi команды могут быть объединены в следующую одну команду:
@@ -88,11 +85,11 @@ sudo journalctl -u hostapd.service -u wpa_supplicant.service -u ztpd.service -u 
 |```sudo docker image prune``` |[Удаляет все висячие образы](https://docs.docker.com/engine/reference/commandline/image_prune/) |
 |```sudo watch docker ps``` <br> ```watch ifconfig [interface]``` |Проверка состояния скачивания контейнера DOCKER |
 
-## <a name="usb-updating"></a>Обновление USB
+## <a name="usb-updates"></a>Обновления USB
 
 |Ошибка:                                    |Решение.                                               |
 |------------------------------------------|--------------------------------------------------------|
-|LIBUSB_ERROR_XXX во время USB флэш-памяти через ууу |Эта ошибка возникает вследствие сбоя подключения USB во время обновления УУУ. Если USB-кабель неправильно подключен к портам USB на компьютере или 10 раз PE, произойдет ошибка этой формы. Попробуйте отключить и повторно подключить оба конца USB-кабеля и жигглинг кабель, чтобы обеспечить безопасное подключение. Это почти всегда решает проблему. |
+|LIBUSB_ERROR_XXX во время USB флэш-памяти через ууу |Эта ошибка возникает вследствие сбоя подключения USB во время обновления УУУ. Если USB-кабель неправильно подключен к USB-портам на компьютере или на плате перевозчика Перцепт DK, произойдет ошибка этой формы. Попробуйте отключить и повторно подключить оба конца USB-кабеля и жигглинг кабель, чтобы обеспечить безопасное подключение. Это почти всегда решает проблему. |
 
 ## <a name="azure-percept-dk-carrier-board-led-states"></a>Индикаторы на плате перевозчика Azure Перцепт DK
 

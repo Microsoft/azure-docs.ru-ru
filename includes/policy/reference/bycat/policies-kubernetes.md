@@ -2,18 +2,19 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: c57db8f55eb831f2da1b839c4dc5d4a7287ac6b6
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b2b9bad685bc26b0da4ba6eabe0785b112ff0a20
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104605555"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105033619"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
+|[\[Предварительная версия:\] в кластерах Kubernetes с поддержкой Azure Arc должно быть установлено расширение Azure Defender](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F8dfab9c4-fe7b-49ad-85e4-1e9be085358f) |Расширение Azure Defender для Azure Arc обеспечивает защиту от угроз для кластеров Kubernetes с поддержкой Arc. Расширение собирает данные из всех (главных) узлов уровня управления в кластере и отправляет их в серверную часть Azure Defender для Kubernetes в облаке для дальнейшего анализа. Дополнительные сведения см. по адресу [https://docs.microsoft.com/azure/security-center/defender-for-kubernetes-azure-arc](https://docs.microsoft.com/azure/security-center/defender-for-kubernetes-azure-arc). |AuditIfNotExists, Disabled |[1.0.0 (предварительная версия)](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Kubernetes/ASC_Audit_Azure_Defender_Kubernetes_Arc_Extension.json) |
 |[Частные кластеры Службы Azure Kubernetes должны быть включены](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F040732e8-d947-40b8-95d6-854c95024bf8) |Включение функции частных кластеров для кластера Службы Azure Kubernetes для гарантии того, что сетевой трафик между сервером API и пулами узлов останется внутри частной сети. Это общее требование для многих нормативных и отраслевых стандартов соответствия. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Kubernetes/AKS_PrivateCluster_Deny.json) |
 |[В ваших кластерах должна быть установлена и включена надстройка службы "Политика Azure" для службы Kubernetes (AKS)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0a15ec92-a229-4763-bb14-0ea34a568f8d) |Надстройка службы "Политика Azure" для службы Kubernetes (AKS) расширяет возможности Gatekeeper версии 3, представляющего собой веб-перехватчик контроллера допуска для Open Policy Agent (OPA), чтобы централизованным и согласованным образом применить правила и меры безопасности для кластеров в требуемом масштабе. |Audit, Disabled |[1.0.2](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Kubernetes/AKS_AzurePolicyAddOn_Audit.json) |
 |[Операционные системы и диски данных в кластерах Службы Azure Kubernetes должны быть зашифрованы с помощью ключей, управляемых клиентом](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F7d7be79c-23ba-4033-84dd-45e2a5ccdd67) |Шифрование дисков ОС и данных с помощью ключей, управляемых клиентом, обеспечивает больший контроль и большую гибкость в управлении ключами. Это общее требование для многих нормативных и отраслевых стандартов соответствия. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Kubernetes/AKS_CMK_Deny.json) |

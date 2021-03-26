@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Присоединение к конференции Teams из приложения Android
-description: В этом учебнике описывается, как присоединиться к конференции Teams с помощью клиентской библиотеки для вызовов Служб коммуникации Azure для Android.
+description: В этом руководстве описывается, как присоединиться к конференции Teams с помощью пакета SDK для вызовов Служб коммуникации Azure для Android.
 author: chpalm
 ms.author: mikben
 ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 82e64af5cec8641abacf5afa323fc38382a124c4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e5361b92c2080c724b872be2ad27bc5bd4554e8d
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103488019"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105108209"
 ---
-В этом кратком руководстве описывается, как присоединиться к конференции Teams с помощью клиентской библиотеки для вызовов Служб коммуникации Azure для Android.
+В этом кратком руководстве описывается, как присоединиться к конференции Teams с помощью пакета SDK для вызовов Служб коммуникации Azure для Android.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -254,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
 ## <a name="get-the-teams-meeting-link"></a>Получение ссылки на собрание Teams
 
 Ссылку на собрание Teams можно получить с помощью интерфейсов API Graph. Это действие подробно описано в [документации по Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta).
-Клиентская библиотека для вызовов Служб коммуникации принимает полную ссылку на собрание в Teams. Эта ссылка возвращается как часть ресурса `onlineMeeting`, доступного под [свойством `joinWebUrl`](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Вы также можете получить необходимую информацию о собрании по URL-адресу **Присоединиться к собранию** в самом приглашении на собрание Teams.
+Пакет SDK вызовов Служб коммуникации принимает полную ссылку на собрание Teams. Эта ссылка возвращается как часть ресурса `onlineMeeting`, доступного под [свойством `joinWebUrl`](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Вы также можете получить необходимую информацию о собрании по URL-адресу **Присоединиться к собранию** в самом приглашении на собрание Teams.
 
 ## <a name="launch-the-app-and-join-teams-meeting"></a>Запуск приложения и присоединение к собранию в Teams
 

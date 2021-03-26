@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: f087209cf7368f2051bae87bf79e7d485a278137
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d3639f04cbfbef85585978cf1cd14128ae1d4748
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104605640"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105033699"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
@@ -25,5 +25,5 @@ ms.locfileid: "104605640"
 |[Управляемая виртуальная сеть рабочей области в рабочих областях Azure Synapse должна быть включена](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2d9dbfa3-927b-4cf0-9d0f-08747f971650) |Включение управляемой виртуальной сети рабочей области гарантирует, что ваша рабочая область будет изолирована от других областей. Интеграции данных и ресурсы Spark, развернутые в этой виртуальной сети, также обеспечивают изоляцию на уровне пользователей для действий Spark. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceManagedVnet_Audit.json) |
 |[Управляемые частные конечные точки Synapse должны подключаться только к ресурсам в утвержденных клиентах Azure Active Directory](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F3a003702-13d2-4679-941b-937e58c443f0) |Защитите рабочую область Synapse, разрешив подключения только к ресурсам утвержденных клиентов Azure Active Directory. Утвержденные клиенты Azure AD можно определить во время назначения политики. |Audit, Disabled, Deny |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/Workspace_DataExfiltrationPrevention_Deny.json) |
 |[В параметрах аудита рабочей области Synapse должны быть настроены группы для регистрации критических действий](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2b18f286-371e-4b80-9887-04759970c0d3) |Чтобы сделать журналы аудита максимально подробными, включите в свойство AuditActionsAndGroups все соответствующие группы. Рекомендуем добавить по меньшей мере группы SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP, FAILED_DATABASE_AUTHENTICATION_GROUP и BATCH_COMPLETED_GROUP. Иногда это необходимо для обеспечения соответствия нормативным стандартам. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceSqlAuditing_ActionsAndGroups_Audit.json) |
-|[Для рабочих областей Synapse должно быть настроено хранение данных аудита сроком как минимум 90 дней.](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F529ea018-6afc-4ed4-95bd-7c9ee47b00bc) |Для исследования инцидентов мы рекомендуем задать срок хранения данных аудита рабочих областей Synapse как минимум в 90 дней. Убедитесь, что соблюдаются необходимые правила хранения для регионов, в которых вы работаете. Иногда это необходимо для обеспечения соответствия нормативным стандартам. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceSqlAuditingRetentionDays_Audit.json) |
+|[Для рабочих областей Synapse с аудитом SQL в назначении учетной записи хранения следует настроить срок хранения длительностью 90 дней или более](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F529ea018-6afc-4ed4-95bd-7c9ee47b00bc) |Для исследования инцидентов мы рекомендуем задать срок хранения данных аудита SQL рабочих областей Synapse в назначении учетной записи хранения длительностью как минимум 90 дней. Убедитесь, что соблюдаются необходимые правила хранения для регионов, в которых вы работаете. Иногда это необходимо для обеспечения соответствия нормативным стандартам. |AuditIfNotExists, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceSqlAuditingRetentionDays_Audit.json) |
 |[В рабочих областях Synapse должна быть включена оценка уязвимостей](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0049a6b3-a662-4f3e-8635-39cf44ace45a) |Обнаруживайте, отслеживайте и устраняйте потенциальные уязвимости, настроив регулярную оценку уязвимостей SQL для рабочих областей Synapse. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/ASC_SQLVulnerabilityAssessmentOnSynapse_Audit.json) |

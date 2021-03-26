@@ -6,12 +6,12 @@ author: NumberByColors
 ms.author: daviste
 ms.date: 09/19/2018
 ms.reviewer: mbullwin
-ms.openlocfilehash: ab2c56b5e5cfc3dcb7411db27e7faabb2589be6c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: bfe197befc781548dc41ff389f2d9558af7a8aae
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101704333"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567408"
 ---
 # <a name="monitor-resource-groups-with-azure-monitor-preview"></a>Мониторинг групп ресурсов с помощью Azure Monitor (предварительная версия)
 
@@ -43,7 +43,7 @@ ms.locfileid: "101704333"
 
 Страница аналитических сведений о группе ресурсов содержит несколько других инструментов, которые помогут диагностировать неполадки.
 
-   |         |          |
+   | Средство | Описание |
    | ---------------- |:-----|
    | [**Оповещения**](../alerts/alerts-overview.md)      |  Просмотр, создание оповещений и управление ими. |
    | [**Метрики**](../data-platform.md) | Визуализация и просмотр данных на основе метрик.    |

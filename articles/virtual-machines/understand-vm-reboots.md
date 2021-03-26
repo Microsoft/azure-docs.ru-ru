@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 03/08/2021
 ms.author: mimckitt
 ms.reviewer: cynthn
-ms.openlocfilehash: af371a8f7da5ef32e95d4096b69c5d52ce3e3700
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 9342e0c39b558cf8b6ff5773d623ce55062f9ab5
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102510584"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105607479"
 ---
 # <a name="understand-vm-reboots---maintenance-vs-downtime"></a>Общие сведения о перезагрузках виртуальных машин — обслуживание и простои
 Существует три сценария, которые могут привести к влиянию виртуальных машин в Azure: незапланированное обслуживание оборудования, непредвиденное время простоя и плановое обслуживание.
@@ -34,7 +34,7 @@ ms.locfileid: "102510584"
 
 * Использование [зоны доступности](../availability-zones/az-overview.md) для защиты от сбоев центра обработки данных
 * Настройка нескольких виртуальных машин в [группе доступности](availability-set-overview.md) для обеспечения избыточности
-* Использование [запланированных событий для Linux](/linux/scheduled-events.md) или [запланированных событий Windows](/windows/scheduled-events.md) для упреждающего реагирования на события, влияющие на виртуальные машины
+* Использование [запланированных событий для Linux](/azure/virtual-machines/linux/scheduled-events) или [запланированных событий Windows](/azure/virtual-machines/windows/scheduled-events) для упреждающего реагирования на события, влияющие на виртуальные машины
 * Настройка каждого уровня приложений в отдельных группах доступности
 * Объединение [подсистемы балансировки нагрузки](../load-balancer/load-balancer-overview.md) с зонами или наборами доступности
 

@@ -10,14 +10,14 @@ ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 01/15/2021
-ms.author: mbaldwin
-ms.openlocfilehash: 85aa9d355b2440535ea13c8c15e95500bac22352
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.author: keithp
+ms.openlocfilehash: c46ccbda35936ed94079a21e3e9c72405875b961
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98567261"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105608873"
 ---
 # <a name="azure-dedicated-hsm-high-availability"></a>Высокая доступность выделенного устройства HSM Azure
 
@@ -25,7 +25,7 @@ ms.locfileid: "98567261"
 
 ## <a name="high-availability-example"></a>Пример высокого уровня доступности
 
-Сведения о настройке устройств HSM для высокой доступности на уровне программного обеспечения см. в разделе Руководство по администрированию HSM Thales Luna 7. Этот документ доступен на  [странице HSM Thales](https://thalesdocs.com/gphsm/Content/luna/network/luna_network_releases.htm).
+Сведения о настройке устройств HSM для высокой доступности на уровне программного обеспечения см. в разделе Руководство по администрированию HSM Thales Luna 7. Этот документ доступен на  [странице HSM Thales](https://cpl.thalesgroup.com/encryption/hardware-security-modules/network-hsms).
 
 На следующей схеме показана архитектура с высоким уровнем доступности. В ней используются несколько устройств в регионе и несколько устройств, связанных в отдельном регионе. В этой архитектуре используются как минимум четыре устройства HSM и компоненты виртуальной сети.
 
@@ -42,4 +42,4 @@ ms.locfileid: "98567261"
 * [Возможности поддержки](supportability.md)
 * [Мониторинг](monitoring.md)
 
-Подробные сведения о настройке устройств HSM для обеспечения высокого уровня доступности см. на портале поддержки клиентов Thales для руководства администратора и в разделе 6.
+Подробные сведения о настройке устройств HSM для обеспечения высокого уровня доступности см. на [портале поддержки клиентов Thales](https://supportportal.thalesgroup.com/csm) для руководства администратора и в разделе 6.

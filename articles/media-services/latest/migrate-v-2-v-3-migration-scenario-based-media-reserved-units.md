@@ -7,14 +7,14 @@ manager: femila
 ms.service: media-services
 ms.topic: conceptual
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: 5ca01bcea348b866c0f40f82ebe90dc31d032739
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 00e1fa623fc625a568f6580998443758c3916be8
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98927078"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563078"
 ---
 # <a name="media-reserved-units-mrus-scenario-based-migration-guidance"></a>Руководство по миграции на основе сценариев зарезервированных единиц мультимедиа (Мрус)
 
@@ -48,7 +48,3 @@ ms.locfileid: "98927078"
 ## <a name="samples"></a>Примеры
 
 Кроме того, можно [сравнить код v2 и v3 в примерах кода](migrate-v-2-v-3-migration-samples.md).
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

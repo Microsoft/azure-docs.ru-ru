@@ -5,15 +5,15 @@ author: vermagit
 ms.service: virtual-machines
 ms.subservice: hpc
 ms.topic: article
-ms.date: 03/18/2021
+ms.date: 03/25/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 297bc24c570298dddf10a101a0c0c528bddecc10
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: d8c3a2d961cc5b6fd719b77dae07b6e46c3d8b65
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889830"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604844"
 ---
 # <a name="known-issues-with-h-series-and-n-series-vms"></a>Известные проблемы с виртуальными машинами серий H и N
 
@@ -24,9 +24,18 @@ ms.locfileid: "104889830"
 Временное решение — использование **канонического образа: UbuntuServer: 18_04-LTS-Gen2:18.04.202101290** Marketplace или более ранней версии, а не для обновления ядра.
 Эта проблема должна быть решена с помощью более новой МОФЕД (подлежит уточнению).
 
-## <a name="known-issues-on-hbv3"></a>Известные проблемы в HBv3
-- В настоящее время InfiniBand поддерживается только на виртуальной машине 120 Core (Standard_HB120rs_v3).
-- Сейчас Ускоренная сеть Azure не поддерживается в серии HBv3 во всех регионах.
+## <a name="mpi-qp-creation-errors"></a>Ошибки создания QP MPI
+Если при выполнении любой рабочей нагрузки MPI выдается ошибка создания QP, как показано ниже, мы рекомендуем перезагрузить виртуальную машину и повторить рабочую нагрузку. Эта проблема будет исправлена в будущем.
+
+```bash
+ib_mlx5_dv.c:150  UCX  ERROR mlx5dv_devx_obj_create(QP) failed, syndrome 0: Invalid argument
+```
+
+Вы можете проверить значения максимального числа пар очередей при обнаружении проблемы следующим образом.
+```bash
+[user@azurehpc-vm ~]$ ibv_devinfo -vv | grep qp
+max_qp: 4096
+```
 
 ## <a name="accelerated-networking-on-hb-hc-hbv2-and-ndv2"></a>Ускорение работы в сети на хб, HC, HBv2 и NDv2
 

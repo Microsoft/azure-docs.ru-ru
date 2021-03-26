@@ -10,14 +10,14 @@ ms.devlang: multiple
 ms.topic: conceptual
 ms.tgt_pltfrm: multiple
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: 831bc737fbd54685cdc8358642bc37e7b2df2c42
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5f3c6526139389da3bfdbc3c43cf8b6d2a1dbccf
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98953722"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567973"
 ---
 # <a name="api-access-differences-between-azure-media-services-v2-to-v3-api"></a>Различия в доступе API между службами мультимедиа Azure версии 2 и V3 API
 
@@ -36,6 +36,8 @@ ms.locfileid: "98953722"
 
 Доступ к API v2 будет доступен до тех пор, пока не будет снят с учета в 2024.
 
+## <a name="create-a-v3-account"></a>Создание учетной записи v3
+
 Во время миграции можно создать учетную запись v3, которая по-прежнему имеет доступ к v2.  Создание учетной записи может осуществляться с помощью следующих действий.
 
 - REST API и более ранние версии
@@ -48,7 +50,3 @@ ms.locfileid: "98953722"
 
 > [!NOTE]
 > Новые учетные записи, созданные с помощью API 2020-05-01, не могут использовать API v2.
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

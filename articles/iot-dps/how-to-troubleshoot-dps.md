@@ -8,12 +8,12 @@ services: iot-dps
 ms.topic: conceptual
 ms.date: 02/14/2021
 ms.author: xujing
-ms.openlocfilehash: ba81be54592e591f734b05235bb3ce183a07a11c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 73a785ee3975245ecd97f8c8aab77acc796a4e36
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101709892"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568024"
 ---
 # <a name="troubleshooting-with-azure-iot-hub-device-provisioning-service"></a>Устранение неполадок с помощью службы подготовки устройств для центра Интернета вещей Azure
 
@@ -44,7 +44,7 @@ ms.locfileid: "101709892"
 
 7. Выберите **Добавить условие**, затем выберите нужную метрику и пороговое значение, следуя инструкциям.
 
-Дополнительные сведения см. [в разделе Alerts in Azure Monitor](../azure-monitor/platform/alerts-overview.md).
+Дополнительные сведения см. [в разделе Alerts in Azure Monitor](../azure-monitor/alerts/alerts-overview.md).
 
 ## <a name="using-log-analytic-to-view-and-resolve-errors"></a>Использование аналитики журналов для просмотра и устранения ошибок
 

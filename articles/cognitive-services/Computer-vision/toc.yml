@@ -48,13 +48,13 @@
     - name: Анализ видео в реальном времени
       href: Vision-API-How-to-Topics/HowtoAnalyzeVideo_Vision.md
     - name: Как настроить виртуальные сети
-      href: /azure/cognitive-services/cognitive-services-virtual-networks?context=/azure/cognitive-services/computer-vision/context/context
+      href: ../cognitive-services-virtual-networks.md?context=%2fazure%2fcognitive-services%2fcomputer-vision%2fcontext%2fcontext
     - name: "Обновление Read версии\_2.x до версии\_3.x"
       href: upgrade-api-versions.md
     - name: Как настроить проверку подлинности AAD
-      href: /azure/cognitive-services/authentication?tabs=powershell?context=/azure/cognitive-services/computer-vision/context/context
+      href: ../authentication.md?tabs=powershell%3fcontext%3d%2fazure%2fcognitive-services%2fcomputer-vision%2fcontext%2fcontext
     - name: 'Как использовать ключи, управляемые клиентом'
-      href: /azure/cognitive-services/encryption/cognitive-services-encryption-keys-portal?context=/azure/cognitive-services/computer-vision/context/context
+      href: ../encryption/cognitive-services-encryption-keys-portal.md?context=%2fazure%2fcognitive-services%2fcomputer-vision%2fcontext%2fcontext
     - name: Развертывание Компьютерного зрения
       items:
         - name: Контейнеры
@@ -155,7 +155,7 @@
     - name: Поддержка регионов
       href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Модули LEARN
-      href: 'https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/'
+      href: /learn/paths/explore-computer-vision-microsoft-azure/
     - name: Поддержка и справка
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/computer-vision/context/context
     - name: Соответствие требованиям

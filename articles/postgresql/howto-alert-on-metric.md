@@ -1,17 +1,17 @@
 ---
 title: Настройка оповещений. портал Azure. база данных Azure для PostgreSQL — один сервер
 description: В этой статье описывается, как настроить оповещения метрик для базы данных Azure для PostgreSQL-Single Server и получить доступ к ним из портал Azure.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
 ms.date: 5/6/2019
-ms.openlocfilehash: 1b4c10d152afba708eb176e89355ed31ec809168
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b6256dc69e65f86a8619f8647652f40ee11f325f
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100586751"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604249"
 ---
 # <a name="use-the-azure-portal-to-set-up-alerts-on-metrics-for-azure-database-for-postgresql---single-server"></a>Используйте портал Azure, чтобы настроить оповещения о метриках для базы данных Azure для PostgreSQL — один сервер.
 

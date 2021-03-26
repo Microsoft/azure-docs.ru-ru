@@ -1,22 +1,22 @@
 ---
 title: Настройка параметров сервера — портал Azure — "база данных Azure для PostgreSQL" — "один сервер"
 description: В этой статье описывается, как настроить параметры postgres в базе данных Azure для PostgreSQL с помощью портал Azure.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
 ms.date: 02/28/2018
-ms.openlocfilehash: e1b40e3116d56e87a2f397350ef2ba5510e04c0c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2e9cecc03c1240d625fa8f6bbdcd633ada978082
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91707699"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604215"
 ---
 # <a name="configure-server-parameters-in-azure-database-for-postgresql---single-server-via-the-azure-portal"></a>Настройка параметров сервера в базе данных Azure для PostgreSQL — Single Server с помощью портал Azure 
 С помощью портала Azure можно вывести список параметров конфигурации для сервера базы данных Azure для PostgreSQL, а также отобразить и обновить их.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 Чтобы приступить к выполнению этого руководства, вам потребуются следующие компоненты:
 - [сервер базы данных Azure для PostgreSQL](quickstart-create-server-database-portal.md).
 

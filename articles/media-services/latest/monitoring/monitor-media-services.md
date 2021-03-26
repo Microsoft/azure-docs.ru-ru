@@ -6,13 +6,14 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
+ms.custom: subject-monitoring
 ms.date: 03/17/2021
-ms.openlocfilehash: 783d9e1b4ab86f6580cf3418a0676921aef2db6a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 90ca92dc19c588d0b19adf009301cf844e0cdbde
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104598207"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609062"
 ---
 # <a name="monitor-media-services"></a>Мониторинг служб мультимедиа
 
@@ -37,9 +38,9 @@ robb@microsoft.com -->
 
 ## <a name="what-is-azure-monitor"></a>Общие сведения об Azure Monitor
 
-Службы мультимедиа создают данные мониторинга с помощью [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview). это полная служба мониторинга стека в Azure, которая предоставляет полный набор функций для мониторинга ресурсов Azure в дополнение к ресурсам в других облаках и локальных средах.
+Службы мультимедиа создают данные мониторинга с помощью [Azure Monitor](../../../azure-monitor/overview.md). это полная служба мониторинга стека в Azure, которая предоставляет полный набор функций для мониторинга ресурсов Azure в дополнение к ресурсам в других облаках и локальных средах.
 
-Начните с чтения статьи [мониторинг ресурсов Azure с помощью Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/monitor-azure-resource), в котором описаны следующие понятия.
+Начните с чтения статьи [мониторинг ресурсов Azure с помощью Azure Monitor](../../../azure-monitor/essentials/monitor-azure-resource.md), в котором описаны следующие понятия.
 
 - Общие сведения об Azure Monitor
 - затраты, связанные с мониторингом;
@@ -49,7 +50,7 @@ robb@microsoft.com -->
 
 ## <a name="monitoring-data"></a>Данные мониторинга
 
-Службы мультимедиа собирают те же данные мониторинга, что и другие ресурсы Azure, описанные в разделе [мониторинг данных из ресурсов Azure](https://docs.microsoft.com/azure/azure-monitor/insights/monitor-azure-resource#monitoring-data-from-Azure-resources).
+Службы мультимедиа собирают те же данные мониторинга, что и другие ресурсы Azure, описанные в разделе [мониторинг данных из ресурсов Azure](../../../azure-monitor/essentials/monitor-azure-resource.md#monitoring-data).
 
 Все данные, собираемые службой Azure Monitor, соответствуют одному из двух основных типов, то есть представляют собой метрики или журналы. С помощью этих двух типов можно:
 
@@ -69,13 +70,13 @@ robb@microsoft.com -->
 
 *Журналы ресурсов* не собираются и не сохраняются, пока вы не создадите параметр диагностики и **не** направите их в одно или несколько расположений.
 
-Подробный процесс создания параметров диагностики с помощью портал Azure, CLI или PowerShell см. в статье [Создание параметра диагностики для сбора журналов и метрик платформы в Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) .
+Подробный процесс создания параметров диагностики с помощью портал Azure, CLI или PowerShell см. в статье [Создание параметра диагностики для сбора журналов и метрик платформы в Azure](../../../azure-monitor/essentials/diagnostic-settings.md) .
 
 Создавая параметр диагностики, нужно указать, какие категории журналов должны собираться. Категории для служб мультимедиа перечислены в [справочнике по данным мониторинга служб мультимедиа](monitor-media-services-data-reference.md).
 
 ## <a name="analyzing-metrics"></a>Анализ метрик
 
-Вы можете анализировать метрики для служб мультимедиа с метриками из других служб Azure, используя обозреватель метрик, открыв **метрики** из меню **Azure Monitor** . Подробные сведения об использовании этого средства см. в статье [Начало работы с обозревателем метрик Azure](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-getting-started).
+Вы можете анализировать метрики для служб мультимедиа с метриками из других служб Azure, используя обозреватель метрик, открыв **метрики** из меню **Azure Monitor** . Подробные сведения об использовании этого средства см. в статье [Начало работы с обозревателем метрик Azure](../../../azure-monitor/essentials/metrics-getting-started.md).
 
 Список метрик, собранных для служб мультимедиа, см. в разделе [мониторинг справочника по данным служб мультимедиа](monitor-media-services-data-reference.md).
 
@@ -83,11 +84,11 @@ robb@microsoft.com -->
 
 Данные в журналах Azure Monitor хранятся в таблицах, и каждая таблица имеет собственный набор уникальных свойств.  
 
-Все журналы ресурсов в Azure Monitor имеют те же поля, за которыми следуют поля, связанные со службой. Общая схема описана в [Azure Monitor схеме журнала ресурсов](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema).
+Все журналы ресурсов в Azure Monitor имеют те же поля, за которыми следуют поля, связанные со службой. Общая схема описана в [Azure Monitor схеме журнала ресурсов](../../../azure-monitor/essentials/resource-logs-schema.md#top-level-common-schema).
 
 Схема журналов ресурсов служб мультимедиа находится в [справочнике по данным служб мультимедиа](monitor-media-services-data-reference.md).
 
-[Журнал действий](https://docs.microsoft.com/azure/azure-monitor/platform/activity-log) — это журнал платформы в Azure, который предоставляет подробные сведения о событиях уровня подписки. Вы можете просмотреть их независимо или направить в журналы Azure Monitor, где можно выполнять гораздо более сложные запросы с помощью Log Analytics.
+[Журнал действий](../../../azure-monitor/essentials/activity-log.md) — это журнал платформы в Azure, который предоставляет подробные сведения о событиях уровня подписки. Вы можете просмотреть их независимо или направить в журналы Azure Monitor, где можно выполнять гораздо более сложные запросы с помощью Log Analytics.
 
 Список типов журналов ресурсов, собранных для служб мультимедиа, см. в разделе [мониторинг справочника по данным служб мультимедиа](monitor-media-services-data-reference.md).
 
@@ -102,7 +103,7 @@ robb@microsoft.com -->
 
 ## <a name="alerts"></a>видны узлы
 
-Оповещения Azure Monitor заблаговременно уведомляют вас при обнаружении важных условий в данных мониторинга. Они позволяют выявлять и устранять проблемы в системе до того, как ваши клиенты заметят их. Оповещения можно настроить для [метрик](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-overview), [журналов](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-unified-log) и [журнала действий](https://docs.microsoft.com/azure/azure-monitor/platform/activity-log-alerts).
+Оповещения Azure Monitor заблаговременно уведомляют вас при обнаружении важных условий в данных мониторинга. Они позволяют выявлять и устранять проблемы в системе до того, как ваши клиенты заметят их. Оповещения можно настроить для [метрик](../../../azure-monitor/alerts/alerts-metric-overview.md), [журналов](../../../azure-monitor/alerts/alerts-unified-log.md) и [журнала действий](../../../azure-monitor/alerts/activity-log-alerts.md).
 
 Метрики служб мультимедиа собираются с регулярными интервалами независимо от того, изменяется ли значение. Они полезны для оповещений, так как их можно часто выдавать. Предупреждение может быть быстро запущено с относительно простой логикой.
 

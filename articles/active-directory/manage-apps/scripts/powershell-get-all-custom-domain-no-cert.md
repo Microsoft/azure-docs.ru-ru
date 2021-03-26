@@ -11,14 +11,14 @@ ms.topic: sample
 ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
-ms.openlocfilehash: 7be5732b4e8897a9bc993b4e84b781e5f39bce55
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: f4b661ee66d3fb045dfa4891f1f1c1643927167c
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102565620"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105044079"
 ---
-# <a name="get-all-azure-ad-proxy-application-apps-published-with-no-certificate-uploaded"></a>Получение всех опубликованных приложений прокси приложений Azure AD, для которых не отправлены сертификаты
+# <a name="get-all-application-proxy-apps-published-with-no-certificate-uploaded"></a>Получение сведений обо всех опубликованных приложений Application Proxy, для которых не отправлены сертификаты
 
 Этот пример скрипта PowerShell выводит данные обо всех приложениях Azure Active Directory (Azure AD) Application Proxy, использующих личные домены, но не имеющих действительного TLS/SSL-сертификата.
 

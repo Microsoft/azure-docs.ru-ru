@@ -10,16 +10,16 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: f3da6fd75ac485a3e22a428934928795f1feae28
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 07aa1cb361f5f1853dbf93e5f4e064b1ed14f1de
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103487951"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105152766"
 ---
 [!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
 
-Пример **Group Calling Hero Sample** Служб коммуникации Azure демонстрирует, как использовать клиентскую библиотеку веб-вызовов Служб коммуникации для создания группового вызова.
+**Главный пример функции группового вызова** Служб коммуникации Azure демонстрирует, как создать возможность группового вызова с помощью веб-пакета SDK для вызовов Служб коммуникации.
 
 Из краткого руководства мы узнаем, как работает пример и запустим его на локальном компьютере. Затем мы развернем пример в Azure с помощью собственных ресурсов Служб коммуникации Azure.
 
@@ -96,7 +96,7 @@ ms.locfileid: "103487951"
 
 Дополнительные сведения см. в следующих статьях:
 
-- Изучите, как правильно [использовать клиентскую библиотеку вызовов](../../quickstarts/voice-video-calling/calling-client-samples.md).
+- Узнайте, как правильно [использовать пакет SDK для вызовов](../../quickstarts/voice-video-calling/calling-client-samples.md).
 - Узнайте больше о [принципе работы функции вызовов](../../concepts/voice-video-calling/about-call-types.md).
 
 ### <a name="additional-reading"></a>Дополнительные материалы

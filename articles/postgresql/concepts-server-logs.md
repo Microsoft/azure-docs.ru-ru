@@ -1,17 +1,17 @@
 ---
 title: Журналы — база данных Azure для PostgreSQL — один сервер
 description: Описание конфигурации ведения журнала, хранилища и анализа в базе данных Azure для PostgreSQL — Single Server
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 06/25/2020
-ms.openlocfilehash: 621d5a6a91a8c22c52e6febc7c2638571f5bf113
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 31b3c0a1894280e90f696f6c107b67a3af7b1880
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100595809"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605354"
 ---
 # <a name="logs-in-azure-database-for-postgresql---single-server"></a>Журналы в базе данных Azure для PostgreSQL — один сервер
 
@@ -103,7 +103,7 @@ AzureDiagnostics
 | TenantId | Идентификатор клиента |
 | SourceSystem | `Azure` |
 | TimeGenerated [UTC] | Метка времени, когда журнал был записан в формате UTC |
-| Type | Тип журнала Всегда `AzureDiagnostics`. |
+| Тип | Тип журнала Всегда `AzureDiagnostics`. |
 | SubscriptionId | Идентификатор GUID для подписки, принадлежащей серверу |
 | ResourceGroup | Имя группы ресурсов, принадлежащей серверу |
 | ResourceProvider | Имя поставщика ресурсов. Всегда `MICROSOFT.DBFORPOSTGRESQL`. |

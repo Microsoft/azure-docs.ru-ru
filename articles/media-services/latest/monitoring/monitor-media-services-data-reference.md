@@ -6,17 +6,18 @@ ms.author: inhenkel
 manager: femila
 ms.topic: reference
 ms.service: media-services
+ms.custom: subject-monitoring
 ms.date: 03/17/2021
-ms.openlocfilehash: 866b2faf473f06fc3f85cdb434d6555504a7f6a8
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 66fce608515d16c5418ddd18e00319a3cbf088f7
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104598190"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609094"
 ---
 # <a name="monitoring-media-services-data-reference"></a>Справочник по мониторингу данных служб мультимедиа
 
-В этой статье рассматриваются данные, полезные для мониторинга служб мультимедиа. Дополнительные сведения обо всех метриках платформы, поддерживаемых в Azure Monitor, см. в статье [Поддерживаемые метрики в Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported).
+В этой статье рассматриваются данные, полезные для мониторинга служб мультимедиа. Дополнительные сведения обо всех метриках платформы, поддерживаемых в Azure Monitor, см. в статье [Поддерживаемые метрики в Azure Monitor](../../../azure-monitor/essentials/metrics-supported.md).
 
 ## <a name="media-services-metrics"></a>Метрики служб мультимедиа
 
@@ -59,7 +60,7 @@ ms.locfileid: "104598190"
 
 ## <a name="metric-dimensions"></a>Измерения метрик
 
-Дополнительные сведения об измерениях метрик см. в разделе [Многомерные метрики](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics#multi-dimensional-metrics).
+Дополнительные сведения об измерениях метрик см. в разделе [Многомерные метрики](../../../azure-monitor/essentials/data-platform-metrics.md#multi-dimensional-metrics).
 
 <!--**PLACEHOLDER** for dimensions table.-->
 
@@ -67,7 +68,7 @@ ms.locfileid: "104598190"
 
 ## <a name="media-services-diagnostic-logs"></a>Журналы диагностики служб мультимедиа
 
-Журналы диагностики предоставляют обширные и часто встречающиеся данные о работе ресурсов Azure. Дополнительные сведения см. в статье получение [и использование данных журнала из ресурсов Azure](https://docs.microsoft.com/azure/azure-monitor/essentials/platform-logs-overview.md).
+Журналы диагностики предоставляют обширные и часто встречающиеся данные о работе ресурсов Azure. Дополнительные сведения см. в статье получение [и использование данных журнала из ресурсов Azure](../../../azure-monitor/essentials/platform-logs-overview.md).
 
 Службы мультимедиа поддерживают следующие журналы диагностики:
 
@@ -81,7 +82,7 @@ ms.locfileid: "104598190"
 
 ## <a name="schemas"></a>Схемы
 
-Подробное описание схемы журналов диагностики верхнего уровня см. в статье [Поддерживаемые службы, схемы и категории для журналов диагностики Azure](https://docs.microsoft.com/azure/azure-monitor/essentials/resource-logs-schema.md).
+Подробное описание схемы журналов диагностики верхнего уровня см. в статье [Поддерживаемые службы, схемы и категории для журналов диагностики Azure](../../../azure-monitor/essentials/resource-logs-schema.md).
 
 ## <a name="key-delivery-log-schema-properties"></a>Свойства схемы журнала доставки ключей
 

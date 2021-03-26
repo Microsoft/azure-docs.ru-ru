@@ -1,19 +1,19 @@
 ---
 title: Настройка параметров сервера — Azure PowerShell — база данных Azure для PostgreSQL
 description: В этой статье описывается, как настроить параметры службы в базе данных Azure для PostgreSQL с помощью PowerShell.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.devlang: azurepowershell
 ms.topic: how-to
 ms.date: 06/08/2020
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 24106e40a78d4b5607c352ffd49a310533760a66
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6e9bf55aa46e2206928a5f93285a4001dc731f64
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92489954"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604300"
 ---
 # <a name="customize-azure-database-for-postgresql-server-parameters-using-powershell"></a>Настройка параметров сервера базы данных Azure для PostgreSQL с помощью PowerShell
 
