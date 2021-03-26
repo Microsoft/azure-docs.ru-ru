@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.date: 03/19/2021
-ms.openlocfilehash: 14b2c1f98ae977548edb635b8a8a7a956b3f2dd7
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 6b8d3afc214f6b78fcc11b3592cd51dadf37bf96
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105023781"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564166"
 ---
 # <a name="migration-guide--mysql-to-azure-sql-database"></a>Руководство по миграции: MySQL в базу данных SQL Azure
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqldb.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "105023781"
 1. Выберите **Параметры проекта**. 
 1. Перейдите на вкладку **сопоставления типов** :
 
-   ![Сопоставления типов](./media/mysql-to-sql-database-guide/type-mappings.png)
+   ![Сопоставление типов](./media/mysql-to-sql-database-guide/type-mappings.png)
 
 1. Сопоставление типов для каждой таблицы можно изменить, выбрав таблицу в **обозревателе метаданных MySQL**. 
 
@@ -172,7 +172,7 @@ ms.locfileid: "105023781"
 
 - Обязательно ознакомьтесь с [калькулятором совокупной стоимости владения (TCO) Azure](https://aka.ms/azure-tco) , чтобы оценить экономию затрат, которую можно реализовать путем переноса рабочих нагрузок в Azure.
 
-- Матрицу служб и средств Майкрософт и сторонних производителей, доступных для помощи в различных сценариях переноса баз данных и данных, а также специальных задачах, см. в статье [Службы и средства для переноса данных](https://docs.microsoft.com/azure/dms/dms-tools-matrix).
+- Матрицу служб и средств Майкрософт и сторонних производителей, доступных для помощи в различных сценариях переноса баз данных и данных, а также специальных задачах, см. в статье [Службы и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 
 - Другие руководства по миграции см. в разделе [Перенос базы данных](https://datamigration.microsoft.com/). 
 

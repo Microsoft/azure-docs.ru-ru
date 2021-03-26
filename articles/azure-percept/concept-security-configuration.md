@@ -6,12 +6,12 @@ ms.author: mimcco
 ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 03/25/2021
-ms.openlocfilehash: 086d7ec9d2bcae96ee64745a4382c4748aea291e
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: cfc20a30104e24a3950c71bdd8377544803d2f25
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "105572471"
+ms.locfileid: "105604419"
 ---
 # <a name="azure-percept-firewall-configuration-and-security-recommendations"></a>Настройка брандмауэра Перцепт для Azure и рекомендации по безопасности
 
@@ -38,3 +38,8 @@ Azure Перцепт DK предлагает широкий спектр воз�
 - Проверка включения шифрования неактивных данных
 - Непрерывный мониторинг устройства и быстрое реагирование на предупреждения
 - Ограничьте число администраторов, имеющих доступ к устройству
+
+## <a name="next-steps"></a>Дальнейшие действия
+
+> [!div class="nextstepaction"]
+> [Дополнительные сведения о безопасности Azure Перцепт](./overview-percept-security.md)

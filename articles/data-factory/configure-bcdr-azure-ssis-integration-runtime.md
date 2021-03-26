@@ -12,12 +12,12 @@ ms.reviewer: douglasl
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 03/05/2021
-ms.openlocfilehash: 2744d51b6d68ed494050be10a9f0e4d1f59cdc49
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a426ee39ba3c0f50b9a6c1fb9c7de1ef8e7291b2
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102204071"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566359"
 ---
 # <a name="configure-azure-ssis-integration-runtime-for-business-continuity-and-disaster-recovery-bcdr"></a>Настройка среды выполнения интеграции Azure SSIS для обеспечения непрерывности бизнес-процессов и аварийного восстановления (BCDR) 
 
@@ -25,7 +25,7 @@ ms.locfileid: "102204071"
 
 База данных SQL Azure, Управляемый экземпляр и SQL Server Integration Services (SSIS) в фабрике данных Azure (ADF) можно сочетать в качестве рекомендуемого решения "все-платформа как услуга" (PaaS) для SQL Server миграции. Вы можете развернуть проекты служб SSIS в базе данных каталога SSIS (SSISDB), размещенной в базе данных SQL Azure, Управляемый экземпляр и запускать пакеты служб SSIS в среде выполнения интеграции Azure SSIS (IR) в ADF.
 
-Для обеспечения непрерывности бизнес-процессов и аварийного восстановления (BCDR) база данных SQL Azure/Управляемый экземпляр может быть настроена с помощью [группы георепликации или отработки отказа](https://docs.microsoft.com/azure/azure-sql/database/auto-failover-group-overview), где SSISDB в основном регионе Azure с доступом для чтения и записи (первичная роль) будет непрерывно реплицироваться в дополнительный регион с доступом только для чтения (вторичная роль). При возникновении аварии в основном регионе активируется отработка отказа, где первичная и вторичная Ссисдбс переключают роли.
+Для обеспечения непрерывности бизнес-процессов и аварийного восстановления (BCDR) база данных SQL Azure/Управляемый экземпляр может быть настроена с помощью [группы георепликации или отработки отказа](../azure-sql/database/auto-failover-group-overview.md), где SSISDB в основном регионе Azure с доступом для чтения и записи (первичная роль) будет непрерывно реплицироваться в дополнительный регион с доступом только для чтения (вторичная роль). При возникновении аварии в основном регионе активируется отработка отказа, где первичная и вторичная Ссисдбс переключают роли.
 
 Для BCDR можно также настроить двойное резервное сочетание IR Azure SSIS, которое работает в синхронизации с группой отработки отказа базы данных SQL Azure или Управляемый экземпляр. Это позволяет иметь пару запущенных служб Azure SSIS IRs, которая в любой момент времени может получить доступ только к первичной базе данных SSISDB для получения и выполнения пакетов, а также для записи журналов выполнения пакетов (первичной роли), а другая — для пакетов, развернутых в других местах, например в службе файлов Azure (вторичная роль). Когда происходит отработка отказа SSISDB, первичная и вторичная IRs Azure-SSIS также отменяют роли, а если обе работают, то время простоя почти равно нулю.
 
@@ -39,7 +39,7 @@ ms.locfileid: "102204071"
 
    При [выборе для использования SSISDB](./tutorial-deploy-ssis-packages-azure.md#creating-ssisdb) на странице **Параметры развертывания** панели **настройки среды выполнения интеграции** установите флажок **использовать пару с двойным ожиданием Azure-SSIS Integration Runtime с помощью параметра SSISDB Failover** . В качестве **имени пары "двойной резерв"** введите имя, чтобы обозначить пару первичной и вторичной службы Azure-SSIS IRS. После завершения создания первичной Azure-SSIS IR он будет запущен и подключен к первичной SSISDB, который будет создан от вашего имени с доступом для чтения и записи. Если вы только что настроили его, необходимо перезапустить его.
 
-1. С помощью портал Azure можно проверить, создан ли первичный SSISDB на странице **обзора** основного сервера базы данных SQL Azure. После создания [группы отработки отказа для основного и дополнительного серверов базы данных SQL Azure, а также для добавления SSISDB](https://docs.microsoft.com/azure/azure-sql/database/failover-group-add-single-database-tutorial?tabs=azure-portal#2---create-the-failover-group) на страницу **группы отработки отказа** . После создания группы отработки отказа вы можете проверить, реплицируется ли первичный сайт SSISDB на базу данных-получатель с доступом только для чтения на странице **Обзор** сервера-получателя Azure SQL Server.
+1. С помощью портал Azure можно проверить, создан ли первичный SSISDB на странице **обзора** основного сервера базы данных SQL Azure. После создания [группы отработки отказа для основного и дополнительного серверов базы данных SQL Azure, а также для добавления SSISDB](../azure-sql/database/failover-group-add-single-database-tutorial.md?tabs=azure-portal#2---create-the-failover-group) на страницу **группы отработки отказа** . После создания группы отработки отказа вы можете проверить, реплицируется ли первичный сайт SSISDB на базу данных-получатель с доступом только для чтения на странице **Обзор** сервера-получателя Azure SQL Server.
 
 1. С помощью пользовательского интерфейса портал Azure или ADF можно создать еще один Azure-SSIS IR с сервером базы данных SQL Azure, чтобы разместить SSISDB в дополнительном регионе. Это будет дополнительный Azure-SSIS IR. Чтобы получить полный BCDR, убедитесь, что все ресурсы, от которых он зависит, также создаются в дополнительном регионе, например в хранилище Azure для хранения скрипта или файлов настраиваемой установки, ADF для согласования и планирования выполнения пакетов и т. д.
 
@@ -51,13 +51,13 @@ ms.locfileid: "102204071"
 
 1. Если вы [используете ADF для согласования или планирования выполнения пакетов](./how-to-invoke-ssis-package-ssis-activity.md), убедитесь, что все соответствующие конвейеры ADF с действиями "выполнение пакета служб SSIS" и "связанные триггеры" копируются в дополнительный ADF-файл с отключенными триггерами. Когда происходит отработка отказа SSISDB, необходимо включить их.
 
-1. Вы можете [протестировать группу отработки отказа базы данных SQL Azure](https://docs.microsoft.com/azure/azure-sql/database/failover-group-add-single-database-tutorial?tabs=azure-portal#3---test-failover) и проверить [страницу мониторинга Azure-SSIS IR на портале ADF](./monitor-integration-runtime.md#monitor-the-azure-ssis-integration-runtime-in-azure-portal) , независимо от того, имеют ли ваши основные и вторичные службы Azure-SSIS IRS перепутаные роли. 
+1. Вы можете [протестировать группу отработки отказа базы данных SQL Azure](../azure-sql/database/failover-group-add-single-database-tutorial.md?tabs=azure-portal#3---test-failover) и проверить [страницу мониторинга Azure-SSIS IR на портале ADF](./monitor-integration-runtime.md#monitor-the-azure-ssis-integration-runtime-in-azure-portal) , независимо от того, имеют ли ваши основные и вторичные службы Azure-SSIS IRS перепутаные роли. 
 
 ## <a name="configure-a-dual-standby-azure-ssis-ir-pair-with-azure-sql-managed-instance-failover-group"></a>Настройка пары с двумя резервными Azure-SSIS IR с помощью группы отработки отказа Azure SQL Управляемый экземпляр
 
 Чтобы настроить двойное резервное Azure-SSIS IR, которое работает в синхронизации с группой отработки отказа Azure SQL Управляемый экземпляр, выполните следующие действия.
 
-1. С помощью портал Azure можно [создать группу отработки отказа для основного и дополнительного управляемых экземпляров Azure SQL](https://docs.microsoft.com/azure/azure-sql/managed-instance/failover-group-add-instance-tutorial?tabs=azure-portal) на странице **группы отработки отказа** основного управляемый экземпляр SQL Azure.
+1. С помощью портал Azure можно [создать группу отработки отказа для основного и дополнительного управляемых экземпляров Azure SQL](../azure-sql/managed-instance/failover-group-add-instance-tutorial.md?tabs=azure-portal) на странице **группы отработки отказа** основного управляемый экземпляр SQL Azure.
 
 1. С помощью пользовательского интерфейса портал Azure или ADF можно создать новый Azure-SSIS IR с основным Управляемый экземпляр Azure SQL для размещения SSISDB в основном регионе. Если у вас есть Azure-SSIS IR, который уже подключен к SSIDB необходимо запустить, размещенному на основном Управляемый экземпляр SQL Azure и все еще запущен, необходимо сначала его отключить, чтобы перенастроить его. Это будет основной Azure-SSIS IR.
 
@@ -112,7 +112,7 @@ ms.locfileid: "102204071"
 
 1. Если вы [используете ADF для согласования или планирования выполнения пакетов](./how-to-invoke-ssis-package-ssis-activity.md), убедитесь, что все соответствующие конвейеры ADF с действиями "выполнение пакета служб SSIS" и "связанные триггеры" копируются в дополнительный ADF-файл с отключенными триггерами. Когда происходит отработка отказа SSISDB, необходимо включить их.
 
-1. Вы можете [протестировать группу отработки отказа Azure SQL управляемый экземпляр](https://docs.microsoft.com/azure/azure-sql/managed-instance/failover-group-add-instance-tutorial?tabs=azure-portal#test-failover) и проверить на [странице мониторинга Azure-SSIS IR на портале ADF](./monitor-integration-runtime.md#monitor-the-azure-ssis-integration-runtime-in-azure-portal) , есть ли в вашей основной и вторичной службе Azure-SSIS IRS перепутаные роли. 
+1. Вы можете [протестировать группу отработки отказа Azure SQL управляемый экземпляр](../azure-sql/managed-instance/failover-group-add-instance-tutorial.md?tabs=azure-portal#test-failover) и проверить на [странице мониторинга Azure-SSIS IR на портале ADF](./monitor-integration-runtime.md#monitor-the-azure-ssis-integration-runtime-in-azure-portal) , есть ли в вашей основной и вторичной службе Azure-SSIS IRS перепутаные роли. 
 
 ## <a name="attach-a-new-azure-ssis-ir-to-existing-ssisdb-hosted-by-azure-sql-databasemanaged-instance"></a>Присоединение нового Azure-SSIS IR к существующему SSISDB, размещенному в базе данных SQL Azure или Управляемый экземпляр
 

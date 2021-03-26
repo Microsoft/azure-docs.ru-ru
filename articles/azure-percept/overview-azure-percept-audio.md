@@ -1,18 +1,18 @@
 ---
 title: Общие сведения о звуковом устройстве Azure Перцепт
 description: Дополнительные сведения об Azure Перцепт Audio
-author: elqu20
-ms.author: v-elqu
+author: mimcco
+ms.author: mimcco
 ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 03/23/2021
 ms.custom: template-concept
-ms.openlocfilehash: 7c80159607947dbe7ed17181beac610fa0c202c5
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 23fae249cfceec75af0b7c49a3875ab447ecbafd
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104956100"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564268"
 ---
 # <a name="introduction-to-azure-percept-audio"></a>Введение в службу Перцепт Azure Audio
 

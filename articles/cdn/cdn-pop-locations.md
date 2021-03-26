@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: article
 ms.date: 04/19/2020
 ms.author: allensu
-ms.openlocfilehash: 01bae85241950ffa1ccf77189694fb648b8c7d03
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b2c191c508aaa613d6846aebdc5a15a213918e52
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103494093"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567276"
 ---
 # <a name="azure-cdn-coverage-by-metro"></a>Охват Azure CDN через Metro 
 > [!div class="op_single_selector"]
@@ -49,4 +49,4 @@ ms.locfileid: "103494093"
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-* Чтобы получить последние IP-адреса для включения в список разрешений, см. раздел [API Azure CDN граничных узлов](https://docs.microsoft.com/rest/api/cdn/edgenodes).
+* Чтобы получить последние IP-адреса для включения в список разрешений, см. раздел [API Azure CDN граничных узлов](/rest/api/cdn/edgenodes).

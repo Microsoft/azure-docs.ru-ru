@@ -8,12 +8,12 @@ ms.topic: how-to
 author: xiaoharper
 ms.author: zhanxia
 ms.date: 03/08/2021
-ms.openlocfilehash: fda34a7ee06d35846bcec571e904297d0421c38f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7cdf016d7de66c33973ec7818fa92df28c4639dd
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103565369"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566970"
 ---
 # <a name="migrate-to-azure-machine-learning"></a>Миграция в Машинное обучение Azure
 
@@ -46,7 +46,7 @@ ms.locfileid: "103565369"
 
 3. Убедитесь, что в конструкторе Машинное обучение Azure поддерживаются критические модули Studio (классические). Дополнительные сведения см. в приведенной ниже таблице в разделе [Studio (классическая модель) и конструктор модуля конструктора](#studio-classic-and-designer-module-mapping) .
 
-4. [Создайте рабочую область Машинного обучения Azure](https://docs.microsoft.com/azure/machine-learning/how-to-manage-workspace?tabs=azure-portal).
+4. [Создайте рабочую область Машинного обучения Azure](../how-to-manage-workspace.md?tabs=azure-portal).
 
 ## <a name="step-2-create-a-migration-plan"></a>Шаг 2. Создание плана миграции
 
@@ -152,7 +152,7 @@ ms.locfileid: "103565369"
 ![автомобиль-Price-AML-конечная точка](./media/migrate-overview/aml-endpoint.png)
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье вы узнали о высокоуровневых требованиях к переходу на Машинное обучение Azure. Подробные инструкции см. в других статьях, посвященных миграции в классической серии Studio.
 
@@ -162,9 +162,3 @@ ms.locfileid: "103565369"
 1. [Перестройте веб-службу Studio (классическая)](migrate-rebuild-web-service.md).
 1. [Интегрируйте веб-службу машинное обучение Azure с клиентскими приложениями](migrate-rebuild-integrate-with-client-app.md).
 1. Выполните [миграцию выполнения скрипта R](migrate-execute-r-script.md).
-
-
-
-
-
-

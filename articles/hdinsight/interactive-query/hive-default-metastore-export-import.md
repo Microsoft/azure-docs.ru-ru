@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 11/4/2020
-ms.openlocfilehash: 825204fe40125a65e8e6f27c6973417813700a9e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4a0258d5e448c59baa1cd63e98058fe7116a8485
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101746359"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566121"
 ---
 # <a name="migrate-default-hive-metastore-db-to-external-metastore-db"></a>Миграция базы данных хранилище метаданных Hive по умолчанию в внешнюю базу данных хранилище метаданных
 
@@ -36,7 +36,7 @@ ms.locfileid: "101746359"
 
 Действие аналогично замене символических ссылок своими полными путями.
 
-|Свойство. | Значение |
+|Свойство | Значение |
 |---|---|
 |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/linuxhivemigrationv01/hive-adl-expand-location-v01.sh`|
 |Типы узлов|Head|
@@ -46,7 +46,7 @@ ms.locfileid: "101746359"
 
 Кластер HDInsight An, созданный только после 2020-10-15, поддерживает экспорт/импорт SQL для хранилище метаданных DB по умолчанию для Hive с помощью `sqlpackage` .
 
-1. Установите [SqlPackage](https://docs.microsoft.com/sql/tools/sqlpackage-download#get-sqlpackage-net-core-for-linux) в кластер.
+1. Установите [SqlPackage](/sql/tools/sqlpackage-download#get-sqlpackage-net-core-for-linux) в кластер.
 
 2. Экспортируйте базу данных хранилище метаданных DB по умолчанию в BACPAC-файл, выполнив следующую команду.
 
@@ -94,7 +94,7 @@ QUERY="SELECT DBS.NAME, TBLS.TBL_NAME, SDS.LOCATION FROM SDS, TBLS, DBS WHERE TB
 sudo python "$SCRIPT" --query "$QUERY" > $OUTPUT_FILE
 ```
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 * [Перенос рабочих нагрузок из HDInsight 3,6 в 4,0](./apache-hive-migrate-workloads.md)
 * [Миграция рабочей нагрузки Hive между учетными записями хранения](./hive-migration-across-storage-accounts.md)

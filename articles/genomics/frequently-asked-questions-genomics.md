@@ -9,12 +9,12 @@ ms.author: grhuynh
 ms.service: genomics
 ms.topic: troubleshooting
 ms.date: 12/07/2017
-ms.openlocfilehash: e8806bc4f761214e6740a22093b7e18030fdf881
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 40fff49aa3ed46417cdd9a6190f928707e41accb
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96018330"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105608618"
 ---
 # <a name="microsoft-genomics-common-questions"></a>Microsoft Genomics: часто задаваемые вопросы
 
@@ -59,6 +59,10 @@ ms.locfileid: "96018330"
 ## <a name="do-you-save-my-storage-account-keys"></a>Сохраняются ли мои ключи учетной записи хранения?
 Ключ учетной записи хранения используется для создания краткосрочных маркеров доступа службы Microsoft Genomics, считывания входных и записи выходных файлов. По умолчанию время существования маркера составляет 48 часов. Его можно изменить с помощью параметра `-sas/--sas-duration` команды отправки, указав количество часов как значение.
 
+## <a name="does-microsoft-genomics-store-customer-data"></a>Microsoft Genomics ли хранить данные клиента?
+
+Нет. Microsoft Genomics не хранит никаких данных клиента.
+
 ## <a name="what-genome-references-can-i-use"></a>Какие референсные геномы можно использовать?
 
 Поддерживаются следующие референсные геномы:
@@ -88,5 +92,5 @@ msgen распознает файлы конфигурации в следующ
 
 Используйте следующие ресурсы, чтобы приступить к работе с Microsoft Genomics:
 - Приступить к работе, запустив первый рабочий процесс с помощью службы Microsoft Genomics. [Запуск рабочего процесса в службе Microsoft Genomics](quickstart-run-genomics-workflow-portal.md)
-- Отправка собственных данных для обработки службой Microsoft Genomics: [парная FASTQ-](quickstart-input-pair-FASTQ.md)  |  [BAM](quickstart-input-BAM.md)  |  [несколько FASTQ-или BAM](quickstart-input-multiple.md) 
+- Отправить свои данные для обработки в службу Microsoft Genomics. Дополнительные сведения см. в статьях [Отправка рабочего процесса с помощью входных FASTQ-файлов](quickstart-input-pair-FASTQ.md) | [Отправка рабочего процесса с помощью входного BAM-файла](quickstart-input-BAM.md) | [Отправка рабочего процесса с помощью нескольких входных данных из одного примера](quickstart-input-multiple.md) 
 

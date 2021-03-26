@@ -7,12 +7,12 @@ ms.topic: how-to
 author: mksuni
 ms.author: sumuth
 ms.date: 09/21/2020
-ms.openlocfilehash: 413f5fc1f6579102b62042c1470816470c2e1449
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1506ce311fe443247050a36e1b9fa4600360ac6e
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92546557"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604147"
 ---
 # <a name="connect-and-query-overview-for-azure-database-for-postgresql--single-server"></a>Общие сведения о подключении к отдельному серверу Базы данных Azure для PostgreSQL и отправка запросов к нему
 
@@ -44,7 +44,6 @@ PostgreSQL предоставляет возможность расширить 
 - [Расширения postgres 11](./concepts-extensions.md#postgres-11-extensions)
 - [Расширения postgres 10](./concepts-extensions.md#postgres-10-extensions)
 - [Расширения postgres 9,6](./concepts-extensions.md#postgres-96-extensions)
-- [Расширения postgres 9,5](./concepts-extensions.md#postgres-95-extensions)
 
 Дополнительные сведения см. [в разделе Использование расширений PostgreSQL на одном сервере](concepts-extensions.md).
 

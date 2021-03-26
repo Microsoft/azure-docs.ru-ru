@@ -11,12 +11,12 @@ ms.workload: data-services
 ms.custom: seo-lt-2019
 ms.topic: troubleshooting
 ms.date: 02/20/2020
-ms.openlocfilehash: f4baca7f261aa7544b54992a5e1ddf620794774f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 785567685b77183df0f212897b923d911ac045f6
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94962286"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567313"
 ---
 # <a name="troubleshoot-common-azure-database-migration-service-issues-and-errors"></a>Устранение распространенных проблем и ошибок Azure Database Migration Service
 
@@ -102,7 +102,7 @@ ms.locfileid: "94962286"
 
 | Причина         | Решение    |
 | ------------- | ------------- |
-| При использовании [ExpressRoute](https://azure.microsoft.com/services/expressroute/)Azure Database Migration Service [требуется](./tutorial-sql-server-azure-sql-online.md) подготовка трех конечных точек службы в подсети виртуальной сети, связанной со службой:<br> --Конечная точка служебной шины<br> --Конечная точка хранилища<br> --Целевая конечная точка базы данных (например, конечная точка SQL, Cosmos DBная конечная точка)<br><br><br><br><br> | [Включите](./tutorial-sql-server-azure-sql-online.md) необходимые конечные точки службы для подключения ExpressRoute между источником и Azure Database Migration Service. <br><br><br><br><br><br><br><br> |
+| При использовании [ExpressRoute](https://azure.microsoft.com/services/expressroute/)Azure Database Migration Service [требуется](./tutorial-sql-server-to-azure-sql.md) подготовка трех конечных точек службы в подсети виртуальной сети, связанной со службой:<br> --Конечная точка служебной шины<br> --Конечная точка хранилища<br> --Целевая конечная точка базы данных (например, конечная точка SQL, Cosmos DBная конечная точка)<br><br><br><br><br> | [Включите](./tutorial-sql-server-to-azure-sql.md) необходимые конечные точки службы для подключения ExpressRoute между источником и Azure Database Migration Service. <br><br><br><br><br><br><br><br> |
 
 ## <a name="lock-wait-timeout-error-when-migrating-a-mysql-database-to-azure-db-for-mysql"></a>Ошибка времени ожидания блокировки при переносе базы данных MySQL в Azure DB для MySQL
 
@@ -126,7 +126,7 @@ ms.locfileid: "94962286"
 
 ## <a name="additional-known-issues"></a>Дополнительные известные проблемы
 
-* [Известные проблемы и ограничения миграции при оперативной миграции в базу данных SQL Azure](./known-issues-azure-sql-online.md)
+* [Известные проблемы и ограничения миграции при оперативной миграции в базу данных SQL Azure](./index.yml)
 * [Известные проблемы и ограничения миграции при оперативной миграции в базу данных Azure для MySQL](./known-issues-azure-mysql-online.md)
 * [Известные проблемы и ограничения миграции при оперативной миграции в базу данных Azure для PostgreSQL](./known-issues-azure-postgresql-online.md)
 

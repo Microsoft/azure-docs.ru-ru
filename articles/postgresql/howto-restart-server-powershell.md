@@ -1,18 +1,18 @@
 ---
 title: Перезапуск сервера-Azure PowerShell — база данных Azure для PostgreSQL
 description: В этой статье описывается, как можно перезапустить сервер базы данных Azure для PostgreSQL с помощью PowerShell.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
 ms.date: 06/08/2020
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 2d37de4a1861cb78b4a76c8ca7bc8c3643245b32
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 2eadde4e3158c60685ba30542845f28954651bde
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97706972"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609332"
 ---
 # <a name="restart-azure-database-for-postgresql-server-using-powershell"></a>Перезапуск базы данных Azure для сервера PostgreSQL с помощью PowerShell
 
@@ -23,7 +23,7 @@ ms.locfileid: "97706972"
 > [!NOTE] 
 > Время, необходимое для завершения перезапуска, зависит от процесса восстановления PostgreSQL. Чтобы уменьшить время перезапуска, рекомендуем свести к минимуму объем действий, выполняемых на сервере перед перезапуском. Также может потребоваться увеличить частоту контрольных точек. Можно также настроить значения параметров, связанных с контрольной точкой `max_wal_size` , включая. Также рекомендуется выполнить `CHECKPOINT` команду перед перезапуском сервера.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 3193acf8ef19cdac97f6733a657610801d614f32
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 7607b1726900423498a58502494c015f62da8829
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104952309"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559440"
 ---
 # <a name="azure-security-baseline-for-app-service"></a>Базовый план безопасности Azure для службы приложений
 
@@ -59,7 +59,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Network**:
 
@@ -83,7 +83,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Network**:
 
@@ -122,7 +122,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Web**:
 
@@ -148,7 +148,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Network**:
 
@@ -162,7 +162,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Network**:
 
@@ -192,7 +192,7 @@ ms.locfileid: "104952309"
 
 - [Настройка сквозного протокола TLS с помощью шлюза приложений на портале](../application-gateway/end-to-end-ssl-portal.md)
 
-- [Защитите ASE, как описано в разделе Блокировка службы приложений.](/azure/app-service/environment/firewall-integrationEnvironment:)
+- [Защитите ASE, как описано в разделе Блокировка службы приложений.](/azure/app-service/environment/firewall-integration)
 
 **Ответственность**: Customer
 
@@ -229,7 +229,7 @@ ms.locfileid: "104952309"
 
 - [Настройка сквозного протокола TLS с помощью шлюза приложений на портале](../application-gateway/end-to-end-ssl-portal.md)
 
-- [Защитите ASE, как описано в разделе Блокировка службы приложений.](/azure/app-service/environment/firewall-integrationEnvironment:)
+- [Защитите ASE, как описано в разделе Блокировка службы приложений.](/azure/app-service/environment/firewall-integration)
 
 **Ответственность**: Customer
 
@@ -245,7 +245,7 @@ ms.locfileid: "104952309"
 
 - [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
-- [Ограничения доступа для службы приложений Azure](/azure/app-service/app-service-ip-restriction)
+- [Ограничения доступа для службы приложений Azure](/azure/app-service/app-service-ip-restrictions)
 
 **Ответственность**: Customer
 
@@ -313,7 +313,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Web**:
 
@@ -623,7 +623,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Web**:
 
@@ -1006,7 +1006,7 @@ ms.locfileid: "104952309"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Web**:
 

@@ -9,14 +9,14 @@ ms.devlang: multiple
 ms.topic: conceptual
 ms.tgt_pltfrm: multiple
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: f77a41a172bc868ad056d74d018b50f734286f0f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 07e43bdb0969c26120231013cc0c0354e6968ceb
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101702459"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567956"
 ---
 # <a name="feature-gaps-between-azure-media-services-v2-and-v3"></a>Разрывы функций между службами мультимедиа Azure версии 2 и v3
 
@@ -48,6 +48,6 @@ ms.locfileid: "101702459"
 
 - Шифрование хранилища на стороне клиента для защиты неактивных ресурсов было удалено в API V3 и заменено шифрованием службы хранения для неактивных данных. Интерфейсы API V3 продолжают работать с существующими зашифрованными ресурсами хранилища, но не позволяют создавать новые.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="terminology-and-entity-changes"></a>Изменения терминологии и сущностей
 
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]
+Дополнительные изменения в API см. в статье [терминология и изменения сущностей](migrate-v-2-v-3-differences-terminology.md) .

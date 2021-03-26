@@ -10,12 +10,12 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 02/12/2020
 ms.author: wellsi
-ms.openlocfilehash: 37bbc8c7c2b81c22ffd8704e655805cc63cd9d45
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: f9215469b1436ce9dc95c140e6969366d80d1ced
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105044997"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105607139"
 ---
 # <a name="release-notes-speech-devices-sdk"></a>Заметки о выпуске: пакет SDK для речевых устройств
 
@@ -107,7 +107,7 @@ ms.locfileid: "105044997"
 **Критические изменения**
 
 - В этом выпуске представлен ряд критических изменений. Дополнительные сведения о соответствующих API приведены на [этой странице](https://aka.ms/csspeech/breakingchanges_1_0_0).
-- Файлы модели KWS несовместимы с пакетом SDK для речевых устройств версии 1.0.1. Существующие файлы ключевых слов будут удалены после того, как на устройство будет записано новое ключевое слово.
+- Файлы модели распознавания ключевых слов несовместимы с пакетом SDK для речевых устройств 1.0.1. Существующие файлы ключевых слов будут удалены после того, как на устройство будет записано новое ключевое слово.
 
 ## <a name="speech-devices-sdk-050-2018-aug-release"></a>Пакет SDK для речевых устройств 0.5.0:2018-Авг
 

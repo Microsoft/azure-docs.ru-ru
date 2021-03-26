@@ -6,12 +6,12 @@ ms.author: pariks
 ms.service: mysql
 ms.topic: troubleshooting
 ms.date: 3/30/2020
-ms.openlocfilehash: 939d9f5f4cafc7a08ceb99368e8ede7a81b1eac0
-ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
+ms.openlocfilehash: 38b85748ad810002dc9cfd456ef6c138e8732ece
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105110531"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605490"
 ---
 # <a name="how-to-use-sys_schema-for-performance-tuning-and-database-maintenance-in-azure-database-for-mysql"></a>Как использовать sys_schema для настройки производительности и обслуживания базы данных в службе "База данных Azure для MySQL"
 [!INCLUDE[applies-to-single-flexible-server](includes/applies-to-single-flexible-server.md)]
@@ -84,4 +84,4 @@ ms.locfileid: "105110531"
 Таким образом, sys_schema является мощным инструментом, который подходит и для настройки производительности, и для обслуживания базы данных. Обязательно воспользуйтесь этой функцией в Базе данных Azure для MySQL. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Найти ответы на важные для вас вопросы, а также задать вопрос или ответить на него можно на [странице вопросов и ответов на сайте Майкрософт](/answers/topics/azure-database-mysql.html) или на [сайте Stack Overflow](https://stackoverflow.com/questions/tagged/azure-database-mysql).
+- Чтобы найти одноранговые ответы на наиболее важные вопросы или отправить новый вопрос или ответ, посетите [Stack overflow](https://stackoverflow.com/questions/tagged/azure-database-mysql).

@@ -3,12 +3,12 @@ title: Сведения о политике Azure для Kubernetes
 description: Узнайте, как Политика Azure использует Rego и Open Policy Agent для управления кластерами, работающими под управлением Kubernetes в Azure или в локальной среде.
 ms.date: 03/22/2021
 ms.topic: conceptual
-ms.openlocfilehash: 60ffcfac688eb40f47efefb74f79d27a2cb82446
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 4a6ca7fb5086401cab58d4bfb6a412089c11ef05
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104868160"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564311"
 ---
 # <a name="understand-azure-policy-for-kubernetes-clusters"></a>Общие сведения о политике Azure для кластеров Kubernetes
 
@@ -61,7 +61,7 @@ ms.locfileid: "104868160"
 
 Следующие ограничения применяются только к надстройке политики Azure для AKS:
 
-- Не удается включить [политику безопасности AKS Pod](../../../aks/use-pod-security-policies.md) и надстройку политики Azure для AKS. Дополнительные сведения см. в разделе [ограничение безопасности AKS Pod](../../../aks/use-pod-security-on-azure-policy.md#limitations).
+- Не удается включить [политику безопасности AKS Pod](../../../aks/use-pod-security-policies.md) и надстройку политики Azure для AKS. Дополнительные сведения см. в разделе [ограничение безопасности AKS Pod](../../../aks/use-azure-policy.md).
 - Пространства имен, автоматически исключаемые надстройкой политики Azure для оценки: _KUBE-System_, _привратник-System_ и _AKS-Periscope_.
 
 ## <a name="recommendations"></a>Рекомендации
@@ -201,7 +201,7 @@ kubectl get pods -n gatekeeper-system
 
 1. Установите [Helm 3](https://v3.helm.sh/docs/intro/install/).
 
-1. Кластер Kubernetes поддерживает Azure Arc. Дополнительные сведения см. в [подключение кластера Kubernetes к Azure Arc](../../../azure-arc/kubernetes/connect-cluster.md).
+1. Кластер Kubernetes поддерживает Azure Arc. Дополнительные сведения см. в [подключение кластера Kubernetes к Azure Arc](../../../azure-arc/kubernetes/quickstart-connect-cluster.md).
 
 1. Получите полный идентификатор ресурса Azure для кластера Kubernetes с поддержкой Azure Arc.
 

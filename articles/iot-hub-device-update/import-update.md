@@ -6,22 +6,22 @@ ms.author: andbrown
 ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
-ms.openlocfilehash: 15f76488790249f7e301d4474772c500c8829b77
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: 3644f26f989fec05ee76afd9f930c31b25234c7f
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "105565645"
+ms.locfileid: "105608533"
 ---
 # <a name="import-new-update"></a>Импорт нового обновления
 Узнайте, как импортировать новое обновление в центр обновления для центра Интернета вещей. Если вы еще не сделали этого, обязательно ознакомьтесь с основными [понятиями импорта](import-concepts.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
-* [Доступ к центру Интернета вещей с включенным обновлением устройства для центра Интернета вещей](create-device-update-account.md). Для центра Интернета вещей рекомендуется использовать уровень S1 (стандартный) или выше. 
+* [Доступ к центру Интернета вещей с включенным обновлением устройства для центра Интернета вещей](create-device-update-account.md). 
 * Устройство IoT (или симулятор), подготовленное для обновления устройства в центре Интернета вещей.
    * При использовании реального устройства вам потребуется файл образа обновления для обновления образа или [файл манифеста APT](device-update-apt-manifest.md) для обновления пакета.
-* [PowerShell 5](/powershell/scripting/install/installing-powershell) или более поздней версии.
+* [PowerShell 5](/powershell/scripting/install/installing-powershell) или более поздней версии (включает Linux, macOS и установки Windows)
 * Поддерживаемые браузеры:
   * [Microsoft Edge](https://www.microsoft.com/edge)
   * Google Chrome

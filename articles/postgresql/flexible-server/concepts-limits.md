@@ -1,17 +1,17 @@
 ---
 title: Ограничения — база данных Azure для PostgreSQL — гибкий сервер
 description: В этой статье описываются ограничения в базе данных Azure для PostgreSQL-гибкого сервера, например число параметров подключения и подсистемы хранилища.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.openlocfilehash: 9039bbf006d5e5a677247771346a3a6b43781da2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 351c959a4d3b6cc53064b9d1b65c1282647f308e
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104594943"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605405"
 ---
 # <a name="limits-in-azure-database-for-postgresql---flexible-server"></a>Ограничения в базе данных Azure для PostgreSQL-гибкого сервера
 
@@ -37,7 +37,7 @@ ms.locfileid: "104594943"
 | D32s_v3              | 32     | 128 ГиБ     | 3437            | 3434                 |
 | D48s_v3              | 48     | 192 ГиБ     | 5000            | 4997                 |
 | D64s_v3              | 64     | 256 Гиб     | 5000            | 4997                 |
-| **Оптимизированная для памяти** |        |             |                 |                      |
+| **С оптимизацией для операций в памяти** |        |             |                 |                      |
 | E2s_v3               | 2      | 16 гиб      | 1718            | 1715                 |
 | E4s_v3               | 4      | 32 ГиБ      | 3437            | 3434                 |
 | E8s_v3               | 8      | 64 ГиБ      | 5000            | 4997                 |

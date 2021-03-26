@@ -1,17 +1,17 @@
 ---
 title: Параметры вычислений и хранилища — база данных Azure для PostgreSQL — гибкий сервер
 description: В этой статье описываются варианты вычислений и хранения в базе данных Azure для PostgreSQL-гибкого сервера.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 02/19/2021
-ms.openlocfilehash: 6bcfbc19cbaa078373d6857bdac74eaf86eca104
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 93a439c814b6bac630c5231f46d7a022a131687c
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105048057"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105608176"
 ---
 # <a name="compute-and-storage-options-in-azure-database-for-postgresql---flexible-server"></a>Варианты вычислений и хранения в базе данных Azure для PostgreSQL-гибкого сервера
 
@@ -163,7 +163,7 @@ ms.locfileid: "105048057"
 
 Автоматическое увеличение хранилища еще не доступно для гибкого сервера.
 
-## <a name="backup"></a>Backup
+## <a name="backup"></a>Резервное копирование
 
 В службе автоматически создаются резервные копии сервера. Можно выбрать срок хранения в диапазоне от 7 до 35 дней. Дополнительные сведения о резервном копировании см. в [статье основные понятия](concepts-backup-restore.md).
 

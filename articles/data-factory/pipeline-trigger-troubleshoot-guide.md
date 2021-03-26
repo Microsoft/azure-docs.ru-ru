@@ -7,12 +7,12 @@ ms.date: 03/13/2021
 ms.topic: troubleshooting
 ms.author: susabat
 ms.reviewer: susabat
-ms.openlocfilehash: f5039e5a49da202b2dbfa20e56639365ed597c79
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 72f2a5eec25b9acc2aedd7b006fe3380141781c8
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103462003"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563418"
 ---
 # <a name="troubleshoot-pipeline-orchestration-and-triggers-in-azure-data-factory"></a>Устранение неполадок оркестрации конвейера и триггеров в фабрике данных Azure
 
@@ -95,7 +95,7 @@ Type=Microsoft.DataTransfer.Execution.Core.ExecutionException,Message=There are 
 
 * Реализуйте проверки на уровне действий, следуя [процедуре обработки ошибок и ошибок конвейера](https://techcommunity.microsoft.com/t5/azure-data-factory/understanding-pipeline-failures-and-error-handling/ba-p/1630459).
 * Используйте Azure Logic Apps для мониторинга конвейеров через регулярные интервалы [, следующие за запросом фабрики](/rest/api/datafactory/pipelineruns/querybyfactory).
-* [Визуальный мониторинг конвейера](https://docs.microsoft.com/azure/data-factory/monitor-visually)
+* [Визуальный мониторинг конвейера](./monitor-visually.md)
 
 ### <a name="how-to-monitor-pipeline-failures-in-regular-intervals"></a>Мониторинг ошибок конвейера через равные промежутки времени
 
@@ -105,7 +105,7 @@ Type=Microsoft.DataTransfer.Execution.Core.ExecutionException,Message=There are 
 
 **Решение**
 * Вы можете настроить приложение логики Azure для запроса всех конвейеров со сбоями каждые 5 минут, как описано в разделе [запрос по фабрике](/rest/api/datafactory/pipelineruns/querybyfactory). Затем можно сообщить о происшествиях в систему билетов.
-* [Визуальный мониторинг конвейера](https://docs.microsoft.com/azure/data-factory/monitor-visually)
+* [Визуальный мониторинг конвейера](./monitor-visually.md)
 
 ### <a name="degree-of-parallelism--increase-does-not-result-in-higher-throughput"></a>Степень увеличения параллелизма не приводит к повышению пропускной способности
 
@@ -146,8 +146,8 @@ Type=Microsoft.DataTransfer.Execution.Core.ExecutionException,Message=There are 
 
 **Решение**
 
-* Если запуск каждого действия копирования занимает до 2 минут и проблема возникает в основном при соединении виртуальной сети (в отличии от Azure IR), это может быть связано с проблемой с производительностью копирования. Чтобы ознакомиться с инструкциями по устранению неполадок, перейдите к статье о [копировании производительности.](https://docs.microsoft.com/azure/data-factory/copy-activity-performance-troubleshooting)
-* Функцию срок жизни можно использовать для сокращения времени запуска кластера для действий потока данных. Проверьте [Integration Runtime потока данных.](https://docs.microsoft.com/azure/data-factory/control-flow-execute-data-flow-activity#data-flow-integration-runtime)
+* Если запуск каждого действия копирования занимает до 2 минут и проблема возникает в основном при соединении виртуальной сети (в отличии от Azure IR), это может быть связано с проблемой с производительностью копирования. Чтобы ознакомиться с инструкциями по устранению неполадок, перейдите к статье о [копировании производительности.](./copy-activity-performance-troubleshooting.md)
+* Функцию срок жизни можно использовать для сокращения времени запуска кластера для действий потока данных. Проверьте [Integration Runtime потока данных.](./control-flow-execute-data-flow-activity.md#data-flow-integration-runtime)
 
  ### <a name="hitting-capacity-issues-in-shirself-hosted-integration-runtime"></a>Достижение проблем с емкостью в Шир (Integration Runtime, размещенных на собственном сервере)
  
@@ -157,7 +157,7 @@ Type=Microsoft.DataTransfer.Execution.Core.ExecutionException,Message=There are 
 
 **Решение**
 
-* При возникновении проблемы с емкостью от Шир обновите виртуальную машину, чтобы увеличить размер узла, чтобы сбалансировать действия. Если вы получаете сообщение об ошибке, связанное с локальным неисправностью или ошибкой, локальным обновлением IR или локальными проблемами ИК-подключения, которые могут создать длинную очередь, перейдите к разделу [Устранение неполадок локальной среды выполнения интеграции.](https://docs.microsoft.com/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide)
+* При возникновении проблемы с емкостью от Шир обновите виртуальную машину, чтобы увеличить размер узла, чтобы сбалансировать действия. Если вы получаете сообщение об ошибке, связанное с локальным неисправностью или ошибкой, локальным обновлением IR или локальными проблемами ИК-подключения, которые могут создать длинную очередь, перейдите к разделу [Устранение неполадок локальной среды выполнения интеграции.](./self-hosted-integration-runtime-troubleshoot-guide.md)
 
 ### <a name="error-messages-due-to-long-queues-for-adf-copy-and-data-flow"></a>Сообщения об ошибках из-за длительных очередей для копирования ADF и потока данных
 
@@ -166,10 +166,10 @@ Type=Microsoft.DataTransfer.Execution.Core.ExecutionException,Message=There are 
 Сообщения об ошибках, связанные с очередью, могут отображаться по различным причинам. 
 
 **Решение**
-* Если вы получаете сообщение об ошибке из любого источника или назначения через соединители, которые могут создать длинную очередь, перейдите к [руководству по устранению неполадок соединителя.](https://docs.microsoft.com/azure/data-factory/connector-troubleshoot-guide)
-* Если появится сообщение об ошибке, посвященное сопоставлению потока данных, который может создать длинную очередь, перейдите к [руководству по устранению неполадок потоков данных.](https://docs.microsoft.com/azure/data-factory/data-flow-troubleshoot-guide)
-* При появлении сообщения об ошибке других действий, таких как кирпичы, пользовательские действия или HDI, которые могут создать длинную очередь, перейдите к [руководству по устранению неполадок действий.](https://docs.microsoft.com/azure/data-factory/data-factory-troubleshoot-guide)
-* Если появится сообщение об ошибке, посвященное запуску пакетов служб SSIS, которые могут создать длинную очередь, перейдите к [руководству по устранению неполадок выполнения пакета Azure-SSIS](https://docs.microsoft.com/azure/data-factory/ssis-integration-runtime-ssis-activity-faq) и [руководству по устранению неполадок управления Integration Runtime.](https://docs.microsoft.com/azure/data-factory/ssis-integration-runtime-management-troubleshoot)
+* Если вы получаете сообщение об ошибке из любого источника или назначения через соединители, которые могут создать длинную очередь, перейдите к [руководству по устранению неполадок соединителя.](./connector-troubleshoot-guide.md)
+* Если появится сообщение об ошибке, посвященное сопоставлению потока данных, который может создать длинную очередь, перейдите к [руководству по устранению неполадок потоков данных.](./data-flow-troubleshoot-guide.md)
+* При появлении сообщения об ошибке других действий, таких как кирпичы, пользовательские действия или HDI, которые могут создать длинную очередь, перейдите к [руководству по устранению неполадок действий.](./data-factory-troubleshoot-guide.md)
+* Если появится сообщение об ошибке, посвященное запуску пакетов служб SSIS, которые могут создать длинную очередь, перейдите к [руководству по устранению неполадок выполнения пакета Azure-SSIS](./ssis-integration-runtime-ssis-activity-faq.md) и [руководству по устранению неполадок управления Integration Runtime.](./ssis-integration-runtime-management-troubleshoot.md)
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

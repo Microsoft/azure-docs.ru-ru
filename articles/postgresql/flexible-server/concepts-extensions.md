@@ -1,17 +1,17 @@
 ---
 title: Расширения — база данных Azure для PostgreSQL — гибкий сервер
 description: Сведения о доступных расширениях postgres в базе данных Azure для PostgreSQL-гибкого сервера
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 03/17/2021
-ms.openlocfilehash: b6ae6c003284b93390bb4f53345d3ba0f8d35e21
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: e8f71eb120b86f35672c9123b52f7f19c9fee662
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104952564"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105608465"
 ---
 # <a name="postgresql-extensions-in-azure-database-for-postgresql---flexible-server"></a>Расширения PostgreSQL в базе данных Azure для PostgreSQL-гибкого сервера
 

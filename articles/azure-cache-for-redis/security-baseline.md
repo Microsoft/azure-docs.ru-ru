@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 38b6251c4b464214d66f7240dab9d5d23812f946
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: f07eece54bfe456e173e664b19777cfc98b71368
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105023220"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566869"
 ---
 # <a name="azure-security-baseline-for-azure-cache-for-redis"></a>Базовый план безопасности Azure для кэша Azure для Redis
 
@@ -443,7 +443,7 @@ ms.locfileid: "105023220"
 
 **Ответственность**: Совмещаемая блокировка
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Cache**:
 

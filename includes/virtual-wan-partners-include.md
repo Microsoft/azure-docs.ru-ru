@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 03/03/2021
 ms.author: cherylmc
 ms.custom: include file
-ms.openlocfilehash: 7374c2727048e323ce0483dd42c574134e7315bd
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: f1d3223114e9f691bfb3802a65abea003a7aec6e
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102040552"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105582709"
 ---
 В этом разделе вы можете перейти по ссылкам для получения дополнительных сведений об услугах, предлагаемых партнерами. Если ваш партнер устройства филиала отсутствует в указанном ниже разделе, попросите вашего поставщика ресурсов связаться с нами. Он может обратиться к нам, отправив сообщение по адресу azurevirtualwan@microsoft.com.
 
-|Партнеры|Руководство по настройке и развертыванию|
+|Участники|Руководство по настройке и развертыванию|
 |---|---|
 |[Barracuda Networks](https://www.barracuda.com/AzurevWAN)| [Barracuda Клауджен Firewall: Виртуальная глобальная сеть Azure](https://campus.barracuda.com/doc/79463435/)|
 | [Check Point](https://www.checkpoint.com/solutions/microsoft-azure-virtual-wan/) |[Контрольная точка для Microsoft Azure виртуальной глобальной сети краткое руководство по началу работы](https://sc1.checkpoint.com/documents/IaaS/WebAdminGuides/EN/CP_for_Microsoft_Azure_vWAN/Content/Topics/Introduction.htm?tocpath=Introduction%7C_____0)|
@@ -26,7 +26,7 @@ ms.locfileid: "102040552"
 | [клаудженикс](https://www.cloudgenix.com/microsoft-azure/) |[Клауджениксное развертывание Azure Virtual WAN Клаудбладе](https://sd-wan.cloudgenix.com/Q319ConfigurationGuide_Registration.html)|
 | [Fortinet](https://www.fortinet.com/azure-vwan) |[FortiGate и Microsoft Azure рекомендации по развертыванию виртуальной глобальной сети](https://www.fortinet.com/content/dam/fortinet/assets/deployment-guides/dg-fortigate-azure-wan-integration.pdf),[блог о сценарии маршрутизации ](https://www.fortinet.com/blog/business-and-technology/fortinet-secure-sd-wan-enhances-azure-virtual-wan-integrations)|
 |[HPE Aruba]( https://www.arubanetworks.com/microsoft-vwan/)|[Aruba SD-WAN и Microsoft Azure рекомендации по развертыванию виртуальной глобальной сети](https://www.arubanetworks.com/assets/tg/DG_Using-Aruba-SD-WAN-with-Microsoft-Azure-Virtual-WAN.pdf)|
-| [NetFoundry](https://netfoundry.io/solutions/netfoundry-for-microsoft-azure-virtual-wan/)|[Центр поддержки нетфаундри: Виртуальная глобальная сеть Azure](https://support.netfoundry.io/hc/en-us/articles/360018137891-Introduction-to-Azure-Virtual-WAN-sites)|
+| [NetFoundry](https://netfoundry.io/solutions/netfoundry-for-microsoft-azure-virtual-wan/)|[Центр поддержки нетфаундри: Виртуальная глобальная сеть Azure](https://support.netfoundry.io/hc/articles/360054527871-Configure-NetFoundry-Network-for-Azure-Windows-Virtual-Desktop-Short-Path)|
 |[Нуаже/Nokia](https://www.nuagenetworks.net/our-partners/nuage-networks-virtualized-cloud-interconnect-for-azure/)|[Нуаже и рекомендации по развертыванию виртуальной глобальной сети Azure](https://onestore.nokia.com/asset/210073)|
 |[Открытые системы]( https://open-systems.com/solutions/microsoft-azure-virtual-wan)|[Открытые системы и рекомендации по развертыванию виртуальной глобальной сети Azure](https://open-systems.com/wp-content/uploads/2020/07/Azure-Virtual-WAN-UserGuide.pdf)|
 |[Palo Alto Networks](https://researchcenter.paloaltonetworks.com/2018/09/azure-vwan-integration/) |[Рекомендации по развертыванию виртуальной глобальной сети Azure Palo Alto Networks](https://github.com/PaloAltoNetworks/microsoft_azure_virtual_wan)|

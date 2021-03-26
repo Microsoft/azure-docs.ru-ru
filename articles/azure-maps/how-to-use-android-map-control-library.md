@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: cpendle
 zone_pivot_groups: azure-maps-android
-ms.openlocfilehash: 5888a5f34ef65fc1015b6e73af1d03368a8329b2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a60ee8faf8d19afba59e46c52aaba9395c3a5292
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102098525"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604453"
 ---
 # <a name="getting-started-with-azure-maps-android-sdk"></a>Приступая к работе с пакетом SDK для Android для Azure Maps
 
@@ -34,11 +34,11 @@ ms.locfileid: "102098525"
 
 ```java
 static {
-    //Set your Azure Maps Key.
-    AzureMaps.setSubscriptionKey("<Your Azure Maps Key>");
-
     //Alternatively use Azure Active Directory authenticate.
-    //AzureMaps.setAadProperties("<Your aad clientId>", "<Your aad AppId>", "<Your aad Tenant>");
+    AzureMaps.setAadProperties("<Your aad clientId>", "<Your aad AppId>", "<Your aad Tenant>");
+
+    //Set your Azure Maps Key.
+    //AzureMaps.setSubscriptionKey("<Your Azure Maps Key>");   
 
     //Set the language to be used by Azure Maps.
     AzureMaps.setLanguage("fr-FR");
@@ -55,11 +55,11 @@ static {
 ```kotlin
 companion object {
     init {
-        //Set your Azure Maps Key.
-        AzureMaps.setSubscriptionKey("<Your Azure Maps Key>");
-
         //Alternatively use Azure Active Directory authenticate.
-        //AzureMaps.setAadProperties("<Your aad clientId>", "<Your aad AppId>", "<Your aad Tenant>");
+        AzureMaps.setAadProperties("<Your aad clientId>", "<Your aad AppId>", "<Your aad Tenant>");
+
+        //Set your Azure Maps Key.
+        //AzureMaps.setSubscriptionKey("<Your Azure Maps Key>");
     
         //Set the language to be used by Azure Maps.
         AzureMaps.setLanguage("fr-FR");

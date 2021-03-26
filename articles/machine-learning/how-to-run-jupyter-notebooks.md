@@ -11,12 +11,12 @@ ms.subservice: core
 ms.topic: conceptual
 ms.custom: how-to
 ms.date: 01/19/2021
-ms.openlocfilehash: 5748bf3d428102e296067dc5d1927ba487d575bc
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 257fc6544061c2ef9c3fdbfb8c33bc06ed2db6e3
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102518727"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566341"
 ---
 # <a name="run-jupyter-notebooks-in-your-workspace"></a>Запуск записных книжек Jupyter в рабочей области
 
@@ -203,11 +203,11 @@ ms.locfileid: "102518727"
 | ALT + ВВОД                   | Запустить ячейку, вставить ячейку кода ниже    |
 | Control/Command + ALT + ВВОД | Выполните ячейку, вставьте Markdown ячейку ниже|
 | ALT + R                       | Выполнить все      |                       
-| Y                             | Преобразовать ячейку в код    |                         
+| Да                             | Преобразовать ячейку в код    |                         
 | M                             | Преобразовать ячейку в Markdown  |                       
 | Вверх/K                          | Выбор ячейки выше    |               
 | Down/J                        | Выбор ячейки ниже    |               
-| A                             | Вставить ячейку кода выше  |            
+| Объект                             | Вставить ячейку кода выше  |            
 | B                             | Вставить ячейку кода ниже   |           
 | Control/Command + Shift + A   | Вставить Markdown ячейку выше    |      
 | Control/Command + Shift + B   | Вставить Markdown ячейку ниже   |       
@@ -258,7 +258,7 @@ ms.locfileid: "102518727"
 | Control/Command +]           | Отступ |                                         
 | Control/Command + [           | Понижение уровня  |                                        
 | Элемент управления/команда + A           | Выбрать все|                                      
-| Control/Command + Z           | Отмена |                                           
+| Control/Command + Z           | Отменить |                                           
 | Control/Command + Shift + Z   | Повторить |                                           
 | Control/Command + Y           | Повторить |                                           
 | Control, Command и Home        | Переход к началу ячейки|                                
@@ -273,7 +273,7 @@ ms.locfileid: "102518727"
 
 * Если вы не можете подключиться к записной книжке, убедитесь, что связь с веб-сокетом **не** отключена. Для работы Jupyter функций вычислительных экземпляров необходимо включить связь через веб-сокет. Убедитесь, что сеть допускает подключения WebSocket к *. instances.azureml.net и *. instances.azureml.ms. 
 
-* При развертывании экземпляра COMPUTE в рабочей области частной связи [доступ к нему можно получить только из виртуальной сети](https://docs.microsoft.com/azure/machine-learning/how-to-secure-training-vnet#compute-instance). Если вы используете пользовательский DNS или файл hosts, добавьте запись для < имя экземпляра >. < регион >. instances.azureml.ms с частным IP-адресом частной конечной точки рабочей области. Дополнительные сведения см. в статье о [пользовательской службе DNS](./how-to-custom-dns.md?tabs=azure-cli) .
+* При развертывании экземпляра COMPUTE в рабочей области частной связи [доступ к нему можно получить только из виртуальной сети](./how-to-secure-training-vnet.md#compute-instance). Если вы используете пользовательский DNS или файл hosts, добавьте запись для < имя экземпляра >. < регион >. instances.azureml.ms с частным IP-адресом частной конечной точки рабочей области. Дополнительные сведения см. в статье о [пользовательской службе DNS](./how-to-custom-dns.md?tabs=azure-cli) .
     
 ## <a name="next-steps"></a>Дальнейшие действия
 

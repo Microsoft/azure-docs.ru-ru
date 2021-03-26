@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 02/18/2020
-ms.openlocfilehash: 1c187ae83ce87c9d4d8da4aa1a5dc38163261b52
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 529bc5468c74ac9d50f64decad29fd070a7bda83
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105024903"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566937"
 ---
 # <a name="migration-overview-sql-server-to-azure-sql-managed-instance"></a>Общие сведения о миграции: SQL Server в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "105024903"
 
 |Технология | Описание|
 |---------|---------|
-| [Миграция Azure](/azure/migrate/how-to-create-azure-sql-assessment) | Служба "миграция Azure" для SQL Azure позволяет обнаруживать и оценивать размещение данных SQL в масштабе при работе в VMware, предоставляя рекомендации по развертыванию SQL Azure, целевую оценку и ежемесячные оценки. | 
+| [Миграция Azure](../../../migrate/how-to-create-azure-sql-assessment.md) | Служба "миграция Azure" для SQL Azure позволяет обнаруживать и оценивать размещение данных SQL в масштабе при работе в VMware, предоставляя рекомендации по развертыванию SQL Azure, целевую оценку и ежемесячные оценки. | 
 |[Azure Database Migration Service (DMA)](../../../dms/tutorial-sql-server-to-managed-instance.md)  | Служба первой стороны Azure, которая поддерживает миграцию в автономном режиме для приложений, которые могут обеспечить простой в процессе миграции. В отличие от непрерывной миграции в режиме «в сети», миграция в автономном режиме выполняется однократным восстановлением полной резервной копии базы данных из источника в целевой объект. | 
 |[Встроенное резервное копирование и восстановление](../../managed-instance/restore-sample-database-quickstart.md) | SQL Управляемый экземпляр поддерживает восстановление резервных копий собственных SQL Server баз данных (BAK-файлов), делая ее самым простым вариантом миграции для клиентов, которые могут предоставлять полные резервные копии баз данных в службе хранилища Azure. Полные и разностные резервные копии также поддерживаются и описаны в [разделе "материалы о миграции](#migration-assets) " Далее в этой статье.| 
 |[Служба воспроизведения журналов (LRS)](../../managed-instance/log-replay-service-migrate.md) | Это облачная служба, включенная для Управляемый экземпляр на основе технологии доставки журналов SQL Server, что делает ее вариантом миграции для клиентов, которые могут предоставлять полные, разностные резервные копии баз данных и журналов в службе хранилища Azure. LRS используется для восстановления файлов резервных копий из хранилища BLOB-объектов Azure в SQL Управляемый экземпляр.| 
@@ -186,7 +186,7 @@ SQL Server функции высокого уровня доступности A
 
 Кроме того, можно использовать [служебную программу PowerShell](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/MoveLogins) , разработанную специально для архитекторов Microsoft Data Migration Architect. Программа использует PowerShell для создания скрипта T-SQL для повторного создания имен входа и выбора пользователей базы данных из источника в целевой объект. Средство автоматически сопоставляет учетные записи Windows AD с учетными записями Azure AD и может выполнить поиск имени участника-пользователя для каждого входа в исходную Active Directory. Средство создает скрипты для пользовательских ролей сервера и базы данных, а также для членства в роли, роли базы данных и разрешений пользователей. Автономные базы данных в настоящее время не поддерживаются, и скрипты имеют только подмножество возможных SQL Server разрешений. 
 
-#### <a name="encryption"></a>Encryption
+#### <a name="encryption"></a>Шифрование
 
 При миграции баз данных, защищенных  [прозрачное шифрование данных](../../database/transparent-data-encryption-tde-overview.md),   в управляемый экземпляр с помощью собственного параметра восстановления, *перед* восстановлением базы данных [перенесите соответствующий сертификат](../../managed-instance/tde-certificate-migrate.md) из исходного SQL Server в целевой управляемый экземпляр SQL. 
 
@@ -212,7 +212,7 @@ SELECT * FROM sys.table_types WHERE is_memory_optimized=1
 SELECT * FROM sys.sql_modules WHERE uses_native_compilation=1
 ```
 
-Дополнительные сведения о технологиях в памяти см. в статье [Оптимизация производительности с помощью технологий в памяти в базе данных SQL Azure и Azure sql управляемый экземпляр](https://docs.microsoft.com/azure/azure-sql/in-memory-oltp-overview)
+Дополнительные сведения о технологиях в памяти см. в статье [Оптимизация производительности с помощью технологий в памяти в базе данных SQL Azure и Azure sql управляемый экземпляр](../../in-memory-oltp-overview.md)
 
 ## <a name="leverage-advanced-features"></a>Использование дополнительных функций 
 

@@ -1,18 +1,18 @@
 ---
 title: Перезапуск сервера-Azure CLI — база данных Azure для PostgreSQL — один сервер
 description: В этой статье описывается, как можно перезапустить базу данных Azure для PostgreSQL-Single Server с помощью Azure CLI
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
 ms.date: 5/6/2019
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: e812b7872dd4d41d9a6cb87d75403524106c5981
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: af870c495ae707dd8319645eca979f0906234b4f
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97706870"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105608397"
 ---
 # <a name="restart-azure-database-for-postgresql---single-server-using-the-azure-cli"></a>Перезапустите базу данных Azure для PostgreSQL — один сервер с помощью Azure CLI
 В этой статье объясняется, как перезапустить сервер в Базе данных Azure для PostgreSQL. Возможно, вам потребуется перезапустить сервер в целях обслуживания, что приводит к кратковременному отключению во время выполнения операции.
@@ -22,7 +22,7 @@ ms.locfileid: "97706870"
 > [!NOTE] 
 > Время, необходимое для завершения перезапуска, зависит от процесса восстановления PostgreSQL. Чтобы уменьшить время перезапуска, рекомендуем свести к минимуму объем действий, выполняемых на сервере перед перезапуском. Также может потребоваться увеличить частоту контрольных точек. Можно также настроить значения параметров, связанных с контрольной точкой `max_wal_size` , включая. Также рекомендуется выполнить `CHECKPOINT` команду перед перезапуском сервера.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 Для работы с этим руководством должны быть выполнены следующие условия.
 - Создайте [сервер базы данных Azure для PostgreSQL](quickstart-create-server-up-azure-cli.md).
 
