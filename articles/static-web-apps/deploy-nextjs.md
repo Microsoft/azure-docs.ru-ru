@@ -9,10 +9,10 @@ ms.date: 05/08/2020
 ms.author: chnwamba
 ms.custom: devx-track-js
 ms.openlocfilehash: a22d06137c3ec17851280605ac85c94ef8b342cd
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97563081"
 ---
 # <a name="deploy-static-rendered-nextjs-websites-on-azure-static-web-apps-preview"></a>Развертывание статических веб-сайтов Next.js в Статических веб-приложениях Azure (предварительная версия)
@@ -130,13 +130,13 @@ ms.locfileid: "97563081"
 
 ## <a name="deploy-your-static-website"></a>Развертывание статического веб-сайта
 
-Следующие действия демонстрируют, как связать приложение, отправленное в GitHub, со статическими веб-приложениями Azure. В Azure вы можете развернуть приложение в рабочей среде.
+Следующие действия демонстрируют, как связать приложение, отправленное в GitHub, со Статическими веб-приложениями Azure. В Azure вы можете развернуть приложение в рабочей среде.
 
 ### <a name="create-a-static-app"></a>Создание статического приложения
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
 1. Щелкните **Создать ресурс**.
-1. Выполните поиск по запросу **Статические веб-приложения**.
+1. Найдите **Статические веб-приложения**.
 1. Выберите **Статические веб-приложения (предварительная версия)** .
 1. Нажмите кнопку **Создать**.
 
@@ -146,7 +146,7 @@ ms.locfileid: "97563081"
 1. В раскрывающемся списке *Регион* выберите ближайший к вам регион.
 1. Из раскрывающегося списка номеров SKU выберите **Бесплатный**.
 
-   :::image type="content" source="media/deploy-nextjs/create-static-web-app.png" alt-text="Создание статического веб-приложения":::
+   :::image type="content" source="media/deploy-nextjs/create-static-web-app.png" alt-text="Создание Статического веб-приложения":::
 
 ### <a name="add-a-github-repository"></a>Добавление репозитория GitHub
 

@@ -8,10 +8,10 @@ ms.custom: devx-track-dotnet
 ms.topic: sample
 ms.date: 01/23/2017
 ms.openlocfilehash: 553850173f463a05b13768eb3b9e17703bfa2886
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88212292"
 ---
 # <a name="azure-cache-for-redis-samples"></a>Примеры использования кэша Redis для Azure
@@ -39,8 +39,8 @@ ms.locfileid: "88212292"
 
 В разделе [Работа с объектами .NET в кэше](cache-dotnet-how-to-use-azure-redis-cache.md#work-with-net-objects-in-the-cache) показан один из способов сериализации объектов .NET, чтобы можно было их записывать и считывать из экземпляра кэша Azure для Redis. 
 
-## <a name="use-azure-cache-for-redis-as-a-scale-out-backplane-for-aspnet-signalr"></a>Использование кэша Azure для Redis в качестве горизонтально масштабируемой панели для ASP.NET SignalR
-Пример [использования кэша Azure для Redis в качестве горизонтально масштабируемой объединительной панели SignalR для ASP.NET](https://github.com/rustd/RedisSamples/tree/master/RedisAsSignalRBackplane) демонстрирует, как можно использовать кэш Azure для Redis в качестве объединительной панели SignalR. Дополнительные сведения об объединительной панели см. в разделе [Масштабирование SignalR с помощью Redis](https://www.asp.net/signalr/overview/performance/scaleout-with-redis).
+## <a name="use-azure-cache-for-redis-as-a-scale-out-backplane-for-aspnet-signalr"></a>Использование кэша Azure для Redis в качестве масштабируемой объединительной панели для ASP.NET SignalR
+Пример [использования кэша Azure для Redis в качестве масштабируемой объединительной панели SignalR для ASP.NET](https://github.com/rustd/RedisSamples/tree/master/RedisAsSignalRBackplane) демонстрирует, как можно использовать кэш Azure для Redis в качестве объединительной панели SignalR. Дополнительные сведения об объединительной панели см. в разделе [Масштабирование SignalR с помощью Redis](https://www.asp.net/signalr/overview/performance/scaleout-with-redis).
 
 ## <a name="azure-cache-for-redis-customer-query-sample"></a>Пример запроса клиента кэша Azure для Redis
 Этот пример сравнивает производительность при доступе к данным из кэша и при доступе к данным из хранилища сохраняемости. Этот пример содержит два проекта.

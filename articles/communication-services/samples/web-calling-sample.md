@@ -6,15 +6,15 @@ author: chriswhilar
 manager: mariusu-msft
 services: azure-communication-services
 ms.author: mariusu
-ms.date: 10/15/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: aadecd3c57f5a145efd43058a5113205d7517c0b
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 824fd19e8acfed75ab3d64048a00f579b70286d2
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102486409"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496241"
 ---
 # <a name="get-started-with-the-web-calling-sample"></a>Начало работы с примером веб-вызова
 
@@ -88,12 +88,12 @@ ms.locfileid: "102486409"
 
 - Изучите, как правильно [использовать клиентскую библиотеку вызовов](../quickstarts/voice-video-calling/calling-client-samples.md).
 - Узнайте больше о [принципе работы функции вызовов](../concepts/voice-video-calling/about-call-types.md).
-- Ознакомьтесь со [справочной документацией по API](/javascript/api/azure-communication-services/@azure/communication-calling/?view=azure-communication-services-js).
+- Ознакомьтесь со [справочной документацией по API](/javascript/api/azure-communication-services/@azure/communication-calling/).
 - Изучите пример приложения [Contoso MED](https://github.com/Azure-Samples/communication-services-contoso-med-app).
 
 ## <a name="additional-reading"></a>Дополнительные материалы
 
-- [Службы коммуникации Azure (GitHub)](https://github.com/Azure/communication) — дополнительные примеры и сведения на официальной странице GitHub
+- [Примеры](./overview.md): дополнительные примеры см. на нашей странице обзора примеров.
 - [Redux](https://redux.js.org/) — управление состоянием на стороне клиента
 - [FluentUI](https://aka.ms/fluent-ui) — библиотека пользовательского интерфейса, поддерживаемая корпорацией Майкрософт
 - [React](https://reactjs.org/) — библиотека для создания пользовательских интерфейсов

@@ -13,10 +13,10 @@ ms.custom: seo-lt-2019
 ms.topic: quickstart
 ms.date: 03/13/2020
 ms.openlocfilehash: 39f893e9375970ff4bb6e3cfa2c93ceea48ec896
-ms.sourcegitcommit: 03713bf705301e7f567010714beb236e7c8cee6f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92331810"
 ---
 # <a name="quickstart-create-a-hybrid-mode-instance-with-azure-portal--azure-database-migration-service"></a>Краткое руководство. Создание экземпляра в гибридном режиме с помощью портала Azure и Azure Database Migration Service
@@ -51,33 +51,33 @@ ms.locfileid: "92331810"
 
 Прежде чем создать свой первый экземпляр Azure Database Migration Service, зарегистрируйте поставщик ресурсов Microsoft.DataMigration.
 
-1. На портале Azure щелкните **Подписки** , выберите подписку, в которой нужно создать экземпляр Azure Database Migration Service, а затем щелкните **Поставщики ресурсов** .
+1. На портале Azure щелкните **Подписки**, выберите подписку, в которой нужно создать экземпляр Azure Database Migration Service, а затем щелкните **Поставщики ресурсов**.
 
     ![Поиск поставщика ресурсов](media/quickstart-create-data-migration-service-hybrid-portal/dms-portal-search-resource-provider.png)
 
-2. В поле поиска введите migration, а затем справа от **Microsoft.DataMigration** щелкните **Зарегистрировать** .
+2. В поле поиска введите migration, а затем справа от **Microsoft.DataMigration** щелкните **Зарегистрировать**.
 
     ![Регистрация поставщика ресурсов](media/quickstart-create-data-migration-service-hybrid-portal/dms-portal-register-resource-provider.png)
 
 ## <a name="create-an-instance-of-the-service"></a>Создание экземпляра службы
 
-1. Щелкните **+Создать ресурс** , чтобы создать экземпляр Azure Database Migration Service.
+1. Щелкните **+Создать ресурс**, чтобы создать экземпляр Azure Database Migration Service.
 
-2. Выполните в Marketplace поиск по слову "migration" (миграция), выберите службу **Azure Database Migration Service** , а затем на экране **Azure Database Migration Service** нажмите кнопку **Создать** .
+2. Выполните в Marketplace поиск по слову "migration" (миграция), выберите службу **Azure Database Migration Service**, а затем на экране **Azure Database Migration Service** нажмите кнопку **Создать**.
 
 3. На экране **Создать Migration Service** сделайте следующее:
 
-    - Выберите **имя службы** , которое хорошо запоминается и будет уникальным для идентификации экземпляра Azure Database Migration Service.
+    - Выберите **имя службы**, которое хорошо запоминается и будет уникальным для идентификации экземпляра Azure Database Migration Service.
     - Выберите **подписку** Azure, в которой нужно создать экземпляр.
     - Выберите существующую **группу ресурсов** или создайте новую.
-    - Выберите **расположение** , наиболее близкое к исходному или целевому серверу.
+    - Выберите **расположение**, наиболее близкое к исходному или целевому серверу.
     - Для параметра **Режим службы** выберите **Гибридная служба (предварительная версия)** .
 
          ![Создание службы миграции: основы](media/quickstart-create-data-migration-service-hybrid-portal/dms-create-service-basics.png)
 
-4. Выберите **Просмотреть и создать** .
+4. Выберите **Просмотреть и создать**.
 
-5. На вкладке **Просмотр и создание** просмотрите условия, проверьте другие предоставленные сведения, а затем выберите **Создать** .
+5. На вкладке **Просмотр и создание** просмотрите условия, проверьте другие предоставленные сведения, а затем выберите **Создать**.
 
     ![Создание службы миграции: просмотр и создание](media/quickstart-create-data-migration-service-hybrid-portal/dms-create-service-review-and-create.png)
 
@@ -85,7 +85,7 @@ ms.locfileid: "92331810"
 
     ![Создание экземпляра Azure Database Migration Service в гибридном режиме](media/quickstart-create-data-migration-service-hybrid-portal/dms-instance-hybrid-mode.png)
 
-6. После создания службы выберите **Свойства** , а затем скопируйте значение поля **Идентификатор ресурса** , которое будет использоваться для установки гибридной рабочей роли Azure Database Migration Service.
+6. После создания службы выберите **Свойства**, а затем скопируйте значение поля **Идентификатор ресурса**, которое будет использоваться для установки гибридной рабочей роли Azure Database Migration Service.
 
     ![Свойства экземпляра Azure Database Migration Service в гибридном режиме](media/quickstart-create-data-migration-service-hybrid-portal/dms-copy-resource-id.png)
 
@@ -93,30 +93,30 @@ ms.locfileid: "92331810"
 
 Необходимо создать идентификатор регистрации приложения Azure, который локальный гибридная рабочая роль сможет использовать для взаимодействия с Azure Database Migration Service в облаке.
 
-1. Войдите на **портал Azure** и выберите **Azure Active Directory** , а затем выберите **Новая регистрация** .
+1. Войдите на **портал Azure** и выберите **Azure Active Directory**, а затем выберите **Новая регистрация**.
 2. Укажите имя приложения, а затем в разделе **Поддерживаемые типы учетных записей** выберите поддерживаемый тип учетных записей, чтобы указать, кто может использовать приложение.
 
     ![Azure Database Migration Service в гибридном режиме: регистрация приложения](media/quickstart-create-data-migration-service-hybrid-portal/dms-register-application.png)
 
-3. Используйте значения по умолчанию для полей **URI перенаправления (необязательно)** , а затем выберите **Зарегистрировать** .
+3. Используйте значения по умолчанию для полей **URI перенаправления (необязательно)** , а затем выберите **Зарегистрировать**.
 
 4. После завершения регистрации идентификатора приложения запишите **идентификатор приложения (клиента)** , который будет использоваться при установке гибридной рабочей роли.
 
-5. На портале Azure перейдите к Azure Database Migration Service, выберите **Управление доступом (IAM)** , а затем выберите **Добавить назначение ролей** , чтобы назначить участнику доступ по идентификатору приложения.
+5. На портале Azure перейдите к Azure Database Migration Service, выберите **Управление доступом (IAM)** , а затем выберите **Добавить назначение ролей**, чтобы назначить участнику доступ по идентификатору приложения.
 
     ![Azure Database Migration Service в гибридном режиме: назначение роли участника](media/quickstart-create-data-migration-service-hybrid-portal/dms-app-assign-contributor.png)
 
-6. Выберите **Участник** в качестве роли, назначьте доступ для **пользователя Azure AD или субъекта-службы** , а затем выберите имя идентификатора приложения.
+6. Выберите **Участник** в качестве роли, назначьте доступ для **пользователя Azure AD или субъекта-службы**, а затем выберите имя идентификатора приложения.
 
     ![Azure Database Migration Service в гибридном режиме: сведения о назначении роли участника](media/quickstart-create-data-migration-service-hybrid-portal/dms-add-role-assignment.png)
 
-7. Выберите **Сохранить** , чтобы сохранить назначение роли для идентификатора приложения для ресурса Azure Database Migration Service.
+7. Выберите **Сохранить**, чтобы сохранить назначение роли для идентификатора приложения для ресурса Azure Database Migration Service.
 
 ## <a name="download-and-install-the-hybrid-worker"></a>Скачивание и установка гибридной рабочей роли
 
 1. На портале Azure перейдите к своему экземпляру Azure Database Migration Service.
 
-2. В разделе **Параметры** выберите **Гибридные** , а затем выберите **Скачать установщик** , чтобы скачать гибридную рабочую роль.
+2. В разделе **Параметры** выберите **Гибридные**, а затем выберите **Скачать установщик**, чтобы скачать гибридную рабочую роль.
 
     ![Скачивание гибридной рабочей роли Azure Database Migration Service](media/quickstart-create-data-migration-service-hybrid-portal/dms-installer-download.png)
 
@@ -125,7 +125,7 @@ ms.locfileid: "92331810"
     > [!IMPORTANT]
     > Для гибридного установщика Azure Database Migration Service требуется .NET 4.7.2 или более поздней версии. Чтобы найти последние версии .NET, перейдите на страницу скачивания [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).
 
-4. В папке установки найдите и откройте файл **dmsSettings.json** , укажите в нем **ApplicationId** и **resourceId** , а затем сохраните этот файл.
+4. В папке установки найдите и откройте файл **dmsSettings.json**, укажите в нем **ApplicationId** и **resourceId**, а затем сохраните этот файл.
 
     ![Параметры гибридной рабочей роли Azure Database Migration Service](media/quickstart-create-data-migration-service-hybrid-portal/dms-settings.png)
 
@@ -139,7 +139,7 @@ ms.locfileid: "92331810"
 
     ![Сертификат гибридной рабочей роли Azure Database Migration Service](media/quickstart-create-data-migration-service-hybrid-portal/dms-certificate.png)
 
-6. На портале Azure перейдите к идентификатору приложения в разделе **Управление** , выберите **Сертификаты и секреты** , а затем выберите **Отправить сертификат** , чтобы выбрать созданный открытый сертификат.
+6. На портале Azure перейдите к идентификатору приложения в разделе **Управление**, выберите **Сертификаты и секреты**, а затем выберите **Отправить сертификат**, чтобы выбрать созданный открытый сертификат.
 
     ![Передача сертификата гибридной рабочей роли Azure Database Migration Service](media/quickstart-create-data-migration-service-hybrid-portal/dms-app-upload-certificate.png)
 
@@ -152,7 +152,7 @@ ms.locfileid: "92331810"
     > [!NOTE]
     > При выполнении команды "install" можно также использовать приведенные ниже параметры.
     >
-    > - **-TelemetryOptOut**  — останавливает отправку данных телеметрии рабочей ролью, но продолжает вести журнал, как минимум локально.  Установщик по-прежнему отправляет данные телеметрии.
+    > - **-TelemetryOptOut** — останавливает отправку данных телеметрии рабочей ролью, но продолжает вести журнал, как минимум локально.  Установщик по-прежнему отправляет данные телеметрии.
     > - **-p {InstallLocation}** . Включает изменение пути установки, который по умолчанию имеет значение "C:\Program Files\DatabaseMigrationServiceHybrid".
 
 8. Если установщик выполнится без ошибок, служба будет показывать состояние "В сети" для Azure Database Migration Service и все будет готово к миграции баз данных.

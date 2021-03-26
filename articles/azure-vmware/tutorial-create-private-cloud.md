@@ -1,18 +1,18 @@
 ---
-title: Учебник. Создание и развертывание частного облака Решения Azure VMware
+title: Руководство. Развертывание частного облака Решения Azure VMware
 description: Сведения о том, как создать и развернуть частное облако Решения Azure VMware.
 ms.topic: tutorial
 ms.date: 02/22/2021
-ms.openlocfilehash: 2afd88bca05a9bcab309faff373bedf6a22e9f4b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ed916305cd1a67162f07c24e3bf97766e5389b74
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101725430"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462173"
 ---
-# <a name="tutorial-create-an-azure-vmware-solution-private-cloud"></a>Руководство. Создание частного облака Решения Azure VMware
+# <a name="tutorial-deploy-an-azure-vmware-solution-private-cloud"></a>Руководство. Развертывание частного облака Решения Azure VMware
 
-В этом учебнике описывается, как создать и развернуть частное облако Решения Azure VMware. Первоначальное развертывание должно включать не менее трех узлов. Далее можно по одному добавлять дополнительные узлы, но не более 16 узлов на кластер. 
+Решение Azure VMware позволяет развернуть в Azure кластер vSphere. Минимальное первоначальное развертывание должно включать три узла. Далее можно по одному добавлять дополнительные узлы, но не более 16 узлов на кластер.
 
 Так как Решение Azure VMware не позволяет при запуске управлять частным облаком из локального экземпляра vCenter, нужно выполнить дополнительную настройку. Такие процедуры и соответствующие требования описаны в этом учебнике.
 
@@ -48,7 +48,7 @@ ms.locfileid: "101725430"
 
 #### <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Создайте группу ресурсов с помощью команды `[az group create](/cli/azure/group)`. Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими. В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus*.
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group). Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими. В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus*.
 
 ```azurecli-interactive
 

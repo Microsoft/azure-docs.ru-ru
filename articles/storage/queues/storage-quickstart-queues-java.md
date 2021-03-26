@@ -9,10 +9,10 @@ ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-java
 ms.openlocfilehash: 814531adc9dafa524797d0c2674a1e600e407bed
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97588222"
 ---
 # <a name="quickstart-azure-queue-storage-client-library-v12-for-java"></a>Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 для Java
@@ -179,8 +179,8 @@ public class App
 
 - [`QueueClientBuilder`](/java/api/com.azure.storage.queue.queueclientbuilder): Класс `QueueClientBuilder` настраивает объект `QueueClient` и создает его экземпляр.
 - [`QueueServiceClient`](/java/api/com.azure.storage.queue.queueserviceclient): `QueueServiceClient` позволяет управлять всеми очередями в учетной записи хранения.
-- [`QueueClient`](/java/api/com.azure.storage.queue.queueclient): Класс `QueueClient` позволяет управлять отдельной очередью и сообщениями в ней.
-- [`QueueMessageItem`](/java/api/com.azure.storage.queue.models.queuemessageitem): Класс `QueueMessageItem` представляет отдельные объекты, которые возвращаются при вызове [`ReceiveMessages`](/java/api/com.azure.storage.queue.queueclient.receivemessages) для очереди.
+- [`QueueClient`](/java/api/com.azure.storage.queue.queueclient). Класс `QueueClient` позволяет управлять отдельной очередью и сообщениями в ней.
+- [`QueueMessageItem`](/java/api/com.azure.storage.queue.models.queuemessageitem). Класс `QueueMessageItem` представляет отдельные объекты, которые возвращаются при вызове [`ReceiveMessages`](/java/api/com.azure.storage.queue.queueclient.receivemessages) для очереди.
 
 ## <a name="code-examples"></a>Примеры кода
 

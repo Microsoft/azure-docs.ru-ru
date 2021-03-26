@@ -4,21 +4,23 @@ description: Из этого краткого руководства вы узн
 author: kgremban
 manager: philmea
 ms.author: kgremban
-ms.date: 12/02/2020
+ms.date: 03/12/2021
 ms.topic: quickstart
 ms.service: iot-edge
 services: iot-edge
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: ff9ba73e71e4525fe56a3cbb54626030f57e990b
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.openlocfilehash: 37f4a63d0a901fd70e0a60bb435efdaf08868616
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96920795"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463487"
 ---
 # <a name="quickstart-deploy-your-first-iot-edge-module-to-a-virtual-linux-device"></a>Краткое руководство. Развертывание модуля IoT Edge на виртуальном устройстве Linux
 
-Проверьте работу Azure IoT Edge, как описано в этом кратком руководстве, развернув контейнерный код на виртуальном устройстве IoT Edge (Linux). IoT Edge позволяет удаленно управлять кодом на устройствах, чтобы вы могли передавать больше рабочих нагрузок на пограничные устройства. Для работы с этим кратким руководством мы рекомендуем использовать виртуальную машину Azure для устройства IoT Edge. Так вы сможете быстро создать виртуальную машину для тестирования с установленной службой IoT Edge, а затем удалить ее по завершении работы.
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
+
+Проверьте работу Azure IoT Edge, как описано в этом кратком руководстве, развернув контейнерный код на виртуальном устройстве IoT Edge (Linux). IoT Edge позволяет удаленно управлять кодом на устройствах, чтобы вы могли передавать больше рабочих нагрузок на пограничные устройства. При работе с этим кратким руководством мы рекомендуем использовать виртуальную машину Azure для устройства IoT Edge. Так вы сможете быстро создать виртуальную машину для тестирования, а затем удалить ее по завершении работы.
 
 Из этого краткого руководства вы узнаете, как выполнять следующие задачи:
 
@@ -41,7 +43,7 @@ ms.locfileid: "96920795"
 
 Облачные ресурсы.
 
-- Группа ресурсов для управления всеми ресурсами, которые вы используете в этом кратком руководстве. В этом кратком руководстве и последующих руководствах мы используем пример имени группы ресурсов **IoTEdgeResources**.
+* Группа ресурсов для управления всеми ресурсами, которые вы используете в этом кратком руководстве. В этом кратком руководстве и последующих руководствах мы используем пример имени группы ресурсов **IoTEdgeResources**.
 
    ```azurecli-interactive
    az group create --name IoTEdgeResources --location westus2
@@ -103,6 +105,9 @@ ms.locfileid: "96920795"
 
 В этом разделе используется шаблон Azure Resource Manager для создания виртуальной машины и установки на ней среды выполнения IoT Edge. Если вы хотите использовать собственное устройство Linux, см. статью [Установка или удаление среды выполнения Azure IoT Edge](how-to-install-iot-edge.md).
 
+<!-- 1.1 -->
+:::moniker range="iotedge-2018-06"
+
 Используйте следующую команду CLI, чтобы создать устройство IoT Edge на основе предварительно созданного шаблона [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy).
 
 * Пользователям Bash и Cloud Shell нужно скопировать следующую команду в текстовый редактор, а затем заменить текст заполнителя своими данными и скопировать его в окно Bash или Cloud Shell:
@@ -113,8 +118,7 @@ ms.locfileid: "96920795"
    --template-uri "https://aka.ms/iotedge-vm-deploy" \
    --parameters dnsLabelPrefix='<REPLACE_WITH_VM_NAME>' \
    --parameters adminUsername='azureUser' \
-   --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name
-   <REPLACE_WITH_HUB_NAME> -o tsv) \
+   --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name <REPLACE_WITH_HUB_NAME> -o tsv) \
    --parameters authenticationType='password' \
    --parameters adminPasswordOrKey="<REPLACE_WITH_PASSWORD>"
    ```
@@ -131,6 +135,42 @@ ms.locfileid: "96920795"
    --parameters authenticationType='password' `
    --parameters adminPasswordOrKey="<REPLACE_WITH_PASSWORD>"
    ```
+
+:::moniker-end
+<!-- end 1.1 -->
+
+<!-- 1.2 -->
+:::moniker range=">=iotedge-2020-11"
+
+Используйте следующую команду CLI, чтобы создать устройство IoT Edge на основе предварительно созданного шаблона [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy/tree/1.2.0-rc4).
+
+* Пользователям Bash и Cloud Shell нужно скопировать следующую команду в текстовый редактор, а затем заменить текст заполнителя своими данными и скопировать его в окно Bash или Cloud Shell:
+
+   ```azurecli-interactive
+   az deployment group create \
+   --resource-group IoTEdgeResources \
+   --template-uri "https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/1.2.0-rc4/edgeDeploy.json" \
+   --parameters dnsLabelPrefix='<REPLACE_WITH_VM_NAME>' \
+   --parameters adminUsername='azureUser' \
+   --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name <REPLACE_WITH_HUB_NAME> -o tsv) \
+   --parameters authenticationType='password' \
+   --parameters adminPasswordOrKey="<REPLACE_WITH_PASSWORD>"
+   ```
+
+* Пользователям PowerShell нужно скопировать следующую команду в окно PowerShell, а затем заменить текст заполнителя своими данными:
+
+   ```azurecli
+   az deployment group create `
+   --resource-group IoTEdgeResources `
+   --template-uri "https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/1.2.0-rc4/edgeDeploy.json" `
+   --parameters dnsLabelPrefix='<REPLACE_WITH_VM_NAME>' `
+   --parameters adminUsername='azureUser' `
+   --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name <REPLACE_WITH_HUB_NAME> -o tsv) `
+   --parameters authenticationType='password' `
+   --parameters adminPasswordOrKey="<REPLACE_WITH_PASSWORD>"
+   ```
+:::moniker-end
+<!-- end 1.2 -->
 
 Этот шаблон принимает следующие параметры:
 
@@ -158,6 +198,9 @@ ms.locfileid: "96920795"
 
 Подключившись к виртуальной машине, убедитесь, что среда выполнения установлена и настроена на устройстве IoT Edge.
 
+<!--1.1 -->
+:::moniker range="iotedge-2018-06"
+
 1. Убедитесь, что управляющая программа безопасности IoT Edge выполняется как системная служба.
 
    ```bash
@@ -182,6 +225,35 @@ ms.locfileid: "96920795"
    ```
 
    ![Просмотр данных об одном модуле на устройстве](./media/quickstart-linux/iotedge-list-1.png)
+:::moniker-end
+<!-- end 1.1 -->
+
+<!-- 1.2 -->
+:::moniker range=">=iotedge-2020-11"
+
+1. Убедитесь, что служба IoT Edge запущена. Следующая команда должна вернуть состояние **ОК**, если IoT Edge выполняется, или предоставить ошибки службы.
+
+   ```bash
+   sudo iotedge system status
+   ```
+
+   >[!TIP]
+   >Для запуска команд `iotedge` требуется более высокий уровень привилегий. После установки среды выполнения IoT Edge, выхода из компьютера и обратного входа ваши разрешения обновляются автоматически. До этого момента используйте перед командой префикс `sudo`.
+
+2. Если нужно устранить неполадки со службой, извлеките журналы службы.
+
+   ```bash
+   sudo iotedge system logs
+   ```
+
+3. Просмотрите данные обо всех модулях, запущенных на устройстве IoT Edge. Так как служба запущена первый раз, отобразится только запущенный модуль **edgeAgent**. Модуль edgeAgent запускается по умолчанию и позволяет установить и запустить любые дополнительные модули, развертываемые на устройстве.
+
+   ```bash
+   sudo iotedge list
+   ```
+
+:::moniker-end
+<!-- end 1.2 -->
 
 Теперь устройство IoT Edge настроено. Оно готово для запуска модулей, развернутых в облаке.
 
@@ -192,6 +264,31 @@ ms.locfileid: "96920795"
 ![Схема: развертывание модуля из облака на устройство](./media/quickstart-linux/deploy-module.png)
 
 [!INCLUDE [iot-edge-deploy-module](../../includes/iot-edge-deploy-module.md)]
+
+<!-- 1.2 -->
+:::moniker range=">=iotedge-2020-11"
+
+Так как IoT Edge версии 1.2 находится на этапе общедоступной предварительной версии, необходимо выполнить дополнительные действия для обновления модулей среды выполнения также до уровня их общедоступной предварительной версии.
+
+1. На странице с подробными сведениями об устройстве выберите элемент **Задание модулей** еще раз.
+
+1. Выберите **Параметры среды выполнения**.
+
+1. Обновите поле **Образ** как для центра IoT Edge, так и для модулей агента IoT Edge, настроив использование тега версии 1.2.0-rc4. Например:
+
+   * `mcr.microsoft.com/azureiotedge-hub:1.2.0-rc4`
+   * `mcr.microsoft.com/azureiotedge-agent:1.2.0-rc4`
+
+1. В разделе модулей по-прежнему должен присутствовать смоделированный модуль датчика температуры. Для общедоступной предварительной версии не нужно вносить изменения в этот модуль.
+
+1. Выберите **Review + create** (Просмотреть и создать).
+
+1. Нажмите кнопку **создания**.
+
+1. На странице с подробными сведениями об устройстве можно выбрать **$edgeAgent** или **$edgeHub**, чтобы увидеть сведения о модуле, показывающие общедоступную предварительную версию образа.
+
+:::moniker-end
+<!-- end 1.2 -->
 
 ## <a name="view-generated-data"></a>Просмотр сформированных данных
 
@@ -205,7 +302,15 @@ ms.locfileid: "96920795"
    sudo iotedge list
    ```
 
-   ![Просмотр трех модулей на устройстве](./media/quickstart-linux/iotedge-list-2.png)
+<!-- 1.1 -->
+:::moniker range="iotedge-2018-06"
+   ![Просмотр трех модулей на устройстве](./media/quickstart-linux/iotedge-list-2-version-201806.png)
+:::moniker-end
+
+<!-- 1.2 -->
+:::moniker range=">=iotedge-2020-11"
+   ![Просмотр трех модулей на устройстве](./media/quickstart-linux/iotedge-list-2-version-202011.png)
+:::moniker-end
 
 Убедитесь, что сообщения отправляются из модуля датчика температуры.
 
@@ -232,7 +337,7 @@ ms.locfileid: "96920795"
 Удалите группу **IoTEdgeResources**. Удаление группы ресурсов может занять несколько минут.
 
 ```azurecli-interactive
-az group delete --name IoTEdgeResources
+az group delete --name IoTEdgeResources --yes
 ```
 
 Чтобы проверить, удалена ли группа ресурсов, просмотрите список групп ресурсов.

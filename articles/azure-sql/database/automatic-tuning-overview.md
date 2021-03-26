@@ -10,13 +10,13 @@ ms.topic: conceptual
 author: danimir
 ms.author: danil
 ms.reviewer: wiassaf, sstein
-ms.date: 03/30/2020
-ms.openlocfilehash: 4204254754307f8310d5ccfda19400de57381075
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/23/2021
+ms.openlocfilehash: 6bd8d6001fcd3bfa487259aa219ff771f26a8a94
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96500875"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951289"
 ---
 # <a name="automatic-tuning-in-azure-sql-database-and-azure-sql-managed-instance"></a>Автоматическая настройка в базе данных SQL Azure и Управляемый экземпляр Azure SQL
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -54,8 +54,8 @@ ms.locfileid: "96500875"
 
 ## <a name="enable-automatic-tuning"></a>Включение автоматической настройки
 
-- [Автоматическая настройка базы данных SQL Azure включается в портал Azure](automatic-tuning-enable.md) или с помощью инструкции [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql-set-options?view=azuresqldb-current) T-SQL.
-- Включить автоматическую настройку для Управляемый экземпляр SQL Azure можно с помощью инструкции [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql-set-options?view=azuresqldb-mi-current) T-SQL.
+- [Автоматическая настройка базы данных SQL Azure включается в портал Azure](automatic-tuning-enable.md) или с помощью инструкции [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql-set-options?view=azuresqldb-current&preserve-view=true) T-SQL.
+- Включить автоматическую настройку для Управляемый экземпляр SQL Azure можно с помощью инструкции [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql-set-options?view=azuresqldb-mi-current&preserve-view=true) T-SQL.
 
 ## <a name="automatic-tuning-options"></a>Параметры автоматической настройки
 
@@ -64,7 +64,7 @@ ms.locfileid: "96500875"
 | Параметр автоматической настройки | Поддержка отдельной базы данных и базы данных в пуле | Поддержка базы данных экземпляра |
 | :----------------------------- | ----- | ----- |
 | **Создание индекса** — определяет индексы, которые могут повысить производительность рабочей нагрузки, создает индексы и автоматически проверяет производительность запросов. | Да | Нет |
-| **DROP INDEX** — ежедневно идентифицирует избыточные и повторяющиеся индексы, за исключением уникальных индексов и индексов, которые не использовались в течение длительного времени (>90 дней). Обратите внимание, что эта функция несовместима с приложениями, которые используют переключения секций и подсказки индекса. Удаление неиспользуемых индексов не поддерживается для уровней обслуживания "Премиум" и "критически важный для бизнеса". | Да | Нет |
+| **DROP INDEX** — удаляет неиспользуемые (за последние 90 дней) и Дублирующиеся индексы. Уникальные индексы, включая индексы, поддерживающие ограничения PRIMARY KEY и UNIQUE, никогда не удаляются. Этот параметр может быть автоматически отключен, если в рабочей нагрузке имеются запросы с указаниями индекса или если Рабочая нагрузка выполняет переключение секций. На уровнях служб "Премиум" и "критически важный для бизнеса" Этот параметр никогда не удаляет неиспользуемые индексы, но при необходимости удаляет дублирующиеся индексы. | Да | Нет |
 | **Принудительный последний хороший план** (автоматическое исправление плана) — определяет запросы SQL Azure с использованием плана выполнения, который медленнее предыдущего, и запросов, использующих Последний известный план, а не регрессивный план. | Да | Да |
 
 ### <a name="automatic-tuning-for-sql-database"></a>Автоматическая настройка базы данных SQL
@@ -90,7 +90,7 @@ ms.locfileid: "96500875"
 
 ### <a name="automatic-tuning-for-azure-sql-managed-instance"></a>Автоматическая настройка Управляемый экземпляр Azure SQL
 
-Автоматическая настройка SQL Управляемый экземпляр поддерживает только **последний хороший план**. Дополнительные сведения о настройке параметров автоматической настройки с помощью T-SQL см. в разделе [Автоматическая настройка содержит автоматическое исправление плана](https://azure.microsoft.com/blog/automatic-tuning-introduces-automatic-plan-correction-and-t-sql-management/) и [Автоматическое исправление плана](/sql/relational-databases/automatic-tuning/automatic-tuning?view=sql-server-ver15#automatic-plan-correction).
+Автоматическая настройка SQL Управляемый экземпляр поддерживает только **последний хороший план**. Дополнительные сведения о настройке параметров автоматической настройки с помощью T-SQL см. в разделе [Автоматическая настройка содержит автоматическое исправление плана](https://azure.microsoft.com/blog/automatic-tuning-introduces-automatic-plan-correction-and-t-sql-management/) и [Автоматическое исправление плана](/sql/relational-databases/automatic-tuning/automatic-tuning#automatic-plan-correction).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
