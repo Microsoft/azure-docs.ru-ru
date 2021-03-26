@@ -6,12 +6,12 @@ ms.author: andbrown
 ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
-ms.openlocfilehash: b9d40848abdd85beeca592001b697e3c50b7cd59
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 15f76488790249f7e301d4474772c500c8829b77
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103008568"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105565645"
 ---
 # <a name="import-new-update"></a>Импорт нового обновления
 Узнайте, как импортировать новое обновление в центр обновления для центра Интернета вещей. Если вы еще не сделали этого, обязательно ознакомьтесь с основными [понятиями импорта](import-concepts.md).
@@ -21,7 +21,7 @@ ms.locfileid: "103008568"
 * [Доступ к центру Интернета вещей с включенным обновлением устройства для центра Интернета вещей](create-device-update-account.md). Для центра Интернета вещей рекомендуется использовать уровень S1 (стандартный) или выше. 
 * Устройство IoT (или симулятор), подготовленное для обновления устройства в центре Интернета вещей.
    * При использовании реального устройства вам потребуется файл образа обновления для обновления образа или [файл манифеста APT](device-update-apt-manifest.md) для обновления пакета.
-* [PowerShell 5](https://docs.microsoft.com/powershell/scripting/install/installing-powershell) или более поздней версии.
+* [PowerShell 5](/powershell/scripting/install/installing-powershell) или более поздней версии.
 * Поддерживаемые браузеры:
   * [Microsoft Edge](https://www.microsoft.com/edge)
   * Google Chrome
@@ -57,8 +57,8 @@ ms.locfileid: "103008568"
 
     | Параметр | Описание |
     | --------- | ----------- |
-    | deviceManufacturer | Изготовитель устройства, совместимое с обновлением, например contoso. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties)производителя.
-    | deviceModel | Модель устройства, совместимое с обновлением, например тостер. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties)модели.
+    | deviceManufacturer | Изготовитель устройства, совместимое с обновлением, например contoso. Должно соответствовать  [свойству устройства](./device-update-plug-and-play.md#device-properties)производителя.
+    | deviceModel | Модель устройства, совместимое с обновлением, например тостер. Должно соответствовать  [свойству устройства](./device-update-plug-and-play.md#device-properties)модели.
     | упдатепровидер | Сущность, которая создает или непосредственно отвечает за обновление. Часто это будет название компании.
     | упдатенаме | Идентификатор класса обновлений. Класс может быть любым выбранным. Как правило, это имя устройства или модели.
     | упдатеверсион | Номер версии, отличающий это обновление от других, имеющих одного и того же поставщика и имя. Не соответствует версии отдельного программного компонента на устройстве (но может быть, если вы выбрали).
@@ -153,7 +153,7 @@ ms.locfileid: "103008568"
 
    :::image type="content" source="media/import-update/update-ready.png" alt-text="Состояние задания" lightbox="media/import-update/update-ready.png":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 [Создание групп](create-update-group.md)
 

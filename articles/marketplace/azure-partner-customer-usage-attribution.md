@@ -8,12 +8,12 @@ author: cpercy737
 ms.author: camper
 ms.date: 03/22/2021
 ms.custom: devx-track-terraform
-ms.openlocfilehash: ed7f27b0b8fde902f4ae9b65b9f6b4ada78f79c6
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: 53edd3ec9a8d30d0c25f994db4a8b6f0199c2169
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104799196"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558420"
 ---
 # <a name="azure-customer-usage-attribution"></a>Атрибуты использования клиентов Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "104799196"
 
 ## <a name="commercial-marketplace-azure-apps"></a>Приложения Azure для коммерческого рынка
 
-Отслеживание использования Azure из приложений Azure, опубликованных в коммерческом магазине, происходит в основном автоматически. При отправке диспетчер ресурсов шаблона в рамках [технической настройки плана приложения Azure Marketplace](https://docs.microsoft.com/azure/marketplace/create-new-azure-apps-offer-solution#define-the-technical-configuration)центр партнеров добавит идентификатор отслеживания, доступный для чтения Azure Resource Manager.
+Отслеживание использования Azure из приложений Azure, опубликованных в коммерческом магазине, происходит в основном автоматически. При отправке диспетчер ресурсов шаблона в рамках [технической настройки плана приложения Azure Marketplace](./create-new-azure-apps-offer-solution.md#define-the-technical-configuration)центр партнеров добавит идентификатор отслеживания, доступный для чтения Azure Resource Manager.
 
 При использовании Azure Resource Manager API-интерфейсов необходимо добавить идентификатор отслеживания в соответствии с [приведенными ниже инструкциями](#use-resource-manager-apis) , чтобы передать его Azure Resource Manager как код развертывает ресурсы. Этот идентификатор отображается в центре партнеров на странице технической конфигурации вашего плана. 
 
@@ -241,7 +241,7 @@ provider "azurerm" {
 > [!IMPORTANT]
 > Если вы используете terraform с приложением Azure в коммерческом магазине, используйте весь идентификатор отслеживания, предоставленный в центре партнеров. НЕ используйте идентификатор GUID.
 
-## <a name="get-support"></a>Получение поддержки
+## <a name="get-support"></a>Техническая поддержка
 
 Узнайте о вариантах поддержки в коммерческом магазине по [поддержке программы коммерческого рынка в центре партнеров](support.md).
 

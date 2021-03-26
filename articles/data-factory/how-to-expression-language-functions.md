@@ -7,12 +7,12 @@ ms.reviewer: jburchel
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 03/08/2020
-ms.openlocfilehash: 090c738d06b9b8acd53a4c194e97fa3a0515e1d6
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: c9e1abc5fb6f66981f56bc262319587d9fc4265e
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104783393"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566665"
 ---
 # <a name="how-to-use-parameters-expressions-and-functions-in-azure-data-factory"></a>Как использовать параметры, выражения и функции в фабрике данных Azure
 
@@ -25,7 +25,7 @@ ms.locfileid: "104783393"
 
 ## <a name="azure-data-factory-ui-and-parameters"></a>Пользовательский интерфейс и параметры фабрики данных Azure
 
-Если вы не знакомы с использованием параметра фабрики данных Azure в пользовательском интерфейсе ADF, проверьте [Пользовательский интерфейс фабрики данных для связанных служб с параметрами](https://docs.microsoft.com/azure/data-factory/parameterize-linked-services#data-factory-ui)  и [интерфейсом пользователя фабрики данных для конвейера, управляемого метаданными, с параметрами](https://docs.microsoft.com/azure/data-factory/how-to-use-trigger-parameterization#data-factory-ui) визуального объяснения.
+Если вы не знакомы с использованием параметра фабрики данных Azure в пользовательском интерфейсе ADF, проверьте [Пользовательский интерфейс фабрики данных для связанных служб с параметрами](./parameterize-linked-services.md#data-factory-ui)  и [интерфейсом пользователя фабрики данных для конвейера, управляемого метаданными, с параметрами](./how-to-use-trigger-parameterization.md#data-factory-ui) визуального объяснения.
 
 ## <a name="parameter-and-expression-concepts"></a>Основные понятия параметров и выражений 
 
@@ -313,11 +313,11 @@ ms.locfileid: "104783393"
 
 ### <a name="detailed--mapping-data-flow-pipeline-with-parameters"></a>Подробный конвейер потока данных сопоставления с параметрами 
 
-Выполните [сопоставление потока данных с параметрами,](https://docs.microsoft.com/azure/data-factory/parameters-data-flow) чтобы получить исчерпывающий пример использования параметров в потоке данных.
+Выполните [сопоставление потока данных с параметрами,](./parameters-data-flow.md) чтобы получить исчерпывающий пример использования параметров в потоке данных.
 
 ### <a name="detailed-metadata-driven-pipeline-with-parameters"></a>Подробные сведения о конвейере, управляемом метаданными, с параметрами
 
-Используйте [конвейер, управляемый метаданными, с параметрами](https://docs.microsoft.com/azure/data-factory/how-to-use-trigger-parameterization) , чтобы узнать больше об использовании параметров для проектирования конвейеров, управляемых метаданными. Это популярный вариант использования параметров.
+Используйте [конвейер, управляемый метаданными, с параметрами](./how-to-use-trigger-parameterization.md) , чтобы узнать больше об использовании параметров для проектирования конвейеров, управляемых метаданными. Это популярный вариант использования параметров.
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

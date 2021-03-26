@@ -3,16 +3,16 @@ title: Развертывание в IoT Edge для Linux в Windows — Azure
 description: В этой статье содержатся рекомендации по развертыванию в IoT Edge для Linux на устройстве Windows.
 ms.topic: how-to
 ms.date: 02/18/2021
-ms.openlocfilehash: 9ec28c62ca804137ede3cd60d1980e55fbaa2807
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: d5c3d89ae7447b062714ad90be117a6426a39581
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102618140"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561089"
 ---
 # <a name="deploy-to-an-iot-edge-for-linux-on-windows-eflow-device"></a>Развертывание на устройстве IoT Edge для Linux на Windows (ЕФЛОВ)
 
-В этой статье вы узнаете, как развернуть Live Video Analytics на пограничном устройстве с [IOT Edge для Linux в Windows (ефлов)](https://docs.microsoft.com/azure/iot-edge/iot-edge-for-linux-on-windows). После завершения действий, описанных в этом документе, вы сможете запустить [граф мультимедиа](media-graph-concept.md) , который обнаружит движение в видео и выдаст такие события в центр Интернета вещей в облаке. Затем можно переключить граф мультимедиа для расширенных сценариев и перенести возможности интерактивной аналитики видео на устройство IoT Edge под управлением Windows.
+В этой статье вы узнаете, как развернуть Live Video Analytics на пограничном устройстве с [IOT Edge для Linux в Windows (ефлов)](../../iot-edge/iot-edge-for-linux-on-windows.md). После завершения действий, описанных в этом документе, вы сможете запустить [граф мультимедиа](media-graph-concept.md) , который обнаружит движение в видео и выдаст такие события в центр Интернета вещей в облаке. Затем можно переключить граф мультимедиа для расширенных сценариев и перенести возможности интерактивной аналитики видео на устройство IoT Edge под управлением Windows.
 
 ## <a name="prerequisites"></a>Предварительные требования 
 
@@ -21,7 +21,7 @@ ms.locfileid: "102618140"
     > [!NOTE]
     > Вам потребуется подписка Azure с разрешениями на создание субъектов-служб (такие разрешения предоставляет роль **Владелец**). Если у вас нет нужных разрешений, обратитесь к администратору учетной записи для предоставления вам нужных разрешений.
 * [Visual Studio Code](https://code.visualstudio.com/) на компьютере для разработки. Убедитесь, что у вас есть [расширение Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools).
-* Узнайте [, что такое ефлов](https://aka.ms/AzEFLOW-docs).
+* Узнайте [, что такое ефлов](../../iot-edge/iot-edge-for-linux-on-windows.md).
 
 ## <a name="deployment-steps"></a>Шаги по развертыванию
 
@@ -29,9 +29,9 @@ ms.locfileid: "102618140"
 
 :::image type="content" source="./media/deploy-iot-edge-linux-on-windows/eflow.png" alt-text="Схема IoT Edge для Linux в Windows (ЕФЛОВ)":::
 
-1. [Установите ефлов](https://aka.ms/AzEFLOW-install) на устройстве Windows. 
+1. [Установите ефлов](../../iot-edge/how-to-install-iot-edge-on-windows.md) на устройстве Windows. 
 
-    1. Если вы используете компьютер с Windows, то на начальной странице [центра администрирования Windows](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview) в списке подключений вы увидите подключение к локальному узлу, представляющее компьютер, на котором запущен центр администрирования Windows. 
+    1. Если вы используете компьютер с Windows, то на начальной странице [центра администрирования Windows](/windows-server/manage/windows-admin-center/overview) в списке подключений вы увидите подключение к локальному узлу, представляющее компьютер, на котором запущен центр администрирования Windows. 
     1. Все дополнительные серверы, компьютеры или кластеры, которыми вы управляете, также будут отображаться здесь.
     1. Центр администрирования Windows можно использовать для установки Azure ЕФЛОВ на локальном устройстве или удаленных управляемых устройствах и управления им. В этом пошаговом окне Подключение к локальному узлу выдается в качестве целевого устройства для развертывания Azure IoT Edge для Linux в Windows. Таким образом, localhost также отображается как устройство IoT Edge.
 
@@ -110,4 +110,3 @@ ms.locfileid: "102618140"
 * Запустите [AI в реальном времени](use-your-model-quickstart.md#overview) (можно пропустить установку необходимых компонентов, так как она уже была выполнена выше).
 * Используйте наше [расширение VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.live-video-analytics-edge) для просмотра дополнительных графов мультимедиа.
 * Используйте [IP-камеру](https://en.wikipedia.org/wiki/IP_camera)  , поддерживающую RTSP, а не используя симулятор RTSP. IP-камеры, поддерживающие протокол RTSP, можно найти на странице [продуктов, соответствующих ONVIF](https://www.onvif.org/conformant-products/). Ищите устройства, которые соответствуют профилям G, S или T.
-

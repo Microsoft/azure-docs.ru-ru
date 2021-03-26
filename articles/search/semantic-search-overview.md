@@ -9,12 +9,12 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/18/2021
 ms.custom: references_regions
-ms.openlocfilehash: 7e3bfa9d91929530ae53c87ceabf639a16a5a0e6
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: b5b33007f71cfc2a29005ce84f1fedba90dd1bf1
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104888912"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561973"
 ---
 # <a name="semantic-search-in-azure-cognitive-search"></a>Семантический поиск в Azure Когнитивный поиск
 
@@ -35,7 +35,7 @@ ms.locfileid: "104888912"
 
 Семантический поиск позволяет улучшить точность и вызвать следующие возможности:
 
-| Функция | Описание |
+| Компонент | Описание |
 |---------|-------------|
 | [Проверка орфографии](speller-how-to-add.md) | Исправление опечаток до того, как условия запроса попадают в поисковую подсистему. |
 | [Семантический рейтинг](semantic-ranking.md) | Использует контекст или семантическое значение для расчета новой оценки релевантности. |
@@ -44,7 +44,7 @@ ms.locfileid: "104888912"
 
 ### <a name="order-of-operations"></a>Порядок операций
 
-Компоненты семантического поиска расширяют существующий конвейер выполнения запроса в обоих направлениях. Если включить исправление орфографических ошибок, средство [проверки орфографии](speller-how-to-add.md) исправляет опечатки перед тем, как условия запроса попадают в поисковую подсистему.
+Компоненты семантического поиска расширяют существующий конвейер выполнения запроса в обоих направлениях. Если включить исправление орфографических ошибок, средство [проверки орфографии](speller-how-to-add.md) исправляет опечатки в запросе SES, прежде чем условия будут доступны поисковой подсистеме.
 
 :::image type="content" source="media/semantic-search-overview/semantic-workflow.png" alt-text="Семантические компоненты при выполнении запроса" border="true":::
 

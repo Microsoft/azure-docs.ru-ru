@@ -7,19 +7,19 @@ ms.service: expressroute
 ms.topic: how-to
 ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: e893216eb8e2d7e44e3f272f6b965b84c6253f7f
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 7a9ac98a9566986767016720fda245712197b27f
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104870336"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566546"
 ---
 # <a name="add-ipv6-support-for-private-peering-using-azure-powershell-preview"></a>Добавление поддержки IPv6 для частного пиринга с помощью Azure PowerShell (Предварительная версия)
 
 В этой статье описывается, как добавить поддержку IPv6 для подключения через ExpressRoute к ресурсам в Azure с помощью Azure PowerShell.
 
 > [!Note]
-> Сейчас эта функция доступна для предварительной версии в [регионах Azure с зоны доступности](https://docs.microsoft.com/azure/availability-zones/az-region#azure-regions-with-availability-zones). Таким образом, канал ExpressRoute можно создать с помощью любого расположения пиринга, но развертываемые на основе IPv6 развертывания должны находиться в регионе с Зоны доступности.
+> Сейчас эта функция доступна для предварительной версии в [регионах Azure с зоны доступности](../availability-zones/az-region.md#azure-regions-with-availability-zones). Таким образом, канал ExpressRoute можно создать с помощью любого расположения пиринга, но развертываемые на основе IPv6 развертывания должны находиться в регионе с Зоны доступности.
 
 ## <a name="working-with-azure-powershell"></a>Работа с Azure PowerShell
 
@@ -46,7 +46,7 @@ ms.locfileid: "104870336"
 
 ## <a name="add-ipv6-private-peering-to-your-expressroute-circuit"></a>Добавление частного пиринга IPv6 в канал ExpressRoute
 
-1. [Создайте канал ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-arm) или используйте существующий канал. Получите канал, выполнив команду **Get-азекспрессраутеЦиркуит** :
+1. [Создайте канал ExpressRoute](./expressroute-howto-circuit-arm.md) или используйте существующий канал. Получите канал, выполнив команду **Get-азекспрессраутеЦиркуит** :
 
     ```azurepowershell-interactive
     $ckt = Get-AzExpressRouteCircuit -Name "ExpressRouteARMCircuit" -ResourceGroupName "ExpressRouteResourceGroup"
@@ -150,7 +150,7 @@ ms.locfileid: "104870336"
     Set-AzVirtualNetwork -VirtualNetwork $vnet
     ```
 
-4. Если у вас есть шлюз, избыточный в зоне, выполните следующую команду, чтобы включить IPv6-подключение. В противном случае [Создайте шлюз виртуальной сети](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-resource-manager) с помощью SKU, избыточного в виде зоны (ErGw1AZ, ErGw2AZ, ErGw3AZ).
+4. Если у вас есть шлюз, избыточный в зоне, выполните следующую команду, чтобы включить IPv6-подключение. В противном случае [Создайте шлюз виртуальной сети](./expressroute-howto-add-gateway-resource-manager.md) с помощью SKU, избыточного в виде зоны (ErGw1AZ, ErGw2AZ, ErGw3AZ).
 
     ```azurepowershell-interactive
     $gw = Get-AzVirtualNetworkGateway -Name "GatewayName" -ResourceGroupName "ExpressRouteResourceGroup"
@@ -161,13 +161,13 @@ ms.locfileid: "104870336"
 
 Если вы планируете подключиться к новому набору ресурсов Azure в регионе с Зоны доступности помощью частного пиринга IPv6, выполните следующие действия.
 
-1. Создайте виртуальную сеть с двумя стеками с адресным пространством IPv4 и IPv6. Дополнительные сведения см. [в разделе Создание виртуальной сети](https://docs.microsoft.com/azure/virtual-network/quick-create-portal#create-a-virtual-network).
+1. Создайте виртуальную сеть с двумя стеками с адресным пространством IPv4 и IPv6. Дополнительные сведения см. [в разделе Создание виртуальной сети](../virtual-network/quick-create-portal.md#create-a-virtual-network).
 
-2. [Создайте подсеть шлюза с двойным стеком](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-resource-manager#add-a-gateway).
+2. [Создайте подсеть шлюза с двойным стеком](./expressroute-howto-add-gateway-resource-manager.md#add-a-gateway).
 
-3. [Создайте шлюз виртуальной сети](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-resource-manager#add-a-gateway) с помощью SKU, избыточного в виде зоны (ErGw1AZ, ErGw2AZ, ErGw3AZ). Если вы планируете использовать Фастпас, используйте ErGw3AZ (Обратите внимание, что эта возможность доступна только для каналов с помощью ExpressRoute Direct).
+3. [Создайте шлюз виртуальной сети](./expressroute-howto-add-gateway-resource-manager.md#add-a-gateway) с помощью SKU, избыточного в виде зоны (ErGw1AZ, ErGw2AZ, ErGw3AZ). Если вы планируете использовать Фастпас, используйте ErGw3AZ (Обратите внимание, что эта возможность доступна только для каналов с помощью ExpressRoute Direct).
 
-4. [Свяжите виртуальную сеть с каналом ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-howto-linkvnet-arm).
+4. [Свяжите виртуальную сеть с каналом ExpressRoute](./expressroute-howto-linkvnet-arm.md).
 
 ## <a name="limitations"></a>Ограничения
 Хотя поддержка IPv6 доступна для подключений к развертываниям в регионах с Зоны доступности, она не поддерживает следующие варианты использования:

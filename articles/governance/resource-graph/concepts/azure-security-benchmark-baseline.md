@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: e5e01c8d1ac16e5e8be405660a0726796789e645
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ad8968fdb6548da29a031f0e44bd3671f67b5553
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101738979"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557723"
 ---
 # <a name="azure-security-baseline-for-azure-resource-graph"></a>Базовый план безопасности Azure для графа ресурсов Azure
 
@@ -30,7 +30,7 @@ ms.locfileid: "101738979"
 
 **Руководство**. граф ресурсов Azure предоставляет доступ к типам ресурсов и свойствам на основе элементов управления доступом на основе ролей Azure (Azure RBAC). Регулярно проверяйте и просматривайте доступ, предоставленный субъектам безопасности (пользователям, группам и учетным записям служб), чтобы убедиться, что запросы возвращают результаты для соответствующих ресурсов.
 
-- [Разрешения в Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview#permissions-in-azure-resource-graph)
+- [Разрешения в Azure Resource Graph](../overview.md#permissions-in-azure-resource-graph)
 
 - [Использование проверок доступа для идентификации Azure](../../../active-directory/governance/access-reviews-overview.md)
 
@@ -46,9 +46,9 @@ ms.locfileid: "101738979"
 
 **Руководство**. Использование Azure RBAC для управления доступом к данным и ресурсам. Чтобы использовать граф ресурсов Azure, необходимо иметь соответствующий доступ к ресурсам, к которым необходимо выполнить запрос. Этот доступ должен быть ограничен только чтением и предоставлен только требуемому персоналу.
 
-- [Разрешения в Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview#permissions-in-azure-resource-graph)
+- [Разрешения в Azure Resource Graph](../overview.md#permissions-in-azure-resource-graph)
 
-- [Настройка Azure RBAC](../../../role-based-access-control/role-assignments-rest.md)
+- [Как настроить RBAC в Azure](../../../role-based-access-control/role-assignments-rest.md)
 
 **Ответственность**: Customer
 
@@ -96,5 +96,5 @@ ms.locfileid: "101738979"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../../../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../../../security/benchmarks/security-baselines-overview.md).

@@ -9,12 +9,12 @@ ms.workload: infrastructure-services
 ms.date: 02/03/2020
 ms.author: mimckitt
 ms.reviewer: davberg
-ms.openlocfilehash: fae915df037b2a279dfdb87ee6734055c422a1e2
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: a47d07eccc5696fede3a8a1f8120129a0344abf3
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105024818"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105544338"
 ---
 # <a name="azure-compute-unit-acu"></a>Единицы вычислений Azure (ACU)
 
@@ -40,7 +40,7 @@ ms.locfileid: "105024818"
 | [A1_v2 - A8_v2](sizes-general.md) |100 | 1:1 |
 | [A2m_v2 - A8m_v2](sizes-general.md) |100 | 1:1 |
 | [A8 - A11](sizes-previous-gen.md) |225* | 1:1 |
-| [B](sizes-b-series-burstable.md) |Различается | Различается |
+| [B](sizes-b-series-burstable.md) |Различается | 1:1 |
 | [D1 - D14](sizes-previous-gen.md) |160-250 | 1:1 |
 | [D1_v2 - D15_v2](dv2-dsv2-series.md) |210–250* | 1:1 |
 | [DS1 - DS14](sizes-previous-gen.md) |160-250 | 1:1 |

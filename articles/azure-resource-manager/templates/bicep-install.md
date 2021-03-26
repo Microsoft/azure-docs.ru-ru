@@ -3,12 +3,12 @@ title: Настройка сред разработки и развертыва�
 description: Настройка сред разработки и развертывания Бицеп
 ms.topic: conceptual
 ms.date: 03/17/2021
-ms.openlocfilehash: d665a863affdec2009fc208f76b85a7f25de451d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7cd3721aca83488de61494a94826bfcd0b6acc26
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104594399"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543743"
 ---
 # <a name="setup-bicep-development-and-deployment-environment"></a>Настройка среды разработки и развертывания Бицеп
 
@@ -31,7 +31,7 @@ ms.locfileid: "104594399"
 - [Установка Azure CLI в macOS](/cli/azure/install-azure-cli-macos)
 
 > [!NOTE]
-> В настоящее время и Azure CLI, и Azure PowerShell могут развертывать только локальные файлы Бицеп. Дополнительные сведения о развертывании файлов Бицеп с помощью Azure CLI см. в разделе [deploy-CLI](/deploy-cli.md#deploy-remote-template). Дополнительные сведения о развертывании файлов Бицеп с помощью Azure PowerShell см. в разделе [deploy-PowerShell](/deploy-powershell.md#deploy-remote-template).
+> В настоящее время и Azure CLI, и Azure PowerShell могут развертывать только локальные файлы Бицеп. Дополнительные сведения о развертывании файлов Бицеп с помощью Azure CLI см. в разделе [deploy-CLI](./deploy-cli.md#deploy-remote-template). Дополнительные сведения о развертывании файлов Бицеп с помощью Azure PowerShell см. в разделе [deploy-PowerShell]( ./deploy-powershell.md#deploy-remote-template).
 
 После установки поддерживаемой версии Azure PowerShell или Azure CLI можно развернуть файл Бицеп с помощью:
 

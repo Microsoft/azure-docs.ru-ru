@@ -6,12 +6,12 @@ ms.author: chugu
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 4/15/2020
-ms.openlocfilehash: 62bd5d2e70d3a66998907305fecee4dcc87cdb23
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 190def0e6e2f77d330d2307753dc9e9d53c55dd7
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102451733"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564157"
 ---
 # <a name="use-azure-sql-managed-instance-with-sql-server-integration-services-ssis-in-azure-data-factory"></a>Использование Управляемый экземпляр Azure SQL с SQL Server Integration Services (SSIS) в фабрике данных Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "102451733"
             - В той же виртуальной сети, что и управляемый экземпляр, с **другой подсетью**.
             - В другой виртуальной сети, чем управляемый экземпляр, через пиринг виртуальных сетей (ограниченный тем же регионом из-за глобальных ограничений пиринга виртуальной сети) или подключения из виртуальной сети к виртуальной сети.
 
-            Дополнительные сведения о подключении к SQL Управляемый экземпляр см. в статье [Подключение приложения к Azure SQL управляемый экземпляр](/azure/sql-database/sql-database-managed-instance-connect-app).
+            Дополнительные сведения о подключении к SQL Управляемый экземпляр см. в статье [Подключение приложения к Azure SQL управляемый экземпляр](../azure-sql/managed-instance/connect-application-instance.md).
 
         1. [Настройте виртуальную сеть](#configure-virtual-network).
 

@@ -3,25 +3,23 @@ title: Передача маркеров аутентификации в Слу�
 description: Отправка маркеров аутентификации из клиента в службу доставки ключей Служб мультимедиа Azure
 services: media-services
 keywords: content protection, DRM, token authentication
-documentationcenter: ''
 author: IngridAtMicrosoft
 manager: femila
-editor: ''
 ms.assetid: 7c3b35d9-1269-4c83-8c91-490ae65b0817
 ms.service: media-services
 ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/10/2021
+ms.date: 03/22/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: ba4daec8ef5f2cc1da3a211113e7236dfd22803d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 1fe692e1eb20956f339c9b861f50163cee9c5063
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103008252"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564659"
 ---
 # <a name="learn-how-clients-pass-tokens-to-the-azure-media-services-key-delivery-service"></a>Сведения о том, как клиенты передают маркеры в службу доставки ключей Служб мультимедиа Azure
 
@@ -33,7 +31,7 @@ ms.locfileid: "103008252"
 
 - С использованием заголовка авторизации HTTP.
     > [!NOTE]
-    > Для каждой спецификации OAuth 2.0. ожидается префикс Bearer. На [странице демоверсии](https://ampdemo.azureedge.net/) Проигрывателя мультимедиа Azure приведен пример проигрывателя с конфигурацией маркера. Выберите **AES (маркер JWT)** или **AES (маркер SWT)**, чтобы указать источник видео. Маркер передается через заголовок авторизации.
+    > Для каждой спецификации OAuth 2.0. ожидается префикс Bearer. Выберите **AES (маркер JWT)** или **AES (маркер SWT)**, чтобы указать источник видео. Маркер передается через заголовок авторизации.
 
 - Путем добавления параметра запроса URL-адреса со строкой token=tokenvalue.  
     > [!NOTE]
@@ -56,6 +54,6 @@ ms.locfileid: "103008252"
     ```
     Укажите маркер аутентификации в элементе "Маркер".
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]

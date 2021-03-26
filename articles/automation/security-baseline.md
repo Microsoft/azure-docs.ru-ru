@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 6ab310681ae7b63cb4e9f4e07984983727ae5ff2
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: ea75b9c1e8c7a1a242406b5a7f73db1b05c70276
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104953924"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562211"
 ---
 # <a name="azure-security-baseline-for-automation"></a>Базовый уровень безопасности Azure для автоматизации
 
@@ -544,7 +544,7 @@ ms.locfileid: "104953924"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Automation**:
 
@@ -743,7 +743,7 @@ ms.locfileid: "104953924"
 
 - [Действия политик Azure](../governance/policy/concepts/effects.md)
 
-- [Развертывание учетной записи службы автоматизации с помощью шаблона Azure Resource Manager](/azure/automation/quickstart-create-account-template#deploy-the-template)
+- [Развертывание учетной записи службы автоматизации с помощью шаблона Azure Resource Manager](/azure/automation/quickstart-create-automation-account-template)
 
 - [Пример политики Azure, встроенный в службу автоматизации Azure](policy-reference.md)
 

@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 1c2fbc90d3956ab831e6d9fac4e1e2d3540e1c6d
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 6cf6e8e3f19b11a49e91b781b1ef6d83bf647903
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105025430"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563010"
 ---
 # <a name="migration-guide-oracle-to-azure-sql-managed-instance"></a>Руководство по миграции: Oracle в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "105025430"
 1. Выберите **Параметры проекта**. 
 1. Перейдите на вкладку **сопоставления типов** :
 
-   ![Сопоставления типов](./media/oracle-to-managed-instance-guide/type-mappings.png)
+   ![Сопоставление типов](./media/oracle-to-managed-instance-guide/type-mappings.png)
 
 1. Сопоставление типов для каждой таблицы можно изменить, выбрав таблицу в **обозревателе метаданных Oracle**.
 
@@ -142,11 +142,8 @@ ms.locfileid: "105025430"
 
 Кроме того, для выполнения миграции также можно использовать SQL Server Integration Services (SSIS). Дополнительные сведения см. на следующих ресурсах: 
 
-- [начало работы с SQL Server Integration Services](https://docs.microsoft.com/sql/integration-services/sql-server-integration-services)
+- [начало работы с SQL Server Integration Services](/sql/integration-services/sql-server-integration-services)
 - [SQL Server Integration Services: службы SSIS для Azure и гибридное перемещение данных](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/SSIS%20Hybrid%20and%20Azure.docx)
-
-    
-
 
 ## <a name="post-migration"></a>После миграции 
 
@@ -194,7 +191,7 @@ ms.locfileid: "105025430"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Матрицу служб и средств Майкрософт и сторонних производителей, доступных для помощи в различных сценариях переноса баз данных и данных, а также специальных задачах, см. в статье [Службы и средства для переноса данных](https://docs.microsoft.com/azure/dms/dms-tools-matrix).
+- Матрицу служб и средств Майкрософт и сторонних производителей, доступных для помощи в различных сценариях переноса баз данных и данных, а также специальных задачах, см. в статье [Службы и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 
 - Дополнительные сведения о Управляемый экземпляр Azure SQL см. в следующих статьях: 
   - [Общие сведения о Управляемый экземпляр Azure SQL](../../managed-instance/sql-managed-instance-paas-overview.md)

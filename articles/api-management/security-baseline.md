@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: d965ec2f846f09dd61342b3961e7ea8106f6a19f
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 6f54bd88e58ccfef068900fc3c7b249cde1c233d
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104954893"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558556"
 ---
 # <a name="azure-security-baseline-for-api-management"></a>Базовый план безопасности Azure для Управления API
 
@@ -1002,9 +1002,9 @@ Azure Active Directory (Azure AD) содержит встроенные роли
 
 - [Реализация аварийного восстановления с помощью функций резервного копирования и восстановления службы в Azure API Management](./api-management-howto-disaster-recovery-backup-restore.md#calling-the-backup-and-restore-operations)
 
-- [Вызов операции резервного копирования Управления API](/rest/api/apimanagement/2019-01-01/apimanagementservice/backup)
+- [Вызов операции резервного копирования Управления API](/rest/api/apimanagement/2019-12-01/apimanagementservice/backup)
 
-- [Вызов операции восстановления Управления API](/rest/api/apimanagement/2019-01-01/apimanagementservice/restore)
+- [Вызов операции восстановления Управления API](/rest/api/apimanagement/2019-12-01/apimanagementservice/restore)
 
 **Ответственность**: Customer
 

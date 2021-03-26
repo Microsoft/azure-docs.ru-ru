@@ -9,12 +9,12 @@ ms.topic: reference
 ms.service: iot-edge
 services: iot-edge
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: 0b49cf4fe28e2a9b4d15f889d227b443777b1efa
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: 5286362369e0c4881cdf0c56bc13d1d340056be1
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889252"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562517"
 ---
 # <a name="powershell-scripts-for-iot-edge-for-linux-on-windows"></a>Сценарии PowerShell для IoT Edge для Linux в Windows
 
@@ -150,6 +150,6 @@ ms.locfileid: "104889252"
 
 Сведения об использовании этих команд см. в следующей статье:
 
-* [Установка Azure IoT Edge для Linux в Windows](how-to-install-iot-edge-windows.md)
+* [Установка Azure IoT Edge для Linux в Windows](./how-to-install-iot-edge-windows-on-windows.md)
 
 * Все команды, доступные в PowerShell, см. в [справочнике по сценариям для Linux в Windows powershell IOT Edge](reference-iot-edge-for-linux-on-windows-scripts.md#deploy-eflow) .

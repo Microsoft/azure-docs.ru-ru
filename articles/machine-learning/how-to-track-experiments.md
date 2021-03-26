@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 07/30/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 9576730d9c4f8d4d237dce9ce8f207ea14b04f45
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d91c88da1416071b5eee2a8eb10e3029086839e9
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103471602"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561786"
 ---
 # <a name="enable-logging-in-ml-training-runs"></a>Включение ведения журнала в учебных запусках МАШИНного обучения
 
@@ -41,7 +41,7 @@ ms.locfileid: "103471602"
 
 ### <a name="logging-run-metrics"></a>Регистрация метрик запуска 
 
-Используйте следующие методы в API ведения журнала, чтобы повлиять на визуализации метрик. Обратите внимание на [ограничения службы](https://docs.microsoft.com/azure/machine-learning/resource-limits-quotas-capacity#metrics) для этих зарегистрированных метрик. 
+Используйте следующие методы в API ведения журнала, чтобы повлиять на визуализации метрик. Обратите внимание на [ограничения службы](./resource-limits-quotas-capacity.md#metrics) для этих зарегистрированных метрик. 
 
 |Значение в журнале|Пример кода| Формат на портале|
 |----|----|----|

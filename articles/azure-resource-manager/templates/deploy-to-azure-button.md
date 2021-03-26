@@ -2,19 +2,19 @@
 title: Кнопка "Развертывание в Azure"
 description: Используйте кнопку для развертывания шаблонов Azure Resource Manager из репозитория GitHub.
 ms.topic: conceptual
-ms.date: 11/10/2020
-ms.openlocfilehash: abe59f377474540e9209691df8b1d1a7b806c26d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.openlocfilehash: e25d49571347bb5ed27dbd52bb60c68cbeb4360d
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98028749"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543790"
 ---
 # <a name="use-a-deployment-button-to-deploy-templates-from-github-repository"></a>Использование кнопки развертывания для развертывания шаблонов из репозитория GitHub
 
 В этой статье описывается, как использовать кнопку **развертывание в Azure** для развертывания шаблонов из репозитория GitHub. Вы можете добавить кнопку непосредственно в файл _readme.md_ в репозитории GitHub. Или можно добавить кнопку на веб-страницу, которая ссылается на репозиторий.
 
-Область развертывания определяется схемой шаблона. Дополнительные сведения см. в разделе:
+Область развертывания определяется схемой шаблона. Дополнительные сведения можно найти в разделе
 
 - [группы ресурсов](deploy-to-resource-group.md)
 - [оформления](deploy-to-subscription.md)
@@ -76,7 +76,7 @@ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.github
 
 У вас есть полный URL-адрес ссылки.
 
-Как правило, шаблон размещается в общедоступном репозитории. При использовании частного репозитория необходимо включить маркер для доступа к необработанному содержимому шаблона. Токен, созданный GitHub, действителен в течение короткого времени. Часто приходится обновлять ссылку.
+[!INCLUDE [Deploy templates in private GitHub repo](../../../includes/resource-manager-private-github-repo-templates.md)]
 
 Если вы используете [Git с Azure Repos](/azure/devops/repos/git/) вместо репозитория GitHub, вы по-прежнему можете использовать кнопку **развертывание в Azure** . Убедитесь, что репозиторий является общедоступным. Используйте [операцию Items](/rest/api/azure/devops/git/items/get) для получения шаблона. Ваш запрос должен иметь следующий формат:
 

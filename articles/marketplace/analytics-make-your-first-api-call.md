@@ -7,12 +7,12 @@ ms.topic: article
 author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
-ms.openlocfilehash: 2d0c0e7322ecb92fd371f5bf7924a370dd29fe85
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 65ee0847e6a59976eec223b68b1f3e0c464674e8
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102583985"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563809"
 ---
 # <a name="make-your-first-api-call-to-access-commercial-marketplace-analytics-data"></a>Сделайте первый вызов API для доступа к данным анализа коммерческих рынков
 
@@ -50,7 +50,7 @@ curl --location --request POST 'https://login.microsoftonline.com/{TenantId}/oau
 }
 ```
 
-Дополнительные сведения о получении маркера Azure AD для приложения см. в статье [доступ к данным аналитики с помощью служб хранилища](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#step-2-obtain-an-azure-ad-access-token).
+Дополнительные сведения о получении маркера Azure AD для приложения см. в статье [доступ к данным аналитики с помощью служб хранилища](/windows/uwp/monetize/access-analytics-data-using-windows-store-services#step-2-obtain-an-azure-ad-access-token).
 
 ## <a name="programmatic-api-call"></a>Программный вызов API
 

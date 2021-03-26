@@ -1,15 +1,15 @@
 ---
 title: Поддерживаемые типы ресурсов Azure Resource Manager
 description: Укажите список типов ресурсов Azure Resource Manager, поддерживаемых графиком ресурсов Azure и журналом изменений.
-ms.date: 03/10/2021
+ms.date: 03/24/2021
 ms.topic: reference
 ms.custom: generated
-ms.openlocfilehash: d7b4be0b35fdfebd2f680a299bc7b90375e36afc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 482c261586d5d077a61781eff28698fa9994f332
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102633773"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105544151"
 ---
 # <a name="azure-resource-graph-table-and-resource-type-reference"></a>Таблица Azure Resource Graph и сведения о типах ресурсов
 
@@ -84,6 +84,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Citrix. Services/Ксендесктопессентиалс (основные сведения о виртуальных рабочих столах Citrix)
 - Conexlink. MyCloudIt/Accounts (MyCloudIT — размещение рабочего стола Azure)
 - Криптерон. Security/Apps (Криптерон)
+- GitHub. Enterprise/Accounts
 - gridpro.evops/accounts
 - gridpro.evops/accounts/eventrules
 - gridpro.evops/accounts/requesttemplates
@@ -142,7 +143,8 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. АзурестаккхЦи/Clusters (Azure Stack ХЦИ)
 - Microsoft. азурестаккхЦи/галлеримажес
 - Microsoft. азурестаккхЦи/networkinterfaces
-- Microsoft. АзурестаккхЦи/virtualmachines (Azure Stack ХЦИ виртуальная машина в Azure ARC)
+- Microsoft. азурестаккхЦи/виртуалхарддискс
+- Microsoft. АзурестаккхЦи/virtualMachines (Azure Stack ХЦИ виртуальная машина в Azure ARC)
 - Microsoft. азурестаккхЦи/virtualnetworks
 - microsoft.baremetal/consoleconnections
 - Microsoft. BareMetal/Крайсерверс (серверы Cray)
@@ -219,7 +221,8 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. connectedvehicle/платформаккаунтс
 - Microsoft. коннектедвмваревсфере/ресаурцепулс
 - Microsoft. коннектедвмваревсфере/vcenters
-- Microsoft. коннектедвмваревсфере/virtualmachines
+- Microsoft. Коннектедвмваревсфере/VirtualMachines (виртуальные машины VMware и AVS)
+- Microsoft. коннектедвмваревсфере/virtualmachines/Extensions
 - Microsoft. коннектедвмваревсфере/виртуалмачинетемплатес
 - Microsoft. коннектедвмваревсфере/virtualnetworks
 - Microsoft. Контаинеринстанце/Контаинерграупс (экземпляры контейнеров)
@@ -254,6 +257,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. Migration/Services (службы миграции баз данных Azure)
 - Microsoft. Migration/Services/Projects (проекты миграции баз данных Azure)
 - microsoft.datamigration/slots
+- Microsoft. Migration/склмигратионсервицес
 - Microsoft. Баккупваултс (резервное хранилище)
 - Microsoft. ресаурцеоператионгатекиперс/защита
 - Microsoft. Data Share/Accounts (общие папки данных)
@@ -262,7 +266,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. Дбформискл/Servers (база данных Azure для серверов MySQL)
 - Microsoft. Дбфорпостгрескл/Флексиблесерверс (гибкие серверы базы данных Azure для PostgreSQL)
 - Microsoft. Дбфорпостгрескл/Серверграупс (группы серверов базы данных Azure для PostgreSQL)
-- Microsoft. дбфорпостгрескл/servergroupsv2
+- Microsoft. Дбфорпостгрескл/serverGroupsv2 (группы серверов базы данных Azure для PostgreSQL)
 - Microsoft. Дбфорпостгрескл/Servers (база данных Azure для серверов PostgreSQL)
 - Microsoft. Дбфорпостгрескл/serversv2 (база данных Azure для серверов PostgreSQL версии 2)
 - microsoft.dbforpostgresql/singleservers
@@ -361,7 +365,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. Интеллижентитдигиталтвин/Дигиталтвинс/Тестпланс (наборы)
 - Microsoft. Интеллижентитдигиталтвин/Дигиталтвинс/тесты (скрипты)
 - Microsoft. Иотцентрал/Иотаппс (IoT Central приложения)
-- Microsoft. Иотспацес/Graph (цифровой двойников (не рекомендуется))
+- microsoft.iotspaces/graph
 - microsoft.keyvault/hsmpools
 - Microsoft. keyvault/манажедхсмс
 - Microsoft. KeyVault/хранилища (хранилища ключей)
@@ -369,6 +373,8 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. Kusto/кластеры (кластеры Azure обозреватель данных)
 - Microsoft. Kusto/Clusters/databases (базы данных Azure обозреватель данных)
 - Microsoft. Лабсервицес/Лабаккаунтс (службы лаборатории)
+- Microsoft. лабсервицес/лабпланс
+- Microsoft. лабсервицес/Labs
 - Microsoft. Лоадтестсервице/Лоадтестс (собственные нагрузочные тесты в облаке)
 - Microsoft. Logic/Интегратионаккаунтс (учетные записи интеграции)
 - Microsoft. Logic/Интегратионсервицеенвиронментс (среды службы Integration Services)
@@ -380,6 +386,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. MachineLearning/WebService (веб-службы Машинное обучение Studio (классическая модель))
 - Microsoft. MachineLearning или рабочие области (рабочие области Машинное обучение Studio (классические))
 - microsoft.machinelearningcompute/operationalizationclusters
+- Microsoft. мачинелеарнинжекспериментатион/учетные записи и рабочие области
 - Microsoft. мачинелеарнингсервицес/моделинвенториес
 - Microsoft. мачинелеарнингсервицес/моделинвентори
 - Microsoft. мачинелеарнингсервицес/виртуалклустерс
@@ -517,6 +524,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - microsoft.powerbi/workspacecollections
 - Microsoft. повербидедикатед/аутоскалевкорес
 - Microsoft. Повербидедикатед/емкости (Power BI Embedded)
+- Microsoft. поверплатформ/ентерприсеполиЦиес
 - Microsoft. Прожектбабилон/Accounts (учетные записи Бабилон)
 - Microsoft. зрения/Accounts (учетные записи зрения)
 - Microsoft. тактов/рабочие области (тактовые рабочие области)
@@ -525,7 +533,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. Relay/пространства имен (реле)
 - microsoft.remoteapp/collections
 - Microsoft. устойчивость/чаосекспериментс
-- Microsoft. Ресаурцеконнектор/Appliances (Appliances)
+- Microsoft. Ресаурцеконнектор/Appliances (мосты ресурсов)
 - Microsoft. ресаурцеграф/запросы (запросы графа ресурсов)
 - Microsoft. Resources/deploymentScripts (скрипты развертывания)
 - Microsoft. Resources/Темплатеспекс (спецификации шаблонов)
@@ -553,6 +561,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - microsoft.servicefabricmesh/volumes
 - Microsoft. Сервицешуб/Connectors (соединители концентратора служб)
 - Microsoft. Сигналрсервице/SignalR (SignalR)
+- Microsoft. Сигналрсервице/Вебпубсуб (служба веб-PubSub)
 - учетные записи Microsoft. в единственном числе
 - microsoft.solutions/appliancedefinitions
 - microsoft.solutions/appliances
@@ -575,7 +584,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Microsoft. Storage/StorageAccounts (учетные записи хранения)
 - Microsoft. сторажекаче/амлфилесистемс
 - Microsoft. Сторажекаче/кэши (кэши HPC)
-- Microsoft. storagepool/дискпулс
+- Microsoft. StoragePool/Дискпулс (пулы дисков)
 - Microsoft. StorageSync/Сторажесинксервицес (службы синхронизации хранилища)
 - Microsoft. Сторажесинкдев/Сторажесинксервицес (службы синхронизации хранилища)
 - Microsoft. СторажесинЦинт/Сторажесинксервицес (службы синхронизации хранилища)
@@ -603,7 +612,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - microsoft.vmware/arczones
 - microsoft.vmware/resourcepools
 - microsoft.vmware/vcenters
-- Microsoft. VMware/VirtualMachines (виртуальные машины AVS)
+- microsoft.vmware/virtualmachines
 - microsoft.vmware/virtualmachinetemplates
 - microsoft.vmware/virtualnetworks
 - Microsoft. Вмвареклаудсимпле/Дедикатедклауднодес (узлы Клаудсимпле)
@@ -633,10 +642,6 @@ Azure Resource Graph поддерживает следующие **типы ре
 - MyGet. PackageManagement/Services (MyGet-Hosted NuGet, NPM, Bower и VSIX)
 - With LEAP. CloudMonix/Services (CloudMonix)
 - Покитдок. Platform/Services (платформа Покитдок)
-- Поставщики. Test/Статефулибизаенгинес (оценки приложений)
-- providers.test/statefulresources
-- providers.test/statefulresources/nestedresources
-- providers.test/statelessresources
 - RavenHq. DB/databases (RavenHQ)
 - Raygun отсылает. Крашрепортинг/Apps (Raygun отсылает)
 - Sendgrid.Email/accounts (учетные записи SendGrid)
@@ -661,6 +666,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 
 - microsoft.security/assessments
 - microsoft.security/assessments/subassessments
+- Microsoft. Security/Insights/классификация
 - Microsoft. Security/иоталертс
 - Microsoft. Security/Locations/Alerts (оповещения системы безопасности)
 - microsoft.security/pricings

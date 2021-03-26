@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: bf2360bda55735aa8ef4258da5ae47f673f4d71b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c5ffdecf768be0962950bb3691dbb11fb0e70120
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101738928"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105565016"
 ---
 # <a name="azure-security-baseline-for-hdinsight"></a>Базовый план безопасности Azure для HDInsight
 
@@ -58,9 +58,9 @@ ms.locfileid: "101738928"
 
 **Рекомендации**. для защиты от атак от атак DDoS включите защиту Azure от атак DDoS Standard в виртуальной сети, в которой развернута Azure HDInsight. Используйте интегрированную аналитику угроз центра безопасности Azure, чтобы запретить обмен данными с известными вредоносными или неиспользуемыми IP-адресами Интернета.
 
-- [Настройка защиты от атак DDoS](/azure/virtual-network/manage-ddos-protection)
+- [Настройка защиты от атак DDoS](../ddos-protection/manage-ddos-protection.md)
 
-- [Общие сведения об интегрированной аналитике угроз в Центре безопасности Azure](/azure/security-center/security-center-alerts-service-layer)
+- [Общие сведения об интегрированной аналитике угроз в Центре безопасности Azure](../security-center/azure-defender.md)
 
 **Ответственность**: Customer
 
@@ -100,7 +100,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. Использование тегов службы виртуальной сети для определения элементов управления доступом к сети для групп безопасности сети (NSG), подключенных к подсети, в которой развернут кластер Azure HDInsight. Теги служб можно использовать вместо определенных IP-адресов при создании правил безопасности. Указав имя тега службы (например, ApiManagement) в соответствующем исходном поле или поле назначения правила, можно разрешить или запретить трафик для соответствующей службы. Корпорация Майкрософт управляет префиксами адресов, входящих в тег службы, и автоматически обновляет этот тег при изменении адресов.
 
-- [Общие сведения и использование тегов службы для Azure HDInsight](/azure/virtual-network/security-overview#service-tags)
+- [Общие сведения и использование тегов службы для Azure HDInsight](../virtual-network/network-security-groups-overview.md#service-tags)
 
 **Ответственность**: Customer
 
@@ -130,7 +130,7 @@ ms.locfileid: "101738928"
 
 Вы можете использовать Azure PowerShell или интерфейс командной строки Azure (CLI) для поиска и выполнения действий с ресурсами на основе их тегов.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 - [Создание виртуальной сети](../virtual-network/quick-create-portal.md)
 
@@ -144,9 +144,9 @@ ms.locfileid: "101738928"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений сетевых ресурсов, связанных с развертываниями Azure HDInsight. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log-view)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -186,7 +186,7 @@ ms.locfileid: "101738928"
 
 - [Как подключить кластер Azure HDInsight к Azure Monitor](hdinsight-hadoop-oms-log-analytics-tutorial.md)
 
-- [Настройка срока хранения Log Analytics рабочей области](/azure/azure-monitor/platform/manage-cost-storage)
+- [Настройка срока хранения Log Analytics рабочей области](../azure-monitor/logs/manage-cost-storage.md)
 
 **Ответственность**: Customer
 
@@ -198,7 +198,7 @@ ms.locfileid: "101738928"
 
 - [Как подключить кластер Azure HDInsight к Azure Monitor](hdinsight-hadoop-oms-log-analytics-tutorial.md)
 
-- [Настройка срока хранения Log Analytics рабочей области](/azure/azure-monitor/platform/manage-cost-storage)
+- [Настройка срока хранения Log Analytics рабочей области](../azure-monitor/logs/manage-cost-storage.md)
 
 **Ответственность**: Customer
 
@@ -220,7 +220,7 @@ ms.locfileid: "101738928"
 
 - [Управление оповещениями в центре безопасности Azure](../security-center/security-center-managing-and-responding-alerts.md)
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -230,7 +230,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. Azure HDInsight поставляется с предварительно установленным и включенным для образов узлов кластера, однако необходимо управлять программным обеспечением и вручную собирать и отслеживать любые журналы кламскан.
 
-- [Общие сведения о Кламскан](https://docs.microsoft.com/azure/hdinsight/hdinsight-faq#security-and-certificates)
+- [Общие сведения о Кламскан](./hdinsight-faq.md#security-and-certificates)
 
 **Ответственность**: Customer
 
@@ -300,7 +300,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. Использование БРОКЕРа идентификаторов Azure HDInsight для входа в кластеры корпоративный пакет безопасности (ESP) с помощью многофакторной проверки подлинности без предоставления паролей. Если вы уже вошли в другие службы Azure, такие как портал Azure, вы можете войти в кластер Azure HDInsight с помощью единого входа.
 
-- [Как включить брокер ИДЕНТИФИКАТОРов Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/domain-joined/identity-broker#enable-hdinsight-id-broker)
+- [Как включить брокер ИДЕНТИФИКАТОРов Azure HDInsight](./domain-joined/identity-broker.md#enable-hdinsight-id-broker)
 
 **Ответственность**: Customer
 
@@ -334,7 +334,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. кластеры Azure HDInsight с настроенным корпоративный пакет безопасности могут быть подключены к домену, чтобы пользователи домена могли использовать свои учетные данные домена для проверки подлинности. Вы можете использовать отчеты о безопасности Azure Active Directory (Azure AD) для создания журналов и оповещений при возникновении подозрительных или ненадежных действий в среде Azure AD. Используйте Центр безопасности Azure для мониторинга действий идентификации и доступа.
 
-- [Как определить пользователей Azure AD, помеченных для события риска](/azure/active-directory/reports-monitoring/concept-user-at-risk)
+- [Как определить пользователей Azure AD, помеченных для события риска](../active-directory/identity-protection/overview-identity-protection.md)
 
 - [Как отслеживать активность удостоверений и доступа пользователей в центре безопасности Azure](../security-center/security-center-identity-access.md)
 
@@ -392,7 +392,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. кластеры Azure HDInsight с настроенным корпоративный пакет безопасности (ESP) могут быть подключены к домену, чтобы пользователи домена могли использовать свои учетные данные домена для проверки подлинности в кластерах. Используйте Azure Active Directory (Azure AD) для обнаружения рисков и защиты идентификации, чтобы настроить автоматические ответы на обнаруженные подозрительные действия, связанные с удостоверениями пользователей. Кроме того, вы можете принимать данные в метку Azure для дальнейшего изучения.
 
-- [Просмотр рискованных входов в Azure AD](/azure/active-directory/reports-monitoring/concept-risky-sign-ins)
+- [Просмотр рискованных входов в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 - [Как настроить и включить политики рисков с помощью защиты идентификации](../active-directory/identity-protection/howto-identity-protection-configure-risk-policies.md)
 
@@ -404,7 +404,7 @@ ms.locfileid: "101738928"
 
 **Руководство**: недоступно; Защищенное хранилище еще не поддерживаются для Azure HDInsight.
 
-- [Список поддерживаемых защищенное хранилище служб](https://docs.microsoft.com/azure/security/fundamentals/customer-lockbox-overview#supported-services-and-scenarios-in-general-availability)
+- [Список поддерживаемых защищенное хранилище служб](../security/fundamentals/customer-lockbox-overview.md#supported-services-and-scenarios-in-general-availability)
 
 **Ответственность**: Customer
 
@@ -418,7 +418,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. Использование тегов в ресурсах, связанных с развертываниями Azure HDInsight, для помощи в отслеживании ресурсов Azure, в которых хранятся или обрабатываются конфиденциальные данные.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -432,7 +432,7 @@ ms.locfileid: "101738928"
 
 - [Как защитить Azure Data Lake Storage](../data-lake-store/data-lake-store-security-overview.md)
 
-- [Как защитить учетные записи хранения Azure](/azure/storage/common/storage-security-guide)
+- [Как защитить учетные записи хранения Azure](../storage/blobs/security-recommendations.md)
 
 **Ответственность**: Customer
 
@@ -506,13 +506,13 @@ ms.locfileid: "101738928"
 
 **Руководство**. Если для хранения Apache Hive и метаданных Apache Oozie используется база данных SQL Azure, убедитесь, что данные SQL остаются зашифрованными в любое время. Для учетных записей хранения Azure и Data Lake Storage (GEN1 или Gen2) рекомендуется разрешить корпорации Майкрософт управлять ключами шифрования, однако у вас есть возможность управлять собственными ключами.
 
-- [Управление ключами шифрования для учетных записей хранения Azure](/azure/storage/common/storage-encryption-keys-portal)
+- [Управление ключами шифрования для учетных записей хранения Azure](../storage/common/customer-managed-keys-configure-key-vault.md)
 
 - [Создание Azure Data Lake Storage с помощью управляемых клиентом ключей шифрования](../data-lake-store/data-lake-store-get-started-portal.md)
 
-- [Общие сведения о шифровании базы данных SQL Azure](/azure/sql-database/sql-database-technical-overview#data-encryption)
+- [Общие сведения о шифровании базы данных SQL Azure](../azure-sql/database/sql-database-paas-overview.md#data-encryption)
 
-- [Настройка прозрачное шифрование данных для базы данных SQL с помощью управляемых клиентом ключей](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?tabs=azure-portal)
+- [Настройка прозрачное шифрование данных для базы данных SQL с помощью управляемых клиентом ключей](../azure-sql/database/transparent-data-encryption-tde-overview.md?tabs=azure-portal)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -522,7 +522,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. Настройка параметров диагностики для учетных записей хранения Azure, связанных с кластерами Azure HDInsight, для отслеживания и регистрации всех операций CRUD с данными кластера. Включите аудит для всех учетных записей хранения или хранилищ Data Lake, связанных с кластером Azure HDInsight.
 
-- [Включение дополнительного ведения журнала и аудита для учетной записи хранения Azure](/azure/storage/common/storage-monitor-storage-account)
+- [Включение дополнительного ведения журнала и аудита для учетной записи хранения Azure](../storage/common/manage-storage-analytics-logs.md)
 
 - [Включение дополнительного ведения журнала и аудита для Azure Data Lake Storage](../data-lake-analytics/data-lake-analytics-diagnostic-logs.md)
 
@@ -614,7 +614,7 @@ ms.locfileid: "101738928"
 
 **Руководство**. Применяйте к ресурсам Azure теги, чтобы логически классифицировать их на основе метаданных.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -624,11 +624,11 @@ ms.locfileid: "101738928"
 
 **Руководство**. Использование тегов, групп управления и отдельных подписок (при необходимости) для Организации и мониторинга ресурсов. Регулярно сверяйте ресурсы, чтобы своевременно удалять неавторизованные ресурсы из подписки.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -697,7 +697,7 @@ ms.locfileid: "101738928"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -823,9 +823,9 @@ ms.locfileid: "101738928"
 
 Key Vault также можно использовать с развертываниями Azure HDInsight для управления ключами для хранилища кластера (учетные записи хранения Azure и Azure Data Lake Storage).
 
-- [Как внедрить собственный ключ для Apache Kafka в Azure HDInsight](/azure/hdinsight/kafka/apache-kafka-byok)
+- [Как внедрить собственный ключ для Apache Kafka в Azure HDInsight](./disk-encryption.md)
 
-- [Управление ключами шифрования для учетных записей хранения Azure](/azure/storage/common/storage-encryption-keys-portal)
+- [Управление ключами шифрования для учетных записей хранения Azure](../storage/common/customer-managed-keys-configure-key-vault.md)
 
 **Ответственность**: Customer
 
@@ -859,7 +859,7 @@ Key Vault также можно использовать с развертыва
 
 **Руководство**. Azure HDInsight поставляется с предварительно установленным и включенным для образов узлов кластера, однако необходимо управлять программным обеспечением и вручную собирать и отслеживать любые журналы кламскан.
 
-- [Общие сведения о Кламскан для Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-faq#security-and-certificates)
+- [Общие сведения о Кламскан для Azure HDInsight](./hdinsight-faq.md#security-and-certificates)
 
 **Ответственность**: Customer
 
@@ -881,7 +881,7 @@ Key Vault также можно использовать с развертыва
 
 **Руководство**. Azure HDInsight поставляется с предварительно установленным и включенным кламскан для образов узлов кластера. Кламскан будет автоматически выполнять обновления модулей и определений, однако агрегирование и управление журналами потребуется выполнять вручную.
 
-- [Общие сведения о Кламскан для Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-faq#security-and-certificates)
+- [Общие сведения о Кламскан для Azure HDInsight](./hdinsight-faq.md#security-and-certificates)
 
 **Ответственность**: Customer
 
@@ -897,7 +897,7 @@ Key Vault также можно использовать с развертыва
 
 - [Настройка избыточности хранилища для учетных записей хранения Azure](../storage/common/storage-redundancy.md)
 
-- [Настройка избыточности для базы данных SQL Azure](/azure/sql-database/sql-database-active-geo-replication)
+- [Настройка избыточности для базы данных SQL Azure](../azure-sql/database/active-geo-replication-overview.md)
 
 **Ответственность**: Customer
 
@@ -921,7 +921,7 @@ Key Vault также можно использовать с развертыва
 
 **Рекомендации**. Если Azure Key Vault используется в развертывании Azure HDInsight, протестируйте резервные копии ключей, управляемых клиентом.
 
-- [Как внедрить собственный ключ для Apache Kafka в Azure HDInsight](/azure/hdinsight/kafka/apache-kafka-byok)
+- [Как внедрить собственный ключ для Apache Kafka в Azure HDInsight](./disk-encryption.md)
 
 - [Как восстановить резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/restore-azkeyvaultkey)
 
@@ -933,7 +933,7 @@ Key Vault также можно использовать с развертыва
 
 **Рекомендации**. Если Azure Key Vault используется в развертывании Azure HDInsight, включите обратимое удаление в Key Vault, чтобы защитить ключи от случайного или вредоносного удаления.
 
-- [Включение обратимого удаления Azure Key Vault](/azure/key-vault/key-vault-ovw-soft-delete)
+- [Включение обратимого удаления Azure Key Vault](../key-vault/general/soft-delete-overview.md)
 
 **Ответственность**: Customer
 
@@ -1025,5 +1025,5 @@ Key Vault также можно использовать с развертыва
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

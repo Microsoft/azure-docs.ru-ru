@@ -13,12 +13,12 @@ ms.date: 09/15/2020
 ms.author: brandwe
 ms.reviewer: brandwe
 ms.custom: aaddev
-ms.openlocfilehash: 24a538686e101d40daba008f30a72ffc5078047a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 05bfcc86c72d9eb393da919035ce198948b943f2
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674535"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559134"
 ---
 # <a name="microsoft-enterprise-sso-plug-in-for-apple-devices-preview"></a>Подключаемый модуль единого входа Microsoft Enterprise для устройств Apple (Предварительная версия)
 
@@ -32,7 +32,7 @@ ms.locfileid: "104674535"
 * [Microsoft Authenticator](../user-help/user-help-auth-app-overview.md): iOS, ипадос
 * Microsoft Intune [Корпоративный портал](/mem/intune/apps/apps-company-portal-macos): macOS
 
-## <a name="features"></a>Компоненты
+## <a name="features"></a>Функции
 
 Подключаемый модуль единого входа Microsoft Enterprise для устройств Apple предоставляет следующие преимущества.
 
@@ -52,14 +52,14 @@ ms.locfileid: "104674535"
 - Устройство должно быть *зарегистрировано в MDM*, например с помощью Microsoft Intune.
 - Чтобы включить подключаемый модуль единого входа предприятия, необходимо *принудительно отправить конфигурацию на устройство* . Apple требует этого ограничения безопасности.
 
-требования iOS:
+### <a name="ios-requirements"></a>требования iOS:
 - на устройстве должен быть установлен iOS 13,0 или более поздней версии.
-- На устройстве должно быть установлено приложение Майкрософт, которое предоставляет подключаемый модуль единого входа Microsoft Enterprise для устройств Apple. В общедоступной предварительной версии это приложение [Microsoft Authenticator](/intune/user-help/user-help-auth-app-overview.md).
+- На устройстве должно быть установлено приложение Майкрософт, которое предоставляет подключаемый модуль единого входа Microsoft Enterprise для устройств Apple. Для общедоступной предварительной версии эти приложения являются [Microsoft Authenticatorным приложением](/azure/active-directory/user-help/user-help-auth-app-overview).
 
 
-требования к macOS:
+### <a name="macos-requirements"></a>требования к macOS:
 - на устройстве должен быть установлен macOS 10,15 или более поздней версии. 
-- На устройстве должно быть установлено приложение Майкрософт, которое предоставляет подключаемый модуль единого входа Microsoft Enterprise для устройств Apple. В общедоступной предварительной версии это приложение [Корпоративный портал Intune](/intune/user-help/enroll-your-device-in-intune-macos-cp.md).
+- На устройстве должно быть установлено приложение Майкрософт, которое предоставляет подключаемый модуль единого входа Microsoft Enterprise для устройств Apple. Для общедоступной предварительной версии эти приложения включают [Корпоративный портал Intune приложение](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp).
 
 ## <a name="enable-the-sso-plug-in"></a>Включение подключаемого модуля единого входа
 

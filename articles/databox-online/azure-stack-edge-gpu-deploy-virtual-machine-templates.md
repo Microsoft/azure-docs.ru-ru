@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 2922e9620f558e072cfc1264f7e661efd11a90fb
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: cf236396f080af9676f211c42178ddda6a794420
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102437014"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568347"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-via-templates"></a>Развертывание виртуальных машин на устройстве с Azure Stack ребра Pro GPU с помощью шаблонов
 
@@ -110,7 +110,7 @@ New-AzureRmStorageAccount -Name <Storage account name> -ResourceGroupName <Resou
 ```
 
 > [!NOTE]
-> Только локальные учетные записи хранения, такие как локально избыточное хранилище (Standard_LRS или Premium_LRS), можно создавать с помощью Azure Resource Manager. Чтобы создать многоуровневые учетные записи хранения, см. действия в разделе [Добавление и подключение к учетным записям хранения на Azure Stack пограничных Pro](azure-stack-edge-j-series-deploy-add-storage-accounts.md).
+> Только локальные учетные записи хранения, такие как локально избыточное хранилище (Standard_LRS или Premium_LRS), можно создавать с помощью Azure Resource Manager. Чтобы создать многоуровневые учетные записи хранения, см. действия в разделе [Добавление и подключение к учетным записям хранения на Azure Stack пограничных Pro](./azure-stack-edge-gpu-deploy-add-storage-accounts.md).
 
 Результат выполнения команды показан ниже.
 
@@ -292,7 +292,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 > [!NOTE]
 > При развертывании шаблона при возникновении ошибки проверки подлинности учетные данные Azure для этого сеанса могли быть просрочены. Повторно выполните `login-AzureRM` команду, чтобы снова подключиться к Azure Resource Manager на устройстве Azure Stack ребра Pro.
 
-1. Выполните следующую команду. 
+1. Выполните следующую команду: 
     
     ```powershell
     $templateFile = "Path to CreateImage.json"
@@ -390,7 +390,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 1. Введите имя пользователя, пароль и поддерживаемый размер виртуальной машины.
 1. При включении сетевого интерфейса для вычислений виртуальный коммутатор и виртуальная сеть были автоматически созданы на этом сетевом интерфейсе. Вы можете запросить существующую виртуальную сеть, чтобы получить имя виртуальной сети, ее имя и имя группы ресурсов виртуальной сети.
 
-    Выполните следующую команду.
+    Выполните следующую команду:
 
     ```powershell
     Get-AzureRmVirtualNetwork
@@ -496,7 +496,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 
 Разверните шаблон создания виртуальной машины `CreateVM.json` . Этот шаблон создает сетевой интерфейс из существующей виртуальной сети и создает виртуальную машину из развернутого образа.
 
-1. Выполните следующую команду. 
+1. Выполните следующую команду: 
     
     ```powershell
     Command:
@@ -567,7 +567,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
     --     ----            -------------   -----         -----------     --------             -------
     ```
 
-7. Убедитесь, что виртуальная машина успешно подготовлена. Выполните следующую команду.
+7. Убедитесь, что виртуальная машина успешно подготовлена. Выполните следующую команду:
 
     `Get-AzureRmVm`
 

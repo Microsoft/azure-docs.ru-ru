@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: alkohli
-ms.openlocfilehash: b962d66349bbed112114c010e8d185ba16c74c8d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 67110a2a2bd7f34c735edd126cfc655f45247fc2
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102443086"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105560239"
 ---
 # <a name="kubernetes-workload-management-on-your-azure-stack-edge-pro-device"></a>Управление рабочей нагрузкой Kubernetes на устройстве Pro Azure Stack
 
@@ -83,7 +83,7 @@ ms.locfileid: "102443086"
 
 Сведения о локальном развертывании приложения с помощью kubectl см. в следующих статьях:
 
-- [Развертывание приложения без отслеживания состояния на Azure Stack пограничной Pro через kubectl](azure-stack-edge-j-series-deploy-stateless-application-kubernetes.md).
+- [Развертывание приложения без отслеживания состояния на Azure Stack пограничной Pro через kubectl](./azure-stack-edge-gpu-deploy-stateless-application-kubernetes.md).
 
 Сведения о развертывании приложения с помощью IoT Edge см. в следующих статьях:
 

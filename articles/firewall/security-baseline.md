@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: f7766b57b5a3b9ffc73691303b5d8bcaa63fce4c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ab3f651c610127399da83addd6463ae8cb3748a9
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101721673"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105565254"
 ---
 # <a name="azure-security-baseline-for-azure-firewall"></a>Базовый уровень безопасности Azure для брандмауэра Azure
 
@@ -36,7 +36,7 @@ ms.locfileid: "101721673"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Network**:
 
@@ -52,7 +52,7 @@ ms.locfileid: "101721673"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Network**:
 
@@ -72,7 +72,7 @@ ms.locfileid: "101721673"
 
 - [Теги службы Брандмауэра Azure](service-tags.md)
 
-- [Доступные теги службы](https://docs.microsoft.com/azure/virtual-network/service-tags-overview#available-service-tags)
+- [Доступные теги службы](../virtual-network/service-tags-overview.md#available-service-tags)
 
 - [IP-группы в брандмауэре Azure](ip-groups.md)
 
@@ -90,7 +90,7 @@ ms.locfileid: "101721673"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Примеры политик Azure для работы в сети](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#network)
+- [Примеры политик Azure для работы в сети](../governance/policy/samples/built-in-policies.md#network)
 
 - [Создание схемы Azure](../governance/blueprints/create-blueprint-portal.md)
 
@@ -104,9 +104,9 @@ ms.locfileid: "101721673"
 
 - [Мониторинг журналов и метрик Брандмауэра Azure](firewall-diagnostics.md)
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log-view#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -120,7 +120,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. Майкрософт поддерживает источники времени для ресурсов Azure для брандмауэра Azure. Клиентам необходимо создать сетевое правило, разрешающее этот доступ, или для сервера времени, который используется в своей среде.
 
-- [Доступ к NTP-серверу](https://docs.microsoft.com/azure/firewall/protect-windows-virtual-desktop#additional-considerations)
+- [Доступ к NTP-серверу](./protect-windows-virtual-desktop.md#additional-considerations)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -144,7 +144,7 @@ ms.locfileid: "101721673"
 
 Список действий с ресурсами в журналах действий: Azure Resource Manager операции поставщика ресурсов
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor ](/azure/azure-monitor/platform/diagnostic-settings)
+- [Как получить журналы и метрики платформы с помощью Azure Monitor ](../azure-monitor/essentials/diagnostic-settings.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -188,9 +188,9 @@ ms.locfileid: "101721673"
 
 - [Журналы и метрики Брандмауэра Azure](logs-and-metrics.md)
 
-- [Изменение срока хранения данных в Log Analytics](/azure/azure-monitor/platform/manage-cost-storage)
+- [Изменение срока хранения данных в Log Analytics](../azure-monitor/logs/manage-cost-storage.md)
 
-- [Настройка политики хранения для журналов учетных записей хранения Azure](/azure/storage/common/storage-monitor-storage-account#configure-logging)
+- [Настройка политики хранения для журналов учетных записей хранения Azure](../storage/common/manage-storage-analytics-logs.md#configure-logging)
 
 **Ответственность**: Customer
 
@@ -214,7 +214,7 @@ ms.locfileid: "101721673"
 
 - [Журналы и метрики Брандмауэра Azure](logs-and-metrics.md)
 
-- [Журналы диагностики](https://docs.microsoft.com/azure/firewall/logs-and-metrics#diagnostic-logs)
+- [Журналы диагностики](./logs-and-metrics.md#diagnostic-logs)
 
 **Ответственность**: Customer
 
@@ -230,7 +230,7 @@ ms.locfileid: "101721673"
 
 - [Управление оповещениями в центре безопасности Azure](../security-center/security-center-managing-and-responding-alerts.md)
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -258,7 +258,7 @@ ms.locfileid: "101721673"
 
 Вы также можете включить JIT-доступ с помощью Azure Active Directory (Azure AD) управление привилегированными пользователями привилегированных ролей для служб Майкрософт и Azure Resource Manager.
 
-- [Дополнительные сведения о управление привилегированными пользователями](/azure/active-directory/privileged-identity-management)
+- [Дополнительные сведения о управление привилегированными пользователями](../active-directory/privileged-identity-management/index.yml)
 
 **Ответственность**: Customer
 
@@ -334,7 +334,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверку доступа удостоверений Azure, чтобы эффективно управлять членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверять на регулярной основе, чтобы только у авторизованных пользователей был постоянный доступ.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -348,7 +348,7 @@ ms.locfileid: "101721673"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить нужные оповещения в Log Analytics рабочей области.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -386,11 +386,11 @@ ms.locfileid: "101721673"
 
 **Руководство**. Реализация изоляции с помощью отдельных подписок и групп управления для отдельных доменов безопасности, таких как тип среды и уровень конфиденциальности данных. Вы можете ограничить уровень доступа к ресурсам брандмауэра Azure, которые требуются приложениям и корпоративным средам. Вы можете управлять доступом к ресурсам Azure с помощью управления доступом на основе ролей Azure.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -414,7 +414,7 @@ ms.locfileid: "101721673"
 
 Следуйте рекомендациям центра безопасности Azure для шифрования неактивных данных и шифрования при передаче, где это применимо. 
 
-- [Общие сведения о шифровании при передаче с помощью Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit)
+- [Общие сведения о шифровании при передаче с помощью Azure](../security/fundamentals/encryption-overview.md#encryption-of-data-in-transit)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -434,7 +434,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления доступом к брандмауэру Azure и связанным ресурсам.
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 **Ответственность**: Customer
 
@@ -456,7 +456,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения происходят в брандмауэре Azure.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -470,7 +470,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. применение тегов к брандмауэру Azure и связанным ресурсам предоставление метаданных для логической организации их в таксономию. 
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -482,7 +482,7 @@ ms.locfileid: "101721673"
 
 - [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create-management-group-portal)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
 - [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
@@ -526,7 +526,7 @@ ms.locfileid: "101721673"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deny)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/concepts/effects.md#deny)
 
 **Ответственность**: Customer
 
@@ -594,7 +594,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. Использование Azure DevOps для безопасного хранения и управления кодом, например пользовательскими политиками Azure и шаблонами Azure Resource Manager. Чтобы получить доступ к ресурсам, которыми вы управляете в Azure DevOps, вы можете предоставить или отклонить разрешения для определенных пользователей, встроенных групп безопасности или групп, определенных в Azure Active Directory (Azure AD), если они интегрированы с Azure DevOps, или Active Directory, если они интегрированы с TFS.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?preserve-view=true&view=azure-devops)
 
 - [О разрешениях и группах в Azure DevOps](/azure/devops/organizations/security/about-permissions)
 
@@ -608,7 +608,7 @@ ms.locfileid: "101721673"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Использование псевдонимов](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Использование псевдонимов](../governance/policy/concepts/definition-structure.md#aliases)
 
 **Ответственность**: Customer
 
@@ -682,7 +682,7 @@ ms.locfileid: "101721673"
 
 **Руководство**. Использование Azure DevOps для безопасного хранения и управления кодом, например пользовательскими политиками Azure, Azure Resource Manager шаблонами. Чтобы защитить ресурсы, которыми вы управляете в Azure DevOps, вы можете предоставить или отклонить разрешения для определенных пользователей, встроенных групп безопасности или групп, определенных в Azure Active Directory (Azure AD), если они интегрированы с Azure DevOps, или Active Directory, если они интегрированы с TFS.
 
-- [Как хранить код в Azure DevOps](https://docs.microsoft.com/azure/devops/repos/git/gitworkflow?view=azure-devops&amp;preserve-view=true)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?preserve-view=true&view=azure-devops)
 
 - [О разрешениях и группах в Azure DevOps](/azure/devops/organizations/security/about-permissions)
 
@@ -784,5 +784,5 @@ ms.locfileid: "101721673"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

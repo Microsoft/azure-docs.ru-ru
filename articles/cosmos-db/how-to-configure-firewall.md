@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 03/03/2021
 ms.author: mjbrown
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: a7796b70d4d32e7023fbc88086a737dd76ae7723
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b94b30851a5206c2183d999a3c024351cf415c90
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102122720"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568245"
 ---
 # <a name="configure-ip-firewall-in-azure-cosmos-db"></a>Настройка брандмауэра IP-адресов в Azure Cosmos DB
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "102122720"
 
 Чтобы программным способом обеспечить доступ к порталу Azure при включении политики управления доступом на основе IP-адресов, необходимо добавить его IP-адрес к свойству **ipRangeFilter**. IP-адрес портала:
 
-|Регион|IP-адрес|
+|Region|IP-адрес|
 |------|----------|
 |Германия|51.4.229.218|
 |Китай|139.217.8.252|
@@ -104,11 +104,11 @@ IP-адреса для виртуальных машин можно узнать
 
 Если вы выполняете доступ к учетной записи Azure Cosmos DB с компьютера через Интернет, необходимо добавить IP-адрес или диапазон IP-адресов клиента этого компьютера в список разрешенных IP-адресов для этой учетной записи.
 
-### <a name="add-outbound-rules-to-the-firewall"></a>Добавление правил исходящего трафика в брандмауэр
+### <a name="add-outbound-rules-to-the-firewall"></a>Добавление правил для исходящего трафика в брандмауэр
 
 Сведения о доступе к текущему списку диапазонов исходящих IP-адресов для добавления в параметры брандмауэра см. в статье [скачивание диапазонов IP-адресов и тегов служб в Azure](https://www.microsoft.com/download/details.aspx?id=56519).
 
-Сведения об автоматизации списка см. в статье [Использование API обнаружения тегов служб (общедоступная Предварительная версия)](https://docs.microsoft.com/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api-public-preview).
+Сведения об автоматизации списка см. в статье [Использование API обнаружения тегов служб (общедоступная Предварительная версия)](../virtual-network/service-tags-overview.md#use-the-service-tag-discovery-api-public-preview).
 
 ## <a name="configure-an-ip-firewall-by-using-a-resource-manager-template"></a><a id="configure-ip-firewall-arm"></a>Настройка брандмауэра IP-адресов с помощью шаблона Resource Manager
 

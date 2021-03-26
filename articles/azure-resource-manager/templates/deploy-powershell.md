@@ -2,13 +2,13 @@
 title: Развертывание ресурсов с помощью PowerShell и шаблона
 description: Используйте Azure Resource Manager и Azure PowerShell для развертывания ресурсов в Azure. Ресурсы определяются в шаблоне диспетчер ресурсов или в файле Бицеп.
 ms.topic: conceptual
-ms.date: 03/04/2021
-ms.openlocfilehash: e1d2197064b94d428855bbb36aadbb5eb88d4032
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.date: 03/25/2021
+ms.openlocfilehash: 11a293ca58fc6acf3bd99bb0169d817dae11fb94
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104950864"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543811"
 ---
 # <a name="deploy-resources-with-arm-templates-and-azure-powershell"></a>Развертывание ресурсов с помощью шаблонов ARM и Azure PowerShell
 
@@ -118,6 +118,8 @@ New-AzResourceGroupDeployment `
 > В настоящее время Azure PowerShell не поддерживает развертывание удаленных файлов Бицеп. Используйте [БИЦЕП CLI](./bicep-install.md#development-environment) для компиляции файла бицеп в шаблон JSON, а затем загрузите JSON-файл в удаленное расположение.
 
 Вместо того чтобы хранить шаблоны ARM на локальном компьютере, вы можете хранить их во внешнем расположении. Вы можете хранить шаблоны в репозитории системы управления версиями (например, GitHub). А также их можно хранить в учетной записи хранения Azure для общего доступа в организации.
+
+[!INCLUDE [Deploy templates in private GitHub repo](../../../includes/resource-manager-private-github-repo-templates.md)]
 
 Если развертывание выполняется в несуществующей группе ресурсов, создайте группу ресурсов. Имя группы ресурсов может содержать только буквы, цифры, точки, знаки подчеркивания, дефисы и скобки. Оно может содержать до 90 знаков и Имя не может заканчиваться точкой.
 

@@ -5,17 +5,17 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: authentication
 ms.topic: conceptual
-ms.date: 03/15/2021
+ms.date: 03/25/2021
 ms.author: justinha
 author: justinha
 manager: daveba
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 568048597f83616ed07954af744c94761250b5c0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b535d59376de455962d367a8ad6f02a037649d9d
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103471615"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557893"
 ---
 # <a name="authentication-methods-in-azure-active-directory---oath-tokens"></a>Методы проверки подлинности в токенах Azure Active Directory-OATH 
 
@@ -51,7 +51,7 @@ Helga@contoso.com,1234567,2234567abcdef1234567abcdef,60,Contoso,HardwareKey
 > [!NOTE]
 > Убедитесь, что вы включили строку заголовка в CSV-файл. Если имя участника-пользователя заключено в одинарную кавычку, оно будет экранировано с помощью другой одинарной кавычки. Например, если имя участника-пользователя — My user@domain.com , измените его на My "" user@domain.com при отправке файла.
 
-После правильного форматирования в виде CSV-файла администратор может выполнить вход на портал Azure и перейти на **Azure Active Directory > Безопасность > MFA > Маркеры OATH** и отправить полученный CSV-файл.
+После правильного форматирования в виде CSV-файла глобальный администратор может войти в портал Azure, перейдите к **Azure Active Directory > безопасность > MFA > OATH**-файлы и отправьте ПОЛУЧЕНный CSV-файл.
 
 В зависимости от размера CSV-файла этот процесс может занять несколько минут. Нажмите кнопку **Обновить**, чтобы получить сведения о текущим состоянии. Если в файле есть ошибки, можно скачать CSV-файл с указанием любых ошибок, чтобы устранить их. Имена полей в скачанном CSV-файле отличаются от загруженной версии.  
 
@@ -59,6 +59,6 @@ Helga@contoso.com,1234567,2234567abcdef1234567abcdef,60,Contoso,HardwareKey
 
 Пользователи могут настроить сочетание до 5 аппаратных маркеров OATH или приложений аутентификации, таких как приложение Microsoft Authenticator, для использования в любое время.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о настройке методов проверки подлинности с помощью [Microsoft Graph REST API бета-версии](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).

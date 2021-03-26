@@ -6,12 +6,12 @@ ms.author: vivikram
 ms.manager: abhemraj
 ms.topic: conceptual
 ms.date: 03/17/2021
-ms.openlocfilehash: 520aedd9dbb618788107bc83c5d72ad237acea22
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 4d51fc13e3587c21a7340b35db10d3cf36ab74b5
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104870744"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557553"
 ---
 # <a name="support-matrix-for-vmware-assessment"></a>Таблица поддержки для оценки виртуальных машин VMware 
 
@@ -23,7 +23,7 @@ ms.locfileid: "104870744"
 
 ## <a name="limitations"></a>Ограничения
 
-**Требование** | **Сведения**
+**Требования** | **Сведения**
 --- | ---
 **Ограничения проекта** | Для одной подписки Azure можно создать несколько проектов.<br/><br/> В одном [проекте](migrate-support-matrix.md#project)можно обнаружить и оценить до 50 000 серверов из среды VMware. Проект также может включать физические серверы и серверы из среды Hyper-V вплоть до ограничений оценки.
 **Discovery** | Устройство для миграции Azure может обнаруживать до 10 000 серверов на vCenter Server.
@@ -94,8 +94,8 @@ ms.locfileid: "104870744"
 **Поддерживаемые службы SQL** | Поддерживается только SQL Server ядро СУБД. <br/> Обнаружение SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS) и SQL Server Analysis Services (SSAS) не поддерживается.
 
 > [!Note]
-> Служба "Миграция Azure" шифрует обмен данными между экземплярами устройства службы "Миграция Azure" и исходными экземплярами SQL Server (для свойства "Шифровать соединение" установлено значение TRUE). Если соединения зашифрованы с помощью [**TrustServerCertificate**](https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlconnectionstringbuilder.trustservercertificate) (установлено значение TRUE), то транспортный уровень будет использовать протокол SSL для шифрования канала и не пойдет по цепочке сертификатов для проверки доверия. Для сервера устройства необходимо настроить [**доверие корневому центру сертификата**](https://docs.microsoft.com/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).<br/>
-Если сертификат не был предоставлен на сервере при запуске, SQL Server создает самозаверяющий сертификат, который используется для шифрования пакетов входа. [**См. дополнительные сведения**](https://docs.microsoft.com/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
+> Служба "Миграция Azure" шифрует обмен данными между экземплярами устройства службы "Миграция Azure" и исходными экземплярами SQL Server (для свойства "Шифровать соединение" установлено значение TRUE). Если соединения зашифрованы с помощью [**TrustServerCertificate**](/dotnet/api/system.data.sqlclient.sqlconnectionstringbuilder.trustservercertificate) (установлено значение TRUE), то транспортный уровень будет использовать протокол SSL для шифрования канала и не пойдет по цепочке сертификатов для проверки доверия. Для сервера устройства необходимо настроить [**доверие корневому центру сертификата**](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).<br/>
+Если сертификат не был предоставлен на сервере при запуске, SQL Server создает самозаверяющий сертификат, который используется для шифрования пакетов входа. [**См. дополнительные сведения**](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
 
 ## <a name="dependency-analysis-requirements-agentless"></a>Требования к анализу зависимостей (без агента)
 

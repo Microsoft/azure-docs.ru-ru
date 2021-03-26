@@ -6,12 +6,12 @@ ms.service: cosmos-db
 ms.topic: how-to
 ms.date: 03/24/2021
 ms.author: thweiss
-ms.openlocfilehash: ec12deb5a7c77674026b849585552fd873aee5c1
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: f8028d69e376e2b71549be52267e2f6cbdb1f8ce
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105046000"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568670"
 ---
 # <a name="configure-role-based-access-control-with-azure-active-directory-for-your-azure-cosmos-db-account-preview"></a>Настройка управления доступом на основе ролей с помощью Azure Active Directory для учетной записи Azure Cosmos DB (Предварительная версия)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -323,9 +323,9 @@ az cosmosdb sql role assignment create --account-name $accountName --resource-gr
 
 Способ создания `TokenCredential` экземпляра выходит за рамки этой статьи. Существует множество способов создания такого экземпляра в зависимости от типа удостоверения AAD, которое вы хотите использовать (субъект-пользователь, субъект-служба, группа и т. д.). Что важнее всего, `TokenCredential` экземпляр должен быть разрешаться в удостоверение (идентификатор участника), которому назначены роли. Примеры создания `TokenCredential` класса:
 
-- [в .NET](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme#credential-classes)
-- [в Java](https://docs.microsoft.com/java/api/overview/azure/identity-readme#credential-classes)
-- [в JavaScript](https://docs.microsoft.com/javascript/api/overview/azure/identity-readme#credential-classes)
+- [в .NET](/dotnet/api/overview/azure/identity-readme#credential-classes)
+- [в Java](/java/api/overview/azure/identity-readme#credential-classes)
+- [в JavaScript](/javascript/api/overview/azure/identity-readme#credential-classes)
 
 В приведенных ниже примерах используется субъект-служба с `ClientSecretCredential` экземпляром.
 

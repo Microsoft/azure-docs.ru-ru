@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: v-tcassi
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: c291bb701aca385a11631504f1a312b25cced633
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 9eeb30d8d3ab0c884472a001149021c4d5cc362c
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105045677"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558726"
 ---
 # <a name="install-and-provision-azure-iot-edge-for-linux-on-a-windows-device-preview"></a>Установка и инициализация Azure IoT Edge для Linux на устройстве Windows (предварительная версия)
 
@@ -32,7 +32,7 @@ Azure IoT Edge для Linux в Windows позволяет использоват
 >
 >Хотя IoT Edge для Linux в Windows — это рекомендуемый интерфейс для использования Azure IoT Edge в среде Windows, контейнеры Windows по-прежнему доступны. Если вы предпочитаете использовать контейнеры Windows, см. инструкции по [установке и управлению Azure IOT Edge для Windows](how-to-install-iot-edge-windows-on-windows.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Учетная запись Azure с действительной подпиской. Если у вас еще нет [подписки Azure](../guides/developer/azure-developer-guide.md#understanding-accounts-subscriptions-and-billing), создайте [бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начать работу.
 
@@ -42,8 +42,8 @@ Azure IoT Edge для Linux в Windows позволяет использоват
 
   * Windows 10 версии 1809 или более поздней; Сборка 17763 или более поздняя
   * Выпуски Professional, Enterprise или Server
-  * Минимальный объем ОЗУ: 4 ГБ (рекомендуется 8 ГБ)
-  * Минимальный объем хранилища: 10 ГБ
+  * Минимальная свободная память: 2 ГБ
+  * Минимальное свободное место на диске: 10 ГБ
   * Если вы создаете новое развертывание с помощью Windows 10, убедитесь, что вы включили Hyper-V. Дополнительные сведения см. в [статье Установка Hyper-V в Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v.md).
   * Если вы создаете новое развертывание с помощью Windows Server, убедитесь, что вы установили роль Hyper-V. Дополнительные сведения см. в [статье Установка роли Hyper-V в Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server.md).
   * Если вы создаете новое развертывание с помощью виртуальной машины, убедитесь, что вложенная виртуализация настроена правильно. Дополнительные сведения см. в описании [вложенной инструкции по виртуализации](nested-virtualization.md) .
@@ -95,7 +95,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
    ![Начальная панель мониторинга центра администрирования Windows с указанным целевым устройством](./media/how-to-install-iot-edge-on-windows/windows-admin-center-initial-dashboard.png)
 
-1. Нажмите **Добавить**.
+1. Выберите **Добавить**.
 
 1. На панели **Добавление или создание ресурсов** выберите плитку **Azure IOT Edge** . Выберите **создать** , чтобы установить новый экземпляр Azure IOT Edge для Linux в Windows на устройстве.
 

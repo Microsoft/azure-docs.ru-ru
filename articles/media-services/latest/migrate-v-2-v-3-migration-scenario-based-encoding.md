@@ -7,14 +7,14 @@ manager: femila
 ms.service: media-services
 ms.topic: conceptual
 ms.workload: media
-ms.date: 03/17/2021
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: 915fdcb059d9e7bf9e1853040b90b82a0457652e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: bf66723f878f8b277d71577c068afdad56708ad6
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104598411"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563277"
 ---
 # <a name="encoding-scenario-based-migration-guidance"></a>Кодирование рекомендаций по миграции на основе сценариев
 
@@ -26,7 +26,7 @@ ms.locfileid: "104598411"
 
 Эта статья содержит рекомендации по кодированию на основе сценариев, которые помогут вам выполнить миграцию из служб мультимедиа Azure версии 2 в v3.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к изменению рабочего процесса кодирования, рекомендуется понимать различия в способах управления хранилищем.  В AMS v3 API службы хранилища Azure используется для управления учетными записями хранения, связанными с учетной записью служб мультимедиа.
 
@@ -143,7 +143,3 @@ API v2 больше не поддерживает кодировщик Premium. 
 ## <a name="samples"></a>Примеры
 
 Кроме того, можно [сравнить код v2 и v3 в примерах кода](migrate-v-2-v-3-migration-samples.md).
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

@@ -6,12 +6,12 @@ ms.author: anvar
 ms.manager: bsiva
 ms.topic: conceptual
 ms.date: 06/08/2020
-ms.openlocfilehash: 40fcdae9a94b2b48eb4c665f4e0c9c3e58962f4b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4fb2ea534954ae6c64d0da2d992ce8b1c8a62c0c
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104576787"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557570"
 ---
 # <a name="support-matrix-for-vmware-migration"></a>Таблица поддержки для переноса виртуальных машин VMware
 
@@ -68,7 +68,7 @@ ms.locfileid: "104576787"
 **IPv6;** | Не поддерживается.
 **Целевой диск** | Виртуальные машины можно перенести только на управляемые диски ("Стандартный", "Стандартный SSD", SSD "Премиум") в Azure.
 **Одновременная репликация** | До 300 одновременно реплицирует виртуальные машины на vCenter Server с 1 устройством. До 500 одновременно реплицировать виртуальные машины на vCenter Server при развертывании дополнительного [масштабируемого устройства](./how-to-scale-out-for-migration.md) . 
-**Автоматическая установка агента виртуальной машины Azure (агент Windows и Linux)** | Поддерживается для Windows Server 2008 R2, начиная с версии. <br/> Поддерживается для RHEL6, RHEL7, CentOS7, Ubuntu 14,04, Ubuntu 16,04, Ubuntu 18.04. Проверьте список [необходимых пакетов](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux#requirements)для этих операционных систем Linux.
+**Автоматическая установка агента виртуальной машины Azure (агент Windows и Linux)** | Поддерживается для Windows Server 2008 R2, начиная с версии. <br/> Поддерживается для RHEL6, RHEL7, CentOS7, Ubuntu 14,04, Ubuntu 16,04, Ubuntu 18.04. Проверьте список [необходимых пакетов](../virtual-machines/extensions/agent-linux.md#requirements)для этих операционных систем Linux.
 
 > [!TIP]
 >  С помощью портал Azure вы сможете выбрать до 10 виртуальных машин за раз, чтобы настроить репликацию. Для репликации дополнительных виртуальных машин можно использовать портал и добавить виртуальные машины для репликации в несколько пакетов из 10 виртуальных машин или использовать интерфейс PowerShell для миграции для настройки репликации. Убедитесь, что не настроена одновременная репликация больше максимального поддерживаемого количества виртуальных машин для одновременных репликаций.

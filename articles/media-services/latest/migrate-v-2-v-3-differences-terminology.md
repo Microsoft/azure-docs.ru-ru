@@ -9,14 +9,14 @@ ms.devlang: multiple
 ms.topic: conceptual
 ms.tgt_pltfrm: multiple
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: 6f677c8753f09e146d300186e19217568952b417
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5c1fbaf9be4cb128f0e4390a8c97c6f0b9330ce2
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101705404"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559882"
 ---
 # <a name="terminology-and-entity-changes-between-media-services-v2-and-v3"></a>Терминология и изменения сущностей между службами мультимедиа версии 2 и v3
 
@@ -90,7 +90,3 @@ ms.locfileid: "101705404"
 | Режим ожидания прямых событий <!--new row --> | Режим ожидания для V2 не был. | Режим "в режиме" — это новая функция v3, которая помогает управлять горячими пулами активных событий. Теперь клиенты могут начать интерактивное событие в режиме "в сети" с меньшими затратами, прежде чем перевести его в состояние выполнения. Это улучшает время запуска канала и сокращает затраты на горячее хранение рабочих пулов для ускорения запуска. |
 | Выставление счетов за прямые мероприятия <!--new row --> | <!-- empty-->| Выставление счетов за интерактивные мероприятия основано на счетчиках Live Channel. |
 | Выходные данные в реальном времени <!--new row --> | Программы должны были запускаться после создания. | Выходные данные потоковой трансляции запускаются при создании и останавливаются при удалении. |
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

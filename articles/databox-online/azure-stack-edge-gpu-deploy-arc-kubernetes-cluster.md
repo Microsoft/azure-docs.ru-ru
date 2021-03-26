@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
-ms.openlocfilehash: 4d75986880075f6eb07aa31b9322bdae15535802
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 1d42843805f4fce24368dd07de3a73fec2545957
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102437610"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567531"
 ---
 # <a name="enable-azure-arc-on-kubernetes-cluster-on-your-azure-stack-edge-pro-gpu-device"></a>Включение службы "Дуга Azure" в кластере Kubernetes на устройстве с Azure Stack ребра Pro GPU
 
@@ -74,7 +74,7 @@ ms.locfileid: "102437610"
     
     ![Регистрация поставщиков ресурсов Kubernetes 3](media/azure-stack-edge-gpu-connect-powershell-interface/register-k8-resource-providers-4.png)
 
-Вы также можете зарегистрировать поставщики ресурсов с помощью `az cli` . Дополнительные сведения см. [в статье регистрация двух поставщиков для Kubernetes с поддержкой ARC в Azure](../azure-arc/kubernetes/connect-cluster.md#register-the-two-providers-for-azure-arc-enabled-kubernetes) .
+Вы также можете зарегистрировать поставщики ресурсов с помощью `az cli` . Дополнительные сведения см. [в статье регистрация двух поставщиков для Kubernetes с поддержкой ARC в Azure](../azure-arc/kubernetes/quickstart-connect-cluster.md#register-the-two-providers-for-azure-arc-enabled-kubernetes) .
 
 ## <a name="create-service-principal-assign-role"></a>Создание субъекта-службы, назначение роли
 
@@ -226,7 +226,7 @@ ms.locfileid: "102437610"
 
 
 > [!NOTE]
-> По умолчанию, когда ресурс `yamls` удаляется из репозитория Git, соответствующие ресурсы не удаляются из кластера Kubernetes. Необходимо задать `--sync-garbage-collection`  в Arc операторпарамс, чтобы разрешить удаление ресурсов при удалении из репозитория Git. Дополнительные сведения см. [в разделе Удаление конфигурации](../azure-arc/kubernetes/use-gitops-connected-cluster.md#additional-parameters) .
+> По умолчанию, когда ресурс `yamls` удаляется из репозитория Git, соответствующие ресурсы не удаляются из кластера Kubernetes. Необходимо задать `--sync-garbage-collection`  в Arc операторпарамс, чтобы разрешить удаление ресурсов при удалении из репозитория Git. Дополнительные сведения см. [в разделе Удаление конфигурации](../azure-arc/kubernetes/tutorial-use-gitops-connected-cluster.md#additional-parameters) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

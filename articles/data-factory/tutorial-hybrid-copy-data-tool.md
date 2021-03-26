@@ -6,13 +6,13 @@ author: nabhishek
 ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-lt-2019
-ms.date: 02/18/2021
-ms.openlocfilehash: 43097b520297ff17350620faff3da884dcbd2073
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 03/26/2021
+ms.openlocfilehash: 70905d23b61ee9fee319bae41aeb421d808fa4d0
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104606724"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566767"
 ---
 # <a name="copy-data-from-a-sql-server-database-to-azure-blob-storage-by-using-the-copy-data-tool"></a>Скопируйте данные из базы данных SQL Server в хранилище BLOB-объектов Azure с помощью средства копирования данных
 > [!div class="op_single_selector" title1="Выберите используемую версию службы "Фабрика данных":"]
@@ -87,21 +87,6 @@ ms.locfileid: "104606724"
 
 
 1. Скопируйте значения полей **Имя учетной записи хранения** и **key1**. Затем вставьте их в Блокнот или другой редактор для дальнейшего использования в руководстве.
-
-#### <a name="create-the-adftutorial-container"></a>Создание контейнера adftutorial
-В этом разделе вы создадите контейнер больших двоичных объектов с именем **adftutorial** в хранилище BLOB-объектов.
-
-1. В окне **Учетная запись хранения** перейдите на вкладку **Обзор** и выберите **Blobs** (Большие двоичные объекты).
-
-1. В окне **Большие двоичные объекты** выберите **+ Контейнер**.
-
-1. В окне **Новый контейнер** в поле **Имя** введите **adftutorial**, а затем нажмите кнопку **ОК**.
-
-1. В списке контейнеров выберите **adftutorial**.
-
-
-1. Не закрывайте окно **контейнера** **adftutorial**. Оно понадобится для проверки выходных данных в конце учебника. Фабрика данных автоматически создает выходную папку в этом контейнере, поэтому ее не нужно создавать.
-
 
 ## <a name="create-a-data-factory"></a>Создание фабрики данных
 

@@ -3,12 +3,12 @@ title: Отчеты Azure Backup электронной почты
 description: Создание автоматизированных задач для получения периодических отчетов по электронной почте
 ms.topic: conceptual
 ms.date: 03/01/2021
-ms.openlocfilehash: 8c18d4c7a3c7a9ba343296961fa9a44614366405
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: d3ec76fa1a23657578979e65c0e54bb428722244
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102510571"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561344"
 ---
 # <a name="email-azure-backup-reports"></a>Отчеты Azure Backup электронной почты
 
@@ -30,7 +30,7 @@ ms.locfileid: "102510571"
 
 ## <a name="authorize-connections-to-azure-monitor-logs-and-office-365"></a>Авторизация подключений к журналам Azure Monitor и Office 365
 
-Приложение логики использует соединитель [азуремониторлогс](https://docs.microsoft.com/connectors/azuremonitorlogs/) для запроса в La рабочие области и использует соединитель [Office 365 Outlook](https://docs.microsoft.com/connectors/office365connector/) для отправки сообщений электронной почты. Для этих двух соединителей необходимо выполнить одноразовую проверку подлинности. 
+Приложение логики использует соединитель [азуремониторлогс](/connectors/azuremonitorlogs/) для запроса в La рабочие области и использует соединитель [Office 365 Outlook](/connectors/office365connector/) для отправки сообщений электронной почты. Для этих двух соединителей необходимо выполнить одноразовую проверку подлинности. 
  
 Чтобы выполнить авторизацию, выполните следующие действия:
 
@@ -79,4 +79,4 @@ ms.locfileid: "102510571"
 Если проблемы не удается устранить, обратитесь в службу поддержки Майкрософт.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-[Дополнительные сведения об отчетах по резервному копированию](https://docs.microsoft.com/azure/backup/configure-reports)
+[Дополнительные сведения об отчетах по резервному копированию](./configure-reports.md)

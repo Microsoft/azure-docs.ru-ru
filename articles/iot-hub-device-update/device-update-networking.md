@@ -6,12 +6,12 @@ ms.author: philmea
 ms.date: 1/11/2021
 ms.topic: conceptual
 ms.service: iot-hub-device-update
-ms.openlocfilehash: e72ff144a56f44ccaa695b7dab328e42052fce39
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0512308fbaa0a725c6ecca573c70c90d8c04e247
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101680091"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558386"
 ---
 # <a name="ports-used-with-device-update-for-iot-hub"></a>Порты, используемые с обновлением устройства для центра Интернета вещей
 АДУ использует различные сетевые порты для разных целей.
@@ -27,4 +27,4 @@ ms.locfileid: "101680091"
 ## <a name="use-azure-iot-hub-supported-protocols"></a>Использование поддерживаемых протоколов в центре Интернета вещей Azure
 Агент аду можно изменить для использования любого из поддерживаемых протоколов центра Интернета вещей Azure.
 
-Дополнительные [сведения](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-protocols#:~:text=Table%202%20%20%20,%201%20more%20rows) о текущем списке поддерживаемых протоколов.
+Дополнительные [сведения](../iot-hub/iot-hub-devguide-protocols.md) о текущем списке поддерживаемых протоколов.

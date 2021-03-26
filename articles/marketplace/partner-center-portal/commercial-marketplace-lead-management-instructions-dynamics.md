@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: trkeya
 ms.author: trkeya
 ms.date: 03/30/2020
-ms.openlocfilehash: d996a2e0732ad9b4da104265710970e04cdbd368
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 067a30d8f16b06b1b29ad494363d180886d1ab8b
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98199786"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105560086"
 ---
 # <a name="configure-lead-management-for-dynamics-365-customer-engagement"></a>Настройка управления потенциальными клиентами в Dynamics 365 Customer Engagement
 
@@ -32,7 +32,7 @@ ms.locfileid: "98199786"
 
 ## <a name="install-the-solution"></a>Установка решения
 
-1. Скачайте [решение Microsoft Marketplace Lead Writer](https://mpsapiprodwus.blob.core.windows.net/documentation/MicrosoftMarketplacesLeadIntegrationSolution_1_0_0_0_target_CRM_6.1_managed.zip) и сохраните его на локальном компьютере.
+1. Скачайте [решение Microsoft Marketplace Lead Writer](https://referralsflowpackages.blob.core.windows.net/documentation/MicrosoftMarketplacesLeadIntegrationSolution_1_0_0_0_target_CRM_6.1_managed.zip) и сохраните его на локальном компьютере.
 
 1. Откройте Dynamics 365 Customer Engagement, перейдя по URL-адресу экземпляра Dynamics, например `https://tenant.crm.dynamics.com`.
 

@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 03/19/2021
-ms.openlocfilehash: ce155015373a096595dc61d75c876633e2e4f00a
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: e2de694a153276dcace1070d35af44dec1056e03
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105027199"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564931"
 ---
 # <a name="migration-guide-sql-server-to-azure-sql-database"></a>Руководство по миграции: SQL Server в базу данных SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "105027199"
 
 :::image type="content" source="media/sql-server-to-database-overview/migration-process-flow-small.png" alt-text="Поток процесса миграции":::
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 
 Чтобы перенести SQL Server в базу данных SQL Azure, убедитесь, что у вас есть следующие необходимые компоненты: 
 
@@ -152,7 +152,7 @@ ms.locfileid: "105027199"
 Убедившись, что данные одинаковы как на исходном, так и в целевом объекте, можно прямую миграцию из источника в целевую среду. Важно спланировать процесс прямую миграцию с группами бизнеса или приложений, чтобы обеспечить минимальное прерывание во время прямую миграцию, не влияющее на непрерывность бизнес-процессов. 
 
 > [!IMPORTANT]
-> Дополнительные сведения о конкретных действиях, связанных с выполнением прямую миграцию в процессе миграции с помощью DMS, см. в разделе [выполнение миграции прямую миграцию](../../../dms/tutorial-sql-server-azure-sql-online.md#perform-migration-cutover).
+> Дополнительные сведения о конкретных действиях, связанных с выполнением прямую миграцию в процессе миграции с помощью DMS, см. в разделе [выполнение миграции прямую миграцию](../../../dms/tutorial-sql-server-to-azure-sql.md).
 
 ## <a name="migration-recommendations"></a>Рекомендации по миграции
 
@@ -196,7 +196,7 @@ ms.locfileid: "105027199"
 Дополнительные сведения см. в статье [Управление базой данных SQL Azure после миграции](../../database/manage-data-after-migrating-to-database.md) .
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

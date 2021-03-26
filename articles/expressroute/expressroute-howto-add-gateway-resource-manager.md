@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 10/05/2020
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: 2b75e6e0a8b79f374900e6cb2dfc49680d3d0190
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c2fa1441f5b7d8af4d610c5341f60009e57173af
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101739064"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105560953"
 ---
 # <a name="tutorial-configure-a-virtual-network-gateway-for-expressroute-using-powershell"></a>Руководство по Настройка шлюза виртуальной сети для ExpressRoute с помощью PowerShell
 > [!div class="op_single_selector"]
@@ -50,11 +50,11 @@ ms.locfileid: "101739064"
 | Имя шлюза | *GW* |   
 | Имя IP-адреса шлюза | *GWIP* |
 | Имя конфигурации IP-адреса шлюза | *gwipconf* |
-| Type | *ExpressRoute* |
+| Тип | *ExpressRoute* |
 | Имя общедоступного IP-адреса шлюза  | *gwpip* |
 
 > [!IMPORTANT]
-> Поддержка IPv6 для частного пиринга сейчас находится на этапе **общедоступной предварительной версии**. Если вы хотите подключить виртуальную сеть к каналу ExpressRoute с настроенным частным пирингом на основе IPv6, убедитесь, что ваша виртуальная сеть имеет два стека и соответствует рекомендациям, описанным [здесь](https://docs.microsoft.com/azure/virtual-network/ipv6-overview).
+> Поддержка IPv6 для частного пиринга сейчас находится на этапе **общедоступной предварительной версии**. Если вы хотите подключить виртуальную сеть к каналу ExpressRoute с настроенным частным пирингом на основе IPv6, убедитесь, что ваша виртуальная сеть имеет два стека и соответствует рекомендациям, описанным [здесь](../virtual-network/ipv6-overview.md).
 > 
 > 
 

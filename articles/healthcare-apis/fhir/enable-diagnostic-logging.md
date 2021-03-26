@@ -9,12 +9,12 @@ ms.reviewer: dseven
 ms.author: cavoeg
 author: zxue
 ms.date: 03/03/2021
-ms.openlocfilehash: d8f7a2b2f31fb192147c1950866cff77064a3671
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: a884dac90273e98868fed6bfe1cbed23b939d286
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103020315"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557706"
 ---
 # <a name="enable-diagnostic-logging-in-azure-api-for-fhir"></a>Включение ведения журнала диагностики в Azure API для FHIR
 
@@ -42,7 +42,7 @@ ms.locfileid: "103020315"
     2. **Поток в концентратор событий** для приема от сторонней службы или пользовательского аналитического решения. Прежде чем можно будет настроить этот шаг, необходимо создать пространство имен концентратора событий и политику концентратора событий.
     3. **Поток** в рабочую область Log Analytics в Azure Monitor. Чтобы выбрать этот параметр, необходимо создать рабочую область журналы Analytics.
 
-6. Выберите **AuditLogs** и (или) **аллметрикс**. Метрики включают имя службы, доступность, размер данных, общую задержку, общее количество запросов, общее число ошибок и отметку времени. Дополнительные сведения о [поддерживаемых метриках](https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported#microsofthealthcareapisservices)см. здесь. 
+6. Выберите **AuditLogs** и (или) **аллметрикс**. Метрики включают имя службы, доступность, размер данных, общую задержку, общее количество запросов, общее число ошибок и отметку времени. Дополнительные сведения о [поддерживаемых метриках](../../azure-monitor/essentials/metrics-supported.md#microsofthealthcareapisservices)см. здесь. 
 
    :::image type="content" source="media/diagnostic-logging/fhir-diagnostic-setting.png" alt-text="Параметры диагностики Azure FHIR. Выберите AuditLogs и (или) Аллметрикс." lightbox="media/diagnostic-logging/fhir-diagnostic-setting.png":::
 
@@ -72,10 +72,10 @@ ms.locfileid: "103020315"
 |RequestUri|Строка|URI запроса 
 |ResultType|Строка|Доступные значения в настоящее время **запущены**, **успешно** или **не пройдены**
 |StatusCode|Int|Код состояния HTTP. (например, 200) 
-|TimeGenerated|Дата и время|Дата и время события|
+|TimeGenerated|Дата/время|Дата и время события|
 |Свойства|Строка| Описание свойств Фхирресаурцетипе
 |SourceSystem|Строка| Исходная система (в этом случае всегда используется Azure)
-|TenantId|Строка|Tenant ID
+|TenantId|Строка|Идентификатор клиента
 |Тип|Строка|Тип журнала (всегда Микрософсеалскареаписаудитлог в этом случае)
 |_ResourceId|Строка|Сведения о ресурсе
 

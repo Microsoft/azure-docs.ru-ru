@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 03/19/2021
+ms.date: 03/25/2021
 ms.author: b-juche
-ms.openlocfilehash: abbae7f8cb047f2f2ad3d998966bc00b02a002d4
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 03a29e121d3838404519045601d484a1875db9ce
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104864029"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557247"
 ---
 # <a name="solution-architectures-using-azure-netapp-files"></a>Архитектура решений, использующих Azure NetApp Files
 В этой статье содержатся ссылки на рекомендации, которые помогут вам понять архитектуру решения для использования Azure NetApp Files.  
@@ -100,6 +100,7 @@ ms.locfileid: "104864029"
 * [Облачные тома ONTAP и Azure NetApp Files: упрощена миграция SAP HANA системы](https://blog.netapp.com/cloud-volumes-ontap-and-azure-netapp-files-sap-hana-system-migration-made-easy/)
 * [Архитектурные решения для максимизации использовании инвестиций в HANA N + M Scale-Out архитектуру. часть 1](https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/architectural-decisions-to-maximize-anf-investment-in-hana-n-m/ba-p/2078737)
 * [Архитектурные решения для максимизации использовании инвестиций в HANA N + M Scale-Out архитектура. часть 2](https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/architectural-decisions-to-maximize-anf-investment-in-hana-n-m/ba-p/2117130)
+* [Архитектурные решения для максимизации использовании инвестиций в HANA N + M Scale-Out архитектура. часть 3](https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/architectural-decisions-to-maximize-anf-investment-in-hana-n-m/ba-p/2215948)
 
 ## <a name="azure-vmware-solutions"></a>Решения Azure VMware
 
@@ -139,7 +140,7 @@ ms.locfileid: "104864029"
 * [Azure Циклеклауд: EDA HPC Lab с Azure NetApp Files](https://github.com/Azure/cyclecloud-hands-on-labs/blob/master/EDA/README.md)
 * [Azure для полупроводниковой индустрии](https://azurecomcdn.azureedge.net/cvt-f40f39cd9de2d875ab0c198a8d7b186350cf0bca161e80d7896941389685d012/mediahandler/files/resourcefiles/azure-for-the-semiconductor-industry/Azure_for_the_Semiconductor_Industry.pdf)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Аналитика
 
 * [Azure NetApp Files: Общая файловая система, используемая в сетке SAS на Microsoft Azure](https://communities.sas.com/t5/Administration-and-Deployment/Azure-NetApp-Files-A-shared-file-system-to-use-with-SAS-Grid-on/m-p/705192)
 * [Azure NetApp Files: Общая файловая система для использования с сеткой SAS в MS Azure — RHEL 8.3/нконнект UPDATE](https://communities.sas.com/t5/Administration-and-Deployment/Azure-NetApp-Files-A-shared-file-system-to-use-with-SAS-Grid-on/m-p/722261#M21648)

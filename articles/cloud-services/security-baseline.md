@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 105fd185900692669fdc40e0c47a03474524e250
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c389cfd2af6fe83ec232e5f205041676ba46bd2a
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101731108"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558199"
 ---
 # <a name="azure-security-baseline-for-azure-cloud-services"></a>Базовые показатели безопасности Azure для облачных служб Azure
 
@@ -36,7 +36,7 @@ ms.locfileid: "101731108"
 
 - [Обзор группы безопасности сети](../virtual-network/network-security-groups-overview.md)
 
-- [Пиринг между виртуальными сетями](https://docs.microsoft.com/azure/cloud-services/cloud-services-connectivity-and-networking-faq#how-can-i-use-azure-resource-manager-virtual-networks-with-cloud-services)
+- [Пиринг между виртуальными сетями](./cloud-services-connectivity-and-networking-faq.md#how-can-i-use-azure-resource-manager-virtual-networks-with-cloud-services)
 
 **Ответственность**: Customer
 
@@ -89,11 +89,11 @@ ms.locfileid: "101731108"
 
 Настройка правила "запретить применение" для назначений администраторам классической подписки. По умолчанию после определения внутренней конечной точки данные могут передаваться из одной роли во внутреннюю конечную точку другой роли без каких-либо ограничений. Чтобы ограничить взаимодействие, необходимо добавить элемент NetworkTrafficRules к элементу ServiceDefinition в файле определения службы.
 
-- [Как заблокировать или отключить входящий трафик к URL-адресу по умолчанию облачной службы](https://docs.microsoft.com/azure/cloud-services/cloud-services-connectivity-and-networking-faq#how-can-i-blockdisable-incoming-traffic-to-the-default-url-of-my-cloud-service)
+- [Как заблокировать или отключить входящий трафик к URL-адресу по умолчанию облачной службы](./cloud-services-connectivity-and-networking-faq.md#how-can-i-blockdisable-incoming-traffic-to-the-default-url-of-my-cloud-service)
 
-- [Защита от атак DDoS в Azure](https://docs.microsoft.com/azure/cloud-services/cloud-services-connectivity-and-networking-faq#how-do-i-prevent-receiving-thousands-of-hits-from-unknown-ip-addresses-that-might-indicate-a-malicious-attack-to-the-cloud-service)
+- [Защита от атак DDoS в Azure](./cloud-services-connectivity-and-networking-faq.md#how-do-i-prevent-receiving-thousands-of-hits-from-unknown-ip-addresses-that-might-indicate-a-malicious-attack-to-the-cloud-service)
 
-- [Блокирование определенного IP-адреса](https://docs.microsoft.com/azure/cloud-services/cloud-services-startup-tasks-common#block-a-specific-ip-address)
+- [Блокирование определенного IP-адреса](./cloud-services-startup-tasks-common.md#block-a-specific-ip-address)
 
 **Ответственность**: Customer
 
@@ -175,9 +175,9 @@ ms.locfileid: "101731108"
 
 Создайте параметр диагностики для отправки журнала действий в Azure Monitor, концентраторы событий Azure для пересылки за пределы Azure или в службу хранилища Azure для архивации. Настройте Azure Monitor для оповещений о предупреждениях при изменении критических ресурсов в облачных службах Azure. 
 
-- [Журнал действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Журнал действий Azure](../azure-monitor/essentials/activity-log.md)
 
-- [Создание, просмотр оповещений журнала действий и управление ими с помощью Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание, просмотр оповещений журнала действий и управление ими с помощью Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 - [Мониторинг диспетчера трафика](../traffic-manager/traffic-manager-monitoring.md)
 
@@ -193,7 +193,7 @@ ms.locfileid: "101731108"
 
 **Руководство**. Майкрософт поддерживает источники времени для ресурсов Azure для облачных служб Azure. Клиентам может потребоваться создать сетевое правило, разрешающее доступ к серверу времени, используемому в среде, через порт 123 с протоколом UDP.
 
-- [Доступ к NTP-серверу](https://docs.microsoft.com/azure/firewall/protect-windows-virtual-desktop#additional-considerations)
+- [Доступ к NTP-серверу](../firewall/protect-windows-virtual-desktop.md#additional-considerations)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -233,7 +233,7 @@ ms.locfileid: "101731108"
 
 - [Включение диагностики в Visual Studio перед развертыванием](/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines#to-turn-on-diagnostics-in-visual-studio-before-deployment)
 
-- [Просмотр журнала изменений](/azure/azure-monitor/platform/activity-log#view-change-history)
+- [Просмотр журнала изменений](../azure-monitor/essentials/activity-log.md#view-change-history)
 
 - [Application Insights для облачной службы Azure (классическая модель)](../azure-monitor/app/cloudservices.md)
 
@@ -269,7 +269,7 @@ ms.locfileid: "101731108"
 
 - [Включение диагностики в облачных службах Azure с помощью PowerShell](cloud-services-diagnostics-powershell.md)
 
-- [Хранение и просмотр диагностических данных в службе хранилища Azure](https://docs.microsoft.com/azure/cloud-services/diagnostics-extension-to-storage?&amp;preserve-view=true)
+- [Хранение и просмотр диагностических данных в службе хранилища Azure](./diagnostics-extension-to-storage.md?preserve-view=)
 
 **Ответственность**: Customer
 
@@ -289,7 +289,7 @@ ms.locfileid: "101731108"
 
 **Руководство**. антивредоносное по Майкрософт для Azure защищает облачные службы и виртуальные машины Azure. Кроме того, вы можете развертывать сторонние решения безопасности, такие как веб-приложения, брандмауэры, Антивредоносные программы, системы обнаружения вторжений и предотвращения (ИДЕНТИФИКАТОРы или IP-адреса) и многое другое.
 
-- [Функции и возможности, предоставляемые основными IP-адресами и ИДЕНТИФИКАТОРами Azure Basic и от атак DDoS](https://docs.microsoft.com/azure/cloud-services/cloud-services-configuration-and-management-faq#what-are-the-features-and-capabilities-that-azure-basic-ipsids-and-ddos-provides)
+- [Функции и возможности, предоставляемые основными IP-адресами и ИДЕНТИФИКАТОРами Azure Basic и от атак DDoS](./cloud-services-configuration-and-management-faq.md#what-are-the-features-and-capabilities-that-azure-basic-ipsids-and-ddos-provides)
 
 **Ответственность**: Customer
 
@@ -315,7 +315,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 Ознакомьтесь с различиями между административными ролями классической подписки. 
 
-- [Различия между тремя административными ролями подписки](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#classic-subscription-administrator-roles)
+- [Различия между тремя административными ролями подписки](../role-based-access-control/rbac-and-directory-admin-roles.md#classic-subscription-administrator-roles)
 
 **Ответственность**: Customer
 
@@ -325,7 +325,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 **Рекомендации**. рекомендуется создавать стандартные рабочие процедуры для использования выделенных административных учетных записей на основе доступных ролей и разрешений, необходимых для работы и управления ресурсами облачных служб Azure.
 
-- [Различия между административными ролями классической подписки](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#classic-subscription-administrator-roles)
+- [Различия между административными ролями классической подписки](../role-based-access-control/rbac-and-directory-admin-roles.md#classic-subscription-administrator-roles)
 
 **Ответственность**: Customer
 
@@ -389,7 +389,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 - [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Схема этой роли](https://docs.microsoft.com/azure/cloud-services/schema-csdef-webrole#Certificate)
+- [Схема этой роли](./schema-csdef-webrole.md#Certificate)
 
 **Ответственность**: Customer
 
@@ -465,9 +465,9 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 Кроме того, Application Insights может отслеживать доступность, производительность, сбои и использование приложений облачных служб Azure. Это использует объединенные данные из Application Insights SDK с система диагностики Azure данными из облачных служб Azure.
 
-- [Создание, просмотр и управление классическими оповещениями метрик с помощью Azure Monitor](/azure/azure-monitor/platform/alerts-classic-portal)
+- [Создание, просмотр и управление классическими оповещениями метрик с помощью Azure Monitor](../azure-monitor/alerts/alerts-classic-portal.md)
 
-- [Общие сведения об оповещениях метрик](/azure/azure-monitor/platform/alerts-metric-overview) 
+- [Общие сведения об оповещениях метрик](../azure-monitor/alerts/alerts-metric-overview.md) 
 
 - [Application Insights для облачной службы Azure (классическая модель)](../azure-monitor/app/cloudservices.md)
 
@@ -493,7 +493,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 - [Настройка облачной службы (классическая модель)](cloud-services-how-to-configure-portal.md)
 
-- [Управление версией гостевой ОС](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-configure-portal#manage-guest-os-version)
+- [Управление версией гостевой ОС](./cloud-services-how-to-configure-portal.md#manage-guest-os-version)
 
 **Ответственность**: Совмещаемая блокировка
 
@@ -523,7 +523,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 Вспомогательная документация:
 
-- [Оценка риска ресурсов Azure](https://docs.microsoft.com/azure/security/fundamentals/ddos-best-practices#risk-evaluation-of-your-azure-resources)
+- [Оценка риска ресурсов Azure](../security/fundamentals/ddos-best-practices.md#risk-evaluation-of-your-azure-resources)
 
 **Ответственность**: Customer
 
@@ -805,7 +805,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 Кроме того, рекомендуется хранить закрытые ключи для сертификатов, используемых в облачных службах Azure, в защищенное хранилище.
 
-- [Настройка удаленного рабочего стола с помощью PowerShell](https://docs.microsoft.com/azure/cloud-services/cloud-services-role-enable-remote-desktop-powershell#configure-remote-desktop-from-powershell)
+- [Настройка удаленного рабочего стола с помощью PowerShell](./cloud-services-role-enable-remote-desktop-powershell.md#configure-remote-desktop-from-powershell)
 
 **Ответственность**: Customer
 
@@ -820,7 +820,7 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 Храните закрытые ключи для сертификатов, используемых в облачных службах Azure, в защищенное место хранения.
 
-- [Настройка удаленного рабочего стола с помощью PowerShell](https://docs.microsoft.com/azure/cloud-services/cloud-services-role-enable-remote-desktop-powershell#configure-remote-desktop-from-powershell)
+- [Настройка удаленного рабочего стола с помощью PowerShell](./cloud-services-role-enable-remote-desktop-powershell.md#configure-remote-desktop-from-powershell)
 
 **Ответственность**: Customer
 
@@ -840,9 +840,9 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 Выберите функцию адаптивного управления приложениями в центре безопасности Azure — интеллектуальное, автоматизированное комплексное решение. Она помогает защитить компьютеры от вредоносных программ и позволяет блокировать или предупреждать попытки запуска вредоносных приложений, включая те, которые могут быть пропущены решениями для защиты от вредоносных программ.
 
-- [Как автоматически добавить расширение антивредоносной программы для моих облачных служб Azure](https://docs.microsoft.com/azure/cloud-services/cloud-services-configuration-and-management-faq#how-can-i-add-an-antimalware-extension-for-my-cloud-services-in-an-automated-way)
+- [Как автоматически добавить расширение антивредоносной программы для моих облачных служб Azure](./cloud-services-configuration-and-management-faq.md#how-can-i-add-an-antimalware-extension-for-my-cloud-services-in-an-automated-way)
 
-- [Сценарии развертывания антивредоносного ПО](https://docs.microsoft.com/azure/security/fundamentals/antimalware#antimalware-deployment-scenarios)
+- [Сценарии развертывания антивредоносного ПО](../security/fundamentals/antimalware.md#antimalware-deployment-scenarios)
 
 - [Адаптивные элементы управления приложениями](../security-center/security-center-adaptive-application.md)
 
@@ -940,5 +940,5 @@ Get-AzRoleAssignment Инклудеклассикадминистраторс
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

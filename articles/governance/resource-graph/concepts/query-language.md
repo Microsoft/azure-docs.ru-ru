@@ -3,12 +3,12 @@ title: Основные сведения о языке запросов
 description: Описание таблиц Resource Graph и доступных типов данных, операторов и функций Kusto, которые можно использовать с Azure Resource Graph.
 ms.date: 03/10/2021
 ms.topic: conceptual
-ms.openlocfilehash: f6cb13814fe725ff0253a0a5bf0098f0080fa407
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5e600439d54a89dd9bd2510b2e47b71b60ee93a7
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102633807"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557689"
 ---
 # <a name="understanding-the-azure-resource-graph-query-language"></a>Общие сведения о языке запросов графика ресурсов Azure
 
@@ -135,7 +135,7 @@ Resources
 |[join](/azure/kusto/query/joinoperator) |[Хранилище ключей с именем подписки](../samples/advanced.md#join) |Поддерживаемые разновидности оператора соединения: [innerunique](/azure/kusto/query/joinoperator#default-join-flavor), [inner](/azure/kusto/query/joinoperator#inner-join), [leftouter](/azure/kusto/query/joinoperator#left-outer-join). Ограничение в 3 `join` в одном запросе, 1 из которых может быть перекрестной таблицей `join` . Если между ресурсами и Ресаурцеконтаинерс используется все перекрестные таблицы `join` , то 3 перекрестные таблицы   `join` разрешены. Пользовательские стратегии соединения, такие как широковещательное соединение, не допускаются. Сведения о том, какие таблицы могут использоваться `join` , см. в разделе [таблицы Graph ресурсов](#resource-graph-tables). |
 |[limit](/azure/kusto/query/limitoperator) |[Вывод списка общедоступных IP-адресов](../samples/starter.md#list-publicip) |Синоним `take` . Не работает с [Skip](./work-with-data.md#skipping-records). |
 |[mvexpand](/azure/kusto/query/mvexpandoperator) | | Устаревший оператор, используйте вместо него `mv-expand`. Максимальное значение _RowLimit_ равно 400. Значение по умолчанию — 128. |
-|[mv-expand](/azure/kusto/query/mvexpandoperator) |[Список Cosmos DB с конкретным указанием расположений записи](../samples/advanced.md#mvexpand-cosmosdb) |Максимальное значение _RowLimit_ равно 400. Значение по умолчанию — 128. Не более 3 `mv-expand` в одном запросе.|
+|[mv-expand](/azure/kusto/query/mvexpandoperator) |[Список Cosmos DB с конкретным указанием расположений записи](../samples/advanced.md#mvexpand-cosmosdb) |Максимальное значение _RowLimit_ равно 400. Значение по умолчанию — 128. Ограничение в 2 `mv-expand` в одном запросе.|
 |[order](/azure/kusto/query/orderoperator) |[Вывод списка ресурсов, отсортированных по имени](../samples/starter.md#list-resources) |Синоним `sort` |
 |[project](/azure/kusto/query/projectoperator) |[Вывод списка ресурсов, отсортированных по имени](../samples/starter.md#list-resources) | |
 |[project-away](/azure/kusto/query/projectawayoperator) |[Удаление столбцов из результатов](../samples/advanced.md#remove-column) | |

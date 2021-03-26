@@ -3,12 +3,12 @@ title: Управляйте гибридной инфраструктурой в
 description: Узнайте, как эффективно управлять компьютерами клиентов и кластерами Kubernetes за пределами Azure.
 ms.date: 03/12/2021
 ms.topic: how-to
-ms.openlocfilehash: ec32389cd7444405580530a00c8b7c5bc48bcd56
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: da7f016b507f8f876d27f6924f87f078a7806563
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103419342"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563605"
 ---
 # <a name="manage-hybrid-infrastructure-at-scale-with-azure-arc"></a>Управляйте гибридной инфраструктурой в масштабе с помощью дуги Azure
 
@@ -35,15 +35,15 @@ ms.locfileid: "103419342"
 
 ## <a name="manage-hybrid-kubernetes-clusters-at-scale-with-azure-arc-enabled-kubernetes"></a>Управление гибридными кластерами Kubernetes в масштабе с помощью Kubernetes с поддержкой дуги Azure
 
-Вы можете управлять кластерами Kubernetes, которые [подключены к подписке клиента с помощью дуги Azure](../../azure-arc/kubernetes/connect-cluster.md), так же, как если бы они работали в Azure.
+Вы можете управлять кластерами Kubernetes, которые [подключены к подписке клиента с помощью дуги Azure](../../azure-arc/kubernetes/quickstart-connect-cluster.md), так же, как если бы они работали в Azure.
 
 Если ваш клиент создал [учетную запись субъекта-службы для подключения кластеров Kubernetes к службе "Дуга Azure](../../azure-arc/kubernetes/create-onboarding-service-principal.md)", вы можете получить доступ к этой учетной записи субъекта-службы для адаптации кластеров и управления ими. Это можно сделать с помощью управляемого клиента, которому предоставлена встроенная роль "кластер Kubernetes — Azure Arc", если подписка, содержащая учетную запись субъекта-службы, была подключена [к Azure лигхсаусе](onboard-customer.md).
 
-Вы можете развернуть [конфигурации](../../azure-arc/kubernetes/use-gitops-connected-cluster.md) и [Helm диаграммы](../../azure-arc/kubernetes/use-gitops-with-helm.md) с помощью гитопс для подключенных кластеров.
+Вы можете развернуть [конфигурации](../../azure-arc/kubernetes/tutorial-use-gitops-connected-cluster.md) и [Helm диаграммы](../../azure-arc/kubernetes/use-gitops-with-helm.md) с помощью гитопс для подключенных кластеров.
 
 Вы также можете отслеживать подключенные кластеры с помощью Azure Monitor и [использовать политику Azure для применения конфигураций кластера в масштабе](../../azure-arc/kubernetes/use-azure-policy.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с примерами быстрого запуска и образцами в [репозитории GitHub Azure Arc](https://github.com/microsoft/azure_arc).
 - Узнайте о [поддерживаемых сценариях для серверов с поддержкой ARC в Azure](../../azure-arc/servers/overview.md#supported-scenarios).

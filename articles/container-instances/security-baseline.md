@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 1ab927c973c6a5de6f3f3f8d88c504ec572b7148
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: f63fc7ae28d80707149046637cf39c60a45748fd
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105047598"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566580"
 ---
 # <a name="azure-security-baseline-for-container-instances"></a>Базовые показатели безопасности Azure для экземпляров контейнеров
 
@@ -32,7 +32,7 @@ ms.locfileid: "105047598"
 
 Управление исходящим сетевым доступом из подсети, делегированной в службу "экземпляры контейнеров Azure" с помощью брандмауэра Azure. 
 
-- [Развертывание экземпляров контейнеров в виртуальной сети Azure](/azure/container-instances/container-instance-vnet)
+- [Развертывание экземпляров контейнеров в виртуальной сети Azure](/azure/container-instances/container-instances-vnet)
 
 - [Развертывание и настройка брандмауэра Azure](../firewall/tutorial-firewall-deploy-portal.md)
 

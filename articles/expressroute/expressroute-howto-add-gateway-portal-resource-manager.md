@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 03/03/2021
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: 6c6969fdf413c4eb5e7bbcf046fc397834d6c0a2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: e70b41dfba03b7439313350746724c6f8e90bc34
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102038923"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564778"
 ---
 # <a name="tutorial-configure-a-virtual-network-gateway-for-expressroute-using-the-azure-portal"></a>Руководство по Настройка шлюза виртуальной сети для ExpressRoute с помощью портала Azure
 > [!div class="op_single_selector"]
@@ -51,7 +51,7 @@ ms.locfileid: "102038923"
 Можно просмотреть [видео](https://azure.microsoft.com/documentation/videos/azure-expressroute-how-to-create-a-vpn-gateway-for-your-virtual-network) об этих действиях перед началом настройки.
 
 > [!IMPORTANT]
-> Поддержка IPv6 для частного пиринга сейчас находится на этапе **общедоступной предварительной версии**. Если вы хотите подключить виртуальную сеть к каналу ExpressRoute с настроенным частным пирингом на основе IPv6, убедитесь, что ваша виртуальная сеть имеет два стека и соответствует рекомендациям по [IPv6 для виртуальной сети Azure](https://docs.microsoft.com/azure/virtual-network/ipv6-overview).
+> Поддержка IPv6 для частного пиринга сейчас находится на этапе **общедоступной предварительной версии**. Если вы хотите подключить виртуальную сеть к каналу ExpressRoute с настроенным частным пирингом на основе IPv6, убедитесь, что ваша виртуальная сеть имеет два стека и соответствует рекомендациям по [IPv6 для виртуальной сети Azure](../virtual-network/ipv6-overview.md).
 > 
 > 
 
