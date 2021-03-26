@@ -1,7 +1,7 @@
 ---
-title: Общие сведения о клиентской библиотеке для чата Служб коммуникации Azure
+title: Общие сведения о пакете SDK для чата Служб коммуникации Azure
 titleSuffix: An Azure Communication Services concept document
-description: Сведения о клиентской библиотеке для чата Служб коммуникации Azure.
+description: Сведения о пакете SDK для чата Служб коммуникации Azure.
 author: mikben
 manager: jken
 services: azure-communication-services
@@ -9,22 +9,22 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 705bd926c2ac6f414464254969b5c511c88891f0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b275c3af2e92dc5af677120b5082751d19676b2e
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104656113"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105110820"
 ---
-# <a name="chat-client-library-overview"></a>Общие сведения о клиентской библиотеке для чата  
+# <a name="chat-sdk-overview"></a>Общие сведения о пакете SDK для чата 
 
 [!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]    
 
-Клиентские библиотеки для чата Служб коммуникации Azure можно использовать для добавления в приложения полнофункционального разговора в режиме реального времени.
+Пакеты SDK для чата Служб коммуникации Azure можно использовать для добавления в приложения полнофункционального чата в реальном времени.
     
-## <a name="chat-client-library-capabilities"></a>Возможности клиентской библиотеки для чата 
+## <a name="chat-sdk-capabilities"></a>Возможности пакета SDK для чата    
 
-В следующем списке содержится набор функций, которые сейчас доступны в клиентских библиотеках для чата Служб коммуникации Azure.  
+В следующем списке содержится набор функций, которые сейчас доступны в пакетах SDK для чата Служб коммуникации Azure.  
 
 | Группа функций | Функция | JavaScript  | Java | .NET | Python | iOS | Android |
 |-----------------|-------------------|---|-----|----|-----|----|----|
@@ -51,13 +51,13 @@ ms.locfileid: "104656113"
 
 **Защищаемый пакет сигнализации реализуется с помощью веб-сокетов. Если веб-сокеты не поддерживаются, это приведет к длительному опросу.  
 
-## <a name="javascript-chat-client-library-support-by-os-and-browser"></a>Поддержка клиентской библиотеки чата JavaScript для ОС и браузера 
+## <a name="javascript-chat-sdk-support-by-os-and-browser"></a>Поддержка пакета SDK JavaScript для чата в ОС и браузерах    
 
 В следующей таблице представлен набор поддерживаемых браузеров и доступных в настоящее время версий.
     
 |                                  | Windows          | MacOS          | Ubuntu | Linux  | Android | iOS    | ОС iPad|
 |--------------------------------|----------------|--------------|-------|------|------|------|-------|
-| **Клиентская библиотека чата** | Firefox *, Chrome*, новый Microsoft Edge | Firefox *, Chrome*, Safari* | Chrome*  | Chrome* | Chrome* | Safari* | Safari* |
+| **Пакет SDK для чата** | Firefox *, Chrome*, новый Microsoft Edge | Firefox *, Chrome*, Safari* | Chrome*  | Chrome* | Chrome* | Safari* | Safari* |
 
 * Обратите внимание, что поддерживается также последняя версия (кроме двух предыдущих выпусков).<br/>   
 
