@@ -1,14 +1,14 @@
 ---
 title: Сведения о политике Azure для Kubernetes
 description: Узнайте, как Политика Azure использует Rego и Open Policy Agent для управления кластерами, работающими под управлением Kubernetes в Azure или в локальной среде.
-ms.date: 12/01/2020
+ms.date: 03/22/2021
 ms.topic: conceptual
-ms.openlocfilehash: 0aaf610cd5712ee195ed2a4108cf9e5ca9c65183
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 60ffcfac688eb40f47efefb74f79d27a2cb82446
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100577094"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868160"
 ---
 # <a name="understand-azure-policy-for-kubernetes-clusters"></a>Общие сведения о политике Azure для кластеров Kubernetes
 
@@ -68,7 +68,7 @@ ms.locfileid: "100577094"
 
 Ниже приведены общие рекомендации по использованию надстройки политики Azure.
 
-- Для запуска надстройки политики Azure требуется 3 компонента привратника: 1 модуль аудита и две реплики Pod модуля веб-перехватчика. Эти компоненты потребляют больше ресурсов, так как количество ресурсов Kubernetes и назначений политик увеличивается в кластере, что требует операций аудита и принудительного применения.
+- Для работы надстройки политики Azure требуется три компонента-привратника: 1 модуль аудита и две реплики Pod модуля веб-перехватчика. Эти компоненты потребляют больше ресурсов, так как количество ресурсов Kubernetes и назначений политик увеличивается в кластере, что требует выполнения операций аудита и принудительного применения.
 
   - Для менее 500 модулей Pod в одном кластере с максимум 20 ограничениями: 2 виртуальных ЦП и 350 МБ памяти на компонент.
   - Для более 500 модулей Pod в одном кластере с максимальным числом ограничений 40:3 виртуальных ЦП и 600 МБ памяти на компонент.
@@ -85,7 +85,7 @@ ms.locfileid: "100577094"
 
 ## <a name="install-azure-policy-add-on-for-aks"></a>Установка надстройки Политики Azure для AKS
 
-Прежде чем устанавливать надстройку Политики Azure или включать какие-либо функции службы, ваша подписка должна включить поставщики ресурсов **Microsoft.PolicyInsights** и **Microsoft.PolicyInsights**.
+Прежде чем устанавливать надстройку политики Azure или включить какие-либо функции службы, ваша подписка должна включить поставщики ресурсов **Microsoft. полициинсигхтс** .
 
 1. Требуется Azure CLI версии 2.12.0 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli).
 
@@ -93,15 +93,12 @@ ms.locfileid: "100577094"
 
    - Портал Azure:
 
-     Зарегистрируйте поставщики ресурсов **Microsoft. ContainerService** и **Microsoft.PolicyInsights**. Действия см. в [Поставщики и типы ресурсов](../../../azure-resource-manager/management/resource-providers-and-types.md#azure-portal).
+     Зарегистрируйте поставщики ресурсов **Microsoft. полициинсигхтс** . Действия см. в [Поставщики и типы ресурсов](../../../azure-resource-manager/management/resource-providers-and-types.md#azure-portal).
 
    - Azure CLI:
 
      ```azurecli-interactive
      # Log in first with az login if you're not using Cloud Shell
-
-     # Provider register: Register the Azure Kubernetes Service provider
-     az provider register --namespace Microsoft.ContainerService
 
      # Provider register: Register the Azure Policy provider
      az provider register --namespace Microsoft.PolicyInsights
@@ -440,14 +437,13 @@ kubectl get pods -n gatekeeper-system
 
 - Если подписка кластера зарегистрирована в центре безопасности Azure, политики Kubernetes центра безопасности Azure применяются к кластеру автоматически.
 
-- Когда политика запрета применяется к кластеру с существующими ресурсами Kubernetes, все существующие ранее ресурсы, не соответствующие новой политике, продолжат выполняться. Когда несоответствующий ресурс Перепланируется на другом узле, привратник блокирует создание ресурсов.
+- Когда политика запрета применяется к кластеру с существующими ресурсами Kubernetes, все существующие ресурсы, не соответствующие новой политике, продолжат выполняться. Когда несоответствующий ресурс Перепланируется на другом узле, привратник блокирует создание ресурсов.
 
 - Если в кластере есть политика Deny, которая проверяет ресурсы, при создании развертывания пользователь не увидит сообщение об отклонении. Например, рассмотрим развертывание Kubernetes, которое содержит репликасетс и Pod. При выполнении пользователь `kubectl describe deployment $MY_DEPLOYMENT` не возвращает сообщение об отклонении в составе событий. Однако `kubectl describe replicasets.apps $MY_DEPLOYMENT` возвращает события, связанные с отклонением.
 
-## <a name="logging"></a>Logging
+## <a name="logging"></a>Ведение журнала
 
-И объект pod _azure-policy_ и _gatekeeper_, являющиеся контроллерами/контейнерами Kubernetes, хранят журналы в кластере Kubernetes. Журналы можно предоставить на странице **Insights** (Аналитические сведения) кластера Kubernetes.
-Дополнительные сведения см. в статье [Мониторинг производительности кластера Kubernetes с помощью Azure Monitor для контейнеров](../../../azure-monitor/containers/container-insights-analyze.md).
+В качестве Kubernetes контроллера или контейнера модули _Azure — политика_ и _привратник_ сохраняют журналы в кластере Kubernetes. Журналы можно предоставить на странице **Insights** (Аналитические сведения) кластера Kubernetes. Дополнительные сведения см. в статье [Мониторинг производительности кластера Kubernetes с помощью Azure Monitor для контейнеров](../../../azure-monitor/containers/container-insights-analyze.md).
 
 Чтобы просмотреть журналы надстроек, используйте `kubectl`:
 

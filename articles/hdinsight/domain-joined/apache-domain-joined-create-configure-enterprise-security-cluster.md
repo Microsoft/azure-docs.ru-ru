@@ -5,12 +5,12 @@ services: hdinsight
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 12/10/2019
-ms.openlocfilehash: 914acfab3935bc81e7d8382163ca9283c7f71a53
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3e6a5742d2dc8079c36f2d9f39a827f8db99cd67
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98934043"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867174"
 ---
 # <a name="create-and-configure-enterprise-security-package-clusters-in-azure-hdinsight"></a>Создание и настройка кластеров Корпоративный пакет безопасности в Azure HDInsight
 
@@ -28,7 +28,7 @@ ms.locfileid: "98934043"
 * Включите Azure AD.
 * Синхронизация локальных учетных записей пользователей с Azure AD.
 
-![Схема архитектуры Azure AD](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0002.png)
+:::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0002.png" alt-text="Схема архитектуры Azure AD" border="false":::
 
 ## <a name="create-an-on-premises-environment"></a>Создание локальной среды
 
@@ -40,7 +40,7 @@ ms.locfileid: "98934043"
 1. Войдите в подписку Azure.
 1. На странице **Создание виртуальной машины Azure с помощью нового леса AD** укажите следующие сведения.
 
-    |Свойство. | Значение |
+    |Свойство | Значение |
     |---|---|
     |Подписка|Выберите подписку, в которой требуется развернуть ресурсы.|
     |Группа ресурсов|Выберите **создать** и введите имя. `OnPremADVRG`|
@@ -52,7 +52,7 @@ ms.locfileid: "98934043"
 
     Оставьте остальные значения по умолчанию.
 
-    ![Шаблон для создания виртуальной машины Azure с новым лесом Azure AD](./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-azure-vm-ad-forest.png)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-azure-vm-ad-forest.png" alt-text="Шаблон для создания виртуальной машины Azure с новым лесом Azure AD" border="true":::
 
 1. Просмотрите **условия**, а затем установите флажок **я принимаю указанные выше условия**.
 1. Выберите **приобрести** и отслеживайте развертывание и дождитесь его завершения. Выполнение развертывания займет около 30 минут.
@@ -71,23 +71,23 @@ ms.locfileid: "98934043"
 
 1. На панели мониторинга **Диспетчер сервера** контроллер домена перейдите в **меню Инструменты**  >  **Active Directory пользователи и компьютеры**.
 
-    ![На панели мониторинга диспетчер сервера откройте управление Active Directory](./media/apache-domain-joined-create-configure-enterprise-security-cluster/server-manager-active-directory-screen.png)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/server-manager-active-directory-screen.png" alt-text="На панели мониторинга диспетчер сервера откройте управление Active Directory" border="true":::
 
 1. Создайте два новых пользователя: **хдиадмин** и **HDIUser**. Эти два пользователя будут входить в кластеры HDInsight.
 
     1. На странице **Active Directory пользователи и компьютеры** щелкните правой кнопкой мыши `HDIFabrikam.com` и перейдите к пункту **Новый**  >  **пользователь**.
 
-        ![Создание нового Active Directory пользователя](./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-active-directory-user.png)
+        :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-active-directory-user.png" alt-text="Создание нового Active Directory пользователя" border="true":::
 
     1. На странице **новый объект-пользователь** введите имя `HDIUser` и **имя входа пользователя**.  Другие поля будут заполнены автоматически. Выберите **Далее**.
 
-        ![Создание первого объекта пользователя "Администратор"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0020.png)
+        :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0020.png" alt-text="Создание первого объекта пользователя &quot;Администратор&quot;" border="true":::
 
     1. Во всплывающем окне введите пароль для новой учетной записи. Выберите **срок действия пароля не ограничен**, а затем во всплывающем сообщении нажмите **кнопку ОК** .
     1. Нажмите кнопку **Далее**, а затем **Готово** , чтобы создать новую учетную запись.
     1. Повторите описанные выше действия, чтобы создать пользователя `HDIAdmin` .
 
-        ![Создание второго объекта пользователя "Администратор"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0024.png)
+        :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0024.png" alt-text="Создание второго объекта пользователя &quot;Администратор&quot;" border="true":::
 
 1. Создайте глобальную группу безопасности.
 
@@ -97,9 +97,9 @@ ms.locfileid: "98934043"
 
     1. Щелкните **ОК**.
 
-    ![Создание новой группы Active Directory](./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-active-directory-group.png)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-active-directory-group.png" alt-text="Создание новой группы Active Directory" border="true":::
 
-    ![Создание нового объекта](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0028.png)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0028.png" alt-text="Создать новый объект" border="true":::
 
 1. Добавьте элементы в **хдиусерграуп**.
 
@@ -107,7 +107,7 @@ ms.locfileid: "98934043"
     1. В текстовом поле **Введите имена объектов для выбора** введите `HDIUserGroup` . Затем нажмите кнопку **ОК**, а затем снова **кнопку ОК** во всплывающем окне.
     1. Повторите предыдущие шаги для учетной записи **хдиадмин** .
 
-        ![Добавление члена HDIUser в группу Хдиусерграуп](./media/apache-domain-joined-create-configure-enterprise-security-cluster/active-directory-add-users-to-group.png)
+        :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/active-directory-add-users-to-group.png" alt-text="Добавление члена HDIUser в группу Хдиусерграуп" border="true":::
 
 Теперь вы создали среду Active Directory. Вы добавили двух пользователей и группу пользователей, которые имеют доступ к кластеру HDInsight.
 
@@ -121,7 +121,7 @@ ms.locfileid: "98934043"
 1. В поле **имя исходного домена** введите `HDIFabrikamoutlook` .
 1. Нажмите кнопку **создания**.
 
-    ![Создание каталога Azure AD](./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-new-directory.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-new-directory.png" alt-text="Создание каталога Azure AD" border="true":::
 
 ### <a name="create-a-custom-domain"></a>Создание пользовательского домена
 
@@ -130,7 +130,7 @@ ms.locfileid: "98934043"
 1. В поле **имя личного домена** введите `HDIFabrikam.com` , а затем выберите **Добавить домен**.
 1. Затем завершите [Добавление данных DNS в регистратор домена](../../active-directory/fundamentals/add-custom-domain.md#add-your-dns-information-to-the-domain-registrar).
 
-![Создание пользовательского домена](./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-custom-domain.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/create-custom-domain.png" alt-text="Создание пользовательского домена" border="true":::
 
 ### <a name="create-a-group"></a>Создание группы
 
@@ -151,27 +151,27 @@ ms.locfileid: "98934043"
 
 1. Введите следующие сведения для нового пользователя:
 
-    **Удостоверение**
+   **Удостоверение**
 
-    |Свойство. |Описание |
-    |---|---|
-    |Имя пользователя|Введите `fabrikamazureadmin` в текстовое поле. В раскрывающемся списке доменное имя выберите `hdifabrikam.com`|
-    |Имя| Введите `fabrikamazureadmin`.|
+   |Свойство |Описание |
+   |---|---|
+   |Имя пользователя|Введите `fabrikamazureadmin` в текстовое поле. В раскрывающемся списке доменное имя выберите `hdifabrikam.com`|
+   |Имя| Введите `fabrikamazureadmin`.|
 
-    **Пароль**
-    1. Выберите параметр **Разрешить создание пароля**.
-    1. Введите безопасный пароль по своему усмотрению.
+   **Пароль**
+   1. Выберите параметр **Разрешить создание пароля**.
+   1. Введите безопасный пароль по своему усмотрению.
 
-    **Группы и роли**
-    1. Выберите **0 групп**.
-    1. Выберите **Администраторы контроллера домена AAD**, а затем **выберите**.
+   **Группы и роли**
+   1. Выберите **0 групп**.
+   1. Выберите **Администраторы контроллера домена AAD**, а затем **выберите**.
 
-    ![Диалоговое окно "группы Azure AD"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/azure-ad-add-group-member.png)
+      :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/azure-ad-add-group-member.png" alt-text="Диалоговое окно &quot;группы Azure AD&quot;" border="true":::
 
-    1. Выберите **пользователь**.
-    1. Выберите **глобальный администратор**, **а затем щелкните**.
+   1. Выберите **пользователь**.
+   1. Выберите **глобальный администратор**, **а затем щелкните**.
 
-    ![Диалоговое окно "роль Azure AD"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/azure-ad-add-role-member.png)
+      :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/azure-ad-add-role-member.png" alt-text="Диалоговое окно &quot;роль Azure AD&quot;" border="true":::
 
 1. Нажмите кнопку **создания**.
 
@@ -189,20 +189,22 @@ ms.locfileid: "98934043"
 
 1. На странице **Подключение к Azure AD** введите имя пользователя и пароль глобального администратора для Azure AD. Используйте имя пользователя `fabrikamazureadmin@hdifabrikam.com` , созданное при настройке клиента Active Directory. Выберите **Далее**.
 
-    ![Страница "подключение к Azure A D".](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0058.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0058.png" alt-text="Подключение к Azure A D" border="true":::
 
 1. На странице **Подключение к домен Active Directory службам** введите имя пользователя и пароль для учетной записи администратора предприятия. Используйте имя пользователя `HDIFabrikam\HDIFabrikamAdmin` и пароль, созданные ранее. Выберите **Далее**.
 
-   ![Страница "подключение к D D S".](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0060.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0060.png" alt-text="Подключитесь к странице D D." border="true":::
+
 1. На странице **Настройка входа в Azure AD** нажмите кнопку **Далее**.
-   ![Страница "Конфигурация входа в Azure AD"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0062.png)
+
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0062.png" alt-text="Страница настройки входа в Azure AD" border="true":::
 
 1. На странице **все готово для настройки** нажмите кнопку **установить**.
 
-   ![Страница "все готово для настройки"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0064.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0064.png" alt-text="Страница &quot;готово к настройке&quot;" border="true":::
 
 1. На странице **Конфигурация завершена** выберите **Выйти**.
-   ![Страница "Настройка завершена"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0078.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0078.png" alt-text="Страница &quot;Настройка завершена&quot;" border="true":::
 
 1. После завершения синхронизации убедитесь, что пользователи, созданные в каталоге IaaS, синхронизированы с Azure AD.
    1. Войдите на портал Azure.
@@ -220,7 +222,7 @@ ms.locfileid: "98934043"
 1. В разделе **Расположение** выберите **Центральная американская**.
 1. Нажмите кнопку **создания**.
 
-![Создание нового управляемого удостоверения, назначенного пользователем](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0082.png)
+:::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0082.png" alt-text="Создание нового управляемого удостоверения, назначенного пользователем" border="true":::
 
 ### <a name="enable-azure-ad-ds"></a>Включение Azure AD DS
 
@@ -247,28 +249,28 @@ ms.locfileid: "98934043"
 1. Войдите на портал Azure.
 1. Выберите **создать ресурс**, введите `Domain services` и выберите **доменные службы Azure AD**  >  **создать**.
 1. На странице **Основные сведения** :
-    1. В разделе **имя каталога** выберите созданный каталог Azure AD: **хдифабрикам**.
-    1. В качестве **имени домена DNS** введите *HDIFabrikam.com*.
-    1. Выберите свою подписку.
-    1. Укажите группу ресурсов **хдифабрикам-CentralUS**. В качестве **расположения** выберите **Central US**.
+   1. В разделе **имя каталога** выберите созданный каталог Azure AD: **хдифабрикам**.
+   1. В качестве **имени домена DNS** введите *HDIFabrikam.com*.
+   1. Выберите свою подписку.
+   1. Укажите группу ресурсов **хдифабрикам-CentralUS**. В качестве **расположения** выберите **Central US**.
 
-        ![Основные сведения об Azure AD DS](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0084.png)
+      :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0084.png" alt-text="Основные сведения об Azure AD DS" border="true":::
 
 1. На странице **сеть** выберите сеть (**хдифабрикам-vnet**) и подсеть (**AADDS-Subnet**), созданную с помощью сценария PowerShell. Или выберите **создать** , чтобы создать виртуальную сеть прямо сейчас.
 
-    ![Шаг "Создание виртуальной сети"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0086.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0086.png" alt-text="Шаг создания виртуальной сети" border="true":::
 
 1. На странице **Группа администраторов** должно появиться уведомление о том, что группа с именем **Администраторы контроллера домена AAD** уже создана для администрирования этой группы. Вы можете изменить членство в этой группе, если хотите, но в данном случае ее не нужно изменять. Щелкните **ОК**.
 
-    ![Просмотр группы администраторов Azure AD](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0088.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0088.png" alt-text="Просмотр группы администраторов Azure AD" border="true":::
 
 1. На странице **Синхронизация** Включите полную синхронизацию, выбрав **все**  >  **ОК**.
 
-    ![Включение синхронизации AD DS Azure](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0090.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0090.png" alt-text="Включение синхронизации AD DS Azure" border="true":::
 
 1. На странице **Сводка** проверьте сведения о AD DS Azure и нажмите кнопку **ОК**.
 
-    ![Сводка по включению доменных служб Azure AD](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0092.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0092.png" alt-text="Включение доменных служб Azure AD" border="true":::
 
 После включения AD DS Azure локальный DNS-сервер будет работать на виртуальных машинах Azure AD.
 
@@ -277,23 +279,23 @@ ms.locfileid: "98934043"
 Выполните следующие действия, чтобы настроить виртуальную сеть Azure AD DS (**хдифабрикам-ааддсвнет**) для использования пользовательских DNS-серверов.
 
 1. Нахождение IP-адресов пользовательских DNS-серверов.
-    1. Выберите `HDIFabrikam.com` ресурс Azure AD DS.
-    1. В разделе **Управление** выберите **Свойства**.
-    1. Найдите IP-адреса в разделе **IP-адрес в виртуальной сети**.
+   1. Выберите `HDIFabrikam.com` ресурс Azure AD DS.
+   1. В разделе **Управление** выберите **Свойства**.
+   1. Найдите IP-адреса в разделе **IP-адрес в виртуальной сети**.
 
-    ![Поиск пользовательских IP-адресов DNS для Azure AD DS](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0096.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0096.png" alt-text="Поиск пользовательских IP-адресов DNS для Azure AD DS" border="true":::
 
 1. Настройте **хдифабрикам-ааддсвнет** для использования НАСТРАИВАЕМЫХ IP-адресов 10.0.0.4 и 10.0.0.5.
 
-    1. В разделе **Параметры** выберите **DNS-серверы**.
-    1. Выберите **Пользовательский**.
-    1. В текстовом поле введите первый IP-адрес (*10.0.0.4*).
-    1. Щелкните **Сохранить**.
-    1. Повторите шаги, чтобы добавить другой IP-адрес (*10.0.0.5*).
+   1. В разделе **Параметры** выберите **DNS-серверы**.
+   1. Выберите **Пользовательский**.
+   1. В текстовом поле введите первый IP-адрес (*10.0.0.4*).
+   1. Щелкните **Сохранить**.
+   1. Повторите шаги, чтобы добавить другой IP-адрес (*10.0.0.5*).
 
 В нашем сценарии мы настроили Azure AD DS для использования IP-адресов 10.0.0.4 и 10.0.0.5, задав тот же IP-адрес в виртуальной сети Azure AD DS.
 
-![Страница "пользовательские DNS-серверы"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0098.png)
+:::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0098.png" alt-text="Страница &quot;пользовательские DNS-серверы&quot;" border="true":::
 
 ## <a name="securing-ldap-traffic"></a>Защита трафика LDAP
 
@@ -321,47 +323,47 @@ New-SelfSignedCertificate -Subject hdifabrikam.com `
 1. Добавьте оснастку " **Сертификаты** ", которая управляет сертификатами на локальном компьютере.
 1. Разверните **Certificates (Local Computer)** (Сертификаты на локальном компьютере)  > **Личные** > **Сертификаты**. В **личном** хранилище должен присутствовать новый сертификат. Этот сертификат выдается полному имени узла.
 
-    ![Проверка создания локального сертификата](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0102.png)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0102.png" alt-text="Проверка создания локального сертификата" border="true":::
 
 1. В области справа щелкните созданный сертификат правой кнопкой мыши. Наведите указатель на пункт **все задачи**, а затем выберите **Экспорт**.
 
 1. На странице **Экспорт закрытого ключа** выберите **Да, экспортировать закрытый ключ**. На компьютере, на котором будет импортирован ключ, требуется закрытый ключ для чтения зашифрованных сообщений.
 
-    ![Страница «Экспорт закрытого ключа» мастера экспорта сертификатов](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0103.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0103.png" alt-text="Страница «Экспорт закрытого ключа» мастера экспорта сертификатов" border="true":::
 
 1. На странице **Формат экспортируемого файла** оставьте параметры по умолчанию, а затем нажмите кнопку **Далее**.
 1. На странице **пароль** введите пароль для закрытого ключа. В качестве **шифрования** выберите **TripleDES-SHA1**. Выберите **Далее**.
 1. На странице **файл для экспорта** введите путь и имя экспортированного файла сертификата, а затем нажмите кнопку **Далее**. Имя файла должно иметь расширение PFX. Этот файл настраивается в портал Azure для установления безопасного подключения.
 1. Включите LDAPs для управляемого домена Azure AD DS.
-    1. В портал Azure выберите домен `HDIFabrikam.com` .
-    1. В разделе **Управление** выберите **защищенный протокол LDAP**.
-    1. На странице **защищенный протокол LDAP** в разделе **защищенный протокол LDAP** выберите **включить**.
-    1. Найдите PFX-файл сертификата, экспортированный на компьютере.
-    1. Введите пароль сертификата.
+   1. В портал Azure выберите домен `HDIFabrikam.com` .
+   1. В разделе **Управление** выберите **защищенный протокол LDAP**.
+   1. На странице **защищенный протокол LDAP** в разделе **защищенный протокол LDAP** выберите **включить**.
+   1. Найдите PFX-файл сертификата, экспортированный на компьютере.
+   1. Введите пароль сертификата.
 
-    ![Включение защищенного протокола LDAP](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0113.png)
+   :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0113.png" alt-text="Включение защищенного протокола LDAP" border="true":::
 
 1. Теперь, когда вы включили LDAPs, убедитесь, что он доступен, включив порт 636.
-    1. В группе ресурсов **хдифабрикам-CentralUS** выберите группу безопасности сети **AADDS-HDIFabrikam.com-NSG**.
-    1. В разделе **Параметры** выберите **правила безопасности для входящего трафика**  >  **Добавить**.
-    1. На странице **Добавление правила безопасности для входящего трафика** введите следующие свойства и выберите **Добавить**.
+   1. В группе ресурсов **хдифабрикам-CentralUS** выберите группу безопасности сети **AADDS-HDIFabrikam.com-NSG**.
+   1. В разделе **Параметры** выберите **правила безопасности для входящего трафика**  >  **Добавить**.
+   1. На странице **Добавление правила безопасности для входящего трафика** введите следующие свойства и выберите **Добавить**.
 
-        | Свойство. | Значение |
-        |---|---|
-        | Источник | Любой |
-        | Диапазоны исходных портов | * |
-        | Назначение | Любой |
-        | Диапазон портов назначения | 636 |
-        | Протокол | Любой |
-        | Действие | Allow |
-        | Приоритет | \<Desired number> |
-        | Имя | Port_LDAP_636 |
+      | Свойство | Значение |
+      |---|---|
+      | Источник | Любой |
+      | Диапазоны исходных портов | * |
+      | Назначение | Любой |
+      | Диапазон портов назначения | 636 |
+      | Протокол | Любой |
+      | Действие | Allow |
+      | Приоритет | \<Desired number> |
+      | Имя | Port_LDAP_636 |
 
-    ![Диалоговое окно "Добавление правила безопасности для входящего трафика"](./media/apache-domain-joined-create-configure-enterprise-security-cluster/add-inbound-security-rule.png)
+      :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/add-inbound-security-rule.png" alt-text="Диалоговое окно «Добавление правила безопасности для входящего трафика»" border="true":::
 
 **Хдифабрикамманажедидентити** — назначенное пользователем управляемое удостоверение. Для роли участника доменных служб HDInsight включено управляемое удостоверение, которое позволит этому удостоверению читать, создавать, изменять и удалять операции доменных служб.
 
-![Создание управляемого удостоверения, назначаемого пользователем](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0117.png)
+:::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0117.png" alt-text="Создание управляемого удостоверения, назначаемого пользователем" border="true":::
 
 ## <a name="create-an-esp-enabled-hdinsight-cluster"></a>Создание кластера HDInsight с поддержкой ESP
 
@@ -391,7 +393,7 @@ New-SelfSignedCertificate -Subject hdifabrikam.com `
     1. Выберите **Custom (пользовательские** ) и введите *10.0.0.4* и *10.0.0.5*.
     1. Щелкните **Сохранить**.
 
-        ![Сохранение пользовательских параметров DNS для виртуальной сети](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0123.png)
+        :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0123.png" alt-text="Сохранение пользовательских параметров DNS для виртуальной сети" border="true":::
 
 1. Создайте новый кластер HDInsight Spark с поддержкой ESP.
     1. Выберите **Пользовательский (размер, параметры, приложения)**.
@@ -402,22 +404,22 @@ New-SelfSignedCertificate -Subject hdifabrikam.com `
         * Выберите **пользователь администратора кластера** и выберите учетную запись **хдиадмин** , созданную в качестве локального пользователя с правами администратора. Нажмите кнопку **Выбрать**.
         * Выберите **Группа доступа к кластеру**  >  **хдиусерграуп**. Любой пользователь, добавляемый в эту группу в будущем, сможет получить доступ к кластерам HDInsight.
 
-            ![Выберите группу доступа к кластеру Хдиусерграуп](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0129.jpg)
+            :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0129.jpg" alt-text="Выберите группу доступа к кластеру Хдиусерграуп" border="true":::
 
     1. Выполните другие действия в конфигурации кластера и проверьте сведения в **сводке по кластеру**. Нажмите кнопку **создания**.
 
 1. Войдите в пользовательский интерфейс Ambari для созданного кластера в `https://CLUSTERNAME.azurehdinsight.net` . Используйте имя пользователя `hdiadmin@hdifabrikam.com` и пароль администратора.
 
-    ![Окно входа в пользовательский интерфейс Apache Ambari](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0135.jpg)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0135.jpg" alt-text="Окно входа в пользовательский интерфейс Apache Ambari" border="true":::
 
 1. На панели мониторинга кластера выберите **роли**.
-1. На странице **роли** в разделе **назначение ролей**, рядом с ролью **Администратор кластера** введите группу *хдиусерграуп*. 
+1. На странице **роли** в разделе **назначение ролей**, рядом с ролью **Администратор кластера** введите группу *хдиусерграуп*.
 
-    ![Назначение роли администратора кластера хдиусерграуп](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0137.jpg)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0137.jpg" alt-text="Назначение роли администратора кластера хдиусерграуп" border="true":::
 
 1. Откройте клиент Secure Shell (SSH) и войдите в кластер. Используйте **hdiuser** , созданный в локальном экземпляре Active Directory.
 
-    ![Вход в кластер с помощью SSH-клиента](./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0139.jpg)
+    :::image type="content" source="./media/apache-domain-joined-create-configure-enterprise-security-cluster/hdinsight-image-0139.jpg" alt-text="Вход в кластер с помощью SSH-клиента" border="true":::
 
 Если вы можете войти с помощью этой учетной записи, вы правильно настроили кластер ESP для синхронизации с локальным экземпляром Active Directory.
 

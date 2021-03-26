@@ -18,10 +18,10 @@ ms.date: 04/20/2018
 ms.author: damendo
 ms.custom: mvc
 ms.openlocfilehash: e78c4a2f30cac1d6c503da6d1d2fdbc1105065e0
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96492511"
 ---
 # <a name="quickstart-diagnose-a-virtual-machine-network-traffic-filter-problem-using-the-azure-portal"></a>Краткое руководство. Диагностика проблемы с фильтром трафика на виртуальной машине с помощью портала Azure
@@ -82,7 +82,7 @@ ms.locfileid: "96492511"
     | Виртуальная машина   | Выберите myVm                                                                                       |
     | сетевому интерфейсу | myvm — имя сетевого интерфейса, созданного на портале при создании виртуальной машины отличается |
     | Протокол          | TCP                                                                                               |
-    | Направление         | Исходящие                                                                                          |
+    | Направление         | Исходящий трафик                                                                                          |
     | Локальный IP-адрес  | 10.0.0.4                                                                                          |
     | Локальный порт      | 60 000                                                                                                |
     | Удаленный IP-адрес | 13.107.21.200 — один из адресов для <www.bing.com>.                                             |

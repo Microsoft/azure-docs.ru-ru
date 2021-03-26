@@ -4,12 +4,12 @@ description: Узнайте, как перенести рабочие нагру
 ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 12/18/2019
-ms.openlocfilehash: 3967a5d96c35e4bac88dcd9a6c1fa95b78a6b2b1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e15ebb13aee0e5dd814688ae77edaded667d54ac
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98939108"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864131"
 ---
 # <a name="migrate-apache-kafka-workloads-to-azure-hdinsight-40"></a>Перенос рабочих нагрузок Apache Kafka в Azure HDInsight 4,0
 
@@ -24,7 +24,7 @@ HDInsight 3,6 поддерживает две версии Kafka: 1.0.0 и 1.1.0
 * **Запустите HDInsight в последней версии, оставьте версию Kafka**: миграция приложения hdinsight 3,6 и Kafka 1.1.0 в hdinsight 4,0 с Kafka 1.1.0 (путь C ниже).
 * **Запустите Kafka в более новой версии, оставьте версию hdinsight**: перенесите приложение Kafka 1.0.0 на 1.1.0 и оставайтесь на HDInsight 3,6 (путь а ниже). Обратите внимание, что этот параметр по-прежнему потребуется для развертывания нового кластера. Обновление версии Kafka в существующем кластере не поддерживается. После создания кластера с требуемой версией перенесите клиенты Kafka для использования нового кластера.
 
-![Варианты обновления для Apache Kafka на 3,6](./media/upgrade-threesix-to-four/apache-kafka-upgrade-path.png)
+:::image type="content" source="./media/upgrade-threesix-to-four/apache-kafka-upgrade-path.png" alt-text="Варианты обновления для Apache Kafka на 3,6" border="false":::
 
 ## <a name="apache-kafka-versions"></a>Версии Apache Kafka
 
@@ -53,7 +53,7 @@ HDInsight 3,6 поддерживает две версии Kafka: 1.0.0 и 1.1.0
 
 Новые брокеры Kafka поддерживают более старые клиенты. [Пропустить-35-получение версии протокола](https://cwiki.apache.org/confluence/display/KAFKA/KIP-35+-+Retrieving+protocol+version) предоставила механизм для динамического определения функциональных возможностей брокера Kafka и [пропустить-97: Улучшенная политика совместимости RPC для клиента Kafka](https://cwiki.apache.org/confluence/display/KAFKA/KIP-97%3A+Improved+Kafka+Client+RPC+Compatibility+Policy) предоставила новую политику совместимости и гарантирует наличие клиента Java. Ранее клиенту Kafka пришлось взаимодействовать с брокером той же или более новой версии. Теперь новые версии клиентов Java и других клиентов, которые поддерживают пропустить-35, такие как, `librdkafka` могут возвращаться к старым типам запросов или выдавать соответствующие ошибки, если функциональность недоступна.
 
-![Обновление совместимости клиента Kafka](./media/upgrade-threesix-to-four/apache-kafka-client-compatibility.png)
+:::image type="content" source="./media/upgrade-threesix-to-four/apache-kafka-client-compatibility.png" alt-text="Обновление совместимости клиента Kafka" border="false":::
 
 Обратите внимание, что это не означает, что клиент поддерживает более старые брокеры.  Дополнительные сведения см. в разделе [Таблица совместимости](https://cwiki.apache.org/confluence/display/KAFKA/Compatibility+Matrix).
 
@@ -61,21 +61,21 @@ HDInsight 3,6 поддерживает две версии Kafka: 1.0.0 и 1.1.0
 
 В следующих руководствах по миграции предполагается, что кластер Apache Kafka 1.0.0 или 1.1.0, развернутый в HDInsight 3,6, находится в одной виртуальной сети. У существующего брокера есть несколько разделов и активно используемых производителями и потребителями.
 
-![Текущая Kafka предположительно среда](./media/upgrade-threesix-to-four/apache-kafka-presumed-environment.png)
+:::image type="content" source="./media/upgrade-threesix-to-four/apache-kafka-presumed-environment.png" alt-text="Текущая Kafka предположительно среда" border="false":::
 
 Чтобы завершить миграцию, выполните следующие действия.
 
 1. **Разверните новый кластер и клиенты HDInsight 4,0 для тестирования.** Разверните новый кластер HDInsight 4,0 Kafka. Если можно выбрать несколько версий кластера Kafka, рекомендуется выбрать последнюю версию. После развертывания задайте необходимые параметры и создайте раздел с тем же именем, что и у существующей среды. Кроме того, при необходимости задайте шифрование TLS и присвойте ему ключ (BYOK). Затем проверьте, правильно ли работает новый кластер.
 
-    ![Развертывание новых кластеров HDInsight 4,0](./media/upgrade-threesix-to-four/deploy-new-hdinsight-clusters.png)
+    :::image type="content" source="./media/upgrade-threesix-to-four/deploy-new-hdinsight-clusters.png" alt-text="Развертывание новых кластеров HDInsight 4,0" border="false":::
 
 1. **Переключите кластер для приложения производителя и подождите, пока все данные очереди будут использоваться текущими потребителями.** Когда новый кластер HDInsight 4,0 Kafka будет готов, переключите существующий приемник на новый кластер. Оставьте его так, чтобы в существующем приложении-потребителе не использовались все данные из существующего кластера.
 
-    ![Переключение кластера для приложения производителя](./media/upgrade-threesix-to-four/switch-cluster-producer-app.png)
+    :::image type="content" source="./media/upgrade-threesix-to-four/switch-cluster-producer-app.png" alt-text="Переключение кластера для приложения производителя" border="false":::
 
 1. **Переключите кластер в приложении-потребителе.** Убедившись, что существующее приложение-потребитель завершило использование всех данных из существующего кластера, переключитесь на подключение к новому кластеру.
 
-    ![Переключение кластера на приложение-потребитель](./media/upgrade-threesix-to-four/switch-cluster-consumer-app.png)
+    :::image type="content" source="./media/upgrade-threesix-to-four/switch-cluster-consumer-app.png" alt-text="Переключение кластера на приложение-потребитель" border="false":::
 
 1. **При необходимости удалите старый кластер и тестовые приложения.** После завершения и правильной работы коммутатора удалите старый кластер HDInsight 3,6 Kafka, а также поставщиков и потребителей, которые использовались в тесте по мере необходимости.
 
