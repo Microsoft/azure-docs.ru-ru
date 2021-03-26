@@ -8,16 +8,16 @@ ms.subservice: core
 ms.author: gopalv
 author: gvashishtha
 ms.reviewer: larryfr
-ms.date: 01/13/2021
+ms.date: 03/25/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy, devx-track-azurecli
 adobe-target: true
-ms.openlocfilehash: ed397e9f8db721a6baa641fc958af0dda570ce57
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4d2aa4d43fbc8cf9040702afb1877e0271b2eab2
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103561946"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568296"
 ---
 # <a name="deploy-machine-learning-models-to-azure"></a>Развертывание моделей машинного обучения в Azure
 
@@ -195,11 +195,50 @@ az ml model register -n onnx_mnist -p mnist/model.onnx
 ```json
 {
     "entryScript": "score.py",
-    "sourceDirectory": "./working_dir"
+    "sourceDirectory": "./working_dir",
+    "environment": {
+    "docker": {
+        "arguments": [],
+        "baseDockerfile": null,
+        "baseImage": "mcr.microsoft.com/azureml/base:intelmpi2018.3-ubuntu16.04",
+        "enabled": false,
+        "sharedVolumes": true,
+        "shmSize": null
+    },
+    "environmentVariables": {
+        "EXAMPLE_ENV_VAR": "EXAMPLE_VALUE"
+    },
+    "name": "my-deploy-env",
+    "python": {
+        "baseCondaEnvironment": null,
+        "condaDependencies": {
+            "channels": [
+                "conda-forge",
+                "pytorch"
+            ],
+            "dependencies": [
+                "python=3.6.2",
+                "torchvision"
+                {
+                    "pip": [
+                        "azureml-defaults",
+                        "azureml-telemetry",
+                        "scikit-learn==0.22.1",
+                        "inference-schema[numpy-support]"
+                    ]
+                }
+            ],
+            "name": "project_environment"
+        },
+        "condaDependenciesFile": null,
+        "interpreterPath": "python",
+        "userManagedDependencies": false
+    },
+    "version": "1"
 }
 ```
 
-Это означает, что при развертывании машинного обучения будет использоваться файл `score.py` в `./working_dir` каталоге для обработки входящих запросов.
+Это означает, что при развертывании машинного обучения файл `score.py` в каталоге будет использоваться `./working_dir` для обработки входящих запросов, а образ DOCKER будет использоваться с пакетами Python, указанными в `project_environment` среде.
 
 Более подробное обсуждение конфигураций вывода см. в [этой статье](./reference-azure-machine-learning-cli.md#inference-configuration-schema) . 
 
@@ -290,7 +329,7 @@ az ml model deploy -m mymodel:1 --ic inferenceconfig.json --dc deploymentconfig.
 Если вы предпочитаете не регистрировать модель, можно передать параметр "sourceDirectory" в inferenceconfig.js, чтобы указать локальный каталог, из которого будет обслуживаться модель.
 
 ```azurecli-interactive
-az ml model deploy --ic inferenceconfig.json --dc deploymentconfig.json
+az ml model deploy --ic inferenceconfig.json --dc deploymentconfig.json --name my_deploy
 ```
 
 # <a name="python"></a>[Python](#tab/python)
@@ -362,7 +401,7 @@ print(service.state)
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Устранение неполадок при развертывании](how-to-troubleshoot-deployment.md)
 * [развертывание в Службе Azure Kubernetes](how-to-deploy-azure-kubernetes-service.md).

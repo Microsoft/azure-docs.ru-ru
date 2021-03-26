@@ -3,7 +3,7 @@ title: Стандартные отчеты и журналы потоков дл
 description: Узнайте, как настроить отчеты и журналы потоков.
 services: ddos-protection
 documentationcenter: na
-author: yitoh
+author: aletheatoh
 ms.service: ddos-protection
 ms.devlang: na
 ms.topic: article
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 12/28/2020
 ms.author: yitoh
-ms.openlocfilehash: cc5b3b85d6d13fda532da0993fa7f733126b8eae
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7f8e3df927b74cff7e4dc8bf1456600740c07088
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100591873"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567684"
 ---
 # <a name="view-and-configure-ddos-diagnostic-logging"></a>Просмотр и настройка журнала диагностики атак DDoS
 
@@ -77,7 +77,7 @@ ms.locfileid: "100591873"
 | **Ресурс** | Имя общедоступного IP-адреса. |
 | **ResourceType** | Это всегда будет `PUBLICIPADDRESS` . |
 | **OperationName** | Для уведомлений это будет `DDoSProtectionNotifications` .  |
-| **Сообщение** | Сведения об атаке. |
+| **Message** | Сведения об атаке. |
 | **Тип** | Тип уведомления. Возможные значения: `MitigationStarted` . `MitigationStopped`. |
 | **PublicIpAddress** | Ваш общедоступный IP-адрес. |
 
@@ -93,7 +93,7 @@ ms.locfileid: "100591873"
 | **Ресурс** | Имя общедоступного IP-адреса. |
 | **ResourceType** | Это всегда будет `PUBLICIPADDRESS` . |
 | **OperationName** | Для журналов потоков это будет `DDoSMitigationFlowLogs` . |
-| **Сообщение** | Сведения об атаке. |
+| **Message** | Сведения об атаке. |
 | **саурцепублиЦипаддресс** | Общедоступный IP-адрес клиента, который создает трафик на общедоступный IP-адрес. |
 | **SourcePort** | Номер порта в диапазоне от 0 до 65535. |
 | **дестпублиЦипаддресс** | Ваш общедоступный IP-адрес. |
@@ -130,7 +130,7 @@ ms.locfileid: "100591873"
 
 Этот [шаблон](https://aka.ms/ddosdiaglogs) создает определение политики Azure для автоматического включения ведения журнала диагностики для всех журналов общедоступных IP-адресов в определенной области.
 
-[![Развертывание в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Network-Security%2Fmaster%2FAzure%2520DDoS%2520Protection%2FEnable%2520Diagnostic%2520Logging%2FAzure%2520Policy%2FDDoSLogs.json)
+[![Развертывание в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Network-Security%2Fmaster%2FAzure%20DDoS%20Protection%2FPolicy%20-%20DDOS%20Enable%20Diagnostic%20Logging%2FAzure%20Policy%2FDDoSLogs.json)
 
 ## <a name="view-log-data-in-workbooks"></a>Просмотр данных журнала в книгах
 
@@ -144,7 +144,7 @@ ms.locfileid: "100591873"
 
 [Этот шаблон Azure Resource Manager (ARM)](https://aka.ms/ddosworkbook) можно использовать для развертывания книги анализа атак. Эта книга позволяет визуализировать данные атаки на нескольких фильтруемых панелях, чтобы легко понять, что находится на заявляйте. 
 
-[![Развертывание в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Network-Security%2Fmaster%2FAzure%2520DDoS%2520Protection%2FAzure%2520DDoS%2520Protection%2520Workbook%2FAzureDDoSWorkbook_ARM.json)
+[![Развертывание в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Network-Security%2Fmaster%2FAzure%20DDoS%20Protection%2FWorkbook%20-%20Azure%20DDOS%20monitor%20workbook%2FAzureDDoSWorkbook_ARM.json)
 
 ![Книга защиты от атак DDoS](./media/ddos-attack-telemetry/ddos-attack-analytics-workbook.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "100591873"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этом руководстве вы узнали, как выполнять следующие задачи:
+В этом руководстве вы узнали, как:
 
 - Настройте журналы диагностики от атак DDoS, включая уведомления, отчеты об устранении рисков и журналы потоков для устранения рисков. 
 - Включите ведение журнала диагностики для всех общедоступных IP-адресов в определенной области.

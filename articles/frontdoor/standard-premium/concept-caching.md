@@ -8,12 +8,12 @@ ms.service: frontdoor
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.author: duau
-ms.openlocfilehash: 73b2e8e59774e12ddb9aa684382510d1f2c151b8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 63ea252a4b4c673ae3028adb7ab793ac21fb2e99
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101100155"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564591"
 ---
 # <a name="caching-with-azure-front-door-standardpremium-preview"></a>Кэширование с помощью передней дверцы Azure Standard/Premium (Предварительная версия)
 
@@ -23,9 +23,13 @@ ms.locfileid: "101100155"
 В этой статье вы узнаете, как направляются маршруты и правила уровня "Стандартный" (Предварительная версия) и набор правил, если включено кэширование. Передняя дверца Azure — это современная сеть доставки содержимого (CDN) с динамическим ускорением сайтов и балансировкой нагрузки.
 
 > [!IMPORTANT]
-> Передняя дверца Azure Standard/Premium (Предварительная версия) в настоящее время доступна в общедоступной предварительной версии.
+> Azure Front Door уровня "Стандартный" или "Премиум" (предварительная версия) в настоящее время доступен в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
+## <a name="request-methods"></a>Методы запроса
+
+Только метод запроса GET может создавать кэшированное содержимое в Azure Front Door. Все остальные методы запросов всегда являются прокси-серверами через сеть.
 
 ## <a name="delivery-of-large-files"></a>Доставка больших файлов
 

@@ -5,12 +5,12 @@ author: peterpogorski
 ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: pepogors
-ms.openlocfilehash: 95ee4e5f326dd9b76645d22ff735bc36437c72fb
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: a49fd6f97a9130fa0369d2a36cdc38e59613afc1
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104870128"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105544389"
 ---
 # <a name="deploy-an-azure-service-fabric-cluster-across-availability-zones"></a>Развертывание кластера Azure Service Fabric в Зоны доступности
 Зоны доступности в Azure — это высокодоступное предложение, защищающее приложения и данные от сбоев центров обработки данных. Зона доступности — это уникальное физическое расположение, оснащенное независимым питанием, охлаждением и сетью в регионе Azure.
@@ -347,6 +347,8 @@ Set-AzureRmPublicIpAddress -PublicIpAddress $PublicIP
 ## <a name="preview-enable-multiple-availability-zones-in-single-virtual-machine-scale-set"></a>Образца Включение нескольких зон доступности в одном масштабируемом наборе виртуальных машин
 
 В упомянутом выше решении используется один nodeType для AZ. Следующее решение позволит пользователям развернуть 3 AZ в одном и том же nodeType.
+
+**Так как сейчас эта функция доступна в предварительной версии, она в настоящее время не поддерживается в рабочих сценариях.**
 
 [Здесь](https://github.com/Azure-Samples/service-fabric-cluster-templates/tree/master/15-VM-Windows-Multiple-AZ-Secure)приведен полный пример шаблона.
 

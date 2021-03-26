@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to configure compute on Azure Stack Edge Pro device so I can use it to transform the data before sending it to Azure.
-ms.openlocfilehash: 6054e7e79acaa6abf304508221c63143b9d14a45
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: c11a89d91693075ca54c0689223dcf2af06df521
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102436538"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568517"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-via-the-azure-portal"></a>Развертывание виртуальных машин на устройстве с Azure Stack ребра Pro GPU с помощью портал Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "102436538"
 
 Прежде чем приступить к созданию виртуальных машин на устройстве и управлению ими с помощью портал Azure, убедитесь в том, что:
 
-1. Параметры сети на устройстве Azure Stack погранично Pro завершены, как описано в разделе [Шаг 1. настройка Azure Stack ребра Pro Device](azure-stack-edge-j-series-connect-resource-manager.md#step-1-configure-azure-stack-edge-pro-device).
+1. Параметры сети на устройстве Azure Stack погранично Pro завершены, как описано в разделе [Шаг 1. настройка Azure Stack ребра Pro Device](./azure-stack-edge-gpu-connect-resource-manager.md#step-1-configure-azure-stack-edge-pro-device).
 
     1. Вы включили сетевой интерфейс для вычислений. IP-адрес этого сетевого интерфейса используется для создания виртуального коммутатора для развертывания виртуальной машины. В локальном пользовательском интерфейсе устройства перейдите к разделу **Вычисление**. Выберите сетевой интерфейс, который будет использоваться для создания виртуального коммутатора.
 

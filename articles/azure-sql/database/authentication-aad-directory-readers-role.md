@@ -9,12 +9,12 @@ author: GithubMirek
 ms.author: mireks
 ms.reviewer: vanto
 ms.date: 08/14/2020
-ms.openlocfilehash: 5764a8df862610fc076ce2810fcc0d4bf8dbda3c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: dec29dc92f70a3f02f3fb598659aa86477fb59bf
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99094562"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558250"
 ---
 # <a name="directory-readers-role-in-azure-active-directory-for-azure-sql"></a>Роль "Читатели каталогов" в Azure Active Directory для Azure SQL
 
@@ -25,7 +25,7 @@ ms.locfileid: "99094562"
 
 Azure Active Directory (Azure AD) предоставила [Использование облачных групп для управления назначениями ролей в Azure Active Directory (Предварительная версия)](../../active-directory/roles/groups-concept.md). Это позволяет назначать роли Azure AD группам.
 
-При включении [управляемого удостоверения](../../active-directory/managed-identities-azure-resources/overview.md#managed-identity-types) для базы данных SQL Azure, azure SQL управляемый экземпляр или Azure синапсе Analytics роль " [**читатели каталога**](../../active-directory/roles/permissions-reference.md#directory-readers) Azure AD" должна быть назначена удостоверению, чтобы разрешить доступ на чтение к [API Graph Azure AD](../../active-directory/develop/active-directory-graph-api.md). Управляемое удостоверение базы данных SQL и Azure синапсе называется удостоверением сервера. Управляемое удостоверение SQL Управляемый экземпляр называется удостоверением управляемого экземпляра и автоматически назначается при создании экземпляра. Дополнительные сведения о назначении удостоверения сервера для базы данных SQL или Azure синапсе см. в статье [Включение субъектов-служб для создания пользователей Azure AD](authentication-aad-service-principal.md#enable-service-principals-to-create-azure-ad-users).
+При включении [управляемого удостоверения](../../active-directory/managed-identities-azure-resources/overview.md#managed-identity-types) для базы данных SQL Azure, azure SQL управляемый экземпляр или Azure синапсе Analytics роль " [**читатели каталога**](../../active-directory/roles/permissions-reference.md#directory-readers) Azure AD" должна быть назначена удостоверению, чтобы разрешить доступ на чтение к [API Graph Azure AD](/graph/migrate-azure-ad-graph-planning-checklist). Управляемое удостоверение базы данных SQL и Azure синапсе называется удостоверением сервера. Управляемое удостоверение SQL Управляемый экземпляр называется удостоверением управляемого экземпляра и автоматически назначается при создании экземпляра. Дополнительные сведения о назначении удостоверения сервера для базы данных SQL или Azure синапсе см. в статье [Включение субъектов-служб для создания пользователей Azure AD](authentication-aad-service-principal.md#enable-service-principals-to-create-azure-ad-users).
 
 Роль " **читатели каталога** " необходима для:
 

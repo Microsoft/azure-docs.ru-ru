@@ -7,14 +7,14 @@ manager: femila
 ms.service: media-services
 ms.topic: conceptual
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: 3514a7c809e939ea2c45afa5ab60539232b8781f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 32e502ff175a9222faa0eb79fb53f2cc3f76bfb7
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98953297"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559746"
 ---
 # <a name="migrate-from-media-services-v2-to-v3-introduction"></a>Общие сведения о переходе с служб мультимедиа v2 на v3
 
@@ -75,11 +75,7 @@ ms.locfileid: "98953297"
 Приложение служб мультимедиа версии 2 может быть уникальным. Поэтому мы предоставили рекомендации на основе сценариев на основе того, как вы *могли* использовать службы мультимедиа в прошлом, и действия для каждого компонента службы, например:
 
 - [Кодирование](migrate-v-2-v-3-migration-scenario-based-encoding.md)
-- [Потоковая передача в реальном времени](migrate-v-2-v-3-migration-scenario-based-live-streaming.md)
+- [Потоковая трансляция](migrate-v-2-v-3-migration-scenario-based-live-streaming.md)
 - [Упаковка и доставка](migrate-v-2-v-3-migration-scenario-based-publishing.md)
 - [Защита содержимого](migrate-v-2-v-3-migration-scenario-based-content-protection.md)
 - [Зарезервированные единицы мультимедиа](migrate-v-2-v-3-migration-scenario-based-media-reserved-units.md)
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

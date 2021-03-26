@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 33196af2f3544733715ece501cceec0366d2a47c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7569f98b1a721ecc9bd8e41a7d55cfbb80a2bc88
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101716268"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564625"
 ---
 # <a name="azure-security-baseline-for-data-lake-analytics"></a>Базовый план безопасности Azure для Data Lake Analytics
 
@@ -64,9 +64,9 @@ ms.locfileid: "101716268"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md) 
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md) 
 
-- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](/azure/azure-monitor/learn/quick-collect-azurevm) 
+- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](../azure-monitor/vm/quick-collect-azurevm.md) 
 
 - [Начало работы с Azure Monitor и интеграция SIEM стороннего производителя](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools)
 
@@ -78,13 +78,13 @@ ms.locfileid: "101716268"
 
 **Руководство**. Включение параметров диагностики для Data Lake Analytics доступа к журналам аудита и запросов. К ним относятся такие данные, как источник событий, Дата, пользователь, отметка времени и другие полезные элементы. 
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md) 
 
-- [Общие сведения о ведении журналов и различных типах журналов в Azure](/azure/azure-monitor/platform/platform-logs-overview)
+- [Общие сведения о ведении журналов и различных типах журналов в Azure](../azure-monitor/essentials/platform-logs-overview.md)
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. Data Lake Analytics**:
 
@@ -94,9 +94,9 @@ ms.locfileid: "101716268"
 
 **Рекомендации**. в Azure Monitor задайте срок хранения log Analytics рабочей области в соответствии с нормативными требованиями Организации. Используйте учетные записи хранения Azure для долгосрочного и архивного хранения.
 
-- [Изменение срока хранения данных в Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) 
+- [Изменение срока хранения данных в Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period) 
 
-- [Настройка политики хранения для журналов учетных записей хранения Azure](/azure/storage/common/storage-monitor-storage-account#configure-logging)
+- [Настройка политики хранения для журналов учетных записей хранения Azure](../storage/common/manage-storage-analytics-logs.md#configure-logging)
 
 **Ответственность**: Customer
 
@@ -108,9 +108,9 @@ ms.locfileid: "101716268"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Дополнительные сведения о рабочей области Log Analytics](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Дополнительные сведения о рабочей области Log Analytics](../azure-monitor/logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
 **Ответственность**: Customer
 
@@ -122,7 +122,7 @@ ms.locfileid: "101716268"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)  
+- [Как оповещать данные журнала Log Analytics](../azure-monitor/alerts/tutorial-response.md)  
 
 - [Доступ к журналам диагностики для Azure Data Lake Analytics](data-lake-analytics-diagnostic-logs.md)
 
@@ -162,7 +162,7 @@ ms.locfileid: "101716268"
 
 Вы также можете включить JIT-доступ с помощью Azure Active Directory (Azure AD) управление привилегированными пользователями и Azure Resource Manager.
 
-- [Дополнительные сведения о управление привилегированными пользователями](/azure/active-directory/privileged-identity-management/)
+- [Дополнительные сведения о управление привилегированными пользователями](../active-directory/privileged-identity-management/index.yml)
 
 **Ответственность**: Customer
 
@@ -240,7 +240,7 @@ ms.locfileid: "101716268"
 
 **Руководство**. Azure Active Directory (Azure AD) предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверки подлинности и доступа Azure AD для эффективного управления членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверить регулярно, чтобы убедиться, что доступ к ним имеют только нужные пользователи.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure AD](../active-directory/governance/access-reviews-overview.md)
 
@@ -252,7 +252,7 @@ ms.locfileid: "101716268"
 
 **Руководство**. Включение параметров диагностики для Data Lake Analytics и Azure Active Directory (Azure AD) с последующим отправкой всех журналов в log Analytics рабочую область. Настройте нужные оповещения (например, попытки доступа к отключенным секретам) в Log Analytics.
 
-- [Интеграция журналов Azure AD с Azure Monitor журналами](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Интеграция журналов Azure AD с Azure Monitor журналами](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -296,7 +296,7 @@ ms.locfileid: "101716268"
 
 - [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
-- [Управление управлением доступом на основе ролей в Azure](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-manage-use-portal#manage-azure-role-based-access-control)
+- [Управление управлением доступом на основе ролей в Azure](./data-lake-analytics-manage-use-portal.md#manage-azure-role-based-access-control)
 
 - [Правила брандмауэра](/rest/api/datalakeanalytics/firewallrules)
 
@@ -344,7 +344,7 @@ ms.locfileid: "101716268"
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления взаимодействием пользователей со службой.
 
-- [Управление Azure RBAC](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-manage-use-portal#manage-azure-role-based-access-control)
+- [Управление Azure RBAC](./data-lake-analytics-manage-use-portal.md#manage-azure-role-based-access-control)
 
 **Ответственность**: Customer
 
@@ -364,7 +364,7 @@ ms.locfileid: "101716268"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в рабочих экземплярах Azure Data Lake Analyticsных ресурсов.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -477,7 +477,7 @@ ms.locfileid: "101716268"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -713,5 +713,5 @@ ms.locfileid: "101716268"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

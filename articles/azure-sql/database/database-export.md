@@ -11,12 +11,12 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 866500e9cd9e3fe6aac6a5bfded0dbb21ab137fc
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 14854f839d6dfe3c8a08a4a1453fd78e389fe8d3
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102614281"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568738"
 ---
 # <a name="export-to-a-bacpac-file---azure-sql-database-and-azure-sql-managed-instance"></a>Экспорт в файл BACPAC — база данных SQL Azure и Azure SQL Управляемый экземпляр
 
@@ -55,7 +55,7 @@ ms.locfileid: "102614281"
 
     ![Экспорт базы данных](./media/database-export/database-export2.png)
 
-3. Нажмите кнопку **OK**.
+3. Нажмите кнопку **ОК**.
 
 4. Чтобы отслеживать ход выполнения операции экспорта, откройте страницу для сервера, содержащего экспортируемую базу данных. В разделе **Параметры** выберите **Журнал импорта и экспорта**.
 
@@ -106,13 +106,13 @@ $exportStatus
 ```
 ## <a name="cancel-the-export-request"></a>Отменить запрос на экспорт
 
-Ниже приведен пример команды PowerShell для работы с [базой данных Operations-Cancel API](https://docs.microsoft.com/rest/api/sql/databaseoperations/cancel) или [командой PowerShell остановить-азсклдатабасеактивити](https://docs.microsoft.com/powershell/module/az.sql/Stop-AzSqlDatabaseActivity).
+Используйте API из раздела [Операции с базой данных — отмена](/rest/api/sql/databaseoperations/cancel) или команду [Stop-AzSqlDatabaseActivity](/powershell/module/az.sql/Stop-AzSqlDatabaseActivity) в PowerShell. Ниже приведен пример команды PowerShell.
 
 ```cmd
 Stop-AzSqlDatabaseActivity -ResourceGroupName $ResourceGroupName -ServerName $ServerName -DatabaseName $DatabaseName -OperationId $Operation.OperationId
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о долгосрочном хранении резервных копий отдельной базы данных и баз данных в составе пула в качестве альтернативы экспорту базы данных для архивации см. в статье [долгосрочное хранение резервных копий](long-term-retention-overview.md). Задания агентов SQL можно использовать для планирования [резервных копий только для копирования базы данных](/sql/relational-databases/backup-restore/copy-only-backups-sql-server) как альтернативу долгосрочному хранению архивных копий.
 - Сведения о миграции из SQL Server в Базу данных SQL Azure с использованием BACPAC-файлов см. в [блоге группы консультирования клиентов SQL Server](/archive/blogs/sqlcat/migrating-from-sql-server-to-azure-sql-database-using-bacpac-files).

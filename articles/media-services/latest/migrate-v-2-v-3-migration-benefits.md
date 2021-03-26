@@ -7,14 +7,14 @@ manager: femila
 ms.service: media-services
 ms.topic: conceptual
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: b6d51e05598f60de0e9c8fb85472b7c14bba990e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 114635722a0a131fc146eb2ab69984effb211a88
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104598394"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559763"
 ---
 # <a name="step-1---understand-the-benefits-of-migrating-to-media-services-api-v3"></a>Шаг 1. Узнайте о преимуществах перехода на API служб мультимедиа v3
 
@@ -23,6 +23,8 @@ ms.locfileid: "104598394"
 <hr color="#5ea0ef" size="10">
 
 ![шаги миграции 2](./media/migration-guide/steps-1.svg)
+
+## <a name="use-the-latest-api"></a>Использование последней версии API
 
 Мы рекомендуем начать использовать версию 2020-05-01 API служб мультимедиа Azure v3, чтобы получить преимущества, так как новые функции, функции и оптимизации производительности доступны только в текущем API V3.
 
@@ -60,7 +62,3 @@ ms.locfileid: "104598394"
 | **Мониторинг** | |
 | Поддержка уведомлений [Azure EventGrid](monitoring/reacting-to-media-services-events.md) | Уведомления EventGrid — это более широкие возможности. Существует больше типов уведомлений, расширенная поддержка пакетов SDK для получения уведомлений в собственном приложении и более существующих служб Azure, которые могут действовать как обработчики событий. |
 | [Azure Monitor поддержки и интеграции в портал Azure](monitoring/monitor-events-portal-how-to.md) | Это позволяет клиентам визуализировать использование квот учетной записи служб мультимедиа, статистику конечных точек потоковой передачи в реальном времени, а затем получать и архивировать статистику для интерактивных событий. Теперь клиенты могут настраивать оповещения и выполнять необходимые действия на основе данных метрик в реальном времени. |
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

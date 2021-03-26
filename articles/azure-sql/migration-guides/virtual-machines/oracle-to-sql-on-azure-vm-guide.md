@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 5d24e056d397617c95a7ba301b58efc3631f40dd
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 4173fe34c6966514ef4f150527cd712c9d95ab7e
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105026527"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561718"
 ---
 # <a name="migration-guide-oracle-to-sql-server-on-azure-vm"></a>Руководство по миграции: Oracle to SQL Server на виртуальной машине Azure
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqldb.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "105026527"
 
 1. Выберите способ поиска компьютеров, который лучше всего подходит для ваших потребностей и среды, а затем нажмите кнопку **Next**. 
 
-   ![Выберите вариант поиска компьютеров, который лучше подходит для ваших бизнес-потребностей.](./media/oracle-to-sql-on-azure-vm-guide/choose-search-option.png)
+   ![Выберите вариант поиска компьютеров в соответствии с вашими бизнес-потребностями.](./media/oracle-to-sql-on-azure-vm-guide/choose-search-option.png)
 
 1. Введите учетные данные или создайте новые учетные данные для систем, которые необходимо исследовать, а затем нажмите кнопку **Далее**.
 
@@ -74,7 +74,7 @@ ms.locfileid: "105026527"
 
 1. Задайте порядок учетных данных, а затем нажмите кнопку **Далее**.
 
-   ![Задать порядок учетных данных](./media/oracle-to-sql-on-azure-vm-guide/set-credential-order.png)  
+   ![Определение порядка учетных данных](./media/oracle-to-sql-on-azure-vm-guide/set-credential-order.png)  
 
 1. Укажите учетные данные для каждого компьютера, который требуется обнаружить. Вы можете использовать уникальные учетные данные для каждого компьютера или компьютера или использовать список **учетных данных всех компьютеров** :
 
@@ -84,7 +84,7 @@ ms.locfileid: "105026527"
 
 1. Проверьте сводку выбора и нажмите кнопку **Готово**.
 
-   ![Сводка по проверке](./media/oracle-to-sql-on-azure-vm-guide/review-summary.png)
+   ![Просмотр сводки](./media/oracle-to-sql-on-azure-vm-guide/review-summary.png)
 
 1. После завершения сканирования просмотрите сводный отчет **Data Collection** (Сбор данных). Сканирование может занять несколько минут и зависит от количества баз данных. По завершении выберите **Закрыть** .
 
@@ -118,7 +118,7 @@ ms.locfileid: "105026527"
 
    ![Создавать отчет](./media/oracle-to-sql-on-azure-vm-guide/create-report.png)
 
-1. В **обозревателе метаданных Oracle** выберите схему Oracle, а затем выберите **создать отчет** , чтобы создать отчет HTML с статистикой преобразования и ошибкой/предупреждениями, если они есть.
+1. В **обозревателе метаданных Oracle** выберите схему Oracle и щелкните **Создать отчет**, чтобы создать отчет в формате HTML со сведениями о преобразованиях, а также возможных ошибках и предупреждениях.
 1. Ознакомьтесь с HTML-отчетом, чтобы получить сведения о статистике преобразований и любых ошибках или предупреждениях. Также можно открыть отчет в Excel, чтобы получить список объектов Oracle и усилия, необходимые для выполнения преобразования схемы. Расположение отчета по умолчанию находится в папке "report" в каталоге SSMAProjects. 
 
    Например: `drive:\<username>\Documents\SSMAProjects\MyOracleMigration\report\report_2016_11_12T02_47_55\`
@@ -133,7 +133,7 @@ ms.locfileid: "105026527"
 1. Выберите **Параметры проекта**. 
 1. Перейдите на вкладку **сопоставления типов** :
 
-   ![Сопоставления типов](./media/oracle-to-sql-on-azure-vm-guide/type-mappings.png)
+   ![Сопоставление типов](./media/oracle-to-sql-on-azure-vm-guide/type-mappings.png)
 
 1. Сопоставление типов для каждой таблицы можно изменить, выбрав таблицу в **обозревателе метаданных Oracle**. 
 
@@ -199,7 +199,7 @@ ms.locfileid: "105026527"
 
 
 Помимо SSMA, для переноса данных можно также использовать службы SQL Server Integration Services (SSIS). Дополнительные сведения см. на следующих ресурсах: 
-- статья [Начало работы со службами SQL Server Integration Services](https://docs.microsoft.com//sql/integration-services/sql-server-integration-services);
+- статья [Начало работы со службами SQL Server Integration Services](//sql/integration-services/sql-server-integration-services);
 - технический документ [SQL Server Integration Services: службы SSIS для Azure и гибридного перемещения данных](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/SSIS%20Hybrid%20and%20Azure.docx).
 
 
@@ -271,4 +271,3 @@ ms.locfileid: "105026527"
 
 - Чтобы оценить уровень доступа к приложениям, см. раздел [набор средств миграции для доступа к данным (Предварительная версия)](https://marketplace.visualstudio.com/items?itemName=ms-databasemigration.data-access-migration-toolkit)
 - Дополнительные сведения о выполнении проверки уровня доступа к данным A/B см. [Database experimentation Assistant](/sql/dea/database-experimentation-assistant-overview).
-

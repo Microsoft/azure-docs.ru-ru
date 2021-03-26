@@ -1,18 +1,18 @@
 ---
 title: Обзор Azure Percept Studio
 description: Дополнительные сведения об Azure Перцепт Studio
-author: elqu20
-ms.author: v-elqu
+author: mimcco
+ms.author: mimcco
 ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 03/23/2021
 ms.custom: template-concept
-ms.openlocfilehash: 8aae976e94ebbef22a86e19f00bfe6248338c4d0
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: e6f9641179a9c2490dcb65316a80b4ba7fd4b639
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104953678"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567701"
 ---
 # <a name="azure-percept-studio-overview"></a>Обзор Azure Перцепт Studio
 
@@ -23,6 +23,8 @@ ms.locfileid: "104953678"
 Рабочие процессы в Azure Перцепт Studio объединяют многие службы Azure ии и IoT, такие как центр Интернета вещей Azure, Пользовательское визуальное распознавание, речь Studio и МАШИНное обучение Azure, поэтому вы можете использовать эти службы для создания комплексного решения, не имеющего существенных знаний. Если вы уже знакомы с этими службами Azure, вы также можете подключиться и изменить существующие ресурсы службы Azure за пределами Azure Перцепт Studio.
 
 Независимо от того, являетесь ли вы новичком или опытным разработчиком модели и решения искусственного интеллекта, работаем над прототипом или переходом к рабочему решению, Azure Перцепт Studio предоставляет доступ к рабочим процессам, которые можно использовать для сокращения трения, связанных с созданием пограничных решений искусственного интеллекта.
+
+## <a name="video-walkthrough"></a>Видеоруководство
 
 </br>
 

@@ -1,17 +1,17 @@
 ---
 title: Создание функции Java в функциях Azure с помощью IntelliJ
 description: Узнайте, как использовать IntelliJ для создания простой функции Java, активируемой по протоколу HTTP, которая затем публикуется для запуска в бессерверной среде в Azure.
-author: jeffhollan
+author: yucwan
 ms.topic: how-to
 ms.date: 07/01/2018
-ms.author: jehollan
+ms.author: yucwan
 ms.custom: mvc, devcenter, devx-track-java
-ms.openlocfilehash: 1edfbca2f2a16aeebc1244b298426dc46d72c6d5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 45fb62b446e6b589dc0cb9287a8aebe7f4e699b1
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101708821"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543654"
 ---
 # <a name="create-your-first-java-function-in-azure-using-intellij"></a>Создание первой функции Java в Azure с помощью IntelliJ
 
@@ -104,17 +104,9 @@ ms.locfileid: "101708821"
 
     ![Развертывание проекта в Azure](media/functions-create-first-java-intellij/deploy-functions-to-azure.png)
 
-1. Если у вас еще нет приложения-функции, щелкните *No available function, click to create a new one* (Нет доступной функции, щелкните, чтобы создать новую).
+1. Если у вас еще нет приложение-функция, щелкните *+* в строке *функции* . Введите имя приложения функции и выберите соответствующую платформу. здесь мы можем просто принять значение по умолчанию. Нажмите кнопку *ОК* , и вновь созданное приложение функции будет выбрано автоматически. Щелкните *Запустить*, чтобы развернуть функции.
 
     ![Создание приложения функции в Azure](media/functions-create-first-java-intellij/deploy-functions-create-app.png)
-
-1. Введите имя приложения-функции и выберите соответствующую подписку, платформу, группу ресурсов или план службы приложений. здесь также можно создать план службы "Группа ресурсов" или "служба приложений". Затем сохраните параметры приложения без изменений, нажмите кнопку *ОК* и подождите несколько минут, пока не будет создано новое приложение функции. После *Создания нового приложения функции...* индикатор выполнения исчезнет.
-
-    ![Развертывание приложения функции в мастере создания приложений Azure](media/functions-create-first-java-intellij/deploy-functions-create-app-wizard.png)
-
-1. Выберите приложение-функцию, в которое вы хотите выполнить развертывание (автоматически будет выбрано новое приложение-функция, которое вы только что создали). Щелкните *Запустить*, чтобы развернуть функции.
-
-    ![На снимке экрана показано диалоговое окно "развертывание функций Azure".](media/functions-create-first-java-intellij/deploy-functions-run.png)
 
     ![Развертывание приложения функции в журнале Azure](media/functions-create-first-java-intellij/deploy-functions-log.png)
 

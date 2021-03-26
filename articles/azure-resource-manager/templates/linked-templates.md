@@ -2,13 +2,13 @@
 title: Связывание шаблонов для развертывания
 description: Описывает, как использовать связанные шаблоны в шаблоне Azure Resource Manager (шаблон ARM) для создания решения модульного шаблона. Показывает, как передавать значения параметров, указывать файл параметров и динамически создаваемые URL-адреса.
 ms.topic: conceptual
-ms.date: 01/26/2021
-ms.openlocfilehash: 6076cbae43e420ac354b5c9d7d101a9c541c078d
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.date: 03/25/2021
+ms.openlocfilehash: 981e9f10e118012911108d634fbb8bdb9524cb88
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889184"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543981"
 ---
 # <a name="using-linked-and-nested-templates-when-deploying-azure-resources"></a>Использование связанных и вложенных шаблонов при развертывании ресурсов Azure
 
@@ -444,6 +444,8 @@ ms.locfileid: "104889184"
 Если вы создаете ссылку на шаблон в GitHub, используйте необработанный URL-адрес. Ссылка имеет формат: `https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/get-started-with-templates/quickstart-template/azuredeploy.json` . Чтобы получить необработанную ссылку, выберите **необработанный**.
 
 :::image type="content" source="./media/linked-templates/select-raw.png" alt-text="Выберите необработанный URL-адрес":::
+
+[!INCLUDE [Deploy templates in private GitHub repo](../../../includes/resource-manager-private-github-repo-templates.md)]
 
 ### <a name="parameters-for-linked-template"></a>Параметры для связанного шаблона
 

@@ -6,12 +6,12 @@ ms.author: vimeht
 ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
-ms.openlocfilehash: a0201882b74d2acf57c246d2dc63530ca8b1f010
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5956b7b74d27a4f9a2b79ee3950c8ac765610c70
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101692713"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558488"
 ---
 # <a name="device-update-for-iot-hub-resource-management"></a>Обновление устройств для управления ресурсами Центра Интернета вещей
 
@@ -127,7 +127,11 @@ ms.locfileid: "101692713"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-[Импорт обновления с помощью обновления устройства для центра Интернета вещей.](import-update.md)
+Попробуйте обновить устройство с помощью одного из следующих кратких руководств:
+
+ - [Обновление устройств в симуляторе](device-update-simulator.md)
+ - [Обновление устройств на микрокомпьютере Raspberry Pi](device-update-raspberry-pi.md)
+ - [Обновление устройств в рамках агента пакета Ubuntu Server 18.04 для x64](device-update-ubuntu-agent.md)
 
 [Дополнительные сведения об учетной записи и экземпляре обновления устройства.](device-update-resources.md) 
 

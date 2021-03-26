@@ -5,12 +5,12 @@ ms.custom: hdinsightactive
 ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 02/08/2021
-ms.openlocfilehash: 3ea5168641f233f2e9580612a2f245fd8fef860f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6addd7cffdd7001b5767a471fc9e0514749b18d1
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101699357"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564897"
 ---
 # <a name="azure-hdinsight-release-notes"></a>Заметки о выпуске Azure HDInsight
 
@@ -28,10 +28,10 @@ Azure HDInsight является одной из самых популярных
 
 ## <a name="new-features"></a>новые функции;
 ### <a name="dav4-series-support"></a>Поддержка серии Dav4
-В этом выпуске добавлена поддержка Dav4 серии HDInsight. Дополнительные сведения о [серии Dav4](/azure/virtual-machines/dav4-dasv4-series)см. здесь.
+В этом выпуске добавлена поддержка Dav4 серии HDInsight. Дополнительные сведения о [серии Dav4](../virtual-machines/dav4-dasv4-series.md)см. здесь.
 
 ### <a name="kafka-rest-proxy-ga"></a>Прокси-сервер Kafka RESTFUL, общедоступный 
-Прокси-сервер Kafka RESTFUL позволяет взаимодействовать с кластером Kafka через REST API по протоколу HTTPS. Прокси-сервер Kafka RESTful является общедоступным, начиная с этого выпуска. Дополнительные сведения о [прокси-сервере KAFKA RESTful](/azure/hdinsight/kafka/rest-proxy)см. здесь.
+Прокси-сервер Kafka RESTFUL позволяет взаимодействовать с кластером Kafka через REST API по протоколу HTTPS. Прокси-сервер Kafka RESTful является общедоступным, начиная с этого выпуска. Дополнительные сведения о [прокси-сервере KAFKA RESTful](./kafka/rest-proxy.md)см. здесь.
 
 ### <a name="moving-to-azure-virtual-machine-scale-sets"></a>Переход на масштабируемые наборы виртуальных машин Azure
 Сейчас HDInsight использует для подготовки кластера виртуальные машины Azure. Служба постепенно переносится в [масштабируемые наборы виртуальных машин Azure](../virtual-machine-scale-sets/overview.md). Весь процесс может занять несколько месяцев. После переноса регионов и подписок вновь созданные кластеры HDInsight будут работать в масштабируемых наборах виртуальных машин без действий клиента. Критические изменения не требуются.
@@ -49,7 +49,7 @@ Azure HDInsight является одной из самых популярных
 
 
 ### <a name="breaking-change-for-net-for-apache-spark-100"></a>Критическое изменение для .NET для Apache Spark 1.0.0
-В последнем выпуске HDInsight представляет собой первую официальную версию 1.0.0 библиотеки [".NET для Apache Spark"](https://github.com/dotnet/spark) . Он обеспечивает полноту API кадров данных для Spark 2.4. x и Spark 3.0. x вместе с [другими функциями](https://github.com/dotnet/spark/blob/master/docs/release-notes/1.0.0/release-1.0.0.md). В этой основной версии будут внесены критические изменения. Дополнительные сведения о шагах, необходимых для обновления кода и конвейеров, см. в [руководстве по миграции .NET для Apache Spark](https://github.com/dotnet/spark/blob/master/docs/migration-guide.md#upgrading-from-microsoftspark-0x-to-10) . Дополнительные сведения см. в руководстве по [.NET для Apache Spark v 1.0 в Azure HDInsight](/azure/hdinsight/spark/spark-dotnet-version-update#using-net-for-apache-spark-v10-in-hdinsight).
+В последнем выпуске HDInsight представляет собой первую официальную версию 1.0.0 библиотеки [".NET для Apache Spark"](https://github.com/dotnet/spark) . Он обеспечивает полноту API кадров данных для Spark 2.4. x и Spark 3.0. x вместе с [другими функциями](https://github.com/dotnet/spark/blob/master/docs/release-notes/1.0.0/release-1.0.0.md). В этой основной версии будут внесены критические изменения. Дополнительные сведения о шагах, необходимых для обновления кода и конвейеров, см. в [руководстве по миграции .NET для Apache Spark](https://github.com/dotnet/spark/blob/master/docs/migration-guide.md#upgrading-from-microsoftspark-0x-to-10) . Дополнительные сведения см. в руководстве по [.NET для Apache Spark v 1.0 в Azure HDInsight](./spark/spark-dotnet-version-update.md#using-net-for-apache-spark-v10-in-hdinsight).
 
 
 ## <a name="upcoming-changes"></a>Предстоящие изменения

@@ -12,12 +12,12 @@ ms.date: 05/19/2020
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 76dcb9aec935dd4ea4f57a1362953d9741d8eaf0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: c175a6d225be268f27854b9ab63886892cf029fb
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102095805"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557281"
 ---
 # <a name="developer-notes-for-custom-policies-in-azure-active-directory-b2c"></a>Примечания о настраиваемых политика в Azure Active Directory B2C для разработчиков
 
@@ -68,7 +68,7 @@ ms.locfileid: "102095805"
 | [Код авторизации OAuth2](authorization-code-flow.md) |  |  | X |  |
 | Код авторизации OAuth2 с PKCE |  |  | X | [Открытые клиенты и одностраничные приложения](authorization-code-flow.md)  |
 | [Неявный поток OAuth2](implicit-flow-single-page-application.md) |  |  | X |  |
-| [Учетные данные владельца ресурса OAuth2](ropc-custom.md) |  | X |  |  |
+| [Учетные данные владельца ресурса OAuth2](add-ropc-policy.md) |  | X |  |  |
 | [OIDC Connect](openid-connect.md) |  |  | X |  |
 | [SAML2](saml-service-provider.md)  |  |  |X  | Привязки POST и перенаправления. |
 | OAuth1 |  |  |  | Не поддерживается. |

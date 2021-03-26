@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4584b0a605bd63c1f71082014d3c0622ca7d2c37
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 16cd14aa447fb56af4cd9dd809696aecdc0c47a5
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104587837"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557842"
 ---
 # <a name="securing-managed-identities"></a>Защита управляемых удостоверений
 
@@ -38,7 +38,7 @@ ms.locfileid: "104587837"
 
 Исходная система запрашивает доступ к целевой службе. Любой ресурс Azure может быть исходной системой. Например, виртуальная машина Azure, экземпляр функции Azure и экземпляры служб приложений Azure поддерживают управляемые удостоверения.
 
-[!VIDEO https://www.youtube.com/embed/5lqayO_oeEo]
+   > [!VIDEO https://www.youtube.com/embed/5lqayO_oeEo]
 
 ### <a name="how-authentication-and-authorization-work"></a>Как работает проверка подлинности и авторизация
 
@@ -86,7 +86,7 @@ ms.locfileid: "104587837"
 
 ### <a name="using-the-azure-portal"></a>Использование портала Azure
 
-1. В Azure AD выберите корпоративное приложение.
+1. В Azure Active Directory выберите корпоративные приложения.
 
 2. Выберите фильтр "управляемые удостоверения". 
 
@@ -120,7 +120,7 @@ ms.locfileid: "104587837"
 
 ## <a name="move-to-managed-identities"></a>Перейти к управляемым удостоверениям
 
-Если вы используете субъект-службу или учетную запись пользователя Azure AD, оцените, можно ли использовать управляемый объект, чтобы исключить необходимость защиты учетных данных, их смены и управления ими. 
+Если вы используете субъект-службу или учетную запись пользователя Azure AD, оцените, можно ли использовать управляемое удостоверение, чтобы исключить необходимость защиты учетных данных, их смены и управления ими. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -9,12 +9,12 @@ ms.reviewer: estfan, daviburg, logicappspm
 ms.topic: article
 ms.date: 03/24/2021
 tags: connectors
-ms.openlocfilehash: 86bc43e043e7d67ff149391b111831df8171f34e
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: c81e40f769ab9eefdd919f3336591dc065d6cfc9
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105048771"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564119"
 ---
 # <a name="connect-to-sap-systems-from-azure-logic-apps"></a>Подключение к системам SAP из Azure Logic Apps
 
@@ -568,7 +568,7 @@ E2EDP19   300                16    E2EDP19   0     3   00AAAA-11111</idocData>
 
 #### <a name="capture-etw-events"></a>Запись событий ETW
 
-Кроме того, опытные пользователи могут собирать события ETW напрямую. Затем вы можете [использовать данные в система диагностики Azure в концентраторах событий](../azure-monitor/agents/diagnostics-extension-stream-event-hubs.md) или [собирайте данные для Azure Monitor журналов](/azure/azure-monitor/agents/diagnostics-extension-logs). Дополнительные сведения см. в [рекомендациях по сбору и хранению данных](/azure/architecture/best-practices/monitoring#collecting-and-storing-data). [PerfView](https://github.com/Microsoft/perfview/blob/master/README.md) можно использовать для работы с полученными файлами ETL, или можно написать собственную программу. В этом пошаговом руководстве используется PerfView:
+Кроме того, опытные пользователи могут собирать события ETW напрямую. Затем вы можете [использовать данные в система диагностики Azure в концентраторах событий](../azure-monitor/agents/diagnostics-extension-stream-event-hubs.md) или [собирайте данные для Azure Monitor журналов](../azure-monitor/agents/diagnostics-extension-logs.md). Дополнительные сведения см. в [рекомендациях по сбору и хранению данных](/azure/architecture/best-practices/monitoring#collecting-and-storing-data). [PerfView](https://github.com/Microsoft/perfview/blob/master/README.md) можно использовать для работы с полученными файлами ETL, или можно написать собственную программу. В этом пошаговом руководстве используется PerfView:
 
 1. В меню PerfView выберите **собрать** &gt; **сбор** , чтобы записать события.
 
@@ -759,11 +759,11 @@ E2EDP19   300                16    E2EDP19   0     3   00AAAA-11111</idocData>
     >
     > Дополнительные сведения о SAP см. в следующих примечаниях (обязательное имя для входа) <https://launchpad.support.sap.com/#/notes/2399329> и <https://launchpad.support.sap.com/#/notes/353597> .
 
-   Пример:
+   Например:
 
    ![Добавление триггера SAP в приложение логики](./media/logic-apps-using-sap-connector/first-step-trigger.png)
 
-1. [Добавьте действие ответа в приложение логики](/azure/connectors/connectors-native-reqres#add-a-response-action) , чтобы ответить немедленно, с состоянием вашего запроса SAP. Рекомендуется добавить это действие сразу после триггера, чтобы освободить канал связи с сервером SAP. Выберите один из следующих кодов состояния ( `statusCode` ) для использования в действии ответа:
+1. [Добавьте действие ответа в приложение логики](../connectors/connectors-native-reqres.md#add-a-response-action) , чтобы ответить немедленно, с состоянием вашего запроса SAP. Рекомендуется добавить это действие сразу после триггера, чтобы освободить канал связи с сервером SAP. Выберите один из следующих кодов состояния ( `statusCode` ) для использования в действии ответа:
 
     * **202 принят**, что означает, что запрос был принят для обработки, но обработка еще не завершена.
 

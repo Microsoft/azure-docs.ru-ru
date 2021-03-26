@@ -13,12 +13,12 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 4c3308ff9b1ffeb0f14c5808e0d4cdd71dabf335
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 63183eb6a77b3a7aecfb6f3e8a7c9ee7c2544de2
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104780129"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543913"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-an-apple-id--using-azure-active-directory-b2c-preview"></a>Настройка регистрации и входа с помощью идентификатора Apple ID с помощью Azure Active Directory B2C (Предварительная версия)
 
@@ -30,7 +30,7 @@ ms.locfileid: "104780129"
 
 ::: zone-end
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 
@@ -86,7 +86,7 @@ ms.locfileid: "104780129"
 1. Введите **идентификатор службы Apple (идентификатор клиента)**.
 1. Введите **идентификатор ключа Apple**.
 1. Выберите и отправьте **данные сертификата Apple**.
-1. Щелкните **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 
 > [!IMPORTANT] 
@@ -101,7 +101,7 @@ ms.locfileid: "104780129"
 1. В клиенте Azure AD B2C выберите **Потоки пользователей**.
 1. Выберите поток пользователя, для которого требуется добавить поставщик удостоверений Apple. 
 1. В разделе **поставщики удостоверений социальных сетей** выберите **Apple (Предварительная версия)**.
-1. Щелкните **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 1. Чтобы проверить политику, выберите пункт **выполнить пользовательскую последовательность**.
 1. Для **приложения** выберите веб-приложение с именем *testapp1* , которое вы зарегистрировали ранее. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
 1. Нажмите кнопку **запустить поток пользователя** .
@@ -120,7 +120,7 @@ ms.locfileid: "104780129"
 1. Создайте [функцию Azure](../azure-functions/functions-create-function-app-portal.md).
 1. В разделе **разработчик** выберите **код + тест**. 
 1. Скопируйте содержимое файла [Run. CSX](https://github.com/azure-ad-b2c/samples/blob/master/policies/sign-in-with-apple/azure-function/run.csx) и вставьте его в редактор.
-1. Щелкните **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 1. Выполните HTTP- `POST` запрос и укажите следующие сведения:
 
     - **апплетеамид**: ваш идентификатор группы разработчиков Apple
@@ -195,7 +195,7 @@ ms.locfileid: "104780129"
             <Item Key="response_types">code</Item>
             <Item Key="external_user_identity_claim_id">sub</Item>
             <Item Key="response_mode">form_post</Item>
-            <Item Key="ReadBodyClaimsOnIdpRedirect">user.firstName user.lastName user.email</Item>
+            <Item Key="ReadBodyClaimsOnIdpRedirect">user.name.firstName user.name.lastName user.email</Item>
             <Item Key="client_id">You Apple ID</Item>
             <Item Key="UsePolicyInRedirectUri">false</Item>
           </Metadata>

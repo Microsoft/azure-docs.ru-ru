@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: conceptual
 ms.date: 02/05/2021
 ms.author: cshoe
-ms.openlocfilehash: 57c83a94925e94088085efacf1192416f63e6383
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d561c72bb1c6e6e67de7698d7b21901fcf8d1f7c
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103232041"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105544423"
 ---
 # <a name="github-actions-workflows-for-azure-static-web-apps-preview"></a>Рабочие процессы GitHub Actions для предварительной версии Статических веб-приложений Azure
 
@@ -136,11 +136,7 @@ with:
     ###### End of Repository/Build Configurations ######
 ```
 
-| Свойство | Описание | Обязательно |
-|---|---|---|
-| `app_location` | Расположение кода приложения.<br><br>Например, введите `/`, если исходный код приложения находится в корне репозитория, или `/app`, если код приложения находится в каталоге с именем `app`. | Да |
-| `api_location` | Расположение кода Функций Azure.<br><br>Например, введите `/api`, если код приложения находится в папке с именем `api`. Если в папке не обнаружено ни одного приложения функций Azure, то в процессе сборки произойдет сбой, и в рабочем процессе предполагается, что вы не хотите использовать API. | нет |
-| `output_location` | Расположение выходного каталога сборки относительно `app_location`.<br><br>Например, если исходный код приложения находится в `/app`, а сценарий сборки выводит файлы в папку `/app/build`, установите `build` в качестве значения `output_location`. | нет |
+[!INCLUDE [static-web-apps-folder-structure](../../includes/static-web-apps-folder-structure.md)]
 
 Значения `repo_token`, `action` и `azure_static_web_apps_api_token`, настроенные с помощью Статических веб-приложений Azure, не должны изменяться вручную.
 

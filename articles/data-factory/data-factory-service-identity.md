@@ -4,14 +4,14 @@ description: Сведения об управляемом удостоверен
 author: linda33wj
 ms.service: data-factory
 ms.topic: conceptual
-ms.date: 03/23/2021
+ms.date: 03/25/2021
 ms.author: jingwang
-ms.openlocfilehash: 89da1a22bb3fd0eff22a7bed7ed70b72f220fbf9
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: 65512f8e46b5545929a798392ac5f19ddeab39ed
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104888997"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562466"
 ---
 # <a name="managed-identity-for-data-factory"></a>Управляемое удостоверение для Фабрики данных
 
@@ -28,8 +28,7 @@ ms.locfileid: "104888997"
 Управляемое удостоверение для фабрики данных предоставляет следующие возможности:
 
 - [Храните учетные данные в Azure Key Vault](store-credentials-in-key-vault.md). в этом случае для Azure Key Vault проверки подлинности используется управляемое удостоверение фабрики данных.
-- Соединители, включая [хранилище BLOB-объектов Azure](connector-azure-blob-storage.md), [Azure Data Lake Storage 1-го поколения](connector-azure-data-lake-store.md), [Azure Data Lake Storage 2-го поколения](connector-azure-data-lake-storage.md), [базу данных SQL Azure](connector-azure-sql-database.md)и [Azure синапсе Analytics](connector-azure-sql-data-warehouse.md).
-- [Веб-действие](control-flow-web-activity.md).
+- Доступ к хранилищам данных или расчетам с использованием проверки подлинности управляемого удостоверения, включая хранилище BLOB-объектов Azure, обозреватель данных Azure, Azure Data Lake Storage 1-го поколения, Azure Data Lake Storage 2-го поколения, базу данных SQL Azure, Azure SQL Управляемый экземпляр, Azure синапсе Analytics, остальное, действие "действия с модулями данных", веб-действия и многое другое. Дополнительные сведения см. в статьях о соединителях и действиях.
 
 ## <a name="generate-managed-identity"></a>Создать управляемое удостоверение
 
@@ -157,11 +156,10 @@ client.Factories.CreateOrUpdate(resourceGroup, dataFactoryName, dataFactory);
 
 - Идентификатор объекта управляемого идентификатора
 - Управляемый клиент удостоверений
-- Идентификатор приложения управляемого удостоверения
 
 При создании связанной службы будут также отображаться сведения об управляемом удостоверении, поддерживающем проверку подлинности управляемого удостоверения, например, большой двоичный объект Azure, Azure Data Lake Storage, Azure Key Vault и т. д.
 
-При предоставлении разрешения используйте идентификатор объекта или имя фабрики данных (в качестве имени управляемого удостоверения), чтобы найти это удостоверение.
+При предоставлении разрешения на вкладке Управление доступом (IAM) ресурса Azure — > добавить назначение ролей — > назначить доступ к-> выберите фабрика данных в разделе Назначенная системой управляемая идентификация — > выберите по имени фабрики. чтобы найти это удостоверение, в общем случае можно использовать идентификатор объекта или имя фабрики данных (в качестве управляемого имени удостоверения). Если необходимо получить идентификатор приложения управляемого удостоверения, можно использовать PowerShell.
 
 ### <a name="retrieve-managed-identity-using-powershell"></a>Получение управляемого удостоверения с помощью PowerShell
 

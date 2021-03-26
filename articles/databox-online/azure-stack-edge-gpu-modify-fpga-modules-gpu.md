@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 660fbf7cc4dd28c800d8f49fd5d990c99f97c4c8
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 1276a242efb1917a0c4a24aa73c3e0d11f81e158
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102443001"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559168"
 ---
 # <a name="run-existing-iot-edge-modules-from-azure-stack-edge-pro-fpga-devices-on-azure-stack-edge-pro-gpu-device"></a>Запуск существующих модулей IoT Edge из Azure Stack пограничных устройств с пограничными устройствами FPGA на устройстве с Azure Stack ребра Pro GPU
 
@@ -27,7 +27,7 @@ ms.locfileid: "102443001"
 
 При переносе рабочих нагрузок с устройства FPGA на устройство GPU необходимо внести изменения в существующие модули IoT Edge, чтобы они успешно выполнялись на платформе Kubernetes. Может потребоваться по-разному указать требования к хранилищу, сети, использованию ресурсов и веб-прокси. 
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 При указании хранилища для модулей IoT Edge учитывайте следующие сведения.
 
@@ -248,4 +248,4 @@ ms.locfileid: "102443001"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Дополнительные сведения о [настройке GPU для использования модуля](azure-stack-edge-j-series-configure-gpu-modules.md).
+- Дополнительные сведения о [настройке GPU для использования модуля](./azure-stack-edge-gpu-configure-gpu-modules.md).

@@ -13,12 +13,12 @@ ms.workload: infrastructure
 ms.date: 01/16/2020
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 20a2639716048a8c549ec6d584e807cb209f83d9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f1c1397416943e3e25719204a5ccfd593559476e
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101670958"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557604"
 ---
 # <a name="how-to-install-and-configure-sap-hana-large-instances-on-azure"></a>Как установить и настроить SAP HANA в Azure (крупные экземпляры)
 
@@ -90,7 +90,7 @@ ms.locfileid: "101670958"
 Дополнительные сведения и полезные ссылки по SAP в SUSE см. ниже.
 
 - [SAP HANA на сайте SUSE Linux](https://wiki.scn.sap.com/wiki/display/ATopics/SAP+on+SUSE).
-- [Best Practice for SAP: Enqueue Replication — SAP NetWeaver on SUSE Linux Enterprise 12](https://www.suse.com/media/guide/SLES4SAP-NetWeaver-ha-guide-EnqRepl-12_color_en.pdf) (Рекомендации по SAP. Постановка репликации в очередь — SAP NetWeaver в SUSE Linux Enterprise 12).
+- [Best Practice for SAP: Enqueue Replication — SAP NetWeaver on SUSE Linux Enterprise 12](https://www.scribd.com/document/351887168/SLES4SAP-NetWeaver-ha-guide-EnqRepl-12-color-en-pdf) (Рекомендации по SAP. Постановка репликации в очередь — SAP NetWeaver в SUSE Linux Enterprise 12).
 - [ClamSAP — SLES Virus Protection for SAP](https://scn.sap.com/community/linux/blog/2014/04/14/clamsap--suse-linux-enterprise-server-integrates-virus-protection-for-sap) (ClamSAP — защита от вирусов на сервере SLES для SAP) (включая SLES 12 для приложений SAP).
 
 Примечания по поддержке SAP, применимые к реализации SAP HANA на SLES 12, см. ниже.
@@ -134,7 +134,7 @@ ms.locfileid: "101670958"
 
 Дополнительные сведения о Ethernet по архитектуре см. в разделе [Поддерживаемые сценарии для крупных экземпляров HANA](hana-supported-scenario.md).
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 Структура хранилища для SAP HANA в Azure (крупные экземпляры) настраивается SAP HANA в Azure с `service management` помощью рекомендуемых правил SAP. Рекомендации описаны в техническом документе с описанием [требований к хранилищу SAP HANA](https://go.sap.com/documents/2015/03/74cdb554-5a7c-0010-82c7-eda71af511fa.html). 
 

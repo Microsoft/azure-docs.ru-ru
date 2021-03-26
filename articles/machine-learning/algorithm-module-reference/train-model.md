@@ -9,12 +9,12 @@ ms.topic: reference
 author: likebupt
 ms.author: keli19
 ms.date: 03/10/2021
-ms.openlocfilehash: 77927472dae6c8e7e6fddacf9088b479636edd37
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 41b327e793c6b35a2b2aeae825c493a484d84fb4
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103224348"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562772"
 ---
 # <a name="train-model-module"></a>Модуль "Обучение модели"
 
@@ -71,7 +71,7 @@ ms.locfileid: "103224348"
 
 Интерпретируемость модели позволяет понять модель машинного обучения и представить базовую базу для принятия решений способом, понятным для людей.
 
-В настоящее время модуль **обучения модели** поддерживает [Использование пакета интерпретации для объяснения моделей машинного обучения](https://docs.microsoft.com/azure/machine-learning/how-to-machine-learning-interpretability-aml#generate-feature-importance-values-via-remote-runs). Поддерживаются следующие встроенные алгоритмы:
+В настоящее время модуль **обучения модели** поддерживает [Использование пакета интерпретации для объяснения моделей машинного обучения](../how-to-machine-learning-interpretability-aml.md#generate-feature-importance-values-via-remote-runs). Поддерживаются следующие встроенные алгоритмы:
 
 - Линейная регрессия
 - Регрессия нейронной сети
@@ -87,7 +87,7 @@ ms.locfileid: "103224348"
 
 ![Снимок экрана с пояснениями модели](./media/module/train-model-explanations-tab.gif)
 
-Дополнительные сведения об использовании объяснений модели в Машинное обучение Azure см. в статье о [интерпретации моделей ML](https://docs.microsoft.com/azure/machine-learning/how-to-machine-learning-interpretability-aml#generate-feature-importance-values-via-remote-runs).
+Дополнительные сведения об использовании объяснений модели в Машинное обучение Azure см. в статье о [интерпретации моделей ML](../how-to-machine-learning-interpretability-aml.md#generate-feature-importance-values-via-remote-runs).
 
 ## <a name="results"></a>Результаты
 
@@ -101,4 +101,4 @@ ms.locfileid: "103224348"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ознакомьтесь с [набором доступных модулей](module-reference.md) в службе Машинного обучения Azure. 
+Ознакомьтесь с [набором доступных модулей](module-reference.md) в службе Машинного обучения Azure.

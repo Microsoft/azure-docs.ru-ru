@@ -5,18 +5,18 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: authentication
 ms.topic: how-to
-ms.date: 03/04/2021
+ms.date: 03/16/2021
 ms.author: justinha
 author: sopand
 manager: daveba
 ms.reviewer: dawoo
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0865fb2bda04f5a7e9ba2ef73a717946fa656a5
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 5a1cb71917fdb30ffccda21bedffe1c7f2a428c1
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102175317"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557961"
 ---
 # <a name="authentication-methods-activity"></a>Действия способов аутентификации 
 
@@ -135,6 +135,7 @@ ms.locfileid: "102175317"
 
 - Данные в отчете не обновляются в режиме реального времени и могут отражать задержку до нескольких часов.
 - Регистрация временного доступа не отражается на вкладке регистрации отчета, так как они действительны только в течение короткого периода времени.
+- Методы **фонеаппнотификатион** или **фонеаппотп** , которые могли быть настроены пользователем, не отображаются на панели мониторинга. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

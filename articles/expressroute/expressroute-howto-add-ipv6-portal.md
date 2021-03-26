@@ -7,19 +7,19 @@ ms.service: expressroute
 ms.topic: how-to
 ms.date: 03/09/2021
 ms.author: duau
-ms.openlocfilehash: 9b85caa3611c484fc17423637dc36ce20b48b823
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 7f5afc05a8d03d33366a2f76318bcf5e039d4d30
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104868483"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561667"
 ---
 # <a name="add-ipv6-support-for-private-peering-using-the-azure-portal-preview"></a>Добавление поддержки IPv6 для частного пиринга с помощью портал Azure (Предварительная версия)
 
 В этой статье описывается, как добавить поддержку IPv6 для подключения через ExpressRoute к ресурсам в Azure с помощью портал Azure. 
 
 > [!Note]
-> Сейчас эта функция доступна для предварительной версии в [регионах Azure с зоны доступности](https://docs.microsoft.com/azure/availability-zones/az-region#azure-regions-with-availability-zones). Таким образом, канал ExpressRoute можно создать с помощью любого расположения пиринга, но развертываемые на основе IPv6 развертывания должны находиться в регионе с Зоны доступности.
+> Сейчас эта функция доступна для предварительной версии в [регионах Azure с зоны доступности](../availability-zones/az-region.md#azure-regions-with-availability-zones). Таким образом, канал ExpressRoute можно создать с помощью любого расположения пиринга, но развертываемые на основе IPv6 развертывания должны находиться в регионе с Зоны доступности.
 
 ## <a name="register-for-public-preview"></a>Зарегистрируйтесь для просмотра общедоступной предварительной версии
 Перед добавлением поддержки IPv6 сначала необходимо зарегистрировать подписку. Для регистрации выполните следующие команды с помощью Azure PowerShell:

@@ -8,12 +8,12 @@ ms.date: 07/27/2020
 ms.author: normesta
 ms.subservice: common
 ms.reviewer: dineshm
-ms.openlocfilehash: 244012f0945f467fe79e95d652ba22e3b62a1b7a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 9c699cd865746bf430193eba38ec6fa79575692e
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100596936"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105543454"
 ---
 # <a name="configure-optimize-and-troubleshoot-azcopy"></a>Configure, optimize, and troubleshoot AzCopy (Настройка, оптимизация и устранение неполадок с AzCopy)
 
@@ -103,14 +103,16 @@ azcopy jobs resume <job-id> --cap-mbps 10
 
 ### <a name="optimize-memory-use"></a>Оптимизация использования памяти
 
-Задайте `AZCOPY_BUFFER_GB` переменную среды, чтобы указать максимальный объем системной памяти, который будет использоваться AzCopy при скачивании и отправке файлов.
-Выразить это значение в гигабайтах (ГБ).
+Задайте `AZCOPY_BUFFER_GB` переменную среды, чтобы указать максимальный объем системной памяти, который будет использоваться AzCopy для буферизации при скачивании и отправке файлов. Выразить это значение в гигабайтах (ГБ).
 
 | Операционная система | Команда  |
 |--------|-----------|
 | **Windows** | `set AZCOPY_BUFFER_GB=<value>` |
 | **Linux** | `export AZCOPY_BUFFER_GB=<value>` |
 | **macOS** | `export AZCOPY_BUFFER_GB=<value>` |
+
+> [!NOTE]
+> Отслеживание заданий всегда влечет за собой дополнительные издержки в использовании памяти. Количество зависит от количества операций передачи в задании. Буферы — это самый крупный компонент использования памяти. Вы можете управлять накладными расходами `AZCOPY_BUFFER_GB` , используя, в соответствии с вашими требованиями, но без флага для строгого ограничения общего использования памяти.
 
 ### <a name="optimize-file-synchronization"></a>Оптимизация синхронизации файлов
 

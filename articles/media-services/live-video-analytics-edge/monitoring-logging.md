@@ -3,12 +3,12 @@ title: Мониторинг и ведение журналов — Azure
 description: В этой статье приводятся общие сведения о мониторинге и ведении журналов в службе Live Video Analytics на IoT Edge.
 ms.topic: reference
 ms.date: 04/27/2020
-ms.openlocfilehash: e81b1e98fb30bb8876c78c8c911585f5448db8f2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 08b2f5cce80581d71ce73e97ab30900aa8957c77
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101730252"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564489"
 ---
 # <a name="monitoring-and-logging"></a>Мониторинг и ведение журнала
 
@@ -167,7 +167,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
 
 Каждое событие, наблюдаемое через центр Интернета вещей, имеет набор общих свойств:
 
-|Свойство.   |Тип свойства| Тип данных   |Описание|
+|Свойство   |Тип свойства| Тип данных   |Описание|
 |---|---|---|---|
 |`message-id`   |система |guid|  Уникальный идентификатор события.|
 |`topic`|   аппликатионпроперти |строка|    Azure Resource Manager путь к учетной записи служб мультимедиа Azure.|
@@ -230,7 +230,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
 
 Эти метрики будут переданы из службы "интерактивная аналитика видео" в модуле IoT Edge:  
 
-|Имя метрики|Type|Метка|Описание|
+|Имя метрики|Тип|Метка|Описание|
 |-----------|----|-----|-----------|
 |lva_active_graph_instances|Датчик|iothub, edge_device, module_name, graph_topology|Общее число активных графиков на топологию.|
 |lva_received_bytes_total|Счетчик|iothub, edge_device, module_name, graph_topology, graph_instance, graph_node|Общее число байтов, полученных узлом. Поддерживается только для источников RTSP.|
@@ -312,7 +312,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
    В этом случае в портал Azure перейдите в центр Интернета вещей и выберите **метрики** в левой области. Вы должны увидеть метрики там.
 
 ### <a name="log-analytics-metrics-collection"></a>Коллекция метрик Log Analytics
-Используя [конечную точку Prometheus](https://prometheus.io/docs/practices/naming/) вместе с [log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-analytics-tutorial), можно создавать и [отслеживать такие метрики](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported) , как используемые cpupercent присутствуют, меморюседперцент и т. д.   
+Используя [конечную точку Prometheus](https://prometheus.io/docs/practices/naming/) вместе с [log Analytics](../../azure-monitor/logs/log-analytics-tutorial.md), можно создавать и [отслеживать такие метрики](../../azure-monitor/essentials/metrics-supported.md) , как используемые cpupercent присутствуют, меморюседперцент и т. д.   
 
 > [!NOTE]
 > Приведенная ниже конфигурация не выполняет сбора журналов, а **только метрик**. Можно расширить модуль сборщика для сбора и отправки журналов.
@@ -413,7 +413,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
 
 Теперь модуль будет записывать журналы отладки в двоичном формате в путь к хранилищу устройства `/var/local/mediaservices/debuglogs/` . Вы можете поделиться этими журналами с помощью службы поддержки Azure.
 
-## <a name="faq"></a>Вопросы и ответы
+## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
 
 Если у вас есть вопросы, см. [вопросы и ответы по мониторингу и метрикам](faq.md#monitoring-and-metrics).
 

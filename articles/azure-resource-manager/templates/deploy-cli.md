@@ -2,13 +2,13 @@
 title: Развертывание ресурсов с помощью Azure CLI и шаблона
 description: Используйте Azure Resource Manager и Azure CLI для развертывания ресурсов в Azure. Ресурсы определяются в шаблоне диспетчер ресурсов или в файле Бицеп.
 ms.topic: conceptual
-ms.date: 03/04/2021
-ms.openlocfilehash: 1fc3397409634f29690af05ca2a85e67c30b6d89
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.date: 03/25/2021
+ms.openlocfilehash: b19dc6cc292306cc796f8c1d8f93b358a079d83b
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104954978"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105544440"
 ---
 # <a name="deploy-resources-with-arm-templates-and-azure-cli"></a>Развертывание ресурсов с помощью шаблонов ARM и Azure CLI
 
@@ -88,6 +88,8 @@ az deployment group create \
 > В настоящее время Azure CLI не поддерживает развертывание удаленных файлов Бицеп. Используйте [БИЦЕП CLI](./bicep-install.md#development-environment) для компиляции файла бицеп в шаблон JSON, а затем загрузите JSON-файл в удаленное расположение.
 
 Вместо того чтобы хранить шаблоны ARM на локальном компьютере, вы можете хранить их во внешнем расположении. Вы можете хранить шаблоны в репозитории системы управления версиями (например, GitHub). А также их можно хранить в учетной записи хранения Azure для общего доступа в организации.
+
+[!INCLUDE [Deploy templates in private GitHub repo](../../../includes/resource-manager-private-github-repo-templates.md)]
 
 Если развертывание выполняется в несуществующей группе ресурсов, создайте группу ресурсов. Имя группы ресурсов может содержать только буквы, цифры, точки, знаки подчеркивания, дефисы и скобки. Оно может содержать до 90 знаков и Имя не может заканчиваться точкой.
 
@@ -258,7 +260,7 @@ az deployment group create \
 
 ## <a name="handle-extended-json-format"></a>Обработку расширенного формата JSON
 
-Чтобы развернуть шаблон с многострочными строками или комментариями с помощью Azure CLI с версией 2.3.0 или более ранней, необходимо использовать `--handle-extended-json-format` параметр.  Пример:
+Чтобы развернуть шаблон с многострочными строками или комментариями с помощью Azure CLI с версией 2.3.0 или более ранней, необходимо использовать `--handle-extended-json-format` параметр.  Например:
 
 ```json
 {

@@ -7,12 +7,12 @@ ms.author: v-mibufo
 ms.service: cloud-services
 ms.topic: troubleshooting
 ms.date: 02/22/2021
-ms.openlocfilehash: b11aedb52be3c263c781c2ac68d1d5197ba4def2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3d1a1135db0421d89d4c6c9f278c86e02cb5cb32
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101746746"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558964"
 ---
 # <a name="troubleshoot-locationnotfoundforrolesize-when-deploying-a-cloud-service-classic-to-azure"></a>Устранение неполадок Локатионнотфаундфорролесизе при развертывании облачной службы (классической) в Azure
 
@@ -47,13 +47,13 @@ ms.locfileid: "101746746"
 
 ### <a name="list-skus-in-region-using-azure-cli"></a>Вывод списка номеров SKU в регионе с помощью Azure CLI
 
-Можно использовать команду [AZ VM List-SKU](https://docs.microsoft.com/cli/azure/vm.html#az_vm_list_skus) .
+Можно использовать команду [AZ VM List-SKU](/cli/azure/vm.html#az_vm_list_skus) .
 
 - Используйте `--location` параметр, чтобы отфильтровать выходные данные в используемое расположение.
 - Параметр `--size` позволяет выполнить поиск по частичному названию размера.
 - Дополнительные сведения см. в разделе [Устранение ошибки для недоступности SKU](../azure-resource-manager/templates/error-sku-not-available.md#solution-2---azure-cli) .
 
-    **Пример:**
+    **Например:**
 
     ```azurecli
     az vm list-skus --location southcentralus --size Standard_F --output table
@@ -63,13 +63,13 @@ ms.locfileid: "101746746"
 
 #### <a name="list-skus-in-region-using-powershell"></a>Вывод списка номеров SKU в регионе с помощью PowerShell
 
-Можно использовать команду [Get-азкомпутересаурцеску](https://docs.microsoft.com/powershell/module/az.compute/get-azcomputeresourcesku) .
+Можно использовать команду [Get-азкомпутересаурцеску](/powershell/module/az.compute/get-azcomputeresourcesku) .
 
 - Отфильтруйте результаты по расположению.
 - Эта команда поддерживается только в Azure PowerShell последней версии.
 - Дополнительные сведения см. в разделе [Устранение ошибки для недоступности SKU](../azure-resource-manager/templates/error-sku-not-available.md#solution-1---powershell) .
 
-**Пример:**
+**Например:**
 
 ```azurepowershell
 Get-AzComputeResourceSku | where {$_.Locations -icontains "centralus"}
@@ -91,7 +91,7 @@ Get-AzComputeResourceSku | where {$_.Locations.Contains("centralus") -and $_.Res
 
 #### <a name="list-skus-in-region-using-rest-api"></a>Вывод списка номеров SKU в регионе с помощью REST API
 
-Вы можете использовать операцию " [список номеров SKU ресурсов](https://docs.microsoft.com/rest/api/compute/resourceskus/list) ". Он возвращает доступные номера SKU и регионы в приведенном ниже формате.
+Вы можете использовать операцию " [список номеров SKU ресурсов](/rest/api/compute/resourceskus/list) ". Он возвращает доступные номера SKU и регионы в приведенном ниже формате.
 
 ```json
 {

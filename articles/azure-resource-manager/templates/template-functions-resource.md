@@ -3,12 +3,12 @@ title: Функции шаблонов — ресурсы
 description: Описывает функции, используемые в шаблоне Azure Resource Manager (шаблон ARM) для получения значений о ресурсах.
 ms.topic: conceptual
 ms.date: 02/10/2021
-ms.openlocfilehash: da85308e7d214f198b29b40bc380a4d33947c865
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: efd7c554e6da8b60d4834d1a1290407a6b9e94d4
+ms.sourcegitcommit: 44edde1ae2ff6c157432eee85829e28740c6950d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100364568"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105544117"
 ---
 # <a name="resource-functions-for-arm-templates"></a>Функции ресурсов для шаблонов ARM
 
@@ -221,7 +221,7 @@ resource myAssignment 'Microsoft.Authorization/policyAssignments@2019-09-01' = {
 | Microsoft. ContainerRegistry/реестров/ажентпулс | листкуеуестатус |
 | Microsoft. ContainerRegistry/реестров/Буилдтаскс | листсаурцерепоситорипропертиес |
 | Microsoft. ContainerRegistry/registrys/Буилдтаскс/шаги | листбуилдаргументс |
-| Microsoft. ContainerRegistry/реестров/таскрунс | listDetails |
+| Microsoft. ContainerRegistry/реестров/таскрунс | листдетаилс |
 | Microsoft.ContainerRegistry/registries/webhooks | [listEvents](/rest/api/containerregistry/webhooks/listevents) |
 | Microsoft.ContainerRegistry/registries/runs | [listLogSasUrl](/rest/api/containerregistry/runs/getlogsasurl) |
 | Microsoft.ContainerRegistry/registries/tasks | [listDetails](/rest/api/containerregistry/tasks/getdetails) |
@@ -245,9 +245,9 @@ resource myAssignment 'Microsoft.Authorization/policyAssignments@2019-09-01' = {
 | Microsoft.DevTestLab/labs/schedules | [ListApplicable](/rest/api/dtl/schedules/listapplicable) |
 | Microsoft.DevTestLab/labs/users/serviceFabrics | [ListApplicableSchedules](/rest/api/dtl/servicefabrics/listapplicableschedules) |
 | Microsoft.DevTestLab/labs/virtualMachines | [ListApplicableSchedules](/rest/api/dtl/virtualmachines/listapplicableschedules) |
-| Microsoft.DocumentDB/databaseAccounts | [listConnectionStrings](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/databaseaccounts/listconnectionstrings) |
-| Microsoft.DocumentDB/databaseAccounts | [listKeys](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/databaseaccounts/listkeys) |
-| Microsoft.DocУментдб/databaseAccounts/Нотебукворкспацес | [листконнектионинфо](/rest/api/cosmos-db-resource-provider/2020-06-01/notebookworkspaces/listconnectioninfo) |
+| Microsoft.DocumentDB/databaseAccounts | [listConnectionStrings](/rest/api/cosmos-db-resource-provider/2021-03-01-preview/databaseaccounts/listconnectionstrings) |
+| Microsoft.DocumentDB/databaseAccounts | [listKeys](/rest/api/cosmos-db-resource-provider/2021-03-01-preview/databaseaccounts/listkeys) |
+| Microsoft.DocУментдб/databaseAccounts/Нотебукворкспацес | [листконнектионинфо](/rest/api/cosmos-db-resource-provider/2021-03-01-preview/notebookworkspaces/listconnectioninfo) |
 | Microsoft.DomainRegistration | [listDomainRecommendations](/rest/api/appservice/domains/listrecommendations) |
 | Microsoft.DomainRegistration/topLevelDomains | [listAgreements](/rest/api/appservice/topleveldomains/listagreements) |
 | Microsoft.EventGrid/domains | [listKeys](/rest/api/eventgrid/version2020-06-01/domains/listsharedaccesskeys) |
@@ -287,7 +287,7 @@ resource myAssignment 'Microsoft.Authorization/policyAssignments@2019-09-01' = {
 | Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules | [listkeys](/rest/api/notificationhubs/notificationhubs/listkeys) |
 | Microsoft.OperationalInsights/workspaces | [list](/rest/api/loganalytics/workspaces/list) |
 | Microsoft.OperationalInsights/workspaces | listKeys |
-| Microsoft.PolicyInsights/remediations | [listDeployments](/rest/api/policy-insights/remediations/listdeploymentsatresourcegroup) |
+| Microsoft.PolicyInsights/remediations | [listDeployments](/rest/api/policy/remediations/listdeploymentsatresourcegroup) |
 | Microsoft. Редхатопеншифт/Опеншифтклустерс | [listCredentials](/rest/api/openshift/openshiftclusters/listcredentials) |
 | Microsoft.Relay/namespaces/authorizationRules | [listkeys](/rest/api/relay/namespaces/listkeys) |
 | Microsoft.Relay/namespaces/disasterRecoveryConfigs/authorizationRules | listkeys |
@@ -517,7 +517,7 @@ output notSupportedType array = pickZones('Microsoft.Cdn', 'profiles', 'westus2'
 
 Выходные данные из предыдущих примеров возвращают три массива.
 
-| Имя | Type | Значение |
+| Имя | Тип | Значение |
 | ---- | ---- | ----- |
 | Поддерживается | array | ["1"] |
 | нотсуппортедрегион | array | [] |
@@ -1345,7 +1345,7 @@ output nestedResourceOutput string = resourceId('Microsoft.SQL/servers/databases
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Type | Значение |
+| Имя | Тип | Значение |
 | ---- | ---- | ----- |
 | sameRGOutput | Строка | /subscriptions/{ИД_текущей_подписки}/resourceGroups/examplegroup/providers/Microsoft.Storage/storageAccounts/examplestorage |
 | differentRGOutput | Строка | /subscriptions/{ИД_текущей_подписки}/resourceGroups/otherResourceGroup/providers/Microsoft.Storage/storageAccounts/examplestorage |

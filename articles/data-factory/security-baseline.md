@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: d1cbd314861a4d5079a5c8e5213f45c7164344f0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a21ae2ce79c500455c5735f4d82e7852e8474ad1
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102204173"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559151"
 ---
 # <a name="azure-security-baseline-for-azure-data-factory"></a>Базовый план безопасности Azure для фабрики данных Azure
 
@@ -157,9 +157,9 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений сетевых ресурсов, связанных с экземплярами фабрики данных Azure. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -175,7 +175,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Кроме того, вы можете включить и подключить данные к Azure Sentinel или сторонним инцидентам безопасности и управлению событиями (SIEM). Вы также можете интегрировать фабрику данных Azure с Git, чтобы использовать несколько преимуществ системы управления версиями, такие как возможность отслеживать изменения и проводить аудит изменений, а также возвратиться к изменениям, которые представляют ошибки.
 
-- [Как настроить параметры диагностики](/azure/azure-monitor/platform/diagnostic-settings#create-in-azure-portal)
+- [Как настроить параметры диагностики](../azure-monitor/essentials/diagnostic-settings.md#create-in-azure-portal)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -193,7 +193,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Используйте параметры диагностики для настройки журналов диагностики для нерасчетных ресурсов в фабрике данных Azure, таких как метрики и конвейер — запуск данных. Фабрика данных Azure хранит данные о запуске конвейера в течение 45 дней. Чтобы сохранить эти данные в течение длительного периода времени, сохраните журналы диагностики в учетной записи хранения для аудита или проверки вручную и укажите время хранения в днях.  Вы также можете выполнить потоковую передачу журналов в концентраторы событий Azure или отправить журналы в Log Analytics рабочую область для анализа.
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 - [Общие сведения о журналах диагностики фабрики данных Azure](monitor-using-azure-monitor.md)
 
@@ -207,9 +207,9 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Если ваша организация хочет сохранить данные журнала событий безопасности, она может храниться на уровне сбора данных, после чего их можно запросить в Log Analytics.
 
-- [Как выполнять получение данных из виртуальных машин Azure в Azure Monitor](/azure/azure-monitor/learn/quick-collect-azurevm)
+- [Как выполнять получение данных из виртуальных машин Azure в Azure Monitor](../azure-monitor/vm/quick-collect-azurevm.md)
 
-- [Включение сбора данных в центре безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-enable-data-collection#data-collection-tier)
+- [Включение сбора данных в центре безопасности Azure](../security-center/security-center-enable-data-collection.md#data-collection-tier)
 
 **Ответственность**: Customer
 
@@ -221,7 +221,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Как включить журналы диагностики в фабрике данных Azure](monitor-using-azure-monitor.md)
 
-- [Задание параметров хранения журналов для рабочих областей Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Задание параметров хранения журналов для рабочих областей Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -235,9 +235,9 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Кроме того, вы можете включить и подключить данные к Azure Sentinel или сторонним SIEM.
 
-- [Схема Log Analytics](https://docs.microsoft.com/azure/data-factory/monitor-using-azure-monitor#schema-of-logs-and-events)
+- [Схема Log Analytics](./monitor-using-azure-monitor.md#schema-of-logs-and-events)
 
-- [Как получить данные из виртуальной машины Azure с помощью Azure Monitor](/azure/azure-monitor/learn/quick-collect-azurevm)
+- [Как получить данные из виртуальной машины Azure с помощью Azure Monitor](../azure-monitor/vm/quick-collect-azurevm.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -253,11 +253,11 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Кроме того, убедитесь, что включены параметры диагностики для служб, связанных с хранилищами данных. Рекомендации можно найти в базовом плане безопасности каждой службы.
 
-- [Оповещения в фабрике данных Azure](https://docs.microsoft.com/azure/data-factory/monitor-visually#alerts)
+- [Оповещения в фабрике данных Azure](./monitor-visually.md#alerts)
 
-- [Страница «все поддерживаемые метрики»](/azure/azure-monitor/platform/metrics-supported)
+- [Страница «все поддерживаемые метрики»](../azure-monitor/essentials/metrics-supported.md)
 
-- [Как настроить оповещения журнала в рабочей области Log Analytics](/azure/azure-monitor/platform/alerts-log)
+- [Как настроить оповещения журнала в рабочей области Log Analytics](../azure-monitor/alerts/alerts-log.md)
 
 **Ответственность**: Customer
 
@@ -279,7 +279,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 **Рекомендации**. Если вы используете Integration Runtime на виртуальной машине Azure, вы можете включить ведение журнала аудита для командной строки. Центр безопасности Azure обеспечивает мониторинг журнала событий безопасности для виртуальных машин Azure.  Центр безопасности подготавливает Microsoft Monitoring Agent на всех поддерживаемых виртуальных машинах Azure и на всех новых, созданных, если включена автоматическая подготовка или вы можете установить агент вручную.  Агент включает событие создания процесса 4688 и поле CommandLine в событии 4688. Новые процессы, созданные на виртуальной машине, регистрируются в журнале событий и отслеживаются с помощью служб обнаружения Центра безопасности.
 
-- [Сбор данных в центре безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-enable-data-collection#data-collection-tier)
+- [Сбор данных в центре безопасности Azure](../security-center/security-center-enable-data-collection.md#data-collection-tier)
 
 **Ответственность**: Customer
 
@@ -305,7 +305,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember)
 
-- [Сведения о локальных учетных записях](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin#manage-the-device-administrator-role)
+- [Сведения о локальных учетных записях](../active-directory/devices/assign-local-admin.md#manage-the-device-administrator-role)
 
 **Ответственность**: Customer
 
@@ -434,7 +434,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -448,7 +448,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Если вы используете Integration Runtime на виртуальной машине Azure, подключите эту ВИРТУАЛЬную машину к Azure Sentinel. Microsoft Azure Sentinel — это масштабируемое ориентированное на облако решение для управления информационной безопасностью и событиями безопасности (SIEM), а также для автоматического ответа с помощью оркестрации операций защиты. Azure Sentinel обеспечивает интеллектуальные средства для анализа данных безопасности и аналитику угроз по всему предприятию, предоставляя единое решение для обнаружения предупреждений, видимости угроз, упреждающего поиска и реагирования на угрозы.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 - [Авторизация доступа к ресурсам концентраторов событий с помощью Azure AD](../event-hubs/authorize-access-azure-active-directory.md)
 
@@ -468,7 +468,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
-- [Настройка аутентификации Azure AD и управление ею с помощью SQL](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-configure?tabs=azure-powershell)
+- [Настройка аутентификации Azure AD и управление ею с помощью SQL](../azure-sql/database/authentication-aad-configure.md?tabs=azure-powershell)
 
 - [Включение проверки подлинности Azure AD для Azure-SSIS Integration Runtime](enable-aad-authentication-azure-ssis-ir.md)
 
@@ -574,7 +574,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 Для источников данных фабрики данных, таких как база данных SQL Azure, обратитесь к базовому плану безопасности для этой службы, чтобы получить дополнительные сведения об Azure RBAC.
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 - [Роли и разрешения для службы "Фабрика данных Azure"](concepts-roles-permissions.md)
 
@@ -620,9 +620,9 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в фабрике данных Azure и связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 - [Ведение журнала Аналитики Службы хранилища Azure](../storage/common/storage-analytics-logging.md)
 
@@ -963,7 +963,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Общие сведения об Azure RBAC для реестра контейнеров](../container-registry/container-registry-roles.md) 
 
-- [Настройка Azure RBAC](../role-based-access-control/quickstart-assign-role-user-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/quickstart-assign-role-user-portal.md)
 
 - [Роли и разрешения для службы "Фабрика данных Azure"](concepts-roles-permissions.md)
 
@@ -1019,7 +1019,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Интеграция с управляемыми удостоверениями Azure](../azure-app-configuration/howto-integrate-azure-managed-service-identity.md)
 
-- [Создание Key Vault](/azure/key-vault/quick-create-portal)
+- [Создание Key Vault](../key-vault/secrets/quick-create-portal.md)
 
 - [Проверка подлинности в Key Vault](../key-vault/general/authentication.md)
 
@@ -1243,5 +1243,5 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- см. [Обзор производительности системы безопасности Azure v2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- см. [Обзор производительности системы безопасности Azure v2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 13585173b54c79158161da54f968ba66eb018f6a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 27a0d5b809480b2ce4aff36c5acd43c149ed5bb3
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101705744"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562840"
 ---
 # <a name="azure-security-baseline-for-azure-devtest-labs"></a>Базовый план безопасности Azure для Azure DevTest Labs
 
@@ -78,11 +78,11 @@ ms.locfileid: "101705744"
 
 - [Настройка виртуальной сети для Azure DevTest Labs](devtest-lab-configure-vnet.md)
 
-- [Настройка защиты от атак DDoS](/azure/virtual-network/manage-ddos-protection)
+- [Настройка защиты от атак DDoS](../ddos-protection/manage-ddos-protection.md)
 
 - [Развертывание брандмауэра Azure](../firewall/tutorial-firewall-deploy-portal.md)
 
-- [Общие сведения об интегрированной аналитике угроз в Центре безопасности Azure](/azure/security-center/threat-protection)
+- [Общие сведения об интегрированной аналитике угроз в Центре безопасности Azure](../security-center/azure-defender.md)
 
 - [Общие сведения о адаптивной защите сети в центре безопасности Azure](../security-center/security-center-adaptive-network-hardening.md)
 
@@ -144,7 +144,7 @@ ms.locfileid: "101705744"
 
 - [Общие сведения и использование тегов служб](../virtual-network/service-tags-overview.md)
 
-- [Общие сведения и использование групп безопасности приложений](/azure/virtual-network/security-overview#application-security-groups)
+- [Общие сведения и использование групп безопасности приложений](../virtual-network/network-security-groups-overview.md#application-security-groups)
 
 **Ответственность**: Customer
 
@@ -158,7 +158,7 @@ ms.locfileid: "101705744"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Примеры политик Azure для работы в сети](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#network)
+- [Примеры политик Azure для работы в сети](../governance/policy/samples/built-in-policies.md#network)
 
 - [Создание схемы Azure](../governance/blueprints/create-blueprint-portal.md)
 
@@ -188,9 +188,9 @@ ms.locfileid: "101705744"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций ресурсов и обнаружения изменений в ресурсах Azure. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log#view-the-activity-log)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -214,7 +214,7 @@ ms.locfileid: "101705744"
 
 **Руководство**. Включите параметры диагностики журнала действий Azure и отправьте журналы в рабочую область Log Analytics, концентратор событий Azure или учетную запись хранения Azure для архивации. Журналы действий позволяют получить представление об операциях, выполненных на экземплярах Azure DevTest Labs на уровне плоскости управления. С помощью данных журнала действий Azure можно определить "что, кто и когда" для любых операций записи (размещение, публикация, удаление), выполненных на уровне плоскости управления для экземпляров DevTest Labs.
 
-- [Создание параметров диагностики для отправки журналов платформы и метрик в различные места назначения](/azure/azure-monitor/platform/diagnostic-settings)
+- [Создание параметров диагностики для отправки журналов платформы и метрик в различные места назначения](../azure-monitor/essentials/diagnostic-settings.md)
 
 **Ответственность**: Customer
 
@@ -224,7 +224,7 @@ ms.locfileid: "101705744"
 
 **Руководство**. Включите параметры диагностики журнала действий Azure и отправьте журналы в рабочую область Log Analytics, концентратор событий Azure или учетную запись хранения Azure для архивации. Журналы действий позволяют получить представление об операциях, выполненных на экземплярах Azure DevTest Labs на уровне плоскости управления. С помощью данных журнала действий Azure можно определить "что, кто и когда" для любых операций записи (размещение, публикация, удаление), выполненных на уровне плоскости управления для экземпляров DevTest Labs.
 
-- [Создание параметров диагностики для отправки журналов платформы и метрик в различные места назначения](/azure/azure-monitor/platform/diagnostic-settings)
+- [Создание параметров диагностики для отправки журналов платформы и метрик в различные места назначения](../azure-monitor/essentials/diagnostic-settings.md)
 
 **Ответственность**: Customer
 
@@ -236,7 +236,7 @@ ms.locfileid: "101705744"
 
 Дополнительные сведения см. в следующих статьях:
 
-- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](/azure/azure-monitor/learn/quick-collect-azurevm)
+- [Как получить журналы внутреннего узла виртуальной машины Azure с помощью Azure Monitor](../azure-monitor/vm/quick-collect-azurevm.md)
 
 - [Общие сведения о сборе данных в центре безопасности Azure](../security-center/security-center-enable-data-collection.md)
 
@@ -248,7 +248,7 @@ ms.locfileid: "101705744"
 
 **Рекомендации**. в Azure Monitor задайте срок хранения журнала для рабочих областей log Analytics, связанных с экземплярами Azure DevTest Labs в соответствии с правилами соответствия вашей организации.
 
-- [Дополнительные сведения см. в следующей статье.](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Дополнительные сведения см. в следующей статье.](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -260,9 +260,9 @@ ms.locfileid: "101705744"
 
 Дополнительные сведения см. в следующих статьях:
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/diagnostic-settings.md)
 
-- [Получение и анализ журналов действий Azure в Log Analytics рабочей области в Azure Monitor](/azure/azure-monitor/platform/activity-log)
+- [Получение и анализ журналов действий Azure в Log Analytics рабочей области в Azure Monitor](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -272,7 +272,7 @@ ms.locfileid: "101705744"
 
 **Руководство**. Использование рабочей области Azure log Analytics для мониторинга и оповещения о аномальных действиях в журналах безопасности и событиях, связанных с Azure DevTest Labs.
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -333,7 +333,7 @@ DevTest Labs не имеет концепции паролей по умолча
 - Управление ресурсами: обеспечивает доступ к портал Azure для управления ресурсами (создание виртуальных машин, создание сред, запуск, завершение, перезапуск, удаление и применение артефактов и т. д.). Управление ресурсами выполняется в Azure с помощью управления доступом на основе ролей Azure (Azure RBAC). Вы назначаете роли пользователям и устанавливаете разрешения на доступ к ресурсам и уровням доступа.
 - Виртуальные машины (уровень сети). в конфигурации по умолчанию виртуальные машины используют учетную запись локального администратора. Если доступен домен (Azure Active Directory доменные службы (Azure AD DS), локальный домен или облачный домен), компьютеры могут быть присоединены к домену. Пользователи могут использовать свои удостоверения на основе домена с помощью артефакта присоединения к домену для подключения к компьютерам.
 
-- [Эталонная архитектура для DevTest Labs](https://docs.microsoft.com/azure/devtest-labs/devtest-lab-reference-architecture#architecture)
+- [Эталонная архитектура для DevTest Labs](./devtest-lab-reference-architecture.md#architecture)
 
 - [Общие сведения об использовании единого входа в Azure AD](../active-directory/manage-apps/what-is-single-sign-on.md)
 
@@ -451,7 +451,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 **Руководство**. Использование управления доступом на основе ролей Azure (Azure RBAC) для управления доступом к лабораториям в Azure DevTest Labs.
 
-- [Настройка Azure RBAC](../role-based-access-control/role-assignments-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/role-assignments-portal.md)
 
 - [Общие сведения о ролях в DevTest Labs](devtest-lab-add-devtest-user.md)
 
@@ -463,7 +463,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в экземплярах DevTest Labs и других важных или связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 - [Создание оповещений для событий журнала действий DevTest Labs](create-alerts.md)
 
@@ -481,7 +481,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Как создавать запросы с помощью Azure Graph](../governance/resource-graph/first-query-portal.md)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?preserve-view=true&view=azps-4.8.0)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 
@@ -595,7 +595,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -625,7 +625,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 **Рекомендации**. в зависимости от типа сценариев можно использовать конфигурации операционной системы или сторонние ресурсы, чтобы ограничить возможность пользователей выполнять сценарии в виртуальных машинах, размещенных в DevTest Labs. Вы также можете использовать адаптивные элементы управления приложениями в центре безопасности Azure, чтобы гарантировать выполнение только авторизованного программного обеспечения и блокирование выполнения всех несанкционированных программ на базовых виртуальных машинах Azure.
 
-- [Управление выполнением скриптов PowerShell в средах Windows](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7&amp;preserve-view=true)
+- [Управление выполнением скриптов PowerShell в средах Windows](/powershell/module/microsoft.powershell.security/set-executionpolicy?preserve-view=true&view=powershell-7)
 
 - [Как использовать адаптивные элементы управления приложениями в центре безопасности Azure](../security-center/security-center-adaptive-application.md)
 
@@ -665,7 +665,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 Вы также можете использовать рекомендации из центра безопасности Azure в качестве защищенного шаблона базовой конфигурации для ресурсов Azure.
 
-- [Просмотр доступных псевдонимов политик Azure](https://docs.microsoft.com/powershell/module/az.resources/get-azpolicyalias?view=azps-4.8.0&amp;preserve-view=true)
+- [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias?preserve-view=true&view=azps-4.8.0)
 
 - [Руководство по Создание политик и управление ими для обеспечения соответствия требованиям](../governance/policy/tutorials/create-and-manage.md)
 
@@ -721,7 +721,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Обзор службы State Configuration службы автоматизации Azure](../automation/automation-dsc-overview.md)
 
-- [Пример сценария для отправки VHD в Azure и создания виртуальной машины](/azure/virtual-machines/scripts/virtual-machines-windows-powershell-upload-generalized-script)
+- [Пример сценария для отправки VHD в Azure и создания виртуальной машины](/previous-versions/azure/virtual-machines/scripts/virtual-machines-windows-powershell-upload-generalized-script)
 
 - [Создание фабрики изображений в DevTest Labs](image-factory-create.md)
 
@@ -735,7 +735,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Учебник по Azure Repos Git](/azure/devops/repos/git/gitworkflow)
 
-- [О разрешениях и группах](https://docs.microsoft.com/azure/devops/organizations/security/about-permissions?view=azure-devops&amp;tabs=preview-page&amp;preserve-view=true)
+- [О разрешениях и группах](/azure/devops/organizations/security/about-permissions?preserve-view=true&tabs=preview-page&view=azure-devops)
 
 - [Интеграция между Azure DevTest Labs и рабочим процессом DevOps Azure](devtest-lab-dev-ops.md)
 
@@ -749,7 +749,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/rbac-and-directory-admin-roles.md)
 
-- [Настройка Azure RBAC](../role-based-access-control/quickstart-assign-role-user-portal.md)
+- [Как настроить RBAC в Azure](../role-based-access-control/quickstart-assign-role-user-portal.md)
 
 - [Настройка коллекции общих образов для DevTest Labs](configure-shared-image-gallery.md)
 
@@ -765,7 +765,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Использование псевдонимов](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Использование псевдонимов](../governance/policy/concepts/definition-structure.md#aliases)
 
 **Ответственность**: Customer
 
@@ -853,7 +853,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Как настроить антивредоносное по Майкрософт для Azure](../security/fundamentals/antimalware.md) 
 
-- [Защита от угроз с помощью Центра безопасности Azure](/azure/security-center/threat-protection)
+- [Защита от угроз с помощью Центра безопасности Azure](../security-center/azure-defender.md)
 
 **Ответственность**: Customer
 
@@ -869,7 +869,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Сведения о антивредоносном по Майкрософт для Azure](../security/fundamentals/antimalware.md) 
 
-- [Сведения об обнаружении угроз для служб данных в центре безопасности Azure](/azure/security-center/security-center-alerts-data-services)
+- [Сведения об обнаружении угроз для служб данных в центре безопасности Azure](../security-center/azure-defender.md)
 
 **Ответственность**: Customer
 
@@ -913,7 +913,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Общие сведения о резервном копировании виртуальных машин Azure](../backup/backup-azure-vms-introduction.md)
 
-- [Как создавать резервные копии ключей Key Vault в Azure](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Как создавать резервные копии ключей Key Vault в Azure](/powershell/module/az.keyvault/backup-azkeyvaultkey?preserve-view=true&view=azps-4.8.0)
 
 **Ответственность**: Customer
 
@@ -929,7 +929,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Как восстановить файлы из резервной копии виртуальной машины Azure](../backup/backup-azure-restore-files-from-vm.md)
 
-- [Как восстановить резервную копию ключей хранилища ключей в Azure](https://docs.microsoft.com/powershell/module/az.keyvault/restore-azkeyvaultkey?view=azps-4.8.0&amp;preserve-view=true)
+- [Как восстановить резервную копию ключей хранилища ключей в Azure](/powershell/module/az.keyvault/restore-azkeyvaultkey?preserve-view=true&view=azps-4.8.0)
 
 - [Как создать резервную копию и восстановить зашифрованную виртуальную машину](../backup/backup-azure-vms-encryption.md)
 
@@ -975,7 +975,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 - [Оповещения безопасности в Центре безопасности Azure](../security-center/security-center-alerts-overview.md) 
 
-- [использование тегов для упорядочения ресурсов в Azure](/azure/azure-resource-manager/resource-group-using-tags)
+- [использование тегов для упорядочения ресурсов в Azure](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -995,7 +995,7 @@ DevTest Labs не имеет концепции паролей по умолча
 
 **Руководство**. Корпорация Майкрософт будет использовать информацию об инциденте безопасности для связи с вами, если центр Microsoft Security Response Center (MSRC) обнаружит, что к вашим данным был получен незаконный или несанкционированный доступ. Проверьте инциденты после факта обращения, чтобы убедиться в том, что проблемы устранены. 
 
-- [Настройка контакта по безопасности в Центре безопасности Azure](../security-center/security-center-provide-security-contact-details.md)
+- [Как задать контакт безопасности Центра безопасности Azure](../security-center/security-center-provide-security-contact-details.md)
 
 **Ответственность**: Customer
 
@@ -1041,5 +1041,5 @@ DevTest Labs не имеет концепции паролей по умолча
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

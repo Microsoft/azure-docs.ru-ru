@@ -10,11 +10,11 @@ ms.reviewer: mikeray
 ms.date: 02/11/2021
 ms.topic: how-to
 ms.openlocfilehash: b1a56c8acf1789690c01f1c16b7c37a237720e39
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100418241"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564880"
 ---
 # <a name="limitations-of-azure-arc-enabled-postgresql-hyperscale"></a>Ограничения PostgreSQL с поддержкой ARC в Azure
 
@@ -47,11 +47,11 @@ ms.locfileid: "100418241"
 
 | Вопрос                      | Платформа Azure как услуга (PaaS) | Гибридные службы ARC в Azure |
 |:----------------------------------|:------------------------------------:|:---------------------------:|
-| Кто предоставляет инфраструктуру?  | Microsoft                          | Клиент                  |
+| Кто предоставляет инфраструктуру?  | Microsoft                          | Customer                  |
 | Кто предоставляет программное обеспечение? *       | Microsoft                          | Microsoft                 |
-| Кто выполняет операции? | Microsoft                          | Клиент                  |
+| Кто выполняет операции? | Microsoft                          | Customer                  |
 | Предоставляет ли корпорация Майкрософт соглашения об уровне обслуживания?      | Да                                | Нет                        |
-| Кто оплачивает соглашения об уровне обслуживания? | Microsoft                          | Клиент                  |
+| Кто оплачивает соглашения об уровне обслуживания? | Microsoft                          | Customer                  |
 
 \* Службы Azure
 

@@ -11,12 +11,12 @@ ms.topic: reference
 ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: b69492dc41786a677043df5e77c9d12aa26893f6
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 929463e346311d58da5ac75b28c774bcfe258f08
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102119779"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557536"
 ---
 # <a name="about-claim-resolvers-in-azure-active-directory-b2c-custom-policies"></a>Арбитры утверждений в пользовательских политиках Azure Active Directory B2C
 
@@ -66,18 +66,18 @@ ms.locfileid: "102119779"
 
 | Утверждение | Описание | Пример |
 | ----- | ----------- | --------|
-| {OIDC:AuthenticationContextReferences} |Параметр `acr_values` строки запроса. | Н/Д |
+| {OIDC:AuthenticationContextReferences} |Параметр `acr_values` строки запроса. | Недоступно |
 | {OIDC:ClientId} |Параметр `client_id` строки запроса. | 00000000-0000-0000-0000-000000000000 |
 | {OIDC:DomainHint} |Параметр `domain_hint` строки запроса. | facebook.com |
 | {OIDC:LoginHint} |  Параметр `login_hint` строки запроса. | someone@contoso.com |
-| {OIDC:MaxAge} | `max_age`. | Н/Д |
+| {OIDC:MaxAge} | `max_age`. | Недоступно |
 | {OIDC:Nonce} |Параметр `Nonce` строки запроса. | defaultNonce |
-| {OIDC: пароль}| Пароль [владельца ресурса учетные данные пользователя потока данных](ropc-custom.md) .| password1| 
+| {OIDC: пароль}| Пароль [владельца ресурса учетные данные пользователя потока данных](add-ropc-policy.md) .| password1| 
 | {OIDC:Prompt} | Параметр `prompt` строки запроса. | login |
 | {OIDC: RedirectUri} |Параметр `redirect_uri` строки запроса. | https://jwt.ms |
-| {OIDC:Resource} |Параметр `resource` строки запроса. | Н/Д |
+| {OIDC:Resource} |Параметр `resource` строки запроса. | Недоступно |
 | {OIDC: Scope} |Параметр `scope` строки запроса. | OpenId |
-| {OIDC: username}| Имя пользователя [потока учетных данных для пароля владельца ресурса](ropc-custom.md) .| emily@contoso.com| 
+| {OIDC: username}| Имя пользователя [потока учетных данных для пароля владельца ресурса](add-ropc-policy.md) .| emily@contoso.com| 
 
 ### <a name="context"></a>Контекст
 
@@ -107,14 +107,14 @@ ms.locfileid: "102119779"
 | {OAUTH-KV:campaignId} | Параметр строки запроса. | Гавайи |
 | {OAUTH-KV:app_session} | Параметр строки запроса. | A3C5R |
 | {OAUTH-KV:loyalty_number} | Параметр строки запроса. | 1 234 |
-| {OAUTH-KV:any custom query string} | Параметр строки запроса. | Н/Д |
+| {OAUTH-KV:any custom query string} | Параметр строки запроса. | Недоступно |
 
 ### <a name="oauth2"></a>OAuth2
 
 | Утверждение | Описание | Пример |
 | ----- | ----------------------- | --------|
-| {oauth2:access_token} | Маркер доступа. | Н/Д |
-| {OAuth2: refresh_token} | Маркер обновления. | Н/Д |
+| {oauth2:access_token} | Маркер доступа. | Недоступно |
+| {OAuth2: refresh_token} | Маркер обновления. | Недоступно |
 
 
 ### <a name="saml"></a>SAML
@@ -124,8 +124,8 @@ ms.locfileid: "102119779"
 | {SAML: Ауснконтекстклассреференцес} | `AuthnContextClassRef`Значение элемента из запроса SAML. | urn: Oasis: Names: TC: SAML: 2.0: AC: Classes: Пассвордпротектедтранспорт |
 | {SAML: Намеидполициформат} | `Format`Атрибут из `NameIDPolicy` элемента запроса SAML. | urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress |
 | {SAML: Issuer} |  `Issuer`Значение элемента SAML для запроса SAML.| `https://contoso.com` |
-| {SAML: Алловкреате} | `AllowCreate`Значение атрибута из `NameIDPolicy` элемента запроса SAML. | Верно |
-| {SAML: Форцеаусн} | `ForceAuthN`Значение атрибута из `AuthnRequest` элемента запроса SAML. | Верно |
+| {SAML: Алловкреате} | `AllowCreate`Значение атрибута из `NameIDPolicy` элемента запроса SAML. | True |
+| {SAML: Форцеаусн} | `ForceAuthN`Значение атрибута из `AuthnRequest` элемента запроса SAML. | True |
 | {SAML: ProviderName} | `ProviderName`Значение атрибута из `AuthnRequest` элемента запроса SAML.| Contoso.com |
 | {SAML: RelayState} | Параметр `RelayState` строки запроса.| 
 | {SAML: subject} | `Subject`Из элемента NameId запроса SAML AuthN.| 

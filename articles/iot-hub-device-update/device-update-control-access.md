@@ -6,12 +6,12 @@ ms.author: vimeht
 ms.date: 2/11/2021
 ms.topic: conceptual
 ms.service: iot-hub-device-update
-ms.openlocfilehash: 07310a5b6f275d4a35a3649c22aeea68045dde8b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ca55b1df347b47a6eb82557658d59a3de666b703
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101662839"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558403"
 ---
 # <a name="azure-role-based-access-control-rbac-and-device-update"></a>Управление доступом на основе ролей (RBAC) и обновление устройства в Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "101662839"
 
 ### <a name="create-client-azure-ad-app"></a>Создание Azure AD App клиента
 
-Чтобы интегрировать приложение или службу с Azure AD, [сначала зарегистрируйте](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) приложение в Azure AD. Установка клиентского приложения зависит от используемого потока авторизации.  Ниже приведены инструкции по использованию API-интерфейсов для обновления устройств.
+Чтобы интегрировать приложение или службу с Azure AD, [сначала зарегистрируйте](../active-directory/develop/quickstart-register-app.md) приложение в Azure AD. Установка клиентского приложения зависит от используемого потока авторизации.  Ниже приведены инструкции по использованию API-интерфейсов для обновления устройств.
 
 * Задать проверку подлинности клиента: "URI перенаправления для собственного или веб-клиента".
 * Установка разрешений API — обновление устройства для центра Интернета вещей предоставляет следующие сведения:

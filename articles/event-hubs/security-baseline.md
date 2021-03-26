@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 1e1a8cb24b47277b38bd2d64b733a6f28ee8acff
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 57862a450d313f5d8850b14047ecc3d25d6ba5c1
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101742517"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563690"
 ---
 # <a name="azure-security-baseline-for-event-hubs"></a>Базовый уровень безопасности Azure для концентраторов событий
 
@@ -44,7 +44,7 @@ ms.locfileid: "101742517"
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. EventHub**:
 
@@ -68,7 +68,7 @@ ms.locfileid: "101742517"
 
 - [Настройка защиты от атак DDoS](../ddos-protection/manage-ddos-protection.md)
 
-- [Дополнительные сведения о центре безопасности Azure, интегрированном с системой аналитики угроз](/azure/security-center/security-center-alerts-service-layer)
+- [Дополнительные сведения о центре безопасности Azure, интегрированном с системой аналитики угроз](../security-center/azure-defender.md)
 
 **Ответственность**: Customer
 
@@ -112,9 +112,9 @@ ms.locfileid: "101742517"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Встроенная политика Azure для пространства имен концентраторов событий](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#event-hub)
+- [Встроенная политика Azure для пространства имен концентраторов событий](../governance/policy/samples/built-in-policies.md#event-hub)
 
-- [Примеры политик Azure для работы в сети](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#network)
+- [Примеры политик Azure для работы в сети](../governance/policy/samples/built-in-policies.md#network)
 
 - [Создание схемы Azure](../governance/blueprints/create-blueprint-portal.md)
 
@@ -126,7 +126,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. Использование тегов для виртуальных сетей и других ресурсов, относящихся к сетевой безопасности и потокам трафика, связанным с концентраторами событий.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -136,9 +136,9 @@ ms.locfileid: "101742517"
 
 **Руководство**. Использование журнала действий Azure для мониторинга конфигураций сетевых ресурсов и обнаружения изменений сетевых ресурсов, связанных с концентраторами событий Azure. Создавайте оповещения в Azure Monitor, которые будут запускаться при изменении критических сетевых ресурсов.
 
-- [Как просматривать и извлекать события журнала действий Azure](/azure/azure-monitor/platform/activity-log-view)
+- [Как просматривать и извлекать события журнала действий Azure](../azure-monitor/essentials/activity-log.md#view-the-activity-log)
 
-- [Как создать оповещения в службе Azure Monitor](/azure/azure-monitor/platform/alerts-activity-log)
+- [Как создать оповещения в службе Azure Monitor](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -154,7 +154,7 @@ ms.locfileid: "101742517"
 
 - [Настройка параметров диагностики для концентраторов событий Azure](event-hubs-diagnostic-logs.md)
 
-- [Общие сведения о журнале действий Azure](/azure/azure-monitor/platform/platform-logs-overview)
+- [Общие сведения о журнале действий Azure](../azure-monitor/essentials/platform-logs-overview.md)
 
 **Ответственность**: Customer
 
@@ -168,11 +168,11 @@ ms.locfileid: "101742517"
 
 - [Включение параметров диагностики для концентраторов событий Azure](event-hubs-diagnostic-logs.md)
 
-- [Как включить параметры диагностики для журнала действий Azure](/azure/azure-monitor/platform/diagnostic-settings-legacy)
+- [Как включить параметры диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
-**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/governance/policy/samples/azure-security-benchmark.md) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/security-center-recommendations.md). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/home/mbaldwin/docs/asb/azure-docs-pr/articles/security-center/azure-defender.md) для связанных служб.
+**Мониторинг в центре безопасности Azure. производительность** [системы безопасности Azure](/azure/governance/policy/samples/azure-security-benchmark) — это инициатива политики по умолчанию для центра безопасности, которая является основой для [рекомендаций центра безопасности](/azure/security-center/security-center-recommendations). Определения политик Azure, связанные с этим элементом управления, автоматически включаются центром безопасности. Для оповещений, связанных с этим элементом управления, может потребоваться план [защитника Azure](/azure/security-center/azure-defender) для связанных служб.
 
 **Встроенные определения политики Azure — Microsoft. EventHub**:
 
@@ -182,7 +182,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. в рамках Azure Monitor задайте срок хранения log Analytics рабочей области согласно нормативным требованиям Организации, чтобы записывать и просматривать инциденты, связанные с концентратором событий.
 
-- [Настройка параметров хранения журнала для рабочих областей Log Analytics](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period)
+- [Настройка параметров хранения журнала для рабочих областей Log Analytics](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period)
 
 **Ответственность**: Customer
 
@@ -192,9 +192,9 @@ ms.locfileid: "101742517"
 
 **Руководство**. анализ и мониторинг журналов для аномального поведения и регулярная проверка результатов, относящихся к концентраторам событий. Используйте аналитику журналов Azure Monitor для просмотра журналов и выполнения запросов к данным журнала. Кроме того, вы можете включить и подключить данные в метку Azure, а также в решение для управления событиями и системами сторонних производителей.
 
-- [Дополнительные сведения о рабочей области Log Analytics](/azure/azure-monitor/log-query/get-started-portal)
+- [Дополнительные сведения о рабочей области Log Analytics](../azure-monitor/logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -208,11 +208,11 @@ ms.locfileid: "101742517"
 
 Кроме того, вы можете включить и подключить данные в Azure Sentinel. 
 
-- [Общие сведения о журнале действий Azure](/azure/azure-monitor/platform/platform-logs-overview)
+- [Общие сведения о журнале действий Azure](../azure-monitor/essentials/platform-logs-overview.md)
 
 - [Настройка параметров диагностики для концентраторов событий Azure](event-hubs-diagnostic-logs.md)
 
-- [Как оповещать данные журнала Log Analytics рабочей области](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics рабочей области](../azure-monitor/alerts/tutorial-response.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -310,9 +310,9 @@ ms.locfileid: "101742517"
 
 **Руководство**. Использование Azure Active Directory (Azure AD) Управление привилегированными пользователями для создания журналов и оповещений при возникновении подозрительных или ненадежных действий в среде. Используйте обнаружение рисков Azure AD для просмотра предупреждений и отчетов о поведении опасного пользователя. Для дополнительного ведения журнала Отправьте оповещения об обнаружении рисков центра безопасности Azure в Azure Monitor и настройте пользовательские оповещения и уведомления с помощью групп действий.
 
-- [Общие сведения об обнаружении рисков в Azure AD](/azure/active-directory/reports-monitoring/concept-risk-events)
+- [Общие сведения об обнаружении рисков в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
-- [Настройка групп действий для настраиваемых оповещений и уведомлений](/azure/azure-monitor/platform/action-groups)
+- [Настройка групп действий для настраиваемых оповещений и уведомлений](../azure-monitor/alerts/action-groups.md)
 
 **Ответственность**: Customer
 
@@ -346,7 +346,7 @@ ms.locfileid: "101742517"
 
 Кроме того, регулярно поворачивайте подписанные URL концентраторов событий.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -362,7 +362,7 @@ ms.locfileid: "101742517"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить нужные оповещения журнала в Log Analytics.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 - [Авторизация доступа к ресурсам концентраторов событий с помощью Azure AD](authorize-access-azure-active-directory.md)
 
@@ -374,7 +374,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. Использование функций защиты идентификации и обнаружения рисков в Azure Active Directory (Azure AD) для настройки автоматических ответов на обнаруженные подозрительные действия, связанные с ресурсами, включенными в концентраторы событий. Вы должны включить автоматические ответы через метку Azure, чтобы реализовать ответы на безопасность вашей организации.
 
-- [Просмотр рискованных входов в Azure AD](/azure/active-directory/reports-monitoring/concept-risky-sign-ins)
+- [Просмотр рискованных входов в Azure AD](../active-directory/identity-protection/overview-identity-protection.md)
 
 - [Как настроить и включить политики рисков с помощью защиты идентификации](../active-directory/identity-protection/howto-identity-protection-configure-risk-policies.md)
 
@@ -388,7 +388,7 @@ ms.locfileid: "101742517"
 
 **Руководство**: Сейчас недоступно; Защищенное хранилище еще не поддерживается для концентраторов событий.
 
-- [Список поддерживаемых служб защищенного хранилища](https://docs.microsoft.com/azure/security/fundamentals/customer-lockbox-overview#supported-services-and-scenarios-in-general-availability)
+- [Список поддерживаемых служб защищенного хранилища](../security/fundamentals/customer-lockbox-overview.md#supported-services-and-scenarios-in-general-availability)
 
 **Ответственность**: Customer
 
@@ -402,7 +402,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. Используйте теги в ресурсах, связанных с концентраторами событий, для помощи в отслеживании ресурсов Azure, в которых хранятся или обрабатываются конфиденциальные данные.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -414,13 +414,13 @@ ms.locfileid: "101742517"
 
 Вы также можете защитить пространство имен концентраторов событий Azure с помощью брандмауэров. Концентраторы событий Azure поддерживают управление доступом на основе IP-адресов для поддержки входящих брандмауэров. Правила брандмауэра можно задать с помощью портал Azure, Azure Resource Manager шаблонов или с помощью Azure CLI или Azure PowerShell.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
 - [Настройка правил брандмауэра IP-адресов для пространств имен концентраторов событий Azure](event-hubs-ip-filtering.md)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 - [Создание виртуальной сети](../virtual-network/quick-create-portal.md)
 
@@ -440,7 +440,7 @@ ms.locfileid: "101742517"
 
 - [Интеграция Центров событий Azure с Приватным каналом Azure](private-link-service.md)
 
-- [Общие сведения о группах безопасности сети и тегах служб](/azure/virtual-network/security-overview)
+- [Общие сведения о группах безопасности сети и тегах служб](../virtual-network/network-security-groups-overview.md)
 
 - [Общие сведения о защите данных клиентов в Azure](../security/fundamentals/protection-customer-data.md)
 
@@ -484,7 +484,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются в рабочих экземплярах концентраторов событий Azure и других критических или связанных ресурсах.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -512,7 +512,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. Применяйте к ресурсам Azure теги, чтобы логически классифицировать их на основе метаданных.
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -522,11 +522,11 @@ ms.locfileid: "101742517"
 
 **Руководство**. Использование тегов, групп управления и отдельных подписок (при необходимости) для Организации и мониторинга пространств имен и связанных ресурсов концентраторов событий Azure. Регулярно сверяйте ресурсы, чтобы своевременно удалять неавторизованные ресурсы из подписки.
 
-- [Создание дополнительных подписок Azure](/azure/billing/billing-create-subscription)
+- [Создание дополнительных подписок Azure](../cost-management-billing/manage/create-subscription.md)
 
-- [Создание групп управления](/azure/governance/management-groups/create)
+- [Создание групп управления](../governance/management-groups/create-management-group-portal.md)
 
-- [Создание и использование тегов](/azure/azure-resource-manager/resource-group-using-tags)
+- [Создание и использование тегов](../azure-resource-manager/management/tag-resources.md)
 
 **Ответственность**: Customer
 
@@ -562,7 +562,7 @@ ms.locfileid: "101742517"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md)
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -592,7 +592,7 @@ ms.locfileid: "101742517"
 
 Дополнительные сведения можно найти по ссылкам, на которые имеются ссылки.
 
-- [Встроенная политика Azure для пространства имен концентраторов событий](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#event-hub)
+- [Встроенная политика Azure для пространства имен концентраторов событий](../governance/policy/samples/built-in-policies.md#event-hub)
 
 - [Просмотр доступных псевдонимов политик Azure](/powershell/module/az.resources/get-azpolicyalias)
 
@@ -639,15 +639,15 @@ ms.locfileid: "101742517"
 
 **Руководство**. для виртуальных машин Azure или веб-приложений, работающих в службе приложений Azure, которые используют для доступа к концентраторам событий, используйте управляемое удостоверение службы в сочетании с Azure Key Vault, чтобы упростить и защитить Управление подписанными URL-сертификатами для развертываний концентраторов событий Azure. Убедитесь, что Key Vault настроено с обратимым удалением.
 
-- [Проверка подлинности управляемого удостоверения с помощью Azure Active Directory (Azure AD) для доступа к ресурсам концентраторов событий](https://docs.microsoft.com/azure/event-hubs/authenticate-managed-identity?tabs=latest)
+- [Проверка подлинности управляемого удостоверения с помощью Azure Active Directory (Azure AD) для доступа к ресурсам концентраторов событий](./authenticate-managed-identity.md?tabs=latest)
 
 - [Настройка ключей, управляемых клиентом, для концентраторов событий](configure-customer-managed-key.md)
 
 - [Интеграция с управляемыми удостоверениями Azure](../azure-app-configuration/howto-integrate-azure-managed-service-identity.md)
 
-- [Создание Key Vault](/azure/key-vault/quick-create-portal)
+- [Создание Key Vault](../key-vault/secrets/quick-create-portal.md)
 
-- [Как обеспечить проверку подлинности Key Vault с помощью управляемого удостоверения](/azure/key-vault/managed-identity)
+- [Как обеспечить проверку подлинности Key Vault с помощью управляемого удостоверения](../key-vault/general/assign-access-policy-portal.md)
 
 **Ответственность**: Customer
 
@@ -659,7 +659,7 @@ ms.locfileid: "101742517"
 
 Используйте управляемые удостоверения для предоставления служб Azure с автоматически управляемым удостоверением в Azure Active Directory (Azure AD). Управляемые удостоверения позволяют проходить проверку подлинности в любой службе, поддерживающей проверку подлинности Azure AD, включая Azure Key Vault без каких бы то ни было учетных данных в коде.
 
-- [Проверка подлинности управляемого удостоверения с помощью Azure AD для доступа к ресурсам концентраторов событий](https://docs.microsoft.com/azure/event-hubs/authenticate-managed-identity?tabs=latest)
+- [Проверка подлинности управляемого удостоверения с помощью Azure AD для доступа к ресурсам концентраторов событий](./authenticate-managed-identity.md?tabs=latest)
 
 - [Настройка ключей, управляемых клиентом, для концентраторов событий](configure-customer-managed-key.md)
 
@@ -703,7 +703,7 @@ ms.locfileid: "101742517"
 
 **Руководство**. Настройка географического аварийного восстановления для концентраторов событий Azure. При простое целых регионов Azure или центров обработки данных (если не используются зоны доступности) крайне важно, чтобы обработка данных продолжала работать в другом регионе или центре обработки данных. Таким образом географическое аварийное восстановление и георепликация являются важными функциями для любого предприятия. Центры событий Azure поддерживают географическое аварийное восстановления и георепликацию на уровне пространства имен. 
 
-- [Общие сведения о географического аварийном восстановлении для концентраторов событий Azure](https://docs.microsoft.com/azure/event-hubs/event-hubs-geo-dr#availability-zones)
+- [Общие сведения о географического аварийном восстановлении для концентраторов событий Azure](./event-hubs-geo-dr.md#availability-zones)
 
 **Ответственность**: Customer
 
@@ -739,11 +739,11 @@ ms.locfileid: "101742517"
 
 Настройте обратимое удаление для учетной записи хранения Azure, которая используется для записи данных концентраторов событий. Обратите внимание, что эта функция еще не поддерживается для Azure Data Lake Storage Gen 2.
 
-- [Включение обратимого удаления в Key Vault](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
+- [Включение обратимого удаления в Key Vault](../storage/blobs/soft-delete-blob-overview.md?tabs=azure-portal)
 
 - [Настройка хранилища ключей с ключами](configure-customer-managed-key.md)
 
-- [Soft delete for Azure Storage blobs](https://docs.microsoft.com//azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal) (Обратимое удаление больших двоичных объектов службы хранилища Azure)
+- [Soft delete for Azure Storage blobs](//azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal) (Обратимое удаление больших двоичных объектов службы хранилища Azure)
 
 **Ответственность**: Customer
 
@@ -831,5 +831,5 @@ ms.locfileid: "101742517"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

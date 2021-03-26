@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: ce8c5107ebb86106537ffce21f852d8b67ecbd78
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b0045eacea7fdc13abdad35b5567eba3e994dcf9
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101703479"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558879"
 ---
 # <a name="azure-security-baseline-for-cloud-shell"></a>Базовый план безопасности Azure для Cloud Shell
 
@@ -322,5 +322,5 @@ Azure Cloud Shell позволяет клиентам устанавливать
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

@@ -11,12 +11,12 @@ author: danimir
 ms.author: danil
 ms.reviewer: wiassaf, sstein
 ms.date: 03/03/2021
-ms.openlocfilehash: d60810c291984e0f57df1968f69678de8179273c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 1362d8c1f15b64b9d76b28fd354cdae8919504b0
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102042527"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558284"
 ---
 # <a name="enable-automatic-tuning-in-the-azure-portal-to-monitor-queries-and-improve-workload-performance"></a>Включение автоматической настройки в портал Azure для отслеживания запросов и повышения производительности рабочей нагрузки
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -120,7 +120,7 @@ ALTER DATABASE current SET AUTOMATIC_TUNING (FORCE_LAST_GOOD_PLAN = ON, CREATE_I
 - Хранилище запросов остановлено, так как оно использовало выделенное дисковое пространство.
 
 Чтобы исправить эту ошибку, можно рассмотреть следующие шаги.
-- Очистите хранилище запросов или измените срок хранения данных на Auto с помощью T-SQL. См. раздел [Настройка рекомендуемой политики хранения и отслеживания для хранилища запросов](/azure/azure-sql/database/query-performance-insight-use#recommended-retention-and-capture-policy).
+- Очистите хранилище запросов или измените срок хранения данных на Auto с помощью T-SQL. См. раздел [Настройка рекомендуемой политики хранения и отслеживания для хранилища запросов](./query-performance-insight-use.md#recommended-retention-and-capture-policy).
 - Используйте SQL Server Management Studio (SSMS) и выполните следующие действия.
   - Подключение к базе данных SQL Azure
   - Щелкните правой кнопкой мыши базу данных

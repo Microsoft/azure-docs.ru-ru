@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 10/29/2020
-ms.openlocfilehash: d59f08fc061bace55a7cd3d774380046055828ae
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: b88c7aabe135b8e64869980b806852d92191440b
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102618616"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568687"
 ---
 # <a name="quickstart-import-a-bacpac-file-to-a-database-in-azure-sql-database-or-azure-sql-managed-instance"></a>Краткое руководство. Импорт BACPAC-файла в базу данных в службе "База данных SQL Azure" или "Управляемый экземпляр SQL Azure"
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -147,7 +147,7 @@ az sql db import --resource-group "<resourceGroup>" --server "<server>" --name "
 
 ## <a name="cancel-the-import-request"></a>Отмена запроса на импорт
 
-Используйте API из раздела [Операции с базой данных — отмена](https://docs.microsoft.com/rest/api/sql/databaseoperations/cancel) или команду [Stop-AzSqlDatabaseActivity](https://docs.microsoft.com/powershell/module/az.sql/Stop-AzSqlDatabaseActivity) в PowerShell. Ниже приведен пример команды PowerShell.
+Используйте API из раздела [Операции с базой данных — отмена](/rest/api/sql/databaseoperations/cancel) или команду [Stop-AzSqlDatabaseActivity](/powershell/module/az.sql/Stop-AzSqlDatabaseActivity) в PowerShell. Ниже приведен пример команды PowerShell.
 
 ```cmd
 Stop-AzSqlDatabaseActivity -ResourceGroupName $ResourceGroupName -ServerName $ServerName -DatabaseName $DatabaseName -OperationId $Operation.OperationId

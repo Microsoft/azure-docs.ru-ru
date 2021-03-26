@@ -7,12 +7,12 @@ ms.topic: article
 author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
-ms.openlocfilehash: 3b109048be4a94990c26e31aa5bc2ad36fdd0211
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1cdd3dba8203ce9e8daeaa963f1722389d89d19d
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102583976"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563826"
 ---
 # <a name="prerequisites-to-programmatically-access-analytics-data"></a>Необходимые условия для программного доступа к данным аналитики
 
@@ -24,7 +24,7 @@ ms.locfileid: "102583976"
 
 ## <a name="create-azure-active-directory-application"></a>Создание приложения Azure Active Directory
 
-Обычные учетные данные пользователя нельзя использовать для программного доступа к данным аналитики коммерческих рынков. Для доступа к API-интерфейсам аналитики необходимо создать приложение Azure Active Directory (Azure AD) и секретный код. Сведения о создании приложения и секрета Azure AD см. в статье [Краткое руководство. Регистрация приложения на платформе Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Обычные учетные данные пользователя нельзя использовать для программного доступа к данным аналитики коммерческих рынков. Для доступа к API-интерфейсам аналитики необходимо создать приложение Azure Active Directory (Azure AD) и секретный код. Сведения о создании приложения и секрета Azure AD см. в статье [Краткое руководство. Регистрация приложения на платформе Microsoft Identity](../active-directory/develop/quickstart-register-app.md).
 
 ## <a name="associate-the-azure-ad-application-to-the-partner-center-tenant"></a>Связывание приложения Azure AD с клиентом центра партнеров
 
@@ -41,7 +41,7 @@ ms.locfileid: "102583976"
 
 ## <a name="generate-an-azure-ad-token"></a>Создание маркера Azure AD
 
-Необходимо создать маркер Azure AD с помощью идентификатора приложения (клиента). Этот идентификатор помогает однозначно идентифицировать клиентское приложение на платформе Microsoft Identity и секрет клиента из предыдущего шага. Действия по созданию маркера Azure AD см. в статье [вызовы служб с помощью учетных данных клиента (общий секрет или сертификат)](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-oauth2-client-creds-grant-flow).
+Необходимо создать маркер Azure AD с помощью идентификатора приложения (клиента). Этот идентификатор помогает однозначно идентифицировать клиентское приложение на платформе Microsoft Identity и секрет клиента из предыдущего шага. Действия по созданию маркера Azure AD см. в статье [вызовы служб с помощью учетных данных клиента (общий секрет или сертификат)](../active-directory/azuread-dev/v1-oauth2-client-creds-grant-flow.md).
 
 > [!NOTE]
 > Токен действителен в течение одного часа.

@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: keferna
 ms.author: keferna
 ms.date: 03/01/2021
-ms.openlocfilehash: c1d4c9be1f76e62be3c17d4dec22479db003b77a
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 31c19f62f0328fca05562eaa2f19b7a79c0f3e15
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102608263"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562704"
 ---
 # <a name="pre-certification-checklist-for-iot-edge-modules"></a>Контрольный список предварительной сертификации для модулей IoT Edge
 
@@ -55,7 +55,7 @@ ms.locfileid: "102608263"
 #### <a name="steps"></a>Шаги
 
 1. Убедитесь, что доступ к созданным устройствам и виртуальным машинам можно получить с помощью указания.
-1. Скачайте [среду выполнения IOT Edge](https://docs.microsoft.com/azure/iot-edge/how-to-install-iot-edge) на устройство.
+1. Скачайте [среду выполнения IOT Edge](../iot-edge/how-to-install-iot-edge.md) на устройство.
 1. Обновите строку подключения, скопированную на шаге 5, в файл config. YAML.
 1. Перезапустите модуль ребра с помощью `sudo systemctl restart iotedge` .
 1. Проверьте, развернут ли модуль на устройстве с `sudo iotedge list` ; он должен находиться в состоянии выполняется.
@@ -76,8 +76,8 @@ ms.locfileid: "102608263"
 - Имеется Условия использования
 - Добавление поддерживаемой ссылки на устройство IoT Edge из [каталога устройств Azure IOT](https://devicecatalog.azure.com/devices?certificationBadgeTypes=IoTEdgeCompatible) 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Развертывание модулей из коммерческого рынка](https://docs.microsoft.com/azure/iot-edge/how-to-deploy-modules-portal#deploy-from-azure-marketplace)
-- [Публикация модуля ребра в центре партнеров](https://docs.microsoft.com/azure/marketplace/partner-center-portal/azure-iot-edge-module-creation)
-- [Развертывание модуля IoT Edge](https://docs.microsoft.com/azure/iot-edge/quickstart-linux)  
+- [Развертывание модулей из коммерческого рынка](../iot-edge/how-to-deploy-modules-portal.md#deploy-from-azure-marketplace)
+- [Публикация модуля ребра в центре партнеров](./partner-center-portal/azure-iot-edge-module-creation.md)
+- [Развертывание модуля IoT Edge](../iot-edge/quickstart-linux.md)

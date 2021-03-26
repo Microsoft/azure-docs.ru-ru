@@ -10,13 +10,13 @@ ms.author: jhirono
 author: jhirono
 ms.date: 03/12/2021
 ms.topic: conceptual
-ms.custom: how-to
-ms.openlocfilehash: a5224aab8db65cf22e952185d07147f6f007e088
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.custom: how-to, contperf-fy21q3
+ms.openlocfilehash: c3f21471e486f88daf8d79b74633c076d27ac8e2
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104956287"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105557587"
 ---
 # <a name="how-to-use-your-workspace-with-a-custom-dns-server"></a>Использование рабочей области с пользовательским DNS-сервером
 

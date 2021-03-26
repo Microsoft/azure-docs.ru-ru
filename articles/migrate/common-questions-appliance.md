@@ -6,12 +6,12 @@ ms.author: vivikram
 ms.manager: abhemraj
 ms.topic: conceptual
 ms.date: 03/22/2021
-ms.openlocfilehash: 74d8018ea4cb2cad5b6726b8abb6bf2f17b8e57c
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 059a1888b529487f2b0d17509370897222a20d83
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104778531"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563027"
 ---
 # <a name="azure-migrate-appliance-common-questions"></a>Устройство для миграции Azure: распространенные вопросы
 
@@ -158,9 +158,9 @@ ms.locfileid: "104778531"
 Вы можете указать учетные данные для проверки подлинности домена/Windows (не домена)/Linux (не домена)/SQL Server в диспетчере конфигурации устройства. [Узнайте больше](add-server-credentials.md) о том, как указать учетные данные и как мы их обрабатываем.
 
 ## <a name="what-type-of-sql-server-connection-properties-are-supported-by-azure-migrate-for-sql-discovery"></a>Какие свойства подключения SQL Server поддерживаются службой "миграция Azure" для обнаружения SQL?
-Служба "Миграция Azure" шифрует обмен данными между экземплярами устройства службы "Миграция Azure" и исходными экземплярами SQL Server (для свойства "Шифровать соединение" установлено значение TRUE). Если соединения зашифрованы с помощью [TrustServerCertificate](https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlconnectionstringbuilder.trustservercertificate) (установлено значение TRUE), то транспортный уровень будет использовать протокол SSL для шифрования канала и не пойдет по цепочке сертификатов для проверки доверия. Для сервера устройства необходимо настроить [доверие корневому центру сертификата](https://docs.microsoft.com/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
+Служба "Миграция Azure" шифрует обмен данными между экземплярами устройства службы "Миграция Azure" и исходными экземплярами SQL Server (для свойства "Шифровать соединение" установлено значение TRUE). Если соединения зашифрованы с помощью [TrustServerCertificate](/dotnet/api/system.data.sqlclient.sqlconnectionstringbuilder.trustservercertificate) (установлено значение TRUE), то транспортный уровень будет использовать протокол SSL для шифрования канала и не пойдет по цепочке сертификатов для проверки доверия. Для сервера устройства необходимо настроить [доверие корневому центру сертификата](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
 
-Если сертификат не был подготовлен на сервере при запуске, SQL Server создает самозаверяющий сертификат, который используется для шифрования пакетов входа. [Подробнее](https://docs.microsoft.com/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
+Если сертификат не был подготовлен на сервере при запуске, SQL Server создает самозаверяющий сертификат, который используется для шифрования пакетов входа. [Подробнее](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
 
 
 ## <a name="next-steps"></a>Дальнейшие шаги

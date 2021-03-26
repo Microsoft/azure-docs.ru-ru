@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 28988af0c1b3b5e4e5ce359abb617a66af816d69
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 90925f30e84ec3c06e715669ebd982c823dfaf5a
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102439822"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568330"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-device-via-azure-powershell"></a>Развертывание виртуальных машин на пограничном устройстве Azure Stack с помощью Azure PowerShell
 
@@ -127,7 +127,7 @@ New-AzureRmStorageAccount -Name <Storage account name> -ResourceGroupName <Resou
 ```
 
 > [!NOTE]
-> С помощью Azure Resource Manager можно создавать только локальные учетные записи хранения, например локально избыточное хранилище ("Стандартный" или "Премиум"). Сведения о создании многоуровневых учетных записей хранения см. в статье [учебник. Перенос данных с помощью учетных записей хранения с помощью Azure Stack ребра Pro с графическим процессором](azure-stack-edge-j-series-deploy-add-storage-accounts.md).
+> С помощью Azure Resource Manager можно создавать только локальные учетные записи хранения, например локально избыточное хранилище ("Стандартный" или "Премиум"). Сведения о создании многоуровневых учетных записей хранения см. в статье [учебник. Перенос данных с помощью учетных записей хранения с помощью Azure Stack ребра Pro с графическим процессором](./azure-stack-edge-gpu-deploy-add-storage-accounts.md).
 
 Вот пример выходных данных:
 
@@ -179,7 +179,7 @@ key2 gd34TcaDzDgsY9JtDNMUgLDOItUU0Qur3CBo6Q...
 
 ## <a name="add-the-blob-uri-to-the-host-file"></a>Добавление URI BLOB-объекта в файл узла
 
-Вы уже добавили URI большого двоичного объекта в файл hosts для клиента, который вы используете для подключения к хранилищу BLOB-объектов Azure, в "шаг 5. изменение файла узла для разрешения имен конечных точек" [развертывания виртуальных машин на Azure Stack пограничном устройстве с помощью Azure PowerShell](azure-stack-edge-j-series-connect-resource-manager.md#step-5-modify-host-file-for-endpoint-name-resolution). Эта запись была использована для добавления URI большого двоичного объекта:
+Вы уже добавили URI большого двоичного объекта в файл hosts для клиента, который вы используете для подключения к хранилищу BLOB-объектов Azure, в "шаг 5. изменение файла узла для разрешения имен конечных точек" [развертывания виртуальных машин на Azure Stack пограничном устройстве с помощью Azure PowerShell](./azure-stack-edge-gpu-connect-resource-manager.md#step-5-modify-host-file-for-endpoint-name-resolution). Эта запись была использована для добавления URI большого двоичного объекта:
 
 \<Azure consistent network services VIP \>\<storage name\>. BLOB. \<appliance name\> .\<dnsdomain\>
 
