@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 05/18/2020
 ms.custom: seo-java-august2019, seo-java-september2019, devx-track-java
 ms.openlocfilehash: ee30af3f07c8b350393822f01833feec6e3b52e2
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93099816"
 ---
 # <a name="quickstart-build-a-java-app-to-manage-azure-cosmos-db-cassandra-api-data-v4-driver"></a>Создание приложения Java для управления данными API Cassandra в Azure Cosmos DB (драйвер версии 4)
@@ -214,7 +214,7 @@ ms.locfileid: "93099816"
 
     Нажмите клавиши CTRL+C, чтобы остановить выполнение программы и закрыть окно консоли.
 
-4. На портале Azure откройте **обозреватель данных** , чтобы запросить, изменить и обработать новые данные. 
+4. На портале Azure откройте **обозреватель данных**, чтобы запросить, изменить и обработать новые данные. 
 
     :::image type="content" source="./media/create-cassandra-java/view-data-explorer-java-app.png" alt-text="Просмотр данных в обозревателе данных — Azure Cosmos DB":::
 

@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/18/2020
 ms.author: jeedes
 ms.openlocfilehash: 8c3d76f24cce860538dc3bd5dcf29b59708bdb5d
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98726281"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-zscaler-two"></a>Руководство по интеграции Azure Active Directory с Zscaler Two

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 11/27/2019
-ms.openlocfilehash: 3e54991f6afd2ace19bf7b70e57bda6f551f7780
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4512c9d9fdb66713ba24fbf30278e5d5dbb2ae23
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98943158"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104863757"
 ---
 # <a name="run-apache-hive-queries-using-the-data-lake-tools-for-visual-studio"></a>Выполнение запросов Apache Hive с использованием средств Data Lake для Visual Studio
 
@@ -49,11 +49,11 @@ ms.locfileid: "98943158"
 
 5. Нажмите кнопку **Выполнить**. Режим выполнения по умолчанию — **Interactive**.
 
-    ![Выполнение интерактивного запроса Hive, Visual Studio](./media/apache-hadoop-use-hive-visual-studio/vs-execute-hive-query.png)
+    :::image type="content" source="./media/apache-hadoop-use-hive-visual-studio/vs-execute-hive-query.png" alt-text="Выполнение интерактивного запроса Hive, Visual Studio" border="true":::
 
 6. Чтобы выполнить тот же запрос в **пакетном** режиме, переключите раскрывающийся список с **интерактивного** на **пакет**. Кнопка выполнения изменится с **EXECUTE** на **Submit**.
 
-    ![Отправка запроса Hive пакетной службы, Visual Studio](./media/apache-hadoop-use-hive-visual-studio/visual-studio-batch-query.png)
+    :::image type="content" source="./media/apache-hadoop-use-hive-visual-studio/visual-studio-batch-query.png" alt-text="Отправка запроса Hive пакетной службы, Visual Studio" border="true":::
 
     Редактор Hive поддерживает технологию IntelliSense. Средства Data Lake для Visual Studio поддерживают загрузку удаленных метаданных при редактировании скрипта Hive. Например, если ввести `SELECT * FROM` , IntelliSense выводит список всех предлагаемых имен таблиц. Если указано имя таблицы, IntelliSense выведет список имен столбцов. Эти инструменты поддерживают почти все инструкции, подзапросы и встроенные определяемые пользователем функции Hive DML. IntelliSense предлагает только метаданные кластеров, выбранных на панели инструментов HDInsight.
 
@@ -61,7 +61,7 @@ ms.locfileid: "98943158"
 
 8. Если выбран параметр дополнительные отправки, настройте **имя задания**, **аргументы**, **дополнительные конфигурации** и **Каталог состояния** в диалоговом окне **Отправка скрипта** . Затем нажмите кнопку **Отправить**.
 
-    ![Диалоговое окно "Отправка скрипта", запрос Hive в HDInsight Hadoop](./media/apache-hadoop-use-hive-visual-studio/vs-tools-submit-jobs-advanced.png)
+    :::image type="content" source="./media/apache-hadoop-use-hive-visual-studio/vs-tools-submit-jobs-advanced.png" alt-text="Диалоговое окно &quot;Отправка скрипта&quot;, запрос Hive в HDInsight Hadoop" border="true":::
 
 ### <a name="create-a-hive-application"></a>Создание приложения Hive
 
@@ -109,7 +109,7 @@ ms.locfileid: "98943158"
 
    Отобразится **сводка по заданию Hive** и информация о его выполнении. Воспользуйтесь ссылкой **Обновить**, чтобы обновить информацию о задании. Обновляйте ее до тех пор, пока **состояние задания** не изменится на **Завершено**.
 
-   ![Завершенные сводки по заданиям Hive, приложение Hive, Visual Studio](./media/apache-hadoop-use-hive-visual-studio/hdinsight-job-summary.png)
+   :::image type="content" source="./media/apache-hadoop-use-hive-visual-studio/hdinsight-job-summary.png" alt-text="Завершенные сводки по заданиям Hive, приложение Hive, Visual Studio" border="true":::
 
 7. Выберите **выходные данные задания** , чтобы просмотреть выходные данные этого задания. Они содержат `[ERROR] 3`. Это значение, возвращенное данным запросом.
 

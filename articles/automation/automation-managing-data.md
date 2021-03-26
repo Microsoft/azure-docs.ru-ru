@@ -5,12 +5,12 @@ services: automation
 ms.subservice: shared-capabilities
 ms.date: 03/10/2021
 ms.topic: conceptual
-ms.openlocfilehash: e41e9af418b08210f5f0f40de9951d03711dc8e7
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: c3d1dfc5d6ea16a128f5f3bc1129f5f50bc9cb61
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102616122"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954679"
 ---
 # <a name="management-of-azure-automation-data"></a>Управление данными службы автоматизации Azure
 
@@ -56,7 +56,7 @@ ms.locfileid: "102616122"
 | Отчеты узла |Отчет узла окончательно удаляется через 90 дней после создания нового отчета для того же узла. |
 | Модули runbook |Модуль Runbook окончательно удаляется через 30 дней после удаления пользователем ресурса или через 30 дней после удаления пользователем учетной записи, содержащей ресурс<sup>1</sup>. |
 
-<sup>1</sup> Модуль Runbook можно восстановить в течение 30-дневного периода, направив обращение в службу поддержки Azure с поддержкой Microsoft Azure. Перейдите на [сайт поддержки Azure](/support/options) и выберите **Отправить запрос в службу поддержки**.
+<sup>1</sup> Модуль Runbook можно восстановить в течение 30-дневного периода, направив обращение в службу поддержки Azure с поддержкой Microsoft Azure. Перейдите на [сайт поддержки Azure](https://azure.microsoft.com/support/options/) и выберите **Отправить запрос в службу поддержки**.
 
 ## <a name="data-backup"></a>Резервное копирование данных
 

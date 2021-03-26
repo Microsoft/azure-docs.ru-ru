@@ -6,12 +6,12 @@ author: NumberByColors
 ms.author: daviste
 ms.date: 01/24/2018
 ms.reviewer: mbullwin
-ms.openlocfilehash: 5d1076239938988119d8a9838d0e060d70a22082
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6eb91734afac81e103cebea48865793fa687ad71
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100583371"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105024835"
 ---
 # <a name="users-sessions-and-events-analysis-in-application-insights"></a>Анализ пользователей, сеансов и событий в Application Insights
 
@@ -63,5 +63,4 @@ ms.locfileid: "100583371"
     - [Сохранение](usage-retention.md)
     - [Средство "Маршруты пользователей"](usage-flows.md)
     - [книги](../visualize/workbooks-overview.md)
-    - [Добавление контекста пользователей](usage-send-user-context.md)
-
+    - [Добавление контекста пользователей](./usage-overview.md)

@@ -7,12 +7,12 @@ ms.date: 03/30/2020
 ms.topic: article
 ms.service: virtual-machines
 ms.subservice: mainframe-rehosting
-ms.openlocfilehash: 7c9a9f355def492f04f47b49045fadb5afb6acd6
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 9ef9dd27183b6c23762dcdc2d5a844123d35559a
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "104950541"
+ms.locfileid: "105045966"
 ---
 # <a name="set-up-micro-focus-cics-bankdemo-for-micro-focus-enterprise-developer-40-on-azure"></a>Настройка Micro Focus CICS Банкдемо для Micro Focus Enterprise Developer 4,0 в Azure
 
@@ -23,7 +23,7 @@ CICs означает систему управления сведениями �
 > [!NOTE]
 > Ожидается в ближайшее время: инструкции по настройке [Micro Focus Enterprise Server 5,0](https://techcommunity.microsoft.com/t5/azurecat/micro-focus-enterprise-server-5-0-quick-start-template-on-azure/ba-p/1160110) на виртуальных машинах Azure.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Виртуальная машина с [корпоративным разработчиком](set-up-micro-focus-azure.md). Помните, что корпоративный разработчик имеет полный экземпляр Enterprise Server для целей разработки и тестирования. Этот экземпляр является экземпляром Enterprise Server, используемым для демонстрации.
 
@@ -276,5 +276,5 @@ CICs означает систему управления сведениями �
 - [Запуск Enterprise Server в контейнерах DOCKER в Azure](run-enterprise-server-container.md)
 - [Перенос мэйнфреймов — портал](/archive/blogs/azurecat/mainframe-migration-to-azure-portal)
 - [Виртуальные машины](../../../linux/overview.md)
-- [Устранение неполадок](../../../troubleshooting/index.yml)
+- [Устранение неполадок](/troubleshoot/azure/virtual-machines/welcome-virtual-machines)
 - [Декрытие мэйнфрейма с миграцией Azure](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration/en-us/)

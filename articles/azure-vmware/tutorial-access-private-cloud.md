@@ -2,25 +2,25 @@
 title: Учебник. Получение доступа к частному облаку
 description: Узнайте, как получить доступ к частному облаку Решения Azure VMware
 ms.topic: tutorial
-ms.date: 02/22/2021
-ms.openlocfilehash: 456767a9edd78a70a0aba45c7b44a2150a2217a1
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/13/2021
+ms.openlocfilehash: f2af1cffda08bf4b9c62e63f32d36cc9bbd7024a
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102045009"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494399"
 ---
 # <a name="tutorial-access-an-azure-vmware-solution-private-cloud"></a>Руководство по получению доступа к частному облаку Решения Azure VMware
 
-Решение Azure VMware не поддерживает управление частным облаком с помощью локального экземпляра vCenter. Вам потребуется выполнить дополнительную настройку и подключение к локальному экземпляру vCenter через инсталляционный сервер. 
+Решение Azure VMware не поддерживает управление частным облаком с помощью локального экземпляра vCenter. Вам потребуется подключиться к экземпляру vCenter для Решения Azure VMware через инсталяционный сервер. 
 
-В этом учебнике описано, как создать инсталляционный сервер в группе ресурсов, созданной с помощью [предыдущего учебника](tutorial-configure-networking.md), и войти в vCenter. Инсталляционный сервер — это виртуальная машина Windows в той же виртуальной сети, которую вы создали.  Он предоставляет доступ к vCenter и NSX Manager. 
+В этом учебнике описано, как создать инсталляционный сервер в группе ресурсов, созданной с помощью инструкций из [предыдущего учебника](tutorial-configure-networking.md), и войти в vCenter для Решения Azure VMware. Инсталляционный сервер — это виртуальная машина Windows в той же виртуальной сети, которую вы создали.  Он предоставляет доступ к vCenter и NSX Manager. 
 
 В этом руководстве описано следующее:
 
 > [!div class="checklist"]
-> * Создание виртуальной машины Windows, которая будет использоваться для подключения к vCenter.
-> * Вход в vCenter с виртуальной машины.
+> * создание виртуальной машины Windows для доступа к vCenter для Решения Azure VMware;
+> * вход в vCenter из этой виртуальной машины.
 
 ## <a name="create-a-new-windows-virtual-machine"></a>Создание виртуальной машины Windows
 
@@ -28,14 +28,11 @@ ms.locfileid: "102045009"
 
 ## <a name="connect-to-the-local-vcenter-of-your-private-cloud"></a>Подключение к локальному экземпляру vCenter частного облака
 
-1. На инсталляционном сервере войдите в клиент vSphere с помощью единого входа VMware vCenter. Используйте для этого имя пользователя облачного администратора и убедитесь, что отобразился пользовательский интерфейс.
+1. На инсталляционном сервере войдите в клиент vSphere с помощью единого входа VMware vCenter. Используйте для этого имя пользователя облачного администратора и убедитесь, что пользовательский интерфейс отображается корректно.
 
 1. На портале Azure выберите частное облако и щелкните **Управление** > **Удостоверение**. 
 
    Отобразятся URL-адреса и учетные данные пользователя в vCenter и NSX-T Manager частного облака.
-
-   >[!TIP]
-   >Выберите **Создать новый пароль**, чтобы создать новые пароли для vCenter и NSX-T.
 
    :::image type="content" source="media/tutorial-access-private-cloud/ss4-display-identity.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true" lightbox="media/tutorial-access-private-cloud/ss4-display-identity.png":::
 

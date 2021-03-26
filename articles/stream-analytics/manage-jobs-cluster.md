@@ -8,10 +8,10 @@ ms.topic: overview
 ms.custom: mvc
 ms.date: 09/22/2020
 ms.openlocfilehash: 09a67d11ac4daf3e87a50ee2171f1ca49060c5bf
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98018128"
 ---
 # <a name="add-and-remove-jobs-in-an-azure-stream-analytics-cluster"></a>Добавление и удаление заданий в кластере Azure Stream Analytics

@@ -10,10 +10,10 @@ ms.service: iot-edge
 services: iot-edge
 monikerRange: '>=iotedge-2020-11'
 ms.openlocfilehash: c1b30a1eafe9af92c1ef3f81773d213ccf96555c
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103462037"
 ---
 # <a name="tutorial-create-a-hierarchy-of-iot-edge-devices-preview"></a>Руководство по созданию иерархии устройств IoT Edge (предварительная версия)

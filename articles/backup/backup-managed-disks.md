@@ -3,19 +3,14 @@ title: Резервное копирование управляемых диск
 description: Узнайте, как выполнять резервное копирование управляемых дисков Azure из портал Azure.
 ms.topic: conceptual
 ms.date: 01/07/2021
-ms.openlocfilehash: ca86550c4dec4b51c60d9ecdef124e38783a3764
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e234495eb483d6d0cc6ca556ca418138c61a99f5
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98738158"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105110633"
 ---
-# <a name="back-up-azure-managed-disks-in-preview"></a>Резервное копирование управляемых дисков Azure (предварительная версия)
-
->[!IMPORTANT]
->Служба архивации дисков Azure доступна в предварительной версии без соглашения об уровне обслуживания и не рекомендуется для рабочих нагрузок в рабочей среде. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). Сведения о доступности регионов см. в разделе [Матрица поддержки](disk-backup-support-matrix.md).
->
->[Заполните эту форму](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR1vE8L51DIpDmziRt_893LVUNFlEWFJBN09PTDhEMjVHS05UWFkxUlUzUS4u) , чтобы зарегистрироваться для просмотра предварительной версии.
+# <a name="back-up-azure-managed-disks"></a>Резервное копирование управляемых дисков Azure
 
 В этой статье объясняется, как выполнить резервное копирование [управляемого диска Azure](../virtual-machines/managed-disks-overview.md) из портал Azure.
 
@@ -217,6 +212,6 @@ ms.locfileid: "98738158"
 
    ![Выберите задание, чтобы просмотреть подробные сведения](./media/backup-managed-disks/select-job.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Восстановление управляемых дисков Azure](restore-managed-disks.md)

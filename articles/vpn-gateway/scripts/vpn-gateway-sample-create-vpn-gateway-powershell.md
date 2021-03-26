@@ -11,10 +11,10 @@ ms.topic: sample
 ms.date: 02/10/2021
 ms.author: alzam
 ms.openlocfilehash: d41ec492f1f694a8b39f16a7932c4476d9614a1a
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100385886"
 ---
 # <a name="create-a-vpn-gateway---powershell-script-sample"></a>Создание VPN-шлюза — пример скрипта PowerShell

@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 4/15/2020
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: 30b30697750a0b9068cfcde19ea4bf9c474f9ad9
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: aec60218774f3f8e293a5e5ab8c03707d117c2a0
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102424586"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102634980"
 ---
 # <a name="tutorial-build-out-an-end-to-end-solution"></a>Руководство по Создание комплексного решения
 
@@ -120,6 +120,8 @@ Query
 Вернитесь в окно Visual Studio, где открыт проект _**AdtE2ESample**_, и найдите проект _**SampleFunctionsApp**_ в области *Обозреватель решений*.
 
 [!INCLUDE [digital-twins-publish-azure-function.md](../../includes/digital-twins-publish-azure-function.md)]
+
+Чтобы ваше приложение-функция могло получить доступ к Azure Digital Twins, оно должно иметь управляемое системой удостоверение и разрешения на доступ к вашему экземпляру Azure Digital Twins. Вы настроите их далее.
 
 ### <a name="assign-permissions-to-the-function-app"></a>Назначение разрешений для приложения-функции
 

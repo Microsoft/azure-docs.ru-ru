@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 03/16/2021
 ms.author: rosouz
 ms.custom: seo-nov-2020
-ms.openlocfilehash: 9a8ecf65426dfe92b84582ff98b567ea400c9209
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 450514541a90a01ea6b70f77491f116adb404887
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "105027187"
+ms.locfileid: "105046219"
 ---
 # <a name="what-is-azure-cosmos-db-analytical-store"></a>Что такое Azure Cosmos DB аналитическое хранилище?
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]
@@ -112,8 +112,8 @@ Azure Cosmos DB Analytics Store — это полностью изолирова
 
 * В отношении явных значений требуется другое поведение `null` :
   * Пулы Spark в Azure синапсе будут считывать эти значения как `0` (ноль).
-  * Пулы без SQL Server в Azure синапсе будут считывать эти значения `NULL` , как если бы первый документ коллекции получил для одного и того же свойства значение с типом данных, отличающимся от `integer` .
-  * Пулы без SQL Server в Azure синапсе будут считывать эти значения как `0` (ноль), если первый документ коллекции имеет для одного и того же свойства значение, равное `integer` .
+  * Пулы без SQL Server в Azure синапсе будут считывать эти значения `NULL` , как если бы первый документ коллекции получил для одного и того же свойства значение с `non-numeric` типом данных.
+  * Пулы без SQL Server в Azure синапсе будут считывать эти значения как `0` (ноль), если первый документ коллекции имеет для одного и того же свойства значение с `numeric` типом данных.
 
 * В отношении отсутствующих столбцов требуется другое поведение:
   * Пулы Spark в Azure синапсе будут представлять эти столбцы как `undefined` .
@@ -188,7 +188,7 @@ salary: 1000000
 |Int32  | ". Int32"  |123|
 |Int64  | ". Int64"  |255486129307|
 |NULL   | ". null"   | null|
-|Строковый тип|    ". String" | "ABC"|
+|Строка|    ". String" | "ABC"|
 |Отметка времени |    ". timestamp" |  Отметка времени (0, 0)|
 |Дата/время   |". Date"    | Исодате ("2020-08-21T07:43:07.375 Z")|
 |ObjectId   |". objectId"    | ObjectId ("5f3f7b59330ec25c132623a2")|

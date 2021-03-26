@@ -7,12 +7,12 @@ ms.service: spring-cloud
 ms.topic: conceptual
 ms.date: 12/02/2020
 ms.custom: devx-track-java, devx-track-azurecli
-ms.openlocfilehash: 0c73d0394486472c2c3c92450aab6a1a0d329cf7
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 32b41c1c4446ba34e3bfad52f1d3cbd7ed72096d
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104878684"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105108815"
 ---
 # <a name="customer-responsibilities-for-running-azure-spring-cloud-in-vnet"></a>Обязанности клиента по запуску Azure Веснного облака в виртуальной сети
 В этом документе содержатся спецификации использования Azure Веснного облака в виртуальной сети.
@@ -54,13 +54,14 @@ ms.locfileid: "104878684"
   | *.cdn.mscr.io | HTTPS:443 | Хранилище мкр, поддерживаемое Azure CDN. |
   | *.data.mcr.microsoft.com | HTTPS:443 | Хранилище мкр, поддерживаемое Azure CDN. |
   | <i>management.azure.com</i> | HTTPS:443 | Базовое управление кластерами Kubernetes. |
-  | <i>login.microsoftonline.com</i> | HTTPS:443 | Azure Active Directory проверка подлинности. |
+  | <i>* login.microsoftonline.com</i> | HTTPS:443 | Azure Active Directory проверка подлинности. |
+  | <i>* login.microsoft.com</i> | HTTPS:443 | Azure Active Directory проверка подлинности. |
   |<i>packages.microsoft.com</i>    | HTTPS:443 | Репозиторий пакетов Майкрософт. |
   | <i>acs-mirror.azureedge.net</i> | HTTPS:443 | Для установки необходимых двоичных файлов, таких как кубенет и Azure CNI, требуется репозиторий. |
   | *mscrl.microsoft.com* | HTTPS: 80 | Требуются пути к цепочке сертификатов Майкрософт. |
   | *crl.microsoft.com* | HTTPS: 80 | Требуются пути к цепочке сертификатов Майкрософт. |
   | *crl3.digicert.com* | HTTPS: 80 | Пути сторонних цепочек сертификатов SSL. |
 
-## <a name="see-also"></a>См. также раздел
-* [Доступ к приложению в частной сети](spring-cloud-access-app-virtual-network.md)
-* [Предоставление приложений с помощью шлюза приложений и брандмауэра Azure](spring-cloud-expose-apps-gateway-azure-firewall.md)
+## <a name="see-also"></a>См. также
+* [Доступ к приложению в частной сети](access-app-virtual-network.md)
+* [Предоставление приложений с помощью шлюза приложений и брандмауэра Azure](expose-apps-gateway-azure-firewall.md)
