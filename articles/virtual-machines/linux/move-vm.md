@@ -7,12 +7,12 @@ ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 09/12/2018
 ms.author: cynthn
-ms.openlocfilehash: db4c7e0126616e2d8bd120e7430c70b89c5cf36d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7dbe06a9f2fff8abf59adbdfc9e41055c85e8f2c
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "87291098"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889303"
 ---
 # <a name="move-a-vm-to-another-subscription-or-resource-group"></a>Перемещение виртуальной машины в другую подписку или группу ресурсов
 В этой статье описывается перемещение виртуальной машины (ВМ) между группами ресурсов или подписками. Перемещение ВМ между подписками может понадобиться, если вы создали виртуальную машину в личной подписке и вам нужно переместить ее в корпоративную подписку.
@@ -38,6 +38,7 @@ az account show --subscription myDestinationSubscription --query tenantId
 ```azurecli-interactive
 az resource list --resource-group "mySourceResourceGroup" --query "[].{Id:id}" --output table
 ```
+`table`Выходные данные недоступны при использовании `--interactive` . Измените выходные данные на другой вариант `json` , например.
 
 Чтобы переместить виртуальную машину и ее ресурсы в другую группу ресурсов, выполните команду [az resource move](/cli/azure/resource). Ниже показано, как переместить ВМ и наиболее распространенные ресурсы, которые для этого понадобятся. Используйте параметр **-ids** и передайте разделенный запятыми список (без пробелов) идентификаторов ресурсов для перемещения.
 

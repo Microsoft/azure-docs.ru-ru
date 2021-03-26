@@ -6,14 +6,14 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 03/24/2021
 ms.author: alkohli
-ms.openlocfilehash: 56d301762fde41f727b0b425d6c41a423f08103c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: aa1b861555cff65c9e432ea711af3f7c6e410625
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96467294"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105109171"
 ---
 # <a name="azure-stack-edge-pro-r-technical-specifications"></a>Технические спецификации R для Azure Stack пограничных устройств
 
@@ -26,7 +26,7 @@ ms.locfileid: "96467294"
 
 | Спецификация       | Значение                  |
 |---------------------|------------------------|
-| ЦП    | 2 X 10 ядер ЦП, Intel Xeon серебро 4114 |
+| ЦП    | 2 X Intel Xeon серебро 4114 ЦП<br>20 ядер физических (10 на ЦП)<br>40 логических ядер (виртуальных ЦП) (20 на ЦП)  |
 | Память              | 256 ГБ ОЗУ (2666 MT/с)     |
 
 

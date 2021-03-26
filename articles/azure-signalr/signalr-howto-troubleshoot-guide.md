@@ -6,12 +6,12 @@ ms.service: signalr
 ms.topic: conceptual
 ms.date: 11/06/2020
 ms.author: yajin1
-ms.openlocfilehash: 8eade7596e36389b1e345dc6f0aab1029dc100e0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e26def56fbd03626c3efc660db57012ee1b767ea
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104589180"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105048210"
 ---
 # <a name="troubleshooting-guide-for-azure-signalr-service-common-issues"></a>Руководство по устранению неполадок службы Azure SignalR
 
@@ -348,7 +348,7 @@ finally
 
 ## <a name="thread-pool-starvation"></a>Нехватка ресурсов пула потоков
 
-Если сервер не используется, это означает, что потоки не работают над обработкой сообщений. Все потоки приводят к зависанию определенного метода.
+Если сервер не используется, это означает, что потоки не работают над обработкой сообщений. Все потоки не отвечают в определенном методе.
 
 Обычно этот сценарий вызывается асинхронно для синхронизации или `Task.Result` / `Task.Wait()` в асинхронных методах.
 
@@ -424,7 +424,7 @@ service.AddSingleton<ThreadPoolStarvationDetector>();
 
 [Возникли проблемы или отзывы об устранении неполадок? Сообщите нам об этом.](https://aka.ms/asrs/survey/troubleshooting)
 
-## <a name="tips"></a>"Советы"
+## <a name="tips"></a>Советы
 
 <a name="view_request"></a>
 

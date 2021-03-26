@@ -8,12 +8,12 @@ ms.subservice: files
 ms.topic: conceptual
 ms.date: 3/19/2021
 ms.author: jeffpatt
-ms.openlocfilehash: 9c6e57d45cb5647053283da687659cc5ff0217e9
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: 8389ce008531e8bf295b2f863dad1ab2c3eb825c
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "104802188"
+ms.locfileid: "104870659"
 ---
 # <a name="azure-files-and-azure-netapp-files-comparison"></a>Сравнение файлов и Azure NetApp Files Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "104802188"
 | Категория | Файлы Azure | Azure NetApp Files |
 |---------|-------------------------|---------|
 | Описание | Службы [файлов Azure](https://azure.microsoft.com/services/storage/files/) — это полностью управляемая служба высокой доступности, оптимизированная для рабочих нагрузок произвольного доступа с обновлениями данных на месте.<br><br> Служба файлов Azure основана на той же платформе хранения Azure, что и другие службы, такие как большие двоичные объекты Azure. | [Azure NetApp Files](https://azure.microsoft.com/services/netapp/) — это полностью управляемая, высокодоступная служба NAS корпоративного уровня, которая может работать с самыми требовательными, высокопроизводительными рабочими нагрузками с низкой задержкой, требующими расширенных возможностей управления данными. Он обеспечивает миграцию рабочих нагрузок, которые считаются непереносимыми без использования.<br><br>  ИСПОЛЬЗОВАНИИ основан на системе NetApp без операционной системы хранения ONTAP, работающей в центре обработки данных Azure, для обеспечения единообразного взаимодействия с Azure и локальной среды, такой как производительность. |
-| Протоколы | Premium<br><ul><li>SMB 2,1, 3,0</li><li>NFS 4,1 (Предварительная версия)</li></ul><br>Standard<br><ul><li>SMB 2,1, 3,0</li><li>REST</li></ul><br> Дополнительные сведения см. в разделе [доступные протоколы файловых ресурсов](https://docs.microsoft.com/azure/storage/files/storage-files-compare-protocols). | Все уровни<br><ul><li>SMB 1, 2. x, 3. x</li><li>NFS 3,0, 4,1</li><li>Доступ с двумя протоколами (NFSv3/SMB)</li></ul><br> Дополнительные сведения см. в разделе Создание томов [NFS](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-create-volumes), [SMB](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb)или [двойных протоколов](https://docs.microsoft.com/azure/azure-netapp-files/create-volumes-dual-protocol) . |
+| Протоколы | Premium<br><ul><li>SMB 2,1, 3,0</li><li>NFS 4,1 (Предварительная версия)</li><li>REST</li></ul><br>Standard<br><ul><li>SMB 2,1, 3,0</li><li>REST</li></ul><br> Дополнительные сведения см. в разделе [доступные протоколы файловых ресурсов](https://docs.microsoft.com/azure/storage/files/storage-files-compare-protocols). | Все уровни<br><ul><li>SMB 1, 2. x, 3. x</li><li>NFS 3,0, 4,1</li><li>Доступ с двумя протоколами (NFSv3/SMB)</li></ul><br> Дополнительные сведения см. в разделе Создание томов [NFS](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-create-volumes), [SMB](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb)или [двойных протоколов](https://docs.microsoft.com/azure/azure-netapp-files/create-volumes-dual-protocol) . |
 | Доступность по регионам | Premium<br><ul><li>более 30 регионов</li></ul><br>Standard<br><ul><li>все регионы.</li></ul><br> См. сведения о [доступности продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=storage). | Все уровни<br><ul><li>более 25 регионов</li></ul><br> См. сведения о [доступности продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=storage). |
 | Избыточность | Premium<br><ul><li>LRS</li><li>ZRS</li></ul><br>Standard<br><ul><li>LRS</li><li>ZRS</li><li>GRS</li><li>GZRS</li></ul><br> Дополнительные сведения см. в разделе [избыточность](https://docs.microsoft.com/azure/storage/files/storage-files-planning#redundancy). | Все уровни<br><ul><li>Встроенная локальная высокая доступность</li><li>[Репликация между регионами](https://docs.microsoft.com/azure/azure-netapp-files/cross-region-replication-introduction)</li></ul> |
 | Соглашение Service-Level (SLA)<br><br> Обратите внимание, что соглашения об уровне обслуживания для файлов и Azure NetApp Files Azure рассчитываются по-разному. | [Соглашение об уровне обслуживания для службы файлов Azure](https://azure.microsoft.com/support/legal/sla/storage/) | [Соглашение об уровне обслуживания для Azure NetApp Files](https://azure.microsoft.com/support/legal/sla/netapp) |  

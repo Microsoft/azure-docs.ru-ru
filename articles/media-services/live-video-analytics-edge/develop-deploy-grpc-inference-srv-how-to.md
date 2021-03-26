@@ -3,12 +3,12 @@ title: Разработка и развертывание сервера выв�
 description: В этой статье содержатся рекомендации по разработке и развертыванию сервера вывода gRPC.
 ms.topic: how-to
 ms.date: 12/02/2020
-ms.openlocfilehash: 6184a369e73c26d3a8a716f9daf1c0420a5239fe
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: dbf46a26626a4143d76385968d092c4f238729da
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98881658"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105034866"
 ---
 # <a name="how-to-guide--develop-and-deploy-a-grpc-inference-server"></a>Руководство по разработке и развертыванию сервера вывода gRPC
 
@@ -24,7 +24,7 @@ ms.locfileid: "98881658"
 * [Введение в gRPC](https://www.grpc.io/docs/what-is-grpc/introduction/)
 * [proto3 язык](https://developers.google.com/protocol-buffers/docs/proto3)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Устройство с архитектурой x86-64 или ARM64, работающее под управлением одной из [поддерживаемых операционных систем Linux](../../iot-edge/support.md#operating-systems) или компьютера Windows.
 * [Установите DOCKER](https://docs.docker.com/desktop/#download-and-install) на компьютере.
@@ -242,7 +242,7 @@ ms.locfileid: "98881658"
         * В разделе GraphInstanceSet измените имя топологии графа, чтобы оно совпадало со значением в предыдущей ссылке:<br/>`"topologyName": "InferencingWithGrpcExtension"`
         * В разделе GraphTopologyDelete измените имя:<br/>`"name": "InferencingWithGrpcExtension"`
 
-            Топология (например, `https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/grpcExtension/topology.json` ) должна определять адрес расширения:
+            Топология (например, `https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/grpcExtensionOpenVINO/2.0/topology.json` ) должна определять адрес расширения:
     * Параметр адреса расширения
 
         ```
@@ -308,4 +308,4 @@ ms.locfileid: "98881658"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Выполните действия, описанные в статье **Подготовка к наблюдению за событиями** , приведенными в кратком руководстве [Анализ видео с помощью модели](use-your-model-quickstart.md) , чтобы запустить пример и интерпретировать результаты. Кроме того, ознакомьтесь с примерами топологий gRPC: [грпцекстенсион](https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/grpcExtension/topology.json), [Кврвисгрпцекстенсион](https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/cvr-with-grpcExtension/topology.json), [евртоассетсбигрпцекстенсион и [евронмотионплусгрпцекстенсион](https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/motion-with-grpcExtension/topology.json).
+Выполните действия, описанные в статье **Подготовка к наблюдению за событиями** , приведенными в кратком руководстве [Анализ видео с помощью модели](use-your-model-quickstart.md) , чтобы запустить пример и интерпретировать результаты. Кроме того, ознакомьтесь с примерами топологий gRPC: [грпцекстенсион](https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/grpcExtensionOpenVINO/2.0/topology.json), [Кврвисгрпцекстенсион](https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/cvr-with-grpcExtension/topology.json), [евртоассетсбигрпцекстенсион и [евронмотионплусгрпцекстенсион](https://github.com/Azure/live-video-analytics/blob/master/MediaGraph/topologies/motion-with-grpcExtension/topology.json).

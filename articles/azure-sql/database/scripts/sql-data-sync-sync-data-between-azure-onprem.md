@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/12/2019
 ms.openlocfilehash: 443232bb41ba73b5bd02d45c542e555904f539db
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92792877"
 ---
 # <a name="use-powershell-to-sync-data-between-sql-database-and-sql-server"></a>Использование PowerShell для синхронизации данных между Базой данных SQL и SQL Server
@@ -318,11 +318,11 @@ Remove-AzResourceGroup -ResourceGroupName $syncDatabaseResourceGroupName
     - Использование портала Azure: [Руководство по настройке службы "Синхронизация данных SQL" для синхронизации данных SQL между базой данных SQL Azure и локальной базой данных SQL Server](../sql-data-sync-sql-server-configure.md)
     - Использование PowerShell: [Использование PowerShell для синхронизации данных между несколькими базами данных в службе "База данных SQL Azure"](sql-data-sync-sync-data-between-sql-databases.md)
 - Data Sync Agent: [Data Sync Agent для службы "Синхронизация данных SQL" в Azure](../sql-data-sync-agent-overview.md)
-- Рекомендации: [Рекомендации для службы "Синхронизация данных SQL" в Azure](../sql-data-sync-best-practices.md)
+- Рекомендации: [Рекомендации по синхронизации данных SQL в Azure](../sql-data-sync-best-practices.md)
 - Мониторинг: [Мониторинг синхронизации данных SQL с помощью журналов Azure Monitor](../monitor-tune-overview.md)
-- Устранение неполадок: [Устранение неполадок службы "Синхронизация данных SQL" в Azure](../sql-data-sync-troubleshoot.md)
+- Устранение неполадок: [Устранение неполадок с синхронизацией данных SQL в Azure](../sql-data-sync-troubleshoot.md)
 - Обновление схемы синхронизации
-    - Использование Transact-SQL: [Автоматическая репликация изменений схемы в службе "Синхронизация данных SQL" в Azure](../sql-data-sync-update-sync-schema.md)
+    - С помощью Transact-SQL: [Автоматическая репликация изменений схемы при синхронизации данных SQL в Azure](../sql-data-sync-update-sync-schema.md)
     - Использование PowerShell: [Использование PowerShell для обновления схемы синхронизации в существующей группе синхронизации](update-sync-schema-in-sync-group.md)
 
 Дополнительные сведения о Базе данных SQL Azure см. в статьях:

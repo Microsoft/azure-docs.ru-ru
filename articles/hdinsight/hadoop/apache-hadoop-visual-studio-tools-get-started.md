@@ -6,12 +6,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive,hdiseo17may2017,seodec18
 ms.topic: how-to
 ms.date: 04/14/2020
-ms.openlocfilehash: 8d8e9784ea21bf5f2b6902e3d93c5c09c1ec5670
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c6969c3108fb1465a705d8e61b3a7bdf2083736a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944559"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865661"
 ---
 # <a name="use-data-lake-tools-for-visual-studio-to-connect-to-azure-hdinsight-and-run-apache-hive-queries"></a>Подключение к Azure HDInsight и выполнение запросов Apache Hive с помощью средств Data Lake для Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "98944559"
 
 Средства Data Lake для Visual Studio можно использовать для доступа к Azure Data Lake Analytics и HDInsight. Дополнительные сведения см. в статье [Разработка скриптов U-SQL с помощью средств Data Lake для Visual Studio](../../data-lake-analytics/data-lake-analytics-data-lake-tools-get-started.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы завершить работу с этой статьей и использовать средства Data Lake для Visual Studio, вам потребуются следующие компоненты:
 
@@ -41,7 +41,7 @@ ms.locfileid: "98944559"
 
     Для существующих установок Visual Studio перейдите в строку меню интегрированной среды разработки и выберите **инструменты**  >  **получить инструменты и компоненты** , чтобы открыть Visual Studio Installer. На вкладке **рабочие нагрузки** выберите по крайней мере рабочую нагрузку **разработки Azure** (в разделе **веб-& Cloud**). Или выберите рабочую нагрузку **Хранение и обработка данных** (в разделе **другие наборы инструментов**).
 
-  ![Выбор рабочей нагрузки, Visual Studio Installer](./media/apache-hadoop-visual-studio-tools-get-started/vs-installation.png)
+  :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/vs-installation.png" alt-text="Выбор рабочей нагрузки, Visual Studio Installer" border="true":::
 
 * Для Visual Studio 2015:
 
@@ -91,7 +91,7 @@ ms.locfileid: "98944559"
 
 5. Если у вас нет кластеров, создайте его с помощью портал Azure, Azure PowerShell или пакета SDK для HDInsight. Дополнительные сведения см. [в разделе Настройка кластеров в HDInsight](../hdinsight-hadoop-provision-linux-clusters.md).
 
-   ![Список кластеров HDInsight, обозреватель сервера, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-server-explorer.png)
+   :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-server-explorer.png" alt-text="Список кластеров HDInsight, обозреватель сервера, Visual Studio" border="true":::
 
 6. Разверните кластер HDInsight. Кластер содержит узлы для **баз данных Hive**. Кроме того, учетная запись хранения по умолчанию, все дополнительные связанные учетные записи хранения и **журнал службы Hadoop**. Развертывание объектов можно продолжить.
 
@@ -124,23 +124,23 @@ ms.locfileid: "98944559"
 
 2. Введите **URL-адрес подключения** в форме `https://CLUSTERNAME.azurehdinsight.net` . **Имя кластера** автоматически заполняется частью имени кластера URL-адреса при переходе к другому полю. Затем введите **имя пользователя** и **пароль** и нажмите кнопку **Далее**.
 
-    ![Связывание кластера, HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-link-cluster-dialog.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-link-cluster-dialog.png" alt-text="Связывание кластера, HDInsight, Visual Studio" border="true":::
 
 3. Нажмите кнопку **Готово**. Если связывание с кластером прошло успешно, кластер будет отображаться в узле **HDInsight** .
 
 Чтобы обновить связанный кластер, щелкните правой кнопкой мыши кластер и выберите команду **изменить**. Затем можно обновить сведения о кластере.
 
-![Изменение связанного кластера, HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-link-cluster-update.png)
+:::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-link-cluster-update.png" alt-text="Изменение связанного кластера, HDInsight, Visual Studio" border="true":::
 
 ## <a name="explore-linked-resources"></a>Анализ связанных ресурсов
 
 В обозревателе сервера отобразятся учетная запись хранения по умолчанию и все связанные учетные записи хранения. Если развернуть учетную запись хранения по умолчанию, отобразятся контейнеры в учетной записи хранения. Учетная запись хранения по умолчанию и контейнер по умолчанию отмечены.
 
-![Средства Data Lake для связанных ресурсов Visual Studio в обозреватель сервера](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-linked-resources.png)
+:::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-linked-resources.png" alt-text="Средства Data Lake для связанных ресурсов Visual Studio в обозреватель сервера" border="true":::
 
 Щелкните контейнер правой кнопкой мыши и выберите пункт **Просмотреть контейнер** , чтобы просмотреть содержимое контейнера. После открытия контейнера можно использовать кнопки на панели инструментов для **обновления** списка содержимого, **отправки большого двоичного объекта**, **удаления выбранных больших** двоичных объектов, **открытия большого двоичного объекта** и скачивания выбранных больших двоичных объектов (**Сохранить как**).
 
-![Операции со списком контейнеров и BLOB-объектами, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-blob-operations.png)
+:::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-blob-operations.png" alt-text="Операции со списком контейнеров и BLOB-объектами, кластер HDInsight, Visual Studio" border="true":::
 
 ## <a name="run-interactive-apache-hive-queries"></a>Выполнение интерактивных запросов Apache Hive
 
@@ -185,7 +185,7 @@ ms.locfileid: "98944559"
 
 4. Нажмите кнопку **создать таблицу** , чтобы отправить задание, которое создает новую таблицу Hive.
 
-    ![Создание окна таблицы, Hive, кластера HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-create-hive-table.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-create-hive-table.png" alt-text="Создание окна таблицы, Hive, кластера HDInsight, Visual Studio" border="true":::
 
 ### <a name="create-and-run-hive-queries"></a>Создание и выполнение запросов Hive
 
@@ -204,9 +204,9 @@ ms.locfileid: "98944559"
 
     Редактор Hive поддерживает технологию IntelliSense. Средства Data Lake для Visual Studio поддерживают загрузку удаленных метаданных при редактировании скрипта Hive. Например, если ввести `SELECT * FROM` , IntelliSense выводит список всех предлагаемых имен таблиц. Если указано имя таблицы, IntelliSense выведет список имен столбцов. Эти инструменты поддерживают почти все инструкции, подзапросы и встроенные определяемые пользователем функции Hive DML.
 
-    ![IntelliSense, пример 1, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-intellisense-table-names.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-intellisense-table-names.png" alt-text="IntelliSense, пример 1, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio" border="true":::
 
-    ![IntelliSense, пример 2, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-intellisense-column-names.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-intellisense-column-names.png" alt-text="IntelliSense, пример 2, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio" border="true":::
 
     > [!NOTE]  
     > IntelliSense предлагает только метаданные кластеров, выбранных на панели инструментов HDInsight.
@@ -226,17 +226,17 @@ ms.locfileid: "98944559"
 
         В первом раскрывающемся списке выберите **Interactive (интерактивный**) и щелкните **Execute (выполнить**).
 
-        ![Интерактивный режим, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-query-execute.png)  
+        :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-query-execute.png" alt-text="Интерактивный режим, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio" border="true":::  
 
     * **Пакетная служба**  
 
         В первом раскрывающемся списке выберите **пакет** и нажмите кнопку **Отправить**. Или щелкните значок раскрывающегося списка рядом с пунктом **Отправить** и выберите **Дополнительно**.
 
-        ![Пакетный режим, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-query-batch.png)
+        :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-query-batch.png" alt-text="Пакетный режим, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio" border="true":::
 
         При выборе варианта дополнительная отправка появляется диалоговое окно **Отправка скрипта** . Настройте **имя задания**, **аргументы**, **дополнительные конфигурации** и **Каталог состояния** для скрипта.
 
-        ![Диалоговое окно "Отправка скрипта", нерегламентированный запрос Hive, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-submit-jobs-advanced.png)
+        :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-submit-jobs-advanced.png" alt-text="Диалоговое окно &quot;Отправка скрипта&quot;, нерегламентированный запрос Hive, кластер HDInsight, Visual Studio" border="true":::
 
       > [!NOTE]  
       > Пакеты нельзя отправлять в кластеры интерактивных запросов.  Необходимо использовать интерактивный режим.
@@ -251,7 +251,7 @@ ms.locfileid: "98944559"
 
 3. В окне **Настройка нового проекта** введите **имя проекта**, выберите или создайте **Расположение** проекта, а затем щелкните **создать**.
 
-    ![Новое приложение Hive, Настройка окна нового проекта, HDInsight Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-new-hive-project.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-new-hive-project.png" alt-text="Новое приложение Hive, Настройка окна нового проекта, HDInsight Visual Studio" border="true":::
 
 4. В **обозревателе решений** дважды щелкните файл **Script.hql**, чтобы открыть его.
 
@@ -259,7 +259,7 @@ ms.locfileid: "98944559"
 
 Сводка по заданию незначительно различается в **пакете** и в **интерактивном** режиме.
 
-![Окна сводки по заданиям Hive, пакетный и интерактивный режимы, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-job-summary.png)
+:::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-job-summary.png" alt-text="Окна сводки по заданиям Hive, пакетный и интерактивный режимы, Visual Studio" border="true":::
 
 Используйте значок **обновления** , чтобы обновить состояние до тех пор, пока состояние задания не изменится на **завершено**.  
 
@@ -267,7 +267,7 @@ ms.locfileid: "98944559"
 
 * Сведения о задании из **интерактивного** режима см. в разделе **выходные** и **HiveServer2 выходные** области.
 
-    ![Выходные данные интерактивных заданий Hive, кластер HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-job-details.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-job-details.png" alt-text="Выходные данные интерактивных заданий Hive, кластер HDInsight, Visual Studio" border="true":::
 
 ### <a name="view-job-graph"></a>Просмотр графа задания
 
@@ -277,13 +277,13 @@ ms.locfileid: "98944559"
 
 Даже если в качестве подсистемы выполнения указан Tez, граф задания может не отображаться, если приложение Tez не запускается.  Эта ситуация может возникать из-за того, что задание не содержит инструкций DML. Или, так как инструкции DML могут возвращаться без запуска приложения Tez. Например, `SELECT * FROM table1` не запускает приложение Tez.
 
-![График задания Apache Hive, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-fast-path-hive-execution.png)
+:::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-fast-path-hive-execution.png" alt-text="График задания Apache Hive, Visual Studio" border="true":::
 
 ### <a name="view-task-execution-detail"></a>Просмотр сведений о выполнении задачи
 
 На графе задания можно выбрать **сведения о выполнении задачи** для получения структурированных и наглядных сведений о заданиях Hive. Вы также можете получить дополнительные сведения о задании. При появлении проблем с производительностью представление можно использовать для получения дополнительных сведений о проблеме. Например, вы можете получить сведения о том, как работает каждая задача, а также подробные сведения о каждой задаче (чтение и запись данных, расписание, время начала и окончания работы). Эти наглядные сведения помогут вам изменить конфигурацию задания или архитектуру системы.
 
-![Окно "представление выполнения задач", Data Lake Инструменты Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-task-execution-view.png)
+:::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-task-execution-view.png" alt-text="Окно &quot;представление выполнения задач&quot;, Data Lake Инструменты Visual Studio" border="true":::
 
 ### <a name="view-hive-jobs"></a>Просмотр заданий Hive
 
@@ -295,7 +295,7 @@ ms.locfileid: "98944559"
 
 1. Щелкните правой кнопкой мыши кластер HDInsight и выберите **Просмотреть задания**.
 
-    ![Просмотр заданий, Apache Hive, кластера HDInsight, Visual Studio](./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-view-hive-jobs.png)
+    :::image type="content" source="./media/apache-hadoop-visual-studio-tools-get-started/hdinsight-visual-studio-tools-view-hive-jobs.png" alt-text="Просмотр заданий, Apache Hive, кластера HDInsight, Visual Studio" border="true":::
 
     Появится список заданий Hive, выполняющихся в кластере.  
 

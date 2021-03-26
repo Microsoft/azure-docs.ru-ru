@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/24/2020
-ms.openlocfilehash: a5732c2dc0a92bd5727eeff39a529630e45683d7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: bb448a4befb15618485b2b5951222761180a1f22
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946683"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866749"
 ---
 # <a name="visualize-apache-hive-data-with-microsoft-power-bi-using-odbc-in-azure-hdinsight"></a>Визуализация данных Apache Hive с Microsoft Power BI с использованием ODBC в Azure HDInsight
 
@@ -21,11 +21,11 @@ ms.locfileid: "98946683"
 
 В этой статье данные загружаются из `hivesampletable` таблицы Hive в Power BI. Эта таблица содержит некоторые данные об использовании мобильного телефона. Затем вы отобразите эти данные на карте мира:
 
-![Отчет карты HDInsight Power BI](./media/apache-hadoop-connect-hive-power-bi/hdinsight-power-bi-visualization.png)
+:::image type="content" source="./media/apache-hadoop-connect-hive-power-bi/hdinsight-power-bi-visualization.png" alt-text="Отчет карты HDInsight Power BI" border="true":::
 
 Эти сведения также относятся к новому типу кластера [интерактивных запросов](../interactive-query/apache-interactive-query-get-started.md). Сведения о подключении к HDInsight Interactive Query при помощи прямого запроса см. в статье [Visualize Interactive Query Hive data with Microsoft Power BI using direct query in Azure HDInsight](../interactive-query/apache-hadoop-connect-hive-power-bi-directquery.md) (Визуализация данных Hive Interactive Query при помощи Microsoft Power BI с использованием прямого запроса в Azure HDInsight).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы выполнить действия, указанные в этой статье, вам потребуется:
 
@@ -45,7 +45,7 @@ ms.locfileid: "98946683"
 
 1. В верхнем меню выберите **Домашняя страница**  >  **получить**  >  **Дополнительные данные.**...
 
-    ![Power BI открытие данных в HDInsight Excel](./media/apache-hadoop-connect-hive-power-bi/hdinsight-power-bi-open-odbc.png)
+    :::image type="content" source="./media/apache-hadoop-connect-hive-power-bi/hdinsight-power-bi-open-odbc.png" alt-text="Power BI открытие данных в HDInsight Excel" border="true":::
 
 1. В диалоговом окне **Получение данных** выберите **другое** слева, выберите **ODBC** справа, а затем щелкните **подключить** в нижней части экрана.
 
@@ -61,7 +61,7 @@ ms.locfileid: "98946683"
 
 1. В области визуализации выберите **Map**, а это значок земного шара.
 
-    ![Настройка отчета HDInsight Power BI](./media/apache-hadoop-connect-hive-power-bi/hdinsight-power-bi-customize.png)
+    :::image type="content" source="./media/apache-hadoop-connect-hive-power-bi/hdinsight-power-bi-customize.png" alt-text="Настройка отчета HDInsight Power BI" border="true":::
 
 1. В области **поля** выберите **Country** и **devicemake**. На карте отобразятся данные.
 

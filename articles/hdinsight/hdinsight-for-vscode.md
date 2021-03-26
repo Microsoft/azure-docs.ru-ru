@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 10/20/2020
 ms.custom: devx-track-python
-ms.openlocfilehash: 1209c49cbd988a02b1e3503994fdbdac3f26216a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d098af394906dc120a252bdcda65fb3af31e28c8
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946146"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104865797"
 ---
 # <a name="use-spark--hive-tools-for-visual-studio-code"></a>Использование Spark & средств Hive для Visual Studio Code
 
@@ -40,7 +40,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 4. Выберите **Spark & Hive Tools** в результатах поиска и щелкните **Установить**.
 
-   ![Установка расширения Python Spark & Hive для Visual Studio Code](./media/hdinsight-for-vscode/install-hdInsight-plugin.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/install-hdInsight-plugin.png" alt-text="Куст & Spark для Visual Studio Code установки Python":::
 
 5. При необходимости выберите **Перезагрузить**.
 
@@ -52,7 +52,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 2. В представлении **обозревателя** выберите папку **хдексампле** , а затем щелкните значок **новый файл** рядом с рабочей папкой:
 
-   ![Значок "Новый файл" в Visual Studio Code](./media/hdinsight-for-vscode/visual-studio-code-new-file.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/visual-studio-code-new-file.png" alt-text="Значок &quot;Новый файл&quot; в Visual Studio Code":::
 
 3. Присвойте новому файлу имя с помощью команды `.hql` (запросы Hive) или `.py` расширения файла (скрипт Spark). В этом примере используется файл **HelloWorld.hql**.
 
@@ -64,7 +64,7 @@ Spark & Hive Tools можно установить на платформах, 
 2. Выполните поиск по следующей строке: **Azure: Cloud**.
 3. Выберите Национальный облако из списка:
 
-   ![Задание конфигурации записи для входа по умолчанию](./media/hdinsight-for-vscode/set-default-login-entry-configuration.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/set-default-login-entry-configuration.png" alt-text="Задание конфигурации записи для входа по умолчанию":::
 
 ## <a name="connect-to-an-azure-account"></a>Подключение к учетной записи Azure
 
@@ -72,7 +72,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 1. В строке меню выберите **Вид** > **Палитра команд...** и введите **Azure: Вход**:
 
-   ![Вход в Spark & Hive Tools для Visual Studio Code](./media/hdinsight-for-vscode/hdinsight-for-vscode-extension-login.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/hdinsight-for-vscode-extension-login.png" alt-text="Spark & средства Hive для входа Visual Studio Code":::
 
 2. Следуйте инструкциям по входу, чтобы войти в Azure. После подключения имя учетной записи Azure будет отображаться в строке состояния внизу окна Visual Studio Code.  
 
@@ -84,7 +84,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 1. В строке меню перейдите к разделу **Просмотр**  >  **палитры команд...** и введите **Spark/Hive: Свяжите кластер**.
 
-   ![Команда "связать кластер" в палитре команд](./media/hdinsight-for-vscode/link-cluster-command.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/link-cluster-command.png" alt-text="Команда &quot;связать кластер&quot; в палитре команд":::
 
 2. Выберите связанный тип кластера **Azure HDInsight**.
 
@@ -127,7 +127,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 3. Просмотрите представление **OUTPUT**. В этом представлении отображается связанный кластер (или кластеры) и все кластеры в подписке Azure.
 
-   ![Настройка конфигурации кластера по умолчанию](./media/hdinsight-for-vscode/list-cluster-result1.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/list-cluster-result1.png" alt-text="Настройка конфигурации кластера по умолчанию":::
 
 ## <a name="set-the-default-cluster"></a>Настройка кластера по умолчанию
 
@@ -141,7 +141,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 5. Выберите кластер в качестве используемого по умолчанию для текущего файла скрипта. Средства автоматически обновляют файл конфигурации **.VSCode\settings.json**.
 
-   ![Настройка конфигурации кластера по умолчанию](./media/hdinsight-for-vscode/set-default-cluster-configuration.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/set-default-cluster-configuration.png" alt-text="Настройка конфигурации кластера по умолчанию":::
 
 ## <a name="submit-interactive-hive-queries-and-hive-batch-scripts"></a>Отправка интерактивных запросов Hive и пакетных скриптов Hive
 
@@ -163,7 +163,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 6. Если вы не указали кластер по умолчанию, выберите кластер. Эти средства также позволяют отправить блок кода вместо всего файла скрипта с помощью контекстного меню. Через несколько секунд результаты запроса отобразятся на новой вкладке:
 
-   ![Интерактивный Apache Hive результатов запроса](./media/hdinsight-for-vscode/interactive-hive-result.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/interactive-hive-result.png" alt-text="Интерактивный Apache Hive результатов запроса":::
 
    - Панель **результатов** : можно сохранить весь результат в виде файла CSV, JSON или Excel по локальному пути или просто выбрать несколько строк.
 
@@ -198,57 +198,57 @@ Spark & Hive Tools можно установить на платформах, 
 
 4. В правом нижнем углу окна появится запрос на установку ядра PySpark или Synapse Pyspark. Можно нажать кнопку **Установить**, чтобы перейти к установке PySpark или Synapse Pyspark, или **Пропустить**, чтобы пропустить этот шаг.
 
-   ![На снимке экрана показан параметр, позволяющий пропустить установку PySpark.](./media/hdinsight-for-vscode/install-the-pyspark-kernel.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/install-the-pyspark-kernel.png" alt-text="На снимке экрана показан параметр, позволяющий пропустить установку PySpark.":::
 
 5. Если потребуется установить его позже, можно перейти к   >    >  **параметрам настройки** файла, а затем снять флажок **HDInsight: включить пропуск Pyspark установки** в параметрах. 
     
-    ![На снимке экрана показан параметр включения Pyspark установки Skip.](./media/hdinsight-for-vscode/enable-skip-pyspark-installation.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/enable-skip-pyspark-installation.png" alt-text="На снимке экрана показан параметр включения Pyspark установки Skip.":::
 
 6. Если на шаге 4 Установка прошла успешно, в правом нижнем углу окна появится окно сообщения "PySpark успешно установлено". Нажмите кнопку **Перезагрузить**, чтобы перезагрузить окно.
 
-   ![расширение PySpark успешно установлено](./media/hdinsight-for-vscode/pyspark-kernel-installed-successfully.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/pyspark-kernel-installed-successfully.png" alt-text="расширение PySpark успешно установлено":::
 
 
 7. В строке меню последовательно выберите **Вид** > **Палитра команд...** или воспользуйтесь сочетанием клавиш **SHIFT+CTRL+P** и введите **Python: Select Interpreter to start Jupyter Server** (Выбрать интерпретатор для запуска сервера Jupyter).
 
-   ![выбор интерпретатора для запуска сервера Jupyter](./media/hdinsight-for-vscode/select-interpreter-to-start-jupyter-server.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/select-interpreter-to-start-jupyter-server.png" alt-text="выбор интерпретатора для запуска сервера Jupyter":::
 
 8. Выберите параметр python ниже.
 
-   ![выбор параметра ниже](./media/hdinsight-for-vscode/choose-the-below-option.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/choose-the-below-option.png" alt-text="выбор параметра ниже":::
     
 9. В строке меню последовательно выберите **Вид** > **Палитра команд...** или воспользуйтесь сочетанием клавиш **SHIFT+CTRL+P** и введите **Developer: Reload Window** (Разработчик: перезагрузить окно).
 
-    ![перезагрузка окна](./media/hdinsight-for-vscode/reload-window.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/reload-window.png" alt-text="перезагрузка окна":::
 
 10. [Подключитесь](#connect-to-an-azure-account) к учетной записи Azure или свяжите кластер, если вы еще не сделали этого.
 
 11. Выделите весь код, щелкните правой кнопкой мыши редактор скриптов и выберите **Spark: PySpark Interactive/синапсе: PySpark Interactive** , чтобы отправить запрос. 
 
-    ![контекстное меню интерактивной среды pyspark](./media/hdinsight-for-vscode/pyspark-interactive-right-click.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/pyspark-interactive-right-click.png" alt-text="контекстное меню интерактивной среды pyspark":::
 
 12. Выберите кластер, если вы не указали кластер по умолчанию. Через несколько секунд **Интерактивные результаты Python** отобразятся на новой вкладке. Щелкните PySpark, чтобы переключить ядро в **PySpark/синапсе PySpark**, и код будет выполнен успешно. Если вы хотите переключиться на ядро синапсе Pyspark, рекомендуется отключить автоматические параметры в портал Azure. В противном случае для активации кластера и установки ядра synapse при первом использовании может потребоваться много времени. Если средства также позволяют отправить блок кода вместо всего файла скрипта с помощью контекстного меню:
 
-    ![интерактивная среда pyspark, интерактивное окно python](./media/hdinsight-for-vscode/pyspark-interactive-python-interactive-window.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/pyspark-interactive-python-interactive-window.png" alt-text="интерактивная среда pyspark, интерактивное окно python":::
 
 13. Введите **%% info**, а затем нажмите клавиши SHIFT + ВВОД, чтобы просмотреть сведения о задании (необязательно):
 
-    ![сведения о задании интерактивного просмотра pyspark](./media/hdinsight-for-vscode/pyspark-interactive-view-job-information.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/pyspark-interactive-view-job-information.png" alt-text="сведения о задании интерактивного просмотра pyspark":::
 
 Средство также поддерживает запрос **Spark SQL** :
 
-  ![результат интерактивного представления pyspark](./media/hdinsight-for-vscode/pyspark-ineteractive-select-result.png)
+  :::image type="content" source="./media/hdinsight-for-vscode/pyspark-ineteractive-select-result.png" alt-text="результат интерактивного представления pyspark":::
 
 
 ### <a name="perform-interactive-query-in-py-file-using-a--comment"></a>Выполнение интерактивного запроса в файле PY с помощью комментария #%%
 
 1. Добавьте **#%%** перед кодом корректировки, чтобы получить возможность работы с записной книжкой.
 
-   ![добавление #%%](./media/hdinsight-for-vscode/run-cell.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/run-cell.png" alt-text="добавление #%%":::
 
 2. Щелкните **Выполнить ячейку**. Через несколько секунд Интерактивные результаты Python отобразятся на новой вкладке. Щелкните PySpark, чтобы переключить ядро в PySpark/синапсе PySpark, затем снова нажмите кнопку **запустить ячейку** , и код будет выполнен успешно.
 
-   ![результаты выполнения ячейки](./media/hdinsight-for-vscode/run-cell-get-results.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/run-cell-get-results.png" alt-text="результаты выполнения ячейки":::
 
 ## <a name="leverage-ipynb-support-from-python-extension"></a>Использование поддержки IPYNB из расширения Python
 
@@ -256,11 +256,11 @@ Spark & Hive Tools можно установить на платформах, 
 
 2. Нажмите кнопку **Выполнить ячейку**, выполните инструкции на экране, чтобы **задать стандартный пул Spark** (настоятельно рекомендуется перед каждым открытием записной книжки устанавливать стандартный кластер или пул), а затем **перезагрузите** окно.
 
-   ![задание стандартного пула Spark и перезагрузка](./media/hdinsight-for-vscode/set-the-default-spark-pool-and-reload.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/set-the-default-spark-pool-and-reload.png" alt-text="задание стандартного пула Spark и перезагрузка":::
 
 3. Щелкните PySpark, чтобы переключить ядро в **PySpark/синапсе PySpark**, а затем щелкните **Запуск ячейки**, после чего отобразится результат.
 
-   ![результаты выполнения IPYNB](./media/hdinsight-for-vscode/run-ipynb-file-results.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/run-ipynb-file-results.png" alt-text="результаты выполнения IPYNB":::
 
 
 > [!NOTE]
@@ -302,7 +302,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 6. Выберите пул кластеров или Spark, чтобы отправить задание PySpark:
 
-   ![Вывод результатов задания Python](./media/hdinsight-for-vscode/submit-pythonjob-result.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/submit-pythonjob-result.png" alt-text="Вывод результатов задания Python":::
 
 После отправки задания Python журналы отправки отображаются в окне **вывода** в Visual Studio Code. Также отображаются URL-адрес пользовательского интерфейса Spark и URL-адрес пользовательского интерфейса Yarn. Если пакетное задание отправляется в пул Apache Spark, также отображаются URL-адрес пользовательского интерфейса журнала Spark и URL-адрес пользовательского интерфейса приложения задания Spark. Вы можете открыть этот URL-адрес в браузере для отслеживания состояния задания.
 
@@ -338,7 +338,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 - Параметры проекта:
 
-  ![Настройка HDInsight Apache Livy](./media/hdinsight-for-vscode/hdi-apache-livy-config.png)
+  :::image type="content" source="./media/hdinsight-for-vscode/hdi-apache-livy-config.png" alt-text="Настройка HDInsight Apache Livy":::
 
   >[!NOTE]
   >Для параметров **дривермемори** и **ексекутормемори** задайте значение и единицу. Например: 1 ГБ или 1024m.
@@ -349,7 +349,7 @@ Spark & Hive Tools можно установить на платформах, 
   
   **Текст запроса**
 
-  | name | description | тип |
+  | name | description | type |
   | --- | --- | --- |
   | файл | Файл, содержащий приложение для выполнения | Путь (обязательно) |
   | proxyUser | Пользователь, олицетворяемый при выполнении задания | Строка |
@@ -370,13 +370,13 @@ Spark & Hive Tools можно установить на платформах, 
 
   **Текст ответа** Созданный объект пакета.
 
-  | name | description | тип |
+  | name | description | type |
   | --- | ---| --- |
   | ID | Идентификатор сеанса | Int |
   | appId | Идентификатор приложения для этого сеанса | Строка |
   | appInfo | Подробные сведения о приложении | Сопоставление key=val |
   | log | Строки журнала | Список строк |
-  | Состояние |Пакетное состояние | Строка |
+  | state |Пакетное состояние | Строка |
 
   > [!NOTE]
   > Назначенная конфигурация Livy отображается в области вывода при отправке скрипта.
@@ -395,11 +395,11 @@ Spark & Hive Tools можно установить на платформах, 
 
 5. Щелкните правой кнопкой мыши таблицу Hive. Например: **hivesampletable**. Выберите **Предварительный просмотр**.
 
-   ![& Hive для Visual Studio Code предварительной версии таблицы Hive](./media/hdinsight-for-vscode/hdinsight-for-vscode-preview-hive-table.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/hdinsight-for-vscode-preview-hive-table.png" alt-text="& Hive для Visual Studio Code предварительной версии таблицы Hive":::
 
 6. Откроется окно **предварительного просмотра результатов** :
 
-   ![Окно результатов & Hive для Visual Studio Code Preview](./media/hdinsight-for-vscode/hdinsight-for-vscode-preview-results-window.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/hdinsight-for-vscode-preview-results-window.png" alt-text="Окно результатов & Hive для Visual Studio Code Preview":::
 
 - Панель результатов
 
@@ -415,7 +415,7 @@ Spark & Hive Tools можно установить на платформах, 
      >
      >В Linux установите ксклип, чтобы включить данные копии таблицы.
      >
-     >![Spark & Hive для Visual Studio Code в Linux](./media/hdinsight-for-vscode/hdinsight-for-vscode-preview-linux-install-xclip.png)
+     >:::image type="content" source="./media/hdinsight-for-vscode/hdinsight-for-vscode-preview-linux-install-xclip.png" alt-text="Spark & Hive для Visual Studio Code в Linux":::
 
 ## <a name="additional-features"></a>Дополнительные функции
 
@@ -423,12 +423,12 @@ Spark & Hive Tools можно установить на платформах, 
 
 - **Автозаполнение IntelliSense**. Всплывающие предложения для ключевых слов, методов, переменных и других программных элементов. Разные значки обозначают разные объекты:
 
-    ![Spark & средства Hive для Visual Studio Code объектов IntelliSense](./media/hdinsight-for-vscode/hdinsight-for-vscode-auto-complete-objects.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/hdinsight-for-vscode-auto-complete-objects.png" alt-text="Spark & средства Hive для Visual Studio Code объектов IntelliSense":::
 
 - **Маркер ошибки IntelliSense**. Языковая служба подчеркивает редактирование ошибок в скрипте Hive.     
 - **Подсветка синтаксиса**. Языковая служба использует разные цвета для различения переменных, ключевых слов, типов данных, функций и других программных элементов.
 
-    ![Выделение синтаксиса в Spark & Hive Tools для Visual Studio Code](./media/hdinsight-for-vscode/hdinsight-for-vscode-syntax-highlights.png)
+    :::image type="content" source="./media/hdinsight-for-vscode/hdinsight-for-vscode-syntax-highlights.png" alt-text="В Spark & средства Hive для Visual Studio Code выделение синтаксиса":::
 
 ## <a name="reader-only-role"></a>Роль только для чтения
 
@@ -447,15 +447,15 @@ Spark & Hive Tools можно установить на платформах, 
 1. Введите допустимое имя пользователя Ambari.
 2. Введите допустимый пароль.
 
-   ![Spark & средства Hive для Visual Studio Code имени пользователя](./media/hdinsight-for-vscode/hdi-azure-hdinsight-azure-username.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/hdi-azure-hdinsight-azure-username.png" alt-text="Spark & средства Hive для Visual Studio Code имени пользователя":::
 
-   ![Spark & средства Hive для Visual Studio Code пароля](./media/hdinsight-for-vscode/hdi-azure-hdinsight-azure-password.png)
+   :::image type="content" source="./media/hdinsight-for-vscode/hdi-azure-hdinsight-azure-password.png" alt-text="Spark & средства Hive для Visual Studio Code пароля":::
 
    > [!NOTE]
    >
    >`Spark / Hive: List Cluster`Для проверки связанного кластера можно использовать:
    >
-   >![& Spark средства Hive для связанного модуля чтения Visual Studio Code](./media/hdinsight-for-vscode/list-cluster-result1.png)
+   >:::image type="content" source="./media/hdinsight-for-vscode/list-cluster-result1.png" alt-text="& Spark средства Hive для связанного модуля чтения Visual Studio Code":::
 
 ## <a name="azure-data-lake-storage-gen2"></a>Azure Data Lake Storage 2-го поколения
 
@@ -467,7 +467,7 @@ Spark & Hive Tools можно установить на платформах, 
 
 Отправка задания в кластер HDInsight с помощью Data Lake Storage 2-го поколения. Вам будет предложено ввести ключ доступа к хранилищу, если учетная запись Azure не имеет доступа на запись к хранилищу Gen2. После проверки ключа доступа задание будет успешно отправлено.
 
-![Spark & средства Hive для Visual Studio Code AccessKey](./media/hdinsight-for-vscode/hdi-azure-hdinsight-azure-accesskey.png)
+:::image type="content" source="./media/hdinsight-for-vscode/hdi-azure-hdinsight-azure-accesskey.png" alt-text="Spark & средства Hive для Visual Studio Code AccessKey":::
 
 > [!NOTE]
 >

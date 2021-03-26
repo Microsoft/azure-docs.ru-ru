@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: 6a3049709c6c094f722a8132ee4c4b2051e24d95
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 9575c0aec4a1b45f9099bff1dc4209c63529ddf6
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102616695"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105025549"
 ---
 # <a name="azure-percept-security-overview"></a>Общие сведения о безопасности Azure Percept
 
@@ -25,7 +25,7 @@ ms.locfileid: "102616695"
 
 ### <a name="azure-percept-dk"></a>Azure Percept DK
 
-Azure Перцепт DK включает доверенный платформенный модуль (TPM) (TPM) версии 2,0, которую можно использовать для подключения устройства к службам подготовки устройств Azure с дополнительной безопасностью. TPM — это общедоступный стандарт ISO из организация TCG, и вы можете ознакомиться с дополнительными сведениями о TPM по [полной спецификации tpm 2,0](https://trustedcomputinggroup.org/resource/tpm-library-specification/) или спецификации ISO/IEC 11889. Дополнительные сведения о том, как служба DPS может безопасно подготавливать устройства, см. в статье Подготовка устройств к добавлению в [центр Интернета вещей Azure — аттестация TPM](https://docs.microsoft.com/azure/iot-dps/concepts-tpm-attestation).
+Azure Перцепт DK включает доверенный платформенный модуль (TPM) (TPM) версии 2,0, которую можно использовать для подключения устройства к службам подготовки устройств Azure с дополнительной безопасностью. TPM — это общедоступный стандарт ISO из организация TCG, и вы можете ознакомиться с дополнительными сведениями о TPM по [полной спецификации tpm 2,0](https://trustedcomputinggroup.org/resource/tpm-library-specification/) или спецификации ISO/IEC 11889. Дополнительные сведения о том, как служба DPS может безопасно подготавливать устройства, см. в статье Подготовка устройств к добавлению в [центр Интернета вещей Azure — аттестация TPM](../iot-dps/concepts-tpm-attestation.md).
 
 ### <a name="azure-percept-system-on-module-som"></a>Система Azure Перцепт в модуле (SOM)
 
@@ -37,7 +37,7 @@ Azure Перцепт DK включает доверенный платформе
 
 ### <a name="iot-edge"></a>IoT Edge
 
-Azure Перцепт DK подключается к Azure Перцепт Studio с дополнительной безопасностью и другими службами Azure, использующими протокол TLS. Azure Перцепт DK — это устройство с поддержкой Azure IoT Edge. IoT Edge среда выполнения — это набор программ, которые включают устройство в устройство IoT Edge. В совокупности компоненты среды выполнения IoT Edge позволяют устройствам IoT Edge получать код для выполнения на границе и передавать результаты. Azure Перцепт DK использует контейнеры DOCKER для изоляции рабочих нагрузок IoT Edge от операционной системы узла и приложений с поддержкой пограничных устройств. Дополнительные сведения о Azure IoT Edgeной платформе безопасности см. в статье [Диспетчер безопасности IOT Edge](https://docs.microsoft.com/azure/iot-edge/iot-edge-security-manager).
+Azure Перцепт DK подключается к Azure Перцепт Studio с дополнительной безопасностью и другими службами Azure, использующими протокол TLS. Azure Перцепт DK — это устройство с поддержкой Azure IoT Edge. IoT Edge среда выполнения — это набор программ, которые включают устройство в устройство IoT Edge. В совокупности компоненты среды выполнения IoT Edge позволяют устройствам IoT Edge получать код для выполнения на границе и передавать результаты. Azure Перцепт DK использует контейнеры DOCKER для изоляции рабочих нагрузок IoT Edge от операционной системы узла и приложений с поддержкой пограничных устройств. Дополнительные сведения о Azure IoT Edgeной платформе безопасности см. в статье [Диспетчер безопасности IOT Edge](../iot-edge/iot-edge-security-manager.md).
 
 ### <a name="device-update-for-iot-hub"></a>Обновление устройств для Центра Интернета вещей
 
@@ -57,7 +57,7 @@ Azure Перцепт DK подключается к Azure Перцепт Studio 
 |*. auth.azureperceptdk.azure.net|   443|    Проверка подлинности и авторизация SOM в Azure DK|
 |*. auth.projectsantacruz.azure.net| 443|    Проверка подлинности и авторизация SOM в Azure DK|
 
-Кроме того, проверьте список [соединений, используемых Azure IOT Edge](https://docs.microsoft.com/azure/iot-edge/production-checklist#allow-connections-from-iot-edge-devices).
+Кроме того, проверьте список [соединений, используемых Azure IOT Edge](../iot-edge/production-checklist.md#allow-connections-from-iot-edge-devices).
 
 <!---
 ## Additional Recommendations for Deployment to Production
@@ -71,6 +71,6 @@ Azure Percept DK offers a great variety of security capabilities out of the box.
 --->
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о доступных [моделях Azure ПЕРЦЕПТ AI](./overview-ai-models.md).

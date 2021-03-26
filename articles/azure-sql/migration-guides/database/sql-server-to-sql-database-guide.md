@@ -1,5 +1,5 @@
 ---
-title: 'SQL Server в базу данных SQL: руководство по миграции'
+title: 'SQL Server к базе данных SQL Azure: руководство по миграции'
 description: Следуйте этому руководству, чтобы перенести базы данных SQL Server в базу данных SQL Azure.
 ms.service: sql-database
 ms.subservice: migration-guide
@@ -10,14 +10,14 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 03/19/2021
-ms.openlocfilehash: 9205301cb77941e4ea7ca026710d44ba82f6a937
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ce155015373a096595dc61d75c876633e2e4f00a
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103563850"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105027199"
 ---
-# <a name="migration-guide-sql-server-to-sql-database"></a>Руководство по миграции: SQL Server в базу данных SQL
+# <a name="migration-guide-sql-server-to-azure-sql-database"></a>Руководство по миграции: SQL Server в базу данных SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
 
 Это пошаговое руководством поможет перенести экземпляр SQL Server в базу данных SQL Azure. 
@@ -30,7 +30,7 @@ ms.locfileid: "103563850"
 - Подсистема вычислений (Google Cloud Platform-обеспечить)  
 - Облачный SQL для SQL Server (Google Cloud Platform – обеспечить) 
 
-Дополнительные сведения о миграции см. в разделе [Общие сведения о миграции](sql-server-to-sql-database-overview.md). Другие сценарии см. в разделе [руководств по миграции баз данных](https://datamigration.microsoft.com/).
+Дополнительные сведения о миграции см. в разделе [Общие сведения о миграции](sql-server-to-sql-database-overview.md). Другие руководства по миграции см. в разделе [Перенос базы данных](https://docs.microsoft.com/data-migration). 
 
 :::image type="content" source="media/sql-server-to-database-overview/migration-process-flow-small.png" alt-text="Поток процесса миграции":::
 
@@ -38,9 +38,11 @@ ms.locfileid: "103563850"
 
 Чтобы перенести SQL Server в базу данных SQL Azure, убедитесь, что у вас есть следующие необходимые компоненты: 
 
-- Выбранный [метод миграции](sql-server-to-sql-database-overview.md#compare-migration-options) и соответствующие инструменты 
-- [Помощник по миграции данных (DMA)](https://www.microsoft.com/download/details.aspx?id=53595) , установленный на компьютере, который может подключиться к исходному SQL Server
-- Целевая [база данных SQL Azure](../../database/single-database-create-quickstart.md)
+- Выбранный [метод миграции](sql-server-to-sql-database-overview.md#compare-migration-options) и соответствующие средства.
+- [Помощник по миграции данных (DMA)](https://www.microsoft.com/download/details.aspx?id=53595) , установленный на компьютере, который может подключаться к исходным SQL Server.
+- Целевая [база данных SQL Azure](../../database/single-database-create-quickstart.md). 
+- Подключение и соответствующие разрешения для доступа к исходному и целевому объекту. 
+
 
 
 ## <a name="pre-migration"></a>Подготовка к миграции
@@ -169,7 +171,7 @@ ms.locfileid: "103563850"
 
 После успешного завершения этапа миграции пройдите ряд задач, выполняемых после миграции, чтобы обеспечить бесперебойную работу всех компонентов. 
 
-Этап, выполняемый после миграции, крайне важен для согласования любых проблем с точностью данных и проверки полноты, а также для устранения проблем с производительностью рабочей нагрузки. 
+Проверка после миграции — очень важный шаг, позволяющий добиться точности и полноты данных, а также выявить проблемы с производительностью рабочей нагрузки. 
 
 ### <a name="remediate-applications"></a>Исправление приложений 
 

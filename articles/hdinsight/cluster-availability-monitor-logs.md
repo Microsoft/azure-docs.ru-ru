@@ -4,12 +4,12 @@ description: Узнайте, как использовать журналы Azur
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 08/12/2020
-ms.openlocfilehash: 3bc5c659d9871cb8f1d49d2a3bfde2ce03faea86
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 299a17e23ca3eb2d954bae7335571ae1f645152e
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100571904"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867157"
 ---
 # <a name="how-to-monitor-cluster-availability-with-azure-monitor-logs-in-hdinsight"></a>Как отслеживать доступность кластера с помощью журналов Azure Monitor в HDInsight
 
@@ -25,7 +25,7 @@ ms.locfileid: "100571904"
 
 На портале на странице ресурсов кластера HDInsight выберите **Azure Monitor**. Затем выберите **включить** и выберите рабочую область log Analytics в раскрывающемся списке.
 
-![HDInsight Operations Management Suite](media/cluster-availability-monitor-logs/azure-portal-monitoring.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/azure-portal-monitoring.png" alt-text="HDInsight Operations Management Suite":::
 
 По умолчанию агент OMS устанавливается на всех узлах кластера, кроме граничных узлов. Так как на граничных узлах кластера не установлен агент OMS, в Log Analytics по умолчанию отсутствуют данные телеметрии для пограничных узлов.
 
@@ -33,7 +33,7 @@ ms.locfileid: "100571904"
 
 После включения интеграции журналов Azure Monitor (это может занять несколько минут) перейдите к ресурсу **рабочей области log Analytics** и выберите **журналы**.
 
-![Журналы рабочей области Log Analytics](media/cluster-availability-monitor-logs/hdinsight-portal-logs.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/hdinsight-portal-logs.png" alt-text="Журналы рабочей области Log Analytics":::
 
 В журнале перечислены некоторые примеры запросов, например:
 
@@ -47,7 +47,7 @@ ms.locfileid: "100571904"
 
 В качестве примера запустите запрос образца " **Частота доступности** ", выбрав **выполнить** в этом запросе, как показано на снимке экрана выше. В результате будет показана частота доступности каждого узла в кластере в процентах. Если вы включили несколько кластеров HDInsight для отправки метрик в ту же рабочую область Log Analytics, вы увидите частоту доступности для всех узлов (за исключением граничных узлов) в отображаемых кластерах.
 
-![Образец запроса "частота доступности журналов Log Analytics рабочей области"](media/cluster-availability-monitor-logs/portal-availability-rate.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-availability-rate.png" alt-text="Образец запроса &quot;частота доступности журналов Log Analytics рабочей области&quot;":::
 
 > [!NOTE]  
 > Частота доступности измеряется в течение 24-часового периода, поэтому кластер должен работать в течение как минимум 24 часов, прежде чем будут отображены точные показатели доступности.
@@ -60,16 +60,16 @@ ms.locfileid: "100571904"
 
 В **журналах** запустите образец запроса **недоступные компьютеры** , выбрав **выполнить** в этом запросе, как показано ниже.
 
-![Пример недоступных компьютеров в журналах рабочей области Log Analytics](media/cluster-availability-monitor-logs/portal-unavailable-computers.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-unavailable-computers.png" alt-text="Пример недоступных компьютеров в журналах рабочей области Log Analytics":::
 
 Если все узлы доступны, этот запрос должен вернуть нулевые результаты. Щелкните **новое правило генерации оповещений** , чтобы начать настройку оповещения для этого запроса.
 
-![Новое правило генерации оповещений для рабочей области Log Analytics](media/cluster-availability-monitor-logs/portal-logs-new-alert-rule.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-logs-new-alert-rule.png" alt-text="Новое правило генерации оповещений для рабочей области Log Analytics":::
 
 Существует три компонента оповещения: *ресурс* , для которого создается правило (в данном случае это рабочая область log Analytics), *условие* для запуска оповещения и *группы действий* , которые определяют, что произойдет при срабатывании оповещения.
 Щелкните **заголовок условия**, как показано ниже, чтобы завершить настройку логики сигнала.
 
-![Условие правила создания предупреждения на портале](media/cluster-availability-monitor-logs/portal-condition-title.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-condition-title.png" alt-text="Условие правила создания предупреждения на портале":::
 
 Откроется окно **Настройка логики сигнала**.
 
@@ -85,11 +85,11 @@ ms.locfileid: "100571904"
 
 По завершении настройки логики сигнала нажмите кнопку **Готово** .
 
-![Правило генерации оповещений настраивает логику сигнала](media/cluster-availability-monitor-logs/portal-configure-signal-logic.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-configure-signal-logic.png" alt-text="Правило генерации оповещений настраивает логику сигнала":::
 
 Если у вас еще нет группы действий, щелкните **создать** в разделе **группы действий** .
 
-![Правило генерации оповещений создает новую группу действий](media/cluster-availability-monitor-logs/portal-create-new-action-group.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-create-new-action-group.png" alt-text="Правило генерации оповещений создает новую группу действий":::
 
 Откроется **Группа добавить действие**. Выберите **имя группы действий**, **Краткое имя**, **подписку** и **группу ресурсов.** В разделе **действия** выберите **имя действия** и выберите **адрес электронной почты, SMS/Push/Voice** в качестве **типа действия.**
 
@@ -98,26 +98,26 @@ ms.locfileid: "100571904"
 
 Откроется **Электронная почта, SMS, Push/Voice**. Выберите **имя** получателя, **Проверьте** поле адреса **электронной** почты и введите адрес электронной почты, по которому должно быть отправлено оповещение. Нажмите кнопку **ОК** в окне  **Электронная почта, SMS/Push/Voice**, а затем в **группе Добавить действие** , чтобы завершить настройку группы действий.
 
-![Правило генерации оповещений создает группу действий](media/cluster-availability-monitor-logs/portal-add-action-group.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-add-action-group.png" alt-text="Правило генерации оповещений создает группу действий":::
 
 После того, как эти колонки будут закрыты, вы увидите группу действий, указанную в разделе **группы действий** . Наконец, заполните раздел **сведения о предупреждении** , введя имя и **Описание** **правила генерации оповещений** и выбрав **серьезность**. Щелкните **создать правило генерации оповещений** , чтобы завершить работу.
 
-![Портал создает окончание правила генерации оповещений](media/cluster-availability-monitor-logs/portal-create-alert-rule-finish.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-create-alert-rule-finish.png" alt-text="Портал создает окончание правила генерации оповещений":::
 
 > [!TIP]
 > Возможность указывать **серьезность** — это мощный инструмент, который можно использовать при создании нескольких предупреждений. Например, можно создать одно оповещение для вызова предупреждения (уровень серьезности 1), если один головной узел выходит из строя, и другое оповещение, которое вызывает критическое (уровень серьезности 0) в маловероятном случае, если оба головных узла выходят из строя.
 
 При выполнении условия для этого предупреждения будет срабатывать предупреждение, и вы получите сообщение электронной почты со сведениями о предупреждении следующего вида:
 
-![Пример оповещения по электронной почте Azure Monitor](media/cluster-availability-monitor-logs/portal-oms-alert-email.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-oms-alert-email.png" alt-text="Пример оповещения по электронной почте Azure Monitor":::
 
 Вы также можете просмотреть все оповещения, которые были запущены, сгруппированные по серьезности, перейдя к **оповещениям** в **рабочей области log Analytics**.
 
-![Оповещения рабочей области Log Analytics](media/cluster-availability-monitor-logs/hdi-portal-oms-alerts.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/hdi-portal-oms-alerts.png" alt-text="Оповещения рабочей области Log Analytics":::
 
 При выборе группирования с уровнем серьезности ( **уровень серьезности 1,** как показано выше) будут показаны записи для всех предупреждений этой серьезности, которые были запущены, как показано ниже:
 
-![Log Analytics рабочей области уровень серьезности одно оповещение](media/cluster-availability-monitor-logs/portal-oms-alerts-sev1.png)
+:::image type="content" source="media/cluster-availability-monitor-logs/portal-oms-alerts-sev1.png" alt-text="Log Analytics рабочей области уровень серьезности одно оповещение":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
