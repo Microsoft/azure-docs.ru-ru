@@ -4,15 +4,15 @@ description: Узнайте, как использовать внедрение 
 author: ggailey777
 ms.topic: conceptual
 ms.custom: devx-track-csharp
-ms.date: 01/27/2021
+ms.date: 03/24/2021
 ms.author: glenga
 ms.reviewer: jehollan
-ms.openlocfilehash: 66e2cd22f4bcb95be65d6d04345dcac622436a04
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 32cd2760eadc94466cdf55883611c78ac0cf24e6
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98955094"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105608125"
 ---
 # <a name="use-dependency-injection-in-net-azure-functions"></a>Использование внедрения зависимостей в Функциях Azure .NET
 
@@ -21,6 +21,11 @@ ms.locfileid: "98955094"
 - Внедрение зависимостей в Функциях Azure основано на функциях внедрения зависимостей .NET Core. Рекомендуется ознакомиться с [Внедрением зависимостей .NET Core](/aspnet/core/fundamentals/dependency-injection). Существуют различия в переопределении зависимостей и считывании значений конфигурации, если служба Функций Azure использует план потребления.
 
 - Поддержка внедрения зависимостей появилась в Функциях Azure 2.x.
+
+- Шаблоны внедрения зависимостей различаются в зависимости от того, выполняются ли функции C# [в процессе](functions-dotnet-class-library.md) или [вне процесса](dotnet-isolated-process-guide.md).  
+
+> [!IMPORTANT]
+> Рекомендации в этой статье относятся только к [функциям библиотеки классов C#](functions-dotnet-class-library.md), которые выполняются внутри процесса со средой выполнения. Эта настраиваемая модель внедрения зависимостей не применяется к [изолированным функциям .NET](dotnet-isolated-process-guide.md), что позволяет запускать функции .NET 5,0 вне процесса. Модель изолированного процесса .NET полагается на обычные шаблоны внедрения зависимостей ASP.NET Core. Дополнительные сведения см. в разделе [Введение зависимостей](dotnet-isolated-process-guide.md#dependency-injection) в инструкции по изолированному процессу .NET.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

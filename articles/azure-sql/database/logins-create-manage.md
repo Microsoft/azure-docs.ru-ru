@@ -13,12 +13,12 @@ author: VanMSFT
 ms.author: vanto
 ms.reviewer: sstein
 ms.date: 03/23/2020
-ms.openlocfilehash: d03bce1566d4f56a576c980723571f587296236f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6383c0fa3aad15da8abaea79136a75732ce9ea01
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96452419"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605779"
 ---
 # <a name="authorize-database-access-to-sql-database-sql-managed-instance-and-azure-synapse-analytics"></a>Авторизация доступа к Базе данных SQL, Управляемому экземпляру SQL и Azure Synapse Analytics
 [!INCLUDE[appliesto-sqldb-sqlmi-asa](../includes/appliesto-sqldb-sqlmi-asa.md)]
@@ -142,7 +142,7 @@ ms.locfileid: "96452419"
   - Чтобы добавить пользователя к предопределенной роли базы данных, выполните следующие действия.
 
     - В базе данных SQL Azure используйте инструкцию [ALTER ROLE](/sql/t-sql/statements/alter-role-transact-sql) . Примеры см. в разделе [ALTER ROLE examples](/sql/t-sql/statements/alter-role-transact-sql#examples) .
-    - Azure синапсе. Используйте инструкцию [sp_addrolemember](/sql/relational-databases/system-stored-procedures/sp-addrolemember-transact-sql) . Примеры см. в разделе [sp_addrolemember примеры](/sql/t-sql/statements/alter-role-transact-sql).
+    - Azure синапсе. Используйте инструкцию [sp_addrolemember](/sql/relational-databases/system-stored-procedures/sp-addrolemember-transact-sql) . Примеры см. в разделе [sp_addrolemember примеры](/sql/relational-databases/system-stored-procedures/sp-addrolemember-transact-sql#examples).
 
 - **Пользовательская роль базы данных**
 

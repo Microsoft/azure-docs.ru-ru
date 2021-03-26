@@ -9,12 +9,12 @@ ms.subservice: monitoring
 ms.date: 11/30/2020
 ms.author: mahi
 ms.reviewer: mahi
-ms.openlocfilehash: ac5b1df5ff246623b73dbc41d18216396e6ed7ef
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 6861fd7a92c26fad883f14fb430a03b237c90122
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102549861"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609264"
 ---
 # <a name="use-azure-monitor-with-your-azure-synapse-analytics-workspace"></a>Использование Azure Monitor с рабочей областью Azure синапсе Analytics
 
@@ -171,9 +171,9 @@ Azure Monitor предоставляет метрики инфраструкту
 1. Присвойте параметру имя, выберите **отправить log Analytics**, а затем выберите рабочую область из **log Analytics рабочей области**.
 
     > [!NOTE]
-    > Так как таблица журналов Azure не может содержать более 500 столбцов, мы **настоятельно рекомендуем** выбрать _режим для конкретного ресурса_. Дополнительные сведения см. в разделе [Справочник по журналам AzureDiagnostics](/azure-monitor/reference/tables/azurediagnostics#additionalfields-column).
+    > Так как таблица журналов Azure не может содержать более 500 столбцов, мы **настоятельно рекомендуем** выбрать _режим для конкретного ресурса_. Дополнительные сведения см. в разделе [Справочник по журналам AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics).
 
-1. Щелкните **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 Через несколько секунд новый параметр появится в списке параметров для рабочей области, выделенного пула SQL или пула Apache Spark. Журналы диагностики передаются в эту рабочую область, как только создаются новые данные о событиях. Между созданием события и его отображением в Log Analytics может пройти до 15 минут.
 

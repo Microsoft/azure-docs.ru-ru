@@ -1,17 +1,17 @@
 ---
 title: Расширения базы данных Azure для PostgreSQL — один сервер
 description: Сведения о доступных расширениях postgres в базе данных Azure для PostgreSQL-Single Server
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
-ms.date: 09/14/2020
-ms.openlocfilehash: 78395873457f9fe53d45dfbfd94aa9ccdccd614d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.openlocfilehash: de395bed885804445146b01745edf5e93426cb13
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92485466"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105606323"
 ---
 # <a name="postgresql-extensions-in-azure-database-for-postgresql---single-server"></a>Расширения PostgreSQL в Базе данных Azure для PostgreSQL — один сервер
 PostgreSQL предоставляет возможность расширить функциональность базы данных с помощью расширений. Расширения позволяют объединить несколько связанных объектов SQL в один пакет, чтобы загружать и удалять их из базы данных одной командой. После загрузки в базу данных расширения действуют как встроенные функции.
@@ -62,7 +62,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[postgis_topology](https://postgis.net/docs/Topology.html)             | 2.5.1           | Пространственные типы и функции топологии PostGIS|
 > |[postgres_fdw](https://www.postgresql.org/docs/11/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[tablefunc](https://www.postgresql.org/docs/11/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
-> |[тимескаледб](https://docs.timescale.com/latest)                    | 1.3.2             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
+> |[тимескаледб](https://docs.timescale.com/latest)                    | 1.3.2, 1.7.4             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
 > |[unaccent](https://www.postgresql.org/docs/11/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
 > |[uuid-ossp](https://www.postgresql.org/docs/11/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
@@ -108,7 +108,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[postgis_topology](https://postgis.net/docs/Topology.html)             | 2.4.3           | Пространственные типы и функции топологии PostGIS|
 > |[postgres_fdw](https://www.postgresql.org/docs/10/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[tablefunc](https://www.postgresql.org/docs/10/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
-> |[тимескаледб](https://docs.timescale.com/latest)                    | 1.1.1             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
+> |[тимескаледб](https://docs.timescale.com/latest)                    | 1.1.1, 1.7.4             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
 > |[unaccent](https://www.postgresql.org/docs/10/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
 > |[uuid-ossp](https://www.postgresql.org/docs/10/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
@@ -154,11 +154,14 @@ PostgreSQL предоставляет возможность расширить 
 > |[postgis_topology](https://postgis.net/docs/Topology.html)             | 2.3.2           | Пространственные типы и функции топологии PostGIS|
 > |[postgres_fdw](https://www.postgresql.org/docs/9.6/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[tablefunc](https://www.postgresql.org/docs/9.6/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
-> |[тимескаледб](https://docs.timescale.com/latest)                    | 1.1.1             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
+> |[тимескаледб](https://docs.timescale.com/latest)                    | 1.1.1, 1.7.4             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
 > |[unaccent](https://www.postgresql.org/docs/9.6/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
 > |[uuid-ossp](https://www.postgresql.org/docs/9.6/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
-## <a name="postgres-95-extensions"></a>Расширения postgres 9,5 
+## <a name="postgres-95-extensions"></a>Расширения postgres 9,5
+
+>[!NOTE]
+> PostgreSQL версии 9,5 была снята с учета.
 
 В базе данных Azure для серверов PostgreSQL доступны следующие расширения с Postgres версии 9,5.
 

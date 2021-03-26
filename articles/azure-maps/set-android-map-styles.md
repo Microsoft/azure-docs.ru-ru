@@ -9,24 +9,24 @@ ms.service: azure-maps
 services: azure-maps
 manager: cpendle
 zone_pivot_groups: azure-maps-android
-ms.openlocfilehash: aef8fbacf8302fb5dd4b5fe28afc615c6bf56090
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 9dcb5b84faa47b7307ce8441003e8591d7c2757b
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102100990"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604793"
 ---
 # <a name="set-map-style-android-sdk"></a>Задать стиль схемы (пакет SDK для Android)
 
 В этой статье показано два способа установки стилей карт с помощью пакет SDK для Android Azure Maps. Azure Maps имеет шесть различных стилей карт для выбора. Дополнительные сведения о поддерживаемых стилях карт см. [в разделе Поддерживаемые стили карт в Azure Maps](supported-map-styles.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Не забудьте выполнить действия, описанные в разделе [Краткое руководство. Создание документа приложения Android](quick-android-map.md) .
 
 ## <a name="set-map-style-in-the-layout"></a>Задать стиль схемы в макете
 
-Вы можете задать стиль схемы в файле макета для класса действия при добавлении элемента управления картой. Следующий код задает Центральный расположение, масштаб и стиль отображения.
+Вы можете задать стиль схемы в файле макета для класса действия при добавлении элемента управления картой. Следующий код задает центральное расположение, масштаб и стиль схемы.
 
 ```XML
 <com.microsoft.azure.maps.mapcontrol.MapControl
@@ -83,7 +83,7 @@ mapControl!!.onReady { map: AzureMap ->
 
 ## <a name="setting-the-map-camera"></a>Настройка камеры на карте
 
-Камера на карте управляет тем, какая часть схемы отображается на карте. Камера может располагаться в макете программным способом в коде. При его задании в коде существует два основных метода установки расположения Map. Использование центра и масштаба или передача ограничивающего прямоугольника. В следующем коде показано, как задать все необязательные параметры камеры при использовании `center` и `zoom` .
+Камера на карте определяет, какая часть мира отображается в окне просмотра карт. Камера может располагаться в макете программным способом в коде. При его задании в коде существует два основных метода установки расположения Map. Использование центра и масштаба или передача ограничивающего прямоугольника. В следующем коде показано, как задать все необязательные параметры камеры при использовании `center` и `zoom` .
 
 ::: zone pivot="programming-language-java-android"
 
@@ -104,7 +104,7 @@ map.setCamera(
     //The minimum zoom level the map will zoom-out to when animating from one location to another on the map.
     minZoom(10),
     
-    //The maximium zoom level the map will zoom-in to when animating from one location to another on the map.
+    //The maximum zoom level the map will zoom-in to when animating from one location to another on the map.
     maxZoom(14)
 );
 ```
@@ -130,7 +130,7 @@ map.setCamera(
     //The minimum zoom level the map will zoom-out to when animating from one location to another on the map.
     minZoom(10),
     
-    //The maximium zoom level the map will zoom-in to when animating from one location to another on the map.
+    //The maximum zoom level the map will zoom-in to when animating from one location to another on the map.
     maxZoom(14)
 )
 ```
@@ -162,7 +162,7 @@ map.setCamera(
     //Amount of pixel buffer around the bounding box to provide extra space around the bounding box.
     padding(20),
 
-    //The maximium zoom level the map will zoom-in to when animating from one location to another on the map.
+    //The maximum zoom level the map will zoom-in to when animating from one location to another on the map.
     maxZoom(14)
 );
 ```
@@ -192,14 +192,14 @@ map.setCamera(
     //Amount of pixel buffer around the bounding box to provide extra space around the bounding box.
     padding(20),
 
-    //The maximium zoom level the map will zoom-in to when animating from one location to another on the map.
+    //The maximum zoom level the map will zoom-in to when animating from one location to another on the map.
     maxZoom(14)
 )
 ```
 
 ::: zone-end
 
-Обратите внимание, что пропорции ограничивающего прямоугольника могут не совпадать с пропорциями на карте, так как такая схема часто показывает полный ограничивающий прямоугольник, но часто будет по вертикали или по горизонтали.
+Пропорции ограничивающего прямоугольника могут отличаться от пропорций на карте, так как такая схема часто показывает область полного ограничивающего прямоугольника, но часто обплотна по вертикали или по горизонтали.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -3,40 +3,34 @@ title: Мониторинг пакетной службы с помощью Azur
 description: Узнайте, как инструментировать приложение .NET пакетной службы Azure с помощью библиотеки Azure Application Insights.
 ms.topic: how-to
 ms.custom: devx-track-csharp
-ms.date: 04/05/2018
-ms.openlocfilehash: 9decb99c3de798df43dedc2441208066d18e3a13
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 03/25/2021
+ms.openlocfilehash: 251f02f145e8f450b1528bf8676cffdc61a6f051
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104605789"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105607887"
 ---
 # <a name="monitor-and-debug-an-azure-batch-net-application-with-application-insights"></a>Мониторинг и отладка приложения .NET пакетной службы Azure с помощью Application Insights
 
 [Application Insights](../azure-monitor/app/app-insights-overview.md) предоставляет разработчикам элегантный и эффективный способ мониторинга и отладки приложений, развернутых в службах Azure. Application Insights можно использовать для мониторинга счетчиков производительности и исключений, а также инструментирования кода с помощью настраиваемых метрик и трассировки. Интеграция Application Insights с приложением пакетной службы позволяет получать полное представление о поведении и исследовать проблемы практически в режиме реального времени.
 
-В этой статье показано, как добавить и настроить библиотеку Application Insights в вашем решении .NET пакетной службы Azure и инструментировать код приложения. Здесь также описаны способы мониторинга приложения на портале Azure и создания настраиваемых панелей мониторинга. Для поддержки Application Insights на других языках ознакомьтесь с [документацией по языкам, платформам и интеграции](../azure-monitor/app/platforms.md).
+В этой статье показано, как добавить и настроить библиотеку Application Insights в вашем решении .NET пакетной службы Azure и инструментировать код приложения. Здесь также описаны способы мониторинга приложения на портале Azure и создания настраиваемых панелей мониторинга. Сведения о поддержке Application Insights в других языках см. в [документации по языкам, платформам и интеграции](../azure-monitor/app/platforms.md).
 
-Пример решения C# с кодом, который служит дополнением к этой статье, доступен в [GitHub](https://github.com/Azure/azure-batch-samples/tree/master/CSharp/ArticleProjects/ApplicationInsights). В этом примере код инструментирования Application Insights добавляется в пример [TopNWords](https://github.com/Azure/azure-batch-samples/tree/master/CSharp/TopNWords). Если вы не знакомы с этим примером, сначала создайте и запустите TopNWords. Это поможет вам получить представление о базовом рабочем процессе обработки набора входных больших двоичных объектов в параллельном режиме на нескольких вычислительных узлах в пакетной службе. 
+Пример решения C# с кодом, который служит дополнением к этой статье, доступен в [GitHub](https://github.com/Azure/azure-batch-samples/tree/master/CSharp/ArticleProjects/ApplicationInsights). В этом примере код инструментирования Application Insights добавляется в пример [TopNWords](https://github.com/Azure/azure-batch-samples/tree/master/CSharp/TopNWords). Если вы не знакомы с этим примером, сначала создайте и запустите TopNWords. Это поможет вам получить представление о базовом рабочем процессе обработки набора входных больших двоичных объектов в параллельном режиме на нескольких вычислительных узлах в пакетной службе.
 
 > [!TIP]
-> Также можно настроить в решении пакетной службы отображение данных из Application Insights, таких как счетчики производительности виртуальных машин в Batch Explorer. [Batch Explorer](https://github.com/Azure/BatchExplorer) — это бесплатный автономный клиентский инструмент с множеством функций для создания, отладки и мониторинга приложений пакетной службы Azure. Скачайте [пакет установки](https://azure.github.io/BatchExplorer/) для Mac, Linux или Windows. См. [репозиторий batch-insights](https://github.com/Azure/batch-insights) с описанием быстрых действий, позволяющих включить данные Application Insights в Batch Explorer. 
->
+> Также можно настроить в решении пакетной службы отображение данных из Application Insights, таких как счетчики производительности виртуальных машин в Batch Explorer. [Batch Explorer](https://github.com/Azure/BatchExplorer) — это бесплатный автономный клиентский инструмент с множеством функций для создания, отладки и мониторинга приложений пакетной службы Azure. Скачайте [пакет установки](https://azure.github.io/BatchExplorer/) для Mac, Linux или Windows. См. [репозиторий batch-insights](https://github.com/Azure/batch-insights) с описанием быстрых действий, позволяющих включить данные Application Insights в Batch Explorer.
 
 ## <a name="prerequisites"></a>Предварительные требования
-* [Visual Studio 2017 или более поздней версии](https://www.visualstudio.com/vs)
 
-* [Учетная запись пакетной службы и связанная учетная запись хранения](batch-account-create-portal.md).
-
-* [Ресурс Application Insights](../azure-monitor/app/create-new-resource.md ).
-  
-   * Создайте *ресурс* Application Insights на портале Azure. Выберите *Общие* **Тип приложения**.
-
-   * Скопируйте [ключ инструментирования](../azure-monitor/app/create-new-resource.md#copy-the-instrumentation-key) на портале. Он понадобится вам позже.
+- [Visual Studio 2017 или более поздней версии](https://www.visualstudio.com/vs)
+- [Учетная запись пакетной службы и связанная учетная запись хранения](batch-account-create-portal.md).
+- [Application Insights ресурс](../azure-monitor/app/create-new-resource.md). Создайте *ресурс* Application Insights на портале Azure. Выберите *Общие* **Тип приложения**.
+- Скопируйте [ключ инструментирования](../azure-monitor/app/create-new-resource.md#copy-the-instrumentation-key) из портал Azure. Это значение понадобится позже.
   
   > [!NOTE]
-  > За данные, хранимые в Application Insights, может [взиматься плата](https://azure.microsoft.com/pricing/details/application-insights/). В том числе и данные диагностики и мониторинга, о которых идет речь в этой статье.
-  > 
+  > Возможно, вам придется [оплатить](https://azure.microsoft.com/pricing/details/application-insights/) данные, хранящиеся в Application Insights. В том числе и данные диагностики и мониторинга, о которых идет речь в этой статье.
 
 ## <a name="add-application-insights-to-your-project"></a>Добавление Application Insights в ваш проект
 
@@ -45,6 +39,7 @@ ms.locfileid: "104605789"
 ```powershell
 Install-Package Microsoft.ApplicationInsights.WindowsServer
 ```
+
 Создайте ссылку на Application Insights из приложения .NET с помощью пространства имен **Microsoft.ApplicationInsights**.
 
 ## <a name="instrument-your-code"></a>Инструментирование кода
@@ -54,14 +49,16 @@ Install-Package Microsoft.ApplicationInsights.WindowsServer
 ```xml
 <InstrumentationKey>YOUR-IKEY-GOES-HERE</InstrumentationKey>
 ```
+
 Кроме того, добавьте ключ инструментирования в файл TopNWords.cs.
 
 В примере в TopNWords.cs используются следующие [вызовы инструментария](../azure-monitor/app/api-custom-events-metrics.md) из API Application Insights:
-* `TrackMetric()` — отслеживает среднюю длительность загрузки необходимого текстового файла на вычислительном узле.
-* `TrackTrace()` — добавляет вызовы отладки в код.
-* `TrackEvent()` — отслеживает интересующие события, сведения о которых необходимо записать.
 
-В этом примере намеренно не указана обработка исключений. Вместо этого Application Insights автоматически отправляет отчеты о необработанных исключениях, что значительно улучшает процесс отладки. 
+- `TrackMetric()` — отслеживает среднюю длительность загрузки необходимого текстового файла на вычислительном узле.
+- `TrackTrace()` — добавляет вызовы отладки в код.
+- `TrackEvent()` — отслеживает интересующие события, сведения о которых необходимо записать.
+
+В этом примере намеренно не указана обработка исключений. Вместо этого Application Insights автоматически отправляет отчеты о необработанных исключениях, что значительно улучшает процесс отладки.
 
 В следующем фрагменте кода показано, как использовать эти методы.
 
@@ -118,7 +115,8 @@ public void CountWords(string blobName, int numTopN, string storageAccountName, 
 ```
 
 ### <a name="azure-batch-telemetry-initializer-helper"></a>Вспомогательное приложение инициализатора данных телеметрии пакетной службы Azure
-При создании отчетов о данных телеметрии для данного сервера и экземпляра Application Insights использует роль виртуальной машины Azure и имя виртуальной машины в качестве значений по умолчанию. В контексте пакетной службы Azure в примере показано, как вместо этого использовать имя пула и вычислительного узла. Используйте [инициализатор данных телеметрии](../azure-monitor/app/api-filtering-sampling.md#add-properties), чтобы переопределить значения по умолчанию. 
+
+При создании отчетов о данных телеметрии для данного сервера и экземпляра Application Insights использует роль виртуальной машины Azure и имя виртуальной машины в качестве значений по умолчанию. В контексте пакетной службы Azure в примере показано, как вместо этого использовать имя пула и вычислительного узла. Используйте [инициализатор данных телеметрии](../azure-monitor/app/api-filtering-sampling.md#add-properties), чтобы переопределить значения по умолчанию.
 
 ```csharp
 using Microsoft.ApplicationInsights.Channel;
@@ -173,7 +171,7 @@ namespace Microsoft.Azure.Batch.Samples.TelemetryInitializer
 <TelemetryInitializers>
     <Add Type="Microsoft.Azure.Batch.Samples.TelemetryInitializer.AzureBatchNodeTelemetryInitializer, Microsoft.Azure.Batch.Samples.TelemetryInitializer"/>
 </TelemetryInitializers>
-``` 
+```
 
 ## <a name="update-the-job-and-tasks-to-include-application-insights-binaries"></a>Добавление двоичных файлов Application Insights в задание и задачи
 
@@ -200,6 +198,7 @@ private static readonly List<string> AIFilesToUpload = new List<string>()
 ```
 
 Затем создайте промежуточные файлы, используемые задачей.
+
 ```csharp
 ...
 // create file staging objects that represent the executable and its dependent assembly to run as the task.
@@ -219,6 +218,7 @@ foreach (string aiFile in AIFilesToUpload)
 Метод `FileToStage` — это вспомогательная функция в примере кода, которая позволяет легко отправить файл с локального диска в большой двоичный объект службы хранилища Azure. Каждый файл позже загружается на вычислительный узел и на него ссылается задача.
 
 Наконец, добавьте задачи в задание и необходимые двоичные файлы Application Insights.
+
 ```csharp
 ...
 // initialize a collection to hold the tasks that will be submitted in their entirety
@@ -260,7 +260,7 @@ for (int i = 1; i <= topNWordsConfiguration.NumberOfTasks; i++)
 
 Чтобы просмотреть журналы трассировки в ресурсе Application Insights, щелкните **Live Stream**. На следующем снимке экрана показано, как просматривать динамические данные, поступающие из вычислительных узлов в пуле, например данные об использовании ЦП одного вычислительного узла.
 
-![Данные вычислительного узла Live Stream](./media/monitor-application-insights/applicationinsightslivestream.png)
+![Снимок экрана: данные о вычисленных узлах в реальном потоке.](./media/monitor-application-insights/applicationinsightslivestream.png)
 
 ### <a name="view-trace-logs"></a>Просмотр журналов трассировки
 
@@ -268,30 +268,30 @@ for (int i = 1; i <= topNWordsConfiguration.NumberOfTasks; i++)
 
 На следующем снимке экрана показано, как одиночная трассировка для задачи записывается в журнал, а затем запрашивается для целей отладки.
 
-![Изображение журналов трассировки](./media/monitor-application-insights/tracelogsfortask.png)
+![Снимок экрана, показывающий журналы для одной трассировки.](./media/monitor-application-insights/tracelogsfortask.png)
 
 ### <a name="view-unhandled-exceptions"></a>Просмотр необработанных исключений
 
-На следующих снимках экрана показано, каким образом Application Insights записывает в журнал исключения, возникшие в приложении. В этом случае в течение нескольких секунд после создания исключения в приложении можно перейти к определенному исключению и диагностировать проблему.
+Application Insights регистрирует исключения, возникающие в приложении. В этом случае в течение нескольких секунд после создания исключения в приложении можно перейти к определенному исключению и диагностировать проблему.
 
-![Необработанные исключения](./media/monitor-application-insights/exception.png)
+![Снимок экрана, показывающий необработанные исключения.](./media/monitor-application-insights/exception.png)
 
 ### <a name="measure-blob-download-time"></a>Измерение времени загрузки больших двоичных объектов
 
 Настраиваемые метрики также являются полезным средством на портале. Например, можно отобразить среднее время, затраченное на каждом вычислительном узле для загрузки необходимого текстового файла, который он обрабатывал.
 
 Создание примера диаграммы
+
 1. В ресурсе Application Insights щелкните **Обозреватель метрик** > **Добавить диаграмму**.
-2. Нажмите кнопку **Изменить** на добавленной диаграмме.
-2. Обновите сведения диаграммы следующим образом:
-   * Для параметра **Тип диаграммы** задайте значение **Сетка**.
-   * Для параметра **Агрегирование** задайте значение **Среднее**.
-   * Для параметра **Группировать по** задайте значение **NodeId**.
-   * В разделе **Метрики** выберите **Настраиваемая** > **Blob download in seconds** (Загрузка большого двоичного объекта в секундах).
-   * Выберите нужный цвет в поле **Палитра цветов**. 
+1. Нажмите кнопку **Изменить** на добавленной диаграмме.
+1. Обновите сведения диаграммы следующим образом:
+   - Для параметра **Тип диаграммы** задайте значение **Сетка**.
+   - Для параметра **Агрегирование** задайте значение **Среднее**.
+   - Для параметра **Группировать по** задайте значение **NodeId**.
+   - В разделе **Метрики** выберите **Настраиваемая** > **Blob download in seconds** (Загрузка большого двоичного объекта в секундах).
+   - Выберите нужный цвет в поле **Палитра цветов**.
 
-![Время загрузки больших двоичных объектов на одном узле](./media/monitor-application-insights/blobdownloadtime.png)
-
+![Снимок экрана диаграммы, показывающей время загрузки большого двоичного объекта на узел.](./media/monitor-application-insights/blobdownloadtime.png)
 
 ## <a name="monitor-compute-nodes-continuously"></a>Постоянный мониторинг вычислительных узлов
 
@@ -327,16 +327,12 @@ pool.StartTask = new StartTask()
 
 > [!TIP]
 > Чтобы улучшить управляемость вашего решения, можно объединить сборку в [пакете приложения](./batch-application-packages.md). Далее, чтобы автоматически развернуть пакет приложения в пулы, добавьте ссылку на пакет приложения в конфигурацию пула.
->
 
-## <a name="throttle-and-sample-data"></a>Регулирование и образцы данных 
+## <a name="throttle-and-sample-data"></a>Регулирование и образцы данных
 
 Из-за особенностей крупномасштабных приложений пакетной службы Azure, работающих в рабочей среде, для управления затратами может потребоваться ограничить объем данных, собираемых Application Insights. Сведения о механизмах, с помощью которых этого можно добиться, см. в статье [Выборка в Application Insights](../azure-monitor/app/sampling.md).
 
-
 ## <a name="next-steps"></a>Дальнейшие действия
-* Дополнительные сведения об [Application Insights](../azure-monitor/app/app-insights-overview.md).
 
-* Для поддержки Application Insights на других языках ознакомьтесь с [документацией по языкам, платформам и интеграции](../azure-monitor/app/platforms.md).
-
-
+- Дополнительные сведения об [Application Insights](../azure-monitor/app/app-insights-overview.md).
+- Сведения о поддержке Application Insights в других языках см. в [документации по языкам, платформам и интеграции](../azure-monitor/app/platforms.md).

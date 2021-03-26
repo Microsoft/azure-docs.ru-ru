@@ -1,5 +1,5 @@
 ---
-title: Настройка интерфейса передачи сообщений для HPC — виртуальные машины Azure | Документация Майкрософт
+title: Настройка интерфейса передачи сообщений (MPI) для HPC — виртуальные машины Azure | Документация Майкрософт
 description: Узнайте, как настроить MPI для HPC в Azure.
 author: vermagit
 ms.service: virtual-machines
@@ -8,12 +8,12 @@ ms.topic: article
 ms.date: 03/18/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 8f071dfe817d15b745575fbfb70ff662a643db70
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 66de34c43ab1b3a6b4245f77196793bf9ad8530c
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104721359"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105606646"
 ---
 # <a name="set-up-message-passing-interface-for-hpc"></a>Настройка интерфейса передачи сообщений для HPC
 
@@ -64,6 +64,11 @@ HPCX_PATH=${INSTALL_PREFIX}/hpcx-${HPCX_VERSION}-gcc-MLNX_OFED_LINUX-5.0-1.0.0.0
 ```bash
 ${HPCX_PATH}mpirun -np 2 --map-by ppr:2:node -x UCX_TLS=rc ${HPCX_PATH}/ompi/tests/osu-micro-benchmarks-5.3.2/osu_latency
 ```
+
+### <a name="optimizing-mpi-collectives"></a>Оптимизация общих для MPI
+
+Примитивы коллективной связи MPI предлагают гибкий, переносимый способ реализации операций связи групп. Они широко используются в различных научных приложениях и оказывают значительное влияние на общую производительность приложения. Сведения о параметрах конфигурации для оптимизации общей производительности обмена данными с помощью HPC-X и библиотеки ХКОЛЛ для коллективной связи см. в [статье течкоммунити](https://techcommunity.microsoft.com/t5/azure-compute/optimizing-mpi-collective-communication-using-hpc-x-on-azurehpc/ba-p/1356740) .
+
 > [!NOTE] 
 > При использовании HPC-X 2.7.4 + может потребоваться явно передавать LD_LIBRARY_PATH, если версия УККС в МОФЕД VS, а в HPC-X отличается.
 
@@ -252,7 +257,7 @@ chmod 644 /home/$USER/.ssh/config
 
 В приведенном выше синтаксисе предполагается наличие общего домашнего каталога, иначе каталог. ssh должен быть скопирован на каждый узел.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о виртуальных машинах серии [H](../../sizes-hpc.md) и [N](../../sizes-gpu.md) с [поддержкой InfiniBand](../../sizes-hpc.md#rdma-capable-instances)
 - Ознакомьтесь с обзором [HBv3-Series](hbv3-series-overview.md) и [описанием серии HC](hc-series-overview.md).

@@ -8,12 +8,12 @@ ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: conceptual
 ms.date: 03/25/2021
-ms.openlocfilehash: b1bb749400cfb1e289a0a335275f4654d37145e9
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 2f12f33bf6108784b2eec252fb12d03eebd2a45c
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105046510"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604945"
 ---
 # <a name="how-to-plan-a-saas-offer-for-the-commercial-marketplace"></a>Как спланировать предложение SaaS для коммерческого рынка
 
@@ -37,9 +37,9 @@ ms.locfileid: "105046510"
 
 Дополнительные сведения об этих параметрах перечня см. в разделе [возможности Transact Marketplace для коммерческого рынка](marketplace-commercial-transaction-capabilities-and-considerations.md).
 
-После публикации предложения в верхнем левом углу страницы со списком вашего предложения появится кнопка списка, выбранная для вашего предложения. Например, на следующем снимке экрана показана страница со списком предложений в Azure Marketplace с кнопками **получить сейчас** и **проверить диск** .
+После публикации предложения в верхнем левом углу страницы со списком вашего предложения появится кнопка списка, выбранная для вашего предложения. Например, на следующем снимке экрана показана страница со списком предложений в Azure Marketplace с кнопкой **получить сейчас** .
 
-![Показывает список предложений в Интернет-магазине.](./media/listing-options.png)
+![Показывает список предложений в Интернет-магазине.](./media/saas/listing-options-saas-full.png)
 
 ## <a name="technical-requirements"></a>Технические требования
 
@@ -138,7 +138,7 @@ ms.locfileid: "105046510"
 
 При [создании нового предложения SaaS](create-new-saas-offer.md) в центре партнеров вы будете вводить текст, изображения, дополнительные видео и другие сведения на странице **со списком предложений** . Это сведения, которые увидят клиенты при обнаружении вашего предложения в коммерческом магазине, как показано в следующем примере.
 
-:::image type="content" source="./media/example-saas-1.png" alt-text="Показывает, как это предложение появляется в Microsoft AppSource.":::
+:::image type="content" source="./media/saas/example-saas-1.png" alt-text="Показывает, как это предложение появляется в Microsoft AppSource.":::
 
 **Описания вызова**
 

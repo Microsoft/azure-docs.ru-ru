@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/03/2021
-ms.openlocfilehash: c088625528190ad116676fbb51cec9f8de4b1578
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 21012848ba3624df6110eaea182beccc4646d234
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104600808"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609281"
 ---
 # <a name="querying-in-azure-cognitive-search"></a>Запросы в Azure Когнитивный поиск
 
@@ -77,7 +77,7 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 
 ## <a name="autocomplete-and-suggested-queries"></a>Автозаполнение и предлагаемые запросы
 
-[Автозаполнение или предлагаемые результаты](search-autocomplete-tutorial.md) являются альтернативами **`search`** , которые запускают последовательные запросы на основе неполных строковых значений (после каждого символа) в интерфейсе поиска по мере использования. **`autocomplete`** Параметр и можно использовать **`suggestions`** совместно или отдельно, как описано в [этом руководстве](tutorial-csharp-type-ahead-and-suggestions.md), но нельзя использовать с **`search`** . Как завершенные термины, так и предлагаемые запросы являются производными от содержимого индекса. Обработчик никогда не будет возвращать строку или предложение, которое не существует в индексе. Дополнительные сведения см. в разделе [Автозаполнение (REST API)](/rest/api/searchservice/autocomplete) и [предложения (REST API)](/rest/api/searchservice/suggestions).
+[Автозаполнение или предлагаемые результаты](search-add-autocomplete-suggestions.md) являются альтернативами **`search`** , которые запускают последовательные запросы на основе неполных строковых значений (после каждого символа) в интерфейсе поиска по мере использования. **`autocomplete`** Параметр и можно использовать **`suggestions`** совместно или отдельно, как описано в [этом руководстве](tutorial-csharp-type-ahead-and-suggestions.md), но нельзя использовать с **`search`** . Как завершенные термины, так и предлагаемые запросы являются производными от содержимого индекса. Обработчик никогда не будет возвращать строку или предложение, которое не существует в индексе. Дополнительные сведения см. в разделе [Автозаполнение (REST API)](/rest/api/searchservice/autocomplete) и [предложения (REST API)](/rest/api/searchservice/suggestions).
 
 ## <a name="filter-search"></a>Фильтрация поиска
 

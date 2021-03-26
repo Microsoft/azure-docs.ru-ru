@@ -6,12 +6,12 @@ ms.author: pariks
 ms.service: mysql
 ms.topic: troubleshooting
 ms.date: 3/18/2020
-ms.openlocfilehash: 8a7a0f8754b0ed7981d0ec888552efc65f451ef9
-ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
+ms.openlocfilehash: d01febec3972dcc26c6e9b5aa8d0c4cca5f32d0a
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105109817"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105606085"
 ---
 # <a name="how-to-use-explain-to-profile-query-performance-in-azure-database-for-mysql"></a>Использование инструкции EXPLAIN для профилирования производительности запросов в службе "База данных Azure для MySQL"
 [!INCLUDE[applies-to-single-flexible-server](includes/applies-to-single-flexible-server.md)]
@@ -169,4 +169,4 @@ possible_keys: NULL
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Найти ответы на важные для вас вопросы, а также задать вопрос или ответить на него можно на [странице вопросов и ответов на сайте Майкрософт](/answers/topics/azure-database-mysql.html) или на [сайте Stack Overflow](https://stackoverflow.com/questions/tagged/azure-database-mysql).
+- Чтобы найти одноранговые ответы на наиболее важные вопросы или отправить новый вопрос или ответ, посетите [Stack overflow](https://stackoverflow.com/questions/tagged/azure-database-mysql).

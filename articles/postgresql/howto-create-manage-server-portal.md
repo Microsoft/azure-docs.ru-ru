@@ -1,17 +1,17 @@
 ---
 title: Управление базой данных Azure для PostgreSQL — портал Azure
 description: Узнайте, как управлять сервером базы данных Azure для PostgreSQL из портал Azure.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: how-to
 ms.date: 11/20/2019
-ms.openlocfilehash: 393e67d1b690f7231b5bf298b44f4db7c489d184
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 4b581ac137a4172ab70e4fb3fb2a75e268115c06
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91704520"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604130"
 ---
 # <a name="manage-an-azure-database-for-postgresql-server-using-the-azure-portal"></a>Управление базой данных Azure для сервера PostgreSQL с помощью портал Azure
 
@@ -99,7 +99,7 @@ ms.locfileid: "91704520"
    > [!NOTE]
    > Удаление сервера необратимо.
 
-3. Выберите **Удалить**.
+3. Выберите команду **Удалить**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

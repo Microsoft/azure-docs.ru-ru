@@ -5,15 +5,15 @@ author: vermagit
 ms.service: virtual-machines
 ms.subservice: hpc
 ms.topic: article
-ms.date: 03/18/2021
+ms.date: 03/25/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 65a06a60b502b0e189ebe8a5e203553494f5d128
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 4ab2c599bea4b2e3e682755a80a2ee348e4de7ef
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104721289"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105606782"
 ---
 # <a name="scaling-hpc-applications"></a>Масштабирование приложений HPC
 
@@ -43,6 +43,9 @@ ms.locfileid: "104721289"
    ```bash
    Max Connections = (processes per node) x (number of nodes per job) x (number of nodes per job) 
    ```
+
+## <a name="adaptive-routing"></a>Адаптивная маршрутизация
+Адаптивная маршрутизация (AR) позволяет виртуальным машинам Azure, работающим под управлением ЕДР и HDR InfiniBand, автоматически обнаруживать и избегать перегрузки сети, динамически выбирая более оптимальные сетевые пути. В результате AR предлагает улучшенную задержку и пропускную способность сети InfiniBand, которая, в свою очередь, повышает производительность и масштабируемость. Дополнительные сведения см. в [статье течкоммунити](https://techcommunity.microsoft.com/t5/azure-compute/adaptive-routing-on-azure-hpc/ba-p/1205217).
 
 ## <a name="process-pinning"></a>Закрепление процессов
 
@@ -107,6 +110,6 @@ gcc $(OPTIMIZATIONS) $(OMP) $(STACK) $(STREAM_PARAMETERS) stream.c -o stream.gcc
 ```
 </details>
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [HPC](/azure/architecture/topics/high-performance-computing/) в Azure.

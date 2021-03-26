@@ -10,12 +10,12 @@ ms.devlang: dotnet
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 7726877efcb72caf5bb4c92e2e1c65e5df68f270
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 76cb2f94c949217c36fdccb8c64a53555bab227c
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89002714"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105606340"
 ---
 # <a name="upgrade-to-azure-search-net-sdk-version-9"></a>Обновление до пакета SDK .NET версии 9 для службы поиска Azure
 
@@ -40,7 +40,7 @@ ms.locfileid: "89002714"
 
 * [Обогащение искусственного интеллекта](cognitive-search-concept-intro.md) — это возможность извлечения текста из изображений, больших двоичных объектов и других неструктурированных источников данных. Это позволяет расширить возможности поиска в индексе поиска Azure.
 * Поддержка [сложных типов](search-howto-complex-data-types.md) позволяет моделировать почти любую вложенную структуру JSON в индексе поиска Azure.
-* [Функция автозаполнения](search-autocomplete-tutorial.md) предоставляет альтернативу API **-** интерфейсу для реализации поведения поиска по мере использования. Автозаполнение "завершает" набираемое пользователем слово или фразу.
+* [Функция автозаполнения](search-add-autocomplete-suggestions.md) предоставляет альтернативу API **-** интерфейсу для реализации поведения поиска по мере использования. Автозаполнение "завершает" набираемое пользователем слово или фразу.
 * [Режим синтаксического анализа жсонлинес](search-howto-index-json-blobs.md), часть индексирования больших двоичных объектов Azure, создает один документ поиска для каждой сущности JSON, разделенной символом новой строки.
 
 ### <a name="new-preview-features-in-version-80-preview"></a>Новые функции предварительного просмотра в версии 8,0 — Предварительная версия
@@ -152,7 +152,7 @@ var index = new Index()
 
 ### <a name="removed-facetresults-and-hithighlights"></a>Удалены Фацетресултс и Хисигхлигхтс
 
-`FacetResults`Классы и были `HitHighlights` удалены. Результаты аспекта теперь вводятся как `IDictionary<string, IList<FacetResult>>` `IDictionary<string, IList<string>>` . Чтобы быстро устранить ошибки сборки, появившиеся в этом изменении, необходимо добавить `using` псевдонимы в верхней части каждого файла, использующего удаленные типы. Пример:
+`FacetResults`Классы и были `HitHighlights` удалены. Результаты аспекта теперь вводятся как `IDictionary<string, IList<FacetResult>>` `IDictionary<string, IList<string>>` . Чтобы быстро устранить ошибки сборки, появившиеся в этом изменении, необходимо добавить `using` псевдонимы в верхней части каждого файла, использующего удаленные типы. Например:
 
 ```csharp
 using FacetResults = System.Collections.Generic.IDictionary<string, System.Collections.Generic.IList<Models.FacetResult>>;

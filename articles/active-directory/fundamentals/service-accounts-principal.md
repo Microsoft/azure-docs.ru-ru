@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bab8e8c6dfb944e496c636d53217e63175be9fbc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 297c0a53fb2ab4ee0b2c5291cabf5a63c8841664
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104587854"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105604708"
 ---
 # <a name="securing-service-principals"></a>Защита субъектов-служб
 
@@ -84,7 +84,7 @@ ApplicationID представляет глобальное приложение
 
 `az ad sp list`
 
-Использование PowerShell
+Регистрация с помощью PowerShell
 
 `Get-AzureADServicePrincipal -All:$true` 
 
@@ -96,6 +96,7 @@ ApplicationID представляет глобальное приложение
 Чтобы оценить безопасность субъектов-служб, убедитесь, что вы оценили привилегии и хранилище учетных данных.
 
 Используйте следующие сведения для устранения потенциальных проблем.
+
 |Сложности | Устранение проблем|
 | - | - |
 | Обнаружение пользователя, который не отправлялся в многоклиентское приложение, и обнаружение незаконных предоставлений согласия для приложения с несколькими клиентами | Запустите следующую команду PowerShell, чтобы найти приложения с несколькими клиентами.<br>`Get-AzureADServicePrincipal -All:$true ? {$_.Tags -eq WindowsAzureActiveDirectoryIntegratedApp"}`<br>Отключить согласие пользователя. <br>Разрешить согласие пользователя от проверенных издателей для выбранных разрешений (рекомендуется) <br> Используйте условный доступ для блокировки субъектов-служб из ненадежных расположений. Настройте их в контексте пользователя, и их токены следует использовать для активации субъекта-службы.|

@@ -1,14 +1,14 @@
 ---
 title: Общие сведения об агенте подключенного компьютера
 description: В этой статье представлен подробный обзор доступного агента серверов с поддержкой Arc Azure, который поддерживает мониторинг виртуальных машин, размещенных в гибридных средах.
-ms.date: 03/15/2021
+ms.date: 03/25/2021
 ms.topic: conceptual
-ms.openlocfilehash: 1fd863ccacc7768401e35254a98c7bb494b3d358
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2db1758240dca448409af9f4ec00c01d684c920a
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103470495"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609242"
 ---
 # <a name="overview-of-azure-arc-enabled-servers-agent"></a>Обзор агента серверов с поддержкой ARC в Azure
 
@@ -18,6 +18,8 @@ ms.locfileid: "103470495"
 >Начиная с общего выпуска серверов с поддержкой дуги Azure в сентябре 2020, все предварительные версии агента подключенного компьютера Azure (агенты с версиями меньше 1,0) **устарели** до **2 февраля 2021**.  Этот период позволяет выполнить обновление до версии 1,0 или более поздней до выпуска предварительно выпущенных агентов, которые больше не смогут взаимодействовать со службой серверов с поддержкой ARC в Azure.
 
 ## <a name="agent-component-details"></a>Сведения о компоненте агента
+
+:::image type="content" source="media/agent-overview/connected-machine-agent.png" alt-text="Обзор агента серверов с поддержкой ARC." border="false":::
 
 Пакет агента подключенного компьютера Azure содержит несколько логических компонентов, Объединенных в пакеты.
 
@@ -52,7 +54,7 @@ ms.locfileid: "103470495"
 
 * Расположение ресурса (регион)
 * Virtual machine ID (Идентификатор виртуальной машины)
-* Теги
+* Tags
 * Сертификат управляемого удостоверения Azure Active Directory
 * Назначения политик гостевой конфигурации
 * Запросы расширения — установка, обновление и удаление.
@@ -299,7 +301,7 @@ az provider register --namespace 'Microsoft.GuestConfiguration'
     * /var/opt/azcmagent
     * /opt/logs
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Чтобы начать оценку серверов с поддержкой Arc Azure, следуйте указаниям в статье [подключение гибридных компьютеров к Azure из портал Azure](onboard-portal.md).
 

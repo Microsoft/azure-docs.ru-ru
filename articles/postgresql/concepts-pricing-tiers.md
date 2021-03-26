@@ -1,17 +1,17 @@
 ---
 title: Ценовые категории — база данных Azure для PostgreSQL — один сервер
 description: В этой статье описываются варианты вычислений и хранения в базе данных Azure для PostgreSQL-Single Server.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.openlocfilehash: 74d2654c54d1ab2ac5d47aa24449c41c20a90b74
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 119a68c4081cfc4fff6dc35b21badfac0397970b
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98791144"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605116"
 ---
 # <a name="pricing-tiers-in-azure-database-for-postgresql---single-server"></a>Ценовые категории Базы данных Azure для PostgreSQL (отдельный сервер)
 
@@ -39,7 +39,7 @@ ms.locfileid: "98791144"
 
 Вычислительные ресурсы поставляются в виде виртуальных ядер, которые представляют собой логические ЦП основного оборудования. Восточный Китай 1, Северный Китай 1, центральный регион US DoD и восточный регион US DoD используют логические процессоры 4-го поколения, основанные на процессорах Intel 2673 v3 (Haswell) с тактовой частотой 2,4 ГГц. Во всех остальных регионах используются логические процессоры объемом 5, основанные на процессорах Intel 2673 V4 (Broadwell) с тактовой частотой 2,3 ГГц.
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 Хранилище, которое вы подготавливаете, определяет объем доступной емкости хранилища для сервера службы "База данных Azure для PostgreSQL". Хранилище используется для файлов базы данных, временных файлов, журналов транзакций и журналов сервера PostgreSQL. Общий объем хранилища, который вы подготовили, также определяет доступную производительность операций ввода-вывода для сервера.
 
