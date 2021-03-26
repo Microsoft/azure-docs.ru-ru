@@ -3,12 +3,12 @@ title: Матрица защиты MABS (Azure Backup Server) v3 UR1
 description: В этой статье приводится матрица поддержки, в которой перечислены все рабочие нагрузки, типы данных и установки, которые защищает Azure Backup Server.
 ms.date: 03/19/2020
 ms.topic: conceptual
-ms.openlocfilehash: d8f2a38db468ec57cdc0a4f0813fe7ae8e341d52
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cfdd227135a2124e22a604bad4bd41594a38fb37
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102609776"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561276"
 ---
 # <a name="mabs-azure-backup-server-v3-ur1-protection-matrix"></a>Матрица защиты MABS (Azure Backup Server) v3 UR1
 
@@ -127,7 +127,7 @@ Azure Backup Server может защищать рабочие нагрузки 
   * Файловый сервер
   * Hyper-V
 
-  Эти рабочие нагрузки могут работать на одном сервере или в конфигурации кластера. Сведения о защите рабочей нагрузки, которая не входит в доверенный домен, см. в разделе [Подготовка компьютеров в рабочих группах и недоверенных доменах](https://docs.microsoft.com/system-center/dpm/prepare-environment-for-dpm) для получения точных сведений о поддерживаемых и требуемых проверках подлинности.
+  Эти рабочие нагрузки могут работать на одном сервере или в конфигурации кластера. Сведения о защите рабочей нагрузки, которая не входит в доверенный домен, см. в разделе [Подготовка компьютеров в рабочих группах и недоверенных доменах](/system-center/dpm/prepare-environment-for-dpm) для получения точных сведений о поддерживаемых и требуемых проверках подлинности.
 
 ## <a name="unsupported-data-types"></a>Неподдерживаемые типы данных
 
@@ -167,6 +167,6 @@ MABS не поддерживает защиту следующих типов д
 
   * Сжатие и хранилище единственных копий
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Таблица поддержки для резервного копирования с помощью Microsoft Azure Backup Server или System Center DPM](backup-support-matrix-mabs-dpm.md)

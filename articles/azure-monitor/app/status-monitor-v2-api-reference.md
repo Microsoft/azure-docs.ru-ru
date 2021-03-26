@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: TimothyMothra
 ms.author: tilee
 ms.date: 04/23/2019
-ms.openlocfilehash: 2278b9d70e888fa546dc64da4743b2bf5b6c45e8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7c5c2f1d055ec6270892873548872b20b17b4158
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100587522"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566903"
 ---
 # <a name="azure-monitor-application-insights-agent-api-reference"></a>Справочник по API агента Application Insights Azure Monitor
 
@@ -100,6 +100,8 @@ PS C:\> Enable-ApplicationInsightsMonitoring -InstrumentationKeyMap
 
 ```
 
+> [!NOTE]
+> Именование Аппфилтер в этом контексте может быть запутанным, `AppFilter` задает фильтр имени приложения Regex (HostingEnvironment. sitename в случае .NET на IIS). `VirtualPathFilter` Задает фильтр регулярных выражений виртуального пути (HostingEnvironment. Аппликатионвиртуалпас в случае .NET на IIS). Для инструментирования отдельного приложения используйте Виртуалпасфилтер следующим образом: `Enable-ApplicationInsightsMonitoring -InstrumentationKeyMap @(@{VirtualPathFilter="^/MyAppName$"; InstrumentationSettings=@{InstrumentationKey='<your ikey>'}})`
 
 ### <a name="parameters"></a>Параметры
 

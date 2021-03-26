@@ -7,14 +7,14 @@ manager: femila
 ms.service: media-services
 ms.topic: conceptual
 ms.workload: media
-ms.date: 1/14/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: 9c0040c0ad34b019eaa90bbd1571377ad3539578
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8853f5234cdbd5244d4624c91b7e3914948cf704
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98940106"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105561310"
 ---
 # <a name="content-protection-scenario-based-migration-guidance"></a>Руководство по миграции на основе сценариев защиты содержимого
 
@@ -58,7 +58,3 @@ ms.locfileid: "98940106"
 ## <a name="samples"></a>Примеры
 
 Кроме того, можно [сравнить код v2 и v3 в примерах кода](migrate-v-2-v-3-migration-samples.md).
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[!INCLUDE [migration guide next steps](./includes/migration-guide-next-steps.md)]

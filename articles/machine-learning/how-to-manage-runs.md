@@ -12,12 +12,12 @@ ms.reviewer: nibaccam
 ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, devx-track-azurecli
-ms.openlocfilehash: 26880fd6e3688dd95cc9f16072a35d5c4ce7c31e
-ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
+ms.openlocfilehash: f148a5b267edd3fc1dd33ef17d5ad01005b4a903
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105110276"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566291"
 ---
 # <a name="start-monitor-and-track-run-history"></a>Запуск, отслеживание и отслеживание журнала выполнения 
 
@@ -38,7 +38,7 @@ ms.locfileid: "105110276"
 > Дополнительные сведения о мониторинге службы Машинное обучение Azure и связанных служб Azure см. [в разделе мониторинг машинное обучение Azure](monitor-azure-machine-learning.md).
 > Сведения о мониторинге моделей, развернутых в виде веб-служб или модулей IoT Edge, см. в разделе [сбора данных модели](how-to-enable-data-collection.md) и [мониторинга с помощью Application Insights](how-to-enable-app-insights.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вам потребуются следующие элементы:
 
@@ -118,7 +118,7 @@ ms.locfileid: "105110276"
     
         См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-submit-script).
 
-    # <a name="studio"></a>[Студия](#tab/azure-studio)
+    # <a name="studio"></a>[Studio](#tab/azure-studio)
 
     Пример обучения модели в конструкторе Машинное обучение Azure см. в разделе [учебник. Прогнозирование цен автомобилей с помощью конструктора](tutorial-designer-automobile-price-train-score.md).
 
@@ -180,7 +180,7 @@ ms.locfileid: "105110276"
         Дополнительные сведения см. в разделе [AZ ML Run показ](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-show).
     
     
-    # <a name="studio"></a>[Студия](#tab/azure-studio)
+    # <a name="studio"></a>[Studio](#tab/azure-studio)
     
     Чтобы просмотреть свои запуски в студии, сделайте следующее: 
     
@@ -211,7 +211,7 @@ ms.locfileid: "105110276"
     1. В **сведениях о назначении** выберите **рабочую область отправить в log Analytics**  и укажите **подписку** и **log Analytics рабочую область**. 
 
     > [!NOTE]
-    > **Рабочая область azure log Analytics** — это ресурс Azure другого типа, отличный от **рабочей области службы машинное обучение Azure**. Если в этом списке нет параметров, можно [создать рабочую область log Analytics](https://docs.microsoft.com/azure/azure-monitor/logs/quick-create-workspace). 
+    > **Рабочая область azure log Analytics** — это ресурс Azure другого типа, отличный от **рабочей области службы машинное обучение Azure**. Если в этом списке нет параметров, можно [создать рабочую область log Analytics](../azure-monitor/logs/quick-create-workspace.md). 
     
     ![Где сохранить уведомление по электронной почте](./media/how-to-manage-runs/log-location.png)
 
@@ -219,7 +219,7 @@ ms.locfileid: "105110276"
 
     ![Новое правило генерации оповещений](./media/how-to-manage-runs/new-alert-rule.png)
 
-1. Узнайте, [как создавать оповещения журналов и управлять ими с помощью Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-log).
+1. Узнайте, [как создавать оповещения журналов и управлять ими с помощью Azure Monitor](../azure-monitor/alerts/alerts-log.md).
 
 ## <a name="run-description"></a>Описание запуска 
 
@@ -283,7 +283,7 @@ ms.locfileid: "105110276"
     
     Дополнительные сведения см. в разделе [AZ ML Run Update](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-update).
     
-    # <a name="studio"></a>[Студия](#tab/azure-studio)
+    # <a name="studio"></a>[Studio](#tab/azure-studio)
     
     В студии можно добавлять, изменять и удалять теги Run. Перейдите на страницу **сведений о выполнении** для выполнения и щелкните значок редактирования или карандаша, чтобы добавить, изменить или удалить теги для выполнения. Вы также можете выполнять поиск и фильтрацию по этим тегам со страницы списка запусков.
     
@@ -317,7 +317,7 @@ ms.locfileid: "105110276"
     
     Дополнительные сведения о запросах Azure CLI результатов см. в разделе [запрос Azure CLI команды Output](/cli/azure/query-azure-cli?preserve-view=true&view=azure-cli-latest).
     
-    # <a name="studio"></a>[Студия](#tab/azure-studio)
+    # <a name="studio"></a>[Studio](#tab/azure-studio)
     
     Чтобы найти конкретные запуски, перейдите к списку  **все запуски** . У вас есть два варианта:
     
@@ -361,7 +361,7 @@ az ml run cancel -r runid -w workspace_name -e experiment_name
 
 Дополнительные сведения см. в статье [AZ ML Run отмена](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-cancel).
 
-# <a name="studio"></a>[Студия](#tab/azure-studio)
+# <a name="studio"></a>[Studio](#tab/azure-studio)
 
 Чтобы отменить запуск в студии, выполните следующие действия.
 
@@ -478,7 +478,7 @@ root_run(current_child_run).log("MyMetric", f"Data from child run {current_child
 
 * Дополнительные сведения об управлении запусками с помощью пакета SDK для Машинное обучение Azure см. в разделе [Управление запуском записной книжки](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/track-and-monitor-experiments/manage-runs/manage-runs.ipynb).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения о том, как регистрировать метрики для экспериментов, см. в статье [метрики журнала во время учебных запусков](how-to-track-experiments.md).
 * Сведения о мониторинге ресурсов и журналов с Машинное обучение Azure см. в разделе [мониторинг машинное обучение Azure](monitor-azure-machine-learning.md).

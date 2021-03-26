@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: troubleshooting
 ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 696faaecd2227c9b9ef74f20763e36661991ff67
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 62767898b52ef9d8c0a61fb5025dc59d06a00bd5
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102438989"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105568194"
 ---
 # <a name="troubleshoot-issues-on-your-azure-stack-edge-pro-gpu-device"></a>Устранение неполадок на устройстве GPU Azure Stack с пограничными устройствами 
 
@@ -144,9 +144,9 @@ ms.locfileid: "102438989"
 |------------|-----------------|
 |Общие проблемы|<li>[Убедитесь, что Пограничное устройство настроено правильно](#verify-the-device-is-configured-properly).<li> [Проверка правильности настройки клиента](#verify-the-client-is-configured-properly)|
 |Add-AzureRmEnvironment: при отправке запроса произошла ошибка.<br>В строке: 1 символ: 1<br>+ Add-AzureRmEnvironment-Name Az3-ARMEndpoint " https://management.dbe ...|Эта ошибка означает, что устройство Azure Stack пограничной Pro недоступно или неправильно настроено. Убедитесь, что пограничные устройства и клиент настроены правильно. Инструкции см. в строке **Общие проблемы** в этой таблице.|
-|Служба вернула ошибку. Дополнительные сведения см. в описании внутреннего подключения: не удалось установить доверительные отношения для защищенного канала SSL/TLS. |   Вероятно, эта ошибка возникла из-за того, что один или несколько неверно переводят собственные шаги сертификата. Руководство можно найти [здесь](./azure-stack-edge-j-series-connect-resource-manager.md#step-2-create-and-install-certificates). |
+|Служба вернула ошибку. Дополнительные сведения см. в описании внутреннего подключения: не удалось установить доверительные отношения для защищенного канала SSL/TLS. |   Вероятно, эта ошибка возникла из-за того, что один или несколько неверно переводят собственные шаги сертификата. Руководство можно найти [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#step-2-create-and-install-certificates). |
 |Операция вернула недопустимый код состояния "ServiceUnavailable" <br> Код состояния ответа не указывает на успешное выполнение: 503 (служба недоступна). | Эта ошибка может быть результатом любого из этих условий.<li>Армстспул находится в остановленном состоянии.</li><li>Один из веб-сайтов службы маркеров Azure Resource Manager и безопасности не работает.</li><li>Ресурс кластера Azure Resource Manager не работает.</li><br><strong>Примечание.</strong> Перезапуск устройства может решить проблему, но вы должны получить пакет поддержки, чтобы его можно было отладить.|
-|AADSTS50126: недопустимое имя пользователя или пароль.<br>Идентификатор трассировки: 29317da9-52fc-4ba0-9778-446ae5625e5a<br>Идентификатор корреляции: 1b9752c4-8cbf-4304-a714-8a16527410f4<br>Метка времени: 2019-11-15 09:21:57Z: удаленный сервер вернул ошибку: (400) неверный запрос.<br>В строке: 1 символ: 1 |Эта ошибка может быть результатом любого из этих условий.<li>Для неправильного имени пользователя и пароля проверьте, что клиент изменил пароль с портал Azure, выполнив действия, описанные [здесь](./azure-stack-edge-j-series-set-azure-resource-manager-password.md) , и используя правильный пароль.<li>Для недопустимого идентификатора клиента идентификатор клиента является фиксированным GUID и должен иметь значение `c0257de7-538f-415c-993a-1b87a031879d`</li>|
+|AADSTS50126: недопустимое имя пользователя или пароль.<br>Идентификатор трассировки: 29317da9-52fc-4ba0-9778-446ae5625e5a<br>Идентификатор корреляции: 1b9752c4-8cbf-4304-a714-8a16527410f4<br>Метка времени: 2019-11-15 09:21:57Z: удаленный сервер вернул ошибку: (400) неверный запрос.<br>В строке: 1 символ: 1 |Эта ошибка может быть результатом любого из этих условий.<li>Для неправильного имени пользователя и пароля проверьте, что клиент изменил пароль с портал Azure, выполнив действия, описанные [здесь](/azure/azure-stack-edge-gpu-set-azure-resource-manager-password) , и используя правильный пароль.<li>Для недопустимого идентификатора клиента идентификатор клиента является фиксированным GUID и должен иметь значение `c0257de7-538f-415c-993a-1b87a031879d`</li>|
 |Connect-AzureRmAccount: AADSTS90056: ресурс отключен или не существует. Проверьте код приложения и убедитесь, что вы указали правильный URL-адрес ресурса, к которому пытаетесь получить доступ.<br>Идентификатор трассировки: e19bdbc9-5dc8-4a74-85c3-ac6abdfda115<br>Идентификатор корреляции: 75c8ef5a-830e-48b5-b039-595a96488ff9 timestamp: 2019-11-18 07:00:51Z: удаленный сервер вернул ошибку: (400) Bad |Конечные точки ресурса, используемые в `Add-AzureRmEnvironment` команде, неверны.|
 |Не удалось получить конечные точки из облака.<br>Убедитесь, что у вас есть сетевое подключение. Сведения об ошибке: Хттпсконнектионпул (узел = "Management. dbg-of4k6suvm.microsoftdatabox.com", порт = 30005): максимальное количество повторных попыток с URL-адресом:/Метадата/ендпоинтс? API-Version = 2015-01-01 (вызывается Сслеррор (Сслеррор ("неудачное подтверждение: ошибка ([(" подпрограммы SSL "," tls_process_server_certificate "," сбой проверки сертификата ")],)",) ") |Эта ошибка появляется в основном в среде Mac/Linux и вызвана следующими проблемами.<li>Сертификат формата PEM не добавлен в хранилище сертификатов Python.</li> |
 
@@ -154,7 +154,7 @@ ms.locfileid: "102438989"
 
 1. В локальном пользовательском интерфейсе убедитесь, что сеть устройства настроена правильно.
 
-2. Убедитесь, что сертификаты обновлены для всех конечных точек, как упоминалось [здесь](azure-stack-edge-j-series-connect-resource-manager.md#step-2-create-and-install-certificates).
+2. Убедитесь, что сертификаты обновлены для всех конечных точек, как упоминалось [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#step-2-create-and-install-certificates).
 
 3. Получите конечную точку управления Azure Resource Manager и входа на странице **устройства** в локальном пользовательском интерфейсе.
 
@@ -163,18 +163,18 @@ ms.locfileid: "102438989"
 
 ### <a name="verify-the-client-is-configured-properly"></a>Проверка правильности настройки клиента
 
-1. Убедитесь, что установлена правильная версия PowerShell, как описано [здесь](azure-stack-edge-j-series-connect-resource-manager.md#step-3-install-powershell-on-the-client).
+1. Убедитесь, что установлена правильная версия PowerShell, как описано [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#step-3-install-powershell-on-the-client).
 
-2. Убедитесь, что установлены правильные модули PowerShell, как описано [здесь](azure-stack-edge-j-series-connect-resource-manager.md#step-4-set-up-azure-powershell-on-the-client).
+2. Убедитесь, что установлены правильные модули PowerShell, как описано [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#step-4-set-up-azure-powershell-on-the-client).
 
-3. Проверьте доступность конечных точек Azure Resource Manager и входа. Можно попробовать проверить связь с конечными точками. Пример:
+3. Проверьте доступность конечных точек Azure Resource Manager и входа. Можно попробовать проверить связь с конечными точками. Например:
 
    `ping management.28bmdw2-bb9.microsoftdatabox.com`
    `ping login.28bmdw2-bb9.microsoftdatabox.com`
    
-   Если они недостижимы, добавьте записи DNS/Host, как описано [здесь](azure-stack-edge-j-series-connect-resource-manager.md#step-5-modify-host-file-for-endpoint-name-resolution).
+   Если они недостижимы, добавьте записи DNS/Host, как описано [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#step-5-modify-host-file-for-endpoint-name-resolution).
    
-4. Проверьте, установлены сертификаты клиентов, как указано [здесь](azure-stack-edge-j-series-connect-resource-manager.md#import-certificates-on-the-client-running-azure-powershell).
+4. Проверьте, установлены сертификаты клиентов, как указано [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#import-certificates-on-the-client-running-azure-powershell).
 
 5. Если клиент использует PowerShell, необходимо включить параметр отладки, чтобы просмотреть подробные сообщения, выполнив команду PowerShell. 
 
@@ -196,7 +196,7 @@ ms.locfileid: "102438989"
 |Команда AzCopy перестает отвечать на запросы в течение 20 минут, после чего отображается следующее сообщение об ошибке:<br>`Error parsing source location https://<accountname>.blob.<serialnumber>.microsoftdatabox.com/<cntnr>. No such device or address`|Убедитесь, что имя конечной точки `<accountname>.blob.<serialnumber>.microsoftdatabox.com` Добавлено в файл hosts по адресу: `/etc/hosts` .|
 |Команда AzCopy перестает отвечать на запросы в течение 20 минут, после чего отображается следующее сообщение об ошибке: `Error parsing source location… The SSL connection could not be established` .|Импортируйте SSL-сертификат для устройства в хранилище сертификатов системы. Дополнительные сведения см. [в разделе скачивание сертификата](../databox/data-box-deploy-copy-data-via-rest.md#download-certificate).|
 |Значение одного из заголовков HTTP имеет неправильный формат.|Установленная версия библиотеки служба хранилища Microsoft Azure для Python не поддерживается Data Box. Поддерживаемые версии см. в разделе Azure Data Box требования к хранилищу BLOB-объектов.|
-|… [SSL: CERTIFICATE_VERIFY_FAILED]...| Перед запуском Python присвойте переменной среды REQUESTS_CA_BUNDLE путь к файлу SSL-сертификата в кодировке Base64 (см. раздел [Загрузка сертификата](../databox/data-box-deploy-copy-data-via-rest.md#download-certificate)). Пример:<br>`export REQUESTS_CA_BUNDLE=/tmp/mycert.cer`<br>`python`<br>Кроме того, добавьте сертификат в хранилище сертификатов системы, а затем задайте для этой переменной среды путь к этому хранилищу. Например, в Ubuntu: <br>`export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt`<br>`python`.|
+|… [SSL: CERTIFICATE_VERIFY_FAILED]...| Перед запуском Python присвойте переменной среды REQUESTS_CA_BUNDLE путь к файлу SSL-сертификата в кодировке Base64 (см. раздел [Загрузка сертификата](../databox/data-box-deploy-copy-data-via-rest.md#download-certificate)). Например:<br>`export REQUESTS_CA_BUNDLE=/tmp/mycert.cer`<br>`python`<br>Кроме того, добавьте сертификат в хранилище сертификатов системы, а затем задайте для этой переменной среды путь к этому хранилищу. Например, в Ubuntu: <br>`export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt`<br>`python`.|
 |Время ожидания соединения истекло.|Войдите в Azure Stack пограничная Pro и убедитесь, что она разблокирована. Когда устройство перезапускается, оно остается заблокированным до тех пор, пока пользователь не войдет в систему.|
 
 ## <a name="troubleshoot-iot-edge-errors"></a>Устранение ошибок IoT Edge

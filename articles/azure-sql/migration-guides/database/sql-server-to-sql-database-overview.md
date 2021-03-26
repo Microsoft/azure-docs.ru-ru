@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: ecb9d1e25647e197614817116921140f0d7fbdf4
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 54c1b8c189264fb2e127ff04b0fdd9125f4c9aeb
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105024971"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563146"
 ---
 # <a name="migration-overview-sql-server-to-azure-sql-database"></a>Общие сведения о миграции: SQL Server в базу данных SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "105024971"
 
 |Технология | Описание|
 |---------|---------|
-| [Миграция Azure](/azure/migrate/how-to-create-azure-sql-assessment) | Служба "миграция Azure" для SQL Azure позволяет обнаруживать и оценивать размещение данных SQL в масштабе при работе в VMware, предоставляя рекомендации по развертыванию SQL Azure, целевую оценку и ежемесячные оценки. | 
+| [Миграция Azure](../../../migrate/how-to-create-azure-sql-assessment.md) | Служба "миграция Azure" для SQL Azure позволяет обнаруживать и оценивать размещение данных SQL в масштабе при работе в VMware, предоставляя рекомендации по развертыванию SQL Azure, целевую оценку и ежемесячные оценки. | 
 |[Помощник по миграции данных (DMA)](/sql/dma/dma-migrateonpremsqltosqldb)|Помощник по миграции данных — это средство для настольных ПК, которое обеспечивает простую оценку SQL Server и миграцию в базу данных SQL Azure (как схемы, так и данных). Это средство можно установить на локальный сервер или на локальном компьютере, который имеет возможность подключения к исходным базам данных. Процесс миграции — это логическое перемещение данных между объектами в исходной и целевой базах данных. </br> — Перенос отдельных баз данных (как схемы, так и данных)|
 |[Azure Database Migration Service (DMA)](../../../dms/tutorial-sql-server-to-azure-sql.md)|Служба Azure первого производителя, которая может перенести базы данных SQL Server в базу данных SQL Azure с помощью портал Azure или автоматизировать с помощью PowerShell. Azure DMS требует выбрать предпочтительную виртуальную сеть Azure во время подготовки, чтобы обеспечить подключение к исходным SQL Server базам данных. </br> — Перенос отдельных баз данных или в масштабе. |
 | | |

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/18/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: d423a8aaf3ace78ccb4b2eb1d8424c6a1dfb61bc
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6a804b6d6840b25993ad6e249305f531a818be32
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101705982"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105559457"
 ---
 # <a name="azure-security-baseline-for-azure-data-share"></a>Базовый план безопасности Azure для общей папки данных Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "101705982"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md) 
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md) 
 
 - [Начало работы с Azure Monitor и интеграция SIEM стороннего производителя](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools/)
 
@@ -48,11 +48,11 @@ ms.locfileid: "101705982"
 
 Включите журналы диагностики для общей папки данных Azure, в частности журналы диагностики для Микрософтдаташаресентшареснапшотслог &amp; микрософтдаташаререцеиведшареснапшотслог. Эти журналы позволяют записывать ключевые сведения, такие как время начала синхронизации, время окончания, состояние и другие сведения. Эти журналы могут быть критически важными для дальнейшего изучения инцидентов безопасности и проведения судебных упражнений.
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](../azure-monitor/essentials/diagnostic-settings.md) 
 
-- [Общие сведения о ведении журналов и различных типах журналов в Azure](/azure/azure-monitor/platform/platform-logs-overview)
+- [Общие сведения о ведении журналов и различных типах журналов в Azure](../azure-monitor/essentials/platform-logs-overview.md)
 
-- [Настройка параметров диагностики для журнала действий Azure](/azure/azure-monitor/platform/activity-log)
+- [Настройка параметров диагностики для журнала действий Azure](../azure-monitor/essentials/activity-log.md)
 
 **Ответственность**: Customer
 
@@ -62,9 +62,9 @@ ms.locfileid: "101705982"
 
 **Руководство**. Убедитесь, что для всех учетных записей хранения log Analytics или рабочих областей, используемых для хранения журналов общего доступа к данным Azure, задан срок хранения журнала в соответствии с нормативными требованиями вашей организации.
 
-- [Настройка срока хранения Log Analytics рабочей области](/azure/azure-monitor/platform/manage-cost-storage)
+- [Настройка срока хранения Log Analytics рабочей области](../azure-monitor/logs/manage-cost-storage.md)
 
-- [Хранение журналов ресурсов в учетной записи хранения Azure](/azure/azure-monitor/platform/resource-logs#send-to-azure-storage)
+- [Хранение журналов ресурсов в учетной записи хранения Azure](../azure-monitor/essentials/resource-logs.md#send-to-azure-storage)
 
 **Ответственность**: Customer
 
@@ -78,9 +78,9 @@ ms.locfileid: "101705982"
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md) 
 
-- [Приступая к работе с Log Analytics запросами](/azure/azure-monitor/log-query/log-analytics-tutorial)
+- [Приступая к работе с Log Analytics запросами](../azure-monitor/logs/log-analytics-tutorial.md)
 
-- [Выполнение пользовательских запросов в Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+- [Выполнение пользовательских запросов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 
 **Ответственность**: Customer
 
@@ -94,7 +94,7 @@ ms.locfileid: "101705982"
 
 - [Управление оповещениями в центре безопасности Azure](../security-center/security-center-managing-and-responding-alerts.md) 
 
-- [Как оповещать данные журнала Log Analytics](/azure/azure-monitor/learn/tutorial-response)
+- [Как оповещать данные журнала Log Analytics](../azure-monitor/alerts/tutorial-response.md)
 
 **Ответственность**: Customer
 
@@ -144,7 +144,7 @@ ms.locfileid: "101705982"
 
 - [Создание и настройка экземпляра Azure AD](../active-directory/fundamentals/active-directory-access-create-new-tenant.md) 
 
-- [Общий ресурс Azure Data Share работает с общими встроенными ролями Azure. ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#general)
+- [Общий ресурс Azure Data Share работает с общими встроенными ролями Azure. ](../role-based-access-control/built-in-roles.md#general)
 
 **Ответственность**: Customer
 
@@ -154,11 +154,11 @@ ms.locfileid: "101705982"
 
 **Руководство**. Azure AD предоставляет журналы для облегчения поиска устаревших учетных записей. Кроме того, используйте проверки подлинности и доступа Azure AD для эффективного управления членством в группах, доступом к корпоративным приложениям и назначениями ролей. Доступ пользователей можно проверить регулярно, чтобы убедиться, что доступ к ним имеют только нужные пользователи.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/) 
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml) 
 
 - [Использование проверок доступа для идентификации Azure AD](../active-directory/governance/access-reviews-overview.md) 
 
-- [Общий ресурс Azure Data Share работает с общими встроенными ролями Azure. ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#general)
+- [Общий ресурс Azure Data Share работает с общими встроенными ролями Azure. ](../role-based-access-control/built-in-roles.md#general)
 
 **Ответственность**: Customer
 
@@ -170,7 +170,7 @@ ms.locfileid: "101705982"
 
 Этот процесс можно упростить, создав параметры диагностики для учетных записей пользователей Azure AD и отправив журналы аудита и журналы входа в рабочую область Log Analytics. Вы можете настроить нужные оповещения в Log Analytics рабочей области.
 
-- [Как интегрировать журналы действий Azure с Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure с Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 **Ответственность**: Customer
 
@@ -208,7 +208,7 @@ ms.locfileid: "101705982"
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания Azure Monitor оповещений о том, когда изменения выполняются с важными ресурсами Azure.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -291,7 +291,7 @@ ms.locfileid: "101705982"
 
 **Руководство**. Удаление ресурсов Azure, если они больше не нужны, это можно сделать с помощью портал Azure, POWERSHELL или CLI.
 
-- [Удаление группы ресурсов и ресурсов Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-powershell)
+- [Удаление группы ресурсов и ресурсов Azure](../azure-resource-manager/management/delete-resource-group.md?tabs=azure-powershell)
 
 Общая папка данных Azure не предоставляет ОС или не позволяет устанавливать сторонние программные приложения для своих ресурсов.
 
@@ -305,7 +305,7 @@ ms.locfileid: "101705982"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md) 
 
-- [Как отказаться от определенного типа ресурса с помощью Политики Azure](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Как отказаться от определенного типа ресурса с помощью Политики Azure](../governance/policy/samples/built-in-policies.md#general)
 
 **Ответственность**: Customer
 
@@ -343,7 +343,7 @@ ms.locfileid: "101705982"
 
 - [Настройка Политики Azure и управление ею](../governance/policy/tutorials/create-and-manage.md) 
 
-- [Использование псевдонимов](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#aliases)
+- [Использование псевдонимов](../governance/policy/concepts/definition-structure.md#aliases)
 
 **Ответственность**: Customer
 
@@ -361,5 +361,5 @@ ms.locfileid: "101705982"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

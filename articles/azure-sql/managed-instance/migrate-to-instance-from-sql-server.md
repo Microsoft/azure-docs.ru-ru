@@ -11,12 +11,12 @@ author: bonova
 ms.author: bonova
 ms.reviewer: ''
 ms.date: 07/11/2019
-ms.openlocfilehash: 49d37a5537ada260eae453bbb5f81716d42657a5
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: df0a28c4d2ba78e9b7a6b52e26537540164d28e0
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102565829"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564319"
 ---
 # <a name="sql-server-instance-migration-to-azure-sql-managed-instance"></a>Миграция экземпляра SQL Server в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "102565829"
 
 Сначала определите, совместима ли Управляемый экземпляр SQL с требованиями приложения к базе данных. SQL Управляемый экземпляр обеспечивает простое перемещение и миграцию для большинства существующих приложений, использующих SQL Server. Однако иногда могут потребоваться функции или возможности, которые еще не поддерживаются, а затраты на реализацию решения слишком высоки.
 
-Используйте [Помощник по миграции данных](/sql/dma/dma-overview) для обнаружения потенциальных проблем совместимости, влияющих на функциональность базы данных в базе данных SQL Azure. Если обнаружены проблемы с блокировкой, может потребоваться рассмотреть альтернативный вариант, например [SQL Server на виртуальной машине Azure](https://azure.microsoft.com/services/virtual-machines/sql-server/). Ниже приведены некоторые примеры:
+Используйте [Помощник по миграции данных](/sql/dma/dma-overview) для обнаружения потенциальных проблем совместимости, влияющих на функциональность базы данных в базе данных SQL Azure. Если обнаружены проблемы с блокировкой, может потребоваться рассмотреть альтернативный вариант, например [SQL Server на виртуальной машине Azure](https://azure.microsoft.com/services/virtual-machines/sql-server/). Ниже приводится несколько примеров.
 
 - Если требуется прямой доступ к операционной системе или файловой системе, например для установки сторонних или пользовательских агентов на той же виртуальной машине с SQL Server.
 - При наличии достаточной зависимости от компонентов, которые по-прежнему не поддерживаются, таких как FileStream/FileTable, Polybase и транзакции между экземплярами.
@@ -78,7 +78,7 @@ SELECT * FROM sys.table_types WHERE is_memory_optimized=1
 SELECT * FROM sys.sql_modules WHERE uses_native_compilation=1
 ```
 
-Дополнительные сведения о технологиях в памяти см. в статье [Оптимизация производительности с помощью технологий в памяти в базе данных SQL Azure и Azure sql управляемый экземпляр](https://docs.microsoft.com/azure/azure-sql/in-memory-oltp-overview)
+Дополнительные сведения о технологиях в памяти см. в статье [Оптимизация производительности с помощью технологий в памяти в базе данных SQL Azure и Azure sql управляемый экземпляр](../in-memory-oltp-overview.md)
 
 ### <a name="create-a-performance-baseline"></a>Создание базового показателя производительности
 

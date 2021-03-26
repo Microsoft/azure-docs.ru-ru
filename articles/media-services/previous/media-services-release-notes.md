@@ -14,12 +14,12 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 019f0bc98de45fa1fe6f9b8c72ef74beb50ea2c2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 801d810a82e4e484ca1ab30c5c6d510860dbab6b
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103017364"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566036"
 ---
 # <a name="azure-media-services-release-notes"></a>Заметки о выпуске служб мультимедиа Azure
 
@@ -64,7 +64,7 @@ ms.locfileid: "103017364"
 
 #### <a name="action-required"></a>Требуется действие:
 
-Чтобы минимизировать сбои рабочих нагрузок, ознакомьтесь с [руководством по миграции](https://go.microsoft.com/fwlink/?linkid=2149150&clcid=0x409) , чтобы перенести код из API версии 2 и пакеты SDK на версию 3 для API и пакета SDK до 29 февраля 2024.
+Чтобы минимизировать сбои рабочих нагрузок, ознакомьтесь с [руководством по миграции](../latest/migrate-v-2-v-3-migration-introduction.md) , чтобы перенести код из API версии 2 и пакеты SDK на версию 3 для API и пакета SDK до 29 февраля 2024.
 **После 29 февраля 2024** службы мультимедиа Azure больше не будут принимать трафик на REST API версии 2, API управления учетными записями ARM версии 2015-10-01 или из пакетов SDK для клиента .NET версии 2. Сюда входят все сторонние пакеты SDK для клиентов с открытым исходным кодом, которые могут вызывать API версии 2.  
 
 См. официальное [объявление об обновлениях Azure](https://azure.microsoft.com/updates/update-your-azure-media-services-rest-api-and-sdks-to-v3-by-29-february-2024/).
@@ -76,7 +76,7 @@ ms.locfileid: "103017364"
 * [хисторикалевентс](/dotnet/api/microsoft.windowsazure.mediaservices.client.itask.historicalevents)
 * [перфмессаже](/dotnet/api/microsoft.windowsazure.mediaservices.client.itask.perfmessage)
 
-Чтобы получить журнал задач, следует использовать уведомления о задании v2 через веб-перехватчики или сообщения очереди с помощью конечных точек уведомлений. Дополнительные сведения см. в разделе:
+Чтобы получить журнал задач, следует использовать уведомления о задании v2 через веб-перехватчики или сообщения очереди с помощью конечных точек уведомлений. Дополнительные сведения можно найти в разделе
 
 * [Использование хранилища очередей Azure для наблюдения за уведомлениями о заданиях служб мультимедиа](media-services-dotnet-check-job-progress-with-queues.md)
 * [Использование веб-перехватчиков Azure для мониторинга уведомлений о заданиях служб мультимедиа](media-services-dotnet-check-job-progress-with-webhooks.md)

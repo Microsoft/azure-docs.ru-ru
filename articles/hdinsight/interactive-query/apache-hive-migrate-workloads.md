@@ -7,12 +7,12 @@ ms.reviewer: jasonh
 ms.service: hdinsight
 ms.topic: how-to
 ms.date: 11/4/2020
-ms.openlocfilehash: b13e8e088eff95071247a53ad1a4a18879f94053
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 43d616bc82c608918f5e7ee51481a393dd55a284
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101742200"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566076"
 ---
 # <a name="migrate-azure-hdinsight-36-hive-workloads-to-hdinsight-40"></a>Перенос рабочих нагрузок Hive из Azure HDInsight 3.6 в HDInsight 4.0
 
@@ -36,7 +36,7 @@ HDInsight 4,0 имеет несколько преимуществ по срав
 
 * При использовании [Azure Data Lake Storage 1-го поколения](../overview-data-lake-storage-gen1.md)расположение таблиц Hive, скорее всего, зависит от конфигураций HDFS кластера. Выполните следующее действие скрипта, чтобы обеспечить перенос этих расположений в другие кластеры. См. раздел [действие сценария в работающем кластере](../hdinsight-hadoop-customize-cluster-linux.md#script-action-to-a-running-cluster).
 
-    |Свойство. | Значение |
+    |Свойство | Значение |
     |---|---|
     |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/linuxhivemigrationv01/hive-adl-expand-location-v01.sh`|
     |Типы узлов|Head|
@@ -71,7 +71,7 @@ HDInsight 4,0 имеет несколько преимуществ по срав
     > [!NOTE]
     > Эта программа использует клиент `beeline` для выполнения скриптов SQL в `/usr/hdp/$STACK_VERSION/hive/scripts/metastore/upgrade/mssql/upgrade-*.mssql.sql` .
     >
-    > Синтаксис SQL в этих скриптах не обязательно совместим с другими клиентскими средствами. Например, в [среде SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) и [редакторе запросов на портале Azure](../../azure-sql/database/connect-query-portal.md) требуется ключевое слово `GO` после каждой команды.
+    > Синтаксис SQL в этих скриптах не обязательно совместим с другими клиентскими средствами. Например, в [среде SSMS](/sql/ssms/download-sql-server-management-studio-ssms) и [редакторе запросов на портале Azure](../../azure-sql/database/connect-query-portal.md) требуется ключевое слово `GO` после каждой команды.
     >
     > Если выполнение какого-либо скрипта завершается сбоем вследствие объема ресурсов или превышения времени ожидания транзакций, увеличьте масштаб базы данных SQL.
 
@@ -131,7 +131,7 @@ HDInsight при необходимости интегрируется с Azure 
 
 Дополнительные изменения см. в [объявлении HDInsight 4,0](../hdinsight-version-release.md) .
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 * [Объявление о HDInsight 4,0](../hdinsight-version-release.md)
 * [HDInsight 4,0. подробное углубление](https://azure.microsoft.com/blog/deep-dive-into-azure-hdinsight-4-0/)

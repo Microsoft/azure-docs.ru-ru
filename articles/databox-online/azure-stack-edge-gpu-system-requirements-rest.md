@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: conceptual
 ms.date: 10/21/2020
 ms.author: alkohli
-ms.openlocfilehash: 887aaf32592c74a5884916bc7ad63d79544fb554
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 7deba32eb9d0e098b75f98cc81fac2c01b8bb7f8
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99575861"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105567259"
 ---
 # <a name="azure-stack-edge-blob-storage-requirements"></a>Требования к хранилищу BLOB-объектов Azure Stack
 
@@ -70,7 +70,7 @@ ms.locfileid: "99575861"
 
 ## <a name="endpoint-declaration"></a>Объявление конечной точки
 
-В пакете SDK для хранилища BLOB-объектов Azure Stack пограничным суффиксом конечной точки является `<device serial number>.microsoftdatabox.com` определение домена Azure Stack. Дополнительные сведения о конечной точке службы BLOB-объектов см. в подразделах [Перемещение данных с помощью учетных записей хранения с помощью Azure Stack ребра Pro GPU](azure-stack-edge-j-series-deploy-add-storage-accounts.md).
+В пакете SDK для хранилища BLOB-объектов Azure Stack пограничным суффиксом конечной точки является `<device serial number>.microsoftdatabox.com` определение домена Azure Stack. Дополнительные сведения о конечной точке службы BLOB-объектов см. в подразделах [Перемещение данных с помощью учетных записей хранения с помощью Azure Stack ребра Pro GPU](./azure-stack-edge-gpu-deploy-add-storage-accounts.md).
 
 
 ## <a name="examples"></a>Примеры

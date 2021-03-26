@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 02/26/2021
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy20q4, devx-track-python, data4ml
-ms.openlocfilehash: a4d1d1c4f4d6354d0206bf598a0622112dc99453
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 0c4f1fbc0ed27dbf3b7347e0e4c12f1926ac1377
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102518710"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566257"
 ---
 # <a name="moving-data-into-and-between-ml-pipeline-steps-python"></a>Перемещение данных в этапы конвейера машинного обучения и между ними (Python)
 
@@ -245,7 +245,7 @@ step1_output_ds = step1_output_data.register_on_complete(name='processed_data',
 Azure не удаляет промежуточные данные, записанные с помощью `OutputFileDatasetConfig` . Чтобы избежать расходов на хранение больших объемов ненужных данных, необходимо выполнить одно из следующих действий.
 
 * Программно удалять промежуточные данные в конце выполнения конвейера, когда они больше не нужны
-* Используйте хранилище BLOB-объектов с краткосрочной политикой хранения для промежуточных данных (см. статью [Оптимизация затрат с помощью автоматизации уровней доступа к хранилищу BLOB-объектов Azure](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)). 
+* Используйте хранилище BLOB-объектов с краткосрочной политикой хранения для промежуточных данных (см. статью [Оптимизация затрат с помощью автоматизации уровней доступа к хранилищу BLOB-объектов Azure](../storage/blobs/storage-lifecycle-management-concepts.md?tabs=azure-portal)). 
 * Регулярно просматривайте и удаляйте данные, не требующие больше времени.
 
 Дополнительные сведения см. в статье [планирование и управление затратами для машинное обучение Azure](concept-plan-manage-cost.md).

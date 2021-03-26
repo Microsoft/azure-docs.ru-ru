@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 0a05a4692bb4a09213532ed29b2501f6b8056857
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 63b99cdeb7606798caa1b1d997dbb9f609c033b0
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101721996"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562194"
 ---
 # <a name="azure-security-baseline-for-azure-data-box"></a>Базовый план безопасности Azure для Azure Data Box
 
@@ -88,7 +88,7 @@ ms.locfileid: "101721996"
 
 - [Настройка Azure RBAC для книг](../sentinel/quickstart-get-visibility.md)
 
-- [Узнайте, как настроить контроль доступа в заказе.](https://docs.microsoft.com/azure/databox/data-box-logs#set-up-access-control-on-the-order)
+- [Узнайте, как настроить контроль доступа в заказе.](./data-box-logs.md#set-up-access-control-on-the-order)
 
 **Ответственность**: Customer
 
@@ -172,7 +172,7 @@ ms.locfileid: "101721996"
 
 Для Data Box устройства это не поддерживается в режиме реального времени. Журналы можно просматривать в конце задания.
 
-- [Общие сведения об отчетах Azure AD](/azure/active-directory/reports-monitoring/)
+- [Общие сведения об отчетах Azure AD](../active-directory/reports-monitoring/index.yml)
 
 - [Использование проверок доступа для идентификации Azure](../active-directory/governance/access-reviews-overview.md)
 
@@ -190,7 +190,7 @@ ms.locfileid: "101721996"
 
 Azure Data Box журналы служб не записываются в Log Analytics рабочую область.
 
-- [Как интегрировать журналы действий Azure в Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
+- [Как интегрировать журналы действий Azure в Azure Monitor](../active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics.md)
 
 - [Подключение к Azure Sentinel](../sentinel/quickstart-onboard.md)
 
@@ -216,7 +216,7 @@ Azure Data Box журналы служб не записываются в Log An
 
 **Руководство**: скоро будет доступно; Защищенное хранилище еще не поддерживается для Azure Data Box. 
 
-- [Список поддерживаемых служб защищенного хранилища](https://docs.microsoft.com/azure/security/fundamentals/customer-lockbox-overview#supported-services-and-scenarios-in-general-availability)
+- [Список поддерживаемых служб защищенного хранилища](../security/fundamentals/customer-lockbox-overview.md#supported-services-and-scenarios-in-general-availability)
 
 **Ответственность**: Customer
 
@@ -254,7 +254,7 @@ Azure Data Box журналы служб не записываются в Log An
 
 - [Узнайте, как приступить к работе с Azure Data Box](data-box-quickstart-portal.md)
 
-- [Сведения о настройке контроля доступа](https://docs.microsoft.com/azure/databox/data-box-logs#set-up-access-control-on-the-order)
+- [Сведения о настройке контроля доступа](./data-box-logs.md#set-up-access-control-on-the-order)
 
 **Ответственность**: Customer
 
@@ -281,7 +281,7 @@ Azure Data Box реализует шифрование AES 256-bit для неа
 
 **Руководство**. Использование Azure Monitor с журналом действий Azure для создания оповещений о том, когда изменения выполняются для Azure Data Box, а также для других важных или связанных ресурсов.
 
-- [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
+- [Создание оповещений для событий журнала действий Azure](../azure-monitor/alerts/alerts-activity-log.md)
 
 **Ответственность**: Customer
 
@@ -459,5 +459,5 @@ Azure Data Box реализует шифрование AES 256-bit для неа
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
-- Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).
+- См. [Обзор Azure Security Benchmark версии 2](../security/benchmarks/overview.md)
+- Дополнительные сведения о [базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).

@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/08/2020
-ms.openlocfilehash: 29cc0a3201b7c4ce1c685029de2a40f115b23e82
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: fa91644eab9d28ffb20de8ec8c0fe00488922b67
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104606962"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105563384"
 ---
 # <a name="azure-monitor-frequently-asked-questions"></a>Azure Monitor: вопросы и ответы
 
@@ -80,7 +80,7 @@ Azure Monitor собирает данные из различных источн
 
 ### <a name="how-do-i-retrieve-log-data"></a>Как извлечь данные журналов?
 Все данные из рабочей области Log Analytics извлекаются с помощью запросов к журналам, написанных на языке запросов Kusto (KQL). Вы можете создавать собственные запросы или использовать решения для мониторинга и службы аналитики, в которых есть готовые запросы к журналам для определенного приложения или службы. См. статью [Общие сведения о запросах к журналам в Azure Monitor](logs/log-query-overview.md).
-p
+
 ### <a name="can-i-delete-data-from-a-log-analytics-workspace"></a>Можно ли удалить данные из рабочей области Log Analytics?
 Данные удаляются из рабочей области в соответствии с сроком [хранения](logs/manage-cost-storage.md#change-the-data-retention-period). Вы можете удалить определенные данные в соответствии с требованиями к конфиденциальности или соответствию. Дополнительные сведения см. [в разделе Экспорт и удаление закрытых данных](logs/personal-data-mgmt.md#how-to-export-and-delete-private-data) .
 
@@ -828,26 +828,27 @@ LogEntry : ({"Hello": "This example has multiple lines:","Docker/Moby": "will no
 ## <a name="sql-insights-preview"></a>SQL Insights (Предварительная версия)
 
 ### <a name="what-versions-of-sql-server-are-supported"></a>Какие версии SQL Server поддерживаются?
-Поддерживаемые версии SQL см. в разделе [Поддерживаемые версии](insights/sql-insights-overview.md#supported-versions) .
+Мы поддерживаем SQL Server 2012 и все более новые версии. Дополнительные сведения см. в разделе [Поддерживаемые версии](insights/sql-insights-overview.md#supported-versions) .
 
 ### <a name="what-sql-resource-types-are-supported"></a>Какие типы ресурсов SQL поддерживаются?
+- База данных SQL Azure
+- Управляемый экземпляр SQL Azure
+- SQL Server на виртуальных машинах Azure (SQL Server, работающих на виртуальных машинах, зарегистрированных с помощью поставщика [виртуальных машин SQL](../azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm.md) )
+- Виртуальные машины Azure (SQL Server, работающие на виртуальных машинах, не зарегистрированных в поставщике [виртуальных машин SQL](../azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm.md) )
 
-- База данных SQL Azure. Только одна база данных, а не базы данных в Эластичный пул.
-- Управляемый экземпляр SQL Azure 
-- Виртуальные машины SQL Azure ([Windows](../azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview.md#get-started-with-sql-server-vms), [Linux](../azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview.md#create)) и виртуальные машины azure, на которых SQL Server установлен.
+Дополнительные сведения см. в разделе [Поддерживаемые версии](insights/sql-insights-overview.md#supported-versions) . для получения дополнительных сведений о сценариях без поддержки или ограниченной поддержки.
 
-### <a name="what-operating-systems-for-the-machine-running-sql-server-are-supported"></a>Какие операционные системы для компьютера, на котором работает SQL Server, поддерживаются?
-Любая ОС, поддерживающая работающую поддерживаемую версию SQL.
+### <a name="what-operating-systems-for-the-virtual-machine-running-sql-server-are-supported"></a>Какие операционные системы для виртуальной машины, на которой работает SQL Server, поддерживаются?
+Мы поддерживаем все операционные системы, указанные в документации [Windows](../azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview.md#get-started-with-sql-server-vms) и [Linux](../azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview.md#create) , для SQL Server на виртуальных машинах Azure.
 
-### <a name="what-operating-system-for-the-remote-monitoring-server-are-supported"></a>Какая операционная система для сервера удаленного мониторинга поддерживается?
+### <a name="what-operating-system-for-the-monitoring-virtual-machine-are-supported"></a>Какая операционная система для виртуальной машины мониторинга поддерживается?
+Ubuntu 18,04 в настоящее время является единственной операционной системой, поддерживаемой для виртуальной машины мониторинга.
 
-В настоящее время Ubuntu 18,04 является единственной поддерживаемой операционной системой.
-
-### <a name="where-will-the-monitoring-data-be-stored-in-log-analytics"></a>Где данные мониторинга будут храниться в Log Analytics 
-Все данные мониторинга хранятся в таблице **инсигхтсметрикс** . **Исходный** столбец имеет значение *Solutions.AZM.MS/Telegraf/SqlInsights*. Столбец **пространства имен** содержит значения, начинающиеся с *sqlserver_*.
+### <a name="where-will-the-monitoring-data-be-stored-in-log-analytics"></a>Где данные мониторинга будут храниться в Log Analytics?
+Все данные мониторинга хранятся в таблице **инсигхтсметрикс** . **Исходный** столбец имеет значение `solutions.azm.ms/telegraf/SqlInsights` . Столбец **пространства имен** содержит значения, начинающиеся с `sqlserver_` .
 
 ### <a name="how-often-is-data-collected"></a>Как часто собираются данные? 
-Сведения о частоте сбора различных данных см. в разделе [данные, собираемые SQL Insights](../insights/../azure-monitor/insights/sql-insights-overview.md#data-collected-by-sql-insights) .
+Периодичность сбора данных настраивается. Дополнительные сведения о частоте по умолчанию см. в разделе [данные, собранные SQL Insights](../insights/../azure-monitor/insights/sql-insights-overview.md#data-collected-by-sql-insights) , в статье [Создание профиля мониторинга SQL](../insights/../azure-monitor/insights/sql-insights-enable.md#create-sql-monitoring-profile) для получения инструкций по настройке частот. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Если вы не нашли ответа на свой вопрос в этой статье, поищите информацию на следующих форумах.

@@ -7,17 +7,17 @@ ms.topic: how-to
 author: iqshahmicrosoft
 ms.author: krsh
 ms.date: 03/10/2021
-ms.openlocfilehash: b8f5fbc076859be9f5ff5a215f92811d543ed7e4
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: 21ccafe3e15f902e35657a9aa31516bbaeb3b4c8
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104800114"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105558012"
 ---
 # <a name="how-to-generate-a-sas-uri-for-a-vm-image"></a>Создание URI SAS для образа виртуальной машины
 
 > [!NOTE]
-> Для публикации виртуальной машины не требуется URI SAS. Вы можете просто поделиться изображением в центре части. Дополнительные сведения см. в статье [Создание виртуальной машины с помощью утвержденной базы](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-approved-base) или [Создание виртуальной машины с помощью собственных образов](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-own-image) .
+> Для публикации виртуальной машины не требуется URI SAS. Вы можете просто поделиться изображением в центре части. Дополнительные сведения см. в статье [Создание виртуальной машины с помощью утвержденной базы](./azure-vm-create-using-approved-base.md) или [Создание виртуальной машины с помощью собственных образов](./azure-vm-create-using-own-image.md) .
 
 Создание URI SAS для виртуальных жестких дисков имеет следующие требования:
 
@@ -172,7 +172,7 @@ az storage blob copy start --destination-blob $destinationVHDFileName --destinat
 - Если отображается `sr=c`, эта строка обозначает разрешения на уровне контейнера.
 - Скопируйте и вставьте URI в браузер, чтобы проверить скачивание большого двоичного объекта (операцию можно отменить до завершения скачивания).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Если возникли проблемы, см. раздел [сообщения об ошибках SAS виртуальной машины](azure-vm-sas-failure-messages.md).
 - [Вход в центр партнеров](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/partnership)

@@ -7,12 +7,12 @@ services: firewall
 ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: victorh
-ms.openlocfilehash: ad4f42d0e33f6d70c75abfcd1daab4f5aa9a515f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d5320f44aa5d922cea852ab09e5141fad277e2b0
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94654989"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105566032"
 ---
 # <a name="use-azure-firewall-to-protect-window-virtual-desktop-deployments"></a>Защита развертывания виртуальных рабочих столов в Windows с помощью Брандмауэра Azure
 
@@ -54,7 +54,7 @@ ms.locfileid: "94654989"
 - Создайте коллекцию сетевых правил, добавив следующие правила.
 
    - Разрешить DNS — разрешить передачу трафика из частного IP-адреса в * для TCP-и UDP-портов 53.
-   - Разрешить KMS — разрешить передачу трафика от виртуальных машин Windows виртуальных рабочих столов в службу активации Windows через TCP-порт 1688. Дополнительные сведения о IP-адресах назначения см. [в статье сбой активации Windows в сценарии принудительного туннелирования](../virtual-machines/troubleshooting/custom-routes-enable-kms-activation.md#solution).
+   - Разрешить KMS — разрешить передачу трафика от виртуальных машин Windows виртуальных рабочих столов в службу активации Windows через TCP-порт 1688. Дополнительные сведения о IP-адресах назначения см. [в статье сбой активации Windows в сценарии принудительного туннелирования](/troubleshoot/azure/virtual-machines/custom-routes-enable-kms-activation#solution).
 
 > [!NOTE]
 > В некоторых развертываниях могут не требоваться правила DNS, например Azure Active Directory контроллеры домена перенаправлять запросы DNS на Azure DNS по адресу 168.63.129.16.
