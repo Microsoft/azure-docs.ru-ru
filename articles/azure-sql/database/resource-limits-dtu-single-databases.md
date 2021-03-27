@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/20/2019
-ms.openlocfilehash: fd9a811fd1c19d115f3ff15194b7e632114140df
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c530d584282cebba78c095798944e48d7efe2c66
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92790259"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105625659"
 ---
 # <a name="resource-limits-for-single-databases-using-the-dtu-purchasing-model---azure-sql-database"></a>Ограничения ресурсов для отдельных баз данных с использованием модели приобретения DTU — база данных SQL Azure
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -103,9 +103,9 @@ ms.locfileid: "92790259"
 > [!IMPORTANT]
 > Более 1 ТБ хранилища на уровне "Премиум" в настоящее время доступны во всех регионах, кроме: Восточный Китай, Северный Китай, Центрально-Центральный регион и Северо-Восточная Германия. В этих регионах максимальный объем хранилища категории "Премиум" ограничен 1 ТБ.  Дополнительные сведения см. в разделе [о действующих ограничениях для P11-P15](single-database-scale.md#p11-and-p15-constraints-when-max-size-greater-than-1-tb).
 > [!NOTE]
-> `tempdb`Ограничения см. в разделе [ограничения tempdb](/sql/relational-databases/databases/tempdb-database?view=sql-server-2017#tempdb-database-in-sql-database).
+> `tempdb`Ограничения см. в разделе [ограничения tempdb](/sql/relational-databases/databases/tempdb-database#tempdb-database-in-sql-database).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Ограничения ресурсов Виртуальное ядро для отдельной базы данных см. [в разделе ограничения ресурсов для отдельных баз данных с использованием модели приобретения Виртуальное ядро](resource-limits-vcore-single-databases.md) .
 - Сведения об ограничениях ресурсов Виртуальное ядро для эластичных пулов см. [в статье ограничения ресурсов для эластичных пулов с использованием модели приобретения Виртуальное ядро](resource-limits-vcore-elastic-pools.md) .

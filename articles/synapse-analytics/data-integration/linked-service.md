@@ -2,19 +2,19 @@
 title: Защита связанной службы
 description: Узнайте, как подготавливать и защищать связанную службу с помощью управляемой виртуальной сети.
 services: synapse-analytics
-author: ArnoMicrosoft
+author: RonyMSFT
 ms.service: synapse-analytics
 ms.topic: how-to
 ms.subservice: ''
 ms.date: 04/15/2020
-ms.author: acomet
+ms.author: ronytho
 ms.reviewer: jrasnick
-ms.openlocfilehash: af6afa2b0285fe741241183ed99712a132953a30
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: be7ee2f4b2b8472c5edeff63e143d99c958bfc5a
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98220122"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627223"
 ---
 # <a name="secure-a-linked-service-with-private-links"></a>Защита связанной службы с помощью частных ссылок
 
@@ -49,7 +49,7 @@ ms.locfileid: "98220122"
 1. Выберите **+ создать** в разделе управляемая частная конечная точка.
 1. Выберите плитку Azure Data Lake Storage 2-го поколения из списка и нажмите кнопку **продолжить**.
 1. Введите имя созданной ранее учетной записи хранения.
-1. Выберите **Создать**.
+1. Нажмите кнопку **Создать**
 1. Подождите несколько секунд, и для созданной частной ссылки отобразится состояние ожидания утверждения.
 
 ## <a name="private-link-approval"></a>Утверждение закрытой ссылки
@@ -66,7 +66,7 @@ ms.locfileid: "98220122"
 
 Теперь вы установили безопасное и частное подключение между синапсе и связанной службой.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 
 Дополнительные сведения об управляемой частной конечной точке в Azure синапсе Analytics см. в разделе [управляемые частные конечные точки](../security/synapse-workspace-managed-private-endpoints.md).

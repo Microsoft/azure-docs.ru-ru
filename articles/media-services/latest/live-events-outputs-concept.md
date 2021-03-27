@@ -13,12 +13,12 @@ ms.devlang: ne
 ms.topic: conceptual
 ms.date: 10/23/2020
 ms.author: inhenkel
-ms.openlocfilehash: a66532856263d31e9070bc99f297ae105ca48312
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 1ef49b66e6bba7c829abd35f6c8cc4169a2c14a0
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102454793"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105625302"
 ---
 # <a name="live-events-and-live-outputs-in-media-services"></a>События и выходные данные прямой трансляции в Службах мультимедиа
 
@@ -117,47 +117,68 @@ ms.locfileid: "102454793"
 После создания события Live можно получить URL-адреса приема, которые вы будете предоставлять в реальном локальном кодировщике. Он использует эти адреса для передачи потоковой трансляции. Дополнительные сведения см. [в статье Рекомендуемые локальные динамические кодировщики](recommended-on-premises-live-encoders.md).
 
 >[!NOTE]
-> Начиная с версии API 2020-05-01, URL-адреса именного называются статическими именами узлов.
+> Начиная с версии API 2020-05-01, URL-адреса "именного" называются статическими именами узлов (Усестатичостнаме: true).
 
-Можно использовать запоминающиеся и незапоминающиеся URL-адреса.
 
 > [!NOTE]
-> Чтобы URL-адрес был прогнозируемым, необходимо использовать режим запоминающихся адресов.
+> Чтобы URL-адрес приема был статическим и прогнозируемым для использования в программе установки аппаратного кодировщика, присвойте свойству **усестатичостнаме** значение true и задайте для свойства **accessToken** одинаковый идентификатор GUID при каждом создании. 
 
-* Незапоминающийся URL-адрес
+### <a name="example-liveevent-and-liveeventinput-configuration-settings-for-a-static-non-random-ingest-rtmp-url"></a>Примеры параметров конфигурации Лививент и Лививентинпут для статического (не случайного) приема URL-адреса RTMP.
 
-    По умолчанию в службах мультимедиа v3 используется не именного URL-адрес. Вы можете быстро получить интерактивное событие, но URL-адрес приема известен только при запуске события Live. URL-адрес изменится, если вы останавливаете или запускаете событие Live. Именного используется в сценариях, когда конечному пользователю требуется выполнить потоковую передачу с помощью приложения, в котором приложение хочет получить ASAP о событии, а динамический URL-адрес приема не является проблемой.
+```csharp
+             LiveEvent liveEvent = new LiveEvent(
+                    location: mediaService.Location,
+                    description: "Sample LiveEvent from .NET SDK sample",
+                    // Set useStaticHostname to true to make the ingest and preview URL host name the same. 
+                    // This can slow things down a bit. 
+                    useStaticHostname: true,
+
+                    // 1) Set up the input settings for the Live event...
+                    input: new LiveEventInput(
+                        streamingProtocol: LiveEventInputProtocol.RTMP,  // options are RTMP or Smooth Streaming ingest format.
+                                                                         // This sets a static access token for use on the ingest path. 
+                                                                         // Combining this with useStaticHostname:true will give you the same ingest URL on every creation.
+                                                                         // This is helpful when you only want to enter the URL into a single encoder one time for this Live Event name
+                        accessToken: "acf7b6ef-8a37-425f-b8fc-51c2d6a5a86a",  // Use this value when you want to make sure the ingest URL is static and always the same. If omitted, the service will generate a random GUID value.
+                        accessControl: liveEventInputAccess, // controls the IP restriction for the source encoder.
+                        keyFrameIntervalDuration: "PT2S" // Set this to match the ingest encoder's settings
+                    ),
+```
+
+* Нестатическое имя узла
+
+    По умолчанию в службах мультимедиа v3 при создании **лививент** используется нестатическое имя узла. Вы можете быстро выделять события в прямом эфире, но URL-адрес приема, который требуется для аппаратного или программного кодирования в реальном времени, будет случайным. URL-адрес изменится, если вы останавливаете или запускаете событие Live. Нестатические имена узлов полезны только в сценариях, где конечному пользователю требуется выполнить потоковую передачу с помощью приложения, которое должно очень быстро получить интерактивное событие, и наличие динамического URL-адреса приема не является проблемой.
 
     Если клиентскому приложению не требуется предварительно создавать URL-адрес приема перед созданием события Live, позвольте службам мультимедиа автоматически создать маркер доступа для события Live.
 
-* Запоминающийся URL-адрес
+* Статические имена узлов 
 
-    Режим именного является предпочтительным для больших трансляций мультимедиа, использующих кодировщики аппаратной рассылки и не требующих перенастройки кодировщиков при запуске интерактивного мероприятия. Этим вещательным каналам нужен прогнозируемый URL-адрес приема, который не изменяется со временем.
+    Режим статического имени узла предпочтительнее большинства операторов, которые хотят предварительно настроить аппаратное или программное обеспечение для кодирования в реальном времени с помощью URL-адреса приема RTMP, который никогда не изменяется при создании или отключении или запуске определенного интерактивного события. Этим операторам нужен прогнозируемый URL-адрес приема на основе RTMP, который не изменяется со временем. Это также очень полезно, если необходимо отправить статический URL-адрес приема RTMP в параметры конфигурации устройства кодирования оборудования, такого как Блаккмагик Атем Mini Pro или аналогичные средства аппаратной кодировки и производства. 
 
     > [!NOTE]
-    > В портал Azure URL-адрес именного имеет имя "*статический префикс имени узла*".
+    > В портал Azure URL-адрес статического имени узла называется "*статический префикс имени узла*".
 
     Чтобы указать этот режим в API, задайте значение `useStaticHostName` `true` во время создания (по умолчанию — `false` ). Если `useStaticHostname` для параметра задано значение true, то `hostnamePrefix` указывает первую часть имени узла, назначенную для предварительной версии интерактивных событий и принимающих конечные точки. Последним именем узла будет сочетание этого префикса, имя учетной записи службы мультимедиа и короткий код для центра обработки данных служб мультимедиа Azure.
 
     Чтобы избежать случайного токена в URL-адресе, необходимо также передать собственный маркер доступа ( `LiveEventInput.accessToken` ) во время создания.  Маркер доступа должен быть допустимой строкой GUID (с дефисами или без них). После установки режима он не может быть обновлен.
 
-    Маркер доступа должен быть уникальным в центре обработки данных. Если приложению требуется использовать URL-адрес именного, рекомендуется всегда создавать новый экземпляр GUID для маркера доступа (вместо повторного использования существующего идентификатора GUID).
+    Маркер доступа должен быть уникальным в регионе Azure и учетной записи служб мультимедиа. Если приложению требуется использовать URL-адрес, принимающий статическое имя узла, рекомендуется всегда создавать новый экземпляр GUID для использования с определенной комбинацией региона, учетной записи служб мультимедиа и интерактивного события.
 
-    Используйте следующие интерфейсы API, чтобы включить URL-адрес именного и задать для маркера доступа допустимый идентификатор GUID (например, `"accessToken": "1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"` ).  
+    Используйте следующие интерфейсы API, чтобы включить URL-адрес статического имени узла и задать для маркера доступа допустимый идентификатор GUID (например, `"accessToken": "1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"` ).  
 
-    |Язык|Включить URL-адрес именного|Задание маркера доступа.|
+    |Язык|Включить URL-адрес статического имени узла|Задание маркера доступа.|
     |---|---|---|
-    |REST|[Properties. Ванитюрл](/rest/api/media/liveevents/create#liveevent)|[Лививентинпут. accessToken](/rest/api/media/liveevents/create#liveeventinput)|
-    |CLI|[--именного — URL-адрес](/cli/azure/ams/live-event#az-ams-live-event-create)|[--Access — токен](/cli/azure/ams/live-event#optional-parameters)|
-    |.NET|[Лививент. Ванитюрл](/dotnet/api/microsoft.azure.management.media.models.liveevent#Microsoft_Azure_Management_Media_Models_LiveEvent_VanityUrl)|[Лививентинпут. AccessToken](/dotnet/api/microsoft.azure.management.media.models.liveeventinput.accesstoken#Microsoft_Azure_Management_Media_Models_LiveEventInput_AccessToken)|
+    |REST|[Properties. Усестатичостнаме](/rest/api/media/liveevents/create#liveevent)|[Лививентинпут. Усестатичостнаме](/rest/api/media/liveevents/create#liveeventinput)|
+    |CLI|[--использовать-Static-имя_узла](/cli/azure/ams/live-event#az-ams-live-event-create)|[--Access — токен](/cli/azure/ams/live-event#optional-parameters)|
+    |.NET|[Лививент. Усестатичостнаме](/dotnet/api/microsoft.azure.management.media.models.liveevent.usestatichostname?view=azure-dotnet#Microsoft_Azure_Management_Media_Models_LiveEvent_UseStaticHostname)|[Лививентинпут. AccessToken](/dotnet/api/microsoft.azure.management.media.models.liveeventinput.accesstoken#Microsoft_Azure_Management_Media_Models_LiveEventInput_AccessToken)|
 
 ### <a name="live-ingest-url-naming-rules"></a>Правила именования URL-адресов динамического приема
 
 * *Случайная* строка ниже представляет собой 128-разрядное шестнадцатеричное число (состоящее из 32 знаков: 0–9 и a–f).
-* *маркер доступа*: допустимая строка GUID, заданная при использовании режима именного. Например, `"1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"`.
+* *маркер доступа*: допустимая строка GUID, заданная при использовании статического параметра имени узла. Например, `"1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"`.
 * *имя потока*: указывает имя потока для конкретного соединения. Значение имени потока обычно добавляется используемым динамическим кодировщиком. Можно настроить динамический кодировщик для использования любого имени для описания соединения, например: "video1_audio1", "video2_audio1", "Stream".
 
-#### <a name="non-vanity-url"></a>Незапоминающийся URL-адрес
+#### <a name="non-static-hostname-ingest-url"></a>URL-адрес приема нестатического имени узла
 
 ##### <a name="rtmp"></a>RTMP
 
@@ -171,7 +192,7 @@ ms.locfileid: "102454793"
 `http://<random 128bit hex string>.channel.media.azure.net/<auto-generated access token>/ingest.isml/streams(<stream name>)`<br/>
 `https://<random 128bit hex string>.channel.media.azure.net/<auto-generated access token>/ingest.isml/streams(<stream name>)`<br/>
 
-#### <a name="vanity-url"></a>Запоминающийся URL-адрес
+#### <a name="static-hostname-ingest-url"></a>URL-адрес приема статического имени узла
 
 В следующих путях `<live-event-name>` означает либо имя, присвоенное событию, либо пользовательское имя, используемое при создании события прямой трансляции.
 

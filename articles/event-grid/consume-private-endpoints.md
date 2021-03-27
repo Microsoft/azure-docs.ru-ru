@@ -3,12 +3,12 @@ title: Доставка событий с помощью службы частн
 description: В этой статье описывается, как обойти ограничение невозможности доставки событий с помощью службы Private Link.
 ms.topic: how-to
 ms.date: 02/12/2021
-ms.openlocfilehash: 7ca15a76d56d9cdcdee741b661981b80c914d0e9
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 9df78e1cc7734ba9e455ed686286658006f9445e
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104722333"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105629297"
 ---
 # <a name="deliver-events-using-private-link-service"></a>Доставка событий с помощью службы частной связи
 В настоящее время невозможно доставить события с помощью [частных конечных точек](../private-link/private-endpoint-overview.md). То есть нет никакой поддержки, если есть требования к сетевой изоляции, в которых трафик доставленных событий не должен выходить за пределы частного IP-адреса. 
@@ -27,7 +27,7 @@ ms.locfileid: "104722333"
 ## <a name="deliver-events-to-event-hubs-using-managed-identity"></a>Доставка событий в концентраторы событий с помощью управляемого удостоверения
 Для доставки событий в концентраторы событий в пространстве имен концентраторов событий с помощью управляемого удостоверения выполните следующие действия.
 
-1. [Включите назначенное системой удостоверение для раздела или домена](managed-service-identity.md#create-a-custom-topic-or-domain-with-an-identity). 
+1. Включить назначенное системой удостоверение: [системные разделы](enable-identity-system-topics.md), [пользовательские разделы и домены](enable-identity-custom-topics-domains.md).  
 1. [Добавьте удостоверение в роль **отправителя данных концентраторов событий Azure** в пространстве имен концентраторов событий](../event-hubs/authenticate-managed-identity.md#to-assign-azure-roles-using-the-azure-portal).
 1. [Установите флажок **разрешить доверенным службам Майкрософт обходить этот параметр брандмауэра** в пространстве имен концентраторов событий](../event-hubs/event-hubs-service-endpoints.md#trusted-microsoft-services). 
 1. [Настройте подписку на события](managed-service-identity.md#create-event-subscriptions-that-use-an-identity) , которая использует концентратор событий в качестве конечной точки для использования назначенного системой удостоверения.
@@ -35,18 +35,18 @@ ms.locfileid: "104722333"
 ## <a name="deliver-events-to-service-bus-using-managed-identity"></a>Доставка событий в служебную шину с помощью управляемого удостоверения
 Чтобы доставлять события в очереди или разделы служебной шины в пространстве имен служебная шина с помощью управляемого удостоверения, выполните следующие действия.
 
-1. [Включите назначенное системой удостоверение для раздела или домена](managed-service-identity.md#create-a-custom-topic-or-domain-with-an-identity). 
-1. Добавление удостоверения в роль [отправителя данных служебной шины Azure](/service-bus-messaging/service-bus-managed-service-identity#azure-built-in-roles-for-azure-service-bus) в пространстве имен служебной шины
+1. Включить назначенное системой удостоверение: [системные разделы](enable-identity-system-topics.md), [пользовательские разделы и домены](enable-identity-custom-topics-domains.md). 
+1. [Добавление удостоверения в роль **отправителя данных служебной шины Azure**](/service-bus-messaging/service-bus-managed-service-identity#azure-built-in-roles-for-azure-service-bus) в пространстве имен служебной шины
 1. [Установите флажок **разрешить доверенным службам Майкрософт обходить этот параметр брандмауэра** в пространстве имен служебной шины](../service-bus-messaging/service-bus-service-endpoints.md#trusted-microsoft-services). 
-1. [Настройте подписку на события](managed-service-identity.md#create-event-subscriptions-that-use-an-identity) , использующую очередь или раздел служебной шины в качестве конечной точки для использования назначенного системой удостоверения.
+1. [Настройте подписку на события](managed-service-identity.md) , использующую очередь или раздел служебной шины в качестве конечной точки для использования назначенного системой удостоверения.
 
 ## <a name="deliver-events-to-storage"></a>Доставка событий в хранилище 
 Для доставки событий в очереди хранилища с помощью управляемого удостоверения выполните следующие действия.
 
-1. [Включите назначенное системой удостоверение для раздела или домена](managed-service-identity.md#create-a-custom-topic-or-domain-with-an-identity).
-1. Добавьте удостоверение в роль [отправителя сообщений очереди хранилища](../storage/common/storage-auth-aad-rbac-portal.md) в очереди службы хранилища Azure.
+1. Включить назначенное системой удостоверение: [системные разделы](enable-identity-system-topics.md), [пользовательские разделы и домены](enable-identity-custom-topics-domains.md). 
+1. [Добавьте удостоверение в роль **отправителя сообщений очереди хранилища**](../storage/common/storage-auth-aad-rbac-portal.md) в очереди службы хранилища Azure.
 1. [Настройте подписку на события](managed-service-identity.md#create-event-subscriptions-that-use-an-identity) , использующую очередь или раздел служебной шины в качестве конечной точки для использования назначенного системой удостоверения.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 Дополнительные сведения о доставке событий с помощью управляемого удостоверения см. в разделе [Доставка событий с помощью управляемого удостоверения](managed-service-identity.md). 

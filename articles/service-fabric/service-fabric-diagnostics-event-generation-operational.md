@@ -1,16 +1,14 @@
 ---
 title: Список событий Azure Service Fabric
 description: Полный список событий, предоставляемых Azure Service Fabric для мониторинга кластеров.
-author: srrengar
 ms.topic: reference
 ms.date: 2/25/2019
-ms.author: srrengar
-ms.openlocfilehash: e69b407bc7d58a83616daa44272ec008ccff9fad
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 3f65d7c3ddec8263ff6f115df9616b48814afc93
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "85846652"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628889"
 ---
 # <a name="list-of-service-fabric-events"></a>Список событий Service Fabric 
 
@@ -55,6 +53,13 @@ Service Fabric предоставляет основной набор событ
 | 25622 | NodeOpenFailed | StateTransition |  Не удалось запустить узел и присоединить его к кольцу | FabricNode | Ошибка | 
 | 25624 | NodeClosed | StateTransition |  Работа узла успешно завершена | FabricNode | Informational | 
 | 25626 | NodeAborted | StateTransition |  Узел некорректно завершил работу | FabricNode | Ошибка | 
+
+**События узла средства ведения журнала КТЛ** 
+
+| EventId | Имя | Категория | Описание |Источник (задача) | Level |
+| --- | --- | --- | --- | --- | --- | 
+| 50187 | шаредлогвритесроттлед | Здравоохранение | Операции записи в общий журнал регулируется | ктллогжерноде | Informational | 
+| 50188 | шаредлогвритеунсроттлед | Здравоохранение | Операции записи в общий журнал находятся в нерегулируемом состоянии | ктллогжерноде | Informational | 
 
 ## <a name="application-events"></a>События приложения
 
@@ -272,7 +277,7 @@ Service Fabric предоставляет основной набор событ
 | 18566 | ServiceCreated | FM | Informational |
 | 18567 | ServiceDeleted | FM | Informational |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Получите представление о [диагностике в Service Fabric](service-fabric-diagnostics-overview.md).
 * Дополнительные сведения о службе EventStore см. в [этой статье](service-fabric-diagnostics-eventstore.md).

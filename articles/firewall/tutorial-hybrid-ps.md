@@ -5,15 +5,15 @@ services: firewall
 author: vhorne
 ms.service: firewall
 ms.topic: how-to
-ms.date: 08/28/2020
+ms.date: 03/26/2021
 ms.author: victorh
 customer intent: As an administrator, I want to control network access from an on-premises network to an Azure virtual network.
-ms.openlocfilehash: e60c829831bde3b454ab180d1a39ec46cb346963
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: db60c26ed50dae3b4b28a6c44d152a921eb96a69
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94658661"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627563"
 ---
 # <a name="deploy-and-configure-azure-firewall-in-a-hybrid-network-using-azure-powershell"></a>Развертывание и настройка Брандмауэра Azure в гибридной сети с помощью Azure PowerShell
 
@@ -61,9 +61,9 @@ ms.locfileid: "94658661"
 Сведения о создании маршрутов см. в разделе [Создание маршрутов](#create-the-routes) этой статьи.
 
 >[!NOTE]
->Брандмауэр Azure должен быть напрямую подключен к Интернету. Если сеть AzureFirewallSubnet использует стандартный маршрут к локальной сети через BGP, установите пользовательский маршрут 0.0.0.0/0 и задайте для параметра **NextHopType** значение **Интернет**, чтобы обеспечить прямое подключение к Интернету.
+>Брандмауэр Azure должен быть напрямую подключен к Интернету. Если ваш Азурефиреваллсубнет узнает маршрут по умолчанию для локальной сети по протоколу BGP, необходимо настроить брандмауэр Azure в режиме принудительного туннелирования. Если это существующий брандмауэр Azure, который не может быть перенастроен в режиме принудительного туннелирования, рекомендуется добавить 0.0.0.0/0 UDR в Азурефиреваллсубнет со значением **NextHopType** , установленным в **Internet** для поддержания прямого подключения к Интернету.
 >
->Брандмауэр Azure можно настроить для поддержки принудительного туннелирования. Дополнительные сведения см. в статье [Azure Firewall forced tunneling](forced-tunneling.md) (Принудительное туннелирование в Брандмауэре Azure).
+>Дополнительные сведения см. в статье [Azure Firewall forced tunneling](forced-tunneling.md) (Принудительное туннелирование в Брандмауэре Azure).
 
 >[!NOTE]
 >Трафик между виртуальными сетями с прямым пирингом передается напрямую, даже если маршрут UDR указывает на Брандмауэр Azure как шлюз по умолчанию. Чтобы маршрутизировать трафик между подсетями к брандмауэру в этом сценарии, в UDR для обеих подсетей нужно явно указать префикс целевой подсети.

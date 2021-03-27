@@ -16,12 +16,12 @@ ms.author: kenwith
 ms.reviewer: japere
 ms.custom: it-pro, has-adal-ref
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9f0959ff51714e8a7e69f58a3e3abeab71e8359
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: e9b0cce11abe1076d26ac8d4c4dc57c9b57c4737
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99259378"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105625587"
 ---
 # <a name="enable-remote-access-to-power-bi-mobile-with-azure-ad-application-proxy"></a>Обеспечение удаленного доступа к Power BI Mobile с помощью Azure Active Directory Application Proxy
 
@@ -84,7 +84,7 @@ ms.locfileid: "99259378"
 1. Опубликуйте службы отчетов через прокси приложения со следующими параметрами. Пошаговые инструкции по публикации приложения с помощью Application Proxy приведены в статье [Публикация приложений с помощью Azure AD Application Proxy](application-proxy-add-on-premises-application.md#add-an-on-premises-app-to-azure-ad).
    - **Внутренний URL-адрес**: введите URL-адрес сервера отчетов, к которому соединитель может подключиться в корпоративной сети. Убедитесь, что этот URL-адрес доступен с сервера, на котором установлен соединитель. Рекомендуется использовать домен верхнего уровня, например `https://servername/`, чтобы избежать проблем с вложенными путями, опубликованными через Application Proxy. Например, рекомендуется использовать `https://servername/`, но не `https://servername/reports/` или `https://servername/reportserver/`.
      > [!NOTE]
-     > Мы рекомендуем использовать безопасное HTTPS-соединение с сервером отчетов. Дополнительные практические рекомендации доступны в разделе [Настройка соединений SSL для сервера отчетов, работающего в собственном режиме](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017).
+     > Мы рекомендуем использовать безопасное HTTPS-соединение с сервером отчетов. Дополнительные практические рекомендации доступны в разделе [Настройка соединений SSL для сервера отчетов, работающего в собственном режиме](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server).
    - **Внешний URL-адрес**: введите общедоступный URL-адрес, к которому будет подключаться мобильное приложение Power BI. Например, он может иметь вид `https://reports.contoso.com`, если используется личный домен. Чтобы использовать личный домен, передайте сертификат для домена и добавьте домен msappproxy.net по умолчанию в запись DNS для своего приложения. Подробные инструкции доступны в разделе [Работа с пользовательскими доменами в прокси приложения Azure AD](application-proxy-configure-custom-domain.md).
 
    - **Метод предварительной проверки подлинности**: Azure Active Directory
@@ -156,7 +156,7 @@ Microsoft Intune можно использовать для управления
 
 Использование AD Application Proxy Azure для включения мобильного приложения Power BI для подключения к локальной Сервер отчетов Power BI не поддерживается с политиками условного доступа, для которых требуется приложение Microsoft Power BI в качестве утвержденного клиентского приложения.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Включение собственного клиентского приложения для взаимодействия с прокси-приложениями](application-proxy-configure-native-client-application.md)
 - [Просмотр локальных отчетов на сервере отчетов и ключевых показателей эффективности в мобильных приложениях Power BI](/power-bi/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports)

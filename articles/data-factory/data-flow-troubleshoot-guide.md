@@ -7,16 +7,16 @@ ms.reviewer: daperlov
 ms.service: data-factory
 ms.topic: troubleshooting
 ms.date: 03/18/2021
-ms.openlocfilehash: 77007f0d9ffac39ecb6f21957dd8cd1bf7a0b945
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: a475441a845300d74014924415a4e48ae4de16df
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105565713"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628294"
 ---
 # <a name="troubleshoot-mapping-data-flows-in-azure-data-factory"></a>Устранение неполадок сопоставления потоков данных в фабрике данных Azure
 
-[!INCLUDE[appliesto-adf-xxx-md](includes/appliesto-adf-xxx-md.md)]
+[!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
 
 В этой статье рассматриваются распространенные методы устранения неполадок при сопоставлении потоков данных в фабрике данных Azure.
 

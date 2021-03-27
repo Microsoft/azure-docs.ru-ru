@@ -6,18 +6,18 @@ manager: nitinme
 ms.author: lajanuar
 author: laujan
 ms.date: 03/05/2021
-ms.openlocfilehash: 70c8bce840bca6f2e99b29dc32f5e71bbad8d379
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 780e6defe4f7d09e2d136c080525447ffd29bbb4
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105047241"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105612387"
 ---
 # <a name="get-started-with-document-translation-preview"></a>Начало работы с переводом документа (Предварительная версия)
 
  В этой статье вы узнаете, как использовать преобразование документов с помощью методов HTTP REST API. Преобразование документов — это облачная функция службы [Azure Translator](../translator-info-overview.md) .  API перевода документов позволяет переводить целые документы, сохраняя структуру исходного документа и форматирование текста.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 > [!NOTE]
 >
@@ -37,8 +37,8 @@ ms.locfileid: "105047241"
 
 > [!IMPORTANT]
 >
-> * Вы не будете использовать конечную точку, найденную в портал Azure _ключей ресурсов и конечной_ точке глобального преобразователя, — `api.cognitive.microsofttranslator.com` для выполнения HTTP-запросов к преобразованию документов.
 > * **Для всех запросов API к службе перевода документов требуется Пользовательская конечная точка домена**.
+> * Вы не будете использовать конечную точку, найденную в портал Azure _ключей ресурсов и конечной_ точке глобального преобразователя, — `api.cognitive.microsofttranslator.com` для выполнения HTTP-запросов к преобразованию документов.
 
 ### <a name="what-is-the-custom-domain-endpoint"></a>Что такое конечная точка пользовательского домена?
 
@@ -93,7 +93,7 @@ https://<NAME-OF-YOUR-RESOURCE>.cognitiveservices.azure.com/translator/text/batc
 
 * Создайте новый проект.
 * Замените файл Program.cs кодом C#, указанным ниже.
-* Задайте конечную точку. ключ подписки и значения URL-адресов контейнеров в Program. cs.
+* Задайте значения параметров конечная точка, ключ подписки и URL-адрес контейнера в Program. cs.
 * Для обработки данных JSON добавьте [Newtonsoft.Jsв пакет с помощью интерфейса командной строки .NET](https://www.nuget.org/packages/Newtonsoft.Json/).
 * Запустите программу из каталога проекта.
 
@@ -101,7 +101,7 @@ https://<NAME-OF-YOUR-RESOURCE>.cognitiveservices.azure.com/translator/text/batc
 
 * Создайте новый проект Node.js.
 * Установите библиотеку Аксиос с помощью `npm i axios` .
-* Скопируйте приведенный ниже код в проект.
+* Скопируйте и вставьте приведенный ниже код в проект.
 * Задайте значения конечная точка, ключ подписки и URL-адрес контейнера.
 * Запустите программу.
 
@@ -174,7 +174,7 @@ gradle run
 * Задайте значения конечная точка, ключ подписки и URL-адрес контейнера.
 * Сохраните файл с расширением .go.
 * Откройте командную строку на компьютере, на котором установлен язык Go.
-* Скомпилируйте файл, например "go build example-code.go".
+* Создайте файл. Например: "Go Build example-Code. Go".
 * Запустите файл, например "example-code".
 
  ---
@@ -207,26 +207,49 @@ gradle run
 ## <a name="post-a-translation-request"></a>Публикация запроса на перевод
 
 <!-- markdownlint-disable MD024 -->
-### <a name="post-request-body-without-optional-glossaryurl"></a>Тело запроса POST без необязательных Глоссарюрл
+### <a name="post-request-body-to-translate-all-documents-in-a-container"></a>ОТПРАВКА текста запроса для перевода всех документов в контейнере
 
 ```json
 {
     "inputs": [
         {
             "source": {
-                "sourceUrl": "<https://YOUR-SOURCE-URL-WITH-READ-LIST-ACCESS-SAS>",
-                "storageSource": "AzureBlob",
-                "filter": {
-                    "prefix": "News",
-                    "suffix": ".txt"
-                },
-                "language": "en"
+                "sourceUrl": https://my.blob.core.windows.net/source-en?sv=2019-12-12&st=2021-03-05T17%3A45%3A25Z&se=2021-03-13T17%3A45%3A00Z&sr=c&sp=rl&sig=SDRPMjE4nfrH3csmKLILkT%2Fv3e0Q6SWpssuuQl1NmfM%3D
             },
             "targets": [
                 {
-                    "targetUrl": "<https://YOUR-SOURCE-URL-WITH-WRITE-LIST-ACCESS-SAS>",
-                    "storageSource": "AzureBlob",
-                    "category": "general",
+                    "targetUrl": https://my.blob.core.windows.net/target-fr?sv=2019-12-12&st=2021-03-05T17%3A49%3A02Z&se=2021-03-13T17%3A49%3A00Z&sr=c&sp=wdl&sig=Sq%2BYdNbhgbq4hLT0o1UUOsTnQJFU590sWYo4BOhhQhs%3D,
+                    "language": "fr"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+### <a name="post-request-body-to-translate-a-specific-document-in-a-container"></a>Тело запроса POST для преобразования определенного документа в контейнер
+
+* Убедитесь, что вы указали "storageType": "File"
+* Убедитесь, что вы создали URL-адрес источника & маркер SAS для конкретного большого двоичного объекта или документа (не для контейнера). 
+* Убедитесь, что имя целевого файла указано как часть целевого URL-адреса, хотя маркер SAS по-прежнему находится в контейнере.
+* Пример запроса ниже показывает один документ, переведенный на два целевых языка
+
+```json
+{
+    "inputs": [
+        {
+            "storageType": "File",
+            "source": {
+                "sourceUrl": https://my.blob.core.windows.net/source-en/source-english.docx?sv=2019-12-12&st=2021-01-26T18%3A30%3A20Z&se=2021-02-05T18%3A30%3A00Z&sr=c&sp=rl&sig=d7PZKyQsIeE6xb%2B1M4Yb56I%2FEEKoNIF65D%2Fs0IFsYcE%3D
+            },
+            "targets": [
+                {
+                    "targetUrl": https://my.blob.core.windows.net/target/try/Target-Spanish.docx?sv=2019-12-12&st=2021-01-26T18%3A31%3A11Z&se=2021-02-05T18%3A31%3A00Z&sr=c&sp=wl&sig=AgddSzXLXwHKpGHr7wALt2DGQJHCzNFF%2F3L94JHAWZM%3D,
+                    "language": "es"
+                },
+                {
+                    "targetUrl": https://my.blob.core.windows.net/target/try/Target-German.docx?sv=2019-12-12&st=2021-01-26T18%3A31%3A11Z&se=2021-02-05T18%3A31%3A00Z&sr=c&sp=wl&sig=AgddSzXLXwHKpGHr7wALt2DGQJHCzNFF%2F3L94JHAWZM%3D,
                     "language": "de"
                 }
             ]
@@ -235,44 +258,10 @@ gradle run
 }
 ```
 
-### <a name="post-request-body-with-optional-glossaryurl"></a>Тело запроса POST с необязательным Глоссарюрл
-
-```json
-{
-  "inputs":[
-    {
-      "source":{
-        "sourceUrl":"<https://YOUR-SOURCE-URL-WITH-READ-LIST-ACCESS-SAS>",
-        "storageSource":"AzureBlob",
-        "filter":{
-          "prefix":"News",
-          "suffix":".txt"
-        },
-        "language":"en"
-      },
-      "targets":[
-        {
-          "targetUrl":"<https://YOUR-SOURCE-URL-WITH-WRITE-LIST-ACCESS-SAS>",
-          "storageSource":"AzureBlob",
-          "category":"general",
-          "language":"de",
-          "glossaries":[
-            {
-              "glossaryUrl":"<https://YOUR-GLOSSARY-URL-WITH-READ-LIST-ACCESS-SAS>",
-              "format":"xliff",
-              "version":"1.2"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
 
 > [!IMPORTANT]
 >
-> В приведенных ниже примерах кода вы жестко задаете ключ и конечную точку, где указано; не забудьте удалить ключ из кода по завершении и никогда не публиковать его в общедоступном виде.  Способы безопасного хранения и доступа к учетным данным см. в статье [Безопасность Azure Cognitive Services](../../cognitive-services-security.md?tabs=command-line%2ccsharp) .
+> В приведенных ниже примерах кода вы жестко задаете ключ и конечную точку, где указано; не забудьте удалить ключ из кода по завершении и никогда не публиковать его в общедоступном виде.  Способы безопасного хранения и доступа к учетным данным см. в статье [Безопасность Azure Cognitive Services](/azure/cognitive-services/cognitive-services-security?tabs=command-line%2Ccsharp) .
 >
 > Может потребоваться обновить следующие поля в зависимости от операции:
 >>>
@@ -1247,7 +1236,7 @@ func main() {
 
 ## <a name="content-limits"></a>Ограничения содержимого
 
-В таблице ниже перечислены ограничения для данных, отправляемых в перевод документа.
+В следующей таблице перечислены ограничения для данных, отправляемых в перевод документа (Предварительная версия).
 
 |attribute | Ограничение|
 |---|---|
@@ -1260,7 +1249,7 @@ func main() {
 > [!NOTE]
 > Приведенные выше ограничения содержимого могут быть изменены до выхода общедоступной версии.
 
-## <a name="learn-more"></a>Подробнее
+## <a name="learn-more"></a>Дополнительные сведения
 
 * [Справочник по API Переводчика версии 3](../reference/v3-0-reference.md)
 * [Поддержка языков](../language-support.md)
