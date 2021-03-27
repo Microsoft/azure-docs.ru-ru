@@ -9,12 +9,12 @@ ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: spark
 ms.date: 09/13/2020
-ms.openlocfilehash: f11693b34048b11c02668e086561b9a6521a5213
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7e57cdca1d212e6077d685d95a8f869c12e546a8
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98121531"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627954"
 ---
 # <a name="visualize-data"></a>Визуализируйте данные
 Azure синапсе — это интегрированная служба аналитики, которая ускоряет анализ данных в разных хранилищах и системах анализа больших данных. Визуализация данных — ключевой компонент, позволяющий получить представление о данных. Это упрощает понимание больших и небольших данных. Это также упрощает обнаружение шаблонов, тенденций и выбросов в группах данных. 
@@ -34,6 +34,7 @@ Azure синапсе — это интегрированная служба ан
    ![Встроенные диаграммы](./media/apache-spark-development-using-notebooks/synapse-built-in-charts.png#lightbox)
 
 3. Теперь можно настроить визуализацию, указав следующие значения:
+
    | Конфигурация | Описание |
    |--|--| 
    | Тип диаграммы | ```display```Функция поддерживает широкий спектр типов диаграмм, включая линейчатые диаграммы, точечные, графикы и многое другое. |
@@ -148,6 +149,37 @@ svg
 ## <a name="popular-libraries"></a>Популярные библиотеки
 Когда дело доходит до визуализации данных, Python предлагает несколько библиотек для построения диаграмм, которые упаковываются с множеством различных функций. По умолчанию каждый пул Apache Spark в Azure синапсе Analytics содержит набор проверенных и популярных библиотек с открытым исходным кодом. Вы также можете добавлять дополнительные библиотеки & версий или управлять ими с помощью возможностей управления библиотекой Azure синапсе Analytics. 
 
+### <a name="matplotlib"></a>Matplotlib
+Вы можете визуализировать стандартные библиотеки построения графиков, например Matplotlib, используя встроенные функции отрисовки для каждой библиотеки.
+
+На следующем рисунке показан пример создания линейчатой диаграммы с помощью **Matplotlib**.
+   ![Пример графа линий.](./media/apache-spark-data-viz/matplotlib-example.png#lightbox)
+
+Выполните следующий пример кода, чтобы нарисовать изображение выше.
+
+```python
+# Bar chart
+
+import matplotlib.pyplot as plt
+
+x1 = [1, 3, 4, 5, 6, 7, 9]
+y1 = [4, 7, 2, 4, 7, 8, 3]
+
+x2 = [2, 4, 6, 8, 10]
+y2 = [5, 6, 2, 6, 2]
+
+plt.bar(x1, y1, label="Blue Bar", color='b')
+plt.bar(x2, y2, label="Green Bar", color='g')
+plt.plot()
+
+plt.xlabel("bar number")
+plt.ylabel("bar height")
+plt.title("Bar Chart Example")
+plt.legend()
+plt.show()
+```
+
+
 ### <a name="bokeh"></a>Bokeh
 Можно визуализировать HTML или интерактивные библиотеки, например **Боке**, с помощью ```displayHTML(df)``` . 
 
@@ -186,41 +218,49 @@ html = file_html(p, CDN, "my plot1")
 displayHTML(html)
 ```
 
-### <a name="matplotlib"></a>Matplotlib
-Вы можете визуализировать стандартные библиотеки построения графиков, например Matplotlib, используя встроенные функции отрисовки для каждой библиотеки.
 
-На следующем рисунке показан пример создания линейчатой диаграммы с помощью **Matplotlib**.
-   ![Пример графа линий.](./media/apache-spark-data-viz/matplotlib-example.png#lightbox)
+### <a name="plotly"></a>Plotly
+Можно визуализировать HTML или интерактивные библиотеки, например **графику**, с помощью **дисплайхтмл ()**.
 
-Выполните следующий пример кода, чтобы нарисовать изображение выше.
+Выполните следующий пример кода, чтобы нарисовать изображение ниже.
+
+   ![график — пример](./media/apache-spark-development-using-notebooks/synapse-plotly-image.png#lightbox)
+
 
 ```python
-# Bar chart
+from urllib.request import urlopen
+import json
+with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
+    counties = json.load(response)
 
-import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
+                   dtype={"fips": str})
 
-x1 = [1, 3, 4, 5, 6, 7, 9]
-y1 = [4, 7, 2, 4, 7, 8, 3]
+import plotly.express as px
 
-x2 = [2, 4, 6, 8, 10]
-y2 = [5, 6, 2, 6, 2]
+fig = px.choropleth(df, geojson=counties, locations='fips', color='unemp',
+                           color_continuous_scale="Viridis",
+                           range_color=(0, 12),
+                           scope="usa",
+                           labels={'unemp':'unemployment rate'}
+                          )
+fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
-plt.bar(x1, y1, label="Blue Bar", color='b')
-plt.bar(x2, y2, label="Green Bar", color='g')
-plt.plot()
+# create an html document that embeds the Plotly plot
+h = plotly.offline.plot(fig, output_type='div')
 
-plt.xlabel("bar number")
-plt.ylabel("bar height")
-plt.title("Bar Chart Example")
-plt.legend()
-plt.show()
+# display this html
+displayHTML(h)
 ```
+
 
 ### <a name="additional-libraries"></a>Дополнительные библиотеки 
 Помимо этих библиотек, среда выполнения Azure синапсе Analytics также включает следующий набор библиотек, которые часто используются для визуализации данных:
 - [Matplotlib](https://matplotlib.org/)
 - [Bokeh](https://bokeh.org/)
 - [Seaborn](https://seaborn.pydata.org/) 
+- [Plotly](https://plotly.com/)
 
 Вы можете посетить [документацию](./spark/../apache-spark-version-support.md) по среде выполнения Azure синапсе Analytics, чтобы получить актуальные сведения о доступных библиотеках и версиях.
 
@@ -230,6 +270,6 @@ Azure синапсе Analytics тесно интегрируется с Power BI
 Azure синапсе Analytics позволяет различным вычислительным системам рабочей области совместно использовать базы данных и таблицы между своими пулами Spark и независимым от сервера пулом SQL. С помощью [общей модели метаданных](../metadata/overview.md)можно выполнять запросы к Apache Sparkным таблицам с помощью SQL по запросу. После этого можно подключить конечную точку SQL по запросу, чтобы Power BI, чтобы легко выполнять запросы к синхронизированным таблицам Spark.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 - Дополнительные сведения о настройке соединителя хранилища данных Spark SQL: [СИНАПСЕ SQL Connector](./spark/../synapse-spark-sql-pool-import-export.md)
 - Просмотр библиотек по умолчанию: [Среда выполнения Azure синапсе Analytics](../spark/apache-spark-version-support.md)

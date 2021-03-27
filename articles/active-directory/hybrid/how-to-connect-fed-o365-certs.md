@@ -16,22 +16,29 @@ ms.date: 10/20/2017
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: effdd156858caf5717aac92433e8bc5f4f6147ad
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8e81cb9018d817fb206915a81fdc3bdd60f6b08c
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101686875"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105611894"
 ---
 # <a name="renew-federation-certificates-for-microsoft-365-and-azure-active-directory"></a>Продлите сертификаты Федерации для Microsoft 365 и Azure Active Directory
 ## <a name="overview"></a>Обзор
 Для успешной федерации между Azure Active Directory (Azure AD) и службами федерации Active Directory (AD FS) сертификаты, используемые службами AD FS для подписывания маркеров безопасности в Azure AD, должны соответствовать параметрам, настроенным в Azure AD. Расхождение может привести к нарушению отношений доверия. Azure AD гарантирует, что эта информация синхронизируется при развертывании AD FS и прокси веб-приложения (для доступа к экстрасети).
+
+> [!NOTE]
+> Эта статья содержит сведения о мангингии Федерации церфикатес.  За превращением при аварийном смене см. статью [Аварийное включение сертификатов AD FS](how-to-connect-emergency-ad-fs-certificate-rotation.md)
 
 В этой статье представлены дополнительные сведения об управлении сертификатами для подписи маркеров и их синхронизации с Azure AD в следующих случаях:
 
 * Вы не развертываете прокси веб-приложения, поэтому метаданные федерации недоступны в экстрасети.
 * Вы не применяете стандартную конфигурацию AD FS к сертификатам для подписи маркеров.
 * Вы используете сторонний поставщик удостоверений.
+
+> [!IMPORTANT]
+> Корпорация Майкрософт настоятельно рекомендует использовать аппаратный модуль безопасности (HSM) для защиты и безопасности сертификатов.
+> Дополнительные сведения см. в разделе [модуль безопасности оборудования](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs#hardware-security-module-hsm) раздела рекомендации по обеспечению безопасности AD FS.
 
 ## <a name="default-configuration-of-ad-fs-for-token-signing-certificates"></a>Стандартная конфигурация AD FS для сертификатов для подписи маркеров
 Сертификаты для подписи маркеров и их расшифровки обычно представляют собой самозаверяющие сертификаты со сроком годности в один год. По умолчанию AD FS предусматривает процесс автоматического возобновления действия, который называется **AutoCertificateRollover**. Если вы используете AD FS 2,0 или более поздней версии, Microsoft 365 и Azure AD автоматически обновляют сертификат до истечения срока его действия.
@@ -128,7 +135,7 @@ https://(ваше_имя_FS)/federationmetadata/2007-06/federationmetadata.xml
 
 где `(your_FS_name)` заменяется именем узла службы федерации, используемым вашей организацией, например FS.contoso.com.  Если проверка двух этих параметров оказалась успешной, вам больше не нужно ничего делать.  
 
-Например, `https://fs.contoso.com/federationmetadata/2007-06/federationmetadata.xml`.
+Пример: `https://fs.contoso.com/federationmetadata/2007-06/federationmetadata.xml`
 ## <a name="renew-the-token-signing-certificate-manually"></a>Возобновление действия сертификата для подписи маркера вручную <a name="manualrenew"></a>
 Сертификаты для подписи маркеров можно обновить вручную. Например, в следующих сценариях лучше выполнять ручное обновление.
 

@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 03/25/2021
 ms.author: keithp
-ms.openlocfilehash: 5365ba8c4fbc07c487dd40cfcdc9d566990c493c
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.openlocfilehash: 3370389027805cfb5a68b5b0551d14dc31154804
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "105607053"
+ms.locfileid: "105611843"
 ---
 # <a name="azure-dedicated-hsm-networking"></a>Сеть для выделенного устройства HSM Azure
 
@@ -133,7 +133,7 @@ Command Result : 0 (Success)
 
 ### <a name="alternative-to-using-global-vnet-peering"></a>Альтернатива использованию глобального Пиринг виртуальных сетей
 Существует несколько архитектур, которые можно использовать в качестве альтернативы глобальным пиринга виртуальной сети.
-1.  Использование [подключения VPN-шлюза из виртуальной сети в](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal) виртуальную сеть 
+1.  Использование [подключения VPN-шлюза из виртуальной сети в](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal) виртуальную сеть 
 2.  Подключите HSM VNET с другой ВИРТУАЛЬНОЙ сетью с каналом ER. Это лучше, если требуется прямой локальный путь или VPN-Виртуальная сеть. 
 
 #### <a name="hsm-with-direct-express-route-connectivity"></a>HSM с прямым подключением Express Route

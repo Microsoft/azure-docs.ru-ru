@@ -2,13 +2,13 @@
 title: Настройка сред разработки и развертывания Бицеп
 description: Настройка сред разработки и развертывания Бицеп
 ms.topic: conceptual
-ms.date: 03/25/2021
-ms.openlocfilehash: 9a35355d1035943081ac58b36623af772fb8d547
-ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
+ms.date: 03/26/2021
+ms.openlocfilehash: 0e62e6a4633bee09fcbe8b783118cc95ccd5702e
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105612591"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105626107"
 ---
 # <a name="install-bicep-preview"></a>Установка Бицеп (Предварительная версия)
 
@@ -19,21 +19,25 @@ ms.locfileid: "105612591"
 Чтобы получить наилучший опыт создания Бицеп, вам потребуется два компонента:
 
 - **Расширение бицеп для Visual Studio Code**. Для создания файлов Бицеп необходим хороший редактор Бицеп. Рекомендуется [Visual Studio Code](https://code.visualstudio.com/) с [расширением бицеп](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Эти средства обеспечивают поддержку языка и автозавершение ресурсов. Они помогают создавать и проверять файлы Бицеп. Дополнительные сведения об использовании Visual Studio Code и расширении Бицеп см. в разделе [Краткое руководство. Создание файлов бицеп с помощью Visual Studio Code](./quickstart-create-bicep-use-visual-studio-code.md).
-- **БИЦЕП CLI**. Используйте Бицеп CLI для компиляции файлов Бицеп в шаблоны JSON в ARM и декомпиляцию шаблонов JSON ARM в файлы Бицеп. Дополнительные сведения см. в разделе [Install БИЦЕП CLI](#install-bicep-cli).
+- **БИЦЕП CLI**. Используйте Бицеп CLI для компиляции файлов Бицеп в шаблоны JSON в ARM и декомпиляцию шаблонов JSON ARM в файлы Бицеп. Инструкции по установке см. в разделе [Install БИЦЕП CLI](#install-manually).
 
 ## <a name="deployment-environment"></a>Среда развертывания
 
-Файлы Бицеп можно развернуть с помощью Azure CLI или Azure PowerShell. Для Azure CLI требуется версия 2.20.0 или более поздняя. для Azure PowerShell требуется версия 5.6.0 или более поздняя. Ознакомьтесь с инструкциями по установке:
+Для развертывания локальных файлов Бицеп необходимы два компонента:
 
-- [Установка Azure PowerShell](/powershell/azure/install-az-ps)
-- [Установка Azure CLI в Windows](/cli/azure/install-azure-cli-windows)
-- [Установка Azure CLI в Linux](/cli/azure/install-azure-cli-linux)
-- [Установка Azure CLI в macOS](/cli/azure/install-azure-cli-macos)
+- **Azure CLI версии 2.20.0 или более поздней или Azure PowerShell версии 5.6.0 или более поздней**. Ознакомьтесь с инструкциями по установке:
 
-> [!NOTE]
-> В настоящее время и Azure CLI, и Azure PowerShell могут развертывать только локальные файлы Бицеп. Дополнительные сведения о развертывании файлов Бицеп с помощью Azure CLI см. в разделе [deploy-CLI](./deploy-cli.md#deploy-remote-template). Дополнительные сведения о развертывании файлов Бицеп с помощью Azure PowerShell см. в разделе [deploy-PowerShell]( ./deploy-powershell.md#deploy-remote-template).
+  - [Установка Azure PowerShell](/powershell/azure/install-az-ps)
+  - [Установка Azure CLI в Windows](/cli/azure/install-azure-cli-windows)
+  - [Установка Azure CLI в Linux](/cli/azure/install-azure-cli-linux)
+  - [Установка Azure CLI в macOS](/cli/azure/install-azure-cli-macos)
 
-После установки поддерживаемой версии Azure PowerShell или Azure CLI можно развернуть файл Бицеп с помощью:
+  > [!NOTE]
+  > В настоящее время и Azure CLI, и Azure PowerShell могут развертывать только локальные файлы Бицеп. Дополнительные сведения о развертывании файлов Бицеп с помощью Azure CLI см. в разделе [deploy-CLI](./deploy-cli.md#deploy-remote-template). Дополнительные сведения о развертывании файлов Бицеп с помощью Azure PowerShell см. в разделе [deploy-PowerShell]( ./deploy-powershell.md#deploy-remote-template).
+
+- **БИЦЕП CLI**. Бицеп CLI требуется для компиляции файлов Бицеп в шаблоны JSON перед развертыванием. Инструкции по установке см. в разделе [Install БИЦЕП CLI](#install-bicep-cli).
+
+После установки компонентов можно развернуть файл Бицеп с помощью:
 
 # <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 
@@ -59,11 +63,23 @@ az deployment group create \
 
 ## <a name="install-bicep-cli"></a>Установка Бицеп CLI
 
-Бицеп CLI можно установить с помощью Azure CLI с помощью Azure PowerShell или вручную.
+- Сведения об использовании Бицеп CLI для компиляции и декомпиляции файлов Бицеп см. в разделе [Installing (установка вручную](#install-manually)).
+- Сведения об использовании Azure CLI для развертывания файлов Бицеп см. в разделе [использование с Azure CLI](#use-with-azure-cli).
+- Сведения об использовании Azure PowerShell для развертывания файлов Бицеп см. в разделе [использование с Azure PowerShell](#use-with-azure-powershell).
 
-### <a name="use-azure-cli"></a>Использование Azure CLI
+### <a name="use-with-azure-cli"></a>Использование с Azure CLI
 
-При использовании AZ CLI версии 2.20.0 или более поздней установленный интерфейс командной строки Бицеп устанавливается автоматически при выполнении команды, зависящей от нее. Например, `az deployment ... -f *.bicep` или `az bicep ...`.
+Если установлена версия Azure CLI 2.20.0 или более поздняя, Бицеп CLI устанавливается автоматически при выполнении команды, зависящей от нее. Пример:
+
+```azurecli
+az deployment group create --template-file azuredeploy.bicep --resource-group myResourceGroup
+```
+
+или диспетчер конфигурации служб
+
+```azurecli
+az bicep ...
+```
 
 Вы также можете вручную установить интерфейс командной строки с помощью встроенных команд:
 
@@ -80,17 +96,11 @@ az bicep upgrade
 Чтобы установить определенную версию, выполните следующие действия.
 
 ```bash
-az bicep install --version v0.2.212
+az bicep install --version v0.3.126
 ```
 
-> [!NOTE]
-> AZ CLI устанавливает отдельную версию интерфейса командной строки Бицеп, которая не конфликтует с другими устанавливаемыми Бицеп, и AZ CLI не добавляет Бицеп в путь.
-
-Чтобы отобразить установленные версии, выполните следующие действия.
-
-```bash
-az bicep version
-```
+> [!IMPORTANT]
+> Azure CLI устанавливает отдельную версию интерфейса командной строки Бицеп, которая не конфликтует с другими устанавливаемыми Бицеп, и Azure CLI не добавляет Бицеп CLI в путь. Сведения об использовании Бицеп CLI для компиляции и декомпиляции файлов Бицеп, а также для развертывания файлов Бицеп с помощью Azure PowerShell см. в [статье Установка вручную](#install-manually) или [использование с помощью Azure PowerShell](#use-with-azure-powershell).
 
 Чтобы получить список всех доступных версий Бицеп CLI, выполните следующие действия.
 
@@ -98,9 +108,30 @@ az bicep version
 az bicep list-versions
 ```
 
-### <a name="use-azure-powershell"></a>Использование Azure PowerShell
+Чтобы отобразить установленные версии, выполните следующие действия.
 
-Azure PowerShell у вас еще нет возможности установить CLI Бицеп. Azure PowerShell (v 5.6.0 или более поздней версии) ждет, что интерфейс командной строки Бицеп уже установлен и доступен по пути. Выполните один из [методов установки вручную](#install-manually). После установки интерфейса командной строки Бицеп интерфейс командной строки Бицеп вызывается каждый раз, когда он необходим для командлета развертывания. Например, `New-AzResourceGroupDeployment ... -TemplateFile main.bicep`.
+```bash
+az bicep version
+```
+
+### <a name="use-with-azure-powershell"></a>Использование с Azure PowerShell
+
+Azure PowerShell у вас еще нет возможности установить CLI Бицеп. Azure PowerShell (v 5.6.0 или более поздней версии) ждет, что интерфейс командной строки Бицеп уже установлен и доступен по пути. Выполните один из [методов установки вручную](#install-manually).
+
+Для развертывания файлов Бицеп требуется Бицеп CLI версии 0.3.1 или более поздней. Чтобы проверить версию Бицеп CLI, выполните следующие действия.
+
+```cmd
+bicep --version
+```
+
+> [!IMPORTANT]
+> Azure CLI устанавливает собственную автономную версию Бицеп CLI. Azure PowerShell развертывание завершается сбоем, даже если для Azure CLI установлены необходимые версии.
+
+После установки интерфейса командной строки Бицеп интерфейс командной строки Бицеп вызывается каждый раз, когда он необходим для командлета развертывания. Пример:
+
+```azurepowershell
+New-AzResourceGroupDeployment -ResourceGroupName myResourceGroup -TemplateFile azuredeploy.bicep
+```
 
 ### <a name="install-manually"></a>Установка вручную
 
@@ -193,6 +224,6 @@ bicep --help
 > [!WARNING]
 > Эти предварительные сборки с большей вероятностью имеют известные или неизвестные ошибки.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Приступая к работе с [кратким](./quickstart-create-bicep-use-visual-studio-code.md)руководством по бицеп.

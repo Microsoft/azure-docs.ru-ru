@@ -4,7 +4,7 @@ titleSuffix: Azure App Configuration
 description: Из этого руководства вы узнаете, как динамически обновлять данные конфигурации для приложений .NET Core.
 services: azure-app-configuration
 documentationcenter: ''
-author: abarora
+author: GrantMeStrength
 manager: zhenlan
 editor: ''
 ms.assetid: ''
@@ -14,13 +14,13 @@ ms.devlang: csharp
 ms.custom: devx-track-csharp
 ms.topic: tutorial
 ms.date: 07/01/2019
-ms.author: abarora
-ms.openlocfilehash: 95c48bded224a40879328dba5861b3564f0ebcf8
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.author: jken
+ms.openlocfilehash: bb0c83536f8973a07d656844439a8816dea83346
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99979867"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105625710"
 ---
 # <a name="tutorial-use-dynamic-configuration-in-a-net-core-app"></a>Руководство по Использование динамической конфигурации в приложении .NET Core
 

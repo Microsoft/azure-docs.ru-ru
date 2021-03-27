@@ -13,12 +13,12 @@ ms.date: 03/31/2020
 ms.author: brandwe
 ms.reviewer: brandwe
 ms.custom: aaddev
-ms.openlocfilehash: c67c5d7b46c04e7f1aea020127ee798878c43d60
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 3353d87291492563acbd3a85bbae266c711377f2
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104578793"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105611809"
 ---
 # <a name="shared-device-mode-for-ios-devices"></a>Режим совместной работы с устройством iOS
 

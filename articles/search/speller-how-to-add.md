@@ -7,14 +7,14 @@ author: HeidiSteen
 ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
-ms.date: 03/02/2021
+ms.date: 03/26/2021
 ms.custom: references_regions
-ms.openlocfilehash: be72cae8d109bfeccd60e8c821625f75357568e3
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 52ac3ee4ea2f71e285d21c7b6d082e84fa090da1
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103232364"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105625914"
 ---
 # <a name="add-spell-check-to-queries-in-cognitive-search"></a>Добавление проверки орфографии в запросы в Когнитивный поиск
 
@@ -23,9 +23,9 @@ ms.locfileid: "103232364"
 
 Вы можете улучшить отзыв, заменив правописание отдельными поисковыми запросами, прежде чем они достигают поисковой системы. Параметр средства **проверки орфографии** поддерживается для всех типов запросов: [простой](query-simple-syntax.md), [полный](query-lucene-syntax.md)и новый параметр [семантики](semantic-how-to-query-request.md) в настоящее время в общедоступной предварительной версии.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-+ Существующий индекс поиска, содержащий англоязычные материалы
++ Существующий индекс поиска, содержащий англоязычные материалы. В настоящее время исправление орфографии не работает с [синонимами](search-synonyms.md). Старайтесь не использовать его для индексов, указывающих на карту синонимов в любом определении поля.
 
 + Клиент поиска для отправки запросов
 
@@ -109,7 +109,7 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 
 Хотя содержимое в индексе поиска может состоять из нескольких языков, входные данные запроса, скорее всего, находятся в одном. Поисковая система не проверяет совместимость Куерилангуаже, анализатор языка и язык, на котором состоит содержимое, поэтому обязательно выполняйте запросы соответствующим образом, чтобы избежать получения неверных результатов.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 + [Создание семантического запроса](semantic-how-to-query-request.md)
 + [Создание простого запроса](search-query-create.md)
