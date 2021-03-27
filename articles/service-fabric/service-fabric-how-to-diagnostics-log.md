@@ -1,17 +1,15 @@
 ---
 title: Создание событий журнала из приложения .NET
 description: Информация о том, как добавить функцию ведения в приложение .NET Service Fabric, размещенное в Azure или в изолированном кластере.
-author: srrengar
 ms.topic: conceptual
 ms.date: 03/27/2018
-ms.author: srrengar
 ms.custom: devx-track-csharp
-ms.openlocfilehash: a36425acf42a469c7f48b2e954bdacfdfcce1b10
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: dd3afed85dc3eff81cbe60f252cdc16b0d4018c8
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89011486"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628124"
 ---
 # <a name="add-logging-to-your-service-fabric-application"></a>Добавление ведения журнала в приложение Service Fabric
 
@@ -164,7 +162,7 @@ internal sealed class ServiceEventSource : EventSource
    >[!NOTE]
    >Мы рекомендуем *не использовать* в предыдущем примере статический аргумент `Log.Logger`. Service Fabric позволяет разместить в одном процессе несколько экземпляров службы одного типа. Если вы примените статический аргумент `Log.Logger`, последний модуль записи дополнительных свойств будет содержать значения для всех запущенных экземпляров. Это одна из причин, по которой переменная _logger является частным членом класса службы. Кроме того, переменная `_logger` должна быть доступна в общем коде, который может использоваться несколькими службами.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Дополнительные сведения о [приложении наблюдения за Service Fabric](service-fabric-diagnostics-event-generation-app.md).
 - Изучите методы ведения журнала с использованием [EventFlow](service-fabric-diagnostics-event-aggregation-eventflow.md) и [Диагностики Azure для Windows](service-fabric-diagnostics-event-aggregation-wad.md).

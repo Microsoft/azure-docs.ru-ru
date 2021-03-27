@@ -1,16 +1,14 @@
 ---
 title: Анализ событий Azure Service Fabric с помощью журналов Azure Monitor
 description: Сведения о визуализации и анализе событий с помощью журналов Azure Monitor для мониторинга и диагностики кластеров Azure Service Fabric.
-author: srrengar
 ms.topic: conceptual
 ms.date: 02/21/2019
-ms.author: srrengar
-ms.openlocfilehash: 678e96c9b5611cd6d72abd7c4582691b55ffe479
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f1e22213c857b400cc36c51cefb90e2379352893
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100581551"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628974"
 ---
 # <a name="event-analysis-and-visualization-with-azure-monitor-logs"></a>Анализ событий и визуализация с помощью журналов Azure Monitor
  Azure Monitor собирает и анализирует данные телеметрии от приложений и служб, размещенных в облаке, и предоставляет средства анализа, с помощью которых вы сможете максимально увеличить их доступность и производительность. В этой статье описано, как выполнять запросы в журналах Azure Monitor, чтобы получить подробные сведения и устранить неполадки, происходящие в кластере. Рассматриваются следующие распространенные вопросы:
@@ -100,7 +98,7 @@ ServiceFabricOperationalEvent
 
 ![События запросов на каждом узле](media/service-fabric-diagnostics-event-analysis-oms/oms_kusto_query.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Чтобы включить мониторинг инфраструктуры (т. е. счетчики производительности), перейдите к разделу о [добавлении агента Log Analytics](service-fabric-diagnostics-oms-agent.md). Агент собирает счетчики производительности и добавляет их в имеющуюся рабочую область.
 * Для локальных кластеров Azure Monitor журналы предлагают шлюз (прокси-сервер HTTP Forward), который можно использовать для отправки данных в журналы Azure Monitor. Дополнительные сведения см. в статье [Подключение компьютеров без доступа к Интернету к журналам Azure Monitor с помощью шлюза log Analytics](../azure-monitor/agents/gateway.md).

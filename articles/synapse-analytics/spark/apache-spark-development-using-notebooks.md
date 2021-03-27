@@ -10,12 +10,12 @@ ms.date: 10/19/2020
 ms.author: ruxu
 ms.reviewer: ''
 ms.custom: devx-track-python
-ms.openlocfilehash: d5ff3fb988a7e907308ccccc8d0900d45a0601c0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c5dfd442bb52a5b1d319bd0a40b656d549134e7e
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101671591"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105612331"
 ---
 # <a name="create-develop-and-maintain-synapse-studio-notebooks-in-azure-synapse-analytics"></a>Создание, разработка и обслуживание записных книжек синапсе Studio в Azure синапсе Analytics
 
@@ -33,7 +33,7 @@ ms.locfileid: "101671591"
 ## <a name="preview-of-the-new-notebook-experience"></a>Предварительная версия нового интерфейса записной книжки
 Команда синапсе развернула новый компонент записных книжек в синапсе Studio, чтобы обеспечить единообразную работу с ноутбуками для клиентов корпорации Майкрософт и максимально увеличить возможности обнаружения, повышения производительности, совместного использования и совместной работы. Новый интерфейс записной книжки готов к предварительной версии. Нажмите кнопку **Предварительная версия компонентов** на панели инструментов записной книжки, чтобы включить ее. В приведенной ниже таблице отслеживается Сравнение характеристик существующей записной книжки (так называемое «классическая Записная книжка») с новой предварительной версией.  
 
-|Компонент|Классическая Записная книжка|Предварительный просмотр записной книжки|
+|Функция|Классическая Записная книжка|Предварительный просмотр записной книжки|
 |--|--|--|
 |% выполнения| Не поддерживается | &#9745;|
 |% журнала| Не поддерживается |&#9745;
@@ -41,9 +41,6 @@ ms.locfileid: "101671591"
 |%% HTML| Не поддерживается |&#9745;|
 |Перетаскивание для перемещения ячейки| Не поддерживается |&#9745;|
 |Постоянные выходные данные вывода ()|&#9745;| Недоступно |
-|Отменить все| &#9745;| Недоступно|
-|Выполнить все ячейки выше|&#9745;| Недоступно |
-|Выполнить все ячейки ниже|&#9745;| Недоступно |
 |Форматирование текстовой ячейки с помощью кнопок панели инструментов|&#9745;| Недоступно |
 |Отменить операцию ячейки| &#9745;| Недоступно |
 
@@ -273,28 +270,38 @@ ms.locfileid: "101671591"
    ![run-all-cells](./media/apache-spark-development-using-notebooks/synapse-run-all.png)
 
 
-# <a name="classical-notebook"></a>[Классическая Записная книжка](#tab/classical)
-
 ### <a name="run-all-cells-above-or-below"></a>Выполнение всех ячеек выше или ниже
+
+# <a name="classical-notebook"></a>[Классическая Записная книжка](#tab/classical)
 
 Чтобы открыть дополнительное меню действий с ячейками справа, нажмите кнопку с многоточием ( **…** ). Затем выберите **Run cells above** (Выполнить ячейки выше), чтобы последовательно запустить все ячейки выше текущей. Выберите **Run cells below** (Выполнить ячейки ниже), чтобы последовательно запустить все ячейки ниже текущей.
 
    ![run-cells-above-or-below](./media/apache-spark-development-using-notebooks/synapse-run-cells-above-or-below.png)
 
+# <a name="preview-notebook"></a>[Предварительный просмотр записной книжки](#tab/preview)
+
+Разверните раскрывающийся список на панели **запустить все** , затем выберите **выполнить ячейки выше** , чтобы выполнить все ячейки, расположенные выше текущей последовательности. Выберите **Run cells below** (Выполнить ячейки ниже), чтобы последовательно запустить все ячейки ниже текущей.
+
+   ![Azure-Notebook-Run-Cells-выше или ниже](./media/apache-spark-development-using-notebooks/synapse-aznb-run-cells-above-or-below.png)
+
+---
 
 ### <a name="cancel-all-running-cells"></a>Отменить все работающие ячейки
+
+# <a name="classical-notebook"></a>[Классическая Записная книжка](#tab/classical)
 Нажмите кнопку **Отмена всех** , чтобы отменить выполнение ячеек или ячеек, ожидающих в очереди. 
    ![Отмена-все ячейки](./media/apache-spark-development-using-notebooks/synapse-cancel-all.png) 
 
 # <a name="preview-notebook"></a>[Предварительный просмотр записной книжки](#tab/preview)
 
-Отмена всех работающих ячеек пока недоступна для предварительной версии записной книжки. 
+Нажмите кнопку **Отмена всех** , чтобы отменить выполнение ячеек или ячеек, ожидающих в очереди. 
+   ![Azure-Notebook-Cancel-Reall-Cells](./media/apache-spark-development-using-notebooks/synapse-aznb-cancel-all.png) 
 
 ---
 
 
 
-### <a name="reference-notebook"></a>Ссылка на записную книжку
+### <a name="notebook-reference"></a>Ссылка на записную книжку
 
 # <a name="classical-notebook"></a>[Классическая Записная книжка](#tab/classical)
 
@@ -305,6 +312,11 @@ ms.locfileid: "101671591"
 Вы можете использовать ```%run <notebook path>``` команду Magic для ссылки на другую записную книжку в контексте текущей записной книжки. Все переменные, определенные в справочной записной книжке, доступны в текущей записной книжке. ```%run``` Команда Magic поддерживает вложенные вызовы, но не поддерживает рекурсивные вызовы. Если глубина инструкции больше пяти, вы получите исключение. ```%run``` в настоящее время команда поддерживается только для передачи пути к записной книжке в качестве параметра. 
 
 Например, ``` %run /path/notebookA ```.
+
+> [!NOTE]
+> Ссылка на записную книжку не поддерживается в конвейере синапсе.
+>
+>
 
 ---
 
@@ -346,7 +358,10 @@ ms.locfileid: "101671591"
     }
 }
 ```
-
+> [!NOTE]
+> Команда Magic для настройки сеанса Spark не поддерживается в конвейере синапсе.
+>
+>
 
 ## <a name="bring-data-to-a-notebook"></a>Перенесение данных в записную книжку
 
@@ -420,6 +435,11 @@ df = spark.read.option("header", "true") \
 ## <a name="magic-commands"></a>Магические команды
 Вы можете использовать привычные команды Magic Jupyter в записных книжках Azure синапсе Studio. Проверьте следующий список как текущие доступные волшебные команды. Расскажите нам [о вариантах использования на GitHub](https://github.com/MicrosoftDocs/azure-docs/issues/new) , чтобы мы могли продолжить создавать более волшебные команды в соответствии с вашими потребностями.
 
+> [!NOTE]
+> В конвейере синапсе поддерживаются только следующие команды Magic:%% pyspark,%% Spark,%% CSharp,%% SQL. 
+>
+>
+
 # <a name="classical-notebook"></a>[Классическая Записная книжка](#tab/classical)
 
 Доступные магические команды строки: [%lsmagic](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-lsmagic), [%time](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-time), [%timeit](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit).
@@ -430,7 +450,7 @@ df = spark.read.option("header", "true") \
 
 # <a name="preview-notebook"></a>[Предварительный просмотр записной книжки](#tab/preview)
 
-Доступные магическые строки: [% лсмагик](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-lsmagic), [% времени](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-time), [% time](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit), [% History](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-history), " [% Run](#reference-notebook)", [% Load](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-load)
+Доступные магическые строки: [% лсмагик](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-lsmagic), [% времени](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-time), [% time](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit), [% History](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-history), " [% Run](#notebook-reference)", [% Load](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-load)
 
 Доступно магическых ячеек: [%% time](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-time), [%% time](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit), [%%, запись](https://ipython.readthedocs.io/en/stable/interactive/magics.html#cellmagic-capture), [%% WriteFile](https://ipython.readthedocs.io/en/stable/interactive/magics.html#cellmagic-writefile), [%% SQL](#use-multiple-languages), [%% pyspark](#use-multiple-languages), [%% Spark](#use-multiple-languages), [%% CSharp](#use-multiple-languages), [%% HTML](https://ipython.readthedocs.io/en/stable/interactive/magics.html#cellmagic-html), [%% Configure](#spark-session-config-magic-command)
 
@@ -550,7 +570,7 @@ df = spark.read.option("header", "true") \
 ---
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- [Ознакомьтесь с примерами записных книжек синапсе](https://github.com/Azure-Samples/Synapse/tree/master/Notebooks)
+- [Ознакомьтесь с примерами записных книжек Synapse](https://github.com/Azure-Samples/Synapse/tree/master/Notebooks)
 - [Краткое руководство. Создание пула Apache Spark в Azure Synapse Analytics с помощью веб-инструментов](../quickstart-apache-spark-notebook.md)
 - [Что такое Apache Spark в Azure Synapse Analytics](apache-spark-overview.md)
 - [Использование .NET для Apache Spark с помощью Azure Synapse Analytics](spark-dotnet.md)

@@ -9,17 +9,17 @@ author: rohitnayakmsft
 ms.author: rohitna
 ms.reviewer: sstein, vanto
 ms.date: 07/06/2020
-ms.openlocfilehash: 84fdca96f2ce42c608e7def98f6a3400964cfe46
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0c45a48e6cafa722945400554f2f81916da13775
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101691932"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627614"
 ---
 # <a name="azure-sql-connectivity-settings"></a>Параметры подключения к SQL Azure
 [!INCLUDE[appliesto-sqldb-asa](../includes/appliesto-sqldb-asa.md)]
 
-В этой статье описываются параметры, управляющие подключением к серверу для базы данных SQL Azure и Azure синапсе Analytics. Эти параметры применяются ко всем базам данных SQL и базе данных Azure синапсе Analytics, связанным с сервером.
+В этой статье описываются параметры, управляющие подключением к серверу для базы данных SQL Azure и [выделенным ПУЛОМ SQL (ранее — SQL DW)](../../synapse-analytics\sql-data-warehouse\sql-data-warehouse-overview-what-is.md) в Azure синапсе Analytics. Эти параметры применяются ко всем базам данных SQL и выделенным пулам SQL (ранее — ХРАНИЛИЩАм данных SQL), связанным с сервером.
 
 > [!IMPORTANT]
 > Эта статья не распространяется на Управляемый экземпляр Azure SQL.
@@ -217,7 +217,7 @@ az resource show --ids %sqlserverid%
 az resource update --ids %sqlserverid% --set properties.connectionType=Proxy
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Общие сведения о том, как работает подключение в базе данных SQL Azure, см. в статье [Архитектура подключения](connectivity-architecture.md).
 - Сведения о том, как изменить политику подключения для сервера, см. в разделе [conn-Policy](/cli/azure/sql/server/conn-policy).

@@ -1,16 +1,14 @@
 ---
 title: Мониторинг производительности с помощью журналов Azure Monitor
 description: Сведения о том, как настраивать агент Log Analytics для наблюдения за контейнерами и счетчиками производительности для кластеров Azure Service Fabric.
-author: srrengar
 ms.topic: conceptual
 ms.date: 04/16/2018
-ms.author: srrengar
-ms.openlocfilehash: 47017fdb5f1fbaba800e71dea21afe2c39bd91e7
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 9bb89dc2eebe584a0a9f81a6707c0a2e4fa2fc30
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100570138"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105626679"
 ---
 # <a name="performance-monitoring-with-azure-monitor-logs"></a>Мониторинг производительности с помощью журналов Azure Monitor
 
@@ -89,7 +87,7 @@ ms.locfileid: "100570138"
 
 ![Запрос счетчика производительности Log Analytics](media/service-fabric-diagnostics-event-analysis-oms/oms_node_metrics_table.PNG)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Включите сбор соответствующих [счетчиков производительности](service-fabric-diagnostics-event-generation-perf.md). Чтобы настроить агент Log Analytics для сбора данных определенных счетчиков производительности, ознакомьтесь с разделом [Настройка источников данных](../azure-monitor/agents/agent-data-sources.md#configuring-data-sources).
 * Настройка журналов Azure Monitor для настройки [автоматизированных оповещений](../azure-monitor/alerts/alerts-overview.md) , помогающих в обнаружении и диагностике

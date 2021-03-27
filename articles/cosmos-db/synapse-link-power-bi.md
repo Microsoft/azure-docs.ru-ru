@@ -1,18 +1,18 @@
 ---
 title: Power BI и бессерверный пул SQL для анализа данных Azure Cosmos DB с помощью ссылки синапсе
 description: Узнайте, как создать бессерверную базу данных пула SQL и представления по ссылке синапсе для Azure Cosmos DB, запросите контейнеры Azure Cosmos DB, а затем создайте модель с Power BI для этих представлений.
-author: ArnoMicrosoft
+author: Rodrigossz
 ms.service: cosmos-db
 ms.topic: how-to
 ms.date: 11/30/2020
-ms.author: acomet
+ms.author: rosouz
 ms.custom: synapse-cosmos-db
-ms.openlocfilehash: 7a9324923164d6d5cbbdc48bfa60fc444bdc4fb1
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: d84508a7629481a7138f1080c86f4a203d35894d
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104868995"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105626254"
 ---
 # <a name="use-power-bi-and-serverless-synapse-sql-pool-to-analyze-azure-cosmos-db-data-with-synapse-link"></a>Использование Power BI и несинапсеного пула SQL для анализа данных Azure Cosmos DB с помощью ссылки синапсе 
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "104868995"
 
 В этом сценарии вы будете использовать фиктивные данные о продажах продуктов в розничном магазине партнера. Вы проанализируете доход на каждый магазин, основываясь на большом семейе и влиянии рекламы на конкретную неделю. В этой статье вы создадите два представления с именами **ретаилсалес** и **сторедемографикс** и запрос между ними. Образец данных по продукту можно получить из репозитория [GitHub](https://github.com/Azure-Samples/Synapse/tree/main/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples/Retail/RetailData) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, обязательно создайте следующие ресурсы:
 
@@ -142,7 +142,7 @@ GROUP BY p.[advertising], p.[storeId], p.[weekStarting], q.[largeHH]
 
 :::image type="content" source="./media/synapse-link-power-bi/household-size-average-revenue-report.png" alt-text="Отчет, сравнивающий относительную важность размера семьи с средним доходом по магазину":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 [Использование T-SQL для запроса Azure Cosmos DB данных с помощью ссылки Azure синапсе](../synapse-analytics/sql/query-cosmos-db-analytical-store.md)
 

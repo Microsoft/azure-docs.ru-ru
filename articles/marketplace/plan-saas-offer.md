@@ -7,13 +7,13 @@ ms.reviewer: dannyevers
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: conceptual
-ms.date: 03/25/2021
-ms.openlocfilehash: 2f12f33bf6108784b2eec252fb12d03eebd2a45c
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.date: 03/26/2021
+ms.openlocfilehash: 7d421cf20aa054fb3e1e4877ee610a284eeff7c9
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105604945"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627065"
 ---
 # <a name="how-to-plan-a-saas-offer-for-the-commercial-marketplace"></a>Как спланировать предложение SaaS для коммерческого рынка
 
@@ -39,7 +39,7 @@ ms.locfileid: "105604945"
 
 После публикации предложения в верхнем левом углу страницы со списком вашего предложения появится кнопка списка, выбранная для вашего предложения. Например, на следующем снимке экрана показана страница со списком предложений в Azure Marketplace с кнопкой **получить сейчас** .
 
-![Показывает список предложений в Интернет-магазине.](./media/saas/listing-options-saas-full.png)
+![Показывает список предложений в Интернет-магазине.](./media/saas/listing-options-saas.png)
 
 ## <a name="technical-requirements"></a>Технические требования
 
@@ -301,7 +301,7 @@ ms.locfileid: "105604945"
 
 - **Совместная продажа с корпорацией Майкрософт**. Этот вариант позволяет группам продаж корпорации Майкрософт рассматривать подходящие решения для совместной работы с клиентами при оценке потребностей клиентов. Дополнительные сведения о правах совместной продажи см. в разделе [требования для статуса совместной продажи](/legal/marketplace/certification-policies#3000-requirements-for-co-sell-status). Подробные сведения о подготовке предложения к оценке см. [в статье вариант совместной продажи в центре партнеров](commercial-marketplace-co-sell.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Создание предложения SaaS в коммерческом магазине](create-new-saas-offer.md)
 - [Рекомендации по размещению предложений](gtm-offer-listing-best-practices.md)

@@ -6,12 +6,12 @@ ms.author: sunila
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 5/6/2019
-ms.openlocfilehash: 215b7e908b21b1843b36a1e55972038c49ee101a
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.openlocfilehash: 1d1751ed56f63105ce7775ceaed9ea2dcca1f8bf
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105605320"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628141"
 ---
 # <a name="azure-database-for-postgresql---single-server"></a>База данных Azure для PostgreSQL — отдельный сервер
 В этой статье приводятся рекомендации и рекомендации по работе с базой данных Azure для PostgreSQL-Single Server.
@@ -36,7 +36,7 @@ ms.locfileid: "105605320"
 ## <a name="how-do-i-connect-and-authenticate-to-an-azure-database-for-postgresql-server"></a>Как подключиться к серверу базы данных Azure для PostgreSQL и выполнить аутентификацию?
 Ниже перечислены элементы, которые помогают обеспечить безопасный доступ к базе данных.
 
-|||
+|Концепция безопасности|Описание|
 |:--|:--|
 | **Аутентификация и авторизация** | Сервер базы данных Azure для PostgreSQL поддерживает собственную аутентификацию PostgreSQL. Подключиться к серверу и выполнить аутентификацию можно с помощью учетных данных администратора сервера. |
 | **Протокол** | Служба поддерживает протокол на основе сообщений, используемый PostgreSQL. |
@@ -62,7 +62,7 @@ ms.locfileid: "105605320"
 Так как База данных Azure для PostgreSQL — это управляемая служба для Postgres, настраиваемые параметры в ней являются подмножеством параметров локального экземпляра Postgres. Дополнительные сведения о параметрах Postgres см. в [документации PostgreSQL](https://www.postgresql.org/docs/9.6/static/runtime-config.html). При создании сервера Базы данных Azure для PostgreSQL для его параметров устанавливаются стандартные значения. Пользователи не могут настраивать некоторые параметры, для изменения которых требуется перезагрузка сервера или права суперпользователя.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 - Обзор службы содержится в статье [Что такое база данных Azure для PostgreSQL](overview.md).
 - Сведения о квотах и ограничениях для конкретных ресурсов с учетом вашего **уровня служб** представлены в статье [Параметры и производительность базы данных Azure для PostgreSQL: возможности, доступные в каждой ценовой категории](concepts-pricing-tiers.md).
 - Сведения о подключении к службе см. в статье [Библиотеки подключений для базы данных Azure для PostgreSQL](concepts-connection-libraries.md).

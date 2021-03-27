@@ -1,18 +1,18 @@
 ---
 title: Подключение с помощью управляемого удостоверения — база данных для MySQL
 description: Сведения о подключении и проверке подлинности с помощью управляемого удостоверения для прохождения проверки подлинности в базе данных Azure для MySQL
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: mysql
 ms.topic: how-to
 ms.date: 05/19/2020
 ms.custom: devx-track-csharp, devx-track-azurecli
-ms.openlocfilehash: 898f568d285c3b4b4360ea4dda8c63a1e0f13a42
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f790e20c257c81418c6fcd5b14be957a6ef43b4a
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101091800"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105612608"
 ---
 # <a name="connect-with-managed-identity-to-azure-database-for-mysql"></a>Подключение к базе данных Azure для MySQL с помощью управляемого удостоверения
 
@@ -31,7 +31,7 @@ ms.locfileid: "101091800"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - См. дополнительные сведения об [управляемых удостоверениях для ресурсов Azure](../../articles/active-directory/managed-identities-azure-resources/overview.md). Если у вас нет учетной записи Azure, [зарегистрируйтесь для получения бесплатной учетной записи](https://azure.microsoft.com/free/), прежде чем продолжить.
-- Для выполнения требуемых операций создания ресурсов и управления ролями учетной записи нужно предоставить разрешения роли "Владелец" в соответствующей области (подписка или группа ресурсов). Если вам нужна помощь с назначением ролей, см. статью [назначение ролей Azure для управления доступом к ресурсам подписки Azure](../../articles/role-based-access-control/role-assignments-portal.md).
+- Для выполнения требуемых операций создания ресурсов и управления ролями учетной записи нужно предоставить разрешения роли "Владелец" в соответствующей области (подписка или группа ресурсов). Если нуждаетесь в помощи с назначением ролей, прочитайте статью [Назначение ролей Azure с помощью портала Azure](../../articles/role-based-access-control/role-assignments-portal.md).
 - Вам потребуется виртуальная машина Azure (например, на базе Ubuntu Linux), которую вы хотите использовать для доступа к базе данных с помощью управляемого удостоверения.
 - Вам нужен сервер базы данных Azure для MySQL, на котором настроена [проверка подлинности Azure AD](howto-configure-sign-in-azure-ad-authentication.md)
 - Для выполнения примера C# сначала завершите руководство по [подключению к C#](connect-csharp.md)

@@ -2,13 +2,13 @@
 title: Устранение неполадок в контейнере "аналитика" | Документация Майкрософт
 description: В этой статье описывается, как устранять неполадки и устранять проблемы с помощью аналитики контейнера.
 ms.topic: conceptual
-ms.date: 07/21/2020
-ms.openlocfilehash: 60a6e76d43d954b27336b9631c48328aeff0b69b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.openlocfilehash: b7618e9073308da67a8e17c82375a0f05925a542
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101708311"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627121"
 ---
 # <a name="troubleshooting-container-insights"></a>Устранение неполадок в аналитике контейнера
 
@@ -114,6 +114,54 @@ nodeSelector:
 
 Чтобы просмотреть кластер Kubernetes, не относящийся к Azure, в службе "аналитика контейнера" требуется доступ на чтение в рабочей области Log Analytics, поддерживающей эту аналитику, и в ресурсе Resource Insights **контаинеринсигхтс (*Рабочая область*)**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="metrics-arent-being-collected"></a>Метрики не собираются
+
+1. Убедитесь, что кластер находится в [поддерживаемом регионе для пользовательских метрик](../essentials/metrics-custom-overview.md#supported-regions).
+
+2. Убедитесь, что назначение роли **издателя метрик мониторинга** существует с помощью следующей команды CLI:
+
+    ``` azurecli
+    az role assignment list --assignee "SP/UserassignedMSI for omsagent" --scope "/subscriptions/<subid>/resourcegroups/<RG>/providers/Microsoft.ContainerService/managedClusters/<clustername>" --role "Monitoring Metrics Publisher"
+    ```
+    Для кластеров с MSI назначенный пользователю идентификатор клиента для omsagent меняется каждый раз, когда наблюдение включено и отключено, поэтому назначение ролей должно существовать в текущем идентификаторе клиента MSI. 
+
+3. Для кластеров с включенным удостоверением Azure Active Directory Pod и использованием MSI:
+
+   - Проверьте требуемую метку **kubernetes.Azure.com/ManagedBy: AKS**  в модулях Pod omsagent с помощью следующей команды:
+
+        `kubectl get pods --show-labels -n kube-system | grep omsagent`
+
+    - Убедитесь, что исключения включены при включении удостоверения Pod с помощью одного из поддерживаемых методов в https://github.com/Azure/aad-pod-identity#1-deploy-aad-pod-identity .
+
+        Выполните следующую команду, чтобы проверить следующее:
+
+        `kubectl get AzurePodIdentityException -A -o yaml`
+
+        Должны появиться выходные данные, аналогичные приведенным ниже.
+
+        ```
+        apiVersion: "aadpodidentity.k8s.io/v1"
+        kind: AzurePodIdentityException
+        metadata:
+        name: mic-exception
+        namespace: default
+        spec:
+        podLabels:
+        app: mic
+        component: mic
+        ---
+        apiVersion: "aadpodidentity.k8s.io/v1"
+        kind: AzurePodIdentityException
+        metadata:
+        name: aks-addon-exception
+        namespace: kube-system
+        spec:
+        podLabels:
+        kubernetes.azure.com/managedby: aks
+        ```
+
+
+
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Если включен мониторинг для сбора метрик работоспособности узлов и групп pod кластера AKS, эти метрики будут доступными на портале Azure. Сведения о том, как использовать аналитику контейнеров, см. в статье [Просмотр работоспособности службы Azure Kubernetes](container-insights-analyze.md).

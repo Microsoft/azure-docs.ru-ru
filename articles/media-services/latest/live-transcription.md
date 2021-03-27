@@ -24,7 +24,7 @@ Title: транскрипция в реальном времени: Описан
 - Восточная часть США
 - Центральная часть США
 - Центрально-южная часть США
-- западная часть США 2
+- Западная часть США 2
 - Brazil South
 
 Это список доступных языков, которые можно расшифрованной, использовать код языка в API.
@@ -100,7 +100,7 @@ PUT https://management.azure.com/subscriptions/:subscriptionId/resourceGroups/:r
         "language": "en-US"
       }
     ],
-    "vanityUrl": false,
+    "useStaticHostname": false,
     "streamOptions": [
       "Default"
     ]
@@ -161,7 +161,7 @@ PUT https://management.azure.com/subscriptions/:subscriptionId/resourceGroups/:r
         "language": "en-US"
       }
     ],
-    "vanityUrl": false,
+    "useStaticHostname": false,
     "streamOptions": [
       "Default"
     ]

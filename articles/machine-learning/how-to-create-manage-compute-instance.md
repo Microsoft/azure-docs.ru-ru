@@ -11,12 +11,12 @@ ms.author: sgilley
 author: sdgilley
 ms.reviewer: sgilley
 ms.date: 10/02/2020
-ms.openlocfilehash: 6c29bf87c5f0ecaaeb6d608069791431a949c89b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2778f52b312e5d2fda7879b834fcd204285b7144
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103009969"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628957"
 ---
 # <a name="create-and-manage-an-azure-machine-learning-compute-instance"></a>Создание Машинное обучение Azure вычислительного экземпляра и управление им
 
@@ -95,7 +95,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
 Дополнительные сведения см. в справке по команде [AZ ML computetarget Create компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/create#ext_azure_cli_ml_az_ml_computetarget_create_computeinstance) .
 
-# <a name="studio"></a>[Студия](#tab/azure-studio)
+# <a name="studio"></a>[Studio](#tab/azure-studio)
 
 В рабочей области Машинное обучение Azure Studio создайте новый вычислительный экземпляр из раздела **вычислений** или **записных книжек** , когда будете готовы запустить одну из ваших записных книжек.
 
@@ -127,6 +127,9 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
 Запуск, завершение, перезапуск и удаление вычислительного экземпляра. Вычислительный экземпляр не масштабируется автоматически, поэтому убедитесь, что ресурс остановлен, чтобы предотвратить постоянную плату.
 
+> [!TIP]
+> Размер диска ОС вычислительного экземпляра составляет 120 ГБ. Если на диске заканчивается свободное место, [Используйте терминал](how-to-access-terminal.md) , чтобы очистить по крайней мере 1-2 ГБ перед остановкой или перезапуском вычислительного экземпляра.
+
 # <a name="python"></a>[Python](#tab/python)
 
 В приведенных ниже примерах имя вычислительного экземпляра — **instance** .
@@ -138,7 +141,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
     instance.get_status()
     ```
 
-* Остановить
+* Stop
 
     ```python
     # stop() is used to stop the ComputeInstance
@@ -172,7 +175,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
 В приведенных ниже примерах имя вычислительного экземпляра — **instance** .
 
-* Остановить
+* Stop
 
     ```azurecli-interactive
     az ml computetarget stop computeinstance -n instance -v
@@ -204,7 +207,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
     Дополнительные сведения см. в разделе [AZ ML computetarget Delete компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget#ext-azure-cli-ml-az-ml-computetarget-delete).
 
-# <a name="studio"></a>[Студия](#tab/azure-studio)
+# <a name="studio"></a>[Studio](#tab/azure-studio)
 
 В рабочей области в студии Машинного обучения Azure выберите **Вычисление**, а затем вверху выберите **Вычислительный экземпляр**.
 
@@ -226,6 +229,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
 ---
 
+
 [Azure RBAC](../role-based-access-control/overview.md) позволяет контролировать, какие пользователи в рабочей области могут создавать, удалять, запускать, останавливаться и перезапускать вычислительные экземпляры. Все пользователи с ролью участника или владельца рабочей области могут создавать, удалять, запускать, останавливать и перезапускать вычислительные экземпляры в рабочей области. Однако доступ к Jupyter, JupyterLab и RStudio на этом вычислительном экземпляре разрешен только создателю определенного вычислительного экземпляра или назначенному пользователю, если он был создан от их имени. Вычислительный экземпляр предназначен для одного пользователя с правами root и может проходить через Jupyter/JupyterLab/RStudio. В вычислительном экземпляре будет входить однопользовательский вход, и все действия будут использовать удостоверение этого пользователя для Azure RBAC и его атрибуты. Доступ по протоколу SSH контролируется с помощью открытого и закрытого ключей.
 
 Эти действия можно контролировать с помощью Azure RBAC:
@@ -236,7 +240,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 * *Microsoft. Мачинелеарнингсервицес/рабочие области/вычислений/действие*
 * *Microsoft. Мачинелеарнингсервицес/рабочие области/вычислений/перезагрузка/действие*
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Доступ к терминалу вычислительных экземпляров](how-to-access-terminal.md)
 * [Создание файлов и управление ими](how-to-manage-files.md)

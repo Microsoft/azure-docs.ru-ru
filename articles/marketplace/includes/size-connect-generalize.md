@@ -6,13 +6,13 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: include
 author: mingshen-ms
 ms.author: krsh
-ms.date: 10/20/2020
-ms.openlocfilehash: c60d2a9b13cce9251ff0f730081a9d677206770d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.openlocfilehash: 8898a762e8a1e7a2d5c104f99d12032c676a5ca4
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102630124"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105630312"
 ---
 ## <a name="generalize-the-image"></a>Обобщение образа
 
@@ -52,7 +52,9 @@ ms.locfileid: "102630124"
 8. Выберите **Просмотр и создание**, чтобы проверить выбранные параметры.
 9. После прохождения проверки выберите **создать**.
 
-Для публикации учетная запись издателя должна иметь доступ владельца к SIG. Чтобы предоставить доступ:
+Для публикации подписка Azure, содержащая SIG, должна находиться в том же клиенте, что и учетная запись издателя. Кроме того, учетная запись издателя должна иметь доступ владельца к SIG. 
+
+Чтобы предоставить доступ:
 
 1. Перейдите в коллекцию общих образов.
 2. На панели слева выберите **Управление доступом** (IAM).

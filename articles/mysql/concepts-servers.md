@@ -6,12 +6,12 @@ ms.author: pariks
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 3/18/2020
-ms.openlocfilehash: a05037505c122bb974e6da3d11a6f25a715a6843
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: cb8394de49c2c5daeae156a9316466928eded148
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104869435"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105628481"
 ---
 # <a name="server-concepts-in-azure-database-for-mysql"></a>Основные понятия работы с сервером в базе данных Azure для MySQL
 
@@ -38,7 +38,7 @@ ms.locfileid: "104869435"
 
 Ниже перечислены элементы, которые помогают обеспечить безопасный доступ к базе данных.
 
-|     |     |
+| Концепция безопасности | Описание     |
 | :-- | :-- |
 | **Аутентификация и авторизация** | Сервер базы данных Azure для MySQL поддерживает собственную аутентификацию MySQL. Подключиться к серверу и выполнить аутентификацию можно с помощью учетных данных администратора сервера. |
 | **Протокол** | Служба поддерживает протокол на основе сообщений, используемый MySQL. |
@@ -66,11 +66,11 @@ ms.locfileid: "104869435"
 
 |**Имя хранимой процедуры**|**Входные параметры**|**Выходные параметры**|**Примечание об использовании**|
 |-----|-----|-----|-----|
-|*mysql.az_kill*|processlist_id|Недоступно|Эквивалентно [`KILL CONNECTION`](https://dev.mysql.com/doc/refman/8.0/en/kill.html) команде. Будет завершать подключение, связанное с указанным processlist_id после завершения любой инструкции, когда соединение выполняется.|
-|*mysql.az_kill_query*|processlist_id|Недоступно|Эквивалентно [`KILL QUERY`](https://dev.mysql.com/doc/refman/8.0/en/kill.html) команде. Прекратит выполнение инструкции, в которой выполняется подключение. Оставляет подключение активным.|
-|*mysql.az_load_timezone*|Недоступно|Недоступно|Загружает [таблицы часовых поясов](howto-server-parameters.md#working-with-the-time-zone-parameter) , чтобы разрешить `time_zone` Присвоение параметру именованных значений (например, "США/тихоокеанское").|
+|*mysql.az_kill*|processlist_id|Н/Д|Эквивалентно [`KILL CONNECTION`](https://dev.mysql.com/doc/refman/8.0/en/kill.html) команде. Будет завершать подключение, связанное с указанным processlist_id после завершения любой инструкции, когда соединение выполняется.|
+|*mysql.az_kill_query*|processlist_id|Н/Д|Эквивалентно [`KILL QUERY`](https://dev.mysql.com/doc/refman/8.0/en/kill.html) команде. Прекратит выполнение инструкции, в которой выполняется подключение. Оставляет подключение активным.|
+|*mysql.az_load_timezone*|Н/Д|Н/Д|Загружает [таблицы часовых поясов](howto-server-parameters.md#working-with-the-time-zone-parameter) , чтобы разрешить `time_zone` Присвоение параметру именованных значений (например, "США/тихоокеанское").|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Обзор службы содержится в статье [What is Azure Database for MySQL? Service Introduction](./overview.md) (Что такое база данных Azure для MySQL? Общие сведения о службе).
 - Сведения о квотах и ограничениях для конкретных ресурсов, основанных на **ценовой** категории, см. в статье [ценовые](./concepts-pricing-tiers.md) категории.

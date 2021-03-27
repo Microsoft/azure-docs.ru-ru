@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 03/25/2021
 ms.author: alkohli
-ms.openlocfilehash: 8bb858bc29ac18d110f2679c3681fd4d27b72baa
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.openlocfilehash: ac5ed0e5941c6251d632d029fe4c9f80bbcf12df
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "105607791"
+ms.locfileid: "105612557"
 ---
 # <a name="update-your-azure-stack-edge-pro-gpu"></a>Обновление графического процессора Azure Stack ребра Pro 
 
@@ -112,7 +112,7 @@ ms.locfileid: "105607791"
 
 8. Вы увидите баннер уведомления о доступных обновлениях устройства. Выберите этот баннер, чтобы начать обновление программного обеспечения Kubernetes на устройстве. 
 
-    ![Версия программного обеспечения после обновления 13](./media/azure-stack-edge-gpu-install-update/portal-update-13.png) 
+    ![Версия программного обеспечения после обновления 13a](./media/azure-stack-edge-gpu-install-update/portal-update-13.png) 
 
 
     ![Версия программного обеспечения после обновления 14](./media/azure-stack-edge-gpu-install-update/portal-update-14-a.png) 

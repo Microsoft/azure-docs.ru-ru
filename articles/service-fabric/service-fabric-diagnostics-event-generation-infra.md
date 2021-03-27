@@ -1,16 +1,14 @@
 ---
 title: Мониторинг уровня платформы Service Fabric Azure
 description: Ознакомьтесь с событиями на уровне платформы и журналами, используемыми для мониторинга и диагностики кластеров Azure Service Fabric.
-author: srrengar
 ms.topic: conceptual
 ms.date: 11/21/2018
-ms.author: srrengar
-ms.openlocfilehash: f9db0df9370197190c11b740f1fd1af3fb69f19c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f9104c390ab4115c626beb4759c6b6952d691ca9
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100581406"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105626526"
 ---
 # <a name="monitoring-the-cluster"></a>Мониторинг кластера
 
@@ -86,7 +84,7 @@ Service Fabric предоставляет несколько событий ст
 * **Счетчики производительности в Хранилище таблиц Azure.**  
 Вы также можете отправлять метрики производительности в то же хранилище таблиц, что и события. Это требует изменения конфигурации системы диагностики Azure таким образом, чтобы выполнялся сбор соответствующих данных счетчиков производительности с виртуальных машин в кластере и статистики Docker при развертывании контейнеров. Дополнительные сведения о настройке счетчиков производительности в WAD и Service Fabric для настройки их сбора см. в [этой статье](service-fabric-diagnostics-event-aggregation-wad.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Узнайте об [интеграции журналов Azure Monitor](service-fabric-diagnostics-event-analysis-oms.md) Service Fabric, чтобы получить сведения о диагностике кластера и создать пользовательские запросы и оповещения.
 * Ознакомьтесь со встроенными возможностями диагностики Service Fabric — [службой EventStore](service-fabric-diagnostics-eventstore.md).

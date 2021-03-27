@@ -1,17 +1,17 @@
 ---
 title: 'База данных Azure для MySQL: аутентификация Active Directory'
 description: Изучите принципы аутентификации Azure Active Directory с помощью Базы данных Azure для MySQL.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 07/23/2020
-ms.openlocfilehash: 942789d5541e796247af2dbdf9371cce4701105e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e3afa7e7129c34aae8487affe979bd7704580a1e
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "87171896"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105612455"
 ---
 # <a name="use-azure-active-directory-for-authenticating-with-mysql"></a>Использование аутентификации Azure Active Directory с MySQL
 

@@ -6,12 +6,12 @@ ms.author: vibansa
 ms.manager: abhemraj
 ms.topic: how-to
 ms.date: 04/16/2020
-ms.openlocfilehash: c2ffa85ed6cb007dd766d4517a86783d21d4913e
-ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
+ms.openlocfilehash: 685d7f0a0aaab2f38967e0eb6c32c3fb4067dbe3
+ms.sourcegitcommit: c94e282a08fcaa36c4e498771b6004f0bfe8fb70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105110514"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105612829"
 ---
 # <a name="set-up-an-appliance-for-servers-in-vmware-environment"></a>Настройка устройства для серверов в среде VMware
 
@@ -67,7 +67,6 @@ ms.locfileid: "105110514"
         --- | --- | ---
         VMware (11,9 ГБ) | [Последняя версия](https://go.microsoft.com/fwlink/?linkid=2140333) | e9c9a1fe4f3ebae81008328e8f3a7933d78ff835ecd871d1b17f367621ce3c74
 
-
 ### <a name="3-create-the-appliance-server"></a>3. Создание сервера устройства
 
 Импорт скачанного файла и создание сервера в среде VMware
@@ -81,11 +80,9 @@ ms.locfileid: "105110514"
 8. В поле **Network Mapping** (Сетевое сопоставление) укажите сеть, к которой будет подключен сервер. Этой сети требуется подключение к Интернету для отправки метаданных в службу "Миграция Azure".
 9. Просмотрите и подтвердите параметры, а затем нажмите кнопку **Finish** (Готово).
 
-
 ### <a name="verify-appliance-access-to-azure"></a>Проверка доступа устройства к Azure
 
 Убедитесь, что сервер устройства может подключаться к URL-адресам Azure для [общедоступных](migrate-appliance.md#public-cloud-urls) и [государственных](migrate-appliance.md#government-cloud-urls) облаков.
-
 
 ### <a name="4-configure-the-appliance"></a>4. Настройка устройства
 
@@ -114,7 +111,6 @@ ms.locfileid: "105110514"
 1. При необходимости вы можете **повторить проверку предварительных требований** в любой момент во время настройки модуля, чтобы проверить, соответствует ли виртуальный модуль всем предварительным требованиям.
 
     :::image type="content" source="./media/tutorial-discover-vmware/appliance-prerequisites.png" alt-text="Панель 1 в диспетчере конфигурации устройства":::
-
 
 ## <a name="register-the-appliance-with-azure-migrate"></a>Регистрация устройства с помощью службы "Миграция Azure"
 

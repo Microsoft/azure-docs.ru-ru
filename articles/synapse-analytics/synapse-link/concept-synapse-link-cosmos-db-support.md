@@ -2,20 +2,20 @@
 title: Поддерживаемые функции Azure Synapse Link для Azure Cosmos DB
 description: Описание текущего набора действий, поддерживаемых Azure Synapse Link для Azure Cosmos DB
 services: synapse-analytics
-author: ArnoMicrosoft
+author: Rodrigossz
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: synapse-link
 ms.date: 03/02/2021
-ms.author: acomet
+ms.author: rosouz
 ms.reviewer: jrasnick
 ms.custom: cosmos-db
-ms.openlocfilehash: a03a96f34861b84754de9d9ee4180100b58fcd37
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: cdc9f344e108fc58399f9bcb2a9f02a4659ecfe1
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104869231"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105627682"
 ---
 # <a name="azure-synapse-link-for-azure-cosmos-db-supported-features"></a>Поддерживаемые функции Azure Synapse Link для Azure Cosmos DB
 

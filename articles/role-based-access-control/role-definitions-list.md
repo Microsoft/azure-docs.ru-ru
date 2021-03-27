@@ -2,24 +2,19 @@
 title: Список определений ролей Azure в Azure RBAC
 description: Узнайте, как получить список встроенных и пользовательских ролей Azure с помощью портал Azure, Azure PowerShell, Azure CLI или REST API.
 services: active-directory
-documentationcenter: ''
 author: rolyon
 manager: mtillman
-ms.assetid: 8078f366-a2c4-4fbb-a44b-fc39fd89df81
 ms.service: role-based-access-control
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 06/17/2020
+ms.date: 03/26/2021
 ms.author: rolyon
-ms.reviewer: bagovind
-ms.openlocfilehash: 3c9018322c9e5075ff59024f9d791e7431035e3d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: f354e3bb7fc0f7ced17d43acacf29c726ce1329c
+ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100555946"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105629162"
 ---
 # <a name="list-azure-role-definitions"></a>Вывод списка определений ролей Azure
 
@@ -33,6 +28,10 @@ ms.locfileid: "100555946"
 
 Выполните следующие действия, чтобы получить список всех ролей в портал Azure.
 
+Если вы хотите просмотреть обновленные роли, перейдите на вкладку **роли (Предварительная версия)** , которая в настоящее время находится в общедоступной предварительной версии. На вкладке **роли (Предварительная версия)** отображается тот же список ролей, что и на вкладке **роли** с некоторыми дополнительными функциями. Для работы с ролями можно использовать любую вкладку ролей. Однако при создании или удалении пользовательских ролей может потребоваться вручную обновить страницу, чтобы увидеть последние изменения.
+
+#### <a name="roles"></a>[Роли](#tab/roles/)
+
 1. В портал Azure щелкните **все службы** , а затем выберите любую область. Например, можно выбрать **Группы управления**, **Подписки**, **Группы ресурсов** или конкретный ресурс.
 
 1. Щелкните конкретный ресурс.
@@ -43,7 +42,29 @@ ms.locfileid: "100555946"
 
    Можно увидеть число пользователей и групп, назначенных каждой роли в текущей области.
 
-   ![Список ролей](./media/role-definitions-list/roles-list.png)
+   ![Список ролей](./media/role-definitions-list/roles-list-current.png)
+
+#### <a name="roles-preview"></a>[Роли (Предварительная версия)](#tab/roles-preview/)
+
+1. В портал Azure щелкните **все службы** , а затем выберите любую область. Например, можно выбрать **Группы управления**, **Подписки**, **Группы ресурсов** или конкретный ресурс.
+
+1. Щелкните конкретный ресурс.
+
+1. Щелкните **Управление доступом (IAM)** .
+
+1. Перейдите на вкладку **роли (Предварительная версия)** , чтобы просмотреть список всех встроенных и пользовательских ролей.
+
+   ![Список ролей с использованием предварительной версии](./media/role-definitions-list/roles-list.png)
+
+1. Чтобы просмотреть разрешения для конкретной роли, в столбце **сведения** щелкните ссылку **Просмотр** .
+
+    Появится панель разрешения.
+
+1. Перейдите на вкладку **разрешения** , чтобы просмотреть и найти разрешения для выбранной роли.
+
+   ![Разрешения роли с использованием предварительной версии](./media/role-definitions-list/role-permissions.png)
+
+---
 
 ## <a name="azure-powershell"></a>Azure PowerShell
 
@@ -344,7 +365,7 @@ az role definition list --name "Virtual Machine Contributor" --output json --que
 1. В URI замените *{Scope}* областью, для которой необходимо получить список определений ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Type |
+    > | Область | Тип |
     > | --- | --- |
     > | `providers/Microsoft.Management/managementGroups/{groupId1}` | группа управления; |
     > | `subscriptions/{subscriptionId1}` | Подписка |
@@ -356,7 +377,7 @@ az role definition list --name "Virtual Machine Contributor" --output json --que
 1. Замените *{Filter}* условием, которое необходимо применить для фильтрации списка определений ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Filter | Описание |
+    > | Фильтр | Описание |
     > | --- | --- |
     > | `$filter=atScopeAndBelow()` | Перечисляет определения ролей для указанной области и всех ее подобластей. |
     > | `$filter=type+eq+'{type}'` | Перечисляет определения ролей указанного типа. Тип роли может быть `CustomRole` или `BuiltInRole` . |
@@ -429,7 +450,7 @@ GET https://management.azure.com/subscriptions/{subscriptionId1}/providers/Micro
 1. В URI замените *{Scope}* областью, для которой требуется перечислить определение роли.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Type |
+    > | Область | Тип |
     > | --- | --- |
     > | `providers/Microsoft.Management/managementGroups/{groupId1}` | группа управления; |
     > | `subscriptions/{subscriptionId1}` | Подписка |
@@ -474,7 +495,7 @@ GET https://management.azure.com/providers/Microsoft.Authorization/roleDefinitio
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Встроенные роли Azure](built-in-roles.md)
 - [Настраиваемые роли Azure](custom-roles.md)
