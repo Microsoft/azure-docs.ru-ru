@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 54c1b8c189264fb2e127ff04b0fdd9125f4c9aeb
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: 5ef69b8cf0e51c6248862f4cabd4f4ce3598a811
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105563146"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640366"
 ---
 # <a name="migration-overview-sql-server-to-azure-sql-database"></a>Общие сведения о миграции: SQL Server в базу данных SQL Azure
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "105563146"
 - Если требования к вычислительной мощности значительно ниже, чем предложения управляемого экземпляра (один Виртуальное ядро, например), и консолидация базы данных не является приемлемым вариантом. 
 
 
-## <a name="migration-tools"></a>Средства миграцииСредства миграции 
+## <a name="migration-tools"></a>Средства миграции 
 
 Рекомендуемые средства для миграции — это Помощник по миграции данных и Azure Database Migration Service. Также доступны другие альтернативные варианты миграции. 
 
@@ -207,10 +207,10 @@ ms.locfileid: "105563146"
 |[Автоматизация сбора данных PerfMon с помощью программы Logman](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/Perfmon%20Data%20Collection%20Automation%20Using%20Logman)|Средство, собирающее данные Пермон для оценки производительности базовых показателей и помощи в рекомендациях целевого объекта миграции. Это средство использует logman.exe для создания команды, которая будет создавать, запускать, останавливаться и удалять счетчики производительности, заданные на удаленном SQL Server|
 |[Технический документ — миграция базы данных в БД SQL Azure с помощью BACPAC](https://github.com/microsoft/DataMigrationTeam/blob/master/Whitepapers/Database%20migrations%20-%20Benchmarks%20and%20Steps%20to%20Import%20to%20Azure%20SQL%20DB%20Single%20Database%20from%20BACPAC.pdf)|В этом техническом документе содержатся инструкции и инструкции по ускорению миграции с SQL Server в базу данных SQL Azure с помощью BACPAC-файлов.|
 
-Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Чтобы приступить к переносу SQL Server в базу данных SQL, см. статью [SQL Server to Azure SQL Database Migration Guide](sql-server-to-sql-database-guide.md).
 

@@ -4,12 +4,12 @@ description: Узнайте, как масштабировать веб-прил
 ms.topic: conceptual
 ms.date: 07/07/2017
 ms.subservice: autoscale
-ms.openlocfilehash: 081e06fbd6506c76a068d7207e29efb66502a9dd
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: edc58ed4af3475a45804e3833424bec79d50ff89
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101726059"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641544"
 ---
 # <a name="get-started-with-autoscale-in-azure"></a>Начало работы с автомасштабированием в Azure
 В этой статье описывается, как настроить автомасштабирование для ресурса на портале Microsoft Azure.
@@ -113,6 +113,10 @@ Azure Monitor дает возможность обнаружить все рес
 
 Автомасштабирование можно возобновить в любой момент, щелкнув здесь же **Включить автомасштабирование**, а затем — **Сохранить**.
 
+### <a name="cool-down-period-effects"></a>Эффекты периода охлаждения
+
+Автомасштабирование использует период охлаждения, чтобы предотвратить "неустойчивый", что является быстрым, репетативе масштабирование экземпляров.  Дополнительные сведения см. в разделе [шаги оценки автомасштабирования](autoscale-understanding-settings.md#autoscale-evaluation).  Другие ценные сведения о неустойчивый и о мониторинге механизма автомасштабирования можно найти в статье рекомендации [по](autoscale-best-practices.md#choose-the-thresholds-carefully-for-all-metric-types) автомасштабированию и [устранению неполадок автоматического масштабирования](autoscale-troubleshoot.md) . 
+
 ## <a name="route-traffic-to-healthy-instances-app-service"></a>Маршрутизация трафика в работоспособные экземпляры (служба приложений)
 
 <a id="health-check-path"></a>
@@ -133,9 +137,10 @@ Azure Monitor дает возможность обнаружить все рес
 ### <a name="learn-more-about-moving-resources-across-azure-regions"></a>Дополнительные сведения о перемещении ресурсов в регионах Azure
 Дополнительные сведения о перемещении ресурсов между регионами и аварийным восстановлением в Azure см. в статье [Перемещение ресурсов в новую группу ресурсов или подписку](../../azure-resource-manager/management/move-resource-group-and-subscription.md) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 - [Создайте оповещение журнала действий, чтобы отслеживать все операции системы автомасштабирования в подписке](https://github.com/Azure/azure-quickstart-templates/tree/master/monitor-autoscale-alert).
 - [Создайте оповещение журнала действий, чтобы отслеживать все сбои автомасштабирования в подписке](https://github.com/Azure/azure-quickstart-templates/tree/master/monitor-autoscale-failed-alert).
+
 
 <!--Reference-->
 [1]:https://portal.azure.com

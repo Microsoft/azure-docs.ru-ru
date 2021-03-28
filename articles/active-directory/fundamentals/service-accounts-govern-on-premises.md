@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36ad7cf7fe2ca1ddcb592e895014b1d956e55e1b
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 10ea524620f810e0bf1dddc230716031bbc10e69
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102557375"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642381"
 ---
 # <a name="governing-on-premises-service-accounts"></a>Управление учетными записями локальной службы
 
@@ -60,7 +60,7 @@ ms.locfileid: "102557375"
 
 Используйте следующие параметры с учетными записями пользователей, используемыми в качестве учетных записей служб.
 
-* [**Срок действия учетной записи**](/powershell/module/activedirectory/set-adaccountexpiration?view=winserver2012-ps): задайте автоматический срок действия учетной записи службы по истечении периода проверки, если не будет определено, что он должен быть продолжен.
+* [**Срок действия учетной записи**](/powershell/module/activedirectory/set-adaccountexpiration?view=winserver2012-ps&preserve-view=true): задайте автоматический срок действия учетной записи службы по истечении периода проверки, если не будет определено, что он должен быть продолжен.
 
 *  **Логонворкстатионс**: Ограничьте разрешения для того места, где может входить учетная запись службы. Если он выполняется локально на компьютере и обращается только к ресурсам на этом компьютере, ограничьте его вход в систему в любом месте.
 
@@ -149,7 +149,7 @@ ms.locfileid: "102557375"
 
 Создавайте учетную запись службы только после документирования соответствующей информации в CMDB, и вы выполняете оценку рисков. Ограничения учетной записи должны быть согласованы с оценкой рисков. Учитывайте следующие ограничения, связанные с оценкой.
 
-* [Срок действия учетной записи](/powershell/module/activedirectory/set-adaccountexpiration?view=winserver2012-ps)
+* [Срок действия учетной записи](/powershell/module/activedirectory/set-adaccountexpiration?view=winserver2012-ps&preserve-view=true)
 
    * Для всех учетных записей пользователей, используемых в качестве учетных записей служб, определите реалистичную и определенную конечную дату для использования. Задайте его с помощью флага "срок действия учетной записи". Дополнительные сведения см. в разделе[ Set-адаккаунтекспиратион](/powershell/module/addsadministration/set-adaccountexpiration). 
 
@@ -193,11 +193,11 @@ ms.locfileid: "102557375"
 
 3. Удалите учетную запись службы после выполнения политики "осталось отключено". 
 
-   * Для MSAs можно [удалить его](/powershell/module/activedirectory/uninstall-adserviceaccount?view=winserver2012-ps) с помощью PowerShell или удалить вручную из контейнера учетной записи управляемой службы.
+   * Для MSAs можно [удалить его](/powershell/module/activedirectory/uninstall-adserviceaccount?view=winserver2012-ps&preserve-view=true) с помощью PowerShell или удалить вручную из контейнера учетной записи управляемой службы.
 
    * Учетные записи компьютеров или пользователей можно удалить вручную из Active Directory.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 См. следующие статьи о защите учетных записей служб.
 
 * [Вводные сведения о локальных учетных записях служб](service-accounts-on-premises.md)

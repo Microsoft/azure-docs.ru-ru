@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 7ac3518e0d27be6b6a18790b9fcbdbce0f6f8fef
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: cb6a20d91458d2e4a6a60ced519531bd3c4356c5
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105025056"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642400"
 ---
 # <a name="migration-guide-db2-to-azure-sql-managed-instance"></a>Руководство по миграции: DB2 в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -168,10 +168,9 @@ ms.locfileid: "105025056"
 |[Сценарии и артефакты инвентаризации IBM DB2 LUW](https://github.com/Microsoft/DataMigrationTeam/tree/master/IBM%20Db2%20LUW%20Inventory%20Scripts%20and%20Artifacts)|Этот ресурс включает SQL-запрос, который обращается к системным таблицам IBM DB2 LUW версии 11,1 и предоставляет количество объектов по схеме и типу объектов, приблизительную оценку "необработанных данных" в каждой схеме и размер таблиц в каждой схеме с результатами, хранящимися в формате CSV.|
 |[Инструкции по установке для DB2 LUW чистого масштаба в Azure](https://github.com/Microsoft/DataMigrationTeam/blob/master/Whitepapers/Db2%20PureScale%20on%20Azure.pdf)|Это руководством служит отправной точкой для плана реализации DB2. Ваши бизнес-требования будут другими, однако базовый шаблон остается без изменений. Этот шаблон архитектуры также может использоваться для приложений OLAP в Azure.|
 
-Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
-
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

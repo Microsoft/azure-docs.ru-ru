@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 02/18/2020
-ms.openlocfilehash: 529bc5468c74ac9d50f64decad29fd070a7bda83
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: a3876b63e9dc41a22ac6e95b31f34665a0d0bdd8
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105566937"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642341"
 ---
 # <a name="migration-overview-sql-server-to-azure-sql-managed-instance"></a>Общие сведения о миграции: SQL Server в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "105566937"
 - Если требования к вычислительной мощности значительно ниже, чем предложения управляемого экземпляра (один Виртуальное ядро, например), и консолидация базы данных не является приемлемым вариантом. 
 
 
-## <a name="migration-tools"></a>Средства миграцииСредства миграции
+## <a name="migration-tools"></a>Средства миграции
 
 
 Рекомендуемые средства для миграции — это Помощник по миграции данных и Azure Database Migration Service. Также доступны другие альтернативные варианты миграции. 
@@ -236,10 +236,10 @@ SELECT * FROM sys.sql_modules WHERE uses_native_compilation=1
 |[Автоматизация сбора данных PerfMon с помощью программы Logman](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/Perfmon%20Data%20Collection%20Automation%20Using%20Logman)|Средство, собирающее данные, чтобы понять производительность базовых показателей, которая помогает в рекомендации целевого объекта миграции. Это средство, использующее logman.exe для создания команды, которая будет создавать, запускать, останавливаться и удалять счетчики производительности, заданные на удаленном SQL Server.|
 |[Технический документ — миграция базы данных в Azure SQL Управляемый экземпляр путем восстановления полных и разностных резервных копий](https://github.com/microsoft/DataMigrationTeam/blob/master/Whitepapers/Database%20migrations%20to%20Azure%20SQL%20DB%20Managed%20Instance%20-%20%20Restore%20with%20Full%20and%20Differential%20backups.pdf)|В этом техническом документе содержатся инструкции и инструкции по ускорению миграции с SQL Server на Управляемый экземпляр SQL Azure при наличии только полных и разностных резервных копий (без возможности резервного копирования журналов).|
 
-Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Чтобы начать перенос SQL Server в Azure SQL Управляемый экземпляр, ознакомьтесь с [руководством по миграции SQL Server в Azure sql управляемый экземпляр](sql-server-to-managed-instance-guide.md).
 

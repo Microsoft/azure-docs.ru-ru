@@ -2,23 +2,18 @@
 title: Общие сведения о потоковой трансляции в реальном времени
 description: В этой статье содержатся общие сведения о потоковой трансляции в реальном времени с использованием Служб мультимедиа Azure версии 3.
 services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
 manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: ne
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 03/25/2021
 ms.author: inhenkel
-ms.openlocfilehash: b552dcc0e6766316e55e9cdda6e462b2d4abfd2b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c82c646e4befef9d409bb8e59a442642913ada22
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98955925"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641517"
 ---
 # <a name="live-streaming-with-azure-media-services-v3"></a>Потоковая трансляция в Службах мультимедиа Azure версии 3
 
@@ -123,16 +118,6 @@ ms.locfileid: "98955925"
 - [Состояния и выставление счетов](live-event-states-billing.md)
 - [Задержка](live-event-latency.md)
 
-## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
+## <a name="live-streaming-questions"></a>Вопросы о потоковой передаче в реальном времени
 
-См. статью с [часто задаваемыми вопросами](frequently-asked-questions.md#live-streaming) .
-
-## <a name="ask-questions-give-feedback-get-updates"></a>Получение справки, отправка отзывов, получение обновлений
-
-Прочитайте статью [сообщества Служб мультимедиа Azure](media-services-community.md), чтобы узнать, как задавать вопросы, оставлять отзывы и получать новости о Службах мультимедиа.
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-* [Быстрый запуск быстрой потоковой передачи](live-events-wirecast-quickstart.md)
-* [Руководство по потоковой трансляции](stream-live-tutorial-with-api.md)
-* [Руководство по миграции из версии 2 в версию 3 Служб мультимедиа](migrate-v-2-v-3-migration-introduction.md)
+См. статью [вопросы о потоковой передаче в реальном времени](questions-collection.md#live-streaming) .

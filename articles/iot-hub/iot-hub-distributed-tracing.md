@@ -13,12 +13,12 @@ ms.custom:
 - mqtt
 - fasttrack-edit
 - iot
-ms.openlocfilehash: adcbf4efc4dfaa7701c18440531327949640cb53
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: fca5c1a0aee6e62890d734e3233177549d932672
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100581985"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643678"
 ---
 # <a name="trace-azure-iot-device-to-cloud-messages-with-distributed-tracing-preview"></a>Трассировка отправляемых с устройства в облако сообщений Интернета вещей Azure с помощью функции распределенной трассировки (предварительная версия)
 
@@ -93,7 +93,7 @@ ms.locfileid: "100581985"
 
 ### <a name="clone-the-source-code-and-initialize"></a>Клонирование исходного кода и инициализация
 
-1. Установите [рабочую нагрузку "Разработка классических приложений на C++"](/cpp/build/vscpp-step-0-installation?view=vs-2019) для Visual Studio 2019. Также поддерживаются Visual Studio 2017 и 2015.
+1. Установите [рабочую нагрузку "Разработка классических приложений на C++"](/cpp/build/vscpp-step-0-installation?view=vs-2019&preserve-view=true) для Visual Studio 2019. Также поддерживаются Visual Studio 2017 и 2015.
 
 1. Установка [CMake](https://cmake.org/). Убедитесь, что это средство расположено в каталоге по вашему пути (`PATH`). Для этого в окне командной строки введите `cmake -version`.
 
@@ -325,7 +325,7 @@ AzureDiagnostics
 - Возможность переноса из облака на двойник устройства недоступна на [уровне "Базовый" Центра Интернета вещей](iot-hub-scaling.md#basic-and-standard-tiers). Тем не менее, Центр Интернета вещей все равно будет регистрироваться в Azure Monitor, если видит правильно составленный заголовок контекста трассировки.
 - Чтобы обеспечить эффективность операции, Центр Интернета вещей применит регулирование на основе частоты регистрации, которая может возникнуть как часть распределенной трассировки.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Дополнительные сведения об общем шаблоне распределенной трассировки в микрослужбах см. в [этой статье](https://microservices.io/patterns/observability/distributed-tracing.html).
 - Чтобы настроить конфигурацию для применения параметров распределенной трассировки на большое количество устройств, ознакомьтесь со статьей [Настройка и мониторинг устройств Центра Интернета вещей с помощью портала Azure](./iot-hub-automatic-device-management.md).

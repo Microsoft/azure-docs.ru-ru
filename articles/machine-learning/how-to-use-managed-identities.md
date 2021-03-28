@@ -10,12 +10,12 @@ ms.subservice: core
 ms.reviewer: larryfr
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.openlocfilehash: a7efd57100ad89fa9824b7a635e11698515e13ae
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3246f6668a653c05599001a2f8d8fc8d376936ce
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521022"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642418"
 ---
 # <a name="use-managed-identities-with-azure-machine-learning-preview"></a>Использование управляемых удостоверений с Машинное обучение Azure (Предварительная версия)
 
@@ -234,7 +234,7 @@ env.docker.base_image = "my-acr.azurecr.io/my-repo/my-image:latest"
 
 При создании рабочей области можно указать назначаемое пользователем управляемое удостоверение, которое будет использоваться для доступа к связанным ресурсам: запись контроля учетных записей, KeyVault, хранилище и App Insights.
 
-Сначала [Создайте назначаемое пользователем управляемое удостоверение](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-cli])и запишите идентификатор ресурса ARM управляемого удостоверения.
+Сначала [Создайте назначаемое пользователем управляемое удостоверение](/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-cli)и запишите идентификатор ресурса ARM управляемого удостоверения.
 
 Затем используйте Azure CLI или пакет SDK для Python, чтобы создать рабочую область. При использовании интерфейса командной строки укажите идентификатор с помощью `--primary-user-assigned-identity` параметра. При использовании пакета SDK используйте `primary_user_assigned_identity` . Ниже приведены примеры использования Azure CLI и Python для создания новой рабочей области с использованием следующих параметров.
 
@@ -265,6 +265,6 @@ ws = Workspace.create(name="workspace name",
 Если у вас есть рабочая область, ее можно обновить с назначенного пользователем управляемого удостоверения с помощью ```az ml workspace update``` команды CLI или ```Workspace.update``` метода Python SDK.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Дополнительные сведения о [корпоративной безопасности в машинное обучение Azure](concept-enterprise-security.md).

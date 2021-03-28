@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: TimothyMothra
 ms.author: tilee
 ms.date: 04/23/2019
-ms.openlocfilehash: be202a6016842ee82b3230c2841d416d3b53ea15
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 2641218fa9ddef65c45f2f1a9c9ce807cef35048
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102505585"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642735"
 ---
 # <a name="troubleshooting-application-insights-agent-formerly-named-status-monitor-v2"></a>Устранение неполадок агента Application Insights (прежнее название — монитор состояния v2)
 
@@ -153,8 +153,16 @@ Cmdlet          Start-ApplicationInsightsMonitoringTrace           0.4.0      Az
 4. Попробуйте перейти к приложению.
 5. После загрузки приложения вернитесь в PerfView и выберите команду " **Закрыть коллекцию**".
 
+### <a name="how-to-capture-full-sql-command-text"></a>Как записать полный текст команды SQL
 
+Чтобы захватить полный текст команды SQL, необходимо изменить файл applicationinsights.config следующим образом:
 
-## <a name="next-steps"></a>Дальнейшие действия
+```xml
+<Add Type="Microsoft.ApplicationInsights.DependencyCollector.DependencyTrackingTelemetryModule, Microsoft.AI.DependencyCollector">,
+<EnableSqlCommandTextInstrumentation>true</EnableSqlCommandTextInstrumentation>
+</Add>
+```
+
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Ознакомьтесь со [справочником по API](status-monitor-v2-overview.md#powershell-api-reference) , чтобы узнать о параметрах, которые могли быть пропущены.

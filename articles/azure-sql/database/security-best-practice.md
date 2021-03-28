@@ -10,12 +10,12 @@ ms.author: vanto
 ms.topic: article
 ms.date: 09/21/2020
 ms.reviewer: ''
-ms.openlocfilehash: 1217d3af855e96b6d6a0f403c2ff351a6b957d9a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5d83f6585500316515139f937a56889dfc1f8fac
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96459666"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642713"
 ---
 # <a name="playbook-for-addressing-common-security-requirements-with-azure-sql-database-and-azure-sql-managed-instance"></a>Сборник тренировочных заданий для решения общих требований к безопасности базы данных SQL Azure и Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "96459666"
 - Назначение прав доступа к ресурсам участникам Azure AD с помощью назначения групп: создание групп Azure AD, предоставление доступа к группам и Добавление отдельных членов в группы. В базе данных создайте пользователей автономной базы данных, которые сопоставляют группы Azure AD. Чтобы назначить разрешения в базе данных, добавьте пользователей, связанных с вашими группами Azure AD, в роли базы данных с соответствующими разрешениями.
   - См. статьи, [Настройка проверки подлинности Azure Active Directory и управление ею с помощью SQL](authentication-aad-configure.md) и [Использование Azure AD для проверки подлинности с помощью SQL](authentication-aad-overview.md).
   > [!NOTE]
-  > В Управляемый экземпляр SQL можно также создавать имена входа, сопоставленные с субъектами Azure AD в базе данных master. См. [инструкции по созданию имени входа (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current).
+  > В Управляемый экземпляр SQL можно также создавать имена входа, сопоставленные с субъектами Azure AD в базе данных master. См. [инструкции по созданию имени входа (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
 
 - Использование групп Azure AD упрощает управление разрешениями и владельцем группы, а владелец ресурса может добавлять или удалять членов группы.
 
@@ -136,7 +136,7 @@ ms.locfileid: "96459666"
 
 - Используйте режим интерактивной проверки подлинности Azure AD для базы данных SQL Azure и Управляемый экземпляр Azure SQL, где пароль запрашивается в интерактивном режиме, а затем многофакторная проверка подлинности:
   - Используйте универсальную проверку подлинности в SSMS. См. статью [Использование многофакторной аутентификации Azure AD с базой данных SQL Azure, sql управляемый экземпляр, Azure синапсе (поддержка многофакторной идентификации в среде SSMS)](authentication-mfa-ssms-overview.md).
-  - Используйте поддержку интерактивной проверки подлинности в SQL Server Data Tools (SSDT). См. статью [Azure Active Directory поддержка в SQL Server Data Tools (SSDT)](/sql/ssdt/azure-active-directory?view=azuresqldb-current).
+  - Используйте поддержку интерактивной проверки подлинности в SQL Server Data Tools (SSDT). См. статью [Azure Active Directory поддержка в SQL Server Data Tools (SSDT)](/sql/ssdt/azure-active-directory?view=azuresqldb-current&preserve-view=true).
   - Используйте другие средства SQL, поддерживающие многофакторную проверку подлинности.
     - Поддержка мастера SSMS для экспорта, извлечения и развертывания базы данных  
     - [sqlpackage.exe](/sql/tools/sqlpackage): параметр "/УА"
@@ -196,7 +196,7 @@ ms.locfileid: "96459666"
 
 - Если не удается избежать паролей или секретов, Храните пароли пользователей и секреты приложений в Azure Key Vault и управляйте доступом с помощью политик доступа Key Vault.
 
-- Различные платформы разработки приложений также могут предлагать механизмы для защиты секретов в приложении. Например: [ASP.NET Core App](/aspnet/core/security/app-secrets?tabs=windows&view=aspnetcore-2.1).
+- Различные платформы разработки приложений также могут предлагать механизмы для защиты секретов в приложении. Например: [ASP.NET Core App](/aspnet/core/security/app-secrets?tabs=windows).
 
 ### <a name="use-sql-authentication-for-legacy-applications"></a>Использовать проверку подлинности SQL для устаревших приложений
 
@@ -255,7 +255,7 @@ ms.locfileid: "96459666"
 - Создайте и используйте пользовательские роли с необходимыми разрешениями. Типичные роли, используемые на практике:
   - Развертывание системы безопасности
   - Администратор
-  - Разработчик
+  - разработчик.
   - Персонал службы поддержки
   - Аудитор
   - Автоматизированные процессы
@@ -800,6 +800,6 @@ ms.locfileid: "96459666"
     - [Высокая доступность — конфигурация с избыточностью зоны для уровня служб общего назначения](high-availability-sla.md#general-purpose-service-tier-zone-redundant-availability-preview)
     - [Общие сведения о непрерывности бизнес-процессов](business-continuity-high-availability-disaster-recover-hadr-overview.md)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - См. [Обзор возможностей безопасности базы данных SQL Azure](security-overview.md) .

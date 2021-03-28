@@ -11,12 +11,12 @@ author: bonova
 ms.author: bonova
 ms.reviewer: sstein, vanto
 ms.date: 01/14/2021
-ms.openlocfilehash: dca4d699ac1253753c82949cb480d95a1dde26e2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5d49a5b57ff4b59005461f2bb13451822723b039
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104594110"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105644986"
 ---
 # <a name="what-is-azure-sql-managed-instance"></a>Что такое Управляемый экземпляр SQL Azure?
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "104594110"
 | --- | --- |
 |Нет необходимости в приобретении оборудования и управления им <br>Отсутствие накладных расходов на управление базовой инфраструктурой <br>Быстрая подготовка и масштабирование службы <br>Автоматическое исправление и обновление версии <br>Интеграция с другими службами данных PaaS |Соглашение об уровне обслуживания с гарантией времени непрерывной работы 99,99 %.  <br>Встроенный [высокий уровень доступности](../database/high-availability-sla.md) <br>Данные защищены путем [автоматического создания резервных копий](../database/automated-backups-overview.md) <br>Период хранения резервных копий настраивается пользователем <br>Инициируемые пользователем [резервные копии](/sql/t-sql/statements/backup-transact-sql?preserve-view=true&view=azuresqldb-mi-current) <br>Возможность [восстановления базы данных до точки во времени](../database/recovery-using-backups.md#point-in-time-restore) |
 |**Безопасность и соответствие требованиям** | **Управление**|
-|Изолированная среда ([интеграция виртуальной сети](connectivity-architecture-overview.md), клиентская служба, выделенные ресурсы вычисления и хранилище) <br>[Прозрачное шифрование данных (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)<br>[Аутентификация Azure Active Directory](../database/authentication-aad-overview.md), поддержка единого входа <br> <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true">Субъекты сервера (имена для входа) Azure AD</a>  <br>Соблюдение тех же стандартов соответствия, что и для Базы данных SQL Azure <br>[Аудит SQL](auditing-configure.md) <br>[Расширенная защита от угроз](threat-detection-configure.md) |Программный интерфейс Azure Resource Manager для автоматизации подготовки и масштабирования службы <br>Функциональные возможности портала Azure для подготовки и масштабирования службы вручную <br>Служба миграции данных
+|Изолированная среда ([интеграция виртуальной сети](connectivity-architecture-overview.md), клиентская служба, выделенные ресурсы вычисления и хранилище) <br>[Прозрачное шифрование данных (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)<br>[Аутентификация Azure Active Directory](../database/authentication-aad-overview.md), поддержка единого входа <br> [Субъекты сервера (имена для входа) Azure AD](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true) <br>Соблюдение тех же стандартов соответствия, что и для Базы данных SQL Azure <br>[Аудит SQL](auditing-configure.md) <br>[Расширенная защита от угроз](threat-detection-configure.md) |Программный интерфейс Azure Resource Manager для автоматизации подготовки и масштабирования службы <br>Функциональные возможности портала Azure для подготовки и масштабирования службы вручную <br>Служба миграции данных
 
 > [!IMPORTANT]
 > Управляемый экземпляр SQL Azure сертифицирован по нескольким стандартам соответствия. Дополнительные сведения см. на [странице предложений по соответствию Microsoft Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=44bbae63-bf4d-4e3b-9d3d-c96fb25ec363&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FAQ_and_White_Papers), где в разделе **База данных SQL** представлен актуальный список сертификатов соответствия Управляемого экземпляра SQL.
@@ -161,7 +161,7 @@ ms.locfileid: "104594110"
 
 Управляемый экземпляр SQL поддерживает стандартные имена для входа СУБД SQL Server и имена для входа, интегрированные с Azure Active Directory. Субъекты сервера (имена для входа) Azure AD (**общедоступная предварительная версия**) представляют собой версию локальных имен для входа в базы данных, которые вы используете в локальной среде, для облака Azure. Субъекты сервера (имена для входа) Azure AD позволяют указать пользователей и группы из арендатора Azure Active Directory в качестве субъектов области экземпляров, которые могут выполнять любые операции на уровне экземпляра, включая запросы между базами данных в одном управляемом экземпляре.
 
-Появился новый синтаксис для создания субъектов сервера (имен для входа) Azure AD — **FROM EXTERNAL PROVIDER**. Дополнительные сведения о синтаксисе см. в статье <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true">CREATE LOGIN (Transact-SQL)</a> и в разделе о [подготовке администратора Azure Active Directory для Управляемого экземпляра SQL](../database/authentication-aad-configure.md#provision-azure-ad-admin-sql-managed-instance).
+Появился новый синтаксис для создания субъектов сервера (имен для входа) Azure AD — **FROM EXTERNAL PROVIDER**. Дополнительные сведения о синтаксисе см. в статье [CREATE LOGIN (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true) и в разделе о [подготовке администратора Azure Active Directory для Управляемого экземпляра SQL](../database/authentication-aad-configure.md#provision-azure-ad-admin-sql-managed-instance).
 
 ### <a name="azure-active-directory-integration-and-multi-factor-authentication"></a>Интеграция Azure Active Directory и Многофакторная идентификация
 

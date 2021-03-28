@@ -5,17 +5,17 @@ description: Для защиты данных в учетной записи х�
 services: storage
 author: tamram
 ms.service: storage
-ms.date: 03/09/2021
+ms.date: 03/23/2021
 ms.topic: conceptual
 ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
-ms.openlocfilehash: 358be21a1f7f13c0c0ce1bf0e57dda53174216b2
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 72f7130aad12ee2b5d463195b0b5c7847022bdfd
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102517537"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645165"
 ---
 # <a name="customer-managed-keys-for-azure-storage-encryption"></a>Управляемые клиентом ключи для шифрования службы хранилища Azure
 
@@ -118,7 +118,7 @@ ms.locfileid: "102517537"
 
 Ключи, управляемые клиентом, также доступны для управления шифрованием управляемых дисков Azure. Управляемые клиентом ключи ведут себя иначе для управляемых дисков, чем для ресурсов службы хранилища Azure. Дополнительные сведения см. в статье [Шифрование управляемых дисков Azure](../../virtual-machines/disk-encryption.md) на стороне сервера для Windows или [Шифрование на стороне сервера для управляемых дисков Azure](../../virtual-machines/disk-encryption.md) для Linux.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Шифрование службы хранилища Azure для неактивных данных](storage-service-encryption.md)
 - [Настройка шифрования с помощью управляемых клиентом ключей, хранящихся в Azure Key Vault](customer-managed-keys-configure-key-vault.md)

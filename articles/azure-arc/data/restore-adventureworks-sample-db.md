@@ -9,16 +9,16 @@ ms.author: twright
 ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
-ms.openlocfilehash: d238a889648e789087a0803f6b50288318462c7b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a6b3577fe820c9dadcb3c8415aa7a951a3283284
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91629069"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641815"
 ---
 # <a name="restore-the-adventureworks-sample-database-into-sql-managed-instance---azure-arc"></a>Восстановление образца базы данных AdventureWorks в SQL Управляемый экземпляр в Azure Arc
 
-[AdventureWorks](/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=tsql&preserve-view=true) — это образец базы данных, содержащей базу данных OLTP, которая часто используется в руководствах и примерах. Он предоставляется и обслуживается корпорацией Майкрософт в составе [репозитория SQL Server Samples GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases).
+[AdventureWorks](/sql/samples/adventureworks-install-configure) — это образец базы данных, содержащей базу данных OLTP, которая часто используется в руководствах и примерах. Он предоставляется и обслуживается корпорацией Майкрософт в составе [репозитория SQL Server Samples GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases).
 
 В этом документе описывается простой процесс получения образца базы данных AdventureWorks в SQL Управляемый экземпляр — Azure ARC.
 

@@ -9,12 +9,12 @@ author: GithubMirek
 ms.author: mireks
 ms.reviewer: vanto
 ms.date: 08/14/2020
-ms.openlocfilehash: dec29dc92f70a3f02f3fb598659aa86477fb59bf
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: d764c6b6cff6a0ba23d659d4fda63e21aac9b155
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105558250"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105644183"
 ---
 # <a name="directory-readers-role-in-azure-active-directory-for-azure-sql"></a>Роль "Читатели каталогов" в Azure Active Directory для Azure SQL
 
@@ -31,7 +31,7 @@ Azure Active Directory (Azure AD) предоставила [Использова
 
 - Создание имен входа Azure AD для SQL Управляемый экземпляр
 - Олицетворение пользователей Azure AD в Azure SQL
-- Миграция SQL Server пользователей, использующих проверку подлинности Windows, в SQL Управляемый экземпляр с проверкой подлинности Azure AD (с помощью команды [ALTER USER (Transact-SQL)](/sql/t-sql/statements/alter-user-transact-sql?view=azuresqldb-mi-current#d-map-the-user-in-the-database-to-an-azure-ad-login-after-migration) )
+- Миграция SQL Server пользователей, использующих проверку подлинности Windows, в SQL Управляемый экземпляр с проверкой подлинности Azure AD (с помощью команды [ALTER USER (Transact-SQL)](/sql/t-sql/statements/alter-user-transact-sql?view=azuresqldb-mi-current&preserve-view=true#d-map-the-user-in-the-database-to-an-azure-ad-login-after-migration) )
 - Изменение администратора Azure AD для Управляемый экземпляр SQL
 - Разрешение [субъектов-служб (приложений)](authentication-aad-service-principal.md) создавать пользователей Azure AD в Azure SQL
 
@@ -49,7 +49,7 @@ Azure Active Directory (Azure AD) предоставила [Использова
 
 Этому решению по-прежнему требуется пользователь с высоким уровнем прав (глобальный администратор или администратор привилегированных ролей) для создания группы и назначения пользователей в качестве однократного действия, но владельцы групп Azure AD смогут назначать дополнительные участники. Это избавляет от необходимости использования пользователя с высоким уровнем привилегий в будущем для настройки всех баз данных SQL, управляемых экземпляров SQL или серверов Azure синапсе в своем клиенте Azure AD.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 > [!div class="nextstepaction"]
 > [Руководство по назначению роли "Читатели каталогов" группе Azure AD и управлению назначениями ролей](authentication-aad-directory-readers-role-tutorial.md)

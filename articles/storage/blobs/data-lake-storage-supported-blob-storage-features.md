@@ -7,12 +7,12 @@ ms.service: storage
 ms.topic: conceptual
 ms.date: 02/11/2021
 ms.author: normesta
-ms.openlocfilehash: 769163dd09ec29c2c206d0273e71de27732fb9db
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 5c9eb1aa2e88019609f5ab26c2e995e4e43063ca
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100516284"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640826"
 ---
 # <a name="blob-storage-features-available-in-azure-data-lake-storage-gen2"></a>Функции хранилища BLOB-объектов, доступные в Azure Data Lake Storage 2-го поколения
 
@@ -44,13 +44,13 @@ ms.locfileid: "100516284"
 |Неизменяемое хранилище|Preview (Предварительный просмотр)<div role="complementary" aria-labelledby="preview-form"><sup>1</sup></div>|Preview (Предварительный просмотр)<div role="complementary" aria-labelledby="preview-form"><sup>1</sup></div>|[Хранение критически важных для бизнеса данных большого двоичного объекта с помощью неизменяемого хранилища](storage-blob-immutable-storage.md)|
 |Обратимое удаление контейнера|Preview (Предварительный просмотр)|Preview (Предварительный просмотр)|[Обратимое удаление для контейнеров (Предварительная версия)](soft-delete-container-overview.md)|
 |Инвентаризация службы хранилища Azure|Preview (Предварительный просмотр)|Preview (Предварительный просмотр)|[Использование инвентаризации хранилища Azure для управления данными большого двоичного объекта (Предварительная версия)](blob-inventory.md)|
-|Личные домены|Preview (Предварительный просмотр)<div role="complementary" aria-labelledby="preview-form-2"><sup>2</sup></div>|Preview (Предварительный просмотр)<div role="complementary" aria-labelledby="preview-form-2"><sup>2</sup></div>|[Сопоставление личного домена с конечной точкой хранилища BLOB-объектов Azure](storage-custom-domain-name.md)|
+|Личные домены|Предварительный просмотр<div role="complementary" aria-labelledby="preview-form-2"><sup>2</sup></div>|Предварительный просмотр<div role="complementary" aria-labelledby="preview-form-2"><sup>2</sup></div>|[Сопоставление личного домена с конечной точкой хранилища BLOB-объектов Azure](storage-custom-domain-name.md)|
 |Обратимое удаление BLOB-объекта|Еще не поддерживается|Еще не поддерживается|[Обратимое удаление для больших двоичных объектов](./soft-delete-blob-overview.md)|
 |Blobfuse|Общедоступная версия|Общедоступная версия|[Как подключить хранилище BLOB-объектов в качестве файловой системы с использованием blobfuse](storage-how-to-mount-container-linux.md)|
 |Анонимный открытый доступ |Общедоступная версия|Общедоступная версия| См. раздел [Настройка анонимного общего доступа на чтение для контейнеров и больших двоичных объектов](anonymous-read-access-configure.md).|
 |Отработка отказа учетной записи, управляемой клиентом|Еще не поддерживается|Еще не поддерживается|[Аварийное восстановление и отработка отказа учетной записи](../common/storage-disaster-recovery-guidance.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)|
 |Ключи, предоставляемые клиентом|Еще не поддерживается|Еще не поддерживается|[Укажите ключ шифрования для запроса к хранилищу BLOB-объектов](encryption-customer-provided-keys.md)|
-|Области шифрования|Еще не поддерживается|Еще не поддерживается|[Создание и управление областями шифрования (Предварительная версия)](encryption-scope-manage.md)|
+|Области шифрования|Еще не поддерживается|Еще не поддерживается|[Создание областей шифрования и управление ими](encryption-scope-manage.md)|
 |Канал изменений|Еще не поддерживается|Еще не поддерживается|[Поддержка канала изменений в хранилище BLOB-объектов Azure](storage-blob-change-feed.md)|
 |Репликация объектов|Еще не поддерживается|Еще не поддерживается|[Настройка репликации объекта для блочных BLOB-объектов](object-replication-configure.md)|
 |Управление версиями BLOB-объектов|Еще не поддерживается|Еще не поддерживается|[Включение управления версиями BLOB-объектов и работа с ним](versioning-enable.md)|

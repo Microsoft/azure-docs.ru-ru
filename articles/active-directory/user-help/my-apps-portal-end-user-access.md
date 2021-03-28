@@ -8,16 +8,16 @@ ms.service: active-directory
 ms.subservice: user-help
 ms.workload: identity
 ms.topic: end-user-help
-ms.date: 01/19/2021
+ms.date: 03/26/2021
 ms.author: curtand
 ms.reviewer: kasimpso
 ms.custom: user-help, seo-update-azuread-jan
-ms.openlocfilehash: 6dd9d65ee56bcbf8ca1da72f7d99d4545c5d7fbb
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: e72667ab562a9e12d233f45dc50efc9b70d2141b
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100095007"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642116"
 ---
 # <a name="sign-in-and-start-apps-from-the-my-apps-portal"></a>Вход на портал "Мои приложения" и запуск приложений
 
@@ -39,11 +39,12 @@ ms.locfileid: "100095007"
 
 ## <a name="supported-browsers"></a>Поддерживаемые браузеры
 
-Вы можете открыть портал **Мои приложения** в любом из приведенных ниже браузеров.
+На портале " **Мои приложения** " можно перейти из любого из следующих веб-браузеров. Корпорация Майкрософт рекомендует использовать наиболее актуальный браузер, совместимый с вашей операционной системой.
 
-- Microsoft ребро (мобильная версия пограничной в настоящее время является единственным поддерживаемым браузером для мобильных устройств)
-- Google Chrome
-- Mozilla Firefox версии 26.0 или более новой
+- Microsoft ребро (последняя версия, Настольная и мобильная)
+- Safari (последняя версия, Mac и iOS)
+- Chrome (последняя версия, Настольная и мобильная)
+- Firefox (последняя версия).
 
 На мобильном устройстве iOS или Android можно получить доступ к порталу "Мои приложения" и использовать его на своем компьютере или в мобильной версии браузера Microsoft ребра.
 

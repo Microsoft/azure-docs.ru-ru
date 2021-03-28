@@ -12,12 +12,12 @@ ms.reviewer: nibaccam
 ms.date: 07/31/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, data4ml
-ms.openlocfilehash: 15bad877be00e143ce6f6956a4e1f23378c275c0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8b984a17c8c10c3dff7c57b7d0223ba8b4197012
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521787"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640116"
 ---
 # <a name="train-models-with-azure-machine-learning-datasets"></a>Обучение моделей с помощью наборов данных Машинное обучение Azure 
 
@@ -38,7 +38,7 @@ ms.locfileid: "102521787"
 * [Установленный пакет SDK машинное обучение Azure для Python](/python/api/overview/azure/ml/install) (>= 1.13.0), который включает в себя `azureml-datasets` пакеты.
 
 > [!Note]
-> Некоторые классы наборов данных имеют зависимости от пакета [azureml-](/python/api/azureml-dataprep/) DataMarket. Для пользователей Linux эти классы поддерживаются только в следующих дистрибутивах: Red Hat Enterprise Linux, Ubuntu, Fedora и CentOS.
+> Некоторые классы наборов данных имеют зависимости от пакета [azureml-](https://pypi.org/project/azureml-dataprep/) DataMarket. Для пользователей Linux эти классы поддерживаются только в следующих дистрибутивах: Red Hat Enterprise Linux, Ubuntu, Fedora и CentOS.
 
 ## <a name="consume-datasets-in-machine-learning-training-scripts"></a>Использование наборов данных в сценариях обучения машинного обучения
 
@@ -287,7 +287,7 @@ src.run_config.source_directory_data_store = "workspaceblobstore"
     Если не указать начальную косую черту ("/"), необходимо добавить к рабочему каталогу префикс, например, в `/mnt/batch/.../tmp/dataset` целевом объекте вычислений, чтобы указать, где нужно подключить набор данных.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Автоматическое обучение моделей машинного обучения](how-to-auto-train-remote.md) с помощью табулардатасетс.
 

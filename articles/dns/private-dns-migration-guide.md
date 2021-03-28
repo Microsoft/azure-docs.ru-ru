@@ -8,12 +8,12 @@ ms.service: dns
 ms.topic: how-to
 ms.date: 06/18/2019
 ms.author: rohink
-ms.openlocfilehash: 72d046cde70d1224eb1fd47f527c9e49c6b002f6
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 3f0856f85e279f97934fff506a052c8fd214ff73
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102500467"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641232"
 ---
 # <a name="migrating-legacy-azure-dns-private-zones-to-new-resource-model"></a>Перенос устаревших частных зон Azure DNS на новую модель ресурсов
 
@@ -25,7 +25,7 @@ az account set --subscription <SubscriptionId>
 az network dns zone list --query "[?zoneType=='Private']"
 ```
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Убедитесь, что установлена последняя версия Azure PowerShell. Дополнительные сведения по средству Azure PowerShell (Az) и его установке см. по адресу https://docs.microsoft.com/powershell/azure/new-azureps-module-az.
 
@@ -108,7 +108,7 @@ PrivateDnsMigrationScript.ps1
 
 Если вы применяете службу автоматизации, включая шаблоны, сценарии PowerShell или пользовательский код, разработанный с помощью пакета SDK, необходимо обновить ее, чтобы использовать новую модель ресурсов для частных зон DNS. Ниже приведены ссылки на документацию по CLI/PS/SDK для новых частных зон DNS.
 * [REST API для частных зон Azure DNS](/rest/api/dns/privatedns/privatezones)
-* [CLI для частных зон Azure DNS](/cli/azure/ext/privatedns/network/private-dns)
+* [CLI для частных зон Azure DNS](/cli/azure/network/private-dns/link/vnet?view=azure-cli-latest)
 * [PowerShell для частных зон Azure DNS](/powershell/module/az.privatedns/)
 * [Пакет SDK для частных зон Azure DNS](/dotnet/api/overview/azure/privatedns/management?view=azure-dotnet-preview)
 
@@ -116,7 +116,7 @@ PrivateDnsMigrationScript.ps1
 
 Если необходимо получить дополнительную помощь в процессе переноса или по какой-либо причине перечисленные выше шаги не помогли, создайте запрос в службу поддержки. Приложите файл расшифровку, созданный с помощью сценария PowerShell, к вашему запросу в службу поддержки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Узнайте, как создать частную зону в Azure DNS с помощью [Azure PowerShell](./private-dns-getstarted-powershell.md) или [интерфейса командной строки Azure](./private-dns-getstarted-cli.md).
 

@@ -12,12 +12,12 @@ ms.date: 09/01/2020
 ms.author: trbye
 ms.custom: cog-serv-seo-aug-2020
 keywords: Преобразование текста в речь
-ms.openlocfilehash: e42f81ce0f06b3782972dbf4322f0590763d8704
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 45977faec9ab54fed0c1e7054c567b4d18b11f50
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105026331"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645023"
 ---
 # <a name="what-is-text-to-speech"></a>Что такое преобразование текста в речь?
 
@@ -44,7 +44,7 @@ ms.locfileid: "105026331"
 * Висемес- [висемес](how-to-speech-synthesis-viseme.md) — это ключ к наблюдаемым речевым данным, включая расположение пакетов LIP, жав и дразнящаяся рожица при создании определенного phoneme. Висемес имеют надежную корреляцию с голосовыми и фонемы. С помощью событий висеме в пакете SDK для распознавания речи можно создавать данные анимации лиц, которые можно использовать для анимации лиц в связи для чтения, обучения, развлечений и обслуживания клиентов.
 
 > [!NOTE]
-> Сейчас висеме работает только для `en-US-AriaNeural` голоса в регионе "Западная часть США 2 ( `westus2` )".
+> Сейчас висеме работает только для `en-US-AriaNeural` голоса.
 
 ## <a name="get-started"></a>Начало работы
 
@@ -80,7 +80,7 @@ ms.locfileid: "105026331"
 - [пакет SDK для службы "Речь"](speech-sdk.md);
 - [REST API: Преобразование текста в речь](rest-text-to-speech.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Получение бесплатной подписки на службу речи](overview.md#try-the-speech-service-for-free)
 - [Получение пакета SDK для службы "Речь"](speech-sdk.md)

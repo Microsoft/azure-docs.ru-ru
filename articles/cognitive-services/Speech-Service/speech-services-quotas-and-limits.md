@@ -8,14 +8,14 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: speech-service
 ms.topic: conceptual
-ms.date: 03/15/2021
+ms.date: 03/27/2021
 ms.author: alexeyo
-ms.openlocfilehash: 78e40250710c133cbed53c05137971247663b0df
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7fe2942250e165606175392d7749becda0cff23b
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103564428"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645114"
 ---
 # <a name="speech-services-quotas-and-limits"></a>Квоты и ограничения службы "Речь"
 
@@ -39,7 +39,7 @@ ms.locfileid: "103564428"
 #### <a name="batch-transcription"></a>Пакетное транскрибирование
 | Quota | Бесплатный (F0)<sup>1</sup> | Standard (S0) |
 |--|--|--|
-| Ограничение REST API | Запись пакетов недоступна для F0 | 300 запросов в минуту |
+| Ограничение преобразования [речи в текст REST API v 2.0 и v 3.0](rest-speech-to-text.md#speech-to-text-rest-api-v30) | Запись пакетов недоступна для F0 | 300 запросов в минуту |
 | Максимальный размер входного звукового файла | Н/Д | 1 ГБ |
 | Максимальный размер входного большого двоичного объекта (может содержать более одного файла, например, в ZIP-архиве; убедитесь, что указан предельный размер файла). | Н/Д | 2,5 ГБ |
 | Максимальный размер контейнера больших двоичных объектов | Н/Д | 5 ГБ |

@@ -7,12 +7,12 @@ ms.reviewer: daperlov
 ms.service: data-factory
 ms.topic: troubleshooting
 ms.date: 03/18/2021
-ms.openlocfilehash: a475441a845300d74014924415a4e48ae4de16df
-ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
+ms.openlocfilehash: 7678d0fde21cefc950e0ac64a58563425c606298
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105628294"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640224"
 ---
 # <a name="troubleshoot-mapping-data-flows-in-azure-data-factory"></a>Устранение неполадок сопоставления потоков данных в фабрике данных Azure
 
@@ -317,24 +317,6 @@ ms.locfileid: "105628294"
 ### <a name="error-code-df-excel-invalidfile"></a>Код ошибки: DF-Excel-Инвалидфиле
 - **Сообщение**: недопустимый файл Excel предоставляется, хотя поддерживаются только файлы. xlsx и. xls.
 
-### <a name="error-code-df-adobeintegration-invalidmaptofilter"></a>Код ошибки: DF-Адобеинтегратион-Инвалидмаптофилтер
-- **Сообщение**: настраиваемый ресурс может иметь только один ключ или идентификатор, сопоставленный с фильтром.
-
-### <a name="error-code-df-adobeintegration-invalidpartitionconfiguration"></a>Код ошибки: DF-Адобеинтегратион-Инвалидпартитионконфигуратион
-- **Сообщение**: поддерживается только один раздел. Схема секционирования может быть циклический перебор или hash.
-- **Рекомендация**. в параметрах адобеинтегратион убедитесь, что у вас есть только один раздел. Схема секционирования может быть циклический перебор или hash.
-
-### <a name="error-code-df-adobeintegration-keycolumnmissed"></a>Код ошибки: DF-Адобеинтегратион-Кэйколумнмиссед
-- **Сообщение**: необходимо указать ключ для операций, которые не могут быть вставлены.
-- **Рекомендация**. Укажите ключевые столбцы в параметрах адобеинтегратион для операций, которые не являются вставляемыми.
-
-### <a name="error-code-df-adobeintegration-invalidpartitiontype"></a>Код ошибки: DF-Адобеинтегратион-Инвалидпартитионтипе
-- **Сообщение**: тип секции должен быть циклический перебор.
-- **Рекомендация**: Убедитесь, что тип секции — циклический перебор в параметрах адобеинтегратион.
-
-### <a name="error-code-df-adobeintegration-invalidprivacyregulation"></a>Код ошибки: DF-Адобеинтегратион-Инвалидпривацирегулатион
-- **Сообщение**: в настоящее время поддерживается только регламентирование конфиденциальности gdpr.
-- **Рекомендация**: Подтвердите соблюдение конфиденциальности в параметрах адобеинтегратион — **"GDPR"**.
 
 ## <a name="miscellaneous-troubleshooting-tips"></a>Прочие советы по устранению неполадок
 - **Ошибка:** возникло непредвиденное исключение, сбой выполнения.

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b37ebebdb99530ab615a313d9b269b9ce937b7f1
-ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
+ms.openlocfilehash: cefdf77052e559853cc85d129799e288032186b8
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105110773"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645425"
 ---
 ## <a name="add-managed-identity-to-your-communication-services-solution"></a>Добавление управляемого удостоверения в решение служб связи
 
@@ -24,7 +24,7 @@ pip install azure-communication-sms
 from azure.identity import DefaultAzureCredential
 ```
 
-В приведенных ниже примерах используется [дефаултазурекредентиал](/python/api/azure.identity.defaultazurecredential). Эти учетные данные подходят для сред рабочей среды и разработки.
+В приведенных ниже примерах используется [дефаултазурекредентиал](/python/api/azure-identity/azure.identity.defaultazurecredential). Эти учетные данные подходят для сред рабочей среды и разработки.
 
 Сведения о регистрации приложения в среде разработки и настройке переменных среды см. в разделе [авторизация доступа с помощью управляемого удостоверения](../managed-identity-from-cli.md) .
 

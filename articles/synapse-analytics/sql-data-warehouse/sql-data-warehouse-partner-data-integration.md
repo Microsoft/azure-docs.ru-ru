@@ -11,12 +11,12 @@ ms.date: 03/27/2019
 ms.author: procha
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019
-ms.openlocfilehash: ba03fe86c126c76faf91a06a96aaea6d1ffeddc0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7eecacef7f678001c9d65da540432154305549e2
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104594926"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645150"
 ---
 # <a name="azure-synapse-analytics-data-integration-partners"></a>Партнеры по интеграции данных с Azure Synapse Analytics
 
@@ -27,6 +27,7 @@ ms.locfileid: "104594926"
 | Партнер | Описание | Ссылка на веб-сайт или продукт |
 | ------- | ----------- | -------------------- |
 | ![Инитио AB](./media/sql-data-warehouse-partner-data-integration/abinitio-logo.png) |**Инитио AB**<br> Платформа для создания гибкого цифрового инженера AB Инитио позволяет решать самые сложные проблемы обработки данных и управления данными в корпоративных вычислениях. Облачная платформа Инитио в машинном коде позволяет получать доступ и использовать данные в любом месте вашей корпоративной экосистемы, будь то Azure или локально, включая данные, хранящиеся в устаревших системах. Сочетание интуитивно понятного интерфейса с мощными возможностями автоматизации, качества данных, управления данными и активных метаданных обеспечивает быструю разработку и полноценную самообслуживание данных, освобождая аналитики для быстрого и эффективного выполнения своих задач. Присоединяйтесь к крупнейшим предприятиям в мире, используя AB Инитио, чтобы превратить большие данные в осмысленные данные. |[Страница продукта](https://www.abinitio.com/) |
+| ![аекорсофт](./media/sql-data-warehouse-partner-data-integration/aecorsoft-logo.png) |**аекорсофт**<br> Аекорсофт предлагает быстрое, масштабируемое и в реальном времени программное решение для ELT и ETL, которое помогает клиентам SAP приносить сложные данные SAP к Azure синапсе Analytics и платформе данных Azure. Благодаря полному соответствию требованиям безопасности уровня приложений SAP решение Аекорсофт официально сертифицировано SAP Premium для интеграции с приложениями SAP. Уникальные функции Аекорсофт суперпользователя и записи изменений данных позволяют пользователям SAP передавать разностные данные из таблиц с прозрачностью, пулом и кластеров SAP в Azure в формате CSV, Parquet, Avro, ORC или GZIP. Помимо табличных данных SAP, многие другие объекты SAP с большим количеством бизнес-правил, такие как запросы BW и представления компакт-дисков S/4HANA, полностью поддерживаются. |[Страница продукта](https://www.aecorsoft.com/products/dataintegrator)<br>[Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/aecorsoftinc1588038796343.aecorsoftintegrationservice_adf)<br>|
 | ![Alooma](./media/sql-data-warehouse-partner-data-integration/alooma_logo.png) |**Alooma**<br> Alooma — это решение для извлечения, преобразования и загрузки (ETL), которое позволяет группам по работе с данными интегрировать, обогащать и передавать данные в виде потоков из разных источников в хранилище данных Azure Synapse в реальном времени. |[Страница продукта](https://www.alooma.com/) |
 | ![Alteryx](./media/sql-data-warehouse-partner-data-integration/alteryx_logo.png) |**Alteryx**<br> Alteryx Designer предоставляет повторяемый рабочий процесс для самостоятельного анализа данных, который позволяет лучше понять данные за считанные часы, а не недели, как предлагают традиционные подходы. Alteryx Designer расширяет возможности аналитиков, объединяя подготовку, смешение и анализ данных (прогнозный, статистический и пространственный) с помощью интуитивно понятного пользовательского интерфейса. |[Страница продукта](https://www.alteryx.com/partners/microsoft/)<br>[Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/alteryx.alteryx-designer)<br>|
 | ![Attunity](./media/sql-data-warehouse-partner-data-integration/attunity_logo.png) |**Attunity (CloudBeam)**<br>Attunity CloudBeam предлагает автоматизированное решение для загрузки данных в хранилище данных Azure Synapse. Оно упрощает пакетную загрузку и добавочную репликацию данных из многих источников — SQL Server, Oracle, DB2, Sybase, MySQL и т. д. |[Страница продукта](http://www.attunity.com/attunity-cloudbeam-for-azure/)<br>[Azure Marketplace](https://aws.amazon.com/marketplace/pp/Attunity-Attunity-CloudBeam/B00B5PB8IM) <br> |
@@ -58,5 +59,5 @@ ms.locfileid: "104594926"
 | ![кспленти](./media/sql-data-warehouse-partner-data-integration/xplenty-logo.png) |**кспленти**<br> Платформа кспленти ELT позволяет быстро и легко подготавливать данные для аналитических и рабочих вариантов использования с помощью простой облачной службы. & точки кспленти SELECT, перетаскивание & Interface обеспечивает интеграцию данных, обработку и подготовку без установки, развертывания или обслуживания любого программного обеспечения. Подключайте и интегрируйте широкий набор хранилищ данных и приложений SaaS, включая Azure синапсе, хранилище BLOB-объектов Azure и SQL Server. Кспленти также поддерживает все веб-службы, доступные через API-интерфейс.|[Страница продукта](https://www.xplenty.com/integrations/azure-synapse-analytics/ )<br> |
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 Дополнительные сведения о других партнерах см. в разделе [партнеры бизнес-аналитики](sql-data-warehouse-partner-business-intelligence.md), [Управление данныминые партнеры](sql-data-warehouse-partner-data-management.md), а [машинное обучение и партнеры искусственного интеллекта](sql-data-warehouse-partner-machine-learning-ai.md).
