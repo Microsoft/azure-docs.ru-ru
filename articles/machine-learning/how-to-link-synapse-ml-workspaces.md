@@ -11,12 +11,12 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 03/08/2021
 ms.custom: how-to, devx-track-python, data4ml, synapse-azureml
-ms.openlocfilehash: 9d2b416955234cae7a30ac65dff7d64dedad3b1d
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: dd62fb5e3c7450d50b9837ee5484ca480cab78aa
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889116"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640832"
 ---
 # <a name="link-azure-synapse-analytics-and-azure-machine-learning-workspaces-preview"></a>Связывание Azure синапсе Analytics и рабочих областей Машинное обучение Azure (Предварительная версия)
 
@@ -35,9 +35,9 @@ ms.locfileid: "104889116"
 
 * [Создайте рабочую область Машинного обучения Azure](how-to-manage-workspace.md?tabs=python).
 
-* [Создайте рабочую область синапсе в портал Azure](/synapse-analytics/quickstart-create-workspace.md).
+* [Создайте рабочую область синапсе в портал Azure](/azure/synapse-analytics/quickstart-create-workspace).
 
-* [Создание пула Apache Spark с помощью портал Azure, веб-средств или синапсе Studio](/synapse-analytics/quickstart-create-apache-spark-pool-portal.md)
+* [Создание пула Apache Spark с помощью портал Azure, веб-средств или синапсе Studio](/azure/synapse-analytics/quickstart-create-apache-spark-pool-studio)
 
 * Установка [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/intro)
 
@@ -115,7 +115,7 @@ linked_service.unregister()
 1. Нажмите кнопку **Далее** , чтобы открыть форму **проверки** и проверить выбранные параметры.
 1. Выберите **создать** , чтобы завершить процесс создания связанной службы.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Присоедините пулы синапсе Spark для подготовки данных с помощью Azure синапсе (Предварительная версия)](how-to-data-prep-synapse-spark-pool.md).
 * [Использование Apache Spark в конвейере машинного обучения с помощью Azure синапсе (Предварительная версия)](how-to-use-synapsesparkstep.md)

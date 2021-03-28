@@ -13,12 +13,12 @@ author: VanMSFT
 ms.author: vanto
 ms.reviewer: sstein
 ms.date: 03/23/2020
-ms.openlocfilehash: 6383c0fa3aad15da8abaea79136a75732ce9ea01
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.openlocfilehash: a0e9cc9967509eba05bd26f3bad86eefeeb6ca3e
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105605779"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105639470"
 ---
 # <a name="authorize-database-access-to-sql-database-sql-managed-instance-and-azure-synapse-analytics"></a>Авторизация доступа к Базе данных SQL, Управляемому экземпляру SQL и Azure Synapse Analytics
 [!INCLUDE[appliesto-sqldb-sqlmi-asa](../includes/appliesto-sqldb-sqlmi-asa.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "105605779"
 
   - Создайте дополнительное имя входа SQL в базе данных master.
   - Добавьте имя входа к [предопределенной роли сервера sysadmin](/sql/relational-databases/security/authentication-access/server-level-roles) с помощью инструкции [ALTER Server Role](/sql/t-sql/statements/alter-server-role-transact-sql) . Это имя для входа будет иметь полные административные разрешения.
-  - Кроме того, можно создать [имя входа Azure AD](authentication-aad-configure.md#provision-azure-ad-admin-sql-managed-instance) с помощью синтаксиса [CREATE LOGIN](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current) .
+  - Кроме того, можно создать [имя входа Azure AD](authentication-aad-configure.md#provision-azure-ad-admin-sql-managed-instance) с помощью синтаксиса [CREATE LOGIN](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true) .
 
 - **В базе данных SQL создайте имена входа SQL с ограниченными административными разрешениями.**
 
@@ -122,9 +122,9 @@ ms.locfileid: "105605779"
 
 Примеры, демонстрирующие создание имен входа и пользователей, см. в следующих статьях:
 
-- [Создание имени входа для базы данных SQL Azure](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-current#examples-1)
-- [Создание имени входа для Управляемый экземпляр Azure SQL](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current#examples-2)
-- [Создание имени входа для Azure синапсе](/sql/t-sql/statements/create-login-transact-sql?view=azure-sqldw-latest#examples-3)
+- [Создание имени входа для базы данных SQL Azure](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-current&preserve-view=true#examples-1)
+- [Создание имени входа для Управляемый экземпляр Azure SQL](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true#examples-2)
+- [Создание имени входа для Azure синапсе](/sql/t-sql/statements/create-login-transact-sql?view=azure-sqldw-latest&preserve-view=true#examples-3)
 - [Создание пользователя](/sql/t-sql/statements/create-user-transact-sql#examples)
 - [Создание пользователей, содержащихся в Azure AD](authentication-aad-configure.md#create-contained-users-mapped-to-azure-ad-identities)
 
@@ -169,6 +169,6 @@ ms.locfileid: "105605779"
 - [Маскирование данных](dynamic-data-masking-overview.md) позволяет снизить уязвимость конфиденциальных данных.
 - [хранимые процедуры](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Обзор всех баз данных SQL Azure и функций безопасности SQL Управляемый экземпляр см. в статье [Общие сведения о безопасности](security-overview.md).

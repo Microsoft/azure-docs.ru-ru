@@ -14,12 +14,12 @@ ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: willzhan
 ms.custom: seodec18
-ms.openlocfilehash: bb43396260e1b914f9f5b9e9ae489e87042a3154
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 057a284f99dd7c3713249b19e8fc39212d9e6003
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101092441"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640280"
 ---
 # <a name="design-of-a-multi-drm-content-protection-system-with-access-control"></a>Проектирование системы для защиты содержимого с несколькими подсистемами DRM и управлением доступом
 
@@ -53,7 +53,7 @@ ms.locfileid: "101092441"
 | **Windows 10** | PlayReady | Microsoft Edge и IE 11 для PlayReady|
 | **Устройства Android (телефоны, планшеты, телевизоры)** |Widevine |Chrome для Widevine |
 | **iOS** | FairPlay | Safari для FairPlay (начиная с iOS версии 11.2) |
-| **macOS** | FairPlay | Safari для FairPlay (начиная с Safari 9+ на Mac OS X 10.11+ El Capitan)|
+| **macOS** | FairPlay | Safari для FairPlay (начиная с Safari 9 + на macOS X 10.11 + El Capitan)|
 | **tvOS** | FairPlay | |
 
 С учетом текущего состояния развертывания для каждого DRM службе обычно требуется реализовать 2 или 3 DRM, чтобы вы могли максимально эффективно использовать все типы конечных точек.
@@ -140,7 +140,7 @@ ms.locfileid: "101092441"
 | **Служба маркеров безопасности (STS)** |Azure AD |
 | **Рабочий процесс защиты DRM** |Динамическая защита служб мультимедиа Azure |
 | **Доставка лицензий DRM** |* Доставка лицензий Служб мультимедиа (PlayReady, Widevine, FairPlay) <br/>* Сервер лицензирования Axinom <br/>* Пользовательский сервер лицензирования PlayReady |
-| **Исходный домен** |Конечная точка потоковой передачи Служб мультимедиа Azure |
+| **Лета** |Конечная точка потоковой передачи Служб мультимедиа Azure |
 | **Управление ключами** |Не требуется для справочной реализации |
 | **Управление содержимым** |Консольное приложение C# |
 
@@ -357,9 +357,3 @@ Widevine не запрещает делать снимок экрана защи
 ![Пользовательская STS с асимметричным ключом](./media/design-multi-drm-system-with-access-control/media-services-running-sts2.png)
 
 В обоих указанных случаях проверка подлинности пользователя остается неизменной. Она происходит через Azure AD. Единственное различие состоит в том, что маркеры JWT выдаются пользовательской STS вместо Azure AD. При настройке динамической защиты CENC ограничение службы доставки лицензий указывает тип маркера JWT — симметричный или асимметричный ключи.
-
-## <a name="next-steps"></a>Дальнейшие шаги
-
-* [Часто задаваемые вопросы по Аналитике компьютеров](frequently-asked-questions.md)
-* [Обзор системы защиты содержимого](content-protection-overview.md)
-* [Использование динамического шифрования DRM и службы доставки лицензий](protect-with-drm.md)

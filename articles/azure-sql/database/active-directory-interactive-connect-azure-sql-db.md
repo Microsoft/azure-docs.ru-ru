@@ -11,12 +11,12 @@ author: GithubMirek
 ms.author: MirekS
 ms.reviewer: vanto
 ms.date: 04/23/2020
-ms.openlocfilehash: 93831ec4c1dc3e34c2ea144e71b67dae711ee870
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: e2fa09ac8609310d4579590214bc25e5d7ee309f
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94841654"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641574"
 ---
 # <a name="connect-to-azure-sql-database-with-azure-ad-multi-factor-authentication"></a>Подключение к базе данных SQL Azure с помощью многофакторной идентификации Azure AD
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "94841654"
   Используйте это значение для проверки подлинности, требующей имени пользователя и пароля Azure AD. Проверка подлинности выполняется в службе "База данных SQL Azure". Этот метод не поддерживает многофакторную проверку подлинности.
 
 > [!NOTE]
-> При использовании .NET Core необходимо использовать пространство имен [Microsoft. Data. SqlClient](/dotnet/api/microsoft.data.sqlclient?view=sqlclient-dotnet-core-1.1) . Дополнительные сведения см. в следующем [блоге](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/).
+> При использовании .NET Core необходимо использовать пространство имен [Microsoft. Data. SqlClient](/dotnet/api/microsoft.data.sqlclient) . Дополнительные сведения см. в следующем [блоге](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/).
 
 ## <a name="set-c-parameter-values-from-the-azure-portal"></a>Установка значений параметров C# с портала Azure
 
@@ -148,7 +148,7 @@ ms.locfileid: "94841654"
 ## <a name="c-code-example"></a>Пример кода C#
 
 > [!NOTE]
-> При использовании .NET Core необходимо использовать пространство имен [Microsoft. Data. SqlClient](/dotnet/api/microsoft.data.sqlclient?view=sqlclient-dotnet-core-1.1) . Дополнительные сведения см. в следующем [блоге](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/).
+> При использовании .NET Core необходимо использовать пространство имен [Microsoft. Data. SqlClient](/dotnet/api/microsoft.data.sqlclient) . Дополнительные сведения см. в следующем [блоге](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/).
 
 Пример программы C# основан на сборке библиотеки DLL [*Microsoft.IdentityModel.Clients.ActiveDirectory*](/dotnet/api/microsoft.identitymodel.clients.activedirectory).
 
@@ -338,7 +338,7 @@ In method 'AcquireTokenAsync', case_0 == '.ActiveDirectoryInteractive'.
 >>
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 > [!IMPORTANT]

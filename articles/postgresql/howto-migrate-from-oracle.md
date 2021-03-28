@@ -8,12 +8,12 @@ ms.service: postgresql
 ms.subservice: migration-guide
 ms.topic: how-to
 ms.date: 03/18/2021
-ms.openlocfilehash: b41f894a7e4742b75ea06684a960221d4a5b7641
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 1a20ffd7150ac75721b2affc2f4375301c4754c8
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105024767"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643574"
 ---
 # <a name="migrate-oracle-to-azure-database-for-postgresql"></a>Перенос Oracle в базу данных Azure для PostgreSQL
 
@@ -21,7 +21,7 @@ ms.locfileid: "105024767"
 
 Подробные и исчерпывающие инструкции по миграции см. в разделе [материалы руководства по миграции](https://github.com/microsoft/OrcasNinjaTeam/blob/master/Oracle%20to%20PostgreSQL%20Migration%20Guide/Oracle%20to%20Azure%20Database%20for%20PostgreSQL%20Migration%20Guide.pdf). 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы перенести схему Oracle в базу данных Azure для PostgreSQL, вам потребуется: 
 
@@ -324,14 +324,14 @@ ora2pg -t TEST -c config/ora2pg.conf > migration_diff.txt
 | [Решения для миграции с Oracle на Azure PostgreSQL](https://github.com/Microsoft/DataMigrationTeam/blob/master/Whitepapers/Oracle%20to%20Azure%20Database%20for%20PostgreSQL%20Migration%20Workarounds.pdf) | Эта цель документа — предоставить архитекторам, консультантам, администраторам баз данных и связанным ролям руководство по быстрому исправлению и обработку проблем при переносе рабочих нагрузок из Oracle в службу "база данных Azure для PostgreSQL". |
 | [Инструкции по установке ora2pg в Windows или Linux](https://github.com/microsoft/DataMigrationTeam/blob/master/Whitepapers/Steps%20to%20Install%20ora2pg%20on%20Windows%20and%20Linux.pdf)                       | Этот документ предназначен для быстрой установки с целью включения миграции схемы & данных из Oracle в базу данных Azure для PostgreSQL с помощью средства ora2pg в Windows или Linux. Подробные сведения об этом инструменте можно найти по адресу http://ora2pg.darold.net/documentation.html . |
 
-Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
 
 ### <a name="contact-support"></a>Обращение в службу поддержки
 
 Если вам нужна помощь с миграцией, помимо средств ora2pg, обратитесь к псевдониму [ @Ask Azure DB для PostgreSQL](mailto:AskAzureDBforPostgreSQL@service.microsoft.com) , чтобы получить сведения о других вариантах миграции.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Чтобы получить доступ к матрице Microsoft и сторонним службам и средствам, доступным для различных сценариев переноса баз данных и данных (и специальных задач), см. статью [служба и средства для переноса данных](https://docs.microsoft.com/azure/dms/dms-tools-matrix).
 

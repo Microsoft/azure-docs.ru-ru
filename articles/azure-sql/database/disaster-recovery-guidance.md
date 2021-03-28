@@ -11,12 +11,12 @@ author: anosov1960
 ms.author: sashan
 ms.reviewer: mathoma, sstein
 ms.date: 06/21/2019
-ms.openlocfilehash: 322ef3b8ca30396bd4772850ff651f7545a21257
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 11c83a6ec364865eb3478112c9f33add22a5c09d
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100580754"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643274"
 ---
 # <a name="restore-your-azure-sql-database-or-failover-to-a-secondary"></a>Восстановление базы данных SQL Azure или отработки отказа на сервер-получатель
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "100580754"
 
 ## <a name="wait-for-service-recovery"></a>Ожидание восстановления служб
 
-Группы Azure прилагают все усилия для максимально быстрого восстановления работоспособности служб, но в зависимости от причины это может занимать часы и даже дни.  Если длительный простой некритичен для вашего приложения, вы можете просто дождаться завершения восстановления. В этом случае вам не нужно предпринимать какие-либо действия. Текущее состояние служб можно просмотреть на [панели мониторинга работоспособности служб Azure](https://azure.microsoft.com/status/). После восстановления региона ваше приложение снова станет доступным.
+Группы Azure прилагают все усилия для максимально быстрого восстановления работоспособности служб, но в зависимости от причины это может занимать часы и даже дни.  Если длительный простой некритичен для вашего приложения, вы можете просто дождаться завершения восстановления. В этом случае вам не нужно предпринимать какие-либо действия. Текущее состояние служб можно просмотреть на [панели мониторинга работоспособности служб Azure](https://azure.microsoft.com/status/). После восстановления региона будет восстановлена доступность приложения.
 
 ## <a name="fail-over-to-geo-replicated-secondary-server-in-the-failover-group"></a>Отработка отказа на геореплицированный сервер-получатель в группе отработки отказа
 
@@ -78,7 +78,7 @@ ms.locfileid: "100580754"
 
 - [Настройка активной георепликации для базы данных SQL Azure с помощью портала Azure и запуск отработки отказа](active-geo-replication-configure-portal.md)
 - [Настройка активной георепликации для отдельной базы данных SQL Azure с помощью PowerShell](scripts/setup-geodr-and-failover-database-powershell.md)
-- [Отработка отказа на сервер-получатель с помощью Transact-SQL (T-SQL)](/sql/t-sql/statements/alter-database-transact-sql?view=azuresqldb-current#e-failover-to-a-geo-replication-secondary)
+- [Отработка отказа на сервер-получатель с помощью Transact-SQL (T-SQL)](/sql/t-sql/statements/alter-database-transact-sql?view=azuresqldb-current&preserve-view=true#e-failover-to-a-geo-replication-secondary)
 
 ## <a name="recover-using-geo-restore"></a>Восстановление с использованием геовосстановления
 
@@ -90,7 +90,7 @@ ms.locfileid: "100580754"
 
 ### <a name="update-connection-strings"></a>Обновление строк подключения
 
-Так как восстановленная база данных будет находиться на другом сервере, измените строку подключения в приложении, чтобы она указывала на этот сервер.
+Так как восстановленная база данных находится на другом сервере, необходимо обновить строку подключения приложения, чтобы она указывала на этот сервер.
 
 Дополнительные сведения об изменении строк подключения см. в разделе о соответствующем языке разработки для своей [библиотеки подключений](connect-query-content-reference-guide.md#libraries).
 
@@ -115,7 +115,7 @@ ms.locfileid: "100580754"
 
 Если для доступа к базе данных требуется аудит, то после восстановления базы данных необходимо включить аудит. Дополнительные сведения см. в статье [Аудит базы данных](../../azure-sql/database/auditing-overview.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Чтобы узнать об автоматически создаваемых резервных копиях базы данных SQL Azure, ознакомьтесь с разделом [создаваемых автоматически резервных копий базы данных SQL](automated-backups-overview.md)
 - Чтобы изучить сценарии проектирования и восстановления непрерывности бизнес-процессов, ознакомьтесь со [сценариями обеспечения непрерывности](business-continuity-high-availability-disaster-recover-hadr-overview.md)

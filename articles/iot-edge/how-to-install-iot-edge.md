@@ -7,14 +7,14 @@ ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
 ms.topic: conceptual
-ms.date: 03/01/2021
+ms.date: 03/26/2021
 ms.author: kgremban
-ms.openlocfilehash: 6a64bb2801830440dc49e72786c9c00a6e4796b3
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a98eed61904b580988fe34302999f3ec6a24ac9e
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103201622"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640919"
 ---
 # <a name="install-or-uninstall-azure-iot-edge-for-linux"></a>Установка или удаление Azure IoT Edge для Linux
 
@@ -24,7 +24,7 @@ ms.locfileid: "103201622"
 
 В этой статье перечислены действия по установке среды выполнения Azure IoT Edge на устройствах Linux.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Зарегистрированный идентификатор устройства](how-to-register-device.md)
 
@@ -398,6 +398,8 @@ Or, if you want to install a specific version of IoT Edge and the identity servi
    sudo iotedge system status
    ```
 
+Успешный ответ о состоянии — `Ok` .
+
 ::: moniker-end
 
 Если нужно устранить неполадки со службой, извлеките журналы службы.
@@ -491,7 +493,7 @@ Or, if you want to install a specific version of IoT Edge and the identity servi
    2. Чтобы установить эту версию службы удостоверений, используйте скопированную ссылку в следующей команде:
 
       ```bash
-      curl -L <identity service link> -o aziot-identity-service.deb && sudo dpkg -i ./aziot-identity-service.deb
+      curl -L <identity service link> -o aziot-identity-service.deb && sudo apt-get install ./aziot-identity-service.deb
       ```
 
    3. Найдите файл **азиот-ребра** , соответствующий архитектуре устройства IOT Edge. Щелкните ссылку на файл правой кнопкой мыши и скопируйте адрес ссылки.
@@ -499,7 +501,7 @@ Or, if you want to install a specific version of IoT Edge and the identity servi
    4. Используйте ссылку копировать в следующей команде, чтобы установить эту версию IoT Edge.
 
       ```bash
-      curl -L <iotedge link> -o aziot-edge.deb && sudo dpkg -i ./aziot-edge.deb
+      curl -L <iotedge link> -o aziot-edge.deb && sudo apt-get install ./aziot-edge.deb
       ```
 
 <!-- end 1.2 -->
@@ -552,6 +554,6 @@ sudo apt-get remove --purge moby-cli
 sudo apt-get remove --purge moby-engine
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Продолжайте [развертывать модули IOT Edge](how-to-deploy-modules-portal.md) , чтобы узнать, как развернуть модули на устройстве.

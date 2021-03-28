@@ -13,12 +13,12 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 4fbb09a2687673ef96252d8bdb0523d0c5f235ae
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: ccad323c1834894367cca0ef0d3f98eb1b1b1ec3
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104772031"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105639910"
 ---
 # <a name="embedded-sign-in-experience"></a>Встроенные возможности входа в систему
 
@@ -45,9 +45,9 @@ ms.locfileid: "104772031"
 При использовании iframe учитывайте следующее.
 
 - Встроенный вход поддерживает только локальные учетные записи. Большинство поставщиков удостоверений социальных сетей (например, Google и Facebook) блокируют страницы входа из подставляемых кадров.
-- Так как файлы cookie сеанса Azure AD B2C в IFRAME считаются сторонними файлами cookie, некоторые браузеры (например, Safari или Chrome в режиме режиме инкогнито) блокируют или удаляют эти файлы cookie, что приводит к нежелательным последствиям для пользователя. Чтобы избежать этой проблемы, убедитесь, что имя домена приложения и домен Azure AD B2C имеют *один и тот же источник*. Чтобы использовать тот же источник, [включите личные домены](custom-domain.md) для Azure AD B2C клиента, а затем настройте веб-приложение с тем же источником. Например, размещенное в приложении Приложение https://app.contoso.com имеет тот же источник, что и Azure AD B2C, на котором работает https://login.contoso.com .
+- Так как файлы cookie сеанса Azure AD B2C в IFRAME считаются сторонними файлами cookie, некоторые браузеры (например, Safari или Chrome в режиме режиме инкогнито) блокируют или удаляют эти файлы cookie, что приводит к нежелательным последствиям для пользователя. Чтобы избежать этой проблемы, убедитесь, что имя домена приложения и домен Azure AD B2C имеют *один и тот же источник*. Чтобы использовать тот же источник, [включите личные домены](custom-domain.md) для Azure AD B2C клиента, а затем настройте веб-приложение с тем же источником. Например, приложение, размещенное на " https://app.contoso.com ", имеет тот же источник, что и Azure AD B2C, выполняющийся на " https://login.contoso.com ".
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Выполните шаги, описанные в статье [Начало работы с настраиваемыми политиками в Azure Active Directory B2C](custom-policy-get-started.md).
 * [Включите личные домены](custom-domain.md) для политик.
@@ -161,7 +161,7 @@ function logOut()
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 См. следующие статьи:
 

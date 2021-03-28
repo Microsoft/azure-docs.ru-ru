@@ -3,12 +3,12 @@ title: Настройка лаборатории для использовани
 description: Узнайте, как настроить лабораторию в Azure DevTest Labs с помощью шлюза удаленных рабочих столов, чтобы обеспечить безопасный доступ к виртуальным машинам лаборатории без необходимости предоставлять порт RDP.
 ms.topic: article
 ms.date: 06/26/2020
-ms.openlocfilehash: dcf5191dea64c3d7bf28b9ce1c616d3d2defb73e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b15d4d39199c1a30eae292ece67f4553b656f530
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97695689"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105639592"
 ---
 # <a name="configure-your-lab-in-azure-devtest-labs-to-use-a-remote-desktop-gateway"></a>Настройка лаборатории в Azure DevTest Labs для использования шлюза удаленных рабочих столов
 В Azure DevTest Labs можно настроить шлюз удаленных рабочих столов для лаборатории, чтобы обеспечить безопасный доступ к виртуальным машинам лаборатории, не открывая RDP-порт. Лаборатория предоставляет пользователям лабораторий централизованное представление и подключение ко всем виртуальным машинам, к которым у них есть доступ. Кнопка **подключить** на странице **виртуальной машины** создает файл RDP, зависящий от компьютера, который можно открыть для подключения к компьютеру. Вы можете дополнительно настроить и защитить подключение RDP, подключив свою лабораторию к шлюзу удаленных рабочих столов. 
@@ -36,7 +36,7 @@ ms.locfileid: "97695689"
 ### <a name="requirements-for-remote-desktop-gateway-machines"></a>Требования к компьютерам шлюза удаленных рабочих столов
 - Чтобы обрабатывать HTTPS-трафик, на компьютере шлюза должен быть установлен сертификат TLS/SSL. Сертификат должен соответствовать полному доменному имени (FQDN) балансировщика нагрузки для фермы шлюзов или полному доменному имени компьютера, если имеется только один компьютер. Сертификаты TLS/SSL с подстановочными знаками не работают.  
 - Сертификат подписи, установленный на компьютерах шлюзов. Создайте сертификат подписи с помощью [Create-SigningCertificate.ps1](https://github.com/Azure/azure-devtestlab/blob/master/samples/DevTestLabs/GatewaySample/tools/Create-SigningCertificate.ps1) сценария.
-- Установите [подключаемый модуль проверки подлинности](https://code.msdn.microsoft.com/windowsdesktop/Remote-Desktop-Gateway-517d6273) , поддерживающий аутентификацию на маркерах для шлюза удаленных рабочих столов. Одним из примеров такого модуля является `RDGatewayFedAuth.msi` то, что поставляется с [образами System Center Virtual Machine Manager (VMM)](/system-center/vmm/install-console?view=sc-vmm-1807). Дополнительные сведения о System Center см. в [документации по System Center](/system-center/) и [ценах](https://www.microsoft.com/cloud-platform/system-center-pricing).  
+- Установите [подключаемый модуль проверки подлинности](https://code.msdn.microsoft.com/windowsdesktop/Remote-Desktop-Gateway-517d6273) , поддерживающий аутентификацию на маркерах для шлюза удаленных рабочих столов. Одним из примеров такого модуля является `RDGatewayFedAuth.msi` то, что поставляется с [образами System Center Virtual Machine Manager (VMM)](/system-center/vmm/install-console?view=sc-vmm-1807&preserve-view=true). Дополнительные сведения о System Center см. в [документации по System Center](/system-center/) и [ценах](https://www.microsoft.com/cloud-platform/system-center-pricing).  
 - Сервер шлюза может выполнять запросы, выполненные в `https://{gateway-hostname}/api/host/{lab-machine-name}/port/{port-number}` .
 
     Имя узла Gateway — это полное доменное имя балансировщика нагрузки в ферме шлюзов или полное доменное имя компьютера, если имеется только один компьютер. `{lab-machine-name}`— Это имя компьютера лаборатории, к которому вы пытаетесь подключиться, а `{port-number}` — порт, на который будет установлено соединение.  По умолчанию этот порт равен 3389.  Однако если виртуальная машина использует компонент [общего IP-адреса](devtest-lab-shared-ip.md) в DevTest Labs, порт будет отличаться.
@@ -105,14 +105,14 @@ az resource show --name {lab-name} --resource-type 'Microsoft.DevTestLab/labs' -
 
     ```powershell
     $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate;
-    $cer.Import(‘path-to-certificate’);
+    $cer.Import('path-to-certificate');
     $hash = $cer.GetCertHashString()
     ```
 
     Чтобы получить кодировку base64 с помощью PowerShell, используйте следующую команду.
 
     ```powershell
-    [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes(‘path-to-certificate’))
+    [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes('path-to-certificate'))
     ```
 3. Скачивание файлов из [https://github.com/Azure/azure-devtestlab/tree/master/samples/DevTestLabs/GatewaySample/arm/gateway](https://github.com/Azure/azure-devtestlab/tree/master/samples/DevTestLabs/GatewaySample/arm/gateway) .
 
@@ -157,5 +157,5 @@ az resource show --name {lab-name} --resource-type 'Microsoft.DevTestLab/labs' -
 
     После настройки шлюза и лаборатории файл подключения, создаваемый при щелчке **подключения** пользователем лаборатории, автоматически будет содержать сведения, необходимые для подключения с использованием проверки подлинности на основе маркеров.     
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 Дополнительные сведения о службы удаленных рабочих столов и [документации по службы удаленных рабочих столов](/windows-server/remote/remote-desktop-services/Welcome-to-rds) см. в следующей статье.

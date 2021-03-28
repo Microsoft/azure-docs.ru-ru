@@ -10,12 +10,12 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 04/03/2020
 ms.author: nitinme
-ms.openlocfilehash: d0ffd786d3fb6bb5f0d70095d947c81caa070518
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d6b7b298e7e4d18e68985ec3cf536c90ef773608
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96499141"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105644377"
 ---
 # <a name="migrate-from-bing-speech-to-the-speech-service"></a>Миграция с Распознавание речи Bing в службу речи
 
@@ -26,7 +26,7 @@ ms.locfileid: "96499141"
 Один ключ подписки на службу речи предоставляет доступ к следующим функциям. Каждый тарифицируется отдельно, поэтому плата взимается только за функции, которые вы используете.
 
 * [Преобразование речи в текст](speech-to-text.md)
-* [Пользовательское преобразование речи в текст](https://cris.ai)
+* [Пользовательское преобразование речи в текст](/azure/cognitive-services/speech-service/custom-speech-overview)
 * [Преобразование текста в речь](text-to-speech.md)
 * [Настраиваемое преобразование текста в речь](./how-to-custom-voice-create-voice.md)
 * [Перевод речи](speech-translation.md) (не включает [перевод текста](../translator/translator-info-overview.md))
@@ -37,7 +37,7 @@ ms.locfileid: "96499141"
 
 Служба распознавания речи во многом схожа с Распознавание речи Bing, со следующими отличиями.
 
-| Компонент | API распознавания речи Bing | Служба Речь | Сведения |
+| Функция | API распознавания речи Bing | Служба Речь | Сведения |
 |--|--|--|--|
 | Пакет SDK для C# | :heavy_check_mark: | :heavy_check_mark: | Служба речи поддерживает Windows 10, универсальная платформа Windows (UWP) и .NET Standard 2,0. |
 | SDK C++ | :heavy_minus_sign: | :heavy_check_mark: | Служба речи поддерживает Windows и Linux. |
@@ -81,7 +81,7 @@ ms.locfileid: "96499141"
 
 Сведения о службе поддержки речи, SDK и API см. на [странице поддержки](../cognitive-services-support-options.md?context=%2fazure%2fcognitive-services%2fspeech-service%2fcontext%2fcontext%253fcontext%253d%2fazure%2fcognitive-services%2fspeech-service%2fcontext%2fcontext)речевых услуг.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Бесплатная пробная служба для речи](overview.md#try-the-speech-service-for-free)
 * [Начало работы с преобразованием речи в текст](get-started-speech-to-text.md)

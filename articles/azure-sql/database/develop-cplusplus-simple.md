@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 12/12/2018
-ms.openlocfilehash: e891c5797c9ce93e6cab7a07d2f68de1a9157249
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0460317a47a1cf01707990b6f92532d4ade01439
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92674760"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643284"
 ---
 # <a name="connect-to-sql-database-using-c-and-c"></a>Подключение к базе данных SQL с помощью C и C++
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "92674760"
 
 * Активная учетная запись Azure. Если у вас нет такой учетной записи, вы можете зарегистрироваться для использования [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
 * [Visual Studio](https://www.visualstudio.com/downloads/). Для разработки и запуска этого примера необходимо установить компоненты языка C++.
-* [Инструменты разработки Visual Studio для Linux](/cpp/linux/?view=vs-2019). Если вы разрабатываете приложение на платформе Linux, необходимо также установить расширение Linux для Visual Studio.
+* [Инструменты разработки Visual Studio для Linux](/cpp/linux/). Если вы разрабатываете приложение на платформе Linux, необходимо также установить расширение Linux для Visual Studio.
 
 ## <a name="azure-sql-database-and-sql-server-on-virtual-machines"></a><a id="AzureSQL"></a>База данных SQL Azure и SQL Server на виртуальных машинах
 
@@ -140,7 +140,7 @@ ms.locfileid: "92674760"
 * [образец ODBC C++ Windows](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/ODBC%20database%20sample%20%28windows%29) — загрузите образец ODBC C++ Windows для подключения к Azure SQL;
 * [образец ODBC C++ Linux](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/ODBC%20database%20sample%20%28linux%29) — загрузите образец ODBC C++ Linux для подключения к Azure SQL.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Обзор разработки базы данных SQL](develop-overview.md)
 * См. дополнительные сведения в [справочнике по API ODBC](/sql/odbc/reference/syntax/odbc-api-reference/)

@@ -12,12 +12,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: e0736e58983d4c28b8f2f4a20241cd36ac84fdfa
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 09e8ef85b6df48b6b442351135d4ae4ed55e9b45
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96445374"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641071"
 ---
 # <a name="what-is-a-logical-sql-server-in-azure-sql-database-and-azure-synapse"></a>Что такое логический сервер SQL Server в базе данных SQL Azure и Azure синапсе?
 [!INCLUDE[appliesto-sqldb-asa](../includes/appliesto-sqldb-asa.md)]
@@ -145,12 +145,12 @@ ms.locfileid: "96445374"
 > [!IMPORTANT]
 > С помощью Transact-SQL невозможно создать или удалить сервер.
 
-| Команда | Описание |
+| Get-Help | Описание |
 | --- | --- |
-|[CREATE DATABASE (база данных SQL Azure)](/sql/t-sql/statements/create-database-transact-sql?view=azuresqldb-current) | Отвечает за создание базы данных в Базе данных SQL Azure. Для создания новой базы данных необходимо подключение к базе данных master.|
-|[Создание базы данных (Azure синапсе)](/sql/t-sql/statements/create-database-transact-sql?view=azure-sqldw-latest) | Создает новую базу данных хранилища данных в Azure синапсе. Для создания новой базы данных необходимо подключение к базе данных master.|
-| [CREATE DATABASE (база данных SQL Azure)](/sql/t-sql/statements/alter-database-transact-sql?view=azuresqldb-current) |Изменяет базу данных или эластичный пул. |
-|[ALTER DATABASE (Azure синапсе Analytics)](/sql/t-sql/statements/alter-database-transact-sql?view=sql-server-ver15)|Изменяет базу данных хранилища данных в Azure синапсе.|
+|[CREATE DATABASE (база данных SQL Azure)](/sql/t-sql/statements/create-database-transact-sql?view=azuresqldb-current&preserve-view=true) | Отвечает за создание базы данных в Базе данных SQL Azure. Для создания новой базы данных необходимо подключение к базе данных master.|
+|[Создание базы данных (Azure синапсе)](/sql/t-sql/statements/create-database-transact-sql?view=azure-sqldw-latest&preserve-view=true) | Создает новую базу данных хранилища данных в Azure синапсе. Для создания новой базы данных необходимо подключение к базе данных master.|
+| [CREATE DATABASE (база данных SQL Azure)](/sql/t-sql/statements/alter-database-transact-sql?view=azuresqldb-current&preserve-view=true) |Изменяет базу данных или эластичный пул. |
+|[ALTER DATABASE (Azure синапсе Analytics)](/sql/t-sql/statements/alter-database-transact-sql?view=azure-sqldw-latest&preserve-view=true&tabs=sqlpool)|Изменяет базу данных хранилища данных в Azure синапсе.|
 |[DROP DATABASE (Transact-SQL)](/sql/t-sql/statements/drop-database-transact-sql)|Удаляет базу данных.|
 |[sys.database_service_objectives (база данных SQL Azure)](/sql/relational-databases/system-catalog-views/sys-database-service-objectives-azure-sql-database)|Возвращает выпуск (уровень служб), Цель обслуживания (ценовая категория) и имя эластичного пула (если таковые имеются) для базы данных. При входе в базу данных master для сервера возвращает сведения обо всех базах данных. Для Azure синапсе необходимо подключиться к базе данных master.|
 |[sys.dm_db_resource_stats (база данных SQL Azure)](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-resource-stats-azure-sql-database)| Возвращает сведения о потреблении ресурсов ЦП, операций ввода-вывода и памяти для базы данных в базе данных SQL Azure. Существует одна строка для каждых 15 секунд, даже если в базе данных не выполняется никаких действий.|
@@ -171,7 +171,7 @@ ms.locfileid: "96445374"
 
 Для создания серверов, баз данных и брандмауэров и управления ими используйте следующие запросы REST API.
 
-| Команда | Описание |
+| Get-Help | Описание |
 | --- | --- |
 |[Серверы — создание или обновление](/rest/api/sql/servers/createorupdate)|Создает или обновляет сервер.|
 |[Серверы: удаление](/rest/api/sql/servers/delete)|Удаляет сервер.|
@@ -190,7 +190,7 @@ ms.locfileid: "96445374"
 |[Правила брандмауэра — получение](/rest/api/sql/firewallrules/get)|Получает правило брандмауэра.|
 |[Правила брандмауэра — список по серверам](/rest/api/sql/firewallrules/listbyserver)|Возвращает список правил брандмауэра.|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Дополнительные сведения о переносе базы данных SQL Server в базу данных SQL Azure см. в статье [Миграция в базу данных SQL](migrate-to-database-from-sql-server.md)Azure.
 - Дополнительные сведения о поддерживаемых функциях см. [здесь](features-comparison.md).

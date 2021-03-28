@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: troubleshooting
 ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 62767898b52ef9d8c0a61fb5025dc59d06a00bd5
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: c6f7182fe058bacb1236ff10dfc1553d23a7e1f2
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105568194"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645250"
 ---
 # <a name="troubleshoot-issues-on-your-azure-stack-edge-pro-gpu-device"></a>Устранение неполадок на устройстве GPU Azure Stack с пограничными устройствами 
 
@@ -167,7 +167,7 @@ ms.locfileid: "105568194"
 
 2. Убедитесь, что установлены правильные модули PowerShell, как описано [здесь](./azure-stack-edge-gpu-connect-resource-manager.md#step-4-set-up-azure-powershell-on-the-client).
 
-3. Проверьте доступность конечных точек Azure Resource Manager и входа. Можно попробовать проверить связь с конечными точками. Например:
+3. Проверьте доступность конечных точек Azure Resource Manager и входа. Можно попробовать проверить связь с конечными точками. Пример:
 
    `ping management.28bmdw2-bb9.microsoftdatabox.com`
    `ping login.28bmdw2-bb9.microsoftdatabox.com`
@@ -196,7 +196,7 @@ ms.locfileid: "105568194"
 |Команда AzCopy перестает отвечать на запросы в течение 20 минут, после чего отображается следующее сообщение об ошибке:<br>`Error parsing source location https://<accountname>.blob.<serialnumber>.microsoftdatabox.com/<cntnr>. No such device or address`|Убедитесь, что имя конечной точки `<accountname>.blob.<serialnumber>.microsoftdatabox.com` Добавлено в файл hosts по адресу: `/etc/hosts` .|
 |Команда AzCopy перестает отвечать на запросы в течение 20 минут, после чего отображается следующее сообщение об ошибке: `Error parsing source location… The SSL connection could not be established` .|Импортируйте SSL-сертификат для устройства в хранилище сертификатов системы. Дополнительные сведения см. [в разделе скачивание сертификата](../databox/data-box-deploy-copy-data-via-rest.md#download-certificate).|
 |Значение одного из заголовков HTTP имеет неправильный формат.|Установленная версия библиотеки служба хранилища Microsoft Azure для Python не поддерживается Data Box. Поддерживаемые версии см. в разделе Azure Data Box требования к хранилищу BLOB-объектов.|
-|… [SSL: CERTIFICATE_VERIFY_FAILED]...| Перед запуском Python присвойте переменной среды REQUESTS_CA_BUNDLE путь к файлу SSL-сертификата в кодировке Base64 (см. раздел [Загрузка сертификата](../databox/data-box-deploy-copy-data-via-rest.md#download-certificate)). Например:<br>`export REQUESTS_CA_BUNDLE=/tmp/mycert.cer`<br>`python`<br>Кроме того, добавьте сертификат в хранилище сертификатов системы, а затем задайте для этой переменной среды путь к этому хранилищу. Например, в Ubuntu: <br>`export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt`<br>`python`.|
+|… [SSL: CERTIFICATE_VERIFY_FAILED]...| Перед запуском Python присвойте переменной среды REQUESTS_CA_BUNDLE путь к файлу SSL-сертификата в кодировке Base64 (см. раздел [Загрузка сертификата](../databox/data-box-deploy-copy-data-via-rest.md#download-certificate)). Пример:<br>`export REQUESTS_CA_BUNDLE=/tmp/mycert.cer`<br>`python`<br>Кроме того, добавьте сертификат в хранилище сертификатов системы, а затем задайте для этой переменной среды путь к этому хранилищу. Например, в Ubuntu: <br>`export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt`<br>`python`.|
 |Время ожидания соединения истекло.|Войдите в Azure Stack пограничная Pro и убедитесь, что она разблокирована. Когда устройство перезапускается, оно остается заблокированным до тех пор, пока пользователь не войдет в систему.|
 
 ## <a name="troubleshoot-iot-edge-errors"></a>Устранение ошибок IoT Edge
@@ -204,6 +204,6 @@ ms.locfileid: "105568194"
 [!INCLUDE [Troubleshoot IoT Edge runtime](../../includes/azure-stack-edge-iot-troubleshoot-compute.md)]
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Дополнительные сведения об [устранении неполадок при активации устройств](azure-stack-edge-gpu-troubleshoot-activation.md).

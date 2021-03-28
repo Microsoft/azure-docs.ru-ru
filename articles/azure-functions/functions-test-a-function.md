@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.custom: devx-track-csharp, devx-track-js
 ms.date: 03/25/2019
 ms.author: cshoe
-ms.openlocfilehash: f75f42f3879f551a945bdeb2d88450ae3b9d6106
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 27bc8171509e16f25c508dd71515d8cb25a11b0b
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98674156"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105639866"
 ---
 # <a name="strategies-for-testing-your-code-in-azure-functions"></a>Методика тестирования кода с помощью Функций Azure
 
@@ -41,7 +41,7 @@ ms.locfileid: "98674156"
 3. [Создайте функцию таймера на основе шаблона](./functions-create-scheduled-function.md) и назовите ее **митимертригжер**.
 4. [Создайте тестовое приложение xUnit](https://xunit.net/docs/getting-started/netcore/cmdline) в решении и назовите его **functions. Tests**.
 5. Использование NuGet для добавления ссылки из тестового приложения в [Microsoft. AspNetCore. MVC](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/)
-6. [Ссылка на приложение *функций*](/visualstudio/ide/managing-references-in-a-project?view=vs-2017) из приложения *functions. Tests* .
+6. [Ссылка на приложение *функций*](/visualstudio/ide/managing-references-in-a-project) из приложения *functions. Tests* .
 
 ### <a name="create-test-classes"></a>Создание тестовых классов
 
@@ -381,7 +381,7 @@ npm test
 
 Затем в тесте установите точку останова и нажмите клавишу **F5**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Теперь, когда вы узнали, как записывать автоматизированные тесты для функций, изучите следующие ресурсы.
 

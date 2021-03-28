@@ -12,12 +12,12 @@ author: GithubMirek
 ms.author: mireks
 ms.reviewer: vanto, sstein
 ms.date: 08/17/2020
-ms.openlocfilehash: f3c34526fd4005dbbb0be7e763721e125ed7828e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 9e7b337d4358f9685d683c308d6df9110607207a
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103201217"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643414"
 ---
 # <a name="configure-and-manage-azure-ad-authentication-with-azure-sql"></a>Настройка и администрирование проверки подлинности Azure Active Directory с помощью Azure SQL
 
@@ -34,7 +34,7 @@ ms.locfileid: "103201217"
   - Проверка подлинности в облаке с двумя вариантами с помощью простого единого входа (SSO)
     - Хэш-аутентификация паролей Azure AD
     - Сквозная проверка подлинности Azure AD
-  - Федеративная проверка подлинности
+  - Федеративная аутентификация
 
 Дополнительные сведения о методах проверки подлинности Azure AD и их выборе см. в разделе [Выбор правильного метода проверки подлинности для Azure Active Directory гибридного решения для идентификации](../../active-directory/hybrid/choose-ad-authn.md).
 
@@ -115,7 +115,7 @@ ms.locfileid: "103201217"
 
     Изменение администратора может занять несколько минут. После этого новый администратор появится в поле "Администратор Active Directory".
 
-После подготовки администратора Azure AD для Управляемый экземпляр SQL можно приступить к созданию участников сервера Azure AD (имен входа) с помощью синтаксиса <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">CREATE LOGIN</a> . Дополнительные сведения см. в разделе [SQL управляемый экземпляр Overview](../managed-instance/sql-managed-instance-paas-overview.md#azure-active-directory-integration).
+После подготовки администратора Azure AD для Управляемый экземпляр SQL можно приступить к созданию участников сервера Azure AD (имен входа) с помощью синтаксиса [CREATE LOGIN](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true) . Дополнительные сведения см. в разделе [SQL управляемый экземпляр Overview](../managed-instance/sql-managed-instance-paas-overview.md#azure-active-directory-integration).
 
 > [!TIP]
 > Чтобы потом удалить учетную запись администратора, в верхней части страницы Администратор Active Directory щелкните **Удалить администратора**, а затем нажмите кнопку **Сохранить**.
@@ -218,7 +218,7 @@ Remove-AzSqlInstanceActiveDirectoryAdministrator -ResourceGroupName "ResourceGro
 
 Вы также можете подготавливать администратора Azure AD для Управляемый экземпляр SQL, вызвав следующие команды интерфейса командной строки:
 
-| Команда | Описание |
+| Get-Help | Описание |
 | --- | --- |
 |[AZ SQL MI AD — создание администратора](/cli/azure/sql/mi/ad-admin#az-sql-mi-ad-admin-create) | Подготавливает администратора Azure Active Directory для Управляемый экземпляр SQL (должен быть из текущей подписки). |
 |[AZ SQL MI AD — администратор удаление](/cli/azure/sql/mi/ad-admin#az-sql-mi-ad-admin-delete) | Удаляет Azure Active Directory администратора для Управляемый экземпляр SQL. |
@@ -324,7 +324,7 @@ Remove-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "Group-23" -Se
 
 Вы можете подготавливать администратора Azure AD, вызвав следующие команды интерфейса командной строки:
 
-| Команда | Описание |
+| Get-Help | Описание |
 | --- | --- |
 |[az sql server ad-admin create](/cli/azure/sql/server/ad-admin#az-sql-server-ad-admin-create) | Подготавливает администратора Azure Active Directory для сервера, на котором размещена база данных SQL или Azure синапсе. (Должно быть из текущей подписки) |
 |[az sql server ad-admin delete](/cli/azure/sql/server/ad-admin#az-sql-server-ad-admin-delete) | Удаляет Azure Active Directory администратора для сервера, на котором размещена база данных SQL или Azure синапсе. |
@@ -345,8 +345,8 @@ Remove-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "Group-23" -Se
 - Платформа .NET Framework 4,6 или более поздней версии с [https://msdn.microsoft.com/library/5a4x27ek.aspx](/dotnet/framework/install/guide-for-developers) .
 - Библиотека проверки подлинности Azure Active Directory для SQL Server (*ADAL.DLL*). Ниже приведены ссылки для загрузки для установки последнего драйвера SSMS, ODBC и OLE DB, содержащего библиотеку *ADAL.DLL* .
   - [Среда SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms)
-  - [ODBC Driver for SQL Server версии 17](/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15)
-  - [OLE DB драйвер 18 для SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15)
+  - [ODBC Driver for SQL Server версии 17](/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15&preserve-view=true)
+  - [OLE DB драйвер 18 для SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15&preserve-view=true)
 
 Вы можете выполнить эти требования, сделав следующее:
 
@@ -357,7 +357,7 @@ Remove-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "Group-23" -Se
 
 ## <a name="create-contained-users-mapped-to-azure-ad-identities"></a>Создание автономных пользователей, сопоставленных с удостоверениями Azure AD
 
-Поскольку SQL Управляемый экземпляр поддерживает субъекты сервера Azure AD (имена входа), использование пользователей автономной базы данных не требуется. Субъекты сервера (имена для входа) Azure AD позволяют создавать имена для входа для пользователей, групп или приложений Azure AD. Это означает, что вы можете пройти проверку подлинности в Управляемый экземпляр SQL с помощью имени входа сервера Azure AD, а не пользователя автономной базы данных. Дополнительные сведения см. в разделе [SQL управляемый экземпляр Overview](../managed-instance/sql-managed-instance-paas-overview.md#azure-active-directory-integration). Сведения о синтаксисе для создания субъектов сервера (имен для входа) Azure AD см. в статье <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">CREATE LOGIN (Transact-SQL)</a>.
+Поскольку SQL Управляемый экземпляр поддерживает субъекты сервера Azure AD (имена входа), использование пользователей автономной базы данных не требуется. Субъекты сервера (имена для входа) Azure AD позволяют создавать имена для входа для пользователей, групп или приложений Azure AD. Это означает, что вы можете пройти проверку подлинности в Управляемый экземпляр SQL с помощью имени входа сервера Azure AD, а не пользователя автономной базы данных. Дополнительные сведения см. в разделе [SQL управляемый экземпляр Overview](../managed-instance/sql-managed-instance-paas-overview.md#azure-active-directory-integration). Сведения о синтаксисе для создания субъектов сервера (имен для входа) Azure AD см. в статье [CREATE LOGIN (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
 
 Однако использование Azure Active Directory проверки подлинности с базой данных SQL и Azure синапсе требует использования пользователей автономной базы данных на основе удостоверения Azure AD. Пользователь автономной базы данных не имеет имени входа в базе данных master и сопоставляется с удостоверением в Azure AD, связанным с базой данных. Удостоверение Azure AD может быть учетной записью отдельного пользователя или группы. Дополнительные сведения о пользователях автономной базы данных см. в статье [Пользователи автономной базы данных — создание переносимой базы данных](/sql/relational-databases/security/contained-database-users-making-your-database-portable).
 
@@ -532,7 +532,7 @@ sqlcmd -S Target_DB_or_DW.testsrv.database.windows.net -U bob@contoso.com -P MyA
 
 Руководство по устранению неполадок с аутентификацией Azure AD можно найти в следующем блоге: <https://techcommunity.microsoft.com/t5/azure-sql-database/troubleshooting-problems-related-to-azure-ad-authentication-with/ba-p/1062991>
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Общие сведения о именах входа, пользователях, ролях базы данных и разрешениях в базе данных SQL см. в разделе [имена входа, пользователи, роли базы данных и учетные записи пользователей](logins-create-manage.md).
 - Дополнительные сведения о субъектах базы данных см. в [этой статье](/sql/relational-databases/security/authentication-access/principals-database-engine).

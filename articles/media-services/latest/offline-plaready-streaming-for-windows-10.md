@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 08/31/2020
 ms.author: willzhan
 ms.custom: devx-track-csharp
-ms.openlocfilehash: ea3d895970c6a18286d719471a693f774efaa387
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: aecae72b0bea07a0d8e240b3dcae7ee9b9662f95
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98955241"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640709"
 ---
 # <a name="offline-playready-streaming-for-windows-10-with-media-services-v3"></a>Автономная потоковая передача PlayReady для Windows 10 с помощью служб мультимедиа v3
 
@@ -34,7 +34,7 @@ ms.locfileid: "98955241"
 > [!NOTE]
 > В автономной системе DRM оплачивается только один запрос на лицензию при скачивании содержимого. Плата за любые ошибки не взимается.
 
-## <a name="overview"></a>Обзор
+## <a name="background-on-offline-mode-playback"></a>Фоновый режим воспроизведения в автономном режиме
 
 В этом разделе приведены некоторые сведения о воспроизведении в автономном режиме, а именно почему:
 
@@ -61,12 +61,12 @@ ms.locfileid: "98955241"
 
 Ниже приведены два набора тестовых ресурсов. Первый использует доставку лицензий PlayReady в AMS, а второй — сервер лицензий PlayReady, размещенный на виртуальной машине Azure:
 
-Ресурс № 1:
+## <a name="asset-1"></a>#1 ресурсов
 
 * URL-адрес последовательного скачивания: [https://willzhanmswest.streaming.mediaservices.windows.net/8d078cf8-d621-406c-84ca-88e6b9454acc/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4](https://willzhanmswest.streaming.mediaservices.windows.net/8d078cf8-d621-406c-84ca-88e6b9454acc/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4)
 * URL-адрес для приобретения лицензии PlayReady (AMS): `https://willzhanmswest.keydelivery.mediaservices.windows.net/PlayReady/`
 
-Ресурс № 2:
+## <a name="asset-2"></a>#2 ресурсов
 
 * URL-адрес последовательного скачивания: [https://willzhanmswest.streaming.mediaservices.windows.net/7c085a59-ae9a-411e-842c-ef10f96c3f89/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4](https://willzhanmswest.streaming.mediaservices.windows.net/7c085a59-ae9a-411e-842c-ef10f96c3f89/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4)
 * LA_URL PlayReady (в локальной среде): `https://willzhan12.cloudapp.net/playready/rightsmanager.asmx`
@@ -124,7 +124,3 @@ private async void LoadUri_Click(object sender, RoutedEventArgs e)
 * Содержимое можно размещать в Службах мультимедиа Azure или в службе хранилища Azure для поэтапной загрузки.
 * Доставка лицензии PlayReady может происходить из Служб мультимедиа Azure или из другого места.
 * Подготовленное содержимое для потоковой передачи Smooth Streaming все еще можно использовать для потоковой передачи в режиме онлайн через DASH или Smooth с использованием PlayReady в качестве DRM.
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[Проектирование системы для защиты содержимого с несколькими подсистемами DRM и управлением доступом](design-multi-drm-system-with-access-control.md)

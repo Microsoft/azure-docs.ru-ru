@@ -9,12 +9,12 @@ ms.date: 01/02/2019
 ms.service: key-vault
 ms.subservice: general
 ms.topic: conceptual
-ms.openlocfilehash: 148f67fb87072a8ffd25f0fe1dfdb444be052173
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: ae22f07a70f3317b62776e5024b7a3d1084516a1
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104771623"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643492"
 ---
 # <a name="virtual-network-service-endpoints-for-azure-key-vault"></a>Конечные точки служб для виртуальной сети для Azure Key Vault
 
@@ -48,7 +48,7 @@ ms.locfileid: "104771623"
 |Exchange Online и SharePoint Online|Разрешение доступа к ключу клиента для функции шифрования службы хранилища Azure с использованием [ключа пользователя](/microsoft-365/compliance/customer-key-overview).|
 |Azure Information Protection|Разрешение доступа к ключу клиента для [Azure Information Protection.](/azure/information-protection/what-is-information-protection)|
 |Служба приложений Azure|[Развертывание сертификата веб-приложения Azure через Key Vault](https://azure.github.io/AppService/2016/05/24/Deploying-Azure-Web-App-Certificate-through-Key-Vault.html)|
-|База данных SQL Azure|[Прозрачное шифрование данных с поддержкой создание собственных ключей для базы данных SQL Azure и Azure синапсе Analytics](../../azure-sql/database/transparent-data-encryption-byok-overview.md?view=sql-server-2017&preserve-view=true&viewFallbackFrom=azuresqldb-current).|
+|База данных SQL Azure|[Прозрачное шифрование данных с поддержкой создание собственных ключей для базы данных SQL Azure и Azure синапсе Analytics](../../azure-sql/database/transparent-data-encryption-byok-overview.md).|
 |Хранилище Azure|[Шифрование службы хранилища использование ключей, управляемых клиентом, в Azure Key Vault](../../storage/common/customer-managed-keys-configure-key-vault.md).|
 |Хранилище озера данных Azure|[Шифрование данных в Azure Data Lake Storage](../../data-lake-store/data-lake-store-encryption.md) с помощью управляемого пользователем ключа.|
 |Azure Synapse Analytics|[Шифрование данных с помощью управляемых клиентом ключей в Azure Key Vault](../../synapse-analytics/security/workspaces-encryption.md)|
@@ -56,7 +56,7 @@ ms.locfileid: "104771623"
 |Служба "Управление API Azure"|[Развертывание сертификатов для пользовательского домена из Key Vault с помощью MSI](../../api-management/api-management-howto-use-managed-service-identity.md#use-ssl-tls-certificate-from-azure-key-vault)|
 |Фабрика данных Azure|[Выбор учетных данных хранилища данных в Key Vault из фабрики данных](https://go.microsoft.com/fwlink/?linkid=2109491)|
 |Центры событий Azure|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../event-hubs/configure-customer-managed-key.md)|
-|Azure Service Bus|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../service-bus-messaging/configure-customer-managed-key.md)|
+|Служебная шина Azure|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../service-bus-messaging/configure-customer-managed-key.md)|
 |Импорт и экспорт Microsoft Azure| [Использование управляемых клиентом ключей в Azure Key Vault для службы импорта и экспорта](../../import-export/storage-import-export-encryption-key-portal.md)
 |Реестр контейнеров Azure|[Шифрование реестра с помощью управляемых клиентом ключей](../../container-registry/container-registry-customer-managed-keys.md)
 |Шлюз приложений Azure |[Использование сертификатов Key Vault для прослушивателей с поддержкой HTTPS](../../application-gateway/key-vault-certs.md)
@@ -64,7 +64,7 @@ ms.locfileid: "104771623"
 > [!NOTE]
 > Настройте политики доступа в Key Vault так, чтобы разрешить доступ к Key Vault соответствующим службам.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Пошаговые инструкции см. в разделе [Настройка брандмауэров Azure Key Vault и виртуальных сетей](network-security.md) .
 - см. [Azure Key Vault Обзор безопасности](security-overview.md) .

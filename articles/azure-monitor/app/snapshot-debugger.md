@@ -7,12 +7,12 @@ ms.date: 10/23/2019
 author: cweining
 ms.author: cweining
 ms.reviewer: cweining
-ms.openlocfilehash: b0c26aa95d8c3aba5df164fb0707b4833accd052
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 57a417948d23d40801eb34cf10aab1e6f17037e6
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104786487"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105644089"
 ---
 # <a name="debug-snapshots-on-exceptions-in-net-apps"></a>Отладочные моментальные снимки для исключений в приложениях .NET
 При возникновении исключения, можно автоматически собирать отладочный моментальный снимок из работающего веб-приложения. Моментальный снимок отображает состояние исходного кода и переменных в момент порождения этого исключения. Snapshot Debugger в [Azure Application Insights](./app-insights-overview.md) отслеживает данные телеметрии исключений из веб-приложения. Он собирает моментальные снимки для наиболее частых исключений, чтобы предоставить вам необходимые сведения для диагностики проблем в рабочей среде. Включите в приложение [пакет NuGet сборщика моментальных снимков](https://www.nuget.org/packages/Microsoft.ApplicationInsights.SnapshotCollector) и при необходимости настройте параметры коллекции в [ApplicationInsights.config](./configuration-with-applicationinsights-config.md). Моментальные снимки отображаются на [исключениях](./asp-net-exceptions.md) на портале Application Insights.
@@ -124,7 +124,7 @@ ms.locfileid: "104786487"
 Для службы вычислений Azure и других типов служб файлы символов должны находиться в одной папке с DLL-файлом основного приложения (как правило, `wwwroot/bin`) или быть доступными по текущему пути.
 
 > [!NOTE]
-> Дополнительные сведения о различных доступных параметрах символов см. в [документации по Visual Studio](/visualstudio/ide/reference/advanced-build-settings-dialog-box-csharp?view=vs-2019#output
+> Дополнительные сведения о различных доступных параметрах символов см. в [документации по Visual Studio](/visualstudio/ide/reference/advanced-build-settings-dialog-box-csharp?view=vs-2019&preserve-view=true#output
 ). Для получения наилучших результатов рекомендуется использовать «Full», «Portable» или «Embedded».
 
 ### <a name="optimized-builds"></a>Оптимизированные сборки
@@ -134,7 +134,7 @@ ms.locfileid: "104786487"
 > [!TIP]
 > Установите расширение сайта Application Insights в службе приложений для получения поддержки деоптимизации.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 Включите Snapshot Debugger Application Insights для приложения:
 
 * [Служба приложений Azure](snapshot-debugger-appservice.md?toc=/azure/azure-monitor/toc.json)

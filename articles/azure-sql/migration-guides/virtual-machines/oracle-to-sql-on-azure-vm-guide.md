@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 4173fe34c6966514ef4f150527cd712c9d95ab7e
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: 8f034492568a7525f8f75f5f2add1a732c3ad896
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105561718"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105644279"
 ---
 # <a name="migration-guide-oracle-to-sql-server-on-azure-vm"></a>Руководство по миграции: Oracle to SQL Server на виртуальной машине Azure
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqldb.md)]
@@ -246,9 +246,9 @@ ms.locfileid: "105561718"
 | [Распространенные ошибки SSMA для Oracle и способы их устранения](https://aka.ms/dmj-wp-ssma-oracle-errors)                                                           | Oracle позволяет задавать нескалярное условие в предложении WHERE. В SQL Server, однако, такой тип условия не поддерживается. В результате Помощник по миграции SQL Server (SSMA) для Oracle не преобразует запросы с нескалярным условием в предложении WHERE, выдавая вместо этого ошибку O2SS0001. В этом техническом документе содержатся дополнительные сведения о данной проблеме и способах ее устранения.          |
 | [Руководство по переносу баз данных Oracle в SQL Server](https://github.com/microsoft/DataMigrationTeam/blob/master/Whitepapers/Oracle%20to%20SQL%20Server%20Migration%20Handbook.pdf)                | В этом документе рассматриваются задачи, связанные с миграцией схемы Oracle в последнюю версию SQL Server. Если миграция требует внесения изменений в компоненты и функции, необходимо тщательно учесть возможное влияние каждого изменения на приложения, использующие базу данных.                                                     |
 
-Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Чтобы проверить доступность служб, применимых к SQL Server, см. [Глобальный центр инфраструктуры Azure](https://azure.microsoft.com/global-infrastructure/services/?regions=all&amp;products=synapse-analytics,virtual-machines,sql-database) .
 

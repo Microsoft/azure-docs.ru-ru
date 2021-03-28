@@ -2,26 +2,18 @@
 title: Служба мультимедиа v3 автономная FairPlay потоковая передача для iOS
 description: В этом разделе приводится обзор и демонстрируется использование служб мультимедиа Azure версии 3 для динамического шифрования содержимого HTTP Live Streaming (HLS) с помощью Apple FairPlay в автономном режиме.
 services: media-services
-keywords: HLS, DRM, потоковая передача FairPlay (FPS), Offline, iOS 10
-documentationcenter: ''
 author: willzhan
-manager: steveng
-editor: ''
-ms.assetid: 7c3b35d9-1269-4c83-8c91-490ae65b0817
+manager: femila
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: how-to
-ms.date: 08/31/2020
-ms.author: willzhan
-ms.custom: devx-track-csharp
-ms.openlocfilehash: 399f9b0184217db8180fcec38e4f78917d5c9bc8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.author: inhenkel
+ms.openlocfilehash: 0412ef303a301873d437e03e91c58c0a2e8e7e15
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98955245"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640733"
 ---
 # <a name="offline-fairplay-streaming-for-ios-with-media-services-v3"></a>Автономная потоковая передача FairPlay для iOS с помощью служб мультимедиа v3
 
@@ -205,10 +197,6 @@ func requestApplicationCertificate() throws -> Data {
 Вы можете найти образцы на этом [демо-сайте](https://aka.ms/poc#22) вместе с соответствующим сертификатом приложения, размещенным в веб-приложении Azure.
 При использовании 3-й или 4-й версии примера пакета SDK сервера FPS, если главный плейлист содержит альтернативный аудио-поток, в автономном режиме воспроизводится только аудио. Таким образом, вам нужно убрать альтернативный аудиопоток. Другими словами, второй и третий образцы, перечисленные ранее, работают в интерактивном и автономном режимах. В первом примере звук будет воспроизводиться только в автономном режиме, в то время как интерактивная потоковая передача работает правильно.
 
-## <a name="faq"></a>Вопросы и ответы
+## <a name="offline-fairplay-questions"></a>Автономные Fairplay вопросы
 
-См. [часто задаваемые вопросы по устранению неполадок](frequently-asked-questions.md#why-does-only-audio-play-but-not-video-during-offline-mode).
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-Узнайте о возможностях [использования динамического шифрования AES-128 и службы доставки ключей](protect-with-aes128.md).
+См. раздел " [автономные Fairplay вопросы](questions-collection.md#why-does-only-audio-play-but-not-video-during-offline-mode)".

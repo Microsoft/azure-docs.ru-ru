@@ -10,12 +10,12 @@ author: markjones-msft
 ms.author: markjon
 ms.reviewer: mathoma
 ms.date: 11/06/2020
-ms.openlocfilehash: e237cf09616cb645bfc4659af4439086979b2565
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.openlocfilehash: 2702451aa3645b2702f8f38c37574a6601249dac
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105023628"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641421"
 ---
 # <a name="migration-overview-sql-server-to-sql-server-on-azure-vms"></a>Обзор миграции: SQL Server для SQL Server на виртуальных машинах Azure
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlvm.md)]
@@ -140,9 +140,9 @@ ms.locfileid: "105023628"
 |[Несколько-SQL-VM-VNet-ILB](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/ARM%20Templates/Multiple-SQL-VM-VNet-ILB)|В этом техническом документе описаны действия по настройке нескольких виртуальных машин Azure в SQL Server Always On конфигурации группы доступности.|
 |[Виртуальные машины Azure, поддерживающие SSD (цен. категория "Ультра") на регион](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/Find%20Azure%20VMs%20supporting%20Ultra%20SSD)|Эти сценарии PowerShell предоставляют программный вариант для получения списка регионов, поддерживающих виртуальные машины Azure, поддерживающие Ultra SSDs.|
 
-Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Чтобы приступить к переносу баз данных SQL Server в SQL Server на виртуальных машинах Azure, ознакомьтесь с [руководством по миграции отдельных баз данных](sql-server-to-sql-on-azure-vm-individual-databases-guide.md). 
 

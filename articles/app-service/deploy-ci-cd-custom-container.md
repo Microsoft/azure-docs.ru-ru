@@ -9,12 +9,12 @@ ms.date: 03/12/2021
 ms.author: msangapu
 ms.custom: seodec18
 zone_pivot_groups: app-service-containers-windows-linux
-ms.openlocfilehash: bc36325b55f049eebef823d836768fccc39a7615
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 654b0f842a3165926242d1ef03f2dfe4e5bacfdc
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103472176"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643352"
 ---
 # <a name="continuous-deployment-with-custom-containers-in-azure-app-service"></a>Непрерывное развертывание с пользовательскими контейнерами в службе приложений Azure
 
@@ -32,7 +32,7 @@ ms.locfileid: "103472176"
 **Выбор** источника развертывания зависит от сценария.
 - **Реестр контейнеров** настраивает CI/CD между реестром контейнеров и службой приложений.
 - Параметр **действия GitHub** предназначен для вас, если вы сохраняете исходный код для образа контейнера в GitHub. Действие развертывания, активируемое новыми фиксациями в репозитории GitHub, можно запустить `docker build` и `docker push` непосредственно в реестре контейнеров, а затем обновить приложение службы приложений для запуска нового образа. Дополнительные сведения см. в статье [как CI/CD работает с действиями GitHub](#how-cicd-works-with-github-actions).
-- Сведения о настройке CI/CD с **Azure pipelines** см. в статье [развертывание контейнера веб-приложения Azure из Azure pipelines](/devops/pipelines/targets/webapp-on-container-linux).
+- Сведения о настройке CI/CD с **Azure pipelines** см. в статье [развертывание контейнера веб-приложения Azure из Azure pipelines](/azure/devops/pipelines/targets/webapp-on-container-linux).
 
 > [!NOTE]
 > Для Docker Compose приложения выберите **Реестр контейнеров**.

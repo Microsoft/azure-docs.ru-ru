@@ -11,12 +11,12 @@ author: NilsPohlmann
 ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
-ms.openlocfilehash: 188df9564905443b8f975eb743b24885b5d03c32
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 38fd5b779c3a8ae71c2e4fafcaf65921b1be3f93
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102618208"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642266"
 ---
 # <a name="create-and-run-machine-learning-pipelines-with-azure-machine-learning-sdk"></a>Создание и запуск конвейеров машинного обучения с помощью пакета SDK для Машинное обучение Azure
 
@@ -89,7 +89,7 @@ from azureml.core import Dataset
 my_dataset = Dataset.File.from_files([(def_blob_store, 'train-images/')])
 ```
 
-Промежуточные данные (или выходные данные шага) представлены объектом [аутпутфиледатасетконфиг](/python/api/azureml-pipeline-core/azureml.data.output_dataset_config.outputfiledatasetconfig) . `output_data1` создается в качестве выходных данных шага. При необходимости эти данные можно зарегистрировать в качестве набора данных, вызвав `register_on_complete` . Если вы создаете `OutputFileDatasetConfig` на одном шаге и используете его в качестве входных данных для другого шага, зависимость данных между шагами создает неявный порядок выполнения в конвейере.
+Промежуточные данные (или выходные данные шага) представлены объектом [аутпутфиледатасетконфиг](/python/api/azureml-core/azureml.data.output_dataset_config.outputfiledatasetconfig) . `output_data1` создается в качестве выходных данных шага. При необходимости эти данные можно зарегистрировать в качестве набора данных, вызвав `register_on_complete` . Если вы создаете `OutputFileDatasetConfig` на одном шаге и используете его в качестве входных данных для другого шага, зависимость данных между шагами создает неявный порядок выполнения в конвейере.
 
 `OutputFileDatasetConfig` объекты возвращают каталог, а по умолчанию записывают выходные данные в хранилище данных по умолчанию рабочей области.
 
@@ -106,7 +106,7 @@ output_data_dataset = output_data1.register_on_complete(name = 'prepared_output_
 > Следует либо программно удалить промежуточные данные в конце выполнения конвейера, либо хранилище данных с короткой политикой хранения, либо регулярно выполнять очистку вручную.
 
 > [!TIP]
-> Отправляйте только файлы, относящиеся к заданию. Любые изменения в файлах в каталоге данных будут рассматриваться как причины для повторного выполнения шага при следующем запуске конвейера, даже если указано повторное использование. 
+> Отправляйте только файлы, относящиеся к заданию. Любые изменения в файлах в каталоге данных будут рассматриваться как основание для повторного выполнения шага при следующем запуске конвейера, даже если указано повторное использование. 
 
 ## <a name="set-up-a-compute-target"></a>Настройка целевой среды для вычислений
 
@@ -247,7 +247,7 @@ pipeline1 = Pipeline(workspace=ws, steps=[compare_models])
 
 ### <a name="use-a-dataset"></a>Использование набора данных 
 
-Наборы данных, созданные из хранилища BLOB-объектов Azure, службы "файлы Azure", Azure Data Lake Storage 1-го поколения, Azure Data Lake Storage 2-го поколения, базу Azure SQL и базу данных Azure для PostgreSQL, можно использовать в качестве входных данных для любого этапа конвейера. Вы можете записывать выходные данные в [дататрансферстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.datatransferstep), [датабрикксстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.databricks_step.databricksstep)или, если вы хотите записать данные в определенное хранилище данных, используя [аутпутфиледатасетконфиг](/python/api/azureml-pipeline-core/azureml.data.outputfiledatasetconfig). 
+Наборы данных, созданные из хранилища BLOB-объектов Azure, службы "файлы Azure", Azure Data Lake Storage 1-го поколения, Azure Data Lake Storage 2-го поколения, базу Azure SQL и базу данных Azure для PostgreSQL, можно использовать в качестве входных данных для любого этапа конвейера. Вы можете записывать выходные данные в [дататрансферстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.datatransferstep), [датабрикксстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.databricks_step.databricksstep)или, если вы хотите записать данные в определенное хранилище данных, используя [аутпутфиледатасетконфиг](/python/api/azureml-core/azureml.data.outputfiledatasetconfig). 
 
 > [!IMPORTANT]
 > Записывать выходные данные обратно в хранилище данных с помощью `OutputFileDatasetConfig` поддерживается только для больших двоичных объектов Azure, файловых ресурсов Azure, ADLS Gen 1 и Gen 2. 
@@ -374,7 +374,7 @@ aml_run_config.environment.version = '1.0'
 
 При выполнении запуска обучения, в котором исходный каталог является локальным репозиторием Git, сведения о репозитории хранятся в журнале выполнения. Дополнительные сведения см. в статье [Интеграция с Git для Машинного обучения Azure](concept-train-model-git-integration.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - Сведения о том, как поделиться конвейером с коллегами или клиентами, см. в статье [Публикация конвейеров машинного обучения](how-to-deploy-pipelines.md) .
 - Используйте [эти записные книжки Jupyter на сайте GitHub](https://aka.ms/aml-pipeline-readme) для дальнейшей изучения конвейеров машинного обучения

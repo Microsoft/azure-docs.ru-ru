@@ -13,12 +13,12 @@ ms.devlang: ne
 ms.topic: conceptual
 ms.date: 10/23/2020
 ms.author: inhenkel
-ms.openlocfilehash: 1ef49b66e6bba7c829abd35f6c8cc4169a2c14a0
-ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
+ms.openlocfilehash: 0eff5b13a79f64de1863e82a2c9285788accf6fc
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105625302"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641527"
 ---
 # <a name="live-events-and-live-outputs-in-media-services"></a>События и выходные данные прямой трансляции в Службах мультимедиа
 
@@ -225,14 +225,6 @@ ms.locfileid: "105625302"
 
 Подробные сведения о динамических выходных данных см. в разделе [Использование DVR для облака](live-event-cloud-dvr.md).
 
-## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
+## <a name="live-event-output-questions"></a>Вопросы о выходных событиях в реальном времени
 
-См. статью с [часто задаваемыми вопросами](frequently-asked-questions.md#live-streaming) .
-
-## <a name="ask-questions-and-get-updates"></a>Задавайте вопросы и получайте обновления
-
-Прочитайте статью [сообщества Служб мультимедиа Azure](media-services-community.md), чтобы узнать, как задавать вопросы, оставлять отзывы и получать новости о Службах мультимедиа.
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-[Руководство по потоковой трансляции](stream-live-tutorial-with-api.md)
+См. статью о [выходных данных событий Live](questions-collection.md#live-streaming) .

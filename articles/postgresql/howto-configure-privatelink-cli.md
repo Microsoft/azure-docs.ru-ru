@@ -7,12 +7,12 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 01/09/2020
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: b8aaebdd37f835201ef549e3f97e0c0b657e4fe9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3452bfee1e9228926bb687d1b9dc7fb26dfff85a
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96020132"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642184"
 ---
 # <a name="create-and-manage-private-link-for-azure-database-for-postgresql---single-server-using-cli"></a>Создание и управление частной связью для базы данных Azure для PostgreSQL — одиночный сервер с помощью интерфейса командной строки
 
@@ -171,7 +171,7 @@ az network private-dns record-set a add-record --record-set-name myserver --zone
    Address:  10.1.3.4
    ```
 
-3. Проверьте подключение к частной ссылке для сервера PostgreSQL, используя любой доступный клиент. В следующем примере для выполнения операции используется [Azure Data Studio](/sql/azure-data-studio/download?view=sql-server-ver15&preserve-view=true) .
+3. Проверьте подключение к частной ссылке для сервера PostgreSQL, используя любой доступный клиент. В следующем примере для выполнения операции используется [Azure Data Studio](/sql/azure-data-studio/download) .
 
 4. В окне **новое подключение** введите или выберите следующие сведения:
 

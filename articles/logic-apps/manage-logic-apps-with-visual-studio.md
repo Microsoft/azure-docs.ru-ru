@@ -7,12 +7,12 @@ ms.reviewer: estfan, jonfan, logicappspm
 ms.topic: article
 ms.custom: mvc
 ms.date: 04/29/2020
-ms.openlocfilehash: cde8db5310e3ede2721ba327b28c789ccd0b7dd0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 56b74e440fcb09ab206bbb069517dd756221f809
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "87280772"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105639557"
 ---
 # <a name="manage-logic-apps-with-visual-studio"></a>Управление приложениями логики в Visual Studio
 
@@ -37,7 +37,7 @@ ms.locfileid: "87280772"
     > При установке Visual Studio 2019 или 2017 обязательно выберите рабочую нагрузку **разработки Azure**.
     > Дополнительные сведения см. [в разделе Управление ресурсами, связанными с учетными записями Azure в Visual Studio Cloud Explorer](/visualstudio/azure/vs-azure-tools-resources-managing-with-cloud-explorer).
 
-    Чтобы установить Cloud Explorer для Visual Studio 2015, [скачайте Cloud Explorer из Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MicrosoftCloudExplorer.CloudExplorerforVisualStudio2015). Дополнительные сведения см. [в статье Управление ресурсами, связанными с учетными записями Azure в Visual Studio Cloud Explorer (2015)](/visualstudio/azure/vs-azure-tools-resources-managing-with-cloud-explorer?view=vs-2015).
+    Чтобы установить Cloud Explorer для Visual Studio 2015, [скачайте Cloud Explorer из Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MicrosoftCloudExplorer.CloudExplorerforVisualStudio2015). Дополнительные сведения см. [в статье Управление ресурсами, связанными с учетными записями Azure в Visual Studio Cloud Explorer (2015)](/visualstudio/azure/vs-azure-tools-resources-managing-with-cloud-explorer?view=vs-2015&preserve-view=true).
 
   * [Пакет SDK для Azure (2.9.1 или более поздней версии)](https://azure.microsoft.com/downloads/)
 
@@ -275,7 +275,7 @@ ms.locfileid: "87280772"
 
 * Чтобы удалить ранее выбранные подписки для *всех* приложений логики в решении, удалите скрытую папку параметров Visual Studio (VS) в каталоге решения. Это расположение хранит сведения о подписке.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Из этой статьи вы узнали, как управлять развернутыми приложениями логики в Visual Studio. Теперь ознакомьтесь с настройкой определений приложения логики для развертывания:
 

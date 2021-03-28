@@ -11,12 +11,12 @@ ms.reviewer: luquinta
 ms.date: 11/16/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, responsible-ml
-ms.openlocfilehash: 322b036fee840db58ed610795155af6c9e1320cc
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 70ad5d6d88dabb51e022a1fc5c011341b06f02fd
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100366987"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640683"
 ---
 # <a name="use-azure-machine-learning-with-the-fairlearn-open-source-package-to-assess-the-fairness-of-ml-models-preview"></a>Использование Машинное обучение Azure с пакетом с открытым исходным кодом Фаирлеарн для оценки распределения моделей машинного обучения (Предварительная версия)
 
@@ -31,7 +31,7 @@ ms.locfileid: "100366987"
 
 ## <a name="azure-machine-learning-fairness-sdk"></a>Пакет SDK для Машинное обучение Azure равноправия 
 
-Пакет SDK для Машинное обучение Azure равноправии `azureml-contrib-fairness` интегрирует пакет Python с открытым кодом ( [фаирлеарн](http://fairlearn.github.io)) в машинное обучение Azure. Чтобы узнать больше об интеграции Фаирлеарн в Машинное обучение Azure, ознакомьтесь с этими [примерами записных книжек](https://github.com/Azure/MachineLearningNotebooks/tree/master/contrib/fairness). Дополнительные сведения о Фаирлеарн см. в [примере руководств](https://fairlearn.github.io/master/auto_examples/) и [примерах записных книжек](https://github.com/fairlearn/fairlearn/tree/master/notebooks). 
+Пакет SDK для Машинное обучение Azure равноправии `azureml-contrib-fairness` интегрирует пакет Python с открытым кодом ( [фаирлеарн](http://fairlearn.github.io)) в машинное обучение Azure. Чтобы узнать больше об интеграции Фаирлеарн в Машинное обучение Azure, ознакомьтесь с этими [примерами записных книжек](https://github.com/Azure/MachineLearningNotebooks/tree/master/contrib/fairness). Дополнительные сведения о Фаирлеарн см. в [примере руководств](https://fairlearn.org/v0.6.0/auto_examples/) и [примерах записных книжек](https://github.com/fairlearn/fairlearn/tree/master/notebooks). 
 
 Для установки пакетов и используйте следующие команды `azureml-contrib-fairness` `fairlearn` :
 ```bash
@@ -227,7 +227,7 @@ pip install fairlearn==0.4.6
     1. Если вы зарегистрировали исходную модель, выполнив описанные выше действия, можно выбрать **модели** на левой панели, чтобы просмотреть их.
     1. Выберите модель, а затем вкладку **равноправие** , чтобы просмотреть панель мониторинга визуализации пояснения.
 
-    Дополнительные сведения о панели мониторинга визуализации и содержащихся в ней элементах см. в статье о [пользователе](https://fairlearn.github.io/master/user_guide/assessment.html#fairlearn-dashboard)фаирлеарн.
+    Дополнительные сведения о панели мониторинга визуализации и содержащихся в ней элементах см. в статье о [пользователе](https://fairlearn.org/v0.6.0/user_guide/assessment.html#fairlearn-dashboard)фаирлеарн.
 
 ## <a name="upload-fairness-insights-for-multiple-models"></a>Передача сведений об равноправии для нескольких моделей
 
@@ -338,9 +338,9 @@ pip install fairlearn==0.4.6
 
 ## <a name="upload-unmitigated-and-mitigated-fairness-insights"></a>Отправка нерешенных и сниженных ценных сведений об равноправии
 
-Вы можете использовать [алгоритмы защиты](https://fairlearn.github.io/master/user_guide/mitigation.html)фаирлеарн, сравнить созданные по снижению модели с исходными неминимизированными моделями и перемещаться по компромиссам производительности и равноправию между сравниваемыми моделями.
+Вы можете использовать [алгоритмы защиты](https://fairlearn.org/v0.6.0/user_guide/mitigation.html)фаирлеарн, сравнить созданные по снижению модели с исходными неминимизированными моделями и перемещаться по компромиссам производительности и равноправию между сравниваемыми моделями.
 
-Пример, демонстрирующий использование алгоритма устранения рисков [поиска в сетке](https://fairlearn.github.io/master/user_guide/mitigation.html#grid-search) (который создает коллекцию проблемных моделей с разными компромиссами и обделами производительности), см. в этом [примере записной книжки](https://github.com/Azure/MachineLearningNotebooks/blob/master/contrib/fairness/fairlearn-azureml-mitigation.ipynb). 
+Пример, демонстрирующий использование алгоритма устранения рисков [поиска в сетке](https://fairlearn.org/v0.6.0/user_guide/mitigation.html#grid-search) (который создает коллекцию проблемных моделей с разными компромиссами и обделами производительности), см. в этом [примере записной книжки](https://github.com/Azure/MachineLearningNotebooks/blob/master/contrib/fairness/fairlearn-azureml-mitigation.ipynb). 
 
 Загрузка нескольких моделей "равноправие аналитики" в одном запуске позволяет сравнивать модели по отношению к равномерности и производительности. Можно щелкнуть любую из моделей, отображаемых на диаграмме сравнения моделей, чтобы просмотреть подробные сведения об равноправии конкретной модели.
 
@@ -348,7 +348,7 @@ pip install fairlearn==0.4.6
 [![Панель мониторинга Фаирлеарн для сравнения моделей](./media/how-to-machine-learning-fairness-aml/multi-model-dashboard.png)](./media/how-to-machine-learning-fairness-aml/multi-model-dashboard.png#lightbox)
     
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 [Дополнительные сведения о равномерном использовании модели](concept-fairness-ml.md)
 

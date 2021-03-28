@@ -7,12 +7,12 @@ ms.author: sujie
 ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 09/10/2020
-ms.openlocfilehash: dbd6a1a0c8643adc4918cc15e214e903dfb1ccb6
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.openlocfilehash: 82a2c3047f851c9fbc273cd13e730572c38b6bcd
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104775941"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640379"
 ---
 # <a name="use-azure-devops-to-create-a-cicd-pipeline-for-a-stream-analytics-job"></a>Создание конвейера CI/CD для Stream Analytics задания с помощью Azure DevOps
 
@@ -26,21 +26,21 @@ ms.locfileid: "104775941"
 
 ## <a name="create-a-build-pipeline"></a>Создание конвейера сборки
 
-В этом разделе вы узнаете, как создать конвейер сборки. Вы можете ссылаться на этот пример [автоматического создания и тестирования конвейера](https://dev.azure.com/ASA-CICD-sample/azure-streamanalytics-cicd-demo/_build) в Azure DevOps.
+В этом разделе вы узнаете, как создать конвейер сборки. 
 
 1. Откройте веб-браузер и перейдите к своему проекту в Azure DevOps.  
 
-1. В разделе **конвейеры** в меню навигации слева выберите **сборки**. Затем выберите **создать конвейер**.
+2. В разделе **конвейеры** в меню навигации слева выберите **сборки**. Затем выберите **создать конвейер**.
 
    :::image type="content" source="media/set-up-cicd-pipeline/new-pipeline.png" alt-text="Создание нового конвейера Azure":::
 
-1. Выберите **использовать классический редактор** для создания конвейера без YAML.
+3. Выберите **использовать классический редактор** для создания конвейера без YAML.
 
-1. Выберите тип источника, командный проект и репозиторий. Затем выберите **продолжить**.
+4. Выберите тип источника, командный проект и репозиторий. Затем выберите **продолжить**.
 
    :::image type="content" source="media/set-up-cicd-pipeline/select-repo.png" alt-text="Выбор проекта Azure Stream Analytics":::
 
-1. На странице **Выбор шаблона** выберите **пустое задание**.
+5. На странице **Выбор шаблона** выберите **пустое задание**.
 
 ## <a name="install-npm-package"></a>Установка пакета npm
 
@@ -155,7 +155,7 @@ ms.locfileid: "104775941"
 
 ## <a name="release-with-azure-pipelines"></a>Выпуск с Azure Pipelines
 
-В этом разделе вы узнаете, как создать конвейер выпуска. Вы можете ссылаться на этот пример [конвейера выпуска](https://dev.azure.com/ASA-CICD-sample/azure-streamanalytics-cicd-demo/_release?_a=releases&view=mine&definitionId=2) в Azure DevOps.
+В этом разделе вы узнаете, как создать конвейер выпуска. 
 
 Откройте веб-браузер и перейдите к Azure Stream Analytics Visual Studio Code проекта.
 
@@ -213,7 +213,7 @@ ms.locfileid: "104775941"
 
 :::image type="content" source="media/set-up-cicd-pipeline/create-release.png" alt-text="Создание выпуска с помощью Azure Pipelines":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Непрерывная интеграция и непрерывное развертывание для Azure Stream Analytics](cicd-overview.md)
 * [Автоматизация сборки, тестирования и развертывания задания Azure Stream Analytics с помощью средств CI/CD](cicd-tools.md)

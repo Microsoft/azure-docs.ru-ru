@@ -8,12 +8,12 @@ ms.author: vikurpad
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 01/28/2021
-ms.openlocfilehash: ccee8537c2543b67c1bb60711737ec761ebc8cbf
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 4fdc222fa20aef6639bf6d5d485f7dcf6b6ca535
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105043076"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641147"
 ---
 # <a name="efficiently-scale-out-a-custom-skill"></a>Эффективное масштабирование пользовательского навыка
 
@@ -22,11 +22,11 @@ ms.locfileid: "105043076"
 * Веб-приложения Azure для простых контейнерных навыков AI
 * Служба Kubernetes Azure для более сложных и крупных навыков.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 + Изучите [Пользовательский интерфейс навыка](cognitive-search-custom-skill-interface.md) , чтобы получить представление о интерфейсе ввода-вывода, который должен быть реализован в пользовательском навыке.
 
-+ Настройте среду. Вы можете начать с [этого руководства](/python/tutorial-vs-code-serverless-python-01) , чтобы настроить бессерверную функцию Azure с помощью расширений Visual Studio Code и Python.
++ Настройте среду. Вы можете начать с [этого руководства](/azure/azure-functions/create-first-function-vs-code-python) , чтобы настроить бессерверную функцию Azure с помощью расширений Visual Studio Code и Python.
 
 ## <a name="skillset-configuration"></a>Настройка набора навыков
 

@@ -11,12 +11,12 @@ ms.workload: identity
 ms.subservice: fundamentals
 ms.date: 10/31/2019
 ms.author: martinco
-ms.openlocfilehash: 90e215ea445c8c700e351149e9c7a91d9a595252
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 0d425111e151d60ab38a60e38cd1805cef39f606
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96859527"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641776"
 ---
 # <a name="azure-active-directory-authentication-management-operations-reference-guide"></a>Справочник по операциям управления аутентификацией Azure Active Directory
 
@@ -365,14 +365,14 @@ Microsoft Intune управления приложениями (MAM) предо�
 
 #### <a name="logs-recommended-reading"></a>Рекомендуемые для чтения журналы
 
-- [Справочник по API аудита Azure Active Directory](/graph/api/resources/directoryaudit?view=graph-rest-beta%3fview%3dgraph-rest-beta)
-- [Справочник по API отчета о действиях при входе Azure Active Directory](/graph/api/resources/signin?view=graph-rest-beta%3fview%3dgraph-rest-beta)
+- [Справочник по API аудита Azure Active Directory](/graph/api/resources/directoryaudit?view=graph-rest-beta)
+- [Справочник по API отчета о действиях при входе Azure Active Directory](/graph/api/resources/signin?view=graph-rest-beta)
 - [Получение данных, используя API отчетов Azure AD с сертификатами](../reports-monitoring/tutorial-access-api-with-certificates.md)
 - [Microsoft Graph для Защита идентификации Azure Active Directory](../identity-protection/howto-identity-protection-graph-api.md)
 - [Справочник по API действия управления Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)
 - [Использование пакета содержимого Azure Active Directory Power BI](../reports-monitoring/howto-use-azure-monitor-workbooks.md)
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 Существует 12 аспектов безопасной инфраструктуры идентификации. Этот список поможет вам дополнительно защитить учетные данные и управлять ими, определять возможности проверки подлинности, назначения делегатов, измерения использования и определять политики доступа на основе уровня безопасности предприятия.
 
@@ -389,6 +389,6 @@ Microsoft Intune управления приложениями (MAM) предо�
 - Блокировка параметров пользователя и группы.
 - Включите долгосрочное хранение журналов Azure AD для устранения неполадок, анализа использования и расследований.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Приступая к работе с [операционными проверками и действиями системы управления удостоверениями](active-directory-ops-guide-govern.md).

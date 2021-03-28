@@ -3,14 +3,14 @@ title: CreateUiDefinition.jsна панели "файл" для портала
 description: Описывает создание определений пользовательского интерфейса для портал Azure. Используется при определении управляемых приложений Azure.
 author: tfitzmac
 ms.topic: conceptual
-ms.date: 07/14/2020
+ms.date: 03/26/2021
 ms.author: tomfitz
-ms.openlocfilehash: 327fa1d7eb73d8e65bb4f81c1dff0fe2bec2913b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 586237c6dd909312780163cf316220d2f3fddd8c
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89319579"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105641659"
 ---
 # <a name="createuidefinitionjson-for-azure-managed-applications-create-experience"></a>Использование файла CreateUiDefinition.json для создания управляемого приложения Azure
 
@@ -63,25 +63,29 @@ ms.locfileid: "89319579"
             "constraints": {
                 "validations": [
                     {
-                        "isValid": "[expression for checking]",
-                        "message": "Please select a valid subscription."
+                        "isValid": "[not(contains(subscription().displayName, 'Test'))]",
+                        "message": "Can't use test subscription."
                     },
                     {
-                        "permission": "<Resource Provider>/<Action>",
-                        "message": "Must have correct permission to complete this step."
+                        "permission": "Microsoft.Compute/virtualmachines/write",
+                        "message": "Must have write permission for the virtual machine."
+                    },
+                    {
+                        "permission": "Microsoft.Compute/virtualMachines/extensions/write",
+                        "message": "Must have write permission for the extension."
                     }
                 ]
             },
             "resourceProviders": [
-                "<Resource Provider>"
+                "Microsoft.Compute"
             ]
         },
         "resourceGroup": {
             "constraints": {
                 "validations": [
                     {
-                        "isValid": "[expression for checking]",
-                        "message": "Please select a valid resource group."
+                        "isValid": "[not(contains(resourceGroup().name, 'test'))]",
+                        "message": "Resource group name can't contain 'test'."
                     }
                 ]
             },
@@ -103,11 +107,13 @@ ms.locfileid: "89319579"
 },
 ```
 
+Для `isValid` Свойства напишите выражение, которое разрешается как true или false. Для `permission` Свойства укажите одно из [действий поставщика ресурсов](../../role-based-access-control/resource-provider-operations.md).
+
 ### <a name="wizard"></a>Мастер
 
 `isWizard`Свойство позволяет потребовать успешного выполнения проверки каждого шага перед переходом к следующему шагу. Если `isWizard` свойство не задано, по умолчанию используется **значение false**, а пошаговая проверка не требуется.
 
-Если параметр `isWizard` включен, установите значение **true**, вкладка « **основные** » доступна, а все остальные вкладки будут отключены. Когда кнопка **Далее** выбрана, значок вкладки указывает, пройдена ли проверка вкладки. После заполнения обязательных полей на вкладке и проверки кнопки **Далее** можно переходить на следующую вкладку. Когда все вкладки проходят проверку, можно перейти на страницу **Проверка и создание** и нажать кнопку **создать** , чтобы начать развертывание.
+Если параметр `isWizard` включен, установите значение **true**, вкладка « **основные** » доступна, а все остальные вкладки будут отключены. Когда кнопка **Далее** выбрана, значок вкладки указывает, пройдена ли проверка вкладки. После завершения и проверки обязательных полей на вкладке Кнопка **Далее** позволяет переходить на следующую вкладку. Когда все вкладки проходят проверку, можно перейти на страницу **Проверка и создание** и нажать кнопку **создать** , чтобы начать развертывание.
 
 :::image type="content" source="./media/create-uidefinition-overview/tab-wizard.png" alt-text="Мастер вкладок":::
 
@@ -150,7 +156,7 @@ ms.locfileid: "89319579"
 
 ## <a name="steps"></a>Шаги
 
-Свойство шаги содержит ноль или более дополнительных шагов, отображаемых после основ. Каждый шаг содержит один или несколько элементов. Вы можете добавить действия для каждой роли или уровня развертываемого приложения. Например, добавьте шаг для входных данных главного узла и шаг для рабочих узлов в кластере.
+Свойство шаги содержит ноль или более шагов, которые должны отображаться после основ. Каждый шаг содержит один или несколько элементов. Вы можете добавить действия для каждой роли или уровня развертываемого приложения. Например, добавьте шаг для входных данных первичного узла и шаг для рабочих узлов в кластере.
 
 ```json
 "steps": [
@@ -199,7 +205,7 @@ ms.locfileid: "89319579"
 
 CreateUiDefinition предоставляет [функции](create-uidefinition-functions.md) для работы с входными и выходными элементами элементов, а также такими функциями, как условия. Эти функции похожи как в синтаксисе, так и в функциональности для Azure Resource Manager функций шаблонов.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Файл createUiDefinition.json имеет простую схему. Его реальные возможности основаны на поддерживаемых элементах и функциях. Эти элементы более подробно описаны здесь:
 
