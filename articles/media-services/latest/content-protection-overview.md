@@ -14,12 +14,12 @@ ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: seodec18, devx-track-csharp
-ms.openlocfilehash: 7402172473056f191c2c50fa8aa8bd99d4e948eb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 880185a33ec16ffc30d6412d3f27a69ce81a7880
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101095928"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642161"
 ---
 # <a name="protect-your-content-with-media-services-dynamic-encryption"></a>Защита содержимого с помощью динамического шифрования служб мультимедиа
 
@@ -166,7 +166,7 @@ HLS/КМАФ + FairPlay (включая HEVC/H. 265) поддерживаетс�
 
 Общие браузеры поддерживают следующие клиенты DRM:
 
-|Браузер|Encryption|
+|Браузер|Шифрование|
 |---|---|
 |Chrome|Widevine|
 |Microsoft ребро, Internet Explorer 11|PlayReady|
@@ -256,7 +256,7 @@ streamingPolicy.EnvelopEncryption.customKeyAcquisitionUrlTemplate = "https://myk
 > [!NOTE]
 > Widevine — это служба, которая предоставляется компанией Google Inc. и подпадает под условия предоставления услуг и политику конфиденциальности Google Inc.
 
-## <a name="troubleshoot"></a>Диагностика
+## <a name="troubleshoot"></a>Устранение неполадок
 
 Если возникает `MPE_ENC_ENCRYPTION_NOT_SET_IN_DELIVERY_POLICY` ошибка, убедитесь, что указана соответствующая политика потоковой передачи.
 
@@ -265,12 +265,3 @@ streamingPolicy.EnvelopEncryption.customKeyAcquisitionUrlTemplate = "https://myk
 ## <a name="ask-questions-give-feedback-get-updates"></a>Получение справки, отправка отзывов, получение обновлений
 
 Прочитайте статью [сообщества Служб мультимедиа Azure](media-services-community.md), чтобы узнать, как задавать вопросы, оставлять отзывы и получать новости о Службах мультимедиа.
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-* [Использование динамического шифрования AES-128 и службы доставки ключей](protect-with-aes128.md)
-* [Защита с помощью DRM](protect-with-drm.md)
-* [Разработка системы защиты содержимого с несколькими DRM с помощью контроля доступа](design-multi-drm-system-with-access-control.md)
-* [Шифрование на стороне хранилища](storage-account-concept.md#storage-side-encryption)
-* [Часто задаваемые вопросы по Аналитике компьютеров](frequently-asked-questions.md)
-* [Обработчик веб-токенов JSON](/dotnet/framework/security/json-web-token-handler)

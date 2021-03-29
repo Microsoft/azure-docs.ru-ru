@@ -12,12 +12,12 @@ author: MayMSFT
 manager: cgronlun
 ms.reviewer: nibaccam
 ms.date: 07/31/2020
-ms.openlocfilehash: 54b1fd14f97855dd42afde9a4bb34795373ff229
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 81779d942b31f940d579de623ecb39c35d3a8b14
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103417643"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105642146"
 ---
 # <a name="create-azure-machine-learning-datasets"></a>Создание наборов данных Машинного обучения Azure
 
@@ -35,7 +35,7 @@ ms.locfileid: "103417643"
 
 * Совместное использование данных и совместная работа с другими пользователями.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для создания наборов данных и работы с ними требуется:
 
@@ -52,7 +52,7 @@ ms.locfileid: "103417643"
     * Поработайте с собственной записной книжкой Jupyter и установите пакет SDK самостоятельно с помощью [этих инструкций](/python/api/overview/azure/ml/install).
 
 > [!NOTE]
-> Некоторые классы наборов данных имеют зависимости от пакета [azureml-](/python/api/azureml-dataprep/) DataMarket, который совместим только с 64-разрядным Python. Для пользователей Linux эти классы поддерживаются только в следующих дистрибутивах: Red Hat Enterprise Linux (7, 8), Ubuntu (14,04, 16,04, 18,04), Fedora (27, 28), Debian (8, 9) и CentOS (7). Если вы используете неподдерживаемый дистрибутивов, воспользуйтесь [этим руководством](/dotnet/core/install/linux) , чтобы установить .net Core 2,1, чтобы продолжить. 
+> Некоторые классы наборов данных имеют зависимости от пакета [azureml-](https://pypi.org/project/azureml-dataprep/) DataMarket, который совместим только с 64-разрядным Python. Для пользователей Linux эти классы поддерживаются только в следующих дистрибутивах: Red Hat Enterprise Linux (7, 8), Ubuntu (14,04, 16,04, 18,04), Fedora (27, 28), Debian (8, 9) и CentOS (7). Если вы используете неподдерживаемый дистрибутивов, воспользуйтесь [этим руководством](/dotnet/core/install/linux) , чтобы установить .net Core 2,1, чтобы продолжить. 
 
 ## <a name="compute-size-guidance"></a>Руководство по размеру вычислений
 
@@ -178,7 +178,7 @@ titanic_ds.take(3).to_pandas_dataframe()
 -|-----------|--------|------|----|---|---|-----|-----|------|----|-----|--------|
 0|1|False|3|Браунд, Mr. О'мэлли Owen Харрис|Мужской|22,0|1|0|A/5 21171|7,2500||S
 1|2|True|1|Кумингс, Mrs. Джон Кирилл (Флоренция Бриггс TH...|Женский|38,0|1|0|PC 17599|71,2833|C85|C
-2|3|Верно|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
+2|3|True|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
 
 Чтобы повторно использовать наборы данных и обмениваться ими между экспериментами в рабочей области, [зарегистрируйте свой DataSet](#register-datasets).
 
@@ -258,7 +258,7 @@ titanic_ds.take(3).to_pandas_dataframe()
 -|-----------|--------|------|----|---|---|-----|-----|------|----|-----|--------|
 0|1|False|3|Браунд, Mr. О'мэлли Owen Харрис|Мужской|22,0|1|0|A/5 21171|7,2500||S
 1|2|True|1|Кумингс, Mrs. Джон Кирилл (Флоренция Бриггс TH...|Женский|38,0|1|0|PC 17599|71,2833|C85|C
-2|3|Верно|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
+2|3|True|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
 
 ## <a name="create-a-dataset-from-pandas-dataframe"></a>Создание набора данных на основе Pandas
 
@@ -338,7 +338,7 @@ titanic_ds = titanic_ds.register(workspace = workspace,
                                  create_new_version = True)
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Узнайте, [как обучаться с помощью наборов данных](how-to-train-with-datasets.md).
 * Используйте автоматическое машинное обучение для [обучения с табулардатасетс](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/forecasting-energy-demand/auto-ml-forecasting-energy-demand.ipynb).

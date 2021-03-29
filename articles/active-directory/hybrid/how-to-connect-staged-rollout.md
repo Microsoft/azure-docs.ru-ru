@@ -10,12 +10,12 @@ ms.date: 06/03/2020
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2038587aebe8fe98bd1adcccef6b895ec7370656
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 5c7f3de20ea3e86e3b56dc71d698354f7eaf782d
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102176864"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709724"
 ---
 # <a name="migrate-to-cloud-authentication-using-staged-rollout-preview"></a>Переход на облачную проверку подлинности с использованием промежуточного развертывания (предварительная версия)
 
@@ -98,7 +98,7 @@ ms.locfileid: "102176864"
 
 Чтобы проверить *синхронизацию хэша паролей* данных для входа с помощью промежуточного развертывания, выполните инструкции для предварительной подготовки, приведенные в следующем разделе.
 
-Сведения о том, какие командлеты PowerShell следует использовать, см. в статье [AzureADPreview](/powershell/module/azuread/?view=azureadps-2.0-preview#staged_rollout).
+Сведения о том, какие командлеты PowerShell следует использовать, см. в статье [AzureADPreview](/powershell/module/azuread/?view=azureadps-2.0-preview&preserve-view=true#staged_rollout).
 
 ## <a name="pre-work-for-password-hash-sync"></a>Предварительная подготовка для синхронизации хэша паролей
 
@@ -251,9 +251,9 @@ A. Да, эту функцию можно использовать в рабоч
 
 **Вопрос. Можно ли использовать PowerShell для выполнения промежуточного развертывания?**
 
-A. Да. Сведения об использовании PowerShell для выполнения промежуточного развертывания см. в статье [AzureADPreview](/powershell/module/azuread/?view=azureadps-2.0-preview#staged_rollout).
+A. Да. Сведения об использовании PowerShell для выполнения промежуточного развертывания см. в статье [AzureADPreview](/powershell/module/azuread/?view=azureadps-2.0-preview&preserve-view=true#staged_rollout).
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- [AzureADPreview](/powershell/module/azuread/?view=azureadps-2.0-preview#staged_rollout )
+- [AzureADPreview](/powershell/module/azuread/?view=azureadps-2.0-preview&preserve-view=true#staged_rollout )
 - [Изменение метода входа на синхронизацию хэшей паролей](plan-migrate-adfs-password-hash-sync.md#step-3-change-the-sign-in-method-to-password-hash-synchronization-and-enable-seamless-sso)
 - [Изменение метода входа для сквозной проверки подлинности](plan-migrate-adfs-password-hash-sync.md#step-3-change-the-sign-in-method-to-password-hash-synchronization-and-enable-seamless-sso)

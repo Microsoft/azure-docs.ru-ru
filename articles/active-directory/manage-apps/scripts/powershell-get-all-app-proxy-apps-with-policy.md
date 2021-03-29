@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
-ms.openlocfilehash: 67a521886f5ff7e7e68f82c80004e0cf2649e652
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: c2da1885d975ea6b4daf26714e430143dd89da42
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102565665"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709775"
 ---
 # <a name="get-all-application-proxy-apps-with-a-token-lifetime-policy"></a>Получение всех приложений прокси приложения с политикой срока действия маркеров
 
@@ -40,8 +40,8 @@ ms.locfileid: "102565665"
 |---|---|
 |[Get-AzureADServicePrincipal](/powershell/module/azuread/get-azureadserviceprincipal) | Получает субъект-службу. |
 |[Get-AzureADApplication](/powershell/module/azuread/get-azureadapplication) | Получает приложение Azure AD. |
-|[Get-AzureADPolicy](/powershell/module/azuread/get-azureadpolicy?view=azureadps-2.0-preview) | Получает политику в Azure AD. |
-|[Get-AzureADServicePrincipalPolicy](/powershell/module/azuread/get-azureadserviceprincipalpolicy?view=azureadps-2.0-preview) | Получает политику субъекта-службы в Azure AD. |
+|[Get-AzureADPolicy](/powershell/module/azuread/get-azureadpolicy?view=azureadps-2.0-preview&preserve-view=true) | Получает политику в Azure AD. |
+|[Get-AzureADServicePrincipalPolicy](/powershell/module/azuread/get-azureadserviceprincipalpolicy?view=azureadps-2.0-preview&preserve-view=true) | Получает политику субъекта-службы в Azure AD. |
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

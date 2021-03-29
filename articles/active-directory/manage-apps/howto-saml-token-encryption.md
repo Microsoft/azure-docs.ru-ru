@@ -15,12 +15,12 @@ ms.date: 03/13/2020
 ms.author: kenwith
 ms.reviewer: paulgarn
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32a6034f407bd81e5d2d2ab8227d08a67f034d4c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: af5329f33cc4cbaa3309450165e657fc829c828b
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99258648"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709503"
 ---
 # <a name="how-to-configure-azure-ad-saml-token-encryption"></a>Как настроить шифрование маркеров SAML в Azure AD
 
@@ -55,7 +55,7 @@ ms.locfileid: "99258648"
 
 Вы можете добавить открытый сертификат в конфигурацию вашего приложения на портале Azure.
 
-1. Перейдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Перейдите на [портал Azure](https://portal.azure.com).
 
 1. Перейдите в колонку **Azure Active Directory > Корпоративные приложения** и выберите приложение, для которого необходимо настроить шифрование токенов.
 
@@ -124,7 +124,7 @@ ms.locfileid: "99258648"
 
 1. Используйте последнюю версию модуля Azure AD PowerShell для подключения к вашему клиенту.
 
-1. Задайте параметры шифрования маркеров с помощью команды **[Set-азуреаппликатион](/powershell/module/azuread/set-azureadapplication?view=azureadps-2.0-preview)** .
+1. Задайте параметры шифрования маркеров с помощью команды **[Set-азуреаппликатион](/powershell/module/azuread/set-azureadapplication?view=azureadps-2.0-preview&preserve-view=true)** .
 
     ```
     Set-AzureADApplication -ObjectId <ApplicationObjectId> -KeyCredentials "<KeyCredentialsObject>"  -TokenEncryptionKeyId <keyID>
@@ -217,7 +217,7 @@ ms.locfileid: "99258648"
     }  
     ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Как в Azure AD используется протокол SAML](../develop/active-directory-saml-protocol-reference.md)
 * Узнайте о формате, характеристиках безопасности и содержимом в статье [Справочник по токенам SAML в Azure AD](../develop/reference-saml-tokens.md).

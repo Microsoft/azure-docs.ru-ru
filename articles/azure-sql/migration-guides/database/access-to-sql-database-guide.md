@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.date: 03/19/2021
-ms.openlocfilehash: 48fe734b382d661f96a86ede181a1258e38120a1
-ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
+ms.openlocfilehash: f9fa2426e371ab9fd99e88979cbcbbb34adb00d6
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105626543"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643589"
 ---
 # <a name="migration-guide-access-to-azure-sql-database"></a>Руководство по миграции: доступ к базе данных SQL Azure
 
@@ -171,7 +171,7 @@ ms.locfileid: "105626543"
 | --- | --- |
 | [Модель и средство оценки рабочей нагрузки данных](https://github.com/Microsoft/DataMigrationTeam/tree/master/Data%20Workload%20Assessment%20Model%20and%20Tool) | Предлагаются Рекомендуемые целевые платформы, готовность к облаку и уровни исправления приложений и баз данных для указанных рабочих нагрузок. Он обеспечивает простое, одноразовое вычисление и создание отчетов, которое помогает ускорить оценку больших объемов, предоставляя автоматизированный, единообразный процесс принятия решений на основе целевой платформы. |
 
-Специалисты по разработке данных SQL разработали этот ресурс. Основная Устав команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
+Специалисты по разработке данных SQL разработали эти ресурсы. Основная Устав этой команды заключается в разблокировании и ускорении сложных модернизации для проектов миграции платформы данных на платформу данных Microsoft Azure.
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 

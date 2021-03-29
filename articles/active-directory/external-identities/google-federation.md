@@ -12,12 +12,12 @@ manager: celestedg
 ms.reviewer: mal
 ms.custom: it-pro, seo-update-azuread-jan
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a397c17821d16594ccfb48175a8a141cb9f390b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d2e9acda136654a0dd654eded7b4c17e560fc0aa
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101687827"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709707"
 ---
 # <a name="add-google-as-an-identity-provider-for-b2b-guest-users"></a>Добавление Google в качестве поставщика удостоверений для гостевых пользователей B2B
 
@@ -131,7 +131,7 @@ ms.locfileid: "101687827"
 Теперь вы можете задать идентификатор клиента Google и секрет клиента. Для этого можно использовать портал Azure или PowerShell. Не забудьте проверить конфигурацию Google Federation, выполнив приглашение самостоятельно. Используйте адрес Gmail и попробуйте активировать приглашение с помощью приглашенной учетной записи Google. 
 
 **Настройка Google Federation в портал Azure** 
-1. Перейдите на [портал Microsoft Azure](https://portal.azure.com). В области слева выберите **Azure Active Directory**. 
+1. Перейдите на [портал Azure](https://portal.azure.com). В области слева выберите **Azure Active Directory**. 
 2. Выберите **Внешние удостоверения**.
 3. Выберите **все поставщики удостоверений**, а затем нажмите кнопку **Google** .
 4. Введите идентификатор клиента и секрет клиента, полученные ранее. Выберите **сохранить**: 
@@ -147,13 +147,13 @@ ms.locfileid: "101687827"
    `New-AzureADMSIdentityProvider -Type Google -Name Google -ClientId <client ID> -ClientSecret <client secret>`
  
    > [!NOTE]
-   > Используйте идентификатор клиента и секрет клиента из приложения, созданного на шаге 1: Настройка проекта Google Developer. Дополнительные сведения см. в разделе [New-азуреадмсидентитипровидер](/powershell/module/azuread/new-azureadmsidentityprovider?view=azureadps-2.0-preview). 
+   > Используйте идентификатор клиента и секрет клиента из приложения, созданного на шаге 1: Настройка проекта Google Developer. Дополнительные сведения см. в разделе [New-азуреадмсидентитипровидер](/powershell/module/azuread/new-azureadmsidentityprovider?view=azureadps-2.0-preview&preserve-view=true). 
  
 ## <a name="how-do-i-remove-google-federation"></a>Как удалить федерацию с Google?
 Вы можете удалить настройку федерации с Google. В этом случае пользователи Google Guest, которые уже активировали свои приглашения, не смогут войти в систему. Однако вы можете снова предоставить им доступ к ресурсам, удалив их из каталога и пригласив повторно. 
  
 **Удаление Google Federation на портале Azure AD**
-1. Перейдите на [портал Microsoft Azure](https://portal.azure.com). В области слева выберите **Azure Active Directory**. 
+1. Перейдите на [портал Azure](https://portal.azure.com). В области слева выберите **Azure Active Directory**. 
 2. Выберите **Внешние удостоверения**.
 3. Выберите **Все поставщики удостоверений**.
 4. В строке **Google** нажмите кнопку с многоточием (**...**), а затем выберите **Удалить**. 
@@ -171,4 +171,4 @@ ms.locfileid: "101687827"
     `Remove-AzureADMSIdentityProvider -Id Google-OAUTH`
 
    > [!NOTE]
-   > Дополнительные сведения см. в статье [Remove-AzureADMSIdentityProvider](/powershell/module/azuread/Remove-AzureADMSIdentityProvider?view=azureadps-2.0-preview).
+   > Дополнительные сведения см. в статье [Remove-AzureADMSIdentityProvider](/powershell/module/azuread/Remove-AzureADMSIdentityProvider?view=azureadps-2.0-preview&preserve-view=true).

@@ -1,24 +1,21 @@
 ---
-title: Использование монитора виртуальных рабочих столов Windows Preview — Azure
+title: Использование монитора виртуальных рабочих столов Windows в Azure
 description: Использование Azure Monitor для виртуальных рабочих столов Windows.
 author: Heidilohr
 ms.topic: how-to
-ms.date: 03/25/2020
+ms.date: 03/29/2021
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: 1c87763cb2ca482fc8ee15588d7287f0d9275fff
-ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
+ms.openlocfilehash: 1b93e0c0d61eaa390eda66da2a583a4f429ddd79
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105627172"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709554"
 ---
-# <a name="use-azure-monitor-for-windows-virtual-desktop-to-monitor-your-deployment-preview"></a>Использование Azure Monitor для виртуальных рабочих столов Windows для мониторинга развертывания (Предварительная версия)
+# <a name="use-azure-monitor-for-windows-virtual-desktop-to-monitor-your-deployment"></a>Использование Azure Monitor для виртуальных рабочих столов Windows для мониторинга развертывания
 
->[!IMPORTANT]
->Azure Monitor для виртуальных рабочих столов Windows в настоящее время находится в общедоступной предварительной версии. без соглашений об уровне обслуживания. Мы не рекомендуем использовать ее для выполнения производственных рабочих нагрузок. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
-
-Azure Monitor для виртуальных рабочих столов Windows (Предварительная версия) — это панель мониторинга, основанная на Azure Monitor книгах, которые помогают ИТ-специалистам понять свои среды виртуальных рабочих столов Windows. В этой статье описано, как настроить Azure Monitor для виртуальных рабочих столов Windows для мониторинга сред виртуальных рабочих столов Windows.
+Azure Monitor для виртуальных рабочих столов Windows — это панель мониторинга, основанная на Azure Monitor книгах, которые помогают ИТ-специалистам понять среды виртуальных рабочих столов Windows. В этом разделе описывается настройка Azure Monitor для виртуальных рабочих столов Windows для мониторинга сред виртуальных рабочих столов Windows.
 
 ## <a name="requirements"></a>Требования
 

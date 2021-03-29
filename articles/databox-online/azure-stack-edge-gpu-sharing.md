@@ -8,16 +8,16 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
-ms.openlocfilehash: 6683e39cfa3601b1ae1fbbe02e69e4dc0a54e8e7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ff1c7b79a49b0b659056c89af3c61f28b72ebc50
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103565276"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105645235"
 ---
 # <a name="gpu-sharing-on-your-azure-stack-edge-pro-gpu-device"></a>Совместное использование GPU на устройстве с Azure Stack ребра Pro GPU
 
-Графический процессор (GPU) — это специализированный обработчик, предназначенный для ускорения отрисовки графики. GPU может одновременно обрабатывать много фрагментов данных, что делает их полезными для машинного обучения, редактирования видео и игровых приложений. Помимо ЦП для вычислений общего назначения, устройства GPU Azure Stack пограничных устройств с графическим процессором могут содержать один или два графических процессора NVIDIA Tesla T4 для рабочих нагрузок с большим объемом вычислений, таких как аппаратное ускорение. Дополнительные сведения см. в разделе [GPU Tesla T4 NVIDIA](https://www.nvidia.com/data-center/tesla-t4/).
+Графический процессор (GPU) — это специализированный обработчик, предназначенный для ускорения отрисовки графики. GPU может одновременно обрабатывать много фрагментов данных, что делает их полезными для машинного обучения, редактирования видео и игровых приложений. Помимо ЦП для вычислений общего назначения, устройства GPU Azure Stack пограничных устройств с графическим процессором могут содержать один или два графических процессора NVIDIA Tesla T4 для рабочих нагрузок с большим объемом вычислений, таких как аппаратное ускорение. Дополнительные сведения см. в разделе [GPU Tesla T4 NVIDIA](https://www.nvidia.com/en-us/data-center/tesla-t4/).
 
 
 ## <a name="about-gpu-sharing"></a>Сведения о совместном использовании GPU
@@ -63,7 +63,7 @@ ms.locfileid: "103565276"
 Чтобы просмотреть сведения об использовании GPU, сначала подключитесь к интерфейсу PowerShell устройства. Выполните `Get-HcsNvidiaSmi` команду и просмотрите выходные данные NVIDIA SMI. Вы также можете просмотреть изменения в использовании GPU, включив MPS, а затем развернув несколько рабочих нагрузок на устройстве. Дополнительные сведения см. в разделе [Включение многопроцессной службы](azure-stack-edge-gpu-connect-powershell-interface.md#enable-multi-process-service-mps).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Совместное использование GPU для развертываний Kubernetes на Azure Stack крае Pro](azure-stack-edge-gpu-deploy-kubernetes-gpu-sharing.md).
 - [Совместное использование GPU для развертываний IOT на Azure Stack крае Pro](azure-stack-edge-gpu-deploy-iot-edge-gpu-sharing.md).

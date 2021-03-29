@@ -15,12 +15,12 @@ ms.author: curtand
 ms.reviewer: krbain
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a2a69b5013ab8e1bc4637f21ce484a132d37834
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 0a4ba5a9211cdb89f6ac5a92a315378e58f5d08a
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102455718"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709520"
 ---
 # <a name="configure-the-expiration-policy-for-microsoft-365-groups"></a>Настройка политики срока действия для групп Microsoft 365
 
@@ -92,7 +92,7 @@ ms.locfileid: "102455718"
 > - При удалении и восстановлении динамической группы она рассматривается как новая группа и повторно заполняется в соответствии с правилом. Этот процесс может занять до 24 часов.
 > - Уведомления об истечении срока действия групп, используемых в командах, отображаются в канале владельцев групп.
 
-## <a name="email-notifications"></a>уведомления по электронной почте.
+## <a name="email-notifications"></a>Уведомления по электронной почте
 
 Если группы не обновляются автоматически, уведомления по электронной почте, такие как это сообщение, отправляются Microsoft 365 владельцам групп через 30 дней, 15 дней и 1 день до истечения срока действия группы. Язык электронной почты определяется предпочитаемым языком группы или параметром языка Azure AD. Если владелец группы определил предпочитаемый язык или нескольких владельцев настроили один и тот же предпочитаемый язык, то используется этот язык. Во всех остальных случаях используется параметр языка Azure AD.
 
@@ -172,7 +172,7 @@ ms.locfileid: "102455718"
    Remove-AzureADMSGroupLifecyclePolicy -Id "26fcc232-d1c3-4375-b68d-15c296f1f077"
    ```
   
-Приведенные ниже командлеты можно использовать для более точной настройки политики. Дополнительные сведения см. в [документации по PowerShell](/powershell/module/azuread/?view=azureadps-2.0-preview#groups).
+Приведенные ниже командлеты можно использовать для более точной настройки политики. Дополнительные сведения см. в [документации по PowerShell](/powershell/module/azuread/?view=azureadps-2.0-preview&preserve-view=true#groups).
 
 - Get-AzureADMSGroupLifecyclePolicy
 - New-AzureADMSGroupLifecyclePolicy
@@ -183,7 +183,7 @@ ms.locfileid: "102455718"
 - Reset-AzureADMSLifeCycleGroup
 - Get-AzureADMSLifecyclePolicyGroup
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 В следующих статьях содержатся дополнительные сведения о группах Azure AD.
 

@@ -5,20 +5,17 @@ services: virtual-desktop
 author: Heidilohr
 ms.service: virtual-desktop
 ms.topic: conceptual
-ms.date: 3/25/2020
+ms.date: 03/29/2021
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: 7b824bc13bc4f553d22358b69237173effb51594
-ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
+ms.openlocfilehash: 38f34324a0cda518645f8b9231e08bafbd75cca0
+ms.sourcegitcommit: dae6b628a8d57540263a1f2f1cdb10721ed1470d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105627138"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105709537"
 ---
-# <a name="azure-monitor-for-windows-virtual-desktop-preview-glossary"></a>Azure Monitor для глоссария виртуальных рабочих столов Windows (Предварительная версия)
-
->[!IMPORTANT]
->Azure Monitor для виртуальных рабочих столов Windows в настоящее время находится в общедоступной предварительной версии. без соглашений об уровне обслуживания. Мы не рекомендуем использовать ее для выполнения производственных рабочих нагрузок. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+# <a name="azure-monitor-for-windows-virtual-desktop-glossary"></a>Azure Monitor для глоссария виртуальных рабочих столов Windows
 
 В этой статье приводится краткое описание основных терминов и концепций, связанных с Azure Monitor для виртуальных рабочих столов Windows (Предварительная версия).
 

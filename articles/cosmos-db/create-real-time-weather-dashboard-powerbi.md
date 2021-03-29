@@ -8,12 +8,12 @@ ms.subservice: cosmosdb-sql
 ms.topic: how-to
 ms.date: 09/04/2019
 ms.reviewer: sngun
-ms.openlocfilehash: 07a3deaf67c4f269b01d62ea25ddb212c1e01f6f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 73251fcbe9f149979d3fd62d14bbca86d77027f2
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101657542"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105640134"
 ---
 # <a name="create-a-real-time-dashboard-using-azure-cosmos-db-and-power-bi"></a>Создание панели мониторинга в режиме реального времени с помощью Azure Cosmos DB и Power BI
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -70,9 +70,9 @@ Azure Analysis Services предоставляет полностью управ
    В зависимости от того, какой столбец и тип данных есть в исходном наборе данных, можно соответствующим образом изменить поля RangeStart и RangeEnd
 
    
-   |Свойство  |Тип данных  |Filter  |
+   |Свойство  |Тип данных  |Фильтр  |
    |---------|---------|---------|
-   |_ts     |   Числовой      |  [_ts] > Duration. Тоталсекондс (RangeStart-#datetime (1970, 1, 1, 0, 0, 0)) и [_ts] < Duration. Тоталсекондс (RangeEnd-#datetime (1970, 1, 1, 0, 0, 0)))       |
+   |_ts        |   Числовой      |  [_ts] > Duration. Тоталсекондс (RangeStart-#datetime (1970, 1, 1, 0, 0, 0)) и [_ts] < Duration. Тоталсекондс (RangeEnd-#datetime (1970, 1, 1, 0, 0, 0)))       |
    |Дата (например,-2019-08-19).     |   Строка      | [Document. Date] > DateTime. Тотекст (RangeStart, "гггг-мм-дд") и [Document. Date] < DateTime. Тотекст (RangeEnd, "гггг-мм-дд")        |
    |Дата (например,-2019-08-11 12:00:00).   |  Строка       |  [Document. Date] > DateTime. Тотекст (RangeStart, "гггг-мм-дд чч: мм: СС") и [Document. Date] < DateTime. Тотекст (RangeEnd, "гггг-мм-дд чч: мм: СС")       |
 
@@ -100,7 +100,7 @@ Azure Analysis Services предоставляет полностью управ
 
 1. **Создание нового кластера Azure Analysis Services**  -  [Создайте экземпляр служб Azure Analysis Services](../analysis-services/analysis-services-create-server.md) в том же регионе, что и учетная запись Azure Cosmos и кластер кирпичей.
 
-1. **Создание нового Analysis Services табличного проекта в Visual Studio**  -   [Установите SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017&preserve-view=true) и создайте Analysis Services табличный проект в Visual Studio.
+1. **Создание нового Analysis Services табличного проекта в Visual Studio**  -   [Установите SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) и создайте Analysis Services табличный проект в Visual Studio.
 
    :::image type="content" source="./media/create-real-time-weather-dashboard-powerbi/create-analysis-services-project.png" alt-text="Создание проекта Azure Analysis Services":::
 
@@ -167,7 +167,7 @@ Azure Analysis Services предоставляет полностью управ
 
    :::image type="content" source="./media/create-real-time-weather-dashboard-powerbi/load-data-generate-report.png" alt-text="Загрузка данных и создание отчетов":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * Дополнительные сведения о Power BI см. в статье [Приступая к работе с Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-get-started/).
 
