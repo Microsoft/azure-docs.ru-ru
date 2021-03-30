@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-dt-2019
 ms.date: 02/18/2021
-ms.openlocfilehash: 6f586cacaa983ea1e53b34f602f882c530a9bf28
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 310182a3b46f0682efe420387bba0da311707e8a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101716335"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606605"
 ---
 # <a name="incrementally-load-data-from-azure-sql-database-to-azure-blob-storage-using-the-azure-portal"></a>Пошаговая загрузка данных из Базы данных SQL Azure в Хранилище BLOB-объектов Azure с помощью портала Azure
 
@@ -170,7 +170,7 @@ END
 8. Нажмите кнопку **Создать**.      
 9. Когда завершится создание, откроется страница **Фабрика данных**, как показано на рисунке ниже.
 
-   ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница Фабрики данных Azure с плиткой &quot;Создание и мониторинг&quot;.":::
 10. Щелкните плитку **Создание и мониторинг**, чтобы открыть на отдельной вкладке пользовательский интерфейс фабрики данных Azure.
 
 ## <a name="create-a-pipeline"></a>Создание конвейера
@@ -269,7 +269,7 @@ END
     1. В качестве **имени хранимой процедуры** выберите **usp_write_watermark**.
     2. Чтобы указать значения для параметров хранимой процедуры, щелкните **Импорт параметров** и введите следующие значения:
 
-        | Имя | Тип | Значение |
+        | Имя | Type | Значение |
         | ---- | ---- | ----- |
         | LastModifiedtime | Дата и время | @{activity('LookupNewWaterMarkActivity').output.firstRow.NewWatermarkvalue} |
         | TableName | Строка | @{activity('LookupOldWaterMarkActivity').output.firstRow.TableName} |

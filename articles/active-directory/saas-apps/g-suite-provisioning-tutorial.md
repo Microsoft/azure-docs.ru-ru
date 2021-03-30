@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 01/06/2020
+ms.date: 03/18/2021
 ms.author: Zhchia
-ms.openlocfilehash: 5243e9490c9de0d6df1520edb970da93fabef85a
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.openlocfilehash: f6ef2f91d178db01e618c19df55705bc9c1209e4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
-ms.locfileid: "98746126"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104583757"
 ---
 # <a name="tutorial-configure-g-suite-for-automatic-user-provisioning"></a>Руководство по настройке G Suite для автоматической подготовки пользователей
 
@@ -273,6 +273,7 @@ ms.locfileid: "98746126"
 * 17.10.2020: добавлена поддержка дополнительных атрибутов пользователей и групп G Suite.
 * 17.10.2020: обновлены целевые имена атрибутов G Suite для соответствия приведенному [здесь](https://developers.google.com/admin-sdk/directory) определению.
 * 17.10.2020: обновлены стандартные сопоставления атрибутов.
+* 18.03.2021 — электронная почта руководителя теперь синхронизируется вместо идентификатора для всех новых пользователей. Для всех существующих пользователей, которые были подготовлены с руководителем в качестве идентификатора, можно выполнить перезагрузку через [Microsoft Graph](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-beta&tabs=http) со всей областью, чтобы убедиться, что электронная почта подготовлена. Это изменение влияет только на задание подготовки GSuite, но не на более старое задание подготовки, начиная с Goov2OutDelta. Обратите внимание, что сообщение электронной почты руководителя подготавливается при первом создании пользователя или изменении руководителя. Электронная почта руководителя не будет подготавливаться, если руководитель изменит свой адрес электронной почты. 
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

@@ -6,14 +6,14 @@ ms.author: sumuth
 ms.service: postgresql
 ms.devlang: azurecli
 ms.topic: tutorial
-ms.date: 09/22/2020
+ms.date: 03/18/2021
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: ab606e357bd911f4d7f266977bd14871f92744a0
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.openlocfilehash: ff9af90ca0b6b80ffece5ccd7d919c1d93e210c4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92546574"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104657592"
 ---
 # <a name="tutorial-create-an-azure-database-for-postgresql---flexible-server-with-app-services-web-app-in-virtual-network"></a>Руководство по созданию Базы данных Azure для PostgreSQL (Гибкий сервер) с веб-приложением Службы приложений в той же виртуальной сети
 
@@ -22,9 +22,10 @@ ms.locfileid: "92546574"
 
 В этом руководстве показано, как создать веб-приложение Службы приложений Azure с использованием предварительной версии Базы данных Azure для PostgreSQL (Гибкий сервер) в [виртуальной сети](../../virtual-network/virtual-networks-overview.md).
 
-В рамках этого руководства вы выполните следующие задачи:
+Из этого учебного курса вы узнаете следующее:
 >[!div class="checklist"]
 > * создание гибкого сервера PostgreSQL в виртуальной сети;
+> * создание подсети для ее делегирования Службе приложений;
 > * Создание веб-приложения
 > * добавление веб-приложения в виртуальную сеть;
 > * подключение к Postgres из веб-приложения. 
@@ -44,7 +45,7 @@ az login
 Если вы используете несколько подписок, выберите соответствующую, в которой за ресурс будет взиматься плата. Выберите конкретный идентификатор подписки вашей учетной записи, выполнив команду [az account set](/cli/azure/account). Подставьте свойство **subscription ID** из выходных данных **az login** для своей подписки в заполнитель для идентификатора подписки.
 
 ```azurecli
-az account set --subscription <subscription id>
+az account set --subscription <subscription ID>
 ```
 
 ## <a name="create-a-postgresql-flexible-server-in-a-new-virtual-network"></a>Создание гибкого сервера PostgreSQL в новой виртуальной сети
@@ -56,10 +57,10 @@ az postgres flexible-server create --resource-group myresourcegroup --location w
 С помощью этой команды выполняются следующие действия (может занять несколько минут):
 
 - Создайте группу ресурсов, если она еще не существует.
-- Будет создано имя сервера, если оно не предоставлено.
+- Создает имя сервера, если оно не предоставлено.
 - Создайте новую виртуальную сеть для нового сервера PostgreSQL. Запишите имя виртуальной сети и имя подсети, которые созданы для этого сервера, так как веб-приложение нужно будет добавить в ту же виртуальную сеть.
 - Будет создано имя пользователя и пароль администратора для этого сервера, если они не предоставлены.
-- Будет создана пустая база данных с именем **postgres** .
+- Будет создана пустая база данных с именем **postgres**.
 
 > [!NOTE]
 > - Если вы не указали пароль, запишите тот, который будет создан для вас автоматически. Если вы забудете пароль, вам придется сбросить его с помощью команды ``` az postgres flexible-server update```.
@@ -68,14 +69,21 @@ az postgres flexible-server create --resource-group myresourcegroup --location w
 >  az postgres flexible-server firewall-rule list --resource-group myresourcegroup --server-name mydemoserver --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
 >  ```
 
+## <a name="create-subnet-for-app-service-endpoint"></a>Создание подсети для конечной точки Службы приложений
+Теперь нам нужно создать подсеть, которая делегируется конечной точке веб-приложения Службы приложений. Выполните следующую команду, чтобы создать подсеть в той же виртуальной сети, в которой был создан сервер базы данных. 
+
+```azurecli
+az network vnet subnet create -g myresourcegroup --vnet-name VNETName --name webappsubnetName  --address-prefixes 10.0.1.0/24  --delegations Microsoft.Web/serverFarms --service-endpoints Microsoft.Web
+```
+После выполнения этой команды запишите имя виртуальной сети и имя подсети. Они понадобятся, чтобы добавить правило интеграции с виртуальной сетью для веб-приложения после его создания. 
 
 ## <a name="create-a-web-app"></a>Создание веб-приложения
-В этом разделе вы создадите узел приложения в приложении Службы приложений, подключите это приложение к базе данных Postgres, а затем развернете код на этом узле. Убедитесь, что в окне терминала вы находитесь в корне репозитория с кодом вашего приложения.
+В этом разделе вы создадите узел приложения в приложении Службы приложений, подключите это приложение к базе данных Postgres, а затем развернете код на этом узле. Убедитесь, что в окне терминала вы находитесь в корне репозитория с кодом вашего приложения. Учтите, что план "Базовый" не поддерживает интеграцию с виртуальной сетью. Используйте уровень "Стандартный" или "Премиум". 
 
 Создайте приложение Службы приложений (хост-процесс) с помощью команды az webapp up.
 
 ```azurecli
-az webapp up --resource-group myresourcegroup --location westus2 --plan testappserviceplan --sku B1 --name mywebapp
+az webapp up --resource-group myresourcegroup --location westus2 --plan testappserviceplan --sku P2V2 --name mywebapp
 ```
 
 > [!NOTE]
@@ -85,16 +93,15 @@ az webapp up --resource-group myresourcegroup --location westus2 --plan testapps
 С помощью этой команды выполняются следующие действия (может занять несколько минут):
 
 - Создайте группу ресурсов, если она еще не существует. (В этой команде используется та же группа ресурсов, в которой ранее была создана база данных.)
-- Будет создан план службы приложений ```testappserviceplan``` с ценовой категорией "Базовый" (B1), если он еще не существует. Аргументы --plan и --sku необязательны.
 - Создается приложение Службы приложений, если оно еще не существует.
 - Для приложения включается ведение журнала по умолчанию, если оно еще не включено.
 - Передается репозиторий через развертывание на основе ZIP-файла с включенной автоматизацией сборки.
 
 ## <a name="add-the-web-app-to-the-virtual-network"></a>Добавление веб-приложения в виртуальную сеть
-Используйте команду **az webapp vnet-integration** , чтобы добавить в веб-приложение региональную интеграцию с виртуальной сетью. Замените <vnet-name> и <subnet-name> именем виртуальной сети и подсети, которые использует гибкий сервер.
+Используйте команду **az webapp vnet-integration**, чтобы добавить в веб-приложение региональную интеграцию с виртуальной сетью. Замените <vnet-name> и <subnet-name> именем виртуальной сети и подсети, которые использует гибкий сервер.
 
 ```azurecli
-az webapp vnet-integration add -g myresourcegroup -n  mywebapp --vnet <vnet-name> --subnet <subnet-name>
+az webapp vnet-integration add -g myresourcegroup -n  mywebapp --vnet VNETName --subnet webappsubnetName
 ```
 
 ## <a name="configure-environment-variables-to-connect-the-database"></a>Настройка переменных среды для подключения к базе данных

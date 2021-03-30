@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: tutorial
 ms.date: 10/02/2020
-ms.openlocfilehash: 62f4b6c76cafab5c6cc46a73851abce1e38551a1
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: a708f0c1884073a2f2ea73092d25006415c59d5f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101677757"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104655229"
 ---
 # <a name="register-and-scan-an-azure-sql-database"></a>Регистрация и сканирование Базы данных SQL Azure
 
@@ -157,7 +157,8 @@ Azure Purview не поддерживает сканирование [предс
 [!INCLUDE [create and manage scans](includes/manage-scans.md)]
 
 > [!NOTE]
-> Удаление сканирования не приводит к удалению ресурсов из других сканирований Базы данных SQL Azure.
+> * Удаление сканирования не приводит к удалению ресурсов из других сканирований Базы данных SQL Azure.
+> * Ресурс больше не будет обновляться с учетом изменений схемы при изменении исходной таблицы с повторной проверкой исходной таблицы после изменения описания на вкладке схемы Purview.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

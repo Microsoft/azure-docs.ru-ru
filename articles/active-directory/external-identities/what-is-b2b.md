@@ -5,19 +5,19 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: B2B
 ms.topic: overview
-ms.date: 03/02/2021
+ms.date: 03/19/2021
 ms.author: mimart
 author: msmimart
 manager: celestedg
 ms.reviewer: mal
 ms.custom: it-pro, seo-update-azuread-jan
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bee6a007004253106703ae2c19b940bf3de5d44
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 231d3ab81c2376aa8a2a4bf182e1b5e9799e51d5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101649297"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104669786"
 ---
 # <a name="what-is-guest-user-access-in-azure-active-directory-b2b"></a>Что представляет собой гостевой доступ в службе совместной работы Azure Active Directory B2B?
 
@@ -80,7 +80,7 @@ ms.locfileid: "101649297"
 
 ## <a name="integrate-with-identity-providers"></a>Интеграция с поставщиками удостоверений
 
-Azure AD поддерживает внешние поставщики удостоверений, такие как Facebook, учетные записи Майкрософт, Google и корпоративные поставщики удостоверений. Вы можете настроить федерацию с поставщиками удостоверений, чтобы внешние пользователи могли выполнять вход с использованием существующих социальных или корпоративных учетных записей вместо создания новой учетной записи только для вашего приложения. См. сведения о поставщиках удостоверений для внешних удостоверений.
+Azure AD поддерживает внешние поставщики удостоверений, такие как Facebook, учетные записи Майкрософт, Google и корпоративные поставщики удостоверений. Вы можете настроить федерацию с поставщиками удостоверений, чтобы внешние пользователи могли выполнять вход с использованием существующих социальных или корпоративных учетных записей вместо создания новой учетной записи только для вашего приложения. См. дополнительные сведения о [поставщиках удостоверений для внешних удостоверений](identity-providers.md).
 
 ![Снимок экрана: страница поставщиков удостоверений](media/what-is-b2b/identity-providers.png)
 

@@ -2,16 +2,16 @@
 title: 'Учебник: добавление выходных данных в Bicep-файл Azure Resource Manager'
 description: Добавление выходных данных в Bicep-файл для упрощения синтаксиса.
 author: mumian
-ms.date: 03/01/2021
+ms.date: 03/17/2021
 ms.topic: tutorial
 ms.author: jgao
 ms.custom: ''
-ms.openlocfilehash: 279417f22ded89db21abddad7a91a4cce520c6bd
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4b7d7a1414091c516dba2c474e1681ba357b55a1
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742967"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594314"
 ---
 # <a name="tutorial-add-outputs-to-azure-resource-manager-bicep-file"></a>Учебник: добавление выходных данных в Bicep-файл Azure Resource Manager
 
@@ -37,7 +37,7 @@ ms.locfileid: "101742967"
 
 Выходные данные можно использовать для возврата значений из развертывания. Например, может быть полезно получить конечные точки для новой учетной записи хранения.
 
-В следующем примере демонстрируется изменение Bicep-файла для добавления выходного значения. Скопируйте весь файл и замените Bicep-файлы на его содержимое.
+В следующем примере показано, как изменить файл Bicep для добавления выходного значения. Скопируйте весь файл и замените Bicep-файлы на его содержимое.
 
 :::code language="bicep" source="~/resourcemanager-templates/get-started-with-templates/add-outputs/azuredeploy.bicep" range="1-33" highlight="33":::
 
@@ -45,7 +45,9 @@ ms.locfileid: "101742967"
 
 В качестве типа возвращаемого значения устанавливается `object`. Это означает, что возвращается объект шаблона.
 
-Чтобы получить свойство `primaryEndpoints` из учетной записи хранения, используйте символьное имя учетной записи хранения.
+Чтобы получить свойство `primaryEndpoints` из учетной записи хранения, используйте символьное имя учетной записи хранения. Функция автозаполнения Visual Studio Code предоставляет полный список свойств:
+
+   ![Свойства объекта символьного имени Bicep в Visual Studio Code](./media/bicep-tutorial-add-outputs/visual-studio-code-bicep-output-properties.png)
 
 ## <a name="deploy-bicep-file"></a>Развертывание файла Bicep
 

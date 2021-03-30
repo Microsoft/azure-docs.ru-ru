@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.custom: seo-lt-2019
 ms.date: 02/18/2021
 ms.author: jingwang
-ms.openlocfilehash: 17f3c31334517ad560cd40fd22b4def031279ca5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 08ab3c9181f4fdcfc9b55bf80c53f88ff26f90ce
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101741061"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584413"
 ---
 # <a name="copy-data-from-azure-blob-storage-to-a-database-in-azure-sql-database-by-using-azure-data-factory"></a>Копирование данных из Хранилища BLOB-объектов Azure в базу данных в службе "База данных SQL Azure" с помощью Фабрики данных Azure
 
@@ -90,7 +90,7 @@ ms.locfileid: "101741061"
 
    Имя фабрики данных Azure должно быть *глобально уникальным*. Если вы увидите следующую ошибку касательно значения имени, введите другое имя фабрики данных. (Например, используйте yournameADFTutorialDataFactory.) Дополнительные сведения о правилах именования артефактов фабрики данных см. в статье [Фабрика данных Azure — правила именования](naming-rules.md).
 
-     ![Новая фабрика данных](./media/doc-common-process/name-not-available-error.png)
+    :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных со сведениями о том, что имя дублируется.":::
 
 7. В качестве **версии** выберите **V2**.
 8. Выберите вкладку **Git configuration** (Конфигурация Git) в верхней части экрана и установите флажок **Configure Git later** (Настроить Git позже).

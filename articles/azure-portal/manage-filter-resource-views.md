@@ -2,13 +2,13 @@
 title: Просмотр и фильтрация сведений о ресурсах Azure
 description: Отфильтруйте сведения и используйте различные представления для лучшего понимания работы ресурсов Azure.
 ms.topic: how-to
-ms.date: 09/11/2020
-ms.openlocfilehash: d3ad0c225a260fd0ae6b131b951b53c28042f4d9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/16/2021
+ms.openlocfilehash: bb48d0b0a7bf6017fbf407a95c33ef17729e34e3
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101738639"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104771640"
 ---
 # <a name="view-and-filter-azure-resource-information"></a>Просмотр и фильтрация сведений о ресурсах Azure
 
@@ -48,7 +48,7 @@ ms.locfileid: "101738639"
 
 1. Выберите **Управление представлением**, а затем — **Просмотреть все представления**.
 
-1. В области **Сохранение представлений ресурсов "Все ресурсы"** выберите представление, а затем щелкните значок **Удалить** ![Значок "Удалить представление"](media/manage-filter-resource-views/icon-delete.png).
+1. В области **Сохраненные представления** выберите представление, а затем нажмите значок **Удалить** ![Значок "Удалить представление"](media/manage-filter-resource-views/icon-delete.png).
 
 ## <a name="export-information-from-a-view"></a>Экспорт данных из представления
 

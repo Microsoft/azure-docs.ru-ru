@@ -6,12 +6,12 @@ ms.service: data-factory
 ms.topic: quickstart
 ms.date: 12/14/2020
 ms.author: jingwang
-ms.openlocfilehash: e7d4770af38081353fc58eec9957f50e2b6a7348
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 8b33005b7f0d08e6da963457813b012199d89f5f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100372796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104655106"
 ---
 # <a name="quickstart-create-a-data-factory-by-using-the-azure-data-factory-ui"></a>Краткое руководство. Создание фабрики данных с помощью пользовательского интерфейса службы "Фабрика данных Azure" 
 
@@ -39,7 +39,8 @@ ms.locfileid: "100372796"
 1. В меню портала Azure выберите **Создать ресурс**.
 1. Последовательно выберите **Интеграция** и **Добавить фабрику**. 
    
-   ![Выбор фабрики данных в области "Создать"](./media/doc-common-process/new-azure-data-factory-menu.png)
+   :::image type="content" source="./media/doc-common-process/new-azure-data-factory-menu.png" alt-text="Выбор фабрики данных в области &quot;Создать&quot;.":::
+
 1. На странице **Создание фабрики данных** на вкладке **Основные сведения** выберите **подписку** Azure, в рамках которой вы хотите создать фабрику данных.
 1. Для **группы ресурсов** выполните одно из следующих действий:
 
@@ -55,8 +56,8 @@ ms.locfileid: "100372796"
  
 1. Введите **ADFTutorialDataFactory** в поле **Имя**.
    Имя фабрики данных Azure должно быть *глобально уникальным*. При возникновении указанной ниже ошибки измените имя фабрики данных (например, на **&lt;ваше_имя_&gt;ADFTutorialDataFactory**) и попробуйте создать фабрику данных снова. Правила именования для артефактов службы "Фабрика данных" приведены в статье [Фабрика данных Azure — правила именования](naming-rules.md).
-  
-   ![Ошибка "Имя недоступно"](./media/doc-common-process/name-not-available-error.png)
+
+    :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных со сведениями о том, что имя дублируется.":::
 
 1. Укажите **V2** при выборе **версии**.
 
@@ -66,7 +67,7 @@ ms.locfileid: "100372796"
 
 1. Выберите элемент **Author & Monitor** (Создание и мониторинг), чтобы открыть на отдельной вкладке браузера приложение пользовательского интерфейса службы "Фабрика данных Azure".
    
-   ![Домашняя страница фабрики данных с элементом Author & Monitor (Создание и мониторинг)](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница Фабрики данных Azure с плиткой &quot;Создание и мониторинг&quot;.":::
    
    > [!NOTE]
    > Если вы видите, что в веб-браузере завис процесс авторизации, снимите флажок **Block third-party cookies and site data** (Блокировать сторонние файлы cookie и данные сайтов). Либо можете оставить этот флажок и создать исключение для **login.microsoftonline.com**. Затем попробуйте еще раз открыть приложение.
@@ -79,7 +80,7 @@ ms.locfileid: "100372796"
 
 1. На странице связанных служб выберите **+New** (+Создать), чтобы создать связанную службу.
 
-   ![Новая связанная служба](./media/doc-common-process/new-linked-service.png)
+   :::image type="content" source="./media/doc-common-process/new-linked-service.png" alt-text="Новая связанная служба.":::
    
 1. На странице **New Linked Service** (Новая связанная служба) выберите **Хранилище BLOB-объектов Azure** и щелкните **Продолжить**. 
 
@@ -93,7 +94,7 @@ ms.locfileid: "100372796"
 
    d. Выберите **Сохранить**, чтобы сохранить связанную службу. 
 
-      ![Связанная служба](./media/quickstart-create-data-factory-portal/linked-service.png)
+      :::image type="content" source="./media/quickstart-create-data-factory-portal/linked-service.png" alt-text="Связанная служба.":::
 
 
 ## <a name="create-datasets"></a>Создание наборов данных
@@ -109,13 +110,13 @@ ms.locfileid: "100372796"
 
 1. Нажмите кнопку **+** (плюс) и выберите **Набор данных**.
 
-   ![Меню для создания набора данных](./media/quickstart-create-data-factory-portal/new-dataset-menu.png)
+   :::image type="content" source="./media/quickstart-create-data-factory-portal/new-dataset-menu.png" alt-text="Меню для создания набора данных.":::
 
 1. На странице **Новый набор данных** выберите **Хранилище BLOB-объектов Azure**, а затем нажмите кнопку **Продолжить**. 
 
 1. На странице **Select Format** (Выбор формата) выберите тип формата данных, а затем нажмите кнопку **Продолжить**. В этом случае выберите **Двоичный**, если копируете файлы как есть без анализа содержимого.
 
-   ![Выбор формата](./media/quickstart-create-data-factory-portal/select-format.png)
+   :::image type="content" source="./media/quickstart-create-data-factory-portal/select-format.png" alt-text="Выбор формата.":::   
    
 1. На странице **Set Properties** (Установка свойств) выполните следующие действия:
 
@@ -129,7 +130,8 @@ ms.locfileid: "100372796"
     
     д) Щелкните **ОК**.   
 
-    ![Установка свойств для InputDataset](./media/quickstart-create-data-factory-portal/set-properties-for-inputdataset.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/set-properties-for-inputdataset.png" alt-text="Установка свойств для InputDataset.":::
+
 1. Повторите эти шаги, чтобы создать выходной набор данных:  
 
     а. Нажмите кнопку **+** (плюс) и выберите **Набор данных**.
@@ -144,7 +146,7 @@ ms.locfileid: "100372796"
 
     е) Щелкните **ОК**.   
 
-    ![Установка свойств для OutputDataset](./media/quickstart-create-data-factory-portal/set-properties-for-outputdataset.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/set-properties-for-outputdataset.png" alt-text="Установка свойств для OutputDataset.":::    
 
 ## <a name="create-a-pipeline"></a>Создание конвейера 
 На этом этапе вы создадите и проверите конвейер с действием копирования, которое использует входной и выходной наборы данных. При помощи действия копирования данные копируются из файла, указанного в параметрах входного набора данных, в файл, указанный в параметрах выходного набора данных. Если входной набор данных определяет только папку (но не имя файла), при помощи действия копирования в место назначения копируются все файлы из исходной папки. 
@@ -155,7 +157,7 @@ ms.locfileid: "100372796"
 
 1. На панели элементов **Действия** разверните **Переместить и преобразовать**. Перетащите действие **Копирование данных** из панели инструментов **Действия** в область конструктора конвейера. Также на панели элементов **Действия** можно применить поиск. Введите **CopyFromBlobToBlob** в поле **имя**.
 
-   ![Создание действия копирования данных](./media/quickstart-create-data-factory-portal/copy-activity.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/copy-activity.png" alt-text="Создание действия копирования данных.":::   
 
 1. Откройте вкладку **Источник** в параметрах действия копирования и выберите **InputDataset** в списке **исходных наборов данных**.
 
@@ -163,7 +165,7 @@ ms.locfileid: "100372796"
 
 1. На панели инструментов конвейера над холстом щелкните **Проверка**, чтобы проверить параметры конвейера. Убедитесь, что проверка конвейера прошла успешно. Чтобы закрыть результаты проверки, в правом верхнем углу нажмите кнопку "Проверка". 
 
-   ![Проверка конвейера](./media/quickstart-create-data-factory-portal/pipeline-validate.png)
+   :::image type="content" source="./media/quickstart-create-data-factory-portal/pipeline-validate.png"   alt-text="Проверка конвейера.":::
 
 ## <a name="debug-the-pipeline"></a>Выполнение отладки конвейера
 На этом этапе вы выполните отладку конвейера перед его развертыванием в службе "Фабрика данных". 
@@ -172,7 +174,7 @@ ms.locfileid: "100372796"
     
 1. Убедитесь, что сведения о состоянии запуска для конвейера отображаются на вкладке **Выходные данные** в нижней части окна. 
  
-    ![Выходные данные запуска конвейера](./media/quickstart-create-data-factory-portal/pipeline-output.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/pipeline-output.png" alt-text="Выходные данные запуска конвейера":::
 
 1. Убедитесь, что выходной файл появился в папке **output** конвейера **adftutorial**. Если указанной папки output нет, она будет автоматически создана службой "Фабрика данных". 
 
@@ -181,7 +183,7 @@ ms.locfileid: "100372796"
 
 1. Перед запуском конвейера необходимо опубликовать сущности в службе "Фабрика данных Azure". Для этого щелкните **Опубликовать все** в верхней части окна. 
 
-    ![Опубликовать все](./media/quickstart-create-data-factory-portal/publish-all.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/publish-all.png" alt-text="Элемент &quot;Опубликовать все&quot;.":::    
 
 1. Чтобы запустить конвейер вручную, выберите **Добавить триггер** на панели инструментов конвейера, а затем выберите **Trigger Now** (Запустить сейчас). На странице **Запуск конвейера** щелкните **ОК**.
 
@@ -189,12 +191,12 @@ ms.locfileid: "100372796"
 
 1. Перейдите на вкладку **Мониторинг** слева. Нажмите кнопку **Обновить**, чтобы обновить этот список.
 
-   ![Вкладка для мониторинга запусков конвейера](./media/quickstart-create-data-factory-portal/monitor-trigger-now-pipeline.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/monitor-trigger-now-pipeline.png" alt-text="Вкладка для мониторинга запусков конвейера"::: 
 1. Щелкните ссылку **CopyPipeline** и вы увидите на этой странице сведения о состоянии выполнения действия копирования. 
 
 1. Чтобы просмотреть сведения об операции копирования, щелкните ссылку **Сведения** (изображение очков). Дополнительные сведения о свойствах см. в [обзоре действия копирования](copy-activity-overview.md). 
 
-   ![Сведения об операции копирования](./media/quickstart-create-data-factory-portal/copy-operation-details.png)
+   :::image type="content" source="./media/quickstart-create-data-factory-portal/copy-operation-details.png" alt-text="Сведения об операции копирования.":::
 1. Убедитесь, что в папке **output** появился новый файл. 
 1. Вы можете перейти из представления **Выполнения действий** в представление **Запуски конвейера**, щелкнув ссылку **Все запуски конвейера**. 
 
@@ -213,7 +215,7 @@ ms.locfileid: "100372796"
 
 1. На странице **Создать триггер** установите флажок **Активировано**, а затем нажмите кнопку **ОК**. 
 
-   ![Настройка нового триггера](./media/quickstart-create-data-factory-portal/trigger-settings-next.png)
+    :::image type="content" source="./media/quickstart-create-data-factory-portal/trigger-settings-next.png" alt-text="Настройка нового триггера.":::   
 1. Ознакомьтесь с предупреждающим сообщением и нажмите кнопку **ОК**.
 
 1. Щелкните **Опубликовать все**, чтобы перенести изменения в службу "Фабрика данных". 
