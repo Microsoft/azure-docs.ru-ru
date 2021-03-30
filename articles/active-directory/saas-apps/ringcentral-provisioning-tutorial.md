@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 10/30/2019
 ms.author: Zhchia
-ms.openlocfilehash: f57114fc4cb76c500cc422966635273c3a923046
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1891af9acae2b976a18f68983693a7df559b6476
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96181634"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104800775"
 ---
 # <a name="tutorial-configure-ringcentral-for-automatic-user-provisioning"></a>Руководство по настройке RingCentral для автоматической подготовки пользователей
 
@@ -46,15 +46,7 @@ ms.locfileid: "96181634"
 
 ## <a name="step-2-configure-ringcentral-to-support-provisioning-with-azure-ad"></a>Шаг 2. Настройка RingCentral для поддержки подготовки с помощью Azure AD
 
-1. Войдите в [консоль администрирования RingCentral](https://login.ringcentral.com/sw.html). Выберите **Tools > Directory Integration** ( Средства > Интеграция каталогов).
-
-    ![Консоль администрирования RingCentral](media/ringcentral-provisioning-tutorial/admin.png)
-
-2.  Выберите **SCIM** в разделе **Select Directory Provider** (Выбор поставщика каталога). (В будущем будет доступен параметр с именем Azure Active Directory). Щелкните **Enable SCIM service** (Включить службу SCIM).
-
-    ![Добавление SCIM в RingCentral](media/ringcentral-provisioning-tutorial/scim.png)
-
-3.  Обратитесь в службу поддержки RingCentral по адресу matthew.hunt@ringcentral.com, чтобы получить **токен проверки подлинности SCIM**. Его нужно будет ввести на вкладке "Подготовка" в поле "Секретный токен" для приложения RingCentral на портале Azure.
+Чтобы выполнить авторизацию в разделе "Учетные данные администратора" на шаге 5, понадобится использовать учетную запись администратора [RingCentral](https://www.ringcentral.com/office/plansandpricing.html).
 
 > [!NOTE]
 > Чтобы назначить лицензии пользователям, ознакомьтесь с видео по [этой ссылке](https://support.ringcentral.com/s/article/5-10-Adding-Extensions-via-Web?language).
@@ -94,11 +86,15 @@ ms.locfileid: "96181634"
 
     ![Снимок экрана: раскрывающийся список "Режим подготовки" с выделенным параметром "Автоматически".](common/provisioning-automatic.png)
 
-5. В разделе **Учетные данные администратора** введите значение `https://platform.ringcentral.com/scim/v2` в поле **URL-адрес клиента**. Введите полученное ранее значение **токена проверки подлинности SCIM** в поле **Секретный токен**. Щелкните **Проверить подключение**, чтобы убедиться, что Azure AD может подключиться к RingCentral. Если установить подключение не удалось, убедитесь, что у учетной записи RingCentral есть разрешения администратора, и повторите попытку.
+5. В разделе **Учетные данные администратора** щелкните **Авторизовать**. Вы будете перенаправлены на страницу входа в RingCentral. Введите адрес электронной почты, номер телефона, пароль и нажмите кнопку **Войти**. На странице **Запрос на доступ** RingCentral щелкните **Авторизовать**. Щелкните **Проверить подключение**, чтобы убедиться, что Azure AD может подключиться к RingCentral. Если установить подключение не удалось, убедитесь, что у учетной записи RingCentral есть разрешения администратора, и повторите попытку.
 
-    ![Снимок экрана: текстовые поля "URL-адрес клиента" и "Секретный токен" с вызванным параметром "Проверка подключения".](./media/ringcentral-provisioning-tutorial/provisioning.png)
+   ![AAD](./media/ringcentral-provisioning-tutorial/admincredentials.png)
 
-6. В поле **Почтовое уведомление** введите адрес электронной почты пользователя или группы, которые должны получать уведомления об ошибках подготовки, а также установите флажок **Отправить уведомление по электронной почте при сбое**.
+   ![Доступ](./media/ringcentral-provisioning-tutorial/authorize.png)
+
+   ![Авторизовать](./media/ringcentral-provisioning-tutorial/accessrequest.png)
+
+6. В поле **Электронная почта для уведомлений** введите адрес электронной почты пользователя или группы, которые должны получать уведомления об ошибках подготовки, а также установите флажок **Отправить уведомление по электронной почте при сбое**.
 
     ![Почтовое уведомление](common/provisioning-notification-email.png)
 
@@ -151,6 +147,7 @@ ms.locfileid: "96181634"
 ## <a name="change-log"></a>Журнал изменений
 
 * 10.09.2020 — удалена поддержка атрибутов displayName и "Руководитель".
+* 15.03.2021 — изменен метод авторизации: вместо постоянного маркера носителя будет использоваться поток предоставления кода OAuth.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

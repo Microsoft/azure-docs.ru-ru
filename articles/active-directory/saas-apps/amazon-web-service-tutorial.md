@@ -1,6 +1,6 @@
 ---
-title: Руководство по Интеграция единого входа Azure Active Directory с Amazon Web Services (AWS) | Документация Майкрософт
-description: Узнайте, как настроить единый вход между Azure Active Directory и Amazon Web Services (AWS).
+title: Учебник. Интеграция единого входа Azure Active Directory с AWS Single-Account Access | Документация Майкрософт
+description: Сведения о том, как настроить единый вход между Azure Active Directory и AWS Single-Account Access.
 services: active-directory
 author: jeevansd
 manager: CelesteDG
@@ -9,21 +9,21 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 12/08/2020
+ms.date: 03/05/2021
 ms.author: jeedes
-ms.openlocfilehash: 81b57563899fe4babecbdb66cf1dbd876ec5bdf9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 842ab27fe02501efbbc6c06c3d36d2218c3c17b9
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101689017"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104799247"
 ---
-# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-amazon-web-services-aws"></a>Руководство по Интеграция единого входа Azure Active Directory с Amazon Web Services (AWS)
+# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-aws-single-account-access"></a>Учебник. Интеграция единого входа Azure Active Directory с AWS Single-Account Access
 
-В этом руководстве описано, как интегрировать Amazon Web Services (AWS) с Azure Active Directory (Azure AD). Интеграция Amazon Web Services (AWS) с Azure AD обеспечивает следующие возможности.
+В этом руководстве описано, как интегрировать AWS Single-Account Access с Azure Active Directory (Azure AD). Интеграция AWS Single-Account Access с Azure AD обеспечивает следующие возможности:
 
-* С помощью Azure AD вы можете контролировать доступ к Amazon Web Services (AWS).
-* Вы можете включить автоматический вход пользователей в Amazon Web Services (AWS) с помощью учетных записей Azure AD.
+* управление доступом к AWS Single-Account Access с помощью Azure AD;
+* автоматический вход пользователей в AWS Single-Account Access с помощью учетных записей Azure AD.
 * Централизованное управление учетными записями через портал Azure.
 
 ## <a name="understanding-the-different-aws-applications-in-the-azure-ad-application-gallery"></a>Основные сведения о различных приложениях AWS в коллекции приложений Microsoft Azure Active Directory
@@ -31,11 +31,11 @@ ms.locfileid: "101689017"
 
 **AWS Single Sign-On**
 
-Приложение [AWS Single Sign-On](https://docs.microsoft.com/azure/active-directory/saas-apps/aws-single-sign-on-tutorial) было добавлено в коллекцию приложений Microsoft Azure Active Directory в феврале 2021 г. Оно упрощает централизованное управление доступом к нескольким учетным записям и приложениям AWS и обеспечивает вход с учетными данными Microsoft Azure Active Directory. Объедините Microsoft Azure Active Directory с AWS SSO один раз и используйте AWS SSO для централизованного управления разрешениями во всех учетных записях AWS. AWS SSO автоматически подготавливает разрешения и сохраняет их в актуальном виде при обновлении политик и назначений доступа. Конечные пользователи могут пройти проверку подлинности с учетными данными Microsoft Azure Active Directory для доступа к консоли AWS, интерфейсу командной строки и приложениям, интегрированным с AWS SSO.
+Приложение [AWS Single Sign-On](./aws-single-sign-on-tutorial.md) было добавлено в коллекцию приложений Microsoft Azure Active Directory в феврале 2021 г. Оно упрощает централизованное управление доступом к нескольким учетным записям и приложениям AWS и обеспечивает вход с учетными данными Microsoft Azure Active Directory. Объедините Microsoft Azure Active Directory с AWS SSO один раз и используйте AWS SSO для централизованного управления разрешениями во всех учетных записях AWS. AWS SSO автоматически подготавливает разрешения и сохраняет их в актуальном виде при обновлении политик и назначений доступа. Конечные пользователи могут пройти проверку подлинности с учетными данными Microsoft Azure Active Directory для доступа к консоли AWS, интерфейсу командной строки и приложениям, интегрированным с AWS SSO.
 
 **AWS Single-Account Access**
 
-Приложение [AWS Single-Account Access](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial) используется клиентами в течение последних нескольких лет. Оно позволяет объединить Microsoft Azure Active Directory с одной учетной записью AWS и использовать Microsoft Azure Active Directory для управления доступом к ролям AWS IAM. Администраторы AWS IAM определяют роли и политики в каждой учетной записи AWS. Для каждой учетной записи AWS администраторы Azure AD создают объединение в AWS IAM, назначают пользователям или группам учетную запись и настраивают Microsoft Azure Active Directory для отправки утверждений, которые разрешают доступ к ролям.  
+Приложение [AWS Single-Account Access]() используется клиентами в течение последних нескольких лет. Оно позволяет объединить Microsoft Azure Active Directory с одной учетной записью AWS и использовать Microsoft Azure Active Directory для управления доступом к ролям AWS IAM. Администраторы AWS IAM определяют роли и политики в каждой учетной записи AWS. Для каждой учетной записи AWS администраторы Azure AD создают объединение в AWS IAM, назначают пользователям или группам учетную запись и настраивают Microsoft Azure Active Directory для отправки утверждений, которые разрешают доступ к ролям.  
 
 | Функция | AWS Single Sign-On | AWS Single-Account Access |
 |:--- |:---:|:---:|
@@ -74,45 +74,48 @@ ms.locfileid: "101689017"
 * Подписка Azure AD. Если у вас нет подписки, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/).
 * Подписка AWS с поддержкой единого входа.
 
+> [!Note]
+> Не изменяйте роли вручную, выполняя их импорт в Microsoft Azure AD.
+
 ## <a name="scenario-description"></a>Описание сценария
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* Amazon Web Services (AWS) поддерживает единый вход, инициированный **поставщиком услуг и поставщиком удостоверений**.
+* AWS Single-Account Access поддерживает единый вход, инициированный **поставщиком услуг и поставщиком удостоверений**.
 
 > [!NOTE]
 > Идентификатор этого приложения — фиксированное строковое значение, поэтому в одном клиенте можно настроить только один экземпляр.
 
-## <a name="adding-amazon-web-services-aws-from-the-gallery"></a>Добавление Amazon Web Services из коллекции
+## <a name="adding-aws-single-account-access-from-the-gallery"></a>Добавление AWS Single-Account Access из коллекции
 
-Чтобы настроить интеграцию Amazon Web Services с Azure AD, вам потребуется добавить Amazon Web Services из коллекции в список управляемых приложений SaaS.
+Чтобы настроить интеграцию AWS Single-Account Access с Azure AD, необходимо добавить AWS Single-Account Access из коллекции в список управляемых приложений SaaS.
 
 1. Войдите на портал Azure с помощью личной учетной записи Майкрософт либо рабочей или учебной учетной записи.
 1. На портале Azure найдите и выберите **Azure Active Directory**.
 1. В меню обзора Azure Active Directory выберите **Корпоративные приложения** > **Все приложения**.
 1. Чтобы добавить приложение, выберите **Новое приложение**.
-1. В разделе **Добавление из коллекции** в поле поиска введите **Amazon Web Services (AWS)** .
-1. Выберите **Amazon Web Services (AWS)** в области результатов и добавьте это приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
+1. В разделе **Добавление из коллекции** в поле поиска введите **AWS Single-Account Access**.
+1. Выберите **AWS Single-Account Access** на панели результатов и добавьте это приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
 
-## <a name="configure-and-test-azure-ad-sso-for-amazon-web-services-aws"></a>Настройка и проверка единого входа Azure AD для Amazon Web Services (AWS)
+## <a name="configure-and-test-azure-ad-sso-for-aws-single-account-access"></a>Настройка и проверка единого входа Azure AD для AWS Single-Account Access
 
-Настройте и проверьте единый вход Azure AD в Amazon Web Services (AWS) с помощью тестового пользователя **B.Simon**. Для обеспечения работы единого входа необходимо установить связь между пользователем Azure AD и соответствующим пользователем во Amazon Web Services (AWS).
+Настройте и проверьте единый вход Azure AD в AWS Single-Account Access с помощью тестового пользователя **B.Simon**. Для обеспечения работы единого входа необходимо установить связь между пользователем Azure AD и соответствующим пользователем в AWS Single-Account Access.
 
-Чтобы настроить и проверить единый вход Azure AD в Amazon Web Services, сделайте следующее:
+Чтобы настроить и проверить единый вход Azure AD в AWS Single-Account Access, выполните следующие действия:
 
 1. **[Настройка единого входа Azure AD](#configure-azure-ad-sso)** необходима, чтобы пользователи могли использовать эту функцию.
     1. **[Создание тестового пользователя Azure AD](#create-an-azure-ad-test-user)** требуется для проверки работы единого входа Azure AD с помощью пользователя B.Simon.
     1. **[Назначение тестового пользователя Azure AD](#assign-the-azure-ad-test-user)** необходимо, чтобы позволить пользователю B.Simon использовать единый вход Azure AD.
-1. **[Настройка единого входа в Amazon Web Services (AWS)](#configure-amazon-web-services-aws-sso)** необходима, чтобы настроить параметры единого входа на стороне приложения.
-    1. **[Создание тестового пользователя Amazon Web Services (AWS)](#create-amazon-web-services-aws-test-user)** требуется для того, чтобы в Amazon Web Services (AWS) существовал пользователь B.Simon, связанный с одноименным пользователем в Azure AD.
-    1. **[Настройка подготовки ролей в Amazon Web Services (AWS)](#how-to-configure-role-provisioning-in-amazon-web-services-aws)**
+1. **[Настройка единого входа в AWS Single-Account Access](#configure-aws-single-account-access-sso)** необходима, чтобы настроить параметры единого входа на стороне приложения.
+    1. **[Создание тестового пользователя AWS Single-Account Access](#create-aws-single-account-access-test-user)** требуется для того, чтобы в AWS Single-Account Access существовал пользователь B.Simon, связанный с одноименным пользователем в Azure AD.
+    1. **[Настройка подготовки роли в AWS Single-Account Access](#how-to-configure-role-provisioning-in-aws-single-account-access)**
 1. **[Проверка единого входа](#test-sso)** позволяет убедиться в правильности конфигурации.
 
 ## <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
 
 Выполните следующие действия, чтобы включить единый вход Azure AD на портале Azure.
 
-1. На портале Azure на странице интеграции с приложением **Amazon Web Services (AWS)** найдите раздел **Управление** и выберите **Единый вход**.
+1. На портале Azure на странице интеграции с приложением **AWS Single-Account Access** найдите раздел **Управление** и выберите **Единый вход**.
 1. На странице **Выбрать метод единого входа** выберите **SAML**.
 1. На странице **Настройка единого входа с помощью SAML** щелкните значок "Изменить" (значок пера), чтобы открыть диалоговое окно **Базовая конфигурация SAML** и изменить параметры.
 
@@ -151,7 +154,7 @@ ms.locfileid: "101689017"
 
     ![Ссылка для скачивания сертификата](./media/amazon-web-service-tutorial/certificate.png)
 
-1. Требуемые URL-адреса можно скопировать из раздела **Настройка Amazon Web Services (AWS)** .
+1. Требуемые URL-адреса можно скопировать из раздела **Настройка AWS Single-Account Access**.
 
     ![Копирование URL-адресов настройки](common/copy-configuration-urls.png)
 
@@ -170,17 +173,17 @@ ms.locfileid: "101689017"
 
 ### <a name="assign-the-azure-ad-test-user"></a>Назначение тестового пользователя Azure AD
 
-В этом разделе описано, как включить единый вход в Azure для пользователя B.Simon, предоставив этому пользователю доступ к Amazon Web Services (AWS).
+В этом разделе описано, как включить единый вход Azure для пользователя B.Simon, предоставив этому пользователю доступ к AWS Single-Account Access.
 
 1. На портале Azure выберите **Корпоративные приложения**, а затем — **Все приложения**.
-1. В списке приложений выберите **Amazon Web Services**.
+1. В списке приложений выберите **AWS Single-Account Access**.
 1. На странице "Обзор" приложения найдите раздел **Управление** и выберите **Пользователи и группы**.
 1. Выберите **Добавить пользователя**, а в диалоговом окне **Добавление назначения** выберите **Пользователи и группы**.
 1. В диалоговом окне **Пользователи и группы** выберите **B.Simon** в списке пользователей, а затем в нижней части экрана нажмите кнопку **Выбрать**.
 1. Если пользователям необходимо назначить роль, вы можете выбрать ее из раскрывающегося списка **Выберите роль**. Если для этого приложения не настроена ни одна роль, будет выбрана роль "Доступ по умолчанию".
 1. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
-## <a name="configure-amazon-web-services-aws-sso"></a>Настройка единого входа для Amazon Web Services (AWS)
+## <a name="configure-aws-single-account-access-sso"></a>Настройка единого входа для AWS Single-Account Access
 
 1. В другом окне браузера войдите на корпоративный сайт AWS в качестве администратора.
 
@@ -343,7 +346,7 @@ ms.locfileid: "101689017"
 
     c. Выберите **Закрыть**.
 
-### <a name="how-to-configure-role-provisioning-in-amazon-web-services-aws"></a>Настройка подготовки ролей в Amazon Web Services (AWS)
+### <a name="how-to-configure-role-provisioning-in-aws-single-account-access"></a>Настройка подготовки роли в AWS Single-Account Access
 
 1. На портале управления Azure AD откройте раздел **Подготовка** для AWS.
 
@@ -371,9 +374,9 @@ ms.locfileid: "101689017"
 > [!NOTE]
 > После подготовки учетных данных необходимо дождаться запуска цикла начальной синхронизации. Выполнение синхронизации обычно занимает около 40 минут. Состояние отображается в нижней части страницы **Подготовка** в разделе **Текущее состояние**.
 
-### <a name="create-amazon-web-services-aws-test-user"></a>Создание тестового пользователя Amazon Web Services (AWS)
+### <a name="create-aws-single-account-access-test-user"></a>Создание тестового пользователя AWS Single-Account Access
 
-Цель этого раздела — создать пользователя с именем B.Simon в Amazon Web Services (AWS). Для единого входа в системе служб Amazon Web Services (AWS) не требуется создавать пользователя, поэтому здесь не нужно выполнять никаких действий.
+Цель этого раздела — создать пользователя с именем B.Simon в AWS Single-Account Access. Для включения единого входа в AWS Single-Account Access не требуется создавать пользователя, поэтому здесь не нужно выполнять никаких действий.
 
 ## <a name="test-sso"></a>Проверка единого входа
 
@@ -381,26 +384,28 @@ ms.locfileid: "101689017"
 
 #### <a name="sp-initiated"></a>Инициация поставщиком услуг:
 
-* Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены по URL-адресу для входа в Amazon Web Services (AWS), где можно инициировать поток входа.  
+* Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены по URL-адресу для входа в AWS Single-Account Access, где можно инициировать поток входа.  
 
-* Перейдите по URL-адресу для входа в Amazon Web Services (AWS) и инициируйте поток входа.
+* Перейдите по URL-адресу для входа в AWS Single-Account Access и инициируйте поток входа.
 
 #### <a name="idp-initiated"></a>Вход, инициированный поставщиком удостоверений
 
-* На портале Azure выберите **Тестировать приложение**, и вы автоматически войдете в приложение Amazon Web Services (AWS), для которого настроен единый вход. 
+* На портале Azure выберите **Тестировать приложение**, и вы автоматически войдете в приложение AWS Single-Account Access, для которого настроен единый вход. 
 
-Вы можете также использовать Панель доступа корпорации Майкрософт для тестирования приложения в любом режиме. Щелкнув плитку Amazon Web Services (AWS) на Панели доступа, вы перейдете на страницу входа приложения, если выполнены настройки для использования в режиме поставщика услуг, или автоматически войдете в приложение Amazon Web Services (AWS), для которого настроен единый вход, если выполнены настройки для использования в режиме поставщика удостоверений. См. дополнительные сведения о [панели доступа](../user-help/my-apps-portal-end-user-access.md)
+Вы можете также использовать портал "Мои приложения" корпорации Майкрософт для тестирования приложения в любом режиме. Щелкнув плитку AWS Single-Account Access на портале "Мои приложения", вы попадете на страницу входа приложения для инициации потока входа (при настройке в режиме поставщика службы) или автоматически войдете в приложение AWS Single-Account Access, для которого настроен единый вход (при настройке в режиме поставщика удостоверений). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 
 ## <a name="known-issues"></a>Известные проблемы
 
- * В разделе **Подготовка** в подразделе **Сопоставление** отображается сообщение "Идет загрузка...", но никогда не отображаются сопоставления атрибутов. Единственный рабочий процесс подготовки, поддерживаемый сегодня, — импорт ролей из AWS в Azure AD для выбора во время назначения пользователя или группы. Сопоставления атрибутов для этого определены заранее и не настраиваются.
+* Интеграцию подготовки доступа AWS Single-Account Access можно использовать только для подключения к конечным точкам общедоступного облака AWS. Интеграцию подготовки доступа AWS Single-Account нельзя использовать для получения доступа к средам AWS для государственных организаций.
+ 
+* В разделе **Подготовка** в подразделе **Сопоставление** отображается сообщение "Идет загрузка...", но никогда не отображаются сопоставления атрибутов. Единственный рабочий процесс подготовки, поддерживаемый сегодня, — импорт ролей из AWS в Azure AD для выбора во время назначения пользователя или группы. Сопоставления атрибутов для этого определены заранее и не настраиваются.
 
- * Раздел **Подготовка** поддерживает ввод только одного набора учетных данных для одного клиента AWS за раз. Все импортированные роли записываются в свойство `appRoles`[объекта `servicePrincipal`](/graph/api/resources/serviceprincipal?view=graph-rest-beta) Azure AD для клиента AWS.
+* Раздел **Подготовка** поддерживает ввод только одного набора учетных данных для одного клиента AWS за раз. Все импортированные роли записываются в свойство `appRoles`[объекта `servicePrincipal`](/graph/api/resources/serviceprincipal?view=graph-rest-beta) Azure AD для клиента AWS.
 
-   Вы можете добавить несколько клиентов AWS (представленных как `servicePrincipals`) в Azure AD из коллекции для подготовки. При этом существует известная проблема, когда не удается автоматически записывать все импортированные роли из нескольких `servicePrincipals` AWS, используемых для объединения в `servicePrincipal` и включения возможности единого входа.
+  Вы можете добавить несколько клиентов AWS (представленных как `servicePrincipals`) в Azure AD из коллекции для подготовки. При этом существует известная проблема, когда не удается автоматически записывать все импортированные роли из нескольких `servicePrincipals` AWS, используемых для объединения в `servicePrincipal` и включения возможности единого входа.
 
-   В качестве решения можно использовать [Microsoft Graph API](/graph/api/resources/serviceprincipal?view=graph-rest-beta) для извлечения всех `appRoles`, импортируемых во все `servicePrincipal` AWS с настроенной подготовкой. Потом вы сможете добавить эти строки ролей в `servicePrincipal` AWS с настроенным единым входом.
+  В качестве решения можно использовать [Microsoft Graph API](/graph/api/resources/serviceprincipal?view=graph-rest-beta) для извлечения всех `appRoles`, импортируемых во все `servicePrincipal` AWS с настроенной подготовкой. Потом вы сможете добавить эти строки ролей в `servicePrincipal` AWS с настроенным единым входом.
 
 * Роли должны отвечать следующим требованиям, чтобы быть доступными для импорта из AWS в Azure AD:
 
@@ -413,7 +418,7 @@ ms.locfileid: "101689017"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Amazon Web Services (AWS) вы сможете применить функцию управления сеансом, которая защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа в режиме реального времени. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-aad).
+После настройки AWS Single-Account Access вы сможете применить функцию управления сеансами, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-aad).
 
 
 [11]: ./media/amazon-web-service-tutorial/ic795031.png

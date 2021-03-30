@@ -6,14 +6,14 @@ ms.author: sumuth
 ms.service: mysql
 ms.devlang: azurecli
 ms.topic: tutorial
-ms.date: 9/21/2020
+ms.date: 03/18/2021
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: a7b673dc8dfeb2ebf86aec5b7449df91c2ffd635
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.openlocfilehash: 3e334eda46e5e67a0fc0755f5e02a0724d34a4b4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92534062"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104657643"
 ---
 # <a name="tutorial-create-an-azure-database-for-mysql---flexible-server-preview-with-app-services-web-app-in-virtual-network"></a>Руководство по созданию гибкого сервера Базы данных Azure для MySQL (предварительная версия) с веб-приложением Службы приложений в той же виртуальной сети
 
@@ -21,6 +21,14 @@ ms.locfileid: "92534062"
 > Сейчас предоставляется общедоступная предварительная версия Гибкого сервера Базы данных Azure для MySQL.
 
 В этом учебнике показано, как создать веб-приложение Службы приложений Azure и гибкий сервер Базы данных Azure для MySQL (предварительная версия) в [виртуальной сети](../../virtual-network/virtual-networks-overview.md).
+
+Из этого учебного курса вы узнаете следующее:
+>[!div class="checklist"]
+> * создание гибкого сервера MySQL в виртуальной сети;
+> * создание подсети для ее делегирования Службе приложений;
+> * Создание веб-приложения
+> * добавление веб-приложения в виртуальную сеть;
+> * подключение к Postgres из веб-приложения. 
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -37,7 +45,7 @@ az login
 Если вы используете несколько подписок, выберите соответствующую, в которой за ресурс будет взиматься плата. Выберите конкретный идентификатор подписки вашей учетной записи, выполнив команду [az account set](/cli/azure/account). Подставьте свойство **subscription ID** из выходных данных **az login** для своей подписки в заполнитель для идентификатора подписки.
 
 ```azurecli
-az account set --subscription <subscription id>
+az account set --subscription <subscription ID>
 ```
 
 ## <a name="create-an-azure-database-for-mysql-flexible-server"></a>Создание сервера для Базы данных Azure для MySQL (Гибкий сервер)
@@ -46,16 +54,24 @@ az account set --subscription <subscription id>
 ```azurecli
 az mysql flexible-server create --resource-group myresourcegroup --location westus2
 ```
-С помощью этой команды выполняются следующие действия (может занять несколько минут):
+Скопируйте строку подключения и имя только что созданной виртуальной сети. С помощью этой команды выполняются следующие действия (может занять несколько минут):
 
 - Создайте группу ресурсов, если она еще не существует.
 - Создается имя сервера, если оно не предоставлено.
 - Создайте виртуальную сеть для нового сервера MySQL. Запишите имя виртуальной сети и имя подсети, которые созданы для этого сервера, так как веб-приложение нужно будет добавить в ту же виртуальную сеть.
 - Создается имя пользователя и пароль администратора для этого сервера, если они не предоставлены.
-- Создается пустая база данных с именем **flexibleserverdb** .
+- Создается пустая база данных с именем **flexibleserverdb**.
 
 > [!NOTE]
 > Если вы не указали пароль, запишите тот, который будет создан автоматически. Если вы забудете пароль, вам придется сбросить его с помощью команды ``` az mysql flexible-server update```.
+
+## <a name="create-subnet-for-app-service-endpoint"></a>Создание подсети для конечной точки Службы приложений
+Теперь нам нужно создать подсеть, которая делегируется конечной точке веб-приложения Службы приложений. Выполните следующую команду, чтобы создать подсеть в той же виртуальной сети, в которой был создан сервер базы данных. 
+
+```azurecli
+az network vnet subnet create -g myresourcegroup --vnet-name VNETName --name webappsubnetName  --address-prefixes 10.0.1.0/24  --delegations Microsoft.Web/serverFarms --service-endpoints Microsoft.Web
+```
+После выполнения этой команды запишите имя виртуальной сети и имя подсети. Они понадобятся, чтобы добавить правило интеграции с виртуальной сетью для веб-приложения после его создания. 
 
 ## <a name="create-a-web-app"></a>Создание веб-приложения
 
@@ -64,12 +80,13 @@ az mysql flexible-server create --resource-group myresourcegroup --location west
 Создайте приложение Службы приложений (хост-процесс) с помощью команды az webapp up.
 
 ```azurecli
-az webapp up --resource-group myresourcegroup --location westus2 --plan testappserviceplan --sku B1 --name mywebapp
+az webapp up --resource-group myresourcegroup --location westus2 --plan testappserviceplan --sku P2V2 --name mywebapp
 ```
 
 > [!NOTE]
 > - Для аргумента --location укажите то же расположение, что и для базы данных в предыдущем разделе.
 > - Замените _&lt;app-name>_ уникальным в пределах платформы Azure именем (конечная точка сервера имеет адрес https://\<app-name>.azurewebsites.net). В значении <app-name> допускаются символы A-Z, 0–9 и "-". Рекомендуется использовать сочетание названия компании и идентификатора приложения.
+> - Уровень "Базовый" службы приложений не поддерживает интеграцию с виртуальной сетью. Используйте уровень "Стандартный" или "Премиум". 
 
 С помощью этой команды выполняются следующие действия (может занять несколько минут):
 
@@ -81,10 +98,10 @@ az webapp up --resource-group myresourcegroup --location westus2 --plan testapps
 
 ## <a name="add-the-web-app-to-the-virtual-network"></a>Добавление веб-приложения в виртуальную сеть
 
-Используйте команду **az webapp vnet-integration** , чтобы добавить в веб-приложение региональную интеграцию с виртуальной сетью. Замените _&lt;vnet-name>_ и _&lt;subnet-name_ именем виртуальной сети и подсети, которые использует гибкий сервер.
+Используйте команду **az webapp vnet-integration**, чтобы добавить в веб-приложение региональную интеграцию с виртуальной сетью. Замените _&lt;vnet-name>_ и _&lt;subnet-name_ именем виртуальной сети и подсети, которые использует гибкий сервер.
 
 ```azurecli
-az webapp vnet-integration add -g myresourcegroup -n  mywebapp --vnet <vnet-name> --subnet <subnet-name>
+az webapp vnet-integration add -g myresourcegroup -n  mywebapp --vnet VNETName --subnet webappsubnetName
 ```
 
 ## <a name="configure-environment-variables-to-connect-the-database"></a>Настройка переменных среды для подключения к базе данных

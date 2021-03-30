@@ -6,13 +6,13 @@ ms.author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: overview
-ms.date: 03/08/2021
-ms.openlocfilehash: d45dae8b0b3725555bd83a05032339671a9595be
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.date: 03/23/2021
+ms.openlocfilehash: 1825f5be8a4f8a8ddfba931dfbc7e77186b4331f
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102454370"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889456"
 ---
 # <a name="azure-security-center-free-vs-azure-defender-enabled"></a>Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender
 Azure Defender предоставляется бесплатно в течение 30 дней с начала использования. Если по истечении 30 дней вы продолжаете использовать службу, мы автоматически начнем начислять плату за использование.
@@ -48,6 +48,8 @@ Azure Defender предоставляется бесплатно в течени
 - [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, будет ли плата взиматься дважды?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-will-i-be-charged-twice)
 - [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, распространяется ли возможность бесплатного приема данных объемом 500 МБ на все рабочие области?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-is-the-500-mb-free-data-ingestion-available-on-all-of-them)
 - [Бесплатный прием данных объемом 500 МБ рассчитывается для всей рабочей области или строго для каждого компьютера?](#is-the-500-mb-free-data-ingestion-calculated-for-an-entire-workspace-or-strictly-per-machine)
+- [Какие типы данных включены в ежедневный лимит данных 500 MB?](#what-data-types-are-included-in-the-500-mb-data-daily-allowance)
+
 
 ### <a name="how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center"></a>Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности?
 В подписках Azure может быть несколько администраторов с разрешениями на изменение параметров цен. Чтобы узнать, какой именно пользователь внес изменения, используйте журнал действий Azure.
@@ -114,6 +116,24 @@ Azure Defender предоставляется бесплатно в течени
 Для каждого компьютера, подключенного к рабочей области, вы получаете возможность бесплатного приема 500 МБ данных в день. В первую очередь это касается типов данных безопасности, собираемых непосредственно Центром безопасности Azure.
 
 Это значение представляет собой среднесуточный объем по всем узлам. Таким образом, даже если с одних компьютеров отправляется 100 МБ, а с других — 800 МБ, но общая сумма не превышает **[количество компьютеров] x 500 МБ** (бесплатное ограничение), с вас не будет взиматься дополнительная плата.
+
+### <a name="what-data-types-are-included-in-the-500-mb-data-daily-allowance"></a>Какие типы данных включены в ежедневный лимит данных 500 MB?
+
+Выставление счетов в Центре безопасности связано с выставлением счетов за Log Analytics. Центр безопасности выделяет 500 Мб/день для следующего подмножества [типов данных безопасности](/azure/azure-monitor/reference/tables/tables-category.md#security):
+- WindowsEvent
+- SecurityAlert
+- SecurityBaseline
+- SecurityBaselineSummary
+- SecurityDetection
+- SecurityEvent
+- WindowsFirewall
+- MaliciousIPCommunication
+- LinuxAuditLog
+- SysmonEvent
+- ProtectionStatus
+- Типы данных Update и UpdateSummary, если в рабочей области не выполняется решение "Управление обновлениями", или если включено целевое решение
+
+Если ценовой категорией рабочей области является устаревшая категория "На узел", распределения Центра безопасности и Log Analytics объединяются и совместно применяются ко всем оплачиваемым принимаемым данным.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 В этой статье описаны варианты цен в Центре безопасности. Дополнительные материалы:
