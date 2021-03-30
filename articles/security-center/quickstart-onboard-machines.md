@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.service: security-center
 manager: rkarlin
 zone_pivot_groups: non-azure-machines
-ms.openlocfilehash: b5dd06c148c53517214b47b39f083c99d0f37e0b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 68fcf8a8feb046fca2c26041d92264dd8b3a638e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101712204"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "103465503"
 ---
 # <a name="connect-your-non-azure-machines-to-security-center"></a>Подключение компьютеров, не связанных с Azure, к Центру безопасности
 
@@ -75,24 +75,24 @@ ms.locfileid: "101712204"
 
     Здесь нужно выбрать соответствующую процедуру в зависимости от типа подключаемых компьютеров:
 
-    - [Подключение виртуальных машин Azure Stack](#onboard-your-azure-stack-vms)
+    - [Подключение виртуальных машин Azure Stack Hub](#onboard-your-azure-stack-hub-vms)
     - [Подключение компьютеров Linux](#onboard-your-linux-machines)
     - [Подключение компьютеров Windows](#onboard-your-windows-machines)
 
-### <a name="onboard-your-azure-stack-vms"></a>Подключение виртуальных машин Azure Stack
+### <a name="onboard-your-azure-stack-hub-vms"></a>Подключение виртуальных машин Azure Stack Hub
 
-Чтобы добавить виртуальные машины Azure Stack, необходимо указать сведения со страницы **Agents management** (Управление агентами), а также настроить расширение виртуальной машины **Управление конфигурацией и обновлениями Azure Monitor** на виртуальных машинах, работающих в Azure Stack.
+Чтобы добавить виртуальные машины Azure Stack Hub, необходимо указать сведения со страницы **Управление агентами**, а также настроить расширение виртуальной машины **Управление конфигурацией и обновлениями Azure Monitor** на виртуальных машинах, работающих в экземпляре Azure Stack Hub.
 
 1. На странице **Agents management** (Управление агентами) скопируйте **идентификатор рабочей области**  и **первичный ключ** в Блокнот.
-1. Войдите на портал **Azure Stack** и откройте страницу **Виртуальные машины**.
+1. Войдите на портал **Azure Stack Hub** и откройте страницу **Виртуальные машины**.
 1. Выберите виртуальную машину, которую необходимо защитить с помощью Центра безопасности.
     >[!TIP]
-    > Сведения о том, как создать виртуальную машину в Azure Stack, см. в [этом кратком руководстве по виртуальным машинам Windows](/azure-stack/user/azure-stack-quick-windows-portal) или [этом кратком руководстве по виртуальным машинам Linux](/azure-stack/user/azure-stack-quick-linux-portal).
+    > Сведения о том, как создать виртуальную машину в Azure Stack Hub, см. в кратком руководстве по виртуальным машинам [Windows](/azure-stack/user/azure-stack-quick-windows-portal) или [Linux](/azure-stack/user/azure-stack-quick-linux-portal).
 1. Выберите **Расширения**. Появится список расширений виртуальных машин, которые установлены на этой виртуальной машине.
 1. Выберите вкладку **Добавить**. Откроется меню **Новый ресурс** и отобразится список доступных расширений виртуальных машин.
 1. Выберите расширение **Управление конфигурацией и обновлениями Azure Monitor** и нажмите кнопку **Создать**. Откроется страница конфигурации **Установить расширение**.
     >[!NOTE]
-    > Если расширение **Azure Monitor, Update and Configuration Management** отсутствует в marketplace, обратитесь к оператору Azure Stack, чтобы получить это расширение.
+    > Если расширение **Azure Monitor, Update and Configuration Management** отсутствует в Marketplace, обратитесь к оператору Azure Stack Hub, чтобы получить это расширение.
 1. На странице конфигурации **Установить расширение** вставьте **идентификатор рабочей области** и **ключ рабочей области (первичный ключ)** , скопированные в Блокнот на предыдущем шаге.
 1. Завершив настройку, нажмите кнопку **ОК**. Для расширения отобразится состояние **Подготовка успешно завершена**. Виртуальная машина отобразится в Центре безопасности в течение часа.
 

@@ -10,12 +10,12 @@ ms.service: cognitive-services
 ms.topic: conceptual
 ms.date: 03/15/2021
 ms.author: aahi
-ms.openlocfilehash: 69c83e9172a8369b7ff31116ee4db74fc33d86bb
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.openlocfilehash: af957758918b99dcb44732eb536c0ca031231a7a
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103472129"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868228"
 ---
 # <a name="quickstart-create-a-cognitive-services-resource-using-the-azure-portal"></a>Краткое руководство. Создание ресурса Cognitive Services с помощью портала Azure
 
@@ -39,12 +39,10 @@ Azure Cognitive Services — это облачные службы с REST API �
 
 В настоящее время ресурс для нескольких служб предоставляет доступ к следующим службам Cognitive Services:
 
-* Компьютерное зрение
-* Content Moderator
-* Распознавание лиц
-* Распознавание речи (LUIS)
-* Анализ текста
-* API перевода
+* **Зрение**. Компьютерное зрение, Пользовательское визуальное распознавание, Распознаватель документов, Распознавание лиц
+* **Речь**. Речь
+* **Язык**. Распознавание речи (LUIS), Анализ текста, Переводчик
+* **Решение**. Персонализатор, Content Moderator
 
 ### <a name="single-service-resource"></a>[Ресурс для одной службы](#tab/singleservice)
 
@@ -53,9 +51,10 @@ Azure Cognitive Services — это облачные службы с REST API �
 | Зрение                      | Речь                  | Язык                          | Решение             |
 |-----------------------------|-------------------------|-----------------------------------|----------------------|
 | [Компьютерное зрение](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision)         | [Службы "Речь"](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices)     | [Иммерсивное средство чтения](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesImmersiveReader)              | [Детектор аномалий](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesAnomalyDetector) | 
-| [Пользовательское визуальное распознавание](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesCustomVision) | [Распознавание говорящего](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeakerRecognition) | [Распознавание речи (LUIS)](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne) | [Content Moderator](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesContentModerator) | 
+| [Пользовательское визуальное распознавание](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesCustomVision) |  | [Распознавание речи (LUIS)](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne) | [Content Moderator](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesContentModerator) | 
 | [Распознавание лиц](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFace)                    |                         | [QnA Maker](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker)                     | [Персонализатор](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesPersonalizer)     |
-| [Распознаватель рукописного текста](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesInkRecognizer)        |                         | [Анализ текста](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)                |  [Помощник по метрикам](https://go.microsoft.com/fwlink/?linkid=2142156)                    |
+| [Распознаватель документов](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer)        |                         | [Анализ текста](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)                |  [Помощник по метрикам](https://go.microsoft.com/fwlink/?linkid=2142156)                    |
+| | | [Переводчик](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation) | |
 
 ---
 
@@ -72,9 +71,10 @@ Azure Cognitive Services — это облачные службы с REST API �
 | **Имя** | Описательное имя для ресурса Cognitive Services. Например, *MyCognitiveServicesResource*. |
 | **Ценовая категория** | Затраты на учетную запись Cognitive Services зависят от выбранных параметров и использования. Дополнительные сведения см. на [странице с ценами](https://azure.microsoft.com/pricing/details/cognitive-services/) API-интерфейсов.
 
-![Экран создания ресурса для нескольких служб](media/cognitive-services-apis-create-account/resource_create_screen-multi.png)
+<!--![Multi-service resource creation screen](media/cognitive-services-apis-create-account/resource_create_screen-multi.png)-->
+:::image type="content" source="media/cognitive-services-apis-create-account/resource_create_screen-multi.png" alt-text="Экран создания ресурса для нескольких служб":::
 
-Нажмите кнопку **создания**.
+Прочтите и примите условия (если применимо), а затем выберите **Просмотр и создание**.
 
 ### <a name="single-service-resource"></a>[Ресурс для одной службы](#tab/singleservice)
 
@@ -86,9 +86,10 @@ Azure Cognitive Services — это облачные службы с REST API �
 | **Имя** | Описательное имя для ресурса Cognitive Services. Например, *MyCognitiveServicesResource*. |
 | **Ценовая категория** | Затраты на учетную запись Cognitive Services зависят от выбранных параметров и использования. Дополнительные сведения см. на [странице с ценами](https://azure.microsoft.com/pricing/details/cognitive-services/) API-интерфейсов.
 
-![Экран создания ресурса для одной службы](media/cognitive-services-apis-create-account/resource_create_screen.png)
+<!--![Single-service resource creation screen](media/cognitive-services-apis-create-account/resource_create_screen.png)-->
+:::image type="content" source="media/cognitive-services-apis-create-account/resource_create_screen.png" alt-text="Экран создания ресурса для одной службы":::
 
-Нажмите кнопку **создания**.
+Нажмите **Next: Virtual Network** (Далее: виртуальная сеть), выберите тип доступа к сети, который вы хотите разрешить для ресурса, а затем нажмите **Просмотр и создание**.
 
 ---
 
@@ -116,8 +117,8 @@ Azure Cognitive Services — это облачные службы с REST API �
 
 ## <a name="see-also"></a>См. также раздел
 
-* [Проверка подлинности запросов к Azure Cognitive Services](authentication.md)
-* [Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)
-* [Краткое руководство. Создание ресурса Cognitive Services с помощью клиентской библиотеки управления Azure](.\cognitive-services-apis-create-account-client-library.md)
-* [Поддержка естественного языка в Azure Cognitive Services](language-support.md)
-* [Поддержка контейнеров в Azure Cognitive Services](cognitive-services-container-support.md)
+* Сведения о безопасной работе с Cognitive Services см. в статье **[Проверка подлинности запросов к Azure Cognitive Services](authentication.md)** .
+* См. статью **[Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)** , в которой можно увидеть список различных категорий в Cognitive Services.
+* Список естественных языков, поддерживаемых Cognitive Services, см. в статье **[Поддержка естественного языка](language-support.md)** .
+* Сведения об использовании Cognitive Services в локальной среде см. в статье **[Использование Cognitive Services в качестве контейнеров](cognitive-services-container-support.md)** .
+* См. статью **[Планирование затрат и управление ими в Cognitive Services](plan-manage-costs.md)** , чтобы получить сведения о том, как оценивать затраты на использование Cognitive Services.
