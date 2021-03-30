@@ -8,14 +8,14 @@ manager: nitinme
 ms.service: cognitive-services
 keywords: Cognitive Services, когнитивня аналитика, когнитивные решения, службы ИИ
 ms.topic: quickstart
-ms.date: 09/14/2020
+ms.date: 3/22/2021
 ms.author: aahi
-ms.openlocfilehash: c1e8b260f6c06d8f26f5ba99b4fb02edfa5e8656
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 08ff2f416a00002cde5767111ba5a6824a721324
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103472104"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104868177"
 ---
 # <a name="quickstart-create-a-cognitive-services-resource-using-the-azure-command-line-interfacecli"></a>Краткое руководство. Создание ресурса Cognitive Services с помощью интерфейса командной строки Azure (Azure CLI)
 
@@ -196,7 +196,8 @@ az group delete --name cognitive-services-resource-group
 
 ## <a name="see-also"></a>См. также раздел
 
-* [Проверка подлинности запросов к Azure Cognitive Services](authentication.md)
-* [Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)
-* [Поддержка естественного языка в Azure Cognitive Services](language-support.md)
-* [Поддержка контейнеров в Azure Cognitive Services](cognitive-services-container-support.md)
+* Сведения о безопасной работе с Cognitive Services см. в статье **[Проверка подлинности запросов к Azure Cognitive Services](authentication.md)** .
+* См. статью **[Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)** , в которой можно увидеть список различных категорий в Cognitive Services.
+* Список естественных языков, поддерживаемых Cognitive Services, см. в статье **[Поддержка естественного языка](language-support.md)** .
+* Сведения об использовании Cognitive Services в локальной среде см. в статье **[Использование Cognitive Services в качестве контейнеров](cognitive-services-container-support.md)** .
+* См. статью **[Планирование затрат и управление ими в Cognitive Services](plan-manage-costs.md)** , чтобы получить сведения о том, как оценивать затраты на использование Cognitive Services.

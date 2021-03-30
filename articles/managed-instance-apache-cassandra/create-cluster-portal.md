@@ -7,12 +7,12 @@ ms.service: managed-instance-apache-cassandra
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.custom: references_regions
-ms.openlocfilehash: d94bedad1ba7a2c6d814021b733404ccc58148ed
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: cb555eefb19b5db7ed7eb0792a813c295a4bf38b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102424688"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104588619"
 ---
 # <a name="quickstart-create-an-azure-managed-instance-for-apache-cassandra-cluster-from-the-azure-portal-preview"></a>Краткое руководство. Создание управляемого экземпляра Azure для кластера Apache Cassandra на портале Microsoft Azure (предварительная версия)
  
@@ -70,7 +70,7 @@ ms.locfileid: "102424688"
    ```
 
    > [!NOTE]
-   > Значения `assignee` и `role` в предыдущей команде — это фиксированные идентификаторы субъекта-службы и роли соответственно.
+   > Значения `assignee` и `role` в предыдущей команде фиксированы. Введите эти значения точно так же, как указано в команде. Иначе при создании кластера произойдет ошибка. Если при выполнении этой команды возникнут ошибки, возможно, у вас нет разрешений на ее выполнение. Обратитесь к администратору для получения разрешений.
 
 1. После завершения работы настройки сети выберите **Просмотр и создание** > **Создать**
 
@@ -87,7 +87,6 @@ ms.locfileid: "102424688"
 1. Чтобы просмотреть узлы кластера, перейдите к области виртуальной сети Microsoft Azure, которая использовалась для создания кластера, и откройте панель **Обзор**, чтобы увидеть узлы:
 
    :::image type="content" source="./media/create-cluster-portal/resources.png" alt-text="Просмотр ресурсов кластера." lightbox="./media/create-cluster-portal/resources.png" border="true":::
-
 
 
 ## <a name="connecting-to-your-cluster"></a>Подключение к кластеру
@@ -113,6 +112,15 @@ export SSL_VALIDATE=false
 host=("<IP>" "<IP>" "<IP>")
 cqlsh $host 9042 -u cassandra -p cassandra --ssl
 ```
+
+## <a name="troubleshooting"></a>Устранение неполадок
+
+Если при применении разрешений к виртуальной сети возникла ошибка, например, информирующая о том, что не удается найти пользователя или субъект-службу в базе данных графа (*Cannot find user or service principal in graph database for 'e5007d2c-4b13-4a74-9b6a-605d99f03501'* ), это же разрешение можно применить вручную на портале Azure. Чтобы применить разрешения на портале, перейдите на панель **Управление доступом (IAM)** существующей виртуальной сети и добавьте для Azure Cosmos DB назначение роли "Сетевой администратор". Если при поиске Azure Cosmos DB появляются две записи, добавьте обе записи, как показано на следующем рисунке: 
+
+   :::image type="content" source="./media/create-cluster-cli/apply-permissions.png" alt-text="Применение разрешений" lightbox="./media/create-cluster-cli/apply-permissions.png" border="true":::
+
+> [!NOTE] 
+> Назначение роли Azure Cosmos DB используется только в целях развертывания. В Управляемом экземпляре Azure для Apache Cassandra нет внутренних зависимостей от Azure Cosmos DB.   
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

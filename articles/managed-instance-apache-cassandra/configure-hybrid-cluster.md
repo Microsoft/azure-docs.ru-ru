@@ -6,12 +6,12 @@ ms.author: thvankra
 ms.service: managed-instance-apache-cassandra
 ms.topic: quickstart
 ms.date: 03/02/2021
-ms.openlocfilehash: 11daa548e90aa1906ba87e081fa1e0be6fe6aff8
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: b022bff9db87c248881cd18cc21569aaef8f404a
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102430774"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562143"
 ---
 # <a name="quickstart-configure-a-hybrid-cluster-with-azure-managed-instance-for-apache-cassandra-preview"></a>Краткое руководство. Настройка гибридного кластера с помощью службы "Управляемый экземпляр Azure для Apache Cassandra" (предварительная версия)
 
@@ -28,7 +28,7 @@ ms.locfileid: "102430774"
 
 * Для работы с этой статьей потребуется Azure CLI 2.12.1 или более поздней версии. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
-* [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) с подключением к собственной или локальной среде. Дополнительные сведения о подключении локальных сред к Azure см. в статье [Подключение локальной сети к Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/).
+* [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) с подключением к собственной или локальной среде. Дополнительные сведения о подключении локальных сред к Azure см. в статье [Подключение локальной сети к Azure](/azure/architecture/reference-architectures/hybrid-networking/).
 
 ## <a name="configure-a-hybrid-cluster"></a><a id="create-account"></a>Настройка гибридного кластера
 
@@ -48,16 +48,17 @@ ms.locfileid: "102430774"
    > [!NOTE]
    > Значения `assignee` и `role` в предыдущей команде являются фиксированными идентификаторами субъекта-службы и роли соответственно.
 
-1. Теперь нам предстоит настроить ресурсы для гибридного кластера. Так как кластер у вас уже есть, имя кластера здесь является логическим ресурсом, который позволяет указать имя существующего кластера. Обязательно указывайте имя существующего кластера при определении переменных `clusterName` и `clusterNameOverride` в следующем скрипте.
+1. Теперь нам предстоит настроить ресурсы для гибридного кластера. Так как кластер у вас уже есть, имя кластера здесь является логическим ресурсом, который позволяет указать имя существующего кластера. Обязательно указывайте имя существующего кластера при определении переменных `clusterName` и `clusterNameOverride` в следующем скрипте. Кроме того, нужно указать начальные узлы, общедоступные сертификаты клиентов (если вы настроили открытый и закрытый ключ для конечной точки Cassandra) и сертификаты протоколов gossip для существующего кластера.
 
-   Кроме того, нужно указать начальные узлы, общедоступные сертификаты клиентов (если вы настроили открытый и закрытый ключ для конечной точки Cassandra) и сертификаты протоколов gossip для существующего кластера. Также потребуется указать идентификатор ресурса, который вы скопировали выше, для определения переменной `delegatedManagementSubnetId`.
+   > [!NOTE]
+   > Значение переменной `delegatedManagementSubnetId`, которое вы будете указывать ниже, точно совпадает со значением `--scope`, указанным в команде выше:
 
    ```azurecli-interactive
    resourceGroupName='MyResourceGroup'
    clusterName='cassandra-hybrid-cluster-legal-name'
    clusterNameOverride='cassandra-hybrid-cluster-illegal-name'
    location='eastus2'
-   delegatedManagementSubnetId='<Resource ID>'
+   delegatedManagementSubnetId='/subscriptions/<subscription ID>/resourceGroups/<resource group name>/providers/Microsoft.Network/virtualNetworks/<VNet name>/subnets/<subnet name>'
     
    # You can override the cluster name if the original name is not legal for an Azure resource:
    # overrideClusterName='ClusterNameIllegalForAzureResource'
@@ -99,14 +100,13 @@ ms.locfileid: "102430774"
    clusterName='cassandra-hybrid-cluster'
    dataCenterName='dc1'
    dataCenterLocation='eastus2'
-   delegatedSubnetId= '<Resource ID>'
     
    az managed-cassandra datacenter create \
        --resource-group $resourceGroupName \
        --cluster-name $clusterName \
        --data-center-name $dataCenterName \
        --data-center-location $dataCenterLocation \
-       --delegated-subnet-id $delegatedSubnetId \
+       --delegated-subnet-id $delegatedManagementSubnetId \
        --node-count 9 
    ```
 
@@ -141,6 +141,15 @@ ms.locfileid: "102430774"
    ```bash
     ALTER KEYSPACE "system_auth" WITH REPLICATION = {'class': 'NetworkTopologyStrategy', ‘on-premise-dc': 3, ‘managed-instance-dc': 3}
    ```
+
+## <a name="troubleshooting"></a>Устранение неполадок
+
+Если при применении разрешений к виртуальной сети возникла ошибка, например, информирующая о том, что не удается найти пользователя или субъект-службу в базе данных графа (*Cannot find user or service principal in graph database for 'e5007d2c-4b13-4a74-9b6a-605d99f03501'* ), это же разрешение можно применить вручную на портале Azure. Чтобы применить разрешения на портале, перейдите на панель **Управление доступом (IAM)** существующей виртуальной сети и добавьте для Azure Cosmos DB назначение роли "Сетевой администратор". Если при поиске Azure Cosmos DB появляются две записи, добавьте обе записи, как показано на следующем рисунке: 
+
+   :::image type="content" source="./media/create-cluster-cli/apply-permissions.png" alt-text="Применение разрешений" lightbox="./media/create-cluster-cli/apply-permissions.png" border="true":::
+
+> [!NOTE] 
+> Назначение роли Azure Cosmos DB используется только в целях развертывания. В Управляемом экземпляре Azure для Apache Cassandra нет внутренних зависимостей от Azure Cosmos DB.  
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

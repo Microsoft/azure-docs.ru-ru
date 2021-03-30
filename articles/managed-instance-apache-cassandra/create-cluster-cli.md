@@ -5,13 +5,13 @@ author: TheovanKraay
 ms.author: thvankra
 ms.service: managed-instance-apache-cassandra
 ms.topic: quickstart
-ms.date: 03/02/2021
-ms.openlocfilehash: 86fa7e2e45dacb86b6601b699dca46b1b909fd08
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.date: 03/15/2021
+ms.openlocfilehash: b719310a331044df363efcc6b79be323faf49247
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102424705"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105562109"
 ---
 # <a name="quickstart-create-an-azure-managed-instance-for-apache-cassandra-cluster-using-azure-cli-preview"></a>Краткое руководство. Создание Управляемого экземпляра Azure для кластера Apache Cassandra с помощью Azure CLI (предварительная версия)
 
@@ -26,12 +26,12 @@ ms.locfileid: "102424705"
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
-* Для работы с этой статьей потребуется Azure CLI 2.12.1 или более поздней версии. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
-
-* [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) с подключением к собственной или локальной среде. Дополнительные сведения о подключении локальных сред к Azure см. в статье [Подключение локальной сети к Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/).
+* [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) с подключением к собственной или локальной среде. Дополнительные сведения о подключении локальных сред к Azure см. в статье [Подключение локальной сети к Azure](/azure/architecture/reference-architectures/hybrid-networking/).
 
 * Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
+> [!IMPORTANT]
+> Для работы с этой статьей потребуется Azure CLI 2.17.1 или более поздней версии. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="create-a-managed-instance-cluster"></a><a id="create-cluster"></a>Создание кластера с управляемым экземпляром
 
@@ -56,15 +56,18 @@ ms.locfileid: "102424705"
    ```
 
    > [!NOTE]
-   > Значения `assignee` и `role` в предыдущей команде являются фиксированными идентификаторами субъекта-службы и роли соответственно.
+   > Значения `assignee` и `role` в предыдущей команде фиксированы. Введите эти значения точно так же, как указано в команде. Иначе при создании кластера произойдет ошибка. Если при выполнении этой команды возникнут ошибки, возможно, у вас нет разрешений на ее выполнение. Обратитесь к администратору для получения разрешений.
 
-1. Затем создайте кластер в только что созданной виртуальной сети. Выполните следующую команду и убедитесь, что используете значение `Resource ID`, полученное в предыдущей команде, в качестве значения переменной `delegatedManagementSubnetId`:
+1. Затем создайте кластер в только что созданной виртуальной сети с помощью команды [az managed-cassandra cluster create](/cli/azure/ext/cosmosdb-preview/managed-cassandra/cluster?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_cluster_create). Выполните следующую команду со значением переменной `delegatedManagementSubnetId`.
+
+   > [!NOTE]
+   > Значение переменной `delegatedManagementSubnetId`, которое вы будете указывать ниже, точно совпадает со значением `--scope`, указанным в команде выше:
 
    ```azurecli-interactive
    resourceGroupName='<Resource_Group_Name>'
    clusterName='<Cluster_Name>'
    location='eastus2'
-   delegatedManagementSubnetId='<Resource_ID>'
+   delegatedManagementSubnetId='/subscriptions/<subscription ID>/resourceGroups/<resource group name>/providers/Microsoft.Network/virtualNetworks/<VNet name>/subnets/<subnet name>'
    initialCassandraAdminPassword='myPassword'
     
    az managed-cassandra cluster create \
@@ -76,30 +79,28 @@ ms.locfileid: "102424705"
       --debug
    ```
 
-1. Наконец, создайте центр обработки данных для кластера с тремя узлами:
+1. Наконец, создайте центр обработки данных для кластера с тремя узлами. Для этого используйте команду [az managed-cassandra datacenter create](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_create):
 
    ```azurecli-interactive
    dataCenterName='dc1'
    dataCenterLocation='eastus2'
-   delegatedSubnetId='<Resource_ID>'
     
    az managed-cassandra datacenter create \
       --resource-group $resourceGroupName \
       --cluster-name $clusterName \
       --data-center-name $dataCenterName \
       --data-center-location $dataCenterLocation \
-      --delegated-subnet-id $delegatedSubnetId \
+      --delegated-subnet-id $delegatedManagementSubnetId \
       --node-count 3 
    ```
 
-1. После создания центра обработки данных, если в нем требуется вертикально увеличить или вертикально уменьшить масштаб узлов, выполните следующую команду. Измените значение `node-count` параметра на требуемое значение:
+1. После создания центра обработки данных, если в нем требуется вертикально увеличить или вертикально уменьшить масштаб узлов, выполните команду [az managed-cassandra datacenter update](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_update). Измените значение `node-count` параметра на требуемое значение:
 
    ```azurecli-interactive
    resourceGroupName='<Resource_Group_Name>'
    clusterName='<Cluster Name>'
    dataCenterName='dc1'
    dataCenterLocation='eastus2'
-   delegatedSubnetId= '<Resource_ID>'
     
    az managed-cassandra datacenter update \
       --resource-group $resourceGroupName \
@@ -131,6 +132,15 @@ export SSL_VALIDATE=false
 host=("<IP>" "<IP>" "<IP>")
 cqlsh $host 9042 -u cassandra -p cassandra --ssl
 ```
+
+## <a name="troubleshooting"></a>Устранение неполадок
+
+Если при применении разрешений к виртуальной сети возникла ошибка, например, информирующая о том, что не удается найти пользователя или субъект-службу в базе данных графа (*Cannot find user or service principal in graph database for 'e5007d2c-4b13-4a74-9b6a-605d99f03501'* ), это же разрешение можно применить вручную на портале Azure. Чтобы применить разрешения на портале, перейдите на панель **Управление доступом (IAM)** существующей виртуальной сети и добавьте для Azure Cosmos DB назначение роли "Сетевой администратор". Если при поиске Azure Cosmos DB появляются две записи, добавьте обе записи, как показано на следующем рисунке: 
+
+   :::image type="content" source="./media/create-cluster-cli/apply-permissions.png" alt-text="Применение разрешений" lightbox="./media/create-cluster-cli/apply-permissions.png" border="true":::
+
+> [!NOTE] 
+> Назначение роли Azure Cosmos DB используется только в целях развертывания. В Управляемом экземпляре Azure для Apache Cassandra нет внутренних зависимостей от Azure Cosmos DB.  
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

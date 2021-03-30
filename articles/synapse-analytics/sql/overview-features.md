@@ -9,12 +9,12 @@ ms.subservice: sql
 ms.date: 04/15/2020
 ms.author: jovanpop
 ms.reviewer: jrasnick
-ms.openlocfilehash: 769149d49d4d233c5c202f570ceb871365728c59
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: b22f2ed2704f752ff2ca7a5bc21e856b076f0f70
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101671219"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584097"
 ---
 # <a name="transact-sql-features-supported-in-azure-synapse-sql"></a>Функции T-SQL, которые поддерживаются в Azure Synapse SQL
 
@@ -51,7 +51,7 @@ Azure Synapse SQL — это служба аналитики больших д�
 
 |   | Выделенные | Бессерверные приложения |
 | --- | --- | --- |
-| **Инструкция SELECT** | Да. Не поддерживаются предложения запроса Transact-SQL [FOR XML/FOR JSON](/sql/t-sql/queries/select-for-clause-transact-sql?view=azure-sqldw-latest&preserve-view=true) и [MATCH](/sql/t-sql/queries/match-sql-graph?view=azure-sqldw-latest&preserve-view=true). | Да. Не поддерживаются предложения запроса Transact-SQL [FOR XML](/sql/t-sql/queries/select-for-clause-transact-sql?view=azure-sqldw-latest&preserve-view=true), [MATCH](/sql/t-sql/queries/match-sql-graph?view=azure-sqldw-latest&preserve-view=true) и [PREDICT](/sql/t-sql/queries/predict-transact-sql?view=azure-sqldw-latest&preserve-view=true), а также указания запроса. |
+| **Инструкция SELECT** | Да. Не поддерживаются предложения запроса Transact-SQL [FOR XML/FOR JSON](/sql/t-sql/queries/select-for-clause-transact-sql?view=azure-sqldw-latest&preserve-view=true), [MATCH](/sql/t-sql/queries/match-sql-graph?view=azure-sqldw-latest&preserve-view=true) и OFFSET/FETCH. | Да. Не поддерживаются предложения запроса Transact-SQL [FOR XML](/sql/t-sql/queries/select-for-clause-transact-sql?view=azure-sqldw-latest&preserve-view=true), [MATCH](/sql/t-sql/queries/match-sql-graph?view=azure-sqldw-latest&preserve-view=true) и [PREDICT](/sql/t-sql/queries/predict-transact-sql?view=azure-sqldw-latest&preserve-view=true), GROUPNG SETS, а также указания запроса. |
 | **Инструкция INSERT** | Да | Нет |
 | **Инструкция UPDATE** | Да | Нет |
 | **Инструкция DELETE** | Да | Нет |
@@ -158,5 +158,5 @@ Synapse SQL позволяет использовать встроенные ф�
 ## <a name="next-steps"></a>Дальнейшие действия
 Рекомендации по работе с выделенным и бессерверным пулами SQL см. в следующих статьях:
 
-- [Рекомендации по использованию выделенного пула SQL](best-practices-sql-pool.md)
-- [Рекомендации по использованию бессерверного пула SQL](best-practices-sql-on-demand.md)
+- [Рекомендации по использованию выделенного пула SQL](best-practices-dedicated-sql-pool.md)
+- [Рекомендации по использованию бессерверного пула SQL](best-practices-serverless-sql-pool.md)

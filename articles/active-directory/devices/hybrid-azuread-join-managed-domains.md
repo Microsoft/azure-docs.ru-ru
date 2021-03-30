@@ -11,12 +11,12 @@ author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: sandeo
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7338fb480f76ed1a5edbf9502dc0946d08618a63
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 4545e92767a427b8cd89af07ed4d06053685977a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101644924"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578012"
 ---
 # <a name="tutorial-configure-hybrid-azure-active-directory-join-for-managed-domains"></a>Руководство по Настройка гибридного присоединения к Azure Active Directory для управляемых доменов
 
@@ -58,6 +58,9 @@ ms.locfileid: "101644924"
 > Azure AD не поддерживает смарт-карты и сертификаты в управляемых доменах.
 
 Проверьте, синхронизированы ли в Azure AD Connect объекты-компьютеры гибридных устройств, которые нужно присоединить к Azure AD. Если объекты-компьютеры принадлежат конкретным подразделениям, для этих подразделений нужно настроить синхронизацию в Azure AD Connect. Дополнительные сведения о том, как синхронизировать объекты-компьютеры с помощью Azure AD Connect, см. в разделе [Фильтрация по подразделениям](../hybrid/how-to-connect-sync-configure-filtering.md#organizational-unitbased-filtering).
+
+> [!NOTE]
+> Чтобы синхронизировать регистрацию устройства, при настройке регистрации устройства не исключайте атрибуты устройств по умолчанию из конфигурации синхронизации Azure AD Connect. Дополнительные сведения об атрибутах устройств по умолчанию, синхронизированных с AAD, см. в разделе [Windows 10](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#windows-10).
 
 Начиная с версии 1.1.819.0, с Azure AD Connect предоставляется мастер для настройки гибридного присоединения к Azure AD. Этот мастер значительно упрощает настройку. Мастер настраивает точки подключения службы (SCP) для регистрации устройств.
 

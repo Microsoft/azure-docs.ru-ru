@@ -3,12 +3,12 @@ title: Учебник по резервному копированию баз д
 description: Из этого учебника вы узнаете, как выполнять резервное копирование баз данных SAP HANA, запущенных на виртуальной машине Azure, в хранилище Служб восстановления для Azure Backup.
 ms.topic: tutorial
 ms.date: 02/24/2020
-ms.openlocfilehash: 5548717b25ea3ec027ba5f588e5e28faafbb5d6f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 00109de349c1fdfdbaff9de30d18f64d8b986a59
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101703687"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587650"
 ---
 # <a name="tutorial-back-up-sap-hana-databases-in-an-azure-vm"></a>Руководство по резервному копированию баз данных SAP HANA на виртуальной машине Azure
 
@@ -167,6 +167,18 @@ hdbuserstore list
 
 >[!NOTE]
 > Убедитесь, что в папке `/usr/sap/{SID}/home/.hdb/` есть уникальный набор файлов SSFS. По этому пути должна быть только одна папка.
+
+Ниже показано, как завершить выполнение скрипта перед регистрацией.
+
+|Куда  |Исходный тип  |Что запускать  |Комментарии  |
+|---------|---------|---------|---------|
+|Администратор ```<sid>``` (ОС)     |  HANA (ОС)       |   Ознакомьтесь с руководством и скачайте скрипт предварительной регистрации.      |   Ознакомьтесь с [предварительными требованиями, приведенными выше](#prerequisites). Скачайте скрипт предварительной регистрации [отсюда](https://aka.ms/scriptforpermsonhana).  |
+|Администратор ```<sid>``` (ОС) и пользователь SYSTEM (HANA)    |      HANA (ОС)   |   Выполните команду hdbuserstore Set.      |   Например, hdbuserstore Set SYSTEM hostname>:3```<Instance#>```13 SYSTEM ```<password>``` **Примечание.** Используйте имя узла вместо IP-адреса или полного доменного имени.      |
+|Администратор ```<sid>``` (ОС)    |   HANA (ОС)      |  Выполните команду hdbuserstore List.       |   Проверьте, включает ли результат хранилище по умолчанию, как показано ниже: ```KEY SYSTEM  ENV : <hostname>:3<Instance#>13  USER: SYSTEM```.      |
+|Привилегированный пользователь (ОС)     |   HANA (ОС)        |    Выполните скрипт предварительной регистрации Azure Backup HANA.      |    ```./msawb-plugin-config-com-sap-hana.sh -a --sid <SID> -n <Instance#> --system-key SYSTEM```     |
+|Администратор ```<sid>``` (ОС)    |  HANA (ОС)       |   Выполните команду hdbuserstore List.      |    Проверьте, включает ли результат новые строки, как показано ниже: ```KEY AZUREWLBACKUPHANAUSER  ENV : localhost: 3<Instance#>13   USER: AZUREWLBACKUPHANAUSER```.     |
+
+После успешного выполнения и проверки скрипта предварительной регистрации можно перейти к проверке [требований к подключению](#set-up-network-connectivity), а затем [настроить резервное копирование](#discover-the-databases) из хранилища Служб восстановления.
 
 ## <a name="create-a-recovery-services-vault"></a>Создание хранилища Служб восстановления
 

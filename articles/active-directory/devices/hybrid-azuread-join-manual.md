@@ -11,12 +11,12 @@ author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: sandeo
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f346b997b5e0c785d066ce3a1edaab8cbea10212
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 28cc8a858d1779e17c893d64eda5f907bb4c808e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101644125"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577994"
 ---
 # <a name="tutorial-configure-hybrid-azure-active-directory-joined-devices-manually"></a>Руководство по Настройка устройств с гибридным присоединением к Azure Active Directory
 
@@ -74,6 +74,9 @@ Azure AD Connect выполняет следующие функции:
 Если вы используете устройства Windows 10 под управлением версии 1703 или более ранней и при этом вашей организации требуется доступ к Интернету через исходящий прокси-сервер, необходимо реализовать автоматическое обнаружение веб-прокси (WPAD), чтобы компьютеры Windows 10 можно было зарегистрировать в Azure AD.
 
 Начиная с Windows 10 версии 1803, если попытка гибридного присоединения к Azure AD для федеративного домена (такого как AD FS) завершается ошибкой, а в Azure AD Connect настроена синхронизация объекта-устройства или компьютера с Azure AD, устройство попытается выполнить это присоединение с помощью синхронизированного компьютера или устройства.
+
+> [!NOTE]
+> Чтобы синхронизировать регистрацию устройства, при настройке регистрации устройства не исключайте атрибуты устройств по умолчанию из конфигурации синхронизации Azure AD Connect. Дополнительные сведения об атрибутах устройств по умолчанию, синхронизированных с Azure AD, см. в разделе [Windows 10](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#windows-10).
 
 Проверить, имеет ли устройство доступ к указанным выше ресурсам Майкрософт под системной учетной записью, можно с помощью [скрипта для проверки подключения при регистрации устройств](/samples/azure-samples/testdeviceregconnectivity/testdeviceregconnectivity/).
 

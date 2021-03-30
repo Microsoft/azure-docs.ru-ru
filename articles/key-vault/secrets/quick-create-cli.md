@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.custom: mvc, seo-javascript-september2019, seo-javascript-october2019, devx-track-azurecli
 ms.date: 01/27/2021
 ms.author: mbaldwin
-ms.openlocfilehash: e84a9fe15f648311c22fb0f7e8f8374454f5668a
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.openlocfilehash: 1443ab37beb28706227159c53d336384216d8387
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99989154"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582465"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault-using-azure-cli"></a>Краткое руководство. Настройка и получение секрета из Azure Key Vault с помощью Azure CLI
 
@@ -39,7 +39,7 @@ ms.locfileid: "99989154"
 
 Чтобы добавить секрет в хранилище, вам просто нужно выполнить несколько дополнительных шагов. Этот пароль может использоваться приложением. Пароль будет называться **ExamplePassword** и в нем будет храниться значение **hVFkk965BuUv**.
 
-Затем введите следующие команды, чтобы создать секрет в Key Vault с именем **ExamplePassword** и значением **hVFkk965BuUv**.
+Используйте команду Azure CLI [az keyvault secret set](/cli/azure/keyvault/secret#az_keyvault_secret_set), чтобы создать секрет в Key Vault с именем **ExamplePassword** и значением **hVFkk965BuUv**:
 
 ```azurecli
 az keyvault secret set --vault-name "<your-unique-keyvault-name>" --name "ExamplePassword" --value "hVFkk965BuUv"
@@ -64,5 +64,6 @@ az keyvault secret show --name "ExamplePassword" --vault-name "<your-unique-keyv
 С помощью этого краткого руководства вы создали Key Vault и сохранили в нем секрет. Дополнительные сведения о Key Vault и его интеграции в приложения см. в следующих статьях.
 
 - [Обзор Azure Key Vault](../general/overview.md)
+- Узнайте, как [хранить многострочные секреты в Key Vault](multiline-secrets.md).
 - Справочник по [командам az keyvault для Azure CLI](/cli/azure/keyvault)
 - Статья [Обзор системы безопасности Key Vault](../general/security-overview.md)
