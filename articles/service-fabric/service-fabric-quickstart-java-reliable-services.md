@@ -5,13 +5,13 @@ ms.topic: quickstart
 ms.date: 01/29/2019
 ms.custom: mvc, devcenter, seo-java-august2019, seo-java-september2019, devx-track-java
 ms.openlocfilehash: 2f1e5f8f73f74d4b427e574b9e6a75aaf84a4211
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91529869"
 ---
-# <a name="quickstart--deploy-a-java-app-to-azure-service-fabric-on-linux"></a>Краткое руководство.  Развертывание приложения Java в Azure Service Fabric в Linux
+# <a name="quickstart--deploy-a-java-app-to-azure-service-fabric-on-linux"></a>Краткое руководство. Развертывание приложения Java в Azure Service Fabric в Linux
 
 В этом кратком руководстве мы развернем приложение Java в Azure Service Fabric, используя интегрированную среду разработки Eclipse на компьютере разработчика Linux. После завершения этого руководства вы получите приложение для голосования с клиентской частью в виде веб-приложения Java, которое сохраняет результаты голосования во внутренней службе с отслеживанием состояния в кластере.
 
@@ -71,7 +71,7 @@ git clone https://github.com/Azure-Samples/service-fabric-java-quickstart.git
 Для масштабирования службы веб-интерфейса сделайте следующее:
 
 1. Откройте Service Fabric Explorer в своем кластере. Например, `https://localhost:19080`.
-2. Щелкните многоточие ( **...** ) рядом с узлом **fabric:/Voting/VotingWeb** в дереве и выберите **Масштабировать службу**.
+2. Щелкните многоточие (**...**) рядом с узлом **fabric:/Voting/VotingWeb** в дереве и выберите **Масштабировать службу**.
 
     ![Масштабирование службы в Azure Service Fabric](./media/service-fabric-quickstart-java/service-fabric-scale-service.png)
 
@@ -88,7 +88,7 @@ git clone https://github.com/Azure-Samples/service-fabric-java-quickstart.git
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этого руководства вы узнали, как выполнить следующие действия:
+В этом кратком руководстве рассматривались следующие темы:
 
 * Использование Eclipse в качестве средства для приложений Java Service Fabric.
 * Развертывание приложений Java в локальном кластере.

@@ -5,13 +5,13 @@ ms.topic: tutorial
 ms.date: 04/30/2018
 ms.custom: seodec18, mvc
 ms.openlocfilehash: 9222ac31e067cba6a0ffa71143c90f906ba6ff7f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "74454692"
 ---
-# <a name="tutorial-push-an-updated-container-image-to-a-geo-replicated-container-registry-for-regional-web-app-deployments"></a>Руководство по Отправка обновленного образа контейнера в геореплицируемый реестр контейнеров для развертывания в региональных веб-приложениях
+# <a name="tutorial-push-an-updated-container-image-to-a-geo-replicated-container-registry-for-regional-web-app-deployments"></a>Руководство. Отправка обновленного образа контейнера в геореплицируемый реестр контейнеров для региональных развертываний веб-приложений
 
 Это третья часть руководства из трех частей. В [предыдущем руководстве](container-registry-tutorial-deploy-app.md) была настроена георепликация для двух различных развертываний веб-приложений. В этом руководстве сначала изменяется приложение, а затем создается новый образ контейнера, который принудительно отправляется в геореплицированный реестр, и наконец, просматриваются изменения, развернутые автоматически веб-перехватчиками реестра контейнеров Azure в обоих экземплярах веб-приложений.
 
@@ -133,7 +133,7 @@ v1: digest: sha256:4c3f2211569346fbe2d1006c18cbea2a4a9dcc1eb3a078608cef70d3a186e
 
 В дополнение к георепликации, предоставляется еще одна функция реестра контейнеров под названием "Сборка ACR". Она помогает оптимизировать процесс развертывания контейнера. Ознакомьтесь с общими сведениями о функции "Сборка ACR", чтобы получить представление о ее возможностях:
 
-[Automate OS and framework patching with ACR Build](container-registry-tasks-overview.md) (Автоматизация установки исправлений ОС и платформы с помощью функции "Сборка ACR")
+[Автоматизация установки исправлений ОС и платформы с помощью решения "Сборка ACR"](container-registry-tasks-overview.md)
 
 <!-- IMAGES -->
 [deployed-app-eastus-modified]: ./media/container-registry-tutorial-deploy-update/deployed-app-eastus-modified.png
