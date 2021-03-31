@@ -1,14 +1,14 @@
 ---
-title: Краткое руководство. Отправка настраиваемых событий в гибридное подключение — Сетка событий Azure, Azure CLI
+title: Краткое руководство. Отправка пользовательских событий в Центры событий с помощью службы "Сетка событий" и Azure CLI
 description: Краткое руководство. Используйте службу "Сетка событий Azure" и Azure CLI, чтобы иметь возможность публиковать темы и подписываться на эти события. Концентратор событий используется для конечной точки.
 ms.date: 07/07/2020
 ms.topic: quickstart
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 7c236025f31e10c00b324e5ff3374bd6504b2b7e
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91324116"
 ---
 # <a name="quickstart-route-custom-events-to-azure-event-hubs-with-azure-cli-and-event-grid"></a>Краткое руководство. Перенаправление пользовательских событий в Центры событий Azure с помощью Azure CLI и службы "Сетка событий"
@@ -98,7 +98,7 @@ done
 
 Как правило, Вы создаете приложение, которое извлекает события из концентратора событий. Чтобы создать приложение, которое получает сообщения от концентратора событий, см.:
 
-* [Основные сведения о получении сообщений с помощью узла Event Processor Host в .NET Standard](../event-hubs/event-hubs-dotnet-standard-getstarted-send.md)
+* [Основные сведения о получении сообщений с помощью узла EventProcessorHost в .NET Standard](../event-hubs/event-hubs-dotnet-standard-getstarted-send.md)
 * [Получение событий от Центров событий Azure с помощью Java](../event-hubs/event-hubs-java-get-started-send.md)
 * [Получение событий из Центров событий с помощью Apache Storm](../event-hubs/event-hubs-storm-getstarted-receive.md)
 

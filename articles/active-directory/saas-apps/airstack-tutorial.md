@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с AirStack | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с Airstack | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и AirStack.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 07/29/2019
 ms.author: jeedes
 ms.openlocfilehash: 7e0b17c30985617791c1ce55a02f6a60253b43db
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92318947"
 ---
-# <a name="tutorial-integrate-airstack-with-azure-active-directory"></a>Руководство по Интеграции AirStack с Azure Active Directory
+# <a name="tutorial-integrate-airstack-with-azure-active-directory"></a>Руководство. Интеграция Airstack с Azure Active Directory
 
 В этом руководстве описано, как интегрировать AirStack с Azure Active Directory (Azure AD). Интеграция AirStack с Azure AD дает следующие возможности.
 
@@ -128,7 +128,7 @@ ms.locfileid: "92318947"
 
 ### <a name="create-airstack-test-user"></a>Создание тестового пользователя приложения AirStack
 
-В этом разделе вы узнаете, как создать пользователя B.Simon в приложении AirStack. Обратитесь к  [группе поддержки AirStack](mailto:jsinger@lenovo.com), чтобы добавить пользователей на платформу AirStack. Перед использованием единого входа необходимо создать и активировать пользователей.
+В этом разделе вы узнаете, как создать пользователя B.Simon в приложении AirStack. Чтобы добавить пользователей на платформу Airstack, обратитесь в [службу поддержки Airstack](mailto:jsinger@lenovo.com). Перед использованием единого входа необходимо создать и активировать пользователей.
 
 ### <a name="test-sso"></a>Проверка единого входа
 

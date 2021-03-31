@@ -1,5 +1,5 @@
 ---
-title: Руководство по интеграции Azure Active Directory с ANAQUA | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с ANAQUA | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и ANAQUA.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: jeedes
 ms.openlocfilehash: cf6f146265562e287df2cb3c4574742335d62efe
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92318663"
 ---
-# <a name="tutorial-integrate-anaqua-with-azure-active-directory"></a>Руководство по Интеграция ANAQUA с Azure Active Directory
+# <a name="tutorial-integrate-anaqua-with-azure-active-directory"></a>Руководство. Интеграция ANAQUA с Azure Active Directory
 
 В этом руководстве описано, как интегрировать ANAQUA с Azure Active Directory (Azure AD). Интеграция ANAQUA с Azure AD обеспечивает следующие возможности:
 
