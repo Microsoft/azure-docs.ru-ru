@@ -6,20 +6,24 @@ author: mikben
 manager: mikben
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 9/1/2020
+ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 7d39decaa6376c614e48b65ad2fc1b3043aa0a3c
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: cea425a3f133c54fecda06daa57e6e5e6d22a5d8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101682435"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104783624"
 ---
-[!INCLUDE [Private Preview Notice](../../includes/private-preview-include.md)]
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
 
 Пример **Group Calling Hero Sample for iOS** для Служб коммуникации Azure демонстрирует применение клиентской библиотеки вызовов Служб коммуникации для iOS, позволяющее создать групповое коммуникационное взаимодействие с передачей голоса и видео. В этом кратком руководстве описывается, как настроить и запустить этот пример. Для понимания контекста приводятся общие сведения о примере.
+
+## <a name="download-code"></a>Скачать код
+
+Итоговый код для этого краткого руководства можно найти на сайте [GitHub](https://github.com/Azure-Samples/communication-services-ios-calling-hero).
 
 ## <a name="overview"></a>Обзор
 
@@ -29,7 +33,7 @@ ms.locfileid: "101682435"
 
 :::image type="content" source="../media/calling/landing-page-ios.png" alt-text="Снимок экрана: целевая страница примера приложения.":::
 
-При нажатии кнопки Start new call (Начать новый вызов) приложение iOS создает новый вызов и присоединяется к нему. Приложение также позволяет подключиться к существующему вызову Служб коммуникации Azure, указав идентификатор этого вызова.
+При нажатии кнопки Start new call (Начать новый вызов) приложение iOS создает новый вызов и присоединяется к нему. Приложение позволяет подключиться к существующему вызову Служб коммуникации Azure, указав идентификатор этого вызова. Вы также можете присоединиться к собранию Teams, указав ссылку из приглашения.  (Ссылка для перехода имеет следующий формат: `https://teams.microsoft.com/l/meetup-join/`). Дополнительные сведения о взаимодействии с Teams см. в [основной документации по взаимодействию с Teams](../../concepts/teams-interop.md).
 
 После подключения к вызову вам будет предложено предоставить приложению разрешение на доступ к камере и микрофону. Также будет предложено ввести отображаемое имя.
 
@@ -51,7 +55,7 @@ ms.locfileid: "101682435"
 - Учетная запись Azure с активной подпиской. Дополнительные сведения см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - компьютер Mac с [Xcode](https://go.microsoft.com/fwLink/p/?LinkID=266532), а также действительный сертификат разработчика, установленный в цепочку ключей;
 - Ресурс Служб коммуникации Azure. Дополнительные сведения см. в статье [Краткое руководство по созданию ресурсов Служб коммуникации и управлению ими](../../quickstarts/create-communication-resource.md).
-- Функция Azure, выполняющая [логику доверенной службы](../../tutorials/trusted-service-tutorial.md) для получения маркеров доступа.
+- Функция Azure, запускающая [конечную точку проверки подлинности](../../tutorials/trusted-service-tutorial.md) для получения маркеров доступа.
 
 ## <a name="running-sample-locally"></a>Локальное выполнение примера
 
@@ -60,8 +64,8 @@ ms.locfileid: "101682435"
 ### <a name="before-running-the-sample-for-the-first-time"></a>Действия перед первым запуском примера
 
 1. Установите зависимости, выполнив команду `pod install`.
-2. Откройте `ACSCall.xcworkspace` в XCode.
-3. Обновите `AppSettings.plist`. Задайте для ключа `acsTokenFetchUrl` значение, соответствующее URL-адресу конечной точки аутентификации.
+2. Откройте `AzureCalling.xcworkspace` в XCode.
+3. Обновите `AppSettings.plist`. Задайте для ключа `communicationTokenFetchUrl` значение, соответствующее URL-адресу конечной точки аутентификации.
 
 ### <a name="run-sample"></a>Запуск примера
 
@@ -71,7 +75,7 @@ ms.locfileid: "101682435"
 
 В демонстрационных целях в этом примере по умолчанию используется общедоступная конечная точка для получения маркера Служб коммуникации Azure. Для реальных рабочих сценариев мы рекомендуем создать собственную защищенную конечную точку и выдавать собственные маркеры.
 
-С небольшой дополнительной настройкой этот пример поддерживает подключение к конечной точке с защитой **Azure Active Directory** (Azure AD), чтобы для получения маркера Служб коммуникации Azure требовался вход пользователя в систему. Соответствующие действия описаны ниже.
+Если выполнить дополнительную конфигурацию, этот пример будет поддерживать подключение к конечной точке с защитой **Azure Active Directory** (Azure AD), чтобы для получения маркера Служб коммуникации Azure требовался вход пользователя в систему. Соответствующие действия описаны ниже.
 
 1. Включите аутентификацию Azure Active Directory в приложении.  
    - [Регистрация приложения в Azure Active Directory (через параметры платформ iOS и macOS)](../../../active-directory/develop/tutorial-v2-ios.md) 
@@ -81,7 +85,7 @@ ms.locfileid: "101682435"
 :::image type="content" source="../media/calling/aad-overview.png" alt-text="Настройка Azure Active Directory на портале Azure.":::
 
 3. Откройте `AppSettings.plist` в Xcode и добавьте следующие значения ключей:
-   - `acsTokenFetchUrl`. URL-адрес для запроса маркера Служб коммуникации Azure 
+   - `communicationTokenFetchUrl`. URL-адрес для запроса маркера Служб коммуникации Azure 
    - `isAADAuthEnabled`. Логическое значение, указывающее, требуется ли аутентификация для маркера Служб коммуникации Azure.
    - `aadClientId`. Идентификатор приложения (клиента).
    - `aadTenantId`. Идентификатор каталога (арендатора).
@@ -94,6 +98,9 @@ ms.locfileid: "101682435"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
+>[!div class="nextstepaction"]
+>[Скачайте пример с GitHub.](https://github.com/Azure-Samples/communication-services-ios-calling-hero)
+
 Дополнительные сведения см. в следующих статьях:
 
 - Изучите, как правильно [использовать клиентскую библиотеку вызовов](../../quickstarts/voice-video-calling/calling-client-samples.md).
@@ -102,3 +109,5 @@ ms.locfileid: "101682435"
 ### <a name="additional-reading"></a>Дополнительные материалы
 
 - [Службы коммуникации Azure (GitHub)](https://github.com/Azure/communication) — дополнительные примеры и сведения на официальной странице GitHub
+- [Примеры](./../overview.md): дополнительные примеры см. на нашей странице обзора примеров.
+- [Функции вызов Служб коммуникации Azure](https://docs.microsoft.com/azure/communication-services/concepts/voice-video-calling/calling-sdk-features). Дополнительные сведения о пакете SDK для iOS см. в статье о [пакетах SDK для iOS для вызовов в Службах коммуникации Azure](https://github.com/Azure/Communication/releases/)
