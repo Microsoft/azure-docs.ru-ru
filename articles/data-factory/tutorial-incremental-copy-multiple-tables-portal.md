@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-lt-2019; seo-dt-2019
 ms.date: 02/18/2021
-ms.openlocfilehash: 3b97887e7bbd31fc1bb6ec0a074267aa081184c8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 1fad6274b1dbbc4bf255caabd79352b3c836e352
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101724903"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606707"
 ---
 # <a name="incrementally-load-data-from-multiple-tables-in-sql-server-to-a-database-in-azure-sql-database-using-the-azure-portal"></a>Добавочная загрузка данных из нескольких таблиц в SQL Server в базу данных в службе "База данных SQL Azure" с использованием портала Azure
 
@@ -253,7 +253,7 @@ END
 8. Нажмите кнопку **Создать**.      
 9. Когда завершится создание, откроется страница **Фабрика данных**, как показано на рисунке ниже.
    
-   ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница Фабрики данных Azure с плиткой &quot;Создание и мониторинг&quot;.":::
 10. Щелкните плитку **Создание и мониторинг**, чтобы открыть на отдельной вкладке пользовательский интерфейс фабрики данных Azure.
 
 ## <a name="create-self-hosted-integration-runtime"></a>Создание и настройка локальной среды выполнения интеграции
@@ -291,7 +291,7 @@ END
 
 1. В окне **подключений** перейдите из вкладки **сред выполнения интеграции** на вкладку **Связанные службы**, а затем щелкните **+ Создать**.
 
-   ![Новая связанная служба](./media/doc-common-process/new-linked-service.png)
+    :::image type="content" source="./media/doc-common-process/new-linked-service.png" alt-text="Новая связанная служба.":::
 1. В окне **New Linked Service** (Новая связанная служба) выберите **SQL Server**, а затем нажмите кнопку **Продолжить**. 
 
 1. В окне **New Linked Service** (Новая связанная служба) выполните следующие действия:
@@ -473,7 +473,7 @@ END
     1. Выберите **Параметр импорта**. 
     1. Укажите следующие значения параметров: 
 
-        | Имя | Тип | Значение | 
+        | Имя | Type | Значение | 
         | ---- | ---- | ----- |
         | LastModifiedtime | Дата и время | `@{activity('LookupNewWaterMarkActivity').output.firstRow.NewWatermarkvalue}` |
         | TableName | Строка | `@{activity('LookupOldWaterMarkActivity').output.firstRow.TableName}` |
