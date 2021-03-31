@@ -19,13 +19,13 @@ ms.author: sethm
 ms.reviewer: jowargo
 ms.lastreviewed: 01/04/2019
 ms.openlocfilehash: e91d250b8cc9b80f2c97910c7fa972af32fa9104
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88998345"
 ---
-# <a name="tutorial-send-push-notifications-to-windows-phone-apps-using-notification-hubs"></a>Руководство по отправке push-уведомлений в приложения Windows Phone с помощью Центров уведомлений
+# <a name="tutorial-send-push-notifications-to-windows-phone-apps-using-notification-hubs"></a>Руководство. Отправка push-уведомлений в приложения Windows Phone с помощью Центров уведомлений
 
 [!INCLUDE [notification-hubs-selector-get-started](../../includes/notification-hubs-selector-get-started.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "88998345"
 > [!NOTE]
 > Центры уведомлений Windows Phone SDK не поддерживают использование службы push-уведомлений Windows (WNS) с приложениями Windows Phone 8.1 Silverlight. Использование WNS (вместо MPNS) с приложениями Windows Phone 8.1 Silverlight описано в статье [Центр уведомлений: учебник для Windows Phone Silverlight], в котором используются API REST.
 
-В этом руководстве описано следующее:
+В этом руководстве описано следующее.
 
 > [!div class="checklist"]
 > * Создание концентратора уведомлений

@@ -5,13 +5,13 @@ ms.devlang: PHP
 ms.topic: quickstart
 ms.date: 06/23/2020
 ms.openlocfilehash: 706f523fdfb3c710bb16b048cfc68ce98875adb1
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88066208"
 ---
-# <a name="quickstart-how-to-use-service-bus-topics-and-subscriptions-with-php"></a>Краткое руководство. Как использовать разделы и подписки служебной шины с PHP
+# <a name="quickstart-how-to-use-service-bus-topics-and-subscriptions-with-php"></a>Краткое руководство. Как использовать разделы и подписки Служебной шины с PHP
 
 [!INCLUDE [service-bus-selector-topics](../../includes/service-bus-selector-topics.md)]
 
@@ -261,7 +261,7 @@ for($i = 0; $i < 5; $i++){
 Разделы служебной шины поддерживают максимальный размер сообщения 256 КБ для [уровня "Стандартный"](service-bus-premium-messaging.md) и 1 МБ для [уровня Premium](service-bus-premium-messaging.md). Максимальный размер заголовка, который содержит стандартные и настраиваемые свойства приложения, — 64 КБ. Ограничения на количество сообщений в разделе нет, но есть максимальный общий размер сообщений, содержащихся в разделе. Максимальный размер раздела ограничен 5 ГБ. Дополнительные сведения о квотах см. в статье [Квоты на служебную шину][Service Bus quotas].
 
 ## <a name="receive-messages-from-a-subscription"></a>Получение сообщений из подписки
-Самым простым способом получать сообщения от подписки является использование метода `ServiceBusRestProxy->receiveSubscriptionMessage`. Сообщения можно получить в двух различных режимах: [*ReceiveAndDelete* и *PeekLock*](/dotnet/api/microsoft.servicebus.messaging.receivemode). Значение по умолчанию — **PeekLock**.
+Самым простым способом получать сообщения от подписки является использование метода `ServiceBusRestProxy->receiveSubscriptionMessage`. Сообщения можно получать в двух различных режимах: [*ReceiveAndDelete* и *PeekLock*](/dotnet/api/microsoft.servicebus.messaging.receivemode). Значение по умолчанию — **PeekLock**.
 
 В режиме [ReceiveAndDelete](/dotnet/api/microsoft.servicebus.messaging.receivemode) получение — это одиночная операция. Когда служебная шина получает запрос на чтение для сообщения в подписке, сообщение помечается как использованное и возвращается в приложение. Режим [ReceiveAndDelete](/dotnet/api/microsoft.servicebus.messaging.receivemode)* представляет собой самую простую модель, которая лучше всего работает в ситуациях, когда приложение может не обрабатывать сообщение при сбое. Чтобы это понять, рассмотрим сценарий, в котором объект-получатель выдает запрос на получение и выходит из строя до его обработки. Так как служебная шина отмечает сообщение как использованное, перезапущенное приложение, начав снова использовать сообщения, пропустит сообщение, использованное до аварийного завершения работы.
 
