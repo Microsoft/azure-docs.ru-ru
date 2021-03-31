@@ -1,13 +1,13 @@
 ---
 title: Краткое руководство. Отправка и получение событий с помощью Go в Центрах событий Azure
-description: Краткое руководство. В статье описано, как создать приложение Go, которое отправляет события в Центры событий Azure.
+description: Краткое руководство. В статье описано, как создать приложение Go, которое отправляет события из Центров событий Azure.
 ms.topic: quickstart
 ms.date: 06/23/2020
 ms.openlocfilehash: 59cd0d757108e7579ce389d216b0ee4d569e12fd
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87002460"
 ---
 # <a name="quickstart-send-events-to-or-receive-events-from-event-hubs-using-go"></a>Краткое руководство. Отправка и получение событий с помощью Go в Центрах событий
@@ -162,7 +162,7 @@ import (
 
 ### <a name="create-service-principal"></a>Создание субъекта-службы
 
-Создайте субъект-службу, следуя инструкциям в статье [Создание субъекта-службы Azure с помощью Azure CLI 2.0](/cli/azure/create-an-azure-service-principal-azure-cli). Сохраните предоставленные учетные данные в своей среде со следующими именами. Пакет Azure SDK для Go и пакет для службы "Центры событий" предварительно настроены для поиска этих имен переменных.
+Создайте субъект-службу, следуя инструкциям в статье [Создание субъекта-службы Azure с помощью Azure CLI 2.0](/cli/azure/create-an-azure-service-principal-azure-cli). Сохраните предоставленные учетные данные в своей среде с приведенными ниже именами. Пакет Azure SDK для Go и пакет Центров событий предварительно сконфигурированы для поиска имен этих переменных.
 
 ```bash
 export AZURE_CLIENT_ID=
@@ -284,4 +284,4 @@ if err != nil {
 
 <!-- Links -->
 [Event Hubs overview]: event-hubs-about.md
-[создайте бесплатную учетную запись]: https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio
+[бесплатная учетная запись]: https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio
