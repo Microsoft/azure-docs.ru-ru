@@ -15,13 +15,13 @@ ms.date: 09/26/2019
 ms.author: mametcal
 ms.custom: mvc, devx-track-java
 ms.openlocfilehash: 0dcf85add4e1c9f1d701c4ce4a122c8d6b31382a
-ms.sourcegitcommit: a92fbc09b859941ed64128db6ff72b7a7bcec6ab
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92077836"
 ---
-# <a name="tutorial-use-feature-flags-in-a-spring-boot-app"></a>Руководство по Использование флагов компонентов в приложении Spring Boot
+# <a name="tutorial-use-feature-flags-in-a-spring-boot-app"></a>Руководство. Использование флагов функций в приложении Spring Boot
 
 Библиотеки управления функциями Spring Boot обеспечивают поддержку реализации флагов функций в приложении Spring Boot. Эти библиотеки позволяют декларативно добавлять флаги функций в код.
 

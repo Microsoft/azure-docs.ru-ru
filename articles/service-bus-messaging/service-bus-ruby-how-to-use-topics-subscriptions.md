@@ -1,19 +1,19 @@
 ---
-title: Краткое руководство. Как использовать разделы и подписки Служебной шины с Ruby
-description: Краткое руководство. Узнайте, как использовать разделы и подписки служебной шины в Azure. Примеры кода написаны для приложений Ruby.
+title: Краткое руководство. Как использовать разделы Служебной шины с Ruby
+description: Краткое руководство. Узнайте, как использовать разделы и подписки Служебной шины в Azure. Примеры кода написаны для приложений Ruby.
 services: service-bus-messaging
 documentationcenter: ruby
 ms.devlang: ruby
 ms.topic: quickstart
 ms.date: 06/23/2020
 ms.openlocfilehash: aba326a63558632bee3bf0c48d34e471bbe30886
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88067568"
 ---
-# <a name="quickstart-how-to-use-service-bus-topics-and-subscriptions-with-ruby"></a>Краткое руководство. Как использовать разделы и подписки служебной шины с Ruby
+# <a name="quickstart-how-to-use-service-bus-topics-and-subscriptions-with-ruby"></a>Краткое руководство. Как использовать разделы и подписки Служебной шины с Ruby
  
 [!INCLUDE [service-bus-selector-topics](../../includes/service-bus-selector-topics.md)]
 

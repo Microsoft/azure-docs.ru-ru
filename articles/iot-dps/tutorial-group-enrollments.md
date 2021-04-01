@@ -10,20 +10,20 @@ services: iot-dps
 ms.devlang: java
 ms.custom: mvc, devx-track-java
 ms.openlocfilehash: 4cfbfe3e3e3ba620d8292767012c9bb866d8a878
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94968100"
 ---
-# <a name="tutorial-create-and-provision-a-simulated-x509-device-using-java-device-and-service-sdk-and-group-enrollments-for-iot-hub-device-provisioning-service"></a>Руководство по Создание и подготовка имитированного устройства X.509 с помощью Java устройства, SDK службы и групп регистрации для службы подготовки устройств Центра Интернета вещей
+# <a name="tutorial-create-and-provision-a-simulated-x509-device-using-java-device-and-service-sdk-and-group-enrollments-for-iot-hub-device-provisioning-service"></a>Руководство. Создание и подготовка имитированного устройства X.509 с помощью пакета SDK Java для службы и устройства, а также с помощью групп регистрации для Службы подготовки устройств к добавлению в Центр Интернета вещей
 
 В этом руководстве показано, как имитировать устройство X.509 на компьютере разработки под управлением ОС Windows, а также как с помощью примера кода подключить имитированное устройство к службе подготовки устройств и Центру Интернета вещей, используя группы регистрации. 
 
 Прежде чем продолжить, выполните инструкции по [настройке службы подготовки устройств Центра Интернета вещей на портале Azure](./quick-setup-auto-provision.md).
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 1. Убедитесь, что на вашем компьютере установлен [пакет SDK 8 для Java SE](/azure/developer/java/fundamentals/java-jdk-long-term-support).
 
@@ -45,7 +45,7 @@ ms.locfileid: "94968100"
 
         1. В разделе **Добавление сертификата** введите следующие данные.
             - Введите уникальное имя сертификата.
-            - Выберите созданный файл **_RootCA.pem_** .
+            - Выберите созданный файл **_RootCA.pem_**.
             - Затем нажмите кнопку **Сохранить**.
 
            ![Добавление сертификата](./media/tutorial-group-enrollments/add-certificate.png)
@@ -53,7 +53,7 @@ ms.locfileid: "94968100"
         1. Выберите только что созданный сертификат.
             - Щелкните **Создать код проверки**. Скопируйте созданный код.
             - Выполните этап проверки. Введите _код проверки_ или щелкните правой кнопкой мыши в открытом окне PowerShell, чтобы вставить код.  Нажмите клавишу **ВВОД**.
-            - На портале Azure выберите созданный файл **_verifyCert4.pem_** . Нажмите кнопку **Проверка**.
+            - На портале Azure выберите созданный файл **_verifyCert4.pem_**. Нажмите кнопку **Проверка**.
 
               ![Проверка сертификата](./media/tutorial-group-enrollments/validate-certificate.png)
 
@@ -176,7 +176,7 @@ ms.locfileid: "94968100"
 
     Если вы создали сертификаты вашего устройства с помощью оболочки Bash, то открытый ключ находится в ./certs/new-device.cert.pem. Закрытый ключ будет находиться в файле ./private/new-device.key.pem.
 
-    Откройте ваш файл с открытым ключом и обновите переменную `leafPublicPem`, используя это значение. Скопируйте текст от строки _-----BEGIN PRIVATE KEY-----_ по строку _-----END PRIVATE KEY-----_ .
+    Откройте ваш файл с открытым ключом и обновите переменную `leafPublicPem`, используя это значение. Скопируйте текст от строки _-----BEGIN PRIVATE KEY-----_ по строку _-----END PRIVATE KEY-----_.
 
     ```java
     private static final String leafPublicPem = "-----BEGIN CERTIFICATE-----\n" +
@@ -188,7 +188,7 @@ ms.locfileid: "94968100"
         "-----END CERTIFICATE-----\n";
     ```
 
-    Откройте ваш файл с закрытым ключом и обновите переменную `leafPrivatePem`, используя это значение. Скопируйте текст от строки _-----BEGIN RSA PRIVATE KEY-----_ по строку _-----END RSA PRIVATE KEY-----_ .
+    Откройте ваш файл с закрытым ключом и обновите переменную `leafPrivatePem`, используя это значение. Скопируйте текст от строки _-----BEGIN RSA PRIVATE KEY-----_ по строку _-----END RSA PRIVATE KEY-----_.
 
     ```java
     private static final String leafPrivateKey = "-----BEGIN RSA PRIVATE KEY-----\n" +
