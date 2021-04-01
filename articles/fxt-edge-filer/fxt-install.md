@@ -1,5 +1,5 @@
 ---
-title: Руководство по Установка физического устройства Azure FXT Edge Filer
+title: Руководство. Установка физического устройства Azure FXT Edge Filer
 description: Как распаковать, установить в стойку и подключить компонент физического устройства кэша гибридного хранилища Microsoft Azure FXT Edge Filer
 author: ekpgh
 ms.author: rohogue
@@ -7,13 +7,13 @@ ms.service: fxt-edge-filer
 ms.topic: tutorial
 ms.date: 07/01/2019
 ms.openlocfilehash: 48ee6de28bcd76d4c484b77c981062bad1a3754d
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92219757"
 ---
-# <a name="tutorial-install-azure-fxt-edge-filer"></a>Руководство по установке Azure FXT Edge Filer
+# <a name="tutorial-install-azure-fxt-edge-filer"></a>Руководство. Установка Azure FXT Edge Filer
 
 В этом руководстве описано, как установить аппаратный узел для кэша гибридного хранилища Azure FXT Edge Filer. Чтобы создать кластер Azure FXT Edge Filer, необходимо установить как минимум три аппаратных узла.
 

@@ -1,5 +1,5 @@
 ---
-title: Руководство по Добавление хранилища в кластер Azure FXT Edge Filer
+title: Руководство. Добавление хранилища в кластер Azure FXT Edge Filer
 description: Настройка серверного хранилища и виртуального пространства имен для клиента в Azure FXT Edge Filer
 author: ekpgh
 ms.author: rohogue
@@ -7,13 +7,13 @@ ms.service: fxt-edge-filer
 ms.topic: tutorial
 ms.date: 06/20/2019
 ms.openlocfilehash: 7d10c6c1ce440b2ffe964dc78379ef3ab108e78e
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92217530"
 ---
-# <a name="tutorial-add-back-end-storage-and-configure-the-virtual-namespace"></a>Руководство по Добавление серверного хранилища и настройка виртуального пространства имен
+# <a name="tutorial-add-back-end-storage-and-configure-the-virtual-namespace"></a>Руководство. Добавление серверного хранилища и настройка виртуального пространства имен
 
 В этом руководстве объясняется, как добавить серверное хранилища для кэша и как настроить виртуальную файловую систему для клиента.
 
@@ -142,7 +142,7 @@ ms.locfileid: "92217530"
 
 ![Страница мастера нового соединения с заполненными параметрами](media/fxt-cluster-config/add-junction-full.png)
 
-Изучите раздел [**VServer (Виртуальный сервер)**  > **Namespace (Пространство имен)** ](https://azure.github.io/Avere/legacy/ops_guide/4_7/html/gui_namespace.html) руководства по настройке кластера, чтобы получить исчерпывающие сведения о создании соединения для пространства имен.
+Изучите раздел [**VServer (Виртуальный сервер)** > **Namespace (Пространство имен)**](https://azure.github.io/Avere/legacy/ops_guide/4_7/html/gui_namespace.html) руководства по настройке кластера, чтобы получить исчерпывающие сведения о создании соединения для пространства имен.
 
 ![Страница настроек VServer > Namespace (Виртуальный сервер > Пространство имен) со сведениями для соединения](media/fxt-cluster-config/namespace-populated.png)
 

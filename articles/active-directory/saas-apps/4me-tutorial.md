@@ -1,5 +1,5 @@
 ---
-title: Руководство по интеграции единого входа Azure Active Directory с 4me | Документация Майкрософт
+title: Руководство. Интеграция единого входа Azure Active Directory с 4me | Документация Майкрософт
 description: Сведения о настройке единого входа между Azure Active Directory и 4me.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 08/27/2019
 ms.author: jeedes
 ms.openlocfilehash: 241450b9a6e97953205aca5de2a7cfd30a08d254
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92319115"
 ---
-# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-4me"></a>Руководство по интеграции единого входа Azure Active Directory с 4me
+# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-4me"></a>Руководство. Интеграция единого входа Azure Active Directory с 4me
 
 В этом учебнике описано, как интегрировать 4me с Azure Active Directory (Azure AD). Интеграция 4me с Azure AD обеспечивает следующие возможности.
 
@@ -162,7 +162,7 @@ ms.locfileid: "92319115"
 
     ![Единый вход в 4me](./media/4me-tutorial/tutorial_4me_singlesignon.png)
 
-    а. Установите флажок **Enabled** (Включено).
+    а. Выберите параметр **Включено**.
 
     b. В текстовое поле **URL-адрес удаленного выхода** вставьте значение **URL-адреса выхода**, скопированное на портале Azure.
 

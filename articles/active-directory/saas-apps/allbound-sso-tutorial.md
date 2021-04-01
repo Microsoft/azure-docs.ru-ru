@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/17/2019
 ms.author: jeedes
 ms.openlocfilehash: f6030e209b06dc7ae9acd8a13e6dcdf22b58f8c5
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92318880"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-allbound-sso"></a>Руководство по интеграции Azure Active Directory с Allbound SSO
@@ -96,7 +96,7 @@ ms.locfileid: "92318880"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. Если вы хотите настроить приложение в режиме, инициируемом **поставщиком удостоверений**, в разделе **Базовая конфигурация SAML** выполните следующие действия.
 
@@ -189,7 +189,7 @@ ms.locfileid: "92318880"
 В этом разделе вы создадите в Allbound SSO пользователя с именем Britta Simon. Приложение Allbound SSO поддерживает JIT-подготовку пользователей, которая включена по умолчанию. В этом разделе никакие действия с вашей стороны не требуются. Если пользователь еще не существует в Allbound SSO, он создается после проверки подлинности.
 
 > [!Note]
-> Чтобы создать пользователя вручную, обратитесь к  [группе поддержки Allbound SSO](mailto:engineering@allbound.com).
+> Чтобы создать пользователя вручную, обратитесь в [службу поддержки Allbound SSO](mailto:engineering@allbound.com).
 
 ### <a name="test-single-sign-on"></a>Проверка единого входа
 

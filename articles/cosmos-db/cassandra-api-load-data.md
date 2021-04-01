@@ -1,5 +1,5 @@
 ---
-title: Руководство по Использование приложения Java для загрузки примеров данных в таблицу API Cassandra в Azure Cosmos DB
+title: Руководство. Использование приложения Java для загрузки примеров данных в таблицу API Cassandra в Azure Cosmos DB
 description: Данное руководство описывает, как в Azure Cosmos DB загрузить пример данных пользователя в таблицу учетной записи API Cassandra с помощью приложения Java.
 author: kanshiG
 ms.service: cosmos-db
@@ -9,13 +9,13 @@ ms.date: 05/20/2019
 ms.author: govindk
 ms.reviewer: sngun
 ms.openlocfilehash: ad3dfc8c86d22e58377ebfbdb94b2beb004ded56
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93092472"
 ---
-# <a name="tutorial-load-sample-data-into-a-cassandra-api-table-in-azure-cosmos-db"></a>Руководство по Загрузка примера данных в таблицу API Cassandra в Azure Cosmos DB
+# <a name="tutorial-load-sample-data-into-a-cassandra-api-table-in-azure-cosmos-db"></a>Руководство. Загрузка примера данных в таблицу API Cassandra в Azure Cosmos DB
 [!INCLUDE[appliesto-cassandra-api](includes/appliesto-cassandra-api.md)]
 
 Как у разработчика у вас должно быть приложение, использующее пары "ключ-значение". Можно использовать учетную запись Cassandra API в Azure Cosmos DB для хранения данных "ключ-значение" и управления ими. Данное руководство описывает, как в Azure Cosmos DB загрузить пример данных пользователя в таблицу в учетной записи API Cassandra с помощью приложения Java. Приложение Java использует [драйвер Java](https://github.com/datastax/java-driver) и загружает данные пользователя, например, идентификатор пользователя, имя пользователя, город пользователя. 
