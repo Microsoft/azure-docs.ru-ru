@@ -1,5 +1,5 @@
 ---
-title: Руководство по Аутентификация пользователей в собственном клиентском приложении
+title: Руководство. Проверка подлинности пользователей в собственном клиентском приложении
 titleSuffix: Azure AD B2C
 description: Руководство по предоставлению пользователю данных для входа в классическое приложение .NET с помощью Azure Active Directory B2C.
 services: active-directory-b2c
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.service: active-directory
 ms.subservice: B2C
 ms.openlocfilehash: 06d27c3a3daa4702653a2063d0ac70fd094e2d74
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "78186205"
 ---
-# <a name="tutorial-authenticate-users-in-a-native-desktop-client-using-azure-active-directory-b2c"></a>Руководство по проверке подлинности пользователей в собственном настольном клиенте с помощью Azure Active Directory B2C
+# <a name="tutorial-authenticate-users-in-a-native-desktop-client-using-azure-active-directory-b2c"></a>Руководство. Проверка подлинности пользователей в собственном настольном клиенте с помощью Azure Active Directory B2C
 
 В этом руководстве показано, как использовать Azure Active Directory (Azure AD) B2C для входа и регистрации пользователей в классическом приложении Windows Presentation Foundation (WPF). Azure AD B2C позволяет приложениям выполнять проверку подлинности учетных записей социальных сетей, корпоративных учетных записей и учетных записей Azure Active Directory с помощью стандартных протоколов.
 
@@ -105,4 +105,4 @@ git clone https://github.com/Azure-Samples/active-directory-b2c-dotnet-desktop.g
 Затем, чтобы включить кнопку **вызова API**, предоставьте классическому приложению WPF доступ к веб-API, зарегистрированному в вашем собственном арендаторе Azure AD B2C:
 
 > [!div class="nextstepaction"]
-> [Руководство. Предоставление доступа к веб-API Node.js из классического приложения >](tutorial-desktop-app-webapi.md).
+> [Руководство. Предоставление доступа к веб-API Node.js из классического приложения >](tutorial-desktop-app-webapi.md)
