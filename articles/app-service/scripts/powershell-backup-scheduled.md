@@ -1,5 +1,5 @@
 ---
-title: PowerShell. создание задания запланированного резервного копирования
+title: PowerShell. Создание запланированной резервной копии
 description: Сведения об использовании Azure PowerShell для автоматизации процессов развертывания и управления в Службе приложений. В этом примере показано, как создать задание резервного копирования по расписанию для приложения.
 author: msangapu-msft
 tags: azure-service-management
@@ -9,10 +9,10 @@ ms.date: 10/30/2017
 ms.author: msangapu
 ms.custom: mvc, seodec18, devx-track-azurepowershell
 ms.openlocfilehash: c53872973dad3d438d0d948c4eaebaf0cb7ba4de
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89075906"
 ---
 # <a name="create-a-scheduled-backup-for-a-web-app-using-powershell"></a>Создание резервной копии веб-приложения по расписанию с помощью PowerShell
@@ -44,7 +44,7 @@ Remove-AzResourceGroup -Name myResourceGroup -Force
 | [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) | Создает группу ресурсов, в которой хранятся все ресурсы. |
 | [New-AzStorageAccount](/powershell/module/az.storage/new-azstorageaccount) | Создает учетную запись хранения. |
 | [New-AzStorageContainer](/powershell/module/az.storage/new-AzStoragecontainer) | Позволяет создать контейнер хранилища Azure. |
-| [New-AzStorageContainerSASToken](/powershell/module/az.storage/new-AzStoragecontainersastoken) | Создание маркера SAS для контейнера хранилища Azure. |
+| [New-AzStorageContainerSASToken;](/powershell/module/az.storage/new-AzStoragecontainersastoken) | Создание маркера SAS для контейнера хранилища Azure. |
 | [New-AzAppServicePlan](/powershell/module/az.websites/new-azappserviceplan) | Создает план службы приложений. |
 | [New-AzWebApp](/powershell/module/az.websites/new-azwebapp) | Создает веб-приложение. |
 | [Edit-AzWebAppBackupConfiguration](/powershell/module/az.websites/edit-azwebappbackupconfiguration) | Позволяет изменять параметры резервного копирования для веб-приложения. |

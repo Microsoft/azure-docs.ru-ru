@@ -5,11 +5,11 @@ ms.topic: include
 ms.date: 11/17/2020
 ms.author: jgao
 ms.openlocfilehash: e70deb835d45f35ac3448f2cd363b14cd378b463
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
-ms.translationtype: MT
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95994148"
 ---
 > [!NOTE]
-> В этой статье содержатся примеры Бицеп.  Бицеп сейчас находится на этапе предварительной версии.  Дополнительные сведения см. в разделе [Project бицеп](https://github.com/azure/bicep).
+> В этой статье приведены примеры для Bicep.  Bicep сейчас предоставляется в предварительной версии.  Дополнительные сведения см. в статье о [проекте Bicep](https://github.com/azure/bicep).
