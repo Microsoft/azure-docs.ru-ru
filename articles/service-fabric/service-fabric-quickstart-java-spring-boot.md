@@ -5,10 +5,10 @@ ms.topic: quickstart
 ms.date: 01/29/2019
 ms.custom: mvc, devcenter, seo-java-august2019, seo-java-september2019, devx-track-java
 ms.openlocfilehash: 84ce5920af95113801f468e3149421f3b9bd8901
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91530006"
 ---
 # <a name="quickstart-deploy-a-java-spring-boot-app-on-azure-service-fabric"></a>Краткое руководство. Развертывание приложения Java Spring Boot в Azure Service Fabric
@@ -150,7 +150,7 @@ git clone https://github.com/spring-guides/gs-spring-boot.git
 Для масштабирования службы веб-интерфейса сделайте следующее:
 
 1. Откройте Service Fabric Explorer в своем кластере (например, по ссылке `http://localhost:19080`).
-1. Щелкните многоточие ( **...** ) рядом с узлом **fabric:/SpringServiceFabric/SpringGettingStarted** в представлении в виде дерева и выберите **Масштабировать службу**.
+1. Щелкните многоточие (**...**) рядом с узлом **fabric:/SpringServiceFabric/SpringGettingStarted** в представлении в виде дерева и выберите **Масштабировать службу**.
 
     ![Пример масштабирования службы Service Fabric Explorer](./media/service-fabric-quickstart-java-spring-boot/service-fabric-explorer-scale-sample.png)
 
@@ -181,7 +181,7 @@ git clone https://github.com/spring-guides/gs-spring-boot.git
 Чтобы продемонстрировать отработку отказа службы, с помощью Service Fabric Explorer моделируется перезагрузка узла. Убедитесь, что запущен только один экземпляр службы.
 
 1. Откройте Service Fabric Explorer в своем кластере (например, по ссылке `http://localhost:19080`).
-1. Щелкните многоточие ( **...** ) рядом с узлом, на котором запущен экземпляр этой службы, и перезапустите узел.
+1. Щелкните многоточие (**...**) рядом с узлом, на котором запущен экземпляр этой службы, и перезапустите узел.
 
     ![Service Fabric Explorer с командой перезапуска узла](./media/service-fabric-quickstart-java-spring-boot/service=fabric-explorer-restart=node.png)
 1. Этот экземпляр службы перемещается в другой узел без простоев в работе приложения.
@@ -190,7 +190,7 @@ git clone https://github.com/spring-guides/gs-spring-boot.git
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этого руководства вы узнали, как выполнить следующие действия:
+В этом кратком руководстве рассматривались следующие темы:
 
 * Развертывание приложения Spring Boot в Service Fabric
 * Развертывание приложения в локальном кластере.
