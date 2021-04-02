@@ -15,10 +15,10 @@ ms.date: 12/06/2017
 ms.author: atsenthi
 ms.custom: ''
 ms.openlocfilehash: 34f2ae6f3a2ff3adc35794d6e7dfd682640c646b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "75614729"
 ---
 # <a name="update-an-application-using-the-service-fabric-cli"></a>Обновление приложения с помощью Service Fabric CLI

@@ -6,10 +6,10 @@ ms.topic: tutorial
 ms.date: 06/19/2019
 ms.author: jobreen
 ms.openlocfilehash: 45f18727b53b802ba746da41b47fe955543ed9d0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75648551"
 ---
 # <a name="create-custom-actions-and-resources-in-azure"></a>Создание пользовательских действий и ресурсов в Azure
@@ -40,10 +40,10 @@ ms.locfileid: "75648551"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этой статьи вы узнаете о настраиваемых поставщиках и их создании. Переходите к следующей части [Учебник: Настройка Функций Azure для настраиваемых поставщиков Azure](./tutorial-custom-providers-function-setup.md).
+Из этой статьи вы узнаете о настраиваемых поставщиках и их создании. Чтобы перейти к следующему руководству, см. статью [Настройка Функций Azure для настраиваемых поставщиков Azure](./tutorial-custom-providers-function-setup.md).
 
 Дополнительные сведения приведены в следующих статьях:
 
-- [Краткое руководство. по созданию настраиваемого поставщика и развертыванию настраиваемых ресурсов](./create-custom-provider.md)
+- [Краткое руководство. Создание настраиваемого поставщика ресурсов и развертывание настраиваемых ресурсов](./create-custom-provider.md)
 - [Руководство. Добавление настраиваемых действий в Azure REST API](./custom-providers-action-endpoint-how-to.md)
 - [Руководство. Добавление настраиваемых ресурсов в Azure REST API](./custom-providers-resources-endpoint-how-to.md)

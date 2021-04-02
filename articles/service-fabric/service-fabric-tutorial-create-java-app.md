@@ -1,17 +1,17 @@
 ---
-title: Руководство по Создание приложения Java в Azure Service Fabric
+title: Руководство. Создание приложения Java в Azure Service Fabric
 description: В этом руководстве вы узнаете, как создать приложение Java надежной службы с внешним интерфейсом, создать серверную часть с отслеживанием состояния надежных служб и развернуть приложение в кластер.
 ms.topic: tutorial
 ms.date: 09/01/2018
 ms.custom: mvc, seo-java-july2019, seo-java-august2019, seo-java-september2019, devx-track-java, devx-track-js
 ms.openlocfilehash: d1f66177b1939d612a5ee80c99109c397b56cb37
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91532199"
 ---
-# <a name="tutorial-create-an-application-with-a-java-api-front-end-service-and-a-stateful-back-end-service-on-azure-service-fabric"></a>Руководство по Создание приложения с интерфейсной службой API Java и серверной службой с отслеживанием состояния в Azure Service Fabric
+# <a name="tutorial-create-an-application-with-a-java-api-front-end-service-and-a-stateful-back-end-service-on-azure-service-fabric"></a>Руководство. Создание приложения с интерфейсной службой API Java и серверной службой с отслеживанием состояния в Azure Service Fabric
 
 Это руководство представляет первую часть цикла. Выполнив инструкции из этого руководства, вы получите приложение для голосования с клиентской частью в виде веб-приложения Java, которое сохраняет результаты голосования во внутренней службе с отслеживанием состояния в Azure Service Fabric. В этой серии руководств требуется, чтобы у вас был работающий компьютер для разработчиков Mac OSX или Linux. Если вы не хотите вручную создавать приложение для голосования, вы можете [скачать исходный код](https://github.com/Azure-Samples/service-fabric-java-quickstart) для завершенного приложения и сразу перейти к [описанию примера приложения для голосования](service-fabric-tutorial-create-java-app.md#walk-through-the-voting-sample-application). Кроме того, ознакомьтесь с [кратким руководством по развертыванию приложения Java в Azure Service Fabric](service-fabric-quickstart-java-reliable-services.md).
 
@@ -68,7 +68,7 @@ ms.locfileid: "91532199"
 | **Элемент обозревателя пакетов** | **Описание** |
 | --- | --- |
 | PublishProfiles | Содержит файлы JSON, описывающие сведения о профилях локального кластера и кластера Azure Service Fabric. Содержимое этих файлов используется подключаемым модулем при развертывании приложения. |
-| Сценарии | Содержит вспомогательные скрипты, которые можно использовать из командной строки, чтобы быстро управлять приложением с кластером. |
+| Скрипты | Содержит вспомогательные скрипты, которые можно использовать из командной строки, чтобы быстро управлять приложением с кластером. |
 | VotingApplication | Содержит приложение Service Fabric, которое отправляется в кластер Service Fabric. |
 | VotingWeb | Содержит исходные файлы интерфейсной службы без отслеживания состояния вместе со связанным файлом сборки Gradle. |
 | build.gradle | Файл Gradle используется для управления проектом. |
@@ -884,7 +884,7 @@ class VotingDataService extends StatefulService implements VotingRPC {
 
 2. Запустите удаленный кластер Service Fabric. Этот шаг зависит от среды разработки (Mac или Linux).
 
-    Если вы используете компьютер Mac, запустите локальный кластер с помощью приведенной ниже команды. Замените команду, переданную в параметр **-v** на путь к своей рабочей области.
+    Если используется Mac, запустите локальный кластер со следующей командой. Замените команду, переданную в параметр **-v**, путем к собственной рабочей области.
 
     ```bash
     docker run -itd -p 19080:19080 -p 8080:8080 -p --name sfonebox mcr.microsoft.com/service-fabric/onebox:latest
