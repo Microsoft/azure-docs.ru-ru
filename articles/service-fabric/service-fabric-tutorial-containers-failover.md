@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 07/22/2019
 ms.custom: mvc
 ms.openlocfilehash: f51a195f9ad43c7facb7dc413a4da83fc6b202b7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "91531400"
 ---
 # <a name="tutorial-demonstrate-fail-over-and-scaling-of-container-services-with-service-fabric"></a>Руководство. Демонстрация отработки отказа и масштабирования служб контейнеров в Service Fabric
@@ -19,7 +19,7 @@ ms.locfileid: "91531400"
 > * Отработка отказа контейнера в кластера Service Fabric
 > * Масштабирование контейнеров веб-интерфейса в приложении
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Приложение из [части 2](service-fabric-tutorial-package-containers.md), запущенное в активном кластере Service Fabric.
 

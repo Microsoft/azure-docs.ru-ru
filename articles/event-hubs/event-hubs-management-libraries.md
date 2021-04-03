@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 06/23/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 74392fbf0b2c0b81898410af8027a4f13fc52b67
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "89014002"
 ---
 # <a name="event-hubs-management-libraries"></a>Библиотеки управления Центров событий
@@ -25,7 +25,7 @@ ms.locfileid: "89014002"
 
 Чтобы приступить к работе с библиотеками управления Центров событий, нужно пройти аутентификацию в Azure Active Directory (AAD). AAD требует аутентификации в качестве субъекта-службы, предоставляющего доступ к вашим ресурсам Azure. Сведения о создании субъекта-службы см. в одной из приведенных ниже статей:  
 
-* [Используйте портал Azure, чтобы создать Active Directory приложения и субъекта-службы, которые могут получать доступ к ресурсам.](../active-directory/develop/howto-create-service-principal-portal.md)
+* [Создание приложения Active Directory и субъекта-службы с доступом к ресурсам с помощью портала](../active-directory/develop/howto-create-service-principal-portal.md)
 * [Использование Azure PowerShell для создания субъекта-службы и доступа к ресурсам](../active-directory/develop/howto-authenticate-service-principal-powershell.md)
 * [Использование интерфейса командной строки Azure для создания субъекта-службы и доступа к ресурсам](/cli/azure/create-an-azure-service-principal-azure-cli)
 
@@ -68,5 +68,5 @@ ms.locfileid: "89014002"
     ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
-* [Пример управления .NET](https://github.com/Azure-Samples/event-hubs-dotnet-management/)
+* [Пример управления для .NET](https://github.com/Azure-Samples/event-hubs-dotnet-management/)
 * [Справочник по Microsoft.Azure.Management.EventHub](/dotnet/api/Microsoft.Azure.Management.EventHub) 

@@ -4,10 +4,10 @@ description: В этом разделе приводится описание а
 ms.topic: overview
 ms.date: 05/27/2020
 ms.openlocfilehash: b9b8726c5e8ad6850e05aeee48fccabee703080e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "90904344"
 ---
 # <a name="what-is-live-video-analytics-on-iot-edge-preview"></a>Что такое аналитика видеотрансляций в Azure IoT Edge? (предварительная версия)

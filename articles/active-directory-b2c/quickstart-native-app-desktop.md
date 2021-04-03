@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство. Настройка данных для входа для классического приложения
+title: Краткое руководство. Настройка входа для классического приложения
 titleSuffix: Azure AD B2C
 description: В этом кратком руководстве рассматривается запуск примера классического приложения WPF, использующего Azure Active Directory B2C для предоставления возможности входа с учетной записью.
 services: active-directory-b2c
@@ -13,10 +13,10 @@ ms.date: 09/12/2019
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: ebed2f5e8664bd4336219f9387b8d27c8f3a1c59
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "78187341"
 ---
 # <a name="quickstart-set-up-sign-in-for-a-desktop-app-using-azure-active-directory-b2c"></a>Краткое руководство. Настройка входа в классическое приложение с помощью Azure Active Directory B2C

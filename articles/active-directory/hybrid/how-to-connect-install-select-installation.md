@@ -17,16 +17,16 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7275d115210100bdd4a3a2eb683c867a6a4a4f4a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "95996616"
 ---
 # <a name="select-which-installation-type-to-use-for-azure-ad-connect"></a>Выбор типа установки для Azure AD Connect
 При новой установке Azure AD Connect есть два типа установки: экспресс и пользовательская. Этот раздел поможет вам выбрать оптимальный вариант установки.
 
-## <a name="express"></a>Экспресс-оценка
+## <a name="express"></a>Express
 Экспресс-установка наиболее распространена и используется в 90 % всех случаев новой установки. Она была разработана для предоставления конфигурации, которая подходит для большинства распространенных сценариев клиентов.
 
 Предполагается следующее:

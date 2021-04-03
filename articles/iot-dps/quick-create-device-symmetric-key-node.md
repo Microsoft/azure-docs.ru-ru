@@ -10,10 +10,10 @@ services: iot-dps
 manager: eliotgra
 ms.custom: mvc
 ms.openlocfilehash: 78005ba46952bcf05b19c7627feecb1ec30ac651
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92429263"
 ---
 # <a name="quickstart-provision-a-symmetric-key-device-using-nodejs"></a>Краткое руководство. Подготовка устройства симметричного ключа с помощью Node.js
