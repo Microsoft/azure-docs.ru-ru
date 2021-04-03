@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 06/07/2018
 ms.reviewer: harelbr
 ms.openlocfilehash: 1cdfc6dc3ac74997743512ee07f9293699e3ad10
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87309296"
 ---
 # <a name="alert-on-issues-in-azure-cloud-services-using-the-azure-diagnostics-integration-with-azure-application-insights"></a>Оповещение о проблемах в облачных службах Azure с использованием интеграции системы диагностики Azure с помощью Azure Application Insights
@@ -107,11 +107,11 @@ EventLogs
 
 После определения группы действий подтвердите свои изменения и нажмите **Создать правило генерации оповещений**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 Дополнительные сведения об автоматическом обнаружении.
 
-[Аномалии сбоев](./proactive-failure-diagnostics.md) 
- [Утечки памяти](./proactive-potential-memory-leak.md) 
- [Аномалии производительности](./proactive-performance-diagnostics.md)
+[Аномальные сбои](./proactive-failure-diagnostics.md)
+[Утечка памяти](./proactive-potential-memory-leak.md)
+[Аномалии производительности](./proactive-performance-diagnostics.md)
 

@@ -14,10 +14,10 @@ ms.workload: big-data
 ms.date: 10/09/2018
 ms.author: elsung
 ms.openlocfilehash: 716e3766fdd7c1999efa12456346862a9902d7a0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92108717"
 ---
 # <a name="virtual-network-integration-for-azure-data-lake-storage-gen1"></a>Интеграция с виртуальной сетью для Azure Data Lake Storage 1-го поколения
@@ -29,7 +29,7 @@ ms.locfileid: "92108717"
 Функция интеграции с виртуальной сетью для ADLS 1-го поколения использует безопасность на уровне конечной точки служб для виртуальной сети между виртуальной сетью и службой Azure Active Directory (Azure AD) с целью создания дополнительных утверждений безопасности в маркере доступа. Эти утверждения используются для проверки подлинности виртуальной сети в учетной записи ADLS 1-го поколения и для предоставления доступа.
 
 > [!NOTE]
-> За использование этих возможностей не взимается дополнительная плата. Учетной записи будет выставлен счет по стандартному тарифу за Data Lake Storage 1-го поколения. Дополнительные сведения см. в разделе [цены](https://azure.microsoft.com/pricing/details/data-lake-store/?cdn=disable). Дополнительные сведения о всех используемых службах Azure см. на странице [цен](https://azure.microsoft.com/pricing/#product-picker).
+> За использование этих возможностей не взимается дополнительная плата. Учетной записи будет выставлен счет по стандартному тарифу за Data Lake Storage 1-го поколения. Дополнительные сведения см. на странице [цен](https://azure.microsoft.com/pricing/details/data-lake-store/?cdn=disable). Дополнительные сведения о всех используемых службах Azure см. на странице [цен](https://azure.microsoft.com/pricing/#product-picker).
 
 ## <a name="scenarios-for-virtual-network-integration-for-data-lake-storage-gen1"></a>Сценарии для интеграции с виртуальной сетью для ADLS 1-го поколения
 
