@@ -8,10 +8,10 @@ ms.date: 10/23/2018
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 1d2a0d79a5cdd53f8376c088fc986c20908575eb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "91329468"
 ---
 # <a name="tutorial-extend-windows-file-servers-with-azure-file-sync"></a>Руководство по Расширение файловых серверов Windows с использованием службы "Синхронизация файлов Azure"

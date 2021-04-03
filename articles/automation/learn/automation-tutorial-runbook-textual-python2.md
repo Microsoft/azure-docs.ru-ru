@@ -7,10 +7,10 @@ ms.date: 04/19/2020
 ms.topic: tutorial
 ms.custom: has-adal-ref, devx-track-python
 ms.openlocfilehash: e12327651165606e6a9b571d410f547a09a8ec8e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87847930"
 ---
 # <a name="tutorial-create-a-python-runbook"></a>Руководство по Создание модуля runbook в Python
