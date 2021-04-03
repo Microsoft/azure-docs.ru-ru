@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с Adoddle cSaas Platform | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с Adoddle cSaas Platform | Документация Майкрософт
 description: Узнайте, как настроить единый вход Azure Active Directory в Adoddle cSaas Platform.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 01/17/2019
 ms.author: jeedes
 ms.openlocfilehash: 5554ec4521a126a2c2e823b707fe42d9983b5d8e
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97671704"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-adoddle-csaas-platform"></a>Руководство по Интеграция Azure Active Directory с Adoddle cSaas Platform
+# <a name="tutorial-azure-active-directory-integration-with-adoddle-csaas-platform"></a>Руководство. Интеграция Azure Active Directory с Adoddle cSaas Platform
 
 В этом руководстве описано, как интегрировать Adoddle cSaas Platform с Azure Active Directory (Azure AD).
 Интеграция Azure AD с Adoddle cSaas Platform обеспечивает следующие преимущества:

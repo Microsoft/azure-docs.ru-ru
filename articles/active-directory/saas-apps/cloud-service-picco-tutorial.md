@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с облачной службой PICCO | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с облачной службой PICCO | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и облачной службой PICCO.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 12/21/2018
 ms.author: jeedes
 ms.openlocfilehash: 1df8c6fa0877c20518be072674447d28d7f1ca0c
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97670141"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-cloud-service-picco"></a>Руководство по Интеграция Azure Active Directory с облачной службой PICCO
+# <a name="tutorial-azure-active-directory-integration-with-cloud-service-picco"></a>Руководство. Интеграция Azure Active Directory с облачной службой PICCO
 
 В этом руководстве описано, как интегрировать облачную службу PICCO с Azure Active Directory (Azure AD).
 Интеграция Azure AD с облачной службой PICCO обеспечивает следующие преимущества.
