@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 3/11/2019
 ms.author: jeedes
 ms.openlocfilehash: 65e424c6275f9990a5d5a42a54bc4131300a45bf
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92895041"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-workspot-control"></a>Руководство по Интеграция Azure Active Directory с Workspot Control

@@ -10,13 +10,13 @@ ms.topic: tutorial
 ms.date: 07/03/2019
 ms.author: alkohli
 ms.openlocfilehash: 335b564225bc2b7a4c2217c1d912f952239ecf24
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92127205"
 ---
-# <a name="tutorial-use-data-box-heavy-to-import-data-as-managed-disks-in-azure"></a>Руководство по Использование Data Box Heavy для импорта данных в качестве управляемых дисков в Azure.
+# <a name="tutorial-use-data-box-heavy-to-import-data-as-managed-disks-in-azure"></a>Руководство. Использование Data Box Heavy для импорта данных в качестве управляемых дисков в Azure
 
 В этом руководстве описывается использование Azure Data Box Heavy для переноса локальных виртуальных жестких дисков на управляемые диски в Azure. Виртуальные жесткие диски из локальных виртуальных машин копируются в Data Box Heavy в качестве страничных BLOB-объектов и отправляются в Azure как управляемые диски. Затем эти управляемые диски можно подключить к виртуальным машинам Azure.
 

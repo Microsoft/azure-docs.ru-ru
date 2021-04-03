@@ -4,10 +4,10 @@ description: Сведения о создании пользовательско
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: cac812a9c38fc1dedfd31659a626b122f9527e63
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87289395"
 ---
 # <a name="create-a-custom-image-from-a-vhd-file"></a>Создание пользовательского образа из VHD-файла
@@ -24,7 +24,7 @@ ms.locfileid: "87289395"
 
 1. Войдите на [портал Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040).
 
-1. Выберите **все службы**, а затем в списке выберите **DevTest Labs** .
+1. Щелкните **Все службы** и выберите в списке **DevTest Labs**.
 
 1. Из списка лабораторий выберите нужную лабораторию.  
 
