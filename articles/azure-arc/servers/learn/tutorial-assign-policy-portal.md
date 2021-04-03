@@ -4,10 +4,10 @@ description: В этом учебнике рассказывается о том
 ms.topic: tutorial
 ms.date: 10/07/2020
 ms.openlocfilehash: 9a07e490525ce532f8f843b30b3b83715e65ce3c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "91826591"
 ---
 # <a name="tutorial-create-a-policy-assignment-to-identify-non-compliant-resources"></a>Руководство по Создание назначения политики для идентификации ресурсов, не соответствующих требованиям

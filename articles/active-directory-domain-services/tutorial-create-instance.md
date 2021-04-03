@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 07/06/2020
 ms.author: justinha
 ms.openlocfilehash: 945c131394a0a3c6273f79044c8500a2feba70fe
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96618150"
 ---
 # <a name="tutorial-create-and-configure-an-azure-active-directory-domain-services-managed-domain"></a>Руководство по созданию и настройке управляемого домена доменных служб Azure Active Directory

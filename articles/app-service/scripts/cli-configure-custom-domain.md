@@ -1,5 +1,5 @@
 ---
-title: Интерфейс командной строки. сопоставление личного домена с приложением
+title: CLI. Сопоставление личного домена с приложением
 description: Сведения об использовании Azure CLI для автоматизации развертывания приложения Службы приложений и управления им. В этом примере показано, как сопоставить личный домен с приложением.
 tags: azure-service-management
 ms.assetid: 5ac4a680-cc73-4578-bcd6-8668c08802c2
@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 12/11/2017
 ms.custom: mvc, seodec18
 ms.openlocfilehash: b7fa6955de306906de3be75bf465a955e4463ca2
-ms.sourcegitcommit: 273c04022b0145aeab68eb6695b99944ac923465
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97006520"
 ---
 # <a name="map-a-custom-domain-to-an-app-service-app-using-cli"></a>Сопоставление личного домена с приложением Службы приложений с помощью CLI

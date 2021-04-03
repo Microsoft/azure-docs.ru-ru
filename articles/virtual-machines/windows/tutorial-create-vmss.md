@@ -10,10 +10,10 @@ ms.date: 11/30/2018
 ms.reviewer: mimckitt
 ms.custom: mimckitt, devx-track-azurepowershell
 ms.openlocfilehash: b3853ddc71d1a9be26b2492764a9b341446e0eeb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "89078747"
 ---
 # <a name="tutorial-create-a-virtual-machine-scale-set-and-deploy-a-highly-available-app-on-windows-with-azure-powershell"></a>Руководство по Создание масштабируемого набора виртуальных машин и развертывание в Windows приложения высокого уровня доступности с помощью Azure PowerShell

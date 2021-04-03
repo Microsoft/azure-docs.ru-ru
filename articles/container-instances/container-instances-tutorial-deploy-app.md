@@ -5,13 +5,13 @@ ms.topic: tutorial
 ms.date: 03/21/2018
 ms.custom: seodec18, mvc, devx-track-azurecli
 ms.openlocfilehash: 2ea3d285f00d38df84587d9a7c15242fff38453b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87500578"
 ---
-# <a name="tutorial-deploy-a-container-application-to-azure-container-instances"></a>Руководство по Развертывание приложения-контейнера в службе "Экземпляры контейнеров Azure"
+# <a name="tutorial-deploy-a-container-application-to-azure-container-instances"></a>Руководство. Развертывание приложения-контейнера в службе "Экземпляры контейнеров Azure"
 
 Это последняя из трех частей руководства. С помощью предыдущих частей мы [создали образ контейнера](container-instances-tutorial-prepare-app.md), который затем [передали в реестр контейнеров Azure](container-instances-tutorial-prepare-acr.md). Эта часть завершает серию руководств. Мы развернем контейнер в службе "Экземпляры контейнеров Azure".
 
@@ -95,7 +95,7 @@ listening on port 80
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если ни один из ресурсов, созданных в данном цикле руководств, больше не требуется, можно выполнить команду [az group delete][az-group-delete], чтобы удалить группу ресурсов и все ресурсы, которые она содержит. Эта команда удаляет созданный вами реестр контейнеров, а также запущенный контейнер и все связанные с ним ресурсы.
+Если ресурсы, созданные в этом руководстве, больше не требуются, можно выполнить команду [az group delete][az-group-delete], чтобы удалить группу ресурсов и все ресурсы, которые она содержит. Эта команда удаляет созданный вами реестр контейнеров, а также запущенный контейнер и все связанные с ним ресурсы.
 
 ```azurecli-interactive
 az group delete --name myResourceGroup

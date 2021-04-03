@@ -10,10 +10,10 @@ ms.date: 05/20/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.openlocfilehash: 0948c7c82d7577bae07057bff9d1be4d7e09f978
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96462289"
 ---
 # <a name="create-and-use-views-using-serverless-sql-pool-in-azure-synapse-analytics"></a>Создание и использование представлений с помощью бессерверного пула SQL в Azure Synapse Analytics

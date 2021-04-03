@@ -1,14 +1,14 @@
 ---
-title: Краткое руководство. Отправка пользовательских событий в конечную веб-точку — Сетка событий, PowerShell
-description: Краткое руководство. Используйте службу "Сетка событий Azure" и PowerShell, чтобы публиковать пользовательские темы и подписываться на события, связанные с этими темами. События обрабатываются в веб-приложении.
+title: Краткое руководство. Отправка пользовательских событий в конечную веб-точку (Сетка событий, PowerShell)
+description: В этом кратком руководстве показано, как с помощью службы "Сетка событий Azure" и PowerShell опубликовать пользовательские темы и подписаться на события, связанные с этими темами. События обрабатываются в веб-приложении.
 ms.date: 07/07/2020
 ms.topic: quickstart
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 3bd389ff523fd32e73ac19f1131c8c2784e16db5
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89075653"
 ---
 # <a name="quickstart-route-custom-events-to-web-endpoint-with-powershell-and-event-grid"></a>Краткое руководство. Перенаправление пользовательских событий в конечную веб-точку с помощью PowerShell и службы "Сетка событий"

@@ -9,10 +9,10 @@ ms.date: 09/30/2019
 ms.author: victorh
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 8d800e77ed0e609091d31d9b3177af447ac06f5b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "89079512"
 ---
 # <a name="create-waf-custom-rules-with-azure-powershell"></a>Создание настраиваемых правил WAF с помощью Azure PowerShell

@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 08/17/2017
 ms.author: rodsan
 ms.openlocfilehash: 748d10b994080b667885e5d0d5f4d688269e86ab
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "68728043"
 ---
 # <a name="microsoft-threat-modeling-tool-mitigations"></a>Устранение рисков с помощью средства моделирования угроз от Майкрософт

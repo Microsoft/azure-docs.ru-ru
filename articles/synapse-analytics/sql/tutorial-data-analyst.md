@@ -10,10 +10,10 @@ ms.date: 11/20/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.openlocfilehash: d37597f8667c461e8d61f8214483f57eb702c2a0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97007557"
 ---
 # <a name="tutorial-explore-and-analyze-data-lakes-with-serverless-sql-pool"></a>Руководство по исследованию и анализу озера данных с помощью бессерверного пула SQL
