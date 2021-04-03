@@ -9,10 +9,10 @@ ms.custom: subject-armqs
 ms.date: 08/28/2020
 ms.author: victorh
 ms.openlocfilehash: 050dfa737ad04127f8c72158fbecb2e8e70e05c1
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "89075347"
 ---
 # <a name="quickstart-secure-your-virtual-hub-using-azure-firewall-manager---arm-template"></a>Краткое руководство. Защита виртуального концентратора с помощью Диспетчера брандмауэра Azure — шаблон ARM
@@ -77,7 +77,7 @@ ms.locfileid: "89075347"
 1. На портале Azure просмотрите параметры сети для виртуальной машины **Workload-Srv** и запишите частный IP-адрес.
 2. Подключите удаленный рабочий стол к виртуальной машине **Jump-Srv** и выполните вход. Откройте из нее подключение удаленного рабочего стола к частному IP-адресу **Workload-Srv**.
 
-3. Откройте браузер Internet Explorer и перейдите на сайт [https://www.google.com]\(`www.microsoft.com`).
+3. Откройте браузер Internet Explorer и перейдите на сайт [https://www.google.com]\(`www.microsoft.com` ).
 4. Если отобразятся системы оповещения безопасности Internet Explorer, выберите **ОК** > **Закрыть**.
 
    Откроется домашняя страница Майкрософт.

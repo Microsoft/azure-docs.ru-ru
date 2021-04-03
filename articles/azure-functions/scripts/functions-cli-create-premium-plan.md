@@ -6,10 +6,10 @@ ms.topic: sample
 ms.date: 11/23/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 714dd8d886f567bcdf07c93803662ef4b2c635f3
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "94565201"
 ---
 # <a name="create-a-function-app-in-a-premium-plan---azure-cli"></a>Создание приложения-функции в плане "Премиум" с помощью Azure CLI

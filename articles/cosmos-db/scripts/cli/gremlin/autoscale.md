@@ -8,10 +8,10 @@ ms.subservice: cosmosdb-graph
 ms.topic: sample
 ms.date: 7/29/2020
 ms.openlocfilehash: 26874e88335790e04895feea40c2bd2d68c4ece9
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "94563059"
 ---
 # <a name="create-an-azure-cosmos-gremlin-api-account-database-and-graph-with-autoscale-using-azure-cli"></a>Создание учетной записи, базы данных и графа API Gremlin с автомасштабированием в Azure Cosmos с помощью Azure CLI

@@ -5,10 +5,10 @@ ms.topic: sample
 ms.date: 01/29/2018
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 414a401168b1b378ed33f4904607243de0267d22
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "94565812"
 ---
 # <a name="cli-example-add-an-application-to-an-azure-batch-account"></a>Пример использования CLI: добавление приложения в учетную запись пакетной службы Azure

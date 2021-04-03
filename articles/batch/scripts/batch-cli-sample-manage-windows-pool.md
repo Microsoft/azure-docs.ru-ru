@@ -5,10 +5,10 @@ ms.topic: sample
 ms.date: 12/12/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: fb18f9d8777c17d31a3ab246603df0d9fa162467
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93100945"
 ---
 # <a name="cli-example-create-and-manage-a-windows-pool-in-azure-batch"></a>Пример CLI: создание пула Windows и управление им в пакетной службе Azure

@@ -11,10 +11,10 @@ ms.topic: end-user-help
 ms.date: 05/28/2020
 ms.author: curtand
 ms.openlocfilehash: e5b07f8f7ae766d110c87a495a3e1623b815e526
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "88795989"
 ---
 # <a name="what-is-the-additional-verification-page"></a>Что такое страница дополнительной проверки?
