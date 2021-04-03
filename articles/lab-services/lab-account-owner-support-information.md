@@ -4,10 +4,10 @@ description: Описывает, как владелец учетной запи
 ms.date: 06/26/2020
 ms.topic: how-to
 ms.openlocfilehash: 17456f61352b1e26a33c042b27faa2d3aa44d73a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "85445089"
 ---
 # <a name="set-up-support-information-lab-account-owner-in-azure-lab-services"></a>Настройка сведений о поддержке (владелец учетной записи лаборатории в Службах лабораторий Azure)
