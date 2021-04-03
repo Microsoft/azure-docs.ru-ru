@@ -7,10 +7,10 @@ ms.topic: overview
 ms.date: 07/01/2019
 ms.author: rohogue
 ms.openlocfilehash: 72308bf64246a8041bd40fa557280014a13c95eb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92218788"
 ---
 # <a name="what-is-azure-fxt-edge-filer-hybrid-storage-cache"></a>Основные сведения о кэше гибридного хранилища Azure FXT Edge Filer
@@ -47,7 +47,7 @@ Azure FXT Edge Filer можно использовать для поддержк
 
 Доступны две модели оборудования.
 
-| Модель | DRAM | SSD NVMe | Сетевые порты |
+| Моделирование | DRAM | SSD NVMe | Сетевые порты |
 |-------|------|----------|---------------|
 | FXT 6600 | 1536 ГБ | 25,6 ТБ | 6 x 25ГБ/10ГБ + 2 x 1ГБ |
 | FXT 6400 | 768 ГБ | 12,8 ТБ | 6 x 25ГБ/10ГБ + 2 x 1ГБ |

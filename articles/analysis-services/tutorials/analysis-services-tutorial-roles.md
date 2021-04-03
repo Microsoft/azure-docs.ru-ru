@@ -8,10 +8,10 @@ ms.date: 08/31/2020
 ms.author: owend
 ms.reviewer: owend
 ms.openlocfilehash: aea2196671a136145671b977a6d925849b635b73
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92018701"
 ---
 # <a name="tutorial-configure-server-administrator-and-user-roles"></a>Руководство по Настройка ролей администратора и пользователя сервера

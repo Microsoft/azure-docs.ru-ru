@@ -1,5 +1,5 @@
 ---
-title: Руководство по Размещение статического веб-сайта в хранилище BLOB-объектов (служба хранилища Azure)
+title: Руководство. Размещение статического веб-сайта в хранилище BLOB-объектов (служба хранилища Azure)
 description: Узнайте, как настроить учетную запись хранения для размещения статического веб-сайта и развернуть его в службе хранилища Azure.
 author: normesta
 ms.service: storage
@@ -9,25 +9,25 @@ ms.date: 1/22/2020
 ms.author: normesta
 ms.reviewer: dineshm
 ms.openlocfilehash: 36cdaa813e0eccb23563301052aee268ab61533a
-ms.sourcegitcommit: 230d5656b525a2c6a6717525b68a10135c568d67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94888510"
 ---
 <!---Customer intent: I want to host files for a static website in Blob storage and access the website from an Azure endpoint.--->
 
-# <a name="tutorial-host-a-static-website-on-blob-storage"></a>Руководство по Размещение статического веб-сайта в хранилище BLOB-объектов
+# <a name="tutorial-host-a-static-website-on-blob-storage"></a>Руководство. Размещение статического веб-сайта в хранилище BLOB-объектов
 
 Из этого руководства вы узнаете, как создать и развернуть статический веб-сайт в службе хранилища Azure. В конечном итоге у вас будет статический веб-сайт, к которому пользователи будут иметь публичный доступ. 
 
-В этом руководстве описано следующее:
+В этом руководстве описано следующее.
 
 > [!div class="checklist"]
 > * Настройка размещения статического веб-сайта
 > * Развертывание веб-сайта Hello World
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [storage-quickstart-prereq-include](../../../includes/storage-quickstart-prereq-include.md)]
 
