@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с Explanation-Based Auditing System | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с Explanation-Based Auditing System | Документация Майкрософт
 description: Сведения о настройке единого входа между Azure Active Directory и Explanation-Based Auditing System.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 02/27/2019
 ms.author: jeedes
 ms.openlocfilehash: 4d63b1fa82400d95b18c6dbd7f37ec321f72b3a7
-ms.sourcegitcommit: 9b8425300745ffe8d9b7fbe3c04199550d30e003
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92453711"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-explanation-based-auditing-system"></a>Руководство по Интеграция Azure Active Directory с Explanation-Based Auditing System
+# <a name="tutorial-azure-active-directory-integration-with-explanation-based-auditing-system"></a>Руководство. Интеграция Azure Active Directory с Explanation-Based Auditing System
 
 В этом руководстве описано, как интегрировать Explanation-Based Auditing System с Azure Active Directory (Azure AD).
 Интеграция Azure AD с приложением Explanation-Based Auditing System обеспечивает следующие преимущества.
@@ -41,35 +41,35 @@ ms.locfileid: "92453711"
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* Explanation-Based Auditing System поддерживает единый вход, инициируемый **поставщиком услуг** .
+* Explanation-Based Auditing System поддерживает единый вход, инициируемый **поставщиком услуг**.
 
-* Explanation-Based Auditing System поддерживает **JIT** -подготовку пользователей. 
+* Explanation-Based Auditing System поддерживает **JIT**-подготовку пользователей. 
 
 ## <a name="adding-explanation-based-auditing-system-from-the-gallery"></a>Добавление Explanation-Based Auditing System из коллекции
 
 Чтобы настроить интеграцию Explanation-Based Auditing System с Azure AD, необходимо добавить Explanation-Based Auditing System из коллекции в список управляемых приложений SaaS.
 
-**Чтобы добавить приложение Explanation-Based Auditing System из коллекции, сделайте следующее.**
+**Чтобы добавить приложение Explanation-Based Auditing System из коллекции, сделайте следующее:**
 
-1. На **[портале Azure](https://portal.azure.com)** в области навигации слева щелкните значок **Azure Active Directory** .
+1. На **[портале Azure](https://portal.azure.com)** в области навигации слева щелкните значок **Azure Active Directory**.
 
     ![Кнопка Azure Active Directory](common/select-azuread.png)
 
-2. Перейдите в колонку **Корпоративные приложения** и выберите **Все приложения** .
+2. Перейдите в колонку **Корпоративные приложения** и выберите **Все приложения**.
 
     ![Колонка "Корпоративные приложения"](common/enterprise-applications.png)
 
-3. Чтобы добавить новое приложение, в верхней части диалогового окна нажмите кнопку **Создать приложение** .
+3. Чтобы добавить новое приложение, в верхней части диалогового окна нажмите кнопку **Создать приложение**.
 
     ![Кнопка "Создать приложение"](common/add-new-app.png)
 
-4. В поле поиска введите **Explanation-Based Auditing System** , выберите **Explanation-Based Auditing System** на панели результатов и нажмите кнопку **Добавить** , чтобы добавить это приложение.
+4. В поле поиска введите **Explanation-Based Auditing System**, выберите **Explanation-Based Auditing System** на панели результатов и нажмите кнопку **Добавить**, чтобы добавить это приложение.
 
      ![Explanation-Based Auditing System в списке результатов](common/search-new-app.png)
 
 ## <a name="configure-and-test-azure-ad-single-sign-on"></a>Настройка и проверка единого входа в Azure AD
 
-В этом разделе описана настройка и проверка единого входа Azure AD в Explanation-Based Auditing System с использованием тестового пользователя **Britta Simon** .
+В этом разделе описана настройка и проверка единого входа Azure AD в Explanation-Based Auditing System с использованием тестового пользователя **Britta Simon**.
 Чтобы единый вход функционировал, необходимо установить связь между пользователем Azure AD и соответствующим пользователем в Explanation-Based Auditing System.
 
 Чтобы настроить и проверить единый вход Azure AD в Explanation-Based Auditing System, вам потребуется выполнить действия в следующих стандартных блоках.
@@ -87,15 +87,15 @@ ms.locfileid: "92453711"
 
 Чтобы настроить единый вход Azure AD в Explanation-Based Auditing System, сделайте следующее.
 
-1. На [портале Azure](https://portal.azure.com/) на странице интеграции с приложением **Explanation-Based Auditing System** выберите **Единый вход** .
+1. На [портале Azure](https://portal.azure.com/) на странице интеграции с приложением **Explanation-Based Auditing System** выберите **Единый вход**.
 
     ![Ссылка "Настройка единого входа"](common/select-sso.png)
 
-2. В диалоговом окне **Выбрать метод единого входа** выберите режим **SAML/WS-Fed** , чтобы включить единый вход.
+2. В диалоговом окне **Выбрать метод единого входа** выберите режим **SAML/WS-Fed**, чтобы включить единый вход.
 
     ![Режим выбора единого входа](common/select-saml-option.png)
 
-3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить** , чтобы открыть диалоговое окно **Базовая конфигурация SAML** .
+3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
     ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
@@ -111,17 +111,17 @@ ms.locfileid: "92453711"
 
 ### <a name="configure-explanation-based-auditing-system-single-sign-on"></a>Настройка единого входа в Explanation-Based Auditing System
 
-Чтобы настроить единый вход на стороне **Explanation-Based Auditing System** , нужно отправить **URL-адрес метаданных федерации приложений**[группе поддержки Explanation-Based Auditing System](mailto:support@maizeanalytics.com). Специалисты службы поддержки настроят подключение единого входа SAML на обеих сторонах.
+Чтобы настроить единый вход на стороне **Explanation-Based Auditing System**, нужно отправить **URL-адрес метаданных федерации приложений**[группе поддержки Explanation-Based Auditing System](mailto:support@maizeanalytics.com). Специалисты службы поддержки настроят подключение единого входа SAML на обеих сторонах.
 
 ### <a name="create-an-azure-ad-test-user"></a>Создание тестового пользователя Azure AD 
 
 Цель этого раздела — создать на портале Azure тестового пользователя с именем Britta Simon.
 
-1. На портале Azure в области слева выберите **Azure Active Directory** , **Пользователи** , а затем — **Все пользователи** .
+1. На портале Azure в области слева выберите **Azure Active Directory**, **Пользователи**, а затем — **Все пользователи**.
 
     ![Ссылки "Пользователи и группы" и "Все пользователи"](common/users.png)
 
-2. В верхней части экрана выберите **Новый пользователь** .
+2. В верхней части экрана выберите **Новый пользователь**.
 
     ![Кнопка "Новый пользователь"](common/new-user.png)
 
@@ -129,40 +129,40 @@ ms.locfileid: "92453711"
 
     ![Диалоговое окно "Пользователь"](common/user-properties.png)
 
-    а. В поле **Имя** введите **BrittaSimon** .
+    а. В поле **Имя** введите **BrittaSimon**.
   
-    b. В поле **Имя пользователя** введите **brittasimon\@домен_вашей_компании.доменная_зона** .  
+    b. В поле **Имя пользователя** введите **brittasimon\@домен_вашей_компании.доменная_зона**.  
     Например BrittaSimon@contoso.com.
 
     c. Установите флажок **Показать пароль** и запишите значение, которое отображается в поле "Пароль".
 
-    d. Нажмите кнопку **Создать** .
+    d. Нажмите кнопку **Создать**.
 
 ### <a name="assign-the-azure-ad-test-user"></a>Назначение тестового пользователя Azure AD
 
 В этом разделе описано, как разрешить пользователю Britta Simon использовать единый вход Azure, предоставив этому пользователю доступ к Explanation-Based Auditing System.
 
-1. На портале Azure выберите **Корпоративные приложения** , **Все приложения** , а затем — **Explanation-Based Auditing System** .
+1. На портале Azure выберите **Корпоративные приложения**, **Все приложения**, а затем — **Explanation-Based Auditing System**.
 
     ![Колонка "Корпоративные приложения"](common/enterprise-applications.png)
 
-2. Из списка приложений выберите **Explanation-Based Auditing System** .
+2. Из списка приложений выберите **Explanation-Based Auditing System**.
 
     ![Ссылка на Explanation-Based Auditing System в списке "Приложения"](common/all-applications.png)
 
-3. В меню слева выберите **Пользователи и группы** .
+3. В меню слева выберите **Пользователи и группы**.
 
     ![Ссылка "Пользователи и группы"](common/users-groups-blade.png)
 
-4. Нажмите кнопку **Добавить пользователя** , а затем в диалоговом окне **Добавление назначения** выберите **Пользователи и группы** .
+4. Нажмите кнопку **Добавить пользователя**, а затем в диалоговом окне **Добавление назначения** выберите **Пользователи и группы**.
 
     ![Область "Добавление назначения"](common/add-assign-user.png)
 
-5. В диалоговом окне **Пользователи и группы** из списка пользователей выберите **Britta Simon** , а затем в верхней части экрана нажмите кнопку **Выбрать** .
+5. В диалоговом окне **Пользователи и группы** из списка пользователей выберите **Britta Simon**, а затем в верхней части экрана нажмите кнопку **Выбрать**.
 
-6. Если ожидается, что в утверждении SAML будет получено какое-либо значение роли, то в диалоговом окне **Выбор ролей** нужно выбрать соответствующую роль для пользователя из списка и затем нажать кнопку **Выбрать** , расположенную в нижней части экрана.
+6. Если ожидается, что в утверждении SAML будет получено какое-либо значение роли, то в диалоговом окне **Выбор ролей** нужно выбрать соответствующую роль для пользователя из списка и затем нажать кнопку **Выбрать**, расположенную в нижней части экрана.
 
-7. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить** .
+7. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
 ### <a name="create-explanation-based-auditing-system-test-user"></a>Создание тестового пользователя Explanation-Based Auditing System
 

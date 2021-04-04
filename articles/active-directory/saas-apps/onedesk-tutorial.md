@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 11/18/2019
 ms.author: jeedes
 ms.openlocfilehash: 44d9bf446ff5d85c89bce729e17cbda129c8e4ce
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92518506"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-onedesk"></a>Руководство по интеграции единого входа Azure Active Directory с OneDesk
