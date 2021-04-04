@@ -1,5 +1,5 @@
 ---
-title: Руководство по интеграции единого входа Azure Active Directory с FloQast | Документация Майкрософт
+title: Руководство. Интеграция единого входа Azure Active Directory с FloQast | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и FloQast.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 10/10/2019
 ms.author: jeedes
 ms.openlocfilehash: ed35a0b6e6f2ad620b528283a332507845e4f00d
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97588307"
 ---
-# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-floqast"></a>Руководство по интеграции единого входа Azure Active Directory с FloQast
+# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-floqast"></a>Руководство. Интеграция единого входа Azure Active Directory с FloQast
 
 В этом учебнике описано, как интегрировать FloQast с Azure Active Directory (Azure AD). Интеграция FloQast с Azure AD обеспечивает следующие возможности.
 

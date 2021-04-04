@@ -7,10 +7,10 @@ author: lazinnat
 ms.date: 06/20/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 50a65583c41dd94b174a33432afcf42b31e67df0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96437054"
 ---
 # <a name="tutorial-create-managed-application-with-custom-actions-and-resources"></a>Руководство по созданию управляемого приложения с настраиваемыми действиями и ресурсами

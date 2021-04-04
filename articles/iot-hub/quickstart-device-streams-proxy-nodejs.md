@@ -10,10 +10,10 @@ ms.custom: references_regions
 ms.date: 03/14/2019
 ms.author: robinsh
 ms.openlocfilehash: ef45a6277adeff09a34fe22b7abeb21d3e603167
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98624360"
 ---
 # <a name="quickstart-enable-ssh-and-rdp-over-an-iot-hub-device-stream-by-using-a-nodejs-proxy-application-preview"></a>Краткое руководство. Подключение по протоколу SSH и RDP через поток устройств Центра Интернета вещей с помощью приложения прокси Node.js (предварительная версия)
