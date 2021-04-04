@@ -13,10 +13,10 @@ ms.topic: article
 ms.date: 11/08/2017
 ms.author: apimpm
 ms.openlocfilehash: 1c4e64251390936e8a63ee904ec69f173cac6114
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93146711"
 ---
 # <a name="edit-an-api"></a>Изменение API

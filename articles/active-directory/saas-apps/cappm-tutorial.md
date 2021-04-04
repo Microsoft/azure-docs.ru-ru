@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 06/05/2020
 ms.author: jeedes
 ms.openlocfilehash: 7931bc58b1035a425b30b01b802345b7aa7b8d14
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92456506"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-clarity"></a>Руководство по Интеграция Azure Active Directory с Clarity

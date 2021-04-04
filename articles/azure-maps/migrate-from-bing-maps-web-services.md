@@ -10,10 +10,10 @@ services: azure-maps
 manager: cpendle
 ms.custom: ''
 ms.openlocfilehash: 6024aae68183fbe02125ef4207e9fbce8abd6a2b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97679080"
 ---
 # <a name="tutorial-migrate-web-service-from-bing-maps"></a>Руководство по Перенос веб-службы из Карт Bing
@@ -281,8 +281,8 @@ Azure Maps позволяет привязать координаты к дор�
 |----------------------------|---------------------------------------------------------------------|
 | `points`                   | `supportingPoints` — передайте эти точки в текст POST-запроса.  |
 | `interpolate`              | Недоступно                                                                 |
-| `includeSpeedLimit`        | Недоступно                                                                 |
-| `includeTruckSpeedLimit`   | Недоступно                                                                 |
+| `includeSpeedLimit`        | Н/Д                                                                 |
+| `includeTruckSpeedLimit`   | Н/Д                                                                 |
 | `speedUnit`                | Недоступно                                                                 |
 | `travelMode`               | `travelMode`                                                        |
 | `key`                      | `subscription-key` — ознакомьтесь также с документацией по [аутентификации в Azure Maps](./azure-maps-authentication.md). |
@@ -343,7 +343,7 @@ Azure Maps предоставляет API для отрисовки статич
 | `mapLayer` (`ml`)        | Недоступно                                            |
 | `mapSize` (`ms`)         | `width` и `height` могут иметь размер до 8192 x 8192. |
 | `declutterPins` (`dcl`)  | Недоступно                                            |
-| `dpi`                    | Недоступно                                            |
+| `dpi`                    | Н/Д                                            |
 | `drawCurve`              | `path`                                         |
 | `mapMetadata`            | Недоступно                                            |
 | `pitch`                  | Недоступно — уличный вид не поддерживается.                |

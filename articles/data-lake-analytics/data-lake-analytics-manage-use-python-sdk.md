@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 06/08/2018
 ms.custom: devx-track-python
 ms.openlocfilehash: fda09047d138e404eeca87ed3eba9bb72ff62d56
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92220233"
 ---
 # <a name="manage-azure-data-lake-analytics-using-python"></a>Управление Azure Data Lake Analytics с помощью Python
@@ -29,9 +29,9 @@ ms.locfileid: "92220233"
 
 Установите следующие модули:
 
-* Модуль **Azure-руководства-Resource** включает другие модули azure для Active Directory и т. д.
-* Модуль **Azure-Lake-Store** включает Azure Data Lake Store операций файловой системы. 
-* Модуль **Azure-Management-Lake-Store** включает Azure Data Lake Store операции управления учетными записями.
+* Модуль **azure-mgmt-resource** содержит другие модули Azure для Active Directory и др.
+* Модуль **azure-datalake-store** содержит операции файловой системы Azure Data Lake Store. 
+* Модуль **azure-mgmt-datalake-store** содержит операции по управлению учетной записью Azure Data Lake Store.
 * Модуль **azure-mgmt-datalake-analytics** содержит операции Azure Data Lake Analytics. 
 
 Во-первых, убедитесь, что установлена актуальная версия компонента `pip`, выполнив следующую команду:

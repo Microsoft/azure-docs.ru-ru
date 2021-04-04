@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/26/2019
 ms.author: jeedes
 ms.openlocfilehash: 1cd781358a8dea740a7e89203c61b7112acb9efd
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92460076"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-insignia-saml-sso"></a>Руководство по интеграции Azure Active Directory с Insignia SAML SSO
@@ -101,7 +101,7 @@ ms.locfileid: "92460076"
 
     ![Сведения о домене и URL-адресах единого входа для приложения Insignia SAML SSO](common/sp-identifier.png)
 
-    а. В текстовом поле **URL-адрес для входа** введите URL-адрес в следующем формате: .
+    а. В текстовом поле **URL-адрес для входа** введите URL-адрес в следующем формате:
     
     ```http
     https://<customername>.insigniails.com/ils

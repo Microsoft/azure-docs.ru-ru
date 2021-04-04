@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграции единого входа Azure Active Directory с Abintegro | Документация Майкрософт
+title: Руководство. Интеграция единого входа Azure Active Directory с Abintegro | Документация Майкрософт
 description: Узнайте, как настроить единый вход Azure Active Directory в приложении Abintegro.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 09/03/2019
 ms.author: jeedes
 ms.openlocfilehash: d8c785295380d3a90fde41f52b002f4686decad6
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97587372"
 ---
-# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-abintegro"></a>Руководство по Интеграции единого входа Azure Active Directory с Abintegro
+# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-abintegro"></a>Руководство. Интеграция единого входа Azure Active Directory с Abintegro
 
 В этом руководстве объясняется, как интегрировать Abintegro с Azure Active Directory (Azure AD). Интеграция Abintegro с Azure AD обеспечивает приведенные ниже возможности.
 
