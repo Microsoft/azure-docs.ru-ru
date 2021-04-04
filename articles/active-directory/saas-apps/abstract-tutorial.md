@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с Abstract | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с Abstract | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и Abstract.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 07/16/2019
 ms.author: jeedes
 ms.openlocfilehash: e1c3236c4c1957b4d0daee8d30c71f03fb8674dd
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97587831"
 ---
-# <a name="tutorial-integrate-abstract-with-azure-active-directory"></a>Руководство по Интеграция Abstract с Azure Active Directory
+# <a name="tutorial-integrate-abstract-with-azure-active-directory"></a>Руководство. Интеграция Abstract с Azure Active Directory
 
 В этом руководстве описано, как интегрировать Abstract с Azure Active Directory (Azure AD). Интеграции Abstract с Azure AD обеспечивает следующие возможности.
 
