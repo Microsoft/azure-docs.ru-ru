@@ -1,5 +1,5 @@
 ---
-title: Руководство по интеграции Azure Active Directory с приложением AMMS | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с AMMS | Документация Майкрософт
 description: Сведения о настройке единого входа между Azure Active Directory и AMMS.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 04/04/2019
 ms.author: jeedes
 ms.openlocfilehash: 4fdfe26104e4b69212b7bf6870582ef4cbb4de2b
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92318761"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-amms"></a>Руководство по интеграции Azure Active Directory с AMMS
+# <a name="tutorial-azure-active-directory-integration-with-amms"></a>Руководство. Интеграция Azure Active Directory с AMMS
 
 В этом руководстве описано, как интегрировать AMMS с Azure Active Directory (Azure AD).
 Интеграция Azure AD с приложением AMMS обеспечивает следующие преимущества:
@@ -47,7 +47,7 @@ ms.locfileid: "92318761"
 
 Чтобы настроить интеграцию AMMS с Azure AD, необходимо добавить AMMS из коллекции в список управляемых приложений SaaS.
 
-**Чтобы добавить AMMS из коллекции, выполните следующие действия.**
+**Чтобы добавить AMMS из коллекции, выполните следующие действия:**
 
 1. На **[портале Azure](https://portal.azure.com)** в области навигации слева щелкните значок **Azure Active Directory**.
 
@@ -168,7 +168,7 @@ ms.locfileid: "92318761"
 
 ### <a name="create-amms-test-user"></a>Создание тестового пользователя AMMS
 
-В этом разделе описано, как создать пользователя Britta Simon в приложении AMMS. Обратитесь в  [службу поддержки AMMS](mailto:techsupport@microwestsoftware.com), чтобы добавить пользователей на платформу AMMS. Перед использованием единого входа необходимо создать и активировать пользователей.
+В этом разделе описано, как создать пользователя Britta Simon в приложении AMMS. Чтобы добавить пользователей на платформу AMMS, обратитесь в [службу поддержки AMMS](mailto:techsupport@microwestsoftware.com). Перед использованием единого входа необходимо создать и активировать пользователей.
 
 ### <a name="test-single-sign-on"></a>Проверка единого входа 
 

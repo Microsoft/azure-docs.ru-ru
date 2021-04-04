@@ -18,13 +18,13 @@ ms.author: sethm
 ms.reviewer: jowargo
 ms.lastreviewed: 03/22/2019
 ms.openlocfilehash: 2c77eba69fd914e8ecc7d08a1b16f61ceefe101b
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92320573"
 ---
-# <a name="tutorial-send-notifications-to-specific-devices-running-universal-windows-platform-applications"></a>Руководство по отправке уведомлений на конкретные устройства с запущенными приложениями универсальной платформы Windows
+# <a name="tutorial-send-notifications-to-specific-devices-running-universal-windows-platform-applications"></a>Руководство. Отправка уведомлений на конкретные устройства с запущенными приложениями универсальной платформы Windows
 
 [!INCLUDE [notification-hubs-selector-breaking-news](../../includes/notification-hubs-selector-breaking-news.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "92320573"
 > * Отправка уведомлений с тегами
 > * Запуск приложения и создание уведомлений
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-Пройдите [руководство по отправке уведомлений в приложения универсальной платформы Windows с использованием Центров уведомлений Azure][get-started] перед началом работы с этим учебником.  
+Перед началом работы с этим руководством выполните инструкции из статьи [Начало работы с Центрами уведомлений для приложений универсальной платформы Windows][get-started].  
 
 ## <a name="add-category-selection-to-the-app"></a>Добавление возможности выбора категорий в приложение
 
@@ -194,10 +194,10 @@ ms.locfileid: "92320573"
 > [!NOTE]
 > Так как универсальный код ресурса (URI) канала, назначенный службой уведомлений Windows (WNS), может измениться в любое время, следует регулярно производить регистрацию для использования уведомлений, чтобы предотвратить сбои уведомлений. В этом примере регистрация для использования уведомлений осуществляется при каждом запуске приложения. Для тех приложений, которые запускаются часто (более одного раза в день), возможно, лучше пропустить регистрацию, чтобы не изменять пропускную способность, если с момента прошлой регистрации прошло меньше суток.
 
-1. Откройте файл `notifications`App.xaml.cs*и обновите метод*, чтобы использовать класс `InitNotificationsAsync` для подписки по категориям.
+1. Откройте файл `notifications`App.xaml.cs *и обновите метод*, чтобы использовать класс `InitNotificationsAsync` для подписки по категориям.
 
     ```csharp
-    // *** Remove or comment out these lines **_
+    // *** Remove or comment out these lines ***
     //var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
     //var hub = new NotificationHub("your hub name", "your listen connection string");
     //var result = await hub.RegisterNativeAsync(channel.Uri);
