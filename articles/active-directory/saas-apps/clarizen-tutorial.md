@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с Clarizen | Документация Майкрософт
+title: Учебник. Интеграция Azure Active Directory с Clarizen | Документация Майкрософт
 description: Узнайте, как настроить единый вход Azure Active Directory в Clarizen.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 01/21/2019
 ms.author: jeedes
 ms.openlocfilehash: 38b2ff6909dae15ff0f836316d5d12140ecc331a
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97672970"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-clarizen"></a>Руководство по Интеграция Azure Active Directory с Clarizen
+# <a name="tutorial-azure-active-directory-integration-with-clarizen"></a>Руководство. Интеграция Azure Active Directory с Clarizen
 
 В этом руководстве описано, как интегрировать Clarizen с Azure Active Directory (Azure AD).
 Интеграция Azure AD с приложением Clarizen обеспечивает следующие преимущества:
@@ -76,7 +76,7 @@ ms.locfileid: "97672970"
 2. **[Настройка единого входа в Clarizen](#configure-clarizen-single-sign-on)** необходима, чтобы настроить параметры единого входа на стороне приложения.
 3. **[Создание тестового пользователя Azure AD](#create-an-azure-ad-test-user)** требуется для проверки работы единого входа Azure AD от имени пользователя Britta Simon.
 4. **[Назначение тестового пользователя Azure AD](#assign-the-azure-ad-test-user)** необходимо, чтобы разрешить пользователю Britta Simon использовать единый вход Azure AD.
-5. **[Создайте тестового пользователя Clarizen](#create-clarizen-test-user)** , чтобы в Clarizen был тестовый пользователь Britta Simon, связанный с соответствующим представлением пользователя в Azure AD.
+5. **[Создайте тестового пользователя Clarizen](#create-clarizen-test-user)**, чтобы в Clarizen был тестовый пользователь Britta Simon, связанный с соответствующим представлением пользователя в Azure AD.
 6. **[Проверка единого входа](#test-single-sign-on)** необходима, чтобы проверить работу конфигурации.
 
 ### <a name="configure-azure-ad-single-sign-on"></a>Настройка единого входа Azure AD
@@ -101,7 +101,7 @@ ms.locfileid: "97672970"
 
     ![Сведения о домене и URL-адресах единого входа приложения Clarizen](common/idp-intiated.png)
 
-    а. В текстовом поле **Идентификатор** введите значение: `Clarizen`.
+    a. В текстовом поле **Идентификатор** введите значение: `Clarizen`.
 
     b. В текстовом поле **URL-адрес ответа** введите URL-адрес в формате `https://.clarizen.com/Clarizen/Pages/Integrations/SAML/SamlResponse.aspx`.
 
@@ -138,15 +138,15 @@ ms.locfileid: "97672970"
 
     ![Диалоговое окно "Федеративная проверка подлинности"](./media/clarizen-tutorial/tutorial_clarizen_003.png "Федеративная проверка подлинности")
 
-    а. Выберите **Enable Federated Authentication** (Включить федеративную проверку подлинности).
+    a. Выберите **Enable Federated Authentication** (Включить федеративную проверку подлинности).
 
-    b. Чтобы отправить загруженный сертификат, нажмите кнопку **Отправить** .
+    b. Нажмите **Отправить**, чтобы отправить загруженный сертификат.
 
     c. В текстовом поле **URL-адрес входа** введите значение **URL-адреса входа** из окна настройки приложения Azure AD.
 
     d. В текстовом поле **URL-адрес входа** введите значение **URL-адреса входа** из окна настройки приложения Azure AD.
 
-    д) Установите флаг **Использовать POST**.
+    д) Нажмите **Использовать POST**.
 
     е) Выберите команду **Сохранить**.
 
@@ -223,7 +223,7 @@ ms.locfileid: "97672970"
 
     ![Диалоговое окно "Приглашение пользователей"](./media/clarizen-tutorial/create_aaduser_003.png "Приглашение пользователей")
 
-    а. В текстовом поле **Email** (Электронная почта) введите адрес электронной почты учетной записи Britta Simon.
+    a. В текстовом поле **Email** (Электронная почта) введите адрес электронной почты учетной записи Britta Simon.
 
     b. Нажмите кнопку **Пригласить**.
 

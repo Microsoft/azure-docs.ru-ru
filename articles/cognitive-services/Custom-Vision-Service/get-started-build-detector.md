@@ -13,10 +13,10 @@ ms.author: pafarley
 ms.custom: cog-serv-seo-aug-2020
 keywords: распознавание изображений, приложение для распознавания изображений, пользовательское визуальное распознавание
 ms.openlocfilehash: 5ecd5fee565a8d31e0ff05f3b234771446242d02
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "99221301"
 ---
 # <a name="quickstart-build-an-object-detector-with-the-custom-vision-website"></a>Краткое руководство. Создание средства обнаружения объектов с помощью веб-сайта Пользовательского визуального распознавания

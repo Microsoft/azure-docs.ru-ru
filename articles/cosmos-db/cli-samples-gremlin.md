@@ -9,10 +9,10 @@ ms.date: 10/13/2020
 ms.author: mjbrown
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 63ff557e5ca0769b68cb74f4b790e3678da7c3c7
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93342119"
 ---
 # <a name="azure-cli-samples-for-azure-cosmos-db-gremlin-api"></a>Примеры Azure CLI для API Gremlin в Azure Cosmos DB

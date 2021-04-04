@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 05/03/2019
 ms.author: jeedes
 ms.openlocfilehash: f729828627fdb0be18f220d34227aac756ed4e13
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92894922"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-xaitporter"></a>Руководство по интеграции Azure Active Directory с XaitPorter
