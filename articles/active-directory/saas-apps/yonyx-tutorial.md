@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: jeedes
 ms.openlocfilehash: 1cbf0b03928f8cf8823fe2491c48d0470cf24606
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92519152"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-yonyx-interactive-guides"></a>Руководство по интеграции Azure Active Directory с Yonyx Interactive Guides

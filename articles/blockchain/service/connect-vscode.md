@@ -5,10 +5,10 @@ ms.date: 12/04/2020
 ms.topic: quickstart
 ms.reviewer: caleteet
 ms.openlocfilehash: 6e94d93d91f25c15743c4c467e31de49fd9da41d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96763338"
 ---
 # <a name="quickstart-use-visual-studio-code-to-connect-to-an-azure-blockchain-service-consortium-network"></a>Краткое руководство. Подключение к сети консорциума службы "Блокчейн Azure" с помощью Visual Studio Code

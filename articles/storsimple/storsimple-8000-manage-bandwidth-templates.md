@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/29/2017
 ms.author: alkohli
 ms.openlocfilehash: 56170ffbbfe14248bcfd1f94549a3565873f8646
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96005900"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-manage-storsimple-bandwidth-templates"></a>Использование службы диспетчера устройств StorSimple для управления шаблонами пропускной способности StorSimple
@@ -64,7 +64,7 @@ ms.locfileid: "96005900"
     1. Укажите уникальное имя для шаблона пропускной способности.
     2. Задайте расписание для пропускной способности. Чтобы создать расписание, выполните следующие действия.
    
-        1. В раскрывающемся списке выберите **дни** недели, для которых настроено расписание. Здесь можно выбрать несколько дней.        
+        1. В раскрывающемся списке выберите **дни** недели, для которой настроено расписание. Здесь можно выбрать несколько дней.        
         
         2. Введите **время начала** в формате _ЧЧ:ММ_. Это время, с которого начнется выполнение расписания.
 

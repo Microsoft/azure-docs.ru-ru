@@ -14,10 +14,10 @@ ms.date: 03/20/2018
 ms.author: kumud
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: f0bc7ddde7964ecdd003b951a8562a840b8b88e4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98223216"
 ---
 # <a name="route-traffic-through-a-network-virtual-appliance-script-sample"></a>Пример скрипта для маршрутизации трафика через виртуальный сетевой модуль

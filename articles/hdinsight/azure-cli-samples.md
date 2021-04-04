@@ -1,18 +1,18 @@
 ---
-title: 'Azure HDInsight: Примеры для Azure CLI'
+title: 'Azure HDInsight: примеры Azure CLI'
 description: Примеры выполнения распространенных задач в Azure HDInsight с помощью Azure CLI.
 ms.service: hdinsight
 ms.topic: sample
 ms.date: 09/23/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 9367c1b4d82e984b2b4200768a3f83f9245c7f0f
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98946886"
 ---
-# <a name="azure-hdinsight-azure-cli-samples"></a>Azure HDInsight: Примеры для Azure CLI
+# <a name="azure-hdinsight-azure-cli-samples"></a>Azure HDInsight: примеры Azure CLI
 
 > [!div class="op_single_selector"]
 > [Примеры для .NET](hdinsight-sdk-dotnet-samples.md)
@@ -21,11 +21,11 @@ ms.locfileid: "98946886"
 
 В этой статье приводятся примеры скриптов для типичных задач. Для каждого примера вам нужно присвоить переменным фактические значения, прежде чем выполнять команду.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Azure CLI. Шаги этого процесса описаны в статье [Установка Azure CLI](/cli/azure/install-azure-cli).
 
-* Необязательное действие: Bash. В примерах, приведенных в этой статье, используется оболочка Bash в Windows 10. Шаги установки см. в статье [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10) (Подсистема Windows для Linux в Windows 10).  С небольшими изменениями эти примеры будут работать и в командной строке Windows.
+* Необязательно: Bash. В примерах, приведенных в этой статье, используется оболочка Bash в Windows 10. Шаги установки см. в статье [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10) (Подсистема Windows для Linux в Windows 10).  С небольшими изменениями эти примеры будут работать и в командной строке Windows.
 
 ## <a name="az-login"></a>az login
 

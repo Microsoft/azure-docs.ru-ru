@@ -17,10 +17,10 @@ ms.date: 02/02/2016
 ms.author: genli
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: 2e798f81102017b4d34c4b1b219a9f23035b0359
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98222842"
 ---
 # <a name="configure-private-ip-addresses-for-a-virtual-machine-classic-using-powershell"></a>Настройка частных IP-адресов для (классической) виртуальной машины с помощью PowerShell

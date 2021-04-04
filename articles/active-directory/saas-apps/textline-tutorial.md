@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 07/15/2020
 ms.author: jeedes
 ms.openlocfilehash: b0c049bb5cdb33c093328ff38d223b79b757a283
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92518319"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-textline"></a>Руководство по интеграции единого входа Azure Active Directory с Textline
