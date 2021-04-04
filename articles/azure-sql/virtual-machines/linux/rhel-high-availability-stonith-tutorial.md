@@ -8,10 +8,10 @@ ms.author: vanto
 ms.reviewer: jroth
 ms.date: 06/25/2020
 ms.openlocfilehash: 533f5c9e38818a8e37482cbbb3a90602366eca6f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97587219"
 ---
 # <a name="tutorial-configure-availability-groups-for-sql-server-on-rhel-virtual-machines-in-azure"></a>Руководство по Настройка групп доступности для SQL Server на виртуальных машинах RHEL в Azure 

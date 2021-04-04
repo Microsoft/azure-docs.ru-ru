@@ -11,10 +11,10 @@ ms.date: 01/29/2018
 ms.custom:
 - 'Role: Cloud Development'
 ms.openlocfilehash: e25b9d6cbe8446fb2f10150f17f7e2b0ccf85d3c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92147621"
 ---
 # <a name="send-device-to-cloud-and-cloud-to-device-messages-with-iot-hub"></a>Отправка сообщений с устройства в облако и из облака на устройство с помощью Центра Интернета вещей

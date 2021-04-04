@@ -1,5 +1,5 @@
 ---
-title: Руководство по проектированию сервера Базы данных Azure для MySQL с помощью Azure CLI
+title: Руководство. Проектирование сервера Базы данных Azure для MySQL с помощью Azure CLI
 description: Это руководство содержит сведения о создании базы данных и сервера базы данных Azure для MySQL и управлении ими с помощью Azure CLI 2.0 из командной строки.
 author: savjani
 ms.author: pariks
@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.date: 12/02/2019
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 8546ba5c80a4c8909876ff755bc094f1aec96482
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96437088"
 ---
-# <a name="tutorial-design-an-azure-database-for-mysql-using-azure-cli"></a>Руководство по Разработка базы данных Azure для MySQL с помощью Azure CLI
+# <a name="tutorial-design-an-azure-database-for-mysql-using-azure-cli"></a>Руководство по проектированию службы "База данных Azure для MySQL" с помощью Azure CLI
 
 База данных Azure для MySQL — это служба реляционной базы данных в Microsoft Cloud на основе ядра СУБД MySQL Community Edition. Из этого руководства вы узнаете, как с помощью Azure CLI (интерфейса командной строки) и других служебных программ выполнять следующие операции:
 

@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.date: 08/25/2020
 author: ninallam
 ms.openlocfilehash: 4caac943df33177728997c74c9ec812105efd62c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97588783"
 ---
 # <a name="tutorial-deploy-nodejs-app-to-azure-web-app-using-devops-starter-for-github-actions"></a>Руководство по развертывание приложения Node.js в веб-приложении Azure с помощью DevOps Starter для GitHub Actions

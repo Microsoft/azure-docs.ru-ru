@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство. Добавление гостевого пользователя с помощью PowerShell — Azure AD
+title: Краткое руководство. Добавление гостевого пользователя с помощью PowerShell (Azure AD)
 description: В этом кратком руководстве вы узнаете, как использовать PowerShell для отправки приглашения внешнему пользователю службы совместной работы Azure AD B2B.
 services: active-directory
 ms.service: active-directory
@@ -13,10 +13,10 @@ ms.reviewer: mal
 ms.custom: it-pro, seo-update-azuread-jan
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b0faaf0394bddc2e443afc194bbd0ecef72625f9
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87910597"
 ---
 # <a name="quickstart-add-a-guest-user-with-powershell"></a>Краткое руководство. Добавление гостевого пользователя с помощью PowerShell
@@ -109,4 +109,4 @@ Connect-AzureAD -TenantDomain "<Tenant_Domain_Name>"
 В этом кратком руководстве вы пригласили одного гостевого пользователя и добавили его в каталог с помощью PowerShell. Далее узнайте, как массово пригласить гостевых пользователей с помощью PowerShell.
 
 > [!div class="nextstepaction"]
-> [Руководство. Массовое приглашение пользователей службы совместной работы Azure Active Directory B2B](tutorial-bulk-invite.md)
+> [Руководство по Массовое приглашение пользователей службы совместной работы Azure Active Directory B2B](tutorial-bulk-invite.md)
