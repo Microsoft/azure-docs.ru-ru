@@ -1,5 +1,5 @@
 ---
-title: Руководство по интеграции Azure Active Directory с ACLP | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с ACLP | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и ACLP.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 05/07/2019
 ms.author: jeedes
 ms.openlocfilehash: bb91322df315d60adddf184905d0c619f5be8d6a
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92313560"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-aclp"></a>Руководство по интеграции Azure Active Directory c ACLP
+# <a name="tutorial-azure-active-directory-integration-with-aclp"></a>Руководство. Интеграция Azure Active Directory с ACLP
 
 В этом руководстве описано, как интегрировать ACLP с Azure Active Directory (Azure AD).
 Интеграция Azure AD с приложением ACLP обеспечивает следующие преимущества.
@@ -166,7 +166,7 @@ ms.locfileid: "92313560"
 
 ### <a name="create-aclp-test-user"></a>Создание тестового пользователя ACLP
 
-В этом разделе описано, как создать пользователя Britta Simon в приложении ACLP. Обратитесь к  [группе поддержки ACLP](mailto:mrichards@sans.org), чтобы добавить пользователей на платформу ACLP. Перед использованием единого входа необходимо создать и активировать пользователей.
+В этом разделе описано, как создать пользователя Britta Simon в приложении ACLP. Чтобы добавить пользователей на платформу ACLP, обратитесь в [службу поддержки ACLP](mailto:mrichards@sans.org). Перед использованием единого входа необходимо создать и активировать пользователей.
 
 ### <a name="test-single-sign-on"></a>Проверка единого входа
 
