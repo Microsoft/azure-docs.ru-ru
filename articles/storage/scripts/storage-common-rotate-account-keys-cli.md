@@ -11,10 +11,10 @@ ms.date: 10/20/2020
 ms.author: tamram
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 08e1b3837863b197f8463a0d969e78afab2b9858
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92370412"
 ---
 # <a name="create-a-storage-account-and-rotate-its-account-access-keys"></a>Создание учетной записи хранения и смена ее ключей доступа
