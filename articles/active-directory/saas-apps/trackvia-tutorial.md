@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/28/2019
 ms.author: jeedes
 ms.openlocfilehash: 4dfce2c0bd6b7e154e35e0e7e267549dd162ecf1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92516313"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-trackvia"></a>Руководство. Интеграция Azure Active Directory с TrackVia
@@ -140,7 +140,7 @@ ms.locfileid: "92516313"
 
     b. Затем нажмите кнопку **Choose File** (Выбор файла), чтобы передать файл метаданных, скачанный с портала Azure.
 
-    c. Щелкните **Сохранить**.
+    c. Нажмите кнопку **Сохранить**
 
 ### <a name="create-an-azure-ad-test-user"></a>Создание тестового пользователя Azure AD 
 
