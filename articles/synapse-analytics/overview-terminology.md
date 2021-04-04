@@ -10,10 +10,10 @@ ms.date: 11/18/2020
 ms.author: saveenr
 ms.reviewer: jrasnick
 ms.openlocfilehash: 828f37030ae567cacbaad25849b7ba24c561c20c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98132772"
 ---
 # <a name="azure-synapse-analytics-terminology"></a>Терминология Azure Synapse Analytics
