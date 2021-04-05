@@ -8,10 +8,10 @@ ms.subservice: cosmosdb-sql
 ms.topic: conceptual
 ms.date: 04/08/2020
 ms.openlocfilehash: 443d00e61e593daacca04a4451b90bb78cc7d854
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93334615"
 ---
 # <a name="change-feed-design-patterns-in-azure-cosmos-db"></a>Конструктивные шаблоны для каналов изменений в Azure Cosmos DB

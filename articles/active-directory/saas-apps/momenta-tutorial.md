@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 07/13/2020
 ms.author: jeedes
 ms.openlocfilehash: 712f6f6aa8b3fd3c72e6a5150115c85ee3f47e64
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92516741"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-momenta"></a>Руководство по интеграции единого входа Azure Active Directory с Momenta

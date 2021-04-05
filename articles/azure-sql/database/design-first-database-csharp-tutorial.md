@@ -11,10 +11,10 @@ ms.author: genemi
 ms.reviewer: sstein
 ms.date: 07/29/2019
 ms.openlocfilehash: 4b3235f457f1c6475c18045886c49d3dd2ca2242
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92671182"
 ---
 # <a name="tutorial-design-a-relational-database-in-azure-sql-database-cx23-and-adonet"></a>Руководство. Проектирование реляционной базы данных в службе "База данных SQL Azure" на языке C# с помощью ADO.NET
