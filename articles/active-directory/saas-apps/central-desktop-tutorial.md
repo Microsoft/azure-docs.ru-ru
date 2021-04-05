@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/12/2019
 ms.author: jeedes
 ms.openlocfilehash: 36ba61c86082e191831c2c890de4466181f1a4db
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97674214"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-central-desktop"></a>Учебник. Интеграция Azure Active Directory с Central Desktop
@@ -30,11 +30,11 @@ ms.locfileid: "97674214"
 Дополнительные сведения об интеграции приложений SaaS с Azure AD см. в статье [Единый вход в приложениях в Azure Active Directory](../manage-apps/what-is-single-sign-on.md).
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы настроить интеграцию Azure AD с Central Desktop, вам потребуется:
 
-* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
+* Подписка Azure AD. (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
 * подписка на Central Desktop с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -95,7 +95,7 @@ ms.locfileid: "97674214"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. В разделе **Базовая конфигурация SAML** выполните приведенные ниже действия.
 
@@ -141,7 +141,7 @@ ms.locfileid: "97674214"
 
     ![Параметры единого входа](./media/central-desktop-tutorial/ic769564.png "Параметры единого входа")
 
-    а. Установите флажок **Разрешить единый вход SAML версии 2**.
+    a. Выберите **Включить единый вход с использованием SAML v2**.
 
     b. В поле **SSO URL** (URL-адрес единого входа) вставьте значение **идентификатора Azure AD**, скопированное на портале Azure.
 
@@ -153,15 +153,15 @@ ms.locfileid: "97674214"
 
     ![Метод проверки подписей в сообщениях](./media/central-desktop-tutorial/ic769565.png "Метод проверки подписей в сообщениях")
 
-    а. Выберите **Сертификат**.
+    a. Выберите **Сертификат**.
 
     b. В списке **SSO Certificate** (Сертификат единого входа) выберите значение **RSH SHA256**.
 
     c. Откройте скачанный сертификат в Блокноте. Затем скопируйте содержимое сертификата и вставьте его в поле **SSO Certificate** (Сертификат единого входа).
 
-    d. Установите флажок **Отображать ссылку на страницу входа SAML версии 2**.
+    d. Выберите **Отображать ссылку на страницу входа SAMLv2**.
 
-    д) Нажмите кнопку **Обновить**.
+    д) Щелкните **Обновить**.
 
 ### <a name="create-an-azure-ad-test-user"></a>Создание тестового пользователя Azure AD
 
@@ -221,7 +221,7 @@ ms.locfileid: "97674214"
 > [!NOTE]
 > Для подготовки учетных записей пользователя Azure AD вы можете использовать любые другие средства создания учетной записи пользователя Central Desktop или API, предоставляемые Central Desktop.
 
-**Чтобы подготовить учетные записи пользователей для Central Desktop, сделайте следующее:**
+**Чтобы подготовить учетные записи пользователей для Central Desktop, выполните следующие действия.**
 
 1. Войдите в клиент Central Desktop.
 
