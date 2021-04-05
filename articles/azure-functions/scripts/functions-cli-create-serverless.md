@@ -7,10 +7,10 @@ ms.date: 07/03/2018
 ms.author: glenga
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 3a52d7ea8c940a33f4fbd2b9ad69f4f889615e7f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97934345"
 ---
 # <a name="create-a-function-app-for-serverless-code-execution"></a>Создание приложения-функции для выполнения кода без сервера 

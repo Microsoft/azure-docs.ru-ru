@@ -8,10 +8,10 @@ ms.date: 10/14/2019
 ms.topic: quickstart
 zone_pivot_groups: java-build-tools-set
 ms.openlocfilehash: b4381c4acbea8a3b7d86d9c32aaf9cea24cf15fa
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93422660"
 ---
 # <a name="connect-your-java-function-to-azure-storage"></a>Подключение функции Java к службе хранилища Azure
