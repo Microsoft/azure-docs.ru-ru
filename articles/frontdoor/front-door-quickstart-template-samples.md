@@ -11,10 +11,10 @@ ms.workload: infrastructure-services
 ms.date: 02/04/2020
 ms.author: duau
 ms.openlocfilehash: bac1df020bf2a683fc04a4d05ae73311e149f70c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97511779"
 ---
 # <a name="azure-resource-manager-deployment-model-templates-for-front-door"></a>Шаблоны модели развертывания Azure Resource Manager для Front Door

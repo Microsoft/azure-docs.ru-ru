@@ -10,10 +10,10 @@ services: azure-maps
 manager: philmea
 ms.custom: mvc, devx-track-python
 ms.openlocfilehash: 7341d1f07e8814edcad7b84f6b3b46c7bece3159
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98680337"
 ---
 # <a name="tutorial-route-electric-vehicles-by-using-azure-notebooks-python"></a>Руководство по Маршрутизация электрических транспортных средств с помощью Записных книжек Azure (Python)

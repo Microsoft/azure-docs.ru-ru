@@ -8,10 +8,10 @@ ms.subservice: cosmosdb-table
 ms.topic: sample
 ms.date: 06/12/2020
 ms.openlocfilehash: a35d2501eac631d34c7bf4d20ef775436a9d11c9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98679227"
 ---
 # <a name="create-a-resource-lock-for-azure-cosmos-table-api-table-using-azure-powershell"></a>Создание блокировки ресурса для таблицы API таблиц в Azure Cosmos с помощью Azure PowerShell

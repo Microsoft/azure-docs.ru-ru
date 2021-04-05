@@ -9,10 +9,10 @@ ms.date: 04/22/2018
 ms.author: zhshang
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: ee9f0253f2ec27b4afbbb6c5dc1ff3f5c129fe8a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "94841841"
 ---
 # <a name="create-a-web-app-that-uses-signalr-service-and-github-authentication"></a>Создание веб-приложения с аутентификацией через службу SignalR и GitHub

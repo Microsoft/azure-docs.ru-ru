@@ -9,10 +9,10 @@ ms.date: 12/07/2017
 ms.author: sngun
 ms.custom: seodec18
 ms.openlocfilehash: e876ca028532bb3721146e90a91d68c4c12bf79f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93096086"
 ---
 # <a name="migrate-your-data-to-azure-cosmos-db-table-api-account"></a>Перенос данных в учетную запись API таблиц в Azure Cosmos DB

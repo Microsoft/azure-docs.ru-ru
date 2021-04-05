@@ -9,10 +9,10 @@ ms.date: 09/23/2020
 ms.custom: devx-track-java
 ms.author: anfeldma
 ms.openlocfilehash: 378bb891c8539a6cf3d61f6511a0f58377d2bfd2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93091146"
 ---
 # <a name="azure-cosmos-db-sql-api-spring-data-azure-cosmos-db-v3-examples"></a>API SQL для Azure Cosmos DB. Примеры Spring Data Azure Cosmos DB версии 3
