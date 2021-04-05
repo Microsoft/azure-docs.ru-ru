@@ -13,17 +13,17 @@ ms.workload: infrastructure-services
 ms.date: 12/21/2016
 ms.author: rohink
 ms.openlocfilehash: f4e713f54ab4702b21763dc9fc6c7b606f94a945
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96011597"
 ---
 # <a name="manage-dns-records-and-recordsets-in-azure-dns-using-azure-powershell"></a>Управление записями и наборами записей DNS в службе DNS Azure с помощью Azure PowerShell
 
 > [!div class="op_single_selector"]
 > * [Портал Azure](dns-operations-recordsets-portal.md)
-> * [Классический интерфейс командной строки Azure](./dns-operations-recordsets-cli.md)
+> * [Классический Azure CLI](./dns-operations-recordsets-cli.md)
 > * [Azure CLI](dns-operations-recordsets-cli.md)
 > * [PowerShell](dns-operations-recordsets.md)
 
@@ -44,7 +44,7 @@ ms.locfileid: "96011597"
 
 ## <a name="create-a-new-dns-record"></a>Создание записи DNS
 
-Если новая запись имеет то же имя и тип, что и существующая запись, необходимо [добавить ее в существующий набор записей](#add-a-record-to-an-existing-record-set). Если имя и тип новой и существующих записей отличаются, вам нужно создать другой набор записей. 
+Если вы создаете запись с такими же именем и типом, как у существующей записи, эту новую запись нужно [добавить в существующий набор записей](#add-a-record-to-an-existing-record-set). Если имя и тип новой и существующих записей отличаются, вам нужно создать другой набор записей. 
 
 ### <a name="create-a-records-in-a-new-record-set"></a>Создание записей А в новом наборе записей
 

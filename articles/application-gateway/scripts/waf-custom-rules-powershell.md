@@ -8,10 +8,10 @@ ms.date: 6/7/2019
 ms.author: victorh
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 312f052671036d8153dd19fcf4e559e825fd8464
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93396997"
 ---
 # <a name="create-web-application-firewall-waf-custom-rules-with-azure-powershell"></a>Создание настраиваемых правил брандмауэра веб-приложения с помощью Azure PowerShell

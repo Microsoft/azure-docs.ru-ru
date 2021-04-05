@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 12/19/2019
 ms.author: rohogue
 ms.openlocfilehash: 81b53904f85e2ac936195b1e39d7586fd1d47524
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96009030"
 ---
 # <a name="avere-cluster-dns-configuration"></a>Настройка DNS для кластера Avere
@@ -29,7 +29,7 @@ ms.locfileid: "96009030"
 
 * DNS является обязательным, если вы хотите использовать аутентификацию Kerberos.
 
-## <a name="load-balancing"></a>Балансировка нагрузки
+## <a name="load-balancing"></a>балансировка нагрузки;
 
 Чтобы распределить общую нагрузку, настройте DNS-домен для использования распределения нагрузки методом циклического перебора для IP-адресов, ориентированных на клиенты.
 
@@ -74,7 +74,7 @@ update add 12.0.0.10.in-addr.arpa. 86400 PTR vs1-client-IP-12.example.com
 
 ## <a name="cluster-dns-settings"></a>Параметры DNS для кластера
 
-Укажите DNS-сервер, используемый кластером вфкст, на   >  странице параметров **административной сети** кластера. Параметры на этой странице включают:
+Укажите DNS-сервер, используемый кластером vFXT, на странице параметров: **Cluster** > **Administrative Network** (Кластер > Административная сеть). Параметры на этой странице включают:
 
 * адрес DNS-сервера;
 * доменное имя DNS-сервера;

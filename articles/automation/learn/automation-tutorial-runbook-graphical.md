@@ -7,10 +7,10 @@ ms.subservice: process-automation
 ms.date: 09/15/2020
 ms.topic: tutorial
 ms.openlocfilehash: 1b6c02778b0ee790d81c713283e653058c29c153
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92899805"
 ---
 # <a name="tutorial-create-a-graphical-runbook"></a>Руководство по Создание графического модуля runbook

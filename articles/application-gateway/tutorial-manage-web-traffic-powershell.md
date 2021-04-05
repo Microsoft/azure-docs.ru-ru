@@ -9,10 +9,10 @@ ms.date: 07/19/2019
 ms.author: victorh
 ms.custom: mvc
 ms.openlocfilehash: 7e410218117aa0d21167b6d615a3835aeec470e7
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93397116"
 ---
 # <a name="manage-web-traffic-with-an-application-gateway-using-azure-powershell"></a>Управление веб-трафиком с помощью шлюза приложений в Azure PowerShell
@@ -239,7 +239,7 @@ Update-AzVmss `
 
 ## <a name="test-the-application-gateway"></a>Тестирование шлюза приложений
 
-Чтобы получить общедоступный IP-адрес шлюза приложений, используйте [Get-азпублиЦипаддресс](/powershell/module/az.network/get-azpublicipaddress) . Скопируйте общедоступный IP-адрес и вставьте его в адресную строку браузера.
+Используйте командлет [Get-AzPublicIPAddress](/powershell/module/az.network/get-azpublicipaddress), чтобы получить общедоступный IP-адрес шлюза приложений. Скопируйте общедоступный IP-адрес и вставьте его в адресную строку браузера.
 
 ```azurepowershell-interactive
 Get-AzPublicIPAddress -ResourceGroupName myResourceGroupAG -Name myAGPublicIPAddress

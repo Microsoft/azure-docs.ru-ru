@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 01/30/2020
 ms.reviewer: sngun
 ms.openlocfilehash: f06fbe482327d01917f648ccdec34baa15c46e80
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93073916"
 ---
 # <a name="set-up-azure-cosmos-db-global-distribution-using-the-table-api"></a>Настройка глобального распределения Azure Cosmos DB с помощью API таблицы

@@ -1,6 +1,6 @@
 ---
 title: Создание пространства имен Служебной шины Azure с помощью шаблона
-description: Краткое руководство. Создание пространства имен служебной шины с разделом и подпиской с помощью шаблона Azure Resource Manager.
+description: Краткое руководство. Создание пространства имен Служебной шины с разделом и подпиской с помощью шаблона Azure Resource Manager.
 documentationcenter: .net
 author: spelluru
 ms.topic: quickstart
@@ -9,19 +9,19 @@ ms.date: 06/23/2020
 ms.author: spelluru
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
 ms.openlocfilehash: 706432c039bc38e9799828ae752d6ad0c92ffde3
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97704611"
 ---
-# <a name="quickstart-create-a-service-bus-namespace-with-topic-and-subscription-using-an-azure-resource-manager-template"></a>Краткое руководство. Создание пространства имен служебной шины с разделом и подпиской с помощью шаблона Azure Resource Manager
+# <a name="quickstart-create-a-service-bus-namespace-with-topic-and-subscription-using-an-azure-resource-manager-template"></a>Краткое руководство. Создание пространства имен Служебной шины с разделом и подпиской с помощью шаблона Azure Resource Manager
 
 В этой статье показывается, как использовать шаблон Azure Resource Manager, создающий пространство имен служебной шины с разделом и подпиской. Здесь объясняется, как указать развертываемые ресурсы и определить параметры, указываемые при развертывании. Этот шаблон можно использовать для собственных развертываний или изменить его в соответствии с вашими требованиями.
 
 Дополнительные сведения о создании шаблонов см. в статье [Создание шаблонов Azure Resource Manager][Authoring Azure Resource Manager templates].
 
-Полный шаблон приведен в разделе [Шаблон пространства имен служебной шины с разделом и подпиской][Service Bus namespace with topic and subscription] .
+Полный шаблон пространства имен служебной шины с разделом и подпиской приведен [здесь][Service Bus namespace with topic and subscription].
 
 > [!NOTE]
 > Для скачивания и развертывания можно использовать указанные ниже шаблоны диспетчера ресурсов Azure.
