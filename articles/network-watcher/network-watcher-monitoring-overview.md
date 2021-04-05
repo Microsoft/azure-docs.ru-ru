@@ -15,17 +15,17 @@ ms.date: 01/04/2021
 ms.author: damendo
 ms.custom: mvc
 ms.openlocfilehash: 9b19beae43f1d4a5b0788d9d7662828355c3dd2c
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97895892"
 ---
 # <a name="what-is-azure-network-watcher"></a>Наблюдатель за сетями Azure
 
 Наблюдатель за сетями Azure предоставляет инструменты для мониторинга, диагностики, просмотра метрик и включения или отключения журналов для ресурсов в виртуальной сети Azure. Служба "Наблюдатель за сетями" предназначена для мониторинга и восстановления работоспособности сети для продуктов IaaS (инфраструктура как услуга), в том числе виртуальных машин, виртуальных сетей, шлюзов приложений, подсистем балансировки нагрузки и т. д. Примечание. Она не предназначена для мониторинга продуктов PaaS или веб-аналитики и не будет работать с ними. 
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 ### <a name="monitor-communication-between-a-virtual-machine-and-an-endpoint"></a><a name = "connection-monitor"></a>Мониторинг взаимодействия между виртуальной машиной и конечной точкой
 
