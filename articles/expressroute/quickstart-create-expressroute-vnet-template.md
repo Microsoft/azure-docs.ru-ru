@@ -10,10 +10,10 @@ ms.custom: subject-armqs
 ms.date: 10/12/2020
 ms.author: duau
 ms.openlocfilehash: 7521344a2bb6aae67724c8bfbb9131e2ff1e6b94
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92789732"
 ---
 # <a name="quickstart-create-an-expressroute-circuit-with-private-peering-using-an-arm-template"></a>Краткое руководство. Создание канала ExpressRoute с частным пирингом с помощью шаблона ARM

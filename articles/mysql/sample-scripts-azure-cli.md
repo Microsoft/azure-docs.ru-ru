@@ -9,10 +9,10 @@ ms.topic: sample
 ms.custom: mvc, devx-track-azurecli
 ms.date: 12/02/2019
 ms.openlocfilehash: 1150b9e6f39f14cdfa3aa5c57d1cbacca0351b64
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "94537600"
 ---
 # <a name="azure-cli-samples-for-azure-database-for-mysql"></a>Примеры Azure CLI для базы данных Azure для MySQL 

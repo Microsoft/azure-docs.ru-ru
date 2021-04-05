@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 11/06/2019
 ms.author: jeedes
 ms.openlocfilehash: d972868cf9c5d67824eab781bc99a7cac5f7b313
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92507146"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-negometrixportal-single-sign-on-sso"></a>Руководство по интеграции единого входа Azure Active Directory с NegometrixPortal Single Sign On (SSO)

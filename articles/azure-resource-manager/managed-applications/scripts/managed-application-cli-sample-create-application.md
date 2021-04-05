@@ -8,10 +8,10 @@ ms.date: 10/25/2017
 ms.author: tomfitz
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: a9912f5134c3596740ef53f23531d57fe9467682
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87497874"
 ---
 # <a name="deploy-a-managed-application-for-service-catalog-with-azure-cli"></a>Развертывание управляемого приложения для каталога службы с помощью Azure CLI

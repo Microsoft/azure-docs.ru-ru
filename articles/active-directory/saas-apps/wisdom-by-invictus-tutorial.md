@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/31/2020
 ms.author: jeedes
 ms.openlocfilehash: d1ca90d00dad66bf88f767f46d9cd2839fdd57b1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92519169"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-wisdom-by-invictus"></a>Руководство по интеграции единого входа Azure Active Directory с Invictus Wisdom
