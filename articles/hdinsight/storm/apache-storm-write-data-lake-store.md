@@ -1,24 +1,24 @@
 ---
-title: Руководство по Запись данных HDInsight Apache Storm в хранилище в Azure или Data Lake
+title: Руководство. Запись данных HDInsight Apache Storm в хранилище в Azure или озеро данных
 description: Учебник. Сведения об использовании Apache Storm для записи данных в HDFS-совместимое хранилище для Azure HDInsight.
 ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: tutorial
 ms.date: 06/24/2019
 ms.openlocfilehash: 4e648c57be699620e669ce7db0845dad2b876095
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98932548"
 ---
-# <a name="tutorial-write-to-apache-hadoop-hdfs-from-apache-storm-on-azure-hdinsight"></a>Руководство по записи данных в Apache Hadoop HDFS из Apache Storm в Azure HDInsight
+# <a name="tutorial-write-to-apache-hadoop-hdfs-from-apache-storm-on-azure-hdinsight"></a>Руководство. Запись данных в Apache Hadoop HDFS из Apache Storm в Azure HDInsight
 
 В этом учебнике описано, как с помощью Apache Storm записывать данные в HDFS-совместимое хранилище, используемое Apache Storm в HDInsight. HDInsight может использовать службу хранилища Azure и Azure Data Lake Storage в качестве HDFS-совместимого хранилища. Storm предоставляет компонент [HdfsBolt](https://storm.apache.org/releases/current/javadocs/org/apache/storm/hdfs/bolt/HdfsBolt.html), который записывает данные в HDFS. В этой статье предоставляются сведения о записи данных в хранилища обоих типов из HdfsBolt.
 
 Пример топологии, используемый в этом документе, зависит от компонентов, которые входят в состав Storm в HDInsight. Может потребоваться изменить его для работы с Azure Data Lake Storage при использовании с другими кластерами Apache Storm.
 
-В этом руководстве описано следующее:
+В этом руководстве описано следующее.
 
 > [!div class="checklist"]
 > * Настройка кластера с помощью действия сценария
@@ -27,7 +27,7 @@ ms.locfileid: "98932548"
 > * Просмотр выходных данных
 > * Остановка топологии
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Java Developer Kit (JDK) версии 8](/azure/developer/java/fundamentals/java-jdk-long-term-support)
 
@@ -97,11 +97,11 @@ bolts:
 
 Это YAML-файл определяет следующие элементы:
 
-* `syncPolicy`: определяет, когда файлы синхронизируются или записываются в файловую систему. В этом примере это происходит после каждой 1000 кортежей.
-* `fileNameFormat`: определяет шаблон пути и имени файла, используемый при записи файлов. В этом примере путь предоставляется во время выполнения с помощью фильтра, а файл имеет расширение `.txt`.
-* `recordFormat`: определяет внутренний формат записанных файлов. В этом примере поля разделяются с помощью символа `|`.
-* `rotationPolicy`: определяет, когда чередуются файлы. В этом примере чередование не выполняется.
-* `hdfs-bolt`: использует предыдущие компоненты в качестве параметров конфигурации для класса `HdfsBolt`.
+* `syncPolicy` — определяет, когда файлы синхронизируются или записываются в файловую систему. В этом примере это происходит после каждой 1000 кортежей.
+* `fileNameFormat` — определяет шаблон пути и имени файла, используемый при записи файлов. В этом примере путь предоставляется во время выполнения с помощью фильтра, а файл имеет расширение `.txt`.
+* `recordFormat` — определяет внутренний формат записанных файлов. В этом примере поля разделяются с помощью символа `|`.
+* `rotationPolicy` — определяет, когда чередуются файлы. В этом примере чередование не выполняется.
+* `hdfs-bolt` — использует предыдущие компоненты в качестве параметров конфигурации для класса `HdfsBolt`.
 
 Дополнительные сведения о платформе Flux см. здесь: [https://storm.apache.org/releases/current/flux.html](https://storm.apache.org/releases/current/flux.html).
 
@@ -114,7 +114,7 @@ bolts:
 |Тип скрипта |- Custom|
 |URI bash-скрипта |`https://hdiconfigactions.blob.core.windows.net/linuxstormextlibv01/stormextlib.sh`|
 |Типы узлов |Nimbus, Supervisor|
-|Параметры |None|
+|Параметры |Отсутствуют|
 
 Сведения об использовании этого скрипта с кластером см. в статье [Настройка кластеров HDInsight под управлением Linux с помощью действия сценария](./../hdinsight-hadoop-customize-cluster-linux.md).
 

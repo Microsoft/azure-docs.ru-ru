@@ -16,10 +16,10 @@ ms.topic: tutorial
 ms.date: 08/13/2020
 ms.author: Zhchia
 ms.openlocfilehash: 31e5393cb5de627ebf8832e43302583d6eacbf59
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96181500"
 ---
 # <a name="tutorial-configure-sap-analytics-cloud-for-automatic-user-provisioning"></a>Руководство по настройке SAP Analytics Cloud для автоматической подготовки пользователей
@@ -111,7 +111,7 @@ ms.locfileid: "96181500"
 
     ![Снимок экрана: диалоговое окно учетных данных администратора, в котором можно ввести URL-адрес клиента и секретный токен.](./media/sap-analytics-cloud-provisioning-tutorial/provisioning.png)
 
-6. В поле **Электронная почта для уведомлений** введите адрес электронной почты пользователя или группы, которые должны получать уведомления об ошибках подготовки, а также установите флажок **Отправить уведомление по электронной почте при сбое**.
+6. В поле **Почтовое уведомление** введите адрес электронной почты пользователя или группы, которые должны получать уведомления об ошибках подготовки, а также установите флажок **Отправить уведомление по электронной почте при сбое**.
 
     ![Почтовое уведомление](common/provisioning-notification-email.png)
 

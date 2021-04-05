@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.date: 11/05/2020
 ms.custom: mvc
 ms.openlocfilehash: 5c127010a7988bf08c77340a4fc10bb32dc76f87
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93393946"
 ---
 # <a name="tutorial-fail-back-azure-vm-to-the-primary-region"></a>Руководство по восстановлению размещения виртуальных машин Azure в основном регионе
