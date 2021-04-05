@@ -16,13 +16,13 @@ ms.date: 06/14/2018
 ms.author: allensu
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: e0d43ae8f76e89ffe429ec1778922ee465ad7db4
-ms.sourcegitcommit: e2dc549424fb2c10fcbb92b499b960677d67a8dd
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94696541"
 ---
-# <a name="azure-cli-script-example-load-balance-traffic-to-vms-within-a-specific-availability-zone"></a>Пример скрипта Azure CLI. Распределение нагрузки трафика на виртуальные машины в пределах определенной зоны доступности
+# <a name="azure-cli-script-example-load-balance-traffic-to-vms-within-a-specific-availability-zone"></a>Пример скрипта Azure CLI. Распределение трафика на виртуальных машинах в пределах определенной зоны доступности
 
 Этот пример скрипта Azure CLI позволяет создать все необходимые компоненты для запуска нескольких виртуальных машин Ubuntu, настроенных в высокодоступной конфигурации с распределением нагрузки в пределах определенной зоны доступности. После выполнения этого скрипта будут созданы три виртуальные машины в одной группе доступности в пределах региона. Доступ к ним можно будет получить с помощью Azure Load Balancer категории "Стандартный". 
 
