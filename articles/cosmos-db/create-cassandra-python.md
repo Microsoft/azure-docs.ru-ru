@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 08/13/2020
 ms.custom: devx-track-python
 ms.openlocfilehash: 8a76a37de64733ba3e0126c7885d8690d2d83c1b
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93099731"
 ---
 # <a name="quickstart-build-a-cassandra-app-with-python-sdk-and-azure-cosmos-db"></a>Краткое руководство. Создание приложения Cassandra с помощью пакета SDK для Python и Azure Cosmos DB
@@ -160,7 +160,7 @@ ms.locfileid: "93099731"
 
     :::image type="content" source="./media/create-cassandra-python/output.png" alt-text="Просмотр и проверка выходных данных":::
     
-4. На портале Azure откройте **обозреватель данных** , чтобы запросить, изменить и обработать новые данные. 
+4. На портале Azure откройте **обозреватель данных**, чтобы запросить, изменить и обработать новые данные. 
 
     :::image type="content" source="./media/create-cassandra-python/data-explorer.png" alt-text="Просмотр данных в обозревателе данных":::
 

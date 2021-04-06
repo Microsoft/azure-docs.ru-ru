@@ -11,10 +11,10 @@ ms.workload: big-data
 ms.custom: mvc seodec18
 ms.date: 09/30/2020
 ms.openlocfilehash: dd5ed52187a7cd23142b59e20c91c6d125946a72
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "91613787"
 ---
 # <a name="quickstart-explore-azure-time-series-insights-gen1"></a>Краткое руководство. Знакомство с Аналитикой временных рядов Azure 1-го поколения

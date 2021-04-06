@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/07/2020
 ms.author: jeedes
 ms.openlocfilehash: 4682396f68d6ff1af0b2fb6a5b1a8419d6963529
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98735347"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-integration-with-awarego"></a>Руководство по интеграции единого входа Azure Active Directory в AwareGo
@@ -109,7 +109,7 @@ ms.locfileid: "98735347"
    а. В поле **Имя** введите **B.Simon**.  
    b. В поле **Имя пользователя** введите имя пользователя в следующем формате: `<username>@<companydomain>.<extension>` (например, B.Simon@contoso.com).  
    c. Установите флажок **Показать пароль** и сохраните значение, которое отображается в поле **Пароль**, для дальнейшего использования.  
-   d. Нажмите кнопку **Создать**.
+   d. Нажмите кнопку **создания**.
 
 ### <a name="assign-the-azure-ad-test-user"></a>Назначение тестового пользователя Azure AD
 
