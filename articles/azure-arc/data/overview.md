@@ -10,10 +10,10 @@ ms.subservice: azure-arc-data
 ms.date: 09/22/2020
 ms.topic: overview
 ms.openlocfilehash: ef16a4c0b6ea40fb4934307916f1fe79ccea72f9
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97609145"
 ---
 # <a name="what-are-azure-arc-enabled-data-services-preview"></a>Службы данных с поддержкой Azure Arc (предварительная версия)

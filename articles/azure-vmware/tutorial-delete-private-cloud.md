@@ -4,10 +4,10 @@ description: Сведения о том, как удалить частное о
 ms.topic: tutorial
 ms.date: 03/13/2021
 ms.openlocfilehash: 453e7a3316c342cd724a951eafea0ae9fa045506
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103462105"
 ---
 # <a name="tutorial-delete-an-azure-vmware-solution-private-cloud"></a>Руководство по Удаление частного облака Решения Azure VMware

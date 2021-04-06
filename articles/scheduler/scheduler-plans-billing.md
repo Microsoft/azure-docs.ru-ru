@@ -9,16 +9,16 @@ ms.reviewer: klam, estfan
 ms.topic: article
 ms.date: 08/18/2016
 ms.openlocfilehash: e821036ff4ddb5a9786bc4f4537bb81539ab2c87
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "78898474"
 ---
 # <a name="plans-and-billing-for-azure-scheduler"></a>Тарифные планы и выставление счетов для планировщика Azure
 
 > [!IMPORTANT]
-> Поддержка планировщика Azure [прекращается](../logic-apps/logic-apps-overview.md). Вместо него будет использоваться [Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md#retire-date). Чтобы продолжить работу с заданиями, настроенными в планировщике, выполните [миграцию на Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md) как можно скорее. 
+> Поддержка планировщика Azure [прекращается](../logic-apps/logic-apps-overview.md). Вместо него будет использоваться [Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md#retire-date). Чтобы продолжить работу с настроенными в планировщике задачами, [перейдите на Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md) как можно скорее. 
 >
 > Планировщик больше не доступен на портале Azure, но [REST API](/rest/api/scheduler) и [командлеты PowerShell Планировщика Azure](scheduler-powershell-reference.md) можно использовать и дальше для управления заданиями и коллекциями заданий.
 

@@ -4,10 +4,10 @@ description: Узнайте, как поместить имеющееся при
 ms.topic: tutorial
 ms.date: 07/08/2019
 ms.openlocfilehash: 7930651a0faa5f37336c15557e2a0f068d613011
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98936716"
 ---
 # <a name="tutorial-deploy-a-net-application-in-a-windows-container-to-azure-service-fabric"></a>Руководство по Развертывание приложения .NET в контейнере Windows в Azure Service Fabric

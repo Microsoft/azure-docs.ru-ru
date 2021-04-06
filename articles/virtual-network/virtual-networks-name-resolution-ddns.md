@@ -15,10 +15,10 @@ ms.workload: infrastructure-services
 ms.date: 02/23/2017
 ms.author: subsarma
 ms.openlocfilehash: ad91eb94aedcdd0e4e715162e3ae064a1d2fb1ea
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98220428"
 ---
 # <a name="use-dynamic-dns-to-register-hostnames-in-your-own-dns-server"></a>Использование DDNS для регистрации имен узлов на собственном DNS-сервере

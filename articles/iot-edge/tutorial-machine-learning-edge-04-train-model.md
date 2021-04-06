@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: 16d5fe90be71f39d448e4c1ce10c0373f6bfc86c
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103463108"
 ---
 # <a name="tutorial-train-and-deploy-an-azure-machine-learning-model"></a>Руководство по Обучение и развертывание модели машинного обучения Azure

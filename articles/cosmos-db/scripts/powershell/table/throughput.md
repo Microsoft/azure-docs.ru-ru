@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 10/07/2020
 ms.author: mjbrown
 ms.openlocfilehash: 061bd06c0fa54497d8f00db0e5d4a808e949c2d3
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98679210"
 ---
 # <a name="throughput-rus-operations-with-powershell-for-a-table-for-azure-cosmos-db---table-api"></a>Операции с пропускной способностью (ЕЗ/с) в PowerShell для таблиц с использованием API таблиц Azure Cosmos DB

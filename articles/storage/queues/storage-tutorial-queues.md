@@ -10,10 +10,10 @@ ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 3c41b218ac0d347b2e58931421493755346b13d7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97591979"
 ---
 # <a name="tutorial-work-with-azure-queue-storage-queues-in-net"></a>Руководство по Работа с очередями Хранилища очередей Azure в .NET

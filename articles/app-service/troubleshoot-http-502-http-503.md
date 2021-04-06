@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 07/06/2016
 ms.custom: seodec18
 ms.openlocfilehash: 801f4840d0d1447f839e5c2c4bc3168741b62b63
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100586258"
 ---
 # <a name="troubleshoot-http-errors-of-502-bad-gateway-and-503-service-unavailable-in-azure-app-service"></a>Устранение ошибок HTTP "502 — недопустимый шлюз" и "503 — служба недоступна" в Службе приложений Azure

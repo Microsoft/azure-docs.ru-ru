@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 08/31/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 27a97ceb2ca9a7b58df7200930e4e47d89c9ae89
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98762206"
 ---
 # <a name="workflow"></a>Рабочий процесс

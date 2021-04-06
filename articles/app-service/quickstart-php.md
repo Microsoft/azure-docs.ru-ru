@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.date: 08/01/2020
 zone_pivot_groups: app-service-platform-windows-linux
 ms.openlocfilehash: f6876d0aef0d3d87e038b623c395f8368a14e90c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97561857"
 ---
 # <a name="create-a-php-web-app-in-azure-app-service"></a>Создание веб-приложения PHP в Службе приложений Azure
