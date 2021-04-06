@@ -9,10 +9,10 @@ ms.author: mansha
 author: manishmsfte
 ms.custom: devx-track-java
 ms.openlocfilehash: a15c6b5919f428b28daab86fea9c3b6473d19162
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97606204"
 ---
 # <a name="migrate-from-couchbase-to-azure-cosmos-db-sql-api"></a>Миграция с CouchBase на API SQL для Azure Cosmos DB

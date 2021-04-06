@@ -10,10 +10,10 @@ ms.date: 04/15/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.openlocfilehash: da698a1a8d91273321d4633abd683a06cb4cf403
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96451626"
 ---
 # <a name="connect-to-synapse-sql-with-sql-server-management-studio-ssms"></a>Подключение к Synapse SQL с помощью SQL Server Management Studio (SSMS).

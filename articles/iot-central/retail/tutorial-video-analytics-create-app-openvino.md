@@ -9,10 +9,10 @@ author: KishorIoT
 ms.author: nandab
 ms.date: 10/06/2020
 ms.openlocfilehash: a201a0300cb4ae0fba1a41b5f64838c17904fa83
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99832102"
 ---
 # <a name="tutorial-create-a-video-analytics---object-and-motion-detection-application-in-azure-iot-central-openvinotrade"></a>Руководство по созданию видеоаналитики — приложения для распознавания объектов и движения в Azure IoT Central (OpenVINO&trade;)

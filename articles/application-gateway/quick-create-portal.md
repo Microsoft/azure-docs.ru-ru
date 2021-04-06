@@ -10,10 +10,10 @@ ms.date: 01/19/2021
 ms.author: victorh
 ms.custom: mvc
 ms.openlocfilehash: c1b17d8c624d4bef74278acc24ece37a736a5ca8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98572975"
 ---
 # <a name="quickstart-direct-web-traffic-with-azure-application-gateway---azure-portal"></a>Краткое руководство. Направление веб-трафика с помощью Шлюза приложений Azure на портале Azure

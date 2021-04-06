@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/28/2021
 ms.author: allensu
 ms.openlocfilehash: c49a721a4db758965c9cf8d71f5d73b5754b6088
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104654481"
 ---
 # <a name="backend-pool-management"></a>Управление внутренним пулом
