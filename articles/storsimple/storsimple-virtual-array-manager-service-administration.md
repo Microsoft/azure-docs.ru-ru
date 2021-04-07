@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 03/17/2021
 ms.author: alkohli
 ms.openlocfilehash: cb5b6b1a2d890fe49d78da17d549c5676557b971
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104654261"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-administer-your-storsimple-virtual-array"></a>Администрирование виртуального массива StorSimple с помощью службы диспетчера устройств StorSimple
@@ -40,7 +40,7 @@ ms.locfileid: "104654261"
 Служба диспетчера устройств StorSimple работает в Microsoft Azure и подключается к нескольким виртуальным массивам StorSimple. Для управления этими устройствами используется центральный портал Microsoft Azure в браузере. Чтобы подключиться к службе диспетчера устройств StorSimple, выполните следующие действия.
 
 #### <a name="to-connect-to-the-service"></a>Подключение к службе
-1. Перейдите на страницу [https://portal.azure.com](https://portal.azure.com).
+1. Перейдите по адресу [https://portal.azure.com](https://portal.azure.com).
 2. С помощью учетной записи Майкрософт войдите на портал Microsoft Azure (расположен в правой верхней части панели).
 3. Для просмотра всех диспетчеров устройств в данной подписки щелкните "Больше служб" и примените фильтр "Диспетчеры устройств StorSimple".
 
@@ -71,7 +71,7 @@ ms.locfileid: "104654261"
 > Следующие задачи выполняются только в [локальном веб-интерфейсе](storsimple-ova-web-ui-admin.md) :
 > 
 > * [получение ключа шифрования данных службы;](storsimple-ova-web-ui-admin.md#get-the-service-data-encryption-key)
-> * [Создание пакета поддержки](storsimple-ova-web-ui-admin.md#generate-a-log-package)
+> * [создание пакета журналов;](storsimple-ova-web-ui-admin.md#generate-a-log-package)
 > * [остановка и повторный запуск виртуального массива.](storsimple-ova-web-ui-admin.md#shut-down-and-restart-your-device)
 > 
 > 

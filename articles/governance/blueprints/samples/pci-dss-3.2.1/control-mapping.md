@@ -4,10 +4,10 @@ description: Сопоставление элементов управления 
 ms.date: 01/08/2021
 ms.topic: sample
 ms.openlocfilehash: 9b1cf7702b627ae073f0172dde4694060004cb3f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98045161"
 ---
 # <a name="control-mapping-of-the-pci-dss-v321-blueprint-sample"></a>Сопоставление элементов управления примера схемы PCI-DSS версии 3.2.1

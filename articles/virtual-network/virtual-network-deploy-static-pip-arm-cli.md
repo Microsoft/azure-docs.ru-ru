@@ -17,10 +17,10 @@ ms.workload: infrastructure-services
 ms.date: 08/08/2018
 ms.author: kumud
 ms.openlocfilehash: c4062dd086eeee712376a402da2792352fa3c3ae
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98221348"
 ---
 # <a name="create-a-virtual-machine-with-a-static-public-ip-address-using-the-azure-cli"></a>Создание виртуальной машины со статическим общедоступным IP-адресом с помощью Azure CLI
@@ -78,7 +78,7 @@ az group delete --name myResourceGroup --yes
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Дополнительные сведения об [общедоступных IP-адресах](./public-ip-addresses.md#public-ip-addresses) в Azure
-- Дополнительные сведения о всех [параметрах общедоступного IP-адреса](virtual-network-public-ip-address.md#create-a-public-ip-address)
+- Дополнительные сведения об [общедоступных IP-адресах в Azure](./public-ip-addresses.md#public-ip-addresses).
+- Дополнительные сведения обо всех [параметрах общедоступных IP-адресов](virtual-network-public-ip-address.md#create-a-public-ip-address).
 - Дополнительные сведения о [частных IP-адресах](./private-ip-addresses.md) и назначении [статического частного IP-адреса](virtual-network-network-interface-addresses.md#add-ip-addresses) виртуальной машине Azure
 - Дополнительные сведения о создании виртуальных машин [Linux](../virtual-machines/windows/tutorial-manage-vm.md?toc=%2fazure%2fvirtual-network%2ftoc.json) и [Windows](../virtual-machines/windows/tutorial-manage-vm.md?toc=%2fazure%2fvirtual-network%2ftoc.json)

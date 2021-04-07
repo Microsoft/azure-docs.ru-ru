@@ -11,10 +11,10 @@ manager: rkarlin
 ms.date: 09/18/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: e89716d0560cbf7960cb7bde67156c8df0045a31
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102499226"
 ---
 # <a name="manage-storage-account-keys-with-key-vault-and-the-azure-cli"></a>Управление ключами учетной записи хранения с помощью Key Vault и Azure CLI
