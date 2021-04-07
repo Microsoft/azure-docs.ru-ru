@@ -9,15 +9,15 @@ ms.date: 08/07/2019
 ms.author: sngun
 ms.custom: include file
 ms.openlocfilehash: f80efbac256871af073354f23317c447d6a85f1e
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "70020181"
 ---
 Теперь вы можете добавить данные в новый контейнер с помощью Data Explorer.
 
-1. В **Data Explorer** разверните базу данных**Tasks**, а затем контейнер **Элементы**. Выберите **Элементы**, а потом — **Новый элемент**.
+1. В **Data Explorer** разверните базу данных **Tasks**, а затем контейнер **Элементы**. Выберите **Элементы**, а потом — **Новый элемент**.
 
    ![Создание документов в обозревателе данных на портале Azure](./media/cosmos-db-create-sql-api-add-sample-data/azure-cosmosdb-data-explorer-new-document.png)
   

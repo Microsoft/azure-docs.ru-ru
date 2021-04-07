@@ -9,10 +9,10 @@ ms.date: 11/12/2019
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 1643b20c6c157c43e93967cef364e703dbf4478e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96010829"
 ---
 |**Создание<br>шлюза<br>VPN** |**SKU**   | **Туннели<br>S2S или "виртуальная сеть — виртуальная сеть"** | **Подключение "точка — сеть"<br> SSTP-подключения** | **Подключения P2S<br>IKEv2/OpenVPN** | **Эталонная агрегированная<br>пропускная способность** | **BGP** | **Избыточность между зонами** |

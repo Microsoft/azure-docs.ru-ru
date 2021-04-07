@@ -9,10 +9,10 @@ ms.date: 09/11/2019
 ms.author: spelluru
 ms.custom: include file
 ms.openlocfilehash: ccb5e40738680181e7339b8652d029597c7d0bd4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "70935093"
 ---
 1. Войдите в [консоль Firebase](https://firebase.google.com/console/). Создайте проект Firebase, если его еще нет.
@@ -20,7 +20,7 @@ ms.locfileid: "70935093"
 
     ![Добавление Firebase в приложение Android](./media/notification-hubs-enable-firebase-cloud-messaging/notification-hubs-add-firebase-to-android-app.png)
 3. Выполните следующие действия на странице **Add Firebase to your Android app** (Добавление Firebase в приложение Android): 
-    1. Для параметра **Android package name** (Имя пакета Android) скопируйте свое значение **applicationId** в файл приложения build.gradle. В нашем примере он выглядит следующим образом: `com.fabrikam.fcmtutorial1app`. 
+    1. Для **Имя пакета Android** скопируйте свое значение **applicationId** в файл приложения build.gradle. В нашем примере он выглядит следующим образом: `com.fabrikam.fcmtutorial1app`. 
 
         ![Указание имени пакета.](./media/notification-hubs-enable-firebase-cloud-messaging/specify-package-name-fcm-settings.png)
     2. Выберите **Регистрация приложения**. 
@@ -28,7 +28,7 @@ ms.locfileid: "70935093"
 
     ![Загрузка файла google-services.json.](./media/notification-hubs-enable-firebase-cloud-messaging/download-google-service-button.png)
 5. Внесите следующие **изменения конфигурации** в проект в Android Studio. 
-    1.  В файл build.gradle уровня проекта (&lt;project&gt;/build.gradle) добавьте в раздел **dependencies** следующий текст. 
+    1.  В файл build.gradle уровня проекта (&lt;project&gt;/build.gradle) добавьте следующий текст в раздел **зависимости**. 
 
         ```
         classpath 'com.google.gms:google-services:4.0.1'
