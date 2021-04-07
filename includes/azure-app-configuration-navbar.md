@@ -9,10 +9,10 @@ ms.date: 11/11/2020
 ms.author: alkemper
 ms.custom: include file
 ms.openlocfilehash: be7443493b2eeb5c43ee96eb7cd4a85ce9919f86
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98663018"
 ---
 ```html

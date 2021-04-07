@@ -9,10 +9,10 @@ ms.date: 09/29/2020
 ms.author: harshacs
 ms.custom: MVC
 ms.openlocfilehash: 8e77ede7b04c95bfd6b6b8f660c8d811e7434c0f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93395450"
 ---
 # <a name="prepare-azure-vmware-solution-for-disaster-recovery-to-azure-site-recovery"></a>Подготовка Решения Azure VMware для аварийного восстановления в Azure Site Recovery

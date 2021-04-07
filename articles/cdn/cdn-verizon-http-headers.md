@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 04/16/2018
 ms.author: allensu
 ms.openlocfilehash: e20f6ce9540d357b61ae2cfdf0e8f96d127dc6c0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "84343223"
 ---
 # <a name="verizon-specific-http-headers-for-azure-cdn-rules-engine"></a>HTTP-заголовки (Verizon) для обработчика правил Azure CDN
@@ -35,14 +35,14 @@ ms.locfileid: "84343223"
 
 Заголовок запроса | Описание | Пример
 ---------------|-------------|--------
-[Распределяемые](#via-request-header) | Идентифицирует сервер POP, который передал запрос на сервер-источник. | HTTP/1.1 ECS (dca/1A2B)
+[Via](#via-request-header) | Идентифицирует сервер POP, который передал запрос на сервер-источник. | HTTP/1.1 ECS (dca/1A2B)
 X-Forwarded-For | Указывает IP-адрес инициатора запроса.| 10.10.10.10
 X-Forwarded-Proto | Указывает протокол запроса. | http
 X-Host | Указывает имя узла запроса. | cdn.mydomain.com
 X-Midgress | Указывает, передан ли запрос через дополнительный сервер CDN. Например, от POP-сервера к защитному серверу-источнику или от POP-сервера к серверу шлюза ADN. <br />Этот заголовок добавляется к запросу, только если присутствует трафик с промежуточного сервера. В этом случае заголовок имеет значение 1. Это означает, что запрос был передан через дополнительный CDN-сервер.| 1
 [Узел](#host-request-header) | Идентифицирует узел и порт, на которых можно найти запрошенное содержимое. | marketing.mydomain.com:80
 [X-Gateway-List](#x-gateway-list-request-header) | ADN. Определяет список отработок отказа серверов шлюза ADN, присвоенных источнику клиента. <br />Защитный сервер-источник. Указывает набор защитных серверов-источников, присвоенных источнику клиента. | `icn1,hhp1,hnd1`
-X-EC-_&lt; имя &gt;_ | Заголовки запроса, которые начинаются с *X-EC* (например, X-EC-Tag, [X-EC-Debug](cdn-http-debug-headers.md)), зарезервированы для сети CDN.| waf-production
+X-EC- _&lt;имя&gt;_ | Заголовки запроса, которые начинаются с *X-EC* (например, X-EC-Tag, [X-EC-Debug](cdn-http-debug-headers.md)), зарезервированы для сети CDN.| waf-production
 
 ## <a name="via-request-header"></a>Заголовок запроса Via
 Формат, через который заголовок запроса `Via` определяет POP-сервер, указан с помощью следующего синтаксиса:
