@@ -6,10 +6,10 @@ ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 05/20/2018
 ms.openlocfilehash: b95d4b0a082e8eac191d610c9516e5ce72180b4c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92219179"
 ---
 # <a name="troubleshoot-an-abnormal-recurring-job"></a>Устранение неполадок, связанных с неправильно повторяющимся заданием
@@ -29,7 +29,7 @@ ms.locfileid: "92219179"
 
 ### <a name="case-1-you-have-the-url-for-the-recurring-job"></a>Вариант 1. У вас есть URL-адрес повторяющегося задания
 
-С помощью **инструментов**  >  **Data Lake**  >  **представление заданий** можно вставить URL-адрес задания, чтобы открыть представление задания в Visual Studio. Выберите **Просмотреть связанные задания**, чтобы открыть представление связанных заданий.
+В меню **Сервис** > **Data Lake** > **Представление заданий** можно вставить URL-адрес задания, чтобы открыть представление задания в Visual Studio. Выберите **Просмотреть связанные задания**, чтобы открыть представление связанных заданий.
 
 ![Ссылка на просмотр связанных заданий в средствах Data Lake Analytics](./media/data-lake-analytics-data-lake-tools-debug-recurring-job/view-related-job.png)
  
