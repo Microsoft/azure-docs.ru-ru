@@ -8,10 +8,10 @@ ms.date: 11/30/2020
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp
 zone_pivot_groups: programming-languages-set-one
 ms.openlocfilehash: b49d90ffe2a262895727fdd4ef5f8a7950104102
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96437020"
 ---
 # <a name="how-to-get-an-intent-using-the-rest-apis"></a>Получение намерения с помощью REST API

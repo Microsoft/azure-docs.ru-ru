@@ -9,10 +9,10 @@ ms.date: 03/27/2019
 ms.author: cephalin
 ms.custom: include file
 ms.openlocfilehash: e6c4b07d01a4992e22107cb7d524646f439c37c6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "95997956"
 ---
 Чтобы получить доступ к журналам консоли, созданным в коде приложения в Службе приложений, включите ведение журнала диагностики, выполнив следующую команду в [Cloud Shell](https://shell.azure.com):

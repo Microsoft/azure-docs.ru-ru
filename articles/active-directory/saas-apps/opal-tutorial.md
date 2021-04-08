@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция единого входа Azure Active Directory с Opal | Документация Майкрософт
+title: Руководство. Интеграция единого входа Azure Active Directory с Opal | Документация Майкрософт
 description: Сведения о настройке единого входа Azure Active Directory в Opal.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 10/24/2019
 ms.author: jeedes
 ms.openlocfilehash: 80c4b1998872c749228d7352484fd5af22b6d23d
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97608346"
 ---
-# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-opal"></a>Руководство по Интеграция единого входа Azure Active Directory с Opal
+# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-opal"></a>Руководство. Интеграция единого входа Azure Active Directory с Opal
 
 В этом учебнике описано, как интегрировать Opal с Azure Active Directory (Azure AD). Интеграция Opal с Azure AD дает следующие возможности.
 

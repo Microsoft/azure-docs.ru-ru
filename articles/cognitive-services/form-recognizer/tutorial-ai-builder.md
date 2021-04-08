@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 11/23/2020
 ms.author: lajanuar
 ms.openlocfilehash: 30c44ac60783132344cc018135d2c248f91f46bc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103467125"
 ---
 # <a name="tutorial-create-a-form-processing-app-with-ai-builder"></a>Руководство по созданию приложения для обработки форм с помощью AI Builder

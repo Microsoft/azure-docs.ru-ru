@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 04/23/2020
 ms.author: JenCook
 ms.openlocfilehash: 3f0984acd66bd5d6c148be8451938d3152fb9ca7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102566674"
 ---
 # <a name="quickstart-deploy-an-azure-confidential-computing-vm-in-the-azure-portal"></a>Краткое руководство. Развертывание виртуальной машины конфиденциальных вычислений на портале Azure

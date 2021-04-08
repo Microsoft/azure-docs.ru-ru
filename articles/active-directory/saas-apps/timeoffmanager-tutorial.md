@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/10/2019
 ms.author: jeedes
 ms.openlocfilehash: 849236b9ac33cec92cc145bb32b4271b73476057
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97608822"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-timeoffmanager"></a>Руководство по Интеграция единого входа Azure Active Directory с TimeOffManager
@@ -140,11 +140,11 @@ ms.locfileid: "97608822"
 1. Если ожидается, что в утверждении SAML будет получено какое-либо значение роли, то в диалоговом окне **Выбор роли** нужно выбрать соответствующую роль для пользователя из списка и затем нажать кнопку **Выбрать**, расположенную в нижней части экрана.
 1. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
-## <a name="configure-timeoffmanager-sso"></a>Настройка единого входа в TimeOffManager
+## <a name="configure-timeoffmanager-sso&quot;></a>Настройка единого входа в TimeOffManager
 
 1. В другом окне веб-браузера войдите на свой корпоративный веб-сайт TimeOffManager в качестве администратора.
 
-2. Выберите **Account \> Account Options \> Single Sign-On Settings** ("Учетная запись" > "Параметры учетной записи" > "Параметры единого входа").
+2. Выберите **Account \> Account Options \> Single Sign-On Settings** (&quot;Учетная запись&quot; > &quot;Параметры учетной записи&quot; > &quot;Параметры единого входа").
    
     ![Снимок экрана: в меню параметров учетной записи выбран элемент для настройки параметров единого входа.](./media/timeoffmanager-tutorial/ic795917.png "Параметры единого входа")
 

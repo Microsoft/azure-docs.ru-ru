@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 04/06/2020
 ms.author: JenCook
 ms.openlocfilehash: aba23b67574fb74b7cd571dc5d4642bb8b991b93
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102566640"
 ---
 # <a name="quickstart-deploy-an-azure-confidential-computing-vm-in-the-marketplace"></a>Краткое руководство. Развертывание виртуальной машины конфиденциальных вычислений в Marketplace

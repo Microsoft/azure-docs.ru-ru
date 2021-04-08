@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/05/2021
 ms.author: jeedes
 ms.openlocfilehash: 520eb25bcb138c96b24166816d3374255fb7c3b2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99493994"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-notion"></a>Руководство. Интеграция единого входа Azure Active Directory с Notion

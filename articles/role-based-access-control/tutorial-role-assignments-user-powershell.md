@@ -14,10 +14,10 @@ ms.workload: identity
 ms.date: 02/02/2019
 ms.author: rolyon
 ms.openlocfilehash: 45993d617028dec13c7a8b57587c7204322965cf
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100555183"
 ---
 # <a name="tutorial-grant-a-user-access-to-azure-resources-using-azure-powershell"></a>Руководство по Предоставление доступа пользователям к ресурсам Azure с помощью Azure PowerShell

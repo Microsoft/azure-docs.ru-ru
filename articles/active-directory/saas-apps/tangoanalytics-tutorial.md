@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/07/2019
 ms.author: jeedes
 ms.openlocfilehash: b1f0cbc1b15eec6498b9219b58d4679bf1a854dc
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96018772"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-tango-analytics"></a>Руководство по интеграции Azure Active Directory с Tango Analytics
@@ -30,11 +30,11 @@ ms.locfileid: "96018772"
 Дополнительные сведения об интеграции приложений SaaS с Azure AD см. в статье [Единый вход в приложениях в Azure Active Directory](../manage-apps/what-is-single-sign-on.md).
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы настроить интеграцию Azure AD с Tango Analytics, вам потребуется:
 
-* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
+* Подписка Azure AD. (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
 * подписка Tango Analytics с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -95,13 +95,13 @@ ms.locfileid: "96018772"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. На странице **Настройка единого входа с помощью SAML** выполните следующие действия.
 
     ![Сведения о домене и URL-адресах единого входа для приложения Tango Analytics](common/idp-intiated.png)
 
-    а. В текстовом поле **Идентификатор** введите значение: `TACORE_SSO`.
+    a. В текстовом поле **Идентификатор** введите значение: `TACORE_SSO`.
 
     b. В текстовом поле **URL-адрес ответа** введите URL-адрес в формате `https://mts.tangoanalytics.com/saml2/sp/acs/post`.
 
