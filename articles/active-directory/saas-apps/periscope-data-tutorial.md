@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/21/2019
 ms.author: jeedes
 ms.openlocfilehash: deac4dcde51049d744706b7479f5b5f3bbb4d9c0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92520865"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-periscope-data"></a>Руководство по Интеграция Azure Active Directory с Periscope Data

@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/27/2020
 ms.author: jeedes
 ms.openlocfilehash: 1af0209265ec4945950120e80a83e19c8ab2eb4b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98726290"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-snowflake"></a>Руководство по интеграции Azure Active Directory со Snowflake

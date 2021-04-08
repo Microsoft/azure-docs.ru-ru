@@ -8,10 +8,10 @@ ms.service: postgresql
 ms.topic: overview
 ms.date: 09/21/2020
 ms.openlocfilehash: db80ae66761e49ce90f25a22f0e74cf8a1300796
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98797228"
 ---
 # <a name="choose-the-right-postgresql-server-option-in-azure"></a>Выбор оптимального параметра сервера PostgreSQL в Azure

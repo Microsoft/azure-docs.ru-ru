@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 06/19/2019
 ms.author: jeedes
 ms.openlocfilehash: ddc83da2836d414ee3fadd23288475a6829018aa
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92521793"
 ---
 # <a name="tutorial-integrate-ungerboeck-software-with-azure-active-directory"></a>Руководство по Интеграция Ungerboeck Software с Azure Active Directory

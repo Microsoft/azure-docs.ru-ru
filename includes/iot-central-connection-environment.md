@@ -9,10 +9,10 @@ ms.date: 11/03/2020
 ms.author: dobett
 ms.custom: include file
 ms.openlocfilehash: a3c85a7c76115ff72e5042788ad83fd31f601c9c
-ms.sourcegitcommit: b8a175b6391cddd5a2c92575c311cc3e8c820018
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96122673"
 ---
 Задайте переменные среды, чтобы настроить пример. В приведенном ниже фрагменте кода показано, как настроить переменные среды в командной строке Windows. Если вы используете оболочку **Bash**, замените команды `set` командами `export`:

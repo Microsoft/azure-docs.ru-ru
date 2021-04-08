@@ -4,10 +4,10 @@ description: Список исключений ретранслятора Azure 
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: 44eeba6eb7b8cfd4e81a923c2d9a3155f1709f2c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98625154"
 ---
 # <a name="azure-relay-exceptions"></a>Исключения ретранслятора Azure
@@ -24,7 +24,7 @@ ms.locfileid: "98625154"
 *   **Ошибка настройки или конфигурации.**[System.UnauthorizedAccessException](/dotnet/api/system.unauthorizedaccessexception). 
 
     **Общее действие.** Проверьте конфигурацию и измените ее при необходимости.
-*   **Временные исключения**: [Microsoft. servicebus. Messaging. MessagingException](/dotnet/api/microsoft.servicebus.messaging.messagingexception), [Microsoft. servicebus. Messaging. ServerBusyException](/dotnet/api/microsoft.servicebus.messaging.serverbusyexception), [Microsoft. servicebus. Messaging. MessagingCommunicationException](/dotnet/api/microsoft.servicebus.messaging.messagingcommunicationexception). 
+*   **Временные исключения.** [Microsoft.ServiceBus.Messaging.MessagingException](/dotnet/api/microsoft.servicebus.messaging.messagingexception), [Microsoft.ServiceBus.Messaging.ServerBusyException](/dotnet/api/microsoft.servicebus.messaging.serverbusyexception), [Microsoft.ServiceBus.Messaging.MessagingCommunicationException](/dotnet/api/microsoft.servicebus.messaging.messagingcommunicationexception). 
 
     **Общее действие.** Повторите операцию или уведомите пользователей.
 *   **Другие исключения.**[System.Transactions.TransactionException](/dotnet/api/system.transactions.transactionexception), [System.TimeoutException](/dotnet/api/system.timeoutexception). 
@@ -41,9 +41,9 @@ ms.locfileid: "98625154"
 | [Недопустимая операция](/dotnet/api/system.invalidoperationexception) |Запрошенная пользователем операция не допускается в пределах сервера или службы. Подробные сведения см. в сообщении об исключении. |Проверьте код и обратитесь к документации. Убедитесь, что запрошенная операция допустима. |Повторная попытка не поможет. |
 | [Операция отменена](/dotnet/api/system.operationcanceledexception) |Предпринята попытка вызвать операцию с объектом, который уже закрыт, прерван или удален. Иногда это означает, что внешняя транзакция уже удалена. |Проверьте код и убедитесь, что он не вызывает операции с удаленным объектом. |Повторная попытка не поможет. |
 | [Несанкционированный доступ](/dotnet/api/system.unauthorizedaccessexception) |Объекту [TokenProvider](/dotnet/api/microsoft.servicebus.tokenprovider) не удалось получить маркер. Маркер является недопустимым или не содержит утверждений, необходимых для выполнения операции. |Убедитесь, что поставщик токенов создан с использованием правильных значений. Проверьте конфигурацию службы контроля доступа. |Повторная попытка может помочь в некоторых случаях. Добавьте в код логику повторных попыток. |
-| [Исключение аргумента](/dotnet/api/system.argumentexception),<br /> [Аргумент Null](/dotnet/api/system.argumentnullexception)<br />[Аргумент вне допустимого диапазона](/dotnet/api/system.argumentoutofrangeexception) |Далее приведены причины возникновения исключений:<br />Для этого метода предоставлен один или несколько недопустимых аргументов.<br /> Универсальный код ресурса (URI), переданный в [NamespaceManager](/dotnet/api/microsoft.servicebus.namespacemanager) или [Create](/dotnet/api/microsoft.servicebus.messaging.messagingfactory.create), содержит один или несколько сегментов пути.<br />В [NamespaceManager](/dotnet/api/microsoft.servicebus.namespacemanager) или [Create](/dotnet/api/microsoft.servicebus.messaging.messagingfactory.create) передана недопустимая схема универсального кода ресурса (URI). <br />Значение свойства превышает 32 КБ. |Проверьте вызывающий код и убедитесь, что аргументы заданы правильно. |Повторная попытка не поможет. |
+| [Исключение аргумента](/dotnet/api/system.argumentexception)<br /> [Аргумент Null](/dotnet/api/system.argumentnullexception)<br />[Аргумент вне допустимого диапазона](/dotnet/api/system.argumentoutofrangeexception) |Далее приведены причины возникновения исключений:<br />Для этого метода предоставлен один или несколько недопустимых аргументов.<br /> Универсальный код ресурса (URI), переданный в [NamespaceManager](/dotnet/api/microsoft.servicebus.namespacemanager) или [Create](/dotnet/api/microsoft.servicebus.messaging.messagingfactory.create), содержит один или несколько сегментов пути.<br />В [NamespaceManager](/dotnet/api/microsoft.servicebus.namespacemanager) или [Create](/dotnet/api/microsoft.servicebus.messaging.messagingfactory.create) передана недопустимая схема универсального кода ресурса (URI). <br />Значение свойства превышает 32 КБ. |Проверьте вызывающий код и убедитесь, что аргументы заданы правильно. |Повторная попытка не поможет. |
 | [Сервер занят](/dotnet/api/microsoft.servicebus.messaging.serverbusyexception) |В настоящее время служба не может обработать запрос. |Клиент может некоторое время подождать, после чего следует повторить операцию. |Клиент может повторить операцию через определенный промежуток времени. Если в результате повтора возникает другое исключение, проверьте поведение повтора этого исключения. |
-| [Превышена квота](/dotnet/api/microsoft.servicebus.messaging.quotaexceededexception) |Сущность обмена сообщениями достигла максимально допустимого размера. |Создайте в сущности пространство, получая сообщения из сущности или ее подочередей. См. [QuotaExceededException](#quotaexceededexception). |Повторная попытка может помочь, если сообщения были удалены. |
+| [Превышена квота](/dotnet/api/microsoft.servicebus.messaging.quotaexceededexception) |Сущность обмена сообщениями достигла максимально допустимого размера. |Создайте в сущности пространство, получая сообщения из сущности или ее подочередей. Ознакомьтесь с разделом [Исключение QuotaExceededException](#quotaexceededexception). |Повторная попытка может помочь, если сообщения были удалены. |
 | [Превышен размер сообщения](/dotnet/api/microsoft.servicebus.messaging.messagesizeexceededexception) |Полезные данные сообщения превышают предел в 256 КБ. Обратите внимание, что предел в 256 КБ является общим размером сообщения с учетом системных свойств и служебных данных Microsoft .NET. |Сократите размер полезных данных сообщения, а затем повторите операцию. |Повторная попытка не поможет. |
 
 ## <a name="quotaexceededexception"></a>QuotaExceededException
@@ -62,7 +62,7 @@ ms.locfileid: "98625154"
 *   слишком маленькое значение [OpenTimeout](/previous-versions/) (вплоть до доли секунды);
 * неотвечающие локальные прослушиватели ретрансляции (или проблемы, связанные с тем, что правила брандмауэра запрещают прослушивателям принимать новые клиентские подключения) и значение [OpenTimeout](/previous-versions/) меньше 20 секунд.
 
-Пример
+Пример.
 
 ```
 'System.TimeoutException’: The operation did not complete within the allotted timeout of 00:00:10.
@@ -81,6 +81,6 @@ The time allotted to this operation may have been a portion of a longer timeout.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Часто задаваемые вопросы о ретрансляторе Azure](relay-faq.md)
-* [Создание пространства имен ретранслятора](relay-create-namespace-portal.md)
+* [Создание пространства имен ретранслятора с помощью портала Azure](relay-create-namespace-portal.md)
 * [Приступая к работе с гибридными подключениями к ретранслятору](relay-hybrid-connections-dotnet-get-started.md)
 * [Приступая к работе с гибридными подключениями к ретранслятору](relay-hybrid-connections-node-get-started.md)

@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.openlocfilehash: a86d876a723c89eb8dcdf18c8318f2a9c740a229
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99051030"
 ---
 # <a name="move-your-azure-automation-account-to-another-subscription"></a>Перемещение учетной записи службы автоматизации Azure в другую подписку

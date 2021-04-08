@@ -9,10 +9,10 @@ ms.date: 12/14/2018
 ms.author: danlep
 ms.custom: include file
 ms.openlocfilehash: f2d2b655e80f5b9694fb1948b136aac918312ca9
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102244969"
 ---
 ## <a name="create-a-service-principal"></a>Создание субъекта-службы

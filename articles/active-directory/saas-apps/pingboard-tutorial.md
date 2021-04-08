@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/25/2019
 ms.author: jeedes
 ms.openlocfilehash: d7b090eb5228a449212ceebd6cd299c5f8860089
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92520801"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-pingboard"></a>Руководство по интеграции Azure Active Directory с Pingboard
@@ -130,11 +130,11 @@ ms.locfileid: "92520801"
 
     c. URL-адрес выхода.
 
-### <a name="configure-pingboard-single-sign-on"></a>Настройка единого входа в Pingboard
+### <a name="configure-pingboard-single-sign-on&quot;></a>Настройка единого входа в Pingboard
 
 1. Чтобы настроить единый вход на стороне Pingboard, откройте новое окно браузера и войдите в учетную запись Pingboard. Для настройки единого входа нужны права администратора Pingboard.
 
-2. В верхнем меню выберите **Apps > Integrations** ("Приложения" > "Интеграция").
+2. В верхнем меню выберите **Apps > Integrations** (&quot;Приложения&quot; > &quot;Интеграция").
 
     ![Настройка единого входа](./media/pingboard-tutorial/Pingboard_integration.png)
 

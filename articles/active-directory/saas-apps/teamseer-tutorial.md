@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/07/2019
 ms.author: jeedes
 ms.openlocfilehash: 6085ba5091b2b9973354280175aeb01f93ad7e28
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92521175"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-teamseer"></a>Руководство по Интеграция Azure Active Directory с TeamSeer
