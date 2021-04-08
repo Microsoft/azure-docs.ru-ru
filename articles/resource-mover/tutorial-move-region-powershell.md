@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.date: 02/21/2021
 ms.author: raynew
 ms.openlocfilehash: b728170521570ff0d83b67671109e82adb7fa7b0
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102583351"
 ---
 # <a name="move-resources-across-regions-in-powershell"></a>Перемещение ресурсов между регионами в PowerShell

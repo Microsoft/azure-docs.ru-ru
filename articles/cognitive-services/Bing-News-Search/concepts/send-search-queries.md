@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: aahi
 ms.openlocfilehash: ac214f158703fdfeaddfa4052a83481adebda060
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96348234"
 ---
 # <a name="sending-queries-to-the-bing-news-search-api"></a>Отправка запросов в API Bing для поиска новостей
@@ -44,10 +44,10 @@ https://api.cognitive.microsoft.com/bing/v7.0/news/search
 
 Запрос должен содержать заголовок [Ocp-Apim-Subscription-Key](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#subscriptionkey). Приведенные ниже заголовки являются необязательными, но их также рекомендуется указать:
 
-- [Агент пользователя](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#useragent)
+- [User-Agent](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#useragent)
 - [X-MSEdge-ClientID](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#clientid)
 - [X-Search-ClientIP](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#clientip)
-- [X-Search-расположение](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#location)
+- [X-Search-Location](/rest/api/cognitiveservices-bingsearch/bing-news-api-v7-reference#location)
 
 Заголовки IP-адреса и расположения клиента важны для отображения содержимого с учетом расположения.
 
@@ -289,7 +289,7 @@ BingAPIs-Market: en-US
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Что такое Поиск новостей Bing?](../search-the-web.md). 
+* [Что такое API Bing для поиска новостей?](../search-the-web.md) 
 * [Получение главных новостей за сегодня](search-for-news.md#get-todays-top-news)
 * [Получение новостей по категориям](search-for-news.md#get-news-by-category)
 * [Получение популярных новостей](search-for-news.md#get-trending-news)

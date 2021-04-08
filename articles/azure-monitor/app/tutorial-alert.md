@@ -8,10 +8,10 @@ ms.author: lagayhar
 ms.date: 04/10/2019
 ms.custom: mvc
 ms.openlocfilehash: 6b8cc951301ec315f758478eda1c0736882e66f2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100598155"
 ---
 # <a name="monitor-and-alert-on-application-health-with-azure-application-insights"></a>Мониторинг и оповещение о работоспособности приложения с помощью Azure Application Insights

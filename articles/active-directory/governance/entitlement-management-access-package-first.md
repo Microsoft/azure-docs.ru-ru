@@ -17,10 +17,10 @@ ms.author: ajburnle
 ms.reviewer: markwahl-msft
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1adbc653c8b698cb7b439b54b0a77d2b8cd4042a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100547406"
 ---
 # <a name="tutorial-manage-access-to-resources-in-azure-ad-entitlement-management"></a>Руководство по Управление доступом к ресурсам в управлении правами Azure AD
