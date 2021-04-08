@@ -4,10 +4,10 @@ description: Узнайте, как использовать удаленный 
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: d13868477ff2e3378d87d7785789a7498ed17e59
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "85443423"
 ---
 # <a name="connect-to-linux-virtual-machines-in-a-classroom-lab-of-azure-lab-services"></a>Подключение к виртуальным машинам Linux в учебной лаборатории в Службах лабораторий Azure

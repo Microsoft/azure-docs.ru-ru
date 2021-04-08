@@ -9,10 +9,10 @@ ms.date: 03/02/2020
 ms.author: cephalin
 ms.custom: include file
 ms.openlocfilehash: 6fc1f4152b2e16e1597c018e5af6e0245b075c3b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "78255833"
 ---
 ## <a name="robots933456-in-logs"></a>robots933456 в журналах
