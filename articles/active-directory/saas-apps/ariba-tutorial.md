@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/01/2021
 ms.author: jeedes
 ms.openlocfilehash: 3ecbe96e0385bff6199094af7138017df500175b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101647258"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-ariba"></a>Руководство. Интеграция Azure Active Directory с Ariba
@@ -77,7 +77,7 @@ ms.locfileid: "101647258"
 
     ![Сведения о домене и URL-адресах единого входа для приложения Ariba](common/sp-identifier.png)
 
-    а. В текстовом поле **URL-адрес для входа** введите URL-адрес в следующем формате: .
+    а. В текстовом поле **URL-адрес для входа** введите URL-адрес в следующем формате:
     
     ```http
     https://<subdomain>.sourcing.ariba.com

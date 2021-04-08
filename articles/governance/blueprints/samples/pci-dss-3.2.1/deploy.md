@@ -4,10 +4,10 @@ description: Процедура развертывания отдельного 
 ms.date: 01/08/2021
 ms.topic: sample
 ms.openlocfilehash: 37e39231ee7395b951f69035cd98f2e14028ba1c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98045059"
 ---
 # <a name="deploy-the-pci-dss-v321-blueprint-sample"></a>Развертывание примера схемы PCI-DSS версии 3.2.1

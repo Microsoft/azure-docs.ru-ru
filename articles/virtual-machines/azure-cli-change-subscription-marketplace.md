@@ -10,10 +10,10 @@ ms.service: virtual-machines
 ms.devlang: azurecli
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: e70284a3a89c30d0f1d1363a15652449a6a1d4f5
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100558100"
 ---
 # <a name="move-a-marketplace-azure-virtual-machine-to-another-subscription"></a>Перемещение виртуальной машины Azure Marketplace в другую подписку
