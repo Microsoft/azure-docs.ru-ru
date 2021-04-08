@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/08/2021
 ms.author: jeedes
 ms.openlocfilehash: a5b14cd231998515003574e6c961989d46e50095
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101654040"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-teamviewer"></a>Руководство по Интеграция единого входа Azure Active Directory с TeamViewer
