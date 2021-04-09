@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: tspring
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cdef3e1f1a60c9eb0c751855837e9cbe77e015e9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98572295"
 ---
 # <a name="what-is-the-sign-in-diagnostic-in-azure-ad"></a>Что такое диагностика входа в AAD?

@@ -14,10 +14,10 @@ ms.custom:
 ms.service: iot-hub
 services: iot-hub
 ms.openlocfilehash: 86a373844b370cc9f9ce31dc65b2039a81279803
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102454776"
 ---
 # <a name="what-is-azure-iot-hub"></a>Что такое Центр Интернета вещей в Azure?

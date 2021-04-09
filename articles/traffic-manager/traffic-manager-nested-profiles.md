@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 10/22/2018
 ms.author: duau
 ms.openlocfilehash: 5f2aa3d05d349880b5eb2d35a2c58af0741b9855
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98185586"
 ---
 # <a name="nested-traffic-manager-profiles"></a>Вложенные профили диспетчера трафика

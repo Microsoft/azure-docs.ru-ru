@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: quickstart
 ms.date: 02/15/2021
 ms.openlocfilehash: e183d81355d4db81e677f34b02330ddb9b631957
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100651992"
 ---
 # <a name="quickstart-create-an-azure-cognitive-search-service-in-the-portal"></a>Краткое руководство. Создание службы "Когнитивный поиск Azure" на портале

@@ -11,10 +11,10 @@ ms.date: 12/03/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: aa91851787bbb0f5570a4f439f794ee352bf0625
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104579694"
 ---
 # <a name="tutorial-create-an-azure-active-directory-b2c-tenant"></a>Руководство по Создание клиента Azure Active Directory B2C

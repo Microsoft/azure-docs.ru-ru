@@ -16,10 +16,10 @@ ms.custom:
 - devx-track-js
 - devx-track-azurecli
 ms.openlocfilehash: 7dbc0404679927bcef1647dfdf46ce3360216a79
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98733305"
 ---
 <!-- **TODO** Update publish config with repo paths before publishing! -->
@@ -196,15 +196,15 @@ node ServiceClient.js "{your service connection string}"
 
 ![Снимок экрана демонстрирует выходные данные из серверного приложения, где выделена отправка обновления.](./media/tutorial-device-twins/BackEnd1.png)
 
-## <a name="receive-state-information"></a>Получение сведений о состоянии
+## <a name="receive-state-information&quot;></a>Получение сведений о состоянии
 
 Внутреннее приложение получает сведения о состоянии с устройства как передаваемые свойства. Устройство задает передаваемые свойства и отправляет их в центр. Внутреннее приложение может считывать текущие значения передаваемых свойств c двойника устройства, хранящегося в центре.
 
-### <a name="send-reported-properties-from-a-device"></a>Отправка передаваемых свойств с устройства
+### <a name=&quot;send-reported-properties-from-a-device&quot;></a>Отправка передаваемых свойств с устройства
 
 Вы можете передавать обновления в значения передаваемых свойств в качестве исправлений. В следующем фрагменте кода показан шаблон для исправления, отправляемого имитированным устройством. Имитированное устройство обновляет поля в исправлении перед его отправкой в центр:
 
-[!code-javascript[Reported properties patches](~/iot-samples-node/iot-hub/Tutorials/DeviceTwins/SimulatedDevice.js?name=reportedpatch&highlight=2 "Reported properties patches")]
+[!code-javascript[Reported properties patches](~/iot-samples-node/iot-hub/Tutorials/DeviceTwins/SimulatedDevice.js?name=reportedpatch&highlight=2 &quot;Reported properties patches")]
 
 Имитированное устройство использует следующую функцию для отправки в центр исправлений, которые содержат передаваемые свойства:
 

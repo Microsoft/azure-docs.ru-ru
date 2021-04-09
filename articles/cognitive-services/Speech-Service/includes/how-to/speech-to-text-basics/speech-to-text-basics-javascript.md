@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 03/04/2021
 ms.author: trbye
 ms.custom: devx-track-js
-ms.openlocfilehash: cc5e306aa9677c7370d03dbb26ef3fe69293a630
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: dd92cf24cf007418e52cb5091eb390b46d7a5571
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180067"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104988275"
 ---
 Одной из основных функций службы "Речь" является распознавание и преобразование человеческой речи (часто это называется преобразованием речи в текст). Из этого краткого руководство вы узнаете, как использовать пакет SDK для службы "Речь" в приложениях и продуктах для выполнения высококачественного преобразования речи в текст.
 
@@ -62,11 +62,7 @@ const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription
 
 ## <a name="recognize-from-file"></a>Распознавание речи из файла 
 
-Чтобы распознать речь из звукового файла в Node.js, необходимо использовать альтернативный конструктивный шаблон, применяющий поток push-передачи, так как объект `File` JavaScript не может использоваться в среде выполнения Node.js. В приведенном ниже коде
-
-* создается поток push-передачи с помощью `createPushStream()`;
-* открывается файл `.wav`, создавая поток чтения, и осуществляется его запись в поток push-передачи;
-* создается аудио-конфигурация с помощью потока push-передачи.
+Чтобы распознать речь из аудиофайла, создайте с помощью `fromWavFileInput()` объект `AudioConfig`, который принимает объект `Buffer`. Затем инициализируйте [`SpeechRecognizer`](https://docs.microsoft.com/javascript/api/microsoft-cognitiveservices-speech-sdk/speechrecognizer?view=azure-node-latest), передав `audioConfig` и `speechConfig`.
 
 ```javascript
 const fs = require('fs');
@@ -74,6 +70,31 @@ const sdk = require("microsoft-cognitiveservices-speech-sdk");
 const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription-key>", "<paste-your-region>");
 
 function fromFile() {
+    let audioConfig = sdk.AudioConfig.fromWavFileInput(fs.readFileSync("YourAudioFile.wav"));
+    let recognizer = new sdk.SpeechRecognizer(speechConfig, audioConfig);
+
+    recognizer.recognizeOnceAsync(result => {
+        console.log(`RECOGNIZED: Text=${result.text}`);
+        recognizer.close();
+    });
+}
+fromFile();
+```
+
+## <a name="recognize-from-in-memory-stream"></a>Распознавание из потока в памяти
+
+Во многих вариантах использования аудиоданные, скорее всего, поступают из Хранилища BLOB-объектов или уже находятся в памяти в виде [`ArrayBuffer`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) или аналогичной структуры необработанных данных. В приведенном ниже коде
+
+* создается поток push-передачи с помощью `createPushStream()`;
+* считывается файл `.wav` с помощью `fs.createReadStream` в демонстрационных целях, но если у вас уже есть аудиоданные в `ArrayBuffer`, вы можете сразу перейти к записи содержимого во входной поток;
+* создается аудио-конфигурация с помощью потока push-передачи.
+
+```javascript
+const fs = require('fs');
+const sdk = require("microsoft-cognitiveservices-speech-sdk");
+const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription-key>", "<paste-your-region>");
+
+function fromStream() {
     let pushStream = sdk.AudioInputStream.createPushStream();
 
     fs.createReadStream("YourAudioFile.wav").on('data', function(arrayBuffer) {
@@ -89,7 +110,7 @@ function fromFile() {
         recognizer.close();
     });
 }
-fromFile();
+fromStream();
 ```
 
 При использовании потока push-передачи в качестве входных данных предполагается, что звуковые данные являются необработанным PCM (пропуская все заголовки).

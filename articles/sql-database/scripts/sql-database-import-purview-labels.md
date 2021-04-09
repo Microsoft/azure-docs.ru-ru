@@ -11,10 +11,10 @@ ms.author: datrigan
 ms.reviewer: vanto
 ms.date: 02/17/2021
 ms.openlocfilehash: 2eab7c535ff0c68da772e8a45ead12420734279c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101714907"
 ---
 # <a name="classify-your-azure-sql-data-using-azure-purview-labels"></a>Классификация данных Azure SQL с помощью меток Azure Purview
