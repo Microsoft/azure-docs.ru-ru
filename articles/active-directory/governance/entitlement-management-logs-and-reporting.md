@@ -17,10 +17,10 @@ ms.author: barclayn
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4c5ab92fcc1d70d12e37ae351e768514b4e7522f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102501708"
 ---
 # <a name="archive-logs-and-reporting-on-azure-ad-entitlement-management-in-azure-monitor"></a>Архивируйте журналы и создавайте отчеты в управлении правами Azure AD в Azure Monitor

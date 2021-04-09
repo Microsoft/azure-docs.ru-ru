@@ -7,10 +7,10 @@ ms.date: 08/01/2020
 ms.custom: mvc, devcenter, seodec18
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 59a2c96987762e6b56cc7b453877cebe3124e443
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102109100"
 ---
 <!-- default for linux -->

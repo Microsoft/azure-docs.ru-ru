@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.service: iot-edge
 ms.custom: mvc, devx-track-python, devx-track-js
 ms.openlocfilehash: a8a6d09819aaa65645da3d4d697866609c226723
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103461153"
 ---
 # <a name="tutorial-develop-and-deploy-a-nodejs-iot-edge-module-using-linux-containers"></a>Учебник. Разработка и развертывание модуля IoT Edge на Node.js с использованием контейнеров Linux
@@ -51,7 +51,7 @@ IoT Edge не поддерживает модули Node.js, использую�
 Перед началом работы с этим учебником вы уже должны изучить предыдущий учебник по настройке среды для разработки контейнеров Linux: [Разработка модулей IoT Edge с использованием контейнеров Linux](tutorial-develop-for-linux.md). После работы с ним у вас должны быть готовы все необходимые компоненты:
 
 * [Центр Интернета вещей](../iot-hub/iot-hub-create-through-portal.md) ценовой категории "Бесплатный" или "Стандартный" в Azure.
-* Устройство с Azure IoT Edge. Вы можете воспользоваться краткими руководствами для настройки [устройства Linux](quickstart-linux.md) или [устройства Windows](quickstart.md).
+* Устройство с Azure IoT Edge. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
 * реестр контейнеров, например [Реестр контейнеров Azure](../container-registry/index.yml);
 * средство [Visual Studio Code](https://code.visualstudio.com/), настроенное с помощью [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools);
 * выпуск [Docker CE](https://docs.docker.com/install/), настроенный для выполнения контейнеров Linux.

@@ -11,10 +11,10 @@ ms.author: martinle
 ms.reviewer: nirav
 zone_pivot_groups: programming-languages-spark-all-minus-sql
 ms.openlocfilehash: a588b37b270917524453419619fdad6f88f92338
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101693583"
 ---
 # <a name="secure-credentials-with-linked-services-using-the-tokenlibrary"></a>Защита учетных данных с помощью связанных служб с использованием библиотеки TokenLibrary
