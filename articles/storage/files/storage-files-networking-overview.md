@@ -8,10 +8,10 @@ ms.date: 02/22/2020
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: cec386b798b843a5badc9d52d9c71bd7df54b59a
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103601939"
 ---
 # <a name="azure-files-networking-considerations"></a>Рекомендации по работе с сетями службы "Файлы Azure" 
