@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/15/2021
 ms.author: jeedes
 ms.openlocfilehash: c47092b1488a79805db69308bcb9a8efde1c0d58
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101653072"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-mobileiron"></a>Руководство по интеграции Azure Active Directory с MobileIron

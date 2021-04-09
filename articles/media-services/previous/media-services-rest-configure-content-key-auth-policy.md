@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 66649eb6109339cd7723ab4a7e3a12c5c322973d
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103017296"
 ---
 # <a name="dynamic-encryption-configure-a-content-key-authorization-policy"></a>Динамическое шифрование: настройка политики для авторизации ключа содержимого
@@ -57,7 +57,7 @@ ms.locfileid: "103017296"
 > [!NOTE]
 > При работе с REST API служб мультимедиа руководствуйтесь следующими рекомендациями.
 > 
-> При доступе к сущностям в службах мультимедиа необходимо задать определенные поля и значения заголовков в HTTP-запросах. Дополнительные сведения см. в статье [Настройка служб мультимедиа REST API разработки](media-services-rest-how-to-use.md).
+> При доступе к сущностям в службах мультимедиа необходимо задать определенные поля и значения заголовков в HTTP-запросах. Дополнительную информацию см. в статье [Обзор интерфейса REST API служб мультимедиа](media-services-rest-how-to-use.md).
 > 
 > 
 > 
@@ -147,7 +147,7 @@ Date: Tue, 10 Feb 2015 08:56:40 GMT
 {"odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#ContentKeyAuthorizationPolicyOptions/@Element","Id":"nb:ckpoid:UUID:57829b17-1101-4797-919b-f816f4a007b7","Name":"policy","KeyDeliveryType":2,"KeyDeliveryConfiguration":"","Restrictions":[{"Name":"HLS Open Authorization Policy","KeyRestrictionType":0,"Requirements":null}]}
 ```
 
-#### <a name="link-contentkeyauthorizationpolicies-with-options"></a><a id="LinkContentKeyAuthorizationPoliciesWithOptions"></a>Связывание ContentKeyAuthorizationPolicies с параметрами
+#### <a name="link-contentkeyauthorizationpolicies-with-options"></a><a id="LinkContentKeyAuthorizationPoliciesWithOptions"></a>Привязка ContentKeyAuthorizationPolicies к Options
 Запрос:
 
 ```console
@@ -309,7 +309,7 @@ Date: Tue, 10 Feb 2015 09:10:37 GMT
 ## <a name="playready-dynamic-encryption"></a>Динамическое шифрование PlayReady
 С помощью служб мультимедиа можно настроить права и ограничения, которые должны применяться в среде выполнения PlayReady DRM при попытке пользователя воспроизвести защищенное содержимое. 
 
-При защите содержимого с помощью PlayReady необходимо указать в политике авторизации строку XML, определяющую [шаблон лицензии PlayReady](media-services-playready-license-template-overview.md). 
+При защите содержимого с помощью PlayReady в политике авторизации среди прочего необходимо указать XML-строку, определяющую [шаблон лицензии PlayReady](media-services-playready-license-template-overview.md). 
 
 ### <a name="open-restriction"></a>Ограничение открытого типа
 Ограничение открытого типа означает, что система доставляет ключ всем, кто подает на него запрос. Это ограничение подходит для тестирования.

@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.date: 09/10/2020
 ms.author: cshoe
 ms.openlocfilehash: 0086f7f68fd05d6925d19c7ab457fbc125e36be4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96350234"
 ---
 # <a name="tutorial-building-a-static-web-app-with-blazor-in-azure-static-web-apps"></a>Руководство по созданию статического веб-приложения с помощью Blazor в службе "Статические веб-приложений Azure"

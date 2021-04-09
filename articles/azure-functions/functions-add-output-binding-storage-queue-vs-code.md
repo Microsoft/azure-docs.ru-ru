@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.custom: devx-track-python, devx-track-js
 zone_pivot_groups: programming-languages-set-functions
 ms.openlocfilehash: 96384d2c50e7d5b4b5b6e652d01c4a89cd519573
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99493408"
 ---
 # <a name="connect-azure-functions-to-azure-storage-using-visual-studio-code"></a>Подключение Функций Azure к службе хранилища Azure с помощью Visual Studio Code

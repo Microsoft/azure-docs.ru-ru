@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 12/07/2018
 ms.custom: seodec18
 ms.openlocfilehash: 99e9ce85bb1e59b5016e836ff16d03cb3326ec8c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98020372"
 ---
 # <a name="test-live-data-locally-using-azure-stream-analytics-tools-for-visual-studio-preview"></a>Тестирование реальных данных в локальной среде с помощью инструментов Azure Stream Analytics для Visual Studio (предварительная версия)
@@ -25,8 +25,8 @@ ms.locfileid: "98020372"
 |**Ввод**  |**Выходные данные**  |**Тип задания**  |
 |---------|---------|---------|
 |Локальные статические данные   |  Локальные статические данные   |   Облако или Edge |
-|Реальные входные данные   |  Локальные статические данные   |   Облако |
-|Реальные входные данные   |  Реальные выходные данные   |   Облако |
+|Реальные входные данные   |  Локальные статические данные   |   Cloud |
+|Реальные входные данные   |  Реальные выходные данные   |   Cloud |
 
 ## <a name="local-testing-with-live-data"></a>Локальное тестирование с помощью реальных данных
 
@@ -62,6 +62,6 @@ ms.locfileid: "98020372"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Создание Stream Analytics задания с помощью средств Azure Stream Analytics для Visual Studio](stream-analytics-quick-create-vs.md)
+* [Создание задания Stream Analytics с использованием инструментов Azure Stream Analytics для Visual Studio](stream-analytics-quick-create-vs.md)
 * [Локальное тестирование запросов Stream Analytics с помощью Visual Studio](stream-analytics-vs-tools-local-run.md)
 * [Просмотр заданий Azure Stream Analytics с помощью Visual Studio](stream-analytics-vs-tools.md)
