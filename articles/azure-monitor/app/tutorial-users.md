@@ -7,12 +7,12 @@ author: lgayhardt
 ms.author: lagayhar
 ms.date: 09/20/2017
 ms.custom: mvc
-ms.openlocfilehash: 4f6eeb5265d99a17ed18ace91fa5f2d2f744dbb2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: db63d763da8cfe13a07cab15f7f18ad6e2e73eb7
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100598074"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105026297"
 ---
 # <a name="use-azure-application-insights-to-understand-how-customers-are-using-your-application"></a>Использование Azure Application Insights для анализа информации о том, как пользователи используют приложение
 
@@ -38,7 +38,7 @@ ms.locfileid: "100598074"
 - Загрузите и установите [отладчик моментальных снимков Visual Studio](https://aka.ms/snapshotdebugger).
 - Разверните приложение .NET в Azure и [включите пакет SDK для Application Insights](../app/asp-net.md). 
 - Включите [отправку из приложения телеметрии](../app/usage-overview.md#send-telemetry-from-your-app) для пользовательских событий и просмотров страниц.
-- Включите [отправку контекста пользователя](../app/usage-send-user-context.md) для отслеживания действий с привязкой ко времени, чтобы максимально эффективно применить информацию об использовании.
+- Включите [отправку контекста пользователя](./usage-overview.md) для отслеживания действий с привязкой ко времени, чтобы максимально эффективно применить информацию об использовании.
 
 ## <a name="log-in-to-azure"></a>Вход в Azure
 Войдите на портал Azure по адресу [https://portal.azure.com](https://portal.azure.com).
@@ -165,4 +165,3 @@ ms.locfileid: "100598074"
 
 > [!div class="nextstepaction"]
 > [Создание настраиваемых панелей мониторинга КПЭ с помощью Azure Application Insights](./tutorial-app-dashboards.md)
-

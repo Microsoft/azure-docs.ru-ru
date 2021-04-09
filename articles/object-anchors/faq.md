@@ -7,12 +7,12 @@ ms.author: crtreasu
 ms.date: 04/01/2020
 ms.topic: overview
 ms.service: azure-object-anchors
-ms.openlocfilehash: 6de027f317072512bd9893303d3a79d0f34f3e3e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: aebc1013dcead6c32dab55512ce915e25f60f94a
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101747978"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105047581"
 ---
 # <a name="frequently-asked-questions-about-azure-object-anchors"></a>Часто задаваемые вопросы о службе "Объектные привязки Azure"
 
@@ -78,7 +78,7 @@ ms.locfileid: "101747978"
  1. Выполните калибровку глаз, чтобы обеспечить точную визуализацию.
  2. Убедитесь, что у помещение обладает насыщенным визуальным фоном и хорошим освещением.
  3. По возможности держите объект в неподвижном состоянии и вдали от посторонних элементов.
- 4. При необходимости очистите кэш [пространственного сопоставления](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping) на устройстве HoloLens.
+ 4. При необходимости очистите кэш [пространственного сопоставления](/windows/mixed-reality/spatial-mapping) на устройстве HoloLens.
  5. Сканируйте объект, обходя его по кругу. Убедитесь, что видна основная часть объекта.
  6. Установите достаточно большую область поиска, чтобы охватить объект.
  7. Объект должен оставаться неподвижным во время обнаружения.

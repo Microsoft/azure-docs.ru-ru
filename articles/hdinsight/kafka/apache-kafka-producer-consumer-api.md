@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: tutorial
 ms.date: 05/19/2020
 ms.openlocfilehash: e5a635a8837aadaf423c6f3a0925dbac4080e60f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98945177"
 ---
 # <a name="tutorial-use-the-apache-kafka-producer-and-consumer-apis"></a>Руководство по Использование API производителя и потребителя Apache Kafka

@@ -3,13 +3,13 @@ title: Создание панели мониторинга портала Azure
 description: Узнайте, как создать панель мониторинга на портале Azure с помощью Azure PowerShell.
 ms.topic: quickstart
 ms.custom: devx-track-azurepowershell
-ms.date: 07/24/2020
-ms.openlocfilehash: 02e243a7296555d73427f8e31c4abdf9c3e56735
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.date: 03/25/2021
+ms.openlocfilehash: cd001a8259c54f1d86aab5983da1413c8163008c
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96745746"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105557451"
 ---
 # <a name="quickstart-create-an-azure-portal-dashboard-with-powershell"></a>Краткое руководство. Создание панели мониторинга портала Azure с помощью PowerShell
 
@@ -23,7 +23,7 @@ ms.locfileid: "96745746"
 Если вы решили использовать PowerShell локально, для работы с этой статьей установите модуль PowerShell Az и подключитесь к учетной записи Azure с помощью командлета [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount). См. сведения об [установке модуля Azure PowerShell](/powershell/azure/install-az-ps).
 
 > [!IMPORTANT]
-> Так как модуль PowerShell **Az.Portal** предоставляется в режиме предварительной версии, его нужно установить отдельно от модуля Az с помощью командлета `Install-Module`. Как только этот модуль PowerShell станет общедоступным, он будет включен в один из будущих выпусков Az PowerShell и встроен в Azure Cloud Shell.
+> Так как модуль PowerShell **Az.Portal** предоставляется в предварительной версии, его нужно установить отдельно от модуля Az с помощью командлета `Install-Module`. Как только этот модуль PowerShell станет общедоступным, он будет включен в один из будущих выпусков Az PowerShell и встроен в Azure Cloud Shell.
 
 ```azurepowershell-interactive
 Install-Module -Name Az.Portal
@@ -104,7 +104,7 @@ New-AzVm @AzVmParams
 ```azurepowershell-interactive
 $myPortalDashboardTemplateUrl = 'https://raw.githubusercontent.com/Azure/azure-docs-powershell-samples/master/azure-portal/portal-dashboard-template-testvm.json'
 
-$myPortalDashboardTemplatePath = "$env:TEMP\portal-dashboard-template-testvm.json"
+$myPortalDashboardTemplatePath = "$HOME\portal-dashboard-template-testvm.json"
 
 Invoke-WebRequest -Uri $myPortalDashboardTemplateUrl -OutFile $myPortalDashboardTemplatePath -UseBasicParsing
 ```
@@ -146,19 +146,7 @@ New-AzPortalDashboard @DashboardParams
 Get-AzPortalDashboard -Name $dashboardName -ResourceGroupName $resourceGroupName
 ```
 
-Убедитесь, что данные от виртуальной машины поступают на портал Azure.
-
-1. На портале Azure выберите **Панель мониторинга**.
-
-   ![Переход к панели мониторинга на портале Azure](media/quickstart-portal-dashboard-powershell/navigate-to-dashboards.png)
-
-1. На странице панели мониторинга выберите **Простая панель мониторинга виртуальной машины**.
-
-   ![Переход к простой панели мониторинга виртуальной машины](media/quickstart-portal-dashboard-powershell/select-simple-vm-dashboard.png)
-
-1. Проверьте панель мониторинга. Вы увидите, что часть содержимого является статическим, но здесь также представлены диаграммы, отображающие производительность виртуальной машины.
-
-   ![Обзор простой панели мониторинга виртуальной машины](media/quickstart-portal-dashboard-powershell/review-simple-vm-dashboard.png)
+[!INCLUDE [azure-portal-review-deployed-resources](../../includes/azure-portal-review-deployed-resources.md)]
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
@@ -170,6 +158,7 @@ Get-AzPortalDashboard -Name $dashboardName -ResourceGroupName $resourceGroupName
 
 ```azurepowershell-interactive
 Remove-AzResourceGroup -Name $resourceGroupName
+Remove-Item -Path "$HOME\portal-dashboard-template-testvm.json"
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия

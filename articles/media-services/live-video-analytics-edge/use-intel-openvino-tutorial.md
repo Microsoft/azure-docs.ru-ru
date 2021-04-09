@@ -4,12 +4,12 @@ description: В этом учебнике вы будете использова
 ms.topic: tutorial
 ms.date: 09/08/2020
 titleSuffix: Azure
-ms.openlocfilehash: 68b5b7561cc31e156a745bcfb07e3203de10d425
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 5751184493fffeeaf647507e9e9b00834f63ab5e
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101702221"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105557264"
 ---
 # <a name="tutorial-analyze-live-video-by-using-openvino-model-server--ai-extension-from-intel"></a>Руководство по Анализ видеотрансляций с помощью OpenVINO™ Model Server (расширение ИИ от Intel) 
 
@@ -51,7 +51,7 @@ ms.locfileid: "101702221"
 
 На схеме показан порядок передачи сигналов в этом кратком руководстве. [Пограничный модуль](https://github.com/Azure/live-video-analytics/tree/master/utilities/rtspsim-live555) имитирует IP-камеру, на которой находится RTSP-сервер. Узел [RTSP-источника](media-graph-concept.md#rtsp-source) получает видеосигнал с этого сервера и передает видеокадры на узел [обработчика расширений HTTP](media-graph-concept.md#http-extension-processor). 
 
-Узел расширения HTTP играет роль прокси-сервера. Он выбирает входящие видеокадры, заданные в поле `samplingOptions`, а также преобразует видеокадры в изображения указанного типа. Затем с использованием REST он передает изображение на другой пограничный модуль, выполняющий модели искусственного интеллекта на конечной точке HTTP. В этом примере этим пограничным модулем является OpenVINO™ Model Server (расширение ИИ от Intel). Узел обработчика расширений HTTP собирает результаты обнаружения и публикует события в узле [приемника Центра Интернета вещей](media-graph-concept.md#iot-hub-message-sink). Затем узел отправляет эти события в [центр IoT Edge](../../iot-edge/iot-edge-glossary.md#iot-edge-hub).
+Узел расширения HTTP играет роль прокси-сервера. Он выбирает входящие видеокадры, заданные в поле `samplingOptions`, а также преобразует видеокадры в изображения указанного типа. Затем с использованием REST он передает изображение на другой пограничный модуль, выполняющий модели искусственного интеллекта на конечной точке HTTP. В этом примере этим пограничным модулем является OpenVINO™ Model Server (расширение ИИ от Intel). Узел обработчика расширений HTTP собирает результаты обнаружения и публикует события в узле [приемника Центра Интернета вещей](media-graph-concept.md#iot-hub-message-sink). Затем узел отправляет эти события в [центр IoT Edge](../../iot-fundamentals/iot-glossary.md#iot-edge-hub).
 
 Изучив данный учебник, вы научитесь:
 
@@ -219,7 +219,7 @@ ms.locfileid: "101702221"
 [IoTHubMonitor] [9:42:18 AM] Message received from [lvaedgesample/lvaEdge]:
 {
   "body": {
-    "sdp": "SDP:\nv=0\r\no=- 1586450538111534 1 IN IP4 nnn.nn.0.6\r\ns=Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\ni=media/lots_015.mkv\r\nt=0 0\r\na=tool:LIVE555 Streaming Media v2020.03.06\r\na=type:broadcast\r\na=control:*\r\na=range:npt=0-300.000\r\na=x-qt-text-nam:Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\na=x-qt-text-inf:media/lots_015.mkv\r\nm=video 0 RTP/AVP 96\r\nc=IN IP4 0.0.0.0\r\nb=AS:500\r\na=rtpmap:96 H264/90000\r\na=fmtp:96 packetization-mode=1;profile-level-id=4D0029;sprop-parameter-sets=Z00AKeKQCgC3YC3AQEBpB4kRUA==,aO48gA==\r\na=control:track1\r\n"
+    "sdp&quot;: &quot;SDP:\nv=0\r\no=- 1586450538111534 1 IN IP4 nnn.nn.0.6\r\ns=Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\ni=media/lots_015.mkv\r\nt=0 0\r\na=tool:LIVE555 Streaming Media v2020.03.06\r\na=type:broadcast\r\na=control:*\r\na=range:npt=0-300.000\r\na=x-qt-text-nam:Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\na=x-qt-text-inf:media/lots_015.mkv\r\nm=video 0 RTP/AVP 96\r\nc=IN IP4 0.0.0.0\r\nb=AS:500\r\na=rtpmap:96 H264/90000\r\na=fmtp:96 packetization-mode=1;profile-level-id=4D0029;sprop-parameter-sets=Z00AKeKQCgC3YC3AQEBpB4kRUA==,aO48gA==\r\na=control:track1\r\n"
   },
   "applicationProperties": {
     "dataVersion": "1.0",
@@ -290,7 +290,7 @@ ms.locfileid: "101702221"
     "topic": "/subscriptions/{subscriptionID}/resourceGroups/{name}/providers/microsoft.media/mediaservices/hubname",
     "subject": "/graphInstances/GRAPHINSTANCENAMEHERE/processors/inferenceClient",
     "eventType": "Microsoft.Media.Graph.Analytics.Inference",
-    "eventTime": "2020-07-24T16:43:18.1280000Z"
+    "eventTime&quot;: &quot;2020-07-24T16:43:18.1280000Z"
   }
 }
 ```
@@ -351,7 +351,7 @@ ms.locfileid: "101702221"
     "topic": "/subscriptions/{subscriptionID}/resourceGroups/{name}/providers/microsoft.media/mediaservices/hubname",
     "subject": "/graphInstances/GRAPHINSTANCENAMEHERE/processors/inferenceClient",
     "eventType": "Microsoft.Media.Graph.Analytics.Inference",
-    "eventTime": "2020-07-24T16:44:18.1280000Z"
+    "eventTime&quot;: &quot;2020-07-24T16:44:18.1280000Z"
   }
 }
 ```
@@ -388,7 +388,7 @@ ms.locfileid: "101702221"
     "topic": "/subscriptions/{subscriptionID}/resourceGroups/{name}/providers/microsoft.media/mediaservices/hubname",
     "subject": "/graphInstances/GRAPHINSTANCENAMEHERE/processors/inferenceClient",
     "eventType": "Microsoft.Media.Graph.Analytics.Inference",
-    "eventTime": "2020-07-24T16:54:18.1280000Z"
+    "eventTime&quot;: &quot;2020-07-24T16:54:18.1280000Z"
   }
 }
 ```
