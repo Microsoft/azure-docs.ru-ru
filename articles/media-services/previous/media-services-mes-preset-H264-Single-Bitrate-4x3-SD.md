@@ -1,6 +1,6 @@
 ---
 title: 'Предустановка Media Encoder Standard в Azure: H264 Single Bitrate 4x3 SD | Документация Майкрософт'
-description: В этом разделе приводятся общие сведения о предустановленной задаче H264 Single bitrate с односкоростным **4X3 SD** .
+description: Этот раздел содержит общие сведения о предустановке задачи **H264 Single Bitrate 4x3 SD**.
 author: IngridAtMicrosoft
 manager: femila
 editor: ''
@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 4db9e0a004bc6bf1bb3a2b0511c915f80bbe48bb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103008473"
 ---
 # <a name="h264-single-bitrate-4x3-sd"></a>H264 Single Bitrate 4x3 SD

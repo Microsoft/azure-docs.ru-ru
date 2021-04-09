@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.date: 03/08/2019
 ms.author: troyhop
-ms.openlocfilehash: e0d7310c4863c8dd431b991a2c249f2d8e257aeb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 3376b3714dc41c7d5ce33756671050d19471a757
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96852359"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057717"
 ---
 # <a name="tutorial-create-and-run-an-iot-device-simulation"></a>Руководство по созданию и запуску имитации устройства Интернета вещей
 
