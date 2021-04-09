@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с Brandfolder | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с Brandfolder | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и Brandfolder.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 01/29/2019
 ms.author: jeedes
 ms.openlocfilehash: 5004b433189700bc2fbaf5efe65e4556d40521cb
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97672092"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-brandfolder"></a>Руководство по Интеграция Azure Active Directory с Brandfolder
+# <a name="tutorial-azure-active-directory-integration-with-brandfolder"></a>Руководство. Интеграция Azure Active Directory с Brandfolder
 
 В этом руководстве описано, как интегрировать Brandfolder с Azure Active Directory (Azure AD).
 Интеграция Brandfolder с Azure AD обеспечивает следующие преимущества:

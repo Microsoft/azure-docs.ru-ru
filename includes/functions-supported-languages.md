@@ -6,10 +6,10 @@ ms.date: 11/27/2020
 ms.author: glenga
 ms.custom: include file
 ms.openlocfilehash: 01e62685fa73a7f547ef5246b28fdfdf659e7afa
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102623401"
 ---
 |Язык                                 |1.x         |2.x| 3.x |
