@@ -4,10 +4,10 @@ description: В этом кратком руководстве показано,
 ms.topic: quickstart
 ms.date: 04/27/2020
 ms.openlocfilehash: 135e68e2630d74dace6c3a6b70bb3666f77aad89
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99575540"
 ---
 # <a name="quickstart-detect-motion-record-video-to-media-services"></a>Краткое руководство. Запись видео в Cлужбы мультимедиа при обнаружении движения
@@ -208,7 +208,7 @@ ms.locfileid: "99575540"
   "payload": {
     "systemData": {
       "createdAt": "2020-05-12T22:05:31.603Z",
-      "lastModifiedAt": "2020-05-12T22:05:31.603Z"
+      "lastModifiedAt&quot;: &quot;2020-05-12T22:05:31.603Z"
     },
     "name": "EVRtoAssetsOnMotionDetection",
     "properties": {
@@ -218,30 +218,30 @@ ms.locfileid: "99575540"
           "name": "rtspUserName",
           "type": "String",
           "description": "rtsp source user name.",
-          "default": "dummyUserName"
+          "default&quot;: &quot;dummyUserName"
         },
         {
           "name": "rtspPassword",
           "type": "String",
           "description": "rtsp source password.",
-          "default": "dummyPassword"
+          "default&quot;: &quot;dummyPassword"
         },
         {
           "name": "rtspUrl",
           "type": "String",
-          "description": "rtsp Url"
+          "description&quot;: &quot;rtsp Url"
         },
         {
           "name": "motionSensitivity",
           "type": "String",
           "description": "motion detection sensitivity",
-          "default": "medium"
+          "default&quot;: &quot;medium"
         },
         {
           "name": "hubSinkOutputName",
           "type": "String",
           "description": "hub sink output name",
-          "default": "iothubsinkoutput"
+          "default&quot;: &quot;iothubsinkoutput"
         }
       ],
       "sources": [
@@ -255,7 +255,7 @@ ms.locfileid: "99575540"
             "credentials": {
               "@type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
               "username": "${rtspUserName}",
-              "password": "${rtspPassword}"
+              "password&quot;: &quot;${rtspPassword}"
             }
           }
         }
@@ -336,7 +336,7 @@ ms.locfileid: "99575540"
 
 {
     "@apiVersion" : "2.0",
-    "name" : "EVRtoAssetsOnMotionDetection"
+    "name&quot; : &quot;EVRtoAssetsOnMotionDetection"
 }
 ```
 
@@ -350,7 +350,7 @@ ms.locfileid: "99575540"
   "payload": {
     "systemData": {
       "createdAt": "2020-05-12T22:05:31.603Z",
-      "lastModifiedAt": "2020-05-12T22:05:31.603Z"
+      "lastModifiedAt&quot;: &quot;2020-05-12T22:05:31.603Z"
     },
     "name": "EVRtoAssetsOnMotionDetection",
     "properties": {
@@ -360,30 +360,30 @@ ms.locfileid: "99575540"
           "name": "rtspUserName",
           "type": "String",
           "description": "rtsp source user name.",
-          "default": "dummyUserName"
+          "default&quot;: &quot;dummyUserName"
         },
         {
           "name": "rtspPassword",
           "type": "String",
           "description": "rtsp source password.",
-          "default": "dummyPassword"
+          "default&quot;: &quot;dummyPassword"
         },
         {
           "name": "rtspUrl",
           "type": "String",
-          "description": "rtsp Url"
+          "description&quot;: &quot;rtsp Url"
         },
         {
           "name": "motionSensitivity",
           "type": "String",
           "description": "motion detection sensitivity",
-          "default": "medium"
+          "default&quot;: &quot;medium"
         },
         {
           "name": "hubSinkOutputName",
           "type": "String",
           "description": "hub sink output name",
-          "default": "iothubsinkoutput"
+          "default&quot;: &quot;iothubsinkoutput"
         }
       ],
       "sources": [
@@ -397,7 +397,7 @@ ms.locfileid: "99575540"
             "credentials": {
               "@type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
               "username": "${rtspUserName}",
-              "password": "${rtspPassword}"
+              "password&quot;: &quot;${rtspPassword}"
             }
           }
         }
@@ -505,7 +505,7 @@ ms.locfileid: "99575540"
   "payload": {
     "systemData": {
       "createdAt": "2020-05-12T23:30:20.666Z",
-      "lastModifiedAt": "2020-05-12T23:30:20.666Z"
+      "lastModifiedAt&quot;: &quot;2020-05-12T23:30:20.666Z"
     },
     "name": "Sample-Graph-2",
     "properties": {
@@ -515,7 +515,7 @@ ms.locfileid: "99575540"
       "parameters": [
         {
           "name": "rtspUrl",
-          "value": "rtsp://rtspsim:554/media/lots_015.mkv"
+          "value&quot;: &quot;rtsp://rtspsim:554/media/lots_015.mkv"
         }
       ]
     }
@@ -590,7 +590,7 @@ ms.locfileid: "99575540"
 ```
 {
     "@apiVersion" : "2.0",
-    "name" : "Sample-Graph-2"
+    "name&quot; : &quot;Sample-Graph-2"
 }
 ```
 
@@ -604,7 +604,7 @@ ms.locfileid: "99575540"
   "payload": {
     "systemData": {
       "createdAt": "2020-05-12T23:30:20.666Z",
-      "lastModifiedAt": "2020-05-12T23:30:20.666Z"
+      "lastModifiedAt&quot;: &quot;2020-05-12T23:30:20.666Z"
     },
     "name": "Sample-Graph-2",
     "properties": {
@@ -614,7 +614,7 @@ ms.locfileid: "99575540"
       "parameters": [
         {
           "name": "rtspUrl",
-          "value": "rtsp://rtspsim:554/media/lots_015.mkv"
+          "value&quot;: &quot;rtsp://rtspsim:554/media/lots_015.mkv"
         }
       ]
     }
@@ -635,7 +635,7 @@ ms.locfileid: "99575540"
 [IoTHubMonitor] [4:33:04 PM] Message received from [lva-sample-device/lvaEdge]:
 {
   "body": {
-    "sdp": "SDP:\nv=0\r\no=- 1589326384077235 1 IN IP4 XXX.XX.XX.XXX\r\ns=Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\ni=media/lots_015.mkv\r\nt=0 0\r\na=tool:LIVE555 Streaming Media v2020.04.12\r\na=type:broadcast\r\na=control:*\r\na=range:npt=0-73.000\r\na=x-qt-text-nam:Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\na=x-qt-text-inf:media/lots_015.mkv\r\nm=video 0 RTP/AVP 96\r\nc=IN IP4 0.0.0.0\r\nb=AS:500\r\na=rtpmap:96 H264/90000\r\na=fmtp:96 packetization-mode=1;profile-level-id=640028;sprop-parameter-sets=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r\na=control:track1\r\n"
+    "sdp&quot;: &quot;SDP:\nv=0\r\no=- 1589326384077235 1 IN IP4 XXX.XX.XX.XXX\r\ns=Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\ni=media/lots_015.mkv\r\nt=0 0\r\na=tool:LIVE555 Streaming Media v2020.04.12\r\na=type:broadcast\r\na=control:*\r\na=range:npt=0-73.000\r\na=x-qt-text-nam:Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\na=x-qt-text-inf:media/lots_015.mkv\r\nm=video 0 RTP/AVP 96\r\nc=IN IP4 0.0.0.0\r\nb=AS:500\r\na=rtpmap:96 H264/90000\r\na=fmtp:96 packetization-mode=1;profile-level-id=640028;sprop-parameter-sets=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r\na=control:track1\r\n"
   },
   "applicationProperties": {
     "topic": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.media/mediaservices/{amsAccountName}",
@@ -668,7 +668,7 @@ ms.locfileid: "99575540"
     "subject": "/graphInstances/Sample-Graph-2/processors/md",
     "eventType": "Microsoft.Media.Graph.Analytics.Inference",
     "eventTime": "2020-05-12T23:33:09.381Z",
-    "dataVersion": "1.0"
+    "dataVersion&quot;: &quot;1.0"
   }
 }
 ```
@@ -693,14 +693,14 @@ ms.locfileid: "99575540"
 {
   "body": {
     "outputType": "assetName",
-    "outputLocation": "sampleAssetFromEVR-LVAEdge-20200512T233309Z"
+    "outputLocation&quot;: &quot;sampleAssetFromEVR-LVAEdge-20200512T233309Z"
   },
   "applicationProperties": {
     "topic": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.media/mediaservices/{amsAccountName}",
     "subject": "/graphInstances/Sample-Graph-2/sinks/assetSink",
     "eventType": "Microsoft.Media.Graph.Operational.RecordingStarted",
     "eventTime": "2020-05-12T23:33:10.392Z",
-    "dataVersion": "1.0"
+    "dataVersion&quot;: &quot;1.0"
   }
 }
 ```
@@ -716,14 +716,14 @@ ms.locfileid: "99575540"
 {
   "body": {
     "outputType": "assetName",
-    "outputLocation": "sampleAssetFromEVR-LVAEdge-20200512T233309Z"
+    "outputLocation&quot;: &quot;sampleAssetFromEVR-LVAEdge-20200512T233309Z"
   },
   "applicationProperties": {
     "topic": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.media/mediaservices/{amsAccountName}",
     "subject": "/graphInstances/Sample-Graph-2/sinks/assetSink",
     "eventType": "Microsoft.Media.Graph.Operational.RecordingAvailable",
     "eventTime": "2020-05-12T23:33:31.051Z",
-    "dataVersion": "1.0"
+    "dataVersion&quot;: &quot;1.0"
   }
 }
 ```
@@ -739,14 +739,14 @@ ms.locfileid: "99575540"
 {
   "body": {
     "outputType": "assetName",
-    "outputLocation": "sampleAssetFromEVR-LVAEdge-20200512T233309Z"
+    "outputLocation&quot;: &quot;sampleAssetFromEVR-LVAEdge-20200512T233309Z"
   },
   "applicationProperties": {
     "topic": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.media/mediaservices/{amsAccountName}",
     "subject": "/graphInstances/Sample-Graph-2/sinks/assetSink",
     "eventType": "Microsoft.Media.Graph.Operational.RecordingStopped",
     "eventTime": "2020-05-12T23:33:40.014Z",
-    "dataVersion": "1.0"
+    "dataVersion&quot;: &quot;1.0"
   }
 }
 ```
@@ -797,7 +797,7 @@ ms.locfileid: "99575540"
 ```
 {
     "@apiVersion" : "2.0",
-    "name" : "Sample-Graph-2"
+    "name&quot; : &quot;Sample-Graph-2"
 }
 ```
 
@@ -821,7 +821,7 @@ ms.locfileid: "99575540"
 ```
 {
     "@apiVersion" : "2.0",
-    "name" : "EVRtoAssetsOnMotionDetection"
+    "name&quot; : &quot;EVRtoAssetsOnMotionDetection"
 }
 ```
 
