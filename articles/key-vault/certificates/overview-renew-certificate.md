@@ -10,12 +10,12 @@ ms.subservice: certificates
 ms.topic: overview
 ms.date: 07/20/2020
 ms.author: sebansal
-ms.openlocfilehash: c7948230164258aa785f3dd6c1f487c51ece9333
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: ffa130c0598d2405469d272a3ac6852f281ed965
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102487191"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105726368"
 ---
 # <a name="renew-your-azure-key-vault-certificates"></a>Продление сертификатов Azure Key Vault
 
@@ -29,7 +29,7 @@ ms.locfileid: "102487191"
 Чтобы получать уведомления о событиях, касающихся срока действия сертификата, необходимо добавить контакт сертификата. Контакты сертификатов содержат контактную информацию для отправки уведомлений, активируемых событиями времени существования сертификата. Информация о контактах совместно используется всеми сертификатами в хранилище ключей. Уведомление отправляется всем контактам, указанным для события, связанного с любым сертификатом в хранилище ключей.
 
 ### <a name="steps-to-set-certificate-notifications"></a>Чтобы настроить уведомления о сертификате, сделайте следующее:
-Сначала добавьте в хранилище ключей контакт сертификата. Это можно сделать с помощью портала Azure или командлета PowerShell [`Add-AzureKeyVaultCertificateContact`](/powershell/module/azurerm.keyvault/add-azurekeyvaultcertificatecontact?view=azurermps-6.13.0).
+Сначала добавьте в хранилище ключей контакт сертификата. Это можно сделать с помощью портала Azure или командлета PowerShell [`Add-AzureKeyVaultCertificateContact`](/powershell/module/azurerm.keyvault/add-azurekeyvaultcertificatecontact).
 
 Затем укажите, когда следует отправлять уведомления об истечении срока действия сертификата. Сведения о настройке атрибутов жизненного цикла сертификата см. в разделе, посвященном [настройке автоматической смены сертификата Key Vault](./tutorial-rotate-certificates.md#update-lifecycle-attributes-of-a-stored-certificate).
 
@@ -41,9 +41,9 @@ ms.locfileid: "102487191"
   Если для политики сертификата настроено продление вручную (только по электронной почте), тогда уведомление отправляется, когда пришло время продлить сертификат.  
 
 В Key Vault есть три категории сертификатов:
--   сертификаты, созданные с помощью интегрированного центра сертификации, например DigiCert или GlobalSign;
--   сертификаты, созданные с помощью неинтегрированного центра сертификации;
--   Самозаверяющие сертификаты
+-    сертификаты, созданные с помощью интегрированного центра сертификации, например DigiCert или GlobalSign;
+-    сертификаты, созданные с помощью неинтегрированного центра сертификации;
+-    Самозаверяющие сертификаты
 
 ## <a name="renew-an-integrated-ca-certificate"></a>Продление сертификата интегрированного центра сертификации 
 Azure Key Vault обеспечивает комплексное обслуживание сертификатов, выданных доверенными центрами сертификации Майкрософт DigiCert и GlobalSign. Узнайте, как [интегрировать доверенный центр сертификации с Key Vault](./how-to-integrate-certificate-authority.md).
@@ -89,5 +89,5 @@ Azure Key Vault также обеспечивает автоматическое
 Да, теги реплицируются после автопродления.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-*   [Интеграция Key Vault с центром сертификации DigiCert](how-to-integrate-certificate-authority.md)
-*   [Руководство. Настройка автоматической смены сертификата в Key Vault](tutorial-rotate-certificates.md)
+*    [Интеграция Key Vault с центром сертификации DigiCert](how-to-integrate-certificate-authority.md)
+*    [Руководство. Настройка автоматической смены сертификата в Key Vault](tutorial-rotate-certificates.md)

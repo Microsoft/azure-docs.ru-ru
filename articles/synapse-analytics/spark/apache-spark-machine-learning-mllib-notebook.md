@@ -10,10 +10,10 @@ ms.subservice: machine-learning
 ms.date: 04/15/2020
 ms.author: euang
 ms.openlocfilehash: 5caa41b852bf55a11489db6c0bab871b20720e05
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101670670"
 ---
 # <a name="tutorial-build-a-machine-learning-app-with-apache-spark-mllib-and-azure-synapse-analytics"></a>Руководство по Создание приложения машинного обучения с помощью Apache Spark MLlib и Azure Synapse Analytics

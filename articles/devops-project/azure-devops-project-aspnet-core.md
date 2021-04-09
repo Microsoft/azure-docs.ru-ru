@@ -16,10 +16,10 @@ ms.date: 02/23/2021
 ms.author: mlearned
 ms.custom: devx-track-csharp, mvc
 ms.openlocfilehash: 75531b9a75c2d28ad665748a9be4e37e2056b451
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102547974"
 ---
 # <a name="create-a-cicd-pipeline-for-net-with-azure-devops-starter"></a>Создание конвейера CI/CD для приложения .NET в службе Azure DevOps Starter

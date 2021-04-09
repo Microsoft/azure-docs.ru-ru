@@ -5,16 +5,16 @@ author: avirishuv
 ms.author: avverma
 ms.topic: conceptual
 ms.service: virtual-machine-scale-sets
-ms.subservice: availability
+ms.subservice: instance-protection
 ms.date: 02/26/2020
 ms.reviewer: jushiman
 ms.custom: avverma
-ms.openlocfilehash: 8c4944da8ffcaa75e6448483918a29809c32830b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.openlocfilehash: 8b331eaf52a0a97232d481dccfff932221cd5faa
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92746802"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933463"
 ---
 # <a name="instance-protection-for-azure-virtual-machine-scale-set-instances"></a>Защита экземпляров для экземпляров масштабируемых наборов виртуальных машин Azure
 

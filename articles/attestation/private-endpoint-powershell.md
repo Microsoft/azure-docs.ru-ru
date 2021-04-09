@@ -5,14 +5,14 @@ services: attestation
 author: msmbaldwin
 ms.service: attestation
 ms.topic: overview
-ms.date: 08/31/2020
+ms.date: 03/26/2021
 ms.author: mbaldwin
-ms.openlocfilehash: 92080f119567d185ca6a5bccf0e89d8d10213f3b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8ff2e73a8557c6b1761c852ac58a46037a122ddb
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101732315"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105628532"
 ---
 # <a name="quickstart-create-a-private-endpoint-using-azure-powershell"></a>Краткое руководство. Создание частной конечной точки с помощью Azure PowerShell
 
@@ -21,7 +21,7 @@ ms.locfileid: "101732315"
 Из этого краткого руководства вы узнаете, как создать частную конечную точку для Аттестации Azure и развернуть виртуальную машину для тестирования частного подключения.  
 
 > [!NOTE]
-> Текущая реализация включает только параметр автоматического утверждения. Чтобы продолжить создание частной конечной точки, подписка должна быть указана в списке разрешений. Прежде чем продолжить, обратитесь к группе обслуживания или отправьте запрос на поддержку Azure на [странице поддержки Azure](https://azure.microsoft.com/support/options/).
+> Текущая реализация включает только параметр автоматического утверждения. Чтобы продолжить создание частной конечной точки, нужно добавить подписку в список разрешений. Прежде чем продолжить, обратитесь к группе обслуживания или отправьте запрос на поддержку Azure на [странице поддержки Azure](https://azure.microsoft.com/support/options/).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

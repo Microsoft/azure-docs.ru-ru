@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.date: 03/31/2020
 ms.openlocfilehash: 97a8dd2476642e693b589b4046f612c5569b9c0b
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104865134"
 ---
 # <a name="install-and-use-hue-on-hdinsight-hadoop-clusters"></a>Установка и использование Hue на кластерах HDInsight Hadoop
