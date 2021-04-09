@@ -6,10 +6,10 @@ ms.author: gwallace
 ms.date: 10/1/2018
 ms.topic: overview
 ms.openlocfilehash: 64880a9ac3d6d48ce6d39d0b3a7a3aff6587f328
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99626983"
 ---
 # <a name="what-is-service-fabric-mesh"></a>Что такое Сетка Service Fabric?

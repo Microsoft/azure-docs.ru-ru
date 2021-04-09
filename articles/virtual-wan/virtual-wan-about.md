@@ -7,13 +7,12 @@ ms.service: virtual-wan
 ms.topic: overview
 ms.date: 09/22/2020
 ms.author: cherylmc
-Customer intent: As someone with a networking background, I want to understand what Virtual WAN is and if it is the right choice for my Azure network.
-ms.openlocfilehash: 641ed73f507d35d7af548d0164ef8e80979be217
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 7f8bc4cadc720c7ac02a7246e741552e81eb3876
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96530482"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057156"
 ---
 # <a name="what-is-azure-virtual-wan"></a>Что такое Виртуальная глобальная сеть Azure?
 

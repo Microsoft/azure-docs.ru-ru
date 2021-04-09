@@ -13,10 +13,10 @@ ms.author: ferno
 ms.reviewer: mathoma
 ms.date: 04/28/2020
 ms.openlocfilehash: 47ea5ea73c581313f90791ca6d7892ebad3f666b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101690691"
 ---
 # <a name="tutorial-configure-replication-between-two-managed-instances"></a>Руководство по Настройка репликации между двумя управляемыми экземплярами

@@ -13,10 +13,10 @@ ms.custom:
 - mqtt
 - devx-track-java
 ms.openlocfilehash: 3f24f38db7704557894d866b789890763f9e1316
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103463261"
 ---
 # <a name="tutorial-develop-a-java-iot-edge-module-using-linux-containers"></a>Учебник. Разработка модуля IoT Edge на Java с использованием контейнеров Linux

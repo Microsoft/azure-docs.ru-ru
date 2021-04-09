@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.service: iot-pnp
 services: iot-pnp
 zone_pivot_groups: programming-languages-set-twenty-six
-ms.openlocfilehash: 1b3df832dc857602959d0d47afcdf0745cd0bca0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 590a6d48d12555d0a857e60352c0e0d6f367c04a
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99831966"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057343"
 ---
 # <a name="quickstart-connect-a-sample-iot-plug-and-play-device-application-running-on-linux-or-windows-to-iot-hub"></a>Краткое руководство. Подключение примера приложения устройства IoT Plug and Play в Linux или Windows к Центру Интернета вещей
 
