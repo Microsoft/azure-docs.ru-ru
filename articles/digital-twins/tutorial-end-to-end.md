@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 4/15/2020
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: aec60218774f3f8e293a5e5ab8c03707d117c2a0
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: b7883d6c541558e26793f94e37014a20b14d761e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102634980"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577263"
 ---
 # <a name="tutorial-build-out-an-end-to-end-solution"></a>Руководство по Создание комплексного решения
 
@@ -121,35 +121,51 @@ Query
 
 [!INCLUDE [digital-twins-publish-azure-function.md](../../includes/digital-twins-publish-azure-function.md)]
 
-Чтобы ваше приложение-функция могло получить доступ к Azure Digital Twins, оно должно иметь управляемое системой удостоверение и разрешения на доступ к вашему экземпляру Azure Digital Twins. Вы настроите их далее.
+Чтобы ваше приложение-функция могло получить доступ к Azure Digital Twins, оно должно иметь разрешения на доступ к вашему экземпляру Azure Digital Twins и имени узла экземпляра. Вы научитесь настраивать их далее.
 
-### <a name="assign-permissions-to-the-function-app"></a>Назначение разрешений для приложения-функции
+### <a name="configure-permissions-for-the-function-app"></a>Настройка разрешений для приложения-функции
 
-Чтобы разрешить приложению-функции доступ к Azure Digital Twins, необходимо настроить параметр приложения, назначить приложению управляемое системой удостоверение Azure AD и предоставить этому удостоверению роль *владельца данных Azure Digital Twins* в экземпляре Azure Digital Twins. Эта роль необходима для любого пользователя или функции, которым потребуется выполнять множество действий на плоскости данных в экземпляре. Дополнительные сведения о назначениях ролей и безопасности см. в статье [*Основные понятия. Безопасность для решений Azure Digital Twins*](concepts-security.md).
+Чтобы приложение-функция имело доступ к своему экземпляру Azure Digital Twins, необходимо задать два параметра. Это можно сделать с помощью команд в [Azure Cloud Shell](https://shell.azure.com). 
 
-В Azure Cloud Shell установите параметр приложения, который будет использоваться вашим приложением-функцией для обращения к экземпляру Azure Digital Twins, с помощью следующей команды. Вместо заполнителей укажите сведения о своих ресурсах. Помните, что URL-адрес экземпляра Azure Digital Twins — это имя узла, которому предшествует *https://* .
+#### <a name="assign-access-role"></a>Назначение роли доступа
+
+Первый параметр предоставляет приложению-функции роль **Владельца данных Azure Digital Twins** в экземпляре Azure Digital Twins. Эта роль необходима для любого пользователя или функции, которым потребуется выполнять множество действий на плоскости данных в экземпляре. Дополнительные сведения о назначениях ролей и безопасности см. в статье [*Основные понятия. Безопасность для решений Azure Digital Twins*](concepts-security.md). 
+
+1. Используйте следующую команду, чтобы просмотреть сведения об управляемом системой удостоверении для функции. Запишите значение поля **principalId** в выходных данных команды.
+
+    ```azurecli-interactive 
+    az functionapp identity show -g <your-resource-group> -n <your-App-Service-(function-app)-name> 
+    ```
+
+    >[!NOTE]
+    > Если сведения об удостоверении не отображаются, то есть список результатов пуст, создайте новое управляемое системой удостоверение для функции с помощью следующей команды:
+    > 
+    >```azurecli-interactive    
+    >az functionapp identity assign -g <your-resource-group> -n <your-App-Service-(function-app)-name>  
+    >```
+    >
+    > В выходных данных отобразятся сведения об удостоверении, включая значение **principalId**, необходимое для следующего шага. 
+
+1. Используйте значение **principalId** в следующей команде, чтобы назначить удостоверение приложения-функции роли **владельца Azure Digital Twins** для вашего экземпляра Azure Digital Twins.
+
+    ```azurecli-interactive 
+    az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --assignee "<principal-ID>" --role "Azure Digital Twins Data Owner"
+    ```
+
+В выходных данных этой команды содержатся сведения о созданном назначении роли. Теперь приложение-функция имеет права доступа к вашему экземпляру Azure Digital Twins.
+
+#### <a name="configure-application-settings"></a>Настройка параметров приложения
+
+Второй параметр создает **переменную среды** для функции с URL-адресом экземпляра Azure Digital Twins. Код функции будет использовать его, чтобы ссылаться на ваш экземпляр. Дополнительные сведения о переменных среды см. в статье об [*управлении приложением-функцией*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal). 
+
+Выполните приведенную ниже команду, заменив заполнители сведениями о ресурсах.
 
 ```azurecli-interactive
-az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "ADT_SERVICE_URL=<your-Azure-Digital-Twins-instance-URL>"
+az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "ADT_SERVICE_URL=https://<your-Azure-Digital-Twins-instance-hostname>"
 ```
 
 В выходных данных будет представлен список параметров функции Azure, в котором теперь должна присутствовать запись **ADT_SERVICE_URL**.
 
-С помощью следующей команды создайте управляемое системой удостоверение. Найдите поле **principalId** в выходных данных.
-
-```azurecli-interactive
-az functionapp identity assign -g <your-resource-group> -n <your-App-Service-(function-app)-name>
-```
-
-Используйте значение **principalId** из выходных данных в следующей команде, чтобы назначить удостоверению приложения-функции роль *владельца данных Azure Digital Twins* для своего экземпляра Azure Digital Twins.
-
-[!INCLUDE [digital-twins-permissions-required.md](../../includes/digital-twins-permissions-required.md)]
-
-```azurecli-interactive
-az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --assignee "<principal-ID>" --role "Azure Digital Twins Data Owner"
-```
-
-В выходных данных этой команды содержатся сведения о созданном назначении роли. Теперь приложение-функция имеет разрешения на доступ к вашему экземпляру Azure Digital Twins.
 
 ## <a name="process-simulated-telemetry-from-an-iot-hub-device"></a>Обработка имитированных данных телеметрии с устройства Центра Интернета вещей
 

@@ -1,5 +1,5 @@
 ---
-title: Руководство по Интеграция Azure Active Directory с ARES for Enterprise | Документация Майкрософт
+title: Руководство. Интеграция Azure Active Directory с ARES for Enterprise | Документация Майкрософт
 description: Узнайте, как настроить единый вход между Azure Active Directory и ARES for Enterprise.
 services: active-directory
 author: jeevansd
@@ -12,13 +12,13 @@ ms.topic: tutorial
 ms.date: 01/16/2019
 ms.author: jeedes
 ms.openlocfilehash: 7cd8faece0d737e97f1c5809f27840f1d9192548
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97673443"
 ---
-# <a name="tutorial-azure-active-directory-integration-with-ares-for-enterprise"></a>Руководство по Интеграция Azure Active Directory с ARES for Enterprise
+# <a name="tutorial-azure-active-directory-integration-with-ares-for-enterprise"></a>Руководство. Интеграция Azure Active Directory с ARES for Enterprise
 
 В этом руководстве описано, как интегрировать ARES for Enterprise с Azure Active Directory (Azure AD).
 Интеграция ARES for Enterprise с Azure AD обеспечивает следующие преимущества.
