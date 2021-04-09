@@ -7,10 +7,10 @@ ms.date: 01/11/2019
 ms.author: gwallace
 ms.custom: mvc, devcenter
 ms.openlocfilehash: d449343fd00ff958470a71ecb3a37d585d7ff8ed
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99626616"
 ---
 # <a name="tutorial-remove-an-application-and-resources"></a>Руководство. Удаление приложения и ресурсов

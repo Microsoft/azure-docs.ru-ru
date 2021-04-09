@@ -10,12 +10,12 @@ ms.subservice: text-analytics
 ms.topic: tutorial
 ms.date: 02/09/2021
 ms.author: aahi
-ms.openlocfilehash: 8444ae08aa2c25c20723b2f8c571422af3b24bc8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 47feddb88fd7ddae1f8be54709019b4c339d177d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736684"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599176"
 ---
 # <a name="tutorial-integrate-power-bi-with-the-text-analytics-cognitive-service"></a>Руководство по Интеграция Power BI с Анализом текста в Cognitive Services
 
@@ -190,7 +190,7 @@ Power BI Desktop требуется несколько секунд, чтобы 
 > [!NOTE]
 > Зачем использовать извлеченные ключевые фразы вместо текста всего комментария? Ключевые фразы содержат *важные* слова из комментариев пользователей, а не только *самые распространенные*. Кроме того, размер слова в полученном облаке не изменяется в соответствии с частотой его использования в относительно небольшом числе комментариев.
 
-Если у вас нет настраиваемого визуального элемента облака Word, установите его. На панели "Визуализации" справа щелкните многоточие ( **...** ) и выберите **Import From Store** (Импорт из Store). Введите "облако" в строке поиска и нажмите кнопку **Добавить** рядом с облаком Word. Power BI установит визуальный элемент облака слов и сообщит об этом.
+Если у вас нет настраиваемого визуального элемента облака Word, установите его. На панели "Визуализации" справа щелкните многоточие ( **...** ) и выберите **Import From Market** (Импорт из Market). Если слово "облако" не отображается в названиях отображаемых средств визуализации в списке, используйте слово "облако" для поиска и нажмите кнопку **Добавить** рядом с визуальным элементом "Облако слов". Power BI установит визуальный элемент облака слов и сообщит об этом.
 
 ![[Добавление настраиваемого визуального элемента]](../media/tutorials/power-bi/add-custom-visuals.png)<br><br>
 
@@ -200,7 +200,7 @@ Power BI Desktop требуется несколько секунд, чтобы 
 
 В рабочей области появится новый отчет. Перетащите поле `keyphrases` с панели "Поля" в поле "Категория" на панели "Визуализации". Облако Word появится внутри отчета.
 
-Перейдите на страницу "Формат" на панели "Визуализации". В категории "Исключения" включите **Стоп-слова по умолчанию**, чтобы не добавлять в облако короткие распространенные слова, например "of". 
+Перейдите на страницу "Формат" на панели "Визуализации". В категории "Исключения" включите **Стоп-слова по умолчанию**, чтобы не добавлять в облако короткие распространенные слова, например "of". Но так как мы будем визуализировать ключевые фразы, они могут не содержать стоп-слова.
 
 ![[Активация стоп-слов по умолчанию]](../media/tutorials/power-bi/default-stop-words.png)
 
@@ -232,8 +232,7 @@ Power BI Desktop требуется несколько секунд, чтобы 
     headers     = [#"Ocp-Apim-Subscription-Key" = apikey],
     bytesresp   = Web.Contents(endpoint, [Headers=headers, Content=bytesbody]),
     jsonresp    = Json.Document(bytesresp),
-    sentiment   = jsonresp[documents]{0}[confidenceScores]
-in  sentiment
+    sentiment   = jsonresp[documents]{0}[detectedLanguage][confidenceScore] in  sentiment
 ```
 
 Ниже приведены две версии функции распознавания языка. Первая версия возвращает код языка ISO (например, `en` для английского), а вторая — его более привычное название (например, `English`). Обе версии отличаются лишь последней строкой.
@@ -249,8 +248,7 @@ in  sentiment
     headers     = [#"Ocp-Apim-Subscription-Key" = apikey],
     bytesresp   = Web.Contents(endpoint, [Headers=headers, Content=bytesbody]),
     jsonresp    = Json.Document(bytesresp),
-    language    = jsonresp[documents]{0}[detectedLanguages]{0}[iso6391Name]
-in  language
+    language    = jsonresp [documents]{0}[detectedLanguage] [iso6391Name] in language 
 ```
 ```fsharp
 // Returns the name (for example, 'English') of the language in which the text is written
@@ -263,8 +261,7 @@ in  language
     headers     = [#"Ocp-Apim-Subscription-Key" = apikey],
     bytesresp   = Web.Contents(endpoint, [Headers=headers, Content=bytesbody]),
     jsonresp    = Json.Document(bytesresp),
-    language    = jsonresp[documents]{0}[detectedLanguages]{0}[name]
-in  language
+    language    jsonresp [documents]{0}[detectedLanguage] [iso6391Name] in language 
 ```
 
 Ниже представлен вариант функции ключевых фраз, который возвращает фразы в виде списка, а не отдельной строки с разделителями-запятыми. 

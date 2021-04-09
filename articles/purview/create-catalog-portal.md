@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: quickstart
 ms.date: 10/23/2020
 ms.openlocfilehash: 0346b467bc299b4eb6125df04a4449e94c035e47
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101666464"
 ---
 # <a name="quickstart-create-an-azure-purview-account-in-the-azure-portal"></a>Краткое руководство. Создание учетной записи Azure Purview на портале Azure

@@ -7,12 +7,12 @@ ms.author: sumuth
 ms.topic: tutorial
 ms.date: 12/10/2020
 ms.custom: mvc
-ms.openlocfilehash: 6e8effee91eed73193319238c2ad2f6eaf6d0473
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 71066fc2e2f87405455a059fe23c20277c4b09fb
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102211283"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105726385"
 ---
 # <a name="tutorial-deploy-django-app-on-aks-with-azure-database-for-postgresql---flexible-server"></a>Руководство по развертыванию приложения Django в AKS с гибким сервером Базы данных Azure для PostgreSQL
 
@@ -133,9 +133,9 @@ az postgres flexible-server create --public-access <YOUR-IP-ADDRESS>
     └───models.py
     └───forms.py
     ├───templates
-        . . . . . . .
+          . . . . . . .
     ├───static
-        . . . . . . .
+         . . . . . . .
 └───my-django-project
     └───settings.py
     └───urls.py
@@ -378,7 +378,7 @@ Quit the server with CONTROL-C.
 
 ## <a name="clean-up-the-resources"></a>очищать ресурсы.
 
-Чтобы избежать расходов за использование Azure, необходимо удалить ненужные ресурсы.  Чтобы удалить ненужные кластер, группу ресурсов, службу контейнеров и все связанные с ней ресурсы, выполните команду [az group delete](/cli/azure/group&preserve-view=true#az_group_delete).
+Чтобы избежать расходов за использование Azure, необходимо удалить ненужные ресурсы.  Чтобы удалить ненужные кластер, группу ресурсов, службу контейнеров и все связанные с ней ресурсы, выполните команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive
 az group delete --name django-project --yes --no-wait

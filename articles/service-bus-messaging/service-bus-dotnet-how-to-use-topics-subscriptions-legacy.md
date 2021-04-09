@@ -6,10 +6,10 @@ ms.tgt_pltfrm: dotnet
 ms.date: 09/02/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 28e94cdb0df0a18b41f4c8a0ded362b50df6dcac
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100652978"
 ---
 # <a name="get-started-with-service-bus-topics"></a>Начало работы с разделами служебной шины

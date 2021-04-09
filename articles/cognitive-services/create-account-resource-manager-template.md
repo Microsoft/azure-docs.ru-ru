@@ -7,15 +7,15 @@ author: aahill
 manager: nitinme
 ms.service: cognitive-services
 ms.topic: quickstart
-ms.date: 09/14/2020
+ms.date: 3/22/2021
 ms.author: aahi
 ms.custom: subject-armqs, devx-track-azurecli
-ms.openlocfilehash: 856fd86b08dfe74925e682661df0d20692839bd5
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 161c5779926acad8814ec057f24e36f371738483
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98928646"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864369"
 ---
 # <a name="quickstart-create-a-cognitive-services-resource-using-an-arm-template"></a>Краткое руководство. Создание ресурса Cognitive Services с помощью шаблона ARM
 
@@ -137,9 +137,10 @@ az group delete --name $resourceGroupName
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="see-also"></a>См. также статью
 
-* [Проверка подлинности запросов к Azure Cognitive Services](authentication.md)
-* [Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)
-* [Поддержка естественного языка в Azure Cognitive Services](language-support.md)
-* [Поддержка контейнеров в Azure Cognitive Services](cognitive-services-container-support.md)
+* Сведения о безопасной работе с Cognitive Services см. в статье **[Проверка подлинности запросов к Azure Cognitive Services](authentication.md)** .
+* См. статью **[Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)** , в которой можно увидеть список различных категорий в Cognitive Services.
+* Список естественных языков, поддерживаемых Cognitive Services, см. в статье **[Поддержка естественного языка](language-support.md)** .
+* Сведения об использовании Cognitive Services в локальной среде см. в статье **[Использование Cognitive Services в качестве контейнеров](cognitive-services-container-support.md)** .
+* См. статью **[Планирование затрат и управление ими в Cognitive Services](plan-manage-costs.md)** , чтобы получить сведения о том, как оценивать затраты на использование Cognitive Services.

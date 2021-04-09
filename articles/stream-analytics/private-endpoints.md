@@ -8,10 +8,10 @@ ms.topic: overview
 ms.custom: mvc
 ms.date: 09/22/2020
 ms.openlocfilehash: 9939130782594c03a497d98ce6cd9b33b28eadec
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101718409"
 ---
 # <a name="create-and-delete-managed-private-endpoints-in-an-azure-stream-analytics-cluster"></a>Создание и удаление управляемых частных конечных точек в кластере Azure Stream Analytics

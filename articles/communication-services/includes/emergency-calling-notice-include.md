@@ -2,15 +2,15 @@
 author: boris-bazilevskiy
 ms.service: azure-communication-services
 ms.topic: include
-ms.date: 9/29/2020
+ms.date: 03/10/2021
 ms.author: bobazile
 ms.custom: emergency_calling
-ms.openlocfilehash: 7487e92d8943e8829224ac2690d658c1ed184039
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: c00e297860400a0921867940e39e822b9c8ecf87
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102487491"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "104598839"
 ---
 > [!IMPORTANT]
 > **Службы коммуникации Azure не поддерживают вызовы экстренной помощи**
