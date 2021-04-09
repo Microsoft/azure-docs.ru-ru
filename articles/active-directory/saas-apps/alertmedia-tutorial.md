@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 04/17/2020
 ms.author: jeedes
 ms.openlocfilehash: e876c819ea797eb75ca8b2365fba83d416ff6168
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92318889"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-alertmedia"></a>Руководство по интеграции единого входа Azure Active Directory с AlertMedia

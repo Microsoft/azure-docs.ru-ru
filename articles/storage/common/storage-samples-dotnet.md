@@ -8,10 +8,10 @@ ms.service: storage
 ms.subservice: common
 ms.topic: sample
 ms.openlocfilehash: 760fedd94ef682b183eede1215186de973e9a216
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92359787"
 ---
 # <a name="azure-storage-samples-using-v12-net-client-libraries"></a>Примеры использования службы хранилища Azure с помощью клиентских библиотек для .NET версии 12

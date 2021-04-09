@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 05/13/2020
 ms.author: mjbrown
 ms.openlocfilehash: 8acf01c242f7ecc50116976d73766356d74fdd23
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98679295"
 ---
 # <a name="create-a-table-for-azure-cosmos-db---table-api"></a>Создание таблицы для Azure Cosmos DB — API таблиц
