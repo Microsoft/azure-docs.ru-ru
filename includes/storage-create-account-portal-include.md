@@ -9,10 +9,10 @@ ms.date: 01/11/2021
 ms.author: tamram
 ms.custom: include file
 ms.openlocfilehash: 3da4fd26b3f985e034ca60039c09412e8237e965
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "98109401"
 ---
 Чтобы создать учетную запись хранения общего назначения версии 2 на портале Azure, сделайте следующее:

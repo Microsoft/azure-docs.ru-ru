@@ -7,10 +7,10 @@ ms.date: 06/11/2019
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 66617afee11b02eae0ba5e36d9ff91cbdf21911f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "95023111"
 ---
 # <a name="tutorial-set-up-service-alerts"></a>Руководство по Настройка оповещений служб

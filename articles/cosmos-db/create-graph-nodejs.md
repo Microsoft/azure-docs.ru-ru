@@ -10,10 +10,10 @@ ms.date: 06/05/2019
 ms.author: chrande
 ms.custom: devx-track-js
 ms.openlocfilehash: 0b88456bd245f79c38d7829dca76de702f768c06
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93360145"
 ---
 # <a name="quickstart-build-a-nodejs-application-by-using-azure-cosmos-db-gremlin-api-account"></a>Краткое руководство. Создание приложения Node.js с помощью учетной записи API Gremlin для Azure Cosmos DB

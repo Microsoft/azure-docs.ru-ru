@@ -9,10 +9,10 @@ ms.date: 07/27/2020
 ms.author: raynew
 ms.custom: MVC
 ms.openlocfilehash: 6cc0855d3a4540de780a566a4613b4dbc647cfc5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92369494"
 ---
 # <a name="migrate-servers-running-windows-server-2008-to-azure"></a>Перенос серверов под управлением Windows Server 2008 в Azure

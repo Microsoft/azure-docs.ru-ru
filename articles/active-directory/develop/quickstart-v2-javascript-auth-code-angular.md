@@ -13,10 +13,10 @@ ms.date: 01/14/2021
 ms.author: jamesmantu
 ms.custom: aaddev, scenarios:getting-started, languages:JavaScript, devx-track-js
 ms.openlocfilehash: 1d5fc097be188c820f9be15594f4bb382754b849
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103224934"
 ---
 # <a name="quickstart-sign-in-and-get-an-access-token-in-an-angular-spa-using-the-auth-code-flow"></a>Краткое руководство. Вход и получение маркера доступа в одностраничное приложение Angular с помощью потока кода авторизации

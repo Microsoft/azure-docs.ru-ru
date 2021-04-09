@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/19/2019
 ms.author: jeedes
 ms.openlocfilehash: a84d4d71e5190c455441d1e627381be86ef5e129
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97608533"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-peakon"></a>Руководство. Интеграция Azure Active Directory с Peakon
@@ -161,7 +161,7 @@ ms.locfileid: "97608533"
 
     д) Щелкните **значок**, чтобы скопировать значение **Reply URL (ACS)** (URL-адрес ответа (ACS)), и вставьте его в текстовое поле **URL-адрес ответа** в разделе **Базовая конфигурация SAML** на портале Azure.
 
-    е) Щелкните **Сохранить**.
+    е) Нажмите кнопку **Сохранить**
 
 ### <a name="create-an-azure-ad-test-user"></a>Создание тестового пользователя Azure AD 
 

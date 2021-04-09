@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 01/05/2019
 ms.author: chrande
 ms.openlocfilehash: dfb7b530ce7d907407eef987b5df8af245c90950
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93360842"
 ---
 # <a name="quickstart-create-a-graph-database-in-azure-cosmos-db-using-php-and-the-azure-portal"></a>Краткое руководство. Создание графовой базы данных в Azure Cosmos DB с помощью PHP и портала Azure

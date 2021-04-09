@@ -9,10 +9,10 @@ ms.subservice: hyperscale-citus
 ms.topic: overview
 ms.date: 09/01/2020
 ms.openlocfilehash: 1734128384d63749d3c777cf6315278fced9d140
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "95025146"
 ---
 # <a name="what-is-azure-database-for-postgresql---hyperscale-citus"></a>Что собой представляет База данных Azure для PostgreSQL с Гипермасштабированием (Citus)?
