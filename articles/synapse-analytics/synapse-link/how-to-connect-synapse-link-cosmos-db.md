@@ -11,10 +11,10 @@ ms.author: rosouz
 ms.reviewer: jrasnick
 ms.custom: cosmos-db
 ms.openlocfilehash: 9a73ea697a48a5b2514f4701b8a24896e9a04c1f
-ms.sourcegitcommit: a9ce1da049c019c86063acf442bb13f5a0dde213
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105627699"
 ---
 # <a name="connect-to-azure-synapse-link-for-azure-cosmos-db"></a>Подключение к Azure Synapse Link для Azure Cosmos DB

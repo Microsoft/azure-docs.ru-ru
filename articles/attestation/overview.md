@@ -9,10 +9,10 @@ ms.date: 08/31/2020
 ms.author: mbaldwin
 ms.custom: references_regions
 ms.openlocfilehash: 020ba74948a062d23d61272ee912eb3364180f1e
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102618004"
 ---
 # <a name="microsoft-azure-attestation"></a>Аттестация Microsoft Azure 

@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 03/03/2021
 ms.author: duau
 ms.openlocfilehash: f76c48af4f5ebc8013daad457f9973cf7792c7c6
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102548004"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-the-azure-portal"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью портала Azure

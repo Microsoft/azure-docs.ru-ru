@@ -13,10 +13,10 @@ ms.topic: tutorial
 ms.date: 01/19/2021
 ms.author: zhchia
 ms.openlocfilehash: 6b1894d832c3a74916418aa06885c2917267f4b1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101652595"
 ---
 # <a name="tutorial-configure-templafy-openid-connect-for-automatic-user-provisioning"></a>Руководство по настройке Templafy OpenID Connect для автоматической подготовки пользователей

@@ -10,10 +10,10 @@ ms.date: 05/07/2020
 ms.author: jrasnick
 ms.reviewer: jrasnick
 ms.openlocfilehash: 78e4b35feb4e830a9f4335614a55d49ca90cd791
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101667638"
 ---
 # <a name="use-external-tables-with-synapse-sql"></a>Использование внешних таблиц в Synapse SQL

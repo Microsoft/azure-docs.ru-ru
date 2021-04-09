@@ -10,10 +10,10 @@ ms.date: 05/15/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.openlocfilehash: f94134b2a06155b1b1f390175578e501a840038b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101669419"
 ---
 # <a name="self-help-for-serverless-sql-pool"></a>Самопомощь при использовании бессерверного пула SQL

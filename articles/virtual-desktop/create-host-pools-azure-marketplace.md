@@ -8,10 +8,10 @@ ms.date: 03/10/2021
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 60566b95447c1b69fb257435f45a11524ac5d8b2
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102617360"
 ---
 # <a name="tutorial-create-a-host-pool-with-the-azure-portal"></a>Руководство по Создание пула узлов на портале Azure

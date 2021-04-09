@@ -14,12 +14,12 @@ ms.author: curtand
 ms.reviewer: krbain
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6013d14d7639bf4f7fe318c9a2da96e4d8acbcb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 11eec374d9f465dc68fc0d17fafc9bd3aa93b27e
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96546290"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106056935"
 ---
 # <a name="quickstart-naming-policy-for-groups-in-azure-active-directory"></a>Краткое руководство. Политика именования для групп в Azure Active Directory
 

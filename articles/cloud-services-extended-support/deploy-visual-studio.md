@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 10/5/2020
 ms.author: ghogen
 ms.openlocfilehash: 80aa160c53b278137467dba2afa41384c7c4f378
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101722676"
 ---
 # <a name="create-and-deploy-a-azure-cloud-service-extended-support-using-visual-studio"></a>Создание и развертывание облачной службы Azure (расширенная поддержка) с помощью Visual Studio

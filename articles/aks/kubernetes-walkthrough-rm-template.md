@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.date: 03/15/2021
 ms.custom: mvc,subject-armqs, devx-track-azurecli
 ms.openlocfilehash: e88c56f050f2f6d1183eef23a844f5eaf1f671c2
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103492971"
 ---
 # <a name="quickstart-deploy-an-azure-kubernetes-service-aks-cluster-using-an-arm-template"></a>Краткое руководство. Развертывание кластера Службы Azure Kubernetes (AKS) с помощью шаблона ARM
@@ -86,7 +86,7 @@ ms.locfileid: "103492971"
 
 ### <a name="connect-to-the-cluster"></a>Подключение к кластеру
 
-Кластером Kubernetes можно управлять при помощи [kubectl][kubectl], клиента командной строки Kubernetes. Если вы используете Azure Cloud Shell, `kubectl` уже установлен. 
+Кластером Kubernetes можно управлять при помощи [kubectl][kubectl] клиента командной строки Kubernetes. Если вы используете Azure Cloud Shell, `kubectl` уже установлен. 
 
 1. Чтобы установить `kubectl` локально, выполните команду [az aks install-cli][az-aks-install-cli]:
 
@@ -123,7 +123,7 @@ ms.locfileid: "103492971"
 * пример приложения Azure для голосования на языке Python;
 * экземпляр Redis. 
 
-Также создаются две [службы Kubernetes][kubernetes-service]:
+Кроме того, создаются две [Службы Kubernetes][kubernetes-service]:
 * внутренняя служба для экземпляра Redis;
 * внешняя служба для доступа к приложению Azure для голосования из Интернета.
 
@@ -225,7 +225,7 @@ ms.locfileid: "103492971"
     kubectl apply -f azure-vote.yaml
     ```
 
-    Выходные данные подтверждают успешное создание развертываний и служб:
+    В выходных данных показаны успешно созданные развертывания и службы:
 
     ```output
     deployment "azure-vote-back" created
@@ -276,11 +276,11 @@ az group delete --name myResourceGroup --yes --no-wait
 
 ## <a name="get-the-code"></a>Получение кода
 
-В этом кратком руководстве для создания развертывания Kubernetes вы применили предварительно созданные образы контейнеров. Вы можете получить код приложений, файл Dockerfile и файл манифеста Kubernetes для этих образов [на сайте GitHub][azure-vote-app].
+В этом кратком руководстве для создания развертывания Kubernetes вы применили предварительно созданные образы контейнеров. Вы можете получить код приложений, файл Dockerfile и файл манифеста Kubernetes для этих образов [на сайте GitHub.][azure-vote-app]
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-С помощью этого краткого руководства вы развернули кластер Kubernetes и многоконтейнерное приложение в нем. Узнайте, как [открыть веб-панель мониторинга Kubernetes][kubernetes-dashboard] для кластера AKS.
+С помощью этого краткого руководства вы развернули кластер Kubernetes, а затем многоконтейнерное приложение в нем. Узнайте, как [открыть веб-панель мониторинга Kubernetes][kubernetes-dashboard] для кластера AKS.
 
 Дополнительные сведения о AKS и инструкции по созданию полного кода для примера развертывания см. в руководстве по кластерам Kubernetes.
 

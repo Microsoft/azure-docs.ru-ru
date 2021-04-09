@@ -14,10 +14,10 @@ ms.date: 07/09/2018
 ms.author: mlearned
 ms.custom: mvc
 ms.openlocfilehash: 6d6181686eaeb90d4fcdae0231430623b84e2c1c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102548518"
 ---
 # <a name="create-a-cicd-pipeline-for-go-using-azure-devops-starter"></a>Создание конвейера CI/CD для Go с помощью Azure DevOps Starter
