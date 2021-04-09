@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 01/24/2021
 ms.author: allensu
 ms.openlocfilehash: 366be37135808a6d3d5cc1a277e2de3e3d6da8ae
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102566411"
 ---
 # <a name="quickstart-create-a-private-link-service-using-azure-powershell"></a>Краткое руководство. Создание службы Приватного канала с помощью Azure PowerShell
