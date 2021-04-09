@@ -5,10 +5,10 @@ ms.date: 03/03/2021
 ms.service: virtual-wan
 ms.topic: include
 ms.openlocfilehash: 0d5fb0674b737e9bea853bdb75495c34dc61f221
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102426621"
 ---
 1. Откройте только что созданную виртуальную глобальную сеть.

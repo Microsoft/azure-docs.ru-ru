@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.date: 12/14/2019
 ms.author: antchu
 ms.custom: devx-track-python
-ms.openlocfilehash: aaaf9011d38e7ec02e83db63757c434329b835e0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 82a2e64d27fcbbb3801e6dab347343e086a0b70f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94960297"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105048227"
 ---
 # <a name="quickstart-create-a-chat-room-with-azure-functions-and-signalr-service-using-python"></a>Краткое руководство. Создание комнаты чата с помощью Функций Azure и SignalR с помощью Python
 
@@ -27,7 +27,7 @@ ms.locfileid: "94960297"
 
 Установите [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools#installing) (версии 2.7.1505 и выше) для локального запуска приложений Функций Azure на Python.
 
-Для работы с Функциями Azure требуется [Python 3.6 или 3.7](https://www.python.org/downloads/).
+Для работы с Функциями Azure требуется [Python 3.6 или более поздних версий](https://www.python.org/downloads/). Поддерживаемые версии Python приведены в [этой статье](/azure/azure-functions/functions-reference-python#python-version).
 
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 
