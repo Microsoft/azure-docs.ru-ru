@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 03/12/2020
 ms.openlocfilehash: 0d56fa4e1c93cec514076593d229e58b25af142a
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104865151"
 ---
 # <a name="quickstart-create-apache-hbase-cluster-in-azure-hdinsight-using-arm-template"></a>Краткое руководство. Создание кластера Apache HBase в Azure HDInsight с помощью шаблона ARM
@@ -58,7 +58,7 @@ ms.locfileid: "104865151"
 
     :::image type="content" source="./media/quickstart-resource-manager-template/resource-manager-template-hbase.png" alt-text="Развертывание шаблона Resource Manager HBase" border="true":::
 
-1. Ознакомьтесь с **УСЛОВИЯМИ ИСПОЛЬЗОВАНИЯ**. Затем установите флажок **Я принимаю указанные выше условия** и нажмите кнопку **Приобрести**. Вы получите уведомление о выполнении развертывания. Процесс создания кластера занимает около 20 минут.
+1. Ознакомьтесь с **условиями использования**. Затем установите флажок **Я принимаю указанные выше условия** и нажмите кнопку **Приобрести**. Вы получите уведомление о выполнении развертывания. Процесс создания кластера занимает около 20 минут.
 
 
 ## <a name="review-deployed-resources"></a>Просмотр развернутых ресурсов

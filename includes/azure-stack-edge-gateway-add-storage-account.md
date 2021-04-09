@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 03/12/2021
 ms.author: alkohli
 ms.openlocfilehash: cf67ea58c4c13756fdc6e437883f12124ca47eb9
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105104272"
 ---
 1. На [портале Azure](https://portal.azure.com/) выберите ресурс Azure Stack Edge и перейдите в раздел **Обзор**. Устройство должно быть подключено к сети. Перейдите на страницу **Шлюз для облачного хранилища > Учетные записи хранения**.

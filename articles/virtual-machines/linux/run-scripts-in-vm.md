@@ -9,10 +9,10 @@ ms.author: robreed
 ms.date: 05/02/2018
 ms.topic: how-to
 ms.openlocfilehash: 633f4fa6254b2db7a802bb29bffc83b271216d49
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104601760"
 ---
 # <a name="run-scripts-in-your-linux-vm"></a>Запуск сценариев в виртуальной машине Linux
@@ -69,6 +69,6 @@ ms.locfileid: "104601760"
 Дополнительные сведения о различных доступных возможностях, для выполнения сценариев и команд в виртуальных машинах.
 
 * [Расширение пользовательских сценариев](../extensions/custom-script-linux.md)
-* [Запуск команды](run-command.md)
+* [Команда "Выполнить"](run-command.md)
 * [Гибридная рабочая роль Runbook](../../automation/automation-hybrid-runbook-worker.md)
 * [Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-linux)

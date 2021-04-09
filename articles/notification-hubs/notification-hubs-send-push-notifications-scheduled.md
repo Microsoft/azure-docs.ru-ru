@@ -19,10 +19,10 @@ ms.reviewer: jowargo
 ms.lastreviewed: 01/04/2019
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 5d27ad1f15e9f46f0bc67e62b79606828efb85e6
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102453161"
 ---
 # <a name="how-to-send-scheduled-notifications"></a>Практическое руководство. Отправка запланированных уведомлений
@@ -31,7 +31,7 @@ ms.locfileid: "102453161"
 
 
 ## <a name="schedule-your-notifications"></a>Планирование уведомлений
-При отправке уведомления просто используйте [ `ScheduledNotification` класс](/dotnet/api/microsoft.azure.notificationhubs.schedulednotification#microsoft_azure_notificationhubs_schedulednotification) в пакете SDK для центров уведомлений, как показано в следующем примере:
+При отправке уведомления просто используйте класс [`ScheduledNotification`](/dotnet/api/microsoft.azure.notificationhubs.schedulednotification#microsoft_azure_notificationhubs_schedulednotification) из пакета SDK Центров уведомлений, как показано в следующем примере.
 
 ```csharp
 Notification notification = new AppleNotification("{\"aps\":{\"alert\":\"Happy birthday!\"}}");
