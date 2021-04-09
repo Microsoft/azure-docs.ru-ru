@@ -10,10 +10,10 @@ ms.date: 10/27/2020
 ms.author: jocaplan
 ms.reviewer: jrasnick
 ms.openlocfilehash: 9c63e5e24495f373f288d2789780a6c671a7cc24
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98218405"
 ---
 # <a name="quickstart-linking-a-power-bi-workspace-to-a-synapse-workspace"></a>Краткое руководство. Связывание рабочей области Power BI с рабочей областью Synapse

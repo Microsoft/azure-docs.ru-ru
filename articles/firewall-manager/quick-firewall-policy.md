@@ -9,10 +9,10 @@ ms.custom: subject-armqs
 ms.date: 02/17/2021
 ms.author: victorh
 ms.openlocfilehash: 9cc263d311bd550a92a0c8f14ab5ce86d72e9ee3
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100633637"
 ---
 # <a name="quickstart-create-an-azure-firewall-and-a-firewall-policy---arm-template"></a>Краткое руководство. Создание Брандмауэра Azure и политики брандмауэра — шаблон ARM

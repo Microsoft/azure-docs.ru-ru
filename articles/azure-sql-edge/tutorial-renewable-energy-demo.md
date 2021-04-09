@@ -10,10 +10,10 @@ ms.author: vakrishn
 ms.reviewer: sstein
 ms.date: 12/18/2020
 ms.openlocfilehash: e966d756744210dc8f6739b96501dd91f0d8d1b5
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97723479"
 ---
 # <a name="using-azure-sql-edge-to-build-smarter-renewable-resources"></a>Использование Azure SQL Edge для создания интеллектуальных ресурсов возобновляемых ресурсов

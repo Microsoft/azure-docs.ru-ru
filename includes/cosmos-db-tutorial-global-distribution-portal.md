@@ -1,5 +1,5 @@
 ---
-title: Глобальное распространение Azure Cosmos DB
+title: Глобальное распределение Azure Cosmos DB
 description: Сведения о глобальной репликации данных с помощью Azure DB Cosmos на портале Azure
 services: cosmos-db
 author: SnehaGunda
@@ -9,10 +9,10 @@ ms.topic: include
 ms.date: 12/26/2018
 ms.custom: include file
 ms.openlocfilehash: 58788d6194454c8bd40730c9c350aa901924ba3d
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96028052"
 ---
 ## <a name="add-global-database-regions-using-the-azure-portal"></a><a id="addregion"></a>Добавление регионов глобальной базы данных с помощью портала Azure
@@ -20,7 +20,7 @@ ms.locfileid: "96028052"
 
 1. На левой панели на [портале Azure](https://portal.azure.com/) щелкните **Azure Cosmos DB**.
 2. На странице **Azure Cosmos DB** выберите учетную запись базы данных, которую нужно изменить.
-3. На странице учетной записи щелкните в меню **Глобальная репликация данных**.
+3. На странице учетной записи в меню щелкните **Глобальная репликация данных**.
 4. На странице **Глобальная репликация данных** выберите регионы для добавления или удаления, щелкнув их на карте, и нажмите кнопку **Сохранить**. Добавление регионов оплачивается. Дополнительные сведения см. на [странице цен](https://azure.microsoft.com/pricing/details/cosmos-db/) или в руководстве по [глобальному распространению данных с помощью Azure Cosmos DB](../articles/cosmos-db/distribute-data-globally.md).
    
     ![Можно щелкать регионы на карте, чтобы добавить или удалить их.][1]

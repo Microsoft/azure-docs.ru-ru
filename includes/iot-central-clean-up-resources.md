@@ -5,10 +5,10 @@ ms.service: iot-central
 ms.topic: include
 ms.date: 02/08/2021
 ms.openlocfilehash: 34e936c3d4189d041bf620a4a8ac6144ceae7b02
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99831722"
 ---
 Если в дальнейшем вы не планируете работать с краткими руководствами и другими учебными материалами по IoT Central, можно удалить приложение IoT Central:

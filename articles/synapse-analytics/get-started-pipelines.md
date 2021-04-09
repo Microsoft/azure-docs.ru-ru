@@ -11,10 +11,10 @@ ms.subservice: pipeline
 ms.topic: tutorial
 ms.date: 12/31/2020
 ms.openlocfilehash: 2ea7c3c440fcf95e4512464333efe8461788bceb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98219408"
 ---
 # <a name="integrate-with-pipelines"></a>Интеграция с конвейерами
