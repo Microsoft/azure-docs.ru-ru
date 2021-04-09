@@ -5,12 +5,12 @@ ms.devlang: python
 ms.topic: tutorial
 ms.date: 11/29/2018
 ms.custom: mvc, devx-track-python
-ms.openlocfilehash: 7013ef1e9b6dda4554b665fa8199edb86a8a9adb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 48df2cb6ac103d1f03d2d64fce0d10a8f2f128e2
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97106518"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105043416"
 ---
 # <a name="tutorial-run-a-parallel-workload-with-azure-batch-using-the-python-api"></a>Руководство по Запуск параллельной рабочей нагрузки с помощью пакета Azure с использованием Python API
 
@@ -30,7 +30,7 @@ ms.locfileid: "97106518"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Python версии 2.7 или 3.3 и более поздней](https://www.python.org/downloads/).
+* [Python 2.7, 3.6 или более поздней версии](https://www.python.org/downloads/)
 
 * Диспетчер пакетов [pip](https://pip.pypa.io/en/stable/installing/).
 

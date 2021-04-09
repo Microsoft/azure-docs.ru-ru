@@ -6,14 +6,14 @@ services: application-gateway
 author: vhorne
 ms.service: application-gateway
 ms.topic: tutorial
-ms.date: 02/23/2021
+ms.date: 03/19/2021
 ms.author: victorh
-ms.openlocfilehash: 208bd0fe7f3869cbe15dd27e0b883c467e41c765
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: cfbd5301bc2b24c4d5614e5f88c6ae18d4affc66
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101735082"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721636"
 ---
 # <a name="tutorial-create-and-configure-an-application-gateway-to-host-multiple-web-sites-using-the-azure-portal"></a>Руководство по Создание и настройка шлюза приложения для размещения нескольких веб-сайтов с помощью портала Azure
 
@@ -27,7 +27,7 @@ ms.locfileid: "101735082"
 > * создание серверных пулов с внутренними серверами;
 > * Создание серверных прослушивателей
 > * Создание правил маршрутизации
-> * создание записи CNAME в домене.
+> * Изменение файла hosts для разрешения имен
 
 :::image type="content" source="./media/create-multiple-sites-portal/scenario.png" alt-text="Многосайтовый шлюз приложений":::
 
@@ -212,9 +212,9 @@ ms.locfileid: "101735082"
 
 Прежде чем переходить к следующему шагу, дождитесь завершения развертывания.
 
-## <a name="edit-your-hosts-file"></a>Изменение файла hosts
+## <a name="edit-your-hosts-file-for-name-resolution"></a>Изменение файла hosts для разрешения имен
 
-После создания шлюза приложений с общедоступным IP-адресом можно получить IP-адрес и использовать его для изменения файла hosts, чтобы разрешить `www.contoso.com` и `www.fabrikam.com`. 
+Создав шлюз приложений с общедоступным IP-адресом, вы можете получить IP-адрес и использовать его для изменения файла hosts, чтобы разрешить `www.contoso.com` и `www.fabrikam.com`. В рабочей среде можно создать `CNAME` в DNS для разрешения имен.
 
 1. Выберите **Все ресурсы** и щелкните **myAGPublicIPAddress**.
 

@@ -10,10 +10,10 @@ ms.date: 05/02/2018
 ms.topic: how-to
 manager: carmonm
 ms.openlocfilehash: 24ff0d8089055f83c76156cf5fb163313faf9492
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105043484"
 ---
 # <a name="run-scripts-in-your-windows-vm"></a>Запуск сценариев в виртуальной машине Windows
@@ -70,6 +70,6 @@ ms.locfileid: "105043484"
 Дополнительные сведения о различных доступных возможностях, для выполнения сценариев и команд в виртуальных машинах.
 
 * [Расширение пользовательских сценариев](../extensions/custom-script-windows.md)
-* [Запуск команды](run-command.md)
+* [Команда "Выполнить"](run-command.md)
 * [Гибридная рабочая роль Runbook](../../automation/automation-hybrid-runbook-worker.md)
 * [Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-windows)

@@ -7,12 +7,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 09/01/2020
 ms.author: pafarley
-ms.openlocfilehash: cb066ecc1dc11985c0ccb0fa687a15d6b038b9fa
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 8cc4bc6907f83ce062fed82dde17815fc4debd67
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "89321612"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104719660"
 ---
 Список номеров SKU и сведения о ценах см. ниже. 
 
@@ -32,7 +32,6 @@ ms.locfileid: "89321612"
 | Ресурс обучения службы "Пользовательское визуальное распознавание"   | `CustomVision.Training`   |
 | Распознавание лиц                       | `Face`                    |
 | Распознаватель документов            | `FormRecognizer`          |
-| Распознаватель рукописного текста             | `InkRecognizer`           |
 
 #### <a name="search"></a>Поиск
 
@@ -55,7 +54,6 @@ ms.locfileid: "89321612"
 
 | Служба            | Вид                |
 |--------------------|---------------------|
-| Анализ форм | `FormUnderstanding` |
 | LUIS               | `LUIS`              |
 | QnA Maker          | `QnAMaker`          |
 | Анализ текста     | `TextAnalytics`     |

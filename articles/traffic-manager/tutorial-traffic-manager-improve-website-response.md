@@ -3,7 +3,6 @@ title: Руководство. Улучшение отклика веб-сайт
 description: В этом руководстве показано, как создать профиль диспетчера трафика для создания быстродействующего веб-сайта.
 services: traffic-manager
 author: duongau
-Customer intent: As an IT Admin, I want to route traffic so I can improve website response by choosing the endpoint with lowest latency.
 ms.service: traffic-manager
 ms.devlang: na
 ms.topic: tutorial
@@ -11,12 +10,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/19/2020
 ms.author: duau
-ms.openlocfilehash: d8262a80fac42f103d571523c75c5064d5d43949
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e95a1c5c2ab0803ba628e44275c4805f325ae3f0
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96003826"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106067254"
 ---
 # <a name="tutorial-improve-website-response-using-traffic-manager"></a>Руководство по Улучшение отклика веб-сайта с помощью диспетчера трафика
 
