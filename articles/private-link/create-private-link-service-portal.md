@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 01/18/2021
 ms.author: allensu
 ms.openlocfilehash: d394a475c5121607f70c03437382e104a5d0cbee
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98746413"
 ---
 # <a name="quickstart-create-a-private-link-service-by-using-the-azure-portal"></a>Краткое руководство. Создание службы "Приватный канал" с помощью портала Azure

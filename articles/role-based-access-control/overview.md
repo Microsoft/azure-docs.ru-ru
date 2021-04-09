@@ -11,10 +11,10 @@ ms.date: 09/30/2020
 ms.author: rolyon
 ms.custom: contperf-fy21q1, azuread-video-2020
 ms.openlocfilehash: 4241e476b2f778ff63057d0491b5dc8666c7520c
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100650870"
 ---
 # <a name="what-is-azure-role-based-access-control-azure-rbac"></a>Что такое управление доступом на основе ролей в Azure (RBAC)?

@@ -1,18 +1,18 @@
 ---
-title: 'Руководство по Использование API Потоков Apache Kafka в Azure HDInsight '
+title: 'Руководство. Использование API Потоков Apache Kafka в Azure HDInsight '
 description: 'Учебник: узнайте, как использовать API потоков Apache Kafka в HDInsight. Этот API позволяет выполнять потоковую обработку между разделами в Kafka.'
 ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: hdinsightactive
 ms.date: 03/20/2020
 ms.openlocfilehash: 5a1548cdf1d05a1f9d42f5c64b7fdc18f514518e
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98939193"
 ---
-# <a name="tutorial-use-apache-kafka-streams-api-in-azure-hdinsight"></a>Руководство по использованию API потоков Apache Kafka в Azure HDInsight
+# <a name="tutorial-use-apache-kafka-streams-api-in-azure-hdinsight"></a>Руководство. Использование API потоков Apache Kafka в Azure HDInsight
 
 Узнайте, как создать приложение, использующее API для Apache Kafka Streams, и запустить его с помощью Kafka в HDInsight.
 
@@ -22,7 +22,7 @@ ms.locfileid: "98939193"
 
 Дополнительные сведения о Потоках Kafka см. в [вводной документации ](https://kafka.apache.org/10/documentation/streams/) на сайте Apache.org.
 
-В этом руководстве описано следующее:
+В этом руководстве описано следующее.
 
 > [!div class="checklist"]
 > * Изучение кода
@@ -30,7 +30,7 @@ ms.locfileid: "98939193"
 > * Настройка разделов Kafka.
 > * Выполнение кода
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Kafka в кластере HDInsight 3.6; Чтобы узнать, как создать кластер Kafka в HDInsight, ознакомьтесь с документом [начале работы с Apache Kafka в HDInsight](apache-kafka-get-started.md).
 
@@ -47,7 +47,7 @@ ms.locfileid: "98939193"
 Пример приложения расположен в подкаталоге `Streaming` по адресу [https://github.com/Azure-Samples/hdinsight-kafka-java-get-started](https://github.com/Azure-Samples/hdinsight-kafka-java-get-started). Приложение состоит из двух файлов:
 
 * `pom.xml`: этот файл определяет зависимости проекта, версию Java и методы упаковки.
-* `Stream.java`: этот файл реализует логику потоковой передачи.
+* файл `Stream.java` реализует логику потоковой передачи.
 
 ### <a name="pomxml"></a>Pom.xml
 
@@ -196,10 +196,10 @@ public class Stream
 
     Разделы используются для следующих целей:
 
-   * `test`: в этот раздел поступают записи. Здесь приложение потоковой передачи считывает их.
-   * `wordcounts`: в этом разделе приложение потоковой передачи хранит свои выходные данные.
-   * `RekeyedIntermediateTopic`: этот раздел используется для секционирования данных, так как счетчик обновляется оператором `countByKey`.
-   * `wordcount-example-Counts-changelog`: этот раздел является хранилищем состояний, используемым операцией `countByKey`.
+   * `test`. В этот раздел поступают записи. Здесь приложение потоковой передачи считывает их.
+   * `wordcounts`. В этом разделе приложение потоковой передачи хранит свои выходные данные.
+   * `RekeyedIntermediateTopic`. Этот раздел используется для секционирования данных, так как счетчик обновляется оператором `countByKey`.
+   * `wordcount-example-Counts-changelog`. Этот раздел является хранилищем состояний, используемым операцией `countByKey`.
 
     Кроме того, Kafka в HDInsight можно настроить на автоматическое создание разделов. Дополнительные сведения см. в статье [How to configure Apache Kafka on HDInsight to automatically create topics](apache-kafka-auto-create-topics.md) (Настройка автоматического создания разделов в Apache Kafka в HDInsight).
 

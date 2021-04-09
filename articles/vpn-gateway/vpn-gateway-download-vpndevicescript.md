@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 09/02/2020
 ms.author: yushwang
 ms.openlocfilehash: d2593c656e17310c5afb4a897b94cc8c12a618f0
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98879500"
 ---
 # <a name="download-vpn-device-configuration-scripts-for-s2s-vpn-connections"></a>Загрузка сценариев конфигурации VPN-устройств для VPN-подключений типа "сеть — сеть"
@@ -49,7 +49,7 @@ VPN-подключение между локальными сетями сост
 
 Создайте VPN-шлюз Azure, локальный сетевой шлюз и ресурс подключения для их соединения. В статье ниже описываются шаги, которые нужно выполнить.
 
-* [Создание подключения типа "сеть — сеть" в портал Azure](./tutorial-site-to-site-portal.md)
+* [Создание подключения типа "сеть — сеть" на портале Azure](./tutorial-site-to-site-portal.md);
 
 После создания ресурса подключения следуйте приведенным ниже инструкциям, чтобы загрузить сценарии конфигурации VPN-устройства:
 
