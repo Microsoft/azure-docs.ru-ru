@@ -9,10 +9,10 @@ ms.service: azure-cli
 ms.devlang: azurecli
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: ef12dc95e1394a1735d329b6af0ec6473b26ff7a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98225240"
 ---
 ### <a name="prepare-your-environment-for-the-azure-cli"></a>Подготовка среды к работе с Azure CLI

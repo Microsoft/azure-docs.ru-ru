@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 07/31/2020
 ms.author: mjbrown
 ms.openlocfilehash: 6385a28ff976b206839a86d94f1ea61a9c6f11f1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98680191"
 ---
 # <a name="list-and-get-tables-for-azure-cosmos-db---table-api"></a>Операции List и Get для таблиц в Azure Cosmos DB — API таблиц

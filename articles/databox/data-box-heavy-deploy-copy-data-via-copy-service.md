@@ -1,5 +1,5 @@
 ---
-title: Руководство по Копирование данных в Azure Data Box Heavy с помощью службы копирования данных
+title: Руководство. Копирование данных в Azure Data Box Heavy с помощью службы копирования данных
 description: В этом руководстве вы узнаете, как копировать данные на устройство Azure Data Box Heavy с помощью службы копирования данных
 services: databox
 author: alkohli
@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.date: 07/03/2019
 ms.author: alkohli
 ms.openlocfilehash: 601e5cf15c47b16c53ff9ca81a56cb613bcfc3f5
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96006565"
 ---
-# <a name="tutorial-use-the-data-copy-service-to-copy-data-into-azure-data-box-heavy-preview"></a>Руководство по Копирование данных в Azure Data Box Heavy (предварительный просмотр) с помощью службы копирования данных
+# <a name="tutorial-use-the-data-copy-service-to-copy-data-into-azure-data-box-heavy-preview"></a>Руководство. Копирование данных в Azure Data Box Heavy (предварительная версия) с помощью службы копирования данных
 
 Это руководство содержит инструкции по приему данных с использованием службы копирования данных без наличия промежуточного узла. Служба копирования данных запускается локально в службе Azure Data Box Heavy подключается к запоминающему устройству, подключаемому к сети (NAS) по протоколу SMB и копирует данные в Data Box Heavy
 
@@ -33,7 +33,7 @@ ms.locfileid: "96006565"
 
 Перед тем как начать, убедитесь в следующем.
 
-1. Вы завершили работу с этим руководством: [Настройка Azure Data Box Heavy](data-box-heavy-deploy-set-up.md).
+1. Вы завершили работу с этим руководством: [Руководство. Присоединение кабелей и подключение к Azure Data Box Heavy](data-box-heavy-deploy-set-up.md).
 2. Вы получили устройство Data Box Heavy (состояние заказа на портале — **Доставлено**).
 3. У вас есть учетные данные исходного устройства NAS, к которому вы выполняете подключение для копирования данных.
 4. Ваш компьютер подключен к высокоскоростной сети. Чтобы ускорить копирование, можно параллельно использовать два подключения 40 GbE (по одному на каждый узел). Если у вас нет доступного подключения на 40 GbE, мы рекомендуем использовать хотя бы два подключения 10 GbE (по одному на каждый узел). 
