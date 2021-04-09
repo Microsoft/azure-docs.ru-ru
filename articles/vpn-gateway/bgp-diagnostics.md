@@ -9,10 +9,10 @@ ms.topic: sample
 ms.date: 03/10/2021
 ms.author: alzam
 ms.openlocfilehash: f97bbccc980705699af822ba2730233239cdfd5f
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103148941"
 ---
 # <a name="view-bgp-metrics-and-status"></a>Просмотр метрик и состояния BGP

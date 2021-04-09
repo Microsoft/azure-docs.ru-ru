@@ -4,10 +4,10 @@ description: Узнайте, как создать функцию Go в виде
 ms.topic: quickstart
 ms.date: 12/4/2020
 ms.openlocfilehash: 8b53031315cce3651a2de581d71da6ef6fe909c1
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103470376"
 ---
 # <a name="quickstart-create-a-go-or-rust-function-in-azure-using-visual-studio-code"></a>Краткое руководство. Создание функции Go или Rust в Azure с помощью Visual Studio Code

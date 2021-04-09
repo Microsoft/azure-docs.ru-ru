@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.reviewer: arvindh, japere
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: 36025a5a68e4c3d0de1d6b11a13df656c72745d4
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99260203"
 ---
 # <a name="what-is-single-sign-on-sso"></a>Что собой представляет единый вход?
