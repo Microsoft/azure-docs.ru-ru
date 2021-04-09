@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/18/2020
 ms.author: jeedes
 ms.openlocfilehash: 8c3d76f24cce860538dc3bd5dcf29b59708bdb5d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98726281"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-zscaler-two"></a>Руководство по интеграции Azure Active Directory с Zscaler Two
@@ -200,14 +200,14 @@ ms.locfileid: "98726281"
 
     b. Нажмите кнопку **Активировать**.
 
-## <a name="configuring-proxy-settings"></a>Настройка параметров прокси-сервера
-### <a name="to-configure-the-proxy-settings-in-internet-explorer"></a>Настройка параметров прокси-сервера в Internet Explorer
+## <a name="configuring-proxy-settings&quot;></a>Настройка параметров прокси-сервера
+### <a name=&quot;to-configure-the-proxy-settings-in-internet-explorer&quot;></a>Настройка параметров прокси-сервера в Internet Explorer
 
 1. Запустите **Internet Explorer**.
 
 2. В меню **Сервис** выберите **Свойства браузера**, чтобы открыть диалоговое окно **Свойства браузера**.   
     
-     ![Свойства браузера](./media/zscaler-two-tutorial/ic769492.png "Свойства браузера")
+     ![Свойства браузера](./media/zscaler-two-tutorial/ic769492.png &quot;Свойства браузера")
 
 3. Щелкните вкладку **Подключения** .   
   
