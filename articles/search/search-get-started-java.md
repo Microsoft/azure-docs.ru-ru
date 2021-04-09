@@ -11,10 +11,10 @@ ms.topic: quickstart
 ms.date: 03/04/2021
 ms.custom: devx-track-java
 ms.openlocfilehash: f52aaa0636c453c0def7cb97c203f17f0b11a221
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104955301"
 ---
 # <a name="quickstart-create-an-azure-cognitive-search-index-in-java"></a>Краткое руководство. Создание индекса службы "Когнитивный поиск Azure" в Java
