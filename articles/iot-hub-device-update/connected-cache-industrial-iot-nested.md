@@ -7,10 +7,10 @@ ms.date: 2/16/2021
 ms.topic: tutorial
 ms.service: iot-hub-device-update
 ms.openlocfilehash: 0d70ed8b906c171c001c5bda81a79ca9b65febac
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101658880"
 ---
 # <a name="microsoft-connected-cache-preview-deployment-scenario-sample-microsoft-connected-cache-within-an-azure-iot-edge-for-industrial-iot-configuration"></a>Пример сценария развертывания Подключенного кэша Майкрософт (предварительная версия): Подключенный кэш Майкрософт в Azure IoT Edge для настройки промышленного Интернета вещей

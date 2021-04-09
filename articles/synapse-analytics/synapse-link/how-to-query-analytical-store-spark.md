@@ -2,19 +2,20 @@
 title: Взаимодействие с Azure Cosmos DB с помощью Apache Spark в Azure Synapse Link
 description: Взаимодействие с Azure Cosmos DB с помощью Apache Spark в Azure Synapse Link
 services: synapse-analytics
-author: ArnoMicrosoft
+author: Rodrigossz
 ms.service: synapse-analytics
 ms.topic: quickstart
 ms.subservice: synapse-link
 ms.date: 09/15/2020
-ms.author: acomet
+ms.author: rosouz
 ms.reviewer: jrasnick
-ms.openlocfilehash: 32e8ad5028920cefd717cdaa5429786c83367f6d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.custom: cosmos-db
+ms.openlocfilehash: 4a8367ea41ea96d8a412af965346684737d190fe
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101671279"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105627580"
 ---
 # <a name="interact-with-azure-cosmos-db-using-apache-spark-in-azure-synapse-link"></a>Взаимодействие с Azure Cosmos DB с помощью Apache Spark в Azure Synapse Link
 
@@ -28,6 +29,10 @@ ms.locfileid: "101671279"
 * Synapse Apache Spark также поддерживает структурированную потоковую передачу Spark в Azure Cosmos DB в качестве источника и приемника. 
 
 В следующих разделах излагается синтаксис функций, описанных выше. Жесты в рабочей области Azure Synapse Analytics разработаны с целью предоставления простого готового интерфейса для начала работы. Чтобы просмотреть жесты, щелкните правой кнопкой мыши контейнер Azure Cosmos DB на вкладке **Данные** рабочей области Synapse. С помощью жестов можно быстро создать код и скорректировать его в соответствии с потребностями. Жесты также идеально подходят для обнаружения данных одним щелчком мыши.
+
+> [!IMPORTANT]
+> Вы должны учитывать некоторые ограничения в аналитической схеме, которые могут привести к непредвиденному поведению в операциях загрузки данных.
+> Например, в аналитической схеме доступны только первые 1000 свойств из транзакционной схемы, свойства с пробелами недоступны и т. д. Если вы столкнулись с неожиданными результатами, проверьте [ограничения схемы аналитического хранилища](../../cosmos-db/analytical-store-introduction.md#schema-constraints) для получения дополнительных сведений.
 
 ## <a name="query-azure-cosmos-db-analytical-store"></a>Запрос аналитического хранилища Azure Cosmos DB
 

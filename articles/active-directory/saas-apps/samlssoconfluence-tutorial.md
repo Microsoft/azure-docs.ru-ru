@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/04/2021
 ms.author: jeedes
 ms.openlocfilehash: 9290272920bbb20144f4e0d957ba2d9ce60d06a9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101651286"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-saml-sso-for-confluence-by-resolution-gmbh"></a>Руководство по Интеграция Azure Active Directory с SAML SSO for Confluence by resolution GmbH
