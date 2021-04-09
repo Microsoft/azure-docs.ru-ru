@@ -4,10 +4,10 @@ description: Сопоставление элементов управления 
 ms.date: 01/08/2021
 ms.topic: sample
 ms.openlocfilehash: ee2988e94422c96be52d0bc4fc7266ccab38780e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98034889"
 ---
 # <a name="control-mapping-of-the-fedramp-high-blueprint-sample"></a>Сопоставление элементов управления примера схемы FedRAMP высокого уровня.

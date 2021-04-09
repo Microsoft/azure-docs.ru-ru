@@ -16,10 +16,10 @@ ms.date: 12/15/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4948e17d1e0e782a8fa18c3eb5a2185e816a459a
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102631410"
 ---
 # <a name="configure-managed-identities-for-azure-resources-on-an-azure-vm-using-templates"></a>Настройка управляемых удостоверений для ресурсов Azure на виртуальной машине Azure с помощью шаблонов

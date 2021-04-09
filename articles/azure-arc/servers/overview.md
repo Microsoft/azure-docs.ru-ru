@@ -4,12 +4,12 @@ description: Сведения о том, как с помощью серверо
 keywords: служба автоматизации Azure, DSC, PowerShell, настройка требуемого состояния, управление обновлениями, отслеживание изменений, инвентаризация, модули runbook, Python, графический, гибридный
 ms.date: 02/18/2021
 ms.topic: overview
-ms.openlocfilehash: 92de3b1a9cf07c25b13e2d038534e93318882bb1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 863cab073018c5a592cba6e94451a9af038ebd52
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102175980"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105023339"
 ---
 # <a name="what-is-azure-arc-enabled-servers"></a>Что такое серверы с поддержкой Azure Arc?
 
@@ -23,7 +23,7 @@ ms.locfileid: "102175980"
 
 - Назначение [конфигураций гостевых политик Azure](../../governance/policy/concepts/guest-configuration.md) с помощью того же интерфейса, что и для назначения политики для виртуальных машин Azure. В настоящее время политики гостевой конфигурации не применяют свои конфигурации, а только выполняют аудит параметров на компьютере. Сведения о затратах на использование политик гостевой конфигурации в Политике Azure для серверов с поддержкой Arc см. на [странице цен](https://azure.microsoft.com/pricing/details/azure-policy/) для Политики Azure.
 
-- Сообщение об изменениях конфигурации в установленном программном обеспечении, службах Майкрософт, реестре и файлах Windows, а также управляющих программах Linux на отслеживаемых серверах с помощью функции [Отслеживание изменений и инвентаризация](../../automation/change-tracking/overview.md) службы автоматизации Azure, а также [мониторинга целостности файлов Центра безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-file-integrity-monitoring) для серверов с поддержкой [Azure Defender для серверов](https://docs.microsoft.com/azure/security-center/defender-for-servers-introduction).
+- Сообщение об изменениях конфигурации в установленном программном обеспечении, службах Майкрософт, реестре и файлах Windows, а также управляющих программах Linux на отслеживаемых серверах с помощью функции [Отслеживание изменений и инвентаризация](../../automation/change-tracking/overview.md) службы автоматизации Azure, а также [мониторинга целостности файлов Центра безопасности Azure](../../security-center/security-center-file-integrity-monitoring.md) для серверов с поддержкой [Azure Defender для серверов](../../security-center/defender-for-servers-introduction.md).
 
 - Мониторинг производительности операционной системы на виртуальной машине подключенного компьютера и обнаружение компонентов приложения для мониторинга их процессов и зависимостей от других ресурсов, с которыми взаимодействует приложение, с помощью [Azure Monitor для виртуальных машин](../../azure-monitor/vm/vminsights-overview.md).
 

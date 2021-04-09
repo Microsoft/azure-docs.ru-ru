@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 01/08/2021
 ms.author: sngun
 ms.openlocfilehash: 1cf3bf30b37a09b5dfe94bf1e754a7f8e9dcd82c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98045671"
 ---
 # <a name="introduction-to-azure-cosmos-db-table-api"></a>Знакомство с Azure Cosmos DB. API таблиц

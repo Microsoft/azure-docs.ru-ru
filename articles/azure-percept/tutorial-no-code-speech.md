@@ -7,22 +7,22 @@ ms.service: azure-percept
 ms.topic: tutorial
 ms.date: 02/17/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 3c5e6fd62e4f4db9ccc1306d32d09b8338cbf963
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 76333e11916641be71c72ce6142cd59b496a17e9
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102098032"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105023169"
 ---
 # <a name="create-a-voice-assistant-with-azure-percept-dk-and-azure-percept-audio"></a>Создание голосового помощника с помощью Azure Percept DK и Azure Percept Audio
 
 В этом учебнике вы создадите голосовой помощник из шаблона для использования с Azure Percept DK и Azure Percept Audio. Демоверсия голосового помощника выполняется в [Azure Percept Studio](https://go.microsoft.com/fwlink/?linkid=2135819) и содержит набор виртуальных объектов, управляемых голосом. Для управления объектом следует сказать ключевое слово (это может быть слово или короткая фраза), которое активирует устройство, а затем произнести команду. Каждый шаблон реагирует на определенный набор команд.
 
-В этом руководстве рассматривается настройка устройств, создание голосового помощника и необходимых ресурсов [служб распознавания речи](https://docs.microsoft.com/azure/cognitive-services/speech-service/overview), тестирование голосового помощника, настройка ключевого слова и создание пользовательских ключевых слов.
+В этом руководстве рассматривается настройка устройств, создание голосового помощника и необходимых ресурсов [служб распознавания речи](../cognitive-services/speech-service/overview.md), тестирование голосового помощника, настройка ключевого слова и создание пользовательских ключевых слов.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Azure Percept DK (DevKit).
+- Azure Percept DK (DevKit).
 - Azure Percept Audio.
 - Динамик или наушники, которые можно подключить к аудиовходу 3,5 мм (необязательно)
 - [Подписка Azure.](https://azure.microsoft.com/free/)
@@ -172,7 +172,7 @@ ms.locfileid: "102098032"
 
     :::image type="content" source="./media/tutorial-no-code-speech/speech-studio.png" alt-text="Снимок экрана: начальный экран Speech Studio.":::
 
-Дополнительные сведения о разработке пользовательских команд см. в [документации по службе "Речь"](https://docs.microsoft.com/azure/cognitive-services/speech-service/custom-commands).
+Дополнительные сведения о разработке пользовательских команд см. в [документации по службе "Речь"](../cognitive-services/speech-service/custom-commands.md).
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 

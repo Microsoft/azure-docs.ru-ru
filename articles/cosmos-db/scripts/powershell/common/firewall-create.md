@@ -7,10 +7,10 @@ ms.topic: sample
 ms.date: 03/18/2020
 ms.author: mjbrown
 ms.openlocfilehash: c29d131948be42a53bf568aa4048fe4e7d61c36e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98684325"
 ---
 # <a name="create-an-azure-cosmos-db-account-with-ip-firewall"></a>Создание учетной записи Azure Cosmos DB с правилами брандмауэра для IP-адресов

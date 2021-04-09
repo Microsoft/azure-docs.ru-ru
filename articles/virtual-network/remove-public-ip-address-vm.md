@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 12/04/2019
 ms.author: allensu
 ms.openlocfilehash: 0665cbd7aa21575337999fb5c59478955c764048
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98934201"
 ---
 # <a name="dissociate-a-public-ip-address-from-an-azure-vm"></a>Отмена связи общедоступного IP-адреса с виртуальной машиной Azure 
