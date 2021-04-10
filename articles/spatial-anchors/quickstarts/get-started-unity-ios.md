@@ -5,15 +5,15 @@ author: msftradford
 manager: MehranAzimi-msft
 services: azure-spatial-anchors
 ms.author: parkerra
-ms.date: 11/20/2020
+ms.date: 03/18/2021
 ms.topic: quickstart
 ms.service: azure-spatial-anchors
-ms.openlocfilehash: b278ac6c824b1583e90cfc9152264f61357dd228
-ms.sourcegitcommit: b8eba4e733ace4eb6d33cc2c59456f550218b234
+ms.openlocfilehash: 0fe193ee76c56ec57d0643f4a156739d1a51230c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95971474"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670102"
 ---
 # <a name="quickstart-create-a-unity-ios-app-with-azure-spatial-anchors"></a>Краткое руководство. Создание приложения iOS в Unity с помощью Пространственных привязок Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "95971474"
 
 В рамках этого краткого руководства вам потребуются:
 
-- Компьютер под управлением macOS с установленными компонентами <a href="https://unity3d.com/get-unity/download" target="_blank">Unity 2019.4 (LTS)</a>, последней версией <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a>.
+- Компьютер macOS с последней версией <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> и <a href="https://unity3d.com/get-unity/download" target="_blank">Unity (LTS)</a>. Используйте **Unity 2020 LTS** с пакетом SDK ASA версии 2.9 или более поздней (использует [платформу подключаемых модулей расширенной реальности Unity](https://docs.unity3d.com/Manual/XRPluginArchitecture.html)) или **Unity 2019 LTS** с пакетом SDK ASA версии 2.8 или более ранней.
 - Система Git, установленная с помощью HomeBrew. Введите в одну строку терминала такую команду: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`. Затем выполните `brew install git` и `brew install git-lfs`.
 - Устройство для разработки на iOS, <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">совместимое с ARKit</a>.
 

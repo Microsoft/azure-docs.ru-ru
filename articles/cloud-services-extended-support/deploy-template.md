@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 6d54216d8992b5bb233c79919284f96b24385651
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 6cb4abd536cc0d4177df424ac6a774e4e2e328d7
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104865593"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105564761"
 ---
 # <a name="deploy-a-cloud-service-extended-support-using-arm-templates"></a>Развертывание облачной службы (расширенная поддержка) с использованием шаблонов ARM
 
@@ -29,15 +29,15 @@ ms.locfileid: "104865593"
 
 1. Ознакомьтесь с [предварительными требованиями развертывания](deploy-prerequisite.md) для Облачных служб (расширенная поддержка) и создайте связанные ресурсы.
 
-2. Создайте новую группу ресурсов с помощью [портала Azure](/azure/azure-resource-manager/management/manage-resource-groups-portal) или [PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell). Этот шаг можно пропустить, если вы используете существующую группу ресурсов.
+2. Создайте новую группу ресурсов с помощью [портала Azure](../azure-resource-manager/management/manage-resource-groups-portal.md) или [PowerShell](../azure-resource-manager/management/manage-resource-groups-powershell.md). Этот шаг можно пропустить, если вы используете существующую группу ресурсов.
  
-3. Создайте учетную запись хранения с помощью [портала Azure](/azure/storage/common/storage-account-create?tabs=azure-portal) или [PowerShell](/azure/storage/common/storage-account-create?tabs=azure-powershell). Этот шаг можно пропустить, если вы используете существующую учетную запись хранения.
+3. Создайте учетную запись хранения с помощью [портала Azure](../storage/common/storage-account-create.md?tabs=azure-portal) или [PowerShell](../storage/common/storage-account-create.md?tabs=azure-powershell). Этот шаг можно пропустить, если вы используете существующую учетную запись хранения.
 
-4. Передайте CSDEF-файлы определения службы и CSCFG-файлы конфигурации службы в учетную запись хранения с помощью [портала Azure](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob), [AzCopy](/azure/storage/common/storage-use-azcopy-blobs-upload?toc=/azure/storage/blobs/toc.json) или [PowerShell](/azure/storage/blobs/storage-quickstart-blobs-powershell#upload-blobs-to-the-container). Получите подписанные URL-адреса обоих файлов, которые вы добавите в шаблон ARM далее в этом руководстве.
+4. Передайте CSDEF-файлы определения службы и CSCFG-файлы конфигурации службы в учетную запись хранения с помощью [портала Azure](../storage/blobs/storage-quickstart-blobs-portal.md#upload-a-block-blob), [AzCopy](../storage/common/storage-use-azcopy-blobs-upload.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) или [PowerShell](../storage/blobs/storage-quickstart-blobs-powershell.md#upload-blobs-to-the-container). Получите подписанные URL-адреса обоих файлов, которые вы добавите в шаблон ARM далее в этом руководстве.
 
 5. (Необязательно) Создайте хранилище ключей и передайте в него сертификаты.
 
-    -  Сертификаты можно присоединять к облачным службам, чтобы обеспечить безопасное взаимодействие со службой. Для использования сертификатов необходимо, чтобы их отпечатки были указаны в CSCFG-файле конфигурации службы и переданы в хранилище ключей. Хранилище ключей можно создать с помощью [портала Azure](/azure/key-vault/general/quick-create-portal) или [PowerShell](/azure/key-vault/general/quick-create-powershell).
+    -  Сертификаты можно присоединять к облачным службам, чтобы обеспечить безопасное взаимодействие со службой. Для использования сертификатов необходимо, чтобы их отпечатки были указаны в CSCFG-файле конфигурации службы и переданы в хранилище ключей. Хранилище ключей можно создать с помощью [портала Azure](../key-vault/general/quick-create-portal.md) или [PowerShell](../key-vault/general/quick-create-powershell.md).
     - Связанное с облачной службой хранилище ключей должно находиться в том же регионе и подписке, что и эта служба.
     - Для связанного хранилища ключей необходимо включить разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить сертификаты из хранилища ключей. Дополнительные сведения см. в статье [о сертификатах и хранилище ключей](certificates-and-key-vault.md).
     - Ссылка на хранилище ключей должна быть включена в раздел OsProfile шаблона ARM, к которому мы перейдем ниже.

@@ -7,20 +7,20 @@ ms.author: anvar
 ms.manager: bsiva
 ms.date: 04/19/2020
 ms.custom: mvc
-ms.openlocfilehash: 41476c5f8165729caa6780f8e74eb6c3ae30a59c
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: cca4612d3b22296209b4adfc6be97cbe95477aa3
+ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102614638"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104786674"
 ---
 # <a name="whats-new-in-azure-migrate"></a>Новые возможности в службе "Миграция Azure"
 
 С помощью [службы "Миграция Azure"](migrate-services-overview.md) можно обнаруживать, оценивать и переносить локальные серверы, приложения и данные в облако Microsoft Azure. В этой статье описаны новые выпуски и функции службы "Миграция Azure".
 
 ## <a name="update-march-2021"></a>Обновление (март 2021 г.)
-- Поддержка предоставления учетных данных нескольких серверов на устройстве Миграции Azure для обнаружения установленных приложений (инвентаризация программного обеспечения), анализа зависимостей без агента и обнаружения экземпляров SQL Server и баз данных в среде VMware. [Подробнее](tutorial-discover-vmware.md#provide-server-credentials)
-- Возможности обнаружения и оценки экземпляров и баз данных SQL Server, работающих в среде VMware, сейчас предоставляются в предварительной версии. [Подробнее](concepts-azure-sql-assessment-calculation.md)<br/>Чтобы опробовать эту функцию, воспользуйтесь [этой ссылкой](https://aka.ms/AzureMigrate/SQL) для создания проекта в регионе **Восточная Австралия**. Чтобы приступить к работе, ознакомьтесь с учебниками по [обнаружению](tutorial-discover-vmware.md) и [оценке](tutorial-assess-sql.md).
+- Поддержка предоставления учетных данных нескольких серверов на устройстве Миграции Azure для обнаружения установленных приложений (инвентаризация программного обеспечения), анализа зависимостей без агента и обнаружения экземпляров SQL Server и баз данных в среде VMware. [Дополнительные сведения](tutorial-discover-vmware.md#provide-server-credentials)
+- Возможности обнаружения и оценки экземпляров и баз данных SQL Server, работающих в среде VMware, сейчас предоставляются в предварительной версии. [Дополнительные сведения.](concepts-azure-sql-assessment-calculation.md) Чтобы приступить к работе, ознакомьтесь с руководствами по [обнаружению](tutorial-discover-vmware.md) и [оценке](tutorial-assess-sql.md).
 - Миграция VMware без агента теперь поддерживает параллельную репликацию 500 виртуальных машин на vCenter.
 - Служба "Миграция Azure" теперь автоматически устанавливает агент виртуальных машин Azure на виртуальных машинах VMware, когда они переносятся в Azure с помощью метода миграции VMware без агента.
 

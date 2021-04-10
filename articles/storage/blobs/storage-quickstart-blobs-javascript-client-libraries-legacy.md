@@ -2,19 +2,19 @@
 title: Краткое руководство. Хранилище BLOB-объектов Azure для JavaScript версии 10 в браузере
 description: Узнайте, как выполнять отправку и удаление, а также получать список больших двоичных объектов с помощью пакета SDK JavaScript версии 10 на странице HTML.
 services: storage
-author: mhopkins-msft
+author: twooley
 ms.custom: mvc, devx-track-js
 ms.service: storage
-ms.author: mhopkins
+ms.author: twooley
 ms.date: 07/24/2020
 ms.topic: quickstart
 ms.subservice: blobs
-ms.openlocfilehash: d212029936bcd257ef5a78eeedc98c2d6e1df514
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b3cca61fe272b61f2227e7546b37e4ea37cfd693
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96012788"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106280145"
 ---
 <!-- Customer intent: As a web application developer I want to interface with Azure Blob storage entirely on the client so that I can build a SPA application that is able to upload and delete files on blob storage. -->
 

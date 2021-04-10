@@ -6,14 +6,14 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.date: 06/27/2019
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 1a6274ce36878af6cfbae04be935485c462bc86a
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 34ee7eb25b1d106ea8bb53197d69ca5a9d528773
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98941373"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104871611"
 ---
-# <a name="tutorial-query-apache-hive-with-odbc-and-powershell"></a>Руководство по отправке запросов в Apache Hive с помощью PowerShell и драйвера ODBC
+# <a name="tutorial-query-apache-hive-with-odbc-and-powershell"></a>Руководство. Отправка запросов в Apache Hive с помощью PowerShell и драйвера ODBC
 
 Драйверы Microsoft ODBC обеспечивают гибкий способ взаимодействия с разными типами источников данных, включая Apache Hive. Вы можете написать код на языках сценариев, например PowerShell, использующим драйверы ODBC, чтобы открыть подключение к кластеру Hive, передать выбранный запрос и отобразить результаты.
 
@@ -42,7 +42,7 @@ ms.locfileid: "98941373"
 
 1. В Windows откройте **Пуск** > **Средства администрирования Windows** > **ODBC Data Sources (32-bit)/(64-bit)** (Источники данных ODBC (32-разрядная или 64-разрядная версия)).  Откроется окно **Администратор источников данных ODBC**.
 
-    ![Администратор источника данных ODBC](./media/apache-hive-query-odbc-driver-powershell/hive-odbc-driver-dsn-setup.png "Настройка DSN с помощью администратора источников данных ODBC")
+    :::image type="content" source="./media/apache-hive-query-odbc-driver-powershell/hive-odbc-driver-dsn-setup.png " alt-text="Администратор источника данных ODBC" border="true":::
 
 1. На вкладке **DSN пользователя** выберите **Добавить**, чтобы открыть окно **Создание нового источника данных**.
 
@@ -60,7 +60,7 @@ ms.locfileid: "98941373"
    |  Имя пользователя |Введите имя пользователя HTTP кластера HDInsight. Имя пользователя по умолчанию — **admin**. |
    |  Пароль |Введите пароль пользователя кластера HDInsight. Установите флажок **Save Password (Encrypted)** (Сохранить пароль (зашифрованный)).|
 
-1. Необязательное действие: Выберите **Дополнительные параметры**.  
+1. (Необязательно) Выберите **Дополнительные параметры**.  
 
    | Параметр | Описание |
    | --- | --- |
@@ -68,7 +68,7 @@ ms.locfileid: "98941373"
    |  Строки, загружаемые для каждого блока |При получении большого объема записей включение этого параметра может обеспечить оптимальную производительность. |
    |  Длина столбца строки по умолчанию, длина столбца двоичного кода, масштаб столбца десятичных значений |Длина и точность типа данных может повлиять на способ выведения данных. Это приведет к возврату недопустимой информации из-за потери точности и усечения. |
 
-    ![Дополнительные параметры конфигурации DSN](./media/apache-hive-query-odbc-driver-powershell/odbc-data-source-advanced-options.png "Дополнительные параметры конфигурации DSN")
+    :::image type="content" source="./media/apache-hive-query-odbc-driver-powershell/odbc-data-source-advanced-options.png " alt-text="Дополнительные параметры конфигурации DSN" border="true":::
 
 1. Щелкните **Тест** для проверки источника данных. При правильной настройке источника данных в результате теста отображается **Успешно**.  
 

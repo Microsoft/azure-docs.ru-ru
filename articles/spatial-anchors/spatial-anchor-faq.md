@@ -8,12 +8,12 @@ ms.author: parkerra
 ms.date: 11/20/2020
 ms.topic: overview
 ms.service: azure-spatial-anchors
-ms.openlocfilehash: 01eb0ce83efa54366e027d35d9c3c3bbf86eff7b
-ms.sourcegitcommit: b8eba4e733ace4eb6d33cc2c59456f550218b234
+ms.openlocfilehash: b67dcf038dbe13b8c040f317bb117f3b7a7afdde
+ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95487373"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106384244"
 ---
 # <a name="frequently-asked-questions-about-azure-spatial-anchors"></a>Часто задаваемые вопросы о службе "Пространственные привязки Azure"
 
@@ -80,7 +80,7 @@ ms.locfileid: "95487373"
 
 **Вопрос. Существуют ли ограничения, связанные с регулированием ресурсов?**
 
-**Ответ**. Да, мы используем регулирование ресурсов.  На наш взгляд, эти ограничения не могут быть достигнуты в обычных сценариях разработки и тестирования приложений. Для развертываний в рабочей среде мы готовы поддержать требуемый уровень масштабирования. [Свяжитесь с нами](mailto:azuremrs@microsoft.com) для обсуждения этого вопроса. 
+**Ответ**. Да, мы используем регулирование ресурсов.  На наш взгляд, эти ограничения не могут быть достигнуты в обычных сценариях разработки и тестирования приложений. Для развертываний в рабочей среде мы готовы поддержать требуемый уровень масштабирования. [Свяжитесь с нами](mailto:azuremrscontact@microsoft.com) для обсуждения этого вопроса.
 
 **Вопрос. В каких регионах доступна служба "Пространственные привязки Azure"?**
 
