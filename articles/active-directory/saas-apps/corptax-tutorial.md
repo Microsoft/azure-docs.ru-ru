@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 04/02/2019
 ms.author: jeedes
 ms.openlocfilehash: 4209e609420e610b9f3456da26b0afe0bf839d43
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101689085"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-corptax"></a>Руководство по Интеграция Azure Active Directory с CorpTax
@@ -129,7 +129,7 @@ ms.locfileid: "101689085"
 
     а. В поле **Имя** введите **BrittaSimon**.
 
-    b. В поле **Имя пользователя** введите `brittasimon@<yourcompanydomain.extension>`. Например, `brittasimon@contoso.com`.
+    b. В поле **Имя пользователя** введите `brittasimon@<yourcompanydomain.extension>`. Например: `brittasimon@contoso.com`.
 
     c. Установите флажок **Показать пароль** и запишите значение, которое отображается в поле "Пароль".
 

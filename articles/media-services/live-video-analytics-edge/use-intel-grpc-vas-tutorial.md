@@ -6,12 +6,12 @@ ms.date: 02/04/2021
 ms.service: media-services
 ms.author: faneerde
 author: fvneerden
-ms.openlocfilehash: 20a22d11973f5bb01e2c1345538d5d94ce311dc7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 07a7daf6363f0e528f84635ed6713ac462f89ca5
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103465765"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105562857"
 ---
 # <a name="tutorial-analyze-live-video-by-using-intel-openvino-dl-streamer--edge-ai-extension"></a>Учебник. Анализ прямой видеотрансляции с помощью модуля Edge DL Streamer в Intel OpenVINO™ (расширение ИИ для Edge). 
 
@@ -66,7 +66,7 @@ ms.locfileid: "103465765"
 
 Модуль Edge DL Streamer в Intel OpenVINO™ (расширение ИИ для Edge) представляет собой микрослужбу, основанную на службе Video Analytics Serving (VA Serving) компании Intel, которая обслуживает конвейеры видеоаналитики, созданные с помощью DL Streamer в OpenVINO™. Разработчики могут отправлять декодированные видеокадры в модуль расширения ИИ, который выполняет обнаружение, классификацию или отслеживание и возвращает результаты. Этот модуль расширения ИИ предоставляет API gRPC, совместимые с такими платформами анализа видео, как Аналитика видеотрансляций на базе IoT Edge корпорации Майкрософт. 
 
-Чтобы создавать сложные высокопроизводительные решения для анализа видеотрансляций, Аналитику видеотрансляций в модуле IoT Edge следует связать с мощной подсистемой вывода, которая может использовать масштабирование в пограничной среде. В рамках этого учебника запросы на вывод отправляются в [модуль Edge DL Streamer в Intel OpenVINO™ (расширение ИИ для Edge)](https://aka.ms/lva-intel-openvino-dl-streamer), который предназначен для работы с Аналитикой видеотрансляций в IoT Edge. 
+Чтобы создавать сложные высокопроизводительные решения для анализа видеотрансляций, Аналитику видеотрансляций в модуле IoT Edge следует связать с мощной подсистемой вывода, которая может использовать масштабирование в пограничной среде. В рамках этого учебника запросы на вывод отправляются в [модуль Edge DL Streamer в Intel OpenVINO™ (расширение ИИ для Edge)](), который предназначен для работы с Аналитикой видеотрансляций в IoT Edge. 
 
 В первоначальном выпуске этого сервера вывода можно использовать указанные ниже [модели](https://github.com/intel/video-analytics-serving/tree/master/samples/lva_ai_extension#edge-ai-extension-module-options).
 
@@ -254,7 +254,7 @@ ms.locfileid: "103465765"
 ```
 [IoTHubMonitor] [9:42:18 AM] Message received from [lvaedgesample/lvaEdge]:
 {
-  "sdp": "SDP:\nv=0\r\no=- 1612432131600584 1 IN IP4 172.18.0.6\r\ns=Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\ni=media/homes_00425.mkv\r\nt=0 0\r\na=tool:LIVE555 Streaming Media v2020.08.19\r\na=type:broadcast\r\na=control:*\r\na=range:npt=0-214.166\r\na=x-qt-text-nam:Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\na=x-qt-text-inf:media/homes_00425.mkv\r\nm=video 0 RTP/AVP 96\r\nc=IN IP4 0.0.0.0\r\nb=AS:500\r\na=rtpmap:96 H264/90000\r\na=fmtp:96 packetization-mode=1;profile-level-id=64001F;sprop-parameter-sets=Z2QAH6zZQFAFuwFsgAAAAwCAAAAeB4wYyw==,aOvhEsiw\r\na=control:track1\r\n"
+  "sdp&quot;: &quot;SDP:\nv=0\r\no=- 1612432131600584 1 IN IP4 172.18.0.6\r\ns=Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\ni=media/homes_00425.mkv\r\nt=0 0\r\na=tool:LIVE555 Streaming Media v2020.08.19\r\na=type:broadcast\r\na=control:*\r\na=range:npt=0-214.166\r\na=x-qt-text-nam:Matroska video+audio+(optional)subtitles, streamed by the LIVE555 Media Server\r\na=x-qt-text-inf:media/homes_00425.mkv\r\nm=video 0 RTP/AVP 96\r\nc=IN IP4 0.0.0.0\r\nb=AS:500\r\na=rtpmap:96 H264/90000\r\na=fmtp:96 packetization-mode=1;profile-level-id=64001F;sprop-parameter-sets=Z2QAH6zZQFAFuwFsgAAAAwCAAAAeB4wYyw==,aOvhEsiw\r\na=control:track1\r\n"
 }
 ```
 
@@ -304,7 +304,7 @@ ms.locfileid: "103465765"
           "w": 0.48403296,
           "h": 0.94352424
         },
-        "id": "1"
+        "id&quot;: &quot;1"
       }
     }
 }

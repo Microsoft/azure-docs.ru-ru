@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/22/2020
 ms.author: victorh
 ms.openlocfilehash: 0e3073c491b251a1dbb505d4656de9c6a1e0ac7f
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105048499"
 ---
 # <a name="azure-web-application-firewall-on-azure-front-door"></a>Брандмауэр веб-приложения Azure в Azure Front Door

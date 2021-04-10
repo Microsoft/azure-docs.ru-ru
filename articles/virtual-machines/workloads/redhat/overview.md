@@ -9,10 +9,10 @@ ms.topic: overview
 ms.date: 02/10/2020
 ms.author: alsin
 ms.openlocfilehash: bd8f2e5b825f88d1b0e04ed231b85296ac47e998
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101676045"
 ---
 # <a name="red-hat-workloads-on-azure"></a>Рабочие нагрузки Red Hat в Azure

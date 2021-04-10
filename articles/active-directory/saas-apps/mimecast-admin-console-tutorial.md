@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/15/2021
 ms.author: jeedes
 ms.openlocfilehash: 606665cead215c049e55f22a5f8ff0f668181fb4
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101647208"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-mimecast-admin-console"></a>Руководство по интеграции единого входа Azure Active Directory с консолью администрирования Mimecast

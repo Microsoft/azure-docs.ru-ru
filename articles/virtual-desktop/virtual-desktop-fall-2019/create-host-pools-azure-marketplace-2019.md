@@ -3,15 +3,15 @@ title: Пул узлов Виртуального рабочего стола Wi
 description: Сведения о том, как создать пул узлов Виртуального рабочего стола Windows (классическая версия) с помощью Azure Marketplace.
 author: Heidilohr
 ms.topic: how-to
-ms.date: 03/30/2020
+ms.date: 03/31/2021
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: 04184a658ae1efd03afd3e920818eb5317bc7553
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: d7e0862bd7519f59602f1e769301614895bd6e09
+ms.sourcegitcommit: 9f4510cb67e566d8dad9a7908fd8b58ade9da3b7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "88008599"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106121886"
 ---
 # <a name="tutorial-create-a-host-pool-in-windows-virtual-desktop-classic"></a>Руководство по созданию пула узлов на Виртуальном рабочем столе Windows (классическая версия)
 
@@ -80,10 +80,10 @@ Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 1. Примите значения по умолчанию или укажите количество и размер виртуальных машин.
 
     >[!NOTE]
-    >Если конкретный размер виртуальной машины, который вы ищете, не отображается в селекторе размера, это связано с тем, что мы еще не подключили этот размер к средству Azure Marketplace. Чтобы запросить размер, создайте запрос или проголосуйте за существующий на [форуме UserVoice по Виртуальному рабочему столу Windows](https://windowsvirtualdesktop.uservoice.com/forums/921118-general).
+    >Если конкретный размер виртуальной машины, который вы ищете, не отображается в селекторе размера, это связано с тем, что мы еще не подключили этот размер к средству Azure Marketplace.
 
-1. Введите префикс для имен виртуальных машин. Например, если вы введете имя *prefix*, имена у виртуальных машин будут **prefix-0**, **prefix-1** и т. п.
-1. По завершении выберите **Next: параметры виртуальной машины**.
+2. Введите префикс для имен виртуальных машин. Например, если вы введете имя *prefix*, имена у виртуальных машин будут **prefix-0**, **prefix-1** и т. п.
+3. По завершении выберите **Next: параметры виртуальной машины**.
 
 ### <a name="virtual-machine-settings"></a>Параметры виртуальной машины
 

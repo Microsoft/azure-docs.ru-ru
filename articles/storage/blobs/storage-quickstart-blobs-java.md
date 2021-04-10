@@ -9,10 +9,10 @@ ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.openlocfilehash: b5c34cea5d8222a246462bfadde66fd8a5ddbec7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99054709"
 ---
 # <a name="quickstart-manage-blobs-with-java-v12-sdk"></a>Краткое руководство. Управление большими двоичными объектами с помощью пакета SDK для Java версии 12
