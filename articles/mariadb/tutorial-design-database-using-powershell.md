@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 05/26/2020
 ms.custom: mvc, devx-track-azurepowershell
 ms.openlocfilehash: 9b4500df459e4d4ef67f97dc4fa923988f30401b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98664507"
 ---
 # <a name="tutorial-design-an-azure-database-for-mariadb-using-powershell"></a>Руководство по проектированию Базы данных Azure для MariaDB с помощью PowerShell
@@ -79,7 +79,7 @@ New-AzMariaDbServer -Name mydemoserver -ResourceGroupName myresourcegroup -Sku G
 Значение параметра **SKU** соответствует формату **ценовая-категория\_поколение-вычислительных-ресурсов\_количество-виртуальных-ядер**, как показано в примерах ниже.
 
 - `-Sku B_Gen5_1` — "Базовый", поколение 5, 1 виртуальное ядро; Это номер SKU наименьший по размеру из доступных.
-- `-Sku GP_Gen5_32` — "Общего назначения", поколение 5, 32 виртуальных ядра;
+- `-Sku GP_Gen5_32` — "Общего назначения", поколение 5, 32 виртуальных ядра;
 - `-Sku MO_Gen5_2` — "Оптимизированная для операций в памяти", поколение 5, 2 виртуальных ядра.
 
 См. сведения о допустимых значениях **SKU** по регионам и ценовым категориям в описании [ценовых категорий Базы данных Azure для MariaDB](./concepts-pricing-tiers.md).

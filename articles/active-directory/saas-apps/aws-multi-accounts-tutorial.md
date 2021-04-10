@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/24/2020
 ms.author: jeedes
 ms.openlocfilehash: 0ddcb239ba106bcdc2f0a29d68eb395876fadc06
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100384118"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-amazon-web-services"></a>Учебник по интеграции Azure Active Directory с Amazon Web Services

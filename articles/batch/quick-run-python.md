@@ -7,12 +7,12 @@ ms.custom:
 - seo-python-october2019
 - mvc
 - devx-track-python
-ms.openlocfilehash: e3792a88104c359b014a7a12cf6e48e690c2a865
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e213ec7aee7172bb5ebb49097ad9fd09f9106255
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "88511020"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105046816"
 ---
 # <a name="quickstart-use-python-api-to-run-an-azure-batch-job"></a>Краткое руководство. Выполнение задания пакетной службы Azure с помощью API Python
 
@@ -28,7 +28,7 @@ ms.locfileid: "88511020"
 
 - учетная запись пакетной службы и связанная учетная запись службы хранилища Azure. Чтобы создать эти учетные записи, см. примеры быстрого начала работы с пакетной службой с помощью [портала Azure](quick-create-portal.md) или [Azure CLI](quick-create-cli.md).
 
-- [Python](https://python.org/downloads) версии 2.7, 3.3 или более поздней, включая диспетчер пакетов [pip](https://pip.pypa.io/en/stable/installing/).
+- [Python](https://python.org/downloads) версии 2.7 или 3.6, включая диспетчер пакетов [pip](https://pip.pypa.io/en/stable/installing/).
 
 ## <a name="sign-in-to-azure"></a>Вход в Azure
 

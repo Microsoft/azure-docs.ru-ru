@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 06/07/2019
 ms.author: jeedes
 ms.openlocfilehash: e9ee994564e175d3c41cfd5ce415ead8c67df353
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100103572"
 ---
 # <a name="tutorial-configure-smartsheet-for-automatic-user-provisioning"></a>Руководство по настройке автоматической подготовки пользователей в Smartsheet

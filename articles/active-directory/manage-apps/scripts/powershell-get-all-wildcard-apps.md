@@ -12,10 +12,10 @@ ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 944fe9606963c4d4fb9ec41e4d1a87ab62d1bc6b
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102548986"
 ---
 # <a name="get-all-application-proxy-apps-using-wildcard-publishing"></a>Получение всех приложений прокси приложения, которые используют публикацию с подстановочными знаками
