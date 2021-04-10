@@ -10,10 +10,10 @@ ms.date: 06/30/2020
 ms.author: midesa
 ms.reviewer: jrasnick
 ms.openlocfilehash: 89309cfe427183d594a5cc2f76332ae150d4f803
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102498682"
 ---
 # <a name="tutorial-train-a-model-in-python-with-automated-machine-learning"></a>Руководство. Обучение модели на Python с помощью автоматизированного машинного обучения

@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 07/17/2020
 ms.author: hahamil
 ms.custom: aaddev, scenarios:getting-started, languages:JavaScript, devx-track-js
-ms.openlocfilehash: dcb82e6cc50a2ff3291d5a900ec9367d69dcdde6
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.openlocfilehash: 1e99e8ff25d895ba2248ddd1ba2520e9f14871a7
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103224917"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105022812"
 ---
 # <a name="quickstart-sign-in-users-and-get-an-access-token-in-a-javascript-spa-using-the-auth-code-flow-with-pkce"></a>Краткое руководство. Реализация входа пользователей и получение маркера доступа в SPA JavaScript с помощью потока кода авторизации и PKCE 
 
@@ -25,7 +25,7 @@ ms.locfileid: "103224917"
 
 Иллюстрацию см. в разделе [Как работает этот пример](#how-the-sample-works).
 
-В этом кратком руководстве используется MSAL.js версии 2.0 с потоком кода авторизации. Есть аналогичное руководство для MSAL.js версии 1.0 с неявным потоком: [Краткое руководство. Вход пользователей в одностраничных приложениях JavaScript](./quickstart-v2-javascript.md).
+В этом кратком руководстве используется MSAL.js версии 2.0 с потоком кода авторизации. Есть аналогичное руководство для MSAL.js версии 1 с неявным потоком: [Краткое руководство. Вход пользователей в одностраничных приложениях JavaScript](./quickstart-v2-javascript.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

@@ -12,10 +12,10 @@ ms.date: 02/18/2021
 ms.author: kenwith
 ms.reviewer: mifarca
 ms.openlocfilehash: f5f7ec8245a43440a400b9ca6b55bf1093eb62cc
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102636194"
 ---
 # <a name="azure-active-directory-powershell-examples-for-application-management"></a>Пример PowerShell для управления приложениями в Azure Active Directory

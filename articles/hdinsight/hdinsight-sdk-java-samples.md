@@ -1,18 +1,18 @@
 ---
-title: 'Azure HDInsight: Примеры для Java'
+title: Azure HDInsight. Примеры для Java
 description: См. примеры Java на GitHub для выполнения распространенных задач с использованием пакета SDK HDInsight для Java.
 ms.custom: devx-track-java
 ms.service: hdinsight
 ms.topic: sample
 ms.date: 11/29/2019
 ms.openlocfilehash: 178767847757660163515ec286eba48e1050f506
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931903"
 ---
-# <a name="azure-hdinsight-java-samples"></a>Azure HDInsight: Примеры для Java
+# <a name="azure-hdinsight-java-samples"></a>Azure HDInsight. Примеры для Java
 
 > [!div class="op_single_selector"]
 > * [Примеры Java](hdinsight-sdk-java-samples.md)
@@ -20,14 +20,14 @@ ms.locfileid: "98931903"
 > * [Примеры Python](hdinsight-sdk-python-samples.md)
 <!-- * [Go Examples](hdinsight-sdk-dotnet-samples.md)-->
 
-Эта статья содержит:
+В этой статье приводится следующее:
 
 * Ссылки на примеры для задач создания кластера.
 * Ссылки на справочные материалы для других задач управления.
 
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [Пакет SDK Azure HDInsight для Java](/java/api/overview/azure/hdinsight#sdk-installation)
 

@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.custom: mvc, subject-armqs
 ms.date: 05/28/2020
 ms.openlocfilehash: 2e8e7890adcb6b91d79bbf4e119488e365410d3c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98020083"
 ---
 # <a name="quickstart-create-an-azure-stream-analytics-job-by-using-an-arm-template"></a>Краткое руководство. Создание задания Azure Stream Analytics с помощью шаблона ARM

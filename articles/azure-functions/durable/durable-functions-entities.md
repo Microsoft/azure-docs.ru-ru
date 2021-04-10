@@ -6,10 +6,10 @@ ms.topic: overview
 ms.date: 12/17/2019
 ms.author: azfuncdf
 ms.openlocfilehash: c898444659c2ce071163e9ab774a4534f8c51a9c
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102632056"
 ---
 # <a name="entity-functions"></a>Функции сущностей

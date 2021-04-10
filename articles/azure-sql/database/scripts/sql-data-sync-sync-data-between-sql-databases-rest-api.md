@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: ef2823b870f76922dd0dc157341aea9b502fb4bb
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: d3ff8114c11b224a0bdbb0bd2d0e5686a7e57b55
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103564563"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105565917"
 ---
 # <a name="use-rest-api-to-sync-data-between-multiple-databases"></a>Использование REST API для синхронизации данных между несколькими базами данных 
 
@@ -31,7 +31,7 @@ ms.locfileid: "103564563"
 
 ## <a name="create-sync-group"></a>Создание группы синхронизации
 
-Используйте шаблон [создания или обновления](https://docs.microsoft.com/rest/api/sql/syncgroups/createorupdate), чтобы создать группу синхронизации.
+Используйте шаблон [создания или обновления](/rest/api/sql/syncgroups/createorupdate), чтобы создать группу синхронизации.
  
 При создании группы синхронизации не передавайте в нее схему синхронизации (таблицы и столбцы) или значение masterSyncMemberName, так как на этот момент группа синхронизации еще не имеет сведений о таблицах и столбцах.
 
@@ -91,7 +91,7 @@ PUT https://management.azure.com/subscriptions/00000000-1111-2222-3333-444444444
 
 ## <a name="create-sync-member"></a>Создание участника синхронизации
 
-Используйте шаблон [создания или обновления](https://docs.microsoft.com/rest/api/sql/syncmembers/createorupdate), чтобы создать участник синхронизации.
+Используйте шаблон [создания или обновления](/rest/api/sql/syncmembers/createorupdate), чтобы создать участник синхронизации.
 
 Пример запроса для создания участника синхронизации:
 
@@ -151,7 +151,7 @@ PUT https://management.azure.com/subscriptions/00000000-1111-2222-3333-444444444
 
 После успешного создания группы синхронизации обновите схему, используя следующие шаблоны.
 
-Шаблон [обновления схемы центральной базы данных](https://docs.microsoft.com/rest/api/sql/syncgroups/refreshhubschema) позволяет обновить схему для центральной базы данных. 
+Шаблон [обновления схемы центральной базы данных](/rest/api/sql/syncgroups/refreshhubschema) позволяет обновить схему для центральной базы данных. 
 
 Пример запроса для обновления схему центральной базы данных: 
 
@@ -165,17 +165,17 @@ POST https://management.azure.com/subscriptions/00000000-1111-2222-3333-44444444
 
 Код состояния: 202.
 
-Шаблон [списка схем центральной базы данных](https://docs.microsoft.com/rest/api/sql/syncgroups/listhubschemas) позволяет вывести список схем для центральной базы данных. 
+Шаблон [списка схем центральной базы данных](/rest/api/sql/syncgroups/listhubschemas) позволяет вывести список схем для центральной базы данных. 
 
-Шаблон [обновления схемы участника](https://docs.microsoft.com/rest/api/sql/syncmembers/refreshmemberschema) позволяет обновить схему базы данных участника. 
+Шаблон [обновления схемы участника](/rest/api/sql/syncmembers/refreshmemberschema) позволяет обновить схему базы данных участника. 
 
-Шаблон [списка схем участника](https://docs.microsoft.com/rest/api/sql/syncmembers/listmemberschemas) позволяет вывести список схем для базы данных участника. 
+Шаблон [списка схем участника](/rest/api/sql/syncmembers/listmemberschemas) позволяет вывести список схем для базы данных участника. 
 
 Переходите к следующему шагу только после успешного обновления схемы. 
 
 ## <a name="update-sync-group"></a>Обновление группы синхронизации 
 
-Используйте шаблон [создания или обновления](https://docs.microsoft.com/rest/api/sql/syncgroups/createorupdate), чтобы обновить группу синхронизации.
+Используйте шаблон [создания или обновления](/rest/api/sql/syncgroups/createorupdate), чтобы обновить группу синхронизации.
 
 Для обновления группы синхронизации укажите схему синхронизации. Укажите новую схему и значение masterSyncMemberName, которое определяет имя для хранения нужной схемы. 
 
@@ -232,7 +232,7 @@ PUT https://management.azure.com/subscriptions/00000000-1111-2222-3333-444444444
 ```
 ## <a name="update-sync-member"></a>Обновление участника синхронизации
 
-Используйте шаблон [создания или обновления](https://docs.microsoft.com/rest/api/sql/syncmembers/createorupdate), чтобы обновить участник синхронизации.
+Используйте шаблон [создания или обновления](/rest/api/sql/syncmembers/createorupdate), чтобы обновить участник синхронизации.
 
 Пример запроса для обновления участника синхронизации: 
 
@@ -291,7 +291,7 @@ PUT https://management.azure.com/subscriptions/00000000-1111-2222-3333-444444444
 
 ## <a name="trigger-sync"></a>Активация синхронизации
 
-Используйте шаблон [активации синхронизации](https://docs.microsoft.com/rest/api/sql/syncgroups/triggersync) для активации операции синхронизации.
+Используйте шаблон [активации синхронизации](/rest/api/sql/syncgroups/triggersync) для активации операции синхронизации.
 
 Пример запроса для активации операции синхронизации: 
 

@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 03/10/2021
 ms.custom: template-tutorial
 ms.openlocfilehash: 5dd431a5a7377c409be0794511c5f402d1c5a3a9
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102636797"
 ---
 # <a name="tutorial-create-a-nat-gateway-using-the-azure-cli"></a>Учебник. Создание шлюза NAT с помощью Azure CLI
@@ -158,7 +158,7 @@ az vm create \
 
 ## <a name="test-nat-gateway"></a>Тестирование шлюза NAT
 
-Используя сведения из этого раздела мы протестируем шлюз NAT. Сначала мы определим общедоступный IP-адрес шлюза NAT. Затем мы подключимся к тестовой виртуальной машине и проверим исходящее подключение через шлюз NAT.
+Используя сведения из этого раздела, мы протестируем шлюз NAT. Сначала мы определим общедоступный IP-адрес шлюза NAT. Затем мы подключимся к тестовой виртуальной машине и проверим исходящее подключение через шлюз NAT.
     
 1. Войдите на [портал Azure](https://portal.azure.com)
 

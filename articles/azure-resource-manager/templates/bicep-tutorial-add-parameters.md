@@ -6,10 +6,10 @@ ms.date: 03/10/2021
 ms.topic: tutorial
 ms.author: jgao
 ms.openlocfilehash: 00df2ffc6272011127c5a1eb0c1e302011f8de5f
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102632787"
 ---
 # <a name="tutorial-add-parameters-to-azure-resource-manager-bicep-file"></a>Учебник. Добавление параметров в Bicep-файл Azure Resource Manager

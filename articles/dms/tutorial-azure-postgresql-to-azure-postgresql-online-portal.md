@@ -13,10 +13,10 @@ ms.custom: seo-lt-2019
 ms.topic: tutorial
 ms.date: 07/21/2020
 ms.openlocfilehash: 996523d507f0a4f2850e936df39a38769bc47cde
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101091298"
 ---
 # <a name="tutorial-migrateupgrade-azure-db-for-postgresql---single-server-to-azure-db-for-postgresql---single-server--online-using-dms-via-the-azure-portal"></a>Руководство по миграции и переходу с одной базы данных Azure для PostgreSQL (Отдельный сервер) на другую (более новую) по сети с помощью Database Migration Service и портала Azure.
@@ -259,13 +259,13 @@ Azure Database Migration Service позволяет с минимальным п
 
     ![Экран сводных данных по миграции](media/tutorial-azure-postgresql-to-azure-postgresql-online-portal/dms-migration-summary.png)
 
-## <a name="run-the-migration"></a>Выполнение миграции
+## <a name="run-the-migration&quot;></a>Выполнение миграции
 
 * Выберите **Запустить миграцию**.
 
-Откроется окно "Действие миграции", а для действия в поле **Состояние** отобразится надпись **Выполняется резервное копирование**. При обновлении Базы данных Azure для PostgreSQL 9.5 или 9.6 может возникнуть следующая ошибка:
+Откроется окно &quot;Действие миграции&quot;, а для действия в поле **Состояние** отобразится надпись **Выполняется резервное копирование**. При обновлении Базы данных Azure для PostgreSQL 9.5 или 9.6 может возникнуть следующая ошибка:
 
-**A scenario reported an unknown error. 28000: no pg_hba.conf entry for replication connection from host "40.121.141.121", user "sr"** (Неизвестная ошибка сценария. 28000: отсутствует запись pg_hba.conf для подключения репликации с узла "40.121.141.121", пользователь "sr").
+**A scenario reported an unknown error. 28000: no pg_hba.conf entry for replication connection from host &quot;40.121.141.121&quot;, user &quot;sr&quot;** (Неизвестная ошибка сценария. 28000: отсутствует запись pg_hba.conf для подключения репликации с узла &quot;40.121.141.121&quot;, пользователь &quot;sr").
 
 Причина в том, что у PostgreSQL нет необходимых прав для создания требуемых артефактов логической репликации. Чтобы включить необходимые привилегии, можно сделать следующее:
 

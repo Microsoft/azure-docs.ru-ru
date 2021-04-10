@@ -1,18 +1,18 @@
 ---
-title: Краткое руководство. Выполнение скрипта R в службах Машинного обучения с помощью консоли R в Azure HDInsight
+title: Краткое руководство. Выполнение скрипта R в Службы машинного обучения с помощью консоли R в Azure HDInsight
 description: В этом кратком руководстве содержатся сведения о выполнении сценария R в кластере служб машинного обучения в Azure HDInsight с помощью консоли R.
 ms.service: hdinsight
 ms.topic: quickstart
 ms.date: 06/19/2019
 ms.custom: mvc
 ms.openlocfilehash: eac6fd14acfe12a0f505419a229bb78e423706d1
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98935735"
 ---
-# <a name="quickstart-execute-an-r-script-on-an-ml-services-cluster-in-azure-hdinsight-using-r-console"></a>Краткое руководство. Выполнение сценария R в кластере служб машинного обучения в Azure HDInsight с помощью консоли R
+# <a name="quickstart-execute-an-r-script-on-an-ml-services-cluster-in-azure-hdinsight-using-r-console"></a>Краткое руководство. Выполнение скрипта R в кластере Службы машинного обучения в Azure HDInsight с помощью консоли R
 
 Службы машинного обучения в Azure HDInsight позволяют сценариям R использовать Apache Spark и Apache Hadoop MapReduce для выполнения распределенных вычислений. Службы машинного обучения управляют выполнением вызовов, задавая контекст вычисления. Для подключения к кластеру и выполнения скриптов на языке R удобно использовать граничный узел кластеров. На граничном узле вы можете выполнять распараллеленные распределенные функции RevoScaleR на ядрах сервера граничного узла. Кроме того, вы можете выполнять эти функции на узлах кластера с помощью контекста вычислений Hadoop Map Reduce или Apache Spark RevoScaleR.
 
@@ -147,7 +147,7 @@ ms.locfileid: "98935735"
     
       ---
     
-      Signif. codes:  0 ‘**_’ 0.001 ‘_*’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+      Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
     
       Condition number of final variance-covariance matrix: 11904202
       Number of iterations: 7
@@ -190,4 +190,4 @@ ms.locfileid: "98935735"
 В рамках этого краткого руководства вы узнали, как с помощью консоли R запустить сценарий R, который содержит примеры использования Spark для распределенных вычислений R.  Ознакомьтесь со следующей статьей, содержащей сведения о параметрах, которые доступны для указания необходимости и способа выполнения параллелизации между ядрами граничного узла или кластера HDInsight.
 
 > [!div class="nextstepaction"]
->[Варианты контекста вычислений для Служб машинного обучения в HDInsight](./r-server-compute-contexts.md)
+>[Параметры контекста вычислений для Служб машинного обучения в HDInsight](./r-server-compute-contexts.md)

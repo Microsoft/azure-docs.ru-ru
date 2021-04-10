@@ -1,18 +1,18 @@
 ---
-title: 'Azure HDInsight: Примеры для Python'
+title: Azure HDInsight. Примеры для Python
 description: На портале GitHub ознакомьтесь с примерами Python для выполнения распространенных задач с использованием пакета SDK HDInsight для Python.
 ms.service: hdinsight
 ms.topic: sample
 ms.date: 11/08/2019
 ms.custom: devx-track-python
 ms.openlocfilehash: 1a15a8d343398dce7a049622b53ca5e2b2c217eb
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931882"
 ---
-# <a name="azure-hdinsight-python-samples"></a>Azure HDInsight: Примеры для Python
+# <a name="azure-hdinsight-python-samples"></a>Azure HDInsight. Примеры для Python
 
 > [!div class="op_single_selector"]
 > * [Примеры Python](hdinsight-sdk-python-samples.md)
@@ -23,14 +23,14 @@ ms.locfileid: "98931882"
 > [!Important]
 > Версия Python 2.7 будет объявлена устаревшей 1 января 2020 г. Если вы по-прежнему используете Python 2.7, обновите его до версии 3.7, чтобы использовать пакет SDK для HDInsight для Python.  
 
-Эта статья содержит:
+В этой статье приводится следующее:
 
 * Ссылки на примеры для задач создания кластера.
 * Ссылки на справочные материалы для других задач управления.
 
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [Пакет SDK Azure HDInsight для Python](/python/api/overview/azure/hdinsight#sdk-installation)
 
