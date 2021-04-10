@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для виртуальной сети Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для виртуальной сети Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: reference
 author: KumudD
 ms.author: kumud
 ms.service: virtual-network
 ms.custom: subject-policy-reference
-ms.openlocfilehash: e763a1a8a69c5887f1e05ac314e104492c98be5d
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
-ms.translationtype: MT
+ms.openlocfilehash: 591af87cf9e7fc3c1006c203e727800c5ae8cb61
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105037671"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088972"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-virtual-network"></a>Встроенные определения в Политике Azure для виртуальной сети Azure
 

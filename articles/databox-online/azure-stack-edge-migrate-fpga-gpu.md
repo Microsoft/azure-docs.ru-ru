@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 03/11/2021
 ms.author: alkohli
-ms.openlocfilehash: 24d6528a105d593d1cb4c9c66d981c8787f85633
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.openlocfilehash: 430e34a1ca631be00ef46170affd4b56c79894a9
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103573288"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105566410"
 ---
 # <a name="migrate-workloads-from-an-azure-stack-edge-pro-fpga-to-an-azure-stack-edge-pro-gpu"></a>Миграция рабочих нагрузок с Azure Stack Edge Pro с ППВМ на Azure Stack Edge Pro с GPU
 
@@ -173,7 +173,7 @@ ms.locfileid: "103573288"
 
 1. [Настройте устройство, чтобы оно выполняло вычисления](azure-stack-edge-gpu-deploy-configure-compute.md).
 1. Добавьте все локальные общие папки на целевое устройство. Подробные инструкции см. в разделе [Добавление локальной общей папки](azure-stack-edge-gpu-manage-shares.md#add-a-local-share).
-1. При обращении к общим ресурсам SMB на исходном устройстве будут использоваться IP-адреса, когда же на целевом устройстве — имя устройства. См. раздел [Подключение к общей папке SMB с устройства Azure Stack Edge Pro с GPU](azure-stack-edge-j-series-deploy-add-shares.md#connect-to-an-smb-share). Чтобы подключиться к общим папкам NFS с целевого устройства, необходимо использовать новые IP-адреса, связанные с устройством. См. раздел [Подключение к общей папке NFS с устройства Azure Stack Edge Pro с GPU](azure-stack-edge-j-series-deploy-add-shares.md#connect-to-an-nfs-share). 
+1. При обращении к общим ресурсам SMB на исходном устройстве будут использоваться IP-адреса, когда же на целевом устройстве — имя устройства. См. раздел [Подключение к общей папке SMB с устройства Azure Stack Edge Pro с GPU](./azure-stack-edge-gpu-deploy-add-shares.md#connect-to-an-smb-share). Чтобы подключиться к общим папкам NFS с целевого устройства, необходимо использовать новые IP-адреса, связанные с устройством. См. раздел [Подключение к общей папке NFS с устройства Azure Stack Edge Pro с GPU](./azure-stack-edge-gpu-deploy-add-shares.md#connect-to-an-nfs-share). 
 
     Если вы копировали данные из общих папок на промежуточный сервер по протоколу SMB или NFS, теперь вы можете скопировать эти данные с промежуточного сервера в общие папки на целевом устройстве. Если исходное и целевое устройства *имеют подключение к Интернету*, данные можно скопировать напрямую.
 
