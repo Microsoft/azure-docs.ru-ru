@@ -2,20 +2,20 @@
 title: Копирование Synapse Link для данных Azure Cosmos DB в выделенный пул SQL с помощью Apache Spark
 description: Загрузка данных в кадр данных Spark, их курирование и загрузка в таблицу выделенного пула SQL
 services: synapse-analytics
-author: ArnoMicrosoft
+author: Rodrigossz
 ms.service: synapse-analytics
 ms.topic: quickstart
 ms.subservice: synapse-link
 ms.date: 08/10/2020
-ms.author: acomet
+ms.author: rosouz
 ms.reviewer: jrasnick
 ms.custom: cosmos-db
-ms.openlocfilehash: 755782b117ef5a5619ddde3e1573fe1805117e77
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: ff04d43e72d4eca9800b330d5a4721ba951c85f9
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104868568"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105627648"
 ---
 # <a name="copy-data-from-azure-cosmos-db-into-a-dedicated-sql-pool-using-apache-spark"></a>Копирование данных из Azure Cosmos DB в выделенный пул SQL с помощью Apache Spark
 

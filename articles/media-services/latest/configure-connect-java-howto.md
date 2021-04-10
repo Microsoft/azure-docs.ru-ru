@@ -14,12 +14,12 @@ ms.topic: quickstart
 ms.date: 11/17/2020
 ms.custom: devx-track-java
 ms.author: inhenkel
-ms.openlocfilehash: 769b4bc431040ee4d872fa60270196db96978ed2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 06923d7c198edc324d85b726cf91694d8cf7e1ca
+ms.sourcegitcommit: edc7dc50c4f5550d9776a4c42167a872032a4151
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94748188"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105961359"
 ---
 # <a name="connect-to-media-services-v3-api---java"></a>Подключение к API Служб мультимедиа версии 3 из Java
 
@@ -37,7 +37,7 @@ ms.locfileid: "94748188"
    - Apache Maven
    - Пакет расширения Java
 - Убедитесь, что заданы переменные среды `JAVA_HOME` и `PATH`.
-- [Создание учетной записи Служб мультимедиа](./create-account-howto.md). Обязательно запомните имя группы ресурсов и имя учетной записи Служб мультимедиа.
+- [Создание учетной записи Служб мультимедиа](./account-create-how-to.md). Обязательно запомните имя группы ресурсов и имя учетной записи Служб мультимедиа.
 - Выполните действия, описанные в разделе [Доступ к API](./access-api-howto.md). Запишите идентификатор подписки, идентификатор приложения (идентификатор клиента), ключ проверки подлинности (секрет) и идентификатор клиента, которые понадобятся вам на более позднем этапе.
 
 Кроме того, ознакомьтесь со следующими разделами:
