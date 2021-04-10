@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/14/2020
 ms.author: mbullwin
 ms.openlocfilehash: d257633a8218399cab1d40ab8e8fb3d819e1922d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102051741"
 ---
 # <a name="metrics-advisor-whats-new-in-the-docs"></a>Помощник по метрикам — изменения в документации

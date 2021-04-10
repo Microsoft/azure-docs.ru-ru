@@ -4,10 +4,10 @@ description: Сведения о том, как создать и разверн
 ms.topic: tutorial
 ms.date: 02/22/2021
 ms.openlocfilehash: ed916305cd1a67162f07c24e3bf97766e5389b74
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103462173"
 ---
 # <a name="tutorial-deploy-an-azure-vmware-solution-private-cloud"></a>Руководство. Развертывание частного облака Решения Azure VMware

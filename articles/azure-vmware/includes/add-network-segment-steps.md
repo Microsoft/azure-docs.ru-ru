@@ -4,10 +4,10 @@ description: Инструкции по добавлению сегмента с�
 ms.topic: include
 ms.date: 03/13/2021
 ms.openlocfilehash: 14d698413d31af2dcbbdea5f37ec7f24f65199ad
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103462136"
 ---
 <!-- Used in manage-dhcp.md and tutorial-nsx-t-network-segment.md -->

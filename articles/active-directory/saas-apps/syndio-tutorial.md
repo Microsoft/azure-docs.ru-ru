@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/05/2021
 ms.author: jeedes
 ms.openlocfilehash: 3b5585b32771d5515b283fb4aa124aa8ef3184f2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98736545"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-syndio"></a>Руководство по Интеграция единого входа Azure Active Directory с Syndio
