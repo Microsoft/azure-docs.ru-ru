@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 03/04/2021
 ms.author: trbye
 ms.custom: devx-track-js
-ms.openlocfilehash: dd92cf24cf007418e52cb5091eb390b46d7a5571
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 5a8065daca11e5b79f02510f82ab622c8fb1af2d
+ms.sourcegitcommit: 91361cbe8fff7c866ddc4835251dcbbe2621c055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104988275"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105729774"
 ---
 Одной из основных функций службы "Речь" является распознавание и преобразование человеческой речи (часто это называется преобразованием речи в текст). Из этого краткого руководство вы узнаете, как использовать пакет SDK для службы "Речь" в приложениях и продуктах для выполнения высококачественного преобразования речи в текст.
 
@@ -26,7 +26,7 @@ ms.locfileid: "104988275"
 
 ## <a name="install-the-speech-sdk"></a>Установка пакета SDK службы "Речь"
 
-Прежде чем выполнять какие-либо действия, установите пакет SDK службы "Речь" для Node.js. Если вам только нужно имя пакета для установки, выполните команду `npm install microsoft-cognitiveservices-speech-sdk`. Пошаговые инструкции по установке см. в статье по [началу работы](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=dotnet%2Clinux%2Cjre%2Cnodejs&pivots=programming-language-javascript).
+Прежде чем выполнять какие-либо действия, установите пакет SDK службы "Речь" для Node.js. Если вам только нужно имя пакета для установки, выполните команду `npm install microsoft-cognitiveservices-speech-sdk`. Пошаговые инструкции по установке см. в статье по [началу работы](../../../quickstarts/setup-platform.md?pivots=programming-language-javascript&tabs=dotnet%2clinux%2cjre%2cnodejs).
 
 Воспользуйтесь следующим оператором `require`, чтобы импортировать пакет SDK.
 
@@ -62,7 +62,7 @@ const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription
 
 ## <a name="recognize-from-file"></a>Распознавание речи из файла 
 
-Чтобы распознать речь из аудиофайла, создайте с помощью `fromWavFileInput()` объект `AudioConfig`, который принимает объект `Buffer`. Затем инициализируйте [`SpeechRecognizer`](https://docs.microsoft.com/javascript/api/microsoft-cognitiveservices-speech-sdk/speechrecognizer?view=azure-node-latest), передав `audioConfig` и `speechConfig`.
+Чтобы распознать речь из аудиофайла, создайте с помощью `fromWavFileInput()` объект `AudioConfig`, который принимает объект `Buffer`. Затем инициализируйте [`SpeechRecognizer`](/javascript/api/microsoft-cognitiveservices-speech-sdk/speechrecognizer), передав `audioConfig` и `speechConfig`.
 
 ```javascript
 const fs = require('fs');

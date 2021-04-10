@@ -8,12 +8,12 @@ ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.custom: devx-track-csharp
-ms.openlocfilehash: bb26a865ab8b8beba99fcba51e2d05e166b1e84b
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 82dcfa0942f21f01424c4744aa0b23f4672a135f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102095363"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105106723"
 ---
 # <a name="quickstart-azure-blob-storage-client-library-v12-for-net"></a>Краткое руководство. Использование библиотеки Хранилища BLOB-объектов Azure версии 12 для .NET
 
@@ -164,7 +164,7 @@ dotnet add package Azure.Storage.Blobs
 
 ### <a name="download-blobs"></a>Скачивание больших двоичных объектов
 
-Скачайте созданный ранее большой двоичный объект, вызвав метод [DownloadAsync](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.downloadasync). Пример кода добавляет суффикс "DOWNLOADED" к имени файла, чтобы в локальной файловой системе можно было просмотреть оба файла.
+Скачайте созданный ранее большой двоичный объект, вызвав метод [DownloadAsync](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.downloadtoasync). Пример кода добавляет суффикс "DOWNLOADED" к имени файла, чтобы в локальной файловой системе можно было просмотреть оба файла.
 
 Добавьте следующий код в конец метода `Main`.
 
