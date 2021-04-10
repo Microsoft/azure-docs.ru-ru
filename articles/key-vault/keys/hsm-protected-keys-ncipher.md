@@ -11,10 +11,10 @@ ms.topic: tutorial
 ms.date: 02/24/2021
 ms.author: ambapat
 ms.openlocfilehash: f7761cf011a3a678bb7609e1063ac6ebec90d395
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102499192"
 ---
 # <a name="import-hsm-protected-keys-for-key-vault-ncipher"></a>Создание и перемещение ключей, защищенных модулем HSM, для Key Vault (nCipher)

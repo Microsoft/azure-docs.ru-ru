@@ -12,12 +12,12 @@ ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aeff14e1676389eb2204cad45ea7b00d5aa9796b
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: e5189df623325578bb3b579f5c4c3456067986ff
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102566657"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105709486"
 ---
 # <a name="azure-ad-powershell-examples-for-azure-ad-application-proxy"></a>Примеры Azure AD PowerShell для прокси приложения Azure AD
 
@@ -32,7 +32,7 @@ ms.locfileid: "102566657"
 | [Вывод основных сведений обо всех приложениях прокси приложения](scripts/powershell-get-all-app-proxy-apps-basic.md) | Выводит список основных сведений (AppId, DisplayName, ObjId) по всем приложениям прокси приложения в каталоге. |
 | [Вывод подробных сведений обо всех приложениях прокси приложения](scripts/powershell-get-all-app-proxy-apps-extended.md) | Выводит список подробных сведений (AppId, DisplayName, ExternalUrl, InternalUrl, ExternalAuthenticationType) обо всех приложениях прокси приложения в каталоге.  |
 | [Получение списка приложений прокси приложения по группам соединителей](scripts/powershell-get-all-app-proxy-apps-by-connector-group.md) | Выводит сведения обо всех приложениях прокси приложения в каталоге с информацией о том, каким группам соединителей назначены эти приложения. |
-| [Получение всех приложений прокси приложения с политикой срока действия маркеров](scripts/powershell-get-all-app-proxy-apps-with-policy.md) | Выводит список всех приложений прокси приложения в каталоге, для которых применяется политика срока действия маркера, и сведения об этой политике. Для работы с этим примером требуется [предварительная версия модуля Azure AD PowerShell (версии 2) для Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview). |
+| [Получение всех приложений прокси приложения с политикой срока действия маркеров](scripts/powershell-get-all-app-proxy-apps-with-policy.md) | Выводит список всех приложений прокси приложения в каталоге, для которых применяется политика срока действия маркера, и сведения об этой политике. Для работы с этим примером требуется [предварительная версия модуля Azure AD PowerShell (версии 2) для Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true). |
 |**Группы соединителей**||
 | [Получение всех групп соединителей и соединителей в каталоге](scripts/powershell-get-all-connectors.md) | Выводит список всех групп соединителей и соединителей в каталоге. |
 | [Перемещение всех приложений, назначенных группе соединителей, в другую группу соединителей](scripts/powershell-move-all-apps-to-connector-group.md) | Перемещает все приложения, в этот момент назначенные некоторой группе соединителей, в другую группу соединителей. |
