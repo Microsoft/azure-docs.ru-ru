@@ -7,12 +7,12 @@ ms.author: dademath
 ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 093fcfd95d291d959ed49cc39a227a99f14a0383
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 798b898f6e2367e3096bcf985715fd48de3d394f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103488250"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105930223"
 ---
 # <a name="quickstart-create-your-own-ui-framework-component"></a>Краткое руководство. Создание собственного компонента инфраструктуры пользовательского интерфейса
 
@@ -47,7 +47,7 @@ cd my-app
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Используйте команду `npm install`, чтобы установить клиентскую библиотеку Служб коммуникации для реализации вызовов на JavaScript. Переместите предоставленный архив tarball (закрытая предварительная версия) в каталог my-app.
+Используйте команду `npm install`, чтобы установить пакет SDK Служб коммуникации Azure для реализации вызовов на JavaScript. Переместите предоставленный архив tarball (закрытая предварительная версия) в каталог my-app.
 
 ```console
 
@@ -71,7 +71,7 @@ npm run start
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки пользовательского интерфейса Служб коммуникации Azure:
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK пользовательского интерфейса Служб коммуникации Azure:
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |

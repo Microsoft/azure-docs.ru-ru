@@ -10,10 +10,10 @@ ms.date: 11/20/2020
 ms.author: gaursa
 ms.custom: azure-synapse
 ms.openlocfilehash: c17bfc06e76bad7730707530001ebeccea539c37
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104602270"
 ---
 # <a name="quickstart-create-a-synapse-sql-pool-with-azure-cli"></a>Краткое руководство. Создание пула SQL Synapse с помощью Azure CLI

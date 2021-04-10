@@ -12,14 +12,15 @@ ms.devlang: na
 ms.topic: tutorial
 ms.date: 09/24/2020
 ms.author: duau
-ms.openlocfilehash: e153edd807dcb119c34f60dc34e33fed510916bb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6abed66a5fbd9987e5a8a677dde7b4a77589e907
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96011529"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106065052"
 ---
 # <a name="tutorial-add-a-custom-domain-to-your-front-door"></a>Руководство по Добавление личного домена в службу Front Door
+
 В этом руководстве показано, как добавить личный домен в службу Front Door. При использовании службы Azure Front Door для доставки приложения, если вы хотите обеспечить видимость своего доменного имени в запросе пользователя, требуется личный домен. Видимое доменное имя удобно для клиентов и эффективно используется для популяризации бренда.
 
 После создания Front Door стандартный узел внешнего интерфейса, который является поддоменом `azurefd.net`, по умолчанию включается в URL-адрес для доставки содержимого Front Door из серверной части (например, https:\//contoso-frontend.azurefd.net/activeusers.htm). Для удобства Azure Front Door предоставляет возможность связать личный домен с узлом по умолчанию. Благодаря этой возможности можно отправить содержимое с личным доменом в URL-адресе, а не именем домена владельца Front Door (например, https:\//www.contoso.com/photo.png). 

@@ -8,10 +8,10 @@ ms.service: vpn-gateway
 ms.topic: tutorial
 ms.date: 12/04/2020
 ms.openlocfilehash: ccb43c3e7efb9289450ad9a71c003f54e5362b66
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98945214"
 ---
 # <a name="tutorial-create-a-site-to-site-connection-in-the-azure-portal"></a>Руководство по Создание подключения типа "сеть — сеть" на портале Azure

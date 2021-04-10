@@ -1,6 +1,6 @@
 ---
 title: H264 Single Bitrate Low Quality SD для Android | Документация Майкрософт
-description: В этом разделе приводятся общие сведения о предустановке задач H264 Single bitrate односкоростного **SD для Android с низким качеством** .
+description: Этот раздел содержит общие сведения о предустановке задачи **H264 Single Bitrate Low Quality SD for Android**.
 author: IngridAtMicrosoft
 manager: femila
 editor: ''
@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 4c32fc01b2011d49dc50a67edc98227f5b31750c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103011720"
 ---
 # <a name="h264-single-bitrate-low-quality-sd-for-android"></a>H264 Single Bitrate Low Quality SD для Android
