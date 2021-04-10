@@ -5,12 +5,12 @@ author: rashi-ms
 ms.author: rajosh
 ms.topic: tutorial
 ms.date: 02/07/2021
-ms.openlocfilehash: 21553adf81d5b34813785db7cd6bbe3caf71c210
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 9acc6de84c3e5bc43f482d36ade242d2315a2a4f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104780499"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105565118"
 ---
 # <a name="create-an-azure-sql-assessment"></a>Создание оценки для Azure SQL
 
@@ -18,7 +18,7 @@ ms.locfileid: "104780499"
 В этой статье содержатся сведения о том, как оценивать обнаруженные экземпляры SQL при подготовке к миграции в Azure SQL с помощью инструмента обнаружения и оценки службы "Миграция Azure".
 
 > [!Note]
-> Возможности обнаружения и оценки экземпляров и баз данных SQL Server, работающих в среде VMware, сейчас предоставляются в предварительной версии. 
+> Возможности обнаружения и оценки экземпляров и баз данных SQL Server, работающих в среде VMware, сейчас предоставляются в предварительной версии. Начните с [этого руководства](tutorial-discover-vmware.md). Если вы хотите опробовать эту функцию в существующем проекте, обязательно выполните [предварительные требования](how-to-discover-sql-existing-project.md) для изучения этой статьи.
 
 ## <a name="before-you-start"></a>Прежде чем начать
 
@@ -192,4 +192,4 @@ ms.locfileid: "104780499"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Узнайте больше](concepts-azure-sql-assessment-calculation.md) о вычислении оценок Azure SQL.
-- Начните миграцию экземпляров и баз данных SQL с помощью [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+- Начните миграцию экземпляров и баз данных SQL с помощью [Azure Database Migration Service](../dms/dms-overview.md).

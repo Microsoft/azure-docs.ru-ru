@@ -8,10 +8,10 @@ ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
 ms.openlocfilehash: 5b1aab8b38614249d6b502044b5c4c8170f46b3c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103492223"
 ---
 # <a name="ui-framework-capabilities"></a>Возможности платформы пользовательского интерфейса
@@ -71,7 +71,7 @@ ms.locfileid: "103492223"
 
 | Тип компонента            | Темы     | Макет                                                              | Модели данных |
 |---------------------------|------------|---------------------------------------------------------------------|-------------|
-| Составной компонент       |     Н/Д    | Недоступно                                                                 |     Н/Д     |
+| Составной компонент       |     Н/Д    | Н/Д                                                                 |     Н/Д     |
 | Базовый компонент            |     Н/Д    | Макет компонентов можно изменить с помощью внешнего стиля         |     Н/Д     |
 
 

@@ -1,16 +1,16 @@
 ---
-title: Краткое руководство. Apache Hive в Azure HDInsight с помощью Apache Zeppelin
+title: Краткое руководство. Выполнение запросов Apache Hive в Azure HDInsight с использованием Apache Zeppelin
 description: Из этого краткого руководства вы узнаете, как использовать Apache Zeppelin для выполнения запросов Apache Hive.
 ms.service: hdinsight
 ms.topic: quickstart
 ms.custom: hdinsightactive
 ms.date: 12/03/2019
-ms.openlocfilehash: 1199fee82532eacf1f0ef41b877b970d7d9f2cf5
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 75f758054f867c58dd4180fe5e728e66785e3b11
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98941072"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869775"
 ---
 # <a name="quickstart-execute-apache-hive-queries-in-azure-hdinsight-with-apache-zeppelin"></a>Краткое руководство. Выполнение запросов Apache Hive в Azure HDInsight с помощью Apache Zeppelin
 
@@ -28,14 +28,14 @@ ms.locfileid: "98941072"
 
 2. Введите имя пользователя и пароль для входа в кластер. На странице Zeppelin можно создать новую заметку или открыть существующие заметки. В разделе **HiveSample** находятся примеры запросов Hive.  
 
-    ![Заметка Zeppelin для кластера Interactive Query HDInsight](./media/hdinsight-connect-hive-zeppelin/hdinsight-hive-zeppelin.png)
+    :::image type="content" source="./media/hdinsight-connect-hive-zeppelin/hdinsight-hive-zeppelin.png" alt-text="Заметка Zeppelin для кластера Interactive Query HDInsight" border="true":::
 
 3. Выберите **Create new note** (Создать заметку).
 
 4. В диалоговом окне **создания заметки** введите или выберите следующие значения:
 
-    - Note Name (Имя заметки). Введите имя заметки.
-    - Default interpreter (Интерпретатор по умолчанию). Выберите **jdbc** из раскрывающегося списка.
+    - Note Name (Название заметки): введите название заметки.
+    - Default interpreter (Интерпретатор по умолчанию): выберите **JDBC** в раскрывающемся списке.
 
 5. Выберите **Create Note** (Создать заметку).
 
@@ -46,7 +46,7 @@ ms.locfileid: "98941072"
     show tables
     ```
 
-    ![Выполнение запроса заметки Zeppelin для кластера Interactive Query HDInsight](./media/hdinsight-connect-hive-zeppelin/hdinsight-hive-zeppelin-query.png)
+    :::image type="content" source="./media/hdinsight-connect-hive-zeppelin/hdinsight-hive-zeppelin-query.png" alt-text="Выполнение запроса заметки Zeppelin для кластера Interactive Query HDInsight" border="true":::
 
     Инструкция **%jdbc(hive)** в первой строке означает, что записная книжка должна использовать интерпретатор JDBC Hive.
 

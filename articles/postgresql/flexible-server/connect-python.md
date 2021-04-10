@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Подключение к Базе данных Azure для PostgreSQL (Гибкий сервер) с помощью Python
 description: В этом кратком руководстве представлено несколько примеров кода Python, которые можно использовать для подключения к Базе данных Azure для PostgreSQL (Гибкий сервер) и запроса данных из нее.
-author: ambhatna
-ms.author: ambhatna
+author: rothja
+ms.author: jroth
 ms.service: postgresql
 ms.custom: mvc
 ms.devlang: python
 ms.topic: quickstart
 ms.date: 09/22/2020
-ms.openlocfilehash: 89dc36a9b1b1fee9ad10d55945c7fc17bf72f476
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 948972c1d47e550395a280e62c0491800e716663
+ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "90946193"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106550648"
 ---
 # <a name="quickstart-use-python-to-connect-and-query-data-in-azure-database-for-postgresql---flexible-server"></a>Краткое руководство. Подключение к Базе данных Azure для PostgreSQL (Гибкий сервер) и запрашивание данных с помощью Python
 
@@ -28,7 +28,7 @@ ms.locfileid: "90946193"
 
 * Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) бесплатно.
 * База данных Azure для PostgreSQL (Гибкий сервер). Чтобы создать гибкий сервер, воспользуйтесь статьей [Разработка базы данных в службе "База данных Azure для PostgreSQL (Гибкий сервер)" с помощью портала Azure](./quickstart-create-server-portal.md).
-* [Python](https://www.python.org/downloads/) 2.7.9 или 3.4+.
+* [Python](https://www.python.org/downloads/) 2.7, 3.6 или более поздней версии.
 * Установщик пакета [pip](https://pip.pypa.io/en/stable/installing/) последней версии.
 
 ## <a name="preparing-your-client-workstation"></a>Подготовка клиентской рабочей станции

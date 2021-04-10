@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 03/12/2021
 ms.author: glenga
 ms.openlocfilehash: c94bf06fac0157a0e61102d57a7e970a2791d902
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104612258"
 ---
 Другие краткие руководства в этой коллекции созданы на основе этого документа. Если вы планируете работать с последующими краткими руководствами или с любыми службами, созданными при работе с этим руководством, не очищайте ресурсы.

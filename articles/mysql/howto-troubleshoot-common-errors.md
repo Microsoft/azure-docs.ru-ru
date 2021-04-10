@@ -7,14 +7,16 @@ ms.author: pariks
 ms.custom: mvc
 ms.topic: overview
 ms.date: 8/20/2020
-ms.openlocfilehash: ca75416a66bcf2c90028c7f1dc11fbe23a9a9bd9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3bfcfee0f5dab2d978eb1856bdc915c270d43ed6
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98631373"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105109800"
 ---
-# <a name="common-errors"></a>Распространенные ошибки
+# <a name="commonly-encountered-errors-during-or-post-migration-to-azure-database-for-mysql-service"></a>Распространенные ошибки во время или после миграции в службу "База данных Azure для MySQL"
+
+[!INCLUDE[applies-to-single-flexible-server](includes/applies-to-single-flexible-server.md)]
 
 База данных Azure для MySQL — это полностью управляемая служба на базе версии MySQL для сообщества. Функциональные возможности MySQL в среде управляемой службы могут отличаться от возможностей MySQL в вашей собственной среде. Из этой статьи вы узнаете о некоторых распространенных ошибках, с которыми могут столкнуться пользователи при миграции в службу "База данных Azure для MySQL" или осуществлении в ней разработки.
 
@@ -48,7 +50,7 @@ BEGIN
 END;
 ```
 
-**Решение**.  Чтобы устранить эту ошибку, на портале в колонке [параметров сервера](howto-server-parameters.md) установите для log_bin_trust_function_creators значение 1. Запустите выполнение инструкций DDL или импортируйте схему, чтобы создать нужные объекты, и восстановите предыдущее значение параметра log_bin_trust_function_creators после создания.
+**Решение.** Чтобы устранить эту ошибку, на портале в колонке [параметров сервера](howto-server-parameters.md) задайте для log_bin_trust_function_creators значение 1, а затем выполните инструкции DDL или импортируйте схему, чтобы создать нужные объекты. Вы можете оставить для log_bin_trust_function_creators значение 1 для сервера, чтобы эта ошибка не возникала в будущем. Хотя мы рекомендуем считать переменную log_bin_trust_function_creators как угрозу безопасности, как описано в [документации сообщества MySQL](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html#sysvar_log_bin_trust_function_creators), эта угроза минимальна в службе "База данных Azure MySQL", так как двоичный журнал не подвергается каким-либо угрозам.
 
 #### <a name="error-1227-42000-at-line-101-access-denied-you-need-at-least-one-of-the-super-privileges-for-this-operation-operation-failed-with-exitcode-1"></a>ОШИБКА 1227 (42000) в строке 101. Доступ запрещен — для выполнения этой операции необходимо иметь (по крайней мере одно) разрешение SUPER; операция завершилась ошибкой с кодом выхода 1
 
@@ -84,6 +86,14 @@ DELIMITER ;
 
 > [!Tip] 
 > Для изменения файла дампа используйте sed или perl, а для изменения инструкции DEFINER= — скрипт SQL.
+
+#### <a name="error-1227-42000-at-line-18-access-denied-you-need-at-least-one-of-the-super-privileges-for-this-operation"></a>ОШИБКА 1227 (42000) в строке 18. Доступ запрещен — для выполнения этой операции необходимо иметь (по крайней мере одно) разрешение SUPER
+
+Эта ошибка может возникнуть, когда вы пытаетесь импортировать файл дампа с сервера MySQL с включенным GTID на целевой сервер Базы данных Azure для MySQL. Mysqldump добавляет инструкцию SET @@SESSION.sql_log_bin=0 в файл дампа с сервера, где используются GTID, что отключает ведение двоичного журнала при перезагрузке файла дампа.
+
+**Решение.** Чтобы эта ошибка не возникала при импорте, удалите или закомментируйте приведенные ниже строки в файле mysqldump и выполните импорт еще раз для проверки успешного выполнения. 
+
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN; SET @@SESSION.SQL_LOG_BIN= 0; SET @@GLOBAL.GTID_PURGED=''; SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 
 ## <a name="common-connection-errors-for-server-admin-login"></a>Распространенные ошибки подключения с именем входа администратора сервера
 
