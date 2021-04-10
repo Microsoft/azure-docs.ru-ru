@@ -4,10 +4,10 @@ description: Ознакомьтесь с требованиями к систе�
 ms.date: 11/30/2020
 ms.topic: quickstart
 ms.openlocfilehash: 78d5948554ae531c4b2f77d67bb916d5290db943
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104780945"
 ---
 # <a name="system-prerequisites"></a>Требования к системе

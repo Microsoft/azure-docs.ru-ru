@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 10/14/2020
 ms.author: apimpm
 ms.openlocfilehash: df0018e323bc0c5725c9752b25b77612f035c196
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100582495"
 ---
 # <a name="reference-api-management-resource-log-schema"></a>Справочные материалы. Схема журнала ресурсов Управления API
@@ -25,7 +25,7 @@ ms.locfileid: "100582495"
 
 Для каждого запроса API регистрируются следующие свойства:
 
-| Свойство  | Type | Описание |
+| Свойство  | Тип | Описание |
 | ------------- | ------------- | ------------- |
 | method | строка | Метод HTTP входящего запроса |
 | url | строка | URL-адрес входящего запроса |

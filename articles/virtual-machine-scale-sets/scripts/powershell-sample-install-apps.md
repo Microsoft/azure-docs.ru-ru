@@ -5,16 +5,15 @@ author: mimckitt
 ms.author: mimckitt
 ms.topic: sample
 ms.service: virtual-machine-scale-sets
-ms.subservice: powershell
 ms.date: 06/25/2020
 ms.reviewer: jushiman
 ms.custom: mimckitt, devx-track-azurepowershell
-ms.openlocfilehash: ea4dbf06bd1c129131d57748986e22feca80d808
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 0f985d9f43074f8dc9f8ad93aba71e2dce8ae7b9
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89079614"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105932273"
 ---
 # <a name="install-applications-into-a-virtual-machine-scale-set-with-powershell"></a>Установка приложений в масштабируемый набор виртуальных машин с помощью PowerShell
 Этот скрипт создает виртуальную машину Azure под управлением Windows Server 2016 и использует расширение пользовательских скриптов для установки базовых веб-приложений. После выполнения скрипта можно получить доступ к веб-приложению с помощью веб-браузера.

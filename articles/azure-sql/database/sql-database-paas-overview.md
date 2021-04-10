@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 09/21/2020
 ms.openlocfilehash: 65710ae40a971d214068f0e2686f78fb994a967e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104601437"
 ---
 # <a name="what-is-azure-sql-database"></a>Что такое база данных SQL Azure?
@@ -197,7 +197,7 @@ Azure Defender для SQL — это унифицированный пакет 
 
 База данных SQL делает создание и обслуживание приложений более удобным и эффективным. Она позволяет сконцентрироваться на том, что у вас получается лучше всего, — на создании отличных приложений. В Базе данных SQL вы можете разрабатывать и обслуживать базы данных, используя имеющиеся средства и навыки.
 
-|Инструмент|Описание|
+|Средство|Описание|
 |:---|:---|
 |[Портал Azure](https://portal.azure.com/)|Веб-приложение для управления всеми службами Azure.|
 |[Azure Data Studio](/sql/azure-data-studio/)|Кросс-платформенное средство для работы с базами данных для Windows, macOS и Linux.|

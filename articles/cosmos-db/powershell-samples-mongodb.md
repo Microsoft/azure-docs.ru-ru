@@ -8,10 +8,10 @@ ms.topic: sample
 ms.date: 01/20/2021
 ms.author: mjbrown
 ms.openlocfilehash: 2f852b1ec359033c8bc700c8a382705b4479d6de
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102503357"
 ---
 # <a name="azure-powershell-samples-for-azure-cosmos-db-api-for-mongodb"></a>Примеры Azure PowerShell для API Azure Cosmos DB для MongoDB

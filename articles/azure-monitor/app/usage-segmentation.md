@@ -7,10 +7,10 @@ ms.author: daviste
 ms.date: 01/24/2018
 ms.reviewer: mbullwin
 ms.openlocfilehash: 6eb91734afac81e103cebea48865793fa687ad71
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105024835"
 ---
 # <a name="users-sessions-and-events-analysis-in-application-insights"></a>Анализ пользователей, сеансов и событий в Application Insights

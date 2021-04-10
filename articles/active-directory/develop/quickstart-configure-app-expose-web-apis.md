@@ -14,10 +14,10 @@ ms.author: marsma
 ms.custom: aaddev, contperf-fy21q1
 ms.reviewer: aragra, lenalepa, sureshja
 ms.openlocfilehash: 820bc7dfe9123db495c151cd5cd0ea5ae337619f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100103980"
 ---
 # <a name="quickstart-configure-an-application-to-expose-a-web-api"></a>Краткое руководство. Настройка приложения для предоставления веб-API

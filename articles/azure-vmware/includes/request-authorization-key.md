@@ -3,12 +3,12 @@ title: Запрос ключа авторизации для ExpressRoute
 description: Инструкции по запросу ключа авторизации для ExpressRoute.
 ms.topic: include
 ms.date: 03/15/2021
-ms.openlocfilehash: 54a610c8b0f3f3fe9d3ebe39291bba7767007839
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 99d9fba33d64fca1d9c5b960041fbabe1f9060db
+ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103491858"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105027017"
 ---
 <!-- used in expressroute-global-reach-private-cloud.md and create-ipsec-tunnel.md -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "103491858"
 
    :::image type="content" source="../media/expressroute-global-reach/show-global-reach-auth-key.png" alt-text="Снимок экрана, показывающий ключ авторизации ExpressRoute Global Reach.":::
   
-1. Запишите ключ авторизации и идентификатор ExpressRoute. Они понадобятся для установки пиринга.  
+1. Скопируйте ключ авторизации и идентификатор ExpressRoute. Они понадобятся для установки пиринга.  
 
    > [!NOTE]
    > Ключ авторизации через некоторое время исчезнет, поэтому скопируйте его сразу же, когда он появится.

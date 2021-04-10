@@ -1,22 +1,22 @@
 ---
-title: Руководство по Использование runbook службы автоматизации Azure для создания кластеров (Azure HDInsight)
+title: Руководство. Использование последовательностей runbook службы автоматизации Azure для создания кластеров (Azure HDInsight)
 description: Узнайте, как создавать и удалять кластеры Azure HDInsight с помощью выполняемых в облаке скриптов, оформленных в виде runbook службы автоматизации Azure.
 ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: tutorial
 ms.date: 12/27/2019
-ms.openlocfilehash: 255542d820d135d1a88e193a8ef13ae590ce4016
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 5eb0f353579233041bb5ccba46de2549ada7e9b7
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98944046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104864794"
 ---
-# <a name="tutorial-create-azure-hdinsight-clusters-with-azure-automation"></a>Руководство по Создание кластеров Azure HDInsight с помощью службы автоматизации
+# <a name="tutorial-create-azure-hdinsight-clusters-with-azure-automation"></a>Руководство. Создание кластеров Azure HDInsight с помощью службы автоматизации Azure
 
 Служба автоматизации Azure позволяет создавать выполняемые в облаке скрипты, которые управляют ресурсами Azure по требованию или по расписанию. В этой статье описывается создание runbook с инструкциями PowerShell для создания и удаления кластеров Azure HDInsight.
 
-В этом руководстве описано следующее:
+В этом руководстве описано следующее.
 
 > [!div class="checklist"]
 > * Установка модулей, необходимых для взаимодействия с HDInsight.
@@ -38,16 +38,16 @@ ms.locfileid: "98944046"
 1. Введите в поле поиска **AzureRM.Profile** и нажмите клавишу ВВОД. Выберите полученный результат поиска.
 1. На экране **AzureRM.profile** щелкните **Импортировать**. Установите флажок, отвечающий за обновление модулей Azure, а затем щелкните **ОК**.
 
-    ![Импорт модуля AzureRM.profile](./media/manage-clusters-runbooks/import-azurermprofile-module.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/import-azurermprofile-module.png" alt-text="Импорт модуля AzureRM.profile" border="false":::
 
 1. Вернитесь в коллекцию модулей, выбрав элемент **Коллекция модулей** в разделе **Общие ресурсы**.
 1. Введите **HDInsight**. Щелкните **AzureRM.HDInsight**.
 
-    ![Просмотр модулей HDInsight](./media/manage-clusters-runbooks/browse-modules-hdinsight.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/browse-modules-hdinsight.png" alt-text="Просмотр модулей HDInsight" border="true":::
 
 1. На панели **AzureRM.HDInsight** щелкните **Импортировать**, а затем **ОК**.
 
-    ![Импорт модуля AzureRM.HDInsight](./media/manage-clusters-runbooks/import-azurermhdinsight-module.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/import-azurermhdinsight-module.png" alt-text="Импорт модуля AzureRM.HDInsight" border="true":::
 
 ## <a name="create-credentials"></a>Создание учетных данных
 
@@ -65,7 +65,7 @@ ms.locfileid: "98944046"
 1. Нажмите кнопку **создания**.
 1. Повторите ту же процедуру для новых учетных данных `ssh-password` с именем пользователя `sshuser` и выбранным вами паролем. Нажмите кнопку **создания**. Эти учетные данные нужны для хранения пароля SSH для кластера.
 
-    ![Создание учетных данных](./media/manage-clusters-runbooks/create-credentials.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/create-credentials.png" alt-text="Создание учетных данных" border="true":::
 
 ## <a name="create-a-runbook-to-create-a-cluster"></a>Создание runbook, который создает кластер
 
@@ -74,11 +74,11 @@ ms.locfileid: "98944046"
 1. На панели **Создание Runbook** введите имя runbook, например `hdinsight-cluster-create`. Выберите значение **PowerShell** в раскрывающемся списке **Тип runbook**.
 1. Нажмите кнопку **создания**.
 
-    ![Создание runbook](./media/manage-clusters-runbooks/create-runbook.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/create-runbook.png" alt-text="Создание runbook" border="true":::
 
 1. На экране **Редактировать runbook PowerShell** введите следующий код и щелкните **Опубликовать**.
 
-    ![Публикация runbook](./media/manage-clusters-runbooks/publish-runbook.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/publish-runbook.png" alt-text="Публикация runbook" border="true":::
 
     ```powershell
     Param
@@ -154,7 +154,7 @@ ms.locfileid: "98944046"
 1. Щелкните **Запустить**, чтобы немедленно выполнить этот runbook. Вы также можете настроить периодическое выполнение runbook. Подробнее см. [Создание расписания для модуля Runbook в службе автоматизации Azure](../automation/shared-resources/schedules.md).
 1. Задайте значения для обязательных параметров скрипта и щелкните **OK**. Это действие создаст новый кластер HDInsight с именем, которое вы указали в параметре **CLUSTERNAME**.
 
-    ![Выполнение runbook для создания кластера](./media/manage-clusters-runbooks/execute-create-runbook.png)
+    :::image type="content" source="./media/manage-clusters-runbooks/execute-create-runbook.png" alt-text="Выполнение runbook для создания кластера" border="true":::
 
 ### <a name="delete-a-cluster"></a>Удаление кластера
 
