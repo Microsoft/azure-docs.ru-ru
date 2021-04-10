@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: firewall-manager
 ms.date: 10/22/2020
 ms.author: victorh
-ms.openlocfilehash: 093b962bb9f42b660fb8cc5c0584ec67ebc87e48
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 5ef39118d16d47aeb46294658adf616515547ea6
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98789167"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105729530"
 ---
 # <a name="tutorial-secure-your-virtual-hub-using-azure-powershell"></a>Руководство по защите виртуального концентратора с помощью Azure PowerShell
 
@@ -31,7 +31,7 @@ ms.locfileid: "98789167"
 
 - PowerShell 7
 
-   Для работы с этим учебником требуется запустить Azure PowerShell в локальной среде в PowerShell 7. Дополнительные сведения об установке PowerShell 7 см. в статье [Миграция с Windows PowerShell 5.1 на PowerShell 7](/powershell/scripting/install/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7).
+   Для работы с этим учебником требуется запустить Azure PowerShell в локальной среде в PowerShell 7. Дополнительные сведения об установке PowerShell 7 см. в статье [Миграция с Windows PowerShell 5.1 на PowerShell 7](/powershell/scripting/install/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7&preserve-view=true).
 - Az.Network версии 3.2.0
 
     Если у вас есть Az.Network версии 3.4.0 или более поздней, вам потребуется понизить версию для использования некоторых команд из этого учебника. Версию модуля Az.Network можно проверить с помощью команды `Get-InstalledModule -Name Az.Network`. Чтобы удалить модуль Az.Network, запустите `Uninstall-Module -name az.network`. Чтобы установить модуль Az.Network 3.2.0, запустите `Install-Module az.network -RequiredVersion 3.2.0 -force`.

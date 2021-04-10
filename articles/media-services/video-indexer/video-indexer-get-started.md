@@ -10,12 +10,12 @@ ms.subservice: video-indexer
 ms.topic: quickstart
 ms.date: 01/25/2021
 ms.author: juliako
-ms.openlocfilehash: 5b38c731db141052e6700472020cd60b6a4d13a5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 76862800e88b41a70449cff4a4ffad072c755272
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98797803"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106108046"
 ---
 # <a name="quickstart-how-to-sign-up-and-upload-your-first-video"></a>Краткое руководство. Как зарегистрироваться и отправить видео
 
@@ -36,7 +36,7 @@ ms.locfileid: "98797803"
 
 ### <a name="supported-file-formats-for-video-indexer"></a>Поддерживаемые форматы файлов для Индексатора видео
 
-Список форматов файлов, которые можно использовать с Индексатором видео, см. в подразделе [Контейнер ввода и форматы файлов](../latest/media-encoder-standard-formats.md#input-containerfile-formats).
+Список форматов файлов, которые можно использовать с Индексатором видео, см. в подразделе [Контейнер ввода и форматы файлов](../latest/encode-media-encoder-standard-formats-reference.md).
 
 ### <a name="upload-a-video"></a>Отправка видео
 

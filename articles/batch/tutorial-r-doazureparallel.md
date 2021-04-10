@@ -7,10 +7,10 @@ ms.date: 10/08/2020
 ms.custom: mvc
 ROBOTS: NOINDEX
 ms.openlocfilehash: 7e74a3b02be35b40e1a92bef269a3aed0b2313e4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103491781"
 ---
 # <a name="tutorial-run-a-parallel-r-simulation-with-azure-batch"></a>Руководство по Параллельное моделирование на R с помощью пакетной службы Azure

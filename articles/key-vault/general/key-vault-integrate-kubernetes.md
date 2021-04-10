@@ -7,19 +7,19 @@ ms.service: key-vault
 ms.subservice: general
 ms.topic: tutorial
 ms.date: 09/25/2020
-ms.openlocfilehash: b130fd3f85b676f0a394ad95730181ff499dac96
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 6cf76e980fab4e5be3f8c2c6d72baff05ab03815
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102216502"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106108393"
 ---
 # <a name="tutorial-configure-and-run-the-azure-key-vault-provider-for-the-secrets-store-csi-driver-on-kubernetes"></a>Руководство по настройке и запуску поставщика Azure Key Vault для драйвера CSI хранилища секретов в Kubernetes
 
 > [!IMPORTANT]
-> Драйвер CSI хранилища секретов — это проект с открытым исходным кодом, и он не поддерживается службой технической поддержки Azure. Все отзывы и сведения об ошибках, связанные с интеграцией Key Vault с драйвером CSI, отправляйте по ссылке на сайт GitHub, приведенной внизу на этой странице. Это средство предоставляется пользователям для самостоятельной установки на кластерах и сбора отзывов представителей сообщества.
+> Драйвер CSI хранилища секретов — это проект с открытым исходным кодом, и он не поддерживается службой технической поддержки Azure. Все отзывы и сведения об ошибках, связанные с интеграцией Key Vault с драйвером CSI, отправляйте по [этой](https://github.com/kubernetes-sigs/secrets-store-csi-driver) ссылке в GitHub. Это средство предоставляется пользователям для самостоятельной установки на кластерах и сбора отзывов представителей сообщества.
 
-В рамках этого учебника вы получите доступ к секретам Azure Key Vault с помощью драйвера интерфейса хранилища контейнера (CSI) хранилища секретов, а затем подключите секреты к объектам pod Kubernetes.
+Для работы с этим руководством вы получите доступ к секретам хранилища ключей Azure с помощью драйвера Container Storage Interface (CSI) хранилища секретов, а затем подключите секреты к группам pod Kubernetes в качестве тома.
 
 В этом руководстве описано следующее:
 
@@ -164,11 +164,14 @@ spec:
     Документация по всем необходимым назначениям ролей с использованием удостоверения pod для Azure Active Directory (Azure AD) доступна здесь: [Ссылка](https://azure.github.io/aad-pod-identity/docs/getting-started/role-assignment/)
 
     ```azurecli
-    RESOURCE_GROUP=contosoResourceGroup
+    VAULT_RESOURCE_GROUP=contosoResourceGroup
+    NODE_RESOURCE_GROUP=contosoResourceGroup
     
-    az role assignment create --role "Managed Identity Operator" --assignee $clientId --scope /subscriptions/<SUBID>/resourcegroups/$RESOURCE_GROUP
+    az role assignment create --role "Managed Identity Operator" --assignee $clientId --scope /subscriptions/<SUBID>/resourcegroups/$VAULT_RESOURCE_GROUP
     
-    az role assignment create --role "Virtual Machine Contributor" --assignee $clientId --scope /subscriptions/<SUBID>/resourcegroups/$RESOURCE_GROUP
+    az role assignment create --role "Managed Identity Operator" --assignee $clientId --scope /subscriptions/<SUBID>/resourcegroups/$NODE_RESOURCE_GROUP
+    
+    az role assignment create --role "Virtual Machine Contributor" --assignee $clientId --scope /subscriptions/<SUBID>/resourcegroups/$NODE_RESOURCE_GROUP
     ```
 
 2. Установите удостоверение Azure Active Directory (Azure AD) в AKS.
@@ -292,7 +295,11 @@ kubectl exec nginx-secrets-store-inline -- cat /mnt/secrets-store/secret1
 
 Убедитесь, что отображается содержимое секрета.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="resources"></a>Ресурсы
+[Об Azure Key Vault](overview.md)
+[Руководство разработчика по Azure Key Vault](developers-guide.md)
+[Драйвер CSI для секретов](https://secrets-store-csi-driver.sigs.k8s.io/introduction.html)
+
 
 Чтобы обеспечить возможность восстановления хранилища ключей, см. следующие материалы:
 > [!div class="nextstepaction"]

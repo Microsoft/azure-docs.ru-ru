@@ -9,12 +9,12 @@ ms.service: notification-hubs
 ms.reviewer: thsomasu
 ms.lastreviewed: 05/27/2020
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 31a411cbcecab8192643f86b6b54d09ac03e7f45
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 091ada7f099aca17152fc806e61dce6ab979852e
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100581706"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106055167"
 ---
 # <a name="tutorial-send-push-notifications-to-android-devices-using-firebase-sdk-version-100-preview1"></a>Руководство по отправке push-уведомлений на устройства Android с помощью SDK Firebase версии 1.0.0-preview1
 
@@ -190,8 +190,8 @@ ms.locfileid: "100581706"
 
 1. Создайте объект **NotificationHubListener**, который обрабатывает перехват сообщений из Центров уведомлений Azure.
 
-   ```csharp
-   public class CustomNotificationListener implements NotificationHubListener {
+   ```java
+   public class CustomNotificationListener implements NotificationListener {
 
       @override
       public void onNotificationReceived(Context context, RemoteMessage message) {
@@ -225,7 +225,7 @@ ms.locfileid: "100581706"
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity\_main);
       NotificationHub.setListener(new CustomNotificationListener());
-      NotificationHub.initialize(this.getApplication(), “Connection-String”, "Hub Name");
+      NotificationHub.start(this.getApplication(), “Connection-String”, "Hub Name");
 
    }
    ```

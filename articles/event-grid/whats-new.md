@@ -3,12 +3,12 @@ title: Новые возможности Сетка событий Azure — з
 description: Узнайте о новых возможностях Сетки событий Azure, ознакомившись с последними заметками о выпуске, известными проблемами, исправлениями ошибок, нерекомендуемыми функциями и предстоящими изменениями.
 ms.topic: overview
 ms.date: 07/23/2020
-ms.openlocfilehash: 7528cef7007704bbf434f16622707da8920eec2b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: da0b26e4f163f428e6955a37636ceb19bb34abc5
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96350013"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105107539"
 ---
 # <a name="whats-new-in-azure-event-grid"></a>Новые возможности в Сетке событий Azure
 
@@ -73,14 +73,14 @@ ms.locfileid: "96350013"
 - Этот выпуск соответствует версии API `2019-06-01`.
 - Включена поддержка следующих новых возможностей:
     * [Домены](event-domains.md)
-    * Разбиение на страницы и использование фильтра поиска для операций со списком ресурсов. Пример см. в статье [Разделы — список по подписке](/rest/api/eventgrid/version2020-04-01-preview/topics/listbysubscription).
+    * Разбиение на страницы и использование фильтра поиска для операций со списком ресурсов. Пример см. в статье [Разделы — список по подписке](/rest/api/eventgrid/version2020-10-15-preview/partnernamespaces/listbysubscription).
     * [Очередь служебной шины как назначение](handler-service-bus.md)
     * [Расширенная фильтрация](event-filtering.md#advanced-filtering)
 
 ## <a name="410-preview-2019-03"></a>4.1.0-preview (2019-03)
 - Этот выпуск соответствует версии API 2019-02-01-preview.
 - Включена поддержка следующих новых возможностей:
-    * Разбиение на страницы и использование фильтра поиска для операций со списком ресурсов. Пример см. в статье [Разделы — список по подписке](/rest/api/eventgrid/version2020-04-01-preview/topics/listbysubscription).
+    * Разбиение на страницы и использование фильтра поиска для операций со списком ресурсов. Пример см. в статье [Разделы — список по подписке](/rest/api/eventgrid/version2020-10-15-preview/partnernamespaces/listbysubscription).
     * [Создание и удаление разделов домена вручную](how-to-event-domains.md)
     * [Очередь Служебной шины как назначение](handler-service-bus.md)
 
