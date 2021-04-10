@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 6bd7b472d8f42bd7872aeacf8b78aac8b249f4bd
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103013743"
 ---
 # <a name="configuring-azure-media-services-telemetry-with-net"></a>Настройка телеметрии служб мультимедиа Azure с использованием .NET
@@ -70,7 +70,7 @@ ms.locfileid: "103013743"
 
 ## <a name="create-and-configure-a-visual-studio-project"></a>Создание и настройка проекта Visual Studio
 
-1. Настройте среду разработки и заполните файл app.config данными о соединении, как описано в разделе [Разработка служб мультимедиа с помощью .NET](media-services-dotnet-how-to-use.md). 
+1. Настройте среду разработки и укажите в файле app.config сведения о подключении, как описано в статье [Разработка служб мультимедиа с помощью .NET](media-services-dotnet-how-to-use.md). 
 
 2. Добавьте следующий элемент в **appSettings**, определенный в файле app.config:
 

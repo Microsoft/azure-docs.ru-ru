@@ -8,13 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 02/04/2021
 ms.author: alkohli
-Customer intent: As an IT admin, I need to understand how to connect and activate Azure Stack Edge Pro so I can use it to transfer data to Azure.
-ms.openlocfilehash: 07a4c06b840d41455beea9be4ed0343b4946ddb3
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: dfef9b3078b17e4758d5fd886ecd1b3fbefc5794
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99594608"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106055235"
 ---
 # <a name="tutorial-configure-network-for-azure-stack-edge-pro-with-gpu"></a>Руководство по настройке параметров сети для Azure Stack Edge Pro с GPU
 
@@ -26,13 +25,13 @@ ms.locfileid: "99594608"
 
 > [!div class="checklist"]
 >
-> * Предварительные условия
+> * Предварительные требования
 > * настройка сети;
 > * включение сети вычислений;
 > * Настройка веб-прокси
 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Перед установкой и настройкой устройства Azure Stack Edge Pro с GPU проверьте следующие условия:
 
@@ -158,7 +157,7 @@ ms.locfileid: "99594608"
 Из этого учебника вы узнали, как выполнять такие задачи:
 
 > [!div class="checklist"]
-> * Предварительные условия
+> * Предварительные требования
 > * настройка сети;
 > * включение сети вычислений;
 > * Настройка веб-прокси

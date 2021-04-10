@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.custom: contperf-fy21q1
 ms.date: 08/21/2020
-ms.openlocfilehash: d2c7c4feca32544a0e15e876c7207c49dee39341
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 3cbeb1dbd207eec7f58465a24f33808bf2e7c7c0
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98940529"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104867616"
 ---
 # <a name="tutorial-create-a-scala-maven-application-for-apache-spark-in-hdinsight-using-intellij"></a>Руководство по Создание приложения Scala Maven для Apache Spark в HDInsight с помощью IntelliJ
 
@@ -46,11 +46,11 @@ ms.locfileid: "98940529"
 
 2. На экране приветствия выберите **Configure** (Настройка) > **Plugins** (Подключаемые модули), чтобы открыть окно **подключаемых модулей**.
 
-    ![Включение подключаемого модуля Scala в IntelliJ IDEA](./media/apache-spark-create-standalone-application/enable-scala-plugin1.png)
+    :::image type="content" source="./media/apache-spark-create-standalone-application/enable-scala-plugin1.png" alt-text="Включение подключаемого модуля Scala в IntelliJ IDEA" border="true":::
 
 3. Выберите **Install** (Установить) в области подключаемого модуля Scala в новом окне.  
 
-    ![Установка подключаемого модуля Scala в IntelliJ IDEA](./media/apache-spark-create-standalone-application/install-scala-plugin.png)
+    :::image type="content" source="./media/apache-spark-create-standalone-application/install-scala-plugin.png" alt-text="Установка подключаемого модуля Scala в IntelliJ IDEA" border="true":::
 
 4. После успешной установки подключаемого модуля необходимо перезапустить интегрированную среду разработки.
 
@@ -66,7 +66,7 @@ ms.locfileid: "98940529"
       * **Maven** для поддержки мастера создания проекта Scala.
       * **SBT** для управления зависимостями и создания проекта Scala.
 
-   ![Диалоговое окно нового проекта в IntelliJ](./media/apache-spark-create-standalone-application/intellij-project-apache-spark.png)
+   :::image type="content" source="./media/apache-spark-create-standalone-application/intellij-project-apache-spark.png" alt-text="Диалоговое окно нового проекта в IntelliJ" border="true":::
 
 5. Выберите **Далее**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "98940529"
   	|Project SDK (Пакет SDK проекта)| При первом использовании IDEA это поле будет пустым.  Выберите **New...** (Создать...) и перейдите к JDK.|
   	|Версия Spark|Мастер создания интегрирует правильную версию пакетов SDK для Spark и Scala. Если используется версия кластера Spark более ранняя, чем 2.0, выберите **Spark 1.x**. В противном случае выберите **Spark 2.x**. В этом примере используется **Spark 2.3.0 (Scala 2.11.8)** .|
 
-    ![Выбор пакета SDK Spark в IntelliJ IDEA](./media/apache-spark-create-standalone-application/hdi-scala-new-project.png)
+    :::image type="content" source="./media/apache-spark-create-standalone-application/hdi-scala-new-project.png" alt-text="Выбор пакета SDK Spark в IntelliJ IDEA" border="true":::
 
 7. Нажмите кнопку **Готово**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "98940529"
 
 5. В списке архетипов выберите **`org.scala-tools.archetypes:scala-archetype-simple`** . Этот архетип создает структуру каталога и скачивает зависимости по умолчанию, необходимые для написания программы Scala.
 
-    ![Снимок экрана: выбранный архетип в окне создания проекта](./media/apache-spark-create-standalone-application/intellij-project-create-maven.png)
+    :::image type="content" source="./media/apache-spark-create-standalone-application/intellij-project-create-maven.png" alt-text="Снимок экрана: выбранный архетип в окне создания проекта" border="true":::
 
 6. Выберите **Далее**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "98940529"
     - **GroupId:** com.microsoft.spark.example;
     - **ArtifactId:** SparkSimpleApp.
 
-    ![Снимок экрана: пункт "Координаты артефакта" в окне создания проекта](./media/apache-spark-create-standalone-application/intellij-artifact-coordinates.png)
+    :::image type="content" source="./media/apache-spark-create-standalone-application/intellij-artifact-coordinates.png" alt-text="Снимок экрана: пункт &quot;Координаты артефакта&quot; в окне создания проекта" border="true":::
 
 8. Выберите **Далее**.
 
@@ -124,7 +124,7 @@ ms.locfileid: "98940529"
 
 16. Нажмите кнопку **Apply** (Применить), а затем нажмите кнопку **ОК**.  Затем вы вернетесь обратно в окно проекта.
 
-    ![Настройка автоматической загрузки Maven](./media/apache-spark-create-standalone-application/configure-maven-download.png)
+    :::image type="content" source="./media/apache-spark-create-standalone-application/configure-maven-download.png" alt-text="Настройка автоматической загрузки Maven" border="true":::
 
 17. В области слева выберите **src** > **main** > **scala** > **com.microsoft.spark.example**, а затем двойным щелчком выберите **App** (Приложение), чтобы открыть App.scala.
 
@@ -182,27 +182,27 @@ ms.locfileid: "98940529"
 
     2. В окне **Project Structure** (Структура проекта) выберите **Artifacts** (Артефакты) > **символ "плюс" +**  > **JAR** > **From modules with dependencies...** (Из модулей с зависимостями...).
 
-        ![Добавление JAR-файла со структурой проекта в IntelliJ IDEA](./media/apache-spark-create-standalone-application/hdinsight-create-jar1.png)
+        :::image type="content" source="./media/apache-spark-create-standalone-application/hdinsight-create-jar1.png" alt-text="Добавление JAR-файла со структурой проекта в IntelliJ IDEA" border="true":::
 
     3. В окне **Create JAR from Modules** (Создание JAR-файла на основе модулей) выберите значок папки в текстовом поле **Main Class** (Основной класс).
 
     4. В окне **Select Main Class** (Выбор основного класса) выберите класс, который отображается по умолчанию, и щелкните **ОК**.
 
-        ![Выбор класса со структурой проекта в IntelliJ IDEA](./media/apache-spark-create-standalone-application/hdinsight-create-jar2.png)
+        :::image type="content" source="./media/apache-spark-create-standalone-application/hdinsight-create-jar2.png" alt-text="Выбор класса со структурой проекта в IntelliJ IDEA" border="true":::
 
     5. В окне **Create JAR from Modules** (Создание JAR-файла на основе модулей) выберите вариант **extract to the target JAR** (Извлечь в целевой JAR-файл) и щелкните **ОК**.  В результате будет создан один JAR-файл, содержащий все зависимости.
 
-        ![Добавление JAR-файла со структурой проекта из модуля в IntelliJ IDEA](./media/apache-spark-create-standalone-application/hdinsight-create-jar3.png)
+        :::image type="content" source="./media/apache-spark-create-standalone-application/hdinsight-create-jar3.png" alt-text="Добавление JAR-файла со структурой проекта из модуля в IntelliJ IDEA" border="true":::
 
     6. На вкладке **Макет выходных данных** содержится список всех JAR-файлов, которые включены в проект Maven. Здесь можно выбрать и удалить файлы, от которых не зависит работа приложения Scala. Из создаваемого приложения можно удалить все файлы, кроме последнего (**SparkSimpleApp compile output** (Выходные данные компиляции SparkSimpleApp)). Выберите JAR-файлы, которые нужно удалить, и щелкните значок минус **-** .
 
-        ![Удаление выходных данных со структурой проекта в IntelliJ IDEA](./media/apache-spark-create-standalone-application/hdi-delete-output-jars.png)
+        :::image type="content" source="./media/apache-spark-create-standalone-application/hdi-delete-output-jars.png" alt-text="Удаление выходных данных со структурой проекта в IntelliJ IDEA" border="true":::
 
         Убедитесь, что установлен флажок **Include in project build** (Включить в сборку проекта). Это гарантирует, что JAR-файл будет создаваться при каждом создании и обновлении проекта. Нажмите кнопку **Apply** (Применить), а затем — **ОК**.
 
     7. Чтобы создать JAR-файл, выберите **Build** (Сборка) > **Build Artifacts** (Артефакты сборки)  > **Build** (Сборка). Компиляция проекта займет около 30 секунд.  Выходной JAR-файл будет создан в разделе **\out\artifacts**.
 
-        ![Выходные данные артефакта проекта в IntelliJ IDEA](./media/apache-spark-create-standalone-application/hdi-artifact-output-jar.png)
+        :::image type="content" source="./media/apache-spark-create-standalone-application/hdi-artifact-output-jar.png" alt-text="Выходные данные артефакта проекта в IntelliJ IDEA" border="true":::
 
 ## <a name="run-the-application-on-the-apache-spark-cluster"></a>Запуск приложения в кластере Apache Spark
 
@@ -226,7 +226,7 @@ ms.locfileid: "98940529"
 
 1. Выберите команду **Удалить**. Выберите **Да**.
 
-![Удаление кластера HDInsight на портале Azure](./media/apache-spark-create-standalone-application/hdinsight-azure-portal-delete-cluster.png "Удаление кластера HDInsight")
+:::image type="content" source="./media/apache-spark-create-standalone-application/hdinsight-azure-portal-delete-cluster.png " alt-text="Удаление кластера HDInsight на портале Azure" border="true":::
 
 ## <a name="next-step"></a>Следующий шаг
 

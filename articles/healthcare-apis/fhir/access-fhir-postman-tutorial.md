@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.reviewer: dseven
 ms.author: matjazl
 author: matjazl
-ms.date: 03/16/2021
-ms.openlocfilehash: e9031dc77054a2bbac8015bbbdd7b9ed2a35e84f
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.date: 03/26/2021
+ms.openlocfilehash: 59847f745037acec47415489cdf61d119a7807af
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105043348"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105936280"
 ---
 # <a name="access-azure-api-for-fhir-with-postman"></a>Получение доступа к Azure API для FHIR с помощью Postman
 
@@ -24,12 +24,13 @@ ms.locfileid: "105043348"
 
 - Конечная точка FHIR в Azure. 
 
-   Чтобы развернуть API Azure для FHIR (управляемую службу), можно использовать [портал Azure](fhir-paas-portal-quickstart.md), [PowerShell](fhir-paas-powershell-quickstart.md)или [Azure CLI](fhir-paas-cli-quickstart.md).
+  Чтобы развернуть API Azure для FHIR (управляемую службу), можно использовать [портал Azure](fhir-paas-portal-quickstart.md), [PowerShell](fhir-paas-powershell-quickstart.md)или [Azure CLI](fhir-paas-cli-quickstart.md).
+
 - Зарегистрированное [конфиденциальное клиентское приложение](register-confidential-azure-ad-client-app.md) для доступа к службе FHIR.
 - Вы предоставили разрешения для конфиденциального клиентского приложения, например "участник данных FHIR", для доступа к службе FHIR. Дополнительные сведения см. в статье [Настройка Azure RBAC для FHIR](./configure-azure-rbac.md).
 - Установленное приложение Postman. 
     
-    Дополнительные сведения о POST см. в статье Начало [работы с POST](https://www.getpostman.com).
+  Дополнительные сведения о POST см. в статье Начало [работы с POST](https://www.getpostman.com).
 
 ## <a name="fhir-server-and-authentication-details"></a>Сведения о сервере FHIR и проверке подлинности
 
@@ -62,6 +63,8 @@ URL-адрес метаданных для Azure API для FHIR — `https://M
 ![Не удалось выполнить проверку подлинности](media/tutorial-postman/postman-authentication-failed.png)
 
 ## <a name="obtaining-an-access-token"></a>Получение маркера доступа
+Выберите элемент **Get New Access Token** (Получить новый маркер доступа).
+
 Чтобы получить допустимый маркер доступа, выберите **авторизация** и в раскрывающемся меню **тип** выберите **OAuth 2,0** .
 
 ![Настройка OAuth 2.0](media/tutorial-postman/postman-select-oauth2.png)
@@ -76,13 +79,13 @@ URL-адрес метаданных для Azure API для FHIR — `https://M
 |-----------------------|-----------------------------------------------------------------------------------------------------------------|----------------------------|
 | Имя токена            | MYTOKEN                                                                                                         | Выбранное имя          |
 | Тип предоставления разрешения            | Код авторизации                                                                                              |                            |
-| URL-адрес обратного вызова          | `https://www.getpostman.com/oauth2/callback`                                                                      |                            |
+| URL-адрес обратного вызова          | `https://www.getpostman.com/oauth2/callback`                                                                    |                            |
 | URL-адрес аутентификации              | `https://login.microsoftonline.com/{TENANT-ID}/oauth2/authorize?resource=<audience>` | `audience` — это `https://MYACCOUNT.azurehealthcareapis.com` в Azure API для FHIR. |
-| Access Token URL (URL-адрес маркера доступа)      | `https://login.microsoftonline.com/{TENANT ID}/oauth2/token`                                                      |                            |
-| Идентификатор клиента             | `XXXXXXXX-XXX-XXXX-XXXX-XXXXXXXXXXXX`                                                                            | Идентификатор приложения             |
-| Секрет клиента         | `XXXXXXXX`                                                                                                        | Секретный ключ клиента          |
-| Область | `<Leave Blank>` |
-| Состояние                |  `1234`                                                                                                           |                            |
+| Access Token URL (URL-адрес маркера доступа)      | `https://login.microsoftonline.com/{TENANT ID}/oauth2/token`                                                    |                            |
+| Идентификатор клиента             | `XXXXXXXX-XXX-XXXX-XXXX-XXXXXXXXXXXX`                                                                           | Идентификатор приложения             |
+| Секрет клиента         | `XXXXXXXX`                                                                                                      | Секретный ключ клиента          |
+| Область | `<Leave Blank>` | Область не используется; Поэтому его можно оставить пустым.  
+| Состояние                 | `1234`     | [Состояние](https://learning.postman.com/docs/sending-requests/authorization/) — это непрозрачное значение, предотвращающее подделку межсайтовых запросов. Он является необязательным и может принимать произвольное значение, например "1234".                           |
 | Аутентификация клиента | Отправьте учетные данные клиента в тексте запроса                                                                                 |                 
 
 Выберите **маркер запроса** для последующей проверки подлинности Azure Active Directory, и маркер будет возвращен в POST. Если происходит сбой проверки подлинности, дополнительные сведения см. в разделе POST Console. **Примечание**. на ленте выберите **вид**, а затем щелкните **Показать POST Console**. Сочетание клавиш для консоли Post — **ALT + CTRL + C**.
@@ -133,7 +136,7 @@ URL-адрес метаданных для Azure API для FHIR — `https://M
 
 ![Снимок экрана: запись пациента успешно создана.](media/tutorial-postman/postman-patient-created.png)
 
-Эта запись пациента отобразится при повторении поиска пациента:
+При повторении поиска пациента вы увидите запись о пациентах.
 
 ![Созданная запись пациента](media/tutorial-postman/postman-patient-found.png)
 

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: quickstart
 ms.date: 03/10/2021
 ms.openlocfilehash: 3237a32a90e3964644ff84958a065656cdf7f3ab
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103015851"
 ---
 # <a name="get-started-with-azure-cognitive-search-using-visual-studio-code"></a>Начало работы с Когнитивным поиском Azure с помощью Visual Studio Code

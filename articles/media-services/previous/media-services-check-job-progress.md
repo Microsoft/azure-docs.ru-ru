@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 5a32744f7a2385bf9da92a0f9cae5f664b1a18fc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103016973"
 ---
 # <a name="monitor-job-progress-using-net"></a>Мониторинг хода выполнения задания с помощью .NET

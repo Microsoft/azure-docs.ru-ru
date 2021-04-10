@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 5ae1bdfeeffdb904ba80ed42919e4f51411871c3
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103016158"
 ---
 # <a name="use-azure-webhooks-to-monitor-media-services-job-notifications-with-net"></a>Использование веб-перехватчиков Azure для наблюдения за уведомлениями о заданиях служб мультимедиа с использованием .NET
@@ -67,7 +67,7 @@ ms.locfileid: "103016158"
 |Имя|Определение|Пример| 
 |---|---|---|
 |SigningKey |Ключ подписи.| j0txf1f8msjytzvpe40nxbpxdcxtqcgxy0nt|
-|WebHookEndpoint | Адрес конечной точки объекта webhook. После создания функции веб-перехватчика скопируйте URL-адрес из ссылки **Получить URL-адрес функции**. | HTTPS: \/ /juliakofuncapp.azurewebsites.NET/API/Notification_Webhook_Function?Code=iN2phdrTnCxmvaKExFWOTulfnm4C71mMLIy8tzLr7Zvf6Z22HHIK5g = =.|
+|WebHookEndpoint | Адрес конечной точки объекта webhook. После создания функции веб-перехватчика скопируйте URL-адрес из ссылки **Получить URL-адрес функции**. | https:\//juliakofuncapp.azurewebsites.net/api/Notification_Webhook_Function?code=iN2phdrTnCxmvaKExFWOTulfnm4C71mMLIy8tzLr7Zvf6Z22HHIK5g==.|
 
 ## <a name="create-a-function"></a>Создание функции
 
@@ -82,7 +82,7 @@ ms.locfileid: "103016158"
 
 Функция Azure связана с файлами кода и другими файлами, описание которых представлено в данной статье. По умолчанию она связана с файлами **function.json** и **run.csx** (C#). Необходимо добавить файл **project.json**. Ниже приведены определения этих файлов.
 
-![файлы](./media/media-services-azure-functions/media-services-azure-functions003.png)
+![files](./media/media-services-azure-functions/media-services-azure-functions003.png)
 
 #### <a name="functionjson"></a>function.json
 
@@ -521,7 +521,7 @@ URL to the manifest for client streaming using HLS protocol: http://mediapkeewmg
             }
     ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 

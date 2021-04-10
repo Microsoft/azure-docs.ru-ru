@@ -456,7 +456,84 @@
                   href: windows-voice-assistants-best-practices.md
                 - name: Примеры и часто задаваемые вопросы
                   href: windows-voice-assistants-faq.md
-- name: Инструменты
+- name: Практические руководства
+  items:
+    - name: Включение ведения журналов
+      href: how-to-use-logging.md
+    - name: Отслеживание использования памяти
+      href: how-to-track-speech-sdk-memory-usage.md
+    - name: Включение частной конечной точки
+      href: speech-services-private-link.md
+    - name: Настройка OpenSSL для Linux
+      displayName: 'memory usage, memory consumption, object logging, object tracking, memory, openssl'
+      href: how-to-configure-openssl-linux.md
+    - name: Настройка RHEL/CentOS 7
+      href: how-to-configure-rhel-centos-7.md
+      displayName: 'RHEL, CentOS 7, CentOS, Configure RHEL, Configure CentO'
+    - name: Контейнеры
+      items:
+        - name: Установка и запуск контейнеров службы "Речь"
+          displayName: 'containers,install container,run container'
+          href: speech-container-howto.md
+        - name: Настройка контейнеров службы "Речь"
+          displayName: 'containers,configure containers,container config,configuration'
+          href: speech-container-configuration.md
+        - name: Пакетная обработка с помощью контейнеров службы "Речь"
+          href: speech-container-batch-processing.md
+        - name: Использование контейнеров службы "Речь" с Kubernetes и Helm
+          displayName: 'containers,kubernetes,k8s,helm,orchestration,on-prem,on-premises'
+          href: speech-container-howto-on-premises.md
+        - name: Использование контейнеров службы "Речь" с экземплярами контейнеров Azure
+          displayName: 'ACI,azure container instances,container instances,containers'
+          maintainContext: true
+          href: ../containers/azure-container-instance-recipe.md
+        - name: Часто задаваемые вопросы о контейнерах
+          href: speech-container-faq.md
+        - name: Документация по контейнерам Cognitive Services
+          href: ../containers/index.yml
+    - name: Миграция
+      items:
+        - name: Из Распознавания речи Bing
+          href: how-to-migrate-from-bing-speech.md
+        - name: Из API "Перевод речи"
+          href: how-to-migrate-from-translator-speech-api.md
+- name: Устройства
+  items:
+    - name: 'Документация по устройствам, подключаемым к службе "Речь"'
+      href: index-devices.yml
+    - name: Обзор
+      items:
+        - name: 'Что такое пакет SDK для устройств, подключаемых к службе "Речь"?'
+          href: speech-devices-sdk.md
+        - name: 'Получение пакета SDK для устройств, подключаемых к службе "Речь"'
+          href: get-speech-devices-sdk.md
+        - name: Примеры использования пакета SDK для речевых устройств (GitHub)
+          href: 'https://github.com/Azure-Samples/Cognitive-Services-Speech-Devices-SDK'
+    - name: Оборудование
+      items:
+        - name: Рекомендации по микрофонной решетке
+          href: speech-devices-sdk-microphone.md
+        - name: "Сведения о Roobo версии\_1"
+          href: speech-devices-sdk-roobo-v1.md
+        - name: "Сведения о Roobo версии\_2"
+          href: speech-devices-sdk-roobo-v2.md
+    - name: Практические руководства
+      items:
+        - name: Настройка набора микрофонов
+          href: how-to-devices-microphone-array-configuration.md
+    - name: Краткое руководство
+      items:
+        - name: 'Использование пакета SDK для устройств, подключаемых к службе "Речь"'
+          href: speech-devices-sdk-quickstart.md
+    - name: Ресурсы
+      items:
+        - name: 'Устранение неполадок пакета SDK для устройств, подключаемых к службе "Речь"'
+          href: speech-devices-sdk-troubleshooting.md
+    - name: Справочник
+      items:
+        - name: 'Заметки о выпуске пакета SDK для устройств, подключаемых к службе "Речь"'
+          href: devices-sdk-release-notes.md
+- name: Ресурсы
   items:
     - name: Пакет SDK для службы "Речь"
       items:
@@ -505,85 +582,6 @@
           href: 'https://speech.microsoft.com'
         - name: Создание приложения пользовательских команд с помощью Speech Studio
           href: ./quickstart-custom-commands-application.md
-- name: Развернуть
-  items:
-    - name: Включение ведения журналов
-      href: how-to-use-logging.md
-    - name: Отслеживание использования памяти
-      href: how-to-track-speech-sdk-memory-usage.md
-    - name: Включение частной конечной точки
-      href: speech-services-private-link.md
-    - name: Настройка OpenSSL для Linux
-      displayName: 'memory usage, memory consumption, object logging, object tracking, memory, openssl'
-      href: how-to-configure-openssl-linux.md
-    - name: Настройка RHEL/CentOS 7
-      href: how-to-configure-rhel-centos-7.md
-      displayName: 'RHEL, CentOS 7, CentOS, Configure RHEL, Configure CentO'
-    - name: Контейнеры
-      items:
-        - name: Установка и запуск контейнеров службы "Речь"
-          displayName: 'containers,install container,run container'
-          href: speech-container-howto.md
-        - name: Настройка контейнеров службы "Речь"
-          displayName: 'containers,configure containers,container config,configuration'
-          href: speech-container-configuration.md
-        - name: Пакетная обработка с помощью контейнеров службы "Речь"
-          href: speech-container-batch-processing.md
-        - name: Использование контейнеров службы "Речь" с Kubernetes и Helm
-          displayName: 'containers,kubernetes,k8s,helm,orchestration,on-prem,on-premises'
-          href: speech-container-howto-on-premises.md
-        - name: Использование контейнеров службы "Речь" с экземплярами контейнеров Azure
-          displayName: 'ACI,azure container instances,container instances,containers'
-          maintainContext: true
-          href: ../containers/azure-container-instance-recipe.md
-        - name: Часто задаваемые вопросы о контейнерах
-          href: speech-container-faq.md
-        - name: Документация по контейнерам Cognitive Services
-          href: ../containers/index.yml
-- name: Устройства
-  items:
-    - name: 'Документация по устройствам, подключаемым к службе "Речь"'
-      href: index-devices.yml
-    - name: Обзор
-      items:
-        - name: 'Что такое пакет SDK для устройств, подключаемых к службе "Речь"?'
-          href: speech-devices-sdk.md
-        - name: 'Получение пакета SDK для устройств, подключаемых к службе "Речь"'
-          href: get-speech-devices-sdk.md
-        - name: Примеры использования пакета SDK для речевых устройств (GitHub)
-          href: 'https://github.com/Azure-Samples/Cognitive-Services-Speech-Devices-SDK'
-    - name: Оборудование
-      items:
-        - name: Рекомендации по микрофонной решетке
-          href: speech-devices-sdk-microphone.md
-        - name: "Сведения о Roobo версии\_1"
-          href: speech-devices-sdk-roobo-v1.md
-        - name: "Сведения о Roobo версии\_2"
-          href: speech-devices-sdk-roobo-v2.md
-    - name: Практические руководства
-      items:
-        - name: Настройка набора микрофонов
-          href: how-to-devices-microphone-array-configuration.md
-    - name: Краткое руководство
-      items:
-        - name: 'Использование пакета SDK для устройств, подключаемых к службе "Речь"'
-          href: speech-devices-sdk-quickstart.md
-    - name: Ресурсы
-      items:
-        - name: 'Устранение неполадок пакета SDK для устройств, подключаемых к службе "Речь"'
-          href: speech-devices-sdk-troubleshooting.md
-    - name: Справочник
-      items:
-        - name: 'Заметки о выпуске пакета SDK для устройств, подключаемых к службе "Речь"'
-          href: devices-sdk-release-notes.md
-- name: Миграция
-  items:
-    - name: Из Распознавания речи Bing
-      href: how-to-migrate-from-bing-speech.md
-    - name: Из API "Перевод речи"
-      href: how-to-migrate-from-translator-speech-api.md
-- name: Ресурсы
-  items:
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/speech-service/context/context
     - name: Документация по Swagger

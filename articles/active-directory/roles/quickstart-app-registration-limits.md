@@ -14,10 +14,10 @@ ms.reviewer: vincesm
 ms.custom: it-pro, devx-track-azurepowershell
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 48740c52e6713735957e1ebf00e8996800eabec2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103015783"
 ---
 # <a name="quickstart-grant-permission-to-create-unlimited-app-registrations"></a>Краткое руководство. Предоставление разрешения на создание неограниченного количества регистраций приложений

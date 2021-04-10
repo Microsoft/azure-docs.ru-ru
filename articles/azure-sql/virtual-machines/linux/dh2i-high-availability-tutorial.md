@@ -7,12 +7,12 @@ ms.topic: tutorial
 author: amvin87
 ms.author: amitkh
 ms.reviewer: vanto
-ms.openlocfilehash: 0500f4143ad7cbdaaa8406af2b242e0d40b1caa2
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 07752eb5c7f18a8952c43e77afed78b06432aca6
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102219286"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105568543"
 ---
 # <a name="tutorial---setup-a-three-node-always-on-availability-group-with-dh2i-dxenterprise-running-on-linux-based-azure-virtual-machines"></a>Руководство. Настройка группы доступности Always On с тремя узлами с помощью решения DH2i DxEnterprise, работающего на Виртуальных машинах Azure под управлением Linux
 
@@ -39,22 +39,22 @@ ms.locfileid: "102219286"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-- Создайте четыре виртуальные машины в Azure. Следуйте указаниям, приведенным в статье [Краткое руководство. Создание виртуальной машины Linux на портале Azure](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal), чтобы создать виртуальные машины на базе Linux. Аналогичным образом, чтобы создать виртуальную машину на базе Windows, следуйте указаниям, приведенным в статье [Краткое руководство. Создание виртуальной машины Windows на портале Azure](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal).
-- Установите .NET 3.1 на всех виртуальных машинах под управлением Linux, которые будут входить в кластер. Следуйте приведенным [здесь](https://docs.microsoft.com/dotnet/core/install/linux) инструкциям в зависимости от выбранной операционной системы Linux.
+- Создайте четыре виртуальные машины в Azure. Следуйте указаниям, приведенным в статье [Краткое руководство. Создание виртуальной машины Linux на портале Azure](../../../virtual-machines/linux/quick-create-portal.md), чтобы создать виртуальные машины на базе Linux. Аналогичным образом, чтобы создать виртуальную машину на базе Windows, следуйте указаниям, приведенным в статье [Краткое руководство. Создание виртуальной машины Windows на портале Azure](../../../virtual-machines/windows/quick-create-portal.md).
+- Установите .NET 3.1 на всех виртуальных машинах под управлением Linux, которые будут входить в кластер. Следуйте приведенным [здесь](/dotnet/core/install/linux) инструкциям в зависимости от выбранной операционной системы Linux.
 - Потребуется действующая лицензия DxEnterprise с включенными функциями управления группами доступности. Дополнительные сведения о том, как получить бесплатную пробную версию DxEnterprise, см. [здесь](https://dh2i.com/trial/).
 
 ## <a name="install-sql-server-on-all-the-azure-vms-that-will-be-part-of-the-availability-group"></a>Установка SQL Server на всех виртуальных машинах Azure, которые будут входить в группу доступности
 
-Проходя это руководство, мы настроим кластер с тремя узлами под управлением Linux, на котором будет выполняться группа доступности. Следуйте документации по [установке SQL Server на Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-overview#install) в зависимости от выбранной вами платформы Linux. Кроме того, для работы с этим руководством рекомендуется установить [средства SQL Server](https://docs.microsoft.com/sql/linux/sql-server-linux-setup-tools).
+Проходя это руководство, мы настроим кластер с тремя узлами под управлением Linux, на котором будет выполняться группа доступности. Следуйте документации по [установке SQL Server на Linux](/sql/linux/sql-server-linux-overview#install) в зависимости от выбранной вами платформы Linux. Кроме того, для работы с этим руководством рекомендуется установить [средства SQL Server](/sql/linux/sql-server-linux-setup-tools).
  
 > [!NOTE]
-> Убедитесь, что выбранная вами ОС Linux является общим дистрибутивом, поддерживаемым как [DH2i DxEnterprise (см. раздел "Минимальные требования к системе")](https://dh2i.com/wp-content/uploads/DxEnterprise-v20-Admin-Guide.pdf), так и [Microsoft SQL Server](https://docs.microsoft.com/sql/linux/sql-server-linux-release-notes-2019#supported-platforms).
+> Убедитесь, что выбранная вами ОС Linux является общим дистрибутивом, поддерживаемым как [DH2i DxEnterprise (см. раздел "Минимальные требования к системе")](https://dh2i.com/wp-content/uploads/DxEnterprise-v20-Admin-Guide.pdf), так и [Microsoft SQL Server](/sql/linux/sql-server-linux-release-notes-2019#supported-platforms).
 >
 > В этом примере используется Ubuntu 18.04, то есть дистрибутив, поддерживаемый как DH2i DxEnterprise, так и Microsoft SQL Server.
 
 В рамках этого руководства мы не будем устанавливать SQL Server на виртуальную машину Windows, поскольку этот узел не будет частью кластера и используется только для управления кластером с помощью DxAdmin.
 
-После выполнения этого действия на всех трех виртуальных машинах под управлением Linux, которые будут использоваться в группе доступности, должны быть установлены SQL Server и [средства SQL Server](https://docs.microsoft.com/sql/linux/sql-server-linux-setup-tools) (необязательно).
+После выполнения этого действия на всех трех виртуальных машинах под управлением Linux, которые будут использоваться в группе доступности, должны быть установлены SQL Server и [средства SQL Server](/sql/linux/sql-server-linux-setup-tools) (необязательно).
  
 ## <a name="install-dxenterprise-on-all-the-vms-and-configure-the-cluster"></a>Установка DxEnterprise на всех виртуальных машинах и настройка кластера
 
@@ -84,7 +84,7 @@ ms.locfileid: "102219286"
 После выполнения этого действия у вас должны быть кластер DxEnterprise на виртуальных машинах Linux и клиент DxAdmin на клиентском компьютере Windows. 
 
 > [!NOTE]
-> Вы также можете создать кластер с тремя узлами, добавив один из узлов в *режиме только для конфигурации*, как это описано [здесь](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/availability-modes-always-on-availability-groups#SupportedAvModes), чтобы включить автоматический переход на другой ресурс. 
+> Вы также можете создать кластер с тремя узлами, добавив один из узлов в *режиме только для конфигурации*, как это описано [здесь](/sql/database-engine/availability-groups/windows/availability-modes-always-on-availability-groups#SupportedAvModes), чтобы включить автоматический переход на другой ресурс. 
 
 ## <a name="create-the-virtual-hosts-to-provide-failover-support-and-high-availability"></a>Создание виртуальных узлов для обеспечения поддержки отработки отказа и высокой доступности
 
@@ -100,7 +100,7 @@ ms.locfileid: "102219286"
 
 ## <a name="create-the-internal-azure-load-balancer-for-listener-optional"></a>Создание внутреннего Azure Load Balancer для прослушивателя (необязательно)
 
-На этом необязательном шаге можно создать и настроить Azure Load Balancer, содержащий IP-адреса для прослушивателей группы доступности. Дополнительные сведения об Azure Load Balancer см. в [этой статье](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview). Чтобы настроить Azure Load Balancer и прослушиватель группы доступности с помощью DxAdmin, следуйте указаниям статьи [Краткое руководство по началу работы с Azure Load Balancer](https://dh2i.com/docs/20-0/dxenterprise/dh2i-dxenterprise-20-0-software-azure-load-balancer-quick-start-guide/).
+На этом необязательном шаге можно создать и настроить Azure Load Balancer, содержащий IP-адреса для прослушивателей группы доступности. Дополнительные сведения об Azure Load Balancer см. в [этой статье](../../../load-balancer/load-balancer-overview.md). Чтобы настроить Azure Load Balancer и прослушиватель группы доступности с помощью DxAdmin, следуйте указаниям статьи [Краткое руководство по началу работы с Azure Load Balancer](https://dh2i.com/docs/20-0/dxenterprise/dh2i-dxenterprise-20-0-software-azure-load-balancer-quick-start-guide/).
 
 После выполнения этого шага у вас должен быть прослушиватель группы доступности, сопоставленный с внутренним Azure Load Balancer.
 
@@ -121,7 +121,7 @@ ms.locfileid: "102219286"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- Узнайте больше о [группах доступности на Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-availability-group-overview).
-- [Краткое руководство. Создание виртуальной машины Linux на портале Azure](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal)
-- [Краткое руководство. Создание виртуальной машины Windows на портале Azure](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
-- [Поддерживаемые платформы для SQL Server 2019 на Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-release-notes-2019#supported-platforms)
+- Узнайте больше о [группах доступности на Linux](/sql/linux/sql-server-linux-availability-group-overview).
+- [Краткое руководство. Создание виртуальной машины Linux на портале Azure](../../../virtual-machines/linux/quick-create-portal.md)
+- [Краткое руководство. Создание виртуальной машины Windows на портале Azure](../../../virtual-machines/windows/quick-create-portal.md)
+- [Поддерживаемые платформы для SQL Server 2019 на Linux](/sql/linux/sql-server-linux-release-notes-2019#supported-platforms)

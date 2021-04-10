@@ -4,10 +4,10 @@ description: Узнайте, как подключить Решение Azure VM
 ms.topic: tutorial
 ms.date: 03/13/2021
 ms.openlocfilehash: 0b26dc4756cb37544c2b2f8c5a75df0ac1a9d629
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103491798"
 ---
 # <a name="connect-azure-vmware-solution-to-your-on-premises-environment"></a>Подключение Решения Azure VMware к локальной среде

@@ -1,6 +1,6 @@
 ---
 title: H264 Single Bitrate 720p для Android | Документация Майкрософт
-description: В этом разделе приводятся общие сведения о предустановленной задаче H264 Single bitrate односкоростной **720p для Android** .
+description: Этот раздел содержит общие сведения о предустановке задачи **H264 Single Bitrate 720p for Android**.
 author: IngridAtMicrosoft
 manager: femila
 editor: ''
@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: a05203925c0e731c1c05e0c97d0f67f997419970
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103016446"
 ---
 # <a name="h264-single-bitrate-720p-for-android"></a>H264 Single Bitrate 720p для Android

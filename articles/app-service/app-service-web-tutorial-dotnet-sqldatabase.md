@@ -7,10 +7,10 @@ ms.topic: tutorial
 ms.date: 03/18/2021
 ms.custom: devx-track-csharp, mvc, devcenter, vs-azure, seodec18
 ms.openlocfilehash: 533bd817b704db9976624b356a9950a9c48b8339
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104606025"
 ---
 # <a name="tutorial-deploy-an-aspnet-app-to-azure-with-azure-sql-database"></a>Руководство по развертыванию приложения ASP.NET в Azure со службой "База данных SQL Azure"
