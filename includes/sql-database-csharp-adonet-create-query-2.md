@@ -1,15 +1,15 @@
 ---
-author: MightyPen
+author: rothja
+ms.author: jroth
 ms.service: sql-database
 ms.topic: include
 ms.date: 12/10/2018
-ms.author: genemi
-ms.openlocfilehash: bca885f9b19086302fd91d29b8ff6553b7205f28
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 5509c640fbf232cb6c613d96c30cb0e8d9d10ec5
+ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "86544239"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106551698"
 ---
 ## <a name="c-program-example"></a>Пример программы C#
 

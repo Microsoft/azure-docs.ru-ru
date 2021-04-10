@@ -3,12 +3,12 @@ title: Руководство по записи видео в облако на 
 description: Из этого руководства можно узнать, как с помощью службы Аналитики видеотрансляций на платформе Azure IoT Edge записывать видео в облако на основе событий и воспроизводить его.
 ms.topic: tutorial
 ms.date: 05/27/2020
-ms.openlocfilehash: ea98b4c8981be9fffe7911e4c8402a8f522976f9
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: de1a4d423108ddb18af4f8478c9bac60672d6062
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101702323"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106279822"
 ---
 # <a name="tutorial-event-based-video-recording-to-the-cloud-and-playback-from-the-cloud"></a>Руководство. Запись видео в облако на основе событий и его воспроизведение
 
@@ -426,7 +426,7 @@ ms.locfileid: "101702323"
 1. В открывшемся мастере примите параметры по умолчанию и выберите **Добавить**. Дополнительные сведения см. в статье о [воспроизведении видео](video-playback-concept.md).
 
     > [!TIP]
-    > Убедитесь, что [конечная точка потоковой передачи запущена](../latest/streaming-endpoint-concept.md).
+    > Убедитесь, что [конечная точка потоковой передачи запущена](../latest/stream-streaming-endpoint-concept.md).
 1. Проигрыватель должен загрузить видео. Выберите **Воспроизвести**, чтобы просмотреть его.
 
 > [!NOTE]

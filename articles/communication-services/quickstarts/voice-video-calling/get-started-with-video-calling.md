@@ -7,12 +7,12 @@ ms.author: mikben
 ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 82f4d9028fa94d4df0ff089fda213d64e13d56ec
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 5b7fd8e8cd5bd3ab0f15115365ed057fc67f1204
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103487876"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105604436"
 ---
 # <a name="quickstart-add-11-video-calling-to-your-app-javascript"></a>Краткое руководство. Добавление в приложение функции персонального видеовызова (JavaScript)
 
@@ -23,8 +23,8 @@ ms.locfileid: "103487876"
 ## <a name="prerequisites"></a>Предварительные требования
 - Получите учетную запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
 - [Node.js](https://nodejs.org/en/): версии Active LTS и Maintenance LTS (8.11.1 и 10.14.1).
-- Создайте активный ресурс Служб коммуникации. [Создайте ресурс Служб коммуникации.](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp)
-- Создайте маркер доступа пользователя для создания экземпляра клиента вызова. Узнайте, как [создать маркер доступа пользователя и обеспечить управление им](https://docs.microsoft.com/azure/communication-services/quickstarts/access-tokens?pivots=programming-language-csharp).
+- Создайте активный ресурс Служб коммуникации. [Создайте ресурс Служб коммуникации.](../create-communication-resource.md?pivots=platform-azp&tabs=windows)
+- Создайте маркер доступа пользователя для создания экземпляра клиента вызова. Узнайте, как [создать маркер доступа пользователя и обеспечить управление им](../access-tokens.md?pivots=programming-language-csharp).
 
 ## <a name="setting-up"></a>Настройка
 ### <a name="create-a-new-nodejs-application"></a>создание приложения Node.js;
@@ -33,9 +33,11 @@ ms.locfileid: "103487876"
 mkdir calling-quickstart && cd calling-quickstart
 ```
 ### <a name="install-the-package"></a>Установка пакета
-Используйте команду `npm install`, чтобы установить клиентскую библиотеку Служб коммуникации для реализации вызовов на JavaScript.
+Используйте команду `npm install`, чтобы установить пакет SDK Служб коммуникации Azure для реализации вызовов на JavaScript.
 
-В этом кратком руководстве используется клиентская библиотека для вызовов Служб коммуникации Azure `1.0.0.beta-6`. 
+> [!IMPORTANT]
+> В этом кратком руководстве используется версия пакета SDK Служб коммуникации Azure для вызовов `1.0.0.beta-10`. 
+
 
 ```console
 npm install @azure/communication-common --save
@@ -105,7 +107,7 @@ npm install webpack@4.42.0 webpack-cli@3.3.11 webpack-dev-server@3.10.3 --save-d
 Создайте файл в корневом каталоге проекта с именем `client.js`, чтобы включить логику приложения для этого краткого руководства. Добавьте следующий код, чтобы импортировать клиент вызова и получить ссылки на элементы модели DOM.
 
 ```JavaScript
-import { CallClient, CallAgent, Renderer, LocalVideoStream } from "@azure/communication-calling";
+import { CallClient, CallAgent, VideoStreamRenderer, LocalVideoStream } from "@azure/communication-calling";
 import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 
 let call;
@@ -124,18 +126,18 @@ let rendererRemote;
 ```
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки Служб коммуникации Azure для вызовов:
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK Служб коммуникации Azure для вызовов:
 
 | Имя      | Описание | 
 | :---        |    :----   |
-| CallClient  | CallClient — это основная точка входа в клиентскую библиотеку для вызовов.      |
+| CallClient  | CallClient — это основная точка входа в пакет SDK для вызовов.      |
 | CallAgent  | CallAgent используется для инициирования вызовов и управления ими.        |
 | DeviceManager | DeviceManager используется для управления устройствами мультимедиа.    |
 | AzureCommunicationTokenCredential | Класс AzureCommunicationTokenCredential реализует интерфейс CommunicationTokenCredential, который используется для создания экземпляра CallAgent.        |
 
 ## <a name="authenticate-the-client-and-access-devicemanager"></a>Проверка подлинности клиента и получение доступа к DeviceManager
 
-Вам необходимо заменить <USER_ACCESS_TOKEN> допустимым маркером доступа пользователя для вашего ресурса. Если у вас еще нет доступного маркера, см. документацию по маркеру доступа пользователя. С помощью CallClient инициализируйте экземпляр CallAgent с CommunicationUserCredential, и мы сможем осуществлять и принимать вызовы. Для получения доступа к DeviceManager необходимо сначала создать экземпляр callAgent. Затем можно применить метод `getDeviceManager` для экземпляра `CallClient`, чтобы получить `DeviceManager`.
+Вам необходимо заменить <USER_ACCESS_TOKEN> допустимым маркером доступа пользователя для вашего ресурса. Если у вас еще нет доступного маркера, см. документацию по маркеру доступа пользователя. С помощью `CallClient` инициализируйте экземпляр `CallAgent` с `CommunicationUserCredential`, который позволит нам выполнять и принимать вызовы. Для доступа к `DeviceManager` необходимо сначала создать экземпляр callAgent. Затем можно применить метод `getDeviceManager` для экземпляра `CallClient`, чтобы получить `DeviceManager`.
 
 Добавьте в `client.js` следующий код:
 
@@ -154,7 +156,7 @@ init();
 
 Добавьте прослушиватель событий для инициации вызова при выборе `callButton`:
 
-Сначала вам нужно перечислить локальные камеры с помощью API getCameraList deviceManager. В этом кратком руководстве используется первая камера в коллекции. Когда нужная камера будет выбрана, экземпляр LocalVideoStream будет создан и передан в videoOptions как элемент в массиве localVideoStream в метод вызова. Когда вызов будет осуществлен, автоматически начнется отправка видеопотока другому участнику. 
+Сначала необходимо перечислить локальные камеры с помощью API deviceManager `getCameraList`. В этом кратком руководстве используется первая камера в коллекции. Когда нужная камера будет выбрана, экземпляр LocalVideoStream будет создан и передан методу вызова в `videoOptions` как элемент в массиве localVideoStream. Когда вызов будет осуществлен, автоматически начнется отправка видеопотока другому участнику. 
 
 ```JavaScript
 callButton.addEventListener("click", async () => {
@@ -179,47 +181,47 @@ callButton.addEventListener("click", async () => {
     callButton.disabled = true;
 });
 ```  
-Чтобы отобразить `LocalVideoStream`, создайте новый экземпляр `Renderer`, а затем создать новый экземпляр RendererView с помощью асинхронного метода `createView`. Затем вы сможете присоединить `view.target` к любому элементу пользовательского интерфейса. 
+Чтобы отобразить `LocalVideoStream`, создайте новый экземпляр `VideoStreamRenderer`, а затем создайте новый экземпляр `VideoStreamRendererView` с помощью асинхронного метода `createView`. Затем вы сможете присоединить `view.target` к любому элементу пользовательского интерфейса. 
 
 ```JavaScript
 async function localVideoView() {
-    rendererLocal = new Renderer(localVideoStream);
+    rendererLocal = new VideoStreamRenderer(localVideoStream);
     const view = await rendererLocal.createView();
     document.getElementById("myVideo").appendChild(view.target);
 }
 ```
-Все удаленные участники доступны через коллекцию `remoteParticipants` в экземпляре вызова. Вам нужно подписаться на удаленных участников текущего вызова и прослушивать событие `remoteParticipantsUpdated`, чтобы подписаться на добавленных удаленных участников.
+Все удаленные участники доступны через коллекцию `remoteParticipants` в экземпляре вызова. Настройте прослушивание события `remoteParticipantsUpdated`, чтобы получить уведомление о добавлении к вызову нового удаленного участника. Вам также потребуется выполнить итерацию коллекции `remoteParticipants`, чтобы подписаться на каждого участника и их видеопотоки. 
 
 ```JavaScript
 function subscribeToRemoteParticipantInCall(callInstance) {
-    callInstance.remoteParticipants.forEach( p => {
-        subscribeToRemoteParticipant(p);
-    })
     callInstance.on('remoteParticipantsUpdated', e => {
         e.added.forEach( p => {
-            subscribeToRemoteParticipant(p);
+            subscribeToParticipantVideoStreams(p);
         })
-    });   
+    }); 
+    callInstance.remoteParticipants.forEach( p => {
+        subscribeToParticipantVideoStreams(p);
+    })
 }
 ```
-Вы можете подписаться на коллекцию `remoteParticipants` текущего вызова и проверить коллекции `videoStreams`, чтобы перечислить потоки каждого участника. Также необходимо подписаться на событие remoteParticipantsUpdated для управления добавленными удаленными участниками. 
+Подпишитесь на событие `videoStreamsUpdated`, чтобы обрабатывать добавленные видеопотоки удаленных участников. Вы можете изучить коллекции `videoStreams`, чтобы вывести список потоков каждого участника, в ходе проверки коллекции `remoteParticipants` текущего вызова.
 
 ```JavaScript
-function subscribeToRemoteParticipant(remoteParticipant) {
-    remoteParticipant.videoStreams.forEach(v => {
-        handleVideoStream(v);
-    });
+function subscribeToParticipantVideoStreams(remoteParticipant) {
     remoteParticipant.on('videoStreamsUpdated', e => {
         e.added.forEach(v => {
             handleVideoStream(v);
         })
+    });
+    remoteParticipant.videoStreams.forEach(v => {
+        handleVideoStream(v);
     });
 }
 ```
 Чтобы отобразить `isAvailableChanged`, нужно подписаться на событие `remoteVideoStream`. Если свойство `isAvailable` изменит значение на `true`, значит этот удаленный участник отправляет поток. При каждом изменении состояния доступности удаленного потока вы можете удалить `Renderer` или определенное представление (`RendererView`) либо оставить все как есть, но это приведет к отображению пустого видеокадра.
 ```JavaScript
 function handleVideoStream(remoteVideoStream) {
-    remoteVideoStream.on('availabilityChanged', async () => {
+    remoteVideoStream.on('isAvailableChanged', async () => {
         if (remoteVideoStream.isAvailable) {
             remoteVideoView(remoteVideoStream);
         } else {
@@ -231,11 +233,11 @@ function handleVideoStream(remoteVideoStream) {
     }
 }
 ```
-Чтобы отобразить `RemoteVideoStream`, создайте новый экземпляр `Renderer`, а затем создайте новый экземпляр `RendererView` с помощью асинхронного метода `createView`. Затем вы сможете присоединить `view.target` к любому элементу пользовательского интерфейса. 
+Чтобы отобразить `RemoteVideoStream`, создайте новый экземпляр `VideoStreamRenderer`, а затем создайте новый экземпляр `VideoStreamRendererView` с помощью асинхронного метода `createView`. Затем вы сможете присоединить `view.target` к любому элементу пользовательского интерфейса. 
 
 ```JavaScript
 async function remoteVideoView(remoteVideoStream) {
-    rendererRemote = new Renderer(remoteVideoStream);
+    rendererRemote = new VideoStreamRenderer(remoteVideoStream);
     const view = await rendererRemote.createView();
     document.getElementById("remoteVideo").appendChild(view.target);
 }
@@ -259,7 +261,7 @@ callAgent.on('incomingCall', async e => {
     const addedCall = await e.incomingCall.accept({videoOptions: {localVideoStreams:[localVideoStream]}});
     call = addedCall;
 
-    subscribeToRemoteParticipantInCall(addedCall);   
+    subscribeToRemoteParticipantInCall(addedCall);  
 });
 ```
 ## <a name="end-the-current-call"></a>Завершение текущего вызова
@@ -330,10 +332,12 @@ npx webpack-dev-server --entry ./client.js --output bundle.js --debug --devtool 
 Пример приложения можно загрузить в репозитории [GitHub](https://github.com/Azure-Samples/communication-services-javascript-quickstarts/tree/main/add-1-on-1-video-calling).
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
-Если вы хотите очистить и удалить подписку на Службы коммуникации, вы можете удалить ресурс или группу ресурсов. При этом удаляются все ресурсы, связанные с ней. См. сведения об [очистке ресурсов](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp#clean-up-resources).
+Если вы хотите очистить и удалить подписку на Службы коммуникации, вы можете удалить ресурс или группу ресурсов. При этом удаляются все ресурсы, связанные с ней. См. сведения об [очистке ресурсов](../create-communication-resource.md?pivots=platform-azp&tabs=windows#clean-up-resources).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения см. в следующих статьях:
+
 - Ознакомьтесь с нашим [примером функции веб-вызовов](https://docs.microsoft.com/azure/communication-services/samples/web-calling-sample).
-- Изучите [возможности клиентской библиотеки для вызовов](https://docs.microsoft.com/azure/communication-services/quickstarts/voice-video-calling/calling-client-samples?pivots=platform-web).
+- Узнайте больше о [возможностях пакета SDK для вызовов](https://docs.microsoft.com/azure/communication-services/quickstarts/voice-video-calling/calling-client-samples?pivots=platform-web)
 - Узнайте больше о [принципе работы функции вызовов](https://docs.microsoft.com/azure/communication-services/concepts/voice-video-calling/about-call-types).
+

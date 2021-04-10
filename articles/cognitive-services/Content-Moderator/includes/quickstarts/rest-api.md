@@ -10,12 +10,12 @@ ms.subservice: content-moderator
 ms.topic: include
 ms.date: 12/08/2020
 ms.author: pafarley
-ms.openlocfilehash: 859c57fb6caeee730d5ba937bacf5d29a25ca173
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 747f97e54dbe10ca055281c189c805e3dd97c867
+ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102511021"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105582815"
 ---
 Сведения о начале работы с REST API Azure Content Moderator. 
 
@@ -32,7 +32,7 @@ Content Moderator — это служба ИИ, позволяющая упра
 * Получив подписку Azure, <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesContentModerator"  title="Создание ресурса Content Moderator"  target="_blank">создайте ресурс Content Moderator </a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
     * Для подключения приложения к Content Moderator потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
-* [PowerShell версии 6.0 и выше](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
+* [PowerShell версии 6.0 и выше](/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
 
 
 ## <a name="moderate-text"></a>Модерация текста
@@ -178,4 +178,3 @@ Content Moderator — это служба ИИ, позволяющая упра
 
 * [Принципы модерации изображений](../../image-moderation-api.md)
 * [Понятия модерации текста](../../text-moderation-api.md)
-* [Что такое Azure Content Moderator?](../../overview.md)
