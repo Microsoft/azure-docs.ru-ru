@@ -11,10 +11,10 @@ ms.date: 11/29/2018
 ms.author: cynthn
 ms.custom: mvc
 ms.openlocfilehash: a61d7425a7a907230008ab1d4f15a836150e1518
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102549062"
 ---
 # <a name="tutorial---manage-azure-disks-with-azure-powershell"></a>Руководство по управлению дисками Azure с помощью Azure PowerShell

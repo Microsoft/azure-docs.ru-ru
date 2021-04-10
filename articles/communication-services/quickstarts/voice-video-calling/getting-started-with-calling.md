@@ -8,19 +8,16 @@ ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
 zone_pivot_groups: acs-plat-web-ios-android
-ms.openlocfilehash: 0886e3955ba58a5a8edbf3cd72b1065b1000b5b3
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 5a506d84f338b2eab1c32caa4d94bd03a33e637d
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104598832"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105728340"
 ---
 # <a name="quickstart-add-voice-calling-to-your-app"></a>Краткое руководство. Добавление функции голосового вызова в приложение
 
-[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
-
-
-Начало работы со Службами коммуникации Azure с помощью клиентской библиотеки голосовых вызовов Служб коммуникации для добавления в приложение функции голосовых вызовов и видеовызовов.
+Начало работы со Службами коммуникации Azure с помощью пакета SDK голосовых вызовов Служб коммуникации для добавления в приложение функции голосовых вызовов и видеовызовов.
 
 [!INCLUDE [Emergency Calling Notice](../../includes/emergency-calling-notice-include.md)]
 
@@ -45,5 +42,5 @@ ms.locfileid: "104598832"
 Дополнительные сведения см. в следующих статьях:
 
 - Ознакомьтесь с нашим [главным примером функции вызовов](../../samples/calling-hero-sample.md).
-- Изучите [возможности клиентской библиотеки для вызовов](./calling-client-samples.md).
+- Узнайте больше о [возможностях пакета SDK для вызовов](./calling-client-samples.md)
 - Узнайте больше о [принципе работы функции вызовов](../../concepts/voice-video-calling/about-call-types.md).
