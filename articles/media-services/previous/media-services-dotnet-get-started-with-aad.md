@@ -15,10 +15,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: has-adal-ref, devx-track-csharp
 ms.openlocfilehash: fd19bce05d18eb8f9b8fd3806082caeebe98bdad
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103013998"
 ---
 # <a name="use-azure-ad-authentication-to-access-azure-media-services-api-with-net"></a>Использование аутентификации Azure AD для доступа к API служб мультимедиа Azure с помощью .NET
@@ -32,7 +32,7 @@ ms.locfileid: "103013998"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Учетная запись Azure. Дополнительные сведения см. в статье [Бесплатная пробная версия Azure](https://azure.microsoft.com/pricing/free-trial/).
+- Учетная запись Azure. Дополнительные сведения см. на странице с [бесплатной пробной версией Azure](https://azure.microsoft.com/pricing/free-trial/).
 - Учетная запись служб мультимедиа. Дополнительные сведения см. в статье [Создание учетной записи служб мультимедиа Azure с помощью портала Azure](media-services-portal-create-account.md).
 - Последняя версия пакета [NuGet](https://www.nuget.org/packages/windowsazure.mediaservices).
 - Изучение статьи [Доступ к API служб мультимедиа Azure с помощью аутентификации Azure AD](media-services-use-aad-auth-to-access-ams-api.md).
@@ -99,7 +99,7 @@ var tokenCredentials = new AzureAdTokenCredentials("microsoft.onmicrosoft.com", 
 var tokenProvider = new AzureAdTokenProvider(tokenCredentials);
 ```
 
-Чтобы начать программировать со служб мультимедиа, необходимо создать экземпляр **CloudMediaContext** , представляющий контекст сервера. **CloudMediaContext** содержит ссылки на важные коллекции, в том числе на задания, ресурсы, файлы, политики доступа и указатели.
+Чтобы начать программирование для служб мультимедиа, необходимо создать экземпляр **CloudMediaContext**, представляющий контекст сервера. **CloudMediaContext** содержит ссылки на важные коллекции, в том числе на задания, ресурсы, файлы, политики доступа и указатели.
 
 Необходимо также передать **универсальный код ресурса (URI) для ресурса REST служб мультимедиа** в конструктор **CloudMediaContext**. Чтобы получить универсальный код ресурса (URI) для ресурса REST служб мультимедиа, войдите на портал Azure, выберите учетную запись служб мультимедиа Azure, выберите **Доступ к API**, а затем щелкните **Подключение к API служб мультимедиа Azure с помощью проверки подлинности пользователя**.
 
@@ -169,7 +169,7 @@ var tokenCredentials = new AzureAdTokenCredentials("{YOUR Azure AD TENANT DOMAIN
                         AzureEnvironments.AzureCloudEnvironment);
 ```
 
-Чтобы начать программировать со служб мультимедиа, необходимо создать экземпляр **CloudMediaContext** , представляющий контекст сервера. Необходимо также передать **универсальный код ресурса (URI) для ресурса REST служб мультимедиа** в конструктор **CloudMediaContext**. Значение **универсального кода ресурса (URI) для ресурса REST служб мультимедиа** можно получить на портале Azure.
+Чтобы начать программирование для служб мультимедиа, необходимо создать экземпляр **CloudMediaContext**, представляющий контекст сервера. Необходимо также передать **универсальный код ресурса (URI) для ресурса REST служб мультимедиа** в конструктор **CloudMediaContext**. Значение **универсального кода ресурса (URI) для ресурса REST служб мультимедиа** можно получить на портале Azure.
 
 Следующий пример кода создает экземпляр **CloudMediaContext**.
 
@@ -207,6 +207,6 @@ namespace AzureADAuthSample
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Приступите к [передаче файлов в учетную запись](media-services-dotnet-upload-files.md).

@@ -12,10 +12,10 @@ ms.custom: devx-track-python, devx-track-js, devx-track-csharp, cog-serv-seo-aug
 keywords: Пользовательское визуальное распознавание
 zone_pivot_groups: programming-languages-set-one
 ms.openlocfilehash: 5eb910ed4f7c15a4755dd8f494771a56c4c64230
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102184232"
 ---
 # <a name="quickstart-create-an-object-detection-project-with-the-custom-vision-client-library"></a>Краткое руководство. Создание проекта для обнаружения объектов с помощью клиентской библиотеки для службы "Пользовательское визуальное распознавание"

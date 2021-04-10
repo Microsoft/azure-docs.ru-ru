@@ -11,12 +11,12 @@ ms.topic: include
 ms.date: 09/15/2020
 ms.custom: cog-serv-seo-aug-2020
 ms.author: pafarley
-ms.openlocfilehash: 07828e7faff61086ea982b8017bc3c590e386be1
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 06ff04d8615b7ebdda07e993a3fc560d44fbf702
+ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102445108"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105641"
 ---
 Приступайте к работе с клиентской библиотекой Azure Content Moderator для Python. Выполните приведенные здесь действия, чтобы установить пакет PiPy и протестировать пример кода для выполнения базовых задач. 
 
@@ -353,6 +353,3 @@ python quickstart-file.py
 
 > [!div class="nextstepaction"]
 >[Принципы модерации изображений](../../image-moderation-api.md)
-
-* [Что такое Azure Content Moderator?](../../overview.md)
-* Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/python/ContentModerator/ContentModeratorQuickstart.py).

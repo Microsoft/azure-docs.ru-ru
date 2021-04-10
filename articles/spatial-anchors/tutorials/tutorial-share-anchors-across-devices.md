@@ -8,12 +8,12 @@ ms.author: parkerra
 ms.date: 11/20/2020
 ms.topic: tutorial
 ms.service: azure-spatial-anchors
-ms.openlocfilehash: 3048eb1ca7f9312a43bc1ab5885bf19d4c2e7931
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.openlocfilehash: 3ed9b18144bb727af751fbcbbdd5cc6631afc40f
+ms.sourcegitcommit: 91361cbe8fff7c866ddc4835251dcbbe2621c055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96185467"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105727235"
 ---
 # <a name="tutorial-share-spatial-anchors-across-sessions-and-devices"></a>Руководство по Совместное использование пространственных привязок между сеансами и устройствами
 
@@ -86,7 +86,7 @@ ms.locfileid: "96185467"
 
 Откройте Visual Studio Code, а затем откройте проект в папке *Sharing\SharingServiceSample*. 
 
-Чтобы развернуть службу совместного использования с помощью Visual Studio Code, следуйте инструкциям в статье <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vscode?view=aspnetcore-2.2#open-it-with-visual-studio-code" target="_blank">Публикация приложения ASP.NET Core в Azure с помощью Visual Studio Code</a>. Начните с раздела "Открытие проекта с помощью Visual Studio Code". Не создавайте еще один проект ASP.NET, как описано на предыдущем шаге, поскольку у вас уже есть проект, который нужно развернуть и опубликовать (SharingServiceSample).
+Чтобы развернуть службу совместного использования с помощью Visual Studio Code, следуйте инструкциям в статье <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vscode?view=aspnetcore-2.2&preserve-view=true#open-it-with-visual-studio-code" target="_blank">Публикация приложения ASP.NET Core в Azure с помощью Visual Studio Code</a>. Начните с раздела "Открытие проекта с помощью Visual Studio Code". Не создавайте еще один проект ASP.NET, как описано на предыдущем шаге, поскольку у вас уже есть проект, который нужно развернуть и опубликовать (SharingServiceSample).
 
 ---
 

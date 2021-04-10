@@ -11,10 +11,10 @@ ms.topic: tutorial
 ms.date: 02/25/2021
 ms.custom: seodec18
 ms.openlocfilehash: 76a33bdb773645c9e8f97a47b1378d813b165631
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103464245"
 ---
 # <a name="tutorial-set-up-an-azure-time-series-insights-gen2-environment"></a>Руководство по настройке среды 2-го поколения службы "Аналитика временных рядов Azure"

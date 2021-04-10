@@ -7,10 +7,10 @@ ms.service: managed-instance-apache-cassandra
 ms.topic: overview
 ms.date: 03/02/2021
 ms.openlocfilehash: d99c62e7d88510c351f87d85b4f8c5c271767cb3
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101747837"
 ---
 # <a name="what-is-azure-managed-instance-for-apache-cassandra-preview"></a>Что такое управляемый экземпляр Azure для Apache Cassandra? (предварительная версия)
