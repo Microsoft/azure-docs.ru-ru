@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 05/12/2017
 ms.author: rclaus
 ms.openlocfilehash: 2084d79ecbbc53ef9e3c75bae0664eae7de0eccb
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102559636"
 ---
 # <a name="common-azure-cli-commands-for-managing-azure-resources"></a>Основные команды Azure CLI для управления ресурсами Azure

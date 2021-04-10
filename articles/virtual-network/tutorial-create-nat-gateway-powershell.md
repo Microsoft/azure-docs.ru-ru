@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 03/09/2021
 ms.custom: template-tutorial
 ms.openlocfilehash: 884697cee84c05916fe19fb8f9435de86bda291e
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102619887"
 ---
 # <a name="tutorial-create-a-nat-gateway-using-azure-powershell"></a>Руководство по Создание шлюза NAT с помощью Azure PowerShell
@@ -197,7 +197,7 @@ New-AzVM @vm
     
 1. Войдите на [портал Azure](https://portal.azure.com)
 
-1. Найдите общедоступный IP-адрес для шлюза NAT на экране **Обзор**. В меню слева щелкните **Все службы**, выберите **Все ресурсы**, а затем — **myPublicIP**.
+1. Найдите общедоступный IP-адрес для шлюза NAT на экране **обзора**. В меню слева щелкните **Все службы**, выберите **Все ресурсы**, а затем — **myPublicIP**.
 
 2. Запишите общедоступный IP-адрес:
 

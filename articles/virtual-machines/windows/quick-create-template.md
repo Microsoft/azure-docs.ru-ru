@@ -10,10 +10,10 @@ ms.date: 06/04/2020
 ms.author: cynthn
 ms.custom: subject-armqs
 ms.openlocfilehash: b2856c51ccc31b57ea567c5d0940cd260797f770
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102560758"
 ---
 # <a name="quickstart-create-a-windows-virtual-machine-using-an-arm-template"></a>Краткое руководство. Создание виртуальной машины Windows с помощью шаблона ARM

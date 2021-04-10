@@ -8,12 +8,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 03/04/2020
 ms.author: aahi
-ms.openlocfilehash: d5d47f097fa216d69b8ed59fdb057378724c2228
-ms.sourcegitcommit: 1cf157f9a57850739adef72219e79d76ed89e264
+ms.openlocfilehash: 338e4f0c1c47a7786e21ad98bb3e56a1505f9bb2
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94625192"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105292"
 ---
 Воспользуйтесь сведениями из краткого руководства и выполните первый поиск изображения с помощью клиентской библиотеки Поиска изображений Bing. Эта библиотека является оболочкой для API и содержит те же функции. Это простое приложение Python отправляет запрос на поиск изображения, анализирует ответ JSON и отображает URL-адрес первого возвращенного изображения.
 
@@ -21,7 +21,7 @@ ms.locfileid: "94625192"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Python 2.7 или 3.4](https://www.python.org/) и более поздних версий.
+* [Python версии 2.7 или 3.6 и выше.](https://www.python.org/)
 
 * [Клиентская библиотека Поиска изображений Azure](https://pypi.org/project/azure-cognitiveservices-search-imagesearch/) для Python.
     * Установка с помощью `pip install azure-cognitiveservices-search-imagesearch`

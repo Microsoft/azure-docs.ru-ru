@@ -8,10 +8,10 @@ adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts
 adobe-target-experience: Experience B
 adobe-target-content: ./create-first-function-vs-code-java-uiex
 ms.openlocfilehash: 10ac677fb65428e8b8855c43b319bbebe7bbbb71
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101701438"
 ---
 # <a name="quickstart-create-a-java-function-in-azure-using-visual-studio-code"></a>Краткое руководство. Создание функции Java в Azure с помощью Visual Studio Code
