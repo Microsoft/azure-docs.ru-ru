@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 03/02/2021
 ms.topic: overview
 ms.openlocfilehash: 65f61324c496d4b76e6f599966a780c735114870
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101686671"
 ---
 # <a name="azure-arc-enabled-sql-managed-instance-overview"></a>Обзор Управляемого экземпляра SQL с поддержкой Azure Arc

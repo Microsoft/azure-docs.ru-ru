@@ -6,10 +6,10 @@ ms.topic: overview
 ms.custom: contperf-fy21q1
 ms.date: 08/21/2020
 ms.openlocfilehash: cbaa84c73a5e332dca60286bc35200761e546dd3
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104864233"
 ---
 # <a name="what-is-azure-hdinsight"></a>Сведения об Azure HDInsight

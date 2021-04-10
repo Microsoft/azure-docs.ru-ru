@@ -9,10 +9,10 @@ ms.date: 10/01/2020
 ms.author: robb
 ms.custom: include file
 ms.openlocfilehash: 071f2849a877f4ea1e8a84eff6ccfb8343be3ec7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101734070"
 ---
 | Ресурс | Ограничение по умолчанию | Максимальное ограничение |

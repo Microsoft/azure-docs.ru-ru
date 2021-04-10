@@ -6,10 +6,10 @@ ms.topic: tutorial
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.date: 01/22/2021
 ms.openlocfilehash: 50216b83475e92cbabb5ed78c3836264ceff4600
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104866613"
 ---
 # <a name="tutorial-use-apache-hbase-in-azure-hdinsight"></a>Руководство по использованию Apache HBase в Azure HDInsight

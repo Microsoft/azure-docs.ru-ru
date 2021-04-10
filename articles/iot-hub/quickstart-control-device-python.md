@@ -14,12 +14,12 @@ ms.custom:
 - devx-track-python
 - devx-track-azurecli
 ms.date: 09/14/2020
-ms.openlocfilehash: d7e7eb80d452620cdbb0f6688d6137ad34951dbe
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: d252aa15fef29f7c22e224fd7b6021a469530287
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99070732"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106067747"
 ---
 # <a name="quickstart-control-a-device-connected-to-an-iot-hub-python"></a>Краткое руководство. Управление подключенным к Центру Интернета вещей устройством (Python)
 

@@ -15,10 +15,10 @@ adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts
 adobe-target-experience: Experience B
 adobe-target-content: ./quickstart-java-uiex
 ms.openlocfilehash: ebd189e1cf6e053f5400b8217fc1c2fc385cdac9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101701728"
 ---
 # <a name="quickstart-create-a-java-app-on-azure-app-service"></a>Краткое руководство. Создание приложения Java в Службе приложений Azure
