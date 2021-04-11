@@ -248,6 +248,9 @@
         - name: Azure Maps
           tocHref: /azure/azure-maps/
           topicHref: /azure/azure-maps/
+        - name: Сертифицированное для Azure устройство
+          tocHref: /azure/certification/
+          topicHref: /azure/certification/
     - name: Resource Manager
       tocHref: /azure/azure-resource-manager/
       topicHref: /azure/azure-resource-manager/
@@ -647,6 +650,8 @@
       tocHref: /azure/networking/
       topicHref: /azure/networking/
       items:
+        - name: Базовый
+          tocHref: /azure/networking/fundamentals
         - name: Шлюз приложений
           tocHref: /azure/application-gateway/
           topicHref: /azure/application-gateway/

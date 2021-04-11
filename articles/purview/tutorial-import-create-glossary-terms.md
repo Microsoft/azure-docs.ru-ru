@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: tutorial
 ms.date: 12/01/2020
-ms.openlocfilehash: 0ea6fcaff1ec699431da8b67adee68735a8611a8
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 9443c6fbaca16cf075745972a1655a2b4b2ea43c
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97696084"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106077539"
 ---
 # <a name="tutorial-create-and-import-glossary-terms-in-azure-purview-preview"></a>Руководство по созданию и импорту терминов глоссария в Azure Purview (предварительная версия)
 
@@ -138,10 +138,10 @@ ms.locfileid: "97696084"
 
    |Параметр|Рекомендуемое значение|
    |---------|-----------|
-   |Имя атрибута|является конфиденциальной информацией|
-   |Тип поля|раскрывающийся список|Один вариант для выбора|
-   |Пометить как обязательное|установите этот флажок.|
-   |+ Добавить вариант| Добавьте два варианта. "Да" и "Нет".|
+   |Имя атрибута |является конфиденциальной информацией|
+   |Тип поля | Один вариант для выбора|
+   |Пометить как обязательное | установите этот флажок.|
+   |+ Добавить вариант | Добавьте два варианта. "Да" и "Нет".|
 
    :::image type="content" source="./media/tutorial-import-create-glossary-terms/add-new-attribute.png" alt-text="Добавление атрибута":::
 

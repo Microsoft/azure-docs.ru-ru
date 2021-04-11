@@ -17,12 +17,12 @@ ms.custom:
 - devx-track-js
 - devx-track-azurecli
 ms.date: 06/21/2019
-ms.openlocfilehash: 460ac94e8e72659614eac9477fbad76ce12b16fb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4854daca6985f016c84d2525aebe4fa6b6c82c6a
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99070731"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106059842"
 ---
 # <a name="quickstart-use-nodejs-to-control-a-device-connected-to-an-azure-iot-hub"></a>Краткое руководство. Управление подключенным к центру Интернета вещей устройством с использованием Node.js
 

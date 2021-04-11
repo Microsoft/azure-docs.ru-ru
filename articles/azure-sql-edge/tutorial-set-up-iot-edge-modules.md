@@ -9,12 +9,12 @@ author: VasiyaKrishnan
 ms.author: vakrishn
 ms.reviewer: sourabha, sstein
 ms.date: 09/22/2020
-ms.openlocfilehash: 75e6ebaea4c5ba883820d2309212b35fed128142
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 5d768fdc2540496769883d839cfbb4f009a2000c
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93422133"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106077641"
 ---
 # <a name="set-up-iot-edge-modules-and-connections"></a>Настройка модулей и подключений IoT Edge
 
@@ -42,12 +42,12 @@ ms.locfileid: "93422133"
 
 4. В разделе **Учетные данные реестра контейнеров** введите следующие значения:
 
-   _Поле_|_Значение_
-   -------|-------
-   Имя|Имя реестра
-   Адрес|сервер входа;
-   Имя пользователя|Имя пользователя
-   Пароль|Пароль
+   | _Поле_   | _Значение_       |
+   | -------   | -------       |
+   | Имя      | Имя реестра |
+   | Адрес   | сервер входа;  | 
+   | Имя пользователя | Имя пользователя      | 
+   | Пароль  | Пароль      | 
   
 ## <a name="build-push-and-deploy-the-data-generator-module"></a>Создание, отправка и развертывание модуля генератора данных
 
