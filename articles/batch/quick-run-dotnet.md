@@ -4,12 +4,12 @@ description: В этом кратком руководстве показано,
 ms.topic: quickstart
 ms.date: 08/17/2020
 ms.custom: mvc, devx-track-csharp
-ms.openlocfilehash: 9087261865b07d32afab65012e04ea478cb60611
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 48166faa016defb719d8b48c2fff84de32f6c2e4
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "88921653"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106168252"
 ---
 # <a name="quickstart-run-your-first-azure-batch-job-with-the-net-api"></a>Краткое руководство. Выполнение пакетного задания Azure с помощью API для .NET
 
@@ -108,7 +108,7 @@ stderr:
 
 ### <a name="preliminaries"></a>Предварительные требования
 
-Чтобы взаимодействовать с учетной записью хранения, приложение использует клиентскую библиотеку службы хранилища Azure для .NET. Оно создает ссылку на учетную запись, используя [CloudStorageAccount](/dotnet/api/microsoft.azure.cosmos.table.cloudstorageaccount), а затем из этой учетной записи — клиент [CloudBlobClient](/dotnet/api/microsoft.azure.storage.blob.cloudblobclient).
+Чтобы взаимодействовать с учетной записью хранения, приложение использует клиентскую библиотеку службы хранилища Azure для .NET. Оно создает ссылку на учетную запись, используя [CloudStorageAccount](/dotnet/api/microsoft.azure.storage.cloudstorageaccount), а затем из этой учетной записи — клиент [CloudBlobClient](/dotnet/api/microsoft.azure.storage.blob.cloudblobclient).
 
 ```csharp
 CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();

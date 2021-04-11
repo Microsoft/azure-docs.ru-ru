@@ -55,7 +55,7 @@
     - name: Обзор
       items:
         - name: Что такое Azure Stack Edge Pro R?
-          href: azure-stack-edge-j-series-overview.md
+          href: azure-stack-edge-pro-r-overview.md
     - name: Основные понятия
       items:
         - name: Встроенные средства безопасности
@@ -146,6 +146,8 @@
               href: azure-stack-edge-pro-r-configure-vpn-bcdr.md
         - name: Управление Wi-Fi
           href: azure-stack-edge-mini-r-manage-wifi.md
+        - name: Использование профилей Wi-Fi
+          href: azure-stack-edge-mini-r-use-wifi-profiles.md
 - name: 'Общие GPU Pro, Pro R и Mini R'
   items:
     - name: Общие понятия
@@ -162,6 +164,8 @@
               href: azure-stack-edge-gpu-kubernetes-rbac.md
             - name: Рабочие нагрузки Kubernetes
               href: azure-stack-edge-gpu-kubernetes-workload-management.md
+        - name: Что такое общий доступ к GPU?
+          href: azure-stack-edge-gpu-sharing.md
         - name: Обзор интеграции Key Vault
           href: azure-stack-edge-gpu-activation-key-vault.md
         - name: Включение упреждающего ведения журналов
@@ -171,7 +175,7 @@
         - name: Развертывание примеров IoT Edge
           items:
             - name: Модуль из коллекции NVIDIA
-              href: azure-stack-edge-j-series-configure-gpu-modules.md
+              href: azure-stack-edge-gpu-configure-gpu-modules.md
             - name: Модуль GPU из репозитория Git
               href: azure-stack-edge-gpu-deploy-sample-module.md
             - name: 'Модуля GPU, полученный через Marketplace'
@@ -189,17 +193,21 @@
                 - name: Ускорение вычислений
                   href: azure-stack-edge-gpu-deploy-compute-acceleration.md
                 - name: Приложение без отслеживания состояния
-                  href: azure-stack-edge-j-series-deploy-stateless-application-kubernetes.md
+                  href: azure-stack-edge-gpu-deploy-stateless-application-kubernetes.md
                 - name: Статически подготовленное приложение с отслеживанием состояния
                   href: azure-stack-edge-gpu-deploy-stateful-application-static-provision-kubernetes.md
                 - name: Динамически подготовленное приложение с отслеживанием состояния
                   href: azure-stack-edge-gpu-deploy-stateful-application-dynamic-provision-kubernetes.md
+                - name: Общая рабочая нагрузка GPU
+                  href: azure-stack-edge-gpu-deploy-kubernetes-gpu-sharing.md
             - name: Посредством IoT Edge
               items:
                 - name: Приложение без отслеживания состояния
                   href: azure-stack-edge-gpu-deploy-stateless-application-iot-edge-module.md
+                - name: Общая рабочая нагрузка GPU
+                  href: azure-stack-edge-gpu-deploy-iot-edge-gpu-sharing.md
                 - name: Разработка модуля C#
-                  href: azure-stack-edge-j-series-create-iot-edge-module.md
+                  href: azure-stack-edge-gpu-create-iot-edge-module.md
             - name: "С помощью Azure Arc\_(предварительная версия)"
               items:
                 - name: Включение Arc в кластере Kubernetes
@@ -211,11 +219,11 @@
         - name: Настройка Azure Resource Manager (предварительная версия)
           items:
             - name: Подключение с помощью Azure PowerShell
-              href: azure-stack-edge-j-series-connect-resource-manager.md
+              href: azure-stack-edge-gpu-connect-resource-manager.md
             - name: Установка пароля Azure Resource Manager
-              href: azure-stack-edge-j-series-set-azure-resource-manager-password.md
+              href: azure-stack-edge-gpu-set-azure-resource-manager-password.md
             - name: Настройка параметров TLS клиента
-              href: azure-stack-edge-j-series-configure-tls-settings.md
+              href: azure-stack-edge-gpu-configure-tls-settings.md
         - name: Развертывание виртуальных машин (предварительная версия)
           items:
             - name: 'Развертывание виртуальных машин: портал Azure'
@@ -229,13 +237,23 @@
             - name: "Развертывание виртуальных машин\_— скрипт Azure PowerShell"
               href: azure-stack-edge-gpu-deploy-virtual-machine-powershell-script.md
             - name: "Развертывание виртуальных машин\_— Azure CLI и Python"
-              href: azure-stack-edge-j-series-deploy-virtual-machine-cli-python.md
+              href: azure-stack-edge-gpu-deploy-virtual-machine-cli-python.md
             - name: Развертывание расширения пользовательских скриптов на виртуальных машинах
               href: azure-stack-edge-gpu-deploy-virtual-machine-custom-script-extension.md
             - name: Создание образа виртуальной машины
               href: azure-stack-edge-gpu-create-virtual-machine-image.md
+            - name: Использование универсального образа Windows
+              href: azure-stack-edge-gpu-prepare-windows-vhd-generalized-image.md
             - name: Поддерживаемые размеры и типы виртуальных машин
               href: azure-stack-edge-gpu-virtual-machine-sizes.md
+            - name: Подключение к консоли виртуальной машины
+              href: azure-stack-edge-gpu-connect-virtual-machine-console.md
+            - name: Управление сетевыми интерфейсами.
+              href: azure-stack-edge-gpu-manage-virtual-machine-network-interfaces-portal.md
+            - name: Управление дисками
+              href: azure-stack-edge-gpu-manage-virtual-machine-disks-portal.md
+            - name: Управление размерами виртуальных машин
+              href: azure-stack-edge-gpu-manage-virtual-machine-resize-portal.md
         - name: Управление сертификатами
           items:
             - name: Требования
@@ -247,23 +265,23 @@
             - name: Устранение ошибок сертификата
               href: azure-stack-edge-gpu-certificate-troubleshooting.md
         - name: Управление пограничными вычислениями
-          href: azure-stack-edge-j-series-manage-compute.md
+          href: azure-stack-edge-gpu-manage-compute.md
         - name: Управление реестром контейнеров Edge
           href: azure-stack-edge-gpu-edge-container-registry.md
         - name: Управление шлюзом хранилища
           items:
             - name: Добавление общей папки и подключение к ней
-              href: azure-stack-edge-j-series-deploy-add-shares.md
+              href: azure-stack-edge-gpu-deploy-add-shares.md
             - name: Добавление учетных записей хранения и подключение к ним
-              href: azure-stack-edge-j-series-deploy-add-storage-accounts.md
+              href: azure-stack-edge-gpu-deploy-add-storage-accounts.md
             - name: Общие папки
-              href: azure-stack-edge-j-series-manage-shares.md
+              href: azure-stack-edge-gpu-manage-shares.md
             - name: Пользователи
-              href: azure-stack-edge-j-series-manage-users.md
+              href: azure-stack-edge-gpu-manage-users.md
             - name: Учетные записи хранения
-              href: azure-stack-edge-j-series-manage-storage-accounts.md
+              href: azure-stack-edge-gpu-manage-storage-accounts.md
             - name: Графики пропускной способности
-              href: azure-stack-edge-j-series-manage-bandwidth-schedules.md
+              href: azure-stack-edge-gpu-manage-bandwidth-schedules.md
         - name: Управление устройством
           items:
             - name: 'Питание, доступ, подключение'
@@ -304,7 +322,9 @@
               href: azure-stack-edge-contact-microsoft-support.md
     - name: Общие заметки о выпуске
       items:
-        - name: "2101\_— текущая версия"
+        - name: "2103\_— текущая версия"
+          href: azure-stack-edge-gpu-2103-release-notes.md
+        - name: 2101
           href: azure-stack-edge-gpu-2101-release-notes.md
         - name: 2010
           href: azure-stack-edge-gpu-2010-release-notes.md
@@ -318,6 +338,9 @@
           href: /rest/api/databoxedgegateway
         - name: Пакет SDK для .NET
           href: /dotnet/api/overview/azure/databoxedge/databoxgateway
+        - name: Встроенные компоненты Политики Azure
+          displayName: 'samples, policies, definitions'
+          href: ./policy-reference.md
 - name: "Azure Stack Edge Pro\_— ППВМ"
   items:
     - name: Обзор
@@ -403,23 +426,10 @@
           href: ../databox-gateway/data-box-gateway-1905-release-notes.md?toc=/azure/databox-online/toc.json&bc=/azure/databox-online/breadcrumb/toc.json
         - name: Общедоступная версия
           href: ../databox-gateway/data-box-gateway-release-notes.md?toc=/azure/databox-online/toc.json&bc=/azure/databox-online/breadcrumb/toc.json
-    - name: Справочник
-      items:
-        - name: Azure PowerShell
-          href: /powershell/module/az.stackedge/#stack_edge
-        - name: REST API
-          href: /rest/api/databoxedgegateway
-        - name: Пакет SDK для .NET
-          href: /dotnet/api/overview/azure/databoxedge/databoxgateway
 - name: Безопасность
   items:
     - name: Базовые средства безопасности
       href: security-baseline.md
-- name: Ссылки
-  items:
-    - name: Встроенные компоненты Политики Azure
-      displayName: 'samples, policies, definitions'
-      href: ./policy-reference.md
 - name: Ресурсы
   items:
     - name: Примеры модуля Azure Stack Edge Pro на C# (.NET)

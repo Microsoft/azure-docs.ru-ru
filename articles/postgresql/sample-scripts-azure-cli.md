@@ -1,19 +1,19 @@
 ---
 title: Примеры Azure CLI для службы "База данных Azure для PostgreSQL — отдельный сервер"
 description: В этой статье приводится несколько примеров кода Azure CLI, доступных для взаимодействия со службой "База данных Azure для PostgreSQL — отдельный сервер".
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.devlang: azurecli
 ms.topic: sample
 ms.custom: sample, mvc, devx-track-azurecli
 ms.date: 5/6/2019
-ms.openlocfilehash: f317734b7020002add710eb9d661028e8df34087
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 17e86669ae764006fddafaa05490f9021fdc5859
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91707648"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105607394"
 ---
 # <a name="azure-cli-samples-for-azure-database-for-postgresql---single-server"></a>Примеры Azure CLI для службы "База данных Azure для PostgreSQL — отдельный сервер"
 В следующей таблице содержатся ссылки на примеры скриптов Azure CLI для базы данных Azure для PostgreSQL.

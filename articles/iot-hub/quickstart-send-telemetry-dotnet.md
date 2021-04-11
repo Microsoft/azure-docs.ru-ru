@@ -14,12 +14,12 @@ ms.custom:
 - 'Role: Cloud Development'
 - devx-track-azurecli
 ms.date: 06/01/2020
-ms.openlocfilehash: 914df5b80dee7da041b268a3aaf25ac493d0cf5b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1a681cd3f1c624268fdc9bc62cf9841e9ac28827
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98624445"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057513"
 ---
 # <a name="quickstart-send-telemetry-from-a-device-to-an-iot-hub-and-read-it-with-a-service-application-net"></a>Краткое руководство. Отправка данных телеметрии с устройства в центр Интернета вещей и их считывание с помощью приложения службы (.NET)
 

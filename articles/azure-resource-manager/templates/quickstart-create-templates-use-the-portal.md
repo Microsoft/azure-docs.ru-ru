@@ -2,23 +2,24 @@
 title: Развертывание шаблона — портал Azure
 description: Узнайте, как создать и развернуть первый шаблон Azure Resource Manager (шаблон ARM) с помощью портала Azure.
 author: mumian
-ms.date: 03/09/2021
+ms.date: 03/26/2021
 ms.topic: quickstart
 ms.author: jgao
-ms.openlocfilehash: 20b1bf47ae2fd63e91a11c8cccd1f03cf3464899
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.custom: contperfq1
+ms.openlocfilehash: 279dde9c4cd7b19086d29d3ba31a32c60a8cdf0b
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102548175"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105612931"
 ---
 # <a name="quickstart-create-and-deploy-arm-templates-by-using-the-azure-portal"></a>Краткое руководство. Создание и развертывание шаблонов ARM с помощью портала Azure
 
 Узнайте, как создать шаблон Azure Resource Manager (шаблон ARM) с помощью портала Azure, а также изменить и развернуть его на портале. Шаблоны ARM — это JSON-файлы, которые определяют ресурсы, необходимые для развертывания решения. Основные понятия, связанные с развертыванием и администрированием решений Azure, см. в статье с [общими сведениями о развертывании шаблонов](overview.md).
 
-![Схема для быстрого запуска шаблона Resource Manager на портале](./media/quickstart-create-templates-use-the-portal/azure-resource-manager-export-deploy-template-portal.png)
-
 Изучив это руководство, вы развернете учетную запись службы хранилища Azure. Тем же способом развертывайте ресурсы Azure.
+
+![Схема для быстрого запуска шаблона Resource Manager на портале](./media/quickstart-create-templates-use-the-portal/azure-resource-manager-export-deploy-template-portal.png)
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
 

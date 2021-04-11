@@ -4,12 +4,12 @@ description: Обзор службы Azure Backup и ее роль в страт
 ms.topic: overview
 ms.date: 04/24/2019
 ms.custom: mvc
-ms.openlocfilehash: 2879d104d534733651ba76ab5521541adad0a51c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 07fc6ee0afb29f9d6c701c7eb2c65be988971eaf
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101725362"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105612642"
 ---
 # <a name="what-is-the-azure-backup-service"></a>Часто задаваемые вопросы о службе Azure Backup
 
@@ -21,7 +21,7 @@ ms.locfileid: "101725362"
 
 - **Локальное** — резервное копирование файлов, папок, состояния системы с помощью [агента Службы восстановления Microsoft Azure](backup-support-matrix-mars-agent.md). Вы также можете использовать агент DPM или Azure Backup Server (MABS) для защиты локальных виртуальных машин ([Hyper-V](back-up-hyper-v-virtual-machines-mabs.md) и [VMware](backup-azure-backup-server-vmware.md)) и других [локальных рабочих нагрузок](backup-mabs-protection-matrix.md).
 - **Виртуальные машины Azure** - [Резервное копирование всех виртуальных машин Windows и Linux](backup-azure-vms-introduction.md) (с помощью расширений резервного копирования) или резервное копирование файлов, папок и состояния системы с помощью [агента MARS](backup-azure-manage-mars.md).
-- **Управляемые диски Azure** - [Резервное копирование управляемых дисков Azure (предварительная версия)](backup-managed-disks.md)
+- **Управляемые диски Azure** - [Резервное копирование управляемых дисков Azure](backup-managed-disks.md)
 - **Общие папки Azure** - [Резервное копирование общих папок Azure в учетной записи хранения](backup-afs.md)
 - **SQL Server в виртуальной машине Azure** -  [Резервное копирование баз данных SQL Server, работающих в виртуальных машинах Azure](backup-azure-sql-database.md).
 - **Базы данных SAP HANA на виртуальных машинах Azure** - [Резервное копирование баз данных SAP HANA, выполняемых на виртуальных машинах Azure](backup-azure-sap-hana-database.md)

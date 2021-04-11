@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.date: 10/25/2018
 ms.author: troyhop
-ms.openlocfilehash: 1fe86aef832223a7485036343b4b12d8bb526e06
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 22920e6535a19b1ab0ce970c1195cee676d9363f
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96852393"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057734"
 ---
 # <a name="tutorial-create-a-custom-simulated-device"></a>Руководство по созданию пользовательского имитированного устройства
 

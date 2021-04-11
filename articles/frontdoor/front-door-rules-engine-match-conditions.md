@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 03/01/2020
 ms.author: duau
-ms.openlocfilehash: a352624fc802e4224aa1b60768c064c0054cdfd6
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 23c3afc9d222c7964c3f957b810a545a737a3262
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102035880"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106068206"
 ---
 # <a name="azure-front-door-rules-engine-match-conditions"></a>Условия соответствия для обработчика правил Azure Front Door
 
