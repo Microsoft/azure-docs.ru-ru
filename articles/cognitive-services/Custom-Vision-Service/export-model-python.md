@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 11/23/2020
 ms.author: pafarley
 ms.custom: devx-track-python
-ms.openlocfilehash: a47475ad55c5e6262dc8ba1a384d89b9721fd2e9
-ms.sourcegitcommit: 1bf144dc5d7c496c4abeb95fc2f473cfa0bbed43
+ms.openlocfilehash: 7422b88aa2f9c4894d550ee2bf7e397cd163f870
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95736431"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105046034"
 ---
 # <a name="tutorial-run-tensorflow-model-in-python"></a>Руководство по запуску модели TensorFlow в среде Python
 
@@ -29,7 +29,7 @@ ms.locfileid: "95736431"
 
 Для работы с этим руководством необходимо сделать следующее:
 
-- установить Python 2.7+ или Python 3.5+;
+- установить Python 2.7+ или Python 3.6+;
 - установить pip.
 
 Затем понадобится установить следующие пакеты.

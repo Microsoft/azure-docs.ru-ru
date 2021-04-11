@@ -4,14 +4,14 @@ description: Обзор служб размещения DNS в Microsoft Azure. 
 author: rohinkoul
 ms.service: dns
 ms.topic: overview
-ms.date: 3/15/2021
+ms.date: 3/25/2021
 ms.author: rohink
-ms.openlocfilehash: 5d81e24d344d04ea59bc6c9e6141109bf66da3c3
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 41d2fdca653828588a5881daa0fa16c3bc71b5c4
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103491101"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105046493"
 ---
 # <a name="what-is-azure-dns"></a>Что такое Azure DNS?
 

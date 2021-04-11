@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Создание сервера — Azure CLI — База данных Azure для PostgreSQL — отдельный сервер
 description: В этом кратком руководстве описывается создание сервера Базы данных Azure для PostgreSQL с помощью Azure CLI.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.devlang: azurecli
 ms.topic: quickstart
 ms.date: 06/25/2020
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: d174e410aaef876dfe97af62750322641de95fd3
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 1d7b6cd6d61be6df66d215613222c12a0f2c9c5e
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94659460"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105606744"
 ---
 # <a name="quickstart-create-an-azure-database-for-postgresql-server-by-using-the-azure-cli"></a>Краткое руководство. Создание сервера Базы данных Azure для PostgreSQL с помощью Azure CLI
 

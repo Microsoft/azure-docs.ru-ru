@@ -10,10 +10,10 @@ services: iot-industrialiot
 manager: philmea
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 405fa04a3b6af7f0c87888aa48aba9bdffeaf282
-ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105646446"
 ---
 # <a name="configure-opc-publisher"></a>Настройка издателя OPC
@@ -382,6 +382,6 @@ ms.locfileid: "105646446"
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь вы узнали, как настроить издатель OPC. Мы предлагаем далее ознакомиться со статьей [Запуск издателя OPC](howto-opc-publisher-run.md).

@@ -7,12 +7,12 @@ services: iot-fundamentals
 ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: dobett
-ms.openlocfilehash: 0cd98705d2d6947ff766f528e4e92f1e51bcc42d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 311f8164803dd12664aa193f08c8a1095ee07e31
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96852818"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106168711"
 ---
 # <a name="what-azure-technologies-and-services-can-you-use-to-create-iot-solutions"></a>Какие технологии и службы Azure можно использовать для создания решений для Интернета вещей?
 
@@ -29,7 +29,7 @@ ms.locfileid: "96852818"
 
 Azure IoT Central является полностью управляемой платформой приложений, на основе которой вы можете создать персонализированные решения Интернета вещей. IoT Central использует для создания решений шаблоны приложений. В нее входят шаблоны для типовых решений и таких отраслей, как энергетика, здравоохранение, государственный сектор и розничная торговля. Шаблоны приложений IoT Central позволяют за несколько минут развернуть приложение IoT Central с возможностью настройки тем, панелей мониторинга и представлений.
 
-Выберите устройства в [каталоге устройств Azure Certified for IoT](https://catalog.azureiotsolutions.com), чтобы быстро подключить их к своему решению. Используйте веб-интерфейс IoT Central для мониторинга и контроля устройств, обеспечивая их работоспособность и подключение. Используйте соединители и API для интеграции приложения IoT Central с другими бизнес-приложениями.
+Выберите устройства в [каталоге устройств Azure Certified for IoT](https://devicecatalog.azure.com), чтобы быстро подключить их к своему решению. Используйте веб-интерфейс IoT Central для мониторинга и контроля устройств, обеспечивая их работоспособность и подключение. Используйте соединители и API для интеграции приложения IoT Central с другими бизнес-приложениями.
 
 Полностью управляемая платформа приложений IoT Central имеет простую и предсказуемую модель ценообразования.
 
@@ -52,7 +52,7 @@ Azure IoT Central является полностью управляемой п
 
 ### <a name="devices"></a>Устройства
 
-Разрабатывайте устройства Интернета вещей с помощью любого из [начальных наборов Azure IoT](https://catalog.azureiotsolutions.com/kits) или выберите готовое устройство в [каталоге Azure Certified for IoT](https://catalog.azureiotsolutions.com). Реализуйте внедренный код с помощью [пакетов средств разработки](../iot-hub/iot-hub-devguide-sdks.md) с открытым кодом. Пакеты средств разработки поддерживают несколько операционных систем, включая Linux, Windows и операционные системы реального времени. Доступны также пакеты средств разработки для нескольких языков программирования, включая [C](https://github.com/Azure/azure-iot-sdk-c), [Node.js](https://github.com/Azure/azure-iot-sdk-node), [Java](https://github.com/Azure/azure-iot-sdk-java), [.NET](https://github.com/Azure/azure-iot-sdk-csharp) и [Python](https://github.com/Azure/azure-iot-sdk-python).
+Разрабатывайте устройства Интернета вещей с помощью любого из [начальных наборов Azure IoT](https://devicecatalog.azure.com/kits) или выберите готовое устройство в [каталоге Azure Certified for IoT](https://devicecatalog.azure.com). Реализуйте внедренный код с помощью [пакетов средств разработки](../iot-hub/iot-hub-devguide-sdks.md) с открытым кодом. Пакеты средств разработки поддерживают несколько операционных систем, включая Linux, Windows и операционные системы реального времени. Доступны также пакеты средств разработки для нескольких языков программирования, включая [C](https://github.com/Azure/azure-iot-sdk-c), [Node.js](https://github.com/Azure/azure-iot-sdk-node), [Java](https://github.com/Azure/azure-iot-sdk-java), [.NET](https://github.com/Azure/azure-iot-sdk-csharp) и [Python](https://github.com/Azure/azure-iot-sdk-python).
 
 Вы можете упростить создание внедренного кода для устройств с помощью службы [IoT Plug and Play](../iot-pnp/overview-iot-plug-and-play.md). IoT Plug and Play позволяет разработчикам решений интегрировать устройства без создания внедренного кода. В основу IoT Plug and Play положена схема _модели возможностей устройства_, которая описывает возможности устройства. Используйте модель возможностей устройства для создания внедренного кода и настройки облачного решения, например приложения IoT Central.
 
