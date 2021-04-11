@@ -4,7 +4,6 @@ description: Изучите принципы работы и компонент�
 services: virtual-network
 documentationcenter: na
 author: KumudD
-Customer intent: As someone with a basic network background that is new to Azure, I want to understand the capabilities of Azure Virtual Network, so that my Azure resources such as VMs, can securely communicate with each other, the internet, and my on-premises resources.
 ms.service: virtual-network
 ms.devlang: na
 ms.topic: overview
@@ -12,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 12/03/2020
 ms.author: kumud
-ms.openlocfilehash: 849127ed0846928a77795ac0a1ea3f7a091468b5
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 927ff80a544ef8fbff348aeb8781f8a55c84e109
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100635954"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106061899"
 ---
 # <a name="what-is-azure-virtual-network"></a>Что такое виртуальная сеть Azure?
 

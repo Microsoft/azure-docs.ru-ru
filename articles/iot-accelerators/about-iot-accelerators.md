@@ -9,12 +9,12 @@ ms.custom: mvc
 ms.service: iot-accelerators
 services: iot-accelerators
 manager: timlt
-ms.openlocfilehash: 5012383e64a85ee025273f5339b828f5338e1d4f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: c972211a48816409ff626396fb5ddc7c939c021b
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97629074"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057887"
 ---
 # <a name="what-are-azure-iot-solution-accelerators"></a>Что такое акселераторы решений Интернета вещей Azure?
 

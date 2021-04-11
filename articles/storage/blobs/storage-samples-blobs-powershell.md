@@ -1,18 +1,18 @@
 ---
 title: Примеры Azure PowerShell для хранилища BLOB-объектов Azure | Документы Майкрософт
 description: См. таблицу со ссылками на примеры скриптов Azure PowerShell для работы с Хранилищем BLOB-объектов Azure, например для создания учетной записи хранения, переноса BLOB-объектов между учетными записями и много другого.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 11/07/2017
 ms.service: storage
 ms.subservice: blobs
 ms.topic: sample
-ms.openlocfilehash: 1d343c952f01185d2360d6cf238dd3a7512849fb
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 10e4149b7c66e507c34e486abd64c66993900fbc
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "95912133"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106277918"
 ---
 # <a name="azure-powershell-samples-for-azure-blob-storage"></a>Примеры Azure PowerShell для хранилища BLOB-объектов Azure
 
