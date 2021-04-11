@@ -8,12 +8,12 @@ ms.service: synapse-analytics
 ms.topic: tutorial
 ms.subservice: spark
 ms.date: 10/16/2020
-ms.openlocfilehash: d125bca5ed67476897eec7cd32a586776d8b1ea8
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 15b67c969cb0464256caed58a2e7388eb7a76b9c
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102176626"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105608776"
 ---
 # <a name="tutorial-create-apache-spark-job-definition-in-synapse-studio"></a>Руководство по Создание определения задания Apache Spark в Synapse Studio
 
@@ -25,8 +25,11 @@ ms.locfileid: "102176626"
 > - Создание определения задания Apache Spark для PySpark (Python)
 > - Создание определения задания Apache Spark для Spark (Scala)
 > - Создание определения задания Apache Spark для .NET Spark (C# или F#)
+> - Создание определения задания путем импорта JSON-файла
+> - Экспорт файла определения задания Apache Spark в локальную среду
 > - Отправка определения задания Apache Spark в виде пакетного задания
 > - Добавление определения задания Apache Spark в конвейер
+
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -36,6 +39,7 @@ ms.locfileid: "102176626"
 * Бессерверный пул Apache Spark.
 * Учетная запись хранения ADLS 2-го поколения. Вам потребуется роль **Участник для данных BLOB-объектов хранилища** для файловой системы ADLS 2-го поколения, с которой вы хотите работать. Если у вас нет этой роли, добавьте разрешение вручную.
 * Если вы не хотите использовать хранилище рабочей области по умолчанию, свяжите необходимую учетную запись хранения ADLS 2-го поколения с Synapse Studio. 
+
 
 ## <a name="create-an-apache-spark-job-definition-for-pyspark-python"></a>Создание определения задания Apache Spark для PySpark (Python)
 
@@ -160,6 +164,57 @@ ms.locfileid: "102176626"
 
       ![Публикация определения .NET](./media/apache-spark-job-definitions/publish-dotnet-definition.png)
 
+## <a name="create-apache-spark-job-definition-by-importing-a-json-file"></a>Создание определения задания Apache Spark путем импорта JSON-файла
+
+ Вы можете импортировать существующий локальный файл JSON в рабочую область Azure Synapse с помощью меню **Действия** (...) в обозревателе определений заданий Apache Spark, чтобы создать новое определение задания Apache Spark.
+
+ ![Создание определения для импорта](./media/apache-spark-job-definitions/create-import-definition.png)
+
+ 
+ Определение задания Spark полностью совместимо с API Livy. Вы можете добавить параметры для других свойств Livy [(документация по Livy, раздел о REST API (apache.org))](https://livy.incubator.apache.org/docs/latest/rest-api.html) в локальный JSON-файл. Можно также указать параметры, связанные с конфигурацией Spark, в соответствующем свойстве, как показано ниже. Затем можно импортировать JSON-файл обратно, чтобы создать новое определение для пакетного задания Apache Spark. Пример JSON для импорта определения Spark:
+ 
+```Scala
+   {
+  "targetBigDataPool": {
+    "referenceName": "socdemolarge",
+    "type": "BigDataPoolReference"
+  },
+  "requiredSparkVersion": "2.3",
+  "language": "scala",
+  "jobProperties": {
+    "name": "robinSparkDefinitiontest",
+    "file": "adl://socdemo-c14.azuredatalakestore.net/users/robinyao/wordcount.jar",
+    "className": "WordCount",
+    "args": [
+      "adl://socdemo-c14.azuredatalakestore.net/users/robinyao/shakespeare.txt"
+    ],
+    "jars": [],
+    "files": [],
+    "conf": {
+      "spark.dynamicAllocation.enabled": "false",
+      "spark.dynamicAllocation.minExecutors": "2",
+      "spark.dynamicAllocation.maxExecutors": "2"
+    },
+    "numExecutors": 2,
+    "executorCores": 8,
+    "executorMemory": "24g",
+    "driverCores": 8,
+    "driverMemory": "24g"
+  }
+}
+
+```
+
+![Другие свойства Livy](./media/apache-spark-job-definitions/other-livy-properties.png)
+
+## <a name="export-an-existing-apache-spark-job-definition-file"></a>Экспорт существующего файла определения задания Apache Spark
+
+ Можно экспортировать существующие файлы определений заданий Apache Spark в локальную среду с помощью меню **Действия** (...) в проводнике. При необходимости вы можете обновить такой JSON-файл, добавив в него свойства Livy, и импортировать его обратно для создания нового определения задания.
+
+ ![Создание определения для экспорта](./media/apache-spark-job-definitions/create-export-definition.png)
+
+ ![Создание определения для экспорта 2](./media/apache-spark-job-definitions/create-export-definition-2.png)
+
 ## <a name="submit-an-apache-spark-job-definition-as-a-batch-job"></a>Отправка определения задания Apache Spark в виде пакетного задания
 
 Созданное определение задания Apache Spark можно отправить в пул Apache Spark. Убедитесь, что у вас есть роль **Участник для данных BLOB-объектов хранилища** для файловой системы ADLS 2-го поколения, с которой вы хотите работать. Если у вас нет этой роли, добавьте разрешение вручную.
@@ -202,6 +257,7 @@ ms.locfileid: "102176626"
      ![Добавление в конвейер 1](./media/apache-spark-job-definitions/add-to-pipeline01.png)
 
      ![Добавление в конвейер 2](./media/apache-spark-job-definitions/add-to-pipeline02.png)
+
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

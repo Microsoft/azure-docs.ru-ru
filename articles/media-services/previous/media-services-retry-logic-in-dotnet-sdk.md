@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: fe37c9f7727535a292b029c342aa0e85ce0a86ec
-ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105644110"
 ---
 # <a name="retry-logic-in-the-media-services-sdk-for-net"></a>Логика повторного выполнения операций в пакете SDK служб мультимедиа для .NET
@@ -42,14 +42,14 @@ ms.locfileid: "105644110"
 | Исключение | Веб-запрос | Память | Запрос | Сохранение изменений |
 | --- | --- | --- | --- | --- |
 | WebException<br/>Дополнительные сведения см. в разделе [Коды состояний WebException](media-services-retry-logic-in-dotnet-sdk.md#WebExceptionStatus). |Да |Да |Да |Да |
-| DataServiceClientException<br/> Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |Нет |Да |Да |Да |
-| DataServiceQueryException<br/> Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |Нет |Да |Да |Да |
-| DataServiceRequestException<br/> Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |Нет |Да |Да |Да |
-| DataServiceTransportException |Нет |Нет |Да |Да |
-| TimeoutException |Да |Да |Да |Нет |
+| DataServiceClientException<br/> Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |нет |Да |Да |Да |
+| DataServiceQueryException<br/> Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |нет |Да |Да |Да |
+| DataServiceRequestException<br/> Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |нет |Да |Да |Да |
+| DataServiceTransportException |нет |нет |Да |Да |
+| TimeoutException |Да |Да |Да |нет |
 | SocketException |Да |Да |Да |Да |
-| StorageException |Нет |Да |Нет |Нет |
-| IOException |Нет |Да |Нет |Нет |
+| StorageException |нет |Да |нет |нет |
+| IOException |нет |Да |нет |нет |
 
 ### <a name="webexception-status-codes"></a><a name="WebExceptionStatus"></a> Коды состояний WebException
 В таблице ниже показано, для каких кодов ошибок WebException реализована логика повторного выполнения операций. Перечисление [WebExceptionStatus](/dotnet/api/system.net.webexceptionstatus) определяет коды состояний.  
@@ -60,13 +60,13 @@ ms.locfileid: "105644110"
 | NameResolutionFailure |Да |Да |Да |Да |
 | ProxyNameResolutionFailure |Да |Да |Да |Да |
 | SendFailure |Да |Да |Да |Да |
-| PipelineFailure |Да |Да |Да |Нет |
-| ConnectionClosed |Да |Да |Да |Нет |
-| KeepAliveFailure |Да |Да |Да |Нет |
-| UnknownError |Да |Да |Да |Нет |
-| ReceiveFailure |Да |Да |Да |Нет |
-| RequestCanceled |Да |Да |Да |Нет |
-| Время ожидания |Да |Да |Да |Нет |
+| PipelineFailure |Да |Да |Да |нет |
+| ConnectionClosed |Да |Да |Да |нет |
+| KeepAliveFailure |Да |Да |Да |нет |
+| UnknownError |Да |Да |Да |нет |
+| ReceiveFailure |Да |Да |Да |нет |
+| RequestCanceled |Да |Да |Да |нет |
+| Время ожидания |Да |Да |Да |нет |
 | ProtocolError <br/>Повторное выполнение операции при состоянии ProtocolError определяется обработкой кодов состояния HTTP. Дополнительные сведения см. в разделе [Коды состояний ошибок HTTP](media-services-retry-logic-in-dotnet-sdk.md#HTTPStatusCode). |Да |Да |Да |Да |
 
 ### <a name="http-error-status-codes"></a><a name="HTTPStatusCode"></a> Коды состояний ошибок HTTP
@@ -74,18 +74,18 @@ ms.locfileid: "105644110"
 
 | Состояние | Веб-запрос | Память | Запрос | Сохранение изменений |
 | --- | --- | --- | --- | --- |
-| 401 |Нет |Да |Нет |Нет |
-| 403 |Нет |Да<br/>Обработка повторных попыток с увеличением времени ожидания. |Нет |Нет |
+| 401 |нет |Да |нет |нет |
+| 403 |нет |Да<br/>Обработка повторных попыток с увеличением времени ожидания. |нет |нет |
 | 408 |Да |Да |Да |Да |
 | 429 |Да |Да |Да |Да |
-| 500 |Да |Да |Да |Нет |
-| 502 |Да |Да |Да |Нет |
+| 500 |Да |Да |Да |нет |
+| 502 |Да |Да |Да |нет |
 | 503 |Да |Да |Да |Да |
-| 504 |Да |Да |Да |Нет |
+| 504 |Да |Да |Да |нет |
 
 Фактическую реализацию логики повторного выполнения операций в пакете SDK служб мультимедиа для .NET см. [здесь](https://github.com/Azure/azure-sdk-for-media-services/tree/dev/src/net/Client/TransientFaultHandling).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 
 ## <a name="provide-feedback"></a>Отзывы

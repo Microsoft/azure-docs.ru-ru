@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: tutorial
 ms.date: 10/02/2020
-ms.openlocfilehash: a708f0c1884073a2f2ea73092d25006415c59d5f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 74a8bc4209696682c294bccab450d25ae86e3645
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104655229"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105643921"
 ---
 # <a name="register-and-scan-an-azure-sql-database"></a>Регистрация и сканирование Базы данных SQL Azure
 
@@ -100,7 +100,7 @@ Azure Purview не поддерживает сканирование [предс
     ```
 
     > [!Note]
-    > В качестве `Username` можно использовать собственный субъект-службу или управляемое удостоверение Purview. Ознакомиться с ролями фиксированной базы данных и их возможностями можно [здесь](/sql/relational-databases/security/authentication-access/database-level-roles?view=sql-server-ver15&preserve-view=true#fixed-database-roles).
+    > В качестве `Username` можно использовать собственный субъект-службу или управляемое удостоверение Purview. Ознакомиться с ролями фиксированной базы данных и их возможностями можно [здесь](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles).
     
 ##### <a name="add-service-principal-to-key-vault-and-purviews-credential"></a>Добавление субъекта-службы в хранилище ключей и учетные данные Purview
 

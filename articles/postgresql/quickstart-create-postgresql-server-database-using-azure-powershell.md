@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 06/08/2020
 ms.custom: mvc, devx-track-azurepowershell
 ms.openlocfilehash: 79a070dbd49ed6ee00dd790c8157057aebde30df
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105606745"
 ---
 # <a name="quickstart-create-an-azure-database-for-postgresql---single-server-using-powershell"></a>Краткое руководство. Создание базы данных в службе "База данных Azure для PostgreSQL — отдельный сервер" с помощью Azure PowerShell
@@ -76,7 +76,7 @@ New-AzResourceGroup -Name myresourcegroup -Location westus
 Значение параметра **SKU** соответствует формату **ценовая-категория\_поколение-вычислительных-ресурсов\_количество-виртуальных-ядер**, как показано в примерах ниже.
 
 - `-Sku B_Gen5_1` — "Базовый", поколение 5, 1 виртуальное ядро; Это номер SKU наименьший по размеру из доступных.
-- `-Sku GP_Gen5_32` — "Общего назначения", поколение 5, 32 виртуальных ядра;
+- `-Sku GP_Gen5_32` — "Общего назначения", поколение 5, 32 виртуальных ядра;
 - `-Sku MO_Gen5_2` — "Оптимизированная для операций в памяти", поколение 5, 2 виртуальных ядра.
 
 См. сведения о допустимых значениях **SKU** по регионам и ценовым категориям в описании [ценовых категорий Базы данных Azure для PostgreSQL](./concepts-pricing-tiers.md).

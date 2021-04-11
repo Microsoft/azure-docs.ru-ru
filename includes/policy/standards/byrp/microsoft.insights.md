@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 2a6f850836ff87af1b7b0388eba4bad36227db1f
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: 279812222d5f48599131d2131e3c9e69fc806e54
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105036138"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106091947"
 ---
 ## <a name="azure-security-benchmark"></a>Тестирование безопасности Azure
 
@@ -229,7 +229,7 @@ ms.locfileid: "105036138"
 ## <a name="new-zealand-ism-restricted"></a>ISM Restricted (Новая Зеландия)
 
 Дополнительные сведения о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Обеспечение соответствия нормативным требованиям для Политики Azure — ISM Restricted (Новая Зеландия)](../../../../articles/governance/policy/samples/new-zealand-ism.md).
-Дополнительные сведения об этом стандарте соответствия см. на странице об [ISM Restricted (Новая Зеландия)](https://www.nzism.gcsb.govt.nz/).
+Дополнительные сведения об этом стандарте соответствия см. на странице с [Руководством по мерам информационной безопасности для Новой Зеландии](https://www.nzism.gcsb.govt.nz/).
 
 |Домен |Идентификатор элемента управления |Заголовок элемента управления |Политика<br /><sub>(портал Azure)</sub> |Версия политики<br /><sub>(GitHub)</sub>  |
 |---|---|---|---|---|
