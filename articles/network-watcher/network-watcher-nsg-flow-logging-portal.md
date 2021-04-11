@@ -5,7 +5,6 @@ services: network-watcher
 documentationcenter: na
 author: damendo
 tags: azure-resource-manager
-Customer intent: I need to log the network traffic to and from a VM so I can analyze it for anomalies.
 ms.assetid: 01606cbf-d70b-40ad-bc1d-f03bb642e0af
 ms.service: network-watcher
 ms.devlang: na
@@ -15,12 +14,12 @@ ms.workload: infrastructure-services
 ms.date: 04/30/2018
 ms.author: damendo
 ms.custom: mvc
-ms.openlocfilehash: 385d43e46cd3f9465c0fbf9a02eeae356f48fac4
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 76d57990fcdd82bfe382fa2fb4ab75fb037caf4f
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94966536"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106063936"
 ---
 # <a name="tutorial-log-network-traffic-to-and-from-a-virtual-machine-using-the-azure-portal"></a>Руководство по Регистрация потока входящего и исходящего сетевого трафика виртуальной машины с помощью портала Azure
 

@@ -7,12 +7,12 @@ ms.date: 9/22/2020
 ms.topic: tutorial
 ms.service: iot-pnp
 services: iot-pnp
-ms.openlocfilehash: 33eaa1ea928cc0650c91948c70d46daf499f3b4b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b981352dcfc5d3d2de2d773e2936feb27b6ba3d4
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99831221"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106064704"
 ---
 # <a name="tutorial-connect-an-iot-plug-and-play-module-c"></a>Руководство по подключению модуля IoT Plug and Play (C#)
 

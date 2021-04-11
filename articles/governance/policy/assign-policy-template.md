@@ -1,15 +1,15 @@
 ---
 title: Создание назначения политики с помощью шаблонов
 description: В этом кратком руководстве показано, как с помощью шаблона Azure Resource Manager (шаблона ARM) создать назначение политики для обнаружения ресурсов, не соответствующих требованиям.
-ms.date: 08/17/2020
+ms.date: 03/31/2021
 ms.topic: quickstart
 ms.custom: subject-armqs
-ms.openlocfilehash: c32f833520a811d47129196ae4d67c92bad7e21f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b61198fecf0c3a6ba9aad19abc60bc042b68c29c
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89651427"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106096620"
 ---
 # <a name="quickstart-create-a-policy-assignment-to-identify-non-compliant-resources-by-using-an-arm-template"></a>Создание назначения политики для идентификации несоответствующих требованиям ресурсов с помощью шаблона ARM
 

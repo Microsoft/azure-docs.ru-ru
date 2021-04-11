@@ -51,6 +51,8 @@
   items:
     - name: Развертывание поставщиков партнера по безопасности
       href: deploy-trusted-security-partner.md
+    - name: Защита частных конечных точек
+      href: private-link-inspection-secure-virtual-hub.md
     - name: Переход на политику брандмауэра (PowerShell)
       href: migrate-to-policy.md
     - name: Параметры DNS
