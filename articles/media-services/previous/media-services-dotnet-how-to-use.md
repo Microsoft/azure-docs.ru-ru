@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: a2a9ecbcafa89b4981fe403d116ac0288e60b6b6
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103013896"
 ---
 # <a name="media-services-development-with-net"></a>Разработка служб мультимедиа с помощью .NET
@@ -46,13 +46,13 @@ ms.locfileid: "103013896"
 
 Кроме того, вы можете получить на GitHub актуальный код для пакета SDK служб мультимедиа для .NET ([github.com/Azure/azure-sdk-for-media-services](https://github.com/Azure/azure-sdk-for-media-services) и [github.com/Azure/azure-sdk-for-media-services-extensions](https://github.com/Azure/azure-sdk-for-media-services-extensions)), создать решение и добавить ссылки на клиентский проект. Все необходимые зависимости скачиваются и извлекаются автоматически.
 
-1. Создайте в Visual Studio консольное приложение C#. Введите **имя**, **Расположение** и **имя решения**, а затем нажмите кнопку ОК.
+1. Создайте в Visual Studio консольное приложение C#. Введите значения в поля **Имя**, **Расположение** и **Имя решения**, а затем нажмите кнопку "ОК".
 2. Создайте решение.
 3. Используйте пакет **NuGet**, чтобы установить и добавить **расширения пакета SDK служб мультимедиа Azure для .NET** (**windowsazure.mediaservices.extensions**). При установке этого пакета также устанавливается **пакет SDK служб мультимедиа для .NET** и добавляются все остальные необходимые зависимости.
    
     Убедитесь, что у вас установлена новейшая версия NuGet. Дополнительную информацию и инструкции по установке см. на сайте [NuGet](https://nuget.codeplex.com/).
 
-    1. В обозреватель решений щелкните правой кнопкой мыши имя проекта и выберите пункт **Управление пакетами NuGet**.
+    1. В обозревателе решений щелкните правой кнопкой мыши имя проекта и выберите **Управление пакетами NuGet**.
 
     2. Откроется диалоговое окно Управление пакетами NuGet.
 
@@ -60,7 +60,7 @@ ms.locfileid: "103013896"
    
     4. Проект будет изменен, и в него будут добавлены ссылки на расширения пакета SDK служб мультимедиа для .NET, пакет SDK служб мультимедиа для .NET и другие зависимые сборки.
 4. Чтобы сделать среду разработки чище, рекомендуем включить восстановление пакета NuGet. Дополнительную информацию см. в статье [Восстановление пакета NuGet](https://docs.nuget.org/consume/package-restore).
-5. Добавьте ссылку на сборку **System.Configuration** . Эта сборка содержит System.Configфигурации. Класс **ConfigurationManager** , используемый для доступа к файлам конфигурации (например, App.config).
+5. Добавьте ссылку на сборку **System.Configuration** . Эта сборка содержит класс **System.Configuration.ConfigurationManager** , используемый для доступа к файлам конфигурации (например, App.config).
    
     1. Чтобы добавить ссылки в диалоговом окне управления ссылками, в обозревателе решений щелкните имя проекта правой кнопкой мыши. Щелкните **Добавить**, а затем — **Ссылка...**.
    
@@ -136,7 +136,7 @@ class Program
     }
  ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь вы готовы [подключиться к API AMS](media-services-use-aad-auth-to-access-ams-api.md) и [начать разработку](media-services-dotnet-get-started.md).
 

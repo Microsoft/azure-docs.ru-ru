@@ -1,6 +1,6 @@
 ---
 title: H264 Multiple Bitrate 4x3 SD Audio 5.1 | Документация Майкрософт
-description: В этом разделе приводятся общие сведения о предустановленной задаче **H264 Single bitrate Multiple скорость 4X3 SD Audio 5,1** .
+description: Этот раздел содержит общие сведения о предустановке задачи **H264 Multiple Bitrate 4x3 SD Audio 5.1**.
 author: IngridAtMicrosoft
 manager: femila
 editor: ''
@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 6b0be965d3393be19727467b75d5eb9b8b35353f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103015171"
 ---
 # <a name="h264-multiple-bitrate-4x3-sd-audio-51"></a>H264 Multiple Bitrate 4x3 SD Audio 5.1
@@ -29,7 +29,7 @@ ms.locfileid: "103015171"
   
  В этом разделе показана предустановка `H264 Multiple Bitrate 4x3 SD Audio 5.1` в форматах XML и JSON.  
   
- Данная предустановка создает набор из 5 MP4-файлов с одинаковыми группами GOP, скоростями 400–1600 Кбит/с и звуком в формате AAC 5.1. Чтобы получить дополнительные сведения о профиле, скорости, частоте выборки и т. п. данной предустановки, ознакомьтесь с кодом XML или JSON ниже. Объяснение того, что означает каждый элемент, и допустимые значения для каждого элемента см. в [схеме Media Encoder Standard](media-services-mes-schema.md).  
+ Данная предустановка создает набор из 5 MP4-файлов с одинаковыми группами GOP, скоростями 400–1600 Кбит/с и звуком в формате AAC 5.1. Чтобы получить дополнительные сведения о профиле, скорости, частоте выборки и т. п. данной предустановки, ознакомьтесь с кодом XML или JSON ниже. Описание каждого элемента и его допустимых значений см. в разделе [Схема Media Encoder Standard](media-services-mes-schema.md).  
   
 > [!NOTE]
 >  При изменении значений `Width` и `Height` слоев убедитесь в сохранении пропорций. Например: 1920x1080, 1280x720, 1080x576, 640x360. Не следует использовать смешанные сочетания пропорций, например: 1280x720, 720x480, 640x360.  

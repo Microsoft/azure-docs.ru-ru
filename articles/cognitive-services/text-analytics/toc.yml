@@ -5,10 +5,38 @@
   items:
     - name: Что такое API "Анализ текста"?
       href: overview.md
-    - name: Примеры пользовательских сценариев
-      href: text-analytics-user-scenarios.md
+    - name: Поддержка языков
+      href: language-support.md
+    - name: Цены
+      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/text-analytics/'
     - name: Новые возможности
       href: whats-new.md
+    - name: Вопросы и ответы по Анализу текста
+      href: text-analytics-resource-faq.md
+- name: Краткое руководство по работе с Анализом текста
+  href: quickstarts/client-libraries-rest-api.md
+- name: Примеры
+  items:
+    - name: Версия 3.0
+      items:
+        - name: C#
+          href: 'https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.0.0/sdk/textanalytics/Azure.AI.TextAnalytics/samples'
+        - name: Python
+          href: 'https://github.com/Azure/azure-sdk-for-js/tree/%40azure/ai-text-analytics_5.0.0/sdk/textanalytics/ai-text-analytics/samples'
+        - name: Java
+          href: 'https://github.com/Azure/azure-sdk-for-java/tree/azure-ai-textanalytics_5.0.0/sdk/textanalytics/azure-ai-textanalytics/src/samples/java/com/azure/ai/textanalytics'
+        - name: JavaScript
+          href: 'https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/textanalytics/ai-text-analytics/samples'
+    - name: v3.1-preview
+      items:
+        - name: C#
+          href: 'https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/textanalytics/Azure.AI.TextAnalytics/samples'
+        - name: Python
+          href: 'https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.0.0/sdk/textanalytics/Azure.AI.TextAnalytics/samples'
+        - name: Java
+          href: 'https://github.com/Azure/azure-sdk-for-java/tree/azure-ai-textanalytics_5.1.0-beta.3/sdk/textanalytics/azure-ai-textanalytics/src/samples/java/com/azure/ai/textanalytics'
+        - name: JavaScript
+          href: 'https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/textanalytics/azure-ai-textanalytics/samples'
 - name: Ответственное использование ИИ
   items:
     - name: Примечания о прозрачности
@@ -28,11 +56,50 @@
     - name: Интеграция и ответственное использование
       href: /legal/cognitive-services/text-analytics/guidance-integration-responsible-use?context=/azure/cognitive-services/text-analytics/context/context
       displayName: 'Responsible deployment, Responsible use, Responsible integration, AI deployment, AI use'
-- name: Краткие руководства
-  expanded: true
+- name: Практические руководства
   items:
-    - name: "Использование клиентской библиотеки и REST\_API"
-      href: quickstarts/client-libraries-rest-api.md
+    - name: Вызов API "Анализ текста"
+      href: How-tos/text-analytics-how-to-call-api.md
+    - name: Определение языка
+      href: How-tos/text-analytics-how-to-language-detection.md
+    - name: Анализ тональности и интеллектуальный анализ мнений
+      href: How-tos/text-analytics-how-to-sentiment-analysis.md
+    - name: Извлечение ключевой фразы
+      href: How-tos/text-analytics-how-to-keyword-extraction.md
+    - name: Распознавание именованных сущностей и персональных данных
+      href: How-tos/text-analytics-how-to-entity-linking.md
+      displayName: 'NER, Named entity recognition, PII, redaction'
+    - name: Анализ текста для сферы здравоохранения
+      href: How-tos/text-analytics-for-health.md
+    - name: Развертывание Анализа текста
+      items:
+        - name: Контейнеры
+          items:
+            - name: Установка и запуск контейнеров
+              href: how-tos/text-analytics-how-to-install-containers.md
+            - name: Настройка контейнеров
+              href: text-analytics-resource-container-config.md
+            - name: Использование экземпляров контейнеров
+              maintainContext: true
+              href: ../containers/azure-container-instance-recipe.md
+            - name: Использование Службы Azure Kubernetes (AKS)
+              href: how-tos/text-analytics-how-to-use-kubernetes-service.md
+            - name: Документация по контейнерам Cognitive Services
+              href: ../containers/index.yml
+    - name: Переход на версию 3 API
+      href: migration-guide.md
+- name: Основные понятия
+  items:
+    - name: Примеры пользовательских сценариев
+      href: text-analytics-user-scenarios.md
+    - name: Типы именованных сущностей
+      href: named-entity-types.md
+    - name: Кодирования по стандарту "Юникод" и смещения текста
+      href: concepts/text-offsets.md
+    - name: Ограничения данных
+      href: concepts/data-limits.md
+    - name: управления версиями моделей;
+      href: concepts/model-versioning.md
 - name: Учебники
   items:
     - name: "Интеграция Power\_BI для анализа отзывов пользователей"
@@ -47,53 +114,8 @@
       href: ../translator/tutorial-build-flask-app-translation-synthesis.md
     - name: Извлечение сведений в Excel с помощью Power Automate
       href: tutorials/extract-excel-information.md
-- name: Основные понятия
+- name: Справка
   items:
-    - name: Типы именованных сущностей
-      href: named-entity-types.md
-    - name: Поддержка языков
-      href: language-support.md
-    - name: Смещение текста
-      href: concepts/text-offsets.md
-    - name: Ограничения данных
-      href: concepts/data-limits.md
-    - name: управления версиями моделей;
-      href: concepts/model-versioning.md
-- name: Практические руководства
-  items:
-    - name: Вызов API "Анализ текста"
-      href: How-tos/text-analytics-how-to-call-api.md
-    - name: Определение языка
-      href: How-tos/text-analytics-how-to-language-detection.md
-    - name: Анализ тональности и интеллектуальный анализ мнений
-      href: How-tos/text-analytics-how-to-sentiment-analysis.md
-    - name: Извлечение ключевой фразы
-      href: How-tos/text-analytics-how-to-keyword-extraction.md
-    - name: Распознавание именованных сущностей
-      href: How-tos/text-analytics-how-to-entity-linking.md
-    - name: Анализ текста для сферы здравоохранения
-      href: How-tos/text-analytics-for-health.md
-    - name: Использование контейнеров
-      items:
-        - name: Установка и запуск контейнеров
-          href: how-tos/text-analytics-how-to-install-containers.md
-        - name: Настройка контейнеров
-          href: text-analytics-resource-container-config.md
-        - name: Использование экземпляров контейнеров
-          maintainContext: true
-          href: ../containers/azure-container-instance-recipe.md
-        - name: Использование Службы Azure Kubernetes (AKS)
-          href: how-tos/text-analytics-how-to-use-kubernetes-service.md
-        - name: Документация по контейнерам Cognitive Services
-          href: ../containers/index.yml
-    - name: Переход на версию 3 API
-      href: migration-guide.md
-- name: Справочник
-  items:
-    - name: Справочник по CLI
-      href: /cli/azure/cognitiveservices#az_cognitiveservices_list
-    - name: Справочник по PowerShell
-      href: /powershell/module/azurerm.cognitiveservices/
     - name: API Анализа текста
       items:
         - name: v3.1.preview.3
@@ -104,6 +126,16 @@
           href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1'
     - name: Пакеты SDK
       items:
+        - name: v3.1-preview
+          items:
+            - name: .NET
+              href: /dotnet/api/azure.ai.textanalytics?view=azure-dotnet-preview
+            - name: Python
+              href: /python/api/azure-ai-textanalytics/azure.ai.textanalytics?view=azure-python-preview
+            - name: Java
+              href: /java/api/overview/azure/ai-textanalytics-readme?view=azure-java-preview
+            - name: Node.js
+              href: /javascript/api/overview/azure/ai-text-analytics-readme?view=azure-node-preview
         - name: Версия 3.0
           items:
             - name: .NET
@@ -126,16 +158,16 @@
               href: /javascript/api/@azure/cognitiveservices-textanalytics/
             - name: Go
               href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/textanalytics'
+    - name: Справочник по CLI
+      href: /cli/azure/cognitiveservices#az_cognitiveservices_list
+    - name: Справочник по PowerShell
+      href: /powershell/module/azurerm.cognitiveservices/
 - name: Ресурсы
   items:
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/text-analytics/context/context
     - name: Внешние материалы и материалы сообщества
       href: text-analytics-resource-external-community.md
-    - name: ВОПРОСЫ И ОТВЕТЫ
-      href: text-analytics-resource-faq.md
-    - name: Цены
-      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/text-analytics/'
     - name: Доступность по регионам
       href: 'https://azure.microsoft.com/global-infrastructure/services/'
     - name: Соответствие нормативным требованиям

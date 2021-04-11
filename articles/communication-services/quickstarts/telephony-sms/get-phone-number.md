@@ -1,6 +1,6 @@
 ---
-title: Краткое руководство. Получение номера телефона из Служб коммуникации Azure
-description: Узнайте, как приобрести номер телефона в Службах коммуникации Azure с помощью портала Azure.
+title: Краткое руководство. Управление номерами телефонов с помощью Служб коммуникации Azure
+description: Узнайте, как управлять номерами телефонов с помощью Служб коммуникации Azure.
 author: prakulka
 manager: nmurav
 services: azure-communication-services
@@ -9,108 +9,37 @@ ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
 ms.custom: references_regions
-ms.openlocfilehash: 390c804692029d7cdee8f78325b441592879582b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+zone_pivot_groups: acs-azp-java-net-python-csharp-js
+ms.openlocfilehash: 0f4a461ac5d459c6e3311400785e34bc22f40a00
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103488590"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105728459"
 ---
-# <a name="quickstart-get-a-phone-number-using-the-azure-portal"></a>Краткое руководство. Получение номера телефона с помощью портала Azure
+# <a name="quickstart-manage-phone-numbers"></a>Краткое руководство. Управление номерами телефонов
 
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 
-Начните работу со Службами коммуникации Azure, приобретя номер телефона с помощью портала Azure.
+::: zone pivot="platform-azp"
+[!INCLUDE [Azure portal](./includes/phone-numbers-portal.md)]
+::: zone-end
 
-## <a name="prerequisites"></a>Предварительные требования
+::: zone pivot="programming-language-csharp"
+[!INCLUDE [Azure portal](./includes/phone-numbers-net.md)]
+::: zone-end
 
-- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
-- [Активный ресурс Служб коммуникации.](../create-communication-resource.md)
+::: zone pivot="programming-language-java"
+[!INCLUDE [Java](./includes/phone-numbers-java.md)]
+::: zone-end
 
-## <a name="get-a-phone-number"></a>Получение номера телефона
+::: zone pivot="programming-language-python"
+[!INCLUDE [Python](./includes/phone-numbers-python.md)]
+::: zone-end
 
-Чтобы начать подготовку номеров, перейдите к ресурсу Служб коммуникации на [портале Azure](https://portal.azure.com).
-
-:::image type="content" source="../media/manage-phone-azure-portal-start.png" alt-text="Снимок экрана: главная страница ресурса Служб коммуникации.":::
-
-### <a name="getting-new-phone-numbers"></a>Получение новых телефонных номеров
-
-Перейдите в колонку **Номера телефонов** через меню ресурса.
-
-:::image type="content" source="../media/manage-phone-azure-portal-phone-page.png" alt-text="Снимок экрана: страница с номерами телефонов ресурса Служб коммуникации.":::
-
-Нажмите кнопку **Получить**, чтобы запустить мастер. Мастер в колонке **Номера телефонов** задаст вам ряд вопросов, которые помогут вам выбрать подходящий номер телефона для вашего сценария.
-
-Сначала необходимо выбрать **страну или регион**, где вы хотите подготовить номер телефона. Затем нужно выбрать **вариант использования**, который лучше подходит для ваших потребностей.
-
-:::image type="content" source="../media/manage-phone-azure-portal-get-numbers.png" alt-text="Снимок экрана: представление &quot;Получение телефонных номеров&quot;.":::
-
-### <a name="select-your-phone-number-features"></a>Выбор возможностей номера телефона
-
-Настройка номера телефона разделяется на два этапа:
-
-1. выбор [типа номера](../../concepts/telephony-sms/plan-solution.md#phone-number-types-in-azure-communication-services);
-2. выбор [возможностей номера](../../concepts/telephony-sms/plan-solution.md#phone-number-features-in-azure-communication-services).
-
-Можно выбрать из двух типов телефонных номеров: **географический** и **бесплатный**. После выбора типа номера можно выбрать возможности.
-
-В нашем примере мы выбрали **бесплатный** тип номера с возможностями **Исходящие вызовы** и **Входящие и исходящие SMS**.
-
-:::image type="content" source="../media/manage-phone-azure-portal-select-plans.png" alt-text="Снимок экрана: выбор возможностей.":::
-
-Здесь щелкните **Далее: номера** в нижней части страницы, чтобы настроить номера телефонов, которые вы хотите подготовить.
-
-### <a name="customizing-phone-numbers"></a>Настройка номеров телефонов
-
-На странице **Номера** можно настроить номера телефонов, которые вы хотите подготовить.
-
-:::image type="content" source="../media/manage-phone-azure-portal-select-numbers-start.png" alt-text="Снимок экрана: страница выбора номеров.":::
-
-> [!NOTE]
-> В этом кратком руководстве показана последовательность настройки номеров с типом **бесплатный**. Если вы выбрали номер с типом **географический**, процесс может немного отличаться, но результат будет таким же.
-
-В списке доступных кодов областей выберите **Код города** и введите количество подготавливаемых номеров, а затем щелкните **Поиск**, чтобы найти номера, соответствующие вашим требованиям. Отобразятся номера телефонов, соответствующие вашим потребностям, а также сведения о ежемесячной плате.
-
-:::image type="content" source="../media/manage-phone-azure-portal-found-numbers.png" alt-text="Снимок экрана: страница выбора номеров, где отображаются зарезервированные номера.":::
-
-> [!NOTE]
-> Доступность номеров зависит от выбранных типа номера, расположения и возможностей.
-> Эти номера резервируются на небольшой период времени, пока не истечет срок действия транзакции. После этого вам нужно будет снова выбрать номера.
-
-Чтобы просмотреть сводку по покупке и разместить заказ, щелкните **Далее: сводка** в нижней части страницы.
-
-### <a name="place-order"></a>Размещение заказа
-
-На странице сводки отобразятся следующие сведения: тип номера, возможности, номера телефонов и общая ежемесячная плата за подготовку этих номеров телефонов.
-
-> [!NOTE]
-> Это **ежемесячная абонентская плата** за аренду выбранного номера телефона. В этом представлении не отображаются **суммы для оплаты по мере использования**, то есть расходы на осуществление или прием вызовов. Полностью цены перечислены [здесь](../../concepts/pricing.md). Эти расходы зависят от типа номера и регионов, в которые осуществляются вызовы. Например, стоимость минуты вызова с регионального номера в Сиэтле на региональный номер в Нью-Йорке может отличаться от цены за вызов с того же номера на номер в Соединенном Королевстве.
-
-Наконец, щелкните **Разместить заказ** в нижней части страницы, чтобы подтвердить свой выбор.
-
-:::image type="content" source="../media/manage-phone-azure-portal-get-numbers-summary.png" alt-text="Снимок экрана: страница сводки, где представлены тип номера, возможности, номера телефонов и общая ежемесячная плата.":::
-
-## <a name="find-your-phone-numbers-on-the-azure-portal"></a>Поиск номеров телефонов на портале Azure
-
-Перейдите к ресурсу Служб коммуникации Azure на [портале Azure](https://portal.azure.com).
-
-:::image type="content" source="../media/manage-phone-azure-portal-start.png" alt-text="Снимок экрана: главная страница ресурса Служб коммуникации.":::
-
-Выберите в меню колонку "Номера телефонов", чтобы управлять номерами телефонов.
-
-:::image type="content" source="../media/manage-phone-azure-portal-phones.png" alt-text="Снимок экрана: страница номеров телефонов ресурса Служб коммуникации.":::
-
-> [!NOTE]
-> Может пройти несколько минут, пока выбранные для подготовки номера телефонов отобразятся на этой странице.
-
-
-### <a name="customizing-phone-numbers"></a>Настройка номеров телефонов
-
-На странице **Номера** можно выбрать номер телефона для его настройки.
-
-:::image type="content" source="../media/manage-phone-azure-portal-capability-update.png" alt-text="Снимок экрана: страница обновления возможностей.":::
-
-Выберите возможности из списка доступных, а затем нажмите кнопку **Подтвердить**, чтобы применить выбранные элементы.
+::: zone pivot="programming-language-javascript"
+[!INCLUDE [JavaScript](./includes/phone-numbers-js.md)]
+::: zone-end
 
 ## <a name="troubleshooting"></a>Диагностика
 
