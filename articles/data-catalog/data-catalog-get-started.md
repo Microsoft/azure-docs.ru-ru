@@ -7,10 +7,10 @@ ms.service: data-catalog
 ms.topic: quickstart
 ms.date: 05/26/2020
 ms.openlocfilehash: a56e5a4cae7c5a8e931b074f08a7152e53a8eb31
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "104674739"
 ---
 # <a name="quickstart-create-an-azure-data-catalog"></a>Краткое руководство. Создание Каталога данных Azure
@@ -57,7 +57,7 @@ ms.locfileid: "104674739"
 
     ![Каталог данных Azure — подготовка каталога данных к работе](media/data-catalog-get-started/data-catalog-create-azure-data-catalog.png)
 
-5. Разверните раздел **Цены** и проверьте тип **выпуска** ("Стандартный" или "Бесплатный") для Каталога данных Azure.
+5. Разверните раздел **Цены** и проверьте тип **выпуска** ("Стандартный&quot; или &quot;Бесплатный") для Каталога данных Azure.
 
     ![Каталог данных Azure — выбор выпуска](media/data-catalog-get-started/data-catalog-create-catalog-select-edition.png)
 

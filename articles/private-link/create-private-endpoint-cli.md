@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 11/07/2020
 ms.author: allensu
 ms.openlocfilehash: f74a143859f0a6629c88f0dcb61a97697f49d0be
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104889235"
 ---
 # <a name="quickstart-create-a-private-endpoint-using-azure-cli"></a>Краткое руководство. Создание частной конечной точки с помощью Azure CLI

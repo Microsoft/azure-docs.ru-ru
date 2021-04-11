@@ -3,18 +3,18 @@ title: Краткое руководство. Создание Фабрики д
 description: Использование Фабрики данных Azure для копирования данных из одного расположения в хранилище BLOB-объектов Azure в другое.
 author: dcstwh
 ms.author: weetok
-ms.reviewer: maghan
+ms.reviewer: jburchel
 ms.service: data-factory
 ms.devlang: python
 ms.topic: quickstart
 ms.date: 01/15/2021
 ms.custom: seo-python-october2019, devx-track-python
-ms.openlocfilehash: f92a09e78d65f3723b9dfa83574f603dc113ebeb
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 6b15585f029f9289736d8d498b61a3e0ba40f009
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100372371"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889422"
 ---
 # <a name="quickstart-create-a-data-factory-and-pipeline-using-python"></a>Краткое руководство. Создание фабрики данных и конвейера с помощью Python
 
@@ -34,7 +34,7 @@ ms.locfileid: "100372371"
 
 * Учетная запись Azure с активной подпиской. [Создайте бесплатно](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio).
 
-* [Python версии 3.4+](https://www.python.org/downloads/).
+* [Python 3.6 и выше.](https://www.python.org/downloads/)
 
 * [Учетная запись хранения Azure.](../storage/common/storage-account-create.md)
 
@@ -66,7 +66,7 @@ ms.locfileid: "100372371"
     pip install azure-mgmt-datafactory
     ```
 
-    [Пакет SDK Python для фабрики данных](https://github.com/Azure/azure-sdk-for-python) поддерживает Python 2.7, 3.3, 3.4, 3.5, 3.6 и 3.7.
+    [Пакет SDK Python для Фабрики данных](https://github.com/Azure/azure-sdk-for-python) поддерживает Python 2.7, 3.6 и более поздних версий.
 
 4. Чтобы установить пакет Python для проверки подлинности по удостоверению Azure, выполните следующую команду:
 
