@@ -8,10 +8,10 @@ ms.date: 09/03/2020
 ms.author: brendm
 ms.custom: devx-track-java, devx-track-azurecli
 ms.openlocfilehash: a6710a15bd0637eead0051ebb70a7cdd8bb8aa58
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104878853"
 ---
 # <a name="how-to-launch-your-spring-cloud-application-from-source-code"></a>Руководство. Запуск приложения Spring Cloud из исходного кода

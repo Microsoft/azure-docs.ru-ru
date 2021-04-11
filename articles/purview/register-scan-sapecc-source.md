@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: overview
 ms.date: 2/25/2021
-ms.openlocfilehash: b72538c61d1a68bca655b0d9529f654068727f86
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: af3f54778882df9aaa06297f291c12a0f4b1577c
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101696068"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105046051"
 ---
 # <a name="register-and-scan-sap-ecc-source-preview"></a>Регистрация и сканирование источника SAP ECC (предварительная версия)
 
@@ -25,7 +25,7 @@ ms.locfileid: "101696068"
 ## <a name="prerequisites"></a>Предварительные требования
 
 1.  Настройте последнюю версию локальной [среды выполнения интеграции](https://www.microsoft.com/download/details.aspx?id=39717).
-    Дополнительные сведения см. в разделе [Создание и настройка локальной среды выполнения интеграции](https://docs.microsoft.com/azure/data-factory/create-self-hosted-integration-runtime).
+    Дополнительные сведения см. в разделе [Создание и настройка локальной среды выполнения интеграции](../data-factory/create-self-hosted-integration-runtime.md).
 
 2.  Убедитесь, что на виртуальной машине установлен пакет [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) с установленной локальной средой выполнения интеграции.
 
@@ -80,7 +80,7 @@ ms.locfileid: "101696068"
 
 Для создания и выполнения новой проверки сделайте следующее:
 
-1.  В центре управления щелкните Среды выполнения интеграции. Убедитесь, что локальная среда выполнения интеграции настроена. Если это не так, выполните описанные [здесь](https://docs.microsoft.com/azure/purview/manage-integration-runtimes) действия, чтобы создать локальную среду выполнения интеграции.
+1.  В центре управления щелкните Среды выполнения интеграции. Убедитесь, что локальная среда выполнения интеграции настроена. Если это не так, выполните описанные [здесь](./manage-integration-runtimes.md) действия, чтобы создать локальную среду выполнения интеграции.
 
 2.  Перейдите в раздел **Источники**.
 

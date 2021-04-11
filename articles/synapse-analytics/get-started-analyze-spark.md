@@ -9,13 +9,13 @@ ms.reviewer: jrasnick
 ms.service: synapse-analytics
 ms.subservice: spark
 ms.topic: tutorial
-ms.date: 12/31/2020
-ms.openlocfilehash: 8559bd0a354a64872e58d014d1027ed971773b60
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 03/24/2021
+ms.openlocfilehash: 0becbbdb68f75072e10a51f5a2eae95291b9ed77
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104655348"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105108338"
 ---
 # <a name="analyze-with-apache-spark"></a>Анализ с помощью Apache Spark
 
@@ -39,7 +39,8 @@ ms.locfileid: "104655348"
 1. В Synapse Studio перейдите в центр **Разработка**.
 2. Создайте новую записную книжку с языком по умолчанию **PySpark (Python)** .
 3. Создайте новую ячейку кода и вставьте в нее следующий код.
-    ```
+    ```py
+    %%pyspark
     from azureml.opendatasets import NycTlcYellow
 
     data = NycTlcYellow()
@@ -62,6 +63,7 @@ ms.locfileid: "104655348"
 1. В записной книжке введите следующий код:
 
     ```py
+    spark.sql("CREATE DATABASE IF NOT EXISTS nyctaxi")
     df.write.mode("overwrite").saveAsTable("nyctaxi.trip")
     ```
 ## <a name="analyze-the-nyc-taxi-data-using-spark-and-notebooks"></a>Анализ данных нью-йоркского такси с помощью Spark и записных книжек
@@ -76,16 +78,16 @@ ms.locfileid: "104655348"
    ```
 
 1. Запустите ячейку, чтобы показать данные о такси Нью-Йорка, которые мы загрузили в базу данных Spark **nyctaxi**.
-1. Создайте новую ячейку кода и введите следующий код. Затем запустите ячейку, чтобы провести тот же анализ, который мы выполняли ранее с помощью выделенного пула SQL **SQLPOOL1**. Этот код сохраняет результаты анализа в таблицу с именем **nyctaxi.passengercountstats** и выводит эти результаты.
+1. Создайте новую ячейку кода и введите следующий код. Мы будем анализировать эти данные и сохранять результаты в таблице **nyctaxi.passengercountstats**.
 
    ```py
    %%pyspark
    df = spark.sql("""
       SELECT PassengerCount,
-          SUM(TripDistanceMiles) as SumTripDistance,
-          AVG(TripDistanceMiles) as AvgTripDistance
+          SUM(TripDistance) as SumTripDistance,
+          AVG(TripDistance) as AvgTripDistance
       FROM nyctaxi.trip
-      WHERE TripDistanceMiles > 0 AND PassengerCount > 0
+      WHERE TripDistance > 0 AND PassengerCount > 0
       GROUP BY PassengerCount
       ORDER BY PassengerCount
    """) 

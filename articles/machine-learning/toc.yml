@@ -556,6 +556,9 @@
             - name: Преобразование данных
               displayName: pipeline
               href: how-to-designer-transform-data.md
+            - name: Использование параметров конвейера
+              displayName: 'designer, pipeline parameters'
+              href: how-to-use-pipeline-parameter.md
             - name: Повторное обучение с использованием опубликованных конвейеров
               displayName: 'retrain, designer, published pipeline'
               href: how-to-retrain-designer.md
@@ -621,6 +624,8 @@
     - name: Курируемые среды
       displayName: 'environments, curated environments'
       href: resource-curated-environments.md
+    - name: Azure CLI
+      href: /cli/azure/ext/azure-cli-ml/ml
 - name: Ресурсы
   items:
     - name: Заметки о выпуске
