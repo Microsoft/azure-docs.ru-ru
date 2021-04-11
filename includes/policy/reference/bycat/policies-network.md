@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 4b67952565ae7d5e8a05661fba2129177072007c
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: a6522eb54980cb28f08ce91e29a6a18943d49040
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105033649"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106089005"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
@@ -36,6 +36,7 @@ ms.locfileid: "105033649"
 |[Доступ по протоколу SSH через Интернет должен быть заблокирован](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2c89a2e5-7285-40fe-afe0-ae8654b92fab) |Эта политика выполняет аудит всех правил безопасности сети, разрешающих доступ по протоколу SSH через Интернет. |Audit, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/NetworkSecurityGroup_SSHAccess_Audit.json) |
 |[Учетная запись хранения должна использовать конечную точку службы виртуальной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F60d21c4f-21a3-4d94-85f4-b924e6aeeda4) |Эта политика выполняет аудит всех учетных записей хранения, не настроенных на использование конечной точки службы виртуальной сети. |Audit, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/VirtualNetworkServiceEndpoint_StorageAccount_Audit.json) |
 |[Виртуальные машины должны быть подключены к утвержденной виртуальной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fd416745a-506c-48b6-8ab1-83cb814bcaa3) |Эта политика используется для аудита любой виртуальной машины, подключенной к виртуальной сети, которая не утверждена. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/ApprovedVirtualNetwork_Audit.json) |
+|[Виртуальные сети должны быть защищены с помощью Защиты от атак DDoS Azure (цен. категория "Стандартный")](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F94de2ad3-e0c1-4caf-ad78-5d47bbc83d3d) |Защитите свои виртуальные сети от волюметрических атак и атак на протоколы с помощью Защиты от атак DDoS Azure (цен. категория "Стандартный"). Дополнительные сведения см. по адресу [https://aka.ms/ddosprotectiondocs](https://aka.ms/ddosprotectiondocs). |Modify, Audit, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/VirtualNetworkDdosStandard_Audit.json) |
 |[Виртуальным сетям следует использовать указанный шлюз виртуальной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ff1776c76-f58c-4245-a8d0-2b207198dc8b) |Эта политика используется для аудита любой виртуальной сети, если маршрут по умолчанию не указывает на конкретный шлюз виртуальной сети. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/VirtualNetwork_ApprovedVirtualNetworkGateway_AuditIfNotExists.json) |
 |[Для Шлюза приложений должен быть включен брандмауэр веб-приложения (WAF)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F564feb30-bf6a-4854-b4bb-0d2d2d1e6c66) |Разверните Брандмауэр веб-приложения Azure (WAF) перед общедоступными веб-приложениями для дополнительной проверки входящего трафика. Брандмауэр веб-приложения (WAF) обеспечивает централизованную защиту веб-приложений от распространенных эксплойтов и уязвимостей, включая внедрение кода SQL, межсайтовые сценарии, а также выполнение локальных и удаленных файлов. Вы также можете ограничить доступ к веб-приложениям по странам, диапазонам IP-адресов и другим параметрам HTTP(S) с помощью настраиваемых правил. |Audit, Deny, Disabled |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/WAF_AppGatewayEnabled_Audit.json) |
 |[Для службы Azure Front Door Service должен быть включен Брандмауэр веб-приложений (WAF)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F055aa869-bc98-4af8-bafc-23f1ab6ffe2c) |Разверните Брандмауэр веб-приложения Azure (WAF) перед общедоступными веб-приложениями для дополнительной проверки входящего трафика. Брандмауэр веб-приложения (WAF) обеспечивает централизованную защиту веб-приложений от распространенных эксплойтов и уязвимостей, включая внедрение кода SQL, межсайтовые сценарии, а также выполнение локальных и удаленных файлов. Вы также можете ограничить доступ к веб-приложениям по странам, диапазонам IP-адресов и другим параметрам HTTP(S) с помощью настраиваемых правил. |Audit, Deny, Disabled |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Network/WAF_AFD_Enabled_Audit.json) |

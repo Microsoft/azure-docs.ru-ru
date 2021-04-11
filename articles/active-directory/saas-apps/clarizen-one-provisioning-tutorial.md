@@ -16,10 +16,10 @@ ms.topic: tutorial
 ms.date: 10/01/2020
 ms.author: Zhchia
 ms.openlocfilehash: f3a19d3c3bf3e4340bb36fd683453541fa15eb6c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101650846"
 ---
 # <a name="tutorial-configure-clarizen-one-for-automatic-user-provisioning"></a>Руководство по настройке автоматической подготовки пользователей в Clarizen One

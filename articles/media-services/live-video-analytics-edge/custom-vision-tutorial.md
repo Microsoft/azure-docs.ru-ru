@@ -4,12 +4,12 @@ description: Сведения о том, как с помощью Пользов
 ms.topic: tutorial
 ms.date: 09/08/2020
 zone_pivot_groups: ams-lva-edge-programming-languages
-ms.openlocfilehash: e6b911ad555c4ce10a9576861e1c2e650e63cd94
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1abf123883a89bb41909e8aa67aedfadffc3d37e
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101698813"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105561210"
 ---
 # <a name="tutorial-analyze-live-video-with-live-video-analytics-on-iot-edge-and-azure-custom-vision"></a>Руководство по анализу видеотрансляций с помощью Аналитики видеотрансляций в IoT Edge и Пользовательского визуального распознавания Azure
 
@@ -77,7 +77,7 @@ ms.locfileid: "101698813"
 
 На схеме показан порядок передачи сигналов в этом руководстве. [Пограничный модуль](https://github.com/Azure/live-video-analytics/tree/master/utilities/rtspsim-live555) имитирует IP-камеру, на которой находится RTSP-сервер. Узел [RTSP-источника](media-graph-concept.md#rtsp-source) получает видеосигнал с этого сервера и передает видеокадры на узел [обработчика расширений HTTP](media-graph-concept.md#http-extension-processor).
 
-Узел расширения HTTP играет роль прокси-сервера.  Он выбирает входящие видеокадры, заданные с помощью поля `samplingOptions`, а также преобразует видеокадры в изображения указанного типа. Затем с использованием REST он передает изображение на другой пограничный модуль, выполняющий модель искусственного интеллекта на конечной точке HTTP. В этом примере пограничный модуль является моделью средства обнаружения игрушечного грузовика, созданной с помощью Пользовательского визуального распознавания. Узел обработчика расширений HTTP собирает результаты обнаружения и публикует события в узле [приемника Центра Интернета вещей Azure](media-graph-concept.md#iot-hub-message-sink). Затем этот узел отправляет события в [центр IoT Edge](../../iot-edge/iot-edge-glossary.md#iot-edge-hub).
+Узел расширения HTTP играет роль прокси-сервера.  Он выбирает входящие видеокадры, заданные с помощью поля `samplingOptions`, а также преобразует видеокадры в изображения указанного типа. Затем с использованием REST он передает изображение на другой пограничный модуль, выполняющий модель искусственного интеллекта на конечной точке HTTP. В этом примере пограничный модуль является моделью средства обнаружения игрушечного грузовика, созданной с помощью Пользовательского визуального распознавания. Узел обработчика расширений HTTP собирает результаты обнаружения и публикует события в узле [приемника Центра Интернета вещей Azure](media-graph-concept.md#iot-hub-message-sink). Затем этот узел отправляет события в [центр IoT Edge](../../iot-fundamentals/iot-glossary.md#iot-edge-hub).
 
 ## <a name="build-and-deploy-a-custom-vision-toy-detection-model"></a>Создание и развертывание модели обнаружения игрушки Пользовательского визуального распознавания 
 

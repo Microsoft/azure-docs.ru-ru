@@ -7,10 +7,10 @@ manager: bsiva
 ms.topic: tutorial
 ms.date: 03/02/2021
 ms.openlocfilehash: 24dd33495915a9f4d47a00fbbfe9e894df839d4d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101715077"
 ---
 # <a name="migrate-vmware-vms-to-azure-agentless---powershell"></a>Миграция виртуальных машин VMware в Azure (без агента) — PowerShell

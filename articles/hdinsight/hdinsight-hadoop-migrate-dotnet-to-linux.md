@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 02/27/2018
 ms.openlocfilehash: 9e626d08e7fd315ca70765477c5dae56030521c6
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104866409"
 ---
 # <a name="migrate-net-solutions-for-windows-based-hdinsight-to-linux-based-hdinsight"></a>Перенос решений .NET из HDInsight под управлением Windows в HDInsight под управлением Linux
@@ -31,15 +31,15 @@ Mono версии 4.2.1 входит в состав HDInsight версии 3.6.
 
 1. Установите [.NET Portability Analyzer](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer). Во время установки выберите используемую версию Visual Studio.
 
-2. В Visual Studio 2015 выберите __анализ__  >  __параметров анализатора переносимости__ и убедитесь, что в разделе __Mono__ установлен флажок __4,5__ .
+2. В Visual Studio 2015 выберите __Анализ__ > __Portability Analyzer Settings__ (Параметры анализатора переносимости) и убедитесь, что в разделе __Mono__ установлен флажок __4.5__.
 
     :::image type="content" source="./media/hdinsight-hadoop-migrate-dotnet-to-linux/portability-analyzer-settings.png" alt-text="Установленный флажок &quot;4.5&quot; для Mono в разделе параметров анализатора":::
 
     Нажмите кнопку __ОК__ , чтобы сохранить настройки.
 
-3. Выберите __анализ__  >  __анализ переносимости сборки__. Выберите сборку, содержащую решение, а затем щелкните __Открыть__, чтобы начать анализ.
+3. Выберите __Анализ__ > __Analyze Assembly Portability__ (Анализ переносимости сборки). Выберите сборку, содержащую решение, а затем щелкните __Открыть__, чтобы начать анализ.
 
-4. После завершения анализа выберите __анализ__  >  __Просмотр аналитических отчетов__. В разделе __Portability Analysis Results__ (Результаты анализа переносимости) щелкните __Открыть отчет__, чтобы открыть отчет.
+4. После завершения анализа выберите __Анализ__ > __View analysis reports__ (Просмотр отчетов об анализе). В разделе __Portability Analysis Results__ (Результаты анализа переносимости) щелкните __Открыть отчет__, чтобы открыть отчет.
 
     :::image type="content" source="./media/hdinsight-hadoop-migrate-dotnet-to-linux/portability-analyzer-results.png" alt-text="Диалоговое окно результатов анализатора переносимости":::
 

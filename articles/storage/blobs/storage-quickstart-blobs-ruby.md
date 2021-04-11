@@ -8,10 +8,10 @@ ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.openlocfilehash: ec3fc490466f5fce36b67b2f3744e4ee5cc0ae79
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96781102"
 ---
 # <a name="quickstart-azure-blob-storage-client-library-for-ruby"></a>Краткое руководство. Клиентская библиотека Хранилища BLOB-объектов Azure для Ruby

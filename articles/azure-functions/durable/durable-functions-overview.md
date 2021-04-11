@@ -6,12 +6,12 @@ ms.topic: overview
 ms.date: 12/23/2020
 ms.author: cgillum
 ms.reviewer: azfuncdf
-ms.openlocfilehash: f6199cb20cd56538823f7f7d0967a9cfe59f7099
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: d99f1bd97c8199de1bda12f28f3fcb31b697946f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102636663"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105031500"
 ---
 # <a name="what-are-durable-functions"></a>Что такое Устойчивые функции?
 
@@ -673,7 +673,7 @@ main = df.Entity.create(entity_function)
 [FunctionName("EventHubTriggerCSharp")]
 public static async Task Run(
     [EventHubTrigger("device-sensor-events")] EventData eventData,
-    [DurableClient] IDurableOrchestrationClient entityClient)
+    [DurableClient] IDurableEntityClient entityClient)
 {
     var metricType = (string)eventData.Properties["metric"];
     var delta = BitConverter.ToInt32(eventData.Body, eventData.Body.Offset);

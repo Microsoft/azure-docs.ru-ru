@@ -216,7 +216,9 @@
               href: azure-to-azure-how-to-reprotect.md
             - name: Настройка аварийного восстановления виртуальных машин Azure после миграции в Azure
               href: azure-to-azure-replicate-after-migration.md
-            - name: Аварийное восстановление между зонами
+        - name: Аварийное восстановление между зонами
+          items:
+            - name: Включение репликации между зонами в регионе
               href: azure-to-azure-how-to-enable-zone-to-zone-disaster-recovery.md
         - name: Управление
           items:

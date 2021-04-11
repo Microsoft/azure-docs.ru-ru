@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 03/06/2020
 ms.author: glenga
 ms.openlocfilehash: bff2f05a95faf9c475189cb5a8003cb7fd9f69be
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101701408"
 ---
 1. Чтобы запустить функцию, нажмите клавишу <kbd>F5</kbd> в Visual Studio. Возможно, вам потребуется включить исключение брандмауэра, чтобы инструменты могли обрабатывать HTTP-запросы. Уровни авторизации никогда не применяются при запуске функции в локальной среде.
