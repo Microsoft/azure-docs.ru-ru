@@ -8,13 +8,13 @@ ms.author: kgremban
 ms.date: 07/30/2020
 ms.topic: tutorial
 ms.service: iot-edge
-ms.custom: mvc, devx-track-python, devx-track-js
-ms.openlocfilehash: a8a6d09819aaa65645da3d4d697866609c226723
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom: mvc, devx-track-js
+ms.openlocfilehash: 77e7edfba94c7b428e59dadfd9f0824608941d7a
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103461153"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223257"
 ---
 # <a name="tutorial-develop-and-deploy-a-nodejs-iot-edge-module-using-linux-containers"></a>Учебник. Разработка и развертывание модуля IoT Edge на Node.js с использованием контейнеров Linux
 
