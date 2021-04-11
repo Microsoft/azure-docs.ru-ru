@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/01/2020
 ms.author: duau
-ms.openlocfilehash: f894fd5ca7bb98c48b106c13b8fe6130b2c76c6e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: fa5d34d195cfed2d5dbfa6954d83b28487bf0bba
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102201062"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106167759"
 ---
 # <a name="tutorial-quickly-scale-and-protect-a-web-application-by-using-azure-front-door-and-azure-web-application-firewall-waf"></a>Руководство по Быстрое масштабирование и защита веб-приложения с помощью службы Azure Front Door и Брандмауэра веб-приложений Azure (WAF)
 
@@ -140,7 +140,7 @@ az network front-door update --name <> --resource-group <> --set frontendEndpoin
 
 ## <a name="lock-down-your-web-application"></a>Блокировка веб-приложения
 
-Мы рекомендуем сделать так, чтобы только граничные узлы Azure Front Door могли обращаться к вашему веб-приложению. Так вы будете уверены, что никто не сможет обойти защиту Azure Front Door и напрямую обращаться к приложению. Для настройки блокировки воспользуйтесь разделом [Как сделать, чтобы к моему серверу имела доступ только служба Azure Front Door?](./front-door-faq.md#how-do-i-lock-down-the-access-to-my-backend-to-only-azure-front-door)
+Мы рекомендуем сделать так, чтобы только граничные узлы Azure Front Door могли обращаться к вашему веб-приложению. Так вы будете уверены, что никто не сможет обойти защиту Azure Front Door и напрямую обращаться к приложению. Для настройки блокировки воспользуйтесь разделом [Как сделать, чтобы к моему серверу имела доступ только служба Azure Front Door?](./front-door-faq.yml#how-do-i-lock-down-the-access-to-my-backend-to-only-azure-front-door-)
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

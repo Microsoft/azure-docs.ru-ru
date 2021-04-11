@@ -4,15 +4,15 @@ description: В этой статье перечислены рекоменда�
 author: memildin
 ms.service: security-center
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 03/22/2021
 ms.author: memildin
 ms.custom: generated
-ms.openlocfilehash: d484802b35ffec26d1248e51b365ac9041fc7934
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 2d9f76bd3c6ad0060a90f52abba1c7378b310e67
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102100412"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801478"
 ---
 # <a name="security-recommendations---a-reference-guide"></a>Рекомендации по безопасности — справочное руководство
 
@@ -28,9 +28,17 @@ ms.locfileid: "102100412"
 > Если в описании рекомендации указано "Нет связанной политики", обычно это означает, что эта рекомендация зависит от другой рекомендации и _ее_ политики. Например, рекомендация "Исправить сбои работоспособности защиты конечных точек..." связана с рекомендацией, которая проверяет, _установлено_ ли решение для защиты конечных точек ("Решение для защиты конечных точек должно быть установлено..."). Базовая рекомендация _имеет_ политику.
 > Создание политик только для базовых рекомендаций упрощает управление политиками.
 
+## <a name="appservices-recommendations"></a><a name='recs-appservices'></a>Рекомендации по Службам приложений
+
+[!INCLUDE [asc-recs-appservices](../../includes/asc-recs-appservices.md)]
+
 ## <a name="compute-recommendations"></a><a name='recs-compute'></a>Рекомендации по вычислениям
 
 [!INCLUDE [asc-recs-compute](../../includes/asc-recs-compute.md)]
+
+## <a name="container-recommendations"></a><a name='recs-container'></a>Рекомендации по контейнерам
+
+[!INCLUDE [asc-recs-container](../../includes/asc-recs-container.md)]
 
 ## <a name="data-recommendations"></a><a name='recs-data'></a>Рекомендации по обработке данных
 
@@ -39,6 +47,10 @@ ms.locfileid: "102100412"
 ## <a name="identityandaccess-recommendations"></a><a name='recs-identityandaccess'></a>Рекомендации по идентификации и доступу
 
 [!INCLUDE [asc-recs-identityandaccess](../../includes/asc-recs-identityandaccess.md)]
+
+## <a name="iot-recommendations"></a><a name='recs-iot'></a>Рекомендации по IoT
+
+[!INCLUDE [asc-recs-iot](../../includes/asc-recs-iot.md)]
 
 ## <a name="networking-recommendations"></a><a name='recs-networking'></a>Рекомендации по сети
 

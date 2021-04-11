@@ -7,12 +7,12 @@ adobe-target: true
 adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts–2.19.2021
 adobe-target-experience: Experience B
 adobe-target-content: ./create-first-function-vs-code-node_uiex
-ms.openlocfilehash: 6c32570c8ebea3c1d127fc26b0d78287dbeb817f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: f22a847be5fc750cb3a3d9e6736d08940f30e4fe
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101729289"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104954468"
 ---
 # <a name="quickstart-create-a-javascript-function-in-azure-using-visual-studio-code"></a>Краткое руководство. Создание функции JavaScript в Azure с помощью Visual Studio Code
 
@@ -117,8 +117,10 @@ ms.locfileid: "101729289"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-С помощью [Visual Studio Code](functions-develop-vs-code.md?tabs=javascript) вы создали приложение-функцию с простой функцией, активируемой HTTP-запросом. В следующей статье показано, как расширить эту функцию путем подключения к службе хранилища Azure. Дополнительные сведения о подключении к другим службам Azure см. в статье [Подключение функций к службам Azure с помощью привязок](add-bindings-existing-function.md?tabs=javascript).  
+С помощью [Visual Studio Code](functions-develop-vs-code.md?tabs=javascript) вы создали приложение-функцию с простой функцией, активируемой HTTP-запросом. В следующей статье показано, как расширить эту функцию путем подключения к Azure Cosmos DB или службе хранилища Azure. Дополнительные сведения о подключении к другим службам Azure см. в статье [Подключение функций к службам Azure с помощью привязок](add-bindings-existing-function.md?tabs=javascript).  
 
+> [!div class="nextstepaction"]
+> [Соединение с базой данных](functions-add-output-binding-cosmos-db-vs-code.md?pivots=programming-language-javascript)
 > [!div class="nextstepaction"]
 > [Подключение Функций Azure к службе хранилища Azure с помощью средств командной строки](functions-add-output-binding-storage-queue-vs-code.md?pivots=programming-language-javascript)
 

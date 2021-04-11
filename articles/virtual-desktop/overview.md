@@ -6,12 +6,12 @@ ms.topic: overview
 ms.date: 09/14/2020
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: 36a15560b88c823ff2ae41f160839796bf21e4f8
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: f26d6b258c1e22d5d28353486378acc9aa0bbd5d
+ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98730791"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104889643"
 ---
 # <a name="what-is-windows-virtual-desktop"></a>Что такое Виртуальный рабочий стол Windows
 
@@ -124,7 +124,7 @@ ms.locfileid: "98730791"
 Виртуальный рабочий стол Windows поддерживает следующие образы 64-разрядных операционных систем:
 
 * Windows 10 Корпоративная с поддержкой нескольких сеансов, 1809 или более поздней версии
-* Windows 10 Корпоративная, 1809 или более поздней версии
+* Windows 10 Корпоративная, версия 1809 или более поздняя (только Semi-Annual Channel)
 * Windows 7 Корпоративная
 * Windows Server 2019
 * Windows Server 2016

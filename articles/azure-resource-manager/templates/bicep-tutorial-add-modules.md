@@ -2,15 +2,15 @@
 title: Учебник. Добавление модулей в Bicep-файл Azure Resource Manager
 description: Использование модулей, чтобы инкапсулировать комплексные сведения об объявлении необработанного ресурса.
 author: mumian
-ms.date: 03/10/2021
+ms.date: 03/25/2021
 ms.topic: tutorial
 ms.author: jgao
-ms.openlocfilehash: 6efd9c230df49c83adc17361082af85b0ef9edc5
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 8c7ab1038cbe62d6f15faf56796193df12b38546
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102633144"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105568772"
 ---
 # <a name="tutorial-add-modules-to-azure-resource-manager-bicep-file"></a>Учебник. Добавление модулей в Bicep-файл Azure Resource Manager
 
@@ -128,4 +128,4 @@ az deployment group create \
 В следующей серии руководств подробно рассматривается развертывание шаблонов.
 
 > [!div class="nextstepaction"]
-> [Добавление модулей](./bicep-tutorial-add-modules.md)
+> [Развертывание шаблона в локальной среде](./deployment-tutorial-local-template.md)

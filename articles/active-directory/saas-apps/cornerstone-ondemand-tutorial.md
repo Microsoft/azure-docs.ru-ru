@@ -1,6 +1,6 @@
 ---
-title: Руководство по Интеграции единого входа Azure Active Directory с Cornerstone OnDemand | Документация Майкрософт
-description: Узнайте, как настроить единый вход между Azure Active Directory и Cornerstone OnDemand.
+title: Руководство по интеграции единого входа Azure Active Directory с Cornerstone Single Sign-On | Документация Майкрософт
+description: Сведения о настройке единого входа между Azure Active Directory и Cornerstone Single Sign-On.
 services: active-directory
 author: jeevansd
 manager: CelesteDG
@@ -9,21 +9,21 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 12/24/2020
+ms.date: 03/09/2021
 ms.author: jeedes
-ms.openlocfilehash: 0994126c4e31d880a792904b0c086a56f6bd90fb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: f7167df523ca6f84eacd92fc7af1011e8b3b00b6
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98727735"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104950389"
 ---
-# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-cornerstone-ondemand"></a>Руководство по Интеграции и настройке единого входа Azure Active Directory с Cornerstone OnDemand
+# <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-cornerstone-single-sign-on"></a>Руководство по интеграции единого входа Azure Active Directory с Cornerstone Single Sign-On
 
-В этом руководстве описано, как интегрировать Cornerstone OnDemand с Azure Active Directory (Azure AD). Интеграция Cornerstone OnDemand с Azure AD обеспечивает следующие возможности.
+В этом учебнике описано, как интегрировать Azure Active Directory (Azure AD) с Cornerstone Single Sign-On. Интеграция Cornerstone Single Sign-On с Azure AD обеспечивает следующие возможности:
 
-* С помощью Azure AD можно контролировать доступ к Cornerstone OnDemand.
-* Включить автоматический вход пользователей в Cornerstone OnDemand с помощью учетной записи Azure AD.
+* контроль доступа к Cornerstone Single Sign-On с помощью Azure AD;
+* автоматический вход пользователей в Cornerstone Single Sign-On с помощью учетных записей Azure AD;
 * Централизованное управление учетными записями через портал Azure.
 
 ## <a name="prerequisites"></a>Предварительные требования
@@ -31,7 +31,7 @@ ms.locfileid: "98727735"
 Чтобы приступить к работе, потребуется следующее.
 
 * Подписка Azure AD. Если у вас нет подписки, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/).
-* Подписка Cornerstone OnDemand с поддержкой единого входа.
+* подписка Cornerstone Single Sign-On с поддержкой единого входа.
 
 > [!NOTE]
 > Эту интеграцию также можно использовать в облачной среде Azure AD для государственных организаций США. Это приложение можно найти в коллекции облачных приложений с поддержкой Azure AD для государственных организаций США и настроить таким же образом, как и в общедоступном облаке.
@@ -40,39 +40,39 @@ ms.locfileid: "98727735"
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* Cornerstone OnDemand поддерживает единый вход, инициированный **поставщиком услуг**.
-* Cornerstone OnDemand поддерживает [автоматическую подготовку пользователей](cornerstone-ondemand-provisioning-tutorial.md).
+* Приложение Cornerstone Single Sign-On поддерживает единый вход, инициированный **поставщиком услуг**.
+* Cornerstone Single Sign-On поддерживает [автоматическую подготовку пользователей](cornerstone-ondemand-provisioning-tutorial.md).
 
 
-## <a name="adding-cornerstone-ondemand-from-the-gallery"></a>Добавление Cornerstone OnDemand из коллекции
+## <a name="adding-cornerstone-single-sign-on-from-the-gallery"></a>Добавление Cornerstone Single Sign-On из коллекции
 
-Чтобы настроить интеграцию Cornerstone OnDemand с Azure AD, необходимо добавить это приложение из коллекции в список управляемых приложений SaaS.
+Чтобы настроить интеграцию Azure AD с Cornerstone Single Sign-On, вам нужно добавить Cornerstone Single Sign-On из коллекции в список управляемых приложений SaaS.
 
 1. Войдите на портал Azure с помощью личной учетной записи Майкрософт либо рабочей или учебной учетной записи.
 1. В области навигации слева выберите службу **Azure Active Directory**.
 1. Перейдите в колонку **Корпоративные приложения** и выберите **Все приложения**.
 1. Чтобы добавить новое приложение, выберите **Новое приложение**.
-1. В разделе **Добавление из коллекции** введите в окне поиска **Cornerstone OnDemand**.
-1. Выберите **Cornerstone OnDemand** на панели результатов, а затем добавьте приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
+1. В разделе **Добавление из коллекции** в поле поиска введите **Cornerstone Single Sign-On**.
+1. Выберите **Cornerstone Single Sign-On** в области результатов и добавьте приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
 
-## <a name="configure-and-test-azure-ad-sso-for-cornerstone-ondemand"></a>Настройка и проверка единого входа Azure AD для Cornerstone OnDemand
+## <a name="configure-and-test-azure-ad-sso-for-cornerstone-single-sign-on"></a>Настройка и проверка единого входа Azure AD для Cornerstone Single Sign-On
 
-Настройка и проверка единого входа Azure AD с Cornerstone OnDemand, используя тестового пользователя **B.Simon**. Чтобы обеспечить работу единого входа, необходимо установить связь между пользователем Azure AD и соответствующим пользователем в Cornerstone OnDemand.
+Настройте и проверьте единый вход Azure AD в Cornerstone Single Sign-On с помощью тестового пользователя **B.Simon**. Чтобы обеспечить работу единого входа, необходимо установить связь между пользователем Azure AD и соответствующим пользователем в Cornerstone Single Sign-On.
 
-Чтобы настроить и проверить единый вход Azure AD в Cornerstone OnDemand, выполните следующие действия.
+Чтобы настроить и проверить единый вход Azure AD в Cornerstone Single Sign-On, выполните следующие действия:
 
 1. **[Настройка единого входа Azure AD](#configure-azure-ad-sso)** необходима, чтобы пользователи могли использовать эту функцию.
     1. **[Создание тестового пользователя Azure AD](#create-an-azure-ad-test-user)** требуется для проверки работы единого входа Azure AD с помощью пользователя B.Simon.
     1. **[Назначение тестового пользователя Azure AD](#assign-the-azure-ad-test-user)** необходимо, чтобы позволить пользователю B.Simon использовать единый вход Azure AD.
-2. **[Настройка единого входа в Cornerstone OnDemand](#configure-cornerstone-ondemand-sso)** необходима, чтобы настроить параметры единого входа на стороне приложения.
-    1. **[Создание тестового пользователя Cornerstone OnDemand](#create-cornerstone-ondemand-test-user)** требуется для того, чтобы в Cornerstone OnDemand существовал пользователь B.Simon, связанный с одноименным пользователем в Azure AD.
+2. **[Настройка единого входа в Cornerstone Single Sign-On](#configure-cornerstone-single-sign-on-sso)** необходима, чтобы настроить параметры единого входа на стороне приложения.
+    1. **[Создание тестового пользователя в Cornerstone Single Sign-On](#create-cornerstone-single-sign-on-test-user)** требуется для того, чтобы в Cornerstone Single Sign-On существовал пользователь B.Simon, связанный с одноименным пользователем в Azure AD.
 3. **[Проверка единого входа](#test-sso)** позволяет убедиться в правильности конфигурации.
 
 ## <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
 
 Выполните следующие действия, чтобы включить единый вход Azure AD на портале Azure.
 
-1. На портале Azure на странице интеграции с приложением **Cornerstone OnDemand** найдите раздел **Управление** и выберите **Единый вход**.
+1. На портале Azure на странице интеграции с приложением **Cornerstone Single Sign-On** найдите раздел **Управление** и выберите **Единый вход**.
 1. На странице **Выбрать метод единого входа** выберите **SAML**.
 1. На странице **Настройка единого входа с помощью SAML** щелкните значок карандаша, чтобы открыть диалоговое окно **Базовая конфигурация SAML** для изменения параметров.
 
@@ -80,18 +80,20 @@ ms.locfileid: "98727735"
 
 1. В разделе **Базовая конфигурация SAML** выполните приведенные ниже действия.
 
-    а. В текстовом поле **URL-адрес для входа** введите URL-адрес в следующем формате: `https://<company>.csod.com/samldefault.aspx?ouid=2`.
+    а. В текстовом поле **Идентификатор** введите URL-адрес в формате `https://<PORTAL_NAME>.csod.com`.
 
-    b. В текстовом поле **Идентификатор (сущности)** введите URL-адрес в следующем формате: `https://<company>.csod.com/samldefault.aspx?ouid=2`.
+    b. В текстовом поле **URL-адрес ответа** введите URL-адрес в формате `https://<PORTAL_NAME>.csod.com/samldefault.aspx?ouid=<OUID>`.
+
+    c. В текстовом поле **URL-адрес для входа** введите URL-адрес в следующем формате: `https://<PORTAL_NAME>.csod.com/samldefault.aspx?ouid=<OUID>`.
 
     > [!NOTE]
-    > Эти значения приведены для примера. Необходимо обновить эти значения действующим URL-адресом для входа и идентификатором. Чтобы получить эти значения, обратитесь в [службу поддержки клиентов Cornerstone OnDemand](mailto:moreinfo@csod.com). Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
+    > Эти значения приведены для примера. Укажите вместо них фактические значения URL-адреса ответа, идентификатора и URL-адреса входа. Чтобы получить их, обратитесь в [группу поддержки Cornerstone Single Sign-On](mailto:moreinfo@csod.com). Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
 
 4. На странице **Настройка единого входа с помощью SAML** в разделе **Сертификат подписи SAML** найдите пункт **Сертификат (Base64)** и щелкните **Скачать**, чтобы скачать сертификат. Сохраните этот сертификат на компьютере.
 
     ![Ссылка для скачивания сертификата](common/certificatebase64.png)
 
-6. Скопируйте требуемый URL-адрес из раздела **Настройка Cornerstone OnDemand**.
+6. Требуемый URL-адрес можно скопировать из раздела **настройки Cornerstone Single Sign-On**.
 
     ![Копирование URL-адресов настройки](common/copy-configuration-urls.png)
 
@@ -109,41 +111,72 @@ ms.locfileid: "98727735"
 
 ### <a name="assign-the-azure-ad-test-user"></a>Назначение тестового пользователя Azure AD
 
-В этом разделе описано, как включить единый вход Azure для пользователя B.Simon, предоставив этому пользователю доступ к Cornerstone OnDemand.
+В этом разделе описано, как включить единый вход Azure для пользователя B.Simon, предоставив этому пользователю доступ к Cornerstone Single Sign-On.
 
 1. На портале Azure выберите **Корпоративные приложения**, а затем — **Все приложения**.
-1. В списке приложений выберите **Cornerstone OnDemand**.
+1. В списке приложений выберите **Cornerstone Single Sign-On**.
 1. На странице "Обзор" приложения найдите раздел **Управление** и выберите **Пользователи и группы**.
 1. Выберите **Добавить пользователя**, а в диалоговом окне **Добавление назначения** выберите **Пользователи и группы**.
 1. В диалоговом окне **Пользователи и группы** выберите **B.Simon** в списке пользователей, а затем в нижней части экрана нажмите кнопку **Выбрать**.
 1. Если пользователям необходимо назначить роль, вы можете выбрать ее из раскрывающегося списка **Выберите роль**. Если для этого приложения не настроена ни одна роль, будет выбрана роль "Доступ по умолчанию".
 1. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
-## <a name="configure-cornerstone-ondemand-sso"></a>Настройка единого входа Cornerstone OnDemand
+## <a name="configure-cornerstone-single-sign-on-sso"></a>Настройка единого входа в Cornerstone Single Sign-On
 
-Чтобы настроить единый вход на стороне **Cornerstone OnDemand**, нужно отправить скачанный **сертификат (Base64)** и соответствующие URL-адреса, скопированные на портале Azure, [группе поддержки Cornerstone OnDemand](mailto:moreinfo@csod.com). Специалисты службы поддержки настроят подключение единого входа SAML на обеих сторонах.
+1. Войдите в Cornerstone Single Sign-On от имени администратора.
 
-### <a name="create-cornerstone-ondemand-test-user"></a>Создание тестового пользователя Cornerstone OnDemand
+1. Перейдите в раздел **Администратор -> Средства**.
 
-Цель этого раздела — создать пользователя с именем B.Simon в Cornerstone OnDemand. Cornerstone OnDemand поддерживает автоматическую подготовку пользователей, которая по умолчанию включена. Дополнительные сведения о настройке автоматической подготовки пользователей можно найти [здесь](./cornerstone-ondemand-provisioning-tutorial.md).
+    ![Снимок экрана страницы администратора.](./media/cornerstone-ondemand-tutorial/admin.png)
+
+1. Выберите панель **EDGE** в разделе **Средства настройки**.
+
+    ![Снимок экрана панели EDGE.](./media/cornerstone-ondemand-tutorial/edge-panel.png)
+
+1. Выберите пункт "Единый вход" в разделе **Интеграция**.
+
+    ![Снимок экрана для параметра единого входа.](./media/cornerstone-ondemand-tutorial/single-sign-on.png)
+
+1. Нажмите кнопку **Add SSO** (Добавить единый вход). Выберите пункт **Inbound SAML** (Входящий SAML) в расположенном ниже всплывающем окне и нажмите кнопку **Добавить**.
+
+    ![Снимок экрана входящего SAML.](./media/cornerstone-ondemand-tutorial/inbound.png)
+
+1. Выполните описанные ниже действия на следующей странице:
+
+    ![Снимок экрана раздела "Конфигурация" для Cornerstone.](./media/cornerstone-ondemand-tutorial/configuration.png)
+
+    а. В окне **General Properties** (Общие свойства) щелкните **Отправить файл**, чтобы отправить файл **сертификата (Base64)** , скачанный с портала Azure.
+
+    b. Установите флажок **Включить** и в текстовое поле **IDP URL** (URL-адрес поставщика удостоверений) вставьте значение **URL-адрес входа**, скопированное с портала Azure.
+
+    c. Выберите команду **Сохранить**.
+
+### <a name="create-cornerstone-single-sign-on-test-user"></a>Создание тестового пользователя Cornerstone Single Sign-On
+
+Цель этого раздела — создать пользователя с именем B.Simon в Cornerstone Single Sign-On. Cornerstone Single Sign-On поддерживает автоматическую подготовку пользователей, которая по умолчанию включена. Дополнительные сведения о настройке автоматической подготовки пользователей можно найти [здесь](./cornerstone-ondemand-provisioning-tutorial.md).
 
 **Если необходимо создать пользователя вручную, выполните следующие действия:**
 
-Чтобы настроить подготовку пользователей, отправьте сведения о пользователе Azure AD, которого необходимо подготовить (например, имя, адрес электронной почты), в [службу поддержки Cornerstone OnDemand](mailto:moreinfo@csod.com).
+1. Войдите в Cornerstone Single Sign-On от имени администратора.
 
->[!NOTE]
->Вы можете использовать любые другие средства создания учетной записи пользователя Cornerstone OnDemand или API, предоставляемые Cornerstone OnDemand, для подготовки учетных записей пользователей AAD.
+1. Перейдите в раздел **Администратор -> Пользователи** и щелкните **Добавить пользователя** в нижней части страницы.
+
+    ![Снимок экрана создания тестового пользователя Cornerstone.](./media/cornerstone-ondemand-tutorial/user-1.png)
+
+1. Заполните обязательные поля на странице **Добавление нового пользователя** и нажмите кнопку **Сохранить**.
+
+    ![Снимок экрана создания тестового пользователя с обязательными полями.](./media/cornerstone-ondemand-tutorial/user-2.png)
 
 ## <a name="test-sso"></a>Проверка единого входа 
 
 В этом разделе описано, как проверить конфигурацию единого входа Azure AD с помощью указанных ниже способов. 
 
-* Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены по URL-адресу для входа в Cornerstone OnDemand, где можно инициировать поток входа. 
+* Выберите **Тестировать приложение** на портале Azure. Вы будете перенаправлены по URL-адресу для входа в Cornerstone Single Sign-On, где можно инициировать поток входа. 
 
-* Вручную введите URL-адрес для входа в Cornerstone OnDemand и инициируйте поток входа.
+* Перейдите по URL-адресу для входа в Cornerstone Single Sign-On и инициируйте поток входа.
 
-* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Cornerstone OnDemand на портале "Мои приложения", вы перейдете по URL-адресу для входа в Cornerstone OnDemand. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
+* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку Cornerstone Single Sign-On на портале "Мои приложения", вы перейдете по URL-адресу для входа в Cornerstone Single Sign-On. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Cornerstone OnDemand вы можете применить управление сеансами, которое в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-aad).
+После настройки Cornerstone Single Sign-On вы можете применить управление сеансами, которое защищает от хищения конфиденциальных данных вашей организации и несанкционированного доступа к ним в реальном времени. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-aad).

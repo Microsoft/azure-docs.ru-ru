@@ -3,17 +3,16 @@ title: Учебник. Перенаправление трафика к коне
 description: В этом руководстве описывается, как перенаправлять трафик к конечным точкам на основе весовых коэффициентов с помощью диспетчера трафика Azure.
 services: traffic-manager
 author: duongau
-Customer intent: As an IT Admin, I want to distribute traffic based on the weight assigned to a website endpoint so that I can control the user traffic to a given website.
 ms.service: traffic-manager
 ms.topic: tutorial
 ms.date: 10/19/2020
 ms.author: duau
-ms.openlocfilehash: 55c316a370b9e44e906e48b4716201384567c9c2
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 20864d46ac93d5fcefec20028dd2a78ded142ba3
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96003792"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106067186"
 ---
 # <a name="tutorial-control-traffic-routing-with-weighted-endpoints-by-using-traffic-manager"></a>Руководство по Управление маршрутизацией трафика к конечным точкам на основе весовых коэффициентов с помощью диспетчера трафика
 

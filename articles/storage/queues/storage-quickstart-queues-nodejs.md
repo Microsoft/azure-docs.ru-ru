@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 — JavaScript
 description: Узнайте, как использовать клиентскую библиотеку Хранилища очередей Azure версии 12 для JavaScript, чтобы создавать очереди и добавлять в них сообщения, а также считывать и удалять сообщения из очереди. Также здесь описано, как удалить очередь.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 12/13/2019
 ms.topic: quickstart
 ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-js
-ms.openlocfilehash: 23c58526ba481a56b371bd077661d8d0bc7d45c7
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 628ce97b9f14290caf3f41b16cda93f4f47566f7
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97586539"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106276167"
 ---
 # <a name="quickstart-azure-queue-storage-client-library-v12-for-javascript"></a>Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 для JavaScript
 

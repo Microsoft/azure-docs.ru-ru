@@ -10,12 +10,12 @@ ms.service: iot-edge
 services: iot-edge
 ms.custom: mvc, devx-track-azurecli
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: aa8c4abf57308ca3da05db6ecede7a330af04bdb
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: 5444f6adb9d441cb6253c180cf2d079c1c36316c
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103463550"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105562687"
 ---
 # <a name="quickstart-deploy-your-first-iot-edge-module-to-a-windows-device-preview"></a>Краткое руководство. Развертывание первого модуля IoT Edge на устройстве Windows (предварительная версия)
 
@@ -60,8 +60,8 @@ ms.locfileid: "103463550"
 
   
 * Требования к оборудованию
-  * Минимальная свободная память: 2 ГБ
-  * Минимальный объем свободного места на диске: 10 ГБ
+  * Минимальный объем свободной памяти: 2 ГБ
+  * Минимальный объем свободного места на диске: 10 ГБ
 
 
 >[!NOTE]

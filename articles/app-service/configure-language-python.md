@@ -2,15 +2,15 @@
 title: Настройка приложений Python в Linux
 description: Узнайте, как с помощью портала Azure и Azure CLI настроить контейнер Python для выполнения веб-приложений.
 ms.topic: quickstart
-ms.date: 02/01/2021
+ms.date: 03/16/2021
 ms.reviewer: astay; kraigb
 ms.custom: mvc, seodec18, devx-track-python, devx-track-azurecli
-ms.openlocfilehash: cfbbb7064fcadc06714b237066bb6a009246baac
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 094755ed6c018b3ac82d6f62a43f17e2536bbd9a
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101709093"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104953516"
 ---
 # <a name="configure-a-linux-python-app-for-azure-app-service"></a>Настройка приложения Python в Linux для Службы приложений Azure
 
@@ -114,7 +114,7 @@ ms.locfileid: "101709093"
 
 1. **Запуск приложения**. Ознакомьтесь с разделом [Процесс запуска контейнера](#container-startup-process) далее в этой статье, чтобы понять, как Служба приложений пытается запустить приложение. По умолчанию Служба приложений использует веб-сервер Gunicorn, который должен найти объект приложения или папку *wsgi.py*. При необходимости можно [настроить команду запуска](#customize-startup-command).
 
-1. **Непрерывное развертывание**. Настройте непрерывное развертывание. Если вы используете развертывание Azure Pipelines или Kudu, ознакомьтесь со статьей [Непрерывное развертывание в Службе приложений Azure](deploy-continuous-deployment.md). Если вы используете GitHub Actions, ознакомьтесь со статьей [Развертывание в Службе приложений с помощью GitHub Actions](deploy-github-actions.md).
+1. **Непрерывное развертывание**. Настройте непрерывное развертывание. Если вы используете развертывание Azure Pipelines или Kudu, ознакомьтесь со статьей [Непрерывное развертывание в Службе приложений Azure](deploy-continuous-deployment.md). Если вы используете GitHub Actions, ознакомьтесь со статьей [Развертывание в Службе приложений с помощью GitHub Actions](./deploy-continuous-deployment.md).
 
 1. **Настраиваемые действия**. Для выполнения действий (например, перенос базы данных Django) в контейнере Службы приложений, в котором размещено приложение, [подключитесь к контейнеру по протоколу SSH](configure-linux-open-ssh-session.md). Пример выполнения переноса базы данных Django см. в [учебнике по развертыванию веб-приложения Django с помощью PostgreSQL в разделе "Перенос базы данных"](tutorial-python-postgresql-app.md#43-run-django-database-migrations).
     - При использовании непрерывного развертывания эти действия можно выполнить с помощью команд после сборки, как описано выше в разделе [Настройка автоматизации сборки](#customize-build-automation).
@@ -373,6 +373,7 @@ if 'X-Forwarded-Proto' in request.headers and request.headers['X-Forwarded-Proto
 - [Приложение не отображается — выдается сообщение "Служба недоступна"](#service-unavailable)
 - [Не удалось найти setup.py или requirements.txt](#could-not-find-setuppy-or-requirementstxt)
 - [Ошибка ModuleNotFoundError при запуске](#modulenotfounderror-when-app-starts)
+- [База данных заблокирована](#database-is-locked)
 - [Пароли не отображаются при вводе в сеансе SSH](#other-issues)
 - [Команды в сеансе SSH выглядят обрезанными](#other-issues)
 - [Статические ресурсы не отображаются в приложении Django](#other-issues)
@@ -409,6 +410,14 @@ if 'X-Forwarded-Proto' in request.headers and request.headers['X-Forwarded-Proto
 #### <a name="modulenotfounderror-when-app-starts"></a>Ошибка ModuleNotFoundError при запуске приложения
 
 Если отображается ошибка `ModuleNotFoundError: No module named 'example'`, это означает, что Python не удалось найти один или несколько модулей при запуске приложения. Чаще всего это происходит при развертывании виртуальной среды с помощью кода. Виртуальные среды не являются переносимыми, поэтому их не следует развертывать с помощью кода приложения. Вместо этого позвольте Oryx создать виртуальную среду и установить пакеты в веб-приложение, создав параметр приложения `SCM_DO_BUILD_DURING_DEPLOYMENT` и задав для него значение `1`. Тогда Oryx будет устанавливать ваши пакеты при каждом развертывании в Службе приложений. Дополнительные сведения см. [в этой статье о переносимости виртуальных сред](https://azure.github.io/AppService/2020/12/11/cicd-for-python-apps.html).
+
+### <a name="database-is-locked"></a>База данных заблокирована
+
+При попытке выполнить перенос базы данных с помощью приложения Django может поступить сообщение "sqlite3. OperationalError: database is locked" (sqlite3.OperationalError: база данных заблокирована). Это сообщение об ошибке означает, что приложение использует базу данных SQLite, для которой приложение Django настроено по умолчанию, вместо облачной базы данных, такой как PostgreSQL для Azure.
+
+Проверьте переменную `DATABASES` в файле приложения *settings.py*, чтобы убедиться, что приложение использует облачную базу данных вместо SQLite.
+
+Если эта ошибка возникла при работе с [руководством по развертыванию веб-приложения Django с помощью PostgreSQL](tutorial-python-postgresql-app.md), проверьте, выполнены ли действия, описанные в разделе [Настройка переменных среды для подключения к базе данных](tutorial-python-postgresql-app.md#42-configure-environment-variables-to-connect-the-database).
 
 #### <a name="other-issues"></a>Другие проблемы
 

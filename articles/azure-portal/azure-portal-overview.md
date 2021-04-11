@@ -5,10 +5,10 @@ keywords: портал
 ms.date: 03/12/2021
 ms.topic: overview
 ms.openlocfilehash: 8f61934e6af150c18d1331c2b28e2686641967d1
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103564000"
 ---
 # <a name="azure-portal-overview"></a>Обзор портала Azure
