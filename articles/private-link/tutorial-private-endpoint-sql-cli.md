@@ -9,10 +9,10 @@ ms.date: 11/03/2020
 ms.author: allensu
 ms.custom: fasttrack-edit
 ms.openlocfilehash: a5562c5f40a321f5737fea73f6d7964b402953cb
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104889218"
 ---
 # <a name="tutorial-connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-cli"></a>Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure (Azure CLI)

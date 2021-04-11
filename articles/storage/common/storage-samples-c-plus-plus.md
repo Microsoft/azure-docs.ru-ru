@@ -1,18 +1,18 @@
 ---
 title: Примеры для службы хранилища Azure с использованием C++ | Документация Майкрософт
 description: Просмотрите, загрузите и запустите образцы кода и приложений для хранилища Azure. Воспользуйтесь примерами для начала работы с большими двоичными объектами, очередями, таблицами и файлами с помощью клиентских библиотек хранилища C++.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 10/01/2020
 ms.service: storage
 ms.subservice: common
 ms.topic: sample
-ms.openlocfilehash: 158f908dfd52a3365d19f65eb00faf1787893af5
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d82b31cde0e8df5db2d073abcec8ea44f13bd0f0
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92372905"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106276677"
 ---
 # <a name="azure-storage-samples-using-v12-c-client-libraries"></a>Примеры использования службы хранилища Azure с помощью клиентских библиотек для C++ версии 12
 

@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/17/2021
 ms.author: jeedes
 ms.openlocfilehash: d9db86e400d862dd67582ede0bf44b9e9fd1c893
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104954808"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-launchdarkly"></a>Руководство. Интеграция Azure Active Directory с LaunchDarkly

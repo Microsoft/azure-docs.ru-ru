@@ -12,10 +12,10 @@ ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: f4b661ee66d3fb045dfa4891f1f1c1643927167c
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105044079"
 ---
 # <a name="get-all-application-proxy-apps-published-with-no-certificate-uploaded"></a>Получение сведений обо всех опубликованных приложений Application Proxy, для которых не отправлены сертификаты

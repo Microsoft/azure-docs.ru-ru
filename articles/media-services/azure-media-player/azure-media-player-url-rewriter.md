@@ -5,14 +5,14 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: overview
-ms.date: 04/20/2020
+ms.date: 04/05/2021
 ms.custom: devx-track-js
-ms.openlocfilehash: b037eec13fda0b5ec16a4f2f53ad2a64fb5f8da1
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: efa77ce7416b94331dce2bb4e7f77dd50c20d450
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91275563"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106448582"
 ---
 # <a name="url-rewriter"></a>Модуль переопределения URL-адресов #
 

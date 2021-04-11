@@ -5,14 +5,18 @@
   items:
     - name: Что такое Помощник по метрикам?
       href: overview.md
+    - name: Цены
+      href: 'http://go.microsoft.com/fwlink/?LinkID=761229'
     - name: Новые возможности
       href: whats-new.md
-- name: Краткие руководства
+- name: Краткие руководства по Помощнику по метрикам
   items:
-    - name: Использование веб-портала
+    - name: Веб-портал
       href: quickstarts/web-portal.md
-    - name: "Использование REST\_API или клиентских библиотек"
+    - name: "REST\_API и клиентские библиотеки"
       href: quickstarts/rest-api-and-client-library.md
+- name: Примеры
+  href: 'https://docs.microsoft.com/en-us/samples/browse/?products=azure&terms=metrics-advisor'
 - name: Практические руководства
   items:
     - name: Подключение данных
@@ -31,13 +35,13 @@
       href: how-tos/anomaly-feedback.md
     - name: Создание графа метрик
       href: how-tos/metrics-graph.md
+- name: Основные понятия
+  items:
+    - name: 'Основные термины, касающиеся Помощника по метрикам'
+      href: glossary.md
 - name: Справочник
   items:
-    - name: Глоссарий
-      href: glossary.md
-    - name: ВОПРОСЫ И ОТВЕТЫ
-      href: faq.md
-    - name: API "Помощник по метрикам"
+    - name: REST API Помощника по метрикам
       href: 'https://go.microsoft.com/fwlink/?linkid=2141634'
     - name: Справочник по Azure CLI
       href: /cli/azure/cognitiveservices#az_cognitiveservices_list
@@ -45,12 +49,10 @@
       href: /powershell/module/azurerm.cognitiveservices/
 - name: Ресурсы
   items:
+    - name: Поддержка регионов
+      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/metrics-advisor/context/context
-    - name: Цены
-      href: 'http://go.microsoft.com/fwlink/?LinkID=761229'
-    - name: Доступность по регионам
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Соответствие нормативным требованиям
       href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Шифрование

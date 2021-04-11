@@ -5,13 +5,13 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: quickstart
-ms.date: 04/20/2020
-ms.openlocfilehash: 0d0fa88fdf182ae2214da40ee3fe8b20ced025e4
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.date: 04/05/2021
+ms.openlocfilehash: a6fd603318a25e15d1d4dcc1e3eaf75f96fc5ade
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104956066"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106448633"
 ---
 # <a name="azure-media-player-quickstart"></a>Краткое руководство по Проигрывателю мультимедиа Azure
 Проигрыватель мультимедиа Azure можно легко настроить. Для базового воспроизведения мультимедийного содержимого из учетной записи Служб мультимедиа Azure требуется всего несколько минут. В этом разделе приведено общее описание основных этапов. В следующих разделах содержатся подробные сведения о настройке Проигрывателя мультимедиа Azure.  Просто добавьте указанные ниже включаемые файлы в `<head>` документа:
@@ -22,7 +22,7 @@ ms.locfileid: "104956066"
 ```
 
 > [!IMPORTANT]
-> **НЕ** используйте версию `latest` в рабочей среде, так как она может быть изменена по запросу. Измените `latest` на версию Проигрывателя мультимедиа Azure (например, измените `latest` на `1.0.0`). Вы можете [запросить требуемую версию Проигрывателя мультимедиа Azure](azure-media-player-changelog.md).
+> **НЕ** используйте версию `latest` в рабочей среде, так как она может быть изменена по запросу. Измените `latest` на версию Проигрывателя мультимедиа Azure (например, измените `latest` на `1.0.0`). Вы можете [запросить требуемую версию Проигрывателя мультимедиа Azure](https://amp.azure.net/libs/amp/latest/docs/changelog.html).
 
 ## <a name="use-the-video-element"></a>Использование элемента video
 

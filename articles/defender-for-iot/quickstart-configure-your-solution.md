@@ -3,12 +3,12 @@ title: Краткое руководство. Добавление ресурс�
 description: В этом кратком руководстве показано, как настроить комплексное решение Интернета вещей с помощью Azure Defender для Интернета вещей.
 ms.topic: quickstart
 ms.date: 01/25/2021
-ms.openlocfilehash: 1bde15919f9fa69bb9f9de7459895a70e9b74f71
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: 6a90e8c3007f7b3448fd3f1b6e4fa46ba861081b
+ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104781030"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106384586"
 ---
 # <a name="quickstart-configure-your-azure-defender-for-iot-solution"></a>Краткое руководство. Настройка решения Azure Defender для Интернета вещей
 
@@ -16,7 +16,7 @@ ms.locfileid: "104781030"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Нет
+- Нет
 
 ## <a name="what-is-defender-for-iot"></a>Что такое Defender для Интернета вещей?
 

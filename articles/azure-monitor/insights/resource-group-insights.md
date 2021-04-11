@@ -7,10 +7,10 @@ ms.author: daviste
 ms.date: 09/19/2018
 ms.reviewer: mbullwin
 ms.openlocfilehash: bfe197befc781548dc41ff389f2d9558af7a8aae
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105567408"
 ---
 # <a name="monitor-resource-groups-with-azure-monitor-preview"></a>Мониторинг групп ресурсов с помощью Azure Monitor (предварительная версия)

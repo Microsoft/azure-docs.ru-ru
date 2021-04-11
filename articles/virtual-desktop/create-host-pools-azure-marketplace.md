@@ -6,13 +6,13 @@ ms.topic: tutorial
 ms.custom: references_regions
 ms.date: 03/10/2021
 ms.author: helohr
-manager: lizross
-ms.openlocfilehash: 60566b95447c1b69fb257435f45a11524ac5d8b2
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+manager: femila
+ms.openlocfilehash: 1003ab20f839469235d6bd7949ec3b2df4dd4f25
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102617360"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106447987"
 ---
 # <a name="tutorial-create-a-host-pool-with-the-azure-portal"></a>Руководство по Создание пула узлов на портале Azure
 
