@@ -4,12 +4,12 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 01/28/2021
 ms.author: glenga
-ms.openlocfilehash: 5bc1d2ddb5b9ddb185a8349fb42d5f5db79c1498
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: eae828d03431dd339c5399d8db8c6e46141ab11b
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103201386"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106075357"
 ---
 ## <a name="run-the-function-locally"></a>Локальное выполнение функции
 
@@ -27,7 +27,7 @@ Visual Studio Code интегрируется с [Azure Functions Core Tools](..
     
 1. В поле **Ввести текст запроса** вы увидите значение текста запроса `{ "name": "Azure" }`. Нажмите клавишу ВВОД, чтобы отправить это сообщение запроса в свою функцию. 
 
-   Вместо этого можно отправить запрос HTTP GET по адресу <http://localhost:7071/api/HttpExample> в веб-браузере.
+   Вместо этого можно отправить запрос HTTP GET по адресу `http://localhost:7071/api/HttpExample` в веб-браузере.
 
 1. При выполнении функции локально и возврате ответа в Visual Studio Code отобразится уведомление. Сведения о выполнении функции отображаются на панели **Терминал**.
 

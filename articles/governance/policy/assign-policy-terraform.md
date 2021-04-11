@@ -1,14 +1,14 @@
 ---
 title: Краткое руководство. Создание назначения политики с помощью Terraform
 description: В этом кратком руководстве с помощью Terraform и синтаксиса HCL создается назначение политики для обнаружения ресурсов, не соответствующих требованиям.
-ms.date: 10/27/2020
+ms.date: 03/31/2021
 ms.topic: quickstart
-ms.openlocfilehash: dc4dae2dc6e43e7532117bf64af3ce97ddc7c496
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 6c1a43010c48f71872d935a8fb52f608b479da8a
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93104925"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106092353"
 ---
 # <a name="quickstart-create-a-policy-assignment-to-identify-non-compliant-resources-using-terraform"></a>Краткое руководство. Создание назначения политики для выявления ресурсов, не соответствующих требованиям, с использованием Terraform
 
