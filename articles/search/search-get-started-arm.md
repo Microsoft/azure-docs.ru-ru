@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 11/17/2020
 ms.openlocfilehash: 88a081f1ebbda52653302384c06403e223128c60
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101668390"
 ---
 # <a name="quickstart-deploy-cognitive-search-using-an-arm-template"></a>Краткое руководство. Развертывание службы "Когнитивный поиск" с помощью шаблона ARM
