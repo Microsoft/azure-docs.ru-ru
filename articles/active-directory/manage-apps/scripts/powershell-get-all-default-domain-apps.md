@@ -12,10 +12,10 @@ ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 84fbdbb05c0c928c2d4e47e1f2626b5598661a10
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102551034"
 ---
 # <a name="get-all-application-proxy-apps-using-default-domains-msappproxynet"></a>Получение всех приложений прокси приложения для доменов по умолчанию (.msappproxy.net)

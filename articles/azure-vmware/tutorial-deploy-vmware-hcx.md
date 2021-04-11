@@ -3,12 +3,12 @@ title: Учебник по развертыванию и настройке VMwa
 description: Узнайте, как развернуть и настроить решение VMware HCX для частного облака Решения Azure VMware.
 ms.topic: tutorial
 ms.date: 03/13/2021
-ms.openlocfilehash: d1b0792ab9b9975edf45ab8addb81410e1da4107
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: ab59b4a29f8ba372c1892613d5e0461bf3fdc512
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103462344"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869095"
 ---
 # <a name="deploy-and-configure-vmware-hcx"></a>Развертывание и настройка VMware HCX
 
@@ -265,7 +265,7 @@ ms.locfileid: "103462344"
 1. В разделе **Select Distributed Switches for Network Extensions** (Выбор распределенных коммутаторов для сетевых расширений) выберите коммутаторы, через которые подключаются виртуальные машины, переносимые в Решение Azure VMware из расширенной сети уровня 2. Затем выберите **Continue** (Продолжить).
 
    > [!NOTE]
-   > Если вы не выполняете миграцию виртуальных машин в расширенных сетях уровня 2, этот шаг можно пропустить.
+   > Если вы не выполняете миграцию виртуальных машин в расширенных сетях уровня 2 (L2), этот шаг можно пропустить.
    
    :::image type=" content" source="media/tutorial-vmware-hcx/select-layer-2-distributed-virtual-switch.png" alt-text="Снимок экрана: выбор распределенных виртуальных коммутаторов и кнопка Continue (Продолжить)" lightbox="media/tutorial-vmware-hcx/select-layer-2-distributed-virtual-switch.png":::
 
@@ -376,3 +376,4 @@ ms.locfileid: "103462344"
 * [Документация по VMware HCX](https://docs.vmware.com/en/VMware-HCX/index.html)
 * [Миграция виртуальных машин с помощью VMware HCX](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-D0CD0CC6-3802-42C9-9718-6DA5FEC246C6.html?hWord=N4IghgNiBcIBIGEAaACAtgSwOYCcwBcMB7AOxAF8g)
 * [Требуемые порты HCX](https://ports.vmware.com/home/VMware-HCX)
+* [Настройка прокси-сервера HCX перед утверждением лицензионного ключа](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-920242B3-71A3-4B24-9ACF-B20345244AB2.html?hWord=N4IghgNiBcIA4CcD2APAngAgBIGEAaIAvkA)

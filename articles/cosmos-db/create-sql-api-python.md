@@ -13,12 +13,12 @@ ms.custom:
 - seo-javascript-september2019
 - seo-python-october2019
 - devx-track-python
-ms.openlocfilehash: c74da5e612609ce6a0525b24e5868059f06da179
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: fee0591622c1ee07b6e954b3cadc208a300ab6a5
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93078787"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104798788"
 ---
 # <a name="quickstart-build-a-python-application-using-an-azure-cosmos-db-sql-api-account"></a>Краткое руководство. Создание приложения Python с использованием учетной записи API SQL для Azure Cosmos DB
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "93078787"
     * Без активной подписки Azure:
         * [Попробуйте Azure Cosmos DB бесплатно](https://azure.microsoft.com/try/cosmosdb/) — тестовая среда, доступная в течение 30 дней.
         * [Эмулятор Azure Cosmos DB](https://aka.ms/cosmosdb-emulator) 
-- [Python 2.7, 3.5.3 или более поздней версии](https://www.python.org/downloads/) с исполняемым файлом `python` в `PATH`.
+- [Python 2.7, 3.6 или более поздней версии](https://www.python.org/downloads/) с исполняемым файлом `python` в `PATH`.
 - [Visual Studio Code](https://code.visualstudio.com/).
 - [Расширение Python для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python#overview).
 - [Git](https://www.git-scm.com/downloads). 
@@ -170,7 +170,7 @@ ms.locfileid: "93078787"
 
     Нижний колонтитул в Visual Studio Code будет обновлен для указания выбранного интерпретатора. 
 
-3. Выберите **Вид** > **Интегрированный терминал** , чтобы открыть интегрированный терминал Visual Studio Code.
+3. Выберите **Вид** > **Интегрированный терминал**, чтобы открыть интегрированный терминал Visual Studio Code.
 
 4. В окне терминала проверьте, находитесь ли вы в папке *azure-cosmos-db-python-getting-started*. Если нет, выполните следующую команду, чтобы перейти в папку примера. 
 

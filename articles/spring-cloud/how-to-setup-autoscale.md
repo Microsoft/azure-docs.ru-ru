@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 07/22/2020
 ms.custom: devx-track-java, devx-track-azurecli
 ms.openlocfilehash: eaa4a219a1020639c930f8a07bfcaa1c45d0cef8
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104878433"
 ---
 # <a name="set-up-autoscale-for-microservice-applications"></a>Настройка автомасштабирования для приложений, состоящих из микрослужб

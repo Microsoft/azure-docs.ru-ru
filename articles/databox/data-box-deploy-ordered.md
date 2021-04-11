@@ -8,12 +8,12 @@ ms.subservice: pod
 ms.topic: tutorial
 ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: 281b22db692087f2876b4011563fee8c56bd476e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: aa3614aa3c4fbaec3611806406e5129379999bc3
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102522399"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106067147"
 ---
 # <a name="tutorial-order-azure-data-box"></a>Руководство по Заказ Azure Data Box
 
@@ -790,7 +790,7 @@ PS C:\WINDOWS\system32>
    |resource-group [обязательный]| Имя группы ресурсов, связанной с удаляемым заказом. Группа ресурсов — это логический контейнер для ресурсов, которые могут управляться или развертываться вместе. | "myresourcegroup"|
    |name [обязательный]| Имя удаляемого заказа. | "mydataboxorder"|
    |reason [обязательный]| Причина для отмены заказа. | "I entered erroneous information and needed to cancel the order." (Заказ пришлось отменить из-за ошибки при вводе информации). |
-   |да| Не запрашивать подтверждение. | --yes (-y)| --yes -y |
+   |да| Не запрашивать подтверждение. | --yes (-y)| 
    |debug| Включение отладочной информации для подробного ведения журнала. | --debug |
    |help| Отображение справочной информации по этой команде. | --help -h |
    |only-show-errors| Показывать только ошибки, блокируя предупреждения. | --only-show-errors |
@@ -827,7 +827,7 @@ PS C:\WINDOWS\system32>
    |resource-group [обязательный]| Имя группы ресурсов, связанной с удаляемым заказом. Группа ресурсов — это логический контейнер для ресурсов, которые могут управляться или развертываться вместе. | "myresourcegroup"|
    |name [обязательный]| Имя удаляемого заказа. | "mydataboxorder"|
    |Подписка| Имя или идентификатор (GUID) подписки Azure. | "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" |
-   |да| Не запрашивать подтверждение. | --yes (-y)| --yes -y |
+   |да| Не запрашивать подтверждение. | --yes (-y)|
    |debug| Включение отладочной информации для подробного ведения журнала. | --debug |
    |help| Отображение справочной информации по этой команде. | --help -h |
    |only-show-errors| Показывать только ошибки, блокируя предупреждения. | --only-show-errors |
