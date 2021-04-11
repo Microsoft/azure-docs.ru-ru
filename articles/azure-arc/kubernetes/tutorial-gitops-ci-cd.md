@@ -7,12 +7,12 @@ ms.service: azure-arc
 ms.topic: tutorial
 ms.date: 03/03/2021
 ms.custom: template-tutorial
-ms.openlocfilehash: 72caca47cde960eb7298ec2cf0c6994755cb3159
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: a94784f2f3fc622e0232033d63bc957279a7d34c
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102121615"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106076349"
 ---
 # <a name="tutorial-implement-cicd-with-gitops-using-azure-arc-enabled-kubernetes-clusters"></a>Учебник по реализации CI/CD с помощью GitOps при использовании кластеров Kubernetes с поддержкой Azure Arc
 
@@ -37,12 +37,12 @@ ms.locfileid: "102121615"
 В этом учебнике предполагается, что вы знакомы с Azure DevOps, Azure Repos, Azure Pipelines и Azure CLI.
 
 * Войдите в [Azure DevOps Services](https://dev.azure.com/).
-* Выполните инструкции из [предыдущего учебника](https://docs.microsoft.com/azure/azure-arc/kubernetes/tutorial-use-gitops-connected-cluster), чтобы узнать, как развернуть GitOps для среды CI/CD.
-* Проанализируйте [преимущества и архитектуру](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-configurations) этого компонента.
+* Выполните инструкции из [предыдущего учебника](./tutorial-use-gitops-connected-cluster.md), чтобы узнать, как развернуть GitOps для среды CI/CD.
+* Проанализируйте [преимущества и архитектуру](./conceptual-configurations.md) этого компонента.
 * Убедитесь, что у вас есть следующее:
-  * [Подключенный кластер Kubernetes с поддержкой Azure Arc](https://docs.microsoft.com/azure/azure-arc/kubernetes/quickstart-connect-cluster#connect-an-existing-kubernetes-cluster) с именем **arc-cicd-cluster**.
-  * Подключенный Реестр контейнеров Azure (ACR) с [интеграцией AKS](https://docs.microsoft.com/azure/aks/cluster-container-registry-integration) или [проверкой подлинности кластера без использования AKS](https://docs.microsoft.com/azure/container-registry/container-registry-auth-kubernetes).
-  * Разрешения "Администратор сборки" и "Администратор проекта" для [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos) и [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
+  * [Подключенный кластер Kubernetes с поддержкой Azure Arc](./quickstart-connect-cluster.md#connect-an-existing-kubernetes-cluster) с именем **arc-cicd-cluster**.
+  * Подключенный Реестр контейнеров Azure (ACR) с [интеграцией AKS](../../aks/cluster-container-registry-integration.md) или [проверкой подлинности кластера без использования AKS](../../container-registry/container-registry-auth-kubernetes.md).
+  * Разрешения "Администратор сборки" и "Администратор проекта" для [Azure Repos](/azure/devops/repos/get-started/what-is-repos) и [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 * Установите следующие расширения CLI для Kubernetes с поддержкой Azure Arc версии не ниже 1.0.0:
 
   ```azurecli
@@ -58,7 +58,7 @@ ms.locfileid: "102121615"
 
 ## <a name="import-application-and-gitops-repos-into-azure-repos"></a>Импорт репозиториев приложений и GitOps в Azure Repos
 
-Импортируйте [репозиторий приложений](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-gitops-cicd#application-repo) и [репозиторий GitOps](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-gitops-cicd#gitops-repo) в Azure Repos. Для работы с этим учебником используйте следующие примеры репозиториев:
+Импортируйте [репозиторий приложений](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#application-repo) и [репозиторий GitOps](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#gitops-repo) в Azure Repos. Для работы с этим учебником используйте следующие примеры репозиториев:
 
 * Репозиторий приложений **arc-cicd-demo-src**
    * URL-адрес: https://github.com/Azure/arc-cicd-demo-src
@@ -67,7 +67,7 @@ ms.locfileid: "102121615"
    * URL-адрес: https://github.com/Azure/arc-cicd-demo-gitops
    * Используется в качестве основы для ресурсов кластера, в которых размещено приложение Azure для голосования.
 
-См. дополнительные сведения об [импорте репозиториев Git](https://docs.microsoft.com/azure/devops/repos/git/import-git-repository).
+См. дополнительные сведения об [импорте репозиториев Git](/azure/devops/repos/git/import-git-repository).
 
 >[!NOTE]
 > Импорт и использование двух отдельных репозиториев для приложений и GitOps может повысить безопасность и упростить работу. Разрешения и видимость репозиториев приложений и GitOps можно настраивать по отдельности.
@@ -86,7 +86,7 @@ ms.locfileid: "102121615"
 Рабочий процесс CI/CD заполнит каталог манифеста дополнительными манифестами для развертывания приложения.
 
 
-1. [Создайте новое подключение GitOps](https://docs.microsoft.com/azure/azure-arc/kubernetes/tutorial-use-gitops-connected-cluster) к только что импортированному репозиторию **arc-cicd-demo-gitops** в Azure Repos.
+1. [Создайте новое подключение GitOps](./tutorial-use-gitops-connected-cluster.md) к только что импортированному репозиторию **arc-cicd-demo-gitops** в Azure Repos.
 
    ```azurecli
    az k8sconfiguration create \
@@ -172,7 +172,7 @@ kubectl create secret docker-registry <secret-name> \
 ## <a name="create-environment-variable-groups"></a>Создание групп переменных среды
 
 ### <a name="app-repo-variable-group"></a>Группа переменных репозитория приложений
-[Создайте группу переменных](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups) с именем **az-vote-app-dev**. Задайте следующие значения:
+[Создайте группу переменных](/azure/devops/pipelines/library/variable-groups) с именем **az-vote-app-dev**. Задайте следующие значения:
 
 | Переменная | Значение |
 | -------- | ----- |
@@ -182,13 +182,13 @@ kubectl create secret docker-registry <secret-name> \
 | ENVIRONMENT_NAME | Разработка |
 | MANIFESTS_BRANCH | `master` |
 | MANIFESTS_REPO | Строка подключения Git для репозитория GitOps |
-| PAT | [Созданный личный маркер доступа](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?#create-a-pat) с разрешениями на чтение и запись. Сохраните его для дальнейшего использования при создании группы переменных `stage`. |
+| PAT | [Созданный личный маркер доступа](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) с разрешениями на чтение и запись. Сохраните его для дальнейшего использования при создании группы переменных `stage`. |
 | SRC_FOLDER | `azure-vote` | 
 | TARGET_CLUSTER | `arc-cicd-cluster` |
 | TARGET_NAMESPACE | `dev` |
 
 > [!IMPORTANT]
-> Пометьте личный маркер доступа как тип секрета. В приложениях рекомендуется связывать секреты из [Azure KeyVault](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups#link-secrets-from-an-azure-key-vault).
+> Пометьте личный маркер доступа как тип секрета. В приложениях рекомендуется связывать секреты из [Azure KeyVault](/azure/devops/pipelines/library/variable-groups#link-secrets-from-an-azure-key-vault).
 >
 ### <a name="stage-environment-variable-group"></a>Подготовка группы переменных среды
 
@@ -255,7 +255,7 @@ kubectl create secret docker-registry <secret-name> \
 1. Укажите утверждающих и необязательное сообщение.
 1. Щелкните **Создать** еще раз, чтобы завершить добавление проверки утверждения вручную.
 
-Дополнительные сведения см. в учебнике по [определению утверждений и проверок](https://docs.microsoft.com/azure/devops/pipelines/process/approvals).
+Дополнительные сведения см. в учебнике по [определению утверждений и проверок](/azure/devops/pipelines/process/approvals).
 
 При следующем выполнении конвейера CD конвейер будет приостановлен после создания запроса на вытягивание GitOps. Убедитесь, что изменение синхронизировано правильно и передает базовые функциональные возможности. Утвердите проверку в конвейере, чтобы разрешить перенос изменений в следующую среду.
 
@@ -291,7 +291,7 @@ kubectl create secret docker-registry <secret-name> \
 После завершения выполнения конвейера вы будете уверены в качестве кода приложения и шаблона, который будет его развертывать. Теперь можно утвердить и завершить запрос на вытягивание. Перед активацией конвейера CD будет выполнен повторный запуск CI, при котором будут повторно созданы шаблоны и манифесты.
 
 > [!TIP]
-> В реальной среде не забудьте установить политики ветви, которые позволят убедиться, что в PR передаются проверки качества. Дополнительные сведения см. в статье [Установка политик ветви](https://docs.microsoft.com/azure/devops/repos/git/branch-policies).
+> В реальной среде не забудьте установить политики ветви, которые позволят убедиться, что в PR передаются проверки качества. Дополнительные сведения см. в статье [Установка политик ветви](/azure/devops/repos/git/branch-policies).
 
 ## <a name="cd-process-approvals"></a>Утверждения процессов CD
 
@@ -338,4 +338,4 @@ kubectl create secret docker-registry <secret-name> \
 Перейдите к нашей концептуальной статье, чтобы узнать больше о GitOps и конфигурациях в Kubernetes с поддержкой Azure Arc.
 
 > [!div class="nextstepaction"]
-> [Рабочий процесс CI/CD при использовании GitOps — Kubernetes с поддержкой Azure Arc](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-gitops-cicd)
+> [Рабочий процесс CI/CD при использовании GitOps — Kubernetes с поддержкой Azure Arc](https://docs.microsoft.com/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd)

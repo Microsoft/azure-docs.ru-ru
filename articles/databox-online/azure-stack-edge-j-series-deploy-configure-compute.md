@@ -8,13 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 01/05/2021
 ms.author: alkohli
-Customer intent: As an IT admin, I need to understand how to configure compute on Azure Stack Edge Pro so I can use it to transform the data before sending it to Azure.
-ms.openlocfilehash: 28b5c107fb35c7bda9b1680050b92004436b98ff
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 1dcf429ddc697dfbfdac721cb8de137b9382b234
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97935505"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106058788"
 ---
 # <a name="tutorial-transform-data-with-azure-stack-edge-pro"></a>Руководство по Преобразование данных с помощью Azure Stack Edge Pro
 
@@ -116,9 +115,9 @@ ms.locfileid: "97935505"
 
 ## <a name="add-a-module"></a>Добавление модуля
 
-Можно добавить пользовательский или готовый модуль. На этом устройстве Edge нет пользовательских модулей. Чтобы узнать, как создать пользовательский модуль, ознакомьтесь со статьей [Разработка на C# модуля для устройства Azure Stack Edge Pro](azure-stack-edge-j-series-create-iot-edge-module.md).
+Можно добавить пользовательский или готовый модуль. На этом устройстве Edge нет пользовательских модулей. Чтобы узнать, как создать пользовательский модуль, ознакомьтесь со статьей [Разработка на C# модуля для устройства Azure Stack Edge Pro](./azure-stack-edge-gpu-create-iot-edge-module.md).
 
-В этом разделе объясняется, как добавить пользовательский модуль к устройству IoT Edge, которое было создано с помощью руководства [Разработка на C# модуля для Azure Stack Edge Pro](azure-stack-edge-j-series-create-iot-edge-module.md). Этот пользовательский модуль позволяет получить файлы из локальной общей папки Edge на устройстве Edge и перенести их в облачную общую папку Edge на устройстве. Затем облачный ресурс переносит файлы в учетную запись Azure, связанную с облачным ресурсом.
+В этом разделе объясняется, как добавить пользовательский модуль к устройству IoT Edge, которое было создано с помощью руководства [Разработка на C# модуля для Azure Stack Edge Pro](./azure-stack-edge-gpu-create-iot-edge-module.md). Этот пользовательский модуль позволяет получить файлы из локальной общей папки Edge на устройстве Edge и перенести их в облачную общую папку Edge на устройстве. Затем облачный ресурс переносит файлы в учетную запись Azure, связанную с облачным ресурсом.
 
 1. Поочередно выберите **Вычисления Edge > Начало работы**. На плитке **Добавление модулей** выберите **простой** тип сценария. Выберите **Добавить**.
 2. В колонке **Настройка и добавление модулей** введите следующие значения:

@@ -4,7 +4,6 @@ description: Из этой статьи вы узнаете, как подклю
 services: virtual-network
 documentationcenter: virtual-network
 author: KumudD
-Customer intent: I want to connect two virtual networks so that virtual machines in one virtual network can communicate with virtual machines in the other virtual network.
 ms.service: virtual-network
 ms.devlang: azurecli
 ms.topic: tutorial
@@ -13,16 +12,16 @@ ms.workload: infrastructure
 ms.date: 01/22/2020
 ms.author: kumud
 ms.custom: ''
-ms.openlocfilehash: e95441aab6c8ce7de37ba5f6b08d5f7d54e13347
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: b7fcf7f60b18d0d44ded67cb5b22bcdcdcd56a77
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96017922"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106059332"
 ---
 # <a name="tutorial-connect-virtual-networks-with-virtual-network-peering-using-the-azure-portal"></a>Руководство. Подключение виртуальных сетей с помощью пиринга и портала Azure
 
-Виртуальные сети можно подключить друг к другу с помощью пиринговой связи. Эти виртуальные сети могут быть расположены как в одном регионе, так и в разных. Установка пиринговой связи между виртуальными сетями в разных регионах называется глобальным пирингом виртуальных сетей. После установки пиринговой связи ресурсы в обеих виртуальных сетях могут взаимодействовать друг с другом с такой же задержкой и пропускной способностью, как если бы эти ресурсы находились в одной виртуальной сети. В этом руководстве описано следующее.
+Виртуальные сети можно подключить друг к другу с помощью пиринговой связи. Эти виртуальные сети могут быть расположены как в одном регионе, так и в разных. Установка пиринговой связи между виртуальными сетями в разных регионах называется глобальным пирингом виртуальных сетей. После установки пиринговой связи ресурсы в обеих виртуальных сетях могут взаимодействовать друг с другом с такой же задержкой и пропускной способностью, как если бы эти ресурсы находились в одной виртуальной сети. В этом руководстве описано следующее:
 
 > [!div class="checklist"]
 > * создание двух виртуальных сетей;
@@ -32,7 +31,9 @@ ms.locfileid: "96017922"
 
 При необходимости инструкции из этого руководства можно выполнить с помощью [Azure CLI](tutorial-connect-virtual-networks-cli.md) или [Azure PowerShell](tutorial-connect-virtual-networks-powershell.md).
 
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
+## <a name="prerequisites"></a>Предварительные требования
+
+Для начала работы вам потребуется учетная запись Azure с активной подпиской. Если ее нет, можно создать [учетную запись бесплатно](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## <a name="log-in-to-azure"></a>Вход в Azure
 
@@ -46,8 +47,8 @@ ms.locfileid: "96017922"
 
     |Параметр|Значение|
     |---|---|
-    |Subscription| Выберите свою подписку.|
-    |группа ресурсов.| Выберите **Создать новую**, а затем введите *myResourceGroup*.|
+    |Подписка| Выберите свою подписку.|
+    |Группа ресурсов| Выберите **Создать новую**, а затем введите *myResourceGroup*.|
     |Регион| Выберите **Восточная часть США**.|
     |Имя|myVirtualNetwork1|
 
@@ -60,7 +61,7 @@ ms.locfileid: "96017922"
     |---|---|
     |Имя|myVirtualNetwork2|
     |Пространство адресов|10.1.0.0/16|
-    |группа ресурсов.| Щелкните **Use existing** (Использовать существующую), а затем выберите **myResourceGroup**.|
+    |Группа ресурсов| Щелкните **Use existing** (Использовать существующую), а затем выберите **myResourceGroup**.|
     |Имя подсети | Подсеть 2|
     |Диапазон адресов подсети|10.1.0.0/24|
 
@@ -76,8 +77,8 @@ ms.locfileid: "96017922"
     |Параметр|Значение|
     |---|---|
     |Имя пиринга между myVirtualNetwork1 и удаленной виртуальной сетью|myVirtualNetwork1-myVirtualNetwork2. При первой загрузке страницы вы увидите фразу "Удаленная виртуальная сеть". После выбора удаленной виртуальной сети фраза "Удаленная виртуальная сеть" будет заменена именем этой сети.|
-    |Subscription| Выберите свою подписку.|
-    |Виртуальная сеть|myVirtualNetwork2. Чтобы выбрать виртуальную сеть *myVirtualNetwork2*, щелкните **Виртуальная сеть**, а затем — **myVirtualNetwork2 (myResourceGroup)** . Вы можете выбрать виртуальную сеть в том же или другом регионе.|
+    |Подписка| Выберите свою подписку.|
+    |Виртуальная сеть|myVirtualNetwork2. Чтобы выбрать виртуальную сеть *myVirtualNetwork2*, щелкните **Виртуальная сеть**, а затем — **myVirtualNetwork2 (myResourceGroup)**. Вы можете выбрать виртуальную сеть в том же или другом регионе.|
     |Имя пиринга между myVirtualNetwork2 и myVirtualNetwork1|myVirtualNetwork2-myVirtualNetwork1|
 
     ![Параметры пиринга](./media/tutorial-connect-virtual-networks-portal/peering-settings-bidirectional.png)
@@ -100,9 +101,9 @@ ms.locfileid: "96017922"
 
     |Параметр|Значение|
     |---|---|
-    |группа ресурсов.| Щелкните **Use existing** (Использовать существующую), а затем выберите **myResourceGroup**.|
+    |Группа ресурсов| Щелкните **Use existing** (Использовать существующую), а затем выберите **myResourceGroup**.|
     |Имя|myVm1|
-    |Location| Выберите **Восточная часть США**.|
+    |Расположение| Выберите **Восточная часть США**.|
     |Имя пользователя| Введите выбранное имя пользователя.|
     |Пароль| Введите выбранный пароль. Пароль должен включать минимум 12 символов и соответствовать [определенным требованиям к сложности](../virtual-machines/windows/faq.md?toc=%2fazure%2fvirtual-network%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
    
@@ -171,6 +172,7 @@ ms.locfileid: "96017922"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этого руководства вы узнали, как с помощью пиринга подключить две виртуальные сети в одном регионе Azure. Пиринг можно использовать и для подключения виртуальных сетей из разных [поддерживаемых регионов](virtual-network-manage-peering.md#cross-region) или [разных подписок Azure](create-peering-different-subscriptions.md#portal), а также для создания [звездообразной топологии сети](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke#virtual-network-peering). Чтобы узнать больше о пиринге виртуальных сетей, ознакомьтесь с разделами [Пиринг между виртуальными сетями](virtual-network-peering-overview.md) и [Создание, изменение и удаление пиринга в виртуальной сети](virtual-network-manage-peering.md).
+> [!div class="nextstepaction"]
+> См. дополнительные сведения о [пиринге между виртуальными сетями](virtual-network-peering-overview.md).
 
-Чтобы узнать, как подключить свой компьютер к виртуальной сети через VPN и взаимодействовать с ресурсами в виртуальной сети или в пиринговых виртуальных сетях, изучите раздел [Настройка подключения "точка — сеть" к виртуальной сети с использованием собственной аутентификации Azure на основе сертификата и портала Azure](../vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal.md?toc=%2fazure%2fvirtual-network%2ftoc.json).
+

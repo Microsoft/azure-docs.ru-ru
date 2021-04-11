@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Библиотека Хранилища BLOB-объектов Azure версии 12 для Python
 description: Из этого краткого руководства вы узнаете, как с помощью клиентской библиотеки Хранилища BLOB-объектов Azure версии 12 для Python создать контейнер и большой двоичный объект в Хранилище BLOB-объектов. Далее вы узнаете, как скачать большой двоичный объект на локальный компьютер и как получить список всех больших двоичных объектов в контейнере.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 01/28/2021
 ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.custom: devx-track-python
-ms.openlocfilehash: e315f0f4f7bfff03a659de430e6fe182037f1b8a
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: a5d56b20bec7e668bb2119c9174fe03278c805c1
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99096412"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106278020"
 ---
 # <a name="quickstart-manage-blobs-with-python-v12-sdk"></a>Краткое руководство. Управление большими двоичными объектами с помощью пакета SDK для Python версии 12
 
@@ -30,7 +30,7 @@ ms.locfileid: "99096412"
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) бесплатно.
 - Учетная запись хранения Azure. [Создание учетной записи хранения](../common/storage-account-create.md).
-- [Python](https://www.python.org/downloads/) 2.7, 3.5 или более поздней версии.
+- [Python](https://www.python.org/downloads/) 2.7, 3.6 или более поздней версии.
 
 [!INCLUDE [storage-multi-protocol-access-preview](../../../includes/storage-multi-protocol-access-preview.md)]
 

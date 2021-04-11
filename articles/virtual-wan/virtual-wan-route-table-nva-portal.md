@@ -7,13 +7,12 @@ ms.service: virtual-wan
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: cherylmc
-Customer intent: As someone with a networking background, I want to create a route table using the portal.
-ms.openlocfilehash: 8de7ad2808e5319819410b3125472e28496647b0
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: 409858b2a9005592d895f6044d028221769144cc
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91267148"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106058516"
 ---
 # <a name="create-a-virtual-wan-hub-route-table-for-nvas-azure-portal"></a>Создание для концентратора Виртуальной глобальной сети таблицы маршрутизации к NVA. Портал Azure
 

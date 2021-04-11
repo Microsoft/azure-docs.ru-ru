@@ -5,9 +5,8 @@ author: cynthn
 ms.service: virtual-machines
 ms.collection: linux
 ms.topic: quickstart
-ms.tgt_pltfrm: vm-linux
 ms.workload: infrastructure
-ms.date: 10/09/2018
+ms.date: 03/30/2021
 ms.author: cynthn
 ms.custom:
 - mvc
@@ -15,18 +14,18 @@ ms.custom:
 - seo-javascript-october2019
 - seo-python-october2019
 - devx-track-azurecli
-ms.openlocfilehash: fd411255247e6a37b857ac11c1b0abbd4558d02a
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 3e8c1a06244c46f5789506e8a77d410f5493bbf3
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102549776"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106058584"
 ---
 # <a name="quickstart-create-a-linux-virtual-machine-with-the-azure-cli"></a>Краткое руководство. Создание виртуальной машины Linux с помощью Azure CLI
 
 В этом кратком руководстве показано, как с помощью Azure CLI развернуть в Azure виртуальную машину Linux. Azure CLI используется для создания ресурсов Azure и управления ими из командной строки или с помощью скриптов.
 
-В этом руководстве мы установим 16.04 Ubuntu LTS. Чтобы проверить работу виртуальной машины, вы подключитесь к ней по протоколу SSH и установите веб-сервер NGINX.
+В этом руководстве мы установим образ Ubuntu LTS последней версии. Чтобы проверить работу виртуальной машины, вы подключитесь к ней по протоколу SSH и установите веб-сервер NGINX.
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
@@ -88,10 +87,10 @@ az vm open-port --port 80 --resource-group myResourceGroup --name myVM
 
 ## <a name="connect-to-virtual-machine"></a>Подключение к виртуальной машине
 
-Установите SSH-подключение к виртуальной машине в обычном режиме. Замените **publicIpAddress** общедоступным IP-адресом виртуальной машины, который вы записали из выходных данных виртуальной машины на предыдущем шаге.
+Установите SSH-подключение к виртуальной машине в обычном режиме. Замените IP-адрес в примере общедоступным IP-адресом виртуальной машины, который вы записали из выходных данных на предыдущем шаге.
 
 ```bash
-ssh azureuser@publicIpAddress
+ssh azureuser@40.68.254.142
 ```
 
 ## <a name="install-web-server"></a>Установка веб-сервера

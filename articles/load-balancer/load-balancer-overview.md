@@ -6,7 +6,6 @@ services: load-balancer
 documentationcenter: na
 author: asudbring
 ms.service: load-balancer
-Customer intent: As an IT administrator, I want to learn more about the Azure Load Balancer service and what I can use it for.
 ms.devlang: na
 ms.topic: overview
 ms.custom: seodec18
@@ -14,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 1/25/2021
 ms.author: allensu
-ms.openlocfilehash: 51ceb72d53f78264edcadd2255e20c8fbdac2cae
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: f847ef4f4490b64212e4cdcce3f9a89e94c7cd37
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102181216"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106058601"
 ---
 # <a name="what-is-azure-load-balancer"></a>Что такое Azure Load Balancer?
 
