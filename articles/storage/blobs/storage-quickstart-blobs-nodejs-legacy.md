@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Использование клиентской библиотеки хранилища BLOB-объектов Azure версии 10 для JavaScript
 description: Создание, передача и удаление больших двоичных объектов и контейнеров в Node.js с помощью клиентской библиотеки службы хранилища Azure версии 10 для JavaScript.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 01/19/2021
 ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.custom: devx-track-js
-ms.openlocfilehash: 2371c789b9e4a9fc70f4207fd8a634e419c97912
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: ddcce3e624de7e8bed62783bdc22c5c4211e19e2
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98599447"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106280111"
 ---
 # <a name="quickstart-manage-blobs-with-javascript-v10-sdk-in-nodejs"></a>Краткое руководство. Управление большими двоичными объектами с помощью пакета SDK для JavaScript версии 10 в Node.js
 

@@ -6,7 +6,6 @@ services: load-balancer
 documentationcenter: na
 author: asudbring
 manager: twooley
-Customer intent: As an IT administrator, I want to configure port forwarding in Azure Load Balancer to remotely connect to VMs in an Azure virtual network.
 ms.service: load-balancer
 ms.devlang: na
 ms.topic: tutorial
@@ -15,12 +14,12 @@ ms.workload: infrastructure-services
 ms.date: 02/26/2019
 ms.author: allensu
 ms.custom: seodec18
-ms.openlocfilehash: 63d1a08dc588f0303ccb1ae13bd4c28af2a393c7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 27851a44dbe3085610fadc8b9bdaf400b4d2876c
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92043659"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106056068"
 ---
 # <a name="tutorial-configure-port-forwarding-in-azure-load-balancer-using-the-portal"></a>Руководство по Настройка перенаправления портов в Azure Load Balancer с помощью портала
 

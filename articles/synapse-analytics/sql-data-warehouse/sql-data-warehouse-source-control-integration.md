@@ -11,10 +11,10 @@ ms.date: 08/23/2019
 ms.author: gaursa
 ms.reviewer: igorstan
 ms.openlocfilehash: 0864ab90f35e4af0443b418bc139ee5f8a7db665
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104585542"
 ---
 # <a name="source-control-integration-for-dedicated-sql-pool-in-azure-synapse-analytics"></a>Интеграция системы управления версиями для выделенного пула SQL в Azure Synapse Analytics

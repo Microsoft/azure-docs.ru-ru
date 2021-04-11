@@ -9,10 +9,10 @@ ms.custom: subject-armqs
 ms.date: 05/26/2020
 ms.author: allensu
 ms.openlocfilehash: e80adc16e08e676ac2daabec01a11c10d537c547
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102562951"
 ---
 # <a name="quickstart-create-a-private-endpoint-by-using-an-arm-template"></a>Краткое руководство. Создание частной конечной точки с помощью шаблона ARM

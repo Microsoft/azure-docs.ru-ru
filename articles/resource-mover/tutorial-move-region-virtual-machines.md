@@ -9,10 +9,10 @@ ms.date: 02/04/2021
 ms.author: raynew
 ms.custom: mvc
 ms.openlocfilehash: 5712448c8c5248d3c84ce43f8a41c669355f1d43
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102565739"
 ---
 # <a name="tutorial-move-azure-vms-across-regions"></a>Руководство по перемещению виртуальных машин Azure между регионами

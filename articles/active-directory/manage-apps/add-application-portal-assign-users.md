@@ -11,10 +11,10 @@ ms.workload: identity
 ms.date: 09/01/2020
 ms.author: kenwith
 ms.openlocfilehash: 53dd2d15565149c3a9888ba063a6194ae033d8e0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "99258377"
 ---
 # <a name="quickstart-assign-users-to-an-app-that-is-using-azure-ad-as-an-identity-provider"></a>Краткое руководство. Назначение пользователей приложению, которое использует Azure AD в качестве поставщика удостоверений

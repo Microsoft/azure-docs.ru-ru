@@ -16,10 +16,10 @@ ms.date: 12/10/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b81f80af69b47152f7111066070e173bb1ede5f4
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101093951"
 ---
 # <a name="tutorial-use-a-linux-vm-system-assigned-managed-identity-to-access-azure-cosmos-db"></a>Руководство по Использование назначаемого системой управляемого удостоверения на виртуальной машине Linux для доступа к Azure Cosmos DB 

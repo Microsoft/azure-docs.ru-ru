@@ -401,6 +401,8 @@
           maintainContext: true
 - name: Справочник
   items:
+    - name: Azure CLI
+      href: /cli/azure/vmss
     - name: Azure PowerShell
       href: /powershell/azure/
     - name: REST
@@ -411,16 +413,11 @@
       displayName: 'samples, policies, definitions'
       href: ./policy-reference.md
 - name: Ресурсы
+- name: Экземпляры
   items:
-    - name: Стратегия развития Azure
-      href: 'https://azure.microsoft.com/roadmap/?category=compute'
-    - name: Цены
+    - name: Варианты приобретения
+      items: null
+    - name: Преимущество гибридного использования Azure
       items:
         - name: Linux
-          href: 'https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/'
-        - name: Windows
-          href: 'https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/windows/'
-    - name: Калькулятор цен
-      href: 'https://azure.microsoft.com/pricing/calculator/'
-    - name: Stack Overflow
-      href: 'https://stackoverflow.com/questions/tagged/azure-vm-scale-set'
+          href: azure-hybrid-benefit-linux.md
