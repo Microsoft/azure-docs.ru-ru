@@ -7,7 +7,6 @@ author: KumudD
 manager: twooley
 editor: ''
 tags: azure-resource-manager
-Customer intent: I want to filter network traffic to virtual machines that perform similar functions, such as web servers.
 ms.assetid: ''
 ms.service: virtual-network
 ms.devlang: azurecli
@@ -17,12 +16,12 @@ ms.workload: infrastructure
 ms.date: 03/30/2018
 ms.author: kumud
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: d2cabecfb2a70e6d325129335c066bb35aeb02ba
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.openlocfilehash: 57657637afd9e3e527942fb262a085fa4b8b053e
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98221907"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106066621"
 ---
 # <a name="filter-network-traffic-with-a-network-security-group-using-the-azure-cli"></a>Фильтрация сетевого трафика с помощью групп безопасности сети, используя Azure CLI
 
@@ -195,7 +194,7 @@ az vm create \
 
 ## <a name="test-traffic-filters"></a>Тестирование фильтров трафика
 
-Создайте сеанс SSH с виртуальной машиной *myVmMgmt* при помощи приведенной ниже команды. Замените *\<publicIpAddress>* общедоступным IP-адресом виртуальной машины. В примере выше используется IP-адрес *13.90.242.231*.
+Создайте сеанс SSH с виртуальной машиной *myVmMgmt* при помощи приведенной ниже команды. Замените *\<publicIpAddress>* общедоступным IP-адресом, который присвоен виртуальной машине. В примере выше используется IP-адрес *13.90.242.231*.
 
 ```bash 
 ssh azureuser@<publicIpAddress>
@@ -229,7 +228,7 @@ sudo apt-get -y install nginx
 curl myVmWeb
 ```
 
-Выйдите из виртуальной машины *myVmMgmt*. Чтобы убедиться, что вы можете получить доступ к веб-серверу *myVmWeb* извне Azure, введите `curl <publicIpAddress>` на вашем компьютере. Подключение будет установлено, поскольку порту 80 разрешено выполнять вход из Интернета в группу безопасности приложений *myAsgWebServers* , в которой находится сетевой интерфейс, подключенный к виртуальной машине *myVmWeb* .
+Выйдите из виртуальной машины *myVmMgmt*. Чтобы убедиться, что вы можете получить доступ к веб-серверу *myVmWeb* извне Azure, введите `curl <publicIpAddress>` на вашем компьютере. Подключение будет установлено успешно, так как через порт 80 разрешено получать входящий трафик из Интернета в группу безопасности приложений *myAsgWebServers*, в которой находится сетевой интерфейс, подключенный к виртуальной машине *myVmWeb*.
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

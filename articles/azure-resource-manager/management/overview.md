@@ -2,14 +2,14 @@
 title: Общие сведения о диспетчере ресурсов Azure
 description: Описывает, как использовать диспетчер ресурсов Azure для развертывания, контроля ресурсов в Azure и управления доступом к ним.
 ms.topic: overview
-ms.date: 09/01/2020
-ms.custom: contperf-fy21q1
-ms.openlocfilehash: fad49db94195bbd2f9e5e32f8596f33fab586752
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.custom: contperf-fy21q1,contperf-fy21q3-portal
+ms.openlocfilehash: 6cd9aa82ad2f8a821ae82a361b3f11b72ca25f7a
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97858524"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105608550"
 ---
 # <a name="what-is-azure-resource-manager"></a>Azure Resource Manager
 
@@ -91,7 +91,7 @@ Azure Resource Manager — это служба развертывания и у
 
 * При удалении группы ресурсов также удаляются все ресурсы в ней. Сведения о том, как Azure Resource Manager управляет этими удалениями, см. в разделе [Группа ресурсов Azure Resource Manager и удаление ресурсов](delete-resource-group.md).
 
-* В каждой группе ресурсов можно развернуть до 800 экземпляров типа ресурсов. Некоторых типов ресурсов [ограничение в 800 экземпляров не касается](resources-without-resource-group-limit.md).
+* В каждой группе ресурсов можно развернуть до 800 экземпляров типа ресурсов. Некоторых типов ресурсов [ограничение в 800 экземпляров не касается](resources-without-resource-group-limit.md). Дополнительные сведения см. в разделе [Ограничения группы ресурсов](azure-subscription-service-limits.md#resource-group-limits).
 
 * Некоторые ресурсы могут существовать за пределами группы ресурсов. Эти ресурсы развертываются в [подписке](../templates/deploy-to-subscription.md), [группе управления](../templates/deploy-to-management-group.md) или [арендаторе](../templates/deploy-to-tenant.md). В этих областях поддерживаются только определенные типы ресурсов.
 
@@ -112,6 +112,8 @@ Azure Resource Manager — это служба развертывания и у
 Эта устойчивость относится к службам, которые получают запросы через Resource Manager. Например, Key Vault получает преимущества от этой устойчивости.
 
 ## <a name="next-steps"></a>Дальнейшие действия
+
+* Дополнительные сведения об ограничениях, применяемых в службах Azure, см. в статье [Подписка Azure, границы, квоты и ограничения службы](azure-subscription-service-limits.md).
 
 * Чтобы узнать о том, как перемещать ресурсы, ознакомьтесь с разделом [Перемещение ресурсов в новую группу ресурсов или подписку](move-resource-group-and-subscription.md).
 

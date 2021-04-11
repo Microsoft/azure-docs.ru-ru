@@ -8,13 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 03/16/2021
 ms.author: alkohli
-Customer intent: As an IT admin, I need to understand how to prepare the portal to deploy Azure Stack Edge Pro so I can use it to transfer data to Azure.
-ms.openlocfilehash: 9ceba84cb3bbe52dc5ba51d0f4945f5bad0a5034
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.openlocfilehash: 0e0d7808e449a6e4f3e341cd40acdc220e65c0ba
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103574002"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106068223"
 ---
 # <a name="tutorial-prepare-to-deploy-azure-stack-edge-pro"></a>Руководство по подготовке к развертыванию Azure Stack Edge Pro  
 
@@ -91,7 +90,7 @@ ms.locfileid: "103574002"
 
 Как существующий клиент Azure Stack Edge Pro используйте следующую процедуру для создания ресурса, если вам нужно заменить существующее устройство или сбросить его настройки.
 
-Если вы новый клиент, мы рекомендуем рассмотреть возможность использования устройств Azure Stack Edge Pro с GPU для рабочих нагрузок. Дополнительные сведения см. в статье [Что такое Azure Stack Edge Pro с GPU](azure-stack-edge-gpu-overview.md). Дополнительные сведения о заказе устройства Azure Stack Edge Pro с GPU, см. в разделе [Создание нового ресурса](azure-stack-edge-gpu-deploy-prep.md?tabs=azure-portal#create-a-new-resource).
+Если вы новый клиент, мы рекомендуем рассмотреть возможность использования устройств Azure Stack Edge Pro с GPU для рабочих нагрузок. Дополнительные сведения см. в статье [Что такое Azure Stack Edge Pro с GPU?](azure-stack-edge-gpu-overview.md). Дополнительные сведения о заказе устройства Azure Stack Edge Pro с GPU, см. в разделе [Создание нового ресурса](azure-stack-edge-gpu-deploy-prep.md?tabs=azure-portal#create-a-new-resource).
 
 Чтобы создать новый ресурс Azure Stack Edge для существующего устройства, выполните следующие действия на портале Azure.
 
