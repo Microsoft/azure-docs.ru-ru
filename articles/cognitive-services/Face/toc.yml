@@ -3,38 +3,28 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Что представляет собой служба "Распознавание лиц"?
+    - name: Общие сведения о Распознавании лиц
       href: Overview.md
+    - name: Цены
+      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/face-api'
     - name: Новые возможности
       href: releasenotes.md
-- name: Краткие руководства
-  items:
-    - name: "Использование клиентской библиотеки или REST\_API"
-      href: Quickstarts/client-libraries.md
-- name: Учебники
-  items:
-    - name: С помощью клиентского пакета SDK
-      items:
-        - name: C#
-          href: Tutorials/FaceAPIinCSharpTutorial.md
-- name: Основные понятия
-  items:
-    - name: Определение лиц
-      href: concepts/face-detection.md
-    - name: Распознавание лиц
-      href: concepts/face-recognition.md
+- name: Краткое руководство по работе с Распознаванием лиц
+  href: Quickstarts/client-libraries.md
+- name: Примеры
+  href: /samples/browse/?products=azure&term=face
 - name: Практические руководства
   items:
-    - name: Распознавание лиц
+    - name: Определение и анализ лиц
       href: Face-API-How-to-Topics/HowtoDetectFacesinImage.md
+    - name: Указание версии модели распознавания лиц
+      href: Face-API-How-to-Topics/specify-recognition-model.md
+    - name: Указание версии модели определения лиц
+      href: Face-API-How-to-Topics/specify-detection-model.md
     - name: Добавление лиц в группу
       href: Face-API-How-to-Topics/how-to-add-faces.md
     - name: Использование атрибута HeadPose
       href: Face-API-How-to-Topics/how-to-use-headpose.md
-    - name: Указание модели распознавания лиц
-      href: Face-API-How-to-Topics/specify-recognition-model.md
-    - name: Указание модели определения лиц
-      href: Face-API-How-to-Topics/specify-detection-model.md
     - name: Уменьшение задержки при использовании службы распознавания лиц
       href: Face-API-How-to-Topics/how-to-mitigate-latency.md
     - name: Использование функции для увеличения масштаба
@@ -43,8 +33,12 @@
       href: Face-API-How-to-Topics/HowtoAnalyzeVideo_Face.md
     - name: Перенос данных распознавания лиц
       href: Face-API-How-to-Topics/how-to-migrate-face-data.md
-    - name: Использование контейнеров
+    - name: Использование контейнера Распознавания лиц
       items:
+        - name: Документация по контейнерам Cognitive Services
+          href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/computer-vision/context/context
+        - name: Обзор контейнеров
+          href: /azure/cognitive-services/cognitive-services-container-support?context=/azure/cognitive-services/computer-vision/context/context
         - name: Установка и запуск контейнеров
           href: face-how-to-install-containers.md
         - name: Настройка контейнеров
@@ -52,49 +46,47 @@
         - name: Использование экземпляров контейнеров
           maintainContext: true
           href: ../containers/azure-container-instance-recipe.md
-        - name: Документация по контейнерам Cognitive Services
-          href: ../containers/index.yml
-- name: Подробный анализ сценария
+- name: Основные понятия
   items:
-    - name: Регистрация Распознавания лиц
+    - name: Определение лиц
+      href: concepts/face-detection.md
+    - name: Распознавание лиц
+      href: concepts/face-recognition.md
+- name: Учебники
+  items:
+    - name: Создание приложения для распознавания лиц
+      href: Tutorials/FaceAPIinCSharpTutorial.md
+    - name: Добавление пользователей в службу "Распознавание лиц"
       items:
-        - name: Обзор
+        - name: Рекомендации по добавлению пользователей
           href: enrollment-overview.md
-        - name: Практические руководства
-          items:
-            - name: Создание приложения регистрации с использованием React
-              href: build-enrollment-app.md
+        - name: Создание приложения React для добавления пользователей
+          href: build-enrollment-app.md
 - name: Справочник
   items:
-    - name: API Распознавания лиц
+    - name: REST API "Распознавание лиц"
       href: APIReference.md
-    - name: Пакеты SDK
-      items:
-        - name: .NET
-          href: /dotnet/api/overview/azure/cognitiveservices/client/faceapi
-        - name: Python
-          href: /python/api/azure-cognitiveservices-vision-face/
-        - name: Java
-          href: /java/api/overview/azure/cognitiveservices/client/faceapi
-        - name: Node.js
-          href: /javascript/api/@azure/cognitiveservices-face
-        - name: Go
-          href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/face'
+    - name: .NET
+      href: /dotnet/api/overview/azure/cognitiveservices/client/faceapi?view=azure-dotnet
+    - name: Java
+      href: /java/api/overview/azure/cognitiveservices/client/faceapi?view=azure-java-stable
+    - name: Node.js
+      href: /javascript/api/@azure/cognitiveservices-face
+    - name: Python
+      href: /python/api/azure-cognitiveservices-vision-face/?view=azure-python
+    - name: Go
+      href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/face'
 - name: Ресурсы
   items:
+    - name: Поддержка регионов
+      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+    - name: Модули Learn
+      href: 'https://docs.microsoft.com/learn/modules/detect-analyze-faces/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/face/context/context
-    - name: Примеры
-      items:
-        - name: Примеры для службы "Распознавание лиц"
-          href: /samples/browse/?products=azure&term=face
-    - name: Цены и ограничения
-      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/face-api'
-    - name: Стратегия развития Azure
-      href: 'https://azure.microsoft.com/updates/?product=cognitive-services'
-    - name: Доступность по регионам
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Соответствие нормативным требованиям
       href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Шифрование
       href: encrypt-data-at-rest.md
+    - name: Обновления Azure
+      href: 'https://azure.microsoft.com/updates/?product=cognitive-services'
