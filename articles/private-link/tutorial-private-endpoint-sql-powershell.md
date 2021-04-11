@@ -9,10 +9,10 @@ ms.date: 10/31/2020
 ms.author: allensu
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 8668bdb9dc391582234bf5741c0dd287d026defd
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102554944"
 ---
 # <a name="tutorial-connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-powershell"></a>Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure с помощью Azure PowerShell

@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 03/31/2020
 ms.author: memildin
 ms.openlocfilehash: 88dc0760f320a99b0cbc99b7637dc34dd11dfecc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103465452"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы 

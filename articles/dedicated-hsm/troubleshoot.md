@@ -13,12 +13,12 @@ ms.topic: how-to
 ms.custom: mvc, seodec18
 ms.date: 03/25/2021
 ms.author: keithp
-ms.openlocfilehash: 11118c9bd745480dc88380e718a9ab348ab1a3e3
-ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
+ms.openlocfilehash: 0791f2e8d5119c2087286a24cf83b4259ee9e7af
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105606952"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105611656"
 ---
 # <a name="troubleshooting-the-azure-dedicated-hsm-service"></a>Устранение неполадок службы "Выделенное устройство HSM Azure"
 
@@ -33,7 +33,7 @@ ms.locfileid: "105606952"
 
 ### <a name="getting-access-to-dedicated-hsm"></a>Получение доступа к выделенному устройству HSM
 
-Сначала определите, какие варианты использования нельзя реализовать с помощью [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview) или [управляемого устройства HSM Azure](https://docs.microsoft.com/en-us/azure/key-vault/managed-hsm/overview). Если после этого вы решите, что требованиям для хранилища ключей будет соответствовать только Выделенное устройство HSM, отправьте запрос на адрес электронной почты HSMrequest@microsoft.com, чтобы запросить доступ. Опишите свое приложение и варианты использования, а также укажите регионы, в которых вы хотели бы использовать устройства HSM, и требуемые объемы ресурсов HSM. Если вы работаете с представителями корпорации Майкрософт, например с менеджером по работе с клиентами или архитектором облачных решений, вы можете включить их в запрос.
+Сначала определите, какие варианты использования нельзя реализовать с помощью [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview) или [управляемого устройства HSM Azure](https://docs.microsoft.com/azure/key-vault/managed-hsm/overview). Если после этого вы решите, что требованиям для хранилища ключей будет соответствовать только Выделенное устройство HSM, отправьте запрос на адрес электронной почты HSMrequest@microsoft.com, чтобы запросить доступ. Опишите свое приложение и варианты использования, а также укажите регионы, в которых вы хотели бы использовать устройства HSM, и требуемые объемы ресурсов HSM. Если вы работаете с представителями корпорации Майкрософт, например с менеджером по работе с клиентами или архитектором облачных решений, вы можете включить их в запрос.
 
 ## <a name="hsm-provisioning"></a>Подготовка устройств HSM
 

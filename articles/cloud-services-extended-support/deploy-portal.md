@@ -8,19 +8,15 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 9c1abe1323bc095fe4dfbfc559ef7e159d1f7532
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 306294cc654e46dbe8af80b25cb9c709071fad20
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98880680"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106166332"
 ---
 # <a name="deploy-a-azure-cloud-services-extended-support-using-the-azure-portal"></a>Развертывание облачной службы Azure (расширенная поддержка) с помощью портала Azure
 В этой статье объясняется, как с помощью портала Azure создать развертывание облачной службы (расширенная поддержка). 
-
-> [!IMPORTANT]
-> Облачные службы (расширенная поддержка) сейчас предоставляются в общедоступной предварительной версии.
-> Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 

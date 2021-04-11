@@ -12,10 +12,10 @@ ms.date: 04/17/2019
 ms.author: pafarley
 ms.custom: seodec18, devx-track-csharp
 ms.openlocfilehash: 0a1878268beb135151a23b87d03839f3a51f4a96
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102432593"
 ---
 # <a name="sample-explore-an-image-processing-app-with-c"></a>Образец. изучение приложения для обработки изображений с использованием C#

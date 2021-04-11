@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 01/27/2021
 ms.author: jeedes
 ms.openlocfilehash: 73f378bb0f71df4df3731a3ef2a1fdb7f8abb4aa
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101653078"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-moveit-transfer---azure-ad-integration"></a>Руководство по интеграции Azure Active Directory с MOVEit Transfer - Azure AD integration
