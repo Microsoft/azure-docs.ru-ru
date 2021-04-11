@@ -1,18 +1,18 @@
 ---
 title: Руководство по разработке базы данных в службе "База данных Azure для PostgreSQL — отдельный сервер" с помощью портала Azure
 description: Это руководство содержит сведения о проектировании первой базы данных в службе "База данных Azure для PostgreSQL — отдельный сервер" с помощью портала Azure.
-author: lfittl-msft
-ms.author: lufittl
+author: sunilagarwal
+ms.author: sunila
 ms.service: postgresql
 ms.custom: tutorial, mvc
 ms.topic: tutorial
 ms.date: 06/25/2019
-ms.openlocfilehash: 179d4124e28abfffa83b16cfdb418d8e860192d8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: dd7ae71d8c3bc5415654527d5a650e0f09a99168
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93337138"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105605821"
 ---
 # <a name="tutorial-design-an-azure-database-for-postgresql---single-server-using-the-azure-portal"></a>Руководство по Разработка базы данных в службе "База данных Azure для PostgreSQL — отдельный сервер" с помощью портала Azure
 

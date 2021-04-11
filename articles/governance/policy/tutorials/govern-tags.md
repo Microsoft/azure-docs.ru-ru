@@ -1,14 +1,14 @@
 ---
 title: Руководство по Администрирование системы управления тегами
 description: С помощью действия изменения в службе "Политика Azure" можно создать и применить модель управления тегами к новым и имеющимся ресурсам.
-ms.date: 10/05/2020
+ms.date: 03/31/2021
 ms.topic: tutorial
-ms.openlocfilehash: 9efeb27151cd3a32741f1bdb6d1d90d3304c5874
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 1e8850dd6fe380b0ea38a2a1722734d917c63d0c
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91876283"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106093288"
 ---
 # <a name="tutorial-manage-tag-governance-with-azure-policy"></a>Руководство по системе управления тегами с помощью Политики Azure
 

@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 02/09/2021
 ms.author: jeedes
 ms.openlocfilehash: 3c8126c051457d740d1a5414a130b4ee3fffcd8c
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104954128"
 ---
 # <a name="tutorial-integrate-ringcentral-with-azure-active-directory"></a>Руководство по Интеграция RingCentral с Azure Active Directory

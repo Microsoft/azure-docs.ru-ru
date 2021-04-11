@@ -5,7 +5,6 @@ description: В этом руководстве описано, как марш�
 services: virtual-network
 documentationcenter: virtual-network
 author: KumudD
-Customer intent: I want to route traffic from one subnet, to a different subnet, through a network virtual appliance.
 ms.service: virtual-network
 ms.devlang: azurecli
 ms.topic: tutorial
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: virtual-network
 ms.workload: infrastructure
 ms.date: 03/16/2021
 ms.author: kumud
-ms.openlocfilehash: f8090ea9c0d307d1bd290c4cf4dac9bfaabf7c4b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7da59e996ec37d3653dbde68c5f56caa9e8261ee
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104576359"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106061916"
 ---
 # <a name="tutorial-route-network-traffic-with-a-route-table-using-the-azure-portal"></a>Руководство по Маршрутизация сетевого трафика с помощью таблицы маршрутов с использованием портала Azure
 
@@ -34,7 +33,9 @@ ms.locfileid: "104576359"
 
 В этом учебнике используется [портал Azure](https://portal.azure.com). Вы также можете использовать [Azure PowerShell](tutorial-create-route-table-powershell.md) или [Azure CLI](tutorial-create-route-table-cli.md).
 
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
+## <a name="prerequisites"></a>Предварительные требования
+
+Для начала работы вам потребуется учетная запись Azure с активной подпиской. Если ее нет, можно создать [учетную запись бесплатно](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
