@@ -6,7 +6,6 @@ services: load-balancer
 documentationcenter: na
 author: asudbring
 manager: KumudD
-Customer intent: I want to create a NAT gateway by using an Azure Resource Manager template so that I can provide outbound connectivity for my virtual machines.
 ms.service: virtual-network
 ms.subservice: nat
 ms.devlang: na
@@ -16,12 +15,12 @@ ms.workload: infrastructure-services
 ms.date: 10/27/2020
 ms.author: allensu
 ms.custom: subject-armqs, devx-track-azurecli
-ms.openlocfilehash: 68e08b0f029e6297beee85135b4af1e4575d5470
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d1d4cf5a5e616db38885077e70add817f26d125a
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97703795"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106060693"
 ---
 # <a name="quickstart-create-a-nat-gateway---arm-template"></a>Краткое руководство. Создание шлюза NAT с помощью шаблона ARM
 

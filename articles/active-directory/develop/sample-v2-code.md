@@ -12,12 +12,12 @@ ms.date: 11/04/2020
 ms.author: marsma
 ms.reviewer: jmprieur
 ms.custom: aaddev, identityplatformtop40
-ms.openlocfilehash: dc740acb366212640015ca0fb527d34fade1097d
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: a19ca14a37bd24e499fdf0681b3510e9a4a8ea3f
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103010768"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106075038"
 ---
 # <a name="microsoft-identity-platform-code-samples-v20-endpoint"></a>Примеры кода для платформы удостоверений Майкрософт (конечная точка версии 2.0)
 
@@ -61,7 +61,7 @@ ms.locfileid: "103010768"
 | -------- | ------------------- | --------------------------------- |
 | ![На этом изображении показан логотип ASP.NET Core](media/sample-v2-code/logo_NETcore.png)</p>ASP.NET Core | [Руководство по входу пользователей в систему для веб-приложений ASP.NET Core](https://aka.ms/aspnetcore-webapp-sign-in) | Тот же пример на этапе [Веб-приложение ASP.NET Core вызывает Microsoft Graph](https://aka.ms/aspnetcore-webapp-call-msgraph)</p>Расширенный пример [Доступ к кэшу маркеров выполнившего вход пользователя из фоновых приложений, интерфейсов API и служб](https://github.com/Azure-Samples/ms-identity-dotnet-advanced-token-cache) |
 | ![На этом изображении показан логотип ASP.NET Framework](media/sample-v2-code/logo_NETframework.png)</p>ASP.NET Core | [Сборник схем для разработчиков, посвященный миграции приложений из AD FS в Azure AD](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad). Узнайте, как безопасно переносить приложения, интегрированные со службами федерации Active Directory (AD FS), в Azure Active Directory (Azure AD). | |
-| ![На этом изображении показан логотип ASP.NET Framework](media/sample-v2-code/logo_NETframework.png)</p> ASP.NET | [Краткое руководство по ASP.NET](https://github.com/AzureAdQuickstarts/AppModelv2-WebApp-OpenIDConnect-DotNet) </p> [dotnet-webapp-openidconnect-v2](https://github.com/azure-samples/active-directory-dotnet-webapp-openidconnect-v2)  |  [dotnet-admin-restricted-scopes-v2](https://github.com/azure-samples/active-directory-dotnet-admin-restricted-scopes-v2) </p> |[msgraph-training-aspnetmvcapp](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp)
+| ![На этом изображении показан логотип ASP.NET Framework](media/sample-v2-code/logo_NETframework.png)</p> ASP.NET | [Краткое руководство по ASP.NET](https://github.com/AzureAdQuickstarts/AppModelv2-WebApp-OpenIDConnect-DotNet) </p> [dotnet-webapp-openidconnect-v2](https://github.com/azure-samples/active-directory-dotnet-webapp-openidconnect-v2)  |  [dotnet-admin-restricted-scopes-v2](https://github.com/azure-samples/active-directory-dotnet-admin-restricted-scopes-v2) </p> [msgraph-training-aspnetmvcapp](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
 | ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  |[Учебник по Java Servlet. Глава 1.1](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью AAD| |
 | ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  |[Учебник по Java Servlet. Глава 1.2](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью B2C |
 | ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  | | [Учебник по Java Servlet. Глава 2.1](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью AAD и графа вызовов|

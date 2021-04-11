@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: cpendle
 ms.custom: ''
-ms.openlocfilehash: 04bbb0465f26e82d247c53e7393c4476b9d36fde
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: d2b80dfa091d6a2b892c8baf8e9c35084c5bee4e
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "100386855"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106076394"
 ---
 # <a name="tutorial-migrate-web-service-from-google-maps"></a>Руководство по Миграция веб-службы из Google Карт
 
@@ -46,11 +46,11 @@ ms.locfileid: "100386855"
 | Геокодирование               | [Поиск](/rest/api/maps/search)                                   |                         
 | Поиск мест           | [Поиск](/rest/api/maps/search)                                   |                         
 | Автозавершение мест      | [Поиск](/rest/api/maps/search)                                   |                         
-| Привязка к дороге            | См. раздел [Вычисление маршрутов и направлений](#calculate-routes-and-directions).            
-| Ограничения скорости            | См. раздел [Обратное геокодирование координат](#reverse-geocode-a-coordinate).                  
+| Привязка к дороге            | См. раздел [Вычисление маршрутов и направлений](#calculate-routes-and-directions).  |        
+| Ограничения скорости            | См. раздел [Обратное геокодирование координат](#reverse-geocode-a-coordinate).         |         
 | Статическая карта              | [Render](/rest/api/maps/render/getmapimage)                       |                         
 | Часовой пояс               | [Часовой пояс](/rest/api/maps/timezone)                              |                         
-| Elevation               | [Высота (предварительная версия)](/rest/api/maps/elevation)                   |                         |
+| Elevation               | [Высота (предварительная версия)](/rest/api/maps/elevation)                   | 
 
 Приведенные ниже API службы в настоящее время недоступны в Azure Maps.
 

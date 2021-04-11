@@ -8,13 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 12/21/2020
 ms.author: alkohli
-Customer intent: As an IT admin, I need to understand how to install Azure Stack Edge Pro in datacenter so I can use it to transfer data to Azure.
-ms.openlocfilehash: 830e0a8733d3f5a49cede09b331dc0298ee1ce4d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a415dba4bb4fd5b95e98ae7c104cae92db27f34c
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97734724"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106060165"
 ---
 # <a name="tutorial-install-azure-stack-edge-pro-with-gpu"></a>Руководство по Установка Azure Stack Edge Pro с GPU
 
@@ -29,7 +28,7 @@ ms.locfileid: "97734724"
 > * Установка устройства в стойку.
 > * Подключение кабелей к устройству
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Ниже приведены предварительные требования для установки физического устройства.
 
@@ -86,7 +85,7 @@ ms.locfileid: "97734724"
 > Для правильной работы устройства Azure Stack Edge Pro должны быть установлены в стойку.
 
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 - Перед началом работы ознакомьтесь с инструкциями по технике безопасности и соответствии природоохранным и нормативным требованиям, изложенными в информационном буклете. Этот буклет поставляется с устройством.
 - Установку направляющих начинайте с нижней части стойки.
