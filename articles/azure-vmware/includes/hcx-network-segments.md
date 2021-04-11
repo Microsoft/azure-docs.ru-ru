@@ -4,10 +4,10 @@ description: Для VMware HCX требуется четыре сети.
 ms.topic: include
 ms.date: 03/13/2021
 ms.openlocfilehash: e9b37c125db82a95c137ede8d642888fba8b6c80
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103622234"
 ---
 <!-- Used in avs-production-ready-deployment.md and tutorial-deploy-vmware-hcx.md -->

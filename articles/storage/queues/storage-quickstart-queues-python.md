@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 — Python
 description: Узнайте, как использовать клиентскую библиотеку Хранилища очередей Azure версии 12 для Python, чтобы создавать очереди и добавлять в них сообщения, а также считывать и удалять сообщения из очереди. Также здесь описано, как удалить очередь.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 12/10/2019
 ms.topic: quickstart
 ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-python
-ms.openlocfilehash: 0eeb1333952533cdf392b93a926f256097557151
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: 1881af372c1f4e1c5cbb4ea7be0ede4c96bbf4ee
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97585502"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106276150"
 ---
 # <a name="quickstart-azure-queue-storage-client-library-v12-for-python"></a>Краткое руководство. Клиентская библиотека Хранилища очередей Azure версии 12 для Python
 
@@ -40,7 +40,7 @@ ms.locfileid: "97585502"
 
 - Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/).
 - Учетная запись хранения Azure — [создайте такую учетную запись](../common/storage-account-create.md).
-- [Python](https://www.python.org/downloads/) 2.7, Python 3.5 или более поздней версии для вашей операционной системы.
+- [Python](https://www.python.org/downloads/) 2.7, 3.6 или более поздней версии для вашей операционной системы.
 
 ## <a name="setting-up"></a>Настройка
 

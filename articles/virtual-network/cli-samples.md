@@ -16,12 +16,12 @@ ms.workload: infrastructure
 ms.date: 07/15/2019
 ms.author: kumud
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 539d11205ffead52d7f40526f2c712e8cf8b5cdd
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 97d63598f6a9cca199779e56cc211b9622117301
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "87501446"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105048839"
 ---
 # <a name="azure-cli-samples-for-virtual-network"></a>Примеры Azure CLI для виртуальной сети
 
@@ -35,4 +35,4 @@ ms.locfileid: "87501446"
 | [Фильтрация входящего и исходящего сетевого трафика виртуальной машины](./scripts/virtual-network-cli-sample-filter-network-traffic.md) | Создание виртуальной сети с интерфейсной и внутренней подсетями. Входящий сетевой трафик в интерфейсной подсети ограничен протоколами HTTP, HTTPS и SSH. Исходящий интернет-трафик из внутренней подсети запрещен. |
 |[Настройка виртуальной сети с двойным стеком (IPv4 и IPv6) и Load Balancer (цен. категория "Базовый")](./scripts/virtual-network-cli-sample-ipv6-dual-stack.md)|Развертывание виртуальной сети с двойным стеком (IPv4 и IPv6), двумя виртуальными машинами и Azure Load Balancer категории "Базовый" с общедоступными IP-адресами IPv4 и IPv6. |
 |[Настройка виртуальной сети с двойным стеком (IPv4 и IPv6) и Load Balancer (цен. категория "Стандартный")](./scripts/virtual-network-cli-sample-ipv6-dual-stack-standard-load-balancer.md)|Развертывает виртуальную сеть с двойным стеком (IPv4 и IPv6), двумя виртуальными машинами и Azure Load Balancer (цен. категория "Стандартный") с общедоступными IP-адресами IPv4 и IPv6. |
-|[Руководство. Создание и проверка шлюза NAT (Azure CLI)](../virtual-network/tutorial-create-validate-nat-gateway-cli.md)|Создайте и проверьте шлюз NAT, используя виртуальную машину в качестве источника и назначения. |
+|[Руководство. Создание и проверка шлюза NAT (Azure CLI)](./tutorial-create-nat-gateway-cli.md)|Создайте и проверьте шлюз NAT, используя виртуальную машину в качестве источника и назначения. |

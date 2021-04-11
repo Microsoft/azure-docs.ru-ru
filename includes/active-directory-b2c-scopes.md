@@ -5,12 +5,12 @@ ms.subservice: B2C
 ms.topic: include
 ms.date: 10/16/2019
 ms.author: mimart
-ms.openlocfilehash: 3ebe1ec4c0292a530e5ef2c754e9b002e931300e
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: bb004afe6cdd6992f742877318426052d1bead6d
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "95994330"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106072837"
 ---
 #### <a name="app-registrations"></a>[Регистрация приложений](#tab/app-reg-ga/) 
 

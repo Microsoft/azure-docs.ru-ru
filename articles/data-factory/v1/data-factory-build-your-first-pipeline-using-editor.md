@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: tutorial
 ms.date: 01/22/2018
 ms.openlocfilehash: 9794aa0750a886803aac3fec7622f6b3770acf9d
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104785586"
 ---
 # <a name="tutorial-build-your-first-data-factory-by-using-the-azure-portal"></a>Руководство по Создание первой фабрики данных с помощью портала Azure

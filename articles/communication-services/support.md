@@ -8,12 +8,12 @@ ms.author: rifox
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 204a7ff77b4dd32ef62e1a06c66d50d7b30fcfc4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e403fb8bcd25d1274eda287bc62465bacdb9b613
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103496139"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105045473"
 ---
 # <a name="help-and-support-options-for-azure-communication-services"></a>Варианты получения справки и поддержки для Служб коммуникации Azure
 
@@ -24,9 +24,9 @@ ms.locfileid: "103496139"
 
 ## <a name="post-a-question-to-microsoft-qa"></a>Публикация вопроса на веб-сайте Microsoft Q&A
 
-Чтобы быстро получать от инженеров корпорации Майкрософт, специалистов Azure MVP или нашего сообщества надежные ответы на вопросы по продуктам или технические вопросы, которые могут у вас возникнуть в отношении Служб коммуникации Azure, обращайтесь к нам на веб-сайте [Microsoft Q&A](https://docs.microsoft.com/answers/products/azure). 
+Чтобы быстро получать от инженеров корпорации Майкрософт, специалистов Azure MVP или нашего сообщества надежные ответы на вопросы по продуктам или технические вопросы, которые могут у вас возникнуть в отношении Служб коммуникации Azure, обращайтесь к нам на веб-сайте [Microsoft Q&A](/answers/products/azure). 
 
-Если вы не нашли решение своей проблемы с помощью функции поиска, опубликуйте свой вопрос на веб-сайте Microsoft Q&A. При публикации вопроса обязательно используйте [тег Служб коммуникации Azure](https://docs.microsoft.com/answers/topics/azure-communication-services.html).
+Если вы не нашли решение своей проблемы с помощью функции поиска, опубликуйте свой вопрос на веб-сайте Microsoft Q&A. При публикации вопроса обязательно используйте [тег Служб коммуникации Azure](/answers/topics/azure-communication-services.html).
 
 ## <a name="post-a-question-on-stack-overflow"></a>Публикация вопроса на Stack Overflow
 

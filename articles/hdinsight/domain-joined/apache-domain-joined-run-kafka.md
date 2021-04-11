@@ -4,12 +4,12 @@ description: 'Учебник: сведения о настройке полит�
 ms.service: hdinsight
 ms.topic: tutorial
 ms.date: 05/19/2020
-ms.openlocfilehash: 552998de23bebd98f56ba28eb6ad581689e52e41
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: bab3df857dfdac3ca3b9193bda1caea0040a4cbb
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98933694"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104866987"
 ---
 # <a name="tutorial-configure-apache-kafka-policies-in-hdinsight-with-enterprise-security-package-preview"></a>Руководство по Настройка политик Apache Kafka в HDInsight с Корпоративным пакетом безопасности (предварительная версия)
 
@@ -33,7 +33,7 @@ ms.locfileid: "98933694"
 
 2. Зарегистрируйтесь, используя свои учетные данные администратора Azure Active Directory (AD). Учетные данные администратора Azure AD отличаются от учетных данных кластера HDInsight или учетных данных SSH узла Linux HDInsight.
 
-   ![Пользовательский интерфейс администратора Apache Ranger для HDInsight](./media/apache-domain-joined-run-kafka/apache-ranger-admin-login.png)
+   :::image type="content" source="./media/apache-domain-joined-run-kafka/apache-ranger-admin-login.png" alt-text="Пользовательский интерфейс администратора Apache Ranger для HDInsight" border="true":::
 
 ## <a name="create-domain-users"></a>Создание пользователей домена
 
@@ -61,7 +61,7 @@ ms.locfileid: "98933694"
    * \* обозначает ноль или более вхождений символов.
    * ? означает один символ
 
-   ![Политика создания пользовательского интерфейса администратора Apache Ranger1](./media/apache-domain-joined-run-kafka/apache-ranger-admin-create-policy.png)
+   :::image type="content" source="./media/apache-domain-joined-run-kafka/apache-ranger-admin-create-policy.png" alt-text="Политика создания пользовательского интерфейса администратора Apache Ranger1" border="true":::
 
    Подождите несколько минут, пока Ranger синхронизируется с Azure AD, если в поле **Выберите пользователя** автоматически не подставится пользователь домена.
 
@@ -76,7 +76,7 @@ ms.locfileid: "98933694"
    |Выберите пользователя  |  marketing_user1 |
    |Разрешения  | публикация, использование, создание |
 
-   ![Политика создания пользовательского интерфейса администратора Apache Ranger2](./media/apache-domain-joined-run-kafka/apache-ranger-admin-create-policy-2.png)  
+   :::image type="content" source="./media/apache-domain-joined-run-kafka/apache-ranger-admin-create-policy-2.png" alt-text="Политика создания пользовательского интерфейса администратора Apache Ranger2" border="true":::  
 
 6. Щелкните **Добавить**, чтобы сохранить политику.
 
@@ -177,7 +177,7 @@ ms.locfileid: "98933694"
 
 8. Просмотрите события доступа к ресурсам аудита из интерфейса Ranger.
 
-   ![События доступа к ресурсам аудита политики в пользовательском интерфейсе Ranger ](./media/apache-domain-joined-run-kafka/apache-ranger-admin-audit.png)
+   :::image type="content" source="./media/apache-domain-joined-run-kafka/apache-ranger-admin-audit.png" alt-text="События доступа к ресурсам аудита политики в пользовательском интерфейсе Ranger" border="true":::
    
 ## <a name="produce-and-consume-topics-in-esp-kafka-by-using-the-console"></a>Создание и использование разделов в ESP Kafka с помощью консоли
 

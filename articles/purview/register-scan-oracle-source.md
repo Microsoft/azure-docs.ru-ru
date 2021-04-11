@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: overview
 ms.date: 2/25/2021
-ms.openlocfilehash: 37f6a779e7dd83a6aa61de9850ad3b49b57393f9
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 76aadd667691e12c61e0e5e13c13ca0241a9f0ce
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103010480"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105045507"
 ---
 # <a name="register-and-scan-oracle-source-preview"></a>Регистрация и сканирование источника Oracle (предварительная версия)
 
@@ -25,7 +25,7 @@ ms.locfileid: "103010480"
 ## <a name="prerequisites"></a>Предварительные требования
 
 1.  Настройте последнюю версию локальной [среды выполнения интеграции](https://www.microsoft.com/download/details.aspx?id=39717).
-    Дополнительные сведения см. в разделе [Создание и настройка локальной среды выполнения интеграции](https://docs.microsoft.com/azure/data-factory/create-self-hosted-integration-runtime).
+    Дополнительные сведения см. в разделе [Создание и настройка локальной среды выполнения интеграции](../data-factory/create-self-hosted-integration-runtime.md).
 
 2.  Убедитесь, что на виртуальной машине с локальной средой выполнения интеграции установлен пакет [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
@@ -105,7 +105,7 @@ ms.locfileid: "103010480"
 
 Для создания и выполнения новой проверки сделайте следующее:
 
-1.  В центре управления щелкните Среды выполнения интеграции. Убедитесь, что локальная среда выполнения интеграции настроена. Если это не так, выполните описанные [здесь](https://docs.microsoft.com/azure/purview/manage-integration-runtimes) действия, чтобы создать локальную среду выполнения интеграции.
+1.  В центре управления щелкните Среды выполнения интеграции. Убедитесь, что локальная среда выполнения интеграции настроена. Если это не так, выполните описанные [здесь](./manage-integration-runtimes.md) действия, чтобы создать локальную среду выполнения интеграции.
 
 2.  Перейдите в раздел **Источники**.
 

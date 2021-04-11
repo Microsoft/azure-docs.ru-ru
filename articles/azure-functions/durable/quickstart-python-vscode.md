@@ -6,10 +6,10 @@ ms.topic: quickstart
 ms.date: 12/23/2020
 ms.reviewer: azfuncdf, antchu
 ms.openlocfilehash: cccb42041ece65ad4f245c28dd7c5cf356d5e63c
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104775159"
 ---
 # <a name="create-your-first-durable-function-in-python"></a>Создание устойчивой функции в Python

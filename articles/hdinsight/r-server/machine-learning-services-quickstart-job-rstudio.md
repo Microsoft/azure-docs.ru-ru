@@ -1,24 +1,24 @@
 ---
-title: Краткое руководство. Использование RStudio Server в службах Машинного обучения для R в Azure HDInsight
+title: Краткое руководство. Использование RStudio Server в Службах машинного обучения для R в Azure HDInsight
 description: В этом кратком руководстве содержатся сведения о выполнении сценария R в кластере служб машинного обучения в Azure HDInsight с помощью сервера RStudio.
 ms.service: hdinsight
 ms.topic: quickstart
 ms.date: 06/19/2019
 ms.custom: mvc
-ms.openlocfilehash: 7604a327c43ed1942d336399b6d8b9dbb1e64d75
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 8abd485bff885868d7865cf273cb161974106013
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98935722"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104862839"
 ---
-# <a name="quickstart-execute-an-r-script-on-an-ml-services-cluster-in-azure-hdinsight-using-rstudio-server"></a>Краткое руководство. Выполнение сценария R в кластере служб машинного обучения в Azure HDInsight с помощью сервера RStudio
+# <a name="quickstart-execute-an-r-script-on-an-ml-services-cluster-in-azure-hdinsight-using-rstudio-server"></a>Краткое руководство. Выполнение скрипта R в кластере Служб машинного обучения в Azure HDInsight с помощью RStudio Server
 
 Службы машинного обучения в Azure HDInsight позволяют сценариям R использовать Apache Spark и Apache Hadoop MapReduce для выполнения распределенных вычислений. Службы машинного обучения управляют выполнением вызовов, задавая контекст вычисления. Для подключения к кластеру и выполнения скриптов на языке R удобно использовать граничный узел кластеров. На граничном узле вы можете выполнять распараллеленные распределенные функции RevoScaleR на ядрах сервера граничного узла. Кроме того, вы можете выполнять эти функции на узлах кластера с помощью контекста вычислений Hadoop Map Reduce или Apache Spark RevoScaleR.
 
 В этом кратком руководстве вы узнаете, как запустить сценарий R с помощью сервера RStudio, демонстрирующий использование Apache Spark для распределенных вычислений сценария R. Вы определите контекст вычислений для локального выполнения вычислений на граничном узле, распределенных по узлам в кластере HDInsight.
 
-## <a name="prerequisite"></a>Предварительные требования
+## <a name="prerequisite"></a>Предварительное требование
 
 Кластер служб машинного обучения в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Службы машинного обучения ML Services** для параметра **Тип кластера**.
 
@@ -34,7 +34,7 @@ https://CLUSTERNAME.azurehdinsight.net/rstudio/
 
 После подключения ваш экран будет похож на этот снимок экрана:
 
-![Общий вид веб-консоли R Studio](./media/ml-services-quickstart-job-rstudio/connect-to-r-studio1.png)
+:::image type="content" source="./media/ml-services-quickstart-job-rstudio/connect-to-r-studio1.png" alt-text="Общий вид веб-консоли R Studio" border="true":::
 
 ## <a name="use-a-compute-context"></a>Использование контекста вычислений
 
@@ -141,7 +141,7 @@ https://CLUSTERNAME.azurehdinsight.net/rstudio/
     
       ---
     
-      Signif. codes:  0 ‘**_’ 0.001 ‘_*’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+      Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
     
       Condition number of final variance-covariance matrix: 11904202
       Number of iterations: 7
@@ -178,7 +178,7 @@ https://CLUSTERNAME.azurehdinsight.net/rstudio/
 В этом кратком руководстве вы узнали, как запустить сценарий R с помощью сервера RStudio, демонстрирующий использование Apache Spark для распределенных вычислений сценария R.  Ознакомьтесь со следующей статьей, содержащей сведения о параметрах, которые доступны для указания необходимости и способа выполнения параллелизации между ядрами граничного узла или кластера HDInsight.
 
 > [!div class="nextstepaction"]
->[Варианты контекста вычислений для Служб машинного обучения в HDInsight](./r-server-compute-contexts.md)
+>[Параметры контекста вычислений для Служб машинного обучения в HDInsight](./r-server-compute-contexts.md)
 
 > [!NOTE]
 > На этой странице описаны функции программы RStudio. Служба Microsoft Azure HDInsight никак не связана с RStudio, Inc.

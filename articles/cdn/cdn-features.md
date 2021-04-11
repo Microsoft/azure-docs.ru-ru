@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 11/15/2019
 ms.author: allensu
 ms.custom: mvc
-ms.openlocfilehash: 3a794d8915c820abecd530911f05ac649e5e538c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 9aa394cda245bd3a457a16c19660bfe08553d14d
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100379919"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106058890"
 ---
 # <a name="what-are-the-comparisons-between-azure-cdn-product-features"></a>Сравнение функций продуктов Azure CDN
 
@@ -71,7 +71,7 @@ ms.locfileid: "100379919"
 | **Простота использования** | **Уровень "Стандартный" от корпорации Майкрософт** | **Akamai уровня "Стандартный"** | **Verizon уровня "Стандартный"** | **Verizon уровня "Премиум"** | 
 | Простая интеграция со службами Azure, такими как [служба хранилища](cdn-create-a-storage-account-with-cdn.md), [веб-приложения](cdn-add-to-web-app.md) и [Службы мультимедиа](../media-services/previous/media-services-portal-manage-streaming-endpoints.md).  | **&#x2713;** |**&#x2713;** |**&#x2713;** |**&#x2713;** |
 | Управление с помощью [REST API](/rest/api/cdn/), [.NET](cdn-app-dev-net.md), [Node.js](cdn-app-dev-node.md) или [PowerShell](cdn-manage-powershell.md)  | **&#x2713;** |**&#x2713;** |**&#x2713;** |**&#x2713;** |
-| [Типы сжатия MIME](./cdn-improve-performance.md)  |Только по умолчанию |Настраивается |Настраивается  |Настраивается  |
+| [Типы сжатия MIME](./cdn-improve-performance.md)  |Настраивается |Настраивается |Настраивается  |Настраивается  |
 | Кодирование сжатия  |gzip, brotli |gzip |GZIP, DEFLATE, BZIP2, BROTLI  |GZIP, DEFLATE, BZIP2, BROTLI  |
 
 ## <a name="migration"></a>Миграция
