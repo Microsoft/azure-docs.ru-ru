@@ -6,12 +6,12 @@ ms.author: flborn
 ms.date: 06/15/2020
 ms.topic: tutorial
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 3370aac242fb47a133a5f7d6dc9b3444c65e3691
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.openlocfilehash: d8784bc4744e2d4beb6a72fdc0df0fd0b32346f9
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103573121"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105605014"
 ---
 # <a name="tutorial-viewing-a-remotely-rendered-model"></a>Руководство по Просмотр модели удаленной отрисовки
 
@@ -33,10 +33,7 @@ ms.locfileid: "103573121"
 * Windows SDK 10.0.18362.0 [(скачать)](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 * Последняя версия Visual Studio 2019 [(скачать)](https://visualstudio.microsoft.com/vs/older-downloads/).
 * GIT [(скачать)](https://git-scm.com/downloads).
-* Unity, последняя версия 2019.3; рекомендуем использовать для этого Unity Hub [(скачать)](https://unity3d.com/get-unity/download)
-  * Установите следующие модули в Unity:
-    * **UWP** — обеспечивает поддержку для создания приложений универсальной платформы Windows;
-    * **IL2CPP** — обеспечивает поддержку сборки для Windows (IL2CPP).
+* Unity (поддерживаемые версии см. в статье [Системные требования](../../../overview/system-requirements.md#unity)).
 * Средний уровень знания Unity и языка C# (например, умение создавать скрипты и объекты, использовать префабы, настраивать события Unity и т. д.).
 
 ## <a name="provision-an-azure-remote-rendering-arr-instance"></a>Подготовка экземпляра Удаленной отрисовки Azure
@@ -428,8 +425,28 @@ public class RemoteRenderingCoordinator : MonoBehaviour
 
     private async Task<bool> IsSessionAvailable(string sessionID)
     {
-        var allSessions = await ARRSessionService.Client.GetCurrentRenderingSessionsAsync();
-        return allSessions.SessionProperties.Any(x => x.Id == sessionID && (x.Status == RenderingSessionStatus.Ready || x.Status == RenderingSessionStatus.Starting));
+        bool sessionAvailable = false;
+        try
+        {
+            RenderingSessionPropertiesArrayResult result = await ARRSessionService.Client.GetCurrentRenderingSessionsAsync();
+            if (result.ErrorCode == Result.Success)
+            {
+                RenderingSessionProperties[] properties = result.SessionProperties;
+                if (properties != null)
+                {
+                    sessionAvailable = properties.Any(x => x.Id == sessionID && (x.Status == RenderingSessionStatus.Ready || x.Status == RenderingSessionStatus.Starting));
+                }
+            }
+            else
+            {
+                Debug.LogError($"Failed to get current rendering sessions. Error: {result.Context.ErrorMessage}");
+            }
+        }
+        catch (RRException ex)
+        {
+            Debug.LogError($"Failed to get current rendering sessions. Error: {ex.Message}");
+        }
+        return sessionAvailable;
     }
 
     /// <summary>
@@ -756,7 +773,7 @@ private void LateUpdate()
 1. Создает [удаленную сущность](../../../concepts/entities.md).
 1. Создайте локальный игровой объект для представления удаленной сущности.
 1. Настраивает локальный игровой объект для синхронизации своего состояния (т. е. преобразования) с каждым кадром удаленной сущности.
-1. Задает имя и добавляет [**WorldAnchor**](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html), чтобы способствовать стабилизации.
+1. Задает имя и добавляет [**WorldAnchor**](https://docs.unity3d.com/550/Documentation/ScriptReference/VR.WSA.WorldAnchor.html), чтобы способствовать стабилизации.
 1. Загружает данные модели из Хранилища BLOB-объектов в удаленную сущность.
 1. Возвращает родительскую сущность для ссылки на нее в дальнейшем.
 

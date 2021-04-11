@@ -5,14 +5,14 @@ author: christopheranderson
 ms.service: cosmos-db
 ms.subservice: cosmosdb-graph
 ms.topic: overview
-ms.date: 11/25/2020
+ms.date: 03/22/2021
 ms.author: chrande
-ms.openlocfilehash: 806904943f4e4a20734d595f835dc9450afdded5
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: ffe11fafa6ba217572f9d12d40324a5201b62630
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100547285"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104801695"
 ---
 # <a name="introduction-to-gremlin-api-in-azure-cosmos-db"></a>Общие сведения об API Gremlin в Azure Cosmos DB
 [!INCLUDE[appliesto-gremlin-api](includes/appliesto-gremlin-api.md)]
@@ -26,11 +26,14 @@ ms.locfileid: "100547285"
 Gremlin API Azure Cosmos DB объединяет мощь алгоритмов базы данных графов с хорошо масштабируемой управляемой инфраструктурой, обеспечивая уникальное гибкое решение для наиболее распространенных проблем с данными, связанных с отсутствием гибкости и реляционных подходов.
 
 > [!NOTE]
-> В API Gremlin Azure Cosmos DB теперь доступен [режим бессерверной емкости](serverless.md).
+> Обработчик графа Azure Cosmos DB соответствует спецификации Apache TinkerPop. Но есть некоторые различия в особенностях реализации Azure Cosmos DB. Некоторые функции, поддерживаемые Apache TinkerPop, недоступны в Azure Cosmos DB. Дополнительные сведения о неподдерживаемых функциях см. в статье [Поддержка графов на языке Gremlin в Azure Cosmos DB и совместимость с функциями TinkerPop](gremlin-support.md).
 
 ## <a name="features-of-azure-cosmos-dbs-gremlin-api"></a>Функции API Gremlin в Azure Cosmos DB
- 
+
 База данных Azure Cosmos DB является полностью управляемой базой данных графа, которая обеспечивает глобальное распределение, гибкое масштабирование хранилища и пропускной способности, автоматическое индексирование и возможность выполнять запросы, настраиваемые уровни согласованности, а также поддержку стандартной платформы вычисления графа TinkerPop.
+
+> [!NOTE]
+> В API Gremlin Azure Cosmos DB теперь доступен [режим бессерверной емкости](serverless.md).
 
 Ниже перечислены отличительные особенности, которые предлагает Azure Cosmos DB Gremlin API.
 

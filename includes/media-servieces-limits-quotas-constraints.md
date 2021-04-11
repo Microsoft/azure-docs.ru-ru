@@ -4,12 +4,12 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/26/2020
 ms.author: inhenkel
-ms.openlocfilehash: 59ff0ba854fa609e6d29f3473f662a89ab5f3dbc
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 419d8d0cd20c13bffdd192060d81975ee94b47fe
+ms.sourcegitcommit: 9f4510cb67e566d8dad9a7908fd8b58ade9da3b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "95559998"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106126065"
 ---
 > [!NOTE]
 > Чтобы запросить увеличение квоты для нефиксированных ресурсов, создайте запрос в службу поддержки. Не создавайте дополнительные учетные записи Служб мультимедиа Azure, пытаясь увеличить квоту.
@@ -66,9 +66,9 @@ ms.locfileid: "95559998"
 | --- | --- |
 | Число трансляций <sup>(4)</sup> на учетную запись Служб мультимедиа |5|
 | Число выводов трансляции на трансляцию |3<sup>(5)</sup> |
-| Максимальная длительность вывода при трансляции | [Размер окна DVR](../articles/media-services/latest/live-event-cloud-dvr.md) |
+| Максимальная длительность вывода при трансляции | [Размер окна DVR](../articles/media-services/latest/live-event-cloud-dvr-time-how-to.md) |
 
-<sup>4</sup> Подробные сведения об ограничениях трансляции см. в статье [Сравнение типов трансляции](../articles/media-services/latest/live-event-types-comparison.md).
+<sup>4</sup> Подробные сведения об ограничениях трансляции см. в статье [Сравнение типов трансляции](../articles/media-services/latest/live-event-types-comparison-reference.md).
 
 <sup>5</sup> Вывод трансляции запускается при создании и останавливается при удалении.
 

@@ -9,14 +9,14 @@ ms.service: cognitive-search
 ms.topic: tutorial
 ms.date: 01/23/2021
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 4bda56f3037469477ddfe059dd20c14cd34586d8
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.openlocfilehash: 6cbfa01788f1897264b4197798aa5879cf724db3
+ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
-ms.locfileid: "98745722"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104770960"
 ---
-# <a name="tutorial-ai-generated-searchable-content-from-azure-blobs-using-the-net-sdk"></a>Руководство по Работа с созданным ИИ содержимым с возможностью поиска из больших двоичных объектов Azure с использованием пакета SDK для .NET
+# <a name="tutorial-use-net-and-ai-to-generate-searchable-content-from-azure-blobs"></a>Руководство. Использование .NET и искусственного интеллекта для создания доступного для поиска содержимого на основе BLOB-объектов Azure
 
 Если у вас есть неструктурированный текст или изображения в хранилище BLOB-объектов Azure, [конвейер обогащения с помощью искусственного интеллекта](cognitive-search-concept-intro.md) поможет извлекать информацию и создавать содержимое для сценариев полнотекстового поиска и интеллектуального анализа. 
 
@@ -48,7 +48,7 @@ ms.locfileid: "98745722"
 > [!Note]
 > Для выполнения инструкций из этого руководства вы можете использовать бесплатную версию службы поиска. В бесплатной версии вы можете использовать не более трех индексов, трех индексаторов и трех источников данных. В этом руководстве создается по одному объекту из каждой категории. Перед началом работы убедитесь, что у службы есть достаточно места, чтобы принять новые ресурсы.
 
-## <a name="download-sample-data"></a>Скачивание демонстрационных данных
+## <a name="download-sample-data"></a>Загрузка примера данных
 
 Пример данных состоит из 14 файлов содержимого смешанного типа, которые будут отправлены в хранилище BLOB-объектов Azure на более позднем этапе.
 

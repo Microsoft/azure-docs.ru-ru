@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/04/2021
 ms.author: lajanuar
 ms.custom: devx-track-python, devx-track-js
-ms.openlocfilehash: c04bac76453d565abb99a971386b9ce0461b88ae
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 6ec951e57b40ae1440f541c02b26e7788b3cf151
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172085"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105043739"
 ---
 # <a name="tutorial-build-a-flask-app-with-azure-cognitive-services"></a>Руководство по Создание приложения Flask в Azure Cognitive Services
 
@@ -49,7 +49,7 @@ Flask — это микроплатформа для создания веб-п
 
 Давайте перечислим программное обеспечение и ключи подписки, которые вам потребуются в этом руководстве.
 
-* [Python 3.5.2 или последующей версии](https://www.python.org/downloads/).
+* [Python 3.6 или более поздней версии](https://www.python.org/downloads/).
 * [Средства Git](https://git-scm.com/downloads).
 * Среда разработки или редактор кода, например [Visual Studio Code](https://code.visualstudio.com/) или [Atom](https://atom.io/).  
 * Браузер [Chrome](https://www.google.com/chrome/browser/) или [Firefox](https://www.mozilla.org/firefox).
@@ -409,7 +409,7 @@ Flask предоставляет вспомогательные функции, 
    </div>
    ```
 
-На следующем этапа мы напишем код JavaScript. Это связующее звено между кодом HTML и маршрутом Flask.
+На следующем этапе мы напишем код JavaScript. Это связующее звено между кодом HTML и маршрутом Flask.
 
 ### <a name="create-mainjs"></a>Создайте `main.js`  
 
