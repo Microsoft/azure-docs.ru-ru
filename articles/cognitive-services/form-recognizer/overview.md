@@ -11,12 +11,12 @@ ms.date: 03/15/2021
 ms.author: lajanuar
 ms.custom: cog-serv-seo-aug-2020
 keywords: автоматическая обработка данных, обработка документов, автоматическая запись данных, обработка форм
-ms.openlocfilehash: 4465f88e3b0ccab8eace1936f426af8dd32af27b
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 8d6c2ea760b85e3170b26c63a28d4ac2b3a2ef5a
+ms.sourcegitcommit: c8b50a8aa8d9596ee3d4f3905bde94c984fc8aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104872257"
+ms.lasthandoff: 03/28/2021
+ms.locfileid: "105639451"
 ---
 # <a name="what-is-form-recognizer"></a>Что такое Распознаватель документов?
 
@@ -185,5 +185,5 @@ ms.locfileid: "104872257"
 
 Воспользуйтесь нашим веб-инструментом и кратким руководством для получения дополнительных сведений о службе Распознавателя документов.
 
-* [**Инструмент "Распознаватель документов"**](https://fott-preview.microsoft.com/)
+* [**Инструмент "Распознаватель документов"**](https://fott-preview.azurewebsites.net/)
 * [**Краткое руководство. Использование клиентской библиотеки или REST API Распознавателя документов**](quickstarts/client-library.md)

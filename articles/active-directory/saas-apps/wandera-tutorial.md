@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 08/27/2020
 ms.author: jeedes
-ms.openlocfilehash: d13619b818e18c64d9882f9e3181824173403859
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.openlocfilehash: 383b49a7363fdca9327d419f5bed092d489a95d5
+ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96181396"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104951816"
 ---
 # <a name="tutorial-integrate-wandera-radar-admin-with-azure-active-directory"></a>Руководство по интеграции Wandera RADAR Admin с Azure Active Directory
 
@@ -82,7 +82,8 @@ ms.locfileid: "96181396"
     В текстовом поле **URL-адрес ответа** введите URL-адрес в следующем формате: `https://radar.wandera.com/saml/acs/<tenant id>`.
 
     > [!NOTE]
-    > Это значение приведено для примера. Вместо него нужно указать фактический URL-адрес ответа. Чтобы получить это значение, обратитесь к [группе поддержки клиентов Wandera RADAR Admin](https://www.wandera.com/about-wandera/contact/#supportsection). Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
+    > Это значение приведено для примера. Вместо него нужно указать фактический URL-адрес ответа. Чтобы получить это значение, обратитесь к [группе поддержки клиентов Wandera RADAR Admin](https://www.wandera.com/about-wandera/contact/#supportsection). Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure. Аккуратно замените часть <tenant id> указанного выше URL-адреса на идентификатор клиента, который отображается на странице **Settings** > **Administration** > **Single Sign-On** (Параметры > Администрирование > Единый вход) в учетной записи Wandera.
+
 
 1. На странице **Настройка единого входа с помощью SAML** в разделе **Сертификат подписи SAML** найдите элемент **XML метаданных федерации** и нажмите кнопку **Скачать**, чтобы скачать сертификат и сохранить его на компьютере.
 

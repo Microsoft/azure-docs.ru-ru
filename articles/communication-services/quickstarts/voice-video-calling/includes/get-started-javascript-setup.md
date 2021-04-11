@@ -2,14 +2,14 @@
 author: mikben
 ms.service: azure-communication-services
 ms.topic: include
-ms.date: 9/11/2020
+ms.date: 03/10/2021
 ms.author: mikben
-ms.openlocfilehash: 90bc9def9c1a78799f4931b58ad0a661602985e3
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: 4a493d5f0d34cd4621d55c0371036c03e267c466
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98013198"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105108306"
 ---
 ## <a name="setting-up"></a>Настройка
 
@@ -29,7 +29,7 @@ npm init -y
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Используйте команду `npm install`, чтобы установить клиентскую библиотеку Служб коммуникации для реализации вызовов на JavaScript.
+Используйте команду `npm install`, чтобы установить пакет SDK Служб коммуникации Azure для реализации вызовов на JavaScript.
 
 ```console
 npm install @azure/communication-common --save

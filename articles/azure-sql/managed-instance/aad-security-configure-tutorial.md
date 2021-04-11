@@ -10,12 +10,12 @@ author: GitHubMirek
 ms.author: mireks
 ms.reviewer: vanto
 ms.date: 11/06/2019
-ms.openlocfilehash: 9161bf4f99ddfed479451d2091458ab309aa2c17
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 50544507f9d83c216bb6c18e004c5ce7ad1ca346
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92788627"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105639857"
 ---
 # <a name="tutorial-security-in-azure-sql-managed-instance-using-azure-ad-server-principals-logins"></a>Руководство по обеспечению безопасности Управляемого экземпляра SQL Azure с помощью субъектов сервера (имен для входа) Azure AD
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -106,7 +106,7 @@ ms.locfileid: "92788627"
 
     ![Снимок экрана: вкладка "Результаты" в обозревателе объектов SSMS со значениями в полях name, principal_id, sid, type и type_desc для добавленного имени для входа](./media/aad-security-configure-tutorial/native-login.png)
 
-Дополнительные сведения можно найти в разделе [CREATE LOGIN (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current).
+Дополнительные сведения можно найти в разделе [CREATE LOGIN (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
 
 ## <a name="grant-permissions-to-create-logins"></a>Предоставление прав для создания имен для входа
 
@@ -182,7 +182,7 @@ ms.locfileid: "92788627"
     GO
     ```
 
-1. Создайте базу данных в управляемом экземпляре с помощью синтаксиса [CREATE DATABASE](/sql/t-sql/statements/create-database-transact-sql?view=azuresqldb-mi-current). Эта база данных будет использоваться для проверки имен для входа пользователей в следующем разделе.
+1. Создайте базу данных в управляемом экземпляре с помощью синтаксиса [CREATE DATABASE](/sql/t-sql/statements/create-database-transact-sql?view=azuresqldb-mi-current&preserve-view=true). Эта база данных будет использоваться для проверки имен для входа пользователей в следующем разделе.
     1. В **обозревателе объектов** щелкните сервер правой кнопкой мыши и выберите **Создать запрос**.
     1. В окне запроса создайте базу данных с именем **MyMITestDB**, используя следующий синтаксис.
 
@@ -264,7 +264,7 @@ ms.locfileid: "92788627"
     > [!IMPORTANT]
     > При создании **пользователя** на основе субъекта сервера (имени для входа) Azure AD необходимо указать user_name, совпадающее с login_name **имени для входа**.
 
-    Дополнительные сведения можно найти в статье [CREATE USER (Transact-SQL)](/sql/t-sql/statements/create-user-transact-sql?view=azuresqldb-mi-current).
+    Дополнительные сведения можно найти в статье [CREATE USER (Transact-SQL)](/sql/t-sql/statements/create-user-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
 
 1. В окне нового запроса создайте тестовую таблицу, используя следующую команду T-SQL:
 

@@ -7,18 +7,18 @@ ms.author: andyriv
 ms.date: 2/16/2021
 ms.topic: tutorial
 ms.service: iot-hub-device-update
-ms.openlocfilehash: 0128d0de4f078b62bc9571c8758d80cb26585354
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 7facb74cd407c576b2a7b119f19427dcd185f04e
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102615386"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105568823"
 ---
 # <a name="microsoft-connected-cache-preview-deployment-scenario-sample-two-level-nested-azure-iot-edge-gateway-with-outbound-unauthenticated-proxy"></a>Пример сценария развертывания для Подключенного кэша Майкрософт (предварительная версия): шлюз Azure IoT Edge с двумя уровнями вложенности с исходящим непроверяемым прокси-сервером
 
 В соответствии с приведенной ниже схемой в этом сценарии имеются шлюз Azure IoT Edge и нижестоящее устройство Azure IoT Edge, один шлюз Azure IoT Edge является родительским по отношению к другому шлюзу Azure IoT Edge, а также есть прокси-сервер в демилитаризованной зоне ИТ. Ниже приведен пример переменных среды Подключенного кэша Майкрософт (MCC), которые следует задать в пользовательском интерфейсе портала Azure для обоих модулей MCC, развернутых на шлюзах Azure IoT Edge. В этом примере демонстрируется конфигурация с двумя уровнями шлюзов Azure IoT Edge, но Подключенный кэш Майкрософт поддерживает любую глубину вложенности вышестоящих узлов. Параметры создания контейнера MCC такие же, как в предыдущих примерах.
 
-Дополнительные сведения о настройке многоуровневых развертываний шлюзов Azure IoT Edge см. в документации [Подключение нижестоящих устройств IOT Edge — Azure IOT Edge](https://docs.microsoft.com/azure/iot-edge/how-to-connect-downstream-iot-edge-device?view=iotedge-2020-11&tabs=azure-portal&preserve-view=true). Кроме того, обратите внимание: при развертывании Azure IoT Edge, Подключенного кэша Майкрософт и пользовательских модулей все модули должны находиться в одном реестре контейнеров.
+Дополнительные сведения о настройке многоуровневых развертываний шлюзов Azure IoT Edge см. в документации [Подключение нижестоящих устройств IOT Edge — Azure IOT Edge](../iot-edge/how-to-connect-downstream-iot-edge-device.md?preserve-view=true&tabs=azure-portal&view=iotedge-2020-11). Кроме того, обратите внимание: при развертывании Azure IoT Edge, Подключенного кэша Майкрософт и пользовательских модулей все модули должны находиться в одном реестре контейнеров.
 
 На схеме ниже показан следующий сценарий: один шлюз Azure IoT Edge с прямым доступом к ресурсам CDN является родительским для другого шлюза Azure IoT Edge, который выступает в качестве родителя для конечного устройства Azure IoT, например Raspberry Pi. Возможность подключения к ресурсам CDN в Интернете есть только у родительского шлюза Azure IoT Edge, а дочерний шлюз Azure IoT Edge и устройство Azure IoT изолированы от Интернета. 
 
@@ -70,7 +70,7 @@ ms.locfileid: "102615386"
 ## <a name="child-gateway-configuration"></a>Настройка дочернего шлюза
 
 >[!Note]
->Если в вашем собственном частном реестре есть реплицированные контейнеры, используемые в конфигурации, потребуется внести изменения в параметры config.toml и параметры среды выполнения в развертывании модуля. Дополнительные сведения см. в руководстве [Создание иерархии устройств IoT Edge — Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-nested-iot-edge?view=iotedge-2020-11&tabs=azure-portal&preserve-view=true#deploy-modules-to-the-lower-layer-device).
+>Если в вашем собственном частном реестре есть реплицированные контейнеры, используемые в конфигурации, потребуется внести изменения в параметры config.toml и параметры среды выполнения в развертывании модуля. Дополнительные сведения см. в руководстве [Создание иерархии устройств IoT Edge — Azure IoT Edge](../iot-edge/tutorial-nested-iot-edge.md?preserve-view=true&tabs=azure-portal&view=iotedge-2020-11#deploy-modules-to-the-lower-layer-device).
 
 1. Измените путь к образу для агента Edge, как показано в этом примере:
 

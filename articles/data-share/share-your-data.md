@@ -5,13 +5,13 @@ author: jifems
 ms.author: jife
 ms.service: data-share
 ms.topic: tutorial
-ms.date: 11/12/2020
-ms.openlocfilehash: 89c2a725b853b5a2a7578dccc1fd503917e12962
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 03/24/2021
+ms.openlocfilehash: 8e149270d8f98cbf72d3864d238a3d8ddfd61c67
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94659630"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105639538"
 ---
 # <a name="tutorial-share-data-using-azure-data-share"></a>Руководство по Совместное использование данных с помощью Azure Data Share  
 
@@ -42,23 +42,10 @@ ms.locfileid: "94659630"
 Ниже приведен список предварительных условий для предоставления общего доступа к данным из источника SQL. 
 
 #### <a name="prerequisites-for-sharing-from-azure-sql-database-or-azure-synapse-analytics-formerly-azure-sql-dw"></a>Предварительные требования для предоставления общего доступа к данным Базы данных SQL Azure или Azure Synapse Analytics (ранее — хранилище данных SQL Azure)
-Для настройки необходимых компонентов cм. [ролик с пошаговыми инструкциями](https://youtu.be/hIE-TjJD8Dc).
 
 * База данных SQL Azure или Azure Synapse Analytics (ранее — хранилище данных SQL Azure) с таблицами и представлениями, к которым вы хотите предоставить общий доступ.
 * Разрешение на запись в базы данных на сервере SQL, которое присутствует в *Microsoft.Sql/servers/databases/write*. Это разрешение назначено роли **участника**.
-* Разрешение на доступ управляемого удостоверения Data Share к базе данных. Это можно обеспечить следующим образом. 
-    1. На портале Azure перейдите к SQL Server и назначьте себе роль **администратора Azure Active Directory**.
-    1. Подключитесь к Базе данных или Хранилищу данных SQL Azure с помощью [редактора запросов](../azure-sql/database/connect-query-portal.md#connect-using-azure-active-directory) или SQL Server Management Studio, выполнив проверку подлинности в Azure Active Directory. 
-    1. Выполните указанный ниже сценарий, чтобы добавить управляемое удостоверение для ресурса Data Share в качестве db_datareader. Необходимо подключиться с помощью Active Directory, а не аутентификации SQL Server. 
-    
-        ```sql
-        create user "<share_acct_name>" from external provider;     
-        exec sp_addrolemember db_datareader, "<share_acct_name>"; 
-        ```                   
-       Обратите внимание на то, что *<share_acc_name>* — это имя вашего ресурса Data Share. Если вы еще не создали ресурс Data Share, вы можете вернуться к этому требованию позже.  
-
-* Пользователь Базы данных SQL Azure с доступом **db_datareader** для навигации и выбора таблиц и/или представлений, к которым необходимо предоставить общий доступ. 
-
+* **Администратор Azure Active Directory** для сервера SQL.
 * Доступ к брандмауэру SQL Server. Это можно обеспечить следующим образом. 
     1. На портале Azure перейдите к SQL Server. Выберите *Брандмауэры и виртуальные сети* в левой области навигации.
     1. Выберите значение **Да** для параметра *Разрешить доступ к серверу службам и ресурсам Azure*.
@@ -90,7 +77,6 @@ ms.locfileid: "94659630"
 ### <a name="share-from-azure-data-explorer"></a>Предоставление общего доступа к данным из Azure Data Explorer
 * Кластер Azure Data Explorer с базами данных, к которым вы хотите предоставить общий доступ.
 * Разрешение на запись в кластер Azure Data Explorer, имеющийся в *Microsoft.Kusto/clusters/write*. Это разрешение назначено роли **участника**.
-* Разрешение на добавление назначения ролей в кластер Azure Data Explorer *Microsoft.Authorization/role assignments/write*. Это разрешение назначено роли **владельца**.
 
 ## <a name="sign-in-to-the-azure-portal"></a>Вход на портал Azure
 
@@ -186,7 +172,7 @@ ms.locfileid: "94659630"
 
     ![Добавление наборов данных в общий ресурс](./media/datasets.png "Наборы данных")
 
-1. Выберите тип набора данных, который хотите добавить. Вы увидите другой список типов наборов данных в зависимости от типа ресурса (моментальный снимок или на странице), который вы выбрали на предыдущем этапе. При предоставлении общего доступа к данным из Базы данных SQL Azure (ранее — хранилище данных SQL Azure) или Azure Synapse Analytics вам будет предложено ввести учетные данные SQL, чтобы отобразить таблицы.
+1. Выберите тип набора данных, который хотите добавить. Вы увидите другой список типов наборов данных в зависимости от типа ресурса (моментальный снимок или на странице), который вы выбрали на предыдущем этапе. При предоставлении общего доступа к данным из Базы данных SQL Azure или Azure Synapse Analytics (ранее — Хранилище SQL Azure) вам будет предложено указать метод аутентификации, чтобы отобразить таблицы. Выберите значение "Аутентификация AAD" и установите флажок **Разрешить Data Share выполнять указанный выше скрипт create user от моего имени**. 
 
     ![AddDatasets](./media/add-datasets.png "Добавление наборов данных")    
 
