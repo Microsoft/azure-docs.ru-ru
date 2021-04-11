@@ -14,12 +14,12 @@ ms.author: curtand
 ms.reviewer: krbain
 ms.custom: it-pro;seo-update-azuread-jan
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc891a7b07305fc0ef55376d7b6fbb262d740bb5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4d498fb4efb3de316981963ee9606255e5b1450a
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96547497"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106056969"
 ---
 # <a name="tutorial-add-or-remove-group-members-automatically"></a>Руководство по Автоматическое добавление или удаление участников группы
 

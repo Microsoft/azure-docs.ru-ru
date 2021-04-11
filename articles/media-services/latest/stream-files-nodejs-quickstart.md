@@ -11,12 +11,12 @@ ms.workload: media
 ms.topic: tutorial
 ms.date: 02/17/2021
 ms.author: inhenkel
-ms.openlocfilehash: b7efa37747e6d116b4cf26b4cf54377037f22cdd
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 5bb061af37f6f6d7e6e27cf25f0faa63bca7353c
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102212762"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106109192"
 ---
 # <a name="how-to-encode-and-stream-video-files-with-nodejs"></a>Как выполнять кодирование и потоковую передачу видеофайлов с помощью Node.JS
 
@@ -58,7 +58,7 @@ ms.locfileid: "102212762"
 
 Этот пример выполняет следующие действия:
 
-1. Создает **преобразование** с [предустановкой кодирования с учетом содержимого](./content-aware-encoding.md). Сначала он проверяет, существует ли указанное преобразование.
+1. Создает **преобразование** с [предустановкой кодирования с учетом содержимого](./encode-content-aware-concept.md). Сначала он проверяет, существует ли указанное преобразование.
 1. Создает выходной **ресурс**, который используется **заданием** кодирования для размещения входных данных.
 1. При необходимости отправляет локальный файл с помощью пакета SDK хранилища BLOB-объектов.
 1. Создает входные данные для **задания**, основанные на URL-адресе HTTPS или отправленном файле.
@@ -71,7 +71,7 @@ ms.locfileid: "102212762"
 
 ## <a name="run-the-sample"></a>Запуск примера
 
-1. Приложение загружает закодированные файлы. Создайте папку для выходных файлов и измените значение переменной **outputFolder** в файле [index.js](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/master/AMSv3Samples/StreamFilesSample/index.js#L59). По умолчанию установлено значение Temp.
+1. Приложение загружает закодированные файлы. Создайте папку для выходных файлов и измените значение переменной **outputFolder** в файле [index.js](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AMSv3Samples/StreamFilesSample/index.ts#L59). По умолчанию установлено значение Temp.
 1. Откройте **командную строку** и перейдите в каталог с примером.
 1. Перейдите в папку AMSv3Samples.
 

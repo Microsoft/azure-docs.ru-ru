@@ -7,7 +7,6 @@ author: KumudD
 manager: mtillman
 editor: ''
 tags: azure-resource-manager
-Customer intent: I want only resources in a virtual network subnet to access an Azure PaaS resource, such as an Azure Storage account.
 ms.assetid: ''
 ms.service: virtual-network
 ms.devlang: na
@@ -16,12 +15,12 @@ ms.tgt_pltfrm: virtual-network
 ms.workload: infrastructure
 ms.date: 12/11/2020
 ms.author: kumud
-ms.openlocfilehash: cb3a4b6a726ee9163582b15586c65fc750712c63
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.openlocfilehash: 22494d292077f4b6018a4512b45b5fe2caa9c8ee
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97368299"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106057207"
 ---
 # <a name="tutorial-restrict-network-access-to-paas-resources-with-virtual-network-service-endpoints-using-the-azure-portal"></a>Руководство. Ограничение сетевого доступа к ресурсам PaaS с помощью конечных точек служб для виртуальной сети и портала Azure
 
