@@ -12,10 +12,10 @@ ms.author: gaursa
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019, azure-synapse, devx-track-azurepowershell
 ms.openlocfilehash: 74c30a843ef5edd54c7cd19f3fd49acfe782f488
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104602185"
 ---
 # <a name="quickstart-pause-and-resume-compute-in-dedicated-sql-pool-formerly-sql-dw-with-azure-powershell"></a>Краткое руководство. Приостановка и возобновление вычислений в выделенном пуле SQL (ранее — Хранилище данных SQL) с помощью Azure PowerShell

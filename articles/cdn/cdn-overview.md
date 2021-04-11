@@ -16,10 +16,10 @@ ms.date: 05/09/2018
 ms.author: duau
 ms.custom: mvc
 ms.openlocfilehash: 54ee903b490e10f7ea4ca3bca91f742b5811404d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102563308"
 ---
 # <a name="what-is-a-content-delivery-network-on-azure"></a>Что такое сеть доставки содержимого в Azure?

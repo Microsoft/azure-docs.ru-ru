@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: quickstart
 ms.date: 06/14/2019
 ms.custom: mvc
-ms.openlocfilehash: fe7b1cdc96ae95ac361183342ea491432c3ab4b4
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 73b0434065b06f25320a0666937fd7969c863b33
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98928854"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104870217"
 ---
 # <a name="quickstart-create-and-monitor-an-apache-storm-topology-in-azure-hdinsight"></a>Краткое руководство. Создание и мониторинг топологии Apache Storm в Azure HDInsight
 
@@ -48,7 +48,7 @@ Storm предоставляет веб-интерфейс для работы �
 
 2. В разделе **Topology summary** (Сводка по топологии) выберите запись **wordcount** в столбце **Name** (Имя). Отобразятся сведения о топологии.
 
-    ![Панель мониторинга Storm со сведениями о топологии WordCount в storm-starter.](./media/apache-storm-quickstart/hdi-topology-summary.png)
+    :::image type="content" source="./media/apache-storm-quickstart/hdi-topology-summary.png" alt-text="Панель мониторинга Storm со сведениями о топологии WordCount в storm-starter." border="true":::
 
     Новая страница содержит следующую информацию.
 
@@ -65,7 +65,7 @@ Storm предоставляет веб-интерфейс для работы �
 
 3. На этой странице выберите запись и раздела **Spouts** (Воронки) или **Bolts** (Сита). Отобразятся сведения о выбранном компоненте.
 
-    ![Панель мониторинга Storm со сведениями о выбранных компонентах.](./media/apache-storm-quickstart/hdi-component-summary.png)
+    :::image type="content" source="./media/apache-storm-quickstart/hdi-component-summary.png" alt-text="Панель мониторинга Storm со сведениями о выбранных компонентах." border="true":::
 
     На этой странице отображается следующая информация.
 

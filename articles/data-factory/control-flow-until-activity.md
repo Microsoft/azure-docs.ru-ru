@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
 ms.openlocfilehash: 2ac5474f1b20e409da01c531ef13060e72fd548c
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104786130"
 ---
 # <a name="until-activity-in-azure-data-factory"></a>Действие Until в фабрике данных Azure

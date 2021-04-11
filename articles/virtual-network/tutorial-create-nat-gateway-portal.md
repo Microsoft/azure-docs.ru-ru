@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 03/02/2021
 ms.custom: template-tutorial
 ms.openlocfilehash: 82b5892b027627871e5492e3c6cd3776a923632b
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102553448"
 ---
 # <a name="tutorial-create-a-nat-gateway-using-the-azure-portal"></a>Руководство по Создание шлюза NAT с помощью портала Azure
@@ -174,11 +174,11 @@ ms.locfileid: "102553448"
 
 ## <a name="test-nat-gateway"></a>Тестирование шлюза NAT
 
-Используя сведения из этого раздела мы протестируем шлюз NAT. Сначала мы определим общедоступный IP-адрес шлюза NAT. Затем мы подключимся к тестовой виртуальной машине и проверим исходящее подключение через шлюз NAT.
+Используя сведения из этого раздела, мы протестируем шлюз NAT. Сначала мы определим общедоступный IP-адрес шлюза NAT. Затем мы подключимся к тестовой виртуальной машине и проверим исходящее подключение через шлюз NAT.
     
 1. Найдите общедоступный IP-адрес для шлюза NAT на экране **обзора**. В меню слева щелкните **Все службы**, выберите **Все ресурсы**, а затем — **myPublicIP**.
 
-2. Запишите общедоступный IP-адрес.
+2. Запишите общедоступный IP-адрес:
 
     :::image type="content" source="./media/tutorial-create-nat-gateway-portal/find-public-ip.png" alt-text="Определение общедоступного IP-адреса шлюза NAT" border="true":::
 
@@ -194,7 +194,7 @@ ms.locfileid: "102553448"
 
 8. В адресной строке введите **https://whatsmyip.com** .
 
-9. Убедитесь, что отображаемый IP-адрес соответствует адресу шлюза NAT, записанному на предыдущем этапе.
+9. Убедитесь, что отображаемый IP-адрес соответствует адресу шлюза NAT, записанному на предыдущем этапе:
 
     :::image type="content" source="./media/tutorial-create-nat-gateway-portal/my-ip.png" alt-text="Внешний исходящий IP-адрес в Internet Explorer" border="true":::
 

@@ -1,15 +1,15 @@
 ---
 title: Сведения о соответствии нормативным требованиям Azure Security Benchmark v1
 description: Подробные сведения о встроенной инициативе о соответствии нормативным требованиям Azure Security Benchmark v1. Каждый элемент управления сопоставляется с одним или несколькими определениями Политики Azure, которые помогают выполнять оценку.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 ms.custom: generated
-ms.openlocfilehash: 0d90cadb215dc1d67f2588d5434fec2202133917
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: cd63c657821fe15a8dade3535db5612a219a8a1c
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105032600"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106090024"
 ---
 # <a name="details-of-the-azure-security-benchmark-v1-regulatory-compliance-built-in-initiative"></a>Подробные сведения о встроенной инициативе о соответствии нормативным требованиям Azure Security Benchmark v1
 

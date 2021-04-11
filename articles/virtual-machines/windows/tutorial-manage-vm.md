@@ -9,10 +9,10 @@ ms.date: 06/06/2019
 ms.author: cynthn
 ms.custom: mvc, devx-track-azurepowershell
 ms.openlocfilehash: ae298562b5d3306cf6c20b4c2fb7b378ba99c986
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102561625"
 ---
 # <a name="tutorial-create-and-manage-windows-vms-with-azure-powershell"></a>Руководство по Создание виртуальных машин Windows и управление ими с помощью Azure PowerShell

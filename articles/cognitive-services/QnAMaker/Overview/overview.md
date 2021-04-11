@@ -7,18 +7,20 @@ ms.topic: overview
 ms.date: 01/22/2021
 ms.custom: cog-serv-seo-aug-2020
 keywords: qna maker, чат-боты с небольшим объемом кода, диалоги с несколькими шагами
-ms.openlocfilehash: a75b5939e8848ca898d7279b55ab2c4faa4ed72a
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.openlocfilehash: 8df9daa213156fc38ed08bced44ea919da95e6a4
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98919567"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104869214"
 ---
 # <a name="what-is-qna-maker"></a>Общие сведения о QnA Maker
 
 QnA Maker — это облачная служба обработки естественного языка (NLP), которая позволяет создавать слой беседы на основе пользовательских данных. Ее можно использовать для поиска в пользовательской базе знаний наиболее подходящего ответа на вопрос.
 
 QnA Maker обычно используется для создания диалоговых клиентских приложений, в том числе приложений социальных сетей, чат-ботов и классических приложений с поддержкой речевых функций.
+
+QnA Maker не хранит данные клиентов. Все данные клиента (ответы на вопросы и журналы чатов) хранятся в регионе, в котором клиент развертывает зависимые экземпляры службы. Дополнительные сведения о зависимых службах см. [здесь](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/plan?tabs=v1).
 
 ## <a name="when-to-use-qna-maker"></a>Когда целесообразно использовать QnA Maker
 

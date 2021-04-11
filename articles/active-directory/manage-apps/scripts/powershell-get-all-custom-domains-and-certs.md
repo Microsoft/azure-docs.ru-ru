@@ -12,10 +12,10 @@ ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 8325da81fd78762f0ffdcae4eebe93fe567580d0
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102550984"
 ---
 # <a name="get-all-application-proxy-apps-using-custom-domains-and-certificate-information"></a>Получение всех приложений прокси приложения, которые используют личные домены, и сведений о сертификатах

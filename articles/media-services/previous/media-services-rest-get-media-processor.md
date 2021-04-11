@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 7eb4647ae5ba40688cbf39cbfe8449f59275e7e6
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103014321"
 ---
 # <a name="how-to-get-a-media-processor-instance"></a>Как получить экземпляр обработчика мультимедиа
@@ -94,6 +94,6 @@ Host: media.windows.net
 ## <a name="provide-feedback"></a>Отзывы
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 Теперь, когда вы знаете, как получить экземпляр обработчика мультимедиа, перейдите к инструкциям по [кодированию файлов](media-services-rest-get-started.md), в котором показано, как использовать Media Encoder Standard для кодирования файлов.
 
