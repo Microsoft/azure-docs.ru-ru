@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для Azure Logic Apps
 description: Содержит список элементов управления соответствием Политики Azure, доступных для Azure Logic Apps. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 author: ecfan
 ms.author: estfan
 ms.service: logic-apps
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: e41498b77aef04f7ff30eb2c210151db27c1537c
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: 87c4f90d7a69b22cd8a60d78325536426c9afde3
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105035559"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106094871"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-logic-apps"></a>Элементы управления соответствием Политики Azure для Azure Logic Apps
 

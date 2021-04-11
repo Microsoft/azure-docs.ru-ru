@@ -7,12 +7,12 @@ ms.author: crtreasu
 ms.date: 03/02/2021
 ms.topic: overview
 ms.service: azure-object-anchors
-ms.openlocfilehash: b4284411fbe09a0d0ce8412e6e5a5df464f35564
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: 90b718e34a12fe71eec4e972bbf8de42d8b52007
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103462870"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106063769"
 ---
 # <a name="azure-object-anchors-overview"></a>Обзорные сведения об Объектных привязках Azure
 

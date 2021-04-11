@@ -1,18 +1,18 @@
 ---
 title: Краткое руководство. Использование библиотеки Хранилища BLOB-объектов Azure версии 12 для C++
 description: Из этого краткого руководства вы узнаете, как использовать клиентскую библиотеку службы Хранилища BLOB-объектов Azure версии 12 для C++ для создания контейнера и большого двоичного объекта в хранилище BLOB-объектов. Далее вы узнаете, как скачать большой двоичный объект на локальный компьютер и как получить список всех больших двоичных объектов в контейнере.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 10/21/2020
 ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
-ms.openlocfilehash: 246d2677c784daee4cc6b083cff04b6993ab3818
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7a0d2bdb1879e4f68b582ee56367f0238285a401
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96006495"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106278088"
 ---
 # <a name="quickstart-azure-blob-storage-client-library-v12-for-c"></a>Краткое руководство. Использование библиотеки Хранилища BLOB-объектов Azure версии 12 для C++
 

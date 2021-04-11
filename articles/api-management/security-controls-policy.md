@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для службы "Управление API Azure"
 description: Содержит список элементов управления соответствием из службы "Политика Azure", доступных для службы "Управление API Azure". Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 author: dlepow
 ms.author: apimpm
 ms.service: api-management
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 983367bdc4bef49dee356ceb4214cf97b1910fa3
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: b217078338c8fa0412886c6d9ce7e0065f47b4c8
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105036257"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106094310"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-api-management"></a>Элементы управления соответствием в службе "Политика Azure" для службы "Управление API Azure"
 

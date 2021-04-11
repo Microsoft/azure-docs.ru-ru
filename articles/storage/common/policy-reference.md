@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для службы хранилища Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для службы хранилища Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: reference
 author: tamram
 ms.author: tamram
 ms.service: storage
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 234b74e5505ff13c0cdac617bb902e11ecb24b76
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
-ms.translationtype: MT
+ms.openlocfilehash: 7872a5ca34c474c702e7f8cb0a72bb50bf71f563
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105031704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106095603"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-storage"></a>Встроенные определения в Политике Azure для службы хранилища Azure
 

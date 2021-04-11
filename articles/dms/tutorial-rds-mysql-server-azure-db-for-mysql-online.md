@@ -12,16 +12,19 @@ ms.workload: data-services
 ms.custom: seo-lt-2019
 ms.topic: tutorial
 ms.date: 06/09/2020
-ms.openlocfilehash: 3d200cd9bccecf03f5313058189e134082a1a357
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 13095824122f1d4b59ecde445efa1ea8bfa60dcd
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101742625"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106063582"
 ---
 # <a name="tutorial-migrate-rds-mysql-to-azure-database-for-mysql-online-using-dms"></a>Руководство. Миграция из MySQL RDS в Базу данных Azure для MySQL через Интернет
 
 С помощью службы Azure Database Migration Service базы данных из экземпляра RDS MySQL можно перенести в [Базу данных Azure для MySQL](../mysql/index.yml), не отключая базу данных-источник от сети. Другими словами, миграцию можно выполнить с минимальным временем простоя для приложения. В этом руководстве выполняется перенос примера базы данных **сотрудников** из экземпляра RDS MySQL в Базу данных Azure для MySQL с помощью интерактивного действия миграции в Azure Database Migration Service.
+
+> [!IMPORTANT]
+> 1 июня 2021 года сценарий миграции RDS MySQL в Базу данных Azure для MySQL по сети будет заменен соответствующим высокопроизводительным сценарием миграции без подключения к сети. Для миграции по сети можно использовать это новое предложение с [репликацией входных данных](https://docs.microsoft.com/azure/mysql/concepts-data-in-replication). Для такой миграции также можно использовать средства с открытым кодом, например [MyDumper/MyLoader](https://centminmod.com/mydumper.html), вместе с репликацией входных данных. 
 
 В этом руководстве описано следующее:
 > [!div class="checklist"]

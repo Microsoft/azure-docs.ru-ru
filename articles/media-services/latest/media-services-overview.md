@@ -64,8 +64,8 @@ ms.service: media-services ms.devlang: multiple ms.topic: overview ms.tgt_pltfrm
 * [Кодирование удаленных файлов и потокового видео — REST](stream-files-tutorial-with-rest.md)
 * [Кодирование отправленных файлов и потокового видео — .NET](stream-files-tutorial-with-api.md)
 * [Потоковая передача в реальном времени — .NET](stream-live-tutorial-with-api.md)
-* [Анализ видео — .NET](analyze-videos-tutorial-with-api.md)
-* [Динамическое шифрование AES-128 — .NET](protect-with-aes128.md)
+* [Анализ видео — .NET](analyze-videos-tutorial.md)
+* [Динамическое шифрование AES-128 — .NET](drm-playready-license-template-concept.md)
 
 ### <a name="samples"></a>Примеры
 
@@ -75,12 +75,12 @@ ms.service: media-services ms.devlang: multiple ms.topic: overview ms.tgt_pltfrm
 
 В руководствах показаны примеры кода для выполнения задания. В этом разделе приведено множество примеров. Вот некоторые из них:
 
-* [Создание учетной записи служб мультимедиа Azure](./create-account-howto.md)
+* [Создание учетной записи служб мультимедиа Azure](./account-create-how-to.md)
 * [Доступ к API Служб мультимедиа Azure с помощью Azure CLI](./access-api-howto.md)
 * [Создание входных данных задания из URL-адреса HTTPS](job-input-from-http-how-to.md)  
 * [Monitor events - Portal](monitoring/monitor-events-portal-how-to.md) (Создание и мониторинг событий Служб мультимедиа Azure с помощью Сетки событий и портала Azure)
-* [Encrypt dynamically with multi-DRM - .NET](protect-with-drm.md) (Динамическое шифрование с помощью DRM и службы доставки лицензий) 
-* [How to encode with a custom transform - CLI](custom-preset-cli-howto.md) (Кодирование с помощью пользовательского преобразования с помощью CLI)
+* [Encrypt dynamically with multi-DRM - .NET](drm-protect-with-drm-tutorial.md) (Динамическое шифрование с помощью DRM и службы доставки лицензий) 
+* [How to encode with a custom transform - CLI](transform-custom-preset-cli-how-to.md) (Кодирование с помощью пользовательского преобразования с помощью CLI)
 
 ## <a name="ask-questions-give-feedback-get-updates"></a>Получение справки, отправка отзывов, получение обновлений
 

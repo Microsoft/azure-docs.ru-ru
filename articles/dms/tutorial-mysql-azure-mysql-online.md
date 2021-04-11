@@ -12,16 +12,19 @@ ms.workload: data-services
 ms.custom: seo-lt-2019
 ms.topic: tutorial
 ms.date: 01/08/2020
-ms.openlocfilehash: e9f8d4797907cfdc4e7184580e31ac3cb3975b66
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 050356dc74641e7e7154d6a3976e6cc8d5f4ce3d
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101739888"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106063616"
 ---
 # <a name="tutorial-migrate-mysql-to-azure-database-for-mysql-online-using-dms"></a>Руководство. Перенос MySQL в Базу данных Azure для MySQL по сети с помощью DMS
 
 Azure Database Migration Service можно использовать для переноса баз данных из локального экземпляра MySQL в [Базу данных Azure для MySQL](../mysql/index.yml) с минимальным временем простоя. Другими словами, миграцию можно выполнить с минимальным временем простоя для приложения. В этом руководстве описано, как выполнить миграцию примера базы данных **сотрудников** из локального экземпляра MySQL 5.7 в Базу данных Azure для MySQL с помощью интерактивного действия миграции в Azure Database Migration Service.
+
+> [!IMPORTANT]
+> 1 июня 2021 года сценарий миграции MySQL в Базу данных Azure для MySQL по сети будет заменен соответствующим высокопроизводительным сценарием миграции без подключения к сети. Для миграции по сети можно использовать это новое предложение с [репликацией входных данных](https://docs.microsoft.com/azure/mysql/concepts-data-in-replication). Для такой миграции также можно использовать средства с открытым кодом, например [MyDumper/MyLoader](https://centminmod.com/mydumper.html), вместе с репликацией входных данных. 
 
 В этом руководстве описано следующее:
 > [!div class="checklist"]
