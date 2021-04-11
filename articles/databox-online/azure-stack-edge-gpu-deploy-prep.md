@@ -8,13 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 03/03/2021
 ms.author: alkohli
-Customer intent: As an IT admin, I need to understand how to prepare the portal to deploy Azure Stack Edge Pro so I can use it to transfer data to Azure.
-ms.openlocfilehash: b108e757ed9fe9ab7038cae4240f0f749ac19675
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: e58473f5c3bc4bc6314fb0dc5c532e24daa225d6
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036050"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106065707"
 ---
 # <a name="tutorial-prepare-to-deploy-azure-stack-edge-pro-with-gpu"></a>Руководство по подготовке к развертыванию Azure Stack Edge Pro с GPU 
 
@@ -47,8 +46,8 @@ ms.locfileid: "102036050"
 |**[6. Настройка параметров безопасности для Azure Stack Edge Pro](azure-stack-edge-gpu-deploy-configure-certificates.md)** |Настройка сертификатов для устройства. Используйте сертификаты, созданные устройством, или подключите собственные сертификаты.   |
 |**[7. Активация Azure Stack Edge Pro](azure-stack-edge-gpu-deploy-activate.md)** |Используйте ключ активации из службы, чтобы активировать устройство. Устройство готово к настройке общих папок SMB или NFS или подключению через REST. |
 |**[8. Настройка вычислений](azure-stack-edge-gpu-deploy-configure-compute.md)** |Настройте роль вычислений на устройстве. При этом также создается кластер Kubernetes. |
-|**[9A. Передача данных с помощью общих папок Edge](azure-stack-edge-j-series-deploy-add-shares.md)** |Добавление общих папок и подключение к ним через SMB или NFS. |
-|**[9B. Передача данных с помощью учетных записей хранения Edge](azure-stack-edge-j-series-deploy-add-storage-accounts.md)** |Добавьте учетные записи хранения и подключитесь к хранилищу BLOB-объектов с помощью интерфейсов REST API. |
+|**[9A. Передача данных с помощью общих папок Edge](./azure-stack-edge-gpu-deploy-add-shares.md)** |Добавление общих папок и подключение к ним через SMB или NFS. |
+|**[9B. Передача данных с помощью учетных записей хранения Edge](./azure-stack-edge-gpu-deploy-add-storage-accounts.md)** |Добавьте учетные записи хранения и подключитесь к хранилищу BLOB-объектов с помощью интерфейсов REST API. |
 
 
 Теперь можно приступить к сбору сведений о конфигурации программного обеспечения для устройства Azure Stack Edge Pro.

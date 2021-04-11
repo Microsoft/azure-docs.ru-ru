@@ -7,12 +7,12 @@ ms.service: attestation
 ms.topic: overview
 ms.date: 08/31/2020
 ms.author: mbaldwin
-ms.openlocfilehash: de003025e98109599ecd69c0459e29950c9bd1fd
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 9c29ec3dbc4d4f7d0a7abe0ff9a90fc0b7565272
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104950575"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106442564"
 ---
 # <a name="examples-of-an-attestation-policy"></a>Примеры политики аттестации
 
@@ -43,19 +43,16 @@ c:[type=="x-ms-sgx-mrsigner"] => issue(type="<custom-name>", value=c.value);
 
 ```
 version= 1.0;
-authorizationrules
-{
-    c:[type=="$is-debuggable"] => permit();
+authorizationrules {
+    => permit();
 };
-
-issuancerules
-{
-    c:[type=="$is-debuggable"] => issue(type="is-debuggable", value=c.value);
-    c:[type=="$sgx-mrsigner"] => issue(type="sgx-mrsigner", value=c.value);
-    c:[type=="$sgx-mrenclave"] => issue(type="sgx-mrenclave", value=c.value);
-    c:[type=="$product-id"] => issue(type="product-id", value=c.value);
-    c:[type=="$svn"] => issue(type="svn", value=c.value);
-    c:[type=="$tee"] => issue(type="tee", value=c.value);
+issuancerules {
+    c:[type=="x-ms-sgx-is-debuggable"] => issue(type="is-debuggable", value=c.value);
+    c:[type=="x-ms-sgx-mrsigner"] => issue(type="sgx-mrsigner", value=c.value);
+    c:[type=="x-ms-sgx-mrenclave"] => issue(type="sgx-mrenclave", value=c.value);
+    c:[type=="x-ms-sgx-product-id"] => issue(type="product-id", value=c.value);
+    c:[type=="x-ms-sgx-svn"] => issue(type="svn", value=c.value);
+    c:[type=="x-ms-attestation-type"] => issue(type="tee", value=c.value);
 };
 ```
 

@@ -1,15 +1,15 @@
 ---
 title: Краткое руководство. Создание назначения политики в JavaScript
 description: В рамках этого краткого руководства с помощью JavaScript вы создадите назначение в службе "Политика Azure" для определения ресурсов, которые не соответствуют требованиям.
-ms.date: 09/24/2020
+ms.date: 03/31/2021
 ms.topic: quickstart
 ms.custom: devx-track-js
-ms.openlocfilehash: 7548053e4bd5be214bf7de3eef3dc4c6c95442d4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: d42156e68747b66778ea1cf2001d2b4bfc901bb0
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91348322"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106090192"
 ---
 # <a name="quickstart-create-a-policy-assignment-to-identify-non-compliant-resources-using-javascript"></a>Краткое руководство. Создание назначения политики для выявления ресурсов, не соответствующих требованиям, с использованием JavaScript
 
