@@ -4,12 +4,12 @@ description: Руководство по использованию компле
 ms.date: 11/30/2020
 ms.topic: tutorial
 ms.reviewer: caleteet
-ms.openlocfilehash: f7605a0c118a40e52210582d2411569795fb25ee
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 4c2df952480d2c30de10838c3d0f7714fc7e6126
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96763695"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105628651"
 ---
 # <a name="tutorial-create-build-and-deploy-smart-contracts-on-azure-blockchain-service"></a>Руководство по Создание, сборка и развертывание смарт-контрактов в службе "Блокчейн Azure"
 
@@ -81,28 +81,105 @@ Truffle использует скрипты миграции для развер
 
 ![Успешное развертывание контракта](./media/send-transaction/deploy-contract.png)
 
-## <a name="call-a-contract-function"></a>Вызов функции контракта
+## <a name="call-a-contract-function&quot;></a>Вызов функции контракта
+Функция **SendRequest** контракта **HelloBlockchain** изменяет переменную состояния **RequestMessage**. Изменение состояния сети блокчейна выполняется через транзакцию. Можно создать скрипт для выполнения функции **SendRequest** путем транзакции.
 
-Функция **SendRequest** контракта **HelloBlockchain** изменяет переменную состояния **RequestMessage**. Изменение состояния сети блокчейна выполняется через транзакцию. Вы можете использовать страницу взаимодействия со смарт-контрактом комплекта SDK для службы "Блокчейн Azure", чтобы вызвать функцию **SendRequest** путем транзакции.
+1. В корне проекта Truffle создайте файл с именем `sendrequest.js`. Добавьте в файл следующий код Web3 JavaScript.
 
-1. Чтобы взаимодействовать со смарт-контрактом, щелкните правой кнопкой мыши **HelloBlockchain.sol** и выберите в меню пункт **Show Smart Contract Interaction Page** (Показать страницу взаимодействия со смарт-контрактом).
+    ```javascript
+    var HelloBlockchain = artifacts.require(&quot;HelloBlockchain");
+        
+    module.exports = function(done) {
+      console.log("Getting the deployed version of the HelloBlockchain smart contract")
+      HelloBlockchain.deployed().then(function(instance) {
+        console.log("Calling SendRequest function for contract ", instance.address);
+        return instance.SendRequest("Hello, blockchain!");
+      }).then(function(result) {
+        console.log("Transaction hash: ", result.tx);
+        console.log("Request complete");
+        done();
+      }).catch(function(e) {
+        console.log(e);
+        done();
+      });
+    };
+    ```
 
-    ![Выберите пункт отображения страницы взаимодействия со смарт-контрактом в меню](./media/send-transaction/contract-interaction.png)
+1. При создании проекта с помощью комплекта SDK службы "Блокчейн Azure" создается файл конфигурации Truffle со сведениями о конечной точке сети блокчейн-консорциума. Откройте в проекте файл **truffle-config.js**. В этом файле конфигурации указаны две сети — одна с именем development и вторая с именем консорциума.
+1. В терминале VS Code используйте Truffle, чтобы выполнить скрипт для своей сети блокчейн-консорциума. В строке меню терминала выберите вкладку **Терминал**, а в раскрывающемся списке — **PowerShell**.
 
-1. На странице взаимодействия можно выбрать развернутую версию контракта, вызвать функции, просмотреть текущее состояние и метаданные.
+    ```PowerShell
+    truffle exec sendrequest.js --network <blockchain network>
+    ```
 
-    ![Пример страницы взаимодействия со смарт-контрактом](./media/send-transaction/interaction-page.png)
+    Замените \<blockchain network\> именем сети блокчейн, указанным в файле **truffle-config.js**.
 
-1. Чтобы вызвать функцию смарт-контракта, выберите действие контракта и передайте аргументы. Выберите действие контракта **SendRequest** и введите **Hello, Blockchain!** для параметра **requestMessage**. Выберите **Execute** (Выполнить), чтобы вызвать функцию **SendRequest** путем транзакции.
+Truffle выполнит скрипт для сети блокчейн.
 
-    ![Действие выполнения SendRequest](./media/send-transaction/sendrequest-action.png)
+![Выходные данные: транзакция была отправлена](./media/send-transaction/execute-transaction.png)
 
-После обработки транзакции в разделе взаимодействия отражаются изменения состояния.
+При выполнении функции контракта через транзакцию транзакция не обрабатывается до тех пор, пока не будет создан блок. Функции, предназначенные для выполнения путем транзакции, вместо значения возвращают идентификатор транзакции.
 
-![Изменения состояния контракта](./media/send-transaction/contract-state.png)
+## <a name="query-contract-state"></a>Запрос состояния контракта
 
-Функция SendRequest задает поля **RequestMessage** и **State**. Текущим состоянием для **RequestMessage** является переданный аргумент **Hello, Blockchain**. Для поля **State** по-прежнему остается значение **Request**.
+Функции смарт-контракта могут возвращать текущее значение переменных состояния. Добавим функцию для возврата значения переменной состояния.
 
+1. В файле **HelloBlockchain.sol** добавьте функцию **getMessage** в смарт-контракт **HelloBlockchain**.
+
+    ``` solidity
+    function getMessage() public view returns (string memory)
+    {
+        if (State == StateType.Request)
+            return RequestMessage;
+        else
+            return ResponseMessage;
+    }
+    ```
+
+    Функция возвращает сообщение, хранящееся в переменной состояния, о текущем состоянии контракта.
+
+1. Щелкните правой кнопкой мыши файл **HelloBlockchain.sol** и в меню выберите **Build Contracts** (Выполнить сборку контрактов), чтобы внести изменения в смарт-контракт.
+1. Чтобы развернуть его, щелкните правой кнопкой мыши файл **HelloBlockchain.sol** и в меню выберите пункт **Deploy Contracts** (Развернуть контракты). При появлении запроса выберите сеть консорциума службы "Блокчейн Azure"в палитре команд.
+1. Затем создайте скрипт, предназначенный для вызова функции **getMessage**. В корне проекта Truffle создайте файл с именем `getmessage.js`. Добавьте в файл следующий код Web3 JavaScript.
+
+    ```javascript
+    var HelloBlockchain = artifacts.require("HelloBlockchain");
+    
+    module.exports = function(done) {
+      console.log("Getting the deployed version of the HelloBlockchain smart contract")
+      HelloBlockchain.deployed().then(function(instance) {
+        console.log("Calling getMessage function for contract ", instance.address);
+        return instance.getMessage();
+      }).then(function(result) {
+        console.log("Request message value: ", result);
+        console.log("Request complete");
+        done();
+      }).catch(function(e) {
+        console.log(e);
+        done();
+      });
+    };
+    ```
+
+1. В терминале VS Code используйте Truffle, чтобы выполнить скрипт для своей сети блокчейн. В строке меню терминала выберите вкладку **Терминал**, а в раскрывающемся списке — **PowerShell**.
+
+    ```bash
+    truffle exec getmessage.js --network <blockchain network>
+    ```
+
+    Замените \<blockchain network\> именем сети блокчейн, указанным в файле **truffle-config.js**.
+
+Скрипт выполняет запрос к смарт-контракту, вызывая функцию getMessage. Возвращается текущее значение переменной состояния **RequestMessage**.
+
+![Выходные данные запроса getmessage, в которых показано текущее значение переменной состояния RequestMessage](./media/send-transaction/execute-get.png)
+
+Обратите внимание, что возвращается не значение **Hello, blockchain!**, а заполнитель. При изменении и развертывании контракт получает новый адрес, а переменным состояния присваиваются значения в конструкторе смарт-контрактов. Скрипт миграции Truffle **2_deploy_contracts.js** развертывает смарт-контракт и передает значение заполнителя в качестве аргумента. Конструктор задает для переменной состояния **RequestMessage** значение заполнителя, которое и возвращается.
+
+1. Чтобы задать значение для переменной состояния **RequestMessage** и запросить его, выполните еще раз скрипты **sendrequest.js** и **getmessage.js**.
+
+    ![Выходные данные скриптов sendrequest и getmessage: транзакция RequestMessage отправлена](./media/send-transaction/execute-set-get.png)
+
+    Скрипт **sendrequest.js** задает переменной состояния **RequestMessage** значение **Hello, blockchain!**, а **getmessage.js** запрашивает значение переменной состояния контракта **RequestMessage** и возвращает **Hello, blockchain!**.
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
 Если ресурсы больше не нужны, вы можете удалить их. Для этого удалите группу ресурсов `myResourceGroup`, которую вы создали при выполнении предварительных требований *краткого руководства по созданию участника блокчейна*.

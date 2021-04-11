@@ -1,17 +1,15 @@
 ---
 title: Мониторинг кластера Service Fabric в Azure
 description: В этом учебнике вы узнаете, как выполнять мониторинг кластера, просматривая события Service Fabric, запрашивая API-интерфейсы EventStore, отслеживая счетчики производительности и просматривая отчеты о работоспособности.
-author: srrengar
 ms.topic: tutorial
 ms.date: 07/22/2019
-ms.author: srrengar
 ms.custom: mvc, devx-track-csharp
-ms.openlocfilehash: ecd05a838425d57e0eaff2fa571d72b5a87e92a6
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 3e9c8011647567b6f07423e113f98493d80d8402
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98791783"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105628787"
 ---
 # <a name="tutorial-monitor-a-service-fabric-cluster-in-azure"></a>Руководство по Мониторинг кластера Service Fabric в Azure
 

@@ -9,20 +9,20 @@ ms.reviewer: jrasnick
 ms.service: synapse-analytics
 ms.subservice: business-intelligence
 ms.topic: tutorial
-ms.date: 12/31/2020
-ms.openlocfilehash: 952d69cccff86d1a0119391c400a40908c62ed69
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/25/2021
+ms.openlocfilehash: 829daaa9c739657528a9085201c61c88635931d0
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98208970"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105608448"
 ---
 # <a name="visualize-data-with-power-bi"></a>Визуализация данных с помощью Power BI
 
 В этом учебнике вы узнаете, как создать рабочую область Power BI, привязать к ней рабочую область Azure Synapse и создать набор данных Power BI, использующий данные из вашей рабочей области Azure Synapse. 
 
-> [!NOTE]
-> Для работы с этим руководством [установите приложение Power BI Desktop](https://aka.ms/pbidesktopstore).
+## <a name="prerequisites"></a>Предварительные требования
+Для работы с этим руководством [установите приложение Power BI Desktop](https://aka.ms/pbidesktopstore).
 
 ## <a name="overview"></a>Обзор
 
