@@ -1,15 +1,15 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для Сетки событий Azure
 description: Содержит список элементов управления соответствием из службы "Политика Azure", доступных для Сетки событий Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 7a8138b3af2a9ce97c73ebcce5973c9a395d0085
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: a045fa086dddb72cbaf866ad08040423492d33e3
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105034625"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106094157"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-event-grid"></a>Элементы управления соответствием в службе "Политика Azure" для Сетки событий Azure
 
