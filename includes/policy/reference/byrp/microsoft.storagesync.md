@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 4b3939094b4299ccf75e4953443f8ce9d0075c59
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
-ms.translationtype: MT
+ms.openlocfilehash: fa0dbaf3cb4d91ef3ae54849584e46241abf4eb1
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105031691"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106095568"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|

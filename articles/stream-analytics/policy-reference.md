@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Azure Stream Analytics
 description: Здесь приведены встроенные определения политик в Политике Azure для Azure Stream Analytics. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: reference
 author: sidramadoss
 ms.author: sidram
 ms.service: stream-analytics
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 7ef9606da62ebd5ff53eca5fc21c22591bd3ce3b
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
-ms.translationtype: MT
+ms.openlocfilehash: 5cab2caee2057afacc8db7fe7e701b36f1e84fb3
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105037464"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106095517"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-stream-analytics"></a>Встроенные определения в Политике Azure для Azure Stream Analytics
 

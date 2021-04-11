@@ -7,7 +7,6 @@ author: KumudD
 manager: mtillman
 editor: ''
 tags: azure-resource-manager
-Customer intent: I want to route traffic from one subnet, to a different subnet, through a network virtual appliance.
 ms.assetid: ''
 ms.service: virtual-network
 ms.devlang: azurecli
@@ -17,12 +16,12 @@ ms.workload: infrastructure
 ms.date: 03/13/2018
 ms.author: kumud
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 043d450a1b968174ad263579d39de06a296a98e4
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.openlocfilehash: ed2a97ccfb0a3b9b4b43021ab0fff1460919c9b9
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94741491"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106060743"
 ---
 # <a name="route-network-traffic-with-a-route-table-using-the-azure-cli"></a>Маршрутизация сетевого трафика с помощью таблицы маршрутов и Azure CLI
 
@@ -210,7 +209,7 @@ az vm create \
 
 ## <a name="route-traffic-through-an-nva"></a>Перенаправление трафика через виртуальный сетевой модуль
 
-Используйте следующую команду для создания сеанса SSH с виртуальной машиной *myVmPrivate*. Замените *\<publicIpAddress>* общедоступным IP-адресом виртуальной машины. В примере выше используется IP-адрес *13.90.242.231*.
+Используйте следующую команду для создания сеанса SSH с виртуальной машиной *myVmPrivate*. Замените *\<publicIpAddress>* общедоступным IP-адресом, который присвоен виртуальной машине. В примере выше используется IP-адрес *13.90.242.231*.
 
 ```bash
 ssh azureuser@<publicIpAddress>

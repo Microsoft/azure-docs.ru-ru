@@ -8,12 +8,12 @@ ms.subservice: fhir
 ms.topic: overview
 ms.date: 09/28/2020
 ms.author: ginle
-ms.openlocfilehash: 08b5f63f1fffc2369eff620ca1937f298c2d9ca5
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: daa71a6df0ad412823736b3ee094cfd3945af492
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103020385"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106220855"
 ---
 # <a name="configure-customer-managed-keys-at-rest"></a>Настройка хранимых ключей, управляемых клиентом
 
@@ -23,7 +23,7 @@ ms.locfileid: "103020385"
 
 - [Регистрация поставщика ресурсов Azure Cosmos DB в своей подписке Azure](../../cosmos-db/how-to-setup-cmk.md#register-resource-provider) 
 - [Настройка экземпляра Azure Key Vault](../../cosmos-db/how-to-setup-cmk.md#configure-your-azure-key-vault-instance)
-- [Добавление политики доступа в экземпляр Azure Key Vault](../../cosmos-db/how-to-setup-cmk.md#add-an-access-policy-to-your-azure-key-vault-instance)
+- [Добавление политики доступа в экземпляр Azure Key Vault](../../cosmos-db/how-to-setup-cmk.md#add-access-policy)
 - [Создание нового ключа в Azure Key Vault](../../cosmos-db/how-to-setup-cmk.md#generate-a-key-in-azure-key-vault)
 
 ## <a name="using-azure-portal"></a>Использование портала Azure

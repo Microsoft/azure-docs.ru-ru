@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 08/31/2020
 ms.author: jeedes
-ms.openlocfilehash: ef1ca41f54a15554a04fa3edf608bb13f5fb3398
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 94ab61a5c6335d43842ada48f17572c186af773c
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96182025"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106077199"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-workday-mobile-application"></a>Руководство по интеграции единого входа Azure Active Directory с мобильным приложением Workday
 
@@ -132,13 +132,11 @@ Workday поддерживает указанные ниже элементы у
 
 | Сценарий | Пары "ключ — значение" |
 |----------------------------------------------------------------------------------------   |-----------|
-| Автоматически заполните поля "Клиент" и "Веб-адрес" для:<br>● Workday на Android при включении профилей Android for Work.<br>● Workday на iPad и iPhone.     | Для настройки клиента используйте следующие значения: <br>● Ключ конфигурации = `UserGroupCode`.<br>● Тип значения = String <br>● Значение конфигурации = имя_клиента Пример: `gms`<br>Используйте эти значения для настройки веб-адреса:<br>● Ключ конфигурации = `AppServiceHost`.<br>● Тип значения = String<br>● Значение конфигурации = базовый_URL-адрес_клиента Пример: `https://www.myworkday.com`                                |   |
+| Автоматически заполните поля "Клиент" и "Веб-адрес" для:<br>● Workday на Android при включении профилей Android for Work.<br>● Workday на iPad и iPhone.     | Для настройки клиента используйте следующие значения: <br>● Ключ конфигурации = `UserGroupCode`.<br>● Тип значения = String <br>● Значение конфигурации = имя_клиента Пример: `gms`<br>Используйте эти значения для настройки веб-адреса:<br>● Ключ конфигурации = `AppServiceHost`.<br>● Тип значения = String<br>● Значение конфигурации = базовый_URL-адрес_клиента Пример: `https://www.myworkday.com`                                | 
 | Отключите эти действия для Workday на iPad и iPhone:<br>● Команды вырезки, копирования и вставки.<br>● Печать.                       | Чтобы отключить эту функцию, установите для этих ключей значение `False` (логическое):<br>●   `AllowCutCopyPaste`.<br>●   `AllowPrint`.    |
 | Отключите снимки экрана для Workday на Android. |Чтобы отключить эту функцию, установите значение `False` (логическое) для ключа `AllowScreenshots`.|
 | Отключите предлагаемые обновления для пользователей.|Чтобы отключить эту функцию, установите значение `False` (логическое) для ключа `AllowSuggestedUpdates`.|
 |Настройте URL-адрес магазина приложений, чтобы пользователи мобильных устройств могли выбрать магазин приложений.|Используйте эти значения, чтобы изменить URL-адрес магазина приложений:<br>● Ключ конфигурации = `AppUpdateURL`.<br>● Тип значения = String<br> ● Значение конфигурации = URL-адрес_магазина_приложений|
-|       |
-
 
 ## <a name="ios-configuration-policies"></a>Политики конфигурации iOS
 

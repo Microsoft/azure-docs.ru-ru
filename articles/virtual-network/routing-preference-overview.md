@@ -6,19 +6,18 @@ documentationcenter: na
 author: KumudD
 manager: mtillman
 ms.service: virtual-network
-Customer intent: As an Azure customer, I want to learn more about routing choices for my internet egress traffic.
 ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 02/01/2021
 ms.author: mnayak
-ms.openlocfilehash: 56fd9898065dd55b9a56547a775f7f2aa4a56156
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.openlocfilehash: 44edd9273730ff7ba81a3ad5af2408ff6b7b7a5c
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101693736"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106060641"
 ---
 # <a name="what-is-routing-preference"></a>Что такое предпочтение маршрутизации?
 
