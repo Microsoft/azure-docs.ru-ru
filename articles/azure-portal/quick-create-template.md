@@ -3,13 +3,13 @@ title: Создание панели мониторинга на портале 
 description: Узнайте, как создать панель мониторинга на портале Azure с помощью шаблона Azure Resource Manager.
 ms.topic: quickstart
 ms.custom: subject-armqs
-ms.date: 06/15/2020
-ms.openlocfilehash: 55ac24e48c1c976eca1e6e8e51cf6e88361ec630
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.date: 03/15/2021
+ms.openlocfilehash: a3ab8767e09256ed8235dbd980ea3336a6f0fb1d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96745731"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104658335"
 ---
 # <a name="quickstart-create-a-dashboard-in-the-azure-portal-by-using-an-arm-template"></a>Краткое руководство. Создание панели мониторинга на портале Azure с помощью шаблона ARM
 
@@ -30,9 +30,13 @@ ms.locfileid: "96745731"
 
 Для панели мониторинга, которую вы создадите с помощью этого краткого руководства, требуется виртуальная машина. Чтобы создать виртуальную машину, выполните следующие действия.
 
-1. На портале Azure выберите Cloud Shell.
+1. На портале Azure выберите **Cloud Shell**.
 
     ![Выбор элемента Cloud Shell на ленте портала Azure](media/quick-create-template/cloud-shell.png)
+
+1. Откройте окно **Cloud Shell** и выберите **PowerShell**.
+
+    ![Выбор PowerShell в окне терминала](media/quick-create-template/powershell.png)
 
 1. Скопируйте следующую команду и введите ее в командной строке, чтобы создать группу ресурсов.
 
@@ -85,19 +89,7 @@ ms.locfileid: "96745731"
 
 ## <a name="review-deployed-resources"></a>Просмотр развернутых ресурсов
 
-Убедитесь, что панель мониторинга создана успешно и от виртуальной машины поступают данные.
-
-1. На портале Azure выберите **Панель мониторинга**.
-
-    ![Переход к панели мониторинга на портале Azure](media/quick-create-template/navigate-to-dashboards.png)
-
-1. На странице панели мониторинга выберите **Простая панель мониторинга виртуальной машины**.
-
-    ![Переход к простой панели мониторинга виртуальной машины](media/quick-create-template/select-simple-vm-dashboard.png)
-
-1. Проверьте панель мониторинга, которую создал шаблон ARM. Вы увидите, что часть содержимого является статическим, но здесь также представлены диаграммы, отображающие производительность ранее созданной виртуальной машины.
-
-    ![Обзор простой панели мониторинга виртуальной машины](media/quick-create-template/review-simple-vm-dashboard.png)
+[!INCLUDE [azure-portal-review-deployed-resources](../../includes/azure-portal-review-deployed-resources.md)]
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

@@ -11,10 +11,10 @@ ms.topic: tutorial
 ms.date: 03/22/2021
 ms.author: justinha
 ms.openlocfilehash: a016287fedbd303a5571100130769ce4299828bc
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104798565"
 ---
 # <a name="tutorial-create-and-use-replica-sets-for-resiliency-or-geolocation-in-azure-active-directory-domain-services"></a>Учебник по созданию и использованию наборов реплик для обеспечения устойчивости или поддержки геолокации в доменных службах Azure Active Directory

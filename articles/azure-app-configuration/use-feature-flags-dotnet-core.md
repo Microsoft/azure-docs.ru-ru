@@ -13,12 +13,12 @@ ms.topic: tutorial
 ms.date: 09/17/2020
 ms.author: alkemper
 ms.custom: devx-track-csharp, mvc
-ms.openlocfilehash: 327bc687c466a30d4f92810e48dc08f822f752ec
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4d54e1ff07b250b5595d2f8aee5f022bd2359721
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101726433"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105729513"
 ---
 # <a name="tutorial-use-feature-flags-in-an-aspnet-core-app"></a>Руководство по использованию флагов функций в приложении ASP.NET Core
 
@@ -218,7 +218,7 @@ config.AddAzureAppConfiguration(options =>
 
 ## <a name="use-dependency-injection-to-access-ifeaturemanager"></a>Внедрение зависимостей для доступа к IFeatureManager 
 
-Для некоторых операций, таких как проверка значений флагов компонентов вручную, необходимо получить экземпляр [IFeatureManager](/dotnet/api/microsoft.featuremanagement.ifeaturemanager?view=azure-dotnet-preview). В MVC ASP.NET Core можно получить доступ к диспетчеру компонентов `IFeatureManager` путем внедрения зависимостей. В следующем примере аргумент типа `IFeatureManager` добавляется в сигнатуру конструктора для контроллера. Среда выполнения автоматически разрешает ссылку и предоставляет интерфейс при вызове конструктора. Если вы используете шаблон приложения, в котором у контроллера уже есть один или несколько аргументов внедрения зависимостей в конструкторе, например `ILogger`, можно просто добавить `IFeatureManager` в качестве дополнительного аргумента:
+Для некоторых операций, таких как проверка значений флагов компонентов вручную, необходимо получить экземпляр [IFeatureManager](/dotnet/api/microsoft.featuremanagement.ifeaturemanager?preserve-view=true&view=azure-dotnet-preview). В MVC ASP.NET Core можно получить доступ к диспетчеру компонентов `IFeatureManager` путем внедрения зависимостей. В следующем примере аргумент типа `IFeatureManager` добавляется в сигнатуру конструктора для контроллера. Среда выполнения автоматически разрешает ссылку и предоставляет интерфейс при вызове конструктора. Если вы используете шаблон приложения, в котором у контроллера уже есть один или несколько аргументов внедрения зависимостей в конструкторе, например `ILogger`, можно просто добавить `IFeatureManager` в качестве дополнительного аргумента:
 
 ### <a name="net-5x"></a>[.NET 5.x](#tab/core5x)
     
@@ -322,7 +322,7 @@ public IActionResult Index()
 }
 ```
 
-Когда контроллер MVC или действие блокируется из-за того, что флагу компонента контроллера присвоено значение *off*, вызывается зарегистрированный интерфейс [IDisabledFeaturesHandler](/dotnet/api/microsoft.featuremanagement.mvc.idisabledfeatureshandler?view=azure-dotnet-preview). Интерфейс `IDisabledFeaturesHandler` по умолчанию возвращает клиенту код состояния 404 без текста ответа.
+Когда контроллер MVC или действие блокируется из-за того, что флагу компонента контроллера присвоено значение *off*, вызывается зарегистрированный интерфейс [IDisabledFeaturesHandler](/dotnet/api/microsoft.featuremanagement.mvc.idisabledfeatureshandler?preserve-view=true&view=azure-dotnet-preview). Интерфейс `IDisabledFeaturesHandler` по умолчанию возвращает клиенту код состояния 404 без текста ответа.
 
 ## <a name="mvc-views"></a>Представления MVC
 
