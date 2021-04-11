@@ -5,10 +5,10 @@ ms.topic: overview
 ms.date: 03/22/2021
 ms.custom: seodec18, mvc
 ms.openlocfilehash: c445687db7a154b6fc86e962d2c2340ad6297431
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104799077"
 ---
 # <a name="what-is-azure-container-instances"></a>Об экземплярах контейнеров Azure

@@ -10,12 +10,12 @@ author: sakash279
 ms.author: akshanka
 ms.reviewer: sngun
 ms.custom: devx-track-python
-ms.openlocfilehash: 12ee827f297729682b0a5e1b1808afe312c657a4
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 847e100dfaa922c359b321f17d77d2d0c67afc9b
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102499073"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802868"
 ---
 # <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-python"></a>Начало работы с хранилищем таблиц Azure и API таблиц Azure Cosmos DB с помощью Python
 [!INCLUDE[appliesto-table-api](includes/appliesto-table-api.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "102499073"
 
 Для работы с этим примером требуются следующие компоненты:
 
-* [Python](https://www.python.org/downloads/) 2.7, 3.3, 3.4, 3.5 или 3.6.
+* [Python](https://www.python.org/downloads/) 2.7, 3.6 или более поздней версии.
 * [Пакет SDK таблиц Azure Cosmos DB для Python](https://pypi.python.org/pypi/azure-cosmosdb-table/). Этот пакет SDK подключается к Хранилищу таблиц Azure и API таблиц Azure Cosmos DB.
 * [Учетная запись хранения Azure](../storage/common/storage-account-create.md) или [учетная запись Azure Cosmos DB](https://azure.microsoft.com/try/cosmosdb/).
 
