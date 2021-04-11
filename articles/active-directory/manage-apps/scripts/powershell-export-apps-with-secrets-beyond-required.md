@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 03/09/2021
 ms.author: kenwith
 ms.reviewer: mifarca
-ms.openlocfilehash: 9c0e5508830343561833785fbce31f547a8a7428
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.openlocfilehash: daeea48758a9f08e7eedbfcaddcde3815f5c1e16
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103149687"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105729105"
 ---
 # <a name="export-apps-with-secrets-and-certificates-expiring-beyond-the-required-date"></a>Экспорт приложений с секретами и сертификатами, срок действия которых истекает после требуемой даты
 
@@ -37,10 +37,10 @@ ms.locfileid: "103149687"
 
 | Get-Help | Примечания |
 |---|---|
-| [Invoke-WebRequest](/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.1) | Отправляет HTTP- и HTTPS-запросы к веб-странице или веб-службе. Анализирует ответ и возвращает коллекции ссылок, изображений и других значимых HTML-элементов. |
+| [Invoke-WebRequest](/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.1&preserve-view=true) | Отправляет HTTP- и HTTPS-запросы к веб-странице или веб-службе. Анализирует ответ и возвращает коллекции ссылок, изображений и других значимых HTML-элементов. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о модуле Azure AD PowerShell см. в этом [обзоре](/powershell/azure/active-directory/overview).
 
-Дополнительные сведения см. в статье [Примеры Azure AD PowerShell для управления приложениями](../app-management-powershell-samples.md).
+Дополнительные сведения см. в статье [Пример PowerShell для управления приложениями в Azure Active Directory](../app-management-powershell-samples.md).

@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 07/21/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: 82dcd8c59c55a2866b51fd6dee896ea1298b6cf6
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104878250"
 ---
 # <a name="deploy-azure-spring-cloud-in-a-virtual-network"></a>развертыванию Azure Spring Cloud в виртуальной сети

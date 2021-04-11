@@ -9,10 +9,10 @@ ms.topic: overview
 ms.date: 03/15/2021
 ms.author: alkohli
 ms.openlocfilehash: 2adbefff2a0154268157c7d1735d83e70aa92ee8
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103563595"
 ---
 # <a name="what-is-azure-data-box-gateway"></a>Что такое Шлюз Azure Data Box?

@@ -12,10 +12,10 @@ ms.date: 03/09/2021
 ms.author: kenwith
 ms.reviewer: mifarca
 ms.openlocfilehash: def9b55a1d873cccda5d1c48921e3f098beeced1
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103149721"
 ---
 # <a name="export-apps-with-expiring-secrets-and-certificates"></a>Экспорт приложений с секретами и сертификатами с истекающим сроком действия
@@ -47,4 +47,4 @@ ms.locfileid: "103149721"
 
 Дополнительные сведения о модуле Azure AD PowerShell см. в этом [обзоре](/powershell/azure/active-directory/overview).
 
-См. другие [примеры Azure AD PowerShell для управления приложениями](../app-management-powershell-samples.md).
+Дополнительные сведения см. в статье [Пример PowerShell для управления приложениями в Azure Active Directory](../app-management-powershell-samples.md).

@@ -2,14 +2,14 @@
 title: Краткое руководство. Мониторинг веб-сайтов с помощью Azure Monitor Application Insights
 description: В этом кратком руководстве показано, как настроить мониторинг веб-сайта на стороне клиента или браузера с помощью Application Insights в Azure Monitor.
 ms.topic: quickstart
-ms.date: 08/19/2020
+ms.date: 03/19/2021
 ms.custom: mvc
-ms.openlocfilehash: 1773ebb9c490420451a119c8343fb613ff50f029
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 0e10db39c8dbbf81087d696cfbb5b2ded1ae79ac
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102488585"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654934"
 ---
 # <a name="quickstart-start-monitoring-your-website-with-azure-monitor-application-insights"></a>Краткое руководство. Запуск мониторинга веб-сайта с помощью Application Insights в Azure Monitor
 
@@ -60,9 +60,9 @@ Application Insights может собирать данные телеметри
 
 ## <a name="configure-application-insights-sdk"></a>Настройка пакета SDK для Application Insights
 
-1. Щелкните **Обзор** > **Основные компоненты** и скопируйте **ключ инструментирования** приложения.
+1. Выберите **Обзор** и скопируйте **строку подключения** приложения. В этом примере нам нужна только часть ключа инструментирования в строке подключения `InstrumentationKey=00000000-0000-0000-0000-000000000000;`.
 
-   ![Форма создания ресурса Application Insights](media/website-monitoring/instrumentation-key-001.png)
+    :::image type="content" source="media/website-monitoring/keys.png" alt-text="Снимок экрана: страница обзора с ключом инструментирования и строкой подключения.":::
 
 1. Добавьте следующий скрипт в файл ``hello_world.html`` перед закрывающим тегом ``</head>``.
 
@@ -76,7 +76,7 @@ Application Insights может собирать данные телеметри
     crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
     // onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DO NOT ADD anything to the sdk.queue -- As they won't get called)
     cfg: { // Application Insights Configuration
-        instrumentationKey: "YOUR_INSTRUMENTATION_KEY_GOES_HERE"
+        connectionString:"InstrumentationKey=YOUR_INSTRUMENTATION_KEY_GOES_HERE;" 
         /* ...Other Configuration Options... */
     }});
     </script>
@@ -84,7 +84,7 @@ Application Insights может собирать данные телеметри
 
     > [!NOTE]
     > Текущий фрагмент кода (приведенный выше) имеет версию 5, версия кодируется в фрагменте в виде sv:"#", а [сведения о текущей версии и конфигурации доступны на сайте GitHub](https://go.microsoft.com/fwlink/?linkid=2156318).
-   
+
 1. Измените ``hello_world.html`` и добавьте ключ инструментирования.
 
 1. Откройте ``hello_world.html`` в сеансе локального браузера. Это действие создает один просмотр страницы. Вы можете обновить свой браузер, чтобы сгенерировать несколько просмотров тестовых страниц.
@@ -95,7 +95,7 @@ Application Insights может собирать данные телеметри
 
    Четыре диаграммы по умолчанию на обзорной странице привязаны к серверным данным приложения. Так как мы рассматриваем взаимодействие на стороне клиента или браузера с использованием пакета SDK для JavaScript, это конкретное представление не применяется, если у нас также не установлен пакет SDK на стороне сервера.
 
-1. Щелкните значок **Схема приложений** ![Analytics](media/website-monitoring/006.png).  Это действие приводит к открытию окна **Analytics**, которое предоставляет полнофункциональный язык запросов для анализа всех данных, собранных Application Insights. Для просмотра данных, связанных с запросами браузера на стороне клиента, выполните следующий запрос.
+1. Выберите **Журналы**.  Это действие приводит к открытию окна **Журналы**, где доступен полнофункциональный язык запросов для анализа всех данных, собранных Application Insights. Для просмотра данных, связанных с запросами браузера на стороне клиента, выполните следующий запрос.
 
     ```kusto
     // average pageView duration by name
@@ -112,19 +112,15 @@ Application Insights может собирать данные телеметри
     | render timechart
     ```
 
-   ![Граф аналитики запросов пользователей за период времени](./media/website-monitoring/analytics-query.png)
+   :::image type="content" source="media/website-monitoring/log-query.png" alt-text="Снимок экрана: граф анализа журналов с запросами пользователей за определенный период времени.":::
 
-1. Вернитесь на страницу **Обзор**. Под заголовком **Изучение** щелкните **Браузер** и **Производительность**.  Отобразятся метрики, отображающие сведения о производительности вашего веб-сайта. Доступно соответствующее представление для анализа сбоев и исключений на веб-сайте. Щелкните **Примеры**, чтобы получить доступ к [полным сведениям о транзакциях](./transaction-diagnostics.md).
+1. Вернитесь на страницу **Обзор**. Под заголовком **Изучение** щелкните **Производительность** и откройте вкладку **Браузер**.  Отобразятся метрики, отображающие сведения о производительности вашего веб-сайта. Доступно соответствующее представление для анализа сбоев и исключений на веб-сайте. Щелкните **Примеры**, чтобы получить доступ к [полным сведениям о транзакциях](./transaction-diagnostics.md).
 
-   ![Граф метрик сервера](./media/website-monitoring/browser-performance.png)
+     :::image type="content" source="media/website-monitoring/performance.png" alt-text="Снимок экрана: вкладка &quot;Производительность&quot; с графом метрик браузера.":::
 
-1. Чтобы изучить возможности [средств аналитики поведения пользователей](./usage-overview.md), в главном меню Application Insights под заголовком **Использование** щелкните [**Пользователи**](./usage-segmentation.md). Так как мы выполняем тестирование на одном компьютере, мы увидим данные только для одного пользователя. Для фактического веб-сайта распределение пользователей может выглядеть следующим образом.
-
-     ![График входа пользователей](./media/website-monitoring/usage-users.png)
+1. Чтобы изучить возможности [средств аналитики поведения пользователей](./usage-overview.md), в главном меню Application Insights под заголовком **Использование** щелкните [**Пользователи**](./usage-segmentation.md). Так как мы выполняем тестирование на одном компьютере, мы увидим данные только для одного пользователя.
 
 1. Для более сложного веб-сайта с несколькими страницами можно использовать средство [**Маршруты пользователей**](./usage-flows.md) для визуализации перемещения посетителей по веб-сайту.
-
-   ![Визуализация маршрутов пользователей](./media/website-monitoring/user-flows.png)
 
 Сведения о более сложных настройках для мониторинга веб-сайтов см. в справочнике по [API пакета SDK для JavaScript](./javascript.md).
 
