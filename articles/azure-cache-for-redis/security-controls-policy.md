@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для Кэша Azure для Redis
 description: Содержит список элементов управления соответствием Политики Azure, доступных для Кэша Azure для Redis. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 author: yegu-ms
 ms.author: yegu
 ms.service: cache
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 2a0213f363ba99e756a4cc8659211ec55d0bf505
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: 4753e7de11e58f662cb7e17ec62863a5acac4c03
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105034931"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106093670"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-cache-for-redis"></a>Элементы управления соответствием Политики Azure для Кэша Azure для Redis
 

@@ -8,12 +8,12 @@ ms.author: divswa
 ms.reviewer: jonfan, estfan, logicappspm
 ms.topic: article
 ms.date: 04/29/2020
-ms.openlocfilehash: 61f3f2af61bc24f76d061de672a3eaacd54f7f0e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.openlocfilehash: 87a2bcc386ec5688fadb68aabdd2e5239e205516
+ms.sourcegitcommit: 3ee3045f6106175e59d1bd279130f4933456d5ff
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96015202"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106077478"
 ---
 # <a name="exchange-x12-messages-for-b2b-enterprise-integration-in-azure-logic-apps-with-enterprise-integration-pack"></a>Обмен сообщениями X12 для интеграции с предприятием B2B в Azure Logic Apps с помощью Пакета интеграции Enterprise
 
@@ -79,7 +79,6 @@ ms.locfileid: "96015202"
 |----------|-------------|
 | **Ожидается техническое подтверждение (TA1)** | Возвращает техническое подтверждение (TA1) отправителю сообщения. |
 | **Ожидается функциональное подтверждение (FA)** | Возвращает функциональное подтверждение (FA) отправителю сообщения. <p>Для свойства **версия FA** в зависимости от версии схемы выберите подтверждения 997 или 999. <p>Установите этот флажок, чтобы включить создание циклов AK2 в функциональных подтверждениях для принимаемых наборов транзакций, выберите **Включить цикл AK2/IK2**. |
-||||
 
 <a name="inbound-schemas"></a>
 

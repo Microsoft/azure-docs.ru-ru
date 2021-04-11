@@ -8,13 +8,12 @@ ms.subservice: edge
 ms.topic: tutorial
 ms.date: 10/20/2020
 ms.author: alkohli
-Customer intent: As an IT admin, I need to understand how to connect and activate Azure Stack Edge Mini R so I can use it to transfer data to Azure.
-ms.openlocfilehash: fe76391a5cfce8d7d39e47131db108ab87e5aed5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 57d11e1c4109caded4287592a6d71a803e44b68e
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96464994"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106061610"
 ---
 # <a name="tutorial-connect-to-azure-stack-edge-mini-r"></a>Руководство по подключению к Azure Stack Edge Mini R
 
@@ -26,7 +25,7 @@ ms.locfileid: "96464994"
 
 > [!div class="checklist"]
 >
-> * Предварительные условия
+> * Предварительные требования
 > * подключение к физическому устройству;
 
 
@@ -54,7 +53,7 @@ ms.locfileid: "96464994"
 Из этого учебника вы узнали, как выполнять такие задачи:
 
 > [!div class="checklist"]
-> * Предварительные условия
+> * Предварительные требования
 > * подключение к физическому устройству;
 
 

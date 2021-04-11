@@ -1,15 +1,15 @@
 ---
 title: Сведения о соответствии требованиям для Руководства по мерам информационной безопасности для Новой Зеландии
 description: Сведения о встроенной инициативе по обеспечению соответствия требованиям Руководства по мерам информационной безопасности для Новой Зеландии. Каждый элемент управления сопоставляется с одним или несколькими определениями Политики Azure, которые помогают выполнять оценку.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 ms.custom: generated
-ms.openlocfilehash: e7d5f298864b0fdc4d3a8856a192d6184d3abe19
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: 4369a11a037f2e966d6f485fbbc970057818b233
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105034424"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106093917"
 ---
 # <a name="details-of-the-new-zealand-ism-restricted-regulatory-compliance-built-in-initiative"></a>Сведения о встроенной инициативе по обеспечению соответствия требованиям Руководства по мерам информационной безопасности для Новой Зеландии
 
