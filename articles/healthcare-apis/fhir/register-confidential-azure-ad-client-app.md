@@ -6,14 +6,14 @@ author: matjazl
 ms.service: healthcare-apis
 ms.subservice: fhir
 ms.topic: conceptual
-ms.date: 03/16/2021
+ms.date: 04/08/2021
 ms.author: matjazl
-ms.openlocfilehash: fbc683c98eb0124e8d879eada276593ca9bf7042
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: c10b27d375e2bfb8c64130eceb416a633241cf68
+ms.sourcegitcommit: c6a2d9a44a5a2c13abddab932d16c295a7207d6a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105934759"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107284449"
 ---
 # <a name="register-a-confidential-client-application-in-azure-active-directory"></a>Регистрация конфиденциального клиентского приложения в Azure Active Directory
 
@@ -29,7 +29,7 @@ ms.locfileid: "105934759"
 
 1. Щелкните **Регистрация приложений**. 
 
-    ![На портале Azure. Регистрация нового приложения.](media/how-to-aad/portal-aad-new-app-registration.png)
+    :::image type="content" source="media/how-to-aad/portal-aad-new-app-registration.png" alt-text="портал Azure. Регистрация нового приложения.":::
 
 1. Выберите **Новая регистрация**.
 
@@ -39,7 +39,7 @@ ms.locfileid: "105934759"
 
 1. Используемых Укажите **URI перенаправления**. Эти сведения можно изменить позже, но если вы знакомы с URL-адресом ответа приложения, введите его сейчас.
 
-    ![Регистрация нового конфиденциального клиентского приложения.](media/how-to-aad/portal-aad-register-new-app-registration-CONF-CLIENT.png)
+    :::image type="content" source="media/how-to-aad/portal-aad-register-new-app-registration-CONF-CLIENT.png" alt-text="Регистрация нового конфиденциального клиентского приложения.":::
 
 1. Выберите **Зарегистрировать**.
 
@@ -49,7 +49,7 @@ ms.locfileid: "105934759"
 
 1. Выберите **Разрешения API**.
 
-    ![Конфиденциальный клиент. Разрешения API](media/how-to-aad/portal-aad-register-new-app-registration-CONF-CLIENT-API-Permissions.png)
+    :::image type="content" source="media/how-to-aad/portal-aad-register-new-app-registration-CONF-CLIENT-API-Permissions.png" alt-text="Конфиденциальный клиент. Разрешения API.":::
 
 1. Выберите **Добавить разрешение**.
 
@@ -70,11 +70,11 @@ ms.locfileid: "105934759"
 
 1. Выберите **сертификаты & секреты**, а затем выберите **новый секрет клиента**. 
 
-    ![Конфиденциальный клиент. Секрет приложения](media/how-to-aad/portal-aad-register-new-app-registration-CONF-CLIENT-SECRET.png)
+    :::image type="content" source="media/how-to-aad/portal-aad-register-new-app-registration-CONF-CLIENT-SECRET.png" alt-text="Конфиденциальный клиент. Секрет приложения.":::
 
-1. Введите **описание** для секрета клиента. Выберите срок действия (в 1 году, в 2 года или никогда), а затем нажмите кнопку **Добавить**.
+1. Введите **описание** для секрета клиента. Выберите в раскрывающемся меню **истечение срока** действия интервал срока действия, а затем нажмите кнопку **Добавить**.
 
-   ![Добавление секрета клиента](media/how-to-aad/add-a-client-secret.png)
+   :::image type="content" source="media/how-to-aad/add-a-client-secret.png" alt-text="Добавьте секрет клиента.":::
 
 1. После создания строки секрета клиента скопируйте ее **значение** и **идентификатор** и сохраните их в безопасном месте по своему усмотрению.
 
@@ -83,7 +83,7 @@ ms.locfileid: "105934759"
 > [!NOTE]
 >Строка секрета клиента видна только один раз в портал Azure. При переходе с веб-страницы Certificates & Secrets, а затем обратно к ней строка значения превращается в маскированную. Важно сделать копию строки секрета клиента сразу после ее создания. Если у вас нет резервной копии секрета клиента, необходимо повторить описанные выше действия для его повторного создания.
  
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 В этой статье мы пошаговыми инструкциями по регистрации конфиденциального клиентского приложения в Azure AD. Вы также повлияли на шаги по добавлению разрешений API в API здравоохранения Azure. Наконец, было показано, как создать секрет приложения. Кроме того, вы можете узнать, как получить доступ к серверу FHIR, используя POST.
  

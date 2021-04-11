@@ -8,7 +8,6 @@ author: KumudD
 manager: twooley
 editor: ''
 tags: azure-resource-manager
-Customer intent: I need to diagnose a virtual machine (VM) network traffic filter problem that prevents communication to and from a VM.
 ms.assetid: ''
 ms.service: network-watcher
 ms.devlang: na
@@ -18,12 +17,12 @@ ms.workload: infrastructure
 ms.date: 01/07/2021
 ms.author: kumud
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 536a9e304d111b16e39c3187560a7a529d05c937
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 18e380345ef0caab52e9b1c537bada73e36d8b48
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98013161"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106063327"
 ---
 # <a name="quickstart-diagnose-a-virtual-machine-network-traffic-filter-problem---azure-cli"></a>Краткое руководство. Диагностика проблемы с фильтром сетевого трафика на виртуальной машине с помощью Azure CLI
 

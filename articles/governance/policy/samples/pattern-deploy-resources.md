@@ -1,14 +1,14 @@
 ---
 title: Шаблон. Развертывание ресурсов с помощью определения политики
 description: В этом шаблоне Политики Azure предоставляется пример развертывания ресурсов с помощью определения политики deployIfNotExists.
-ms.date: 08/17/2020
+ms.date: 03/31/2021
 ms.topic: sample
-ms.openlocfilehash: 0a9eec54954b8963f38b3f19a0d0cabffe1092e5
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 1dda3d5f2d4bef57919931ec3c1635310723e0c8
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89649984"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106093406"
 ---
 # <a name="azure-policy-pattern-deploy-resources"></a>Шаблон Политики Azure для развертывания ресурсов
 

@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.service: iot-central
 services: iot-central
 ms.custom: mvc
-ms.openlocfilehash: 488de7114d80e6a88cc619ba3b42f867c985ea11
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 4c7925c1bc397e15d8b6e0f2f21d5e9147109b83
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99833921"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106064857"
 ---
 # <a name="quickstart-add-a-simulated-device-to-your-iot-central-application"></a>Краткое руководство. Добавление имитированного устройства в приложение IoT Central
 
