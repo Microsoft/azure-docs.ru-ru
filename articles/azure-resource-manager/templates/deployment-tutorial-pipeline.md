@@ -5,10 +5,10 @@ ms.date: 03/02/2021
 ms.topic: tutorial
 ms.author: jgao
 ms.openlocfilehash: 3ff98c1c033c6da4b6bdf40c3b8ecb3347601741
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101722816"
 ---
 # <a name="tutorial-continuous-integration-of-arm-templates-with-azure-pipelines"></a>Руководство по Непрерывная интеграция шаблонов Resource Manager с Azure Pipelines

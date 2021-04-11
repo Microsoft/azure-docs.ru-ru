@@ -5,10 +5,10 @@ ms.subservice: autoscale
 ms.topic: conceptual
 ms.date: 09/24/2018
 ms.openlocfilehash: 4727d562e21b92e58c8091f1161cf53198ff0b26
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101726008"
 ---
 # <a name="overview-of-autoscale-in-microsoft-azure"></a>Общие сведения об автомасштабировании в Microsoft Azure
@@ -108,7 +108,7 @@ ms.locfileid: "101726008"
 | Кластеры Azure Data Explorer|[Управление кластерами Azure Data Explorer с учетом меняющихся потребностей](/azure/data-explorer/manage-cluster-horizontal-scaling)|
 | Logic Apps |[Добавление емкости среды службы интеграции (ISE)](../../logic-apps/ise-manage-integration-service-environment.md#add-ise-capacity)|
 | Spring Cloud |[Настройка автомасштабирования для приложений, состоящих из микрослужб](../../spring-cloud/spring-cloud-tutorial-setup-autoscale.md)|
-| Cлужебная шина |[Автоматическое обновление единиц обмена сообщениями в пространстве имен Служебной шины Azure](../../service-bus-messaging/automate-update-messaging-units.md)|
+| Служебная шина |[Автоматическое обновление единиц обмена сообщениями в пространстве имен Служебной шины Azure](../../service-bus-messaging/automate-update-messaging-units.md)|
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения об автомасштабировании см. в пошаговых руководствах по автомасштабированию выше, а также в следующих статьях:

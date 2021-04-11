@@ -1,19 +1,19 @@
 ---
 title: Краткое руководство. Использование клиентской библиотеки хранилища BLOB-объектов Azure версии 2.1 для Python
 description: В рамках этого краткого руководства вы создадите учетную запись хранения и контейнер в хранилище объектов (больших двоичных объектов). Затем вы используете клиентскую библиотеку службы хранилища версии 2.1 для Python, чтобы отправить большой двоичный объект в службу хранилища Azure, скачать его и вывести список больших двоичных объектов в контейнере.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 07/24/2020
 ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.custom: seo-python-october2019, devx-track-python
-ms.openlocfilehash: 34205caf03d2f2d7255f75ea6203c5572c4c429b
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 01ca2ee1bcd551baa471dda64d636e077f6e1a82
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "95523313"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106275453"
 ---
 # <a name="quickstart-manage-blobs-with-python-v21-sdk"></a>Краткое руководство. Управление большими двоичными объектами с помощью пакета SDK для Python версии 2.1
 

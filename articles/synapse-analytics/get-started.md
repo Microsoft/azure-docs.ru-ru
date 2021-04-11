@@ -9,13 +9,13 @@ ms.reviewer: jrasnick
 ms.service: synapse-analytics
 ms.subservice: workspace
 ms.topic: tutorial
-ms.date: 11/17/2020
-ms.openlocfilehash: b1339a0ab5be9004643cf2e9f86203eba9a2cc72
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.date: 03/18/2021
+ms.openlocfilehash: 0153797445e2a3f55baa53e49c06ee5c82e3bebe
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96445070"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606231"
 ---
 # <a name="get-started-with-azure-synapse-analytics"></a>Начало работы с Azure Synapse Analytics
 
@@ -24,9 +24,9 @@ ms.locfileid: "96445070"
 Выполните действия в указанном ниже *порядке*, чтобы ознакомиться с различными возможностями и узнать, как выполнять основные функции.
 
 * [Шаг 1. Создание и настройка рабочей области Synapse](get-started-create-workspace.md)
-* [Шаг 2. Анализ с использованием выделенного пула SQL](get-started-analyze-sql-pool.md)
+* [Шаг 2. Анализ с использованием бессерверного пула SQL](get-started-analyze-sql-on-demand.md)
 * [Шаг 3. Анализ с использованием Apache Spark](get-started-analyze-spark.md)
-* [Шаг 4. Анализ с использованием бессерверного пула SQL](get-started-analyze-sql-on-demand.md)
+* [Шаг 4. Анализ с использованием выделенного пула SQL](get-started-analyze-sql-pool.md)
 * [Шаг 5. Анализ данных в учетной записи хранения](get-started-analyze-storage.md)
 * [Шаг 6. Оркестрация с использованием конвейеров](get-started-pipelines.md)
 * [Шаг 7. Визуализация данных с помощью Power BI](get-started-visualize-power-bi.md)
