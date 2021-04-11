@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для Azure Service Fabric
 description: Содержит список элементов управления соответствием Политики Azure, доступных для Azure Service Fabric. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.topic: sample
 author: erikadoyle
 ms.author: edoyle
 ms.service: service-fabric
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 5338adaa5d030e4d207d0de48b44d9a004942be1
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: d2088cda574ad041411124d02be9afd50a16426d
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105035050"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106092746"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-service-fabric"></a>Элементы управления соответствием Политики Azure для Azure Service Fabric
 

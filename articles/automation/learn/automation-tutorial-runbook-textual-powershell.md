@@ -6,12 +6,12 @@ services: automation
 ms.subservice: process-automation
 ms.date: 04/19/2020
 ms.topic: tutorial
-ms.openlocfilehash: 896b4db433164471f41aa09791ede5d677028bfb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 0e5573634edf29698e7b118487fb2ec4e22e8eec
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98896618"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106169442"
 ---
 # <a name="tutorial-create-a-powershell-runbook"></a>Руководство по Создание модуля runbook в PowerShell
 
@@ -138,7 +138,7 @@ ms.locfileid: "98896618"
 
    ```powershell
    # Ensures you do not inherit an AzContext in your runbook
-   Disable-AzContextAutosave –Scope Process
+   Disable-AzContextAutosave -Scope Process
 
    $connection = Get-AutomationConnection -Name AzureRunAsConnection
 
@@ -170,7 +170,7 @@ ms.locfileid: "98896618"
 
    ```powershell
    # Ensures you do not inherit an AzContext in your runbook
-   Disable-AzContextAutosave –Scope Process
+   Disable-AzContextAutosave -Scope Process
 
    $connection = Get-AutomationConnection -Name AzureRunAsConnection
 
@@ -202,7 +202,7 @@ ms.locfileid: "98896618"
 
    ```powershell
    # Ensures you do not inherit an AzContext in your runbook
-   Disable-AzContextAutosave –Scope Process
+   Disable-AzContextAutosave -Scope Process
 
    $connection = Get-AutomationConnection -Name AzureRunAsConnection
    while(!($connectionResult) -and ($logonAttempt -le 10))
@@ -237,7 +237,7 @@ ms.locfileid: "98896618"
     [string]$ResourceGroupName
    )
    # Ensures you do not inherit an AzContext in your runbook
-   Disable-AzContextAutosave –Scope Process
+   Disable-AzContextAutosave -Scope Process
 
    $connection = Get-AutomationConnection -Name AzureRunAsConnection
    while(!($connectionResult) -and ($logonAttempt -le 10))

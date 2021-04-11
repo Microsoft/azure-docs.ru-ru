@@ -10,16 +10,19 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 10/21/2020
 ms.author: Zhchia
-ms.openlocfilehash: f1600dfc5705ca97f16e8966a796b54fc556d216
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 9d9699c564476e116654f700c32dd47b7f6d5b81
+ms.sourcegitcommit: c2a41648315a95aa6340e67e600a52801af69ec7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94359268"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106504572"
 ---
 # <a name="tutorial-configure-github-for-automatic-user-provisioning"></a>Руководство по настройке GitHub для автоматической подготовки пользователей
 
 Цель этого руководства — показать, как в GitHub и Azure AD настроить автоматическую подготовку и отзыв учетных записей пользователей из Azure AD в GitHub.
+
+> [!NOTE]
+> Интеграция подготовки в Azure AD зависит от [API SCIM GitHub](https://developer.github.com/v3/scim/), доступного для клиентов [GitHub Enterprise Cloud](https://help.github.com/articles/github-s-products/#github-enterprise) с [планом выставления счетов GitHub Enterprise](https://help.github.com/articles/github-s-billing-plans/#billing-plans-for-organizations).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -33,7 +36,7 @@ ms.locfileid: "94359268"
 * Подготовка SCIM для одной организации поддерживается, только если единый вход включен на уровне организации.
 
 > [!NOTE]
-> Интеграция подготовки в Azure AD зависит от [API SCIM GitHub](https://developer.github.com/v3/scim/), доступного для клиентов [GitHub Enterprise Cloud](https://help.github.com/articles/github-s-products/#github-enterprise) с [планом выставления счетов GitHub Enterprise](https://help.github.com/articles/github-s-billing-plans/#billing-plans-for-organizations).
+> Эту интеграцию также можно использовать в облачной среде Azure AD для государственных организаций США. Это приложение можно найти в коллекции облачных приложений с поддержкой Azure AD для государственных организаций США и настроить таким же образом, как и в общедоступном облаке.
 
 ## <a name="assigning-users-to-github"></a>Назначение пользователей в GitHub
 

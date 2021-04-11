@@ -1,18 +1,19 @@
 ---
 title: Учебник. Использование службы "Аналитика временных рядов Azure" для хранения и анализа данных телеметрии устройств Azure IoT Plug and Play
 description: Учебник по настройке среды службы "Аналитика временных рядов" и подключении центра Интернета вещей для просмотра и анализа данных телеметрии устройств IoT Plug and Play.
-author: lyrana
-ms.author: lyhughes
+author: deepakpalled
+ms.author: dpalled
+manager: diviso
 ms.date: 10/14/2020
 ms.topic: tutorial
 ms.service: iot-pnp
 services: iot-pnp
-ms.openlocfilehash: 588d680acc8c21c7f4dcf6569e23110f3c33c482
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 28cda9fb6997500f6cd7c4c4349635e7b7a36398
+ms.sourcegitcommit: c2a41648315a95aa6340e67e600a52801af69ec7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106057408"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106504283"
 ---
 # <a name="tutorial-create-and-configure-a-time-series-insights-gen2-environment"></a>Руководство по Создание и настройка среды "Аналитика временных рядов" 2-го поколения
 
@@ -26,7 +27,7 @@ ms.locfileid: "106057408"
 > * Примените файлы с примерами на [языке определения цифровых двойников (DTD)](https://github.com/Azure/opendigitaltwins-dtdl), которые использовались для устройств контроллера температуры и термостата.
 
 > [!NOTE]
-> Интеграция между Аналитикой временных рядов и IoT Plug and Play предоставляется в предварительной версии. Метод сопоставления моделей устройств DTDL с моделями Аналитики временных рядов в будущем может измениться. 
+> Интеграция между Аналитикой временных рядов и IoT Plug and Play предоставляется в предварительной версии. Метод сопоставления моделей устройств DTDL с моделями Аналитики временных рядов в будущем может измениться.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -123,7 +124,7 @@ az tsi event-source iothub create --event-source-name iot-hub-event-source --env
 
 ### <a name="define-your-types"></a>Определение типов
 
-Вы можете начать прием данных в службе "Аналитика временных рядов Azure" 2-го поколения без предварительно определенной модели. При поступлении данных телеметрии Аналитика временных рядов попытается автоматически разрешить экземпляры временных рядов на основе значений идентификатора временного ряда. Всем экземплярам будет назначен *тип по умолчанию*. Вам потребуется вручную создать новый тип для корректной классификации экземпляров. 
+Вы можете начать прием данных в службе "Аналитика временных рядов Azure" 2-го поколения без предварительно определенной модели. При поступлении данных телеметрии Аналитика временных рядов попытается автоматически разрешить экземпляры временных рядов на основе значений идентификатора временного ряда. Всем экземплярам будет назначен *тип по умолчанию*. Вам потребуется вручную создать новый тип для корректной классификации экземпляров.
 
 Ниже приведены сведения о самом простом методе для синхронизации ваших моделей устройств DTDL с типами модели временных рядов:
 
@@ -139,7 +140,7 @@ az tsi event-source iothub create --event-source-name iot-hub-event-source --env
 |-----------|------------------|-------------|
 | `@id` | `id` | `dtmi:com:example:TemperatureController;1` |
 | `displayName`    | `name`   |   `Temperature Controller`  |
-| `description`  |  `description`  |  `Device with two thermostats and remote reboot.` |  
+| `description`  |  `description`  |  `Device with two thermostats and remote reboot.` |
 |`contents` (массив)| `variables` (объект)  | См. следующий пример.
 
 ![Снимок экрана: значение DTDL для типа модели временных рядов](./media/tutorial-configure-tsi/DTDL-to-TSM-Type.png)
@@ -161,7 +162,7 @@ az tsi event-source iothub create --event-source-name iot-hub-event-source --env
           "kind": "numeric",
           "value": {
             "tsx": "coalesce($event.workingSet.Long, toLong($event.workingSet.Double))"
-          }, 
+          },
           "aggregation": {
             "tsx": "avg($value)"
           }

@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Kubernetes с поддержкой Azure Arc
 description: Здесь приведены встроенные определения политик в службе "Политика Azure" для Kubernetes с поддержкой Azure Arc. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.service: azure-arc
 author: mlearned
 ms.author: mlearned
 ms.topic: reference
 ms.custom: subject-policy-reference
-ms.openlocfilehash: d44b4bcbf119dcb20bcfb74f769470497474f401
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
-ms.translationtype: MT
+ms.openlocfilehash: 9adcb15362a048c43c1bd5c3f1b4327b23416574
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105036206"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106092916"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-arc-enabled-kubernetes"></a>Встроенные определения политик в службе "Политика Azure" для Kubernetes с поддержкой Azure Arc
 
