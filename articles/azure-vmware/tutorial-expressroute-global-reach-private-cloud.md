@@ -3,12 +3,12 @@ title: Учебник по настройке пиринга между лока
 description: Создание пиринга ExpressRoute Global Reach к частному облаку в решении Azure VMware.
 ms.topic: tutorial
 ms.date: 03/17/2021
-ms.openlocfilehash: ae92bf89a08c5fade8757e3ee596c4ed4a5e6389
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 59ddc2dd4aed850328807a4543d2fabd6f5a99f1
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103494185"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105564506"
 ---
 # <a name="tutorial-peer-on-premises-environments-to-a-private-cloud"></a>Руководство по Настройка пиринга между локальной средой и частным облаком
 
@@ -37,7 +37,7 @@ ExpressRoute Global Reach подключает локальную среду к 
 >[!IMPORTANT]
 >В рамках этих предварительных требований считается, что канал ExpressRoute локальной среды называется _канал 1_, а канал ExpressRoute частного облака находится в другой подписке и обозначается как _канал 2_.
 
-## <a name="create-an-expressroute-authorization-key-in-the-on-premises-circuit"></a>Создание ключа авторизации ExpressRoute в локальном канале
+## <a name="create-an-expressroute-authorization-key-in-the-private-cloud-expressroute-circuit"></a>Создание ключа авторизации ExpressRoute в канале ExpressRoute частного облака
 
 [!INCLUDE [request-authorization-key](includes/request-authorization-key.md)]
  
@@ -71,7 +71,7 @@ ExpressRoute Global Reach подключает локальную среду к 
 [Команды CLI](../expressroute/expressroute-howto-set-global-reach-cli.md) дополнены подробными сведениями и примерами, которые помогут настроить пиринг ExpressRoute Global Reach между локальными средами и частным облаком Решения Azure VMware.
 
 >[!TIP]
->Чтобы сократить выходные данные команд Azure CLI и отобразить только необходимые результаты, в этих инструкциях для выполнения запроса JMESPath можно использовать [аргумент `–query`](https://docs.microsoft.com/cli/azure/query-azure-cli).
+>Чтобы сократить выходные данные команд Azure CLI и отобразить только необходимые результаты, в этих инструкциях для выполнения запроса JMESPath можно использовать [аргумент `–query`](/cli/azure/query-azure-cli).
 
 1. Войдите на [портал Azure](https://portal.azure.com), используя ту же подписку, к которой относится канал ExpressRoute локальный среды. 
 

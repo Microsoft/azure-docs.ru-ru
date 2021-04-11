@@ -6,16 +6,21 @@ manager: nitinme
 ms.author: lajanuar
 author: laujan
 ms.date: 02/11/2021
-ms.openlocfilehash: fc75bfc3b79cd6aed51a44fc47787532a9d61e8b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 692033e323880db1699d7265a991775d41b05f7f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101713020"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104656011"
 ---
 # <a name="what-is-document-translation-preview"></a>Что такое Перевод документов (предварительная версия)?
 
 Перевод документов — это облачная функция службы [Переводчик Azure](../translator-info-overview.md). Эта функция входит в семейство REST API служб Azure Cognitive Services. API "Перевод документов" поддерживает 90 языков и диалектов для перевода документов и позволяет сохранить структуру документа и формат данных.
+
+Эта документация включает статьи следующих типов:  
+
+* [**Краткие руководства**](get-started-with-document-translation.md) — инструкции по началу работы и отправке запросов в службу.
+* [**Руководства**](create-sas-tokens.md) — содержат инструкции для более специфического или специализированного использования функции.  
 
 ## <a name="document-translation-key-features"></a>Основные функции Перевода документов
 
@@ -64,5 +69,3 @@ ms.locfileid: "101713020"
 
 > [!div class="nextstepaction"]
 > [Начало работы с функцией перевода документов](get-started-with-document-translation.md)
->
->
