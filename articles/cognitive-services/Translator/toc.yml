@@ -1,17 +1,19 @@
 - name: Документация по службе "Перевод текстов"
   href: index.yml
 - name: Обзор
+  expanded: true
   items:
-    - name: Что такое Переводчик?
-      href: translator-info-overview.md
     - name: Поддержка языков
       href: language-support.md
     - name: Цены и ограничения
       href: 'https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator'
+- name: Преобразование текста
+  expanded: true
+  items:
+    - name: Что такое Переводчик?
+      href: translator-info-overview.md
     - name: Часто задаваемые вопросы о средстве перевода
       href: 'https://www.microsoft.com/translator/faq.aspx'
-- name: Преобразование текста
-  items:
     - name: Краткое руководство
       href: quickstart-translator.md
     - name: Примеры
@@ -84,10 +86,10 @@
   items:
     - name: Что такое Пользовательский переводчик
       href: custom-translator/overview.md
+    - name: Вопросы и ответы
+      href: custom-translator/faq.md
     - name: Краткое руководство
       href: custom-translator/quickstart-build-deploy-custom-model.md
-    - name: ВОПРОСЫ И ОТВЕТЫ
-      href: custom-translator/faq.md
     - name: Практические руководства
       items:
         - name: Создание проекта
@@ -112,7 +114,7 @@
           href: custom-translator/unsupported-language-deployments.md
     - name: Основные понятия
       items:
-        - name: Терминология
+        - name: Основные термины
           href: custom-translator/terminology.md
         - name: Настройка и улучшение перевод текста
           href: customization.md
@@ -132,8 +134,6 @@
           href: custom-translator/training-and-model.md
         - name: Оценка BLEU
           href: custom-translator/what-is-bleu-score.md
-        - name: Encryption
-          href: encrypt-data-at-rest.md
 - name: Перевод документов
   items:
     - name: Что такое перевод документов?
@@ -146,8 +146,6 @@
           href: document-translation/create-sas-tokens.md
     - name: Справочник
       items:
-        - name: REST API для перевода документов
-          href: /rest/api/cognitiveservices/translator/documenttranslation
         - name: Получение списка форматов документов
           href: document-translation/reference/get-document-formats.md
         - name: Получение списка форматов глоссария
@@ -164,11 +162,15 @@
           href: document-translation/reference/get-operations.md
         - name: Отмена операции
           href: document-translation/reference/cancel-operation.md
-- name: Ресурсы по переводу
+- name: Ресурсы
   items:
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/translator/context/context
     - name: Соответствие нормативным требованиям
       href: 'https://azure.microsoft.com/en-us/support/legal/cognitive-services-compliance-and-privacy'
+    - name: Шифрование
+      href: encrypt-data-at-rest.md
     - name: Примеры кода в GitHub
       href: 'https://aka.ms/TranslatorGitHub'
+    - name: Конфиденциальность и файлы cookie
+      href: 'https://privacy.microsoft.com/en-US/privacystatement'

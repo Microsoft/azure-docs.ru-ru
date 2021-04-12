@@ -2,19 +2,19 @@
 title: включить файл
 description: включить файл
 services: backup
-author: dcurwin
+author: v-amallick
 manager: carmonm
 ms.service: backup
 ms.topic: include
 ms.date: 10/18/2018
-ms.author: dacurwin
+ms.author: v-amallick
 ms.custom: include file
-ms.openlocfilehash: 69259023484457249acd4c7b4a65c4cbe3e660ca
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c126c349897016a00753b402b696c60fdd7b1b2e
+ms.sourcegitcommit: af6eba1485e6fd99eed39e507896472fa930df4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96184758"
+ms.lasthandoff: 04/04/2021
+ms.locfileid: "106294149"
 ---
 ## <a name="create-a-recovery-services-vault"></a>Создание хранилища Служб восстановления
 

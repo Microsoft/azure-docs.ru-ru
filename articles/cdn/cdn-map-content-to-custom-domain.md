@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/04/2020
 ms.author: allensu
 ms.custom: mvc
-ms.openlocfilehash: b0e8f2b14d506eb408660b939a7c925a33215cca
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 9bca81e7d0eb68d43c21065f5104fc423115be25
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99537751"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106065197"
 ---
 # <a name="tutorial-add-a-custom-domain-to-your-endpoint"></a>Руководство по добавлению личного домена к конечной точке
 
