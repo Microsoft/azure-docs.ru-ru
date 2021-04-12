@@ -5,13 +5,13 @@ author: Heidilohr
 ms.topic: tutorial
 ms.date: 06/11/2019
 ms.author: helohr
-manager: lizross
-ms.openlocfilehash: 66617afee11b02eae0ba5e36d9ff91cbdf21911f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+manager: femila
+ms.openlocfilehash: ca5f225265b42ffc67a41a5252b2e789f7bcf500
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "95023111"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106445641"
 ---
 # <a name="tutorial-set-up-service-alerts"></a>Руководство по Настройка оповещений служб
 
