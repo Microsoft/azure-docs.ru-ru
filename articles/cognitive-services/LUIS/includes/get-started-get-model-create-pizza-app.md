@@ -12,10 +12,10 @@ ms.custom: include file
 ms.author: aahi
 ms.reviewer: roy-har
 ms.openlocfilehash: a021b7c5b26e1bca1e3f623ad762c2f3ee8d6020
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "97820623"
 ---
 Создайте приложение Pizza.

@@ -5,10 +5,10 @@ ms.topic: tutorial
 ms.custom: contperf-fy21q3
 ms.date: 02/17/2021
 ms.openlocfilehash: 48b6927407a95d41603c3032f298ffc28def9693
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103462462"
 ---
 # <a name="deploy-and-configure-azure-vmware-solution"></a>Развертывание и настройка Решения Azure VMware

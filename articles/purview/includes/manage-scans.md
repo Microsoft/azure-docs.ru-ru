@@ -6,10 +6,10 @@ ms.subservice: purview-data-catalog
 ms.topic: include
 ms.date: 1/20/2021
 ms.openlocfilehash: ac83f455d2af82c3f6970077fccb17f07e53cccc
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "98901174"
 ---
 ## <a name="creating-and-running-a-scan"></a>Создание и выполнение проверки

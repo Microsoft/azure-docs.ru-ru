@@ -7,12 +7,12 @@ ms.service: iot-develop
 ms.devlang: python
 ms.topic: quickstart
 ms.date: 01/11/2021
-ms.openlocfilehash: d0dcca0c4be801f385a48afcd41b6a547bab3fbe
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: 5d872dd7c94a0b3ab23623bb246ff7ae81609779
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100654774"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105047173"
 ---
 # <a name="quickstart-send-telemetry-from-a-device-to-azure-iot-central-python"></a>Краткое руководство. Отправка данных телеметрии с устройства в Azure IoT Central (Python)
 
@@ -265,6 +265,6 @@ ms.locfileid: "100654774"
 
 Теперь изучите пакет SDK для Интернета вещей Azure для Python на примерах приложений.
 
-- [Асинхронные примеры.](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/async-hub-scenarios) Этот каталог содержит асинхронные примеры Python для дополнительных сценариев Центра Интернета вещей.
-- [Синхронные примеры.](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/sync-samples) Этот каталог содержит примеры Python для использования в Python 2.7 или в синхронных сценариях совместимости для Python 3.5+.
-- [Примеры IOT Edge.](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/async-edge-scenarios) Этот каталог содержит примеры Python для работы с модулями Edge и подчиненными устройствами.
+- [Асинхронные примеры](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/async-hub-scenarios). Этот каталог содержит асинхронные примеры Python для дополнительных сценариев Центра Интернета вещей.
+- [Синхронные примеры.](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/sync-samples) Этот каталог содержит примеры Python для использования в Python 2.7 или в синхронных сценариях совместимости для Python 3.6 и более поздней версии.
+- [Примеры IOT Edge](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/async-edge-scenarios). Этот каталог содержит примеры Python для работы с модулями Edge и подчиненными устройствами.
