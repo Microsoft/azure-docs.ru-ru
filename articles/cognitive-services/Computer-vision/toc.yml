@@ -3,7 +3,7 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Что собой представляет Компьютерное зрение
+    - name: Общие сведения о Компьютерном зрении
       href: overview.md
     - name: Поддержка языков
       href: language-support.md
@@ -13,17 +13,142 @@
       href: whats-new.md
     - name: Вопросы и ответы по Компьютерному зрению
       href: FAQ.md
-- name: Краткое руководство по Компьютерному зрению
-  href: quickstarts-sdk/client-library.md
-- name: Примеры
+- name: оптическое распознавание символов;
   items:
-    - name: Создание приложения для обработки изображений
-      href: Tutorials/CSharpTutorial.md
-    - name: Другие примеры использования Компьютерного зрения
+    - name: Общие сведения об OCR
+      href: overview-ocr.md
+    - name: Краткое руководство по OCR
+      href: quickstarts-sdk/client-library.md
+    - name: Примеры
       href: /samples/browse/?products=azure&terms=computer-vision
-- name: Ответственное использование ИИ
+    - name: Практические руководства
+      items:
+        - name: Вызов API чтения
+          href: Vision-API-How-to-Topics/call-read-api.md
+        - name: "Обновление Read версии\_2.x до версии\_3.x"
+          href: upgrade-api-versions.md
+        - name: Использование контейнера с доступом на чтение
+          items:
+            - name: Установка и запуск контейнеров
+              href: computer-vision-how-to-install-containers.md
+              displayName: 'docker, container, package, packaged app, swagger, open api, openapi, train, publish, az, acr, cli, tps, core, curl, try it now, import, pull, on-premises'
+            - name: Настройка контейнеров
+              href: computer-vision-resource-container-config.md
+            - name: "Переход на контейнер OCR с доступом для чтения версии\_3"
+              href: read-container-migration-guide.md
+              displayName: 'docker, container, billing, apikey, pull, logging, on-premises'
+            - name: Использование с Kubernetes и Helm
+              href: deploy-computer-vision-on-premises.md
+              displayName: 'kubectl, docker, helm, kubernetes, K8s, tiller, container, image, on-prem, on-premises'
+            - name: Использование экземпляров контейнеров
+              maintainContext: true
+              href: ../containers/azure-container-instance-recipe.md
+              displayName: 'container instances, container, containers, images'
+            - name: Все контейнеры Cognitive Services
+              href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/computer-vision/context/context
+    - name: Справка
+      items:
+        - name: "REST API OCR\_3.2, предварительная версия"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
+        - name: "REST API OCR\_3.1"
+          href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005'
+        - name: "REST API OCR\_2.1"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641'
+        - name: "REST API OCR\_1.0"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739'
+        - name: .NET
+          href: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
+        - name: Node.js
+          href: /javascript/api/@azure/cognitiveservices-computervision/?view=azure-node-latest
+        - name: Python
+          href: /python/api/overview/azure/cognitiveservices/computervision?view=azure-python
+        - name: Go
+          href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision'
+        - name: Java
+          href: /java/api/overview/azure/cognitiveservices/client/computervision?view=azure-java-stable
+        - name: Azure CLI
+          href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
+        - name: Azure PowerShell
+          href: /powershell/module/azurerm.cognitiveservices/
+- name: Анализ изображений
   items:
-    - name: Пространственный анализ
+    - name: Общие сведения об Анализе изображений
+      href: overview-image-analysis.md
+    - name: Краткое руководство по Анализу изображений
+      href: quickstarts-sdk/client-library.md
+    - name: Примеры
+      items:
+        - name: Создание приложения для обработки изображений
+          href: Tutorials/CSharpTutorial.md
+        - name: Другие примеры
+          href: /samples/browse/?products=azure&terms=computer-vision
+    - name: Практические руководства
+      items:
+        - name: Вызов API "Анализ изображений"
+          href: Vision-API-How-to-Topics/HowToCallVisionAPI.md
+        - name: Анализ видео в реальном времени
+          href: Vision-API-How-to-Topics/HowtoAnalyzeVideo_Vision.md
+    - name: Основные понятия
+      items:
+        - name: Обнаружение объектов
+          href: concept-object-detection.md
+        - name: Обнаружение торговых марок
+          href: concept-brand-detection.md
+        - name: Теги содержимого
+          href: concept-tagging-images.md
+        - name: Классификация изображений
+          href: concept-categorizing-images.md
+        - name: Классификация категорий
+          href: Category-Taxonomy.md
+        - name: Описания изображений
+          href: concept-describing-images.md
+        - name: Определение лиц
+          href: concept-detecting-faces.md
+        - name: Обнаружение типов изображений
+          href: concept-detecting-image-types.md
+        - name: 'Содержимое, связанное с доменами'
+          href: concept-detecting-domain-content.md
+        - name: Определение цветовой схемы
+          href: concept-detecting-color-schemes.md
+        - name: Эскизы со смарт-обрезанием
+          href: concept-generating-thumbnails.md
+        - name: Обнаружение содержимого для взрослых
+          href: concept-detecting-adult-content.md
+    - name: Учебники
+      items:
+        - name: Создание метаданных для изображений
+          href: Tutorials/storage-lab-tutorial.md
+    - name: Справочник
+      items:
+        - name: "REST\_API \"Анализ изображений\"\_3.2, предварительная версия"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
+        - name: "REST\_API \"Анализ изображений\"\_3.1"
+          href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005'
+        - name: "REST\_API \"Анализ изображений\"\_2.1"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641'
+        - name: "REST\_API \"Анализ изображений\"\_1.0"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739'
+        - name: .NET
+          href: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
+        - name: Node.js
+          href: /javascript/api/@azure/cognitiveservices-computervision/?view=azure-node-latest
+        - name: Python
+          href: /python/api/overview/azure/cognitiveservices/computervision?view=azure-python
+        - name: Go
+          href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision'
+        - name: Java
+          href: /java/api/overview/azure/cognitiveservices/client/computervision?view=azure-java-stable
+        - name: Azure CLI
+          href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
+        - name: Azure PowerShell
+          href: /powershell/module/azurerm.cognitiveservices/
+- name: Пространственный анализ
+  items:
+    - name: Обзор Пространственного анализа
+      href: intro-to-spatial-analysis-public-preview.md
+    - name: Настройка главного компьютера и запуск контейнера
+      href: spatial-analysis-container.md
+    - name: Ответственное использование ИИ
       items:
         - name: Примечания о прозрачности
           items:
@@ -41,122 +166,37 @@
               href: /legal/cognitive-services/computer-vision/research-insights?context=/azure/cognitive-services/computer-vision/context/context
         - name: 'Данные, конфиденциальность и безопасность'
           href: /legal/cognitive-services/computer-vision/compliance-privacy-security-2?context=/azure/cognitive-services/computer-vision/context/context
+    - name: Практические руководства
+      items:
+        - name: Использование контейнера пространственного анализа
+          items:
+            - name: Настройка операций
+              href: spatial-analysis-operations.md
+            - name: Развертывание веб-приложения для пересчета людей
+              href: Spatial-analysis-web-app.md
+            - name: Ведение журнала и устранение неполадок
+              href: spatial-analysis-logging.md
+            - name: Размещение зон и линий
+              href: spatial-analysis-zone-line-placement.md
+            - name: Размещение камеры
+              href: spatial-analysis-camera-placement.md
+            - name: Все контейнеры Cognitive Services
+              href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/computer-vision/context/context
 - name: Практические руководства
   items:
-    - name: Вызов API компьютерного зрения
-      href: Vision-API-How-to-Topics/HowToCallVisionAPI.md
-    - name: Анализ видео в реальном времени
-      href: Vision-API-How-to-Topics/HowtoAnalyzeVideo_Vision.md
     - name: Как настроить виртуальные сети
-      href: ../cognitive-services-virtual-networks.md?context=%2fazure%2fcognitive-services%2fcomputer-vision%2fcontext%2fcontext
-    - name: "Обновление Read версии\_2.x до версии\_3.x"
-      href: upgrade-api-versions.md
+      href: /azure/cognitive-services/cognitive-services-virtual-networks?context=/azure/cognitive-services/computer-vision/context/context
     - name: Как настроить проверку подлинности AAD
-      href: ../authentication.md?tabs=powershell%3fcontext%3d%2fazure%2fcognitive-services%2fcomputer-vision%2fcontext%2fcontext
+      href: /azure/cognitive-services/authentication?tabs=powershell?context=/azure/cognitive-services/computer-vision/context/context
     - name: 'Как использовать ключи, управляемые клиентом'
-      href: ../encryption/cognitive-services-encryption-keys-portal.md?context=%2fazure%2fcognitive-services%2fcomputer-vision%2fcontext%2fcontext
-    - name: Развертывание Компьютерного зрения
-      items:
-        - name: Контейнеры
-          items:
-            - name: Документация по контейнерам Cognitive Services
-              href: ../containers/index.yml
-            - name: "Контейнер API\_чтения"
-              items:
-                - name: Установка и запуск контейнеров
-                  href: computer-vision-how-to-install-containers.md
-                  displayName: 'docker, container, package, packaged app, swagger, open api, openapi, train, publish, az, acr, cli, tps, core, curl, try it now, import, pull, on-premises'
-                - name: Настройка контейнеров
-                  href: computer-vision-resource-container-config.md
-                - name: "Переход на контейнер с доступом на чтение версии\_3"
-                  href: read-container-migration-guide.md
-                  displayName: 'docker, container, billing, apikey, pull, logging, on-premises'
-                - name: Использование с Kubernetes и Helm
-                  href: deploy-computer-vision-on-premises.md
-                  displayName: 'kubectl, docker, helm, kubernetes, K8s, tiller, container, image, on-prem, on-premises'
-                - name: Использование экземпляров контейнеров
-                  maintainContext: true
-                  href: ../containers/azure-container-instance-recipe.md
-                  displayName: 'container instances, container, containers, images'
-            - name: Контейнер для пространственного анализа
-              items:
-                - name: Общие сведения о пространственном анализе
-                  href: intro-to-spatial-analysis-public-preview.md
-                - name: Настройка главного компьютера и запуск контейнера
-                  href: spatial-analysis-container.md
-                - name: Настройка операций
-                  href: spatial-analysis-operations.md
-                - name: Развертывание веб-приложения для пересчета людей
-                  href: Spatial-analysis-web-app.md
-                - name: Ведение журнала и устранение неполадок
-                  href: spatial-analysis-logging.md
-                - name: Размещение зон и линий
-                  href: spatial-analysis-zone-line-placement.md
-                - name: Размещение камеры
-                  href: spatial-analysis-camera-placement.md
-- name: Основные понятия
-  items:
-    - name: Оптическое распознавание текста (OCR)
-      href: concept-recognizing-text.md
-    - name: Обнаружение объектов
-      href: concept-object-detection.md
-    - name: Обнаружение торговых марок
-      href: concept-brand-detection.md
-    - name: Теги содержимого
-      href: concept-tagging-images.md
-    - name: Классификация изображений
-      href: concept-categorizing-images.md
-    - name: Классификация категорий
-      href: Category-Taxonomy.md
-    - name: Описания изображений
-      href: concept-describing-images.md
-    - name: Определение лиц
-      href: concept-detecting-faces.md
-    - name: Обнаружение типов изображений
-      href: concept-detecting-image-types.md
-    - name: 'Содержимое, связанное с доменами'
-      href: concept-detecting-domain-content.md
-    - name: Определение цветовой схемы
-      href: concept-detecting-color-schemes.md
-    - name: Эскизы со смарт-обрезанием
-      href: concept-generating-thumbnails.md
-    - name: Обнаружение содержимого для взрослых
-      href: concept-detecting-adult-content.md
-- name: Учебники
-  items:
-    - name: Создание метаданных для изображений
-      href: Tutorials/storage-lab-tutorial.md
-- name: Справочник
-  items:
-    - name: "REST\_API \"Компьютерное зрение\" версии\_3.2 (предварительная версия)"
-      href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
-    - name: "REST\_API \"Компьютерное зрение\" версии\_3.1 (предварительная версия)"
-      href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005'
-    - name: "REST\_API \"Компьютерное зрение\" версии\_2.1 (предварительная версия)"
-      href: 'https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641'
-    - name: "REST\_API \"Компьютерное зрение\" версии\_1.0 (предварительная версия)"
-      href: 'https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739'
-    - name: .NET
-      href: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
-    - name: Node.js
-      href: /javascript/api/@azure/cognitiveservices-computervision/?view=azure-node-latest
-    - name: Python
-      href: /python/api/overview/azure/cognitiveservices/computervision?view=azure-python
-    - name: Go
-      href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision'
-    - name: Java
-      href: /java/api/overview/azure/cognitiveservices/client/computervision?view=azure-java-stable
-    - name: Azure CLI
-      href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
-    - name: Azure PowerShell
-      href: /powershell/module/azurerm.cognitiveservices/
+      href: /azure/cognitive-services/encryption/cognitive-services-encryption-keys-portal?context=/azure/cognitive-services/computer-vision/context/context
 - name: Ресурсы
   items:
     - name: Поддержка регионов
       href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Модули LEARN
       href: /learn/paths/explore-computer-vision-microsoft-azure/
-    - name: Поддержка и справка
+    - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/computer-vision/context/context
     - name: Соответствие требованиям
       href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'

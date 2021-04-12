@@ -8,12 +8,12 @@ ms.topic: overview
 ms.workload: infrastructure-services
 ms.date: 03/09/2021
 ms.author: duau
-ms.openlocfilehash: ef3d415f4f0ca82e79df84ef48acc0323a69099a
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 0ba34b298fad21656a63c813057ed0c69db6c7f1
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104952156"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106064891"
 ---
 # <a name="what-is-azure-front-door"></a>Что такое Azure Front Door?
 

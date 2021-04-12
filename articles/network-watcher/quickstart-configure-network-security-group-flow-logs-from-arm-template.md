@@ -3,18 +3,17 @@ title: Краткое руководство. Настройка журнало�
 description: Сведения о том, как включить журналы потоков для группы безопасности сети (NSG) программным способом с помощью шаблона Azure Resource Manager (шаблона ARM) и Azure PowerShell.
 services: network-watcher
 author: damendo
-Customer intent: I need to enable the network security group flow logs by using an Azure Resource Manager template.
 ms.service: network-watcher
 ms.topic: quickstart
 ms.date: 01/07/2021
 ms.author: damendo
 ms.custom: subject-armqs
-ms.openlocfilehash: bc075e5074fe39ad38e45235af932b40fef78fce
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: df7f33d9aed307bdf85a571c8169d1b0dbe863e5
+ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102521872"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106063803"
 ---
 # <a name="quickstart-configure-network-security-group-flow-logs-by-using-an-arm-template"></a>Краткое руководство. Настройка журналов потоков для группы безопасности сети с помощью шаблона Azure Resource Manager
 
