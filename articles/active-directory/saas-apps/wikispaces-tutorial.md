@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/28/2019
 ms.author: jeedes
 ms.openlocfilehash: 877f589c19663503b9bb0b1627f1dffe0eba1a23
-ms.sourcegitcommit: ab94795f9b8443eef47abae5bc6848bb9d8d8d01
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96302738"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-wikispaces"></a>Руководство. Интеграция Azure Active Directory с Wikispaces
@@ -95,7 +95,7 @@ ms.locfileid: "96302738"
 
 3. На странице **Настройка единого входа с помощью SAML** щелкните **Изменить**, чтобы открыть диалоговое окно **Базовая конфигурация SAML**.
 
-    ![Правка базовой конфигурации SAML](common/edit-urls.png)
+    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
 4. В разделе **Базовая конфигурация SAML** выполните приведенные ниже действия.
 
@@ -176,17 +176,17 @@ ms.locfileid: "96302738"
 
 7. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
-### <a name="create-wikispaces-test-user"></a>Создание тестового пользователя Wikispaces
+### <a name="create-wikispaces-test-user&quot;></a>Создание тестового пользователя Wikispaces
 
 Чтобы пользователи Azure Active Directory могли выполнять вход в Wikispaces, они должны быть подготовлены в Wikispaces. В случае использования Wikispaces подготовка выполняется вручную.
 
-### <a name="to-provision-a-user-accounts-perform-the-following-steps"></a>Чтобы подготовить учетные записи пользователей, выполните следующие действия.
+### <a name=&quot;to-provision-a-user-accounts-perform-the-following-steps&quot;></a>Чтобы подготовить учетные записи пользователей, выполните следующие действия.
 
 1. Выполните вход на сайт компании **Wikispaces** в качестве администратора.
 
 2. Перейдите в раздел **Участники**.
    
-    ![Участники](./media/wikispaces-tutorial/ic787193.png "Члены")
+    ![Участники](./media/wikispaces-tutorial/ic787193.png &quot;Члены")
 
 3. Щелкните **Пригласить пользователей**.
    

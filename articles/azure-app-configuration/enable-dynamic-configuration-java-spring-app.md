@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 12/09/2020
 ms.custom: devx-track-java
 ms.author: mametcal
-ms.openlocfilehash: 076ab0bb7dbc85a31b626a24d977e6fea558143e
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 590f221b0a4980d462267dd8c3a73ca7d02583fd
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102636544"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105625523"
 ---
 # <a name="tutorial-use-dynamic-configuration-in-a-java-spring-app"></a>Руководство по использованию динамической конфигурации в приложении Java Spring
 
@@ -89,6 +89,7 @@ public void myConfigurationRefreshCheck() {
     ```
 
 1. Чтобы проверить динамическую конфигурацию, откройте портал Конфигурации приложений Azure, связанный с вашим приложением. Выберите **Обозреватель конфигураций** и обновите значение отображаемого ключа, например следующим образом:
+
     | Клавиши | Значение |
     |---|---|
     | application/config.message | Hello - Updated |

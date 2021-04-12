@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/18/2020
 ms.author: jeedes
 ms.openlocfilehash: 4e8dce970c9e7cfb2aa7887cf1fb3ed6ef9030a1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98735605"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-zscaler-beta"></a>Руководство по интеграции Azure Active Directory с Zscaler Beta
@@ -190,14 +190,14 @@ ms.locfileid: "98735605"
 
     b. Выберите **Активировать**.
 
-## <a name="configure-proxy-settings"></a>Настройка параметров прокси
+## <a name="configure-proxy-settings&quot;></a>Настройка параметров прокси
 Чтобы настроить параметры прокси-сервера в Internet Explorer, выполните следующие шаги.
 
 1. Запустите **Internet Explorer**.
 
 2. В меню **Сервис** выберите **Свойства браузера**, чтобы открыть диалоговое окно **Свойства браузера**. 
     
-     ![Диалоговое окно "Свойства браузера"](./media/zscaler-beta-tutorial/ic769492.png "Свойства браузера")
+     ![Диалоговое окно &quot;Свойства браузера&quot;](./media/zscaler-beta-tutorial/ic769492.png &quot;Свойства браузера")
 
 3. Выберите вкладку **Подключения**. 
   

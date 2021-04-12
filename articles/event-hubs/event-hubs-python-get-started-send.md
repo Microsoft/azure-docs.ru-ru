@@ -3,12 +3,12 @@ title: Отправка и получение событий через Цент
 description: В статье описано, как создать приложение Python, которое отправляет события или получает их через службу "Центры событий Azure" с помощью пакета azure-eventhub, выпущенного последним.
 ms.topic: quickstart
 ms.date: 02/11/2020
-ms.openlocfilehash: f05f546f19a7944c049b97ba18065159db6fab67
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.openlocfilehash: ea2270888830327506df5f43c18f8e798f61cc00
+ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97605570"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104802783"
 ---
 # <a name="send-events-to-or-receive-events-from-event-hubs-by-using-python-azure-eventhub"></a>Отправка или получение событий через концентраторы событий с помощью Python (azure-eventhub)
 В этом кратком руководстве показано, как отправлять события в концентратор событий и получать события из него с помощью пакета Python **azure-eventhub**.
@@ -19,7 +19,7 @@ ms.locfileid: "97605570"
 Для работы с данным руководством необходимо следующее:
 
 - **Подписка Microsoft Azure.** Чтобы использовать службы Azure, в том числе Центры событий Azure, потребуется действующая подписка.  Если у вас еще нет учетной записи Azure, [зарегистрируйтесь для работы с бесплатной пробной версией](https://azure.microsoft.com/free/) или [активируйте преимущества для подписчиков MSDN при создании учетной записи](https://azure.microsoft.com).
-- Python 2.7, 3.5 или более поздней версии, для которого установлено и обновлено PIP.
+- Python 2.7, 3.6 или более поздней версии, для которого установлено и обновлено PIP.
 - Пакет Python для Центров событий. 
 
     Чтобы установить этот пакет, выполните следующую команду в окне командной строки, где путь к Python сохранен в переменной окружения path.

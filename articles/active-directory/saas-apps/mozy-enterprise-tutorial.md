@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 03/01/2019
 ms.author: jeedes
-ms.openlocfilehash: 97294bdd088f50a46786c3568f4230706f750c4c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: dfeb99fdbd5cf2b0784982b385d46c3a16901ec8
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92520954"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105567429"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-mozy-enterprise"></a>Учебник. Интеграция Azure Active Directory с Mozy Enterprise
 
@@ -104,7 +104,7 @@ ms.locfileid: "92520954"
     В текстовом поле **URL-адрес входа** введите URL-адрес в формате `https://<tenantname>.Mozyenterprise.com`.
 
     > [!NOTE]
-    > Это значение приведено для примера. Вместо него необходимо указать фактический URL-адрес входа. Обратитесь к [группе поддержки клиентов Mozy Enterprise](https://support.mozy.com/), чтобы получить это значение. Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
+    > Это значение приведено для примера. Вместо него необходимо указать фактический URL-адрес входа. Обратитесь к [группе поддержки клиентов Mozy Enterprise](https://www.safenames.net/about-us/contact-us), чтобы получить это значение. Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
 
 5. На странице **Настройка единого входа с помощью SAML** в разделе **Сертификат подписи SAML** щелкните **Загрузить**, чтобы загрузить требуемый **сертификат (Base64)** из предложенных вариантов, и сохраните его на компьютере.
 
@@ -120,13 +120,13 @@ ms.locfileid: "92520954"
 
     c. URL-адрес выхода.
 
-### <a name="configure-mozy-enterprise-single-sign-on"></a>Настройка единого входа в Mozy Enterprise
+### <a name="configure-mozy-enterprise-single-sign-on&quot;></a>Настройка единого входа в Mozy Enterprise
 
 1. В другом окне веб-браузера войдите на сайт Mozy Enterprise компании в качестве администратора.
 
 2. В разделе **Конфигурация** щелкните **Политика проверки подлинности**.
    
-    ![Снимок экрана: выбранный пункт "Политика проверки подлинности" в разделе "Конфигурация".](./media/mozy-enterprise-tutorial/ic777314.png "Политика проверки подлинности")
+    ![Снимок экрана: выбранный пункт &quot;Политика проверки подлинности&quot; в разделе &quot;Конфигурация&quot;.](./media/mozy-enterprise-tutorial/ic777314.png &quot;Политика проверки подлинности")
 
 3. В разделе **Политика проверки подлинности** сделайте следующее:
    

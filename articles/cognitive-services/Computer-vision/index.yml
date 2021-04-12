@@ -1,192 +1,135 @@
-### YamlMime:Landing
+### YamlMime:Hub
 title: Документация по Компьютерному зрению
-summary: Облачный API Компьютерного зрения предоставляет разработчикам доступ к расширенным алгоритмам обработки изображений и возврата данных. После загрузки изображения или указания его URL-адреса алгоритмы Компьютерного зрения от Майкрософт могут по-разному анализировать визуальное содержимое на основе входных данных и выбора пользователя. Узнайте, как анализировать визуальное содержимое разными способами с помощью кратких руководств, примеров и других материалов.
+summary: 'Облачный API Компьютерного зрения предоставляет разработчикам доступ к расширенным алгоритмам обработки изображений и возврата данных. После загрузки изображения или указания его URL-адреса алгоритмы Компьютерного зрения от Майкрософт могут по-разному анализировать визуальное содержимое на основе входных данных и выбора пользователя. Узнайте, как анализировать визуальное содержимое разными способами с помощью кратких руководств, примеров и других материалов.'
 metadata:
-  title: Документация по API "Компьютерное зрение". Краткие руководства, учебные материалы и справочник по API. Azure Cognitive Services | Документация Майкрософт
-  description: Облачный API Компьютерного зрения предоставляет разработчикам доступ к расширенным алгоритмам обработки изображений и возврата данных. После загрузки изображения или указания его URL-адреса алгоритмы Компьютерного зрения от Майкрософт могут по-разному анализировать визуальное содержимое на основе входных данных и выбора пользователя. Узнайте, как анализировать визуальное содержимое разными способами с помощью кратких руководств, примеров и других материалов.
+  title: 'Документация по API "Компьютерное зрение". Краткие руководства, учебные материалы и справочник по API. Azure Cognitive Services | Документация Майкрософт'
+  description: 'Облачный API Компьютерного зрения предоставляет разработчикам доступ к расширенным алгоритмам обработки изображений и возврата данных. После загрузки изображения или указания его URL-адреса алгоритмы Компьютерного зрения от Майкрософт могут по-разному анализировать визуальное содержимое на основе входных данных и выбора пользователя. Узнайте, как анализировать визуальное содержимое разными способами с помощью кратких руководств, примеров и других материалов.'
   services: cognitive-services
   ms.service: cognitive-services
   ms.subservice: computer-vision
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: PatrickFarley
   ms.author: pafarley
-  ms.date: 09/22/2020
-  ms.openlocfilehash: 940a34cfbf4281649737f0cf3fed7b490a9938a7
-  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
-  ms.translationtype: HT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/09/2021
-  ms.locfileid: "102508900"
-landingContent:
-- title: Сведения о Компьютерном зрении
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Что собой представляет Компьютерное зрение
+  ms.date: 03/31/2021
+highlightedContent:
+  items:
+    - title: Сведения о Компьютерном зрении
+      itemType: overview
       url: overview.md
-  - linkListType: whats-new
-    links:
-    - text: Новые возможности
+    - title: Новые возможности Компьютерного зрения
+      itemType: whats-new
       url: whats-new.md
-  - linkListType: video
-    links:
-    - text: Создание интеллектуальных приложений с помощью интерфейсов API Компьютерного зрения
-      url: https://azure.microsoft.com/resources/videos/connect-2017-microsoft-cognitive-services-put-intelligence-into-your-business-apps/
-- title: Оптическое распознавание текста (OCR)
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Оптическое распознавание текста (OCR)
-      url: concept-recognizing-text.md
-  - linkListType: quickstart
-    links:
-    - text: С помощью пакета SDK для .NET
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-csharp
-    - text: С помощью пакета SDK для Python
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-python
-    - text: Использование пакета SDK для Java
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-java
-    - text: Использование пакета SDK для Node
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-javascript
-    - text: Использование пакета SDK для Go
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-go
-    - text: Использование REST API
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-rest-api
-- title: Распознавание объектов на изображениях
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Обнаружение объектов
-      url: concept-object-detection.md
-  - linkListType: quickstart
-    links:
-    - text: С помощью пакета SDK для .NET
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-csharp
-    - text: С помощью пакета SDK для Python
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-python
-    - text: Использование пакета SDK для Java
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-java
-    - text: Использование пакета SDK для Node
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-javascript
-    - text: Использование пакета SDK для Go
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-go
-    - text: Использование REST API
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-rest-api
-- title: Применение тегов содержимого к изображениям
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Теги содержимого
-      url: concept-tagging-images.md
-  - linkListType: quickstart
-    links:
-    - text: С помощью пакета SDK для .NET
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-csharp
-    - text: С помощью пакета SDK для Python
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-python
-    - text: Использование пакета SDK для Java
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-java
-    - text: Использование пакета SDK для Node
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-javascript
-    - text: Использование пакета SDK для Go
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-go
-    - text: Использование REST API
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-rest-api
-- title: Использование контейнера с доступом на чтение
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: Установка и запуск контейнера
-      url: computer-vision-how-to-install-containers.md
-  - linkListType: how-to-guide
-    links:
-    - text: Настройка контейнеров
-      url: computer-vision-resource-container-config.md
-  - linkListType: deploy
-    links:
-    - text: Использование экземпляров контейнеров
-      url: ../containers/azure-container-instance-recipe.md
-    - text: Использование с Kubernetes и Helm
-      url: deploy-computer-vision-on-premises.md
-- title: Использование контейнера пространственного анализа
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: Общие сведения о пространственном анализе
-      url: intro-to-spatial-analysis-public-preview.md
-    - text: Установка и запуск контейнера
-      url: spatial-analysis-container.md
-    - text: Настройка операций
-      url: spatial-analysis-operations.md
-  - linkListType: deploy
-    links:
-    - text: Развертывание приложения для пересчета людей
-      url: spatial-analysis-web-app.md
-  - linkListType: concept
-    links:
-    - text: Размещение зон и линий
-      url: spatial-analysis-zone-line-placement.md
-    - text: Размещение камеры
-      url: spatial-analysis-camera-placement.md
-    - text: Ведение журнала и устранение неполадок
-      url: spatial-analysis-logging.md
-- title: Обнаружение лиц на изображении
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Определение лиц
-      url: concept-detecting-faces.md
-  - linkListType: quickstart
-    links:
-    - text: С помощью пакета SDK для .NET
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-csharp
-    - text: С помощью пакета SDK для Python
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-python
-    - text: Использование пакета SDK для Java
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-java
-    - text: Использование пакета SDK для Node
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-javascript
-    - text: Использование пакета SDK для Go
-      url: quickstarts-sdk/client-library.md?pivots=programming-language-go
-- title: Ответственное использование ИИ
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Примечание о прозрачности для пространственного анализа
-      url: /legal/cognitive-services/computer-vision/transparency-note-spatial-analysis?context=%2fazure%2fcognitive-services%2fComputer-vision%2fcontext%2fcontext
-  - linkListType: concept
-    links:
-    - text: Ответственное использование в развертывании ИИ
-      url: /legal/cognitive-services/computer-vision/responsible-use-deployment?context=%2fazure%2fcognitive-services%2fComputer-vision%2fcontext%2fcontext
-    - text: Данные, конфиденциальность и безопасность
-      url: /legal/cognitive-services/computer-vision/compliance-privacy-security-2?context=%2fazure%2fcognitive-services%2fComputer-vision%2fcontext%2fcontext
-- title: Справочник
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: API "Компьютерное зрение" версии 3.2 (предварительная версия)
-      url: https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b
-    - text: API "Компьютерное зрение" версии 3.1
-      url: https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005
-    - text: API "Компьютерное зрение" версии 2.1
-      url: https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641/operations/56f91f2e778daf14a499f21b
-    - text: Пакет SDK для .NET
-      url: /dotnet/api/overview/azure/cognitiveservices/client/computervision
-    - text: Пакет SDK для Python
-      url: /python/api/overview/azure/cognitiveservices/computervision
-    - text: Пакет SDK для Java
-      url: /java/api/overview/azure/cognitiveservices/client/computervision
-    - text: Пакет SDK для Node.js
-      url: /javascript/api/@azure/cognitiveservices-computervision/
-    - text: Пакет SDK для GO
-      url: https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision
-    - text: Azure PowerShell
-      url: /powershell/module/az.cognitiveservices/#cognitive_services
-    - text: Интерфейс командной строки Azure (CLI)
-      url: /cli/azure/cognitiveservices#az-cognitiveservices-list
-- title: Справка и обратная связь
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Возможности получения поддержки и справки
-      url: ../cognitive-services-support-options.md?context=/azure/cognitive-services/computer-vision/context/context
+    - title: Поддержка языков
+      itemType: reference
+      url: language-support.md
+conceptualContent:
+  items:
+    - title: Оптическое распознавание символов
+      links:
+        - itemType: overview
+          text: Сведения об OCR
+          url: overview-ocr.md
+        - itemType: quickstart
+          text: Начало работы с OCR
+          url: quickstarts-sdk/client-library.md
+        - itemType: how-to-guide
+          text: Вызов API чтения
+          url: Vision-API-How-to-Topics/call-read-api.md
+        - itemType: deploy
+          text: Использование контейнера OCR с доступом для чтения
+          url: computer-vision-how-to-install-containers.md
+        - itemType: reference
+          text: Справочные материалы по API OCR
+          url: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/5d986960601faab4bf452005'
+      footerLink:
+        text: Подробнее
+        url: index-ocr.yml
+    - title: Анализ изображений
+      links:
+        - itemType: overview
+          text: Сведения об Анализе изображений
+          url: overview-image-analysis.md
+        - itemType: quickstart
+          text: Начало работы с Анализом изображений
+          url: quickstarts-sdk/image-analysis-client-library.md
+        - itemType: concept
+          text: Теги содержимого
+          url: concept-tagging-images.md
+        - itemType: concept
+          text: Описания изображений
+          url: concept-describing-images.md
+        - itemType: concept
+          text: Определение лиц
+          url: concept-detecting-faces.md
+        - itemType: tutorial
+          text: Создание метаданных для изображений
+          url: Tutorials/storage-lab-tutorial.md
+        - itemType: reference
+          text: Справочные материалы по API "Анализ изображений"
+          url: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
+      footerLink:
+        text: Подробнее
+        url: index-image-analysis.yml
+    - title: Пространственный анализ
+      links:
+        - itemType: overview
+          text: Сведения о пространственном анализе
+          url: intro-to-spatial-analysis-public-preview.md
+        - itemType: quickstart
+          text: Начало работы с пространственным анализом
+          url: spatial-analysis-container.md
+        - itemType: how-to-guide
+          text: Настройка операций пространственного анализа
+          url: spatial-analysis-operations.md
+        - itemType: concept
+          text: Размещение зон и линий
+          url: spatial-analysis-zone-line-placement.md
+        - itemType: concept
+          text: Размещение камеры
+          url: spatial-analysis-camera-placement.md
+        - itemType: concept
+          text: Ведение журнала и устранение неполадок
+          url: spatial-analysis-logging.md
+      footerLink:
+        text: Подробнее
+        url: index-spatial-analysis.yml
+tools:
+  title: Пакеты средств разработки программного обеспечения (пакеты SDK)
+  summary: Начните работать с пакетом SDK для Компьютерного зрения на привычном языке программирования.
+  items:
+    - title: C#
+      imageSrc: media/index/logo_Csharp.svg
+      url: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
+    - title: Node.js
+      imageSrc: media/index/logo_nodejs.svg
+      url: /javascript/api/@azure/cognitiveservices-computervision/?view=azure-node-latest
+    - title: Python
+      imageSrc: media/index/logo_python.svg
+      url: /python/api/overview/azure/cognitiveservices/computervision?view=azure-python
+    - title: Go
+      imageSrc: media/index/logo_go.svg
+      url: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision'
+    - title: Java
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_java.svg'
+      url: /java/api/com.microsoft.cognitiveservices.speech
+additionalContent:
+  sections:
+    - items:
+        - title: Интерфейсы REST API
+          links:
+            - text: оптическое распознавание символов;
+              url: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/5d986960601faab4bf452005'
+            - text: Анализ изображений
+              url: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
+        - title: Ресурсы
+          links:
+            - text: Цены
+              url: 'https://azure.microsoft.com/pricing/details/cognitive-services/computer-vision'
+            - text: Регионы
+              url: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+            - text: Обучение
+              url: /learn/paths/explore-computer-vision-microsoft-azure/
+        - title: Поддержка
+          links:
+            - text: Возможности получения поддержки и справки
+              url: ../cognitive-services-support-options.md?context=/azure/cognitive-services/computer-vision/context/context
