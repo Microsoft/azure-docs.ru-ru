@@ -9,14 +9,16 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 1d40d90f0f64328bbf7103015f52ea4b132d2e51
-ms.sourcegitcommit: 91361cbe8fff7c866ddc4835251dcbbe2621c055
+ms.openlocfilehash: 520dc611e49675f35b8ba0330448438192770773
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "105729632"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106168881"
 ---
 # <a name="chat-sdk-overview"></a>Общие сведения о пакете SDK для чата 
+
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include-chat.md)]
 
 Пакеты SDK для чата Служб коммуникации Azure можно использовать для добавления в приложения полнофункционального чата в реальном времени.
     

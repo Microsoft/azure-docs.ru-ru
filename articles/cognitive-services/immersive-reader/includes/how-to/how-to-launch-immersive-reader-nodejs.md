@@ -7,10 +7,10 @@ ms.topic: include
 ms.date: 03/04/2021
 ms.author: erhopf
 ms.openlocfilehash: 1b0d929e667023640906baa87a2fd25c61c5d488
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102620196"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
@@ -193,7 +193,7 @@ module.exports = router;
     });
     ```
 
-3. Снова перейдите к _http://localhost:3000_ . На странице должен отображаться текст на испанском языке. Когда вы нажмете кнопку **Immersive Reader** (Иммерсивное средство чтения), этот текст также отобразится в этом средстве.
+3. Перейдите по адресу _http://localhost:3000_ еще раз. На странице должен отображаться текст на испанском языке. Когда вы нажмете кнопку **Immersive Reader** (Иммерсивное средство чтения), этот текст также отобразится в этом средстве.
 
 ## <a name="specify-the-language-of-the-immersive-reader-interface"></a>Указание языка интерфейса иммерсивного средства чтения
 

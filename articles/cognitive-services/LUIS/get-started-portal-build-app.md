@@ -4,13 +4,13 @@ description: В этом кратком руководстве описывае�
 ms.service: cognitive-services
 ms.subservice: language-understanding
 ms.topic: quickstart
-ms.date: 11/30/2020
-ms.openlocfilehash: a5443dce9fc8bc028232f66f45b537a46858f35a
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.date: 03/26/2021
+ms.openlocfilehash: c2f2bafe68dd3f3dad704ba12cdd4d01bf4f6588
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96436680"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106278768"
 ---
 # <a name="quickstart-create-a-new-app-in-the-luis-portal"></a>Краткое руководство. Создание приложения на портале LUIS
 
@@ -164,4 +164,4 @@ ms.locfileid: "96436680"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [2. Развертывание приложения](get-started-portal-deploy-app.md)
+> [Развертывание приложения](get-started-portal-deploy-app.md)

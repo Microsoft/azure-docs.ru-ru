@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 10/16/2019
 ms.author: jeedes
-ms.openlocfilehash: a2065286581b6e7de61e4d1a29382b98563cdbb8
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: fecb7381786c36b077d329f68ca48ab10f65a984
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92895067"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105642959"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-scalex-enterprise"></a>Руководство по интеграции единого входа Azure Active Directory с ScaleX Enterprise
 
@@ -87,7 +87,7 @@ ms.locfileid: "92895067"
     В текстовом поле **URL-адрес входа** введите URL-адрес в формате `https://platform.rescale.com/saml2/<company id>/sso/`.
 
     > [!NOTE]
-    > Эти значения приведены для примера. Замените их фактическими значениями идентификатора, URL-адреса ответа и URL-адреса входа. Чтобы получить эти значения, обратитесь в [службу поддержки клиентов ScaleX Enterprise](https://info.rescale.com/contact_sales). Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
+    > Эти значения приведены для примера. Замените их фактическими значениями идентификатора, URL-адреса ответа и URL-адреса входа. Чтобы получить эти значения, обратитесь в [службу поддержки клиентов ScaleX Enterprise](https://about.rescale.com/contactus.html). Можно также посмотреть шаблоны в разделе **Базовая конфигурация SAML** на портале Azure.
 
 1. Приложение ScaleX Enterprise ожидает проверочные утверждения SAML в определенном формате, который требует добавить настраиваемые сопоставления атрибутов в вашу конфигурацию атрибутов токена SAML. На следующем снимке экрана показан список атрибутов по умолчанию, где **emailaddress** сопоставляется с **user.mail**. Приложение ScaleX Enterprise ожидает, что **emailaddress** будет сопоставляться с **user.userprincipalname**, поэтому измените сопоставление атрибутов, щелкнув значок **Изменить**.
 
@@ -170,7 +170,7 @@ ms.locfileid: "92895067"
 
     е) **Identity Provider public X509 certificate** (Общий сертификат X509 поставщика удостоверений). Откройте сертификат X509, скачанный на портале Azure, в Блокноте и вставьте содержимое в это поле. Убедитесь в отсутствии разрыва строк в середине содержимого сертификата.
 
-    ж. Установите следующие флажки: **Enabled, Encrypt NameID, Sign AuthnRequests** ("Включено", "Шифрование идентификатора имени", "Подпись AuthnRequests").
+    ж. Установите следующие флажки: **Enabled, Encrypt NameID, Sign AuthnRequests** ("Включено&quot;, &quot;Шифрование идентификатора имени&quot;, &quot;Подпись AuthnRequests").
 
     h. Нажмите кнопку **Update SSO Settings** (Обновить параметры единого входа), чтобы сохранить настройки.
 

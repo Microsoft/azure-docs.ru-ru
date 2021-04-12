@@ -1,18 +1,18 @@
 ---
 title: Краткое руководство Azure. Создание большого двоичного объекта в хранилище объектов с помощью PHP | Документация Майкрософт
 description: Узнайте, как передавать объекты в Хранилище BLOB-объектов Azure и обратно с помощью PHP. Вы также сможете отправлять, скачивать и выводить блочные BLOB-объекты в контейнере в Хранилище BLOB-объектов Azure.
-author: mhopkins-msft
-ms.author: mhopkins
+author: twooley
+ms.author: twooley
 ms.date: 11/14/2018
 ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
-ms.openlocfilehash: af35927abfa491891dffe2c2397d6daf8c1ccde2
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 400982b1cacd6ccd409559679376edcfc886ed5c
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "95543125"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106280060"
 ---
 #  <a name="transfer-objects-tofrom-azure-blob-storage-using-php"></a>Передача объектов в хранилище BLOB-объектов Azure и обратно с помощью PHP
 Из этого краткого руководства вы узнаете, как использовать PHP для передачи, скачивания и перечисления блочных BLOB-объектов в контейнере в хранилище BLOB-объектов Azure. 

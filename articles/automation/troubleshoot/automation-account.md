@@ -6,10 +6,10 @@ ms.subservice: ''
 ms.date: 03/24/2020
 ms.topic: troubleshooting
 ms.openlocfilehash: 06c15136e9d2fabdf50031c8b4be455cf2f7bbca
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98896585"
 ---
 # <a name="troubleshoot-azure-automation-account-issues"></a>Устранение неполадок с учетной записью службы автоматизации Azure
