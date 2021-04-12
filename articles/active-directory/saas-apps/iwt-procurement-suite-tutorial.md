@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 04/23/2020
 ms.author: jeedes
 ms.openlocfilehash: c39326074763a3ebcaec7682c10e6e1d39aa5f78
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92459600"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-iwt-procurement-suite"></a>Руководство по интеграции единого входа Azure Active Directory с IWT Procurement Suite

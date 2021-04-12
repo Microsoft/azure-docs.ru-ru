@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 03/06/2020
 ms.author: jeedes
 ms.openlocfilehash: a7868d702ff3f1190d7f51e4ad7316508d453015
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92454530"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-druva"></a>Руководство по интеграции единого входа Azure Active Directory с Druva
@@ -136,13 +136,13 @@ ms.locfileid: "92454530"
 1. Если ожидается, что в утверждении SAML будет получено какое-либо значение роли, то в диалоговом окне **Выбор роли** нужно выбрать соответствующую роль для пользователя из списка и затем нажать кнопку **Выбрать**, расположенную в нижней части экрана.
 1. В диалоговом окне **Добавление назначения** нажмите кнопку **Назначить**.
 
-## <a name="configure-druva-sso"></a>Настройка единого входа Druva
+## <a name="configure-druva-sso&quot;></a>Настройка единого входа Druva
 
 1. В другом окне браузера войдите на свой корпоративный веб-сайт Druva с учетными данными администратора.
 
 1. Щелкните логотип Druva в левом верхнем углу, а затем щелкните **Параметры облака Druva**.
 
-    ![Параметры](./media/druva-tutorial/ic795091.png "Настройки")
+    ![Параметры](./media/druva-tutorial/ic795091.png &quot;Настройки")
 
 1. На вкладке **Единый вход** щелкните **Изменить**.
 
