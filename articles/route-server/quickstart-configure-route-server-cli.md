@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 03/02/2021
 ms.author: duau
 ms.openlocfilehash: e9c583db7493afc04b2c66553801f62d364b0a80
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103419614"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-azure-cli"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью Azure CLI 

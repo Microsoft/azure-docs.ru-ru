@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 05/17/2019
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 4aed2ce182e535ebb60eae0007353c9c7bddef78
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "102555267"
 ---
 # <a name="quickstart-create-and-encrypt-a-windows-virtual-machine-in-azure-with-powershell"></a>Краткое руководство. Создание и шифрование виртуальной машины Windows в Azure с помощью PowerShell
