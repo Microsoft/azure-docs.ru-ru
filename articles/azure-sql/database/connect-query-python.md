@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 12/19/2020
 ms.openlocfilehash: f21e11e33d3ddf1489dba3419766a8adaa878d5f
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103491968"
 ---
 # <a name="quickstart-use-python-to-query-a-database"></a>Краткое руководство. Использование Python для создания запросов к базе данных

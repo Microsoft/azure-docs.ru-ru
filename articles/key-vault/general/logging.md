@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.date: 12/18/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 99313cf1248ef5e90d7cd60d528a58c7925298d0
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "102499532"
 ---
 # <a name="azure-key-vault-logging"></a>Ведение журнала Azure Key Vault

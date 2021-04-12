@@ -9,10 +9,10 @@ ms.date: 04/06/2018
 ms.author: spelluru
 ms.custom: include file
 ms.openlocfilehash: b32ff0926aa2b797bdb8dfcbb01cf845080a0ce9
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93376188"
 ---
 1. Перейдите к [консоли Google Cloud](https://console.developers.google.com/cloud-resource-manager)и войдите в нее с помощью учетной записи Google. 
@@ -23,7 +23,7 @@ ms.locfileid: "93376188"
 4. На панели инструментов щелкните значок **оповещений** и выберите проект в списке. Откроется панель мониторинга проекта. Вы также можете перейти непосредственно к панели мониторинга, используя URL-адрес `https://console.developers.google.com/home/dashboard?project=<YOUR PROJECT NAME>`.
 
     ![Выбор проекта в окне оповещений](./media/mobile-services-enable-google-cloud-messaging/alert-new-project.png)
-5. Запишите **номер проекта** , который отображается на плитке **Project info** (Сведения о проекте) панели мониторинга. 
+5. Запишите **номер проекта**, который отображается на плитке **Project info** (Сведения о проекте) панели мониторинга. 
 
     ![Идентификатор проекта](./media/mobile-services-enable-google-cloud-messaging/project-number.png)
 6. На плитке **APIs** (API-интерфейсы) панели мониторинга щелкните **Go to APIs overview** (Перейти к обзору API-интерфейсов). 
