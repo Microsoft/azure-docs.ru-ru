@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для Машинного обучения Azure
 description: Содержит список элементов управления соответствием из службы "Политика Azure", доступных для Машинного обучения Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/17/2021
+ms.date: 03/31/2021
 ms.topic: sample
 author: BlackMist
 ms.author: larryfr
 ms.service: machine-learning
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 62b09d80cc9531ec169a2f5fae5fe3817ac3a7de
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 9e819b743be4d4efd55278fdf1cc718017f6d4c2
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104607880"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106096367"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-machine-learning"></a>Элементы управления соответствием в службе "Политика Azure" для Машинного обучения Azure
 

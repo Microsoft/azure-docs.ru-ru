@@ -5,13 +5,13 @@ author: Heidilohr
 ms.topic: tutorial
 ms.date: 10/09/2020
 ms.author: helohr
-manager: lizross
-ms.openlocfilehash: ec26f021ffa581b0713973904c97349df83a08ef
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+manager: femila
+ms.openlocfilehash: 65ca13cba07230a7bf606a398e28761aced14857
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91930277"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106446015"
 ---
 # <a name="tutorial-manage-app-groups-with-the-azure-portal"></a>Руководство по управлению группами приложений с помощью портала Azure
 
