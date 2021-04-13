@@ -188,8 +188,6 @@
           href: rest-text-to-speech.md
     - name: Ресурсы
       items:
-        - name: Поддержка стандартных голосов
-          href: language-support.md#standard-voices
         - name: Поддержка нейронных голосов
           href: language-support.md#neural-voices
         - name: Поддержка регионов
@@ -249,7 +247,7 @@
     - name: Основные сведения о распознавании намерений
       href: intent-recognition.md
     - name: Краткое руководство по распознаванию намерений
-      href: quickstarts/intent-recognition.md
+      href: get-started-intent-recognition.md
     - name: Практические руководства
       items:
         - name: Распознавание намерений в речи с помощью LUIS (C#)
@@ -464,6 +462,8 @@
       href: how-to-track-speech-sdk-memory-usage.md
     - name: Включение частной конечной точки
       href: speech-services-private-link.md
+    - name: Включение конечной точки службы виртуальной сети
+      href: speech-service-vnet-service-endpoint.md
     - name: Настройка OpenSSL для Linux
       displayName: 'memory usage, memory consumption, object logging, object tracking, memory, openssl'
       href: how-to-configure-openssl-linux.md
