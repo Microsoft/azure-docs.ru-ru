@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: vpn-gateway
 author: cherylmc
 ms.service: vpn-gateway
@@ -9,15 +9,15 @@ ms.date: 03/21/2018
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 9734859c0bf22201c146e5d8a220f3146f6051c4
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "67185177"
 ---
 В следующей таблице приведены типы шлюзов с приблизительной суммарной пропускной способностью в зависимости от SKU шлюза. Эта таблица относится к классической модели развертывания и модели Resource Manager. 
 
-Цены на шлюзы зависят от SKU шлюзов. Дополнительные сведения см. в разделе [цены на VPN-шлюз](https://azure.microsoft.com/pricing/details/vpn-gateway).
+Цены на шлюзы зависят от SKU шлюзов. Дополнительные сведения см. на странице [Шлюз VPN. Цены](https://azure.microsoft.com/pricing/details/vpn-gateway).
 
 Обратите внимание, что SKU шлюза UltraPerformance отсутствует в этой таблице. Сведения об SKU UltraPerformance см. в документации по [ExpressRoute](../articles/expressroute/expressroute-about-virtual-network-gateways.md).
 

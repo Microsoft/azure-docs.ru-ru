@@ -6,13 +6,13 @@ author: sidramadoss
 ms.author: sidram
 ms.topic: quickstart
 ms.custom: mvc
-ms.date: 09/22/2020
-ms.openlocfilehash: 6b7a7c5feb6165f5b2c7c0ea052318a255e8025c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 04/09/2021
+ms.openlocfilehash: 7298862d29c02709afe737558421b4a8743ca5b0
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104600230"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107305504"
 ---
 # <a name="quickstart-create-a-dedicated-azure-stream-analytics-cluster-using-azure-portal"></a>Краткое руководство. Создание выделенного кластера Azure Stream Analytics с помощью портала Azure
 

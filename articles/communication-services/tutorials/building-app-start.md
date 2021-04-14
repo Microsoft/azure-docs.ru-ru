@@ -8,20 +8,18 @@ ms.author: nmurav
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 7cfc8fc24aea938b997fead4ca762ce7178e3386
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a5a23d6a06c8cdff4deabac5251597b7ffe0c833
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103490625"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105728051"
 ---
 # <a name="tutorial-prepare-a-web-app-for-azure-communication-services-nodejs"></a>Руководство. Подготовка веб-приложения для Служб коммуникации Azure (Node.js)
 
-[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
-
 Службы коммуникации Azure можно использовать, добавлять в приложения средства коммуникации в реальном времени. В этом руководстве показано, как настроить веб-приложение, которое поддерживает Службы коммуникации Azure. Это вводное руководство для разработчиков, желающих ознакомиться с возможностями коммуникаций в реальном времени.
 
-Завершив работу с этим руководством, вы получите базовое веб-приложение, настроенное с использованием клиентских библиотек Служб коммуникации Azure. Затем такое приложение можно будет использовать для создания решения для коммуникации в режиме реального времени.
+Завершив работу с этим руководством, вы получите базовое веб-приложение, настроенное с использованием пакетов SDK Служб коммуникации Azure. Затем такое приложение можно будет использовать для создания решения для коммуникации в режиме реального времени.
 
 Вы можете посетить [страницу Служб коммуникации Azure на сайте GitHub](https://github.com/Azure/communication) и оставить там свой отзыв.
 
@@ -37,7 +35,7 @@ ms.locfileid: "103490625"
 - Учетная запись Azure с активной подпиской. Дополнительные сведения см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). Бесплатная учетная запись предусматривает предоставление 200 долл. США в качестве денег на счете в Azure, что позволяет испытать в работе любое сочетание служб.
 - [Visual Studio Code](https://code.visualstudio.com/) для редактирования кода в локальной среде разработки.
 - [webpack](https://webpack.js.org/) для создания пакета кода и его размещения в локальной среде.
-- [Node.js](https://nodejs.org/en/) для установки зависимостей и управления ими, например для клиентских библиотек и webpack Служб коммуникации Azure.
+- [Node.js](https://nodejs.org/en/) для установки зависимостей и управления ими, например для пакетов SDK и webpack Служб коммуникации Azure.
 - [nvm и npm](/windows/nodejs/setup-on-windows) для управления версиями.
 - [Расширение службы хранилища Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage) для Visual Studio Code. Это расширение требуется для публикации приложения в службе хранилища Azure. [Подробнее о размещении статических веб-сайтов в службе хранилища Azure](../../storage/blobs/storage-blob-static-website.md).
 - [Расширение Службы приложений Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice). Это расширение позволяет развертывать веб-сайты с дополнительной возможностью настройки полностью управляемой среды непрерывной поставки и непрерывной интеграции (CI/CD).
@@ -293,7 +291,7 @@ npm run build:dev
 
 ## <a name="add-the-azure-communication-services-packages"></a>Добавление пакетов Служб коммуникации Azure
 
-Используйте команду `npm install`, чтобы установить клиентскую библиотеку Служб коммуникации для реализации вызовов на JavaScript.
+Используйте команду `npm install`, чтобы установить пакет SDK Служб коммуникации Azure для реализации вызовов на JavaScript.
 
 ```Console
 npm install @azure/communication-common --save

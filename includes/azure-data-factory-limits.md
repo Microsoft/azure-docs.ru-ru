@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 11/16/2020
 ms.author: chez
 ms.custom: include file
-ms.openlocfilehash: 10aa9b06af439fe701c53ef736ec691167560f95
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 96c67327a8272a02e677cc40b46c3177e470b684
+ms.sourcegitcommit: 9f4510cb67e566d8dad9a7908fd8b58ade9da3b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102109374"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106125979"
 ---
 Фабрика данных Azure — это мультитенантная служба со следующими ограничениями по умолчанию, которые гарантируют, что подписки клиентов защищены от рабочих нагрузок друг друга. Чтобы увеличить ограничение до максимального для подписки, обратитесь в службу поддержки.
 
@@ -49,6 +49,7 @@ ms.locfileid: "102109374"
 | Число параллельных потоков данных на среду выполнения интеграции. | 50 | [Обратитесь в службу поддержки](https://azure.microsoft.com/blog/2014/06/04/azure-limits-quotas-increase-requests/). |
 | Число параллельных сеансов отладки потока данных на одного пользователя на фабрику. | 3 | 3 |
 | Предельный срок жизни Azure IR Потока данных. | 4 ч |  4 ч |
+| Предельный размер сущности метаданных на фабрике | 2 ГБ | [Обратитесь в службу поддержки](https://azure.microsoft.com/blog/2014/06/04/azure-limits-quotas-increase-requests/). |
 
 <sup>1</sup> Единица интеграции данных используется в операциях копирования из облака в облако (см. сведения о [единицах интеграции данных, версия 2](../articles/data-factory/copy-activity-performance.md#data-integration-units)). См. сведения о [ценах на Фабрику данных Azure](https://azure.microsoft.com/pricing/details/data-factory/).
 

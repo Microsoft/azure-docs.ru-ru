@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: notification-hubs
 author: spelluru
 ms.service: notification-hubs
@@ -9,10 +9,10 @@ ms.date: 02/05/2019
 ms.author: spelluru
 ms.custom: include file
 ms.openlocfilehash: cd202c98ed605209f5600965ecdb6c0b4c03c17e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "67509096"
 ---
 1. В Android Studio в меню выберите **Средства**, а затем — **Диспетчер пакетов SDK**. 

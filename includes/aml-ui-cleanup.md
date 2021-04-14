@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: machine-learning
 ms.service: machine-learning
 ms.custom: include file
@@ -9,10 +9,10 @@ author: sgilley
 ms.author: sgilley
 ms.date: 11/06/2019
 ms.openlocfilehash: 754c9799ed4c2fd90cbcf1e9717b0be21edd54cb
-ms.sourcegitcommit: 0947111b263015136bca0e6ec5a8c570b3f700ff
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "75659884"
 ---
 >[!IMPORTANT]
@@ -36,7 +36,7 @@ ms.locfileid: "75659884"
 
 В конструкторе, в котором вы создали эксперимент, удалите отдельные ресурсы, выбрав их и нажав кнопку **Удалить**.
 
-Созданный вами целевой объект вычислений *автоматически масштабируется* до нуля узлов, когда он не используется. Это действие предпринимается для снижения расходов. Чтобы удалить целевой объект вычислений, сделайте следующее:
+Созданный вами целевой объект вычислений *автоматически масштабируется* до нуля узлов, когда он не используется. Это действие предпринимается для снижения расходов. Чтобы удалить целевой объект вычислений, сделайте следующее:
 
 ![Удаление ресурсов](./media/aml-ui-cleanup/delete-asset.png)
 

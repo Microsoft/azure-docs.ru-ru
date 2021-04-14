@@ -10,17 +10,17 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: 6b75548d6fce7539c2eeb71523a5a045b0b6607b
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: a0f3e3547c38df63bdab77cf378525072d1e9ad4
+ms.sourcegitcommit: 9f4510cb67e566d8dad9a7908fd8b58ade9da3b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495356"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106125816"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
-- [комплект SDK для Java (JDK)](/java/azure/jdk/) версии 8 или более поздней версии.
+- [комплект SDK для Java (JDK)](https://docs.microsoft.com/azure/developer/java/fundamentals/java-jdk-install) версии 8 или более поздней версии.
 - [Apache Maven](https://maven.apache.org/download.cgi).
 - Развернутый ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../create-communication-resource.md)
 
@@ -44,7 +44,7 @@ mvn archetype:generate -DgroupId=com.communication.quickstart -DartifactId=commu
 <dependency>
     <groupId>com.azure</groupId>
     <artifactId>azure-communication-identity</artifactId>
-    <version>1.0.0-beta.6</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -66,8 +66,6 @@ import com.azure.communication.common.*;
 import com.azure.communication.identity.*;
 import com.azure.communication.identity.models.*;
 import com.azure.core.credential.*;
-import com.azure.core.http.*;
-import com.azure.core.http.netty.*;
 
 import java.io.IOException;
 import java.time.*;
@@ -85,7 +83,7 @@ public class App
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
 
-Создайте экземпляр `CommunicationIdentityClient` с помощью ключа доступа и конечной точки ресурса. См. сведения о том, как [управлять строкой подключения ресурса](../create-communication-resource.md#store-your-connection-string).
+Создайте экземпляр `CommunicationIdentityClient` с помощью ключа доступа и конечной точки ресурса. См. сведения о том, как [управлять строкой подключения ресурса](../create-communication-resource.md#store-your-connection-string). Кроме того, вы можете инициализировать клиент с помощью любого пользовательского HTTP-клиента, реализующего интерфейс `com.azure.core.http.HttpClient`.
 
 Добавьте следующий код в метод `main`:
 
@@ -94,32 +92,31 @@ public class App
 String endpoint = "https://<RESOURCE_NAME>.communication.azure.com";
 String accessKey = "SECRET";
 
-// Create an HttpClient builder of your choice and customize it
-// Use com.azure.core.http.netty.NettyAsyncHttpClientBuilder if that suits your needs
-// -> Add "import com.azure.core.http.netty.*;"
-// -> Add azure-core-http-netty dependency to file pom.xml
-
-HttpClient httpClient = new NettyAsyncHttpClientBuilder().build();
-
 CommunicationIdentityClient communicationIdentityClient = new CommunicationIdentityClientBuilder()
         .endpoint(endpoint)
         .credential(new AzureKeyCredential(accessKey))
-        .httpClient(httpClient)
         .buildClient();
 ```
-
-Вы можете инициализировать клиент с помощью любого пользовательского HTTP-клиента, реализующего интерфейс `com.azure.core.http.HttpClient`. В приведенном выше коде показано, как использовать [HTTP-клиент Netty Azure Core](/java/api/overview/azure/core-http-netty-readme), предоставляемый `azure-core`.
 
 Чтобы не указывать конечную точку и ключ доступа, вы можете указать всю строку подключения с помощью функции `connectionString()`.
 ```java
 // Your can find your connection string from your resource in the Azure portal
 String connectionString = "<connection_string>";
-HttpClient httpClient = new NettyAsyncHttpClientBuilder().build();
 
 CommunicationIdentityClient communicationIdentityClient = new CommunicationIdentityClientBuilder()
     .connectionString(connectionString)
-    .httpClient(httpClient)
     .buildClient();
+```
+
+Если вы настроили управляемое удостоверение, то из статьи [Использование управляемых удостоверений](../managed-identity.md) можете узнать, как использовать его для аутентификации.
+```java
+String endpoint = "https://<RESOURCE_NAME>.communication.azure.com";
+TokenCredential credential = new DefaultAzureCredentialBuilder().build();
+
+CommunicationIdentityClient communicationIdentityClient = new CommunicationIdentityClientBuilder()
+        .endpoint(endpoint)
+        .credential(credential)
+        .buildClient();
 ```
 
 ## <a name="create-an-identity"></a>Создание удостоверения

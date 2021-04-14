@@ -6,10 +6,10 @@ ms.date: 03/21/2021
 ms.author: memildin
 ms.custom: generated
 ms.openlocfilehash: 5fc36e327a9530105182f0a23b3ef22ab324e01c
-ms.sourcegitcommit: 2c1b93301174fccea00798df08e08872f53f669c
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "104803306"
 ---
 - Необходимо ограничить доступ к учетным записям хранения в конфигурациях брандмауэра и виртуальной сети

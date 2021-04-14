@@ -7,13 +7,13 @@ ms.date: 09/03/2020
 ms.service: key-vault
 ms.subservice: keys
 ms.topic: quickstart
-ms.custom: devx-track-python, devx-track-azurecli
-ms.openlocfilehash: b2c69b4358b99bfd4fff2a3434ff8fe956a2a1f5
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.custom: devx-track-python
+ms.openlocfilehash: b1355acee5c115accb2515f797b402e66cd2ec0a
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104801168"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107374732"
 ---
 # <a name="quickstart-azure-key-vault-keys-client-library-for-python"></a>Краткое руководство. Использование клиентской библиотеки ключей Azure Key Vault для Python
 

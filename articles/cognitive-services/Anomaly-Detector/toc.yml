@@ -3,12 +3,18 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Что такое Детектор аномалий?
+    - name: Что собой представляет Детектор аномалий (многомерная модель)?
+      href: overview-multivariate.md
+    - name: Что собой представляет Детектор аномалий (одномерная модель)?
       href: overview.md
     - name: Цены и ограничения
       href: 'https://aka.ms/adpricing'
-- name: Краткое руководство по работе с Детектором аномалий
-  href: ./quickstarts/client-libraries.md
+- name: Краткие руководства по работе с Детектором аномалий
+  items:
+    - name: Клиентские библиотеки для многомерной модели
+      href: ./quickstarts/client-libraries-multivariate.md
+    - name: Клиентские библиотеки для одномерной модели
+      href: ./quickstarts/client-libraries.md
 - name: Примеры
   items:
     - name: Интерактивная демоверсия
@@ -39,10 +45,18 @@
               href: how-to/deploy-anomaly-detection-on-container-instances.md
 - name: Основные понятия
   items:
-    - name: Рекомендации по работе с API  Детектора аномалий
+    - name: Рекомендации по работе с API Детектора аномалий (многомерная модель)
+      href: concepts/best-practices-multivariate.md
+    - name: Рекомендации по работе с API Детектора аномалий (одномерная модель)
       href: concepts/anomaly-detection-best-practices.md
+    - name: Архитектура прогнозируемого обслуживания (многомерная модель)
+      href: concepts/multivariate-architecture.md
+    - name: Устранение неполадок с многомерной моделью
+      href: concepts/troubleshoot.md
     - name: Обнаружение аномалий с помощью алгоритма спектрального остатка (SR) и сверточной нейронной сети (CNN)
       href: 'https://arxiv.org/abs/1906.03821'
+    - name: Обнаружение аномалий многомерных временных рядов с помощью Graph Attention Network
+      href: 'https://arxiv.org/abs/2009.02040'
 - name: Учебники
   items:
     - name: "Визуализация аномалий в пакетном режиме с помощью Power\_BI"
