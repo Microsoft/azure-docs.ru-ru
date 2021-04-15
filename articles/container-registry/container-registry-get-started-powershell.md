@@ -4,12 +4,12 @@ description: Быстрый способ изучить создание час�
 ms.topic: quickstart
 ms.date: 01/22/2019
 ms.custom: seodec18, mvc, devx-track-azurepowershell
-ms.openlocfilehash: 91d4209ccf558bf7c8038d8a753ec038428bc484
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b6928f1c45cdac93b70797daf41205b4c5db27e0
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96020024"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283824"
 ---
 # <a name="quickstart-create-a-private-container-registry-using-azure-powershell"></a>Краткое руководство. Создание частного реестра контейнеров Docker с помощью Azure PowerShell
 
@@ -55,7 +55,7 @@ $registry = New-AzContainerRegistry -ResourceGroupName "myResourceGroup" -Name "
 
 ## <a name="log-in-to-registry"></a>Вход в раздел реестра
 
-Перед отправкой и извлечением образов контейнеров необходимо войти в реестр. В рабочих сценариях для доступа к реестру контейнеров следует использовать индивидуальное удостоверение или субъект-службу, но чтобы упростить работу с этим кратким руководством, включите администратора в реестре с помощью команды [Get-AzContainerRegistryCredential][Get-AzContainerRegistryCredential]:
+Перед отправкой и извлечением образов контейнеров необходимо войти в реестр. Включите режим администратора реестра, выполнив команду [Get-AzContainerRegistryCredential][Get-AzContainerRegistryCredential]. В рабочих сценариях следует использовать альтернативный [метод проверки подлинности](container-registry-authentication.md) для доступа к реестру, например субъект-службу. 
 
 ```powershell
 $creds = Get-AzContainerRegistryCredential -Registry $registry
@@ -68,6 +68,10 @@ $creds.Password | docker login $registry.LoginServer -u $creds.Username --passwo
 ```
 
 По завершении команда возвращает `Login Succeeded`.
+
+> [!TIP]
+> Azure CLI предоставляет команду `az acr login`: удобный способ входа в реестр контейнеров с помощью [индивидуальных учетных данных](container-registry-authentication.md#individual-login-with-azure-ad)без передачи учетных данных Docker.
+
 
 [!INCLUDE [container-registry-quickstart-docker-push](../../includes/container-registry-quickstart-docker-push.md)]
 

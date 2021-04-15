@@ -7,14 +7,14 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: include
-ms.date: 02/12/2021
+ms.date: 03/19/2021
 ms.author: lajanuar
-ms.openlocfilehash: c3d81e0de1c20e77278cb718fdcbc21eb6df455d
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 6407f6af4b142333d2a52f60eb0b05024e64d88e
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102444991"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104761102"
 ---
 <!-- markdownlint-disable MD024 -->
 > [!IMPORTANT]
@@ -66,7 +66,7 @@ dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
 ```
 
 > [!NOTE]
-> В пакете SDK 3.1.0 Распознавателя документов используется API предварительной версии 2.1.
+> В пакете SDK 3.1.0 Распознавателя документов используется _API версии 2.1, предварительная версия 2_. Используйте [**REST API**](../../quickstarts/client-library.md) для _API версии 2.1, предварительная версия 3_.
 
 #### <a name="v20"></a>[Версия 2.0](#tab/ga)
 

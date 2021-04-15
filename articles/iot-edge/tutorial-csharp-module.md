@@ -9,12 +9,12 @@ ms.date: 07/30/2020
 ms.topic: tutorial
 ms.service: iot-edge
 ms.custom: mvc, devx-track-csharp
-ms.openlocfilehash: 01b30fed23b33719f08e93907075eee757343b1c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b7695c825dbdd2c207c87799ea801026f7506bcb
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103461748"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106219456"
 ---
 # <a name="tutorial-develop-a-c-iot-edge-module-using-linux-containers"></a>Учебник. Разработка модуля IoT Edge на C# с использованием контейнеров Linux
 
@@ -52,7 +52,7 @@ ms.locfileid: "103461748"
 Перед началом работы с этим учебником вы должны были настроить среду разработки, выполнив инструкции, приведенные [в этой статье](tutorial-develop-for-linux.md). После работы с этим руководством у вас должны быть готовы все необходимые компоненты:
 
 * [Центр Интернета вещей](../iot-hub/iot-hub-create-through-portal.md) ценовой категории "Бесплатный" или "Стандартный" в Azure.
-* Устройство с Azure IoT Edge. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
+* Устройство, на котором выполняется Azure IoT Edge с контейнерами Linux. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
 * реестр контейнеров, например [Реестр контейнеров Azure](../container-registry/index.yml);
 * средство [Visual Studio Code](https://code.visualstudio.com/), настроенное с помощью [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools);
 * выпуск [Docker CE](https://docs.docker.com/install/), настроенный для выполнения контейнеров Linux.

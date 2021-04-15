@@ -7,15 +7,15 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: include
-ms.date: 02/12/2021
+ms.date: 03/19/2021
 ms.custom: devx-track-java
 ms.author: lajanuar
-ms.openlocfilehash: 2e52bc8e6e41165da2f274d3613337fe603ccc39
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: a709f82b04ed5c1fe70f6927b33605cfff20ed6b
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102444341"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104761104"
 ---
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
@@ -79,7 +79,7 @@ dependencies {
 ```
 
 > [!NOTE]
-> В пакете SDK 3.1.0 Распознавателя документов используется API предварительной версии 2.1.
+> В пакете SDK 3.1.0 Распознавателя документов используется _API версии 2.1, предварительная версия 2_. Используйте [**REST API**](../../quickstarts/client-library.md) для _API версии 2.1, предварительная версия 3_.
 
 #### <a name="v20"></a>[Версия 2.0](#tab/ga)
 

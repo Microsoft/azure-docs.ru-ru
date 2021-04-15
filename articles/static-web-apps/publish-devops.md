@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: tutorial
 ms.date: 03/23/2021
 ms.author: apedward
-ms.openlocfilehash: 472cf7b69078b3247c393ff65139bc29e5683a32
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: f82ae60ab7f57b20a727deefa6e286d698ee5b6c
+ms.sourcegitcommit: dddd1596fa368f68861856849fbbbb9ea55cb4c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105639374"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107365762"
 ---
 # <a name="tutorial-publish-azure-static-web-apps-with-azure-devops"></a>Учебник. Публикация Статических веб-приложений Azure с помощью Azure DevOps
 
@@ -93,6 +93,9 @@ ms.locfileid: "105639374"
       vmImage: ubuntu-latest
     
     steps:
+      - checkout: self
+        submodules: true
+
       - task: AzureStaticWebApp@0
         inputs:
           app_location: "/" 

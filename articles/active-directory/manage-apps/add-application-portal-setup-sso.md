@@ -2,20 +2,20 @@
 title: Краткое руководство. Настройка единого входа на основе SAML для приложения в арендаторе Azure Active Directory (Azure AD)
 description: В этом кратком руководстве описывается процесс настройки единого входа на основе SAML для приложения в арендаторе Azure Active Directory (Azure AD).
 services: active-directory
-author: kenwith
-manager: daveba
+author: iantheninja
+manager: CelesteDG
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.topic: quickstart
 ms.workload: identity
 ms.date: 07/01/2020
-ms.author: kenwith
-ms.openlocfilehash: 44a838bdce4721d24bd0bdbb45ac7b36ceb34e71
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.author: iangithinji
+ms.openlocfilehash: 802cc744063ba2bf1110915ae9b22c9c00e09cfa
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "102488375"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107378913"
 ---
 # <a name="quickstart-set-up-saml-based-single-sign-on-sso-for-an-application-in-your-azure-active-directory-azure-ad-tenant"></a>Краткое руководство. Настройка единого входа на основе SAML для приложения в арендаторе Azure Active Directory (Azure AD)
 

@@ -4,12 +4,12 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 10/18/2020
 ms.author: glenga
-ms.openlocfilehash: 11d426016cfe1a8a9ff843da518f57c08881be5d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d400533039ea74a878cb8e543c22de02ee77e4f5
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96842336"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283109"
 ---
 ## <a name="run-the-function-locally"></a>Локальное выполнение функции
 
@@ -37,10 +37,6 @@ ms.locfileid: "96842336"
     >[!NOTE]  
     > Если результат HttpExample не похож на пример выше, скорее всего, вы запустили основное приложение из папки, отличной от корневой папки проекта. В этом случае остановите хост-приложение клавишами **CTRL**+**C**, перейдите в корневую папку проекта и снова выполните указанную выше команду.
 
-1. Скопируйте URL-адрес функции `HttpExample` из этих выходных данных в браузер и добавьте строку запроса `?name=<YOUR_NAME>`, сформировав полный URL-адрес, например `http://localhost:7071/api/HttpExample?name=Functions`. В браузере должно отобразиться сообщение, например `Hello Functions`:
-
-    ![Получившаяся функция выполняется локально в браузере](./media/functions-run-function-test-local-cli/function-test-local-browser.png)
-
-1. Терминал, в котором вы запустили проект, также выводит данные журнала при выполнении запросов.
+1. Скопируйте URL-адрес функции `HttpExample` из этих выходных данных в браузер и добавьте строку запроса `?name=<YOUR_NAME>`, сформировав полный URL-адрес, например `http://localhost:7071/api/HttpExample?name=Functions`. Браузер отобразит ответное сообщение, содержащее значение строки запроса. Терминал, в котором вы запустили проект, также выводит данные журнала при выполнении запросов.
 
 1. Когда все будет готово, нажмите клавиши **CTRL**+**C** и выберите `y`, чтобы отключить хост-приложение функции.

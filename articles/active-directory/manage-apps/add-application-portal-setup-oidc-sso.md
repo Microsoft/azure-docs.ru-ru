@@ -2,20 +2,20 @@
 title: Краткое руководство. Настройка единого входа на основе OIDC для приложения в арендаторе Azure Active Directory (Azure AD)
 description: В этом кратком руководстве описывается процесс настройки единого входа на основе OIDC для приложения в арендаторе Azure Active Directory (Azure AD).
 services: active-directory
-author: kenwith
-manager: daveba
+author: iantheninja
+manager: CelesteDG
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.topic: quickstart
 ms.workload: identity
 ms.date: 07/01/2020
-ms.author: kenwith
-ms.openlocfilehash: e5695d5ded92e9bb41d39a082790cfbb456dbc38
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.author: iangithinji
+ms.openlocfilehash: 2e0b49a73422a2f71af37e103e9d4fd6a18a1f61
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99258360"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107378947"
 ---
 # <a name="quickstart-set-up-oidc-based-single-sign-on-sso-for-an-application-in-your-azure-active-directory-azure-ad-tenant"></a>Краткое руководство. Настройка единого входа на основе OIDC для приложения в арендаторе Azure Active Directory (Azure AD)
 

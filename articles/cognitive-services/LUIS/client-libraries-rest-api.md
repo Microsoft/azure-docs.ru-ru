@@ -2,7 +2,7 @@
 title: Краткое руководство. Клиентские библиотеки и REST API пакета SDK Распознавания речи (LUIS)
 description: Создание и запрос приложения LUIS с помощью клиентских библиотек и REST API пакета SDK для LUIS.
 ms.topic: quickstart
-ms.date: 12/09/2020
+ms.date: 03/29/2021
 ms.service: cognitive-services
 ms.author: aahi
 manager: nitinme
@@ -11,12 +11,12 @@ author: aahill
 keywords: Azure, искусственный интеллект, ИИ, обработка естественного языка, NLP, LUIS, Azure LUIS, распознавание естественного языка, чат-бот ИИ, создатель чат-бота, общие сведения о естественном языке
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp, cog-serv-seo-aug-2020
 zone_pivot_groups: programming-languages-set-luis
-ms.openlocfilehash: 7ff5844cf9f1bce45df438fc00e24da28c438b05
-ms.sourcegitcommit: dea56e0dd919ad4250dde03c11d5406530c21c28
+ms.openlocfilehash: ca45266ce4b8ca784c3d54aafb80a66efaf2a1da
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96941525"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106278921"
 ---
 # <a name="quickstart-language-understanding-luis-client-libraries-and-rest-api"></a>Краткое руководство. Клиентские библиотеки и REST API Распознавания речи (LUIS)
 
@@ -61,9 +61,5 @@ ms.locfileid: "96941525"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Что такое служба "Распознавание речи" (LUIS)?](what-is-luis.md)
-* [Новые возможности](whats-new.md)
-* [Намерения](luis-concept-intent.md), [сущности](luis-concept-entity-types.md), [примеры речевых фрагментов](luis-concept-utterance.md) и [готовые сущности](luis-reference-prebuilt-entities.md).
-* Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code).
-* Общие сведения о распознавании и обработке естественного языка см. [здесь](artificial-intelligence.md).
-* Боты: [Чат-боты ИИ](luis-csharp-tutorial-bf-v4.md "Учебник для создателя чат-бота")
+> [!div class="nextstepaction"]
+> [Итеративная разработка приложений для LUIS](./luis-concept-app-iteration.md)
