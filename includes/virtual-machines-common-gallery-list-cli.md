@@ -1,19 +1,19 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: virtual-machines
 author: cynthn
 ms.service: virtual-machines
 ms.topic: include
 ms.date: 01/28/2020
 ms.author: cynthn
-ms.custom: include file, devx-track-azurecli
-ms.openlocfilehash: 6432c125c4fedd962faa28a4c84c7494300b0472
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.custom: include file
+ms.openlocfilehash: 1c06f5ab8995e7285365fa2d0ee77c327be2b1bd
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "92755870"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107386805"
 ---
 ## <a name="list-information"></a>Просмотр сведений
 

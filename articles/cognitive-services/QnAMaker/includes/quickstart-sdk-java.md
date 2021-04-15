@@ -8,12 +8,12 @@ ms.subservice: qna-maker
 ms.topic: include
 ms.date: 09/04/2020
 ms.author: v-jawe
-ms.openlocfilehash: 783cc6dbfbc916383d71ffa17b9d789e227303a0
-ms.sourcegitcommit: 25d1d5eb0329c14367621924e1da19af0a99acf1
+ms.openlocfilehash: 755e4fcb9d5b9f1711bc615a29489037ea377d43
+ms.sourcegitcommit: 73d80a95e28618f5dfd719647ff37a8ab157a668
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98256300"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105609494"
 ---
 # <a name="qna-maker-ga-stable-release"></a>[Общедоступная версия QnA Maker (стабильный выпуск)](#tab/version-1)
 
@@ -93,23 +93,28 @@ ms.locfileid: "98256300"
 
 # <a name="qna-maker-ga-stable-release"></a>[Общедоступная версия QnA Maker (стабильный выпуск)](#tab/version-1)
 
-> [!IMPORTANT]
-> Перейдите на портал Azure и найдите ключ и конечную точку для ресурса QnA Maker, созданного в рамках выполнения предварительных требований. Они находятся на странице ресурса **Ключ и конечная точка** в разделе **Управление ресурсами**.
+- Ключ подписки и ключ разработки являются взаимозаменяемыми. Дополнительные сведения о ключе разработки см. в разделе [Ключи в QnA Maker](../concepts/azure-resources.md?tabs=v1#keys-in-qna-maker).
 
-- Чтобы сохранить эти значения, создайте переменные среды с именами QNA_MAKER_SUBSCRIPTION_KEY, QNA_MAKER_ENDPOINT и QNA_MAKER_RUNTIME_ENDPOINT.
-- Формат значения QNA_MAKER_ENDPOINT: `https://YOUR-RESOURCE-NAME.cognitiveservices.azure.com`. 
-- Формат значения QNA_MAKER_RUNTIME_ENDPOINT: `https://YOUR-RESOURCE-NAME.azurewebsites.net`.
+- Формат значения QNA_MAKER_ENDPOINT: `https://YOUR-RESOURCE-NAME.cognitiveservices.azure.com`. Перейдите на портал Azure и найдите ресурс QnA Maker, созданный в рамках выполнения предварительных требований. Щелкните страницу **Ключи и конечная точка** в разделе **Управление ресурсами**, чтобы найти ключ разработки (подписка) и конечную точку QnA Maker.
+
+ ![Конечная точка разработки QnA Maker](../media/keys-endpoint.png)
+
+- Формат значения QNA_MAKER_RUNTIME_ENDPOINT: `https://YOUR-RESOURCE-NAME.azurewebsites.net`. Перейдите на портал Azure и найдите ресурс QnA Maker, созданный в рамках выполнения предварительных требований. Щелкните страницу **Экспорт шаблона** в разделе **Автоматизация**, чтобы найти конечную точку среды выполнения.
+
+ ![Конечная точка среды выполнения QnA Maker](../media/runtime-endpoint.png)
+   
 - Для рабочей среды рекомендуется использовать безопасный способ хранения и доступа к учетным данным. Например, [Azure Key Vault](../../../key-vault/general/overview.md) предоставляет безопасное хранилище ключей.
 
 [!code-java[Resource variables](~/cognitive-services-quickstart-code/java/qnamaker/sdk/quickstart.java?name=resourceKeys)]
 
 # <a name="qna-maker-managed-preview-release"></a>[Управляемая служба QnA Maker (предварительный выпуск)](#tab/version-2)
 
-> [!IMPORTANT]
-> Перейдите на портал Azure и найдите ключ и конечную точку для ресурса QnA Maker, созданного в рамках выполнения предварительных требований. Они находятся на странице ресурса **Ключ и конечная точка** в разделе **Управление ресурсами**.
+- Ключ подписки и ключ разработки являются взаимозаменяемыми. Дополнительные сведения о ключе разработки см. в разделе [Ключи в QnA Maker](../concepts/azure-resources.md?tabs=v2#keys-in-qna-maker).
 
-- Чтобы сохранить эти значения, создайте переменные среды с именами QNA_MAKER_SUBSCRIPTION_KEY и QNA_MAKER_ENDPOINT.
-- Формат значения QNA_MAKER_ENDPOINT: `https://YOUR-RESOURCE-NAME.cognitiveservices.azure.com`. 
+- Формат значения QNA_MAKER_ENDPOINT: `https://YOUR-RESOURCE-NAME.cognitiveservices.azure.com`. Перейдите на портал Azure и найдите ресурс QnA Maker, созданный в рамках выполнения предварительных требований. Щелкните страницу **Ключи и конечная точка** в разделе **Управление ресурсами**, чтобы найти ключ разработки (подписка) и конечную точку QnA Maker.
+
+ ![Конечная точка разработки QnA Maker](../media/keys-endpoint.png)
+ 
 - Для рабочей среды рекомендуется использовать безопасный способ хранения и доступа к учетным данным. Например, [Azure Key Vault](../../../key-vault/general/overview.md) предоставляет безопасное хранилище ключей.
 
 [!code-java[Resource variables](~/cognitive-services-quickstart-code/java/qnamaker/sdk/preview-sdk/quickstart.java?name=resourceKeys)]
@@ -122,7 +127,7 @@ ms.locfileid: "98256300"
 
 QnA Maker использует две различные объектные модели.
 * **[QnAMakerClient](#qnamakerclient-object-model)**  — это объект для создания, публикации и скачивания базы знаний, а также управления ею.
-* **[QnAMakerRuntime](#qnamakerruntimeclient-object-model)**  — это объект для отправки запроса в базу знаний с помощью API GenerateAnswer и новых предложенных вопросов с помощью API обучения (в рамках [активного обучения](../concepts/active-learning-suggestions.md)).
+* **[QnAMakerRuntime](#qnamakerruntimeclient-object-model)**  — это объект для отправки запроса в базу знаний с помощью API GenerateAnswer и новых предложенных вопросов с помощью API обучения (в рамках [активного обучения](../how-to/use-active-learning.md)).
 
 # <a name="qna-maker-managed-preview-release"></a>[Управляемая служба QnA Maker (предварительный выпуск)](#tab/version-2)
 

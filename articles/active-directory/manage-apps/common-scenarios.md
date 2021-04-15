@@ -1,26 +1,22 @@
 ---
 title: Распространенные сценарии управления приложениями для Azure Active Directory | Документация Майкрософт
 description: Централизованное управление приложениями с помощью Azure Active Directory
-documentationcenter: ''
-author: kenwith
-manager: daveba
-ms.assetid: ''
+author: iantheninja
+manager: CelesteDG
 ms.service: active-directory
 ms.subservice: app-provisioning
 ms.workload: identity
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: overview
 ms.date: 03/02/2019
-ms.author: kenwith
+ms.author: iangithinji
 ms.reviewer: arvinh
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6372407a5deebefab60e09a9d0c01d977157357b
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 1acfff8a9152c767b61463bed0165d5ae390f649
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99259576"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107375004"
 ---
 # <a name="centralize-application-management-with-azure-ad"></a>Централизованное управление приложениями с помощью Azure Active Directory
 

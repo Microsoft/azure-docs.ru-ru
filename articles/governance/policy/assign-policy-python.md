@@ -3,13 +3,13 @@ title: Краткое руководство. Создание назначен�
 description: В этом кратком руководстве вы используете Python, чтобы создать назначение в службе "Политика Azure", позволяющее определить ресурсы, которые не соответствуют требованиям.
 ms.date: 03/02/2021
 ms.topic: quickstart
-ms.custom: devx-track-python, devx-track-azurecli
-ms.openlocfilehash: e600f97dafdd1040c22b6e4d9e333f638334b663
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.custom: devx-track-python
+ms.openlocfilehash: 2c9a0d6bb00d82748505304264aeaefa409c4b06
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742353"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107379406"
 ---
 # <a name="quickstart-create-a-policy-assignment-to-identify-non-compliant-resources-using-python"></a>Краткое руководство. Создание назначения политики для выявления ресурсов, не соответствующих требованиям, с использованием Python
 

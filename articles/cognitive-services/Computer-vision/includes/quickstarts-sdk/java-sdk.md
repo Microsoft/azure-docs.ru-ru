@@ -1,6 +1,6 @@
 ---
-title: Краткое руководство. Клиентская библиотека службы "Компьютерное зрение" для Java
-description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой службы "Компьютерное зрение" для Java.
+title: Краткое руководство. Клиентская библиотека оптического распознавания символов для Java
+description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой оптического распознавания символов для Java.
 services: cognitive-services
 author: PatrickFarley
 manager: nitinme
@@ -10,19 +10,16 @@ ms.topic: include
 ms.date: 12/15/2020
 ms.custom: devx-track-java
 ms.author: pafarley
-ms.openlocfilehash: 58266e1d41344baf042349ed8b0ca9974a966827
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: 84ac8e8309d9f1d0536d0f7a16ab9cd9f3c10a2c
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103622351"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284815"
 ---
 <a name="HOLTop"></a>
 
-С помощью клиентской библиотеки службы "Компьютерное зрение" можно выполнять следующие операции:
-
-* анализ изображений на наличие тегов, текстового описания, лиц, содержимого для взрослых и многого другого.
-* считывание печатного и рукописного текста с помощью API службы чтения.
+Используйте клиентскую библиотеку оптического распознавания символов для чтения печатных и рукописных текстов в изображениях.
 
 [Справочная документация](/java/api/overview/azure/cognitiveservices/client/computervision) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/cognitiveservices/ms-azure-cs-computervision) |[Артефакт (Maven)](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-computervision) | [Примеры](https://azure.microsoft.com/resources/samples/?service=cognitive-services&term=vision&sort=0)
 
@@ -101,27 +98,29 @@ mkdir -p src/main/java
 
 В методе **main** приложения добавьте вызовы методов, используемых в этом кратком руководстве. Они будут определены позже.
 
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_maincalls)]
+[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_beginmain)]
 
+[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_authinmain)]
+
+[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_readinmain)]
+
+[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_endmain)]
 > [!div class="nextstepaction"]
 > [Мной настроен клиент](?success=set-up-client#object-model) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Java&Section=set-up-client)
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK Java для Компьютерного зрения.
+Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK для OCR Java.
 
 |Имя|Описание|
 |---|---|
 | [ComputerVisionClient](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervisionclient) | Этот класс требуется для всех функций Компьютерного зрения. Вы создаете его экземпляр с информацией о подписке и используете его для создания экземпляров других классов.|
-|[ComputerVision](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision)| Этот класс поступает из клиентского объекта и напрямую обрабатывает все операции с изображениями, такие как анализ изображений, обнаружение текста и создание эскизов.|
-|[VisualFeatureTypes](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.models.visualfeaturetypes)| Это перечисление определяет различные типы анализа изображений, которые можно выполнить в стандартной операции анализа. Набор значений VisualFeatureTypes указывается в зависимости от потребностей. |
 
 ## <a name="code-examples"></a>Примеры кода
 
-Эти фрагменты кода показывают, как выполнить следующие действия с помощью клиентской библиотеки службы "Компьютерное зрение" для Java:
+Эти фрагменты кода демонстрируют выполнение следующих действий с помощью клиентской библиотеки оптического распознавания символов для Java:
 
 * [аутентификация клиента](#authenticate-the-client);
-* [Анализ изображения](#analyze-an-image)
 * [Чтение печатного и рукописного текста](#read-printed-and-handwritten-text).
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
@@ -131,116 +130,13 @@ mkdir -p src/main/java
 [!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_auth)]
 
 > [!div class="nextstepaction"]
-> [Мной аутентифицирован клиент](?success=authenticate-client#analyze-an-image) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Java&Section=authenticate-client)
+> [Мной аутентифицирован клиент](?success=authenticate-client#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Java&Section=authenticate-client)
 
-## <a name="analyze-an-image"></a>Анализ изображения
-
-В следующем коде определен метод `AnalyzeLocalImage`, который использует клиентский объект для анализа локального изображения и вывода результатов. Метод возвращает текстовое описание, категоризацию, список тегов, обнаруженные лица, флажки содержимого для взрослых, основные цвета и тип изображения.
-
-> [!TIP]
-> Кроме того, можно проанализировать удаленное изображение, используя его URL-адрес. См. подробные сведения о методах [ComputerVision](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision), например **AnalyzeImage**. Пример кода для сценариев, в которых используются удаленные изображения, см. на [сайте GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java).
-
-### <a name="set-up-test-image"></a>Настройка тестового изображения
-
-Сначала создайте папку **resources/** в папке **src/main/** вашего проекта и добавьте изображение, которое нужно проанализировать. Затем добавьте следующее определение метода в класс **ComputerVisionQuickstarts**. Измените значение `pathToLocalImage` в соответствии с вашим файлом изображения. 
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_refs)]
-
-### <a name="specify-visual-features"></a>Указание визуальных компонентов
-
-Затем укажите, какие визуальные компоненты вы хотите извлечь при анализе. Полный список компонентов см. в описании перечисления [VisualFeatureTypes](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.models.visualfeaturetypes).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_features)]
-
-### <a name="analyze"></a>Анализ
-Этот блок выводит на консоль подробные результаты для каждой области анализа изображения. Метод **analyzeImageInStream** возвращает объект **ImageAnalysis**, который содержит всю извлеченную информацию.
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_analyze)]
-
-В следующих разделах подробно показано, как анализировать эти сведения.
-
-### <a name="get-image-description"></a>Получение описания изображения
-
-Следующий код получает список созданных заголовков для изображения. Дополнительные сведения см. в разделе [Описание изображений](../../concept-describing-images.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_captions)]
-
-### <a name="get-image-category"></a>Получение категории изображения
-
-Следующий код получает обнаруженную категорию изображения. Дополнительные сведения см. в разделе [Классификация изображений](../../concept-categorizing-images.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_category)]
-
-### <a name="get-image-tags"></a>Получение тегов изображения
-
-Следующий код получает набор обнаруженных тегов изображения. Дополнительные сведения см. в разделе [Теги содержимого](../../concept-tagging-images.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_tags)]
-
-### <a name="detect-faces"></a>Распознавание лиц
-
-Следующий код возвращает обнаруженные лица на изображении с их координатами прямоугольника и атрибутами выбора лиц. Дополнительные сведения см. в разделе [Распознавание лиц](../../concept-detecting-faces.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_faces)]
-
-### <a name="detect-objects"></a>Обнаружение объектов
-
-Следующий код возвращает обнаруженные на изображении объекты с их координатами. Дополнительные сведения см. в разделе [Обнаружение объектов](../../concept-object-detection.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_objects)]
-
-
-### <a name="detect-brands"></a>Обнаружение торговых марок
-
-Следующий код возвращает обнаруженные на изображении логотипы торговых марок с их координатами. Дополнительные сведения см. в разделе [Обнаружение торговых марок](../../concept-brand-detection.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_brands)]
-
-
-
-### <a name="detect-adult-racy-or-gory-content"></a>Обнаружение содержимого для взрослых, непристойного или жуткого содержимого
-
-Следующий код выводит сведения об обнаружении содержимого для взрослых на изображении. Дополнительные сведения см. в статье [Обнаружение содержимого для взрослых](../../concept-detecting-adult-content.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_adult)]
-
-### <a name="get-image-color-scheme"></a>Получение цветовой схемы изображения
-
-Следующий код выводит обнаруженные атрибуты цвета на изображении, например доминирующие и акцентные цвета. Подробнее см. в разделе [Цветовые схемы](../../concept-detecting-color-schemes.md).
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_colors)]
-
-### <a name="get-domain-specific-content"></a>Получение содержимого, связанного с определенной предметной областью
-
-Компьютерное зрение может использовать специализированную модель для дальнейшего анализа изображений. Дополнительные сведения см. в статье [Обнаружение содержимого, связанного с определенными предметными областями](../../concept-detecting-domain-content.md). 
-
-Следующий код анализирует данные об обнаруженных известных лицах на изображении.
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_celebrities)]
-
-Следующий код анализирует данные об обнаруженных достопримечательностях на изображении.
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyzelocal_landmarks)]
-
-### <a name="get-the-image-type"></a>Получение сведений о типе изображения
-
-Следующий код выводит информацию о типе изображения&mdash;, независимо от того, является ли это картинкой или рисунком.
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_imagetype)]
-
-> [!div class="nextstepaction"]
-> [Мной проанализировано изображение](?success=analyze-image#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Java&Section=analyze-image)
-
-### <a name="close-out-the-method"></a>Закрытие метода
-
-Завершите блок try-catch и закройте метод.
-
-[!code-java[](~/cognitive-services-quickstart-code/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java?name=snippet_analyze_catch)]
 
 
 ## <a name="read-printed-and-handwritten-text"></a>Чтение печатного и рукописного текста
 
-Компьютерное зрение может считывать видимый текст в образе и преобразовывать его в поток символов. В этом разделе определяется метод `ReadFromFile`, который получает путь к локальному файлу и выводит текст c изображения на консоль.
+Служба OCR может считывать видимый текст в образе и преобразовывать его в поток символов. В этом разделе определяется метод `ReadFromFile`, который получает путь к локальному файлу и выводит текст c изображения на консоль.
 
 > [!TIP]
 > Кроме того, вы можете считать текст на удаленном изображении, на которое ссылается URL-адрес. См. подробные сведения о методах [ComputerVision](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision), например **read**. Пример кода для сценариев, в которых используются удаленные изображения, см. на [сайте GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java).
@@ -313,11 +209,11 @@ gradle run
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Изучив это краткое руководство, вы узнали, как с помощью библиотеки службы "Компьютерное зрение" для Java выполнять базовые задачи. Далее ознакомьтесь со справочной документацией, чтобы узнать больше о библиотеке.
+Изучив это краткое руководство, вы узнали, как с помощью библиотеки для OCR Java выполнять базовые задачи. Далее ознакомьтесь со справочной документацией, чтобы узнать больше о библиотеке.
 
 > [!div class="nextstepaction"]
->[Справочник по службе "Компьютерное зрение" для Java](/java/api/overview/azure/cognitiveservices/client/computervision)
+>[Справочник по пакету SDK для OCR (Java)](/java/api/overview/azure/cognitiveservices/client/computervision)
 
 
-* [Что собой представляет Компьютерное зрение](../../overview.md)
+* [Общие сведения об OCR](../../overview-ocr.md)
 * Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/java/ComputerVision/src/main/java/ComputerVisionQuickstart.java).

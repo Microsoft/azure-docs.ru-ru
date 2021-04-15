@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 12/17/2020
+ms.date: 04/02/2021
 ms.author: jeedes
-ms.openlocfilehash: 8435cab1855e9df871d17ff7fa393b6ab2cf0cb1
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 5f07e9dbd574d8a27e6048154c72b9afc24b6ba4
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98736354"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106286199"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-netskope-administrator-console"></a>Руководство по интеграции единого входа Azure Active Directory с консолью администрирования Netskope Administrator Console
 
@@ -37,13 +37,12 @@ ms.locfileid: "98736354"
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* Консоль администрирования Netskope Administrator Console поддерживает единый вход, инициированный **поставщиком услуг и поставщиком удостоверений**
+* Консоль администрирования Netskope Administrator Console поддерживает единый вход, инициированный **поставщиком услуг и поставщиком удостоверений**.
 
 > [!NOTE]
 > Идентификатор этого приложения — фиксированное строковое значение, поэтому в одном клиенте можно настроить только один экземпляр.
 
-
-## <a name="adding-netskope-administrator-console-from-the-gallery"></a>Добавление консоли администрирования Netskope Administrator Console из коллекции
+## <a name="add-netskope-administrator-console-from-the-gallery"></a>Добавление консоли администрирования Netskope Administrator Console из коллекции
 
 Чтобы настроить интеграцию консоли администрирования Netskope Administrator Console с Azure AD, нужно добавить консоль администрирования Netskope Administrator Console из коллекции в список управляемых приложений SaaS.
 
@@ -142,19 +141,19 @@ ms.locfileid: "98736354"
 
 1. Перейдите на вкладку **Settings** (Параметры) в области навигации слева.
 
-    ![Снимок экрана: выделенная кнопка Settings (Параметры) в области навигации.](./media/netskope-cloud-security-tutorial/config-settings.png)
+    ![Снимок экрана: выделенная кнопка Settings (Параметры) в области навигации.](./media/netskope-cloud-security-tutorial/configure-settings.png)
 
 1. Перейдите на вкладку **Administration** (Администрирование).
 
-    ![Снимок экрана: пункт Administration (Администрирование), выбранный в меню Settings (Параметры).](./media/netskope-cloud-security-tutorial/config-administration.png)
+    ![Снимок экрана: пункт Administration (Администрирование), выбранный в меню Settings (Параметры).](./media/netskope-cloud-security-tutorial/administration.png)
 
 1. Перейдите на вкладку **SSO** (Единый вход).
 
-    ![Снимок экрана: пункт SSO (Единый вход), выбранный в разделе Administration (Администрирование).](./media/netskope-cloud-security-tutorial/config-sso.png)
+    ![Снимок экрана: пункт SSO (Единый вход), выбранный в разделе Administration (Администрирование).](./media/netskope-cloud-security-tutorial/tab.png)
 
 1. В разделе **Network Settings** (Параметры сети) сделайте следующее:
     
-    ![Снимок экрана: раздел Network Settings (Параметры сети), где можно ввести описанные здесь значения.](./media/netskope-cloud-security-tutorial/config-pasteurls.png)
+    ![Снимок экрана: раздел Network Settings (Параметры сети), где можно ввести описанные здесь значения.](./media/netskope-cloud-security-tutorial/network.png)
 
     а. Скопируйте значение **Assertion Consumer Service URL** (URL-адрес службы обработчика утверждений) и вставьте его в поле **URL-адрес ответа** в разделе **Базовая конфигурация SAML** на портале Azure.
 
@@ -162,7 +161,7 @@ ms.locfileid: "98736354"
 
 1. Нажмите кнопку **EDIT SETTINGS** (ИЗМЕНИТЬ ПАРАМЕТРЫ) в разделе **SSO/SLO Settings** (Параметры единого входа и единого выхода).
 
-    ![Снимок экрана: раздел SSO/SLO Settings (Параметры единого входа и единого выхода), где можно нажать кнопку Edit Settings (Изменить параметры).](./media/netskope-cloud-security-tutorial/config-editsettings.png)
+    ![Снимок экрана: раздел SSO/SLO Settings (Параметры единого входа и единого выхода), где можно нажать кнопку Edit Settings (Изменить параметры).](./media/netskope-cloud-security-tutorial/settings.png)
 
 1. Во всплывающем окне **Settings** (Параметры) выполните следующие действия:
 
@@ -188,11 +187,11 @@ ms.locfileid: "98736354"
 
 1. Перейдите на вкладку **Settings** (Параметры) в области навигации слева.
 
-    ![Снимок экрана: выбранный пункт "Параметры".](./media/netskope-cloud-security-tutorial/config-settings.png)
+    ![Снимок экрана: выбранный пункт "Параметры".](./media/netskope-cloud-security-tutorial/configure-settings.png)
 
 1. Перейдите на вкладку **Active Platform** (Активная платформа).
 
-    ![Снимок экрана: меню Settings (Параметры) с выбранным пунктом Active Platform (Активная платформа).](./media/netskope-cloud-security-tutorial/user1.png)
+    ![Снимок экрана: меню Settings (Параметры) с выбранным пунктом Active Platform (Активная платформа).](./media/netskope-cloud-security-tutorial/user-1.png)
 
 1. Откройте вкладку **Пользователи**.
 

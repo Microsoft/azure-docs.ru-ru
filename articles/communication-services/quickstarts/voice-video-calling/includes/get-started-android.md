@@ -1,22 +1,24 @@
 ---
 title: Краткое руководство. Добавление вызова VOIP к приложению Android с помощью Служб коммуникации Azure
-description: Из этого учебника вы узнаете, как использовать клиентскую библиотеку для вызовов Служб коммуникации Azure для Android
-author: matthewrobertson
-ms.author: marobert
-ms.date: 08/11/2020
+description: Из этого руководства вы узнаете, как использовать пакет SDK Служб коммуникации Azure для вызовов для Android.
+author: chpalm
+ms.author: mikben
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: a387261b392ea6718941f5eabe889e0c1a41fd5a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 38194ed7290d6cd9c4889d27ff458f950603c5be
+ms.sourcegitcommit: edc7dc50c4f5550d9776a4c42167a872032a4151
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101751033"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "106073277"
 ---
-Из этого краткого руководства вы узнаете, как начать вызов с помощью клиентской библиотеки для вызовов Служб коммуникации Azure для Android.
+Из этого краткого руководства вы узнаете, как начать вызов с помощью пакета SDK Служб коммуникации Azure для вызовов для Android.
+
+[!INCLUDE [Public Preview Notice](../../../includes/public-preview-include-android-ios.md)]
 
 > [!NOTE]
-> В этом документе используется клиентская библиотека вызовов версии 1.0.0-beta.8.
+> В этом документе используется пакет SDK для вызовов версии 1.0.0-beta.8.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -37,7 +39,7 @@ ms.locfileid: "101751033"
 
 :::image type="content" source="../media/android/studio-blank-activity.png" alt-text="Снимок экрана с экраном шаблона проекта, где выбран вариант Empty Activity (Пустое действие).":::
 
-Выберите минимальную версию клиентской библиотеки: "API 26: Android 8.0 (Oreo)" или более позднюю.
+Выберите минимальную версию пакета SDK: "API 26: Android 8.0 (Oreo)" или более позднюю.
 
 :::image type="content" source="../media/android/studio-calling-min-api.png" alt-text="Снимок экрана с экраном шаблона проекта, где выбран вариант Empty Activity (Пустое действие) (2).":::
 
@@ -110,8 +112,8 @@ dependencies {
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--Our calling client library depends on the Apache HTTP client library.
-When targeting Android client library 28+, this library needs to be explicitly referenced.
+        <!--Our Calling SDK depends on the Apache HTTP SDK.
+When targeting Android SDK 28+, this library needs to be explicitly referenced.
 See https://developer.android.com/about/versions/pie/android-9.0-changes-28#apache-p-->
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity android:name=".MainActivity">
@@ -260,11 +262,11 @@ private void getAllPermissions() {
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки Служб коммуникации Azure для вызовов:
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK Служб коммуникации Azure для вызовов:
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
-| CallClient| CallClient — это основная точка входа в клиентскую библиотеку для вызовов.|
+| CallClient| CallClient — это основная точка входа в пакет SDK для вызовов.|
 | CallAgent | CallAgent используется для инициирования вызовов и управления ими. |
 | CommunicationUserCredential | CommunicationUserCredential используется в качестве учетных данных маркера для создания экземпляра CallAgent.|
 | CommunicationIdentifier | CommunicationIdentifier используется в качестве участника другого типа, который может быть частью вызова.|
@@ -305,7 +307,7 @@ private void startCall() {
     
     StartCallOptions options = new StartCallOptions();
 
-    callAgent.call(
+    callAgent.startCall(
         getApplicationContext(),
         new CommunicationUserIdentifier[] {new CommunicationUserIdentifier(calleeId)},
         options);
