@@ -3,7 +3,7 @@ title: Пример PowerShell. Вывод основных сведений о 
 description: Пример PowerShell, который выводит сведения о приложениях Azure Active Directory (Azure AD) Application Proxy, а также данные об идентификаторах приложений (AppId), именах (DisplayName) и идентификаторах объектов (ObjId).
 services: active-directory
 author: kenwith
-manager: daveba
+manager: mtillman
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.workload: identity
@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
-ms.openlocfilehash: 0a5ee23a16c10a579c9b39ce3589028603ea7a3c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b9381d6f345888abe3f6314e253ae580155b97df
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102550626"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107375463"
 ---
 # <a name="get-all-application-proxy-apps-and-list-basic-information"></a>Получение данных обо всех приложениях Application Proxy и вывод основных сведений
 

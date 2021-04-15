@@ -4,12 +4,12 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 03/05/2019
 ms.author: cshoe
-ms.openlocfilehash: 4bea0f6091c02f80e381217ab7894ec4ad90d0ed
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 32f98eb9b98168bdab270ecff07446c31f8d706d
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105105883"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105729811"
 ---
 Используйте триггер функции для ответа на событие, отправленное в поток событий концентратора событий. Чтобы настроить триггер, необходимо иметь доступ на чтение к базовому концентратору событий. При активации функции в строковом виде вводится сообщение, передаваемое в функцию.
 
@@ -375,12 +375,12 @@ public static void Run([EventHubTrigger("samples-workitems", Connection = "Event
 * `string`
 * `byte[]`
 * `POCO`
-* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet).
+* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata).
 
 ### <a name="additional-types"></a>Дополнительные типы 
-Приложения, использующие расширение Центра событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](/dotnet/api/azure.messaging.eventhubs.eventdata?view=azure-dotnet), а не [Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
+Приложения, использующие расширение Центра событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](/dotnet/api/azure.messaging.eventhubs.eventdata), а не [Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
 
-- [EventBody](/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody?view=azure-dotnet);
+- [EventBody](/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody);
 
 # <a name="c-script"></a>[Скрипт C#](#tab/csharp-script)
 
@@ -391,12 +391,12 @@ public static void Run([EventHubTrigger("samples-workitems", Connection = "Event
 * `string`
 * `byte[]`
 * `POCO`
-* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet).
+* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata).
 
 ### <a name="additional-types"></a>Дополнительные типы 
-Приложения, использующие расширение Центра событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](/dotnet/api/azure.messaging.eventhubs.eventdata?view=azure-dotnet), а не [Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
+Приложения, использующие расширение Центра событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](/dotnet/api/azure.messaging.eventhubs.eventdata), а не [Microsoft.Azure.EventHubs](/dotnet/api/microsoft.azure.eventhubs.eventdata). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
 
-- [EventBody](/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody?view=azure-dotnet);
+- [EventBody](/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody);
 
 # <a name="java"></a>[Java](#tab/java)
 
@@ -418,7 +418,7 @@ public static void Run([EventHubTrigger("samples-workitems", Connection = "Event
 
 Триггер Центров событий предоставляет несколько [свойств метаданных](../articles/azure-functions/./functions-bindings-expressions-patterns.md). Свойства метаданных можно использовать как часть выражений привязки в других привязках или как параметры в коде. Эти свойства передаются из класса [EventData](/dotnet/api/microsoft.servicebus.messaging.eventdata).
 
-|Свойство|Type|Описание|
+|Свойство|Тип|Описание|
 |--------|----|-----------|
 |`PartitionContext`|[PartitionContext](/dotnet/api/microsoft.servicebus.messaging.partitioncontext)|Экземпляр класса `PartitionContext`.|
 |`EnqueuedTimeUtc`|`DateTime`|Время попадания в очередь в формате UTC.|

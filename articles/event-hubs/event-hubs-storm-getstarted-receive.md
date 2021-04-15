@@ -3,12 +3,12 @@ title: Краткое руководство. Получение событий 
 description: Краткое руководство. В этой статье приводятся сведения о том, как получать события от службы "Центры событий Azure" с помощью Apache Storm.
 ms.topic: quickstart
 ms.date: 06/23/2020
-ms.openlocfilehash: 099a3ff1ad57616de0d7929d787b82e9d55c9e00
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b79c2958a10d0193b706c92a28b1792d63c24b82
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "87087583"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107302970"
 ---
 # <a name="quickstart-receive-events-from-event-hubs-using-apache-storm"></a>Краткое руководство. Получение событий из Центров событий с помощью Apache Storm
 
@@ -235,7 +235,7 @@ ms.locfileid: "87087583"
 
 * [Общие сведения о Центрах событий][Event Hubs overview]
 * [Создание концентратора событий](event-hubs-create.md)
-* [Часто задаваемые вопросы о Центрах событий](event-hubs-faq.md)
+* [Часто задаваемые вопросы о Центрах событий](event-hubs-faq.yml)
 
 <!-- Links -->
 [Event Hubs overview]: ./event-hubs-about.md

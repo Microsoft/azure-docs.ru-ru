@@ -4,12 +4,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 10/15/2020
 ms.author: trbye
-ms.openlocfilehash: df7c24fefcc6cda8f02a6575dea911e48d200a90
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 4f542970db5cf7015df4e0f276fccd8782d7beee
+ms.sourcegitcommit: bed20f85722deec33050e0d8881e465f94c79ac2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100552284"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105152709"
 ---
 а также как установить [пакет SDK для службы "Речь"](~/articles/cognitive-services/speech-service/speech-sdk.md) для Python. Если вам нужно только имя пакета, чтобы приступить к работе самостоятельно, выполните `pip install azure-cognitiveservices-speech`.
 
@@ -49,7 +49,7 @@ ms.locfileid: "100552284"
 > - Если вы используете RHEL/CentOS 8, выполните инструкции по [настройке OpenSSL для Linux](~/articles/cognitive-services/speech-service/how-to-configure-openssl-linux.md).
 
 - В Windows для вашей платформы необходим [распространяемый компонент Microsoft Visual C++ для Visual Studio 2019](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). Обратите внимание, что при первой установке может потребоваться перезагрузить Windows, чтобы продолжить работу с данным руководством.
-- И, наконец, потребуется [Python 3.5–3.8](https://www.python.org/downloads/). Чтобы проверить установку, откройте командную строку, введите команду `python --version` и проверьте результат. Если установка выполнена правильно, вы получите ответ "Python 3.5.1" или аналогичный.
+- И, наконец, потребуется [Python 3.6–3.9](https://www.python.org/downloads/). Чтобы проверить установку, откройте командную строку, введите команду `python --version` и проверьте результат. Если установка выполнена правильно, вы получите ответ "Python 3.8.8".
 
 ## <a name="install-the-speech-sdk-from-pypi"></a>Установка пакета SDK службы "Речь" из PyPI
 
@@ -73,7 +73,7 @@ import azure.cognitiveservices.speech as speechsdk
 
 ## <a name="install-the-speech-sdk-using-visual-studio-code"></a>Установка пакета SDK для службы "Речь" с помощью Visual Studio Code
 
-1. Скачайте и установите последнюю поддерживаемую версию [Python](https://www.python.org/downloads/) для своей платформы (3.5–3.8.).
+1. Скачайте и установите последнюю поддерживаемую версию [Python](https://www.python.org/downloads/) для своей платформы (3.6–3.9.).
    - Пользователи Windows должны выбрать вариант добавления Python в переменную среды PATH при установке.
 1. Скачайте и установите [Visual Studio Code](https://code.visualstudio.com/Download).
 1. Откройте Visual Studio Code и установите расширение Python. В меню выберите **Файл** > **Параметры** > **Расширения**. Найдите **Python** и щелкните **Установить**.

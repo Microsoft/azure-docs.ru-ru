@@ -2,25 +2,25 @@
 author: mikben
 ms.service: azure-communication-services
 ms.topic: include
-ms.date: 9/1/2020
+ms.date: 03/10/2021
 ms.author: mikben
-ms.openlocfilehash: 778255dc7259bd66a7c7059ede855464c1e39569
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 443595a52458d7ff7c168f4c120257cfb60fad2e
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102444241"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105110901"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/dotnet/) бесплатно.
-- Последняя версия [клиентской библиотеки NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
-- Получите последнюю версию [клиентской библиотеки идентификатора .NET](/dotnet/api/azure.identity).
-- Получите последнюю версию [клиентской библиотеки управления .NET](../../concepts/sdk-options.md).
+- Последняя версия [пакета SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
+- Получите последнюю версию [пакета SDK для .NET Identity](/dotnet/api/azure.identity).
+- Получите последнюю версию [пакета SDK управления .NET](../../concepts/sdk-options.md).
 
-## <a name="installing-the-client-library"></a>Установка клиентской библиотеки
+## <a name="installing-the-sdk"></a>Установка пакета SDK
 
-Во-первых, включите клиентскую библиотеку управления Служб коммуникации в проект C#:
+Во-первых, добавьте пакет SDK для управления Служб коммуникации в проект C#:
 
 ```csharp
 using Azure.ResourceManager.Communication;
@@ -121,11 +121,11 @@ var communicationServiceClient = new CommunicationManagementClient(subscriptionI
 
 Для каждого из приведенных ниже примеров мы будем назначать ресурсы Служб коммуникации имеющейся группе ресурсов.
 
-Если вам необходимо создать группу ресурсов, можете использовать [портал Azure](../../../azure-resource-manager/management/manage-resource-groups-portal.md) или [клиентскую библиотеку Azure Resource Manager](https://github.com/Azure/azure-sdk-for-net/blob/master/doc/mgmt_preview_quickstart.md).
+Если вам необходимо создать группу ресурсов, можете использовать [портал Azure](../../../azure-resource-manager/management/manage-resource-groups-portal.md) или [пакет SDK для Azure Resource Manager](https://github.com/Azure/azure-sdk-for-net/blob/master/doc/mgmt_preview_quickstart.md).
 
 ### <a name="create-and-manage-a-communication-services-resource"></a>Создание ресурсов Служб коммуникации Azure и управление ими
 
-Для выполнения операций с ресурсами Служб коммуникации можно использовать экземпляр клиентской библиотеки клиента управления Служб коммуникации (``Azure.ResourceManager.Communication.CommunicationManagementClient``).
+Для выполнения операций с ресурсами Служб коммуникации можно использовать экземпляр клиента пакета SDK для управления Служб коммуникации (``Azure.ResourceManager.Communication.CommunicationManagementClient``).
 
 #### <a name="create-a-communication-services-resource"></a>Создание ресурса Служб коммуникации
 
@@ -173,7 +173,7 @@ await acsClient.CommunicationService.StartDeleteAsync(resourceGroupName, resourc
 
 ## <a name="managing-keys-and-connection-strings"></a>Управление ключами и строками подключения
 
-Каждый ресурс Служб коммуникации имеет пару ключей доступа и соответствующие строки подключения. Доступ к этим ключам можно получить с помощью клиентской библиотеки управления. Затем их можно использовать в других клиентских библиотеках Служб коммуникации для проверки подлинности в Службах коммуникации Azure.
+Каждый ресурс Служб коммуникации имеет пару ключей доступа и соответствующие строки подключения. Доступ к этим ключам можно получить с помощью пакета SDK управления. Затем их можно использовать в других пакетах SDK Служб коммуникации для проверки подлинности в Службах коммуникации Azure.
 
 #### <a name="get-access-keys-for-a-communication-services-resource"></a>Получение ключей доступа для ресурса Служб коммуникации
 

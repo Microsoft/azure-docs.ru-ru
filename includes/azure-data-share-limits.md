@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 services: azure data share
 author: jifems
@@ -9,10 +9,10 @@ ms.date: 07/30/2020
 ms.author: jife
 ms.custom: include file
 ms.openlocfilehash: 7c11ace5983ee906ebb12ebb2c60f4567f40e430
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87515312"
 ---
 Служба Azure Data Share позволяет организациям просто и безопасно обмениваться данными с клиентами и партнерами.

@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 09/14/2020
+ms.date: 03/22/2021
 ms.author: jeedes
-ms.openlocfilehash: 3b7c8e024ac8361c08cc41195531a114bb12fcb4
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 3af149f0c1db7f354be6bd968bbd0cf858493d4c
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92522297"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106219303"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-oracle-peoplesoft---protected-by-f5-big-ip-apm"></a>Руководство по интеграции единого входа Azure Active Directory с Oracle PeopleSoft — Protected by F5 BIG-IP APM
 
@@ -43,7 +43,7 @@ ms.locfileid: "92522297"
         * подписки на фильтрацию URL-адресов для использования базы данных категории URL-адресов; 
         * подписки на F5 IP Intelligence для обнаружения и блокирования известных злоумышленников и вредоносного трафика; 
         * аппаратного сетевого модуля безопасности (HSM) для защиты цифровых ключей и управления ими с целью обеспечения надежной проверки подлинности.
-1. Система F5 BIG-IP подготавливается с модулями APM (LTM является необязательным). 
+1. Система F5 BIG-IP подготавливается с модулями APM (LTM является необязательным).
 1. Хотя это необязательно, настоятельно рекомендуется развернуть системы F5 в [группе устройств для синхронизации и отработки отказа](https://techdocs.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/big-ip-device-service-clustering-administration-14-1-0.html), которая включает в себя активную резервную пару с плавающим IP-адресом для обеспечения высокой доступности. Дальнейшая избыточность интерфейса реализуется с помощью протокола LACP. LACP управляет подключенными физическими интерфейсами как одним виртуальным интерфейсом (статистической группой) и обнаруживает все сбои интерфейса в группе.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -52,7 +52,7 @@ ms.locfileid: "92522297"
 
 * Oracle PeopleSoft — Protected by F5 BIG-IP APM поддерживает вход, инициированный **поставщиком услуг или поставщиком удостоверений**.
 
-## <a name="adding-oracle-peoplesoft---protected-by-f5-big-ip-apm-from-the-gallery"></a>Добавление Oracle PeopleSoft — Protected by F5 BIG-IP APM из коллекции
+## <a name="add-oracle-peoplesoft---protected-by-f5-big-ip-apm-from-the-gallery"></a>Добавление Oracle PeopleSoft — Protected by F5 BIG-IP APM из коллекции
 
 Чтобы настроить интеграцию Oracle PeopleSoft — Protected by F5 BIG-IP APM с Azure AD, необходимо добавить Oracle PeopleSoft — Protected by F5 BIG-IP APM из коллекции в список управляемых приложений SaaS.
 
@@ -83,7 +83,7 @@ ms.locfileid: "92522297"
 
 1. На портале Azure на странице интеграции с приложением **Oracle PeopleSoft — Protected by F5 BIG-IP APM** найдите раздел **Управление** и выберите **Единый вход**.
 1. На странице **Выбрать метод единого входа** выберите **SAML**.
-1. На странице **Настройка единого входа с помощью SAML** щелкните значок "Изменить" (значок пера), чтобы открыть диалоговое окно **Базовая конфигурация SAML** и изменить параметры.
+1. На странице **Настройка единого входа с помощью SAML** щелкните значок карандаша, чтобы открыть диалоговое окно **Базовая конфигурация SAML** для изменения параметров.
 
    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
@@ -231,7 +231,7 @@ ms.locfileid: "92522297"
 >[!Note]
 > Справочник: https://docs.oracle.com/cd/E12530_01/oam.1014/e10356/people.htm
 
-1. Войдите в PeopleSoft Console `https://<FQDN>.peoplesoft.f5.com/:8000/psp/ps/?cmd=start`, используя учетные данные администратора (например, PS/PS)
+1. Войдите в PeopleSoft Console `https://<FQDN>.peoplesoft.f5.com/:8000/psp/ps/?cmd=start`, используя учетные данные администратора (например, PS/PS).
 
     ![Портал самообслуживания Service Manager](./media/oracle-peoplesoft-protected-by-f5-big-ip-apm-tutorial/people-soft-console.png)
 
@@ -329,9 +329,8 @@ ms.locfileid: "92522297"
 
 * Выберите **Тестировать приложение** на портале Azure, и вы автоматически войдете в Oracle PeopleSoft — Protected by F5 BIG-IP APM, для которого настроен единый вход. 
 
-Вы можете также использовать Панель доступа корпорации Майкрософт для тестирования приложения в любом режиме. Щелкнув плитку Oracle PeopleSoft — Protected by F5 BIG-IP APM на Панели доступа, вы будете перенаправлены на страницу входа приложения, если настроено для использования в режиме поставщика услуг, или автоматически войдете в приложение Oracle PeopleSoft — Protected by F5 BIG-IP APM, для которого настроен единый вход, если настроено для использования в режиме поставщика удостоверений. См. дополнительные сведения о [панели доступа](../user-help/my-apps-portal-end-user-access.md)
-
+Вы можете также использовать портал "Мои приложения" корпорации Майкрософт для тестирования приложения в любом режиме. Щелкнув плитку Oracle PeopleSoft — Protected by F5 BIG-IP APM на портале "Мои приложения", вы будете перенаправлены на страницу входа приложения, если настроено для использования в режиме поставщика услуг, или автоматически войдете в приложение Oracle PeopleSoft — Protected by F5 BIG-IP APM, для которого настроен единый вход, если настроено для использования в режиме поставщика удостоверений. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Oracle PeopleSoft — Protected by F5 BIG-IP APM вы можете применить управление сеансами, которое защищает от хищения конфиденциальных данных вашей организации и несанкционированного доступа к ним в реальном времени. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).
+После настройки Oracle PeopleSoft — Protected by F5 BIG-IP APM вы можете применить управление сеансами, которое защищает от хищения конфиденциальных данных вашей организации и несанкционированного доступа к ним в реальном времени. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).

@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 11/09/2018
 ms.author: nitinme
 ms.openlocfilehash: 1d8340054ace25a0cdc36eef9c3d5b4238a6f99b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "67185571"
 ---
 Служба и тип подписки определяют число запросов, которые можно выполнить за секунду (QPS). Убедитесь, что приложение содержит логику, необходимую, чтобы оставаться в пределах вашей квоты. Если лимит частоты запросов достигнут или превышен, запрос возвращает ошибку с кодом состояния HTTP 429. Ответ включает заголовок `Retry-After`, который указывает, сколько необходимо ждать перед отправкой другого запроса.
