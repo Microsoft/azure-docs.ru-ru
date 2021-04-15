@@ -8,16 +8,14 @@ ms.author: chpalm
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 933b5605cf38be90d419673a94e23e4c36f0ef36
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: beb8b81710cf4728259a8eb1df920cd74efce3ce
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495714"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105728136"
 ---
 # <a name="region-availability-and-data-residency"></a>Доступность в регионах и место расположения данных
-
-[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
 
 Службы коммуникации Azure помогают нашим клиентам установить необходимый уровень конфиденциальности и защиты персональных данных. Будучи разработчиком, который использует Службы коммуникации с прямой связью с пользователями приложения, вы являетесь потенциальным контроллером их данных. Так как Службы коммуникации Azure хранят и шифруют эти неактивные данные от вашего имени, мы, видимо, выступаем в роли обработчика данных. Эта страница отображает процесс хранения данных и способы определения, экспорта и удаления этих данных.
 
@@ -58,10 +56,12 @@ ms.locfileid: "103495714"
 
 ### <a name="chat"></a>Чат
 
-Потоки чата и сообщений сохраняются, пока их не удалят явным образом. Полностью бездействующий поток будет автоматически удален через 30 дней. Используйте [API чата](/rest/api/communication/chat/chatthread), чтобы получать, перечислять, обновлять и удалять сообщения.
+Потоки чата и сообщений сохраняются, пока их не удалят явным образом. Если неактивный поток чата не включает участников, он автоматически удаляется через 30 дней. Используйте [API чата](/rest/api/communication/chat/chatthread), чтобы получать, перечислять, обновлять и удалять сообщения.
 
 - `Get Thread`
 - `Get Message`
+- `List Messages`
+- `Update Message`
 - `Delete Thread`
 - `Delete Message`
 

@@ -48,14 +48,12 @@
               href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/computer-vision/context/context
     - name: Справка
       items:
-        - name: "REST API OCR\_3.2, предварительная версия"
-          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
+        - name: "REST\_API OCR версии\_3.2"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2/operations/5d986960601faab4bf452005'
         - name: "REST API OCR\_3.1"
           href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005'
         - name: "REST API OCR\_2.1"
           href: 'https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641'
-        - name: "REST API OCR\_1.0"
-          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739'
         - name: .NET
           href: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
         - name: Node.js
@@ -75,7 +73,7 @@
     - name: Общие сведения об Анализе изображений
       href: overview-image-analysis.md
     - name: Краткое руководство по Анализу изображений
-      href: quickstarts-sdk/client-library.md
+      href: quickstarts-sdk/image-analysis-client-library.md
     - name: Примеры
       items:
         - name: Создание приложения для обработки изображений
@@ -120,14 +118,12 @@
           href: Tutorials/storage-lab-tutorial.md
     - name: Справочник
       items:
-        - name: "REST\_API \"Анализ изображений\"\_3.2, предварительная версия"
-          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b'
+        - name: "REST\_API \"Анализ изображений\" версии\_3.2"
+          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2/operations/56f91f2e778daf14a499f21b'
         - name: "REST\_API \"Анализ изображений\"\_3.1"
           href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005'
         - name: "REST\_API \"Анализ изображений\"\_2.1"
           href: 'https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641'
-        - name: "REST\_API \"Анализ изображений\"\_1.0"
-          href: 'https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739'
         - name: .NET
           href: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
         - name: Node.js
@@ -146,8 +142,6 @@
   items:
     - name: Обзор Пространственного анализа
       href: intro-to-spatial-analysis-public-preview.md
-    - name: Настройка главного компьютера и запуск контейнера
-      href: spatial-analysis-container.md
     - name: Ответственное использование ИИ
       items:
         - name: Примечания о прозрачности
@@ -170,6 +164,8 @@
       items:
         - name: Использование контейнера пространственного анализа
           items:
+            - name: Настройка главного компьютера и запуск контейнера
+              href: spatial-analysis-container.md
             - name: Настройка операций
               href: spatial-analysis-operations.md
             - name: Развертывание веб-приложения для пересчета людей
@@ -198,7 +194,7 @@
       href: /learn/paths/explore-computer-vision-microsoft-azure/
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/computer-vision/context/context
-    - name: Соответствие требованиям
+    - name: Соответствие нормативным требованиям
       href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Обновления Azure
       href: 'https://azure.microsoft.com/updates/?product=cognitive-services'

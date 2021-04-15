@@ -12,18 +12,24 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: overview
-ms.date: 03/19/2021
+ms.date: 04/05/2021
 ms.author: b-juche
-ms.openlocfilehash: f2167159b03cd0387acfccf4bbd0a2e840f739df
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: 94981cd0912f76b710b3a60040ffbffd38381bcd
+ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104955245"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106552110"
 ---
 # <a name="whats-new-in-azure-netapp-files"></a>Новые возможности Azure NetApp Files
 
 Azure NetApp Files регулярно обновляется. Эта статья содержит сводные сведения о новейших возможностях и улучшениях. 
+
+## <a name="april-2021"></a>Апрель 2021 г.
+
+* [Сопоставление пользователей доменных служб Active Directory (AD DS) с помощью протокола LDAP для расширенных групп NFS](configure-ldap-extended-groups.md) (предварительная версия)   
+
+    По умолчанию Azure NetApp Files поддерживает до 16 ИД групп при обработке учетных данных пользователей NFS, как описано в [RFC 5531](https://tools.ietf.org/html/rfc5531). Теперь вы можете увеличить это число до 1024, если у вас есть пользователи, которые входят в большее количество групп, чем доступно по умолчанию. Также тома NFS теперь можно добавлять в протокол LDAP AD DS. Благодаря этому пользователи AD DS с расширенным количеством групп (до 1024) могут получать доступ к тому. 
 
 ## <a name="march-2021"></a>Март 2021 г.
 

@@ -9,12 +9,12 @@ ms.subservice: face-api
 ms.topic: include
 ms.date: 10/26/2020
 ms.author: pafarley
-ms.openlocfilehash: b06a35274082e09ec0973c5123b39935a93e354d
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ab99d574588989c84783e532fcf801dcaffdd54d
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102444948"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105958401"
 ---
 В этом руководстве описано, как приступить к работе с клиентской библиотекой API "Распознавание лиц" для .NET. Выполните приведенные здесь действия, чтобы установить пакет и протестировать пример кода для выполнения базовых задач. В службе "Распознавание лиц" доступны передовые алгоритмы обнаружения и распознавания лиц на изображениях.
 
@@ -22,7 +22,7 @@ ms.locfileid: "102444948"
 
 * [Определение лиц на изображении](#detect-faces-in-an-image)
 * [поиск похожих лиц](#find-similar-faces);
-* [Создание группы людей](#create-a-person-group)
+* [Создание PersonGroup](#create-a-persongroup)
 * [опознание лица](#identify-a-face);
 
 [Справочная документация](/dotnet/api/overview/azure/cognitiveservices/client/faceapi) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/cognitiveservices/Vision.Face) | [Пакет (NuGet)](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.Face/2.6.0-preview.1) | [Примеры](/samples/browse/?products=azure&term=face)
@@ -124,7 +124,7 @@ dotnet add package Microsoft.Azure.CognitiveServices.Vision.Face --version 2.6.0
 * [аутентификация клиента](#authenticate-the-client);
 * [Определение лиц на изображении](#detect-faces-in-an-image)
 * [поиск похожих лиц](#find-similar-faces);
-* [Создание группы людей](#create-a-person-group)
+* [Создание PersonGroup](#create-a-persongroup)
 * [опознание лица](#identify-a-face);
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
@@ -186,7 +186,7 @@ dotnet add package Microsoft.Azure.CognitiveServices.Vision.Face --version 2.6.0
 
 Операция идентификации (Identify) принимает изображение человека или нескольких людей и пытается опознать каждое лицо на этом изображении (поиск с распознаванием лиц). Он сравнивает каждое обнаруженное лицо с **PersonGroup**, которая является базой данных объектов **Person** с известными характеристиками лиц. Чтобы выполнить операцию Identify, сначала необходимо создать и обучить **PersonGroup**.
 
-### <a name="create-a-person-group"></a>Создание группы людей
+### <a name="create-a-persongroup"></a>Создание PersonGroup
 
 Следующий код создает группу **PersonGroup** с шестью разными объектами **Person**. Он сопоставляет каждый объект **Person** с набором тестовых изображений, а затем обучается распознавать каждого человека по характеристикам их лиц. Объекты **Person** и **PersonGroup** используются в операциях Verify, Identify и Group.
 

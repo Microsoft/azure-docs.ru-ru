@@ -4,13 +4,13 @@ description: Из этой статьи вы узнаете, как исполь
 ms.service: cognitive-services
 ms.subservice: language-understanding
 ms.topic: quickstart
-ms.date: 11/30/2020
-ms.openlocfilehash: a3bad4ab69f6950f83db9cf1f49cfa4cb7c7b5f0
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 03/26/2021
+ms.openlocfilehash: 4542f85ab562e65777fb8570873305523c76aee6
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102040130"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106276830"
 ---
 # <a name="how-to-query-the-prediction-runtime-with-user-text"></a>Отправка запросов в среду выполнения прогнозирования с использованием пользовательского текста
 
@@ -176,4 +176,4 @@ ms.locfileid: "102040130"
 * [Пользовательские поддомены](../cognitive-services-custom-subdomains.md)
 
 > [!div class="nextstepaction"]
-> [Создание приложения на портале LUIS](get-started-portal-build-app.md)
+> [Использование клиентских библиотек или REST API](client-libraries-rest-api.md)

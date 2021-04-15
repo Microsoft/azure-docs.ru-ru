@@ -7,12 +7,12 @@ ms.author: chpalm
 ms.date: 11/16/2020
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: e55cfb1a4dff7bfda2323e68777d6f50514b1608
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 8301f81b21db50814df1bc764cc1fae38b4f14de
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105930240"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107307645"
 ---
 # <a name="teams-embed"></a>Teams Embed
 
@@ -33,6 +33,6 @@ Teams Embed предоставляет большинство функций, п
 - Взаимодействие во время собрания для настройки аудио- и видеоустройств.
 - [Фоны видео](https://support.microsoft.com/office/change-your-background-for-a-teams-meeting-f77a2381-443a-499d-825e-509a140f4780): позволяет участникам размыть фон или заменить произвольным изображением.
 - [Несколько режимов работы видеогалереи](https://support.microsoft.com/office/using-video-in-microsoft-teams-3647fc29-7b92-4c26-8c2d-8a596904cdae): крупная галерея, совместный режим, фокусировка, закрепление и выделение.
-- [Совместное использование содержимого](https://support.microsoft.comoffice/share-content-in-a-meeting-in-teams-fcc2bf59-aecd-4481-8f99-ce55dd836ce8#ID0EABAAA=Mobile): участники могут показать другим свой экран.
+- [Совместное использование содержимого](https://support.microsoft.com/en-us/office/share-content-in-a-meeting-in-teams-fcc2bf59-aecd-4481-8f99-ce55dd836ce8): участники могут показать другим свой экран.
 
 Дополнительные сведения об этом пользовательском интерфейсе и его сравнение с другими пакетами SDK Служб коммуникации Azure см. в статье [о концепции пользовательского интерфейса SDK](ui-sdk-overview.md). 

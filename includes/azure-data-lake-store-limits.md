@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 services: storage
 author: twooley
@@ -9,10 +9,10 @@ ms.date: 09/30/2020
 ms.author: twooley
 ms.custom: include file
 ms.openlocfilehash: 7098f23e9b5b6f56fbbe761335afc65375aea680
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96509304"
 ---
 **Azure Data Lake Storage 2-го поколения** не является выделенной службой или типом учетной записи хранения. Это последний выпуск со специализированными возможностями для аналитики больших данных.  Такие возможности доступны в учетных записях общего назначения версии 2 или BlockBlobStorage. Чтобы воспользоваться ими, включите функцию **Иерархическое пространство имен** в учетной записи. Сведения о целевых показателях масштабируемости см. в следующих статьях: 

@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 03/04/2021
 ms.author: alkohli
-ms.openlocfilehash: 38ba5679731b5e52eb06751a625aea9df69c76ca
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 14d9c762702648d25efcbcc7ac85824659e20f05
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105643221"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107304075"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-using-azure-cli-and-python"></a>Развертывание виртуальных машин на устройстве GPU Azure Stack Edge Pro с помощью Azure CLI и Python
 
@@ -355,7 +355,7 @@ ms.locfileid: "105643221"
 
    Идентификатор клиента Azure Resource Manager задан непосредственно в коде. Идентификатор арендатора и идентификатор подписки Azure Resource Manager указаны в выходных данных команды `az login`, которую вы выполнили ранее. Секрет клиента Azure Resource Manager — это указанный пароль Azure Resource Manager.
 
-   Дополнительные сведения см. в статье [Установка пароля Azure Resource Manager на устройстве GPU Azure Stack Edge](/azure/azure-stack-edge-gpu-set-azure-resource-manager-password).
+   Дополнительные сведения см. в статье [Установка пароля Azure Resource Manager на устройстве GPU Azure Stack Edge](/azure/databox-online/azure-stack-edge-gpu-set-azure-resource-manager-password).
 
 5. Измените версию профиля на 2019-03-01-hybrid. Чтобы изменить версию профиля, выполните следующую команду:
 

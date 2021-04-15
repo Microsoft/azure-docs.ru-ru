@@ -9,12 +9,12 @@ ms.subservice: face-api
 ms.topic: include
 ms.date: 11/10/2020
 ms.author: pafarley
-ms.openlocfilehash: 7fc1822c219c6c881e3d788f6b0e56675cecc466
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 0939216e1d96e898d7c45b9e7a3ec72453b263d6
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102445781"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105958358"
 ---
 В этом руководстве показано, как начать работу с клиентской библиотекой API Распознавания лиц для Python. Выполните приведенные здесь действия, чтобы установить пакет и протестировать пример кода для выполнения базовых задач. В службе "Распознавание лиц" доступны передовые алгоритмы обнаружения и распознавания лиц на изображениях.
 
@@ -22,7 +22,7 @@ ms.locfileid: "102445781"
 
 * [Определение лиц на изображении](#detect-faces-in-an-image)
 * [поиск похожих лиц](#find-similar-faces);
-* [создание и обучение на основе изображения группы людей](#create-and-train-a-person-group);
+* [Создание и обучение PersonGroup](#create-and-train-a-persongroup)
 * [опознание лица](#identify-a-face);
 * [Проверка лиц](#verify-faces)
 
@@ -86,7 +86,7 @@ pip install --upgrade azure-cognitiveservices-vision-face
 * [аутентификация клиента](#authenticate-the-client);
 * [Определение лиц на изображении](#detect-faces-in-an-image)
 * [поиск похожих лиц](#find-similar-faces);
-* [создание и обучение на основе изображения группы людей](#create-and-train-a-person-group);
+* [Создание и обучение PersonGroup](#create-and-train-a-persongroup)
 * [опознание лица](#identify-a-face);
 * [Проверка лиц](#verify-faces)
 
@@ -133,7 +133,7 @@ pip install --upgrade azure-cognitiveservices-vision-face
 
 [!code-python[](~/cognitive-services-quickstart-code/python/Face/FaceQuickstart.py?name=snippet_findsimilar_print)]
 
-## <a name="create-and-train-a-person-group"></a>Создание и обучение на основе изображения группы людей
+## <a name="create-and-train-a-persongroup"></a>Создание и обучение PersonGroup
 
 Следующий код создает объект **PersonGroup** с тремя объектами **Person**. Он соотносит каждый объект **Person** с коллекцией примеров изображений, а затем походит обучение, чтобы распознать каждое лицо. 
 
@@ -174,7 +174,7 @@ pip install --upgrade azure-cognitiveservices-vision-face
 Операция идентификации (Identify) принимает изображение человека или нескольких людей и пытается опознать каждое лицо на этом изображении (поиск с распознаванием лиц). Он сравнивает каждое обнаруженное лицо с **PersonGroup**, которая является базой данных объектов **Person** с известными характеристиками лиц.
 
 > [!IMPORTANT]
-> Чтобы выполнить этот пример, сначала необходимо выполнить код из раздела [Создание и обучение на основе изображения группы людей](#create-and-train-a-person-group).
+> Чтобы выполнить этот пример, сначала необходимо выполнить код из раздела [Создание и обучение PersonGroup](#create-and-train-a-persongroup).
 
 ### <a name="get-a-test-image"></a>Получение тестового изображения
 
