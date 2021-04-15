@@ -9,26 +9,23 @@ ms.author: mariusu
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 824fd19e8acfed75ab3d64048a00f579b70286d2
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 35c3bd0213b6d895a81605f5858f924182e1e307
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103496241"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106168864"
 ---
 # <a name="get-started-with-the-web-calling-sample"></a>Начало работы с примером веб-вызова
 
-Примером веб-вызова является веб-приложение, служащее в качестве пошагового руководства по различным возможностям, которые предоставляет клиентская библиотека веб-вызовов Служб коммуникации.
+Примером веб-вызова является веб-приложение, служащее в качестве пошагового руководства по различным возможностям, которые предоставляет пакет SDK для веб-вызовов Служб коммуникации.
 
 Этот пример был создан для разработчиков и позволяет легко приступить к работе со Службами коммуникации. Его пользовательский интерфейс делится на несколько разделов, каждый из которых содержит кнопку отображения кода, с помощью которой можно копировать код непосредственно из браузера в собственное приложение Служб коммуникации.
 
 ## <a name="get-started-with-the-web-calling-sample"></a>Начало работы с примером веб-вызова
 
-[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
-
-
 > [!IMPORTANT]
-> [Этот пример можно найти на сайте GitHub](https://github.com/Azure-Samples/communication-services-web-calling-tutorial/).
+> [Этот пример можно найти **на сайте GitHub**.](https://github.com/Azure-Samples/communication-services-web-calling-tutorial/)
 
 Следуйте указаниям в файле /Project/readme.md, чтобы настроить проект и выполнить его локально на компьютере.
 Если на компьютере выполняется [пример веб-вызова](https://github.com/Azure-Samples/communication-services-web-calling-tutorial), вы увидите следующую целевую страницу:
@@ -51,7 +48,7 @@ ms.locfileid: "103496241"
 
 ## <a name="placing-and-receiving-calls"></a>Размещение и получение вызовов
 
-Пакет SDK веб-вызовов для Служб коммуникации позволяет использовать режимы **1:1**, **1:N** и **групповые** вызовы.
+Пакет SDK для веб-вызовов для Служб коммуникации позволяет использовать режимы **1:1**, **1:N** и **групповые** вызовы.
 
 Для исходящих вызовов 1:1 или 1:N можно указать несколько удостоверений пользователей Служб коммуникации, чтобы осуществить вызов с помощью значений, разделенных запятыми. Вы также можете указать традиционные номера телефонов (ТСОП) для вызова с помощью значений, разделенных запятыми.
 
@@ -86,7 +83,7 @@ ms.locfileid: "103496241"
 
 Дополнительные сведения см. в следующих статьях:
 
-- Изучите, как правильно [использовать клиентскую библиотеку вызовов](../quickstarts/voice-video-calling/calling-client-samples.md).
+- Узнайте, как правильно [использовать пакет SDK для вызовов](../quickstarts/voice-video-calling/calling-client-samples.md).
 - Узнайте больше о [принципе работы функции вызовов](../concepts/voice-video-calling/about-call-types.md).
 - Ознакомьтесь со [справочной документацией по API](/javascript/api/azure-communication-services/@azure/communication-calling/).
 - Изучите пример приложения [Contoso MED](https://github.com/Azure-Samples/communication-services-contoso-med-app).

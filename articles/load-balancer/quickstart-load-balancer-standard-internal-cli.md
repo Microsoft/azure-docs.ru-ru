@@ -14,12 +14,12 @@ ms.workload: infrastructure-services
 ms.date: 12/19/2020
 ms.author: allensu
 ms.custom: mvc, devx-track-js, devx-track-azurecli
-ms.openlocfilehash: f728e1f1e2186188135666ed54e02c9ed3507509
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 66b3db9a7aec45a2a0881379db6f7ef51950b5c5
+ms.sourcegitcommit: dddd1596fa368f68861856849fbbbb9ea55cb4c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106056544"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107364317"
 ---
 # <a name="quickstart-create-an-internal-load-balancer-by-using-the-azure-cli"></a>Краткое руководство. Создание внутреннего балансировщика нагрузки с помощью Azure CLI
 
@@ -30,9 +30,6 @@ ms.locfileid: "106056544"
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)] 
 
 Для работы с этим кратким руководством требуется Azure CLI версии 2.0.28 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
-
->[!NOTE]
->Azure Load Balancer ценовой категории "Стандартный" — это рекомендуемый вариант для рабочих нагрузок в рабочей среде. Эта статья содержит сведения об Azure Load Balancer ценовой категории "Стандартный", а также об Azure Load Balancer ценовой категории "Базовый". Дополнительные сведения о доступных ценовых категориях см. в статье [Номера SKU для Azure Load Balancer](skus.md).
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
@@ -47,7 +44,11 @@ ms.locfileid: "106056544"
 
 ```
 
-## <a name="azure-load-balancer-standard"></a>Azure Load Balancer ценовой категории "Стандартный"
+---
+# <a name="standard-sku"></a>[**SKU "Стандартный"**](#tab/option-1-create-load-balancer-standard)
+
+>[!NOTE]
+>Для производственных рабочих нагрузок рекомендуется использовать подсистему балансировки нагрузки ценовой категории "Стандартный". Дополнительные сведения о доступных ценовых категориях см. в статье **[Номера SKU для Azure Load Balancer](skus.md)** .
 
 В этом разделе показано, как создать подсистему балансировки нагрузки, которая распределяет нагрузку между виртуальными машинами. При создании внутренней подсистемы балансировки нагрузки виртуальная сеть настраивается в качестве сети для подсистемы балансировки нагрузки. На следующей схеме показаны ресурсы, созданные при работе с этим кратким руководством:
 
@@ -335,7 +336,10 @@ az network bastion create \
 
 ```
 
-## <a name="azure-load-balancer-basic"></a>Azure Load Balancer ценовой категории "Базовый"
+# <a name="basic-sku"></a>[**SKU "Базовый"**](#tab/option-1-create-load-balancer-basic)
+
+>[!NOTE]
+>Для производственных рабочих нагрузок рекомендуется использовать подсистему балансировки нагрузки ценовой категории "Стандартный". Дополнительные сведения о доступных ценовых категориях см. в статье **[Номера SKU для Azure Load Balancer](skus.md)** .
 
 В этом разделе показано, как создать подсистему балансировки нагрузки, которая распределяет нагрузку между виртуальными машинами. При создании внутренней подсистемы балансировки нагрузки виртуальная сеть настраивается в качестве сети для подсистемы балансировки нагрузки. На следующей схеме показаны ресурсы, созданные при работе с этим кратким руководством:
 
@@ -636,7 +640,7 @@ az network bastion create \
   done
 
 ```
-
+---
 ## <a name="test-the-load-balancer"></a>Тестирование подсистемы балансировки нагрузки
 
 Создайте сетевой интерфейс с помощью команды [az network nic create](/cli/azure/network/nic#az-network-nic-create). Укажите следующее.

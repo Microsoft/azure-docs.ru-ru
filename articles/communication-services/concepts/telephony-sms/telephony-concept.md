@@ -8,19 +8,20 @@ ms.author: bobazile
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: d5e4920dcc422e848266f35c8a59175b5149b924
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 7aebb10fb3855936d930685f1a8eef2588140ad1
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103492750"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105930461"
 ---
 # <a name="telephony-concepts"></a>Основные понятия телефонии
 
-[!INCLUDE [Private Preview Notice](../../includes/private-preview-include.md)]
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include-phone-numbers.md)]
+
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 
-Клиентские библиотеки вызовов Служб коммуникации Azure позволяют добавлять в приложения возможности телефонии и ТСОП. На этой странице описаны ключевые понятия и возможности телефонии. Дополнительные сведения о конкретных языках и возможностях клиентских библиотек см. в [этой статье](../../quickstarts/voice-video-calling/calling-client-samples.md).
+Пакеты SDK, вызывающие Службы коммуникации Azure, можно использовать для добавления телефонии и ТСОП в приложения. На этой странице описаны ключевые понятия и возможности телефонии. Дополнительные сведения о конкретных языках и возможностях пакетов SDK см. в [вызывающей библиотеке](../../quickstarts/voice-video-calling/calling-client-samples.md).
 
 ## <a name="overview-of-telephony"></a>Общие сведения о телефонии
 Когда пользователи пользуются традиционным телефонным номером, голосовой вызов осуществляется по ТСОП (телефонная сеть общего пользования). Чтобы создавать и принимать ТСОП-вызовы, необходимо добавить возможности телефонии в ресурс Служб коммуникации Azure. В этом случае при подключении пользователей для передачи сигналов и мультимедиа используется сочетание технологий IP-передачи и ТСОП. Службы коммуникации предоставляют два способа доступа к сети PSTN: служба вызовов в облаке Azure и интерфейс SIP.

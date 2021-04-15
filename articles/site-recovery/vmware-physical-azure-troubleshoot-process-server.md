@@ -8,10 +8,10 @@ ms.topic: troubleshooting
 ms.date: 09/09/2019
 ms.author: raynew
 ms.openlocfilehash: ad1bec66edaa3fcc6049f4911684f6e6d6c3e366
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "95999198"
 ---
 # <a name="troubleshoot-the-process-server"></a>Устранение неполадок с сервером обработки
@@ -170,7 +170,7 @@ ms.locfileid: "95999198"
   2. На вкладке **Производительность** щелкните **Открыть монитор ресурсов**.
   3. На странице **Монитор ресурсов** выберите вкладку **Сеть**. На вкладке **Процессы с сетевой активностью** проверьте, передает ли cbengine.exe большие объемы данных.
 
-       ![Снимок экрана, показывающий большое число томов в процессах с сетевой активностью.](./media/vmware-physical-azure-troubleshoot-process-server/cbengine.png)
+       ![Снимок экрана, показывающий большое количество томов в процессах с сетевой активностью.](./media/vmware-physical-azure-troubleshoot-process-server/cbengine.png)
 
   Если файл cbengine.exe не отправляет большие объемы данных, выполните действия, указанные в следующих разделах.
 
@@ -179,7 +179,7 @@ ms.locfileid: "95999198"
 1. В мониторе ресурсов выберите **cbengine.exe**.
 2. В разделе **TCP-подключения** проверьте, подключен ли сервер обработки к хранилищу Azure.
 
-  ![Снимок экрана, показывающий подключение между cbengine.exe и URL-адресом хранилища больших двоичных объектов Azure.](./media/vmware-physical-azure-troubleshoot-process-server/rmonitor.png)
+  ![Снимок экрана, показывающий подключение cbengine.exe по URL-адресу хранилища BLOB-объектов Azure.](./media/vmware-physical-azure-troubleshoot-process-server/rmonitor.png)
 
 ### <a name="check-services"></a>Проверка служб
 

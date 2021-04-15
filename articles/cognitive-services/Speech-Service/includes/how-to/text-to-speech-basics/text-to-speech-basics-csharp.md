@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 03/25/2020
 ms.author: trbye
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 278bb106789452d14001da5bd0bab6570d114666
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 2878efd0e392479e35530220d025055eacae3b43
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102428250"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105508"
 ---
 Из этого краткого руководства вы узнаете, как работать с распространенными конструктивными шаблонами для синтеза текста в речь, используя пакет SDK службы "Речь". Вы начнете с основных настроек и синтеза, а затем перейдете к более сложным примерам для разработки пользовательских приложений, в том числе к таким задачам:
 
@@ -31,11 +31,11 @@ ms.locfileid: "102428250"
 
 Прежде чем выполнять какие-либо действия, необходимо установить пакет SDK для службы "Речь". В зависимости от используемой платформы выполните следующие действия:
 
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=dotnet&pivots=programming-language-csharp" target="_blank">.NET Framework </a>
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=dotnetcore&pivots=programming-language-csharp" target="_blank">.NET Core </a>
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=unity&pivots=programming-language-csharp" target="_blank">Unity </a>
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=uwps&pivots=programming-language-csharp" target="_blank">UWP </a>
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=xaml&pivots=programming-language-csharp" target="_blank">Xamarin </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-csharp&tabs=dotnet" target="_blank">.NET Framework </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-csharp&tabs=dotnetcore" target="_blank">.NET Core </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-csharp&tabs=unity" target="_blank">Unity </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-csharp&tabs=uwps" target="_blank">UWP </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-csharp&tabs=xaml" target="_blank">Xamarin </a>
 
 ## <a name="import-dependencies"></a>Импорт зависимостей
 
@@ -67,14 +67,14 @@ using Microsoft.CognitiveServices.Speech.Audio;
 В этом примере создается [`SpeechConfig`](/dotnet/api/microsoft.cognitiveservices.speech.speechconfig) с использованием ключа и региона подписки. Чтобы получить эти учетные данные, выполните инструкции из раздела [Бесплатная пробная подписка на службу "Речь"](../../../overview.md#try-the-speech-service-for-free). Для оставшейся части этой статьи также создается стандартный код, который необходимо будет изменить, чтобы внести различные настройки.
 
 ```csharp
-public class Program 
+public class Program
 {
     static async Task Main()
     {
         await SynthesizeAudioAsync();
     }
 
-    static async Task SynthesizeAudioAsync() 
+    static async Task SynthesizeAudioAsync()
     {
         var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     }
@@ -88,7 +88,7 @@ public class Program
 Сначала создайте `AudioConfig` для автоматической записи выходных данных в файл `.wav` с помощью инструкции `FromWavFileOutput()`, а затем создайте экземпляр с использованием инструкции `using`. Инструкция `using` в этом контексте автоматически удаляет неуправляемые ресурсы и выводит объект из области после его удаления.
 
 ```csharp
-static async Task SynthesizeAudioAsync() 
+static async Task SynthesizeAudioAsync()
 {
     var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     using var audioConfig = AudioConfig.FromWavFileOutput("path/to/write/file.wav");
@@ -98,7 +98,7 @@ static async Task SynthesizeAudioAsync()
 Теперь создайте экземпляр `SpeechSynthesizer`, используя еще одну инструкцию `using`. Передайте объекты `config` и `audioConfig` в качестве параметров. После этого синтез речи и запись в файл выполняются так же просто, как запуск `SpeakTextAsync()` с использованием строки текста.
 
 ```csharp
-static async Task SynthesizeAudioAsync() 
+static async Task SynthesizeAudioAsync()
 {
     var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     using var audioConfig = AudioConfig.FromWavFileOutput("path/to/write/file.wav");
@@ -111,10 +111,10 @@ static async Task SynthesizeAudioAsync()
 
 ## <a name="synthesize-to-speaker-output"></a>Синтезирование выходных данных для вывода на динамики
 
-В некоторых случаях может потребоваться напрямую выводить синтезированную речь на динамики. Для этого просто опустите параметр `AudioConfig` при создании `SpeechSynthesizer` в приведенном выше примере. Это позволит передавать выходные данные на текущее активное устройство вывода.
+В некоторых случаях может потребоваться напрямую выводить синтезированную речь на динамики. Для этого опустите параметр `AudioConfig` при создании `SpeechSynthesizer` в приведенном выше примере. Это позволит передавать синтезированные данные на текущее активное устройство вывода.
 
 ```csharp
-static async Task SynthesizeAudioAsync() 
+static async Task SynthesizeAudioAsync()
 {
     var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     using var synthesizer = new SpeechSynthesizer(config);
@@ -130,7 +130,7 @@ static async Task SynthesizeAudioAsync()
 * интегрировать полученные данные с другими API или службами;
 * изменять звуковые данные, записывать пользовательские заголовки `.wav` и т. д.
 
-Это изменение легко реализовать в предыдущем примере. Сначала удалите блок `AudioConfig`, так как вы будете вручную управлять выходными данными с целью усиленного контроля над ними. Затем передайте `null` для `AudioConfig` в конструкторе `SpeechSynthesizer`. 
+Это изменение легко реализовать в предыдущем примере. Сначала удалите блок `AudioConfig`, так как вы будете вручную управлять выходными данными с целью усиленного контроля над ними. Затем передайте `null` для `AudioConfig` в конструкторе `SpeechSynthesizer`.
 
 > [!NOTE]
 > Передача значения `null` для `AudioConfig` вместо его пропуска, как это сделано в приведенном выше примере с выводом на динамики, не позволит по умолчанию воспроизводить звук на активном устройстве вывода.
@@ -138,11 +138,11 @@ static async Task SynthesizeAudioAsync()
 В этом случае результат сохраняется в переменной [`SpeechSynthesisResult`](/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesisresult). Свойство `AudioData` содержит `byte []` выходных данных. Вы можете работать с `byte []` вручную или использовать класс [`AudioDataStream`](/dotnet/api/microsoft.cognitiveservices.speech.audiodatastream) для управления потоком в памяти. В этом примере используется статическая функция `AudioDataStream.FromResult()` для получения потока из результата.
 
 ```csharp
-static async Task SynthesizeAudioAsync() 
+static async Task SynthesizeAudioAsync()
 {
     var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     using var synthesizer = new SpeechSynthesizer(config, null);
-    
+
     var result = await synthesizer.SpeakTextAsync("Getting the response as an in-memory stream.");
     using var stream = AudioDataStream.FromResult(result);
 }
@@ -168,7 +168,7 @@ static async Task SynthesizeAudioAsync()
 В этом примере мы укажем формат RIFF высокой точности воспроизведения `Riff24Khz16BitMonoPcm`, задав `SpeechSynthesisOutputFormat` для объекта `SpeechConfig`. Как и в примере из предыдущего раздела, мы будем использовать [`AudioDataStream`](/dotnet/api/microsoft.cognitiveservices.speech.audiodatastream) для получения результата в виде потока в памяти, а затем записывать его в файл.
 
 ```csharp
-static async Task SynthesizeAudioAsync() 
+static async Task SynthesizeAudioAsync()
 {
     var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     config.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm);
@@ -204,11 +204,11 @@ Speech Synthesis Markup Language (язык разметки синтеза ре�
 > Если вы используете Visual Studio, то конфигурация сборки вероятнее всего не найдет XML-файл по умолчанию. Чтобы устранить эту проблему, правой кнопкой мыши щелкните XML-файл и выберите пункт **Свойства**. Измените **Действие построения** на *Содержимое*, а **Копировать в выходной каталог** на *Всегда копировать*.
 
 ```csharp
-public static async Task SynthesizeAudioAsync() 
+public static async Task SynthesizeAudioAsync()
 {
     var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     using var synthesizer = new SpeechSynthesizer(config, null);
-    
+
     var ssml = File.ReadAllText("./ssml.xml");
     var result = await synthesizer.SpeakSsmlAsync(ssml);
 
@@ -247,3 +247,10 @@ public static async Task SynthesizeAudioAsync()
   </voice>
 </speak>
 ```
+## <a name="get-facial-pose-events"></a>Получение событий расположения лица
+
+Речь может эффективно анимировать эмоциональные выражения лица.
+Для представления основных положений в наблюдаемой речи часто используются [виземы](../../../how-to-speech-synthesis-viseme.md), такие как расположение губ, челюстей и языка при создании определенной фонемы.
+На событие виземы можно подписаться в пакете SDK для службы "Речь".
+Затем события виземы можно применять для анимации лица характера при акустическом воспроизведении речи.
+Дополнительные сведения о [получении событий визем](../../../how-to-speech-synthesis-viseme.md#get-viseme-events-with-the-speech-sdk).

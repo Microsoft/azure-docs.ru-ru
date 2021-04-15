@@ -5,10 +5,10 @@ ms.date: 06/25/2019
 ms.service: cognitive-services
 ms.topic: include
 ms.openlocfilehash: b08516b35a864eae6d15c4c5c928f0550c64c239
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "96001208"
 ---
 Fluentd — это сборщик данных с открытым кодом для унифицированного ведения журнала. Параметры `Fluentd` управляют подключением контейнера к серверу [Fluentd](https://www.fluentd.org). В состав контейнера входит поставщик ведения журнала Fluentd, который позволяет контейнеру записывать данные журналов и (необязательно) данные метрик на сервер Fluentd.

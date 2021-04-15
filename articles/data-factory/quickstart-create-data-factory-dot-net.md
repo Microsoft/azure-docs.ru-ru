@@ -5,14 +5,14 @@ author: linda33wj
 ms.service: data-factory
 ms.devlang: dotnet
 ms.topic: quickstart
-ms.date: 03/16/2021
+ms.date: 03/27/2021
 ms.author: jingwang
-ms.openlocfilehash: 12f7a87ce166be516d070b66b069f7a584a386c7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 3c667fe20b392bfb52b8300ce4b8b59d15a13b9a
+ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103563510"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106385434"
 ---
 # <a name="quickstart-create-a-data-factory-and-pipeline-using-net-sdk"></a>Краткое руководство. Создание фабрики данных и конвейера с помощью пакета SDK .NET
 
@@ -105,12 +105,14 @@ ms.locfileid: "103563510"
    string blobDatasetName = "BlobDataset";
    string pipelineName = "Adfv2QuickStartPipeline";
    ```
+> [!NOTE]
+> Для национального облака необходимо использовать соответствующие конечные точки для ActiveDirectoryAuthority и ResourceManagerUrl (BaseUri). Например, в Azure US Gov используйте https://login.microsoftonline.us вместо https://login.microsoftonline.com и https://management.usgovcloudapi.net вместо https://management.azure.com/ , а затем создайте клиент управления фабрикой данных. С помощью PowerShell можно легко получить URL-адреса конечных точек для различных облаков, выполнив команду "Get-AzEnvironment | Format-List", которая возвращает список конечных точек для каждой облачной среды.
 
 3. Добавьте в метод **Main** приведенный ниже код, создающий экземпляр класса **DataFactoryManagementClient**. Этот объект используется не только для создания фабрики данных, связанной службы, наборов данных и конвейера, но и для отслеживания подробностей выполнения конвейера.
 
    ```csharp
    // Authenticate and create a data factory management client
-   var context = new AuthenticationContext("https://login.windows.net/" + tenantID);
+   var context = new AuthenticationContext("https://login.microsoftonline.com/" + tenantID);
    ClientCredential cc = new ClientCredential(applicationId, authenticationKey);
    AuthenticationResult result = context.AcquireTokenAsync(
        "https://management.azure.com/", cc).Result;
@@ -118,6 +120,7 @@ ms.locfileid: "103563510"
    var client = new DataFactoryManagementClient(cred) {
        SubscriptionId = subscriptionId };
    ```
+
 
 ## <a name="create-a-data-factory"></a>Создание фабрики данных
 

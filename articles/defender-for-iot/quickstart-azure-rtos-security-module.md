@@ -1,15 +1,15 @@
 ---
 title: Краткое руководство. Настройка и включение микроагента Defender для Интернета вещей для ОСРВ Azure
-description: Сведения о том, как подключить и включить микроагент Defender для Интернета вещей для службы ОСРВ Azure в Центре Интернета вещей Azure.
+description: В этом кратком руководстве содержатся сведения о том, как подключить и включить микроагент Defender для Интернета вещей для службы ОСРВ Azure в Центре Интернета вещей Azure.
 services: defender-for-iot
 ms.topic: quickstart
 ms.date: 01/24/2021
-ms.openlocfilehash: db0fc0be3cd10bc57a46cb5a056ca5e057ae255a
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 0575e9303068b203a5d8cd51c8a8cc1843de6f4d
+ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104781166"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106384641"
 ---
 # <a name="quickstart-defender-iot-micro-agent-for-azure-rtos-preview"></a>Краткое руководство. Микроагент Defender для Интернета вещей для ОСРВ Azure (предварительная версия)
 

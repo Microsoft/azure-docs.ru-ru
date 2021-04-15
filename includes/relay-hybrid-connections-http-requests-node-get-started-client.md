@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: service-bus-relay
 author: clemensv
 ms.service: service-bus-relay
@@ -9,10 +9,10 @@ ms.date: 05/02/2018
 ms.author: clemensv
 ms.custom: include file
 ms.openlocfilehash: 3c18efa7eb520b765c9bb3c2aff00104f971f5a8
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "67185525"
 ---
 ### <a name="create-a-nodejs-application"></a>Создание приложения Node.js
