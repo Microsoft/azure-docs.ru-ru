@@ -4,12 +4,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 03/25/2020
 ms.author: trbye
-ms.openlocfilehash: ae2f37cd84904aff33c4752bd54c815b74bb71c8
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 0ee868704dbc82dabbd85135acecd16ff232fb16
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102428243"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104623"
 ---
 Из этого краткого руководства вы узнаете, как работать с распространенными конструктивными шаблонами для синтеза текста в речь, используя пакет SDK службы "Речь". Вы начнете с основных настроек и синтеза, а затем перейдете к более сложным примерам для разработки пользовательских приложений, в том числе к таким задачам:
 
@@ -30,9 +30,9 @@ ms.locfileid: "102428243"
 
 Прежде чем выполнять какие-либо действия, необходимо установить пакет SDK для службы "Речь". В зависимости от используемой платформы выполните следующие действия:
 
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=linux&pivots=programming-language-cpp" target="_blank">Linux </a>
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=macos&pivots=programming-language-cpp" target="_blank">macOS </a>
-* <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=windows&pivots=programming-language-cpp" target="_blank">Windows </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-cpp&tabs=linux" target="_blank">Linux </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-cpp&tabs=macos" target="_blank">macOS </a>
+* <a href="/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-cpp&tabs=windows" target="_blank">Windows </a>
 
 ## <a name="import-dependencies"></a>Импорт зависимостей
 
@@ -78,8 +78,8 @@ int wmain()
     }
     return 0;
 }
-    
-void synthesizeSpeech() 
+
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
 }
@@ -92,7 +92,7 @@ void synthesizeSpeech()
 Сначала создайте `AudioConfig` для автоматической записи выходных данных в файл `.wav` с помощью функции `FromWavFileOutput()`.
 
 ```cpp
-void synthesizeSpeech() 
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     auto audioConfig = AudioConfig::FromWavFileOutput("path/to/write/file.wav");
@@ -102,7 +102,7 @@ void synthesizeSpeech()
 Затем создайте экземпляр `SpeechSynthesizer`, передающий объекты `config` и `audioConfig` в качестве параметров. После этого синтез речи и запись в файл выполняются так же просто, как запуск `SpeakTextAsync()` с использованием строки текста.
 
 ```cpp
-void synthesizeSpeech() 
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     auto audioConfig = AudioConfig::FromWavFileOutput("path/to/write/file.wav");
@@ -115,10 +115,10 @@ void synthesizeSpeech()
 
 ## <a name="synthesize-to-speaker-output"></a>Синтезирование выходных данных для вывода на динамики
 
-В некоторых случаях может потребоваться напрямую выводить синтезированную речь на динамики. Для этого просто опустите параметр `AudioConfig` при создании `SpeechSynthesizer` в приведенном выше примере. Это позволит передавать выходные данные на текущее активное устройство вывода.
+В некоторых случаях может потребоваться напрямую выводить синтезированную речь на динамики. Для этого опустите параметр `AudioConfig` при создании `SpeechSynthesizer` в приведенном выше примере. Это позволит передавать синтезированные данные на текущее активное устройство вывода.
 
 ```cpp
-void synthesizeSpeech() 
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     auto synthesizer = SpeechSynthesizer::FromConfig(config);
@@ -134,7 +134,7 @@ void synthesizeSpeech()
 * интегрировать полученные данные с другими API или службами;
 * изменять звуковые данные, записывать пользовательские заголовки `.wav` и т. д.
 
-Это изменение легко реализовать в предыдущем примере. Сначала удалите `AudioConfig`, так как теперь вы будете вручную управлять выходными данными, чтобы получить более полный контроль. Затем передайте `NULL` для `AudioConfig` в конструкторе `SpeechSynthesizer`. 
+Это изменение легко реализовать в предыдущем примере. Сначала удалите `AudioConfig`, так как теперь вы будете вручную управлять выходными данными, чтобы получить более полный контроль. Затем передайте `NULL` для `AudioConfig` в конструкторе `SpeechSynthesizer`.
 
 > [!NOTE]
 > Передача значения `NULL` для `AudioConfig` вместо его пропуска, как это сделано в приведенном выше примере с выводом на динамики, не позволит по умолчанию воспроизводить звук на активном устройстве вывода.
@@ -142,11 +142,11 @@ void synthesizeSpeech()
 В этом случае результат сохраняется в переменной [`SpeechSynthesisResult`](/cpp/cognitive-services/speech/speechsynthesisresult). Метод получения `GetAudioData` возвращает `byte []` выходных данных. Вы можете работать с `byte []` вручную или использовать класс [`AudioDataStream`](/cpp/cognitive-services/speech/audiodatastream) для управления потоком в памяти. В этом примере используется статическая функция `AudioDataStream.FromResult()` для получения потока из результата.
 
 ```cpp
-void synthesizeSpeech() 
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     auto synthesizer = SpeechSynthesizer::FromConfig(config, NULL);
-    
+
     auto result = synthesizer->SpeakTextAsync("Getting the response as an in-memory stream.").get();
     auto stream = AudioDataStream::FromResult(result);
 }
@@ -172,14 +172,14 @@ void synthesizeSpeech()
 В этом примере мы укажем формат RIFF высокой точности воспроизведения `Riff24Khz16BitMonoPcm`, задав `SpeechSynthesisOutputFormat` для объекта `SpeechConfig`. Как и в примере из предыдущего раздела, мы будем использовать [`AudioDataStream`](/cpp/cognitive-services/speech/audiodatastream) для получения результата в виде потока в памяти, а затем записывать его в файл.
 
 ```cpp
-void synthesizeSpeech() 
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     config->SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat::Riff24Khz16BitMonoPcm);
 
     auto synthesizer = SpeechSynthesizer::FromConfig(config, NULL);
     auto result = synthesizer->SpeakTextAsync("A simple test to write to a file.").get();
-    
+
     auto stream = AudioDataStream::FromResult(result);
     stream->SaveToWavFileAsync("path/to/write/file.wav").get();
 }
@@ -205,11 +205,11 @@ Speech Synthesis Markup Language (язык разметки синтеза ре�
 Далее необходимо изменить запрос синтеза речи, чтобы он ссылался на XML-файл. Запрос аналогичен использовавшемуся нами ранее, но вместо функции `SpeakTextAsync()` содержит `SpeakSsmlAsync()`. Эта функция ожидает строку XML, поэтому сначала нужно загрузить конфигурацию SSML в виде строки. Теперь мы получим точно такой же объект, как и в предыдущих примерах.
 
 ```cpp
-void synthesizeSpeech() 
+void synthesizeSpeech()
 {
     auto config = SpeechConfig::FromSubscription("YourSubscriptionKey", "YourServiceRegion");
     auto synthesizer = SpeechSynthesizer::FromConfig(config, NULL);
-    
+
     std::ifstream file("./ssml.xml");
     std::string ssml, line;
     while (std::getline(file, line))
@@ -218,7 +218,7 @@ void synthesizeSpeech()
         ssml.push_back('\n');
     }
     auto result = synthesizer->SpeakSsmlAsync(ssml).get();
-    
+
     auto stream = AudioDataStream::FromResult(result);
     stream->SaveToWavFileAsync("path/to/write/file.wav").get();
 }
@@ -254,3 +254,11 @@ void synthesizeSpeech()
   </voice>
 </speak>
 ```
+
+## <a name="get-facial-pose-events"></a>Получение событий расположения лица
+
+Речь может эффективно анимировать эмоциональные выражения лица.
+Для представления основных положений в наблюдаемой речи часто используются [виземы](../../../how-to-speech-synthesis-viseme.md), такие как расположение губ, челюстей и языка при создании определенной фонемы.
+На событие виземы можно подписаться в пакете SDK для службы "Речь".
+Затем события виземы можно применять для анимации лица характера при акустическом воспроизведении речи.
+Дополнительные сведения о [получении событий визем](../../../how-to-speech-synthesis-viseme.md#get-viseme-events-with-the-speech-sdk).

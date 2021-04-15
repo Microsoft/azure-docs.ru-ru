@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 4/15/2020
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: b7883d6c541558e26793f94e37014a20b14d761e
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: f1653158f7a181ad2d61bc726ba7765eab934341
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104577263"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107107488"
 ---
 # <a name="tutorial-build-out-an-end-to-end-solution"></a>Руководство по Создание комплексного решения
 
@@ -426,7 +426,7 @@ ObserveProperties thermostat67 Temperature room21 Temperature
 
 [!INCLUDE [digital-twins-cleanup-basic.md](../../includes/digital-twins-cleanup-basic.md)]
 
-* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, который настроили при работе с этой статьей, но вам нужно очистить некоторые или все его модели, двойники и связи**, вы можете воспользоваться командами CLI [az dt](/cli/azure/ext/azure-iot/dt) в окне [Azure Cloud Shell](https://shell.azure.com).
+* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, который настроили при работе с этой статьей, но вам нужно очистить некоторые или все его модели, двойники и связи**, вы можете воспользоваться командами CLI [az dt](/cli/azure/dt) в окне [Azure Cloud Shell](https://shell.azure.com).
 
     Этот параметр не приведет к удалению других ресурсов Azure, созданных с помощью этого руководства (Центр Интернета вещей, приложение Функций Azure и т. д.). Их можно удалить по отдельности с помощью [команд dt](/cli/azure/reference-index), подходящих для каждого типа ресурсов.
 

@@ -8,14 +8,15 @@ tags: azure-resource-manager
 ms.service: key-vault
 ms.subservice: general
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 3/18/2021
 ms.author: sudbalas
-ms.openlocfilehash: c55c87cd8ab1b2cd1dbaf2c877eb341744d822ef
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.custom: devx-track-azurepowershell
+ms.openlocfilehash: 3b148ac83b89850cad66bcd7254d385e655cc2fb
+ms.sourcegitcommit: f5448fe5b24c67e24aea769e1ab438a465dfe037
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "93287460"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105968753"
 ---
 # <a name="azure-key-vault-backup"></a>Резервное копирование в Azure Key Vault
 
@@ -89,8 +90,9 @@ Key Vault сохраняет доступность в аварийных сце
 5. Перейдите к расположению, где сохранен зашифрованный большой двоичный объект.
 6. Щелкните **ОК**.
 
-## <a name="back-up-and-restore-from-the-azure-cli"></a>Создание резервной копии и восстановление с помощью Azure CLI
+## <a name="back-up-and-restore-from-the-azure-cli-or-azure-powershell"></a>Создание резервной копии и восстановление с помощью Azure CLI или Azure PowerShell
 
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 ## Log in to Azure
 az login
@@ -118,8 +120,35 @@ az keyvault key restore --file {File Path} --vault-name {Key Vault Name} --subsc
 
 ## Restore a secret in Key Vault
 az keyvault secret restore --file {File Path} --vault-name {Key Vault Name} --subscription {SUBSCRIPTION ID}
-
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/powershell)
+
+```azurepowershell
+## Log in to Azure
+Connect-AzAccount
+
+## Set your subscription
+Set-AzContext -Subscription '{AZURE SUBSCRIPTION ID}'
+
+## Back up a certificate in Key Vault
+Backup-AzKeyVaultCertificate -VaultName '{Certificate Name}' -Name '{Key Vault Name}'
+
+## Back up a key in Key Vault
+Backup-AzKeyVaultKey -VaultName '{Key Name}' -Name '{Key Vault Name}'
+
+## Back up a secret in Key Vault
+Backup-AzKeyVaultSecret -VaultName '{Key Vault Name}' -Name '{Secret Name}'
+
+## Restore a certificate in Key Vault
+Restore-AzKeyVaultCertificate -VaultName '{Key Vault Name}' -InputFile '{File Path}'
+
+## Restore a key in Key Vault
+Restore-AzKeyVaultKey -VaultName '{Key Vault Name}' -InputFile '{File Path}'
+
+## Restore a secret in Key Vault
+Restore-AzKeyVaultSecret -VaultName '{Key Vault Name}' -InputFile '{File Path}'
+```
+---
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

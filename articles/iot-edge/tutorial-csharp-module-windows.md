@@ -9,12 +9,13 @@ ms.date: 08/03/2020
 ms.topic: tutorial
 ms.service: iot-edge
 ms.custom: mvc, amqp, devx-track-csharp
-ms.openlocfilehash: 4e01b1ca9a3858ff31ad9b5da1d1159209c44330
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+monikerRange: =iotedge-2018-06
+ms.openlocfilehash: 84e5bbff11d0a5ff5d47ca43a3da54d1f1fb5555
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103464073"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218861"
 ---
 # <a name="tutorial-develop-c-iot-edge-modules-using-windows-containers"></a>Учебник. Разработка модулей IoT Edge на C# с использованием контейнеров Windows
 
@@ -23,7 +24,7 @@ ms.locfileid: "103464073"
 В этой статье показано, как разрабатывать и развертывать код C# на устройствах Windows с Azure IoT Edge с помощью Visual Studio.
 
 >[!NOTE]
->IoT Edge 1.1 LTS — это последний канал выпусков, который будет поддерживать контейнеры Windows. Начиная с версии 1.2, контейнеры Windows не поддерживаются. Мы рекомендуем вам использовать [IoT Edge для Linux в Windows](iot-edge-for-linux-on-windows.md) для выполнения IoT Edge на устройствах Windows.
+>IoT Edge 1.1 LTS — это последний канал выпусков, который поддерживает контейнеры Windows. Начиная с версии 1.2, контейнеры Windows не поддерживаются. Мы рекомендуем вам использовать [IoT Edge для Linux в Windows](iot-edge-for-linux-on-windows.md) для выполнения IoT Edge на устройствах Windows.
 
 Вы можете использовать модули Azure IoT Edge для развертывания кода, который реализует бизнес-логику непосредственно на устройствах IoT Edge. В этом руководстве рассматриваются создание и развертывание модуля IoT Edge, который фильтрует данные датчика.
 

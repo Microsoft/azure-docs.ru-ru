@@ -10,12 +10,13 @@ ms.subservice: secrets
 ms.topic: tutorial
 ms.date: 06/22/2020
 ms.author: jalichwa
-ms.openlocfilehash: e7e63ea56edc2b76383ee4c034fd39dd8b8259c1
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.custom: devx-track-azurepowershell
+ms.openlocfilehash: d75ba091ff634bf613722e3a194407beeeda68fb
+ms.sourcegitcommit: f5448fe5b24c67e24aea769e1ab438a465dfe037
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98786010"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105967240"
 ---
 # <a name="automate-the-rotation-of-a-secret-for-resources-that-have-two-sets-of-authentication-credentials"></a>Автоматизация смены секретов для ресурсов с двумя наборами учетных данных для аутентификации
 
@@ -53,11 +54,17 @@ ms.locfileid: "98786010"
 
     ![Снимок экрана: создание группы ресурсов.](../media/secrets/rotation-dual/dual-rotation-1.png)
 
-Теперь у вас есть хранилище ключей и две учетные записи хранения. Вы можете проверить эти ресурсы в Azure CLI, выполнив следующую команду:
-
+Теперь у вас есть хранилище ключей и две учетные записи хранения. Вы можете проверить эти ресурсы в Azure CLI или Azure PowerShell, выполнив следующую команду:
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az resource list -o table -g vaultrotation
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzResource -Name 'vaultrotation*' | Format-Table
+```
+---
 
 Должно отобразиться примерно следующее:
 
@@ -111,49 +118,97 @@ vaultrotationstorage2    vaultrotation      westus      Microsoft.Storage/storag
 ## <a name="add-the-storage-account-access-keys-to-key-vault"></a>Добавление ключей доступа учетной записи хранения в Key Vault
 
 Для начала настройте политику доступа, которая будет предоставлять субъекту-пользователю разрешение на **управление секретами**:
-
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az keyvault set-policy --upn <email-address-of-user> --name vaultrotation-kv --secret-permissions set delete get list
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Set-AzKeyVaultAccessPolicy -UserPrincipalName <email-address-of-user> --name vaultrotation-kv -PermissionsToSecrets set,delete,get,list
+```
+---
 
 Теперь вы можете создать новый секрет, указав в качестве его значения ключ доступа учетной записи хранения. Вам также понадобятся идентификатор ресурса учетной записи хранения, значение срока действия секрета и идентификатор ключа для добавления в секрет, чтобы функция смены смогла повторно создать ключ в учетной записи хранения.
 
 Определите идентификатор ресурса учетной записи хранения. Это значение можно найти в свойстве `id`.
 
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az storage account show -n vaultrotationstorage
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzStorageAccount -Name vaultrotationstorage -ResourceGroupName vaultrotation | Select-Object -Property *
+```
+---
 
 Получите список ключей доступа к учетной записи хранения, чтобы получить значения ключей:
-
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
-az storage account keys list -n vaultrotationstorage 
+az storage account keys list -n vaultrotationstorage
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzStorageAccountKey -Name vaultrotationstorage -ResourceGroupName vaultrotation
+```
+---
 
 Добавьте секрет в хранилище ключей с датой окончания срока действия на завтра, сроком действия на 60 дней и идентификатором ресурса учетной записи хранения. Выполните эту команду, используя полученные значения для `key1Value` и `storageAccountResourceId`:
 
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 $tomorrowDate = (get-date).AddDays(+1).ToString("yyy-MM-ddTHH:mm:ssZ")
 az keyvault secret set --name storageKey --vault-name vaultrotation-kv --value <key1Value> --tags "CredentialId=key1" "ProviderAddress=<storageAccountResourceId>" "ValidityPeriodDays=60" --expires $tomorrowDate
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+$tomorrowDate = (Get-Date).AddDays(+1).ToString('yyy-MM-ddTHH:mm:ssZ')
+$secretVaule = ConvertTo-SecureString -String '<key1Value>' -AsPlainText -Force
+$tags = @{
+    CredentialId='key1'
+    ProviderAddress='<storageAccountResourceId>'
+    ValidityPeriodDays='60'
+}
+Set-AzKeyVaultSecret -Name storageKey -VaultName vaultrotation-kv -SecretValue $secretVaule -Tag $tags -Expires $tomorrowDate
+```
+---
 
 Приведенный выше секрет будет активировать событие `SecretNearExpiry` в течение нескольких минут. Это событие, в свою очередь, активирует функцию для смены секрета с истечением срока действия через 60 дней. В такой конфигурации событие "SecretNearExpiry" будет запускаться каждые 30 дней (30 дней до истечения срока действия), а функция вращения будет чередовать ключи key1 и key2.
 
 Чтобы убедиться, что ключи доступа созданы повторно, вы можете получить ключ учетной записи хранения и секрет Key Vault и сравнить их.
 
 Используйте следующую команду, чтобы получить данные о секрете:
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az keyvault secret show --vault-name vaultrotation-kv --name storageKey
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzKeyVaultSecret -VaultName vaultrotation-kv -Name storageKey -AsPlainText
+```
+---
 
 Обратите внимание, что `CredentialId` получает значение другого `keyName`, а `value` создается повторно:
 
 ![Снимок экрана: выходные данные команды "az keyvault secret show" для первой учетной записи хранения.](../media/secrets/rotation-dual/dual-rotation-4.png)
 
 Получите ключи доступа для сравнения значений:
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az storage account keys list -n vaultrotationstorage 
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzStorageAccountKey -Name vaultrotationstorage -ResourceGroupName vaultrotation
+```
+---
+
 Обратите внимание, что `value` ключа совпадает с секретом в хранилище ключей.
 
 ![Снимок экрана: выходные данные команды az storage account keys list для первой учетной записи хранения.](../media/secrets/rotation-dual/dual-rotation-5.png)
@@ -185,36 +240,77 @@ az storage account keys list -n vaultrotationstorage
 ### <a name="add-another-storage-account-access-key-to-key-vault"></a>Добавление дополнительного ключа доступа учетной записи хранения в Key Vault
 
 Определите идентификатор ресурса учетной записи хранения. Это значение можно найти в свойстве `id`.
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az storage account show -n vaultrotationstorage2
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzStorageAccount -Name vaultrotationstorage -ResourceGroupName vaultrotation | Select-Object -Property *
+```
+---
 
 Получите список ключей доступа к учетной записи хранения, чтобы получить значения второго ключа:
-
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
-az storage account keys list -n vaultrotationstorage2 
+az storage account keys list -n vaultrotationstorage2
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzStorageAccountKey -Name vaultrotationstorage2 -ResourceGroupName vaultrotation
+```
+---
 
 Добавьте секрет в хранилище ключей с датой окончания срока действия на завтра, сроком действия на 60 дней и идентификатором ресурса учетной записи хранения. Выполните эту команду, используя полученные значения для `key2Value` и `storageAccountResourceId`:
 
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
-$tomorrowDate = (get-date).AddDays(+1).ToString("yyy-MM-ddTHH:mm:ssZ")
+$tomorrowDate = (Get-Date).AddDays(+1).ToString('yyy-MM-ddTHH:mm:ssZ')
 az keyvault secret set --name storageKey2 --vault-name vaultrotation-kv --value <key2Value> --tags "CredentialId=key2" "ProviderAddress=<storageAccountResourceId>" "ValidityPeriodDays=60" --expires $tomorrowDate
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+$tomorrowDate = (get-date).AddDays(+1).ToString("yyy-MM-ddTHH:mm:ssZ")
+$secretVaule = ConvertTo-SecureString -String '<key1Value>' -AsPlainText -Force
+$tags = @{
+    CredentialId='key2';
+    ProviderAddress='<storageAccountResourceId>';
+    ValidityPeriodDays='60'
+}
+Set-AzKeyVaultSecret -Name storageKey2 -VaultName vaultrotation-kv -SecretValue $secretVaule -Tag $tags -Expires $tomorrowDate
+```
+---
 
 Используйте следующую команду, чтобы получить данные о секрете:
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az keyvault secret show --vault-name vaultrotation-kv --name storageKey2
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzKeyVaultSecret -VaultName vaultrotation-kv -Name storageKey2 -AsPlainText
+```
+---
 
 Обратите внимание, что `CredentialId` получает значение другого `keyName`, а `value` создается повторно:
 
 ![Снимок экрана: выходные данные команды "az keyvault secret show" для второй учетной записи хранения.](../media/secrets/rotation-dual/dual-rotation-8.png)
 
 Получите ключи доступа для сравнения значений:
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 ```azurecli
 az storage account keys list -n vaultrotationstorage 
 ```
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azurepowershell)
+
+```azurepowershell
+Get-AzStorageAccountKey -Name vaultrotationstorage -ResourceGroupName vaultrotation
+```
+---
 
 Обратите внимание, что `value` ключа совпадает с секретом в хранилище ключей.
 

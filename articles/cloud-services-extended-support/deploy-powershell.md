@@ -8,20 +8,16 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 0c1b67e42e7988a836ec58ac022b11d736210bca
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: bcf6b2f6b964a056b9d90f08c0586fcbdec5b260
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104865627"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106167283"
 ---
 # <a name="deploy-a-cloud-service-extended-support-using-azure-powershell"></a>Развертывание Облачной службы (расширенная поддержка) с помощью PowerShell
 
 В этой статье описано, как использовать модуль PowerShell `Az.CloudService` для развертывания Облачных служб (расширенная поддержка) в Azure с несколькими ролями (WebRole и WorkerRole) и расширением удаленного рабочего стола. 
-
-> [!IMPORTANT]
-> Облачные службы (расширенная поддержка) в настоящее время предоставляются в общедоступной предварительной версии.
-> Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 
@@ -73,13 +69,14 @@ ms.locfileid: "104865627"
     $virtualNetwork = New-AzVirtualNetwork -Name “ContosoVNet” -Location “East US” -ResourceGroupName “ContosOrg” -AddressPrefix "10.0.0.0/24" -Subnet $subnet 
     ```
  
-7. Создайте общедоступный IP-адрес и (необязательно) задайте свойство метки DNS общедоступного IP-адреса. Если вы используете статический IP-адрес, в CSCFG-файле на него нужно ссылаться как на зарезервированный IP-адрес.  
+7. Создайте общедоступный IP-адрес и задайте свойство метки DNS для этого адреса. Облачные службы (расширенная поддержка) поддерживают общедоступные IP-адреса с номерами SKU только ценовой категории "Базовый" (https://docs.microsoft.com/azure/virtual-network/public-ip-addresses#basic) ). Общедоступные IP-адреса с номерами SKU категории "Стандартный" не работают с облачными службами.
+Если вы используете статический IP-адрес, он должен быть указан как зарезервированный IP-адрес в CSCFG-файле конфигурации службы. 
 
     ```powershell
     $publicIp = New-AzPublicIpAddress -Name “ContosIp” -ResourceGroupName “ContosOrg” -Location “East US” -AllocationMethod Dynamic -IpAddressVersion IPv4 -DomainNameLabel “contosoappdns” -Sku Basic 
     ```
 
-8. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки, созданной платформой.  
+8. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки. Платформа Azure автоматически создает подсистему балансировки нагрузки с номером SKU уровня "Классический" в той же подписке, что и ресурс облачной службы. Ресурс подсистемы балансировки нагрузки представляет собой ресурс только для чтения в ARM. Все обновления ресурса поддерживаются только через файлы развертывания облачной службы (.cscfg и .csdef).
 
     ```powershell
     $publicIP = Get-AzPublicIpAddress -ResourceGroupName ContosOrg -Name ContosIp  

@@ -10,13 +10,15 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: dedea2a622cb0eece92bb8b57871c76daa05fb68
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 30dcda4d7bb95ac59add104452415a0ddfc3c016
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495467"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106178537"
 ---
+[!INCLUDE [Public Preview Notice](../../../includes/public-preview-include-chat.md)]
+
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
 
@@ -128,7 +130,7 @@ let endpoint = "<ACS_RESOURCE_ENDPOINT>"
 Дополнительные сведения о маркерах доступа пользователей см. [здесь](../../access-tokens.md).
 
 ## <a name="object-model"></a>Объектная модель 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки чата Служб коммуникации для JavaScript.
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK для чата Служб коммуникации для JavaScript.
 
 | Имя                                   | Описание                                                                                                                                                                           |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -275,5 +277,4 @@ chatThreadClient
 ## <a name="run-the-code"></a>Выполнение кода
 
 В Xcode нажмите кнопку Run (Выполнить), чтобы выполнить сборку и запуск проекта. В консоли можно просмотреть выходные данные кода и средства ведения журнала из ChatClient.
-
 

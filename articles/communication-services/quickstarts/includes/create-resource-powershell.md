@@ -1,32 +1,27 @@
 ---
-author: mikben
-ms.service: azure-communication-services
-ms.topic: include
-ms.date: 03/10/2021
-ms.author: mikben
-ms.openlocfilehash: 22a9cf3338f422341928a77f2bf14c497aa2ba31
+ms.openlocfilehash: cc628b1f1fcae5e837f7f61db584c8747100f353
 ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/30/2021
-ms.locfileid: "105563788"
+ms.locfileid: "105644728"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/dotnet/) бесплатно.
-- Установка [интерфейса командной строки Azure](https://docs.microsoft.com/cli/azure/install-azure-cli-windows?tabs=azure-cli) 
+- Установка модуля [Azure Az PowerShell](https://docs.microsoft.com/powershell/azure/)
 
 ## <a name="create-azure-communication-resource"></a>Создание ресурса Служб коммуникации Azure
 
-Чтобы создать ресурс Служб коммуникации Azure, [войдите в Azure CLI](/cli/azure/authenticate-azure-cli). Это можно сделать с помощью терминала, используя команду ```az login``` и указав учетные данные. Выполните следующую команду для создания рабочей области.
+Чтобы создать ресурс Служб коммуникации Azure, [войдите в Azure CLI](/cli/azure/authenticate-azure-cli). Это можно сделать с помощью терминала, используя команду ```Connect-AzAccount``` и указав учетные данные. Выполните следующую команду для создания рабочей области.
 
-```azurecli
-az communication create --name "<communicationName>" --location "Global" --data-location "United States" --resource-group "<resourceGroup>"
+```PowerShell
+PS C:\> New-AzCommunicationService -ResourceGroupName ContosoResourceProvider1 -Name ContosoAcsResource1 -DataLocation UnitedStates -Location Global
 ```
 
 Если вы хотите выбрать конкретную подписку, можно также указать флаг ```--subscription``` и указать идентификатор подписки.
-```
-az communication create --name "<communicationName>" --location "Global" --data-location "United States" --resource-group "<resourceGroup> --subscription "<subscriptionID>"
+```PowerShell
+PS C:\> New-AzCommunicationService -ResourceGroupName ContosoResourceProvider1 -Name ContosoAcsResource1 -DataLocation UnitedStates -Location Global -SubscriptionId SubscriptionID
 ```
 
 Теперь можно настроить ресурс Служб коммуникации с помощью следующих параметров:
@@ -41,14 +36,20 @@ az communication create --name "<communicationName>" --location "Global" --data-
 
 Чтобы добавить теги в ресурс Служб коммуникации, выполните следующие команды: Вы также можете ориентироваться на конкретную подписку.
 
-```azurecli
-az communication update --name "<communicationName>" --tags newTag="newVal1" --resource-group "<resourceGroup>"
+```PowerShell
+PS C:\> Update-AzCommunicationService -Name ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1 -Tag @{ExampleKey1="ExampleValue1"}
 
-az communication update --name "<communicationName>" --tags newTag="newVal2" --resource-group "<resourceGroup>" --subscription "<subscriptionID>"
-
-az communication show --name "<communicationName>" --resource-group "<resourceGroup>"
-
-az communication show --name "<communicationName>" --resource-group "<resourceGroup>" --subscription "<subscriptionID>"
+PS C:\> Update-AzCommunicationService -Name ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1 -Tag @{ExampleKey1="ExampleValue1"} -SubscriptionId SubscriptionID
 ```
 
-Подробные сведения о дополнительных командах см. в статье об [az communication](/cli/azure/ext/communication/communication).
+Чтобы получить список всех ресурсов Служб коммуникации Azure в заданной подписке, используйте следующую команду:
+
+```PowerShell
+PS C:\> Get-AzCommunicationService -SubscriptionId SubscriptionID
+```
+
+Чтобы получить список всех сведений об определенном ресурсе, используйте следующую команду:
+
+```PowerShell
+PS C:\> Get-AzCommunicationService -Name ContosoAcsResource1 -ResourceGroupName ContosoResourceProvider1
+```

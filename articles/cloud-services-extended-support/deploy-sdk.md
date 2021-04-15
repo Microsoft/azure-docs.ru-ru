@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: b63f42ccc0a9d8d138e38a262db528fd36ea701a
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: d36bae57a9e1609e053326cf7288b5b1bc470cef
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123043"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106166893"
 ---
 # <a name="deploy-cloud-services-extended-support-by-using-the-azure-sdk"></a>Развертывание Облачных служб (расширенная поддержка) с использованием пакета SDK Azure
 
@@ -156,7 +156,8 @@ ms.locfileid: "102123043"
     m_NrpClient.VirtualNetworks.CreateOrUpdate(resourceGroupName, “ContosoVNet”, vnet);
     ```
 
-7. Создайте общедоступный IP-адрес и (необязательно) задайте свойство метки DNS для общедоступного IP-адреса. Если вы используете статический IP-адрес, он должен быть указан как зарезервированный IP-адрес в файле конфигурации службы.
+7. Создайте общедоступный IP-адрес и задайте свойство метки DNS для этого адреса. Облачные службы (расширенная поддержка) поддерживают общедоступные IP-адреса с номерами SKU только ценовой категории "Базовый" (https://docs.microsoft.com/azure/virtual-network/public-ip-addresses#basic) ). Общедоступные IP-адреса с номерами SKU категории "Стандартный" не работают с облачными службами.
+Если вы используете статический IP-адрес, он должен быть указан как зарезервированный IP-адрес в CSCFG-файле конфигурации службы.
 
     ```csharp
     PublicIPAddress publicIPAddressParams = new PublicIPAddress(name: “ContosIp”) 
@@ -171,7 +172,7 @@ ms.locfileid: "102123043"
     PublicIPAddress publicIpAddress = m_NrpClient.PublicIPAddresses.CreateOrUpdate(resourceGroupName, publicIPAddressName, publicIPAddressParams);
     ```
 
-8. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки, созданной платформой.
+8. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки. Платформа Azure автоматически создает подсистему балансировки нагрузки с номером SKU уровня "Классический" в той же подписке, что и ресурс облачной службы. Ресурс подсистемы балансировки нагрузки представляет собой ресурс только для чтения в ARM. Все обновления ресурса поддерживаются только через файлы развертывания облачной службы (.cscfg и .csdef).
 
     ```csharp
     LoadBalancerFrontendIPConfiguration feipConfiguration = new LoadBalancerFrontendIPConfiguration() 

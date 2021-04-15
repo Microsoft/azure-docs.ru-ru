@@ -5,13 +5,13 @@ author: jifems
 ms.author: jife
 ms.service: data-share
 ms.topic: tutorial
-ms.date: 11/12/2020
-ms.openlocfilehash: a225989f0670e9b62b00a35bac719c9357c8a130
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.date: 03/24/2021
+ms.openlocfilehash: ccfda4975b6453ed67edc2640520bc0a76df5709
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96017055"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105644878"
 ---
 # <a name="tutorial-accept-and-receive-data-using-azure-data-share"></a>Руководство по Прием и получение данных с помощью Azure Data Share  
 
@@ -42,23 +42,10 @@ ms.locfileid: "96017055"
 Если вы решили принимать данные в Базу данных SQL Azure или Azure Synapse Analytics, изучите следующий список предварительных условий. 
 
 #### <a name="prerequisites-for-receiving-data-into-azure-sql-database-or-azure-synapse-analytics-formerly-azure-sql-dw"></a>Необходимые условия для получения данных в Базу данных SQL Azure или Azure Synapse Analytics (прежнее название — Хранилище данных SQL Azure)
-Для настройки необходимых компонентов cм. [ролик с пошаговыми инструкциями](https://youtu.be/aeGISgK1xro).
 
 * База данных SQL Azure или Azure Synapse Analytics (прежнее название — Хранилище данных SQL).
 * Разрешение на запись в базы данных на сервере SQL, которое присутствует в *Microsoft.Sql/servers/databases/write*. Это разрешение назначено роли **участника**. 
-* Разрешение на доступ управляемого удостоверения Data Share к Базе данных SQL Azure или Azure Synapse Analytics. Это можно обеспечить следующим образом. 
-    1. На портале Azure перейдите к SQL Server и назначьте себе роль **администратора Azure Active Directory**.
-    1. Подключитесь к Базе данных или Хранилищу данных SQL Azure с помощью [редактора запросов](../azure-sql/database/connect-query-portal.md#connect-using-azure-active-directory) или SQL Server Management Studio, выполнив проверку подлинности в Azure Active Directory. 
-    1. Выполните следующий скрипт, чтобы добавить управляемое удостоверение Data Share с ролями db_datareader, db_datawriter и db_ddladmin. Необходимо подключиться с помощью Active Directory, а не аутентификации SQL Server. 
-
-        ```sql
-        create user "<share_acc_name>" from external provider; 
-        exec sp_addrolemember db_datareader, "<share_acc_name>"; 
-        exec sp_addrolemember db_datawriter, "<share_acc_name>"; 
-        exec sp_addrolemember db_ddladmin, "<share_acc_name>";
-        ```      
-        Обратите внимание на то, что *<share_acc_name>* — это имя вашего ресурса Data Share. Если вы еще не создали ресурс Data Share, вы можете вернуться к этому требованию позже.         
-
+* **Администратор Azure Active Directory** для сервера SQL.
 * Доступ к брандмауэру SQL Server. Это можно обеспечить следующим образом. 
     1. В SQL Server на портале Azure перейдите к разделу *Брандмауэры и виртуальные сети*
     1. Выберите значение **Да** для параметра *Разрешить доступ к серверу службам и ресурсам Azure*.
@@ -92,7 +79,6 @@ ms.locfileid: "96017055"
 
 * Кластер Azure Data Explorer в том же центре обработки данных Azure, что и кластер Azure Data Explorer поставщика данных: Если у вас еще нет кластера, вы можете создать [кластер Azure Data Explorer](/azure/data-explorer/create-cluster-database-portal). Если вы не знакомы с центром обработки данных Azure в кластере поставщика данных, вы можете создать кластер позже.
 * Разрешение на запись в кластер Azure Data Explorer, имеющийся в *Microsoft.Kusto/clusters/write*. Это разрешение назначено роли участника. 
-* Разрешение на добавление назначения ролей в кластер Azure Data Explorer *Microsoft.Authorization/role assignments/write*. Это разрешение назначено роли владельца. 
 
 ## <a name="sign-in-to-the-azure-portal"></a>Вход на портал Azure
 
@@ -175,13 +161,13 @@ az datashare consumer share-subscription create --resource-group share-rg \
 
    ![Кнопка "Сопоставить с целевым объектом"](./media/dataset-map-target.png "Сопоставление с целевым объектом") 
 
-1. Выберите тип целевого хранилища данных, в котором должны находиться данные. Все файлы и таблицы данных в целевом хранилище данных с тем же путем и именем будут перезаписаны. 
+1. Выберите тип целевого хранилища данных, в котором должны находиться данные. Все файлы и таблицы данных в целевом хранилище данных с тем же путем и именем будут перезаписаны. Если вы получаете данные в базу данных SQL Azure или Azure Synapse Analytics (прежнее название — Azure SQL DW), установите флажок **Разрешить Data Share выполнять указанный выше скрипт create user от моего имени**.
 
    Для общего доступа на месте выберите хранилище данных в указанном расположении. Расположение — это центр обработки данных Azure, в котором находится исходное хранилище поставщика данных. После сопоставления набора данных можно перейти по ссылке в столбце целевого пути, чтобы получить доступ к данным.
 
    ![Целевая учетная запись хранения](./media/dataset-map-target-sql.png "Целевое хранилище") 
 
-1. Для совместного использования на основе моментальных снимков можно также включить на вкладе **Расписание моментальных снимков** функцию расписания моментальных снимков при условии, что поставщик данных создал такое расписание для регулярного обновления данных. Установите флажок рядом с расписанием моментальных снимков и выберите **+ Включить**.
+1. Для совместного использования на основе моментальных снимков можно также включить на вкладе **Расписание моментальных снимков** функцию расписания моментальных снимков при условии, что поставщик данных создал такое расписание для регулярного обновления данных. Установите флажок рядом с расписанием моментальных снимков и выберите **+ Включить**. Обратите внимание, что первый запланированный моментальный снимок будет запускаться в течение одной минуты в назначенное время, а последующие моментальные снимки — в течение нескольких секунд.
 
    ![Включение расписания моментальных снимков](./media/enable-snapshot-schedule.png "Включение расписания моментальных снимков")
 
