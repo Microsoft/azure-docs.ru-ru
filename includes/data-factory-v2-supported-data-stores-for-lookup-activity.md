@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: поддерживаемые соединители для действия поиска
 services: data-factory
 author: linda33wj
@@ -9,10 +9,10 @@ ms.date: 12/18/2020
 ms.author: jingwang
 ms.custom: include file
 ms.openlocfilehash: a749de57a1c57c828332957def27d68a121318b1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "97692030"
 ---
 | Категория | Хранилище данных |

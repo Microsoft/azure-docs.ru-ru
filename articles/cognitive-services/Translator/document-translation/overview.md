@@ -6,12 +6,12 @@ manager: nitinme
 ms.author: lajanuar
 author: laujan
 ms.date: 02/11/2021
-ms.openlocfilehash: 692033e323880db1699d7265a991775d41b05f7f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 0d9ef13de29ac140d94e9e4c05b14f35b9e5834c
+ms.sourcegitcommit: f5448fe5b24c67e24aea769e1ab438a465dfe037
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104656011"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105968175"
 ---
 # <a name="what-is-document-translation-preview"></a>Что такое Перевод документов (предварительная версия)?
 
@@ -54,7 +54,6 @@ ms.locfileid: "104656011"
 |Microsoft Word|.docx| Файл текстового документа.|
 |Значения с разделением знаками табуляции (TAB)|.tsv, .tab| Файл необработанных данных с разделением знаками табуляции, используемый редакторами электронных таблиц.|
 |текст|.txt| Неформатированный текстовый документ.|
-|Translation Memory eXchange (обмен памятью перевода)|.tmx|Стандарт Open XML, используемый для обмена данными памяти перевода (TM), которые создаются приложениями для автоматизированного перевода (CAT) и локализации.|
 
 ## <a name="supported-glossary-formats"></a>Поддерживаемые форматы глоссария
 

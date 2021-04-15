@@ -10,12 +10,12 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 80d6c4d3f0b2eef5bc6012f2aab3fcbeab0e31b8
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 4c8bd66dde54ff90ea2191fba58f10c87c45cf68
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495435"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105958281"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
@@ -43,15 +43,15 @@ dotnet build
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Установите клиентскую библиотеку чата Служб коммуникации Azure для .NET.
+Установка пакета SDK для чата Служб коммуникации Azure для .NET
 
 ```PowerShell
-dotnet add package Azure.Communication.Chat --version 1.0.0-beta.5
+dotnet add package Azure.Communication.Chat --version 1.0.0
 ```
 
 ## <a name="object-model"></a>Объектная модель
 
-Указанные ниже классы реализуют некоторые основные функции клиентской библиотеки чата Служб коммуникации для C#.
+Указанные ниже классы реализуют некоторые основные функции пакета SDK для чата Служб коммуникации Azure для C#.
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
@@ -60,7 +60,7 @@ dotnet add package Azure.Communication.Chat --version 1.0.0-beta.5
 
 ## <a name="create-a-chat-client"></a>Создание клиента чата
 
-Чтобы создать клиент чата, вы будете использовать конечную точку Службы коммуникации и маркер доступа, который был создан в рамках предварительных требований. Чтобы создать пользователя и выдать маркер для передачи клиенту чата, необходимо использовать класс `CommunicationIdentityClient` из клиентской библиотеки удостоверений.
+Чтобы создать клиент чата, вы будете использовать конечную точку Службы коммуникации и маркер доступа, который был создан в рамках предварительных требований. Чтобы создать пользователя и выдать маркер для передачи клиенту чата, необходимо использовать класс `CommunicationIdentityClient` из пакета SDK для удостоверений.
 
 Дополнительные сведения о маркерах доступа пользователей см. [здесь](../../access-tokens.md).
 
@@ -115,6 +115,17 @@ string threadId = "<THREAD_ID>";
 ChatThreadClient chatThreadClient = chatClient.GetChatThreadClient(threadId: threadId);
 ```
 
+## <a name="list-all-chat-threads"></a>Перечисление всех потоков чата
+Чтобы получить все потоки чата, в которых участвует пользователь, используйте `GetChatThreads`.
+
+```csharp
+AsyncPageable<ChatThreadItem> chatThreadItems = chatClient.GetChatThreadsAsync();
+await foreach (ChatThreadItem chatThreadItem in chatThreadItems)
+{
+    Console.WriteLine($"{ chatThreadItem.Id}");
+}
+```
+
 ## <a name="send-a-message-to-a-chat-thread"></a>Отправка сообщения в поток чата
 
 Для отправки сообщения в поток используйте `SendMessage`.
@@ -124,17 +135,8 @@ ChatThreadClient chatThreadClient = chatClient.GetChatThreadClient(threadId: thr
 - Используйте `senderDisplayName`, чтобы указать отображаемое имя отправителя. Если этот параметр не задан, используется пустая строка.
 
 ```csharp
-var messageId = await chatThreadClient.SendMessageAsync(content:"hello world", type: ChatMessageType.Text);
-```
-## <a name="get-a-message"></a>Получение сообщения
-
-Используйте `GetMessage` для получения сообщения из службы.
-`messageId` — уникальный идентификатор сообщения.
-
-`ChatMessage` — ответ, возвращенный при отправке сообщения. Помимо других полей, содержит идентификатор, который является уникальным идентификатором сообщения. См. сведения об Azure.Communication.Chat.ChatMessage
-
-```csharp
-ChatMessage chatMessage = await chatThreadClient.GetMessageAsync(messageId: messageId);
+SendChatMessageResult sendChatMessageResult = await chatThreadClient.SendMessageAsync(content:"hello world", type: ChatMessageType.Text);
+string messageId = sendChatMessageResult.Id;
 ```
 
 ## <a name="receive-chat-messages-from-a-chat-thread"></a>Получение сообщений из потока чата
@@ -167,25 +169,6 @@ await foreach (ChatMessage message in allMessages)
 
 Дополнительные сведения см. в разделе о [типах сообщений](../../../concepts/chat/concepts.md#message-types).
 
-## <a name="update-a-message"></a>Обновление сообщения
-
-Вы можете обновить сообщение, которое уже было отправлено, вызвав `UpdateMessage` для `ChatThreadClient`.
-
-```csharp
-string id = "id-of-message-to-edit";
-string content = "updated content";
-await chatThreadClient.UpdateMessageAsync(messageId: id, content: content);
-```
-
-## <a name="deleting-a-message"></a>Удаление сообщения
-
-Вы можете удалить сообщение, вызвав `DeleteMessage` для `ChatThreadClient`.
-
-```csharp
-string id = "id-of-message-to-delete";
-await chatThreadClient.DeleteMessageAsync(messageId: id);
-```
-
 ## <a name="add-a-user-as-a-participant-to-the-chat-thread"></a>Добавление пользователя в качестве участника в поток чата
 
 После создания потока можно добавлять и удалять пользователей. Добавляя пользователей, вы предоставляете им возможность отправлять сообщения в поток, а также добавлять или удалять других участников. Перед вызовом `AddParticipants` убедитесь, что вы получили новый маркер доступа и удостоверение для этого пользователя. Пользователю потребуется маркер доступа для инициализации своего клиента чата.
@@ -209,14 +192,6 @@ var participants = new[]
 
 await chatThreadClient.AddParticipantsAsync(participants: participants);
 ```
-## <a name="remove-user-from-a-chat-thread"></a>Удаление пользователя из потока чата
-
-Подобно добавлению пользователя в поток, можно удалить его из потока чата. Для этого необходимо отследить идентификатор `CommunicationUser` добавленного участника.
-
-```csharp
-var gloria = new CommunicationUserIdentifier(id: "<Access_ID_For_Gloria>");
-await chatThreadClient.RemoveParticipantAsync(identifier: gloria);
-```
 
 ## <a name="get-thread-participants"></a>Получение участников потока
 
@@ -230,14 +205,6 @@ await foreach (ChatParticipant participant in allParticipants)
 }
 ```
 
-## <a name="send-typing-notification"></a>Отправка уведомления о вводе
-
-Используйте `SendTypingNotification`, чтобы указать, что пользователь вводит ответ в потоке.
-
-```csharp
-await chatThreadClient.SendTypingNotificationAsync();
-```
-
 ## <a name="send-read-receipt"></a>Отправка уведомления о прочтении
 
 Используйте `SendReadReceipt`, чтобы уведомить других участников о том, что пользователь прочитал сообщение.
@@ -246,17 +213,6 @@ await chatThreadClient.SendTypingNotificationAsync();
 await chatThreadClient.SendReadReceiptAsync(messageId: messageId);
 ```
 
-## <a name="get-read-receipts"></a>Получение уведомлений о прочтении
-
-Используйте `GetReadReceipts` для проверки состояния сообщений, чтобы увидеть, какие из них прочитаны другими участниками потока чата.
-
-```csharp
-AsyncPageable<ChatMessageReadReceipt> allReadReceipts = chatThreadClient.GetReadReceiptsAsync();
-await foreach (ChatMessageReadReceipt readReceipt in allReadReceipts)
-{
-    Console.WriteLine($"{readReceipt.ChatMessageId}:{((CommunicationUserIdentifier)readReceipt.Sender).Id}:{readReceipt.ReadOn}");
-}
-```
 ## <a name="run-the-code"></a>Выполнение кода
 
 Запустите приложение из каталога приложения с помощью команды `dotnet run`.

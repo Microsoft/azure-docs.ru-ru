@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 02/09/2021
 ms.author: alkohli
 ms.openlocfilehash: 400c5f0b2281679c3ec913e94643ffec6082d9e6
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100551708"
 ---
 #### <a name="to-create-a-volume"></a>Создание тома
@@ -43,7 +43,7 @@ ms.locfileid: "100551708"
       1. В колонке **Соединенные узлы** выберите имеющуюся запись контроля доступа (ACR) или добавьте новую, выполнив следующие действия:
 
          1. Введите **имя** для ACR.
-         2. Введите полное имя iSCSI (IQN) узла Windows в поле **Имя инициатора iSCSI**. Если у вас нет IQN, перейдите к разделу [Получение IQN узла Windows Server](#get-the-iqn-of-a-windows-server-host).
+         2. Введите полное имя iSCSI (IQN) узла Windows в поле **Имя инициатора iSCSI**. Если IQN отсутствует, перейдите к разделу [Получение IQN узла Windows Server](#get-the-iqn-of-a-windows-server-host).
 
       1. Нажмите кнопку **Создать**. Создан том с указанными настройками.
 

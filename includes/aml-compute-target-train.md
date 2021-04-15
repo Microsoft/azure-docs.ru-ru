@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 services: machine-learning
 author: sdgilley
@@ -9,12 +9,12 @@ manager: cgronlund
 ms.custom: include file
 ms.topic: include
 ms.date: 09/17/2020
-ms.openlocfilehash: 7c89527218e34bea0819a1e2446441216cde45ae
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: 3eb5ea468a234aea228539c2390ab6cae9352948
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105104211"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105630053"
 ---
 **Целевые объекты вычислений могут использоваться повторно для разных заданий обучения**. Например, после подключения удаленной виртуальной машины к вашей рабочей области ее можно многократно использовать для нескольких заданий. В конвейерах машинного обучения используйте правильный [шаг конвейера](/python/api/azureml-pipeline-steps/azureml.pipeline.steps) для каждого целевого объекта вычислений.
 
@@ -32,4 +32,4 @@ ms.locfileid: "105104211"
 |[Пакетная служба Azure](../articles/machine-learning/how-to-attach-compute-targets.md#azbatch) | &nbsp; | Да | &nbsp; |
 
 > [!TIP]
-> Размер диска ОС вычислительного экземпляра составляет 120 ГБ. Если на диске заканчивается свободное место, освободите достаточное пространство перед попыткой остановить или перезапустить вычислительный экземпляр.
+> Размер диска ОС вычислительного экземпляра составляет 120 ГБ. Если на диске заканчивается свободное место, очистите [с помощью терминала](../articles/machine-learning/how-to-access-terminal.md) по крайней мере 1–2 ГБ, прежде чем [остановить или перезапустить](../articles/machine-learning/how-to-create-manage-compute-instance.md#manage) вычислительный экземпляр.

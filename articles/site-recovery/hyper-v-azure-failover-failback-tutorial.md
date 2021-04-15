@@ -1,19 +1,16 @@
 ---
 title: Настройка отработки отказа для виртуальных машин Hyper-V в Azure с помощью Azure Site Recovery
 description: Узнайте, как настроить отработку отказа для виртуальных машин Hyper-V в Azure с помощью Azure Site Recovery
-author: rayne-wiselman
-manager: carmonm
 ms.service: site-recovery
 ms.topic: tutorial
 ms.date: 12/16/2019
-ms.author: raynew
 ms.custom: MVC
-ms.openlocfilehash: b46a2ea12a697afde8223cc3595365c1286512c7
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: bb012f7cc5faa5e286b617785512ffa463c213bb
+ms.sourcegitcommit: d63f15674f74d908f4017176f8eddf0283f3fac8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "86132452"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106579546"
 ---
 # <a name="fail-over-hyper-v-vms-to-azure"></a>Выполнение отработки отказа виртуальных машин Hyper-V в Azure
 

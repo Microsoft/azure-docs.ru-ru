@@ -2,20 +2,20 @@
 title: Краткое руководство. Удаление приложения из арендатора Azure Active Directory (Azure AD)
 description: В этом кратком руководстве показано, как с помощью портала Azure можно удалить приложение из арендатора Azure Active Directory (Azure AD).
 services: active-directory
-author: kenwith
-manager: daveba
+author: iantheninja
+manager: CelesteDG
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.topic: quickstart
 ms.workload: identity
 ms.date: 1/5/2021
-ms.author: kenwith
-ms.openlocfilehash: 187f4a1d524e0343130808aa4b4c18222fa982c3
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.author: iangithinji
+ms.openlocfilehash: 55607d520affe704cecd2e16fb64b3a65c04e167
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99259276"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107374307"
 ---
 # <a name="quickstart-delete-an-application-from-your-azure-active-directory-azure-ad-tenant"></a>Краткое руководство. Удаление приложения из арендатора Azure Active Directory (Azure AD)
 
@@ -51,7 +51,7 @@ ms.locfileid: "99259276"
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если вы завершили работу с этой серией кратких руководств, удалите приложение, чтобы очистить тестового арендатора. В этом кратком руководстве был рассмотрен процесс удаления приложения.
+Завершив работу с этой серией кратких руководств, удалите приложение, чтобы очистить тестовый клиент. В этом кратком руководстве был рассмотрен процесс удаления приложения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 2/26/2021
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: d155d0c4a18b254f66ff5fb58ea91dbee22d2c34
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 578befe3e26ebb42fa2172976e07d0a5836e3743
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103496615"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107107165"
 ---
 # <a name="tutorial-create-an-azure-digital-twins-graph-using-the-azure-cli"></a>Учебник. Создание графа Azure Digital Twins с помощью Azure CLI
 
@@ -20,7 +20,7 @@ ms.locfileid: "103496615"
 
 В этом учебнике вы создадите граф Azure Digital Twins с помощью моделей, двойников и связей. Средством для работы с этим учебником является [набор команд Azure Digital Twins для **Azure CLI**](how-to-use-cli.md). 
 
-С помощью этих команд CLI можно выполнять базовые действия Azure Digital Twins, такие как отправка моделей, создание и изменение двойников, а также создание связей. Вы также можете ознакомиться со [справочной документацией по набору команд *az dt*](/cli/azure/ext/azure-iot/dt?preserve-view=true&view=azure-cli-latest), чтобы увидеть полный набор команд CLI.
+С помощью этих команд CLI можно выполнять базовые действия Azure Digital Twins, такие как отправка моделей, создание и изменение двойников, а также создание связей. Вы также можете ознакомиться со [справочной документацией по набору команд *az dt*](/cli/azure/dt), чтобы увидеть полный набор команд CLI.
 
 В этом учебнике вам предстоит выполнить следующее.
 > [!div class="checklist"]
@@ -91,7 +91,7 @@ az dt show -n <ADT_instance_name>
     
     На компьютере перейдите к файлу *Room.json* и откройте его. Затем повторите этот шаг с файлом *Floor.json*.
 
-1. Далее используйте команду [**az dt model create**](/cli/azure/ext/azure-iot/dt/model?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_model_create) (как показано ниже), чтобы отправить обновленную модель *Room* в свой экземпляр Azure Digital Twins. Вторая команда отправляет другую модель (*Floor*), которую также можно использовать в следующем разделе для создания различных типов двойников.
+1. Далее используйте команду [**az dt model create**](/cli/azure/dt/model#az_dt_model_create) (как показано ниже), чтобы отправить обновленную модель *Room* в свой экземпляр Azure Digital Twins. Вторая команда отправляет другую модель (*Floor*), которую также можно использовать в следующем разделе для создания различных типов двойников.
 
     ```azurecli-interactive
     az dt model create -n <ADT_instance_name> --models Room.json
@@ -101,9 +101,9 @@ az dt show -n <ADT_instance_name>
     Выходные данные каждой команды будут отображать сведения об успешно отправленной модели.
 
     >[!TIP]
-    >Кроме того, можно передать все модели в каталоге одновременно, используя параметр `--from-directory` для команды создания модели. Дополнительные сведения см. в разделе [Необязательные параметры для *az dt model create*](/cli/azure/ext/azure-iot/dt/model?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_model_create-optional-parameters).
+    >Кроме того, можно передать все модели в каталоге одновременно, используя параметр `--from-directory` для команды создания модели. Дополнительные сведения см. в разделе [Необязательные параметры для *az dt model create*](/cli/azure/dt/model#az_dt_model_create-optional-parameters).
 
-1. Убедитесь, что модели были созданы с помощью команды [**az dt model list**](/cli/azure/ext/azure-iot/dt/model?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_model_list), как показано ниже. Эта команда выведет список с полными сведениями всех моделей, которые были отправлены в экземпляр Azure Digital Twins. 
+1. Убедитесь, что модели были созданы с помощью команды [**az dt model list**](/cli/azure/dt/model#az_dt_model_list), как показано ниже. Эта команда выведет список с полными сведениями всех моделей, которые были отправлены в экземпляр Azure Digital Twins. 
 
     ```azurecli-interactive
     az dt model list -n <ADT_instance_name> --definition
@@ -129,7 +129,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
 
 Теперь, когда несколько моделей отправлено в ваш экземпляр Azure Digital Twins, можно создавать [**цифровые двойники**](concepts-twins-graph.md) на основе определений этих моделей. Цифровые двойники представляют сущности в вашей бизнес-среде — такие как датчики на ферме, комнаты в здании или фары автомобиля. 
 
-Для создания цифрового двойника используйте команду [**az dt twin create**](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_create). Вы должны сослаться на модель, на основе которой создается двойник, и при необходимости можете задать начальные значения каких-либо свойств в модели. На этом этапе вам не нужно передавать какие-либо сведения о связях.
+Для создания цифрового двойника используйте команду [**az dt twin create**](/cli/azure/dt/twin#az_dt_twin_create). Вы должны сослаться на модель, на основе которой создается двойник, и при необходимости можете задать начальные значения каких-либо свойств в модели. На этом этапе вам не нужно передавать какие-либо сведения о связях.
 
 1. Выполните следующий код в Cloud Shell, чтобы создать несколько двойников на основе модели *Room*, обновленной ранее, и другой модели (*Floor*). Напомним, что модель *Room* имеет три свойства, поэтому можно включить в команду аргументы с начальными значениями для этих свойств. (Как правило, инициализация значений свойств является необязательной, но они необходимы для этого учебника.)
 
@@ -151,7 +151,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
     
     Выходные данные каждой команды будут отображать сведения об успешно созданном двойнике (включая свойства двойников room, инициализированные с ними).
 
-1. Вы можете убедиться, что двойники созданы с помощью команды [**az dt twin query**](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_query), как показано ниже. Показанный запрос находит все цифровые двойники в вашем экземпляре Azure Digital Twins.
+1. Вы можете убедиться, что двойники созданы с помощью команды [**az dt twin query**](/cli/azure/dt/twin#az_dt_twin_query), как показано ниже. Показанный запрос находит все цифровые двойники в вашем экземпляре Azure Digital Twins.
     
     ```azurecli-interactive
     az dt twin query -n <ADT_instance_name> -q "SELECT * FROM DIGITALTWINS"
@@ -165,7 +165,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
 
 Вы также можете изменить свойства созданного вами двойника. 
 
-1. Выполните команду [**az dt twin update**](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_update), чтобы изменить значение RoomName для *room0* с *Room0* на *PresidentialSuite*:
+1. Выполните команду [**az dt twin update**](/cli/azure/dt/twin#az_dt_twin_update), чтобы изменить значение RoomName для *room0* с *Room0* на *PresidentialSuite*:
 
     ```azurecli-interactive
     az dt twin update -n <ADT_instance_name> --twin-id room0 --json-patch '{"op":"add", "path":"/RoomName", "value": "PresidentialSuite"}'
@@ -183,7 +183,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
 
     :::image type="content" source="media/tutorial-command-line/cli/output-update-twin.png" alt-text="Снимок экрана: окно Cloud Shell с результатом команды обновления, который содержит значение PresidentialSuite для RoomName." lightbox="media/tutorial-command-line/cli/output-update-twin.png":::
 
-1. Для проверки успешности выполнения обновления можно запустить команду [**az dt twin show**](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_show), чтобы увидеть сведения о *room0*:
+1. Для проверки успешности выполнения обновления можно запустить команду [**az dt twin show**](/cli/azure/dt/twin#az_dt_twin_show), чтобы увидеть сведения о *room0*:
 
     ```azurecli-interactive
     az dt twin show -n <ADT_instance_name> --twin-id room0
@@ -197,7 +197,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
 
 Типы создаваемых между двойниками связей определены в [моделях](#model-a-physical-environment-with-dtdl), которые вы загрузили ранее. [Определение модели для *Floor*](https://github.com/azure-Samples/digital-twins-samples/blob/master/AdtSampleApp/SampleClientApp/Models/Floor.json) указывает, что этажи могут иметь связь типа *contains* ("содержит"). Таким образом, можно создать связи типа *contains*, идущие от каждого двойника *Floor* к соответствующим номерам room, содержащимся на том или ином этаже.
 
-Чтобы добавить связь, используйте команду [**az dt twin relationship create**](/cli/azure/ext/azure-iot/dt/twin/relationship?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_relationship_create). Укажите двойник, от которого исходит связь, тип этой связи и двойник, к которому она присоединяется. Наконец, присвойте связи уникальный идентификатор. Если связь определена как имеющая свойства, можно также инициализировать свойства связи в этой команде.
+Чтобы добавить связь, используйте команду [**az dt twin relationship create**](/cli/azure/dt/twin/relationship#az_dt_twin_relationship_create). Укажите двойник, от которого исходит связь, тип этой связи и двойник, к которому она присоединяется. Наконец, присвойте связи уникальный идентификатор. Если связь определена как имеющая свойства, можно также инициализировать свойства связи в этой команде.
 
 1. Выполните следующий код, чтобы добавить связи типа *contains*, идущие от каждого созданного ранее двойника *Floor* к соответствующему двойнику *Room*. Связи называются *relationship0* и *relationship1*.
 
@@ -240,7 +240,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
 
 ## <a name="query-the-twin-graph-to-answer-environment-questions"></a>Запрос графа двойников для получения ответов по среде
 
-Главной особенностью Azure Digital Twins является возможность просто и эффективно [запрашивать](concepts-query-language.md) граф двойников, чтобы получать ответы о вашей среде. В Azure CLI это делается с помощью команды [**az dt twin query**](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_query).
+Главной особенностью Azure Digital Twins является возможность просто и эффективно [запрашивать](concepts-query-language.md) граф двойников, чтобы получать ответы о вашей среде. В Azure CLI это делается с помощью команды [**az dt twin query**](/cli/azure/dt/twin#az_dt_twin_query).
 
 Следующие запросы в Cloud Shell позволяют ответить на некоторые вопросы о примере окружения.
 
@@ -308,7 +308,7 @@ az dt model create -n <ADT_instance_name> --models Room.json
 
 * **Если вы планируете перейти к следующему учебнику**, можете сохранить настроенные здесь ресурсы и повторно использовать экземпляр Azure Digital Twins без очистки.
 
-* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, но вам нужно очистить все его модели, двойники и связи**, можно использовать команды [**az dt twin relationship delete**](/cli/azure/ext/azure-iot/dt/twin/relationship?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_relationship_delete), [**az dt twin delete**](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_twin_delete) и [**az dt model delete**](/cli/azure/ext/azure-iot/dt/model?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_model_delete), чтобы очистить связи, двойники и модели в своем экземпляре соответственно.
+* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, но вам нужно очистить все его модели, двойники и связи**, можно использовать команды [**az dt twin relationship delete**](/cli/azure/dt/twin/relationship#az_dt_twin_relationship_delete), [**az dt twin delete**](/cli/azure/dt/twin#az_dt_twin_delete) и [**az dt model delete**](/cli/azure/dt/model#az_dt_model_delete), чтобы очистить связи, двойники и модели в своем экземпляре соответственно.
 
 [!INCLUDE [digital-twins-cleanup-basic.md](../../includes/digital-twins-cleanup-basic.md)]
 
