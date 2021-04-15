@@ -6,14 +6,14 @@ ms.author: magoedte
 ms.service: azure-arc
 ms.topic: quickstart
 ms.date: 03/03/2021
-ms.custom: template-quickstart
+ms.custom: template-quickstart, references_regions
 keywords: Kubernetes, Arc, Azure, кластер
-ms.openlocfilehash: 3fc522c4bdda9eb1047d5258bcc431d0268990b9
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b4cbd45f8478674c7c6bacc50f068bc0ec691a14
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102121649"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106449925"
 ---
 # <a name="quickstart-connect-an-existing-kubernetes-cluster-to-azure-arc"></a>Краткое руководство. Подключение существующего кластера Kubernetes к Azure Arc 
 
@@ -23,36 +23,35 @@ ms.locfileid: "102121649"
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../../includes/azure-cli-prepare-your-environment.md)]
 
-* Убедитесь, что у вас есть следующее:
-    * Работающий кластер Kubernetes.
-    * Файл `kubeconfig`, указывающий на кластер, который необходимо подключить к службе Azure Arc.
-    * Разрешения на чтение и запись для пользователя или субъекта-службы, который создает тип ресурса Kubernetes с поддержкой Azure Arc (`Microsoft.Kubernetes/connectedClusters`).
+* Работающий кластер Kubernetes. Если у вас нет кластера, его можно создать с помощью одного из следующих параметров:
+    * [Kubernetes в Docker (KIND)](https://kind.sigs.k8s.io/)
+    * Создание кластера Kubernetes с помощью Docker для [Mac](https://docs.docker.com/docker-for-mac/#kubernetes) или [Windows](https://docs.docker.com/docker-for-windows/#kubernetes)
+    * Самостоятельно управляемый кластер Kubernetes с помощью [API кластера](https://cluster-api.sigs.k8s.io/user/quick-start.html)
+
+    >[!NOTE]
+    > Кластер должен иметь по крайней мере один узел операционной системы и тип архитектуры `linux/amd64`. Кластеры, имеющие только узлы `linux/arm64`, пока не поддерживаются.
+    
+* Файл `kubeconfig` и контекст, указывающие на кластер.
+* Разрешения чтения и записи для типа ресурса Kubernetes со включенным Azure Arc (`Microsoft.Kubernetes/connectedClusters`).
+
 * Установите [последнюю версию Helm 3](https://helm.sh/docs/intro/install).
-* Установите следующие расширения CLI для Kubernetes с поддержкой Azure Arc версии не ниже 1.0.0:
+
+- [Установите или обновите Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) до версии >= 2.16.0.
+* Установите расширение Azure CLI `connectedk8s` версии 1.0.0 или более поздней версии:
   
   ```azurecli
   az extension add --name connectedk8s
-  az extension add --name k8s-configuration
-  ```
-  * Чтобы обновить эти расширения до последних версий, выполните следующие команды:
-  
-  ```azurecli
-  az extension update --name connectedk8s
-  az extension update --name k8s-configuration
   ```
 
+>[!TIP]
+> Если расширение `connectedk8s` уже установлено, обновите его до последней версии, выполнив следующую команду: `az extension update --name connectedk8s`
+
+
 >[!NOTE]
->**Поддерживаемые регионы:**
->* Восточная часть США
->* Западная Европа
->* центрально-западная часть США
->* Центрально-южная часть США
->* Юго-Восточная Азия
->* южная часть Соединенного Королевства
->* Западная часть США 2
->* Восточная Австралия
->* восточная часть США 2
->* Северная Европа
+>Список регионов, поддерживаемых Kubernetes со включенным Azure Arc, можно найти [здесь](https://azure.microsoft.com/global-infrastructure/services/?products=azure-arc).
+
+>[!NOTE]
+> Если вы хотите использовать пользовательские расположения в кластере, используйте регионы "Восточная часть США" или "Западная Европа" для подключения к кластеру, так как в настоящее время пользовательские расположения доступны только в этих регионах. Все другие функции Kubernetes с поддержкой Azure Arc доступны во всех регионах, перечисленных выше.
 
 ## <a name="meet-network-requirements"></a>Выполнение требований к сети
 
@@ -64,7 +63,7 @@ ms.locfileid: "102121649"
 | Конечная точка (DNS) | Описание |  
 | ----------------- | ------------- |  
 | `https://management.azure.com`                                                                                 | Требуется для подключения агента к Azure и регистрации кластера.                                                        |  
-| `https://eastus.dp.kubernetesconfiguration.azure.com`, `https://westeurope.dp.kubernetesconfiguration.azure.com`, `https://westcentralus.dp.kubernetesconfiguration.azure.com`, `https://southcentralus.dp.kubernetesconfiguration.azure.com`, `https://southeastasia.dp.kubernetesconfiguration.azure.com`, `https://uksouth.dp.kubernetesconfiguration.azure.com`, `https://westus2.dp.kubernetesconfiguration.azure.com`, `https://australiaeast.dp.kubernetesconfiguration.azure.com`, `https://eastus2.dp.kubernetesconfiguration.azure.com`, `https://northeurope.dp.kubernetesconfiguration.azure.com` | Конечная точка плоскости данных, через которую агент будет отправлять сведения о состоянии и извлекать сведения о конфигурации.                                      |  
+| `https://<region>.dp.kubernetesconfiguration.azure.com` | Конечная точка плоскости данных, через которую агент будет отправлять сведения о состоянии и извлекать сведения о конфигурации.                                      |  
 | `https://login.microsoftonline.com`                                                                            | Требуется для извлечения и обновления маркеров Azure Resource Manager.                                                                                    |  
 | `https://mcr.microsoft.com`                                                                            | Требуется агентам Azure Arc для извлечения образов контейнеров.                                                                  |  
 | `https://eus.his.arc.azure.com`, `https://weu.his.arc.azure.com`, `https://wcus.his.arc.azure.com`, `https://scus.his.arc.azure.com`, `https://sea.his.arc.azure.com`, `https://uks.his.arc.azure.com`, `https://wus2.his.arc.azure.com`, `https://ae.his.arc.azure.com`, `https://eus2.his.arc.azure.com`, `https://ne.his.arc.azure.com` |  Требуется для получения назначенных системой сертификатов MSI (управляемого удостоверения службы).                                                                  |
@@ -75,11 +74,13 @@ ms.locfileid: "102121649"
     ```azurecli
     az provider register --namespace Microsoft.Kubernetes
     az provider register --namespace Microsoft.KubernetesConfiguration
+    az provider register --namespace Microsoft.ExtendedLocation
     ```
 2. Отслеживайте ход процесса регистрации. Она может занять до 10 минут.
     ```azurecli
     az provider show -n Microsoft.Kubernetes -o table
-    az provider show -n Microsoft.KubernetesConfiguration -o table    
+    az provider show -n Microsoft.KubernetesConfiguration -o table
+    az provider show -n Microsoft.ExtendedLocation -o table
     ```
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов

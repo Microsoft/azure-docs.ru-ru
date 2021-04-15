@@ -9,18 +9,18 @@ ms.date: 08/04/2020
 ms.topic: tutorial
 ms.service: iot-edge
 ms.custom: mvc, devx-track-csharp
-ms.openlocfilehash: e5aeda35ed4110807f17c11e93b31d0b3998846e
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 361a151d1f1835f82e440704105cf8b3844a4c54
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103461119"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106221633"
 ---
 # <a name="tutorial-store-data-at-the-edge-with-sql-server-databases"></a>Руководство по Хранение данных в граничной системе с помощью баз данных SQL Server
 
 [!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
-Развертывание модуля SQL Server для хранения данных на устройстве с Linux, где используется Azure IoT Edge.
+Разверните модуль SQL Server для хранения данных на устройстве, на котором выполняется Azure IoT Edge с контейнерами Linux.
 
 Используйте Azure IoT Edge и SQL Server для хранения и запроса данных в пограничной системе. Azure IoT Edge предоставляет базовые функции хранения для кэширования сообщений при переходе устройства в автономный режим и последующей их переадресацией при повторном подключении. Однако вам могут потребоваться дополнительные возможности хранения данных, например возможность запрашивать данные локально. С помощью локальных баз данных устройства IoT Edge могут выполнять более сложные вычисления без необходимости поддерживать соединение с Центром Интернета вещей.
 
@@ -42,7 +42,7 @@ ms.locfileid: "103461119"
 Предполагается, что перед началом работы с этим руководством вы прошли предыдущее, в рамках которого настроили окружение для разработки контейнеров Linux: [Tutorial: Develop IoT Edge modules for Linux devices](tutorial-develop-for-linux.md) (Руководство. Разработка модулей IoT Edge для устройств с Linux). После работы с ним у вас должны быть готовы все необходимые компоненты:
 
 * [Центр Интернета вещей](../iot-hub/iot-hub-create-through-portal.md) ценовой категории "Бесплатный" или "Стандартный" в Azure.
-* Устройство AMD64 с Azure IoT Edge. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
+* Устройство AMD64, на котором выполняется Azure IoT Edge с контейнерами Linux. Вы можете воспользоваться краткими руководствами для настройки устройства [Linux](quickstart-linux.md) или [Windows](quickstart.md).
   * Устройства ARM, такие как Raspberry Pis, не могут выполнять SQL Server. Если вы хотите использовать SQL на устройстве ARM, вы можете зарегистрироваться, чтобы использовать предварительную версию [SQL Azure для пограничных вычислений](https://azure.microsoft.com/services/sql-edge/).
 * реестр контейнеров, например [Реестр контейнеров Azure](../container-registry/index.yml);
 * средство [Visual Studio Code](https://code.visualstudio.com/), настроенное с помощью [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools);

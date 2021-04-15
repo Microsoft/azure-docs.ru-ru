@@ -1,5 +1,5 @@
 ---
-title: Руководство. Добавление возможности входа пользователей в веб-приложение Node.js и Express | Azure
+title: Руководство. Добавление возможности входа пользователей в веб-приложение Node.js & Express | Azure
 titleSuffix: Microsoft identity platform
 description: В этом руководстве показано, как включить возможность входа пользователей в веб-приложение.
 services: active-directory
@@ -10,14 +10,14 @@ ms.subservice: develop
 ms.topic: tutorial
 ms.date: 02/17/2021
 ms.author: v-doeris
-ms.openlocfilehash: 3f1f26acbba0f5830421e760d6a68a11f618fa85
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 58132b6d038abe0db02d1e58f8c8a8f64962ff49
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101648996"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106279720"
 ---
-# <a name="tutorial-sign-in-users-in-a-nodejs--express-web-app"></a>Руководство. Добавление возможности входа пользователей в веб-приложение Node.js и Express
+# <a name="tutorial-sign-in-users-in-a-nodejs--express-web-app"></a>Руководство. Добавление возможности входа пользователей в веб-приложение Node.js & Express
 
 В этом руководстве показано, как создать веб-приложение, которое отвечает за вход пользователей. Создаваемое веб-приложение использует [библиотеку проверки подлинности Майкрософт (MSAL) для Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node).
 

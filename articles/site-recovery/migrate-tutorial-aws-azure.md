@@ -2,19 +2,16 @@
 title: Перенос виртуальных машин AWS в Azure с помощью Миграции Azure
 description: В этой статье описаны параметры для переноса экземпляров AWS в Azure с рекомендацией использовать Миграцию Azure.
 services: site-recovery
-author: rayne-wiselman
-manager: carmonm
 ms.service: site-recovery
 ms.topic: tutorial
 ms.date: 07/27/2019
-ms.author: raynew
 ms.custom: MVC
-ms.openlocfilehash: 83d8106b9f206da9095c37b6179bdda8001b439c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 6c3f20f0fa3bc6ad41e76626d3cb02ec1c0b96e9
+ms.sourcegitcommit: d63f15674f74d908f4017176f8eddf0283f3fac8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96009064"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106581336"
 ---
 # <a name="migrate-amazon-web-services-aws-vms-to-azure"></a>Перенос виртуальных машин Amazon Web Services (AWS) в Azure
 

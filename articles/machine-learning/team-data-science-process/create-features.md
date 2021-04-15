@@ -1,5 +1,5 @@
 ---
-title: Проектирование характеристик в машинном обучении. процесс обработки и анализа данных группы
+title: Конструирование признаков в машинном обучении — командный процесс обработки и анализа данных
 description: Сведения о конструировании признаков и его роли в процессе улучшения данных машинного обучения.
 services: machine-learning
 author: marktab
@@ -12,13 +12,13 @@ ms.date: 05/14/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath, contperf-fy20q4
 ms.openlocfilehash: b20a6744644678879fedf44e960854f558eb0f03
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "98610443"
 ---
-# <a name="feature-engineering-in-machine-learning"></a>Проектирование характеристик в машинном обучении
+# <a name="feature-engineering-in-machine-learning"></a>Конструирование признаков в машинном обучении
 
 В этой статье вы узнаете о конструировании признаков и его роли в улучшении данных в машинном обучении. Ознакомьтесь с демонстрационными примерами, взятыми из экспериментов [Студия машинного обучения Azure (классическая)](../overview-what-is-machine-learning-studio.md#ml-studio-classic-vs-azure-machine-learning-studio). 
 

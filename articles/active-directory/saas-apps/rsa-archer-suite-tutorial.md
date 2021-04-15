@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 09/01/2020
+ms.date: 04/02/2021
 ms.author: jeedes
-ms.openlocfilehash: 397d59c60ed90e0e25df671baa3d46660eff1d47
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d96f1e0413dac8477e2fc40bf84e88318abf3f9d
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96181583"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284993"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-rsa-archer-suite"></a>Руководство по интеграции единого входа Azure Active Directory с RSA Archer Suite
 
@@ -37,13 +37,13 @@ ms.locfileid: "96181583"
 
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
-* RSA Archer Suite поддерживает единый вход, инициированный **поставщиком службы**.
+* RSA Archer Suite поддерживает единый вход, инициированный **поставщиком услуг**.
 * RSA Archer Suite поддерживает **JIT**-подготовку пользователей.
 
 > [!NOTE]
 > Идентификатор этого приложения — фиксированное строковое значение, поэтому в одном клиенте можно настроить только один экземпляр.
 
-## <a name="adding-rsa-archer-suite-from-the-gallery"></a>Добавление RSA Archer Suite из коллекции
+## <a name="add-rsa-archer-suite-from-the-gallery"></a>Добавление RSA Archer Suite из коллекции
 
 Чтобы настроить интеграцию приложения RSA Archer Suite с Azure AD, вам нужно добавить это приложение из коллекции в список управляемых приложений SaaS.
 
@@ -53,7 +53,6 @@ ms.locfileid: "96181583"
 1. Чтобы добавить новое приложение, выберите **Новое приложение**.
 1. В разделе **Добавление из коллекции** в поле поиска введите **RSA Archer Suite**.
 1. Выберите **RSA Archer Suite** в области результатов и добавьте это приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
-
 
 ## <a name="configure-and-test-azure-ad-sso-for-rsa-archer-suite"></a>Настройка и проверка единого входа Azure AD для RSA Archer Suite
 
@@ -74,7 +73,7 @@ ms.locfileid: "96181583"
 
 1. На портале Azure на странице интеграции с приложением **RSA Archer Suite** найдите раздел **Управление** и выберите **Единый вход**.
 1. На странице **Выбрать метод единого входа** выберите **SAML**.
-1. На странице **Настройка единого входа с помощью SAML** щелкните значок "Изменить" (значок пера), чтобы открыть диалоговое окно **Базовая конфигурация SAML** и изменить параметры.
+1. На странице **Настройка единого входа с помощью SAML** щелкните значок карандаша, чтобы открыть диалоговое окно **Базовая конфигурация SAML** для изменения параметров.
 
    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
@@ -141,7 +140,7 @@ ms.locfileid: "96181583"
 
 1. На следующей странице выполните приведенные ниже шаги.
 
-    ![Настройка единого входа в RSA Archer Suite](./media/rsa-archer-suite-tutorial/configuring-saml-sso.png)
+    ![Настройка единого входа в RSA Archer Suite](./media/rsa-archer-suite-tutorial/configuration.png)
 
     a. Перейдите на вкладку **Единый вход** и выберите **SAML** из раскрывающегося списка **Режим единого входа**.
 

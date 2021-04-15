@@ -6,12 +6,12 @@ ms.topic: quickstart
 ms.date: 03/18/2020
 ms.author: azfuncdf
 zone_pivot_groups: code-editors-set-one
-ms.openlocfilehash: d5b6ecc12cee983cee0772da8b6f8f26a3b5a8ae
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 36566baac2885c449e1eae762924357bf571b39f
+ms.sourcegitcommit: bfa7d6ac93afe5f039d68c0ac389f06257223b42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96008247"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106490222"
 ---
 # <a name="create-your-first-durable-function-in-c"></a>Создание устойчивой функции в C\#
 
@@ -163,7 +163,7 @@ ms.locfileid: "96008247"
 
 ::: zone pivot="code-editor-visualstudio"
 
-Из этой статьи вы узнаете, как с помощью Visual Studio 2019 создать и протестировать устойчивую функцию hello world в локальной среде.  Эта функция организовывает и объединяет в цепочку вызовы других функций. Затем вы опубликуете код функции в Azure. Эти инструменты доступны как часть рабочей нагрузки Azure для разработки в Visual Studio 2019.
+Из этой статьи вы узнаете, как использовать Visual Studio 2019 для локального создания и тестирования устойчивой функции hello world.  Эта функция организовывает и объединяет в цепочку вызовы других функций. Затем вы опубликуете код функции в Azure. Эти инструменты доступны как часть рабочей нагрузки Azure для разработки в Visual Studio 2019.
 
 ![Снимок экрана: в окне Visual Studio 2019 показана устойчивая функция.](./media/durable-functions-create-first-csharp/functions-vs-complete.png)
 

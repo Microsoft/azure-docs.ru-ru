@@ -1,7 +1,7 @@
 ---
-title: Краткое руководство. Клиентская библиотека службы "Компьютерное зрение" для Go
+title: Краткое руководство. Клиентская библиотека оптического распознавания символов для Go
 titleSuffix: Azure Cognitive Services
-description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой API "Компьютерное зрение" для Go.
+description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой оптического распознавания символов для Go.
 services: cognitive-services
 author: PatrickFarley
 manager: nitinme
@@ -10,19 +10,16 @@ ms.subservice: computer-vision
 ms.topic: include
 ms.date: 12/15/2020
 ms.author: pafarley
-ms.openlocfilehash: 9cb46a57792ecdd650a8a9f5025a5055257057ec
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: b935b8a467097eb60c095c5d317f13693ef68b62
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103622104"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284832"
 ---
 <a name="HOLTop"></a>
 
-С помощью клиентской библиотеки службы "Компьютерное зрение" можно выполнять следующие операции:
-
-* анализ изображений на наличие тегов, текстового описания, лиц, содержимого для взрослых и многого другого.
-* считывание печатного и рукописного текста с помощью API службы чтения.
+Используйте клиентскую библиотеку OCR для чтения печатного и рукописного текста на изображениях.
 
 [Справочная документация](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-go/tree/master/services/cognitiveservices/v2.1/computervision) | [Пакет](https://github.com/Azure/azure-sdk-for-go).
 
@@ -33,7 +30,6 @@ ms.locfileid: "103622104"
 * Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title="создайте ресурс Компьютерного зрения"  target="_blank">create a Computer Vision resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
     * Для подключения приложения к API Компьютерного зрения потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
-* [Создайте переменные среды](../../../cognitive-services-apis-create-account.md#configure-an-environment-variable-for-authentication) для ключа и URL-адреса конечной точки с именами `COMPUTER_VISION_SUBSCRIPTION_KEY` и `COMPUTER_VISION_ENDPOINT` соответственно.
 
 ## <a name="setting-up"></a>Настройка
 
@@ -96,28 +92,25 @@ touch sample-app.go
 > [!IMPORTANT]
 > Не забудьте удалить ключ подписки из кода, когда закончите, и никогда не публикуйте его в открытом доступе. Для рабочей среды рекомендуется использовать безопасный способ хранения и доступа к учетным данным. Например, [хранилище ключей Azure](../../../../key-vault/general/overview.md).
 
-Далее вы начнете добавлять код для выполнения различных операций службы "Компьютерное зрение".
+Далее вы будете добавлять код для выполнения различных операций OCR.
 
 > [!div class="nextstepaction"]
 > [Мной настроен клиент](?success=set-up-client#object-model) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Go&Section=set-up-client)
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK Go для службы "Компьютерное зрение".
+Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK OCR для Go.
 
 |Имя|Описание|
 |---|---|
 | [BaseClient](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision#BaseClient) | Этот класс необходим для всех функций службы "Компьютерное зрение", как, например, анализ изображений и чтение текста. Вы создаете его экземпляр с информацией о подписке и используете его для выполнения большинства операций с образами.|
-|[ImageAnalysis](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision#ImageAnalysis)| Этот тип содержит результаты вызова функции **AnalyzeImage**. Для каждой из функций, связанных с категорией, существуют похожие типы.|
 |[ReadOperationResult](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision#ReadOperationResult)| Этот тип содержит результаты операции пакетной службы чтения. |
-|[VisualFeatureTypes](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision#VisualFeatureTypes)| Этот тип определяет различные виды анализа изображений, которые можно выполнить в стандартной операции анализа. Набор значений VisualFeatureTypes указывается в зависимости от потребностей. |
 
 ## <a name="code-examples"></a>Примеры кода
 
-Эти фрагменты кода показывают, как выполнить следующие действия с помощью клиентской библиотеки службы "Компьютерное зрение" для Go.
+В следующих фрагментах кода показано выполнение следующих действий с помощью клиентской библиотеки OCR для Go:
 
 * [аутентификация клиента](#authenticate-the-client);
-* [Анализ изображения](#analyze-an-image)
 * [Чтение печатного и рукописного текста](#read-printed-and-handwritten-text).
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
@@ -130,105 +123,13 @@ touch sample-app.go
 [!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_client)]
 
 > [!div class="nextstepaction"]
-> [Мной аутентифицирован клиент](?success=authenticate-client#analyze-an-image) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Go&Section=authenticate-client)
+> [Мной аутентифицирован клиент](?success=authenticate-client#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Go&Section=authenticate-client)
 
-## <a name="analyze-an-image"></a>Анализ изображения
 
-Следующий код использует клиентский объект для анализа удаленного образа и вывода результатов на консоль. Вы можете получить текстовое описание, категоризацию, список тегов, обнаруженные объекты, торговые марки, лица, флажки содержимого для взрослых, основные цвета и тип изображения.
-
-### <a name="set-up-test-image"></a>Настройка тестового изображения
-
-Сначала сохраните ссылку на URL-адрес образа, который необходимо проанализировать. Вставьте ее в функцию `main`.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_analyze_url)]
-
-> [!TIP]
-> Можно также проанализировать локальный образ. Изучите информацию о методах класса [BaseClient](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision#BaseClient), например о **DescribeImageInStream**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/go/ComputerVision/ComputerVisionQuickstart.go) для сценариев, включающих использование локальных изображений.
-
-### <a name="specify-visual-features"></a>Указание визуальных компонентов
-
-Следующая функция вызывает извлечение различных визуальных компонентов из образца изображения. Эти функции будут определены в следующих разделах.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_analyze)]
-
-### <a name="get-image-description"></a>Получение описания изображения
-
-Следующая функция получает список созданных заголовков для изображения. Дополнительные сведения об описании изображения см. в разделе [Описание изображений](../../concept-describing-images.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_analyze_describe)]
-
-### <a name="get-image-category"></a>Получение категории изображения
-
-Следующая функция получает обнаруженную категорию изображения. Дополнительные сведения см. в разделе [Классификация изображений](../../concept-categorizing-images.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_analyze_categorize)]
-
-### <a name="get-image-tags"></a>Получение тегов изображения
-
-Следующая функция получает набор обнаруженных тегов изображения. Дополнительные сведения см. в разделе [Теги содержимого](../../concept-tagging-images.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_tags)]
-
-### <a name="detect-objects"></a>Обнаружение объектов
-
-Следующая функция обнаруживает общие объекты в образе и выводит их на консоль. Дополнительные сведения см. в разделе [Обнаружение объектов](../../concept-object-detection.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_objects)]
-
-### <a name="detect-brands"></a>Обнаружение торговых марок
-
-Следующий код обнаруживает фирменные торговые марки и логотипы в образе и выводит их на консоль. Дополнительные сведения см. в разделе [Обнаружение торговых марок](../../concept-brand-detection.md).
-
-Сначала объявите ссылку на новый образец изображения в функции `main`.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_brand_url)]
-
-В следующем коде определяется функция обнаружения торговой марки.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_brands)]
-
-### <a name="detect-faces"></a>Распознавание лиц
-
-Следующая функция возвращает обнаруженные лица на изображении с их координатами прямоугольника и определенными атрибутами лиц. Дополнительные сведения см. в разделе [Распознавание лиц](../../concept-detecting-faces.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_faces)]
-
-### <a name="detect-adult-racy-or-gory-content"></a>Обнаружение содержимого для взрослых, непристойного или жуткого содержимого
-
-Следующая функция выводит сведения об обнаружении содержимого для взрослых на изображении. Дополнительные сведения см. в статье [Обнаружение содержимого для взрослых](../../concept-detecting-adult-content.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_adult)]
-
-### <a name="get-image-color-scheme"></a>Получение цветовой схемы изображения
-
-Следующая функция выводит обнаруженные атрибуты цвета на изображении, например доминирующие и акцентные цвета. Подробнее см. в разделе [Цветовые схемы](../../concept-detecting-color-schemes.md).
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_color)]
-
-### <a name="get-domain-specific-content"></a>Получение содержимого, связанного с определенной предметной областью
-
-API "Компьютерное зрение" может использовать специализированные модели для дальнейшего анализа изображений. Дополнительные сведения см. в статье [Обнаружение содержимого, связанного с определенными предметными областями](../../concept-detecting-domain-content.md). 
-
-Следующий код анализирует данные об обнаруженных известных лицах на изображении.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_celebs)]
-
-Следующий код анализирует данные об обнаруженных достопримечательностях на изображении.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_landmarks)]
-
-### <a name="get-the-image-type"></a>Получение сведений о типе изображения
-
-Следующая функция выводит информацию о типе изображения&mdash;, независимо от того, является ли это картинкой или рисунком.
-
-[!code-go[](~/cognitive-services-quickstart-code/go/ComputerVision/ComputerVisionQuickstart.go?name=snippet_type)]
-
-> [!div class="nextstepaction"]
-> [Мной проанализировано изображение](?success=analyze-image#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Go&Section=analyze-image)
 
 ## <a name="read-printed-and-handwritten-text"></a>Чтение печатного и рукописного текста
 
-Компьютерное зрение может считывать видимый текст в образе и преобразовывать его в поток символов. Код в этом разделе определяет функцию `RecognizeTextReadAPIRemoteImage`, которая использует клиентский объект для обнаружения и извлечения печатного или рукописного текста в образе.
+Служба OCR может считывать видимый текст в образе и преобразовывать его в поток символов. Код в этом разделе определяет функцию `RecognizeTextReadAPIRemoteImage`, которая использует клиентский объект для обнаружения и извлечения печатного или рукописного текста в образе.
 
 Добавьте образец ссылки на изображение и вызов функции в функцию `main`.
 
@@ -282,8 +183,8 @@ go run sample-app.go
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Справочник по API службы "Компьютерное зрение" (Go)](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision)
+> [Справочник по API OCR (Go)](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision)
 
 
-* [Что собой представляет Компьютерное зрение](../../overview.md)
+* [Общие сведения об OCR](../../overview-ocr.md)
 * Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/go/ComputerVision/ComputerVisionQuickstart.go).
