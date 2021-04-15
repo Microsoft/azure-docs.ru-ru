@@ -6,12 +6,12 @@ ms.author: mingshen
 ms.service: marketplace
 ms.topic: overview
 ms.date: 10/15/2020
-ms.openlocfilehash: 099515eb1160b131f2d56fd02f300999d5ddfd16
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: de8e9060f8e7ccdcf38b9f0908dfb05063811817
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96780320"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107103410"
 ---
 # <a name="what-is-the-microsoft-commercial-marketplace"></a>Что такое коммерческая платформа Майкрософт?
 
@@ -82,5 +82,5 @@ ms.locfileid: "96780320"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь со статьей [Работа с коммерческой платформой Майкрософт](/learn/modules/intro-commercial-marketplace/) на Microsoft Learn.
-- Новые партнеры Майкрософт, желающие опубликовать предложение на коммерческой платформе, могут ознакомиться с разделом [Создание коммерческой учетной записи Marketplace в Центре партнеров](partner-center-portal/create-account.md).
+- Новые партнеры Майкрософт, желающие опубликовать предложение на коммерческой платформе, могут ознакомиться с разделом [Создание коммерческой учетной записи Marketplace в Центре партнеров](create-account.md).
 - Чтобы узнать больше о последних и будущих выпусках, присоединяйтесь к беседе в [сообществе партнеров корпорации Майкрософт](https://www.microsoftpartnercommunity.com/).

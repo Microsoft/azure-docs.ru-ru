@@ -6,12 +6,12 @@ author: lgayhardt
 ms.author: lagayhar
 ms.date: 09/30/2020
 ms.custom: mvc, contperf-fy21q1
-ms.openlocfilehash: ebe34735a84e44526e6b96821a2a1da090884886
-ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
+ms.openlocfilehash: 7bad0b17bb2fed9d9f54cdd44042ec88708f35fd
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106383258"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107103731"
 ---
 # <a name="create-custom-kpi-dashboards-using-azure-application-insights"></a>Создание настраиваемых панелей мониторинга ключевых показателей эффективности с помощью Azure Application Insights
 
@@ -59,7 +59,7 @@ ms.locfileid: "106383258"
 5. Найдите плитку **Markdown** и перетащите ее на панель мониторинга.  Эта плитка позволяет добавлять форматированный текст в разметку, которая отлично подходит для добавления поясняющего текста на панель мониторинга. Дополнительные сведения см. в статье [Использование плитки с поддержкой Markdown на панелях мониторинга Azure для отображения настраиваемого содержимого](../../azure-portal/azure-portal-markdown-tile.md).
 6. Добавьте текст в свойства плитки и измените его размер на холсте панели мониторинга.
 
-    [![Изменение разметки плитки](media/tutorial-app-dashboards/markdown.png)](media/tutorial-app-dashboards/dashboard-edit-mode.png#lightbox)
+    [![Изменение разметки плитки](media/tutorial-app-dashboards/markdown.png)](media/tutorial-app-dashboards/markdown.png#lightbox)
 
 7. Щелкните **Настройка выполнена** в верхней части экрана, чтобы выйти из режима настройки плитки.
 

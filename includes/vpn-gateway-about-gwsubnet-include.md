@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: vpn-gateway
 author: cherylmc
 ms.service: vpn-gateway
@@ -9,10 +9,10 @@ ms.date: 09/24/2019
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 5a734963ced9daefda2b7b6f4a52fd9ef437eddc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "71269280"
 ---
 Шлюз виртуальной сети использует определенную подсеть, которая называется подсетью шлюза. Подсеть шлюза входит в диапазон IP-адресов виртуальной сети, который вы указываете при ее настройке. Подсеть шлюза содержит IP-адреса, которые используют ресурсы и службы шлюза виртуальной сети. Чтобы развертывать ресурсы шлюза в Azure, подсети нужно присвоить имя GatewaySubnet. Для развертывания ресурсов шлюза нельзя указывать другую подсеть. Если при создании VPN-шлюза у вас нет подсети с именем GatewaySubnet, операция завершится сбоем.

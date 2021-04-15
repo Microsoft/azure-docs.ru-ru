@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 services: storage
 author: tamram
@@ -9,10 +9,10 @@ ms.date: 07/15/2019
 ms.author: tamram
 ms.custom: include file
 ms.openlocfilehash: 39b61c78cbd0333183c80234256d6041a109d846
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "68249912"
 ---
 Идентификатор ресурса Azure AD определяет аудиторию, которой можно предоставить доступ к ресурсу Azure с помощью выданного маркера. Для доступа к службе хранилища Azure идентификатор ресурса может применяться к одной конкретной учетной записи хранения или к любой учетной записи хранения. В следующей таблице приведены значения, которые можно указать в качестве идентификатора ресурса:

@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: service-bus-relay
 author: clemensv
 ms.service: service-bus-relay
@@ -9,10 +9,10 @@ ms.date: 08/16/2018
 ms.author: clemensv
 ms.custom: include file
 ms.openlocfilehash: ce29cd03de46e1d93d7f1f28f9f5184cd59a57e7
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "79199971"
 ---
 ### <a name="create-a-console-application"></a>Создание консольного приложение
@@ -25,7 +25,7 @@ ms.locfileid: "79199971"
 
 1. Щелкните созданный проект правой кнопкой мыши и выберите **Управление пакетами NuGet**.
 2. Выберите параметр **Включить предварительные выпуски**. 
-3. Выберите **Обзор** и выполните поиск по ключевой фразе **Microsoft.Azure.Relay**. В результатах поиска выберите  **Microsoft Azure ретранслятор**.
+3. Выберите **Обзор** и выполните поиск по ключевой фразе **Microsoft.Azure.Relay**. В результатах поиска выберите **Ретранслятор Microsoft Azure**.
 4. При выборе версии укажите **2.0.0-preview1-20180523**. 
 5. Выберите **Установить** для завершения установки. Закройте диалоговое окно.
 

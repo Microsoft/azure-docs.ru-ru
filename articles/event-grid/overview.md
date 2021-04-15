@@ -3,12 +3,12 @@ title: Что такое служба "Сетка событий Azure"?
 description: Сведения об отправке данных событий из источника к обработчикам с помощью службы "Сетка событий Azure", а также о создании приложений на основе событий и интеграции со службами Azure.
 ms.topic: overview
 ms.date: 01/28/2021
-ms.openlocfilehash: e53665c88c3860d37b3512c6498ab626b02a6400
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: a410f56da9e28403fb98d92332e6d67c064bac4d
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99055146"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105934874"
 ---
 # <a name="what-is-azure-event-grid"></a>Что такое служба "Сетка событий Azure"?
 
@@ -22,7 +22,8 @@ ms.locfileid: "99055146"
 
 :::image type="content" source="./media/overview/functional-model.png" alt-text="Модель источников и обработчиков в службе &quot;Сетка событий&quot;" lightbox="./media/overview/functional-model-big.png":::
 
-На этом рисунке показано, как служба "Сетка событий" соединяет источники и обработчики. Здесь не предоставлен полный список поддерживаемых интеграций.
+> [!NOTE]
+> На этом рисунке показано, как служба "Сетка событий" соединяет источники и обработчики. Здесь не предоставлен полный список поддерживаемых интеграций. Список всех поддерживаемых источников событий см. в следующем разделе. 
 
 ## <a name="event-sources"></a>Источники событий
 
@@ -38,6 +39,7 @@ ms.locfileid: "99055146"
 - [Машинное обучение Azure](event-schema-machine-learning.md)
 - [Azure Maps](event-schema-azure-maps.md)
 - [Службы мультимедиа Azure](event-schema-media-services.md)
+- [Политика Azure](./event-schema-policy.md)
 - [группы ресурсов Azure](event-schema-resource-groups.md).
 - [служебной шине Azure](event-schema-service-bus.md)
 - [Azure SignalR](event-schema-azure-signalr.md)

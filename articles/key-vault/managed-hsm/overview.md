@@ -7,15 +7,15 @@ ms.service: key-vault
 ms.subservice: managed-hsm
 ms.topic: overview
 ms.custom: mvc
-ms.date: 09/15/2020
+ms.date: 04/01/2021
 ms.author: mbaldwin
 author: msmbaldwin
-ms.openlocfilehash: 95feeebf009cae22cf3952df80596c12e75cbe4b
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 605e3f0451cc2029ecc98e42741f30a2d3ef190b
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "94357578"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106167963"
 ---
 # <a name="what-is-azure-key-vault-managed-hsm-preview"></a>Что такое Управляемое устройство HSM в Azure Key Vault (предварительная версия)?
 
@@ -36,6 +36,7 @@ ms.locfileid: "94357578"
 - **Изолированное управление доступом.** Локальная модель управления доступом на основе ролей (RBAC) позволяет назначенным администраторам кластера HSM полностью контролировать устройства HSM, и это не переопределяется даже администраторами групп управления, подписок и групп ресурсов.
 - **Устройства HSM, отвечающие стандартам FIPS 140-2 уровня 3.** Защитите свои данные и соблюдайте требования, определяемые стандартом FIPS (Федеральный стандарт по обработке информации) 140-2 уровня 3, благодаря использованию устройств HSM. Управляемые устройства HSM используют адаптеры HSM от Marvell LiquidSecurity.
 - **Мониторинг и аудит** — полная интеграция с Azure Monitor. Получайте полные журналы всех действий с помощью Azure Monitor. Используйте Azure Log Analytics для аналитики и оповещений.
+- **Место расположения данных** — управляемое устройство HSM не хранит и не обрабатывает данные клиентов за пределами региона, в котором клиент развертывает экземпляр HSM.
 
 ### <a name="integrated-with-azure-and-microsoft-paassaas-services"></a>Интеграция с Azure и службами Microsoft PaaS и SaaS 
 

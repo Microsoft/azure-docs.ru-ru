@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 services: functions
 author: nzthiago
@@ -9,10 +9,10 @@ ms.date: 02/21/2018
 ms.author: nzthiago
 ms.custom: include file
 ms.openlocfilehash: eca2d3359614875e5bff0c9bb67f006f0a8cdba1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "77198332"
 ---
 ## <a name="function-app-timeout-duration"></a><a name="timeout"></a>Время ожидания приложения-функции 

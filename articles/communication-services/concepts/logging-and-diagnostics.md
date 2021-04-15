@@ -9,12 +9,12 @@ ms.author: mikben
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 5ed75a7f8c7915645778696282e179af3a4d4091
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 0bf7213e5cfdc57194482c6914d4e25b9336832e
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103493600"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105935880"
 ---
 # <a name="communication-services-logs"></a>Журналы Служб коммуникации
 
@@ -97,7 +97,7 @@ ms.locfileid: "103493600"
 | OutgoingMessageLength | Количество символов в исходящем сообщении. |
 | IncomingMessageLength | Количество символов во входящем сообщении. |
 | DeliveryAttempts | Количество попыток доставить это сообщение. |
-| PhoneNumber | Номер телефона, на который отправляется SMS-сообщение. |
+| PhoneNumber | Номер телефона, с которого отправляется SMS-сообщение. |
 | SdkType | Тип пакета SDK, используемый в запросе. |
 | PlatformType | Тип платформы, используемый в запросе. |
 | Метод | Метод, используемый в запросе. |

@@ -5,14 +5,13 @@ ms.date: 11/03/2020
 ms.topic: quickstart
 ms.custom:
 - devx-track-java
-- devx-track-azurecli
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 32d91f01fcebec3e1ae0d19b1bff29a71f41c0d1
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b5bc453e2e0371ee0412824f01d99863b12d91e2
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102050432"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107375378"
 ---
 # <a name="quickstart-create-a-java-function-in-azure-from-the-command-line"></a>Краткое руководство. Создание функции Java в Azure из командной строки
 

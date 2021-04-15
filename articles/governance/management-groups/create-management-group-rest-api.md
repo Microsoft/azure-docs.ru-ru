@@ -3,12 +3,12 @@ title: Краткое руководство. Создание группы уп
 description: В этом кратком руководстве показано, как с помощью REST API создать группу управления для организации ресурсов в иерархию ресурсов.
 ms.date: 02/05/2021
 ms.topic: quickstart
-ms.openlocfilehash: ff1487bf25945c733402ddb74d1e102bea80b4b1
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 26a1c0a8025a00155bcf0498e6dfa89a8a73d983
+ms.sourcegitcommit: 20f8bf22d621a34df5374ddf0cd324d3a762d46d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99592506"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107259138"
 ---
 # <a name="quickstart-create-a-management-group-with-rest-api"></a>Краткое руководство. Создание группы управления с помощью REST API
 
@@ -28,7 +28,7 @@ ms.locfileid: "99592506"
 
 ### <a name="create-in-rest-api"></a>Создание с помощью REST API
 
-Чтобы создать новую группу управления в REST API, используйте конечную точку [Группы управления — Создание или обновление](/rest/api/resources/managementgroups/createorupdate). В нашем примере группа управления **GroupId** — это _Contoso_.
+Чтобы создать новую группу управления в REST API, используйте конечную точку [Группы управления — Создание или обновление](/rest/api/managementgroups/managementgroups/createorupdate). В нашем примере группа управления **GroupId** — это _Contoso_.
 
 - Универсальный код ресурса (URI) REST API
 
@@ -81,7 +81,7 @@ ms.locfileid: "99592506"
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Чтобы удалить созданную ранее группу управления, используйте конечную точку [Группы управления — Удалить](/rest/api/resources/managementgroups/delete):
+Чтобы удалить созданную ранее группу управления, используйте конечную точку [Группы управления — Удалить](/rest/api/managementgroups/managementgroups/delete):
 
 - Универсальный код ресурса (URI) REST API
 
