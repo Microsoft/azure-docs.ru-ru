@@ -3,11 +3,11 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Общие сведения о Компьютерном зрении
+    - name: Что собой представляет Компьютерное зрение
       href: overview.md
     - name: Поддержка языков
       href: language-support.md
-    - name: Цены и ограничения
+    - name: Цены
       href: 'https://azure.microsoft.com/pricing/details/cognitive-services/computer-vision'
     - name: Новые возможности
       href: whats-new.md
@@ -180,21 +180,23 @@
               href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/computer-vision/context/context
 - name: Практические руководства
   items:
-    - name: Как настроить виртуальные сети
-      href: /azure/cognitive-services/cognitive-services-virtual-networks?context=/azure/cognitive-services/computer-vision/context/context
-    - name: Как настроить проверку подлинности AAD
-      href: /azure/cognitive-services/authentication?tabs=powershell?context=/azure/cognitive-services/computer-vision/context/context
-    - name: 'Как использовать ключи, управляемые клиентом'
-      href: /azure/cognitive-services/encryption/cognitive-services-encryption-keys-portal?context=/azure/cognitive-services/computer-vision/context/context
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: /azure/cognitive-services/cognitive-services-virtual-networks?context=/azure/cognitive-services/computer-vision/context/context
+        - name: "Использование проверки подлинности Azure\_AD"
+          href: /azure/cognitive-services/authentication?tabs=powershell?context=/azure/cognitive-services/computer-vision/context/context
 - name: Ресурсы
   items:
-    - name: Поддержка регионов
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
-    - name: Модули LEARN
-      href: /learn/paths/explore-computer-vision-microsoft-azure/
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/computer-vision/context/context
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
+    - name: Модули Microsoft Learn
+      href: /learn/paths/explore-computer-vision-microsoft-azure/
     - name: Обновления Azure
       href: 'https://azure.microsoft.com/updates/?product=cognitive-services'

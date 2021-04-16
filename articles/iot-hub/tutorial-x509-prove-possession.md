@@ -12,13 +12,12 @@ ms.custom:
 - mvc
 - 'Role: Cloud Development'
 - 'Role: Data Analytics'
-- devx-track-azurecli
-ms.openlocfilehash: 0eb91754c3c70a7b477d456158454f707a874207
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: b7740fa1f6a54dcfcc1181dddedcdd5fdb50402c
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105629595"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107378233"
 ---
 # <a name="tutorial-proving-possession-of-a-ca-certificate"></a>Руководство. Подтверждение владения сертификатом ЦС
 
@@ -46,9 +45,11 @@ ms.locfileid: "105629595"
 
     * Если вы используете скрипт Bash, предоставленный корпорацией Майкрософт, выполните командлет `./certGen.sh create_verification_certificate "75B86466DA34D2B04C0C4C9557A119687ADAE7D4732BDDB3"`, чтобы создать сертификат с именем `verification-code.cert.pem`. Дополнительные сведения см. в статье [Использование предоставленных Майкрософт скриптов для создания тестовых сертификатов](tutorial-x509-scripts.md).
 
-    * Если вы используете OpenSSL для создания сертификатов, сначала создайте закрытый ключ и запрос на подпись сертификата (CSR):
+    * Если вы используете OpenSSL для создания сертификатов, сначала создайте закрытый ключ, а затем запрос на подписывание сертификата (CSR):
 
       ```bash
+      $ openssl genpkey -out pop.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048
+
       $ openssl req -new -key pop.key -out pop.csr
 
       -----

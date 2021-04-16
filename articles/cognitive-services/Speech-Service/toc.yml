@@ -470,7 +470,7 @@
     - name: Настройка RHEL/CentOS 7
       href: how-to-configure-rhel-centos-7.md
       displayName: 'RHEL, CentOS 7, CentOS, Configure RHEL, Configure CentO'
-    - name: Контейнеры
+    - name: Использование контейнеров
       items:
         - name: Установка и запуск контейнеров службы "Речь"
           displayName: 'containers,install container,run container'
@@ -497,6 +497,12 @@
           href: how-to-migrate-from-bing-speech.md
         - name: Из API "Перевод речи"
           href: how-to-migrate-from-translator-speech-api.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/speech-service/context/context
+        - name: Использование ключей управляемых клиентом
+          href: speech-encryption-of-data-at-rest.md
 - name: Устройства
   items:
     - name: 'Документация по устройствам, подключаемым к службе "Речь"'
@@ -582,6 +588,12 @@
           href: 'https://speech.microsoft.com'
         - name: Создание приложения пользовательских команд с помощью Speech Studio
           href: ./quickstart-custom-commands-application.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/speech-service/context/context
     - name: Документация по Swagger
@@ -591,10 +603,6 @@
       href: sovereign-clouds.md
     - name: Калькулятор цен
       href: 'https://azure.microsoft.com/pricing/calculator/#cognitive-services'
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
-    - name: Шифрование
-      href: speech-encryption-of-data-at-rest.md
     - name: Стратегия развития Azure
       href: 'https://azure.microsoft.com/roadmap/?category=ai-machine-learning'
     - name: Конфиденциальность и файлы cookie

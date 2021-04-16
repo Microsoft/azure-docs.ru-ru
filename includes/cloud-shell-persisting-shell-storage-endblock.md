@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 11/09/2018
 ms.author: cynthn
 ms.openlocfilehash: c2ed33aea77b5478e8d17f6bd0213ef3e778b806
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "67185624"
 ---
 ## <a name="transfer-local-files-to-cloud-shell"></a>Передача локальных файлов в Cloud Shell
@@ -19,7 +19,7 @@ ms.locfileid: "67185624"
 ![Вывод списка локальных файлов](../articles/cloud-shell/media/persisting-shell-storage/download.png)
 1. На портале Azure перейдите к подключенному файловому ресурсу.
 2. Выберите целевой файл.
-3. Нажмите кнопку **скачать** .
+3. Нажмите кнопку **Скачать**.
 
 ### <a name="upload-files"></a>Отправка файлов
 

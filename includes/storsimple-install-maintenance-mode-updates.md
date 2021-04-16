@@ -5,16 +5,16 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: alkohli
 ms.openlocfilehash: 720288aff462b0590bb9da509096a9305b9b6cc7
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "67185322"
 ---
 #### <a name="to-install-maintenance-mode-updates-via-windows-powershell-for-storsimple"></a>Установка обновлений в режиме обслуживания через Windows PowerShell для StorSimple
 1. Если это еще не сделано, откройте последовательную консоль устройства и выберите вариант 1, **Войти с полным доступом**. 
 2. Задайте пароль. Пароль по умолчанию — **Password1**.
-3. В командной строке введите следующее:
+3. В командной строке введите:
    
      `Get-HcsUpdateAvailability` 
 4. Вы получите уведомление о том, что обновления доступны, и о том, являются они критическими или некритическими. Для применения критических обновлений необходимо перевести устройство в режим обслуживания. Инструкции см. в разделе [Шаг 2. Вход в режим обслуживания](../articles/storsimple/storsimple-update-device.md#step2).

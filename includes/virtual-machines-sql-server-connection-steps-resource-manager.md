@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: jroth
 ms.openlocfilehash: 51dc04fbef8d09878f33d7fda6f15039d3afba3e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96026194"
 ---
 ### <a name="configure-a-dns-label-for-the-public-ip-address"></a>Настройка имени DNS для общедоступного IP-адреса
@@ -44,6 +44,6 @@ ms.locfileid: "96026194"
 
 1. В поле **Пароль** введите пароль для этого пользователя.
 
-1. Нажмите кнопку **Подключить**.
+1. Нажмите кнопку **Соединить**.
 
     ![подключение SSMS](./media/virtual-machines-sql-server-connection-steps/rm-ssms-connect.png)
