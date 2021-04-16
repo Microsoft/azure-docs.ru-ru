@@ -4,13 +4,13 @@ description: В этом кратком руководстве описано, �
 ms.service: cognitive-services
 ms.subservice: language-understanding
 ms.topic: quickstart
-ms.date: 10/13/2020
-ms.openlocfilehash: 2048079a9b1eb5234d03c6fe57073228bd892d53
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.date: 03/29/2021
+ms.openlocfilehash: e0972998fad647c1c70be814cb7c13f14a6e1141
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95019166"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106277034"
 ---
 # <a name="quickstart-use-prebuilt-home-automation-app"></a>Краткое руководство. Использование предварительно созданного приложения для системы домашней автоматики
 
@@ -220,7 +220,5 @@ ms.locfileid: "95019166"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Эту конечную точку можно вызвать из кода:
-
 > [!div class="nextstepaction"]
-> [Руководство по вызову конечной точки LUIS с помощью кода](./luis-get-started-get-intent-from-rest.md).
+> [Итеративная разработка приложений для LUIS](./luis-concept-app-iteration.md)

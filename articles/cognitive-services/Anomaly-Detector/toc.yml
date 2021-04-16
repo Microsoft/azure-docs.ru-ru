@@ -7,9 +7,9 @@
       href: overview-multivariate.md
     - name: Что собой представляет Детектор аномалий (одномерная модель)?
       href: overview.md
-    - name: Цены и ограничения
+    - name: Цены
       href: 'https://aka.ms/adpricing'
-- name: Краткие руководства по работе с Детектором аномалий
+- name: Краткие руководства
   items:
     - name: Клиентские библиотеки для многомерной модели
       href: ./quickstarts/client-libraries-multivariate.md
@@ -43,6 +43,12 @@
               displayName: 'docker, container, apikey, billing, log, mount, run, pull, port'
             - name: Использование экземпляров контейнеров
               href: how-to/deploy-anomaly-detection-on-container-instances.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/anomaly-detector/context/context
+        - name: "Использование проверки подлинности Azure\_AD"
+          href: ../authentication.md?context=/azure/cognitive-services/anomaly-detector/context/context
 - name: Основные понятия
   items:
     - name: Рекомендации по работе с API Детектора аномалий (многомерная модель)
@@ -75,20 +81,22 @@
       href: 'https://go.microsoft.com/fwlink/?linkid=2090788'
 - name: Ресурсы
   items:
-    - name: Поддержка регионов
-      href: 'https://aka.ms/adregion'
-    - name: Модули Learn
-      href: 'https://docs.microsoft.com/learn/modules/intro-to-anomaly-detector/'
-    - name: Поддержка и справка
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://aka.ms/adregion'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
+    - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/anomaly-detector/context/context
+    - name: Модули Microsoft Learn
+      href: 'https://docs.microsoft.com/learn/modules/intro-to-anomaly-detector/'
     - name: Создаваемое пользователями содержимое
       href: user-generated-content.md
     - name: Присоединение к группе консультантов по Детектору аномалий в Microsoft Teams
       href: 'https://aka.ms/adadvisorsjoin'
     - name: Эталонная архитектура решения
       href: 'https://azure.microsoft.com/solutions/architecture/anomaly-detector-process/'
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Обновления Azure
       href: 'https://azure.microsoft.com/en-us/updates/?product=cognitive-services'
     - name: Технические блоги

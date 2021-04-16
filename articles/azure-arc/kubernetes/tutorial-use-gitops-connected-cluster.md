@@ -7,12 +7,12 @@ ms.service: azure-arc
 ms.topic: tutorial
 ms.date: 03/02/2021
 ms.custom: template-tutorial
-ms.openlocfilehash: 64299bd05e82cf6f5452cde3f3da5622eff25e56
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ec83d8d56ad67d8c64c6ac3151ca3819e88c0616
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102121479"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106449602"
 ---
 # <a name="tutorial-deploy-configurations-using-gitops-on-an-azure-arc-enabled-kubernetes-cluster"></a>Руководство. Развертывание конфигураций с помощью GitOps в кластерах Kubernetes с поддержкой Azure Arc 
 
@@ -30,6 +30,14 @@ ms.locfileid: "102121479"
 - Существующий подключенный кластер Kubernetes с поддержкой Azure Arc.
     - Если вы еще не подключили кластер, выполните инструкции из пошагового руководства [Подключение кластера Kubernetes с поддержкой Azure Arc](quickstart-connect-cluster.md).
 - Понимание преимуществ и архитектуры этой возможности. Дополнительные сведения см. в статье [Конфигурации и GitOps — Kubernetes с поддержкой Azure Arc](conceptual-configurations.md).
+- Установите расширение Azure CLI `k8s-configuration` версии 1.0.0 или более поздней версии:
+  
+  ```azurecli
+  az extension add --name k8s-configuration
+  ```
+
+    >[!TIP]
+    > Если расширение `k8s-configuration` уже установлено, его можно обновить до последней версии, выполнив следующую команду: `az extension update --name k8s-configuration`
 
 ## <a name="create-a-configuration"></a>Создание конфигурации
 
@@ -141,7 +149,7 @@ ms.locfileid: "102121479"
 >[!NOTE]
 >* Чарт для оператора Helm версии 1.2.0 и выше поддерживает закрытую проверку подлинности выпуска HTTPS Helm.
 >* Выпуск HTTPS Helm не поддерживается для кластеров, управляемых AKS.
->* Если вам нужно, чтобы Flux обращался к репозиторию Git через прокси-сервер, потребуется настроить для агентов Azure Arc параметры прокси-сервера. Дополнительные сведения см. в разделе [Подключение с использованием исходящего прокси-сервера](./connect-cluster.md#connect-using-an-outbound-proxy-server).
+>* Если вам нужно, чтобы Flux обращался к репозиторию Git через прокси-сервер, потребуется настроить для агентов Azure Arc параметры прокси-сервера. Дополнительные сведения см. в разделе [Подключение с использованием исходящего прокси-сервера](./quickstart-connect-cluster.md#connect-using-an-outbound-proxy-server).
 
 
 ## <a name="additional-parameters"></a>Дополнительные параметры

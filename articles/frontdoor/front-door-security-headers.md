@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 09/14/2020
 ms.author: duau
-ms.openlocfilehash: 1727193faa028a1d681f2a74df950afeb9570ec9
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e8462b98aee1d34b6c7a2ed671667223eca45a25
+ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91270055"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106551923"
 ---
 # <a name="tutorial-add-security-headers-with-rules-engine"></a>Руководство по Добавление заголовков безопасности с помощью обработчика правил
 
@@ -41,6 +41,9 @@ ms.locfileid: "91270055"
 1. Для параметра "Оператор" укажите значение **Добавить**, чтобы добавлять этот заголовок в ответ на все входящие запросы по указанному маршруту.
 
 1. Добавьте имя заголовка **Content-Security-Policy** и определите значения, которые будет принимать этот заголовок. В нашем примере это *"script-src 'self' https://apiphany.portal.azure-api.net."*
+
+   > [!NOTE]
+   > Длина значений заголовка ограничена 128 символами.
 
 1. Завершив добавление всех правил, которые нужны для вашей конфигурации, обязательно перейдите по нужному маршруту и сопоставьте конфигурацию обработчика правил с правилом для этого маршрута. Этот шаг позволяет включить настроенное правило. 
 

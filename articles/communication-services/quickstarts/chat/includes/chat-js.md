@@ -10,18 +10,18 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 9f62f262e1baa70982e667379a9bf4357197ecb4
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 322f54e4fa2e8096f68d5bbc216032a5b4e53c22
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495476"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105726697"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
 
 - Создайте учетную запись Azure с активной подпиской. Дополнительные сведения см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- Установите [Node.js](https://nodejs.org/en/download/), активную версию LTS и версию Maintenance LTS (рекомендуются версии 8.11.1 и 10.14.1).
+- Установите [Node.js](https://nodejs.org/en/download/) (версии Active LTS и Maintenance LTS).
 - Создайте ресурс Служб коммуникации Azure. Дополнительные сведения см. в статье [Краткое руководство по созданию ресурсов Служб коммуникации и управлению ими](../../create-communication-resource.md). Для работы с этим кратким руководством необходимо записать **конечную точку**.
 - Создайте *трех* пользователей ACS и выдайте им маркер доступа пользователя (подробнее о [маркере доступа пользователя](../../access-tokens.md)). Обязательно задайте для области значение **chat** и **запишите строку маркера, а также строку userId**. Полная демонстрация создает поток с двумя начальными участниками, а затем добавляет третьего участника в поток.
 
@@ -43,7 +43,7 @@ npm init -y
 
 ### <a name="install-the-packages"></a>Установка пакетов
 
-Используйте команду `npm install`, чтобы установить следующие клиентские библиотеки Служб коммуникации для JavaScript.
+Используйте команду `npm install`, чтобы установить указанные ниже пакеты SDK Служб коммуникации для JavaScript.
 
 ```console
 npm install @azure/communication-common --save
@@ -66,7 +66,28 @@ npm install @azure/communication-chat --save
 npm install webpack webpack-cli webpack-dev-server --save-dev
 ```
 
-Создайте файл **index.html** в корневом каталоге проекта. Мы будем использовать этот файл в качестве шаблона для добавления возможностей чата с помощью клиентской библиотеки чата Служб коммуникации Azure для JavaScript.
+Создайте файл `webpack.config.js` в корневом каталоге. Скопируйте в этот файл следующую конфигурацию.
+
+```
+module.exports = {
+  entry: "./client.js",
+  output: {
+    filename: "bundle.js"
+  },
+  devtool: "inline-source-map",
+  mode: "development"
+}
+```
+
+Добавьте скрипт `start` в `package.json`, который будет использоваться для запуска приложения. Внутри раздела `scripts` файла `package.json` добавьте следующее:
+
+```
+"scripts": {
+  "start": "webpack serve --config ./webpack.config.js"
+}
+```
+
+Создайте файл **index.html** в корневом каталоге проекта. Мы будем использовать этот файл в качестве шаблона для добавления возможностей чата с помощью пакета SDK чата Служб коммуникации Azure для JavaScript.
 
 ```html
 <!DOCTYPE html>
@@ -90,7 +111,7 @@ npm install webpack webpack-cli webpack-dev-server --save-dev
 
 Маркеры доступа пользователей позволяют создавать клиентские приложения, которые напрямую проходят проверку подлинности в Службах коммуникации Azure. В этом кратком руководстве не описывается создание уровня служб для управления маркерами для приложения чата. Дополнительные сведения об архитектуре чата и [маркерах доступа пользователей ](../../access-tokens.md) см. в разделе, посвященном [основным понятиям чата](../../../concepts/chat/concepts.md).
 
-В файле **client.js** укажите конечную точку и маркер доступа из приведенного ниже кода, чтобы добавить возможности чата с помощью клиентской библиотеки чата Служб коммуникации Azure для JavaScript.
+В файле **client.js** укажите конечную точку и маркер доступа из приведенного ниже кода, чтобы добавить возможности чата с помощью пакета SDK чата Служб коммуникации Azure для JavaScript.
 
 ```JavaScript
 
@@ -111,9 +132,9 @@ console.log('Azure Communication Chat client created!');
 
 ### <a name="run-the-code"></a>Выполнение кода
 
-Чтобы создать и запустить приложение, используйте `webpack-dev-server`. Выполните следующую команду, чтобы создать пакет узла приложения на локальном веб-сервере:
+Выполните следующую команду, чтобы создать пакет узла приложения на локальном веб-сервере:
 ```console
-npx webpack-dev-server --entry ./client.js --output bundle.js --debug --devtool inline-source-map
+npm run start
 ```
 Откройте веб-браузер и перейдите по адресу http://localhost:8080/.
 В консоли средств разработчика в браузере должно отобразиться следующее:
@@ -123,7 +144,7 @@ Azure Communication Chat client created!
 ```
 
 ## <a name="object-model"></a>Объектная модель
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки чата Служб коммуникации для JavaScript.
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK для чата Служб коммуникации для JavaScript.
 
 | Имя                                   | Описание                                                                                                                                                                           |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -144,35 +165,37 @@ Azure Communication Chat client created!
 
 ```JavaScript
 async function createChatThread() {
-    let createThreadRequest = {
-        topic: 'Preparation for London conference',
-        participants: [{
-                    id: { communicationUserId: '<USER_ID_FOR_JACK>' },
-                    displayName: 'Jack'
-                }, {
-                    id: { communicationUserId: '<USER_ID_FOR_GEETA>' },
-                    displayName: 'Geeta'
-                }]
-    };
-    let createChatThreadResult = await chatClient.createChatThread(createThreadRequest);
-    let threadId = createChatThreadResult.chatThread.id;
-    return threadId;
-    }
+  const createChatThreadRequest = {
+    topic: "Hello, World!"
+  };
+  const createChatThreadOptions = {
+    participants: [
+      {
+        id: '<USER_ID>',
+        displayName: '<USER_DISPLAY_NAME>'
+      }
+    ]
+  };
+  const createChatTtreadResult = await chatClient.createChatThread(
+    createChatThreadRequest,
+    createChatThreadOptions
+  );
+  const threadId = createChatThreadResult.chatThread.id;
+  return threadId;
+}
 
 createChatThread().then(async threadId => {
-    console.log(`Thread created:${threadId}`);
-    // PLACEHOLDERS
-    // <CREATE CHAT THREAD CLIENT>
-    // <RECEIVE A CHAT MESSAGE FROM A CHAT THREAD>
-    // <SEND MESSAGE TO A CHAT THREAD>
-    // <LIST MESSAGES IN A CHAT THREAD>
-    // <ADD NEW PARTICIPANT TO THREAD>
-    // <LIST PARTICIPANTS IN A THREAD>
-    // <REMOVE PARTICIPANT FROM THREAD>
-    });
+  console.log(`Thread created:${threadId}`);
+  // PLACEHOLDERS
+  // <CREATE CHAT THREAD CLIENT>
+  // <RECEIVE A CHAT MESSAGE FROM A CHAT THREAD>
+  // <SEND MESSAGE TO A CHAT THREAD>
+  // <LIST MESSAGES IN A CHAT THREAD>
+  // <ADD NEW PARTICIPANT TO THREAD>
+  // <LIST PARTICIPANTS IN A THREAD>
+  // <REMOVE PARTICIPANT FROM THREAD>
+  });
 ```
-
-Замените значения **USER_ID_FOR_JACK** и **USER_ID_FOR_GEETA** идентификаторами пользователей, полученными при создании пользователей и маркеров (см. подробнее о [маркерах доступа пользователей](../../access-tokens.md)).
 
 При обновлении вкладки браузера в консоли должны отобразиться следующие сведения:
 ```console
@@ -193,6 +216,18 @@ console.log(`Chat Thread client for threadId:${threadId}`);
 Chat Thread client for threadId: <threadId>
 ```
 
+## <a name="list-all-chat-threads"></a>Перечисление всех потоков чата
+
+Метод `listChatThreads` возвращает объект `PagedAsyncIterableIterator` типа `ChatThreadItem`. Его можно использовать для перечисления всех потоков чата.
+Итератор `[ChatThreadItem]` является ответом, возвращенным из списка потоков.
+
+```JavaScript
+const threads = chatClient.listChatThreads();
+for await (const thread of threads) {
+   // your code here
+}
+```
+
 ## <a name="send-a-message-to-a-chat-thread"></a>Отправка сообщения в поток чата
 
 Используйте метод `sendMessage` для отправки сообщения в поток, определяемый с помощью threadId.
@@ -209,17 +244,17 @@ Chat Thread client for threadId: <threadId>
 `SendChatMessageResult` — ответ, возвращаемый при отправке сообщения. Содержит идентификатор, который является уникальным идентификатором сообщения.
 
 ```JavaScript
-let sendMessageRequest =
+const sendMessageRequest =
 {
-    content: 'Hello Geeta! Can you share the deck for the conference?'
+  content: 'Hello Geeta! Can you share the deck for the conference?'
 };
 let sendMessageOptions =
 {
-    senderDisplayName : 'Jack',
-    type: 'text'
+  senderDisplayName : 'Jack',
+  type: 'text'
 };
-let sendChatMessageResult = await chatThreadClient.sendMessage(sendMessageRequest, sendMessageOptions);
-let messageId = sendChatMessageResult.id;
+const sendChatMessageResult = await chatThreadClient.sendMessage(sendMessageRequest, sendMessageOptions);
+const messageId = sendChatMessageResult.id;
 ```
 
 Добавьте этот код вместо комментария `<SEND MESSAGE TO A CHAT THREAD>` в файл **client.js**, обновите вкладку браузера и проверьте консоль.
@@ -229,15 +264,15 @@ Message sent!, message id:<number>
 
 ## <a name="receive-chat-messages-from-a-chat-thread"></a>Получение сообщений из потока чата
 
-С помощью оповещений в реальном времени можно подписываться на прослушивание новых входящих сообщений и обновлять текущие сообщения в памяти соответствующим образом. Службы коммуникации Azure поддерживают [список событий, на которые можно подписываться](../../../concepts/chat/concepts.md#real-time-signaling).
+С помощью оповещений в реальном времени можно подписываться на прослушивание новых входящих сообщений и обновлять текущие сообщения в памяти соответствующим образом. Службы коммуникации Azure поддерживают [список событий, на которые можно подписываться](../../../concepts/chat/concepts.md#real-time-notifications).
 
 ```JavaScript
 // open notifications channel
 await chatClient.startRealtimeNotifications();
 // subscribe to new notification
 chatClient.on("chatMessageReceived", (e) => {
-    console.log("Notification chatMessageReceived!");
-    // your code here
+  console.log("Notification chatMessageReceived!");
+  // your code here
 });
 
 ```
@@ -248,32 +283,16 @@ chatClient.on("chatMessageReceived", (e) => {
 
 ```JavaScript
 
-let pagedAsyncIterableIterator = await chatThreadClient.listMessages();
-let nextMessage = await pagedAsyncIterableIterator.next();
-    while (!nextMessage.done) {
-        let chatMessage = nextMessage.value;
-        console.log(`Message :${chatMessage.content}`);
-        // your code here
-        nextMessage = await pagedAsyncIterableIterator.next();
-    }
+const messages = chatThreadClient.listMessages();
+for await (const message of messages) {
+   // your code here
+}
 
 ```
 Добавьте этот код вместо комментария `<LIST MESSAGES IN A CHAT THREAD>` в файл **client.js**.
 Обновите вкладку. В консоли вы должны увидеть список сообщений, отправленных в этом потоке чата.
 
-
-`listMessages` возвращает последнюю версию сообщения, включая все изменения или удаления, произошедшие с сообщением, с помощью `updateMessage` и `deleteMessage`.
-Для удаленных сообщений `chatMessage.deletedOn` возвращает значение даты и времени, указывающее, когда это сообщение было удалено. Для измененных сообщений `chatMessage.editedOn` возвращает значение даты и времени, указывающее, когда это сообщение было изменено. Доступ к исходному времени создания сообщения можно получить с помощью `chatMessage.createdOn`, который можно использовать для упорядочения сообщений.
-
-`listMessages` возвращает различные типы сообщений, которые могут быть идентифицированы с помощью `chatMessage.type`. Это следующие типы:
-
-- `Text`. Обычное сообщение чата, отправленное участником потока.
-
-- `ThreadActivity/TopicUpdate`: системное сообщение, указывающее на изменение темы.
-
-- `ThreadActivity/AddParticipant`. Системное сообщение о том, что один или несколько участников были добавлены в поток чата.
-
-- `ThreadActivity/RemoveParticipant`. Системное сообщение о том, что участник был удален из потока чата.
+`listMessages` возвращает различные типы сообщений, которые могут быть идентифицированы с помощью `chatMessage.type`. 
 
 Дополнительные сведения см. в разделе о [типах сообщений](../../../concepts/chat/concepts.md#message-types).
 
@@ -290,14 +309,14 @@ let nextMessage = await pagedAsyncIterableIterator.next();
 
 ```JavaScript
 
-let addParticipantsRequest =
+const addParticipantsRequest =
 {
-    participants: [
-        {
-            id: { communicationUserId: '<NEW_PARTICIPANT_USER_ID>' },
-            displayName: 'Jane'
-        }
-    ]
+  participants: [
+    {
+      id: { communicationUserId: '<NEW_PARTICIPANT_USER_ID>' },
+      displayName: 'Jane'
+    }
+  ]
 };
 
 await chatThreadClient.addParticipants(addParticipantsRequest);
@@ -307,16 +326,10 @@ await chatThreadClient.addParticipants(addParticipantsRequest);
 
 ## <a name="list-users-in-a-chat-thread"></a>Вывод списка пользователей в потоке чата
 ```JavaScript
-async function listParticipants() {
-   let pagedAsyncIterableIterator = await chatThreadClient.listParticipants();
-   let next = await pagedAsyncIterableIterator.next();
-   while (!next.done) {
-      let user = next.value;
-      console.log(`User :${user.displayName}`);
-      next = await pagedAsyncIterableIterator.next();
-   }
+const participants = chatThreadClient.listParticipants();
+for await (const participant of participants) {
+   // your code here
 }
-await listParticipants();
 ```
 Добавьте этот код вместо комментария `<LIST PARTICIPANTS IN A THREAD>` в файл **client.js**, обновите вкладку браузера и проверьте консоль. Вы увидите сведения о пользователях чата:
 

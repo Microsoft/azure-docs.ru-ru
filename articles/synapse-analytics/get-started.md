@@ -9,13 +9,13 @@ ms.reviewer: jrasnick
 ms.service: synapse-analytics
 ms.subservice: workspace
 ms.topic: tutorial
-ms.date: 03/18/2021
-ms.openlocfilehash: 0153797445e2a3f55baa53e49c06ee5c82e3bebe
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.date: 04/04/2021
+ms.openlocfilehash: d31634809786ca4e62b156b6659289012e27a560
+ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104606231"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106387015"
 ---
 # <a name="get-started-with-azure-synapse-analytics"></a>Начало работы с Azure Synapse Analytics
 
@@ -32,3 +32,4 @@ ms.locfileid: "104606231"
 * [Шаг 7. Визуализация данных с помощью Power BI](get-started-visualize-power-bi.md)
 * [Шаг 8. Мониторинг рабочей области Synapse](get-started-monitor.md)
 * [Шаг 9. Изучение центра знаний Synapse](get-started-knowledge-center.md)
+* [Шаг 10. Добавление администратора](get-started-add-admin.md)
