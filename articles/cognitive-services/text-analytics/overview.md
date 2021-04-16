@@ -8,16 +8,16 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: text-analytics
 ms.topic: overview
-ms.date: 03/09/2021
+ms.date: 03/29/2021
 ms.author: aahi
 keywords: интеллектуальный анализ текста, анализ тональности, анализ текста
 ms.custom: cog-serv-seo-aug-2020
-ms.openlocfilehash: 7fcc030e3c63c24fa255e578c2d8aaf1b466e99c
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b586478b6b3943fb0154ed6c50bade6fd8b08b76
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104598972"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106219507"
 ---
 # <a name="what-is-the-text-analytics-api"></a>Что такое API "Анализ текста"?
 
@@ -26,6 +26,12 @@ API Анализа текста — это облачная служба, ко�
 API — это компонент [Microsoft Cognitive Services](../index.yml), коллекции алгоритмов машинного обучения и ИИ в облаке для использования в проектах по разработке. Вы можете использовать эти функции с REST API [версии 3.0](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-V3-0/) или [версии 3.1-preview](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-3/) либо с [клиентской библиотекой](quickstarts/client-libraries-rest-api.md).
 
 > [!VIDEO https://channel9.msdn.com/Shows/AI-Show/Whats-New-in-Text-Analytics-Opinion-Mining-and-Async-API/player]
+
+Эта документация включает статьи следующих видов:
+* [Краткие руководства](./quickstarts/client-libraries-rest-api.md) — пошаговые инструкции, которые помогут вам вызвать службу и быстро получить результат. 
+* [Руководства](./how-tos/text-analytics-how-to-call-api.md) — содержат инструкции для более специфического или специализированного использования службы.
+* [Статьи с основными понятиями](text-analytics-user-scenarios.md) — здесь подробно описываются функциональность и возможности службы.
+* [Учебники](./tutorials/tutorial-power-bi-key-phrases.md) — расширенные руководства, которые описывают использование службы в качестве компонента бизнес-решений.
 
 ## <a name="sentiment-analysis"></a>Анализ мнений
 
