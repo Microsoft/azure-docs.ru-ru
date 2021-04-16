@@ -1,19 +1,19 @@
 ---
 title: Встроенные определения политик для Azure API для FHIR
 description: Здесь приведены встроенные определения политик в Политике Azure для Azure API для FHIR. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 author: matjazl
 ms.author: matjazl
 ms.service: healthcare-apis
 ms.subservice: fhir
 ms.topic: reference
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 9bb134ac64c47b7a814947f03f0b7e5b2fc475a8
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 292f4115c6e38dcad8cdc389010c53aba2d9292d
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106091565"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107501559"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-api-for-fhir"></a>Встроенные определения политик в Политике Azure для Azure API для FHIR
 

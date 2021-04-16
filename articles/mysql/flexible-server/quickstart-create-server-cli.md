@@ -8,12 +8,12 @@ ms.devlang: azurecli
 ms.topic: quickstart
 ms.date: 9/21/2020
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 65cc3d2fdcbdea934e80a5f0012ca4f3da157ca3
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a63c6f074178794db38b47950e176dd729344a54
+ms.sourcegitcommit: bfa7d6ac93afe5f039d68c0ac389f06257223b42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94843440"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106492734"
 ---
 # <a name="quickstart-create-an-azure-database-for-mysql-flexible-server-using-azure-cli"></a>Краткое руководство. Создание Базы данных Azure для MySQL (Гибкий сервер) с помощью Azure CLI
 
@@ -40,7 +40,7 @@ az login
 
 Выберите конкретную подписку вашей учетной записи, выполнив команду [az account set](/cli/azure/account#az-account-set). Запишите значение **идентификатора** из выходных данных команды **az login**, чтобы использовать его в команде в качестве значения аргумента **подписки**. Если вы используете несколько подписок, выберите соответствующую, в которой за ресурс будет взиматься плата. Чтобы отобразить все ваши подписки, выполните команду [az account list](/cli/azure/account#az-account-list).
 
-```azurecli
+```azurecli-interactive
 az account set --subscription <subscription id>
 ```
 
@@ -54,7 +54,7 @@ az group create --name myresourcegroup --location eastus2
 
 Создайте гибкий сервер с помощью команды `az mysql flexible-server create`. Сервер может управлять несколькими базами данных. Следующая команда создает сервер, используя параметры и значения по умолчанию для [локального контекста](/cli/azure/local-context) Azure CLI: 
 
-```azurecli
+```azurecli-interactive
 az mysql flexible-server create
 ```
 
@@ -95,6 +95,13 @@ Make a note of your password. If you forget, you would have to reset your passwo
 ```
 
 Если вы хотите изменить значения по умолчанию, воспользуйтесь [справочной документацией](/cli/azure/mysql/flexible-server) по Azure CLI, где описаны все настраиваемые параметры интерфейса командной строки. 
+
+## <a name="create-a-database"></a>Создание базы данных
+Выполните следующую команду, чтобы создать базу данных **newdatabase**, если она еще не создана.
+
+```azurecli-interactive
+az mysql flexible-server db create -d newdatabase
+```
 
 > [!NOTE]
 > Подключитесь к базе данных Azure для MySQL через порт 3306. Если вы пытаетесь подключиться из корпоративной сети, исходящий трафик через порт 3306 может быть запрещен. В таком случае вы не сможете подключиться к серверу. Для этого ваш ИТ-отдел должен открыть порт 3306.
@@ -140,17 +147,83 @@ az mysql flexible-server show --resource-group myresourcegroup --name mydemoserv
 }
 ```
 
+## <a name="connect-and-test-the-connection-using-azure-cli"></a>Подключение и проверка подключения с помощью Azure CLI
+
+Гибкий сервер базы данных Azure для MySQL позволяет подключаться к серверу MySQL с помощью команды Azure CLI ```az mysql flexible-server connect```. Эта команда позволяет проверить возможность подключения к серверу базы данных, быстро создать базу данных для начала работы и выполнить запросы непосредственно к серверу без необходимости установки mysql.exe или MySQL Workbench.  Вы можете также запустить команду в интерактивном режиме, чтобы выполнить несколько запросов.
+
+Выполните следующий скрипт, чтобы протестировать и проверить подключение к базе данных из окружения разработки.
+
+```azurecli-interactive
+az mysql flexible-server connect -n <servername> -u <username> -p <password> -d <databasename>
+```
+**Пример**.
+```azurecli-interactive
+az mysql flexible-server connect -n mysqldemoserver1 -u dbuser -p "dbpassword" -d newdatabase
+```
+Если подключение выполнено успешно, отобразятся следующие выходные данные:
+
+```output
+Command group 'mysql flexible-server' is in preview and under development. Reference and support levels: https://aka.ms/CLI_refstatus
+Connecting to newdatabase database.
+Successfully connected to mysqldemoserver1.
+```
+Если установить подключение не удалось, воспользуйтесь приведенными ниже решениями:
+- Проверьте, открыт ли порт 3306 на клиентском компьютере.
+- Проверьте, правильно ли указаны имя пользователя и пароль администратора сервера.
+- Проверьте, настроено ли правило брандмауэра для клиентского компьютера.
+- Если вы настроили сервер с закрытым доступом в виртуальной сети, убедитесь, что клиентский компьютер находится в той же виртуальной сети.
+
+Используйте следующую команду, чтобы выполнить один запрос с помощью аргумента ```--querytext```, ```-q```.
+
+```azurecli-interactive
+az mysql flexible-server connect -n <server-name> -u <username> -p "<password>" -d <database-name> --querytext "<query text>"
+```
+
+**Пример**.
+```azurecli-interactive
+az mysql flexible-server connect -n mysqldemoserver1 -u dbuser -p "dbpassword" -d newdatabase -q "select * from table1;" --output table
+```
+Дополнительные сведения об использовании команды ```az mysql flexible-server connect``` см. в документации по [подключению и запросам](connect-azure-cli.md).
+
 ## <a name="connect-using-mysql-command-line-client"></a>Подключение с помощью клиента командной строки mysql
 
-Так как вы создали гибкий сервер в режиме *Закрытый доступ (интеграция с виртуальной сетью)* , к этому серверу придется подключаться из другого ресурса в той же виртуальной сети. Для этого вы можете создать виртуальную машину и добавить ее к созданной виртуальной сети. 
+Если вы создали гибкий сервер с закрытым доступом (интеграция с виртуальной сетью), к этому серверу нужно будет подключаться с другого ресурса в той же виртуальной сети. Например, можно создать виртуальную машину и добавить ее в виртуальную сеть, созданную для гибкого сервера. Дополнительные сведения см. в [документации по настройке частного доступа](how-to-manage-virtual-network-portal.md).
 
-После создания виртуальной машины вы сможете подключиться к ней по протоколу SSH и установить популярное клиентское средство командной строки **[mysql.exe](https://dev.mysql.com/downloads/)** .
+Если вы создали гибкий сервер с открытым доступом (разрешенные IP-адреса), вы можете добавить локальный IP-адрес в список правил брандмауэра на этом сервере. Пошаговые инструкции см. в [документации по созданию и администрированию правил брандмауэра](how-to-manage-firewall-portal.md).
 
-Создайте подключение из mysql.exe, используя приведенную ниже команду. Замените в ней предложенные значения реальными значениями имени сервера и пароля. 
+Вы можете использовать [mysql.exe](https://dev.mysql.com/doc/refman/8.0/en/mysql.html) или [MySQL Workbench](./connect-workbench.md), чтобы подключиться к серверу из локальной среды. Гибкий сервер базы данных Azure для MySQL поддерживает подключение службы MySQL к клиентским приложениям с помощью протокола TLS, ранее известного как SSL. TLS — это стандартный протокол, обеспечивающий шифрование сетевых подключений между сервером базы данных и клиентскими приложениями, что позволяет обеспечивать соответствие требованиям. Для подключения к гибкому серверу MySQL потребуется скачать [общедоступный SSL-сертификат](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) для проверки центра сертификации. Дополнительные сведения о зашифрованных подключениях или отключении SSL см. в статье [Подключение к базе данных Azure для MySQL — гибкому серверу с зашифрованными подключениями](how-to-connect-tls-ssl.md).
+
+В следующем примере показано, как подключиться к серверу PostgreSQL с помощью служебной программы командной строки psql, Сначала необходимо установить командную строку MySQL, если она еще не установлена. Загрузите сертификат DigiCertGlobalRootCA, необходимый для SSL-соединений. Для принудительной проверки сертификата TLS/SSL используйте параметр--SSL-Mode = REQUIRED строки подключения. Передайте путь к локальному файлу сертификата параметру--SSL-CA. Замените в ней предложенные значения реальными значениями имени сервера и пароля.
 
 ```bash
- mysql -h mydemoserver.mysql.database.azure.com -u mydemouser -p
+sudo apt-get install mysql-client
+wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
+mysql -h mydemoserver.mysql.database.azure.com -u mydemouser -p --ssl-mode=REQUIRED --ssl-ca=DigiCertGlobalRootCA.crt.pem
 ```
+
+Если вы выполнили подготовку гибкого сервера с использованием **открытого доступа**, вы также можете использовать [Azure Cloud Shell](https://shell.azure.com/bash) для подключения к гибкому серверу с помощью предустановленного клиента MySQL, как показано ниже:
+
+Чтобы использовать Azure Cloud Shell для подключения к гибкому серверу, вам потребуется разрешить сетевой доступ из Azure Cloud Shell к гибкому серверу. Для этого можно перейти в колонку **Сеть** на портале Azure для гибкого сервера MySQL, установить флажок для параметра "Разрешить открытый доступ от любой службы Azure к этому серверу" в разделе **Брандмауэр** и нажать кнопку "Сохранить".
+
+ > :::image type="content" source="./media/quickstart-create-server-portal/allow-access-to-any-azure-service.png" alt-text="Снимок экрана, показывающий, как разрешить Azure Cloud Shell доступ к гибкому серверу MySQL для настройки сети общего доступа.":::
+ 
+ 
+> [!NOTE]
+> Устанавливайте флажок **Разрешить открытый доступ от любой службы Azure к этому серверу** только для целей разработки и тестирования. Он настраивает брандмауэр таким образом, чтобы разрешить подключения от IP-адресов, выделенных любой службе или ресурсу Azure, включая подключения из подписок других клиентов.
+
+Щелкните **Попробовать**, чтобы запустить Azure Cloud Shell и воспользоваться следующими командами для подключения к гибкому серверу. В этой команде укажите фактические значения имени сервера, имени пользователя и пароля. 
+
+```azurecli-interactive
+wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
+mysql -h mydemoserver.mysql.database.azure.com -u mydemouser -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
+```
+> [!IMPORTANT]
+> При подключении к гибкому серверу с помощью Azure Cloud Shell вам потребуется использовать параметр --ssl=true, а не --ssl-mode=REQUIRED.
+> Основная причина — Azure Cloud Shell поставляется с предварительно установленным клиентом mysql.exe из дистрибутива MariaDB, для которого требуется параметр --ssl, а для клиента MySQL из Oracle — параметр --ssl-mode.
+
+Если вы видите следующее сообщение об ошибке при подключении к гибкому серверу (после выполнения команды ранее), вы не настроили правило брандмауэра с помощью упомянутого ранее параметра "Разрешить общий доступ от любой службы Azure к этому серверу" или не сохранили этот параметр. Настройте брандмауэр и повторите попытку.
+
+ОШИБКА 2002 (HY000): Can't connect to MySQL server on <servername> (115) (Не удалось подключиться к серверу MySQL по адресу)
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
@@ -168,5 +241,7 @@ az mysql flexible-server delete --resource-group myresourcegroup --name mydemose
 
 ## <a name="next-steps"></a>Следующие шаги
 
-> [!div class="nextstepaction"]
->[Создание веб-приложения PHP (Laravel) с использованием MySQL](tutorial-php-database-app.md)
+>[!div class="nextstepaction"]
+> [Подключение и запрос с помощью Azure CLI](connect-azure-cli.md)
+> [Подключение к базе данных Azure для MySQL — гибкому серверу с зашифрованными подключениями](how-to-connect-tls-ssl.md)
+> [Создание веб-приложения PHP (Laravel) с помощью MySQL](tutorial-php-database-app.md)

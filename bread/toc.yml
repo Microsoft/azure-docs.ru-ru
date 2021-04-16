@@ -770,6 +770,9 @@
         - name: Разработка
           tocHref: /azure/security/develop/
           topicHref: /azure/security/develop/
+        - name: Journey
+          tocHref: /azure/security/journey
+          topicHref: /azure/security/journey
         - name: Тесты производительности
           tocHref: /azure/security/benchmarks/
           topicHref: /azure/security/benchmarks/

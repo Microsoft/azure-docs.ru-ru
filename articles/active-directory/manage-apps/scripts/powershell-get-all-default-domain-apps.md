@@ -3,7 +3,7 @@ title: Пример PowerShell. Приложения Application Proxy, испо
 description: Пример PowerShell, который выводит данные обо всех приложениях Azure Active Directory (Azure AD) Application Proxy, использующих домены по умолчанию (.msappproxy.net).
 services: active-directory
 author: kenwith
-manager: daveba
+manager: mtillman
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.workload: identity
@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
-ms.openlocfilehash: 84fbdbb05c0c928c2d4e47e1f2626b5598661a10
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 02216711efdc88f3a5255bcdc67074da3f768534
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102551034"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107377961"
 ---
 # <a name="get-all-application-proxy-apps-using-default-domains-msappproxynet"></a>Получение всех приложений прокси приложения для доменов по умолчанию (.msappproxy.net)
 

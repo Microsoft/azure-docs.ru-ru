@@ -2,26 +2,29 @@
 title: включить файл
 description: включить файл
 services: azure-communication-services
-author: mikben
-manager: mikben
+author: ddematheu2
+manager: chpalm
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
 ms.date: 9/1/2020
 ms.topic: include
 ms.custom: include file
-ms.author: mikben
-ms.openlocfilehash: e8ef354480c69fa9b0b5407c88209b368485127d
-ms.sourcegitcommit: 91361cbe8fff7c866ddc4835251dcbbe2621c055
+ms.author: dademath
+ms.openlocfilehash: c6e8be5462e0caffec7a1c88dae54f3f818ec323
+ms.sourcegitcommit: bfa7d6ac93afe5f039d68c0ac389f06257223b42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "105729826"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106498766"
 ---
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include-android-ios.md)]
+
+
 **Пример группового вызова для Android** Служб коммуникации Azure показывает, как с помощью пакета SDK для вызовов Служб коммуникации для Android можно создавать групповые вызовы с поддержкой голоса и видео. В этом кратком руководстве описывается, как настроить и запустить этот пример. Для понимания контекста приводятся общие сведения о примере.
 
 ## <a name="download-code"></a>Скачать код
 
-Итоговый код для этого краткого руководства можно найти на сайте [GitHub](https://github.com/Azure-Samples/communication-services-android-calling-hero).
+Найдите проект для этого примера на сайте [GitHub](https://github.com/Azure-Samples/communication-services-android-calling-hero). Версию примера с [взаимодействием между командами](../../concepts/teams-interop.md) можно найти в отдельной [ветви](https://github.com/Azure-Samples/communication-services-android-calling-hero/tree/feature/teams_interop).
 
 ## <a name="overview"></a>Обзор
 
