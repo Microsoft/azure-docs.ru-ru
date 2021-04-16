@@ -36,16 +36,15 @@
     - name: Использование контейнера Распознавания лиц
       items:
         - name: Документация по контейнерам Cognitive Services
-          href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/computer-vision/context/context
+          href: /azure/cognitive-services/containers/index?context=/azure/cognitive-services/face/context/context
         - name: Обзор контейнеров
-          href: /azure/cognitive-services/cognitive-services-container-support?context=/azure/cognitive-services/computer-vision/context/context
+          href: /azure/cognitive-services/cognitive-services-container-support?context=/azure/cognitive-services/face/context/context
         - name: Установка и запуск контейнеров
           href: face-how-to-install-containers.md
         - name: Настройка контейнеров
           href: face-resource-container-config.md
         - name: Использование экземпляров контейнеров
-          maintainContext: true
-          href: ../containers/azure-container-instance-recipe.md
+          href: /azure/cognitive-services/containers/azure-container-instance-recipe?context=/azure/cognitive-services/face/context/context
 - name: Основные понятия
   items:
     - name: Определение лиц
@@ -54,8 +53,6 @@
       href: concepts/face-recognition.md
 - name: Учебники
   items:
-    - name: Создание приложения для распознавания лиц
-      href: Tutorials/FaceAPIinCSharpTutorial.md
     - name: Добавление пользователей в службу "Распознавание лиц"
       items:
         - name: Рекомендации по добавлению пользователей

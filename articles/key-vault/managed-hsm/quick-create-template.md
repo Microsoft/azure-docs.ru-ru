@@ -7,15 +7,15 @@ tags: azure-resource-manager
 ms.service: key-vault
 ms.subservice: managed-hsm
 ms.topic: quickstart
-ms.custom: mvc, devx-track-azurecli
+ms.custom: mvc
 ms.date: 09/15/2020
 ms.author: mbaldwin
-ms.openlocfilehash: d9fb9e0221ad6a5749899c89bbd9dc5631e7a91c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: b2cd8578599fe1e80044f1eb388cddae7a292166
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102213272"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107376874"
 ---
 # <a name="quickstart-create-an-key-vault-managed-hsm-using-an-azure-resource-manager-template"></a>Краткое руководство. Создание управляемого устройства HSM в Key Vault с помощью шаблона Azure Resource Manager
 

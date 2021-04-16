@@ -1,18 +1,18 @@
 ---
 title: Включение интегрированной защиты рабочих нагрузок в Центре безопасности Azure
-description: Узнайте, как включить Azure Defender для расширения защиты в Центра безопасности Azure для гибридных и многооблачных ресурсов.
+description: Узнайте, как включить Azure Defender для расширения защиты Центра безопасности Azure для гибридных и многооблачных ресурсов.
 author: memildin
 ms.author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: quickstart
 ms.date: 02/24/2021
-ms.openlocfilehash: 6496b18c8c22cbbd4fd3344736a4b38b7a998890
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 7124014821c79fa37aa04da8909e3b4ac3bcb4fb
+ms.sourcegitcommit: bfa7d6ac93afe5f039d68c0ac389f06257223b42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102108145"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106492500"
 ---
 # <a name="quickstart-enable-azure-defender"></a>Краткое руководство. Включение Azure Defender
 
