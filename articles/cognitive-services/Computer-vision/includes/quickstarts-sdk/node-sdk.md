@@ -1,6 +1,6 @@
 ---
-title: Краткое руководство. Клиентская библиотека службы "Компьютерное зрение" для Node.js
-description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой API "Компьютерное зрение" для Node.js.
+title: Краткое руководство. Клиентская библиотека оптического распознавания символов для Node.js
+description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой оптического распознавания символов для Node.js.
 services: cognitive-services
 author: PatrickFarley
 manager: nitinme
@@ -10,19 +10,16 @@ ms.topic: include
 ms.date: 12/15/2020
 ms.author: pafarley
 ms.custom: devx-track-js
-ms.openlocfilehash: be583fd530424262e8119295d2ff3df303acbfac
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: 88f17ace7142fe1c5ff6d56226a935b229530147
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103622245"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284844"
 ---
 <a name="HOLTop"></a>
 
-С помощью клиентской библиотеки службы "Компьютерное зрение" можно выполнять следующие операции:
-
-* анализ изображений на наличие тегов, текстового описания, лиц, содержимого для взрослых и многого другого.
-* считывание печатного и рукописного текста с помощью API службы чтения.
+Используйте клиентскую библиотеку оптического распознавания символов для чтения печатных и рукописных текстов с помощью API чтения.
 
 [Справочная документация](/javascript/api/@azure/cognitiveservices-computervision/) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/cognitiveservices/cognitiveservices-computervision) | [Пакет (npm)](https://www.npmjs.com/package/@azure/cognitiveservices-computervision) | [Примеры](https://azure.microsoft.com/resources/samples/?service=cognitive-services&term=vision&sort=0)
 
@@ -87,19 +84,17 @@ npm install async
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK Node.js для службы "Компьютерное зрение".
+Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK для OCR Node.js.
 
 |Имя|Описание|
 |---|---|
 | [ComputerVisionClient](/javascript/api/@azure/cognitiveservices-computervision/computervisionclient) | Этот класс требуется для всех функций Компьютерного зрения. Вы создаете его экземпляр с информацией о подписке и используете его для выполнения большинства операций с образами.|
-|[VisualFeatureTypes](/javascript/api/@azure/cognitiveservices-computervision/visualfeaturetypes)| Это перечисление определяет различные типы анализа изображений, которые можно выполнить в стандартной операции анализа. Набор значений **VisualFeatureTypes** указывается в зависимости от потребностей. |
 
 ## <a name="code-examples"></a>Примеры кода
 
-Эти фрагменты кода показывают, как выполнить следующие действия с помощью клиентской библиотеки службы "Компьютерное зрение" для Node.js:
+В следующих фрагментах кода показано выполнение следующих действий с помощью клиентской библиотеки OCR для Node.js:
 
 * [аутентификация клиента](#authenticate-the-client);
-* [Анализ изображения](#analyze-an-image)
 * [Чтение печатного и рукописного текста](#read-printed-and-handwritten-text).
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
@@ -116,127 +111,13 @@ npm install async
 [!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_functiondef_end)]
 
 > [!div class="nextstepaction"]
-> [Мной аутентифицирован клиент](?success=authenticate-client#analyze-an-image) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Javascript&Section=authenticate-client)
+> [Мной аутентифицирован клиент](?success=authenticate-client#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Javascript&Section=authenticate-client)
 
-## <a name="analyze-an-image"></a>Анализ изображения
 
-Код в этом разделе анализирует удаленные образы для извлечения различных визуальных компонентов. Эти операции можно выполнить как часть метода **analyzeImage** клиентского объекта, или же их можно вызвать с помощью отдельных методов. Дополнительные сведения см. в [справочной документации](/javascript/api/@azure/cognitiveservices-computervision/).
-
-> [!NOTE]
-> Можно также проанализировать локальный образ. См. подробные сведения о методах [ComputerVisionClient](/javascript/api/@azure/cognitiveservices-computervision/computervisionclient), например **analyzeImageInStream**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/javascript/ComputerVision/ComputerVisionQuickstart.js) ля сценариев, включающих использование локальных изображений.
-
-### <a name="get-image-description"></a>Получение описания изображения
-
-Следующий код получает список созданных заголовков для изображения. Дополнительные сведения см. в статье [Описание изображений на понятном для пользователя языке](../../concept-describing-images.md).
-
-Сначала определите URL-адрес изображения для анализа:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_describe_image)]
-
-Затем добавьте следующий код, чтобы получить описание образа и вывести его на консоль.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_describe)]
-
-### <a name="get-image-category"></a>Получение категории изображения
-
-Следующий код получает обнаруженную категорию изображения. Дополнительные сведения см. в статье [Categorize images by subject matter](../../concept-categorizing-images.md) (Классификация изображений по темам).
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_categories)]
-
-Определите вспомогательную функцию `formatCategories`:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_categories_format)]
-
-### <a name="get-image-tags"></a>Получение тегов изображения
-
-Следующий код получает набор обнаруженных тегов изображения. Дополнительные сведения см. в статье о [тегах содержимого](../../concept-tagging-images.md).
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_tags)]
-
-Определите вспомогательную функцию `formatTags`:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_tagsformat)]
-
-### <a name="detect-objects"></a>Обнаружение объектов
-
-Следующий код обнаруживает общие объекты в образе и выводит их на консоль. Дополнительные сведения см. в статье [Обнаружение объектов](../../concept-object-detection.md).
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_objects)]
-
-Определите вспомогательную функцию `formatRectObjects` для возврата верхней, левой, нижней и правой координат, а также значений ширины и высоты.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_objectformat)]
-
-### <a name="detect-brands"></a>Обнаружение торговых марок
-
-Следующий код обнаруживает фирменные торговые марки и логотипы в образе и выводит их на консоль. Дополнительные сведения см. в статье [Обнаружение торговых марок](../../concept-brand-detection.md).
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_brands)]
-
-### <a name="detect-faces"></a>Распознавание лиц
-
-Следующий код возвращает обнаруженные лица на изображении с их координатами прямоугольника и атрибутами выбора лиц. Дополнительные сведения см. в статье [Определение лиц с помощью компьютерного зрения](../../concept-detecting-faces.md).
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_faces)]
-
-Определите вспомогательную функцию `formatRectFaces`:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_formatfaces)]
-
-### <a name="detect-adult-racy-or-gory-content"></a>Обнаружение содержимого для взрослых, непристойного или жуткого содержимого
-
-Следующий код выводит сведения об обнаружении содержимого для взрослых на изображении. Дополнительные сведения см. в статье [Detect adult content](../../concept-detecting-adult-content.md) (Обнаружение содержимого для взрослых).
-
-Укажите URL-адрес для изображения, которое необходимо использовать:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_adult_image)]
-
-Затем добавьте следующий код для обнаружения содержимого для взрослых и вывода результатов на консоль.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_adult)]
-
-### <a name="get-image-color-scheme"></a>Получение цветовой схемы изображения
-
-Следующий код выводит обнаруженные атрибуты цвета на изображении, например доминирующие и акцентные цвета. Дополнительные сведения см. в статье [Обнаружение цветовых схем на изображениях](../../concept-detecting-color-schemes.md).
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_colors)]
-
-Определите вспомогательную функцию `printColorScheme` для вывода сведений о цветовой схеме на консоль.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_colors_print)]
-
-### <a name="get-domain-specific-content"></a>Получение содержимого, связанного с определенной предметной областью
-
-Компьютерное зрение может использовать специализированную модель для дальнейшего анализа изображений. Дополнительные сведения см. в статье [Обнаружение содержимого, связанного с определенными предметными областями](../../concept-detecting-domain-content.md).
-
-Сначала определите URL-адрес изображения для анализа:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_domain_image)]
-
-Следующий код анализирует данные об обнаруженных достопримечательностях на изображении.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_landmarks)]
-
-Определите вспомогательную функцию `formatRectDomain`, чтобы проанализировать данные расположения обнаруженных ориентиров.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_landmarks_rect)]
-
-### <a name="get-the-image-type"></a>Получение сведений о типе изображения
-
-Следующий код выводит информацию о типе изображения&mdash;, независимо от того, является ли это картинкой или рисунком.
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_imagetype)]
-
-Определите вспомогательную функцию `describeType`:
-
-[!code-javascript[](~/cognitive-services-quickstart-code/javascript/ComputerVision/ComputerVisionQuickstart.js?name=snippet_imagetype_describe)]
-
-> [!div class="nextstepaction"]
-> [Мной проанализировано изображение](?success=analyze-image#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Javascript&Section=analyze-image)
 
 ## <a name="read-printed-and-handwritten-text"></a>Чтение печатного и рукописного текста
 
-Компьютерное зрение может извлекать видимый текст в образе и преобразовывать его в поток символов. В этом примере используются операции чтения.
+Служба OCR может извлекать видимый текст на изображении и преобразовывать его в поток символов. В этом примере используются операции чтения.
 
 ### <a name="set-up-test-images"></a>Настройка тестовых изображений
 
@@ -292,8 +173,8 @@ node index.js
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
->[Справочник по API службы "Компьютерное зрение" (Node.js)](/javascript/api/@azure/cognitiveservices-computervision/)
+>[Справочник по API OCR (Node.js)](/javascript/api/@azure/cognitiveservices-computervision/)
 
 
-* [Что собой представляет Компьютерное зрение](../../overview.md)
+* [Общие сведения об OCR](../../overview-ocr.md)
 * Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/javascript/ComputerVision/ComputerVisionQuickstart.js).

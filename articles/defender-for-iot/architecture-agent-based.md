@@ -3,14 +3,14 @@ title: Архитектура решения на основе агента
 description: Узнайте об информационном потоке и агентной архитектуре Azure Defender для Интернета вещей.
 ms.topic: overview
 ms.date: 1/25/2021
-ms.openlocfilehash: b04e8fa6225aef9f3c228a44631f117fedffccff
-ms.sourcegitcommit: f611b3f57027a21f7b229edf8a5b4f4c75f76331
+ms.openlocfilehash: e08c3f151c3d3bc4fe08e61d960874b07f5b63e8
+ms.sourcegitcommit: 77d7639e83c6d8eb6c2ce805b6130ff9c73e5d29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104784889"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106383530"
 ---
-# <a name="agent-based-solution-for-device-builders"></a>Решение на основе агента для разработчиков устройств
+# <a name="what-is-agent-based-solution-for-device-builders"></a>Решение на основе агента для разработчиков устройств
 
 В этой статье описывается архитектура функциональной системы для агентного решения Azure Defender для Интернета вещей. Azure Defender для Интернета вещей предлагает два набора возможностей в соответствии с потребностями вашей среды: безагентное решение для организаций и агентное решение для построителей устройств.
 
@@ -34,7 +34,7 @@ Defender для Интернета вещей включен по умолчан
 
 :::image type="content" source="media/architecture/micro-agent-architecture.png" alt-text="Архитектура микроагента.":::
 
-## <a name="see-also"></a>См. также раздел
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Вопросы и ответы о Defender для Интернета вещей](resources-frequently-asked-questions.md)
 

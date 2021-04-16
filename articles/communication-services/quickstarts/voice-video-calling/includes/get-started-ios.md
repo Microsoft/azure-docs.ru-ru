@@ -1,22 +1,24 @@
 ---
 title: Краткое руководство. Добавление функции вызова в приложение iOS с помощью Служб коммуникации Azure
-description: Из этого краткого руководства вы узнаете, как использовать клиентскую библиотеку Служб коммуникации Azure для реализации вызовов на iOS.
-author: matthewrobertson
-ms.author: marobert
-ms.date: 07/24/2020
+description: Из этого краткого руководства вы узнаете, как использовать пакет SDK Служб коммуникации Azure для вызовов для iOS.
+author: chpalm
+ms.author: mikben
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 36ec27f3a0e69126a91b52bed26dc645ec89e46e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 22c9d8f8bdf3e6195bf152fa0431ad5ce9bcdfeb
+ms.sourcegitcommit: edc7dc50c4f5550d9776a4c42167a872032a4151
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656649"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "106073661"
 ---
-Из этого краткого руководства вы узнаете, как начать вызов с помощью клиентской библиотеки Служб коммуникации Azure для реализации вызовов для iOS.
+Из этого краткого руководства вы узнаете, как начать вызов с помощью пакета SDK Служб коммуникации Azure для вызовов для iOS.
+
+[!INCLUDE [Public Preview Notice](../../../includes/public-preview-include-android-ios.md)]
 
 > [!NOTE]
-> В этом документе используется клиентская библиотека вызовов версии 1.0.0-beta.8.
+> В этом документе используется пакет SDK для вызовов версии 1.0.0-beta.8.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -37,7 +39,8 @@ ms.locfileid: "101656649"
 
 ### <a name="install-the-package-and-dependencies-with-cocoapods"></a>Установка пакета и его зависимостей с помощью CocoaPods
 
-1. Создайте файл Podfile для своего приложения с таким содержимым:
+1. Чтобы создать Podfile для приложения, откройте терминал, перейдите в папку проекта и выполните команду ```pod init```.
+3. Добавьте следующий код в Podfile и сохраните (убедитесь, что "target" соответствует имени проекта):
 
    ```
    platform :ios, '13.0'
@@ -50,7 +53,7 @@ ms.locfileid: "101656649"
    end
    ```
 
-2. Выполните `pod install`.
+3. Выполните `pod install`.
 3. Откройте файл `.xcworkspace` с помощью Xcode.
 
 ### <a name="request-access-to-the-microphone"></a>Запрос доступа к микрофону
@@ -118,11 +121,11 @@ struct ContentView: View {
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки Служб коммуникации Azure для вызовов:
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK Служб коммуникации Azure для вызовов:
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
-| CallClient | CallClient — это основная точка входа в клиентскую библиотеку для вызовов.|
+| CallClient | CallClient — это основная точка входа в пакет SDK для вызовов.|
 | CallAgent | CallAgent используется для инициирования вызовов и управления ими. |
 | CommunicationTokenCredential | CommunicationTokenCredential используется в качестве учетных данных маркера для создания экземпляра CallAgent.| 
 | CommunicationUserIdentifier | CommunicationUserIdentifier используется для представления идентификатора пользователя, который может иметь один из следующих типов: CommunicationUserIdentifier, PhoneNumberIdentifier или CallingApplication. |

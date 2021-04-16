@@ -9,29 +9,28 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 09/10/2020
+ms.date: 03/22/2021
 ms.author: jeedes
-ms.openlocfilehash: 7b4c8ab55a9b2afc9c1a215236fa1276a630a5cf
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 42a6bc9bfb06f1c80b719bdda686ae111a8884ab
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97963627"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106222021"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-palo-alto-networks---aperture"></a>Руководство по интеграции Azure Active Directory с Palo Alto Networks - Aperture
 
-В этом руководстве описано, как интегрировать Azure Active Directory (Azure AD) с Palo Alto Networks - Aperture.
-Интеграция Azure AD с Palo Alto Networks - Aperture обеспечивает следующие преимущества.
+В этом руководстве описано, как интегрировать Azure Active Directory (Azure AD) с Palo Alto Networks — Aperture. Интеграция Palo Alto Networks — Aperture с Azure AD обеспечивает следующие возможности:
 
-* С помощью Azure AD вы можете контролировать доступ к Palo Alto Networks - Aperture.
-* Вы можете включить автоматический вход пользователей (единый вход) в Palo Alto Networks — Aperture с использованием учетных записей Azure AD.
-* Вы можете управлять учетными записями централизованно на портале Azure.
+* Контроль доступа к Palo Alto Networks — Aperture с помощью Azure AD.
+* Автоматический вход пользователей в Palo Alto Networks — Aperture с использованием учетных записей Azure AD.
+* Централизованное управление учетными записями через портал Azure.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Чтобы настроить интеграцию Azure AD с Palo Alto Networks - Aperture, вам потребуется:
+Чтобы приступить к работе, потребуется следующее.
 
-* Подписка Azure AD. (если у вас нет среды Azure AD, вы можете получить пробную версию на один месяц по [этой ссылке](https://azure.microsoft.com/pricing/free-trial/));
+* Подписка Azure AD. Если у вас нет подписки, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/).
 * подписка Palo Alto Networks — Aperture с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -40,7 +39,7 @@ ms.locfileid: "97963627"
 
 * Palo Alto Networks — Aperture поддерживает единый вход, инициированный **поставщиком услуг** и **поставщиком удостоверений**.
 
-## <a name="adding-palo-alto-networks---aperture-from-the-gallery"></a>Добавление Palo Alto Networks - Aperture из коллекции
+## <a name="add-palo-alto-networks---aperture-from-the-gallery"></a>Добавление Palo Alto Networks — Aperture из коллекции
 
 Чтобы настроить интеграцию Palo Alto Networks - Aperture с Azure AD, необходимо добавить Palo Alto Networks - Aperture из коллекции в список управляемых приложений SaaS.
 
@@ -59,10 +58,10 @@ ms.locfileid: "97963627"
 Чтобы настроить и проверить единый вход Azure AD в Palo Alto Networks — Aperture, сделайте следующее.
 
 1. **[Настройка единого входа Azure AD](#configure-azure-ad-sso)** необходима, чтобы пользователи могли использовать эту функцию.
-    * **[Создание тестового пользователя Azure AD](#create-an-azure-ad-test-user)** требуется для проверки работы единого входа Azure AD от имени пользователя Britta Simon.
-    * **[Назначение тестового пользователя Azure AD](#assign-the-azure-ad-test-user)** необходимо, чтобы разрешить пользователю Britta Simon использовать единый вход Azure AD.
+    1. **[Создание тестового пользователя Azure AD](#create-an-azure-ad-test-user)** требуется для проверки работы единого входа Azure AD от имени пользователя Britta Simon.
+    1. **[Назначение тестового пользователя Azure AD](#assign-the-azure-ad-test-user)** необходимо, чтобы разрешить пользователю Britta Simon использовать единый вход Azure AD.
 2. **[Настройка единого входа в Palo Alto Networks — Aperture](#configure-palo-alto-networks---aperture-sso)** необходима, чтобы настроить параметры единого входа на стороне приложения.
-    * **[Создание тестового пользователя Palo Alto Networks — Aperture](#create-palo-alto-networks---aperture-test-user)** требуется для того, чтобы в Palo Alto Networks — Aperture существовал пользователь Britta Simon, связанный с одноименным пользователем в Azure AD.
+    1. **[Создание тестового пользователя Palo Alto Networks — Aperture](#create-palo-alto-networks---aperture-test-user)** требуется для того, чтобы в Palo Alto Networks — Aperture существовал пользователь Britta Simon, связанный с одноименным пользователем в Azure AD.
 3. **[Проверка единого входа](#test-sso)** позволяет убедиться в правильности конфигурации.
 
 ## <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
@@ -77,15 +76,11 @@ ms.locfileid: "97963627"
 
 4. Если вы хотите настроить приложение в режиме, инициируемом **поставщиком удостоверений**, в разделе **Базовая конфигурация SAML** выполните следующие действия.
 
-    ![Снимок экрана: раздел "Базовая конфигурация SAML" с выбранными полями "Идентификатор", "URL-адрес ответа" и кнопкой "Сохранить".](common/idp-intiated.png)
-
     а. В текстовом поле **Идентификатор** введите URL-адрес в формате `https://<subdomain>.aperture.paloaltonetworks.com/d/users/saml/metadata`.
 
     b. В текстовом поле **URL-адрес ответа** введите URL-адрес в формате `https://<subdomain>.aperture.paloaltonetworks.com/d/users/saml/auth`.
 
 5. Чтобы настроить приложение для работы в режиме, инициируемом **поставщиком услуг**, щелкните **Задать дополнительные URL-адреса** и выполните следующие действия.
-
-    ![Сведения о домене и URL-адресах единого входа для приложения Palo Alto Networks — Aperture для поставщика услуг](common/metadata-upload-additional-signon.png)
 
     В текстовом поле **URL-адрес входа** введите URL-адрес в формате `https://<subdomain>.aperture.paloaltonetworks.com/d/users/saml/sign_in`.
 
@@ -130,15 +125,15 @@ ms.locfileid: "97963627"
 
 2. В верхней строке меню щелкните **SETTINGS** (Параметры).
 
-    ![Вкладка "SETTINGS" (Параметры)](./media/paloaltonetworks-aperture-tutorial/tutorial_paloaltonetwork_settings.png)
+    ![Вкладка "SETTINGS" (Параметры)](./media/paloaltonetworks-aperture-tutorial/settings.png)
 
 3. Перейдите в раздел **APPLICATION** (Приложение) и щелкните форму **Authentication** (Аутентификация) в левой части меню.
 
-    ![Вкладка "Authentication" (Аутентификация)](./media/paloaltonetworks-aperture-tutorial/tutorial_paloaltonetwork_auth.png)
+    ![Вкладка "Authentication" (Аутентификация)](./media/paloaltonetworks-aperture-tutorial/authentication.png)
     
 4. На странице **Authentication** (Аутентификация) выполните следующие действия.
     
-    ![Вкладка "Authentication" (Аутентификация)](./media/paloaltonetworks-aperture-tutorial/tutorial_paloaltonetwork_singlesignon.png)
+    ![Вкладка "Authentication" (Аутентификация)](./media/paloaltonetworks-aperture-tutorial/tab.png)
 
     a. Установите флажок **Enable Single Sign-On (Supported SSP Providers are Okta, One login)** (Включить единый вход (поддерживаемые поставщики общих служб: Okta, One login)) в поле **Single Sign-On** (Единый вход).
 
