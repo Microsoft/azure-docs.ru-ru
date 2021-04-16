@@ -8,12 +8,12 @@ ms.service: storage
 ms.subservice: blobs
 ms.topic: quickstart
 ms.custom: devx-track-csharp
-ms.openlocfilehash: dab938a526aa89f6fe5a014e10869bd8da8b475d
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: c6b502bbc56d6c9521ec736150fbc0046ff78125
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98802350"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105642479"
 ---
 # <a name="quickstart-azure-blob-storage-client-library-v12-with-xamarin"></a>Краткое руководство. Использование клиентской библиотеки Хранилища BLOB-объектов Azure версии 12 для Xamarin
 
@@ -40,7 +40,7 @@ ms.locfileid: "98802350"
 
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/).
 * Учетная запись хранения Azure — [создайте такую учетную запись](../common/storage-account-create.md).
-* Visual Studio с установленной рабочей нагрузкой [Mobile Development for .NET](/xamarin/get-started/installation/?pivots=windows) (Разработка мобильных приложений для .NET) или [Visual Studio для Mac](/visualstudio/mac/installation?view=vsmac-2019).
+* Visual Studio с установленной рабочей нагрузкой [Mobile Development for .NET](/xamarin/get-started/installation/?pivots=windows) (Разработка мобильных приложений для .NET) или [Visual Studio для Mac](/visualstudio/mac/installation?view=vsmac-2019&preserve-view=true).
 
 ## <a name="setting-up"></a>Настройка
     
@@ -196,7 +196,7 @@ async void List_Clicked(object sender, EventArgs e)
 
 ### <a name="download-blobs"></a>Скачивание больших двоичных объектов
 
-Скачайте созданный ранее большой двоичный объект, вызвав метод [DownloadAsync](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.downloadasync). В этом примере кода сначала копируется представление `Stream` большого двоичного объекта в `MemoryStream`, а затем в `StreamReader` для отображения текста.
+Скачайте созданный ранее BLOB-объект, вызвав метод [DownloadToAsync](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.downloadtoasync). В этом примере кода сначала копируется представление `Stream` большого двоичного объекта в `MemoryStream`, а затем в `StreamReader` для отображения текста.
 
 Добавьте следующий код в файл *MainPage.xaml.cs*.
 

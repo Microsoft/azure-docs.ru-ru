@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 05/08/2020
 ms.author: chez
 ms.reviewer: mariozi
-ms.openlocfilehash: c6c376e44c6135a800e6f7e281f8ea85b828329a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: a18d06e3a0324889a4cb9936fb339fd9d8f9b816
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102443894"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106222707"
 ---
 # <a name="encrypt-azure-data-factory-with-customer-managed-keys"></a>Шифрование в Фабрике данных Azure с помощью управляемых клиентом ключей
 
@@ -137,6 +137,23 @@ ms.locfileid: "102443894"
 ## <a name="disable-customer-managed-keys"></a>Отключение возможности использования управляемых клиентом ключей
 
 После включения возможности использования управляемых клиентом ключей, исключить дополнительный шаг безопасности невозможно. Так и должно быть. Мы будем всегда рассчитывать, что клиент предоставит ключ для шифрования фабрики и данных.
+
+## <a name="customer-managed-key-and-continuous-integration-and-continuous-deployment"></a>Управляемый клиентом ключ, непрерывная интеграция и непрерывное развертывание
+
+По умолчанию конфигурация CMK не включена в шаблон Azure Resource Manager (ARM). Чтобы включить параметры шифрования с управляемым ключом клиента в шаблон ARM для непрерывной интеграции (CI/CD), выполните следующие действия.
+
+1. Убедитесь, что производство находится в режиме Git.
+1. Перейдите на портал управления — раздел "Управляемый клиентом ключ"
+1. Установите флажок _Включить в шаблон ARM_
+
+  :::image type="content" source="media/enable-customer-managed-key/07-include-in-template.png" alt-text="Снимок экрана включения параметра ключа, управляемого клиентом, в шаблон ARM.":::
+
+В шаблон ARM будут добавлены следующие параметры. Эти свойства могут быть параметризованы в конвейерах непрерывной интеграции и поставки путем изменения [конфигурации параметров Azure Resource Manager](continuous-integration-deployment.md#use-custom-parameters-with-the-resource-manager-template).
+
+  :::image type="content" source="media/enable-customer-managed-key/08-template-with-customer-managed-key.png" alt-text="Снимок экрана включения параметра ключа, управляемого клиентом, в шаблон Azure Resource Manager.":::
+
+> [!NOTE]
+> Добавление параметра шифрования в шаблоны ARM добавляет параметр уровня производства, который будет переопределять другие параметры уровня производства, такие как конфигурации Git, в других средах. Если вы включили эти параметры в среде с повышенными привилегиями, например UAT или PROD, см. [глобальные параметры в CI/CD](author-global-parameters.md#cicd).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

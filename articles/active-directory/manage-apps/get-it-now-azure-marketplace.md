@@ -2,21 +2,21 @@
 title: Добавление приложения из Azure Marketplace
 description: Это статья, на которую вы попадаете, нажав кнопку "Получить" в Azure Marketplace.
 services: active-directory
-author: kenwith
-manager: daveba
+author: iantheninja
+manager: CelesteDG
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.topic: conceptual
 ms.workload: identity
 ms.date: 07/16/2020
-ms.author: kenwith
+ms.author: iangithinji
 ROBOTS: NOINDEX
-ms.openlocfilehash: 7bff0ca3dfa561f836f94e362ee84d025de020ab
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b2c15ba1f059466240264565d5ff5276b70ddd63
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99258343"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107374154"
 ---
 # <a name="get-it-now---add-an-app-from-the-azure-marketplace"></a>Добавление приложения из Azure Marketplace с помощью кнопки "Получить"
 

@@ -3,15 +3,15 @@ title: Краткое руководство. Создание приложен�
 description: Начните работу со Службой приложений Azure, развернув приложение Python в контейнере Linux в Службе приложений.
 ms.topic: quickstart
 ms.date: 09/22/2020
-ms.custom: seo-python-october2019, cli-validate, devx-track-python, devx-track-azurecli
+ms.custom: seo-python-october2019, cli-validate, devx-track-python
 zone_pivot_groups: python-frameworks-01
 robots: noindex
-ms.openlocfilehash: ef32b8ff9282e92511047840576ddfe6751b24e0
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 464583f9e20d55fa351a6ae0df31b608b18dc428
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102184514"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107379542"
 ---
 # <a name="quickstart-create-a-python-app-in-azure-app-service-on-linux"></a>Краткое руководство. Создание приложения Python в Службе приложений Azure в Linux
 
