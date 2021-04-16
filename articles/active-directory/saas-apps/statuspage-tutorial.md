@@ -9,29 +9,28 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 12/18/2020
+ms.date: 03/31/2021
 ms.author: jeedes
-ms.openlocfilehash: cc3ce56ecd17d627001f4925355c055afdc09d22
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 6bc2508220a8c0193efb55eb6cd11f7e151c80be
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98729666"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284597"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-statuspage"></a>Руководство по интеграции единого входа Azure Active Directory со StatusPage
 
-В этом руководстве описано, как интегрировать StatusPage с Azure Active Directory (Azure AD).
-Интеграция приложения StatusPage с Azure AD обеспечивает следующие преимущества.
+В этом руководстве описано, как интегрировать StatusPage с Azure Active Directory (Azure AD). Интеграция StatusPage с Azure AD обеспечивает следующие возможности:
 
-* С помощью Azure AD вы можете контролировать доступ к приложению StatusPage.
-* Вы можете включить автоматический вход пользователей в StatusPage (единый вход) с помощью учетных записей Azure AD.
-* Вы можете управлять учетными записями централизованно на портале Azure.
+* Контроль доступа к приложению StatusPage с помощью Azure AD.
+* Автоматический вход пользователей в StatusPage с помощью учетных записей Azure AD.
+* Централизованное управление учетными записями через портал Azure.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы настроить интеграцию Azure AD с приложением StatusPage, вам потребуются следующие компоненты:
 
-* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/));
+* подписка Azure AD; (если у вас нет среды Azure AD, вы можете получить [бесплатную учетную запись](https://azure.microsoft.com/free/));
 * подписка StatusPage с поддержкой единого входа.
 
 ## <a name="scenario-description"></a>Описание сценария
@@ -40,7 +39,7 @@ ms.locfileid: "98729666"
 
 * StatusPage поддерживает единый вход, инициируемый **поставщиком удостоверений**.
 
-## <a name="adding-statuspage-from-the-gallery"></a>Добавление StatusPage из коллекции.
+## <a name="add-statuspage-from-the-gallery"></a>Добавление StatusPage из коллекции
 
 Чтобы настроить интеграцию приложения StatusPage с Azure AD, вам нужно добавить StatusPage из коллекции в список управляемых приложений SaaS.
 
@@ -65,13 +64,13 @@ ms.locfileid: "98729666"
     1. **[Создание тестового пользователя StatusPage](#create-statuspage-test-user)** требуется для того, чтобы в StatusPage существовал пользователь Britta Simon, связанный с одноименным пользователем в Azure AD.
 6. **[Проверка единого входа](#test-sso)** позволяет убедиться в правильности конфигурации.
 
-### <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
+## <a name="configure-azure-ad-sso"></a>Настройка единого входа Azure AD
 
 Выполните следующие действия, чтобы включить единый вход Azure AD на портале Azure.
 
 1. На портале Azure на странице интеграции с приложением **AskYourTeam** найдите раздел **Управление** и выберите **Единый вход**.
 1. На странице **Выбрать метод единого входа** выберите **SAML**.
-1. На странице **Настройка единого входа с помощью SAML** щелкните значок "Изменить" (значок пера), чтобы открыть диалоговое окно **Базовая конфигурация SAML** и изменить параметры.
+1. На странице **Настройка единого входа с помощью SAML** щелкните значок карандаша, чтобы открыть диалоговое окно **Базовая конфигурация SAML** для изменения параметров.
 
    ![Изменение базовой конфигурации SAML](common/edit-urls.png)
 
@@ -85,7 +84,7 @@ ms.locfileid: "98729666"
     | `https://<subdomain>.statuspage.io/` |
     |
 
-    b. В текстовом поле **URL-адрес ответа** введите URL-адрес в таком формате:
+    b. В текстовом поле **URL-адрес ответа** введите URL-адрес в одном из таких форматов:
 
      | URL-адрес ответа |
     |--------------|
@@ -152,17 +151,17 @@ ms.locfileid: "98729666"
 
 1. На главной панели инструментов щелкните **Manage Account**(Управление учетной записью).
 
-    ![Снимок экрана: элемент Manage Account (Управление учетной записью) на странице состояния на сайте компании.](./media/statuspage-tutorial/tutorial_statuspage_06.png)
+    ![Снимок экрана: элемент Manage Account (Управление учетной записью) на странице состояния на сайте компании.](./media/statuspage-tutorial/account.png)
 
 1. Выберите вкладку **Single Sign-on** (Единый вход).
 
-    ![Снимок экрана: вкладка Single Sign-on (Единый вход).](./media/statuspage-tutorial/tutorial_statuspage_07.png)
+    ![Снимок экрана: вкладка Single Sign-on (Единый вход).](./media/statuspage-tutorial/tab.png)
 
 1. На странице настройки единого входа выполните следующие действия.
 
-    ![Снимок экрана: страница SSO Setup (Настройка единого входа), где можно ввести описанные значения.](./media/statuspage-tutorial/tutorial_statuspage_08.png)
+    ![Снимок экрана: страница SSO Setup (Настройка единого входа), где можно ввести описанные значения.](./media/statuspage-tutorial/setup.png)
 
-    ![Снимок экрана: кнопка Save Configuration (Сохранить конфигурацию).](./media/statuspage-tutorial/tutorial_statuspage_09.png)
+    ![Снимок экрана: кнопка Save Configuration (Сохранить конфигурацию).](./media/statuspage-tutorial/configuration.png)
 
     а. В текстовое поле **SSO Target URL** (Целевой URL-адрес единого входа) вставьте значение **URL-адрес входа**, скопированное на портале Azure.
 
@@ -182,25 +181,25 @@ ms.locfileid: "98729666"
 
 1. В меню вверху щелкните **Manage Account**(Управление учетной записью).
 
-    ![Снимок экрана: элемент Manage Account (Управление учетной записью) на странице состояния на сайте компании.](./media/statuspage-tutorial/tutorial_statuspage_06.png)
+    ![Снимок экрана: элемент Manage Account (Управление учетной записью) на странице состояния на сайте компании.](./media/statuspage-tutorial/account.png)
 
 1. Перейдите на вкладку **Team Members** (Участники команды).
   
-    ![Снимок экрана: вкладка Team Members (Участники команды).](./media/statuspage-tutorial/tutorial_statuspage_10.png) 
+    ![Снимок экрана: вкладка Team Members (Участники команды).](./media/statuspage-tutorial/sandbox.png) 
 
 1. Щелкните **ADD TEAM MEMBER** (Добавить участника команды).
   
-    ![Снимок экрана: Add Team Member (Добавить участника команды).](./media/statuspage-tutorial/tutorial_statuspage_11.png) 
+    ![Снимок экрана: Add Team Member (Добавить участника команды).](./media/statuspage-tutorial/team.png) 
 
 1. Введите в текстовые поля **Email Address** (Электронный адрес), **First Name** (Имя) и **Surname** (Фамилия) соответствующие данные действительного пользователя, которого вы хотите подготовить. 
 
-    ![Снимок экрана: диалоговое окно Add a User (Добавить пользователя), где можно ввести описанные значения.](./media/statuspage-tutorial/tutorial_statuspage_12.png) 
+    ![Снимок экрана: диалоговое окно Add a User (Добавить пользователя), где можно ввести описанные значения.](./media/statuspage-tutorial/user.png) 
 
 1. Для параметра **Role** (Роль) выберите значение **Client Administrator** (Администратор клиента).
 
 1. Щелкните **CREATE ACCOUNT** (Создать учетную запись).
 
-### <a name="test-sso"></a>Проверка единого входа
+## <a name="test-sso"></a>Проверка единого входа
 
 В этом разделе описано, как проверить конфигурацию единого входа Azure AD с помощью указанных ниже способов.
 

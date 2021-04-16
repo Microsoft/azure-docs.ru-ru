@@ -10,12 +10,12 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: eee020e5d96b301e8278d31c26360639553be0ee
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 68b5fc7c958f611c43ba3f38bf30ceb63608886a
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495347"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106113365"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -41,7 +41,7 @@ npm init -y
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Используйте команду `npm install`, чтобы установить клиентскую библиотеку удостоверений Служб коммуникации для реализации вызовов на JavaScript.
+Используйте команду `npm install`, чтобы установить пакет SDK для Служб коммуникации Azure для удостоверений для JavaScript.
 
 ```console
 
@@ -108,7 +108,7 @@ const identityClient = new CommunicationIdentityClient(endpoint, tokenCredential
 ```javascript
 const endpoint = process.env["COMMUNICATION_SERVICES_ENDPOINT"];
 const tokenCredential = new DefaultAzureCredential();
-var client = new CommunicationIdentityClient(endpoint, tokenCredential);
+const identityClient = new CommunicationIdentityClient(endpoint, tokenCredential);
 ```
 
 ## <a name="create-an-identity"></a>Создание удостоверения
@@ -140,7 +140,7 @@ console.log(token);
 
 ```javascript
 // Issue an identity and an access token with the "voip" scope for the new identity
-let identityTokenResponse = await this.client.createUserAndToken(["voip"]);
+let identityTokenResponse = await identityClient.createUserAndToken(["voip"]);
 const { token, expiresOn, user } = identityTokenResponse;
 console.log(`\nCreated an identity with ID: ${user.communicationUserId}`);
 console.log(`\nIssued an access token with 'voip' scope that expires at ${expiresOn}:`);
@@ -153,7 +153,7 @@ console.log(token);
 
 ```javascript
 // // Value of identityResponse represents the Azure Communication Services identity stored during identity creation and then used to issue the tokens being refreshed
-let refreshedTokenResponse = await identityClient.issueToken(identityResponse, ["voip"]);
+let refreshedTokenResponse = await identityClient.getToken(identityResponse, ["voip"]);
 ```
 
 

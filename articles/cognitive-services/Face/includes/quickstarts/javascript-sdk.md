@@ -9,12 +9,12 @@ ms.subservice: face-api
 ms.topic: include
 ms.date: 11/05/2020
 ms.author: v-jawe
-ms.openlocfilehash: 590ad577f3648ea9214ec4dcb6b6cab59dd5a3f1
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
+ms.openlocfilehash: 8f968572a357bb3c98d9c3133a7ec0a0a94dbf93
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105104691"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105958033"
 ---
 ## <a name="quickstart-face-client-library-for-javascript"></a>Краткое руководство. Клиентская библиотека Распознавания лиц для JavaScript
 
@@ -24,7 +24,7 @@ ms.locfileid: "105104691"
 
 * [обнаружение лиц на изображении](#detect-faces-in-an-image);
 * [поиск похожих лиц](#find-similar-faces);
-* [Создание группы людей](#create-a-person-group)
+* [Создание PersonGroup](#create-a-persongroup)
 * [опознание лица](#identify-a-face);
 
 [Справочная документация](/javascript/api/@azure/cognitiveservices-face/) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/cognitiveservices/cognitiveservices-face) | [Пакет (npm)](https://www.npmjs.com/package/@azure/cognitiveservices-face) | [Примеры](/samples/browse/?products=azure&term=face&languages=javascript)
@@ -106,7 +106,7 @@ endpoint = "<paste-your-face-endpoint-here>"
 * [аутентификация клиента](#authenticate-the-client);
 * [Определение лиц на изображении](#detect-faces-in-an-image)
 * [поиск похожих лиц](#find-similar-faces);
-* [Создание группы людей](#create-a-person-group)
+* [Создание PersonGroup](#create-a-persongroup)
 * [опознание лица](#identify-a-face);
 
 > [!TIP]
@@ -163,27 +163,27 @@ endpoint = "<paste-your-face-endpoint-here>"
 
 Операция [Identify](/javascript/api/@azure/cognitiveservices-face/face#identify_string____FaceIdentifyOptionalParams__ServiceCallback_IdentifyResult____) принимает изображение человека или нескольких людей и пытается опознать каждое лицо на этом изображении (поиск с распознаванием лиц). Он сравнивает каждое обнаруженное лицо с [PersonGroup](/javascript/api/@azure/cognitiveservices-face/persongroup), которая является базой данных объектов [Person](/javascript/api/@azure/cognitiveservices-face/person) с известными характеристиками лиц. Чтобы выполнить операцию Identify, сначала необходимо создать и обучить [PersonGroup](/javascript/api/@azure/cognitiveservices-face/persongroup).
 
-### <a name="add-faces-to-person-group"></a>Добавление лиц в группу людей
+### <a name="add-faces-to-persongroup"></a>Добавление лиц в PersonGroup
 
 Создайте приведенную ниже функцию, чтобы добавить лица в [PersonGroup](/javascript/api/@azure/cognitiveservices-face/persongroup).
 
 :::code language="js" source="~/cognitive-services-quickstart-code/javascript/Face/sdk_quickstart.js" id="add_faces":::
 
-### <a name="wait-for-training-of-person-group"></a>Ожидание обучения группы людей
+### <a name="wait-for-training-of-persongroup"></a>Ожидание обучения PersonGroup
 
-Создайте приведенную ниже вспомогательную функцию, чтобы дождаться завершения обучения группы людей.
+Создайте приведенную ниже вспомогательную функцию, чтобы дождаться завершения обучения **PersonGroup**.
 
 :::code language="js" source="~/cognitive-services-quickstart-code/javascript/Face/sdk_quickstart.js" id="wait_for_training":::
 
-### <a name="create-a-person-group"></a>Создание группы людей
+### <a name="create-a-persongroup"></a>Создание PersonGroup
 
 Приведенный ниже код:
-- создает [PersonGroup](/javascript/api/@azure/cognitiveservices-face/persongroup);
-- добавляет лица в группу людей посредством вызова функции `AddFacesToPersonGroup`, которая была определена ранее;
-- обучает эту группу людей;
-- определяет лица в группе людей.
+- создает [PersonGroup](https://docs.microsoft.com/javascript/api/@azure/cognitiveservices-face/persongroup);
+- добавляет лица в **PersonGroup** посредством вызова функции `AddFacesToPersonGroup`, которая была определена ранее;
+- обучает **PersonGroup**;
+- определяет лица в группе **PersonGroup**.
 
-Эта группа **Person** и связанные с ней объекты **Person** теперь готовы к использованию в операциях проверки, определения или группирования.
+Эта группа **PersonGroup** и связанные с ней объекты **Person** теперь готовы к использованию в операциях проверки, определения или группирования.
 
 :::code language="js" source="~/cognitive-services-quickstart-code/javascript/Face/sdk_quickstart.js" id="identify":::
 

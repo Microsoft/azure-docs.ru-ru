@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 02/10/2021
 ms.author: trbye
 ms.custom: devx-track-js
-ms.openlocfilehash: 3fa47935721ccfccdfe18d60a66d5cc480582e7d
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 95bc737f8a1b9b0a35b80ca2a80a7245ba407b18
+ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102428260"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104333"
 ---
 Из этого краткого руководства вы узнаете, как работать с распространенными конструктивными шаблонами для синтеза текста в речь, используя пакет SDK службы "Речь". Вы начнете с основных настроек и синтеза, а затем перейдете к более сложным примерам для разработки пользовательских приложений, в том числе к таким задачам:
 
@@ -30,9 +30,9 @@ ms.locfileid: "102428260"
 ## <a name="install-the-speech-sdk"></a>Установка пакета SDK службы "Речь"
 
 Сначала необходимо установить <a href="https://www.npmjs.com/package/microsoft-cognitiveservices-speech-sdk" target="_blank">пакет SDK службы "Речь" для JavaScript </a>. В зависимости от используемой платформы выполните следующие действия:
-- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=nodejs#get-the-speech-sdk" target="_blank">Node.js <span 
+- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=nodejs#get-the-speech-sdk" target="_blank">Node.js <span
 class="docon docon-navigate-external x-hidden-focus"></span></a>
-- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=browser#get-the-speech-sdk" target="_blank">Веб-браузер </a>
+- <a href="/azure/cognitive-services/speech-service/speech-sdk?tabs=browser#get-the-speech-sdk" target="_blank">Веб-браузер </a>
 
 Кроме того, в зависимости от целевой среды используйте один из следующих параметров:
 
@@ -162,14 +162,14 @@ function synthesizeSpeech() {
 * интегрировать полученные данные с другими API или службами;
 * изменять звуковые данные, записывать пользовательские заголовки `.wav` и т. д.
 
-Это изменение легко реализовать в предыдущем примере. Сначала удалите блок `AudioConfig`, так как вы будете вручную управлять выходными данными с целью усиленного контроля над ними. Затем передайте `undefined` для `AudioConfig` в конструкторе `SpeechSynthesizer`. 
+Это изменение легко реализовать в предыдущем примере. Сначала удалите блок `AudioConfig`, так как вы будете вручную управлять выходными данными с целью усиленного контроля над ними. Затем передайте `undefined` для `AudioConfig` в конструкторе `SpeechSynthesizer`.
 
 > [!NOTE]
 > Передача значения `undefined` для `AudioConfig` вместо его пропуска, как это сделано в приведенном выше примере с выводом на динамики, не позволит по умолчанию воспроизводить звук на активном устройстве вывода.
 
-В этом случае результат сохраняется в переменной [`SpeechSynthesisResult`](/javascript/api/microsoft-cognitiveservices-speech-sdk/speechsynthesisresult). Свойство `SpeechSynthesisResult.audioData` возвращает `ArrayBuffer` выходных данных, тип потока браузера по умолчанию. Для серверного кода преобразуйте arrayBuffer в поток буфера. 
+В этом случае результат сохраняется в переменной [`SpeechSynthesisResult`](/javascript/api/microsoft-cognitiveservices-speech-sdk/speechsynthesisresult). Свойство `SpeechSynthesisResult.audioData` возвращает `ArrayBuffer` выходных данных, тип потока браузера по умолчанию. Для серверного кода преобразуйте arrayBuffer в поток буфера.
 
-Приведенный ниже код работает с кодом на стороне клиента. 
+Приведенный ниже код работает с кодом на стороне клиента.
 
 ```javascript
 function synthesizeSpeech() {
@@ -189,9 +189,9 @@ function synthesizeSpeech() {
 }
 ```
 
-Теперь можно настроить выполнение любых пользовательских действий, используя полученный объект `ArrayBuffer`. ArrayBuffer — это распространенный тип для получения в браузере и воспроизведения из этого формата. 
+Теперь можно настроить выполнение любых пользовательских действий, используя полученный объект `ArrayBuffer`. ArrayBuffer — это распространенный тип для получения в браузере и воспроизведения из этого формата.
 
-Для любого серверного кода, если необходимо работать с данными в виде потока, вместо ArrayBuffer необходимо преобразовать в поток объект. 
+Для любого серверного кода, если необходимо работать с данными в виде потока, вместо ArrayBuffer необходимо преобразовать в поток объект.
 
 ```javascript
 function synthesizeSpeech() {
@@ -342,3 +342,11 @@ function synthesizeSpeech() {
   </voice>
 </speak>
 ```
+
+## <a name="get-facial-pose-events"></a>Получение событий расположения лица
+
+Речь может эффективно анимировать эмоциональные выражения лица.
+Для представления основных положений в наблюдаемой речи часто используются [виземы](../../../how-to-speech-synthesis-viseme.md), такие как расположение губ, челюстей и языка при создании определенной фонемы.
+На событие виземы можно подписаться в пакете SDK для службы "Речь".
+Затем события виземы можно применять для анимации лица характера при акустическом воспроизведении речи.
+Дополнительные сведения о [получении событий визем](../../../how-to-speech-synthesis-viseme.md#get-viseme-events-with-the-speech-sdk).

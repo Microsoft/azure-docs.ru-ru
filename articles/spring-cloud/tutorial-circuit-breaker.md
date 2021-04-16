@@ -7,12 +7,12 @@ ms.service: spring-cloud
 ms.topic: tutorial
 ms.date: 04/06/2020
 ms.custom: devx-track-java, devx-track-azurecli
-ms.openlocfilehash: 9fbd137f8fa36a7b0526b25d664fceac795ecd81
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 09acdc0c4ea2dbe90c0b7b037b6aec501cc1dd55
+ms.sourcegitcommit: 3f684a803cd0ccd6f0fb1b87744644a45ace750d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104877138"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223036"
 ---
 # <a name="tutorial-use-circuit-breaker-dashboard-with-azure-spring-cloud"></a>Руководство по использованию панели мониторинга размыкателя цепи в Azure Spring Cloud
 
@@ -20,7 +20,7 @@ ms.locfileid: "104877138"
 
 Spring [Cloud Netflix Turbine](https://github.com/Netflix/Turbine) часто используется для объединения нескольких потоков метрик [Hystrix](https://github.com/Netflix/Hystrix), чтобы потоки можно было отслеживать в одном представлении с помощью панели мониторинга Hystrix. В этом учебнике показано, как использовать их в Azure Spring Cloud.
 > [!NOTE]
-> Netflix Hystrix широко используется во многих имеющихся приложениях Spring Cloud, но больше не находится в активной разработке. Если вы разрабатываете новый проект, используйте вместо размыкателя цепи Spring Cloud реализации, такие как [resilience4j](https://github.com/resilience4j/resilience4j). В отличие от Turbine, показанного в этом учебнике, новая платформа размыкателя цепи Spring Cloud объединяет все реализации своего конвейера данных метрик в Micrometer. Мы все еще работаем над поддержкой Micrometer в Azure Spring Cloud, поэтому он не рассматривается в этом учебнике.
+> Netflix Hystrix широко используется во многих имеющихся приложениях Spring Cloud, но больше не находится в активной разработке. Если вы разрабатываете новый проект, используйте вместо размыкателя цепи Spring Cloud реализации, такие как [resilience4j](https://github.com/resilience4j/resilience4j). В отличие от Turbine, показанного в этом учебнике, новая платформа размыкателя цепи Spring Cloud объединяет все реализации своего конвейера данных метрик в Micrometer, который также поддерживается средой Azure Spring Cloud. [Подробнее](https://docs.microsoft.com/azure/spring-cloud/how-to-circuit-breaker-metrics)
 
 ## <a name="prepare-your-sample-applications"></a>Подготовка примеров приложений
 Пример разветвлен из этого [репозитория](https://github.com/StackAbuse/spring-cloud/tree/master/spring-turbine).
