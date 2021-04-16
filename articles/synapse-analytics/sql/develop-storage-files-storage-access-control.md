@@ -9,12 +9,12 @@ ms.subservice: sql
 ms.date: 06/11/2020
 ms.author: fipopovi
 ms.reviewer: jrasnick
-ms.openlocfilehash: 545331fdea56aef3d7b9dac8062d4fc2d6891254
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: 726395e9f004130699dab061cfa752a2e516c834
+ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102501577"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106552960"
 ---
 # <a name="control-storage-account-access-for-serverless-sql-pool-in-azure-synapse-analytics"></a>Управление доступом к учетной записи хранения в бессерверном пуле SQL в Azure Synapse Analytics
 
@@ -36,11 +36,11 @@ ms.locfileid: "102501577"
 **Удостоверение пользователя** используется для типа авторизации "сквозная аутентификация Azure", при которой удостоверение пользователя Azure AD, выполнившего вход в бессерверный пул SQL, применяется для авторизации доступа к данным. Перед обращением к данным администратор службы хранилища Azure должен предоставить разрешения соответствующему пользователю Azure AD. Как указано в таблице ниже, этот тип не поддерживается для типа пользователя SQL.
 
 > [!IMPORTANT]
-> Чтобы использовать удостоверение для доступа к данным, необходимо иметь роль владельца, участника или читателя данных для BLOB-объекта в хранилище.
-> Даже если вы являетесь владельцем учетной записи хранения, вам придется добавить себя в одну из ролей для данных BLOB-объекта хранилища.
->
-> Дополнительные сведения см. в статье [Access control in Azure Data Lake Storage Gen2](../../storage/blobs/data-lake-storage-access-control.md) (Контроль доступа в Azure Data Lake Storage 2-го поколения).
->
+> Маркер проверки подлинности AAD может кэшироваться клиентскими приложениями. Например, PowerBI кэширует токен AAD и повторно использует тот же маркер в течение часа. Длительные запросы которых запущены могут завершиться ошибкой, если срок действия маркера истекает в середине выполнения запроса. При возникновении ошибок запросов, вызванных маркером доступа AAD, срок действия которого истекает в середине запроса, рассмотрите возможность переключения на [управляемое удостоверение](develop-storage-files-storage-access-control.md?tabs=managed-identity#supported-storage-authorization-types) или [подписание общего доступа](develop-storage-files-storage-access-control.md?tabs=shared-access-signature#supported-storage-authorization-types).
+
+Чтобы использовать удостоверение для доступа к данным, необходимо иметь роль владельца, участника или читателя данных для BLOB-объекта в хранилище. В качестве альтернативы можно указать детализированные правила ACL для доступа к файлам и папкам. Даже если вы являетесь владельцем учетной записи хранения, вам придется добавить себя в одну из ролей для данных BLOB-объекта хранилища.
+Дополнительные сведения см. в статье [Access control in Azure Data Lake Storage Gen2](../../storage/blobs/data-lake-storage-access-control.md) (Контроль доступа в Azure Data Lake Storage 2-го поколения).
+
 
 ### <a name="shared-access-signature"></a>[Подписанный URL-адрес](#tab/shared-access-signature)
 
@@ -54,6 +54,10 @@ ms.locfileid: "102501577"
 > Маркер SAS: ?sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-04-18T20:42:12Z&st=2019-04-18T12:42:12Z&spr=https&sig=lQHczNvrk1KoYLCpFdSsMANd0ef9BrIPBNJ3VYEIq78%3D
 
 Чтобы разрешить доступ с помощью маркера SAS, необходимо создать учетные данные уровня базы данных или уровня сервера. 
+
+
+> [!IMPORTANT]
+> У вас нет доступа к частным учетным записям хранения с маркером SAS. Попробуйте переключиться на [управляемое удостоверение](develop-storage-files-storage-access-control.md?tabs=managed-identity#supported-storage-authorization-types) или сквозную проверку подлинности [Azure AD](develop-storage-files-storage-access-control.md?tabs=user-identity#supported-storage-authorization-types) для доступа к защищенному хранилищу.
 
 ### <a name="managed-identity"></a>[Управляемое удостоверение](#tab/managed-identity)
 
@@ -100,6 +104,15 @@ ms.locfileid: "102501577"
 #### <a name="user-identity"></a>Удостоверение пользователя
 
 Чтобы обратиться к хранилищу, защищенному брандмауэром, с помощью удостоверения пользователя, можно использовать модуль Az.Storage в PowerShell.
+#### <a name="configuration-via-azure-portal"></a>Настройка через портал Azure
+
+1. Войдите в свою учетную запись хранения на портале Azure.
+1. В разделе "Параметры" выберите "Сеть".
+1. В разделе "Экземпляры ресурсов" добавьте исключение для рабочей области Synapse.
+1. Выберите Microsoft.Synapse/workspaces в качестве типа ресурса.
+1. Выберите имя рабочей области в качестве имени экземпляра.
+1. Нажмите кнопку «Сохранить».
+
 #### <a name="configuration-via-powershell"></a>Настройка через PowerShell
 
 Выполните описанные ниже действия, чтобы настроить брандмауэр учетной записи хранения и добавить исключение для рабочей области Synapse.

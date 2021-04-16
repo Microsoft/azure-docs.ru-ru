@@ -1,14 +1,14 @@
 ---
 title: Шаблон. Параметры в определении политики
-description: Этот шаблон Политики Azure содержит пример использования параметров строки и массива в определении политики, а также способы параметризации результата.
-ms.date: 08/17/2020
+description: Этот шаблон Политики Azure содержит пример использования параметров строки и массива в определении политики, а также способ параметризации результата.
+ms.date: 03/31/2021
 ms.topic: sample
-ms.openlocfilehash: 7bb991c43a1deee39dd047aa7d814c124712fe69
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: b742aaaf950e2b5670edbaa1f0134da144e675b6
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "89649942"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106092778"
 ---
 # <a name="azure-policy-pattern-parameters"></a>Шаблон Политики Azure: параметры
 

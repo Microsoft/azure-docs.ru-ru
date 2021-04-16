@@ -2,22 +2,22 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/24/2021
+ms.date: 03/31/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: f929b5d3c285752a14bea34cf043c1eeb496c506
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
+ms.openlocfilehash: 7b618a19f6e6a3510b3d587970124e5a7c12b309
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105032660"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106090135"
 ---
 |Имя |Описание |Политики |Версия |
 |---|---|---|---|
 |[\[Предварительная версия.\] Australian Government ISM PROTECTED](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/IRAP_Audit.json) |Эта инициатива включает политики аудита и развертывания расширений виртуальных машин, соответствующие требованиям руководства по обеспечению информационной безопасности, разработанного правительством Австралии (Australian Government Information Security Manual, ISM). В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/AustralianGovernmentISM-blueprint](https://aka.ms/AustralianGovernmentISM-blueprint). |61 |4.0.1-Preview |
 |[Canada Federal PBMM](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/CanadaFederalPBMM_audit.json) |Эта инициатива включает политики аудита и развертывания расширений виртуальных машин, соответствующие требованиям Canada Federal PBMM. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/canadafederalpbmm-blueprint](https://aka.ms/canadafederalpbmm-blueprint). |59 |5.0.0 |
-|[Тесты производительности CIS для платформ Microsoft Azure 1.1.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/CISv1_1_0.json) |Эта инициатива включает политики, соответствующие некоторым рекомендациям CIS Microsoft Azure Foundations Benchmark. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/cisazure110-initiative](https://aka.ms/cisazure110-initiative). |92 |9.0.0 |
-|[\[Предварительная версия.\] CIS Microsoft Azure Foundations Benchmark 1.3.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/CISv1_3_0.json) |Эта инициатива включает политики, соответствующие некоторым рекомендациям CIS Microsoft Azure Foundations Benchmark. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/cisazure130-initiative](https://aka.ms/cisazure130-initiative). |104 |1.0.0 (предварительная версия) |
+|[Тесты для оценки безопасности CIS для платформ Microsoft Azure версии 1.1.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/CISv1_1_0.json) |Эта инициатива включает политики, соответствующие некоторым рекомендациям CIS Microsoft Azure Foundations Benchmark. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/cisazure110-initiative](https://aka.ms/cisazure110-initiative). |99 |10.0.0 |
+|[\[Предварительная версия.\] CIS Microsoft Azure Foundations Benchmark v1.3.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/CISv1_3_0.json) |Эта инициатива включает политики, соответствующие некоторым рекомендациям CIS Microsoft Azure Foundations Benchmark. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/cisazure130-initiative](https://aka.ms/cisazure130-initiative). |104 |1.0.1 — предварительная версия |
 |[\[Предварительная версия.\] CMMC уровня 3](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/CMMC_L3.json) |Эта инициатива включает политики, соответствующие некоторым требованиям Cybersecurity Maturity Model Certification (CMMC) уровня 3. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/cmmc-initiative](https://aka.ms/cmmc-initiative). |183 |3.0.0-preview |
 |[FedRAMP — высокий уровень](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/FedRAMP_H_audit.json) |Эта инициатива включает политики аудита и развертывания расширений виртуальных машин, соответствующие требованиям FedRAMP H. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/fedramph-blueprint](https://aka.ms/fedramph-blueprint). |71 |4.0.1 |
 |[FedRAMP — средний уровень](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Regulatory%20Compliance/FedRAMP_M_audit.json) |Эта инициатива включает политики аудита, соответствующие требованиям FedRAMP M. В будущих выпусках будут добавлены дополнительные политики. Дополнительные сведения см. по адресу [https://aka.ms/fedrampm-blueprint](https://aka.ms/fedrampm-blueprint). |62 |4.0.1 |

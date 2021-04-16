@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 03/09/2021
+ms.date: 04/02/2021
 ms.author: jeedes
-ms.openlocfilehash: f7167df523ca6f84eacd92fc7af1011e8b3b00b6
-ms.sourcegitcommit: ac035293291c3d2962cee270b33fca3628432fac
+ms.openlocfilehash: ba6eb0a1b607fc05c4d0c660dd3d7016f81ef4b3
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104950389"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106449534"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-cornerstone-single-sign-on"></a>Руководство по интеграции единого входа Azure Active Directory с Cornerstone Single Sign-On
 
@@ -123,49 +123,11 @@ ms.locfileid: "104950389"
 
 ## <a name="configure-cornerstone-single-sign-on-sso"></a>Настройка единого входа в Cornerstone Single Sign-On
 
-1. Войдите в Cornerstone Single Sign-On от имени администратора.
-
-1. Перейдите в раздел **Администратор -> Средства**.
-
-    ![Снимок экрана страницы администратора.](./media/cornerstone-ondemand-tutorial/admin.png)
-
-1. Выберите панель **EDGE** в разделе **Средства настройки**.
-
-    ![Снимок экрана панели EDGE.](./media/cornerstone-ondemand-tutorial/edge-panel.png)
-
-1. Выберите пункт "Единый вход" в разделе **Интеграция**.
-
-    ![Снимок экрана для параметра единого входа.](./media/cornerstone-ondemand-tutorial/single-sign-on.png)
-
-1. Нажмите кнопку **Add SSO** (Добавить единый вход). Выберите пункт **Inbound SAML** (Входящий SAML) в расположенном ниже всплывающем окне и нажмите кнопку **Добавить**.
-
-    ![Снимок экрана входящего SAML.](./media/cornerstone-ondemand-tutorial/inbound.png)
-
-1. Выполните описанные ниже действия на следующей странице:
-
-    ![Снимок экрана раздела "Конфигурация" для Cornerstone.](./media/cornerstone-ondemand-tutorial/configuration.png)
-
-    а. В окне **General Properties** (Общие свойства) щелкните **Отправить файл**, чтобы отправить файл **сертификата (Base64)** , скачанный с портала Azure.
-
-    b. Установите флажок **Включить** и в текстовое поле **IDP URL** (URL-адрес поставщика удостоверений) вставьте значение **URL-адрес входа**, скопированное с портала Azure.
-
-    c. Выберите команду **Сохранить**.
+Чтобы настроить единый вход на стороне **Cornerstone Single Sign-On**, отправьте скачанный **сертификат (Base64)** и соответствующие URL-адреса, скопированные на портале Azure, в [службу поддержки Cornerstone Single Sign-On](mailto:moreinfo@csod.com) или свяжитесь с партнером. Специалисты службы поддержки настроят подключение единого входа SAML на обеих сторонах.
 
 ### <a name="create-cornerstone-single-sign-on-test-user"></a>Создание тестового пользователя Cornerstone Single Sign-On
 
 Цель этого раздела — создать пользователя с именем B.Simon в Cornerstone Single Sign-On. Cornerstone Single Sign-On поддерживает автоматическую подготовку пользователей, которая по умолчанию включена. Дополнительные сведения о настройке автоматической подготовки пользователей можно найти [здесь](./cornerstone-ondemand-provisioning-tutorial.md).
-
-**Если необходимо создать пользователя вручную, выполните следующие действия:**
-
-1. Войдите в Cornerstone Single Sign-On от имени администратора.
-
-1. Перейдите в раздел **Администратор -> Пользователи** и щелкните **Добавить пользователя** в нижней части страницы.
-
-    ![Снимок экрана создания тестового пользователя Cornerstone.](./media/cornerstone-ondemand-tutorial/user-1.png)
-
-1. Заполните обязательные поля на странице **Добавление нового пользователя** и нажмите кнопку **Сохранить**.
-
-    ![Снимок экрана создания тестового пользователя с обязательными полями.](./media/cornerstone-ondemand-tutorial/user-2.png)
 
 ## <a name="test-sso"></a>Проверка единого входа 
 

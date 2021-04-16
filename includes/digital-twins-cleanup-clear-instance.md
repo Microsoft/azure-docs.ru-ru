@@ -5,11 +5,11 @@ ms.service: digital-twins
 ms.topic: include
 ms.date: 2/4/2021
 ms.author: baanders
-ms.openlocfilehash: 10ecd986afa5e9046058862245fa083b2c8f4145
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 6cfcc4bcf5a86726f020df9962a695e019f29fff
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102244477"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107108845"
 ---
-* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, который настроили при работе с этой статьей, но вам нужно очистить некоторые или все его модели, двойники и связи**, вы можете воспользоваться командами CLI [az dt](/cli/azure/ext/azure-iot/dt) в окне [Azure Cloud Shell](https://shell.azure.com).
+* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, который настроили при работе с этой статьей, но вам нужно очистить некоторые или все его модели, двойники и связи**, вы можете воспользоваться командами CLI [az dt](/cli/azure/dt) в окне [Azure Cloud Shell](https://shell.azure.com).

@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 05/14/2018
-ms.openlocfilehash: 73d291fd76d9adbe2a095406b56bd879d497d3b5
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d432d20660cd1b7ee59c9ef72f9db04bc0009481
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98942659"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107306591"
 ---
 # <a name="publish-an-hdinsight-application-in-the-azure-marketplace"></a>Публикация приложения HDInsight в Azure Marketplace
 Вы можете установить приложения Azure HDInsight в кластере HDInsight под управлением Linux. В этой статье описано, как опубликовать приложение HDInsight в Azure Marketplace. Общие сведения о публикации в Azure Marketplace см. в статье [Публикация предложения и управление им в Azure Marketplace](../marketplace/overview.md).
@@ -83,7 +83,8 @@ ms.locfileid: "98942659"
 ## <a name="publish-the-application"></a>Публикация приложения
 Чтобы опубликовать приложение HDInsight, сделайте следующее:
 
-1. Войдите на [Портал публикации Azure](https://publish.windowsazure.com/).
+1. Войдите на Портал публикации Azure.
+
 2. В меню слева выберите **Solution templates** (Шаблоны решений).
 3. Введите заголовок и нажмите **Create a new solution template** (Создать шаблон решения).
 4. Щелкните **Create Dev Center account and join the Azure program** (Создать учетную запись центра разработчиков и присоединиться к программе Azure), чтобы зарегистрировать свою компанию, если вы еще этого не сделали.  Дополнительные сведения см. в статье [Создание учетной записи разработчика Майкрософт](../marketplace/overview.md).

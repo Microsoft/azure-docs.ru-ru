@@ -5,14 +5,14 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: overview
-ms.date: 04/20/2020
+ms.date: 04/05/2021
 ms.custom: devx-track-js
-ms.openlocfilehash: 24a38fde3d1b6bbe1efef9241458da846c186112
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 0fadb679260582a788eb6408ff3761f00c2ceb1a
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97916343"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106448834"
 ---
 # <a name="playback-technology-tech"></a>Технология воспроизведения #
 
@@ -21,7 +21,7 @@ ms.locfileid: "97916343"
 - **azureHtml5JS.** Используются стандарты MSE и EME в сочетании с элементом Video для воспроизведения без подключаемых модулей содержимого формата DASH. При этом поддерживается 128-битное шифрование содержимого AES или общее шифрование содержимого DRM (через PlayReady и Widevine, если браузер поддерживает это) из Служб мультимедиа Azure.
 - **flashSS.** Используется технология Flash Player для воспроизведения содержимого Smooth с поддержкой 128-битного шифрования AES из Служб мультимедиа Azure. Требуется версия Flash 11.4 или более поздняя.
 - **html5FairPlayHLS.** Используется браузерная технология воспроизведения, характерная для Safari, на основе HLS с элементом Video. Для этой технологии требуется воспроизведение защищенного содержимого FairPlay из Служб мультимедиа Azure. Ее поддержка добавлена в techOrder 19 октября 2016 г.
-- **Silverlight.** Используется технологии Silverlight для воспроизведения содержимого Smooth с поддержкой защищенного содержимого PlayReady из Служб мультимедиа Azure.
+- **SilverlightSS.** Используется технология Silverlight для воспроизведения содержимого Smooth с поддержкой защищенного содержимого PlayReady из Служб мультимедиа Azure.
 - **html5.** Используется браузерная технология воспроизведения с элементом Video.  На устройстве Apple iOS или Android эта технология позволяет воспроизводить потоки HLS с некоторой базовой поддержкой 128-битового шифрования AES или содержимого DRM (через FairPlay, если браузер поддерживает это).
 
 ## <a name="tech-order"></a>Порядок технологий ##
@@ -45,16 +45,16 @@ ms.locfileid: "97916343"
 | Браузер        | OS                                                       | Ожидаемая технология (без шифрования)  | Ожидаемая технология (AES)  | Ожидаемая технология (DRM)          |
 |----------------|----------------------------------------------------------|------------------------|----------------------|------------------------------|
 | EdgeIE 11      | Windows 10, Windows 8.1, Windows Phone 10<sup>1</sup>               | azureHtml5JS           | azureHtml5JS         | azureHtml5JS (PlayReady)     |
-| IE 11          | Windows 7, Windows Vista<sup>1</sup>                     | flashSS                | flashSS              | silverlightSS (PlayReady)    |
+| IE 11          | Windows 7, Windows Vista<sup>1</sup>                     | flashSS                | flashSS              | SilverlightSS (PlayReady)    |
 | IE 11          | Windows Phone 8.1                                        | azureHtml5JS           | azureHtml5JS         | Не поддерживается                |
 | Edge           | Xbox One<sup>1</sup> (обновление от ноября 2015 г.)                   | azureHtml5JS           | azureHtml5JS         | Не поддерживается                |
 | Chrome 37+     | Windows 10, Windows 8.1, macOS X Yosemite<sup>1</sup>   | azureHtml5JS           | azureHtml5JS         | azureHtml5JS (Widevine)      |
 | Firefox 47+    | Windows 10, Windows 8.1, macOS X Yosemite+<sup>1</sup>  | azureHtml5JS           | azureHtml5JS         | azureHtml5JS (Widevine)      |
-| Firefox 42-46  | Windows 10, Windows 8.1, macOS X Yosemite+<sup>1</sup>  | azureHtml5JS           | azureHtml5JS         | silverlightSS (PlayReady)    |
-| Firefox 35–41  | Windows 10, Windows 8.1                                  | flashSS                | flashSS              | silverlightSS (PlayReady)    |
+| Firefox 42-46  | Windows 10, Windows 8.1, macOS X Yosemite+<sup>1</sup>  | azureHtml5JS           | azureHtml5JS         | SilverlightSS (PlayReady)    |
+| Firefox 35–41  | Windows 10, Windows 8.1                                  | flashSS                | flashSS              | SilverlightSS (PlayReady)    |
 | Safari         | iOS 6+                                                   | html5                  | html5 (без маркера)3    | Не поддерживается                |
 | Safari 8+      | OS X Yosemite+                                           | azureHtml5JS           | azureHtml5JS         | html5FairPlayHLS (FairPlay)  |
-| Safari 6       | OS X Mountain Lion<sup>1</sup>                           | flashSS                | flashSS              | silverlightSS (PlayReady)    |
+| Safari 6       | OS X Mountain Lion<sup>1</sup>                           | flashSS                | flashSS              | SilverlightSS (PlayReady)    |
 | Chrome 37+     | Android 4.4.4+<sup>2</sup>                               | azureHtml5JS           | azureHtml5JS         | azureHtml5JS (Widevine)      |
 | Chrome 37+     | Android 4.02                                             | html5                  | html5 (без маркера)<sup>3</sup>    | Не поддерживается                |
 | Firefox 42+    | Android 5.0+<sup>2</sup>                                 | azureHtml5JS           | azureHtml5JS         | Не поддерживается                |

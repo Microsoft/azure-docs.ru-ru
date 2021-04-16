@@ -10,17 +10,17 @@ ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: a0f8744061853e8bd81d3435c1f007e96a7d5783
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 653692812507c05c6cfc58b00d3c93ece19019bb
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103495340"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106113462"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
-- Последняя версия [клиентской библиотеки NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
+- Последняя версия [пакета SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
 - Активный ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../create-communication-resource.md)
 
 ## <a name="setting-up"></a>Настройка
@@ -45,7 +45,7 @@ dotnet build
 Оставаясь в каталоге приложения, установите пакет библиотеки удостоверений Служб коммуникации Azure для .NET с помощью команды `dotnet add package`.
 
 ```console
-dotnet add package Azure.Communication.Identity --version 1.0.0-beta.5
+dotnet add package Azure.Communication.Identity --version 1.0.0
 ```
 
 ### <a name="set-up-the-app-framework"></a>Настройка платформы приложения
@@ -150,8 +150,7 @@ Console.WriteLine(token);
 Чтобы обновить маркер доступа, передайте экземпляр объекта `CommunicationUserIdentifier` в метод `GetTokenAsync`. Если вы сохранили значение `Id` и вам нужно создать новый объект `CommunicationUserIdentifier`, для этого можно передать сохраненное значение `Id` в конструктор `CommunicationUserIdentifier` следующим образом:
 
 ```csharp
-// In this example, userId is a string containing the Id property of a previously-created CommunicationUser
-var identityToRefresh = new CommunicationUserIdentifier(userId);
+var identityToRefresh = new CommunicationUserIdentifier(identity.Id);
 var tokenResponse = await client.GetTokenAsync(identityToRefresh, scopes: new [] { CommunicationTokenScope.VoIP });
 ```
 
