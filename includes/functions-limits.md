@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 05/04/2020
 ms.author: glenga
 ms.openlocfilehash: 91f72117fdbcdbeda1d906a9760243e66404920c
-ms.sourcegitcommit: a8ff4f9f69332eef9c75093fd56a9aae2fe65122
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "105104574"
 ---
 | Ресурс |[План потребления](../articles/azure-functions/consumption-plan.md)|[План категории "Премиум"](../articles/azure-functions/functions-premium-plan.md)|[План ценовой категории "Выделенный"](../articles/azure-functions/dedicated-plan.md)|[ASE](../articles/app-service/environment/intro.md)| [Kubernetes](../articles/aks/quotas-skus-regions.md) |

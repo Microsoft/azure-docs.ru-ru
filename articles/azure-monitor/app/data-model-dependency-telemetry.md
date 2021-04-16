@@ -1,14 +1,14 @@
 ---
-title: Модель данных зависимостей Application Insights Azure Monitor
+title: Модель данных зависимостей Application Insights для Azure Monitor
 description: Модель данных Application Insights для телеметрии зависимостей
 ms.topic: conceptual
 ms.date: 04/17/2017
 ms.reviewer: sergkanz
 ms.openlocfilehash: 0f9fc96479569c3411024068ed614d422035ab17
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87315977"
 ---
 # <a name="dependency-telemetry-application-insights-data-model"></a>Телеметрия зависимостей: модель данных Application Insights
@@ -43,7 +43,7 @@ ms.locfileid: "87315977"
 
 Код результата для вызова зависимости. Примерами являются код ошибки SQL и код состояния HTTP.
 
-## <a name="success"></a>Успешно
+## <a name="success"></a>Успешное завершение
 
 Указание того, был ли вызов успешным.
 

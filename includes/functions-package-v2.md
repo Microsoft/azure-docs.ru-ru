@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 services: functions
 author: craigshoemaker
@@ -10,10 +10,10 @@ ms.date: 01/28/2020
 ms.author: cshoe
 ms.custom: include file
 ms.openlocfilehash: bcc55156ca1d03614a4ff9767d6cf3f2603c06ca
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96027940"
 ---
 Добавьте поддержку в предпочитаемой среде разработки, используя указанные ниже методы.

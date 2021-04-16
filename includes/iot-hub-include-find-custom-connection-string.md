@@ -1,5 +1,5 @@
 ---
-title: включить файл
+title: Включить файл
 description: включить файл
 author: robinsh
 ms.service: iot-hub
@@ -9,10 +9,10 @@ ms.date: 11/02/2018
 ms.author: robinsh
 ms.custom: include file
 ms.openlocfilehash: 6f43bbcd83861f7d39de2aa89bbe035c2ff5b809
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "70050407"
 ---
 <!-- This tells how to create a custom shared access policy for your IoT hub and get the connection string for it-->

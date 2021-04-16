@@ -1,6 +1,6 @@
 ---
-title: Краткое руководство. Клиентская библиотека службы "Компьютерное зрение" для Python
-description: В этом кратком руководстве описано начало работы с клиентской библиотекой API "Компьютерное зрение" для Python.
+title: Краткое руководство. Клиентская библиотека оптического распознавания символов для Python
+description: В этом кратком руководстве описано, как приступить к работе с клиентской библиотекой оптического распознавания символов для Python.
 services: cognitive-services
 author: PatrickFarley
 manager: nitinme
@@ -9,19 +9,16 @@ ms.subservice: computer-vision
 ms.topic: include
 ms.date: 12/15/2020
 ms.author: pafarley
-ms.openlocfilehash: 1b17173c95f26c622a0021d30eb678fc27b60c2f
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: d0b2a854391097cc7d95c4286ba581f3660d397e
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103621935"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284827"
 ---
 <a name="HOLTop"></a>
 
-С помощью клиентской библиотеки службы "Компьютерное зрение" можно выполнять следующие операции:
-
-* анализ изображений на наличие тегов, текстового описания, лиц, содержимого для взрослых и многого другого.
-* считывание печатного и рукописного текста с помощью API службы чтения.
+Используйте клиентскую библиотеку оптического распознавания символов для чтения печатных и рукописных текстов с помощью API чтения.
 
 [Справочная документация](/python/api/azure-cognitiveservices-vision-computervision/azure.cognitiveservices.vision.computervision) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/cognitiveservices/azure-cognitiveservices-vision-computervision) | [Пакет (PiPy)](https://pypi.org/project/azure-cognitiveservices-vision-computervision/) | [Примеры](https://azure.microsoft.com/resources/samples/?service=cognitive-services&term=vision&sort=0)
 
@@ -74,7 +71,7 @@ pip install pillow
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK Python для Компьютерного зрения.
+Следующие классы и интерфейсы обрабатывают некоторые основные функции пакета SDK OCR для Python.
 
 |Имя|Описание|
 |---|---|
@@ -84,10 +81,9 @@ pip install pillow
 
 ## <a name="code-examples"></a>Примеры кода
 
-Эти фрагменты кода показывают, как выполнить следующие действия с помощью клиентской библиотеки службы "Компьютерное зрение" для Python:
+В следующих фрагментах кода показано выполнение следующих действий с помощью клиентской библиотеки OCR для Python:
 
 * [аутентификация клиента](#authenticate-the-client);
-* [Анализ изображения](#analyze-an-image)
 * [Чтение печатного и рукописного текста](#read-printed-and-handwritten-text).
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
@@ -97,89 +93,11 @@ pip install pillow
 [!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_client)]
 
 > [!div class="nextstepaction"]
-> [Мной аутентифицирован клиент](?success=authenticate-client#analyze-an-image) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Python&Section=authenticate-client)
-
-## <a name="analyze-an-image"></a>Анализ изображения
-
-Используйте объект клиента для анализа визуальных признаков с применением изображения, расположенного удаленно. Сначала сохраните ссылку на URL-адрес изображения, которое необходимо проанализировать.
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_remoteimage)]
-
-> [!TIP]
-> Можно также проанализировать локальный образ. Изучите информацию о методах класса [ComputerVisionClientOperationsMixin](/python/api/azure-cognitiveservices-vision-computervision/azure.cognitiveservices.vision.computervision.operations.computervisionclientoperationsmixin), например **analyze_image_in_stream**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/python/ComputerVision/ComputerVisionQuickstart.py) для сценариев, включающих использование локальных изображений.
-
-### <a name="get-image-description"></a>Получение описания изображения
-
-Следующий код получает список созданных заголовков для изображения. Дополнительные сведения см. в статье [Описание изображений на понятном для пользователя языке](../../concept-describing-images.md).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_describe)]
-
-### <a name="get-image-category"></a>Получение категории изображения
-
-Следующий код получает обнаруженную категорию изображения. Дополнительные сведения см. в статье [Categorize images by subject matter](../../concept-categorizing-images.md) (Классификация изображений по темам).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_categorize)]
-
-### <a name="get-image-tags"></a>Получение тегов изображения
-
-Следующий код получает набор обнаруженных тегов изображения. Дополнительные сведения см. в статье о [тегах содержимого](../../concept-tagging-images.md).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_tags)]
-
-### <a name="detect-objects"></a>Обнаружение объектов
-
-Следующий код обнаруживает общие объекты в образе и выводит их на консоль. Дополнительные сведения см. в статье [Обнаружение объектов](../../concept-object-detection.md).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_objects)]        
-
-### <a name="detect-brands"></a>Обнаружение торговых марок
-
-Следующий код обнаруживает фирменные торговые марки и логотипы в образе и выводит их на консоль. Дополнительные сведения см. в статье [Обнаружение торговых марок](../../concept-brand-detection.md).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_brands)]
-
-### <a name="detect-faces"></a>Распознавание лиц
-
-Следующий код возвращает обнаруженные лица на изображении с их координатами прямоугольника и атрибутами выбора лиц. Дополнительные сведения см. в статье [Определение лиц с помощью компьютерного зрения](../../concept-detecting-faces.md).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_faces)]
-
-### <a name="detect-adult-racy-or-gory-content"></a>Обнаружение содержимого для взрослых, непристойного или жуткого содержимого
-
-Следующий код выводит сведения об обнаружении содержимого для взрослых на изображении. Дополнительные сведения см. в статье [Detect adult content](../../concept-detecting-adult-content.md) (Обнаружение содержимого для взрослых).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_adult)]
-
-### <a name="get-image-color-scheme"></a>Получение цветовой схемы изображения
-
-Следующий код выводит обнаруженные атрибуты цвета на изображении, например доминирующие и акцентные цвета. Дополнительные сведения см. в статье [Обнаружение цветовых схем на изображениях](../../concept-detecting-color-schemes.md).
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_color)]
-
-### <a name="get-domain-specific-content"></a>Получение содержимого, связанного с определенной предметной областью
-
-Компьютерное зрение может использовать специализированную модель для дальнейшего анализа изображений. Дополнительные сведения см. в статье [Обнаружение содержимого, связанного с определенными предметными областями](../../concept-detecting-domain-content.md). 
-
-Следующий код анализирует данные об обнаруженных известных лицах на изображении.
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_celebs)]
-
-Следующий код анализирует данные об обнаруженных достопримечательностях на изображении.
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_landmarks)]
-
-### <a name="get-the-image-type"></a>Получение сведений о типе изображения
-
-Следующий код выводит информацию о типе изображения&mdash;, независимо от того, является ли это картинкой или рисунком.
-
-[!code-python[](~/cognitive-services-quickstart-code/python/ComputerVision/ComputerVisionQuickstart.py?name=snippet_type)]
-
-> [!div class="nextstepaction"]
-> [Мной проанализировано изображение](?success=analyze-image#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Python&Section=analyze-image)
+> [Мной аутентифицирован клиент](?success=authenticate-client#read-printed-and-handwritten-text) [Возникла проблема](https://microsoft.qualtrics.com/jfe/form/SV_0Cl5zkG3CnDjq6O?PLanguage=Python&Section=authenticate-client)
 
 ## <a name="read-printed-and-handwritten-text"></a>Чтение печатного и рукописного текста
 
-Компьютерное зрение может считывать видимый текст в образе и преобразовывать его в поток символов. Это необходимо выполнять двумя частями.
+Служба OCR может считывать видимый текст в образе и преобразовывать его в поток символов. Это необходимо выполнять двумя частями.
 
 ### <a name="call-the-read-api"></a>Вызов API чтения
 
@@ -222,10 +140,10 @@ python quickstart-file.py
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Изучив это краткое руководство, вы узнали, как с помощью библиотеки службы "Компьютерное зрение" для Python выполнять базовые задачи. Далее ознакомьтесь со справочной документацией, чтобы узнать больше о библиотеке.
+Из этого краткого руководства вы узнали, как решать базовые задачи с помощью библиотеки OCR для Python. Далее ознакомьтесь со справочной документацией, чтобы узнать больше о библиотеке.
 
 > [!div class="nextstepaction"]
->[Справочник по API службы "Компьютерное зрение" (Python)](/python/api/azure-cognitiveservices-vision-computervision/azure.cognitiveservices.vision.computervision)
+>[Справочник по API OCR (Python)](/python/api/azure-cognitiveservices-vision-computervision/azure.cognitiveservices.vision.computervision)
 
-* [Что собой представляет Компьютерное зрение](../../overview.md)
+* [Общие сведения об OCR](../../overview-ocr.md)
 * Исходный код для этого шаблона можно найти на портале [GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/python/ComputerVision/ComputerVisionQuickstart.py).

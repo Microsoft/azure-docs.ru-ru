@@ -1,6 +1,6 @@
 ---
-title: включить файл
-description: включить файл
+title: Включить файл
+description: Включить файл
 services: virtual-wan
 author: cherylmc
 ms.service: virtual-wan
@@ -9,10 +9,10 @@ ms.date: 10/07/2019
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: c1f83303c3f186b37c1c5c06e61c2263420c0cfa
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "72028038"
 ---
 1. Перейдите на страницу виртуальной глобальной сети. На портале щелкните **+Создать ресурс**. В поле поиска введите **Виртуальная глобальная сеть** и нажмите клавишу ВВОД.

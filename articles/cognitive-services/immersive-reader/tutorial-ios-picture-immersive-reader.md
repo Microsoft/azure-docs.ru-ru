@@ -1,5 +1,5 @@
 ---
-title: Руководство по Созданию приложения для iOS, которое создает фотографию и запускает ее в Иммерсивном средстве чтения (Swift)
+title: Учебник по созданию приложения для iOS, которое создает фотографию и запускает ее в иммерсивном средстве чтения (Swift)
 titleSuffix: Azure Cognitive Services
 description: В этом руководстве вы создадите приложение для iOS с нуля и добавите изображение в функциональность Иммерсивного средства чтения.
 services: cognitive-services
@@ -9,18 +9,18 @@ ms.subservice: immersive-reader
 ms.topic: tutorial
 ms.date: 01/14/2020
 ms.author: metang
-ms.openlocfilehash: d8ee6b2344f0c953233195a693e774e410a8a8ea
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.openlocfilehash: 23e9fd586882d25aed646b984e17c5885145ccff
+ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94368208"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106284640"
 ---
-# <a name="tutorial-create-an-ios-app-that-launches-the-immersive-reader-with-content-from-a-photo-swift"></a>Руководство по Созданию приложения для iOS, которое запускает иммерсивное средство чтения с содержимым из фотографии (Swift)
+# <a name="tutorial-create-an-ios-app-that-launches-the-immersive-reader-with-content-from-a-photo-swift"></a>Учебник по созданию приложения для iOS, которое запускает иммерсивное средство чтения с содержимым из фотографии (Swift)
 
 [Иммерсивное средство чтения](https://www.onenote.com/learningtools) — это включительно разработанное решение, в котором реализованы проверенные методы, улучшающие понимание при чтении.
 
-[API чтение службы Cognitive Service "Компьютерное зрение"](../computer-vision/concept-recognizing-text.md) обнаруживает текстовое содержимое в изображении, используя новейшие модели распознавания Майкрософт и преобразует обнаруженный текст в поток символов, пригодный для машинного чтения.
+[API чтение службы Cognitive Service "Компьютерное зрение"](../computer-vision/overview-ocr.md) обнаруживает текстовое содержимое в изображении, используя новейшие модели распознавания Майкрософт и преобразует обнаруженный текст в поток символов, пригодный для машинного чтения.
 
 В этом руководстве вы создадите приложение для iOS с нуля, интегрируете API чтения, а также Иммерсивное средство чтения с помощью пакета SDK Ииммерсивного средства чтения. Полностью рабочий пример этого руководства доступен [здесь](https://github.com/microsoft/immersive-reader-sdk/tree/master/js/samples/ios).
 

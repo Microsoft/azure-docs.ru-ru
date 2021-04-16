@@ -6,13 +6,12 @@ ms.service: hpc-cache
 ms.topic: overview
 ms.date: 03/11/2021
 ms.author: v-erkel
-ms.custom: references_regions
-ms.openlocfilehash: bbb0ca345dc76f566dd55956911703e2c9bf0183
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 2085efc5f38b2252e40f4aeb1ebfa16bf38147b4
+ms.sourcegitcommit: 20f8bf22d621a34df5374ddf0cd324d3a762d46d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103471820"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107256146"
 ---
 # <a name="what-is-azure-hpc-cache"></a>Что такое Azure HPC Cache?
 

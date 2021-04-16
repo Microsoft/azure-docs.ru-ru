@@ -1,25 +1,27 @@
 ---
 title: Начало работы со Службами коммуникации Azure с использованием взаимодействия с Teams
 titleSuffix: An Azure Communication Services quickstart
-description: Из этого краткого руководства вы узнаете, как присоединиться к собранию в Teams с помощью клиентской библиотеки чата Служб коммуникации Azure.
+description: Из этого краткого руководства вы узнаете, как присоединиться к собранию в Teams с помощью пакета SDK для чата Служб коммуникации Azure
 author: askaur
 ms.author: askaur
 ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 75580931b2df33b02b9759b6faaa5bec548daaae
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ba3a589c5d0f09f24950bd3fee8edc7f4dcd4601
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103496186"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106169068"
 ---
 # <a name="quickstart-join-your-chat-app-to-a-teams-meeting"></a>Краткое руководство. Подключение приложения чата к собранию в Teams
+
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include-chat.md)]
 
 > [!IMPORTANT]
 > Чтобы включить или отключить [взаимодействие арендаторов в Teams](../../concepts/teams-interop.md), заполните [эту форму](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR21ouQM6BHtHiripswZoZsdURDQ5SUNQTElKR0VZU0VUU1hMOTBBMVhESS4u).
 
-Приступите к работе со Службами коммуникации Azure, подключив решение чата к Microsoft Teams с помощью клиентской библиотеки JavaScript. 
+Приступите к работе со Службами коммуникации Azure, подключив решение для чата к Microsoft Teams с помощью пакета SDK для JavaScript. 
 
 ## <a name="prerequisites"></a>Предварительные требования 
 
