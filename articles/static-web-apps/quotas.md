@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: overview
 ms.date: 05/08/2020
 ms.author: cshoe
-ms.openlocfilehash: 1bf9a2cf7af8b18994ef2473c11176b8aea74f6e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: e3538e90a6dea69c703f56871fde86a18557a022
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102042731"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106095175"
 ---
 # <a name="quotas-in-azure-static-web-apps-preview"></a>Квоты в предварительной версии Статических веб-приложений
 
@@ -29,7 +29,7 @@ ms.locfileid: "102042731"
 | Размер приложения                    | 250 МБ           |
 | Подготовительные среды | 3                |
 | Личные домены              | 1                |
-| Авторизация<br><br>С пользовательскими ролями и правилами маршрутизации | Максимум 25 приглашенных пользователей и назначенных ролей |
+| Авторизация (с пользовательскими ролями и правилами маршрутизации) | Максимум 25 конечных пользователей, которые могут относиться к настраиваемым ролям |
 | Функции Azure             | Доступно        |
 | Соглашение об уровне обслуживания                         | None             |
 

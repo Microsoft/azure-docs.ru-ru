@@ -10,25 +10,25 @@ ms.date: 03/11/2021
 ms.topic: include
 ms.custom: include file
 ms.author: lakshmans
-ms.openlocfilehash: e8424f6b5b7617b00de6dedbece3325f3c5513c8
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: 2b96d62fb2be27de03964212557446d2e792beb8
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103622087"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106113307"
 ---
-Начало работы со Службами коммуникации Azure с помощью клиентской библиотеки SMS Служб коммуникации Azure для Python для отправки SMS-сообщений.
+Начало работы со Службами коммуникации Azure с помощью пакета SDK для SMS Служб коммуникации Azure для Python для отправки SMS-сообщений.
 
 Выполнение этого краткого руководства предполагает небольшую дополнительную плату в несколько центов США в учетной записи Azure.
 
 <!--**TODO: update all these reference links as the resources go live**
 
-[API reference documentation](../../../references/overview.md) | [Library source code](#todo-sdk-repo) | [Package (PiPy)](#todo-nuget) | [Samples](#todo-samples)--> 
+[API reference documentation](../../../references/overview.md) | [Library source code](#todo-sdk-repo) | [Package (PiPy)](#todo-nuget) | [Samples](#todo-samples)-->
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно. 
-- [Python](https://www.python.org/downloads/) 2.7, 3.5 или более поздней версии.
+- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
+- [Python](https://www.python.org/downloads/) 2.7, 3.6 или более поздней версии.
 - Активный ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../../create-communication-resource.md)
 - Номер телефона с поддержкой SMS-сообщений. [Получите номер телефона.](../get-phone-number.md)
 
@@ -62,15 +62,15 @@ except Exception as ex:
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Оставаясь в каталоге приложения, установите пакет клиентской библиотеки SMS Служб коммуникации для Python с помощью команды `pip install`.
+Оставаясь в каталоге приложения, установите пакет SDK для SMS Служб коммуникации для пакета Python с помощью команды `pip install`.
 
 ```console
-pip install azure-communication-sms --pre
+pip install azure-communication-sms
 ```
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки SMS Служб коммуникации для Python.
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK для SMS Служб коммуникации для Python.
 
 | Имя                                  | Описание                                                  |
 | ------------------------------------- | ------------------------------------------------------------ |
@@ -79,16 +79,14 @@ pip install azure-communication-sms --pre
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
 
-Создайте экземпляр **SmsClient** с использованием строки подключения. Приведенный ниже код извлекает строку подключения для ресурса из переменной среды с именем `COMMUNICATION_SERVICES_CONNECTION_STRING`. См. сведения о том, как [управлять строкой подключения ресурса](../../create-communication-resource.md#store-your-connection-string).
+Создайте экземпляр **SmsClient** с использованием строки подключения. См. сведения о том, как [управлять строкой подключения ресурса](../../create-communication-resource.md#store-your-connection-string).
 
 ```python
-# This code demonstrates how to fetch your connection string
-# from an environment variable.
-connection_string = os.getenv('COMMUNICATION_SERVICES_CONNECTION_STRING')
-
 # Create the SmsClient object which will be used to send SMS messages
-sms_client = SmsClient.from_connection_string(connection_string)
+sms_client = SmsClient.from_connection_string(<connection_string>)
 ```
+Для простоты в этом кратком руководстве мы используем строки подключения. Но в рабочей среде мы рекомендуем использовать [управляемые удостоверения](../../../quickstarts/managed-identity.md), так как они являются более безопасными и управляемыми в требуемом масштабе.
+
 
 ## <a name="send-a-11-sms-message"></a>Отправка личного текстового сообщения
 
@@ -99,14 +97,17 @@ sms_client = SmsClient.from_connection_string(connection_string)
 # calling send() with sms values
 sms_responses = sms_client.send(
     from_="<from-phone-number>",
-    to="<to-phone-number>,
+    to="<to-phone-number>",
     message="Hello World via SMS",
     enable_delivery_report=True, # optional property
     tag="custom-tag") # optional property
 
 ```
 
-Необходимо изменить `<from-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, и `<to-phone-number>` на номер телефона, на который вы хотите отправить сообщение. 
+Необходимо изменить `<from-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, и `<to-phone-number>` на номер телефона, на который вы хотите отправить сообщение.
+
+> [!WARNING]
+> Обратите внимание, что номера телефонов должны быть указаны в формате международного стандарта E.164, (например, +14255550123).
 
 ## <a name="send-a-1n-sms-message"></a>Отправка группового текстового сообщения
 
@@ -124,18 +125,43 @@ sms_responses = sms_client.send(
 
 ```
 
-Необходимо изменить `<from-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, а также `<to-phone-number-1>` и `<to-phone-number-2>` на номера телефона, на которые вы хотите отправить сообщение. 
+Необходимо изменить `<from-phone-number>` на номер телефона с поддержкой SMS, связанный с ресурсом Служб коммуникации, и `<to-phone-number-1>` `<to-phone-number-2>` на номера телефона, на которые вы хотите отправить сообщение.
+
+> [!WARNING]
+> Обратите внимание, что номера телефонов должны быть указаны в формате международного стандарта E.164, (например, +14255550123).
 
 ## <a name="optional-parameters"></a>Необязательные параметры
 
 Параметр `enable_delivery_report` является необязательным. Его можно использовать для настройки отчетов о доставке. Это полезно, если вы хотите, чтобы при доставке SMS-сообщений создавались события. Сведения о настройке отчетов о доставке SMS-сообщений см. в кратком руководстве [Обработка событий SMS-сообщений](../handle-sms-events.md).
 
-Параметр `tag` является необязательным. Его можно использовать для настройки пользовательских тегов.
+`tag` — это необязательный параметр, который можно использовать для применения тегов к отчету о доставке.
 
 ## <a name="run-the-code"></a>Выполнение кода
-
 Запустите приложение из каталога приложения с помощью команды `python`.
 
 ```console
 python send-sms.py
+```
+
+Полный скрипт Python должен выглядеть примерно следующим образом:
+
+```python
+
+import os
+from azure.communication.sms import SmsClient
+
+try:
+    # Create the SmsClient object which will be used to send SMS messages
+    sms_client = SmsClient.from_connection_string("<connection string>")
+    # calling send() with sms values
+    sms_responses = sms_client.send(
+       from_="<from-phone-number>",
+       to="<to-phone-number>",
+       message="Hello World via SMS",
+       enable_delivery_report=True, # optional property
+       tag="custom-tag") # optional property
+
+except Exception as ex:
+    print('Exception:')
+    print(ex)
 ```
