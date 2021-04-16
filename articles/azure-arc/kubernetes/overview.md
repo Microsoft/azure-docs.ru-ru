@@ -9,12 +9,12 @@ ms.author: mlearned
 description: В этой статье представлен обзор Kubernetes с поддержкой Azure Arc.
 keywords: Kubernetes, Arc, Azure, контейнеры
 ms.custom: references_regions
-ms.openlocfilehash: b3296aa1c1d5d463cc7f4cb932b44ad76632e19e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 69e9886f214d0076c8e66231fd6ad15bb060828f
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102121598"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106449654"
 ---
 # <a name="what-is-azure-arc-enabled-kubernetes"></a>Что представляет собой Azure Arc с поддержкой Kubernetes?
 
@@ -43,9 +43,11 @@ Kubernetes с поддержкой Azure Arc используется в сле�
 
 * Развертывание приложений и применение конфигурации с помощью управления конфигурацией на основе GitOps. 
 
-* Просмотр и мониторинг кластеров с помощью Azure Monitor для контейнеров. 
+* Просмотр и мониторинг кластеров с помощью Azure Monitor для контейнеров.
 
-* Применение политик с помощью Политики Azure для Kubernetes. 
+* Принудительная защита от угроз с помощью Azure Defender для Kubernetes.
+
+* Применение политик с помощью Политики Azure для Kubernetes.
 
 [!INCLUDE [azure-lighthouse-supported-service](../../../includes/azure-lighthouse-supported-service.md)]
 

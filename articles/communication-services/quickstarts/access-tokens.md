@@ -1,7 +1,7 @@
 ---
 title: Краткое руководство. Создание маркеров доступа и управление ими
 titleSuffix: An Azure Communication Services quickstart
-description: Узнайте, как управлять удостоверениями и маркерами доступа с помощью клиентской библиотеки удостоверений Служб коммуникации Azure.
+description: Узнайте, как управлять удостоверениями и маркерами доступа с помощью пакета SDK для удостоверений Служб коммуникации Azure.
 author: tomaschladek
 manager: nmurav
 services: azure-communication-services
@@ -10,16 +10,16 @@ ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
 zone_pivot_groups: acs-js-csharp-java-python
-ms.openlocfilehash: 921934e581d9b3d32cba644d85987ebb9802f73b
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: e356219d22ee558ce3de5a96d58f24b9e7902d8a
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103495348"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105726623"
 ---
 # <a name="quickstart-create-and-manage-access-tokens"></a>Краткое руководство. Создание маркеров доступа и управление ими
 
-Начните работу со Службами коммуникации Azure с помощью клиентской библиотеки удостоверений Служб коммуникации Azure. Она позволяет создавать удостоверения и управлять маркерами доступа. Удостоверение представляет сущность приложения в Службах коммуникации Azure (например, пользователь или устройство). Маркеры доступа позволяют выполнять проверку подлинности в клиентских библиотеках для чатов и вызовов непосредственно в Службах коммуникации Azure. Рекомендуем создавать маркеры доступа для службы на стороне сервера. Маркеры доступа используются для инициализации клиентских библиотек Служб коммуникации на клиентских устройствах.
+Начните работу со Службами коммуникации Azure с помощью пакета SDK для удостоверений Служб коммуникации Azure. Она позволяет создавать удостоверения и управлять маркерами доступа. Удостоверение представляет сущность приложения в Службах коммуникации Azure (например, пользователь или устройство). Маркеры доступа позволяют выполнять проверку подлинности в пакетах SDK для чатов и вызовов непосредственно в Службах коммуникации Azure. Рекомендуем создавать маркеры доступа для службы на стороне сервера. Маркеры доступа используются для инициализации пакетов SDK Служб коммуникации на клиентских устройствах.
 
 Все цены, указанные на изображениях в этом руководстве, приведены только для демонстрации.
 
@@ -44,9 +44,14 @@ ms.locfileid: "103495348"
 ```console
 Azure Communication Services - Access Tokens Quickstart
 
-Created an identity: 8:acs:4ccc92c8-9815-4422-bddc-ceea181dc774_00000006-19e0-2727-80f5-8b3a0d003502
+Created an identity with ID: 8:acs:4ccc92c8-9815-4422-bddc-ceea181dc774_00000006-19e0-2727-80f5-8b3a0d003502
 
-Issued an access token with 'voip' scope that expires at Fri Nov 27 2020 16:47:05 GMT-0800 (Pacific Standard Time):
+Issued an access token with 'voip' scope that expires at 30/03/21 08:09 09 AM:
+<token signature here>
+
+Created an identity with ID: 8:acs:4ccc92c8-9815-4422-bddc-ceea181dc774_00000006-1ce9-31b4-54b7-a43a0d006a52
+
+Issued an access token with 'voip' scope that expires at 30/03/21 08:09 09 AM:
 <token signature here>
 
 Successfully revoked all access tokens for identity with ID: 8:acs:4ccc92c8-9815-4422-bddc-ceea181dc774_00000006-19e0-2727-80f5-8b3a0d003502
@@ -67,7 +72,7 @@ Deleted the identity with ID: 8:acs:4ccc92c8-9815-4422-bddc-ceea181dc774_0000000
 > [!div class="checklist"]
 > * Управление идентификаторами
 > * Выпуск маркеров доступа
-> * Использование клиентской библиотеки удостоверений Служб коммуникации Azure
+> * Использование пакета SDK для удостоверений Служб коммуникации Azure
 
 
 > [!div class="nextstepaction"]

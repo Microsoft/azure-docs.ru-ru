@@ -12,12 +12,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/17/2021
-ms.openlocfilehash: 96f40f1abd14987b7c404f5a4210a2cab1fa9143
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a8419ff2ba269b05d1fbf7e9d08a284085465fd8
+ms.sourcegitcommit: 20f8bf22d621a34df5374ddf0cd324d3a762d46d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104594178"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107257421"
 ---
 # <a name="azure-sql-database-and-azure-sql-managed-instance-connect-and-query-articles"></a>Статьи о подключении и создании запросов к Базам данных SQL Azure и Управляемым экземплярам SQL Azure
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -40,7 +40,6 @@ ms.locfileid: "104594178"
 |[PHP](connect-query-php.md)|В этом кратком руководстве показано, как использовать PHP для создания программы, которая подключается к базе данных, а затем с помощью инструкций Transact-SQL выполнить запрос данных.|
 |[Python](connect-query-python.md)|В этом кратком руководстве показано, как использовать Python для подключения к базе данных, а затем с помощью инструкций Transact-SQL выполнить запрос данных. |
 |[Ruby](connect-query-ruby.md)|В этом кратком руководстве показано, как использовать Ruby для создания программы, которая подключается к базе данных, а затем с помощью инструкций Transact-SQL выполнить запрос данных.|
-|[R](connect-query-r.md)|В этом кратком руководстве показано, как использовать R и Службы машинного обучения в Базе данных SQL Azure, чтобы создать программу для подключения к базе данных в службе "База данных SQL Azure", а затем с помощью инструкций Transact-SQL выполнять запросы данных.|
 |||
 
 ## <a name="get-server-connection-information"></a>Получение сведений о подключении к серверу

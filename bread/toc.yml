@@ -67,6 +67,9 @@
         - name: Отчеты и мониторинг
           tocHref: /azure/active-directory/reports-monitoring/
           topicHref: /azure/active-directory/reports-monitoring/
+        - name: Проверяемые удостоверения
+          tocHref: /azure/active-directory/verifiable-credentials/
+          topicHref: /azure/active-directory/verifable-credentials/
     - name: Службы Analysis Services
       tocHref: /azure/analysis-services/
       topicHref: /azure/analysis-services/

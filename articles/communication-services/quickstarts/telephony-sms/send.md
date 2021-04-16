@@ -11,17 +11,14 @@ ms.topic: overview
 ms.service: azure-communication-services
 ms.custom: tracking-python, devx-track-js
 zone_pivot_groups: acs-js-csharp-java-python
-ms.openlocfilehash: ed246cfc3929e2893087a99b7876138859d4667a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ee6892af2a7ea119eb4110fa28301b08320f8b9f
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "103488337"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105726402"
 ---
 # <a name="quickstart-send-an-sms-message"></a>Краткое руководство. Отправка SMS-сообщения
-
-[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
-
 
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 
@@ -30,19 +27,19 @@ ms.locfileid: "103488337"
 > Дополнительные сведения см. на странице **[Типы номеров телефона](../../concepts/telephony-sms/plan-solution.md)** .
 
 ::: zone pivot="programming-language-csharp"
-[!INCLUDE [Send SMS with .NET client library](./includes/send-sms-net.md)]
+[!INCLUDE [Send SMS with .NET SDK](./includes/send-sms-net.md)]
 ::: zone-end
 
 ::: zone pivot="programming-language-javascript"
-[!INCLUDE [Send SMS with JavaScript client library](./includes/send-sms-js.md)]
+[!INCLUDE [Send SMS with JavaScript SDK](./includes/send-sms-js.md)]
 ::: zone-end
 
 ::: zone pivot="programming-language-python"
-[!INCLUDE [Send SMS with Python client library](./includes/send-sms-python.md)]
+[!INCLUDE [Send SMS with Python SDK](./includes/send-sms-python.md)]
 ::: zone-end
 
 ::: zone pivot="programming-language-java"
-[!INCLUDE [Send SMS with Java client library](./includes/send-sms-java.md)]
+[!INCLUDE [Send SMS with Java SDK](./includes/send-sms-java.md)]
 ::: zone-end
 
 ## <a name="troubleshooting"></a>Устранение неполадок
@@ -58,7 +55,7 @@ ms.locfileid: "103488337"
 Из этого краткого руководства вы узнали, как реализовать отправку SMS-сообщений с помощью Служб коммуникации Azure.
 
 > [!div class="nextstepaction"]
-> [Оформление подписки на события SMS](./handle-sms-events.md)
+> [Получение событий SMS и отчетов о доставке](./handle-sms-events.md)
 
 > [!div class="nextstepaction"]
 > [Типы номеров телефона](../../concepts/telephony-sms/plan-solution.md)

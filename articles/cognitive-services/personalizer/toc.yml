@@ -3,7 +3,7 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Общие сведения о Персонализаторе
+    - name: Что такое служба "Персонализатор"?
       href: what-is-personalizer.md
     - name: Цены
       href: 'https://go.microsoft.com/fwlink/?linkid=2092154'
@@ -11,7 +11,7 @@
     - name: Новые возможности
       href: whats-new.md
       displayName: 'release notes, service updates, videos'
-- name: Краткое руководство по Персонализатору
+- name: Краткое руководство
   href: ./quickstart-personalizer-sdk.md
 - name: Примеры
   href: 'https://github.com/Azure-Samples/cognitive-services-personalizer-samples'
@@ -32,6 +32,12 @@
       href: how-to-manage-model.md
     - name: Анализ с помощью автономной оценки
       href: how-to-offline-evaluation.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/personalizer/context/context
+        - name: Использование ключей управляемых клиентом
+          href: encrypt-data-at-rest.md
 - name: Основные понятия
   items:
     - name: Принцип работы Персонализатора
@@ -107,17 +113,17 @@
           href: 'https://pypi.org/project/azure-cognitiveservices-personalizer/'
 - name: Ресурсы
   items:
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
+    - name: Модули Microsoft Learn
+      href: 'https://docs.microsoft.com/learn/browse/?terms=personalizer'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/personalizer/context/context
     - name: Устранение неполадок
       href: troubleshooting.md
-    - name: Модули Learn
-      href: 'https://docs.microsoft.com/learn/browse/?terms=personalizer'
-    - name: Поддержка регионов
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
-    - name: Шифрование
-      href: encrypt-data-at-rest.md
     - name: Обновления Azure
       href: 'https://go.microsoft.com/fwlink/?linkid=2092153'

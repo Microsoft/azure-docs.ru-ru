@@ -57,6 +57,12 @@
       href: ./export-delete-data.md
     - name: "Обновление приложения до API\_3.0"
       href: ./update-application-to-3.0-sdk.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/custom-vision-service/context/context
+        - name: Использование ключей управляемых клиентом
+          href: encrypt-data-at-rest.md
 - name: Справочник
   items:
     - name: API обучения Пользовательского визуального распознавания
@@ -81,6 +87,12 @@
           href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.1/customvision/prediction'
 - name: Ресурсы
   items:
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/custom-vision-service/context/context
     - name: Примеры
@@ -89,11 +101,5 @@
       href: limits-and-quotas.md
     - name: Стратегия развития Azure
       href: 'https://azure.microsoft.com/updates/?product=cognitive-services'
-    - name: Доступность по регионам
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
-    - name: Шифрование
-      href: encrypt-data-at-rest.md
     - name: Заметки о выпуске
       href: release-notes.md

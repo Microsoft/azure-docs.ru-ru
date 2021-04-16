@@ -3,13 +3,13 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Общие сведения о Распознавании лиц
+    - name: Что представляет собой служба "Распознавание лиц"?
       href: Overview.md
     - name: Цены
       href: 'https://azure.microsoft.com/pricing/details/cognitive-services/face-api'
     - name: Новые возможности
       href: releasenotes.md
-- name: Краткое руководство по работе с Распознаванием лиц
+- name: Краткое руководство
   href: Quickstarts/client-libraries.md
 - name: Примеры
   href: /samples/browse/?products=azure&term=face
@@ -45,6 +45,14 @@
           href: face-resource-container-config.md
         - name: Использование экземпляров контейнеров
           href: /azure/cognitive-services/containers/azure-container-instance-recipe?context=/azure/cognitive-services/face/context/context
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/face/context/context
+        - name: Использование ключей управляемых клиентом
+          href: encrypt-data-at-rest.md
+        - name: "Использование проверки подлинности Azure\_AD"
+          href: ../authentication.md?context=/azure/cognitive-services/face/context/context
 - name: Основные понятия
   items:
     - name: Определение лиц
@@ -75,15 +83,15 @@
       href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/face'
 - name: Ресурсы
   items:
-    - name: Поддержка регионов
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Модули Learn
       href: 'https://docs.microsoft.com/learn/modules/detect-analyze-faces/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/face/context/context
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
-    - name: Шифрование
-      href: encrypt-data-at-rest.md
     - name: Обновления Azure
       href: 'https://azure.microsoft.com/updates/?product=cognitive-services'
