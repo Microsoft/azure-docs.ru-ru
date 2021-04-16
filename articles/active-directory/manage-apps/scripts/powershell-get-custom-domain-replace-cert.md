@@ -3,7 +3,7 @@ title: Пример PowerShell. Замена сертификатов в при�
 description: Пример PowerShell, который выполняет массовую замену сертификатов в приложениях Azure Active Directory (Azure AD) Application Proxy.
 services: active-directory
 author: kenwith
-manager: daveba
+manager: mtillman
 ms.service: active-directory
 ms.subservice: app-mgmt
 ms.workload: identity
@@ -11,12 +11,12 @@ ms.topic: sample
 ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
-ms.openlocfilehash: 532774349d59f5f11e9db332c7c88ba52424a6d1
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a2775ad9de9fa422f32342ea4f9e7bdba1a50d5f
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102550981"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107376993"
 ---
 # <a name="get-all-application-proxy-applications-published-with-the-identical-certificate-and-replace-it"></a>Получение сведений обо всех приложениях Application Proxy с одинаковыми сертификатами и их замена
 

@@ -10,12 +10,12 @@ ms.date: 02/09/2021
 ms.author: aahi
 ms.reviewer: sumeh, assafi
 ms.custom: devx-track-js
-ms.openlocfilehash: a71559c5f75694d314547220f04fc2d7d7e1dbc6
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 3640a03f8ac814fec2823a761e651ab386438c5c
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104599087"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107327079"
 ---
 <a name="HOLTop"></a>
 
@@ -768,7 +768,7 @@ The analyze batch actions operation results will expire on Sat Mar 13 2021 09:53
         - Entity Paul Allen of type Person
 ```
 
-Кроме того, вы можете использовать операцию анализа для обнаружения персональных данных, распознавания связанных сущностей и извлечения ключевых фраз. Примеры анализа для [JavaScript](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/textanalytics/ai-text-analytics/samples/javascript) и [TypeScript](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/textanalytics/ai-text-analytics/samples/typescript/src) см. на сайте GitHub.
+Кроме того, вы можете использовать операцию анализа для обнаружения персональных данных, распознавания связанных сущностей и извлечения ключевых фраз. Примеры анализа для [JavaScript](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/textanalytics/ai-text-analytics/samples/v5/javascript) и [TypeScript](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/textanalytics/ai-text-analytics/samples/v5/typescript/src) см. на сайте GitHub.
 
 # <a name="version-30"></a>[Версия 3.0](#tab/version-3)
 

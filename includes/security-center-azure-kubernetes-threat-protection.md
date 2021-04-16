@@ -4,12 +4,12 @@ ms.author: memildin
 manager: rkarlin
 ms.date: 06/30/2020
 ms.topic: include
-ms.openlocfilehash: 4c09057f606423dc92b3364e502e632a385bf83f
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 979bc3ea6a01d31e64aa503216b8fd69164eadc6
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100007823"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106450436"
 ---
 Центр безопасности обеспечивает защиту контейнерных сред от угроз в реальном времени и создает оповещения о подозрительных действиях. Эти сведения можно использовать для быстрого устранения проблем безопасности и повышения безопасности контейнеров.
 

@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 10/06/2020
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: 69067ca34b231f1b14f8cc854288c3ed4c4ac82a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: eda575e0f29abbe18750a24fbfc212a9d84819cf
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "91855996"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110365"
 ---
 # <a name="tutorial-connect-a-virtual-network-to-an-expressroute-circuit"></a>Руководство по Подключение виртуальной сети к каналу ExpressRoute
 > [!div class="op_single_selector"]
@@ -28,7 +28,7 @@ ms.locfileid: "91855996"
 
 * К стандартному каналу ExpressRoute можно подключить не более 10 виртуальных сетей. Если используется стандартный канал ExpressRoute, все виртуальные сети должны находиться в одном геополитическом регионе. 
 
-* Отдельную виртуальную сеть можно связать не более чем с четырьмя каналами ExpressRoute. Чтобы создать объект подключения для каждого канала ExpressRoute, к которому вы подключаетесь, воспользуйтесь инструкциям и из этой статьи. Каналы ExpressRoute могут быть размещены в той же подписке, в других подписках или и там, и там.
+* Отдельную виртуальную сеть можно связать максимум с 16 каналами ExpressRoute. Чтобы создать объект подключения для каждого канала ExpressRoute, к которому вы подключаетесь, воспользуйтесь инструкциям и из этой статьи. Каналы ExpressRoute могут быть размещены в той же подписке, в других подписках или и там, и там.
 
 * Если вы включите надстройку ExpressRoute Premium, вы сможете подключить к каналу ExpressRoute виртуальные сети из другого геополитического региона. Надстройка Premium также позволяет подключить к каналу ExpressRoute более 10 виртуальных сетей (в зависимости от выбранной пропускной способности). Дополнительную информацию о надстройке Premium см. в разделе [Вопросы и ответы](expressroute-faqs.md).
 

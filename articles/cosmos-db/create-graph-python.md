@@ -6,15 +6,15 @@ ms.service: cosmos-db
 ms.subservice: cosmosdb-graph
 ms.devlang: python
 ms.topic: quickstart
-ms.date: 01/22/2019
+ms.date: 03/29/2021
 ms.author: chrande
 ms.custom: devx-track-python
-ms.openlocfilehash: 342b9c9aae0a523ac770ba78f298c4ba91c434e7
-ms.sourcegitcommit: ba3a4d58a17021a922f763095ddc3cf768b11336
+ms.openlocfilehash: cef397789d5ebcfa95c01e42dac9a80b9e1564e0
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104798754"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106106948"
 ---
 # <a name="quickstart-create-a-graph-database-in-azure-cosmos-db-using-python-and-the-azure-portal"></a>Краткое руководство. Создание графовой базы данных в Azure Cosmos DB с помощью Python и портала Azure
 [!INCLUDE[appliesto-gremlin-api](includes/appliesto-gremlin-api.md)]
@@ -56,16 +56,16 @@ ms.locfileid: "104798754"
 1. Откройте командную строку, создайте папку git-samples, а затем закройте окно командной строки.
 
     ```bash
-    md "C:\git-samples"
+    mkdir "./git-samples"
     ```
 
 2. Откройте окно терминала git, например git bash, и выполните команду `cd`, чтобы перейти в папку для установки примера приложения.  
 
     ```bash
-    cd "C:\git-samples"
+    cd "./git-samples"
     ```
 
-3. Выполните команду ниже, чтобы клонировать репозиторий с примером. Эта команда создает копию примера приложения на локальном компьютере. 
+3. Выполните команду ниже, чтобы клонировать репозиторий с примером. Эта команда создает копию примера приложения на локальном компьютере.
 
     ```bash
     git clone https://github.com/Azure-Samples/azure-cosmos-db-graph-python-getting-started.git
@@ -73,14 +73,14 @@ ms.locfileid: "104798754"
 
 ## <a name="review-the-code"></a>Просмотр кода
 
-Это необязательный шаг. Если вы хотите узнать, как создать в коде ресурсы базы данных, изучите приведенные ниже фрагменты кода. Они взяты из файла *connect.py*, который расположен в папке *C:\git-samples\azure-cosmos-db-graph-python-getting-started\\* . Если вас это не интересует, можете сразу переходить к разделу [Обновление строки подключения](#update-your-connection-information). 
+Это необязательный шаг. Если вы хотите узнать, как создать в коде ресурсы базы данных, изучите приведенные ниже фрагменты кода. Они взяты из файла *connect.py*, который расположен в папке *C:\git-samples\azure-cosmos-db-graph-python-getting-started\\* . Если вас это не интересует, можете сразу переходить к разделу [Обновление строки подключения](#update-your-connection-information).
 
-* Gremlin `client` инициализируется в строке 104 файла *connect.py*:
+* Gremlin `client` инициализируется в строке 155 файла *connect.py*. Обязательно замените `<YOUR_DATABASE>` и `<YOUR_CONTAINER_OR_GRAPH>` значениями имени базы данных вашей учетной записи и имени графа:
 
     ```python
     ...
     client = client.Client('wss://<YOUR_ENDPOINT>.gremlin.cosmosdb.azure.com:443/','g', 
-        username="/dbs/<YOUR_DATABASE>/colls/<YOUR_COLLECTION_OR_GRAPH>", 
+        username="/dbs/<YOUR_DATABASE>/colls/<YOUR_CONTAINER_OR_GRAPH>", 
         password="<YOUR_PASSWORD>")
     ...
     ```
@@ -101,7 +101,7 @@ ms.locfileid: "104798754"
 
     :::image type="content" source="./media/create-graph-python/keys.png" alt-text="Просмотр и копирование ключа доступа на портале Azure, страница Ключи":::
 
-2. Откройте файл *connect.py* `<YOUR_ENDPOINT>` и в строке 104 вставьте значение URI вместо :
+2. Откройте файл *connect.py* и в строке 155 вставьте значение URI вместо `<YOUR_ENDPOINT>`:
 
     ```python
     client = client.Client('wss://<YOUR_ENDPOINT>.gremlin.cosmosdb.azure.com:443/','g', 
@@ -145,7 +145,7 @@ ms.locfileid: "104798754"
 1. В окне терминала Git перейдите в папку azure-cosmos-db-graph-python-getting-started folder с помощью команды `cd`.
 
     ```git
-    cd "C:\git-samples\azure-cosmos-db-graph-python-getting-started"
+    cd "./git-samples\azure-cosmos-db-graph-python-getting-started"
     ```
 
 2. В окне терминала Git введите следующую команду, чтобы установить необходимые пакеты Python.

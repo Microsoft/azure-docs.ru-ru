@@ -10,14 +10,14 @@ ms.date: 03/11/2021
 ms.topic: include
 ms.custom: include file
 ms.author: peiliu
-ms.openlocfilehash: 96cdeb7c35cd1ccd503f7ce01e1098a6b83884c3
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: 5fd209c612f90e3912e244daf60d20edf30a08c6
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103622155"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106113399"
 ---
-Начало работы со Службами коммуникации Azure с помощью клиентской библиотеки SMS Служб коммуникации Azure для C# для отправки SMS-сообщений.
+Начало работы со Службами коммуникации Azure с помощью пакета SDK для SMS Служб коммуникации Azure для C# для отправки SMS-сообщений.
 
 Выполнение этого краткого руководства предполагает небольшую дополнительную плату в несколько центов США в учетной записи Azure.
 
@@ -28,13 +28,13 @@ ms.locfileid: "103622155"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
-- Последняя версия [клиентской библиотеки NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
+- Последняя версия [пакета SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
 - Активный ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../../create-communication-resource.md)
 - Номер телефона с поддержкой SMS-сообщений. [Получите номер телефона.](../get-phone-number.md)
 
 ### <a name="prerequisite-check"></a>Проверка предварительных условий
 
-- В окне терминала или команды выполните команду `dotnet`, чтобы проверить, установлена ли клиентская библиотека .NET.
+- В окне терминала или командном окне выполните команду `dotnet`, чтобы проверить, установлен ли пакет SDK для .NET.
 - Чтобы просмотреть номера телефонов, связанные с ресурсом Служб коммуникации, войдите на [портал Azure](https://portal.azure.com/), перейдите к ресурсу Служб коммуникации и откройте вкладку с **номерами телефонов** в области навигации слева.
 
 ## <a name="setting-up"></a>Настройка
@@ -56,10 +56,10 @@ dotnet build
 
 ### <a name="install-the-package"></a>Установка пакета
 
-Оставаясь в каталоге приложения, установите пакет клиентской библиотеки Служб коммуникации SMS для .NET с помощью команды `dotnet add package`.
+Оставаясь в каталоге приложения, установите пакет SDK для SMS Служб коммуникации для пакета .NET с помощью команды `dotnet add package`.
 
 ```console
-dotnet add package Azure.Communication.Sms --version 1.0.0-beta.4
+dotnet add package Azure.Communication.Sms --version 1.0.0
 ```
 
 Добавьте директиву `using` в начало **Program.cs**, чтобы включить пространство имен `Azure.Communication`.
@@ -77,13 +77,13 @@ using Azure.Communication.Sms;
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки Служб коммуникации SMS для C#.
+Следующие классы и интерфейсы реализуют некоторые основные функции пакета SDK для SMS Служб коммуникации для C#.
 
 | Имя                                       | Описание                                                                                                                                                       |
 | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SmsClient     | Этот класс требуется для реализации всех функций обмена текстовыми сообщениями. Его экземпляр можно создать на основе сведений о подписке и использовать для отправки SMS.                           |
-| SmsSendResult               | Этот класс содержит результат, полученный от службы SMS.                                          |
 | SmsSendOptions | Этот класс предоставляет параметры для настройки отчетов о доставке. Если enable_delivery_report имеет значение True, при успешной доставке будет создано событие. |
+| SmsSendResult               | Этот класс содержит результат, полученный от службы SMS.                                          |
 
 ## <a name="authenticate-the-client"></a>Аутентификация клиента
 
@@ -104,8 +104,8 @@ SmsClient smsClient = new SmsClient(connectionString);
 
 ```csharp
 SmsSendResult sendResult = smsClient.Send(
-    from: "<from-phone-number>", // Your E.164 formatted from phone number used to send SMS
-    to: "<to-phone-number>", // E.164 formatted recipient phone number
+    from: "<from-phone-number>",
+    to: "<to-phone-number>",
     message: "Hello World via SMS"
 );
 
@@ -113,13 +113,16 @@ Console.WriteLine($"Sms id: {sendResult.MessageId}");
 ```
 `<from-phone-number>` необходимо заменить номером телефона с поддержкой SMS, связанным с ресурсом Служб коммуникации, а `<to-phone-number>` — номером телефона, на который вы хотите отправить сообщение.
 
+> [!WARNING]
+> Обратите внимание, что номера телефонов должны быть указаны в формате международного стандарта E.164, (например, +14255550123).
+
 ## <a name="send-a-1n-sms-message-with-options"></a>Отправка группового текстового сообщения с параметрами
 Чтобы отправить текстовое сообщение списку получателей, вызовите функцию `Send` или `SendAsync` из SmsClient со списком номеров телефонов получателей. Кроме того, вы можете передать необязательные параметры для указания того, должен ли быть включен отчет о доставке, а также задать пользовательские теги.
 
 ```csharp
-Response<IEnumerable<SmsSendResult>> response = smsClient.Send(
-    from: "<from-phone-number>", // Your E.164 formatted from phone number used to send SMS
-    to: new string[] { "<to-phone-number-1>", "<to-phone-number-2>" }, // E.164 formatted recipient phone numbers
+Response<IReadOnlyList<SmsSendResult>> response = smsClient.Send(
+    from: "<from-phone-number>",
+    to: new string[] { "<to-phone-number-1>", "<to-phone-number-2>" },
     message: "Weekly Promotion!",
     options: new SmsSendOptions(enableDeliveryReport: true) // OPTIONAL
     {
@@ -134,7 +137,14 @@ foreach (SmsSendResult result in results)
 }
 ```
 
+`<from-phone-number>` необходимо заменить номером телефона с поддержкой SMS, связанным с ресурсом Служб коммуникации, а `<to-phone-number-1>` и `<to-phone-number-2>` — номерами телефона, на которые вы хотите отправить сообщение.
+
+> [!WARNING]
+> Обратите внимание, что номера телефонов должны быть указаны в формате международного стандарта E.164, (например, +14255550123).
+
 Параметр `enableDeliveryReport` является необязательным. Его можно использовать для настройки отчетов о доставке. Это полезно, если вы хотите, чтобы при доставке SMS-сообщений создавались события. Сведения о настройке отчетов о доставке SMS-сообщений см. в кратком руководстве [Обработка событий SMS-сообщений](../handle-sms-events.md).
+
+Для применения тега к отчету о доставке используется `Tag`
 
 ## <a name="run-the-code"></a>Выполнение кода
 

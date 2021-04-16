@@ -2,13 +2,13 @@
 title: Введение
 description: Сведения о преимуществах и возможностях решения Azure VMware для развертывания рабочих нагрузок на основе VMware и управления ими в Azure.
 ms.topic: overview
-ms.date: 11/11/2020
-ms.openlocfilehash: 255d3599385c60d3b13f4769796ced41a1177311
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 03/24/2021
+ms.openlocfilehash: 32dd73108dc12d7d7acc605f43a0fbf6d2cf1cd7
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100579292"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106107996"
 ---
 # <a name="what-is-azure-vmware-solution"></a>Что такое Решение Azure VMware?
 
@@ -55,6 +55,9 @@ ms.locfileid: "100579292"
 
 Шаблоны мониторинга в Решении Azure VMware аналогичны шаблонам виртуальных машин Azure на платформе IaaS. Дополнительные сведения и практические руководства см. в статье [Мониторинг виртуальных машин Azure с помощью Azure Monitor](../azure-monitor/vm/monitor-vm-azure.md).
 
+## <a name="customer-communication"></a>Взаимодействие с клиентами
+[!INCLUDE [customer-communications](includes/customer-communications.md)]
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Следующий шаг — изучение [основных понятий о частном облаке и кластере](concepts-private-clouds-clusters.md).
@@ -63,3 +66,5 @@ ms.locfileid: "100579292"
 
 <!-- LINKS - internal -->
 [concepts-private-clouds-clusters]: ./concepts-private-clouds-clusters.md
+
+

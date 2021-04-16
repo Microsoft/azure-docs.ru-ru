@@ -11,16 +11,16 @@ ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: overview
-ms.date: 01/04/2021
+ms.date: 03/31/2021
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.custom: it-pro;
-ms.openlocfilehash: 24ff39fba5ce4b484f23595a9f7d718b12faae10
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: bd5533f4bc8420ee6d8900e8a17dfe7099d7945f
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102037274"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106107203"
 ---
 # <a name="classic-subscription-administrator-roles-azure-roles-and-azure-ad-roles"></a>Роли классического администратора подписки, роли Azure и роли Azure AD
 
@@ -115,7 +115,7 @@ RBAC Azure — это система авторизации на основе [
 | --- | --- |
 | Управление доступом к ресурсам Azure | Управление доступом к ресурсам Azure Active Directory |
 | Поддержка пользовательских ролей | Поддержка пользовательских ролей |
-| Возможность указывать область действия на нескольких уровнях (группа управления, подписка, группа ресурсов, ресурс) | Область действия на уровне клиента |
+| Возможность указывать область действия на нескольких уровнях (группа управления, подписка, группа ресурсов, ресурс) | [Область](../active-directory/roles/custom-overview.md#scope) может быть указана на уровне клиента (в масштабах всей организации), для административной единицы или отдельного объекта (например, для конкретного приложения) |
 | Сведения о роли можно получить на портале Azure, в Azure CLI, Azure PowerShell, в шаблонах Azure Resource Manager и API REST | Сведения о роли можно получить на портале администрирования Azure, в Центре администрирования Microsoft 365, в Microsoft Graph и AzureAD PowerShell |
 
 ### <a name="do-azure-roles-and-azure-ad-roles-overlap"></a>Перекрываются ли роли Azure и роли Azure AD?

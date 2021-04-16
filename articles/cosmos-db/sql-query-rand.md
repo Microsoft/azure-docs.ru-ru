@@ -1,6 +1,6 @@
 ---
-title: СЛЧИС на языке запросов Azure Cosmos DB
-description: Сведения о системной функции SQL RAND в Azure Cosmos DB.
+title: Использование RAND на языке запросов Azure Cosmos DB
+description: Подробнее о системной функции SQL RAND в Azure Cosmos DB.
 author: ginamr
 ms.service: cosmos-db
 ms.subservice: cosmosdb-sql
@@ -9,16 +9,16 @@ ms.date: 09/16/2019
 ms.author: girobins
 ms.custom: query-reference
 ms.openlocfilehash: fb3e310970fcc2146ee0d4b790a9744dcd566bad
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "93341660"
 ---
 # <a name="rand-azure-cosmos-db"></a>RAND (Azure Cosmos DB)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
 
- Возвращает сгенерированное случайным образом числовое значение из [0, 1).
+ Возвращает числовое значение в диапазоне [0, 1), сгенерированное случайным образом.
  
 ## <a name="syntax"></a>Синтаксис
   
@@ -32,12 +32,12 @@ RAND ()
 
 ## <a name="remarks"></a>Remarks
 
-  `RAND` является недетерминированной функцией. Повторяющиеся вызовы не `RAND` возвращают одинаковые результаты. Эта системная функция не будет использовать индекс.
+  `RAND` является недетерминированной функцией. Результатом повторных вызовов `RAND` будут разные числа. Эта системная функция не использует индексы.
 
 
 ## <a name="examples"></a>Примеры
   
-  В следующем примере возвращается числовое значение, сформированное случайным образом.
+  В следующем примере возвращается числовое значение, сгенерированное случайным образом.
   
 ```sql
 SELECT RAND() AS rand 

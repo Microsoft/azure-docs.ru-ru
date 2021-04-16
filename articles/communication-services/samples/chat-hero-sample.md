@@ -9,28 +9,22 @@ ms.author: dademath
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 0eb396935b42b040ab9f152a4965922664deb451
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 5547e49cd7ea7f6c0cc97b5559564b64e0deda7c
+ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103487839"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106168847"
 ---
 # <a name="get-started-with-the-group-chat-hero-sample"></a>Начало работы с главным примером функции чата
 
-[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
-
-
-<!----
-> [!WARNING]
-> links to our Hero Sample repo need to be updated when the sample is publicly available.
----->
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include-chat.md)]
 
 > [!IMPORTANT]
-> [Этот пример можно найти на сайте GitHub.](https://github.com/Azure-Samples/communication-services-web-chat-hero)
+> [Этот пример можно найти **на сайте GitHub**.](https://github.com/Azure-Samples/communication-services-web-chat-hero)
 
 
-В **главном примере функции чата** Служб коммуникации Azure показано, как можно использовать библиотеку веб-клиента чата Служб коммуникации для создания группового вызова.
+В **главном примере функции группового чата** Служб коммуникации Azure показано, как можно использовать веб-пакет SDK для чата Служб коммуникации для создания группового вызова.
 
 Из краткого руководства мы узнаем, как работает пример и запустим его на локальном компьютере. Затем мы развернем пример в Azure с помощью собственных ресурсов Служб коммуникации Azure.
 
@@ -111,7 +105,7 @@ ms.locfileid: "103487839"
 Дополнительные сведения см. в следующих статьях:
 
 - Сведения о [концепциях чата](../concepts/chat/concepts.md)
-- Ознакомьтесь с нашей [клиентской библиотекой чата](../concepts/chat/sdk-features.md)
+- Ознакомьтесь с нашим [пакетом SDK для чатов](../concepts/chat/sdk-features.md)
 - Изучите пример приложения [Contoso MED](https://github.com/Azure-Samples/communication-services-contoso-med-app).
 
 ## <a name="additional-reading"></a>Дополнительные материалы

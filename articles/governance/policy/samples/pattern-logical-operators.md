@@ -1,14 +1,14 @@
 ---
 title: Шаблон. Логические операторы в определении политики
 description: Этот шаблон Политики Azure предоставляет пример использования логических операторов в определении политики.
-ms.date: 08/17/2020
+ms.date: 03/31/2021
 ms.topic: sample
-ms.openlocfilehash: 3f644cdbfc45b06d1ad5db8e7727c0fa69742f00
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: feb9e50b0c73c19027b747cf0f95fa1cb6fbd47c
+ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "88545596"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106093356"
 ---
 # <a name="azure-policy-pattern-logical-operators"></a>Шаблон политики Azure: логические операторы
 
@@ -16,7 +16,7 @@ ms.locfileid: "88545596"
 
 ## <a name="sample-1-one-logical-operator"></a>Пример 1 Один логический оператор
 
-Это определение политики оценивает учетные записи CosmosDB, чтобы узнать, настроены ли автоматические переходы на другой ресурс и несколько расположений для записи. Если нет, выполняется [аудит](../concepts/effects.md#audit), который создает запись в журнале при создании или обновлении несоответствующего ресурса.
+Это определение политики оценивает учетные записи [Azure Cosmos DB](../../../cosmos-db/introduction.md), чтобы узнать, настроены ли автоматические переходы на другой ресурс и несколько расположений для записи. Если нет, выполняется [аудит](../concepts/effects.md#audit), который создает запись в журнале при создании или обновлении несоответствующего ресурса.
 
 :::code language="json" source="~/policy-templates/patterns/pattern-logical-operators-1.json":::
 
@@ -41,7 +41,7 @@ ms.locfileid: "88545596"
 
 ## <a name="sample-3-combining-logical-operators"></a>Пример 3. Объединение логических операторов
 
-Это определение политики проверяет, включена ли трассировка в учетных записях Java Spring и находится ли она в рабочем состоянии.
+Это определение политики проверяет, включена ли трассировка в учетных записях [Spring on Azure](/azure/developer/java/spring-framework) и находится ли она в рабочем состоянии.
 
 :::code language="json" source="~/policy-templates/patterns/pattern-logical-operators-3.json":::
 

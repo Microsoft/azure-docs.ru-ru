@@ -1,5 +1,5 @@
 ---
-title: include file description: include file services: event-hubs author: spelluru ms.service: event-hubs ms.topic: include ms.date: 02/01/2021 ms.author: spelluru ms.custom: "include file","fasttrack-edit","iot","event-hubs"
+title: include file description: include file services: event-hubs author: spelluru ms.service: event-hubs ms.topic: include ms.date: 03/31/2021 ms.author: spelluru ms.custom: "include file","fasttrack-edit","iot","event-hubs"
 
 ---
 
@@ -13,13 +13,12 @@ title: include file description: include file services: event-hubs author: spell
 | Число пространств имен Центров событий на подписку |- |100 |
 | Число концентраторов событий на пространство имен | Последующие запросы на создание концентратора событий отклоняются. |10 |
 | Размер имени концентратора событий |- | 256 символов |
-| Размер имени группы потребителей |- | 256 символов |
+| Размер имени группы потребителей | Для протокола Kafka создавать группу потребителей не нужно. | <p>Kafka: 256 символов</p><p>AMQP: 50 символов |
 | Число получателей вне эпохи на группу потребителей |- |5 |
 | Число правил авторизации на каждое пространство имен | Последующие запросы на создание правила авторизации отклоняются.|12 |
 | Количество вызовов метода GetRuntimeInformation |  - | 50 в секунду | 
 | Количество виртуальных сетей (VNet) | - | 128 | 
 | Количество правил конфигурации IP-адресов | - | 128 | 
-
 
 ### <a name="basic-vs-standard-tiers"></a>Сравнение уровней "Базовый" и "Стандартный"
 В приведенной ниже таблице указаны ограничения, которые могут быть различными для уровней "Базовый" и "Стандартный". 

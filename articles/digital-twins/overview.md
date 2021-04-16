@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 3/12/2020
 ms.topic: overview
 ms.service: digital-twins
-ms.openlocfilehash: c0bc245a4be1ab7c326fa27cc1422878aca6331d
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.openlocfilehash: 315519472baa672e802855b5ab21b8bae8f51935
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99071687"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106109855"
 ---
 # <a name="what-is-azure-digital-twins"></a>Что такое Azure Digital Twins?
 
@@ -94,7 +94,11 @@ Azure Digital Twins обычно используется в сочетании 
 
 ## <a name="service-limits"></a>Ограничения службы
 
-Список ограничений см. в статье [*Ограничения службы Azure Digital Twins*](reference-service-limits.md).
+Дополнительные сведения об **ограничениях службы** Azure Digital Twins см. в статье [ограничения службы Azure Digital Twins](reference-service-limits.md). Здесь перечислены функциональные ограничения и ограничения на количество обращений службы, а также то, какие ограничения можно при необходимости изменить.
+
+## <a name="terminology"></a>Терминология
+
+Список **общих терминов Интернета вещей** и их использование в службах Интернета вещей Azure, включая Azure Digital Twins, можно найти здесь: [Словарь Интернета вещей Azure](../iot-fundamentals/iot-glossary.md?toc=/azure/digital-twins/toc.json&bc=/azure/digital-twins/breadcrumb/toc.json). Словарь может быть полезен при начале работы с Azure Digital Twins и создании решения Интернета вещей.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

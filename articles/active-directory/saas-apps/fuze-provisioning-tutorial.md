@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 07/26/2019
+ms.date: 04/05/2021
 ms.author: zhchia
-ms.openlocfilehash: 2fcb85b2c16bc2dd418c2260420733dd8663382a
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 809b32fcf6f39ba9dec2980a79e8824e282b54b7
+ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96179264"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106450095"
 ---
 # <a name="tutorial-configure-fuze-for-automatic-user-provisioning"></a>Руководство по настройке Fuze для автоматической подготовки пользователей
 
@@ -144,6 +144,7 @@ ms.locfileid: "96179264"
 ## <a name="connector-limitations"></a>Ограничения соединителя
 
 * Fuze поддерживает настраиваемые атрибуты SCIM, называемые **Entitlement** (Назначение). Эти атрибуты нельзя обновить. Их можно только создать. 
+* API Fuze SCIM не поддерживает фильтрацию по атрибуту userName. Это может привести к сбоям при попытке синхронизации существующего пользователя, у которого нет атрибута userName, но есть адрес электронной почты, соответствующий атрибуту userPrincipalName в Azure AD. Сообщения о сбоях будут записаны в журналы. 
 
 ## <a name="change-log"></a>Журнал изменений
 
