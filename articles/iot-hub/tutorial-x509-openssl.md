@@ -12,13 +12,12 @@ ms.custom:
 - mvc
 - 'Role: Cloud Development'
 - 'Role: Data Analytics'
-- devx-track-azurecli
-ms.openlocfilehash: 0d083d856138d7895a6e03f4d290ef3c4ddebd05
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 0843e5d3a5e91cb4acdf18ad6bdf6f4f0c214f72
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105629602"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107378301"
 ---
 # <a name="tutorial-using-openssl-to-create-test-certificates"></a>Руководство. Использование OpenSSL для создания тестовых сертификатов
 
@@ -101,6 +100,13 @@ authorityKeyIdentifier   = keyid:always
 basicConstraints         = critical,CA:true,pathlen:0
 extendedKeyUsage         = clientAuth,serverAuth
 keyUsage                 = critical,keyCertSign,cRLSign
+subjectKeyIdentifier     = hash
+
+[client_ext]
+authorityKeyIdentifier   = keyid:always
+basicConstraints         = critical,CA:false
+extendedKeyUsage         = clientAuth
+keyUsage                 = critical,digitalSignature
 subjectKeyIdentifier     = hash
 
 ```
@@ -244,13 +250,19 @@ subjectKeyIdentifier     = hash
 
 1. Щелкните **Создать код проверки**. Дополнительные сведения см. в руководстве [Подтверждение владения сертификатом центра сертификации](tutorial-x509-prove-possession.md).
 
-1. Скопируйте код проверки в буфер обмена. Этот код проверки необходимо задать в качестве субъекта сертификата. Например, если код проверки имеет вид BB0C656E69AF75E3FB3C8D922C1760C58C1DA5B05AAA9D0A, добавьте его в качестве субъекта сертификата, как показано на следующем шаге.
+1. Скопируйте код проверки в буфер обмена. Этот код проверки необходимо задать в качестве субъекта сертификата. Например, если код проверки имеет вид BB0C656E69AF75E3FB3C8D922C1760C58C1DA5B05AAA9D0A, добавьте его в качестве субъекта сертификата, как показано на шаге 9.
 
 1. Создайте закрытый ключ.
 
   ```bash
-    $ openssl req -new -key pop.key -out pop.csr
+    $ openssl genpkey -out pop.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048
+  ```
 
+9. Создайте запрос на подписывание сертификата (CSR) на основе закрытого ключа. Добавьте код проверки в качестве субъекта сертификата.
+
+  ```bash
+  openssl req -new -key pop.key -out pop.csr
+  
     -----
     Country Name (2 letter code) [XX]:.
     State or Province Name (full name) []:.
@@ -267,16 +279,16 @@ subjectKeyIdentifier     = hash
  
   ```
 
-9. Создайте сертификат, используя файл конфигурации для корневого ЦС и запрос на подписывание сертификата.
+10. Создайте сертификат, используя файл конфигурации корневого ЦС и CSR, чтобы подтвердить владение сертификатом.
 
   ```bash
     openssl ca -config rootca.conf -in pop.csr -out pop.crt -extensions client_ext
 
   ```
 
-10. Выберите новый сертификат в представлении **Сведения о сертификате**.
+11. Выберите новый сертификат в представлении **Сведения о сертификате**. Чтобы найти файл PEM, перейдите в папку certs.
 
-11. После отправки сертификата щелкните **Проверить**. Состояние сертификата ЦС должно измениться на **Проверено**.
+12. После отправки сертификата щелкните **Проверить**. Состояние сертификата ЦС должно измениться на **Проверено**.
 
 ## <a name="step-8---create-a-device-in-your-iot-hub"></a>Шаг 8. Создание устройства в Центре Интернета вещей
 
