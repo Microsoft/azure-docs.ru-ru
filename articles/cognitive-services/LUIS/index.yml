@@ -3,7 +3,7 @@ title: Документация по Распознаванию речи (LUIS)
 summary: Узнайте, как с помощью службы "Распознавание речи" приложения могут распознавать желания людей, исходя из их слов.
 metadata:
   ms.topic: landing-page
-  ms.date: 06/15/2020
+  ms.date: 04/13/2021
   ms.author: nitinme
   author: nitinme
   ms.service: cognitive-services
@@ -12,12 +12,12 @@ metadata:
   title: Документация по Распознаванию речи (LUIS)
   titleSuffix: Azure Cognitive Services
   description: Служба "Распознавание речи" (LUIS) позволяет приложению распознавать желания людей, исходя из их слов. LUIS использует машинное обучение, позволяя разработчикам создавать приложения, которые могут получать входные данные пользователей на естественном языке, а также распознавать их значение.
-  ms.openlocfilehash: ca9209295d8265eeac5545091e4d4c5c9678e994
-  ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+  ms.openlocfilehash: 793638552b35dd6dc65395e9c568c55a8ef9f946
+  ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/23/2021
-  ms.locfileid: "98738073"
+  ms.lasthandoff: 04/14/2021
+  ms.locfileid: "107497053"
 landingContent:
 - title: Сведения о Распознавании речи (LUIS)
   linkLists:
@@ -130,7 +130,7 @@ landingContent:
     - text: Предварительно созданные сущности
       url: luis-reference-prebuilt-entities.md
     - text: Настраиваемые сущности
-      url: luis-concept-entity-types.md#types-of-entities
+      url: reference-entity-machine-learned-entity.md
     - text: Предварительно созданные предметные области
       url: luis-reference-prebuilt-domains.md
 - title: Справка и обратная связь
