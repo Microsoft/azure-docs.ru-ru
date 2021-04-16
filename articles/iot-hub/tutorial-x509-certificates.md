@@ -12,13 +12,12 @@ ms.custom:
 - mvc
 - 'Role: Cloud Development'
 - 'Role: Data Analytics'
-- devx-track-azurecli
-ms.openlocfilehash: cdc5b261abe91c31d31827aeab03c9e8838b2a91
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 5503f9ad57180146c25a01c133a27b34e643496c
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105629680"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107378352"
 ---
 # <a name="tutorial-understanding-x509-public-key-certificates"></a>Руководство. Общие сведения о сертификатах X.509 с открытым ключом
 
@@ -106,6 +105,13 @@ ms.locfileid: "105629680"
 ### <a name="pkcs12-key-and-certificate"></a>Ключ и сертификат PKCS#12
 
 Сложный формат, который используется для хранения и защиты ключа и полной цепочки сертификатов. Он обычно используется с расширением .pfx. PKCS#12 — это синоним формата PFX.
+
+## <a name="for-more-information"></a>Дополнительные сведения
+
+Дополнительные сведения см. в следующих разделах:
+
+* [Руководство для новичков по терминологии, связанной с сертификатами X.509](https://techcommunity.microsoft.com/t5/internet-of-things/the-layman-s-guide-to-x-509-certificate-jargon/ba-p/2203540)
+* [Концептуальное представление о сертификатах ЦС X.509 в отрасли Интернета вещей](https://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-concept)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
