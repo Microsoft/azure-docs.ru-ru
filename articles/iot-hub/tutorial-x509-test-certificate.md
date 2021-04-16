@@ -12,13 +12,12 @@ ms.custom:
 - mvc
 - 'Role: Cloud Development'
 - 'Role: Data Analytics'
-- devx-track-azurecli
-ms.openlocfilehash: 91eea344914120a396ba9465ec504a37f5844d4e
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 7d1900782fce6b84ed79014e985393f3626d171b
+ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105629587"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107379440"
 ---
 # <a name="tutorial-testing-certificate-authentication"></a>Учебник. Тестирование аутентификации на основе сертификата
 

@@ -5,7 +5,7 @@
   items:
     - name: Поддержка языков
       href: language-support.md
-    - name: Цены и ограничения
+    - name: Цены
       href: 'https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator'
 - name: Преобразование текста
   expanded: true
@@ -86,7 +86,7 @@
   items:
     - name: Что такое Пользовательский переводчик
       href: custom-translator/overview.md
-    - name: Вопросы и ответы
+    - name: ВОПРОСЫ И ОТВЕТЫ
       href: custom-translator/faq.md
     - name: Краткое руководство
       href: custom-translator/quickstart-build-deploy-custom-model.md
@@ -162,14 +162,24 @@
           href: document-translation/reference/get-operations.md
         - name: Отмена операции
           href: document-translation/reference/cancel-operation.md
+- name: Практические руководства
+  items:
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/translator/context/context
+        - name: Использование ключей управляемых клиентом
+          href: encrypt-data-at-rest.md
 - name: Ресурсы
   items:
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/translator/context/context
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/en-us/support/legal/cognitive-services-compliance-and-privacy'
-    - name: Шифрование
-      href: encrypt-data-at-rest.md
     - name: Примеры кода в GitHub
       href: 'https://aka.ms/TranslatorGitHub'
     - name: Конфиденциальность и файлы cookie

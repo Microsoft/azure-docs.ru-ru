@@ -82,6 +82,12 @@
       items:
         - name: 'Обзоры, рабочие процессы и задания'
           href: review-api.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Настройка виртуальных сетей
+          href: ../cognitive-services-virtual-networks.md?context=/azure/cognitive-services/content-moderator/context/context
+        - name: Использование ключей управляемых клиентом
+          href: encrypt-data-at-rest.md
 - name: Основные понятия
   items:
     - name: Модерация изображений
@@ -114,19 +120,21 @@
       href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/contentmoderator'
 - name: Ресурсы
   items:
-    - name: Серии вебинаров по Azure
-      href: 'https://info.microsoft.com/cognitive-services-content-moderator-ondemand.html'
-    - name: Поддержка регионов
-      href: 'https://azure.microsoft.com/global-infrastructure/services/'
-    - name: Модули Microsoft Learn
-      href: /learn/browse/?terms=content+moderator
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/content-moderator/context/context
+    - name: Модули Microsoft Learn
+      href: /learn/browse/?terms=content+moderator
+    - name: Серии вебинаров по Azure
+      href: 'https://info.microsoft.com/cognitive-services-content-moderator-ondemand.html'
     - name: Azure для государственных организаций и глобальное облако Azure
       href: ../../azure-government/compare-azure-government-global-azure.md
     - name: Обновления Azure
       href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Соответствие нормативным требованиям
       href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
-    - name: Шифрование
-      href: encrypt-data-at-rest.md
