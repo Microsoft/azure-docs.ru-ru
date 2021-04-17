@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: cynthn
 ms.openlocfilehash: d41b86b902d9a58b144e251e6922fbd95d459031
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96016140"
 ---
 1. Установите dapl, rdmacm, ibverbs и mlx4.
@@ -28,7 +28,7 @@ ms.locfileid: "96016140"
    OS.UpdateRdmaDriver=y
    ```
 
-3. Добавьте или измените следующие параметры памяти в КБ в файле /etc/security/limits.conf. Для изменения этого файла требуется доступ с правами root. В целях тестирования можно также задать неограниченное значение для параметра memlock. Например, `<User or group name>   hard    memlock   unlimited`.
+3. Добавьте или измените следующие параметры памяти в КБ в файле /etc/security/limits.conf. Для изменения этого файла требуется доступ с правами root. В целях тестирования можно также задать неограниченное значение для параметра memlock. Например: `<User or group name>   hard    memlock   unlimited`.
 
    ```
    <User or group name> hard    memlock <memory required for your application in KB>
