@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 11/27/2018
 ms.author: glenga
 ms.openlocfilehash: 8dc4c77cf54769451928bd1f0dafeac34a889675
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96010509"
 ---
 ## <a name="install-the-azure-functions-extension"></a>Установка расширения "Функции Azure"

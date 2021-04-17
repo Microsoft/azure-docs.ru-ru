@@ -6,14 +6,14 @@ author: PatrickFarley
 manager: nitinme
 ms.service: cognitive-services
 ms.topic: include
-ms.date: 08/05/2020
+ms.date: 3/22/2021
 ms.author: pafarley
-ms.openlocfilehash: cc1d375de9f45369f6d2902b106a1740f316ad8d
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 41f6c8e260968eacd04249b3f887d4865907df0d
+ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98947109"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104879690"
 ---
 [Справочная документация](/javascript/api/@azure/arm-cognitiveservices/) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/cognitiveservices/arm-cognitiveservices) | [Пакет (NPM)](https://www.npmjs.com/package/@azure/arm-cognitiveservices) | [Примеры](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/cognitiveservices/arm-cognitiveservices#sample-code)
 
@@ -114,9 +114,11 @@ npm install @azure/ms-rest-nodeauth
 node index.js
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-* [Справочная документация по пакету SDK для управления Azure](/javascript/api/@azure/arm-cognitiveservices/)
-* [Общие сведения об Azure Cognitive Services](../../what-are-cognitive-services.md)
-* [Проверка подлинности запросов к Azure Cognitive Services](../../authentication.md)
-* [Создание ресурса с помощью портала Azure](../../cognitive-services-apis-create-account.md)
+* Сведения о безопасной работе с Cognitive Services см. в статье **[Проверка подлинности запросов к Azure Cognitive Services](../../authentication.md)** .
+* См. статью **[Общие сведения об Azure Cognitive Services](../../what-are-cognitive-services.md)** , в которой можно увидеть список различных категорий в Cognitive Services.
+* Список естественных языков, поддерживаемых Cognitive Services, см. в статье **[Поддержка естественного языка](../../language-support.md)** .
+* Сведения об использовании Cognitive Services в локальной среде см. в статье **[Использование Cognitive Services в качестве контейнеров](../../cognitive-services-container-support.md)** .
+* См. статью **[Планирование затрат и управление ими в Cognitive Services](../../plan-manage-costs.md)** , чтобы получить сведения о том, как оценивать затраты на использование Cognitive Services.
+* Дополнительные сведения о пакете SDK для управления см. в **[справочной документации по пакету SDK для управления Azure](/javascript/api/@azure/arm-cognitiveservices/)** .

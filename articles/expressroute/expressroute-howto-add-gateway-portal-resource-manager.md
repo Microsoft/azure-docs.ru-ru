@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 03/03/2021
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: e70b41dfba03b7439313350746724c6f8e90bc34
-ms.sourcegitcommit: f0a3ee8ff77ee89f83b69bc30cb87caa80f1e724
+ms.openlocfilehash: f81446111ab87b280d50caceb93beefc7aedef3b
+ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105564778"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110331"
 ---
 # <a name="tutorial-configure-a-virtual-network-gateway-for-expressroute-using-the-azure-portal"></a>Руководство по Настройка шлюза виртуальной сети для ExpressRoute с помощью портала Azure
 > [!div class="op_single_selector"]
@@ -63,7 +63,7 @@ ms.locfileid: "105564778"
    
     :::image type="content" source="./media/expressroute-howto-add-gateway-portal-resource-manager/add-gateway-subnet.png" alt-text="Добавление подсети шлюза":::
 
-1. В поле **Имя** автоматически добавляется значение GatewaySubnet. По этому имени Azure идентифицирует подсеть как подсеть шлюза. Измените автоматически заполняемое значение **диапазона адресов** для соответствия требованиям конфигурации. Рекомендуется создать подсеть шлюза с блоком адресов /27 или больше (/26, /25 и т. д.).
+1. В поле **Имя** автоматически добавляется значение GatewaySubnet. По этому имени Azure идентифицирует подсеть как подсеть шлюза. Измените автоматически заполняемое значение **диапазона адресов** для соответствия требованиям конфигурации. Рекомендуется создать подсеть шлюза с блоком адресов /27 или больше (/26, /25 и т. д.). Если вы планируете подключить 16 каналов ExpressRoute к шлюзу, **необходимо** создать подсеть шлюза размером /26 или больше.
 
     Если вы используете виртуальную сеть с двумя стеками и планируете использовать частный пиринг на основе IPv6 через ExpressRoute, щелкните **Добавить диапазон адресов IPv6** и введите значения для параметра **Диапазон IPv6-адресов**.
 

@@ -1,4 +1,4 @@
-- name: Помощник по метрикам
+- name: Документация по Помощнику по метрикам
   href: index.yml
 - name: Обзор
   expanded: true
@@ -9,7 +9,7 @@
       href: 'http://go.microsoft.com/fwlink/?LinkID=761229'
     - name: Новые возможности
       href: whats-new.md
-- name: Краткие руководства по Помощнику по метрикам
+- name: Краткие руководства
   items:
     - name: Веб-портал
       href: quickstarts/web-portal.md
@@ -35,6 +35,10 @@
       href: how-tos/anomaly-feedback.md
     - name: Создание графа метрик
       href: how-tos/metrics-graph.md
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Использование ключей управляемых клиентом
+          href: encryption.md
 - name: Основные понятия
   items:
     - name: 'Основные термины, касающиеся Помощника по метрикам'
@@ -49,11 +53,11 @@
       href: /powershell/module/azurerm.cognitiveservices/
 - name: Ресурсы
   items:
-    - name: Поддержка регионов
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+    - name: Готовность к работе в масштабах предприятия
+      items:
+        - name: Поддержка регионов
+          href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
+        - name: Соответствие требованиям и сертификация
+          href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/metrics-advisor/context/context
-    - name: Соответствие нормативным требованиям
-      href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'
-    - name: Шифрование
-      href: encryption.md

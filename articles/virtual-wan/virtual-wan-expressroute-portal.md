@@ -7,12 +7,12 @@ ms.service: virtual-wan
 ms.topic: tutorial
 ms.date: 10/07/2020
 ms.author: cherylmc
-ms.openlocfilehash: 6b9c4bcf760387f6bbe380c9aa079df2f86a1847
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 67df1c822f34f45bb0931848f8015374a346673a
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106060658"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106278445"
 ---
 # <a name="tutorial-create-an-expressroute-association-using-azure-virtual-wan"></a>Руководство по созданию связи ExpressRoute с помощью Виртуальной глобальной сети Azure
 
@@ -104,7 +104,7 @@ ms.locfileid: "106060658"
 
 ## <a name="connect-your-circuit-to-the-hub-gateway"></a><a name="connectcircuit"></a>Подключение канала к шлюзу концентратора
 
-После создания шлюза можно подключить к нему канал [ExpressRoute](../expressroute/expressroute-howto-circuit-portal-resource-manager.md). Если каналы ExpressRoute ценовой категории"Стандартный" или "Премиум" размещены в расположениях, которые поддерживает ExpressRoute Global Reach, то они могут подключаться к шлюзу ExpressRoute виртуальной глобальной сети и использовать все возможности передачи данных по виртуальной глобальной сети (VPN — VPN, VPN и ExpressRoute). Если каналы ExpressRoute ценовой категории "Стандартный" или "Премиум" размещены в расположениях, которые ExpressRoute Global Reach не поддерживает, то они могут подключаться к шлюзу ExpressRoute виртуальной глобальной сети, но не могут использовать все возможности передачи данных по виртуальной глобальной сети. ExpressRoute ценовой категории "Локальный" поддерживается для концентраторов Виртуальной глобальной сети Azure, если периферийные виртуальные сети, подключенные к такому концентратору, находятся в одном регионе с концентратором.
+После создания шлюза можно подключить к нему канал [ExpressRoute](../expressroute/expressroute-howto-circuit-portal-resource-manager.md). Если каналы ExpressRoute ценовой категории"Стандартный" или "Премиум" размещены в расположениях, которые поддерживает ExpressRoute Global Reach, то они могут подключаться к шлюзу ExpressRoute виртуальной глобальной сети и использовать все возможности передачи данных по виртуальной глобальной сети (VPN — VPN, VPN и ExpressRoute). Если каналы ExpressRoute ценовой категории "Стандартный" или "Премиум" размещены в расположениях, которые ExpressRoute Global Reach не поддерживает, то они могут подключаться к шлюзу ExpressRoute виртуальной глобальной сети, но не могут использовать все возможности передачи данных по виртуальной глобальной сети. Локальный канал ExpressRoute также поддерживается с концентраторами виртуальной глобальной сети Azure.
 
 ### <a name="to-connect-the-circuit-to-the-hub-gateway"></a>Подключение канала к шлюзу концентратора
 

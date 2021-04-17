@@ -4,12 +4,12 @@ ms.service: app-service
 ms.topic: include
 ms.date: 03/17/2020
 ms.author: msangapu
-ms.openlocfilehash: 80d295d017b11d86df7a3fe4c14afc7a5665cd96
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: dad7799cb5a7579b28847e3968b6b38f1f98298a
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104612384"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107327063"
 ---
 | Ресурс | Бесплатный | Совмещаемая блокировка | Basic | Standard | Премиум (версия 1–3) | Isolated </th> |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ ms.locfileid: "104612384"
 | [План обслуживания приложения](../articles/app-service/overview-hosting-plans.md) |10 для каждого региона |10 шт. на одну группу ресурсов |100 шт. на одну группу ресурсов |100 шт. на одну группу ресурсов |100 шт. на одну группу ресурсов |100 шт. на одну группу ресурсов|
 | Тип вычислительной операции |Совмещаемая блокировка |Совмещаемая блокировка |Выделенный<sup>3</sup> |Выделенный<sup>3</sup> |Выделенный<sup>3</sup></p> |Выделенный<sup>3</sup>|
 | [Расширение](../articles/app-service/manage-scale-up.md) (максимальное количество экземпляров) |1 общедоступный |1 общедоступный |3 выделенных<sup>3</sup> |10 выделенных<sup>3</sup> | 20 выделенных для версий 1 и 2; 30 выделенных для версии 3.<sup>3</sup>|100 выделенных<sup>4</sup>|
-| Хранилище<sup>5</sup> |1 ГБ<sup>5</sup> |1 ГБ<sup>5</sup> |10 ГБ<sup>5</sup> |50 ГБ<sup>5</sup> |250 ГБ<sup>5</sup> <br/><br/> Если требуется более 250 ГБ отправьте запрос в службу поддержки. |1 ТБ<sup>5</sup> <br/><br/> Доступная квота хранилища составляет 999 ГБ. |
+| Хранилище<sup>5</sup> |1 ГБ<sup>5</sup> |1 ГБ<sup>5</sup> |10 ГБ<sup>5</sup> |50 ГБ<sup>5</sup> |250 ГБ<sup>5</sup> |1 ТБ<sup>5</sup> <br/><br/> Доступная квота хранилища составляет 999 ГБ. |
 | Время ЦП (5 минут)<sup>6</sup> |3 минуты |3 минуты |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a>|
 | Время ЦП (в день)<sup>6</sup> |60 минут |240 минут |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |Без ограничений, оплата по стандартным [тарифам](https://azure.microsoft.com/pricing/details/app-service/)</a> |
 | Память (1 час) |1024 МБ на один план службы приложений |1024 МБ на одно приложение |Н/Д |Н/Д |Н/Д |Н/Д |

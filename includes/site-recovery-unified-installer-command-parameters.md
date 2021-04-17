@@ -5,13 +5,13 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: raynew
 ms.openlocfilehash: 8076a6af2382ccec1ac832cd83c3946d8c7c6f57
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96019155"
 ---
-|имени параметра| Type | Описание| Возможные значения|
+|имени параметра| Тип | Описание| Возможные значения|
 |-|-|-|-|
 | /ServerMode|Обязательный|Указывает, нужно ли установить и сервер конфигурации, и сервер обработки или только север обработки.|CS<br>PS|
 |/InstallLocation|Обязательный|Папка для установки компонентов.| Любая папка на компьютере.|
