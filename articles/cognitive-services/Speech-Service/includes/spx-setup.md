@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/15/2020
 ms.author: v-demjoh
-ms.openlocfilehash: a995a110c4f777603e5b0273b6025cd68fe55b67
-ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
+ms.openlocfilehash: ec34ba7b2d3bc026376aeb1cb91847d8eac1cac5
+ms.sourcegitcommit: d40ffda6ef9463bb75835754cabe84e3da24aab5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102532777"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "107073653"
 ---
 ## <a name="download-and-install"></a>Загрузите и установите
 
@@ -23,7 +23,7 @@ ms.locfileid: "102532777"
 2. Установите CLI службы "Речь" с использованием NuGet. Для этого введите следующую команду:
 
    ```console
-   dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI --version 1.15.0
+   dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI
    ```
 Введите `spx`, чтобы получить справку по интерфейсу командной строки службы "Речь".
 
@@ -55,7 +55,7 @@ ms.locfileid: "102532777"
 1. Установите [пакет SDK для .NET Core 3.1](/dotnet/core/install/linux).
 2. Установите CLI службы "Речь" с использованием NuGet. Для этого введите следующую команду:
 
-    `dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI --version 1.15.0`
+    `dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI`
 
 Введите `spx`, чтобы получить справку по интерфейсу командной строки службы "Речь".
 
