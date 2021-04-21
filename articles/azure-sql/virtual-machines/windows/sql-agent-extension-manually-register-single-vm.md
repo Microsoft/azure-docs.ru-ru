@@ -15,12 +15,12 @@ ms.date: 11/07/2020
 ms.author: mathoma
 ms.reviewer: jroth
 ms.custom: devx-track-azurecli, devx-track-azurepowershell, contperf-fy21q2
-ms.openlocfilehash: 3cea15114e125951a8fbec73f965b272a4f8053d
-ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
+ms.openlocfilehash: e34876c76259b8274e0b0ef9059659802eb55cf1
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106284164"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765455"
 ---
 # <a name="register-sql-server-vm-with-sql-iaas-agent-extension"></a>Регистрация виртуальной машины SQL Server в Azure с расширением SQL IaaS Agent
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "106284164"
 > [!IMPORTANT]
 > Расширение SQL IaaS Agent собирает данные для предоставления клиентам дополнительных преимуществ по использованию SQL Server в виртуальных машинах Azure. Корпорация Майкрософт не намерена использовать эти данные для аудита лицензирования без согласия клиента. Дополнительные сведения см. в разделе [Приложение о конфиденциальности SQL Server](/sql/sql-server/sql-server-privacy#non-personal-data).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Для регистрации виртуальной машины SQL Server с расшиением понадобится: 
 
@@ -99,7 +99,7 @@ Register-AzResourceProvider -ProviderNamespace Microsoft.SqlVirtualMachine
 
 Экземпляры отказоустойчивого кластера и многоэкземплярные развертывания можно зарегистрировать только с расширением SQL IaaS Agent в упрощенном режиме. 
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/bash)
+# <a name="azure-cli"></a>[Azure CLI](#tab/bash);
 
 Зарегистрировать виртуальную машину SQL Server в упрощенном режиме с помощью Azure CLI: 
 
@@ -149,7 +149,7 @@ SQL Server 2008 и 2008 R2, установленные в Windows Server 2008 
 Чтобы зарегистрировать SQL Server 2008 (`SQL2008-WS2008`) или 2008 R2 (`SQL2008R2-WS2008`) в экземпляре Windows Server 2008, используйте следующий фрагмент кода Azure CLI или Azure PowerShell: 
 
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/bash)
+# <a name="azure-cli"></a>[Azure CLI](#tab/bash);
 
 Зарегистрировать виртуальную машину SQL Server в режиме NoAgent с помощью Azure CLI: 
 
@@ -193,7 +193,7 @@ $sqlvm.SqlManagementType
 > При полном обновлении режима управления для расширения SQL IaaS будет перезапущена служба SQL Server. В некоторых случаях перезапуск может привести к тому, что имена субъектов-служб (SPN), связанные со службой SQL Server, будут переключены не на ту учетную запись пользователя. При наличии проблем с подключением после обновления режима управления до полного [отмените регистрацию и повторно зарегистрируйте имена участников-служб](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections).
 
 
-### <a name="azure-portal"></a>Портал Azure
+### <a name="azure-portal"></a>портал Azure;
 
 Чтобы обновить расширение до полного режима с помощью портала Azure, выполните следующие действия. 
 
@@ -236,7 +236,7 @@ $sqlvm.SqlManagementType
 ## <a name="verify-registration-status"></a>Проверка состояния регистрации
 Вы можете проверить, зарегистрирована ли ваша виртуальная машина SQL Server с расширением SQL IaaS Agent, используя портал Azure, Azure CLI или Azure PowerShell. 
 
-### <a name="azure-portal"></a>Портал Azure 
+### <a name="azure-portal"></a>портал Azure; 
 
 Чтобы проверить состояние регистрации с помощью портал Azure, выполните следующие действия: 
 
@@ -251,7 +251,7 @@ $sqlvm.SqlManagementType
 
 Проверьте текущее состояние регистрации виртуальной машины SQL Server с помощью Azure CLI или Azure PowerShell. Параметр `ProvisioningState` отображает состояние `Succeeded`, если регистрация прошла успешно. 
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/bash)
+# <a name="azure-cli"></a>[Azure CLI](#tab/bash);
 
 Чтобы проверить состояние регистрации с помощью Azure CLI, выполните следующий фрагмент кода:  
 
@@ -278,7 +278,7 @@ $sqlvm.SqlManagementType
 
 Снятие регистрации виртуальной машины SQL с расширения SQL IaaS Agent необходима для того, чтобы перейти с полного режима управления на другой. 
 
-### <a name="azure-portal"></a>Портал Azure
+### <a name="azure-portal"></a>портал Azure;
 
 Чтобы снять регистрацию виртуальной машины SQL Server с расширения на портале Azure, выполните следующие действия.
 
@@ -304,7 +304,7 @@ $sqlvm.SqlManagementType
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Чтобы снять регистрацию виртуальной машины SQL Server с расширения с помощью Azure CLI, выполните команду [az sql vm delete](/cli/azure/sql/vm#az-sql-vm-delete). Удалится *ресурс* виртуальной машины SQL Server, но не сама виртуальная машина. 
+Чтобы снять регистрацию виртуальной машины SQL Server с расширения с помощью Azure CLI, выполните команду [az sql vm delete](/cli/azure/sql/vm#az_sql_vm_delete). Удалится *ресурс* виртуальной машины SQL Server, но не сама виртуальная машина. 
 
 
 ```azurecli-interactive

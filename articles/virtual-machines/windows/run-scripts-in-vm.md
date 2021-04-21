@@ -9,12 +9,12 @@ ms.author: robreed
 ms.date: 05/02/2018
 ms.topic: how-to
 manager: carmonm
-ms.openlocfilehash: 24ff0d8089055f83c76156cf5fb163313faf9492
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 7bf62eb2ab8d2ce82ce73e3e8ae26cf303b8ba67
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105043484"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765887"
 ---
 # <a name="run-scripts-in-your-windows-vm"></a>Запуск сценариев в виртуальной машине Windows
 
@@ -35,7 +35,7 @@ ms.locfileid: "105043484"
 Функция [Выполнить команду](run-command.md) позволяет управлять виртуальными машинами и приложениями и устранять неполадки с помощью сценариев и доступна даже тогда, когда машина недоступна, например, если гостевой брандмауэр не имеет открытых портов RDP или SSH.
 
 * Выполнение сценариев в виртуальных машинах Azure.
-* Можно выполнить с помощью [портала Microsoft Azure](run-command.md), [REST API](/rest/api/compute/virtual%20machines%20run%20commands/runcommand), [Azure CLI](/cli/azure/vm/run-command#az-vm-run-command-invoke), или [PowerShell](/powershell/module/az.compute/invoke-azvmruncommand)
+* Можно выполнить с помощью [портала Microsoft Azure](run-command.md), [REST API](/rest/api/compute/virtual%20machines%20run%20commands/runcommand), [Azure CLI](/cli/azure/vm/run-command#az_vm_run_command_invoke), или [PowerShell](/powershell/module/az.compute/invoke-azvmruncommand)
 * Быстро запустите сценарий и просмотрите выходные данные и повторите при необходимости на портале Microsoft Azure.
 * Сценарий можно ввести непосредственно или выполнив один из встроенных сценариев.
 * Запустить сценарий PowerShell на компьютерах Windows и сценарий Bash на компьютерах Linux.

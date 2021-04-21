@@ -6,12 +6,12 @@ ms.service: signalr
 ms.topic: conceptual
 ms.date: 03/01/2019
 ms.author: zhshang
-ms.openlocfilehash: 1f80742d48fc46c8c5e337794100ca5901818c88
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.openlocfilehash: cd03720b65883c5f43b11837d4a88a705209fb10
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102184395"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107764105"
 ---
 # <a name="how-to-rotate-access-key-for-azure-signalr-service"></a>How to rotate access key for Azure SignalR Service (Смена ключей доступа для Службы Azure SignalR)
 
@@ -23,7 +23,7 @@ ms.locfileid: "102184395"
 
 ## <a name="regenerate-access-keys"></a>Повторное создание ключей доступа
 
-1. Перейдите к [портал Azure](https://portal.azure.com/)и выполните вход с помощью своих учетных данных.
+1. Войдите на [портал Azure](https://portal.azure.com/) со своими учетными данными.
 
 1. Перейдите в раздел **Ключи** в экземпляре Службы Azure SignalR, для которого требуется повторно создать ключи.
 
@@ -35,7 +35,7 @@ ms.locfileid: "102184395"
 
    ![Повторное создание ключей](media/signalr-howto-key-rotation/regenerate-keys.png)
 
-Вы также можете повторно создать ключи с помощью [Azure CLI](/cli/azure/signalr/key#az-signalr-key-renew).
+Вы также можете повторно создать ключи с помощью [Azure CLI](/cli/azure/signalr/key#az_signalr_key_renew).
 
 ## <a name="update-configurations-with-new-connection-strings"></a>Обновление конфигураций с помощью новых строк подключения
 
@@ -49,7 +49,7 @@ ms.locfileid: "102184395"
 
 В некоторых ситуациях Служба Azure SignalR может применять обязательное повторное создание ключа доступа. Клиенты получают уведомления службы по электронной почте и на портале. Если вы получили такое оповещение или произошел сбой службы из-за ключа доступа, смените ключи, следуя инструкциям из этого руководства.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 По соображениям безопасности рекомендуется регулярно менять ключи доступа.
 
@@ -59,4 +59,4 @@ ms.locfileid: "102184395"
 > [Учебник по аутентификации службы Azure SignalR](./signalr-concept-authenticate-oauth.md)
 
 > [!div class="nextstepaction"]
-> [Создание бессерверного приложения в режиме реального времени с проверкой подлинности](./signalr-tutorial-authenticate-azure-functions.md)
+> [Руководство по аутентификации в службе Azure SignalR с помощью Функций Azure](./signalr-tutorial-authenticate-azure-functions.md)
