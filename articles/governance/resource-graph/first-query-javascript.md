@@ -3,13 +3,15 @@ title: Краткое руководство. Первый запрос на Jav
 description: В этом кратком руководстве показано, как включить библиотеку Resource Graph для JavaScript и выполнить первый запрос.
 ms.date: 01/27/2021
 ms.topic: quickstart
-ms.custom: devx-track-js
-ms.openlocfilehash: 97cbd9ddf65a4135f55304f6dd67c704c6fcac5d
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom:
+- devx-track-js
+- mode-api
+ms.openlocfilehash: ef93378acaf2c92cf4f7761345cea326af63d300
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98917527"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107533047"
 ---
 # <a name="quickstart-run-your-first-resource-graph-query-using-javascript"></a>Краткое руководство. Выполнение первого запроса Resource Graph с помощью JavaScript
 

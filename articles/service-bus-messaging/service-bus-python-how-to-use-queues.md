@@ -1,19 +1,22 @@
 ---
 title: Использование очередей Служебной шины Azure с помощью пакета azure-servicebus версии 7.0.0 для Python
 description: Из этой статьи вы узнаете, как с помощью Python отправлять сообщения в очереди Служебной шины Azure и получать сообщения из них.
-author: spelluru
 documentationcenter: python
-ms.devlang: python
-ms.topic: quickstart
-ms.date: 11/18/2020
+author: spelluru
 ms.author: spelluru
-ms.custom: seo-python-october2019, devx-track-python
-ms.openlocfilehash: 0553062032a58ec9eb9cf3c474ee7c8f19fc544d
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 11/18/2020
+ms.topic: quickstart
+ms.devlang: python
+ms.custom:
+- seo-python-october2019
+- devx-track-python
+- mode-api
+ms.openlocfilehash: e982b3f36dbfe2144170d53d07473201abb014ef
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98631561"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107534976"
 ---
 # <a name="send-messages-to-and-receive-messages-from-azure-service-bus-queues-python"></a>Отправка сообщений в очереди Служебной шины Azure и получение сообщений из них (Python)
 Из этой статьи вы узнаете, как с помощью Python отправлять сообщения в очереди Служебной шины Azure и получать сообщения из них. 

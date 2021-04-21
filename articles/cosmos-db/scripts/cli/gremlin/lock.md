@@ -7,12 +7,12 @@ ms.service: cosmos-db
 ms.subservice: cosmosdb-graph
 ms.topic: sample
 ms.date: 07/29/2020
-ms.openlocfilehash: 492246b5dfb19664ea54ce8b5462c7d77f8d951b
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 19809d7150c8a461f97282d1583d0d870d6af8bb
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94562718"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107770680"
 ---
 # <a name="create-a-resource-lock-for-azure-cosmos-gremlin-api-database-and-graph-using-azure-cli"></a>Создание блокировки ресурсов для базы данных и графа API Gremlin в Azure Cosmos с помощью Azure CLI
 [!INCLUDE[appliesto-gremlin-api](../../../includes/appliesto-gremlin-api.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "94562718"
 
 | Get-Help | Примечания |
 |---|---|
-| [az lock create](/cli/azure/lock#az-lock-create) | Создание блокировки. |
-| [az lock list](/cli/azure/lock#az-lock-list) | Вывод сведений о блокировке. |
-| [az lock show](/cli/azure/lock#az-lock-show) | Отображение свойств блокировки. |
-| [az lock delete](/cli/azure/lock#az-lock-delete) | Удаление блокировки. |
+| [az lock create](/cli/azure/lock#az_lock_create) | Создание блокировки. |
+| [az lock list](/cli/azure/lock#az_lock_list) | Вывод сведений о блокировке. |
+| [az lock show](/cli/azure/lock#az_lock_show) | Отображение свойств блокировки. |
+| [az lock delete](/cli/azure/lock#az_lock_delete) | Удаление блокировки. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

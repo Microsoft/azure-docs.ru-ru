@@ -3,19 +3,18 @@ title: Сведения о секретах Azure Key Vault — Azure Key Vault
 description: Общие сведения о секретах Azure Key Vault.
 services: key-vault
 author: msmbaldwin
-manager: rkarlin
 tags: azure-resource-manager
 ms.service: key-vault
 ms.subservice: secrets
 ms.topic: overview
 ms.date: 09/04/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 55814dff5cba572e2e22b5a0f9971bc920e32372
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 6d4f3f744a85c14c42ffef1c894b237081e871f8
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "100526649"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107752432"
 ---
 # <a name="about-azure-key-vault-secrets"></a>Сведения о секретах Azure Key Vault
 
@@ -133,5 +132,5 @@ Key Vault может управлять ключами [учетных запи�
 - [Сведения о ключах, секретах и сертификатах](../general/about-keys-secrets-certificates.md)
 - [Сведения о ключах](../keys/about-keys.md)
 - [Сведения о сертификатах](../certificates/about-certificates.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)

@@ -4,12 +4,12 @@ description: Пример скрипта Azure CLI для создания фу�
 ms.topic: sample
 ms.date: 04/20/2017
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 13120ad4478febf9281ff423a3a7a8f8f3b25845
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 539c3a7dd95045b2e569dbb339be0e5a0c845902
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97934413"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786295"
 ---
 # <a name="create-a-function-app-with-a-named-storage-account-connection"></a>Создание приложения-функции с именованным подключением учетной записи хранения 
 
@@ -35,11 +35,11 @@ ms.locfileid: "97934413"
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создайте группу ресурсов с расположением. |
-| [az storage account create](/cli/azure/storage/account#az-storage-account-create) | Создайте учетную запись хранения. |
-| [az functionapp create](/cli/azure/functionapp#az-functionapp-create) | Создает приложение-функцию в бессерверном [плане потребления](../consumption-plan.md). |
-| [az storage account show-connection-string](/cli/azure/storage/account#az-storage-account-show-connection-string) | Получает строку подключения для учетной записи. |
-| [az functionapp config appsettings set](/cli/azure/functionapp/config/appsettings#az-functionapp-config-appsettings-set) | Задает строку подключения в качестве параметра приложения в приложении-функции. |
+| [az group create](/cli/azure/group#az_group_create) | Создайте группу ресурсов с расположением. |
+| [az storage account create](/cli/azure/storage/account#az_storage_account_create) | Создайте учетную запись хранения. |
+| [az functionapp create](/cli/azure/functionapp#az_functionapp_create) | Создает приложение-функцию в бессерверном [плане потребления](../consumption-plan.md). |
+| [az storage account show-connection-string](/cli/azure/storage/account#az_storage_account_show_connection_string) | Получает строку подключения для учетной записи. |
+| [az functionapp config appsettings set](/cli/azure/functionapp/config/appsettings#az_functionapp_config_appsettings_set) | Задает строку подключения в качестве параметра приложения в приложении-функции. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

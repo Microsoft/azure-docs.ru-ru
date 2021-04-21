@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: tutorial
 ms.date: 02/27/2020
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: ff11b8461b483f5a66df19bb1b108a1fe1168fb9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cfb9ff9e6b107c9da84b164a055453994fc29229
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98944030"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786645"
 ---
 # <a name="tutorial-create-an-apache-kafka-rest-proxy-enabled-cluster-in-hdinsight-using-azure-cli"></a>Руководство. Создание кластера Apache Kafka с поддержкой прокси-сервера REST в HDInsight с помощью Azure CLI
 
@@ -82,7 +82,7 @@ API Apache Kafka доступен только ресурсам, размеще�
     export componentVersion=kafka=2.1
     ```
 
-1. [Создайте группу ресурсов](/cli/azure/group#az-group-create), введя следующую команду:
+1. [Создайте группу ресурсов](/cli/azure/group#az_group_create), введя следующую команду:
 
     ```azurecli
      az group create \
@@ -90,7 +90,7 @@ API Apache Kafka доступен только ресурсам, размеще�
         --name $resourceGroupName
     ```
 
-1. [Создайте учетную запись хранения Azure](/cli/azure/storage/account#az-storage-account-create), введя следующую команду:
+1. [Создайте учетную запись хранения Azure](/cli/azure/storage/account#az_storage_account_create), введя следующую команду:
 
     ```azurecli
     # Note: kind BlobStorage is not available as the default storage account.
@@ -103,7 +103,7 @@ API Apache Kafka доступен только ресурсам, размеще�
         --sku Standard_LRS
     ```
 
-1. [Извлеките первичный ключ](/cli/azure/storage/account/keys#az-storage-account-keys-list) из учетной записи хранения Azure и сохраните его в переменной, введя следующую команду:
+1. [Извлеките первичный ключ](/cli/azure/storage/account/keys#az_storage_account_keys_list) из учетной записи хранения Azure и сохраните его в переменной, введя следующую команду:
 
     ```azurecli
     export storageAccountKey=$(az storage account keys list \
@@ -112,7 +112,7 @@ API Apache Kafka доступен только ресурсам, размеще�
         --query [0].value -o tsv)
     ```
 
-1. [Создайте контейнер хранилища Azure](/cli/azure/storage/container#az-storage-container-create), введя следующую команду:
+1. [Создайте контейнер хранилища Azure](/cli/azure/storage/container#az_storage_container_create), введя следующую команду:
 
     ```azurecli
     az storage container create \
@@ -121,7 +121,7 @@ API Apache Kafka доступен только ресурсам, размеще�
         --account-name $storageAccount
     ```
 
-1. [Создайте кластер HDInsight](/cli/azure/hdinsight#az-hdinsight-create). Прежде чем вводить эту команду, укажите следующие параметры.
+1. [Создайте кластер HDInsight](/cli/azure/hdinsight#az_hdinsight_create). Прежде чем вводить эту команду, укажите следующие параметры.
 
     1. Обязательные параметры для кластеров Kafka:
 

@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для Azure Backup
 description: Содержит список элементов управления соответствием Политики Azure, доступных для Azure Backup. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: sample
 author: v-amallick
 ms.author: v-amallick
 ms.service: backup
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: e6559bf93c895f62ae5c5cf070fbcdd513b88a70
-ms.sourcegitcommit: af6eba1485e6fd99eed39e507896472fa930df4d
+ms.openlocfilehash: f5376e03361f977cb0d79fd7968d0f40867cf08c
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2021
-ms.locfileid: "106294031"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107501933"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-backup"></a>Элементы управления соответствием Политики Azure для Azure Backup
 

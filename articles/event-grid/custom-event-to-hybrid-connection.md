@@ -4,12 +4,12 @@ description: Руководство по Используйте службу "С
 ms.date: 07/07/2020
 ms.topic: tutorial
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: c709d77827551860cc917c3c84c5a849d9fdc512
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7fcbc76f3ab58aac6beca3e142eba3a9b62c28a3
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94566832"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107770414"
 ---
 # <a name="tutorial-route-custom-events-to-azure-relay-hybrid-connections-with-azure-cli-and-event-grid"></a>Руководство по Маршрутизация пользовательских событий на гибридные подключения Azure Relay с помощью Azure CLI и службы "Сетка событий"
 
@@ -27,7 +27,7 @@ ms.locfileid: "94566832"
 
 Темами событий сетки являются ресурсы Azure, которые необходимо поместить в группу ресурсов Azure. Группа ресурсов Azure — это логическая коллекция, в которой выполняется развертывание и администрирование ресурсов Azure.
 
-Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create). 
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create). 
 
 В следующем примере создается группа ресурсов с именем *gridResourceGroup* в расположении *westus2*.
 

@@ -6,12 +6,12 @@ ms.author: mbaldwin
 ms.service: key-vault
 ms.topic: tutorial
 ms.date: 06/16/2020
-ms.openlocfilehash: fc33b24aac8964d0a8390b4b38c5e1862ed639a8
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: be1b0da23841b5a63ec044e04a5465e29345f9d1
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102198920"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107772205"
 ---
 # <a name="tutorial-access-azure-blob-storage-using-azure-databricks-and-azure-key-vault"></a>Руководство по Получение доступа к Хранилищу BLOB-объектов Azure с помощью Azure Databricks и Azure Key Vault
 
@@ -33,7 +33,7 @@ ms.locfileid: "102198920"
 
 ## <a name="create-a-storage-account-and-blob-container-with-azure-cli"></a>Создание контейнера больших двоичных объектов и учетной записи хранения с помощью Azure CLI
 
-Для использования больших двоичных объектов сначала необходимо создать учетную запись хранения общего назначения. Если у вас нет [группы ресурсов](/cli/azure/group#az-group-create), создайте ее перед выполнением команды. Приведенная ниже команда позволяет создать и отобразить метаданные контейнера хранилища. Скопируйте указанный здесь **идентификатор**.
+Для использования больших двоичных объектов сначала необходимо создать учетную запись хранения общего назначения. Если у вас нет [группы ресурсов](/cli/azure/group#az_group_create), создайте ее перед выполнением команды. Приведенная ниже команда позволяет создать и отобразить метаданные контейнера хранилища. Скопируйте указанный здесь **идентификатор**.
 
 ```azurecli
 az storage account create --name contosoblobstorage5 --resource-group contosoResourceGroup --location eastus --sku Standard_ZRS --encryption-services blob

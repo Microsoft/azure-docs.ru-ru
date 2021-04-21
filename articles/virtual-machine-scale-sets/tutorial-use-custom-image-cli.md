@@ -9,12 +9,12 @@ ms.date: 05/01/2020
 ms.author: cynthn
 ms.custom: mvc, devx-track-azurecli
 ms.reviewer: akjosh
-ms.openlocfilehash: b12715e299f523d7ace56a72b0098b5d7ffac0ab
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a9a4abe550da4f0438f875127b3b689045c06e6f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98683060"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107763007"
 ---
 # <a name="tutorial-create-and-use-a-custom-image-for-virtual-machine-scale-sets-with-the-azure-cli"></a>Руководство по Создание и использование пользовательского образа для масштабируемых наборов виртуальных машин с помощью Azure CLI
 Создавая масштабируемый набор, вы указываете образ для использования при развертывании экземпляров виртуальных машин. Чтобы сократить количество задач после развертывания экземпляров виртуальных машин, можно использовать пользовательский образ виртуальной машины. Этот образ содержит все необходимые установки или конфигурации приложения. Все экземпляры виртуальных машин, созданные в масштабируемом наборе, используют пользовательский образ виртуальной машины и готовы обслуживать трафик приложения. Из этого руководства вы узнаете, как выполнить следующие задачи:
@@ -77,7 +77,7 @@ sudo apt-get install -y nginx
 
 Допустимыми знаками для имени коллекции являются прописные или строчные буквы, цифры и точки. Имя коллекции не должно содержать дефисы.   Имена коллекций должны быть уникальным в пределах вашей подписки. 
 
-Создайте коллекцию образов, используя команду [az sig create](/cli/azure/sig#az-sig-create). В следующем примере показано, как создать группу ресурсов с именем *myGalleryRG* в регионе *восточная часть США* и коллекцию с именем *myGallery*.
+Создайте коллекцию образов, используя команду [az sig create](/cli/azure/sig#az_sig_create). В следующем примере показано, как создать группу ресурсов с именем *myGalleryRG* в регионе *восточная часть США* и коллекцию с именем *myGallery*.
 
 ```azurecli-interactive
 az group create --name myGalleryRG --location eastus
@@ -94,7 +94,7 @@ az sig create --resource-group myGalleryRG --gallery-name myGallery
 
 Дополнительные сведения о значениях, которые можно указать для определения образа, см. в разделе [Определения образов](../virtual-machines/shared-image-galleries.md#image-definitions).
 
-Создайте в коллекции определение образа, используя команду [az sig image-definition create](/cli/azure/sig/image-definition#az-sig-image-definition-create).
+Создайте в коллекции определение образа, используя команду [az sig image-definition create](/cli/azure/sig/image-definition#az_sig_image_definition_create).
 
 В этом примере определение образа имеет имя *myImageDefinition* и предназначено для [специализированного](../virtual-machines/shared-image-galleries.md#generalized-and-specialized-images) образа ОС Linux. Чтобы создать определение для образов с помощью ОС Windows, используйте `--os-type Windows`. 
 
@@ -116,7 +116,7 @@ az sig image-definition create \
 
 ## <a name="create-the-image-version"></a>Создание версии образа
 
-Создайте версию образа на основе виртуальной машины, используя команду [az image gallery create-image-version](/cli/azure/sig/image-version#az-sig-image-version-create).  
+Создайте версию образа на основе виртуальной машины, используя команду [az image gallery create-image-version](/cli/azure/sig/image-version#az_sig_image_version_create).  
 
 Допустимыми знаками для имени версии образа являются цифры и точки. Числа должны быть в диапазоне 32-битного целого числа. Формат: *основной номер версии*.*дополнительный номер версии*.*исправление*.
 
@@ -144,9 +144,9 @@ az sig image-version create \
 
 
 ## <a name="create-a-scale-set-from-the-image"></a>Создание масштабируемого набора на основе образа
-Создайте масштабируемый набор на основе специализированного образа, используя команду [`az vmss create`](/cli/azure/vmss#az-vmss-create). 
+Создайте масштабируемый набор на основе специализированного образа, используя команду [`az vmss create`](/cli/azure/vmss#az_vmss_create). 
 
-Создайте масштабируемый набор с помощью команды [`az vmss create`](/cli/azure/vmss#az-vmss-create), используя параметр --specialized, чтобы указать, что образ является специализированным. 
+Создайте масштабируемый набор с помощью команды [`az vmss create`](/cli/azure/vmss#az_vmss_create), используя параметр --specialized, чтобы указать, что образ является специализированным. 
 
 Используйте идентификатор определения образа в качестве значения параметра `--image`, чтобы создать экземпляры масштабируемого набора на основе последней доступной версии образа. Вы также можете создать экземпляры масштабируемого набора на основе определенной версии, указав идентификатор версии образа в параметре `--image`. 
 
@@ -199,7 +199,7 @@ az network public-ip show \
 
 Вы можете предоставить общий доступ к образам в разных подписках, используя механизм управления доступом на основе ролей Azure (Azure RBAC). Предоставлять общий доступ к образам можно на уровне коллекции, определения образа или версии образа. Любой пользователь с разрешениями на чтение версии образа, даже из другой подписки, сможет развернуть виртуальную машину с помощью версии образа.
 
-Мы рекомендуем предоставлять общий доступ другим пользователям на уровне коллекции. Чтобы получить идентификатор объекта коллекции, используйте команду [az sig show](/cli/azure/sig#az-sig-show).
+Мы рекомендуем предоставлять общий доступ другим пользователям на уровне коллекции. Чтобы получить идентификатор объекта коллекции, используйте команду [az sig show](/cli/azure/sig#az_sig_show).
 
 ```azurecli-interactive
 az sig show \
@@ -208,7 +208,7 @@ az sig show \
    --query id
 ```
 
-Используйте идентификатор объекта в качестве области, а также адрес электронной почты и команду [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create), чтобы предоставить пользователю доступ к общей коллекции образов. Замените `<email-address>` и `<gallery iD>` своими значениями.
+Используйте идентификатор объекта в качестве области, а также адрес электронной почты и команду [az role assignment create](/cli/azure/role/assignment#az_role_assignment_create), чтобы предоставить пользователю доступ к общей коллекции образов. Замените `<email-address>` и `<gallery iD>` своими значениями.
 
 ```azurecli-interactive
 az role assignment create \

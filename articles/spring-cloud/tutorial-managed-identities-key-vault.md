@@ -7,12 +7,12 @@ ms.service: spring-cloud
 ms.topic: tutorial
 ms.date: 07/08/2020
 ms.custom: devx-track-java, devx-track-azurecli
-ms.openlocfilehash: bbfafeaf9ce24911bb4893748d456d22e02fc411
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: 870a04af244d18826e1041316895f746e27870eb
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104877144"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786591"
 ---
 # <a name="tutorial-use-a-managed-identity-to-connect-key-vault-to-an-azure-spring-cloud-app"></a>Руководство по использованию управляемого удостоверения для подключения Key Vault к приложению Azure Spring Cloud
 
@@ -29,14 +29,14 @@ ms.locfileid: "104877144"
 * [установите Maven 3.0 или более поздней версии](https://maven.apache.org/download.cgi);
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
-Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов, которая будет содержать Key Vault и Spring Cloud, с помощью команды [az group create](/cli/azure/group#az-group-create).
+Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов, которая будет содержать Key Vault и Spring Cloud, с помощью команды [az group create](/cli/azure/group#az_group_create).
 
 ```azurecli-interactive
 az group create --name "myResourceGroup" -l "EastUS"
 ```
 
 ## <a name="set-up-your-key-vault"></a>Настройка Key Vault
-Чтобы создать Key Vault, используйте команду [az keyvault create](/cli/azure/keyvault#az-keyvault-create).
+Чтобы создать Key Vault, используйте команду [az keyvault create](/cli/azure/keyvault#az_keyvault_create).
 
 > [!Important]
 > Каждый Key Vault должен иметь уникальное имя. В следующих примерах замените заполнитель <your-keyvault-name> именем своего экземпляра Key Vault.
@@ -47,7 +47,7 @@ az keyvault create --name "<your-keyvault-name>" -g "myResourceGroup"
 
 Запишите полученное значение `vaultUri` в формате https://<your-keyvault-name>.vault.azure.net. Оно понадобится вам позже.
 
-Теперь поместите секрет в Key Vault с помощью команды [az keyvault secret set](/cli/azure/keyvault/secret#az-keyvault-secret-set).
+Теперь поместите секрет в Key Vault с помощью команды [az keyvault secret set](/cli/azure/keyvault/secret#az_keyvault_secret_set).
 
 ```azurecli-interactive
 az keyvault secret set --vault-name "<your-keyvault-name>" \

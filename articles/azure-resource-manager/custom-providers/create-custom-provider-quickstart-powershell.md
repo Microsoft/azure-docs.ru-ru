@@ -3,16 +3,18 @@ title: Создание настраиваемого поставщика рес
 description: Здесь описано, как создать настраиваемый поставщик ресурсов Azure с помощью Azure PowerShell
 author: MSEvanhi
 ms.author: evanhi
+ms.date: 09/22/2020
 ms.topic: quickstart
 ms.devlang: azurepowershell
-ms.date: 09/22/2020
-ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 6912f7f6fdc88c5d611bfbfd78f15e5f7a949f70
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom:
+- devx-track-azurepowershell
+- mode-api
+ms.openlocfilehash: 9c19eb41210b6fba1935a0d158c8240375f4f8f5
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91951848"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107533913"
 ---
 # <a name="quickstart-create-an-azure-custom-resource-provider-with-azure-powershell"></a>Краткое руководство. Создание настраиваемого поставщика ресурсов Azure с помощью Azure PowerShell
 
