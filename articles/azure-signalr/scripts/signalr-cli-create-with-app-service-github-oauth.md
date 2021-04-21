@@ -8,12 +8,12 @@ ms.topic: sample
 ms.date: 04/22/2018
 ms.author: zhshang
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: ee9f0253f2ec27b4afbbb6c5dc1ff3f5c129fe8a
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: c46ac350c1bf7f7593f334a9a7fa5df1af7b19d8
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94841841"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787329"
 ---
 # <a name="create-a-web-app-that-uses-signalr-service-and-github-authentication"></a>Создание веб-приложения с аутентификацией через службу SignalR и GitHub
 
@@ -107,14 +107,14 @@ az webapp deployment source config-local-git --name $myWebAppName --resource-gro
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az signalr create](/cli/azure/signalr#az-signalr-create) | Создание ресурса службы Azure SignalR. |
-| [az signalr key list](/cli/azure/signalr/key#az-signalr-key-list) | Выводит список ключей, которые будут использоваться приложением для принудительной отправки обновлений через SignalR в режиме реального времени. |
-| [az appservice plan create](/cli/azure/appservice/plan#az-appservice-plan-create) | Создание плана Службы приложений Azure для размещения веб-приложений. |
-| [az webapp create](/cli/azure/webapp#az-webapp-create) | Создание веб-приложения Azure в плане размещения Службы приложений Azure. |
-| [az webapp config appsettings set](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set) | Добавляет новые параметры приложения для веб-приложения. Эти параметры приложения используются для хранения строки подключения SignalR и секретов GitHub OAuth для приложения. |
-| [az webapp deployment user set](/cli/azure/webapp/deployment/user#az-webapp-deployment-user-set) | Обновляет учетные данные для развертывания. |
-| [az webapp deployment source config-local-git](/cli/azure/webapp/deployment/source#az-webapp-deployment-source-config-local-git) | Получает URL-адрес конечной точки репозитория Git, который позволяет клонировать и обновлять развертывание веб-приложения. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az signalr create](/cli/azure/signalr#az_signalr_create) | Создание ресурса службы Azure SignalR. |
+| [az signalr key list](/cli/azure/signalr/key#az_signalr_key_list) | Выводит список ключей, которые будут использоваться приложением для принудительной отправки обновлений через SignalR в режиме реального времени. |
+| [az appservice plan create](/cli/azure/appservice/plan#az_appservice_plan_create) | Создание плана Службы приложений Azure для размещения веб-приложений. |
+| [az webapp create](/cli/azure/webapp#az_webapp_create) | Создание веб-приложения Azure в плане размещения Службы приложений Azure. |
+| [az webapp config appsettings set](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set) | Добавляет новые параметры приложения для веб-приложения. Эти параметры приложения используются для хранения строки подключения SignalR и секретов GitHub OAuth для приложения. |
+| [az webapp deployment user set](/cli/azure/webapp/deployment/user#az_webapp_deployment_user_set) | Обновляет учетные данные для развертывания. |
+| [az webapp deployment source config-local-git](/cli/azure/webapp/deployment/source#az_webapp_deployment_source_config_local_git) | Получает URL-адрес конечной точки репозитория Git, который позволяет клонировать и обновлять развертывание веб-приложения. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

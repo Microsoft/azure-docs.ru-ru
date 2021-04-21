@@ -12,12 +12,12 @@ ms.topic: quickstart
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 06/25/2020
 ms.author: allensu
-ms.openlocfilehash: a36484bea3a2bc9caadc5cf4482aae3bea84eafa
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 31f0510ed50c9d48a46524a353d7c872b368f75c
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102560469"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107779045"
 ---
 # <a name="quickstart-create-an-azure-cdn-profile-and-endpoint---arm-template"></a>Краткое руководство. Создание конечной точки и профиля Azure CDN — шаблон ARM
 
@@ -98,7 +98,7 @@ New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri
 
 ### <a name="azure-cli"></a>Azure CLI
 
-Вы можете удалить ненужную группу ресурсов и все содержащиеся в ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az-group-delete).
+Вы можете удалить ненужную группу ресурсов и все содержащиеся в ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive 
   az group delete \

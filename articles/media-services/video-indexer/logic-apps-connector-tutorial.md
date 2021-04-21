@@ -8,16 +8,16 @@ ms.service: media-services
 ms.subservice: video-indexer
 ms.topic: tutorial
 ms.date: 09/21/2020
-ms.openlocfilehash: f3504ca4a706e92081209f4eaaa86af9f71c52b3
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: caff6a2496e907da1bdc140860c47476d1842df4
+ms.sourcegitcommit: 950e98d5b3e9984b884673e59e0d2c9aaeabb5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98880916"
+ms.lasthandoff: 04/18/2021
+ms.locfileid: "107600681"
 ---
 # <a name="tutorial-use-video-indexer-with-logic-app-and-power-automate"></a>Руководство по использованию Индексатора видео с приложением Logic Apps и Power Automate
 
-[REST API Индексатора видео версии 2](https://api-portal.videoindexer.ai/docs/services/Operations/operations/Delete-Video?) в Службах мультимедиа Azure поддерживает передачу данных между серверами и от сервера к клиенту. Это позволяет пользователям Индексаторов видео интегрировать данные видео и аудио в логику приложений, что обеспечивает новые возможности взаимодействия и монетизации.
+[REST API Индексатора видео версии 2](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) в Службах мультимедиа Azure поддерживает передачу данных между серверами и от сервера к клиенту. Это позволяет пользователям Индексаторов видео интегрировать данные видео и аудио в логику приложений, что обеспечивает новые возможности взаимодействия и монетизации.
 
 Чтобы еще больше упростить такую интеграцию, мы поддерживаем соединители для  [Logic Apps](https://azure.microsoft.com/services/logic-apps/)  и  [Power Automate](https://preview.flow.microsoft.com/connectors/shared_videoindexer-v2/video-indexer-v2/),  совместимые с нашим API. С помощью этих соединителей можно настроить пользовательские рабочие процессы для эффективного индексирования и извлечения полезных сведений из большого количества файлов видео и аудио без написания кода. Более того, применение соединителей для интеграции повышает точность оценки работоспособности рабочего процесса и упрощает его отладку.  
 

@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.author: jukullam
 ms.date: 10/12/2020
 ms.custom: github-actions-azure
-ms.openlocfilehash: 335879af93834665985fe2c14ce3cbd827387920
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ceb9f0f9ef2a88532d5af16a03fcfd0282da84f8
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102172145"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787293"
 ---
 # <a name="use-github-actions-to-connect-to-azure-sql-database"></a>Применение GitHub Actions для подключения к Базе данных SQL Azure
 
@@ -41,7 +41,7 @@ ms.locfileid: "102172145"
 
 ## <a name="generate-deployment-credentials"></a>Создание учетных данных для развертывания.
 
-Вы можете создать [субъект-службу](../../active-directory/develop/app-objects-and-service-principals.md) с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) в [Azure CLI](/cli/azure/). Чтобы выполнить эту команду, откройте [Azure Cloud Shell](https://shell.azure.com/) на портале Azure или нажмите кнопку **Попробовать**.
+Вы можете создать [субъект-службу](../../active-directory/develop/app-objects-and-service-principals.md) с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az_ad_sp_create_for_rbac) в [Azure CLI](/cli/azure/). Чтобы выполнить эту команду, откройте [Azure Cloud Shell](https://shell.azure.com/) на портале Azure или нажмите кнопку **Попробовать**.
 
 Замените заполнители `server-name` именем сервера SQL, размещенного в Azure. Замените `subscription-id` и `resource-group` идентификатором подписки и группой ресурсов, которые сопоставлены с этим сервером SQL.  
 

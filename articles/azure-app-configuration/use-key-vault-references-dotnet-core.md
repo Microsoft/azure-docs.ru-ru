@@ -13,12 +13,12 @@ ms.topic: tutorial
 ms.date: 04/08/2020
 ms.author: alkemper
 ms.custom: devx-track-csharp, mvc
-ms.openlocfilehash: 37bc7fbcd366455668d5316e45ffbf79127a49f3
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 57abbeefe8e3f2abe527f2b282d643db766b9dc9
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99981244"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107775751"
 ---
 # <a name="tutorial-use-key-vault-references-in-an-aspnet-core-app"></a>Руководство по использованию ссылок Key Vault в приложении ASP.NET Core
 
@@ -93,7 +93,7 @@ ms.locfileid: "99981244"
 
 ## <a name="connect-to-key-vault"></a>Подключение к Key Vault
 
-1. В этом учебнике вы используете субъект-службу для проверки подлинности в KeyVault. Создайте субъект-службу с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) Azure CLI:
+1. В этом учебнике вы используете субъект-службу для проверки подлинности в KeyVault. Создайте субъект-службу с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az_ad_sp_create_for_rbac) Azure CLI:
 
     ```azurecli
     az ad sp create-for-rbac -n "http://mySP" --sdk-auth

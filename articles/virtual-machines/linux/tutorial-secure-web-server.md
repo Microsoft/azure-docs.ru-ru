@@ -15,12 +15,12 @@ ms.workload: infrastructure
 ms.date: 04/30/2018
 ms.author: cynthn
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 3f762597ad81dfaba907115cbcf6074d81ec2fa4
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 97eee5d852450df2341d57932052839825523933
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102549589"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107769757"
 ---
 # <a name="tutorial-secure-a-web-server-on-a-linux-virtual-machine-in-azure-with-tlsssl-certificates-stored-in-key-vault"></a>Руководство по защите веб-сервера на виртуальной машине Linux в Azure с помощью TLS/SSL-сертификатов, хранимых в Key Vault
 Чтобы защитить веб-серверы, для шифрования веб-трафика можно использовать протокол TLS, который ранее назывался протоколом SSL. TLS/SSL-сертификаты могут храниться в Azure Key Vault и разрешать безопасное развертывание сертификатов на виртуальных машинах Linux в Azure. Из этого руководства вы узнаете, как выполнить следующие задачи:
@@ -70,7 +70,7 @@ az keyvault certificate create \
 ```
 
 ### <a name="prepare-a-certificate-for-use-with-a-vm"></a>Подготовка сертификата для использования с виртуальной машиной
-Чтобы использовать сертификата во время создания виртуальной машины, получите идентификатор сертификата, выполнив команду [az keyvault secret list-versions](/cli/azure/keyvault/secret). Преобразуйте сертификат, выполнив команду [az vm secret format](/cli/azure/vm/secret#az-vm-secret-format). Следующий пример присваивает переменным результаты этих команд, чтобы их было удобно использовать в дальнейшем.
+Чтобы использовать сертификата во время создания виртуальной машины, получите идентификатор сертификата, выполнив команду [az keyvault secret list-versions](/cli/azure/keyvault/secret). Преобразуйте сертификат, выполнив команду [az vm secret format](/cli/azure/vm/secret#az_vm_secret_format). Следующий пример присваивает переменным результаты этих команд, чтобы их было удобно использовать в дальнейшем.
 
 ```azurecli-interactive 
 secret=$(az keyvault secret list-versions \

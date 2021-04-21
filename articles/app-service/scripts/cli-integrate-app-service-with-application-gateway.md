@@ -16,12 +16,12 @@ ms.workload: web
 ms.date: 12/09/2019
 ms.author: madsd
 ms.custom: seodec18, devx-track-azurecli
-ms.openlocfilehash: 3820e7bf00f99a846dd2be0edeaf4248e0dfd8ad
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d30cc27fc3c546619e85bb9aabd0b31c10102e96
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97006093"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787815"
 ---
 # <a name="integrate-app-service-with-application-gateway-using-cli"></a>Интеграция Службы приложений со Шлюзом приложений с использованием CLI
 
@@ -45,16 +45,16 @@ ms.locfileid: "97006093"
 
 | Get-Help | Примечания |
 |---|---|
-| [`az group create`](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [`az network vnet create`](/cli/azure/network/vnet#az-network-vnet-create) | Создает виртуальную сеть. |
-| [`az network public-ip create`](/cli/azure/network/public-ip#az-network-public-ip-create) | Создает общедоступный IP-адрес. |
-| [`az network public-ip show`](/cli/azure/network/public-ip#az-network-public-ip-show) | Показывает подробные сведения об общедоступном IP-адресе. |
-| [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create) | Создает план службы приложений. |
-| [`az webapp create`](/cli/azure/webapp#az-webapp-create) | Создает веб-приложение Службы приложений. |
-| [`az webapp show`](/cli/azure/webapp#az-webapp-show) | Показывает подробные сведения о веб-приложении Службы приложений. |
-| [`az webapp config access-restriction add`](/cli/azure/webapp/config/access-restriction#az-webapp-config-access-restriction-add) | Добавляет ограничения доступа к веб-приложению Службы приложений. |
-| [`az network application-gateway create`](/cli/azure/network/application-gateway#az-network-application-gateway-create) | Создает Шлюз приложений. |
-| [`az network application-gateway http-settings update`](/cli/azure/network/application-gateway/http-settings#az-network-application-gateway-http-settings-update) | Обновляет параметры HTTP Шлюза приложений. |
+| [`az group create`](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [`az network vnet create`](/cli/azure/network/vnet#az_network_vnet_create) | Создает виртуальную сеть. |
+| [`az network public-ip create`](/cli/azure/network/public-ip#az_network_public_ip_create) | Создает общедоступный IP-адрес. |
+| [`az network public-ip show`](/cli/azure/network/public-ip#az_network_public_ip_show) | Показывает подробные сведения об общедоступном IP-адресе. |
+| [`az appservice plan create`](/cli/azure/appservice/plan#az_appservice_plan_create) | Создает план службы приложений. |
+| [`az webapp create`](/cli/azure/webapp#az_webapp_create) | Создает веб-приложение Службы приложений. |
+| [`az webapp show`](/cli/azure/webapp#az_webapp_show) | Показывает подробные сведения о веб-приложении Службы приложений. |
+| [`az webapp config access-restriction add`](/cli/azure/webapp/config/access-restriction#az_webapp_config_access_restriction_add) | Добавляет ограничения доступа к веб-приложению Службы приложений. |
+| [`az network application-gateway create`](/cli/azure/network/application-gateway#az_network_application_gateway_create) | Создает Шлюз приложений. |
+| [`az network application-gateway http-settings update`](/cli/azure/network/application-gateway/http-settings#az_network-application-gateway-http_settings_update) | Обновляет параметры HTTP Шлюза приложений. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

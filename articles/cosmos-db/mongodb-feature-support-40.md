@@ -7,12 +7,12 @@ ms.topic: overview
 ms.date: 03/02/2021
 author: gahl-levy
 ms.author: gahllevy
-ms.openlocfilehash: 9eebc77c5b3d9402c766320fddfdaf05d50b574f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 74e08cce381d173e0c5e1458ae99167a0c8c697f
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "102485407"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107504516"
 ---
 # <a name="azure-cosmos-dbs-api-for-mongodb-40-server-version-supported-features-and-syntax"></a>API Azure Cosmos DB для MongoDB (версии сервера 4.0): поддержка возможностей и синтаксиса
 [!INCLUDE[appliesto-mongodb-api](includes/appliesto-mongodb-api.md)]
@@ -143,7 +143,7 @@ API Azure Cosmos DB для MongoDB поддерживает приведенны
 | $limit | Да |
 | $listLocalSessions | нет |
 | $listSessions | нет |
-| $lookup | Да |
+| $lookup | Частично |
 | $match | Да |
 | $out | Да |
 | $project | Да |
@@ -155,6 +155,9 @@ API Azure Cosmos DB для MongoDB поддерживает приведенны
 | $sort | Да |
 | $sortByCount | Да |
 | $unwind | Да |
+
+> [!NOTE]
+> `$lookup` пока не поддерживает функцию [некоррелированных вложенных запросов](https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/#join-conditions-and-uncorrelated-sub-queries), появившуюся в версии Server 3.6. При попытке использовать `$lookup` оператор с полями `let` и `pipeline` вы получите сообщение об ошибке, содержащее `let is not supported`.
 
 ### <a name="boolean-expressions"></a>Логические выражения
 

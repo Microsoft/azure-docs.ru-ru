@@ -6,14 +6,14 @@ services: dns
 author: rohinkoul
 ms.service: dns
 ms.topic: tutorial
-ms.date: 9/25/2018
+ms.date: 04/19/2021
 ms.author: rohink
-ms.openlocfilehash: 2b122a34cfd382a58f7680743d3a1cb1ae598fd1
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: c20f079fdbccdf003d96a1b2683060c2cd6d0e5a
+ms.sourcegitcommit: 425420fe14cf5265d3e7ff31d596be62542837fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "76939251"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107737376"
 ---
 # <a name="tutorial-create-an-alias-record-to-refer-to-a-zone-resource-record"></a>Руководство по Создание записи псевдонима для ссылки на запись ресурса в зоне
 

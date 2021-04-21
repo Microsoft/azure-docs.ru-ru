@@ -6,12 +6,12 @@ ms.author: timlt
 ms.service: iot-develop
 ms.topic: include
 ms.date: 01/14/2021
-ms.openlocfilehash: 10bd2c4902157b9e01b1cb0ff10b3ebdf448568c
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: be51d4db6c98b63fcb1c9c60df045b494536d78f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102244708"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107766532"
 ---
 В следующих разделах показано, как настроить терминал и использовать Azure CLI для создания центра Интернета вещей. Чтобы настроить терминал, выполняющий команды Azure CLI, используйте Azure Cloud Shell на основе браузера или локальный терминал.
 * Сведения об использовании Cloud Shell см. в разделе [Запуск Cloud Shell](#launch-the-cloud-shell). 
@@ -65,7 +65,7 @@ ms.locfileid: "102244708"
 > [!IMPORTANT]
 > Команды терминала в оставшейся части этого краткого руководства работают одинаково как в Cloud Shell, так и в локальном терминале. Чтобы выполнить команду, выберите **Копировать** и скопируйте блок кода из этого краткого руководства. Затем вставьте его в оболочку CLI и запустите.
 
-Выполните команду [az extension add](/cli/azure/extension#az-extension-add). 
+Выполните команду [az extension add](/cli/azure/extension#az_extension_add). 
 
    ```azurecli
    az extension add --name azure-iot
@@ -77,7 +77,7 @@ ms.locfileid: "102244708"
 
 Чтобы создать центр Интернета вещей и группу ресурсов, выполните следующие действия:
 
-1. Выполните команду [az group create](/cli/azure/group#az-group-create), чтобы создать группу ресурсов. В следующей команде создается группа ресурсов с именем *MyResourceGroup* в расположении *eastus*. 
+1. Выполните команду [az group create](/cli/azure/group#az_group_create), чтобы создать группу ресурсов. В следующей команде создается группа ресурсов с именем *MyResourceGroup* в расположении *eastus*. 
     >[!NOTE]
     > При необходимости можно задать альтернативное расположение. Чтобы отобразить доступные расположения, выполните команду `az account list-locations`. В рамках работы с этим учебником используется *eastus*, как показано в примере команды. 
 
@@ -85,7 +85,7 @@ ms.locfileid: "102244708"
     az group create --name MyResourceGroup --location eastus
     ```
 
-1. Создайте Центр Интернета вещей с помощью команды [az iot hub create](/cli/azure/iot/hub#az-iot-hub-create). Создание Центра Интернета вещей может занять несколько минут. 
+1. Создайте Центр Интернета вещей с помощью команды [az iot hub create](/cli/azure/iot/hub#az_iot_hub_create). Создание Центра Интернета вещей может занять несколько минут. 
 
     *YourIotHubName* Замените этот заполнитель и окружающие фигурные скобки в указанной ниже команде именем своего центра Интернета вещей. Имя центра Интернета вещей должно быть уникальным по всему Azure. Используйте имя центра Интернета вещей при работе с оставшейся частью этого краткого руководства везде вместо заполнителя.
 

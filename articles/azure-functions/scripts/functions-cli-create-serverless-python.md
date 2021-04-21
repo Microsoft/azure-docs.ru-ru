@@ -5,12 +5,12 @@ ms.assetid: 0e221db6-ee2d-4e16-9bf6-a456cd05b6e7
 ms.topic: sample
 ms.date: 11/23/2019
 ms.custom: devx-track-python, devx-track-azurecli
-ms.openlocfilehash: 65ea6513046cd0372720e5a9438941dda2a74877
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 9bd80d5644587c6dcc074a91bf91382d0692bc18
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97934362"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786202"
 ---
 # <a name="create-a-serverless-python-function-app-using-azure-cli"></a>Создание бессерверного приложения-функции Python с помощью Azure CLI
 
@@ -39,9 +39,9 @@ ms.locfileid: "97934362"
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az storage account create](/cli/azure/storage/account#az-storage-account-create) | Создает учетную запись хранения Azure. |
-| [az functionapp create](/cli/azure/functionapp#az-functionapp-create) | Создает приложение-функцию. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az storage account create](/cli/azure/storage/account#az_storage_account_create) | Создает учетную запись хранения Azure. |
+| [az functionapp create](/cli/azure/functionapp#az_functionapp_create) | Создает приложение-функцию. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

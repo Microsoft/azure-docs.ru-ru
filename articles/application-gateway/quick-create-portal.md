@@ -4,17 +4,19 @@ titleSuffix: Azure Application Gateway
 description: В этом кратком руководстве показано, как с помощью портала Azure создать Шлюз приложений Azure, который направляет веб-трафик к виртуальным машинам в серверном пуле.
 services: application-gateway
 author: vhorne
-ms.service: application-gateway
-ms.topic: quickstart
-ms.date: 01/19/2021
 ms.author: victorh
-ms.custom: mvc
-ms.openlocfilehash: c1b17d8c624d4bef74278acc24ece37a736a5ca8
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 01/19/2021
+ms.topic: quickstart
+ms.service: application-gateway
+ms.custom:
+- mvc
+- mode-portal
+ms.openlocfilehash: 92e966f5a9c4a21a6a55862ad582f0238802720f
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98572975"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107538571"
 ---
 # <a name="quickstart-direct-web-traffic-with-azure-application-gateway---azure-portal"></a>Краткое руководство. Направление веб-трафика с помощью Шлюза приложений Azure на портале Azure
 
