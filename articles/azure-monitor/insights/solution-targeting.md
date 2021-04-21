@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 04/27/2017
 ms.openlocfilehash: cb030456eb3b9e3c81fadd8451b5b0526920ba33
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101728575"
 ---
 # <a name="targeting-monitoring-solutions-in-azure-monitor-preview"></a>Определение решений мониторинга в Azure Monitor (предварительная версия)
@@ -41,7 +41,7 @@ ms.locfileid: "101728575"
  6. Нажмите кнопку **ОК**, чтобы создать конфигурацию области. 
 
 
-### <a name="3-apply-the-scope-configuration-to-a-solution"></a>3. Примените конфигурацию области к решению.
+### <a name="3-apply-the-scope-configuration-to-a-solution"></a>3. Применение конфигурации области к решению.
 После создания конфигурации области можно применить ее к одному или нескольким решениям.  Обратите внимание, что одна конфигурация области может использоваться с несколькими решениями, но каждое решение может использовать только одну конфигурацию области.
 
 Примените конфигурацию области, выполнив действия в следующем порядке.  

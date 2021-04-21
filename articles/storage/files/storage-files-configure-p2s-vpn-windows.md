@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.date: 10/19/2019
 ms.author: rogarana
 ms.subservice: files
-ms.openlocfilehash: 6253deb53229172cd499a6aa14b8d8f19bc07b63
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: de342267292c6a93c4a1ba2eae232403ccaf9514
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94629263"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107785277"
 ---
 # <a name="configure-a-point-to-site-p2s-vpn-on-windows-for-use-with-azure-files"></a>Настройка VPN-подключения "точка — сеть" (P2S) в Windows для использования с файлами Azure
 Вы можете использовать VPN-подключение "точка — сеть" (P2S) для подключения файловых ресурсов Azure по протоколу SMB вне Azure, не открывая порт 445. VPN-подключение "точка — сеть" — это VPN-подключение между Azure и отдельным клиентом. Чтобы использовать VPN-подключение P2S к службе "Файлы Azure", необходимо настроить это подключение для каждого клиента, которому требуется подключиться. Если у вас много клиентов, которым требуется подключение к общим файловым ресурсам Azure из локальной сети, вместо подключения "точка — сеть" для каждого клиента можно использовать VPN-подключение "сеть — сеть" (S2S). Дополнительные сведения см. в статье [Настройка VPN-подключения "сеть — сеть" для использования с Файлами Azure](storage-files-configure-s2s-vpn.md).
 
 Мы настоятельно рекомендуем ознакомиться со статей [Azure Files networking considerations](storage-files-networking-overview.md) (рекомендации по сети для службы "Файлы Azure"), чтобы подробно ознакомиться с возможностями сети, доступными для службы "Файлы Azure", перед продолжением работы с этой статьей.
 
-В статье подробно описано, как настроить VPN-подключение "точка — сеть" в Windows (клиент Windows и Windows Server) для непосредственного локального подключения общих файловых ресурсов Azure. Если вы хотите направить трафик Синхронизации файлов Azure через VPN, см. статью [Параметры брандмауэра и прокси-сервера Синхронизации файлов Azure](storage-sync-files-firewall-and-proxy.md).
+В статье подробно описано, как настроить VPN-подключение "точка — сеть" в Windows (клиент Windows и Windows Server) для непосредственного локального подключения общих файловых ресурсов Azure. Если вы хотите направить трафик Синхронизации файлов Azure через VPN, см. статью [Параметры брандмауэра и прокси-сервера Синхронизации файлов Azure](../file-sync/file-sync-firewall-and-proxy.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
 - Последняя версия модуля Azure PowerShell. Дополнительные сведения об установке Azure PowerShell см. в статье [Установка Azure PowerShell](/powershell/azure/install-az-ps) и выберите операционную систему. Если вы предпочитаете использовать Azure CLI в Windows, обратите внимание, что приведенные ниже инструкции представлены для Azure PowerShell.

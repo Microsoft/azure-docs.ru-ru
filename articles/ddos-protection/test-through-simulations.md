@@ -1,6 +1,6 @@
 ---
-title: Тестирование моделирования защиты Azure от атак DDoS
-description: Дополнительные сведения о тестировании с помощью симуляций
+title: Проверка методом моделирования защиты Azure от атак DDoS
+description: Узнайте, как выполнять проверку посредством моделирования
 services: ddos-protection
 documentationcenter: na
 author: yitoh
@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/08/2020
 ms.author: yitoh
 ms.openlocfilehash: 3be8682b3a12f06aa83db1791cb0ed125bbcee7e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101719242"
 ---
 # <a name="test-through-simulations"></a>Тестирование через моделирования
@@ -30,46 +30,46 @@ ms.locfileid: "101719242"
 - Обучить команды безопасности сети.
 
 > [!NOTE]
-> Облако BreakingPoint доступно только для общедоступного облака.
+> Облако BreakingPoint доступно только в качестве общедоступного облака.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
-- Прежде чем выполнять действия, описанные в этом руководстве, необходимо создать [план защиты Azure от атак DDoS Standard](manage-ddos-protection.md) с защищенными общедоступными IP-адресами.
-- Сначала необходимо создать учетную запись с [BreakingPoint Cloud](http://breakingpoint.cloud/). 
+- Прежде чем выполнять действия, описанные в этом руководстве, необходимо создать [план стандартной защиты Azure от атак DDoS](manage-ddos-protection.md) с защищенными общедоступными IP-адресами.
+- Сначала необходимо создать учетную запись с помощью [облака BreakingPoint](http://breakingpoint.cloud/). 
 
-## <a name="configure-a-ddos-test-attack"></a>Настройка атаки теста от атак DDoS
+## <a name="configure-a-ddos-test-attack"></a>Настройка проверочной атаки DDoS
 
-1. Введите или выберите следующие значения, а затем нажмите кнопку **начать тест**:
+1. Введите или выберите следующие значения, а затем нажмите кнопку **Начать проверку**:
 
     |Параметр        |Значение                                              |
     |---------      |---------                                          |
-    |Целевой IP-адрес           | Введите один из общедоступных IP-адресов, который вы хотите протестировать.                     |
+    |Целевой IP-адрес           | Введите один из общедоступных IP-адресов, который вы хотите проверить.                     |
     |Номер порта   | Введите _443_.                       |
-    |Профиль от атак DDoS | Возможные значения: `DNS Flood` , `NTPv2 Flood` , `SSDP Flood` , `TCP SYN Flood` , `UDP 64B Flood` , `UDP 128B Flood` , `UDP 256B Flood` , `UDP 512B Flood` , `UDP 1024B Flood` , `UDP 1514B Flood` , `UDP Fragmentation` , `UDP Memcached` .|
-    |Размер теста       | Возможные значения: `100K pps, 50 Mbps and 4 source IPs` , `200K pps, 100 Mbps and 8 source IPs` , `400K pps, 200Mbps and 16 source IPs` , `800K pps, 400 Mbps and 32 source IPs` .                                  |
-    |Длительность теста | Возможные значения: `10 Minutes` , `15 Minutes` , `20 Minutes` , `25 Minutes` , `30 Minutes` .|
+    |Профиль DDoS | Возможны следующие значения: `DNS Flood`, `NTPv2 Flood`, `SSDP Flood`, `TCP SYN Flood`, `UDP 64B Flood`, `UDP 128B Flood`, `UDP 256B Flood`, `UDP 512B Flood`, `UDP 1024B Flood`, `UDP 1514B Flood`, `UDP Fragmentation`, `UDP Memcached`.|
+    |Размер ресурсов для проверки       | Возможны следующие значения: `100K pps, 50 Mbps and 4 source IPs`, `200K pps, 100 Mbps and 8 source IPs`, `400K pps, 200Mbps and 16 source IPs`, `800K pps, 400 Mbps and 32 source IPs`.                                  |
+    |Продолжительность проверки | Возможны следующие значения: `10 Minutes`, `15 Minutes`, `20 Minutes`, `25 Minutes`, `30 Minutes`.|
 
-Теперь он должен выглядеть следующим образом:
+Результат должен выглядеть следующим образом:
 
-![Пример имитации атаки от атак DDoS: BreakingPoint Cloud](./media/ddos-attack-simulation/ddos-attack-simulation-example-1.png)
+![Пример моделирования атаки DDoS: облако BreakingPoint](./media/ddos-attack-simulation/ddos-attack-simulation-example-1.png)
 
-## <a name="monitor-and-validate"></a>Мониторинг и проверка
+## <a name="monitor-and-validate"></a>Просмотр и проверка
 
-1. Войдите в https://portal.azure.com свою подписку и перейдите к ней.
-1. Выберите общедоступный IP-адрес, на котором вы проверили атаку.
+1. Войдите в https://portal.azure.com и перейдите в свою подписку.
+1. Выберите общедоступный IP-адрес, на котором вы проверяли атаку.
 1. В разделе **Мониторинг** выберите **Метрики**.
-1. Для параметра **Метрика** выберите _в разделе от атак ddosная атака_.
+1. Для параметра **Метрика** выберите _Под атакой DDoS или нет_.
 
-Когда ресурс будет подвержен атакам, вы увидите, что значение изменяется с **0** на **1**, как показано на следующем рисунке:
+Как только на ресурс будет проведена атака, вы увидите, что значение этого показателя изменится с **0** на **1**, как продемонстрировано на следующем рисунке:
 
-![Пример имитации атаки от атак DDoS: портал](./media/ddos-attack-simulation/ddos-attack-simulation-example-2.png)
+![Пример моделирования атаки DDoS: портал](./media/ddos-attack-simulation/ddos-attack-simulation-example-2.png)
 
-### <a name="breakingpoint-cloud-api-script"></a>Скрипт облачного API BreakingPoint
+### <a name="breakingpoint-cloud-api-script"></a>Скрипт API-интерфейса облака BreakingPoint
 
-Этот [Скрипт API](https://aka.ms/ddosbreakingpoint) можно использовать для автоматизации тестирования от атак DDoS, запуская один раз или используя cron для планирования регулярных тестов. Это полезно, чтобы проверить, правильно ли настроено ведение журнала, и что процедуры обнаружения и ответа вступают в силу. Для сценариев требуется ОС Linux (протестировано с Ubuntu 18,04 LTS) и Python 3. Установите необходимые компоненты и клиент API, используя включенный сценарий или документацию на веб-сайте [BreakingPoint Cloud](http://breakingpoint.cloud/) .
+Этот [Скрипт API-интерфейса](https://aka.ms/ddosbreakingpoint) можно использовать для автоматизации проверки защиты от атак DDoS, запуская его однократно или с помощью служебной программы "cron" для выполнения проверок по расписанию. Это целесообразно для проверки правильности настройки журнала событий и для подтверждения того, что процедуры обнаружения и реагирования работают эффективно. Для приведенных выше скриптов требуется ОС Linux (проверено с Ubuntu 18.04 LTS) и пакет Python 3. Установите необходимые компоненты и API-клиент с помощью прилагаемого скрипта или воспользуйтесь документацией с веб-сайта [Облако BreakingPoint](http://breakingpoint.cloud/).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте, как [просматривать и настраивать данные телеметрии защиты от атак DDoS](telemetry.md).
-- Узнайте, как [просматривать и настраивать ведение журнала диагностики от атак DDoS](diagnostic-logging.md).
-- Узнайте, как [привлечь к от атак DDoS быстрому реагированию](ddos-rapid-response.md).
+- Узнайте, как [просматривать и настраивать телеметрию по защите от DDoS-атак](telemetry.md).
+- Узнайте, как [просматривать и настраивать ведение журнала с диагностической информацией по DDoS-атакам](diagnostic-logging.md).
+- Узнайте, как [реализовать быстрое реагирование на DDoS-атаки](ddos-rapid-response.md).

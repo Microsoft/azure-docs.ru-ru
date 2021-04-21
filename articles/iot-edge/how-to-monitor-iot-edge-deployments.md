@@ -11,10 +11,10 @@ ms.service: iot-edge
 ms.custom: devx-track-azurecli
 services: iot-edge
 ms.openlocfilehash: f4f2f8522f6d3d1039673803d946323deb485db9
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103200249"
 ---
 # <a name="monitor-iot-edge-deployments"></a>Мониторинг развертываний IoT Edge
@@ -103,4 +103,4 @@ az iot edge deployment show-metric --deployment-id [deployment id] --metric-id [
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Узнайте, как [отслеживать двойников модуля](how-to-monitor-module-twins.md), в первую очередь, IOT Edge агент и модули среды выполнения IOT Edge концентратора для подключения и работоспособности развертываний IOT Edge.
+Узнайте, как [отслеживать двойников модуля](how-to-monitor-module-twins.md), особенно модулей среды выполнения агента IoT Edge и центра IoT Edge, на предмет подключения и работоспособности развертываний IoT Edge.

@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 10/30/2020
 ms.author: duau
 ms.custom: include file
-ms.openlocfilehash: 20d9810ef5ff7380eb0df5df8a6720dcef71a6ad
-ms.sourcegitcommit: ed7376d919a66edcba3566efdee4bc3351c57eda
-ms.translationtype: MT
+ms.openlocfilehash: f0621788f50a07466861fbd87ede191f5ab688cd
+ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105104393"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106554587"
 ---
 При создании собственного сертификата разрешены следующие ЦС:
 
@@ -23,7 +23,7 @@ ms.locfileid: "105104393"
 - ЦС 02 AME Infra
 - Ameroot
 - APCA-DM3P
-- Атос Трустедрут 2011
+- Atos TrustedRoot 2011
 - Autopilot Root CA
 - Baltimore CyberTrust Root
 - Class 3 Public Primary Certification Authority
@@ -54,17 +54,19 @@ ms.locfileid: "105104393"
 - GlobalSign Root CA
 - Корневой ЦС Go Daddy — G2
 - Защищенный ЦС Go Daddy — G2
-- Гонконг POST root ЦС 1
-- Давайте шифровать центр X3
-- МС e-Сзигно root ЦС 2009
+- Гонконг POST Root ЦС 1
+- Let's Encrypt Authority X3
+- Microsec e-Szigno Root ЦС 2009
 - QuoVadis Root CA2 G3
 - ЦС RSA RapidSSL 2018
 - RootCA1 Communication Security
 - RootCA2 Communication Security
 - RootCA3 Communication Security
-- SSL.com корневого центра сертификации RSA
+- ECC для корневого центра сертификации SSL.com
+- RSA для корневого центра сертификации SSL.com
+- Корневой центр сертификации SSL.com EV ECC
 - Корневой центр сертификации SSL.com EV RSA R2
-- Корневой ЦС стаат der Недерланден EV
+- Staat der Nederlanden EV Корневой ЦС
 - Symantec Class 3 EV SSL CA - G3
 - Symantec Class 3 Secure Server CA - G4
 - Symantec Enterprise Mobile Root for Microsoft

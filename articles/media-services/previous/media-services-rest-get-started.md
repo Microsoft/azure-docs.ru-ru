@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: ccf4bc18270dcdbcae02f7b45bea2a05ed663227
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103008881"
 ---
 # <a name="get-started-with-delivering-content-on-demand-using-rest"></a>Начало работы с доставкой содержимого по запросу с помощью REST
@@ -36,7 +36,7 @@ ms.locfileid: "103008881"
 
 Щелкните изображение, чтобы просмотреть его полноразмерную версию.  
 
-[![Схема, на которой показаны некоторые наиболее часто используемые объекты в модели данных объектов служб мультимедиа Azure для разработки приложений видео по запросу.](./media/media-services-rest-get-started/media-services-overview-object-model-small.png)](./media/media-services-rest-get-started/media-services-overview-object-model.png#lightbox)
+[![Схема, на которой показаны некоторые наиболее часто используемые объекты в модели данных объектов Служб мультимедиа Azure для разработки приложений для видео по запросу.](./media/media-services-rest-get-started/media-services-overview-object-model-small.png)](./media/media-services-rest-get-started/media-services-overview-object-model.png#lightbox)
 
 ## <a name="prerequisites"></a>Предварительные требования
 Для начала разработки с помощью REST API служб мультимедиа необходимо выполнить следующие предварительные требования.

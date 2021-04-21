@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 08/13/2020
 ms.author: danlep
 ms.custom: include file, devx-track-azurecli
-ms.openlocfilehash: 173c9156f253e43111299b53287e97ab7b2c0aa5
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 8d4178ea1f6f12def938dfc91e7ae0e6ee3b738c
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92746930"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786934"
 ---
 ## <a name="create-azure-container-registry"></a>Создание реестра контейнеров Azure
 
@@ -76,6 +76,6 @@ Login Succeeded
 ```
 
 <!-- LINKS - Internal -->
-[az-acr-create]: /cli/azure/acr#az-acr-create
-[az-acr-login]: /cli/azure/acr#az-acr-login
-[az-group-create]: /cli/azure/group#az-group-create
+[az-acr-create]: /cli/azure/acr#az_acr_create
+[az-acr-login]: /cli/azure/acr#az_acr_login
+[az-group-create]: /cli/azure/group#az_group_create

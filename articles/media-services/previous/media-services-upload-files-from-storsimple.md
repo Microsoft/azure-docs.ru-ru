@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 0521904f0ed46b4c5309e5f9df980b1cd7d7d858
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103009034"
 ---
 # <a name="upload-files-into-an-azure-media-services-account-from-azure-storsimple"></a>Отправка файлов в учетную запись служб мультимедиа Azure из Azure StorSimple 
@@ -34,7 +34,7 @@ ms.locfileid: "103009034"
 
 ## <a name="overview"></a>Обзор
 
-В службах мультимедиа цифровые файлы отправляются в актив. Ресурс может содержать видео, аудио, изображения, коллекции эскизов, текстовые дорожки и файлы скрытых субтитров (а также метаданные этих файлов). После передачи файлов содержимое будет безопасно сохранено в облаке для дальнейшей обработки и потоковой передачи.
+В службах мультимедиа цифровые файлы отправляются в актив. Asset может содержать видео, аудио, изображения, коллекции эскизов, текстовые дорожки и файлы скрытых субтитров (а также метаданные этих файлов). После отправки этих файлов содержимое сохраняется в безопасном расположении в облаке для дальнейшей обработки и потоковой передачи.
 
 [Azure StorSimple](../../storsimple/index.yml) использует облачное хранилище в качестве расширения локального решения и автоматически связывает данные локального хранилища с данными облачного хранилища. Перед отправкой данных в облако устройство StorSimple дублирует и сжимает их. Таким образом, в облако можно эффективно отправлять большие файлы. Служба [диспетчера данных StorSimple](../../storsimple/storsimple-data-manager-overview.md) предоставляет интерфейсы API, позволяющие извлекать данные из StorSimple и представлять их в качестве ресурсов AMS.
 
@@ -49,7 +49,7 @@ ms.locfileid: "103009034"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Использование пакета SDK для .NET для активации заданий в Диспетчер данных](../../storsimple/storsimple-data-manager-dotnet-jobs.md)
+[Использование пакета SDK для .NET для активации заданий в Диспетчере данных](../../storsimple/storsimple-data-manager-dotnet-jobs.md)
 
 ## <a name="media-services-learning-paths"></a>Схемы обучения работе со службами мультимедиа
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
@@ -57,6 +57,6 @@ ms.locfileid: "103009034"
 ## <a name="provide-feedback"></a>Отзывы
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь можно закодировать отправленные ресурсы. Дополнительную информацию см. в статье, посвященной [кодированию ресурсов](media-services-portal-encode.md).

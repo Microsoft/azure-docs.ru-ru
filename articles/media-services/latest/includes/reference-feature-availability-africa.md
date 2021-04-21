@@ -4,12 +4,12 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: 11bee8a36bcf6f5cbf0d16b27c6cff38414d4647
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: 95ed119cacb262aeb6641b00001584e8effbe8ea
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104612952"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283281"
 ---
 <!--Feature availability in region-->
 
@@ -17,10 +17,10 @@ ms.locfileid: "104612952"
 
 | Компонент| Северная часть ЮАР; | Западная часть ЮАР |
 | --- | --- | --- |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) | ![Общая доступность сетки событий в Африке для Африки](../media/azure-clouds-regions/ga.svg) | ![Общий доступ к сетке событий Южной Африки](../media/azure-clouds-regions/ga.svg) |
-| [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) | ![Северная общедоступная доступность Африки Video Analyzer](../media/azure-clouds-regions/ga.svg) | ![общедоступная доступность анализатора Южно-видео в Африке](../media/azure-clouds-regions/ga.svg) |
-| [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) | ![общедоступная Северная Африка Аудиоанализерпресет](../media/azure-clouds-regions/ga.svg) | ![общедоступная Аудиоанализерпресет Южная Африка](../media/azure-clouds-regions/ga.svg) |
-| [StandardEncoderPreset](../encoding-concept.md) | ![общедоступная Северная Африка Стандарденкодерпресет](../media/azure-clouds-regions/ga.svg) | ![общедоступная Стандарденкодерпресет Южная Африка](../media/azure-clouds-regions/ga.svg) |
-| [LiveEvents](../live-streaming-overview.md) | ![общедоступная Северная Африка Лививентс](../media/azure-clouds-regions/ga.svg) | ![общедоступная Лививентс Южная Африка](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../streaming-endpoint-concept.md) | ![общедоступная Северная Африка Streamingendpoint](../media/azure-clouds-regions/ga.svg) | ![общедоступная Streamingendpoint Южная Африка](../media/azure-clouds-regions/ga.svg) |
-| [ливетранскриптион](../live-transcription.md) | ![общедоступная Северная Африка Ливетранскриптион](../media/azure-clouds-regions/ga.svg) | ![общедоступная Ливетранскриптион Южная Африка](../media/azure-clouds-regions/ga.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) | ![Общая доступность Azure EventGrid, Северная Африка](../media/azure-clouds-regions/ga.svg) | ![Общая доступность Azure EventGrid, Южная Африка](../media/azure-clouds-regions/ga.svg) |
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |  |  |
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) | |  |
+| [StandardEncoderPreset](../encode-concept.md) | ![Общая доступность StandardEncoderPreset, Северная Африка](../media/azure-clouds-regions/ga.svg) | ![Общая доступность StandardEncoderPreset, Южная Африка](../media/azure-clouds-regions/ga.svg) |
+| [LiveEvents](../stream-live-streaming-concept.md) | ![Общая доступность LiveEvents, Северная Африка](../media/azure-clouds-regions/ga.svg) | ![Общая доступность LiveEvents, Южная Африка](../media/azure-clouds-regions/ga.svg) |
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) | ![Общая доступность StreamingEndpoints, Северная Африка](../media/azure-clouds-regions/ga.svg) | ![Общая доступность StreamingEndpoints, Южная Африка](../media/azure-clouds-regions/ga.svg) |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |  |  |

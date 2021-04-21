@@ -1,6 +1,6 @@
 ---
-title: Найти плату за единицу запроса (RU) для SQL-запроса в Azure Cosmos DB
-description: Узнайте, как найти плату за единицу запроса (RU) для запросов SQL, выполняемых в контейнере Azure Cosmos. Для поиска оплаты за ЕДИНИЦу можно использовать языки портал Azure, .NET, Java, Python и Node.js.
+title: Поиск расходов в единицах запроса (ЕЗ) для SQL-запроса в Azure Cosmos DB
+description: Узнайте, как определить расходы в единицах запроса (ЕЗ) для SQL-запросов, выполняемых в контейнере Azure Cosmos. Найти расходы в ЕЗ можно на портале Azure и с помощью языков .NET, Java, Python и Node.js.
 author: ThomasWeiss
 ms.service: cosmos-db
 ms.subservice: cosmosdb-sql
@@ -9,20 +9,20 @@ ms.date: 10/14/2020
 ms.author: thweiss
 ms.custom: devx-track-js
 ms.openlocfilehash: f716245d93727a0447bd1c67924ce7577c70b503
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103201302"
 ---
-# <a name="find-the-request-unit-charge-for-operations-executed-in-azure-cosmos-db-sql-api"></a>Поиск затрат единиц запросов для операций, выполненных в Azure Cosmos DB API SQL
+# <a name="find-the-request-unit-charge-for-operations-executed-in-azure-cosmos-db-sql-api"></a>Поиск расходов в единицах запросов для операций, выполняемых в Azure Cosmos DB SQL API
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
 
 Azure Cosmos DB поддерживает многие интерфейсы API, такие как SQL, MongoDB, Cassandra, Gremlin и Таблицы. У каждого API есть собственный набор операций базы данных, начиная от простого считывания и записи точек и заканчивая сложными запросами. Каждая операция базы данных потребляет системные ресурсы. Потребление зависит от сложности операции.
 
-Стоимость всех операций базы данных нормализуется с помощью Azure Cosmos DB и выражается в единицах запроса (ЕЗ). Плата за запросы — это единицы запросов, потребляемые всеми операциями базы данных. Можно считать, что в качестве валюты производительности разрабатываются системные ресурсы, такие как ЦП, операции ввода-вывода и память, необходимые для выполнения операций с базой данных, поддерживаемых Azure Cosmos DB. Независимо от того, какие API вы используете для взаимодействия с контейнером Azure Cosmos, затраты всегда измеряются в ЕЗ. Является ли операция базы данных записью, чтением точки или запросом, затраты всегда измеряются в версии-получателей. Дополнительные сведения см. в статье [единицы запросов и рекомендации](request-units.md) .
+Стоимость всех операций базы данных нормализуется с помощью Azure Cosmos DB и выражается в единицах запроса (ЕЗ). Расходы на запросы — это единицы запросов, потребляемые всеми операциями базы данных. ЕЗ — это единица производительности, которая абстрагирует системные ресурсы (например, ЦП, операции ввода-вывода в секунду и память), необходимые для выполнения операций базы данных, поддерживаемых Azure Cosmos DB. Независимо от того, какие API вы используете для взаимодействия с контейнером Azure Cosmos, затраты всегда измеряются в ЕЗ. Независимо от типа операции базы данных (запись, чтение или запрос) затраты всегда измеряются в ЕЗ. Дополнительные сведения см. в статье [Единицы запросов и рекомендации](request-units.md).
 
-В этой статье представлены различные способы, с помощью которых можно найти потребление [единиц запросов](request-units.md) (ru) для любой операции, выполняемой для контейнера в Azure Cosmos DB API SQL. Если вы используете другой API, ознакомьтесь со статьей [API для MongoDB](find-request-unit-charge-mongodb.md), [API Cassandra](find-request-unit-charge-cassandra.md), [Gremlin API](find-request-unit-charge-gremlin.md)и [API ТАБЛИЦ](find-request-unit-charge-table.md) статей, чтобы найти плату за единицу.
+В этой статье описано несколько способов, позволяющих определить потребление [единиц запроса](request-units.md) (ЕЗ) для любой операции, которая выполняется в контейнере Azure Cosmos DB SQL API. Если вы используете другой API, ознакомьтесь со статьями [API для MongoDB](find-request-unit-charge-mongodb.md), [API Cassandra](find-request-unit-charge-cassandra.md), [Gremlin API](find-request-unit-charge-gremlin.md) и [API таблиц](find-request-unit-charge-table.md), чтобы узнать расходы в ЕЗ/с.
 
 Сейчас потребление можно оценить только с помощью портала Azure или сведений из ответа, который Azure Cosmos DB возвращает через пакеты SDK. Если вы используете API SQL, оценить потребление ЕЗ для операций в контейнере Azure Cosmos можно несколькими способами.
 
@@ -85,7 +85,7 @@ while (query.HasMoreResults)
 
 [!code-csharp[](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos/tests/Microsoft.Azure.Cosmos.Tests/SampleCodeForDocs/CustomDocsSampleCode.cs?name=GetRequestCharge)]
 
-Дополнительные сведения см. [в разделе Краткое руководство. Создание веб-приложения .NET с помощью учетной записи API SQL в Azure Cosmos DB](create-sql-api-dotnet.md).
+Дополнительные сведения см. в разделе [Краткое руководство. Создание веб-приложения .NET с помощью учетной записи API SQL в Azure Cosmos DB](create-sql-api-dotnet.md).
 
 ---
 
@@ -117,7 +117,7 @@ feedResponse.forEach(result -> {
 });
 ```
 
-Дополнительные сведения см. в разделе [Краткое руководство. Создание приложения Java с помощью учетной записи API Azure Cosmos DB SQL](create-sql-api-java.md).
+Дополнительные сведения см. в разделе [Краткое руководство. Создание веб-приложения Java с использованием учетной записи API SQL для Azure Cosmos DB](create-sql-api-java.md).
 
 ## <a name="use-the-nodejs-sdk"></a>Использование пакета SDK для Node.js
 
@@ -152,7 +152,7 @@ while (query.hasMoreResults()) {
 }
 ```
 
-Дополнительные сведения см. в разделе [Краткое руководство. создание Node.js приложения с помощью учетной записи API Azure Cosmos DB SQL](create-sql-api-nodejs.md). 
+Дополнительные сведения см. в разделе [Краткое руководство. Создание приложения Node.js с помощью учетной записи API SQL в Azure Cosmos DB](create-sql-api-nodejs.md). 
 
 ## <a name="use-the-python-sdk"></a>Использование пакета SDK для Python
 
@@ -168,9 +168,9 @@ response = client.ExecuteStoredProcedure(
 request_charge = client.last_response_headers['x-ms-request-charge']
 ```
 
-Дополнительные сведения см. в разделе [Краткое руководство. Создание приложения Python с помощью учетной записи API Azure Cosmos DB SQL](create-sql-api-python.md). 
+Дополнительные сведения см. в разделе [Краткое руководство. Создание приложения Python с использованием учетной записи API SQL для Azure Cosmos DB](create-sql-api-python.md). 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения об оптимизации потребления ЕЗ см. в следующих статьях:
 

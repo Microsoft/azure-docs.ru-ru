@@ -2,19 +2,19 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 630b7b20f9df98eef3cfcff5f6899e2d786b9de7
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 9cc7faf400abe12342d9cec5f47256de5df7753a
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106092317"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107497032"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
-|[Настройка реестров контейнеров для отключения доступа через общедоступную сеть](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa3701552-92ea-433e-9d17-33b7f1208fc9) |Отключите доступ к общедоступной сети для своего ресурса Реестра контейнеров, чтобы он был недоступным через Интернет. Это позволяет снизить риск утечки данных. Дополнительные сведения см. здесь: [https://aka.ms/acr/portal/public-network](https://aka.ms/acr/portal/public-network) и [https://aka.ms/acr/private-link](https://aka.ms/acr/private-link). |Modify, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Container%20Registry/ACR_PublicNetworkAccess_Modify.json) |
+|[Настройка реестров контейнеров для отключения доступа через общедоступную сеть](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa3701552-92ea-433e-9d17-33b7f1208fc9) |Отключите доступ к общедоступной сети для своего ресурса Реестра контейнеров, чтобы он был недоступным через Интернет. Это позволяет снизить риски утечки данных. Дополнительные сведения см. здесь: [https://aka.ms/acr/portal/public-network](https://aka.ms/acr/portal/public-network) и [https://aka.ms/acr/private-link](https://aka.ms/acr/private-link). |Modify, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Container%20Registry/ACR_PublicNetworkAccess_Modify.json) |
 |[Настройка реестров контейнеров с использованием частных конечных точек](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fd85c6833-7d33-4cf5-a915-aaa2de84405f) |Частные конечные точки подключают виртуальную сеть к службам Azure без общедоступного IP-адреса в исходном или целевом расположении. Сопоставление частных конечных точек с ресурсами реестра контейнеров уровня "Премиум" позволяет снизить риски утечки данных. Дополнительные сведения см. здесь: [https://aka.ms/privateendpoints](https://aka.ms/privateendpoints) и [https://aka.ms/acr/private-link](https://aka.ms/acr/private-link). |DeployIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Container%20Registry/ACR_PrivateEndpoint_DeployIfNotExists.json) |
 |[Реестры контейнеров необходимо шифровать с помощью ключа, управляемого клиентом](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F5b9159ae-1701-4a6f-9a7a-aa9c8ddd0580) |Используйте ключи, управляемые клиентом, для управления шифрованием неактивного содержимого реестров. По умолчанию неактивные данные шифруются с помощью ключей, управляемых службой, но для соблюдения нормативных требований обычно требуются ключи, управляемые клиентом. Ключи, управляемые клиентом, позволяют шифровать данные с помощью ключа Azure Key Vault, создателем и владельцем которого являетесь вы. Вы полностью контролируете жизненный цикл ключа, включая его смену и управление им. Подробная информация собрана на странице [https://aka.ms/acr/CMK](https://aka.ms/acr/CMK). |Audit, Deny, Disabled |[1.1.2](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Container%20Registry/ACR_CMKEncryptionEnabled_Audit.json) |
 |[Реестры контейнеров должны иметь номера SKU, поддерживающие Приватные каналы](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fbd560fc0-3c69-498a-ae9f-aa8eb7de0e13) |Приватный канал Azure позволяет подключить виртуальную сеть к службам Azure без общедоступного IP-адреса в исходном или целевом расположении. Платформа Приватного канала поддерживает подключение между потребителем и службами через магистральную сеть Azure. Сопоставив частные конечные точки с реестрами контейнеров вместо всей службы, вы снизите риски утечки данных. См. дополнительные сведения: [https://aka.ms/acr/private-link](https://aka.ms/acr/private-link). |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Container%20Registry/ACR_SkuSupportsPrivateEndpoints_AuditDeny.json) |

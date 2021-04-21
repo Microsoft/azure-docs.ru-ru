@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 01/04/2021
 ms.author: chhenk
 ms.reviewer: azmetadatadev
-ms.openlocfilehash: f022052c0774c1c774f850aacab9e5941f69fa20
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 4d5ea8b741aa45b54a0079bceb2a4da582861c09
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "102123672"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564478"
 ---
 #### <a name="windows"></a>[Windows](#tab/windows/)
 ```json
@@ -108,6 +108,7 @@ ms.locfileid: "102123672"
         },
         "subscriptionId": "xxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
         "tags": "baz:bash;foo:bar",
+        "userData": "Zm9vYmFy",
         "version": "15.05.22",
         "vmId": "02aab8a4-74ef-476e-8182-f6d2ba4166a6",
         "vmScaleSetName": "crpteste9vflji9",

@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 02/01/2021
 ms.author: mnayak
 ms.openlocfilehash: 0559d02ec603d12578fa46d9790d0711fde5e38b
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101670900"
 ---
 # <a name="configure-routing-preference-for-a-vm-using-the-azure-portal"></a>Настройка предпочтительного варианта маршрутизации для виртуальной машины с помощью портала Azure
@@ -59,11 +59,11 @@ ms.locfileid: "101670900"
 9. После развертывания виртуальной машины введите *myPublicIpAddress* в поле поиска в верхней части портала. При появлении пункта **myPublicIpAddress** в результатах поиска выберите его.
 10. Присвоенный общедоступный IP-адрес и присвоенный адрес виртуальной машины **myVM** можно просмотреть в колонке, как показано на следующем снимке экрана:
 
-    ![На снимке экрана показана общедоступная сетевая карта I P для сетевого интерфейса mynic.](./media/tutorial-routing-preference-virtual-machine-portal/pip-properties-new.png)
+    ![На снимке экрана показан общедоступный IP-адрес сетевой карты для сетевого интерфейса mynic.](./media/tutorial-routing-preference-virtual-machine-portal/pip-properties-new.png)
 
 11. Выберите **Сеть**, щелкните сетевой адаптер **mynic**, а затем выберите общедоступный IP-адрес, чтобы убедиться, что в качестве предпочтительного варианта маршрутизации указано значение **Интернет**.
 
-    ![На снимке экрана показана настройка адреса и маршрутизации для общедоступного адреса I P.](./media/tutorial-routing-preference-virtual-machine-portal/pip-routing-internet-new.png)
+    ![На снимке экрана показана настройка IP-адреса и маршрутизации для общедоступного IP-адреса.](./media/tutorial-routing-preference-virtual-machine-portal/pip-routing-internet-new.png)
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

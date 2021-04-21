@@ -4,22 +4,22 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: abbe5298c4acdee0607c1ba1c2ffad491f471e68
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: ab37be20cf9e5d4f514975d921329a674beee097
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104612884"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283010"
 ---
 <!--Feature availability in region-->
 ## <a name="japan"></a>Япония
 
 | Компонент | Восточная Япония | Западная Япония |
 | --- | :---: | :---: |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общедоступная доступность Azure EventGrid Япония Восточной Востока](../media/azure-clouds-regions/ga.svg)  |![Западная общая доступность Azure EventGrid Япония](../media/azure-clouds-regions/ga.svg) |
-| [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Видеоанализерпресет Япония, Восточная часть общедоступной части](../media/azure-clouds-regions/ga.svg)  | ![Видеоанализерпресет Япония, Западная общая доступность](../media/azure-clouds-regions/ga.svg) |
-| [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Аудиоанализерпресет Япония, Восточная часть общедоступной части](../media/azure-clouds-regions/ga.svg)  | ![Аудиоанализерпресет Япония, Западная общая доступность](../media/azure-clouds-regions/ga.svg) |
-| [StandardEncoderPreset](../encoding-concept.md) |![Стандарденкодерпресет Япония, Восточная часть общедоступной части](../media/azure-clouds-regions/ga.svg)  | ![Стандарденкодерпресет Япония, Западная общая доступность](../media/azure-clouds-regions/ga.svg) |
-| [LiveEvents](../live-streaming-overview.md) |![Лививентс Япония, Восточная часть общедоступной части](../media/azure-clouds-regions/ga.svg)  | ![Лививентс Япония, Западная общая доступность](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../streaming-endpoint-concept.md) |![Streamingendpoint Япония, Восточная часть общедоступной части](../media/azure-clouds-regions/ga.svg) | ![Streamingendpoint Япония, Западная общая доступность](../media/azure-clouds-regions/ga.svg) |
-| [ливетранскриптион](../live-transcription.md) |![Ливетранскриптион Япония, Восточная часть общедоступной части](../media/azure-clouds-regions/ga.svg) |![Ливетранскриптион Япония, Западная общая доступность](../media/azure-clouds-regions/ga.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid, Восточная Япония](../media/azure-clouds-regions/ga.svg)  |![Общая доступность Azure EventGrid, Западная Япония](../media/azure-clouds-regions/ga.svg) |
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность VideoAnalyzerPreset, Восточная Япония](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность VideoAnalyzerPreset, Западная Япония](../media/azure-clouds-regions/ga.svg) |
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность AudioAnalyzerPreset, Восточная Япония](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность AudioAnalyzerPreset, Западная Япония](../media/azure-clouds-regions/ga.svg) |
+| [StandardEncoderPreset](../encode-concept.md) |![Общая доступность StandardEncoderPreset, Восточная Япония](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность StandardEncoderPreset, Западная Япония](../media/azure-clouds-regions/ga.svg) |
+| [LiveEvents](../stream-live-streaming-concept.md) |![Общая доступность LiveEvents, Восточная Япония](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность LiveEvents, Западная Япония](../media/azure-clouds-regions/ga.svg) |
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) |![Общая доступность StreamingEndpoints, Восточная Япония](../media/azure-clouds-regions/ga.svg) | ![Общая доступность StreamingEndpoints, Западная Япония](../media/azure-clouds-regions/ga.svg) |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |![Общая доступность LiveTranscription, Восточная Япония](../media/azure-clouds-regions/ga.svg) |![Общая доступность LiveTranscription, Западная Япония](../media/azure-clouds-regions/ga.svg) |

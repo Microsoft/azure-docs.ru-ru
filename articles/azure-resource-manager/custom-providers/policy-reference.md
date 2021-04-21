@@ -1,17 +1,17 @@
 ---
 title: Встроенные определения политик для поставщиков пользовательских ресурсов Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для поставщиков пользовательских ресурсов Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: reference
 author: jjbfour
 ms.author: jobreen
 ms.custom: subject-policy-reference
-ms.openlocfilehash: d83332a8ec0f0f56a402cb331a03bf3153f321a5
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 65ff3e2477770f14a25a3ad6bdffd94645549807
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106094206"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107501881"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-custom-resource-providers"></a>Встроенные определения в Политике Azure для поставщиков пользовательских ресурсов Azure
 
