@@ -9,12 +9,12 @@ ms.date: 12/11/2017
 ms.author: msangapu
 ms.reviewer: cephalin
 ms.custom: mvc, seodec18, devx-track-azurecli
-ms.openlocfilehash: 500ac99cd35cfdf601be75a19a1d43f84795cbe8
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: db1d0558f93b203af1605663533847d32afbcffb
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97006435"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107782563"
 ---
 # <a name="create-a-scheduled-backup-for-an-app-service-app-using-cli"></a>Создание резервной копии приложения Службы приложений по расписанию в интерфейсе командной строки
 
@@ -38,15 +38,15 @@ ms.locfileid: "97006435"
 
 | Get-Help | Примечания |
 |---|---|
-| [`az group create`](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [`az storage account create`](/cli/azure/storage/account#az-storage-account-create) | Создание учетной записи хранения. |
-| [`az storage container create`](/cli/azure/storage/container#az-storage-container-create) | Позволяет создать контейнер хранилища Azure. |
-| [`az storage container generate-sas`](/cli/azure/storage/container#az-storage-container-generate-sas) | Создание маркера SAS для контейнера хранилища Azure.  |
-| [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create) | Создает план службы приложений. |
-| [`az webapp create`](/cli/azure/webapp#az-webapp-create) | Создает приложение Службы приложений. |
-| [`az webapp config backup update`](/cli/azure/webapp/config/backup#az-webapp-config-backup-update) | Настраивает новое расписание резервного копирования для приложения Службы приложений. |
-| [`az webapp config backup show`](/cli/azure/webapp/config/backup#az-webapp-config-backup-show) | Показывает расписание резервного копирования для приложения Службы приложений. |
-| [`az webapp config backup list`](/cli/azure/webapp/config/backup#az-webapp-config-backup-list) | Получает список резервных копий приложения Службы приложений. |
+| [`az group create`](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [`az storage account create`](/cli/azure/storage/account#az_storage_account_create) | Создание учетной записи хранения. |
+| [`az storage container create`](/cli/azure/storage/container#az_storage_container_create) | Позволяет создать контейнер хранилища Azure. |
+| [`az storage container generate-sas`](/cli/azure/storage/container#az_storage_container_generate_sas) | Создание маркера SAS для контейнера хранилища Azure.  |
+| [`az appservice plan create`](/cli/azure/appservice/plan#az_appservice_plan_create) | Создает план службы приложений. |
+| [`az webapp create`](/cli/azure/webapp#az_webapp_create) | Создает приложение Службы приложений. |
+| [`az webapp config backup update`](/cli/azure/webapp/config/backup#az_webapp_config_backup_update) | Настраивает новое расписание резервного копирования для приложения Службы приложений. |
+| [`az webapp config backup show`](/cli/azure/webapp/config/backup#az_webapp_config_backup_show) | Показывает расписание резервного копирования для приложения Службы приложений. |
+| [`az webapp config backup list`](/cli/azure/webapp/config/backup#az_webapp_config_backup_list) | Получает список резервных копий приложения Службы приложений. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

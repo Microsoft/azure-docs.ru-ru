@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.date: 03/08/2019
 ms.author: troyhop
-ms.openlocfilehash: 3376b3714dc41c7d5ce33756671050d19471a757
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: df658a95069f39026daab7afb14c5f1d0f47c5a5
+ms.sourcegitcommit: 3ed0f0b1b66a741399dc59df2285546c66d1df38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106057717"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107713900"
 ---
 # <a name="tutorial-create-and-run-an-iot-device-simulation"></a>Руководство по созданию и запуску имитации устройства Интернета вещей
 
@@ -34,7 +34,7 @@ ms.locfileid: "106057717"
 
 Для работы с этим руководством необходим развернутый экземпляр Симулятора устройств в подписке Azure.
 
-Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на сайте GitHub.
+Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/azure-iot-pcs-device-simulation/blob/master/README.md) на сайте GitHub.
 
 ## <a name="view-simulations"></a>Просмотр имитаций
 

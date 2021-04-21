@@ -9,12 +9,12 @@ ms.subservice: general
 ms.topic: tutorial
 ms.date: 08/14/2020
 ms.author: mbaldwin
-ms.openlocfilehash: c5b07c1059e146aaf3c3c2a26038514eb614a3cc
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 37e67ad869af23b51497e1497865f620bae612aa
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102505925"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107749192"
 ---
 # <a name="client-libraries-for-azure-key-vault"></a>Клиентские библиотеки для Azure Key Vault
 
@@ -35,4 +35,4 @@ ms.locfileid: "102505925"
 
 - См. [руководство разработчика Azure Key Vault](developers-guide.md).
 - См. дополнительные сведения о [проверке подлинности в Key Vault](authentication.md).
-- См. дополнительные сведения о [защите доступа к Key Vault](secure-your-key-vault.md)
+- См. дополнительные сведения о [защите доступа к Key Vault](security-overview.md)

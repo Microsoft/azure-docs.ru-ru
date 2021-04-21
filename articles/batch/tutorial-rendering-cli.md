@@ -5,12 +5,12 @@ ms.topic: tutorial
 ms.date: 12/30/2020
 ms.custom: mvc, devx-track-azurecli
 ROBOTS: NOINDEX
-ms.openlocfilehash: 5165e5feb566a4b9081f40b681b92aafa143869f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: dc55ca15c74bd71365e514424757df3d37cec0f6
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103491748"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768185"
 ---
 # <a name="tutorial-render-a-scene-with-azure-batch"></a>Руководство по Отрисовка сцены с помощью пакетной службы Azure
 
@@ -42,7 +42,7 @@ ms.locfileid: "103491748"
 
 Создайте в своей подписке группу ресурсов, учетную запись пакетной службы и связанную учетную запись хранения.
 
-Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create). В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus2*.
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create). В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus2*.
 
 ```azurecli-interactive
 az group create \
@@ -50,7 +50,7 @@ az group create \
     --location eastus2
 ```
 
-В группе ресурсов создайте учетную запись службы хранилища Azure с помощью команды [az storage account create](/cli/azure/storage/account#az-storage-account-create). Для этого руководства вы используете учетную запись хранения, в которой будут находиться входная сцена 3ds Max и выводимые данные.
+В группе ресурсов создайте учетную запись службы хранилища Azure с помощью команды [az storage account create](/cli/azure/storage/account#az_storage_account_create). Для этого руководства вы используете учетную запись хранения, в которой будут находиться входная сцена 3ds Max и выводимые данные.
 
 ```azurecli-interactive
 az storage account create \
@@ -60,7 +60,7 @@ az storage account create \
     --sku Standard_LRS
 ```
 
-Создайте учетную запись пакетной службы с помощью команды [az batch account create](/cli/azure/batch/account#az-batch-account-create). В следующем примере создается учетная запись пакетной службы с именем *mybatchaccount* в группе ресурсов *myResourceGroup*. Она связывается с созданной учетной записью хранения.  
+Создайте учетную запись пакетной службы с помощью команды [az batch account create](/cli/azure/batch/account#az_batch_account_create). В следующем примере создается учетная запись пакетной службы с именем *mybatchaccount* в группе ресурсов *myResourceGroup*. Она связывается с созданной учетной записью хранения.  
 
 ```azurecli-interactive
 az batch account create \
@@ -70,7 +70,7 @@ az batch account create \
     --location eastus2
 ```
 
-Для создания пулов вычислений и заданий, а также управления ими необходимо выполнить проверку подлинности с помощью пакетной службы. Войдите в учетную запись с помощью команды [az batch account login](/cli/azure/batch/account#az-batch-account-login). После входа ваши команды `az batch` используют контекст учетной записи. В следующем примере используется проверка подлинности с общим ключом на основе имени и ключа учетной записи пакетной службы. Пакетная служба Azure также поддерживает проверку подлинности отдельных пользователей или приложений с помощью [Azure Active Directory](batch-aad-auth.md).
+Для создания пулов вычислений и заданий, а также управления ими необходимо выполнить проверку подлинности с помощью пакетной службы. Войдите в учетную запись с помощью команды [az batch account login](/cli/azure/batch/account#az_batch_account_login). После входа ваши команды `az batch` используют контекст учетной записи. В следующем примере используется проверка подлинности с общим ключом на основе имени и ключа учетной записи пакетной службы. Пакетная служба Azure также поддерживает проверку подлинности отдельных пользователей или приложений с помощью [Azure Active Directory](batch-aad-auth.md).
 
 ```azurecli-interactive
 az batch account login \
@@ -81,7 +81,7 @@ az batch account login \
 
 ## <a name="upload-a-scene-to-storage"></a>Передача сцены в хранилище
 
-Чтобы отправить входную сцену в хранилище, сначала нужно получить доступ к учетной записи хранения и создать контейнер назначения для больших двоичных объектов. Чтобы получить доступ к учетной записи хранения Azure, экспортируйте переменные среды `AZURE_STORAGE_KEY` и `AZURE_STORAGE_ACCOUNT`. Первая команда оболочки Bash получает ключ с помощью команды [az storage account keys list](/cli/azure/storage/account/keys#az-storage-account-keys-list). После установки переменных среды ваши команды хранилища используют контекст учетной записи.
+Чтобы отправить входную сцену в хранилище, сначала нужно получить доступ к учетной записи хранения и создать контейнер назначения для больших двоичных объектов. Чтобы получить доступ к учетной записи хранения Azure, экспортируйте переменные среды `AZURE_STORAGE_KEY` и `AZURE_STORAGE_ACCOUNT`. Первая команда оболочки Bash получает ключ с помощью команды [az storage account keys list](/cli/azure/storage/account/keys#az_storage_account_keys_list). После установки переменных среды ваши команды хранилища используют контекст учетной записи.
 
 ```azurecli-interactive
 export AZURE_STORAGE_KEY=$(az storage account keys list --account-name mystorageaccount --resource-group myResourceGroup -o tsv --query [0].value)
@@ -89,7 +89,7 @@ export AZURE_STORAGE_KEY=$(az storage account keys list --account-name mystorage
 export AZURE_STORAGE_ACCOUNT=mystorageaccount
 ```
 
-Теперь создайте контейнер больших двоичных объектов в учетной записи хранения для файлов сцены. В следующем примере используется команда [az storage container create](/cli/azure/storage/container#az-storage-container-create) для создания контейнера больших двоичных объектов с именем *scenefiles*, который разрешает доступ на чтение.
+Теперь создайте контейнер больших двоичных объектов в учетной записи хранения для файлов сцены. В следующем примере используется команда [az storage container create](/cli/azure/storage/container#az_storage_container_create) для создания контейнера больших двоичных объектов с именем *scenefiles*, который разрешает доступ на чтение.
 
 ```azurecli-interactive
 az storage container create \
@@ -103,7 +103,7 @@ az storage container create \
 wget -O MotionBlur-DragonFlying.max https://github.com/Azure/azure-docs-cli-python-samples/raw/master/batch/render-scene/MotionBlur-DragonFlying.max
 ```
 
-Передайте файл сцены из локального рабочего каталога в контейнер больших двоичных объектов. В следующем примере используется команда [az storage blob upload-batch](/cli/azure/storage/blob#az-storage-blob-upload-batch). С ее помощью можно передавать несколько файлов.
+Передайте файл сцены из локального рабочего каталога в контейнер больших двоичных объектов. В следующем примере используется команда [az storage blob upload-batch](/cli/azure/storage/blob#az_storage_blob_upload_batch). С ее помощью можно передавать несколько файлов.
 
 ```azurecli-interactive
 az storage blob upload-batch \
@@ -113,7 +113,7 @@ az storage blob upload-batch \
 
 ## <a name="create-a-rendering-pool"></a>Создание пула рендеринга
 
-Создайте пул пакетной службы для рендеринга с помощью команды [az batch pool create](/cli/azure/batch/pool#az-batch-pool-create). В этом примере вы указываете параметры пула в файле JSON. В текущей оболочке создайте файл *mypool.json* и скопируйте в него следующее содержимое. Убедитесь, что весь текст скопирован правильно. (Вы можете скачать файл с сайта [GitHub](https://raw.githubusercontent.com/Azure/azure-docs-cli-python-samples/master/batch/render-scene/json/mypool.json).)
+Создайте пул пакетной службы для рендеринга с помощью команды [az batch pool create](/cli/azure/batch/pool#az_batch_pool_create). В этом примере вы указываете параметры пула в файле JSON. В текущей оболочке создайте файл *mypool.json* и скопируйте в него следующее содержимое. Убедитесь, что весь текст скопирован правильно. (Вы можете скачать файл с сайта [GitHub](https://raw.githubusercontent.com/Azure/azure-docs-cli-python-samples/master/batch/render-scene/json/mypool.json).)
 
 
 ```json
@@ -144,14 +144,14 @@ az storage blob upload-batch \
 
 Указанный пул содержит один низкоприоритетный узел с образом Windows Server с программным обеспечением для пакетной службы рендеринга. Этот пул лицензирован для отрисовки с помощью 3ds Max и Arnold. Позже вы измените размер пула для большего количества узлов.
 
-Если вы еще не вошли в учетную запись пакетной службы, воспользуйтесь командой [az batch account login](/cli/azure/batch/account#az-batch-account-login). Затем создайте пул, передав JSON-файл команде `az batch pool create`:
+Если вы еще не вошли в учетную запись пакетной службы, воспользуйтесь командой [az batch account login](/cli/azure/batch/account#az_batch_account_login). Затем создайте пул, передав JSON-файл команде `az batch pool create`:
 
 ```azurecli-interactive
 az batch pool create \
     --json-file mypool.json
 ```
 
-На подготовку пула может потребоваться несколько минут. Чтобы увидеть состояние пула, выполните команду [az batch pool show](/cli/azure/batch/pool#az-batch-pool-show). С помощью следующей команды можно получить сведения о состоянии распределения пула:
+На подготовку пула может потребоваться несколько минут. Чтобы увидеть состояние пула, выполните команду [az batch pool show](/cli/azure/batch/pool#az_batch_pool_show). С помощью следующей команды можно получить сведения о состоянии распределения пула:
 
 ```azurecli-interactive
 az batch pool show \
@@ -163,7 +163,7 @@ az batch pool show \
 
 ## <a name="create-a-blob-container-for-output"></a>Создание контейнера больших двоичных объектов для выходных данных
 
-В примерах этого руководства каждая задача в задании рендеринга создает выходной файл. Перед планированием задания создайте в учетной записи хранения контейнер больших двоичных объектов в качестве места назначения для выходных файлов. В следующем примере с помощью команды [az storage container create](/cli/azure/storage/container#az-storage-container-create) создается контейнер *job-myrenderjob* с открытым доступом на чтение.
+В примерах этого руководства каждая задача в задании рендеринга создает выходной файл. Перед планированием задания создайте в учетной записи хранения контейнер больших двоичных объектов в качестве места назначения для выходных файлов. В следующем примере с помощью команды [az storage container create](/cli/azure/storage/container#az_storage_container_create) создается контейнер *job-myrenderjob* с открытым доступом на чтение.
 
 ```azurecli-interactive
 az storage container create \
@@ -171,7 +171,7 @@ az storage container create \
     --name job-myrenderjob
 ```
 
-Для записи выходных файлов в контейнер пакетной службе требуется токен подписанного URL-адреса (SAS). Создайте токен с помощью команды [az storage account-sas](/cli/azure/storage/account#az-storage-account-generate-sas). В этом примере создается токен для записи в любой контейнер больших двоичных объектов в учетной записи. Срок действия токена истекает 15 ноября 2021 года:
+Для записи выходных файлов в контейнер пакетной службе требуется токен подписанного URL-адреса (SAS). Создайте токен с помощью команды [az storage account-sas](/cli/azure/storage/account#az_storage_account_generate_sas). В этом примере создается токен для записи в любой контейнер больших двоичных объектов в учетной записи. Срок действия токена истекает 15 ноября 2021 года:
 
 ```azurecli-interactive
 az storage account generate-sas \
@@ -189,7 +189,7 @@ az storage account generate-sas \
 
 ### <a name="create-a-job"></a>Создание задания
 
-Создайте задание рендеринга для запуска в пуле с помощью команды [az batch job create](/cli/azure/batch/job#az-batch-job-create). Изначально у задания нет задач.
+Создайте задание рендеринга для запуска в пуле с помощью команды [az batch job create](/cli/azure/batch/job#az_batch_job_create). Изначально у задания нет задач.
 
 ```azurecli-interactive
 az batch job create \
@@ -199,7 +199,7 @@ az batch job create \
 
 ### <a name="create-a-task"></a>Создание задачи
 
-С помощью команды [az batch task create](/cli/azure/batch/task#az-batch-task-create) создайте задачи рендеринга в задании. В этом примере вы задаете параметры задачи в файле JSON. В текущей оболочке создайте файл *myrendertask.json* и скопируйте в него следующее содержимое. Убедитесь, что весь текст скопирован правильно. (Вы можете скачать файл с сайта [GitHub](https://raw.githubusercontent.com/Azure/azure-docs-cli-python-samples/master/batch/render-scene/json/myrendertask.json).)
+С помощью команды [az batch task create](/cli/azure/batch/task#az_batch_task_create) создайте задачи рендеринга в задании. В этом примере вы задаете параметры задачи в файле JSON. В текущей оболочке создайте файл *myrendertask.json* и скопируйте в него следующее содержимое. Убедитесь, что весь текст скопирован правильно. (Вы можете скачать файл с сайта [GitHub](https://raw.githubusercontent.com/Azure/azure-docs-cli-python-samples/master/batch/render-scene/json/myrendertask.json).)
 
 Задача определяет команду 3ds Max для рендеринга сцены с одним кадром *MotionBlur-DragonFlying.max*.
 
@@ -252,7 +252,7 @@ az batch task create \
 
 ### <a name="view-task-output"></a>Просмотр выходных данных задачи
 
-На запуск задания может потребоваться несколько минут. С помощью команды [az batch task show](/cli/azure/batch/task#az-batch-task-show) можно просмотреть сведения о задаче.
+На запуск задания может потребоваться несколько минут. С помощью команды [az batch task show](/cli/azure/batch/task#az_batch_task_show) можно просмотреть сведения о задаче.
 
 ```azurecli-interactive
 az batch task show \
@@ -260,7 +260,7 @@ az batch task show \
     --task-id myrendertask
 ```
 
-Задача создает файл *dragon0001.jpg* на вычислительном узле и загружает его в контейнер *job-myrenderjob* в вашей учетной записи хранения. Чтобы просмотреть выходные данные, загрузите файл из хранилища на локальный компьютер с помощью команды [az storage blob download](/cli/azure/storage/blob#az-storage-blob-download).
+Задача создает файл *dragon0001.jpg* на вычислительном узле и загружает его в контейнер *job-myrenderjob* в вашей учетной записи хранения. Чтобы просмотреть выходные данные, загрузите файл из хранилища на локальный компьютер с помощью команды [az storage blob download](/cli/azure/storage/blob#az_storage_blob_download).
 
 ```azurecli-interactive
 az storage blob download \
@@ -276,7 +276,7 @@ az storage blob download \
 
 ## <a name="scale-the-pool"></a>Масштабирование пула
 
-Теперь измените пул, чтобы подготовиться к большему заданию отрисовки с несколькими кадрами. Пакетная служба Azure предоставляет несколько способов масштабирования вычислительных ресурсов, включая [автомасштабирование](batch-automatic-scaling.md). При этом узлы добавляются или удаляются по мере изменения требований к задаче. В этом примере с помощью команды [az batch pool resize](/cli/azure/batch/pool#az-batch-pool-resize) количество низкоприоритетных узлов в пуле увеличивается до *6*:
+Теперь измените пул, чтобы подготовиться к большему заданию отрисовки с несколькими кадрами. Пакетная служба Azure предоставляет несколько способов масштабирования вычислительных ресурсов, включая [автомасштабирование](batch-automatic-scaling.md). При этом узлы добавляются или удаляются по мере изменения требований к задаче. В этом примере с помощью команды [az batch pool resize](/cli/azure/batch/pool#az_batch_pool_resize) количество низкоприоритетных узлов в пуле увеличивается до *6*:
 
 ```azurecli-interactive
 az batch pool resize --pool-id myrenderpool --target-dedicated-nodes 0 --target-low-priority-nodes 6
@@ -286,7 +286,7 @@ az batch pool resize --pool-id myrenderpool --target-dedicated-nodes 0 --target-
 
 ## <a name="render-a-multiframe-scene"></a>Отрисовка многокадровой сцены
 
-Как и в примере с одним кадром, с помощью команды [az batch task create](/cli/azure/batch/task#az-batch-task-create) создайте задачи рендеринга в задании с именем *myrenderjob*. Задайте параметры задачи в JSON-файле с именем *myrendertask_multi.json*. (Вы можете скачать файл с сайта [GitHub](https://raw.githubusercontent.com/Azure/azure-docs-cli-python-samples/master/batch/render-scene/json/myrendertask_multi.json).) Каждая из шести задач указывает командную строку Arnold для рендеринга одного кадра сцены 3ds Max *MotionBlur-DragonFlying.max* .
+Как и в примере с одним кадром, с помощью команды [az batch task create](/cli/azure/batch/task#az_batch_task_create) создайте задачи рендеринга в задании с именем *myrenderjob*. Задайте параметры задачи в JSON-файле с именем *myrendertask_multi.json*. (Вы можете скачать файл с сайта [GitHub](https://raw.githubusercontent.com/Azure/azure-docs-cli-python-samples/master/batch/render-scene/json/myrendertask_multi.json).) Каждая из шести задач указывает командную строку Arnold для рендеринга одного кадра сцены 3ds Max *MotionBlur-DragonFlying.max* .
 
 Создайте файл в текущей оболочке с именем *myrendertask_multi.json* и скопируйте содержимое из скачанного файла. Измените элементы `blobSource` и `containerURL` в файле JSON, указав имя своей учетной записи хранения и токен SAS. Обязательно измените настройки для каждой из шести задач. Сохраните файл и создайте очередь задач, выполнив следующую команду:
 
@@ -296,7 +296,7 @@ az batch task create --job-id myrenderjob --json-file myrendertask_multi.json
 
 ### <a name="view-task-output"></a>Просмотр выходных данных задачи
 
-На запуск задания может потребоваться несколько минут. Просмотреть состояние задач можно с помощью команды [az batch task list](/cli/azure/batch/task#az-batch-task-list). Пример:
+На запуск задания может потребоваться несколько минут. Просмотреть состояние задач можно с помощью команды [az batch task list](/cli/azure/batch/task#az_batch_task_list). Пример:
 
 ```azurecli-interactive
 az batch task list \
@@ -304,7 +304,7 @@ az batch task list \
     --output table
 ```
 
-С помощью команды [az batch task show](/cli/azure/batch/task#az-batch-task-show) просмотрите сведения об отдельных задачах. Пример:
+С помощью команды [az batch task show](/cli/azure/batch/task#az_batch_task_show) просмотрите сведения об отдельных задачах. Пример:
 
 ```azurecli-interactive
 az batch task show \
@@ -326,7 +326,7 @@ az storage blob download-batch \
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Вы можете удалить ставшие ненужными группу ресурсов, учетную запись пакетной службы, пулы и все связанные с ними ресурсы, выполнив команду [az group delete](/cli/azure/group#az-group-delete). Удалите ресурсы следующим образом:
+Вы можете удалить ставшие ненужными группу ресурсов, учетную запись пакетной службы, пулы и все связанные с ними ресурсы, выполнив команду [az group delete](/cli/azure/group#az_group_delete). Удалите ресурсы следующим образом:
 
 ```azurecli-interactive
 az group delete --name myResourceGroup

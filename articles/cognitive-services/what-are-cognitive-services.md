@@ -12,12 +12,12 @@ ms.topic: overview
 ms.date: 10/22/2020
 ms.author: nitinme
 ms.custom: cog-serv-seo-aug-2020
-ms.openlocfilehash: 71f8635d1cd96a6436cfc902622bf18bc608a143
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: c89131cc34d45ea94f3bb290ac11ec86f4b83be3
+ms.sourcegitcommit: 272351402a140422205ff50b59f80d3c6758f6f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104867191"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107587618"
 ---
 # <a name="what-are-azure-cognitive-services"></a>Общие сведения об Azure Cognitive Services
 
@@ -43,7 +43,7 @@ Azure Cognitive Services — это облачные службы с REST API 
 |[Пользовательское визуальное распознавание](./custom-vision-service/index.yml "Служба "Пользовательское визуальное распознавание"")|Служба "Пользовательское визуальное распознавание" позволяет создавать, развертывать и улучшать пользовательские классификаторы изображений. Классификатор изображений — это служба ИИ, которая присваивает изображениям метки на основе их визуальных характеристик. |
 |[Распознавание лиц](./face/index.yml "Распознавание лиц")| Служба "Распознавание лиц" обеспечивает доступ к расширенным алгоритмам, позволяя определять и распознавать лица на основе атрибутов. Чтобы приступить к работе со службой, ознакомьтесь с [кратким руководством по службе "Распознавание лиц"](./face/quickstarts/client-libraries.md).|
 |[Распознаватель документов](./form-recognizer/index.yml "Распознаватель документов")|Распознаватель документов идентифицирует и извлекает пары "ключ —значение" и данные таблиц из документов, а затем выводит структурированные данные, включая отношения в исходном файле. Чтобы приступить к работе, см. [Краткое руководство по службе "Распознаватель документов"](./form-recognizer/quickstarts/client-library.md).|
-|[Индексатор видео](../media-services/video-indexer/video-indexer-overview.md "Индексатор видео")|Индексатор видео позволяет извлекать аналитические сведения из видео. Чтобы приступить к работе, см. [Краткое руководство по службе "Индексатор видео"](/media-services/video-indexer/video-indexer-get-started.md).|
+|[Индексатор видео](../media-services/video-indexer/video-indexer-overview.md "Индексатор видео")|Индексатор видео позволяет извлекать аналитические сведения из видео. Чтобы приступить к работе, см. [Краткое руководство по службе "Индексатор видео"](/azure/media-services/video-indexer/video-indexer-get-started).|
 
 ## <a name="speech-apis"></a>API, связанные с речью
 

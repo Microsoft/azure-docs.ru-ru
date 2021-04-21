@@ -4,12 +4,12 @@ description: Из этого руководства вы узнаете, как 
 ms.topic: tutorial
 ms.date: 12/4/2019
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 0e524bfe090f0d67b76c13e876f44e83986aeb9e
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a249ab63aa72c1d39ab1626e72ff3b2037f3f723
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91334809"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768457"
 ---
 # <a name="tutorial-restore-sap-hana-databases-in-an-azure-vm-using-azure-cli"></a>Руководство по Восстановление баз данных SAP HANA на виртуальных машинах Azure с помощью Azure CLI
 
@@ -34,7 +34,7 @@ Azure CLI используется для создания ресурсов Azur
 
 ## <a name="view-restore-points-for-a-backed-up-database"></a>Просмотр точек восстановления для базы данных с резервным копированием
 
-Чтобы просмотреть полный список существующих точек восстановления для базы данных, используйте командлет [az backup recoverypoint list](/cli/azure/backup/recoverypoint#az-backup-recoverypoint-show-log-chain), как показано ниже.
+Чтобы просмотреть полный список существующих точек восстановления для базы данных, используйте командлет [az backup recoverypoint list](/cli/azure/backup/recoverypoint#az_backup_recoverypoint_show_log_chain), как показано ниже.
 
 ```azurecli-interactive
 az backup recoverypoint list --resource-group saphanaResourceGroup \
@@ -57,7 +57,7 @@ DefaultRangeRecoveryPoint                                    AzureWorkload      
 В приведенном выше списке вы видите три точки восстановления, по одной для полной копии, разностной копии и резервной копии журналов.
 
 >[!NOTE]
->Также с помощью командлета [az backup recoverypoint show-log-chain](/cli/azure/backup/recoverypoint#az-backup-recoverypoint-show-log-chain) можно просмотреть начальную и конечную точки для каждой полной цепочки резервных копий журналов.
+>Также с помощью командлета [az backup recoverypoint show-log-chain](/cli/azure/backup/recoverypoint#az_backup_recoverypoint_show_log_chain) можно просмотреть начальную и конечную точки для каждой полной цепочки резервных копий журналов.
 
 ## <a name="prerequisites-to-restore-a-database"></a>Предварительные условия для восстановления базы данных
 
@@ -74,7 +74,7 @@ DefaultRangeRecoveryPoint                                    AzureWorkload      
 * Восстановление до состояния на определенную дату или время (с точностью до секунд) с помощью резервных копий журналов. На основе выбранного времени Azure Backup автоматически определяет соответствующие полные или разностные резервные копии и цепочку резервных копий журналов, необходимых для восстановления.
 * Восстановление конкретной полной или разностной резервной копии по определенной точке восстановления.
 
-Чтобы восстановить базу данных, используйте командлет [az restore restore-azurewl](/cli/azure/backup/restore#az-backup-restore-restore-azurewl), который принимает в качестве входных данных объект конфигурации восстановления. Этот объект можно создать с помощью командлета [az backup recoveryconfig show](/cli/azure/backup/recoveryconfig#az-backup-recoveryconfig-show). Объект конфигурации восстановления содержит все сведения для выполнения восстановления. Среди прочего он определяет режим восстановления: **OriginalWorkloadRestore** или **AlternateWorkloadRestore**.
+Чтобы восстановить базу данных, используйте командлет [az restore restore-azurewl](/cli/azure/backup/restore#az_backup_restore_restore_azurewl), который принимает в качестве входных данных объект конфигурации восстановления. Этот объект можно создать с помощью командлета [az backup recoveryconfig show](/cli/azure/backup/recoveryconfig#az_backup_recoveryconfig_show). Объект конфигурации восстановления содержит все сведения для выполнения восстановления. Среди прочего он определяет режим восстановления: **OriginalWorkloadRestore** или **AlternateWorkloadRestore**.
 
 >[!NOTE]
 > **OriginalWorkloadRestore** обозначает восстановление данных в том же экземпляре SAP HANA, где находилась исходная база данных-источник. В этом варианте перезаписывается исходная база данных. <br>
@@ -86,7 +86,7 @@ DefaultRangeRecoveryPoint                                    AzureWorkload      
 
 В рамках этого руководства восстановление выполняется до последней точки восстановления. [Просмотрите список точек восстановления](#view-restore-points-for-a-backed-up-database) для базы данных и выберите наиболее подходящую. В рамках этого руководства используется точка восстановления с именем *7660777527047692711*.
 
-Используя указанные выше имя точки восстановления и режим восстановления, создайте объект конфигурации восстановления, используя командлет [az backup recoveryconfig show](/cli/azure/backup/recoveryconfig#az-backup-recoveryconfig-show). Давайте узнаем, что означают остальные параметры в этом командлете.
+Используя указанные выше имя точки восстановления и режим восстановления, создайте объект конфигурации восстановления, используя командлет [az backup recoveryconfig show](/cli/azure/backup/recoveryconfig#az_backup_recoveryconfig_show). Давайте узнаем, что означают остальные параметры в этом командлете.
 
 * **--target-item-name** содержит имя, которое будет использоваться для восстанавливаемой базы данных. В нашем примере используется имя *restored_database*.
 * **--target-server-name** обозначает имя сервера SAP HANA, который зарегистрирован в хранилище Служб восстановления и размещается в том же регионе, что и восстанавливаемая база данных. В рамках этого руководства мы восстановим базу данных на том же защищенном сервере SAP HANA с именем *hxehost*.
@@ -113,7 +113,7 @@ az backup recoveryconfig show --resource-group saphanaResourceGroup \
 {"restore_mode": "AlternateLocation", "container_uri": " VMAppContainer;Compute;saphanaResourceGroup;saphanaVM ", "item_uri": "SAPHanaDatabase;hxe;hxe", "recovery_point_id": "7660777527047692711", "item_type": "SAPHana", "source_resource_id": "/subscriptions/ef4ab5a7-c2c0-4304-af80-af49f48af3d1/resourceGroups/saphanaResourceGroup/providers/Microsoft.Compute/virtualMachines/saphanavm", "database_name": null, "container_id": null, "alternate_directory_paths": null}
 ```
 
-Теперь выполните командлет [az restore restore-azurewl](/cli/azure/backup/restore#az-backup-restore-restore-azurewl) для восстановления базы данных. Чтобы использовать эту команду, мы предоставим приведенный выше код в формате JSON, сохраненный в файл с именем *recoveryconfig.json*.
+Теперь выполните командлет [az restore restore-azurewl](/cli/azure/backup/restore#az_backup_restore_restore_azurewl) для восстановления базы данных. Чтобы использовать эту команду, мы предоставим приведенный выше код в формате JSON, сохраненный в файл с именем *recoveryconfig.json*.
 
 ```azurecli-interactive
 az backup restore restore-azurewl --resource-group saphanaResourceGroup \
@@ -130,13 +130,13 @@ Name                                  Resource
 5b198508-9712-43df-844b-977e5dfc30ea  SAPHANA
 ```
 
-В ответе вы получите имя задания. Это имя задания позволяет отслеживать состояние задания с помощью [az backup job show](/cli/azure/backup/job#az-backup-job-show).
+В ответе вы получите имя задания. Это имя задания позволяет отслеживать состояние задания с помощью [az backup job show](/cli/azure/backup/job#az_backup_job_show).
 
 ## <a name="restore-and-overwrite"></a>Восстановление и перезапись
 
 Чтобы восстановить базу данных в исходном расположении, мы укажем режим восстановления **OrignialWorkloadRestore**. Для него нужно выбрать точку восстановления, например последнюю из существующих или любую другую.
 
-В этом руководстве мы выберем последнюю точку восстановления на момент времени "28-11-2019-09:53:00". Эту точку восстановления можно указать в следующих форматах: дд-мм-гггг, дд-мм-гггг-чч:мм:сс. Чтобы выбрать допустимый момент времени для восстановления, используйте командлет [az backup recoverypoint show-log-chain](/cli/azure/backup/recoverypoint#az-backup-recoverypoint-show-log-chain), который позволяет получить интервалы полных цепочек резервных копий журналов.
+В этом руководстве мы выберем последнюю точку восстановления на момент времени "28-11-2019-09:53:00". Эту точку восстановления можно указать в следующих форматах: дд-мм-гггг, дд-мм-гггг-чч:мм:сс. Чтобы выбрать допустимый момент времени для восстановления, используйте командлет [az backup recoverypoint show-log-chain](/cli/azure/backup/recoverypoint#az_backup_recoverypoint_show_log_chain), который позволяет получить интервалы полных цепочек резервных копий журналов.
 
 ```azurecli-interactive
 az backup recoveryconfig show --resource-group saphanaResourceGroup \
@@ -154,7 +154,7 @@ az backup recoveryconfig show --resource-group saphanaResourceGroup \
 {"restore_mode": "OriginalLocation", "container_uri": " VMAppContainer;Compute;saphanaResourceGroup;saphanaVM ", "item_uri": "SAPHanaDatabase;hxe;hxe", "recovery_point_id": "DefaultRangeRecoveryPoint", "log_point_in_time": "28-11-2019-09:53:00", "item_type": "SAPHana", "source_resource_id": "/subscriptions/ef4ab5a7-c2c0-4304-af80-af49f48af3d1/resourceGroups/saphanaResourceGroup/providers/Microsoft.Compute/virtualMachines/saphanavm", "database_name": null, "container_id": null, "alternate_directory_paths": null}"
 ```
 
-Теперь выполните командлет [az restore restore-azurewl](/cli/azure/backup/restore#az-backup-restore-restore-azurewl) для восстановления базы данных. Чтобы использовать эту команду, мы предоставим приведенный выше код в формате JSON, сохраненный в файл с именем *recoveryconfig.json*.
+Теперь выполните командлет [az restore restore-azurewl](/cli/azure/backup/restore#az_backup_restore_restore_azurewl) для восстановления базы данных. Чтобы использовать эту команду, мы предоставим приведенный выше код в формате JSON, сохраненный в файл с именем *recoveryconfig.json*.
 
 ```azurecli-interactive
 az backup restore restore-azurewl --resource-group saphanaResourceGroup \
@@ -171,15 +171,15 @@ Name                                  Resource
 5b198508-9712-43df-844b-977e5dfc30ea  SAPHANA
 ```
 
-В ответе вы получите имя задания. Это имя можно использовать для отслеживания состояния задания с помощью командлета [az backup job show](/cli/azure/backup/job#az-backup-job-show).
+В ответе вы получите имя задания. Это имя можно использовать для отслеживания состояния задания с помощью командлета [az backup job show](/cli/azure/backup/job#az_backup_job_show).
 
 ## <a name="restore-as-files"></a>Восстановление в виде файлов
 
 Чтобы восстановить данные резервной копии в виде файлов, а не базы данных, мы будем использовать режим восстановления **RestoreAsFiles**. Затем нужно выбрать предыдущую точку восстановления, например точку восстановления на определенный момент времени или любую другую. Когда файлы будут скопированы в указанное расположение, их можно будет использовать на любом компьютере SAP HANA, где их нужно восстановить в качестве базы данных. Так как эти файлы можно переместить на любой компьютер, теперь вы можете восстанавливать данные в разных подписках и регионах.
 
-В этом руководстве показано, как использовать предыдущую точку восстановления на определенный момент времени (`28-11-2019-09:53:00`), а также расположение дампа файлов резервных копий как `/home/saphana/restoreasfiles` на том же сервере SAP HANA. Эту точку восстановления можно указать в следующих форматах: **дд-мм-гггг** и **дд-мм-гггг-чч:мм:сс**. Чтобы выбрать допустимый момент времени для восстановления, используйте командлет [az backup recoverypoint show-log-chain](/cli/azure/backup/recoverypoint#az-backup-recoverypoint-show-log-chain), который позволяет получить интервалы полных цепочек резервных копий журналов.
+В этом руководстве показано, как использовать предыдущую точку восстановления на определенный момент времени (`28-11-2019-09:53:00`), а также расположение дампа файлов резервных копий как `/home/saphana/restoreasfiles` на том же сервере SAP HANA. Эту точку восстановления можно указать в следующих форматах: **дд-мм-гггг** и **дд-мм-гггг-чч:мм:сс**. Чтобы выбрать допустимый момент времени для восстановления, используйте командлет [az backup recoverypoint show-log-chain](/cli/azure/backup/recoverypoint#az_backup_recoverypoint_show_log_chain), который позволяет получить интервалы полных цепочек резервных копий журналов.
 
-Используя указанные выше имя точки восстановления и режим восстановления, создайте объект конфигурации восстановления, выполнив командлет [az backup recoveryconfig show](/cli/azure/backup/recoveryconfig#az-backup-recoveryconfig-show). Давайте узнаем, что означают остальные параметры в этом командлете.
+Используя указанные выше имя точки восстановления и режим восстановления, создайте объект конфигурации восстановления, выполнив командлет [az backup recoveryconfig show](/cli/azure/backup/recoveryconfig#az_backup_recoveryconfig_show). Давайте узнаем, что означают остальные параметры в этом командлете.
 
 * **--target-container-name** обозначает имя сервера SAP HANA, который зарегистрирован в хранилище Служб восстановления и размещается в том же регионе, что и восстанавливаемая база данных. В этом руководстве показано, как восстановить базу данных в виде файлов на том же защищенном сервере SAP HANA с именем *hxehost*.
 * **--rp-name.** Для восстановления до точки во времени точке восстановления будет присвоено имя **DefaultRangeRecoveryPoint**.
@@ -216,7 +216,7 @@ az backup recoveryconfig show --resource-group saphanaResourceGroup \
 }
 ```
 
-Теперь выполните командлет [az restore restore-azurewl](/cli/azure/backup/restore#az-backup-restore-restore-azurewl) для восстановления базы данных в виде файлов. Чтобы использовать эту команду, мы предоставим приведенный выше код JSON, сохраненный в файл с именем *recoveryconfig.json*.
+Теперь выполните командлет [az restore restore-azurewl](/cli/azure/backup/restore#az_backup_restore_restore_azurewl) для восстановления базы данных в виде файлов. Чтобы использовать эту команду, мы предоставим приведенный выше код JSON, сохраненный в файл с именем *recoveryconfig.json*.
 
 ```azurecli-interactive
 az backup restore restore-azurewl --resource-group saphanaResourceGroup \
@@ -267,7 +267,7 @@ az backup restore restore-azurewl --resource-group saphanaResourceGroup \
 }
 ```
 
-В ответе вы получите имя задания. Это имя можно использовать для отслеживания состояния задания с помощью командлета [az backup job show](/cli/azure/backup/job#az-backup-job-show).
+В ответе вы получите имя задания. Это имя можно использовать для отслеживания состояния задания с помощью командлета [az backup job show](/cli/azure/backup/job#az_backup_job_show).
 
 Файлы, которые копируются в целевой контейнер:
 

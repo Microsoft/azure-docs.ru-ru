@@ -4,12 +4,12 @@ description: С помощью этого скрипта создается уч
 ms.topic: sample
 ms.date: 01/29/2018
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 2349b6b373f271a5aa0f169e5a9ebc9f58f6f608
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 3d978cf56e92abf9824c116e51f94d53bbe14bbb
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "93076816"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768339"
 ---
 # <a name="cli-example-create-a-batch-account-in-batch-service-mode"></a>Пример скрипта CLI: создание учетной записи пакетной службы в режиме пакетной службы
 
@@ -37,14 +37,14 @@ az group delete --name myResourceGroup
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az batch account create](/cli/azure/batch/account#az-batch-account-create) | Создает учетную запись пакетной службы. |
-| [az storage account create](/cli/azure/storage/account#az-storage-account-create) | Создание учетной записи хранения. |
-| [az batch account set](/cli/azure/batch/account#az-batch-account-set) | Обновляет свойства учетной записи пакетной службы.  |
-| [az batch account show](/cli/azure/batch/account#az-batch-account-show) | Получает сведения об указанной учетной записи пакетной службы.  |
-| [az batch account keys list](/cli/azure/batch/account/keys#az-batch-account-keys-list) | Получает ключи доступа указанной учетной записи пакетной службы.  |
-| [az batch account login](/cli/azure/batch/account#az-batch-account-login) | Выполняет проверку подлинности с помощью указанной учетной записи пакетной службы для дальнейшего взаимодействия с интерфейсом командной строки.  |
-| [az group delete](/cli/azure/group#az-group-delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az batch account create](/cli/azure/batch/account#az_batch_account_create) | Создает учетную запись пакетной службы. |
+| [az storage account create](/cli/azure/storage/account#az_storage_account_create) | Создание учетной записи хранения. |
+| [az batch account set](/cli/azure/batch/account#az_batch_account_set) | Обновляет свойства учетной записи пакетной службы.  |
+| [az batch account show](/cli/azure/batch/account#az_batch_account_show) | Получает сведения об указанной учетной записи пакетной службы.  |
+| [az batch account keys list](/cli/azure/batch/account/keys#az_batch_account_keys_list) | Получает ключи доступа указанной учетной записи пакетной службы.  |
+| [az batch account login](/cli/azure/batch/account#az_batch_account_login) | Выполняет проверку подлинности с помощью указанной учетной записи пакетной службы для дальнейшего взаимодействия с интерфейсом командной строки.  |
+| [az group delete](/cli/azure/group#az_group_delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -8,7 +8,7 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: computer-vision
 ms.topic: quickstart
-ms.date: 03/21/2020
+ms.date: 03/29/2021
 ms.author: pafarley
 ms.custom:
 - devx-track-python
@@ -17,12 +17,12 @@ ms.custom:
 - cog-serv-seo-aug-2020
 zone_pivot_groups: programming-languages-computer-vision
 keywords: компьютерное зрение; служба компьютерного зрения
-ms.openlocfilehash: 865002fbc9e492b43b9c572468f722c85c6cc4b8
-ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
+ms.openlocfilehash: bd6fcec1544e20c119018df2595cc27c8c368824
+ms.sourcegitcommit: 6f1aa680588f5db41ed7fc78c934452d468ddb84
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106284820"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107728272"
 ---
 # <a name="quickstart-use-the-read-client-library-or-rest-api"></a>Краткое руководство. Использование клиентской библиотеки чтения или REST API
 
