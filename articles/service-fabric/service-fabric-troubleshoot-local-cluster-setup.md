@@ -1,13 +1,13 @@
 ---
-title: Устранение неполадок при установке локального кластера Azure Service Fabric
+title: Устранение неполадок в настройке локального кластера Azure Service Fabric
 description: В этой статье описываются рекомендации по устранению неполадок с кластером локальной разработки.
 ms.topic: conceptual
 ms.date: 02/23/2018
 ms.openlocfilehash: 20948cd1626c02d73fb6e9ef096b552bbab627fb
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96575913"
 ---
 # <a name="troubleshoot-your-local-development-cluster-setup"></a>Устранение неполадок в работе кластера локальной разработки

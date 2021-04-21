@@ -12,10 +12,10 @@ ms.author: xiaoyul
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 ms.openlocfilehash: bc101e6bb743b9290593937a4d1bac656430b438
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98685316"
 ---
 # <a name="development-best-practices-for-synapse-sql-pool"></a>Рекомендации по разработке для пула Synapse SQL
@@ -122,6 +122,6 @@ ms.locfileid: "98685316"
 
 На [странице вопросов и ответов Майкрософт для Azure Synapse](/answers/topics/azure-synapse-analytics.html) можно задавать вопросы другим пользователям и группе разработчиков Azure Synapse.  Мы регулярно просматриваем этот форум и следим за тем, чтобы другие пользователи или наши специалисты ответили на интересующие вас вопросы.  
 
-Если вы предпочитаете задавать вопросы на Stack Overflow, у нас также есть [форум Stack overflow Azure синапсе Analytics](https://stackoverflow.com/questions/tagged/azure-sqldw).
+Вопросы также можно задавать на [форуме Stack Overflow в разделе, посвященном Azure Synapse Analytics](https://stackoverflow.com/questions/tagged/azure-sqldw).
 
 Чтобы запросить новую функцию, посетите страницу [отзывов и предложений Azure Synapse ](https://feedback.azure.com/forums/307516-sql-data-warehouse).  Ваши отзывы и голоса за отзывы, оставленные другими пользователями, помогут нам определить, какие улучшения функций наиболее приоритетные.

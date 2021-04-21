@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.service: iot-edge
 ms.custom: devx-track-azurecli
 services: iot-edge
-ms.openlocfilehash: 7b12b6c1cdc85eaba531f34b23aa74bee6b38f7b
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: c502a9c02160c5a92d78ccdbb0532e6f173122da
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103201126"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107479514"
 ---
 # <a name="deploy-and-monitor-iot-edge-modules-at-scale-using-the-azure-cli"></a>Развертывание и мониторинг большого числа модулей IoT Edge с помощью Azure CLI
 
@@ -191,7 +191,7 @@ ms.locfileid: "103201126"
 
 Развертывание модулей для целевых устройств происходит при помощи создания развертывания, которое состоит из манифеста развертывания, а также других параметров.
 
-Чтобы создать развертывание, используйте команду [az iot edge deployment create](/cli/azure/ext/azure-iot/iot/edge/deployment#ext-azure-iot-az-iot-edge-deployment-create).
+Чтобы создать развертывание, используйте команду [az iot edge deployment create](/cli/azure/iot/edge/deployment).
 
 ```azurecli
 az iot edge deployment create --deployment-id [deployment id] --hub-name [hub name] --content [file path] --labels "[labels]" --target-condition "[target query]" --priority [int]
@@ -224,7 +224,7 @@ az iot edge deployment create --deployment-id [deployment id] --hub-name [hub na
 
 Вы не можете обновить содержимое развертывания, в том числе определенные в манифесте развертывания модули и маршруты. Если вы хотите обновить содержимое развертывания, создайте новое развертывание с более высоким приоритетом, нацеленное на те же устройства. Вы можете изменить некоторые свойства существующего модуля, например целевое условие, метки, метрики и приоритет.
 
-Чтобы обновить развертывание, используйте команду [az iot edge deployment update](/cli/azure/ext/azure-iot/iot/edge/deployment#ext-azure-iot-az-iot-edge-deployment-update).
+Чтобы обновить развертывание, используйте команду [az iot edge deployment update](/cli/azure/iot/edge/deployment).
 
 ```azurecli
 az iot edge deployment update --deployment-id [deployment id] --hub-name [hub name] --set [property1.property2='value']
@@ -245,7 +245,7 @@ az iot edge deployment update --deployment-id [deployment id] --hub-name [hub na
 
 При удалении развертывания все устройства выполняют следующее развертывание, которое имеет наивысший приоритет. Если устройства не соответствуют условиям назначения любого другого развертывания, то модули не будут удалены при удалении развертывания.
 
-Чтобы удалить развертывание, используйте команду [az iot edge deployment delete](/cli/azure/ext/azure-iot/iot/edge/deployment#ext-azure-iot-az-iot-edge-deployment-delete).
+Чтобы удалить развертывание, используйте команду [az iot edge deployment delete](/cli/azure/iot/edge/deployment).
 
 ```azurecli
 az iot edge deployment delete --deployment-id [deployment id] --hub-name [hub name]

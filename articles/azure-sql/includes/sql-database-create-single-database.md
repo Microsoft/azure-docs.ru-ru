@@ -6,12 +6,12 @@ ms.topic: include
 ms.date: 03/10/2020
 ms.author: sstein
 ms.reviewer: vanto
-ms.openlocfilehash: c7bd942b427bdbd2d8184f712f97dd2a0a57fa90
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 0568860c387aa1239ec56005e404606272ae8275
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "102178084"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107800014"
 ---
 На этом шаге вы создадите [логический сервер SQL Server](../database/logical-servers.md) и [отдельную базу данных](../database/single-database-overview.md), в которой используются образцы данных AdventureWorksLT. Базу данных можно создать с помощью меню и экранов портала Azure либо с помощью Azure CLI или сценария PowerShell в Azure Cloud Shell.
 
@@ -151,11 +151,11 @@ az sql db create \
 
 | Get-Help | Описание |
 |---|---|
-| [az account set](/cli/azure/account#az-account-set) | Позволяет указать подписку в качестве текущей активной подписки. |
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az sql server create](/cli/azure/sql/server#az-sql-server-create) | Создает сервер, на котором размещены базы данных и эластичные пулы. |
-| [az sql server firewall-rule create](/cli/azure/sql/server/firewall-rule##az-sql-server-firewall-rule-create) | Создает правило брандмауэра на уровне сервера. |
-| [az sql db create](/cli/azure/sql/db#az-sql-db-create) | Создает базу данных. |
+| [az account set](/cli/azure/account#az_account_set) | Позволяет указать подписку в качестве текущей активной подписки. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az sql server create](/cli/azure/sql/server#az_sql_server_create) | Создает сервер, на котором размещены базы данных и эластичные пулы. |
+| [az sql server firewall-rule create](/cli/azure/sql/server/firewall-rule##az_sql_server_firewall_rule_create) | Создает правило брандмауэра на уровне сервера. |
+| [az sql db create](/cli/azure/sql/db#az_sql_db_create) | Создает базу данных. |
 
 Дополнительные примеры Azure CLI для базы данных SQL Azure см. в разделе [Примеры для Azure CLI](../database/az-cli-script-samples-content-guide.md).
 

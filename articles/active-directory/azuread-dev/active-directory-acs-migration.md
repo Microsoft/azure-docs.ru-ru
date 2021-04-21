@@ -13,12 +13,12 @@ ms.date: 10/03/2018
 ms.author: ryanwi
 ms.reviewer: jlu, annaba, hirsin
 ROBOTS: NOINDEX
-ms.openlocfilehash: d68cfb91445e2055cb3c3feb88bf925987ea9852
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: bf50db4c463f5161adcc88d69eb2ae8970526103
+ms.sourcegitcommit: db925ea0af071d2c81b7f0ae89464214f8167505
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101687402"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107515623"
 ---
 # <a name="how-to-migrate-from-the-azure-access-control-service"></a>Руководство. Перенос из службы контроля доступа Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "101687402"
 
 Служба контроля доступа Microsoft Azure (ACS), относящаяся к Azure Active Directory (Azure AD), прекратит функционирование 7 ноября 2018 г. До того времени приложения и службы, использующие службу контроля доступа, должны быть полностью перенесены в другой механизм проверки подлинности. В этой статье описываются рекомендации, которые помогут текущим клиентам спланировать отказ от использования службы контроля доступа. Если в настоящее время вы не используете службу контроля доступа, не предпринимайте никаких действий.
 
-## <a name="overview"></a>Обзор
+## <a name="overview"></a>Общие сведения
 
 Служба контроля доступа — это облачная служба проверки подлинности, которая предлагает простой способ проверки подлинности и авторизации пользователей для получения доступа к веб-приложениям и службам. Она позволяет реализовать множество функциональных возможностей проверки подлинности и авторизации в своем коде. Служба контроля доступа в основном используется разработчиками и архитекторами клиентов Microsoft .NET, веб-приложений ASP.NET и веб-служб Windows Communication Foundation (WCF).
 
@@ -135,7 +135,7 @@ https://<mynamespace>.accesscontrol.windows.net
 | Azure DataMarket | [Переход на API-интерфейсы Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) |
 | Службы BizTalk | [Переход на компонент Logic Apps службы приложений Azure](https://azure.microsoft.com/services/cognitive-services/) |
 | Службы мультимедиа Azure | [Azure Media Services announces support for Azure AD and deprecation of Access Control authentication](https://azure.microsoft.com/blog/azure-media-service-aad-auth-and-acs-deprecation/) (Команда разработчиков служб мультимедиа Azure анонсирует поддержку проверки подлинности AAD и объявление проверки подлинности ACS устаревшей) |
-| Azure Backup | [Вопросы об агенте службы Azure Backup](../../backup/backup-azure-file-folder-backup-faq.md) |
+| Azure Backup | [Вопросы об агенте службы Azure Backup](../../backup/backup-azure-file-folder-backup-faq.yml) |
 
 <!-- Dynamics CRM: Migrate to new SDK, Dynamics team handling privately -->
 <!-- Azure RemoteApp deprecated in favor of Citrix: https://www.zdnet.com/article/microsoft-to-drop-azure-remoteapp-in-favor-of-citrix-remoting-technologies/ -->
