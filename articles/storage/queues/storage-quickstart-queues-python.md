@@ -7,13 +7,15 @@ ms.date: 12/10/2019
 ms.topic: quickstart
 ms.service: storage
 ms.subservice: queues
-ms.custom: devx-track-python
-ms.openlocfilehash: 1881af372c1f4e1c5cbb4ea7be0ede4c96bbf4ee
-ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.custom:
+- devx-track-python
+- mode-api
+ms.openlocfilehash: 68f68c32b160757e82d59b1dd5ee4847a06ec698
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106276150"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107534351"
 ---
 # <a name="quickstart-azure-queue-storage-client-library-v12-for-python"></a>Краткое руководство. Клиентская библиотека Хранилища очередей Azure версии 12 для Python
 

@@ -7,12 +7,12 @@ manager: rkarlin
 ms.service: security-center
 ms.topic: overview
 ms.date: 03/23/2021
-ms.openlocfilehash: 1825f5be8a4f8a8ddfba931dfbc7e77186b4331f
-ms.sourcegitcommit: a67b972d655a5a2d5e909faa2ea0911912f6a828
+ms.openlocfilehash: aa65989953f761ff915383fcb59da7f36ea98dab
+ms.sourcegitcommit: 950e98d5b3e9984b884673e59e0d2c9aaeabb5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104889456"
+ms.lasthandoff: 04/18/2021
+ms.locfileid: "107600488"
 ---
 # <a name="azure-security-center-free-vs-azure-defender-enabled"></a>Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender
 Azure Defender предоставляется бесплатно в течение 30 дней с начала использования. Если по истечении 30 дней вы продолжаете использовать службу, мы автоматически начнем начислять плату за использование.
@@ -119,7 +119,7 @@ Azure Defender предоставляется бесплатно в течени
 
 ### <a name="what-data-types-are-included-in-the-500-mb-data-daily-allowance"></a>Какие типы данных включены в ежедневный лимит данных 500 MB?
 
-Выставление счетов в Центре безопасности связано с выставлением счетов за Log Analytics. Центр безопасности выделяет 500 Мб/день для следующего подмножества [типов данных безопасности](/azure/azure-monitor/reference/tables/tables-category.md#security):
+Выставление счетов в Центре безопасности связано с выставлением счетов за Log Analytics. Центр безопасности выделяет 500 Мб/день для следующего подмножества [типов данных безопасности](/azure/azure-monitor/reference/tables/tables-category#security):
 - WindowsEvent
 - SecurityAlert
 - SecurityBaseline

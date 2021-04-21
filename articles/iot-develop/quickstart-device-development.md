@@ -6,12 +6,12 @@ ms.author: timlt
 ms.service: iot-develop
 ms.topic: overview
 ms.date: 02/15/2021
-ms.openlocfilehash: bc8317e3402fa0185186c06ed1f89e062e99fd5e
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 536b9092a7bddd353b58874e7aa97291839bafcc
+ms.sourcegitcommit: 272351402a140422205ff50b59f80d3c6758f6f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "100654803"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107589539"
 ---
 # <a name="getting-started-with-azure-iot-embedded-device-development"></a>Руководство по началу разработки встраиваемого устройства Интернета вещей Azure
 
@@ -40,4 +40,4 @@ ms.locfileid: "100654803"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 После завершения работы с кратким руководством для конкретных устройств в этом руководстве ознакомьтесь со статьями и примерами, посвященными другим устройствам, в репозитории по началу работы с ОСРВ Azure:
-* [Начало работы с ОСРВ Azure и Интернетом вещей Azure](https://github.com/azure-rtos/getting-started)
+* [Начало работы с ОСРВ Azure и Интернетом вещей Azure](https://github.com/azure-rtos/getting-started#getting-started-with-azure-rtos-and-azure-iot)

@@ -3,12 +3,14 @@ title: Краткое руководство. Создание схемы на �
 description: В рамках этого краткого руководства вы используете службу Azure Blueprints, которая позволяет создавать, определять и развертывать артефакты с помощью портала Azure.
 ms.date: 01/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: 75a4e9deca4859ac8b9f302fcb62ecc1d12dd8c9
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom:
+- mode-portal
+ms.openlocfilehash: 94555b1b73fdac7368c9ac96fa682fb09afc83eb
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98918336"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107538968"
 ---
 # <a name="quickstart-define-and-assign-a-blueprint-in-the-portal"></a>Определение и назначение схемы на портале
 

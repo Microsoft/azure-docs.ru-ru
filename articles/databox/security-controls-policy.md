@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для Azure Data Box
 description: Содержит список элементов управления соответствием из службы "Политика Azure", доступных для Azure Data Box. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: sample
 author: alkohli
 ms.author: alkohli
 ms.service: databox
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: b337d1c99b32fddcca3dedaf33a78ebdc399ac6f
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 7ab48f4a65b615c691cac3f7846bf4fc74208ea4
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106094939"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107499927"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-data-box"></a>Элементы управления соответствием в службе "Политика Azure" для Azure Data Box
 

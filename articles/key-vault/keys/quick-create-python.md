@@ -8,12 +8,12 @@ ms.service: key-vault
 ms.subservice: keys
 ms.topic: quickstart
 ms.custom: devx-track-python
-ms.openlocfilehash: b1355acee5c115accb2515f797b402e66cd2ec0a
-ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.openlocfilehash: 2c15090551ad9d84282f65925ff9c2cfbab7e14f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107374732"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107773357"
 ---
 # <a name="quickstart-azure-key-vault-keys-client-library-for-python"></a>Краткое руководство. Использование клиентской библиотеки ключей Azure Key Vault для Python
 
@@ -179,7 +179,7 @@ rsa_key = client.create_rsa_key(keyName, size=2048)
 retrieved_key = client.get_key(keyName)
  ```
 
-Команда Azure CLI [az keyvault key show](/cli/azure/keyvault/key?#az-keyvault-key-show) позволяет также убедиться, что ключ задан успешно.
+Команда Azure CLI [az keyvault key show](/cli/azure/keyvault/key?#az_keyvault_key_show) позволяет также убедиться, что ключ задан успешно.
 
 ### <a name="delete-a-key"></a>Удаление ключа
 
@@ -192,7 +192,7 @@ deleted_key = poller.result()
 
 Метод `begin_delete_key` является асинхронным и возвращает объект модуля опроса. При вызове `result` модуля опроса метод ожидает его завершения.
 
-Команда Azure CLI [az keyvault key show](/cli/azure/keyvault/key?#az-keyvault-key-show) позволяет убедиться, что ключ удален.
+Команда Azure CLI [az keyvault key show](/cli/azure/keyvault/key?#az_keyvault_key_show) позволяет убедиться, что ключ удален.
 
 После удаления ключ остается в удаленном, но восстанавливаемом состоянии в течение некоторого времени. При повторном выполнении кода используйте другое имя ключа.
 
@@ -209,7 +209,7 @@ az group delete --resource-group KeyVault-PythonQS-rg
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Обзор хранилища ключей Azure](../general/overview.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)
 - [Обзор системы безопасности Key Vault](../general/security-overview.md)
 - [Проверка подлинности с помощью Key Vault](../general/authentication.md)

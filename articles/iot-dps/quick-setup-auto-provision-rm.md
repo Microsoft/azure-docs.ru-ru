@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.service: iot-dps
 services: iot-dps
 ms.custom: mvc, subject-armqs, devx-track-azurecli
-ms.openlocfilehash: 505859075ce58c5db6873544123710a11135651a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: bcb37c624f53d961020de022569a621ca1dfaba1
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102198631"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107789003"
 ---
 # <a name="quickstart-set-up-the-iot-hub-device-provisioning-service-dps-with-an-arm-template"></a>Краткое руководство. Настройка Службы подготовки устройств к добавлению в Центр Интернета вещей с помощью шаблона ARM
 
@@ -136,7 +136,7 @@ ms.locfileid: "102198631"
 
 ## <a name="review-deployed-resources"></a>Просмотр развернутых ресурсов
 
-1. Чтобы проверить развертывание, выполните следующую [команду получения списка ресурсов](/cli/azure/resource#az-resource-list), после чего найдите в выходных данных новую службу подготовки и центр Интернета вещей:
+1. Чтобы проверить развертывание, выполните следующую [команду получения списка ресурсов](/cli/azure/resource#az_resource_list), после чего найдите в выходных данных новую службу подготовки и центр Интернета вещей:
 
     ```azurecli
      az resource list -g "${projectName}rg"
@@ -171,4 +171,3 @@ az group delete --name "${projectName}rg"
 
 > [!div class="nextstepaction"]
 > [Краткое руководство по подготовке устройства](./quick-create-simulated-device-symm-key.md)
-

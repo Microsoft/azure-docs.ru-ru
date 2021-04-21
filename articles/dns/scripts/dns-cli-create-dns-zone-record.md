@@ -8,12 +8,12 @@ ms.topic: sample
 ms.date: 09/20/2019
 ms.author: rohink
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 348b7911930711a25c88595b6360341ef6e00468
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 5692c7a81d34ec9005c1c4675c71d63e697c5f47
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94954432"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107783707"
 ---
 # <a name="azure-cli-script-example-create-a-dns-zone-and-record"></a>Пример скрипта Azure CLI: создание зоны и записи DNS
 
@@ -41,11 +41,11 @@ az group delete -n myResourceGroup
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az network dns zone create](/cli/azure/network/dns/zone#az-network-dns-zone-create) | Создает зону Azure DNS. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az network dns zone create](/cli/azure/network/dns/zone#az_network_dns_zone_create) | Создает зону Azure DNS. |
 | [az network dns record-set a add-record](/cli/azure/network/dns/record-set) | Добавляет запись *A* в зону DNS. |
 | [az network dns record-set list](/cli/azure/network/dns/record-set) | Выводит список всех наборов записей *A* в зоне DNS. |
-| [az group delete](/cli/azure/vm/extension#az-vm-extension-set) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
+| [az group delete](/cli/azure/vm/extension#az_vm_extension_set) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

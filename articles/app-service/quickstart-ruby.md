@@ -5,13 +5,13 @@ keywords: azure app service, linux, oss, ruby, rails
 ms.assetid: 6d00c73c-13cb-446f-8926-923db4101afa
 ms.topic: quickstart
 ms.date: 07/11/2019
-ms.custom: mvc, cli-validate, seodec18
-ms.openlocfilehash: 45c87f690c24e989a797cbd82147b9125e447e79
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom: mvc, cli-validate, seodec18, devx-track-azurecli
+ms.openlocfilehash: dc64dfa277e97fe7487ce91a140e73b9ec44e086
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97561789"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107483543"
 ---
 # <a name="create-a-ruby-on-rails-app-in-app-service"></a>Создание приложения Ruby on Rails в Службе приложений
 

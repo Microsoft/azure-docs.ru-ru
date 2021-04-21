@@ -3,17 +3,18 @@ title: Краткое руководство. Создание рабочей о
 description: Узнайте, как создать рабочую область Synapse с помощью шаблона Azure Resource Manager (ARM).
 services: azure-resource-manager
 author: julieMSFT
-ms.service: azure-resource-manager
+ms.service: synapse-analytics
+ms.subservice: workspace
 ms.topic: quickstart
 ms.custom: subject-armqs
 ms.author: jrasnick
 ms.date: 08/07/2020
-ms.openlocfilehash: 2b05220081dde4db6f07f21fb9978d9e466235ca
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7317b7f51c6d0f9d72e3aad81794a569276d2145
+ms.sourcegitcommit: 590f14d35e831a2dbb803fc12ebbd3ed2046abff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92740377"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107566126"
 ---
 # <a name="quickstart-create-an-azure-synapse-workspace-using-an-arm-template"></a>Краткое руководство. Создание рабочей области Azure Synapse с помощью шаблона ARM
 

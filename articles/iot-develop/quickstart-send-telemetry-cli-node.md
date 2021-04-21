@@ -7,12 +7,12 @@ ms.service: iot-develop
 ms.devlang: node
 ms.topic: quickstart
 ms.date: 03/25/2021
-ms.openlocfilehash: 047700be674dfab997b5c87f7446c19fdea9e0eb
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 3d42ac814678136c2f6342cd1064e3c3ff394507
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105605966"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107777245"
 ---
 # <a name="quickstart-send-telemetry-from-a-device-to-an-iot-hub-nodejs"></a>Краткое руководство. Отправка данных телеметрии с устройства в центр Интернета вещей (Node.js)
 
@@ -128,12 +128,12 @@ event:
 > Удаление группы ресурсов — процесс необратимый. Группа ресурсов и все содержащиеся в ней ресурсы удаляются без возможности восстановления. Будьте внимательны, чтобы случайно не удалить не ту группу ресурсов или не те ресурсы. 
 
 Удаление группы ресурсов по имени:
-1. Выполните команду [az group delete](/cli/azure/group#az-group-delete). При этом будут удалены созданные группа ресурсов, центр Интернета вещей и регистрация устройства.
+1. Выполните команду [az group delete](/cli/azure/group#az_group_delete). При этом будут удалены созданные группа ресурсов, центр Интернета вещей и регистрация устройства.
 
     ```azurecli
     az group delete --name MyResourceGroup
     ```
-1. Выполните команду [az group list](/cli/azure/group#az-group-list), чтобы подтвердить удаление группы ресурсов.  
+1. Выполните команду [az group list](/cli/azure/group#az_group_list), чтобы подтвердить удаление группы ресурсов.  
 
     ```azurecli
     az group list

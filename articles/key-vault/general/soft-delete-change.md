@@ -2,19 +2,18 @@
 title: Включение обратимого удаления для всех объектов хранилищ ключей в Azure Key Vault | Документация Майкрософт
 description: Этот документ поможет при внедрении обратимого удаления для всех хранилищ ключей, а также при внесении изменений в приложения и систему администрирования для предотвращения ошибок конфликтов.
 services: key-vault
-author: ShaneBala-keyvault
-manager: ravijan
+author: msmbaldwin
 tags: azure-resource-manager
 ms.service: key-vault
 ms.topic: conceptual
-ms.date: 12/15/2020
-ms.author: sudbalas
-ms.openlocfilehash: b96f2ca4f925846bd252e5cfd35088d832f5c216
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 03/31/2021
+ms.author: mbaldwin
+ms.openlocfilehash: 7e1b2ee95864affa6e5e72e1f8354767dc95bdb1
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98572873"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107753332"
 ---
 # <a name="soft-delete-will-be-enabled-on-all-key-vaults"></a>Включение обратимого удаления во всех хранилищах ключей
 

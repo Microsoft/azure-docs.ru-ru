@@ -2,16 +2,19 @@
 title: Создание участника Блокчейна Azure с помощью шаблона Azure Resource Manager
 description: Узнайте, как создать участника Блокчейна Azure с помощью шаблона Azure Resource Manager.
 services: azure-resource-manager
-ms.service: azure-resource-manager
-ms.topic: quickstart
-ms.custom: subject-armqs, references_regions
 ms.date: 09/16/2020
-ms.openlocfilehash: e9893336f2e6633519853aceecc945ee6bf0bf4b
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.topic: quickstart
+ms.service: azure-resource-manager
+ms.custom:
+- subject-armqs
+- references_regions
+- mode-arm
+ms.openlocfilehash: c49e45ae84d58d62460d493887e2a4e78e40ba32
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91292767"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107536300"
 ---
 # <a name="quickstart-create-an-azure-blockchain-service-member-using-an-arm-template"></a>Краткое руководство. Создание участника в службе "Блокчейн Azure" с помощью шаблона ARM
 

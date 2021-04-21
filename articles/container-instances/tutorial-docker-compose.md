@@ -4,12 +4,12 @@ description: Использование Docker Compose для создания �
 ms.topic: tutorial
 ms.date: 10/28/2020
 ms.custom: ''
-ms.openlocfilehash: a71ff438feaef555a85c33d818c287c64621d40d
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: ef08b9f9e0f596f1d94c0e6edfd46f735fe78053
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92913846"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786926"
 ---
 # <a name="tutorial-deploy-a-multi-container-group-using-docker-compose"></a>Руководство по развертыванию многоконтейнерной группы с помощью Docker Compose 
 
@@ -166,7 +166,7 @@ docker-compose push
 
 Отправка в реестр может занять несколько минут.
 
-Чтобы убедиться, что образ хранится в реестре, выполните команду [az acr repository show](/cli/azure/acr/repository#az-acr-repository-show):
+Чтобы убедиться, что образ хранится в реестре, выполните команду [az acr repository show](/cli/azure/acr/repository#az_acr_repository_show):
 
 ```azurecli
 az acr repository show --name <acrName> --repository azure-vote-front

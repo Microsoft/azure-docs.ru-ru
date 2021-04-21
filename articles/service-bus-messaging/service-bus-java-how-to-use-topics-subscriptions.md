@@ -1,15 +1,17 @@
 ---
 title: Использование разделов и подписок Служебной шины Azure с Java (Azure-Messaging-servicebus)
 description: В этом кратком руководстве описано, как написать код Java с помощью пакета azure-messaging-servicebus для отправки сообщений в раздел Служебной шины Azure и их последующего получения из подписок в этот раздел.
-ms.devlang: Java
-ms.topic: quickstart
 ms.date: 02/13/2021
-ms.openlocfilehash: c5b930fb2c87a09a1f4801365936c62a7cf79f1d
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.topic: quickstart
+ms.devlang: Java
+ms.custom:
+- mode-api
+ms.openlocfilehash: 6fe0a3a91ebbd5b6daced95494b8eaa5b7db0c46
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "100516181"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107536388"
 ---
 # <a name="send-messages-to-an-azure-service-bus-topic-and-receive-messages-from-subscriptions-to-the-topic-java"></a>Отправка сообщений в раздел Служебной шины Azure и получение сообщений из подписок в раздел (Java)
 В этом кратком руководстве описано, как написать код Java с помощью пакета azure-messaging-servicebus для отправки сообщений в раздел Служебной шины Azure и их последующего получения из подписок в этот раздел.

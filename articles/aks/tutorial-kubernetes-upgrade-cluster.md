@@ -5,12 +5,12 @@ services: container-service
 ms.topic: tutorial
 ms.date: 01/12/2021
 ms.custom: mvc
-ms.openlocfilehash: baf82ee1393214f96f11de8f6d838c41222fa359
-ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.openlocfilehash: 68aedbe90d5f08a4b6b67d134c0460caa11c542b
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107377197"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786375"
 ---
 # <a name="tutorial-upgrade-kubernetes-in-azure-kubernetes-service-aks"></a>Руководство по Обновление Kubernetes в Службе Azure Kubernetes (AKS)
 
@@ -151,10 +151,10 @@ az group delete --name myResourceGroup --yes --no-wait
 <!-- LINKS - internal -->
 [aks-intro]: ./intro-kubernetes.md
 [aks-tutorial-prepare-app]: ./tutorial-kubernetes-prepare-app.md
-[az aks show]: /cli/azure/aks#az-aks-show
-[az aks get-upgrades]: /cli/azure/aks#az-aks-get-upgrades
-[az aks upgrade]: /cli/azure/aks#az-aks-upgrade
+[az aks show]: /cli/azure/aks#az_aks_show
+[az aks get-upgrades]: /cli/azure/aks#az_aks_get_upgrades
+[az aks upgrade]: /cli/azure/aks#az_aks_upgrade
 [azure-cli-install]: /cli/azure/install-azure-cli
-[az-group-delete]: /cli/azure/group#az-group-delete
+[az-group-delete]: /cli/azure/group#az_group_delete
 [sp-delete]: kubernetes-service-principal.md#additional-considerations
 [aks-solution-guidance]: /azure/architecture/reference-architectures/containers/aks-start-here?WT.mc_id=AKSDOCSPAGE

@@ -4,12 +4,12 @@ description: Этот скрипт создает учетную запись п
 ms.topic: sample
 ms.date: 01/29/2018
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: c9b8ba2ef782dcdc99cb18698175b8b53a53f0dd
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 9bd7b7ac3dbb52ebafa00499e64ec3cff0969a13
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "93076781"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768365"
 ---
 # <a name="cli-example-create-a-batch-account-in-user-subscription-mode"></a>Пример использования CLI: создание учетной записи пакетной службы в режиме подписки пользователя
 
@@ -38,12 +38,12 @@ az group delete --name myResourceGroup
 | Get-Help | Примечания |
 |---|---|
 | [az role assignment create](/cli/azure/role); | Создайте новое назначение роли для пользователя, группы или субъекта-службы. |
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az keyvault create](/cli/azure/keyvault#az-keyvault-create) | Создает хранилище ключей. |
-| [az keyvault set-policy](/cli/azure/keyvault#az-keyvault-set-policy) | Обновляет политику безопасности указанного хранилища ключей. |
-| [az batch account create](/cli/azure/batch/account#az-batch-account-create) | Создает учетную запись пакетной службы.  |
-| [az batch account login](/cli/azure/batch/account#az-batch-account-login) | Выполняет проверку подлинности с помощью указанной учетной записи пакетной службы для дальнейшего взаимодействия с интерфейсом командной строки.  |
-| [az group delete](/cli/azure/group#az-group-delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az keyvault create](/cli/azure/keyvault#az_keyvault_create) | Создает хранилище ключей. |
+| [az keyvault set-policy](/cli/azure/keyvault#az_keyvault_set_policy) | Обновляет политику безопасности указанного хранилища ключей. |
+| [az batch account create](/cli/azure/batch/account#az_batch_account_create) | Создает учетную запись пакетной службы.  |
+| [az batch account login](/cli/azure/batch/account#az_batch_account_login) | Выполняет проверку подлинности с помощью указанной учетной записи пакетной службы для дальнейшего взаимодействия с интерфейсом командной строки.  |
+| [az group delete](/cli/azure/group#az_group_delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

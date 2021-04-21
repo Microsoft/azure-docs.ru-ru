@@ -5,12 +5,12 @@ ms.author: askaur
 ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 773bca81694534346019e30e9d55190af6f51e74
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 49f9bac40ae803f980a22c19fd5d44d85fa99e9e
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105106805"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564650"
 ---
 ## <a name="joining-the-meeting-chat"></a>Присоединение к чату собрания 
 
@@ -286,7 +286,7 @@ sendMessageButton.addEventListener("click", async () =>
 
 ## <a name="get-a-teams-meeting-chat-thread-for-a-communication-services-user"></a>Получение данных о беседе в чате для пользователя Служб коммуникации
 
-Ссылку на собрание и чат в Teams можно получить с помощью API-интерфейсов Graph. Подробности см. в [документации по Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta). Пакет SDK вызовов Служб коммуникации принимает полную ссылку на собрание Teams. Эта ссылка возвращается как часть `onlineMeeting` ресурса, доступного в [свойстве `joinWebUrl`](/graph/api/resources/onlinemeeting?view=graph-rest-beta). С помощью [API-интерфейсов Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta) можно также получить `threadId`. В ответе будет указан объект `chatInfo`, содержащий `threadID`. 
+Ссылку на собрание и чат в Teams можно получить с помощью API-интерфейсов Graph. Подробности см. в [документации по Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta&preserve-view=true). Пакет SDK вызовов Служб коммуникации принимает полную ссылку на собрание Teams. Эта ссылка возвращается как часть `onlineMeeting` ресурса, доступного в [свойстве `joinWebUrl`](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). С помощью [API-интерфейсов Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta&preserve-view=true) можно также получить `threadId`. В ответе будет указан объект `chatInfo`, содержащий `threadID`. 
 
 Вы также можете получить необходимую информацию о собрании и идентификатор потока по URL-адресу **Присоединиться к собранию** в самом приглашении на собрание в Teams.
 Ссылка на собрание в Teams выглядит следующим образом: `https://teams.microsoft.com/l/meetup-join/meeting_chat_thread_id/1606337455313?context=some_context_here`. `threadId` — это расположение `meeting_chat_thread_id` в ссылке. Перед использованием убедитесь, что объект `meeting_chat_thread_id` не экранирован. Он должен иметь следующий формат: `19:meeting_ZWRhZDY4ZGUtYmRlNS00OWZaLTlkZTgtZWRiYjIxOWI2NTQ4@thread.v2`.

@@ -9,12 +9,12 @@ ms.date: 08/20/2020
 ms.author: cynthn
 ms.custom: mvc, devx-track-azurecli
 ms.subservice: disks
-ms.openlocfilehash: bbecaa32f85c42954cea6c8e533f0f658eb2dfee
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 56e804bc0d479f09ef2900c42361fbd24eed1d98
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104802290"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765959"
 ---
 # <a name="tutorial---manage-azure-disks-with-the-azure-cli"></a>Руководство по управлению дисками Azure с помощью Azure CLI.
 
@@ -70,13 +70,13 @@ Azure Cloud Shell — это бесплатная интерактивная о
 
 ### <a name="attach-disk-at-vm-creation"></a>Подключение диска при создании виртуальной машины
 
-Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create).
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create).
 
 ```azurecli-interactive
 az group create --name myResourceGroupDisk --location eastus
 ```
 
-Создайте виртуальную машину с помощью команды [az vm create](/cli/azure/vm#az-vm-create). В следующем примере создаются виртуальная машина с именем *myVM*, добавляется учетная запись пользователя с именем *azureuser* и создаются ключи SSH, если они еще не существуют. Аргумент `--datadisk-sizes-gb` указывает, что должен быть создан дополнительный диск, подключаемый к виртуальной машине. Чтобы создать и подключить несколько дисков, используйте список значений размеров дисков, разделенный пробелами. В следующем примере создается виртуальная машина с двумя дисками емкостью по 128 ГБ. Так как размеры дисков составляют 128 ГБ, они настроены как диски типа P10, которые обеспечивают до 500 операций ввода-вывода на диск.
+Создайте виртуальную машину с помощью команды [az vm create](/cli/azure/vm#az_vm_create). В следующем примере создаются виртуальная машина с именем *myVM*, добавляется учетная запись пользователя с именем *azureuser* и создаются ключи SSH, если они еще не существуют. Аргумент `--datadisk-sizes-gb` указывает, что должен быть создан дополнительный диск, подключаемый к виртуальной машине. Чтобы создать и подключить несколько дисков, используйте список значений размеров дисков, разделенный пробелами. В следующем примере создается виртуальная машина с двумя дисками емкостью по 128 ГБ. Так как размеры дисков составляют 128 ГБ, они настроены как диски типа P10, которые обеспечивают до 500 операций ввода-вывода на диск.
 
 ```azurecli-interactive
 az vm create \
@@ -91,7 +91,7 @@ az vm create \
 
 ### <a name="attach-disk-to-existing-vm"></a>Подключение диска к существующей виртуальной машине
 
-Чтобы создать диск и подключить его к существующей виртуальной машине, выполните команду [az vm disk attach](/cli/azure/vm/disk#az-vm-disk-attach). Приведенный ниже пример создает диск уровня "Премиум" размера в 128 ГБ и подключает его к виртуальной машине, созданной на предыдущем шаге.
+Чтобы создать диск и подключить его к существующей виртуальной машине, выполните команду [az vm disk attach](/cli/azure/vm/disk#az_vm_disk_attach). Приведенный ниже пример создает диск уровня "Премиум" размера в 128 ГБ и подключает его к виртуальной машине, созданной на предыдущем шаге.
 
 ```azurecli-interactive
 az vm disk attach \
@@ -190,7 +190,7 @@ exit
 
 ### <a name="create-snapshot"></a>Create snapshot
 
-Перед созданием моментального снимка потребуется идентификатор или имя диска. Используйте команду [az vm show](/cli/azure/vm#az-vm-show), чтобы получить идентификатор диска. В этом примере идентификатор диска сохраняется в переменной и может использоваться в дальнейшем.
+Перед созданием моментального снимка потребуется идентификатор или имя диска. Используйте команду [az vm show](/cli/azure/vm#az_vm_show), чтобы получить идентификатор диска. В этом примере идентификатор диска сохраняется в переменной и может использоваться в дальнейшем.
 
 ```azurecli-interactive
 osdiskid=$(az vm show \
@@ -200,7 +200,7 @@ osdiskid=$(az vm show \
    -o tsv)
 ```
 
-Получив идентификатор, создайте моментальный снимок диска с помощью команды [az snapshot create](/cli/azure/snapshot#az-snapshot-create).
+Получив идентификатор, создайте моментальный снимок диска с помощью команды [az snapshot create](/cli/azure/snapshot#az_snapshot_create).
 
 ```azurecli-interactive
 az snapshot create \
@@ -211,7 +211,7 @@ az snapshot create \
 
 ### <a name="create-disk-from-snapshot"></a>Создание диска на основе моментального снимка
 
-Этот моментальный снимок можно преобразовать в диск (используя команду [az disk create](/cli/azure/disk#az-disk-create)), с помощью которого можно повторно создать виртуальную машину.
+Этот моментальный снимок можно преобразовать в диск (используя команду [az disk create](/cli/azure/disk#az_disk_create)), с помощью которого можно повторно создать виртуальную машину.
 
 ```azurecli-interactive
 az disk create \
@@ -222,7 +222,7 @@ az disk create \
 
 ### <a name="restore-virtual-machine-from-snapshot"></a>Восстановление виртуальной машины на основе моментального снимка
 
-Чтобы продемонстрировать восстановление виртуальной машины, удалите имеющуюся виртуальную машину с помощью команды [az vm delete](/cli/azure/vm#az-vm-delete).
+Чтобы продемонстрировать восстановление виртуальной машины, удалите имеющуюся виртуальную машину с помощью команды [az vm delete](/cli/azure/vm#az_vm_delete).
 
 ```azurecli-interactive
 az vm delete \
@@ -244,7 +244,7 @@ az vm create \
 
 Все диски данных нужно повторно подключить к виртуальной машине.
 
-Найдите имя диска данных, выполнив команду [az disk list](/cli/azure/disk#az-disk-list). В этом примере имя диска помещается в переменную `datadisk`, которая будет использоваться в следующем шаге.
+Найдите имя диска данных, выполнив команду [az disk list](/cli/azure/disk#az_disk_list). В этом примере имя диска помещается в переменную `datadisk`, которая будет использоваться в следующем шаге.
 
 ```azurecli-interactive
 datadisk=$(az disk list \
@@ -253,7 +253,7 @@ datadisk=$(az disk list \
    -o tsv)
 ```
 
-Подключите диск, выполнив команду [az vm disk attach](/cli/azure/vm/disk#az-vm-disk-attach).
+Подключите диск, выполнив команду [az vm disk attach](/cli/azure/vm/disk#az_vm_disk_attach).
 
 ```azurecli-interactive
 az vm disk attach \

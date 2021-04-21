@@ -6,12 +6,12 @@ ms.topic: tutorial
 ms.date: 06/20/2020
 ms.custom: devx-track-csharp, mvc, cli-validate, seodec18, devx-track-azurecli
 zone_pivot_groups: app-service-platform-windows-linux
-ms.openlocfilehash: bafebcc54e4cbde87e8deb776eff227fc99035cc
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 52a5b127312ef979791d17b27ca67b21a779e310
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98623860"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765769"
 ---
 # <a name="tutorial-build-an-aspnet-core-and-azure-sql-database-app-in-azure-app-service"></a>Руководство по созданию приложения ASP.NET Core с подключением к Базе данных SQL Azure в Службе приложений Azure
 
@@ -95,7 +95,7 @@ dotnet run
 
 ### <a name="create-a-sql-database-logical-server"></a>Создание логического сервера базы данных SQL
 
-В Cloud Shell создайте логический сервер базы данных SQL с помощью команды [`az sql server create`](/cli/azure/sql/server#az-sql-server-create).
+В Cloud Shell создайте логический сервер базы данных SQL с помощью команды [`az sql server create`](/cli/azure/sql/server#az_sql_server_create).
 
 Замените заполнитель *\<server-name>* *уникальным* именем в Базе данных SQL. Это имя используется как часть глобально уникальной конечной точки Базы данных SQL: `<server-name>.database.windows.net`. Допустимые символы: `a`-`z`, `0`-`9`, `-`. Также введите вместо *\<db-username>* и *\<db-password>* имя пользователя и пароль по своему усмотрению. 
 
@@ -126,7 +126,7 @@ az sql server create --name <server-name> --resource-group myResourceGroup --loc
 
 ### <a name="configure-a-server-firewall-rule"></a>Настройка правил брандмауэра сервера
 
-Создайте [правило брандмауэра уровня сервера Базы данных SQL Azure](../azure-sql/database/firewall-configure.md) с помощью команды [`az sql server firewall create`](/cli/azure/sql/server/firewall-rule#az-sql-server-firewall-rule-create). Если для начального и конечного IP-адресов задано значение 0.0.0.0, брандмауэр открыт только для других ресурсов Azure. 
+Создайте [правило брандмауэра уровня сервера Базы данных SQL Azure](../azure-sql/database/firewall-configure.md) с помощью команды [`az sql server firewall create`](/cli/azure/sql/server/firewall-rule#az_sql_server_firewall_rule_create). Если для начального и конечного IP-адресов задано значение 0.0.0.0, брандмауэр открыт только для других ресурсов Azure. 
 
 ```azurecli-interactive
 az sql server firewall-rule create --resource-group myResourceGroup --server <server-name> --name AllowAzureIps --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
@@ -144,7 +144,7 @@ az sql server firewall-rule create --name AllowLocalClient --server <server-name
 
 ### <a name="create-a-database"></a>Создание базы данных
 
-Создайте на сервере базу данных с [уровнем производительности S0](../azure-sql/database/service-tiers-dtu.md) с помощью команды [`az sql db create`](/cli/azure/sql/db#az-sql-db-create).
+Создайте на сервере базу данных с [уровнем производительности S0](../azure-sql/database/service-tiers-dtu.md) с помощью команды [`az sql db create`](/cli/azure/sql/db#az_sql_db_create).
 
 ```azurecli-interactive
 az sql db create --resource-group myResourceGroup --server <server-name> --name coreDB --service-objective S0
@@ -152,7 +152,7 @@ az sql db create --resource-group myResourceGroup --server <server-name> --name 
 
 ### <a name="create-connection-string"></a>Создание строки подключения
 
-Получите строку подключения с помощью команды [`az sql db show-connection-string`](/cli/azure/sql/db#az-sql-db-show-connection-string).
+Получите строку подключения с помощью команды [`az sql db show-connection-string`](/cli/azure/sql/db#az_sql_db_show_connection_string).
 
 ```azurecli-interactive
 az sql db show-connection-string --client ado.net --server <server-name> --name coreDB
@@ -263,7 +263,7 @@ git commit -m "connect to SQLDB in Azure"
 
 ### <a name="configure-connection-string"></a>Настройка строки подключения
 
-Чтобы задать строки подключения для приложения Azure, используйте команду [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set) в Cloud Shell. Замените *\<app-name>* в этой команде соответствующим значением, а параметр *\<connection-string>*  — строкой подключения, созданной ранее.
+Чтобы задать строки подключения для приложения Azure, используйте команду [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set) в Cloud Shell. Замените *\<app-name>* в этой команде соответствующим значением, а параметр *\<connection-string>*  — строкой подключения, созданной ранее.
 
 ```azurecli-interactive
 az webapp config connection-string set --resource-group myResourceGroup --name <app-name> --settings MyDbConnection="<connection-string>" --connection-string-type SQLAzure
@@ -464,7 +464,7 @@ git push azure main
 - в файле *DotNetCoreSqlDb.csproj* содержится ссылка на `Microsoft.Extensions.Logging.AzureAppServices`.
 - Вызовы `loggerFactory.AddAzureWebAppDiagnostics()` в *Program.cs*.
 
-Чтобы в Службе приложений для [уровня ведения журнала](/aspnet/core/fundamentals/logging#log-level) ASP.NET Core задать значение `Information` вместо значения по умолчанию `Error`, используйте команду [`az webapp log config`](/cli/azure/webapp/log#az-webapp-log-config) в Cloud Shell.
+Чтобы в Службе приложений для [уровня ведения журнала](/aspnet/core/fundamentals/logging#log-level) ASP.NET Core задать значение `Information` вместо значения по умолчанию `Error`, используйте команду [`az webapp log config`](/cli/azure/webapp/log#az_webapp_log_config) в Cloud Shell.
 
 ```azurecli-interactive
 az webapp log config --name <app-name> --resource-group myResourceGroup --application-logging filesystem --level information
@@ -473,7 +473,7 @@ az webapp log config --name <app-name> --resource-group myResourceGroup --applic
 > [!NOTE]
 > Для уровня ведения журнала проекта уже задано значение `Information` в файле *appsettings.json*.
 
-Чтобы настроить потоки для журналов, выполните команду [`az webapp log tail`](/cli/azure/webapp/log#az-webapp-log-tail) в Cloud Shell.
+Чтобы настроить потоки для журналов, выполните команду [`az webapp log tail`](/cli/azure/webapp/log#az_webapp_log_tail) в Cloud Shell.
 
 ```azurecli-interactive
 az webapp log tail --name <app-name> --resource-group myResourceGroup

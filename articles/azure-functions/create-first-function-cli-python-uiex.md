@@ -7,12 +7,12 @@ ms.custom:
 - devx-track-python
 - devx-track-azurecli
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: da7f6fdaedd8105363cc62bf55bae2cb5f72f234
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 626cff867a336880689373c289087e2332a816ee
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102031656"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787455"
 ---
 # <a name="quickstart-create-a-python-function-in-azure-from-the-command-line"></a>Краткое руководство. Создание функции Python в Azure из командной строки
 
@@ -239,7 +239,7 @@ py -m venv .venv
     az login
     ```
 
-    Чтобы войти в учетную запись Azure, выполните команду [az login](/cli/azure/reference-index#az-login).
+    Чтобы войти в учетную запись Azure, выполните команду [az login](/cli/azure/reference-index#az_login).
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell) 
     ```azurepowershell
@@ -258,7 +258,7 @@ py -m venv .venv
     az group create --name AzureFunctionsQuickstart-rg --location westeurope
     ```
  
-    Чтобы создать группу ресурсов, выполните команду [az group create](/cli/azure/group#az-group-create). Группу ресурсов и ресурсы целесообразно создавать в <abbr title="Географическая ссылка на конкретный центр обработки данных Azure, в котором распределены ресурсы.">region</abbr> , расположенном неподалеку, с помощью доступного региона, возвращенного из команды `az account list-locations`.
+    Чтобы создать группу ресурсов, выполните команду [az group create](/cli/azure/group#az_group_create). Группу ресурсов и ресурсы целесообразно создавать в <abbr title="Географическая ссылка на конкретный центр обработки данных Azure, в котором распределены ресурсы.">region</abbr> , расположенном неподалеку, с помощью доступного региона, возвращенного из команды `az account list-locations`.
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell)
 
@@ -280,7 +280,7 @@ py -m venv .venv
     az storage account create --name <STORAGE_NAME> --location westeurope --resource-group AzureFunctionsQuickstart-rg --sku Standard_LRS
     ```
 
-    Создайте учетную запись хранения с помощью команды [az storage account create](/cli/azure/storage/account#az-storage-account-create). 
+    Создайте учетную запись хранения с помощью команды [az storage account create](/cli/azure/storage/account#az_storage_account_create). 
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell)
 

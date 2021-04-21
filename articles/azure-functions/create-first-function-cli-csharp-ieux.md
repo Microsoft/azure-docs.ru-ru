@@ -7,12 +7,12 @@ ms.custom:
 - devx-track-csharp
 - devx-track-azurecli
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: a78abea5bcc5925cb2e137d918c7217ae92b118e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 2d03f8c820e0a8b6a19394649db66f8028b62781
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102044329"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768801"
 ---
 # <a name="quickstart-create-a-c-function-in-azure-from-the-command-line"></a>Краткое руководство. Создание функции C# в Azure из командной строки
 
@@ -183,7 +183,7 @@ ms.locfileid: "102044329"
     az group create --name AzureFunctionsQuickstart-rg --location westeurope
     ```
 
-    Чтобы создать группу ресурсов, выполните команду [az group create](/cli/azure/group#az-group-create). Группу ресурсов и ресурсы целесообразно создавать в <abbr title="Географическая ссылка на конкретный центр обработки данных Azure, в котором распределены ресурсы.">region</abbr> , расположенном неподалеку, с помощью доступного региона, возвращенного из команды `az account list-locations`.
+    Чтобы создать группу ресурсов, выполните команду [az group create](/cli/azure/group#az_group_create). Группу ресурсов и ресурсы целесообразно создавать в <abbr title="Географическая ссылка на конкретный центр обработки данных Azure, в котором распределены ресурсы.">region</abbr> , расположенном неподалеку, с помощью доступного региона, возвращенного из команды `az account list-locations`.
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell)
 
