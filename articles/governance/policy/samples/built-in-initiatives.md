@@ -1,15 +1,15 @@
 ---
 title: Список инициатив встроенных политик
 description: 'Список инициатив встроенных политик для Политики Azure в следующих категориях: "Соответствие нормативным требованиям", "Гостевая конфигурация" и другие.'
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: sample
 ms.custom: generated
-ms.openlocfilehash: ef643e551c2ddab715d67467620fb748fb836eee
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: c43886f19d2128b7e1168810a0ac20577ccded15
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106090121"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107504886"
 ---
 # <a name="azure-policy-built-in-initiative-definitions"></a>Определения встроенных инициатив в Политике Azure
 

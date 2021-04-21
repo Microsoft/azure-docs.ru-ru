@@ -10,13 +10,13 @@ ms.workload: identity
 ms.date: 11/30/2020
 ms.author: ryanwi
 ms.reviewer: stsoneff
-ms.custom: azureday1
-ms.openlocfilehash: 72b1d4fe864c23c0ac065e47d96ab0c78866defa
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom: azureday1, devx-track-azurecli
+ms.openlocfilehash: 7d84b3f8e654940a8f2c36075b92d630505e88b9
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96435847"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107482344"
 ---
 # <a name="tutorial-access-azure-storage-from-a-web-app"></a>Руководство по доступу к службе хранилища Azure из веб-приложения
 

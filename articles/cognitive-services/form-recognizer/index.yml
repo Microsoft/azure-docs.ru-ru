@@ -11,12 +11,12 @@ metadata:
   author: laujan
   ms.author: lajanuar
   ms.date: 09/05/2019
-  ms.openlocfilehash: 955de3dc1510d86ac0f1d3aa80dc4fb208d914f7
-  ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+  ms.openlocfilehash: d3dd7c5a9befd00c51f6ec40fdc1ee304ea55db3
+  ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "103467159"
+  ms.lasthandoff: 04/20/2021
+  ms.locfileid: "107784305"
 landingContent:
 - title: Сведения о Распознавателе документов
   linkLists:
@@ -151,7 +151,7 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices/#cognitive_services
     - text: Интерфейс командной строки Azure (CLI)
-      url: /cli/azure/cognitiveservices#az-cognitiveservices-list
+      url: /cli/azure/cognitiveservices#az_cognitiveservices_list
 - title: Справка и обратная связь
   linkLists:
   - linkListType: reference

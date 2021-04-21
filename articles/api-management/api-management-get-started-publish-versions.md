@@ -3,16 +3,16 @@ title: Учебник. Публикация версий API с помощью 
 description: Следуйте инструкциям этого учебника, чтобы узнать, как опубликовать несколько версий API в службе "Управление API Azure".
 author: vladvino
 ms.service: api-management
-ms.custom: mvc
+ms.custom: mvc, devx-track-azurecli
 ms.topic: tutorial
 ms.date: 02/10/2021
 ms.author: apimpm
-ms.openlocfilehash: dc3d3b4658bd9a26363b6d41377d448059e30c0f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 5930979258372e4269c4d453ffbc5e0d46258088
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104889677"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107483619"
 ---
 # <a name="tutorial-publish-multiple-versions-of-your-api"></a>Руководство по Публикация нескольких версий API 
 

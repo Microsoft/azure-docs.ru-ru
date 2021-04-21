@@ -8,12 +8,12 @@ ms.subservice: pod
 ms.topic: tutorial
 ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: aa3614aa3c4fbaec3611806406e5129379999bc3
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: eae8cca0302993c16ea29adddf6e4ee9b5b24be8
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106067147"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107770904"
 ---
 # <a name="tutorial-order-azure-data-box"></a>Руководство по Заказ Azure Data Box
 
@@ -59,7 +59,7 @@ Azure Data Box — это гибридное решение, которое по
 
 **Вход в Azure**
 
-Откройте командное окно Windows PowerShell и войдите в Azure с помощью команды [az login](/cli/azure/reference-index#az-login):
+Откройте командное окно Windows PowerShell и войдите в Azure с помощью команды [az login](/cli/azure/reference-index#az_login):
 
 ```azurecli
 PS C:\Windows> az login

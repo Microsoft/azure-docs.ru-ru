@@ -4,17 +4,19 @@ titleSuffix: Azure DNS
 description: Узнайте, как создать зону и запись DNS в службе DNS Azure. В этом пошаговом руководстве описано, как создать зону и запись DNS, а также как управлять ими с помощью Azure PowerShell.
 services: dns
 author: rohinkoul
-ms.service: dns
-ms.topic: quickstart
-ms.date: 10/20/2020
 ms.author: rohink
-ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: f2563c33d02490732f73fcf9d1a78f548ec2d3e2
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 10/20/2020
+ms.topic: quickstart
+ms.service: dns
+ms.custom:
+- devx-track-azurepowershell
+- mode-api
+ms.openlocfilehash: 9c457b435ca17ce9dc86e1a83a4d1a56d9623b17
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92282214"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107537879"
 ---
 # <a name="quickstart-create-an-azure-dns-zone-and-record-using-azure-powershell"></a>Краткое руководство. Создание зоны и записи Azure DNS с помощью Azure PowerShell
 
@@ -111,4 +113,3 @@ Remove-AzResourceGroup -Name MyResourceGroup
 
 > [!div class="nextstepaction"]
 > [Создание записей DNS для веб-приложения в пользовательском домене](./dns-web-sites-custom-domain.md)
-

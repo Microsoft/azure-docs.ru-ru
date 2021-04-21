@@ -2,17 +2,19 @@
 title: Использование предварительной версии пакета azure/service-bus для разделов и подписок
 description: Узнайте, как написать программу JavaScript, которая использует последнюю предварительную версию пакета @azure/service-bus для отправки сообщений в раздел служебной шины и получения сообщений из подписки в разделе.
 author: spelluru
-ms.devlang: nodejs
-ms.topic: quickstart
-ms.date: 11/09/2020
 ms.author: spelluru
-ms.custom: devx-track-js
-ms.openlocfilehash: a1afe4207ce3833f3bcb55bc7bc2e8e27f393f63
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 11/09/2020
+ms.topic: quickstart
+ms.devlang: nodejs
+ms.custom:
+- devx-track-js
+- mode-api
+ms.openlocfilehash: 59f1bb29099f2b921e687ca9de46365bc34f1b91
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98180002"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107537245"
 ---
 # <a name="quickstart-service-bus-topics-and-subscriptions-with-nodejs-and-the-preview-azureservice-bus-package"></a>Краткое руководство. Использование для разделов и подписок служебной шины Node.js и предварительной версией пакета azure/service-bus
 Из этого учебника вы узнаете, как использовать пакет [@azure/service-bus](https://www.npmjs.com/package/@azure/service-bus) в программе JavaScript для отправки сообщений в раздел служебной шины и получения сообщений из подписки служебной шины в этом разделе.

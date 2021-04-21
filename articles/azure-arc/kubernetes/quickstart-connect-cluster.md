@@ -6,14 +6,14 @@ ms.author: magoedte
 ms.service: azure-arc
 ms.topic: quickstart
 ms.date: 03/03/2021
-ms.custom: template-quickstart, references_regions
+ms.custom: template-quickstart, references_regions, devx-track-azurecli
 keywords: Kubernetes, Arc, Azure, кластер
-ms.openlocfilehash: b4cbd45f8478674c7c6bacc50f068bc0ec691a14
-ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
+ms.openlocfilehash: 21ec5000ed7ef9df1805fa6ec43e20efc0f82182
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106449925"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107481265"
 ---
 # <a name="quickstart-connect-an-existing-kubernetes-cluster-to-azure-arc"></a>Краткое руководство. Подключение существующего кластера Kubernetes к Azure Arc 
 

@@ -16,12 +16,12 @@ ms.workload: infrastructure
 ms.date: 09/27/2019
 ms.author: magoedte
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 979cac8fd3d2c09443d52c9142a5e7c44127713a
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 16e8cfd9c6b20e3a8d17ba335079b1b6fe8b499f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102552537"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107785043"
 ---
 # <a name="tutorial-monitor-changes-and-update-a-linux-virtual-machine-in-azure"></a>Руководство по Мониторинг изменений и обновление виртуальных машин Linux в Azure
 
@@ -39,13 +39,13 @@ ms.locfileid: "102552537"
 
 ## <a name="create-vm"></a>Создание виртуальной машины
 
-Чтобы увидеть данные диагностики и метрики в действии, необходима виртуальная машина. Сначала создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create). В следующем примере создается группа ресурсов с именем *myResourceGroupMonitor* в расположении *eastus*.
+Чтобы увидеть данные диагностики и метрики в действии, необходима виртуальная машина. Сначала создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create). В следующем примере создается группа ресурсов с именем *myResourceGroupMonitor* в расположении *eastus*.
 
 ```azurecli-interactive
 az group create --name myResourceGroupMonitor --location eastus
 ```
 
-Теперь создайте виртуальную машину командой [az vm create](/cli/azure/vm#az-vm-create). В следующем примере создаются виртуальная машина с именем *myVM* и ключи SSH, если они не существуют в каталоге *~/.ssh/* .
+Теперь создайте виртуальную машину командой [az vm create](/cli/azure/vm#az_vm_create). В следующем примере создаются виртуальная машина с именем *myVM* и ключи SSH, если они не существуют в каталоге *~/.ssh/* .
 
 ```azurecli-interactive
 az vm create \

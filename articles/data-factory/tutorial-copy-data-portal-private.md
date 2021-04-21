@@ -5,14 +5,14 @@ author: linda33wj
 ms.service: data-factory
 ms.topic: tutorial
 ms.custom: seo-lt-2019
-ms.date: 02/18/2021
+ms.date: 04/14/2021
 ms.author: jingwang
-ms.openlocfilehash: a3cc3686d4b256fc7b8702f34cdf393dc1b0e25f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 191ad61990e10fdb718eebf1a8f57d8edaadcf35
+ms.sourcegitcommit: db925ea0af071d2c81b7f0ae89464214f8167505
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101740398"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107515463"
 ---
 # <a name="copy-data-securely-from-azure-blob-storage-to-a-sql-database-by-using-private-endpoints"></a>Безопасное копирование данных из Хранилища BLOB-объектов Azure в Базу данных SQL с помощью частных конечных точек
 

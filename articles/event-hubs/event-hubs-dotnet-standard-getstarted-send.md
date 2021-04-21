@@ -4,12 +4,12 @@ description: В этой статье объясняется, как созда�
 ms.topic: quickstart
 ms.date: 09/25/2020
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 36551a52bc095a37aa5176ab945dd5d27c640954
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 58da331336481614cf0f85bdf6c1136c8bdc8db7
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97504616"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107536496"
 ---
 # <a name="send-events-to-and-receive-events-from-azure-event-hubs---net-azuremessagingeventhubs"></a>Отправка событий в Центры событий Azure и их получение оттуда — .NET (Azure.Messaging.EventHubs) 
 В этом кратком руководстве показано, как отправлять события в концентратор событий и получать их из него с помощью библиотеки .NET **Azure.Messaging.EventHubs**. 
@@ -188,8 +188,8 @@ ms.locfileid: "97504616"
             // Start the processing
             await processor.StartProcessingAsync();
 
-            // Wait for 10 seconds for the events to be processed
-            await Task.Delay(TimeSpan.FromSeconds(10));
+            // Wait for 30 seconds for the events to be processed
+            await Task.Delay(TimeSpan.FromSeconds(30));
 
             // Stop the processing
             await processor.StopProcessingAsync();

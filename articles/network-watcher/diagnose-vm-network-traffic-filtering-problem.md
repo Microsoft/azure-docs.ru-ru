@@ -5,23 +5,26 @@ description: Из этого краткого руководства вы узн
 services: network-watcher
 documentationcenter: network-watcher
 author: damendo
-editor: ''
-tags: azure-resource-manager
-ms.assetid: ''
-ms.service: network-watcher
-ms.devlang: na
-ms.topic: quickstart
-ms.tgt_pltfrm: network-watcher
-ms.workload: infrastructure
-ms.date: 04/20/2018
 ms.author: damendo
-ms.custom: mvc
-ms.openlocfilehash: 320e660c8bec50f50f0e048fff12cf1ab91e4870
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+editor: ''
+ms.date: 04/20/2018
+ms.assetid: ''
+ms.topic: quickstart
+ms.service: network-watcher
+ms.workload: infrastructure
+ms.tgt_pltfrm: network-watcher
+ms.devlang: na
+tags:
+- azure-resource-manager
+ms.custom:
+- mvc
+- mode-portal
+ms.openlocfilehash: e8a9ce38e29f743fd40a6998d8bdc300080b2cee
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106065452"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107537752"
 ---
 # <a name="quickstart-diagnose-a-virtual-machine-network-traffic-filter-problem-using-the-azure-portal"></a>Краткое руководство. Диагностика проблемы с фильтром трафика на виртуальной машине с помощью портала Azure
 

@@ -3,19 +3,21 @@ title: Создание Центра уведомлений Azure с помощ�
 description: Узнайте, как создать концентратор уведомлений Azure с помощью шаблона Azure Resource Manager (шаблона ARM).
 services: notification-hubs
 author: sethmanheim
-ms.service: notification-hubs
-ms.topic: quickstart
-ms.custom: subject-armqs
 ms.author: sethm
-ms.date: 08/04/2020
 ms.reviewer: thsomasu
+ms.date: 08/04/2020
 ms.lastreviewed: 05/15/2020
-ms.openlocfilehash: 2165351bee4ee260e768c10b23e26bf095779cad
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.topic: quickstart
+ms.service: notification-hubs
+ms.custom:
+- subject-armqs
+- mode-arm
+ms.openlocfilehash: a328d6b8942c3209e13dc91a2fb892e98e3016f6
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "88684649"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107533470"
 ---
 # <a name="quickstart-create-a-notification-hub-using-an-arm-template"></a>Краткое руководство. Создание концентратора уведомлений с помощью шаблона Resource Manager
 

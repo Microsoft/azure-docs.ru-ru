@@ -3,7 +3,6 @@ title: Краткое руководство Azure. Настройка и пол
 description: Краткое руководство показывает, как настроить и получить секрет из Azure Key Vault с помощью портала Azure
 services: key-vault
 author: msmbaldwin
-manager: rkarlin
 tags: azure-resource-manager
 ms.service: key-vault
 ms.subservice: secrets
@@ -11,12 +10,12 @@ ms.topic: quickstart
 ms.custom: mvc
 ms.date: 09/03/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 904c00c26171854a32234d7b6ba5cac81ac43e5c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: ba5b375f75d2655045e62583679839c8dd2a5720
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97936674"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107752450"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault-using-the-azure-portal"></a>Краткое руководство. Настройка и получение секрета из Azure Key Vault с помощью портала Azure
 
@@ -82,7 +81,7 @@ Azure Key Vault — это облачная служба, которая пре�
 С помощью этого краткого руководства вы создали Key Vault и сохранили в нем секрет. Дополнительные сведения о Key Vault и его интеграции в приложения см. в следующих статьях.
 
 - [Обзор Azure Key Vault](../general/overview.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)
 - [Использование Key Vault для веб-приложения Службы приложений](../general/tutorial-net-create-vault-azure-web-app.md)
 - [Использование Key Vault для приложения, развернутого на виртуальной машине](../general/tutorial-net-virtual-machine.md)
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)

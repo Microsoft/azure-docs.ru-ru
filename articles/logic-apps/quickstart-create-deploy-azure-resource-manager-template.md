@@ -6,13 +6,13 @@ ms.suite: integration
 ms.reviewer: jonfan, logicappspm
 ms.topic: quickstart
 ms.custom: mvc, subject-armqs, devx-track-azurecli
-ms.date: 06/30/2020
-ms.openlocfilehash: 8cee79efd9be53ddb9d450f643c04f21ae5e7fca
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.date: 04/01/2021
+ms.openlocfilehash: bdeb80dc487d8418e21a40a29e5d2baab49d7b05
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102214003"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107771899"
 ---
 # <a name="quickstart-create-and-deploy-a-logic-app-workflow-by-using-an-arm-template"></a>Краткое руководство. Создание и развертывание рабочего процесса приложения логики с помощью шаблона ARM
 
@@ -32,7 +32,7 @@ ms.locfileid: "102214003"
 
 В этом кратком руководстве используется шаблон [**Создание приложения логики**](https://azure.microsoft.com/resources/templates/101-logic-app-create/), который можно найти в [коллекции шаблонов быстрого запуска Azure](https://azure.microsoft.com/resources/templates). Здесь он не приводится, так как он слишком длинный. Но вы можете просмотреть файл [azuredeploy.json](https://github.com/Azure/azure-quickstart-templates/blob/master/101-logic-app-create/azuredeploy.json) в коллекции шаблонов.
 
-Шаблон быстрого запуска создает рабочий процесс приложения логики, который использует триггер повторения, настроенный на запуск каждый час, а также [*встроенное* действие](../connectors/apis-list.md#connector-types) HTTP, которое вызывает URL-адрес для получения состояния для Azure. Встроенное действие является нативным для платформы Azure Logic Apps.
+Шаблон быстрого запуска создает рабочий процесс приложения логики, который использует триггер повторения, настроенный на запуск каждый час, а также [*встроенное* действие](../connectors/built-in.md) HTTP, которое вызывает URL-адрес для получения состояния для Azure. Встроенное действие является нативным для платформы Azure Logic Apps.
 
 Этот шаблон создает следующий ресурс Azure:
 
@@ -303,7 +303,7 @@ az group delete --name $resourceGroupName &&
 echo "Press [ENTER] to continue ..."
 ```
 
-Подробные сведения см. в разделе [Azure CLI: az group delete](/cli/azure/group#az-group-delete).
+Подробные сведения см. в разделе [Azure CLI: az group delete](/cli/azure/group#az_group_delete).
 
 ### <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 

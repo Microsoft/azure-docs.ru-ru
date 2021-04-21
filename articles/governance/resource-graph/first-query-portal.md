@@ -3,12 +3,14 @@ title: Краткое руководство. Первый запрос на п�
 description: В этом кратком руководстве описано, как выполнить первый запрос на портале Azure с помощью обозревателя Azure Resource Graph.
 ms.date: 01/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: cb62a1ae3a29a7aae793fcee6fd896fe0260dc10
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom:
+- mode-portal
+ms.openlocfilehash: 07e336121c6338b27c018acb5b2332653663e1b4
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98920106"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107533077"
 ---
 # <a name="quickstart-run-your-first-resource-graph-query-using-azure-resource-graph-explorer"></a>Краткое руководство. Выполнение запроса Resource Graph с помощью обозревателя Azure Resource Graph
 

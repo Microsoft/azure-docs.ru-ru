@@ -10,12 +10,12 @@ adobe-target: true
 adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts–2.19.2021
 adobe-target-experience: Experience B
 adobe-target-content: ./quickstart-dotnetcore-uiex
-ms.openlocfilehash: 7f538f5accb533b01c5ea685e424c70bfeb44f00
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 482bf6d29fbc1e982ee4d17099d82915ff3a0241
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106058344"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107762467"
 ---
 <!-- NOTES:
 
@@ -426,7 +426,7 @@ az webapp up --sku F1 --name <app-name> --os-type <os>
 - Замените `<app-name>` именем, уникальным для всех регионов Azure (*допустимыми символами являются `a-z`, `0-9`и `-`* ). Рекомендуется использовать сочетание названия компании и идентификатора приложения.
 - Аргумент `--sku F1` создает веб-приложение с [ценовой категорией][app-service-pricing-tier] **Бесплатный**. Этот аргумент можно опустить, чтобы использовать более быструю ценовую категорию "Премиум" с почасовой оплатой.
 - Измените `<os>` на `linux` или `windows`. При нацеливании на *ASP.NET Framework 4.8* необходимо использовать `windows`.
-- При необходимости вы можете использовать аргумент `--location <location-name>`, где `<location-name>` является доступным регионом Azure. Список допустимых регионов для учетной записи Azure можно получить, выполнив команду [`az account list-locations`](/cli/azure/appservice#az-appservice-list-locations).
+- При необходимости вы можете использовать аргумент `--location <location-name>`, где `<location-name>` является доступным регионом Azure. Список допустимых регионов для учетной записи Azure можно получить, выполнив команду [`az account list-locations`](/cli/azure/appservice#az_appservice_list_locations).
 
 Выполнение этой команды может занять несколько минут. По мере выполнения будут отображаться сообщения о создании группы ресурсов, плане службы приложений и размещения приложения, настройке ведения журнала и последующем выполнении развертывания ZIP-файла. Затем отобразится сообщение с URL-адресом приложения:
 

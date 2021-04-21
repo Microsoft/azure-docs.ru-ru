@@ -3,13 +3,15 @@ title: Краткое руководство. Создание группы уп
 description: В этом кратком руководстве показано, как с помощью JavaScript создать группу управления для организации ресурсов в иерархию ресурсов.
 ms.date: 02/05/2021
 ms.topic: quickstart
-ms.custom: devx-track-js
-ms.openlocfilehash: 99a2ed406d4837f6fc346e68b3b400003feed38c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom:
+- devx-track-js
+- mode-api
+ms.openlocfilehash: 553133f30bd16543444356e8cda3e70458247b5c
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "100099155"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107536011"
 ---
 # <a name="quickstart-create-a-management-group-with-javascript"></a>Краткое руководство. Создание группы управления с помощью JavaScript
 

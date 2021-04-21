@@ -10,16 +10,18 @@ ms.topic: quickstart
 ms.service: azure-communication-services
 ms.custom: references_regions
 zone_pivot_groups: acs-azp-java-net-python-csharp-js
-ms.openlocfilehash: 0f4a461ac5d459c6e3311400785e34bc22f40a00
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 19bb79f9a4deaebfacc75918c46a5516d2d398be
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105728459"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107498205"
 ---
 # <a name="quickstart-manage-phone-numbers"></a>Краткое руководство. Управление номерами телефонов
 
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
+
+[!INCLUDE [Bulk Acquisition Instructions](../../includes/phone-number-special-order.md)]
 
 ::: zone pivot="platform-azp"
 [!INCLUDE [Azure portal](./includes/phone-numbers-portal.md)]
