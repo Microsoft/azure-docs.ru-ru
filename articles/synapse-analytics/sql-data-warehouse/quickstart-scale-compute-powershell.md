@@ -3,20 +3,23 @@ title: Краткое руководство. Масштабирование в�
 description: Вы можете масштабировать вычислительные ресурсы для выделенного пула SQL (прежнее название — Хранилище данных SQL) с помощью Azure PowerShell.
 services: synapse-analytics
 author: Antvgski
-manager: craigg
-ms.service: synapse-analytics
-ms.topic: quickstart
-ms.subservice: sql-dw
-ms.date: 04/17/2018
 ms.author: anvang
+manager: craigg
 ms.reviewer: igorstan
-ms.custom: seo-lt-2019, devx-track-azurepowershell
-ms.openlocfilehash: 87e10740e6081431bad96daa930f61238ca495bd
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 04/17/2018
+ms.topic: quickstart
+ms.service: synapse-analytics
+ms.subservice: sql-dw
+ms.custom:
+- seo-lt-2019
+- devx-track-azurepowershell
+- mode-api
+ms.openlocfilehash: 73718f0e8e82e7d35ed1ced98f45c1e125a55a00
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96921906"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107534239"
 ---
 # <a name="quickstart-scale-compute-for-dedicated-sql-pool-formerly-sql-dw-with-azure-powershell"></a>Краткое руководство. Масштабирование вычислительных ресурсов для выделенного пула SQL (прежнее название — Хранилище данных SQL) с использованием Azure PowerShell
 

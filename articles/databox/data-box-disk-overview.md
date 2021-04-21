@@ -8,12 +8,12 @@ ms.subservice: disk
 ms.topic: overview
 ms.date: 06/18/2019
 ms.author: alkohli
-ms.openlocfilehash: cca08e1be0f81c26d0838566ac4900d36580b8b8
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: ca46ce3355edf2b77400011d023cd6af330a3b58
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106066302"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107770439"
 ---
 # <a name="what-is-azure-data-box-disk"></a>Что такое диск Azure Data Box
 
@@ -35,7 +35,7 @@ ms.locfileid: "106066302"
 
 - **SharePoint Online**. Используйте Azure Data Box и средство миграции SharePoint (SPMT) для переноса содержимого общей папки в SharePoint Online. С помощью Data Box можно устранить зависимость от канала глобальной сети, используемого для передачи данных. Дополнительные сведения см. в статье [Использование Azure Data Box Heavy для переноса содержимого общей папки в SharePoint Online](data-box-heavy-migrate-spo.md).
 
-- **Синхронизация файлов Azure**. Используйте эту службу для репликации файлов из Data Box в общую папку Azure, чтобы централизовать файловые службы в Azure с сохранением локального доступа к данным. Дополнительные сведения см. в статье [Развертывание службы "Синхронизация файлов Azure"](../storage/files/storage-sync-files-deployment-guide.md).
+- **Синхронизация файлов Azure**. Используйте эту службу для репликации файлов из Data Box в общую папку Azure, чтобы централизовать файловые службы в Azure с сохранением локального доступа к данным. Дополнительные сведения см. в статье [Развертывание службы "Синхронизация файлов Azure"](../storage/file-sync/file-sync-deployment-guide.md).
 
 - **Хранилища HDFS**. Переносите данные из локального хранилища с распределенной файловой системой Hadoop (HDFS) кластера Hadoop в службу хранилища Azure с помощью Data Box. Дополнительные сведения см. в статье [Перенос данных из локального хранилища HDFS в службу хранилища Azure с помощью Azure Data Box](../storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster.md).
 

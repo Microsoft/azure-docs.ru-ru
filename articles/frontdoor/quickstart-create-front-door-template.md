@@ -4,22 +4,23 @@ description: В этом руководстве объясняется, как �
 services: front-door
 documentationcenter: ''
 author: duongau
-editor: ''
-ms.assetid: ''
-ms.service: frontdoor
-ms.devlang: na
-ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: infrastructure-services
-ms.date: 09/14/2020
 ms.author: duau
-ms.custom: subject-armqs
-ms.openlocfilehash: 223006193219afe4179f3161d5e60e6439207b22
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+editor: ''
+ms.date: 09/14/2020
+ms.topic: quickstart
+ms.service: frontdoor
+ms.workload: infrastructure-services
+ms.tgt_pltfrm: na
+ms.devlang: na
+ms.custom:
+- subject-armqs
+- mode-arm
+ms.openlocfilehash: de8a592f6eecbb43b58a044096e8ba2e0f9b5973
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92896061"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107539000"
 ---
 # <a name="quickstart-create-a-front-door-using-an-arm-template"></a>Краткое руководство. Создание Front Door с помощью шаблона Resource Manager
 

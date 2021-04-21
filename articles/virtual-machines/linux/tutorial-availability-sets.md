@@ -10,12 +10,12 @@ ms.date: 3/8/2021
 ms.author: mimckitt
 ms.reviewer: mimckitt
 ms.custom: ''
-ms.openlocfilehash: 6a54e0d808ef734a26a0fa309bd7367e73316856
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7c45f08a339ca8878bb9e2840faa8a412f3e60e0
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102507071"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765977"
 ---
 # <a name="create-and-deploy-virtual-machines-in-an-availability-set-using-azure-cli"></a>Создание и развертывание виртуальных машин в группе доступности с помощью Azure CLI
 
@@ -36,7 +36,7 @@ ms.locfileid: "102507071"
 
 Вы можете создать группу доступности с помощью команды [az vm availability-set create](/cli/azure/vm/availability-set). В этом примере число доменов обновления и сбоя равно *2* для группы доступности *myAvailabilitySet* в группе ресурсов *myResourceGroupAvailability*.
 
-Сначала создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create), а затем — группа доступности:
+Сначала создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create), а затем — группа доступности:
 
 ```azurecli-interactive
 az group create --name myResourceGroupAvailability --location eastus
@@ -80,7 +80,7 @@ done
 
 ## <a name="check-for-available-vm-sizes"></a>Знакомство с доступными размерами виртуальной машины
 
-В группу доступности можно добавить дополнительные виртуальные машины позднее, когда станут доступны нужные размеры виртуальных машин для оборудования. Выполните команду [az vm availability-set list-sizes](/cli/azure/vm/availability-set#az-vm-availability-set-list-sizes) для получения списка всех доступных размеров в аппаратном кластере для группы доступности.
+В группу доступности можно добавить дополнительные виртуальные машины позднее, когда станут доступны нужные размеры виртуальных машин для оборудования. Выполните команду [az vm availability-set list-sizes](/cli/azure/vm/availability-set#az_vm_availability_set_list_sizes) для получения списка всех доступных размеров в аппаратном кластере для группы доступности.
 
 ```azurecli-interactive
 az vm availability-set list-sizes \
