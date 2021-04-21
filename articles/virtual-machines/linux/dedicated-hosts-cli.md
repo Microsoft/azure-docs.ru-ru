@@ -1,6 +1,6 @@
 ---
 title: Развертывание виртуальных машин и экземпляров масштабируемых наборов на выделенных узлах с помощью интерфейса командной строки
-description: Развертывание виртуальных машин и экземпляров масштабируемых наборов на выделенные узлы с помощью Azure CLI.
+description: Развертывание виртуальных машин и экземпляров масштабируемых наборов на выделенных узлах с помощью интерфейса командной строки Azure.
 author: cynthn
 ms.service: virtual-machines
 ms.subservice: dedicated-hosts
@@ -8,18 +8,18 @@ ms.topic: how-to
 ms.date: 11/12/2020
 ms.author: cynthn
 ms.openlocfilehash: 9d4117cafd665556fb60278aa4dc60dc14a27ada
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101670526"
 ---
-# <a name="deploy-to-dedicated-hosts-using-the-azure-cli"></a>Развертывание на выделенных узлах с помощью Azure CLI
+# <a name="deploy-to-dedicated-hosts-using-the-azure-cli"></a>Выполнение развертывания на выделенных узлах с помощью интерфейса командной строки Azure
  
 
 В этой статье рассказывается, как создать [выделенный узел](../dedicated-hosts.md) Azure для размещения виртуальных машин. 
 
-Убедитесь, что установлен Azure CLI версии 2.16.0 или более поздней, и войдите в учетную запись Azure с помощью `az login` . 
+Убедитесь, что у вас установлен интерфейс командной строки Azure версии 2.16.0 или новее, и что вы вошли в учетную запись Azure с помощью команды `az login`. 
 
 
 ## <a name="limitations"></a>Ограничения
@@ -64,7 +64,7 @@ az vm host group create \
    --platform-fault-domain-count 2 
 ``` 
 
-Добавьте `--automatic-placement true` параметр, чтобы виртуальные машины и экземпляры масштабируемых наборов автоматически размещались на узлах в группе узлов. Дополнительные сведения см. в разделе [Ручное и автоматическое размещение ](../dedicated-hosts.md#manual-vs-automatic-placement).
+Добавьте параметр `--automatic-placement true`, чтобы виртуальные машины и экземпляры масштабируемых наборов автоматически размещались на узлах, в определенной группе узлов. Дополнительные сведения см. в разделе [Ручное и автоматическое размещение ](../dedicated-hosts.md#manual-vs-automatic-placement).
 
 
 ### <a name="other-examples"></a>Другие примеры
@@ -121,14 +121,14 @@ az vm create \
    --zone 1
 ```
 
-Чтобы разместить виртуальную машину на определенном узле, используйте `--host` вместо указания группы узлов с помощью `--host-group` .
+Чтобы разместить виртуальную машину на определенном узле, используйте `--host` вместо указания группы узлов с помощью `--host-group`.
  
 > [!WARNING]
 > Если виртуальная машина создается в узле, в котором недостаточно ресурсов, она будет создана в состоянии сбоя. 
 
 ## <a name="create-a-scale-set"></a>Создание масштабируемого набора 
 
-При развертывании масштабируемого набора указывается группа узлов.
+При развертывании масштабируемого набора необходимо указывать группу узлов.
 
 ```azurecli-interactive
 az vmss create \
@@ -264,7 +264,7 @@ az group export --name myDHResourceGroup > myDHResourceGroup.json
 
 С помощью этой команды в текущем рабочем каталоге создается файл `myDHResourceGroup.json`. При создании среды на основе этого шаблона запрашиваются все имена ресурсов. Эти имена можно указать в файле шаблона, добавив параметр `--include-parameter-default-value` в команду `az group export`. Измените шаблон JSON, чтобы указать имена ресурсов, или создайте файл parameters.json, задающий их.
  
-Чтобы создать среду из шаблона, выполните команду [AZ Deployment Group Create](/cli/azure/deployment/group#az_deployment_group_create).
+Чтобы создать среду с помощью шаблона, используйте команду [az deployment group create](/cli/azure/deployment/group#az_deployment_group_create).
 
 ```azurecli-interactive
 az deployment group create \ 

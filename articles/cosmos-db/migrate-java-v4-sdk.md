@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 06/11/2020
 ms.reviewer: sngun
 ms.openlocfilehash: 92a9abec36bd75c594c67843286bf8fa067d7dba
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101658543"
 ---
 # <a name="migrate-your-application-to-use-the-azure-cosmos-db-java-sdk-v4"></a>Перевод приложения на использование пакета средств разработки Java для Azure Cosmos DB версии 4
@@ -91,7 +91,7 @@ CosmosContainer container = client.getDatabase("MyDatabaseName").getContainer("M
 
 * Все пакеты средств разработки Java для Azure Cosmos DB версии 4.0 начинаются с инструкций `com.azure.cosmos`
 * Пакеты средств разработки Java для Azure Cosmos DB версии 3.x.x начинаются с инструкций `com.azure.data.cosmos`
-* Azure Cosmos DB пакеты API синхронизации пакета SDK для Java 2. x. x начинаются с `com.microsoft.azure.documentdb`
+* Пакеты Sync API-интерфейсов SDK для Java версии 2.x.x в Azure Cosmos DB начинаются с `com.microsoft.azure.documentdb`
 
 * Пакет средств разработки Java для Azure Cosmos DB версии 4.0 размещает несколько классов во вложенном пакете `com.azure.cosmos.models`. Сюда относятся следующие пакеты.
 
@@ -115,7 +115,7 @@ CosmosContainer container = client.getDatabase("MyDatabaseName").getContainer("M
 
 ### <a name="create-resources"></a>Создание ресурсов
 
-В следующем фрагменте кода показаны различия между созданием ресурсов между асинхронными API-интерфейсами 4,0, 3. x. x и API синхронизации 2. x. x.
+В следующем фрагменте кода показаны различия по созданию ресурсов между Async API-интерфейсами версий 4.0, 3.x.x и Sync API-интерфейсами версий 2.x.x:
 
 # <a name="java-sdk-40-async-api"></a>[API Async пакета средств разработки Java версии 4.0](#tab/java-v4-async)
 
@@ -152,7 +152,7 @@ client.createDatabaseIfNotExists("YourDatabaseName")
 }).subscribe();
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
 ```java
 ConnectionPolicy defaultPolicy = ConnectionPolicy.GetDefault();
@@ -182,7 +182,7 @@ documentCollection = client.createCollection(database.getSelfLink(), documentCol
 
 ### <a name="item-operations"></a>Операции с элементами
 
-В следующем фрагменте кода показаны различия между выполнением операций с элементами между асинхронными API-интерфейсами 4,0, 3. x. x и API синхронизации 2. x. x.
+В следующем фрагменте кода показаны различия по выполнению операций с элементами между Async API-интерфейсами версий 4.0, 3.x.x и Sync API-интерфейсами версий 2.x.x:
 
 # <a name="java-sdk-40-async-api"></a>[API Async пакета средств разработки Java версии 4.0](#tab/java-v4-async)
 
@@ -201,7 +201,7 @@ Flux.fromIterable(docs)
     .subscribe(); // ...Subscribing triggers stream execution.
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
 ```java
 //  Container is created. Generate documents to insert.
@@ -215,7 +215,7 @@ Document responseDocument = documentResourceResponse.getResource();
 
 ### <a name="indexing"></a>Индексация
 
-В следующем фрагменте кода показаны различия между созданием индекса между асинхронными API-интерфейсами 4,0, 3. x. x и API синхронизации 2. x. x.
+В следующем фрагменте кода показаны различия по выполнению индексирования между Async API-интерфейсами версий 4.0, 3.x.x и Sync API-интерфейсами версий 2.x.x:
 
 # <a name="java-sdk-40-async-api"></a>[API Async пакета средств разработки Java версии 4.0](#tab/java-v4-async)
 
@@ -251,7 +251,7 @@ CosmosContainer containerIfNotExists = database.createContainerIfNotExists(conta
                                                .container();
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
 ```java
 // Custom indexing policy
@@ -282,7 +282,7 @@ documentCollection = client.createCollection(database.getSelfLink(), documentCol
 
 ### <a name="stored-procedures"></a>Хранимые процедуры
 
-В следующем фрагменте кода показаны различия между созданием хранимых процедур между асинхронными API-интерфейсами 4,0, 3. x. x и API синхронизации 2. x. x.
+В следующем фрагменте кода показаны различия по созданию хранимых процедур между Async API-интерфейсами версий 4.0, 3.x.x и Sync API-интерфейсами версий 2.x.x:
 
 # <a name="java-sdk-40-async-api"></a>[API Async пакета средств разработки Java версии 4.0](#tab/java-v4-async)
 
@@ -330,7 +330,7 @@ container.getScripts()
         }).block();
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
 ```java
 logger.info("Creating stored procedure...\n");
@@ -413,14 +413,14 @@ ChangeFeedProcessor.Builder()
                             .subscribe();
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
-* Эта функция не поддерживается для синхронизации пакета SDK для Java версии 2. 
+* Эта функция не поддерживается пакетом SDK для Sync Java начиная с версии 2. 
 ---
 
 ### <a name="container-level-time-to-livettl"></a>Срок жизни на уровне контейнера
 
-В следующем фрагменте кода показаны различия в создании времени жизни для данных в контейнере с помощью API-интерфейсов 4,0, 3. x. x и API синхронизации 2. x. x.
+В следующем фрагменте кода показаны различия при создании срока жизни данных в контейнере с помощью Async API-интерфейсов версий 4.0, 3.x.x и Sync API-интерфейсов версий 2.x.x:
 
 # <a name="java-sdk-40-async-api"></a>[API Async пакета средств разработки Java версии 4.0](#tab/java-v4-async)
 
@@ -437,7 +437,7 @@ containerProperties.defaultTimeToLive(90 * 60 * 60 * 24);
 container = database.createContainerIfNotExists(containerProperties, 400).block().container();
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
 ```java
 DocumentCollection documentCollection;
@@ -450,7 +450,7 @@ documentCollection = client.createCollection(database.getSelfLink(), documentCol
 
 ### <a name="item-level-time-to-livettl"></a>Срок жизни на уровне элемента
 
-В следующем фрагменте кода показаны различия в создании срока жизни для элемента с помощью асинхронных API-интерфейсов 4,0, 3. x. x и API синхронизации 2. x. x.
+В следующем фрагменте кода показаны различия при создании срока жизни для элемента с помощью Async API-интерфейсов версий 4.0, 3.x.x и Sync API-интерфейсов версий 2.x.x:
 
 # <a name="java-sdk-40-async-api"></a>[API Async пакета средств разработки Java версии 4.0](#tab/java-v4-async)
 
@@ -492,7 +492,7 @@ SalesOrder salesOrder = new SalesOrder(
 );
 ```
 
-# <a name="java-sdk-2xx-sync-api"></a>[API синхронизации пакета SDK для Java 2. x. x](#tab/java-v2-sync)
+# <a name="java-sdk-2xx-sync-api"></a>[Sync API-интерфейс Java SDK 2.x.x](#tab/java-v2-sync)
 
 ```java
 Document document = new Document();

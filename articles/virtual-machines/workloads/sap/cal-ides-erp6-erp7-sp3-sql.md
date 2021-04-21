@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 09/16/2016
 ms.author: hermannd
 ms.openlocfilehash: 5184df38b6a6b2757a5d5f7c0970258657cf5c0f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101671002"
 ---
 # <a name="deploy-sap-ides-ehp7-sp3-for-sap-erp-60-on-azure"></a>Развертывание SAP IDES EHP7 SP3 для SAP ERP 6.0 в Azure
@@ -45,11 +45,11 @@ ms.locfileid: "101671002"
 
     b. **Microsoft Azure** — это новая модель развертывания с помощью Resource Manager.
 
-    ![На снимке экрана показаны учетные записи P CAL с Microsoft Azure вызываемыми.](./media/cal-ides-erp6-ehp7-sp3-sql/s4h-pic-2a.PNG)
+    ![Снимок экрана, на котором показаны учетные записи S A P CAL с выделенным пунктом Microsoft Azure.](./media/cal-ides-erp6-ehp7-sp3-sql/s4h-pic-2a.PNG)
 
     Чтобы выполнить развертывание с использованием модели Resource Manager, выберите **Microsoft Azure**.
 
-    ![На снимке экрана показаны учетные записи P CAL.](./media/cal-ides-erp6-ehp7-sp3-sql/s4h-pic3c.PNG)
+    ![Снимок экрана, на котором показаны учетные записи S A P CAL.](./media/cal-ides-erp6-ehp7-sp3-sql/s4h-pic3c.PNG)
 
 1. Введите **идентификатор подписки** Azure, который можно найти на портале Azure. 
 

@@ -8,13 +8,13 @@ ms.devlang: python
 ms.topic: conceptual
 ms.date: 01/17/2020
 ms.author: robinsh
-ms.custom: mqtt, devx-track-python
-ms.openlocfilehash: d4c514042b89341b90b0bb9c939ef4b463741916
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom: mqtt, devx-track-python, devx-track-azurecli
+ms.openlocfilehash: c07d26715aff2c8dd5e00a7d7adbb548adf00a28
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "87872724"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107482506"
 ---
 # <a name="get-started-with-device-management-python"></a>Начало работы с управлением устройствами (Python)
 

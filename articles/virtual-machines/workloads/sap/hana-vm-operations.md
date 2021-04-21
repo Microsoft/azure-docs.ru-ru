@@ -16,10 +16,10 @@ ms.date: 10/01/2019
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: 4c27895c5163d59ca785aa15fa3739359e5be457
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101666608"
 ---
 # <a name="sap-hana-infrastructure-configurations-and-operations-on-azure"></a>Конфигурации инфраструктуры SAP HANA и работа с ней в Azure
@@ -135,7 +135,7 @@ ms.locfileid: "101666608"
 
 Стандартная базовая архитектура для одного узла в конфигурации с горизонтальным увеличением масштаба будет выглядеть так:
 
-![Схема, на которой показан типичный базовый проект для одного узла в конфигурации с горизонтальным масштабированием.](media/hana-vm-operations/scale-out-basics-anf-shared.PNG)
+![На схеме показана стандартная базовая архитектура для одного узла в конфигурации с горизонтальным увеличением масштаба.](media/hana-vm-operations/scale-out-basics-anf-shared.PNG)
 
 Базовая конфигурация узла виртуальной машины для горизонтального масштабирования SAP HANA выглядит так:
 

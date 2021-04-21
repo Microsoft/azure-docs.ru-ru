@@ -4,22 +4,22 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: e3b441bd4302506582314e8baaed91a988a04acb
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: a91944868892568299f4bed2479aa2c39fdd3ac0
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104613051"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283163"
 ---
 <!--Feature availability in region-->
 ## <a name="china"></a>Китай
 
 | Компонент | Восточный Китай | Восточный Китай 2 | Северный Китай |
 | --- | :---: | :---: | :---: |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid Восточный Китай](../media/azure-clouds-regions/ga.svg)  |![Общая доступность Azure EventGrid Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность Azure EventGrid Северный Китай](../media/azure-clouds-regions/ga.svg) |
-| [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Видеоанализерпресет Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Видеоанализерпресет Восточный Китай 2 Общая доступность](../media/azure-clouds-regions/ga.svg) |![Общая доступность Видеоанализерпресет Северный Китай](../media/azure-clouds-regions/ga.svg) |
-| [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Аудиоанализерпресет Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Аудиоанализерпресет Восточный Китай 2 Общая доступность](../media/azure-clouds-regions/ga.svg) |![Общая доступность Аудиоанализерпресет Северный Китай](../media/azure-clouds-regions/ga.svg) |
-| [StandardEncoderPreset](../encoding-concept.md) |![Общая доступность Стандарденкодерпресет Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Стандарденкодерпресет Восточный Китай 2 Общая доступность](../media/azure-clouds-regions/ga.svg) |![Общая доступность Стандарденкодерпресет Северный Китай](../media/azure-clouds-regions/ga.svg) |
-| [LiveEvents](../live-streaming-overview.md) |![Общая доступность Лививентс Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Лививентс Восточный Китай 2 Общая доступность](../media/azure-clouds-regions/ga.svg) |![Общая доступность Лививентс Северный Китай](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../streaming-endpoint-concept.md) |![Общая доступность Streamingendpoint Восточный Китай](../media/azure-clouds-regions/ga.svg) | ![Streamingendpoint Восточный Китай 2 Общая доступность](../media/azure-clouds-regions/ga.svg)  |![Общая доступность Streamingendpoint Северный Китай](../media/azure-clouds-regions/ga.svg) |
-| [ливетранскриптион](../live-transcription.md) |![Общая доступность Ливетранскриптион Восточный Китай](../media/azure-clouds-regions/ga.svg) |![Ливетранскриптион Восточный Китай 2 Общая доступность](../media/azure-clouds-regions/ga.svg) |![Общая доступность Ливетранскриптион Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid, Восточный Китай](../media/azure-clouds-regions/ga.svg)  |![Общая доступность Azure EventGrid, Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность Azure EventGrid, Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность VideoAnalyzerPreset, Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность VideoAnalyzerPreset, Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность VideoAnalyzerPreset, Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность AudioAnalyzerPreset, Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность AudioAnalyzerPreset, Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность AudioAnalyzerPreset, Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [StandardEncoderPreset](../encode-concept.md) |![Общая доступность StandardEncoderPreset, Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность StandardEncoderPreset, Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность StandardEncoderPreset, Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [LiveEvents](../stream-live-streaming-concept.md) |![Общая доступность LiveEvents, Восточный Китай](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность LiveEvents, Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность LiveEvents, Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) |![Общая доступность StreamingEndpoints, Восточный Китай](../media/azure-clouds-regions/ga.svg) | ![Общая доступность StreamingEndpoints, Восточный Китай 2](../media/azure-clouds-regions/ga.svg)  |![Общая доступность StreamingEndpoints, Северный Китай](../media/azure-clouds-regions/ga.svg) |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |![Общая доступность LiveTranscription, Восточный Китай](../media/azure-clouds-regions/ga.svg) |![Общая доступность LiveTranscription, Восточный Китай 2](../media/azure-clouds-regions/ga.svg) |![Общая доступность LiveTranscription, Северный Китай](../media/azure-clouds-regions/ga.svg) |

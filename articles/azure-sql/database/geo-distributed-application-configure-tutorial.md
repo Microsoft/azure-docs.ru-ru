@@ -1,6 +1,6 @@
 ---
-title: Реализация геораспределенного решения
-description: Узнайте, как настроить базу данных в базе данных SQL Azure и клиентское приложение для отработки отказа в реплицированную базу данных и тестовую отработку отказа.
+title: Реализация географически распределенного решения
+description: Сведения о настройке базы данных SQL Azure и клиентских приложений для отработки отказов в реплицированной базе данных и тестовой отработки отказов.
 services: sql-database
 ms.service: sql-database
 ms.subservice: high-availability
@@ -12,21 +12,21 @@ ms.author: sashan
 ms.reviewer: mathoma, sstein
 ms.date: 03/12/2019
 ms.openlocfilehash: 89d285a56553f5c521d1edbc92786debd4a92e32
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101659296"
 ---
-# <a name="tutorial-implement-a-geo-distributed-database-azure-sql-database"></a>Учебник. Реализация геораспределенной базы данных (база данных SQL Azure)
+# <a name="tutorial-implement-a-geo-distributed-database-azure-sql-database"></a>Руководство. Реализация географически распределенной базы данных (база данных SQL Azure)
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
 
-Настройте базу данных в базе данных SQL и клиентском приложении для отработки отказа в удаленный регион и протестируйте план отработки отказа. Вы узнаете, как выполнять следующие задачи:
+Настройка базы данных в облачной службе базы данных SQL и клиентских приложений для отработки отказов в удаленном регионе, а также плана тестирования отработки отказов. Вы узнаете, как выполнять следующие задачи:
 
 > [!div class="checklist"]
 >
-> - Создание [группы отработки отказа](auto-failover-group-overview.md)
-> - Запуск приложения Java для запроса базы данных в базе данных SQL
+> - создавать [группу отработки отказа](auto-failover-group-overview.md);
+> - Запускать Java-приложения, чтобы формировать запросы для базы данных, размещенной в облачной службе базы данных SQL
 > - Тестовая отработка отказа
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
@@ -41,7 +41,7 @@ ms.locfileid: "101659296"
 Для работы с этим руководством необходимо убедиться, что установлены следующие компоненты:
 
 - [Azure PowerShell](/powershell/azure/)
-- Отдельная база данных в базе данных SQL Azure. Чтобы создать ее, можно использовать:
+- Единственная база данных в базе данных SQL Azure. Чтобы создать ее, можно использовать:
   - [Портал Azure](single-database-create-quickstart.md)
   - [CLI Azure.](az-cli-script-samples-content-guide.md)
   - [PowerShell](powershell-script-content-guide.md)
@@ -54,11 +54,11 @@ ms.locfileid: "101659296"
 > [!IMPORTANT]
 > Убедитесь, что правила брандмауэра настроены для использования общедоступного IP-адреса компьютера, на котором выполняются действия из этого руководства. Правила брандмауэра уровня базы данных автоматически реплицируются на сервер-получатель.
 >
-> Дополнительные сведения см. в разделе [Создание правила брандмауэра уровня базы данных](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database) или определение IP-адреса, используемого для правила брандмауэра уровня сервера для компьютера, см. в разделе [Создание брандмауэра на уровне сервера](firewall-create-server-level-portal-quickstart.md).  
+> Дополнительные сведения см. в статье [sp_set_database_firewall_rule (Azure SQL Database)](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database) (sp_set_database_firewall_rule (база данных SQL Azure)). Чтобы определить IP-адрес, используемый для правила брандмауэра уровня сервера для компьютера, обратитесь к статье [Краткое руководство. Создание правила брандмауэра на уровне сервера для базы данных SQL с помощью портала Azure](firewall-create-server-level-portal-quickstart.md).  
 
 ## <a name="create-a-failover-group"></a>Создание группы отработки отказа
 
-С помощью Azure PowerShell создайте [группы отработки отказа](auto-failover-group-overview.md) между существующим сервером и новым сервером в другом регионе. Затем добавьте пример базы данных в группу отработки отказа.
+С помощью Azure PowerShell создайте [группы отработки отказов](auto-failover-group-overview.md) между имеющимся сервером и новым сервером в другом регионе. Затем добавьте пример базы данных в группу отработки отказа.
 
 # <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 
@@ -95,7 +95,7 @@ Get-AzSqlDatabase -ResourceGroupName $resourceGroup -ServerName $server -Databas
 # <a name="the-azure-cli"></a>[CLI Azure.](#tab/azure-cli)
 
 > [!IMPORTANT]
-> Выполните команду `az login` , чтобы войти в Azure.
+> Запустите `az login` для входа Azure.
 
 ```azurecli
 $admin = "<adminName>"
@@ -120,7 +120,7 @@ az sql failover-group create --name $failoverGroup --partner-server $drServer `
 
 * * *
 
-Параметры георепликации можно также изменить в портал Azure, выбрав базу данных, а затем — **Параметры**  >  **георепликации**.
+Параметры георепликации можно также изменить на портале Azure, выбрав нужную базу данных и щелкнув **Параметры** > **Георепликация**.
 
 ![Параметры георепликации](./media/geo-distributed-application-configure-tutorial/geo-replication.png)
 
@@ -140,7 +140,7 @@ az sql failover-group create --name $failoverGroup --partner-server $drServer `
    cd SqlDbSample
    ```
 
-1. В любом удобном редакторе откройте файл *pom.xml* в папке проекта.
+1. Используя любой удобный редактор, откройте файл *pom.xml* в папке проекта.
 
 1. Добавьте Microsoft JDBC Driver для зависимости SQL Server, добавив следующий раздел `dependency`. Эту зависимость необходимо вставить в рамках большего раздела `dependencies`.
 
@@ -290,7 +290,7 @@ az sql failover-group create --name $failoverGroup --partner-server $drServer `
    }
    ```
 
-1. Сохраните и закройте файл *app. Java* .
+1. Сохраните и закройте файл *App.java*.
 
 1. В командной консоли выполните следующую команду:
 
@@ -321,7 +321,7 @@ az sql failover-group create --name $failoverGroup --partner-server $drServer `
 
 # <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 
-Роль сервера аварийного восстановления можно проверить в ходе теста с помощью следующей команды:
+Во время теста вы можете проверить роль сервера аварийного восстановления с помощью следующей команды:
 
 ```powershell
 (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
@@ -346,7 +346,7 @@ az sql failover-group create --name $failoverGroup --partner-server $drServer `
 
 # <a name="the-azure-cli"></a>[CLI Azure.](#tab/azure-cli)
 
-Роль сервера аварийного восстановления можно проверить в ходе теста с помощью следующей команды:
+Во время теста вы можете проверить роль сервера аварийного восстановления с помощью следующей команды:
 
 ```azurecli
 az sql failover-group show --name $failoverGroup --resource-group $resourceGroup --server $drServer
@@ -370,15 +370,15 @@ az sql failover-group show --name $failoverGroup --resource-group $resourceGroup
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этом руководстве вы настроили базу данных в базе данных SQL Azure и приложение для отработки отказа в удаленный регион и проверили план отработки отказа. Вы ознакомились с выполнением следующих задач:
+В этом руководстве вы выполнили настройку базы данных в облачной базе данных SQL Azure и приложений для отработки отказов в удаленном регионе, а также протестировали план отработки отказов. Вы ознакомились с выполнением следующих задач:
 
 > [!div class="checklist"]
 >
 > - создавать группу отработки отказа георепликации;
-> - Запуск приложения Java для запроса базы данных в базе данных SQL
+> - Запускать Java-приложения, чтобы формировать запросы для базы данных, размещенной в облачной службе базы данных SQL
 > - Тестовая отработка отказа
 
-Перейдите к следующему руководству по добавлению экземпляра Управляемый экземпляр Azure SQL в группу отработки отказа.
+Перейдите к следующему руководству, чтобы узнать, как добавить Управляемый экземпляр Azure SQL в группу отработки отказов:
 
 > [!div class="nextstepaction"]
-> [Добавление экземпляра Управляемый экземпляр Azure SQL в группу отработки отказа](../managed-instance/failover-group-add-instance-tutorial.md)
+> [Добавление Управляемого экземпляра SQL Azure в группу отработки отказов](../managed-instance/failover-group-add-instance-tutorial.md)

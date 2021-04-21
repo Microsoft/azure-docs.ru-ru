@@ -6,10 +6,10 @@ ms.custom: hdinsightactive,seoapr2020
 ms.topic: conceptual
 ms.date: 04/29/2020
 ms.openlocfilehash: 2d2619c7bd7bc09eeab3845599758db7134b4134
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "98945656"
 ---
 # <a name="information-about-using-hdinsight-on-linux"></a>Сведения об использовании HDInsight в Linux
@@ -98,15 +98,15 @@ curl -u admin -G "https://CLUSTERNAME.azurehdinsight.net/api/v1/clusters/CLUSTER
 
 В большинстве дистрибутивов Hadoop данные хранятся в HDFS. HDFS реализуется на базе локального хранилища на компьютерах в кластере. Использование локального хранилища в случае облачного решения с почасовой или поминутной платой за вычислительные ресурсы может оказаться весьма затратным.
 
-При использовании HDInsight файлы данных хранятся в гибком и устойчивом виде в облаке с помощью хранилища BLOB-объектов Azure и при необходимости Azure Data Lake Storage 1-го поколения/Gen2. Эти службы предоставляют следующие преимущества:
+При использовании HDInsight файлы данных хранятся в облаке с применением хранилища BLOB-объектов Azure и при необходимости Azure Data Lake Storage 1-го или 2-го поколения, что позволяет обеспечить адаптацию и устойчивость. Эти службы предоставляют следующие преимущества:
 
 * Недорогое долговременное хранилище;
 * доступность из внешних служб, например веб-сайтов, служебных программ для отправки или скачивания файлов, пакетов SDK для различных языков и веб-браузеров;
 * Емкость, рассчитанная на файлы большого размера, и большое адаптируемое хранилище.
 
-Дополнительные сведения см. в статье [хранилище BLOB-объектов Azure](../storage/common/storage-introduction.md), [Azure Data Lake Storage 1-го поколения](../data-lake-store/data-lake-store-overview.md)или [Azure Data Lake Storage 2-го поколения](../storage/blobs/data-lake-storage-introduction.md).
+Дополнительные сведения см. в статьях о [хранилище BLOB-объектов Azure](../storage/common/storage-introduction.md), [Azure Data Lake Storage 1-го поколения](../data-lake-store/data-lake-store-overview.md) и [Azure Data Lake Storage 2-го поколения](../storage/blobs/data-lake-storage-introduction.md).
 
-При использовании хранилища BLOB-объектов Azure или Data Lake Storage 1-го поколения/Gen2 для доступа к данным не нужно делать ничего особенного из HDInsight. Например, следующая команда отображает список файлов в папке `/example/data` независимо от того, хранится ли она в службе хранилища Azure или в Data Lake Storage:
+Если вы используете хранилище BLOB-объектов Azure либо Data Lake Storage 1-го или 2-го поколения, для доступа к данным не требуется никаких специальных действий в HDInsight. Например, следующая команда отображает список файлов в папке `/example/data` независимо от того, хранится ли она в службе хранилища Azure или в Data Lake Storage:
 
 ```console
 hdfs dfs -ls /example/data
@@ -186,7 +186,7 @@ curl -u admin -G "https://CLUSTERNAME.azurehdinsight.net/api/v1/clusters/CLUSTER
 
 Для доступа к данным из-за пределов кластера HDInsight есть несколько методов. Ниже приводятся ссылки на служебные программы и пакеты SDK, которые можно использовать для работы с данными.
 
-Если вы используете __хранилище BLOB-объектов Azure__, ознакомьтесь со следующими ссылками, чтобы получить доступ к данным.
+Если вы используете __хранилище BLOB-объектов Azure__, ознакомьтесь с информацией о способах получения данных, доступной по приведенным ниже ссылкам.
 
 * [Azure CLI.](/cli/azure/install-az-cli2) это набор команд интерфейса командной строки для работы с Azure. После установки используйте команду `az storage` для получения информации по использованию хранилища, а команду `az storage blob` — для получения информации о больших двоичных объектах.
 * [blobxfer.py](https://github.com/Azure/blobxfer): сценарий Python для работы с большими двоичными объектами в службе хранилища Azure.
@@ -200,7 +200,7 @@ curl -u admin -G "https://CLUSTERNAME.azurehdinsight.net/api/v1/clusters/CLUSTER
     * [.NET](https://github.com/Azure/azure-sdk-for-net)
     * [REST API службы хранилища](/rest/api/storageservices/Blob-Service-REST-API)
 
-Если вы используете __Azure Data Lake Storage 1-го поколения__, ознакомьтесь со следующими ссылками, чтобы получить доступ к данным.
+Если вы используете __Azure Data Lake Storage 1-го поколения__, ознакомьтесь с информацией о способах получения данных, доступной по приведенным ниже ссылкам.
 
 * [веб-браузер](../data-lake-store/data-lake-store-get-started-portal.md);
 * [PowerShell](../data-lake-store/data-lake-store-get-started-powershell.md)

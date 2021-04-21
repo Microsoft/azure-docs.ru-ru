@@ -8,10 +8,10 @@ ms.date: 08/20/2019
 ms.author: sarn
 ms.topic: how-to
 ms.openlocfilehash: 866522da162d22621bd37bf9d2f2fa6838206e17
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101674688"
 ---
 # <a name="monitor-scheduled-events-for-your-azure-vms"></a>Мониторинг запланированных событий для виртуальных машин Azure
@@ -150,7 +150,7 @@ New-AzVm `
     | project-away RenderedDescription,ReqJson
     ```
 
-1. Выберите **сохранить**, а затем введите `ogQuery` имя, оставьте **запрос** в качестве типа, введите в `VMLogs` качестве **категории**, а затем нажмите кнопку **сохранить**. 
+1. Нажмите **Сохранить**, а затем введите в качестве имени `ogQuery`, оставьте в качестве типа **Запрос** и введите `VMLogs` для параметра **Категория**, после чего выберите **Сохранить**. 
 
     ![Сохранение запроса](./media/notifications/save-query.png)
 

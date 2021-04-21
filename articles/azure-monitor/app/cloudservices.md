@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 09/05/2018
 ms.openlocfilehash: 264d6d4b0b397a29b5dc1db4bb299297c1e30584
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103419241"
 ---
 # <a name="application-insights-for-azure-cloud-services"></a>Использование Application Insights для облачных служб Azure
@@ -19,7 +19,7 @@ ms.locfileid: "103419241"
 ## <a name="prerequisites"></a>Предварительные требования
 Для этого потребуются следующие компоненты.
 
-* Подписка [Azure](https://azure.com) . Войдите с помощью учетной записи Майкрософт для Windows, XBox Live или других облачных служб Майкрософт. 
+* Подписка [Azure](https://azure.com). Войдите с помощью учетной записи Майкрософт для Windows, XBox Live или других облачных служб Майкрософт. 
 * Инструменты Microsoft Azure 2.9 или более поздней версии.
 * Developer Analytics Tools 7.10 или более поздней версии.
 
@@ -32,7 +32,7 @@ ms.locfileid: "103419241"
 
 Возможно, вас удовлетворит только этот вариант. 
 
-Дальнейшие действия — [Просмотр метрик из приложения](../essentials/metrics-charts.md), [запрос данных с помощью аналитики](../logs/log-query-overview.md). 
+Следующие шаги — [просмотр метрик приложения](../essentials/metrics-charts.md), [отправка запроса данных с помощью Analytics](../logs/log-query-overview.md). 
 
 Чтобы отслеживать производительность в браузере, вы можете [настроить тесты доступности](./monitor-web-app-availability.md) и [добавить код в веб-страницы](./javascript.md).
 
@@ -49,11 +49,11 @@ ms.locfileid: "103419241"
 ## <a name="plan-resources-and-resource-groups"></a>Планирование ресурсов и групп ресурсов
 Данные телеметрии из приложения сохраняются, анализируются и отображаются в ресурсе Azure типа Application Insights. 
 
-Каждый ресурс относится к группе ресурсов. Группы ресурсов используются для управления затратами, предоставления доступа участникам команды и развертывания обновлений в отдельной согласованной транзакции. Например, можно [написать сценарий для развертывания](../../azure-resource-manager/templates/deploy-powershell.md) облачной службы Azure и ее Application Insights мониторинг ресурсов за одну операцию.
+Каждый ресурс относится к группе ресурсов. Группы ресурсов используются для управления затратами, предоставления доступа участникам команды и развертывания обновлений в отдельной согласованной транзакции. Например, вы можете [написать скрипт для развертывания](../../azure-resource-manager/templates/deploy-powershell.md) облачной службы Azure и ресурсов мониторинга Application Insights в одной операции.
 
 ### <a name="resources-for-components"></a>Ресурсы для компонентов
 
-Рекомендуется [Добавить свойство измерения к каждому элементу телеметрии](./api-filtering-sampling.md#addmodify-properties-itelemetryinitializer) , определяющему его исходную роль. При таком подходе диаграммы метрик (например, исключений) обычно отображают агрегированные данные для нескольких ролей. При необходимости вы можете сегментировать диаграмму по идентификатору роли. Поиск также можно фильтровать по одному измерению. Этот вариант делает более удобным одновременный просмотр информации, но может привести к некоторой путанице с ролями.
+Рекомендуется [добавить свойство измерения к каждому элементу телеметрии](./api-filtering-sampling.md#addmodify-properties-itelemetryinitializer), определяющему его исходную роль. При таком подходе диаграммы метрик (например, исключений) обычно отображают агрегированные данные для нескольких ролей. При необходимости вы можете сегментировать диаграмму по идентификатору роли. Поиск также можно фильтровать по одному измерению. Этот вариант делает более удобным одновременный просмотр информации, но может привести к некоторой путанице с ролями.
 
 Данные телеметрии браузера обычно добавляются в тот же ресурс, что и данные соответствующей серверной веб-роли.
 
@@ -84,7 +84,7 @@ ms.locfileid: "103419241"
 ## <a name="set-up-azure-diagnostics-for-each-role"></a>Настройка системы диагностики Azure для каждой роли
 Настройте мониторинг приложения с помощью Application Insights. Для веб-ролей этот вариант поддерживает мониторинг производительности, создание оповещений и диагностику, а также анализ сведений об использовании. Для других ролей можно искать и отслеживать диагностические данные Azure, например о событиях перезапуска, показаниях счетчиков производительности и вызовах System.Diagnostics.Trace. 
 
-1. В Обозреватель решений Visual Studio в разделе **\<YourCloudService>**  >  **роли** откройте свойства каждой роли.
+1. В обозревателе решений Visual Studio в разделе **\<YourCloudService>**  > **Роли** откройте свойства каждой роли.
 
 1. В разделе **Конфигурация** установите флажок **Отправка диагностических данных в Application Insights** и выберите созданный ранее ресурс Application Insights.
 
@@ -129,11 +129,11 @@ ms.locfileid: "103419241"
 
    В сообщении в файле *.config* будет предложено поместить в него ключ инструментирования. Но для облачных приложений лучше задать его в файле *.cscfg*. Такой подход позволит правильно идентифицировать роли на портале.
 
-## <a name="set-up-status-monitor-to-collect-full-sql-queries-optional"></a>Настройка монитор состояния для получения полных запросов SQL (необязательно)
+## <a name="set-up-status-monitor-to-collect-full-sql-queries-optional"></a>Настройка монитора состояния для получения полных SQL-запросов (необязательно)
 
 Этот шаг необходим только в том случае, если требуется захватить полные SQL-запросы на платформа .NET Framework. 
 
-1. В `\*.csdef` меню файл добавьте [задачу запуска](../../cloud-services/cloud-services-startup-tasks.md) для каждой роли, аналогичной 
+1. В файле `\*.csdef` добавьте [задачу запуска](../../cloud-services/cloud-services-startup-tasks.md) для каждой роли, аналогичной 
 
     ```xml
     <Startup>
@@ -148,7 +148,7 @@ ms.locfileid: "103419241"
     </Startup>
     ```
     
-2. Скачайте [InstallAgent.bat](https://github.com/MohanGsk/ApplicationInsights-Home/blob/master/Samples/AzureEmailService/WorkerRoleA/AppInsightsAgent/InstallAgent.bat) и [InstallAgent.ps1](https://github.com/MohanGsk/ApplicationInsights-Home/blob/master/Samples/AzureEmailService/WorkerRoleA/AppInsightsAgent/InstallAgent.ps1), вставьте их в `AppInsightsAgent` папку в каждом проекте роли. Не забудьте скопировать их в выходной каталог с помощью свойств файла Visual Studio или скриптов сборки.
+2. Скачайте [InstallAgent.bat](https://github.com/MohanGsk/ApplicationInsights-Home/blob/master/Samples/AzureEmailService/WorkerRoleA/AppInsightsAgent/InstallAgent.bat) и [InstallAgent.ps1](https://github.com/MohanGsk/ApplicationInsights-Home/blob/master/Samples/AzureEmailService/WorkerRoleA/AppInsightsAgent/InstallAgent.ps1), вставьте их в папку `AppInsightsAgent` в каждом проекте роли. Не забудьте скопировать их в выходной каталог с помощью свойств файла Visual Studio или скриптов сборки.
 
 3. Добавьте переменные среды для всех рабочих ролей: 
 
@@ -221,7 +221,7 @@ ms.locfileid: "103419241"
 ## <a name="performance-counters"></a>Счетчики производительности
 По умолчанию собираются приведенные ниже счетчики.
 
-* \Process (?? APP_WIN32_PROC??) \% Процессорное время
+* \Process(??APP_WIN32_PROC??)\% Процессорное время
 * \Память\доступные байты
 * \.NET CLR Exceptions(??APP_CLR_PROC??)\# Исключений в секунду
 * \Process(??APP_WIN32_PROC??)\Байт исключительного пользования
@@ -234,7 +234,7 @@ ms.locfileid: "103419241"
 * \ASP.NET Applications(??APP_W3SVC_PROC??)\Время выполнения запросов
 * \ASP.NET Applications(??APP_W3SVC_PROC??)\Запросы в очереди приложений
 
-Можно указать дополнительные пользовательские или другие счетчики производительности Windows, изменив *ApplicationInsights.config* [, как показано в этом примере](https://github.com/MohanGsk/ApplicationInsights-Home/blob/master/Samples/AzureEmailService/WorkerRoleA/ApplicationInsights.config#L14).
+Можно указать дополнительные пользовательские или другие счетчики производительности Windows, изменив файл [*ApplicationInsights.config*](https://github.com/MohanGsk/ApplicationInsights-Home/blob/master/Samples/AzureEmailService/WorkerRoleA/ApplicationInsights.config#L14).
 
   ![Счетчики производительности](./media/cloudservices/002-servers.png)
 

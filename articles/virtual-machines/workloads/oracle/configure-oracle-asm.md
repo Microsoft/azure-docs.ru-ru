@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 08/02/2018
 ms.author: kegorman
 ms.openlocfilehash: b180a0f148db5222a288958724ad248acd18b565
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101673856"
 ---
 # <a name="set-up-oracle-asm-on-an-azure-linux-virtual-machine"></a>Настройка Oracle ASM в виртуальной машине Linux в Azure  
@@ -33,7 +33,7 @@ ms.locfileid: "101673856"
 
 ### <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Чтобы создать группу ресурсов, используйте команду [AZ Group Create](/cli/azure/group) . Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими. В этом примере создается группа ресурсов с именем *myResourceGroup* в регионе *eastus*.
+Чтобы создать группу ресурсов, используйте команду [az group create](/cli/azure/group). Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими. В этом примере создается группа ресурсов с именем *myResourceGroup* в регионе *eastus*.
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location eastus
@@ -204,7 +204,7 @@ ssh <publicIpAddress>
    fdisk /dev/sdc
    ```
    
-   Выполнив указанные выше ответы, выходные данные `fdisk` команды должны выглядеть следующим образом:
+   В соответствии с указанными выше сведениями выходные данные команды `fdisk` должны выглядеть следующим образом:
 
    ```output
    Device contains not a valid DOS partition table, or Sun, SGI or OSF disklabel
@@ -240,7 +240,7 @@ ssh <publicIpAddress>
    Syncing disks.
    ```
 
-4. Повторите предыдущую `fdisk` команду для `/dev/sdd` , `/dev/sde` и `/dev/sdf` .
+4. Повторите предыдущую команду `fdisk` для `/dev/sdd`, `/dev/sde` и `/dev/sdf`.
 
 5. Проверьте конфигурацию диска:
 
@@ -421,7 +421,7 @@ ssh <publicIpAddress>
    > Ключ должен содержать строку `ssh-rsa`. Кроме того, содержимое ключа должно быть одной строкой текста.
    >  
 
-6. В клиентской системе запустите PuTTY. В области **Категория** выберите **Подключение**  >  **SSH**  >  **AUTH**. В поле **файл закрытого ключа для проверки подлинности** перейдите к разделу, созданному ранее.
+6. В клиентской системе запустите PuTTY. В панели **Категория** перейдите к пункту **Подключение** > **SSH** > **Аутентификация**. В поле **Private key file for authentication (Файл закрытого ключа для проверки подлинности)** выберите созданный ранее ключ.
 
    ![Снимок экрана параметров аутентификации SSH](./media/oracle-asm/setprivatekey.png)
 
@@ -528,7 +528,7 @@ ssh <publicIpAddress>
    - Щелкните `ok` для создания группы дисков.
    - Щелкните `ok`, чтобы закрыть окно подтверждения.
 
-   ![Снимок экрана: диалоговое окно "Создание группы дисков", в котором выделяется параметр "внешний" (нет).](./media/oracle-asm/asm04.png)
+   ![Снимок экрана: диалоговое окно "Создание группы дисков" с выделенным параметром "Внешний" (нет).](./media/oracle-asm/asm04.png)
 
 6. Нажмите кнопку **Выйти**, чтобы закрыть ASM Configuration Assistant.
 

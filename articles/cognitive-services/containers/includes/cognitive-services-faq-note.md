@@ -1,7 +1,7 @@
 ---
-title: Часто задаваемые вопросы о Cognitive Services контейнерах. Примечание
+title: Примечание для часто задаваемых вопросов о контейнерах Cognitive Services
 titleSuffix: Azure Cognitive Services
-description: 'Часто задаваемые вопросы: Примечание.'
+description: Примечание для часто задаваемых вопросов.
 services: cognitive-services
 author: aahill
 manager: nitinme
@@ -10,11 +10,11 @@ ms.topic: include
 ms.date: 04/01/2020
 ms.author: aahi
 ms.openlocfilehash: 8e947d7839373c718e35fcdb26dde8930f43db7c
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "100391781"
 ---
 > [!TIP]
-> Дополнительные сведения и рекомендации по устранению неполадок см. в статье [Cognitive Services Containers (часто задаваемые вопросы)](../container-faq.yml).
+> С дополнительными сведениями и рекомендациями по устранению неполадок можно ознакомиться в разделе [Часто задаваемые вопросы о контейнерах Cognitive Services](../container-faq.yml).

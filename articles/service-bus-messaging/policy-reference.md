@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для службы сообщений Служебной шины Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для службы сообщений Служебной шины Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: reference
 author: spelluru
 ms.author: spelluru
 ms.service: service-bus-messaging
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 3488aba49cebdcc46b6a446fc17a174d3d8c7503
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 693cb34723ee2987472e3431a40d20f412df4cbe
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106089397"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107501151"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-service-bus-messaging"></a>Встроенные определения в Политике Azure для службы сообщений Служебной шины Azure
 

@@ -9,17 +9,17 @@ ms.topic: article
 ms.date: 08/02/2018
 ms.author: kegorman
 ms.openlocfilehash: 1b04ef24ff01787c6904db0e288c23d4434e7dcf
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101673828"
 ---
 # <a name="implement-oracle-data-guard-on-an-azure-linux-virtual-machine"></a>Реализация Oracle Data Guard на виртуальной машине Azure под управлением Linux 
 
 Azure CLI используется для создания ресурсов Azure и управления ими из командной строки или с помощью сценариев. В этой статье описывается, как с помощью Azure CLI развернуть базу данных Oracle Database 12c из образа Azure Marketplace. В этой статье представлено пошаговое руководство по установке и настройке Data Guard на виртуальной машине Azure.
 
-Прежде чем начать, убедитесь, что установлен интерфейс командной строки Azure CLI. Дополнительные сведения см. в разделе [руководства по установке Azure CLI](/cli/azure/install-azure-cli).
+Прежде чем начать, убедитесь, что установлен интерфейс командной строки Azure CLI. Дополнительные сведения см. в [руководстве по установке Azure CLI](/cli/azure/install-azure-cli).
 
 ## <a name="prepare-the-environment"></a>Подготовка среды
 ### <a name="assumptions"></a>Предположения
@@ -267,7 +267,7 @@ SQL> ALTER DATABASE FORCE LOGGING;
 SQL> ALTER SYSTEM SWITCH LOGFILE;
 ```
 
-Создайте резервные журналы повторяемых операций, задав те же размер и количество, что и в журналах повтора базы данных источника:
+При создании резервных журналов повторяемых операций их размер и количество должны совпадать с размером и количеством журналов повторяемых операций базы данных источника:
 
 ```bash
 SQL> ALTER DATABASE ADD STANDBY LOGFILE ('/u01/app/oracle/oradata/cdb1/standby_redo01.log') SIZE 200M;
@@ -276,7 +276,7 @@ SQL> ALTER DATABASE ADD STANDBY LOGFILE ('/u01/app/oracle/oradata/cdb1/standby_r
 SQL> ALTER DATABASE ADD STANDBY LOGFILE ('/u01/app/oracle/oradata/cdb1/standby_redo04.log') SIZE 200M;
 ```
 
-Включите воспоминаний (что делает восстановление гораздо проще) и задайте для параметра Управление РЕЗЕРВными \_ файлами значение \_ Авто. выход из SQL * Plus после этого.
+Включите переключение базы данных (Flashback) (что значительно упростит восстановление) и задайте для параметра STANDBY\_FILE\_MANAGEMENT значение AUTO. После этого выйдите из SQL*Plus.
 
 ```bash
 SQL> ALTER DATABASE FLASHBACK ON;
@@ -506,7 +506,7 @@ SQL> EXIT;
 
 ### <a name="configure-data-guard-broker-on-myvm1-primary"></a>Настройка брокера Data Guard на myVM1 (основная)
 
-Запустите диспетчер Data Guard и войдите, используя SYS и пароль. (Не использовать проверку подлинности ОС.) Выполните следующие действия.
+Запустите диспетчер Data Guard и войдите, используя SYS и пароль. (Не используйте проверку подлинности на уровне операционной системы.) Выполните следующие действия:
 
 ```bash
 $ dgmgrl sys/OraPasswd1@cdb1

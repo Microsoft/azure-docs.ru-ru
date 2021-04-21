@@ -3,7 +3,7 @@ title: Проверка методом моделирования защиты A
 description: Узнайте, как выполнять проверку посредством моделирования
 services: ddos-protection
 documentationcenter: na
-author: yitoh
+author: aletheatoh
 ms.service: ddos-protection
 ms.devlang: na
 ms.topic: article
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 09/08/2020
 ms.author: yitoh
-ms.openlocfilehash: 3be8682b3a12f06aa83db1791cb0ed125bbcee7e
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 4e6c6b441684d3877a8b85f40b650b257a5159da
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101719242"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107106077"
 ---
 # <a name="test-through-simulations"></a>Тестирование через моделирования
 
@@ -68,7 +68,7 @@ ms.locfileid: "101719242"
 
 Этот [Скрипт API-интерфейса](https://aka.ms/ddosbreakingpoint) можно использовать для автоматизации проверки защиты от атак DDoS, запуская его однократно или с помощью служебной программы "cron" для выполнения проверок по расписанию. Это целесообразно для проверки правильности настройки журнала событий и для подтверждения того, что процедуры обнаружения и реагирования работают эффективно. Для приведенных выше скриптов требуется ОС Linux (проверено с Ubuntu 18.04 LTS) и пакет Python 3. Установите необходимые компоненты и API-клиент с помощью прилагаемого скрипта или воспользуйтесь документацией с веб-сайта [Облако BreakingPoint](http://breakingpoint.cloud/).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте, как [просматривать и настраивать телеметрию по защите от DDoS-атак](telemetry.md).
 - Узнайте, как [просматривать и настраивать ведение журнала с диагностической информацией по DDoS-атакам](diagnostic-logging.md).

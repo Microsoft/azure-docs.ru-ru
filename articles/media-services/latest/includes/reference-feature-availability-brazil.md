@@ -4,22 +4,22 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: b966da89bb81f1c3790afcfabba7bca3077faada
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: d212a63912c4b5d38bad593ab5de68d5730a22e8
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104611839"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283000"
 ---
 <!--Feature availability in region-->
 ## <a name="brazil"></a>Бразилия
 
 | Компонент | Brazil South | Юго-Восточная Бразилия |
 | --- | :---: | :---: |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid Южная Бразилия](../media/azure-clouds-regions/ga.svg)  |![Будущее Azure EventGrid Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
-| [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Видеоанализерпресет Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Видеоанализерпресет Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
-| [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Аудиоанализерпресет Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Аудиоанализерпресет Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
-| [StandardEncoderPreset](../encoding-concept.md) |![Общая доступность Стандарденкодерпресет Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Стандарденкодерпресет Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
-| [LiveEvents](../live-streaming-overview.md) |![Общая доступность Лививентс Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Лививентс Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
-| [StreamingEndpoints](../streaming-endpoint-concept.md) |![Общая доступность Streamingendpoint Южная Бразилия](../media/azure-clouds-regions/ga.svg) | ![Streamingendpoint Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg)  |
-| [ливетранскриптион](../live-transcription.md) |![Общая доступность Ливетранскриптион Южная Бразилия](../media/azure-clouds-regions/ga.svg) |![Ливетранскриптион Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid, Южная Бразилия](../media/azure-clouds-regions/ga.svg)  |![Azure EventGrid, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg) |
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность VideoAnalyzerPreset, Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![VideoAnalyzerPreset, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg) |
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность AudioAnalyzerPreset, Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![AudioAnalyzerPreset, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg) |
+| [StandardEncoderPreset](../encode-concept.md) |![Общая доступность StandardEncoderPreset, Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![StandardEncoderPreset, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg) |
+| [LiveEvents](../stream-live-streaming-concept.md) |![Общая доступность LiveEvents, Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![LiveEvents, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg) |
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) |![Общая доступность StreamingEndpoints, Южная Бразилия](../media/azure-clouds-regions/ga.svg) | ![StreamingEndpoints, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg)  |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |![Общая доступность LiveTranscription, Южная Бразилия](../media/azure-clouds-regions/ga.svg) |![LiveTranscription, Юго-Восточная Бразилия (будущее развитие)](../media/azure-clouds-regions/planned-active.svg) |

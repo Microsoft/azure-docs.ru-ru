@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Azure Data Lake Analytics
 description: Здесь приведены встроенные определения политик в Политике Azure для Azure Data Lake Analytics. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: reference
 author: JasonWHowell
 ms.author: jasonh
 ms.service: data-lake-analytics
 ms.custom: subject-policy-reference
-ms.openlocfilehash: e048c860b5762595fd2b98b26e75ac86b3ac4919
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 4bbc57a03989dc665a96ad1b7a0e9bc21f9b788b
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106094616"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107497479"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-data-lake-analytics"></a>Встроенные определения в Политике Azure для Azure Data Lake Analytics
 

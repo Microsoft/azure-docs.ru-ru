@@ -4,22 +4,22 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: e646c3fd8422380a542f559b40b222033d5d74dc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: 9c0246d68de8c01b1779d5a95d405c61536f277e
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104612482"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283267"
 ---
 <!--Feature availability in region-->
 ## <a name="germany"></a>Германия
 
-| Компонент | Северная Германия (общедоступная) | Центрально-Западная Германия (общедоступная) |
+| Компонент | Северная Германия (общедоступная версия) | Центральная и Западная Германия (общедоступная версия) |
 | --- | :---: | :---: |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Azure EventGrid Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
-| [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Azure EventGrid Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) | ![Общая доступность Azure EventGrid Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
-| [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Аудиоанализерпресет Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Аудиоанализерпресет Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
-| [StandardEncoderPreset](../encoding-concept.md) | ![Общая доступность Стандарденкодерпресет Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Стандарденкодерпресет Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
-| [LiveEvents](../live-streaming-overview.md) | ![Общая доступность Лививентс Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Лививентс Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../streaming-endpoint-concept.md) | ![Общая доступность Streamingendpoint Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Streamingendpoint Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
-| [ливетранскриптион](../live-transcription.md) |![Общая доступность Ливетранскриптион Северная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Ливетранскриптион Центрально-Западная Германия (общедоступная)](../media/azure-clouds-regions/ga.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid, Северная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |![Общая доступность Azure EventGrid, Центральная и Западная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) | | |
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) | | |
+| [StandardEncoderPreset](../encode-concept.md) | ![Общая доступность StandardEncoderPreset, Северная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |![Общая доступность StandardEncoderPreset, Центральная и Западная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |
+| [LiveEvents](../stream-live-streaming-concept.md) | ![Общая доступность LiveEvents, Северная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |![Общая доступность LiveEvents, Центральная и Западная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) | ![Общая доступность StreamingEndpoints, Северная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |![Общая доступность StreamingEndpoints, Центральная и Западная Германия (общедоступная версия)](../media/azure-clouds-regions/ga.svg) |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |  | |

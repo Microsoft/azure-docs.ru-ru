@@ -1,5 +1,5 @@
 ---
-title: Средства сообщества — перемещение классических ресурсов в Azure Resource Manager
+title: Средства сообщества. Перенос классических ресурсов в развертывание с помощью Azure Resource Manager
 description: В этой статье перечислены инструменты, которые были предоставлены сообществом для упрощения переноса ресурсов IaaS из классической модели развертывания в модель развертывания с помощью Azure Resource Manager.
 author: tanmaygore
 manager: vashan
@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 02/06/2020
 ms.author: tagore
 ms.openlocfilehash: f165acb72fdf881a0828c38db577be1f8741384e
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101674744"
 ---
 # <a name="community-tools-to-migrate-iaas-resources-from-classic-to-azure-resource-manager"></a>Инструменты сообщества для переноса ресурсов IaaS из классической модели в модель Azure Resource Manager
 
 > [!IMPORTANT]
-> Сегодня около 90% виртуальных машин IaaS используют [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/). По состоянию на 28 февраля 2020, классические виртуальные машины являются устаревшими и будут полностью сняты с 1 марта 2023. [Узнайте больше]( https://aka.ms/classicvmretirement) об этой нерекомендуемости и [о том, как она влияет на вас](classic-vm-deprecation.md#how-does-this-affect-me).
+> Сегодня примерно на 90 % виртуальных машин IaaS используется служба [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/). По состоянию на 28 февраля 2020 г. классические виртуальные машины являются устаревшими и будут полностью выведены из эксплуатации до 1 марта 2023 г. [Узнайте больше]( https://aka.ms/classicvmretirement) об этом устаревании и [о том, как оно влияет на вас](classic-vm-deprecation.md#how-does-this-affect-me).
 
 В этой статье перечислены инструменты, которые были предоставлены сообществом, чтобы упростить перенос ресурсов IaaS из классической модели развертывания в модель развертывания с помощью Azure Resource Manager.
 
@@ -44,7 +44,7 @@ ms.locfileid: "101674744"
 
 [Ссылка на документацию по инструменту](https://github.com/Azure/migAz)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 * [Обзор поддерживаемого платформой переноса ресурсов IaaS из классической модели в модель Azure Resource Manager](migration-classic-resource-manager-overview.md)
 * [Техническое руководство по поддерживаемому платформой переносу из классической модели в модель Azure Resource Manager](migration-classic-resource-manager-deep-dive.md)

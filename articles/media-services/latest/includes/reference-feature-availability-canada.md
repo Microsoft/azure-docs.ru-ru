@@ -4,22 +4,22 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: a9f4ce6fb008c47f81c6838188f53fec604c2122
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.openlocfilehash: 876d47e0fbd199eb52c2de9a630b0bdf0dce21b3
+ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104611852"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283079"
 ---
 <!--Feature availability in region-->
 ## <a name="canada"></a>Канада
 
 | Компонент | Центральная Канада | Восточная Канада |
 | --- | :---: | :---: |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общие сведения о доступности Azure EventGrid Канада Central](../media/azure-clouds-regions/ga.svg)  |![Общедоступная доступность для восточной части Azure EventGrid Канада](../media/azure-clouds-regions/ga.svg) |
-| [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Видеоанализерпресет Канада Central](../media/azure-clouds-regions/ga.svg)  | ![Видеоанализерпресет Канада (Восточная часть)](../media/azure-clouds-regions/ga.svg) |
-| [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Аудиоанализерпресет Канада Central](../media/azure-clouds-regions/ga.svg)  | ![Аудиоанализерпресет Канада (Восточная часть)](../media/azure-clouds-regions/ga.svg) |
-| [StandardEncoderPreset](../encoding-concept.md) |![Общая доступность Стандарденкодерпресет Канада Central](../media/azure-clouds-regions/ga.svg)  | ![Стандарденкодерпресет Канада (Восточная часть)](../media/azure-clouds-regions/ga.svg) |
-| [LiveEvents](../live-streaming-overview.md) |![Общая доступность Лививентс Канада Central](../media/azure-clouds-regions/ga.svg)  | ![Лививентс Канада (Восточная часть)](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../streaming-endpoint-concept.md) |![Общая доступность Streamingendpoint Канада Central](../media/azure-clouds-regions/ga.svg) | ![Streamingendpoint Канада (Восточная часть)](../media/azure-clouds-regions/ga.svg)  |
-| [ливетранскриптион](../live-transcription.md) |![Общая доступность Ливетранскриптион Канада Central](../media/azure-clouds-regions/ga.svg) |![Ливетранскриптион Канада (Восточная часть)](../media/azure-clouds-regions/ga.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid, Центральная Канада](../media/azure-clouds-regions/ga.svg)  |![Общая доступность Azure EventGrid, Восточная Канада](../media/azure-clouds-regions/ga.svg) |
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность VideoAnalyzerPreset, Центральная Канада](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность VideoAnalyzerPreset, Восточная Канада](../media/azure-clouds-regions/ga.svg) |
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) |![Общая доступность AudioAnalyzerPreset, Центральная Канада](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность AudioAnalyzerPreset, Восточная Канада](../media/azure-clouds-regions/ga.svg) |
+| [StandardEncoderPreset](../encode-concept.md) |![Общая доступность StandardEncoderPreset, Центральная Канада](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность StandardEncoderPreset, Восточная Канада](../media/azure-clouds-regions/ga.svg) |
+| [LiveEvents](../stream-live-streaming-concept.md) |![Общая доступность LiveEvents, Центральная Канада](../media/azure-clouds-regions/ga.svg)  | ![Общая доступность LiveEvents, Восточная Канада](../media/azure-clouds-regions/ga.svg) |
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) |![Общая доступность StreamingEndpoints, Центральная Канада](../media/azure-clouds-regions/ga.svg) | ![Общая доступность StreamingEndpoints, Восточная Канада](../media/azure-clouds-regions/ga.svg)  |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |![Общая доступность LiveTranscription, Центральная Канада](../media/azure-clouds-regions/ga.svg) |![Общая доступность LiveTranscription, Восточная Канада](../media/azure-clouds-regions/ga.svg) |

@@ -9,15 +9,15 @@ ms.date: 09/15/2020
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: f5ebd05177abf5fb3468b3ce935b7d004b414424
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "100552917"
 ---
-NFS поддерживается во **всех** 30 регионах, где доступно хранилище Premium-файлов.
+NFS поддерживается во **ВСЕХ** более чем 30 регионах, где доступно хранилище файлов класса "Премиум".
 
-Мы постоянно добавляем регионы. Для наиболее актуального списка используйте приведенный ниже пример, чтобы запросить список регионов с поддержкой NFS. Вы также можете проверить поддержку вашего региона на [странице доступность продуктов Azure по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=storage&regions=all) в разделе **хранилище файлов Premium**.
+Регионы добавляются постоянно. Для получения наиболее актуального списка регионов с поддержкой NFS необходимо использовать приведенный ниже пример запроса. Проверить поддержку вашего региона можно также на [странице "Доступность продуктов Azure по регионам"](https://azure.microsoft.com/global-infrastructure/services/?products=storage&regions=all) в разделе **Хранилище файлов класса "Премиум"** .
 
 ```azurepowershell-interactive
 # Log in first with Connect-AzAccount if not using Cloud Shell

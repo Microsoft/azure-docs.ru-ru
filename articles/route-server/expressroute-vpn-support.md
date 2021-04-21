@@ -1,6 +1,6 @@
 ---
-title: О поддержке Azure Route Server (Предварительная версия) для ExpressRoute и Azure VPN
-description: Узнайте, как сервер маршрутизации Azure взаимодействует с ExpressRoute и VPN-шлюзами Azure.
+title: О поддержке Azure Route Server (предварительная версия) для ExpressRoute и Azure VPN
+description: Узнайте, как Azure Route Server взаимодействует с ExpressRoute и VPN-шлюзами Azure.
 services: route-server
 author: duongau
 ms.service: route-server
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.date: 03/02/2021
 ms.author: duau
 ms.openlocfilehash: 6e588c7c0381c6825bcf75cbbe28a1dd6b865940
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101680532"
 ---
-# <a name="about-azure-route-server-preview-support-for-expressroute-and-azure-vpn"></a>О поддержке Azure Route Server (Предварительная версия) для ExpressRoute и Azure VPN
+# <a name="about-azure-route-server-preview-support-for-expressroute-and-azure-vpn"></a>О поддержке Azure Route Server (предварительная версия) для ExpressRoute и Azure VPN
 
-Сервер маршрутизации Azure поддерживает не только виртуальные сетевые устройства сторонних производителей (NVA), работающие в Azure, но также тесно интегрируется с ExpressRoute и VPN-шлюзами Azure. Вам не нужно настраивать пиринг BGP между шлюзом и сервером маршрутизации Azure, а также управлять им. Можно включить обмен маршрутами между шлюзом и сервером маршрутизации Azure с помощью простого [изменения конфигурации](quickstart-configure-route-server-powershell.md#route-exchange).
+Azure Route Server поддерживает не только виртуальные сетевые устройства сторонних производителей (NVA), работающие в Azure, но также тесно интегрируется с ExpressRoute и VPN-шлюзами Azure. Пиринг BGP между шлюзом и Azure Route Server не нужно настраивать или управлять им. Обмен маршрутами между шлюзом и Azure Route Server можно включить с помощью простого [изменения конфигурации](quickstart-configure-route-server-powershell.md#route-exchange).
 
 > [!IMPORTANT]
 > Сервер маршрутизации Azure (предварительная версия) сейчас предоставляется в общедоступной предварительной версии.
@@ -25,26 +25,26 @@ ms.locfileid: "101680532"
 
 ## <a name="how-does-it-work"></a>Как это работает?
 
-При развертывании сервера маршрутизации Azure вместе с шлюзом ExpressRoute и NVA в виртуальной сети по умолчанию сервер маршрутизации Azure не распространяет маршруты, получаемые от шлюза NVA и ExpressRoute, между ними. После включения обмена маршрутами ExpressRoute и NVA будут изучать маршруты друг друга.
+При развертывании Azure Route Server вместе со шлюзом ExpressRoute и с виртуальным сетевым модулем (NVA) в виртуальной сети по умолчанию, маршруты, которые Azure Route Server получает от NVA и шлюза ExpressRoute, не распространяются между ними. После включения обмена маршрутами шлюз ExpressRoute и модуль NVA будут знать о маршрутах друг друга.
 
-Например, на следующей схеме:
+Например, рассмотрим следующую диаграмму:
 
-* Устройство СДВАН получит от сервера маршрутизации Azure маршрут из локальной среды 2, которая подключена к ExpressRoute, а также маршрут виртуальной сети.
+* Устройство SDWAN получит с помощью Azure Route Server маршрут от сети "On-prem 2" с подключением к ExpressRoute, а также маршрут виртуальной сети.
 
-* Шлюз ExpressRoute получит маршрут от "локального 1", который подключен к устройству СДВАН, а также маршрут виртуальной сети с сервера маршрутизации Azure.
+* Шлюз ExpressRoute получит маршрут от сети "On-prem 1" с подключением к устройству SDWAN, а также маршрут виртуальной сети от Azure Route Server.
 
-    ![Схема, на которой настроена ExpressRoute с сервером маршрутов.](./media/expressroute-vpn-support/expressroute-with-route-server.png)
+    ![Схема: настройка ExpressRoute с Route Server.](./media/expressroute-vpn-support/expressroute-with-route-server.png)
 
-Вы также можете заменить устройство СДВАН на VPN-шлюз Azure. Так как VPN-шлюзы Azure и ExpressRoute полностью управляются, необходимо только настроить обмен маршрутами между двумя локальными сетями для взаимодействия друг с другом.
+Устройство SDWAN можно также заменить на VPN-шлюз Azure. Так как VPN-шлюз Azure и шлюз ExpressRoute являются полностью управляемыми, нужно настроить только обмен маршрутами между двумя локальными сетями для обеспечения их взаимодействия друг с другом.
 
 > [!IMPORTANT] 
-> VPN-шлюз Azure должен быть настроен в режиме " [**активный — активный**](../vpn-gateway/vpn-gateway-activeactive-rm-powershell.md) ".
+> VPN-шлюз Azure должен быть настроен в режиме [**активный — активный**](../vpn-gateway/vpn-gateway-activeactive-rm-powershell.md).
 >
 
-![На схеме показана сеть ExpressRoute и VPN-шлюз, настроенный с помощью сервера маршрутов.](./media/expressroute-vpn-support/expressroute-and-vpn-with-route-server.png)
+![На схеме показана настройка ExpressRoute и VPN-шлюза, выполненная с помощью Route Server.](./media/expressroute-vpn-support/expressroute-and-vpn-with-route-server.png)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Дополнительные сведения о [сервере маршрутизации Azure](route-server-faq.md).
-- Узнайте, как [настроить сервер маршрутизации Azure](quickstart-configure-route-server-powershell.md).
-- Узнайте больше о [сосуществовании Azure ExpressRoute и Azure VPN](../expressroute/expressroute-howto-coexist-resource-manager.md).
+- Узнайте подробности об [Azure Route Server](route-server-faq.md).
+- Узнайте, как [настраивать Azure Route Server](quickstart-configure-route-server-powershell.md).
+- Узнайте подробности о [Совместной работе Azure ExpressRoute и Azure VPN](../expressroute/expressroute-howto-coexist-resource-manager.md).

@@ -1,5 +1,5 @@
 ---
-title: ДОСТУПНОСТЬ инфраструктуры Azure для SAP ASCS/SCS с WSFC&файловый ресурс | Документация Майкрософт
+title: Инфраструктура Azure для SAP ASCS/SCS HA с WSFC и общей папкой | Документация Майкрософт
 description: Подготовка высокодоступной инфраструктуры Azure для SAP с использованием отказоустойчивого кластера Windows и файлового ресурса для экземпляров SAP ASCS/SCS
 services: virtual-machines-windows,virtual-network,storage
 documentationcenter: saponazure
@@ -17,10 +17,10 @@ ms.date: 08/12/2020
 ms.author: radeltch
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: f539a63907bb7cbe9d04dc3249427357d79d7c87
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101673597"
 ---
 # <a name="prepare-azure-infrastructure-for-sap-high-availability-by-using-a-windows-failover-cluster-and-file-share-for-sap-ascsscs-instances"></a>Подготовка высокодоступной инфраструктуры Azure для SAP с помощью отказоустойчивого кластера Windows и файлового ресурса для экземпляров SAP ASCS/SCS
@@ -218,13 +218,13 @@ ms.locfileid: "101673597"
 | --- | --- | --- | --- |
 | Кластер ASCS/SCS первого узла | ascs-1 | 10.0.6.4 | ascs-as |
 | Кластер ASCS/SCS второго узла | ascs-2 | 10.0.6.5 | ascs-as |
-| Имя сети кластера |ascs-cl | 10.0.6.6 | Н/Д |
-| Имя сети кластера SAP ASCS PR1 |pr1-ascs | 10.0.6.7 | Н/Д |
+| Имя сети кластера |ascs-cl | 10.0.6.6 | Недоступно |
+| Имя сети кластера SAP ASCS PR1 |pr1-ascs | 10.0.6.7 | Недоступно |
 
 
 **Таблица 1**. Кластер ASCS/SCS
 
-| ПРОТОКОЛА \<SID> | Количество экземпляров SAP ASCS/SCS |
+| SAP \<SID> | Количество экземпляров SAP ASCS/SCS |
 | --- | --- |
 | PR1 | 00 |
 
@@ -236,8 +236,8 @@ ms.locfileid: "101673597"
 | Первый узел кластера | sofs-1 | 10.0.6.10 | sofs-as |
 | Второй узел кластера | sofs-2 | 10.0.6.11 | sofs-as |
 | Третий узел кластера | sofs-3 | 10.0.6.12 | sofs-as |
-| Имя сети кластера | sofs-cl | 10.0.6.13 | Н/Д |
-| Имя глобального узла SAP | sapglobal | Используйте IP-адреса всех узлов кластера | Н/Д |
+| Имя сети кластера | sofs-cl | 10.0.6.13 | Недоступно |
+| Имя глобального узла SAP | sapglobal | Используйте IP-адреса всех узлов кластера | Недоступно |
 
 **Таблица 3**. Кластер масштабируемых файловых серверов
 
@@ -248,13 +248,13 @@ ms.locfileid: "101673597"
 
 * [Разверните виртуальные машины][sap-high-availability-infrastructure-wsfc-shared-disk].
 
-* [Создание и настройка балансировщика нагрузки Azure для SAP ASCS][sap-high-availability-infrastructure-wsfc-shared-disk-default-ascs-ilb-rules].
+* [Создайте и настройте балансировщик нагрузки Azure для SAP ASCS][sap-high-availability-infrastructure-wsfc-shared-disk-default-ascs-ilb-rules].
 
-* [Если используется очередь сервера репликации 2 (ERS2), выполните настройку Azure Load Balancer для ERS2 ][sap-high-availability-infrastructure-wsfc-shared-disk-default-ascs-ilb-rules]. 
+* [При использовании сервера репликации очереди 2 (ERS2), выполните настройку балансировщика нагрузки Azure для ERS2 ][sap-high-availability-infrastructure-wsfc-shared-disk-default-ascs-ilb-rules]. 
 
-* [Добавление виртуальных машин Windows в домен][sap-high-availability-infrastructure-wsfc-shared-disk-add-win-domain].
+* [Присоедините виртуальные машины Windows к домену][sap-high-availability-infrastructure-wsfc-shared-disk-add-win-domain].
 
-* [Добавьте записи реестра на обоих узлах кластера экземпляра SAP ASCS/SCS][sap-high-availability-infrastructure-wsfc-shared-disk-add-win-domain].
+* [Добавьте в реестр записи для обоих узлов кластера экземпляра SAP ASCS/SCS][sap-high-availability-infrastructure-wsfc-shared-disk-add-win-domain].
 
 * При использовании Windows Server 2016 рекомендуется настроить [облако-свидетель Azure][deploy-cloud-witness].
 
@@ -312,7 +312,7 @@ Add-ClusterScaleOutFileServerRole -Name $SAPGlobalHostName
 
 ![Рисунок 1. Экран пользовательского интерфейса для шаблона Resource Manager для масштабируемого файлового сервера с управляемыми дисками][sap-ha-guide-figure-8010]
 
-_**Рис. 1**. экран пользовательского интерфейса для шаблона Scale-Out файлового сервера диспетчер ресурсов с управляемыми дисками_
+_**Рисунок 1**. Экран пользовательского интерфейса для шаблона Resource Manager для масштабируемого файлового сервера с управляемыми дисками_
 
 В шаблоне выполните следующее.
 1. В поле **Vm Count** (Число виртуальных машин) введите минимальное число, равное **2**.
@@ -326,19 +326,19 @@ _**Рис. 1**. экран пользовательского интерфейс
 
 ![Рисунок 2. Экран пользовательского интерфейса для шаблона Resource Manager для масштабируемого файлового сервера без управляемых дисков][sap-ha-guide-figure-8011]
 
-_**Рис. 2**. экран пользовательского интерфейса для шаблона Scale-Out файлового сервера Azure Resource Manager без управляемых дисков_
+_**Рисунок 2**. Экран пользовательского интерфейса для шаблона Resource Manager для масштабируемого файлового сервера без управляемых дисков_
 
 В поле **Тип учетной записи хранения** выберите **Хранилище класса "Премиум"**. Все прочие параметры совпадают с параметрами управляемых дисков.
 
-## <a name="adjust-cluster-timeout-settings"></a>Настройка параметров времени ожидания кластера
+## <a name="adjust-cluster-timeout-settings"></a>Настройте для кластера параметры времени ожидания
 
-После успешной установки кластера Windows Scale-Out файлового сервера необходимо адаптировать пороговые значения времени ожидания для обнаружения отработки отказа в условиях Azure. Параметры, которые необходимо изменить, описаны в записи блога [Tuning Failover Cluster Network Thresholds][tuning-failover-cluster-network-thresholds] (Настройка пороговых значений сети отказоустойчивого кластера). При условии, что кластеризованные виртуальные машины находятся в одной подсети, измените следующие параметры на следующие значения:
+После успешной установки кластера масштабируемых файловых серверов Windows необходимо выразить пороговые значения времени ожидания для обнаружения отработки отказа в виде условий Azure. Параметры, которые необходимо изменить, описаны в записи блога [Tuning Failover Cluster Network Thresholds][tuning-failover-cluster-network-thresholds] (Настройка пороговых значений сети отказоустойчивого кластера). При условии, что кластеризованные виртуальные машины находятся в одной подсети, задайте для следующих параметров указанные значения:
 
 - SameSubNetDelay = 2000
 - SameSubNetThreshold = 15
-- Раутехисториленгс = 30
+- RouteHistoryLength = 30
 
-Эти параметры были протестированы у клиентов, они обеспечивают удачный компромисс. Они достаточно устойчивы, но они также обеспечивают достаточную отработку отказа в реальных условиях возникновения ошибок или сбоя виртуальной машины.
+Эти параметры были протестированы у клиентов, они обеспечивают удачный компромисс. Эти параметры обеспечивают достаточно устойчивую работу и быструю отработку отказа в условиях реальных ошибок или сбоев виртуальных машин.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

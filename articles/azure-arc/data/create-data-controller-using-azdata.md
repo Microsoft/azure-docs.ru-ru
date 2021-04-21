@@ -1,6 +1,6 @@
 ---
-title: Создание контроллера данных с помощью Azure Data CLI (аздата)
-description: Создайте контроллер данных Arc Azure в обычном кластере Kubernetes с несколькими узлами, который вы уже создали с помощью интерфейса командной строки Azure (аздата).
+title: Создание контроллера данных с помощью Azure Data CLI (azdata)
+description: Описывается создание контроллера данных Arc Azure в типичном кластере Kubernetes с несколькими узлами, который вы уже создавали с помощью Azure Data CLI (azdata).
 services: azure-arc
 ms.service: azure-arc
 ms.subservice: azure-arc-data
@@ -10,29 +10,29 @@ ms.reviewer: mikeray
 ms.date: 03/02/2021
 ms.topic: how-to
 ms.openlocfilehash: facb7db73bf7a709b9ed07e460d8653d79f1ed2f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101687607"
 ---
-# <a name="create-azure-arc-data-controller-using-the-azure-data-cli-azdata"></a>Создание контроллера данных ARC в Azure с помощью [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)]
+# <a name="create-azure-arc-data-controller-using-the-azure-data-cli-azdata"></a>Создание контроллера данных Azure Arc с помощью [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)]
 
 [!INCLUDE [azure-arc-data-preview](../../../includes/azure-arc-data-preview.md)]
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Ознакомьтесь с разделом [Создание контроллера данных ARC в Azure](create-data-controller.md) для получения общих сведений.
+Ознакомьтесь с разделом [Создание контроллера данных Azure Arc](create-data-controller.md) для получения общих сведений.
 
-Чтобы создать контроллер данных ARC в Azure с помощью, необходимо [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)] [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)] установить.
+Чтобы создать контроллер данных Azure Arc с помощью [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)], необходимо установить [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)].
 
    [Установите [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)]](install-client-tools.md)
 
-Независимо от выбранной целевой платформы перед созданием учетной записи администратора контроллера данных необходимо задать следующие переменные среды. Эти учетные данные можно предоставить другим пользователям, которым требуется доступ администратора к контроллеру данных по мере необходимости.
+Независимо от выбранной целевой платформы перед созданием учетной записи администратора контроллера данных необходимо задать следующие переменные среды. Эти учетные данные можно предоставить другим пользователям, которым может потребоваться доступ к контроллеру данных с привилегиями администратора.
 
-**AZDATA_USERNAME** — имя пользователя, выбранного для администратора контроллера данных. Например, `arcadmin`.
+**AZDATA_USERNAME** — имя пользователя, выбранного в качестве администратора контроллера данных. Пример: `arcadmin`
 
-**AZDATA_PASSWORD** — пароль, выбранный для пользователя администратора контроллера данных. Длина пароля должна составлять не менее восьми символов и содержать символы из трех из следующих четырех наборов: прописные буквы, строчные буквы, числа и символы.
+**AZDATA_PASSWORD** — пароль, выбранный для пользователя контроллера данных с привилегиями администратора. Пароль должен быть не короче восьми символов и содержать символы трех из следующих четырех групп: прописные буквы, строчные буквы, цифры, специальные символы.
 
 ### <a name="linux-or-macos"></a>Linux и macOS
 
@@ -48,9 +48,9 @@ $ENV:AZDATA_USERNAME="<your username of choice>"
 $ENV:AZDATA_PASSWORD="<your password of choice>"
 ```
 
-Вам потребуется подключиться к кластеру Kubernetes и пройти проверку подлинности, после чего будет выбран существующий контекст Kubernetes перед началом создания контроллера данных ARC в Azure. Способ подключения к кластеру или службе Kubernetes меняется. См. документацию по дистрибутиву Kubernetes или службе, которую вы используете для подключения к серверу API Kubernetes.
+Перед началом создания контроллера данных Azure Arc вам нужно подключиться к кластеру Kubernetes и пройти проверку подлинности, после чего будет выбран существующий контекст Kubernetes. Способ подключения к кластеру или службе Kubernetes может быть разным. См. документацию по дистрибутиву Kubernetes или службе, которую вы используете для подключения к серверу API Kubernetes.
 
-Вы можете проверить наличие текущего подключения Kubernetes и проверить текущий контекст с помощью следующих команд.
+Вы можете убедиться в наличии текущего подключения к Kubernetes и проверить текущий контекст с помощью следующих команд.
 
 ```console
 kubectl get namespace
@@ -59,13 +59,13 @@ kubectl config current-context
 
 ### <a name="connectivity-modes"></a>Режимы подключения
 
-Как описано в разделе [режимы подключения и требования](./connectivity.md), контроллер данных ARC для Azure можно развернуть либо в `direct` режиме подключения, либо с помощью `indirect` . В `direct` режиме подключения данные об использовании автоматически и постоянно отправляются в Azure. В этих статьях в примерах указывается `direct` режим подключения следующим образом:
+Как описано в разделе [Режимы подключения и соответствующие им требования](./connectivity.md), контроллер данных Azure Arc можно развернуть в одном из двух режимов подключения: `direct` или `indirect`. В режиме подключения `direct` данные об использовании отправляются в Azure автоматически и непрерывно. В примерах из этих статей режим подключения `direct` определяется следующим образом:
 
    ```console
    --connectivity-mode direct
    ```
 
-   Чтобы создать контроллер с `indirect` режимом подключения, обновите скрипты в примере, как указано ниже:
+   Чтобы создать контроллер с режимом подключения `indirect`, обновите скрипты из примера, как указано ниже:
 
    ```console
    --connectivity-mode indirect
@@ -73,26 +73,26 @@ kubectl config current-context
 
 #### <a name="create-service-principal"></a>Создание субъекта-службы
 
-При развертывании контроллера данных ARC в Azure с `direct` режимом подключения для подключения к Azure требуются учетные данные субъекта-службы. Субъект-служба используется для отправки данных об использовании и метриках. 
+При развертывании контроллера данных Azure Arc с режимом подключения `direct` для подключения к Azure требуются учетные данные субъекта-службы. Субъект-служба используется для отправки данных об использовании и метриках. 
 
-Выполните следующие команды, чтобы создать субъект-службу передачи метрик.
+Выполните следующие команды, чтобы создать субъект-службу для передачи метрик:
 
 > [!NOTE]
-> Для создания субъекта-службы требуются [определенные разрешения в Azure](../../active-directory/develop/howto-create-service-principal-portal.md#permissions-required-for-registering-an-app).
+> Для создания субъекта-службы требуются [определенные привилегии](../../active-directory/develop/howto-create-service-principal-portal.md#permissions-required-for-registering-an-app) в Azure.
 
-Чтобы создать субъект-службу, обновите следующий пример. Замените `<ServicePrincipalName>` именем субъекта-службы и выполните команду:
+Для создания субъекта-службы используйте указанный ниже пример. Замените `<ServicePrincipalName>` именем субъекта-службы и выполните команду:
 
 ```azurecli
 az ad sp create-for-rbac --name <ServicePrincipalName>
 ``` 
 
-Если вы создали субъект-службу ранее и просто хотите получить текущие учетные данные, выполните следующую команду, чтобы сбросить учетные данные.
+Если вы уже создали субъект-службу ранее и просто хотите получить текущие учетные данные, выполните следующую команду, чтобы сбросить учетные данные.
 
 ```azurecli
 az ad sp credential reset --name <ServicePrincipalName>
 ```
 
-Например, чтобы создать субъект-службу с именем `azure-arc-metrics` , выполните следующую команду:
+Например, чтобы создать субъект-службу с именем `azure-arc-metrics`, выполните следующую команду
 
 ```console
 az ad sp create-for-rbac --name azure-arc-metrics
@@ -108,7 +108,7 @@ az ad sp create-for-rbac --name azure-arc-metrics
 "tenant": "72f988bf-85f1-41af-91ab-2d7cd01ad1234"
 ```
 
-Сохраните `appId` значения, `password` и `tenant` в переменной среды для последующего использования. 
+Сохраните значения `appId`, `password` и `tenant` в переменной среды для последующего использования. 
 
 #### <a name="save-environment-variables-in-windows"></a>Сохранение переменных среды в Windows
 
@@ -143,24 +143,24 @@ $Env:SPN_AUTHORITY="https://login.microsoftonline.com"
 
 Выполните следующую команду, чтобы назначить субъекту-службе `Monitoring Metrics Publisher` роль в подписке, в которой находятся ресурсы экземпляра базы данных:
 
-#### <a name="run-the-command-on-windows"></a>Выполнение команды в Windows
+#### <a name="run-the-command-on-windows"></a>Выполнение команд в Windows
 
 > [!NOTE]
-> При запуске из среды Windows необходимо использовать двойные кавычки для имен ролей.
+> При запуске из среды Windows для имен ролей необходимо использовать двойные кавычки.
 
 ```azurecli
 az role assignment create --assignee <appId> --role "Monitoring Metrics Publisher" --scope subscriptions/<Subscription ID>
 az role assignment create --assignee <appId> --role "Contributor" --scope subscriptions/<Subscription ID>
 ```
 
-#### <a name="run-the-command-on-linux-or-macos"></a>Выполнение команды в Linux или macOS
+#### <a name="run-the-command-on-linux-or-macos"></a>Выполнение команд в Linux или macOS
 
 ```azurecli
 az role assignment create --assignee <appId> --role 'Monitoring Metrics Publisher' --scope subscriptions/<Subscription ID>
 az role assignment create --assignee <appId> --role 'Contributor' --scope subscriptions/<Subscription ID>
 ```
 
-#### <a name="run-the-command-in-powershell"></a>Выполнение команды в PowerShell
+#### <a name="run-the-command-in-powershell"></a>Выполнение команд в PowerShell
 
 ```powershell
 az role assignment create --assignee <appId> --role 'Monitoring Metrics Publisher' --scope subscriptions/<Subscription ID>
@@ -180,27 +180,27 @@ az role assignment create --assignee <appId> --role 'Contributor' --scope subscr
 }
 ```
 
-Если субъект-служба назначена соответствующей роли и заданы переменные среды, можно продолжить создание контроллера данных. 
+Если субъекту-службе назначена соответствующая роль и заданы необходимые переменные среды, можно продолжить создание контроллера данных 
 
-## <a name="create-the-azure-arc-data-controller"></a>Создание контроллера данных ARC в Azure
+## <a name="create-the-azure-arc-data-controller"></a>Создание контроллера данных Azure Arc
 
 > [!NOTE]
-> Можно использовать другое значение для `--namespace` параметра команды аздата Arc DC Create в приведенных ниже примерах, но обязательно используйте это имя пространства имен для `--namespace parameter` всех остальных приведенных ниже команд.
+> Для параметра `--namespace` команды azdata arc dc create из следующих примеров можно применить другое значение, однако нужно использовать это имя пространства имен для `--namespace parameter` во всех других командах, приводимых далее.
 
-- [Создание в службе Kubernetes Azure (AKS)](#create-on-azure-kubernetes-service-aks)
-- [Создание в AKS Engine в центре Azure Stack](#create-on-aks-engine-on-azure-stack-hub)
-- [Создание в AKS на Azure Stack ХЦИ](#create-on-aks-on-azure-stack-hci)
-- [Создание в Azure Red Hat OpenShift (АТО)](#create-on-azure-red-hat-openshift-aro)
+- [Создание в службе Azure Kubernetes (AKS)](#create-on-azure-kubernetes-service-aks)
+- [Создание в обработчике AKS в Azure Stack Hub](#create-on-aks-engine-on-azure-stack-hub)
+- [Создание в AKS в Azure Stack HCI](#create-on-aks-on-azure-stack-hci)
+- [Создание в Azure Red Hat OpenShift (ARO)](#create-on-azure-red-hat-openshift-aro)
 - [Создание на платформе контейнеров Red Hat OpenShift (OCP)](#create-on-red-hat-openshift-container-platform-ocp)
-- [Создание в открытом источнике, вышестоящем Kubernetes (кубеадм)](#create-on-open-source-upstream-kubernetes-kubeadm)
-- [Создание службы AWS эластичных Kubernetes (ЕКС)](#create-on-aws-elastic-kubernetes-service-eks)
-- [Создание службы в Google Cloud Kubernetes Engine (ГКЕ)](#create-on-google-cloud-kubernetes-engine-service-gke)
+- [Создание в вышестоящем Kubernetes с открытым кодом (kubeadm)](#create-on-open-source-upstream-kubernetes-kubeadm)
+- [Создание в службе AWS Elastic Kubernetes Service (EKS)](#create-on-aws-elastic-kubernetes-service-eks)
+- [Создание в службе Google Cloud Kubernetes Engine Service (GKE)](#create-on-google-cloud-kubernetes-engine-service-gke)
 
-### <a name="create-on-azure-kubernetes-service-aks"></a>Создание в службе Kubernetes Azure (AKS)
+### <a name="create-on-azure-kubernetes-service-aks"></a>Создание в службе Azure Kubernetes (AKS)
 
-По умолчанию профиль развертывания AKS использует `managed-premium` класс хранения. `managed-premium`Класс хранения будет работать только при наличии виртуальных машин, развернутых с помощью образов виртуальных машин, имеющих диски класса Premium.
+В профиле развертывания AKS по умолчанию используется класс хранения `managed-premium`. Класс хранения `managed-premium` будет работать только при наличии виртуальных машин, развернутых с помощью образов виртуальных машин, имеющих диски класса Premium.
 
-Если вы собираетесь использовать `managed-premium` в качестве класса хранения, можно выполнить следующую команду, чтобы создать контроллер данных. Замените заполнители в команде на имя группы ресурсов, идентификатор подписки и расположение Azure.
+Если вы хотите использовать `managed-premium` в качестве класса хранения, для создания контроллера данных можно выполнить следующую. Замените заполнители в этой команде именем группы ресурсов, идентификатором подписки и расположением Azure.
 
 ```console
 azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -209,9 +209,9 @@ azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace ar
 #azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-Если вы не знаете, какой класс хранения следует использовать, следует использовать `default` поддерживаемый класс хранения независимо от типа используемой виртуальной машины. Он просто не обеспечивает максимальную производительность.
+Если вы не знаете, какой класс хранения использовать, нужно применить класс хранения `default`, который поддерживается независимо от типа используемой виртуальной машины. Только этот класс хранения не обеспечивает максимальную производительность.
 
-Если вы хотите использовать `default` класс Storage, можно выполнить следующую команду:
+Если вы хотите использовать класс хранения `default`, можно выполнить следующую команду:
 
 ```console
 azdata arc dc create --profile-name azure-arc-aks-default-storage --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -220,13 +220,13 @@ azdata arc dc create --profile-name azure-arc-aks-default-storage --namespace ar
 #azdata arc dc create --profile-name azure-arc-aks-default-storage --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
-### <a name="create-on-aks-engine-on-azure-stack-hub"></a>Создание в AKS Engine в центре Azure Stack
+### <a name="create-on-aks-engine-on-azure-stack-hub"></a>Создание в обработчике AKS в Azure Stack Hub
 
-По умолчанию профиль развертывания использует `managed-premium` класс хранения. `managed-premium`Класс хранения будет работать только при наличии рабочих виртуальных машин, развернутых с помощью образов виртуальных машин с дисков уровня "Премиум" в центре Azure Stack.
+В профиле развертывания по умолчанию используется класс хранения `managed-premium`. Класс хранения `managed-premium` будет работать только при наличии виртуальных машин, развернутых с помощью образов виртуальных машин, имеющих диски класса "Премиум" на Azure Stack Hub.
 
-Вы можете выполнить следующую команду, чтобы создать контроллер данных с помощью класса хранилища Managed-Premium:
+Вы можете выполнить следующую команду, чтобы создать контроллер данных с классом хранения "Управляемый премиум":
 
 ```console
 azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -235,9 +235,9 @@ azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace ar
 #azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-Если вы не знаете, какой класс хранения следует использовать, следует использовать `default` поддерживаемый класс хранения независимо от типа используемой виртуальной машины. В центре Azure Stack диски уровня "Премиум" и "Стандартный" поддерживаются одной инфраструктурой хранилища. Поэтому они должны обеспечивать одинаковую общую производительность, но с разными ограничениями операций ввода-вывода.
+Если вы не знаете, какой класс хранения использовать, нужно применить класс хранения `default`, который поддерживается независимо от типа используемой виртуальной машины. В Azure Stack Hub в основе дисков класса "Премиум" и стандартных дисков лежит одна и та же инфраструктура системы хранения. Поэтому они должны обеспечивать одинаковую общую производительность, но с разными ограничениями по операциям ввода-вывода.
 
-Если вы хотите использовать `default` класс Storage, то можете выполнить эту команду.
+Если вы хотите использовать класс хранения `default`, можно выполнить следующую команду.
 
 ```console
 azdata arc dc create --profile-name azure-arc-aks-default-storage --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -246,13 +246,13 @@ azdata arc dc create --profile-name azure-arc-aks-default-storage --namespace ar
 #azdata arc dc create --profile-name azure-arc-aks-premium-storage --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
-### <a name="create-on-aks-on-azure-stack-hci"></a>Создание в AKS на Azure Stack ХЦИ
+### <a name="create-on-aks-on-azure-stack-hci"></a>Создание в AKS в Azure Stack HCI
 
-По умолчанию профиль развертывания использует класс хранения с именем `default` и тип службы `LoadBalancer` .
+По умолчанию профиль развертывания использует класс хранения с именем `default` и тип службы `LoadBalancer`.
 
-Чтобы создать контроллер данных с помощью `default` класса хранения и типа службы, можно выполнить следующую команду `LoadBalancer` .
+Вы можете выполнить следующую команду, чтобы создать контроллер данных с классом хранения `default` и типом службы `LoadBalancer`.
 
 ```console
 azdata arc dc create --profile-name azure-arc-aks-hci --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -261,22 +261,22 @@ azdata arc dc create --profile-name azure-arc-aks-hci --namespace arc --name arc
 #azdata arc dc create --profile-name azure-arc-aks-hci --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
 
-### <a name="create-on-azure-red-hat-openshift-aro"></a>Создание в Azure Red Hat OpenShift (АТО)
+### <a name="create-on-azure-red-hat-openshift-aro"></a>Создание в Azure Red Hat OpenShift (ARO)
 
 Для Azure Red Hat OpenShift требуется ограничение контекста безопасности.
 
 #### <a name="apply-the-security-context"></a>Применение контекста безопасности
 
-Перед созданием контроллера данных в Azure Red Hat OpenShift необходимо применить определенные ограничения контекста безопасности (SCC). В предварительной версии это ослабляет ограничения безопасности. В будущих выпусках будет предоставляться обновленная версия SCC.
+Перед созданием контроллера данных в Azure Red Hat OpenShift необходимо применить определенные ограничения контекста безопасности (SCC). В предварительной версии такое применение ослабляет ограничения безопасности. В будущих выпусках будет предоставляться обновленная версия SCC.
 
 [!INCLUDE [apply-security-context-constraint](includes/apply-security-context-constraint.md)]
 
-#### <a name="create-custom-deployment-profile"></a>Создание пользовательского профиля развертывания
+#### <a name="create-custom-deployment-profile"></a>Создание настраиваемого профиля развертывания
 
-Используйте профиль `azure-arc-azure-openshift` для Azure RedHat Open Shift.
+Для Azure RedHat Open Shift используйте профиль `azure-arc-azure-openshift`.
 
 ```console
 azdata arc dc config init --source azure-arc-azure-openshift --path ./custom
@@ -287,7 +287,7 @@ azdata arc dc config init --source azure-arc-azure-openshift --path ./custom
 Для создания контроллера данных можно выполнить следующую команду:
 
 > [!NOTE]
-> Используйте то же пространство имен здесь и в `oc adm policy add-scc-to-user` командах выше. Пример: `arc` .
+> Используйте одно и то же пространство имен здесь и в приведенной ниже команде `oc adm policy add-scc-to-user`. Пример: `arc`.
 
 ```console
 azdata arc dc create --profile-name azure-arc-azure-openshift --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -296,20 +296,20 @@ azdata arc dc create --profile-name azure-arc-azure-openshift --namespace arc --
 #azdata arc dc create --profile-name azure-arc-azure-openshift --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
 ### <a name="create-on-red-hat-openshift-container-platform-ocp"></a>Создание на платформе контейнеров Red Hat OpenShift (OCP)
 
 > [!NOTE]
-> Если вы используете платформу контейнеров Red Hat OpenShift в Azure, рекомендуется использовать последнюю доступную версию.
+> Рекомендуется использовать последнюю доступную версию платформы контейнеров Red Hat OpenShift в Azure.
 
 Перед созданием контроллера данных в Red Hat OCP необходимо применить определенные ограничения контекста безопасности. 
 
-#### <a name="apply-the-security-context-constraint"></a>Применить ограничение контекста безопасности
+#### <a name="apply-the-security-context-constraint"></a>Применение ограничения контекста безопасности
 
 [!INCLUDE [apply-security-context-constraint](includes/apply-security-context-constraint.md)]
 
-#### <a name="determine-storage-class"></a>Определение класса хранения
+#### <a name="determine-storage-class"></a>Определение класса хранилища
 
 Кроме того, необходимо определить, какой класс хранения следует использовать, выполнив следующую команду.
 
@@ -317,11 +317,11 @@ azdata arc dc create --profile-name azure-arc-azure-openshift --namespace arc --
 kubectl get storageclass
 ```
 
-#### <a name="create-custom-deployment-profile"></a>Создание пользовательского профиля развертывания
+#### <a name="create-custom-deployment-profile"></a>Создание настраиваемого профиля развертывания
 
-Создайте новый файл пользовательского профиля развертывания на основе `azure-arc-openshift` профиля развертывания, выполнив следующую команду. Эта команда создает каталог `custom` в текущем рабочем каталоге и файл пользовательского профиля развертывания `control.json` в этом каталоге.
+Создайте новый файл настраиваемого профиля развертывания на основе профиля развертывания `azure-arc-openshift`, выполнив следующую команду. Эта команда создает каталог `custom` в текущем рабочем каталоге и файл настраиваемого профиля развертывания `control.json` в этом каталоге.
 
-Используйте профиль `azure-arc-openshift` для платформы контейнера OpenShift.
+Используйте профиль `azure-arc-openshift` для платформы контейнеров OpenShift.
 
 ```console
 azdata arc dc config init --source azure-arc-openshift --path ./custom
@@ -329,7 +329,7 @@ azdata arc dc config init --source azure-arc-openshift --path ./custom
 
 #### <a name="set-storage-class"></a>Задание класса хранения 
 
-Теперь задайте требуемый класс хранения, заменив приведенную `<storageclassname>` ниже команду на имя класса хранения, который вы хотите использовать, выполнив указанную `kubectl get storageclass` выше команду.
+Теперь задайте необходимый класс хранения, заменив `<storageclassname>` в приведенной ниже команде именем класса хранения, который вы хотите использовать и который был определен при выполнении команды `kubectl get storageclass` ранее.
 
 ```console
 azdata arc dc config replace --path ./custom/control.json --json-values "spec.storage.data.className=<storageclassname>"
@@ -340,9 +340,9 @@ azdata arc dc config replace --path ./custom/control.json --json-values "spec.st
 #azdata arc dc config replace --path ./custom/control.json --json-values "spec.storage.logs.className=mystorageclass"
 ```
 
-#### <a name="set-loadbalancer-optional"></a>Установка балансировщика нагрузки (необязательно)
+#### <a name="set-loadbalancer-optional"></a>Задание балансировщика нагрузки (необязательно)
 
-По умолчанию в `azure-arc-openshift` `NodePort` качестве типа службы используется профиль развертывания. Если вы используете кластер OpenShift, интегрированный с подсистемой балансировки нагрузки, можно изменить конфигурацию для использования `LoadBalancer` типа службы с помощью следующей команды:
+По умолчанию в профиле развертывания `azure-arc-openshift` в качестве типа службы используется `NodePort`. Если вы используете кластер OpenShift, интегрированный с подсистемой балансировки нагрузки, можно изменить конфигурацию для использования типа службы `LoadBalancer` с помощью следующей команды:
 
 ```console
 azdata arc dc config replace --path ./custom/control.json --json-values "$.spec.services[*].serviceType=LoadBalancer"
@@ -350,21 +350,21 @@ azdata arc dc config replace --path ./custom/control.json --json-values "$.spec.
 
 #### <a name="verify-security-policies"></a>Проверка политик безопасности
 
-При использовании OpenShift может потребоваться выполнение с политиками безопасности по умолчанию в OpenShift или требуется, чтобы среда была заблокирована чаще, чем обычная. При необходимости можно отключить некоторые функции, чтобы минимумить разрешения, необходимые во время развертывания, и во время выполнения, выполнив следующие команды.
+При использовании OpenShift вы можете продолжить работу с политиками безопасности по умолчанию в OpenShift или ввести более строгие ограничения среды, чем обычно. По выбору можно отключить некоторые функции, чтобы минимизировать уровень привилегий, необходимых во время развертывания и работы, выполнив следующие команды.
 
-Эта команда отключает сбор метрик для модулей Pod. Вы не сможете увидеть метрики для модулей Pod на панелях мониторинга Grafana, если эта функция отключена. Значение по умолчанию — true.
+Эта команда отключает сбор метрик для модулей Pod. Если эта функция отключена, метрики для модулей Pod не отображаются на панелях мониторинга Grafana. Значение по умолчанию — true.
 
 ```console
 azdata arc dc config replace -p ./custom/control.json --json-values spec.security.allowPodMetricsCollection=false
 ```
 
-Эта команда отключает коллекции метрик о узлах. Вы не сможете увидеть метрики для узлов на панелях мониторинга Grafana, если эта функция отключена. Значение по умолчанию — true.
+Эта команда отключает сбор метрик для узлов. Если эта функция отключена, метрики для узлов не отображаются на панелях мониторинга Grafana. Значение по умолчанию — true.
 
 ```console
 azdata arc dc config replace --path ./custom/control.json --json-values spec.security.allowNodeMetricsCollection=false
 ```
 
-Эта команда отключает возможность создавать дампы памяти для устранения неполадок.
+Эта команда отключает возможность создания дампов памяти для устранения неполадок.
 ```console
 azdata arc dc config replace --path ./custom/control.json --json-values spec.security.allowDumps=false
 ```
@@ -374,10 +374,10 @@ azdata arc dc config replace --path ./custom/control.json --json-values spec.sec
 Теперь все готово для создания контроллера данных с помощью следующей команды.
 
 > [!NOTE]
->   Используйте то же пространство имен здесь и в `oc adm policy add-scc-to-user` командах выше. Пример: `arc` .
+>   Используйте одно и то же пространство имен здесь и в приведенной ниже команде `oc adm policy add-scc-to-user`. Пример: `arc`.
 
 > [!NOTE]
->   `--path`Параметр должен указывать на _Каталог_ , содержащий control.jsв файле, а не на control.jsсамого файла.
+>   Параметр `--path` должен указывать на _каталог_, содержащий файл control.json, а не на сам файл control.json.
 
 
 ```console
@@ -387,25 +387,25 @@ azdata arc dc create --path ./custom --namespace arc --name arc --subscription <
 #azdata arc dc create --path ./custom --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
-### <a name="create-on-open-source-upstream-kubernetes-kubeadm"></a>Создание в открытом источнике, вышестоящем Kubernetes (кубеадм)
+### <a name="create-on-open-source-upstream-kubernetes-kubeadm"></a>Создание в вышестоящем Kubernetes с открытым кодом (kubeadm)
 
-По умолчанию профиль развертывания кубеадм использует класс хранения с именем `local-storage` и типом службы `NodePort` . Если это допустимо, можно пропустить приведенные ниже инструкции, которые задают требуемый класс хранения и тип службы, и сразу же выполнять `azdata arc dc create` следующую команду.
+По умолчанию в профиле развертывания kubeadm использует класс хранения с именем `local-storage` и тип службы `NodePort`. Если это устраивает вас, можно пропустить приведенные ниже инструкции, которые задают необходимый класс хранения и тип службы, и сразу же выполнить следующую команду `azdata arc dc create`.
 
-Если вы хотите настроить профиль развертывания, указав конкретный класс хранения и (или) тип службы, начните с создания нового файла пользовательского профиля развертывания на основе профиля развертывания кубеадм, выполнив следующую команду. Эта команда создаст каталог `custom` в текущем рабочем каталоге и файл пользовательского профиля развертывания `control.json` в этом каталоге.
+Если вы хотите настроить профиль развертывания, указав конкретный класс хранения и (или) тип службы, начните с создания нового файла настраиваемого профиля развертывания на основе профиля развертывания kubeadm, выполнив следующую команду. Эта команда создает каталог `custom` в текущем рабочем каталоге и файл настраиваемого профиля развертывания `control.json` в этом каталоге.
 
 ```console
 azdata arc dc config init --source azure-arc-kubeadm --path ./custom
 ```
 
-Можно найти доступные классы хранения, выполнив следующую команду.
+Доступные классы хранения можно найти, выполнив следующую команду.
 
 ```console
 kubectl get storageclass
 ```
 
-Теперь задайте требуемый класс хранения, заменив приведенную `<storageclassname>` ниже команду на имя класса хранения, который вы хотите использовать, выполнив указанную `kubectl get storageclass` выше команду.
+Теперь задайте необходимый класс хранения, заменив `<storageclassname>` в приведенной ниже команде именем класса хранения, который вы хотите использовать и который был определен при выполнении команды `kubectl get storageclass` ранее.
 
 ```console
 azdata arc dc config replace --path ./custom/control.json --json-values "spec.storage.data.className=<storageclassname>"
@@ -416,7 +416,7 @@ azdata arc dc config replace --path ./custom/control.json --json-values "spec.st
 #azdata arc dc config replace --path ./custom/control.json --json-values "spec.storage.logs.className=mystorageclass"
 ```
 
-По умолчанию в качестве типа службы используется профиль развертывания кубеадм `NodePort` . Если вы используете кластер Kubernetes, интегрированный с подсистемой балансировки нагрузки, можно изменить конфигурацию с помощью следующей команды.
+По умолчанию в профиле развертывания kubeadm в качестве типа службы используется `NodePort`. Если вы используете кластер Kubernetes, интегрированный с подсистемой балансировки нагрузки, конфигурацию можно изменить с помощью следующей команды.
 
 ```console
 azdata arc dc config replace --path ./custom/control.json --json-values "$.spec.services[*].serviceType=LoadBalancer"
@@ -431,13 +431,13 @@ azdata arc dc create --path ./custom --namespace arc --name arc --subscription <
 #azdata arc dc create --path ./custom --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
-### <a name="create-on-aws-elastic-kubernetes-service-eks"></a>Создание службы AWS эластичных Kubernetes (ЕКС)
+### <a name="create-on-aws-elastic-kubernetes-service-eks"></a>Создание в службе AWS Elastic Kubernetes Service (EKS)
 
-По умолчанию класс хранения ЕКС имеет значение, `gp2` а тип службы — `LoadBalancer` .
+По умолчанию класс хранения EKS имеет значение `gp2`, а тип службы — `LoadBalancer`.
 
-Выполните следующую команду, чтобы создать контроллер данных с помощью указанного профиля развертывания ЕКС.
+Выполните следующую команду, чтобы создать контроллер данных с помощью указанного профиля развертывания EKS.
 
 ```console
 azdata arc dc create --profile-name azure-arc-eks --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -446,13 +446,13 @@ azdata arc dc create --profile-name azure-arc-eks --namespace arc --name arc --s
 #azdata arc dc create --profile-name azure-arc-eks --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
-### <a name="create-on-google-cloud-kubernetes-engine-service-gke"></a>Создание службы в Google Cloud Kubernetes Engine (ГКЕ)
+### <a name="create-on-google-cloud-kubernetes-engine-service-gke"></a>Создание в службе Google Cloud Kubernetes Engine Service (GKE)
 
-По умолчанию класс хранения ГКЕ имеет значение, `standard` а тип службы — `LoadBalancer` .
+По умолчанию класс хранения GKE имеет значение `standard`, а тип службы — `LoadBalancer`.
 
-Выполните следующую команду, чтобы создать контроллер данных с помощью указанного профиля развертывания ГКЕ.
+Выполните следующую команду, чтобы создать контроллер данных с помощью указанного профиля развертывания GKE.
 
 ```console
 azdata arc dc create --profile-name azure-arc-gke --namespace arc --name arc --subscription <subscription id> --resource-group <resource group name> --location <location> --connectivity-mode direct
@@ -461,14 +461,14 @@ azdata arc dc create --profile-name azure-arc-gke --namespace arc --name arc --s
 #azdata arc dc create --profile-name azure-arc-gke --namespace arc --name arc --subscription 1e5ff510-76cf-44cc-9820-82f2d9b51951 --resource-group my-resource-group --location eastus --connectivity-mode direct
 ```
 
-После выполнения команды продолжите [наблюдение за состоянием создания](#monitoring-the-creation-status).
+После выполнения этой команды перейдите в раздел [Наблюдение за состоянием создания](#monitoring-the-creation-status).
 
-## <a name="monitoring-the-creation-status"></a>Наблюдение за состоянием создания
+## <a name="monitoring-the-creation-status"></a>Мониторинг состояния создания
 
-Создание контроллера займет несколько минут. Вы можете отслеживать ход выполнения в другом окне терминала с помощью следующих команд:
+Создание контроллера занимает несколько минут. Вы можете отслеживать ход выполнения этой операции в другом окне терминала с помощью следующих команд:
 
 > [!NOTE]
->  В примерах команд ниже предполагается, что вы создали контроллер данных и пространство имен Kubernetes с именем `arc` . Если вы использовали другое имя пространства имен или контроллера данных, вы можете заменить его на `arc` свое имя.
+>  В нижеследующих примерах команд предполагается, что вы создали контроллер данных и пространство имен Kubernetes с именем `arc`. Если вы использовали другое имя пространства имен или контроллера данных, вы можете заменить `arc` использованным вами именем.
 
 ```console
 kubectl get datacontroller/arc --namespace arc
@@ -478,7 +478,7 @@ kubectl get datacontroller/arc --namespace arc
 kubectl get pods --namespace arc
 ```
 
-Вы также можете проверить состояние создания любого конкретного модуля, выполнив команду, как показано ниже. Это особенно полезно для устранения любых проблем.
+Вы также можете проверить состояние создания любого модуля Pod, выполнив команду, как показано ниже. Это особенно полезно для устранения неполадок.
 
 ```console
 kubectl describe po/<pod name> --namespace arc
@@ -489,4 +489,4 @@ kubectl describe po/<pod name> --namespace arc
 
 ## <a name="troubleshooting-creation-problems"></a>Устранение неполадок при создании
 
-Если у вас возникли роняли с созданием, см. [руководство по устранению неполадок](troubleshoot-guide.md).
+Если при создании у вас возникли какие-либо проблемы, ознакомьтесь с [Руководством по устранению неполадок](troubleshoot-guide.md).

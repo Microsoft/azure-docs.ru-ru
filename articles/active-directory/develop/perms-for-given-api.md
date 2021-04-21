@@ -13,10 +13,10 @@ ms.date: 07/15/2019
 ms.author: ryanwi
 ROBOTS: NOINDEX
 ms.openlocfilehash: fe6e7277761c670d5af8743e6330ffe2340d235c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101647461"
 ---
 # <a name="how-to-select-permissions-for-a-given-api"></a>Выбор разрешений для заданного API
@@ -29,4 +29,4 @@ ms.locfileid: "101647461"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-[AzureAD Microsoft Q&A](/answers/topics/azure-active-directory.html)
+[Ответы на вопросы об Azure AD на сайте Microsoft Q&A](/answers/topics/azure-active-directory.html)

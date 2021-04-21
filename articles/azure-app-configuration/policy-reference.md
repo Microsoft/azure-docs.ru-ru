@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Конфигурации приложений Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для Конфигурации приложений Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: reference
 author: AlexandraKemperMS
 ms.author: alkemper
 ms.service: azure-app-configuration
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 866bd8f41c301765410fa2adf401d92377fc1808
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: abae4cbe8355b4cc01da9c2c71dfba2f68a50196
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106092508"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107497360"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-app-configuration"></a>Встроенные определения в Политике Azure для Конфигурации приложений Azure
 
