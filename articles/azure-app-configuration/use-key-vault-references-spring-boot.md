@@ -13,12 +13,12 @@ ms.topic: tutorial
 ms.date: 08/11/2020
 ms.author: alkemper
 ms.custom: mvc, devx-track-java, devx-track-azurecli
-ms.openlocfilehash: 04d9c7a343570349851a206fd69fdda822f790a4
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7c5534ab836968bc4e72a54db1ddb9667d366558
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99981482"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768855"
 ---
 # <a name="tutorial-use-key-vault-references-in-a-java-spring-app"></a>Руководство по Использование ссылок Key Vault в приложении Java Spring
 
@@ -93,7 +93,7 @@ ms.locfileid: "99981482"
 
 ## <a name="connect-to-key-vault"></a>Подключение к Key Vault
 
-1. В этом учебнике вы используете субъект-службу для проверки подлинности в KeyVault. Создайте субъект-службу с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) Azure CLI:
+1. В этом учебнике вы используете субъект-службу для проверки подлинности в KeyVault. Создайте субъект-службу с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az_ad_sp_create_for_rbac) Azure CLI:
 
     ```azurecli
     az ad sp create-for-rbac -n "http://mySP" --sdk-auth

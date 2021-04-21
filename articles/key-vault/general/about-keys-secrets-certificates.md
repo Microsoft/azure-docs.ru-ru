@@ -3,19 +3,18 @@ title: Общие сведения о ключах, секретах и серт
 description: Общие сведения об интерфейсе Azure Key Vault REST и подробные сведения о ключах, секретах и сертификатах.
 services: key-vault
 author: msmbaldwin
-manager: rkarlin
 tags: azure-resource-manager
 ms.service: key-vault
 ms.subservice: general
 ms.topic: overview
 ms.date: 04/17/2020
 ms.author: mbaldwin
-ms.openlocfilehash: f2a33b4011b0bb89ca17010fc787aebe8c17fc92
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: e3eb77d15c288c93298da6dd79a76565e5d67f96
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102183936"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107749948"
 ---
 # <a name="azure-key-vault-keys-secrets-and-certificates-overview"></a>Общие сведения о ключах, секретах и сертификатах Azure Key Vault
 

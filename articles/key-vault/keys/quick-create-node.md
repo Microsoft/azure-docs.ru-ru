@@ -8,12 +8,12 @@ ms.service: key-vault
 ms.subservice: keys
 ms.topic: quickstart
 ms.custom: devx-track-js
-ms.openlocfilehash: db6bb5c204bfe79b9d7470f651081aa4f4dcf2ed
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: c0066409732f4492186ea0bf604261e1ab59ca9f
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97932713"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107750308"
 ---
 # <a name="quickstart-azure-key-vault-key-client-library-for-javascript-version-4"></a>Краткое руководство. Использование клиентской библиотеки ключей Azure Key Vault для JavaScript (версия 4)
 
@@ -272,6 +272,6 @@ Purging your key from <your-unique-keyvault-name> ... done.
 
 - [Обзор Azure Key Vault](../general/overview.md)
 - [Обзор ключей Azure Key Vault](about-keys.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)
 - Статья [Обзор системы безопасности Key Vault](../general/security-overview.md)

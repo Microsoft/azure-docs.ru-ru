@@ -13,12 +13,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 09/10/2019
   ms.author: aahi
-  ms.openlocfilehash: ccf8dd232bdfa703400a949c8dd948fe9ba21f54
-  ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+  ms.openlocfilehash: 24f6ec0afc0760b2f57f7ac9409f0b84f2e630da
+  ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/08/2021
-  ms.locfileid: "102454929"
+  ms.lasthandoff: 04/20/2021
+  ms.locfileid: "107789111"
 landingContent:
 - title: Узнайте больше об API "Детектор аномалий"
   linkLists:
@@ -121,4 +121,4 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices/#cognitive_services
     - text: Azure CLI
-      url: /cli/azure/cognitiveservices#az-cognitiveservices-list
+      url: /cli/azure/cognitiveservices#az_cognitiveservices_list

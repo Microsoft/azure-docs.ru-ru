@@ -7,12 +7,12 @@ ms.service: cosmos-db
 ms.subservice: cosmosdb-table
 ms.topic: sample
 ms.date: 07/29/2020
-ms.openlocfilehash: 6df5f3842ba08b04dd82910d3762472f4ff4febd
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 04f8d541fc534a60550ba77d9775b340571a504f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94566815"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107788967"
 ---
 # <a name="create-resource-lock-for-a-azure-cosmos-db-table-api-table-using-azure-cli"></a>Создание блокировки ресурса для таблицы API таблицы БД Azure Cosmos с помощью Azure CLI
 [!INCLUDE[appliesto-table-api](../../../includes/appliesto-table-api.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "94566815"
 
 | Get-Help | Примечания |
 |---|---|
-| [az lock create](/cli/azure/lock#az-lock-create) | Создание блокировки. |
-| [az lock list](/cli/azure/lock#az-lock-list) | Вывод сведений о блокировке. |
-| [az lock show](/cli/azure/lock#az-lock-show) | Отображение свойств блокировки. |
-| [az lock delete](/cli/azure/lock#az-lock-delete) | Удаление блокировки. |
+| [az lock create](/cli/azure/lock#az_lock_create) | Создание блокировки. |
+| [az lock list](/cli/azure/lock#az_lock_list) | Вывод сведений о блокировке. |
+| [az lock show](/cli/azure/lock#az_lock_show) | Отображение свойств блокировки. |
+| [az lock delete](/cli/azure/lock#az_lock_delete) | Удаление блокировки. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

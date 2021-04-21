@@ -3,16 +3,16 @@ title: Учебник — имитация ответов API в управле
 description: В этом руководстве вы используете службу управления API для задания политик в отношении API, чтобы она возвращала фиктивный ответ, если серверная часть недоступна для отправки реальных ответов.
 author: vladvino
 ms.service: api-management
-ms.custom: mvc
+ms.custom: mvc, devx-track-azurecli
 ms.topic: tutorial
 ms.date: 02/09/2021
 ms.author: apimpm
-ms.openlocfilehash: 75727d139242e1b537505d2ed907ae20fc5479f8
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a7617a36ed800f1765ed7723568a4b612fcb6518
+ms.sourcegitcommit: 272351402a140422205ff50b59f80d3c6758f6f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "100547279"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107587601"
 ---
 # <a name="tutorial-mock-api-responses"></a>Руководство по Макетирование ответов API
 

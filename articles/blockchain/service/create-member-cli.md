@@ -5,12 +5,12 @@ ms.date: 07/23/2020
 ms.topic: quickstart
 ms.reviewer: ravastra
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 3442c3b6023edcde97aabcb13e91120ba6811027
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 2d94640e1c6a037893fb1ad9198b82195c46dd24
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91323079"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768131"
 ---
 # <a name="quickstart-create-an-azure-blockchain-service-blockchain-member-using-azure-cli"></a>Краткое руководство. Создание участника блокчейн-сети службы "Блокчейн Azure" с помощью Azure CLI
 
@@ -34,7 +34,7 @@ Azure Cloud Shell — это бесплатная интерактивная о�
 
 1. Войдите.
 
-    Выполните вход с помощью команды [az login](/cli/azure/reference-index#az-login), если вы используете локальную установку CLI.
+    Выполните вход с помощью команды [az login](/cli/azure/reference-index#az_login), если вы используете локальную установку CLI.
 
     ```azurecli
     az login
@@ -56,7 +56,7 @@ Azure Cloud Shell — это бесплатная интерактивная о�
 
     Служба "Блокчейн Azure", как и все ресурсы Azure, должна быть развернута в группе ресурсов. Группы ресурсов позволяют организовать соответствующие ресурсы Azure и управлять ими.
 
-    В рамках данного краткого руководства создайте группу ресурсов _myResourceGroup_ в регионе _eastus_ с помощью следующей команды [az group create](/cli/azure/group#az-group-create).
+    В рамках данного краткого руководства создайте группу ресурсов _myResourceGroup_ в регионе _eastus_ с помощью следующей команды [az group create](/cli/azure/group#az_group_create).
 
     ```azurecli-interactive
     az group create \

@@ -8,12 +8,12 @@ ms.devlang: azurecli
 ms.topic: quickstart
 ms.date: 3/18/2020
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 3279150d0cb7b287f0a78581094a51356033596c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 042c70fdd08a6de2b97c4560eb2b6a24eec0bb34
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98662166"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107789993"
 ---
 # <a name="quickstart-create-an-azure-database-for-mariadb-server-by-using-the-azure-cli"></a>Краткое руководство. Создание сервера Базы данных Azure для MariaDB с помощью Azure CLI
 
@@ -25,7 +25,7 @@ Azure CLI можно использовать для создания ресур
 
 - Для работы с этой статьей требуется Azure CLI версии 2.0 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
-Если у вас несколько подписок, выберите подписку, содержащую ресурс, или подписку, на которую выставляются счета. Выберите конкретный идентификатор подписки вашей учетной записи, выполнив команду [az account set](/cli/azure/account#az-account-set).
+Если у вас несколько подписок, выберите подписку, содержащую ресурс, или подписку, на которую выставляются счета. Выберите конкретный идентификатор подписки вашей учетной записи, выполнив команду [az account set](/cli/azure/account#az_account_set).
 
 ```azurecli-interactive
 az account set --subscription 00000000-0000-0000-0000-000000000000
@@ -33,7 +33,7 @@ az account set --subscription 00000000-0000-0000-0000-000000000000
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Создайте [группу ресурсов Azure](../azure-resource-manager/management/overview.md) с помощью команды [az group create](/cli/azure/group#az-group-create). Группа ресурсов — это логический контейнер, в котором ресурсы Azure развертываются и администрируются как группа.
+Создайте [группу ресурсов Azure](../azure-resource-manager/management/overview.md) с помощью команды [az group create](/cli/azure/group#az_group_create). Группа ресурсов — это логический контейнер, в котором ресурсы Azure развертываются и администрируются как группа.
 
 В следующем примере создается группа ресурсов с именем `myresourcegroup` в расположении `westus`:
 
@@ -43,7 +43,7 @@ az group create --name myresourcegroup --location westus
 
 ## <a name="create-an-azure-database-for-mariadb-server"></a>Создание сервера Базы данных Azure для MariaDB
 
-Создайте сервер Базы данных Azure для MariaDB, выполнив команду [az mariadb server create](/cli/azure/mariadb/server#az-mariadb-server-create). Сервер может управлять несколькими базами данных. Как правило, для каждого проекта и для каждого пользователя используется отдельная база данных.
+Создайте сервер Базы данных Azure для MariaDB, выполнив команду [az mariadb server create](/cli/azure/mariadb/server#az_mariadb_server_create). Сервер может управлять несколькими базами данных. Как правило, для каждого проекта и для каждого пользователя используется отдельная база данных.
 
 Параметр | Образец значения | Описание
 ---|---|---
@@ -77,7 +77,7 @@ az mariadb server create --resource-group myresourcegroup --name mydemoserver  -
 
 ## <a name="configure-a-firewall-rule"></a>Настройка правила брандмауэра
 
-Создайте правило брандмауэра на уровне сервера Базы данных Azure для MariaDB, выполнив команду [az mariadb server firewall-rule create](/cli/azure/mariadb/server/firewall-rule#az-mariadb-server-firewall-rule-create). Правило брандмауэра на уровне сервера позволяет внешним приложениям, таким как программа командной строки mysql или MySQL Workbench, подключаться к серверу через брандмауэр службы "База данных Azure для MariaDB".
+Создайте правило брандмауэра на уровне сервера Базы данных Azure для MariaDB, выполнив команду [az mariadb server firewall-rule create](/cli/azure/mariadb/server/firewall-rule#az_mariadb_server_firewall_rule_create). Правило брандмауэра на уровне сервера позволяет внешним приложениям, таким как программа командной строки mysql или MySQL Workbench, подключаться к серверу через брандмауэр службы "База данных Azure для MariaDB".
 
 В приведенном ниже примере создается правило брандмауэра с именем `AllowMyIP`, которое разрешает подключения с определенного IP-адреса — 192.168.0.1. Замените IP-адрес или диапазон IP-адресов в соответствии с расположением, из которого вы подключаетесь.
 
@@ -231,7 +231,7 @@ az mariadb server show --resource-group myresourcegroup --name mydemoserver
 az group delete --name myresourcegroup
 ```
 
-Если вы хотите удалить только тот сервер, который вы создали в этом руководстве, запустите команду [az mariadb server delete](/cli/azure/mariadb/server#az-mariadb-server-delete):
+Если вы хотите удалить только тот сервер, который вы создали в этом руководстве, запустите команду [az mariadb server delete](/cli/azure/mariadb/server#az_mariadb_server_delete):
 
 ```azurecli-interactive
 az mariadb server delete --resource-group myresourcegroup --name mydemoserver
