@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/01/2020
 ms.author: duau
-ms.openlocfilehash: fa5d34d195cfed2d5dbfa6954d83b28487bf0bba
-ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
+ms.openlocfilehash: d315fa5b588c6e5f2e4643ca18626e400e6ca01b
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106167759"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107785655"
 ---
 # <a name="tutorial-quickly-scale-and-protect-a-web-application-by-using-azure-front-door-and-azure-web-application-firewall-waf"></a>Руководство по Быстрое масштабирование и защита веб-приложения с помощью службы Azure Front Door и Брандмауэра веб-приложений Azure (WAF)
 
@@ -144,7 +144,7 @@ az network front-door update --name <> --resource-group <> --set frontendEndpoin
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если ресурсы, созданные при работе с этим руководством, больше не нужны, выполните команду [az group delete](/cli/azure/group#az-group-delete), чтобы удалить группу ресурсов, Front Door и политику WAF.
+Если ресурсы, созданные при работе с этим руководством, больше не нужны, выполните команду [az group delete](/cli/azure/group#az_group_delete), чтобы удалить группу ресурсов, Front Door и политику WAF.
 
 ```azurecli-interactive
   az group delete \

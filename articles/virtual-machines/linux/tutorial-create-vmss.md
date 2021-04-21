@@ -9,12 +9,12 @@ ms.subservice: linux
 ms.date: 06/01/2018
 ms.reviewer: mimckitt
 ms.custom: mimckitt, devx-track-js, devx-track-azurecli
-ms.openlocfilehash: c38fb976ca597647493f3dc3d32be79040ded6eb
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 4d31bde05158e89168f2a67b820c8743d4cd2729
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91320189"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107769901"
 ---
 # <a name="tutorial-create-a-virtual-machine-scale-set-and-deploy-a-highly-available-app-on-linux-with-the-azure-cli"></a>Руководство по Создание масштабируемого набора виртуальных машин и развертывание в Linux приложения высокого уровня доступности с помощью Azure CLI
 
@@ -91,13 +91,13 @@ runcmd:
 
 
 ## <a name="create-a-scale-set"></a>Создание масштабируемого набора
-Прежде чем создать масштабируемый набор, выполните команду [az group create](/cli/azure/group#az-group-create) для создания группы ресурсов. В следующем примере создается группа ресурсов с именем *myResourceGroupScaleSet* в расположении *eastus*.
+Прежде чем создать масштабируемый набор, выполните команду [az group create](/cli/azure/group#az_group_create) для создания группы ресурсов. В следующем примере создается группа ресурсов с именем *myResourceGroupScaleSet* в расположении *eastus*.
 
 ```azurecli-interactive
 az group create --name myResourceGroupScaleSet --location eastus
 ```
 
-Создайте масштабируемый набор виртуальных машин с помощью команды [az vmss create](/cli/azure/vmss#az-vmss-create). В следующем примере создается масштабируемый набор *myScaleSet*, используется пакет cloud-int для настройки виртуальной машины и создаются ключи SSH, если они не существуют.
+Создайте масштабируемый набор виртуальных машин с помощью команды [az vmss create](/cli/azure/vmss#az_vmss_create). В следующем примере создается масштабируемый набор *myScaleSet*, используется пакет cloud-int для настройки виртуальной машины и создаются ключи SSH, если они не существуют.
 
 ```azurecli-interactive
 az vmss create \
@@ -116,7 +116,7 @@ az vmss create \
 ## <a name="allow-web-traffic"></a>Разрешение веб-трафика
 Подсистема балансировки нагрузки была создана автоматически в составе масштабируемого набора виртуальных машин. Она распределяет трафик в наборе определенных виртуальных машин с помощью правил подсистемы балансировки нагрузки. Дополнительные сведения о принципах работы с балансировщиком нагрузки и его настройки см. в следующем руководстве [Балансировка нагрузки между виртуальными машинами в Azure](tutorial-load-balancer.md).
 
-Чтобы разрешить передачу трафика в веб-приложение, нужно создать правило командой [az network lb rule create](/cli/azure/network/lb/rule#az-network-lb-rule-create). В следующем примере создается правило *myLoadBalancerRuleWeb*.
+Чтобы разрешить передачу трафика в веб-приложение, нужно создать правило командой [az network lb rule create](/cli/azure/network/lb/rule#az_network_lb_rule_create). В следующем примере создается правило *myLoadBalancerRuleWeb*.
 
 ```azurecli-interactive
 az network lb rule create \
@@ -131,7 +131,7 @@ az network lb rule create \
 ```
 
 ## <a name="test-your-app"></a>Тестирование приложения
-Чтобы просмотреть приложение Node.js в Интернете, получите общедоступный IP-адрес балансировщика нагрузки с помощью команды [az network public-ip show](/cli/azure/network/public-ip#az-network-public-ip-show). Следующий пример получает IP-адрес для *myScaleSetLBPublicIP*, созданного ранее вместе с масштабируемым набором.
+Чтобы просмотреть приложение Node.js в Интернете, получите общедоступный IP-адрес балансировщика нагрузки с помощью команды [az network public-ip show](/cli/azure/network/public-ip#az_network_public_ip_show). Следующий пример получает IP-адрес для *myScaleSetLBPublicIP*, созданного ранее вместе с масштабируемым набором.
 
 ```azurecli-interactive
 az network public-ip show \
@@ -152,7 +152,7 @@ az network public-ip show \
 На протяжении жизненного цикла масштабируемого набора может возникнуть необходимость выполнить одну или несколько задач управления. Кроме того, можно создавать сценарии для автоматизации различных задач жизненного цикла. Azure CLI позволяет быстро выполнять эти задачи. Ниже приведено несколько распространенных задач.
 
 ### <a name="view-vms-in-a-scale-set"></a>Просмотр виртуальных машин в масштабируемом наборе
-Чтобы просмотреть список виртуальных машин, запущенных в масштабируемом наборе, используйте команду [az vmss list-instances](/cli/azure/vmss#az-vmss-list-instances) следующим образом:
+Чтобы просмотреть список виртуальных машин, запущенных в масштабируемом наборе, используйте команду [az vmss list-instances](/cli/azure/vmss#az_vmss_list_instances) следующим образом:
 
 ```azurecli-interactive
 az vmss list-instances \
@@ -172,7 +172,7 @@ az vmss list-instances \
 
 
 ### <a name="manually-increase-or-decrease-vm-instances"></a>Увеличение или уменьшение числа экземпляров виртуальной машины вручную
-Чтобы просмотреть количество экземпляров, присутствующих в масштабируемом наборе, используйте команду [az vmss show](/cli/azure/vmss#az-vmss-show) и отправьте запрос для *sku.capacity*.
+Чтобы просмотреть количество экземпляров, присутствующих в масштабируемом наборе, используйте команду [az vmss show](/cli/azure/vmss#az_vmss_show) и отправьте запрос для *sku.capacity*.
 
 ```azurecli-interactive
 az vmss show \
@@ -182,7 +182,7 @@ az vmss show \
     --output table
 ```
 
-После этого можно вручную увеличить или уменьшить число виртуальных машин в масштабируемом наборе, выполнив команду [az vmss scale](/cli/azure/vmss#az-vmss-scale). В следующем примере число виртуальных машин в масштабируемом наборе определяется равным *3*:
+После этого можно вручную увеличить или уменьшить число виртуальных машин в масштабируемом наборе, выполнив команду [az vmss scale](/cli/azure/vmss#az_vmss_scale). В следующем примере число виртуальных машин в масштабируемом наборе определяется равным *3*:
 
 ```azurecli-interactive
 az vmss scale \
@@ -192,7 +192,7 @@ az vmss scale \
 ```
 
 ### <a name="get-connection-info"></a>Получение сведений о подключении
-Чтобы получить сведения о подключении для виртуальных машин в масштабируемых наборах, выполните команду [az vmss list-instance-connection-info](/cli/azure/vmss#az-vmss-list-instance-connection-info). Эта команда выводит общедоступный IP-адрес и порт для каждой виртуальной машины, которая разрешает подключение по протоколу SSH:
+Чтобы получить сведения о подключении для виртуальных машин в масштабируемых наборах, выполните команду [az vmss list-instance-connection-info](/cli/azure/vmss#az_vmss_list_instance_connection_info). Эта команда выводит общедоступный IP-адрес и порт для каждой виртуальной машины, которая разрешает подключение по протоколу SSH:
 
 ```azurecli-interactive
 az vmss list-instance-connection-info \
@@ -205,7 +205,7 @@ az vmss list-instance-connection-info \
 Можно создавать диски данных и использовать их с масштабируемыми наборами. В предыдущем руководстве вы узнали, как [управлять дисками Azure](tutorial-manage-disks.md), и ознакомились с рекомендациями и способами повышения производительности для создания приложений на дисках данных, а не на диске ОС.
 
 ### <a name="create-scale-set-with-data-disks"></a>Создание масштабируемого набора с дисками данных
-Чтобы создать масштабируемый набор и подключить к нему диски данных, добавьте параметр `--data-disk-sizes-gb` в команду [az vmss create](/cli/azure/vmss#az-vmss-create). В следующем примере создается масштабируемый набор, в котором к каждому экземпляру подключен диск данных объемом в *50* ГБ.
+Чтобы создать масштабируемый набор и подключить к нему диски данных, добавьте параметр `--data-disk-sizes-gb` в команду [az vmss create](/cli/azure/vmss#az_vmss_create). В следующем примере создается масштабируемый набор, в котором к каждому экземпляру подключен диск данных объемом в *50* ГБ.
 
 ```azurecli-interactive
 az vmss create \
@@ -222,7 +222,7 @@ az vmss create \
 Когда экземпляры удаляются из масштабируемого набора, также удаляются подключенные к ним диски данных.
 
 ### <a name="add-data-disks"></a>Добавление дисков данных
-Чтобы добавить диск данных к экземплярам в масштабируемом наборе, выполните команду [az vmss disk attach](/cli/azure/vmss/disk#az-vmss-disk-attach). В следующем примере к каждому экземпляру добавляется диск данных объемом в *50* ГБ.
+Чтобы добавить диск данных к экземплярам в масштабируемом наборе, выполните команду [az vmss disk attach](/cli/azure/vmss/disk#az_vmss_disk_attach). В следующем примере к каждому экземпляру добавляется диск данных объемом в *50* ГБ.
 
 ```azurecli-interactive
 az vmss disk attach \
@@ -233,7 +233,7 @@ az vmss disk attach \
 ```
 
 ### <a name="detach-data-disks"></a>Отключение дисков данных
-Чтобы удалить диск данных из экземпляра в масштабируемом наборе, выполните команду [az vmss disk detach](/cli/azure/vmss/disk#az-vmss-disk-detach). В следующем примере из каждого экземпляра удаляется диск данных LUN *2*.
+Чтобы удалить диск данных из экземпляра в масштабируемом наборе, выполните команду [az vmss disk detach](/cli/azure/vmss/disk#az_vmss_disk_detach). В следующем примере из каждого экземпляра удаляется диск данных LUN *2*.
 
 ```azurecli-interactive
 az vmss disk detach \

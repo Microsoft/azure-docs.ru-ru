@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.date: 10/25/2018
 ms.author: troyhop
-ms.openlocfilehash: 22920e6535a19b1ab0ce970c1195cee676d9363f
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: ed83fdde4e005b0db76b9edf30faef5e8c732998
+ms.sourcegitcommit: 3ed0f0b1b66a741399dc59df2285546c66d1df38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106057734"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107714044"
 ---
 # <a name="tutorial-create-a-custom-simulated-device"></a>Руководство по созданию пользовательского имитированного устройства
 
@@ -34,7 +34,7 @@ ms.locfileid: "106057734"
 
 Для работы с этим руководством требуется развернутый экземпляр симулятора устройств в подписке Azure.
 
-Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на сайте GitHub.
+Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/azure-iot-pcs-device-simulation/blob/master/README.md) на сайте GitHub.
 
 ## <a name="view-your-device-models"></a>Просмотр моделей устройства
 

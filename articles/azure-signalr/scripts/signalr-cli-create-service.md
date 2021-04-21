@@ -8,12 +8,12 @@ ms.topic: sample
 ms.date: 11/13/2018
 ms.author: zhshang
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 17b8df919c5059da3f3abd7a4f06aca1eadd0817
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d4f0746b98411aeecaf5bd6ec798cf3df7a9db8d
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94563976"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787419"
 ---
 # <a name="create-a-signalr-service"></a>Создание службы SignalR 
 
@@ -69,9 +69,9 @@ echo "$primaryConnectionString"
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az signalr create](/cli/azure/signalr#az-signalr-create) | Создание ресурса службы Azure SignalR. |
-| [az signalr key list](/cli/azure/signalr/key#az-signalr-key-list) | Выводит список ключей, которые будут использоваться приложением для принудительной отправки обновлений через SignalR в режиме реального времени. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az signalr create](/cli/azure/signalr#az_signalr_create) | Создание ресурса службы Azure SignalR. |
+| [az signalr key list](/cli/azure/signalr/key#az_signalr_key_list) | Выводит список ключей, которые будут использоваться приложением для принудительной отправки обновлений через SignalR в режиме реального времени. |
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

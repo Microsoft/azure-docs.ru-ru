@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.custom: devx-track-csharp, mvc, devcenter, vs-azure, seodec18, contperf-fy21q1
 zone_pivot_groups: app-service-platform-windows-linux
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2a789b4ca1261c79e8e6eb93a4ed44e7e8e9272e
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: ff86bedf47395b50dc25e552b8b3ed4176e23b65
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102214241"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107769109"
 ---
 # <a name="quickstart-create-an-aspnet-core-web-app-in-azure"></a>Краткое руководство. Создание веб-приложения ASP.NET Core в Azure
 
@@ -256,7 +256,7 @@ az login
     <li>Если команда <code>az</code> не распознана, проверьте, установили ли вы Azure CLI согласно сведениям, указанным в разделе <a href="#1-prepare-your-environment">Подготовка среды</a>.</li>
     <li>Замените <code>&lt;app-name&gt;</code> именем, уникальным для всех регионов Azure (<em>допустимыми символами являются <code>a-z</code>, <code>0-9</code>и <code>-</code></em>). Рекомендуется использовать сочетание названия компании и идентификатора приложения.</li>
     <li>Аргумент <code>--sku F1</code> создает веб-приложение в ценовой категории "Бесплатный". Этот аргумент можно опустить, чтобы использовать более быструю ценовую категорию "Премиум" с почасовой оплатой.</li>
-    <li>При необходимости вы можете использовать аргумент <code>--location &lt;location-name&gt;</code>, где <code>&lt;location-name&gt;</code> является доступным регионом Azure. Список допустимых регионов для учетной записи Azure можно получить, выполнив команду <a href="/cli/azure/appservice#az-appservice-list-locations"><code>az account list-locations</code></a>.</li>
+    <li>При необходимости вы можете использовать аргумент <code>--location &lt;location-name&gt;</code>, где <code>&lt;location-name&gt;</code> является доступным регионом Azure. Список допустимых регионов для учетной записи Azure можно получить, выполнив команду <a href="/cli/azure/appservice#az_appservice_list_locations"><code>az account list-locations</code></a>.</li>
     </ul>
     </details>
     
@@ -268,7 +268,7 @@ az login
     <ul>
     <li>создание группы ресурсов по умолчанию;</li>
     <li>создание плана Службы приложений по умолчанию;</li>
-    <li><a href="/cli/azure/webapp#az-webapp-create">создание приложения Службы приложений</a> с указанным именем;</li>
+    <li><a href="/cli/azure/webapp#az_webapp_create">создание приложения Службы приложений</a> с указанным именем;</li>
     <li><a href="/azure/app-service/deploy-zip">развертывание ZIP-файлов</a> для приложения из текущего рабочего каталога.</li>
     <li>При выполнении оно предоставляет сообщения о создании ресурсов, ведении журналов и развертывании из ZIP-файлов.</li>
     </ul>
@@ -302,14 +302,14 @@ http://<app_name>.azurewebsites.net
 
 <hr/> 
 
-## <a name="7-update-and-redeploy-the-code"></a>7. Обновление и повторное развертывание кода
+## <a name="7-update-and-redeploy-the-code&quot;></a>7. Обновление и повторное развертывание кода
 
 1. **Откройте файл _Startup.cs_** в локальном каталоге. 
 
 1. **Внесите небольшое изменение** в текст в вызове метода `context.Response.WriteAsync`.
 
     ```csharp
-    await context.Response.WriteAsync("Hello Azure!");
+    await context.Response.WriteAsync(&quot;Hello Azure!");
     ```
     
 1. **Сохраните изменения**.

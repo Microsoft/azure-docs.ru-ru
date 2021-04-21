@@ -7,12 +7,12 @@ ms.service: cosmos-db
 ms.subservice: cosmosdb-cassandra
 ms.topic: sample
 ms.date: 07/29/2020
-ms.openlocfilehash: 94ff29d2c3272b61ff09fa0e564fcf2fcd281130
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b2c1e663c659935e7e820f30a281099058a4cf34
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94566050"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107771017"
 ---
 # <a name="create-a-resource-lock-for-azure-cosmos-cassandra-api-keyspace-and-table-using-azure-cli"></a>Создание блокировки ресурсов для пространства ключей и таблицы API Cassandra Azure Cosmos с помощью Azure CLI
 [!INCLUDE[appliesto-cassandra-api](../../../includes/appliesto-cassandra-api.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "94566050"
 
 | Get-Help | Примечания |
 |---|---|
-| [az lock create](/cli/azure/lock#az-lock-create) | Создание блокировки. |
-| [az lock list](/cli/azure/lock#az-lock-list) | Вывод сведений о блокировке. |
-| [az lock show](/cli/azure/lock#az-lock-show) | Отображение свойств блокировки. |
-| [az lock delete](/cli/azure/lock#az-lock-delete) | Удаление блокировки. |
+| [az lock create](/cli/azure/lock#az_lock_create) | Создание блокировки. |
+| [az lock list](/cli/azure/lock#az_lock_list) | Вывод сведений о блокировке. |
+| [az lock show](/cli/azure/lock#az_lock_show) | Отображение свойств блокировки. |
+| [az lock delete](/cli/azure/lock#az_lock_delete) | Удаление блокировки. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

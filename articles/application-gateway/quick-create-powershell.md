@@ -4,17 +4,19 @@ titleSuffix: Azure Application Gateway
 description: В этом кратком руководстве показано, как с помощью Azure PowerShell создать Шлюз приложений Azure, который направляет веб-трафик к виртуальным машинам в серверном пуле.
 services: application-gateway
 author: vhorne
-ms.service: application-gateway
-ms.topic: quickstart
-ms.date: 01/19/2021
 ms.author: victorh
-ms.custom: mvc
-ms.openlocfilehash: 8073d1e18b08a6deb0175f8eaf18de382e93e299
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 01/19/2021
+ms.topic: quickstart
+ms.service: application-gateway
+ms.custom:
+- mvc
+- mode-api
+ms.openlocfilehash: a4aa16ba4334e5f1e035face9549f4c03ad3a14f
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98601859"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107538557"
 ---
 # <a name="quickstart-direct-web-traffic-with-azure-application-gateway-using-azure-powershell"></a>Краткое руководство. Направление веб-трафика с помощью Шлюза приложений Azure в Azure PowerShell
 
@@ -254,4 +256,3 @@ Remove-AzResourceGroup -Name myResourceGroupAG
 
 > [!div class="nextstepaction"]
 > [Manage web traffic with an application gateway using Azure PowerShell](./tutorial-manage-web-traffic-powershell.md) (Управление веб-трафиком с помощью шлюза приложений в Azure PowerShell)
-

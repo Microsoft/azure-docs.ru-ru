@@ -15,12 +15,12 @@ ms.workload: identity
 ms.date: 12/15/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90b18c2556796f23be0c1135b0bad0d53368a46d
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a8dbe9665612e888b7e7afe95a472ba6b0de8d48
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97590959"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107762521"
 ---
 # <a name="configure-managed-identities-for-azure-resources-on-an-azure-vm-using-azure-cli"></a>Настройка управляемых удостоверений для ресурсов Azure на виртуальной машине Azure с помощью Azure CLI
 
@@ -49,13 +49,13 @@ ms.locfileid: "97590959"
 
 Чтобы создать виртуальную машину Azure с включенным управляемым удостоверением, назначаемым системой, вашей учетной записи должна быть назначена роль [Участник виртуальных машин](../../role-based-access-control/built-in-roles.md#virtual-machine-contributor).  Назначать другие роли в каталоге Azure AD не требуется.
 
-1. Создайте [группу ресурсов](../../azure-resource-manager/management/overview.md#terminology) с помощью параметра [az group create](/cli/azure/group/#az-group-create), чтобы сохранить и развернуть виртуальную машину и связанные с ней ресурсы. Если вы уже создали группу ресурсов, которую можно использовать, этот шаг можно пропустить:
+1. Создайте [группу ресурсов](../../azure-resource-manager/management/overview.md#terminology) с помощью параметра [az group create](/cli/azure/group/#az_group_create), чтобы сохранить и развернуть виртуальную машину и связанные с ней ресурсы. Если вы уже создали группу ресурсов, которую можно использовать, этот шаг можно пропустить:
 
    ```azurecli-interactive 
    az group create --name myResourceGroup --location westus
    ```
 
-1. Создайте виртуальную машину, выполнив команду [az vm create](/cli/azure/vm/#az-vm-create). В приведенном ниже примере создается виртуальная машина *myVM* с управляемым удостоверением, назначаемым системой, как указывает параметр `--assign-identity`. В параметрах `--admin-username` и `--admin-password` определяются имя и пароль учетной записи администратора для входа в виртуальную машину. Подставьте соответствующие значения для своей среды: 
+1. Создайте виртуальную машину, выполнив команду [az vm create](/cli/azure/vm/#az_vm_create). В приведенном ниже примере создается виртуальная машина *myVM* с управляемым удостоверением, назначаемым системой, как указывает параметр `--assign-identity`. В параметрах `--admin-username` и `--admin-password` определяются имя и пароль учетной записи администратора для входа в виртуальную машину. Подставьте соответствующие значения для своей среды: 
 
    ```azurecli-interactive 
    az vm create --resource-group myResourceGroup --name myVM --image win2016datacenter --generate-ssh-keys --assign-identity --admin-username azureuser --admin-password myPassword12
@@ -65,7 +65,7 @@ ms.locfileid: "97590959"
 
 Чтобы включить назначаемое системой управляемое удостоверение на виртуальной машине, вашей учетной записи должна быть назначена роль [Участника виртуальных машин](../../role-based-access-control/built-in-roles.md#virtual-machine-contributor).  Назначать другие роли в каталоге Azure AD не требуется.
 
-1. Если вы используете Azure CLI в локальной консоли, сначала выполните вход в Azure с помощью команды [az login](/cli/azure/reference-index#az-login). Используйте учетную запись, связанную с подпиской Azure, которая содержит виртуальную машину.
+1. Если вы используете Azure CLI в локальной консоли, сначала выполните вход в Azure с помощью команды [az login](/cli/azure/reference-index#az_login). Используйте учетную запись, связанную с подпиской Azure, которая содержит виртуальную машину.
 
    ```azurecli-interactive
    az login
@@ -106,13 +106,13 @@ az vm update -n myVM -g myResourceGroup --set identity.type="none"
 
 Чтобы назначить назначаемое пользователем удостоверение виртуальной машине во время ее создания, вашей учетной записи должны быть назначены роли [Участника виртуальных машин](../../role-based-access-control/built-in-roles.md#virtual-machine-contributor) и [Оператора управляемого удостоверения](../../role-based-access-control/built-in-roles.md#managed-identity-operator). Назначать другие роли в каталоге Azure AD не требуется.
 
-1. Если вы уже создали группу ресурсов, которую можно использовать, этот шаг можно пропустить. Создайте [группу ресурсов](~/articles/azure-resource-manager/management/overview.md#terminology) для хранения и развертывания управляемого удостоверения, назначаемого пользователем, используя команду [az group create](/cli/azure/group/#az-group-create). Не забудьте заменить значения параметров `<RESOURCE GROUP>` и `<LOCATION>` собственными. :
+1. Если вы уже создали группу ресурсов, которую можно использовать, этот шаг можно пропустить. Создайте [группу ресурсов](~/articles/azure-resource-manager/management/overview.md#terminology) для хранения и развертывания управляемого удостоверения, назначаемого пользователем, используя команду [az group create](/cli/azure/group/#az_group_create). Не забудьте заменить значения параметров `<RESOURCE GROUP>` и `<LOCATION>` собственными. :
 
    ```azurecli-interactive 
    az group create --name <RESOURCE GROUP> --location <LOCATION>
    ```
 
-2. Создайте управляемое удостоверение, назначаемое пользователем, с помощью команды [az identity create](/cli/azure/identity#az-identity-create).  Параметр `-g` указывает группу ресурсов, в которой создается управляемое удостоверение, назначаемое пользователем, а параметр `-n` — его имя.    
+2. Создайте управляемое удостоверение, назначаемое пользователем, с помощью команды [az identity create](/cli/azure/identity#az_identity_create).  Параметр `-g` указывает группу ресурсов, в которой создается управляемое удостоверение, назначаемое пользователем, а параметр `-n` — его имя.    
     
    [!INCLUDE [ua-character-limit](~/includes/managed-identity-ua-character-limits.md)]
 
@@ -136,7 +136,7 @@ az vm update -n myVM -g myResourceGroup --set identity.type="none"
    }
    ```
 
-3. Создайте виртуальную машину, выполнив команду [az vm create](/cli/azure/vm/#az-vm-create). В приведенном ниже примере создается виртуальная машина, связанная с новым удостоверением, назначаемым пользователем, в соответствии с параметром `--assign-identity`. Не забудьте заменить значения параметров `<RESOURCE GROUP>`, `<VM NAME>`, `<USER NAME>`, `<PASSWORD>` и `<USER ASSIGNED IDENTITY NAME>` своими значениями. 
+3. Создайте виртуальную машину, выполнив команду [az vm create](/cli/azure/vm/#az_vm_create). В приведенном ниже примере создается виртуальная машина, связанная с новым удостоверением, назначаемым пользователем, в соответствии с параметром `--assign-identity`. Не забудьте заменить значения параметров `<RESOURCE GROUP>`, `<VM NAME>`, `<USER NAME>`, `<PASSWORD>` и `<USER ASSIGNED IDENTITY NAME>` своими значениями. 
 
    ```azurecli-interactive 
    az vm create --resource-group <RESOURCE GROUP> --name <VM NAME> --image UbuntuLTS --admin-username <USER NAME> --admin-password <PASSWORD> --assign-identity <USER ASSIGNED IDENTITY NAME>
@@ -146,7 +146,7 @@ az vm update -n myVM -g myResourceGroup --set identity.type="none"
 
 Чтобы присвоить назначаемое пользователем удостоверение виртуальной машине, вашей учетной записи должны быть назначены роли [Участник виртуальных машин](../../role-based-access-control/built-in-roles.md#virtual-machine-contributor) и [Оператор управляемого удостоверения](../../role-based-access-control/built-in-roles.md#managed-identity-operator). Назначать другие роли в каталоге Azure AD не требуется.
 
-1. Создайте пользовательское удостоверение с помощью команды [az identity create](/cli/azure/identity#az-identity-create).  Параметр `-g` указывает группу ресурсов, в которой создается удостоверение, назначаемое пользователем, а параметр `-n` — его имя. Не забудьте заменить значения параметров `<RESOURCE GROUP>` и `<USER ASSIGNED IDENTITY NAME>` собственными:
+1. Создайте пользовательское удостоверение с помощью команды [az identity create](/cli/azure/identity#az_identity_create).  Параметр `-g` указывает группу ресурсов, в которой создается удостоверение, назначаемое пользователем, а параметр `-n` — его имя. Не забудьте заменить значения параметров `<RESOURCE GROUP>` и `<USER ASSIGNED IDENTITY NAME>` собственными:
 
     > [!IMPORTANT]
     > При создании управляемых удостоверений, назначаемых пользователем, не поддерживается использование специальных знаков (например, символа подчеркивания) в имени. Используйте буквенно-цифровые символы. Загляните сюда позже, чтобы проверить наличие новой информации.  Дополнительные сведения см. в разделе [Часто задаваемые вопросы и известные проблемы](known-issues.md).

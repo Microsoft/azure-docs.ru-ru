@@ -14,12 +14,12 @@ ms.workload: identity
 ms.date: 02/20/2019
 ms.author: rolyon
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 319bca74c8e781e5dc5022e9fb901b2edca24a80
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: e3743697d58d0f5b167b123df59bc5638aa60489
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "87485649"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107771683"
 ---
 # <a name="tutorial-create-an-azure-custom-role-using-azure-cli"></a>Руководство по Создание настраиваемой роли Azure с помощью Azure CLI
 
@@ -86,7 +86,7 @@ ms.locfileid: "87485649"
     "Microsoft.Support/*"
     ```
 
-1. Получите идентификатор подписки с помощью команды [az account list](/cli/azure/account#az-account-list).
+1. Получите идентификатор подписки с помощью команды [az account list](/cli/azure/account#az_account_list).
 
     ```azurecli
     az account list --output table
@@ -118,7 +118,7 @@ ms.locfileid: "87485649"
     }
     ```
     
-1. Чтобы создать пользовательскую роль, используйте команду [az role definition create](/cli/azure/role/definition#az-role-definition-create) и укажите файл определения роли JSON.
+1. Чтобы создать пользовательскую роль, используйте команду [az role definition create](/cli/azure/role/definition#az_role_definition_create) и укажите файл определения роли JSON.
 
     ```azurecli
     az role definition create --role-definition "~/CustomRoles/ReaderSupportRole.json"
@@ -155,7 +155,7 @@ ms.locfileid: "87485649"
 
 ## <a name="list-custom-roles"></a>Вывод списка настраиваемых ролей
 
-- Получить список всех пользовательских ролей можно с помощью команды [az role definition list](/cli/azure/role/definition#az-role-definition-list) с параметром `--custom-role-only`.
+- Получить список всех пользовательских ролей можно с помощью команды [az role definition list](/cli/azure/role/definition#az_role_definition_list) с параметром `--custom-role-only`.
 
     ```azurecli
     az role definition list --custom-role-only true
@@ -225,7 +225,7 @@ ms.locfileid: "87485649"
     }
     ```
         
-1. Чтобы обновить пользовательскую роль, используйте команду [az role definition update](/cli/azure/role/definition#az-role-definition-update) и укажите обновленный файл JSON.
+1. Чтобы обновить пользовательскую роль, используйте команду [az role definition update](/cli/azure/role/definition#az_role_definition_update) и укажите обновленный файл JSON.
 
     ```azurecli
     az role definition update --role-definition "~/CustomRoles/ReaderSupportRole.json"
@@ -261,7 +261,7 @@ ms.locfileid: "87485649"
     
 ## <a name="delete-a-custom-role"></a>Удаление настраиваемой роли
 
-- Используйте команду [az role definition delete](/cli/azure/role/definition#az-role-definition-delete) и укажите имя или идентификатор роли для удаления пользовательской роли.
+- Используйте команду [az role definition delete](/cli/azure/role/definition#az_role_definition_delete) и укажите имя или идентификатор роли для удаления пользовательской роли.
 
     ```azurecli
     az role definition delete --name "Reader Support Tickets"
