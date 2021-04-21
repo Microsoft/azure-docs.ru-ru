@@ -13,14 +13,14 @@ ms.service: virtual-machines-sap
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: infrastructure-services
-ms.date: 10/22/2020
+ms.date: 04/12/2021
 ms.author: radeltch
-ms.openlocfilehash: e33b514f61aec69c566eae455d2e59b1a66813f6
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 0d125f258be45889c6c917d9d1fe170bb9502cf7
+ms.sourcegitcommit: b4fbb7a6a0aa93656e8dd29979786069eca567dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101673803"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107307526"
 ---
 # <a name="high-availability-for-sap-netweaver-on-azure-vms-on-suse-linux-enterprise-server-for-sap-applications"></a>Руководство по обеспечению высокого уровня доступности виртуальных машин Azure для SAP NetWeaver на SUSE Linux Enterprise Server для приложений SAP
 
@@ -206,7 +206,6 @@ SAP NetWeaver требует общее хранилище для каталог
          1. Введите название нового правила подсистемы балансировки нагрузки (например, **nw1-lb-ascs**)
          1. Выберите внешний IP-адрес, внутренний пул и проверку работоспособности, созданные ранее (например, **nw1-ascs-frontend**, **nw1-backend** и **nw1-ascs-hp**)
          1. Выберите **Порты высокой доступности**.
-         1. Увеличьте время ожидания до 30 минут.
          1. **Не забудьте включить плавающий IP-адрес**.
          1. Нажмите кнопку "ОК"
          * Повторите описанные выше действия, чтобы создать правила балансировки нагрузки для ERS (например, **nw1-lb-ers**)

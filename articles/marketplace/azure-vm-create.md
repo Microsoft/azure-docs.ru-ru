@@ -7,18 +7,18 @@ ms.topic: how-to
 author: mingshen-ms
 ms.author: mingshen
 ms.date: 03/10/2021
-ms.openlocfilehash: 827e4d883fd9e80ae84845d620cc4ca00816f56e
-ms.sourcegitcommit: b0557848d0ad9b74bf293217862525d08fe0fc1d
+ms.openlocfilehash: 1ea8583b33fbe711fcffbf9626236923ecd0df8b
+ms.sourcegitcommit: 5f482220a6d994c33c7920f4e4d67d2a450f7f08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106551329"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107107233"
 ---
 # <a name="how-to-create-a-virtual-machine-offer-on-azure-marketplace"></a>Создание предложения виртуальной машины Azure в Azure Marketplace
 
 В этой статье описывается, как создать и опубликовать предложение виртуальной машины Azure в [Azure Marketplace](https://azuremarketplace.microsoft.com/). Она подходит для виртуальных машин на базе Windows или Linux, оснащенных операционной системой, виртуальным жестким диском (VHD) и дисками данных в количестве до 16 штук.
 
-Прежде чем начать, изучите статью [Управление учетной записью коммерческого магазина в центре партнеров](partner-center-portal/create-account.md). Убедитесь, что ваша учетная запись зарегистрирована в программе коммерческой платформы.
+Прежде чем начать, изучите статью [Управление учетной записью коммерческого магазина в центре партнеров](create-account.md). Убедитесь, что ваша учетная запись зарегистрирована в программе коммерческой платформы.
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 
@@ -62,7 +62,7 @@ ms.locfileid: "106551329"
 
 Выберите **Сохранить черновик**, прежде чем перейти к следующей вкладке в меню слева, щелкните **Свойства**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Настройка свойств предложения для виртуальной машины](azure-vm-create-properties.md)
 - [Рекомендации по размещению предложений](gtm-offer-listing-best-practices.md)

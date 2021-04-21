@@ -7,19 +7,19 @@ ms.service: app-service
 ms.topic: include
 ms.date: 02/02/2018
 ms.author: msangapu
-ms.custom: include file
-ms.openlocfilehash: 3239f7b584af6345a2dc7f2859f749698b012263
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.custom: include file, devx-track-azurecli
+ms.openlocfilehash: a61698a876deb1705e231a627ce6a8cac7586fe5
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102244755"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107779463"
 ---
 <!-- Please keep this file set to PHP 7.2, as that's the highest PHP version Laravel supports (as shown in the PHP+MySQL tutorial) -->
 
 Создайте [веб-приложение](../articles/app-service/overview.md#app-service-on-linux) в плане службы приложений `myAppServicePlan`. 
 
-В Cloud Shell можно использовать команду [`az webapp create`](/cli/azure/webapp#az-webapp-create). В следующем примере замените `<app-name>`глобальным уникальным именем приложения (допустимые символы: `a-z`, `0-9` и `-`). Для среды выполнения установлено значение `PHP|7.2`. Список всех поддерживаемых сред выполнения можно получить с помощью команды [`az webapp list-runtimes --linux`](/cli/azure/webapp#az-webapp-list-runtimes). 
+В Cloud Shell можно использовать команду [`az webapp create`](/cli/azure/webapp#az_webapp_create). В следующем примере замените `<app-name>`глобальным уникальным именем приложения (допустимые символы: `a-z`, `0-9` и `-`). Для среды выполнения установлено значение `PHP|7.2`. Список всех поддерживаемых сред выполнения можно получить с помощью команды [`az webapp list-runtimes --linux`](/cli/azure/webapp#az_webapp_list_runtimes). 
 
 ```azurecli-interactive
 # Bash

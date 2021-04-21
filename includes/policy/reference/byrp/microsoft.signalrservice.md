@@ -2,19 +2,20 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/24/2021
+ms.date: 04/14/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: 684c71c6ad76ee6063702894fb7b2249895bc5fc
-ms.sourcegitcommit: bb330af42e70e8419996d3cba4acff49d398b399
-ms.translationtype: MT
+ms.openlocfilehash: fe218a8a9859aeea23c03f6c10633073527e5cde
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105036970"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107501401"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
 |[Служба Azure SignalR должна отключать доступ к общедоступным сетям](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F21a9766a-82a5-4747-abb5-650b6dbba6d0) |Чтобы повысить уровень безопасности ресурса Службы Azure SignalR, убедитесь, что он не открыт для общедоступного Интернета и доступен только из частной конечной точки. Отключите свойство доступа к общедоступной сети, как описано по адресу [https://aka.ms/asrs/networkacls](https://aka.ms/asrs/networkacls). Этот параметр позволяет отключить доступ из любого общедоступного адресного пространства вне диапазона IP-адресов Azure и запретить все имена входа, соответствующие правилам брандмауэра на основе IP-адреса или виртуальной сети. Это снижает риски утечки данных. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SignalR/SignalR_PublicNetworkAccessDisabled_AuditDeny.json) |
 |[Служба Azure SignalR должна использовать SKU с поддержкой Приватного канала](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F464a1620-21b5-448d-8ce6-d4ac6d1bc49a) |Приватный канал Azure позволяет подключить виртуальную сеть к службам Azure без общедоступного IP-адреса в исходном или целевом расположении. Это защитит ваши ресурсы от рисков утечки общедоступных данных. Политика ограничивает доступ к номерам SKU с поддержкой Приватного канала для Службы Azure SignalR. Дополнительные сведения о приватном канале см. по адресу [https://aka.ms/asrs/privatelink](https://aka.ms/asrs/privatelink). |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SignalR/SignalR_AllowedSKU_AuditDeny.json) |
 |[Служба Azure SignalR должна использовать приватный канал](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F53503636-bcc9-4748-9663-5348217f160f) |Приватный канал Azure позволяет подключить виртуальную сеть к службам Azure без общедоступного IP-адреса в исходном или целевом расположении. Платформа Приватного канала поддерживает подключение между потребителем и службами через магистральную сеть Azure. Сопоставив частные конечные точки с ресурсом Службы Azure SignalR, а не со всей службой, вы снизите риски утечки данных. Дополнительные сведения о приватных каналах см. по адресу [https://aka.ms/asrs/privatelink](https://aka.ms/asrs/privatelink). |Audit, Deny, Disabled |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SignalR/SignalR_PrivateEndpointEnabled_Audit.json) |
+|[Настройка частных конечных точек для службы Azure SignalR](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fef45854f-b33f-49a3-8041-9057e915d88f) |Частные конечные точки подключают виртуальную сеть к службам Azure без общедоступного IP-адреса в исходном или целевом расположении. Благодаря сопоставлению частных конечных точек с ресурсами службы Azure SignalR можно снизить риски утечки данных. Подробная информация собрана на странице [https://aka.ms/asrs/privatelink](https://aka.ms/asrs/privatelink). |DeployIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SignalR/SignalR_PrivateEndpointEnabled_DeployIfNotExists.json) |
 |[Изменение ресурсов Службы Azure SignalR для отключения доступа к общедоступным сетям](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F62a3ae95-8169-403e-a2d2-b82141448092) |Чтобы повысить уровень безопасности ресурса Службы Azure SignalR, убедитесь, что он не открыт для общедоступного Интернета и доступен только из частной конечной точки. Отключите свойство доступа к общедоступной сети, как описано по адресу [https://aka.ms/asrs/networkacls](https://aka.ms/asrs/networkacls). Этот параметр позволяет отключить доступ из любого общедоступного адресного пространства вне диапазона IP-адресов Azure и запретить все имена входа, соответствующие правилам брандмауэра на основе IP-адреса или виртуальной сети. Это снижает риски утечки данных. |Modify, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SignalR/SignalR_PublicNetworkAccessDisabled_Modify.json) |
