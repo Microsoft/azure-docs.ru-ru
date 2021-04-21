@@ -10,10 +10,10 @@ ms.date: 08/02/2019
 ms.author: cshoe
 ms.custom: include file
 ms.openlocfilehash: e375a12be73c280f2778e6e28efb709b9116a4cf
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "100381666"
 ---
 ### <a name="default"></a>По умолчанию
@@ -27,10 +27,10 @@ ms.locfileid: "100381666"
 * `Stream`
 * `CloudBlobContainer`<sup>1</sup>
 * `CloudBlobDirectory`
-* `ICloudBlob`<sup>открыт</sup>
-* `CloudBlockBlob`<sup>открыт</sup>
-* `CloudPageBlob`<sup>открыт</sup>
-* `CloudAppendBlob`<sup>открыт</sup>
+* `ICloudBlob`<sup>2</sup>
+* `CloudBlockBlob`<sup>2</sup>
+* `CloudPageBlob`<sup>2</sup>
+* `CloudAppendBlob`<sup>2</sup>
 
 <sup>1</sup> Требует привязки in `direction` в файле *function.json* или `FileAccess.Read` в библиотеке классов C#. Однако вы можете использовать объект контейнера, предоставляемый средой выполнения для записи таких операций, как отправка больших двоичных объектов в контейнер.
 
@@ -42,14 +42,14 @@ ms.locfileid: "100381666"
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](../articles/azure-functions/functions-bindings-storage-blob.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.blobs-readme). Эта версия отключает поддержку устаревших типов,,,, `CloudBlobContainer` `CloudBlobDirectory` `ICloudBlob` `CloudBlockBlob` `CloudPageBlob` и `CloudAppendBlob` в пользу для следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](../articles/azure-functions/functions-bindings-storage-blob.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.blobs-readme). В этой версии прекращена поддержка устаревших типов `CloudBlobContainer`, `CloudBlobDirectory`, `ICloudBlob`, `CloudBlockBlob`, `CloudPageBlob` и `CloudAppendBlob`. Вместо них теперь поддерживаются следующие типы:
 
-- [Блобконтаинерклиент](/dotnet/api/azure.storage.blobs.blobcontainerclient)<sup>1</sup>
-- [Блобклиент](/dotnet/api/azure.storage.blobs.blobclient)<sup>2</sup>
-- [Блоккблобклиент](/dotnet/api/azure.storage.blobs.specialized.blockblobclient)<sup>2</sup>
-- [Пажеблобклиент](/dotnet/api/azure.storage.blobs.specialized.pageblobclient)<sup>2</sup>
-- [Аппендблобклиент](/dotnet/api/azure.storage.blobs.specialized.appendblobclient)<sup>2</sup>
-- [Блоббасеклиент](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient)<sup>2</sup>
+- [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient)<sup>1</sup>
+- [BlobClient](/dotnet/api/azure.storage.blobs.blobclient)<sup>2</sup>
+- [BlockBlobClient](/dotnet/api/azure.storage.blobs.specialized.blockblobclient)<sup>2</sup>
+- [PageBlobClient](/dotnet/api/azure.storage.blobs.specialized.pageblobclient)<sup>2</sup>
+- [AppendBlobClient](/dotnet/api/azure.storage.blobs.specialized.appendblobclient)<sup>2</sup>
+- [BlobBaseClient](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient)<sup>2</sup>
 
 <sup>1</sup> Требует привязки in `direction` в файле *function.json* или `FileAccess.Read` в библиотеке классов C#. Однако вы можете использовать объект контейнера, предоставляемый средой выполнения для записи таких операций, как отправка больших двоичных объектов в контейнер.
 

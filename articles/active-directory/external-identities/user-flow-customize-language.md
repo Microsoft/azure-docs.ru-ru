@@ -1,6 +1,6 @@
 ---
 title: Настройка языка в потоках пользователей Azure AD
-description: Узнайте, как настроить языковой интерфейс пользователя в Azure Active Directory.
+description: Дополнительные сведения о настройке языка для потоков пользователей в Azure Active Directory.
 services: active-directory
 author: msmimart
 manager: celestedg
@@ -12,10 +12,10 @@ ms.author: mimart
 ms.reviewer: elisolMS
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a199c207e8ea35f1471df9bfd0c4134551b9995f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "101653496"
 ---
 # <a name="language-customization-in-azure-active-directory"></a>Настройка языка в Azure Active Directory
@@ -143,60 +143,60 @@ ms.locfileid: "101653496"
 
 ## <a name="supported-languages"></a>Поддерживаемые языки
 
-Azure AD поддерживает следующие языки. Языки потока пользователей предоставляются Azure AD. Языки уведомлений многофакторной идентификации (MFA) предоставляются [Azure AD MFA](../authentication/concept-mfa-howitworks.md).
+Azure AD поддерживает следующие языки. Языки потока пользователей предоставляются Azure AD. Языки уведомлений многофакторной проверки подлинности (MFA) предоставляются [Azure AD MFA](../authentication/concept-mfa-howitworks.md).
 
 | Язык              | Код языка | Маршруты пользователей         | Уведомления MFA  |
 |-----------------------| :-----------: | :----------------: | :----------------: |
-| Арабский                | ar            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Болгарский             | bg            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Бенгальский                | bn            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Каталонский               | ca            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Чешский                 | cs            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Датский                | da            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Немецкий                | de            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Греческий                 | el            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Английский               | en            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Испанский               | es            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Эстонский              | et            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Баскский                | eu            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Финский               | fi            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Французский                | fr            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Галисийский              | gl            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Гуджарати              | gu            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Иврит                | he            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Hindi                 | hi            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Хорватский              | hr            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Венгерский             | hu            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Индонезийский            | идентификатор            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Итальянский               | it            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Японский              | ja            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Казахский                | kk            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Каннада               | kn            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Корейский                | ko            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Литовский            | lt            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Латышский               | lv            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Малаялам             | ml            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Маратхи               | mr            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Малайский                 | ms            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Норвежский (букмол)      | nb            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Нидерландский                 | nl            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Норвежский             | Нет            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Панджаби               | pa            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Польский                | pl            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Португальский (Бразилия)   | pt-br         | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Португальский (Португалия) | pt-pt         | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Румынский              | ro            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Русский               | ru            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Словацкий                | sk            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Словенский             | sl            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Сербский — кириллица    | sr-cryl-cs    | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Сербский — латиница       | sr-latn-cs    | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Шведский               | sv            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Тамильский                 | ta            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Телугу                | te            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) |
-| Тайский                  | th            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Турецкий               | tr            | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Украинский             | uk            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Вьетнамский            | vi            | ![X, указывающее на отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Китайский (упрощенное письмо)  | zh-hans       | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
-| Китайский (традиционное письмо) | zh-hant       | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) | ![Зеленая галочка.](./media/user-flow-customize-language/yes.png) |
+| Арабский                | ar            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Болгарский             | bg            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Бенгальский                | bn            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Каталонский               | ca            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Чешский                 | cs            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Датский                | da            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Немецкий                | de            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Греческий                 | el            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Английский               | en            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Испанский               | es            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Эстонский              | et            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Баскский                | eu            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Финский               | fi            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Французский                | fr            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Галисийский              | gl            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Гуджарати              | gu            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Иврит                | he            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Hindi                 | hi            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Хорватский              | hr            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Венгерский             | hu            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Индонезийский            | идентификатор            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Итальянский               | it            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Японский              | ja            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Казахский                | kk            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Каннада               | kn            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Корейский                | ko            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Литовский            | lt            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Латышский               | lv            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Малаялам             | ml            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Маратхи               | mr            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Малайский                 | ms            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Норвежский (букмол)      | nb            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Нидерландский                 | nl            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Норвежский             | Нет            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Панджаби               | pa            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Польский                | pl            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Португальский (Бразилия)   | pt-br         | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Португальский (Португалия) | pt-pt         | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Румынский              | ro            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Русский               | ru            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Словацкий                | sk            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Словенский             | sl            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Сербский — кириллица    | sr-cryl-cs    | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Сербский — латиница       | sr-latn-cs    | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Шведский               | sv            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Тамильский                 | ta            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Телугу                | te            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) |
+| Тайский                  | th            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Турецкий               | tr            | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Украинский             | uk            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Вьетнамский            | vi            | ![Символ "X" обозначает отсутствие.](./media/user-flow-customize-language/no.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Китайский (упрощенное письмо)  | zh-hans       | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |
+| Китайский (традиционное письмо) | zh-hant       | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) | ![Зеленый флажок.](./media/user-flow-customize-language/yes.png) |

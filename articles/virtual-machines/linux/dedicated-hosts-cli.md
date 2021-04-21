@@ -7,12 +7,12 @@ ms.subservice: dedicated-hosts
 ms.topic: how-to
 ms.date: 11/12/2020
 ms.author: cynthn
-ms.openlocfilehash: 9d4117cafd665556fb60278aa4dc60dc14a27ada
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: adc09bf2572be563ff52cf9fa3d0dea51263d032
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101670526"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107774419"
 ---
 # <a name="deploy-to-dedicated-hosts-using-the-azure-cli"></a>Выполнение развертывания на выделенных узлах с помощью интерфейса командной строки Azure
  
@@ -54,7 +54,7 @@ az vm list-skus -l eastus2  -r hostGroups/hosts  -o table
 Можно также использовать как зоны доступности, так и домены сбоя. 
 
 
-В этом примере мы используем команду [az vm host group create](/cli/azure/vm/host/group#az-vm-host-group-create) для создания группы узлов с использованием как зон доступности, так и доменов сбоя. 
+В этом примере мы используем команду [az vm host group create](/cli/azure/vm/host/group#az_vm_host_group_create) для создания группы узлов с использованием как зон доступности, так и доменов сбоя. 
 
 ```azurecli-interactive
 az vm host group create \
@@ -69,7 +69,7 @@ az vm host group create \
 
 ### <a name="other-examples"></a>Другие примеры
 
-Вы также можете использовать команду [az vm host group create](/cli/azure/vm/host/group#az-vm-host-group-create) для создания группы узлов в зоне доступности 1 (без доменов сбоя).
+Вы также можете использовать команду [az vm host group create](/cli/azure/vm/host/group#az_vm_host_group_create) для создания группы узлов в зоне доступности 1 (без доменов сбоя).
 
 ```azurecli-interactive
 az vm host group create \
@@ -79,7 +79,7 @@ az vm host group create \
    --platform-fault-domain-count 1 
 ```
  
-В приведенном ниже примере команда [az vm host group create](/cli/azure/vm/host/group#az-vm-host-group-create) применяется для создания группы узлов с использованием только доменов сбоя (для регионов, где зоны доступности не поддерживаются). 
+В приведенном ниже примере команда [az vm host group create](/cli/azure/vm/host/group#az_vm_host_group_create) применяется для создания группы узлов с использованием только доменов сбоя (для регионов, где зоны доступности не поддерживаются). 
 
 ```azurecli-interactive
 az vm host group create \
@@ -94,7 +94,7 @@ az vm host group create \
 
 Дополнительные сведения о номерах SKU и ценах узлов см. на странице [цен на выделенные узлы Azure](https://aka.ms/ADHPricing).
 
-Создайте узел с помощью команды [az vm host create](/cli/azure/vm/host#az-vm-host-create). Если для группы узлов задано число доменов сбоя, вам будет предложено указать домен сбоя для узла.  
+Создайте узел с помощью команды [az vm host create](/cli/azure/vm/host#az_vm_host_create). Если для группы узлов задано число доменов сбоя, вам будет предложено указать домен сбоя для узла.  
 
 ```azurecli-interactive
 az vm host create \
@@ -108,7 +108,7 @@ az vm host create \
 
  
 ## <a name="create-a-virtual-machine"></a>Создание виртуальной машины 
-Создайте виртуальную машину в выделенном узле с помощью команды [az vm create](/cli/azure/vm#az-vm-create). Если при создании группы узлов была указана зона доступности, то при создании виртуальной машины необходимо использовать ту же зону.
+Создайте виртуальную машину в выделенном узле с помощью команды [az vm create](/cli/azure/vm#az_vm_create). Если при создании группы узлов была указана зона доступности, то при создании виртуальной машины необходимо использовать ту же зону.
 
 ```azurecli-interactive
 az vm create \
@@ -149,7 +149,7 @@ az vmss create \
 
 ## <a name="check-the-status-of-the-host"></a>Проверка состояния узла
 
-Вы можете проверить состояние работоспособности узла и оставшееся количество виртуальных машин, которое можно развернуть в нем, с помощью команды [az vm host get-instance-view](/cli/azure/vm/host#az-vm-host-get-instance-view).
+Вы можете проверить состояние работоспособности узла и оставшееся количество виртуальных машин, которое можно развернуть в нем, с помощью команды [az vm host get-instance-view](/cli/azure/vm/host#az_vm_host_get_instance_view).
 
 ```azurecli-interactive
 az vm host get-instance-view \
@@ -256,7 +256,7 @@ az vm host get-instance-view \
 ```
  
 ## <a name="export-as-a-template"></a>Экспорт в качестве шаблона 
-Вы можете экспортировать шаблон, если вам требуется создать дополнительную среду разработки с теми же параметрами или соответствующую рабочую среду. Resource Manager использует шаблоны JSON, которые определяют все параметры среды. Можно полностью создавать среды, ссылаясь на этот шаблон JSON. Вы можете создавать шаблоны JSON вручную или экспортировать существующую среду для создания шаблона JSON автоматически. Чтобы экспортировать группу ресурсов, используйте команду [az group export](/cli/azure/group#az-group-export).
+Вы можете экспортировать шаблон, если вам требуется создать дополнительную среду разработки с теми же параметрами или соответствующую рабочую среду. Resource Manager использует шаблоны JSON, которые определяют все параметры среды. Можно полностью создавать среды, ссылаясь на этот шаблон JSON. Вы можете создавать шаблоны JSON вручную или экспортировать существующую среду для создания шаблона JSON автоматически. Чтобы экспортировать группу ресурсов, используйте команду [az group export](/cli/azure/group#az_group_export).
 
 ```azurecli-interactive
 az group export --name myDHResourceGroup > myDHResourceGroup.json 
@@ -277,19 +277,19 @@ az deployment group create \
 
 Вы платите за выделенные узлы, даже если виртуальные машины не развернуты. Для экономии затрат следует удалить все узлы, которые в настоящее время не используются.  
 
-Узел можно удалить только в том случае, если он больше не используется виртуальными машинами. Удалите виртуальные машины с помощью команды [az vm delete](/cli/azure/vm#az-vm-delete).
+Узел можно удалить только в том случае, если он больше не используется виртуальными машинами. Удалите виртуальные машины с помощью команды [az vm delete](/cli/azure/vm#az_vm_delete).
 
 ```azurecli-interactive
 az vm delete -n myVM -g myDHResourceGroup
 ```
 
-После удаления виртуальных машин можно удалить узел с помощью команды [az vm host delete](/cli/azure/vm/host#az-vm-host-delete).
+После удаления виртуальных машин можно удалить узел с помощью команды [az vm host delete](/cli/azure/vm/host#az_vm_host_delete).
 
 ```azurecli-interactive
 az vm host delete -g myDHResourceGroup --host-group myHostGroup --name myHost 
 ```
  
-После удаления всех узлов можно удалить группу узлов с помощью команды [az vm host group delete](/cli/azure/vm/host/group#az-vm-host-group-delete).  
+После удаления всех узлов можно удалить группу узлов с помощью команды [az vm host group delete](/cli/azure/vm/host/group#az_vm_host_group_delete).  
  
 ```azurecli-interactive
 az vm host group delete -g myDHResourceGroup --host-group myHostGroup  
