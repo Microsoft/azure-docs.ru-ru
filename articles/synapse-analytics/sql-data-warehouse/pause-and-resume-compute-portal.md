@@ -2,21 +2,24 @@
 title: Краткое руководство. Приостановка и возобновление вычислений в выделенном пуле SQL с помощью портала Azure
 description: Используйте портал Azure, чтобы приостановить вычисления для выделенного пула SQL и сэкономить. Возобновите вычисления, когда вы готовы к использованию хранилища данных.
 services: synapse-analytics
-author: gaursa
+author: julieMSFT
+ms.author: jrasnick
 manager: craigg
-ms.service: synapse-analytics
-ms.topic: quickstart
-ms.subservice: sql-dw
-ms.date: 11/23/2020
-ms.author: gaursa
 ms.reviewer: igorstan
-ms.custom: seo-lt-2019, azure-synapse
-ms.openlocfilehash: f9cc5083c4b515454b9d5cbc40ed3b48cba80211
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 11/23/2020
+ms.topic: quickstart
+ms.service: synapse-analytics
+ms.subservice: sql-dw
+ms.custom:
+- seo-lt-2019
+- azure-synapse
+- mode-portal
+ms.openlocfilehash: 27587f436013bcaccbacd668ce62f1d939f89e48
+ms.sourcegitcommit: 590f14d35e831a2dbb803fc12ebbd3ed2046abff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104602168"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107566823"
 ---
 # <a name="quickstart-pause-and-resume-compute-in-dedicated-sql-pool-via-the-azure-portal"></a>Краткое руководство. Приостановка и возобновление вычислений в выделенном пуле SQL с помощью портала Azure
 

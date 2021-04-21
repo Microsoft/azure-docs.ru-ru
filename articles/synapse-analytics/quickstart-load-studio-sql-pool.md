@@ -2,19 +2,19 @@
 title: Краткое руководство. Массовая загрузка данных с использованием выделенного пула SQL
 description: Используйте Synapse Studio для массовой загрузки данных в выделенный пул SQL в Azure Synapse Analytics.
 services: synapse-analytics
-author: gaursa
+author: julieMSFT
 ms.service: synapse-analytics
 ms.subservice: sql
 ms.topic: quickstart
 ms.date: 12/11/2020
-ms.author: gaursa
+ms.author: jrasnick
 ms.reviewer: jrasnick
-ms.openlocfilehash: be15a37a9a2965da36f7e8f884a0a3112106b9ba
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 838138fb6ca6f64b4296b54a81bc2764c3f1399c
+ms.sourcegitcommit: 590f14d35e831a2dbb803fc12ebbd3ed2046abff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104586732"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107567916"
 ---
 # <a name="quickstart-bulk-loading-with-synapse-studio"></a>Краткое руководство. Массовая загрузка в Synapse Studio
 

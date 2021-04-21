@@ -7,15 +7,16 @@ author: linda33wj
 manager: shwang
 ms.reviewer: douglasl
 ms.service: synapse-analytics
+ms.subservice: sql
 ms.topic: quickstart
 ms.custom: seo-lt-2019
 ms.date: 11/02/2020
-ms.openlocfilehash: 568c738284a3d1b54ba907a973139fbced11f139
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 8c0ebebd98a34a82b464707b82a650a1825676be
+ms.sourcegitcommit: 590f14d35e831a2dbb803fc12ebbd3ed2046abff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98222702"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107566261"
 ---
 # <a name="quickstart-load-data-into-dedicated-sql-pool-using-the-copy-activity"></a>Краткое руководство. Загрузка данных в выделенный пул SQL с помощью действия копирования
 
