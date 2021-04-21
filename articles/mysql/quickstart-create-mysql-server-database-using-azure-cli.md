@@ -8,12 +8,12 @@ ms.devlang: azurecli
 ms.topic: quickstart
 ms.date: 07/15/2020
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 4f774351fc0eaaf32069687a1943c72b74b6308a
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 3dd971ff36bde02072d14c465dbafec2823b256d
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96494330"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107780323"
 ---
 # <a name="quickstart-create-an-azure-database-for-mysql-server-using-azure-cli"></a>Краткое руководство. Создание сервера базы данных Azure для MySQL с помощью Azure CLI
 
@@ -28,7 +28,7 @@ ms.locfileid: "96494330"
 
  - Для работы с этим кратким руководством требуется Azure CLI версии 2.0 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
- - Выберите конкретную подписку вашей учетной записи, выполнив команду [az account set](/cli/azure/account). Запишите значение **идентификатора** из выходных данных команды **az login**, чтобы использовать его в команде в качестве значения аргумента **подписки**. Если вы используете несколько подписок, выберите соответствующую, в которой за ресурс будет взиматься плата. Чтобы отобразить все ваши подписки, выполните команду [az account list](/cli/azure/account#az-account-list).
+ - Выберите конкретную подписку вашей учетной записи, выполнив команду [az account set](/cli/azure/account). Запишите значение **идентификатора** из выходных данных команды **az login**, чтобы использовать его в команде в качестве значения аргумента **подписки**. Если вы используете несколько подписок, выберите соответствующую, в которой за ресурс будет взиматься плата. Чтобы отобразить все ваши подписки, выполните команду [az account list](/cli/azure/account#az_account_list).
 
    ```azurecli
    az account set --subscription <subscription id>
@@ -41,7 +41,7 @@ ms.locfileid: "96494330"
 az group create --name myresourcegroup --location westus
 ```
 
-Создайте сервер базы данных Azure для MySQL, выполнив команду [az mysql server create](/cli/azure/mysql/server#az-mysql-server-create). Сервер может управлять несколькими базами данных.
+Создайте сервер базы данных Azure для MySQL, выполнив команду [az mysql server create](/cli/azure/mysql/server#az_mysql_server_create). Сервер может управлять несколькими базами данных.
 
 ```azurecli
 az mysql server create --resource-group myresourcegroup --name mydemoserver --location westus --admin-user myadmin --admin-password <server_admin_password> --sku-name GP_Gen5_2 
@@ -60,7 +60,7 @@ sku-name|GP_Gen5_2|Введите имя ценовой категории и к
 
 >[!IMPORTANT] 
 >- Стандартная версия MySQL на вашем сервере — 5.7. В настоящее время доступны также версии 5.6 и 8.0.
->- Все аргументы команды **az mysql server create** можно просмотреть в этом [справочном документе](/cli/azure/mysql/server#az-mysql-server-create).
+>- Все аргументы команды **az mysql server create** можно просмотреть в этом [справочном документе](/cli/azure/mysql/server#az_mysql_server_create).
 >- На сервере по умолчанию включен протокол SSL. Дополнительные сведения по SSL см. в статье [Настройка SSL-подключения](howto-configure-ssl.md).
 
 ## <a name="configure-a-server-level-firewall-rule"></a>Настройка правила брандмауэра на уровне сервера 
@@ -126,7 +126,7 @@ az mysql server show --resource-group myresourcegroup --name mydemoserver
 az group delete --name myresourcegroup
 ```
 
-Если вы хотите удалить созданный сервер, выполните команду [az mysql server delete](/cli/azure/mysql/server#az-mysql-server-delete).
+Если вы хотите удалить созданный сервер, выполните команду [az mysql server delete](/cli/azure/mysql/server#az_mysql_server_delete).
 
 ```azurecli-interactive
 az mysql server delete --resource-group myresourcegroup --name mydemoserver

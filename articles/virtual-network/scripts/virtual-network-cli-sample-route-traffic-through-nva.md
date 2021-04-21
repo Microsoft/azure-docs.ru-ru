@@ -16,12 +16,12 @@ ms.workload: infrastructure
 ms.date: 03/20/2018
 ms.author: kumud
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 964fda8168867c115502c7262dc1d41e55075866
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7dca5e36144fe17b39f76bb61543f59a1c6d7772
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91317656"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107790193"
 ---
 # <a name="route-traffic-through-a-network-virtual-appliance---azure-cli-script-sample"></a>Пример сценария Azure CLI для маршрутизации трафика через виртуальный сетевой модуль
 
@@ -58,8 +58,8 @@ az group delete --name MyResourceGroup --yes
 | [az network nsg create](/cli/azure/network/nsg) | Создает группу безопасности сети (NSG). |
 | [az network nsg rule create](/cli/azure/network/nsg/rule) | Создает правила группы безопасности сети, которые разрешают входящий трафик по портам HTTP и HTTPS к виртуальной машине. |
 | [az network vnet subnet update](/cli/azure/network/vnet/subnet)| Связывает группы безопасности сети и таблицы маршрутов с подсетями. |
-| [az network route-table create](/cli/azure/network/route-table#az-network-route-table-create)| Создает таблицу маршрутов для всех маршрутов. |
-| [az network route-table route create](/cli/azure/network/route-table/route#az-network-route-table-route-create)| Создает маршруты для маршрутизации трафика между подсетями и Интернетом через виртуальную машину. |
+| [az network route-table create](/cli/azure/network/route-table#az_network_route_table_create)| Создает таблицу маршрутов для всех маршрутов. |
+| [az network route-table route create](/cli/azure/network/route-table/route#az_network_route_table_route_create)| Создает маршруты для маршрутизации трафика между подсетями и Интернетом через виртуальную машину. |
 | [az vm create](/cli/azure/vm) | Создает виртуальную машину и присоединяет к ней сетевой адаптер. Эта команда также указывает образ виртуальной машины и учетные данные администратора. |
 | [az group delete](/cli/azure/group) | Удаляет группу ресурсов и все содержащиеся в ней ресурсы. |
 

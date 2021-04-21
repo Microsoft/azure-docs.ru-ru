@@ -8,12 +8,12 @@ ms.devlang: azurecli
 ms.topic: sample
 ms.custom: mvc, devx-track-azurecli
 ms.date: 12/02/2019
-ms.openlocfilehash: ddb6276d63d90f4221475b163cba174116ec8bec
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 2a2409c94e28135ca5c1fb8fa7210cd9b8b42858
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94539351"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107791696"
 ---
 # <a name="restore-an-azure-database-for-mysql-server-using-azure-cli"></a>Восстановление сервера службы "База данных Azure для MySQL" с помощью Azure CLI
 Этот пример скрипта CLI позволяет восстановить один сервер службы "База данных Azure для MySQL" до предыдущей точки во времени.
@@ -35,10 +35,10 @@ ms.locfileid: "94539351"
 
 | **Command** | **Примечания** |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az mysql server create](/cli/azure/mysql/server#az-mysql-server-create) | Создает сервер MySQL, на котором размещены базы данных. |
-| [az mysql server restore](/cli/azure/mysql/server#az-mysql-server-restore) | Восстановление сервера из резервной копии. |
-| [az group delete](/cli/azure/group#az-group-delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az mysql server create](/cli/azure/mysql/server#az_mysql_server_create) | Создает сервер MySQL, на котором размещены базы данных. |
+| [az mysql server restore](/cli/azure/mysql/server#az_mysql_server_restore) | Восстановление сервера из резервной копии. |
+| [az group delete](/cli/azure/group#az_group_delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения об Azure CLI см. в [документации по Azure CLI](/cli/azure).

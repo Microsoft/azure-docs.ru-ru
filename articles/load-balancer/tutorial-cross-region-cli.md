@@ -7,12 +7,12 @@ ms.author: allensu
 ms.service: load-balancer
 ms.topic: tutorial
 ms.date: 03/04/2021
-ms.openlocfilehash: 83efb428a94d49b77ecd923d4868afe034374b5f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: ca4134ff25dc9915f256b5a7bdd9404021b60a8e
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103225189"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107791919"
 ---
 # <a name="tutorial-create-a-cross-region-azure-load-balancer-using-azure-cli"></a>Учебник по созданию Azure Load Balancer между регионами с помощью Azure CLI
 
@@ -54,7 +54,7 @@ az login
 
 Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими.
 
-Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create):
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create):
 
 * с именем **myResourceGroupLB-CR**;
 * в расположении **westus**.
@@ -157,7 +157,7 @@ az login
 
 В этом разделе вы проверите подсистему балансировки нагрузки в нескольких регионах. С помощью веб-браузера вы подключитесь к общедоступному IP-адресу.  Вы остановите работу виртуальных машин в одном из серверных пулов подсистемы балансировки нагрузки, а затем отследите выполнение отработки отказа.
 
-1. Чтобы получить общедоступный IP-адрес подсистемы балансировки нагрузки, используйте команду [az network public-ip show](/cli/azure/network/public-ip#az-network-public-ip-show).
+1. Чтобы получить общедоступный IP-адрес подсистемы балансировки нагрузки, используйте команду [az network public-ip show](/cli/azure/network/public-ip#az_network_public_ip_show).
 
     ```azurecli-interactive
       az network public-ip show \
@@ -174,7 +174,7 @@ az login
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Вы можете удалить ненужную группу ресурсов, подсистему балансировки нагрузки и все связанные с ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az-group-delete).
+Вы можете удалить ненужную группу ресурсов, подсистему балансировки нагрузки и все связанные с ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive
   az group delete \

@@ -3,7 +3,6 @@ title: Краткое руководство Azure. Настройка и пол
 description: В этом кратком руководстве показано, как настроить и получить ключ из Azure Key Vault с помощью портала Azure
 services: key-vault
 author: msmbaldwin
-manager: rkarlin
 tags: azure-resource-manager
 ms.service: key-vault
 ms.subservice: keys
@@ -11,12 +10,12 @@ ms.topic: quickstart
 ms.custom: mvc
 ms.date: 03/24/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 419fe72d400177ce9fa3d9811d7dfa06e74c0810
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 75ea1c0e92e4d22e73178685472eb1953565a616
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97935059"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107750344"
 ---
 # <a name="quickstart-set-and-retrieve-a-key-from-azure-key-vault-using-the-azure-portal"></a>Краткое руководство. Настройка и получение ключа из Azure Key Vault с помощью портала Azure
 

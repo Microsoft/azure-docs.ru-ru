@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 12/21/2020
+ms.date: 04/06/2021
 ms.author: jeedes
-ms.openlocfilehash: 6fdc9c70d1c9fc67c38edfd794354f9e03321c73
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 56f2eea9dc485c69b6070fda6e9519887f7b30cb
+ms.sourcegitcommit: db925ea0af071d2c81b7f0ae89464214f8167505
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98731433"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107519662"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-easysso-for-bitbucket"></a>Руководство по интеграции единого входа Azure Active Directory с EasySSO for BitBucket
 
@@ -50,7 +50,6 @@ ms.locfileid: "98731433"
 1. Чтобы добавить новое приложение, выберите **Новое приложение**.
 1. В разделе **Добавление из коллекции** в поле поиска введите **EasySSO for BitBucket**.
 1. Выберите **EasySSO for BitBucket** в области результатов и добавьте это приложение. Подождите несколько секунд, пока приложение не будет добавлено в ваш клиент.
-
 
 ## <a name="configure-and-test-azure-ad-sso-for-easysso-for-bitbucket"></a>Настройка и проверка единого входа Azure AD для EasySSO for BitBucket
 
@@ -129,9 +128,7 @@ ms.locfileid: "98731433"
 1. На портале Azure выберите **Корпоративные приложения** > **Все приложения**.
 1. Из списка приложений выберите **EasySSO for BitBucket**.
 1. На странице сводных сведений о приложении откройте раздел **Управление** и выберите **Пользователи и группы**.
-
 1. Выберите **Добавить пользователя**. В диалоговом окне **Добавление назначения** выберите **Пользователи и группы**.
-
 1. В диалоговом окне **Пользователи и группы** выберите **B.Simon** в списке **Пользователи**, а затем в нижней части экрана нажмите кнопку **Выбрать**.
 1. Если пользователям необходимо назначить роль, вы можете выбрать ее из раскрывающегося списка **Выберите роль**. Если для этого приложения не настроена ни одна роль, будет выбрана роль "Доступ по умолчанию".
 1. В диалоговом окне **Добавление назначения** выберите **Назначить**.

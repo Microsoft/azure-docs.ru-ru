@@ -8,13 +8,13 @@ ms.devlang: azurecli
 ms.topic: sample
 ms.date: 12/11/2017
 ms.author: msangapu
-ms.custom: mvc, seodec18
-ms.openlocfilehash: fa971bbb8526f1b0bc081e61ed5e7a7f2cf76d1f
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.custom: mvc, seodec18, devx-track-azurecli
+ms.openlocfilehash: f76f036e2101fb1dbb4483ba417f5cf10f3e37f4
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97006367"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107782421"
 ---
 # <a name="connect-an-app-service-app-to-cosmos-db-using-cli"></a>Подключение приложения Службы приложений к Cosmos DB с помощью интерфейса командной строки
 
@@ -38,12 +38,12 @@ ms.locfileid: "97006367"
 
 | Get-Help | Примечания |
 |---|---|
-| [`az group create`](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create) | Создает план службы приложений. |
-| [`az webapp create`](/cli/azure/webapp#az-webapp-create) | Создает приложение Службы приложений. |
-| [`az cosmosdb create`](/cli/azure/cosmosdb#az-cosmosdb-create) | Создает учетную запись Cosmos DB. |
-| [`az cosmosdb list-connection-strings`](/cli/azure/cosmosdb#az-cosmosdb-list-connection-strings) | Выводит список строк подключения для указанной учетной записи Cosmos DB. |
-| [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set) | Создает или обновляет параметр приложения Службы приложений. Параметры приложения представляются в качестве переменных среды для приложения. |
+| [`az group create`](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [`az appservice plan create`](/cli/azure/appservice/plan#az_appservice_plan_create) | Создает план службы приложений. |
+| [`az webapp create`](/cli/azure/webapp#az_webapp_create) | Создает приложение Службы приложений. |
+| [`az cosmosdb create`](/cli/azure/cosmosdb#az_cosmosdb_create) | Создает учетную запись Cosmos DB. |
+| [`az cosmosdb list-connection-strings`](/cli/azure/cosmosdb#az_cosmosdb_list_connection_strings) | Выводит список строк подключения для указанной учетной записи Cosmos DB. |
+| [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set) | Создает или обновляет параметр приложения Службы приложений. Параметры приложения представляются в качестве переменных среды для приложения. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
