@@ -8,12 +8,12 @@ ms.devlang: azurecli
 ms.topic: tutorial
 ms.date: 09/22/2020
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: bcc9ca0175e0e03c62c2ce2b91d8ec337756a3cc
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 84fd0c368bcf39af1bae90dc83336ffdb8489768
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "92490107"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107791523"
 ---
 # <a name="tutorial-deploy-django-app-with-app-service-and-azure-database-for-postgresql---flexible-server-preview"></a>Руководство по Развертывание приложения Django с помощь Службы приложений и Гибкого сервера Базы данных Azure для PostgreSQL (предварительная версия)
 
@@ -105,7 +105,7 @@ az postgres flexible-server create --resource-group myresourcegroup --location w
 
 В терминале убедитесь, что вы находитесь в корне репозитория (`djangoapp`), в котором находится код приложения.
 
-Создайте приложение Службы приложений (хост-процесс) с помощью команды [`az webapp up`](/cli/azure/webapp#az-webapp-up):
+Создайте приложение Службы приложений (хост-процесс) с помощью команды [`az webapp up`](/cli/azure/webapp#az_webapp_up):
 
 ```azurecli
 
@@ -129,7 +129,7 @@ az webapp config appsettings set --settings DJANGO_ENV="production" DBHOST="<pos
 - Для приложения включается ведение журнала по умолчанию, если оно еще не включено.
 - Передается репозиторий через развертывание на основе ZIP-файла с включенной автоматизацией сборки.
 - Команда **az webapp vnet-integration** добавляет веб-приложение в ту виртуальную сеть, где расположен сервер postgres.
-- Код приложения должен находить сведения о базе данных в переменных среды. Чтобы задать в Службе приложений переменные среды, вы создаете параметры приложения с помощью команды [az webapp config appsettings set](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set).
+- Код приложения должен находить сведения о базе данных в переменных среды. Чтобы задать в Службе приложений переменные среды, вы создаете параметры приложения с помощью команды [az webapp config appsettings set](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set).
 
 > [!TIP]
 > Многие команды Azure CLI кэшируют общие параметры, такие как имя группы ресурсов и план службы приложений, в файл *.azure/config*. Поэтому не нужно указывать все эти параметры с помощью последующих команд. Например, чтобы повторно развернуть приложение после внесения изменений, можно просто еще раз запустить `az webapp up` без параметров.

@@ -10,12 +10,12 @@ adobe-target: true
 adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts–2.19.2021
 adobe-target-experience: Experience B
 adobe-target-content: ./create-first-function-cli-python-uiex
-ms.openlocfilehash: 1b6805434f8c697c1ea13925ee681fdc7b5f1a29
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: f5c51630d111bd68e311a93100abb8266e2a8e27
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101704758"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787437"
 ---
 # <a name="quickstart-create-a-python-function-in-azure-from-the-command-line"></a>Краткое руководство. Создание функции Python в Azure из командной строки
 
@@ -180,7 +180,7 @@ py -m venv .venv
     az login
     ```
 
-    Чтобы войти в учетную запись Azure, выполните команду [az login](/cli/azure/reference-index#az-login).
+    Чтобы войти в учетную запись Azure, выполните команду [az login](/cli/azure/reference-index#az_login).
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell) 
     ```azurepowershell
@@ -199,7 +199,7 @@ py -m venv .venv
     az group create --name AzureFunctionsQuickstart-rg --location westeurope
     ```
  
-    Чтобы создать группу ресурсов, выполните команду [az group create](/cli/azure/group#az-group-create). Группу ресурсов и ресурсы целесообразно создавать в ближайшем к вам регионе. Для этого используйте команду `az account list-locations`.
+    Чтобы создать группу ресурсов, выполните команду [az group create](/cli/azure/group#az_group_create). Группу ресурсов и ресурсы целесообразно создавать в ближайшем к вам регионе. Для этого используйте команду `az account list-locations`.
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell)
 
@@ -222,7 +222,7 @@ py -m venv .venv
     az storage account create --name <STORAGE_NAME> --location westeurope --resource-group AzureFunctionsQuickstart-rg --sku Standard_LRS
     ```
 
-    Создайте учетную запись хранения с помощью команды [az storage account create](/cli/azure/storage/account#az-storage-account-create). 
+    Создайте учетную запись хранения с помощью команды [az storage account create](/cli/azure/storage/account#az_storage_account_create). 
 
     # <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell)
 

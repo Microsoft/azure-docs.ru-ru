@@ -7,12 +7,12 @@ ms.topic: sample
 ms.date: 10/25/2017
 ms.author: tomfitz
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: a9912f5134c3596740ef53f23531d57fe9467682
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 3ea2baa897efb5c1a01b32e92e76a69c9d1f231c
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "87497874"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107775500"
 ---
 # <a name="deploy-a-managed-application-for-service-catalog-with-azure-cli"></a>Развертывание управляемого приложения для каталога службы с помощью Azure CLI
 
@@ -34,7 +34,7 @@ ms.locfileid: "87497874"
 
 | Get-Help | Примечания |
 |---|---|
-| [az managedapp create](/cli/azure/managedapp#az-managedapp-create) | Позволяет создать управляемое приложение. Укажите идентификатор определения и параметры для шаблона. |
+| [az managedapp create](/cli/azure/managedapp#az_managedapp_create) | Позволяет создать управляемое приложение. Укажите идентификатор определения и параметры для шаблона. |
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

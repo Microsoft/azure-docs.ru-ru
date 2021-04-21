@@ -11,12 +11,12 @@ author: sdgilley
 ms.reviewer: ranku
 ms.date: 04/09/2020
 ms.custom: data4ml
-ms.openlocfilehash: 238801171d19191bcac505f0c95395320f96d75c
-ms.sourcegitcommit: 6d6030de2d776f3d5fb89f68aaead148c05837e2
+ms.openlocfilehash: 41e93584937ca10740e9ee0be3353d1edf5efb3e
+ms.sourcegitcommit: 272351402a140422205ff50b59f80d3c6758f6f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97882472"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107587686"
 ---
 # <a name="tutorial-create-a-labeling-project-for-multi-class-image-classification"></a>Руководство по Создание проекта маркировки для многоклассовой классификации изображений 
 
@@ -209,7 +209,6 @@ ms.locfileid: "97882472"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этом руководстве показано, как маркировать изображения.  Теперь переходите к использованию помеченных данных:
-
 > [!div class="nextstepaction"]
-> [Инструкции по обучению модели машинного обучения для распознавания изображений](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/work-with-data/datasets-tutorial/labeled-datasets/labeled-datasets.ipynb).
+> [Инструкции по обучению модели машинного обучения для распознавания изображений](/azure/machine-learning/how-to-use-labeled-dataset).
+

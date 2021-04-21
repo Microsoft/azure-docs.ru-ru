@@ -14,12 +14,12 @@ ms.author: dbradish
 ms.reviewer: thsomasu
 ms.lastreviewed: 03/18/2020
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 6c565be3aea43fc4dc86fd793e0dc2dea0b08d4c
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d8400eb051c09fac4cb88863ad2fac12d2ca0a1b
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94563755"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107789891"
 ---
 # <a name="quickstart-create-an-azure-notification-hub-using-the-azure-cli"></a>Создание концентратора уведомлений Azure с помощью Azure CLI
 
@@ -38,7 +38,7 @@ ms.locfileid: "94563755"
 
 Центры уведомлений Microsoft Azure, как и все ресурсы Azure, должны быть развернуты в группе ресурсов.  Группы ресурсов позволяют организовать соответствующие ресурсы Azure и управлять ими.  Дополнительные сведения о группе ресурсов см. в статье [Azure Resource Manager](../azure-resource-manager/management/overview.md).
 
-Для работы с этим кратким руководством создайте группу ресурсов с именем **spnhubrg** в регионе **eastus** с помощью следующей команды [az group create](/cli/azure/group#az-group-create).
+Для работы с этим кратким руководством создайте группу ресурсов с именем **spnhubrg** в регионе **eastus** с помощью следующей команды [az group create](/cli/azure/group#az_group_create).
 
 ```azurecli
 az group create --name spnhubrg --location eastus

@@ -8,12 +8,12 @@ ms.date: 12/18/2020
 ms.service: key-vault
 ms.subservice: certificates
 ms.topic: quickstart
-ms.openlocfilehash: db69258a774343af18e683444d22530a32f85555
-ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.openlocfilehash: c064a35ac6136d728f75b65379c543149cc8189d
+ms.sourcegitcommit: 6686a3d8d8b7c8a582d6c40b60232a33798067be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107374953"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107750038"
 ---
 # <a name="quickstart-azure-key-vault-certificate-client-library-for-java-certificates"></a>Краткое руководство. Клиентская библиотека сертификатов Azure Key Vault для Java (сертификаты)
 Приступите к работе с клиентской библиотекой сертификатов Azure Key Vault для Java. Чтобы установить пакет и испробовать пример кода для выполнения базовых задач, выполните описанные ниже шаги.
@@ -272,4 +272,4 @@ public class App {
 
 - [Обзор Azure Key Vault](../general/overview.md)
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)

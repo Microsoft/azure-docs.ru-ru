@@ -8,16 +8,16 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: content-moderator
 ms.topic: overview
-ms.date: 12/15/2020
+ms.date: 04/16/2021
 ms.author: pafarley
 ms.custom: cog-serv-seo-aug-2020
 keywords: Content Moderator, Azure Content Moderator, онлайн-модератор, программное обеспечение для фильтрации содержимого, служба модерации контента, модерация контента
-ms.openlocfilehash: a53611fdad84f06661f3b8928296b6a45851cea4
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: b0ff5a241a76cd49d104e4145df37515b43c4e27
+ms.sourcegitcommit: 6f1aa680588f5db41ed7fc78c934452d468ddb84
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104867276"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107726202"
 ---
 # <a name="what-is-azure-content-moderator"></a>Что такое Azure Content Moderator?
 

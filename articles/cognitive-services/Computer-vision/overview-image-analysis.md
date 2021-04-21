@@ -11,12 +11,12 @@ ms.topic: overview
 ms.date: 03/30/2021
 ms.author: pafarley
 keywords: Компьютерное зрение, приложения Компьютерного зрения, служба "Компьютерное зрение"
-ms.openlocfilehash: f262fdb49cac4ab9abe7f3f6873160d3059968c6
-ms.sourcegitcommit: b8995b7dafe6ee4b8c3c2b0c759b874dff74d96f
+ms.openlocfilehash: 0258eb7c57bc0734b5c0a67644cbaa4f62a34537
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106287445"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107766921"
 ---
 # <a name="what-is-image-analysis"></a>Что такое анализ изображений?
 
@@ -24,7 +24,7 @@ ms.locfileid: "106287445"
 
 Служба анализа изображений "Компьютерное зрение" может извлекать разнообразную визуальную информацию из изображений. Например, служба может определить, есть ли на изображении содержимое для взрослых, конкретные торговые марки или объекты, или найти человеческие лица.
 
-Вы можете использовать Анализ изображений с помощью пакета SDK для клиентской библиотеки или посредством прямого вызова [REST API](https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005). Чтобы приступить к работе, ознакомьтесь с [этим руководством](quickstarts-sdk/image-analysis-client-library.md).
+Вы можете использовать Анализ изображений с помощью пакета SDK для клиентской библиотеки или посредством прямого вызова [REST API](https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v2-ga/operations/5d986960601faab4bf452005). Чтобы приступить к работе, ознакомьтесь с [этим руководством](quickstarts-sdk/image-analysis-client-library.md).
 
 Эта документация включает статьи следующих видов:
 * [Краткие руководства](./quickstarts-sdk/image-analysis-client-library.md) — пошаговые инструкции, которые помогут вам вызвать службу и быстро получить результат. 
@@ -34,7 +34,7 @@ ms.locfileid: "106287445"
 
 ## <a name="image-analysis-features"></a>Функции анализа изображений
 
-Вы можете проанализировать изображения, чтобы получить сведения о визуальных компонентах и характеристиках. API [анализа изображений](https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/56f91f2e778daf14a499f21b) предоставляет все функции в следующей таблице. Чтобы приступить к работе, ознакомьтесь с [этим руководством](./quickstarts-sdk/image-analysis-client-library.md).
+Вы можете проанализировать изображения, чтобы получить сведения о визуальных компонентах и характеристиках. API [анализа изображений](https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-ga/operations/56f91f2e778daf14a499f21b) предоставляет все функции в следующей таблице. Чтобы приступить к работе, ознакомьтесь с [этим руководством](./quickstarts-sdk/image-analysis-client-library.md).
 
 
 ### <a name="tag-visual-features"></a>Добавление тегов к визуальным компонентам

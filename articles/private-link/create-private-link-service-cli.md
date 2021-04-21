@@ -7,12 +7,12 @@ ms.service: private-link
 ms.topic: quickstart
 ms.date: 01/22/2021
 ms.author: allensu
-ms.openlocfilehash: 76fd959c28203132be4695031d96315f258cf53f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: c8e32a56148326104c3514b8a2fdb5d6bbd3f00a
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102563121"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107778487"
 ---
 # <a name="quickstart-create-a-private-link-service-using-azure-cli"></a>Краткое руководство. Создание службы Приватного канала с помощью Azure CLI
 
@@ -48,7 +48,7 @@ ms.locfileid: "102563121"
 
 В этом разделе показано, как создать виртуальную сеть и подсеть для размещения подсистемы балансировки нагрузки, которая используется для доступа к службе приватного канала.
 
-Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az-network-vnet-create):
+Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az_network_vnet_create):
 
 * с именем **myVNet**;
 * с префиксом подсети **10.1.0.0/16**;
@@ -69,7 +69,7 @@ ms.locfileid: "102563121"
 
 ```
 
-Чтобы изменить настройки подсети для отключения сетевых политик службы "Приватный канал", используйте команду [az network vnet subnet update](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-update).
+Чтобы изменить настройки подсети для отключения сетевых политик службы "Приватный канал", используйте команду [az network vnet subnet update](/cli/azure/network/vnet/subnet#az_network_vnet_subnet_update).
 
 ```azurecli-interactive
 az network vnet subnet update \
@@ -90,7 +90,7 @@ az network vnet subnet update \
 
 ### <a name="create-the-load-balancer-resource"></a>Создание ресурса подсистемы балансировки нагрузки
 
-С помощью команды [az network lb create](/cli/azure/network/lb#az-network-lb-create) создайте общедоступную подсистему балансировки нагрузки:
+С помощью команды [az network lb create](/cli/azure/network/lb#az_network_lb_create) создайте общедоступную подсистему балансировки нагрузки:
 
 * с именем **myLoadBalancer**,
 * пулом переднего плана **myFrontEnd**
@@ -115,7 +115,7 @@ az network vnet subnet update \
 
 Виртуальная машина с неудачной пробой удаляется из подсистемы балансировки нагрузки и снова добавляется в нее после устранения сбоя.
 
-Создайте пробу работоспособности с помощью команды [az network lb probe create](/cli/azure/network/lb/probe#az-network-lb-probe-create), которая:
+Создайте пробу работоспособности с помощью команды [az network lb probe create](/cli/azure/network/lb/probe#az_network_lb_probe_create), которая:
 
 * отслеживает работоспособность виртуальных машин;
 * имеет имя **myHealthProbe**;
@@ -139,7 +139,7 @@ az network vnet subnet update \
 * серверный пул IP-адресов для приема трафика;
 * требуемые порты источника и назначения. 
 
-С помощью команды [az network lb rule create](/cli/azure/network/lb/rule#az-network-lb-rule-create) создайте правило подсистемы балансировки нагрузки, которое:
+С помощью команды [az network lb rule create](/cli/azure/network/lb/rule#az_network_lb_rule_create) создайте правило подсистемы балансировки нагрузки, которое:
 
 * имеет имя **myHTTPRule**;
 * ожидает передачи данных от **порта 80**, используемого интерфейсным пулом **myFrontEnd**;
@@ -168,7 +168,7 @@ az network vnet subnet update \
 
 В этом разделе описано, как создать службу "Приватный канал", которая использует созданный на предыдущем шаге Azure Load Balancer.
 
-Создайте службу "Приватный канал", используя интерфейсную IP-конфигурацию Load Balancer (цен. категория "Стандартный") с помощью команды [az network private-link-service create](/cli/azure/network/private-link-service#az-network-private-link-service-create):
+Создайте службу "Приватный канал", используя интерфейсную IP-конфигурацию Load Balancer (цен. категория "Стандартный") с помощью команды [az network private-link-service create](/cli/azure/network/private-link-service#az_network_private_link_service_create):
 
 * с именем **myPrivateLinkService**;
 * виртуальная сеть **myVNet**;
@@ -195,7 +195,7 @@ az network private-link-service create \
 
 ### <a name="create-private-endpoint-virtual-network"></a>Создание виртуальной сети с частной конечной точкой
 
-Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az-network-vnet-create):
+Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az_network_vnet_create):
 
 * с именем **myVNetPE**;
 * с префиксом адреса **11.1.0.0/16**;
@@ -214,7 +214,7 @@ az network private-link-service create \
     --subnet-prefixes 11.1.0.0/24
 ```
 
-Чтобы изменить настройки подсети для отключения сетевых политик частной конечной точки, используйте команду [az network vnet subnet update](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-update).
+Чтобы изменить настройки подсети для отключения сетевых политик частной конечной точки, используйте команду [az network vnet subnet update](/cli/azure/network/vnet/subnet#az_network_vnet_subnet_update).
 
 ```azurecli-interactive
 az network vnet subnet update \
@@ -256,7 +256,7 @@ az network vnet subnet update \
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Вы можете удалить ненужную группу ресурсов, службу "Приватный канал", подсистему балансировки нагрузки и все связанные с ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az-group-delete).
+Вы можете удалить ненужную группу ресурсов, службу "Приватный канал", подсистему балансировки нагрузки и все связанные с ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive
   az group delete \

@@ -4,12 +4,12 @@ description: В этом руководстве описывается, как �
 ms.topic: tutorial
 ms.date: 11/24/2020
 ms.custom: seodec18, mvc, devx-track-azurecli
-ms.openlocfilehash: 384c7bebea8ed8120a1bc8134e4189e5e7bcb8db
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 282e6ea56835fba679510a29af936c1fbcb3ead2
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106060284"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107775355"
 ---
 # <a name="tutorial-build-and-deploy-container-images-in-the-cloud-with-azure-container-registry-tasks"></a>Руководство по Создание и развертывание образов контейнера в облаке с помощью службы "Задачи Реестра контейнеров Azure"
 
@@ -301,14 +301,14 @@ az ad sp delete --id http://$ACR_NAME-pull
 
 <!-- LINKS - Internal -->
 [azure-cli]: /cli/azure/install-azure-cli
-[az-acr-build]: /cli/azure/acr#az-acr-build
-[az-ad-sp-create-for-rbac]: /cli/azure/ad/sp#az-ad-sp-create-for-rbac
-[az-container-attach]: /cli/azure/container#az-container-attach
-[az-container-create]: /cli/azure/container#az-container-create
-[az-container-delete]: /cli/azure/container#az-container-delete
-[az-keyvault-create]: /cli/azure/keyvault/secret#az-keyvault-create
-[az-keyvault-secret-set]: /cli/azure/keyvault/secret#az-keyvault-secret-set
-[az-login]: /cli/azure/reference-index#az-login
+[az-acr-build]: /cli/azure/acr#az_acr_build
+[az-ad-sp-create-for-rbac]: /cli/azure/ad/sp#az_ad_sp_create_for_rbac
+[az-container-attach]: /cli/azure/container#az_container_attach
+[az-container-create]: /cli/azure/container#az_container_create
+[az-container-delete]: /cli/azure/container#az_container_delete
+[az-keyvault-create]: /cli/azure/keyvault/secret#az_keyvault_create
+[az-keyvault-secret-set]: /cli/azure/keyvault/secret#az_keyvault_secret_set
+[az-login]: /cli/azure/reference-index#az_login
 [service-principal-auth]: container-registry-auth-service-principal.md
 
 <!-- IMAGES -->

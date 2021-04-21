@@ -10,12 +10,12 @@ services: iot-central
 ms.custom:
 - mvc
 - device-developer
-ms.openlocfilehash: 4423eea6c35ad44d55ad17f5703a95c6273422b8
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: ebd2759d4dfb8ee79130f9b4876eba8d45226d04
+ms.sourcegitcommit: 79c9c95e8a267abc677c8f3272cb9d7f9673a3d7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "104585865"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107718797"
 ---
 # <a name="iot-central-device-development-guide"></a>Руководство по разработке для устройств для IoT Central
 
@@ -125,7 +125,7 @@ DPS позволяет следующее:
 
 ### <a name="device-sdks"></a>Пакеты SDK для устройств
 
-Чтобы реализовать поведение устройства, используйте один из [пакетов SDK для устройств Azure IoT](#languages-and-sdks). Код должен выполнять перечисленные ниже действия.
+Чтобы реализовать поведение устройства, используйте один из [пакетов SDK для устройств Azure IoT](../../iot-hub/iot-hub-devguide-sdks.md#azure-iot-hub-device-sdks). Код должен выполнять перечисленные ниже действия.
 
 - Регистрировать устройство в DPS и использовать сведения из DPS для подключения к внутреннему центру Интернета вещей в приложении IoT Central.
 - Объявлять DTMI модели, которую реализует устройство.

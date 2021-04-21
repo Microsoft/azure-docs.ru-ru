@@ -9,12 +9,12 @@ ms.custom: mvc
 ms.service: iot-accelerators
 services: iot-accelerators
 manager: timlt
-ms.openlocfilehash: c972211a48816409ff626396fb5ddc7c939c021b
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: c966051ed5699d408fe83f1e9c862ca78b3282c4
+ms.sourcegitcommit: 3ed0f0b1b66a741399dc59df2285546c66d1df38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106057887"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107714548"
 ---
 # <a name="what-are-azure-iot-solution-accelerators"></a>Что такое акселераторы решений Интернета вещей Azure?
 
@@ -68,7 +68,7 @@ ms.locfileid: "106057887"
 | Акселератор решений   | Architecture  | Языки     |
 | ---------------------- | ------------- | ------------- |
 | Подключенная фабрика      | MVC           | [.NET](https://github.com/Azure/azure-iot-connected-factory)          |
-| Имитация устройства      | Микрослужбы | [.NET](https://github.com/Azure/device-simulation-dotnet)          |
+| Имитация устройства      | Микрослужбы | [.NET](https://github.com/Azure/azure-iot-pcs-device-simulation)          |
 
 Дополнительные сведения об архитектуре микрослужб см. в статье [Introduction to the Azure IoT reference architecture](/azure/architecture/reference-architectures/iot/) (Введение в эталонную архитектуру Интернета вещей Azure).
 

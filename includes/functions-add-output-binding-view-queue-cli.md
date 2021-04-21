@@ -4,12 +4,12 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 03/25/2020
 ms.author: glenga
-ms.openlocfilehash: 894a89126d1ee3ed909134f3e0dd914166568654
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 921127ffdd35007cc3fa2eaaa95cdb3fac8bbe15
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "90606778"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107782291"
 ---
 Очередь можно просмотреть на [портале Azure](../articles/storage/queues/storage-quickstart-queues-portal.md) или в [Обозревателе службы хранилища Azure](https://storageexplorer.com/). Очередь также можно просмотреть в интерфейсе командной строки Azure. Для этого выполните приведенные ниже шаги:
 
@@ -35,13 +35,13 @@ ms.locfileid: "90606778"
     
     ---
     
-1. (Дополнительно) Команду [`az storage queue list`](/cli/azure/storage/queue#az-storage-queue-list) можно использовать для просмотра очередей службы хранилища в учетной записи. В выходных данных этой команды должна быть очередь с именем `outqueue`, созданная при написании функцией первого сообщения в этой очереди.
+1. (Дополнительно) Команду [`az storage queue list`](/cli/azure/storage/queue#az_storage_queue_list) можно использовать для просмотра очередей службы хранилища в учетной записи. В выходных данных этой команды должна быть очередь с именем `outqueue`, созданная при написании функцией первого сообщения в этой очереди.
     
     ```azurecli
     az storage queue list --output tsv
     ```
 
-1. Используйте команду [`az storage message get`](/cli/azure/storage/message#az-storage-message-get), чтобы прочитать сообщение из этой очереди. Необходимо указывать первое имя, использованное ранее при проверке функции. Команда считывает и удаляет первое сообщение из очереди. 
+1. Используйте команду [`az storage message get`](/cli/azure/storage/message#az_storage_message_get), чтобы прочитать сообщение из этой очереди. Необходимо указывать первое имя, использованное ранее при проверке функции. Команда считывает и удаляет первое сообщение из очереди. 
 
     # <a name="bash"></a>[bash](#tab/bash)
     

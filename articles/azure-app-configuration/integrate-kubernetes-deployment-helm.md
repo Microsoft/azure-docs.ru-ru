@@ -8,12 +8,12 @@ ms.service: azure-app-configuration
 ms.topic: tutorial
 ms.date: 04/14/2020
 ms.author: shuawan
-ms.openlocfilehash: 4e38366ddcee07f38ca390acf9d580b8764c1c00
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 6276fc2027e92d5b7baaf9237a928e7828a3b021
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99979833"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107775774"
 ---
 # <a name="integrate-with-kubernetes-deployment-using-helm"></a>Интеграция с развертыванием Kubernetes с помощью Helm
 
@@ -185,7 +185,7 @@ settings:
 Сначала в службе "Конфигурация приложений" скачайте конфигурацию в файл *myConfig.yaml*. Чтобы скачать только те ключи, которые начинаются со строки **settings.** , примените фильтр ключей. Если для вашего случая фильтр ключей не может исключить все упомянутые в Key Vault ключи, попробуйте использовать для их исключения аргумент **--skip-keyvault**. 
 
 > [!TIP]
-> Дополнительные сведения см. в статье о [команде export](/cli/azure/appconfig/kv#az-appconfig-kv-export). 
+> Дополнительные сведения см. в статье о [команде export](/cli/azure/appconfig/kv#az_appconfig_kv_export). 
 
 ```azurecli-interactive
 az appconfig kv export -n myAppConfiguration -d file --path myConfig.yaml --key "settings.*"  --separator "." --format yaml

@@ -7,20 +7,15 @@ ms.topic: overview
 ms.date: 09/15/2020
 ms.author: rogarana
 ms.subservice: files
-ms.openlocfilehash: f0dcd763240205bd396fc8cd0301c2046098473b
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 7279c5578d969db9178ce85734e3a43f9eccdf8d
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98070139"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107780053"
 ---
 # <a name="what-is-azure-files"></a>Общие сведения о Файлах Azure
 Служба "Файлы Azure" предоставляет полностью управляемые общие файловые ресурсы в облаке, доступ к которым можно получить с помощью стандартного отраслевого [протокола SMB](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview) или [протокола NFS](https://en.wikipedia.org/wiki/Network_File_System). Общие папки Azure можно одновременно подключить к облачным или локальным развертываниям. Общие папки SMB службы "Файлы Azure" доступны для клиентов Windows, Linux и macOS. Общие папки NFS службы "Файлы Azure" доступны для клиентов Linux или macOS. Кроме того, общие папки SMB службы "Файлы Azure" можно кэшировать на серверах Windows Server с помощью службы "Синхронизация файлов Azure" для быстрого доступа из расположения, где используются данные.
-
-## <a name="videos"></a>Видео
-| Общие сведения о службе "Синхронизация файлов Azure" | Файлы Azure с синхронизацией (Ignite 2019)  |
-|-|-|
-| [![Ознакомительное видео о службе синхронизации файлов Azure. Щелкните, чтобы воспроизвести.](./media/storage-files-introduction/azure-file-sync-video-snapshot.png)](https://www.youtube.com/watch?v=Zm2w8-TRn-o) | [![Видеоруководство по файлам Azure с синхронизацией. Щелкните, чтобы воспроизвести.](./media/storage-files-introduction/ignite-2018-video.png)](https://www.youtube.com/embed/6E2p28XwovU) |
 
 Ниже приведены некоторые видео по распространенным сценариям использования Файлов Azure.
 * [Replace your file server with a serverless Azure File Share](https://sec.ch9.ms/ch9/3358/0addac01-3606-4e30-ad7b-f195f3ab3358/ITOpsTalkAzureFiles_high.mp4) (Замена файлового сервера на бессерверную общую папку Azure)
