@@ -9,12 +9,12 @@ ms.subservice: disks
 ms.topic: quickstart
 ms.date: 05/17/2019
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: b600c895f98c46dbaafce7deef86bbbee8f57c99
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 5b98fde5e15a3c57b56ecc8aea60023ffb8c22a8
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "102561047"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107774311"
 ---
 # <a name="quickstart-create-and-encrypt-a-linux-vm-with-the-azure-cli"></a>Краткое руководство. Создание и шифрование виртуальной машины Linux с помощью Azure CLI
 
@@ -26,7 +26,7 @@ Azure CLI используется для создания ресурсов Azur
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create). Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими. В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus*.
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create). Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими. В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *eastus*.
 
 ```azurecli-interactive
 az group create --name "myResourceGroup" --location "eastus"
@@ -79,7 +79,7 @@ az keyvault create --name "<your-unique-keyvault-name>" --resource-group "myReso
 az vm encryption enable -g "MyResourceGroup" --name "myVM" --disk-encryption-keyvault "<your-unique-keyvault-name>"
 ```
 
-Через некоторое время процесс вернет сообщение: The encryption request was accepted. Please use 'show' command to monitor the progress (Запрос на шифрование принят. Выполните команду для просмотра, чтобы отследить прогресс.). Командой для просмотра является команда [az vm show](/cli/azure/vm/encryption#az-vm-encryption-show).
+Через некоторое время процесс вернет сообщение: The encryption request was accepted. Please use 'show' command to monitor the progress (Запрос на шифрование принят. Выполните команду для просмотра, чтобы отследить прогресс.). Командой для просмотра является команда [az vm show](/cli/azure/vm/encryption#az_vm_encryption_show).
 
 ```azurecli-interactive
 az vm encryption show --name "myVM" -g "MyResourceGroup"

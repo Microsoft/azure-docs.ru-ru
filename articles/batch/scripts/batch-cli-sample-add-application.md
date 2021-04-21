@@ -4,12 +4,12 @@ description: В этом примере скрипта показано, как 
 ms.topic: sample
 ms.date: 01/29/2018
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 414a401168b1b378ed33f4904607243de0267d22
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 06afb59a76e763c25e943c3be1531372a6bd2aa1
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94565812"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765293"
 ---
 # <a name="cli-example-add-an-application-to-an-azure-batch-account"></a>Пример использования CLI: добавление приложения в учетную запись пакетной службы Azure
 
@@ -38,14 +38,14 @@ az group delete --name myResourceGroup
 
 | Get-Help | Примечания |
 |---|---|
-| [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az storage account create](/cli/azure/storage/account#az-storage-account-create) | Создание учетной записи хранения. |
-| [az batch account create](/cli/azure/batch/account#az-batch-account-create) | Создает учетную запись пакетной службы. |
-| [az batch account login](/cli/azure/batch/account#az-batch-account-login) | Выполняет проверку подлинности с помощью указанной учетной записи пакетной службы для дальнейшего взаимодействия с интерфейсом командной строки.  |
-| [az batch application create](/cli/azure/batch/application#az-batch-application-create) | Создает приложение.  |
-| [az batch application package create](/cli/azure/batch/application/package#az-batch-application-package-create) | Добавляет пакет приложения в указанное приложение.  |
-| [az batch application set](/cli/azure/batch/application#az-batch-application-set) | Обновляет свойства приложения.  |
-| [az group delete](/cli/azure/group#az-group-delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
+| [az group create](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [az storage account create](/cli/azure/storage/account#az_storage_account_create) | Создание учетной записи хранения. |
+| [az batch account create](/cli/azure/batch/account#az_batch_account_create) | Создает учетную запись пакетной службы. |
+| [az batch account login](/cli/azure/batch/account#az_batch_account_login) | Выполняет проверку подлинности с помощью указанной учетной записи пакетной службы для дальнейшего взаимодействия с интерфейсом командной строки.  |
+| [az batch application create](/cli/azure/batch/application#az_batch-application-create) | Создает приложение.  |
+| [az batch application package create](/cli/azure/batch/application/package#az_batch-application-package-create) | Добавляет пакет приложения в указанное приложение.  |
+| [az batch application set](/cli/azure/batch/application#az_batch-application-set) | Обновляет свойства приложения.  |
+| [az group delete](/cli/azure/group#az_group_delete) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

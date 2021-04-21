@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 12/20/2019
 ms.author: robinsh
 ms.custom: mqtt, devx-track-azurecli, devx-track-csharp
-ms.openlocfilehash: bd047419275d98049f883bb88a83708a9dfdd7d3
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 0d6c90120d050b6896161f50332faf447c3ed67b
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106066897"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107788877"
 ---
 # <a name="tutorial-use-azure-iot-hub-message-enrichments"></a>Руководство. Использование обогащений сообщений в Центре Интернета вещей Azure
 
@@ -386,7 +386,7 @@ az iot hub route create \
 
 ### <a name="use-the-azure-cli-to-clean-up-resources"></a>Очистка ресурсов с помощью Azure CLI
 
-Чтобы удалить группу ресурсов, используйте команду [az group delete](/cli/azure/group#az-group-delete). Помните, что `$resourceGroup` было присвоено значение **ContosoResourcesMsgEn** в начале работы с этим руководством.
+Чтобы удалить группу ресурсов, используйте команду [az group delete](/cli/azure/group#az_group_delete). Помните, что `$resourceGroup` было присвоено значение **ContosoResourcesMsgEn** в начале работы с этим руководством.
 
 ```azurecli-interactive
 az group delete --name $resourceGroup

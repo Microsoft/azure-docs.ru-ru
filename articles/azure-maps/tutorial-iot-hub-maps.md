@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.custom: mvc
-ms.openlocfilehash: 91556087cd3e7ccd85550c721f70b8608fdc4ffd
-ms.sourcegitcommit: d23602c57d797fb89a470288fcf94c63546b1314
+ms.openlocfilehash: 9ebc6e266c93e55bc250e8450356f8b695dd9080
+ms.sourcegitcommit: 3ed0f0b1b66a741399dc59df2285546c66d1df38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106168456"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107714998"
 ---
 # <a name="tutorial-implement-iot-spatial-analytics-by-using-azure-maps"></a>Руководство по Реализация пространственной аналитики Интернета вещей с помощью Azure Maps
 
@@ -95,7 +95,7 @@ ms.locfileid: "106168456"
 
 ## <a name="create-an-azure-storage-account"></a>Создание учетной записи хранения Azure
 
-Чтобы сохранить данные отслеживания нарушений автомобиля, создайте [учетную запись хранения общего назначения версии 2](../storage/common/storage-account-overview.md#general-purpose-v2-accounts) в группе ресурсов. Если вы еще не создали группу ресурсов, следуйте указаниям в разделе [Создание группы ресурсов](../azure-resource-manager/management/manage-resource-groups-portal.md#create-resource-groups). Для выполнения инструкций в этом учебнике назовите группу ресурсов *ContosoRental*.
+Чтобы сохранить данные отслеживания нарушений автомобиля, создайте [учетную запись хранения общего назначения версии 2](../storage/common/storage-account-overview.md) в группе ресурсов. Если вы еще не создали группу ресурсов, следуйте указаниям в разделе [Создание группы ресурсов](../azure-resource-manager/management/manage-resource-groups-portal.md#create-resource-groups). Для выполнения инструкций в этом учебнике назовите группу ресурсов *ContosoRental*.
 
 Чтобы создать учетную запись хранения, следуйте инструкциям в статье [Создание учетной записи хранения Azure](../storage/common/storage-account-create.md?tabs=azure-portal). Для прохождения этого учебника используйте имя учетной записи хранения *contosorentalstorage*, но вообще можно назвать ее как угодно.
 

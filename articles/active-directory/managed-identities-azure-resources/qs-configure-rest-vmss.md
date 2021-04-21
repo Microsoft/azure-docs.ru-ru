@@ -15,12 +15,12 @@ ms.workload: identity
 ms.date: 01/29/2021
 ms.author: barclayn
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb14a6a82535ac5a7d36213b082d08aedbb44da5
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 585e31ab566cc990af2819fcf9cdde0506560208
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99090626"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107780179"
 ---
 # <a name="configure-managed-identities-for-azure-resources-on-a-virtual-machine-scale-set-using-rest-api-calls"></a>Настройка управляемых удостоверений для ресурсов Azure в масштабируемом наборе виртуальных машин с помощью вызовов REST API
 
@@ -60,13 +60,13 @@ ms.locfileid: "99090626"
 
 Для создания масштабируемого набора виртуальных машин с включенным управляемым удостоверением, назначаемым системой, создайте масштабируемый набор виртуальных машин и получите маркер доступа, чтобы использовать CURL для вызова конечной точки Resource Manager со значением типа управляемого удостоверения, назначаемого системой.
 
-1. Чтобы сохранить и развернуть масштабируемый набор виртуальных машин и связанные с ним ресурсы, создайте [группу ресурсов](../../azure-resource-manager/management/overview.md#terminology) с помощью команды [az group create](/cli/azure/group/#az-group-create). Если вы уже создали группу ресурсов, которую можно использовать, этот шаг можно пропустить:
+1. Чтобы сохранить и развернуть масштабируемый набор виртуальных машин и связанные с ним ресурсы, создайте [группу ресурсов](../../azure-resource-manager/management/overview.md#terminology) с помощью команды [az group create](/cli/azure/group/#az_group_create). Если вы уже создали группу ресурсов, которую можно использовать, этот шаг можно пропустить:
 
    ```azurecli-interactive 
    az group create --name myResourceGroup --location westus
    ```
 
-2. Создайте [сетевой интерфейс](/cli/azure/network/nic#az-network-nic-create) для масштабируемого набора виртуальных машин:
+2. Создайте [сетевой интерфейс](/cli/azure/network/nic#az_network_nic_create) для масштабируемого набора виртуальных машин:
 
    ```azurecli-interactive
     az network nic create -g myResourceGroup --vnet-name myVnet --subnet mySubnet -n myNic
@@ -325,7 +325,7 @@ ms.locfileid: "99090626"
    az account get-access-token
    ```
 
-2. Создайте [сетевой интерфейс](/cli/azure/network/nic#az-network-nic-create) для масштабируемого набора виртуальных машин:
+2. Создайте [сетевой интерфейс](/cli/azure/network/nic#az_network_nic_create) для масштабируемого набора виртуальных машин:
 
    ```azurecli-interactive
     az network nic create -g myResourceGroup --vnet-name myVnet --subnet mySubnet -n myNic

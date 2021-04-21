@@ -1,16 +1,19 @@
 ---
 title: Создание участника в службе "Блокчейн Azure" с помощью Azure PowerShell
 description: Создание участника блокчейн-консорциума в службе "Блокчейн Azure" с помощью Azure PowerShell.
+ms.reviewer: ravastra
 ms.date: 9/22/2020
 ms.topic: quickstart
-ms.reviewer: ravastra
-ms.custom: references_regions, devx-track-azurepowershell
-ms.openlocfilehash: b57c44e79d599ab41b2c3356ee337811acdf639d
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.custom:
+- references_regions
+- devx-track-azurepowershell
+- mode-api
+ms.openlocfilehash: 9087bda9c1979a98f4bbf9f8343d012c4cf3098c
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "91948363"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107529639"
 ---
 # <a name="quickstart-create-an-azure-blockchain-service-blockchain-member-using-azure-powershell"></a>Краткое руководство. Создание участника блокчейна в службе "Блокчейн Azure" с помощью Azure PowerShell
 

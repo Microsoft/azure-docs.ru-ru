@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/10/2021
 ms.author: memildin
-ms.openlocfilehash: fb8dc22c923b7b53a6263baa43046862af4d2f04
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 284a7f532ed918397fe1cfcf3458bbc6fb0bdd32
+ms.sourcegitcommit: 425420fe14cf5265d3e7ff31d596be62542837fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "100370276"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107739014"
 ---
 # <a name="tutorial-improve-your-regulatory-compliance"></a>Руководство по Обеспечение соответствия нормативным требованиям на высоком уровне
 
@@ -26,7 +26,7 @@ ms.locfileid: "100370276"
 
 Центр безопасности непрерывно оценивает среду гибридного облака для анализа факторов риска в соответствии с элементами управления и рекомендациями стандартов, применяемых к вашим подпискам. Панель мониторинга отражает состояние соответствия этим стандартам. 
 
-При включении Центра безопасности в подписке Azure ей автоматически назначается [Azure Security Benchmark](../security/benchmarks/introduction.md). Это широко принятое тестирование основано на стандартах [Центра Интернет-безопасности (CIS)](https://www.cisecurity.org/benchmark/azure/) и [Национального института стандартов и технологий (NIST)](https://www.nist.gov/) с ориентацией на облачную безопасность.
+При включении Центра безопасности в подписке Azure ей автоматически назначается [Azure Security Benchmark](https://docs.microsoft.com/security/benchmark/azure/introduction). Это широко принятое тестирование основано на стандартах [Центра Интернет-безопасности (CIS)](https://www.cisecurity.org/benchmark/azure/) и [Национального института стандартов и технологий (NIST)](https://www.nist.gov/) с ориентацией на облачную безопасность.
 
 На панели мониторинга соответствия нормативным требованиям можно просмотреть состояние всех оценок в своей среде в контексте определенного стандарта или норматива. Выполняя рекомендации и уменьшая факторы риска в вашей среде, вы сможете улучшить уровень соответствия.
 
