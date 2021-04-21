@@ -4,12 +4,12 @@ description: В этой статье представлен скрипт Azure 
 ms.devlang: azurecli
 ms.topic: sample
 ms.date: 08/11/2020
-ms.openlocfilehash: 3f3802837685281339f0ca355c677e1a0ceac067
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: e30ee47c4f34fe6a71e8c934a4f36cb7edbbe20e
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102198223"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107777360"
 ---
 # <a name="use-azure-cli-to-stop-and-delete-a-virtual-machine-in-a-lab-in-azure-devtest-labs"></a>Остановка и удаление виртуальной машины в лаборатории в Azure DevTest Labs с помощью Azure CLI
 
@@ -29,8 +29,8 @@ ms.locfileid: "102198223"
 
 | Get-Help | Примечания |
 |---|---|
-| [az lab vm stop](/cli/azure/lab/vm#az-lab-vm-stop) | Остановка виртуальной машины в лаборатории. Эта операция может занять некоторое время. |
-| [az lab vm delete](/cli/azure/lab/vm#az-lab-vm-delete) | Удаление виртуальной машины в лаборатории. Эта операция может занять некоторое время. |
+| [az lab vm stop](/cli/azure/lab/vm#az_lab_vm_stop) | Остановка виртуальной машины в лаборатории. Эта операция может занять некоторое время. |
+| [az lab vm delete](/cli/azure/lab/vm#az_lab_vm_delete) | Удаление виртуальной машины в лаборатории. Эта операция может занять некоторое время. |
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

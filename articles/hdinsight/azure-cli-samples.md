@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: sample
 ms.date: 09/23/2019
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 9367c1b4d82e984b2b4200768a3f83f9245c7f0f
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 4502cb26b4aeedff4223aaf5a592581aee36a0e6
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98946886"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107775107"
 ---
 # <a name="azure-hdinsight-azure-cli-samples"></a>Azure HDInsight: примеры Azure CLI
 
@@ -29,7 +29,7 @@ ms.locfileid: "98946886"
 
 ## <a name="az-login"></a>az login
 
-[Вход в Azure](/cli/azure/reference-index#az-login).
+[Вход в Azure](/cli/azure/reference-index#az_login).
 
 ```azurecli
 az login
@@ -40,7 +40,7 @@ az login
 
 ## <a name="az-hdinsight-create"></a>az hdinsight create
 
-[Создание кластера](/cli/azure/hdinsight#az-hdinsight-create).
+[Создание кластера](/cli/azure/hdinsight#az_hdinsight_create).
 
 ### <a name="create-a-cluster-with-an-existing-storage-account"></a>Создание кластера с существующей учетной записью хранения
 
@@ -173,7 +173,7 @@ az hdinsight create \
 
 ## <a name="az-hdinsight-application-create"></a>az hdinsight application create
 
-[Создание приложения для кластера HDInsight](/cli/azure/hdinsight/application#az-hdinsight-application-create).
+[Создание приложения для кластера HDInsight](/cli/azure/hdinsight/application#az_hdinsight_application_create).
 
 ### <a name="create-an-application-with-a-script-uri"></a>Создание приложения с URI скрипта.
 
@@ -240,7 +240,7 @@ az hdinsight application create \
 
 ## <a name="az-hdinsight-script-action-execute"></a>az hdinsight script-action execute
 
-[Для выполнения действий скриптов в указанном кластере HDInsight](/cli/azure/hdinsight/script-action#az-hdinsight-script-action-execute).
+[Для выполнения действий скриптов в указанном кластере HDInsight](/cli/azure/hdinsight/script-action#az_hdinsight_script_action_execute).
 
 ### <a name="execute-a-script-action-and-persist-on-success"></a>Выполнение действия скрипта и сохранение изменений при успешном выполнении
 

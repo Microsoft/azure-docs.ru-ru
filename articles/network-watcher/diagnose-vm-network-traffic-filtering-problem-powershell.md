@@ -5,23 +5,27 @@ description: Узнаете, как с помощью Azure PowerShell диаг�
 services: network-watcher
 documentationcenter: network-watcher
 author: damendo
-editor: ''
-tags: azure-resource-manager
-ms.assetid: ''
-ms.service: network-watcher
-ms.devlang: na
-ms.topic: quickstart
-ms.tgt_pltfrm: network-watcher
-ms.workload: infrastructure
-ms.date: 01/07/2021
 ms.author: damendo
-ms.custom: mvc, devx-track-azurepowershell
-ms.openlocfilehash: 9cccd6d17cb741a616d428db5b318fab2334f73b
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+editor: ''
+ms.date: 01/07/2021
+ms.assetid: ''
+ms.topic: quickstart
+ms.service: network-watcher
+ms.workload: infrastructure
+ms.tgt_pltfrm: network-watcher
+ms.devlang: na
+tags:
+- azure-resource-manager
+ms.custom:
+- mvc
+- devx-track-azurepowershell
+- mode-api
+ms.openlocfilehash: fafe090d72d53b33ddb3e9863b7e62deba1055c5
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106065572"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107535762"
 ---
 # <a name="quickstart-diagnose-a-virtual-machine-network-traffic-filter-problem---azure-powershell"></a>Краткое руководство. Диагностика проблемы с фильтром трафика на виртуальной машине с помощью Azure PowerShell
 

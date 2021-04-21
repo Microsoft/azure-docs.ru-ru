@@ -11,12 +11,12 @@ ms.custom:
 - cli-validate
 - devx-track-python
 - devx-track-azurecli
-ms.openlocfilehash: 8e9656aa1f850dc9e59ab71b5df605df8dd49269
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: 882a9fb0f8d528ca21cdc8149c60b9d5bdaf1723
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105732811"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107767101"
 ---
 # <a name="tutorial-deploy-a-django-web-app-with-postgresql-in-azure-app-service"></a>Руководство по развертыванию веб-приложения Django с PostgreSQL в Службе приложений Azure
 
@@ -160,7 +160,7 @@ az postgres up --resource-group DjangoPostgres-tutorial-rg --location westus2 --
 
 <!-- not all locations support az postgres up -->
 > [!TIP]
-> Для параметра `-l <location-name>` можно указать любой из [регионов Azure](https://azure.microsoft.com/global-infrastructure/regions/). Список регионов, доступных для вашей подписки, можно получить с помощью команды [`az account list-locations`](/cli/azure/account#az-account-list-locations). Для рабочих приложений разместите базу данных и приложение в одном месте.
+> Для параметра `-l <location-name>` можно указать любой из [регионов Azure](https://azure.microsoft.com/global-infrastructure/regions/). Список регионов, доступных для вашей подписки, можно получить с помощью команды [`az account list-locations`](/cli/azure/account#az_account_list_locations). Для рабочих приложений разместите базу данных и приложение в одном месте.
 
 Возникли проблемы? [Сообщите нам об этом.](https://aka.ms/DjangoCLITutorialHelp)
 
@@ -172,7 +172,7 @@ az postgres up --resource-group DjangoPostgres-tutorial-rg --location westus2 --
 
 В терминале убедитесь, что вы находитесь в папке репозитория *djangoapp*, в котором содержится код приложения.
 
-Создайте приложение Службы приложений (хост-процесс) с помощью команды [`az webapp up`](/cli/azure/webapp#az-webapp-up):
+Создайте приложение Службы приложений (хост-процесс) с помощью команды [`az webapp up`](/cli/azure/webapp#az_webapp_up):
 
 ```azurecli
 az webapp up --resource-group DjangoPostgres-tutorial-rg --location westus2 --plan DjangoPostgres-tutorial-plan --sku B1 --name <app-name>
@@ -205,7 +205,7 @@ az webapp up --resource-group DjangoPostgres-tutorial-rg --location westus2 --pl
 
 Код приложения должен находить сведения о базе данных в четырех переменных среды с именами `DBHOST`, `DBNAME`, `DBUSER` и `DBPASS`.
 
-Чтобы задать в Службе приложений переменные среды, создайте параметры приложения с помощью следующей команды [az webapp config appsettings set](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set).
+Чтобы задать в Службе приложений переменные среды, создайте параметры приложения с помощью следующей команды [az webapp config appsettings set](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set).
 
 ```azurecli
 az webapp config appsettings set --settings DBHOST="<postgres-server-name>" DBNAME="pollsdb" DBUSER="<username>" DBPASS="<password>"

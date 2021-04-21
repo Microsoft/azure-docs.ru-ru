@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 04/05/2021
 ms.author: duau
-ms.openlocfilehash: 6f56b9fb1f6a1f5a1fe0811617fb20412c52fd72
-ms.sourcegitcommit: 56b0c7923d67f96da21653b4bb37d943c36a81d6
+ms.openlocfilehash: 3476e5fa2c274f0fc2c180711480375b0ebefaf2
+ms.sourcegitcommit: aa00fecfa3ad1c26ab6f5502163a3246cfb99ec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106450840"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107388046"
 ---
 # <a name="quickstart-create-an-azure-route-server-using-an-arm-template"></a>Краткое руководство. Создание Azure Route Server с помощью шаблона ARM
 
@@ -41,9 +41,9 @@ ms.locfileid: "106450840"
 
 * [**Microsoft.Network/virtualNetworks**](/azure/templates/microsoft.network/virtualNetworks);
 * [**Microsoft.Network/virtualNetworks/subnets**](/azure/templates/microsoft.network/virtualNetworks/subnets) (две подсети, одна с именем `routeserversubnet`)
-* [**Microsoft.Network/virtualHubs**](/azure.templates/microsoft.network/virtualhubs) (развертывание Route Server)
-* [**Microsoft.Network/virtualHubs/ipConfigurations**](/azure.templates/microsoft.network/virtualhubs/ipConfigurations)
-* [**Microsoft.Network/virtualHubs/bgpConnections**](/azure.templates/microsoft.network/virtualhubs/bgpConnections) (одноранговый узел ASN и конфигурация IP-адреса узла)
+* [**Microsoft.Network/virtualHubs**](/azure/templates/microsoft.network/virtualhubs) (развертывание Route Server)
+* [**Microsoft.Network/virtualHubs/ipConfigurations**](/azure/templates/microsoft.network/virtualhubs/ipConfigurations)
+* [**Microsoft.Network/virtualHubs/bgpConnections**](/azure/templates/microsoft.network/virtualhubs/bgpconnections) (одноранговый узел ASN и конфигурация IP-адреса узла)
 
 
 Дополнительные сведения о шаблонах, связанных с ExpressRoute, см. в разделе [Шаблоны быстрого запуска Azure](https://azure.microsoft.com/resources/templates/?resourceType=Microsoft.Network&pageNumber=1&sort=Popular).

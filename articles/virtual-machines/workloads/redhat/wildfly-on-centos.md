@@ -3,18 +3,20 @@ title: Краткое руководство по использованию Wil
 description: Развертывание приложений Java в WildFly на виртуальной машине CentOS
 author: Theresa-Nguyen
 ms.author: bicnguy
+ms.date: 10/23/2020
+ms.assetid: 7aa21ef8-9cfb-43e0-bfda-3f10a2a2f3ef
 ms.topic: quickstart
 ms.service: virtual-machines
 ms.subservice: redhat
+ms.custom:
+- mode-api
 ms.collection: linux
-ms.assetid: 7aa21ef8-9cfb-43e0-bfda-3f10a2a2f3ef
-ms.date: 10/23/2020
-ms.openlocfilehash: 533d2881688598430ca05e964595352edf993dff
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: bad9331a6d9a0c0936b1458e3aa4a84559e4a107
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101675994"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107533563"
 ---
 # <a name="quickstart-wildfly-on-centos-8"></a>Краткое руководство. Использование WildFly в CentOS 8
 

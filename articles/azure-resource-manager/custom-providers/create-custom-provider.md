@@ -5,12 +5,12 @@ author: MSEvanhi
 ms.topic: tutorial
 ms.date: 06/24/2020
 ms.author: evanhi
-ms.openlocfilehash: 23ae69f49d37a210dd9fa1bfeedeca6c1b461e20
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 721fe31f514cb948c93dc2a779a92ef3b2775ef9
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94888867"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107779243"
 ---
 # <a name="quickstart-create-a-custom-provider-and-deploy-custom-resources"></a>Краткое руководство. Создание настраиваемого поставщика и развертывание настраиваемых ресурсов
 
@@ -27,7 +27,7 @@ ms.locfileid: "94888867"
 
 [!INCLUDE [azure-cli-prepare-your-environment-no-header.md](../../../includes/azure-cli-prepare-your-environment-no-header.md)]
 
-В примерах Azure CLI используется `az rest` для запросов `REST`. Дополнительные сведения см. в документации по команде [az rest](/cli/azure/reference-index#az-rest).
+В примерах Azure CLI используется `az rest` для запросов `REST`. Дополнительные сведения см. в документации по команде [az rest](/cli/azure/reference-index#az_rest).
 
 # <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 
@@ -52,7 +52,7 @@ ms.locfileid: "94888867"
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-В этом примере вам будет предложено ввести имя группы ресурсов, расположение и имя приложения-функции, предоставленной поставщиком. Имена хранятся в переменных, которые используются в других командах. Команды [az group create](/cli/azure/group#az-group-create) и [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create) развертывают нужные ресурсы.
+В этом примере вам будет предложено ввести имя группы ресурсов, расположение и имя приложения-функции, предоставленной поставщиком. Имена хранятся в переменных, которые используются в других командах. Команды [az group create](/cli/azure/group#az_group_create) и [az deployment group create](/cli/azure/deployment/group#az_deployment_group_create) развертывают нужные ресурсы.
 
 ```azurecli-interactive
 read -p "Enter a resource group name:" rgName &&

@@ -5,12 +5,12 @@ services: container-service
 ms.topic: quickstart
 ms.date: 03/15/2021
 ms.custom: mvc,subject-armqs, devx-track-azurecli
-ms.openlocfilehash: e88c56f050f2f6d1183eef23a844f5eaf1f671c2
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 4bcaafdb1f465fb8568078dfb5bfaf988d0cd587
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "103492971"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107764447"
 ---
 # <a name="quickstart-deploy-an-azure-kubernetes-service-aks-cluster-using-an-arm-template"></a>Краткое руководство. Развертывание кластера Службы Azure Kubernetes (AKS) с помощью шаблона ARM
 
@@ -299,12 +299,12 @@ az group delete --name myResourceGroup --yes --no-wait
 [kubernetes-concepts]: concepts-clusters-workloads.md
 [aks-monitor]: ../azure-monitor/containers/container-insights-onboard.md
 [aks-tutorial]: ./tutorial-kubernetes-prepare-app.md
-[az-aks-browse]: /cli/azure/aks#az-aks-browse
-[az-aks-create]: /cli/azure/aks#az-aks-create
-[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
-[az-aks-install-cli]: /cli/azure/aks#az-aks-install-cli
-[az-group-create]: /cli/azure/group#az-group-create
-[az-group-delete]: /cli/azure/group#az-group-delete
+[az-aks-browse]: /cli/azure/aks#az_aks_browse
+[az-aks-create]: /cli/azure/aks#az_aks_create
+[az-aks-get-credentials]: /cli/azure/aks#az_aks_get_credentials
+[az-aks-install-cli]: /cli/azure/aks#az_aks_install_cli
+[az-group-create]: /cli/azure/group#az_group_create
+[az-group-delete]: /cli/azure/group#az_group_delete
 [azure-cli-install]: /cli/azure/install-azure-cli
 [sp-delete]: kubernetes-service-principal.md#additional-considerations
 [azure-portal]: https://portal.azure.com
@@ -312,4 +312,4 @@ az group delete --name myResourceGroup --yes --no-wait
 [kubernetes-service]: concepts-network.md#services
 [kubernetes-dashboard]: kubernetes-dashboard.md
 [ssh-keys]: ../virtual-machines/linux/create-ssh-keys-detailed.md
-[az-ad-sp-create-for-rbac]: /cli/azure/ad/sp#az-ad-sp-create-for-rbac
+[az-ad-sp-create-for-rbac]: /cli/azure/ad/sp#az_ad_sp_create_for_rbac

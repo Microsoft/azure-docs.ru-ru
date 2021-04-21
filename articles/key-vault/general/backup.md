@@ -10,13 +10,13 @@ ms.subservice: general
 ms.topic: how-to
 ms.date: 3/18/2021
 ms.author: sudbalas
-ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 3b148ac83b89850cad66bcd7254d385e655cc2fb
-ms.sourcegitcommit: f5448fe5b24c67e24aea769e1ab438a465dfe037
+ms.custom: devx-track-azurepowershell, devx-track-azurecli
+ms.openlocfilehash: 399f55d379f99a784fed97d7e9f72c456eb1f914
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105968753"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107484818"
 ---
 # <a name="azure-key-vault-backup"></a>Резервное копирование в Azure Key Vault
 

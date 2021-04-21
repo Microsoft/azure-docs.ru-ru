@@ -2,15 +2,17 @@
 title: Создание очереди Служебной шины с помощью портала Azure
 description: Из этого краткого руководства вы узнаете, как создать пространство имен и очередь в пространстве имен Служебной шины с помощью портала Azure.
 author: spelluru
-ms.topic: quickstart
-ms.date: 08/12/2020
 ms.author: spelluru
-ms.openlocfilehash: 79dd751c43443790aafc494d89ad45e3b6705a64
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 08/12/2020
+ms.topic: quickstart
+ms.custom:
+- mode-portal
+ms.openlocfilehash: e38d32c93453737060f654add58f09902b05ee45
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "95799229"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107537206"
 ---
 # <a name="use-azure-portal-to-create-a-service-bus-namespace-and-a-queue"></a>Создайте пространство имен и очередь Служебной шины на портале Azure.
 Из этого краткого руководства вы узнаете, как создать пространство имен и очередь Служебной шины с помощью [портала Azure][Azure portal]. В нем также описывается, как получить учетные данные авторизации, которые могут использоваться клиентским приложением для отправки сообщений в очередь и их получения из нее. 

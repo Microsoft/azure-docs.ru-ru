@@ -4,16 +4,18 @@ description: Из этого краткого руководства вы узн
 author: twooley
 ms.author: twooley
 ms.date: 01/28/2021
+ms.topic: quickstart
 ms.service: storage
 ms.subservice: blobs
-ms.topic: quickstart
-ms.custom: devx-track-python
-ms.openlocfilehash: a5d56b20bec7e668bb2119c9174fe03278c805c1
-ms.sourcegitcommit: 02bc06155692213ef031f049f5dcf4c418e9f509
+ms.custom:
+- devx-track-python
+- mode-api
+ms.openlocfilehash: 9a6ccbe5482ac8ffe484c3155334cba1b50ba0dc
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106278020"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107535644"
 ---
 # <a name="quickstart-manage-blobs-with-python-v12-sdk"></a>Краткое руководство. Управление большими двоичными объектами с помощью пакета SDK для Python версии 12
 

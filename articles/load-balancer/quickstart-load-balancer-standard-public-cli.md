@@ -15,12 +15,12 @@ ms.workload: infrastructure-services
 ms.date: 11/23/2020
 ms.author: allensu
 ms.custom: mvc, devx-track-js, devx-track-azurecli
-ms.openlocfilehash: 1956d51cbcf962f7a73e970ca2cec858d9ec6579
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 9b332b18930d58ebb1d155c35a74eed69a90ce73
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106056527"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107788787"
 ---
 # <a name="quickstart-create-a-public-load-balancer-to-load-balance-vms-using-azure-cli"></a>Краткое руководство. Создание общедоступной подсистемы балансировки нагрузки с помощью Azure CLI для распределения нагрузки между виртуальными машинами
 
@@ -36,7 +36,7 @@ ms.locfileid: "106056527"
 
 Группа ресурсов Azure является логическим контейнером, в котором происходит развертывание ресурсов Azure и управление ими.
 
-Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create):
+Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create):
 
 * с именем **CreatePubLBQS-rg**. 
 * в расположении **eastus**.
@@ -61,7 +61,7 @@ ms.locfileid: "106056527"
 
 ### <a name="create-a-virtual-network"></a>Создание виртуальной сети
 
-Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az-network-vnet-createt):
+Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az_network_vnet_createt):
 
 * с именем **myVNet**;
 * с префиксом подсети **10.1.0.0/16**;
@@ -81,7 +81,7 @@ ms.locfileid: "106056527"
 ```
 ### <a name="create-a-public-ip-address"></a>Создание общедоступного IP-адреса
 
-Чтобы создать общедоступный IP-адрес узла-бастиона, воспользуйтесь командой [az network public-ip create](/cli/azure/network/public-ip#az-network-public-ip-create):
+Чтобы создать общедоступный IP-адрес узла-бастиона, воспользуйтесь командой [az network public-ip create](/cli/azure/network/public-ip#az_network_public_ip_create):
 
 * создайте стандартный избыточный между зонами общедоступный IP-адрес с именем **myPublicIP**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -94,7 +94,7 @@ az network public-ip create \
 ```
 ### <a name="create-a-bastion-subnet"></a>Создание подсети бастиона
 
-Используйте команду [az network vnet subnet create](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-create), чтобы создать подсеть бастиона:
+Используйте команду [az network vnet subnet create](/cli/azure/network/vnet/subnet#az_network_vnet_subnet_create), чтобы создать подсеть бастиона:
 
 * с именем **AzureBastionSubnet**;
 * с префиксом подсети **10.1.1.0/24**.
@@ -111,7 +111,7 @@ az network vnet subnet create \
 
 ### <a name="create-bastion-host"></a>Создание узла-бастиона
 
-Используйте команду [az network bastion create](/cli/azure/network/bastion#az-network-bastion-create) для создания узла-бастиона:
+Используйте команду [az network bastion create](/cli/azure/network/bastion#az_network_bastion_create) для создания узла-бастиона:
 
 * с именем **myBastionHost**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -134,7 +134,7 @@ az network bastion create \
 
 Для подсистемы балансировки нагрузки уровня "Стандартный" у серверных виртуальных машин должны быть сетевые интерфейсы, связанные с группой безопасности сети. 
 
-Создайте группу безопасности сети с помощью команды [az network nsg create](/cli/azure/network/nsg#az-network-nsg-create):
+Создайте группу безопасности сети с помощью команды [az network nsg create](/cli/azure/network/nsg#az_network_nsg_create):
 
 * с именем **myNSG**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -147,7 +147,7 @@ az network bastion create \
 
 ### <a name="create-a-network-security-group-rule"></a>Создание правила группы безопасности сети
 
-Создайте правило группы безопасности сети с помощью команды [az network nsg rule create](/cli/azure/network/nsg/rule#az-network-nsg-rule-create), используя такие сведения:
+Создайте правило группы безопасности сети с помощью команды [az network nsg rule create](/cli/azure/network/nsg/rule#az_network_nsg_rule_create), используя такие сведения:
 
 * имя **myNSGRuleHTTP**;
 * группа безопасности сети, созданная на предыдущем шаге, **myNSG**;
@@ -184,7 +184,7 @@ az network bastion create \
 
 ### <a name="create-network-interfaces-for-the-virtual-machines"></a>Создание сетевых интерфейсов для виртуальных машин
 
-Создайте три сетевых интерфейса с помощью команды [az network nic create](/cli/azure/network/nic#az-network-nic-create), используя следующие сведения:
+Создайте три сетевых интерфейса с помощью команды [az network nic create](/cli/azure/network/nic#az_network_nic_create), используя следующие сведения:
 
 * имена **myNicVM1**, **myNicVM2** и **myNicVM3**;
 * в группе ресурсов **CreatePubLBQS-rg**;
@@ -207,7 +207,7 @@ az network bastion create \
 
 ### <a name="create-virtual-machines"></a>Создание виртуальных машин
 
-Создайте виртуальные машины с помощью команды [az vm create](/cli/azure/vm#az-vm-create), используя следующие сведения:
+Создайте виртуальные машины с помощью команды [az vm create](/cli/azure/vm#az_vm_create), используя следующие сведения:
 
 ### <a name="vm1"></a>VM1
 * имя **myVM1**;
@@ -263,11 +263,13 @@ az network bastion create \
 ```
 На развертывание виртуальных машин может потребоваться несколько минут.
 
+[!INCLUDE [ephemeral-ip-note.md](../../includes/ephemeral-ip-note.md)]
+
 ## <a name="create-a-public-ip-address---standard"></a>Создание общедоступного IP-адреса, категория "Стандартный"
 
 Для доступа к веб-приложению через Интернет подсистеме балансировки нагрузки требуется общедоступный IP-адрес. 
 
-Используйте [az network public-ip create](/cli/azure/network/public-ip#az-network-public-ip-create), чтобы:
+Используйте [az network public-ip create](/cli/azure/network/public-ip#az_network_public_ip_create), чтобы:
 
 * создать стандартный избыточный между зонами общедоступный IP-адрес с именем **myPublicIP**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -300,7 +302,7 @@ az network bastion create \
 
 ### <a name="create-the-load-balancer-resource"></a>Создание ресурса подсистемы балансировки нагрузки
 
-С помощью команды [az network lb create](/cli/azure/network/lb#az-network-lb-create) создайте общедоступную подсистему балансировки нагрузки:
+С помощью команды [az network lb create](/cli/azure/network/lb#az_network_lb_create) создайте общедоступную подсистему балансировки нагрузки:
 
 * с именем **myLoadBalancer**,
 * пулом переднего плана **myFrontEnd**
@@ -323,7 +325,7 @@ az network bastion create \
 
 Виртуальная машина с неудачной пробой удаляется из подсистемы балансировки нагрузки и снова добавляется в нее после устранения сбоя.
 
-Создайте пробу работоспособности с помощью команды [az network lb probe create](/cli/azure/network/lb/probe#az-network-lb-probe-create), которая:
+Создайте пробу работоспособности с помощью команды [az network lb probe create](/cli/azure/network/lb/probe#az_network_lb_probe_create), которая:
 
 * отслеживает работоспособность виртуальных машин;
 * имеет имя **myHealthProbe**;
@@ -347,7 +349,7 @@ az network bastion create \
 * серверный пул IP-адресов для приема трафика;
 * требуемые порты источника и назначения. 
 
-С помощью команды [az network lb rule create](/cli/azure/network/lb/rule#az-network-lb-rule-create) создайте правило подсистемы балансировки нагрузки, которое:
+С помощью команды [az network lb rule create](/cli/azure/network/lb/rule#az_network_lb_rule_create) создайте правило подсистемы балансировки нагрузки, которое:
 
 * имеет имя **myHTTPRule**;
 * ожидает передачи данных от **порта 80**, используемого интерфейсным пулом **myFrontEnd**;
@@ -376,7 +378,7 @@ az network bastion create \
 ```
 ### <a name="add-virtual-machines-to-load-balancer-backend-pool"></a>Добавление виртуальных машин во внутренний пул подсистемы балансировки нагрузки
 
-Добавьте виртуальные машины во внутренний пул, используя команду [az network nic ip-config address-pool add](/cli/azure/network/nic/ip-config/address-pool#az-network-nic-ip-config-address-pool-add):
+Добавьте виртуальные машины во внутренний пул, используя команду [az network nic ip-config address-pool add](/cli/azure/network/nic/ip-config/address-pool#az_network_nic_ip_config_address_pool_add):
 
 * в серверном пуле адресов **myBackEndPool**;
 * в группе ресурсов **CreatePubLBQS-rg**;
@@ -404,7 +406,7 @@ az network bastion create \
 
 ### <a name="public-ip"></a>Общедоступный IP-адрес
 
-Используйте команду [az network public-ip create](/cli/azure/network/public-ip#az-network-public-ip-create), чтобы создать отдельный IP-адрес для исходящего подключения.  
+Используйте команду [az network public-ip create](/cli/azure/network/public-ip#az_network_public_ip_create), чтобы создать отдельный IP-адрес для исходящего подключения.  
 
 * с именем **myPublicIPOutbound**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -428,7 +430,7 @@ az network bastion create \
 
 ### <a name="public-ip-prefix"></a>Префикс общедоступного IP-адреса
 
-Используйте команду [az network public-ip prefix create](/cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-create), чтобы создать префикс общедоступного IP-адреса для исходящего подключения.
+Используйте команду [az network public-ip prefix create](/cli/azure/network/public-ip/prefix#az_network_public_ip_prefix_create), чтобы создать префикс общедоступного IP-адреса для исходящего подключения.
 
 * с именем **myPublicIPPrefixOutbound**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -454,7 +456,7 @@ az network bastion create \
 
 ### <a name="create-outbound-frontend-ip-configuration"></a>Создайте интерфейсные IP-конфигурации для исходящего трафика
 
-Создайте новую интерфейсную IP-конфигурацию с помощью [az network lb frontend-ip create ](/cli/azure/network/lb/frontend-ip#az-network-lb-frontend-ip-create):
+Создайте новую интерфейсную IP-конфигурацию с помощью [az network lb frontend-ip create ](/cli/azure/network/lb/frontend-ip#az_network_lb_frontend_ip_create):
 
 Выберите команды "общедоступный IP-адрес" или "префикс общедоступного IP-адреса" на основе решения на предыдущем шаге.
 
@@ -490,7 +492,7 @@ az network bastion create \
 
 ### <a name="create-outbound-pool"></a>Создание исходящего пула
 
-Создайте исходящий пул, используя команду [az network lb address-pool create](/cli/azure/network/lb/address-pool#az-network-lb-address-pool-create) и cледующие сведения:
+Создайте исходящий пул, используя команду [az network lb address-pool create](/cli/azure/network/lb/address-pool#az_network_lb_address_pool_create) и cледующие сведения:
 
 * имя **myBackEndPoolOutbound**;
 * в группе ресурсов **CreatePubLBQS-rg**;
@@ -504,7 +506,7 @@ az network bastion create \
 ```
 ### <a name="create-outbound-rule"></a>Создание правила для исходящего трафика
 
-Создайте правило для исходящего трафика для исходящего внутреннего пула, используя команду [az network lb outbound-rule create](/cli/azure/network/lb/outbound-rule#az-network-lb-outbound-rule-create) и следующие сведения:
+Создайте правило для исходящего трафика для исходящего внутреннего пула, используя команду [az network lb outbound-rule create](/cli/azure/network/lb/outbound-rule#az_network_lb_outbound_rule_create) и следующие сведения:
 
 * имя **myOutboundRule**;
 * в группе ресурсов **CreatePubLBQS-rg**;
@@ -528,7 +530,7 @@ az network bastion create \
 ```
 ### <a name="add-virtual-machines-to-outbound-pool"></a>Добавление виртуальных машин в исходящий пул
 
-Добавьте виртуальные машины в исходящий пул, используя команду [az network nic ip-config address-pool add](/cli/azure/network/nic/ip-config/address-pool#az-network-nic-ip-config-address-pool-add) и следующие сведения:
+Добавьте виртуальные машины в исходящий пул, используя команду [az network nic ip-config address-pool add](/cli/azure/network/nic/ip-config/address-pool#az_network_nic_ip_config_address_pool_add) и следующие сведения:
 
 
 * в серверном пуле адресов **myBackEndPoolOutbound**;
@@ -561,7 +563,7 @@ az network bastion create \
 
 ### <a name="create-a-virtual-network"></a>Создание виртуальной сети
 
-Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az-network-vnet-create):
+Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az_network_vnet_create):
 
 * с именем **myVNet**;
 * с префиксом подсети **10.1.0.0/16**;
@@ -582,7 +584,7 @@ az network bastion create \
 
 ### <a name="create-a-public-ip-address"></a>Создание общедоступного IP-адреса
 
-Чтобы создать общедоступный IP-адрес узла-бастиона, воспользуйтесь командой [az network public-ip create](/cli/azure/network/public-ip#az-network-public-ip-create):
+Чтобы создать общедоступный IP-адрес узла-бастиона, воспользуйтесь командой [az network public-ip create](/cli/azure/network/public-ip#az_network_public_ip_create):
 
 * создайте стандартный избыточный между зонами общедоступный IP-адрес с именем **myPublicIP**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -595,7 +597,7 @@ az network public-ip create \
 ```
 ### <a name="create-a-bastion-subnet"></a>Создание подсети бастиона
 
-Используйте команду [az network vnet subnet create](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-create), чтобы создать подсеть бастиона:
+Используйте команду [az network vnet subnet create](/cli/azure/network/vnet/subnet#az_network_vnet_subnet_create), чтобы создать подсеть бастиона:
 
 * с именем **AzureBastionSubnet**;
 * с префиксом подсети **10.1.1.0/24**.
@@ -612,7 +614,7 @@ az network vnet subnet create \
 
 ### <a name="create-bastion-host"></a>Создание узла-бастиона
 
-Используйте команду [az network bastion create](/cli/azure/network/bastion#az-network-bastion-create) для создания узла-бастиона:
+Используйте команду [az network bastion create](/cli/azure/network/bastion#az_network_bastion_create) для создания узла-бастиона:
 
 * с именем **myBastionHost**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -635,7 +637,7 @@ az network bastion create \
 
 Для подсистемы балансировки нагрузки уровня "Стандартный" у серверных виртуальных машин должны быть сетевые интерфейсы, связанные с группой безопасности сети. 
 
-Создайте группу безопасности сети с помощью команды [az network nsg create](/cli/azure/network/nsg#az-network-nsg-create):
+Создайте группу безопасности сети с помощью команды [az network nsg create](/cli/azure/network/nsg#az_network_nsg_create):
 
 * с именем **myNSG**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -648,7 +650,7 @@ az network bastion create \
 
 ### <a name="create-a-network-security-group-rule"></a>Создание правила группы безопасности сети
 
-Создайте правило группы безопасности сети с помощью команды [az network nsg rule create](/cli/azure/network/nsg/rule#az-network-nsg-rule-create), используя такие сведения:
+Создайте правило группы безопасности сети с помощью команды [az network nsg rule create](/cli/azure/network/nsg/rule#az_network_nsg_rule_create), используя такие сведения:
 
 * имя **myNSGRuleHTTP**;
 * группа безопасности сети, созданная на предыдущем шаге, **myNSG**;
@@ -687,7 +689,7 @@ az network bastion create \
 
 ### <a name="create-network-interfaces-for-the-virtual-machines"></a>Создание сетевых интерфейсов для виртуальных машин
 
-Создайте три сетевых интерфейса с помощью команды [az network nic create](/cli/azure/network/nic#az-network-nic-create), используя следующие сведения:
+Создайте три сетевых интерфейса с помощью команды [az network nic create](/cli/azure/network/nic#az_network_nic_create), используя следующие сведения:
 
 
 * имена **myNicVM1**, **myNicVM2** и **myNicVM3**;
@@ -710,7 +712,7 @@ az network bastion create \
 ```
 ### <a name="create-availability-set-for-virtual-machines"></a>Создание группы доступности для виртуальных машин
 
-Создайте группу доступности, используя команду [az vm availability-set create](/cli/azure/vm/availability-set#az-vm-availability-set-create) и следующие сведения:
+Создайте группу доступности, используя команду [az vm availability-set create](/cli/azure/vm/availability-set#az_vm_availability_set_create) и следующие сведения:
 
 * имя **myAvSet**;
 * в группе ресурсов **CreatePubLBQS-rg**;
@@ -726,7 +728,7 @@ az network bastion create \
 
 ### <a name="create-virtual-machines"></a>Создание виртуальных машин
 
-Создайте виртуальные машины с помощью команды [az vm create](/cli/azure/vm#az-vm-create), используя следующие сведения:
+Создайте виртуальные машины с помощью команды [az vm create](/cli/azure/vm#az_vm_create), используя следующие сведения:
 
 ### <a name="vm1"></a>VM1
 * имя **myVM1**;
@@ -782,11 +784,13 @@ az network bastion create \
 ```
 На развертывание виртуальных машин может потребоваться несколько минут.
 
+[!INCLUDE [ephemeral-ip-note.md](../../includes/ephemeral-ip-note.md)]
+
 ## <a name="create-a-public-ip-address---basic"></a>Создание общедоступного IP-адреса, категория "Базовый"
 
 Для доступа к веб-приложению через Интернет подсистеме балансировки нагрузки требуется общедоступный IP-адрес. 
 
-Используйте [az network public-ip create](/cli/azure/network/public-ip#az-network-public-ip-create), чтобы:
+Используйте [az network public-ip create](/cli/azure/network/public-ip#az_network_public_ip_create), чтобы:
 
 * создать стандартный избыточный между зонами общедоступный IP-адрес с именем **myPublicIP**;
 * в группе ресурсов **CreatePubLBQS-rg**.
@@ -809,7 +813,7 @@ az network bastion create \
 
 ### <a name="create-the-load-balancer-resource"></a>Создание ресурса подсистемы балансировки нагрузки
 
-С помощью команды [az network lb create](/cli/azure/network/lb#az-network-lb-create) создайте общедоступную подсистему балансировки нагрузки:
+С помощью команды [az network lb create](/cli/azure/network/lb#az_network_lb_create) создайте общедоступную подсистему балансировки нагрузки:
 
 * с именем **myLoadBalancer**,
 * пулом переднего плана **myFrontEnd**
@@ -832,7 +836,7 @@ az network bastion create \
 
 Виртуальная машина с неудачной пробой удаляется из подсистемы балансировки нагрузки и снова добавляется в нее после устранения сбоя.
 
-Создайте пробу работоспособности с помощью команды [az network lb probe create](/cli/azure/network/lb/probe#az-network-lb-probe-create), которая:
+Создайте пробу работоспособности с помощью команды [az network lb probe create](/cli/azure/network/lb/probe#az_network_lb_probe_create), которая:
 
 * отслеживает работоспособность виртуальных машин;
 * имеет имя **myHealthProbe**;
@@ -856,7 +860,7 @@ az network bastion create \
 * серверный пул IP-адресов для приема трафика;
 * требуемые порты источника и назначения. 
 
-С помощью команды [az network lb rule create](/cli/azure/network/lb/rule#az-network-lb-rule-create) создайте правило подсистемы балансировки нагрузки, которое:
+С помощью команды [az network lb rule create](/cli/azure/network/lb/rule#az_network_lb_rule_create) создайте правило подсистемы балансировки нагрузки, которое:
 
 * имеет имя **myHTTPRule**;
 * ожидает передачи данных от **порта 80**, используемого интерфейсным пулом **myFrontEnd**;
@@ -881,7 +885,7 @@ az network bastion create \
 
 ### <a name="add-virtual-machines-to-load-balancer-backend-pool"></a>Добавление виртуальных машин во внутренний пул подсистемы балансировки нагрузки
 
-Добавьте виртуальные машины во внутренний пул, используя команду [az network nic ip-config address-pool add](/cli/azure/network/nic/ip-config/address-pool#az-network-nic-ip-config-address-pool-add):
+Добавьте виртуальные машины во внутренний пул, используя команду [az network nic ip-config address-pool add](/cli/azure/network/nic/ip-config/address-pool#az_network_nic_ip_config_address_pool_add):
 
 * в серверном пуле адресов **myBackEndPool**;
 * в группе ресурсов **CreatePubLBQS-rg**;
@@ -923,7 +927,7 @@ az network bastion create \
 
 ## <a name="test-the-load-balancer"></a>Тестирование подсистемы балансировки нагрузки
 
-Чтобы получить общедоступный IP-адрес подсистемы балансировки нагрузки, используйте команду [az network public-ip show](/cli/azure/network/public-ip#az-network-public-ip-show). 
+Чтобы получить общедоступный IP-адрес подсистемы балансировки нагрузки, используйте команду [az network public-ip show](/cli/azure/network/public-ip#az_network_public_ip_show). 
 
 Скопируйте общедоступный IP-адрес и вставьте его в адресную строку браузера.
 
@@ -938,7 +942,7 @@ az network bastion create \
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Вы можете удалить ненужную группу ресурсов, подсистему балансировки нагрузки и все связанные с ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az-group-delete).
+Вы можете удалить ненужную группу ресурсов, подсистему балансировки нагрузки и все связанные с ней ресурсы, выполнив команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive
   az group delete \

@@ -8,12 +8,12 @@ ms.subservice: iomt
 ms.topic: tutorial
 ms.date: 11/13/2020
 ms.author: punagpal
-ms.openlocfilehash: 36d6d8b4d4435b1db99f2721c817c9c06ca60945
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 77d54ef0c9bef40af47c2fc48b9d4b5d6315b119
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103020356"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107780401"
 ---
 # <a name="tutorial-receive-device-data-through-azure-iot-hub"></a>Руководство по Получение данных устройства через Центр Интернета вещей Azure
 
@@ -44,7 +44,7 @@ ms.locfileid: "103020356"
 Настройка маршрутизации сообщений состоит из двух этапов.
 
 ### <a name="add-an-endpoint"></a>Добавление конечной точки
-Этот шаг определяет конечную точку, к которой Центр Интернета вещей будет направлять данные. Для создания конечной точки выполните команду PowerShell [Add-AzIotHubRoutingEndpoint](/powershell/module/az.iothub/Add-AzIotHubRoutingEndpoint) или команду CLI [az iot hub routing-endpoint create](/cli/azure/iot/hub/routing-endpoint#az-iot-hub-routing-endpoint-create) (в зависимости от предпочтений).
+Этот шаг определяет конечную точку, к которой Центр Интернета вещей будет направлять данные. Для создания конечной точки выполните команду PowerShell [Add-AzIotHubRoutingEndpoint](/powershell/module/az.iothub/Add-AzIotHubRoutingEndpoint) или команду CLI [az iot hub routing-endpoint create](/cli/azure/iot/hub/routing-endpoint#az_iot_hub_routing_endpoint_create) (в зависимости от предпочтений).
 
 Ниже приведен список параметров, которые можно использовать с командой для создания конечной точки.
 
@@ -59,7 +59,7 @@ ms.locfileid: "103020356"
 |ConnectionString|Строка подключения|Строка подключения к соединителю "Azure IoT для FHIR". Используйте значение, полученное на предыдущем шаге.|
 
 ### <a name="add-a-message-route"></a>Добавление маршрута сообщений
-На этом шаге определяется маршрут сообщений на основе созданной выше конечной точки. Создайте маршрут с помощью команды PowerShell [Add-AzIotHubRoute](/powershell/module/az.iothub/Add-AzIoTHubRoute) или команды CLI [az iot hub route create](/cli/azure/iot/hub/route#az-iot-hub-route-create) (в зависимости от предпочтений).
+На этом шаге определяется маршрут сообщений на основе созданной выше конечной точки. Создайте маршрут с помощью команды PowerShell [Add-AzIotHubRoute](/powershell/module/az.iothub/Add-AzIoTHubRoute) или команды CLI [az iot hub route create](/cli/azure/iot/hub/route#az_iot_hub_route_create) (в зависимости от предпочтений).
 
 Ниже приведен список параметров, которые можно использовать с командой для добавления маршрута сообщений.
 

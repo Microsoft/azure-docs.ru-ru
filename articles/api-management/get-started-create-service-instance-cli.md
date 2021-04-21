@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.custom: ''
 ms.date: 09/10/2020
 ms.author: apimpm
-ms.openlocfilehash: 72d1faac02a21f23d46eb992af1d501bca89e71f
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 19fc2e1629e7f67063e3cc3eec8cb3707b6dd2e4
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101688082"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107775859"
 ---
 # <a name="quickstart-create-a-new-azure-api-management-service-instance-by-using-the-azure-cli"></a>Краткое руководство. Создание экземпляра службы "Управление API Azure" с помощью Azure CLI
 
@@ -30,7 +30,7 @@ ms.locfileid: "101688082"
 
 Экземпляры службы "Управление API Azure", как и все ресурсы Azure, должны быть развернуты в группе ресурсов. Группы ресурсов позволяют организовать соответствующие ресурсы Azure и управлять ими.
 
-Для начала создайте группу ресурсов с именем *myResourceGroup* в регионе "центральная часть США" с помощью следующей команды [az group create](/cli/azure/group#az-group-create):
+Для начала создайте группу ресурсов с именем *myResourceGroup* в регионе "центральная часть США" с помощью следующей команды [az group create](/cli/azure/group#az_group_create):
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location centralus
@@ -38,7 +38,7 @@ az group create --name myResourceGroup --location centralus
 
 ## <a name="create-a-new-service"></a>Создание службы
 
-Теперь, когда у вас есть группа ресурсов, можно создать экземпляр службы "Управление API". Создайте его с помощью команды [az apim create](/cli/azure/apim#az-apim-create), а также укажите имя службы и сведения об издателе. Имя пользователя должно быть уникальным в пределах Azure. 
+Теперь, когда у вас есть группа ресурсов, можно создать экземпляр службы "Управление API". Создайте его с помощью команды [az apim create](/cli/azure/apim#az_apim_create), а также укажите имя службы и сведения об издателе. Имя пользователя должно быть уникальным в пределах Azure. 
 
 В следующем примере для имени службы используется *myapim*. Замените его уникальным значением. Также обновите имя организации издателя API и адрес электронной почты для получения уведомлений. 
 
@@ -53,7 +53,7 @@ az apim create --name myapim --resource-group myResourceGroup \
 > [!TIP]
 > Обычно создание и активация службы "Управление API" на этом уровне занимает от 30 до 40 минут. Предыдущая команда использует параметр `--no-wait`, чтобы результаты возвращались сразу же после создания службы.
 
-Проверьте состояние развертывания, выполнив команду [az apim show](/cli/azure/apim#az-apim-show):
+Проверьте состояние развертывания, выполнив команду [az apim show](/cli/azure/apim#az_apim_show):
 
 ```azurecli-interactive
 az apim show --name myapim --resource-group myResourceGroup --output table
@@ -79,7 +79,7 @@ myapim       myResourceGroup   Central US  https://myapim.azure-api.net       20
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Ненужные группу ресурсов и экземпляр службы "Управление API" можно удалить с помощью команды [az group delete](/cli/azure/group#az-group-delete).
+Ненужные группу ресурсов и экземпляр службы "Управление API" можно удалить с помощью команды [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive
 az group delete --name myResourceGroup

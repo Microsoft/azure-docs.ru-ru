@@ -10,12 +10,12 @@ ms.workload: big-data
 ms.topic: quickstart
 ms.custom: mvc, devx-track-azurecli
 ms.date: 07/01/2020
-ms.openlocfilehash: a3cc4c3d6936a51ca2010209ce23e4d82c9333eb
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 58dccf56cd493782a422b0ddf0386e31d4d87daf
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "98016346"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765995"
 ---
 # <a name="quickstart-create-an-azure-stream-analytics-job-using-the-azure-cli"></a>Краткое руководство. Создание задания Azure Stream Analytics с помощью Azure CLI
 
@@ -29,7 +29,7 @@ ms.locfileid: "98016346"
 
 - Создайте группу ресурсов. Все ресурсы Azure должны развертываться в группе ресурсов. Группы ресурсов позволяют организовать соответствующие ресурсы Azure и управлять ими.
 
-   Для работы с этим кратким руководством создайте группу ресурсов с именем *streamanalyticsrg* в регионе *eastus* с помощью следующей команды [az group create](/cli/azure/group#az-group-create):
+   Для работы с этим кратким руководством создайте группу ресурсов с именем *streamanalyticsrg* в регионе *eastus* с помощью следующей команды [az group create](/cli/azure/group#az_group_create):
 
    ```azurecli
    az group create --name streamanalyticsrg --location eastus

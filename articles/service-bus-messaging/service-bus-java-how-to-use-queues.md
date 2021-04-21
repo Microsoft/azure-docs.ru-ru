@@ -1,16 +1,21 @@
 ---
 title: Использование очередей служебной шины Azure с Java (azure-messaging-servicebus)
 description: В этом руководстве показано, как использовать Java для отправки и получения сообщений через очередь Служебной шины Azure. Вы используете новый пакет azure-messaging-servicebus.
-ms.devlang: Java
-ms.topic: quickstart
 ms.date: 02/13/2021
-ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019, devx-track-java
-ms.openlocfilehash: 1fab8d3f603b3c2c7e3c307d3d2ce53590d7511c
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.topic: quickstart
+ms.devlang: Java
+ms.custom:
+- seo-java-july2019
+- seo-java-august2019
+- seo-java-september2019
+- devx-track-java
+- mode-api
+ms.openlocfilehash: e3998e812bb921ff8bea5e83199bc4e142ed2e83
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "101739769"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107533428"
 ---
 # <a name="send-messages-to-and-receive-messages-from-azure-service-bus-queues-java"></a>Отправка сообщений в очереди Служебной шины и получение сообщений из них (Java)
 В этом кратком руководстве описывается создание приложения Java для отправки сообщений в очередь служебной шины Azure и получения сообщений из нее. 

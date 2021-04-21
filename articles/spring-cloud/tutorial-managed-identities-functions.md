@@ -6,12 +6,12 @@ ms.author: margard
 ms.service: spring-cloud
 ms.topic: tutorial
 ms.date: 07/10/2020
-ms.openlocfilehash: 99e3611711e9a25119a4428d7736a36073163894
-ms.sourcegitcommit: 42e4f986ccd4090581a059969b74c461b70bcac0
+ms.openlocfilehash: b737ea751d3b3d2132691e04a1a2cd853748db65
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104877150"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107792513"
 ---
 # <a name="tutorial-use-a-managed-identity-to-invoke-azure-functions-from-an-azure-spring-cloud-app"></a>Руководство по использованию управляемого удостоверения для вызова Функций Azure из приложения Azure Spring Cloud
 
@@ -29,7 +29,7 @@ ms.locfileid: "104877150"
 
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
-Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов, которая будет содержать приложение-функцию и Spring Cloud, с помощью команды [az group create](/cli/azure/group#az-group-create).
+Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов, которая будет содержать приложение-функцию и Spring Cloud, с помощью команды [az group create](/cli/azure/group#az_group_create).
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location eastus
@@ -37,7 +37,7 @@ az group create --name myResourceGroup --location eastus
 
 
 ## <a name="create-a-function-app"></a>Создание приложения-функции
-Чтобы создать приложение-функцию, необходимо сначала создать учетную запись хранения для архивации. Для этого выполните команду [az storage account create](/cli/azure/storage/account#az-storage-account-create):
+Чтобы создать приложение-функцию, необходимо сначала создать учетную запись хранения для архивации. Для этого выполните команду [az storage account create](/cli/azure/storage/account#az_storage_account_create):
 
 > [!Important]
 > Каждое приложение-функция и каждая учетная запись хранения должны иметь уникальные имена. Замените в следующих примерах <your-functionapp-name> именем своего приложения-функции, а <your-storageaccount-name> — именем вашей учетной записи хранения.

@@ -1,15 +1,17 @@
 ---
 title: Краткое руководство. Создание учетной записи пакетной службы с помощью шаблона Azure Resource Manager
 description: В этом кратком руководстве показано, как создать учетную запись пакетной службы с помощью шаблона ARM.
-ms.topic: quickstart
 ms.date: 08/17/2020
-ms.custom: subject-armqs
-ms.openlocfilehash: fc6f1537b32c8ced2cfc2bf09f16106f791001fc
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.topic: quickstart
+ms.custom:
+- subject-armqs
+- mode-arm
+ms.openlocfilehash: e3405e98e2753a308b6b34b392aa364a67f7fe5b
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97106586"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107535589"
 ---
 # <a name="quickstart-create-a-batch-account-by-using-arm-template"></a>Краткое руководство. Создание учетной записи пакетной службы с помощью шаблона ARM
 

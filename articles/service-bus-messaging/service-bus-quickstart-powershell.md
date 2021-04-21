@@ -2,17 +2,19 @@
 title: Создание очереди Служебной шины с помощью Azure PowerShell
 description: Из этого краткого руководства вы узнаете, как создать пространство имен и очередь в пространстве имен Служебной шины с помощью Azure PowerShell.
 author: spelluru
-ms.devlang: dotnet
-ms.topic: quickstart
-ms.date: 08/12/2020
 ms.author: spelluru
-ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 8cf024735c66e6bae9d334e3d8ce8d0a0eed1426
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 08/12/2020
+ms.topic: quickstart
+ms.devlang: dotnet
+ms.custom:
+- devx-track-azurepowershell
+- mode-api
+ms.openlocfilehash: f7bf9e5435b00ee3076422cccbe689038051499d
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "95799107"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107537098"
 ---
 # <a name="use-azure-powershell-to-create-a-service-bus-namespace-and-a-queue"></a>Создание пространства имен и очереди Служебной шины с помощью Azure PowerShell
 Из этого краткого руководства вы узнаете, как создать пространство имен и очередь Служебной шины с помощью Azure PowerShell. В нем также описывается, как получить учетные данные авторизации, которые могут использоваться клиентским приложением для отправки сообщений в очередь и их получения из нее. 
@@ -70,4 +72,3 @@ ms.locfileid: "95799107"
 - [Ruby](service-bus-ruby-how-to-use-queues.md)
 
 [бесплатная учетная запись]: https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio
-

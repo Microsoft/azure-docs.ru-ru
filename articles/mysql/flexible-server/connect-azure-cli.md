@@ -4,15 +4,15 @@ description: В этом кратком руководстве показано 
 author: mksuni
 ms.author: sumuth
 ms.service: mysql
-ms.custom: mvc
+ms.custom: mvc, devx-track-azurecli
 ms.topic: quickstart
 ms.date: 03/01/2021
-ms.openlocfilehash: d40dfa9c8a79625910414409ac3a6df7045c31f2
-ms.sourcegitcommit: bfa7d6ac93afe5f039d68c0ac389f06257223b42
+ms.openlocfilehash: e0fd5969a3c4f84b6e8f98e99335bf120179e7af
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106490919"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107481095"
 ---
 # <a name="quickstart-connect-and-query-with-azure-cli--with-azure-database-for-mysql---flexible-server"></a>Краткое руководство. Подключение и выполнение запроса к гибкому серверу Базы данных Azure для MySQL с помощью Azure CLI
 
@@ -21,7 +21,7 @@ ms.locfileid: "106490919"
 
 В этом кратком руководстве объясняется, как подключиться к гибкому серверу Базы данных Azure для MySQL с помощью команды ```az mysql flexible-server connect``` Azure CLI. С помощью этой команды можно проверить подключение к серверу базы данных и выполнить запросы непосредственно к серверу.  Вы можете также запустить команду в интерактивном режиме, чтобы выполнить несколько запросов.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).
 - Установите последнюю версию [Azure CLI](/cli/azure/install-azure-cli) (2.20.0 или более позднюю).

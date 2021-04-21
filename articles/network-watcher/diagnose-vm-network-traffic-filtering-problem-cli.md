@@ -17,12 +17,12 @@ ms.workload: infrastructure
 ms.date: 01/07/2021
 ms.author: kumud
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 18e380345ef0caab52e9b1c537bada73e36d8b48
-ms.sourcegitcommit: 73fb48074c4c91c3511d5bcdffd6e40854fb46e5
+ms.openlocfilehash: 701df4353e8d2e36baf0496bd6944c4a95395414
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106063327"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107763277"
 ---
 # <a name="quickstart-diagnose-a-virtual-machine-network-traffic-filter-problem---azure-cli"></a>Краткое руководство. Диагностика проблемы с фильтром сетевого трафика на виртуальной машине с помощью Azure CLI
 
@@ -62,7 +62,7 @@ az vm create \
 
 ### <a name="enable-network-watcher"></a>Включение Наблюдателя за сетями
 
-Если в регионе "Восточная часть США" уже включена служба "Наблюдатель за сетями", перейдите к разделу по [проверке IP-потока](#use-ip-flow-verify). Чтобы создать Наблюдатель за сетями в регионе EastUS, используйте команду [az network watcher configure](/cli/azure/network/watcher#az-network-watcher-configure).
+Если в регионе "Восточная часть США" уже включена служба "Наблюдатель за сетями", перейдите к разделу по [проверке IP-потока](#use-ip-flow-verify). Чтобы создать Наблюдатель за сетями в регионе EastUS, используйте команду [az network watcher configure](/cli/azure/network/watcher#az_network_watcher_configure).
 
 ```azurecli-interactive
 az network watcher configure \
@@ -73,7 +73,7 @@ az network watcher configure \
 
 ### <a name="use-ip-flow-verify"></a>Применение проверки IP-потока
 
-При создании виртуальной машины Azure применяет к ней стандартные правила разрешений и запретов трафика. Позднее вы можете переопределить эти значения по умолчанию, чтобы разрешить или запретить дополнительные типы трафика. Чтобы проверить, разрешен или запрещен трафик до определенных мест назначения от исходного IP-адреса, используйте команду [az network watcher test-ip-flow](/cli/azure/network/watcher#az-network-watcher-test-ip-flow).
+При создании виртуальной машины Azure применяет к ней стандартные правила разрешений и запретов трафика. Позднее вы можете переопределить эти значения по умолчанию, чтобы разрешить или запретить дополнительные типы трафика. Чтобы проверить, разрешен или запрещен трафик до определенных мест назначения от исходного IP-адреса, используйте команду [az network watcher test-ip-flow](/cli/azure/network/watcher#az_network_watcher_test_ip_flow).
 
 Проверьте исходящее подключение виртуальной машины по любому из IP-адресов сайта www.bing.com.
 
@@ -125,7 +125,7 @@ az network watcher test-ip-flow \
 
 ## <a name="view-details-of-a-security-rule"></a>Просмотр сведений о правиле безопасности
 
-Чтобы определить, почему в разделе [проверки IP-потока](#use-ip-flow-verify) мы получили такие ответы о разрешении и (или) запрете доступа, изучите правила безопасности для сетевого интерфейса с помощью команды [az network nic list-effective-nsg](/cli/azure/network/nic#az-network-nic-list-effective-nsg):
+Чтобы определить, почему в разделе [проверки IP-потока](#use-ip-flow-verify) мы получили такие ответы о разрешении и (или) запрете доступа, изучите правила безопасности для сетевого интерфейса с помощью команды [az network nic list-effective-nsg](/cli/azure/network/nic#az_network_nic_list_effective_nsg):
 
 ```azurecli-interactive
 az network nic list-effective-nsg \

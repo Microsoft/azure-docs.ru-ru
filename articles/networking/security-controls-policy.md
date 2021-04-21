@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием требованиям в службе "Политика Azure" для сетевых служб Azure
 description: Содержит список элементов управления соответствием из службы "Политика Azure", доступных для сетевых служб Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: sample
 author: KumudD
 ms.author: kumud
 ms.service: virtual-network
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: e097ff7ea49657588b6002bb18972e5b1086f3dc
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 526ad9e9bba63d9098454068837b302147d0fed8
+ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106096252"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107501864"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-networking-services"></a>Элементы управления соответствием требованиям в службе "Политика Azure" для сетевых служб Azure
 

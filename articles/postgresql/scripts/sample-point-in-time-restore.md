@@ -8,12 +8,12 @@ ms.devlang: azurecli
 ms.topic: sample
 ms.custom: mvc, devx-track-azurecli
 ms.date: 02/28/2018
-ms.openlocfilehash: 9af4a3d4a484ef22e147640add455741c533e9b7
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 6d95c06efa347618a7c571b65f01f147aeb5ef1f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "94660480"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107778440"
 ---
 # <a name="restore-an-azure-database-for-postgresql-server-using-azure-cli"></a>Восстановление сервера базы данных Azure для PostgreSQL с помощью Azure CLI
 Этот пример сценария интерфейса командной строки позволяет восстановить отдельный сервер базы данных Azure для PostgreSQL до предыдущей точки во времени.
@@ -36,8 +36,8 @@ ms.locfileid: "94660480"
 | **Command** | **Примечания** |
 |---|---|
 | [az group create](/cli/azure/group) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az postgresql server create](/cli/azure/postgres/server#az-postgres-server-create) | Создает сервер PostgreSQL, на котором размещены базы данных. |
-| [az postgresql server restore](/cli/azure/postgres/server#az-postgres-server-restore) | Восстановление сервера из резервной копии. |
+| [az postgresql server create](/cli/azure/postgres/server#az_postgres_server_create) | Создает сервер PostgreSQL, на котором размещены базы данных. |
+| [az postgresql server restore](/cli/azure/postgres/server#az_postgres_server_restore) | Восстановление сервера из резервной копии. |
 | [az group delete](/cli/azure/group) | Удаляет группу ресурсов со всеми вложенными ресурсами. |
 
 ## <a name="next-steps"></a>Дальнейшие действия

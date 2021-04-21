@@ -6,13 +6,13 @@ ms.suite: integration
 ms.reviewer: logicappspm
 ms.topic: overview
 ms.custom: mvc
-ms.date: 03/11/2020
-ms.openlocfilehash: 4c4e8c8f809452286fee493e20dbef2cc538c8bd
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 03/24/2021
+ms.openlocfilehash: 285cff6df757fd765f177692f67b8d0824103a18
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "96921513"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107764753"
 ---
 # <a name="what-is-azure-logic-apps"></a>Что такое Azure Logic Apps
 
@@ -92,7 +92,7 @@ Logic Apps, "Функции" и "Сетка событий" — это полн�
   * [Сопоставления преобразований XML](../logic-apps/logic-apps-enterprise-integration-maps.md)
   * [Схемы проверки XML](../logic-apps/logic-apps-enterprise-integration-schemas.md)
 
-Например, при использовании Microsoft BizTalk Server приложения логики могут обеспечить взаимодействие приложений с помощью [соединителя BizTalk Server](../connectors/apis-list.md#on-premises-connectors). Затем можно расширить или начать выполнять операции BizTalk в приложениях логики, включив [соединители для учетной записи интеграции](../connectors/apis-list.md#integration-account-connectors), которые доступны в пакете интеграции Enterprise.
+Например, при использовании Microsoft BizTalk Server приложения логики могут обеспечить взаимодействие приложений с помощью [соединителя BizTalk Server](../connectors/managed.md#on-premises-connectors). Затем можно расширить или начать выполнять операции BizTalk в приложениях логики, включив [соединители для учетной записи интеграции](../connectors/managed.md#integration-account-connectors), которые доступны в пакете интеграции Enterprise.
 
 BizTalk Server может подключиться к приложениям логики и взаимодействовать с ними с помощью [адаптера Microsoft BizTalk Server для Logic Apps](https://www.microsoft.com/download/details.aspx?id=54287). Ознакомьтесь с дополнительными сведениями о том, как [настроить и использовать адаптер BizTalk Server](/biztalk/core/logic-app-adapter) в BizTalk Server.
 

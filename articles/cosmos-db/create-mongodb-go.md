@@ -8,12 +8,12 @@ ms.subservice: cosmosdb-mongo
 ms.devlang: go
 ms.topic: quickstart
 ms.date: 04/24/2020
-ms.openlocfilehash: 92edfa148268db5a5458b2af4000bc9ffd9ecc83
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: c9829b49662c90df685388691c04b201a7010eb8
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101659959"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765221"
 ---
 # <a name="quickstart-connect-a-go-application-to-azure-cosmos-dbs-api-for-mongodb"></a>Краткое руководство. Подключение приложения Go к API Azure Cosmos DB для MongoDB
 [!INCLUDE[appliesto-mongodb-api](includes/appliesto-mongodb-api.md)]
@@ -239,7 +239,7 @@ go build -o todo
 
 Если вы решили установить и использовать интерфейс командной строки локально, для работы с этим руководством вам понадобится Azure CLI 2.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI]. 
 
-Если вы используете установленную версию Azure CLI, войдите в подписку Azure с помощью команды [az login](/cli/azure/reference-index#az-login) и следуйте инструкциям на экране. Этот шаг можно пропустить, если вы используете Azure Cloud Shell.
+Если вы используете установленную версию Azure CLI, войдите в подписку Azure с помощью команды [az login](/cli/azure/reference-index#az_login) и следуйте инструкциям на экране. Этот шаг можно пропустить, если вы используете Azure Cloud Shell.
 
 ```azurecli
 az login 
@@ -253,7 +253,7 @@ az login
 
 ### <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Создайте [группу ресурсов](../azure-resource-manager/management/overview.md) с помощью команды [az group create](/cli/azure/group#az-group-create). Группа ресурсов Azure — это логический контейнер, в котором происходит развертывание ресурсов Azure (веб-приложений, баз данных и учетных записей хранения) и управление ими. 
+Создайте [группу ресурсов](../azure-resource-manager/management/overview.md) с помощью команды [az group create](/cli/azure/group#az_group_create). Группа ресурсов Azure — это логический контейнер, в котором происходит развертывание ресурсов Azure (веб-приложений, баз данных и учетных записей хранения) и управление ими. 
 
 В следующем примере показано создание группы ресурсов в регионе "Западная Европа". Выберите уникальное имя для группы ресурсов.
 
@@ -265,7 +265,7 @@ az group create --name myResourceGroup --location "West Europe"
 
 ### <a name="create-an-azure-cosmos-db-account"></a>создание учетной записи Azure Cosmos DB;
 
-Создайте учетную запись Cosmos с помощью команды [az cosmosdb create](/cli/azure/cosmosdb#az-cosmosdb-create).
+Создайте учетную запись Cosmos с помощью команды [az cosmosdb create](/cli/azure/cosmosdb#az_cosmosdb_create).
 
 В следующей команде замените `<cosmosdb-name>` уникальным именем своей базы данных Cosmos везде, где встречается этот заполнитель. Это уникальное имя будет использоваться как часть конечной точки Cosmos DB (`https://<cosmosdb-name>.documents.azure.com/`), поэтому оно должно быть уникальным для всех учетных записей Cosmos в Azure. 
 
@@ -314,7 +314,7 @@ DB/databaseAccounts/<cosmosdb-name>",
 
 ### <a name="retrieve-the-database-key"></a>Получение ключа базы данных
 
-Чтобы подключиться к базе данных Cosmos, вам понадобится ключ базы данных. Чтобы получить первичный ключ, выполните команду [az cosmosdb keys list](/cli/azure/cosmosdb/keys#az-cosmosdb-keys-list).
+Чтобы подключиться к базе данных Cosmos, вам понадобится ключ базы данных. Чтобы получить первичный ключ, выполните команду [az cosmosdb keys list](/cli/azure/cosmosdb/keys#az_cosmosdb_keys_list).
 
 ```azurecli-interactive
 az cosmosdb keys list --name <cosmosdb-name> --resource-group myResourceGroup --query "primaryMasterKey"

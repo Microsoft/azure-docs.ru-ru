@@ -6,13 +6,13 @@ ms.suite: integration
 ms.reviewer: logicappspm
 ms.topic: tutorial
 ms.custom: mvc
-ms.date: 09/30/2020
-ms.openlocfilehash: 95275e68d0c7674caf4dd2b20f5586db5193fd03
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 03/24/2021
+ms.openlocfilehash: 0dab2f49043f3a59dd4f06633e3f0228fc39a424
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99054065"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107792099"
 ---
 # <a name="tutorial-create-schedule-based-and-recurring-automation-workflows-with-azure-logic-apps"></a>Руководство по Создание выполняемых по расписанию повторяющихся рабочих процессов автоматизации с помощью Azure Logic Apps
 
@@ -43,7 +43,7 @@ ms.locfileid: "99054065"
 
 * Чтобы получить время в пути для маршрута, требуется ключ доступа для API Карт Bing. Чтобы получить этот ключ, выполните шаги [для получения ключа Карт Bing](/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key).
 
-* Если для приложения логики нужно реализовать обмен данными через брандмауэр, который допускает трафик только на определенные IP-адреса, этот брандмауэр должен разрешать доступ [входящим](logic-apps-limits-and-config.md#inbound) *и* [исходящим](logic-apps-limits-and-config.md#outbound) IP-адресам, используемым службой Logic Apps или средой выполнения в регионе Azure, где существует ваше приложение логики. Если приложение логики также использует [управляемые соединители](../connectors/apis-list.md#managed-api-connectors) (например, соединитель Office 365 Outlook или соединитель SQL) либо [настраиваемые соединители](/connectors/custom-connectors/), брандмауэр также должен разрешать доступ *всем* [исходящим IP-адресам управляемого соединителя](logic-apps-limits-and-config.md#outbound) в регионе Azure приложения логики.
+* Если для приложения логики нужно реализовать обмен данными через брандмауэр, который допускает трафик только на определенные IP-адреса, этот брандмауэр должен разрешать доступ [входящим](logic-apps-limits-and-config.md#inbound) *и* [исходящим](logic-apps-limits-and-config.md#outbound) IP-адресам, используемым службой Logic Apps или средой выполнения в регионе Azure, где существует ваше приложение логики. Если приложение логики также использует [управляемые соединители](../connectors/managed.md) (например, соединитель Office 365 Outlook или соединитель SQL) либо [настраиваемые соединители](/connectors/custom-connectors/), брандмауэр также должен разрешать доступ *всем* [исходящим IP-адресам управляемого соединителя](logic-apps-limits-and-config.md#outbound) в регионе Azure приложения логики.
 
 ## <a name="create-your-logic-app"></a>Создание приложения логики
 
@@ -194,7 +194,7 @@ ms.locfileid: "99054065"
 
    | Свойство | Обязательно | Значение | Описание |
    |----------|----------|-------|-------------|
-   | **имя**; | Да | travelTime | Имя для переменной. В этом примере используется `travelTime`. |
+   | **Имя** | Да | travelTime | Имя для переменной. В этом примере используется `travelTime`. |
    | **Тип** | Да | Целое число | Тип данных для переменной. |
    | **Значение** | Нет | Выражение, преобразующее текущее время в секундах в минуты (см. шаги в этой таблице). | Начальное значение для переменной |
    |||||

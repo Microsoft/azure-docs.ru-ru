@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 3/12/2020
 ms.topic: overview
 ms.service: digital-twins
-ms.openlocfilehash: 315519472baa672e802855b5ab21b8bae8f51935
-ms.sourcegitcommit: 5fd1f72a96f4f343543072eadd7cdec52e86511e
+ms.openlocfilehash: d03a4865c8db52f74f4130c458fec3028f5b95a4
+ms.sourcegitcommit: afb79a35e687a91270973990ff111ef90634f142
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106109855"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107481673"
 ---
 # <a name="what-is-azure-digital-twins"></a>Что такое Azure Digital Twins?
 
@@ -102,6 +102,6 @@ Azure Digital Twins обычно используется в сочетании 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Изучите работу с Azure Digital Twins с помощью краткого руководства: [*Краткое руководство. Изучение примера сценария*](quickstart-adt-explorer.md).
+* Изучите работу с Azure Digital Twins с помощью краткого руководства: [*Краткое руководство. Изучение примера сценария*](quickstart-azure-digital-twins-explorer.md).
 
 * Либо изучите концепции Azure Digital Twins в статье [*Концепции. Настраиваемые модели*](concepts-models.md).
