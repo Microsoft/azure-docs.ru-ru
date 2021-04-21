@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 08/23/2019
 ms.author: msangapu
 ms.custom: mvc, seodec18, devx-track-azurecli
-ms.openlocfilehash: 2ba42e5e800ae607631e00aee50954bf2638ae43
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 0ea55c36c239b5ecdb51ef3dc7a3ff762718bd1e
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97007149"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107769017"
 ---
 # <a name="create-a-multi-container-preview-app-using-a-docker-compose-configuration"></a>Создание многоконтейнерного приложения (предварительная версия) с использованием конфигурации Docker Compose
 
@@ -55,7 +55,7 @@ cd multicontainerwordpress
 
 [!INCLUDE [resource group intro text](../../includes/resource-group.md)]
 
-В Cloud Shell создайте группу ресурсов с помощью команды [`az group create`](/cli/azure/group#az-group-create). В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *Центрально-южная часть США*. Чтобы просмотреть все поддерживаемые расположения для службы приложений в Linux на уровне **Стандартный**, выполните команду [`az appservice list-locations --sku S1 --linux-workers-enabled`](/cli/azure/appservice#az-appservice-list-locations).
+В Cloud Shell создайте группу ресурсов с помощью команды [`az group create`](/cli/azure/group#az_group_create). В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *Центрально-южная часть США*. Чтобы просмотреть все поддерживаемые расположения для службы приложений в Linux на уровне **Стандартный**, выполните команду [`az appservice list-locations --sku S1 --linux-workers-enabled`](/cli/azure/appservice#az_appservice_list_locations).
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location "South Central US"
@@ -67,7 +67,7 @@ az group create --name myResourceGroup --location "South Central US"
 
 ## <a name="create-an-azure-app-service-plan"></a>Создание плана службы приложений Azure
 
-В Cloud Shell создайте план службы приложений в группе ресурсов с помощью команды [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create).
+В Cloud Shell создайте план службы приложений в группе ресурсов с помощью команды [`az appservice plan create`](/cli/azure/appservice/plan#az_appservice_plan_create).
 
 В следующем примере создается план службы приложений с именем `myAppServicePlan` в ценовой категории **Стандартный** (`--sku S1`) в контейнере Linux (`--is-linux`).
 
@@ -100,7 +100,7 @@ az appservice plan create --name myAppServicePlan --resource-group myResourceGro
 > [!NOTE]
 > Для Docker Compose в Службах приложений Azure сейчас настроено ограничение в 4000 символов.
 
-В терминале Cloud Shell создайте многоконтейнерное [веб-приложение](overview.md#app-service-on-linux) в рамках плана службы приложений `myAppServicePlan` с помощью команды [az webapp create](/cli/azure/webapp#az-webapp-create). Замените _\<app_name>_ уникальным именем приложения (допустимые символы: `a-z`, `0-9` и `-`).
+В терминале Cloud Shell создайте многоконтейнерное [веб-приложение](overview.md#app-service-on-linux) в рамках плана службы приложений `myAppServicePlan` с помощью команды [az webapp create](/cli/azure/webapp#az_webapp_create). Замените _\<app_name>_ уникальным именем приложения (допустимые символы: `a-z`, `0-9` и `-`).
 
 ```azurecli
 az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --multicontainer-config-type compose --multicontainer-config-file compose-wordpress.yml

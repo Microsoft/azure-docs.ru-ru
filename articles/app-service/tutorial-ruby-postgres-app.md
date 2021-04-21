@@ -5,12 +5,12 @@ ms.devlang: ruby
 ms.topic: tutorial
 ms.date: 06/18/2020
 ms.custom: mvc, cli-validate, seodec18, devx-track-azurecli
-ms.openlocfilehash: de8f0e64189014b303463dd8bd6c827990b88f9a
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 63194ab87e0f2228b8585e962394aa1ebfff48d6
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102178479"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107767280"
 ---
 # <a name="build-a-ruby-and-postgres-app-in-azure-app-service-on-linux"></a>Разработка приложения на основе Ruby и Postgres в Службе приложений Azure в Linux
 
@@ -147,7 +147,7 @@ az postgres up --resource-group myResourceGroup --location westeurope --server-n
 
 <!-- not all locations support az postgres up -->
 > [!TIP]
-> Для параметра `--location <location-name>` можно указать любой из [регионов Azure](https://azure.microsoft.com/global-infrastructure/regions/). Список регионов, доступных для вашей подписки, можно получить с помощью команды [`az account list-locations`](/cli/azure/account#az-account-list-locations). Для рабочих приложений разместите базу данных и приложение в одном месте.
+> Для параметра `--location <location-name>` можно указать любой из [регионов Azure](https://azure.microsoft.com/global-infrastructure/regions/). Список регионов, доступных для вашей подписки, можно получить с помощью команды [`az account list-locations`](/cli/azure/account#az_account_list_locations). Для рабочих приложений разместите базу данных и приложение в одном месте.
 
 ## <a name="connect-app-to-azure-postgres"></a>Подключение приложения к Azure Postgres
 
@@ -255,7 +255,7 @@ git commit -m "database.yml updates"
 
 ### <a name="configure-database-settings"></a>Настройка параметров базы данных
 
-В службе приложений переменные среды задаются в качестве _параметров приложения_ с помощью команды [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set) в Cloud Shell.
+В службе приложений переменные среды задаются в качестве _параметров приложения_ с помощью команды [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set) в Cloud Shell.
 
 Команда Cloud Shell ниже позволяет настроить параметры приложения `DB_HOST`, `DB_DATABASE`, `DB_USERNAME` и `DB_PASSWORD`. Замените заполнители _&lt;appname>_ и _&lt;postgres-server-name>_ .
 

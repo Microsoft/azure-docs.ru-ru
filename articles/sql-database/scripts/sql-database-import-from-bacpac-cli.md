@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: carlrab
 ms.date: 05/24/2019
-ms.openlocfilehash: a8c544f1d3b7d1255cf5a0e6d05975ea5f5ec203
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: a76a2e72533068f37613d801e39f9451098b89e5
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "87503809"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107786609"
 ---
 # <a name="use-cli-to-import-a-bacpac-file-into-a-database-in-sql-database"></a>Использование CLI для импорта BACPAC-файла в базу данных в Базе данных SQL
 
@@ -49,7 +49,7 @@ az group delete --name $resource
 | Get-Help | Описание |
 |---|---|
 | [az sql server](/cli/azure/sql/server) | Команды сервера. |
-| [az sql db import](/cli/azure/sql/db#az-sql-db-import) | Команда импорта базы данных. |
+| [az sql db import](/cli/azure/sql/db#az_sql_db_import) | Команда импорта базы данных. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

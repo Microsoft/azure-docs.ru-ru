@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.date: 06/15/2020
 ms.custom: mvc, cli-validate, seodec18, devx-track-azurecli
 zone_pivot_groups: app-service-platform-windows-linux
-ms.openlocfilehash: aaef3f28ea9b7e41bce35661e9515f6efcc9ade5
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 0810f023f4e2e192f2cb0d83f2a028cdded9e275
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "102184446"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107779476"
 ---
 # <a name="tutorial-build-a-php-and-mysql-app-in-azure-app-service"></a>Руководство по Разработка приложения на основе PHP и MySQL в Службе приложений Azure
 
@@ -160,7 +160,7 @@ php artisan serve
 
 ### <a name="create-a-mysql-server"></a>Создание сервера MySQL
 
-В Cloud Shell создайте сервер в службе "База данных Azure для MySQL", выполнив команду [`az mysql server create`](/cli/azure/mysql/server#az-mysql-server-create).
+В Cloud Shell создайте сервер в службе "База данных Azure для MySQL", выполнив команду [`az mysql server create`](/cli/azure/mysql/server#az_mysql_server_create).
 
 В следующей команде заполнитель *\<mysql-server-name>* замените уникальным именем сервера, а заполнители *\<admin-user>* и *\<admin-password>*  — именем пользователя и паролем. Это имя используется как часть конечной точки MySQL (`https://<mysql-server-name>.mysql.database.azure.com`), поэтому оно должно быть уникальным на всех серверах в Azure. Дополнительные сведения о выборе номера SKU базы данных MySQL см. в разделе о [создании сервера Базы данных Azure для MySQL](../mysql/quickstart-create-mysql-server-database-using-azure-cli.md#create-an-azure-database-for-mysql-server).
 
@@ -186,7 +186,7 @@ az mysql server create --resource-group myResourceGroup --name <mysql-server-nam
 
 ### <a name="configure-server-firewall"></a>Настройка брандмауэра сервера
 
-В Cloud Shell создайте правило брандмауэра для сервера MySQL, чтобы разрешить подключения клиентов, выполнив команду [`az mysql server firewall-rule create`](/cli/azure/mysql/server/firewall-rule#az-mysql-server-firewall-rule-create). Если для начального и конечного IP-адресов задано значение 0.0.0.0, брандмауэр открыт только для других ресурсов Azure. 
+В Cloud Shell создайте правило брандмауэра для сервера MySQL, чтобы разрешить подключения клиентов, выполнив команду [`az mysql server firewall-rule create`](/cli/azure/mysql/server/firewall-rule#az_mysql_server_firewall_rule_create). Если для начального и конечного IP-адресов задано значение 0.0.0.0, брандмауэр открыт только для других ресурсов Azure. 
 
 ```azurecli-interactive
 az mysql server firewall-rule create --name allAzureIPs --server <mysql-server-name> --resource-group myResourceGroup --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
@@ -376,7 +376,7 @@ git commit -m "database.php updates"
 
 ### <a name="configure-database-settings"></a>Настройка параметров базы данных
 
-В службе приложений переменные среды задаются в качестве _параметров приложения_ с помощью команды [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set).
+В службе приложений переменные среды задаются в качестве _параметров приложения_ с помощью команды [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set).
 
 Команда ниже позволяет настроить параметры приложения `DB_HOST`, `DB_DATABASE`, `DB_USERNAME` и `DB_PASSWORD`. Замените заполнители _&lt;app-name>_ и _&lt;mysql-server-name>_ .
 
@@ -407,7 +407,7 @@ az webapp config appsettings set --name <app-name> --resource-group myResourceGr
 php artisan key:generate --show
 ```
 
-В Cloud Shell задайте ключ приложения в приложении Службы приложений с помощью команды [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set). Замените заполнители _&lt;app-name>_ и _&lt;outputofphpartisankey:generate>_ .
+В Cloud Shell задайте ключ приложения в приложении Службы приложений с помощью команды [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set). Замените заполнители _&lt;app-name>_ и _&lt;outputofphpartisankey:generate>_ .
 
 ```azurecli-interactive
 az webapp config appsettings set --name <app-name> --resource-group myResourceGroup --settings APP_KEY="<output_of_php_artisan_key:generate>" APP_DEBUG="true"
@@ -421,7 +421,7 @@ az webapp config appsettings set --name <app-name> --resource-group myResourceGr
 
 Задайте для приложения путь виртуального приложения. Этот шаг требуется из-за того, что [жизненный цикл приложения Laravel](https://laravel.com/docs/5.4/lifecycle) начинается в _общем_ каталоге, а не в корневом каталоге приложения. Другие платформы PHP, жизненный цикл которых начинается в корневом каталоге, могут работать без ручной настройки пути виртуального приложения.
 
-В Cloud Shell задайте путь виртуального приложения с помощью команды [`az resource update`](/cli/azure/resource#az-resource-update). Замените заполнитель _&lt;app-name>_ .
+В Cloud Shell задайте путь виртуального приложения с помощью команды [`az resource update`](/cli/azure/resource#az_resource_update). Замените заполнитель _&lt;app-name>_ .
 
 ```azurecli-interactive
 az resource update --name web --resource-group myResourceGroup --namespace Microsoft.Web --resource-type config --parent sites/<app_name> --set properties.virtualApplications[0].physicalPath="site\wwwroot\public" --api-version 2015-06-01
@@ -649,7 +649,7 @@ git push azure main
 
 При запуске приложения PHP в службе приложений Azure можно передавать журналы консоли в свой терминал. Таким образом, вы будете получать те же диагностические сообщения, которые помогут устранить ошибки приложения.
 
-Чтобы настроить потоки для журналов, выполните команду [`az webapp log tail`](/cli/azure/webapp/log#az-webapp-log-tail) в Cloud Shell.
+Чтобы настроить потоки для журналов, выполните команду [`az webapp log tail`](/cli/azure/webapp/log#az_webapp_log_tail) в Cloud Shell.
 
 ```azurecli-interactive
 az webapp log tail --name <app_name> --resource-group myResourceGroup

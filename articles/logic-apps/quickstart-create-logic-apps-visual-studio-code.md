@@ -6,13 +6,13 @@ ms.suite: integration
 ms.reviewer: jonfan, deli, logicappspm
 ms.topic: quickstart
 ms.custom: mvc
-ms.date: 10/28/2020
-ms.openlocfilehash: f46c093bffcc26b5f7975d25ccaca648bdc527da
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.date: 03/24/2021
+ms.openlocfilehash: 03cfb49dabd5039453f84ef0e636d3948af70d8d
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "99054692"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107764843"
 ---
 # <a name="quickstart-create-and-manage-logic-app-workflow-definitions-by-using-visual-studio-code"></a>Краткое руководство. Создание определений рабочих процессов приложения логики и управление ими с помощью Visual Studio Code
 
@@ -52,7 +52,7 @@ ms.locfileid: "99054692"
 
     Дополнительные сведения см. на странице [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) (Расширения в Marketplace). Чтобы внести изменения в эту версию расширения с открытым кодом, посетите веб-страницу [расширения Azure Logic Apps для Visual Studio Code на веб-сайте GitHub](https://github.com/Microsoft/vscode-azurelogicapps).
 
-* Если для приложения логики нужно реализовать обмен данными через брандмауэр, который допускает трафик только на определенные IP-адреса, этот брандмауэр должен разрешать доступ [входящим](logic-apps-limits-and-config.md#inbound) *и* [исходящим](logic-apps-limits-and-config.md#outbound) IP-адресам, используемым службой Logic Apps или средой выполнения в регионе Azure, где существует ваше приложение логики. Если приложение логики также использует [управляемые соединители](../connectors/apis-list.md#managed-api-connectors) (например, соединитель Office 365 Outlook или соединитель SQL) либо [настраиваемые соединители](/connectors/custom-connectors/), брандмауэр также должен разрешать доступ *всем* [исходящим IP-адресам управляемого соединителя](logic-apps-limits-and-config.md#outbound) в регионе Azure приложения логики.
+* Если для приложения логики нужно реализовать обмен данными через брандмауэр, который допускает трафик только на определенные IP-адреса, этот брандмауэр должен разрешать доступ [входящим](logic-apps-limits-and-config.md#inbound) *и* [исходящим](logic-apps-limits-and-config.md#outbound) IP-адресам, используемым службой Logic Apps или средой выполнения в регионе Azure, где существует ваше приложение логики. Если приложение логики также использует [управляемые соединители](../connectors/managed.md) (например, соединитель Office 365 Outlook или соединитель SQL) либо [настраиваемые соединители](/connectors/custom-connectors/), брандмауэр также должен разрешать доступ *всем* [исходящим IP-адресам управляемого соединителя](logic-apps-limits-and-config.md#outbound) в регионе Azure приложения логики.
 
 <a name="access-azure"></a>
 

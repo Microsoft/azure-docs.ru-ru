@@ -1,19 +1,19 @@
 ---
 title: Подключение учетной записи Azure Purview 
 description: Подключение учетной записи Azure Purview к рабочей области Synapse.
-services: synapse-analytics
 author: julieMSFT
 ms.service: synapse-analytics
+ms.subservice: ''
 ms.topic: quickstart
 ms.date: 12/16/2020
 ms.author: jrasnick
 ms.reviewer: jrasnick
-ms.openlocfilehash: 73ea2f43591d1c7ca2d42591e14b4ff04eb7e496
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: ad9250d022f02db06c9c5251c1fccfbfb730af67
+ms.sourcegitcommit: 590f14d35e831a2dbb803fc12ebbd3ed2046abff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105628634"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107567882"
 ---
 # <a name="quickstartconnect-an-azure-purview-account-to-a-synapse-workspace"></a>Краткое руководство. Подключение учетной записи Azure Purview к рабочей области Synapse 
 

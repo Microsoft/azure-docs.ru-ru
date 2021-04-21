@@ -8,13 +8,13 @@ ms.devlang: azurecli
 ms.topic: sample
 ms.date: 12/11/2017
 ms.author: msangapu
-ms.custom: mvc, seodec18
-ms.openlocfilehash: e4d9fc6e597fb51f607a3e2833ae6ddd7d9281fc
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.custom: mvc, seodec18, devx-track-azurecli
+ms.openlocfilehash: 24658525ca1248aa82732a31eb9a40df1403203c
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97006346"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107782429"
 ---
 # <a name="connect-an-app-service-app-to-an-azure-cache-for-redis-using-cli"></a>Подключение приложения Службы приложений к кэшу Azure для Redis с помощью CLI
 
@@ -38,12 +38,12 @@ ms.locfileid: "97006346"
 
 | Get-Help | Примечания |
 |---|---|
-| [`az group create`](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create) | Создает план службы приложений. |
-| [`az webapp create`](/cli/azure/webapp#az-webapp-create) | Создает приложение Службы приложений. |
-| [`az redis create`](/cli/azure/redis#az-redis-create) | Создает экземпляр кэша Redis для Azure. |
-| [`az redis list-keys`](/cli/azure/redis#az-redis-list-keys) | Создает список ключей доступа для экземпляра кэша Redis для Azure. |
-| [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-set) | Создает или обновляет параметр приложения Службы приложений. Параметры приложения представляются в качестве переменных среды для приложения. |
+| [`az group create`](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [`az appservice plan create`](/cli/azure/appservice/plan#az_appservice_plan_create) | Создает план службы приложений. |
+| [`az webapp create`](/cli/azure/webapp#az_webapp_create) | Создает приложение Службы приложений. |
+| [`az redis create`](/cli/azure/redis#az_redis-create) | Создает экземпляр кэша Redis для Azure. |
+| [`az redis list-keys`](/cli/azure/redis#az_redis_list_keys) | Создает список ключей доступа для экземпляра кэша Redis для Azure. |
+| [`az webapp config appsettings set`](/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set) | Создает или обновляет параметр приложения Службы приложений. Параметры приложения представляются в качестве переменных среды для приложения. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

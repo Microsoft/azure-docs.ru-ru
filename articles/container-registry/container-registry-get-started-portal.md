@@ -1,15 +1,17 @@
 ---
 title: Краткое руководство. Создание реестра на портале
 description: Быстрый способ изучить создание частного реестра контейнеров Azure с помощью портала Azure.
-ms.topic: quickstart
 ms.date: 08/04/2020
-ms.custom: seodec18, mvc
-ms.openlocfilehash: ff74232edf5c96f091082f8486c44fed6125b0b1
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.topic: quickstart
+ms.custom:
+- mvc
+- mode-portal
+ms.openlocfilehash: 4618a83a43d9c27f44432d5d346fdb053cee7054
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97825840"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107773591"
 ---
 # <a name="quickstart-create-an-azure-container-registry-using-the-azure-portal"></a>Краткое руководство. Создание реестра контейнеров Azure с помощью портала Azure
 
@@ -103,5 +105,5 @@ az acr login --name mycontainerregistry
 [container-registry-skus]: container-registry-skus.md
 [azure-cli]: /cli/azure/install-azure-cli
 [get-started-with-azure-cli]: /cli/azure/get-started-with-azure-cli
-[az-acr-login]: /cli/azure/acr#az-acr-login
+[az-acr-login]: /cli/azure/acr#az_acr_login
 [container-registry-tutorial-quick-task]: container-registry-tutorial-quick-task.md

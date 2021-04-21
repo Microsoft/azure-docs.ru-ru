@@ -8,12 +8,12 @@ ms.date: 03/29/2021
 ms.author: victorh
 ms.topic: how-to
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: d53f4b640154e4d7b02115d5043b37f6bb6e89ba
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 390fdd4d9e9d0bc62589484ab0c4ba7468bcaf4b
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "105731196"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107773105"
 ---
 # <a name="enable-web-application-firewall-using-the-azure-cli"></a>Включение брандмауэра веб-приложения с помощью Azure CLI
 
@@ -38,7 +38,7 @@ ms.locfileid: "105731196"
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов Azure с именем *myResourceGroupAG*, используя команду [az group create](/cli/azure/group#az-group-create).
+Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов Azure с именем *myResourceGroupAG*, используя команду [az group create](/cli/azure/group#az_group_create).
 
 ```azurecli-interactive
 az group create --name myResourceGroupAG --location eastus
@@ -107,7 +107,7 @@ az network application-gateway waf-config set \
 
 ## <a name="create-a-virtual-machine-scale-set"></a>создавать масштабируемый набор виртуальных машин;
 
-В этом примере вы создаете масштабируемый набор виртуальных машин, чтобы предоставить два сервера для внутреннего пула в шлюзе приложений. Виртуальные машины в масштабируемом наборе связаны с подсетью *myBackendSubnet*. Чтобы создать масштабируемый набор, выполните команду [az vmss create](/cli/azure/vmss#az-vmss-create).
+В этом примере вы создаете масштабируемый набор виртуальных машин, чтобы предоставить два сервера для внутреннего пула в шлюзе приложений. Виртуальные машины в масштабируемом наборе связаны с подсетью *myBackendSubnet*. Чтобы создать масштабируемый набор, выполните команду [az vmss create](/cli/azure/vmss#az_vmss_create).
 
 Перед выполнением замените \<username> и \<password> своими значениями.
 
@@ -145,7 +145,7 @@ az vmss extension set \
 
 ### <a name="create-a-storage-account"></a>Создание учетной записи хранения
 
-Создайте учетную запись хранения с именем *myagstore1* с помощью команды [az storage account create](/cli/azure/storage/account#az-storage-account-create).
+Создайте учетную запись хранения с именем *myagstore1* с помощью команды [az storage account create](/cli/azure/storage/account#az_storage_account_create).
 
 ```azurecli-interactive
 az storage account create \
@@ -158,7 +158,7 @@ az storage account create \
 
 ### <a name="configure-diagnostics"></a>Настройка диагностики
 
-Настройте диагностику для записи данных в журналы ApplicationGatewayAccessLog, ApplicationGatewayPerformanceLog и ApplicationGatewayFirewallLog. Замените `<subscriptionId>` своим идентификатором подписки, а затем настройте диагностику с помощью команды [az monitor diagnostic-settings create](/cli/azure/monitor/diagnostic-settings#az-monitor-diagnostic-settings-create).
+Настройте диагностику для записи данных в журналы ApplicationGatewayAccessLog, ApplicationGatewayPerformanceLog и ApplicationGatewayFirewallLog. Замените `<subscriptionId>` своим идентификатором подписки, а затем настройте диагностику с помощью команды [az monitor diagnostic-settings create](/cli/azure/monitor/diagnostic-settings#az_monitor_diagnostic_settings_create).
 
 ```azurecli-interactive
 appgwid=$(az network application-gateway show --name myAppGateway --resource-group myResourceGroupAG --query id -o tsv)
@@ -172,7 +172,7 @@ az monitor diagnostic-settings create --name appgwdiag --resource $appgwid \
 
 ## <a name="test-the-application-gateway"></a>Тестирование шлюза приложений
 
-Чтобы получить общедоступный IP-адрес шлюза приложений, используйте команду [az network public-ip show](/cli/azure/network/public-ip#az-network-public-ip-show). Скопируйте общедоступный IP-адрес и вставьте его в адресную строку браузера.
+Чтобы получить общедоступный IP-адрес шлюза приложений, используйте команду [az network public-ip show](/cli/azure/network/public-ip#az_network_public_ip_show). Скопируйте общедоступный IP-адрес и вставьте его в адресную строку браузера.
 
 ```azurecli-interactive
 az network public-ip show \

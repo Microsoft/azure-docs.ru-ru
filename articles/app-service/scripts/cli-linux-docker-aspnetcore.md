@@ -9,12 +9,12 @@ ms.topic: sample
 ms.date: 12/11/2017
 ms.author: msangapu
 ms.custom: devx-track-dotnet, mvc, seodec18, devx-track-azurecli
-ms.openlocfilehash: 7e2400d42798dddf33a0431938e7f13ff29b64f9
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: d7f09d8e4b00a079fb012939e88ff585cbc88f4d
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "97005857"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107787797"
 ---
 # <a name="create-an-aspnet-core-app-in-a-docker-container-from-docker-hub-using-azure-cli"></a>Создание приложения ASP.NET Core в контейнере Docker из Docker Hub с помощью Azure CLI
 
@@ -38,10 +38,10 @@ ms.locfileid: "97005857"
 
 | Get-Help | Примечания |
 |---|---|
-| [`az group create`](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create) | Создает план службы приложений. |
-| [`az webapp create`](/cli/azure/webapp#az-webapp-create) | Создает приложение Службы приложений. |
-| [`az webapp config container set`](/cli/azure/webapp/config/container#az-webapp-config-container-set) | Настраивает контейнер Docker для приложения Службы приложений. |
+| [`az group create`](/cli/azure/group#az_group_create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
+| [`az appservice plan create`](/cli/azure/appservice/plan#az_appservice_plan_create) | Создает план службы приложений. |
+| [`az webapp create`](/cli/azure/webapp#az_webapp_create) | Создает приложение Службы приложений. |
+| [`az webapp config container set`](/cli/azure/webapp/config/container#az_webapp_config_container_set) | Настраивает контейнер Docker для приложения Службы приложений. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

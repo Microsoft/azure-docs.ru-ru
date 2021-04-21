@@ -5,42 +5,24 @@ services: app-service
 author: cephalin
 ms.service: app-service
 ms.topic: include
-ms.date: 12/20/2019
+ms.date: 02/02/2018
 ms.author: cephalin
 ms.custom: include file
-ms.openlocfilehash: f3d558736751d3c50e3c007e3aebb369093ef856
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: cc44780bd9b42e00ecfb3d140486fec87c767a76
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "102244663"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107765762"
 ---
-В Cloud Shell создайте план службы приложений в группе ресурсов с помощью команды [`az appservice plan create`](/cli/azure/appservice/plan#az-appservice-plan-create).
+[!INCLUDE [resource group intro text](resource-group.md)]
 
-<!-- [!INCLUDE [app-service-plan](app-service-plan-linux.md)] -->
-
-В следующем примере создается план службы приложений с именем `myAppServicePlan` в ценовой категории **Бесплатный** (`--sku F1`) в контейнере Linux (`--is-linux`).
+В Cloud Shell создайте группу ресурсов с помощью команды [`az group create`](/cli/azure/group#az_group_create). В следующем примере создается группа ресурсов с именем *myResourceGroup* в расположении *Западная Европа*. Чтобы просмотреть все поддерживаемые расположения для службы приложений в Linux в ценовой категории **Базовый**, выполните команду [`az appservice list-locations --sku B1 --linux-workers-enabled`](/cli/azure/appservice#az_appservice_list_locations).
 
 ```azurecli-interactive
-az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku F1 --is-linux
+az group create --name myResourceGroup --location "West Europe"
 ```
 
-После создания плана службы приложений в Azure CLI отображается информация следующего вида:
+Обычно группа ресурсов и ресурсы создаются в ближайших регионах. 
 
-```json
-{ 
-  "adminSiteName": null,
-  "appServicePlanName": "myAppServicePlan",
-  "geoRegion": "West Europe",
-  "hostingEnvironmentProfile": null,
-  "id": "/subscriptions/0000-0000/resourceGroups/myResourceGroup/providers/Microsoft.Web/serverfarms/myAppServicePlan",
-  "kind": "linux",
-  "location": "West Europe",
-  "maximumNumberOfWorkers": 1,
-  "name": "myAppServicePlan",
-  <JSON data removed for brevity.>
-  "targetWorkerSizeId": 0,
-  "type": "Microsoft.Web/serverfarms",
-  "workerTierName": null
-} 
-```
+По завершении команды в выходных данных JSON будут отображаться свойства группы ресурсов.

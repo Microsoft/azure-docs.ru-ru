@@ -5,17 +5,17 @@ services: synapse-analytics
 author: alehall
 ms.service: synapse-analytics
 ms.topic: quickstart
-ms.subservice: overview
+ms.subservice: workspace
 ms.date: 10/19/2020
 ms.author: alehall
 ms.reviewer: jrasnick
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: a19d1f26616697e15ae4c39a63c44bdaf83f78f9
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: 1f02833ef7497c34b72db6b858a51c6046bbf3df
+ms.sourcegitcommit: 590f14d35e831a2dbb803fc12ebbd3ed2046abff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101675771"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107567576"
 ---
 # <a name="quickstart-create-an-azure-synapse-workspace-with-azure-powershell"></a>Краткое руководство. Создание рабочей области Azure Synapse с помощью Azure PowerShell
 

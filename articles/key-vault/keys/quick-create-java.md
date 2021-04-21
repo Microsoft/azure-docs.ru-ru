@@ -8,12 +8,12 @@ ms.date: 01/05/2021
 ms.service: key-vault
 ms.subservice: keys
 ms.topic: quickstart
-ms.openlocfilehash: 124e56fad35be0f3ac5b08ee9dd66454b9d077c5
-ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.openlocfilehash: 75cb7b6c9225e8579561f980df10da8994257133
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107374698"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107777191"
 ---
 # <a name="quickstart-azure-key-vault-key-client-library-for-java"></a>Краткое руководство. Клиентская библиотека ключей Azure Key Vault для Java
 Начало работы с клиентской библиотекой ключей Azure Key Vault для Java. Чтобы установить пакет и испробовать пример кода для выполнения базовых задач, выполните описанные ниже шаги.
@@ -176,7 +176,7 @@ KeyClient keyClient = new KeyClientBuilder()
 keyClient.createKey(keyName, KeyType.RSA);
 ```
 
-Команда [az keyvault key show](/cli/azure/keyvault/key?#az-keyvault-key-show) позволяет убедиться, что ключ задан успешно:
+Команда [az keyvault key show](/cli/azure/keyvault/key?#az_keyvault_key_show) позволяет убедиться, что ключ задан успешно:
 
 ```azurecli
 az keyvault key show --vault-name <your-unique-key-vault-name> --name myKey
@@ -201,7 +201,7 @@ SyncPoller<DeletedKey, Void> deletionPoller = keyClient.beginDeleteKey(keyName);
 deletionPoller.waitForCompletion();
 ```
 
-Команда [az keyvault key show](/cli/azure/keyvault/key?#az-keyvault-key-show) позволяет убедиться, что ключ успешно удален:
+Команда [az keyvault key show](/cli/azure/keyvault/key?#az_keyvault_key_show) позволяет убедиться, что ключ успешно удален:
 
 ```azurecli
 az keyvault key show --vault-name <your-unique-key-vault-name> --name myKey
@@ -271,4 +271,4 @@ public class App {
 - [Обзор Azure Key Vault](../general/overview.md)
 - Изучите статью [Обзор системы безопасности Key Vault](../general/security-overview.md).
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)

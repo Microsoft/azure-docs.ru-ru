@@ -8,12 +8,12 @@ ms.date: 08/23/2019
 ms.author: msangapu
 ms.custom: mvc, cli-validate, seodec18
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: be555039375e2d71d00bcf8ee58898f54cc3645a
-ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.openlocfilehash: 603d8e642cd2e88beec6ae34094a2c6c43d179ee
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107379576"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107768957"
 ---
 # <a name="create-a-static-html-web-app-in-azure"></a>Создание статического веб-приложения HTML в Azure
 
@@ -55,7 +55,7 @@ az webapp up --location westeurope --name <app_name> --html
 <li>Замените <code>&lt;app-name&gt;</code> именем, уникальным для всех регионов Azure (<em>допустимыми символами являются <code>a-z</code>, <code>0-9</code>и <code>-</code></em>). Рекомендуется использовать сочетание названия компании и идентификатора приложения.</li>
 <li>Аргумент <code>--sku F1</code> создает веб-приложение в ценовой категории "Бесплатный". Этот аргумент можно опустить, чтобы использовать более быструю ценовую категорию "Премиум" с почасовой оплатой.</li>
 <li>Аргумент <code>--html</code> указывает на то, что все содержимое папок должно рассматриваться как статическое содержимое, а также на то, что необходимо отключить автоматизацию сборки.</li>
-<li>При необходимости вы можете использовать аргумент <code>--location &lt;location-name&gt;</code>, где <code>&lt;location-name&gt;</code> является доступным регионом Azure. Список допустимых регионов для учетной записи Azure можно получить, выполнив команду <a href="/cli/azure/appservice#az-appservice-list-locations"><code>az account list-locations</code></a>.</li>
+<li>При необходимости вы можете использовать аргумент <code>--location &lt;location-name&gt;</code>, где <code>&lt;location-name&gt;</code> является доступным регионом Azure. Список допустимых регионов для учетной записи Azure можно получить, выполнив команду <a href="/cli/azure/appservice#az_appservice_list_locations"><code>az account list-locations</code></a>.</li>
 </ul>
 </details>
 
@@ -67,7 +67,7 @@ az webapp up --location westeurope --name <app_name> --html
 <ul>
 <li>создание группы ресурсов по умолчанию;</li>
 <li>создание плана Службы приложений по умолчанию;</li>
-<li><a href="/cli/azure/webapp#az-webapp-create">создание приложения Службы приложений</a> с указанным именем;</li>
+<li><a href="/cli/azure/webapp#az_webapp_create">создание приложения Службы приложений</a> с указанным именем;</li>
 <li><a href="/azure/app-service/deploy-zip">развертывание ZIP-файлов</a> для приложения из текущего рабочего каталога.</li>
 <li>При выполнении оно предоставляет сообщения о создании ресурсов, ведении журналов и развертывании из ZIP-файлов.</li>
 </ul>

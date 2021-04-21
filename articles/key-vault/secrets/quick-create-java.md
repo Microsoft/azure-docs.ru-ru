@@ -8,12 +8,12 @@ ms.date: 10/20/2019
 ms.service: key-vault
 ms.subservice: secrets
 ms.topic: quickstart
-ms.openlocfilehash: f1a502722156bc010dab917afdbd1d49ae93681a
-ms.sourcegitcommit: 2654d8d7490720a05e5304bc9a7c2b41eb4ae007
+ms.openlocfilehash: b45bb353ae32f1037fde7dc5d518472089edf12f
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107375990"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107766341"
 ---
 # <a name="quickstart-azure-key-vault-secret-client-library-for-java"></a>Краткое руководство. Использование клиентской библиотеки секретов Azure Key Vault для Java
 Начало работы с клиентской библиотекой секретов Azure Key Vault для Java. Чтобы установить пакет и испробовать пример кода для выполнения базовых задач, выполните описанные ниже шаги.
@@ -175,7 +175,7 @@ SecretClient secretClient = new SecretClientBuilder()
 secretClient.setSecret(new KeyVaultSecret(secretName, secretValue));
 ```
 
-Команда [az keyvault secret show](/cli/azure/keyvault/secret?#az-keyvault-secret-show) позволяет убедиться, что секрет задан успешно:
+Команда [az keyvault secret show](/cli/azure/keyvault/secret?#az_keyvault_secret_show) позволяет убедиться, что секрет задан успешно:
 
 ```azurecli
 az keyvault secret show --vault-name <your-unique-key-vault-name> --name mySecret
@@ -200,7 +200,7 @@ SyncPoller<DeletedSecret, Void> deletionPoller = secretClient.beginDeleteSecret(
 deletionPoller.waitForCompletion();
 ```
 
-Команда [az keyvault secret show](/cli/azure/keyvault/secret?#az-keyvault-secret-show) позволяет убедиться, что секрет удален успешно:
+Команда [az keyvault secret show](/cli/azure/keyvault/secret?#az_keyvault_secret_show) позволяет убедиться, что секрет удален успешно:
 
 ```azurecli
 az keyvault secret show --vault-name <your-unique-key-vault-name> --name mySecret
@@ -281,4 +281,4 @@ public class App {
 
 - [Обзор Azure Key Vault](../general/overview.md)
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)
-- [Безопасный доступ к хранилищу ключей](../general/secure-your-key-vault.md)
+- [Безопасный доступ к хранилищу ключей](../general/security-overview.md)

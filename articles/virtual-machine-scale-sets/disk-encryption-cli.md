@@ -9,12 +9,12 @@ ms.subservice: disks
 ms.date: 10/15/2019
 ms.reviewer: mimckitt
 ms.custom: mimckitt, devx-track-azurecli
-ms.openlocfilehash: e6630cbb44157f25bd2cbfcff25ec3132c74c61c
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: d347be4e6727cdda659620befe20824678160020
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105565577"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107792441"
 ---
 # <a name="encrypt-os-and-attached-data-disks-in-a-virtual-machine-scale-set-with-the-azure-cli"></a>Шифрование диска ОС и подключенных дисков данных в масштабируемом наборе виртуальных машин с помощью Azure CLI
 
@@ -87,7 +87,7 @@ az keyvault update --name $keyvault_name --enabled-for-disk-encryption
 
 ## <a name="enable-encryption"></a>Включение шифрования
 
-Чтобы зашифровать экземпляры виртуальных машин в масштабируемом наборе, сначала нужно получить некоторые сведения об идентификаторе ресурса для Key Vault с помощью команды [az keyvault show](/cli/azure/keyvault#ext-keyvault-preview-az-keyvault-show). Эти переменные применяются при запуске процесса шифрования с помощью команды [az vmss encryption enable](/cli/azure/vmss/encryption#az-vmss-encryption-enable):
+Чтобы зашифровать экземпляры виртуальных машин в масштабируемом наборе, сначала нужно получить некоторые сведения об идентификаторе ресурса для Key Vault с помощью команды [az keyvault show](/cli/azure/keyvault#ext-keyvault-preview-az-keyvault-show). Эти переменные применяются при запуске процесса шифрования с помощью команды [az vmss encryption enable](/cli/azure/vmss/encryption#az_vmss_encryption_enable):
 
 ```azurecli-interactive
 # Get the resource ID of the Key Vault
@@ -103,7 +103,7 @@ az vmss encryption enable \
 
 На запуск процесса шифрования могут потребоваться одна-две минуты.
 
-Так как для набора масштабирования, созданного ранее, задана политика *автоматического* обновления, процесс шифрования для экземпляров виртуальных машин запускается автоматически. Если для масштабируемого набора задана политика обновления вручную, запустите шифрование для экземпляров виртуальных машин с помощью команды [az vmss update-instances](/cli/azure/vmss#az-vmss-update-instances).
+Так как для набора масштабирования, созданного ранее, задана политика *автоматического* обновления, процесс шифрования для экземпляров виртуальных машин запускается автоматически. Если для масштабируемого набора задана политика обновления вручную, запустите шифрование для экземпляров виртуальных машин с помощью команды [az vmss update-instances](/cli/azure/vmss#az_vmss_update_instances).
 
 ### <a name="enable-encryption-using-kek-to-wrap-the-key"></a>Включение шифрования с использованием ключа шифрования ключа для переноса ключа
 
@@ -131,7 +131,7 @@ https://[имя_хранилища_ключей].vault.azure.net/keys/[имя_ke
 
 ## <a name="check-encryption-progress"></a>Проверка хода выполнения шифрования
 
-Чтобы проверить состояние шифрования диска, используйте команду [az vmss encryption show](/cli/azure/vmss/encryption#az-vmss-encryption-show):
+Чтобы проверить состояние шифрования диска, используйте команду [az vmss encryption show](/cli/azure/vmss/encryption#az_vmss_encryption_show):
 
 ```azurecli-interactive
 az vmss encryption show --resource-group myResourceGroup --name myScaleSet
@@ -166,7 +166,7 @@ az vmss encryption show --resource-group myResourceGroup --name myScaleSet
 
 ## <a name="disable-encryption"></a>Отключение шифрования
 
-Если вы решите отказаться от шифрования дисков для экземпляров виртуальных машин, его можно отключить с помощью команды [az vmss encryption disable](/cli/azure/vmss/encryption#az-vmss-encryption-disable):
+Если вы решите отказаться от шифрования дисков для экземпляров виртуальных машин, его можно отключить с помощью команды [az vmss encryption disable](/cli/azure/vmss/encryption#az_vmss_encryption_disable):
 
 ```azurecli-interactive
 az vmss encryption disable --resource-group myResourceGroup --name myScaleSet

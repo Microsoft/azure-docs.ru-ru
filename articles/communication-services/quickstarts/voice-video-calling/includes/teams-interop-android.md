@@ -6,12 +6,12 @@ ms.author: mikben
 ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: e5361b92c2080c724b872be2ad27bc5bd4554e8d
-ms.sourcegitcommit: 32e0fedb80b5a5ed0d2336cea18c3ec3b5015ca1
+ms.openlocfilehash: af1794a2f9eeaa1b1de2c62d5131c722dfd152a5
+ms.sourcegitcommit: 49b2069d9bcee4ee7dd77b9f1791588fe2a23937
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105108209"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564707"
 ---
 В этом кратком руководстве описывается, как присоединиться к конференции Teams с помощью пакета SDK для вызовов Служб коммуникации Azure для Android.
 
@@ -253,8 +253,8 @@ public class MainActivity extends AppCompatActivity {
 
 ## <a name="get-the-teams-meeting-link"></a>Получение ссылки на собрание Teams
 
-Ссылку на собрание Teams можно получить с помощью интерфейсов API Graph. Это действие подробно описано в [документации по Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta).
-Пакет SDK вызовов Служб коммуникации принимает полную ссылку на собрание Teams. Эта ссылка возвращается как часть ресурса `onlineMeeting`, доступного под [свойством `joinWebUrl`](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Вы также можете получить необходимую информацию о собрании по URL-адресу **Присоединиться к собранию** в самом приглашении на собрание Teams.
+Ссылку на собрание Teams можно получить с помощью интерфейсов API Graph. Это действие подробно описано в [документации по Graph](/graph/api/onlinemeeting-createorget?tabs=http&view=graph-rest-beta&preserve-view=true).
+Пакет SDK вызовов Служб коммуникации принимает полную ссылку на собрание Teams. Эта ссылка возвращается как часть ресурса `onlineMeeting`, доступного под [свойством `joinWebUrl`](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Вы также можете получить необходимую информацию о собрании по URL-адресу **Присоединиться к собранию** в самом приглашении на собрание Teams.
 
 ## <a name="launch-the-app-and-join-teams-meeting"></a>Запуск приложения и присоединение к собранию в Teams
 
