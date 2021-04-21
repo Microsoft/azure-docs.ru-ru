@@ -1,25 +1,25 @@
 ---
 title: Встроенные определения политик для Центра безопасности Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для Центра безопасности Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/31/2021
+ms.date: 04/14/2021
 ms.topic: reference
 author: memildin
 ms.author: memildin
 ms.service: security-center
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 82fd5a9a0bdf9a37535796af8f72c2c4238cdc9c
-ms.sourcegitcommit: 99fc6ced979d780f773d73ec01bf651d18e89b93
+ms.openlocfilehash: 8023dcc29fe8ea3af853237e911524549e4d2bcb
+ms.sourcegitcommit: 425420fe14cf5265d3e7ff31d596be62542837fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106089572"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107739644"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-security-center"></a>Встроенные определения в Политике Azure для Центра безопасности Azure
 
 Эта страница представляет собой индекс встроенных определений политик в [Политике Azure](../governance/policy/overview.md), связанных с Центром безопасности Azure. Доступны следующие группы определений политик:
 
 - Группа [инициатив](#azure-security-center-initiatives) содержит определения инициатив Политики Azure в категории "Центр безопасности".
-- Группа [инициатив по умолчанию](#azure-security-center-initiatives) содержит все определения Политики Azure, которые входят в инициативу Центра безопасности по умолчанию [Azure Security Benchmark](../security/benchmarks/introduction.md). Этот широко используемый разработанный Майкрософт механизм тестирования основан на стандартах [Центра интернет-безопасности (CIS)](https://www.cisecurity.org/benchmark/azure/) и [Национального института стандартов и технологий (NIST)](https://www.nist.gov/) с ориентацией на облачную безопасность.
+- Группа [инициатив по умолчанию](#azure-security-center-initiatives) содержит все определения Политики Azure, которые входят в инициативу Центра безопасности по умолчанию [Azure Security Benchmark](https://docs.microsoft.com/security/benchmark/azure/introduction). Этот широко используемый разработанный Майкрософт механизм тестирования основан на стандартах [Центра интернет-безопасности (CIS)](https://www.cisecurity.org/benchmark/azure/) и [Национального института стандартов и технологий (NIST)](https://www.nist.gov/) с ориентацией на облачную безопасность.
 - Группа [категорий](#azure-security-center-category) содержит все определения Политики Azure в категории "Центр безопасности".
 
 Дополнительные сведения об использовании политик безопасности см. в статье [Использование политик безопасности](./tutorial-security-policy.md). Дополнительные встроенные компоненты Политики Azure для других служб см. в статье [Встроенные определения Политики Azure](../governance/policy/samples/built-in-policies.md).

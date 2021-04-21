@@ -9,16 +9,16 @@ ms.reviewer: klam, estfan
 ms.topic: article
 ms.date: 08/15/2016
 ms.openlocfilehash: 0a8d79af9f45731971cb1be1f39fc193f9d0f0d9
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "80878975"
 ---
 # <a name="outbound-authentication-for-azure-scheduler"></a>Исходящая проверка подлинности планировщика Azure
 
 > [!IMPORTANT]
-> Поддержка планировщика Azure [прекращается](../logic-apps/logic-apps-overview.md). Вместо него будет использоваться [Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md#retire-date). Чтобы продолжить работу с заданиями, настроенными в планировщике, выполните [миграцию на Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md) как можно скорее. 
+> Поддержка планировщика Azure [прекращается](../logic-apps/logic-apps-overview.md). Вместо него будет использоваться [Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md#retire-date). Чтобы продолжить работу с настроенными в планировщике задачами, [перейдите на Azure Logic Apps](../scheduler/migrate-from-scheduler-to-logic-apps.md) как можно скорее. 
 >
 > Планировщик больше не доступен на портале Azure, но [REST API](/rest/api/scheduler) и [командлеты PowerShell Планировщика Azure](scheduler-powershell-reference.md) можно использовать и дальше для управления заданиями и коллекциями заданий.
 
@@ -28,7 +28,7 @@ ms.locfileid: "80878975"
 
 * Проверка с помощью *сертификата клиента* при использовании SSL- или TLS-сертификатов клиента
 * *Обычная* проверка подлинности
-* *Active Directory* аутентификации OAuth
+* Проверка подлинности *Azure Active Directory (AD) OAuth*
 
 ## <a name="add-or-remove-authentication"></a>Добавление или удаление проверки подлинности
 
@@ -47,9 +47,9 @@ ms.locfileid: "80878975"
 
 | Элемент | Обязательно | Описание |
 |---------|----------|-------------|
-| **authentication** (родительский элемент) | Объект проверки подлинности для использования сертификата клиента SSL/TLS |
-| **type** | Да | Тип проверки подлинности. Для клиентских сертификатов SSL/TLS значение равно `ClientCertificate` . |
-| **сохраняется** | Да | Содержимое PFX-файла в кодировке Base64 |
+| **authentication** (родительский элемент) | Объект проверки подлинности для использования сертификата SSL/TLS клиента |
+| **type** | Да | Тип проверки подлинности. Для сертификатов SSL/TLS клиента это значение равно `ClientCertificate`. |
+| **pfx** | Да | Содержимое PFX-файла в кодировке Base64 |
 | **password** | Да | Пароль для доступа к PFX-файлу |
 ||| 
 
@@ -59,8 +59,8 @@ ms.locfileid: "80878975"
 
 | Элемент | Описание | 
 |---------|-------------| 
-| **authentication** (родительский элемент) | Объект проверки подлинности для использования сертификата клиента SSL/TLS |
-| **type** | Тип проверки подлинности. Для клиентских сертификатов SSL/TLS значение равно `ClientCertificate` . |
+| **authentication** (родительский элемент) | Объект проверки подлинности для использования сертификата SSL/TLS клиента |
+| **type** | Тип проверки подлинности. Для сертификатов SSL/TLS клиента это значение равно `ClientCertificate`. |
 | **certificateThumbprint** |Отпечаток сертификата |
 | **certificateSubjectName** |Различающееся имя субъекта сертификата |
 | **certificateExpiration** | Дата окончания срока действия сертификата |
@@ -288,9 +288,9 @@ Date: Wed, 16 Mar 2016 19:05:06 GMT
 | **authentication** (родительский элемент) | Да | Объект проверки подлинности для использования проверки подлинности ActiveDirectoryOAuth. |
 | **type** | Да | Тип проверки подлинности. Для аутентификации ActiveDirectoryOAuth это значение равно `ActiveDirectoryOAuth`. |
 | **tenant** | Да | Идентификатор клиента Azure AD. Идентификатор клиента Azure AD можно узнать, выполнив команду `Get-AzureAccount` в Azure PowerShell. |
-| **компиляцию** | Да | Этот параметр имеет значение `https://management.core.windows.net/`. | 
+| **audience** | Да | Этот параметр имеет значение `https://management.core.windows.net/`. | 
 | **clientId** | Да | Идентификатор клиента для приложения Azure AD | 
-| **владел** | Да | Секретные данные клиента, запрашивающего маркер. | 
+| **secret** | Да | Секретные данные клиента, запрашивающего маркер. | 
 |||| 
 
 ### <a name="response-body---active-directory-oauth"></a>Текст ответа при проверке подлинности Active Directory OAuth
@@ -302,7 +302,7 @@ Date: Wed, 16 Mar 2016 19:05:06 GMT
 | **authentication** (родительский элемент) | Объект проверки подлинности для использования проверки подлинности ActiveDirectoryOAuth. |
 | **type** | Тип проверки подлинности. Для аутентификации ActiveDirectoryOAuth это значение равно `ActiveDirectoryOAuth`. | 
 | **tenant** | Идентификатор клиента Azure AD. |
-| **компиляцию** | Этот параметр имеет значение `https://management.core.windows.net/`. |
+| **audience** | Этот параметр имеет значение `https://management.core.windows.net/`. |
 | **clientId** | Идентификатор клиента для приложения Azure AD |
 ||| 
 

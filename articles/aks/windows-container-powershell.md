@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 03/12/2021
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: b877ecbdca06ff73d152e1b491e993798a99f98a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "103233520"
 ---
 # <a name="create-a-windows-server-container-on-an-azure-kubernetes-service-aks-cluster-using-powershell"></a>Создание контейнера Windows Server в кластере Службы Azure Kubernetes (AKS) с помощью PowerShell
@@ -24,7 +24,7 @@ ms.locfileid: "103233520"
 
 Если у вас еще нет подписки Azure, создайте [бесплатную](https://azure.microsoft.com/free/) учетную запись Azure, прежде чем начинать работу.
 
-Если вы решили использовать PowerShell локально, для работы с этой статьей установите модуль PowerShell Az и подключитесь к учетной записи Azure с помощью командлета [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount). См. сведения об [установке модуля Azure PowerShell][install-azure-powershell]. Также необходимо установить модуль PowerShell AZ. AKS: 
+Если вы решили использовать PowerShell локально, для работы с этой статьей установите модуль PowerShell Az и подключитесь к учетной записи Azure с помощью командлета [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount). См. сведения об [установке модуля Azure PowerShell][install-azure-powershell]. Также необходимо установить модуль PowerShell Az.Aks: 
 
 ```azurepowershell-interactive
 Install-Module Az.Aks

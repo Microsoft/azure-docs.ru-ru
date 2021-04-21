@@ -13,12 +13,12 @@ ms.workload: infrastructure-services
 ms.date: 02/01/2021
 ms.author: mnayak
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: ad8f2d150c3cf17c4b24c6dc92188be9017dcfa9
-ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.openlocfilehash: b9155c3114d5a5a1b8729351dc189bc1e5c22369
+ms.sourcegitcommit: 4b0e424f5aa8a11daf0eec32456854542a2f5df0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "101666000"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107764483"
 ---
 # <a name="configure-routing-preference-for-a-vm-using-azure-cli"></a>Настройка предпочтительного варианта маршрутизации для виртуальной машины с помощью Azure CLI
 
@@ -28,7 +28,7 @@ ms.locfileid: "101666000"
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 1. При использовании Cloud Shell перейдите к шагу 2. Откройте сеанс командной строки и войдите в Azure с помощью команды `az login`.
-2. Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create). В следующем примере создается группа ресурсов в регионе Azure "Восточная часть США".
+2. Создайте группу ресурсов с помощью команды [az group create](/cli/azure/group#az_group_create). В следующем примере создается группа ресурсов в регионе Azure "Восточная часть США".
 
     ```azurecli
     az group create --name myResourceGroup --location eastus
@@ -54,7 +54,7 @@ az network public-ip create \
 
 ### <a name="create-a-network-security-group"></a>Создание группы безопасности сети
 
-Создайте группу безопасности сети для правил, которые будут управлять входящим и исходящим обменом данными в виртуальной сети с помощью [az network nsg create](/cli/azure/network/nsg#az-network-nsg-create)
+Создайте группу безопасности сети для правил, которые будут управлять входящим и исходящим обменом данными в виртуальной сети с помощью [az network nsg create](/cli/azure/network/nsg#az_network_nsg_create)
 
 ```azurecli
 az network nsg create \
@@ -65,7 +65,7 @@ az network nsg create \
 
 ### <a name="create-a-virtual-network"></a>Создание виртуальной сети
 
-Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az-network-vnet-create). В следующем примере создается виртуальная сеть *myVNET* с подсетью *mySubNet*.
+Создайте виртуальную сеть с помощью команды [az network vnet create](/cli/azure/network/vnet#az_network_vnet_create). В следующем примере создается виртуальная сеть *myVNET* с подсетью *mySubNet*.
 
 ```azurecli
 # Create a virtual network
@@ -85,7 +85,7 @@ az network vnet subnet create \
 
 ### <a name="create-a-nic"></a>Создание сетевой карты
 
-Создайте виртуальную сетевую карту для виртуальной машины с помощью команды [az network nic create](/cli/azure/network/nic#az-network-nic-create). В следующем примере создается виртуальная сетевая карта, которая будет подключена к виртуальной машине.
+Создайте виртуальную сетевую карту для виртуальной машины с помощью команды [az network nic create](/cli/azure/network/nic#az_network_nic_create). В следующем примере создается виртуальная сетевая карта, которая будет подключена к виртуальной машине.
 
 ```azurecli-interactive
 # Create a NIC
@@ -101,7 +101,7 @@ az network nic create \
 
 ## <a name="create-a-virtual-machine"></a>Создание виртуальной машины
 
-Создайте виртуальную машину с помощью команды [az vm create](/cli/azure/vm#az-vm-create). В приведенном ниже примере создается виртуальная машина windows server 2019 и обязательные компоненты виртуальной сети, если их еще нет:
+Создайте виртуальную машину с помощью команды [az vm create](/cli/azure/vm#az_vm_create). В приведенном ниже примере создается виртуальная машина windows server 2019 и обязательные компоненты виртуальной сети, если их еще нет:
 
 ```azurecli
 az vm create \
@@ -115,7 +115,7 @@ az vm create \
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Чтобы удалить ненужную группу ресурсов и все содержащиеся в ней ресурсы, выполните команду [az group delete](/cli/azure/group#az-group-delete).
+Чтобы удалить ненужную группу ресурсов и все содержащиеся в ней ресурсы, выполните команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli
 az group delete --name myResourceGroup --yes

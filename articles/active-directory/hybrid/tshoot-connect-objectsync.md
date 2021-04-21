@@ -16,10 +16,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73d4239dd34f2a64aa7b3edbf88bad4348e01291
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "85356208"
 ---
 # <a name="troubleshoot-object-synchronization-with-azure-ad-connect-sync"></a>Устранение неполадок синхронизации объектов с помощью службы синхронизации Azure AD Connect
@@ -43,7 +43,7 @@ ms.locfileid: "85356208"
 Следующие входные параметры необходимы для выполнения задачи по устранению неполадок.
 1.  **Object Distinguished Name** (Различающееся имя объекта) — различающееся имя объекта, неполадки которого требуется устранить.
 2.  **AD Connector Name** (Имя соединителя AD) — имя леса AD, где находится указанный выше объект.
-3.  Глобальные административные учетные данные глобального администратора клиента Azure AD ![](media/tshoot-connect-objectsync/objsynch1.png)
+3.  Учетные данные глобального администратора клиента Azure AD ![учетные данные глобального администратора](media/tshoot-connect-objectsync/objsynch1.png)
 
 ### <a name="understand-the-results-of-the-troubleshooting-task"></a>Изучение результатов задачи устранения неполадок
 Задача устранения неполадок выполняет следующие проверки.

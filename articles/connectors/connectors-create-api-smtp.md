@@ -1,5 +1,5 @@
 ---
-title: Подключение к SMTP из Azure Logic Apps
+title: Подключение к протоколу SMTP из Azure Logic Apps
 description: Автоматизация задач и рабочих процессов, отправляющих сообщения из учетной записи SMTP (протокол SMTP) с помощью Azure Logic Apps.
 services: logic-apps
 ms.suite: integration
@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 08/25/2018
 tags: connectors
 ms.openlocfilehash: 9989d0ebd95bfe5ee49be2ba76b73e07630b519a
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87283951"
 ---
 # <a name="send-email-from-your-smtp-account-with-azure-logic-apps"></a>Отправка сообщений электронной почты из учетной записи SMTP с помощью Azure Logic Apps
@@ -56,7 +56,7 @@ ms.locfileid: "87283951"
    | **Имя пользователя** | Да | Имя пользователя для учетной записи SMTP | 
    | **Пароль** | Да | Пароль для учетной записи SMTP | 
    | **Порт SMTP-сервера** | Нет | Определенный порт SMTP-сервера, который вы хотите использовать | 
-   | **Включить SSL?** | Нет | Включите или отключите шифрование TLS/SSL. | 
+   | **Включить SSL?** | Нет | Включает и отключает шифрование TLS/SSL. | 
    |||| 
 
 1. Укажите необходимые сведения для выбранного действия. 
@@ -65,10 +65,10 @@ ms.locfileid: "87283951"
 
 ## <a name="connector-reference"></a>Справочник по соединителям
 
-Дополнительные технические сведения об этом соединителе, такие как триггеры, действия и ограничения, описанные в файле Swagger соединителя, см. на [странице справочника по соединителю](/connectors/smtpconnector/).
+Дополнительные технические сведения об этом соединителе, в том числе о триггерах, действиях и ограничениях, описываемых файлом Swagger соединителя, см. на [странице справочника по соединителю](/connectors/smtpconnector/).
 
 > [!NOTE]
-> Для приложений логики в [среде службы интеграции (ISE)](../logic-apps/connect-virtual-network-vnet-isolated-environment-overview.md)эта версия этого соединителя использует [ограничения сообщений интегрированной](../logic-apps/logic-apps-limits-and-config.md#message-size-limits) среды сценариев.
+> Для приложений логики в [среде службы интеграции (ISE)](../logic-apps/connect-virtual-network-vnet-isolated-environment-overview.md) эта версия соединителя, помеченная как ISE, [использует ограничения сообщений для ISE](../logic-apps/logic-apps-limits-and-config.md#message-size-limits).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

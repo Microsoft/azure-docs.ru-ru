@@ -1,5 +1,5 @@
 ---
-title: Создание запроса в службу поддержки или обращения к серии StorSimple 8000
+title: Создание запроса или обращения в службу поддержки для устройства StorSimple серии 8000
 description: Узнайте, как записать в журнал запрос на обслуживание и запустить сеанс поддержки на устройстве StorSimple серии 8000.
 author: alkohli
 ms.service: storsimple
@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 01/09/2018
 ms.author: alkohli
 ms.openlocfilehash: c288f59b1cb9a85ed4bc978d1c3fba18ba30b572
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "96017208"
 ---
 # <a name="contact-microsoft-support"></a>Обращение в службу поддержки Майкрософт
@@ -76,11 +76,11 @@ ms.locfileid: "96017208"
 
 2. Список всех запросов на поддержку в виде таблицы отображается в колонке **Справка и поддержка**.
 
-    ![Управление запросами в службу поддержки 2](./media/storsimple-8000-contact-microsoft-support/managesupport2.png)
+    ![Управление запросами на поддержку 2](./media/storsimple-8000-contact-microsoft-support/managesupport2.png)
 
 3. Выберите и щелкните запрос на поддержку. Для запроса можно просмотреть состояние и подробные сведения. Щелкните **+ Новое сообщение**, если нужно следить за этим запросом.
 
-    ![Управление запросами в службу поддержки 3](./media/storsimple-8000-contact-microsoft-support/managesupport3.png)
+    ![Управление запросами на поддержку 3](./media/storsimple-8000-contact-microsoft-support/managesupport3.png)
 
 ## <a name="start-a-support-session-in-windows-powershell-for-storsimple"></a>Запуск сеанса поддержки в Windows PowerShell для StorSimple
 

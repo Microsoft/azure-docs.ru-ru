@@ -1,5 +1,5 @@
 ---
-title: Azure CLI пример скрипта — маршрутизация трафика через виртуальный сетевой модуль
+title: Пример сценария Azure CLI для маршрутизации трафика через виртуальный сетевой модуль
 description: Пример скрипта Azure CLI. Маршрутизация трафика через виртуальный сетевой модуль брандмауэра.
 services: virtual-network
 documentationcenter: virtual-network
@@ -14,13 +14,13 @@ ms.date: 07/07/2017
 ms.author: kumud
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: a349f8160e8ab5b6459b2085e21e7368570c57db
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "87503843"
 ---
-# <a name="use-an-azure-cli-script-to-route-traffic-through-a-network-virtual-appliance"></a>Использование сценария Azure CLI для маршрутизации трафика через виртуальный сетевой модуль
+# <a name="use-an-azure-cli-script-to-route-traffic-through-a-network-virtual-appliance"></a>Пример сценария Azure CLI для маршрутизации трафика через виртуальный сетевой модуль
 
 В этом примере скрипта создается виртуальная сеть с интерфейсной и внутренней подсетями. Скрипт также создает виртуальную машину с IP-пересылкой, которая позволяет маршрутизировать трафик между двумя подсетями. После выполнения скрипта вы можете развернуть на виртуальной машине программное обеспечение сети, например брандмауэр.
 
@@ -65,4 +65,4 @@ az group delete --name MyResourceGroup --yes
 
 Дополнительные сведения об Azure CLI см. в [документации по Azure CLI](/cli/azure).
 
-Дополнительные примеры скриптов для сетевых интерфейсов CLI можно найти в [обзорной документации по сети Azure](../cli-samples.md) .
+Дополнительные примеры сценариев Azure CLI для сетей Azure см. в [обзоре документации по сетям Azure](../cli-samples.md).
