@@ -1,5 +1,5 @@
 ---
-title: Мониторинг действий миграции — Azure Database Migration Service
+title: Отслеживание активности миграции — служба миграции базы данных Azure
 description: Сведения об использовании Azure Database Migration Service для мониторинга действий по миграции.
 services: database-migration
 author: pochiraju
@@ -12,13 +12,13 @@ ms.custom: seo-lt-2019
 ms.topic: how-to
 ms.date: 02/20/2020
 ms.openlocfilehash: dc9123735ef65bec89e99a14d25cba881be306fe
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "91297476"
 ---
-# <a name="monitor-migration-activity-using-the-azure-database-migration-service"></a>Мониторинг действий миграции с помощью Azure Database Migration Service
+# <a name="monitor-migration-activity-using-the-azure-database-migration-service"></a>Мониторинг активности миграции с помощью службы миграции базы данных Azure
 В этой статье вы узнаете, как отслеживать ход миграции на уровне базы данных и таблицы.
 
 ## <a name="monitor-at-the-database-level"></a>Мониторинг на уровне базы данных
@@ -93,7 +93,7 @@ ms.locfileid: "91297476"
     </tr>
     <tr>
       <td rowspan="1" class="duration"><strong>Длительность</strong></td>
-      <td>Н/Д</td>
+      <td>Недоступно</td>
       <td>Общее время от инициализации действия миграции до завершения или ошибки миграции.</td>
     </tr>
      </tbody>
@@ -132,7 +132,7 @@ ms.locfileid: "91297476"
 | Имя поля        | Описание       |
 | ------------- | ------------- |
 | **Состояние — синхронизация**      | Выполняется непрерывная синхронизация. |
-| **Insert**      | Количество операций вставки CDC в строках, примененных к целевому объекту.      |
+| **Вставить**      | Количество операций вставки CDC в строках, примененных к целевому объекту.      |
 | **Обновление** | Количество операций обновления CDC в строках, примененных к целевому объекту.      |
 | **Удалить**      | Количество операций удаления CDC в строках, примененных к целевому объекту. |
 | **Всего применено**      | Общее количество операций обновления, вставки и удаления CDC в строках, примененных к целевому объекту. |

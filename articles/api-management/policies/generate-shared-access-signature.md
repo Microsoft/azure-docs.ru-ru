@@ -1,5 +1,5 @@
 ---
-title: Пример политики управления API — Создание подписи общего доступа
+title: Пример политики управления API — создание подписи общего доступа
 titleSuffix: Azure API Management
 description: Пример политики службы управления API Azure. Создание подписанного URL-адреса с помощью выражений и перенаправление запроса в службу хранилища Azure с использованием политики rewrite-uri.
 services: api-management
@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 10/13/2017
 ms.author: apimpm
 ms.openlocfilehash: f90c1e492d6da4f85fe86e4c5c76b89bdfaa4797
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92078431"
 ---
 # <a name="generate-shared-access-signature"></a>Создание подписанного URL-адреса

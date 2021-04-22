@@ -1,16 +1,16 @@
 ---
 title: Управление Azure Data Lake Analytics с помощью пакета SDK Azure для .NET
-description: В этой статье описывается, как с помощью пакета SDK для Azure .NET создавать приложения, управляющие Data Lake Analyticsными заданиями, источниками данных & пользователями.
+description: В этой статье описывается, как использовать пакет SDK для Azure .NET для написания приложений, управляющих заданиями, источниками данных и пользователями Data Lake Analytics.
 ms.reviewer: jasonh
 ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 06/18/2017
 ms.custom: devx-track-csharp
 ms.openlocfilehash: a9ece3fe54ca8596f610439f8a0dd228ae1ef907
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/29/2021
 ms.locfileid: "92220913"
 ---
 # <a name="manage-azure-data-lake-analytics-a-net-app"></a>Управление Azure Data Lake Analytics с помощью приложения .NET
@@ -19,7 +19,7 @@ ms.locfileid: "92220913"
 
 Из этой статьи вы узнаете, как управлять учетными записями, источниками данных, пользователями и заданиями Azure Data Lake Analytics, используя приложение, написанное с помощью пакета SDK Azure для .NET. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * **Visual Studio 2015, Visual Studio 2013 с обновлением 4 или Visual Studio 2012 с установленным Visual C++**
 * **Microsoft Azure SDK для .NET (версии 2.5 или выше)**.  Вы можете установить его с помощью [установщика веб-платформы](https://www.microsoft.com/web/downloads/platform.aspx).
@@ -441,5 +441,5 @@ adlaAccountClient.ComputePolicies.CreateOrUpdate(rg, adla, "GaryMcDaniel", newPo
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обзор аналитики озера данных Microsoft Azure](data-lake-analytics-overview.md)
-* [Управление Azure Data Lake Analytics с помощью портал Azure](data-lake-analytics-manage-use-portal.md)
-* [Мониторинг и устранение неполадок Azure Data Lake Analytics заданий с помощью портал Azure](data-lake-analytics-monitor-and-troubleshoot-jobs-tutorial.md)
+* [Управление аналитикой озера данных Azure с помощью портала Azure](data-lake-analytics-manage-use-portal.md)
+* [Устранение неполадок с заданиями аналитики озера данных Azure с помощью портала Azure](data-lake-analytics-monitor-and-troubleshoot-jobs-tutorial.md)

@@ -1,5 +1,5 @@
 ---
-title: Коды HTTP-ответов API — LUIS
+title: Коды ответов API HTTP — LUIS
 titleSuffix: Azure Cognitive Services
 description: Сведения о том, какие коды ответов HTTP возвращаются API-интерфейсами разработки и конечных точек LUIS
 services: cognitive-services
@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: reference
 ms.date: 03/04/2019
 ms.openlocfilehash: 46a7fff86d3a8c4539b77a0f271179d68e7a26d2
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
-ms.translationtype: MT
+ms.sourcegitcommit: f28ebb95ae9aaaff3f87d8388a09b41e0b3445b5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "91541685"
 ---
 # <a name="common-api-response-codes-and-their-meaning"></a>Стандартные коды ответа API и их значение
@@ -23,7 +23,7 @@ API-интерфейсы [разработки](https://go.microsoft.com/fwlink/
 ## <a name="common-status-codes"></a>Распространенные коды состояний
 В следующей таблице перечислены некоторые наиболее распространенные коды состояний ответов HTTP для API-интерфейсов [разработки](https://go.microsoft.com/fwlink/?linkid=2092087) и [конечных точек](https://go.microsoft.com/fwlink/?linkid=2092356).
 
-|Код|API|Пояснение|
+|Код|API|Описание|
 |:--|--|--|
 |400|Разработки, конечных точек|Параметры запроса указаны неправильно. Это означает, что требуемые параметры отсутствуют, имеют неправильный формат или слишком большой размер|
 |400|Разработки, конечных точек|Текст запроса указан неправильно. Это означает, что JSON отсутствует, имеет неправильный формат или слишком большой размер|
