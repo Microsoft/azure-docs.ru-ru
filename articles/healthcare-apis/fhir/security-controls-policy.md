@@ -1,19 +1,19 @@
 ---
 title: Контроль соответствия нормативным требованиям политики Azure для API Azure для FHIR
 description: Выводит список нормативных требований политики Azure, доступных для API Azure для FHIR. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 04/14/2021
+ms.date: 04/21/2021
 ms.topic: sample
 author: matjazl
 ms.author: matjazl
 ms.service: healthcare-apis
 ms.subservice: fhir
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: d580ad091ef13720f15b4a96a285e83701f128fa
-ms.sourcegitcommit: 3b5cb7fb84a427aee5b15fb96b89ec213a6536c2
+ms.openlocfilehash: 82ea8ec188c18af10196c7c795ff09b78ad63023
+ms.sourcegitcommit: 2aeb2c41fd22a02552ff871479124b567fa4463c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107505461"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107862150"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-api-for-fhir"></a>Контроль соответствия нормативным требованиям политики Azure для API Azure для FHIR
 
