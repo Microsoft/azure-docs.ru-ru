@@ -16,7 +16,7 @@ ms.locfileid: "92491331"
 ---
 # <a name="what-is-azure-database-for-postgresql"></a>Что такое база данных Azure для PostgreSQL
 
-База данных Azure для MySQL — это служба реляционной базы данных в облаке Microsoft на основе ядра СУБД [MySQL Community Edition](https://www.postgresql.org/) (доступно по лицензии GPLv2). База данных Azure для PostgreSQL обеспечивает следующие возможности:
+База данных Azure для PostgreSQL — это служба реляционной базы данных в облаке Microsoft на основе ядра СУБД [PostgreSQL Community Edition](https://www.postgresql.org/) (доступно по лицензии GPLv2). База данных Azure для PostgreSQL обеспечивает следующие возможности:
 
 - высокий уровень доступности;
 - защиту данных с использованием автоматического создания резервных копий и восстановления до точек во времени в течение 35 дней;
